@@ -1,0 +1,112 @@
+{
+ "row": "htrc",
+ "address": "HathiTrust Research Center",
+ "entity": "HathiTrust Research Center Analytics (HTRC, HTRC Analytics, analytics.hathitrust.org): the research center established in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign and HathiTrust, dedicated to enabling computational analysis of the HathiTrust Digital Library, and its analytics portal (worksets, algorithms, data capsules, derived datasets) under a non-consumptive use research policy; services ended 30 September 2026, the center formally closing at the end of 2026; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/htrc)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "htrc",
+  "address": "HathiTrust Research Center",
+  "entity": "HathiTrust Research Center Analytics (HTRC, HTRC Analytics, analytics.hathitrust.org): the research center established in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign and HathiTrust, dedicated to enabling computational analysis of the HathiTrust Digital Library, and its analytics portal (worksets, algorithms, data capsules, derived datasets) under a non-consumptive use research policy; services ended 30 September 2026, the center formally closing at the end of 2026; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/htrc)",
+  "row_type": "C (a public entity on which the archive bears: a research center and its analytics service for computational analysis of library volumes; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure')",
+  "aliases": [
+   {
+    "pattern": "\\bHTRC\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bHathiTrust Research Cent(er|re)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\banalytics\\.hathitrust\\.org\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "non-consumptive computational analysis of library volumes (text and data mining of a digital library corpus under a non-consumptive policy)",
+    "pattern": "\\b(non-?consumptive|text(-| and | & )data mining|computational (text )?analysis|large-scale text analysis|distant reading)\\b",
+    "flags": "i",
+    "basis": "field: B2 (analytics.hathitrust.org: 'a research center dedicated to enabling computational analysis of the HathiTrust Digital Library'; 'text and data mining methods'; 'Non-consumptive use research policy'); B5 (the About page: 'HTRC operates under a non-consumptive research paradigm'); B6 (Derived datasets: 'non-consumptive analysis of transformative datasets'). The census's kind, method and question for the entity ('computational availability: what did a non-consumptive machine reading of library volumes produce'; census.json rows[slug == 'htrc'].kind, .method, .question)."
+   },
+   {
+    "term": "derived datasets: what a machine reading of volumes makes, published apart from the volumes (extracted features, token counts, entity data)",
+    "pattern": "\\b(derived datasets?|extracted features?|feature extraction|BookNLP|token counts?|word frequenc(y|ies))\\b",
+    "flags": "i",
+    "basis": "field: B2 ('Derived Datasets'; 'Extracted Features BookNLP dataset Word frequencies Geographic locations'); B6 ('HTRC releases research datasets to facilitate text analysis'; 'features extracted from full-text volumes'). The census's unit, holdings, record.makes and tll_reading ('The derived datasets are the inspectable form of the transformation'; census.json rows[slug == 'htrc'].unit, .holdings, .record.makes, .tll_reading)."
+   },
+   {
+    "term": "receiving apparatus: a machine reading of texts that emits an artifact (the census's organizing category for its rows)",
+    "pattern": "\\b(receiving apparatus(es)?|reception machine|machine read(ing|er)s? of (library|whole|the) )",
+    "flags": "i",
+    "basis": "archive: the census's tll_reading for the entity ('The archive reads HTRC as an earlier receiving apparatus with its product on record'; census.json rows[slug == 'htrc'].tll_reading) and its organizing question ('How is literature addressed to a receiving apparatus, what does that apparatus make from it'; census.json organizing_question); #1543 §8 and §10 (the census's anchor) define the receiving apparatus and its emission."
+   }
+  ],
+  "classes_note": "Three classes, each sourced by locus: (1) non-consumptive computational analysis of library volumes (field B2, B5, B6; census kind, method, question); (2) derived datasets, the published product of a machine reading of volumes (field B2, B6; census unit, holdings, record.makes, tll_reading); (3) receiving apparatus (the census's own tll_reading and organizing question, archive by locus; its anchor #1543 §8, §10). The census places the entity in its area 'corpora' ('The corpora: collections, crawls and datasets whose texts enter machine training'; census.json areas, rows[slug == 'htrc'].areas) while its record.in_layer says 'the saved sources say nothing of model training'; the anchors #186 (the layer where texts are crawled, indexed, trained on, retrieved and recomposed) and #1543 (machine reception and composition) are read at the passages on corpora, machine reading and the receiving apparatus. The aliases are the entity's names and host. HathiTrust and the HathiTrust Digital Library (the parent partnership and the corpus, a row of their own in the census, hathitrust) are distinct entities and are not aliases; a sentence that names HathiTrust alone is about the library. The census's tll_reading is the archive's reading, ledgered as TLL-NN. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention or a catalogue line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'HathiTrust Research Center' (hathitrust-research-center-aio-20261101, OBS-e56da33771d0, ADDR-790637198f5b), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+   186,
+   1543
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 43,
+  "O_deposits": 30,
+  "H_candidates": 28
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "55": 1,
+   "76": 1,
+   "122": 3,
+   "127": 1,
+   "157": 1,
+   "175": 1,
+   "192": 1,
+   "199": 1,
+   "400": 1,
+   "444": 1,
+   "700": 1,
+   "820": 1,
+   "832": 1,
+   "907": 1,
+   "931": 2,
+   "932": 4,
+   "933": 3,
+   "1023": 1,
+   "1081": 2,
+   "1211": 1,
+   "1216": 1,
+   "1217": 1,
+   "1262": 1,
+   "1316": 1,
+   "1394": 1,
+   "1400": 1,
+   "1452": 2,
+   "1543": 3,
+   "1571": 2,
+   "1593": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "23309ec437c4275e0dc21f1c37d33a39aec095e8558f8a6dcf209ef28912f0d5",
+  "candidates-H.jsonl": "66174a0c8a46164d4ab68792177e0c3d7b27acdfd4da9e0ef5bdeb8f3c18bc61"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

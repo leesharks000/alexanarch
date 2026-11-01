@@ -1,0 +1,411 @@
+{
+ "row": "hathitrust",
+ "pass": "2026-11-01: first reading of the D, R and O candidates; second pass with one citation hop from #186 and #1543 (the census anchors)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on HathiTrust with the entity named; R, a relation the archive states between HathiTrust and an archive object (a seating of the Originals Library, a work of the archive's author); O, an archive category applied to HathiTrust or to a class the field and the census source for it (digital libraries and mass digitization: B3, B4, census evidence_kind, record_type, record_object; search without display and the fair-use holding: B3, B4, B6, census record and tll_reading; computational analysis of a digital library's corpus: B9, census record.makes and relation has_part). #186 and #1543 read at the passages on corpora, the training loop, machine reading and inspection (BRIEF-NEW-ROW-LAYER §6). A bare mention, a citation line without a claim, a catalogue link, or a sentence on Google Books or Perseus as other members of a class is not a claim on the entity or its classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 1720,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-30, Seat 30/02 (Gödel): HathiTrust holds Cornell's Monatshefte vol. 36–37 in full view and refused the seating's requests on 2026-10-30 with a Cloudflare challenge and a block page (D: says something of the entity, its holding and its refusal; R: the relation to a seating of the archive's Originals Library); Seat 30/09 (Klee): the seated Tribüne volume is the Michigan copy digitized by Google, via HathiTrust and the Internet Archive, recorded by HathiTrust as pdus, full view. The string matcher's R object 'Archive' is the Internet Archive; the relation admitted is the seating's. Candidates D0011, D0012, D0013, D0014, D0015, R0003–R0007, O0087",
+   "claims": [
+    "O1720-01",
+    "O1720-02"
+   ],
+   "cands": [
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "D0015",
+    "R0003",
+    "R0004",
+    "R0005",
+    "R0006",
+    "R0007",
+    "O0087"
+   ]
+  },
+  {
+   "dep": 1682,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-18, Seat 18/01 (Pound II): 'HathiTrust is not reachable from this workspace' for the public-domain first printings of the Cantos (D: the entity's reachability; R: the seating's request). Candidates D0004, R0001",
+   "claims": [
+    "O1682-01"
+   ],
+   "cands": [
+    "D0004",
+    "R0001"
+   ]
+  },
+  {
+   "dep": 1710,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-26: the seated first edition of The Souls of Black Folk is the Northwestern copy 'HathiTrust ien.35556032538837', uploaded to the Internet Archive (D/R: a witness of the archive's seating held by way of HathiTrust); Fine Clothes to the Jew (1927), 'whose one open scan is at HathiTrust, unreachable from this session', queued (D/R). Candidates D0005, D0006, D0007, R0002, O0080",
+   "claims": [
+    "O1710-01",
+    "O1710-02"
+   ],
+   "cands": [
+    "D0005",
+    "D0006",
+    "D0007",
+    "R0002",
+    "O0080"
+   ]
+  },
+  {
+   "dep": 1711,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Originals Library method §11.2: restates #1710's queue item ('whose one open scan found is at HathiTrust, unreachable from the seating session'); one lineage with #1710, the earliest; S4 instance",
+   "claims": [],
+   "cands": [
+    "D0008"
+   ],
+   "instance_of": "O1710-02"
+  },
+  {
+   "dep": 416,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Architecture-Aware Literary Traversal §2.3: 'Large text archives (e.g., HathiTrust, Project Gutenberg) have scale but no internal architecture. They are collections, not systems. An AI summarizing a corpus describes what's in it; it does not traverse how it works.' D: names the entity and says something of it; O-direct: the archive's category (architecture, traversal) applied to it. Candidates D0003, O0015",
+   "claims": [
+    "O416-01",
+    "O416-02"
+   ],
+   "cands": [
+    "D0003",
+    "O0015"
+   ]
+  },
+  {
+   "dep": 301,
+   "strata": [
+    "R"
+   ],
+   "reason": "The Fourth Mode: the archive's account of its author's dissertation, Strange New Canons (University of Michigan, 2013), carries '[HathiTrust: catalog.hathitrust.org/Record/100856447]' and its bibliography gives the same record: the archive places a work of its author at a HathiTrust catalogue record, a holding relation between the entity and an archive object (R), the census's question of whose works it holds. Read as a relation, with the guard that a citation alone is not a claim: the sentence locates the work's record and says nothing further of HathiTrust. Candidates D0001, D0002, O0014",
+   "claims": [
+    "O301-01"
+   ],
+   "cands": [
+    "D0001",
+    "D0002",
+    "O0014"
+   ]
+  },
+  {
+   "dep": 1715,
+   "strata": [
+    "R"
+   ],
+   "reason": "Belief & Technique, a critical edition, Sources: the same HathiTrust record of the dissertation, the text 'quoted from the final PDF in the author's Drive'; one lineage with #301, S4 instance",
+   "claims": [],
+   "cands": [
+    "D0009",
+    "O0083"
+   ],
+   "instance_of": "O301-01"
+  },
+  {
+   "dep": 1717,
+   "strata": [
+    "R"
+   ],
+   "reason": "v1.1 of #1715, the sentence identical; S4 instance",
+   "claims": [],
+   "cands": [
+    "D0010",
+    "O0086"
+   ],
+   "instance_of": "O301-01"
+  },
+  {
+   "dep": 1678,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Living Academy §7 Inverted fan architecture: the table row 'Digital libraries | collections, discovery, preservation and services evaluated as connected functions': the archive states the native frame of the field of digital libraries, the class the field and the census source for the entity (O-class). Its other sentences on 'a self-governing digital library' describe Alexanarch itself, outside the entity. Candidates O0066–O0070",
+   "claims": [
+    "O1678-01"
+   ],
+   "cands": [
+    "O0066",
+    "O0067",
+    "O0068",
+    "O0069",
+    "O0070"
+   ]
+  },
+  {
+   "dep": 1680,
+   "strata": [
+    "O"
+   ],
+   "reason": "v0.5 of #1678, the table row identical; S4 instance",
+   "claims": [],
+   "cands": [
+    "O0071",
+    "O0072",
+    "O0073",
+    "O0074",
+    "O0075"
+   ],
+   "instance_of": "O1678-01"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/hathitrust-digital-library-aimode-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note, query note, description and surface basis for the entity's capture (OBS-801009ea301b, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/hathitrust (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'hathitrust'], organizing_question, admission_rule, areas, anchor)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; where a field restates the Wikipedia article (B3) or the HTRC page (B9) it is one lineage with that source; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36",
+    "TLL-37",
+    "TLL-38",
+    "TLL-39",
+    "TLL-40",
+    "TLL-41",
+    "TLL-42",
+    "TLL-43",
+    "TLL-44",
+    "TLL-45",
+    "TLL-46",
+    "TLL-47"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 186,
+   "reason": "the census anchor, Who Is Writing for the Machines?, read at the passages on corpora ('every one of these texts is, as a matter of fact, in the corpora', line 54), the committed case and the model-collapse irony (lines 56, 68): it says nothing of HathiTrust, digital libraries, library search or text mining; applying its corpora to HathiTrust would be the composer's act, and the census records that its saved sources tie no HathiTrust volume to training. Read, unadmitted",
+   "cands": []
+  },
+  {
+   "dep": 1543,
+   "reason": "the census anchor, Generative Uptake, read at the institutional training loop (x → M_t → y → corpus_{t+1}, lines 264–265) and the PER/uptake distinction: a category for corpora that enter training, which no source and no census field applies to HathiTrust. Read, unadmitted",
+   "cands": []
+  },
+  {
+   "dep": "95, 1188",
+   "reason": "Provenance Alignment §4.6 (and its instance): the counter-position that 'AI knowledge composition is \"fair use\" or \"transformative\"' is said of AI composition and its attribution chain, outside the class of library search without display; the archive does not apply it to HathiTrust or Authors Guild v. HathiTrust. Read, unadmitted",
+   "cands": [
+    "O0001",
+    "O0037"
+   ]
+  },
+  {
+   "dep": "149, 757, 758, 825, 833, 860, 1007, 1231, 1249, 1384, 1389, 1396, 1401, 1634, 1670",
+   "reason": "Google Books: knowledge-panel seams, search discovery failure and Ngram measures, said of Google Books and Google's entity layer, a distinct entity (the census's negative tag 'NOT Google Books'); none applies an archive category to the class of digital libraries or to HathiTrust. Read, unadmitted",
+   "cands": [
+    "O0003",
+    "O0004",
+    "O0005",
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0022",
+    "O0024",
+    "O0027",
+    "O0029",
+    "O0031",
+    "O0033",
+    "O0040",
+    "O0041",
+    "O0045",
+    "O0046",
+    "O0047",
+    "O0048",
+    "O0049",
+    "O0050",
+    "O0051",
+    "O0052",
+    "O0053",
+    "O0054",
+    "O0055",
+    "O0056",
+    "O0058",
+    "O0060",
+    "O0063",
+    "O0065"
+   ]
+  },
+  {
+   "dep": "127, 1409",
+   "reason": "text-and-data-mining reservation (rights statements, EU Directive 2019/790 Art. 4(3)): said of works and their rights holders, outside the class of computational analysis of a digital library's corpus as the field sources it. Read, unadmitted",
+   "cands": [
+    "O0002",
+    "O0061"
+   ]
+  },
+  {
+   "dep": "1522, 1698, 1699, 1707, 1709, 1711, 1712, 1716",
+   "reason": "seating records naming other digital libraries (Perseus, the Digital Library of India, Google Books scans) as sources of witnesses: other members of the class, no category applied to the class. Read, unadmitted",
+   "cands": [
+    "O0062",
+    "O0076",
+    "O0077",
+    "O0078",
+    "O0079",
+    "O0081",
+    "O0082",
+    "O0084",
+    "O0085"
+   ]
+  },
+  {
+   "dep": "170, 593, 717, 720, 729, 839, 1044, 1052, 1223, 1287, 1369, 1644, 1725",
+   "reason": "string hits on 'fair use', 'digitized', 'full-text search' or 'Authors Guild' in other senses (nominative fair use, charter exceptions, the Authors Guild's Human Authored certification, a test of a training corpus, licence tables): no claim on the entity or its classes. Read, unadmitted",
+   "cands": [
+    "O0012",
+    "O0013",
+    "O0016",
+    "O0017",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0023",
+    "O0025",
+    "O0026",
+    "O0028",
+    "O0030",
+    "O0032",
+    "O0034",
+    "O0035",
+    "O0036",
+    "O0038",
+    "O0039",
+    "O0042",
+    "O0043",
+    "O0044",
+    "O0057",
+    "O0059",
+    "O0064",
+    "O0088"
+   ]
+  }
+ ],
+ "lineages": [
+  {
+   "lineage": "the archive's requests and witnesses",
+   "instances": [
+    301,
+    1682,
+    1710,
+    1711,
+    1715,
+    1717,
+    1720
+   ],
+   "earliest": 301
+  },
+  {
+   "lineage": "collections and connected functions",
+   "instances": [
+    416,
+    1678,
+    1680
+   ],
+   "earliest": 416
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [
+   "#1711 (already read as an instance of #1710)"
+  ],
+  "rejected": "#129, #160, #337, #382, #473, #481, #590, #603, #604, #738, #784, #819, #1409, #1441, #1443, #1521, #1526, #1527, #1528, #1540, #1544, #1545, #1555, #1684, #1709, #1721, #1722: cited by or citing the anchors on other subjects (traversal logs, the prize, the Sappho room, operator stacks, the originating sequence, handwritten artifacts, the prediction index, the existence tax); none names HathiTrust or says anything of digital libraries, library search or the Research Center",
+  "file": "candidates-H.jsonl"
+ },
+ "observations": [
+  "The archive's seatings meet HathiTrust as the composition's 'Bot Protection Measures' describe it, from the requester's side: unreachable (#1682, #1710) and refusing with a Cloudflare challenge (#1720, 2026-10-30), as it refused this row's fetches and the census's (B1, B8).",
+  "Three of the archive's seated witnesses rest on HathiTrust copies carried by the Internet Archive or held by reference (#1710 Du Bois; #1720 Tribüne), and one queued work waits on a HathiTrust scan (#1710 Hughes): the archive's own corpus is in part downstream of the library.",
+  "No deposit says anything of HathiTrust and model training; the census anchors bear on the census's question and are unadmitted for the entity."
+ ],
+ "counts": {
+  "D_candidates": 15,
+  "R_candidates": 7,
+  "O_candidates": 88,
+  "H_candidates": 28,
+  "deposits_admitted": 6,
+  "instances_kept": 4,
+  "deposit_claims": 9,
+  "TLL_claims": 47,
+  "CAP_claims": 13
+ }
+}

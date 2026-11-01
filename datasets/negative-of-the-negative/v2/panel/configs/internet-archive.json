@@ -1,0 +1,36 @@
+{
+  "row": "internet-archive",
+  "address": "Internet Archive",
+  "entity": "The Internet Archive (archive.org): an American 501(c)(3) non-profit library founded in May 1996 by Brewster Kahle, headquartered in San Francisco, that runs the digital library website archive.org, its web archive the Wayback Machine (public since 2001, more than one trillion web captures), its book digitization and lending (Open Library, controlled digital lending) and other collections; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/internet-archive)",
+  "row_type": "C (a public entity on which the archive bears: a non-profit digital library and web archive; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure', area 'corpora')",
+  "aliases": [
+    {"pattern": "\\bInternet Archive\\b", "flags": ""},
+    {"pattern": "\\bWayback Machine\\b", "flags": "i"},
+    {"pattern": "\\bOpen Library\\b", "flags": ""},
+    {"pattern": "\\barchive\\.org\\b(?!/)", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "web archives and the readback of a page by URL and date (persistence of what was published on the open web)",
+      "pattern": "\\b(web archiv\\w*|archived (copy|copies|snapshot|version)s?|snapshots? of (a |the )?(page|site|web)\\w*|link rot|dead links?|Save Page Now|persistence infrastructure)\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia: 'The Wayback Machine , its web archive , contains more than 1 trillion web captures.'; 'It can be used to see what previous versions of web sites used to look like or to visit web sites that no longer even exist.'); B6 (Chrome Web Store: 'Go back in time to see how a website has changed through the history of the Web.'; 'Save Page Now - Instantly save the page you are currently viewing in the Wayback Machine.'). The census's question ('persistence and readback: was a web page captured, and how did it look on a given date') and tll_reading ('persistence infrastructure') for the entity (census.json rows[slug == 'internet-archive'].question, .tll_reading)."
+    },
+    {
+      "term": "digital libraries, book digitization and lending (collections of digitized texts held and lent)",
+      "pattern": "\\b(digital librar(y|ies)|book digiti[sz]ation|digiti[sz]ed books?|controlled digital lending|shadow librar(y|ies))\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia: 'an American non-profit library founded in 1996 by Brewster Kahle that runs a digital library website, archive.org'; 'one of the world's largest book digitization efforts'; 'lent to patrons worldwide one at a time under the controlled digital lending (CDL) theory'); B1 card (archive.org: 'a non-profit digital library'). The census's kind ('non-profit digital library'), record_type 'library' and evidence_kind 'digital library' (census.json rows[slug == 'internet-archive'].kind, .record_type, .evidence_kind)."
+    },
+    {
+      "term": "web crawls and corpora whose texts enter machine training (the census's area 'corpora')",
+      "pattern": "\\b(training (corpus|corpora|data|set|sets)|web crawl\\w*|crawled|Common Crawl|scrap(ing|ed) (of |for )?(the )?(web|archive|AI))\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia: 'the bulk of its data is collected automatically by its web crawlers , which work to preserve as much of the public web as possible'; 'By 2026, The New York Times and The Guardian are among the outlets concerned about scraping of the Internet Archive of their content as a way to get around the defenses against scraping from their own websites. Some news organizations are restricting the Internet Archive's crawlers.'); B10 (Wikipedia, Common Crawl: 'Common Crawl was designed to have more and fresher data that was more efficient to analyze and utilize than the Wayback Machine created by the Internet Archive'). The census's area 'corpora' ('The corpora: collections, crawls and datasets whose texts enter machine training') and evidence_kind 'web crawl' for the entity, and its record.in_layer and negative_tags (census.json rows[slug == 'internet-archive'].areas, .evidence_kind, .record.in_layer; census.json areas)."
+    }
+  ],
+  "classes_note": "Three classes: (1) web archives and the readback of a page by URL and date (field B2, B6; census question and tll_reading); (2) digital libraries, book digitization and lending (field B1, B2; census kind, record_type, evidence_kind); (3) web crawls and corpora whose texts enter machine training (field B2's crawlers and its scraping sentence, B10's Common Crawl against the Wayback Machine; census area 'corpora', evidence_kind 'web crawl', record.in_layer). The aliases are the entity's name, its web archive, its library catalogue project and its host (the bare host only, not archived-copy URLs, which are citation apparatus: a link to web.archive.org is a use of the service and no claim about it). Brewster Kahle (its founder), Common Crawl, HathiTrust and Project Gutenberg (neighbours with rows of their own in the census), arXiv and archive.today (Wikipedia's disambiguation) are distinct entities and are not aliases. The census's tll_reading applies #186's and #1543's question (how transmission, transformation and provenance can be inspected across later reception) to the entity: that reading is the archive's, ledgered as TLL-NN. #186 and #1543, the census's anchors, are read at the passages that bear on training corpora, crawls and digital libraries, persistence and inspection. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, an archived-copy link or a citation line is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'Internet Archive' (internet-archive-aio-20261101, OBS-106c7cfa9d9a, ADDR-1da6417f269d), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

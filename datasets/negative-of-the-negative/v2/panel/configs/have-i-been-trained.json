@@ -1,0 +1,36 @@
+{
+  "row": "have-i-been-trained",
+  "address": "Have I Been Trained",
+  "entity": "Have I Been Trained? (haveibeentrained.com), a service of Spawning: on its cards a free search of the LAION-5B image-text dataset, by text or uploaded image, to check whether images were used to train image models such as Stable Diffusion, beside Spawning's Do Not Train registry; on 2026-11-01 its home page and /faq served a static Spawning maintenance page naming the Do-Not-Train registry and addressing 'AI trainers looking to respect' it; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/spawning-hibt)",
+  "row_type": "C (a public entity on which the archive bears: a training-data discovery service and opt-out registry; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure')",
+  "aliases": [
+    {"pattern": "\\bHave I Been Trained\\b", "flags": "i"},
+    {"pattern": "\\bhaveibeentrained(\\.com)?\\b", "flags": "i"},
+    {"pattern": "\\bSpawning( AI|'s|\\.ai)\\b", "flags": ""},
+    {"pattern": "\\bDo[- ]Not[- ]Train registry\\b", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "opt-out and consent signals for AI training (do-not-train registries, opt-outs, crawler directives such as robots.txt and ai.txt)",
+      "pattern": "\\b(opt(s|ed|ing)?[- ]outs?|do[- ]not[- ]train|robots\\.txt|ai\\.txt|GPTBot|Google-Extended|CCBot|tdmrep(\\.json)?|TDMRep)\\b",
+      "flags": "i",
+      "basis": "field: B1 (Mentionable: 'Spawning's opt-out tools (ai.txt, Do Not Train registry) help creators prevent future use of their work in training datasets'; 'configure your robots.txt to block AI crawlers you want to exclude (GPTBot, Google-Extended, CCBot, anthropic-ai)'); B4 (ToolCenter: 'Spawning's \"Do Not Train\" registry lets artists opt out, but compliance is voluntary'); B5/B6 (the entity's own page: 'AI trainers looking to respect the Do-Not-Train registry'). The census's question ('withheld from training through a Do-Not-Train registry'), holdings and tll_reading for the entity (census.json rows[slug == 'spawning-hibt'].question, .holdings, .tll_reading)."
+    },
+    {
+      "term": "training-data discovery and membership (finding whether a work is in a training set or corpus)",
+      "pattern": "\\b(membership inference|MIA|in (the|a|their|its) training (data|set|corpus|corpora)|(inclusion|included) in (AI )?training (corpora|data|sets?)|in the corpora|training[- ]data (audit|transparency|presence))\\b",
+      "flags": "",
+      "basis": "field: B1 ('a tool that lets you check if your work ended up in AI training datasets'; 'Training data presence means your content was ingested when the model was built'; 'there's no public tool equivalent to Have I Been Trained. You can't search their training corpora'); B4 ('a simple, free search engine to check whether their work appeared in the LAION-5B dataset'). The census's question ('can a work be found in training data'), area 'corpora' and schema field record.readback ('search, membership test, provenance') (census.json rows[slug == 'spawning-hibt'].question, .areas; schema_note)."
+    },
+    {
+      "term": "image-text training datasets (LAION-5B, the dataset the cards say the service searches)",
+      "pattern": "\\b(LAION(-5B)?|Stable Diffusion|image-text pairs)\\b",
+      "flags": "",
+      "basis": "field: B1 ('Have I Been Trained searches the LAION-5B dataset, the massive open-source image collection used to train models like Stable Diffusion'); B4 ('a collection of approximately 5.8 billion image-text pairs scraped from the open web'); card 4's snippet (T's rail)."
+    }
+  ],
+  "classes_note": "Three classes, each sourced from the field or the census record: (1) opt-out and consent signals for AI training (B1, B4, B5, B6; census question, holdings, tll_reading); (2) training-data discovery and membership (B1, B4; census question, area 'corpora', schema field readback); (3) image-text training datasets (B1, B4; card 4). The aliases are the service's name, its domain, its operator's name in the forms the field uses ('Spawning AI', 'Spawning's') and the registry the cards and the own page name (the census keeps the registry apart, negative_tags[4], and the alias finds candidates only). Spawning as a bare word is not an alias (it is a common verb in the archive: 'sub-agent spawning'). Kudurru, Source.Plus, LAION, Stability AI and Hugging Face are distinct entities. The census's tll_reading applies #186 and #1543 (the training side of the layer; the receiving party) to the entity: that reading is the archive's, ledgered as TLL-NN. #186 and #1543, the census's anchors, are read at the passages on training corpora, inclusion in them, the measurement of machine reception and the institutional training loop. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category (adversarial resistance, the defensive posture, declared inclusion in training corpora, measured reception) to one of the three classes; a checklist line, a robots.txt listing or a deployment note without a claim is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'Have I Been Trained' (have-i-been-trained-aio-20261101, OBS-6b7b0d5e4e44, ADDR-4396c898c58e), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

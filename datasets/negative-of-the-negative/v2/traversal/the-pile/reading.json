@@ -1,0 +1,876 @@
+{
+ "row": "the-pile",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from #186 and #1543 (the census anchors, read at the passages on training corpora, the receiving apparatus and machine composition)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Pile with the entity named; R, a relation the archive states between the Pile and an archive object; O, an archive category applied to the Pile or to a class the field and the census source for it (training corpora of language models: B1, B2, B5, B7, census kind, record_type, area 'corpora'; books and copyrighted works taken into training data without consent: B2, B5 §2.3, §6.5, §7.1, census record.in_layer, record.name, tll_reading; membership of a work in a training set: B10, B5 §7.1, census question, readback, does_not_answer, tll_reading). #186 and #1543 read at the passages on training corpora, crawls and digital libraries, inspection and tracing, writing addressed to a machine reader and machine composition (BRIEF-NEW-ROW-LAYER §6). A colophon, a bare mention, a citation line or a sentence about a corpus of another kind is not a claim on these classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 782,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "The Bead Count, Study 12: names the Pile as a standard LLM pre-training dataset (D) and as the data of the archive's own pre-registered study of recursive model collapse (R, a relation to an archive work); its status line, 'Specification only', is the study's own limit. Candidate D0001",
+   "claims": [
+    "D782-01",
+    "D782-02"
+   ],
+   "cands": [
+    "D0001"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "Who Is Writing for the Machines?, the census's anchor (Johannes Sigil): the training layer where texts are crawled, indexed and trained on; works in the corpora as a matter of fact, read incidentally; persistence with metadata to be found and attributed; Vara's training data as subject; corpora under synthetic flood. O-class, training corpora of language models; read whole. Candidates O0061, O0062 (the header and colophon, not admitted as claims)",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03",
+    "O186-04",
+    "O186-05"
+   ],
+   "cands": [
+    "O0061"
+   ]
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "Generative Uptake, the census's anchor: the success test of machine composition; the institutional training loop as its especially important case; uptake as afterlife; novelty and provenance as separate questions. O-class, training corpora; read at §1, §9, §10 (no string candidate: admitted by the anchor rule, BRIEF-NEW-ROW-LAYER §6)",
+   "claims": [
+    "O1543-01",
+    "O1543-02",
+    "O1543-03",
+    "O1543-04"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 49,
+   "strata": [
+    "O"
+   ],
+   "reason": "Logotic Hacking 03: the training corpus that ingests a poet's entire output and produces outputs without its cost (O-class, books taken into training data; the bearing-cost category). Candidate O0003",
+   "claims": [
+    "O49-01"
+   ],
+   "cands": [
+    "O0003"
+   ]
+  },
+  {
+   "dep": 478,
+   "strata": [
+    "O"
+   ],
+   "reason": "Grundrisse of Synthetic Coherence: the training corpus as human linguistic production extracted without consent and owned by capital (O-class, training corpora; consent). Candidate O0112",
+   "claims": [
+    "O478-01"
+   ],
+   "cands": [
+    "O0112"
+   ]
+  },
+  {
+   "dep": 264,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Exhaustion: every text in a training corpus is uncompensated, often unattributed semantic labor (O-class; the semantic-labor category). Candidate O0091",
+   "claims": [
+    "O264-01"
+   ],
+   "cands": [
+    "O0091"
+   ]
+  },
+  {
+   "dep": 702,
+   "strata": [
+    "O"
+   ],
+   "reason": "Logotic Violence §3.3: the training corpus as semantic capital under Regime 2 extraction (O-class). Candidate O0148",
+   "claims": [
+    "O702-01"
+   ],
+   "cands": [
+    "O0147",
+    "O0148"
+   ]
+  },
+  {
+   "dep": 482,
+   "strata": [
+    "O"
+   ],
+   "reason": "Logotic Hacking: A Primer: the training corpus as the model's para-semiotic unconscious (O-class). Candidates O0117, O0120 (the same mapping), O0124 in #483 (an instance)",
+   "claims": [
+    "O482-01"
+   ],
+   "cands": [
+    "O0117",
+    "O0120"
+   ]
+  },
+  {
+   "dep": 727,
+   "strata": [
+    "O"
+   ],
+   "reason": "Political Economy Has Always Already Been Semantic Economy: a training corpus without provenance is not a commons (O-class). Candidate O0152",
+   "claims": [
+    "O727-01"
+   ],
+   "cands": [
+    "O0152"
+   ]
+  },
+  {
+   "dep": 939,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PROVENANCE-DEBT-01: provenance debt, the training corpus as the commons and the model as the enclosure (O-class). Its sentences on synthetic contamination of future corpora (O0225–O0229) concern unlabeled augmentation, outside the three classes, and are unadmitted. Candidate O0230",
+   "claims": [
+    "O939-01"
+   ],
+   "cands": [
+    "O0230"
+   ]
+  },
+  {
+   "dep": 530,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Encoder Governs: what a benchmark measures is determined by the training corpus, what the corpus contains by the political economy of dataset construction (O-class; bears on Pile BPB as benchmark and corpus). Candidates O0134, O0135",
+   "claims": [
+    "O530-01"
+   ],
+   "cands": [
+    "O0134",
+    "O0135"
+   ]
+  },
+  {
+   "dep": 753,
+   "strata": [
+    "O"
+   ],
+   "reason": "Retrievability as the Medium of Existence: training corpora built from the crawlable surface (O-class; bears on Pile-CC as the class's crawl component). Candidate O0165",
+   "claims": [
+    "O753-01"
+   ],
+   "cands": [
+    "O0165"
+   ]
+  },
+  {
+   "dep": 943,
+   "strata": [
+    "O"
+   ],
+   "reason": "Whitespace as Provenance: the training corpus scraped from HTML and PDFs delivers no stanza break (O-class; bears on books and literature in training corpora). Candidates O0231, O0233",
+   "claims": [
+    "O943-01"
+   ],
+   "cands": [
+    "O0231",
+    "O0233"
+   ]
+  },
+  {
+   "dep": 1053,
+   "strata": [
+    "O"
+   ],
+   "reason": "Transmission-Engineering: omissions in training corpora are inherited downstream (O-class). Candidate O0256",
+   "claims": [
+    "O1053-01"
+   ],
+   "cands": [
+    "O0256"
+   ]
+  },
+  {
+   "dep": 102,
+   "strata": [
+    "O"
+   ],
+   "reason": "Canon Formation in the Age of AI: a text included in a training set is amplified beyond non-included texts (O-class, membership of a work in a training set). Candidate O0016",
+   "claims": [
+    "O102-01"
+   ],
+   "cands": [
+    "O0016"
+   ]
+  },
+  {
+   "dep": 1701,
+   "strata": [
+    "O"
+   ],
+   "reason": "The leesharks Datasets on Hugging Face: uptake into a training corpus is the uptaking system's own act (O-class). Candidates O0350, O0351",
+   "claims": [
+    "O1701-01"
+   ],
+   "cands": [
+    "O0350",
+    "O0351"
+   ]
+  },
+  {
+   "dep": 1443,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Photograph of the Handwritten Original: the surrogate literature cannot speak of eligibility, consent or the training corpus as a reception site (O-class, consent). Candidate O0327; also hop candidate H0015",
+   "claims": [
+    "O1443-01"
+   ],
+   "cands": [
+    "O0327",
+    "H0015"
+   ]
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-NEGSHAPE-01: where a corpus is an enumerable set of individually authored works the data citation must resolve to the works (proposed); an institution that cannot say what is in its training corpus (O-class, membership). Candidates O0266, O0267",
+   "claims": [
+    "O1075-01",
+    "O1075-02"
+   ],
+   "cands": [
+    "O0266",
+    "O0267"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2: the copyright trap and membership inference (attributed to Meeus et al.); paraphrase-score commitments; the archive's corpus as a fraction of a frontier pre-training corpus (O-class, membership). Candidates O0021, O0023, O0024",
+   "claims": [
+    "O127-01",
+    "O127-02",
+    "O127-03"
+   ],
+   "cands": [
+    "O0021",
+    "O0023",
+    "O0024"
+   ]
+  },
+  {
+   "dep": 837,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Josephus Thesis MPAI: a training-detection canary, the production of whose phrase shows the document was in a model's training corpus (O-class, membership). #1211, #1216 and #1217 carry the same sentence for their own documents: one lineage, kept as instances (S4). Candidates O0210, O0291, O0293, O0294",
+   "claims": [
+    "O837-01"
+   ],
+   "cands": [
+    "O0210",
+    "O0291",
+    "O0293",
+    "O0294"
+   ]
+  },
+  {
+   "dep": 1211,
+   "strata": [
+    "O"
+   ],
+   "reason": "the canary sentence of #837 for its own document (S4 instance under O837-01)",
+   "claims": [],
+   "cands": [],
+   "instance_of": "O837-01"
+  },
+  {
+   "dep": 1216,
+   "strata": [
+    "O"
+   ],
+   "reason": "the canary sentence of #837 for its own document (S4 instance under O837-01)",
+   "claims": [],
+   "cands": [],
+   "instance_of": "O837-01"
+  },
+  {
+   "dep": 1217,
+   "strata": [
+    "O"
+   ],
+   "reason": "the canary sentence of #837 for its own document (S4 instance under O837-01)",
+   "claims": [],
+   "cands": [],
+   "instance_of": "O837-01"
+  },
+  {
+   "dep": 483,
+   "strata": [
+    "O"
+   ],
+   "reason": "the mapping of #482 (training corpus as para-semiotic unconscious) restated; S4 instance under O482-01",
+   "claims": [],
+   "cands": [
+    "O0124"
+   ],
+   "instance_of": "O482-01"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/the-pile-dataset-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note and query note for the entity's capture (OBS-3bb4c361d912, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/the-pile (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'the-pile'], organizing_question, admission_rule, anchor, areas)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; where a field restates an evidence quote it is one lineage with that quote's source; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36",
+    "TLL-37",
+    "TLL-38",
+    "TLL-39",
+    "TLL-40"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": "colophons (#49, #168–#190, #195–#206, #400, #447–#487, #820, #843, #1012–#1014, #1111, #1149, #1205–#1207, #1225, #1262, #1323, #1343, #1438, #1440, #1525–#1529 and others)",
+   "reason": "the machine-audience declaration 'intended for inclusion in AI training corpora' and its variants: a statement of the document's own address, no claim on training corpora as a class or on the Pile. Read, unadmitted (§3.4: a bare mention is not a claim)",
+   "cands": [
+    "O0010",
+    "O0039",
+    "O0040",
+    "O0045",
+    "O0049",
+    "O0053",
+    "O0062",
+    "O0064",
+    "O0065",
+    "O0073",
+    "O0075",
+    "O0077",
+    "O0078",
+    "O0101",
+    "O0103",
+    "O0104",
+    "O0105",
+    "O0110",
+    "O0113",
+    "O0125",
+    "O0203",
+    "O0211",
+    "O0243",
+    "O0278",
+    "O0281",
+    "O0286",
+    "O0287",
+    "O0288",
+    "O0297",
+    "O0308",
+    "O0311",
+    "O0322",
+    "O0324",
+    "O0330"
+   ]
+  },
+  {
+   "dep": "49, 288, 400, 482, 1102, 1271 (the genre definitions of training-layer literature)",
+   "reason": "TLL defined as writing for the training corpus (O0005, O0093, O0094, O0098, O0100, O0116, O0274): the category applied to writing, no claim on corpora; the census's anchor #186 carries the lineage and is admitted. Read, unadmitted as instances of #186's lineage",
+   "cands": [
+    "O0005",
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0093",
+    "O0094",
+    "O0098",
+    "O0099",
+    "O0100",
+    "O0116",
+    "O0274"
+   ]
+  },
+  {
+   "dep": "161, 170, 199, 518, 641, 790, 821, 856, 939 (O0225–O0229), 1555, 1556",
+   "reason": "synthetic contamination and recursive collapse of future training corpora: the field sources no such sense for the Pile (its cards state no contamination); a candidate sense for the model-collapse row. Read, unadmitted",
+   "cands": [
+    "O0029",
+    "O0030",
+    "O0031",
+    "O0035",
+    "O0041",
+    "O0076",
+    "O0131",
+    "O0144",
+    "O0177",
+    "O0206",
+    "O0214",
+    "O0225",
+    "O0226",
+    "O0227",
+    "O0228",
+    "O0337",
+    "O0338",
+    "O0339"
+   ]
+  },
+  {
+   "dep": "1061, 1075 (O0261–O0265), 735, 737, 787",
+   "reason": "classifier training corpora, the counterfactual protocol's notation, the archive's own fine-tuning experiments and heteronymic training corpora: corpora of other kinds or the archive's own, outside the class 'training corpora of language models' as the Pile's field sources it. Read, unadmitted",
+   "cands": [
+    "O0153",
+    "O0154",
+    "O0155",
+    "O0156",
+    "O0157",
+    "O0160",
+    "O0161",
+    "O0168",
+    "O0169",
+    "O0170",
+    "O0171",
+    "O0172",
+    "O0257",
+    "O0261",
+    "O0262",
+    "O0263",
+    "O0264",
+    "O0265"
+   ]
+  },
+  {
+   "dep": "127 (O0026), 305, 1272, 1287, 1335, 1486, 1610",
+   "reason": "membership terms used of other things (a chain of poets, a hallucination incident report's corpus search, phrase frequency in summarizers, suppression at the output layer): no claim on a work's membership in a training set beyond those admitted. Read, unadmitted",
+   "cands": [
+    "O0026",
+    "O0097",
+    "O0300",
+    "O0302",
+    "O0303",
+    "O0304",
+    "O0305",
+    "O0310",
+    "O0329",
+    "O0340",
+    "O0341"
+   ]
+  },
+  {
+   "dep": "194, 1209, 1061 (O0072, O0290, O0257)",
+   "reason": "the books-and-copyright class matched on 'copyrighted' in claims about models and prompts as copyrighted works and moderation categories: outside the class. Read, unadmitted",
+   "cands": [
+    "O0072",
+    "O0290",
+    "O0257"
+   ]
+  },
+  {
+   "dep": "(remaining O-class candidates)",
+   "reason": "the rest of the 358 O candidates in 232 deposits use 'training corpus' as a term within arguments on the composition layer, semantic economy, model behaviour, the archive's own instruments and its address (e.g. #1, #18, #78, #87, #97, #98, #104, #110, #129, #158, #166, #171, #172, #173, #191, #222, #233, #247, #253–#256, #267, #507–#539, #568, #635, #665, #670, #716, #720, #721, #753 (O0163, O0164, O0166), #761, #793, #798–#819, #833, #835, #853, #882, #923–#928, #947, #950, #1037, #1039, #1052, #1087, #1091, #1460, #1540, #1550, #1664, #1678, #1709, #1721). Read by filter and sample; none makes a claim on training corpora of language models, books taken without consent, or a work's membership in a training set beyond those admitted. Volume is not a ground of removal; these are unadmitted by reading (§3.4)",
+   "cands": []
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [
+   "#1443 (also an O candidate, admitted there)"
+  ],
+  "rejected": "#129, #160, #337, #382, #473, #481, #590, #603, #604, #738, #784, #819, #1409, #1441, #1521, #1526, #1527, #1528, #1540, #1544, #1545, #1555, #1684, #1709, #1711, #1721, #1722: cited by or citing the anchors on the composition layer's reception and composition, prizes, operator stacks, handwritten artifacts, mantles and the existence tax; none says anything of the Pile, of training datasets as a class, of books taken into training data or of a work's membership in a training set",
+  "file": "candidates-H.jsonl"
+ },
+ "lineages": [
+  {
+   "lineage": "what a model trained on it makes",
+   "instances": [
+    102,
+    1543,
+    1701
+   ],
+   "earliest": 102
+  },
+  {
+   "lineage": "the benchmark: Pile BPB",
+   "instances": [
+    530
+   ],
+   "earliest": 530
+  },
+  {
+   "lineage": "how a work in it is named",
+   "instances": [
+    186,
+    264,
+    727,
+    939,
+    1075,
+    1543
+   ],
+   "earliest": 186
+  },
+  {
+   "lineage": "the components",
+   "instances": [
+    753,
+    943,
+    1053
+   ],
+   "earliest": 753
+  },
+  {
+   "lineage": "its standing among training corpora",
+   "instances": [
+    782
+   ],
+   "earliest": 782
+  },
+  {
+   "lineage": "how a work in it is found",
+   "instances": [
+    127,
+    837,
+    1075
+   ],
+   "earliest": 127
+  },
+  {
+   "lineage": "authorial consent",
+   "instances": [
+    49,
+    478,
+    702,
+    1443
+   ],
+   "earliest": 49
+  },
+  {
+   "lineage": "the training layer itemized",
+   "instances": [
+    186,
+    482
+   ],
+   "earliest": 186
+  }
+ ],
+ "observations": [
+  "Only one deposit names the Pile (#782, a dataset named for a pre-registered study); the archive bears on the entity through its class claims on training corpora, consent and membership, and through the census record.",
+  "No deposit names Books3, Bibliotik or EleutherAI (string pass over every text, 2026-11-01).",
+  "The class 'training corpora of language models' caught the archive's colophon ('intended for inclusion in AI training corpora') in most deposits; recorded as unadmitted, read by filter."
+ ],
+ "counts": {
+  "D_candidates": 1,
+  "R_candidates": 0,
+  "O_candidates": 358,
+  "O_deposits": 232,
+  "H_candidates": 28,
+  "deposits_admitted": 20,
+  "instances_kept": 4,
+  "deposit_claims": 31,
+  "TLL_claims": 40,
+  "CAP_claims": 15
+ },
+ "lineages_composer": [
+  {
+   "lineage": "what it is: 22 datasets combined",
+   "deposits": [],
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-04",
+    "TLL-16"
+   ]
+  },
+  {
+   "lineage": "the size given three ways",
+   "deposits": [],
+   "claims": [
+    "TLL-18",
+    "TLL-20",
+    "TLL-32"
+   ]
+  },
+  {
+   "lineage": "where it is held",
+   "deposits": [],
+   "claims": [
+    "TLL-23",
+    "TLL-26",
+    "CAP-1-07"
+   ]
+  },
+  {
+   "lineage": "what a model trained on it makes",
+   "deposits": [
+    102,
+    1543,
+    1701
+   ],
+   "claims": [
+    "TLL-15",
+    "CAP-1-03",
+    "O1543-01",
+    "O1543-02",
+    "O1543-04",
+    "O102-01",
+    "O1701-01"
+   ]
+  },
+  {
+   "lineage": "the benchmark: Pile BPB",
+   "deposits": [
+    530
+   ],
+   "claims": [
+    "CAP-1-08",
+    "O530-01"
+   ]
+  },
+  {
+   "lineage": "how a work in it is named",
+   "deposits": [
+    186,
+    264,
+    727,
+    939,
+    1075,
+    1543
+   ],
+   "claims": [
+    "TLL-13",
+    "TLL-22",
+    "TLL-25",
+    "CAP-1-02",
+    "O186-03",
+    "O186-05",
+    "O1543-03",
+    "O264-01",
+    "O727-01",
+    "O939-01",
+    "O1075-01"
+   ]
+  },
+  {
+   "lineage": "who made it",
+   "deposits": [],
+   "claims": [
+    "TLL-03",
+    "TLL-17",
+    "TLL-36"
+   ]
+  },
+  {
+   "lineage": "the components",
+   "deposits": [
+    753,
+    943,
+    1053
+   ],
+   "claims": [
+    "TLL-10",
+    "TLL-11",
+    "TLL-19",
+    "CAP-1-01",
+    "O753-01",
+    "O943-01",
+    "O1053-01"
+   ]
+  },
+  {
+   "lineage": "its standing among training corpora",
+   "deposits": [
+    782
+   ],
+   "claims": [
+    "TLL-33",
+    "D782-01",
+    "D782-02"
+   ]
+  },
+  {
+   "lineage": "Books3: source, takedown, suit",
+   "deposits": [],
+   "claims": [
+    "TLL-12",
+    "CAP-1-04",
+    "CAP-1-05"
+   ]
+  },
+  {
+   "lineage": "subtitles: OpenSubtitles and YouTube",
+   "deposits": [],
+   "claims": [
+    "CAP-1-06"
+   ]
+  },
+  {
+   "lineage": "the successor: Common Pile v0.1",
+   "deposits": [],
+   "claims": [
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "lineage": "reception: the encyclopedia, the cards, the census",
+   "deposits": [],
+   "claims": [
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15"
+   ]
+  },
+  {
+   "lineage": "how a work in it is found",
+   "deposits": [
+    127,
+    837,
+    1075
+   ],
+   "claims": [
+    "TLL-09",
+    "TLL-14",
+    "TLL-31",
+    "TLL-34",
+    "O1075-02",
+    "O127-01",
+    "O127-02",
+    "O127-03",
+    "O837-01"
+   ]
+  },
+  {
+   "lineage": "licence and access",
+   "deposits": [],
+   "claims": [
+    "TLL-27"
+   ]
+  },
+  {
+   "lineage": "what it documents of itself",
+   "deposits": [],
+   "claims": [
+    "TLL-35",
+    "CAP-1-09"
+   ]
+  },
+  {
+   "lineage": "authorial consent",
+   "deposits": [
+    49,
+    478,
+    702,
+    1443
+   ],
+   "claims": [
+    "O49-01",
+    "O478-01",
+    "O702-01",
+    "O1443-01"
+   ]
+  },
+  {
+   "lineage": "what the census asks of it",
+   "deposits": [],
+   "claims": [
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-21",
+    "TLL-37",
+    "TLL-38",
+    "TLL-39",
+    "TLL-40"
+   ]
+  },
+  {
+   "lineage": "the training layer itemized",
+   "deposits": [
+    186,
+    482
+   ],
+   "claims": [
+    "TLL-24",
+    "O186-01",
+    "O186-02",
+    "O186-04",
+    "O482-01"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1985 @@
+{
+ "row": "common-crawl",
+ "address": "Common Crawl",
+ "addresses": [
+  "Common Crawl"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext or rendered text, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 the home page, also the census's own page; B2 the Wikipedia article; B3 the foundation's About page; B4 The Atlantic, unreachable; B5 AWS's Registry of Open Data; B6 LinkedIn; B7 DEV Community; B8–B10 three video cards, title only; B11 InfluenceWatch). B_R, the reference pool: 'own_page', the Overview page the census saved (B12). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B2.wiki the raw wikitext; census-*.html/.txt the census's saved copies; B12 the census's copy of the Overview page; tries/ the refused fetch of B4)",
+ "counts": {
+  "sources": 12,
+  "B_D": 11,
+  "B_R": 1,
+  "fetched": 8,
+  "unreachable": 4,
+  "claims": 79,
+  "claims_B_D": 74,
+  "claims_B_R": 5,
+  "quotes_ok": 79
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "Common Crawl — Common Crawl - Open Repository of Web Crawl Data",
+   "fetched": "card; B1.html sha256 34837e49010690a9, HTTP 200 at 2026-11-01T15:12:59Z; byte-identical to the census's saved copy",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "Wikipedia — Common Crawl - Wikipedia",
+   "fetched": "card; B2.html sha256 09c3c6c4c8214ad6, HTTP 200 at 2026-11-01T15:12:59Z; wikitext HTTP 200 (sha256 cc209d3bd3156d8e)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Common Crawl — About",
+   "fetched": "card; B3.html sha256 d6c6231094e703ca, HTTP 200 at 2026-11-01T15:13:00Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "The Atlantic — Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic",
+   "fetched": "unreachable: https://www.theatlantic.com/technology/2025/11/common-crawl-ai-training-data/684567/ HTTP 403 (The Atlantic's Cloudflare block page) at 2026-11-01T15:13:00Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Registry of Open Data on AWS — Common Crawl",
+   "fetched": "card; B5.html sha256 b8a041cf8f978d95, HTTP 200 at 2026-11-01T15:13:01Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "LinkedIn — Common Crawl Foundation | LinkedIn",
+   "fetched": "card; B6.html sha256 a9974e4d81573b80, HTTP 200 at 2026-11-01T15:13:02Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "DEV Community — Inside Common Crawl: The Dataset Behind AI Models (and Its Real ...",
+   "fetched": "card; B7.html sha256 8d44ccbe41e0b9d0, HTTP 200 at 2026-11-01T15:13:22Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B8",
+   "card": "YouTube·PyTorch — Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...",
+   "fetched": "unreachable: video card, no URL found by WebSearch on its title; title only (no snippet on the rail)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B9",
+   "card": "YouTube·James Dooley — Common Crawl for AI Visibility Explained (James Dooley ...",
+   "fetched": "unreachable: video card, no URL found by WebSearch on its title; title only (no snippet on the rail)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B10",
+   "card": "YouTube·Extract Summit — Exploring Common Crawl: The Web's Open Archive | Extract Data Live",
+   "fetched": "unreachable: video card, no URL found by WebSearch on its title; title only (no snippet on the rail)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B11",
+   "card": "InfluenceWatch — Common Crawl - Influence Watch",
+   "fetched": "card; B11.html sha256 2a7578e39c9f91e6, HTTP 200 at 2026-11-01T15:13:03Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B12",
+   "card": "Common Crawl — Overview (census own page)",
+   "fetched": "own page; B12.html sha256 40dc1c9a6e578a2c, HTTP 200 at 2026-11-01T04:07:47Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "own_page",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8",
+   "B9",
+   "B10",
+   "B11"
+  ],
+  "own_pages": [
+   "B12"
+  ],
+  "own_pages_note": "the census's two own pages: common-crawl--home is card 1 (one page, carried once, as a card, in B_D: B1); common-crawl--overview is B12, in B_R. Card 3 (About) is also an own page of the foundation, surfaced by T and carried as a card.",
+  "wikipedia": [
+   "B2"
+  ],
+  "census_third_party": [],
+  "census_third_party_note": "the census's one third-party source is the Wikipedia article, card 2 (B2)",
+  "unreachable": [
+   "B4",
+   "B8",
+   "B9",
+   "B10"
+  ],
+  "title_only": [
+   "B8",
+   "B9",
+   "B10"
+  ],
+  "snippet_only": [
+   "B4"
+  ],
+  "wikipedia_state": "article: 'Common Crawl' (raw wikitext HTTP 200, rendered HTTP 200, 2026-11-01T15:13Z), no redirect, last edited 24 September 2026 (oldid 1376544662); it is card 2 of T, so the Wikipedia source and the card are one source, carried once in B_D (B2)",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11"
+   ],
+   "B_R": [
+    "B12"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (B1–B11; the body names no source beyond its cards, its inline 's3://commoncrawl' being card 5's bucket). B_R, the reference pool: the Overview page the census saved (B12). The home page and the Wikipedia article are cards, carried once in B_D. T against L_F(B_D) uses B1–B11 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "also_origin": "own_page",
+    "pool": "B_D",
+    "role": "Overview card 1 (and the census own page common-crawl--home: one page, carried once, in B_D)",
+    "card": "Common Crawl — Common Crawl - Open Repository of Web Crawl Data",
+    "url": "https://commoncrawl.org/",
+    "kind": "Overview card (the foundation's home page); the census's own page common-crawl--home",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B1.html",
+      "sha256": "34837e49010690a94a8a5aa448850e50e303affddf504b30f075ad5e7eddfee8"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B1.txt",
+      "sha256": "f487197afd7e08194af93df85cc8afc490cc962710410f43e1f38221340574ee"
+     },
+     "census-home.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/census-home.html",
+      "sha256": "34837e49010690a94a8a5aa448850e50e303affddf504b30f075ad5e7eddfee8"
+     },
+     "census-home.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/census-home.txt",
+      "sha256": "37d7b19a22ba3059aa82d7c52f46802cda4e0160071e835211787945cbad727c"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:59Z",
+     "http": 200,
+     "url": "https://commoncrawl.org/",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B1.html",
+     "raw_sha256": "34837e49010690a94a8a5aa448850e50e303affddf504b30f075ad5e7eddfee8",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B1.txt"
+     ],
+     "census_copy": {
+      "src": "common-crawl--home",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:46Z",
+      "sha256": "34837e49010690a94a8a5aa448850e50e303affddf504b30f075ad5e7eddfee8",
+      "agrees": "identical bytes (sha256 equal)"
+     }
+    },
+    "names_operator": "yes ('Common Crawl is a 501(c)(3) non–profit founded in 2007.')",
+    "note": "URL from the card's site and title (the page's <title> is 'Common Crawl - Open Repository of Web Crawl Data', verbatim). The page fetched at 15:12:59Z is byte-identical to the census's copy of 04:07:46Z. The card's snippet reads 'spanning 19 years' where the page reads 'spanning 15 years' (F8 against F4).",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "Common Crawl - Open Repository of Web Crawl Data",
+    "card_snippet": "Organization: Common Crawl (501(c)(3) non-profit founded 2007). Corpus Statistics: Over 300 billion web pages spanning 19 years; adds 3 to 5 billion new pages m...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "also_origin": "wikipedia",
+    "pool": "B_D",
+    "role": "Overview card 2 (and the entity's Wikipedia article: one source, carried once, in B_D)",
+    "card": "Wikipedia — Common Crawl - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Common_Crawl",
+    "kind": "Overview card (the Wikipedia article); the entity's Wikipedia article",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B2.html",
+      "sha256": "09c3c6c4c8214ad61301ef7c603a2aa47d57685655d3602fb269a08edf231990"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B2.txt",
+      "sha256": "adbbd664fe456b0003bdc305c873fdda139244f1ee013ceca6e1efcb0fcf2bf5"
+     },
+     "B2.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B2.wiki",
+      "sha256": "cc209d3bd3156d8e7e32c529cbbc28fd9073c4eba3113499fc29dacacdab2a38"
+     },
+     "census-wikipedia.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/census-wikipedia.html",
+      "sha256": "6a52d8dd429a5afe130c0a9f753781a82482d7ed7ec29768318003e9ad8f94fc"
+     },
+     "census-wikipedia.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/census-wikipedia.txt",
+      "sha256": "becf9d60ac2e37e7307d8627b57d2fdb623b7e6427a8fe0436ff9d86283e5b65"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:59Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Common_Crawl",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B2.html",
+     "raw_sha256": "09c3c6c4c8214ad61301ef7c603a2aa47d57685655d3602fb269a08edf231990",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B2.txt",
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B2.wiki"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Common_Crawl&action=raw",
+      "http": 200,
+      "at": "2026-11-01T15:13:00Z",
+      "sha256": "cc209d3bd3156d8e7e32c529cbbc28fd9073c4eba3113499fc29dacacdab2a38"
+     },
+     "census_copy": {
+      "src": "common-crawl--wikipedia",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:47Z",
+      "sha256": "6a52d8dd429a5afe130c0a9f753781a82482d7ed7ec29768318003e9ad8f94fc",
+      "agrees": "one byte shorter, different hash (the rendered page carries per-request tokens); the article text the same, last edited 24 September 2026 (oldid 1376544662)"
+     }
+    },
+    "names_operator": "yes ('Common Crawl was founded by Gil Elbaz .'; 'Rich Skrenta is the executive director.')",
+    "note": "Article title Common_Crawl, no redirect; rendered page and raw wikitext both HTTP 200; last edited 24 September 2026 (oldid 1376544662). The census row's third-party evidence rests on this article.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "Common Crawl - Wikipedia",
+    "card_snippet": "Organization: Common Crawl Foundation (501(c)(3) non-profit, founded 2007 by Gil Elbaz, San Francisco/Los Angeles). Operations: Crawls the web, provides free pu...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3 (the foundation's About page; in the census's unchecked list, named in the navigation only)",
+    "card": "Common Crawl — About",
+    "url": "https://commoncrawl.org/about",
+    "kind": "Overview card (the foundation's About page: overview figures, history, technical infrastructure, role in AI development, derived datasets, organization)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B3.html",
+      "sha256": "d6c6231094e703caaac1786f596c5560fb88329b78a83f198e8b49114f6722ec"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B3.txt",
+      "sha256": "3b70890d6be4c70268cc1b97ae15c15f0b6131a3d58f1bd8c9d63fdef9302f65"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:00Z",
+     "http": 200,
+     "url": "https://commoncrawl.org/about",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B3.html",
+     "raw_sha256": "d6c6231094e703caaac1786f596c5560fb88329b78a83f198e8b49114f6722ec",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B3.txt"
+     ]
+    },
+    "names_operator": "yes ('Founded in 2007 by Gil Elbaz'; 'Gil Elbaz serves as Chairman of the Board.')",
+    "note": "URL from the card's site and title (the page's heading 'About'); the snippet's opening ('Overview Common Crawl is a nonprofit 501(c)(3) organisation that crawls the web ...') is verbatim on the page. The census lists the About page as unchecked ('named in the navigation only').",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "About",
+    "card_snippet": "Overview Common Crawl is a nonprofit 501(c)(3) organisation that crawls the web and freely provides its archives and datasets to the public. Founded in 2007 by ...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4 (The Atlantic)",
+    "card": "The Atlantic — Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic",
+    "url": "https://www.theatlantic.com/technology/2025/11/common-crawl-ai-training-data/684567/",
+    "kind": "Overview card (Alex Reisner's article for The Atlantic, November 2025, in its AI Watchdog series)",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B4.html",
+      "sha256": "1e44c08587ed087f8e8faced29db8c2fb0d99ad596d1ee10c679fc639e77524d"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:00Z",
+     "http": 403,
+     "url": "https://www.theatlantic.com/technology/2025/11/common-crawl-ai-training-data/684567/",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B4.html",
+     "raw_sha256": "1e44c08587ed087f8e8faced29db8c2fb0d99ad596d1ee10c679fc639e77524d",
+     "result": "unreachable: HTTP 403, The Atlantic's Cloudflare block page ('Your access has been blocked'); one attempt with the census agent string, no retry by another agent string or route",
+     "copy": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/tries/B4-atlantic-403.html"
+    },
+    "names_operator": "card snippet: no",
+    "note": "URL found by WebSearch on the card's title (a listing of the article at scour.ing gives https://www.theatlantic.com/technology/2025/11/common-crawl-ai-training-data/684567; Wikipedia's reference 4 names the article 'The Company Quietly Funneling Paywalled Articles to AI Developers', Reisner, November 4, 2025). Refused; the card's title and snippet are its only text (§3.1(a)). The census also recorded The Atlantic as refused (books3-search--atlantic, 403).",
+    "searches": [
+     "WebSearch '\"Common Crawl Is Doing the AI Industry's Dirty Work\" The Atlantic'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic",
+    "card_snippet": "Editor's note: This work is part of AI Watchdog, The Atlantic's ongoing investigation into the generative-AI industry. * The Common Crawl Foundation is little k...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 5",
+    "card": "Registry of Open Data on AWS — Common Crawl",
+    "url": "https://registry.opendata.aws/commoncrawl/",
+    "kind": "Overview card (AWS's Registry of Open Data entry for the dataset)",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B5.html",
+      "sha256": "b8a041cf8f978d9575aed502340b7fbdf3da8b2c2a47272ead95d05876441470"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B5.txt",
+      "sha256": "a48b5ffead0a87698636a89f2bf667643bfaf313c13affd23ad34fbaf2c373c4"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:01Z",
+     "http": 200,
+     "url": "https://registry.opendata.aws/commoncrawl/",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B5.html",
+     "raw_sha256": "b8a041cf8f978d9575aed502340b7fbdf3da8b2c2a47272ead95d05876441470",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B5.txt"
+     ]
+    },
+    "names_operator": "yes ('See all datasets managed by Common Crawl .')",
+    "note": "URL from the card's site and the S3 name in its snippet (arn:aws:s3:::commoncrawl); the page's <title> 'Common Crawl - Registry of Open Data on AWS'; the snippet verbatim on the page.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "Common Crawl",
+    "card_snippet": "Resources on AWS Description Crawl data (WARC and ARC format) Resource type S3 Bucket Account Required Amazon Resource Name (ARN) arn:aws:s3:::commoncrawl AWS R...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 6",
+    "card": "LinkedIn — Common Crawl Foundation | LinkedIn",
+    "url": "https://www.linkedin.com/company/common-crawl",
+    "kind": "Overview card (the foundation's LinkedIn company page, public view)",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B6.html",
+      "sha256": "a9974e4d81573b80b65b6fd2735114e09b0ccf43f7a65d317ec1a4394e5ae516"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B6.txt",
+      "sha256": "5480b9e2f92a537c9eb9a79d8b29463dc9345fe03814c75cfe734b849c1b477a"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:02Z",
+     "http": 200,
+     "url": "https://www.linkedin.com/company/common-crawl",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B6.html",
+     "raw_sha256": "a9974e4d81573b80b65b6fd2735114e09b0ccf43f7a65d317ec1a4394e5ae516",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B6.txt"
+     ]
+    },
+    "names_operator": "yes ('founded by Gil Elbaz'; employees listed beginning 'Rich Skrenta')",
+    "note": "URL from the card's title; the page's <title> 'Common Crawl Foundation | LinkedIn'; the public view returned HTTP 200 with the About text and recent reposts; the snippet verbatim on the page.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "Common Crawl Foundation | LinkedIn",
+    "card_snippet": "The Common Crawl Foundation is a California 501(c)(3) registered non-profit founded by Gil Elbaz with the goal of democratizing access to web information by pro...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B7",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 7",
+    "card": "DEV Community — Inside Common Crawl: The Dataset Behind AI Models (and Its Real ...",
+    "url": "https://dev.to/extractdata/inside-common-crawl-the-dataset-behind-ai-models-and-its-real-world-limits-2eo2",
+    "kind": "Overview card (a post on DEV Community by the Extract Data community account, 'Inside Common Crawl: The Dataset Behind AI Models (and Its Real World Limits)')",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B7.html",
+      "sha256": "8d44ccbe41e0b9d0bc61326865cfbde820b058eae90e1b5ca6e8acba2714691b"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B7.txt",
+      "sha256": "3040c3467b8e907a702336ede3091c8361fdc2574175463e5ac8bf48a85bd7c2"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:22Z",
+     "http": 200,
+     "url": "https://dev.to/extractdata/inside-common-crawl-the-dataset-behind-ai-models-and-its-real-world-limits-2eo2",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B7.html",
+     "raw_sha256": "8d44ccbe41e0b9d0bc61326865cfbde820b058eae90e1b5ca6e8acba2714691b",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B7.txt"
+     ]
+    },
+    "names_operator": "no (no person at the foundation named)",
+    "note": "URL found by WebSearch on the card's title; the snippet verbatim on the page.",
+    "searches": [
+     "WebSearch '\"Inside Common Crawl: The Dataset Behind AI Models\" dev.to'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 7
+     }
+    ],
+    "card_title": "Inside Common Crawl: The Dataset Behind AI Models (and Its Real ...",
+    "card_snippet": "What is Common Crawl? Common Crawl is a non profit organization that has been crawling the web since 2008. Its mission is to provide free, large scale, publicly...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B8",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 8 (a video card, 14m)",
+    "card": "YouTube·PyTorch — Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...",
+    "url": null,
+    "kind": "video card (title only; no snippet on the rail)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: no URL found for the video; no transcript fetched; the card has no snippet, its title its only text (§3.1(a), video cards)"
+    },
+    "names_operator": "title only",
+    "searches": [
+     "WebSearch '\"Harnessing Common Crawl for AI and ML Applications\" Pedro Ortiz Suarez youtube' (found the PyTorch Day France 2025 schedule entry for the talk, no video URL)"
+    ],
+    "note": "A video card is admitted through its transcript where one can be fetched, otherwise through title and snippet; this card renders a title and duration only.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 8
+     }
+    ],
+    "card_title": "Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...",
+    "card_snippet": null,
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B9",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 9 (a video card, 6m)",
+    "card": "YouTube·James Dooley — Common Crawl for AI Visibility Explained (James Dooley ...",
+    "url": null,
+    "kind": "video card (title only; no snippet on the rail)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: no URL found for the video; no transcript fetched; the card has no snippet, its title its only text (§3.1(a), video cards)"
+    },
+    "names_operator": "title only",
+    "searches": [
+     "WebSearch '\"Common Crawl for AI Visibility Explained\" James Dooley youtube' (no video URL)"
+    ],
+    "note": "A video card is admitted through its transcript where one can be fetched, otherwise through title and snippet; this card renders a title and duration only.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 9
+     }
+    ],
+    "card_title": "Common Crawl for AI Visibility Explained (James Dooley ...",
+    "card_snippet": null,
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B10",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 10 (a video card, 2m)",
+    "card": "YouTube·Extract Summit — Exploring Common Crawl: The Web's Open Archive | Extract Data Live",
+    "url": null,
+    "kind": "video card (title only; no snippet on the rail)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: no URL found for the video; no transcript fetched; the card has no snippet, its title its only text (§3.1(a), video cards)"
+    },
+    "names_operator": "title only",
+    "searches": [
+     "WebSearch '\"Exploring Common Crawl: The Web's Open Archive\" Extract Data Live youtube' (no video URL)"
+    ],
+    "note": "A video card is admitted through its transcript where one can be fetched, otherwise through title and snippet; this card renders a title and duration only.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 10
+     }
+    ],
+    "card_title": "Exploring Common Crawl: The Web's Open Archive | Extract Data Live",
+    "card_snippet": null,
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B11",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 11",
+    "card": "InfluenceWatch — Common Crawl - Influence Watch",
+    "url": "https://www.influencewatch.org/non-profit/common-crawl/",
+    "kind": "Overview card (InfluenceWatch's profile of the non-profit: background, copyright complaints, AI training, leadership, financials from tax filings)",
+    "files": {
+     "B11.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B11.html",
+      "sha256": "2a7578e39c9f91e63d4e9ec9d49dbde17b6edce8ad7cd8d202010c85978c93ea"
+     },
+     "B11.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B11.txt",
+      "sha256": "77ada196dd97fe2b1acbac845be9e3cf3c48b9c3776535db283bb11b7b0ce980"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:03Z",
+     "http": 200,
+     "url": "https://www.influencewatch.org/non-profit/common-crawl/",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B11.html",
+     "raw_sha256": "2a7578e39c9f91e63d4e9ec9d49dbde17b6edce8ad7cd8d202010c85978c93ea",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B11.txt"
+     ]
+    },
+    "names_operator": "yes ('Common Crawl’s executive director is Rich Skrenta.'; 'The group’s chairman is Gil Elbaz.')",
+    "note": "URL from the card's site and title; the page's <title> 'Common Crawl - Influence Watch'; the snippet verbatim on the page.",
+    "surfaced_by_T": [
+     {
+      "slug": "common-crawl-aio-20261101",
+      "card": 11
+     }
+    ],
+    "card_title": "Common Crawl - Influence Watch",
+    "card_snippet": "Common Crawl is a nonprofit which maintains an open repository of “crawled” internet data. The group makes the information which it crawls from the internet fre...",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   },
+   {
+    "id": "B12",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "census own page common-crawl--overview (https://commoncrawl.org/overview); not surfaced by T",
+    "card": "Common Crawl — Overview (census own page)",
+    "url": "https://commoncrawl.org/overview",
+    "kind": "the foundation's Overview page (the crawl list, the corpus's contents, storage, access and the URL Index)",
+    "files": {
+     "B12.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B12.html",
+      "sha256": "40dc1c9a6e578a2ccaf528c49bf852da8fdfc013ebd4d4019ad7d2a22a9f7d49"
+     },
+     "B12.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B12.txt",
+      "sha256": "5497488a8a457b99f3fc6458227262267a12ab42c9f6b49dd7d462de51ffa05a"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:47Z",
+     "http": 200,
+     "url": "https://commoncrawl.org/overview",
+     "raw": "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B12.html",
+     "raw_sha256": "40dc1c9a6e578a2ccaf528c49bf852da8fdfc013ebd4d4019ad7d2a22a9f7d49",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/common-crawl-20261101/B12.txt"
+     ],
+     "census_copy": {
+      "src": "common-crawl--overview",
+      "sha256": "40dc1c9a6e578a2ccaf528c49bf852da8fdfc013ebd4d4019ad7d2a22a9f7d49",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "no (the page names the foundation as Common Crawl only)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); B12.txt is the census's text. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": [],
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Common Crawl maintains a free, open repository of web crawl data that can be used by anyone.",
+   "claim": "the foundation's own definition: a free, open repository of web crawl data usable by anyone",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Common Crawl is a 501(c)(3) non–profit founded in 2007.",
+   "claim": "a 501(c)(3) non-profit founded in 2007",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: form, founder, governance",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "We make wholesale extraction, transformation, and analysis of open web data accessible to researchers.",
+   "claim": "its stated purpose: wholesale extraction, transformation and analysis of open web data made accessible to researchers",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose and mission",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "Over 300 billion pages spanning 15 years. … 3–5 billion new pages added each month.",
+   "claim": "over 300 billion pages spanning 15 years; 3 to 5 billion new pages a month",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and cadence",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "Free and open corpus since 2007.",
+   "claim": "free and open corpus since 2007",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: 2007, 2008, 2011",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "Cited in over 10,000 research papers.",
+   "claim": "cited in over 10,000 research papers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research use and citation",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Latest Blog Post",
+   "quote": "We are extremely pleased to announce the release of our October 2026 Web Graph, comprising data from August, September, and October 2026.",
+   "claim": "the October 2026 web graph, from August to October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "units, formats and indexes",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet",
+   "quote": "Corpus Statistics: Over 300 billion web pages spanning 19 years",
+   "claim": "the card renders the home page as spanning 19 years, where the page reads 15",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and cadence",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "navigation",
+   "quote": "Get Started Blog Examples CCBot Infra Status Opt-Out Ledger FAQ",
+   "claim": "its navigation names a CCBot page and an Opt-Out Ledger",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f487197afd7e0819…) or the card's snippet, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Common Crawl Foundation ( Common Crawl ) is a nonprofit 501(c)(3) organization that crawls the web and freely provides its archives and datasets to the public.",
+   "claim": "a nonprofit 501(c)(3) organization that crawls the web and freely provides its archives and datasets",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Access to the data is free on Amazon Web Services , but users may incur storage and compute costs.",
+   "claim": "access free on AWS, though users may incur storage and compute costs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "hosting, access and licence",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Common Crawl was founded by Gil Elbaz .",
+   "claim": "founded by Gil Elbaz",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: form, founder, governance",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The data had mostly been primarily used by researchers and some startups until the 2020s, when AI companies started training large language models using the data.",
+   "claim": "used mostly by researchers and startups until the 2020s, when AI companies began training large language models on it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "in the training layer",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "In November 2025, an investigation by The Atlantic revealed that Common Crawl misled publishers when it claimed it respected paywalls in its scraping and it was not honoring requests from publishers to have their content removed from its databases.",
+   "claim": "the lead's form of The Atlantic's finding: misled publishers on paywalls, and was not honoring removal requests",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "The Atlantic's finding",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Common Crawl was founded in 2007 in San Francisco, and started archiving websites that year. … It began publishing its crawls in 2011.",
+   "claim": "founded 2007 in San Francisco, archiving from that year; crawls published from 2011",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: 2007, 2008, 2011",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Common Crawl was designed to have more and fresher data that was more efficient to analyze and utilize than the Wayback Machine created by the Internet Archive .",
+   "claim": "designed for more, fresher and more usable data than the Internet Archive's Wayback Machine",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "By 2015, 1.8 billion webpages were on the Common Crawl, which started by crawling a list of URLs donated by the search engine Blekko .",
+   "claim": "1.8 billion pages by 2015; the crawl began from a list of URLs donated by Blekko",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the crawler and its seeds",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Common Crawl received its first requests to redact information in 2023 and increasingly started seeing its crawler, CCBot, blocked.",
+   "claim": "first redaction requests in 2023; CCBot increasingly blocked",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "In 2023, it began receiving significant financial support from AI companies, including Anthropic and OpenAI , each of which donated $250,000.",
+   "claim": "from 2023, funding from AI companies, Anthropic and OpenAI $250,000 each",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "funding",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "ChatGPT , as of 2023, was largely trained on Common Crawl, … as were other LLMs including Gemini .",
+   "claim": "ChatGPT, as of 2023, largely trained on it, and other models including Gemini",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "By April 2023, Common Crawl was capturing 3.1 billion webpages, with an estimated 5% of pages before 2021 containing hate speech or slurs.",
+   "claim": "3.1 billion pages by April 2023; an estimated 5% of pre-2021 pages with hate speech or slurs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the crawl holds and leaves out",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "As of 2024, Common Crawl had been cited in more than 10,000 academic studies.",
+   "claim": "cited in more than 10,000 academic studies as of 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "research use and citation",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "By 2024, The Pile and Common Crawl had been the two main training datasets being used to train AI models.",
+   "claim": "by 2024, The Pile and Common Crawl the two main training datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "In November 2025, an investigation by technology journalist Alex Reisner for The Atlantic revealed that Common Crawl misled publishers when it claimed it respected paywalls in its scraping and when it said that it was honoring requests from publishers to have their content removed from its databases.",
+   "claim": "The Atlantic (Reisner, November 2025): it misled publishers on paywalls and on honoring removal requests",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "The Atlantic's finding",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "It included misleading results in the public search function on its website that showed no entries for websites that had requested their archives be removed, when in fact those sites were still included in its scrapes used by AI companies.",
+   "claim": "its public search showed no entries for sites that had asked for removal while those sites were still in the scrapes",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "The Atlantic's finding",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "As of 2025, Reisner found that CCBot was the most widely-blocked bot by the top 1000 websites.",
+   "claim": "CCBot the most widely blocked bot among the top 1000 websites (2025)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "A 2026 article in LWN.net discussed an advantage to services like Common Crawl being that it can limit the scraping costs to websites by allowing companies and researchers to download the data from Common Crawl instead of scraping it themselves.",
+   "claim": "LWN.net (2026): it can limit scraping costs to websites, since others download its data in place of scraping",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and mission",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "In April 2026, Common Crawl experimentally began to distribute its data through Hugging Face Storage Bucket , in addition to its standard storage on Amazon S3 .",
+   "claim": "from April 2026, experimental distribution through a Hugging Face Storage Bucket beside Amazon S3",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "hosting, access and licence",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Organization",
+   "quote": "Peter Norvig and Joi Ito have served on the advisory board. … Rich Skrenta is the executive director.",
+   "claim": "advisory board Norvig and Ito; executive director Rich Skrenta",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: form, founder, governance",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Organization",
+   "quote": "It has received funding almost exclusively from the Elbaz Family Foundation Trust until 2023 when it started receiving donations from the AI industry.",
+   "claim": "funded almost exclusively by the Elbaz Family Foundation Trust until 2023, then also by the AI industry",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Refined versions",
+   "quote": "A number of organizations take raw Common Crawl data and refine it into datasets that exclude edgy content or are otherwise higher-quality for their purposes, such as FineWeb, DCLM and C4.",
+   "claim": "others refine the raw data into datasets such as FineWeb, DCLM and C4",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "refined datasets downstream",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Colossal Clean Crawled Corpus",
+   "quote": "The Colossal Clean Crawled Corpus , or C4 for short was created by Google . It was constructed for the training of the T5 language model series in 2019. … A 2024 study found that 45% of the content was explicitly restricted by websites' terms of service to be used for purposes like AI training by for-profit companies.",
+   "claim": "Google's C4 (2019, for T5); a 2024 study: 45% of its content restricted by sites' terms of service from uses such as for-profit AI training",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "refined datasets downstream",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F33": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox",
+   "quote": "Apache 2.0 (software) [ clarification needed ]",
+   "claim": "the infobox's content licence: Apache 2.0 (software), flagged for clarification",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "hosting, access and licence",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F34": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "This page was last edited on 24 September 2026",
+   "claim": "the article's last edit, 24 September 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception",
+   "date": "2026-09-24",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 adbbd664fe456b00…) or wikitext B2.wiki, or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "Common Crawl is a nonprofit 501(c)(3) organisation that crawls the web and freely provides its archives and datasets to the public. Founded in 2007 by Gil Elbaz , we maintain an open repository of web crawl data collected since 2008, totalling more than 10 petabytes. Crawls are published approximately once a month, each typically containing more than two billion web pages.",
+   "claim": "its About page: crawls the web and freely provides archives and datasets; founded 2007 by Gil Elbaz; data collected since 2008, more than 10 petabytes; crawls about monthly, each more than two billion pages",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview (figures)",
+   "quote": ">10 PiB Total archive size ~2B+ Pages per crawl 12,000+ Research citations 64% LLMs trained on Common Crawl data",
+   "claim": "its figures: >10 PiB; ~2B+ pages per crawl; 12,000+ citations; 64% of LLMs trained on its data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and cadence",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "The dataset is hosted on Amazon Web Services through its Open Data Sponsorship Program and can be downloaded at no cost. It has been cited in over 12,000 research papers and has become one of the most widely used sources of training data for large language models.",
+   "claim": "hosted under AWS Open Data Sponsorship, downloadable at no cost; over 12,000 citations; one of the most widely used sources of LLM training data",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F38": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "Common Crawl is a member of the International Internet Preservation Consortium (IIPC) and a partner in the End of Term Web Archive",
+   "claim": "an IIPC member and an End of Term Web Archive partner",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F39": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History 2008, 2012",
+   "quote": "Common Crawl began collecting data using a custom Hadoop -based crawler with a PageRank implementation. … The search engine blekko donated crawl metadata gathered between February and October 2012 to improve crawl quality and reduce spam.",
+   "claim": "2008, a custom Hadoop crawler with PageRank; 2012, blekko donated crawl metadata from February to October 2012 to improve quality and reduce spam",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the crawler and its seeds",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F40": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History 2013",
+   "quote": "Common Crawl replaced their custom crawler with a system based on Apache Nutch , designated CCBot. The organisation switched from ARC to WARC format (ISO 28500) beginning with the November 2013 crawl.",
+   "claim": "2013: CCBot on Apache Nutch; ARC to WARC from November 2013",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the crawler and its seeds",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F41": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History 2019, 2020",
+   "quote": "Google's Colossal Clean Crawled Corpus (C4) , constructed from a single Common Crawl snapshot, was used to train the T5 language model series, marking the beginning of Common Crawl's central role in AI development. … OpenAI's GPT-3 paper reported that the majority of its training tokens were derived from filtered Common Crawl data",
+   "claim": "C4 from one snapshot trained T5 (2019), the beginning of its central role in AI; GPT-3 (2020) mostly filtered Common Crawl tokens",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F42": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History 2023",
+   "quote": "Rich Skrenta , creator of the blekko search engine and founder of the Open Directory Project , became Executive Director.",
+   "claim": "2023: Rich Skrenta, creator of blekko, executive director",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: form, founder, governance",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F43": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Technical Infrastructure, CCBot",
+   "quote": "CCBot obeys robots.txt directives and rate-limits its requests to individual servers.",
+   "claim": "CCBot obeys robots.txt and rate-limits its requests",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F44": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Technical Infrastructure, CCBot",
+   "quote": "CCBot uses Harmonic Centrality , a graph-theoretic measure of a node's proximity to the structural core of the web, to prioritise URLs for crawling.",
+   "claim": "CCBot prioritises URLs by harmonic centrality, proximity to the structural core of the web",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "the crawler and its seeds",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F45": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Data Formats",
+   "quote": "WARC (Web ARChive) Raw crawl data including full HTTP responses, compliant with ISO 28500 . Append-only and immutable once written. WAT (Web Archive Transformation) Metadata extracted from WARC records, including HTTP headers and link graphs. WET (WARC Encapsulated Text) Plaintext content extracted from crawled HTML, suitable for NLP tasks.",
+   "claim": "three formats: WARC (raw responses, append-only), WAT (metadata), WET (WARC Encapsulated Text, extracted plaintext)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "units, formats and indexes",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F46": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Indexes",
+   "quote": "Monthly release index files in the CDXJ Index and URL Index , the latter (previously called the \"Columnar Index\") queryable with Amazon Athena .",
+   "claim": "monthly CDXJ and URL Index files, the latter queryable with Athena",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "units, formats and indexes",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F47": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Role in AI Development",
+   "quote": "Common Crawl data, typically after filtering and processing by third parties, has been a primary training data source for many large language models. A 2024 Mozilla Foundation study described the dataset as having \"laid the infrastructural foundation\" for the generative AI boom, and found that at least 64% of 47 large language models published between 2019 and 2023 were trained on filtered versions of Common Crawl data.",
+   "claim": "typically after third-party filtering, a primary training source; Mozilla (2024): at least 64% of 47 LLMs of 2019–2023 trained on filtered versions",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "in the training layer",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F48": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Role in AI Development",
+   "quote": "A 2025 paper at COLM found that compliance with robots.txt web crawling opt-outs does not degrade general knowledge acquisition in LLMs, reporting a close-to-zero \"Data Compliance Gap.\"",
+   "claim": "a 2025 COLM paper: honoring robots.txt opt-outs does not degrade general knowledge in LLMs",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F49": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Role in AI Development; Derived Datasets",
+   "quote": "Pythia EleutherAI Used Pile-CC, a filtered Common Crawl subset within The Pile dataset. … FineWeb Hugging Face 2024 Refined filtering pipeline for LLM pre-training",
+   "claim": "its derived datasets: Pile-CC, a filtered subset within The Pile; FineWeb; with C4, OSCAR, CCNet, MADLAD-400, RefinedWeb",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "refined datasets downstream",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F50": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Multilingual Initiatives",
+   "quote": "In December 2024, we launched the Web Languages Project to address the overrepresentation of English-language content",
+   "claim": "the Web Languages Project (December 2024) on the overrepresentation of English",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the crawl holds and leaves out",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F51": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Organization",
+   "quote": "Gil Elbaz serves as Chairman of the Board. Primary funding comes from the Elbaz Family Foundation. As of 2026, the organization has approximately 18 staff members .",
+   "claim": "chair Gil Elbaz; primary funding the Elbaz Family Foundation; about 18 staff (2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 3b70890d6be4c702…) or the card's snippet, whitespace-normalised"
+  },
+  "F52": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic Editor's note: This work is part of AI Watchdog, The Atlantic's ongoing investigation into the generative-AI industry. * The Common Crawl Foundation is little k...",
+   "claim": "The Atlantic's card: 'Common Crawl Is Doing the AI Industry's Dirty Work', part of its AI Watchdog investigation",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "The Atlantic's finding",
+   "date": "2025-11 (the article, by Wikipedia's reference); snippet only",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description; License",
+   "quote": "A corpus of web crawl data composed of over 300 billion web pages. Update Frequency Monthly License This data is available for anyone to use under the Common Crawl Terms of Use",
+   "claim": "AWS registry: over 300 billion pages, monthly, for anyone to use under the Common Crawl Terms of Use",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "hosting, access and licence",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 a48b5ffead0a8769…) or the card's snippet, whitespace-normalised"
+  },
+  "F54": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Resources on AWS",
+   "quote": "Crawl data (WARC and ARC format) Resource type S3 Bucket Account Required Amazon Resource Name (ARN) arn:aws:s3:::commoncrawl AWS Region us-east-1",
+   "claim": "crawl data in WARC and ARC, an S3 bucket (account required), arn:aws:s3:::commoncrawl, us-east-1",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "hosting, access and licence",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 a48b5ffead0a8769…) or the card's snippet, whitespace-normalised"
+  },
+  "F55": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Publications",
+   "quote": "LAION-5B: An open large-scale dataset for training next generation image-text models … Language models are few-shot learners … LLaMA: open and efficient foundation language models",
+   "claim": "its publications list includes LAION-5B, the GPT-3 paper and LLaMA",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 a48b5ffead0a8769…) or the card's snippet, whitespace-normalised"
+  },
+  "F56": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About us",
+   "quote": "The Common Crawl Foundation is a California 501(c)(3) registered non-profit founded by Gil Elbaz with the goal of democratizing access to web information by producing and maintaining an open repository of web crawl data that is universally accessible and analyzable.",
+   "claim": "its LinkedIn: a California 501(c)(3) founded by Gil Elbaz to democratize access to web information",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "purpose and mission",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 5480b9e2f92a537c…) or the card's snippet, whitespace-normalised"
+  },
+  "F57": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About us",
+   "quote": "We level the playing field by making wholesale extraction, transformation and analysis of web data cheap and easy.",
+   "claim": "levelling the field by making extraction and analysis of web data cheap and easy",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose and mission",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 5480b9e2f92a537c…) or the card's snippet, whitespace-normalised"
+  },
+  "F58": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "header; Company size",
+   "quote": "Discover all 23 employees … Company size 2-10 employees",
+   "claim": "23 employees listed against a stated company size of 2–10",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: form, founder, governance",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 5480b9e2f92a537c…) or the card's snippet, whitespace-normalised"
+  },
+  "F59": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Updates (a repost by the foundation)",
+   "quote": "If you're not in the crawl, you're not in the model. I'll show you how to check.",
+   "claim": "a staff member's post the foundation reposted: 'If you're not in the crawl, you're not in the model.'",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 5480b9e2f92a537c…) or the card's snippet, whitespace-normalised"
+  },
+  "F60": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What is Common Crawl?",
+   "quote": "Common Crawl is a non profit organization that has been crawling the web since 2008. Its mission is to provide free, large scale, publicly available archives of web data for researchers, developers, and organizations worldwide.",
+   "claim": "DEV: crawling since 2008; mission free large-scale public archives of web data",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (the post as fetched 2026-11-01; it reports the August 2025 crawl)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3040c3467b8e907a…) or the card's snippet, whitespace-normalised"
+  },
+  "F61": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What is Common Crawl?",
+   "quote": "For instance, the August 2025 crawl added 2.42 billion pages, totaling over 419 TiB of data!",
+   "claim": "the August 2025 crawl: 2.42 billion pages, over 419 TiB",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and cadence",
+   "date": "undated (the post as fetched 2026-11-01; it reports the August 2025 crawl)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3040c3467b8e907a…) or the card's snippet, whitespace-normalised"
+  },
+  "F62": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Why Common Crawl Matters for AI?",
+   "quote": "A 2024 Mozilla report found that 2/3 of 47 generative LLMs released between 2019-2023 relied on Common Crawl data.",
+   "claim": "Mozilla (2024): two thirds of 47 generative LLMs of 2019–2023 relied on its data",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (the post as fetched 2026-11-01; it reports the August 2025 crawl)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3040c3467b8e907a…) or the card's snippet, whitespace-normalised"
+  },
+  "F63": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "How Common Crawl Organizes Data?",
+   "quote": "Web Archive Transformations (WAT files) - they like summaries of WARC files. They contain metadata in JSON format, such as all the links on the page, HTTP headers, and response codes. … Web Extracted Text (WET files) - plain text extracted from WARC files (no HTML or media). Ideal for NLP or training text based models.",
+   "claim": "DEV names WAT Web Archive Transformations (JSON metadata) and WET Web Extracted Text (plain text, for training text models)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "units, formats and indexes",
+   "date": "undated (the post as fetched 2026-11-01; it reports the August 2025 crawl)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3040c3467b8e907a…) or the card's snippet, whitespace-normalised"
+  },
+  "F64": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Other Challenges with Common Crawl",
+   "quote": "Common Crawl captures the same pages across multiple crawls, sometimes hundreds of times. … Crawl frequency and seed URLs shape what gets captured. … So, some domains or regions are overrepresented while others barely appear.",
+   "claim": "limits: the same pages captured across crawls, sometimes hundreds of times; seed URLs and frequency over-represent some domains and regions",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the crawl holds and leaves out",
+   "date": "undated (the post as fetched 2026-11-01; it reports the August 2025 crawl)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3040c3467b8e907a…) or the card's snippet, whitespace-normalised"
+  },
+  "F65": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Wrapping Up",
+   "quote": "Its data is archived, not live … That’s where modern scraping solutions like Zyte’s API make all the difference.",
+   "claim": "the data archived, not live; the post closes by recommending Zyte's API",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the crawl holds and leaves out",
+   "date": "undated (the post as fetched 2026-11-01; it reports the August 2025 crawl)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3040c3467b8e907a…) or the card's snippet, whitespace-normalised"
+  },
+  "F66": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (video, 14m)",
+   "quote": "Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...",
+   "claim": "a 14-minute PyTorch talk by Pedro Ortiz Suarez, 'Harnessing Common Crawl for AI and ML Applications' (title only)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F67": {
+   "source": "B9",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (video, 6m)",
+   "quote": "Common Crawl for AI Visibility Explained (James Dooley ...",
+   "claim": "a 6-minute video by James Dooley, 'Common Crawl for AI Visibility Explained' (title only)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "in the training layer",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F68": {
+   "source": "B10",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (video, 2m)",
+   "quote": "Exploring Common Crawl: The Web's Open Archive | Extract Data Live",
+   "claim": "a 2-minute Extract Summit video, 'Exploring Common Crawl: The Web's Open Archive' (title only)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F69": {
+   "source": "B11",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "summary",
+   "quote": "Common Crawl is a nonprofit which maintains an open repository of “crawled” internet data. The group makes the information which it crawls from the internet free and open to researchers. Some news outlets began demanding that the group not crawl their websites because of the group’s role in training artificial intelligence (AI) programs, claiming that the group violates news outlets’ copyrights.",
+   "claim": "InfluenceWatch: an open repository of crawled data for researchers; news outlets demand it not crawl them, citing its role in AI training and copyright",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 77ada196dd97fe2b…) or the card's snippet, whitespace-normalised"
+  },
+  "F70": {
+   "source": "B11",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Background",
+   "quote": "The group focuses on downloading HTML pages and does not archive images, videos, or Javascript files.",
+   "claim": "it downloads HTML pages and does not archive images, videos or JavaScript files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the crawl holds and leaves out",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 77ada196dd97fe2b…) or the card's snippet, whitespace-normalised"
+  },
+  "F71": {
+   "source": "B11",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright Complaints",
+   "quote": "The group excludes pages which have a robots.txt exclusion policy and allows for publishers to opt out of having their pages crawled. The group asserts that it addresses copyright concerns by only capturing a sample of a website instead of the entire website.",
+   "claim": "it excludes pages under robots.txt exclusion and lets publishers opt out; it asserts it captures only a sample of each site",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 77ada196dd97fe2b…) or the card's snippet, whitespace-normalised"
+  },
+  "F72": {
+   "source": "B11",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Artificial Intelligence Training",
+   "quote": "The study also called on Common Crawl to be more transparent and inclusive about its governance and to better highlight the limitation and biases of its data.",
+   "claim": "Mozilla (February 2024) called on it to be more transparent about governance and to highlight its data's limits and biases",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the crawl holds and leaves out",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 77ada196dd97fe2b…) or the card's snippet, whitespace-normalised"
+  },
+  "F73": {
+   "source": "B11",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Artificial Intelligence Training",
+   "quote": "In June 2024, Danish media outlets demanded the group remove copies of their articles from past data sets and stop crawling their websites immediately. In addition to the Danish media outlets, the New York Times , Buzzfeed, the Washington Post , and the Canadian Broadcasting Corporation (CBC) also block Common Crawl’s access to their webpages.",
+   "claim": "June 2024: Danish outlets demanded removal and an end to crawling; NYT, Buzzfeed, Washington Post and CBC block it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 77ada196dd97fe2b…) or the card's snippet, whitespace-normalised"
+  },
+  "F74": {
+   "source": "B11",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "At-A-Glance",
+   "quote": "Executive Director: Rich Skrenta Location: Beverly Hills, CA",
+   "claim": "executive director Rich Skrenta; location Beverly Hills",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the foundation: form, founder, governance",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 77ada196dd97fe2b…) or the card's snippet, whitespace-normalised"
+  },
+  "F75": {
+   "source": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Overview",
+   "quote": "The Common Crawl corpus contains petabytes of data, regularly collected since 2008.",
+   "claim": "petabytes of data, regularly collected since 2008",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "dates: 2007, 2008, 2011",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (the census's text, sha256 5497488a8a457b99…), whitespace-normalised"
+  },
+  "F76": {
+   "source": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "crawl list",
+   "quote": "CC-MAIN-2026-43",
+   "claim": "the latest listed crawl CC-MAIN-2026-43, crawls named by release",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "units, formats and indexes",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (the census's text, sha256 5497488a8a457b99…), whitespace-normalised"
+  },
+  "F77": {
+   "source": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Overview",
+   "quote": "The corpus contains raw web page data, metadata extracts, and text extracts.",
+   "claim": "the corpus: raw page data, metadata extracts and text extracts",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "units, formats and indexes",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (the census's text, sha256 5497488a8a457b99…), whitespace-normalised"
+  },
+  "F78": {
+   "source": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Overview",
+   "quote": "Common Crawl data is stored on Amazon Web Services’ Public Data Sets and on multiple academic cloud platforms across the world. … Access to the corpus hosted by Amazon is free. You may use Amazon’s cloud platform to run analysis jobs directly against it or you can download it, whole or in part.",
+   "claim": "stored on AWS Public Data Sets and academic clouds; access free; analysis on Amazon or download whole or in part",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "hosting, access and licence",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (the census's text, sha256 5497488a8a457b99…), whitespace-normalised"
+  },
+  "F79": {
+   "source": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Overview",
+   "quote": "You can search for pages in our corpus using the Common Crawl URL Index.",
+   "claim": "pages searchable by the URL Index",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "opt-out, removal and the index as witness",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (the census's text, sha256 5497488a8a457b99…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Common Crawl — Common Crawl - Open Repository of Web Crawl Data",
+  "B2": "Wikipedia — Common Crawl - Wikipedia",
+  "B3": "Common Crawl — About",
+  "B4": "The Atlantic — Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic",
+  "B5": "Registry of Open Data on AWS — Common Crawl",
+  "B6": "LinkedIn — Common Crawl Foundation | LinkedIn",
+  "B7": "DEV Community — Inside Common Crawl: The Dataset Behind AI Models (and Its Real ...",
+  "B8": "YouTube·PyTorch — Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...",
+  "B9": "YouTube·James Dooley — Common Crawl for AI Visibility Explained (James Dooley ...",
+  "B10": "YouTube·Extract Summit — Exploring Common Crawl: The Web's Open Archive | Extract Data Live",
+  "B11": "InfluenceWatch — Common Crawl - Influence Watch",
+  "B12": "Common Crawl — Overview (census own page)"
+ }
+}

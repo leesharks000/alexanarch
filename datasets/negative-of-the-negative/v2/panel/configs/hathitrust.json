@@ -1,0 +1,34 @@
+{
+  "row": "hathitrust",
+  "address": "HathiTrust Digital Library",
+  "entity": "The HathiTrust Digital Library (HathiTrust, hathitrust.org): a large-scale collaborative repository of digital content from research libraries, administered by the University of Michigan, founded in October 2008 by the universities of the Committee on Institutional Cooperation and the libraries of the University of California; its holdings include content digitized via Google Books and the Internet Archive and content digitized locally by libraries, more than 18 million volumes in September 2024, 6.7 million of them in the public domain in the United States; full-text search across the repository, with display restricted where copyright status cannot be established; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/hathitrust)",
+  "row_type": "C (a public entity on which the archive bears: a digital library of digitized research-library volumes with full-text search; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure', area 'corpora')",
+  "aliases": [
+    {"pattern": "\\bHathi ?Trust\\b", "flags": "i"},
+    {"pattern": "\\bhathitrust\\.org\\b", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "digital libraries and the mass digitization of library books (research-library volumes scanned and held as a shared digital collection)",
+      "pattern": "\\b(digital librar(y|ies)|mass digiti[sz]ation|digiti[sz]ed (books|volumes|collections?|library)|Google Books( Project)?|book[- ]scanning|scanned books)\\b",
+      "flags": "i",
+      "basis": "field: B3 (Wikipedia, short description 'Digital library'; lead: 'a large-scale collaborative repository of digital content from research libraries'; 'content digitized via Google Books and the Internet Archive digitization initiatives, as well as content digitized locally by libraries'; categories 'American digital libraries', 'Mass digitization'); B4 (U-M Library: 'a collection of millions of books and journals digitized from libraries around the world'; 'Content includes materials from the Google Books Project , the Internet Archive , and digitized collections from member libraries.'). The census's evidence_kind ('digital library'), record_type ('library') and record_object for the entity (census.json rows[slug == 'hathitrust'].evidence_kind, .record_type, .record_object)."
+    },
+    {
+      "term": "search without display: full-text search of in-copyright volumes whose pages stay closed, and the fair-use holding on it",
+      "pattern": "\\b(fair use|search[- ]only|full[- ]text search(able)?|non[- ]?consumptive|Authors Guild|transformative use)\\b",
+      "flags": "i",
+      "basis": "field: B3 (Wikipedia: 'finding that HathiTrust's use of books scanned by Google was fair use under US law'; 'providing search and accessibility for the visually impaired were grounds to consider the service transformative and fair use'; 'full-text search across the entire repository'); B4 (U-M Library: 'items held in copyright are full-text searchable'); B6 (U-M guide, Viewing & Downloading: 'Those works that are still under copyright display a \"Limited (search-only)\" status.'). The census's record.readback, record.makes and tll_reading ('a machine reading of whole books whose product is a finding (search) while the pages stay closed') for the entity (census.json rows[slug == 'hathitrust'].record, .tll_reading)."
+    },
+    {
+      "term": "computational analysis of a digital library's corpus (text and data mining of its volumes)",
+      "pattern": "\\b(text[- ]and[- ]data[- ]mining|text[- ]mining|computational analysis of|data capsules?|HTRC|HathiTrust Research Center)\\b",
+      "flags": "i",
+      "basis": "field: B9 (the HTRC home page, analytics.hathitrust.org: 'a research center dedicated to enabling computational analysis of the HathiTrust Digital Library'; 'supported scholars using text and data mining methods to study the HathiTrust corpus'). The census's record.makes ('computational analysis of the volumes was the separate service of the HathiTrust Research Center, ended 30 September 2026') and relation has_part htrc (census.json rows[slug == 'hathitrust'].record.makes, .relations)."
+    }
+  ],
+  "classes_note": "Three classes: (1) digital libraries and mass digitization (field B3, B4; census evidence_kind 'digital library', record_type 'library', record_object); (2) search without display, with the fair-use holding (field B3, B4, B6; census record.readback, record.makes, tll_reading); (3) computational analysis of a digital library's corpus (field B9, the Research Center's page; census record.makes and relation has_part htrc). The aliases are the entity's name with and without its space and its host. The University of Michigan (its administrator), Google Books and the Internet Archive (sources of its scans; the Internet Archive a row of its own in the census), the HathiTrust Research Center (a part, a row of its own, htrc) and HATII (Wikipedia's disambiguation) are distinct entities and are not aliases; the HTRC pattern sits in class (3) because the field sources the Center's analysis as the class's instance for the entity. The census area 'corpora' ('collections, crawls and datasets whose texts enter machine training') places the entity in the census's survey, and the census itself records that the saved sources say nothing of training use; no class of training corpora is sourced for the entity. The census's tll_reading is the archive's reading, ledgered as TLL-NN. #186 and #1543, the census's anchors, are read at the passages on corpora, the training loop, machine reading and inspection. Admission by reading (§3.4): D where a deposit names the entity and says something of it (its holdings, its access, its refusals of the archive's requests, its kind); R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a citation line or a catalogue link is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'HathiTrust Digital Library' (hathitrust-digital-library-aimode-20261101, OBS-801009ea301b, ADDR-bc030695907a), Google AI Mode, signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

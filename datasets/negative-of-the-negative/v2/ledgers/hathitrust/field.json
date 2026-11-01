@@ -1,0 +1,1570 @@
+{
+ "row": "hathitrust",
+ "address": "HathiTrust Digital Library",
+ "addresses": [
+  "HathiTrust Digital Library"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); a chip with no title, snippet or URL contributes no claims",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every inline source chip of the AI Mode answer (B1 HathiTrust +4, B2 HathiTrust +2, B7 HathiTrust +5: title only, hathitrust.org refusing; B3 Wikipedia +2, the article HathiTrust, also the entity's Wikipedia source; B4 University of Michigan Library +1, its HathiTrust collection page; B5 YouTube +1, unidentified; B6 University of Michigan Library, its research guide). B_R, the reference pool: 'own_page', the about page the census tried (B8, refused) and the Research Center's page the census read (B9). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B3.html and B3.txt the census's saved copy, B3.wiki the raw wikitext, B3-429.html the refused rendered fetch, B3-address-redirect.wiki the address's redirect; B4, B6, B6-viewing this row's fetches; B1-403 and B8-403 the refusals, B8-census-403 the census's; B9 the census's copy and B9-refetch this row's identical fetch; tries/ every raw attempt)",
+ "counts": {
+  "sources": 9,
+  "B_D": 7,
+  "B_R": 2,
+  "fetched": 4,
+  "unreachable": 4,
+  "unidentified_title_only": 1,
+  "claims": 47,
+  "claims_B_D": 41,
+  "claims_B_R": 6,
+  "quotes_ok": 47
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "HathiTrust — (chip, title only)",
+   "fetched": "card (B_D); B1 raw sha256 e9c95cee1f9f6b04, HTTP 403 at 2026-11-01T15:13:32Z; unreachable: HTTP 403, a Cloudflare challenge page ('Just a moment... Enable JavaScript and cookies to continue'), server cloudflare; one attempt with the census agent string, no retry by another agent string or route; https://babel.hathitrust.org/cgi/ls?a=page;page=advanced refused the same way at 15:13:35Z (tries/)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "HathiTrust — (chip, title only)",
+   "fetched": "card (B_D); unreachable: unidentified page on hathitrust.org, which refused the fetch (see B1); title only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Wikipedia — HathiTrust",
+   "fetched": "card (B_D); B3 raw sha256 cf7c92313dd725f8, HTTP 200 at 2026-11-01T04:07:49Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "University of Michigan Library — HathiTrust Digital Library",
+   "fetched": "card (B_D); B4 raw sha256 f6b5cb2d631fa74f, HTTP 200 at 2026-11-01T15:14:13Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "YouTube — (chip, title only)",
+   "fetched": "card (B_D); unidentified: a WebSearch for HathiTrust and HathiTrust Research Center videos found candidates and nothing that ties one to the chip; title only, no claims",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "University of Michigan Library — Research Guides: HathiTrust Digital Library",
+   "fetched": "card (B_D); B6 raw sha256 c19b247c923ea959, HTTP 200 at 2026-11-01T15:14:14Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "HathiTrust — (chip, title only)",
+   "fetched": "card (B_D); unreachable: unidentified page on hathitrust.org, which refused the fetch (see B1); title only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B8",
+   "card": "hathitrust.org — About (refused)",
+   "fetched": "own_page (B_R); B8 raw sha256 c54d3b8a814e3240, HTTP 403 at 2026-11-01T15:15:42Z; unreachable: HTTP 403, Cloudflare challenge page; one attempt with the census agent string, no retry",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B9",
+   "card": "HTRC Analytics — HathiTrust Research Center Analytics",
+   "fetched": "own_page (B_R); B9 raw sha256 5e7d8be238f03fa7, HTTP 200 at 2026-11-01T04:07:50Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 1 ('HathiTrust +4', after the opening paragraph)",
+    "card": "HathiTrust — (chip, title only)",
+    "url": null,
+    "kind": "inline source chip naming HathiTrust's site; the chip carries no title, snippet or URL in the paste, and the four further sources behind '+4' were not expanded",
+    "files": {
+     "B1-403.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B1-403.html",
+      "sha256": "e9c95cee1f9f6b04096fae3f8585ee54413db21d2b627031ecf0500b07acea1a"
+     },
+     "B1-403.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B1-403.headers.txt",
+      "sha256": "bf445a98f4264620e0c9c74a13b2dac52c3fe5f8fd755f8739549b84c40ec3b1"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:32Z",
+     "http": 403,
+     "url": "https://www.hathitrust.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B1-403.html",
+     "raw_sha256": "e9c95cee1f9f6b04096fae3f8585ee54413db21d2b627031ecf0500b07acea1a",
+     "result": "unreachable: HTTP 403, a Cloudflare challenge page ('Just a moment... Enable JavaScript and cookies to continue'), server cloudflare; one attempt with the census agent string, no retry by another agent string or route; https://babel.hathitrust.org/cgi/ls?a=page;page=advanced refused the same way at 15:13:35Z (tries/)"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "The chip names only the site. hathitrust.org refused the agent at its home page and at the full-text search page (HTTP 403, Cloudflare challenge), as it refused the census at /about/; the chip's page cannot be identified or read. No text: the chip contributes no claims (§3.1(a): its snippet would stand as its only text, and there is none).",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "HathiTrust",
+    "card_snippet": null
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 2 ('HathiTrust +2', after 'Collection Size')",
+    "card": "HathiTrust — (chip, title only)",
+    "url": null,
+    "kind": "inline source chip naming HathiTrust's site; no title, snippet or URL; two further sources behind '+2' not expanded",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: unidentified page on hathitrust.org, which refused the fetch (see B1); title only"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "As B1. No claims.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "HathiTrust",
+    "card_snippet": null
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "also_origin": "wikipedia",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 3 ('Wikipedia +2', after 'Public Domain Access'), read as the article HathiTrust; it is also the entity's Wikipedia source (census hathitrust--wikipedia): one source, carried once, in B_D",
+    "card": "Wikipedia — HathiTrust",
+    "url": "https://en.wikipedia.org/wiki/HathiTrust",
+    "kind": "Wikipedia article (the chip names only 'Wikipedia'; read as the entity's article, the article the census read)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.html",
+      "sha256": "cf7c92313dd725f81cafd88076145b9ac51efe21815c8c425df073edec1dfee1"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.txt",
+      "sha256": "099ec5575f8cc46bda8bb435a0ab98c59bdcc2ac9c23127143b6484390dae0cc"
+     },
+     "B3.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.wiki",
+      "sha256": "aa581a6b7dacdae38baccd8fa1cacfd253773e9500df96e959db6fd819b5301a"
+     },
+     "B3-429.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3-429.html",
+      "sha256": "8fe98bd61ced3fdfbdbac12649a83a4086cd555e1f9fbf08bfaef5ae04366443"
+     },
+     "B3-address-redirect.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3-address-redirect.wiki",
+      "sha256": "e5047c1565d6591fa37e2a136c137829e767afa59b23c8795f3930fa6abc1958"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:49Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/HathiTrust",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.html",
+     "raw_sha256": "cf7c92313dd725f81cafd88076145b9ac51efe21815c8c425df073edec1dfee1",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.txt",
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.wiki"
+     ],
+     "census_copy": {
+      "src": "hathitrust--wikipedia",
+      "sha256": "cf7c92313dd725f81cafd88076145b9ac51efe21815c8c425df073edec1dfee1",
+      "read": "2026-11-01",
+      "agrees": true
+     },
+     "result": "the rendered page is the census's saved copy (fetched 04:07:49Z, sha256 matching the manifest), B3.txt the census's text: this row's own fetches of the rendered page returned HTTP 429 (Too many requests, retry-after 1) at 15:13:33Z and 15:14:15Z (B3-429.html), recorded and not pursued further; the raw wikitext fetched at 15:13:34Z (HTTP 200, B3.wiki) agrees with the saved rendering at every quoted passage checked; the address string 'HathiTrust Digital Library' is a redirect to the article (action=raw HTTP 200 at 15:23:19Z, '#REDIRECT [[HathiTrust]]', B3-address-redirect.wiki)"
+    },
+    "names_operator": "yes ('administered by the University of Michigan')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "The chip gives the site only; the article HathiTrust is the one Wikipedia article on the entity, and the address string redirects to it. Last edited 19 October 2026.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "Wikipedia",
+    "card_snippet": null
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 4 ('University of Michigan Library +1', after 'Copyrighted Materials'), read as the library's HathiTrust collection page",
+    "card": "University of Michigan Library — HathiTrust Digital Library",
+    "url": "https://www.lib.umich.edu/collections/hathitrust-digital-library/",
+    "kind": "the University of Michigan Library's collection page for HathiTrust (identified by site and content: the chip has no URL; the web results above the answer list lib.umich.edu with the title 'HathiTrust Digital Library', found again by WebSearch)",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.html",
+      "sha256": "f6b5cb2d631fa74f46b43d28708b548c2f4c514fbf32880f6f938aafc8aa2a5a"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.txt",
+      "sha256": "8ae3d8c030d60d4f34877bf5f38d80d5b0c00091a8ab33eccdd786a2c8e3dca5"
+     },
+     "B4.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.headers.txt",
+      "sha256": "c5695390107a9607560ba0a650bdad3ac4259e92200c2daf1321345338781e49"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:13Z",
+     "http": 200,
+     "url": "https://www.lib.umich.edu/collections/hathitrust-digital-library/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.html",
+     "raw_sha256": "f6b5cb2d631fa74f46b43d28708b548c2f4c514fbf32880f6f938aafc8aa2a5a",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.txt"
+     ],
+     "result": "saved verbatim with the census agent string; text extracted (scripts and styles stripped)"
+    },
+    "names_operator": "yes ('infrastructure put in place at the University of Michigan')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "Identification is an inference from the chip's site and the line it follows ('Items under copyright are still fully text-searchable'; the page: 'items held in copyright are full-text searchable'); the '+1' source behind it is unexpanded.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "University of Michigan Library",
+    "card_snippet": null
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 5 ('YouTube +1', after 'Diverse Sourcing' and the HTRC line)",
+    "card": "YouTube — (chip, title only)",
+    "url": null,
+    "kind": "video chip naming YouTube; no title, snippet or URL",
+    "files": {},
+    "fetched": {
+     "result": "unidentified: a WebSearch for HathiTrust and HathiTrust Research Center videos found candidates and nothing that ties one to the chip; title only, no claims"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "A video card is admitted through title and snippet (§3.1(a)); this chip has neither beyond the site name.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "YouTube",
+    "card_snippet": null
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 6 ('University of Michigan Library', after 'How Access Works'), read as the library's research guide to HathiTrust (Getting Started; Viewing & Downloading)",
+    "card": "University of Michigan Library — Research Guides: HathiTrust Digital Library",
+    "url": "https://guides.lib.umich.edu/hathitrust",
+    "kind": "the University of Michigan Library's research guide to HathiTrust, two pages of one guide (identified by site and content: the chip has no URL; the guide was found by WebSearch and its Viewing & Downloading page holds the access-by-login and by-place terms the line introduces)",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.html",
+      "sha256": "c19b247c923ea959f472890bc3b96f2c23830b2108cd363971450d5b02f20aa0"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.txt",
+      "sha256": "38fbd30e050e62a5b6ecfb36275dc425f755919c46557746005360983cd791ae"
+     },
+     "B6.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.headers.txt",
+      "sha256": "0efa329a393f93f2794fdb54c63559cb57dc7f699bc85bf8adcfdf38c5d60d58"
+     },
+     "B6-viewing.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.html",
+      "sha256": "4671f47030308ce8528a4b25fa49fd4c8f8f325e274d47d512304a2524792861"
+     },
+     "B6-viewing.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.txt",
+      "sha256": "0c4d56853d9c36b26a55069a13a97cd4cc644599470a295fc3925cf6c878fd11"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:14Z",
+     "http": 200,
+     "url": "https://guides.lib.umich.edu/hathitrust",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.html",
+     "raw_sha256": "c19b247c923ea959f472890bc3b96f2c23830b2108cd363971450d5b02f20aa0",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.txt",
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.txt"
+     ],
+     "also": {
+      "url": "https://guides.lib.umich.edu/c.php?g=1049853&p=7620320",
+      "at": "2026-11-01T15:14:51Z",
+      "http": 200,
+      "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.html",
+      "raw_sha256": "4671f47030308ce8528a4b25fa49fd4c8f8f325e274d47d512304a2524792861"
+     },
+     "result": "saved verbatim with the census agent string; the guide's Searching, Creating & Using Collections and Help & Tips pages fetched too and kept in tries/ unread for claims"
+    },
+    "names_operator": "yes ('The U-M Library is a HathiTrust member')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "Identification is an inference; the guide quotes HathiTrust's own site twice (its tagline and its foreign-works rule), the only words of HathiTrust's that this row could read.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "University of Michigan Library",
+    "card_snippet": null
+   },
+   {
+    "id": "B7",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 7 ('HathiTrust +5', after 'Important Tips for Users')",
+    "card": "HathiTrust — (chip, title only)",
+    "url": null,
+    "kind": "inline source chip naming HathiTrust's site; no title, snippet or URL; five further sources behind '+5' not expanded",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: unidentified page on hathitrust.org, which refused the fetch (see B1); title only"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "As B1. No claims.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 7
+     }
+    ],
+    "card_title": "HathiTrust",
+    "card_snippet": null
+   }
+  ],
+  "own_pages": [
+   "B8",
+   "B9"
+  ],
+  "own_pages_note": "B_R: the census's own page hathitrust--about (B8, https://www.hathitrust.org/about/), refused the census (HTTP 403) and this row (HTTP 403), unread; and the Research Center's home page on HathiTrust's host (B9), which the census read for this row (evidence htrc_open, lifecycle). No own page is a chip: the three HathiTrust chips (B1, B2, B7) name hathitrust.org without a URL, and hathitrust.org refused the fetch.",
+  "wikipedia": [
+   "B3"
+  ],
+  "census_third_party": [],
+  "unreachable": [
+   "B1",
+   "B2",
+   "B7",
+   "B8"
+  ],
+  "title_only": [
+   "B1",
+   "B2",
+   "B5",
+   "B7"
+  ],
+  "wikipedia_state": "article 'HathiTrust' (raw wikitext HTTP 200 at 2026-11-01T15:13:34Z; the rendered page refused this row twice with HTTP 429, Too many requests, and is read in the census's saved copy of 04:07:49Z, sha256 matching the manifest); the address string 'HathiTrust Digital Library' redirects to it ('#REDIRECT [[HathiTrust]]'); last edited 19 October 2026; it is chip 3 of T, so the Wikipedia source and the chip are one source, carried once in B_D (B3)",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7"
+   ],
+   "B_R": [
+    "B8",
+    "B9"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, the seven inline chips of the AI Mode answer (no cards; the web results above the answer are outside the composition); the body names entities (the Google Books Project, the Internet Archive, Microsoft, partner universities, NYPL, the Accessible Text Request Service) and no further source. Four chips are title only (B1, B2, B7 HathiTrust, unreachable; B5 YouTube, unidentified); three were read (B3 Wikipedia; B4 and B6, the University of Michigan Library's pages, identified by site and content). B_R: the own about page (B8, refused) and the Research Center's page (B9). T against L_F(B_D) uses B1–B7 alone; the HTRC page stands outside that comparison."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 1 ('HathiTrust +4', after the opening paragraph)",
+    "card": "HathiTrust — (chip, title only)",
+    "url": null,
+    "kind": "inline source chip naming HathiTrust's site; the chip carries no title, snippet or URL in the paste, and the four further sources behind '+4' were not expanded",
+    "files": {
+     "B1-403.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B1-403.html",
+      "sha256": "e9c95cee1f9f6b04096fae3f8585ee54413db21d2b627031ecf0500b07acea1a"
+     },
+     "B1-403.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B1-403.headers.txt",
+      "sha256": "bf445a98f4264620e0c9c74a13b2dac52c3fe5f8fd755f8739549b84c40ec3b1"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:32Z",
+     "http": 403,
+     "url": "https://www.hathitrust.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B1-403.html",
+     "raw_sha256": "e9c95cee1f9f6b04096fae3f8585ee54413db21d2b627031ecf0500b07acea1a",
+     "result": "unreachable: HTTP 403, a Cloudflare challenge page ('Just a moment... Enable JavaScript and cookies to continue'), server cloudflare; one attempt with the census agent string, no retry by another agent string or route; https://babel.hathitrust.org/cgi/ls?a=page;page=advanced refused the same way at 15:13:35Z (tries/)"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "The chip names only the site. hathitrust.org refused the agent at its home page and at the full-text search page (HTTP 403, Cloudflare challenge), as it refused the census at /about/; the chip's page cannot be identified or read. No text: the chip contributes no claims (§3.1(a): its snippet would stand as its only text, and there is none).",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "HathiTrust",
+    "card_snippet": null
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 2 ('HathiTrust +2', after 'Collection Size')",
+    "card": "HathiTrust — (chip, title only)",
+    "url": null,
+    "kind": "inline source chip naming HathiTrust's site; no title, snippet or URL; two further sources behind '+2' not expanded",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: unidentified page on hathitrust.org, which refused the fetch (see B1); title only"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "As B1. No claims.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "HathiTrust",
+    "card_snippet": null
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "also_origin": "wikipedia",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 3 ('Wikipedia +2', after 'Public Domain Access'), read as the article HathiTrust; it is also the entity's Wikipedia source (census hathitrust--wikipedia): one source, carried once, in B_D",
+    "card": "Wikipedia — HathiTrust",
+    "url": "https://en.wikipedia.org/wiki/HathiTrust",
+    "kind": "Wikipedia article (the chip names only 'Wikipedia'; read as the entity's article, the article the census read)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.html",
+      "sha256": "cf7c92313dd725f81cafd88076145b9ac51efe21815c8c425df073edec1dfee1"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.txt",
+      "sha256": "099ec5575f8cc46bda8bb435a0ab98c59bdcc2ac9c23127143b6484390dae0cc"
+     },
+     "B3.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.wiki",
+      "sha256": "aa581a6b7dacdae38baccd8fa1cacfd253773e9500df96e959db6fd819b5301a"
+     },
+     "B3-429.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3-429.html",
+      "sha256": "8fe98bd61ced3fdfbdbac12649a83a4086cd555e1f9fbf08bfaef5ae04366443"
+     },
+     "B3-address-redirect.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3-address-redirect.wiki",
+      "sha256": "e5047c1565d6591fa37e2a136c137829e767afa59b23c8795f3930fa6abc1958"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:49Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/HathiTrust",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.html",
+     "raw_sha256": "cf7c92313dd725f81cafd88076145b9ac51efe21815c8c425df073edec1dfee1",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.txt",
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B3.wiki"
+     ],
+     "census_copy": {
+      "src": "hathitrust--wikipedia",
+      "sha256": "cf7c92313dd725f81cafd88076145b9ac51efe21815c8c425df073edec1dfee1",
+      "read": "2026-11-01",
+      "agrees": true
+     },
+     "result": "the rendered page is the census's saved copy (fetched 04:07:49Z, sha256 matching the manifest), B3.txt the census's text: this row's own fetches of the rendered page returned HTTP 429 (Too many requests, retry-after 1) at 15:13:33Z and 15:14:15Z (B3-429.html), recorded and not pursued further; the raw wikitext fetched at 15:13:34Z (HTTP 200, B3.wiki) agrees with the saved rendering at every quoted passage checked; the address string 'HathiTrust Digital Library' is a redirect to the article (action=raw HTTP 200 at 15:23:19Z, '#REDIRECT [[HathiTrust]]', B3-address-redirect.wiki)"
+    },
+    "names_operator": "yes ('administered by the University of Michigan')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "The chip gives the site only; the article HathiTrust is the one Wikipedia article on the entity, and the address string redirects to it. Last edited 19 October 2026.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "Wikipedia",
+    "card_snippet": null
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 4 ('University of Michigan Library +1', after 'Copyrighted Materials'), read as the library's HathiTrust collection page",
+    "card": "University of Michigan Library — HathiTrust Digital Library",
+    "url": "https://www.lib.umich.edu/collections/hathitrust-digital-library/",
+    "kind": "the University of Michigan Library's collection page for HathiTrust (identified by site and content: the chip has no URL; the web results above the answer list lib.umich.edu with the title 'HathiTrust Digital Library', found again by WebSearch)",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.html",
+      "sha256": "f6b5cb2d631fa74f46b43d28708b548c2f4c514fbf32880f6f938aafc8aa2a5a"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.txt",
+      "sha256": "8ae3d8c030d60d4f34877bf5f38d80d5b0c00091a8ab33eccdd786a2c8e3dca5"
+     },
+     "B4.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.headers.txt",
+      "sha256": "c5695390107a9607560ba0a650bdad3ac4259e92200c2daf1321345338781e49"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:13Z",
+     "http": 200,
+     "url": "https://www.lib.umich.edu/collections/hathitrust-digital-library/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.html",
+     "raw_sha256": "f6b5cb2d631fa74f46b43d28708b548c2f4c514fbf32880f6f938aafc8aa2a5a",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B4.txt"
+     ],
+     "result": "saved verbatim with the census agent string; text extracted (scripts and styles stripped)"
+    },
+    "names_operator": "yes ('infrastructure put in place at the University of Michigan')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "Identification is an inference from the chip's site and the line it follows ('Items under copyright are still fully text-searchable'; the page: 'items held in copyright are full-text searchable'); the '+1' source behind it is unexpanded.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "University of Michigan Library",
+    "card_snippet": null
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 5 ('YouTube +1', after 'Diverse Sourcing' and the HTRC line)",
+    "card": "YouTube — (chip, title only)",
+    "url": null,
+    "kind": "video chip naming YouTube; no title, snippet or URL",
+    "files": {},
+    "fetched": {
+     "result": "unidentified: a WebSearch for HathiTrust and HathiTrust Research Center videos found candidates and nothing that ties one to the chip; title only, no claims"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "A video card is admitted through title and snippet (§3.1(a)); this chip has neither beyond the site name.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "YouTube",
+    "card_snippet": null
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 6 ('University of Michigan Library', after 'How Access Works'), read as the library's research guide to HathiTrust (Getting Started; Viewing & Downloading)",
+    "card": "University of Michigan Library — Research Guides: HathiTrust Digital Library",
+    "url": "https://guides.lib.umich.edu/hathitrust",
+    "kind": "the University of Michigan Library's research guide to HathiTrust, two pages of one guide (identified by site and content: the chip has no URL; the guide was found by WebSearch and its Viewing & Downloading page holds the access-by-login and by-place terms the line introduces)",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.html",
+      "sha256": "c19b247c923ea959f472890bc3b96f2c23830b2108cd363971450d5b02f20aa0"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.txt",
+      "sha256": "38fbd30e050e62a5b6ecfb36275dc425f755919c46557746005360983cd791ae"
+     },
+     "B6.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.headers.txt",
+      "sha256": "0efa329a393f93f2794fdb54c63559cb57dc7f699bc85bf8adcfdf38c5d60d58"
+     },
+     "B6-viewing.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.html",
+      "sha256": "4671f47030308ce8528a4b25fa49fd4c8f8f325e274d47d512304a2524792861"
+     },
+     "B6-viewing.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.txt",
+      "sha256": "0c4d56853d9c36b26a55069a13a97cd4cc644599470a295fc3925cf6c878fd11"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:14Z",
+     "http": 200,
+     "url": "https://guides.lib.umich.edu/hathitrust",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.html",
+     "raw_sha256": "c19b247c923ea959f472890bc3b96f2c23830b2108cd363971450d5b02f20aa0",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6.txt",
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.txt"
+     ],
+     "also": {
+      "url": "https://guides.lib.umich.edu/c.php?g=1049853&p=7620320",
+      "at": "2026-11-01T15:14:51Z",
+      "http": 200,
+      "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B6-viewing.html",
+      "raw_sha256": "4671f47030308ce8528a4b25fa49fd4c8f8f325e274d47d512304a2524792861"
+     },
+     "result": "saved verbatim with the census agent string; the guide's Searching, Creating & Using Collections and Help & Tips pages fetched too and kept in tries/ unread for claims"
+    },
+    "names_operator": "yes ('The U-M Library is a HathiTrust member')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "Identification is an inference; the guide quotes HathiTrust's own site twice (its tagline and its foreign-works rule), the only words of HathiTrust's that this row could read.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "University of Michigan Library",
+    "card_snippet": null
+   },
+   {
+    "id": "B7",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "AI Mode inline chip 7 ('HathiTrust +5', after 'Important Tips for Users')",
+    "card": "HathiTrust — (chip, title only)",
+    "url": null,
+    "kind": "inline source chip naming HathiTrust's site; no title, snippet or URL; five further sources behind '+5' not expanded",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: unidentified page on hathitrust.org, which refused the fetch (see B1); title only"
+    },
+    "names_operator": "no text (title only)",
+    "names_archive": "no text (title only)",
+    "note": "As B1. No claims.",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-digital-library-aimode-20261101",
+      "card": 7
+     }
+    ],
+    "card_title": "HathiTrust",
+    "card_snippet": null
+   },
+   {
+    "id": "B8",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "census own page hathitrust--about (https://www.hathitrust.org/about/); not surfaced by T",
+    "card": "hathitrust.org — About (refused)",
+    "url": "https://www.hathitrust.org/about/",
+    "kind": "the entity's own about page",
+    "files": {
+     "B8-403.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B8-403.html",
+      "sha256": "c54d3b8a814e324057870e74399509aacd475ff9f5f997042770cf2777494945"
+     },
+     "B8-403.headers.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B8-403.headers.txt",
+      "sha256": "86ff319bbef6a74bcfbc580f674ab42d853381c2fb35da4a1b886a137b0f4731"
+     },
+     "B8-census-403.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B8-census-403.html",
+      "sha256": "1f006c108868660847f15217715497ed81d36ccec4025175de807d1e77d3783d"
+     },
+     "B8-census-403.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B8-census-403.txt",
+      "sha256": "301dc171e5fa8c5fdeb69592a92a5c378f5f758f68d2338200235d60eb04b9ad"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:15:42Z",
+     "http": 403,
+     "url": "https://www.hathitrust.org/about/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B8-403.html",
+     "raw_sha256": "c54d3b8a814e324057870e74399509aacd475ff9f5f997042770cf2777494945",
+     "result": "unreachable: HTTP 403, Cloudflare challenge page; one attempt with the census agent string, no retry",
+     "census_copy": {
+      "src": "hathitrust--about",
+      "http": "403",
+      "fetched": "2026-11-01T04:07:49Z",
+      "sha256": "1f006c108868660847f15217715497ed81d36ccec4025175de807d1e77d3783d",
+      "agrees": "both refused (HTTP 403, challenge page 'Just a moment...')"
+     }
+    },
+    "names_operator": "unread",
+    "names_archive": "unread",
+    "note": "Unread; no claims. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B9",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "census source htrc--home (https://analytics.hathitrust.org/), read by the census for this row's evidence htrc_open and its lifecycle; the Research Center's page on HathiTrust's host; not surfaced by T",
+    "card": "HTRC Analytics — HathiTrust Research Center Analytics",
+    "url": "https://analytics.hathitrust.org/",
+    "kind": "the HathiTrust Research Center's home page (a part of the entity, a census row of its own), on HathiTrust's host",
+    "files": {
+     "B9.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B9.html",
+      "sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494"
+     },
+     "B9.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B9.txt",
+      "sha256": "d6583ac119dc47ed153266839ff64647a5182a2e33995658994bf3c966ea5e95"
+     },
+     "B9-refetch.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B9-refetch.html",
+      "sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:50Z",
+     "http": 200,
+     "url": "https://analytics.hathitrust.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B9.html",
+     "raw_sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/hathitrust-20261101/B9.txt"
+     ],
+     "census_copy": {
+      "src": "htrc--home",
+      "sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494",
+      "read": "2026-11-01",
+      "agrees": true
+     },
+     "result": "copied from the census's saved copy (gunzipped; sha256 matching the manifest); this row's own fetch at 15:13:34Z (HTTP 200) is byte-identical (B9-refetch.html)"
+    },
+    "names_operator": "yes ('HathiTrust Executive Director Mike Furlough')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "note": "Origin own_page: the census marks its evidence from this page basis 'operator', and the page is on HathiTrust's host. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "HathiTrust Digital Library is a large-scale collaborative repository of digital content from research libraries , administered by the University of Michigan .",
+   "claim": "a large-scale collaborative repository of digital content from research libraries, administered by the University of Michigan",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a collaborative digital library",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F2": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Its holdings include content digitized via Google Books and the Internet Archive digitization initiatives, as well as content digitized locally by libraries.",
+   "claim": "its holdings include content digitized via Google Books and the Internet Archive and content digitized locally by libraries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings: what it holds and where the scans come from",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F3": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox (website type) and short description",
+   "quote": "Website type Digital library",
+   "claim": "a digital library",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a collaborative digital library",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F4": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "hatnote",
+   "quote": "Not to be confused with HATII .",
+   "claim": "distinct from HATII",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F5": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Etymology",
+   "quote": "Hathi ( / ˈ h ɑː t i / ), derived from the Sanskrit hastin , is the Hindi word for ' elephant ', an animal famed for its long-term memory .",
+   "claim": "the name: Hathi, from the Sanskrit hastin, Hindi for elephant, an animal famed for its long-term memory",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶1",
+   "quote": "HathiTrust was founded in October 2008 by the twelve universities of the Committee on Institutional Cooperation and the eleven libraries of the University of California .",
+   "claim": "founded in October 2008 by the twelve CIC universities and the eleven University of California libraries",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶1",
+   "quote": "As of 2024, members include more than 219 research libraries … across the United States, Canada, and Europe, and is based on a shared governance structure.",
+   "claim": "more than 219 member research libraries across the United States, Canada and Europe (2024), under shared governance",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶1",
+   "quote": "Costs are shared by the participating libraries and library consortia.",
+   "claim": "costs shared by the participating libraries and consortia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶1",
+   "quote": "The executive director of HathiTrust is Mike Furlough, … who succeeded founding director John Wilkin after Wilkin stepped down in 2013.",
+   "claim": "executive director Mike Furlough, successor of the founding director John Wilkin (stepped down 2013)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶1",
+   "quote": "The HathiTrust Shared Print Program is a distributed collective collection whose participating libraries have committed to retaining almost 18 million monograph volumes for 25 years, representing three-quarters of HathiTrust digital book holdings.",
+   "claim": "the Shared Print Program: almost 18 million monographs retained for 25 years, three-quarters of the digital book holdings",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "preservation: the Shared Print Program",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶2",
+   "quote": "In September 2011, the Authors Guild sued HathiTrust ( Authors Guild, Inc. v. HathiTrust ), alleging massive copyright violation.",
+   "claim": "the Authors Guild sued HathiTrust in September 2011 alleging massive copyright violation",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the fair-use ruling",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶2",
+   "quote": "A federal court ruled against the Authors Guild in October 2012, finding that HathiTrust's use of books scanned by Google was fair use under US law.",
+   "claim": "a federal court found its use of Google-scanned books fair use (October 2012)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the fair-use ruling",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶2",
+   "quote": "The court's opinion relied on the transformativeness doctrine of federal copyright law, holding that HathiTrust had transformed the copyrighted works without infringing on the copyright holders' rights.",
+   "claim": "the opinion relied on the transformativeness doctrine",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the fair-use ruling",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶2",
+   "quote": "That decision was largely affirmed by the Second Circuit on June 10, 2014, which found that providing search and accessibility for the visually impaired were grounds to consider the service transformative and fair use, and remanded to the lower court to reconsider whether the plaintiffs had standing to sue regarding HathiTrust's library preservation copies.",
+   "claim": "the Second Circuit (10 June 2014): search and accessibility for the visually impaired grounds for transformative fair use; standing over preservation copies remanded",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the fair-use ruling",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶3",
+   "quote": "In September 2024, HathiTrust comprised more than 18 million volumes, including 6.7 million in the public domain in the United States.",
+   "claim": "more than 18 million volumes, 6.7 million public domain in the United States (September 2024)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale: volumes and the public domain",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶3",
+   "quote": "HathiTrust provides a number of discovery and access services, notably, full-text search across the entire repository.",
+   "claim": "full-text search across the entire repository",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "search without display",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶4 (the copyright policy, as of 2021)",
+   "quote": "\"many works in our collection are protected by copyright law, so we cannot ordinarily publicly display large portions of those protected works unless we have permission from the copyright holder\", and thus \"if we cannot determine the copyright or permission status of a work, we restrict access to that work until we can establish its status.",
+   "claim": "copyright policy: protected works are not ordinarily displayed in large portions without permission; access is restricted where status cannot be determined",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "access by copyright status and by place",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History ¶4 (the copyright policy, as of 2021)",
+   "quote": "Because of differences in international copyright laws, access is also restricted for users outside the United States to works published outside the United States after and including 1896.",
+   "claim": "access restricted for users outside the US to works published outside the US from 1896",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access by copyright status and by place",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "PageTurner",
+   "quote": "PageTurner is the web application on the HathiTrust website for viewing publications. … From PageTurner readers can navigate through a publication, download a PDF version of it, and view pages in different ways, such as one page at a time, scrolling , flipping , or thumbnail views.",
+   "claim": "PageTurner, the viewing application: navigation, PDF download, page views",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access by affiliation and the reader's tools",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Emergency Temporary Access Service",
+   "quote": "The Emergency Temporary Access Service … (ETAS) is a service provided by HathiTrust that makes it possible in certain special situations, such as closure of a library for a public health emergency, for users of HathiTrust member libraries to obtain lawful access to copyright digital materials in place of the corresponding physical books held by the same library.",
+   "claim": "ETAS: in special situations, member-library users obtain lawful access to copyright digital materials for the physical books their library holds",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "access by affiliation and the reader's tools",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox (owner, parent)",
+   "quote": "Owner University consortium … Parent University of Michigan",
+   "claim": "owner a university consortium; parent the University of Michigan",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox (content license)",
+   "quote": "Content license Public domain (with restrictions on Google scans), various",
+   "claim": "content licence: public domain with restrictions on Google scans, various",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: licence, status, revenue, dating",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox (launched, status)",
+   "quote": "Launched October 2008 ; 18 years ago ( October 2008 ) … Current status Active",
+   "claim": "launched October 2008; status active",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: licence, status, revenue, dating",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox (revenue, commercial)",
+   "quote": "Revenue US$ 3,777,445 (2019 projections for proposal) … Commercial Partially",
+   "claim": "revenue US$3,777,445 (2019 projections); partially commercial",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: licence, status, revenue, dating",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox (written in)",
+   "quote": "Written in Perl , Java",
+   "claim": "written in Perl and Java",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: licence, status, revenue, dating",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page footer",
+   "quote": "This page was last edited on 19 October 2026, at 07:27 (UTC) .",
+   "claim": "the article last edited 19 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: licence, status, revenue, dating",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "categories",
+   "quote": "Categories : University of Michigan American digital libraries Full-text scholarly online databases Mass digitization",
+   "claim": "categorized under American digital libraries, full-text scholarly online databases and mass digitization",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a collaborative digital library",
+   "date": "2026-10-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (the census's text, sha256 099ec5575f8cc46b…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "also_origin": "wikipedia"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Digital Library ¶1",
+   "quote": "The HathiTrust Digital Library provides access to a collection of millions of books and journals digitized from libraries around the world. Materials are dated from 1500 to the present, and cover subjects typical of any large North American research library.",
+   "claim": "access to millions of books and journals digitized from libraries worldwide, dated 1500 to the present",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings: what it holds and where the scans come from",
+   "date": "undated page, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 8ae3d8c030d60d4f…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Digital Library ¶2",
+   "quote": "Items in the public domain — more than a third of the collection — are fully available for everyone, and items held in copyright are full-text searchable.",
+   "claim": "public-domain items, more than a third, fully available for everyone; in-copyright items full-text searchable",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "access by copyright status and by place",
+   "date": "undated page, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 8ae3d8c030d60d4f…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Digital Library ¶3",
+   "quote": "Patrons who have print disabilities can obtain downloaded copies of anything in the HathiTrust collection by using HathiTrust’s Accessible Text Request Service .",
+   "claim": "patrons with print disabilities can obtain downloaded copies of anything through the Accessible Text Request Service",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "accessibility",
+   "date": "undated page, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 8ae3d8c030d60d4f…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Digital Library ¶4",
+   "quote": "Content includes materials from the Google Books Project , the Internet Archive , and digitized collections from member libraries.",
+   "claim": "content from the Google Books Project, the Internet Archive and member libraries' digitized collections",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: what it holds and where the scans come from",
+   "date": "undated page, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 8ae3d8c030d60d4f…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History of the collection ¶1",
+   "quote": "HathiTrust is a nonprofit collaborative of academic and research libraries. It has preserved more than 17 million digitized items thus far, securing them for easy access and preserving them for future use.",
+   "claim": "a nonprofit collaborative of academic and research libraries; more than 17 million items preserved",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "undated page, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 8ae3d8c030d60d4f…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History of the collection ¶2",
+   "quote": "The project began in 2008 with infrastructure put in place at the University of Michigan. U-M has been a significant contributor, with more than 4.8 million items scanned and deposited.",
+   "claim": "begun in 2008 on infrastructure at the University of Michigan, which has scanned and deposited more than 4.8 million items",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: founders, members, governance, director",
+   "date": "undated page, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 8ae3d8c030d60d4f…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Getting Started, What is HathiTrust?",
+   "quote": "HathiTrust (pronounced hah-tee) is a \"collaborative of academic and research libraries preserving 18+ million digitized items.\" This organization provides reading access to a digital archive of books, journals and government documents -- called HathiTrust Digital Library -- many of which are in the public domain (available for full view).",
+   "claim": "a collaborative preserving 18+ million items (quoting HathiTrust); reading access to books, journals and government documents, many public domain",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a collaborative digital library",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 38fbd30e050e62a5…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Getting Started, What is HathiTrust?",
+   "quote": "Researchers use this preservation repository by searching descriptive data in the catalog and/or by searching within the contents of digitized items.",
+   "claim": "search of catalogue data and of the contents of digitized items",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "search without display",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 38fbd30e050e62a5…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Getting Started, Access to HathiTrust Materials",
+   "quote": "The U-M Library is a HathiTrust member, which means that the U-M community has additional access benefits, with a valid login (U-M uniqname and password).",
+   "claim": "members' communities gain additional access with a login",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access by affiliation and the reader's tools",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 38fbd30e050e62a5…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Viewing & Downloading, Copyright & HathiTrust Digital Library",
+   "quote": "Many of the items in HathiTrust Digital Library are protected under copyright law, meaning that full-text viewing is not possible without the express permission of the copyright holder.",
+   "claim": "in-copyright items: no full-text viewing without the holder's permission",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "access by copyright status and by place",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6-viewing.txt (sha256 0c4d56853d9c36b2…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Viewing & Downloading, Copyright & HathiTrust Digital Library (quoting the HathiTrust web site)",
+   "quote": "it is estimated that 1898 is the earliest date foreign works may still be under copyright. Therefore, users accessing the volume from U.S. IP addresses will have access to the works published outside the U.S. from 1898 through 1928; however, users with non-U.S. IP addresses will not.",
+   "claim": "foreign works of 1898–1928 open to US IP addresses and closed to others (quoting HathiTrust)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access by copyright status and by place",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6-viewing.txt (sha256 0c4d56853d9c36b2…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Viewing & Downloading, Limited (Search Only) View vs. Full-text View",
+   "quote": "Those works that are still under copyright display a \"Limited (search-only)\" status. You can still search within those works for your key terms, to better understand if the work has the content and context you seek.",
+   "claim": "in-copyright works carry 'Limited (search-only)' and can be searched within",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "search without display",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6-viewing.txt (sha256 0c4d56853d9c36b2…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Viewing & Downloading, Downloading",
+   "quote": "U-M users of HathiTrust Digital Library can download complete books in the public domain (or works available under a Creative Commons license). Guests can download one page at a time.",
+   "claim": "logged-in U-M users download complete public-domain books; guests one page at a time",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access by affiliation and the reader's tools",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6-viewing.txt (sha256 0c4d56853d9c36b2…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page footer",
+   "quote": "Last Updated: Aug 24, 2026 9:06 AM",
+   "claim": "the guide last updated 24 August 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: licence, status, revenue, dating",
+   "date": "2026-08-24 (the guide's last update)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 38fbd30e050e62a5…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "banner",
+   "quote": "HTRC has discontinued its services as of September 30, 2026. HTRC accounts are no longer available.",
+   "claim": "HTRC's services discontinued 30 September 2026; accounts no longer available",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Research Center: computational analysis, ended",
+   "date": "undated page (it records the end of services on 2026-09-30), read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "banner",
+   "quote": "Access to the HathiTrust Digital Library remains open.",
+   "claim": "access to the Digital Library remains open",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Research Center: computational analysis, ended",
+   "date": "undated page (it records the end of services on 2026-09-30), read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HathiTrust Research Center Analytics ¶1",
+   "quote": "The HathiTrust Research Center (HTRC) is a research center dedicated to enabling computational analysis of the HathiTrust Digital Library. Established in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust, HTRC developed tools, datasets, and infrastructure that supported scholars using text and data mining methods to study the HathiTrust corpus.",
+   "claim": "the HTRC: computational analysis of the Digital Library; est. 2011 by Indiana, Illinois and HathiTrust; text and data mining",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Research Center: computational analysis, ended",
+   "date": "undated page (it records the end of services on 2026-09-30), read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HathiTrust Research Center Analytics ¶2",
+   "quote": "In October 2024, HathiTrust Executive Director Mike Furlough announced that funding for the Research Center would cease at the end of 2026, at which time the center will be formally closed.",
+   "claim": "funding to cease at the end of 2026 (announced October 2024); the center then formally closed",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Research Center: computational analysis, ended",
+   "date": "undated page (it records the end of services on 2026-09-30), read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F46": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "The HTRC Analytics Portal Has Been Sunsetted",
+   "quote": "HTRC Algorithms and Data Capsule services have also been discontinued. … Some HTRC resources remain available and can be used without an HTRC Analytics account:",
+   "claim": "algorithms and data capsules discontinued; some resources remain usable without an account",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Research Center: computational analysis, ended",
+   "date": "undated page (it records the end of services on 2026-09-30), read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F47": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "tagline",
+   "quote": "Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research",
+   "claim": "large-scale text analysis for educational and non-profit research",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Research Center: computational analysis, ended",
+   "date": "undated page (it records the end of services on 2026-09-30), read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "HathiTrust — (chip, title only)",
+  "B2": "HathiTrust — (chip, title only)",
+  "B3": "Wikipedia — HathiTrust",
+  "B4": "University of Michigan Library — HathiTrust Digital Library",
+  "B5": "YouTube — (chip, title only)",
+  "B6": "University of Michigan Library — Research Guides: HathiTrust Digital Library",
+  "B7": "HathiTrust — (chip, title only)",
+  "B8": "hathitrust.org — About (refused)",
+  "B9": "HTRC Analytics — HathiTrust Research Center Analytics"
+ }
+}

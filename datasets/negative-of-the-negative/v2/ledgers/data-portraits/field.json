@@ -1,0 +1,2019 @@
+{
+ "row": "data-portraits",
+ "address": "Data Portraits",
+ "addresses": [
+  "Data Portraits"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the PDF's extracted text, the search JSON, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B2 dataportraits.org, the entity's site; B1, B3–B8 the homonyms' cards, B5 and B7 unreachable, B6 a video card). B_R, the reference pool: 'own_page', the arXiv abstract (B9, the census's source), the paper (B10) and the sketch front ends (B12, HTTP 502); 'wikipedia', the record of absence (B11). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B10.pdf with B10.txt by pdftotext; B11-* the encyclopedia's 404 responses and search JSON; B12-* the 502 responses; B9 the census's saved copy; tries/ the raw fetches and fetch.log)",
+ "counts": {
+  "sources": 12,
+  "B_D": 8,
+  "B_R": 4,
+  "fetched": 7,
+  "unreachable": 5,
+  "claims": 52,
+  "claims_B_D": 19,
+  "claims_B_R": 33,
+  "quotes_ok": 52
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "giorgialupi — Data Portraits at TED — giorgialupi",
+   "fetched": "card; B1.html sha256 2d8c62c8abf433db, HTTP 200 at 2026-11-01T15:14:25Z",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "Data Portraits — Data Portraits",
+   "fetched": "card; B2.html sha256 5967547b30c0d39f, HTTP 200 at 2026-11-01T15:13:42Z",
+   "origin": "card (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Zinn Education Project — W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project",
+   "fetched": "card; B3.html sha256 e26b7dbd03002904, HTTP 200 at 2026-11-01T15:14:26Z",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "Pentagram — TED Data Portraits - Pentagram",
+   "fetched": "card; B4.html sha256 e120a28cf59c7142, HTTP 200 at 2026-11-01T15:14:27Z",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "SparkMap — W.E.B. Du Bois & Data Visualization History - SparkMap",
+   "fetched": "unreachable: no URL found by WebSearch on the card's title and site; title and snippet only",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "YouTube·University of Massachusetts Amherst Libraries — W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+   "fetched": "video card: title only",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "MIT Media Lab — Data Portraits - MIT Media Lab",
+   "fetched": "unreachable: TLS failure (self-signed certificate in chain) at 2026-11-01T15:14:27Z and 15:14:42Z; title and snippet only",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B8",
+   "card": "ARTnews.com — 10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...",
+   "fetched": "card; B8.html sha256 bf5fb12c784943a1, HTTP 200 at 2026-11-01T15:15:07Z",
+   "origin": "card (homonym) (B_D)",
+   "pool": "B_D"
+  },
+  {
+   "id": "B9",
+   "card": "arXiv — [2303.03919] Data Portraits: Recording Foundation Model Training Data (census source)",
+   "fetched": "own page (census copy data-portraits--arxiv); B9.html sha256 0a499acc8164a2d2, HTTP 200 at 2026-11-01T05:07:12Z, matching the manifest",
+   "origin": "own_page (B_R)",
+   "pool": "B_R"
+  },
+  {
+   "id": "B10",
+   "card": "arXiv — Data Portraits: Recording Foundation Model Training Data (PDF, v2)",
+   "fetched": "own page; B10.pdf sha256 13d6b6d27a507a4a, HTTP 200 at 2026-11-01T15:14:30Z",
+   "origin": "own_page (B_R)",
+   "pool": "B_R"
+  },
+  {
+   "id": "B11",
+   "card": "Wikipedia — no article 'Data Portraits' (HTTP 404); search for \"Data Portraits\"",
+   "fetched": "wikipedia; four titles HTTP 404 at 2026-11-01T15:14:31–33Z; search HTTP 200 (sha256 39f19b42595c6af7)",
+   "origin": "wikipedia (B_R)",
+   "pool": "B_R"
+  },
+  {
+   "id": "B12",
+   "card": "dataportraits.org — the Pile, Stack and Stack V2 sketch front ends (HTTP 502)",
+   "fetched": "own pages; HTTP 502 at 2026-11-01T15:14:29Z–15:15:09Z; recorded unread",
+   "origin": "own_page (B_R)",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B2"
+  ],
+  "homonym_cards": [
+   {
+    "id": "B1",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 1 (another entity of the name)",
+    "card": "giorgialupi — Data Portraits at TED — giorgialupi",
+    "url": "https://giorgialupi.com/data-portraits-at-ted2017",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Giorgia Lupi / Accurat, Data Portraits at TED 2017",
+    "snippet": "Project: Data Portraits at TED 2017 (Vancouver) by Accurat, commissioned by TED and David Stark Design for Target's social space. Concept: Personal questionnair...",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.html",
+      "sha256": "2d8c62c8abf433dba538700415ac1e4f16bc4f2e5434869dc0415b776be6dd40"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.txt",
+      "sha256": "05ffdf5ab82d444b0c7a6176a0b7c91e2627b9a11ec3226e4573c7856e2666bd"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:25Z",
+     "http": "200",
+     "url": "https://giorgialupi.com/data-portraits-at-ted2017",
+     "final_url": "https://giorgialupi.com/data-portraits-at-ted2017",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.html",
+     "raw_sha256": "2d8c62c8abf433dba538700415ac1e4f16bc4f2e5434869dc0415b776be6dd40",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.txt"
+     ],
+     "note": "found by WebSearch on the card's title and site; the page carries the project; the snippet's 'Project: … Concept:' line is the card renderer's summary and is not on the page"
+    },
+    "surfaced_by_T": [
+     "T1 card 1"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "Data Portraits at TED — giorgialupi",
+    "card_snippet": "Project: Data Portraits at TED 2017 (Vancouver) by Accurat, commissioned by TED and David Stark Design for Target's social space. Concept: Personal questionnair..."
+   },
+   {
+    "id": "B3",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 3 (another entity of the name)",
+    "card": "Zinn Education Project — W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project",
+    "url": "https://www.zinnedproject.org/materials/du-bois-data-portraits/",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: W. E. B. Du Bois's data portraits (1900) and the 2018 book",
+    "snippet": "Book: W. E. B. Du Bois's Data Portraits: Visualizing Black America (2018, 144 pages, Princeton Architectural Press). Creators: W. E. B. Du Bois Center at Univer...",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.html",
+      "sha256": "e26b7dbd030029048c6f8866ae42ac35386c190c06039ee42f7fd54a0737400a"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.txt",
+      "sha256": "e74023fb964fe6e5b721b8acac20fcdef9fa0bff47558e16a67f79cc8d5623ad"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:26Z",
+     "http": "200",
+     "url": "https://www.zinnedproject.org/materials/du-bois-data-portraits/",
+     "final_url": "https://www.zinnedproject.org/materials/du-bois-data-portraits/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.html",
+     "raw_sha256": "e26b7dbd030029048c6f8866ae42ac35386c190c06039ee42f7fd54a0737400a",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.txt"
+     ],
+     "note": "found by WebSearch on the card's title and site; the page carries the snippet's book entry"
+    },
+    "surfaced_by_T": [
+     "T1 card 3"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project",
+    "card_snippet": "Book: W. E. B. Du Bois's Data Portraits: Visualizing Black America (2018, 144 pages, Princeton Architectural Press). Creators: W. E. B. Du Bois Center at Univer..."
+   },
+   {
+    "id": "B4",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 4 (another entity of the name)",
+    "card": "Pentagram — TED Data Portraits - Pentagram",
+    "url": "https://www.pentagram.com/work/ted-data-portraits/story",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Giorgia Lupi, TED Data Portraits (Pentagram)",
+    "snippet": "Recognizing what they had in common at a glance, attendees found it easy to start. Recognizing what they had in common at a glance, attendees found it easy to s...",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.html",
+      "sha256": "e120a28cf59c714240bcd07aa7f894a7fd54bdbc8216acdfd98e7a0a37764b44"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.txt",
+      "sha256": "21031e22d13aff62ebb0e4ed7371e885f64db9d7d21112fece8b20cd1ec417ba"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:27Z",
+     "http": "200",
+     "url": "https://www.pentagram.com/work/ted-data-portraits/story",
+     "final_url": "https://www.pentagram.com/work/ted-data-portraits/story",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.html",
+     "raw_sha256": "e120a28cf59c714240bcd07aa7f894a7fd54bdbc8216acdfd98e7a0a37764b44",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.txt"
+     ],
+     "note": "found by WebSearch on the card's title and site; the page carries the snippet's caption"
+    },
+    "surfaced_by_T": [
+     "T1 card 4"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "TED Data Portraits - Pentagram",
+    "card_snippet": "Recognizing what they had in common at a glance, attendees found it easy to start. Recognizing what they had in common at a glance, attendees found it easy to s..."
+   },
+   {
+    "id": "B5",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 5 (another entity of the name)",
+    "card": "SparkMap — W.E.B. Du Bois & Data Visualization History - SparkMap",
+    "url": null,
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: W. E. B. Du Bois's data portraits (SparkMap)",
+    "snippet": "Sociologist W.E.B. Du Bois created sixty hand-drawn \"data portraits\" between 1897 and 1990 with Atlanta University students and scholars, visualizing Black Amer...",
+    "files": {},
+    "fetched": {
+     "census_copy": false,
+     "result": "unreachable: no URL found; WebSearch on the card's title and site ('SparkMap \"W.E.B. Du Bois\" Data Visualization History'; 'sparkmap.org W.E.B. Du Bois sixty hand-drawn \"data portraits\" Atlanta University'; 'SparkMap blog Du Bois data visualization history') returned other pages on Du Bois's charts and no SparkMap page; not fetched; the card's title and snippet its only text (§3.1(a))"
+    },
+    "surfaced_by_T": [
+     "T1 card 5"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question. The snippet's 'between 1897 and 1990' is recorded as rendered.",
+    "card_title": "W.E.B. Du Bois & Data Visualization History - SparkMap",
+    "card_snippet": "Sociologist W.E.B. Du Bois created sixty hand-drawn \"data portraits\" between 1897 and 1990 with Atlanta University students and scholars, visualizing Black Amer..."
+   },
+   {
+    "id": "B6",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 6 (another entity of the name; a video card, 5m)",
+    "card": "YouTube·University of Massachusetts Amherst Libraries — W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+    "url": null,
+    "kind": "video card of a homonym",
+    "sense": "homonym: W. E. B. Du Bois's Data Portraits (a University of Massachusetts Amherst Libraries video)",
+    "snippet": null,
+    "files": {},
+    "fetched": {
+     "census_copy": false,
+     "result": "video card: title only (no snippet on the rail); admitted through its title (§3.1(a)); a WebSearch on the title and channel found no video URL; not fetched"
+    },
+    "surfaced_by_T": [
+     "T1 card 6"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+    "card_snippet": null
+   },
+   {
+    "id": "B7",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 7 (another entity of the name)",
+    "card": "MIT Media Lab — Data Portraits - MIT Media Lab",
+    "url": "https://www.media.mit.edu/projects/data-portraits/overview/",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Judith Donath's data portraits (MIT Media Lab)",
+    "snippet": "Data portraits depict their subjects' accumulated data rather than their faces. They can be visualizations of discussion contributions, browsing histories, soci...",
+    "files": {},
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:27Z",
+     "http": "000",
+     "url": "https://www.media.mit.edu/projects/data-portraits/overview/",
+     "result": "unreachable: TLS failure ('SSL certificate problem: self-signed certificate in certificate chain') for https://www.media.mit.edu/projects/data-portraits/overview/ (15:14:27Z) and https://www.media.mit.edu/publications/data-portraits/ (15:14:28Z), both found by WebSearch; one retry of the first with the proxy's CA bundle named explicitly (15:14:42Z), the same failure; verification never disabled; the card's title and snippet its only text (§3.1(a)); fetch.log"
+    },
+    "surfaced_by_T": [
+     "T1 card 7"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "Data Portraits - MIT Media Lab",
+    "card_snippet": "Data portraits depict their subjects' accumulated data rather than their faces. They can be visualizations of discussion contributions, browsing histories, soci..."
+   },
+   {
+    "id": "B8",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 8 (another entity of the name)",
+    "card": "ARTnews.com — 10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...",
+    "url": "https://www.artnews.com/art-news/news/data-portraits-reveal-strange-details-2474/",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Judith Donath's data portraits (ARTnews, 30 June 2014)",
+    "snippet": "Your tweets, your Instagrams, your Facebook status updates, your search history—it's all a part of your data portrait. And right now, by reading this article, y...",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.html",
+      "sha256": "bf5fb12c784943a1e43c4d6edf2784d38d20b3e54ad705c47550d893699c6cc8"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.txt",
+      "sha256": "550b7a468950e851e6ab1167538757c9c94ef2d73f3bb3cf28c1c7cbd0dcca19"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:15:07Z",
+     "http": "200",
+     "url": "https://www.artnews.com/art-news/news/data-portraits-reveal-strange-details-2474/",
+     "final_url": "https://www.artnews.com/art-news/news/data-portraits-reveal-strange-details-2474/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.html",
+     "raw_sha256": "bf5fb12c784943a1e43c4d6edf2784d38d20b3e54ad705c47550d893699c6cc8",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.txt"
+     ],
+     "note": "URL from ARTnews's tag page for Ben Durham (found by WebSearch; fetched as tries/artnews-tag.html), which links the article by its title; the page carries the snippet's opening"
+    },
+    "surfaced_by_T": [
+     "T1 card 8"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...",
+    "card_snippet": "Your tweets, your Instagrams, your Facebook status updates, your search history—it's all a part of your data portrait. And right now, by reading this article, y..."
+   }
+  ],
+  "own_pages": [
+   {
+    "id": "B9",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the entity's own page (the arXiv abstract; the census's one source, data-portraits--arxiv)",
+    "card": "arXiv — [2303.03919] Data Portraits: Recording Foundation Model Training Data",
+    "url": "https://arxiv.org/abs/2303.03919",
+    "kind": "own page (the paper's abstract page)",
+    "sense": "the entity",
+    "files": {
+     "B9.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.html",
+      "sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90"
+     },
+     "B9.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt",
+      "sha256": "cc5ddcc8fb7f00626127990cb5a61811cc22c033a0c8f373a1017d3258aa396e"
+     }
+    },
+    "fetched": {
+     "census_copy": true,
+     "src": "data-portraits--arxiv",
+     "read": "2026-11-01T05:07:12Z",
+     "http": "200",
+     "url": "https://arxiv.org/abs/2303.03919",
+     "final_url": "https://arxiv.org/abs/2303.03919",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.html",
+     "raw_sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90",
+     "census_sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90",
+     "agrees": true,
+     "copied_from": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/sources/data-portraits--arxiv.html.gz (gunzipped) and data-portraits--arxiv.txt",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt"
+     ]
+    },
+    "surfaced_by_T": [],
+    "names_operator": "yes ('Authors: Marc Marone , Benjamin Van Durme')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R: admitted by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census copy is intact (sha256 matches the manifest), so it was copied and not refetched."
+   },
+   {
+    "id": "B10",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the entity's own text (the paper, arXiv v2 PDF, linked from the abstract page as 'View PDF')",
+    "card": "arXiv — Data Portraits: Recording Foundation Model Training Data (PDF, v2)",
+    "url": "https://arxiv.org/pdf/2303.03919v2",
+    "kind": "own page (the paper, full text)",
+    "sense": "the entity",
+    "files": {
+     "B10.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.pdf",
+      "sha256": "13d6b6d27a507a4a3118572218548da674c27d697cab721cde8f10c84625a43e"
+     },
+     "B10.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt",
+      "sha256": "2bb2d7bf089592374d511248dee3c209d58e605c07899aa098d884e4c02daaaa"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:30Z",
+     "http": "200",
+     "url": "https://arxiv.org/pdf/2303.03919v2",
+     "final_url": "https://arxiv.org/pdf/2303.03919v2",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.pdf",
+     "raw_sha256": "13d6b6d27a507a4a3118572218548da674c27d697cab721cde8f10c84625a43e",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt"
+     ],
+     "note": "text by pdftotext (reading order, no layout); quotes checked against it whitespace-normalised"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "yes ('Marc Marone Benjamin Van Durme Johns Hopkins University')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R: the entity's own text, linked from its own abstract page (B9); read whole to §7 and the references' head, the census's unchecked item 'the paper's full text beyond the abstract'. Not surfaced by T."
+   },
+   {
+    "id": "B12",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the entity's own pages: the three sketch front ends the landing page links (pile., stack., stack-v2.dataportraits.org)",
+    "card": "dataportraits.org — the Pile, Stack and Stack V2 sketch front ends (HTTP 502)",
+    "url": "https://pile.dataportraits.org/",
+    "kind": "own pages (the live interface), unread: HTTP 502",
+    "sense": "the entity",
+    "files": {
+     "B12-pile.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-pile.html",
+      "sha256": "bb2fb7b51f18478e3ccde6376dc39285b20472f0394e7034fd2e0bdf6a5716e2"
+     },
+     "B12-stack.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-stack.html",
+      "sha256": "bb2fb7b51f18478e3ccde6376dc39285b20472f0394e7034fd2e0bdf6a5716e2"
+     },
+     "B12-stack-v2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-stack-v2.html",
+      "sha256": "bb2fb7b51f18478e3ccde6376dc39285b20472f0394e7034fd2e0bdf6a5716e2"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:29Z / 15:15:08Z / 15:15:09Z",
+     "http": "502",
+     "urls": [
+      "https://pile.dataportraits.org/",
+      "https://stack.dataportraits.org/",
+      "https://stack-v2.dataportraits.org/"
+     ],
+     "result": "unread: each answered HTTP 502 with the 16-byte body 'error code: 502'; one attempt each; recorded so and quoted only for that status"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R; the live interface the census records as 'unread'; not surfaced by T."
+   }
+  ],
+  "wikipedia": [
+   {
+    "id": "B11",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "Wikipedia: the record of absence (no article under the name, its variants or the paper's title) and the search for the phrase",
+    "card": "Wikipedia — no article 'Data Portraits' (HTTP 404); search for \"Data Portraits\"",
+    "url": "https://en.wikipedia.org/w/index.php?title=Data_Portraits&action=raw",
+    "kind": "encyclopedia (record of absence)",
+    "sense": "the name",
+    "files": {
+     "B11-W-Data_Portraits.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits.html",
+      "sha256": "6942501ce08d982a4a7d53dd2c13d4713528f385e9c95b9cbd44217c0058acd8"
+     },
+     "B11-W-Data_portraits.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portraits.html",
+      "sha256": "e21e48c249870b2fd794da9a41ca0ab0c58eaaa2a10fbf8664ff569894b9dec6"
+     },
+     "B11-W-Data_portrait.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portrait.html",
+      "sha256": "164d333b7e7c01c131d4d9e487fd5396a32c49a587e9a4bc057213d82011146a"
+     },
+     "B11-W-Data_Portraits_Recording_Foundation_Model_Training_Data.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits_Recording_Foundation_Model_Training_Data.html",
+      "sha256": "9eab1c41eaaf26bfbfe08fc71e72ef323f467b85a6ba579b8d89181b9c763aeb"
+     },
+     "B11-search.json": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-search.json",
+      "sha256": "39f19b42595c6af7c9838424d67f4e36f4d3a362caeb7d45f83524291a5ba9b3"
+     },
+     "B11.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11.txt",
+      "sha256": "3daad4456f1fb998405a0801ee878dc1140cc9d7f9eb0f210ba8d0fda4e7c4ae"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw_wikitext": [
+      {
+       "title": "Data_Portraits",
+       "http": "404",
+       "read": "2026-11-01T15:14:31Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits.html",
+       "sha256": "6942501ce08d982a4a7d53dd2c13d4713528f385e9c95b9cbd44217c0058acd8"
+      },
+      {
+       "title": "Data_portraits",
+       "http": "404",
+       "read": "2026-11-01T15:14:32Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portraits.html",
+       "sha256": "e21e48c249870b2fd794da9a41ca0ab0c58eaaa2a10fbf8664ff569894b9dec6"
+      },
+      {
+       "title": "Data_portrait",
+       "http": "404",
+       "read": "2026-11-01T15:14:33Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portrait.html",
+       "sha256": "164d333b7e7c01c131d4d9e487fd5396a32c49a587e9a4bc057213d82011146a"
+      },
+      {
+       "title": "Data_Portraits:_Recording_Foundation_Model_Training_Data",
+       "http": "404",
+       "read": "2026-11-01T15:14:33Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits_Recording_Foundation_Model_Training_Data.html",
+       "sha256": "9eab1c41eaaf26bfbfe08fc71e72ef323f467b85a6ba579b8d89181b9c763aeb"
+      }
+     ],
+     "search": {
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Data+Portraits%22&format=json&srlimit=50",
+      "http": "200",
+      "read": "2026-11-01T15:15:09Z",
+      "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-search.json",
+      "sha256": "39f19b42595c6af7c9838424d67f4e36f4d3a362caeb7d45f83524291a5ba9b3",
+      "hits": "Dowell Myers; Infographic; The Exhibit of American Negroes; W. E. B. Du Bois; Jessica Helfand; Whitney Battle-Baptiste; Laurie Frick"
+     },
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11.txt"
+     ],
+     "note": "B11.txt is the text of the first 404 page; its line of 'Sensitive client information' (the fetching host's IP address) is left out of the text, kept in the raw file"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R: the record of absence (v0.10 §3.1(a)); the census records no Wikipedia source for the entity."
+   }
+  ],
+  "census_third_party": [],
+  "unreachable": [
+   {
+    "id": "B5",
+    "why": "no URL found by WebSearch; the snippet stands"
+   },
+   {
+    "id": "B6",
+    "why": "video card, title only"
+   },
+   {
+    "id": "B7",
+    "why": "TLS failure (self-signed certificate in chain) at both MIT Media Lab URLs; the snippet stands"
+   },
+   {
+    "id": "B12",
+    "why": "HTTP 502 at the three sketch front ends"
+   },
+   {
+    "id": "B11",
+    "why": "HTTP 404: no article (a record of absence)"
+   }
+  ],
+  "title_only": [
+   "B6"
+  ],
+  "homonym_note": "Seven of eight cards on T's rail (B1, B3–B8) are other entities of the name: Giorgia Lupi's Data Portraits at TED 2017 (B1, B4), W. E. B. Du Bois's data portraits and the 2018 book (B3, B5, B6), and Judith Donath's data portraits (B7, B8). In B_D as the cards are, each with its sense; their kernels ledgered (F43–F49) for the disambiguation and the first question.",
+  "own_pages_note": "the census's one own page (data-portraits--arxiv, the abstract) is B9 (B_R); dataportraits.org, the entity's site, is card 2 (B2, B_D), carried once there; the paper (B10) and the sketch front ends (B12) added as the entity's own pages, the census's unchecked items",
+  "wikipedia_state": "No article. Raw wikitext for 'Data_Portraits', 'Data_portraits', 'Data_portrait' and 'Data_Portraits:_Recording_Foundation_Model_Training_Data' each HTTP 404 (2026-11-01T15:14:31–33Z, agent 'Mozilla/5.0 (compatible; traininglayerliterature-census)'); the search API for \"Data Portraits\" returns seven articles (Dowell Myers; Infographic; The Exhibit of American Negroes; W. E. B. Du Bois; Jessica Helfand; Whitney Battle-Baptiste; Laurie Frick), the Du Bois book cited in several, none on the paper's artifact (B11, F50, F51). The census records no Wikipedia source for the entity.",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+   ],
+   "B_R": [
+    "B9",
+    "B10",
+    "B11",
+    "B12"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (the body's inline links go to cards 2, 3 and 8, carried once as cards); B_R, the entity's own pages (the abstract, the paper, the sketch front ends) and the record of the encyclopedia's absence. T against L_F(B_D) uses B1–B8 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 1 (another entity of the name)",
+    "card": "giorgialupi — Data Portraits at TED — giorgialupi",
+    "url": "https://giorgialupi.com/data-portraits-at-ted2017",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Giorgia Lupi / Accurat, Data Portraits at TED 2017",
+    "snippet": "Project: Data Portraits at TED 2017 (Vancouver) by Accurat, commissioned by TED and David Stark Design for Target's social space. Concept: Personal questionnair...",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.html",
+      "sha256": "2d8c62c8abf433dba538700415ac1e4f16bc4f2e5434869dc0415b776be6dd40"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.txt",
+      "sha256": "05ffdf5ab82d444b0c7a6176a0b7c91e2627b9a11ec3226e4573c7856e2666bd"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:25Z",
+     "http": "200",
+     "url": "https://giorgialupi.com/data-portraits-at-ted2017",
+     "final_url": "https://giorgialupi.com/data-portraits-at-ted2017",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.html",
+     "raw_sha256": "2d8c62c8abf433dba538700415ac1e4f16bc4f2e5434869dc0415b776be6dd40",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.txt"
+     ],
+     "note": "found by WebSearch on the card's title and site; the page carries the project; the snippet's 'Project: … Concept:' line is the card renderer's summary and is not on the page"
+    },
+    "surfaced_by_T": [
+     "T1 card 1"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "Data Portraits at TED — giorgialupi",
+    "card_snippet": "Project: Data Portraits at TED 2017 (Vancouver) by Accurat, commissioned by TED and David Stark Design for Target's social space. Concept: Personal questionnair..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 2, the entity's own site (dataportraits.org); not a census source",
+    "card": "Data Portraits — Data Portraits",
+    "url": "https://dataportraits.org/",
+    "kind": "the entity's home page (the live interface's landing page)",
+    "sense": "the entity",
+    "snippet": "Foundation models are trained on increasingly immense and opaque datasets. Even while these models are now key in AI system building, it can be difficult to ans...",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.html",
+      "sha256": "5967547b30c0d39f01b55cb0306b1c355987047c8b46d0ceeec64aaf75efda15"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt",
+      "sha256": "492d654ff3e6621254fb319485bfc89f34e913a5606b25742786189af9123e6f"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:13:42Z",
+     "http": "200",
+     "url": "https://dataportraits.org/",
+     "final_url": "https://dataportraits.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.html",
+     "raw_sha256": "5967547b30c0d39f01b55cb0306b1c355987047c8b46d0ceeec64aaf75efda15",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt"
+     ],
+     "note": "URL from the card's title and its snippet, which is the page's lead verbatim ('Foundation models are trained on increasingly immense and opaque datasets. Even while these models are now key in AI system building, it can be difficult to ans...'); the census did not save this page (its 'live interface … unread'); the arXiv abstract links it as 'this https URL' and the paper names it ('at dataportraits.org')"
+    },
+    "surfaced_by_T": [
+     "T1 card 2",
+     "T1 bullet 4 inline link"
+    ],
+    "names_operator": "yes (the BibTeX block: 'author = {Marone, Marc and {Van Durme}, Benjamin}')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "The entity's own page, surfaced by T as card 2; carried once, in B_D (v0.10 §3.1(a)). Read whole.",
+    "card_title": "Data Portraits",
+    "card_snippet": "Foundation models are trained on increasingly immense and opaque datasets. Even while these models are now key in AI system building, it can be difficult to ans..."
+   },
+   {
+    "id": "B3",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 3 (another entity of the name)",
+    "card": "Zinn Education Project — W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project",
+    "url": "https://www.zinnedproject.org/materials/du-bois-data-portraits/",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: W. E. B. Du Bois's data portraits (1900) and the 2018 book",
+    "snippet": "Book: W. E. B. Du Bois's Data Portraits: Visualizing Black America (2018, 144 pages, Princeton Architectural Press). Creators: W. E. B. Du Bois Center at Univer...",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.html",
+      "sha256": "e26b7dbd030029048c6f8866ae42ac35386c190c06039ee42f7fd54a0737400a"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.txt",
+      "sha256": "e74023fb964fe6e5b721b8acac20fcdef9fa0bff47558e16a67f79cc8d5623ad"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:26Z",
+     "http": "200",
+     "url": "https://www.zinnedproject.org/materials/du-bois-data-portraits/",
+     "final_url": "https://www.zinnedproject.org/materials/du-bois-data-portraits/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.html",
+     "raw_sha256": "e26b7dbd030029048c6f8866ae42ac35386c190c06039ee42f7fd54a0737400a",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.txt"
+     ],
+     "note": "found by WebSearch on the card's title and site; the page carries the snippet's book entry"
+    },
+    "surfaced_by_T": [
+     "T1 card 3"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project",
+    "card_snippet": "Book: W. E. B. Du Bois's Data Portraits: Visualizing Black America (2018, 144 pages, Princeton Architectural Press). Creators: W. E. B. Du Bois Center at Univer..."
+   },
+   {
+    "id": "B4",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 4 (another entity of the name)",
+    "card": "Pentagram — TED Data Portraits - Pentagram",
+    "url": "https://www.pentagram.com/work/ted-data-portraits/story",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Giorgia Lupi, TED Data Portraits (Pentagram)",
+    "snippet": "Recognizing what they had in common at a glance, attendees found it easy to start. Recognizing what they had in common at a glance, attendees found it easy to s...",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.html",
+      "sha256": "e120a28cf59c714240bcd07aa7f894a7fd54bdbc8216acdfd98e7a0a37764b44"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.txt",
+      "sha256": "21031e22d13aff62ebb0e4ed7371e885f64db9d7d21112fece8b20cd1ec417ba"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:27Z",
+     "http": "200",
+     "url": "https://www.pentagram.com/work/ted-data-portraits/story",
+     "final_url": "https://www.pentagram.com/work/ted-data-portraits/story",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.html",
+     "raw_sha256": "e120a28cf59c714240bcd07aa7f894a7fd54bdbc8216acdfd98e7a0a37764b44",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.txt"
+     ],
+     "note": "found by WebSearch on the card's title and site; the page carries the snippet's caption"
+    },
+    "surfaced_by_T": [
+     "T1 card 4"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "TED Data Portraits - Pentagram",
+    "card_snippet": "Recognizing what they had in common at a glance, attendees found it easy to start. Recognizing what they had in common at a glance, attendees found it easy to s..."
+   },
+   {
+    "id": "B5",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 5 (another entity of the name)",
+    "card": "SparkMap — W.E.B. Du Bois & Data Visualization History - SparkMap",
+    "url": null,
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: W. E. B. Du Bois's data portraits (SparkMap)",
+    "snippet": "Sociologist W.E.B. Du Bois created sixty hand-drawn \"data portraits\" between 1897 and 1990 with Atlanta University students and scholars, visualizing Black Amer...",
+    "files": {},
+    "fetched": {
+     "census_copy": false,
+     "result": "unreachable: no URL found; WebSearch on the card's title and site ('SparkMap \"W.E.B. Du Bois\" Data Visualization History'; 'sparkmap.org W.E.B. Du Bois sixty hand-drawn \"data portraits\" Atlanta University'; 'SparkMap blog Du Bois data visualization history') returned other pages on Du Bois's charts and no SparkMap page; not fetched; the card's title and snippet its only text (§3.1(a))"
+    },
+    "surfaced_by_T": [
+     "T1 card 5"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question. The snippet's 'between 1897 and 1990' is recorded as rendered.",
+    "card_title": "W.E.B. Du Bois & Data Visualization History - SparkMap",
+    "card_snippet": "Sociologist W.E.B. Du Bois created sixty hand-drawn \"data portraits\" between 1897 and 1990 with Atlanta University students and scholars, visualizing Black Amer..."
+   },
+   {
+    "id": "B6",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 6 (another entity of the name; a video card, 5m)",
+    "card": "YouTube·University of Massachusetts Amherst Libraries — W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+    "url": null,
+    "kind": "video card of a homonym",
+    "sense": "homonym: W. E. B. Du Bois's Data Portraits (a University of Massachusetts Amherst Libraries video)",
+    "snippet": null,
+    "files": {},
+    "fetched": {
+     "census_copy": false,
+     "result": "video card: title only (no snippet on the rail); admitted through its title (§3.1(a)); a WebSearch on the title and channel found no video URL; not fetched"
+    },
+    "surfaced_by_T": [
+     "T1 card 6"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+    "card_snippet": null
+   },
+   {
+    "id": "B7",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 7 (another entity of the name)",
+    "card": "MIT Media Lab — Data Portraits - MIT Media Lab",
+    "url": "https://www.media.mit.edu/projects/data-portraits/overview/",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Judith Donath's data portraits (MIT Media Lab)",
+    "snippet": "Data portraits depict their subjects' accumulated data rather than their faces. They can be visualizations of discussion contributions, browsing histories, soci...",
+    "files": {},
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:27Z",
+     "http": "000",
+     "url": "https://www.media.mit.edu/projects/data-portraits/overview/",
+     "result": "unreachable: TLS failure ('SSL certificate problem: self-signed certificate in certificate chain') for https://www.media.mit.edu/projects/data-portraits/overview/ (15:14:27Z) and https://www.media.mit.edu/publications/data-portraits/ (15:14:28Z), both found by WebSearch; one retry of the first with the proxy's CA bundle named explicitly (15:14:42Z), the same failure; verification never disabled; the card's title and snippet its only text (§3.1(a)); fetch.log"
+    },
+    "surfaced_by_T": [
+     "T1 card 7"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "Data Portraits - MIT Media Lab",
+    "card_snippet": "Data portraits depict their subjects' accumulated data rather than their faces. They can be visualizations of discussion contributions, browsing histories, soci..."
+   },
+   {
+    "id": "B8",
+    "origin": "card (homonym)",
+    "pool": "B_D",
+    "role": "Overview card 8 (another entity of the name)",
+    "card": "ARTnews.com — 10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...",
+    "url": "https://www.artnews.com/art-news/news/data-portraits-reveal-strange-details-2474/",
+    "kind": "Overview card of a homonym",
+    "sense": "homonym: Judith Donath's data portraits (ARTnews, 30 June 2014)",
+    "snippet": "Your tweets, your Instagrams, your Facebook status updates, your search history—it's all a part of your data portrait. And right now, by reading this article, y...",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.html",
+      "sha256": "bf5fb12c784943a1e43c4d6edf2784d38d20b3e54ad705c47550d893699c6cc8"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.txt",
+      "sha256": "550b7a468950e851e6ab1167538757c9c94ef2d73f3bb3cf28c1c7cbd0dcca19"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:15:07Z",
+     "http": "200",
+     "url": "https://www.artnews.com/art-news/news/data-portraits-reveal-strange-details-2474/",
+     "final_url": "https://www.artnews.com/art-news/news/data-portraits-reveal-strange-details-2474/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.html",
+     "raw_sha256": "bf5fb12c784943a1e43c4d6edf2784d38d20b3e54ad705c47550d893699c6cc8",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.txt"
+     ],
+     "note": "URL from ARTnews's tag page for Ben Durham (found by WebSearch; fetched as tries/artnews-tag.html), which links the article by its title; the page carries the snippet's opening"
+    },
+    "surfaced_by_T": [
+     "T1 card 8"
+    ],
+    "names_operator": "no (the entity's authors are not named)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "In B_D as the card is (BRIEF-NEW-ROW-LAYER, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question.",
+    "card_title": "10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...",
+    "card_snippet": "Your tweets, your Instagrams, your Facebook status updates, your search history—it's all a part of your data portrait. And right now, by reading this article, y..."
+   },
+   {
+    "id": "B9",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the entity's own page (the arXiv abstract; the census's one source, data-portraits--arxiv)",
+    "card": "arXiv — [2303.03919] Data Portraits: Recording Foundation Model Training Data",
+    "url": "https://arxiv.org/abs/2303.03919",
+    "kind": "own page (the paper's abstract page)",
+    "sense": "the entity",
+    "files": {
+     "B9.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.html",
+      "sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90"
+     },
+     "B9.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt",
+      "sha256": "cc5ddcc8fb7f00626127990cb5a61811cc22c033a0c8f373a1017d3258aa396e"
+     }
+    },
+    "fetched": {
+     "census_copy": true,
+     "src": "data-portraits--arxiv",
+     "read": "2026-11-01T05:07:12Z",
+     "http": "200",
+     "url": "https://arxiv.org/abs/2303.03919",
+     "final_url": "https://arxiv.org/abs/2303.03919",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.html",
+     "raw_sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90",
+     "census_sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90",
+     "agrees": true,
+     "copied_from": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/sources/data-portraits--arxiv.html.gz (gunzipped) and data-portraits--arxiv.txt",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt"
+     ]
+    },
+    "surfaced_by_T": [],
+    "names_operator": "yes ('Authors: Marc Marone , Benjamin Van Durme')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R: admitted by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T. The census copy is intact (sha256 matches the manifest), so it was copied and not refetched."
+   },
+   {
+    "id": "B10",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the entity's own text (the paper, arXiv v2 PDF, linked from the abstract page as 'View PDF')",
+    "card": "arXiv — Data Portraits: Recording Foundation Model Training Data (PDF, v2)",
+    "url": "https://arxiv.org/pdf/2303.03919v2",
+    "kind": "own page (the paper, full text)",
+    "sense": "the entity",
+    "files": {
+     "B10.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.pdf",
+      "sha256": "13d6b6d27a507a4a3118572218548da674c27d697cab721cde8f10c84625a43e"
+     },
+     "B10.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt",
+      "sha256": "2bb2d7bf089592374d511248dee3c209d58e605c07899aa098d884e4c02daaaa"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:30Z",
+     "http": "200",
+     "url": "https://arxiv.org/pdf/2303.03919v2",
+     "final_url": "https://arxiv.org/pdf/2303.03919v2",
+     "raw": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.pdf",
+     "raw_sha256": "13d6b6d27a507a4a3118572218548da674c27d697cab721cde8f10c84625a43e",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt"
+     ],
+     "note": "text by pdftotext (reading order, no layout); quotes checked against it whitespace-normalised"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "yes ('Marc Marone Benjamin Van Durme Johns Hopkins University')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R: the entity's own text, linked from its own abstract page (B9); read whole to §7 and the references' head, the census's unchecked item 'the paper's full text beyond the abstract'. Not surfaced by T."
+   },
+   {
+    "id": "B11",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "Wikipedia: the record of absence (no article under the name, its variants or the paper's title) and the search for the phrase",
+    "card": "Wikipedia — no article 'Data Portraits' (HTTP 404); search for \"Data Portraits\"",
+    "url": "https://en.wikipedia.org/w/index.php?title=Data_Portraits&action=raw",
+    "kind": "encyclopedia (record of absence)",
+    "sense": "the name",
+    "files": {
+     "B11-W-Data_Portraits.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits.html",
+      "sha256": "6942501ce08d982a4a7d53dd2c13d4713528f385e9c95b9cbd44217c0058acd8"
+     },
+     "B11-W-Data_portraits.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portraits.html",
+      "sha256": "e21e48c249870b2fd794da9a41ca0ab0c58eaaa2a10fbf8664ff569894b9dec6"
+     },
+     "B11-W-Data_portrait.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portrait.html",
+      "sha256": "164d333b7e7c01c131d4d9e487fd5396a32c49a587e9a4bc057213d82011146a"
+     },
+     "B11-W-Data_Portraits_Recording_Foundation_Model_Training_Data.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits_Recording_Foundation_Model_Training_Data.html",
+      "sha256": "9eab1c41eaaf26bfbfe08fc71e72ef323f467b85a6ba579b8d89181b9c763aeb"
+     },
+     "B11-search.json": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-search.json",
+      "sha256": "39f19b42595c6af7c9838424d67f4e36f4d3a362caeb7d45f83524291a5ba9b3"
+     },
+     "B11.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11.txt",
+      "sha256": "3daad4456f1fb998405a0801ee878dc1140cc9d7f9eb0f210ba8d0fda4e7c4ae"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw_wikitext": [
+      {
+       "title": "Data_Portraits",
+       "http": "404",
+       "read": "2026-11-01T15:14:31Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits.html",
+       "sha256": "6942501ce08d982a4a7d53dd2c13d4713528f385e9c95b9cbd44217c0058acd8"
+      },
+      {
+       "title": "Data_portraits",
+       "http": "404",
+       "read": "2026-11-01T15:14:32Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portraits.html",
+       "sha256": "e21e48c249870b2fd794da9a41ca0ab0c58eaaa2a10fbf8664ff569894b9dec6"
+      },
+      {
+       "title": "Data_portrait",
+       "http": "404",
+       "read": "2026-11-01T15:14:33Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_portrait.html",
+       "sha256": "164d333b7e7c01c131d4d9e487fd5396a32c49a587e9a4bc057213d82011146a"
+      },
+      {
+       "title": "Data_Portraits:_Recording_Foundation_Model_Training_Data",
+       "http": "404",
+       "read": "2026-11-01T15:14:33Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-W-Data_Portraits_Recording_Foundation_Model_Training_Data.html",
+       "sha256": "9eab1c41eaaf26bfbfe08fc71e72ef323f467b85a6ba579b8d89181b9c763aeb"
+      }
+     ],
+     "search": {
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Data+Portraits%22&format=json&srlimit=50",
+      "http": "200",
+      "read": "2026-11-01T15:15:09Z",
+      "file": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-search.json",
+      "sha256": "39f19b42595c6af7c9838424d67f4e36f4d3a362caeb7d45f83524291a5ba9b3",
+      "hits": "Dowell Myers; Infographic; The Exhibit of American Negroes; W. E. B. Du Bois; Jessica Helfand; Whitney Battle-Baptiste; Laurie Frick"
+     },
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11.txt"
+     ],
+     "note": "B11.txt is the text of the first 404 page; its line of 'Sensitive client information' (the fetching host's IP address) is left out of the text, kept in the raw file"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R: the record of absence (v0.10 §3.1(a)); the census records no Wikipedia source for the entity."
+   },
+   {
+    "id": "B12",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the entity's own pages: the three sketch front ends the landing page links (pile., stack., stack-v2.dataportraits.org)",
+    "card": "dataportraits.org — the Pile, Stack and Stack V2 sketch front ends (HTTP 502)",
+    "url": "https://pile.dataportraits.org/",
+    "kind": "own pages (the live interface), unread: HTTP 502",
+    "sense": "the entity",
+    "files": {
+     "B12-pile.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-pile.html",
+      "sha256": "bb2fb7b51f18478e3ccde6376dc39285b20472f0394e7034fd2e0bdf6a5716e2"
+     },
+     "B12-stack.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-stack.html",
+      "sha256": "bb2fb7b51f18478e3ccde6376dc39285b20472f0394e7034fd2e0bdf6a5716e2"
+     },
+     "B12-stack-v2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-stack-v2.html",
+      "sha256": "bb2fb7b51f18478e3ccde6376dc39285b20472f0394e7034fd2e0bdf6a5716e2"
+     }
+    },
+    "fetched": {
+     "census_copy": false,
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "read": "2026-11-01T15:14:29Z / 15:15:08Z / 15:15:09Z",
+     "http": "502",
+     "urls": [
+      "https://pile.dataportraits.org/",
+      "https://stack.dataportraits.org/",
+      "https://stack-v2.dataportraits.org/"
+     ],
+     "result": "unread: each answered HTTP 502 with the 16-byte body 'error code: 502'; one attempt each; recorded so and quoted only for that status"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "B_R; the live interface the census records as 'unread'; not surfaced by T."
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "<meta name=\"description\"> (the page head)",
+   "quote": "Dataset documentation through membership testing.",
+   "claim": "the site describes itself as dataset documentation through membership testing",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.html (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F2": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead ¶1",
+   "quote": "Foundation models are trained on increasingly immense and opaque datasets. … it can be difficult to answer the straight forward question: has the model already encountered a given example during training?",
+   "claim": "the question the artifact answers: whether a model has already encountered a given example in training, difficult because training datasets are immense and opaque",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the membership question",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead ¶2",
+   "quote": "We propose a widespread adoption of Data Portraits: artifacts that record data and allow for inspection.",
+   "claim": "Data Portraits defined by their makers: artifacts that record data and allow for inspection, proposed for widespread adoption",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead ¶2",
+   "quote": "These are a complement to existing forms of data and model documentation artifacts.",
+   "claim": "portraits complement existing data and model documentation artifacts",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "documentation artifacts: beside datasheets and model cards",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead ¶2",
+   "quote": "We introduce our solution based on data sketching (compressed and approximate views of large data).",
+   "claim": "the solution is based on data sketching, compressed and approximate views of large data",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead ¶2",
+   "quote": "Our implementation is minimal and efficient in that it supports membership testing and nothing more.",
+   "claim": "the stated limit: the implementation supports membership testing and nothing more",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "the membership question",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Our Implementations",
+   "quote": "We host front-ends over several data sketches. These allow for rapid, minimal, membership testing over popular web-based text datasets.",
+   "claim": "the site hosts front ends over several data sketches for membership testing over web-based text datasets",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Our Implementations: The Pile",
+   "quote": "Check if some text appears in a large language modeling corpus. This is a 50 character n-gram sketch on the Pile.",
+   "claim": "the Pile sketch: a 50-character n-gram sketch that checks whether some text appears in a large language-modelling corpus",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Our Implementations: The Stack",
+   "quote": "Check if a code snippet appears in The Stack, a code dataset by Big Code.",
+   "claim": "the Stack sketch checks whether a code snippet appears in The Stack, BigCode's code dataset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Our Implementations: The Stack V2",
+   "quote": "Check if text appears in The Stack V2. This dataset contains code and text about code, like documentation and papers.",
+   "claim": "a third sketch, of The Stack V2, code and text about code",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Our Implementations: Your Dataset",
+   "quote": "Code on Github! … if you'd like us to build our system on your data.",
+   "claim": "the code is on GitHub and the makers offer to build the system on other data",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Citing (BibTeX)",
+   "quote": "author = {Marone, Marc and {Van Durme}, Benjamin}, booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},",
+   "claim": "the site's citation names the two authors and the NeurIPS Datasets and Benchmarks Track",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "undated page (the citation's year 2023; read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B2.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F13": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "title; authors",
+   "quote": "Title: Data Portraits: Recording Foundation Model Training Data … Authors: Marc Marone , Benjamin Van Durme",
+   "claim": "the paper's title and its two authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F14": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "Foundation models are trained on increasingly immense and opaque datasets. Even while these models are now key in AI system building, it can be difficult to answer the straightforward question: has the model already encountered a given example during training?",
+   "claim": "the abstract's question: has the model already encountered a given example during training",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the membership question",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F15": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "We therefore propose a widespread adoption of Data Portraits: artifacts that record training data and allow for downstream inspection.",
+   "claim": "the abstract's definition: artifacts that record training data and allow for downstream inspection",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F16": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "First we outline the properties of such an artifact and discuss how existing solutions can be used to increase transparency.",
+   "claim": "the paper outlines an artifact's properties and how existing solutions can increase transparency",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F17": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "We then propose and implement a solution based on data sketching, stressing fast and space efficient querying.",
+   "claim": "a solution based on data sketching, for fast and space-efficient querying",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F18": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "Using our tools, we document a popular language modeling corpus (The Pile) and a recently released code modeling dataset (The Stack).",
+   "claim": "the paper documents The Pile and The Stack",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F19": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "We show that our solution enables answering questions about test set leakage and model plagiarism.",
+   "claim": "the headline finding: the solution answers questions of test-set leakage and model plagiarism",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: leakage, plagiarism, creators",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F20": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "Our tool is lightweight and fast, costing only 3% of the dataset size in overhead.",
+   "claim": "the tool is lightweight and fast, about 3% of the dataset size in overhead",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and speed",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F21": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "We release a live interface of our tools at this https URL and call on dataset and model creators to release Data Portraits as a complement to current documentation practices.",
+   "claim": "a live interface is released, and dataset and model creators are called on to release Data Portraits beside current documentation",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "documentation artifacts: beside datasheets and model cards",
+   "sense": "the entity",
+   "date": "2023-03-06 (v1); v2 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F22": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Comments; Submission history",
+   "quote": "NeurIPS 2023 Datasets and Benchmarks … [v1] Mon, 6 Mar 2023 04:22:33 UTC (651 KB) … [v2] Thu, 14 Dec 2023 16:55:42 UTC (614 KB)",
+   "claim": "venue and versions: NeurIPS 2023 Datasets and Benchmarks; v1 6 March 2023, v2 14 December 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication, lifecycle and access",
+   "sense": "the entity",
+   "date": "2023-03-06; 2023-12-14",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F23": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "title block",
+   "quote": "Marc Marone Benjamin Van Durme Johns Hopkins University",
+   "claim": "the authors' affiliation: Johns Hopkins University",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F24": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§1 Introduction",
+   "quote": "The critical property of a data portrait is membership inference: whether an example was part of a data collection.",
+   "claim": "the critical property of a data portrait: membership inference, whether an example was part of a data collection",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the membership question",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F25": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§1 Introduction",
+   "quote": "In discussing these tools we consider three perspectives: content creators (owners), scientists, and content consumers. Creators wish to know whether a dataset contains their content (e.g. copywritten code).",
+   "claim": "three perspectives: content creators, scientists, content consumers; creators want to know whether a dataset contains their content",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: leakage, plagiarism, creators",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F26": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§2.1 Documentation Artifacts",
+   "quote": "We view a Data Portrait as a complementary type of documentation artifact - one that answers the membership question.",
+   "claim": "a Data Portrait as a documentation artifact complementing datasheets and model cards, answering the membership question",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "documentation artifacts: beside datasheets and model cards",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F27": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§3 Data Portraits",
+   "quote": "We outline desirable properties of a dataset documentation tool built around membership inference, recognizing that some may induce tradeoffs. 1. Fast: An artifact should support low latency programmatic access. 2. Lightweight: An artifact should not be much more expensive than storing the original data. 3. Avoids Redistribution:",
+   "claim": "the desirable properties of a membership tool: fast, lightweight, avoiding redistribution, local, indexing, match flexibility, with tradeoffs",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F28": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§3 Data Portraits (Other Implementations)",
+   "quote": "Given these tradeoffs, we use a probabilistic approach for membership inference: a data sketch.",
+   "claim": "after weighing grep, full-text indexes and suffix arrays, a probabilistic approach: a data sketch",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F29": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§3.1 Bloom Filter Sketching",
+   "quote": "Bloom filters are similar to hash tables, but they store only the hash of a data element rather than storing the element itself. … Bloom filters can output false positives but never false negatives.",
+   "claim": "a Bloom filter stores only hashes of elements; it can give false positives, never false negatives",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F30": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§3.2 Bloom Filter Construction",
+   "quote": "This reduces space requirements but carries the risk of missing some string of interest if it is split by a tile boundary in the corpus.",
+   "claim": "storing strided n-grams saves space and risks missing a string split by a tile boundary",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F31": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§3.2 (Redistribution)",
+   "quote": "Since Bloom filters distribute only hashes, they provide some obfuscation. … Note that in principle, proprietary LLM providers (e.g ChatGPT [29]) could release a Bloom filter based Data Portrait without revealing their exact training data – only the hashes of some substrings.",
+   "claim": "distributing only hashes obfuscates the data; a proprietary provider could in principle release a portrait without revealing its training data",
+   "modality": "interpretation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F32": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§4.1 Constructing Portraits",
+   "quote": "Further examples in this paper use a sketch built on character n-grams of length 50. … In effect, a 50 character span is already a good document fingerprint.",
+   "claim": "the sketch uses character n-grams of length 50, a span the authors find a good document fingerprint",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the sketch: Bloom filter, strided n-grams, hashes",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F33": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§4.1 The Pile",
+   "quote": "The structure takes only 27 GB on disk and has a false positive rate of 1 × 10−3",
+   "claim": "the Pile portrait: 27 GB on disk, false positive rate 1 × 10⁻³",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "size and speed",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F34": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§4.4 Code Generation",
+   "quote": "This artifact exactly documents the training data used in StarCoder, a 15.5B parameter code generation model [25]. … This plugin implements a plagiarism check by calling our Portrait service.",
+   "claim": "the Stack portrait documents StarCoder's training data exactly and powers a plugin's plagiarism check",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpora recorded: The Pile, The Stack, The Stack V2",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F35": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§4.4 Code Generation",
+   "quote": "Our Portrait service acts as a lightweight first-pass check for model plagiarism and additional tools from Li et al. [25] can be used to further assess attribution.",
+   "claim": "the service is a first-pass plagiarism check; attribution needs further tools",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: leakage, plagiarism, creators",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F36": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§4.2 WMT Overlap",
+   "quote": "we cannot conclude whether translation targets are memorized by a specific model, but our Pile-based sketch shows that some test data has leaked.",
+   "claim": "a finding and its limit: some WMT test data has leaked into the Pile; whether a specific model memorized it cannot be concluded",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "uses: leakage, plagiarism, creators",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F37": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§4.3 Overlap Detection",
+   "quote": "Target summaries from XSum have the highest incidence of overlap with the Pile. … This suggests that some LDC files are publicly exposed and scraped into LLM corpora",
+   "claim": "XSum summaries overlap the Pile most; some LDC files appear scraped into LLM corpora",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: leakage, plagiarism, creators",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F38": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§5.1 False Positives",
+   "quote": "We first find that there are no chained matches when querying our system with novel New York Times text. … we next find a false positive rate of 7 × 10−4",
+   "claim": "on novel text, no chained matches and a measured false positive rate of 7 × 10⁻⁴",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits and error",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§6 Impact and Limitations",
+   "quote": "Our work is limited in that we focus on studying only a few datasets. … We stress a lightweight and efficient hash-based approach to membership testing, but this comes with certain trade-offs such as false positives and the inability to retrieve the context surrounding a match.",
+   "claim": "the stated limits: few datasets; false positives; no retrieval of the context around a match",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": true,
+   "const": false,
+   "lineage": "limits and error",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§6 Impact and Limitations",
+   "quote": "That is, an open plagiarism detection tool could be used to avoid plagiarism detection.",
+   "claim": "a stated risk: an open plagiarism detector could be used to evade detection",
+   "modality": "self-description",
+   "kind": "limit",
+   "kernel": false,
+   "const": false,
+   "lineage": "limits and error",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F41": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§6 Impact and Limitations",
+   "quote": "For example, a non-technical content creator could search for their material in a documented dataset.",
+   "claim": "a hoped use: a non-technical content creator searching for their material in a documented dataset",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "uses: leakage, plagiarism, creators",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F42": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "§7 Conclusions and Future Work",
+   "quote": "proposed the adoption of Data Portraits: records supporting membership inference on the data used to train a model. … call for dataset and model creators to release some form of Data Portrait as part of their essential documentation.",
+   "claim": "the conclusion's definition: records supporting membership inference on a model's training data, and a call for their release as essential documentation",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: artifacts that record training data",
+   "sense": "the entity",
+   "date": "2023-12-14 (v2)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F43": {
+   "source": "B1",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "page text",
+   "quote": "For the Target space at TED 2017 in Vancouver, we designed and produced unique visual Data Portraits of the attendees: visual designs based on answers to simple but evocative questions that we turned into wearable buttons to spark conversations and connections for the five days of the event.",
+   "claim": "homonym: Giorgia Lupi's (Accurat's) TED 2017 Data Portraits, wearable buttons designed from attendees' answers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: Giorgia Lupi / Accurat, Data Portraits at TED 2017",
+   "date": "2017 (the project); page undated",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B1.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F44": {
+   "source": "B3",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "page text",
+   "quote": "Book — Non-fiction. By the W. E. B. Du Bois Center at University of Massachusetts Amherst. 2018. 144 pages. … W. E . B. Du Bois’s Data Portraits is the first complete publication of W. E. B. Du Bois’s groundbreaking charts, graphs, and maps presented at the 1900 Paris Exposition.",
+   "claim": "homonym: the 2018 book W. E. B. Du Bois's Data Portraits, the first complete publication of Du Bois's charts, graphs and maps of the 1900 Paris Exposition",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: W. E. B. Du Bois's data portraits (1900) and the 2018 book",
+   "date": "2018 (the book); 1900 (the charts)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B3.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F45": {
+   "source": "B4",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "page text",
+   "quote": "For the Target-sponsored social space at TED 2017 in Vancouver, Giorgia Lupi designed and produced unique visual Data Portraits for attendees to spark conversations and connections among them during the five-day conference. … The team generated more than 500 data portraits during the five-day conference.",
+   "claim": "homonym: Pentagram's account of Lupi's TED 2017 Data Portraits, more than 500 made",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: Giorgia Lupi, TED Data Portraits (Pentagram)",
+   "date": "2017 (the project); page undated",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B4.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F46": {
+   "source": "B5",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card snippet (unreachable)",
+   "quote": "Sociologist W.E.B. Du Bois created sixty hand-drawn \"data portraits\" between 1897 and 1990 with Atlanta University students and scholars, visualizing Black Amer...",
+   "claim": "homonym: SparkMap's card on Du Bois's sixty hand-drawn data portraits with Atlanta University students (the snippet's '1990' as rendered)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: W. E. B. Du Bois's data portraits (SparkMap)",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet in the registry (cite_list), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "video card title (5m; University of Massachusetts Amherst Libraries)",
+   "quote": "W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+   "claim": "homonym: a five-minute video by the UMass Amherst Libraries on the Du Bois book",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: W. E. B. Du Bois's Data Portraits (video)",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet in the registry (cite_list), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B7",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card snippet (unreachable)",
+   "quote": "Data portraits depict their subjects' accumulated data rather than their faces. They can be visualizations of discussion contributions, browsing histories, soci...",
+   "claim": "homonym: the MIT Media Lab's data portraits, depicting subjects' accumulated data in place of their faces",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: Judith Donath's data portraits (MIT Media Lab)",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet in the registry (cite_list), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "article, ¶2; date",
+   "quote": "June 30, 2014 … digital media scholar Judith Donath defines data portraits as “depictions of people made by visualizing data by and about them.”",
+   "claim": "homonym: Judith Donath's definition of data portraits, as ARTnews reported it in 2014",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: Judith Donath's data portraits (ARTnews)",
+   "date": "2014-06-30",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B8.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F50": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "index.php?title=Data_Portraits&action=raw (and Data_portraits, Data_portrait, the paper's title)",
+   "quote": "Error: 404, Not Found",
+   "claim": "the encyclopedia has no article titled Data Portraits, data portraits, data portrait, or the paper's title (HTTP 404 for each raw fetch)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia and the name",
+   "sense": "the name (encyclopedia)",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F51": {
+   "source": "B11",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "api.php search for \"Data Portraits\"",
+   "quote": "\"totalhits\":7",
+   "claim": "the encyclopedia's search for the phrase returns seven articles (the Du Bois book cited in several; none on the paper's artifact)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia and the name",
+   "sense": "the name (encyclopedia)",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B11-search.json (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F52": {
+   "source": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "pile.dataportraits.org; stack.dataportraits.org; stack-v2.dataportraits.org",
+   "quote": "error code: 502",
+   "claim": "the three sketch front ends answered HTTP 502 on 2026-11-01",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publication, lifecycle and access",
+   "sense": "the entity",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "datasets/negative-of-the-negative/v2/intake/data-portraits-20261101/B12-pile.html (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  }
+ },
+ "field_sources": {
+  "B1": "giorgialupi — Data Portraits at TED — giorgialupi",
+  "B2": "Data Portraits — Data Portraits",
+  "B3": "Zinn Education Project — W. E. B. Du Bois's Data Portraits: Visualizing Black America - Zinn Education Project",
+  "B4": "Pentagram — TED Data Portraits - Pentagram",
+  "B5": "SparkMap — W.E.B. Du Bois & Data Visualization History - SparkMap",
+  "B6": "YouTube·University of Massachusetts Amherst Libraries — W. E. B. Du Bois's Data Portraits: Visualizing Black America",
+  "B7": "MIT Media Lab — Data Portraits - MIT Media Lab",
+  "B8": "ARTnews.com — 10 Painstakingly Crafted Data Portraits That Reveal Strange Details of People's ...",
+  "B9": "arXiv — [2303.03919] Data Portraits: Recording Foundation Model Training Data",
+  "B10": "arXiv — Data Portraits: Recording Foundation Model Training Data (PDF, v2)",
+  "B11": "Wikipedia — no article 'Data Portraits' (HTTP 404); search for \"Data Portraits\"",
+  "B12": "dataportraits.org — the Pile, Stack and Stack V2 sketch front ends (HTTP 502)"
+ }
+}

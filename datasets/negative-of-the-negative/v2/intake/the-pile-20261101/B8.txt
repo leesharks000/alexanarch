@@ -1,0 +1,390 @@
+The Pile: Open-Source Training Dataset for LLMs - Interactive
+
+Michael Brenndoerfer
+HomeBooksNewsletterAboutCommunity
+
+Michael Brenndoerfer
+HomeBooksNewsletterAboutCommunityContact
+
+Light mode
+
+Home
+Books
+History of Language AI
+The Pile: Open-Source Training Dataset for LLMs
+
+The Pile: Open-Source Training Dataset for LLMs
+Michael Brenndoerfer·Published: July 23, 2025July 23, 2025·14 min read
+
+Covers EleutherAI's The Pile, the early 825GB open-source dataset that broadened access to high-quality training data for large language models.History of Language AIAll chapters 
+
+Book contents
+History of Language AI9 parts · 110 chaptersView the whole book →
+Active chapter 74 of 110
+Part 1Signals & Symbols+
+1Shannon's N-gram Model (1948)
+2The Turing Test (1950)
+3Georgetown-IBM Machine Translation Demo (1954)
+4The Perceptron (1957)
+5Chomsky's Syntactic Structures (1957)
+6MADALINE Neural Networks (1962)
+7ELIZA (1966)
+8Viterbi Algorithm (1967)
+9SHRDLU (1968)
+10Vector Space Model & TF-IDF (1968)
+11Conceptual Dependency Theory (1969)
+12The Transition to Statistical Methods (1970s)
+13Hidden Markov Models (1970s)
+14Augmented Transition Networks (1970)
+15Montague Semantics (1973)
+16Chinese Room Argument (1980)Part 2The Statistical Turn+
+17Lesk Algorithm (1983)
+18Backpropagation (1986)
+19Katz Back-off (1987)
+20Time Delay Neural Networks (1987)
+21Convolutional Neural Networks (1988)
+22IBM Statistical Machine Translation (1991)
+23Penn Treebank (1993)
+24BM25 (1994)
+25WordNet (1995)
+26Recurrent Neural Networks (1995)
+27Maximum Entropy & SVMs in NLP (1996)
+28Long Short-Term Memory (1997)
+29Statistical Parsers (1997)
+30FrameNet (1998)
+31LSA & Topic Models (1999)Part 3Structured Learning & Benchmarks+
+32Conditional Random Fields (2001)
+33BLEU Metric (2002)
+34Phrase-based SMT & MERT (2003)
+35Neural Probabilistic Language Model (2003)
+36Latent Dirichlet Allocation (2003)
+37ROUGE & METEOR (2004)
+38PropBank (2005)
+39Freebase (2007)Part 4Deep Learning Arrives+
+40IBM Watson on Jeopardy! (2011)
+41Deep Learning for Speech Recognition (2012)
+42Wikidata
+43Word2Vec (2013)
+44GloVe & Adam Optimizer (2014)
+45Seq2Seq for MT (2014)
+46Memory Networks (2014)
+47Attention Mechanism (2015)
+48Residual Connections (2015)
+49Layer Normalization (2016)
+50Subword Tokenization & FastText (2016)
+51SQuAD (2016)
+52Neural Information Retrieval
+53Google Neural Machine Translation (2016)
+54WaveNet (2016)Part 5Transformers & Pretraining+
+55Transformer Architecture (2017)
+56RLHF Foundations (2017)
+57ELMo & ULMFiT (2018)
+58BERT (2018)
+59GPT-1 & GPT-2 (2018)
+60GLUE & SuperGLUE (2018)
+61XLNet, RoBERTa, ALBERT (2019)
+62XLM (2019)
+63T5 & Text-to-Text Framework (2019)
+64Transformer-XL (2019)
+65BERT for IR (2019)Part 6Scaling & Retrieval+
+66Scaling Laws (2020)
+67GPT-3 & In-Context Learning (2020)
+68Dense Passage Retrieval & RAG (2020)Part 7Multimodal & Instruction Era+
+69Mixture-of-Experts at Scale (2021)
+70CLIP (2021)
+71Codex (2021)
+72Instruction Tuning (2021)
+73Multi-Vector Retrievers (2021)
+74The Pile (2021)Current chapter
+
+Sections in this chapter7
+012021: The Pile3 min
+02The Problem3 min
+03The Solution3 min
+04Applications and Impact3 min
+05Limitations3 min
+06Legacy and Looking Forward3 min
+07Quiz1 min
+75DALL·E (2021)
+76Foundation Models Report (2021)
+77InstructGPT & RLHF (2022)
+78Chinchilla Scaling Laws (2022)
+79HELM (2022)
+80Chain-of-Thought Prompting (2022)
+81ChatGPT (2022)
+82BLOOM (2022)
+83PaLM (2022)
+84Flamingo (2022)
+85DALL·E 2 (2022)
+86Stable Diffusion (2022)
+87Whisper (2022)
+88FlashAttention (2022)Part 8Open Models & Alignment+
+89LLaMA (2023)
+90Open LLM Wave (2023)
+91QLoRA (2023)
+92Function Calling & Tool Use (2023)
+93Multimodal LLMs (2023)
+94Constitutional AI (2023)
+95BIG-bench & MMLU (2023)
+96GPT-4 (2023)Part 9Agents, Long Context & Real-Time AI+
+97Mixtral & Sparse MoE (2024)
+98Long Context at Scale (2024)
+99Structured Outputs (2024)
+100Hybrid Retrieval (2024)
+101PEFT Beyond LoRA (2024)
+102Continuous Post-Training (2025)
+103Mixture of Experts at Scale (2024)
+104Agentic AI Systems (2024)
+105Multimodal Integration (2024)
+106DeepSeek R1 (2025)
+107GPT-4o (2025)
+108V-JEPA 2 (2025)
+109AI Co-Scientist Systems (2025)
+110Specialized LLMs for Low-Resource Languages (2025)← Previous chapterMulti-Vector Retrievers (2021)Next chapter →DALL·E (2021)
+
+Ch. 74The Pile (2021) › 2021: The Pile1 / 7
+
+Part 7 of 9·Multimodal & Instruction EraChapter 74The Pile (2021) › 2021: The Pile
+Reading the full chapter · 7 sections · 14 min7 sections · 14 minBrowse the book
+
+Full chapter
+Section viewRecommended
+All 7 sections · 14 min read
+The Pile (2021) › 2021: The PileFull chapter · Sections in this chapter1 / 7 ↓
+
+Sections in this chapter7
+012021: The Pile3 min
+02The Problem3 min
+03The Solution3 min
+04Applications and Impact3 min
+05Limitations3 min
+06Legacy and Looking Forward3 min
+07Quiz1 min
+
+Track your reading progressSign in to mark sections as read.
+
+Reading tools Definitions, links & notes
+Reading Level
+
+Choose your expertise level to adjust how many terms are explained. Beginners see more tooltips, experts see fewer to maintain reading flow. Hover over underlined terms for instant definitions.
+Beginner· Maximum helpIntermediate· Medium helpExpert· Minimal helpHide All· No tooltips
+
+Article links
+Make inline references clickableOn
+
+Notes & commentsOpen notes →Notes & commentsLeave notes and join the discussionSelection toolbarShow comment actions when selecting text. Turn off for the browser menu only.Comment indicatorsShow small counts beside annotated passagesPassage highlightsGently shade annotated text selections
+
+2021: The PileLink Copied
+
+By 2021, large language model development had become increasingly stratified. The most capable models were being built by well-resourced organizations with access to massive computational resources and proprietary training datasets. GPT-3 had demonstrated strong performance, but its training data remained private, leaving researchers without access to the curated collections behind the model. The open-source community, meanwhile, struggled with fragmented and inconsistent datasets that made it difficult to train competitive language models. This data divide concentrated model development among a few organizations.
+
+EleutherAI, a research collective focused on open-source AI, identified training data as a barrier to broader language-model research. Computational resources were becoming more accessible and transformer architectures were well understood, but high-quality datasets remained difficult to obtain. Existing open datasets were often too small, poorly documented, or narrow in their language coverage. The field needed a large, well-documented open dataset comparable in scale to proprietary collections.
+
+The team, led by researchers including Leo Gao, set out to create The Pile, an 825GB dataset designed for training large language models. The name reflected its composition from many sources and its role as a resource others could build upon. Rather than aggregating whatever text was available online, The Pile combined selected scientific and literary sources with code repositories and web text. The goal was to expose models to different writing styles and subject areas so they could handle a wider range of contexts.
+
+The timing was particularly significant. The transformer revolution had established clear architectural principles for language models. Scaling laws were beginning to emerge, suggesting that both model size and data scale mattered. Yet the research community remained fragmented, with different groups using incompatible datasets, making it difficult to compare approaches or reproduce results. The Pile positioned itself as a unifying resource that would enable reproducible research and fair comparisons across different model architectures and training strategies. By providing a standardized, high-quality dataset, EleutherAI aimed to level the playing field and accelerate open-source language model development.
+
+The Pile also became a testbed for studying how source composition affected model behavior. Researchers could compare the contribution of different domains because the dataset and its documentation were public. This supported analysis of data quality and representation, including bias. The release also showed that an open-source community could create a resource comparable in scale to proprietary datasets.
+
+The ProblemLink Copied
+
+Large language model training faced a fundamental data problem by 2021. The most successful models were trained on carefully curated, massive datasets, but these datasets were typically proprietary and unavailable to the broader research community. GPT-3's training data, for example, remained private, making it impossible for researchers to study how data composition affected model capabilities or to reproduce training results. This opacity created several problems. First, it made it difficult for researchers to understand what aspects of training data contributed to model performance. Second, it prevented fair comparisons between different models trained on different data. Third, it concentrated the ability to train capable language models in organizations with the resources to create proprietary datasets.
+
+The open-source community faced additional challenges. Available datasets were often inadequate for training large language models. Common Crawl, while massive, contained a significant amount of low-quality, duplicated, or problematic content. Existing curated datasets were typically too small for training models at scale. Academic datasets, while high quality, covered narrow domains that didn't provide the breadth needed for general-purpose language understanding. Researchers found themselves piecing together multiple datasets with different formats, documentation standards, and quality levels, creating barriers to entry that favored well-resourced institutions.
+
+The lack of standardized datasets made research progress difficult. Different research groups used different training data, making it nearly impossible to compare approaches or determine whether performance differences came from architecture choices, training procedures, or the data itself. This fragmentation prevented researchers from building directly on one another's results. Without a common baseline dataset, the field couldn't distinguish a useful modeling technique from an advantage caused by different training data.
+
+Data quality posed another challenge. Models trained on web-scraped text could reproduce errors and harmful patterns from the source material, including bias or misinformation. Creating higher-quality data required selecting sources and removing duplicates. Teams also had to filter low-quality material and document the resulting composition, work that required substantial time and expertise.
+
+The scale required for training large language models created additional problems. Models like GPT-3 used datasets measured in hundreds of gigabytes or terabytes, far beyond what individual researchers could easily manage. Creating and maintaining a dataset at this scale required substantial infrastructure and engineering effort. Many researchers had access to compute through cloud services but lacked the time or expertise to prepare training data at the necessary scale and quality.
+
+Licensing and legal considerations complicated data collection further. Different sources came with different licensing requirements, making it difficult to combine them legally. Some sources prohibited commercial use, others required attribution, and many had unclear or restrictive terms. Building a large multi-source dataset therefore required careful legal review.
+
+The SolutionLink Copied
+
+The Pile addressed these challenges with a large, openly available dataset designed for training language models. Its creators selected sources, standardized their formats, documented the composition, and reviewed licensing. The resulting 825GB dataset saved researchers from repeating months of collection and processing work.
+
+The dataset's composition was designed to broaden language coverage. Its 22 sources included arXiv papers and PubMed abstracts, literature, Common Crawl text, GitHub code, and specialized collections. Models trained on this mixture encountered academic and conversational writing as well as mathematical notation and programming code. The breadth supported language modeling across different domains and styles.
+
+The curation process addressed quality concerns through careful source selection and filtering. Rather than simply aggregating whatever text was available, the team selected sources known for high quality: peer-reviewed academic papers, published books, well-maintained code repositories, and carefully filtered web content. The dataset underwent deduplication to remove repeated content that could skew training. Low-quality sources were filtered out, and content was processed to standardize formatting while preserving important structural information like code formatting, mathematical notation, and document structure.
+
+Diversity Through Design
+
+The Pile's 22 source components covered different subject areas and forms of writing. They included arXiv papers, literature from Books3, code repositories, forum discussions, and specialized legal or mathematical material. This mixture exposed models to contexts beyond a single domain.
+
+The technical implementation made the dataset easier to use. Data was stored in a standardized format, and documentation described the size of each source along with its characteristics and caveats. Researchers could inspect the dataset's composition before use and analyze which sources affected model behavior. The release also included tools for integrating The Pile into training pipelines.
+
+Legal considerations were addressed through careful licensing review. The team worked to ensure that the dataset could be used for research purposes, paying attention to source licensing requirements and making clear documentation of any restrictions. This legal clarity was essential for enabling widespread adoption, as researchers needed confidence that using the dataset wouldn't create legal problems for their work or organizations.
+
+The dataset's scale made it suitable for training models at the sizes that had shown promising capabilities. At 825GB of text data, The Pile provided sufficient content to train models with billions of parameters. This scale matched what had been used for successful models like GPT-3, giving researchers access to datasets comparable to what leading organizations used. The size was chosen to be large enough for effective training while remaining manageable for distribution and storage.
+
+Openness was a core principle of The Pile's design. Unlike proprietary datasets, The Pile was released publicly with documentation so anyone could inspect it and use it as a basis for further work. Different groups could train on identical data, making research more reproducible. Public source information also supported analysis of dataset quality and bias. Researchers without proprietary collections could use the same training data.
+
+Applications and ImpactLink Copied
+
+The Pile's release had immediate impact on the open-source language model community. Researchers could now train large models without months of data collection and processing work. The dataset enabled rapid experimentation with different architectures, training strategies, and model sizes, accelerating progress in open-source language model development. Groups like EleutherAI used The Pile to train models including GPT-Neo and GPT-J. This showed that open-source communities could create models competitive with proprietary systems when given access to high-quality training data.
+
+The standardized dataset enabled reproducible research across the field. Different groups could train on identical data and compare models or training procedures fairly. This made it possible to build cumulative results and attribute performance differences to specific techniques rather than unknown differences in training data.
+
+The dataset became a testbed for understanding data effects on model capabilities. Researchers could study how different source components contributed to performance on various tasks. This provided insights into data composition that had been difficult to obtain with proprietary datasets. Studies examined how academic sources contributed to scientific reasoning, how code data affected programming capabilities, and how different domains influenced model behavior. These investigations helped establish principles for effective training data composition.
+
+The Pile enabled research into data quality and representation, including bias. Because the dataset was open and documented, researchers could study which biases appeared in the data and how they affected model behavior. Public access also allowed researchers to propose improvements and develop better dataset-creation practices.
+
+The dataset supported training of models for specific domains and applications. Researchers could fine-tune models trained on The Pile for specialized tasks, benefiting from the general language understanding developed during pretraining while adapting to specific needs. The diverse source composition made The Pile particularly useful for this purpose, as models trained on it had broader capabilities than models trained on narrower datasets.
+
+Open-source model development accelerated significantly. Before The Pile, creating a large language model required solving the dataset problem first, which took months or years. After The Pile, researchers could focus on model architecture, training procedures, and other innovations rather than spending time on data collection. This acceleration enabled rapid progress in open-source language model capabilities, leading to models that approached or matched proprietary systems in some capabilities.
+
+The dataset influenced how researchers thought about training data. The Pile paired careful curation and documentation with a diverse source mixture, showing that composition mattered alongside scale. Later dataset efforts paid more attention to source composition and quality filters, with explicit documentation of those choices.
+
+LimitationsLink Copied
+
+The Pile had limitations that affected both its utility and the models trained on it. Data quality varied across sources: academic papers and published books appeared alongside web-scraped text containing errors or problematic material. Filtering did not remove all source bias, including gender and racial biases as well as uneven cultural and geographic representation.
+
+The dataset's composition, while diverse, still had gaps and skews. Certain domains were better represented than others. This reflected what was available in open sources rather than what would be ideal for training balanced language models. Scientific and technical content was well-represented, but some cultural contexts, languages other than English, and specialized domains had less coverage. These gaps affected model capabilities, with models trained on The Pile performing better on well-represented domains and struggling with underrepresented ones.
+
+Bias and Representation
+
+The Pile, like all large-scale text datasets, reflected biases present in its source materials. These biases affected model behavior, with models trained on The Pile reproducing or amplifying societal biases present in the data. Researchers using The Pile needed to be aware of these limitations and take appropriate measures to address bias in downstream applications.
+
+Legal and licensing complexities created ongoing challenges. Some sources in The Pile had unclear or restrictive licensing that could limit commercial use or require careful attribution. These legal considerations made it difficult for some organizations to use The Pile in commercial applications, limiting its utility for certain use cases. The dataset's legal status also created ongoing maintenance challenges as licensing terms evolved.
+
+The dataset's scale, while substantial, wasn't unlimited. At 825GB, The Pile was large enough for training models at the scale of GPT-3, but as models and training procedures evolved, some researchers found they needed even larger datasets. The Pile represented a snapshot of available data at the time of creation, and as new sources became available or as understanding of ideal data composition evolved, the dataset would need updates or supplements.
+
+Data freshness was another limitation. The Pile was created from sources available at a specific point in time, meaning it didn't include more recent information. For applications requiring up-to-date knowledge, models trained on The Pile would need additional fine-tuning or retrieval mechanisms. This limitation was inherent to static datasets but affected the dataset's utility for certain applications.
+
+Even detailed documentation couldn't capture every aspect of such a large and diverse collection. Researchers sometimes found unexpected content or behavior when working with The Pile. Understanding how individual sources affected a model still required experimentation beyond the provided documentation.
+
+Maintenance and updates posed ongoing challenges. As sources evolved, licensing changed, or better sources became available, keeping The Pile current would require ongoing effort. The initial release represented significant work, but maintaining and improving the dataset over time would require sustained resources that might not be available to a volunteer-driven organization.
+
+Legacy and Looking ForwardLink Copied
+
+The Pile's influence extended beyond providing training data, establishing new norms for open-source dataset creation and use in language model research. The dataset demonstrated that open-source communities could create resources comparable in scale and quality to proprietary datasets, challenging assumptions about what was possible without institutional resources. This democratization of access to high-quality training data enabled a new wave of open-source language model development and research.
+
+The Pile made transparency and reproducibility more common in language-model dataset releases. Publishing the dataset with source documentation allowed researchers to study data effects in ways that proprietary collections did not. Subsequent efforts documented source composition and quality, including known issues.
+
+The dataset influenced how researchers thought about training data composition. The Pile's diverse source selection demonstrated that breadth and quality mattered as much as scale. This insight influenced subsequent datasets, with researchers paying more attention to domain diversity, quality filtering, and intentional composition. The careful curation approach that The Pile exemplified became a model for future dataset creation efforts.
+
+The Pile's success enabled the training of open-source models that demonstrated competitive capabilities. Models like GPT-Neo and GPT-J, trained on The Pile, showed that open-source approaches could match or exceed proprietary models in some capabilities when given access to high-quality training data. This success inspired further open-source development and demonstrated the value of open datasets for advancing the field.
+
+The dataset also exposed problems common to large text collections, including bias and uneven coverage. These findings motivated work on better curation and bias mitigation. The Pile's transparency made such problems easier to study than they were in closed datasets.
+
+Subsequent open datasets followed The Pile's community-driven approach at larger scales and with different curation methods. These projects continued the movement toward open-source training data for language models.
+
+The Pile highlighted continuing problems with bias and data quality, including representation gaps. Research on dataset bias and multilingual coverage, along with better curation methods, builds on these observations. The Pile's transparency and documentation practices continue to influence dataset releases.
+
+The Pile also demonstrated the value of community-driven dataset creation. By bringing together researchers from different organizations and backgrounds, EleutherAI showed that communities could accomplish large-scale projects that would be difficult for individual organizations. This model of collaborative, open-source dataset creation has influenced subsequent efforts and demonstrated an alternative to proprietary, institution-controlled resources.
+
+The Pile widened access to training data at language-model scale. Researchers without proprietary collections could use its 825GB source mixture for model development. Its documentation and curation practices set expectations for later open datasets. Although The Pile had limitations, it showed that an open-source community could create a resource comparable in scale to proprietary collections. Its influence continues in models trained on the dataset and in later research that adopted its open, documented approach.
+
+QuizLink Copied
+
+Test your understanding of The Pile's source composition and role in open language-model research.
+
+The Pile Quiz
+
+Question 1 of 50 of 5 completed
+
+What was the primary problem that The Pile addressed in the language model research community?
+
+Insufficient computational resources for training models
+
+The lack of standardized, high-quality training datasets available to the open-source community
+
+The inability to train transformer models effectively
+
+The high cost of cloud computing services
+
+Check Answer
+Track your reading progressSign in to mark sections as read.Read this part separately →2021: The Pile · 3 min
+
+Keep the thread going
+Continue readingBook contentsPrevious chapterMulti-Vector Retrievers (2021)Up nextDALL·E (2021)Read the next chapter
+
+Join the discussionAsk a question or share what you learned.
+
+Comments
+
+Add to the conversation
+A question, a correction, or an example from your own work.
+
+No comments yet. Be the first to share your thoughts!
+
+A different angle
+Keep exploringAll writing
+
+History of Language AI · Vol. 3
+Whisper: Large-Scale Multilingual Speech Recognition
+Whisper applies encoder-decoder transformers to multilingual speech recognition, translation, and language identification across noisy audio conditions.6 min read
+
+History of Language AI · Vol. 3
+Flamingo: Few-Shot Vision-Language Learning
+Flamingo connects frozen vision and language models through gated cross-attention, supporting few-shot image and video tasks without task-specific fine-tuning.15 min read
+
+History of Language AI · Vol. 3
+PaLM: Pathways LLM: Large-Scale Training, Reasoning
+Covers Google's PaLM, the 540 billion parameter language model that demonstrated advance capabilities in complex reasoning, multilingual understanding.7 min read
+
+Written byMichael Brenndoerfer
+
+Learn more about MichaelFull bio 
+Cite or share
+
+Copy citationCopy linkAll citation formats
+
+About the author
+
+Reference
+
+Citation details
+Cite or share this article.
+
+BIBTEXAcademicCopy
+@misc{brenndoerfer2025pileopen,
+ author = {Michael Brenndoerfer},
+ title = {The Pile: Open-Source Training Dataset for LLMs},
+ year = {2025},
+ url = {https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models},
+ organization = {mbrenndoerfer.com},
+ note = {Accessed: 2026-11-01}
+}
+
+Show other formatsAPA · MLA · Chicago · Harvard · Simple
+
+APAAcademicCopy
+Michael Brenndoerfer (2025). The Pile: Open-Source Training Dataset for LLMs. Retrieved from https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models
+
+MLAAcademicCopy
+Michael Brenndoerfer. "The Pile: Open-Source Training Dataset for LLMs." 2026. Web. November 1, 2026. <https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models>.
+
+CHICAGOAcademicCopy
+Michael Brenndoerfer. "The Pile: Open-Source Training Dataset for LLMs." Accessed November 1, 2026. https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models.
+
+HARVARDAcademicCopy
+Michael Brenndoerfer (2025) 'The Pile: Open-Source Training Dataset for LLMs'. Available at: https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models (Accessed: November 1, 2026).
+
+SimpleBasicCopy
+Michael Brenndoerfer (2025). The Pile: Open-Source Training Dataset for LLMs. https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models
+
+DIRECT LINKURLCopy
+https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models
+
+Newsletter
+Stay up to date
+Get new articles, book updates, and notes on AI and technology.Email address
+Subscribe
+Unsubscribe at any time. Privacy policy
+
+Author
+Michael Brenndoerfer
+
+Editorial note
+All opinions expressed here are my own and do not reflect the views of my employer.
+
+Michael currently works as an Associate Director at EQT Partners in Singapore, leading AI and data initiatives across private capital investments.
+With a background spanning private equity, management consulting, and software engineering, he focuses on building practical analytics solutions and helping teams work more effectively with data. He has contributed research to AI conferences and enjoys exploring applications of machine learning and natural language processing.
+
+Explore
+AboutPublicationsBooks
+
+Connect
+ContactNewsletter

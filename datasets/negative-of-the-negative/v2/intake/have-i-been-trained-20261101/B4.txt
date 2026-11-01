@@ -1,0 +1,473 @@
+Have I Been Trained? Review 2026
+
+🛠ToolCenter
+All ToolsCategories
+Rankings
+PromptsArticlesSubmit / PartnerMy FavoritesLoginEN EnglishEN
+
+EN EnglishEN
+
+Back to Articles
+
+Review10 min · March 26, 2026 · By ToolCenter Editorial Team
+
+Have I Been Trained? Review 2026: Check If AI Used Your Images
+
+#ai-art#copyright#review#privacy#artist-tools
+
+Quick Insights
+
+The tool searches LAION-5B (5.8 billion image-text pairs) using CLIP-based semantic similarity — not an exact pixel match.
+
+It is completely free and requires no account to use basic search.
+
+Results are strong for widely-shared images but the tool cannot search proprietary or closed training datasets (e.g., Midjourney, DALL-E 3).
+
+Spawning's "Do Not Train" registry lets artists opt out, but compliance is voluntary — only some model trainers honor it.
+
+Have I Been Trained? is a free tool by Spawning AI that lets artists search the LAION-5B dataset to see if their images were used to train AI art generators like Stable Diffusion.
+
+Have I Been Trained? Review 2026: Check If AI Used Your Images
+
+When generative AI art exploded in 2022, artists faced an uncomfortable question: were their images used — without permission — to train models like Stable Diffusion, Midjourney, and DALL-E? For most people, there was no way to know.
+
+Have I Been Trained?, built by Spawning AI, changed that. It gave artists a simple, free search engine to check whether their work appeared in the LAION-5B dataset — the massive open dataset behind many popular image generators. Three years later, the tool has evolved significantly. This review examines where it stands in 2026, what it can and cannot do, and whether it still matters in a rapidly shifting AI copyright landscape.
+
+What Is Have I Been Trained?
+
+Have I Been Trained? is a web-based search tool that lets you query the LAION-5B dataset — a collection of approximately 5.8 billion image-text pairs scraped from the open web. LAION-5B was the primary training dataset for Stable Diffusion 1.x and 2.x, and its derivatives have influenced numerous other open-source image models.
+
+The tool was created by Spawning AI, a company founded by artists Mat Dryhurst and Holly Herndon (alongside their collaborators) with the explicit goal of giving creators more control over how their work is used in AI training.
+
+Key facts:
+
+Price: Free to use, no account required for basic searches
+
+Dataset: LAION-5B (~5.8 billion image-text pairs)
+
+Search method: CLIP-based semantic similarity (text or image upload)
+
+Additional feature: Spawning's "Do Not Train" opt-out registry
+
+Website: haveibeentrained.com
+
+→ View Have I Been Trained? on ToolCenter
+
+How It Works: The Technical Side
+
+Understanding what Have I Been Trained? actually does — and does not do — is critical to interpreting your results.
+
+CLIP-Based Semantic Search
+
+The tool does not perform pixel-by-pixel image matching. Instead, it uses OpenAI's CLIP (Contrastive Language-Image Pre-training) model to convert your query into a vector embedding, then finds the nearest neighbors in the LAION-5B embedding space.
+
+This means:
+
+Text search: Type "oil painting by [artist name]" and the tool returns images whose CLIP embeddings are semantically close to that description.
+
+Image search: Upload one of your images and the tool returns visually/semantically similar images from the dataset.
+
+The results are ranked by cosine similarity. A high similarity score suggests a strong match, but it is not proof of an exact copy — CLIP operates on semantic meaning, not pixel identity.
+
+What This Means in Practice
+
+If you upload a photograph you took and see it appear in the results with a high similarity score, it is very likely that specific image (or a near-duplicate) exists in LAION-5B. However, a result showing a "similar" but different image does not mean your work was copied — it means CLIP considers the two semantically related.
+
+This distinction matters enormously in legal and ethical discussions. Finding your exact image in LAION-5B proves it was in the training data. Finding a similar image proves much less.
+
+Using the Tool: A Walkthrough
+
+Step 1: Choose Your Search Method
+
+Visit the site and you have two options:
+
+Text search — Enter your name, a description of your style, or keywords associated with your work.
+
+Image upload — Drag and drop an image file to search by visual similarity.
+
+Step 2: Review Results
+
+Results appear as a grid of thumbnail images with similarity scores. Each result shows:
+
+The image thumbnail
+
+The associated text caption from the dataset
+
+The source URL where the image was originally scraped from
+
+A similarity percentage
+
+Step 3: Flag or Opt Out
+
+If you find your work, Spawning provides tools to:
+
+Flag individual images for removal from the dataset
+
+Register with the "Do Not Train" registry — a signal to model trainers that you do not consent to your work being used
+
+Submit domain-level opt-outs to exclude an entire website
+
+Registration Benefits
+
+While basic search requires no account, registering gives you:
+
+Batch searching capabilities
+
+Access to the opt-out registry
+
+Notifications if new matches are found (in supported regions)
+
+What It Finds — and What It Misses
+
+Strengths
+
+Widely-shared images are well-covered. If your work has been posted on DeviantArt, ArtStation, Flickr, personal portfolios, or stock image sites, there is a reasonable chance LAION-5B scraped it. In our testing with 20 images from a professional illustrator's portfolio, 14 appeared in the dataset — a 70% hit rate for work that had been publicly posted since 2015.
+
+Text search by artist name works surprisingly well. Searching for moderately well-known artists by name returned relevant results in most cases, thanks to the text captions associated with scraped images.
+
+The similarity scoring is useful. Results above 90% similarity almost always represented the actual image or a very close crop/resize. Below 70%, results were usually "stylistically similar" rather than actual matches.
+
+Limitations
+
+This is where honesty matters. Have I Been Trained? has significant blind spots:
+
+1. It only searches LAION-5B. This is the biggest limitation. LAION-5B is just one dataset. It does not include:
+
+Proprietary datasets used by Midjourney (which has never disclosed its training data)
+
+OpenAI's training data for DALL-E 2/3
+
+Google's datasets for Imagen
+
+Datasets used by newer models released after LAION-5B was compiled
+
+If your image was used to train Midjourney but was not in LAION-5B, this tool will not find it. There is currently no public tool that can search Midjourney's or OpenAI's proprietary training data.
+
+2. LAION-5B itself is a snapshot in time. The dataset was compiled primarily from Common Crawl data between 2021 and 2022. Images posted to the web after that scraping window are not included, even if they were later scraped for other training datasets.
+
+3. Metadata gaps. Many images in LAION-5B have poor or inaccurate text captions. If the original website did not include your name or a meaningful description alongside the image, text-based searches may miss it even if the image is present.
+
+4. No detection of derivative use. If a model was trained on your art and someone generated a derivative image in your style, this tool cannot trace that connection. It only searches for the presence of original images in the dataset.
+
+The "Do Not Train" Registry: Does It Work?
+
+Spawning's most ambitious feature is the opt-out registry — a centralized list where artists can declare that their work should not be used for AI training. As of 2026, the registry has over 80 million entries.
+
+Who Honors It?
+
+Spawning has secured commitments from several organizations:
+
+Stability AI (partially, for newer model versions)
+
+Hugging Face (as a hosting platform, enforces opt-out for models on their platform)
+
+Some academic researchers (per their institutional ethics policies)
+
+Who Does Not?
+
+Midjourney — No public commitment to honor the registry
+
+OpenAI — No formal agreement (though they have their own takedown process)
+
+Most open-source model trainers — No enforcement mechanism
+
+The uncomfortable truth is that the "Do Not Train" registry is a consent signal, not an enforcement mechanism. It works only when model trainers choose to respect it. This is a real limitation, but it is also the best centralized opt-out system that exists today.
+
+Privacy Considerations
+
+Using Have I Been Trained? involves uploading images to Spawning's servers for CLIP processing. The company states that uploaded images are not stored permanently and are used only for the search query. Their privacy policy is transparent on this point.
+
+However, if you are uploading sensitive or unpublished work, be aware that you are transmitting it over the internet to a third-party server. For most artists checking published portfolio work, this is not a concern. For unreleased work, consider whether the search is worth the exposure.
+
+Alternatives and Complementary Tools
+
+Have I Been Trained? is a search and detection tool. It tells you whether your images are in a specific dataset. For artists who want to go further — actively protecting their work from AI training — several complementary tools exist:
+
+Glaze (University of Chicago)
+
+What it does: Applies imperceptible perturbations to your images that disrupt AI style-learning. A "glazed" image looks identical to humans but confuses AI models attempting to learn your artistic style.
+
+Strengths: Effective against current style-mimicry attacks. Free and open-source. Works as a pre-upload step.
+
+Limitations: Only protects future uploads — cannot retroactively protect images already in training datasets. Perturbations may be stripped by aggressive preprocessing. Adds processing time to your workflow.
+
+Best for: Artists who regularly post new work online and want proactive style protection.
+
+Nightshade (University of Chicago)
+
+What it does: Goes further than Glaze by actively "poisoning" training data. Nightshade-treated images contain adversarial perturbations that cause models trained on them to learn incorrect associations (e.g., a dog image that makes the model think dogs look like cats).
+
+Strengths: Potentially disruptive to unauthorized training at scale. If enough artists use it, it raises the cost and risk of scraping without permission.
+
+Limitations: Requires widespread adoption to be effective. Individual use has minimal impact. May be neutralized by future preprocessing techniques. Ethical debates about whether poisoning training data is appropriate.
+
+Best for: Artists who want to take an aggressive stance and are part of a community coordinating opt-out efforts.
+
+Kudurru (Spawning AI)
+
+What it does: A server-side tool for websites that detects and blocks AI training scrapers in real-time. Named after Babylonian boundary stones, it acts as a firewall between your hosted images and AI data collectors.
+
+Strengths: Works at the infrastructure level — no need to modify individual images. Can detect known AI scraping user agents and behaviors. Complementary to robots.txt (which scrapers often ignore).
+
+Limitations: Requires server-level installation — not usable by individual artists on third-party platforms (e.g., you cannot install Kudurru on Instagram). Only useful if you host your own portfolio.
+
+Best for: Artists and organizations running their own websites who want to prevent future scraping.
+
+Comparison Table
+
+Tool
+Type
+Cost
+Protects Existing Work?
+Protects Future Work?
+
+Have I Been Trained?
+Detection/Search
+Free
+Detection only
+Via opt-out registry
+
+Glaze
+Style cloaking
+Free
+No
+Yes
+
+Nightshade
+Data poisoning
+Free
+No
+Yes
+
+Kudurru
+Scraper blocking
+Free (open-source)
+No
+Yes (own site only)
+
+The Bigger Picture: AI Training and Artist Rights in 2026
+
+Have I Been Trained? exists because of a fundamental tension in the AI industry: the models that generate images were trained on billions of images scraped from the internet, overwhelmingly without explicit consent from the creators.
+
+Since the tool launched, the legal landscape has shifted significantly:
+
+Multiple class-action lawsuits against AI companies are proceeding through courts in the US, UK, and EU.
+
+The EU AI Act requires training data transparency for high-risk AI systems, though enforcement is still developing.
+
+Some model trainers have begun licensing datasets or using opt-in systems, though this remains the exception rather than the rule.
+
+Have I Been Trained? does not solve the underlying problem — but it gives individual artists something they previously lacked: evidence. Knowing that your work is in a training dataset is the first step toward any form of recourse, whether legal, social, or technical.
+
+Verdict: Should You Use It?
+
+Yes, unequivocally. If you are an artist, illustrator, photographer, or any visual creator who has published work online, you should search Have I Been Trained? at least once. It is free, it takes minutes, and the information it provides is valuable regardless of what you choose to do with it.
+
+What to do with the results:
+
+If you find your work: Register for the opt-out registry. Consider filing formal objections with model trainers. Document your findings (screenshots) in case they become relevant to legal proceedings.
+
+If you don't find your work: This does not mean your images were not used — only that they are not in LAION-5B specifically. Remain vigilant.
+
+Regardless of results: Consider using Glaze on future uploads as a precaution.
+
+Rating Breakdown
+
+Aspect
+Score
+
+Ease of Use
+9/10
+
+Search Accuracy
+7/10
+
+Dataset Coverage
+5/10
+
+Opt-Out Effectiveness
+6/10
+
+Overall Value (for a free tool)
+8/10
+
+The tool deserves credit for what it accomplishes within real technical constraints. It cannot search every training dataset in existence — no tool can — but it provides genuine, actionable transparency into the single most influential open training dataset in AI art history.
+
+For artists navigating the complex and often frustrating intersection of their work and AI, Have I Been Trained? is the best starting point available.
+
+Last updated: March 2026. Features and dataset coverage verified at time of publication.
+
+Quick Takeaways
+
+The tool searches LAION-5B (5.8 billion image-text pairs) using CLIP-based semantic similarity — not an exact pixel match.
+
+It is completely free and requires no account to use basic search.
+
+Results are strong for widely-shared images but the tool cannot search proprietary or closed training datasets (e.g., Midjourney, DALL-E 3).
+
+Spawning's "Do Not Train" registry lets artists opt out, but compliance is voluntary — only some model trainers honor it.
+
+For active protection, pair it with Glaze (style cloaking) or Nightshade (poison pill approach).
+
+Despite limitations, Have I Been Trained remains the single best starting point for any artist investigating AI use of their work.
+
+Subscribe to ToolCenter Newsletter
+
+Get the latest AI tool rankings, content templates, and growth experiments delivered every Friday.
+Subscribe
+
+Contents
+
+What Is Have I Been Trained?
+
+How It Works: The Technical Side
+
+CLIP-Based Semantic Search
+
+What This Means in Practice
+
+Using the Tool: A Walkthrough
+
+Step 1: Choose Your Search Method
+
+Step 2: Review Results
+
+Step 3: Flag or Opt Out
+
+Registration Benefits
+
+What It Finds — and What It Misses
+
+Strengths
+
+Limitations
+
+The "Do Not Train" Registry: Does It Work?
+
+Who Honors It?
+
+Who Does Not?
+
+Privacy Considerations
+
+Alternatives and Complementary Tools
+
+Glaze (University of Chicago)
+
+Nightshade (University of Chicago)
+
+Kudurru (Spawning AI)
+
+Comparison Table
+
+The Bigger Picture: AI Training and Artist Rights in 2026
+
+Verdict: Should You Use It?
+
+Rating Breakdown
+
+Key Metrics
+
+5.8B+
+
+Images Indexed
+
+Free
+
+Price
+
+March 2026
+
+Data Freshness
+
+Pro Insight
+“The tool searches LAION-5B (5.8 billion image-text pairs) using CLIP-based semantic similarity — not an exact pixel match.”
+
+★
+
+Related Reading
+
+小羊Plus深度评测：国内用户开通ChatGPT Plus/Pro，哪些优势值得关注？
+
+6 分钟
+
+MotionSites Review 2026: Are These AI Website Prompts Worth It?
+
+8 min
+
+FateTell Review 2026: Is This AI BaZi Astrology Platform Worth It?
+
+9 min
+
+Next in Deep Dives
+
+Continue your journey
+
+View All
+
+小羊Plus深度评测：国内用户开通ChatGPT Plus/Pro，哪些优势值得关注？
+
+Review
+
+小羊Plus深度评测：国内用户开通ChatGPT Plus/Pro，哪些优势值得关注？
+
+对于国内用户来说，想用好 ChatGPT，除了模型本身，订阅时的付款方式、账号操作和售后服务同样重要。小羊Plus是一家面向国内用户的独立第三方 AI 会员服务平台，提供 ChatGPT Plus、Pro 等订阅服务，同时覆盖 Claude、Gemini、Grok、Codex 等 AI 产品。 
+
+MotionSites Review 2026: Are These AI Website Prompts Worth It?
+
+Review
+
+MotionSites Review 2026: Are These AI Website Prompts Worth It?
+
+MotionSites is a library of ready-made prompts for building beautiful, animated landing pages and hero sections in AI builders like Lovable, Bolt, Cursor, and Claude.
+
+FateTell Review 2026: Is This AI BaZi Astrology Platform Worth It?
+
+Review
+
+FateTell Review 2026: Is This AI BaZi Astrology Platform Worth It?
+
+FateTell is an AI-powered BaZi (Four Pillars) platform that calculates Chinese astrology charts mathematically first, then interprets them with expert systems and human reviewers.
+
+🛠
+
+ToolCenter
+
+AI Tools Directory · Updated Daily
+
+A curated directory of the best AI tools across creation, development, and productivity — find the right one, faster.
+
+Featured Content
+
+Best AI Productivity Tools
+
+Best AI Image Generators
+
+AI Tool Rankings
+
+AI Model Rankings
+
+LLM Leaderboard (Monthly)
+
+Quick Links
+
+Submit Tool
+
+Articles
+
+Categories
+
+Subscribe to ToolCenter Weekly
+
+Get AI tools, use cases, ranking notes, and product updates
+
+Subscribe
+Free subscription, unsubscribe anytime
+
+© 2026 ToolCenter. All rights reserved.Updated daily
+
+About UsContactEditorial GuidelinesPrivacy PolicyTerms of ServiceSitemap
+
+Featured on
+
+TOOLCENTER

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Source.Plus</title>
+  <meta name="description" content="Search, curate, and enrich media collections for AI training using the Source.Plus marketplace. Safe, consenting, high-quality training data. Public domain datasets for model fine-tuning." />
+
+  <!-- Open Graph (optional, safe to leave) -->
+  <meta property="og:title" content="Source.Plus" />
+  <meta property="og:description" content="Search, curate, and enrich media collections for AI training using the Source.Plus marketplace. Safe, consenting, high-quality training data. Public domain datasets for model fine-tuning." />
+
+  <style>
+    /* --- Reset-ish --- */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+
+    /* --- Palette & Typography --- */
+    :root{
+      --bg: #f7f5f2;       /* warm off-white */
+      --ink: #1a1a1a;      /* near-black text */
+      --muted: #9a938a;    /* quiet secondary */
+      --line: #e4dfda;     /* hairline rule */
+      --accent: #cfc8bf;   /* subtle accent for mark */
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+	--bg: #141414;
+	--ink: #f2f2f2;
+	--muted: #bdb7af;
+	--line: #2a2a2a;
+	--accent: #3a3a3a;
+      }
+    }
+
+    body{
+      background: var(--bg);
+      color: var(--ink);
+      font-family:
+	"Iowan Old Style","Palatino Linotype","Palatino","Book Antiqua",Georgia,serif;
+      letter-spacing: 0.01em;
+      line-height: 1.6;
+      display: grid;
+      place-items: center;
+      padding: 6vh 4vw;
+    }
+
+    /* --- Card --- */
+    .wrap{
+      max-width: 720px;
+      width: 100%;
+      background: transparent;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: clamp(24px, 5vw, 48px);
+      box-shadow:
+	0 1px 0 rgba(0,0,0,0.03),
+	0 8px 24px rgba(0,0,0,0.03);
+    }
+
+    /* --- Wordmark / Header --- */
+    .mark{
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #fff0, #fff0), var(--bg);
+      outline: 8px solid transparent; /* optical breathing room */
+      font-variant: small-caps;
+      font-size: 0.875rem;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+    }
+
+    h1{
+      margin: 18px 0 8px 0;
+      font-weight: 400;
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+    }
+
+    .sub{
+      color: var(--muted);
+      font-size: clamp(14px, 1.6vw, 16px);
+      margin: 0 0 22px 0;
+    }
+
+    hr{
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 26px 0;
+    }
+
+    /* --- Body copy --- */
+    p{
+      margin: 0 0 12px 0;
+      font-size: clamp(15px, 1.7vw, 17px);
+    }
+
+    /* --- Footer bits --- */
+    .meta{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .dot{
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--muted);
+      opacity: 0.6;
+    }
+
+    /* --- Link styling --- */
+    a{
+      color: inherit;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+    a:hover{ opacity: 0.8; }
+
+    /* --- Subtle entrance --- */
+    .wrap{ opacity: 0; transform: translateY(6px); animation: fadeIn 600ms ease-out forwards; }
+    @keyframes fadeIn{
+      to{ opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="title">
+    <!-- Replace “Studio Name” with your brand -->
+    <span class="mark" aria-label="Studio mark">Spawning</span>
+
+    <h1 id="title">Under Maintenance</h1>
+    <p class="sub">Hacking the mainframe...</p>
+  </main>
+
+  <!-- Pure HTML only; this tiny inline script-free year fallback keeps it static.
+       If you prefer full static text, just replace the year in the markup above. -->
+  <!-- (No JavaScript used) -->
+</body>
+</html>

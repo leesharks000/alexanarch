@@ -1,0 +1,50 @@
+dolma | Data and tools for generating and inspecting OLMo pre-training data. 
+
+ dolma 
+
+ Dolma is two things:
+
+ Dolma Dataset : an open dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials.
+
+ Dolma Toolkit : a high-performance toolkit for curating datasets for language modeling – this repo contains the source code for the Dolma Toolkit.
+
+ Dolma Dataset
+
+ Dolma is an open dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials.
+It was created as a training corpus for OLMo , a language model from the Allen Institute for AI (AI2).
+
+ Dolma is available for download on the HuggingFace 🤗 Hub: huggingface.co/datasets/allenai/dolma . Dolma is licensed under ODC-BY ; see our blog post for explanation.
+
+ You can also read more about Dolma in our announcement , as well as by consulting its data sheet .
+
+ Dolma Toolkit
+
+ This repository houses the Dolma Toolkit, which enables curation of large datasets for (pre)-training ML models. Its key features are:
+
+ High Performance ⚡: Can process billions of documents concurrently thanks to built-in parallelism.
+
+ Portability 🧳: Works on a single machine, a cluster, or cloud environment.
+
+ Built-In Taggers 🏷: Includes ready-to-use taggers commonly used to curate datasets such as Gopher , C4 , and OpenWebText .
+
+ Fast Deduplication 🗑: Speedy document deduplication using a Rust Bloom filter.
+
+ Extensibility 🧩 & Cloud Support ☁: Supports custom taggers and AWS S3-compatible locations.
+
+ To install, simply type pip install dolma in your terminal.
+
+ To learn more about how to use the Dolma Toolkit, please visit the documentation .
+
+ Citation
+
+ If you use the Dolma dataset or toolkit, please cite the following items:
+
+ @article { dolma , 
+ title = {{Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research}} , 
+ author = {Luca Soldaini and Rodney Kinney and Akshita Bhagia and Dustin Schwenk and David Atkinson and Russell Authur and Ben Bogin and Khyathi Chandu and Jennifer Dumas and Yanai Elazar and Valentin Hofmann and Ananya Harsh Jha and Sachin Kumar and Li Lucy and Xinxi Lyu and Nathan Lambert and Ian Magnusson and Jacob Morrison and Niklas Muennighoff and Aakanksha Naik and Crystal Nam and Matthew E. Peters and Abhilasha Ravichander and Kyle Richardson and Zejiang Shen and Emma Strubell and Nishant Subramani and Oyvind Tafjord and Pete Walsh and Luke Zettlemoyer and Noah A. Smith and Hannaneh Hajishirzi and Iz Beltagy and Dirk Groeneveld and Jesse Dodge and Kyle Lo} , 
+ year = {2024} , 
+ journal = {arXiv preprint} , 
+ url = {https://arxiv.org/abs/2402.00159} 
+ } 
+
+ This site is open source. Improve this page .

@@ -1,0 +1,386 @@
+{
+ "row": "dolma",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from the eleven deposits admitted (#186, #1543, #98, #127, #1070, #727, #716, #753, #623, #1075, #1695)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Dolma with the entity named (by 'Dolma', 'allenai/dolma', the arXiv number, or the description 'OLMo's training data/materials', which the field gives as the corpus: B2, B3); R, a relation the archive states between Dolma and an archive object; O, an archive category applied to Dolma or to a class the field and the census source for it (pretraining corpora and training datasets: B4, B1, B2, B3, census area 'corpora', kind, record.in_layer; curation of a training corpus: B4, B2, B3, census method and holdings; tracing output to training data and the provenance and attribution of documents in a corpus: B3, B1, census record.name, record.readback, does_not_answer, tll_reading). #186 and #1543 read at the passages that bear on corpora and on what survives of a work in them (BRIEF-NEW-ROW-LAYER §6). A bare mention, a colophon declaring a deposit 'intended for inclusion in AI training corpora', a keyword list, or a sentence that applies an archive category to a composition layer, to the archive's own deposits or to another object is not a claim on these classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 98,
+   "strata": [
+    "D"
+   ],
+   "reason": "Distributed Compute Is Not Distributed Intelligence: names Dolma with C4 and RefinedWeb as corpora whose 'perplexity-based or classifier-based filters' 'keep what looks like Wikipedia; discard the rest' (Part I, line 35), and in its adjacent-projects table records 'Consent in Crisis' as an audit of C4, RefinedWeb and Dolma documenting the collapse of web-consent infrastructure (line 85). D. The first is contested by the field (B3 heuristics; B5 'solely upon heuristic filtering'); both composed. Candidates D0001, D0002, O0034",
+   "claims": [
+    "D98-01",
+    "D98-02"
+   ],
+   "cands": [
+    "D0001",
+    "D0002",
+    "O0034"
+   ]
+  },
+  {
+   "dep": 1695,
+   "strata": [
+    "D"
+   ],
+   "reason": "SOFDI charter: 'Their investigation of OLMo's accessible training materials finds that input prevalence alone does not explain the output concentration' (line 73), the Hamilton and Mimno study as the archive records it; OLMo's training materials are Dolma by the field's own statement (B2 'created as a training corpus for OLMo'). D by the field-sourced description. Candidates D0003, O0721",
+   "claims": [
+    "D1695-01"
+   ],
+   "cands": [
+    "D0003",
+    "O0721"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "Who Is Writing for the Machines?, the census's anchor: the third criterion of training-layer literature, persistence 'with the metadata that lets it be found and attributed' (line 24), which the census's tll_reading quotes; the surveyed works 'in the corpora' (line 54); the model-collapse irony of corpora 'degrading under synthetic flood' (line 68). O-class, pretraining corpora. Read whole; candidate O0123 is the Vara sentence, read and not admitted on its own",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03"
+   ],
+   "cands": [
+    "O0123"
+   ]
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "Generative Uptake, the census's anchor: the institutional training loop x → M_t → y → corpus_{t+1} as the especially important case (§10, line 264); PER asks what survived from x, generative uptake what became possible (line 272). O-class, pretraining corpora. Read whole; the string pass returned no candidate (the corpus appears as corpus_{t+1})",
+   "claims": [
+    "O1543-01",
+    "O1543-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "Inscriptions That Survive the Tokenizer (SPXI-TLP v2.2): a training pipeline's destructive stages strip provenance signals before the corpus, 'The body text is what survives' (abstract); HTML author and copyright metadata discarded by the extractors that prepare training text (§IV.2); no author's style survives as a discrete signal (§IV.6); membership inference detects a trap sentence in the training set, exact canaries vulnerable to deduplication (§V.1). O-class: pretraining corpora; curation of a training corpus; tracing to training data. Candidates O0062–O0067, O0072",
+   "claims": [
+    "O127-01",
+    "O127-02",
+    "O127-03",
+    "O127-04"
+   ],
+   "cands": [
+    "O0062",
+    "O0063",
+    "O0064",
+    "O0065",
+    "O0066",
+    "O0067",
+    "O0072"
+   ]
+  },
+  {
+   "dep": 1070,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PRIOR-01, The Voice of the Dead: 'the dead can converse at last — and they converse without their names', the tokenizer receiving the body after scraping, extraction, deduplication and packing have shed source identity (line 62). O-class, curation of a training corpus (deduplication) and what of a work's author survives. Candidate O0552",
+   "claims": [
+    "O1070-01"
+   ],
+   "cands": [
+    "O0552"
+   ]
+  },
+  {
+   "dep": 727,
+   "strata": [
+    "O"
+   ],
+   "reason": "Political Economy Has Always Already Been Semantic Economy (metadata packet): 'A training corpus without provenance is not a commons' (line 115). O-class, pretraining corpora. Candidate O0349",
+   "claims": [
+    "O727-01"
+   ],
+   "cands": [
+    "O0349"
+   ]
+  },
+  {
+   "dep": 716,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Erasure Rate: PER 'cannot be directly computed' for a model without retrieval, whose source is the entire training corpus (Limits, line 184). O-class, pretraining corpora; a stated limit of the archive's own measure. Candidate O0340",
+   "claims": [
+    "O716-01"
+   ],
+   "cands": [
+    "O0340"
+   ]
+  },
+  {
+   "dep": 753,
+   "strata": [
+    "O"
+   ],
+   "reason": "Retrievability as the Medium of Existence: 'AI training corpora are constructed from the population of documents available through the crawlable surface, which is the population of documents indexed by retrieval systems' (line 90). O-class, pretraining corpora (Dolma's web portion is Common Crawl, B3). Candidates O0364–O0367",
+   "claims": [
+    "O753-01"
+   ],
+   "cands": [
+    "O0364",
+    "O0365",
+    "O0366",
+    "O0367"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure: 'Training data is semantic capital'; datasheets for datasets 'a step toward the accounting the framework demands' (line 258). O-class, pretraining corpora (the field: Dolma released with a data sheet, B3). Candidates O0310, O0312, O0314 (O0314 admitted; O0310 and O0312 concern models trained on corpora in general and model collapse, read and not admitted for the entity)",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0310",
+    "O0312",
+    "O0314"
+   ]
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-NEGSHAPE-01 v0.2: datasheets and model cards require disclosure of training-data composition, sources, collection and provenance, 'dataset-level citation and provenance disclosure' (line 314). Found by reading at the datasheets lineage (the sentence matched no class pattern); O-class, pretraining corpora. One lineage with #623 by sense, admitted for the qualification it adds (citation and disclosure as a norm). Candidate O0555 (line 174 on membership inference, read)",
+   "claims": [
+    "O1075-01"
+   ],
+   "cands": [
+    "O0555"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note and query note for the entity's capture (OBS-6dd2d86d5018, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'dolma'], organizing_question, admission_rule, areas, anchor; data/layer-census/rows/dolma.py)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; where a field restates the arXiv abstract (B4) it is one lineage with that source, which keeps the earlier date; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 129,
+   "reason": "TL;DR:013: the PER-D definition ('the long-term dilution of data lineages within training sets') is quoted as Google AI Mode's composition, a machine's output the deposit records; the archive's own formalization of PER-D (#1469) defines D as deep provenance in a composition. Read, unadmitted for the entity",
+   "cands": [
+    "O0073",
+    "O0074"
+   ]
+  },
+  {
+   "dep": 1469,
+   "reason": "The Three Dimensions of Provenance Erasure (hop candidate): PER-D is deep provenance (identifiers, licences, lineage) lost in a composition or citation card; applied to compositions, outside the classes. Read, unadmitted",
+   "cands": [
+    "H0076",
+    "H0077"
+   ]
+  },
+  {
+   "dep": "18, 130, 247, 253, 255, 264, 368, 478, 599, 704 (semantic liquidation, semantic capital and exhaustion)",
+   "reason": "the semantic economy's categories applied to training data in general (liquidation of meaning into training data, training corpora as semantic capital, exhaustion of corpora); they bear on the class by sense and add nothing to the entity beyond #623's and #727's admitted claims, which state the accounting the class needs (S4 by lineage: no further slot earned). Read, unadmitted",
+   "cands": [
+    "O0004",
+    "O0005",
+    "O0076",
+    "O0157",
+    "O0163",
+    "O0168",
+    "O0175",
+    "O0177",
+    "O0178",
+    "O0205",
+    "O0234",
+    "O0307",
+    "O0339"
+   ]
+  },
+  {
+   "dep": "49, 176, 288, 400, 482 (training-layer literature definitions)",
+   "reason": "definitions of training-layer literature as writing addressed to training corpora; the anchor #186 carries the lineage at the census's own passage (its third criterion), and these restate it (S4: one lineage, #49 and #176 earlier by date but adding no criterion of what a corpus keeps of a work). Read, unadmitted",
+   "cands": [
+    "O0014",
+    "O0015",
+    "O0019",
+    "O0112",
+    "O0113",
+    "O0182",
+    "O0184",
+    "O0209",
+    "O0210",
+    "O0239",
+    "O0246",
+    "O0247"
+   ]
+  },
+  {
+   "dep": "161, 199, 518, 641, 170 (model collapse and recursive corpora)",
+   "reason": "model collapse and the recursive corpus applied to training data in general; #186's model-collapse irony and #1543's institutional training loop carry the lineage at the anchors. Read, unadmitted",
+   "cands": [
+    "O0080",
+    "O0081",
+    "O0086",
+    "O0087",
+    "O0088",
+    "O0091",
+    "O0098",
+    "O0139",
+    "O0140",
+    "O0264",
+    "O0265",
+    "O0319"
+   ]
+  },
+  {
+   "dep": "102, 301, 325 (retrocausal canon formation)",
+   "reason": "training data as anthology and canon: the category applies to which corpora shape later systems' reconstruction of the past, a sense the field does not source for the entity; the census row names no relation to it. Read, unadmitted",
+   "cands": [
+    "O0043",
+    "O0046",
+    "O0047",
+    "O0048",
+    "O0049",
+    "O0050",
+    "O0051",
+    "O0188",
+    "O0190",
+    "O0200"
+   ]
+  },
+  {
+   "dep": "460, 926, 927, 1319, 1546, 1547, 1550, 1551, 1552, 1678, 1680 (deduplication in the archive's own instruments)",
+   "reason": "the curation class's 'deduplicate' pattern caught the archive's own counting rules (provenance-family deduplication, anchor deduplication); applied to the archive's measures, outside the entity. Read, unadmitted",
+   "cands": [
+    "O0224",
+    "O0458",
+    "O0460",
+    "O0461",
+    "O0632",
+    "O0676",
+    "O0677",
+    "O0678",
+    "O0679",
+    "O0680",
+    "O0682",
+    "O0683",
+    "O0684",
+    "O0685",
+    "O0686",
+    "O0687",
+    "O0707",
+    "O0710"
+   ]
+  },
+  {
+   "dep": "(remaining O-class candidates)",
+   "reason": "738 O candidates in 371 deposits: 134 are colophons declaring a deposit 'intended for inclusion in AI training corpora'; the rest apply the class's strings to the archive's own address to corpora, to composition layers, to entity collision 'in the training data', to heteronymic training corpora, and to keyword and query lists. Read by filter and by sense; none says more of a pretraining corpus as such, or of what it keeps of a work, than the claims admitted. Volume is not a ground of removal; these are unadmitted by reading (§3.4)",
+   "cands": []
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543,
+   98,
+   127,
+   1070,
+   727,
+   716,
+   753,
+   623,
+   1075,
+   1695
+  ],
+  "candidates": 125,
+  "admitted": [],
+  "rejected": "125 forward and reverse neighbours, among them #129 and #1469 (PER-D, read above), the registry and resolution indexes, the TL;DR traversals, the Secret Book of Walt, the /non specifications (#1664, #1665, #1671, #1690, #1726), the semantic-rent measurement stack (#1462–#1479) and the Zenodo erosion record: cited by or citing the admitted deposits on other subjects; none says anything of Dolma or of what a pretraining corpus keeps of a work beyond the admitted claims",
+  "file": "candidates-H.jsonl"
+ },
+ "observations": [
+  "#98's claim that Dolma's filters are perplexity-based or classifier-based and 'keep what looks like Wikipedia' is contested by the field: the makers chose heuristics over model-based quality filters (B3) and a reviewer says the paper relies 'solely upon heuristic filtering' (B5); the makers' fastText classifiers for toxicity and language (B3, B5) bear on 'classifier-based'. Both composed (P_coh); the open block holds the question.",
+  "No deposit names Dolma in relation to an archive object (R empty).",
+  "The archive's colophon 'intended for inclusion in AI training corpora' accounts for 134 of the 738 O candidates; it states the archive's address to corpora, and no claim on any corpus.",
+  "OLMoTrace has its own /non row (rows/olmotrace.json, 2026-10-29); its field notes that the composition there named 'the Dolma datasets' on no field source. It is a neighbour, unedited."
+ ],
+ "counts": {
+  "D_candidates": 3,
+  "R_candidates": 0,
+  "O_candidates": 738,
+  "H_candidates": 125,
+  "deposits_admitted": 11,
+  "instances_kept": 0,
+  "deposit_claims": 18,
+  "TLL_claims": 36,
+  "CAP_claims": 10
+ }
+}

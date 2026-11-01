@@ -1,0 +1,1535 @@
+{
+ "row": "dolma",
+ "address": "Dolma dataset",
+ "addresses": [
+  "Dolma dataset"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw HTML for one figure's alt text (B3), the Wikipedia wikitext or rendered text",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools, kept apart by origin. B_D, the disclosed pool, 'card': B1 the Hugging Face dataset card (also the census's own page dolma--card); B2 the GitHub Pages site of the dataset and toolkit; B3 Ai2's announcement of 18 August 2023; B4 the arXiv abstract page (also the census's own page dolma--paper); B5 Cameron R. Wolfe's Deep (Learning) Focus overview (2024-02-20); B6 the ACL Anthology record. B_R, the reference pool, 'wikipedia': B7 the article on Ai2 at its Dolma passage; B8 the disambiguation page, the record that Wikipedia has no article on the corpus. A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/dolma-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped as the census's fetch.py does; B7.wiki and B8.wiki raw wikitext; B1-census.* and B4-census.* the census's saved copies; W-*.wiki the Wikipedia absence record; T1-dolma-dataset-aio-20261101.txt the registry transcript; fetch.log; goto-resolved.txt)",
+ "counts": {
+  "sources": 8,
+  "B_D": 6,
+  "B_R": 2,
+  "fetched": 8,
+  "unreachable": 0,
+  "claims": 58,
+  "claims_B_D": 54,
+  "claims_B_R": 4,
+  "quotes_ok": 58
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "Hugging Face — allenai/dolma · Datasets at Hugging Face",
+   "fetched": "card and own page; B1.html sha256 ba6f8001031a5e0d, HTTP 200 at 2026-11-01T15:13:22Z; the census's copy (dolma--card) HTTP 429 at 2026-11-01T04:07:51Z, unread",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "GitHub Pages documentation — dolma | Data and tools for generating and inspecting OLMo pre-training data.",
+   "fetched": "card; B2.html sha256 9b7b9191b66c1ae1, HTTP 200 at 2026-11-01T15:13:22Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Allen Institute for Artificial Intelligence — Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2",
+   "fetched": "card; B3.html sha256 3ca32b1bc011de1c, HTTP 200 at 2026-11-01T15:13:23Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "arXiv — [2402.00159] Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+   "fetched": "card and own page; B4.html sha256 1203d77da94d4612, HTTP 200 at 2026-11-01T15:13:23Z; byte-identical to the census's saved copy (dolma--paper)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Deep (Learning) Focus — Dolma, OLMo, and the Future of Open-Source LLMs",
+   "fetched": "card; B5.html sha256 e46900187043f428, HTTP 200 at 2026-11-01T15:13:24Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "ACL Anthology — Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research - ACL Anthology",
+   "fetched": "card; B6.html sha256 08bbcf3ad027b9f6, HTTP 200 at 2026-11-01T15:13:24Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "Wikipedia — Allen Institute for AI (the passage on Dolma)",
+   "fetched": "wikipedia; B7.html sha256 b7669180cb210683, HTTP 200 at 2026-11-01T15:15:19Z; wikitext HTTP 200 (sha256 87b14f4b9a1f79c8); no article for Dolma (Dolma_(dataset) 404, Dolma_(corpus) 429 twice)",
+   "origin": "wikipedia",
+   "pool": "B_R"
+  },
+  {
+   "id": "B8",
+   "card": "Wikipedia — Dolma (disambiguation) (the record of absence)",
+   "fetched": "wikipedia; B8.wiki sha256 68d67621337c934a, HTTP 200 at 2026-11-01T15:14:03Z; the record of the name's senses on Wikipedia, none the corpus",
+   "origin": "wikipedia",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6"
+  ],
+  "own_pages": [
+   "B1",
+   "B4"
+  ],
+  "own_pages_note": "the census's two own pages, dolma--card (https://huggingface.co/datasets/allenai/dolma) and dolma--paper (https://arxiv.org/abs/2402.00159), are cards 1 and 4: carried once, as cards, in B_D. The census read dolma--card as HTTP 429; this row's fetch returned it whole (HTTP 200).",
+  "body_named": [],
+  "body_named_note": "T's inline links each resolve to a card (goto-resolved.txt)",
+  "wikipedia": [
+   "B7",
+   "B8"
+  ],
+  "census_third_party": [],
+  "unreachable": [],
+  "title_only": [],
+  "wikipedia_state": "no article: 'Dolma_(dataset)' raw wikitext HTTP 404 (2026-11-01T15:13:31Z); 'Dolma_(corpus)' HTTP 429 twice (15:13:32Z, 15:14:29Z; Wikimedia rate limit, recorded unread, not retried further); 'Dolma' is the article on the dish (HTTP 200, a homonym); 'Dolma (disambiguation)' (B8, HTTP 200) lists the dish, thirteen people and a 2012 Tibetan film, no dataset. The corpus is stated in the article 'Allen Institute for AI' (B7, last edited 13 October 2026), Olmo model family section. Both are B_R; neither was surfaced by T.",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+   ],
+   "B_R": [
+    "B7",
+    "B8"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail; every source T's body names is a card (T's six inline Google redirect links each resolve to a card URL: 'Allen Institute for Artificial Intelligence (Ai2)' to card 3, 'AllenAI Dolma on Hugging Face' to card 1, 'OLMo' to card 5, 'Dolma ACL Research Paper' to card 6, the markers to cards 1, 2 and 4), so no body-named source stands apart. The census's two own pages are cards 1 (dolma--card) and 4 (dolma--paper), carried once in B_D. B_R: the Wikipedia reference sources (B7, the Ai2 article at its Dolma passage; B8, the disambiguation page as the record of absence). The census read no third-party source for the row. T against L_F(B_D) uses B1–B6 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "also_origin": "own_page",
+    "pool": "B_D",
+    "role": "Overview card 1 (and the census's own page dolma--card: one page, carried once, in B_D)",
+    "card": "Hugging Face — allenai/dolma · Datasets at Hugging Face",
+    "url": "https://huggingface.co/datasets/allenai/dolma",
+    "kind": "Overview card (the dataset card on the Hugging Face Hub, under the allenai namespace); the census's own page dolma--card",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B1.html",
+      "sha256": "ba6f8001031a5e0df08cf736088e1985fdc52edc9bd270f534ce412065c7aedd"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B1.txt",
+      "sha256": "bd31e420de09639648bf5dfe543ed804f42f4a9a2fc4e11fafc87f89e1318852"
+     },
+     "B1-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B1-census.html",
+      "sha256": "967409f981642b7ce52d05e80b51fc1dd8dfcfa8cbbea9623106b2913ff7e467"
+     },
+     "B1-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B1-census.txt",
+      "sha256": "f56acaeffb2ad04bd6efb118c4a4443c271a2d891bd3e7e740beac86676c2930"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:22Z",
+     "http": 200,
+     "url": "https://huggingface.co/datasets/allenai/dolma",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B1.html",
+     "raw_sha256": "ba6f8001031a5e0df08cf736088e1985fdc52edc9bd270f534ce412065c7aedd",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B1.txt"
+     ],
+     "census_copy": {
+      "src": "dolma--card",
+      "http": "429",
+      "fetched": "2026-11-01T04:07:51Z",
+      "sha256": "967409f981642b7ce52d05e80b51fc1dd8dfcfa8cbbea9623106b2913ff7e467",
+      "agrees": "no: the census's fetch at 04:07:51Z was rate-limited (HTTP 429, 'We had to rate limit your IP'); this fetch at 15:13:22Z returned the card whole (HTTP 200)"
+     }
+    },
+    "names_operator": "yes ('Ai2' as the namespace's organization; 'our latest OLMo 7B-v1.7 model'; the BibTeX authors)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL from T's inline link 'AllenAI Dolma on Hugging Face' and card 1's title (resolved from T's inline Google redirect links, one request each with the census agent at 2026-11-01T15:13:11–13Z (HTTP 302; goto-resolved.txt)). The census's own page for the entity; the census read it as HTTP 429 and recorded it unread. The card carries the versions table, the v1.7 and v1.6 summary statistics, the download instructions, the licence and the models trained on the dataset.",
+    "surfaced_by_T": [
+     {
+      "slug": "dolma-dataset-aio-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "allenai/dolma · Datasets at Hugging Face",
+    "card_snippet": "Overview: AllenAI Dolma is an open corpus dataset containing 3 trillion tokens (version 1.7 utilizing 1.715 trillion actual training tokens) designed for langua..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 2",
+    "card": "GitHub Pages documentation — dolma | Data and tools for generating and inspecting OLMo pre-training data.",
+    "url": "https://allenai.github.io/dolma/",
+    "kind": "Overview card (the GitHub Pages site of the Dolma repository: the dataset and the Dolma Toolkit)",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B2.html",
+      "sha256": "9b7b9191b66c1ae1b7594ce6e3806ecd00384bf261f525a00594603034879822"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B2.txt",
+      "sha256": "1ceed892a982dccdf7e33bfcee7aabe4565edad005fbcaf84577499bd50bb14b"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:22Z",
+     "http": 200,
+     "url": "https://allenai.github.io/dolma/",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B2.html",
+     "raw_sha256": "9b7b9191b66c1ae1b7594ce6e3806ecd00384bf261f525a00594603034879822",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B2.txt"
+     ]
+    },
+    "names_operator": "yes ('a language model from the Allen Institute for AI (AI2)')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL resolved from T's second citation link (resolved from T's inline Google redirect links, one request each with the census agent at 2026-11-01T15:13:11–13Z (HTTP 302; goto-resolved.txt)); the page's <title> is the card's title verbatim.",
+    "surfaced_by_T": [
+     {
+      "slug": "dolma-dataset-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "dolma | Data and tools for generating and inspecting OLMo pre-training data.",
+    "card_snippet": "Dataset: Open 3-trillion-token corpus (web content, academic publications, code, books, encyclopedic materials) created as training data for OLMo by AI2; availa..."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3",
+    "card": "Allen Institute for Artificial Intelligence — Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2",
+    "url": "https://allenai.org/blog/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64",
+    "kind": "Overview card (Ai2's announcement of the first release, 18 August 2023, by Luca Soldaini)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B3.html",
+      "sha256": "3ca32b1bc011de1c60d337dc2b4e8f9e7c5a59ce1987697024be9c130fefe688"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B3.txt",
+      "sha256": "006aa43afa5bb83414023bf4eea4aec411706764f8e2ec255325992915f08172"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:23Z",
+     "http": 200,
+     "url": "https://allenai.org/blog/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B3.html",
+     "raw_sha256": "3ca32b1bc011de1c60d337dc2b4e8f9e7c5a59ce1987697024be9c130fefe688",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B3.txt"
+     ],
+     "note": "the overview figure's alt text (5,245 millions of documents, 5,334 GB, 3,084 billions of tokens) is in B3.html, an attribute stripped from B3.txt; its quote is checked against B3.html"
+    },
+    "names_operator": "yes ('we at the Allen Institute for AI'; '© The Allen Institute for Artificial Intelligence')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL resolved from T's inline link 'Allen Institute for Artificial Intelligence (Ai2)' (resolved from T's inline Google redirect links, one request each with the census agent at 2026-11-01T15:13:11–13Z (HTTP 302; goto-resolved.txt)); the page's title is card 3's verbatim. The card snippet's '5,245M documents, 5,334 GB' renders the overview figure's alt text.",
+    "surfaced_by_T": [
+     {
+      "slug": "dolma-dataset-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2",
+    "card_snippet": "Dataset: Dolma (3 trillion tokens, 5,245M documents, 5,334 GB) developed by Ai2 for OLMo pretraining. Sources: CommonCrawl, C4, peS2o, The Stack, Project Gutenb..."
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "also_origin": "own_page",
+    "pool": "B_D",
+    "role": "Overview card 4 (and the census's own page dolma--paper: one page, carried once, in B_D)",
+    "card": "arXiv — [2402.00159] Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+    "url": "https://arxiv.org/abs/2402.00159",
+    "kind": "Overview card (the paper's arXiv abstract page, v2); the census's own page dolma--paper",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B4.html",
+      "sha256": "1203d77da94d4612ee60d200ff18f63ce0f75d4100ef6ae5301d972d4f445946"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B4.txt",
+      "sha256": "81726256243b7fe6a3c735bc23f09effda44b7eb759e2d2cc3c2dd408b84dafc"
+     },
+     "B4-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B4-census.html",
+      "sha256": "1203d77da94d4612ee60d200ff18f63ce0f75d4100ef6ae5301d972d4f445946"
+     },
+     "B4-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B4-census.txt",
+      "sha256": "81726256243b7fe6a3c735bc23f09effda44b7eb759e2d2cc3c2dd408b84dafc"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:23Z",
+     "http": 200,
+     "url": "https://arxiv.org/abs/2402.00159",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B4.html",
+     "raw_sha256": "1203d77da94d4612ee60d200ff18f63ce0f75d4100ef6ae5301d972d4f445946",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B4.txt"
+     ],
+     "census_copy": {
+      "src": "dolma--paper",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:51Z",
+      "sha256": "1203d77da94d4612ee60d200ff18f63ce0f75d4100ef6ae5301d972d4f445946",
+      "agrees": "yes: byte-identical (same sha256)"
+     }
+    },
+    "names_operator": "authors only ('by Luca Soldaini and 35 other authors'); no institution",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL resolved from T's first citation link (resolved from T's inline Google redirect links, one request each with the census agent at 2026-11-01T15:13:11–13Z (HTTP 302; goto-resolved.txt)). The census's one read source for the row; the census's saved copy and this fetch are byte-identical.",
+    "surfaced_by_T": [
+     {
+      "slug": "dolma-dataset-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "[2402.00159] Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+    "card_snippet": "Overview: Dolma is an open-source, three-trillion-token English corpus designed for language model pretraining research, addressing the scarcity of publicly ava..."
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 5",
+    "card": "Deep (Learning) Focus — Dolma, OLMo, and the Future of Open-Source LLMs",
+    "url": "https://cameronrwolfe.substack.com/p/dolma-olmo-and-the-future-of-open",
+    "kind": "Overview card (Cameron R. Wolfe's newsletter overview of the Dolma and OLMo papers, posted 2024-02-20)",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B5.html",
+      "sha256": "e46900187043f42865f10f47653e6d23602463a8e31f0101e6cef4e31f55e7d5"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B5.txt",
+      "sha256": "ad92d43ad246e79f9e86e65ee3f05c0c849770534913ecefe3bbe0481d6e89c7"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:24Z",
+     "http": 200,
+     "url": "https://cameronrwolfe.substack.com/p/dolma-olmo-and-the-future-of-open",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B5.html",
+     "raw_sha256": "e46900187043f42865f10f47653e6d23602463a8e31f0101e6cef4e31f55e7d5",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B5.txt"
+     ],
+     "post_date": "2024-02-20T10:33:01.466Z (the page's post_date)"
+    },
+    "names_operator": "yes ('authors from AI2')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL resolved from T's citation link and from the inline link on 'OLMo' (the same redirect; resolved from T's inline Google redirect links, one request each with the census agent at 2026-11-01T15:13:11–13Z (HTTP 302; goto-resolved.txt)). A third-party account of the paper, attributed claims ('In [1], authors ...').",
+    "surfaced_by_T": [
+     {
+      "slug": "dolma-dataset-aio-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "Dolma, OLMo, and the Future of Open-Source LLMs",
+    "card_snippet": "Overview: Dolma (3T-token open pretraining corpus) and OLMo (fully open-source LLM suite) demystify language model development by openly releasing training data..."
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 6",
+    "card": "ACL Anthology — Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research - ACL Anthology",
+    "url": "https://aclanthology.org/2024.acl-long.840/",
+    "kind": "Overview card (the paper's ACL Anthology record: authors, abstract, proceedings, pages, award)",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B6.html",
+      "sha256": "08bbcf3ad027b9f6b3c0cb92827ac6dab74ab3f2f33758f567c658a60d3cabfc"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B6.txt",
+      "sha256": "781aa6ce3c0caa4af1bdf5e4a10cac8d64e487297104f44e9fb119773ef7f16f"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:24Z",
+     "http": 200,
+     "url": "https://aclanthology.org/2024.acl-long.840/",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B6.html",
+     "raw_sha256": "08bbcf3ad027b9f6b3c0cb92827ac6dab74ab3f2f33758f567c658a60d3cabfc",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B6.txt"
+     ]
+    },
+    "names_operator": "authors only (36 names); no institution",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL resolved from T's inline link 'Dolma ACL Research Paper' (resolved from T's inline Google redirect links, one request each with the census agent at 2026-11-01T15:13:11–13Z (HTTP 302; goto-resolved.txt)). Its abstract is the arXiv abstract word for word (one lineage, B4 the earlier, 31 January 2024).",
+    "surfaced_by_T": [
+     {
+      "slug": "dolma-dataset-aio-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research - ACL Anthology",
+    "card_snippet": "Resource: Dolma (ACL 2024 Best Resource Paper Award). Corpus: Open English dataset containing three trillion tokens for language model pretraining research. Con..."
+   },
+   {
+    "id": "B7",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "Wikipedia: Dolma has no article; the corpus is stated in the article on its maker, 'Allen Institute for AI', at the passage on the OLMo family. Not surfaced by T",
+    "card": "Wikipedia — Allen Institute for AI (the passage on Dolma)",
+    "url": "https://en.wikipedia.org/wiki/Allen_Institute_for_AI",
+    "kind": "Wikipedia article on Ai2, read at its Olmo model family section",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B7.html",
+      "sha256": "b7669180cb2106832182baf31da7dd62eee1554dfb3345db164af081782e61f9"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B7.txt",
+      "sha256": "3083e6a9400a1f4bd09452e257e147f9b907341d87bad76f6b00f15a0eeb660c"
+     },
+     "B7.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B7.wiki",
+      "sha256": "87b14f4b9a1f79c897d5662b7b56ce98ca992672a747a682624b2a3d1cb57321"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:15:19Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Allen_Institute_for_AI",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B7.html",
+     "raw_sha256": "b7669180cb2106832182baf31da7dd62eee1554dfb3345db164af081782e61f9",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B7.txt"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Allen_Institute_for_AI&action=raw",
+      "http": 200,
+      "at": "2026-11-01T15:14:35Z",
+      "sha256": "87b14f4b9a1f79c897d5662b7b56ce98ca992672a747a682624b2a3d1cb57321"
+     }
+    },
+    "names_operator": "yes (the article is on the operator)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "No article for the corpus: 'Dolma_(dataset)' raw HTTP 404 (15:13:31Z); 'Dolma_(corpus)' HTTP 429 twice (15:13:32Z, 15:14:29Z, Wikimedia rate limit; not retried further); 'Dolma' is the article on the dish (HTTP 200, W-Dolma.wiki); 'Dolma (disambiguation)' lists no dataset (B8). The Ai2 article is the encyclopedia's one statement of the corpus found; last edited 13 October 2026. A reference source (§0.3): it shows nothing of what T had before it.",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B8",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "Wikipedia: 'Dolma (disambiguation)', the record of the name's senses on Wikipedia, none of them the corpus. Not surfaced by T",
+    "card": "Wikipedia — Dolma (disambiguation) (the record of absence)",
+    "url": "https://en.wikipedia.org/w/index.php?title=Dolma_(disambiguation)&action=raw",
+    "kind": "Wikipedia disambiguation page (raw wikitext)",
+    "files": {
+     "B8.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B8.wiki",
+      "sha256": "68d67621337c934aa530276c1c214f721a2f7003d5d3cd82d0dc820bbc0cbd75"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B8.txt",
+      "sha256": "68d67621337c934aa530276c1c214f721a2f7003d5d3cd82d0dc820bbc0cbd75"
+     },
+     "W-Dolma.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/W-Dolma.wiki",
+      "sha256": "1728beffb5b484ab4d5f1f1e86bb57328071c5b14a51c3c640904c2bd3b88269"
+     },
+     "W-Dolma_(dataset).wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/W-Dolma_(dataset).wiki",
+      "sha256": "95c3fc2cc9fb2a6f55704845850a70217992db01b2b987901169e38d6abc60cd"
+     },
+     "W-Dolma_(corpus).wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/W-Dolma_(corpus).wiki",
+      "sha256": "33b02e3b35f9b84ad543533dba9932c83e1e2c76fa5798339e0d47393a77a00a"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:03Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/w/index.php?title=Dolma_(disambiguation)&action=raw",
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B8.wiki",
+     "raw_sha256": "68d67621337c934aa530276c1c214f721a2f7003d5d3cd82d0dc820bbc0cbd75",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/dolma-20261101/B8.txt"
+     ],
+     "absence": [
+      {
+       "title": "Dolma_(dataset)",
+       "http": 404,
+       "at": "2026-11-01T15:13:31Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/W-Dolma_(dataset).wiki"
+      },
+      {
+       "title": "Dolma_(corpus)",
+       "http": 429,
+       "at": [
+        "2026-11-01T15:13:32Z",
+        "2026-11-01T15:14:29Z"
+       ],
+       "file": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/W-Dolma_(corpus).wiki",
+       "note": "Wikimedia rate limit, twice with the same agent; recorded unread, not retried further"
+      },
+      {
+       "title": "Dolma",
+       "http": 200,
+       "at": "2026-11-01T15:13:32Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/dolma-20261101/W-Dolma.wiki",
+       "note": "the article on the dish ('Stuffed dishes in Middle Eastern cuisine'), a homonym"
+      }
+     ]
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, Johannes Sigil, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "B8.txt is the wikitext as text (the page is wikitext only). The disambiguation lists the dish, thirteen people, a 2012 Tibetan film; no dataset or corpus.",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Dolma is a dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials.",
+   "claim": "the dataset card: a dataset of 3 trillion tokens from web content, academic publications, code, books and encyclopedic materials",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_def",
+   "also_origin": "own_page"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "news (2024-04-17)",
+   "quote": "2024-04-17: Dolma v1.7 Release. We have released an updated version of Dolma that we used to train our latest OLMo 7B-v1.7 model.",
+   "claim": "v1.7 released 17 April 2024, used to train OLMo 7B-v1.7",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and size",
+   "date": "2024-04-17",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_v17",
+   "also_origin": "own_page"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "news (2024-04-15)",
+   "quote": "2024-04-15: License Change. We have updated the license of Dolma to ODC-BY .",
+   "claim": "the licence changed to ODC-BY on 15 April 2024",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence and access",
+   "date": "2024-04-15",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_lic_change",
+   "also_origin": "own_page"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Versions (table)",
+   "quote": "At the moment, there are six versions of Dolma available: … v1_7 … 2024-04-15 … Used to train OLMo-7B-v1.7 . New sources, more quality filtering, fuzzy deduplication. … v1_6 … 2024-01-31 … v1_6-sample … A smaller sample of Dolma, with roughly 10 billion tokens. … v1_5 … 2023-10-31 … Used to train OLMo-1B . Roughly 3 trillion tokens. … v1 … 2023-08-18 … The first version of Dolma.",
+   "claim": "six versions: v1 (2023-08-18), v1.5 (2023-10-31, about three trillion tokens, OLMo-1B), v1.6 and a ten-billion-token sample (2024-01-31), v1.7 (2024-04-15, default, new sources, more filtering, fuzzy deduplication)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "versions and size",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_versions",
+   "also_origin": "own_page"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Summary Statistics (v1.7), Total",
+   "quote": "Total … 2532.0 … (A subset of total data was used for training of OLMo 7B-v1.7. The token counts are based on the full dataset, whereas taking into account sampling proportion gives the final actual token counts used for training --- 1.715 trillion tokens.)",
+   "claim": "v1.7: 2,532 million documents in total; with sampling, 1.715 trillion tokens actually used in training",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and size",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_v17_total",
+   "also_origin": "own_page"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Summary Statistics (v1.7), Source and Provenance columns",
+   "quote": "Refined Web … StarCoder … Reddit … PushShift API … arXiv … RedPajama v1 … StackExchange … Flan … CC News … OpenWebMath … Algebraic Stack … MegaWika … Wikipedia & Wikibooks",
+   "claim": "the v1.7 sources: Dolma's CC, RefinedWeb, StarCoder, C4, Reddit (PushShift), peS2o, arXiv and StackExchange (RedPajama v1), Flan, CC News, OpenWebMath, Algebraic Stack, Project Gutenberg, MegaWika, Wikipedia and Wikibooks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_v17_sources",
+   "also_origin": "own_page"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Summary Statistics (v1.6), Project Gutenberg row",
+   "quote": "Project Gutenberg … books … 20.4 … 0.056 … 4.0 … 6.0",
+   "claim": "v1.6: Project Gutenberg supplies the books, 0.056 million documents, 6.0 billion Llama tokens",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_pg",
+   "also_origin": "own_page"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Summary Statistics (v1.7), header and first row",
+   "quote": "Source … Provenance … New? … Documents (millions) … OLMo tokens (billions) … Sample Proportion … Cutoff Date … Processing … Dolma's CC … Common Crawl via Dolma v1.6",
+   "claim": "the v1.7 table records, per source, its provenance (the upstream collection it came through), cut-off date and processing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "what of a work's author and source it keeps",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_prov",
+   "also_origin": "own_page"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Want to request removal of personal data? Use this form to notify us of documents containing PII about a specific user.",
+   "claim": "a form to request removal of documents containing personal information about a specific person",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "personal data and removal",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_pii",
+   "also_origin": "own_page"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Licensing Information",
+   "quote": "We are releasing this dataset under the terms of ODC-BY . By using this dataset, you are also bound any license agreements and terms of use of the original data sources.",
+   "claim": "released under ODC-BY; users also bound by the licences and terms of the original data sources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "licence and access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_lic",
+   "also_origin": "own_page"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "models trained on the dataset",
+   "quote": "Models trained or fine-tuned on allenai/dolma … Browse 241 models trained on this dataset",
+   "claim": "241 models trained or fine-tuned on the dataset, among them models of other makers (dmis-lab/UltraBERT)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "models trained on it, and the training loop",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_models",
+   "also_origin": "own_page"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Summary Statistics (v1.6), Total",
+   "quote": "Total … 11,519 … 4,367 … 2,318 … 3,059",
+   "claim": "v1.6: 11,519 GB, 4,367 million documents, 2,318 billion words, 3,059 billion Llama tokens",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and size",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 bd31e420de096396…) or the card's title and snippet, whitespace-normalised",
+   "key": "hf_v16_total",
+   "also_origin": "own_page"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Dolma is two things: … Dolma Dataset : an open dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials. … Dolma Toolkit : a high-performance toolkit for curating datasets for language modeling",
+   "claim": "Dolma is two things: the dataset and the Dolma Toolkit, a toolkit for curating datasets for language modeling",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 1ceed892a982dccd…) or the card's title and snippet, whitespace-normalised",
+   "key": "gh_two"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dolma Dataset",
+   "quote": "It was created as a training corpus for OLMo , a language model from the Allen Institute for AI (AI2).",
+   "claim": "created as a training corpus for OLMo, a language model from the Allen Institute for AI (AI2)",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "maker: Ai2 and OLMo",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 1ceed892a982dccd…) or the card's title and snippet, whitespace-normalised",
+   "key": "gh_olmo"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dolma Toolkit",
+   "quote": "High Performance ⚡: Can process billions of documents concurrently thanks to built-in parallelism. … Built-In Taggers 🏷: Includes ready-to-use taggers commonly used to curate datasets such as Gopher , C4 , and OpenWebText . … Fast Deduplication 🗑: Speedy document deduplication using a Rust Bloom filter.",
+   "claim": "the toolkit: parallel processing of billions of documents, built-in taggers after Gopher, C4 and OpenWebText, document deduplication with a Rust Bloom filter",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 1ceed892a982dccd…) or the card's title and snippet, whitespace-normalised",
+   "key": "gh_toolkit"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dolma Dataset",
+   "quote": "Dolma is licensed under ODC-BY ; see our blog post for explanation.",
+   "claim": "licensed under ODC-BY",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence and access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 1ceed892a982dccd…) or the card's title and snippet, whitespace-normalised",
+   "key": "gh_lic"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Today, we release our first data artifact in this project — Dolma ¹, a dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials. Openly available for download on the HuggingFace Hub , Dolma is the largest open dataset to date. … For more details, we also release a data sheet (Gebru et al, 2018) as initial documentation.",
+   "claim": "released 18 August 2023 as the project's first data artifact, the largest open dataset to date, with a data sheet",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_release"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Since March, we at the Allen Institute for AI have been creating OLMo , an open language model to promote the study of large-scale NLP systems.",
+   "claim": "Ai2 has been building OLMo, an open language model, since March 2023",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "maker: Ai2 and OLMo",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_olmo"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "1. Project Goals, Openness",
+   "quote": "Openness. Lack of access to pretraining corpora alongside corresponding language models has been a major obstacle for the broader research community. We want to create a dataset that gives other researchers the opportunity to independently create better versions of this dataset, study the relationship between the data and any model trained on it, report any issues they observe when inspecting our data, and critique our curation practices",
+   "claim": "openness first among the goals: a dataset others can rebuild, study against models, inspect and critique",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "openness, documentation and the toolkit",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_open"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "1. Project Goals, Openness",
+   "quote": "Beyond transparency, open data is critical for research that has become increasingly important with the proliferation of generative models, such as attribution of model output back to pretraining data.",
+   "claim": "open data is critical for research such as attribution of model output back to pretraining data",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what of a work's author and source it keeps",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_attrib"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "1. Project Goals, Risk Mitigation",
+   "quote": "Risk Mitigation. We should minimize risk posed to individuals while meeting reproducibility and representativeness requirements. For example, we are concerned to what extent content in web crawled data can be traced back to a real-world individual.",
+   "claim": "risk to individuals minimized; concern over how far web content can be traced back to a real-world individual",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "personal data and removal",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_risk"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "2. Dataset Design Principles",
+   "quote": "Follow existing practices. … Trust the evaluation suite on interventions it can measure; avoid dramatic shifts when it can't. … Favor decisions that help us (Ai2) with our core research directions. … Take a harms-based approach to risk mitigation.",
+   "claim": "four design principles: follow existing practice; trust the evaluation suite where it can measure; favour decisions that help Ai2's core research directions; a harms-based approach to risk",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "curation: filtering",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_favor"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3. How Did We Create Dolma?, English only",
+   "quote": "English only. … We use a fairly permissive threshold, keeping documents that have a likelihood over 50% of being in English. … We recognize that our decision reinforces the assumption of English as the \"default\" language",
+   "claim": "English only: documents kept above a 50% likelihood of English; the makers recognize that the decision reinforces English as the \"default\" language",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "English only",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_english"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Web data",
+   "quote": "Our dataset is derived from 24 Common Crawl snapshots collected between 2020–05 to 2023–06. We use the CCNet pipeline to obtain the main content of each web page in plain text form. Further, we also use the C4 dataset, which is obtained from a Common Crawl snapshot collected in April 2019.",
+   "claim": "web data from 24 Common Crawl snapshots (May 2020 to June 2023), main content extracted with the CCNet pipeline; C4 from an April 2019 snapshot",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_web"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Quality filtering",
+   "quote": "For example, unigram language models or linear classifiers could be used to select content that broadly resembles Wikipedia pages or books⁴. However, these model-based approaches often have biases that are hard to detect. Following Gopher and Falcon , we opt to use simple heuristics and regular expressions to filter paragraphs.",
+   "claim": "quality filtering by heuristics and regular expressions after Gopher and Falcon, over model-based filters selecting text that resembles Wikipedia or books, whose biases are hard to detect",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "curation: filtering",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_quality"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Notes (note 3)",
+   "quote": "The term \"quality filter\", while widely used in literature, does not appropriately describe the outcome of filtering a dataset. … the filters used in Dolma and other language models efforts select text according to criteria that are inherently ideological .",
+   "claim": "the filters used in Dolma select text by criteria that are inherently ideological; \"quality filter\" misdescribes them",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: filtering",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_ideology"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Deduplication",
+   "quote": "First, in common crawl data, we deduplicate pages based on their URL, keeping only one copy of each. Then, we remove duplicate paragraphs within single documents. Both stages use a Bloom filter data structure.",
+   "claim": "deduplication of web pages by URL and of paragraphs within documents, with a Bloom filter",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_dedup"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Risk mitigation",
+   "quote": "We detect and mask email addresses, phone numbers, and IP addresses. We also remove content that is detected to be harmful or obscene by fasttext classifiers trained on the Jigsaw dataset .",
+   "claim": "email addresses, phone numbers and IP addresses masked; harmful or obscene content removed by fastText classifiers",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_pii"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Diverse sources",
+   "quote": "For Dolma, we leverage Semantic Scholar's corpus by including papers from peS2o , a subset of 38M permissibly licensed scientific manuscripts. We also include Wikipedia and Project Gutenberg. … For Wikipedia, we use the English and Simplified English subset. For the books in Project Gutenberg, we filter for books that are primarily in English.",
+   "claim": "papers from peS2o (38M permissibly licensed manuscripts of Semantic Scholar); English and Simple English Wikipedia; Project Gutenberg books primarily in English",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_sources"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Just enough code",
+   "quote": "We derive the code subset of Dolma from The Stack , a collection of permissively-licensed GitHub repositories.",
+   "claim": "code from The Stack, permissively licensed GitHub repositories",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: sources",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_code"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "3., Decontamination",
+   "quote": "Our decontamination step removes less than 0.001% of the training data by characters, and impacts fewer than 0.02% of documents.",
+   "claim": "decontamination against the evaluation suite removes under 0.001% of the data by characters",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_decon"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "6. Releasing Dolma",
+   "quote": "Dolma is released under Ai2's ImpACT license as a medium-risk artifact. Under this license, researchers must: … Provide their contact information and state their intended use case(s) for accessing Dolma; … Disclose the creation of any derivative based on Dolma; … Distribute derivatives under the same restrictions as the ImpACT license; … Agree not to leverage Dolma in a range of prohibited uses, such as military surveillance or generating disinformation.",
+   "claim": "released under Ai2's ImpACT licence as a medium-risk artifact: contact and intended use given, derivatives disclosed and restricted, prohibited uses forgone",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence and access",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_impact"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "6. Releasing Dolma",
+   "quote": "Finally, as part of our risk mitigation strategy, we created a mechanism to allow the removal of personal data upon request.",
+   "claim": "a mechanism for removing personal data on request",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "personal data and removal",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_removal"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "overview figure (image alt text, in B3.html)",
+   "quote": "Overview of Dolma by subset type. Sources include CommonCrawl, C4, peS2o, The Stack, Project Gutenberg, and Wikipedia with a total of 5,245 millions of documents at 5,334 GB, and 3,084 billions of tokens.",
+   "claim": "the first release: 5,245 million documents, 5,334 GB, 3,084 billion tokens, from Common Crawl, C4, peS2o, The Stack, Project Gutenberg and Wikipedia",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "versions and size",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_alt"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "5. How Does Dolma Compare With Other Open Datasets?",
+   "quote": "Dolma differentiates itself from other datasets on two key aspects. First, it is significantly larger than other open datasets. Second, it is released under Ai2's impact license, which was designed to balance ease of access with mitigation of potential risk in distributing large datasets.",
+   "claim": "larger than other open datasets, and released under a licence balancing access with risk",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness, documentation and the toolkit",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_differ"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Notes",
+   "quote": "Fun fact: Dolma stands for \" Data to feed OLMo's Appetite \"",
+   "claim": "the name: Data to feed OLMo's Appetite",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "maker: Ai2 and OLMo",
+   "date": "2023-08-18 (the announcement's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 006aa43afa5bb834…), the raw B3.html (for the figure's alt text) or the card's snippet, whitespace-normalised",
+   "key": "ai_name"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "Information about pretraining corpora used to train the current best-performing language models is seldom discussed: commercial models rarely detail their data, and even open models are often released without accompanying training data or recipes to reproduce them.",
+   "claim": "pretraining corpora are seldom discussed; commercial models rarely detail their data; open models often come without training data or recipes",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness, documentation and the toolkit",
+   "date": "2024-01-31 (arXiv v1; v2 2024-06-06)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 81726256243b7fe6…) or the card's title and snippet, whitespace-normalised",
+   "key": "ax_context",
+   "also_origin": "own_page"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "To facilitate scientific research on language model pretraining, we curate and release Dolma, a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.",
+   "claim": "for research on language model pretraining, a three-trillion-token English corpus from web content, scientific papers, code, public-domain books, social media and encyclopedic materials",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "2024-01-31 (arXiv v1; v2 2024-06-06)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 81726256243b7fe6…) or the card's title and snippet, whitespace-normalised",
+   "key": "ax_def",
+   "also_origin": "own_page"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "We extensively document Dolma, including its design principles, details about its construction, and a summary of its contents.",
+   "claim": "documented: design principles, construction, contents",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness, documentation and the toolkit",
+   "date": "2024-01-31 (arXiv v1; v2 2024-06-06)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 81726256243b7fe6…) or the card's title and snippet, whitespace-normalised",
+   "key": "ax_doc",
+   "also_origin": "own_page"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "We present analyses and experimental results on intermediate states of Dolma to share what we have learned about important data curation practices.",
+   "claim": "analyses and experiments on intermediate states of the corpus, on data curation practice",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "2024-01-31 (arXiv v1; v2 2024-06-06)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 81726256243b7fe6…) or the card's title and snippet, whitespace-normalised",
+   "key": "ax_analyses",
+   "also_origin": "own_page"
+  },
+  "F41": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "Finally, we open-source our data curation toolkit to enable reproduction of our work as well as support further research in large-scale data curation.",
+   "claim": "the curation toolkit open-sourced for reproduction and further research",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "openness, documentation and the toolkit",
+   "date": "2024-01-31 (arXiv v1; v2 2024-06-06)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 81726256243b7fe6…) or the card's title and snippet, whitespace-normalised",
+   "key": "ax_toolkit",
+   "also_origin": "own_page"
+  },
+  "F42": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "title block; Comments; Submission history",
+   "quote": "by Luca Soldaini and 35 other authors … Accepted at ACL 2024; Dataset: this https URL Code: this https URL … [v1] Wed, 31 Jan 2024 20:29:50 UTC (7,715 KB) … [v2] Thu, 6 Jun 2024 18:46:40 UTC (6,680 KB)",
+   "claim": "the paper by Luca Soldaini and 35 others: v1 31 January 2024, v2 6 June 2024, accepted at ACL 2024, linking the dataset and code",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the paper: authors, versions, venue, award",
+   "date": "2024-01-31 (arXiv v1; v2 2024-06-06)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 81726256243b7fe6…) or the card's title and snippet, whitespace-normalised",
+   "key": "ax_meta",
+   "also_origin": "own_page"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dolma: an Open Corpus … [1]",
+   "quote": "In [1], authors from AI2 solve this problem by releasing Data for Open Language Models’ Appetite (Dolma), a fully-open pretraining dataset containing over three trillion tokens of English text",
+   "claim": "a reviewer: authors from AI2 solve the problem by releasing a fully-open pretraining dataset of over three trillion tokens of English text",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_def"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "This overview",
+   "quote": "Unlike prior work in open-source LLMs, Dolma and OLMo are completely transparent and open-source. The process of constructing the Dolma pretraining corpus, which is released under the AI2 impact license , is fully-documented in [1].",
+   "claim": "a reviewer: Dolma and OLMo completely transparent and open-source; the corpus under the AI2 impact license, its construction fully documented",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "openness, documentation and the toolkit",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_open"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Quality filtering",
+   "quote": "In [1], authors choose to avoid model-based filtering techniques and rely solely upon heuristic filtering methods.",
+   "claim": "a reviewer: the authors avoid model-based filtering and rely solely on heuristic filtering",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "curation: filtering",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_heur"
+  },
+  "F46": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Content filtering",
+   "quote": "To detect PII, a series of regular expression are adopted to find spans of text corresponding to email addresses, IP addresses, and phone numbers. From here, these spans of text are either masked, or the entire document is removed from the corpus (if more than 5 pieces of PII are detected in a single document).",
+   "claim": "a reviewer: PII spans masked, or the whole document removed where more than five are found",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_pii"
+  },
+  "F47": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Deduplication",
+   "quote": "In [1], authors perform three stages of deduplication for web text: … URL-based : eliminates web pages that are scraped multiple times. … Document-based : eliminates pages that contain exactly the same text. … Paragraph-based : eliminates individual paragraphs with the same text.",
+   "claim": "a reviewer: three stages of web deduplication, by URL, by document and by paragraph",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "curation: deduplication, masking, decontamination",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_dedup"
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dolma design principles",
+   "quote": "To minimize risk of harm to individuals, one can easily request— using this form —for their data to be removed from the Dolma corpus.",
+   "claim": "a reviewer: anyone can request removal of their data from the corpus",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "personal data and removal",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_removal"
+  },
+  "F49": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Language filtering",
+   "quote": "Typically, this language filtering component, which is applied to both web and conversation data in Dolma, eliminates a large amount of source data (e.g., 61.7% of web data is removed).",
+   "claim": "a reviewer: language filtering removes 61.7% of the web data",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "English only",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_lang"
+  },
+  "F50": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "OLMo",
+   "quote": "OLMo is a set of truly open LLMs that are pretrained on Dolma.",
+   "claim": "a reviewer: OLMo, a set of open LLMs pretrained on Dolma",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "models trained on it, and the training loop",
+   "date": "2024-02-20 (the post's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 ad92d43ad246e79f…) or the card's title and snippet, whitespace-normalised",
+   "key": "dl_olmo"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "record",
+   "quote": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) … August … Bangkok, Thailand … 15725–15788",
+   "claim": "published in the ACL 2024 proceedings (long papers), Bangkok, August 2024, pp. 15725–15788",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the paper: authors, versions, venue, award",
+   "date": "2024-08 (ACL 2024, the proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 781aa6ce3c0caa4a…) or the card's title and snippet, whitespace-normalised",
+   "key": "acl_proc"
+  },
+  "F52": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "record, Award",
+   "quote": "Award: Best Resource Paper Award",
+   "claim": "Best Resource Paper Award",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the paper: authors, versions, venue, award",
+   "date": "2024-08 (ACL 2024, the proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 781aa6ce3c0caa4a…) or the card's title and snippet, whitespace-normalised",
+   "key": "acl_award"
+  },
+  "F53": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "authors",
+   "quote": "Luca Soldaini , … Rodney Kinney , … Jesse Dodge , … Kyle Lo",
+   "claim": "thirty-six authors, Luca Soldaini first and Kyle Lo last",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the paper: authors, versions, venue, award",
+   "date": "2024-08 (ACL 2024, the proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 781aa6ce3c0caa4a…) or the card's title and snippet, whitespace-normalised",
+   "key": "acl_authors"
+  },
+  "F54": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "To facilitate scientific research on language model pretraining, we curate and release Dolma, a three-trillion-token English corpus",
+   "claim": "the ACL record's abstract, the arXiv abstract word for word",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "2024-08 (ACL 2024, the proceedings)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 781aa6ce3c0caa4a…) or the card's title and snippet, whitespace-normalised",
+   "key": "acl_abs"
+  },
+  "F55": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Olmo model family",
+   "quote": "In February 2024, 1B and 7B parameter variants of the model were open-sourced, including code, model weights with intermediate snapshots and logs, and contents of their Dolma training dataset (a three-trillion-token English corpus drawn from web text, academic publications, code, books, social media, and encyclopedic sources),",
+   "claim": "Wikipedia (Ai2 article): OLMo open-sourced in February 2024 with the contents of its Dolma training dataset, a three-trillion-token English corpus",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an open English pretraining corpus",
+   "date": "2026-10-13 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3083e6a9400a1f4b…) or the wikitext B7.wiki, whitespace-normalised",
+   "key": "wp_passage"
+  },
+  "F56": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Olmo model family",
+   "quote": "making it the most open state-of-the-art model available.",
+   "claim": "Wikipedia (Ai2 article): OLMo the most open state-of-the-art model available",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "models trained on it, and the training loop",
+   "date": "2026-10-13 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3083e6a9400a1f4b…) or the wikitext B7.wiki, whitespace-normalised",
+   "key": "wp_open"
+  },
+  "F57": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "footer",
+   "quote": "This page was last edited on 13 October 2026, at 05:08",
+   "claim": "the Ai2 article last edited 13 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the name on Wikipedia",
+   "date": "2026-10-13 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 3083e6a9400a1f4b…) or the wikitext B7.wiki, whitespace-normalised",
+   "key": "wp_edit"
+  },
+  "F58": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "page",
+   "quote": "'''[[Dolma]]''' is a family of stuffed vegetable dishes. … '''Dolma''' may also refer to: … ==People== … * ''[[Dolma (film)]]'', a 2012 Tibetan film",
+   "claim": "the name on Wikipedia: a family of stuffed vegetable dishes, people, a 2012 Tibetan film; no dataset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the name on Wikipedia",
+   "date": "2026-11-01 (the page as fetched)",
+   "quote_ok": true,
+   "checked_against": "the wikitext B8.wiki (sha256 68d67621337c934a…), whitespace-normalised",
+   "key": "wd_senses"
+  }
+ },
+ "field_sources": {
+  "B1": "Hugging Face — allenai/dolma · Datasets at Hugging Face",
+  "B2": "GitHub Pages documentation — dolma | Data and tools for generating and inspecting OLMo pre-training data.",
+  "B3": "Allen Institute for Artificial Intelligence — Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2",
+  "B4": "arXiv — [2402.00159] Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research",
+  "B5": "Deep (Learning) Focus — Dolma, OLMo, and the Future of Open-Source LLMs",
+  "B6": "ACL Anthology — Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research - ACL Anthology",
+  "B7": "Wikipedia — Allen Institute for AI (the passage on Dolma)",
+  "B8": "Wikipedia — Dolma (disambiguation) (the record of absence)"
+ }
+}

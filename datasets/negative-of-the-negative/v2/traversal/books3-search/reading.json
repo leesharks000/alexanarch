@@ -1,0 +1,238 @@
+{
+ "row": "books3-search",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from #186 and #1543 (the census anchors, read at the passages on training corpora, inspection and machine composition)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). D: no deposit names Books3, the AI Watchdog page, Bibliotik or Shawn Presser (0 candidates). R: none. O-class: an archive category applied to one of the three classes the field and the census source for the entity (book collections used to train language models: B3, B4, B5, B6, census record.in_layer, area corpora; pirated and shadow-library books in training data: B3, B4, B5, census record.in_layer; training-data membership and its tests: B3, B4, census question, area finding). The deposit footer 'intended for inclusion in AI training corpora' is the deposit's address, not a claim on a class. A bare mention of a training corpus, a statement about the archive's own deposits in a corpus, or a sentence about the composition layer's retrieval is not a claim on these classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "The census anchor, read whole (2,391 words): the definition of training-layer literature as writing addressed to the layer where texts are 'crawled, indexed, trained on' (line 22); 'every one of these texts is, as a matter of fact, in the corpora … read by machines incidentally' (line 54), of literary works in training corpora; persistence with 'the metadata that lets it be found and attributed' (line 24); the model-collapse irony and provenance-anchored work as counter-signal (line 68). O-class, book collections used to train language models; the anchor itself (hop source).",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03",
+    "O186-04"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "The census anchor, read at §1, §4, §10 and Appendix A: the institutional training loop x → M_t → y → corpus_{t+1} (lines 264–265), the training corpus as the loop's recurrent object. O-class, book collections used to train language models. §1's machine RECEPTION ('what composition layers retrieve, adopt, erase, and misattribute') and §10's two questions bear on the composition at the name and are read for the delta, unadmitted as claims on the classes.",
+   "claims": [
+    "O1543-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 102,
+   "strata": [
+    "O"
+   ],
+   "reason": "Canon Formation in the Age of AI §1.2: 'A text included in a training set is reproduced, paraphrased, cited, and culturally amplified in ways that non-included texts cannot match' (line 43): what inclusion in a training set does to a text. O-class, training-data membership. Candidate in candidates-O.jsonl (dep 102).",
+   "claims": [
+    "O102-01"
+   ],
+   "cands": [
+    "O-102"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2, the Training-Layer Provenance Protocol: stylometric signal averaged in the training pipeline, no author's style a discrete signal (line 501); copyright traps detected by membership inference (line 513, reported from Meeus et al.); the detection/surfacing divergence (line 1253, stipulated). O-class, training-data membership and book collections used to train. Candidates in candidates-O.jsonl (dep 127: three sentences read; its '10^-7 of a frontier pre-training corpus' sentence concerns the archive's own share and is unadmitted).",
+   "claims": [
+    "O127-01",
+    "O127-02",
+    "O127-03"
+   ],
+   "cands": [
+    "O-127"
+   ]
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-NEGSHAPE-01 v0.2, a counterfactual protocol for measuring training inscription: it does not presuppose use in training and makes disclosure the first demand (line 22); membership inference achievable in practice, the protocol requiring only distinguishable output distributions (line 222). O-class, training-data membership.",
+   "claims": [
+    "O1075-01",
+    "O1075-02"
+   ],
+   "cands": [
+    "O-1075"
+   ]
+  },
+  {
+   "dep": 1545,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-MPAI-SEMANTIC-PROLETARIAT-01: 'The semantic product becomes training data, engagement, or platform capital' (line 76), the product dimension of semantic alienation applied to works becoming training data. O-class, book collections used to train. Found as hop candidate H0022 (reverse, via #1543), read.",
+   "claims": [
+    "O1545-01"
+   ],
+   "cands": [
+    "H0022"
+   ]
+  },
+  {
+   "dep": 449,
+   "strata": [
+    "O"
+   ],
+   "reason": "THE DAGGER APPLIED: 'The provenance strip … operates at industrial scale in AI training itself', and its reading of a suit alleging lyrics and sheet music 'obtained via BitTorrent shadow libraries' to train Claude as an Opaque Pivot (lines 180–182). O-class, pirated and shadow-library material in training data. The class string matches line 182; non_traverse.py's sentence-level pass did not list it because the matching sentence carries no archive category and the category sentence carries no class term; found by a supplementary string pass on the class pattern (grep 'shadow librar' over data/texts, 2 deposits), and admitted by reading at the paragraph, as §3.4(2) allows ('its sentence or paragraph').",
+   "claims": [
+    "O449-01",
+    "O449-02"
+   ],
+   "cands": [
+    "supplementary: data/texts/AXN-0109-text.md line 182"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/books3-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note, query note and reached kind for the entity's capture (OBS-d6f2cde69604, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14",
+    "CAP-1-15"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/books3-search (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'books3-search'], organizing_question, admission_rule, anchor, areas; data/layer-census/rows/books3-search.py)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; its evidence quotes restate Wikipedia's article on the Pile (B5) and are one lineage with it; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36",
+    "TLL-37",
+    "TLL-38",
+    "TLL-39"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": "49, 98, 158, 171, 233, 405, 467, 482, 507, 530, 534, 662, 787, 790, 793, 833, 853, 874, 882, 892, 932, 950, 1278, 1725",
+   "reason": "O-class candidates on the membership pattern ('in the training corpus/data/set') or the corpora pattern: each says something of a training corpus in general as the ground of a model's behaviour (terminological saturation of the archive's own deposits, #49; Matthew 25's density, #171; entity collision, #662; particle-physics training sets, #932; the archive's own terms surviving in training data, #950; a table on distributed compute, #98), and none applies a category to a collection of books trained on, to pirated material in training, or to a test of whether a given work is in a training set. Read, unadmitted",
+   "cands": [
+    "O-class candidates for these deposits in candidates-O.jsonl"
+   ]
+  },
+  {
+   "dep": "1091",
+   "reason": "'the sites whose content was used to train and populate the summarizer' without consent or compensation: said of web content and the summarizer, outside the three classes. Read, unadmitted",
+   "cands": [
+    "O-1091"
+   ]
+  },
+  {
+   "dep": "1486, 1610",
+   "reason": "'membership tests' of a transmission chain and of ideology preservation: membership in a reception lineage, not in a training set. Read, unadmitted",
+   "cands": [
+    "O-1486",
+    "O-1610"
+   ]
+  },
+  {
+   "dep": 248,
+   "reason": "The Bead Count names 'The Pile' as a standard pre-training dataset for a proposed experiment (line 227): a choice of data, not a claim on the class. Read by the supplementary grep; unadmitted",
+   "cands": [
+    "supplementary"
+   ]
+  },
+  {
+   "dep": "32 (Pergamon Reclamation)",
+   "reason": "'Shadow library providing open access to paywalled research' (Sci-Hub, a reference line): outside training. Read by the supplementary grep; unadmitted",
+   "cands": [
+    "supplementary"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [
+   "#1545 (O-class, line 76)"
+  ],
+  "rejected": "#129, #160, #337, #382, #473, #481, #590, #603, #604, #738, #784, #819, #1409, #1441, #1443, #1521, #1526, #1527, #1528, #1540, #1544, #1555, #1684, #1709, #1711, #1721, #1722: cited by or citing the anchors on other subjects (traversal logs of the composition layer, the prize, the handwritten-artifact surveys, watermarking, the prediction and originals indexes, the existence tax); their training-corpus strings are the deposit footer or a corpus in general; none says anything of a collection of books trained on, of pirated material in training, or of a membership test",
+  "file": "candidates-H.jsonl"
+ },
+ "observations": [
+  "No deposit names Books3, the AI Watchdog page, Bibliotik or Shawn Presser; the archive's bearing is O-class only, through the census's classes.",
+  "R is empty.",
+  "#449's sentence on a shadow-library suit concerns Anthropic's Claude; the composer of this row is a Claude model (disclosed in composition.notes)."
+ ],
+ "counts": {
+  "D_candidates": 0,
+  "R_candidates": 0,
+  "O_candidates": 49,
+  "H_candidates": 28,
+  "supplementary_candidates": 3,
+  "deposits_admitted": 7,
+  "deposit_claims": 14,
+  "TLL_claims": 39,
+  "CAP_claims": 15
+ }
+}

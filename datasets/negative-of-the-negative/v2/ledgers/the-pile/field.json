@@ -1,0 +1,1882 @@
+{
+ "row": "the-pile",
+ "address": "The Pile dataset",
+ "addresses": [
+  "The Pile dataset"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia rendered text or wikitext, the paper's pdftotext, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 the Pile's home page, also the census's own page; B2 the Wikipedia article, also the entity's Wikipedia source; B3 the Hugging Face dataset card; B4 a Reddit post, unreachable; B5 the paper's PDF on the Pile's host; B6 a YouTube reading of the paper, unreachable, title only; B7 the Common Pile v0.1 announcement; B8 Michael Brenndoerfer's history chapter). B_R, the reference pool: 'own_page', the arXiv abstract page the census read (B9); 'census_third_party', the Data Portraits abstract the census read (B10). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. B9 is the same work as B5 and its abstract one lineage with B5 (§3.6). See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/the-pile-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B2.wiki the raw wikitext; B5.pdf with B5.txt by pdftotext; B1-census.* and B2-census.* the census's saved copies; B9 and B10 the census's saved copies; B6-try.html YouTube's 429 page; tries/ the raw first fetches)",
+ "counts": {
+  "sources": 10,
+  "B_D": 8,
+  "B_R": 2,
+  "fetched": 8,
+  "unreachable": 2,
+  "claims": 78,
+  "claims_B_D": 74,
+  "claims_B_R": 4,
+  "quotes_ok": 78
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "The Pile — The Pile",
+   "fetched": "card; B1.html sha256 268e8919eb38f092, HTTP 200 at 2026-11-01T15:12:21Z; identical to the census's saved copy",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "Wikipedia — The Pile (dataset) - Wikipedia",
+   "fetched": "card; B2.html sha256 c57bf3df60775bca, HTTP 200 at 2026-11-01T15:12:22Z; wikitext HTTP 429 then 200 (sha256 e0ba14617fc07a38)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Hugging Face — EleutherAI/pile · Datasets at Hugging Face",
+   "fetched": "card; B3.html sha256 31648ba747c5c9b4, HTTP 200 at 2026-11-01T15:12:23Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "Reddit·r/MachineLearning — [R] The Pile: An 800GB Dataset of Diverse Text for Language Modeling - Reddit",
+   "fetched": "unreachable: the URL could not be determined from the card (three WebSearch queries); no fetch; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "The Pile — The Pile: An 800GB Dataset of Diverse Text for Language Modeling",
+   "fetched": "card; B5.pdf sha256 7310ebe57f97fafe, HTTP 200 at 2026-11-01T15:12:23Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "YouTube·The Polymath — The Pile - An 800GB Dataset for Language Models - [Paper Read #1]",
+   "fetched": "unreachable: https://www.youtube.com/watch?v=00ROgQUBvxw HTTP 429 at 2026-11-01T15:13:06Z; title only (the card has no snippet)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "Hugging Face — The Common Pile v0.1 - Hugging Face",
+   "fetched": "card; B7.html sha256 f61635d881665830, HTTP 200 at 2026-11-01T15:12:24Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B8",
+   "card": "Michael Brenndoerfer — The Pile: Open-Source Training Dataset for LLMs - Interactive",
+   "fetched": "card; B8.html sha256 8bbceafb5a18cfa4, HTTP 200 at 2026-11-01T15:13:04Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B9",
+   "card": "arXiv — The Pile: An 800GB Dataset of Diverse Text for Language Modeling (abstract page; census source)",
+   "fetched": "own page; B9.html sha256 5741c3c9cdc41ae5, HTTP 200 at 2026-11-01T04:07:50Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B10",
+   "card": "arXiv — Data Portraits: Recording Foundation Model Training Data (census source)",
+   "fetched": "census third party; B10.html sha256 0a499acc8164a2d2, HTTP 200 at 2026-11-01T05:07:12Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "census_third_party",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8"
+  ],
+  "own_pages": [
+   "B9"
+  ],
+  "own_pages_note": "the census's own pages: the-pile--home (https://pile.eleuther.ai/) is card 1, carried once, as a card, in B_D (B1); the-pile--paper (the arXiv abstract page) is not on T's rail and stands in B_R (B9); T's card 5 is the paper's PDF on the Pile's host (B5)",
+  "wikipedia": [
+   "B2"
+  ],
+  "census_third_party": [
+   "B10"
+  ],
+  "unreachable": [
+   "B4",
+   "B6"
+  ],
+  "title_only": [
+   "B4",
+   "B6"
+  ],
+  "wikipedia_state": "article: 'The Pile (dataset)' (rendered HTTP 200 at 2026-11-01T15:12:22Z; raw wikitext HTTP 429, then 200 on one retry), no redirect, a hatnote to 'Pile (disambiguation)', last edited 20 August 2026; it is card 2 of T, so the Wikipedia source and the card are one source, carried once in B_D (B2)",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+   ],
+   "B_R": [
+    "B9",
+    "B10"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (the body names no source beyond the cards; 'Common Crawl' and the model names in its body are entities it composes, no source); B_R, the reference pool: the census's own page the arXiv abstract (B9) and its third-party source, the Data Portraits abstract (B10). The home page and the Wikipedia article are cards 1 and 2, carried once in B_D. T against L_F(B_D) uses B1–B8 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 1 (and the census own page the-pile--home: one page, carried once, in B_D)",
+    "card": "The Pile — The Pile",
+    "url": "https://pile.eleuther.ai/",
+    "kind": "Overview card (the Pile's own home page); the census's own page the-pile--home",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B1.html",
+      "sha256": "268e8919eb38f0924157e06ef7adb8add7a6db39bb5eb5bef0a849022d7c46bf"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B1.txt",
+      "sha256": "d87aa4098ea3da9729affb84a120ba9bd6c19fbc27fc1da5bc5e7bb2e5c63b11"
+     },
+     "B1-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B1-census.html",
+      "sha256": "268e8919eb38f0924157e06ef7adb8add7a6db39bb5eb5bef0a849022d7c46bf"
+     },
+     "B1-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B1-census.txt",
+      "sha256": "4b39cd7902a37815e5058c76693be4765e48db8a6073f3d10403c690149691f1"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:21Z",
+     "http": 200,
+     "url": "https://pile.eleuther.ai/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B1.html",
+     "raw_sha256": "268e8919eb38f0924157e06ef7adb8add7a6db39bb5eb5bef0a849022d7c46bf",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B1.txt"
+     ],
+     "census_copy": {
+      "src": "the-pile--home",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:50Z",
+      "sha256": "268e8919eb38f0924157e06ef7adb8add7a6db39bb5eb5bef0a849022d7c46bf",
+      "agrees": "identical bytes (same sha256)"
+     }
+    },
+    "names_operator": "yes ('EleutherAI 2021' in the footer; the citation lists Gao, Biderman and ten others)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL from the card's site, title and snippet (the snippet is the page's opening text, verbatim). Refetched with the census agent string; the bytes match the census's saved copy.",
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "The Pile",
+    "card_snippet": "An 800GB Dataset of Diverse Text for Language Modeling What is the Pile? The Pile is a 825 GiB diverse, open source language modelling data set that consists of..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "also_origin": "wikipedia",
+    "pool": "B_D",
+    "role": "Overview card 2 (and the entity's Wikipedia article, the census source the-pile--wikipedia: one source, carried once, in B_D)",
+    "card": "Wikipedia — The Pile (dataset) - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/The_Pile_(dataset)",
+    "kind": "Overview card (the Wikipedia article); the entity's Wikipedia article",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2.html",
+      "sha256": "c57bf3df60775bcabbb845126c780528bbff830b1da8375378f9bd4037dcc814"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2.txt",
+      "sha256": "52c9a678e26c2a7f72ffeb73f67858de37dfee932a98f6fd6147af56146c4822"
+     },
+     "B2.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2.wiki",
+      "sha256": "e0ba14617fc07a38cb686f19f329b872b37f2d8711a511d53d1a6982581e9d0a"
+     },
+     "B2-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2-census.html",
+      "sha256": "1ba82f3edd2a4647bd1af5f9c925a7500a63005471dac0429af0dd002fa15c89"
+     },
+     "B2-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2-census.txt",
+      "sha256": "c767d4d73c058ef4bc5127063361530b828bdb8f8770e03b775aa76a4b6d2e5d"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:22Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/The_Pile_(dataset)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2.html",
+     "raw_sha256": "c57bf3df60775bcabbb845126c780528bbff830b1da8375378f9bd4037dcc814",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2.txt",
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B2.wiki"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=The_Pile_(dataset)&action=raw",
+      "tries": [
+       {
+        "at": "2026-11-01T15:12:22Z",
+        "http": 429,
+        "file": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/tries/B2wiki.wiki",
+        "note": "Wikimedia rate-limit error page"
+       },
+       {
+        "at": "2026-11-01T15:13:07Z",
+        "http": 200
+       }
+      ],
+      "sha256": "e0ba14617fc07a38cb686f19f329b872b37f2d8711a511d53d1a6982581e9d0a"
+     },
+     "census_copy": {
+      "src": "the-pile--wikipedia",
+      "sha256": "1ba82f3edd2a4647bd1af5f9c925a7500a63005471dac0429af0dd002fa15c89",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:51Z",
+      "agrees": "one byte longer in this fetch (per-request tokens); the article text the same, last edited 20 August 2026 in both"
+     }
+    },
+    "names_operator": "yes ('It was constructed by EleutherAI in 2020')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "Article 'The Pile (dataset)', no redirect ('This article is about the dataset. For other uses, see Pile (disambiguation).'); rendered page HTTP 200; raw wikitext HTTP 429 on the first request (a rate-limit page), HTTP 200 on one retry with the same agent string 45 seconds later; last edited 20 August 2026.",
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "The Pile (dataset) - Wikipedia",
+    "card_snippet": "Dataset: The Pile (886.03 GB, open-source, English text) created by EleutherAI, released December 31, 2020, to train large language models across 22 sub-dataset..."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3",
+    "card": "Hugging Face — EleutherAI/pile · Datasets at Hugging Face",
+    "url": "https://huggingface.co/datasets/EleutherAI/pile",
+    "kind": "Overview card (the dataset's repository page and dataset card on Hugging Face)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B3.html",
+      "sha256": "31648ba747c5c9b4c23f5043d08486b354fa573bf48b63bd68869d27d7d715fe"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B3.txt",
+      "sha256": "12245289f783db1173f4c6a912800ec6c4735ff441acb99b0074fb5105d819cc"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:23Z",
+     "http": 200,
+     "url": "https://huggingface.co/datasets/EleutherAI/pile",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B3.html",
+     "raw_sha256": "31648ba747c5c9b4c23f5043d08486b354fa573bf48b63bd68869d27d7d715fe",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B3.txt"
+     ]
+    },
+    "names_operator": "yes ('primarily curated by Leo Gao and Stella Biderman'; repository owner EleutherAI)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL by the card's title, which is the page's <title> verbatim. The snippet ('curated by Leo Gao and Stella Biderman ... 100B<1T tokens') is a card-renderer summary of the page's metadata.",
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "EleutherAI/pile · Datasets at Hugging Face",
+    "card_snippet": "Dataset: The Pile by EleutherAI (curated by Leo Gao and Stella Biderman). Size: 825 GiB, 100B<1T tokens. Language: English (EN). Tasks: Text Generation, Fill-Ma..."
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4",
+    "card": "Reddit·r/MachineLearning — [R] The Pile: An 800GB Dataset of Diverse Text for Language Modeling - Reddit",
+    "url": null,
+    "kind": "Overview card (a Reddit r/MachineLearning post, dated January 1, 2021 on the card)",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: the post's URL could not be determined from the card; three WebSearch queries on the exact title (one restricted to reddit.com, which the search proxy rejected with HTTP 400) returned no Reddit URL; no fetch made. The card's title and snippet are its only text (§3.1(a))",
+     "http": null
+    },
+    "names_operator": "card snippet: yes ('from EleutherAI')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "searches": [
+     "WebSearch 'reddit r/MachineLearning \"[R] The Pile: An 800GB Dataset of Diverse Text for Language Modeling\"'",
+     "WebSearch (allowed_domains reddit.com) 'The Pile 800GB Dataset of Diverse Text for Language Modeling r/MachineLearning' (proxy HTTP 400)",
+     "WebSearch 'reddit MachineLearning \"[R] The Pile: An 800GB Dataset of Diverse Text for Language Modeling\" comments'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "[R] The Pile: An 800GB Dataset of Diverse Text for Language Modeling - Reddit",
+    "card_snippet": "January 1, 2021 — The Pile Dataset: The Pile is an 800GB publicly available English text corpus from EleutherAI, designed for training large-scale language models, featuring 22 d..."
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 5",
+    "card": "The Pile — The Pile: An 800GB Dataset of Diverse Text for Language Modeling",
+    "url": "https://pile.eleuther.ai/paper.pdf",
+    "kind": "Overview card (the paper, Gao et al., arXiv:2101.00027, as a PDF on the Pile's own host)",
+    "files": {
+     "B5.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B5.pdf",
+      "sha256": "7310ebe57f97fafea0b874e86e131b6c46b10802b0c9fa98aa81139e0426ceb9"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B5.txt",
+      "sha256": "4df9c843749391e9b0cf54dbbfe6db4350b9214a534cda9627836d2607c06658"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:23Z",
+     "http": 200,
+     "url": "https://pile.eleuther.ai/paper.pdf",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B5.pdf",
+     "raw_sha256": "7310ebe57f97fafea0b874e86e131b6c46b10802b0c9fa98aa81139e0426ceb9",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B5.txt"
+     ]
+    },
+    "names_operator": "yes (authors 'Leo Gao ... Connor Leahy', 'EleutherAI', 'contact@eleuther.ai')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "The card's site is the Pile's own host and its title the paper's; the snippet's '825.18 GiB English text corpus' and 'Composition: 14 ne[w]' match the paper's introduction and contribution 2. URL by the site and title, confirmed by WebSearch (pile.eleuther.ai/paper.pdf). Text extracted with pdftotext (reading order); two-column passages are quoted only where the extraction keeps them contiguous.",
+    "searches": [
+     "WebSearch '\"The Pile - An 800GB Dataset for Language Models\" \"Paper Read #1\" The Polymath youtube' (returned pile.eleuther.ai/paper.pdf)"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "The Pile: An 800GB Dataset of Diverse Text for Language Modeling",
+    "card_snippet": "The Pile: 825.18 GiB English text corpus combining 22 diverse high-quality subsets for training and benchmarking large-scale language models. Composition: 14 ne..."
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 6 (video)",
+    "card": "YouTube·The Polymath — The Pile - An 800GB Dataset for Language Models - [Paper Read #1]",
+    "url": "https://www.youtube.com/watch?v=00ROgQUBvxw",
+    "kind": "Overview card (a 35-minute video reading of the paper; no snippet on the card)",
+    "files": {
+     "B6-try.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B6-try.html",
+      "sha256": "a112de34cbba92755c41947414b10fe4b77a5b806c9bc9be462cf3b47e15030e"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:06Z",
+     "http": 429,
+     "url": "https://www.youtube.com/watch?v=00ROgQUBvxw",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B6-try.html",
+     "raw_sha256": "a112de34cbba92755c41947414b10fe4b77a5b806c9bc9be462cf3b47e15030e",
+     "result": "unreachable: HTTP 429 (YouTube rate limit) on one attempt with the census agent string; no retry by another agent string or route; no transcript fetched. Admitted through its title (the card carries no snippet), §3.1(a)"
+    },
+    "names_operator": "no (title only)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "searches": [
+     "WebSearch (allowed_domains youtube.com) 'The Pile 800GB Dataset for Language Models Paper Read #1 Polymath' (the first result, the exact title)"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "The Pile - An 800GB Dataset for Language Models - [Paper Read #1]",
+    "card_snippet": null
+   },
+   {
+    "id": "B7",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 7",
+    "card": "Hugging Face — The Common Pile v0.1 - Hugging Face",
+    "url": "https://huggingface.co/blog/stellaathena/common-pile",
+    "kind": "Overview card (EleutherAI's announcement of the Common Pile v0.1 on the Hugging Face blog)",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B7.html",
+      "sha256": "f61635d88166583016960937826b8be4ba22ad63508ec3bf9f939a04df172df7"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B7.txt",
+      "sha256": "5fba6db40782af722aaa4577d6856f7205779632088d79a85024a70f3b229a20"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:24Z",
+     "http": 200,
+     "url": "https://huggingface.co/blog/stellaathena/common-pile",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B7.html",
+     "raw_sha256": "f61635d88166583016960937826b8be4ba22ad63508ec3bf9f939a04df172df7",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B7.txt"
+     ]
+    },
+    "names_operator": "yes ('EleutherAI entered the AI scene by releasing the Pile')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL by the card's title (the page's <title> is 'The Common Pile v0.1') and snippet, whose opening sentence is the post's first sentence verbatim.",
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 7
+     }
+    ],
+    "card_title": "The Common Pile v0.1 - Hugging Face",
+    "card_snippet": "Four and a half years ago, EleutherAI entered the AI scene by releasing the Pile: An 800GB Dataset of Diverse Text for Language Modeling. The Pile was unique at..."
+   },
+   {
+    "id": "B8",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 8",
+    "card": "Michael Brenndoerfer — The Pile: Open-Source Training Dataset for LLMs - Interactive",
+    "url": "https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models",
+    "kind": "Overview card (a chapter of Michael Brenndoerfer's online book History of Language AI, published July 23, 2025)",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B8.html",
+      "sha256": "8bbceafb5a18cfa43d1553afeb66274c326b5eae46779f51aad68c234c245407"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B8.txt",
+      "sha256": "2a9b1d6f2c3b1322864064c4a7fdd8484a525a65fceb3ee5109db435187e199b"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:04Z",
+     "http": 200,
+     "url": "https://mbrenndoerfer.com/writing/the-pile-open-source-training-dataset-large-language-models",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B8.html",
+     "raw_sha256": "8bbceafb5a18cfa43d1553afeb66274c326b5eae46779f51aad68c234c245407",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B8.txt"
+     ]
+    },
+    "names_operator": "yes ('EleutherAI, a research collective focused on open-source AI'; 'led by researchers including Leo Gao')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "URL found by WebSearch on the card's title; the page's <title> is the card's title verbatim. The snippet's 'resolve data fragmenta...' is a card-renderer summary.",
+    "searches": [
+     "WebSearch 'Michael Brenndoerfer \"The Pile: Open-Source Training Dataset for LLMs\" Interactive'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "the-pile-dataset-aio-20261101",
+      "card": 8
+     }
+    ],
+    "card_title": "The Pile: Open-Source Training Dataset for LLMs - Interactive",
+    "card_snippet": "Overview: EleutherAI's The Pile (2021) is an 825GB open-source training dataset designed to democratize large language model research and resolve data fragmenta..."
+   },
+   {
+    "id": "B9",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census own page the-pile--paper (the arXiv abstract page of the paper); not surfaced by T, whose card 5 is the paper's PDF on the Pile's host",
+    "card": "arXiv — The Pile: An 800GB Dataset of Diverse Text for Language Modeling (abstract page; census source)",
+    "url": "https://arxiv.org/abs/2101.00027",
+    "kind": "the paper's arXiv abstract page, read by the census",
+    "files": {
+     "B9.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B9.html",
+      "sha256": "5741c3c9cdc41ae5bf4510939ac92fe315734470bc076d149dd06d27725061d6"
+     },
+     "B9.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B9.txt",
+      "sha256": "6619464438c52d1b489ebf4248e07a98109f75fc20481f0c8ba74870b2e8e334"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:50Z",
+     "http": 200,
+     "url": "https://arxiv.org/abs/2101.00027",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B9.html",
+     "raw_sha256": "5741c3c9cdc41ae5bf4510939ac92fe315734470bc076d149dd06d27725061d6",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B9.txt"
+     ],
+     "census_copy": {
+      "src": "the-pile--paper",
+      "sha256": "5741c3c9cdc41ae5bf4510939ac92fe315734470bc076d149dd06d27725061d6",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "yes ('by Leo Gao and 11 other authors')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); B9.txt is the census's text. The same work as card 5 (B5); its abstract is one lineage with B5's (§3.6), and it adds the submission date and the author count. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B10",
+    "origin": "census_third_party",
+    "pool": "B_R",
+    "role": "census third-party source data-portraits--arxiv (Marone and Van Durme, Data Portraits, arXiv:2303.03919, read by the census for this row's evidence data_portraits); not surfaced by T",
+    "card": "arXiv — Data Portraits: Recording Foundation Model Training Data (census source)",
+    "url": "https://arxiv.org/abs/2303.03919",
+    "kind": "a paper that documents the Pile with data-sketch tools, a third party read by the census",
+    "files": {
+     "B10.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B10.html",
+      "sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90"
+     },
+     "B10.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B10.txt",
+      "sha256": "cc5ddcc8fb7f00626127990cb5a61811cc22c033a0c8f373a1017d3258aa396e"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T05:07:12Z",
+     "http": 200,
+     "url": "https://arxiv.org/abs/2303.03919",
+     "raw": "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B10.html",
+     "raw_sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/the-pile-20261101/B10.txt"
+     ],
+     "census_copy": {
+      "src": "data-portraits--arxiv",
+      "sha256": "0a499acc8164a2d26699162d1c8a5890c9bd74686f68d213fac02b5e5fc79b90",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "no (names the Pile and the Stack, and its own authors)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest). A reference source (§0.3). Data Portraits is its own census row (data-portraits) and a distinct entity.",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What is the Pile?",
+   "quote": "The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together.",
+   "claim": "its own definition: a 825 GiB open source language modelling data set of 22 smaller datasets combined",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: 22 datasets combined",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "title",
+   "quote": "An 800GB Dataset of Diverse Text for Language Modeling",
+   "claim": "its title gives 800GB",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the size given three ways",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Download",
+   "quote": "The Pile is hosted by the Eye. … Download Pile",
+   "claim": "hosted by the Eye, with a download link",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "where it is held",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Download",
+   "quote": "The format of the Pile is jsonlines data compressed using zstandard.",
+   "claim": "jsonlines compressed with zstandard",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: 22 datasets combined",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Why is the Pile a good training set?",
+   "quote": "In our evaluations, not only do models trained on the Pile show moderate improvements in traditional language modeling benchmarks, they also show significant improvements on Pile BPB.",
+   "claim": "models trained on it improve moderately on traditional benchmarks and significantly on Pile BPB",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what a model trained on it makes",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Why is the Pile a good benchmark?",
+   "quote": "Pile BPB is a measure of world knowledge and reasoning ability in these domains, making it a robust benchmark of general, cross-domain text modeling ability for large language models.",
+   "claim": "Pile BPB defined as a measure of world knowledge and reasoning across its domains",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the benchmark: Pile BPB",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Why is the Pile a good benchmark?",
+   "quote": "To score well on Pile BPB (bits per byte), a model must be able to understand many disparate domains including books, github repositories, webpages, chat logs, and medical, physics, math, computer science, and philosophy papers.",
+   "claim": "its domains: books, code, webpages, chat logs, and papers in medicine, physics, mathematics, computer science and philosophy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the benchmark: Pile BPB",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Citing",
+   "quote": "If you use the Pile or any of the components, please cite us!",
+   "claim": "users of the Pile or any component are asked to cite the Pile",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "how a work in it is named",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Leaderboard",
+   "quote": "* indicates potential test-set overlap. Zero-shot indicates that not all of the components of the Pile were present in the training data. … GPT-3 (Zero-Shot)* OpenAI 0.7177",
+   "claim": "the leaderboard: GPT-3 zero-shot 0.7177, marked for potential test-set overlap",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the benchmark: Pile BPB",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "EleutherAI 2021",
+   "claim": "the footer: EleutherAI 2021",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "date": "undated (the page as fetched 2026-11-01; footer EleutherAI 2021)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 d87aa4098ea3da97…) or the card's snippet, whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Pile is an 886 GB diverse, open-source dataset of English text created to train large language models (LLMs). It was constructed by EleutherAI in 2020 and publicly released on December 31 of that year.",
+   "claim": "an 886 GB open-source dataset of English text to train LLMs, built by EleutherAI and released 31 December 2020",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: 22 datasets combined",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "It is composed of 22 sub-datasets, including books, movie transcripts, and scientific papers, among other media.",
+   "claim": "22 sub-datasets, among them books, movie transcripts and scientific papers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Pile and Common Crawl had been, as of 2024, the two main training datasets being used to train AI models.",
+   "claim": "with Common Crawl, one of the two main training datasets as of 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its standing among training corpora",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Copyright disputes centering around use of The Pile escalated in 2023, prompting Eleuther to start removing some datasets.",
+   "claim": "copyright disputes escalated in 2023; EleutherAI began removing datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Books3: source, takedown, suit",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Training on copyrighted works or derivatives",
+   "quote": "The Books3 component of the dataset contains copyrighted material compiled from Bibliotik, a piracy website.",
+   "claim": "Books3 holds copyrighted material compiled from Bibliotik, a piracy website",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "Books3: source, takedown, suit",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Training on copyrighted works or derivatives",
+   "quote": "In July 2023, the Danish anti-piracy group Rights Alliance took down Books3 through DMCA notices.",
+   "claim": "the Rights Alliance took Books3 down by DMCA notices, July 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Books3: source, takedown, suit",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Training on copyrighted works or derivatives",
+   "quote": "Books3 was removed from the Pile before a class action lawsuit was filed in 2024 by three authors seeking damages as copies of the original dataset were still copied and available on the web.",
+   "claim": "Books3 removed before three authors filed a class action in 2024; copies still circulated",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "Books3: source, takedown, suit",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Training on copyrighted works or derivatives",
+   "quote": "By 2024, The Pile also was taken down from its original site, though was accessible from other file sharing services.",
+   "claim": "taken down from its original site by 2024, still on file-sharing services",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "where it is held",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Training on copyrighted works or derivatives",
+   "quote": "OpenSubtitles is another dataset used in the Pile that created controversy over the use of copyrighted works, this time from documentaries, movies, television and online videos.",
+   "claim": "OpenSubtitles: controversy over copyrighted documentaries, films, television and online video",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "subtitles: OpenSubtitles and YouTube",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Training on copyrighted works or derivatives",
+   "quote": "Tens of thousands of YouTube videos had their subtitles scraped directly from YouTube and included in the Pile, which YouTube argued is against its terms of service.",
+   "claim": "subtitles of tens of thousands of YouTube videos scraped into it, against YouTube's terms by YouTube's account",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "subtitles: OpenSubtitles and YouTube",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Sub-datasets table",
+   "quote": "Sub-datasets of The Pile[1][11] (*denotes works with copyright disputes) … Pile-CC 243.87 … Books3 108.40 … GitHub* 102.18 … Gutenberg (PG-19) 11.68 … Total 886.03",
+   "claim": "the component table in GB: Pile-CC 243.87, Books3 108.40, GitHub 102.18, PG-19 11.68, total 886.03",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the size given three ways",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Sub-datasets table, asterisks",
+   "quote": "PubMed Central* 96.93 … Books3 108.40 … OpenSubtitles 13.94 … YouTube Subtitles*[4] 4.01",
+   "claim": "the table's asterisk for copyright disputes marks PubMed Central and YouTube Subtitles and leaves Books3 and OpenSubtitles unmarked",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Books3: source, takedown, suit",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia",
+   "mark": {
+    "mark": "internally_inconsistent",
+    "with": [
+     "F15",
+     "F19"
+    ],
+    "note": "the table's asterisk 'denotes works with copyright disputes' and leaves Books3 and OpenSubtitles unmarked, where the article's prose gives both as the components of the copyright disputes (§4.3; both loci cited)"
+   }
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Common Pile v0.1",
+   "quote": "In June 2025, EleutherAI, in partnership with the Poolside, Hugging Face, and the US Library of Congress and over two dozen researchers at 14 institutions including the University of Toronto, MIT, CMU, the Vector Institute and the Allen Institute for AI, released Common Pile v0.1, a training dataset that contains only works where the licenses permit their use for training AI models.",
+   "claim": "Common Pile v0.1, June 2025, EleutherAI with partners: only works whose licences permit AI training",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Common Pile v0.1",
+   "quote": "The intent was to show what is possible if ethically training AI systems while respecting copyright.",
+   "claim": "its intent: training while respecting copyright",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Eleuther partnered with various organizations to release Common Pile v0.1 in 2025 in order to have a large curated training dataset without the copyright issues.",
+   "claim": "the successor released in 2025 to have a curated dataset without the copyright issues",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2026-08-20 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "This page was last edited on 20 August 2026, at 00:18 (UTC).",
+   "claim": "the article's last edit, 20 August 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia, the cards, the census",
+   "date": "2026-08-20",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 52c9a678e26c2a7f…), the wikitext B2.wiki or the card's snippet, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dataset Summary",
+   "quote": "The Pile is a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together.",
+   "claim": "the dataset card repeats the home page's definition",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: 22 datasets combined",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dataset Card",
+   "quote": "This model card is a work in progress. Please also see our datasheet for more detailed info.",
+   "claim": "the card a work in progress; the datasheet holds more",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "how a work in it is found",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Data Fields",
+   "quote": "meta (dict): Metadata of the data instance with keys: pile_set_name: Name of the subset.",
+   "claim": "a document's metadata names its subset (pile_set_name)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "how a work in it is named",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Who are the source language producers?",
+   "quote": "Who are the source language producers? [More Information Needed]",
+   "claim": "the card leaves the source language producers unstated",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "how a work in it is named",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dataset Curators",
+   "quote": "This dataset was primarily curated by Leo Gao and Stella Biderman, with assistance from other authors of the Pile paper.",
+   "claim": "curated by Leo Gao and Stella Biderman",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Licensing Information; metadata",
+   "quote": "License: other … Please refer to the specific license depending on the subset you use: PubMed Central: MIT License",
+   "claim": "licence other, by subset; only PubMed Central's given (MIT)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence and access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Dataset Viewer; file size",
+   "quote": "The viewer is disabled because this dataset repo requires arbitrary Python code execution. … Total file size: 24.9 kB",
+   "claim": "the viewer disabled; the repository holds 24.9 kB",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how a work in it is found",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Models trained or fine-tuned on EleutherAI/pile",
+   "quote": "Models trained or fine-tuned on EleutherAI/pile … EleutherAI/pythia-160m … EleutherAI/gpt-neo-125m … EleutherAI/gpt-neox-20b … Browse 862 models trained on this dataset",
+   "claim": "models trained on it: Pythia, GPT-Neo, GPT-NeoX; 862 listed",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what a model trained on it makes",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet",
+   "quote": "Dataset: The Pile by EleutherAI (curated by Leo Gao and Stella Biderman). Size: 825 GiB, 100B<1T tokens.",
+   "claim": "the card: 825 GiB, between 100 billion and 1 trillion tokens",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the size given three ways",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 12245289f783db11…) or the card's snippet, whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "January 1, 2021 — The Pile Dataset: The Pile is an 800GB publicly available English text corpus from EleutherAI, designed for training large-scale language models, featuring 22 d...",
+   "claim": "the Reddit card: an 800GB public English corpus from EleutherAI for training large language models, January 1, 2021",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia, the cards, the census",
+   "date": "2021-01-01 (the card)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§1 Introduction",
+   "quote": "To address this need, we introduce the Pile: a 825.18 GiB English text dataset designed for training large scale language models. The Pile is composed of 22 diverse and high-quality datasets, including both established natural language processing datasets and several newly introduced ones.",
+   "claim": "the paper: a 825.18 GiB English text dataset of 22 datasets, established and new",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: 22 datasets combined",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§1 Introduction",
+   "quote": "In addition to its utility in training large language models, the Pile can also serve as a broad-coverage benchmark for cross-domain knowledge and generalization ability of language models.",
+   "claim": "also a broad-coverage benchmark",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the benchmark: Pile BPB",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§1.1 Contributions",
+   "quote": "The introduction of 14 new language modeling datasets, which we expect to be of independent interest to researchers.",
+   "claim": "14 new datasets",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§1 Introduction",
+   "quote": "In addition, we incorporate several existing highquality datasets: Books3 (Presser, 2020), Project Gutenberg (PG-19) (Rae et al., 2019), OpenSubtitles (Tiedemann, 2016), English Wikipedia,",
+   "claim": "existing datasets incorporated: Books3, PG-19, OpenSubtitles, Wikipedia and others",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§2.3 Books3",
+   "quote": "Books3 is a dataset of books derived from a copy of the contents of the Bibliotik private tracker made available by Shawn Presser (Presser, 2020). Bibliotik consists of a mix of fiction and nonfiction books and is almost an order of magnitude … We included Bibliotik because books are invaluable for long-range context modeling research and coherent storytelling.",
+   "claim": "Books3: books from a copy of the Bibliotik private tracker made available by Shawn Presser; fiction and nonfiction; included because books are invaluable for long-range context and storytelling",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "Books3: source, takedown, suit",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§2.12 Project Gutenberg",
+   "quote": "Project Gutenberg is a dataset of classic Western literature. The specific Project Gutenberg derived dataset we used, PG-19, consists of Project Gutenberg books from before 1919 (Rae et al., 2019), which represent distinct styles from the more modern Books3 and BookCorpus.",
+   "claim": "PG-19: Project Gutenberg books from before 1919, classic Western literature",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§2 BookCorpus2",
+   "quote": "a widely used language modeling corpus consisting of books written by “as of yet unpublished authors.”",
+   "claim": "BookCorpus: books by as yet unpublished authors",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§2 Pile-CC",
+   "quote": "Our Common Crawl-based dataset, Pile-CC, uses jusText (Endrédy and Novák, 2013) on Web Archive files (raw HTTP responses including page HTML) for extraction, which yields higher quality output than directly using the WET files (extracted plaintext).",
+   "claim": "Pile-CC: jusText extraction on Common Crawl's Web Archive files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§2 The Pile Datasets",
+   "quote": "we increase the weights of higher quality components, with certain high-quality datasets such as Wikipedia being seen up to 3 times (“epochs”) … 825.18 GiB … 1254.20 GiB",
+   "claim": "components weighted, some seen up to three times; raw 825.18 GiB, effective 1254.20 GiB",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the size given three ways",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F46": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "Our evaluation of the untuned performance of GPT-2 and GPT-3 on the Pile shows that these models struggle on many of its components, such as academic writing. Conversely, models trained on the Pile improve significantly over both Raw CC and CC-100 on all components of the Pile, while improving performance on downstream evaluations.",
+   "claim": "GPT-2 and GPT-3 struggle on many components; models trained on it improve over Raw CC and CC-100 on all components",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what a model trained on it makes",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F47": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§3 Benchmarking",
+   "quote": "Our preferred metric is bits per UTF-8 encoded byte (BPB).",
+   "claim": "its metric: bits per UTF-8 encoded byte",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the benchmark: Pile BPB",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§3 splits",
+   "quote": "it is still possible that some documents are duplicated across the train/validation/test splits.",
+   "claim": "some documents may be duplicated across splits",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the benchmark: Pile BPB",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F49": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "Through an in-depth exploratory analysis, we document potentially concerning aspects of the data for prospective users. We make publicly available the code used in its construction.",
+   "claim": "an exploratory analysis documents concerning aspects of the data; the construction code is public",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it documents of itself",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F50": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "Although one is typically not legally obligated to receive the permission of an author to train a NLP algorithm on their work",
+   "claim": "no legal obligation, typically, to obtain an author's permission to train on the work",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F51": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "Data with authorial consent is data for which the original authors of the work consented to the use of their data, or where a reasonable person could not assume that their data would not be used for purposes such as research.",
+   "claim": "authorial consent defined",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F52": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "We adopted a strict model of consent, where ambiguous or unknown consent is treated as nonconsensual.",
+   "claim": "ambiguous or unknown consent treated as nonconsensual",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F53": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "There are five datasets included in the Pile that were not collected and distributed in a ToS compliant fashion and for which the authors had no ability to consent to their data being used.",
+   "claim": "five datasets neither ToS-compliant nor consented",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F54": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "Book3 and OpenSubtitles are being used in a fashion that is consistent with the terms of service of the data host. However, this is somewhat misleading in that the data host is not authorized to post the data online by the parties … that own it.",
+   "claim": "Books3 and OpenSubtitles ToS-consistent, though the hosts were not authorized by the owners",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F55": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "The Enron Emails dataset was not collected with the permission of the authors, but was collected by the U.S. government as part of a criminal investigation.",
+   "claim": "Enron emails collected without the authors' permission, by the government",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F56": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "The YouTube Subtitles dataset was created by us for this project, using a very popular unofficial API that is both widely used and easily obtainable on Pip, Conda, and GitHub, among other places.",
+   "claim": "YouTube Subtitles made for the project with an unofficial API",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "subtitles: OpenSubtitles and YouTube",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F57": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§6.5 Author Consent and Public Data",
+   "quote": "Given the processing applied and the difficulty of identifying particular files in the Pile, we feel that our use of these datasets does not constitute significantly increased harm beyond that which has already been done by the widespread publication of these datasets.",
+   "claim": "particular files are difficult to identify in it; the authors judge no significantly increased harm",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "how a work in it is found",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F58": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§7.1 Legality of Content",
+   "quote": "noncommercial, not-for-profit use of copyright media is preemptively fair use. Additionally, our use is transformative, in the sense that the original form of the data is ineffective for our purposes and our form of the data is ineffective for the purposes of the original documents.",
+   "claim": "its authors argue fair use: noncommercial and transformative",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorial consent",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F59": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§7.1 Legality of Content",
+   "quote": "Unfortunately, we do not have the metadata necessary to determine exactly which texts are copyrighted, and so this can only be undertaken at the component level. Thus, this should be be taken to be a heuristic rather than a precise determination.",
+   "claim": "no metadata to tell which texts are copyrighted; exclusion only by component, a heuristic",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "how a work in it is found",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F60": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "§7.1 Legality of Content",
+   "quote": "the Pile reproduction code is available and can be used to exclude certain components of the Pile which are inappropriate for the user.",
+   "claim": "the reproduction code can exclude components",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how a work in it is found",
+   "date": "2020-12-31 (the paper, submitted)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F61": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet",
+   "quote": "The Pile: 825.18 GiB English text corpus combining 22 diverse high-quality subsets for training and benchmarking large-scale language models. Composition: 14 ne",
+   "claim": "the card: 825.18 GiB, 22 subsets, for training and benchmarking; 14 new",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (pdftotext of B5.pdf, sha256 4df9c843749391e9…) or the card's snippet, whitespace-normalised"
+  },
+  "F62": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (unreachable video)",
+   "quote": "The Pile - An 800GB Dataset for Language Models - [Paper Read #1]",
+   "claim": "a video reading of the paper (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia, the cards, the census",
+   "date": "undated (title only)",
+   "quote_ok": true,
+   "checked_against": "the card's title (unreachable video; no snippet)"
+  },
+  "F63": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Four and a half years ago, EleutherAI entered the AI scene by releasing the Pile: An 800GB Dataset of Diverse Text for Language Modeling.",
+   "claim": "EleutherAI entered the field by releasing the Pile",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F64": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "But the most important thing was that it was 300 billion GPT-2 tokens that we were actively training a large language model on, by far the largest pretraining dataset ever released by its creators.",
+   "claim": "300 billion GPT-2 tokens, the largest pretraining dataset released by its creators",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what a model trained on it makes",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F65": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "When we released GPT-Neo in early 2021 it was not only the most powerful open source GPT-3-style model in the world, it was also the first LLM trained on data that was publicly released by its creators.",
+   "claim": "GPT-Neo (early 2021), the first LLM trained on data its creators released",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what a model trained on it makes",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F66": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "the case for release",
+   "quote": "Public release of large-scale training datasets is necessary for rigorous scientific work.",
+   "claim": "public release of training datasets necessary for science",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F67": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lawsuits",
+   "quote": "The past several years have seen dozens of lawsuits regarding the use of data in machine learning. These lawsuits have not meaningfully changed data sourcing practices in LLM training, but they have drastically decreased the transparency companies engage in.",
+   "claim": "lawsuits left sourcing unchanged and reduced transparency",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F68": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "announcement",
+   "quote": "Today we are excited to announce the long-awaited release of the successor to the Pile: the Common Pile v0.1. … a 8 TB corpus of openly licensed and public domain text for training large language models.",
+   "claim": "the successor: an 8 TB corpus of openly licensed and public domain text",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F69": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Comma v0.1",
+   "quote": "We find that models trained on the Common Pile v0.1 outperforms models trained on KL3M, OLC, and Common Corpus and performs comparably to ones trained on the Pile or OSCAR.",
+   "claim": "models trained on the successor comparable to models trained on the Pile",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the successor: Common Pile v0.1",
+   "date": "2025-06 (the post; the Common Pile v0.1 paper is dated 5 June 2025 on the page)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 5fba6db40782af72…) or the card's snippet, whitespace-normalised"
+  },
+  "F70": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "summary",
+   "quote": "Covers EleutherAI's The Pile, the early 825GB open-source dataset that broadened access to high-quality training data for large language models.",
+   "claim": "a history chapter: the early 825GB open dataset that broadened access to training data",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "its standing among training corpora",
+   "date": "2025-07-23 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2a9b1d6f2c3b1322…) or the card's snippet, whitespace-normalised"
+  },
+  "F71": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "the solution",
+   "quote": "Legal considerations were addressed through careful licensing review.",
+   "claim": "legal considerations addressed through licensing review",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorial consent",
+   "date": "2025-07-23 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2a9b1d6f2c3b1322…) or the card's snippet, whitespace-normalised",
+   "mark": {
+    "mark": "contested",
+    "with": [
+     "F53",
+     "F54",
+     "F15"
+    ],
+    "note": "B8's 'careful licensing review' against the paper's five datasets neither ToS-compliant nor consented (F53, F54) and Wikipedia's Books3 (F15); both composed (P_coh)"
+   }
+  },
+  "F72": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "impact",
+   "quote": "Groups like EleutherAI used The Pile to train models including GPT-Neo and GPT-J.",
+   "claim": "GPT-Neo and GPT-J trained on it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what a model trained on it makes",
+   "date": "2025-07-23 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2a9b1d6f2c3b1322…) or the card's snippet, whitespace-normalised"
+  },
+  "F73": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "the solution",
+   "quote": "They included arXiv papers, literature from Books3, code repositories, forum discussions, and specialized legal or mathematical material.",
+   "claim": "literature from Books3 among its components",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the components",
+   "date": "2025-07-23 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2a9b1d6f2c3b1322…) or the card's snippet, whitespace-normalised"
+  },
+  "F74": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "limitations",
+   "quote": "Filtering did not remove all source bias, including gender and racial biases as well as uneven cultural and geographic representation.",
+   "claim": "filtering left gender, racial, cultural and geographic bias",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it documents of itself",
+   "date": "2025-07-23 (published)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2a9b1d6f2c3b1322…) or the card's snippet, whitespace-normalised"
+  },
+  "F75": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "abstract page",
+   "quote": "[Submitted on 31 Dec 2020] … by Leo Gao and 11 other authors",
+   "claim": "submitted 31 December 2020 by Leo Gao and eleven others",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who made it",
+   "date": "2020-12-31",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 6619464438c52d1b…), whitespace-normalised"
+  },
+  "F76": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "an 825 GiB English text corpus targeted at training large-scale language models. The Pile is constructed from 22 diverse high-quality subsets -- both existing and newly constructed -- many of which derive from academic or professional sources.",
+   "claim": "the abstract: an 825 GiB English corpus of 22 subsets, many from academic or professional sources",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: 22 datasets combined",
+   "date": "2020-12-31",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text, sha256 6619464438c52d1b…), whitespace-normalised"
+  },
+  "F77": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "it can be difficult to answer the straightforward question: has the model already encountered a given example during training?",
+   "claim": "whether a model encountered a given example in training is hard to answer",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "how a work in it is found",
+   "date": "2023-03-06 (v1; v2 2023-12-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (the census's text, sha256 cc5ddcc8fb7f0062…), whitespace-normalised"
+  },
+  "F78": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "Using our tools, we document a popular language modeling corpus (The Pile) and a recently released code modeling dataset (The Stack). We show that our solution enables answering questions about test set leakage and model plagiarism.",
+   "claim": "Data Portraits documents the Pile with data-sketch tools for leakage and plagiarism questions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "how a work in it is found",
+   "date": "2023-03-06 (v1; v2 2023-12-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (the census's text, sha256 cc5ddcc8fb7f0062…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "The Pile — The Pile",
+  "B2": "Wikipedia — The Pile (dataset) - Wikipedia",
+  "B3": "Hugging Face — EleutherAI/pile · Datasets at Hugging Face",
+  "B4": "Reddit·r/MachineLearning — [R] The Pile: An 800GB Dataset of Diverse Text for Language Modeling - Reddit",
+  "B5": "The Pile — The Pile: An 800GB Dataset of Diverse Text for Language Modeling",
+  "B6": "YouTube·The Polymath — The Pile - An 800GB Dataset for Language Models - [Paper Read #1]",
+  "B7": "Hugging Face — The Common Pile v0.1 - Hugging Face",
+  "B8": "Michael Brenndoerfer — The Pile: Open-Source Training Dataset for LLMs - Interactive",
+  "B9": "arXiv — The Pile: An 800GB Dataset of Diverse Text for Language Modeling (abstract page; census source)",
+  "B10": "arXiv — Data Portraits: Recording Foundation Model Training Data (census source)"
+ }
+}

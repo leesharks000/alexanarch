@@ -1,0 +1,36 @@
+{
+  "row": "books3-search",
+  "address": "Books3",
+  "entity": "Books3 search (The Atlantic): the search tool The Atlantic carries over the Books3 collection, by which a reader can check whether a given book is in it; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/books3-search), whose saved sources could not be read; at the query 'Books3' the composition answered about the collection (reached proximal_substitute)",
+  "row_type": "C (a public entity on which the archive bears: a search tool over a training collection of books, carried by a magazine; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure', record_type 'tool')",
+  "aliases": [
+    {"pattern": "\\bBooks3\\b", "flags": "i"},
+    {"pattern": "\\bAI Watchdog\\b", "flags": ""},
+    {"pattern": "\\bBibliotik\\b", "flags": ""},
+    {"pattern": "\\bShawn Presser\\b", "flags": ""}
+  ],
+  "classes": [
+    {
+      "term": "book collections used to train language models (training corpora of books)",
+      "pattern": "\\b(The Pile|BookCorpus|Books[12]\\b|pre-?training (data ?sets?|corpora|corpus)|training (data ?sets?|corpora|corpus) of books|books? (used|scraped) (to train|for training|as training data)|trained on (\\w+ )?books)",
+      "flags": "",
+      "basis": "field: B5 (Wikipedia, The Pile: 'an 886 GB diverse, open-source dataset of English text created to train large language models'; 'The Books3 component of the dataset contains copyrighted material compiled from Bibliotik'); B3 (Schoppert: 'the Books3 dataset, part of The Pile, that was used to train Facebook's new model, LLaMA'); B4 (Knibbs: 'Books3 swiftly became a popular training data set'); B6 (Gottlieb: 'books used without permission to train generative AI systems'). The census's record.in_layer for the entity (census.json rows[slug == 'books3-search'].record.in_layer) and its area 'corpora' (census.json areas.corpora)."
+    },
+    {
+      "term": "pirated and shadow-library books in training data",
+      "pattern": "\\b(shadow librar\\w+|pirat\\w+ (books?|e-?books|copies|material|works|content|texts?)|BitTorrent|Library Genesis|LibGen|piracy websites?)\\b",
+      "flags": "i",
+      "basis": "field: B4 (Knibbs: 'an online “shadow library” like Library Genesis, which offers a vast repository of pirated text'; 'a shadow library called Bibliotik'); B5 (Wikipedia: 'Bibliotik, a piracy website'); B3 (Schoppert: 'a cache with large numbers of pirated ebooks'; 'downloaded from a BitTorrent server'). The census's record.in_layer ('compiled from Bibliotik, a piracy website') for the entity."
+    },
+    {
+      "term": "training-data membership: whether a given work is in a training set, and the tools and tests that answer it",
+      "pattern": "\\b(membership inference|membership test\\w*|training[- ]data transparency|copyright traps?|(was|were|been) (used|included) (to train|in (the )?training)|in (the|a|its) training (set|data|corpus))\\b",
+      "flags": "i",
+      "basis": "field: B3 (Schoppert, 'Has your book been used to train the AI?': 'a list of some 85,000 ~125,000 ISBNs of books used to train LLMs up on Github for the use of anyone looking to understand more about what books have been used as training data'); B4 (Knibbs: 'Without that information, it’s next to impossible for people to prove that their data was used'; Spawning's 'Have I Been Trained?' search engine). The census's question for the entity ('training membership: is a given book in the Books3 collection?', census.json rows[slug == 'books3-search'].question) and its area 'finding' ('Inspection: tools and methods that test whether a work is in a training set or a model', census.json areas.finding)."
+    }
+  ],
+  "classes_note": "Three classes, each sourced from the field B and the census record: (1) book collections used to train language models (B3, B4, B5, B6; census record.in_layer, area 'corpora'); (2) pirated and shadow-library books in training data (B3, B4, B5; census record.in_layer); (3) training-data membership and the tools that test it (B3, B4; census question and area 'finding'). The census leaves the row's areas empty because no read source shows what the tool does; the classes rest on the census's question and record and on the cards that concern the collection. The aliases are the collection's name (the address), the card's name for The Atlantic's tool page ('AI Watchdog', card 1's title), the shadow library the collection was compiled from (B4, B5) and its maker (B3, B4): the last two are searched as aliases of the collection, a distinct entity from the tool, and a hit is read for what it says of either. The Pile, EleutherAI, The Atlantic's reporting and Spawning's Have I Been Trained? are distinct entities. #186 and #1543, the census's anchors, are read at the passages on training corpora, inspection and tracing, and writing addressed to a machine reader. Admission by reading (§3.4): D where a deposit names the collection or the tool and says something of it; R where it states a relation between either and an archive object; O-class where a sentence applies an archive category (provenance erasure, extraction, the training loop, training inscription and its measurement) to one of the three classes; the archive's deposit footer 'intended for inclusion in AI training corpora' is a statement of the deposit's own address and not a claim on these classes.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'Books3' (books3-aio-20261101, OBS-d6f2cde69604, ADDR-46603799c24c), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

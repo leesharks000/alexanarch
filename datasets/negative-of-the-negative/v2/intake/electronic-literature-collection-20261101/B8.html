@@ -1,0 +1,182 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB">
+<head>
+	<title>Electronic Literature Collection, Volume 3</title>
+
+	<!--favicons -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="images/favicons/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="images/favicons/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="&nbsp;"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF" />
+	<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+	<!--metatags -->
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta name="description" content="The ELC3 is a mirror of a specific moment in time occurring across continents, languages, and platforms during the second decade of the twenty-first century. This collection parallels the works collected, operating in symbiotic relation with programs and processes, images and texts, readers and writers—and you." />
+	<meta name="keywords" content="e-lit, electronic literature, new media, electronic literature organization, digital media" />
+	<meta name="robots" content="index, follow" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<!--facebook sharing metas -->
+
+	<meta property="og:url" content="http://collection.eliterature.org/3/work.html" /> 
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Electronic Literature Collection - Volume 3" />
+	<meta property="og:description" content="This work is part of the Electronic Literature Collection: Volume 3. Click to view it and its supporting materials." /> 
+	<meta property="og:image" content="http://collection.eliterature.org/3/images/og-share.png" /> 
+	
+	<!--twitter sharing metas --> 
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@eliterature" />
+	<meta name="twitter:title" content="Electronic Literature Collection - Volume 3" />
+	<meta name="twitter:description" content="This work is part of the Electronic Literature Collection: Volume 3. Click to view it and its supporting materials." />
+	<meta name="twitter:image" content="http://collection.eliterature.org/3/images/twitter-share.png" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/colorbox-core.css">
+	<script src="js/jquery-1.12.0.min.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
+	<script src="js/works.js"></script>
+	<script src="js/worksDownload.js"></script>
+	<script src="js/loadData.js"></script>
+
+</head>
+<body id="workBody">
+
+<div id="header" style="text-align:center">
+	<a href="#" id="returnLink">&lt; Return</a>
+	<img id="cover" />
+</div>
+
+<div id="cardHolder">
+	<div id="titleCard" class="card">
+		<h2 id="title"></h1>
+		<div id="authorbox">
+			<h3 id="author"></h3>
+			<h3 id="location"></h3>
+			<a href="#" id="begin">Begin</a>
+			<br/>
+		</div>
+	</div>
+	<div id="artistCard" class="card">
+		<h2>Author(s)</h2>
+		<h3 id="artistStatementLabel">Statement</h3>
+		<div id="statementText"></div>
+		<hr/>
+		<h3 id="bioLabel">Bio</h3>
+		<div id="authorbio"></div>
+	</div>
+<!--
+	<div id="techCard" class="card">
+		<h2>Technical Info</h2>
+		<h3 id="instrLabel">Instructions</h3>
+			<div id="instructions"></div>
+			<hr/>
+		<h3 id="reqLabel">Requirements</h3>
+		<p id="requirements"></p>
+	</div>
+	-->
+	<div id="metadataCard" class="card">
+		<h2>Metadata</h2>
+		<h3 id="workYear"></h3>
+		<h3 id="workLanguage"></h3>
+		<h3 id="tags"></h3>
+		<h3 id="techDetailsLabel">Tech Details</h3>
+		<div id="techDetails"></div>
+	</div>
+
+	<div id="editorialCard" class="card">
+		<h2>Editorial Statement</h2>
+		<div id="editorialStatement"></div>
+	</div>
+
+	<div id="downloadsCard" class="card">
+		<h2>Downloads</h2>
+		<div id="downloadsList"></div>
+	</div>
+
+	<div id="addendaCard" class="card">
+		<h2>Addenda</h2>
+		<h3 id="prevPubLabel">Previous Publication</h3>
+		<div id="previousPub"></div>
+		<hr/>
+		<h3 id="furtherRefLabel">Further References</h3>
+		<div id="ref"></div>
+	</div>
+</div>
+
+<div id="footer">
+	<h3 id="copyrightInfo">Copyright Info</h3>
+	<div id="license"></div>
+</div>
+
+<!--This file has been modified by the Electronic Literature Lab, February 2021 to reflect preservation attempts.-->
+<!-- Scholar's Note -->    
+<!-- Styles for Scholar's Note --> 
+<style>
+    @font-face {font-family: Caveat; src: url(scholars-note/font/Caveat-VariableFont_wght.ttf);} 
+
+    #scholars-note {
+        position: fixed; bottom: 10%; left: 5%; transform: rotate(-5deg); display: none;
+    }
+
+    #scholars-note img {
+        position: relative; width: 300px;
+    }
+
+    #scholars-note p {
+        position: absolute; top: 7%; left: 10%; margin: 0; padding: 0; width: 84%; font-family: Caveat, Arial; font-size: 22px; color: rgba(0,0,0,.9); text-align: left;
+    }
+
+    #close-note-button {
+        margin: auto; position: absolute; top: initial; bottom: 10%; right: 6%; text-align: right; background: none; color: rgba(0,0,0,.65); border: none; padding: 0; font: verdana; cursor: pointer; outline: inherit; font-size: 16px;
+    }
+
+    .close-note {
+        transition: opacity .15s linear; opacity: 0;
+    }
+    
+    #scholar-not-preserved, #scholar-preserved, .custom-scholar-note {
+    	display: none;
+    }
+</style> <!-- End Styles for Scholar's Note -->  
+<div id="scholars-note">
+    <img src="scholars-note/img/sticky-note.png">
+    <p id="scholar-preserved">This Flash work has been preserved with Ruffle by the Electronic Literature Lab in February 2021. When it launches, a <q>play button</q> may appear that you will need to click; after launching it, the work may take time to appear.</p>
+    <p id="scholar-not-preserved">The Electronic Literature Lab could not preserve this Flash work in February 2022. We are looking for a solution and plan to preserve it at a later date.</p>
+    <p id="gabriella-infinita" class="custom-scholar-note">This Flash work has been emulated with Conifer by the Electronic Literature Lab in August 2021. To view this emulation <a target="_blank" href="https://elo.conifer.rhizome.org/_embed_noborder/elo/gabriella-infinita/20210205220821$br:chrome:76/http://eliterature.org/elc3/gabriella-infinita/principal.htm">click here.</a></p>
+    <p id="bacterias-argentinas" class="custom-scholar-note">This Flash work has been preserved with Ruffle by the Electronic Literature Lab in February 2025. However, the external link to the "dynamic grammar network" has not been preserved.</a></p>
+    <p id="looppool" class="custom-scholar-note">This Flash work has been emulated with Conifer by the Electronic Literature Lab in August 2021. To view this emulation <a target="_blank" href="https://elo.conifer.rhizome.org/_embed_noborder/elo/looppool/20210727212046$br:chrome:76/http://www.looppool.de/french_version.htm">click here.</a></p>
+    <p id="velocity" class="custom-scholar-note">This Flash work has been emulated with Conifer by the Electronic Literature Lab in July 2021. Click to view the emulation for <a target="_blank" href="https://elo.conifer.rhizome.org/_embed_noborder/elo/velocity---desprendiendo/20140919151034$br:chrome:76/https://collection.eliterature.org/elc3/works/velocity/desprendiendo/DesprendiendoEnglish2.html">desprendiendo</a> and <a target="_blank" href="https://elo.conifer.rhizome.org/_embed_noborder/elo/velocity---sumergida/20150518131854$br:chrome:76/https://collection.eliterature.org/elc3/works/velocity/sumergida/SumergidaInglesNYU.html">sumergida</a>.</p>
+    <button id="close-note-button">close note</button>
+</div> 
+<script src="scholars-note/js/close-note.js"></script>
+
+<script>
+	loadData();
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-73824040-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+</body>

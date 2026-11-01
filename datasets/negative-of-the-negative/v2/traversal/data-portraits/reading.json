@@ -1,0 +1,320 @@
+{
+ "row": "data-portraits",
+ "pass": "2026-11-01",
+ "first_reading": "first reading, 2026-11-01; second pass with one citation hop from #186 and #1543 (the census anchors, admitted at the passages on corpora, inspection and machine composition)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Data Portraits with the entity named; R, a relation the archive states between Data Portraits and an archive object; O, an archive category applied to Data Portraits or to a class the field and the census source for it (training-data membership testing and inspection: B2, B9, B10, census question and area 'finding'; the training corpora recorded: B2, B9, census area 'corpora', record.in_layer, relation 'uses' the-pile; documentation artifacts: B2, B9, B10, census evidence_kind). #186 and #1543 read at the passages on corpora, inspection and tracing, and machine composition (BRIEF-NEW-ROW-LAYER §6). A bare mention, a keyword list, or a sentence that uses the training corpus as the setting of another claim is not a claim on these classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2: head metadata discarded by extractors preparing training corpora (O0020, class training corpora); no author's style survives as a verifiable signal (O0021); a membership inference attack detects a copyright trap in the training set (O0022, class membership testing, attributed to Meeus et al.); the detection/surfacing divergence as the signature of output-layer suppression (O0027)",
+   "claims": [
+    "O127-01",
+    "O127-02",
+    "O127-03",
+    "O127-04"
+   ],
+   "cands": [
+    "O0020",
+    "O0021",
+    "O0022",
+    "O0027"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "Anchor (#186, Who Is Writing for the Machines?), read whole: 'every one of these texts is, as a matter of fact, in the corpora' (O0061) applies the training-layer category to corpus membership (O-class, training corpora); the persistence criterion (metadata that lets a work be found and attributed) and the partial measurability of reception read at their loci (anchor read)",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03"
+   ],
+   "cands": [
+    "O0061"
+   ]
+  },
+  {
+   "dep": 264,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Exhaustion: every text in a training corpus is semantic labour, uncompensated and often unattributed (O0090, class training corpora)",
+   "claims": [
+    "O264-01"
+   ],
+   "cands": [
+    "O0090"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure §8.3: training data is semantic capital; the datasheet proposal a step toward the accounting the framework demands (O0141, class documentation artifacts)",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0141"
+   ]
+  },
+  {
+   "dep": 727,
+   "strata": [
+    "O"
+   ],
+   "reason": "Political Economy Has Always Already Been Semantic Economy §3.4: a training corpus without provenance is not a commons (O0152, class training corpora)",
+   "claims": [
+    "O727-01"
+   ],
+   "cands": [
+    "O0152"
+   ]
+  },
+  {
+   "dep": 837,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Josephus Thesis MPAI: the canary phrase whose exact production marks the document as present in a model's training corpus (O0210, class membership testing: the archive's own model-side membership test)",
+   "claims": [
+    "O837-01"
+   ],
+   "cands": [
+    "O0210"
+   ]
+  },
+  {
+   "dep": 939,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PROVENANCE-DEBT-01 §1: provenance loss passed downstream into the training corpus (O0233, class training corpora)",
+   "claims": [
+    "O939-01"
+   ],
+   "cands": [
+    "O0233"
+   ]
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-NEGSHAPE-01: the provenance envelope includes every training unit derived from a work, metadata among them (O0269, class training corpora); membership-inference distinguishability achievable in practice (O0270, class membership testing); datasheets and model cards as documentation norms for ML artifacts as such (O0272, class documentation artifacts)",
+   "claims": [
+    "O1075-01",
+    "O1075-02",
+    "O1075-03"
+   ],
+   "cands": [
+    "O0269",
+    "O0270",
+    "O0272"
+   ]
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "Anchor (#1543, Generative Uptake), read at §1, §4 and §10: what a text makes possible for a machine to write; the institutional training loop through corpus_{t+1}; composition separated from provenance; PER beside generative uptake (O-class, training corpora and inspection). The census's tll_reading applies #1543's question to the entity",
+   "claims": [
+    "O1543-01",
+    "O1543-02",
+    "O1543-03",
+    "O1543-04"
+   ],
+   "cands": [
+    "anchor"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/data-portraits-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note, query note, reached-kind basis and dimensional scores for the entity's capture (OBS-103202920b0d, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/data-portraits (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'data-portraits'], organizing_question, admission_rule, areas, anchor)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; where a field restates the abstract (B9) it is one lineage with that source; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 1610,
+   "reason": "The Anti-Summary Test Applied to a Reception: 'the instrument that measures ideology preservation is a membership test' applies the term to a reception instrument; no training-data membership. Read, unadmitted",
+   "cands": [
+    "O0349",
+    "O0350"
+   ]
+  },
+  {
+   "dep": 1486,
+   "reason": "a membership test of a reception chain (Catullus); no training data. Read, unadmitted",
+   "cands": [
+    "O0338"
+   ]
+  },
+  {
+   "dep": 1543,
+   "reason": "§4's 'F(x)'s membership test is the corpus-wide attestation audit itself' applies membership to a transformation family over the archive's own corpus, a different object; recorded in observations, unadmitted at that locus",
+   "cands": [
+    "(string pass: membership test, line 130)"
+   ]
+  },
+  {
+   "dep": "49, 166, 171, 400, 507, 530, 662, 790, 833, 853, 950 (and the other training-corpus sentences)",
+   "reason": "the training corpus as the setting of another claim (what training on the archive's terminology does in a model, scripture's density in the corpus, entity collision, the training objective): none says anything of whether a work is in a corpus, how a corpus keeps a work's name, what a recorded corpus answers or of documentation artifacts. Read by filter and sample, unadmitted",
+   "cands": [
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0038",
+    "O0044",
+    "O0096",
+    "O0127",
+    "O0135",
+    "O0144",
+    "O0175",
+    "O0207",
+    "O0212",
+    "O0243",
+    "O0244",
+    "O0245",
+    "O0246"
+   ]
+  },
+  {
+   "dep": "921, 1287",
+   "reason": "training-data contamination as a limit on the archive's own observations (O0220) and as one explanation of a pattern (O0310): no claim on membership testing. Read, unadmitted",
+   "cands": [
+    "O0220",
+    "O0310"
+   ]
+  },
+  {
+   "dep": "787, 793",
+   "reason": "statements that particular content is or remains in a training corpus (the keeper's protocol; the Mary Lee parable), with no claim on testing, recording or documenting membership. Read, unadmitted",
+   "cands": [
+    "O0170",
+    "O0171",
+    "O0177"
+   ]
+  },
+  {
+   "dep": "725, 1190, 98, 923, 931, 932, 1449, 1684",
+   "reason": "keyword lists naming model cards or datasets, physics training sets and benchmark specifications: bare mentions, or categories applied outside the three classes. Read, unadmitted",
+   "cands": [
+    "O0015",
+    "O0150",
+    "O0151",
+    "O0221",
+    "O0228",
+    "O0229",
+    "O0230",
+    "O0292",
+    "O0293",
+    "O0335",
+    "O0336",
+    "O0356"
+   ]
+  },
+  {
+   "dep": "368, 833 (Bratton, The Stack)",
+   "reason": "'The Stack' as Benjamin Bratton's book, a homonym of the dataset: outside the class",
+   "cands": [
+    "O0095",
+    "O0208"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [],
+  "rejected": "#129, #160, #337, #382, #473, #481, #590, #603, #604, #738, #784, #819, #1409, #1441, #1443, #1521, #1526, #1527, #1528, #1540, #1544, #1545, #1555, #1684, #1709, #1711, #1721, #1722: cited by or citing the anchors on other subjects (traversal logs, the prize, the Sappho translation, handwritten artifacts, provenance transformation at the composition layer, watermarking, the prediction index, the existence tax); #1528 read at its interfaces, none of which is a training-data membership test; none says anything of Data Portraits, membership testing of a training corpus or dataset documentation",
+  "file": "candidates-H.jsonl"
+ },
+ "lineages": [],
+ "observations": [
+  "No deposit names Data Portraits, dataportraits.org, its paper or its authors (D empty); no deposit states a relation between it and an archive object (R empty).",
+  "The archive's membership tests are model-side (the membership attack, the canary phrase, distinguishability between trained models) and its own corpus-wide attestation audits (#1543 §4, Appendix A: 'zero attestations'); the portrait's test is corpus-side. The census keeps the two apart (TLL-27).",
+  "The census's tll_reading quotes \"#186's 'is the work in the layer'\": the phrase is in neither #186 nor #1543 (string search over both texts); #186's nearest statement is 'every one of these texts is, as a matter of fact, in the corpora' (O186-01). Reported, not fixed.",
+  "The class 'training corpora' caught 308 sentences, most with 'training corpus' as the setting of another claim; read by filter (sentences also naming The Pile, The Stack, membership, detection, verification, attribution, names, authors, provenance or tracing) and by sample; 'The Stack' twice as Bratton's book (a homonym)."
+ ],
+ "counts": {
+  "D_candidates": 0,
+  "R_candidates": 0,
+  "O_candidates": 360,
+  "H_candidates": 28,
+  "deposits_admitted": 9,
+  "instances_kept": 0,
+  "deposit_claims": 19,
+  "TLL_claims": 35,
+  "CAP_claims": 11
+ }
+}

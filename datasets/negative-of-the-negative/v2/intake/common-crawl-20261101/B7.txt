@@ -1,0 +1,339 @@
+Inside Common Crawl: The Dataset Behind AI Models (and Its Real World Limits) - DEV Community
+Skip to content
+Navigation menu
+Search
+Powered by Algolia
+Search
+Log in
+Create account
+DEV Community
+Close
+Add reaction
+Like
+Unicorn
+Exploding Head
+Raised Hands
+Fire
+Jump to Comments
+Save
+Boost
+Pick as gem
+More...
+Copy link
+Copy link
+Copied to Clipboard
+Share to X
+Share to LinkedIn
+Share to Facebook
+Share to Mastodon
+Share Post via...
+Report Abuse
+Lakshay Nasa
+for Extract by Zyte
+Posted on Oct 30, 2025
+•
+Edited on Oct 30, 2025
+Inside Common Crawl: The Dataset Behind AI Models (and Its Real World Limits)
+# ai
+# datascience
+# webscraping
+# coding
+You've probably heard that LLMs are "trained on data from the web." But have you ever wonder how they actually get that data?
+Did developers write scrapers to crawl the entire internet - building a massive web scraping solution from scratch?
+For many, the answer is simple: Common Crawl.
+Let’s explore what it is, how it fuels significant porion of AI world, and when to use it instead of building your own scraper.
+What is Common Crawl? 🤔
+Common Crawl is a non profit organization that has been crawling the web since 2008. Its mission is to provide free, large scale, publicly available archives of web data for researchers, developers, and organizations worldwide.
+Think of it as a massive, open source library of the internet. Every month, its crawler, CCBot , scans billions of pages and archives them.
+For instance, the August 2025 crawl added 2.42 billion pages, totaling over 419 TiB of data! This data is stored in Amazon S3 buckets and is accessible to anyone for free.
+Why Common Crawl Matters for AI?
+A 2024 Mozilla report found that 2/3 of 47 generative LLMs released between 2019-2023 relied on Common Crawl data.
+Today, Wikipedia lists over 80 public LLMs, and aggregators like OpenRouter host 500+ models.
+Even if not all disclose their datasets, Common Crawl (and its derivatives like RefinedWeb) are still among the most cited sources.
+💬 In short: if you’ve used a modern LLM model, you’ve indirectly used data from Common Crawl.
+How Common Crawl Organizes Data?
+The data is offered in three main formats:
+Web Archive (WARC) files - the rawest form, containing full HTTP responses (headers, HTML, etc.). Perfect if you need images, HTML parsing, or complete page reconstruction.
+Web Archive Transformations (WAT files) - they like summaries of WARC files. They contain metadata in JSON format, such as all the links on the page, HTTP headers, and response codes. This is useful if you don’t need the full page, but want structured information like which URLs link to which pages.
+Web Extracted Text (WET files) - plain text extracted from WARC files (no HTML or media). Ideal for NLP or training text based models.
+How to Fetch a Page from Common Crawl?
+Fetching archived pages from Common Crawl is easier than it sounds.
+It’s a simple three step process, and the logic is the same no matter what website you’re looking at.
+I’ve been researching good graphics cards, and while browsing I found this collection page: https://computerorbit.com/collections/graphics-cards . It lists all sorts of GPUs and variants.
+Now I was curious, how does this page look inside Common Crawl’s archives?
+Let’s try to find and fetch its archived version.
+Import these first
+import requests
+import json
+from warcio.archiveiterator import ArchiveIterator
+Enter fullscreen mode
+Exit fullscreen mode
+Step 1: Common Crawl and Index Retrieval
+Before fetching any page, we first need to know which crawl (index) it belongs to.
+Common Crawl organizes its data into periodic crawls, for example, CC-MAIN-2025-33 or CC-MAIN-2025-19 . Each crawl corresponds to a time period. For example, CC-MAIN-2025-33 means it’s the 33rd crawl of 2025.
+So first, we’ll fetch a list of available indexes.
+# --- Step 1: Find a valid Common Crawl index ---
+def get_available_indexes ():
+""" Fetches the list of all available Common Crawl index collections. """
+print ( " [*] Fetching list of available Common Crawl indexes... " )
+collections_url = " https://index.commoncrawl.org/collinfo.json "
+try :
+response = requests . get ( collections_url , timeout = 30 )
+response . raise_for_status ()
+collections = response . json ()
+cdx_indexes = [ col [ ' cdx-api ' ] for col in collections if ' cdx-api ' in col ]
+cdx_indexes . sort ( reverse = True )
+print ( f " [+] Found { len ( cdx_indexes ) } available indexes. " )
+return cdx_indexes
+except requests . exceptions . RequestException as e :
+print ( f " [!] Error fetching collection info: { e } " )
+return []
+Enter fullscreen mode
+Exit fullscreen mode
+Here's what's happening:
+We make a simple HTTP request to index.commoncrawl.org to get the list of all crawl indexes.
+The response includes all the **CDX API URLs** , those are the entry points to query each crawl.
+We then sort them in reverse (newest first), so we always check the latest crawls first.
+💡 Think of this step as checking the table of contents of a huge web archive library.
+It doesn’t give us the actual page yet - it only tells us which index might contain our target page.
+Once we locate that index, we’ll move to **data.commoncrawl.org** to download the actual HTML in the next step.
+Step 2: Querying the Common Crawl Index
+Now that we have the list of indexes, we’ll search for our target URL in one of them.
+# --- Step 2: Query the index to find the page data for the target URL ---
+def get_cc_captures ( url , index_url ):
+""" Queries a specific Common Crawl Index for captures of a URL. """
+print ( f " [*] Querying index: { index_url } ... " )
+params = {
+' url ' : url ,
+' output ' : ' json ' ,
+' filter ' : ' =status:200 ' ,
+' fl ' : ' filename,offset,length,timestamp '
+}
+try :
+response = requests . get ( index_url , params = params , timeout = 30 )
+response . raise_for_status ()
+if not response . text . strip ():
+print ( f " [-] No captures found for { url } in this index. " )
+return []
+captures = [ json . loads ( line ) for line in response . text . strip (). split ( ' \n ' )]
+captures . sort ( key = lambda item : item [ ' timestamp ' ], reverse = True )
+print ( f " [+] Found { len ( captures ) } captures in this index. " )
+return captures
+except requests . exceptions . RequestException as e :
+print ( f " [-] Warning: Could not query index { index_url } . Error: { e } " )
+return []
+Enter fullscreen mode
+Exit fullscreen mode
+Here’s what we’re doing:
+We query one specific index to find captures of our target URL.
+The parameters tell Common Crawl what we want:
+url : The target page.
+output=json : Return metadata in JSON format (not the page itself).
+filter=status:200 : Only include successful responses.
+fl : The specific fields we need (filename, offset, length, timestamp).
+The response gives us metadata about where the actual HTML is stored.
+Each result tells us:
+Which WARC file to fetch ( filename )
+The byte range of our page in that file ( offset , length )
+Whe n it was captured ( timestamp )
+💡 This step was like finding a book in a massive library.
+Step 3: Retrieving the Archived Content
+Now that we know where our page lives, let’s fetch it.
+Common Crawl stores everything in large WARC files on Amazon S3, but we don’t want to download those huge files entirely, they’re hundreds of gigabytes.
+So instead, we’ll use a byte-range request to fetch just the part that contains our page.
+# --- Step 3: Download the raw HTML from the archive (No changes needed) ---
+def get_html_from_capture ( capture ):
+""" Downloads a specific record from a WARC file and returns its HTML. """
+if not capture :
+return None
+filename = capture [ ' filename ' ]
+offset = int ( capture [ ' offset ' ])
+length = int ( capture [ ' length ' ])
+s3_url = f " https://data.commoncrawl.org/ { filename } "
+range_header = f " bytes= { offset } - { offset + length - 1 } "
+print ( f " [*] Fetching data from { s3_url } with range { range_header } ... " )
+try :
+response = requests . get ( s3_url , headers = { ' Range ' : range_header }, timeout = 60 , stream = True )
+response . raise_for_status ()
+temp_filename = " temp_warc.gz "
+print ( f " [*] Saving downloaded chunk to ' { temp_filename } ' ... " )
+with open ( temp_filename , " wb " ) as f :
+for chunk in response . iter_content ( chunk_size = 8192 ):
+f . write ( chunk )
+print ( f " [+] Successfully saved data to ' { temp_filename } ' . " )
+print ( " [*] Decompressing and parsing WARC record from local file... " )
+with open ( temp_filename , " rb " ) as f :
+archive_iterator = ArchiveIterator ( f )
+for record in archive_iterator :
+if record . rec_type == ' response ' :
+print ( " [+] Successfully parsed WARC record. " )
+return record . content_stream (). read (). decode ( ' utf-8 ' , errors = ' ignore ' )
+except Exception as e :
+print ( f " [!] An error occurred during the process: { e } " )
+return None
+Enter fullscreen mode
+Exit fullscreen mode
+Each capture record tells us which WARC file our page is stored in ( filename ) and where inside that file ( offset , length ).
+We build the S3 URL using those values and add a Range header so we only download that small slice of the file.
+The downloaded chunk is temporarily saved locally as temp_warc.gz .
+We then open it with ArchiveIterator , which allows us to read the compressed archive and extract the HTML from the response record.
+💡 Now we’re finally opening the book and reading the page we were looking for, without carrying the whole library home.
+So, Step 1 and 2 tell us where to look, and Step 3 actually retrieves the HTML of the page, efficiently and precisely.
+Running It All Together
+Now let’s tie everything together.
+# --- Main execution block ---
+if __name__ == " __main__ " :
+# Example target (replace with your site)
+target_url = ' computerorbit.com/collections/graphics-cards '
+all_indexes = get_available_indexes ()
+if not all_indexes :
+print ( " [!] Could not retrieve list of Common Crawl indexes. Exiting. " )
+else :
+captures = []
+# Try the 5 most recent indexes until a result is found
+for index_url in all_indexes [: 5 ]:
+captures = get_cc_captures ( target_url , index_url )
+if captures :
+print ( f " [*] Success! Found captures in index { index_url } " )
+break
+if captures :
+latest_capture = captures [ 0 ]
+print ( f " [*] Using most recent capture from { latest_capture [ ' timestamp ' ] } " )
+html = get_html_from_capture ( latest_capture )
+if html :
+with open ( " page.html " , " w " , encoding = " utf-8 " ) as f :
+f . write ( html )
+print ( " [+] Saved archived HTML as page.html " )
+else :
+print ( f " [!] No captures found for { target_url } in recent crawls. " )
+Enter fullscreen mode
+Exit fullscreen mode
+When you run this, you’ll get the archived HTML of your target page saved locally as page.html .
+You can open that file, inspect its contents, or later build a parser around it to extract specific data (like product names or article text).
+🖼️ Sample Output (Common Crawl)
+The output you get here is historical, it reflects how the page looked when Common Crawl last captured it.
+For live, real time data, we’ll now look at how this compares with a scraper built using Zyte’s API .
+Common Crawl vs. Building Your Own Scrapers: Which Should You Use?
+Common Crawl gives you access to web data at scale without worrying about proxies or blocks. Perfect for analysis, research, or benchmarking.
+However, it comes with its own set of challenges.
+The biggest one? Freshness.
+What if you want fresh, real time data - for example, to check which new graphics cards were added this week or latest cost ?
+That’s where your own scraper makes all the difference.
+Lets build a quick scraper for the same page and get the latest structured data instantly. We’ll use auto extract feature. Learn more about it in, here: Zyte API automatic extraction
+import requests
+import json
+import os
+from dotenv import load_dotenv
+load_dotenv ()
+ZYTE_API_KEY = os . getenv ( " ZYTE_API_KEY " )
+product_url = (
+" https://computerorbit.com/collections/graphics-cards "
+)
+api_response = requests . post (
+" https://api.zyte.com/v1/extract " ,
+auth = ( ZYTE_API_KEY , "" ),
+json = {
+" url " : product_url ,
+" productList " : True
+},
+)
+products = api_response . json ()[ ' productList ' ][ ' products ' ]
+print ( products )
+print ( len ( products ))
+output_file = " z_products.json "
+with open ( output_file , " w " , encoding = " utf-8 " ) as f :
+json . dump ( products , f , ensure_ascii = False , indent = 4 )
+print ( f " Products saved to { output_file } " )
+Enter fullscreen mode
+Exit fullscreen mode
+🖼️ Sample Output (Fresh Data Scraper)
+Here, you can clearly see the fresh products and updated prices that weren’t present in Common Crawl’s archive.
+And while freshness is one of the biggest challenges with Common Crawl, it’s not the only one.
+Other Challenges with Common Crawl
+Duplicate Data
+Common Crawl captures the same pages across multiple crawls, sometimes hundreds of times.
+This means a lot of duplicate data that needs deduplication before use.
+“ DeepSeek alone removed nearly 90% of repeated content across 91 Common Crawl dumps, just so it could train on high quality, diverse text.” Link
+Messy Data
+WARC files often contain ads, cookie banners, or partial HTML responses. You’ll need heavy preprocessing and filtering to get clean text or structured data.
+Scale
+Common Crawl data is measured in petabytes . Great for large research labs, but not always practical for smaller projects or individual developers.
+Bias
+Crawl frequency and seed URLs shape what gets captured.
+So, some domains or regions are overrepresented while others barely appear.
+Together, these make Common Crawl an incredible but challenging dataset excellent for research and experimentation, but rarely “ plug and play .”
+And that’s where your own scrapers , really shine. Let’s compare the two approaches side by side.
+When to Use What
+Use Common Crawl if...
+Use Scraping APIs / Your Own Crawlers if...
+You need vast amounts of raw, non specific data
+You need fresh, up to date data
+You’re doing research, LLM pretraining , or large scale analysis
+You want consistent completeness (e.g., every product or listing captured)
+You want access to historical web archives
+You need structured data outputs like JSON or CSV
+You’re exploring academic or experimental projects that don’t require perfection
+You’re targeting specific sites or datasets for production use
+Wrapping Up
+Common Crawl is one of the most fascinating resources on the web - a time capsule of billions of pages, freely available for anyone to explore. It’s the foundation of countless research projects, datasets, and even large language models.
+But as we’ve seen, it’s not perfect.
+Its data is archived, not live, and working with it often means dealing with duplicates, noise, and scale. That’s fine if your goal is analysis or experimentation, but not if you need production grade, real time insights.
+That’s where modern scraping solutions like Zyte’s API make all the difference. Instead of wading through terabytes of historical data, you can fetch fresh, structured, ready to use information from web in seconds.
+It’s all about picking the right tool for the job.
+If you enjoyed this, you’ll fit right in at the Extract Data Discord - a 20,000+ strong community of builders, scrapers, and data nerds exploring the web together.
+Thank you for reading! 😄
+Top comments (0)
+Subscribe
+Personal
+Trusted User
+Create template
+Templates let you quickly answer FAQs or store snippets for re-use.
+Submit
+Preview
+Dismiss
+Some comments may only be visible to logged-in visitors. Sign in to view all comments.
+Code of Conduct
+•
+Report abuse
+Are you sure you want to hide this comment? It will become hidden in your post, but will still be visible via the comment's permalink .
+Hide child comments as well
+Confirm
+For further actions, you may consider blocking this person and/or reporting abuse
+Extract by Zyte
+Follow
+Access the web's data. Clean, ready, and at scale.
+zyte.com
+More from Extract by Zyte
+Scrapy vs BeautifulSoup vs Selenium vs Playwright: which should you use?
+# python
+# webscraping
+# scrapy
+# tutorial
+How I use Zyte MCP to plan web scrapers
+# webscraping
+# mcp
+# ai
+# scrapy
+DEV Community — A space to discuss and keep up software development and manage your software career
+Home
+DEV Challenges
+DEV++
+Videos
+DEV Education Tracks
+DEV Help
+Advertise on DEV
+Organization Accounts
+DEV Showcase
+About
+Contact
+Free Postgres Database
+DEV Shop
+MLH
+Code of Conduct
+Privacy Policy
+Terms of Use
+Built on Forem — the open source software that powers DEV and other inclusive communities.
+Made with love and Ruby on Rails . DEV Community © 2016 - 2026.
+We're a place where coders share, stay up-to-date and grow their careers.
+Log in
+Create account

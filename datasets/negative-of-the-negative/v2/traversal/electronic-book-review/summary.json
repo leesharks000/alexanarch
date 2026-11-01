@@ -1,0 +1,149 @@
+{
+ "row": "electronic-book-review",
+ "address": "electronic book review",
+ "entity": "electronic book review (ebr), electronicbookreview.com: in its own words 'a peer-reviewed diamond open access journal of critical writing produced and published by the digital literary network', ISSN 1553-1139, Editor in Chief Joseph Tabbi (University of Bergen), Founding Publisher Mark Amerika; its publications filed in threads (machine-writing, electropoetics, writing under constraint, critical ecologies and others); formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/ebr)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "electronic-book-review",
+  "address": "electronic book review",
+  "entity": "electronic book review (ebr), electronicbookreview.com: in its own words 'a peer-reviewed diamond open access journal of critical writing produced and published by the digital literary network', ISSN 1553-1139, Editor in Chief Joseph Tabbi (University of Bergen), Founding Publisher Mark Amerika; its publications filed in threads (machine-writing, electropoetics, writing under constraint, critical ecologies and others); formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/ebr)",
+  "row_type": "C (a public entity on which the archive bears: a peer-reviewed diamond open access journal of critical writing on the digital futures of literature, theory, criticism and the arts; an entity of the traininglayerliterature.org layer census, host_relation 'theoretical interlocutor')",
+  "aliases": [
+   {
+    "pattern": "\\belectronic book review\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bebr\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\belectronicbookreview\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bebr@30\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "journals and criticism of electronic literature and digital textuality",
+    "pattern": "\\b(electronic literature|e-lit|digital literature|hypertext fiction|electronic textuality|digital textuality|cyberculture)\\b",
+    "flags": "i",
+    "basis": "field: B2 (Wikipedia, Electronic Book Review: 'an interesting web of critical debates on electronic textuality, cyberculture, and the value of digital design literacy'; categories 'Journals related to electronic literature', 'Electronic literature organizations'); B4 (Electronic Literature Directory: the journal entered as an 'e-Lit Resource'); B1 and B5 (the journal's own pages: 'digital futures of literature, theory, criticism, and the arts'; the internet nation thread's 'Electronic Literature and Wikipedia: A Call to Action'). The census's area 'field-history' for the entity (census.json rows[slug == 'ebr'].areas)."
+   },
+   {
+    "term": "criticism of machine writing (machine composition, the poetics of large language models, prompting)",
+    "pattern": "\\b(machine[- ]writing|machine composition|poetics of (large language models|LLMs?|AI)|the prompt as)\\b",
+    "flags": "i",
+    "basis": "field: B1 (the journal's home page: the thread 'machine-writing', its latest post 'AI: A Matter of Significance by Davin Heckman 01-Oct-2026'; 'Stuart Moulthrop approaches the poetics of large language models'; 'The Prompt as Practice by Brian Lennon'). The census's tll_reading for the entity: 'is criticism of machine composition, the wing #1543 names' (rows[slug == 'ebr'].tll_reading)."
+   },
+   {
+    "term": "electronic literature's existence for AI and search engines (presence in Wikipedia as a condition of persistence)",
+    "pattern": "\\b(does not exist (in|for) (AI|Wikipedia|search)|exist(s)? for (AI|search engines)|algorithmic silence|absent from Wikipedia)\\b",
+    "flags": "i",
+    "basis": "field: B1 (the journal's home page: Deena Larsen's essay, 'If electronic literature does not exist in Wikipedia, it does not exist for AI or search engines either'). The census's tll_reading: '#186's persistence criterion stated from within electronic literature' (rows[slug == 'ebr'].tll_reading)."
+   },
+   {
+    "term": "open access journals (diamond open access: no APCs)",
+    "pattern": "\\b(diamond open access|open[- ]access journals?|article processing charges?|APCs)\\b",
+    "flags": "i",
+    "basis": "field: B1 and B5 (the journal's own pages: 'peer-reviewed diamond open access journal'; 'ebr does not charge APCs or submission charges.'); B2 (Wikipedia infobox 'openaccess = Yes'; category 'Open Humanities Press academic journals'); B3 (Open Humanities Press: 'Publishing open access since 1995')."
+   }
+  ],
+  "classes_note": "Four classes: (1) journals and criticism of electronic literature and digital textuality, the journal's kind as Wikipedia and the Electronic Literature Directory give it (B2, B4) and the census's area 'field-history'; (2) criticism of machine writing, the journal's machine-writing thread and the essays its home page carries (B1), which the census reads as criticism of machine composition (#1543's wing); (3) electronic literature's existence for AI and search engines, from Larsen's essay on the home page (B1), read by the census as #186's persistence criterion; (4) open access journals, the journal's own terms (B1, B5) and Wikipedia's and Open Humanities Press's (B2, B3). The aliases are the entity's names (electronic book review; ebr, case-sensitive; ebr@30) and its host (electronicbookreview.com). Joseph Tabbi, Mark Amerika, the digital literary network, the Electronic Literature Organization, CELL and Open Humanities Press are entities distinct from the journal and are not aliases. #186 and #1543, the census's anchors, are read at the passages bearing on the entity's kind (writing addressed to a machine reader, the persistence criterion, the lineages of electronic literature, machine composition). Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the four classes; a bare mention, a citation line or a keyword list is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v0.9 briefs it names; address 'electronic book review' (electronic-book-review-aio-20261101, OBS-9bcf657b4b60, ADDR-35019d5bc36f), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's reading, findings and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+   186,
+   1543
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 2,
+  "D_deposits": 2,
+  "R_sentences": 1,
+  "R_deposits": 1,
+  "O_direct": 1,
+  "O_class": 81,
+  "O_deposits": 52,
+  "H_candidates": 28
+ },
+ "per_deposit": {
+  "D": {
+   "543": 1,
+   "1486": 1
+  },
+  "R": {
+   "543": 1
+  },
+  "O": {
+   "32": 2,
+   "111": 1,
+   "135": 1,
+   "170": 1,
+   "176": 2,
+   "186": 1,
+   "274": 1,
+   "288": 1,
+   "301": 1,
+   "317": 3,
+   "400": 1,
+   "543": 2,
+   "721": 1,
+   "825": 1,
+   "833": 2,
+   "959": 3,
+   "1009": 1,
+   "1039": 1,
+   "1064": 3,
+   "1065": 3,
+   "1066": 3,
+   "1102": 1,
+   "1193": 1,
+   "1384": 2,
+   "1396": 1,
+   "1401": 1,
+   "1409": 2,
+   "1421": 2,
+   "1423": 3,
+   "1443": 1,
+   "1444": 1,
+   "1459": 3,
+   "1525": 2,
+   "1526": 2,
+   "1540": 1,
+   "1543": 5,
+   "1544": 2,
+   "1545": 1,
+   "1547": 1,
+   "1555": 1,
+   "1607": 1,
+   "1608": 1,
+   "1649": 2,
+   "1655": 2,
+   "1657": 1,
+   "1678": 1,
+   "1680": 1,
+   "1684": 1,
+   "1694": 1,
+   "1719": 1,
+   "1721": 1,
+   "1722": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "a2ef23f45735a1dadf92f215a6ea26f2de7355fee1af07b1154912656ca91e5e",
+  "candidates-R.jsonl": "21828e1d204ebe07511e4592f7487a2c3cd8983f47ee7d15e8c8e6a90edfad1e",
+  "candidates-O.jsonl": "85beee1c49f744dd912f8affd759cb84023202f52a9e9256d9b09dfed74c81e4",
+  "candidates-H.jsonl": "66174a0c8a46164d4ab68792177e0c3d7b27acdfd4da9e0ef5bdeb8f3c18bc61"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

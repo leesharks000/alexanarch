@@ -1,0 +1,1522 @@
+{
+ "row": "project-gutenberg",
+ "address": "Project Gutenberg",
+ "addresses": [
+  "Project Gutenberg"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext as a second check text",
+ "B_note": "The field B (§0.4, §3.1(a)) in two pools, kept apart by origin. B_D, the disclosed pool: 'card', every source on T's rail of six inline chips: B1 gutenberg.org (chips 1, 2, 5; the home page, identified by the chips' spans), B2 OpenEd (chip 3, unidentified), B3 Wikipedia (chip 4; also the entity's article, carried once), B4 a YouTube video of Microsoft Cloud (chip 6, unidentified). B_R, the reference pool: 'own_page' B5 (about) and B6 (terms of use), the census's saved copies; 'census_third_party' B7 (the Pile's Wikipedia article) and B8 (NaNoGenMo's home page). B2 and B4 have no title, snippet or URL in the paste and contribute no claim.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B3.wiki the raw wikitext; B3-census.* the census's saved copy; B5–B8 the census's saved copies, gunzipped, sha256 matching its manifest; tries/ the raw fetches)",
+ "counts": {
+  "sources": 8,
+  "B_D": 4,
+  "B_R": 4,
+  "fetched": 6,
+  "unreachable": 2,
+  "claims": 63,
+  "claims_B_D": 44,
+  "claims_B_R": 19,
+  "quotes_ok": 63
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "Project Gutenberg — gutenberg.org home page (chips 1, 2, 5)",
+   "fetched": "card; B1.html sha256 461dd6237aa9aa55, HTTP 200 at 2026-11-01T15:13:06Z; page identified by the chips' spans (see identification)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "OpenEd — page unidentified (chip 3)",
+   "fetched": "unreachable: unidentified; site name only, no title, snippet or URL in the paste",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Wikipedia — Project Gutenberg (chip 4)",
+   "fetched": "card; B3.html sha256 80cfad0162a08071, HTTP 200 at 2026-11-01T15:13:06Z; wikitext HTTP 200 (sha256 c04b2a45206eec23); the census's copy (sha256 05de9e5673bcf1d5) differs in bytes, same article text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "YouTube·Microsoft Cloud — video unidentified (chip 6)",
+   "fetched": "unreachable: unidentified; site name only, no title, snippet or URL in the paste",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Project Gutenberg — About Project Gutenberg (own page)",
+   "fetched": "own page; the census's saved copy B5.html sha256 4e1cfdb3edd2d17a (matches the manifest), HTTP 200 at 2026-11-01T04:07:47Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B6",
+   "card": "Project Gutenberg — Terms of Use (own page)",
+   "fetched": "own page; the census's saved copy B6.html sha256 38e45e0cbc6a3f90 (matches the manifest), HTTP 200 at 2026-11-01T04:07:48Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B7",
+   "card": "Wikipedia — The Pile (dataset) (census third-party)",
+   "fetched": "census third party; the census's saved copy B7.html sha256 1ba82f3edd2a4647 (matches the manifest), HTTP 200 at 2026-11-01T04:07:51Z",
+   "origin": "census_third_party",
+   "pool": "B_R"
+  },
+  {
+   "id": "B8",
+   "card": "NaNoGenMo — National Novel Generation Month (census third-party)",
+   "fetched": "census third party; the census's saved copy B8.html sha256 d831aaf0d1a4efc0 (matches the manifest), HTTP 200 at 2026-11-01T04:07:58Z",
+   "origin": "census_third_party",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4"
+  ],
+  "own_pages": [
+   "B5",
+   "B6"
+  ],
+  "own_pages_note": "the census's own pages project-gutenberg--about (B5) and project-gutenberg--policy (B6) are not shown by any chip's span to be a chip's page and stand in B_R; the home page (B1), the page the chips' spans answer, was fetched for this row and stands in B_D",
+  "wikipedia": [
+   "B3"
+  ],
+  "census_third_party": [
+   "B7",
+   "B8"
+  ],
+  "unreachable": [
+   "B2",
+   "B4"
+  ],
+  "title_only": [],
+  "no_text": [
+   "B2",
+   "B4"
+  ],
+  "wikipedia_state": "article: 'Project Gutenberg' (raw wikitext HTTP 200, rendered HTTP 200, 2026-11-01T15:13Z), no redirect, last edited 12 October 2026; it is chip 4 of T ('Wikipedia +1'), so the Wikipedia source and the chip are one source, carried once in B_D (B3)",
+  "body_named": [],
+  "body_named_note": "T's body names no source beyond its chips: its three inline links (Project Gutenberg, Michael S. Hart, Distributed Proofreaders, LibriVox: four anchors, Google 'goto' URLs whose targets the paste does not show) name entities; the web results above the answer (gutenberg.org, Wikipedia) are outside the composition (brief, T)",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+   ],
+   "B_R": [
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every source on the rail of inline chips (six chips, four sources: gutenberg.org for chips 1, 2 and 5, OpenEd, Wikipedia, a YouTube video of Microsoft Cloud; the sources behind '+1' and '+2' unexpanded in the paste); B_R, the entity's own pages the census saved (about, terms of use) and the third-party sources the census read (the Pile's Wikipedia article, NaNoGenMo's home page)"
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "source chips 1, 2 and 5 ('Project Gutenberg +1', 'Project Gutenberg +1', 'Project Gutenberg +2'): the entity's own site, its page identified as the home page by the chips' spans",
+    "card": "Project Gutenberg — gutenberg.org home page (chips 1, 2, 5)",
+    "url": "https://www.gutenberg.org/",
+    "kind": "AI Mode source chip (the entity's own site); the home page, 'Free eBooks | Project Gutenberg'",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B1.html",
+      "sha256": "461dd6237aa9aa55ea1970c3f7d29cf5c92ca1cf0e3a2ccf459f3ac356a3a0f1"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B1.txt",
+      "sha256": "a8ac2a2a3610dfe165e88575ca310c25509c8a106de6448e6600072cdd0ed9f9"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:06Z",
+     "http": 200,
+     "url": "https://www.gutenberg.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B1.html",
+     "raw_sha256": "461dd6237aa9aa55ea1970c3f7d29cf5c92ca1cf0e3a2ccf459f3ac356a3a0f1",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B1.txt"
+     ],
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "result": "HTTP 200, one request"
+    },
+    "identification": "The paste gives each chip as a site name and a count ('+1', '+2'), with no title, snippet or URL (cite_list: snip null, url null). The site is gutenberg.org. The page is identified by matching the chips' spans against the site's pages: chip 2's span ('no registration … special apps') answers the home page's '100% Free - No fees, no registration, completely free' and 'No Apps Required'; chip 5's span (thousands of volunteers, Distributed Proofreaders) answers the home page's 'Thousands of Project Gutenberg volunteers' and 'Distributed Proofreaders welcomes new volunteers. This is the main source of new Project Gutenberg eBooks.'; chip 1's span (founded 1971; nearly 80,000) answers its '79,709 free eBooks' and 'since 1971'. The home page is also the first web result above the answer ('Project Gutenberg: Free eBooks', https://www.gutenberg.org), outside the composition. The further sources behind '+1' and '+2' were not expanded in the paste and stay unidentified. The about page and the terms of use (the census's own pages) are not shown by any span to be the chip's page and stand in B_R.",
+    "names_operator": "yes: 'Read about our late CEO , Dr. Greg Newby .'; the foundation not by name on this page",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "surfaced_by_T": [
+     {
+      "slug": "project-gutenberg-aimode-20261101",
+      "chip": 1
+     },
+     {
+      "slug": "project-gutenberg-aimode-20261101",
+      "chip": 2
+     },
+     {
+      "slug": "project-gutenberg-aimode-20261101",
+      "chip": 5
+     }
+    ]
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "source chip 3 ('OpenEd +1'), at the formats bullet",
+    "card": "OpenEd — page unidentified (chip 3)",
+    "url": null,
+    "kind": "AI Mode source chip, site name only",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: unidentified. The chip carries the site name 'OpenEd' and '+1', no title, snippet or URL. Tried: WebSearch 'OpenEd Project Gutenberg free eBooks EPUB Kindle HTML plain text', '\"OpenEd\" Project Gutenberg EPUB Kindle MOBI HTML plain text formats' and 'site:opened.co OR \"OpenEd\" \"Project Gutenberg\" resource' (2026-11-01); no OpenEd page on Project Gutenberg found. No page fetched."
+    },
+    "names_operator": "unknown (no text)",
+    "names_archive": "unknown (no text)",
+    "surfaced_by_T": [
+     {
+      "slug": "project-gutenberg-aimode-20261101",
+      "chip": 3
+     }
+    ],
+    "note": "No text stands for this source: the chip has no snippet (§3.1(a): the snippet stands as an unreachable card's only text; here there is none). It contributes no field claim; it is recorded as a source T surfaced."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "source chip 4 ('Wikipedia +1'), at the US public domain bullet; and the entity's Wikipedia article (origin wikipedia, carried once, in B_D)",
+    "card": "Wikipedia — Project Gutenberg (chip 4)",
+    "url": "https://en.wikipedia.org/wiki/Project_Gutenberg",
+    "kind": "AI Mode source chip; the English Wikipedia article 'Project Gutenberg', last edited 12 October 2026",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3.html",
+      "sha256": "80cfad0162a080719e4a4aff496872c4c4aa8caa4f1d07331c93c9db3a81cf5e"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3.txt",
+      "sha256": "b311f7eb231563b2324deb97ea21bc9b6f8cf7f600eb3d1b175bf2464d59d286"
+     },
+     "B3.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3.wiki",
+      "sha256": "c04b2a45206eec23704b0ec19262fc46743fd6688725a4275dbb408c965f07bb"
+     },
+     "B3-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3-census.html",
+      "sha256": "05de9e5673bcf1d5efa2f76a9bb6164591216216c9d8bc9eff0f3f88510488e5"
+     },
+     "B3-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3-census.txt",
+      "sha256": "ddea6877cd5b3a5f40841cf12b4e2305c47db2f4b2f4bd4f6079c1ca877f6f94"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:06Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Project_Gutenberg",
+     "raw": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3.html",
+     "raw_sha256": "80cfad0162a080719e4a4aff496872c4c4aa8caa4f1d07331c93c9db3a81cf5e",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3.txt"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Project_Gutenberg&action=raw",
+      "http": 200,
+      "at": "2026-11-01T15:13:07Z",
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B3.wiki",
+      "sha256": "c04b2a45206eec23704b0ec19262fc46743fd6688725a4275dbb408c965f07bb"
+     },
+     "census_copy": {
+      "src": "project-gutenberg--wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Project_Gutenberg",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:48Z",
+      "sha256": "05de9e5673bcf1d5efa2f76a9bb6164591216216c9d8bc9eff0f3f88510488e5",
+      "agrees": "the census's saved bytes differ (the rendered page carries per-request content); the extracted text is the same article text, last edited 12 October 2026, word for word except a trailing space"
+     },
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+     "result": "HTTP 200; no redirect"
+    },
+    "identification": "The chip names the site 'Wikipedia'; at the query 'Project Gutenberg' the article is 'Project Gutenberg' (the second web result above the answer, 'Project Gutenberg - Wikipedia'), and the chip's span ('Because it operates under United States copyright law') answers the article's 'Most books in the Project Gutenberg collection are distributed as public domain under United States copyright law.' The source behind '+1' is unidentified.",
+    "names_operator": "yes ('the Project Gutenberg Literary Archive Foundation, Inc.'; Eric Hellman acting CEO)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "surfaced_by_T": [
+     {
+      "slug": "project-gutenberg-aimode-20261101",
+      "chip": 4
+     }
+    ]
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "source chip 6 ('YouTube·Microsoft Cloud +1'), at the audiobooks bullet",
+    "card": "YouTube·Microsoft Cloud — video unidentified (chip 6)",
+    "url": null,
+    "kind": "AI Mode source chip, a video (site YouTube, channel Microsoft Cloud), site name only",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: unidentified. The chip carries 'YouTube·Microsoft Cloud' and '+1', no title, snippet or URL. Tried: WebSearch 'Microsoft Cloud YouTube Project Gutenberg LibriVox', 'youtube \"Microsoft Cloud\" Project Gutenberg audiobooks video' and '\"Project Gutenberg\" \"Microsoft Cloud\" youtube.com watch audiobooks AI narration' (2026-11-01). The searches find Microsoft's customer-story video 'Project Gutenberg brings free audiobooks to the global community with AI-generated book narration' (videos.microsoft.com) and press on the Microsoft and MIT project of AI-narrated audiobooks; none is a YouTube URL on a Microsoft Cloud channel, so none is identified as the chip. Not fetched; no title or snippet stands."
+    },
+    "names_operator": "unknown (no text)",
+    "names_archive": "unknown (no text)",
+    "surfaced_by_T": [
+     {
+      "slug": "project-gutenberg-aimode-20261101",
+      "chip": 6
+     }
+    ],
+    "note": "A video chip is admitted through its transcript, or its title and snippet (§3.1(a)); this chip has neither. It contributes no field claim. The candidate found by search is recorded here and not admitted."
+   },
+   {
+    "id": "B5",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census's own page project-gutenberg--about (not shown by any chip span to be a chip's page)",
+    "card": "Project Gutenberg — About Project Gutenberg (own page)",
+    "url": "https://www.gutenberg.org/about/",
+    "kind": "the entity's about page",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B5.html",
+      "sha256": "4e1cfdb3edd2d17a191aa79c579b6080883d5895d289cf991990aab1618f8040"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B5.txt",
+      "sha256": "9843a0e6d79145c4c4141816ba25fbf8a58b187a741ce001e2422db2ada1e8ae"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:47Z",
+     "http": 200,
+     "url": "https://www.gutenberg.org/about/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B5.html",
+     "raw_sha256": "4e1cfdb3edd2d17a191aa79c579b6080883d5895d289cf991990aab1618f8040",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B5.txt"
+     ],
+     "census_copy": {
+      "src": "project-gutenberg--about",
+      "url": "https://www.gutenberg.org/about/",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:47Z",
+      "sha256": "4e1cfdb3edd2d17a191aa79c579b6080883d5895d289cf991990aab1618f8040"
+     },
+     "result": "the census's saved copy (gunzipped; sha256 matches the manifest); read 2026-11-01"
+    },
+    "names_operator": "yes ('The Project Gutenberg Literary Archive Foundation , which operates Project Gutenberg')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B6",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census's own page project-gutenberg--policy",
+    "card": "Project Gutenberg — Terms of Use (own page)",
+    "url": "https://www.gutenberg.org/policy/terms_of_use.html",
+    "kind": "the entity's terms of use",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B6.html",
+      "sha256": "38e45e0cbc6a3f903ef019b3bcbcbce9c3190f9f68f73bf31d2ef58a8ceb679b"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B6.txt",
+      "sha256": "7199542449d19f380d22ace0a0ac31cf7ee387b8de2ac84ef1e4aedc799447a7"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:48Z",
+     "http": 200,
+     "url": "https://www.gutenberg.org/policy/terms_of_use.html",
+     "raw": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B6.html",
+     "raw_sha256": "38e45e0cbc6a3f903ef019b3bcbcbce9c3190f9f68f73bf31d2ef58a8ceb679b",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B6.txt"
+     ],
+     "census_copy": {
+      "src": "project-gutenberg--policy",
+      "url": "https://www.gutenberg.org/policy/terms_of_use.html",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:48Z",
+      "sha256": "38e45e0cbc6a3f903ef019b3bcbcbce9c3190f9f68f73bf31d2ef58a8ceb679b"
+     },
+     "result": "the census's saved copy (gunzipped; sha256 matches the manifest); read 2026-11-01"
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B7",
+    "origin": "census_third_party",
+    "pool": "B_R",
+    "role": "a third-party source the census read (the-pile--wikipedia), at the table of the Pile's sub-datasets",
+    "card": "Wikipedia — The Pile (dataset) (census third-party)",
+    "url": "https://en.wikipedia.org/wiki/The_Pile_(dataset)",
+    "kind": "Wikipedia article on another entity (the Pile), read for its Gutenberg component",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B7.html",
+      "sha256": "1ba82f3edd2a4647bd1af5f9c925a7500a63005471dac0429af0dd002fa15c89"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B7.txt",
+      "sha256": "c767d4d73c058ef4bc5127063361530b828bdb8f8770e03b775aa76a4b6d2e5d"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:51Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/The_Pile_(dataset)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B7.html",
+     "raw_sha256": "1ba82f3edd2a4647bd1af5f9c925a7500a63005471dac0429af0dd002fa15c89",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B7.txt"
+     ],
+     "census_copy": {
+      "src": "the-pile--wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Pile_(dataset)",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:51Z",
+      "sha256": "1ba82f3edd2a4647bd1af5f9c925a7500a63005471dac0429af0dd002fa15c89"
+     },
+     "result": "the census's saved copy (gunzipped; sha256 matches the manifest)"
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B8",
+    "origin": "census_third_party",
+    "pool": "B_R",
+    "role": "a third-party source the census read (nanogenmo--home), at its rules",
+    "card": "NaNoGenMo — National Novel Generation Month (census third-party)",
+    "url": "https://nanogenmo.github.io/",
+    "kind": "NaNoGenMo's home page, read for its rule naming Project Gutenberg",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B8.html",
+      "sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B8.txt",
+      "sha256": "3cf3788cab10577ec751541c11c3114ed505c864a32ffaaba875bfbff52ee852"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:58Z",
+     "http": 200,
+     "url": "https://nanogenmo.github.io/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B8.html",
+     "raw_sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/project-gutenberg-20261101/B8.txt"
+     ],
+     "census_copy": {
+      "src": "nanogenmo--home",
+      "url": "https://nanogenmo.github.io/",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:58Z",
+      "sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d"
+     },
+     "result": "the census's saved copy (gunzipped; sha256 matches the manifest)"
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text)",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "heading",
+   "quote": "Project Gutenberg is a library of 79,709 free eBooks",
+   "claim": "the home page counts 79,709 free eBooks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the collection and its count",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Choose free eBooks to download or read online. You will find the world's great literature here with a focus on older works whose U.S. copyright has expired.",
+   "claim": "free eBooks to download or read online; the world's great literature, with a focus on older works whose U.S. copyright has expired",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a library of free eBooks",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Thousands of Project Gutenberg volunteers have digitized and proofread these books for you.",
+   "claim": "thousands of volunteers digitized and proofread the books",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised",
+   "marks": [
+    {
+     "mark": "internally_inconsistent",
+     "with": "F6",
+     "note": "the home page states 'Thousands of Project Gutenberg volunteers' (opening) and 'hundreds of volunteers have contributed over the years' (feature list); both loci carried (§4.3)"
+    }
+   ]
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project Gutenberg (feature list)",
+   "quote": "✓ 100% Free - No fees, no registration, completely free … ✓ No Apps Required - only regular Web browsers or eBook readers needed",
+   "claim": "no fees, no registration; no apps, only web browsers or eBook readers",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "free access and formats",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project Gutenberg (feature list)",
+   "quote": "✓ 55+ Years - Pioneering free eBooks since 1971",
+   "claim": "free eBooks since 1971",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Hart, 1971",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project Gutenberg (feature list)",
+   "quote": "✓ Volunteer-based - hundreds of volunteers have contributed over the years",
+   "claim": "hundreds of volunteers have contributed over the years",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised",
+   "marks": [
+    {
+     "mark": "internally_inconsistent",
+     "with": "F3",
+     "note": "see F3"
+    }
+   ]
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project Gutenberg (feature list)",
+   "quote": "✓ Read about our late CEO , Dr. Greg Newby .",
+   "claim": "its late CEO, Dr. Greg Newby",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: the foundation and its officers",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "How to Help",
+   "quote": "Distributed Proofreaders welcomes new volunteers. This is the main source of new Project Gutenberg eBooks.",
+   "claim": "Distributed Proofreaders is the main source of new eBooks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "How to Help; Audio Books",
+   "quote": "Record audiobooks with our friends at LibriVox . … LibriVox produces high-quality human-read recordings of Project Gutenberg texts. 662 of our own titles are read by people.",
+   "claim": "LibriVox records human-read audiobooks of its texts; 662 of its own titles are read by people",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audiobooks: human-read and computer-generated",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Audio Books",
+   "quote": "The Open Audiobook Collection adds almost 5,000 computer-generated titles.",
+   "claim": "the Open Audiobook Collection adds almost 5,000 computer-generated titles",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "audiobooks: human-read and computer-generated",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Most Popular",
+   "quote": "Pride and Prejudice by Jane Austen … Frankenstein; or, The modern Prometheus by Mary Wollstonecraft Shelley … Moby Dick; Or, The Whale by Herman Melville … The Adventures of Sherlock Holmes by Arthur Conan Doyle … The Complete Works of William Shakespeare by William Shakespeare",
+   "claim": "its most popular titles, each under its author",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "works under their authors",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Useful Links",
+   "quote": "Linking to Project Gutenberg and roboting or crawling the site.",
+   "claim": "the home page links a page on linking, roboting and crawling the site",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 a8ac2a2a3610dfe1…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Project Gutenberg ( PG ) is a volunteer effort to digitize and archive cultural works, as well as to \"encourage the creation and distribution of eBooks .\"",
+   "claim": "a volunteer effort to digitize and archive cultural works and to encourage the creation and distribution of eBooks",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a library of free eBooks",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "It was founded in 1971 by American writer Michael S. Hart and is the oldest digital library .",
+   "claim": "founded in 1971 by Michael S. Hart; the oldest digital library",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin: Hart, 1971",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Most items in its collection are full texts of books or individual stories in the public domain . All files are free to access in an open format , available on almost any computer.",
+   "claim": "most items full texts of books or stories in the public domain, free to access in an open format",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a library of free eBooks",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "As of 22 March 2026 [ update ] , Project Gutenberg had reached nearly 78,000 items in its collection of free eBooks.",
+   "claim": "nearly 78,000 items as of 22 March 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collection and its count",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox",
+   "quote": "Over 77,500 documents",
+   "claim": "the infobox gives over 77,500 documents",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collection and its count",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The releases are available in plain text as well as other formats, such as HTML , EPUB , and MOBI . Most releases are in English , but many non-English works are also available.",
+   "claim": "plain text and other formats (HTML, EPUB, MOBI); most releases in English, many not",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "free access and formats",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "Project Gutenberg is closely affiliated with Distributed Proofreaders , an Internet-based community for proofreading scanned texts.",
+   "claim": "closely affiliated with Distributed Proofreaders",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Michael S. Hart began Project Gutenberg in 1971 by digitizing the United States Declaration of Independence . … He named the project after Johannes Gutenberg , the fifteenth century German printer who propelled the movable-type printing-press revolution.",
+   "claim": "Hart began it in 1971 with the Declaration of Independence and named it after Johannes Gutenberg",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Hart, 1971",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "He manually entered all of the text until 1989 when image scanners and optical character recognition software improved and became more available, making book scanning more feasible.",
+   "claim": "Hart entered all text by hand until 1989, when scanners and OCR made scanning feasible",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Project Gutenberg is now hosted by ibiblio at the University of North Carolina at Chapel Hill . … Hart died on 6 September 2011 at his home in Urbana, Illinois, at the age of 64.",
+   "claim": "hosted by ibiblio at UNC Chapel Hill; Hart died 6 September 2011",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: the foundation and its officers",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Scope of collection",
+   "quote": "As of May 2025 [ update ] , Project Gutenberg claimed over 75,999 items in its collection, with an average of over 30 new e-books being added each week. [ 12 ] These are primarily works of literature from the Western cultural tradition .",
+   "claim": "over 75,999 items claimed as of May 2025, over 30 new a week; primarily works of the Western literary tradition",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collection and its count",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Scope of collection",
+   "quote": "In addition to literature such as novels, poetry, short stories and drama, Project Gutenberg also has cookbooks , reference works and issues of periodicals. [ 13 ] The Project Gutenberg collection also has a few non-text items such as audio files, movies, and music-notation files.",
+   "claim": "novels, poetry, short stories and drama, with cookbooks, reference works, periodicals and a few non-text items",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the collection and its count",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Scope of collection",
+   "quote": "Besides being copyright-free, the requirement for a Latin ( character set ) text version of the release had been a criterion of Michael Hart's since the founding of Project Gutenberg, as he believed it was the format most likely to be readable in the extended future.",
+   "claim": "a plain Latin-character text version required since the founding, as the format most likely readable in the extended future",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "free access and formats",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Ideals",
+   "quote": "Project Gutenberg is intentionally decentralized; there is no selection policy dictating what texts to add. Instead, individual volunteers work on what they are interested in or have available.",
+   "claim": "no selection policy; volunteers work on what interests them",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Ideals",
+   "quote": "The Project Gutenberg collection is intended to preserve items for the long term, so they cannot be lost by any one localized accident. In an effort to ensure this, the entire collection is backed-up regularly and mirrored on servers in many different locations.",
+   "claim": "the collection is meant to last, backed up regularly and mirrored in many places",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright",
+   "quote": "Material is added to the Project Gutenberg archive only after it has received a copyright clearance, and records of these clearances are saved for future reference. Project Gutenberg does not claim new copyright on titles it publishes.",
+   "claim": "material added only after copyright clearance, the clearances kept; no new copyright claimed",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "terms: public domain in the United States",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright",
+   "quote": "Most books in the Project Gutenberg collection are distributed as public domain under United States copyright law. There are also a few copyrighted texts, such as those of science fiction author Cory Doctorow , that Project Gutenberg distributes with permission.",
+   "claim": "most books public domain under US law; a few copyrighted texts distributed with permission",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms: public domain in the United States",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright",
+   "quote": "\"Project Gutenberg\" is a trademark of the organization, and the mark cannot be used in commercial or modified redistributions of public domain texts from the project.",
+   "claim": "the name is a trademark, not usable in commercial or modified redistributions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the project's name after redistribution",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright",
+   "quote": "There is no legal impediment to the reselling of works in the public domain if all references to Project Gutenberg are removed, but Gutenberg contributors have questioned the appropriateness of directly and commercially reusing content that has been formatted by volunteers.",
+   "claim": "resale is lawful once all references to the project are removed; contributors have questioned commercial reuse of volunteer-formatted content",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the project's name after redistribution",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F32": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright",
+   "quote": "There have been instances of books being stripped of attribution to the project and sold for profit in the Kindle Store and other booksellers, one being the 1906 book Fox Trapping .",
+   "claim": "books stripped of attribution to the project and sold, one being Fox Trapping (1906)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the project's name after redistribution",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F33": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright",
+   "quote": "From 2018 to 2021, the Project Gutenberg website was not accessible within Germany , as a result of a court order from S. Fischer Verlag regarding the works of Heinrich Mann , Thomas Mann and Alfred Döblin . … The Project Gutenberg website has been blocked in Italy since May 2020, as part of a larger effort to block websites that publish newspapers and journals that are protected by copyright in Italy.",
+   "claim": "not accessible in Germany 2018–2021 by court order; blocked in Italy since May 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms: public domain in the United States",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F34": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Criticism",
+   "quote": "The text files use the format of plain text encoded in UTF-8 and are typically wrapped at 65–70 characters, with paragraphs separated by a double line break. In 2000, this presentation was criticized as \"bland and difficult to read on screen\".",
+   "claim": "plain UTF-8 text wrapped at 65–70 characters, criticized in 2000 as bland and hard to read on screen",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "free access and formats",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F35": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Criticism",
+   "quote": "In December 1994, Project Gutenberg was criticized by the Text Encoding Initiative for failing to include documentation or discussion of the decisions unavoidable in preparing a text, or in some cases, not documenting which of several (conflicting) versions of a text has been the one digitized.",
+   "claim": "the TEI criticized it (1994) for not documenting editorial decisions or, at times, which version of a text was digitized",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "which edition a text was made from",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F36": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Criticism",
+   "quote": "The selection of works (and editions) available has been determined by popularity, ease of scanning, being out of copyright, and other factors; this would be difficult to avoid in any crowd-sourced project.",
+   "claim": "works and editions selected by popularity, ease of scanning and copyright status",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "which edition a text was made from",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F37": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project Gutenberg Literary Archive Foundation",
+   "quote": "In 2000, a 501(c)(3) non-profit corporation , the Project Gutenberg Literary Archive Foundation, Inc. ( EIN : 64–6221541) was chartered in Mississippi , United States , to handle the project's legal needs.",
+   "claim": "the foundation, a 501(c)(3), chartered in Mississippi in 2000 for the project's legal needs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "who holds it: the foundation and its officers",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F38": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project Gutenberg Literary Archive Foundation",
+   "quote": "in 2001, became the foundation's first CEO … After Newby died in 2025, Eric Hellman became acting CEO of the foundation.",
+   "claim": "Gregory B. Newby first CEO (2001); after his death in 2025, Eric Hellman acting CEO",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: the foundation and its officers",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F39": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Partners",
+   "quote": "In 2000, Charles Franks founded Distributed Proofreaders (DP) … DP became officially affiliated with Project Gutenberg in 2002. … As of 2018 [ update ] , the 36,000+ DP-contributed books comprised almost two-thirds of the nearly 77,500 books in Project Gutenberg.",
+   "claim": "DP founded 2000, affiliated 2002; its 36,000+ books almost two-thirds of the collection (2018)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F40": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Sister projects",
+   "quote": "All sister projects are independent organizations that share the same ideals and have been given permission to use the Project Gutenberg trademark.",
+   "claim": "the sister projects are independent organizations permitted to use the trademark",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the project's name after redistribution",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F41": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "List of sister projects",
+   "quote": "Projekt Gutenberg-DE [ de ] claims copyright for its product and limits access to browsable web-versions of its texts.",
+   "claim": "Projekt Gutenberg-DE claims copyright for its product and limits access to web versions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the project's name after redistribution",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F42": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Affiliates; See also",
+   "quote": "The Internet Archive , previous long-time backup distribution site, and previous main host site. … Librivox.org , new audiobooks main partner … LibriVox —free online audiobook library, with many texts used from Project Gutenberg",
+   "claim": "the Internet Archive its former backup and host; LibriVox its audiobook partner, with many texts from it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "audiobooks: human-read and computer-generated",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F43": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "last edited on 12 October 2026",
+   "claim": "the article was last edited on 12 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception and the composition at the name",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F63": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Ideals",
+   "quote": "His goal was \"to provide as many e-books in as many formats as possible for the entire world to read in as many languages as possible\". … Likewise, a project slogan is to \"break down the bars of ignorance and illiteracy\"",
+   "claim": "Hart's goal: as many e-books in as many formats for the entire world in as many languages; a slogan: to break down the bars of ignorance and illiteracy",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a library of free eBooks",
+   "date": "2026-10-12 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b311f7eb231563b2…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About Project Gutenberg",
+   "quote": "Project Gutenberg is an online library of more than 75,000 free eBooks.",
+   "claim": "an online library of more than 75,000 free eBooks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a library of free eBooks",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 9843a0e6d79145c4…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About Project Gutenberg",
+   "quote": "Michael Hart, founder of Project Gutenberg, invented eBooks in 1971 and his memory continues to inspire the creation of eBooks and related content today.",
+   "claim": "Michael Hart, its founder, invented eBooks in 1971",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: Hart, 1971",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 9843a0e6d79145c4…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About Project Gutenberg",
+   "quote": "Since then, thousands of volunteers have digitized and diligently proofread the world’s literature.",
+   "claim": "thousands of volunteers have digitized and proofread the world's literature",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "how its texts are made: volunteers, proofreading, Distributed Proofreaders",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 9843a0e6d79145c4…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About Project Gutenberg",
+   "quote": "All Project Gutenberg eBooks are completely free and always will be.",
+   "claim": "all its eBooks free, always",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "free access and formats",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 9843a0e6d79145c4…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Project Gutenberg Mission Statement",
+   "quote": "To encourage the creation and distribution of eBooks.",
+   "claim": "its mission: to encourage the creation and distribution of eBooks",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a library of free eBooks",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 9843a0e6d79145c4…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "More about Project Gutenberg",
+   "quote": "The Project Gutenberg Literary Archive Foundation , which operates Project Gutenberg and accepts donations.",
+   "claim": "the Project Gutenberg Literary Archive Foundation operates it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "who holds it: the foundation and its officers",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 9843a0e6d79145c4…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Terms of Use (head)",
+   "quote": "Project Gutenberg’s target audience is United States persons over 13 years of age.",
+   "claim": "its target audience: US persons over 13",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "terms: public domain in the United States",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Terms of Use (head)",
+   "quote": "Non-US persons are advised to check copyright laws of their country before accessing any eBooks or other content from Project Gutenberg. … Project Gutenberg offers no warranty or assurances about copyright status or freedom to access or use its materials outside of the United States.",
+   "claim": "no warranty on copyright status or freedom to use outside the United States",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "terms: public domain in the United States",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Trademark License",
+   "quote": "What you are allowed to do with our eBooks once you download them: See: the Project Gutenberg License and the Permission How-To .",
+   "claim": "what may be done with a downloaded eBook is governed by the Project Gutenberg License",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the project's name after redistribution",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Audience",
+   "quote": "This website is intended for human users only. Any perceived use of automated tools to access this website will result in a temporary or permanent block of your IP address.",
+   "claim": "the website is for human users only; automated access is blocked",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Audience; Footnotes",
+   "quote": "If you want to download many books [1] manually or using an automated download software, download them from one of our mirrors, not from the main site. … Many books: i.e., more than ~100 per day",
+   "claim": "many books (more than ~100 a day), by hand or by software, from mirrors",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Audience",
+   "quote": "If you want a list of all our books , download and save the Gutenberg index file … If you want a machine-readable database of all our books, read the Offline Catalogs and Feeds page.",
+   "claim": "a list of all books in the index file; a machine-readable database at Offline Catalogs and Feeds",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Deep Linking",
+   "quote": "When linking to a Project Gutenberg item, link to the main landing page such as www.gutenberg.org/ebooks/11. … We intend the landing page to be permanent.",
+   "claim": "link to the landing page, which is meant to be permanent",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Embedding or Wrapping our Site or Contents",
+   "quote": "We do not allow large-scale deep-linking to eBook files hosted on our servers. … We will not tolerate mock Gutenberg front-ends that pocket advertising revenues",
+   "claim": "no large-scale deep-linking to its files; no mock front-ends taking advertising revenue",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "OPDS Feed",
+   "quote": "Every application that uses our OPDS feed must: … Use a proper user-agent … For high-volume OPDS applications consider downloading our catalog database and hosting your own OPDS feed.",
+   "claim": "applications using the OPDS feed identify themselves and keep to a browser's volume, or host their own feed from the catalog",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Automated Blocks",
+   "quote": "Blocks to Internet addresses (IP addresses) are applied automatically based on the volume of traffic and related factors. Such blocks automatically expire after a few days.",
+   "claim": "IP blocks applied automatically by volume, expiring after a few days",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "two readers: human users and machine access",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 7199542449d19f38…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "lead",
+   "quote": "The Pile is an 886 GB diverse, open-source dataset of English text created to train large language models (LLMs).",
+   "claim": "the Pile, an 886 GB dataset of English text made to train large language models",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "into training sets and machine-made works",
+   "date": "undated (the Pile article as the census saved it, 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c767d4d73c058ef4…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "Sub-datasets of The Pile (table)",
+   "quote": "Sub-datasets of The Pile [ 1 ] [ 11 ] (*denotes works with copyright disputes) … Original size, GB … Gutenberg (PG-19) 11.68",
+   "claim": "the Pile's sub-dataset 'Gutenberg (PG-19)', 11.68 GB, unmarked for copyright dispute",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "into training sets and machine-made works",
+   "date": "undated (the Pile article as the census saved it, 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 c767d4d73c058ef4…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B8",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "The Goal; The Rules",
+   "quote": "Spend the month of November writing code that generates a novel of 50k+ words. … It could literally grab a random novel from Project Gutenberg.",
+   "claim": "NaNoGenMo's generated novel may grab a random novel from Project Gutenberg",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "into training sets and machine-made works",
+   "date": "undated (NaNoGenMo's page as the census saved it, 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 3cf3788cab10577e…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Project Gutenberg — gutenberg.org home page (chips 1, 2, 5)",
+  "B2": "OpenEd — page unidentified (chip 3)",
+  "B3": "Wikipedia — Project Gutenberg (chip 4)",
+  "B4": "YouTube·Microsoft Cloud — video unidentified (chip 6)",
+  "B5": "Project Gutenberg — About Project Gutenberg (own page)",
+  "B6": "Project Gutenberg — Terms of Use (own page)",
+  "B7": "Wikipedia — The Pile (dataset) (census third-party)",
+  "B8": "NaNoGenMo — National Novel Generation Month (census third-party)"
+ }
+}

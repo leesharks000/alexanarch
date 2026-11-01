@@ -1,0 +1,55 @@
+Data Portraits
+
+Data Portraits
+
+Foundation models are trained on increasingly immense and opaque datasets.
+Even while these models are now key in AI system building, it can be difficult to answer the straight forward question: has the model already encountered a given example during training?
+
+We propose a widespread adoption of Data Portraits: artifacts that record data and allow for inspection.
+These are a complement to existing forms of data and model documentation artifacts.
+We introduce our solution based on data sketching (compressed and approximate views of large data).
+Our implementation is minimal and efficient in that it supports membership testing and nothing more.
+We document an open source large language modeling dataset — try it below!
+
+Our Implementations
+
+We host front-ends over several data sketches.
+These allow for rapid, minimal, membership testing over popular web-based text datasets.
+
+The Pile
+
+Check if some text appears in a large language modeling corpus. This is a 50 character n-gram sketch on the Pile.
+
+Pile Sketch
+
+The Stack
+
+Check if a code snippet appears in The Stack,
+a code dataset by Big Code.
+
+Stack Sketch
+
+The Stack V2
+
+Check if text appears in The Stack V2. This dataset contains code and text about code, like documentation and papers.
+
+Stack V2 Sketch
+
+Your Dataset
+
+Code on Github!
+
+Reach out if you'd like us to build our system on your data.
+
+Citing
+
+Our Paper
+
+@inproceedings{
+marone2023dataportraits,
+title={Data Portraits: Recording Foundation Model Training Data},
+author = {Marone, Marc and {Van Durme}, Benjamin},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+year={2023},
+url={https://arxiv.org/abs/2303.03919}
+}

@@ -1,0 +1,74 @@
+Derived datasets • HTRC Analytics 
+ Skip to main content 
+ Data 
+ Worksets 
+ View worksets 
+ Recommended
+ worksets 
+ Create a workset 
+ Validate a workset 
+ Workset Builder
+ 2.0 β 
+ Datasets 
+ Derived datasets 
+ Feature Reader 
+ Tools 
+ Visualize 
+ Bookworm β 
+ Bookworm Playgound β 
+ Gendered
+ Characterizations β 
+ Algorithms 
+ Run algorithms 
+ Algorithm results 
+ Data capsules 
+ Create a data capsule 
+ My data capsule allocations 
+ Customized research capsule templates 
+ Workset toolkit 
+ Learn and support 
+ About 
+ New to HTRC? 
+ HTRC glossary 
+ Documentation 
+ FAQ 
+ Contact 
+ Go to
+ HathiTrust 
+ HTRC has discontinued its services as of September 30, 2026. HTRC accounts are
+ no longer available. Read
+ about the future of the
+ HathiTrust Research Center . Some links on this page will not be functional. Access to the HathiTrust Digital Library remains
+ open. 
+ Derived datasets Downloadable, non-consumptive book data. HTRC releases research datasets to facilitate text analysis using the HathiTrust Digital Library. While copyright-protected texts are not available for download from HathiTrust, fruitful research can still be performed on the basis of non-consumptive analysis of transformative datasets, such as in HTRC's flagship Extracted Features Dataset, which includes features extracted from full-text volumes. These features include volume-level metadata, page-level metadata, part-of-speech-tagged tokens, and token counts. HTRC has also produced and partnered with advanced researchers to produce other derived datasets, openly released for use anywhere and by anyone, detailed below. HTRC Extracted Features Dataset Page-level features from 17.1 million volumes [v.2.0] Description The HTRC Extracted Features Dataset v.2.0 is composed of page-level features for 17.1 million volumes in the HathiTrust Digital Library. This version contains non-consumptive features for both public-domain and in-copyright books. Features include part-of-speech tagged term token counts, header/footer identification, marginal character counts, and much more. A full explanation of the dataset's features, motivation, and creation is available at the EF Dataset documentation page Download the data All 17.1 million files as well as custom subsets of the EF data are accessible using rsync , as described in the documentation . A sample is available for download through your browser – sample-EF202003.zip – as well as thematic collections: DocSouth (82 volumes), EEBO (234 volumes), ECCO (412 volumes). Attribution Jacob Jett, Boris Capitanu, Deren Kudeki, Timothy Cole, Yuerong Hu, Peter Organisciak, Ted Underwood, Eleanor Dickson Koehl, Ryan Dubnicek, J. Stephen Downie (2020). The HathiTrust Research Center Extracted Features Dataset (2.0). HathiTrust Research Center. https://doi.org/10.13012/R2TE-C227 This feature dataset is free is released under a Creative Commons Attribution 4.0 International License . Contents # of volumes In-copyright Public domain and Creative Commons 17,123,746 10,550,952 6,572,794 # of pages 6,221,631,336 # of tokens 2,906,819,723,689 Resources See how scholars are using the EF Dataset Full documentation Looking for previous versions of the dataset? They are still available . HTRC BookNLP Dataset for English-Language Fiction Unrestricted entity, word, and character data extracted from over 200,000 volumes of English-language fiction in the HTDL Description The HTRC BookNLP Dataset for English-Language Fiction (ELF) derived dataset was created using the BookNLP pipeline , extracting data from the NovelTM English-language fiction set , a supervised machine learning-derived set of around 213,000 volumes in the HathiTrust Digital Library. BookNLP is a text analysis pipeline tailored for common natural language processing (NLP) tasks to empower work in computational linguistics, cultural analytics, NLP, machine learning, and other fields. This dataset is modified from the standard BookNLP pipeline to output only files that meet HTRC's non-consumptive use policy that requires minimal data that cannot be easily reconstructed into the raw volume to be released. Specificities of the data, its format and structure, and information about each type of file is available in the full documentation . Download the data The data is available using rsync , a command line utility for transferring large datasets. The entire unmodified BookNLP dataset is just under 452 GB. and stored in a flat directory where each volume (represented by a HathiTrust ID, or HTID), has three associated files, one for entities, one for supersenses and one for character data, as so: mdp.39015058712145.entities mdp.39015058712145.supersense mdp.39015058712145.book To download the files for any one volume, you'll need to issue the rsync command individually for each file or pass a list of filenames to the rsync command in order to download multiple files in one command. See full instructions along with example download commands in the full documentation . Attribution Ryan Dubnicek, Boris Capitanu, Glen Layne-Worthey, Jennifer Christie, John A. Walsh, J. Stephen Downie (2023). The HathiTrust Research Center BookNLP Dataset for English-Language Fiction. HathiTrust Research Center. https://doi.org/10.13012/d4gy-4g41 Contents # of volumes represented 201,527 # of in-copyright volumes represented 90,857 # of files 604,561 Size of full dataset (gigabytes) 451.2 GB Word Frequencies in English-Language Literature, 1700-1922 Genre-specific wordcounts for 178,381 volumes from the HathiTrust Digital Library [v.0.1] Description This dataset contains the word frequencies for all English-language volumes of fiction, drama, and poetry in the HathiTrust Digital Library from 1700 to 1922. Word counts are aggregated at the volume level, but include only pages tagged as belonging to the relevant literary genre. A full explanation of the dataset's features, motivation, and creation is available at the Genre dataset documentation page Download the data For each genre, we provide a metadata file, a corrections file, and a yearly summary, as well as tar.gz files that aggregate individual volume-level wordcount files, sorted by estimated date of publication. Here is a sample: Fiction, 1905-1909 . The full dataset can be downloaded from the documentation page. Attribution Ted Underwood, Boris Capitanu, Peter Organisciak, Sayan Bhattacharyya, Loretta Auvil, Colleen Fallaw, J. Stephen Downie (2015). Word Frequencies in English-Language Literature, 1700-1922 (0.2) [Dataset]. HathiTrust Research Center. http://dx.doi.org/10.13012/J8JW8BSJ. Contents volumes of fiction 101,948 volumes of poetry 58,724 volumes of drama 17,709 Resources Spelling normalization and OCR correction Methods used for genre prediction Full documentation Looking for metadata for English literature after 1923? A report and data are available. Geographic Locations in English-Language Literature, 1701-2011 Geographic locations mentioned in volumes of fiction from the HathiTrust Digital Library Description This dataset contains metadata as well as data regarding geographic locations mentioned in works of fiction from 1701-2011 found in the HathiTrust Digital Library. The dataset comes in three versions: volumemeta, recordmeta, and titlemeta. The dataset contains over 30 columns of data for each volume row. Data in the dataset includes geographic location as it appears in the volume, number of times the location is mentioned in the volume, as well as the latitude and longitude for the location. A full explanation of the dataset's features, motivation, and creation is available at the full documentation page. Download the data For each version of the dataset we also include a file containing just the volume ids which can be used for workset creation or to download the volumes into an HTRC data capsule to run further non-consumptive text analysis on the volumes themselves. You can download your preferred version of the dataset or the list of volume ids from the documentation page , which also describes how to use rsync to download the dataset and id files. Attribution Matthew Wilkens and Guangchen Ruan. “Geographic Locations in English-Language Literature, 1701-2011 (1.0) [Dataset].” HathiTrust Research Center. https://doi.org/10.13012/2K5C-RF13 Contents Dataset # of Volumes volumemeta_geo.tsv 205,704 recordmeta_geo.tsv 173,302 titlemeta_geo.tsv 135,365 
+ Worksets 
+ What is a workset? 
+ Recommended
+ worksets 
+ Create a
+ workset 
+ View all
+ worksets 
+ Datasets 
+ What are datasets? 
+ Extracted Features 
+ BookNLP dataset 
+ Word frequencies 
+ Geographic locations 
+ Algorithms 
+ What are HTRC algorithms? 
+ Run
+ algorithms 
+ Algorithm
+ results 
+ Data Capsules 
+ What is a data capsule? 
+ Create a data
+ capsule 
+ View my
+ capsules 
+ Resources 
+ Instructional resources 
+ Non-consumptive use research policy 
+ HTRC data access 
+ Contact

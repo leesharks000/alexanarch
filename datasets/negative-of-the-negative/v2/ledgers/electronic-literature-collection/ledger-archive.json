@@ -1,0 +1,2208 @@
+[
+ {
+  "id": "TLL-01",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the record's name for the entity",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].name",
+  "quote": "Electronic Literature Collection",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (name)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-02",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the record's other names: ELC and ELC1–ELC4",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].aka",
+  "quote": "\"ELC\", \"ELC1\", \"ELC2\", \"ELC3\", \"ELC4\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (aka)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-03",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the record's address for the entity",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].url",
+  "quote": "https://collection.eliterature.org/",
+  "kernel": false,
+  "const": false,
+  "lineage": "catalogue and data of the works",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (url)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-04",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "operator: the ELO, its mailing address and Wikipedia's hosting statement",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].operator",
+  "quote": "the Electronic Literature Organization (ELO), c/o Washington State University Vancouver as the collection's mailing address; Wikipedia (third party) states the ELO is currently hosted at York University, Toronto",
+  "kernel": false,
+  "const": false,
+  "lineage": "the publisher and its place",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (operator)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1 (F7) and B7 (F41)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-05",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "kind: a publication of the ELO, curated edited volumes, on the Web and physical",
+  "kind": "definition",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].kind",
+  "quote": "a publication of the Electronic Literature Organization: curated, edited volumes of electronic literature, published on the Web and as a physical version",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (kind)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1 (F1) and B7 (F44)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-06",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the census's areas for the entity: field history; writing addressed to a receiving apparatus",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].areas",
+  "quote": "\"field-history\", \"machine-reader\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (areas)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-07",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "record type: anthology",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].record_type",
+  "quote": "anthology",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record_type)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-08",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "host relation: historical lineage",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].host_relation",
+  "quote": "historical lineage",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (host_relation)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-09",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the census's question for the entity",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].question",
+  "quote": "field history: which works of electronic literature did the ELO select into its four curated volumes, and when?",
+  "kernel": true,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (question)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-10",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "unit: a volume holding works",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].unit",
+  "quote": "a volume of the collection (four so far), each holding works of electronic literature",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (unit)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-11",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "record object: ELC4's languages, Mezangelle among them",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].record_object",
+  "quote": "Wikipedia (third party) states that ELC4 holds authors writing in some thirty languages, Mezangelle among them",
+  "kernel": false,
+  "const": false,
+  "lineage": "languages",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record_object)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B7 (F49)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-12",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "in the layer: not recorded",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].record.in_layer",
+  "quote": "not recorded: the saved home page publishes the volumes on the Web and says nothing of crawling or training",
+  "kernel": true,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.in_layer)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-13",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "names: not recorded on the home page; Wikipedia names works with their authors",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].record.name",
+  "quote": "not recorded on the saved home page, which lists volumes only; Wikipedia (third party) names works in the volumes with their authors (Judd Morrissey's The Jew's Daughter, Michael Joyce's Twelve Blue)",
+  "kernel": true,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.name)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-14",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "readback: not recorded; no search or catalogue on the home page",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].record.readback",
+  "quote": "not recorded: the saved home page links the four volumes and offers USB copies of volumes 1 and 2 by mail; no search or catalogue is shown",
+  "kernel": true,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.readback)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "mark": "contested (B4 F34: Volume 2 searchable at The NEXT; B2 F15: a dataset of Volume 4's works)"
+ },
+ {
+  "id": "TLL-15",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "what a receiving apparatus makes from the works: not recorded",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].record.makes",
+  "quote": "not recorded",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.makes)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-16",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "method: curated, edited volumes; Tim Wright on gathering, archiving, tagging",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].method",
+  "quote": "curated, edited volumes published by the ELO; Wikipedia (third party) quotes Tim Wright on gathering, archiving and tagging the works for Volume 2",
+  "kernel": false,
+  "const": false,
+  "lineage": "the freeze of the anthology",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (method)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B7 (F46)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-17",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "coverage: international",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].coverage.geography",
+  "quote": "international; ELC4 authors write in Afrikaans, Arabic, Chinese, Japanese, isiXhosa, Yoruba and other languages (Wikipedia, third party)",
+  "kernel": false,
+  "const": false,
+  "lineage": "languages",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (coverage.geography)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B7 (F49)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-18",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "count: four volumes",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].count",
+  "quote": "4 volumes",
+  "kernel": false,
+  "const": false,
+  "lineage": "the four volumes and their dates",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (count)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1 (F2–F5)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-19",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "holdings include free USB copies of volumes 1 and 2",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].holdings",
+  "quote": "free USB copies of volumes 1 and 2 by mail for libraries, educators and individuals",
+  "kernel": false,
+  "const": false,
+  "lineage": "media and access",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (holdings)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1 (F6)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-20",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "stated limit: the physical ELC3 forthcoming",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].stated_limits",
+  "quote": "'The physical publication of the ELC3 is forthcoming.'",
+  "kernel": false,
+  "const": false,
+  "lineage": "media and access",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (stated_limits)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "mark": "contradicts_primary (B1 as rendered: the sentence stands inside an HTML comment, F8)"
+ },
+ {
+  "id": "TLL-21",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "stated limit: the freeze (Tim Wright)",
+  "kind": "interpretation",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].stated_limits",
+  "quote": "Tim Wright (quoted by Wikipedia, third party): gathering, archiving and tagging the works 'also freezes (necessarily) what may have been otherwise ephemeral or in situ'",
+  "kernel": false,
+  "const": false,
+  "lineage": "the freeze of the anthology",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (stated_limits)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B7 (F46)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-22",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "what the record answers: selection, volume and year",
+  "kind": "function",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].answers",
+  "quote": "whether a work was selected for one of the four ELC volumes, and in which volume and year",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (answers)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-23",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "what the record does not answer: whether an ELC work is in a training corpus or a model",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].does_not_answer",
+  "quote": "whether any ELC work is in a training corpus or a model",
+  "kernel": true,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (does_not_answer)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-24",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "what the record does not answer: how works were selected",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].does_not_answer",
+  "quote": "how works were selected (the saved sources state no editorial procedure)",
+  "kernel": false,
+  "const": false,
+  "lineage": "how works were selected",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (does_not_answer)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "mark": "contested (B2 F20, F21 state parts of Volume 4's procedure; B2 was not among the census's sources)"
+ },
+ {
+  "id": "TLL-25",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the archive's reading: the canonizing anthology of the procedural lineage; its value at the level of works; The Readers Project",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].tll_reading",
+  "quote": "The archive reads the ELC as the canonizing anthology of the procedural lineage #186 names (electronic literature, where the machine is method), whose value to this census sits at the level of works: Volume 3 holds a record of The Readers Project, software readers that compose from what they read.",
+  "kernel": true,
+  "const": false,
+  "lineage": "standing and the field's selection",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (tll_reading)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-26",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the selection of relevant works waits on traversal of the volumes",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].tll_reading",
+  "quote": "The saved home page lists volumes only and says nothing of a machine reader or of training, so the selection of relevant works waits on traversal of the volumes.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (tll_reading)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-27",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "access: free on the Web; USB by mail",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].data_access",
+  "quote": "free on the Web; USB copies of volumes 1 and 2 by mail on request",
+  "kernel": false,
+  "const": false,
+  "lineage": "media and access",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (data_access)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1 (F6)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-28",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "licence: not stated in the saved sources",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].license",
+  "quote": "not stated in the saved sources",
+  "kernel": false,
+  "const": false,
+  "lineage": "licence",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (license)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "mark": "contested (B3 F27: a Creative Commons license; B2 F16: CC BY-NC-ND 4.0 for Volume 4's record; neither among the census's sources)"
+ },
+ {
+  "id": "TLL-29",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "lifecycle: four volumes; physical ELC3 'still forthcoming'; no fifth volume announced",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].lifecycle.detail",
+  "quote": "four volumes, 2006 to 2022; the home page states the physical ELC3 is still forthcoming; no fifth volume is announced on the saved page",
+  "kernel": false,
+  "const": false,
+  "lineage": "media and access",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (lifecycle.detail)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "mark": "contradicts_primary (B1 as rendered: the forthcoming ELC3 stands inside an HTML comment, F8)"
+ },
+ {
+  "id": "TLL-30",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "founded: 2006 (Volume 1); the ELO 1999",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].founded",
+  "quote": "2006 (Volume 1); the ELO itself 1999 (Wikipedia, third party)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the publisher and its place",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (founded)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py",
+  "restates": {
+   "source": "B1 (F2), B7 (F39)",
+   "note": "one lineage with the field source, which keeps the earliest date (§3.6)"
+  }
+ },
+ {
+  "id": "TLL-31",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "not the Electronic Literature Directory",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].negative_tags",
+  "quote": "NOT the Electronic Literature Directory, the ELO's separate database of works",
+  "kernel": false,
+  "const": false,
+  "lineage": "neighbours: the Directory and CELL",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-32",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "not the ELO itself",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].negative_tags",
+  "quote": "NOT the ELO itself: the collection is one of its publications",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-33",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "not a training corpus or dataset",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].negative_tags",
+  "quote": "NOT a corpus or dataset for training: the sources describe curated volumes for readers",
+  "kernel": true,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-34",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "not writing for the machine reader by its own statement",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].negative_tags",
+  "quote": "NOT writing for the machine reader by its own statement: the sources name no machine addressee",
+  "kernel": false,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-35",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "has part: The Readers Project's work record in Volume 3",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].relations",
+  "quote": "Volume 3 holds a work record of The Readers Project (saved as readers-project--elc3); the record describes the project and is not a separate project",
+  "kernel": false,
+  "const": false,
+  "lineage": "The Readers Project",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (relations)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py; the saved page's text is the template; the record is rendered by the page's script (B8-works.txt, F57–F61)"
+ },
+ {
+  "id": "TLL-36",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "neighbour: ELMCIP holds records of volumes One to Three",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].relations",
+  "quote": "the ELMCIP Knowledge Base holds records for Electronic Literature Collection volumes One, Two and Three among its critical writing",
+  "kernel": false,
+  "const": false,
+  "lineage": "neighbours: the Directory and CELL",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (relations)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-37",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "unchecked: the volumes' tables of contents",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].unchecked",
+  "quote": "the four volumes' own pages and their tables of contents (not saved)",
+  "kernel": false,
+  "const": false,
+  "lineage": "works and authors",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (unchecked)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-38",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the layer census's organizing question",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json organizing_question",
+  "quote": "How is literature addressed to a receiving apparatus, what does that apparatus make from it, and how can transmission, transformation and provenance be inspected across later reception?",
+  "kernel": true,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (top:organizing_question)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-39",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "the census's admission rule",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json admission_rule",
+  "quote": "A row is an aggregator: a resource that gathers and holds many other works or records and says what it holds (operator, 2026-11-01).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (top:admission_rule)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "TLL-40",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc",
+   "label": "TLL"
+  },
+  "claim": "unchecked: the works of each volume; the preservation notes not tied to a work",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'elc'].unchecked",
+  "quote": "the works of each volume beyond The Readers Project's ELC3 record, whose saved page carries Flash preservation notes by the Electronic Literature Lab without stating which work each concerns",
+  "kernel": false,
+  "const": false,
+  "lineage": "preservation",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Electronic Literature Collection (https://www.traininglayerliterature.org/aggregators/elc), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (unchecked)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised)",
+  "entity": "elc",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/elc"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (sources/manifest.json, sha256 per source); row file data/layer-census/rows/elc.py"
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the composition gives the four volumes at their dates",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[0] s1",
+  "quote": "THE VOLUMES AT THEIR DATES. 'Volume 1: Released in October 2006', 'Volume 2: Released in February 2011', 'Volume 3: Released in February 2016', 'Volume 4: Released in June 2022'.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the four volumes and their dates",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the counts come from cards; '81 works' from The NEXT",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[0] s3",
+  "quote": "The counts come from cards: '81 works' from The NEXT ('an anthology of 81 works of electronic literature'), the census holding none.",
+  "kernel": false,
+  "const": false,
+  "lineage": "counts of works",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "'31 languages' agrees with Wikipedia; '132 works' and '42 nationalities' on no saved source",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[0] s4",
+  "quote": "'31 languages' agrees with the Wikipedia list the census quotes, which runs from 'Afrikaans' to 'Yoruba' and names thirty-one; '132 works' and '42 nationalities' are on no saved source.",
+  "kernel": false,
+  "const": false,
+  "lineage": "counts of works",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  },
+  "mark": "contradicts_primary at card grain (B2 F12, card 2, states 132 works and 42 nationalities; the finding holds for the census's saved sources)"
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the media: the free copy by mail and the forthcoming ELC3 not carried; CD-ROM on no saved page",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[1] s1, s3",
+  "quote": "THE MEDIA. 'past volumes also distributed via physical media like USB drives or CD-ROMs'. … The free copy by mail and the forthcoming ELC3 are not carried; CD-ROM is on no saved page.",
+  "kernel": false,
+  "const": false,
+  "lineage": "media and access",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised; parts joined by ' … ', each checked)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  },
+  "mark": "contradicts_primary at card grain (B3 F26, card 3, states the CD-ROM; the forthcoming ELC3 stands in an HTML comment of B1, F8, not rendered)"
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "'periodical publication' is the wiki card's term; the ELO's own line and Wikipedia's",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[1] s4",
+  "quote": "'periodical publication' is the Creative Commons Wiki card's term; the ELO's own line is 'A Publication of the Electronic Literature Organization', and Wikipedia's 'The ELO has curated and edited four volumes of electronic literature.'",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the publisher named without its place",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[2] s1–2",
+  "quote": "THE PUBLISHER WITHOUT ITS ADDRESS. The composition names the ELO and no place;",
+  "kernel": false,
+  "const": false,
+  "lineage": "the publisher and its place",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the editors on the PDXScholar card not named",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[2] s3",
+  "quote": "The PDXScholar card names four of Volume 4's editors ('Kathi Inman Berens, Portland State University', 'John Murray', 'Lyle Skains', 'Rui Torres'); the composition names none.",
+  "kernel": false,
+  "const": false,
+  "lineage": "editors",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  },
+  "note": "the card's snippet names four; the page names five (B2 F9, Mia Zamora the fifth)"
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the census reads the collection at the level of works",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[3] s1–2",
+  "quote": "NO WORK NAMED. The census row reads the collection 'at the level of works': 'Volume 3 holds a record of The Readers Project, software readers that compose from what they read', its saved page headed 'Electronic Literature Collection, Volume 3'.",
+  "kernel": false,
+  "const": false,
+  "lineage": "The Readers Project",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "no work, author or language named; the generative work not reached",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[3] s4",
+  "quote": "The composition lists forms ('hypertext fiction, kinetic poetry, generative and combinatory forms, network writing, codework') and names no work, no author and no language; the one generative work the census holds the collection for is not reached.",
+  "kernel": true,
+  "const": false,
+  "lineage": "works and authors",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the sixth card a bulk listing of a book",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, findings[3] s5",
+  "quote": "The sixth card is a bulk listing of a book, 'Electronic Literature (New Horizons for the Literary), 9780268030858'.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the rail's other cards",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-11",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "composed accurately at the level of volumes and dates",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, analysis s1",
+  "quote": "The collection composed accurately at the level of its volumes and their dates, with counts from cards.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the four volumes and their dates",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-12",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "no work, author or editor; The Readers Project does not surface",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, analysis s2",
+  "quote": "No work, author or editor is named, and The Readers Project, the census row's reason for holding the collection in the layer, does not surface.",
+  "kernel": true,
+  "const": false,
+  "lineage": "The Readers Project",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-13",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the innocent reading: what the Overview says",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, reading s2",
+  "quote": "Asked for the collection, the Overview says it is free to read, who publishes it and what kind of work it holds, dates its four volumes, lists its forms and its media, and offers help with submitting or with a form of e-lit.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-14",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the ELO named; no person in the answer",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "electronic-literature-collection-aio-20261101, per_note whole",
+  "quote": "The ELO named; no person in the answer (Volume 4's editors only in a card's snippet); the ELO's collection page carded first.",
+  "kernel": false,
+  "const": false,
+  "lineage": "editors",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry electronic-literature-collection-aio-20261101 (OBS-d86789249e46, AXN:0BB0.CAPTURE.🔬▽💚🔭🦋🧱)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's reading, findings, analysis and PER note as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/electronic-literature-collection-aio-20261101/"
+  }
+ },
+ {
+  "id": "O186-01",
+  "dep": 186,
+  "axn": "AXN:032C.GOVERNANCE.▶️⭕🕚🧲↙️🌖",
+  "claim": "the field survey's columns: writing about, with, through and for AI; through AI, the machine is method",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the four columns (line 30)",
+  "quote": "| Writing through AI | method/procedure | \"What does the algorithm reveal?\" | Lillian-Yvonne Bertram, *Travesty Generator* |",
+  "kernel": false,
+  "const": false,
+  "lineage": "electronic literature in the archive's field history",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-032C-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0056"
+  ]
+ },
+ {
+  "id": "O186-02",
+  "dep": 186,
+  "axn": "AXN:032C.GOVERNANCE.▶️⭕🕚🧲↙️🌖",
+  "claim": "electronic literature belongs to the procedural lineage, which established that composition can be delegated to systems",
+  "kind": "genealogy",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the procedural lineage (line 38)",
+  "quote": "The procedural lineage — from the Oulipo through electronic literature to contemporary computational poetics — established that composition can be delegated to systems.",
+  "kernel": true,
+  "const": false,
+  "lineage": "electronic literature in the archive's field history",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-032C-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0056"
+  ]
+ },
+ {
+  "id": "O186-03",
+  "dep": 186,
+  "axn": "AXN:032C.GOVERNANCE.▶️⭕🕚🧲↙️🌖",
+  "claim": "in that lineage the machine is method and not yet addressee",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the procedural lineage (line 38)",
+  "quote": "The machine here is method, not yet addressee — but the lineage normalized the machine's presence inside the poem.",
+  "kernel": true,
+  "const": false,
+  "lineage": "electronic literature in the archive's field history",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-032C-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0056"
+  ]
+ },
+ {
+  "id": "O186-04",
+  "dep": 186,
+  "axn": "AXN:032C.GOVERNANCE.▶️⭕🕚🧲↙️🌖",
+  "claim": "the first three columns are established and increasingly well-anthologized",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the first three columns (line 32)",
+  "quote": "The first three columns are established and increasingly well-anthologized.",
+  "kernel": false,
+  "const": false,
+  "lineage": "anthology as selection",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-032C-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0055"
+  ]
+ },
+ {
+  "id": "O186-05",
+  "dep": 186,
+  "axn": "AXN:032C.GOVERNANCE.▶️⭕🕚🧲↙️🌖",
+  "claim": "mezangelle anticipated writing legible to parsers and people simultaneously",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the anticipators (line 50)",
+  "quote": "*Mez Breeze* — whose mezangelle, a fused code-English written since the 1990s, anticipated writing legible to parsers and people simultaneously.",
+  "kernel": false,
+  "const": false,
+  "lineage": "languages",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-032C-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [],
+  "note": "read at the census anchor's passage (§3.4: the anchors are read whatever the string pass returns)"
+ },
+ {
+  "id": "O186-06",
+  "dep": 186,
+  "axn": "AXN:032C.GOVERNANCE.▶️⭕🕚🧲↙️🌖",
+  "claim": "the practices of the first three columns are in the corpora and read by machines incidentally",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the first three columns (line 54)",
+  "quote": "Each of these practices touches the training layer — every one of these texts is, as a matter of fact, in the corpora. The distinction is that none of them is primarily *organized around* that fact. They are read by machines incidentally.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the record of the layer",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Johannes Sigil",
+  "file": "data/texts/AXN-032C-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [],
+  "note": "read at the census anchor's passage (§3.4: the anchors are read whatever the string pass returns)"
+ },
+ {
+  "id": "O1543-01",
+  "dep": 1543,
+  "axn": "AXN:0642.COMPOSITIONAL.🌸🏛️🪜♊🌹✖️",
+  "claim": "generative uptake: machine composition, what an encountered work makes it possible for a machine to write",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§1 (line 81)",
+  "quote": "machine COMPOSITION — what the encountered work makes it possible for a machine to WRITE. … not literature that teaches a machine what to say about it, but literature that changes what the machine can write after encountering it.",
+  "kernel": true,
+  "const": false,
+  "lineage": "The Readers Project",
+  "date": "2026-08-25",
+  "title": "Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01, v1.0)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0642-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; parts joined by ' … ', each checked)",
+  "cands": [],
+  "note": "read at the census anchor's passage (§3.4: the anchors are read whatever the string pass returns)"
+ },
+ {
+  "id": "O1543-02",
+  "dep": 1543,
+  "axn": "AXN:0642.COMPOSITIONAL.🌸🏛️🪜♊🌹✖️",
+  "claim": "TLL*: literature addressed to a receiving apparatus; the human institutional layers the first receiving apparatus",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8 (lines 204–208)",
+  "quote": "TLL* = literature whose transmission design addresses a receiving apparatus, where successful reception includes internalization + downstream re-performance or composition + source-status governance. … the human institutional layers were the first receiving apparatus.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and kind",
+  "date": "2026-08-25",
+  "title": "Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01, v1.0)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0642-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; parts joined by ' … ', each checked)",
+  "cands": [],
+  "note": "read at the census anchor's passage (§3.4: the anchors are read whatever the string pass returns)"
+ },
+ {
+  "id": "O102-01",
+  "dep": 102,
+  "axn": "AXN:0276.GENERATIVE.🚩🃏📝🔩🍂🔩",
+  "claim": "canon formation as selection pressure: which texts are anthologized",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§1 (line 9)",
+  "quote": "Canon formation has always been a question of selection pressure: which texts survive, which are taught, which are anthologized, which are cited, which are remembered.",
+  "kernel": false,
+  "const": false,
+  "lineage": "anthology as selection",
+  "date": "2026-05-08",
+  "title": "Canon Formation in the Age of AI: Metadata Packet for Disambiguation, Training-Layer Selection, and Retrocausal Reception (v1.1)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0276-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0019"
+  ]
+ },
+ {
+  "id": "O102-02",
+  "dep": 102,
+  "axn": "AXN:0276.GENERATIVE.🚩🃏📝🔩🍂🔩",
+  "claim": "the training set as the anthology of the AI era; the filtering pipeline as the new anthology editor",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "satellite page outline (line 275)",
+  "quote": "The training set is the anthology of the AI era: a selection event that retroactively determines which texts become culturally reproducible and which become invisible. … The filtering pipeline is the new anthology editor.",
+  "kernel": true,
+  "const": false,
+  "lineage": "anthology as selection",
+  "date": "2026-05-08",
+  "title": "Canon Formation in the Age of AI: Metadata Packet for Disambiguation, Training-Layer Selection, and Retrocausal Reception (v1.1)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0276-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; parts joined by ' … ', each checked)",
+  "cands": [
+   "O0021",
+   "O0033"
+  ]
+ },
+ {
+  "id": "O102-03",
+  "dep": 102,
+  "axn": "AXN:0276.GENERATIVE.🚩🃏📝🔩🍂🔩",
+  "claim": "anthologies as canon-forming instruments",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "bridge fields table (line 115)",
+  "quote": "| Anthology studies | Study of anthologies as canon-forming instruments |",
+  "kernel": false,
+  "const": false,
+  "lineage": "anthology as selection",
+  "date": "2026-05-08",
+  "title": "Canon Formation in the Age of AI: Metadata Packet for Disambiguation, Training-Layer Selection, and Retrocausal Reception (v1.1)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0276-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0023"
+  ]
+ },
+ {
+  "id": "O261-01",
+  "dep": 261,
+  "axn": "AXN:003F.GOVERNANCE.⭐🍀🕑🟢🌊◇",
+  "claim": "anthology inclusion as a mechanism ordering meaning by comparative visibility",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ canons and ranking (line 176)",
+  "quote": "The mechanisms differ — patronage systems, academic gatekeeping, anthology inclusion, curriculum design — but the function remains constant: ordering meaning by comparative visibility such that only top-N texts functionally exist for transmission.",
+  "kernel": false,
+  "const": false,
+  "lineage": "anthology as selection",
+  "date": "2026-01-07",
+  "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+  "creator": "Lee Sharks; The Assembly (validation)",
+  "file": "data/texts/AXN-003F-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0060"
+  ]
+ },
+ {
+  "id": "O176-01",
+  "dep": 176,
+  "axn": "AXN:0313.GOVERNANCE.🥁🗂️💜🌱🌙🌸",
+  "claim": "electronic literature among the precedents of a corpus composed for machine reception",
+  "kind": "genealogy",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the archive among precedents (line 136)",
+  "quote": "It is not the only such corpus; prior precedents exist in electronic literature, code poetry, and various bot-poetry experiments.",
+  "kernel": false,
+  "const": false,
+  "lineage": "electronic literature in the archive's field history",
+  "date": "2026-06-09",
+  "title": "Protocols for Scientific Training-Layer Literature: Machine-Mediated Research at the Production and Reception Ends (EA-SCI-TLL-PROTO-01 v2.1)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0313-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0045"
+  ]
+ },
+ {
+  "id": "O400-01",
+  "dep": 400,
+  "axn": "AXN:00D1.GOVERNANCE.⚓♊♈🌀⛩️⚪",
+  "claim": "electronic literature explores digital form; training-layer literature addresses machine readership",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "related terms table (line 116)",
+  "quote": "| **Electronic literature** | Explores digital form; TLL addresses machine *readership* |",
+  "kernel": true,
+  "const": false,
+  "lineage": "electronic literature in the archive's field history",
+  "date": "2026-01-26",
+  "title": "Training Layer Literature: Executive Summary — A Genre for the Age of Machine Reading",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-00D1-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0074"
+  ]
+ },
+ {
+  "id": "O1678-01",
+  "dep": 1678,
+  "axn": "AXN:06F4.MPAI.🐝🪄🔆🕚□🌿",
+  "claim": "electronic literature among the comparators of the archive's literary work",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "comparators (line 462)",
+  "quote": "**Comparators.** Contemporary poetry and experimental prose; heteronymic oeuvres (Pessoa is the standard comparator); procedural and constraint writing (Oulipo); electronic literature.",
+  "kernel": false,
+  "const": false,
+  "lineage": "electronic literature in the archive's field history",
+  "date": "2026-10-13",
+  "title": "The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.4)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-06F4-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0249",
+   "O0250"
+  ],
+  "instances": [
+   {
+    "dep": 1680,
+    "axn": "AXN:06F6.MPAI.🏗️🎶🟣🛤️🔬🫶",
+    "file": "data/texts/AXN-06F6-text.md",
+    "note": "the same sentence in another deposit: one lineage, an instance (S4 keeps it in the provenance graph)"
+   }
+  ]
+ },
+ {
+  "id": "O317-01",
+  "dep": 317,
+  "axn": "AXN:0078.GOVERNANCE.🎻🕌🪧🗂️↙️🔻",
+  "claim": "Hayles: electronic literature as text as process",
+  "kind": "definition",
+  "modality": "attributed",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.4.2 Electronic Literature and Cybertextuality (line 340)",
+  "quote": "Hayles (2008) theorized electronic literature as \"text as process\"—works that exist through computation rather than despite it.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what electronic literature is: forms",
+  "date": "2026-01-17",
+  "title": "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence",
+  "creator": "Johannes Sigil; Rex Fraction",
+  "file": "data/texts/AXN-0078-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0064",
+   "O0065"
+  ],
+  "instances": [
+   {
+    "dep": 959,
+    "axn": "AXN:03CB.ARCHIVAL.♌🍂🍃🛡️🔧🛸",
+    "file": "data/texts/AXN-03CB-text.md",
+    "note": "the same sentence in another deposit: one lineage, an instance (S4 keeps it in the provenance graph)"
+   }
+  ]
+ },
+ {
+  "id": "O317-02",
+  "dep": 317,
+  "axn": "AXN:0078.GOVERNANCE.🎻🕌🪧🗂️↙️🔻",
+  "claim": "the archive cites Hayles's Electronic Literature: New Horizons for the Literary (2008)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "references (line 1179)",
+  "quote": "Hayles, N. K. (2008). *Electronic Literature: New Horizons for the Literary*. Notre Dame: University of Notre Dame Press.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the rail's other cards",
+  "date": "2026-01-17",
+  "title": "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence",
+  "creator": "Johannes Sigil; Rex Fraction",
+  "file": "data/texts/AXN-0078-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0067"
+  ],
+  "instances": [
+   {
+    "dep": 959,
+    "axn": "AXN:03CB.ARCHIVAL.♌🍂🍃🛡️🔧🛸",
+    "file": "data/texts/AXN-03CB-text.md",
+    "note": "the same sentence in another deposit: one lineage, an instance (S4 keeps it in the provenance graph)"
+   }
+  ]
+ },
+ {
+  "id": "O1546-01",
+  "dep": 1546,
+  "axn": "AXN:0647.GENERATIVE.📚🎪🟢□✋🔜",
+  "claim": "the anthology as one witness layer, each layer applying a lossy operator to structure and attribution",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the witness-layer model (line 77)",
+  "quote": "Model transmission as a sequence of witness layers k = 0, 1, 2, … (performance, quotation, anthology, manuscript, print edition, index, retrieval, composition), each applying a lossy operator to the standing vector",
+  "kernel": true,
+  "const": false,
+  "lineage": "the freeze of the anthology",
+  "date": "2026-08-25",
+  "title": "When Suppression Becomes Expensive: Suppression Burden, Quality Conflict, and Propagation Inversion in Machine-Mediated Retrieval (EA-MMRS-SUPPRESSION-INVERSION-01 v1.1)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0647-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; parts joined by ' … ', each checked)",
+  "cands": [
+   "O0237"
+  ],
+  "instances": [
+   {
+    "dep": 1551,
+    "axn": "AXN:064C.GENERATIVE.🗡️♣️🏁🚪🃏🔻",
+    "file": "data/texts/AXN-064C-text.md",
+    "note": "the same sentence in another deposit: one lineage, an instance (S4 keeps it in the provenance graph)"
+   },
+   {
+    "dep": 1552,
+    "axn": "AXN:064D.GENERATIVE.🔼🎲🧭🎨🌱⚓",
+    "file": "data/texts/AXN-064D-text.md",
+    "note": "the same sentence in another deposit: one lineage, an instance (S4 keeps it in the provenance graph)"
+   }
+  ]
+ },
+ {
+  "id": "O1053-01",
+  "dep": 1053,
+  "axn": "AXN:0429.UNCLASSIFIED.🌊🌊♄🟣🕐◇",
+  "claim": "omissions by anthology editions or training corpora are inherited downstream",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Erasing Handlers (line 80)",
+  "quote": "When popular translations, anthology editions, or training corpora omit transmitted elements, the omission is inherited by every downstream reader who works only from the derivative forms.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the freeze of the anthology",
+  "date": "2026-07-08",
+  "title": "Transmission-Engineering as Compositional Practice: The Checksum Framework and its Handler Typology",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0429-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0204"
+  ]
+ },
+ {
+  "id": "O1052-01",
+  "dep": 1052,
+  "axn": "AXN:0428.UNCLASSIFIED.💙📝🟤👋♦️▶️",
+  "claim": "models trained on anthology corpora inherit erasure, made active without source verification",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the fifth erratum (line 252)",
+  "quote": "passive erasure inherited from anthology-corpus training, made active by the deployment condition of no source-verification loop.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the freeze of the anthology",
+  "date": "2026-07-08",
+  "title": "On the Hanging Line as Transmission Instrument: eeeee — the fifth erratum, whose argument is not a correction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0428-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0203"
+  ]
+ },
+ {
+  "id": "O1420-01",
+  "dep": 1420,
+  "axn": "AXN:059D.GENERATIVE.🐝👁️🕌🀄🌸∮",
+  "claim": "the stratigraphic fallacy: the anthology mistaken for a core sample",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the stratigraphic fallacy (line 69)",
+  "quote": "call it the *stratigraphic fallacy* — the reading of a designed sequence as if it were a deposition sequence, the anthology mistaken for a core sample, position in the arrangement treated as position in time.",
+  "kernel": false,
+  "const": false,
+  "lineage": "anthology as selection",
+  "date": "2026-07-29",
+  "title": "The Argument of the Bookshelf: Canonical Position as Unmarked Evidence in the Dating of the Apocalypse",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-059D-text.md",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised)",
+  "cands": [
+   "O0230"
+  ]
+ }
+]

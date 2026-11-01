@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>dolma | Data and tools for generating and inspecting OLMo pre-training data.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="dolma" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Data and tools for generating and inspecting OLMo pre-training data." />
+<meta property="og:description" content="Data and tools for generating and inspecting OLMo pre-training data." />
+<link rel="canonical" href="https://allenai.github.io/dolma/" />
+<meta property="og:url" content="https://allenai.github.io/dolma/" />
+<meta property="og:site_name" content="dolma" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="dolma" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Data and tools for generating and inspecting OLMo pre-training data.","headline":"dolma","name":"dolma","url":"https://allenai.github.io/dolma/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/dolma/assets/css/style.css?v=669f534823b08d266a8fff01f8a1c916a5a56576">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/dolma/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="https://allenai.github.io/dolma/">dolma</a></h1>
+      
+
+      <p><img alt="Dolma's official logo. It's dolma written in yellow, round lowercase letters over a blue background." src="https://raw.githubusercontent.com/allenai/dolma/main/docs/assets/AI2_Blog_1400x685_2x.webp" width="100%" /></p>
+
+<p>Dolma is two things:</p>
+
+<ol>
+  <li><strong>Dolma Dataset</strong>: an open dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials.</li>
+  <li><strong>Dolma Toolkit</strong>: a high-performance toolkit for curating datasets for language modeling – this repo contains the source code for the Dolma Toolkit.</li>
+</ol>
+
+<h2 id="dolma-dataset">Dolma Dataset</h2>
+
+<p>Dolma is an open dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials.
+It was created as a training corpus for <a href="https://allenai.org/olmo">OLMo</a>, a language model from the <a href="https://allenai.org">Allen Institute for AI</a> (AI2).</p>
+
+<p>Dolma is available for download on the HuggingFace 🤗 Hub: <a href="https://huggingface.co/datasets/allenai/dolma"><code class="language-plaintext highlighter-rouge">huggingface.co/datasets/allenai/dolma</code></a>. Dolma is licensed under <strong><a href="https://opendatacommons.org/licenses/by/1-0/">ODC-BY</a></strong>; see our <a href="https://blog.allenai.org/making-a-switch-dolma-moves-to-odc-by-8f0e73852f44">blog post</a> for explanation.</p>
+
+<p>You can also read more about Dolma in <a href="https://blog.allenai.org/dolma-3-trillion-tokens-open-llm-corpus-9a0ff4b8da64">our announcement</a>, as well as by consulting its <a href="/dolma/docs/assets/dolma-v0_1-20230819.pdf">data sheet</a>.</p>
+
+<h2 id="dolma-toolkit">Dolma Toolkit</h2>
+
+<p>This repository houses the Dolma Toolkit, which enables curation of large datasets for (pre)-training ML models. Its key features are:</p>
+
+<ol>
+  <li><strong>High Performance</strong> ⚡: Can process billions of documents concurrently thanks to built-in parallelism.</li>
+  <li><strong>Portability</strong> 🧳: Works on a single machine, a cluster, or cloud environment.</li>
+  <li><strong>Built-In Taggers</strong> 🏷: Includes ready-to-use taggers commonly used to curate datasets such as <a href="https://arxiv.org/abs/2112.11446">Gopher</a>, <a href="https://arxiv.org/abs/1910.10683">C4</a>, and <a href="https://openwebtext2.readthedocs.io/en/latest/">OpenWebText</a>.</li>
+  <li><strong>Fast Deduplication</strong> 🗑: Speedy document deduplication using a Rust Bloom filter.</li>
+  <li><strong>Extensibility</strong> 🧩 &amp; <strong>Cloud Support</strong> ☁: Supports custom taggers and AWS S3-compatible locations.</li>
+</ol>
+
+<p>To install, simply type <code class="language-plaintext highlighter-rouge">pip install dolma</code> in your terminal.</p>
+
+<p>To learn more about how to use the Dolma Toolkit, please visit the <a href="/docs">documentation</a>.</p>
+
+<h2 id="citation">Citation</h2>
+
+<p>If you use the Dolma dataset or toolkit, please cite the following items:</p>
+
+<!--  -->
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">dolma</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Dolma: An Open Corpus of Three Trillion Tokens for Language Model Pretraining Research}}</span><span class="p">,</span>
+  <span class="na">author</span><span class="p">=</span><span class="s">{Luca Soldaini and Rodney Kinney and Akshita Bhagia and Dustin Schwenk and David Atkinson and Russell Authur and Ben Bogin and Khyathi Chandu and Jennifer Dumas and Yanai Elazar and Valentin Hofmann and Ananya Harsh Jha and Sachin Kumar and Li Lucy and Xinxi Lyu and Nathan Lambert and Ian Magnusson and Jacob Morrison and Niklas Muennighoff and Aakanksha Naik and Crystal Nam and Matthew E. Peters and Abhilasha Ravichander and Kyle Richardson and Zejiang Shen and Emma Strubell and Nishant Subramani and Oyvind Tafjord and Pete Walsh and Luke Zettlemoyer and Noah A. Smith and Hannaneh Hajishirzi and Iz Beltagy and Dirk Groeneveld and Jesse Dodge and Kyle Lo}</span><span class="p">,</span>
+  <span class="na">year</span><span class="p">=</span><span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">journal</span><span class="p">=</span><span class="s">{arXiv preprint}</span><span class="p">,</span>
+  <span class="na">url</span><span class="p">=</span><span class="s">{https://arxiv.org/abs/2402.00159}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<!--  -->
+
+
+      
+      <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+        This site is open source. <a href="https://github.com/allenai/dolma/edit/main/README.md">Improve this page</a>.
+      </div>
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>

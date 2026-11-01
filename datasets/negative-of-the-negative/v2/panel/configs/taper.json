@@ -1,0 +1,53 @@
+{
+  "row": "taper",
+  "address": "Taper magazine",
+  "entity": "Taper (Taper magazine; taper.badquar.to, moving to taperzine.org): in its own words 'an online literary magazine for small computational pieces, published by Bad Quarto', and 'an online literary journal for computational poetry and literary art published twice yearly by Bad Quarto', each issue edited by a collective, each piece's core code held to 2KB (2048 bytes); sixteen issues listed on its index from Taper #1 (Spring 2018) to Taper #16 (Spring 2026), issue #17 to launch at taperzine.org; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/taper)",
+  "row_type": "C (a public entity on which the archive bears: an online literary magazine of small computational pieces; an entity of the traininglayerliterature.org layer census, host_relation 'peripheral comparator')",
+  "aliases": [
+    {
+      "pattern": "\\bTaper\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\btaperzine\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\btaper\\.badquar\\.to\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bBad Quarto\\b",
+      "flags": ""
+    }
+  ],
+  "classes": [
+    {
+      "term": "computational and procedural poetry (small computational pieces; poetry made through code, the machine as method)",
+      "pattern": "\\b(computational (poe(m|ms|try|tics)|pieces?|literature|literary art|writing)|procedural (poe(m|ms|try|tics)|lineage|generation|composition|writing)|code[- ]poe(m|ms|try)|creative cod(e|ing)|size[- ]coded)\\b",
+      "flags": "i",
+      "basis": "field: B1 (taper.badquar.to: 'an online literary magazine for small computational pieces'); B2 (helentseng.com/taper: 'an online literary magazine for tiny computational poems (under 2 kilobytes)'); B3 (Instagram card snippet: 'computational poems under 2KB (2048 bytes)'); B4 (anjchang.com: 'an online literary journal for computational poetry and literary art'); B5 (Facebook card snippet: 'creative size-coded digital works'); B7 (taperzine.org: 'a literary magazine for small computational pieces'); B8 (Taper #16 About: 'computational poetry and literary art'). The census's own kind ('an online literary magazine for small computational pieces') and tll_reading ('the procedural column of #186') for the entity (census.json rows[slug == 'taper'].kind, .tll_reading)."
+    },
+    {
+      "term": "literary magazines and journals of digital and electronic writing (periodicals that publish such work in issues)",
+      "pattern": "\\b(literary (magazine|journal|periodical)s?|online (literary )?(magazine|journal)s?|digital zines?|e-?zines?)\\b",
+      "flags": "i",
+      "basis": "field: B1 ('an online literary magazine'); B4 ('Taper Digital Zine'; 'an online literary journal ... published twice yearly by Bad Quarto'); B7 ('a literary magazine'); B8 ('an online literary journal'). The census's record_type 'journal', evidence_kind 'journal' and area 'field-history' ('Field history and indexes of electronic, generative and computational literature') for the entity (census.json rows[slug == 'taper'].record_type, .evidence_kind, .areas; census.json areas)."
+    },
+    {
+      "term": "writing under a size or formal constraint (constrained literature; a byte limit on the work)",
+      "pattern": "\\b(constrained (literature|writing|poe(m|ms|try)|forms?)|(size|byte|file[- ]size) (limits?|constraints?)|kilobytes?|2 ?KB)\\b",
+      "flags": "i",
+      "basis": "field: B2 ('tiny computational poems (under 2 kilobytes)'); B3 (card snippet: 'under 2KB (2048 bytes)'; 'Submit your 2Kb HTML5 digital poems'); B8 ('Our usual constraint was applied: The core part of each poem ... can be no more than a tiny 2KB (2048 bytes)'; 'please follow the spirit of the constraints and avoid bypassing the size limit'). The census's stated_limits ('small computational pieces' bounds what it publishes) for the entity."
+    }
+  ],
+  "classes_note": "Three classes, each sourced by the field B and the census record: (1) computational and procedural poetry (B1, B2, B3, B4, B5, B7, B8; census kind and tll_reading, which names 'the procedural column of #186'); (2) literary magazines and journals of digital writing (B1, B4, B7, B8; census record_type, evidence_kind 'journal' and area 'field-history'); (3) writing under a size constraint (B2, B3, B8; census stated_limits). Aliases: the name (case-sensitive; the common noun 'taper' and its senses, which Wikipedia's disambiguation page lists, are read out at admission), the social handle and new domain taperzine, the old host, and the publisher's name Bad Quarto (case-sensitive; the Shakespearean 'bad quarto', a bibliographic term, is a homonym and is read out at admission). Nick Montfort (publisher, B4, B8), Angela Chang and Helen Shewolfe Tseng (editors, B2, B4, B8) and The Trope Tank at MIT (B4) are distinct entities and are not aliases. #186 and #1543, the census's anchors, are read at the passages that bear on the entity's kind: #186's division of the field by the direction of address, its procedural lineage (with Montfort named among its living masters) and its three criteria of address, architecture and persistence; #1543's claim of machine composition. The census's tll_reading applies #186's procedural column to the entity: that reading is the archive's, ledgered as TLL-NN. Admission by reading (§3.4): D where a deposit names the magazine and says something of it; R where it states a relation between the magazine and an archive object; O-class where a sentence applies an archive category (the direction of address, the machine as method or as reader, the three criteria) to one of the three classes; a bare mention, a citation line or a homonym is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'Taper magazine' (taper-magazine-aio-20261101, OBS-3d4deefa4170, ADDR-302404e99b6f), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+    186,
+    400,
+    1012,
+    176
+  ]
+}

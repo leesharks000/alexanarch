@@ -1,0 +1,60 @@
+{
+  "row": "dolma",
+  "address": "Dolma dataset",
+  "entity": "Dolma (allenai/dolma): an open English corpus of three trillion tokens for language model pretraining research, built by the Allen Institute for AI (Ai2) from web content, scientific papers, code, public-domain books, social media and encyclopedic materials, released with its documentation and an open-source curation toolkit, and created as the training corpus for Ai2's OLMo models; the paper of Luca Soldaini and 35 other authors (arXiv:2402.00159, ACL 2024); formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/dolma)",
+  "row_type": "C (a public entity on which the archive bears: a documented pretraining corpus and its curation toolkit; an entity of the traininglayerliterature.org layer census, area 'corpora', host_relation 'infrastructure')",
+  "aliases": [
+    {
+      "pattern": "\\bDolma\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\ballenai/dolma\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\b2402\\.00159\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\bOLMo'?s? (accessible |open |pre-?)?training (data|materials|corpus|dataset)\\b",
+      "flags": ""
+    }
+  ],
+  "classes": [
+    {
+      "term": "pretraining corpora and training datasets of language models (collections whose texts enter machine training)",
+      "pattern": "\\b(pre-?training (corpus|corpora|data|datasets?)|training (corpus|corpora|datasets?|sets?)|AI training corpora|training data)\\b",
+      "flags": "i",
+      "basis": "field: B4 (arXiv abstract: 'we curate and release Dolma, a three-trillion-token English corpus' 'To facilitate scientific research on language model pretraining'); B1 (Hugging Face card: 'Dolma is a dataset of 3 trillion tokens'; 'Models trained or fine-tuned on allenai/dolma'); B2 (GitHub Pages: 'It was created as a training corpus for OLMo'); B3 (Ai2: 'What dataset should OLMo be trained on?'). The layer census's area 'corpora' ('collections, crawls and datasets whose texts enter machine training'), kind and record.in_layer ('the corpus is itself pretraining data') for the entity (census.json rows[slug == 'dolma'].areas, .kind, .record.in_layer; census.json areas.corpora)."
+    },
+    {
+      "term": "curation of a training corpus: filtering, deduplication and masking applied to documents before training",
+      "pattern": "\\b(data curation|curation (toolkit|pipeline)|deduplicat\\w+|quality[- ]filter\\w*|PII (masking|removal|detection))\\b",
+      "flags": "i",
+      "basis": "field: B4 (arXiv abstract: 'we open-source our data curation toolkit'); B2 (GitHub Pages: 'a high-performance toolkit for curating datasets for language modeling'; 'Fast Deduplication'); B3 (Ai2: 'Quality filtering', 'Deduplication', 'Risk mitigation ... We detect and mask email addresses'). The layer census's method and holdings for the entity ('an open-source data curation toolkit') (census.json rows[slug == 'dolma'].method, .holdings)."
+    },
+    {
+      "term": "tracing a model's output back to its training data, and the provenance and attribution of documents in a corpus",
+      "pattern": "\\b(attribution of model output|(trace|tracing|traced)\\w* [^.]{0,40}(back )?to (its |the )?(training|pretraining) (data|text|corpus|corpora)|training[- ]data (attribution|provenance)|membership (test|inference))\\b",
+      "flags": "i",
+      "basis": "field: B3 (Ai2: 'open data is critical for research that has become increasingly important with the proliferation of generative models, such as attribution of model output back to pretraining data'); B1 (Hugging Face card, summary statistics, a 'Provenance' column per source). The layer census's area 'finding' is not the entity's; its record.name and record.readback and does_not_answer ('whether a named work is in Dolma (no search or membership test is recorded in the saved sources)'; 'whether a work in Dolma keeps its author's name') and tll_reading ('the metadata that lets it be found and attributed' (#186)) put the question to the entity (census.json rows[slug == 'dolma'].record, .does_not_answer, .tll_reading)."
+    }
+  ],
+  "classes_note": "Three classes, each sourced by the field B and the layer census record. (1) pretraining corpora and training datasets: B4, B1, B2, B3; census area 'corpora', kind, record.in_layer. (2) curation of a training corpus (filtering, deduplication, masking): B4, B2, B3; census method and holdings. (3) tracing output to training data, and the provenance and attribution of documents in a corpus: B3 (attribution of model output back to pretraining data), B1 (the Provenance column); census record.name, record.readback, does_not_answer, tll_reading. The census anchors #186 and #1543 are read at the passages that bear on corpora and on what survives of a work in them, whatever the string pass returns: #186 at its third criterion (persistence, 'with the metadata that lets it be found and attributed', which the census's tll_reading quotes), at 'every one of these texts is, as a matter of fact, in the corpora' and at the model-collapse irony; #1543 at the institutional training loop (x → M_t → y → corpus_{t+1}) and at PER as what survived from x. 'Dolma' is matched case-sensitive; the dish, the given name and the 2012 film of the name (Wikipedia, Dolma and Dolma (disambiguation)) are homonyms and are not aliases. The description 'OLMo's training data/materials' is an alias by the field's own statement that Dolma was created as OLMo's training corpus (B2, B3). Ai2, OLMo, OLMoTrace, Common Crawl, The Pile, Project Gutenberg and the other component sources are distinct entities and not aliases (Common Crawl, The Pile, Project Gutenberg and OLMoTrace have rows of their own).",
+  "exclude_deposits": [],
+  "notes": "Address 'Dolma dataset' (the census name as run, 2026-11-01 09:56 EDT); one capture, dolma-dataset-aio-20261101 (OBS-6dd2d86d5018).",
+  "hop_from": [
+    186,
+    1543,
+    98,
+    127,
+    1070,
+    727,
+    716,
+    753,
+    623,
+    1075,
+    1695
+  ]
+}

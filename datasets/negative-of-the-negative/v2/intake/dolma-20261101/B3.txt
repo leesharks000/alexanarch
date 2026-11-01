@@ -1,0 +1,230 @@
+Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2 
+ Skip to main content -> 
+ Ai2 Open models Open models
+ Olmo 
+ Tülu 3 
+ Molmo 
+ Playground 
+ Language models 
+ Multimodal models 
+ Evaluation frameworks 
+ Open data 
+
+ Applications 
+
+ AI for science
+ Asta 
+ AstaBench 
+ Research with Asta 
+ Asta leaderboards 
+ Semantic Scholar 
+ All projects 
+
+ AI for the planet
+ OlmoEarth 
+ EarthRanger 
+ Skylight 
+ Climate Modeling 
+ All projects 
+
+ AI for robotics
+ Embodied AI 
+
+ Research Research
+ Latest 
+ Papers 
+ Research principles 
+
+ News 
+ Institute Institute
+ About 
+ Careers 
+ Media center 
+
+ Navigation Menu 
+ Ai2 Dolma: 3 trillion token open corpus for language model pretraining
+ August 18, 2023
+ Luca Soldaini - Ai2 
+
+ Share 
+
+ Since March, we at the Allen Institute for AI have been creating OLMo , an open language model to promote the study of large-scale NLP systems. One of our major goals is to build OLMo in a transparent and open manner by releasing artifacts and documenting processes we followed throughout this project. Today, we release our first data artifact in this project — Dolma ¹, a dataset of 3 trillion tokens from a diverse mix of web content, academic publications, code, books, and encyclopedic materials. Openly available for download on the HuggingFace Hub , Dolma is the largest open dataset to date.
+
+ In this blog post, we provide a high-level summary of:
+
+ Our goals and how they influenced our dataset design and decisions made throughout the project,
+
+ What’s in the dataset and how we curated it,
+
+ How our dataset compares with other datasets for building language models, both closed and open,
+
+ Who can use this dataset, where to get access to it, and how it can or can’t be used.
+
+ For more details, we also release a data sheet (Gebru et al, 2018) as initial documentation. A more comprehensive paper is in the works.
+
+ Overview of Dolma by subset type. 
+
+ 1. Project Goals
+
+ What dataset should OLMo be trained on? This was one of the first questions we asked ourselves when we started this project. We decided our ideal dataset would meet several criteria:
+
+ Openness. Lack of access to pretraining corpora alongside corresponding language models has been a major obstacle for the broader research community. We want to create a dataset that gives other researchers the opportunity to independently create better versions of this dataset, study the relationship between the data and any model trained on it, report any issues they observe when inspecting our data, and critique our curation practices, data artifacts, and models trained using our data, as there is little opportunity for researchers to do so today. Beyond transparency, open data is critical for research that has become increasingly important with the proliferation of generative models, such as attribution of model output back to pretraining data.
+
+ Representativeness. Our corpus should be comparable to datasets that have been used for other language models, open or private. In practice, this means using similar document sources and widely-adopted techniques for preprocessing and filtering content. This helps ensure that OLMo exhibits the same broad range of capabilities and behaviors observed in other language models.
+
+ Size. Chinchilla scaling laws have suggested one can train "compute-optimal" models by maintaining a ratio between language model size and number of training tokens. Nevertheless, recent models that follow these laws such as LLaMA 2 appear to show there is still room for performance improvement by increasing the number of training tokens. Since understanding this trade-off is an active area of research, we wanted to collect a large dataset that would allow us to study the relationship between model and dataset size.
+
+ Reproducibility. All tools developed while preparing the dataset should be openly available for others to reproduce our work as well as use to create their own datasets. Related to this, we should focus on pretraining data sources that are available to the public.
+
+ Risk Mitigation. We should minimize risk posed to individuals while meeting reproducibility and representativeness requirements. For example, we are concerned to what extent content in web crawled data can be traced back to a real-world individual.
+
+ 2. Dataset Design Principles
+
+ The number of options when assembling a corpus for language model pretraining is astronomical. Where should data come from? How should it be preprocessed? Which languages should be included? How should personal information from individuals be removed? Should we perform content removal? When creating Dolma, we used four principles to help us make decisions:
+
+ Follow existing practices. 
+
+ Why? By matching methods used to create other language modeling datasets, we enable the broader research community to use our dataset and resulting model artifacts to indirectly study (and scrutinize) language models being developed today, even those developed behind closed doors. 
+
+ Trust the evaluation suite on interventions it can measure; avoid dramatic shifts when it can't. 
+
+ Why? The evaluation suite² we developed for OLMo can offer an indication of model capabilities on diverse tasks; when making data-related decisions that directly affect one of these tasks, we choose the intervention that improves metrics. For example, we include Wikipedia text in Dolma because it improves performance on K-12 science knowledge tasks, such as ARC . However, our evaluation suite is not perfect. For example, it can't fully measure the effect of adding code to our otherwise textual data, since many code benchmarks require models to be further trained to follow instructions. In these cases, we make sure that any one decision does not drastically decrease performance of any of the tasks in the suite. 
+
+ Favor decisions that help us (Ai2) with our core research directions. 
+
+ Why? Not all dataset curation decisions are about benchmark performance. In fact, many desirable interventions are at odds with each other. For example, we would like OLMo to work both on code and text tasks, but adding documents containing code decreases performance on many text benchmarks, and vice versa. Similarly, removing toxic content could decrease the ability of the model to detect hate speech. In cases where "existing practice" is unknown or lacks consensus, we favor decisions that result in a more useful artifact for active or prospective research threads at Ai2. 
+
+ Take a harms-based approach to risk mitigation. 
+
+ Why? Some lines should not be crossed for the sake of research, even if they are common practice in large-scale language modeling projects. We engaged with legal and ethics experts early in the project and evaluated data design decisions based on their feedback on a case-by-case basis. As the landscape around data and AI is constantly evolving, we make no claims that our decisions are flawless. Nevertheless, we do believe in compromise on desired research artifact properties like model reproducibility, performance, and extensibility in cases of significant harm to individuals. 
+
+ 3. How Did We Create Dolma?
+
+ Creating Dolma requires transforming raw data acquired from multiple sources into cleaned, plain text documents. These data processing steps usually follow in two categories:
+
+ Source-specific. Each data source has its own nuances in how it should be processed. For example, filtering files based on their software license is an operation that only makes sense on code.
+
+ Source-agnostic. We often want to perform the same processing operation on multiple data sources (e.g., removing PII or decontaminating against an evaluation set).
+
+ Pretraining corpus creation requires a combination of both types of operations; multiple transformations are executed one after the other in a pipeline. Below, we illustrate the data pipelines for two different sources (web data from Common Crawl and code from The Stack). Note that source-specific processing doesn't simply mean having more or fewer processing steps (e.g., web data has multiple rounds of deduplication), but also that a common source-agnostic processing step may be conducted slightly differently (e.g., language filters for web text versus code).
+
+ Overview of web data processing pipeline 
+
+ Overview of code processing pipeline 
+
+ We will provide a more detailed description of our data processing in our manuscript. Below, we summarize some high-level processing steps that we feel are especially important to call out:
+
+ English only. Most large-scale language modeling research so far has focused on English; for the first version of OLMo, we limit our data to English text to leverage this larger set of known procedures.
+
+ In practice: We use fasttext's language identification models to tag content by language. We use a fairly permissive threshold, keeping documents that have a likelihood over 50% of being in English. Keeping a low threshold can help mitigate inherent biases that language detectors have against English dialects spoken by minoritized groups. We recognize that our decision reinforces the assumption of English as the "default" language; we hope to expand OLMo to other languages after initial milestones are completed. 
+
+ Web data. Most open language models ( Llama 1 / 2 , Falcon , T5 , MPT ) are trained on a significant fraction of preprocessed web text. Despite well-documented limitations and biases of these corpora, web data is central to many (closed) language model efforts. Thus, we believe it necessary to train on web text to ensure OLMo is representative of these other models.
+
+ In practice: Our dataset is derived from 24 Common Crawl snapshots collected between 2020–05 to 2023–06. We use the CCNet pipeline to obtain the main content of each web page in plain text form. Further, we also use the C4 dataset, which is obtained from a Common Crawl snapshot collected in April 2019. 
+
+ Quality filtering³. A significant portion of web crawled data is ill-suited for language model training (e.g., ill-formed text, auto-generated website text). These are often removed through "quality" filtering methods, which fall into two broad categories: model- and rule-based techniques. For example, unigram language models or linear classifiers could be used to select content that broadly resembles Wikipedia pages or books⁴. However, these model-based approaches often have biases that are hard to detect. Following Gopher and Falcon , we opt to use simple heuristics and regular expressions to filter paragraphs. The effect of these filters is to remove errors that arise in the conversion from HTML to plain text.
+
+ In practice: We implement all Gopher paragraph filtering rules, as well as filtering all paragraphs that do not terminate with punctuation, as recommended in C4 . 
+
+ Deduplication. Recent efforts indicate that the deduplication of data leads to language models that train more efficiently. Following this principle, we deduplicate data within each source.
+
+ In practice: We use a two-stage deduplication strategy. First, in common crawl data, we deduplicate pages based on their URL, keeping only one copy of each. Then, we remove duplicate paragraphs within single documents. Both stages use a Bloom filter data structure. 
+
+ Risk mitigation. Data sampled from the internet may contain harmful or toxic content, or leak personal information of internet users. Accurate detection of these categories remains challenging, particularly in cases when large amounts of data have to be processed: even very fast approaches that take less than a second to process a document could take weeks to run over a dataset. Our approach relies on a combination of logistic classifiers (content tagging) and regular expressions (PII detection).
+
+ In practice: We detect and mask email addresses, phone numbers, and IP addresses. We also remove content that is detected to be harmful or obscene by fasttext classifiers trained on the Jigsaw dataset . We chose a very high threshold (>60% likelihood of being harmful or obscene content) to avoid accidentally removing informal content. What is best practice for risk mitigation is an ongoing and active area of research. We have followed best practices for data processing and have also made further steps through our release strategy (explained in Section 6). We expect community norms around these practices will continue to evolve. 
+
+ Just enough code. For language model training, it is common practice to augment plain-text datasets. For example, Gopher was trained on approximately 5% code; MPT on 10%. Adding code allows models to generate code in response to user requests; further, researchers have suggested that code mixing leads to better performance on reasoning tasks. We derive the code subset of Dolma from The Stack , a collection of permissively-licensed GitHub repositories.
+
+ In practice: We apply heuristics derived from Gopher, RedPajama, and StarCoder datasets. Overall, they are designed to remove files that are mostly data or generated through templates. For example, we remove files with json or csv extension, remove templated file preambles, filter files that have overly long lines, or contain mostly numbers. We also remove code secrets or personal information as described above. 
+
+ Diverse sources. Models such as GPT-Neo or Pythia (both trained on The Pile ) have shown the importance of training on a diverse set of documents, such as technical documents or biomedical articles. For Dolma, we leverage Semantic Scholar's corpus by including papers from peS2o , a subset of 38M permissibly licensed scientific manuscripts. We also include Wikipedia and Project Gutenberg.
+
+ In practice: More details on how peS2o was processed are available at its homepage . For Wikipedia, we use the English and Simplified English subset. For the books in Project Gutenberg, we filter for books that are primarily in English. 
+
+ Decontamination. Previous language models have used a variety of techniques to remove evaluation data from their training corpus (e.g. TNLG , GPT-3 , GPT-4 ) as it can cause reported model performance to be artificially inflated. Therefore, in preparing Dolma, we removed training documents with paragraphs that are also present in our evaluation suite⁵.
+
+ In practice: We again use a Bloom filter to check if any paragraph longer than 13 tokens in evaluation datasets appears in the training data. Our decontamination step removes less than 0.001% of the training data by characters, and impacts fewer than 0.02% of documents. 
+
+ Overall, we believe that our approach to Dolma is the most appropriate for our first foray in large-scale language modeling; that doesn't mean it's the best or only way. In fact, we are excited for future research into curating language modeling corpora, and we hope the Dolma dataset and tools to be valuable starting points for future research⁵.
+
+ 4. How Does Dolma Compare With Closed Datasets?
+
+ The following table presents a high-level summary of language models that don't make their pretraining data available. To keep the table from getting too big, we've restricted it to fully-dense, autoregressive models in the 65B+ parameter scale. Checkmarks (✔) indicate the cited work explicitly describes processing steps taken as reported in the paper. Question marks (?) indicate lack of reporting. In cases where only partial information is present (for example, only reporting the type of data a model is trained on, but not its source), we use a tilde (~).
+
+ The purpose of this table is two-fold. First, to summarize the lack of transparency around dataset curation behind large-scale language models, many of which are being developed behind closed doors in private industry. Second, to illustrate what we knew (and didn't know) throughout this dataset creation process when making decisions targeting our stated goal of a representative dataset that follows common practice.
+
+ *We could not find a manuscript detailing the Claude model. Though there are related papers on topics such as handling toxic text, we are not sure whether these techniques are applied to the production Claude model. **Token counts are based on the tokenizer reported in the linked paper, not calculated ourselves. ***Models are labeled as "✔" if there is enough information in the associated paper to guide dataset reproduction. This covers both specific statements (e.g., "we used a fastText classifier trained on X dataset with a threshold of Y), as well as less precise statements (e.g., "we used a small linear model to perform this filtering"). Papers that report not performing a certain type of processing are also labeled "✔", as with OPT's language filtering. Models with partial information also are labeled as "✔", such as with PaLM, PaLM 2 and Gopher papers reporting corpus language breakdowns, but not language ID method. ****If there are mistakes or omissions in this table, please let us know. 
+
+ 5. How Does Dolma Compare With Other Open Datasets?
+
+ The following table presents a high-level summary of other open datasets that have been created and released to support language model development. We use "●" to indicate whether a certain data processing step was taken, and "○" if not. From this, we can identify common practices, such as reliance on web crawled data (esp. Common Crawl) and heavy emphasis on English as the language of focus. We can also observe lack of community consensus around certain practices such as risk mitigation (e.g., PII or toxicity filtering) and how to handle open data licensing.
+
+ Dolma differentiates itself from other datasets on two key aspects. First, it is significantly larger than other open datasets. Second, it is released under Ai2's impact license, which was designed to balance ease of access with mitigation of potential risk in distributing large datasets.
+
+ *No license is applied to texts in the OSCAR dataset, leaving any determination to its users. The packaging of OSCAR is licensed under CC0. **Token counts are based on the tokenizer reported in the linked paper, not calculated ourselves. ***In The Pile paper's evaluation experiments, but not in the released dataset.  ****Released. They also report a version of RefinedWeb with 5T tokens, but this has not been released. *****If there are mistakes or omissions in this table, please let us know. 
+
+ 6. Releasing Dolma
+
+ Dolma is released under Ai2's ImpACT license as a medium-risk artifact. Under this license, researchers must:
+
+ Provide their contact information and state their intended use case(s) for accessing Dolma;
+
+ Disclose the creation of any derivative based on Dolma;
+
+ Distribute derivatives under the same restrictions as the ImpACT license;
+
+ Agree not to leverage Dolma in a range of prohibited uses, such as military surveillance or generating disinformation.
+
+ We encourage all researchers interested in Dolma to consult our license summary and this primer on the ImpACT license, which fully outlines our reasoning in creating this new license. Further, users should review the ImpACT license for Medium Risk artifacts in full before accessing Dolma.
+
+ Finally, as part of our risk mitigation strategy, we created a mechanism to allow the removal of personal data upon request. Interested users should request removal of their information using this form .
+
+ In the coming months, we will continue to make improvements and add new sources to Dolma. A more comprehensive paper is also in the works.
+
+ Contributors to Dolma creation and write-up, listed in alphabetical order: Aakanksha Naik, Abhilasha Ravichander, Akshita Bhagia, Dirk Groeneveld, Dustin Schwenk, Emma Strubell, Evan Pete Walsh, Hannaneh Hajishirzi, Ian Magnusson, Iz Beltagy, Jesse Dodge, Khyathi Chandu, Kyle Lo, Li Lucy, Luca Soldaini, Luke Zettlemoyer, Matt Peters, Nishant Subramani, Noah A. Smith, Oyvind Tafjord, Rodney Kinney, Russell Authur, Zejiang Shen 
+
+ Notes
+
+ Fun fact: Dolma stands for " Data to feed OLMo's Appetite " 😋
+
+ Details on the design of our evaluation suite will be included in a future manuscript.
+
+ The term "quality filter", while widely used in literature, does not appropriately describe the outcome of filtering a dataset. Quality might be perceived as a comment on the informativeness, comprehensiveness, or other characteristics valued by humans. However, the filters used in Dolma and other language models efforts select text according to criteria that are inherently ideological .
+
+ Llama and GPT3 use this approach for filtering content.
+
+ Another important step in pretraining data creation is figuring out how to mix data from different sources together. We believe this is not solely a data operation but also a modeling operation. For example, one can imagine mixing in a certain way that guarantees a certain representation of heterogeneous sources in each batch. We leave discussion of this to future work about the OLMo modeling effort.
+
+ Subscribe to receive monthly updates about the latest Ai2 news.
+ First Name 
+ Last Name 
+ Email 
+
+ Sign up 
+
+ Contact us Questions about our work, or need support with one of our technologies?
+
+ Get in touch 
+
+ Resources Media center 
+ Documentation 
+ Careers 
+ Team directory 
+
+ Community Discord 
+ Reddit 
+ X/Twitter 
+ GitHub 
+ Hugging Face 
+ LinkedIn 
+ Bluesky 
+
+ Legal Terms of use 
+ Privacy policy 
+ DMCA policy 
+ Business code of conduct 
+ Responsible use 
+ Update consent 
+
+ © The Allen Institute for Artificial Intelligence - All Rights Reserved.

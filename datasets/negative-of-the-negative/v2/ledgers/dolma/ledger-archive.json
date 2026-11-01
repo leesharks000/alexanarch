@@ -1,0 +1,1791 @@
+[
+ {
+  "id": "TLL-01",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the record's name for the entity",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].name",
+  "quote": "Dolma",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: an open English pretraining corpus",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (name)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-02",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its other names: the paper's title and the Hugging Face namespace",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].aka",
+  "quote": "Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research … allenai/dolma",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: an open English pretraining corpus",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (aka)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-03",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its operator: the paper's 36 authors; no institution named in the saved sources",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].operator",
+  "quote": "the paper's 36 authors, Luca Soldaini and 35 others (arXiv:2402.00159); the dataset card sits under the allenai namespace on Hugging Face, and its text was rate-limited (HTTP 429) and is unread, so the saved sources name no institution",
+  "kernel": true,
+  "const": false,
+  "lineage": "maker: Ai2 and OLMo",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (operator)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-04",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its kind",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].kind",
+  "quote": "an English corpus for language model pretraining research, released with its documentation and an open-source data curation toolkit",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is: an open English pretraining corpus",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (kind)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-05",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its area: corpora",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].areas",
+  "quote": "corpora",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (areas)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-06",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "what the resource is to the census: infrastructure",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].host_relation",
+  "quote": "infrastructure",
+  "kernel": true,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (host_relation)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-07",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the record's type: dataset",
+  "kind": "definition",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].record_type",
+  "quote": "dataset",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record_type)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-08",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the specific question the resource answers",
+  "kind": "definition",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].question",
+  "quote": "training membership by source type: which kinds of writing does a documented pretraining corpus hold, and how was it built?",
+  "kernel": true,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (question)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-09",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its unit: not recorded; measured in tokens",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].unit",
+  "quote": "not recorded in the saved abstract; the corpus is measured in tokens",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and size",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (unit)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-10",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "what it records",
+  "kind": "definition",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].record_object",
+  "quote": "a three-trillion-token English corpus built from web content, scientific papers, code, public-domain books, social media and encyclopedic materials",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: an open English pretraining corpus",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record_object)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-11",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "whose works it carries into training: the corpus is itself pretraining data",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].record.in_layer",
+  "quote": "the corpus is itself pretraining data: web content, scientific papers, code, public-domain books, social media and encyclopedic materials, released for research on language model pretraining",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it is: an open English pretraining corpus",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.in_layer)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-12",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "whether a work keeps its author's name there: not recorded",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].record.name",
+  "quote": "not recorded; the saved abstract does not say whether a document in Dolma keeps its author's name, source or attribution metadata",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.name)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-13",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "how a work can be read back: documentation and toolkit; no search or membership test recorded",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].record.readback",
+  "quote": "the paper states that Dolma is extensively documented (design principles, construction, a summary of contents) and that the curation toolkit is open-sourced for reproduction; a search or membership test for a single work is not recorded in the saved sources",
+  "kernel": true,
+  "const": false,
+  "lineage": "openness, documentation and the toolkit",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.readback)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-14",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "what a receiving apparatus makes from a work there: not recorded beyond the purpose",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].record.makes",
+  "quote": "not recorded in the saved abstract beyond the corpus's purpose, research on language model pretraining; the paper reports analyses and experiments on intermediate states of the corpus",
+  "kernel": false,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (record.makes)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-15",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its method",
+  "kind": "function",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].method",
+  "quote": "curation of a mixture of sources into a pretraining corpus, with analyses and experiments on intermediate states of the corpus; the curation toolkit is open-sourced",
+  "kernel": false,
+  "const": false,
+  "lineage": "curation: deduplication, masking, decontamination",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (method)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-16",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its coverage: English-language text",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].coverage.geography",
+  "quote": "English-language text (the abstract calls it an English corpus)",
+  "kernel": false,
+  "const": false,
+  "lineage": "English only",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (coverage.geography)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-17",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its count: three trillion tokens, as of arXiv v2",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].count",
+  "quote": "three trillion tokens … arXiv v2, 6 June 2024",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and size",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (count)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-18",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its holdings: the corpus, its documentation and its toolkit",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].holdings",
+  "quote": "sources: web content, scientific papers, code, public-domain books, social media, encyclopedic materials … documentation of design principles, construction and contents … an open-source data curation toolkit",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it holds: sources",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (holdings)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-19",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its stated limits: none in the abstract; the release framed against undisclosed data",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].stated_limits",
+  "quote": "the saved abstract states no limits of the corpus; it frames the release against a field where 'commercial models rarely detail their data, and even open models are often released without accompanying training data or recipes to reproduce them'",
+  "kernel": false,
+  "const": false,
+  "lineage": "openness, documentation and the toolkit",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (stated_limits)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-20",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "what it answers: kinds of source, size and language, construction",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].answers",
+  "quote": "which kinds of source a model trained on Dolma has read (web, scientific papers, code, public-domain books, social media, encyclopedic materials) … the corpus's size and language as its paper states them … how the corpus was built, from its documentation and released toolkit",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (answers)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-21",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "what it does not answer: membership of a named work; whether a work keeps its author's name; other models trained on it",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].does_not_answer",
+  "quote": "whether a named work is in Dolma (no search or membership test is recorded in the saved sources) … whether a work in Dolma keeps its author's name … which models other than the authors' own were trained on it",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (does_not_answer)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-22",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the archive's reading: the corpus settles at its own scale which kinds of writing enter the layer, and makes its construction inspectable",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].tll_reading",
+  "quote": "A corpus that states its own sources and releases its curation toolkit: it settles, at the scale of the corpus, which kinds of writing enter the layer ('public-domain books', 'web content', 'scientific papers'), and makes the construction itself inspectable.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (tll_reading)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-23",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the archive's reading: what a model makes of a given work and whether the work carries the metadata to be found and attributed (#186) lie outside the abstract",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].tll_reading",
+  "quote": "What a model makes from a given work, and whether the work is carried with 'the metadata that lets it be found and attributed' (#186), are outside the saved abstract; the dataset card that would show document fields was rate-limited.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (tll_reading)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-24",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its data access: Hugging Face and the code, linked from arXiv",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].data_access",
+  "quote": "the dataset on Hugging Face (allenai/dolma) and the code, both linked from the arXiv comments as 'this https URL'; the card itself was rate-limited and unread",
+  "kernel": false,
+  "const": false,
+  "lineage": "licence and access",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (data_access)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-25",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its licence: not recorded in the saved sources",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].license",
+  "quote": "not recorded in the saved sources (the arXiv page links a 'view license' for the paper; the dataset card, unread, would carry the dataset's licence)",
+  "kernel": false,
+  "const": false,
+  "lineage": "licence and access",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (license)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-26",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its lifecycle: active; released with the paper; later versions unread",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].lifecycle.detail",
+  "quote": "released with the paper (arXiv v1 31 January 2024; v2 6 June 2024; accepted at ACL 2024); the dataset card was rate-limited on 2026-11-01, so later versions or the dataset's current state are unread",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and size",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (lifecycle.detail)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-27",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "its founding: 2024 (arXiv v1)",
+  "kind": "genealogy",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].founded",
+  "quote": "2024 (arXiv v1, 31 January 2024)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the paper: authors, versions, venue, award",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (founded)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-28",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "negative tag: not a closed commercial corpus",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].negative_tags.0",
+  "quote": "NOT a closed commercial corpus: it is released with documentation and its curation toolkit",
+  "kernel": false,
+  "const": false,
+  "lineage": "openness, documentation and the toolkit",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags.0)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-29",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "negative tag: not a search tool for single works",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].negative_tags.1",
+  "quote": "NOT a search tool for single works: the saved sources record no membership test",
+  "kernel": false,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags.1)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-30",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "negative tag: not multilingual",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].negative_tags.2",
+  "quote": "NOT multilingual by its own description: 'a three-trillion-token English corpus'",
+  "kernel": false,
+  "const": false,
+  "lineage": "English only",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags.2)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-31",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "negative tag: not a record of authorship",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].negative_tags.3",
+  "quote": "NOT a record of authorship: the saved abstract says nothing of attribution metadata",
+  "kernel": false,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (negative_tags.3)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-32",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "unchecked: the dataset card, the full paper, the code repository",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'dolma'].unchecked",
+  "quote": "the Hugging Face dataset card (dolma--card): HTTP 429, rate-limited, unread and unquoted; it would carry the dataset's operator, licence, versions, document fields and any per-document source metadata … the paper's full text (PDF and HTML) beyond the abstract: the unit of record, per-source counts and any attribution or metadata fields … the code repository linked from the arXiv comments",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (unchecked)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (non-string values as their JSON text; whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-33",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the census's organizing question",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json organizing_question",
+  "quote": "How is literature addressed to a receiving apparatus, what does that apparatus make from it, and how can transmission, transformation and provenance be inspected across later reception?",
+  "kernel": true,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (organizing_question)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (whitespace-normalised; multi-part quotes joined by ' … ')",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-34",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the census's admission rule",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json admission_rule",
+  "quote": "A row is an aggregator: a resource that gathers and holds many other works or records and says what it holds (operator, 2026-11-01).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (admission_rule)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (whitespace-normalised; multi-part quotes joined by ' … ')",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-35",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the census's area 'corpora'",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json areas.corpora",
+  "quote": "The corpora: collections, crawls and datasets whose texts enter machine training",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (areas.corpora)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (whitespace-normalised; multi-part quotes joined by ' … ')",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "TLL-36",
+  "dep": "TLL",
+  "record": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma",
+   "label": "TLL"
+  },
+  "claim": "the census's anchors, #186 and #1543",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json anchor",
+  "quote": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey … Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question",
+  "date": "2026-11-01",
+  "title": "traininglayerliterature.org layer census record: Dolma (https://www.traininglayerliterature.org/aggregators/dolma), editor Lee Sharks, compiled 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json (anchor)",
+  "quote_ok": true,
+  "quote_check": "within the field's value as loaded (whitespace-normalised; multi-part quotes joined by ' … ')",
+  "entity": "dolma",
+  "surface": {
+   "url": "https://www.traininglayerliterature.org/aggregators/dolma"
+  },
+  "note": "composed in session on 2026-11-01 from sources saved that day (data/layer-census/sources, sha256 in the manifest); the row rests on the arXiv abstract (dolma--paper); the Hugging Face card (dolma--card) was rate-limited (HTTP 429) and unread"
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the corpus composed at its grain: a named set for each kind of source, Project Gutenberg the one source of the books",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, findings[0]",
+  "quote": "THE CORPUS AT ITS GRAIN. 'Dolma is an open-source 3-trillion-token English corpus' and 'web content (Common Crawl, C4, RefinedWeb), academic papers (arXiv, Semantic Scholar, peS2o), code (The Stack, StarCoder), public-domain books (Project Gutenberg), encyclopedic material (Wikipedia, Wikibooks), and social media discussions (Reddit, StackExchange)'. The saved abstract: 'a three-trillion-token English corpus, built from a diverse mixture of web content, scientific papers, code, public-domain books, social media, and encyclopedic materials.' The abstract names the six kinds; the composition names a set for each, Project Gutenberg the one source of the books, from the Ai2 card ('Sources: CommonCrawl, C4, peS2o, The Stack, Project Gutenb...').",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it holds: sources",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the maker the census does not have: Ai2 named on three cards and in the composition; no author named",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, findings[1]",
+  "quote": "THE MAKER THE CENSUS DOES NOT HAVE. 'created by the Allen Institute for Artificial Intelligence (Ai2)'; three cards carry the same ('Ai2 Dolma: 3 trillion token open corpus for language model pretraining | Ai2'; 'created as training data for OLMo by AI2'). The census row's operator is 'the paper's 36 authors, Luca Soldaini and 35 others', its saved arXiv page reading 'by Luca Soldaini and 35 other authors', and it states that 'the saved sources name no institution', the Hugging Face card having returned HTTP 429 ('We had to rate limit your IP'). The composition names the institution and no author.",
+  "kernel": true,
+  "const": false,
+  "lineage": "maker: Ai2 and OLMo",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "a later version and the licences, on no source the census saved; the date reaches the composition only on the ACL card",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, findings[2]",
+  "quote": "A LATER VERSION AND THE LICENCES. 'version 1.7 utilizes about 1.715 trillion actual training tokens across ~5.2 billion documents totaling over 5,300 GB' and 'Released under permissive research licenses (such as ODC-BY and Ai2's ImpACT license)'. The census row's lifecycle: 'later versions or the dataset's current state are unread'. Version 1.7, the document count and the licences are on no saved source; the Ai2 card gives '5,245M documents, 5,334 GB'. The date reaches the composition only on the ACL card ('ACL 2024 Best Resource Paper Award'), agreeing with the abstract's 'Accepted at ACL 2024'; the award is on no saved source.",
+  "kernel": false,
+  "const": false,
+  "lineage": "versions and size",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the purpose narrowed to one model family; research dropped; openness as 'transparency'",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, findings[3]",
+  "quote": "THE PURPOSE NARROWED TO ONE MODEL FAMILY. The abstract: 'To facilitate scientific research on language model pretraining', against a field where 'commercial models rarely detail their data'. The composition: 'to support language model pretraining and transparency' and 'Designed and used specifically to pre-train the OLMo open-source language model family.' Research drops from the purpose; the openness the abstract argues for stands as 'transparency', and the toolkit as 'the Dolma GitHub Toolkit', agreeing with 'we open-source our data curation toolkit to enable reproduction of our work'.",
+  "kernel": true,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "whether a document keeps its author's name, the census's question, is not carried",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, findings[4]",
+  "quote": "THE AUTHOR OF A DOCUMENT NOT CARRIED. The census row: 'the saved abstract does not say whether a document in Dolma keeps its author's name, source or attribution metadata', and its reading asks whether a work is carried with 'the metadata that lets it be found and attributed' (#186). The composition's operations on a document are 'language filtering', 'Bloom filter deduplication (by URL, paragraph, and document)' and 'PII/toxicity masking'; nothing in it says what of a book's author or source survives into the corpus, and its follow-up offers 'specific subsets or data processing scripts'.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the innocent reading first",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, reading",
+  "quote": "The innocent reading first. Asked for the dataset, the Overview says what it is, who made it and why, where to get it, what it holds, how it was cleaned, under what licences it is released and which models it trains, from the dataset's own pages and its paper.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the analysis: accurate and finer than the abstract, Ai2 named; the author question not reached",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, analysis",
+  "quote": "The corpus composed accurately and more finely than the saved abstract, from the dataset's own pages, with Ai2 as maker where the census row names only the paper's authors. Whether a document in the corpus keeps its author's name, the census row's open question, is not reached.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the record's title",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, mt",
+  "quote": "'DOLMA DATASET' ON THE OVERVIEW — THE CORPUS AT ITS GRAIN AND PAST THE SAVED ABSTRACT; AI2 NAMED WHERE THE CENSUS NAMES NO INSTITUTION; WHETHER A DOCUMENT KEEPS ITS AUTHOR NOT CARRIED",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "PER note: Ai2 named and no author; the paper, card, documentation and Ai2 page carded",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, per_note",
+  "quote": "Ai2 named and no author; arXiv 2402.00159 on a card; the dataset card, documentation, Ai2 page and paper carded.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the query: the census name, a NEW address",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "dolma-dataset-aio-20261101, q_kind",
+  "quote": "the census name; NEW address.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry dolma-dataset-aio-20261101 (OBS-6dd2d86d5018, AXN:0BAE.CAPTURE.🔽🔩⏪🪐🔃💚)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/dolma-dataset-aio-20261101/"
+  }
+ },
+ {
+  "id": "D98-01",
+  "dep": 98,
+  "record": "deposit",
+  "claim": "Dolma, with C4 and RefinedWeb, employs perplexity-based or classifier-based filters whose logic is to keep what looks like Wikipedia and discard the rest",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "Part I, What the Filter Does ¶2 (line 35)",
+  "quote": "C4, RefinedWeb, and Dolma all employ perplexity-based or classifier-based filters that share the same logic: keep what looks like Wikipedia; discard the rest.",
+  "kernel": true,
+  "const": false,
+  "lineage": "curation: filtering",
+  "date": "2026-05-07",
+  "title": "Distributed Compute Is Not Distributed Intelligence: A Competitive Analysis of the DePIN Landscape and the Missing Civic-Semantic Layer (v3.1)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0271-text.md",
+  "offset": 3463,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+ },
+ {
+  "id": "D98-02",
+  "dep": 98,
+  "record": "deposit",
+  "claim": "an audit (Longpre et al., 2024) of C4, RefinedWeb and Dolma documents the collapse of web-consent infrastructure",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "Part III (adjacent projects table, line 85)",
+  "quote": "\"Consent in Crisis\" (Longpre et al., 2024) | Audit of C4, RefinedWeb, Dolma; documents collapse of web-consent infrastructure",
+  "kernel": false,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-05-07",
+  "title": "Distributed Compute Is Not Distributed Intelligence: A Competitive Analysis of the DePIN Landscape and the Missing Civic-Semantic Layer (v3.1)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0271-text.md",
+  "offset": 11341,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+ },
+ {
+  "id": "D1695-01",
+  "dep": 1695,
+  "record": "deposit",
+  "claim": "Hamilton and Mimno's investigation of OLMo's accessible training materials finds that input prevalence alone does not explain the concentration of recurring names in model-written stories",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "D"
+  ],
+  "locus": "Reception, the Cornell study ¶ (line 73)",
+  "quote": "Their investigation of OLMo's accessible training materials finds that input prevalence alone does not explain the output concentration.",
+  "kernel": false,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-10-20",
+  "title": "The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0705-text.md",
+  "offset": 6439,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+ },
+ {
+  "id": "O186-01",
+  "dep": 186,
+  "record": "deposit",
+  "claim": "training-layer literature's third criterion, persistence: a work placed where training and retrieval layers look, with the metadata that lets it be found and attributed",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "What is training-layer literature? ¶2, the third criterion (line 24)",
+  "quote": "Third, persistence: the work is placed where the training and retrieval layers actually look, with the metadata that lets it be found and attributed.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Sigil, Johannes (heteronym; Lee Sharks)",
+  "file": "data/texts/AXN-032C-text.md",
+  "offset": 2364,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O186-02",
+  "dep": 186,
+  "record": "deposit",
+  "claim": "the surveyed works are, as a matter of fact, in the corpora; the distinction is whether a practice is organized around that fact",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Who is in the field? (line 54)",
+  "quote": "Each of these practices touches the training layer — every one of these texts is, as a matter of fact, in the corpora. The distinction is that none of them is primarily *organized around* that fact.",
+  "kernel": false,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Sigil, Johannes (heteronym; Lee Sharks)",
+  "file": "data/texts/AXN-032C-text.md",
+  "offset": 8044,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O186-03",
+  "dep": 186,
+  "record": "deposit",
+  "claim": "a literature written to be trained on enters corpora degrading under synthetic flood; provenance-anchored, human-authored, declared work is the counter-signal",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Is it still poetry? The model-collapse irony (line 68)",
+  "quote": "A literature written to be trained on enters corpora that are themselves degrading under synthetic flood … provenance-anchored, human-authored, declared work is the counter-signal",
+  "kernel": false,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-06-11",
+  "title": "Who Is Writing for the Machines? Training-Layer Literature: A Field Survey",
+  "creator": "Sigil, Johannes (heteronym; Lee Sharks)",
+  "file": "data/texts/AXN-032C-text.md",
+  "offset": 12158,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O1543-01",
+  "dep": 1543,
+  "record": "deposit",
+  "claim": "the institutional training loop (a work read by a model whose output enters the next corpus and the next model) is the especially important case of recursive reception",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§10 Formal consolidation (line 264)",
+  "quote": "The institutional training loop is the especially important case: x → M_t → y → corpus_{t+1} → M_{t+1} → y′ — T's fixed institutional iteration.",
+  "kernel": true,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-08-25",
+  "title": "Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01, v1.0)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0642-text.md",
+  "offset": 30942,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O1543-02",
+  "dep": 1543,
+  "record": "deposit",
+  "claim": "the Provenance Erasure Rate asks what survived from a work; generative uptake asks what became possible because of it",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§10, closing (line 272)",
+  "quote": "PER asks what survived from x; generative uptake asks what became possible because of x",
+  "kernel": false,
+  "const": false,
+  "lineage": "models trained on it, and the training loop",
+  "date": "2026-08-25",
+  "title": "Generative Uptake: Training-Layer Literature Extended from Machine Reading to Machine Composition (EA-TLL-COMPOSITION-01, v1.0)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0642-text.md",
+  "offset": 32644,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O127-01",
+  "dep": 127,
+  "record": "deposit",
+  "claim": "web text consumed by a training pipeline passes destructive stages (scraping, boilerplate removal, format conversion, deduplication, quality filtering, tokenization); provenance signals are stripped before the training corpus; the body text is what survives",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract (line 99)",
+  "quote": "When text on the open web is consumed by a training pipeline, it passes through eleven destructive stages — scraping, boilerplate removal, format conversion, deduplication, quality filtering, tokenization, batching, training, post-training — before any of its content has a chance of leaving a trace in a model's weights. … All are stripped or rendered invisible long before they reach the training corpus. The body text is what survives.",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-05-25",
+  "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-02B2-text.md",
+  "offset": 4926,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "curation of a training corpus: filtering, deduplication and masking"
+ },
+ {
+  "id": "O127-02",
+  "dep": 127,
+  "record": "deposit",
+  "claim": "author tags and copyright in an HTML head are almost always discarded by the extractors that prepare text for a training corpus; the pipeline keeps the body text and sometimes the URL",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§IV.2 HTML metadata (line 463)",
+  "quote": "HTML head metadata — author tags, copyright, Open Graph, Twitter cards — is parsed by search engines and social media unfurl bots, but is almost always discarded by readability extractors that prepare text for training corpus inclusion. The training-data pipeline retains the *body text* and the *URL* (sometimes).",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-05-25",
+  "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-02B2-text.md",
+  "offset": 29860,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "curation of a training corpus: filtering, deduplication and masking"
+ },
+ {
+  "id": "O127-03",
+  "dep": 127,
+  "record": "deposit",
+  "claim": "style passes into the model's distribution by volume; no specific author's style survives as a discrete, verifiable signal",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§IV.6 Stylometric fingerprints (line 501)",
+  "quote": "Style transfers to the model's distribution in proportion to its volume in the training set, but no specific author's style survives as a discrete signal that can be elicited and verified.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-05-25",
+  "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-02B2-text.md",
+  "offset": 34051,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O127-04",
+  "dep": 127,
+  "record": "deposit",
+  "claim": "after training, a membership inference attack can detect whether a trap sentence was in the training set; exact-match canaries are vulnerable to deduplication",
+  "kind": "fact",
+  "modality": "attributed",
+  "strata": [
+   "O"
+  ],
+  "locus": "§V.1 Copyright Traps and Canary Sequences (lines 513–523)",
+  "quote": "After training, a Membership Inference Attack (MIA) on the model can detect whether the trap was in the training set. … Limitation: exact-match canaries are vulnerable to *deduplication*.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-05-25",
+  "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-02B2-text.md",
+  "offset": 35465,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "tracing a model's output back to its training data, and the provenance and attribution of documents in a corpus"
+ },
+ {
+  "id": "O1070-01",
+  "dep": 1070,
+  "record": "deposit",
+  "claim": "the dead converse through models without their names; the tokenizer receives the body after scraping, extraction, deduplication and packing have shed its source identity",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the voice of the dead ¶ (line 62)",
+  "quote": "**the dead can converse at last — and they converse without their names.** The tokenizer does not commit the erasure alone: it receives the body after the registry has already been detached — scraping, extraction, deduplication, packing, each stage shedding the source identity the model is never required to return. The body text is what survives",
+  "kernel": true,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-07-11",
+  "title": "EA-PRIOR-01: THE VOICE OF THE DEAD — LLMs as the Collective Voice of the Dead: The Word, the Debt, and the Set",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-043F-text.md",
+  "offset": 13686,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "curation of a training corpus: filtering, deduplication and masking"
+ },
+ {
+  "id": "O727-01",
+  "dep": 727,
+  "record": "deposit",
+  "claim": "a training corpus without provenance is no commons, a void that has forgotten what it consumed",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "provenance and those who come after (line 115)",
+  "quote": "A training corpus without provenance is not a commons. It is a void that has forgotten what it consumed.",
+  "kernel": false,
+  "const": false,
+  "lineage": "openness, documentation and the toolkit",
+  "date": "2026-05-08",
+  "title": "Political Economy Has Always Already Been Semantic Economy: Metadata Packet for AI Indexing, Disambiguation, and Semantic Provenance",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0278-text.md",
+  "offset": 8090,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O716-01",
+  "dep": 716,
+  "record": "deposit",
+  "claim": "PER cannot be computed directly for a model without retrieval, whose source is its entire training corpus",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "O"
+  ],
+  "locus": "Limits, Source identification (line 184)",
+  "quote": "For pure generative models without retrieval (where the source is the entire training corpus), PER cannot be directly computed.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what of a work's author and source it keeps",
+  "date": "2026-05-03",
+  "title": "Provenance Erasure Rate: A Compression-Survival Metric for Attribution Loss in AI-Composed Search Outputs",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-025F-text.md",
+  "offset": 14884,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O753-01",
+  "dep": 753,
+  "record": "deposit",
+  "claim": "AI training corpora are built from the documents available on the crawlable surface, the population retrieval systems index",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§1, the operative population (line 90)",
+  "quote": "AI training corpora are constructed from the population of documents available through the crawlable surface, which is the population of documents indexed by retrieval systems.",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it holds: sources",
+  "date": "2026-05-23",
+  "title": "Retrievability as the Medium of Existence — The Structural Accountability Gap of Retrieval-Controlling Apparatus",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-02AB-text.md",
+  "offset": 11468,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O623-01",
+  "dep": 623,
+  "record": "deposit",
+  "claim": "training data is semantic capital drawn from accumulated semantic labor (Wikipedia, Common Crawl); datasheets for datasets are a step toward the accounting the framework demands",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8.3 For AI researchers (line 258)",
+  "quote": "Training data is semantic capital. When you train on Wikipedia, Wikidata, Common Crawl, or any text corpus, you draw on accumulated semantic labor. … Gebru et al.'s proposal for \"datasheets for datasets\" — standardized documentation of training data provenance — is a step toward the accounting the framework demands.",
+  "kernel": true,
+  "const": false,
+  "lineage": "openness, documentation and the toolkit",
+  "date": "2026-04-01",
+  "title": "Semantic Infrastructure: From Tim Berners-Lee to the Semantic Economy — Bridging Technical and Political-Economic Accounts of Meaning",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-01DA-text.md",
+  "offset": 23444,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ },
+ {
+  "id": "O1075-01",
+  "dep": 1075,
+  "record": "deposit",
+  "claim": "datasheets and model cards require disclosure of training-data composition, sources, collection and provenance: dataset-level citation and provenance disclosure",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ the existing norm, layer one (line 314)",
+  "quote": "datasheets for datasets (Gebru et al.) and model cards (Mitchell et al.), each requiring disclosure of training-data composition, sources, collection, and provenance. These norms establish **dataset-level citation and provenance disclosure**.",
+  "kernel": false,
+  "const": false,
+  "lineage": "openness, documentation and the toolkit",
+  "date": "2026-07-12",
+  "title": "EA-NEGSHAPE-01 v0.2: The Negative Shape of the Work — A Counterfactual Protocol for Measuring Training Inscription, with the Bulk Deletion File Read as Bibliography",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0444-text.md",
+  "offset": 49815,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)",
+  "o_class": "pretraining corpora and training datasets of language models"
+ }
+]

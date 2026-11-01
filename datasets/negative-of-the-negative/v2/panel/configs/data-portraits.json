@@ -1,0 +1,37 @@
+{
+  "row": "data-portraits",
+  "address": "Data Portraits",
+  "entity": "Data Portraits (dataportraits.org; the paper 'Data Portraits: Recording Foundation Model Training Data', Marc Marone and Benjamin Van Durme, Johns Hopkins University, arXiv:2303.03919, v1 6 March 2023, v2 14 December 2023, NeurIPS 2023 Datasets and Benchmarks): artifacts that record training data and allow downstream inspection by membership testing, implemented as strided Bloom-filter sketches of The Pile and The Stack; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/data-portraits)",
+  "row_type": "C (a public entity on which the archive bears: a dataset-documentation artifact and tool for training-data membership testing, from a research paper; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure')",
+  "aliases": [
+    {"pattern": "\\bData Portraits?\\b(?!:? *Visualizing)", "flags": ""},
+    {"pattern": "\\bdataportraits\\.org\\b", "flags": "i"},
+    {"pattern": "\\bRecording Foundation Model Training Data\\b", "flags": "i"},
+    {"pattern": "\\bMarone\\b", "flags": ""},
+    {"pattern": "\\bVan Durme\\b", "flags": ""}
+  ],
+  "classes": [
+    {
+      "term": "training-data membership testing and inspection (tools and methods that test whether a work or example is in a training set, or trace an output to training text)",
+      "pattern": "\\b(membership (test\\w*|inference|quer\\w+|attack\\w*)|in the (training (set|data|corpus|corpora)|corpora)|training[- ]data (inspection|documentation|transparency|attribution)|test[- ]set (leakage|contamination)|data contamination|was (it|this) (seen|in) (during )?training|trace\\w* (an |the )?outputs? (back )?to)\\b",
+      "flags": "i",
+      "basis": "field: B2 (dataportraits.org, meta description: 'Dataset documentation through membership testing.'; 'Our implementation is minimal and efficient in that it supports membership testing and nothing more.'); B9 (arXiv abstract: 'has the model already encountered a given example during training?'; 'answering questions about test set leakage and model plagiarism'); B10 (the paper, §1: 'The critical property of a data portrait is membership inference: whether an example was part of a data collection.'). The census's question ('Is a given example in a recorded training dataset (training membership)?') and area 'finding' ('Inspection: tools and methods that test whether a work is in a training set or a model, or trace an output back to training text') for the entity (census.json rows[slug == 'data-portraits'].question, .areas; census.json areas.finding)."
+    },
+    {
+      "term": "training corpora recorded by the artifact (the datasets whose texts enter machine training: The Pile, The Stack)",
+      "pattern": "\\b(The Pile|The Stack|training corp(us|ora)|pretraining (corpus|corpora|data))\\b",
+      "flags": "",
+      "basis": "field: B2 ('This is a 50 character n-gram sketch on the Pile.'; 'Check if a code snippet appears in The Stack'); B9 ('we document a popular language modeling corpus (The Pile) and a recently released code modeling dataset (The Stack)'). The census's area 'corpora' ('The corpora: collections, crawls and datasets whose texts enter machine training'), record.in_layer and relation 'uses' the-pile (census.json rows[slug == 'data-portraits'].areas, .record.in_layer, .relations; census.json areas.corpora)."
+    },
+    {
+      "term": "dataset and model documentation artifacts (datasheets, model cards and the like)",
+      "pattern": "\\b(datasheets? for datasets|model cards?|dataset documentation|documentation artifacts?|data statements?)\\b",
+      "flags": "i",
+      "basis": "field: B2 ('These are a complement to existing forms of data and model documentation artifacts.'); B9 ('as a complement to current documentation practices'); B10 (§2.1 Documentation Artifacts: 'We view a Data Portrait as a complementary type of documentation artifact - one that answers the membership question.'). The census's evidence_kind 'dataset documentation' (census.json rows[slug == 'data-portraits'].evidence_kind)."
+    }
+  ],
+  "classes_note": "Three classes, each sourced by the field and the census: (1) training-data membership testing and inspection (B2, B9, B10; census question and area 'finding'); (2) the training corpora the artifact records, The Pile and The Stack (B2, B9; census area 'corpora', record.in_layer, relation 'uses' the-pile); (3) dataset and model documentation artifacts (B2, B9, B10; census evidence_kind). The aliases are the entity's name (case-sensitive, excluding the Du Bois book title), its host, its paper's title and its authors' surnames. The homonyms on T's rail (W. E. B. Du Bois's data portraits and the 2018 book of that title; Judith Donath's data portraits at the MIT Media Lab; Giorgia Lupi's TED 2017 Data Portraits) are distinct entities and are not aliases. The census's tll_reading applies #186's question (whether a work is in the training layer) and #1543's (what a receiving apparatus makes from the work) to the entity: that reading is the archive's, ledgered as TLL-NN. #186 and #1543, the census's anchors, are read at the passages on training corpora, inspection and tracing, and machine composition. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a citation line or a list of terms is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'Data Portraits' (data-portraits-aio-20261101, OBS-103202920b0d, ADDR-1ac4e7c48a77), Google AI Overview (expanded), signed out, incognito; reached 'collision'. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

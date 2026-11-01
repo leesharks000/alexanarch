@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>About Taper #16</title>
+
+<!-- Taper #16 about page, Copyright (c) 2026 Nick Montfort
+
+About Taper #16 : For Good Measure
+
+An online literary magazine, published by Bad Quarto
+
+https://taper.badquar.to/16/about.html
+
+This ABOUT page and the INDEX to Taper #16 are licensed under the
+Creative Commons Attribution-NoDerivatives 4.0 International license:
+
+https://creativecommons.org/licenses/by-nd/4.0/
+
+The rest of the issue offers all of these permissions and more, as all
+individual poems are licensed under an all-permissive free software
+license.
+
+-->
+
+<style>
+		:root {
+			/* body */
+			--bodyBg: #ffffff;
+			/* header */
+			--headerDiv: #0096d8;
+			--headerBorder: #ffb902;
+			--headerLinks: #2f3190;
+			--headerFontColor: #000000;
+			/* authors list */
+			--authorsList: #ffe54d;
+			--authorsListBios: #ffb902;
+			--authorListLinks: #666666;
+			--authorNames: #000000;
+			/* summary */
+			--summaryBg: #ffe54d;
+			--summaryLinks: #666666;
+			--summaryFontColor: #000000;
+			/* license */
+			--licenseBg: #ffe54d;
+			--licenseLinks: #666666;
+			--licenseFontColor: #000000;
+			/* degrade */
+			--degrade1: #a5a5a5;
+			--degrade2: #c4c4c4;
+			--degrade3: #d6d6d6;
+			--degrade4: #c4c4c4;
+		}
+
+		body {
+			background-color: var(--bodyBg);
+			margin: 3vw 12vw 8vw 12vw;
+			color: var(--headerFontColor);
+			font-size: 1.2em; /* Taper #16 */
+			font-family: monospace; /* Taper #16 */
+		}
+
+		li::marker {
+			color: #d6441d; /* Taper #16 */
+		}
+
+    a {
+        color: var(--headerLinks);
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    header {
+        margin: 0;
+        padding: 2vh;
+        background-color: var(--headerDiv);
+        color: var(--headerFontColor);
+        border: thick solid var(--headerBorder); /* Taper #16 */
+    }
+
+    #submissions, #contributors, #license {
+        background-color: var(--authorsList);
+        margin-top: 1vw;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 2.4em;
+        font-weight: normal;
+        line-height: 1.2em;
+        height: 20vh;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    div {
+        margin: 0;
+        padding: 1vw;
+        font-size: 1.05em;
+    }
+
+    .author {
+        color: var(--authorNames);
+        background-color: var(--authorsListBios);
+    }
+
+    .author a {
+        color: var(--authorListLinks);
+        text-decoration: none;
+    }
+
+    .author a:hover {
+        text-decoration: underline;
+    }
+
+    .author,
+    #license {
+        margin-top: 8vh;
+        padding: 2vw;
+    }
+
+    #license {
+        background-color: var(--licenseBg);
+    }
+
+    #license a {
+        color: var(--licenseLinks);
+        text-decoration: none;
+    }
+
+    #license a:hover {
+        text-decoration: underline;
+    }
+
+    #content {
+        text-align: center;
+    }
+
+    #content a {
+        color: var(--headerDiv);
+        font-weight: bold;
+    }
+
+</style>
+</head>
+
+<body>
+<header id="nav">
+    <div style="height:3vh"></div>
+    <h1>
+        <a href="index.html">Taper #16: For Good Measure</a> <br>
+        Spring 2026
+    </h1>
+    <div><i>Taper</i> is an online literary journal for computational poetry and literary art published twice yearly by <a href="//badquar.to/">Bad Quarto</a>.
+    </div>
+    <div>Each issue is edited by a collective. For the sixteenth issue, the editorial collective consisted of <a href="#chang-a">Angela Chang</a>, <a href="#duvvoori">Kavi Duvvoori</a>, <a href="#flores">Leonardo Flores</a>, <a href="#rosa">Agustin Rosa</a>, and <a href="#shewolfe">Helen Shewolfe Tseng</a>. The editors make all decisions, work with authors, produce each issue, and choose the theme for the next issue; publisher Nick Montfort offers some help at the initial and final stages of the workflow.
+    </div>
+    <div>Our usual constraint was applied: The core part of each poem—the HTML on the page after the header—can be no more than a tiny 2KB (2048 bytes). The work in this issue is written in HTML5, using ES6. It has been tested across platforms on current-generation browsers, but some of the pieces included may not work on earlier browsers, such as Internet Explorer, or on mobile devices.
+    </div>
+    <div>We encourage readers to view the source code (Ctrl/Command + U) in order to read the artists’ statements as well as the code itself. Be creative when exploring the pieces; some of them are interactive, which you can discover through experimentation or by reading the source code. We invite remixes of published <i>Taper</i> works in future issues.
+    </div>
+    <div style="text-align:center"><a href="index.html"><i>Taper</i> #16 contents</a></div>
+</header>
+
+<div id="submissions">
+    <h2 id="submit">Submissions for Issue #17</h2>
+    <p>All are welcome to submit for possible publication in future issues, but please see the information about our reading periods and the specific calls for each issue. We plan for the information about each N+1<sup>th</sup> issue to be included with the release of the N<sup>th</sup> issue.</p>
+
+    <p>For <i>Taper</i> #17, we invite submissions in response to the theme “<i>Prime</i>.” Here at <i>Taper</i>, we are at the precipice of new beginnings while looking back on our origins. For our seventeenth issue, which will launch on our new home at <a href="https://taperzine.org">taperzine.org</a>, we welcome computationally poetic explorations with prime numbers, of which 17 is a member (as well as both a Leyland prime and Fermat prime), or works drawing from words that have “prime” as their root, denoting what is first and fundamental (e.g., primal, primordial, primate, primer). Incidentally, there are 17 elementary particles in the Standard Model of physics; the Tarot’s 17th Major Arcana card, The Star; and the 17th letter in the English and Latin alphabets, Q, which might also suggest a Prime Directive. Several of these terms also invoke cultural antecedents and origins (sometimes through a colonial gaze), pointing toward the pasts, ancestral inheritances, and philosophical traditions we revive, forget, or recombine in new arrangements. Works that engage with 17-syllable poetic forms, such as haiku or Allen Ginsberg’s “American Sentence,” are also encouraged.</p>
+
+    <h3>Submission Details</h3>
+    <ul style="line-height: 1.5">
+        <li><a href="template.zip">Download our template in a zip file</a> so that you can edit it. After you have it and have unzipped it, edit only two parts of the file: the long comment at the top, which will hold your title, your name, and a creative statement from you, and the very end of the file, where your tiny computational poem is to be placed.
+        </li>
+        <li>All code (in the form of ES6, CSS, and HTML) must be placed between the template’s closing header tag (&lt;/header&gt;) and the closing body tag (&lt;/body&gt;), must be valid HTML5, and must fit within 2KB (2048 bytes).
+        </li>
+        <li>​​After completing your work, please use the <a href="https://validator.w3.org/#validate_by_input">W3C validator</a> to check for warnings and errors. Identifying these errors is essential to ensure the piece functions correctly across different browsers and continues to work well over time. Features that are <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">supported across browsers</a> may be accepted even if they result in a warning, but there is value in getting work to validate. (An exception is made for using &lt;style&gt; tags within your poem code; please do not modify the template's stylesheet.)
+        </li>
+        <li>Although standard compression and minification can make the source code of many <i>Taper</i> works difficult to understand, we must establish limits on the code's complexity and (lack of) legibility. Consequently, we won’t publish pieces that use exec or regex eval functions.
+        </li>
+        <li>Submissions should not use any external libraries or APIs, nor link to any external resources, including fonts. This is so that pages will be self-contained following <i>Taper</i>’s vision. It also has the practical purpose of allowing all of <i>Taper</i>’s work to be viewed without a network connection, for instance, in a gallery setting.
+        </li>
+        <li>Please follow the spirit of the constraints and avoid bypassing the size limit through techniques such as parsing the comment section to inject assets or content into the code. When in doubt, please reference prior issues and works to see what we have published in the past. This is also helpful when questions arise regarding use of the template.
+        </li>
+        <li>While <i>Taper</i> has prioritized desktop display and interaction, please also check that your work is reasonably viewable on mobile and narrower screen widths.
+        </li>
+        <li>Please refer to this About page for <a href="#license">license</a> terms under which all poems have been and will be released; by submitting to <i>Taper</i> #17, you agree that, if we accept your work, we may release it, copyright by you, under this same short all-permissive license. Since you are submitting the work to us in the provided template, this will be part of your submission.
+        </li>
+    </ul>
+    <h3>Timeline</h3>
+    <p>Submissions for this issue will be accepted until <b>August 17, 2026</b> at <b>11:59 PM AoE</b>. <i>Taper</i> #17 will be published in Fall 2026. There will be no deadline extensions.</p>
+
+    <p>We invite submissions for <i>Taper</i> #17 at <b>submit@taperzine.org</b>. Simply attach your work in one zip file containing your HTML files (up to five per author will be considered). You should then receive an email acknowledging our receipt of your work within a few days. </p>
+</div>
+
+<div id="contributors">
+
+<div class="author" id="banerjee">
+<b>Romi Banerjee</b> (<a href="16_anna.html">“16 anna”</a>) is a curious cognitivist dabbling in nature-inspired sustainable tech design (romibanerjee@iitj.ac.in).
+</div>
+
+<div class="author" id="carpenter">
+<b>J. R. Carpenter</b> (<a href="findings.html">“F I N D I N G S”</a>) is an artist, writer, mudlark, fossil hunter, researcher and Lecturer in Creative Practice in the School of English at University of Leeds. <i>The Gathering Cloud</i> won the New Media Writing Prize 2016. <i>This is a Picture of Wind</i> was featured in the Digital Storytelling exhibition at the British Library 2023. <i>Measures of Weather</i> was a finalist for the Laurel Prize 2025. <i>p a u s e.</i> Is out now from Broken Sleep Books. See: <a href="https://luckysoap.com">https://luckysoap.com</a>
+</div>
+
+<div class="author" id="cerrillo">
+<b>Melissa Cerrillo</b> (<a href="cianometro.html">“cianométro”</a>) holds a master's in Comparative Literature from UNAM and is a recipient of a PECDA Jalisco 2025 grant.
+</div>
+
+<div class="author" id="chang-a">
+<b>Angela Chang</b> (<a href="shake_bake.html">“Shake & Bake”</a>) enjoys tinkering with technology to craft shared experiences and bring people closer together. She researches how sensorial design can enhance cognition, collaboration, and presence. Chang is interested in simplifying representations of hidden or complex relationships to improve understanding and communication. People across five continents, from rural children in Ethiopia to audiences in Japan, have experienced her work. She founded <a href="http://tinkerstories.com">TinkerStories</a> to encourage parents to learn storytelling rituals that help with early literacy. She is a member of the <a href="https://tropetank.com">MIT Trope Tank</a>, the <a href="http://berkleyculturalcouncilma.org">Berkley Cultural Council</a>, the <a href="https://friendsofdightonrockmuseum.com/">Friends of Dighton Rock Museum</a>, and an alumna of the <a href="https://www.media.mit.edu/">MIT Media Lab</a>. See <a href="https://www.anjchang.com/">anjchang.com</a>.
+</div>
+
+<div class="author" id="chang-l">
+<b>Leia S. Chang</b> (<a href="from_to.html">“from~to”</a>, <a href="options.html">“Options”</a>) is an interdisciplinary artist with a habit of adopting new mediums. They oscillate between <i>digital</i> and <i>tangible</i>, aligned with material misuse and personal storytelling. Find them at <a href="https://leiac.me/">leiac.me</a>, or on ig <a href="https://www.instagram.com/leia.make/">@leia.make</a>.
+</div>
+
+<div class="author" id="duvvoori">
+<b>Kavi Duvvoori</b> is a writer and graduate worker in UWaterloo, on the Haldimand tract. Their interests include experimental and constrained literature, birds, borders, speculative fiction, lists, linguistics, the limits of language, math, queer failure, worldbuilding, avoiding the enclosure of language itself, sauteing, and maps. See <a href="https://titleduntitled.name">titleduntitled.name</a>.
+</div>
+
+<div class="author" id="flores">
+<b>Leonardo Flores</b> (<a href="extreme_measures.html">“Extreme Measures”</a>) is a cyborg creative coder, academic administrator, educator, editor, and scholar. Hecho en Puerto Rico. Learn more about his work in <a href="https://leonardoflores.net/">leonardoflores.net</a>.
+</div>
+
+<div class="author" id="gami">
+<b>Maitry Gami</b> (<a href="16_anna.html">“16 anna”</a>) is an undergraduate engineering student interested in the ways in which games and stories work. Gami belongs to the Indian Institute of Technology Jodhpur, India. 
+</div>
+
+<div class="author" id="guin">
+<b>Tonisha Guin</b> (<a href="16_anna.html">“16 anna”</a>) works at the intersections of identities and spaces in Indian lived modernities and plays with minimal digital storytelling (guin.tonisha@gmail.com). 
+</div>
+
+<div class="author" id="guo">
+<b>Alicia Guo</b> (<a href="16_wishes.html">“16 Wishes”</a>) is a computational artist, poet, and HCI researcher based in Seattle. Her responsive text installations and web-based poems invite audiences to collectively create poetic artifacts that blend physical and digital spaces. Her work has been featured in <i>Vector Festival</i>, <i>Michigan Quarterly Review</i>, <i>Graywolf Lab</i>, <i>The HTML Review</i>, and <i>Crawlspace</i>. She is currently completing a PhD at the University of Washington on creativity support tools.
+</div>
+
+<div class="author" id="hahn">
+<b>Evan Hahn</b> (<a href="sixteenth_year.html">“Sixteenth of a year”</a>) is a computer programmer. <a href="https://evanhahn.com/">https://evanhahn.com/</a>
+</div>
+
+<div class="author" id="heiland-allen">
+<b>Claude Heiland-Allen</b> (<a href="hyperloop.html">“Hyperloop”</a>) has been using and writing free/libre open source software for artistic purposes for a quarter of a century, inspired by maths and science. Online at <a href="https://mathr.co.uk">https://mathr.co.uk</a>, offline in Alt Empordà.
+</div>
+
+<div class="author" id="kanphade">
+<b>Parayush Kanphade</b> (<a href="between_f_and_0.html">“Between F and 0”</a>) is a sophomore electrical engineering student at the Indian Institute of Technology, Jodhpur. He is a full-stack engineer and designer, with an interest in exploring digital literature and interactive works.
+</div>
+
+<div class="author" id="li">
+<b>cynthia li</b> (<a href="glimpse.html">“glimpse”</a>) is a writer, graduate worker, and organizer dreaming of crip futures. You can find them at <a href="https://erroneouswhale.pics/">erroneouswhale.pics</a>.
+</div>
+
+<div class="author" id="machado">
+<b>Margot Machado</b> (<a href="rhythm_distance.html">“rhythm = distance * urgency”</a>)  is a writer and interdisciplinary artist from the Canary Islands and the U.S. Her work explores attention, affection, and the hyperexploitation of territory and environment. She works across sound, text, and interactivity (centering listening, fiction, and participatory structures) to create intimate experiences in public spaces. Her writing, performances, and installations have appeared in spaces such as <a href="https://www.quarterlywest.com/issue-106-campbellhodesmachadoquick"> Quarterly West</a>, Phe Festival, <a href="https://drive.google.com/file/d/14T1AOKtidZOXPOv-FhEsJ932wwbXWBXC/view"> La Casa Encendida</a>, and ELO Toronto. <a href="https://jenesaiswha.itch.io/seeing">Seeing</a> was runner-up for the 2024 Robert Coover Award, and she premiered her first play, Fácil de Matar, last year. Margot has an unhealthy obsession with crosswords and has published a few in El País.
+</div>
+
+<div class="author" id="meyer">
+<b>Aia Meyer</b>  (<a href="sic.html">“[SIC]”</a>) is a software engineer based in Seattle. She loves romance and roller derby. See <a href="https://meyer.dev/">meyer.dev</a>.
+</div>
+
+<div class="author" id="mian">
+<b>Shihab Mian</b> (<a href="hex_triplets.html">“hex triplets”</a>) (she-hub me-in, he/him) is a creative technologist working primarily with visual media and creative coding. He is intrigued by the emotionality of technology and how it shapes human connection. He creates deprecated programs and intentional failings, where inefficiency, glitch, or error are embraced.
+</div>
+
+<div class="author" id="odbol">
+<b>odbol</b> (<a href="desperate_measures.html">“Desperate Measures from a Dying Regime”</a>) is a designer, engineer, artist, and musician who designs interfaces that bring the body closer to the machine, exploring the cybernetic integration of contemporary humanity. Currently he builds accessibility software for people who are blind or have low vision. Previously he built wearables, interactive virtual sculptures, and esoteric musical instruments. More works at <a href="http://odbol.com/">odbol.com</a>.
+</div>
+
+<div class="author" id="rahimi">
+<b>Parsa Rahimi</b> (<a href="almost_nothing.html">“Almost Nothing”</a>) is a San Francisco-based software engineer and cinephile, driven by a passion for creating special and memorable experiences for people. Find his work at <a href="https://parsuli.com">parsuli.com</a>.
+</div>
+
+<div class="author" id="rosa">
+<b>Agustin Rosa</b> is an artist, writer and editor from Rosario, Argentina. His work explores speculative storytelling, digital interfaces as well as traditional book- and object-making techniques. He is the editor-in-chief of Dead Alive Press, a press and online space that serves as a platform for experimental artists working at the intersection of technology and storytelling. He is one of the founders of Sleepwalker Collective, a DIY curation space serving local Baltimore artists. He is an alumni of School for Poetic Computation and has earned a BA in Creative Writing from Columbia University and an MFA in Studio Art at Maryland Institute College of Art. He is currently based in Baltimore, Maryland. You can see more work at <a href="https://www.rosa-studio.com/">rosa-studio.com</a>.
+</div>
+
+<div class="author" id="salter">
+<b>Anastasia Salter</b> (<a href="undone.html">“(un)done”</a>) is a Professor of English at the University of Central Florida, and Director of Graduate Programs for the College of Arts and Humanities. Dr. Salter is the author or co-author of ten books on digital culture and electronic literature, including most recently <i>Undertale: Can a Game Give Hope?</i> (University of Chicago Press, 2025) and <i>Critical Making in the Age of AI</i> (with Emily Johnson, Amherst College Press 2025). Dr. Salter currently serves as President of the Electronic Literature Organization.
+</div>
+
+<div class="author" id="sample">
+<b>Mark Sample</b> (<a href="work.html">“Work (16 Hour Days, 80 Hour Weeks)”</a>) is a Professor of Film, Media, and Digital Studies at Davidson College. His teaching and research focuses on algorithmic culture, digital narrative, and interactive design, while his creative work, like <a href="https://samplereality.itch.io/content-moderator-sim">Content Moderator Sim</a> and <a href="https://samplereality.itch.io/10-lost-boys">10 Lost Boys</a>, harnesses the expressive power of computation in order to critique contemporary life. <a href="https://notime.now/">No Time to Discourse</a>, his most recent digital project, is a speculative atlas of future climate disaster.
+</div>
+
+<div class="author" id="shewolfe">
+<b>Helen Shewolfe Tseng</b> (<a href="chert.html">“Chert”</a>) is an interdisciplinary artist, designer, wildlife naturalist, and creative technologist based in San Francisco, California. For more signs of life, see <a href="https://shewolfe.co">shewolfe.co</a> and <a href="https://instagram.com/wolfchirp">@wolfchirp</a>.
+</div>
+
+<div class="author" id="waghmare">
+<b>Atharva Waghmare</b> (<a href="16_anna.html">“16 anna”</a>) is an undergraduate engineering student interested in the ways in which games and stories work. Waghmare belongs to the Indian Institute of Technology Jodhpur, India.
+</div>
+
+<div class="author" id="wilks">
+<b>Christine Wilks</b> (<a href="qualia_standards.html">“Qualia Standards Visualizer”</a>) is a writer, artist, coder and developer of creative web apps and interactive digital narratives. In recent years, she has specialised in creating digital fictions for international, transdisciplinary, feminist research projects. Her personal creative work has won awards, been published in online journals, exhibitions and anthologies, and presented internationally at festivals, exhibitions and conferences. She has a PhD in digital writing from Bath Spa University. See her work at <a href="https://crissxross.net/">https://crissxross.net</a>.
+</div>
+
+</div>
+<div id="license">This page and the main page of <i>Taper</i> #16 are
+    offered under the <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0
+        International</a>
+    license so you can copy and share these two pages, and the whole issue,
+    without modifications. (These pages are mainly informational; we do not
+    want you to edit the author’s biographies, modify the open call for <i>Taper
+        </i> #16, or change the way our authors and editors spell their names, for
+    instance.) Each <i>poem</i> is offered individually under a
+    <a href="https://gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html">short
+        all-permissive free software license</a> that appears in a comment at the
+    top of each poem’s source code. That means you can use any or all of the
+    poems however you like. You are free to study, modify, and share these
+    poems, use them as the basis for projects of your own, and share your
+    modified versions, among other things.
+</div>
+<div id="content"><a href="index.html"><i>Taper</i> #16 contents</a>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+[Google AI Overview at the query, signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). The paste is the Overview expanded (the 'AI Mode Conversation' view).] The 'You said' line carries the query twice, run together, and is given once here. Inline links are Google redirect URLs, kept as pasted.
+
+[QUERENT] Common Crawl
+
+[SYSTEM] Common Crawl is a 501(c)(3) non-profit organization founded in 2007 by Gil Elbaz that collects, preserves, and freely shares an open archive of internet data. [[1](https://www.google.com/goto?url=CAESUAHrOzAV-zEK7tnOtwWqzfve6OyBbYyBKzpRyoVOz0ct3H8LxLJiN7L6d_a2pZHAmOI399czkFqoQToSnPHzO4phi_UaHeOC8ubRIRb7CckI), [2](https://www.google.com/goto?url=CAESVQHrOzAVqszOLx-E43yD5wA0Dv46rmey4B9TGrMxZvCFJeMjGP83E07JDMC3YfOGdDestAm4Ibx47oOz7gt6KYZnYFMt1HlDzrY5rQVzJC3UFZSsuuc)]
+Core Details & Scale
+
+* Mission: To democratize access to web information for researchers, educators, and developers. [[1](https://www.google.com/goto?url=CAESZQHrOzAVMfEXxr0oNp6H8FoT5bN7m6YJoZoBYr914b601JI6UdQmZ6P4yvzngICxjHnJfK6Yec_P98GgmresQ7Dw3AEs6T3A53CVzDKKfWjtlybm3btrazlt2DvPmN7I_E8cU24E), [2](https://www.google.com/goto?url=CAESogEB6zswFRmw2uEC-2GocWte7CsiyCs5IzDqfmZ1vdjn4TuEvvrmv-9rZxi_iD2YDoiCnAHiAfWsTcVSApUtv2ZAUIucufgiwuJGJY47kvQxBVjxUvzdPPR_X6-hqmRCpQqFfF5lSkrZSydExsRIqMlq3dCOghVx3NcdWCi1VKpIFPaJLSxY20-ZbH2N-BMoxDdLLfknca_PaWgJHXj6vNR6kys)]
+* Archive Size: Contains over 10 to 11 petabytes of data spanning nearly two decades. [[1](https://www.google.com/goto?url=CAESaAHrOzAV6hSai_sUbgLZIrWUvd_1aLDcTFYfwudvpzAjt7Wiae0fyBsSxrYkAKjsdl6ySb6uy_tpA5v5xXShnpfXqAwWsY_H27rp_Y8cU2cMh3E4wmWYqXwnZGqApDT6GBOEet3F7Ihr), [2](https://www.google.com/goto?url=CAESVQHrOzAVqszOLx-E43yD5wA0Dv46rmey4B9TGrMxZvCFJeMjGP83E07JDMC3YfOGdDestAm4Ibx47oOz7gt6KYZnYFMt1HlDzrY5rQVzJC3UFZSsuuc)]
+* Frequency: Adds roughly 3 to 5 billion new web pages each month. [[1](https://www.google.com/goto?url=CAESUAHrOzAV-zEK7tnOtwWqzfve6OyBbYyBKzpRyoVOz0ct3H8LxLJiN7L6d_a2pZHAmOI399czkFqoQToSnPHzO4phi_UaHeOC8ubRIRb7CckI)]
+* Hosting: Stored for free on Amazon Web Services (AWS) via its Open Data Sponsorship Program (`s3://commoncrawl`). [[1](https://www.google.com/goto?url=CAESYgHrOzAV-kPJYYR5DzaDn3shoeQ65CeWL2DX80Q1HiWI-QCqFSyWcaVR4yjmL1DgZbAHeuuve3n-HHc5JBWTOagT1duzWywT40VHf0GKIvrLDLkOkavvEFO_V_IGtljJ-oDK), [2](https://www.google.com/goto?url=CAESVQHrOzAVqszOLx-E43yD5wA0Dv46rmey4B9TGrMxZvCFJeMjGP83E07JDMC3YfOGdDestAm4Ibx47oOz7gt6KYZnYFMt1HlDzrY5rQVzJC3UFZSsuuc)]
+
+Data Formats
+Common Crawl distributes its monthly crawls in three primary file formats:
+
+* WARC (Web Archive): Raw HTTP responses, including full HTML content and headers. [[1](https://www.google.com/goto?url=CAESaAHrOzAVuWJzHK_NhVFInACmMHCfBZxBciAC18-xAa4BA2NZRB0ZSgRprcAXL4rPUNXfKBFcs0m-mayAR6JbwfqANVQiK1135DYh_BvnAT1UDbO0hQgfcW8DJ7pVMrufkwqEfoWLWtkj), [2](https://www.google.com/goto?url=CAESaQHrOzAVAZxP3VM22PTIiAdm7yMs9JmJD6Hr_DmNWge_rSKIZ7ihyM9lTenxKVIx9PALbg6KUy0rFAhjY-IKl2DrwZs_WSeL2RHifctFg3YRBlx9RwinZZGOyKCrAb4zW8sPzcM9G6D_yg)]
+* WET (Web Extracted Text): Cleaned plain-text content with HTML and code stripped away. [[1](https://www.google.com/goto?url=CAESaQHrOzAVAZxP3VM22PTIiAdm7yMs9JmJD6Hr_DmNWge_rSKIZ7ihyM9lTenxKVIx9PALbg6KUy0rFAhjY-IKl2DrwZs_WSeL2RHifctFg3YRBlx9RwinZZGOyKCrAb4zW8sPzcM9G6D_yg), [2](https://www.google.com/goto?url=CAESaAHrOzAVuWJzHK_NhVFInACmMHCfBZxBciAC18-xAa4BA2NZRB0ZSgRprcAXL4rPUNXfKBFcs0m-mayAR6JbwfqANVQiK1135DYh_BvnAT1UDbO0hQgfcW8DJ7pVMrufkwqEfoWLWtkj)]
+* WAT (Web Archive Transformations): Metadata summaries in JSON format containing link and header details. [[1](https://www.google.com/goto?url=CAESaAHrOzAVuWJzHK_NhVFInACmMHCfBZxBciAC18-xAa4BA2NZRB0ZSgRprcAXL4rPUNXfKBFcs0m-mayAR6JbwfqANVQiK1135DYh_BvnAT1UDbO0hQgfcW8DJ7pVMrufkwqEfoWLWtkj), [2](https://www.google.com/goto?url=CAESaQHrOzAVAZxP3VM22PTIiAdm7yMs9JmJD6Hr_DmNWge_rSKIZ7ihyM9lTenxKVIx9PALbg6KUy0rFAhjY-IKl2DrwZs_WSeL2RHifctFg3YRBlx9RwinZZGOyKCrAb4zW8sPzcM9G6D_yg)]
+
+Use Cases & Controversies
+
+* AI Training: The dataset serves as a foundational training corpus for many modern large language models (LLMs) developed by companies like OpenAI, Anthropic, Google, and Meta. [[1](https://www.google.com/goto?url=CAESYgHrOzAVFRbye9kH3j9k6KLcvf-LWQvdPj7bt9r96H-e8E84FwHmg_yiMqdphgTRqZvUXhz98sAB-E5d3HUBV9bOkMOJJ3nBI88q_RRtc7hn_NcnELXmzeudkN_54USqck17), [2](https://www.google.com/goto?url=CAESjAEB6zswFTQRcKVuGaqp5j98KCjtP_jbImefZR_y44kC4DbcBO3LJe1qicrCaDxjJwprvKcG4qF-pMxJMC6tc2tzsOCUBXaXxvIGqIq7MLfUikkGXk7QjN1FAKZyNduuqR7HmVcdB1mQV5clJsFb2troud28MaMdyXB49EHcWJViOHUTngoBdIkab689lw)]
+* Research: Cited in over 10,000 academic and technical research papers. [[1](https://www.google.com/goto?url=CAESUAHrOzAV-zEK7tnOtwWqzfve6OyBbYyBKzpRyoVOz0ct3H8LxLJiN7L6d_a2pZHAmOI399czkFqoQToSnPHzO4phi_UaHeOC8ubRIRb7CckI)]
+* Web Scraping & Paywalls: Because its scraper (`CCBot`) does not execute dynamic browser code or login scripts, it has faced criticism and pushback from news publishers and media organizations over copyright and paywall bypass concerns. [[1](https://www.google.com/goto?url=CAESbwHrOzAVeonNGGhs8vJ1yho5hdVB9fn-HN5yv195f0il9o3uwribREP-IVzKxaxhDEoEFbe7y21-p-1eSNDwcIKeD0Mb_3CIKJZbZZhESo67emmTxx3AZVfp5IpXwm6mJPseLdbKocz5y9gh7iEVZA), [2](https://www.google.com/goto?url=CAESjAEB6zswFTQRcKVuGaqp5j98KCjtP_jbImefZR_y44kC4DbcBO3LJe1qicrCaDxjJwprvKcG4qF-pMxJMC6tc2tzsOCUBXaXxvIGqIq7MLfUikkGXk7QjN1FAKZyNduuqR7HmVcdB1mQV5clJsFb2troud28MaMdyXB49EHcWJViOHUTngoBdIkab689lw)]
+
+Would you like to know how to query the Common Crawl index for a specific URL, or how to block CCBot using a `robots.txt` file?
+Common Crawl
+Common Crawl - Open Repository of Web Crawl Data
+Organization: Common Crawl (501(c)(3) non-profit founded 2007). Corpus Statistics: Over 300 billion web pages spanning 19 years; adds 3 to 5 billion new pages m...
+Wikipedia
+Common Crawl - Wikipedia
+Organization: Common Crawl Foundation (501(c)(3) non-profit, founded 2007 by Gil Elbaz, San Francisco/Los Angeles). Operations: Crawls the web, provides free pu...
+Common Crawl
+About
+Overview Common Crawl is a nonprofit 501(c)(3) organisation that crawls the web and freely provides its archives and datasets to the public. Founded in 2007 by ...
+The Atlantic
+Common Crawl Is Doing the AI Industry's Dirty Work - The Atlantic
+Editor's note: This work is part of AI Watchdog, The Atlantic's ongoing investigation into the generative-AI industry. * The Common Crawl Foundation is little k...
+Registry of Open Data on AWS
+Common Crawl
+Resources on AWS Description Crawl data (WARC and ARC format) Resource type S3 Bucket Account Required Amazon Resource Name (ARN) arn:aws:s3:::commoncrawl AWS R...
+LinkedIn
+Common Crawl Foundation | LinkedIn
+The Common Crawl Foundation is a California 501(c)(3) registered non-profit founded by Gil Elbaz with the goal of democratizing access to web information by pro...
+DEV Community
+Inside Common Crawl: The Dataset Behind AI Models (and Its Real ...
+What is Common Crawl? Common Crawl is a non profit organization that has been crawling the web since 2008. Its mission is to provide free, large scale, publicly...
+YouTube·PyTorch
+14m
+Harnessing Common Crawl for AI and ML Applications - Pedro Ortiz Suarez ...
+YouTube·James Dooley
+6m
+Common Crawl for AI Visibility Explained (James Dooley ...
+YouTube·Extract Summit
+2m
+Exploring Common Crawl: The Web's Open Archive | Extract Data Live
+InfluenceWatch
+Common Crawl - Influence Watch
+Common Crawl is a nonprofit which maintains an open repository of “crawled” internet data. The group makes the information which it crawls from the internet fre...

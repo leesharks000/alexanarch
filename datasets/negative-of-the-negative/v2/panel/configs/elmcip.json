@@ -1,0 +1,67 @@
+{
+  "row": "elmcip",
+  "address": "ELMCIP Electronic Literature Knowledge Base",
+  "entity": "The ELMCIP Electronic Literature Knowledge Base (elmcip.net): in its own words a research resource for electronic literature, now preserved as a frozen archive (June 2010 – October 2026), developed in Drupal 7 by the University of Bergen Electronic Literature Research Group as an outcome of the ELMCIP project (Electronic Literature as a Model of Creativity and Innovation in Practice, a HERA-funded collaborative research project, 2010–2013); 17,073 published records at its freeze; its mission stated to live on through the Digital Narrative Knowledge Base; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/elmcip)",
+  "row_type": "C (a public entity on which the archive bears: a frozen, contributory knowledge base of electronic literature; an entity of the traininglayerliterature.org layer census, host_relation 'historical lineage')",
+  "aliases": [
+    {
+      "pattern": "\\bELMCIP\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bElectronic Literature Knowledge Base\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\belmcip\\.(net|it)\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bElectronic Literature as a Model of Creativity\\b",
+      "flags": "i"
+    }
+  ],
+  "classes": [
+    {
+      "term": "electronic literature as a field of practice (the field the knowledge base documents)",
+      "pattern": "\\b(electronic literature|e-lit|born[- ]digital literature|digital poetry|hypertext fiction)\\b",
+      "flags": "i",
+      "basis": "field: B1 (elmcip.net: 'a research resource for electronic literature'; 'authors, creative works, critical writing, platforms, and practices'); B3 (ebr: 'The Knowledge Base is intended to document electronic literature as a dynamic field of practice'; 'the field of electronic literature has out of necessity developed its own research infrastructure'); B2 (www.elmcip.it: 'Focusing on the electronic literature community in Europe'). The layer census's area 'field-history' and record_object ('authors, creative works, critical writing, platforms and practices of electronic literature') for the entity (TLL record)."
+    },
+    {
+      "term": "databases, knowledge bases and indexes of electronic literature (field-history and discovery resources)",
+      "pattern": "\\b(electronic literature|e-lit(erature)?|digital (poetry|literature))\\b[^.]{0,80}\\b(databases?|knowledge bases?|index(es)?|directory|directories|bibliograph(y|ies))\\b|\\b(databases?|knowledge bases?|index(es)?|directory|directories)\\b[^.]{0,60}\\b(electronic literature|e-lit(erature)?)\\b",
+      "flags": "i",
+      "basis": "field: B1 (elmcip.net, card 1: 'The ELMCIP Knowledge Base is a research resource for electronic literature'); B2 (www.elmcip.it, card 2: 'An open-access, contributory database developed in Drupal 7'); B3 (ebr, card 3: 'a large-scale digital humanities database that emerged from a six-nation European research project on electronic literature'; 'Extensive research databases such as ELMCIP, NT2 and a growing group of others'); B4 (PO.EX, card 4, title: 'The ELMCIP Electronic Literature Knowledge Base: A Review'). The layer census's area 'field-history' ('Field history and indexes of electronic, generative and computational literature'), evidence_kind 'knowledge base' and record_type 'index' for the entity (TLL record, census.json rows[slug == 'elmcip'].areas, .evidence_kind, .record_type)."
+    },
+    {
+      "term": "the procedural lineage: text and poetry generators and combinatory works (the machine as method)",
+      "pattern": "\\b(procedural lineage|text generators?|poetry generators?|story generat\\w+|love letter generator|combinatory (poetry|poetics|literature|text)|algorithmic text generation|computer[- ]generated (text|literature|poetry))\\b",
+      "flags": "i",
+      "basis": "field: B1 (elmcip.net, the creative-works list: 'Taroko Gorge Nick Montfort 2009 text generator , poetry generator'; 'M.U.C. Love Letter Generator Christopher Strachey 1952 generative , epistolary , combinatory'; 'Sintext ... text generator , automatic text generation , computer-generated literature'); B3 (ebr: 'a poetry generator that is an algorithmic structure that assembles poetry from arrays of possible verse'). The layer census's record_object ('from Christopher Strachey's M.U.C. Love Letter Generator (1952) and Theo Lutz's Stochastische Texte (1959)') and tll_reading ('the frozen index of the procedural lineage #186 names') for the entity (TLL record)."
+    },
+    {
+      "term": "the end state of a research infrastructure: freezing, precarity, migration and succession of a database",
+      "pattern": "\\b(frozen archive|research infrastructures?|end[- ]of[- ]life|afterlife of (the|a|its) (database|archive|project|knowledge base)|(platform|database|infrastructure) (will )?(eventually )?becomes? obsolete|migrat\\w+ (its|the|their) data)\\b",
+      "flags": "i",
+      "basis": "field: B1 (elmcip.net: 'now preserved as a frozen archive'; 'no longer open for new contributions or submissions'; 'The mission lives on through the Digital Narrative Knowledge Base'); B3 (ebr: 'like many DH projects, it exists in a state of precarity'; 'we also need to think about the afterlife of the database itself'; 'Whatever platform a database is developed in will eventually become obsolete'; 'we will commit to migrating its data to another platform within the consortium'); B5 (Facebook card snippet: 'beginning the process of shifting'). The layer census's lifecycle ('historical'; 'preserved as a frozen archive') and negative_tags ('NOT a live, accumulating census') for the entity (TLL record)."
+    },
+    {
+      "term": "contributory, collectively authored records of a field (records entered by people, cross-referenced to works and authors)",
+      "pattern": "\\b(contributory database|collectively authored|participatory (online )?database|entered by humans|cross-referenc\\w+ (records?|information))\\b",
+      "flags": "i",
+      "basis": "field: B1 (elmcip.net: 'built through the active participation of a community of international researchers and writers'; 'cross-referenced, contextualized information about authors, creative works, critical writing'); B2 (www.elmcip.it: 'An open-access, contributory database'); B3 (ebr: 'we can present the Knowledge Base as a collectively authored, networked research environment'; 'currently all the records in the database are entered by humans rather than harvested by an automatic survey of references'). The layer census's method ('community contribution by international researchers and writers into a Drupal 7 database') and record.name for the entity (TLL record)."
+    }
+  ],
+  "classes_note": "Five classes, each sourced by the field B and the layer census record. (0) electronic literature as the field the knowledge base documents: B1, B2, B3; TLL area field-history and record_object. (1) databases and indexes of electronic literature: B1, B2, B3, B4; TLL areas field-history, evidence_kind, record_type. (2) the procedural lineage, generators and combinatory works, which the knowledge base records: B1's records, B3; TLL record_object and tll_reading. (3) the end state of a research infrastructure (freezing, precarity, migration, succession): B1, B3, B5; TLL lifecycle, negative_tags. (4) contributory, collectively authored records of a field: B1, B2, B3; TLL method and record.name. The census's anchors are read at their passages whatever the string pass returns: #186 (the procedural lineage, the four columns, the three criteria of address, architecture and persistence) and #1543 (machine composition: the composition/provenance distinction). 'ELMCIP' matches the project and the knowledge base; a sentence naming the project only is read for what it says of the knowledge base.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'ELMCIP Electronic Literature Knowledge Base' (elmcip-electronic-literature-knowledge-base-aio-20261101, OBS-a690f6a631f9, ADDR-f5fd4cb8abd2), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's reading, findings and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+    186,
+    1543,
+    176,
+    400,
+    317,
+    1680
+  ]
+}

@@ -1,0 +1,115 @@
+{
+ "row": "literary-ai",
+ "address": "The Literary History of Artificial Intelligence",
+ "entity": "The Literary History of Artificial Intelligence ('Literary AI'; 'On Literary AI' its about page), an online exhibit of the Columbia University Rare Book & Manuscript Library in eight cases (literaryai.library.columbia.edu), a collaboration between the Columbia English Department, the Rare Book & Manuscript Library and Columbia University's Digital Scholarship department, on 'the long, shared history of literature and computation through the Columbia Library's holdings', circa 1890–1970; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/literary-ai)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "literary-ai",
+  "address": "The Literary History of Artificial Intelligence",
+  "entity": "The Literary History of Artificial Intelligence ('Literary AI'; 'On Literary AI' its about page), an online exhibit of the Columbia University Rare Book & Manuscript Library in eight cases (literaryai.library.columbia.edu), a collaboration between the Columbia English Department, the Rare Book & Manuscript Library and Columbia University's Digital Scholarship department, on 'the long, shared history of literature and computation through the Columbia Library's holdings', circa 1890–1970; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/literary-ai)",
+  "row_type": "C (a public entity on which the archive bears: a university library's online exhibit of the history of literature and computation; an entity of the traininglayerliterature.org layer census, host_relation 'historical lineage')",
+  "aliases": [
+   {
+    "pattern": "\\bLiterary History of (Artificial Intelligence|AI)\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bLiterary AI\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bliteraryai\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bRBML\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "field histories of electronic, generative and computational literature (the history of literature and computation)",
+    "pattern": "\\b(histor(y|ies) of (literature and computation|computational (literature|writing|poetics)|electronic literature|generative (literature|text|writing)|computer[- ]generated (text|literature|writing)|text generation|machine writing)|literature and computation|pre-?histor(y|ies) of (AI|artificial intelligence|machine writing|text generation))\\b",
+    "flags": "i",
+    "basis": "field: B3 (the exhibit's about page, card 3 and the census's own page: 'This exhibition explores the long, shared history of literature and computation through the Columbia Library’s holdings'); B2 (CU Narrative Intelligence Lab, card 2, the same paragraph). The census's area for the entity, 'field-history' ('Field history and indexes of electronic, generative and computational literature', census.json areas; rows[slug == 'literary-ai'].areas)."
+   },
+   {
+    "term": "algorithmic composition and writing machines before machine learning (plot generators, combinatorial devices, early text-generating programs such as Strachey's love letters)",
+    "pattern": "\\b(algorithmic (composition|writing|literature)|plot[- ]generators?|Plotto|Plot Genie|combinatori(al|cs?) (devices?|literature|poetry|writing)|written by machines|machine[- ]written|writing machines?|automat(ed|ic) (writing|text generation)|love[- ]letters? (program|generator|algorithm)|Strachey)\\b",
+    "flags": "i",
+    "basis": "field: B3 ('showcases examples of algorithmic composition, such as prose and poetry written by machines, alongside literature written with the aid of algorithmic and combinatorial devices'; 'plot generators such as William Wallace Cook’s Plotto series'; 'Christopher Strachey, who wrote a love letter program in the 1940s'); B2 (the same about paragraph). The census record's makes and holdings (rows[slug == 'literary-ai'].record.makes, .holdings)."
+   },
+   {
+    "term": "algorithmic analysis of literature (narrative types, plot structures, the 36 dramatic situations)",
+    "pattern": "\\b(Polti|(thirty-six|36) (dramatic )?situations|algorithms? to analy[sz]e literature|types of prose narratives?|plot (structures?|diagrams?|visuali[sz]ation)|narrative analysis)\\b",
+    "flags": "i",
+    "basis": "field: B3 ('The second story tracks the use of algorithms to analyze literature'; 'Georges Polti’s Les trente-six situations dramatiques (1895)'; 'diagrams of plot structures'; 'The interest in narrative analysis and plot visualization'). The census record's holdings ('analyses of narrative types (Fansler, Polti, Keeler's 'web-word' designs)')."
+   },
+   {
+    "term": "the procedural lineage (the delegation of composition to devices and systems)",
+    "pattern": "\\b(procedural (lineage|poetics|composition|literature|generation)|delegat\\w* (composition|authorship|writing)|composition (can be|was|is) delegated|Oulipo)\\b",
+    "flags": "i",
+    "basis": "archive: the census record's tll_reading for the entity ('A historical field resource for #186's procedural lineage, the delegation of composition to devices and systems, where the machine is method and, in Strachey's program, writer', rows[slug == 'literary-ai'].tll_reading), and #186's naming of the lineage (data/texts/AXN-032C-text.md). Membership by the archive's own record, at that locus."
+   }
+  ],
+  "classes_note": "Four classes: (1) field histories of literature and computation, the exhibit's own self-description (B3, B2) and the census's area 'field-history'; (2) algorithmic composition and writing machines before machine learning, from the exhibit's first story and holdings (B3, B2; census record.makes, holdings); (3) algorithmic analysis of literature, the exhibit's second story (B3; census holdings); (4) the procedural lineage of #186, membership by the census's tll_reading for the entity. The aliases are the exhibit's names (The Literary History of Artificial Intelligence; The Literary History of AI; Literary AI, case-sensitive; its host literaryai.library.columbia.edu) and RBML, the census kind's abbreviation of its holder, case-sensitive. Columbia University, its English Department, the Rare Book & Manuscript Library, Digital Scholarship, the CU Narrative Intelligence Lab and the curators named on a card (Alex Gil, Melina Moe, Dennis Yi Tenen) are entities distinct from the exhibit and are not aliases; the general history of AI in literature and fiction that the composition answers (the topic named by the exhibit's title; Cambridge's AI Narratives programme, card 1) is a neighbouring entity and not a class of the exhibit. #186 (Who Is Writing for the Machines?) and #1543 (Generative Uptake), the census's anchors, are read at the passages bearing on the entity's kind: training corpora, writing addressed to a machine reader, machine composition, field histories of electronic and generative literature. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the four classes; a bare mention, a citation line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the briefs it names; address 'The Literary History of Artificial Intelligence' (the-literary-history-of-artificial-intelligence-aio-20261101, OBS-9942898f4ff2, ADDR-621291ba3efe), Google AI Overview (expanded), signed out, incognito; reached 'generic'. The archive's own records of the entity (the Capture Registry's reading, findings and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+   186,
+   1543
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 27,
+  "O_deposits": 23,
+  "H_candidates": 28
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "46": 1,
+   "48": 1,
+   "135": 1,
+   "152": 1,
+   "153": 1,
+   "186": 1,
+   "238": 1,
+   "249": 1,
+   "578": 1,
+   "613": 2,
+   "870": 1,
+   "886": 1,
+   "907": 1,
+   "1009": 1,
+   "1110": 1,
+   "1177": 1,
+   "1313": 2,
+   "1678": 1,
+   "1680": 1,
+   "1682": 1,
+   "1684": 1,
+   "1715": 2,
+   "1717": 2
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "a615fa8e5400a3af52d5581e9bf061d72116efec8ddc99195528b232863bf889",
+  "candidates-H.jsonl": "66174a0c8a46164d4ab68792177e0c3d7b27acdfd4da9e0ef5bdeb8f3c18bc61"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

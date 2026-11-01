@@ -1,0 +1,217 @@
+{
+ "row": "project-gutenberg",
+ "address": "Project Gutenberg",
+ "entity": "Project Gutenberg (gutenberg.org): an online library of free eBooks, founded by Michael Hart in 1971, its texts digitized and proofread by volunteers, chiefly works in the public domain in the United States; operated by the Project Gutenberg Literary Archive Foundation; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/project-gutenberg)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "project-gutenberg",
+  "address": "Project Gutenberg",
+  "entity": "Project Gutenberg (gutenberg.org): an online library of free eBooks, founded by Michael Hart in 1971, its texts digitized and proofread by volunteers, chiefly works in the public domain in the United States; operated by the Project Gutenberg Literary Archive Foundation; formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/project-gutenberg)",
+  "row_type": "C (a public entity on which the archive bears: a digital library of public-domain eBooks whose texts pass into training sets and machine-made works downstream; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure')",
+  "aliases": [
+   {
+    "pattern": "\\bProject Gutenberg\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bProjekt Gutenberg\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bgutenberg\\.org\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPG-?19\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bGutenberg\\b(?!\\s+(Bible|press|Galaxy|Parenthesis|era|moment|revolution))",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "digital libraries of public-domain texts whose texts enter training corpora",
+    "pattern": "\\b(digital librar(y|ies)|public[- ]domain (texts?|books?|works?|literature|corpus|corpora|transcriptions?)|(books?|literature|novels?) (in|into|within) (the )?(pre-?)?training (data|corpus|corpora|sets?))\\b",
+    "flags": "i",
+    "basis": "field: B3 (Wikipedia, Project Gutenberg: 'It was founded in 1971 by American writer Michael S. Hart and is the oldest digital library'; 'Most items in its collection are full texts of books or individual stories in the public domain'); B7 (Wikipedia, The Pile: the sub-dataset 'Gutenberg (PG-19)'). The census's area 'corpora' ('The corpora: collections, crawls and datasets whose texts enter machine training'), evidence_kind 'digital library' and record.in_layer for the entity (census.json areas; rows[slug == 'project-gutenberg'].areas, .evidence_kind, .record.in_layer)."
+   },
+   {
+    "term": "machine-made works composed from a library's texts (computer-generated audiobooks, generated novels)",
+    "pattern": "\\b(computer-generated (titles?|audiobooks?|novels?|narration)|generated novels?|NaNoGenMo|AI[- ](generated|narrated|powered) audiobooks?|synthetic (voices?|narration|speech))\\b",
+    "flags": "i",
+    "basis": "field: B1 (gutenberg.org home page: 'The Open Audiobook Collection adds almost 5,000 computer-generated titles.'); B8 (NaNoGenMo, census third-party: 'It could literally grab a random novel from Project Gutenberg.'). The census's record.makes for the entity (census.json rows[slug == 'project-gutenberg'].record.makes) and its area 'machine-composition'."
+   },
+   {
+    "term": "attribution stripped from redistributed texts",
+    "pattern": "\\b(stripped of (its |their )?attribution|attribution[- ](stripping|severance|stripped|removed)|strip(s|ped|ping)? (the )?attribution)\\b",
+    "flags": "i",
+    "basis": "field: B3 (Wikipedia: 'There have been instances of books being stripped of attribution to the project and sold for profit in the Kindle Store and other booksellers'; 'There is no legal impediment to the reselling of works in the public domain if all references to Project Gutenberg are removed'). The census's record.name and does_not_answer ('how its texts are attributed once redistributed elsewhere') for the entity."
+   },
+   {
+    "term": "the undocumented edition of a transcription (which version of a text was digitized)",
+    "pattern": "\\b(which (edition|version|printing)( of [a-z ]{1,30})? (was|has been|is) (digitized|transcribed|the one)|undocumented edition|edition (digitized|transcribed) (from|is)|copy[- ]text)\\b",
+    "flags": "i",
+    "basis": "field: B3 (Wikipedia: 'In December 1994, Project Gutenberg was criticized by the Text Encoding Initiative for ... not documenting which of several (conflicting) versions of a text has been the one digitized.'). The census's negative_tags[0] ('NOT a scholarly edition: per Wikipedia, the version digitized is not always documented') and does_not_answer[0] for the entity."
+   }
+  ],
+  "classes_note": "Four classes, each sourced by the field and the census record: (1) digital libraries of public-domain texts whose texts enter training corpora (B3, B7; census area 'corpora', evidence_kind, record.in_layer); (2) machine-made works composed from a library's texts (B1's Open Audiobook Collection, B8 NaNoGenMo; census record.makes); (3) attribution stripped from redistributed texts (B3; census record.name, does_not_answer); (4) the undocumented edition of a transcription (B3's TEI criticism; census negative_tags, does_not_answer). The aliases are the entity's name, its German sister's name (a distinct entity: candidates read and kept apart), its host, the Pile's PG-19 component (a distinct entity, read for what it says of the library) and the bare name 'Gutenberg', which the archive uses for the library ('Gutenberg's texts', 'the Gutenberg text'), its uses for the printer, the press and the print era excluded where the phrase names them; the reading removes the rest (Johannes Gutenberg, the press). #186 and #1543, the census's anchors, are read at the passages on corpora, the address to the training layer, persistence and attribution, and machine composition. Admission by reading (§3.4): D where a deposit names the entity and says something of it (a description, a use, a limit, a corrective); R where it states a relation between the entity and an archive object (the archive's Originals Library and its seatings drawn from the library); O-class where a sentence applies an archive category to one of the four classes; a bare mention, a bibliography line or a catalogue row is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v09 briefs it names; address 'Project Gutenberg' (project-gutenberg-aimode-20261101, OBS-d3c1028b7ac2, ADDR-4825dd2956f6), Google AI Mode, signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+   186,
+   1543,
+   416,
+   735,
+   943,
+   1044,
+   1046,
+   1560,
+   1593,
+   1605,
+   1656,
+   1668,
+   1680,
+   1689,
+   1707,
+   1710,
+   1711,
+   1712,
+   1713,
+   1720
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 108,
+  "D_deposits": 23,
+  "R_sentences": 39,
+  "R_deposits": 13,
+  "O_direct": 26,
+  "O_class": 90,
+  "O_deposits": 53,
+  "H_candidates": 234
+ },
+ "per_deposit": {
+  "D": {
+   "416": 1,
+   "735": 1,
+   "943": 2,
+   "1044": 6,
+   "1046": 6,
+   "1522": 1,
+   "1560": 1,
+   "1593": 3,
+   "1594": 2,
+   "1605": 2,
+   "1656": 2,
+   "1668": 5,
+   "1678": 1,
+   "1680": 1,
+   "1682": 11,
+   "1684": 1,
+   "1689": 6,
+   "1707": 4,
+   "1710": 14,
+   "1712": 19,
+   "1713": 3,
+   "1716": 4,
+   "1720": 12
+  },
+  "R": {
+   "943": 1,
+   "1044": 4,
+   "1046": 1,
+   "1593": 3,
+   "1656": 2,
+   "1668": 1,
+   "1682": 5,
+   "1684": 1,
+   "1689": 2,
+   "1707": 2,
+   "1710": 6,
+   "1712": 9,
+   "1716": 2
+  },
+  "O": {
+   "1": 11,
+   "44": 1,
+   "70": 1,
+   "109": 1,
+   "120": 2,
+   "131": 1,
+   "230": 1,
+   "416": 1,
+   "481": 3,
+   "599": 4,
+   "612": 3,
+   "716": 1,
+   "863": 4,
+   "865": 2,
+   "870": 1,
+   "877": 1,
+   "909": 2,
+   "910": 3,
+   "912": 1,
+   "927": 2,
+   "943": 1,
+   "1008": 2,
+   "1038": 1,
+   "1039": 3,
+   "1044": 4,
+   "1046": 1,
+   "1052": 1,
+   "1368": 3,
+   "1373": 1,
+   "1414": 1,
+   "1460": 1,
+   "1463": 2,
+   "1522": 1,
+   "1593": 2,
+   "1617": 1,
+   "1656": 1,
+   "1678": 5,
+   "1680": 5,
+   "1682": 3,
+   "1684": 2,
+   "1689": 3,
+   "1698": 1,
+   "1699": 1,
+   "1707": 2,
+   "1709": 1,
+   "1710": 3,
+   "1711": 1,
+   "1712": 1,
+   "1713": 1,
+   "1715": 3,
+   "1716": 6,
+   "1717": 3,
+   "1720": 3
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 416,
+   "triple": {
+    "subject": "Digital Humanities Corpora",
+    "predicate": "minted_in",
+    "object": "Architecture-Aware Literary Traversal by Public AI Summarize",
+    "type": "concept",
+    "evidence_status": "observed",
+    "note": "Large text archives (e.g., HathiTrust, Project Gutenberg) have scale but no internal architecture. T"
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "f34bc259bc54d75df55897d8a34b10e048c40432248a902100d2bf9c99cd5e8a",
+  "candidates-R.jsonl": "da9daae89991f81c43a95af2b196a3c94ce6fe4c7cfe6b03638c60d73e75307f",
+  "candidates-O.jsonl": "f82cd124f7268ce72bd8c6ed7a061af930896e156ff89d6a1a304c4e264c758b",
+  "candidates-H.jsonl": "6a2b093ba2725e9dd1bcb6052dea3d5a37cff406b4027e83ef63de2da97eda6a"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

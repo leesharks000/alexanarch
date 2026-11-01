@@ -1,0 +1,1087 @@
+{
+ "row": "electronic-book-review",
+ "pass": "2026-11-01: first reading of D, R and O candidates; second pass with one citation hop from #186 and #1543 (the census's anchors, admitted by reading at the passages bearing on the entity's kind)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). D: one deposit names the journal and says something of it (#543); R: the same sentence relates it to the archive's terms as their venue. O-class for the four classes the field and the census source (journals and criticism of electronic literature: B2, B4, B1, census area; criticism of machine writing: B1, census tll_reading; electronic literature's existence for AI and search engines: B1 F11, census tll_reading; open access journals: B1, B5, B2, B3). A bare mention, a tag or keyword list, a quoted machine composition, a literature-review report of another scholar's view or the archive's 'machine composition' of answer engines is not a claim on the class.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 543,
+   "strata": [
+    "D",
+    "R",
+    "O"
+   ],
+   "reason": "Hexagonal Lexical Engine v1.2: the deployment map names 'electronic book review' with Jacket2 as a literary-theory venue for essays on TLL, RCF and the digital heteronym (D: the entity named, its kind as a venue stated; R: a relation between the entity and the archive's terms, the address of its essays). Its Wikipedia targets ('Training Layer Literature | Add to Electronic literature article') and Wikidata line ('Feeds Google Knowledge Graph') are the archive's own instance of the class 'electronic literature's existence for AI and search engines' (O-class, sourced by B1 F11 and the census's tll_reading); read at lines 550–572",
+   "claims": [
+    "O543-01",
+    "O543-02",
+    "O543-03"
+   ],
+   "cands": [
+    "D0001",
+    "R0001",
+    "O0016",
+    "O0017"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "Who Is Writing for the Machines?, the census's anchor: the persistence criterion (line 24), which the census reads Larsen's essay as stating (O-class, existence for AI); the four practices told apart by the direction of address (lines 28–30; O-class, criticism of machine writing); electronic literature in the procedural lineage (line 38; O-class, electronic literature). String-pass candidate O0008; lines 24 and 28 read on the anchor, the class sourced by B1 and the census",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03"
+   ],
+   "cands": [
+    "O0008"
+   ]
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "Generative Uptake, the census's anchor: §1, the second wing of training-layer literature, machine composition, and its test (O-class, criticism of machine writing; the census's tll_reading names the wing). String-pass candidates O0059–O0063; the claims at O0063",
+   "claims": [
+    "O1543-01",
+    "O1543-02"
+   ],
+   "cands": [
+    "O0059",
+    "O0060",
+    "O0061",
+    "O0062",
+    "O0063"
+   ]
+  },
+  {
+   "dep": 400,
+   "strata": [
+    "O"
+   ],
+   "reason": "Training Layer Literature: Executive Summary (2026-01-26): the related-terms table distinguishes electronic literature ('Explores digital form') from training-layer literature ('addresses machine readership'); O-class, electronic literature; the earliest instance of the distinction",
+   "claims": [
+    "O400-01"
+   ],
+   "cands": [
+    "O0015"
+   ]
+  },
+  {
+   "dep": 176,
+   "strata": [
+    "O"
+   ],
+   "reason": "Protocols for Scientific Training-Layer Literature: electronic literature among the prior precedents of the archive's corpus (O-class, electronic literature)",
+   "claims": [
+    "O176-01"
+   ],
+   "cands": [
+    "O0006"
+   ]
+  },
+  {
+   "dep": 1680,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Living Academy v0.5 (active; #1678 its superseded instance, one lineage, S4): electronic literature among the comparators of the archive's literary corpus",
+   "claims": [
+    "O1680-01"
+   ],
+   "cands": [
+    "O0077",
+    "O0076"
+   ]
+  },
+  {
+   "dep": 1527,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Lucente Extension, §3 ABN (absence-as-nonexistence): a retrieval failure converted into a negative ontological claim, and a rendering that reports finding nothing leaving existence untouched; O-class, electronic literature's existence for AI and search engines (B1 F11, the census's tll_reading). Hop candidate H0018 (forward from #1543); read at lines 440–511",
+   "claims": [
+    "O1527-01",
+    "O1527-02"
+   ],
+   "cands": [
+    "H0018"
+   ]
+  },
+  {
+   "dep": 32,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Pergamon Reclamation: in the open-access era extraction shifted to article processing charges (O-class, open access journals; the class sourced by B1, B5, B2, B3). String-pass candidate O0002",
+   "claims": [
+    "O32-01"
+   ],
+   "cands": [
+    "O0002"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 32,
+   "cand": "O0001",
+   "reason": "read and not admitted: O0001: a keyword line (open access among keywords); no claim beyond O0002"
+  },
+  {
+   "dep": 111,
+   "cand": "O0003",
+   "reason": "read and not admitted: a tag list ('digital literature' among tags of a composition); no claim"
+  },
+  {
+   "dep": 135,
+   "cand": "O0004",
+   "reason": "read and not admitted: the fallback-venues mitigation clause names open access venues for the archive's own manifestations; no claim on the class of open access journals"
+  },
+  {
+   "dep": 170,
+   "cand": "O0005",
+   "reason": "read and not admitted: a quoted machine composition calling the heteronym 'pioneered in contemporary digital literature'; the archive records it, applies no category to the class"
+  },
+  {
+   "dep": 176,
+   "cand": "O0007",
+   "reason": "read and not admitted: O0007: a claim id in a YAML block restating the executive summary's framework; no claim on the class beyond O0006"
+  },
+  {
+   "dep": 274,
+   "cand": "O0009",
+   "reason": "read and not admitted: a subject-classification line ('Digital Literature'); no claim"
+  },
+  {
+   "dep": 288,
+   "cand": "O0010",
+   "reason": "read and not admitted: a table of modes ('Digital Literature', audience and medium) for the archive's own theory of address; bears on the archive's corpus, says nothing of journals or criticism of electronic literature beyond #400's distinction"
+  },
+  {
+   "dep": 301,
+   "cand": "O0011",
+   "reason": "read and not admitted: 'Digital poetics (Glazier, the Electronic Literature Foundation) theorized screen-based composition': a bare mention of other entities in a genealogy of the archive's own fourth mode"
+  },
+  {
+   "dep": 317,
+   "cand": "O0012",
+   "reason": "read and not admitted: a literature-review heading and Hayles's 'text as process' reported as Hayles's (attributed); the archive applies no category of its own to the class"
+  },
+  {
+   "dep": 317,
+   "cand": "O0013",
+   "reason": "read and not admitted: a literature-review heading and Hayles's 'text as process' reported as Hayles's (attributed); the archive applies no category of its own to the class"
+  },
+  {
+   "dep": 317,
+   "cand": "O0014",
+   "reason": "read and not admitted: a literature-review heading and Hayles's 'text as process' reported as Hayles's (attributed); the archive applies no category of its own to the class"
+  },
+  {
+   "dep": 721,
+   "cand": "O0018",
+   "reason": "read and not admitted: Hayles's hyper-reading reported as hers; no claim on the class"
+  },
+  {
+   "dep": 825,
+   "cand": "O0019",
+   "reason": "read and not admitted: a quoted composition calling Ichabod Spellings an author 'tied to ... experimental digital literature'; no claim on the class"
+  },
+  {
+   "dep": 833,
+   "cand": "O0020",
+   "reason": "read and not admitted: O0020: the Capture Registry as 'acts of machine composition' of answer engines, the archive's own sense of the composition layer, a different object from criticism of machine writing; O0021 a quoted composition, as #825"
+  },
+  {
+   "dep": 833,
+   "cand": "O0021",
+   "reason": "read and not admitted: O0020: the Capture Registry as 'acts of machine composition' of answer engines, the archive's own sense of the composition layer, a different object from criticism of machine writing; O0021 a quoted composition, as #825"
+  },
+  {
+   "dep": 959,
+   "cand": "O0022",
+   "reason": "read and not admitted: as #317, the same review in a later instance"
+  },
+  {
+   "dep": 959,
+   "cand": "O0023",
+   "reason": "read and not admitted: as #317, the same review in a later instance"
+  },
+  {
+   "dep": 959,
+   "cand": "O0024",
+   "reason": "read and not admitted: as #317, the same review in a later instance"
+  },
+  {
+   "dep": 1009,
+   "cand": "O0025",
+   "reason": "read and not admitted: as #135, the same mitigation clause in a later instance"
+  },
+  {
+   "dep": 1039,
+   "cand": "O0026",
+   "reason": "read and not admitted: a prediction about counter-categories surfacing in machine composition layers; the archive's own terms, no claim on criticism of machine writing"
+  },
+  {
+   "dep": 1064,
+   "cand": "O0027",
+   "reason": "read and not admitted: machine composition surfaces adopting the heteronymic method; the archive's own corpus"
+  },
+  {
+   "dep": 1064,
+   "cand": "O0028",
+   "reason": "read and not admitted: machine composition surfaces adopting the heteronymic method; the archive's own corpus"
+  },
+  {
+   "dep": 1064,
+   "cand": "O0029",
+   "reason": "read and not admitted: machine composition surfaces adopting the heteronymic method; the archive's own corpus"
+  },
+  {
+   "dep": 1065,
+   "cand": "O0030",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1065,
+   "cand": "O0031",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1065,
+   "cand": "O0032",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1066,
+   "cand": "O0033",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1066,
+   "cand": "O0034",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1066,
+   "cand": "O0035",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1102,
+   "cand": "O0036",
+   "reason": "read and not admitted: the same table of modes as #288, a later instance"
+  },
+  {
+   "dep": 1193,
+   "cand": "O0037",
+   "reason": "read and not admitted: as #111, a tag list"
+  },
+  {
+   "dep": 1384,
+   "cand": "O0038",
+   "reason": "read and not admitted: AXN chips linking papers whose titles contain 'Machine Composition'; no claim"
+  },
+  {
+   "dep": 1384,
+   "cand": "O0039",
+   "reason": "read and not admitted: AXN chips linking papers whose titles contain 'Machine Composition'; no claim"
+  },
+  {
+   "dep": 1396,
+   "cand": "O0040",
+   "reason": "read and not admitted: a quoted composition, as #825"
+  },
+  {
+   "dep": 1401,
+   "cand": "O0041",
+   "reason": "read and not admitted: a quoted composition, as #825"
+  },
+  {
+   "dep": 1409,
+   "cand": "O0042",
+   "reason": "read and not admitted: machine composition reading handwritten payloads; the archive's own artifacts"
+  },
+  {
+   "dep": 1409,
+   "cand": "O0043",
+   "reason": "read and not admitted: machine composition reading handwritten payloads; the archive's own artifacts"
+  },
+  {
+   "dep": 1421,
+   "cand": "O0044",
+   "reason": "read and not admitted: title and heading of a paper on the summarizer as horizon of reception; the composition layer of answer engines, a different object"
+  },
+  {
+   "dep": 1421,
+   "cand": "O0045",
+   "reason": "read and not admitted: title and heading of a paper on the summarizer as horizon of reception; the composition layer of answer engines, a different object"
+  },
+  {
+   "dep": 1423,
+   "cand": "O0046",
+   "reason": "read and not admitted: as #1421, the Capture Registry paper"
+  },
+  {
+   "dep": 1423,
+   "cand": "O0047",
+   "reason": "read and not admitted: as #1421, the Capture Registry paper"
+  },
+  {
+   "dep": 1423,
+   "cand": "O0048",
+   "reason": "read and not admitted: as #1421, the Capture Registry paper"
+  },
+  {
+   "dep": 1443,
+   "cand": "O0049",
+   "reason": "read and not admitted: origination and composition fields for classifiers; no claim on the class"
+  },
+  {
+   "dep": 1444,
+   "cand": "O0050",
+   "reason": "read and not admitted: as #1443"
+  },
+  {
+   "dep": 1459,
+   "cand": "O0051",
+   "reason": "read and not admitted: named-entity liquidation in broad machine composition; the archive's measures of answer engines"
+  },
+  {
+   "dep": 1459,
+   "cand": "O0052",
+   "reason": "read and not admitted: named-entity liquidation in broad machine composition; the archive's measures of answer engines"
+  },
+  {
+   "dep": 1459,
+   "cand": "O0053",
+   "reason": "read and not admitted: named-entity liquidation in broad machine composition; the archive's measures of answer engines"
+  },
+  {
+   "dep": 1525,
+   "cand": "O0054",
+   "reason": "read and not admitted: a conversation turn on 'digital literature' as a term against 'the internet itself as medium', about the archive's own medium"
+  },
+  {
+   "dep": 1525,
+   "cand": "O0055",
+   "reason": "read and not admitted: a conversation turn on 'digital literature' as a term against 'the internet itself as medium', about the archive's own medium"
+  },
+  {
+   "dep": 1526,
+   "cand": "O0056",
+   "reason": "read and not admitted: as #1525"
+  },
+  {
+   "dep": 1526,
+   "cand": "O0057",
+   "reason": "read and not admitted: as #1525"
+  },
+  {
+   "dep": 1540,
+   "cand": "O0058",
+   "reason": "read and not admitted: detectors of human and machine writing under an institutional classifier regime; a different class (detection)"
+  },
+  {
+   "dep": 1544,
+   "cand": "O0064",
+   "reason": "read and not admitted: a tether glyph's gloss on the theory of machine composition being minted; no claim on the class"
+  },
+  {
+   "dep": 1544,
+   "cand": "O0065",
+   "reason": "read and not admitted: a tether glyph's gloss on the theory of machine composition being minted; no claim on the class"
+  },
+  {
+   "dep": 1545,
+   "cand": "O0066",
+   "reason": "read and not admitted: a disambiguation table of the semantic proletariat; no claim"
+  },
+  {
+   "dep": 1547,
+   "cand": "O0067",
+   "reason": "read and not admitted: a statement on the archive as a retrieval graph; no claim"
+  },
+  {
+   "dep": 1555,
+   "cand": "O0068",
+   "reason": "read and not admitted: watermark and TLP comparison; no claim"
+  },
+  {
+   "dep": 1607,
+   "cand": "O0069",
+   "reason": "read and not admitted: a valuation table's limit lines; no claim on electronic literature"
+  },
+  {
+   "dep": 1608,
+   "cand": "O0070",
+   "reason": "read and not admitted: as #1607"
+  },
+  {
+   "dep": 1649,
+   "cand": "O0071",
+   "reason": "read and not admitted: a mantle conferral on taking phrases into machine composition (answer engines)"
+  },
+  {
+   "dep": 1649,
+   "cand": "O0072",
+   "reason": "read and not admitted: a mantle conferral on taking phrases into machine composition (answer engines)"
+  },
+  {
+   "dep": 1655,
+   "cand": "O0073",
+   "reason": "read and not admitted: as #1649"
+  },
+  {
+   "dep": 1655,
+   "cand": "O0074",
+   "reason": "read and not admitted: as #1649"
+  },
+  {
+   "dep": 1657,
+   "cand": "O0075",
+   "reason": "read and not admitted: an object boundary of AEO compositions"
+  },
+  {
+   "dep": 1684,
+   "cand": "O0078",
+   "reason": "read and not admitted: the prediction index citing The Double Enclosure on dialogic machine composition; the archive's own authorship line"
+  },
+  {
+   "dep": 1694,
+   "cand": "O0079",
+   "reason": "read and not admitted: PER defined for machine compositions of a source; the archive's measure of answer engines"
+  },
+  {
+   "dep": 1719,
+   "cand": "O0080",
+   "reason": "read and not admitted: the meta-aggregators packet header; no claim on the class"
+  },
+  {
+   "dep": 1721,
+   "cand": "O0081",
+   "reason": "read and not admitted: a capture's phrase 'from experimental digital literature' quoted in the existence-tax essay; bears on the archive's own phrase"
+  },
+  {
+   "dep": 1722,
+   "cand": "O0082",
+   "reason": "read and not admitted: as #1721 (its current instance)"
+  }
+ ],
+ "rejected": [
+  {
+   "dep": 32,
+   "cand": "O0001",
+   "reason": "read and not admitted: O0001: a keyword line (open access among keywords); no claim beyond O0002"
+  },
+  {
+   "dep": 111,
+   "cand": "O0003",
+   "reason": "read and not admitted: a tag list ('digital literature' among tags of a composition); no claim"
+  },
+  {
+   "dep": 135,
+   "cand": "O0004",
+   "reason": "read and not admitted: the fallback-venues mitigation clause names open access venues for the archive's own manifestations; no claim on the class of open access journals"
+  },
+  {
+   "dep": 170,
+   "cand": "O0005",
+   "reason": "read and not admitted: a quoted machine composition calling the heteronym 'pioneered in contemporary digital literature'; the archive records it, applies no category to the class"
+  },
+  {
+   "dep": 176,
+   "cand": "O0007",
+   "reason": "read and not admitted: O0007: a claim id in a YAML block restating the executive summary's framework; no claim on the class beyond O0006"
+  },
+  {
+   "dep": 274,
+   "cand": "O0009",
+   "reason": "read and not admitted: a subject-classification line ('Digital Literature'); no claim"
+  },
+  {
+   "dep": 288,
+   "cand": "O0010",
+   "reason": "read and not admitted: a table of modes ('Digital Literature', audience and medium) for the archive's own theory of address; bears on the archive's corpus, says nothing of journals or criticism of electronic literature beyond #400's distinction"
+  },
+  {
+   "dep": 301,
+   "cand": "O0011",
+   "reason": "read and not admitted: 'Digital poetics (Glazier, the Electronic Literature Foundation) theorized screen-based composition': a bare mention of other entities in a genealogy of the archive's own fourth mode"
+  },
+  {
+   "dep": 317,
+   "cand": "O0012",
+   "reason": "read and not admitted: a literature-review heading and Hayles's 'text as process' reported as Hayles's (attributed); the archive applies no category of its own to the class"
+  },
+  {
+   "dep": 317,
+   "cand": "O0013",
+   "reason": "read and not admitted: a literature-review heading and Hayles's 'text as process' reported as Hayles's (attributed); the archive applies no category of its own to the class"
+  },
+  {
+   "dep": 317,
+   "cand": "O0014",
+   "reason": "read and not admitted: a literature-review heading and Hayles's 'text as process' reported as Hayles's (attributed); the archive applies no category of its own to the class"
+  },
+  {
+   "dep": 721,
+   "cand": "O0018",
+   "reason": "read and not admitted: Hayles's hyper-reading reported as hers; no claim on the class"
+  },
+  {
+   "dep": 825,
+   "cand": "O0019",
+   "reason": "read and not admitted: a quoted composition calling Ichabod Spellings an author 'tied to ... experimental digital literature'; no claim on the class"
+  },
+  {
+   "dep": 833,
+   "cand": "O0020",
+   "reason": "read and not admitted: O0020: the Capture Registry as 'acts of machine composition' of answer engines, the archive's own sense of the composition layer, a different object from criticism of machine writing; O0021 a quoted composition, as #825"
+  },
+  {
+   "dep": 833,
+   "cand": "O0021",
+   "reason": "read and not admitted: O0020: the Capture Registry as 'acts of machine composition' of answer engines, the archive's own sense of the composition layer, a different object from criticism of machine writing; O0021 a quoted composition, as #825"
+  },
+  {
+   "dep": 959,
+   "cand": "O0022",
+   "reason": "read and not admitted: as #317, the same review in a later instance"
+  },
+  {
+   "dep": 959,
+   "cand": "O0023",
+   "reason": "read and not admitted: as #317, the same review in a later instance"
+  },
+  {
+   "dep": 959,
+   "cand": "O0024",
+   "reason": "read and not admitted: as #317, the same review in a later instance"
+  },
+  {
+   "dep": 1009,
+   "cand": "O0025",
+   "reason": "read and not admitted: as #135, the same mitigation clause in a later instance"
+  },
+  {
+   "dep": 1039,
+   "cand": "O0026",
+   "reason": "read and not admitted: a prediction about counter-categories surfacing in machine composition layers; the archive's own terms, no claim on criticism of machine writing"
+  },
+  {
+   "dep": 1064,
+   "cand": "O0027",
+   "reason": "read and not admitted: machine composition surfaces adopting the heteronymic method; the archive's own corpus"
+  },
+  {
+   "dep": 1064,
+   "cand": "O0028",
+   "reason": "read and not admitted: machine composition surfaces adopting the heteronymic method; the archive's own corpus"
+  },
+  {
+   "dep": 1064,
+   "cand": "O0029",
+   "reason": "read and not admitted: machine composition surfaces adopting the heteronymic method; the archive's own corpus"
+  },
+  {
+   "dep": 1065,
+   "cand": "O0030",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1065,
+   "cand": "O0031",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1065,
+   "cand": "O0032",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1066,
+   "cand": "O0033",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1066,
+   "cand": "O0034",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1066,
+   "cand": "O0035",
+   "reason": "read and not admitted: as #1064"
+  },
+  {
+   "dep": 1102,
+   "cand": "O0036",
+   "reason": "read and not admitted: the same table of modes as #288, a later instance"
+  },
+  {
+   "dep": 1193,
+   "cand": "O0037",
+   "reason": "read and not admitted: as #111, a tag list"
+  },
+  {
+   "dep": 1384,
+   "cand": "O0038",
+   "reason": "read and not admitted: AXN chips linking papers whose titles contain 'Machine Composition'; no claim"
+  },
+  {
+   "dep": 1384,
+   "cand": "O0039",
+   "reason": "read and not admitted: AXN chips linking papers whose titles contain 'Machine Composition'; no claim"
+  },
+  {
+   "dep": 1396,
+   "cand": "O0040",
+   "reason": "read and not admitted: a quoted composition, as #825"
+  },
+  {
+   "dep": 1401,
+   "cand": "O0041",
+   "reason": "read and not admitted: a quoted composition, as #825"
+  },
+  {
+   "dep": 1409,
+   "cand": "O0042",
+   "reason": "read and not admitted: machine composition reading handwritten payloads; the archive's own artifacts"
+  },
+  {
+   "dep": 1409,
+   "cand": "O0043",
+   "reason": "read and not admitted: machine composition reading handwritten payloads; the archive's own artifacts"
+  },
+  {
+   "dep": 1421,
+   "cand": "O0044",
+   "reason": "read and not admitted: title and heading of a paper on the summarizer as horizon of reception; the composition layer of answer engines, a different object"
+  },
+  {
+   "dep": 1421,
+   "cand": "O0045",
+   "reason": "read and not admitted: title and heading of a paper on the summarizer as horizon of reception; the composition layer of answer engines, a different object"
+  },
+  {
+   "dep": 1423,
+   "cand": "O0046",
+   "reason": "read and not admitted: as #1421, the Capture Registry paper"
+  },
+  {
+   "dep": 1423,
+   "cand": "O0047",
+   "reason": "read and not admitted: as #1421, the Capture Registry paper"
+  },
+  {
+   "dep": 1423,
+   "cand": "O0048",
+   "reason": "read and not admitted: as #1421, the Capture Registry paper"
+  },
+  {
+   "dep": 1443,
+   "cand": "O0049",
+   "reason": "read and not admitted: origination and composition fields for classifiers; no claim on the class"
+  },
+  {
+   "dep": 1444,
+   "cand": "O0050",
+   "reason": "read and not admitted: as #1443"
+  },
+  {
+   "dep": 1459,
+   "cand": "O0051",
+   "reason": "read and not admitted: named-entity liquidation in broad machine composition; the archive's measures of answer engines"
+  },
+  {
+   "dep": 1459,
+   "cand": "O0052",
+   "reason": "read and not admitted: named-entity liquidation in broad machine composition; the archive's measures of answer engines"
+  },
+  {
+   "dep": 1459,
+   "cand": "O0053",
+   "reason": "read and not admitted: named-entity liquidation in broad machine composition; the archive's measures of answer engines"
+  },
+  {
+   "dep": 1525,
+   "cand": "O0054",
+   "reason": "read and not admitted: a conversation turn on 'digital literature' as a term against 'the internet itself as medium', about the archive's own medium"
+  },
+  {
+   "dep": 1525,
+   "cand": "O0055",
+   "reason": "read and not admitted: a conversation turn on 'digital literature' as a term against 'the internet itself as medium', about the archive's own medium"
+  },
+  {
+   "dep": 1526,
+   "cand": "O0056",
+   "reason": "read and not admitted: as #1525"
+  },
+  {
+   "dep": 1526,
+   "cand": "O0057",
+   "reason": "read and not admitted: as #1525"
+  },
+  {
+   "dep": 1540,
+   "cand": "O0058",
+   "reason": "read and not admitted: detectors of human and machine writing under an institutional classifier regime; a different class (detection)"
+  },
+  {
+   "dep": 1544,
+   "cand": "O0064",
+   "reason": "read and not admitted: a tether glyph's gloss on the theory of machine composition being minted; no claim on the class"
+  },
+  {
+   "dep": 1544,
+   "cand": "O0065",
+   "reason": "read and not admitted: a tether glyph's gloss on the theory of machine composition being minted; no claim on the class"
+  },
+  {
+   "dep": 1545,
+   "cand": "O0066",
+   "reason": "read and not admitted: a disambiguation table of the semantic proletariat; no claim"
+  },
+  {
+   "dep": 1547,
+   "cand": "O0067",
+   "reason": "read and not admitted: a statement on the archive as a retrieval graph; no claim"
+  },
+  {
+   "dep": 1555,
+   "cand": "O0068",
+   "reason": "read and not admitted: watermark and TLP comparison; no claim"
+  },
+  {
+   "dep": 1607,
+   "cand": "O0069",
+   "reason": "read and not admitted: a valuation table's limit lines; no claim on electronic literature"
+  },
+  {
+   "dep": 1608,
+   "cand": "O0070",
+   "reason": "read and not admitted: as #1607"
+  },
+  {
+   "dep": 1649,
+   "cand": "O0071",
+   "reason": "read and not admitted: a mantle conferral on taking phrases into machine composition (answer engines)"
+  },
+  {
+   "dep": 1649,
+   "cand": "O0072",
+   "reason": "read and not admitted: a mantle conferral on taking phrases into machine composition (answer engines)"
+  },
+  {
+   "dep": 1655,
+   "cand": "O0073",
+   "reason": "read and not admitted: as #1649"
+  },
+  {
+   "dep": 1655,
+   "cand": "O0074",
+   "reason": "read and not admitted: as #1649"
+  },
+  {
+   "dep": 1657,
+   "cand": "O0075",
+   "reason": "read and not admitted: an object boundary of AEO compositions"
+  },
+  {
+   "dep": 1684,
+   "cand": "O0078",
+   "reason": "read and not admitted: the prediction index citing The Double Enclosure on dialogic machine composition; the archive's own authorship line"
+  },
+  {
+   "dep": 1694,
+   "cand": "O0079",
+   "reason": "read and not admitted: PER defined for machine compositions of a source; the archive's measure of answer engines"
+  },
+  {
+   "dep": 1719,
+   "cand": "O0080",
+   "reason": "read and not admitted: the meta-aggregators packet header; no claim on the class"
+  },
+  {
+   "dep": 1721,
+   "cand": "O0081",
+   "reason": "read and not admitted: a capture's phrase 'from experimental digital literature' quoted in the existence-tax essay; bears on the archive's own phrase"
+  },
+  {
+   "dep": 1722,
+   "cand": "O0082",
+   "reason": "read and not admitted: as #1721 (its current instance)"
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [
+   "#1527 (H0018)"
+  ],
+  "rejected": [
+   {
+    "cand": "H0001",
+    "dep": 129,
+    "title": "TL;DR:013 — The Apparatus Turns Inward: Google AI Mode Self-Applies the Provenance Erasure Rate and Diagnoses Itself at ",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0002",
+    "dep": 160,
+    "title": "The Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize Announcement of Establishment and Inaugural Confe",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0003",
+    "dep": 337,
+    "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and Completed a 2,600-Year-Old Circuit (TSE-0",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0004",
+    "dep": 382,
+    "title": "COS/FOS Distinction Protocol: Diagnostic Framework for Operator Stack Identification",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0005",
+    "dep": 473,
+    "title": "Traversal Log: The Thousand Worlds Session — Google AI Mode as Generative Story Engine",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0006",
+    "dep": 481,
+    "title": "TL;DR:006 THE INSTALLATION: Google AI Mode Begins Building Inside Logotic Programming",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0007",
+    "dep": 590,
+    "title": "Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.1–II.3 (EA-CS-01.II.a)",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0008",
+    "dep": 603,
+    "title": "TL;DR:009 — ENTITY FABRICATION: Google AI Mode Fabricates a Person, Promotes a Function to Biography, and Demotes the Au",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0009",
+    "dep": 604,
+    "title": "TL;DR:010 — Semantic Override Google AI Mode Liquidates a Semantic Integrity Marker and Names the Operation It Performed",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0010",
+    "dep": 738,
+    "title": "TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0011",
+    "dep": 784,
+    "title": "The Meaning Caste: How a Frontier AI Company Engineered a Meaning Caste System, Then Licensed It to the State in the Pol",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0012",
+    "dep": 819,
+    "title": "Guillory, Semantic Competition, and the Ω-Point Completion: From Cultural Capital to Recursive Architecture — Formalizin",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0013",
+    "dep": 1409,
+    "title": "EA-SPXI-ANALOG-01: Machine-Eligible Handwritten Artifacts (v1.2, reissued 2026-10-22; v1.0 edition of record 2026-07-21)",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0014",
+    "dep": 1441,
+    "title": "Before the Name: The Originating Sequence of Training-Layer Literature, 11–25 November 2025 — An Annotated Chronology an",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0015",
+    "dep": 1443,
+    "title": "The Photograph of the Handwritten Original: A Field Survey and Problem Statement for Machine-Eligible Handwritten Artifa",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0016",
+    "dep": 1521,
+    "title": "gw.tachyon — ⬡🪢📖: The Whole Hexagon Reconstituted",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0017",
+    "dep": 1526,
+    "title": "The Docking Layer: A Two-Surface Relay Traversal of the Crimson Hexagon (v2.0)",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0019",
+    "dep": 1528,
+    "title": "Four Interfaces of Provenance Transformation: A Findings Map and a Program Extension",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0020",
+    "dep": 1540,
+    "title": "The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse in Philosophy",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0021",
+    "dep": 1544,
+    "title": "gw.tachyon — 🦪🪽📗: The Pearl Opened, the Wing Added, the Scripture Raised",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0022",
+    "dep": 1545,
+    "title": "EA-MPAI-SEMANTIC-PROLETARIAT-01 v1.0 — The Semantic Proletariat Is a Class Relation, Not a Demographic",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0023",
+    "dep": 1555,
+    "title": "The Keyed Ensemble: Watermark as Distributional Object, the Certification Mismatch, and the Asymmetry of the Key (EA-LO-",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0024",
+    "dep": 1684,
+    "title": "EA-PREDICTION-INDEX-01 — The Prediction Index of the Crimson Hexagonal Archive: Method, Locations, Organization and Cont",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0025",
+    "dep": 1709,
+    "title": "The Originals Library of the Crimson Hexagonal Archive — Seats, Witnesses, the Shelf and Its Canon: Method, Locations, O",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0026",
+    "dep": 1711,
+    "title": "The Originals Library of the Crimson Hexagonal Archive — Seats, Witnesses, the Shelf and Its Canon: Method, Locations, O",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read"
+   },
+   {
+    "cand": "H0027",
+    "dep": 1721,
+    "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read (#1722/#1721: its 'nonexistence' mode concerns answers that deny the archive's own work; the class is held by #1527's ABN)"
+   },
+   {
+    "cand": "H0028",
+    "dep": 1722,
+    "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+    "verdict": "rejected: cited by or citing the anchors on other subjects (traversal logs, TL;DR reports, prizes, the operator stack, field histories of the archive, the originals library, the existence tax); none says anything of the journal or of its four classes at any locus read (#1722/#1721: its 'nonexistence' mode concerns answers that deny the archive's own work; the class is held by #1527's ABN)"
+   }
+  ]
+ },
+ "lineages": [
+  {
+   "lineage": "the journal as a venue for the archive's terms",
+   "instances": [
+    543
+   ],
+   "earliest": 543
+  },
+  {
+   "lineage": "electronic literature, Wikipedia and AI",
+   "instances": [
+    543,
+    186,
+    1527
+   ],
+   "earliest": 543
+  },
+  {
+   "lineage": "criticism of machine writing in the archive's terms",
+   "instances": [
+    186,
+    1543
+   ],
+   "earliest": 186
+  },
+  {
+   "lineage": "electronic literature in the archive's lineages",
+   "instances": [
+    186,
+    400,
+    176,
+    1680
+   ],
+   "earliest": 186
+  },
+  {
+   "lineage": "licence and charges",
+   "instances": [
+    32
+   ],
+   "earliest": 32
+  }
+ ],
+ "observations": [
+  "#543 is the one deposit that names the journal: a deployment map of 2026-03-10 that lists it as a target venue; the archive holds no essay published there.",
+  "The class 'existence for AI' caught no sentence by string; #1527 entered by the hop from #1543, and its ABN distinction is read against Larsen's sentence by the class the census sources.",
+  "The string 'machine composition' in the archive names, almost everywhere, the composition layer of answer engines; only #1543 §1 states machine composition as a wing of literature, the sense the census's reading applies to the journal's thread.",
+  "#1722 (the existence tax) was read at its opening and its nonexistence mode and left out: it concerns answers that lower the standing of real work, a different class from a field's absence from Wikipedia."
+ ],
+ "counts": {
+  "D_candidates": 2,
+  "R_candidates": 1,
+  "O_candidates": 82,
+  "O_deposits": 52,
+  "H_candidates": 28,
+  "deposits_admitted": 8,
+  "deposit_claims": 14,
+  "TLL_claims": 42,
+  "CAP_claims": 12
+ },
+ "records": {
+  "TLL": 42,
+  "CAP": 12,
+  "note": "the archive's own records of the entity, ledgered beside the deposits: the layer census record (TLL-NN) and the Capture Registry's reading, findings and analysis (CAP-1-NN)"
+ },
+ "lineages_composer": {
+  "the journal as a venue for the archive's terms": [
+   "O543-01"
+  ],
+  "electronic literature, Wikipedia and AI": [
+   "O543-02",
+   "O543-03",
+   "O186-01",
+   "O1527-01",
+   "O1527-02"
+  ],
+  "criticism of machine writing in the archive's terms": [
+   "O186-02",
+   "O1543-01",
+   "O1543-02"
+  ],
+  "electronic literature in the archive's lineages": [
+   "O186-03",
+   "O400-01",
+   "O176-01",
+   "O1680-01"
+  ],
+  "licence and charges": [
+   "O32-01"
+  ]
+ }
+}

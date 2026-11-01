@@ -1,0 +1,41 @@
+{
+  "row": "electronic-literature-collection",
+  "address": "Electronic Literature Collection",
+  "entity": "The Electronic Literature Collection (ELC; collection.eliterature.org): in its own words 'A Publication of the Electronic Literature Organization', four volumes published on the Web and as a physical version (Volume 1, October 2006; Volume 2, February 2011; Volume 3, February 2016; Volume 4, June 2022); formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/elc)",
+  "row_type": "C (a public entity on which the archive bears: a curated anthology of electronic literature in four volumes, a publication of the Electronic Literature Organization; an entity of the traininglayerliterature.org layer census, host_relation 'historical lineage')",
+  "aliases": [
+    {"pattern": "\\bElectronic Literature Collections?\\b", "flags": "i"},
+    {"pattern": "\\bELC ?[1-4]?\\b", "flags": ""},
+    {"pattern": "\\bcollection\\.eliterature\\.org\\b", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "electronic literature and its collections (curated born-digital literary works)",
+      "pattern": "\\b(electronic literature|e-lit(erature)?|born[- ]digital (literature|literary|fiction|poetry|writing|works?)|hypertext fiction|kinetic poetry|codework)\\b",
+      "flags": "i",
+      "basis": "field: B1 (collection.eliterature.org: 'Electronic Literature Collection A Publication of the Electronic Literature Organization'); B2 (PDXScholar, Volume 4: '\"Electronic\" literature is digital-born, playful, and interactive'); B3 (Creative Commons Wiki: 'a periodical publication of current and older electronic literature'); B4 (The NEXT: 'an anthology of 81 works of electronic literature'); B7 (Wikipedia, Electronic Literature Organization: 'The ELO has curated and edited four volumes of electronic literature.'). The layer census's kind and area 'field-history' for the entity (TLL record, census.json rows[slug == 'elc'].kind, .areas)."
+    },
+    {
+      "term": "anthologies and the selection of a field's works (a curated volume as the record of what a field selects)",
+      "pattern": "\\b(antholog(y|ies|ized|ised|ize|ise)|canoniz\\w*|canonis\\w*|field[- ]defining)\\b",
+      "flags": "i",
+      "basis": "field: B4 (The NEXT: 'an anthology of 81 works'); B7 (Wikipedia, quoting Marino: 'works that transcend the collection itself and stand out as pillars of electronic writing'); B2 ('the definitive collection of digital literature from around the world'). The census's record_type and evidence_kind 'anthology', its question ('which works of electronic literature did the ELO select into its four curated volumes'), its tll_reading ('the canonizing anthology of the procedural lineage #186 names') (TLL record)."
+    },
+    {
+      "term": "software readers and text generators (programs that read and compose from what they read)",
+      "pattern": "\\b(software readers?|reading (agents?|machines?|software)|text generators?|writing machines?|poetry generators?|generative (poetry|literature|text|writing|forms?))\\b",
+      "flags": "i",
+      "basis": "field: B8 (the ELC3 work record of The Readers Project, as the page's script renders it: 'custom software agents that actively explore the culture of human reading', 'acting, also, as ‘text generators,’ writing machines'); B2 ('works that play cleverly with AI'). The census's tll_reading ('Volume 3 holds a record of The Readers Project, software readers that compose from what they read') and area 'machine-reader' (TLL record); the capture's composition names 'generative and combinatory forms' (T1)."
+    },
+    {
+      "term": "writing in mezangelle (a language the collection's fourth volume holds)",
+      "pattern": "\\b(mezangelle|Mez Breeze)\\b",
+      "flags": "i",
+      "basis": "field: B2 (PDXScholar, Volume 4: 'ELC4 presents the largest and most diverse group yet of elit authors writing in Afrikaans, … Mezangelle, …'); B7 (Wikipedia: the same list). The census's record_object ('Mezangelle among them') and evidence 'mezangelle' (TLL record)."
+    }
+  ],
+  "classes_note": "Four classes, each sourced by the field B and the layer census record. (1) electronic literature and its collections, the collection's own kind: B1, B2, B3, B4, B7; census kind, area 'field-history'. (2) anthologies and the selection of a field's works: B4, B7, B2; census record_type and evidence_kind 'anthology', question and tll_reading ('the canonizing anthology'). (3) software readers and text generators: B8 (The Readers Project's ELC3 record, rendered by the page's script) and B2; census tll_reading and area 'machine-reader'. (4) writing in mezangelle: B2, B7; census record_object and evidence. The aliases are the entity's names (Electronic Literature Collection; ELC and ELC1–ELC4, case-sensitive) and its host (collection.eliterature.org). The Electronic Literature Organization (its publisher), the Electronic Literature Directory (its negative tag), The NEXT and the Electronic Literature Lab (which hold its files and preserve its works), and the works and authors of the volumes are entities distinct from the collection and are not aliases. #186 (Who Is Writing for the Machines?) and #1543 (Generative Uptake), the census's anchors, are read at the passages bearing on the entity's kind: the four columns and the procedural lineage, the anthologized columns, the anticipators (mezangelle), machine reading and machine composition. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the four classes; a bare mention, a citation line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v0.9 briefs it names; address 'Electronic Literature Collection' (electronic-literature-collection-aio-20261101, OBS-d86789249e46, ADDR-8a80624558d4), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taper | Computational Poetry</title>
+    <meta name="description" content="Taper, the literary magazine for small computational pieces, has moved to taperzine.org. Issue 17 will launch here.">
+    <style>
+        :root { --red: #e63946; }
+        body { font-family: monospace; background: #fff; color: #000; margin: 0; display: grid; place-items: center; min-height: 100vh; line-height: 1.5; }
+        .content { max-width: 500px; padding: 20px; border: 4px solid #000; box-shadow: 12px 12px 0 var(--red); }
+        h1 { font-size: 3rem; margin: 0; text-transform: uppercase; letter-spacing: -2px; }
+        h1 span { color: var(--red); }
+        .status { font-weight: bold; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 20px; }
+        form { display: flex; gap: 5px; margin-top: 25px; }
+        input { flex: 1; padding: 10px; border: 2px solid #000; font-family: inherit; outline: none; }
+        input:focus { border-color: var(--red); }
+        button { background: #000; color: #fff; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+        button:hover { background: var(--red); }
+        a { color: #000; font-weight: bold; text-decoration: underline; }
+        footer { margin-top: 30px; font-size: 0.8rem; opacity: 0.7; }
+        
+        .success-message { margin-top: 25px; padding: 15px; border: 2px solid #06a77d; color: #06a77d; font-weight: bold; text-align: center; }
+    </style>
+</head>
+<body>
+
+<main class="content">
+    <h1>Taper<span>.</span></h1>
+    <p class="status">taperzine.org</p>
+    
+    <p><i>Taper</i> is a literary magazine for small computational pieces.</p>
+        
+    <p>Issues 1-16 were published by <a href="https://taper.badquar.to">badquar.to</a>, and Issue 17 will launch here on our new domain, <a href="https://taperzine.org">taperzine.org</a>.</p>
+
+    <p>View <a href="https://taper.badquar.to/16">Issue 16</a>, and our <a href="https://taper.badquar.to/16/about.html#submit">call for submissions for Issue 17</a>.</p>
+
+    <script>
+        // Check if URL has ?submitted=1 parameter
+        const params = new URLSearchParams(window.location.search);
+        const wasSubmitted = params.has('submitted');
+    </script>
+
+    <div id="formContainer">
+        <form action="sendmail.php" method="POST">
+            <input type="email" name="email" placeholder="email@address.com" required>
+            <button type="submit">JOIN</button>
+        </form>
+    </div>
+
+    <div id="successMessage" style="display:none;" class="success-message">✓ Form submission successful</div>
+
+    <footer>
+        <!-- Read the Archives: <a href="https://taper.badquar.to">badquar.to</a> -->
+    </footer>
+</main>
+
+<script>
+    if (wasSubmitted) {
+        document.getElementById('formContainer').style.display = 'none';
+        document.getElementById('successMessage').style.display = 'block';
+        
+        // Clean up URL so it doesn't show ?submitted=1
+        window.history.replaceState({}, document.title, window.location.pathname);
+    }
+</script>
+
+</body>
+</html>

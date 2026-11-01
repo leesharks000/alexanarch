@@ -1,0 +1,1145 @@
+{
+ "row": "nanogenmo",
+ "address": "NaNoGenMo",
+ "addresses": [
+  "NaNoGenMo"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or, for an unreachable card, its snippet; 45/45 verified by script",
+ "B_note": "The field B (v0.10 §0.3, §3.1(a)) in two pools, marked by origin and pool. B_D, the disclosed pool: the six cards of T's rail (B1 the event's own page, byte-identical to the census own page nanogenmo--home and carried once, in B_D; B2 a Reddit page, unreachable, its snippet its only text; B3 the GitHub organisation, the census own page nanogenmo--org, refused (HTTP 403 by this session's proxy), its snippet its only text; B4 Liza Daly's essay of December 2017; B5 CenterConsulting's AI Library story; B6 a YouTube video card with no title or snippet, unidentifiable, no claim); T's body names no source beyond its cards (its two inline links are cards 1 and 3). B_R, the reference pool: the record of Wikipedia's absence (B7: no article under 'NaNoGenMo' or 'National Novel Generation Month'). The census read no third-party source for the entity, and its two own pages are cards. 'Available and not composed' is computed against B_D only.",
+ "lineage_note": "Lineages: what it is (B1 F2 earliest; B3 F21, B5 F39, F44 restate); origin and inspiration (B1 F1, F3; B4 F24; B5 F38, F39); the rule (B1 F4; B4 F25 as two rules; B5 F40); what counts as a novel and what it is made from (B1 F8, F9, F15, F16, F19; B4 F29–F35; B5 F41); copyright, licence and credit (B1 F5, F10); organisation, participation and readback (B1 F6, F7, F12–F14); period, editions and dates (B1 F11, F17); sister events (B1 F18); readings of the event (B2 F20; B4 F26–F28, F37; B5 F42, F43); scale (B3 F22; B4 F23, F36); the record of absence (B7 F45). The census fields that restate an own page carry 'restates' and are one lineage with that page.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1-census and B3-census the census's copies, gunzipped, byte-identical to the fetches; B7 the 404 page for NaNoGenMo, B7b for National Novel Generation Month, B7-census the census's 404 copy; W-search-429.txt the rate-limited second search call; T1-nanogenmo-aio-20261101.txt the registry's transcript string; fetch.log the fetches); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "own_page",
+   "card": "NaNoGenMo — NaNoGenMo",
+   "url": "https://nanogenmo.github.io/",
+   "kind": "Overview card 1: the event's own page (nanogenmo.github.io); byte-identical to the census own page nanogenmo--home, carried once, in B_D",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B1.html",
+     "sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B1.txt",
+     "sha256": "760dd5da4ed38aa0453aece33307c82059f83647f4beea0ef3a15df2aff295d8"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B1-census.html",
+     "sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B1-census.txt",
+     "sha256": "3cf3788cab10577ec751541c11c3114ed505c864a32ffaaba875bfbff52ee852"
+    }
+   },
+   "surfaced_by_T": [
+    {
+     "slug": "nanogenmo-aio-20261101",
+     "card": 1
+    }
+   ],
+   "card_title": "NaNoGenMo",
+   "card_snippet": "Goal: Write code during November (Nov 1st 12:01am GMT to Dec 1st 12:01am GMT) to generate a 50,000+ word novel (defined flexibly, respecting copyright). Rules: ...",
+   "card_note": "the snippet ('Goal: … (defined flexibly, respecting copyright). Rules: ...') is not on the page; it is generated card text, and no claim is extracted from it",
+   "url_found": "the card's site and title are the event's home page, the census's own page",
+   "fetched": {
+    "at": "2026-11-01T15:13:24Z",
+    "http": 200,
+    "url": "https://nanogenmo.github.io/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B1.html",
+    "raw_sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d",
+    "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B1.txt"
+    ]
+   },
+   "census_copy": {
+    "census": "TLL (traininglayerliterature.org layer census)",
+    "src": "nanogenmo--home",
+    "url": "https://nanogenmo.github.io/",
+    "final_url": "https://nanogenmo.github.io/",
+    "sha256": "d831aaf0d1a4efc071e736fd5141bb915d562688d8ce83904c76587ba5d1d11d",
+    "http": "200",
+    "fetched": "2026-11-01T04:07:58Z",
+    "read": "2026-11-01",
+    "agrees": true,
+    "note": "byte-identical (same sha256)"
+   },
+   "names_operator": "yes (@dariusk and @hugovk; Darius Kazemi)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19"
+   ]
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "Reddit·r/proceduralgeneration — What are your thoughts on NaNoGenMo (National Novel Generation Month)?",
+   "url": null,
+   "kind": "Overview card 2: a Reddit page in r/proceduralgeneration (the snippet's form, a headed answer, suggests a generated Reddit answer page)",
+   "files": {},
+   "surfaced_by_T": [
+    {
+     "slug": "nanogenmo-aio-20261101",
+     "card": 2
+    }
+   ],
+   "card_title": "What are your thoughts on NaNoGenMo (National Novel Generation Month)?",
+   "card_snippet": "June 30, 2022 — NaNoGenMo Word Count: The 50,000-word requirement in NaNoGenMo is not a strict literary goal; it frees participants to achieve the count through various unconve...",
+   "card_note": null,
+   "url_found": "not found: four WebSearch queries by title and subreddit returned no Reddit URL (one restricted to reddit.com was refused by the search proxy, HTTP 400)",
+   "fetched": {
+    "result": "unreachable: no URL found; not fetched; the card's snippet stands as its only text (§3.1(a))"
+   },
+   "unreachable": "no URL found by title and site; snippet only",
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": [
+    "F20"
+   ]
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "own_page",
+   "card": "GitHub — NaNoGenMo - National Novel Generation Month - GitHub",
+   "url": "https://github.com/NaNoGenMo",
+   "kind": "Overview card 3: the event's GitHub organisation page; the census's own page nanogenmo--org (one page, carried once, in B_D)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B3.html",
+     "sha256": "7616419b9bf270d69874e3b82e043e4cb72f84772d301076751aa65fa9132be6"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B3.txt",
+     "sha256": "7616419b9bf270d69874e3b82e043e4cb72f84772d301076751aa65fa9132be6"
+    },
+    "B3-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B3-census.html",
+     "sha256": "7616419b9bf270d69874e3b82e043e4cb72f84772d301076751aa65fa9132be6"
+    }
+   },
+   "surfaced_by_T": [
+    {
+     "slug": "nanogenmo-aio-20261101",
+     "card": 3
+    }
+   ],
+   "card_title": "NaNoGenMo - National Novel Generation Month - GitHub",
+   "card_snippet": "Oct 9, 2025 — National Novel Generation Month. Spend the month of November writing code that generates a novel of 50k+ words. 61 followers · https://nanogenmo.github.io ...",
+   "card_note": null,
+   "url_found": "the card's title and snippet ('https://nanogenmo.github.io') are the organisation page; the census's own page nanogenmo--org",
+   "fetched": {
+    "at": "2026-11-01T15:13:24Z",
+    "http": 403,
+    "url": "https://github.com/NaNoGenMo",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B3.html",
+    "raw_sha256": "7616419b9bf270d69874e3b82e043e4cb72f84772d301076751aa65fa9132be6",
+    "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+    "result": "unreachable: HTTP 403 with a JSON body from this session's outbound proxy ('This GitHub API path is not available: sessions are bound to their configured repositories …'); one attempt, no retry by another agent string or route; the card's snippet stands as its only text"
+   },
+   "census_copy": {
+    "census": "TLL (traininglayerliterature.org layer census)",
+    "src": "nanogenmo--org",
+    "url": "https://github.com/NaNoGenMo",
+    "final_url": "https://github.com/NaNoGenMo",
+    "sha256": "7616419b9bf270d69874e3b82e043e4cb72f84772d301076751aa65fa9132be6",
+    "http": "403",
+    "fetched": "2026-11-01T04:07:58Z",
+    "read": "2026-11-01",
+    "agrees": true,
+    "note": "byte-identical refusal body (same sha256)"
+   },
+   "unreachable": "HTTP 403 (the session proxy's refusal of GitHub paths outside configured repositories); snippet only",
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": [
+    "F21",
+    "F22"
+   ]
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "Liza Daly — Why I love National Novel Generation Month - Liza Daly",
+   "url": "https://lizadaly.com/essays/why-i-love-national-novel-generation-month/",
+   "kind": "Overview card 4: Liza Daly's essay, dated December 2017, with her favourites of the 2017 edition",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B4.html",
+     "sha256": "0324e24108b230441455d8bb2d1caa2cf3867dd70d5d37c40907c4d808e24fc4"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B4.txt",
+     "sha256": "308008b7c1f840c044e2283274a5b379a5cea18e9e9d0c3dec76725ad4f7dc83"
+    }
+   },
+   "surfaced_by_T": [
+    {
+     "slug": "nanogenmo-aio-20261101",
+     "card": 4
+    }
+   ],
+   "card_title": "Why I love National Novel Generation Month - Liza Daly",
+   "card_snippet": "NaNoGenMo 2017: Annual programming event where participants write code to generate 50,000-word novels and publish source code. Selected Entries: B-9 Indifferenc...",
+   "card_note": "the snippet ('NaNoGenMo 2017: Annual programming event … Selected Entries: B-9 Indifferenc...') is not on the page in that form; generated card text, no claim extracted from it",
+   "url_found": "by title and site (WebSearch)",
+   "fetched": {
+    "at": "2026-11-01T15:13:25Z",
+    "http": 200,
+    "url": "https://lizadaly.com/essays/why-i-love-national-novel-generation-month/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B4.html",
+    "raw_sha256": "0324e24108b230441455d8bb2d1caa2cf3867dd70d5d37c40907c4d808e24fc4",
+    "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B4.txt"
+    ]
+   },
+   "names_operator": "yes (hugovk, 'project organizer'; Hugo)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": [
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37"
+   ]
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "www.centerconsulting.com — NaNoGenMo: a yearly contest to write code that writes a novel",
+   "url": "https://www.centerconsulting.com/ai-library/stories/nanogenmo",
+   "kind": "Overview card 5: a story page in CenterConsulting's AI Library, dated 'November 2013', 'Last verified June 7, 2026', its primary source nanogenmo.github.io",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B5.html",
+     "sha256": "2e56a9b2d669956d3db8b5401669b626063e041469c825fc02c1d3ac4dcb2c7c"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B5.txt",
+     "sha256": "39b2823fb49d3a00ea2361a88a37de472b5e4a0d3a4060a09ce27b1132954d15"
+    }
+   },
+   "surfaced_by_T": [
+    {
+     "slug": "nanogenmo-aio-20261101",
+     "card": 5
+    }
+   ],
+   "card_title": "NaNoGenMo: a yearly contest to write code that writes a novel",
+   "card_snippet": "Jun 6, 2026 — A spoof of National Novel Writing Month, it challenges participants to spend November writing computer code that generates a novel rather than writing one by ..",
+   "card_note": null,
+   "url_found": "by site and title: a WebSearch restricted to centerconsulting.com returned its AI Library; the page linked from its Sunspring story (/ai-library/stories/nanogenmo) carries the card's title",
+   "fetched": {
+    "at": "2026-11-01T15:13:25Z",
+    "http": 200,
+    "url": "https://www.centerconsulting.com/ai-library/stories/nanogenmo",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B5.html",
+    "raw_sha256": "2e56a9b2d669956d3db8b5401669b626063e041469c825fc02c1d3ac4dcb2c7c",
+    "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B5.txt"
+    ]
+   },
+   "names_operator": "yes (Darius Kazemi)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": [
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44"
+   ]
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "YouTube·Life As I Write — YouTube (video, 15:17)",
+   "url": null,
+   "kind": "Overview card 6: a video card with no title beyond 'YouTube' and no snippet; the paste ends on it",
+   "files": {},
+   "surfaced_by_T": [
+    {
+     "slug": "nanogenmo-aio-20261101",
+     "card": 6
+    }
+   ],
+   "card_title": "YouTube",
+   "card_snippet": null,
+   "card_note": "video card, 15:17; the paste ends on this card, with no title beyond 'YouTube' and no closing line",
+   "url_found": "not found: the channel (https://www.youtube.com/@LifeAsIWrite) was found by WebSearch; the video (15:17) cannot be identified from the card",
+   "fetched": {
+    "result": "unreachable: the video is not identifiable; no transcript; title 'YouTube' and no snippet, so the card carries no claim"
+   },
+   "unreachable": "video not identifiable; no text",
+   "title_only": true,
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": []
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "card": "Wikipedia — no article (NaNoGenMo; National Novel Generation Month)",
+   "url": "https://en.wikipedia.org/wiki/NaNoGenMo",
+   "kind": "the record of absence: Wikipedia has no article 'NaNoGenMo' or 'National Novel Generation Month' (raw wikitext and rendered page HTTP 404 for both; no redirect); not surfaced by T",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7.html",
+     "sha256": "f51fd06b43f0fc03a45bc3eaba66a2b8d6ac847633a403ef4f3a7ef8b930b9ab"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7.txt",
+     "sha256": "6b502e89c1cdf8e7846dbdd1b788d8bd0969ff796dbdb6fb9bc63247ccd095af"
+    },
+    "B7b.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7b.html",
+     "sha256": "1cbe3933d1dd2f96896c653f5cd3e27eea6a3235e43b3dc7e18a02762cf52d3a"
+    },
+    "B7b.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7b.txt",
+     "sha256": "4f0bc7f7680124900288118955db070923043e53c2cbdc618c754919bc817ce8"
+    },
+    "B7-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7-census.html",
+     "sha256": "8f3d2aa6b2701f6d074a2cb9ecb279f5c16a85ad53083acf4175545cf33ebdbf"
+    },
+    "B7-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7-census.txt",
+     "sha256": "75449589cedbefe84a73a41c83195b5e9a7cfe10af30179ecc5114f780ff5e3d"
+    },
+    "W-search-429.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/W-search-429.txt",
+     "sha256": "4065eab0408361e2cb665a8ad049608efde2d54870d7fbe64b275eac939b80f9"
+    }
+   },
+   "surfaced_by_T": [],
+   "note_pool": "B_R, the reference pool (§3.1(a)): admitted on the operator's ruling of 2026-10-29; not surfaced by T, so it cannot show what the composition had",
+   "fetched": {
+    "at": "2026-11-01T15:12:08Z",
+    "http": 404,
+    "url": "https://en.wikipedia.org/wiki/NaNoGenMo",
+    "raw": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7.html",
+    "raw_sha256": "f51fd06b43f0fc03a45bc3eaba66a2b8d6ac847633a403ef4f3a7ef8b930b9ab",
+    "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7.txt"
+    ],
+    "wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=NaNoGenMo&action=raw",
+     "http": 404
+    },
+    "also": [
+     {
+      "url": "https://en.wikipedia.org/wiki/National_Novel_Generation_Month",
+      "http": 404,
+      "file": "datasets/negative-of-the-negative/v2/intake/nanogenmo-20261101/B7b.html"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=National_Novel_Generation_Month&action=raw",
+      "http": 404
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Nanogenmo&action=raw",
+      "http": 404
+     },
+     {
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=NaNoGenMo",
+      "http": 200,
+      "note": "the first search call returned hits headed by the article Nick Montfort (snippet: 'NaNoGenMo). These include three self-published books … written during the first NaNoGenMo'); a second call (to save the list) returned HTTP 429 and was not retried; no mentioning article is ledgered"
+     }
+    ]
+   },
+   "census_copy": {
+    "census": "TLL (traininglayerliterature.org layer census)",
+    "src": "nanogenmo--wikipedia",
+    "url": "https://en.wikipedia.org/wiki/National_Novel_Generation_Month",
+    "final_url": "https://en.wikipedia.org/wiki/National_Novel_Generation_Month",
+    "sha256": "8f3d2aa6b2701f6d074a2cb9ecb279f5c16a85ad53083acf4175545cf33ebdbf",
+    "http": "404",
+    "fetched": "2026-11-01T04:07:59Z",
+    "read": "2026-11-01",
+    "agrees": true,
+    "note": "the same 404 'no article' page for National Novel Generation Month"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks, machinemediation, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "claims": [
+    "F45"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "header",
+   "quote": "National Novel Generation Month - based on an idea Darius Kazemi tweeted on a whim.",
+   "claim": "the event names itself and its origin: an idea Darius Kazemi tweeted on a whim",
+   "modality": "self-description",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and inspiration",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Goal",
+   "quote": "Spend the month of November writing code that generates a novel of 50k+ words.",
+   "claim": "the goal: write code in November that generates a novel of 50k+ words",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Goal",
+   "quote": "This is in the spirit of National Novel Writing Month's interesting definition of a novel as 50,000 words of fiction.",
+   "claim": "the event takes National Novel Writing Month's definition of a novel as 50,000 words of fiction",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and inspiration",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "The only rule is that you share at least one novel and also your source code at the end.",
+   "claim": "the only rule: share at least one novel and the source code at the end",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the rule: a novel and its code shared",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "The source code does not have to be licensed in a particular way, so long as you share it.",
+   "claim": "no licence is required of the code, only that it be shared",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "copyright, licence and credit",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "The code itself does not need to be on GitHub, either. We're just using this repo as a place to organize the community.",
+   "claim": "the code need not be on GitHub; the repository organizes the community",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "organisation, participation and readback",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "(Convenient because many programmers have GitHub accounts and the Issues section works like a forum with excellent syntax highlighting.)",
+   "claim": "GitHub's Issues serve as the forum",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "organisation, participation and readback",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "The \"novel\" is defined however you want. It could be 50,000 repetitions of the word \"meow\".",
+   "claim": "the novel is defined however the participant wants, e.g. 50,000 repetitions of 'meow'",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "It could literally grab a random novel from Project Gutenberg. It doesn't matter, as long as it's 50k+ words.",
+   "claim": "a novel may be taken whole from Project Gutenberg; only the 50k+ count matters",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "Please try to respect copyright. We're not going to police it, as ultimately it's on your head if you want to just copy/paste a Stephen King novel or whatever, but the most useful/interesting implementations are going to be ones that don't engender lawsuits.",
+   "claim": "copyright: a request, not policed; the responsibility is the participant's",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "copyright, licence and credit",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Rules",
+   "quote": "This activity starts at 12:01am GMT on Nov 1st and ends at 12:01am GMT Dec 1st.",
+   "claim": "the period: 12:01am GMT 1 November to 12:01am GMT 1 December",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "period, editions and dates",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "How to Participate",
+   "quote": "Open an issue on the edition's repo and declare your intent to participate. … You may continually update the issue as you work over the course of the month. Feel free to post dev diaries, sample output, etc. … Also feel free to comment on other participants' issues.",
+   "claim": "participation: an issue on the edition's repository, updated through the month with dev diaries and sample output; comments on others' issues",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "organisation, participation and readback",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "How to Participate",
+   "quote": "If you already have some inkling of the kind of project you'll be doing, please title your issue accordingly.",
+   "claim": "issues are titled by the kind of project",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "organisation, participation and readback",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Admins",
+   "quote": "Official admins for NaNoGenMo are @dariusk and @hugovk. We'll be doing our best to keep the issues section well organized and tagged.",
+   "claim": "the official admins are @dariusk and @hugovk, who keep the issues organized and tagged",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "organisation, participation and readback",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Resources",
+   "quote": "There's an open issue for each edition where you can add resources (libraries, corpuses, APIs, techniques, etc).",
+   "claim": "each edition has an open resources issue (libraries, corpuses, APIs, techniques)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Resources",
+   "quote": "You might want to check out corpora, a repository of public domain lists of things: animals, foods, names, occupations, countries, etc.",
+   "claim": "the page points to corpora, a repository of public-domain lists",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Editions",
+   "quote": "Editions 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013",
+   "claim": "editions listed from 2013 to 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "period, editions and dates",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "See Also",
+   "quote": "NaPoGenMo: National Poetry Generation Month … NaOpGenMo: National Opera Generation Month … NaMoGenMo: National Movie Generation Month",
+   "claim": "sister events: poetry, opera and movie generation months",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "sister events",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Resources",
+   "quote": "There are already a ton of resources on the resources threads for old editions:",
+   "claim": "the resources threads of old editions hold many resources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "undated (the page as fetched 2026-11-01; its editions run to 2025)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (unreachable)",
+   "quote": "NaNoGenMo Word Count: The 50,000-word requirement in NaNoGenMo is not a strict literary goal; it frees participants to achieve the count through various unconve...",
+   "claim": "the 50,000-word requirement is not a strict literary goal; it frees participants to reach the count by unconventional means (truncated)",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "June 30, 2022 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet (the source unreachable), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (unreachable)",
+   "quote": "National Novel Generation Month. Spend the month of November writing code that generates a novel of 50k+ words.",
+   "claim": "the organisation's description restates the goal",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "Oct 9, 2025 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet (the source unreachable), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (unreachable)",
+   "quote": "61 followers · https://nanogenmo.github.io",
+   "claim": "the GitHub organisation has 61 followers and links the event's page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale",
+   "date": "Oct 9, 2025 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet (the source unreachable), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Every November, a hundred or so people write computer programs that attempt to generate \"novels.\"",
+   "claim": "every November about a hundred people write programs that attempt to generate novels",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "scale",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "NaNoGenMo is a tongue-in-cheek competition that, like its inspiration, National Novel Writing Month, has no prizes or rankings.",
+   "claim": "a tongue-in-cheek competition with no prizes or rankings, like NaNoWriMo",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and inspiration",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "There are only two rules: your program must output at least 50,000 words, and you must publish its source code.",
+   "claim": "two rules: at least 50,000 words of output, and the source code published",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rule: a novel and its code shared",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "NaNoGenMo inspires news stories in the vein of, \"Can AIs Replace Authors?\" and while I appreciate the attention those pieces give to individual entries, they tend to miss the spirit of the whole endeavor.",
+   "claim": "news stories frame it as AI replacing authors and miss its spirit",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "These are tributes to human creativity, not attempts to subvert or replace it. The stories are often deliberately bad or unreadable.",
+   "claim": "the entries are tributes to human creativity; the stories are often deliberately bad or unreadable",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "They are a chance to publicly write lousy throwaway code in a field that can be judgmental about what constitutes \"real programming.\"",
+   "claim": "a chance to write throwaway code in public",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "B-9 Indifference",
+   "quote": "Eoin Noble's second NaNoGenMo work (after Captain's Log) makes smart use of Markov chains, a good corpus, and pitch-perfect visual design to make a genuinely entertaining read",
+   "claim": "an entry, named with its author, built from Markov chains over a corpus",
+   "modality": "interpretation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "First Lines",
+   "quote": "Janelle Shane couldn't find enough first sentences for her entry, so she crowd-sourced them. … The project also serves as a warning about the dangers of unsanitized input data",
+   "claim": "a neural-network entry trained on crowd-sourced first sentences; a warning about unsanitized input data",
+   "modality": "interpretation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Hard West Turn",
+   "quote": "It mixes factual information scraped from Wikipedia entries on mass shootings in the United States with handwritten narrative.",
+   "claim": "Nick Montfort's entry mixes text scraped from Wikipedia with handwritten narrative",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HUMAN.DOC",
+   "quote": "An homage to Tom Phillips' A Humument (1973) using the same source material.",
+   "claim": "an entry made from the source material of A Humument",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Pride, Prejudice",
+   "quote": "Picking an entry by project organizer hugovk is almost like cheating … Hugo applies a series of transformations to apply contractions everywhere, remove redundant phrases, and delete honorifics, then summarizes the remaining sentences.",
+   "claim": "the project organizer hugovk's entry transforms Pride and Prejudice down to its length",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Tillman, Victor Lima, KOD",
+   "quote": "Many NaNoGenMo projects rely on substituting words based on their semantic relationships to each other",
+   "claim": "many projects substitute words by their semantic relationships",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Tillman, Victor Lima, KOD",
+   "quote": "Kevan Davis goes a different direction and presents three books replaced with sentences based on their edit distance from each other — stripping meaning entirely. The reason it works so well is that he chose interesting corpora.",
+   "claim": "books replaced sentence by sentence from other corpora by edit distance",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "closing",
+   "quote": "These were just my favorites; you can find more than 100 other projects, both complete and sketches of ideas, from 2017 and hundreds more from other years at the main NaNoGenMo repository.",
+   "claim": "more than 100 other projects in 2017 and hundreds more in other years at the repository",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "scale",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Program Which Generates This Book",
+   "quote": "Self-describing books are practically a sub-genre of NaNoGenMo",
+   "claim": "self-describing books are a sub-genre of the event",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "December 2017 (the essay's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "National Novel Generation Month, or NaNoGenMo, started in 2013 from an off-hand idea by the internet artist and programmer Darius Kazemi.",
+   "claim": "started in 2013 from an off-hand idea by Darius Kazemi",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and inspiration",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "A spoof of National Novel Writing Month, it challenges participants to spend November writing computer code that generates a novel rather than writing one by hand.",
+   "claim": "a spoof of NaNoWriMo in which participants write code that generates a novel",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and inspiration",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "The community runs in the open on GitHub, where people post both their generated novels and the source code that produced them.",
+   "claim": "the community runs on GitHub, posting novels and the code that produced them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rule: a novel and its code shared",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "rules",
+   "quote": "Early entries used Markov chains, scraped text, and procedural tricks; in later years participants increasingly reached for neural language models, making the contest an informal timeline of how machine text generation evolved.",
+   "claim": "early entries used Markov chains, scraped text and procedural tricks; later, neural language models; an informal timeline of machine text generation",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "what counts as a novel and what it is made from",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "rules",
+   "quote": "The spirit is exploratory and often comic rather than commercial - the point is the experiment, not a publishable book.",
+   "claim": "the spirit is exploratory and often comic; the experiment is the point",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Why business readers should care",
+   "quote": "NaNoGenMo is a reminder that “computers writing prose” was a hobbyist curiosity for years before large language models made it a business question, and the contest’s open, code-sharing ethos stands in sharp contrast to today’s closed, monetized text generators.",
+   "claim": "a hobbyist precursor of the LLM business question; its open code-sharing set against closed, monetized generators",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "readings of the event",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Sources",
+   "quote": "PRIMARY https://nanogenmo.github.io/",
+   "claim": "the story's primary source is the event's own page",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "the story dated November 2013; 'Last verified June 7, 2026' (the card's date Jun 6, 2026)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "the 404 page (NaNoGenMo; the same for National Novel Generation Month)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article under either name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the record of absence",
+   "date": "2026-11-01 (the 404 page as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "NaNoGenMo — NaNoGenMo",
+  "B2": "Reddit·r/proceduralgeneration — What are your thoughts on NaNoGenMo (National Novel Generation Month)?",
+  "B3": "GitHub — NaNoGenMo - National Novel Generation Month - GitHub",
+  "B4": "Liza Daly — Why I love National Novel Generation Month - Liza Daly",
+  "B5": "www.centerconsulting.com — NaNoGenMo: a yearly contest to write code that writes a novel",
+  "B6": "YouTube·Life As I Write — YouTube (video, 15:17)",
+  "B7": "Wikipedia — no article (NaNoGenMo; National Novel Generation Month)"
+ }
+}

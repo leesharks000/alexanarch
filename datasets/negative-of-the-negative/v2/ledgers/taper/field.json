@@ -1,0 +1,1180 @@
+{
+ "row": "taper",
+ "address": "Taper magazine",
+ "addresses": [
+  "Taper magazine"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw HTML where the locus is a meta tag, the Wikipedia wikitext, or the card's title and snippet for an unreachable card",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 taper.badquar.to, the index page, cards 1 and 6 and the census's own page; B2 Helen Shewolfe Tseng's page; B3 the Instagram account, unreachable; B4 Angela Chang's page; B5 the Facebook page, unreachable); 'body_named', the source T's body links (B6 taperzine.org). B_R, the reference pool: 'own_page', the About page of Taper #16 (B7); 'wikipedia', the record of no article and the 'Taper' disambiguation page (B8). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/taper-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1 the census's saved copy; B8.wiki the raw wikitext; T1-… the registry's transcript string; tries/ the 404 and 429 responses, the resolved redirects)",
+ "counts": {
+  "sources": 8,
+  "B_D": 6,
+  "B_R": 2,
+  "fetched": 6,
+  "unreachable": 2,
+  "claims": 41,
+  "claims_B_D": 25,
+  "claims_B_R": 16,
+  "quotes_ok": 41
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "taper.badquar.to — Taper (cards 1 and 6)",
+   "fetched": "card; the census's saved copy B1.html sha256 453401c16fcc2… HTTP 200 at 2026-11-01T04:07:58Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "Helen Shewolfe Tseng — Taper - Helen Shewolfe Tseng",
+   "fetched": "card; B2.html sha256 2e8c45a89421df32, HTTP 200 at 2026-11-01T15:13:09Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Instagram·taperzine — Taper (@taperzine) • Instagram photos and videos",
+   "fetched": "unreachable: https://www.instagram.com/taperzine/ redirected to a login page at 2026-11-01T15:13:10Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "www.anjchang.com — Taper Digital Zine – Sensorial Storytelling @ anjchang",
+   "fetched": "card; B4.html sha256 7dbb5201068705f1, HTTP 200 at 2026-11-01T15:13:09Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Facebook·Taper Zine — Taper Zine (@taperzine) - Facebook",
+   "fetched": "unreachable: https://www.facebook.com/taperzine/ redirected to a login page at 2026-11-01T15:13:11Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "taperzine.org — Taper | Computational Poetry (named in T's body)",
+   "fetched": "body-named; B6.html sha256 e1fb996472689398, HTTP 200 at 2026-11-01T15:15:49Z",
+   "origin": "body_named",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "taper.badquar.to — About Taper #16 (own page)",
+   "fetched": "own page; B7.html sha256 e17f28fb6bff1c94, HTTP 200 at 2026-11-01T15:16:03Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B8",
+   "card": "Wikipedia — Taper (disambiguation; no article on the magazine)",
+   "fetched": "wikipedia; no article (Taper_(magazine), Taper_magazine, Taper_(journal) raw HTTP 404); B8.html sha256 3de32056f5ba8ca1 and wikitext HTTP 200 at 2026-11-01T15:14Z",
+   "origin": "wikipedia",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5"
+  ],
+  "body_named": [
+   "B6"
+  ],
+  "own_pages": [
+   "B7"
+  ],
+  "own_pages_note": "the census's one own page (taper--home, https://taper.badquar.to/) is cards 1 and 6: one page, carried once, as a card, in B_D (B1). taperzine.org, the magazine's new site, is named in T's body by link and carried in B_D (B6). The About page of Taper #16 (B7), the call for work the index and the new site link, was fetched by this row and stands in B_R.",
+  "wikipedia": [
+   "B8"
+  ],
+  "census_third_party": [],
+  "unreachable": [
+   "B3",
+   "B5"
+  ],
+  "title_only": [
+   "B3",
+   "B5"
+  ],
+  "wikipedia_state": "no article: raw wikitext HTTP 404 for Taper_(magazine), Taper_magazine and Taper_(journal) (2026-11-01T15:13Z); 'Taper' (raw HTTP 200 after one 429, rendered HTTP 200) is a disambiguation page, last edited 25 January 2025, listing the word's senses and no magazine; the rendered Taper_(magazine) request and full-text searches were rate limited (HTTP 429), so mentions in other articles were not checked",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+   ],
+   "B_R": [
+    "B7",
+    "B8"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (B1–B5; card 6 is B1 again) and the source T's body names by link (B6, taperzine.org); B_R, the reference pool: the own page B7 and Wikipedia's record B8. T against L_F(B_D) uses B1–B6 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview cards 1 and 6 (the index page carded twice) and the census's own page taper--home: one page, carried once, in B_D",
+    "card": "taper.badquar.to — Taper",
+    "url": "https://taper.badquar.to/",
+    "kind": "Overview card (the magazine's index page); the census's own page taper--home",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B1.html",
+      "sha256": "453401c16fcc23d15b5ddfff4411ff62150a6c54de655499a89b2581c153c606"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B1.txt",
+      "sha256": "96c37cea0ba2217d66430e8ae01896426c741817b0e9732d9d6ecf285311eff9"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:58Z",
+     "http": 200,
+     "url": "https://taper.badquar.to/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B1.html",
+     "raw_sha256": "453401c16fcc23d15b5ddfff4411ff62150a6c54de655499a89b2581c153c606",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B1.txt"
+     ],
+     "census_copy": {
+      "src": "taper--home",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:58Z",
+      "sha256": "453401c16fcc23d15b5ddfff4411ff62150a6c54de655499a89b2581c153c606",
+      "agrees": true,
+      "note": "copied from the census's saved copy (gunzipped; sha256 matching the manifest); B1.txt is the census's text. Not refetched: the census's copy is the page as read that night."
+     }
+    },
+    "names_operator": "yes ('published by Bad Quarto')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "The card's URL resolves from T's first citation marker (Google redirect, followed once at 2026-11-01T15:15Z) to https://taper.badquar.to/, the census's own page. The page's og:description (F2) is read from the raw HTML, which the census's text omits.",
+    "surfaced_by_T": [
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "card": 1
+     },
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "Taper",
+    "card_snippet": "Taper. an online literary magazine for small computational pieces, published by Bad Quarto · Taper #1 : a minimal labyrinth, Spring 2018. Taper #2 : poems ..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 2",
+    "card": "Helen Shewolfe Tseng — Taper - Helen Shewolfe Tseng",
+    "url": "http://helentseng.com/taper/",
+    "kind": "Overview card (a contributor's and editor's page listing her Taper pieces by issue, with statements)",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B2.html",
+      "sha256": "2e8c45a89421df32fecf1d981dccfae0c51a057238479991078f225e23d83abb"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B2.txt",
+      "sha256": "a5e3ac29fb4a91dcb59e47918a93eb1bd1d2ce2636550837b22583ecb5225943"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:09Z",
+     "http": 200,
+     "url": "http://helentseng.com/taper/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B2.html",
+     "raw_sha256": "2e8c45a89421df32fecf1d981dccfae0c51a057238479991078f225e23d83abb",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B2.txt"
+     ]
+    },
+    "names_operator": "yes ('published by Bad Quarto')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL found by WebSearch on the card's title and site (page title 'Taper — Helen Shewolfe Tseng'), and confirmed by T's constraint marker, which resolves to it.",
+    "searches": [
+     "WebSearch '\"Taper - Helen Shewolfe Tseng\"'",
+     "WebSearch (extended) '\"Helen Shewolfe Tseng\" Taper Bad Quarto'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "Taper - Helen Shewolfe Tseng",
+    "card_snippet": "Taper is an online literary magazine for tiny computational poems (under 2 kilobytes), published by Bad Quarto. I have been a contributor since Spring 2022 ..."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3",
+    "card": "Instagram·taperzine — Taper (@taperzine) • Instagram photos and videos",
+    "url": "https://www.instagram.com/taperzine/",
+    "kind": "Overview card (the magazine's Instagram account)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B3.html",
+      "sha256": "ecf0e0a2fa12ff9b7e2d7b87d9993b38f686d52eb13912dd756d7539dc8c7a62"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B3.txt",
+      "sha256": "9c4108fd6f07fefc3b7ae28a76e77bac35db302ff6cbbc928071ac99efc35a91"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:10Z",
+     "http": 200,
+     "url": "https://www.instagram.com/taperzine/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B3.html",
+     "raw_sha256": "ecf0e0a2fa12ff9b7e2d7b87d9993b38f686d52eb13912dd756d7539dc8c7a62",
+     "result": "unreachable: redirected to Instagram's login page (https://www.instagram.com/accounts/login/?next=…taperzine…), which carries none of the account's text; one attempt with the census agent string, no retry by another agent string or route"
+    },
+    "names_operator": "card snippet: no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL from the card's site and handle, confirmed by T's format and constraint markers. A login wall: recorded unreachable, the card's title and snippet its only text (§3.1(a)).",
+    "surfaced_by_T": [
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "Taper (@taperzine) • Instagram photos and videos",
+    "card_snippet": "Taper is a browser-based literary magazine for computational poems under 2KB (2048 bytes). · Submit your 2Kb HTML5 digital poems to Taper 17: Prime Deadline: 8/"
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4",
+    "card": "www.anjchang.com — Taper Digital Zine – Sensorial Storytelling @ anjchang",
+    "url": "https://www.anjchang.com/taper-digital-zine/",
+    "kind": "Overview card (an editor's page, Angela Chang's, on the magazine)",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B4.html",
+      "sha256": "7dbb5201068705f1928f75777cdc51351b83d895f9b62c3a8fd0db1d8415823c"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B4.txt",
+      "sha256": "6f74bbf5d88464aef9babdac53876c3cc69f50ff0734eb4e21cffe4a8bb5cc5c"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:09Z",
+     "http": 200,
+     "url": "https://www.anjchang.com/taper-digital-zine/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B4.html",
+     "raw_sha256": "7dbb5201068705f1928f75777cdc51351b83d895f9b62c3a8fd0db1d8415823c",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B4.txt"
+     ]
+    },
+    "names_operator": "yes ('published twice yearly by Bad Quarto'; 'Bad Quarto proprietor and publisher Nick Montfort')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL found by WebSearch on the card's title, confirmed by T's format, publisher and history markers. The snippet's 'published by Bad Quarto in coordination with MIT's T...' is the card renderer's line; the page reads 'Editing and production is done in coordination with The Trope Tank at MIT'.",
+    "searches": [
+     "WebSearch '\"Taper Digital Zine\" Sensorial Storytelling anjchang'",
+     "WebSearch 'anjchang.com \"Taper Digital Zine\" biannual online literary journal Bad Quarto Trope Tank'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "Taper Digital Zine – Sensorial Storytelling @ anjchang",
+    "card_snippet": "Publication: Taper Digital Zine, biannual online literary journal for computational poetry and literary art published by Bad Quarto in coordination with MIT's T..."
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 5",
+    "card": "Facebook·Taper Zine — Taper Zine (@taperzine) - Facebook",
+    "url": "https://www.facebook.com/taperzine/",
+    "kind": "Overview card (the magazine's Facebook page)",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B5.html",
+      "sha256": "b98d2711da49ed454be086622aef74e0a38d6ebb0a163d9f3b822d4478c13d30"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B5.txt",
+      "sha256": "0a336a08b372b320644d836eeac904a5df8d9eed660767f556d511794100902e"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:11Z",
+     "http": 200,
+     "url": "https://www.facebook.com/taperzine/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B5.html",
+     "raw_sha256": "b98d2711da49ed454be086622aef74e0a38d6ebb0a163d9f3b822d4478c13d30",
+     "result": "unreachable: redirected to Facebook's login page (https://www.facebook.com/login/?next=…taperzine…), which carries none of the page's text; one attempt with the census agent string, no retry by another agent string or route"
+    },
+    "names_operator": "card snippet: no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL from the card's site and handle, confirmed by T's history marker. A login wall: recorded unreachable, the card's title and snippet its only text.",
+    "surfaced_by_T": [
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "Taper Zine (@taperzine) - Facebook",
+    "card_snippet": "Aug 6, 2025 — Taper #16: For Good Measure is out now! Dive into a fresh collection of creative size-coded digital works by 23 authors. Check it out at taper.badquar.to/16 ..."
+   },
+   {
+    "id": "B6",
+    "origin": "body_named",
+    "pool": "B_D",
+    "role": "named in T's body by link ('Taper Computational Poetry: … on the official site'); also the magazine's own new site",
+    "card": "taperzine.org — Taper | Computational Poetry (named in the body)",
+    "url": "https://taperzine.org/",
+    "kind": "the magazine's new site, linked inline in T's body; not on the card rail",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B6.html",
+      "sha256": "e1fb9964726893982d892627bcb588ada61efc41045e4feb9a20c9ed14503cb6"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B6.txt",
+      "sha256": "32a59934e8d97932245b1331bc38503f562ed59747ce5039f3c91ede0e05d4dd"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:15:49Z",
+     "http": 200,
+     "url": "https://taperzine.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B6.html",
+     "raw_sha256": "e1fb9964726893982d892627bcb588ada61efc41045e4feb9a20c9ed14503cb6",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B6.txt"
+     ],
+     "resolved_from": {
+      "link": "T's inline link 'Taper Computational Poetry' (a Google redirect)",
+      "http": 302,
+      "location": "https://taperzine.org/",
+      "at": "2026-11-01T15:15:25Z",
+      "files": [
+       "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/body-link-goto.headers",
+       "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/body-link-goto.html"
+      ]
+     }
+    },
+    "names_operator": "yes ('Issues 1-16 were published by badquar.to')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "A source T's body names (§3.1(a), B_D). The census did not save it; its url field gives the old host. The meta description (F24) is read from the raw HTML.",
+    "surfaced_by_T": [
+     {
+      "slug": "taper-magazine-aio-20261101",
+      "body_link": "Taper Computational Poetry"
+     }
+    ]
+   },
+   {
+    "id": "B7",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the magazine's own page for Taper #16 (About, the call for #17, licence, contributors), linked from the index's 'call for work' and from taperzine.org; not surfaced by T",
+    "card": "taper.badquar.to — About Taper #16 (own page)",
+    "url": "https://taper.badquar.to/16/about.html",
+    "kind": "own page (the sixteenth issue's About page)",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B7.html",
+      "sha256": "e17f28fb6bff1c942fbbb8f3516eccd62ec19c646298cb808a4073628d32c57d"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B7.txt",
+      "sha256": "ab5a6ce347d1bbc36e84e5b7f2d0c9be7b7c31236a24436b07c706a99379a2f8"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:16:03Z",
+     "http": 200,
+     "url": "https://taper.badquar.to/16/about.html",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B7.html",
+     "raw_sha256": "e17f28fb6bff1c942fbbb8f3516eccd62ec19c646298cb808a4073628d32c57d",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B7.txt"
+     ]
+    },
+    "names_operator": "yes ('published twice yearly by Bad Quarto'; 'publisher Nick Montfort')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Fetched by this row: the census lists 'the call for work for issue #17 and its rules' as unchecked, and the index (B1) and the new site (B6) both link this page as the call. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B8",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "the record of Wikipedia's state for the name: no article; 'Taper' a disambiguation page",
+    "card": "Wikipedia — Taper (disambiguation; no article on the magazine)",
+    "url": "https://en.wikipedia.org/wiki/Taper",
+    "kind": "Wikipedia disambiguation page for the word",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B8.html",
+      "sha256": "3de32056f5ba8ca1f579cbeb7f4faa3822444a43f93cc97e52f199e1809de926"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B8.txt",
+      "sha256": "56471fea3d4b50786bbc4296703d358c51e5c1f39a74c3d66fef2ca3e39019c7"
+     },
+     "B8.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B8.wiki",
+      "sha256": "4acb00bc558faf66bcf84027eb57baba4fd7056ab2d26c9f38a5517bba7d9afa"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:47Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Taper",
+     "raw": "datasets/negative-of-the-negative/v2/intake/taper-20261101/B8.html",
+     "raw_sha256": "3de32056f5ba8ca1f579cbeb7f4faa3822444a43f93cc97e52f199e1809de926",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B8.txt",
+      "datasets/negative-of-the-negative/v2/intake/taper-20261101/B8.wiki"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Taper&action=raw",
+      "http": 200,
+      "at": "2026-11-01T15:13:47Z",
+      "sha256": "4acb00bc558faf66bcf84027eb57baba4fd7056ab2d26c9f38a5517bba7d9afa",
+      "first_try": {
+       "http": 429,
+       "at": "2026-11-01T15:13:13Z",
+       "note": "rate limit; retried once after a wait with the same agent string"
+      }
+     },
+     "absent": [
+      {
+       "title": "Taper_(magazine)",
+       "http": 404,
+       "at": "2026-11-01T15:13:12Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/wiki-Taper_(magazine).raw"
+      },
+      {
+       "title": "Taper_magazine",
+       "http": 404,
+       "at": "2026-11-01T15:13:12Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/wiki-Taper_magazine.raw"
+      },
+      {
+       "title": "Taper_(journal)",
+       "http": 404,
+       "at": "2026-11-01T15:13:13Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/wiki-Taper_(journal).raw"
+      }
+     ],
+     "not_read": [
+      {
+       "what": "rendered /wiki/Taper_(magazine)",
+       "http": 429,
+       "at": "2026-11-01T15:14:53Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/wiki-Taper_magazine-rendered.html"
+      },
+      {
+       "what": "full-text search ('\"Bad Quarto\" Taper'; 'Taper computational poetry magazine')",
+       "http": 429,
+       "at": "2026-11-01T15:13:47Z",
+       "files": [
+        "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/wiki-search.json",
+        "datasets/negative-of-the-negative/v2/intake/taper-20261101/tries/wiki-search2.json"
+       ],
+       "note": "rate limited; mentions of the magazine in other articles were not checked"
+      }
+     ]
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "No article on the magazine under three titles (raw wikitext HTTP 404). 'Taper' is a disambiguation page, last edited 25 January 2025, that lists the word's senses and no magazine.",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "header (site line)",
+   "quote": "an online literary magazine for small computational pieces, published by Bad Quarto",
+   "claim": "the magazine's own line: an online literary magazine for small computational pieces, published by Bad Quarto",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a magazine of small computational pieces",
+   "date": "undated (the page as the census fetched it 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 96c37cea0ba2217d…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "head, meta og:description",
+   "quote": "A twice-yearly journal for tiny computational poems, published by Bad Quarto",
+   "claim": "the page's own description in its metadata: a twice-yearly journal for tiny computational poems",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a magazine of small computational pieces",
+   "date": "undated (the page as the census fetched it 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved raw B1.html (sha256 453401c16fcc23d1…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "issue list, first item",
+   "quote": "Taper #1 : a minimal labyrinth, Spring 2018.",
+   "claim": "the first issue: Taper #1, a minimal labyrinth, Spring 2018",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "issues and seasons: 2018 to 2026",
+   "date": "Spring 2018 (as the page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 96c37cea0ba2217d…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "issue list, items 3–4",
+   "quote": "Taper #3 : triptychs and triads, Spring 2019. … Taper #4 : a new trope, Spring 2020.",
+   "claim": "the list passes from Spring 2019 (#3) to Spring 2020 (#4) with no issue between",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "issues and seasons: 2018 to 2026",
+   "date": "2019–2020 (as the page dates them)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 96c37cea0ba2217d…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "issue list, last items",
+   "quote": "Taper #15 : crossroads, Fall 2025. … Taper #16 : for good measure, Spring 2026.",
+   "claim": "sixteen issues listed, the last Taper #15 (Fall 2025) and Taper #16 (Spring 2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "issues and seasons: 2018 to 2026",
+   "date": "Spring 2026 (as the page dates #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 96c37cea0ba2217d…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "issue list, closing line",
+   "quote": "The call for work for issue #17 is also available!",
+   "claim": "a call for work for issue #17 is open",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "undated (the page as the census fetched it 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 96c37cea0ba2217d…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Taper is an online literary magazine for tiny computational poems (under 2 kilobytes), published by Bad Quarto.",
+   "claim": "a contributor's page: an online literary magazine for tiny computational poems under 2 kilobytes, published by Bad Quarto",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a5e3ac29fb4a91dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "I have been a contributor since Spring 2022 and a member of the editorial collective since Spring 2024, and my pieces follow in reverse chronological order.",
+   "claim": "Helen Shewolfe Tseng: a contributor since Spring 2022 and a member of the editorial collective since Spring 2024",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a5e3ac29fb4a91dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "pieces, first entry",
+   "quote": "Launch: Chert … Taper 16: For Good Measure, Spring 2026",
+   "claim": "her piece Chert in Taper 16, dated Spring 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "issues and seasons: 2018 to 2026",
+   "date": "Spring 2026 (as the page dates #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a5e3ac29fb4a91dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "pieces, last entry",
+   "quote": "Launch: A Compass of Lunar Trigrams … Taper #8: 8-Bit Nostalgia, Spring 2022",
+   "claim": "her pieces listed by issue, each with its title, from Taper #8 (Spring 2022) to Taper 16",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "pieces, makers and statements",
+   "date": "Spring 2022 to Spring 2026",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a5e3ac29fb4a91dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "statement for A Compass of Lunar Trigrams",
+   "quote": "UTF-8 encodes these symbols and emoji for the web, allowing them to be displayed here with minimal impact to the file size constraints.",
+   "claim": "a maker's statement: the piece's encoding chosen for minimal impact on the file size constraints",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "Spring 2022 (Taper #8)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a5e3ac29fb4a91dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "statement for Coyote Spotting Simulator",
+   "quote": "(An earlier text-based variation on this piece, titled Fieldnotes, appeared in Our Generation, a booklet of computer-generated texts published by Bad Quarto.)",
+   "claim": "Bad Quarto also published Our Generation, a booklet of computer-generated texts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 a5e3ac29fb4a91dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Taper is a browser-based literary magazine for computational poems under 2KB (2048 bytes).",
+   "claim": "the magazine's Instagram account as its card renders it: a browser-based literary magazine for computational poems under 2KB (2048 bytes)",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Submit your 2Kb HTML5 digital poems to Taper 17: Prime Deadline: 8/",
+   "claim": "a call for 2Kb HTML5 digital poems for Taper 17, theme Prime, its deadline cut off in the snippet",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Taper Digital Zine, ¶1",
+   "quote": "Taper is an online literary journal for computational poetry and literary art, published twice yearly by Bad Quarto.Each issue is edited by a collective.",
+   "claim": "an editor's page: an online literary journal for computational poetry and literary art, published twice yearly by Bad Quarto, each issue edited by a collective",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a magazine of small computational pieces",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 6f74bbf5d88464ae…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Taper Digital Zine, ¶1",
+   "quote": "Editing and production is done in coordination with The Trope Tank at MIT, a laboratory directed by Bad Quarto proprietor and publisher Nick Montfort.",
+   "claim": "editing and production in coordination with The Trope Tank at MIT, a laboratory directed by Nick Montfort, Bad Quarto's proprietor and publisher",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 6f74bbf5d88464ae…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Taper Digital Zine, ¶1",
+   "quote": "Taper is not officially associated with MIT or hosted on an MIT server, however.",
+   "claim": "limit: the magazine is not officially associated with MIT or hosted on an MIT server",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 6f74bbf5d88464ae…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Taper Digital Zine, ¶2",
+   "quote": "I was an editor since inception in 2018. As of 2025, I was on the editorial committee for 13 issues.",
+   "claim": "Angela Chang: an editor since the magazine's inception in 2018, on the editorial committee for 13 issues as of 2025",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "2025 (as the page states)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 6f74bbf5d88464ae…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Taper Digital Zine, ¶2",
+   "quote": "We refined the process so that our remotely located volunteer collective operate with little friction in organization.",
+   "claim": "the editors are a remotely located volunteer collective",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 6f74bbf5d88464ae…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Taper Digital Zine, ¶2 and close",
+   "quote": "I summarized the project in a poster, presented at Creativity & Cognition 2025. … check out the paper here s https://doi.org/10.1145/3698061.3734390.",
+   "claim": "the project summarized in a poster at Creativity & Cognition 2025, with a paper at doi 10.1145/3698061.3734390",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the name, the encyclopedia, the composition at the name",
+   "date": "2025",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 6f74bbf5d88464ae…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Aug 6, 2025 — Taper #16: For Good Measure is out now! Dive into a fresh collection of creative size-coded digital works by 23 authors. Check it out at taper.badquar.to/16 ...",
+   "claim": "the magazine's Facebook page as its card renders it: Taper #16 out on 6 August 2025, size-coded digital works by 23 authors",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "issues and seasons: 2018 to 2026",
+   "date": "2025-08-06 (as the card dates it)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "body, opening",
+   "quote": "Taper is a literary magazine for small computational pieces.",
+   "claim": "the magazine's new site: a literary magazine for small computational pieces",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a magazine of small computational pieces",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 32a59934e8d97932…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "body",
+   "quote": "Issues 1-16 were published by badquar.to, and Issue 17 will launch here on our new domain, taperzine.org.",
+   "claim": "issues 1–16 published at badquar.to; issue 17 to launch on the new domain, taperzine.org",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 32a59934e8d97932…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "head, meta description",
+   "quote": "Taper, the literary magazine for small computational pieces, has moved to taperzine.org. Issue 17 will launch here.",
+   "claim": "the magazine has moved to taperzine.org",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved raw B6.html (sha256 e1fb996472689398…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "title",
+   "quote": "Taper | Computational Poetry",
+   "claim": "the new site's title, the source of the link text in T's body",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 32a59934e8d97932…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F26": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "heading",
+   "quote": "Taper #16: For Good Measure … Spring 2026",
+   "claim": "the sixteenth issue's own page dates it Spring 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "issues and seasons: 2018 to 2026",
+   "date": "Spring 2026 (as the page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶1",
+   "quote": "Taper is an online literary journal for computational poetry and literary art published twice yearly by Bad Quarto.",
+   "claim": "the issue page: an online literary journal for computational poetry and literary art published twice yearly by Bad Quarto",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: a magazine of small computational pieces",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶2",
+   "quote": "Each issue is edited by a collective. For the sixteenth issue, the editorial collective consisted of Angela Chang, Kavi Duvvoori, Leonardo Flores, Agustin Rosa, and Helen Shewolfe Tseng.",
+   "claim": "each issue edited by a collective; the sixteenth by Angela Chang, Kavi Duvvoori, Leonardo Flores, Agustin Rosa and Helen Shewolfe Tseng",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶2",
+   "quote": "The editors make all decisions, work with authors, produce each issue, and choose the theme for the next issue; publisher Nick Montfort offers some help at the initial and final stages of the workflow.",
+   "claim": "the editors make all decisions and choose the next theme; the publisher, Nick Montfort, helps at the initial and final stages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "who publishes and edits it: Bad Quarto, the collective, the Trope Tank",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶3",
+   "quote": "Our usual constraint was applied: The core part of each poem—the HTML on the page after the header—can be no more than a tiny 2KB (2048 bytes).",
+   "claim": "the usual constraint: the core of each poem, the HTML after the header, no more than 2KB (2048 bytes)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶3",
+   "quote": "The work in this issue is written in HTML5, using ES6. It has been tested across platforms on current-generation browsers, but some of the pieces included may not work on earlier browsers, such as Internet Explorer, or on mobile devices.",
+   "claim": "the work written in HTML5 and ES6, tested on current browsers; some pieces may not work on earlier browsers or mobile devices",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶4",
+   "quote": "We encourage readers to view the source code (Ctrl/Command + U) in order to read the artists’ statements as well as the code itself.",
+   "claim": "the artists' statements are read in each piece's source code, beside the code",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "pieces, makers and statements",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About, ¶4",
+   "quote": "We invite remixes of published Taper works in future issues.",
+   "claim": "remixes of published works are invited for future issues",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence and reuse",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Submissions for Issue #17",
+   "quote": "For Taper #17, we invite submissions in response to the theme “Prime.” … For our seventeenth issue, which will launch on our new home at taperzine.org,",
+   "claim": "Taper #17's theme is Prime, and it will launch at the new home, taperzine.org",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Timeline",
+   "quote": "Submissions for this issue will be accepted until August 17, 2026 at 11:59 PM AoE. Taper #17 will be published in Fall 2026.",
+   "claim": "submissions for #17 accepted until 17 August 2026; Taper #17 to be published in Fall 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the move to taperzine.org and issue #17",
+   "date": "2026 (as the page states)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Submission Details",
+   "quote": "edit only two parts of the file: the long comment at the top, which will hold your title, your name, and a creative statement from you, and the very end of the file, where your tiny computational poem is to be placed.",
+   "claim": "each piece's file carries, in its top comment, its title, its maker's name and a creative statement",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "pieces, makers and statements",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F37": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Submission Details",
+   "quote": "Although standard compression and minification can make the source code of many Taper works difficult to understand, we must establish limits on the code's complexity and (lack of) legibility. Consequently, we won’t publish pieces that use exec or regex eval functions.",
+   "claim": "limits on the code's complexity and legibility: no exec or regex eval functions",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Submission Details",
+   "quote": "Submissions should not use any external libraries or APIs, nor link to any external resources, including fonts. This is so that pages will be self-contained following Taper’s vision. It also has the practical purpose of allowing all of Taper’s work to be viewed without a network connection, for instance, in a gallery setting.",
+   "claim": "no external libraries, APIs or resources, so that every page is self-contained and viewable without a network connection",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the constraint: 2KB, HTML5, self-contained",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "closing (licence)",
+   "quote": "This page and the main page of Taper #16 are offered under the Creative Commons Attribution-NoDerivatives 4.0 International license … Each poem is offered individually under a short all-permissive free software license that appears in a comment at the top of each poem’s source code. … You are free to study, modify, and share these poems, use them as the basis for projects of your own, and share your modified versions, among other things.",
+   "claim": "the issue pages under CC BY-ND 4.0; each poem under a short all-permissive free software licence in its source, free to study, modify, share and build on",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence and reuse",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "contributor notes (25 notes; 23 carry a piece title, the two editors Kavi Duvvoori and Agustin Rosa none; counted by the extractor)",
+   "quote": "Romi Banerjee (“16 anna”) is a curious cognitivist … Christine Wilks (“Qualia Standards Visualizer”) is a writer, artist, coder and developer of creative web apps and interactive digital narratives.",
+   "claim": "the issue names its makers: 25 contributor notes, 23 with the title of a piece",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "pieces, makers and statements",
+   "date": "Spring 2026 (Taper #16)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 ab5a6ce347d1bbc3…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "wikitext, 'Taper' (disambiguation)",
+   "quote": "'''Taper''' may refer to: … * A thin [[candle]] … * [[Taper (concert)]], a person who records audio concerts, usually via portable setup",
+   "claim": "Wikipedia's 'Taper' is a disambiguation page of the word's senses (a conical shape, joints, a candle, a concert recorder, a haircut, the Mark Taper Forum and others) and lists no magazine; 'Taper (magazine)', 'Taper magazine' and 'Taper (journal)' return HTTP 404",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the name, the encyclopedia, the composition at the name",
+   "date": "2025-01-25 (the page's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved raw B8.wiki (sha256 4acb00bc558faf66…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "taper.badquar.to — Taper (cards 1 and 6)",
+  "B2": "Helen Shewolfe Tseng — Taper - Helen Shewolfe Tseng",
+  "B3": "Instagram·taperzine — Taper (@taperzine) • Instagram photos and videos",
+  "B4": "www.anjchang.com — Taper Digital Zine – Sensorial Storytelling @ anjchang",
+  "B5": "Facebook·Taper Zine — Taper Zine (@taperzine) - Facebook",
+  "B6": "taperzine.org — Taper | Computational Poetry (named in T's body)",
+  "B7": "taper.badquar.to — About Taper #16 (own page)",
+  "B8": "Wikipedia — Taper (disambiguation; no article on the magazine)"
+ }
+}

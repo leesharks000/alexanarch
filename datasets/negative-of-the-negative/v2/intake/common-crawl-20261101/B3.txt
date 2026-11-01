@@ -1,0 +1,189 @@
+About
+The Data
+Overview CDXJ Index URL Index Web Graphs Latest Crawl Crawl Stats Graph Stats Errata
+Resources
+Get Started Blog Examples CCBot Infra Status Opt-Out Ledger FAQ
+Community
+Research Papers Mailing List Archive Hugging Face Discord Collaborators
+About
+About Team Jobs Privacy Policy Terms of Use
+Search
+AI Agent
+Contact Us
+About
+Read about the Increase of Common Crawl citations in academic research
+Overview
+>10 PiB
+Total archive size
+~2B+
+Pages per crawl
+12,000+
+Research citations
+64%
+LLMs trained on Common Crawl data
+Common Crawl is a nonprofit 501(c)(3) organisation that crawls the web and freely provides its archives and datasets to the public. Founded in 2007 by Gil Elbaz , we maintain an open repository of web crawl data collected since 2008, totalling more than 10 petabytes. Crawls are published approximately once a month, each typically containing more than two billion web pages.
+The dataset is hosted on Amazon Web Services through its Open Data Sponsorship Program and can be downloaded at no cost. It has been cited in over 12,000 research papers and has become one of the most widely used sources of training data for large language models.
+Common Crawl is a member of the International Internet Preservation Consortium (IIPC) and a partner in the End of Term Web Archive , which preserves US federal government websites during presidential transitions.
+History
+Founding and early operations
+2007
+Gil Elbaz founded Common Crawl. Elbaz had previously co-founded Applied Semantics , which Google acquired in 2003, its technology was incorporated into Google AdSense. His goal was to make web-scale crawl data available to researchers lacking resources for their own crawling infrastructure.
+2008
+Common Crawl began collecting data using a custom Hadoop -based crawler with a PageRank implementation.
+2012
+Amazon Web Services began hosting Common Crawl's data through its Open Data Sponsorship Program . The search engine blekko donated crawl metadata gathered between February and October 2012 to improve crawl quality and reduce spam.
+2013
+Common Crawl replaced their custom crawler with a system based on Apache Nutch , designated CCBot. The organisation switched from ARC to WARC format (ISO 28500) beginning with the November 2013 crawl. Companies such as TinEye were building products on Common Crawl data by this point.
+2019
+Google's Colossal Clean Crawled Corpus (C4) , constructed from a single Common Crawl snapshot, was used to train the T5 language model series, marking the beginning of Common Crawl's central role in AI development.
+2020
+OpenAI's GPT-3 paper reported that the majority of its training tokens were derived from filtered Common Crawl data, drawing widespread attention to the dataset.
+2023
+Rich Skrenta , creator of the blekko search engine and founder of the Open Directory Project , became Executive Director. The organisation expanded its staff, public engagement, and research collaborations.
+2024
+Common Crawl joined the End of Term Web Archive as a partner, contributing to the preservation of US federal government websites during the 2024–2025 presidential transition.
+Technical Infrastructure
+CCBot
+Our web crawler, CCBot , is based on Apache Nutch and identifies itself via the User-Agent string CCBot . CCBot obeys robots.txt directives and rate-limits its requests to individual servers. Crawls process approximately three billion pages per cycle.
+CCBot uses Harmonic Centrality , a graph-theoretic measure of a node's proximity to the structural core of the web, to prioritise URLs for crawling. This metric is computed from our Web Graph data and is used alongside PageRank .
+Data Formats
+WARC (Web ARChive)
+Raw crawl data including full HTTP responses, compliant with ISO 28500 . Append-only and immutable once written.
+WAT (Web Archive Transformation)
+Metadata extracted from WARC records, including HTTP headers and link graphs.
+WET (WARC Encapsulated Text)
+Plaintext content extracted from crawled HTML, suitable for NLP tasks.
+Indexes
+Monthly release index files in the CDXJ Index and URL Index , the latter (previously called the "Columnar Index") queryable with Amazon Athena .
+Web Graphs
+Common Crawl publishes host-level and domain-level Web Graphs derived from the hyperlink structure of our crawls, with computed Harmonic Centrality and PageRank values for each node. A list of releases is available on our S3 bucket.
+Harmonic Centrality ranks are calculated via HyperBall , part of the WebGraph framework developed at the University of Milan by Paolo Boldi and Sebastiano Vigna .
+Statistics for our Web Graphs can be found on the cc-webgraph-statistics page.
+Hosting
+Common Crawl's data is stored in the AWS us-east-1 (N. Virginia) region under the AWS Open Data Sponsorship Program . Data can be accessed via Amazon S3 or through Common Crawl's index server . We also publish experimental data products on Hugging Face , including the Common Crawl Citations dataset and crawl statistics.
+Crawl Statistics
+The table below shows the latest six crawls and their respective statistics. Further information can be found in the cc-crawl-statistics page.
+Role in AI Development
+Common Crawl data, typically after filtering and processing by third parties, has been a primary training data source for many large language models. A 2024 Mozilla Foundation study described the dataset as having "laid the infrastructural foundation" for the generative AI boom, and found that at least 64% of 47 large language models published between 2019 and 2023 were trained on filtered versions of Common Crawl data.
+GPT-3
+OpenAI · 2020
+More than 80% of training tokens derived from filtered Common Crawl data.
+C4 / T5
+Google · 2019
+C4 constructed by applying quality filters to a single Common Crawl snapshot.
+LLaMA
+Meta · 2023
+Used Common Crawl data processed through the CCNet pipeline .
+BLOOM
+BigScience · 2022
+Used the OSCAR corpus , derived from Common Crawl.
+Pythia
+EleutherAI
+Used Pile-CC, a filtered Common Crawl subset within The Pile dataset.
+Falcon
+Technology Innovation Institute
+Used RefinedWeb , processed from Common Crawl.
+A 2025 paper at COLM found that compliance with robots.txt web crawling opt-outs does not degrade general knowledge acquisition in LLMs, reporting a close-to-zero "Data Compliance Gap."
+Derived Datasets
+Dataset
+Creator
+Year
+Description
+C4
+Google
+2019
+Filtered subset used to train the T5 model series
+OSCAR
+Inria / Sorbonne
+2019
+Multilingual corpus classified by language
+CCNet
+Meta AI
+2019
+Monolingual extraction and deduplication pipeline
+Pile-CC
+EleutherAI
+2020
+Filtered subset within The Pile dataset
+MADLAD-400
+Google
+2023
+3T token monolingual dataset covering 400+ languages
+RefinedWeb
+TII
+2023
+Deduplicated dataset for Falcon models
+FineWeb
+Hugging Face
+2024
+Refined filtering pipeline for LLM pre-training
+CommonLID
+CC / MLCommons / EleutherAI / JHU
+2026
+Language ID benchmark covering 109 languages
+Multilingual Initiatives
+Common Crawl has undertaken several efforts to expand the linguistic diversity of its dataset. In December 2024, we launched the Web Languages Project to address the overrepresentation of English-language content, inviting speakers of Languages Other Than English (LOTE) to submit URLs via a public GitHub repository.
+In early 2026, the organization released CommonLID , a language identification benchmark for web data covering 109 languages, developed with MLCommons , EleutherAI , and Johns Hopkins University through community annotation of over 350,000 lines of web text.
+Organization
+Governance and funding
+Gil Elbaz serves as Chairman of the Board. Primary funding comes from the Elbaz Family Foundation. As of 2026, the organization has approximately 18 staff members .
+Collaborators
+AI Alliance
+Allen Institute for AI
+Alliance for Responsible Data Collection
+Andreessen Horowitz
+Barcelona Supercomputing Center
+Computer & Communications Industry Association
+Constellation
+Creative Commons
+EleutherAI
+End of Term Web Archive
+High Performance Language Technologies
+Hugging Face
+Inria
+International Internet Preservation Consortium
+Internet Archive
+Kearney
+Linux Foundation
+NVIDIA
+Occiglot
+OpenEuroLLM
+Open Language Data Initiative
+OpenMined
+Open Web Search
+PyTorch
+SIGWAC
+Software Heritage
+Tola Capital
+Valyu
+Common Crawl collaborates with many organizations . If you're interested in becoming a collaborator, please get in touch .
+The Data
+Overview
+CDXJ Index
+URL Index
+Web Graphs
+Latest Crawl
+Crawl Stats
+Graph Stats
+Errata
+Resources
+Get Started
+Blog
+Examples
+CCBot
+Infra Status
+Opt-Out Ledger
+FAQ
+Community
+Research Papers
+Mailing List Archive
+Hugging Face
+Discord
+Collaborators
+About
+About
+Team
+Jobs
+Privacy Policy
+Terms of Use
+© 2026 Common Crawl

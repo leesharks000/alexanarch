@@ -1,0 +1,61 @@
+{
+  "row": "cell",
+  "address": "CELL Consortium on Electronic Literature",
+  "entity": "The Consortium on Electronic Literature (CELL; the CELL Project; cellproject.net, whose home page is The Index of Electronic Literature): in its own words 'an international, open-access collaboration providing centralized access to literary databases, archives, and institutional repositories', initiated in 2009 by the Board of the Electronic Literature Organization, now hosted and directed by the Center for Digital Narrative at the University of Bergen; its Index a curated Wikibase linked with Wikidata over seven federated member archives (ELMCIP, NT2, PO.EX, ELD, ADEL, Ciberia, DLD); formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/cell)",
+  "row_type": "C (a public entity on which the archive bears: an international consortium of electronic-literature databases and its federated index; an entity of the traininglayerliterature.org layer census, host_relation 'meta-aggregation')",
+  "aliases": [
+    {
+      "pattern": "\\bConsortium (on|for) Electronic Literature\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bCELL\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\bcellproject\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bIndex of Electronic Literature\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bCELL (Element|Metadata) Set\\b",
+      "flags": "i"
+    }
+  ],
+  "classes": [
+    {
+      "term": "indexes and federated catalogues of electronic literature (a discovery layer over member databases)",
+      "pattern": "\\b(electronic[- ]literature (databases?|directory|directories|knowledge base|index|indexes|archives?|collections?|repositor(y|ies))|e-lit (databases?|archives?|collections?)|federat(ed|ion|ing) (catalogu\\w+|archives?|databases?|search|collections?)|union catalogu\\w+|discovery layers?|cross-database search)\\b",
+      "flags": "i",
+      "basis": "field: B1 (cellproject.net, card 1: 'The Index of Electronic Literature Discover creative works across electronic literature archives'; 'Federated Member Archives'); B2 (cellproject.net/about, card 2: 'The centerpiece of CELL is The Index: a curated, peer-reviewed catalogue bringing together records from independent electronic literature databases in one Wikibase'); B3 (Wikipedia: 'an international collaboration between databases that document works of electronic literature'). The layer census's kind, method ('federation of member archives' catalogues into a central index'), host_relation 'meta-aggregation' and areas 'meta-aggregation', 'field-history' for the entity (TLL record)."
+    },
+    {
+      "term": "linked open data records of works and authors (Wikidata, Wikibase, SPARQL)",
+      "pattern": "\\b(Wikidata|Wikibase|linked (open )?data|SPARQL)\\b",
+      "flags": "",
+      "basis": "field: B1 (card 1: 'Metadata licensed under CC BY-NC-SA 4.0 · Linked with Wikidata'; 'SPARQL Query Endpoint'); B2 (card 2: 'It provides open, machine-readable access to their collections, while contributions to Wikidata extend this shared knowledge beyond the electronic literature community'); B3 (Wikipedia: 'Using Wikidata as a hub means that each record in the different databases will also exist as a Wikidata item'). The layer census's record.in_layer and tll_reading for the entity ('its metadata is published as linked data (SPARQL, Wikidata) under each work's author', TLL record)."
+    },
+    {
+      "term": "metadata standards and name authority for describing works of electronic literature",
+      "pattern": "\\b(metadata (standards?|schemas?|element sets?)|element set|controlled vocabular(y|ies)|name authorit(y|ies)|minimum (metadata )?description)\\b",
+      "flags": "i",
+      "basis": "field: B2 (card 2: 'the consortium established a metadata standard for creative works of e-lit (“The CELL Element Set”)'; 'identifying a canonical minimum metadata description for a creative work of e-lit'; 'especially about the establishment of name authority'); B3 (Wikipedia: 'It formalised a controlled vocabulary for metadata about works of electronic literature that would be shared by all the CELL partners')."
+    },
+    {
+      "term": "meta-aggregation (a resource that itself gathers and searches other aggregators)",
+      "pattern": "\\bmeta-?aggregat\\w*\\b",
+      "flags": "i",
+      "basis": "archive: the layer census's host_relation 'meta-aggregation' and area 'meta-aggregation' ('Meta-aggregation: a resource that itself gathers and reads other resources', census.json areas) for the entity, and its tll_reading ('The archive reads CELL as the field's meta-aggregator, a discovery layer over member archives', TLL record); field: B1 (card 1: 'Discover creative works across electronic literature archives'), B3 (Wikipedia: 'aimed at allowing a single search to locate records in any of the collaborating databases')."
+    }
+  ],
+  "classes_note": "Four classes, each sourced by the field B (cards B1 and B2, the Wikipedia article B3) and the layer census record: (1) indexes and federated catalogues of electronic literature, the consortium's own kind (B1, B2, B3; TLL kind, method, host_relation, areas); (2) linked open data records of works and authors (B1, B2, B3; TLL record.in_layer, tll_reading); (3) metadata standards and name authority for works of electronic literature (B2, B3); (4) meta-aggregation, the census's host_relation and area for the entity and its tll_reading, with B1 and B3. Class (4) was added after the first string pass and before admission, when the reading of the census record showed its host_relation and tll_reading place the entity in the class #1719 defines; the pass was rerun with it. The aliases are the entity's names (Consortium on Electronic Literature, with the ebr spelling 'Consortium for Electronic Literature'; CELL, case-sensitive; the CELL Project's host cellproject; The Index of Electronic Literature; the CELL Element Set, its standard). ELMCIP, NT2, PO.EX, ELD, ADEL, Ciberia and DLD (the member archives; ELMCIP and the ELD each with their own census row or entity), the Electronic Literature Organization, the Center for Digital Narrative and the University of Bergen are entities distinct from CELL and are not aliases. #186 and #1543, the layer census's anchors, are read at the passages bearing on the entity's kind (field histories and indexes of electronic literature; writing addressed to a machine reader and the metadata that lets it be found and attributed; provenance kept apart from composition). Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a keyword list or the archive's own Wikidata items described as its own infrastructure is not a claim on the class.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md with the v0.9 briefs it names; address 'CELL Consortium on Electronic Literature' (cell-consortium-on-electronic-literature-aio-20261101, OBS-15f1919dddb3, ADDR-9aa64c881c4c), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's reading, findings and analysis at the capture; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [
+    186,
+    1543
+  ]
+}

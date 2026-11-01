@@ -1,0 +1,37 @@
+{
+  "row": "the-pile",
+  "address": "The Pile dataset",
+  "entity": "The Pile (pile.eleuther.ai): in its own words 'a 825 GiB diverse, open source language modelling data set that consists of 22 smaller, high-quality datasets combined together', an English text corpus targeted at training large-scale language models, made by EleutherAI (Gao, Biderman, Black and nine others, arXiv:2101.00027, submitted 31 December 2020); its components include Pile-CC, Books3, Project Gutenberg (PG-19), BookCorpus2, OpenSubtitles and YouTube Subtitles; Books3 removed after the Rights Alliance's DMCA notices of July 2023, the Pile taken down from its original site by 2024 (Wikipedia); succeeded by Common Pile v0.1 (June 2025); formalized in the traininglayerliterature.org layer census record of 2026-11-01 (https://www.traininglayerliterature.org/aggregators/the-pile)",
+  "row_type": "C (a public entity on which the archive bears: a training dataset of English text in 22 components; an entity of the traininglayerliterature.org layer census, host_relation 'infrastructure')",
+  "aliases": [
+    {"pattern": "\\b[Tt]he Pile\\b", "flags": ""},
+    {"pattern": "\\bPile-CC\\b", "flags": ""},
+    {"pattern": "\\bpile\\.eleuther\\.ai\\b", "flags": "i"},
+    {"pattern": "\\b2101\\.00027\\b", "flags": ""},
+    {"pattern": "\\bEleutherAI\\b", "flags": ""}
+  ],
+  "classes": [
+    {
+      "term": "training corpora of language models (text datasets assembled to train large language models)",
+      "pattern": "\\b((pre-?)?training (corpus|corpora|data ?sets?)|data ?sets? (of|for) (training|language model\\w*)|LLM training data|language[- ]model(ling)? (corpus|corpora|data ?sets?))\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia, lead: 'The Pile is an 886 GB diverse, open-source dataset of English text created to train large language models (LLMs).'; 'The Pile and Common Crawl had been, as of 2024, the two main training datasets being used to train AI models.'); B1 (home: 'open source language modelling data set'); B5 (the paper, Abstract: 'an 825 GiB English text corpus targeted at training large-scale language models'); B7 (Common Pile v0.1: 'a 8 TB corpus of openly licensed and public domain text for training large language models'). The census's kind, record_type 'dataset' and area 'corpora' ('The corpora: collections, crawls and datasets whose texts enter machine training') for the entity (census.json rows[slug == 'the-pile'].kind, .record_type, .areas; census.json areas)."
+    },
+    {
+      "term": "books and copyrighted works taken into training data without their authors' consent",
+      "pattern": "\\b(Books3|Bibliotik|LibGen|Library Genesis|shadow librar\\w+|pirat\\w+ (books?|librar\\w+|sites?|websites?|copies)|copyrighted (books?|works?|material|text)|authorial consent|author(s'|s’)? consent)\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia: 'The Books3 component of the dataset contains copyrighted material compiled from Bibliotik, a piracy website.'; 'a class action lawsuit was filed in 2024 by three authors'); B5 (the paper §2.3: 'Books3 is a dataset of books derived from a copy of the contents of the Bibliotik private tracker'; §6.5 Author Consent and Public Data; §7.1 Legality of Content). The census's record.in_layer and record.name and its tll_reading ('works found in the layer under their authors' names after the fact') for the entity."
+    },
+    {
+      "term": "membership of a work in a training set (whether a given work is in a corpus, and how it is found there)",
+      "pattern": "\\b(membership (inference|tests?|queries)|training[- ](data|set) membership|Data Portraits?|(found|appears?|included|present|contained) in (the |a )?(model'?s? )?training (data|sets?|corpus|corpora))\\b",
+      "flags": "i",
+      "basis": "field: B10 (Data Portraits, arXiv:2303.03919, Abstract, a census third-party source: 'has the model already encountered a given example during training?'; 'Using our tools, we document a popular language modeling corpus (The Pile)'); B5 (the paper §7.1: 'we do not have the metadata necessary to determine exactly which texts are copyrighted, and so this can only be undertaken at the component level'). The census's question ('training membership by component'), record.readback, does_not_answer ('whether a given work is in the Pile') and tll_reading for the entity."
+    }
+  ],
+  "classes_note": "Three classes, each sourced by the field B and the census record. (1) training corpora of language models: B2, B1, B5, B7; census kind, record_type, area 'corpora'. (2) books and copyrighted works taken into training data without consent: B2, B5 §2.3, §6.5, §7.1; census record.in_layer, record.name, tll_reading. (3) membership of a work in a training set: B10 (Data Portraits, census third-party), B5 §7.1; census question, record.readback, does_not_answer, tll_reading. Aliases: the name with its article as the field writes it ('The Pile', 'the Pile', capital P; 'pile' alone is a common word and is not an alias), its web-text component Pile-CC, its host and arXiv number, and EleutherAI, its maker (an entity distinct from the Pile, kept as an alias only to reach sentences that may name the dataset through its maker; a sentence naming EleutherAI alone is read and not admitted unless it says something of the Pile). Common Pile v0.1, its successor, is a distinct entity; Common Crawl, Books3 (and The Atlantic's search tool over it), Project Gutenberg, Data Portraits, Dolma and OLMoTrace have rows or census rows of their own and are distinct entities. The census's tll_reading applies #186's and #1543's questions (who writes for the receiving apparatus; what the apparatus makes from what it reads) to the entity: that reading is the archive's, ledgered as TLL-NN. #186 and #1543, the census's anchors, are read at the passages on training corpora, crawls and digital libraries, inspection and tracing, writing addressed to a machine reader and machine composition. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a citation line or a list is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-LAYER.md (with v09/BRIEF-NEW-ROW-AGGREGATOR.md, -LABOR.md, -LEFT.md); address 'The Pile dataset' (the-pile-dataset-aio-20261101, OBS-3bb4c361d912, ADDR-c51497a0501d), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN and TLL-NN.",
+  "hop_from": [186, 1543]
+}

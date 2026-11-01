@@ -1,0 +1,501 @@
+{
+ "row": "project-gutenberg",
+ "pass": "2026-11-01",
+ "pass_note": "first reading 2026-11-01 of the string pass (aliases and four sourced classes), the anchors #186 and #1543 read at the passages on corpora, address to the training layer, persistence and machine composition; second pass with one citation hop from the deposits admitted",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Project Gutenberg with the entity named (a description, a use, a limit, a corrective); R, a relation the archive states between the library and an archive object (its originals shelf and seatings, a heteronym, a mantle work); O, an archive category applied to the library or to a class the field or the census sources for it (config classes). A bare mention, a bibliography line or a catalogue row is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "the census's anchor, read at the definition (texts 'crawled, indexed, trained on, retrieved, and recomposed'), the remark that texts in the corpora not organized around that fact are 'read by machines incidentally', and the third criterion, persistence 'with the metadata that lets it be found and attributed'; O-class, digital libraries whose texts enter training corpora (B3, B7; census area 'corpora'). Admitted by reading of the anchor (brief, The archive's work); the string pass does not reach these sentences",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "the census's anchor, read at §1 (machine composition, 'what the encountered work makes it possible for a machine to WRITE') and §10 (the institutional training loop; novelty and provenance as different questions); O-class, machine-made works composed from a library's texts (B1's computer-generated audiobooks, B8's generated novels) and texts entering corpora",
+   "claims": [
+    "O1543-01",
+    "O1543-02",
+    "O1543-03"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 416,
+   "strata": [
+    "D"
+   ],
+   "reason": "Architecture-Aware Literary Traversal: names Project Gutenberg among large text archives with 'scale but no internal architecture' and says an AI summary of such a corpus describes what is in it (D0001)",
+   "claims": [
+    "O416-01"
+   ],
+   "cands": [
+    "D0001",
+    "O0019"
+   ]
+  },
+  {
+   "dep": 735,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "The Deviation-Optimized Language Model, by the heteronym Nobel Glas (Lagrange Observatory!): a pre-registered training corpus taking 30% from Project Gutenberg's pre-1900 prose as training signal (D); the relation runs to a heteronym of the archive (R)",
+   "claims": [
+    "O735-01"
+   ],
+   "cands": [
+    "D0002"
+   ]
+  },
+  {
+   "dep": 943,
+   "strata": [
+    "D"
+   ],
+   "reason": "Whitespace as Provenance: the Gutenberg Dickinson 'a propositional shell', the Gutenberg Hopkins without 'the notational apparatus' (D0003, D0004; R0001 the same sentence)",
+   "claims": [
+    "O943-01"
+   ],
+   "cands": [
+    "D0003",
+    "D0004",
+    "R0001"
+   ]
+  },
+  {
+   "dep": 1044,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-DATAHUB-01: Gutenberg's texts the most widely used public-domain corpus in digital humanities, their reading environment unchanged; Gutenberg 'doing correct work at its layer', the archive to build the environment Gutenberg 'is architected not to construct'; 'Gutenberg's spare metadata' (D0005–D0010)",
+   "claims": [
+    "O1044-01",
+    "O1044-02",
+    "O1044-03"
+   ],
+   "cands": [
+    "D0005",
+    "D0006",
+    "D0007",
+    "D0008",
+    "D0009",
+    "D0010"
+   ]
+  },
+  {
+   "dep": 1046,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "GW.TACHYON update of 2026-07-06: the US public-domain constraint and older translations (D0012); 'Not Gutenberg (AI-mediated text rejected)' (D0016); the archive's snapshot of the Gutenberg catalog, 90,252 rows (string 'gutenberg/' in a path; read at §Corpora mirror). D0011, D0013–D0015 (the Feist plan's pipeline over Gutenberg translations, its cost) are said of the archive's plan and add nothing on the library",
+   "claims": [
+    "O1046-01",
+    "O1046-02",
+    "O1046-03"
+   ],
+   "cands": [
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "D0015",
+    "D0016"
+   ]
+  },
+  {
+   "dep": 1560,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-05: 'Project Gutenberg packaging under the PG licence', the earliest full instance of the seatings' formula (2026-08-29); #1522's I Ching row (2026-08-21) names the 'Project Gutenberg License' in a truncated table cell and is kept as an instance; #1682, #1689, #1716 repeat the formula (S4 instances)",
+   "claims": [
+    "O1560-01"
+   ],
+   "cands": [
+    "D0019",
+    "D0018"
+   ],
+   "instances": [
+    1522,
+    1682,
+    1689,
+    1716
+   ]
+  },
+  {
+   "dep": 1593,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Measuring the Operation, Not the Name: German texts from Project Gutenberg; 'Every text in the worked run is public … The tables can be rebuilt from the open sources in an afternoon' (D0020–D0021, R0002–R0004)",
+   "claims": [
+    "O1593-01"
+   ],
+   "cands": [
+    "R0002",
+    "R0003",
+    "R0004"
+   ]
+  },
+  {
+   "dep": 1605,
+   "strata": [
+    "D"
+   ],
+   "reason": "The First Draft v1.0: 'Das Kapital is not on Gutenberg in German', so the Hegel–Marx comparison cannot be run on the open shelf (D0025); #1594 (v0.42, superseded by #1605) carries the sentence identically (D0023), kept as an instance",
+   "claims": [
+    "O1605-01"
+   ],
+   "cands": [
+    "D0022",
+    "D0023",
+    "D0024",
+    "D0025"
+   ],
+   "instances": [
+    1594
+   ]
+  },
+  {
+   "dep": 1656,
+   "strata": [
+    "R"
+   ],
+   "reason": "The Work Bears the Mantle, Appendix C.2: the mantle-bearing Leaves of Grass of 1891–92 pointed to at Project Gutenberg #1322 outside the archive (R0005, R0006); a relation between the library and a work bearing the archive's mantles",
+   "claims": [
+    "O1656-01"
+   ],
+   "cands": [
+    "R0005",
+    "R0006"
+   ]
+  },
+  {
+   "dep": 1668,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Noun Becomes a Verb: works 'cited by chapter from Gutenberg texts' for want of print pagination; a title page confirmed from the Gutenberg title page. The footnotes naming eBook numbers (R0007 and others) are bibliography lines",
+   "claims": [
+    "O1668-01"
+   ],
+   "cands": [
+    "R0007"
+   ]
+  },
+  {
+   "dep": 1680,
+   "strata": [
+    "R"
+   ],
+   "reason": "The Living Academy v0.5, F4 The originals shelf: Project Gutenberg among the shelf's 'own sources' and comparators; #1678 (v0.4, superseded by #1680) carries the sentence identically, kept as an instance",
+   "claims": [
+    "O1680-01"
+   ],
+   "cands": [],
+   "instances": [
+    1678
+   ]
+  },
+  {
+   "dep": 1689,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-19: the edition behind two Gutenberg texts identified (Morris's second edition of 1869; a later Knopf printing of The Prophet whose book text is 1923's) (R0013, R0014 the packaging formula)",
+   "claims": [
+    "O1689-01"
+   ],
+   "cands": [
+    "R0013",
+    "R0014"
+   ]
+  },
+  {
+   "dep": 1707,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-24: a Gutenberg text 'seated with its Gutenberg header and licence text intact' (R0015)",
+   "claims": [
+    "O1707-01"
+   ],
+   "cands": [
+    "R0015",
+    "R0016"
+   ]
+  },
+  {
+   "dep": 1710,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-26: the licence 'governs use of the Project Gutenberg name and trademark', the text public domain in the United States; each Gutenberg file kept with its header and licence and named a transcription beside the scan of its edition (R0017–R0022); #1712 repeats both sentences in six seats (S4 instances)",
+   "claims": [
+    "O1710-01",
+    "O1710-02"
+   ],
+   "cands": [
+    "R0017",
+    "R0018",
+    "R0019",
+    "R0020",
+    "R0021",
+    "R0022"
+   ],
+   "instances": [
+    1712
+   ]
+  },
+  {
+   "dep": 1711,
+   "strata": [
+    "R"
+   ],
+   "reason": "The Originals Library MPAI (active version): its licence classes, 'gutenberg 16'; #1709, superseded by #1711, kept as an instance. The location column 'gutenberg' in its catalogue rows is a table cell",
+   "claims": [
+    "O1711-01"
+   ],
+   "cands": [],
+   "instances": [
+    1709
+   ]
+  },
+  {
+   "dep": 1712,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-27: a Monadologie 'catalogued as 1909' whose title page reads 1900; Kafka's works 'each as Project Gutenberg's transcription of the edition its header names' (R0023–R0031)",
+   "claims": [
+    "O1712-01",
+    "O1712-02"
+   ],
+   "cands": [
+    "R0023",
+    "R0024",
+    "R0025",
+    "R0026",
+    "R0027",
+    "R0028",
+    "R0029",
+    "R0030",
+    "R0031"
+   ]
+  },
+  {
+   "dep": 1713,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "EA-CORPORA-28: Philip K. Dick's unrenewed stories open 'in Project Gutenberg's transcriptions from their magazine printings', its catalogue used to check his bibliography",
+   "claims": [
+    "O1713-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1720,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-30: the Principia transcription of the first edition with its transcribers' corrections listed; the Opticks of the fourth edition (Distributed Proofreaders, 2010) held beside the first printing; the header and footer kept as served",
+   "claims": [
+    "O1720-01",
+    "O1720-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/project-gutenberg-aimode-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, PER note, query note and surface basis for the entity's capture (OBS-d3c1028b7ac2, 2026-11-01), the archive's statements on the composition at the address (CAP-1-01 to CAP-1-15)"
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/project-gutenberg (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'project-gutenberg'], organizing_question, admission_rule, areas)",
+   "reason": "the traininglayerliterature.org layer census record, the archive's own record of the entity (TLL-01 to TLL-37); its tll_reading the archive's reading"
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": "1522, 1682, 1689, 1716, 1712 (formula sentences)",
+   "reason": "the seatings' packaging and normalization formulas, repeated seat by seat: one lineage each with the earliest full instance (#1560, #1710); S4, kept as instances"
+  },
+  {
+   "dep": "1682, 1689, 1707, 1710, 1712, 1713, 1716, 1720 (edition and item lines)",
+   "reason": "eBook numbers in edition lists and verified loci ('Gutenberg text', '(Gutenberg)') are bibliography lines and loci; read, no claim beyond those ledgered"
+  },
+  {
+   "dep": 1684,
+   "reason": "the Prediction Index: restates #1046's forecast of tens of dollars 'across Gutenberg's classical translations' (D0046); one lineage with #1046's plan, said of the archive's pipeline; adds nothing on the library"
+  },
+  {
+   "dep": 1716,
+   "reason": "R0032, a verified locus naming Johannes Sigil: the R match is the heteronym's name in a locus line, no relation of the library to an archive object"
+  },
+  {
+   "dep": "1, 44, 70, 109, 120, 131, 230, 599, 612, 716, 863, 865, 870, 877, 909, 910, 912, 927, 943, 1008, 1038, 1039, 1368, 1373, 1460, 1463, 1684 (class: attribution stripped)",
+   "reason": "the archive's attribution severance, provenance erasure and attribution stripping are applied to DOIs, repositories, the composition layer and CC BY-SA commons works; none is applied to texts redistributed with references to their source library removed, the class the field sources (B3 F31, F32); not admitted (§3.4 guard)"
+  },
+  {
+   "dep": "481, 1617 (class: machine-made works)",
+   "reason": "'generated novel operational structures' and 'the composition layer' are said of a summarizer at the archive's own specification; not of works made from a library's texts"
+  },
+  {
+   "dep": "1044, 1052, 1414, 1678, 1680, 1682, 1698, 1699, 1707, 1709, 1711, 1716 (class: digital libraries)",
+   "reason": "'digital library' and 'public-domain texts' in the archive's self-description (Alexanarch as a digital library), licence lines and catalogue rows; no archive category applied to the class beyond the sentences admitted under D"
+  },
+  {
+   "dep": "1715, 1716, 1717 (class: the undocumented edition)",
+   "reason": "'copy-text' is said of the archive's own critical edition of Belief & Technique for Telepathic Prose; not of a library transcription"
+  },
+  {
+   "dep": "(O-direct candidates)",
+   "reason": "26 O-direct candidates: archive categories co-occurring with the entity's string in the D sentences above (e.g. 'digital humanities', 'CC BY-SA 4.0', 'Perseus'); read with the D candidates; none applies an archive category to the library beyond the claims admitted"
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543,
+   416,
+   735,
+   943,
+   1044,
+   1046,
+   1560,
+   1593,
+   1605,
+   1656,
+   1668,
+   1680,
+   1689,
+   1707,
+   1710,
+   1711,
+   1712,
+   1713,
+   1720
+  ],
+  "candidates": 234,
+  "deposits": 216,
+  "admitted": [],
+  "rejected": "234 candidates in 216 deposits, cited by or citing the admitted deposits (the anchors' citation neighbourhoods chiefly: the Semantic Economy, the Space Ark, the Capture Registry papers, the mantle objects, the seatings' neighbours). None names the library (the string pass would have found it); 18 of them hold O-class candidates already read above and not admitted; the rest were read by title and by the four class patterns and carry no sentence on a digital library's texts entering training, on works machine-made from a library's texts, on attribution stripped from redistributed texts or on an undocumented edition. None admitted."
+ },
+ "lineages": [
+  {
+   "lineage": "packaging under the licence",
+   "instances": [
+    1560,
+    1522,
+    1682,
+    1689,
+    1716
+   ],
+   "earliest": 1560
+  },
+  {
+   "lineage": "transcription named beside the scan",
+   "instances": [
+    1710,
+    1712
+   ],
+   "earliest": 1710
+  },
+  {
+   "lineage": "Das Kapital not on Gutenberg in German",
+   "instances": [
+    1594,
+    1605
+   ],
+   "earliest": 1594
+  },
+  {
+   "lineage": "originals shelf sources",
+   "instances": [
+    1678
+   ],
+   "earliest": 1678
+  },
+  {
+   "lineage": "licence classes",
+   "instances": [
+    1709
+   ],
+   "earliest": 1709
+  }
+ ],
+ "observations": [
+  "The archive's bearing on Project Gutenberg runs chiefly through its own shelf: from #1560 (2026-08-29) to #1720 (2026-10-30) the seatings take texts from the library, keep its header and licence with each file, name each a transcription, and identify the edition behind it from title page and header. Those acts bear on two of the census's unanswered questions, which edition a text was digitized from and the name a text keeps after passage.",
+  "#1046's 'Not Gutenberg (AI-mediated text rejected)' (2026-07-06) is a statement of the library's acceptance policy, held by the archive without a cited source; the home page lists computer-generated audiobooks. Both composed (P_coh); the open block asks what the library's own policy says.",
+  "#735 designs, under the heteronym Nobel Glas, a training corpus drawn 30% from the library: the archive's own work places the library's texts in a training set, as the Pile's PG-19 does in the field.",
+  "The string pass misses the bare 'Gutenberg' unless aliased: #1044 and #1046 name the library only as 'Gutenberg'. The alias was added and the pass re-run (config notes)."
+ ],
+ "counts": {
+  "D_candidates": 108,
+  "D_deposits": 23,
+  "R_candidates": 39,
+  "R_deposits": 13,
+  "O_direct": 26,
+  "O_class": 90,
+  "O_deposits": 53,
+  "H_candidates": 234,
+  "deposits_admitted": 20,
+  "instances_kept": 9,
+  "deposit_claims": 31,
+  "TLL_claims": 37,
+  "CAP_claims": 15
+ },
+ "lineages_composer": {
+  "packaging under the licence": {
+   "earliest": 1560,
+   "instances": [
+    1522,
+    1682,
+    1689,
+    1716
+   ]
+  },
+  "transcription named beside the scan": {
+   "earliest": 1710,
+   "instances": [
+    1712
+   ]
+  },
+  "Das Kapital not on Gutenberg in German": {
+   "earliest": 1594,
+   "kept": 1605,
+   "note": "#1594 superseded by #1605; the active version carries the claim, the earliest instance kept"
+  },
+  "originals shelf sources": {
+   "earliest": 1678,
+   "kept": 1680
+  },
+  "licence classes": {
+   "earliest": 1709,
+   "kept": 1711
+  }
+ }
+}

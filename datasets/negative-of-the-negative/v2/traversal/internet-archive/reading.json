@@ -1,0 +1,551 @@
+{
+ "row": "internet-archive",
+ "pass": "first reading, 2026-11-01; one citation hop from #186 and #1543 (the census anchors)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Internet Archive, the Wayback Machine or Open Library with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (web archives and readback: B2, B6, census question and tll_reading; digital libraries and lending: B1, B2, census kind; web crawls and corpora entering training: B2's crawlers and scraping sentence, B10, census area 'corpora'). #186 and #1543 read at the passages on corpora, persistence and the training loop (BRIEF-NEW-ROW-LAYER §6). A bare mention, an 'Accessed via archive.org' line, a citation of an archive.org item or a list of venues without a claim is not a claim on the entity.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 400,
+   "strata": [
+    "D"
+   ],
+   "reason": "Training Layer Literature: Executive Summary (2026-01-26): the genre's practice deposits works 'in persistent repositories (Zenodo, Internet Archive)' (D, function). Instances in one lineage: #232 'Timestamped archival deposits (Internet Archive, Zenodo)' (2026-01-04, the earliest of the list form), #317 and #959 'Archived versions (Wayback Machine, Zenodo)', #57 and #972 'For maximum retrieval-layer coverage: … Internet Archive' (S4: the instances add nothing; kept in the provenance graph)",
+   "claims": [
+    "D400-01"
+   ],
+   "cands": [
+    "D0014",
+    "D0009",
+    "D0012",
+    "D0035",
+    "D0001",
+    "D0036"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "the census anchor, read whole: persistence, the third criterion ('placed where the training and retrieval layers actually look'), and 'every one of these texts is, as a matter of fact, in the corpora' (O-class, web crawls and corpora whose texts enter machine training)",
+   "claims": [
+    "O186-01",
+    "O186-02"
+   ],
+   "cands": [
+    "(anchor, read whole)"
+   ]
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "the census anchor, read at §10: the institutional training loop x → M_t → y → corpus_{t+1} (O-class, corpora)",
+   "claims": [
+    "O1543-01"
+   ],
+   "cands": [
+    "(anchor, read at §§1, 10)"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "O"
+   ],
+   "reason": "'Training data is semantic capital. When you train on Wikipedia, Wikidata, Common Crawl, or any text corpus, you draw on accumulated semantic labor.' (O-class, corpora; the archive's category applied to text corpora, Common Crawl named)",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "O0339"
+   ]
+  },
+  {
+   "dep": 943,
+   "strata": [
+    "O"
+   ],
+   "reason": "'the training corpus — scraped from HTML that already discarded layout …' (O-class, corpora: what a scraped corpus delivers of a work)",
+   "claims": [
+    "O943-01"
+   ],
+   "cands": [
+    "O0529"
+   ]
+  },
+  {
+   "dep": 240,
+   "strata": [
+    "D"
+   ],
+   "reason": "PROBE-RESULT-005: archived versions in the Wayback Machine as evidence of a page's earlier state (D, function). Instances: #284, #381, #950, #918 (archived copies and Wayback captures as evidence or surfaces)",
+   "claims": [
+    "D240-01"
+   ],
+   "cands": [
+    "D0010",
+    "D0011",
+    "D0013",
+    "D0034",
+    "D0033"
+   ]
+  },
+  {
+   "dep": 597,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Invisibly Invisible, § 'The Internet Archive and Crawl-Policy Governance': the Wayback Machine treated as neutral, pages unarchived through robots.txt exclusions or owner requests, coverage dependent on opaque policy (D; O-direct 'depends on')",
+   "claims": [
+    "D597-01",
+    "D597-02"
+   ],
+   "cands": [
+    "D0016",
+    "D0017",
+    "D0018",
+    "D0019",
+    "O0331"
+   ]
+  },
+  {
+   "dep": 1403,
+   "strata": [
+    "D"
+   ],
+   "reason": "Revelation First work plan, evidence of exhausted hunt: the Wayback Machine holds no snapshot of a five-day live window (D, documented)",
+   "claims": [
+    "D1403-01"
+   ],
+   "cands": [
+    "D0043"
+   ]
+  },
+  {
+   "dep": 1606,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "AXN as Anti-Suppression Infrastructure v5: WARC's genealogy from Kimpton and Kahle's ARC for the Internet Archive's crawler output (D); the evidentiary object of web archiving (O-class, web archives)",
+   "claims": [
+    "D1606-01",
+    "D1606-02"
+   ],
+   "cands": [
+    "D0079",
+    "D0080"
+   ]
+  },
+  {
+   "dep": 1678,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "The Living Academy: 'A *web archive* captures pages over time (the Internet Archive).' (D); the comparator table setting it beside Alexanarch (R). #1680, the same mantle object deposited twice the same day, carries both verbatim: instance",
+   "claims": [
+    "D1678-01",
+    "D1678-02"
+   ],
+   "cands": [
+    "D0088",
+    "D0089",
+    "D0090",
+    "D0093",
+    "D0094",
+    "D0095"
+   ]
+  },
+  {
+   "dep": 1458,
+   "strata": [
+    "D"
+   ],
+   "reason": "'The Loeb volumes on archive.org are lending-restricted.' (D, documented). Instances: #1569 (holdings lending-restricted), #1682 (Blast 2 access-restricted, HTTP 401)",
+   "claims": [
+    "D1458-01"
+   ],
+   "cands": [
+    "D0048",
+    "D0049",
+    "D0057",
+    "D0102"
+   ]
+  },
+  {
+   "dep": 1656,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Work Bears the Mantle: Howl borrowable from the Internet Archive; a machine reader without a loan reads from a copy it can name (D, interpretation)",
+   "claims": [
+    "D1656-01"
+   ],
+   "cands": [
+    "D0083"
+   ]
+  },
+  {
+   "dep": 1522,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-01: 'the archive.org OCR strips Coptic script entirely' (D, documented). Instance: #1570 (the Fraktur OCR failure)",
+   "claims": [
+    "D1522-01"
+   ],
+   "cands": [
+    "D0056",
+    "D0058"
+   ]
+  },
+  {
+   "dep": 1682,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-18: 'Text layers are the Internet Archive's OCR, uncorrected; the scans are the witnesses.' (D). Instances: #1707, #1710, #1712, #1720 ('Internet Archive OCR text layers as fetched, uncorrected')",
+   "claims": [
+    "D1682-01"
+   ],
+   "cands": [
+    "D0108",
+    "D0134",
+    "D0136",
+    "D0147",
+    "D0175"
+   ]
+  },
+  {
+   "dep": 1698,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-20: every Internet Archive file checked against the md5 the Archive publishes; none differed (D, documented). Instances: #1699, #1700, #1707, #1710, #1712, #1716",
+   "claims": [
+    "D1698-01"
+   ],
+   "cands": [
+    "D0111",
+    "D0117",
+    "D0118",
+    "D0125",
+    "D0126",
+    "D0132",
+    "D0137",
+    "D0141",
+    "D0142",
+    "D0145",
+    "D0148",
+    "D0150",
+    "D0151",
+    "D0153",
+    "D0156",
+    "D0158",
+    "D0160",
+    "D0162",
+    "D0165",
+    "D0167",
+    "D0173",
+    "D0201"
+   ]
+  },
+  {
+   "dep": 1720,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-CORPORA-30: items of the microfilm series carry no rights or licence field (D, documented); the copy-by-copy rights statements of the same deposit an instance",
+   "claims": [
+    "D1720-01"
+   ],
+   "cands": [
+    "D0174",
+    "D0178",
+    "D0183",
+    "D0185",
+    "D0187",
+    "D0190",
+    "D0195"
+   ]
+  },
+  {
+   "dep": 746,
+   "strata": [
+    "D"
+   ],
+   "reason": "The Sorting Function §2: a partial counterexample at meaningful scale with a non-extractive mission; 'legally vulnerable in ways that constrain its operation and have produced documented self-censorship' (D, interpretation)",
+   "claims": [
+    "D746-01",
+    "D746-02"
+   ],
+   "cands": [
+    "D0022",
+    "D0023",
+    "O0391"
+   ]
+  },
+  {
+   "dep": 909,
+   "strata": [
+    "R"
+   ],
+   "reason": "EA-RHIZOME-01: the Wayback case, recovered material on the archive's pre-fork deposits, a new set typed by its source (R: the entity and the archive's own records)",
+   "claims": [
+    "R909-01"
+   ],
+   "cands": [
+    "D0030",
+    "D0031",
+    "D0032"
+   ]
+  },
+  {
+   "dep": 1409,
+   "strata": [
+    "R"
+   ],
+   "reason": "EA-SPXI-ANALOG-01: mirroring masters to the Internet Archive, its OCR a fifth channel and a custody; 'Sovereign static + Internet Archive remains the distribution doctrine.' (R). Instance: #1407 (mirroring at record-page live). Also a hop candidate (H0013)",
+   "claims": [
+    "R1409-01",
+    "R1409-02"
+   ],
+   "cands": [
+    "D0046",
+    "D0047",
+    "D0045",
+    "H0013"
+   ]
+  },
+  {
+   "dep": 149,
+   "strata": [
+    "R"
+   ],
+   "reason": "CTI_WOUND: external archival of surface states through partners (Internet Archive) whose preservation does not depend on the surface (R). Instance: #1389",
+   "claims": [
+    "R149-01"
+   ],
+   "cands": [
+    "D0008",
+    "D0042",
+    "O0088",
+    "O0697"
+   ]
+  },
+  {
+   "dep": 115,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Google Identity Architecture: entity reconciliation draws on Open Library book metadata (D, Open Library); the Lee Sharks entity carries Open Library records (R)",
+   "claims": [
+    "R115-01"
+   ],
+   "cands": [
+    "D0004",
+    "D0005",
+    "O0067",
+    "O0068"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/internet-archive-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note and query note for the entity's capture (OBS-106c7cfa9d9a, 2026-11-01)",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/internet-archive (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'internet-archive'], organizing_question, admission_rule, areas)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1); where a field restates the Wikipedia article (B2) it is one lineage with that source; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36",
+    "TLL-37",
+    "TLL-38",
+    "TLL-39",
+    "TLL-40"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": "843",
+   "reason": "'Marx/Engels Internet Archive' (marxists.org): the Marxists Internet Archive, a homonym and a distinct entity (it has its own /non row); not a claim on the entity",
+   "cands": [
+    "D0027",
+    "D0028"
+   ]
+  },
+  {
+   "dep": "683, 1184, 1362, 1474, 1476, 1478, 1482, 1575, 1593, 1594, 1603, 1605, 1668, 1669, 1716, 1689, 1699, 1700, 1707, 1710, 1712, 1720 (citation lines)",
+   "reason": "'Accessed via archive.org', item identifiers and 'Internet Archive scan' source lines: uses of the library as a source of editions, citation apparatus without a claim on the entity; where the same deposits state a property of the library (OCR, md5, rights, lending) they are admitted above as instances",
+   "cands": [
+    "D0020",
+    "D0040",
+    "D0041",
+    "D0050",
+    "D0052",
+    "D0053",
+    "D0054",
+    "D0064",
+    "D0065",
+    "D0066",
+    "D0067",
+    "D0068",
+    "D0069",
+    "D0071",
+    "D0084",
+    "D0085",
+    "D0086",
+    "D0097",
+    "D0109",
+    "D0110",
+    "D0112",
+    "D0114",
+    "D0115",
+    "D0127",
+    "D0133",
+    "D0135",
+    "D0138"
+   ]
+  },
+  {
+   "dep": "830, 1025",
+   "reason": "organic search results listing a PDF hosted on the Internet Archive: observations of a search page, no claim on the entity",
+   "cands": [
+    "D0025",
+    "D0026",
+    "D0037",
+    "D0038"
+   ]
+  },
+  {
+   "dep": "736, 1044, 1405, 908, 1682 (queues)",
+   "reason": "provisioning lists, an egress note, a roadmap change ('replaces the Internet Archive scholar collections proposal') and queue lines ('located on the Internet Archive and not yet read'): no claim on the entity",
+   "cands": [
+    "D0021",
+    "D0039",
+    "D0044",
+    "D0029",
+    "D0099",
+    "D0101"
+   ]
+  },
+  {
+   "dep": "(O-class, web archives: link rot)",
+   "reason": "35 candidates on the string 'link rot' and 'archived copy': the archive's category of link rot is applied to DOIs, OpenAIRE and platforms, not to web archives; #1044's staleness log of 'Wayback captures' is a proposal, read, unadmitted",
+   "cands": [
+    "O0010",
+    "O0015",
+    "O0473",
+    "O0476",
+    "O0584"
+   ]
+  },
+  {
+   "dep": "(O-class, digital libraries)",
+   "reason": "20 candidates: the phrase 'digital library' said of Alexanarch, Perseus, the World Digital Library and others; none applies an archive category to the class as the entity belongs to it beyond #1678, admitted",
+   "cands": [
+    "O0753",
+    "O0754",
+    "O0784"
+   ]
+  },
+  {
+   "dep": "(O-class, corpora: 711 candidates)",
+   "reason": "read by filter and sample: the bulk concern the archive's own deposits entering training and retrieval ('the Ark's deposits … are in the training distribution of every system that crawled Zenodo'; 'Publish in venues heavily crawled for training data'), the composition layer's crawling and indexing decisions, and the semantic-labor and model-collapse lines. They apply the archive's categories to its own works or to the composition layer, and say nothing of crawls or holdings as the entity holds them; four admitted above (#186, #1543, #623, #943). Volume is no ground of removal: these are unadmitted by reading (§3.4)",
+   "cands": [
+    "O0012",
+    "O0158",
+    "O0251",
+    "O0322",
+    "O0399"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [
+   "#1409 (already admitted at R; H0013)"
+  ],
+  "rejected": "#129, #160, #337, #382, #473, #481, #590, #603, #604, #738, #784, #819, #1441, #1443, #1521, #1526, #1527, #1528, #1540, #1544, #1545, #1555, #1684, #1709, #1711, #1721, #1722: cited by or citing the anchors on other subjects (the AI Mode traversals, the prize, the operator stacks, handwriting, the prediction index, the originals library); #1709 and #1711 name archive.org only as a source line ('signed works via archive.org scans') and a table row on digital libraries; none says anything of the entity",
+  "file": "candidates-H.jsonl"
+ },
+ "observations": [
+  "#597 holds the robots.txt and owner-request exclusions from the Archive's own documentation; T composes robots.txt from the Reddit card, where the field holds no statement of it.",
+  "The archive is a heavy user of the library: twenty-odd seatings of the originals library fetch its scans, check its md5s and record its OCR and rights fields; the properties those seatings state are admitted, the source lines are not.",
+  "The string pass ran with an alias for the bare host archive.org only (archived-copy URLs are citation apparatus); the alias 'Open Library' caught #115's entity-reconciliation lists."
+ ],
+ "counts": {
+  "D_candidates": 201,
+  "R_candidates": 195,
+  "O_candidates": 817,
+  "O_direct": 51,
+  "O_class": 766,
+  "H_candidates": 28,
+  "deposits_admitted": 21,
+  "deposit_claims": 27,
+  "TLL_claims": 40,
+  "CAP_claims": 12
+ }
+}

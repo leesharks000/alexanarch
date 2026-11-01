@@ -1,0 +1,1212 @@
+{
+ "row": "have-i-been-trained",
+ "address": "Have I Been Trained",
+ "addresses": [
+  "Have I Been Trained"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw HTML for the own pages' title and meta description, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 Mentionable's post; B2 a Facebook post, unreachable, snippet only; B3 a YouTube video, unreachable, title only; B4 ToolCenter's review). B_R, the reference pool: 'own_page', the census's saved pages (B5 haveibeentrained.com, B6 its /faq, B7 spawning.ai), and 'wikipedia', the record of the article's absence (B8).",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B5–B7 the census's saved copies; B8 Wikipedia's 404 page with B8.raw.html the raw-wikitext error; tries/ the Wikipedia tries and a later refetch of the home page)",
+ "counts": {
+  "sources": 8,
+  "B_D": 4,
+  "B_R": 4,
+  "fetched": 6,
+  "unreachable": 2,
+  "claims": 45,
+  "claims_B_D": 39,
+  "claims_B_R": 6,
+  "quotes_ok": 45
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "Mentionable AI — Have I Been Trained? Free Tool to Check AI Training Data (2026)",
+   "fetched": "card; B1.html sha256 c05ecc0cc700da46, HTTP 200 at 2026-11-01T15:13:18Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "Facebook — What happened to have i been trained website? - Facebook",
+   "fetched": "unreachable: unreachable: no URL found for the card by its title and site (two web searches, one extended); Facebook was not fetched by any other route; the card's title and snippet are its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "YouTube·AI Samson — 99% of People Don't Know If They Are In The AI Art Database",
+   "fetched": "unreachable: unreachable: no URL found for the video by its title and channel (two web searches, one extended; one result is a third-party blog page bearing the same title, delightfuldesignstudio.com, not the card's source and not admitted); no transcript fetched; admitted through its title alone (the card carries no snippet), §3.1(a)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "www.toolcenter.ai — Have I Been Trained? Review 2026",
+   "fetched": "card; B4.html sha256 23c0f0ce8317f494, HTTP 200 at 2026-11-01T15:13:19Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "haveibeentrained.com, the home page (census own page)",
+   "fetched": "own page; B5.html sha256 40dc9cb4a48518b8, HTTP 200 at 2026-11-01T05:07:05Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B6",
+   "card": "haveibeentrained.com/faq (census own page)",
+   "fetched": "own page; B6.html sha256 6ca4efeb6186770e, HTTP 200 at 2026-11-01T05:07:06Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B7",
+   "card": "spawning.ai, the operator's home page (census own page)",
+   "fetched": "own page; B7.html sha256 4a4f112763b533a2, HTTP 200 at 2026-11-01T05:07:06Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B8",
+   "card": "Wikipedia — Have I Been Trained? (no article)",
+   "fetched": "wikipedia: no article; rendered page HTTP 404 at 2026-11-01T15:12:45Z, sha256 18100c141d518c05; raw wikitext HTTP 404 for five titles; search API HTTP 429 twice",
+   "origin": "wikipedia",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4"
+  ],
+  "body_named": [],
+  "body_named_note": "T's body links the words 'Have I Been Trained?' to an opaque Google redirect (google.com/goto?url=…, its target encrypted and not recoverable from the paste) and names Spawning AI, LAION-5B, Stable Diffusion, GPTBot and Google-Extended as entities; it names no source beyond its four cards, and its markers point to the cards. The service's own address is not entered in B_D on an unrecoverable link: it stands in B_R as the census own page.",
+  "own_pages": [
+   "B5",
+   "B6",
+   "B7"
+  ],
+  "wikipedia": [
+   "B8"
+  ],
+  "census_third_party": [],
+  "unreachable": [
+   "B2",
+   "B3"
+  ],
+  "title_only": [
+   "B3"
+  ],
+  "snippet_only": [
+   "B2"
+  ],
+  "wikipedia_state": "no article: 'Have I Been Trained?' rendered page HTTP 404 ('Wikipedia does not have an article with this exact name.'), 2026-11-01T15:12:45Z; raw wikitext HTTP 404 for 'Have_I_Been_Trained?', 'Have_I_Been_Trained', 'Spawning_(company)', 'Spawning_AI', 'Haveibeentrained.com'; the search API refused with HTTP 429 twice (recorded, not pursued). B8 records the absence, in B_R.",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+   ],
+   "B_R": [
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (no source named in the body beyond the cards); B_R, the reference pool: the census's three own pages (haveibeentrained.com, its /faq, spawning.ai) and the record of Wikipedia's absence. T against L_F(B_D) uses B1–B4 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 1",
+    "card": "Mentionable AI — Have I Been Trained? Free Tool to Check AI Training Data (2026)",
+    "url": "https://mentionable.ai/en/blog/have-i-been-trained-audit-tool",
+    "kind": "Overview card (a blog post of Mentionable, an AI-visibility tracking vendor; by Alexandre Rastello, its founder; published 3 April 2026, updated 24 September 2026)",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B1.html",
+      "sha256": "c05ecc0cc700da467925841be14cdfb6fa22153f8c984c4aef94f3f736cb23c3"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B1.txt",
+      "sha256": "79b505ffaed18157fee0127de06d63a7938bca3618700b1e18d5155989accea9"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:18Z",
+     "http": 200,
+     "url": "https://mentionable.ai/en/blog/have-i-been-trained-audit-tool",
+     "raw": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B1.html",
+     "raw_sha256": "c05ecc0cc700da467925841be14cdfb6fa22153f8c984c4aef94f3f736cb23c3",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B1.txt"
+     ],
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)"
+    },
+    "names_operator": "yes ('Have I Been Trained by Spawning AI'; 'The tool was built by Spawning AI')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL found by WebSearch (extended) on the card's site and title; the page's <title> is the card title with ' | Mentionable'. The card snippet ('Key Takeaways You publish an article. It gets indexed. …') joins the page's heading 'Key Takeaways' to its first body paragraph.",
+    "searches": [
+     "WebSearch '\"Have I Been Trained? Free Tool to Check AI Training Data\" Mentionable'",
+     "WebSearch (extended) 'mentionable \"Have I Been Trained\" AI training data free tool'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "have-i-been-trained-aio-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "Have I Been Trained? Free Tool to Check AI Training Data (2026)",
+    "card_snippet": "Key Takeaways You publish an article. It gets indexed. It ranks on Google. Then one day you wonder: did an AI model just... learn from it? Is your content sitti..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 2",
+    "card": "Facebook — What happened to have i been trained website? - Facebook",
+    "url": null,
+    "kind": "Overview card (a Facebook post or group thread; its URL not found)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: no URL found for the card by its title and site (two web searches, one extended); Facebook was not fetched by any other route; the card's title and snippet are its only text"
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "The card's title asks what happened to the website; its snippet opens 'Have I Been Trained? Any AI system is only as good as the data it is given.' Recorded unreachable (§3.1(a)); title and snippet stand as its text.",
+    "searches": [
+     "WebSearch '\"What happened to have i been trained website\" facebook'",
+     "WebSearch (extended) 'facebook \"What happened to have i been trained\" \"Any AI system is only as good as the data it is given\"'",
+     "WebSearch '\"have i been trained website\" facebook group what happened'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "have-i-been-trained-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "What happened to have i been trained website? - Facebook",
+    "card_snippet": "Have I Been Trained? Any AI system is only as good as the data it is given. AI image generation is only possible after “training” a model on vast amounts of ima..."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3 (video)",
+    "card": "YouTube·AI Samson — 99% of People Don't Know If They Are In The AI Art Database",
+    "url": null,
+    "kind": "Overview card (a YouTube video by AI Samson, 5:23; no snippet)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "url": null,
+     "result": "unreachable: no URL found for the video by its title and channel (two web searches, one extended; one result is a third-party blog page bearing the same title, delightfuldesignstudio.com, not the card's source and not admitted); no transcript fetched; admitted through its title alone (the card carries no snippet), §3.1(a)"
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "A video card with title and duration only.",
+    "searches": [
+     "WebSearch '\"99% of People Don't Know If They Are In The AI Art Database\" AI Samson'",
+     "WebSearch 'AI Samson youtube \"AI Art Database\" have i been trained'",
+     "WebSearch (extended) 'youtube.com \"99% of People Don't Know If They Are In The AI Art Database\"'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "have-i-been-trained-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "99% of People Don't Know If They Are In The AI Art Database",
+    "card_snippet": null
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4",
+    "card": "www.toolcenter.ai — Have I Been Trained? Review 2026",
+    "url": "https://www.toolcenter.ai/en/articles/have-i-been-trained-review-2026",
+    "kind": "Overview card (a review by the ToolCenter Editorial Team, a directory of AI tools; dated 26 March 2026, 'Last updated: March 2026')",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B4.html",
+      "sha256": "23c0f0ce8317f494056973f789276e95a0646dd04040811103c3c84009e49c2a"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B4.txt",
+      "sha256": "570529bb0231439d5f46513a8d0f318c55b43d0140a54c4a1fd12445eba4c8d7"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:19Z",
+     "http": 200,
+     "url": "https://www.toolcenter.ai/en/articles/have-i-been-trained-review-2026",
+     "raw": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B4.html",
+     "raw_sha256": "23c0f0ce8317f494056973f789276e95a0646dd04040811103c3c84009e49c2a",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B4.txt"
+     ],
+     "agent": "Mozilla/5.0 (compatible; traininglayerliterature-census)"
+    },
+    "names_operator": "yes ('built by Spawning AI'; 'a company founded by artists Mat Dryhurst and Holly Herndon')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL found by WebSearch on the card title (the English page; a Chinese edition at /zh/ also listed). The card snippet ('What Is Have I Been Trained? Have I Been Trained? is a web-based search tool …') is the page's heading and first sentence, verbatim.",
+    "searches": [
+     "WebSearch '\"Have I Been Trained? Review 2026\" toolcenter.ai'",
+     "WebSearch '\"Have I Been Trained? Free Tool to Check AI Training Data\" Mentionable' (returned the toolcenter URL)"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "have-i-been-trained-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "Have I Been Trained? Review 2026",
+    "card_snippet": "What Is Have I Been Trained? Have I Been Trained? is a web-based search tool that lets you query the LAION-5B dataset — a collection of approximately 5.8 billio..."
+   },
+   {
+    "id": "B5",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census own page spawning-hibt--home; not surfaced by T",
+    "card": "haveibeentrained.com, the home page (census own page)",
+    "url": "https://haveibeentrained.com/",
+    "kind": "the entity's own page (haveibeentrained.com, the home page), saved by the census",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B5.html",
+      "sha256": "40dc9cb4a48518b85524cdeec13823f44116f6556123f1534bc67260b0dfe64b"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B5.txt",
+      "sha256": "69713770ff71bb2ddc55ca66477f3a45f3228eaeabf0a453af9035224938d60b"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T05:07:05Z",
+     "http": 200,
+     "url": "https://haveibeentrained.com/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B5.html",
+     "raw_sha256": "40dc9cb4a48518b85524cdeec13823f44116f6556123f1534bc67260b0dfe64b",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B5.txt"
+     ],
+     "census_copy": {
+      "src": "spawning-hibt--home",
+      "sha256": "40dc9cb4a48518b85524cdeec13823f44116f6556123f1534bc67260b0dfe64b",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "yes (the wordmark 'Spawning')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); Bn.txt is the census's text. A reference source: it shows nothing of what T had before it (§0.3). Refetched by this row at 2026-11-01T15:21:44Z with the census agent: HTTP 200, the same maintenance page (identical but for Cloudflare's email-protection token; tries/hibt-home-refetch.html, sha256 eb4193360f4905a6…).",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B6",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census own page spawning-hibt--faq; not surfaced by T",
+    "card": "haveibeentrained.com/faq (census own page)",
+    "url": "https://haveibeentrained.com/faq",
+    "kind": "the entity's own page (haveibeentrained.com/faq), saved by the census",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B6.html",
+      "sha256": "6ca4efeb6186770e9499b142d406d04ec12f8f9a87addb1be1e25042dd23a45c"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B6.txt",
+      "sha256": "69713770ff71bb2ddc55ca66477f3a45f3228eaeabf0a453af9035224938d60b"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T05:07:06Z",
+     "http": 200,
+     "url": "https://haveibeentrained.com/faq",
+     "raw": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B6.html",
+     "raw_sha256": "6ca4efeb6186770e9499b142d406d04ec12f8f9a87addb1be1e25042dd23a45c",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B6.txt"
+     ],
+     "census_copy": {
+      "src": "spawning-hibt--faq",
+      "sha256": "6ca4efeb6186770e9499b142d406d04ec12f8f9a87addb1be1e25042dd23a45c",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "yes (the wordmark 'Spawning')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); Bn.txt is the census's text. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B7",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census own page spawning-hibt--spawning; not surfaced by T",
+    "card": "spawning.ai, the operator's home page (census own page)",
+    "url": "https://spawning.ai/",
+    "kind": "the entity's own page (spawning.ai, the operator's home page), saved by the census",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B7.html",
+      "sha256": "4a4f112763b533a20c18ba63faff22550b7228c5df8dc7ca70f10b13385fc8f0"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B7.txt",
+      "sha256": "69e504e6af2fcb57b50f3b7183ac327ba6ae2a9ba1971474d41577a7a633a34b"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T05:07:06Z",
+     "http": 200,
+     "url": "https://spawning.ai/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B7.html",
+     "raw_sha256": "4a4f112763b533a20c18ba63faff22550b7228c5df8dc7ca70f10b13385fc8f0",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B7.txt"
+     ],
+     "census_copy": {
+      "src": "spawning-hibt--spawning",
+      "sha256": "4a4f112763b533a20c18ba63faff22550b7228c5df8dc7ca70f10b13385fc8f0",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "yes (the wordmark 'Spawning')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); Bn.txt is the census's text. A reference source: it shows nothing of what T had before it (§0.3). The census reads 71 characters of text here, below its reading threshold, unquoted; the page's <title> is 'Source.Plus' beside the Spawning wordmark.",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B8",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "the entity's Wikipedia article: none (the record of its absence)",
+    "card": "Wikipedia — Have I Been Trained? (no article)",
+    "url": "https://en.wikipedia.org/wiki/Have_I_Been_Trained%3F",
+    "kind": "Wikipedia's page for a title without an article",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B8.html",
+      "sha256": "18100c141d518c05670a353622ce0cb4f2beabed722d34b6ad5f84210d839615"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B8.txt",
+      "sha256": "36c5331fa04669d2d99fd35002ad07b7b9b660d83c4663394f7243e94279c1b4"
+     },
+     "B8.raw.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B8.raw.html",
+      "sha256": "0c41c9873c1d2d6cb81bdd246623ad7092b4d9e7228a843d9442ee90384b1b9c"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:45Z",
+     "http": 404,
+     "url": "https://en.wikipedia.org/wiki/Have_I_Been_Trained%3F",
+     "raw": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B8.html",
+     "raw_sha256": "18100c141d518c05670a353622ce0cb4f2beabed722d34b6ad5f84210d839615",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/B8.txt"
+     ],
+     "result": "no article: the rendered page HTTP 404 ('Wikipedia does not have an article with this exact name.'); raw wikitext HTTP 404 for 'Have_I_Been_Trained?' (2026-11-01T15:12:28Z), 'Have_I_Been_Trained' (15:12:30Z), 'Spawning_(company)' and 'Spawning_AI' (15:12:32Z), 'Haveibeentrained.com' (15:12:34Z), each a Wikimedia error page (tries/wp-*.raw); the search API answered HTTP 429 (too many requests) at 15:12:45Z and again at 15:13:48Z, one retry with the same agent, recorded and not pursued",
+     "tries": [
+      {
+       "title": "Have_I_Been_Trained?",
+       "http": 404,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-Have_I_Been_Trained_3F_.raw",
+       "sha256": "0c41c9873c1d2d6cb81bdd246623ad7092b4d9e7228a843d9442ee90384b1b9c"
+      },
+      {
+       "title": "Have_I_Been_Trained",
+       "http": 404,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-Have_I_Been_Trained_.raw",
+       "sha256": "77adeb7af839030081d57f10b18d4b79d98b38232a3298966184570ca1f74155"
+      },
+      {
+       "title": "Spawning_(company)",
+       "http": 404,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-Spawning__company__.raw",
+       "sha256": "2f123dbdbe5db86d639cb97353812b24d65f65719a8de87b15ede370bd8994f6"
+      },
+      {
+       "title": "Spawning_AI",
+       "http": 404,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-Spawning_AI_.raw",
+       "sha256": "bb8088f42d8c7b431930e4e91cbec4e1658aeb5dc65a406d74cb1aa2a617fd1d"
+      },
+      {
+       "title": "Haveibeentrained.com",
+       "http": 404,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-Haveibeentrained_com_.raw",
+       "sha256": "db5048dde19d292d21146493ab4f5f3f5c4a66af9ed0809d7521cea95ba005c1"
+      },
+      {
+       "api": "list=search srsearch=\"Have I Been Trained\"",
+       "http": 429,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-search.json"
+      },
+      {
+       "api": "retry",
+       "http": 429,
+       "file": "datasets/negative-of-the-negative/v2/intake/have-i-been-trained-20261101/tries/wp-search-retry.json"
+      }
+     ]
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "The record of the absence is a fact of the row (§3.1(a)): neither the service nor its operator has an English Wikipedia article under these titles on 2026-11-01.",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Key Takeaways",
+   "quote": "Have I Been Trained by Spawning AI lets you search LAION-5B to check if your images were used to train AI models like Stable Diffusion.",
+   "claim": "a tool of Spawning AI for searching LAION-5B to check whether images were used to train models such as Stable Diffusion",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a search of LAION-5B",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Key Takeaways",
+   "quote": "Spawning's opt-out tools (ai.txt, Do Not Train registry) help creators prevent future use of their work in training datasets.",
+   "claim": "Spawning's opt-out tools, ai.txt and the Do Not Train registry, help creators prevent future use of their work in training datasets",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "the registry: who it addresses, what it does",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Key Takeaways",
+   "quote": "Checking training data presence is fundamentally different from monitoring whether AI platforms actively recommend your brand in real-time conversations.",
+   "claim": "the publisher's distinction: training-data presence against AI visibility, the service it sells",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the cards and their genre",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What Have I Been Trained actually does",
+   "quote": "You upload an image (or search by text), and the tool shows you matching or similar images from the dataset.",
+   "claim": "search by uploaded image or by text; the tool shows matching or similar images from the dataset",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "how a search works",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What Have I Been Trained actually does",
+   "quote": "The tool was built by Spawning AI, a company focused on creator rights in the age of generative AI. Their thesis is simple: creators should know when their work is used, and they should be able to say no.",
+   "claim": "built by Spawning AI, a company focused on creator rights; its thesis that creators should know when their work is used and be able to say no",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who makes it: Spawning",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Spawning's opt-out ecosystem",
+   "quote": "ai.txt works like robots.txt, but specifically for AI crawlers. You place it on your website to signal which content AI companies can and cannot use for training. Several AI companies have agreed to respect it.",
+   "claim": "ai.txt, a robots.txt for AI crawlers signalling which content may be used for training; several AI companies have agreed to respect it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "crawler directives: robots.txt, ai.txt",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Spawning's opt-out ecosystem",
+   "quote": "The Do Not Train registry lets creators register their work and declare it off-limits for AI training. Think of it as a global opt-out list.",
+   "claim": "the registry lets creators register work and declare it off-limits for AI training, a global opt-out list",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the registry: who it addresses, what it does",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Spawning's opt-out ecosystem",
+   "quote": "DeviantArt, for example, integrated Spawning's technology so artists can flag their work as not available for AI training.",
+   "claim": "DeviantArt integrated Spawning's technology so artists can flag their work as unavailable for AI training",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who honours it",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The gap most brands don't see",
+   "quote": "For text-based models like those behind ChatGPT or Claude, there's no public tool equivalent to Have I Been Trained. You can't search their training corpora.",
+   "claim": "for text-based models there is no public equivalent; their training corpora cannot be searched",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Frequently Asked Questions",
+   "quote": "No. Have I Been Trained only searches the LAION-5B image dataset. It does not cover text-based training data used by the models behind ChatGPT, Claude, or Gemini.",
+   "claim": "only the LAION-5B image dataset; no text-based training data of ChatGPT, Claude or Gemini",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What to do next",
+   "quote": "For text content, configure your robots.txt to block AI crawlers you want to exclude (GPTBot, Google-Extended, CCBot, anthropic-ai).",
+   "claim": "for text, robots.txt rules to block the AI crawlers one wishes to exclude",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "crawler directives: robots.txt, ai.txt",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Frequently Asked Questions; byline",
+   "quote": "Have I Been Trained is a free tool created by Spawning AI … Alexandre Rastello … Founder & CEO, Mentionable … Published April 3, 2026· Updated September 24, 2026",
+   "claim": "a free tool; the post by Mentionable's founder, published 3 April 2026 and updated 24 September 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the cards and their genre",
+   "date": "2026-04-03 (published; updated 2026-09-24)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 79b505ffaed18157…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title",
+   "quote": "What happened to have i been trained website?",
+   "claim": "the card asks what happened to the website",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "its state on 1 November 2026",
+   "date": "undated (card only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet",
+   "quote": "Have I Been Trained? Any AI system is only as good as the data it is given. AI image generation is only possible after “training” a model on vast amounts of ima...",
+   "claim": "the snippet: an AI system is only as good as its data; image generation follows training on vast amounts of images",
+   "modality": "documented",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the cards and their genre",
+   "date": "undated (card only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (video, 5:23)",
+   "quote": "99% of People Don't Know If They Are In The AI Art Database",
+   "claim": "a video titled that most people do not know whether they are in the AI art database",
+   "modality": "unsupported",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the cards and their genre",
+   "date": "undated (card only)",
+   "quote_ok": true,
+   "checked_against": "the card's site, title and note (video card, unreachable, no snippet), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What Is Have I Been Trained?",
+   "quote": "Have I Been Trained? is a web-based search tool that lets you query the LAION-5B dataset — a collection of approximately 5.8 billion image-text pairs scraped from the open web.",
+   "claim": "a web-based search tool over LAION-5B, about 5.8 billion image-text pairs scraped from the open web",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: a search of LAION-5B",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What Is Have I Been Trained?",
+   "quote": "LAION-5B was the primary training dataset for Stable Diffusion 1.x and 2.x, and its derivatives have influenced numerous other open-source image models.",
+   "claim": "LAION-5B the primary training dataset of Stable Diffusion 1.x and 2.x",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a search of LAION-5B",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F18": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "What Is Have I Been Trained?",
+   "quote": "The tool was created by Spawning AI, a company founded by artists Mat Dryhurst and Holly Herndon (alongside their collaborators) with the explicit goal of giving creators more control over how their work is used in AI training.",
+   "claim": "created by Spawning AI, founded by the artists Mat Dryhurst and Holly Herndon with collaborators, to give creators more control over the use of their work in AI training",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "who makes it: Spawning",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F19": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "introduction",
+   "quote": "When generative AI art exploded in 2022, artists faced an uncomfortable question: were their images used — without permission — to train models like Stable Diffusion, Midjourney, and DALL-E? … Have I Been Trained?, built by Spawning AI, changed that. … Three years later, the tool has evolved significantly.",
+   "claim": "the tool arose from the 2022 question whether artists' images were used without permission; three years on it has changed",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "who makes it: Spawning",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F20": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Key facts",
+   "quote": "Price: Free to use, no account required for basic searches",
+   "claim": "free; no account for basic searches",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a search of LAION-5B",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F21": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "CLIP-Based Semantic Search",
+   "quote": "The tool does not perform pixel-by-pixel image matching. Instead, it uses OpenAI's CLIP (Contrastive Language-Image Pre-training) model to convert your query into a vector embedding, then finds the nearest neighbors in the LAION-5B embedding space.",
+   "claim": "search by CLIP embedding and nearest neighbours in LAION-5B, without pixel matching",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "how a search works",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F22": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "CLIP-Based Semantic Search; What This Means in Practice",
+   "quote": "A high similarity score suggests a strong match, but it is not proof of an exact copy — CLIP operates on semantic meaning, not pixel identity. … Finding your exact image in LAION-5B proves it was in the training data. Finding a similar image proves much less.",
+   "claim": "a similarity score is no proof of a copy; an exact image proves presence, a similar one much less",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "how a search works",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Step 2: Review Results",
+   "quote": "Results appear as a grid of thumbnail images with similarity scores. … The associated text caption from the dataset … The source URL where the image was originally scraped from",
+   "claim": "results: thumbnails with similarity scores, the dataset caption and the source URL from which the image was scraped",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "how a search works",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Step 3: Flag or Opt Out",
+   "quote": "Flag individual images for removal from the dataset … Register with the \"Do Not Train\" registry — a signal to model trainers that you do not consent to your work being used … Submit domain-level opt-outs to exclude an entire website",
+   "claim": "flag images for removal, register in the Do Not Train registry as a signal of non-consent to trainers, submit domain-level opt-outs",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the registry: who it addresses, what it does",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F25": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Strengths",
+   "quote": "In our testing with 20 images from a professional illustrator's portfolio, 14 appeared in the dataset — a 70% hit rate for work that had been publicly posted since 2015.",
+   "claim": "the reviewer's test: 14 of 20 portfolio images found, a 70% hit rate",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how a search works",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F26": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Limitations, 1",
+   "quote": "1. It only searches LAION-5B. This is the biggest limitation. … There is currently no public tool that can search Midjourney's or OpenAI's proprietary training data.",
+   "claim": "only LAION-5B; proprietary training data such as Midjourney's or OpenAI's cannot be searched by any public tool",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Limitations, 2",
+   "quote": "2. LAION-5B itself is a snapshot in time. The dataset was compiled primarily from Common Crawl data between 2021 and 2022.",
+   "claim": "LAION-5B a snapshot, compiled mainly from Common Crawl in 2021 and 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Limitations, 3",
+   "quote": "3. Metadata gaps. Many images in LAION-5B have poor or inaccurate text captions. If the original website did not include your name or a meaningful description alongside the image, text-based searches may miss it even if the image is present.",
+   "claim": "captions poor or inaccurate: without the maker's name beside the image, a text search may miss an image that is present",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "names and captions",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Limitations, 4",
+   "quote": "4. No detection of derivative use. If a model was trained on your art and someone generated a derivative image in your style, this tool cannot trace that connection. It only searches for the presence of original images in the dataset.",
+   "claim": "no detection of derivative use; only the presence of original images in the dataset",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The \"Do Not Train\" Registry: Does It Work?",
+   "quote": "As of 2026, the registry has over 80 million entries.",
+   "claim": "over 80 million registry entries (2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the registry: who it addresses, what it does",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Who Honors It?",
+   "quote": "Stability AI (partially, for newer model versions) … Hugging Face (as a hosting platform, enforces opt-out for models on their platform) … Some academic researchers (per their institutional ethics policies)",
+   "claim": "honoured partially by Stability AI, by Hugging Face as a host, by some academic researchers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who honours it",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Who Does Not?",
+   "quote": "Midjourney — No public commitment to honor the registry … OpenAI — No formal agreement (though they have their own takedown process) … Most open-source model trainers — No enforcement mechanism",
+   "claim": "not honoured by Midjourney or OpenAI by any commitment; no enforcement over most open-source trainers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who honours it",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Who Does Not?",
+   "quote": "The uncomfortable truth is that the \"Do Not Train\" registry is a consent signal, not an enforcement mechanism. It works only when model trainers choose to respect it.",
+   "claim": "the registry a consent signal, without enforcement; it works only where trainers choose to respect it",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "the registry: who it addresses, what it does",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Privacy Considerations",
+   "quote": "The company states that uploaded images are not stored permanently and are used only for the search query.",
+   "claim": "the company states uploads are not stored permanently and serve only the query",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how a search works",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Kudurru (Spawning AI)",
+   "quote": "A server-side tool for websites that detects and blocks AI training scrapers in real-time.",
+   "claim": "Kudurru, Spawning's server-side tool that detects and blocks AI training scrapers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "crawler directives: robots.txt, ai.txt",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The Bigger Picture",
+   "quote": "Have I Been Trained? does not solve the underlying problem — but it gives individual artists something they previously lacked: evidence.",
+   "claim": "it gives artists evidence, without solving the underlying problem",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Verdict: what to do with the results",
+   "quote": "If you don't find your work: This does not mean your images were not used — only that they are not in LAION-5B specifically.",
+   "claim": "not finding a work does not show it was unused, only that it is not in LAION-5B",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it cannot see: text and closed corpora",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "header; footer",
+   "quote": "Review10 min · March 26, 2026 · By ToolCenter Editorial Team … Last updated: March 2026. Features and dataset coverage verified at time of publication.",
+   "claim": "the review dated 26 March 2026; features verified at publication",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its state on 1 November 2026",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Alternatives and Complementary Tools",
+   "quote": "Have I Been Trained? is a search and detection tool. It tells you whether your images are in a specific dataset.",
+   "claim": "a search and detection tool telling whether images are in one specific dataset",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: a search of LAION-5B",
+   "date": "2026-03-26 (the review's date; \"Last updated: March 2026\")",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 570529bb0231439d…) or the card's title and snippet, whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page body (h1, sub)",
+   "quote": "Spawning Under Maintenance Hacking the mainframe...",
+   "claim": "the service's home page: the Spawning wordmark and a maintenance notice",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "its state on 1 November 2026",
+   "date": "2026-11-01 (the page as saved by the census, 05:07 UTC)",
+   "quote_ok": true,
+   "checked_against": "the census's saved text B5.txt (sha256 69713770ff71bb2d…) or its raw HTML B5.html, whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page body",
+   "quote": "AI trainers looking to respect the Do-Not-Train registry, please reach out to us at",
+   "claim": "the page addresses the registry to AI trainers who would respect it, asking them to make contact",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the registry: who it addresses, what it does",
+   "date": "2026-11-01 (the page as saved by the census, 05:07 UTC)",
+   "quote_ok": true,
+   "checked_against": "the census's saved text B5.txt (sha256 69713770ff71bb2d…) or its raw HTML B5.html, whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "raw HTML, meta description",
+   "quote": "<meta name=\"description\" content=\"Data Governance for Generative AI\" />",
+   "claim": "the page's meta description: Data Governance for Generative AI",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "who makes it: Spawning",
+   "date": "2026-11-01 (the page as saved by the census, 05:07 UTC)",
+   "quote_ok": true,
+   "checked_against": "the census's saved text B5.txt (sha256 69713770ff71bb2d…) or its raw HTML B5.html, whitespace-normalised"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page body",
+   "quote": "Spawning Under Maintenance Hacking the mainframe... AI trainers looking to respect the Do-Not-Train registry",
+   "claim": "the /faq address serves the same maintenance page",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its state on 1 November 2026",
+   "date": "2026-11-01 (the page as saved by the census, 05:07 UTC)",
+   "quote_ok": true,
+   "checked_against": "the census's saved text B6.txt (sha256 69713770ff71bb2d…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "title; page body",
+   "quote": "<title>Source.Plus</title> … Spawning Under Maintenance Hacking the mainframe...",
+   "claim": "the operator's own site, titled Source.Plus, serves the same maintenance notice",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its state on 1 November 2026",
+   "date": "2026-11-01 (the page as saved by the census, 05:07 UTC)",
+   "quote_ok": true,
+   "checked_against": "the census's saved text B7.txt (sha256 69e504e6af2fcb57…) or its raw HTML B7.html, whitespace-normalised"
+  },
+  "F45": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "page body",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "no Wikipedia article for the service",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its state on 1 November 2026",
+   "date": "2026-11-01 (fetched 15:12 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 36c5331fa04669d2…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Mentionable AI — Have I Been Trained? Free Tool to Check AI Training Data (2026)",
+  "B2": "Facebook — What happened to have i been trained website? - Facebook",
+  "B3": "YouTube·AI Samson — 99% of People Don't Know If They Are In The AI Art Database",
+  "B4": "www.toolcenter.ai — Have I Been Trained? Review 2026",
+  "B5": "haveibeentrained.com, the home page (census own page)",
+  "B6": "haveibeentrained.com/faq (census own page)",
+  "B7": "spawning.ai, the operator's home page (census own page)",
+  "B8": "Wikipedia — Have I Been Trained? (no article)"
+ }
+}

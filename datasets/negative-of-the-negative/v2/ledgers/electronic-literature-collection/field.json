@@ -1,0 +1,1390 @@
+{
+ "row": "electronic-literature-collection",
+ "address": "Electronic Literature Collection",
+ "addresses": [
+  "Electronic Literature Collection"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the raw HTML for the one commented line (F8), or the card's title or snippet for the unread cards; 61/61 verified by script",
+ "B_note": "The field in two pools (v0.10 §0.3, §3.1(a)), marked by origin and by pool. B_D, the disclosed pool: the six cards of the transcript's rail, B1 collection.eliterature.org (the collection's own home page; also the census's own page elc--home, byte-identical, carried once in B_D), B2 PDXScholar's record of Volume 4, B3 the Creative Commons wiki's Content Directory entry (2008), B4 The NEXT's page for Volume 2, B5 a YouTube video card (unread: URL not found; its title its only text), B6 a Google Shopping listing for a book of the same subject (unread: a script-rendered page; its snippet its only text). The body names no source beyond the cards: its 'Electronic Literature Collection website' link is card 1's, its 'Electronic Literature Organization' link names the publisher and no source, its product link is card 6. B_R, the reference pool: B7 the Wikipedia article on the Electronic Literature Organization, whose section 'Electronic Literature Collections' treats the collection (the census's Wikipedia source; no article exists under the collection's name, HTTP 404), and B8 the collection's own Volume 3 work page for The Readers Project (the census's source readers-project--elc3), read with the script data that renders it. 'Available and not composed' is a finding of B_D only.",
+ "lineage_note": "Lineages (§3.6): what it is (F1, F25, F28, F29, F44); the four volumes and their dates (F2, F3, F4, F5, F10); media and access (F6, F8, F13, F26); the publisher and its place (F7, F39, F40, F41, F42, F43, F53); editors (F9, F31); what electronic literature is: forms (F11, F18, F19); counts of works (F12, F30); standing and the field's selection (F14, F45, F47); catalogue and data of the works (F15, F24, F34); licence (F16, F27); languages (F17, F49); how works were selected (F20, F21, F22, F23); custody of the files (F32, F33); works and authors (F35, F48, F50); the rail's other cards (F36, F37, F38); the freeze of the anthology (F46); neighbours: the Directory and CELL (F51, F52); The Readers Project (F54, F57, F58, F59, F60, F61); preservation (F55, F56). One lineage across sources: Volume 4's languages, B2 F17 (2022) and B7 F49 (Wikipedia), B2 the earliest; the census record restates B1 (TLL-03, TLL-05, TLL-18, TLL-19, TLL-27, TLL-30) and B7 (TLL-04, TLL-11, TLL-16, TLL-17, TLL-21): one lineage with each, the field source keeping the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/ (Bn.html raw, Bn.txt text extracted with scripts, styles and HTML comments stripped; B1-census.txt the census's own text of B1; B7, B8 the census's saved copies, gunzipped, with the census's texts; B8-works.js the page's script data, B8-works.txt the entry 'the-readers-project' with tags stripped; W-elc.* the Wikipedia absence record; T1-electronic-literature-collection-aio-20261101.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "own_page",
+   "role": "Overview card 1 (and the census's own page elc--home)",
+   "card": "Electronic Literature Organization — Electronic Literature Collection",
+   "url": "https://collection.eliterature.org/",
+   "kind": "Overview card 1 (the collection's own home page at collection.eliterature.org); also the census's own page elc--home, byte-identical, carried once in B_D (§3.1(a))",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B1.html",
+     "sha256": "7f2a4e3496731e4842b4c6ab2911c79476766a3c880c8cafba6f9caad7e986cc"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B1.txt",
+     "sha256": "2abbc97295b5f0bbffbb03c18186c338adfc543daf61d28fa15201a2dcb05cab"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B1-census.txt",
+     "sha256": "65884c264f6f57a35b6561814c98390f9538ba0464507956b4fdaf65b6f7ac54"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T15:13:13Z",
+    "http": 200,
+    "url": "https://collection.eliterature.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B1.html",
+    "raw_sha256": "7f2a4e3496731e4842b4c6ab2911c79476766a3c880c8cafba6f9caad7e986cc",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B1.txt"
+    ],
+    "note": "the refetch with the census agent compared byte for byte (cmp) with the census's saved copy and found identical. B1.txt is this row's extraction (scripts and styles stripped; HTML comments dropped, as a browser does not render them); B1-census.txt is the census's own text, which keeps the words of one HTML comment ('Electronic Literature Collection is published on the Web and as a physical version. The physical publication of the ELC3 is forthcoming.', its opening words 'Each volume of the' lost in the census's extraction). The comment is ledgered from B1.html as F8.",
+    "census_copy": {
+     "src": "elc--home",
+     "url": "https://collection.eliterature.org/",
+     "final_url": "https://collection.eliterature.org/",
+     "sha256": "7f2a4e3496731e4842b4c6ab2911c79476766a3c880c8cafba6f9caad7e986cc",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:53Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "yes ('A Publication of the Electronic Literature Organization'; 'c/o Washington State University Vancouver')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-literature-collection-aio-20261101",
+     "card": 1
+    }
+   ],
+   "card_title": "Electronic Literature Collection",
+   "card_snippet": "Electronic Literature Collection. A Publication of the Electronic Literature Organization · ELO. Volume 1 (October 2006). Volume 2 (February 2011). Volume 3 (Fe..."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2",
+   "card": "PDXScholar — Electronic Literature Collection Volume 4 - PDXScholar - Portland State University",
+   "url": "https://pdxscholar.library.pdx.edu/eng_fac/125",
+   "kind": "Overview card 2 (Portland State University's institutional repository record of Volume 4: authors (the editors), abstract, description, rights, dataset); not among the census's saved sources",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B2.html",
+     "sha256": "b5affc58d40286dee56d4dc6e351633953e02dd93ccbc400ef9421114d506b6d"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B2.txt",
+     "sha256": "39f0cdf5d3eb2fb22cf02f1e11dcf0363cba1ccd16414f4f4f0ed14373a1a817"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T15:13:14Z",
+    "http": 200,
+    "url": "https://pdxscholar.library.pdx.edu/eng_fac/125",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B2.html",
+    "raw_sha256": "b5affc58d40286dee56d4dc6e351633953e02dd93ccbc400ef9421114d506b6d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B2.txt"
+    ],
+    "note": "URL found by WebSearch on the card's title and site ('pdxscholar.library.pdx.edu Electronic Literature Collection Volume 4'); the page's authors line matches the card's snippet",
+    "final_url": "https://pdxscholar.library.pdx.edu/eng_fac/125/"
+   },
+   "names_operator": "no (the record names the volume's five editors and their universities; the ELO is not named on the page)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-literature-collection-aio-20261101",
+     "card": 2
+    }
+   ],
+   "card_title": "Electronic Literature Collection Volume 4 - PDXScholar - Portland State University",
+   "card_snippet": "Kathi Inman Berens, Portland State UniversityFollow John Murray, University of Central Florida Lyle Skains, Bournemouth University Rui Torres, University Fernan..."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 3",
+   "card": "WIKI Creative Commons — Electronic Literature Collection - Creative Commons Wiki",
+   "url": "https://wiki.creativecommons.org/wiki/Electronic_Literature_Collection",
+   "kind": "Overview card 3 (a Content Directory entry on the CC Public Wiki, last edited 11 April 2008)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B3.html",
+     "sha256": "6bdb31d7996fb2b3bfa116b7a059b84ada0d9db7d1e32a999fd87b4b420e019c"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B3.txt",
+     "sha256": "62b3dc5d3998c9e785944f58b10dbe98fe33d5bf0f2e9ec9a7b42d2fb4184805"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T15:13:14Z",
+    "http": 200,
+    "url": "https://wiki.creativecommons.org/wiki/Electronic_Literature_Collection",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B3.html",
+    "raw_sha256": "6bdb31d7996fb2b3bfa116b7a059b84ada0d9db7d1e32a999fd87b4b420e019c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B3.txt"
+    ],
+    "note": "URL found by WebSearch on the card's title and site; the entry's opening sentence is the card's snippet"
+   },
+   "names_operator": "yes ('published by the Electronic Literature Organization, a 501(c)(3) literary nonprofit organization')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-literature-collection-aio-20261101",
+     "card": 3
+    }
+   ],
+   "card_title": "Electronic Literature Collection - Creative Commons Wiki",
+   "card_snippet": "The Electronic Literature Collection is a periodical publication of current and older electronic literature in a form suitable for individual, public library, a..."
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 4",
+   "card": "the-next.org — The Electronic Literature Collection Volume 2 - The NEXT",
+   "url": "https://the-next.org/collections/6",
+   "kind": "Overview card 4 (The NEXT's collection page for Volume 2: description, highlights, a searchable list of its 81 works by creator)",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B4.html",
+     "sha256": "67a05a29e5728e41eb322a45d8d8b98ddc675623b3cebb91739a83ce438210e3"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B4.txt",
+     "sha256": "b5d87dfab76bc244812c07c8fa41ec7562c14ffdfe27bc892d85dc1ade3ce3b4"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T15:13:14Z",
+    "http": 200,
+    "url": "https://the-next.org/collections/6",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B4.html",
+    "raw_sha256": "67a05a29e5728e41eb322a45d8d8b98ddc675623b3cebb91739a83ce438210e3",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B4.txt"
+    ],
+    "note": "URL found by WebSearch ('the-next.org \"The Electronic Literature Collection Volume 2\" 81 works'): https://the-next.org/collections/6 among the results; its description is the card's snippet"
+   },
+   "names_operator": "yes ('published ... by the Electronic Literature Organization in 2011'; The NEXT 'managed by the Electronic Literature Lab')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-literature-collection-aio-20261101",
+     "card": 4
+    }
+   ],
+   "card_title": "The Electronic Literature Collection Volume 2 - The NEXT",
+   "card_snippet": "The Electronic Literature Collection 2 is an anthology of 81 works of electronic literature published both on flash drive and the web by the Electronic Literatu..."
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 5",
+   "card": "YouTube·Digital Humanities Initiative — Electronic Literature: An Introduction",
+   "url": null,
+   "kind": "Overview card 5 (a video card, 2m, no snippet); unread: admitted through its title (§3.1(a))",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-11-01T15:1xZ",
+      "how": "WebSearch \"Electronic Literature: An Introduction\" YouTube \"Digital Humanities Initiative\"",
+      "result": "no YouTube result; essays and books on electronic literature and the digital humanities"
+     },
+     {
+      "at": "2026-11-01T15:1xZ",
+      "how": "WebSearch youtube \"Electronic Literature: An Introduction\" Digital Humanities Initiative video",
+      "result": "no YouTube result"
+     }
+    ],
+    "note": "the card's URL could not be determined from its title and site; no transcript; the title stands as its only text"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-literature-collection-aio-20261101",
+     "card": 5
+    }
+   ],
+   "card_title": "Electronic Literature: An Introduction",
+   "card_snippet": null
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 6",
+   "card": "Google — 25+ Copies Paperback Book Electronic Literature (New Horizons for the Literary), 9780268030858, Bulk Quantity",
+   "url": "https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:9469238376309101173&ibp=oshop",
+   "kind": "Overview card 6 (a Google Shopping listing for a book of the same subject, ISBN 9780268030858; the URL is the transcript's own link on the Access line); unread",
+   "files": {
+    "B6-try1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B6-try1.html",
+     "sha256": "74412792e861d7062e570f06e86d4846211b439d2886d80a61038adde1bc933a"
+    },
+    "B6-try1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B6-try1.txt",
+     "sha256": "1f93fa84dc7542f6b8e1d57b26a823ccf024c24911cf484470d49031882b33d2"
+    }
+   },
+   "fetched": {
+    "unreachable": true,
+    "tries": [
+     {
+      "at": "2026-11-01T15:13:15Z",
+      "url": "https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:9469238376309101173&ibp=oshop",
+      "http": "200",
+      "result": "a page whose text is 'Google Search / If you're having trouble accessing Google Search, please click here, or send feedback.' (93,029 bytes, script-rendered; saved as B6-try1.html); recorded unread; not retried by any other route"
+     }
+    ],
+    "note": "fetched once with the census agent; the snippet stands as its only text"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-literature-collection-aio-20261101",
+     "card": 6
+    }
+   ],
+   "card_title": "25+ Copies Paperback Book Electronic Literature (New Horizons for the Literary), 9780268030858, Bulk Quantity",
+   "card_snippet": "A visible presence for some two decades, electronic literature has already produced many works that deserve the rigorous scrutiny critics have long practiced wi..."
+  },
+  {
+   "id": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "also_origin": "census_third_party",
+   "role": "the entity's Wikipedia coverage (no article under 'Electronic Literature Collection': HTTP 404; the collection is a section of the publisher's article)",
+   "card": "Wikipedia — Electronic Literature Organization - Wikipedia (section 'Electronic Literature Collections')",
+   "url": "https://en.wikipedia.org/wiki/Electronic_Literature_Organization",
+   "kind": "the Wikipedia article on the collection's publisher, whose section 'Electronic Literature Collections' treats the collection; the census's Wikipedia source (elc--wikipedia, basis third_party); there is no article under the collection's own name",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B7.html",
+     "sha256": "f94079547b89e37f6d689207e6ef635acc096485b7445eaccd595735809e7232"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B7.txt",
+     "sha256": "cacea5093d492469120b9b13fa90a28623b0c53d529b14ab1302c9d056c554fd"
+    },
+    "W-elc.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/W-elc.html",
+     "sha256": "4e59a8362f289835312fbdf1916ff20f36b1598f04db6b7c4d2ce5b3eb88fc52"
+    },
+    "W-elc.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/W-elc.txt",
+     "sha256": "8434d30421e5ea466be462c1cac8f5de70e7d173985915f2654dd2e6d62582f3"
+    },
+    "W-elc.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/W-elc.wiki",
+     "sha256": "50315e85715215ae890ba14c4df05cc3b2e2d436c96cef9be96801ae7c5c3906"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T04:07:53Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Electronic_Literature_Organization",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B7.html",
+    "raw_sha256": "f94079547b89e37f6d689207e6ef635acc096485b7445eaccd595735809e7232",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B7.txt"
+    ],
+    "note": "the census copy, gunzipped, with the census's text; not refetched. The name's own title was fetched: https://en.wikipedia.org/wiki/Electronic_Literature_Collection HTTP 404 ('Wikipedia does not have an article with this exact name.') and https://en.wikipedia.org/w/index.php?title=Electronic_Literature_Collection&action=raw HTTP 404, 2026-11-01T15:13:15Z, saved as W-elc.html, W-elc.txt, W-elc.wiki",
+    "census_copy": {
+     "src": "elc--wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Electronic_Literature_Organization",
+     "sha256": "f94079547b89e37f6d689207e6ef635acc096485b7445eaccd595735809e7232",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:53Z"
+    },
+    "wikipedia_absence": {
+     "url": "https://en.wikipedia.org/wiki/Electronic_Literature_Collection",
+     "raw_url": "https://en.wikipedia.org/w/index.php?title=Electronic_Literature_Collection&action=raw",
+     "http": 404,
+     "at": "2026-11-01T15:13:15Z",
+     "files": [
+      "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/W-elc.html",
+      "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/W-elc.txt",
+      "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/W-elc.wiki"
+     ]
+    }
+   },
+   "names_operator": "yes (the article is the ELO's)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "an own page of the collection that the census read (cited in the census row's evidence 'elc3_readers_project')",
+   "card": "collection.eliterature.org/3 — Electronic Literature Collection, Volume 3: The Readers Project (work page)",
+   "url": "https://collection.eliterature.org/3/work.html?work=the-readers-project",
+   "kind": "the collection's own work page in Volume 3 for The Readers Project (census source readers-project--elc3, basis operator); the page is a template whose work record is rendered by its script from js/works.js",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8.html",
+     "sha256": "a0e466d1a6bf6cd38ff8a032b22b032dba0a06cc19a78766c8c37a472a7c8a27"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8.txt",
+     "sha256": "f81e6d02bf5aa3c77ee09179dc1a5f6445e5628504fa678c807ef5427a044d84"
+    },
+    "B8-works.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8-works.txt",
+     "sha256": "c02100a44ef1fde50e0286590fe4088adf9bbf9c4c4cc417f11fb580b3b11782"
+    },
+    "B8-works.js": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8-works.js",
+     "sha256": "4e13ee2ef718117c6e21f82e151e1b8fbd63842863fc84684eab54651f9ff25d"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T05:07:09Z",
+    "http": 200,
+    "url": "https://collection.eliterature.org/3/work.html?work=the-readers-project",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8.html",
+    "raw_sha256": "a0e466d1a6bf6cd38ff8a032b22b032dba0a06cc19a78766c8c37a472a7c8a27",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8.txt",
+     "datasets/negative-of-the-negative/v2/intake/electronic-literature-collection-20261101/B8-works.txt"
+    ],
+    "note": "the census copy, gunzipped, with the census's text; its text is the template (section labels and the Electronic Literature Lab's Flash preservation notes), the work's record being loaded by script. To read the page as rendered, its script data was fetched once with the census agent: https://collection.eliterature.org/3/js/works.js HTTP 200, 424,462 bytes, 2026-11-01T15:14:05Z, saved as B8-works.js (sha256 4e13ee2e…); the entry 'the-readers-project' (lines 4256–4320) is extracted with tags stripped as B8-works.txt. js/loadData.js (HTTP 200, 2026-11-01T15:14:04Z, not saved) names works.json as its data; works.js carries the records",
+    "census_copy": {
+     "src": "readers-project--elc3",
+     "url": "https://collection.eliterature.org/3/work.html?work=the-readers-project",
+     "sha256": "a0e466d1a6bf6cd38ff8a032b22b032dba0a06cc19a78766c8c37a472a7c8a27",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T05:07:09Z"
+    }
+   },
+   "names_operator": "yes ('Electronic Literature Collection, Volume 3'; the Electronic Literature Lab's notes)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature.org, the layer census, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, masthead",
+   "quote": "Electronic Literature Collection A Publication of the Electronic Literature Organization",
+   "claim": "the collection is a publication of the Electronic Literature Organization",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, volume list",
+   "quote": "Volume 1 (October 2006)",
+   "claim": "Volume 1, October 2006",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the four volumes and their dates",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, volume list",
+   "quote": "Volume 2 (February 2011)",
+   "claim": "Volume 2, February 2011",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four volumes and their dates",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, volume list",
+   "quote": "Volume 3 (February 2016)",
+   "claim": "Volume 3, February 2016",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four volumes and their dates",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, volume list",
+   "quote": "Volume 4 (June 2022)",
+   "claim": "Volume 4, June 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four volumes and their dates",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, the USB paragraph",
+   "quote": "Libraries, educators, and individuals may request a free copy of the volume 1 and 2 USB by mail:",
+   "claim": "a free USB copy of volumes 1 and 2 by mail for libraries, educators and individuals",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "media and access",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, address",
+   "quote": "Electronic Literature Organization c/o Washington State University Vancouver 14204 NE Salmon Creek Avenue Vancouver, WA 98686",
+   "claim": "the ELO's mailing address for the collection, in care of Washington State University Vancouver",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.txt (sha256 2abbc97295b5f0bb…), whitespace-normalised",
+   "mark": "contested (B7 F41 places the ELO at York University, Toronto)"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home, an HTML comment in the USB paragraph (in the page source, not rendered)",
+   "quote": "Each volume of the <i>Electronic Literature Collection</i> is published on the Web and as a physical version. The physical publication of the ELC3 is forthcoming.",
+   "claim": "each volume published on the Web and as a physical version; the physical ELC3 forthcoming (a line the page keeps in a comment, not displayed)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "media and access",
+   "date": "undated page (its last volume June 2022), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B1.html (sha256 7f2a4e3496731e48…), whitespace-normalised",
+   "mark": "superseded_in_source (the page carries the sentence inside <!-- --> and does not render it)"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Authors",
+   "quote": "Kathi Inman Berens, Portland State UniversityFollow … John Murray, University of Central Florida … Lyle Skains, Bournemouth University … Rui Torres, University Fernando Pessoa … Mia Zamora, Kean University",
+   "claim": "Volume 4's five editors (the record's authors) and their universities",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "editors",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Document Type; Publication Date",
+   "quote": "Document Type Book Publication Date 2022",
+   "claim": "the record types Volume 4 as a book, 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the four volumes and their dates",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract, s1",
+   "quote": "\"Electronic\" literature is digital-born, playful, and interactive.",
+   "claim": "electronic literature defined as digital-born, playful and interactive",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what electronic literature is: forms",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract, s2",
+   "quote": "This collection of 132 literary works draw together literary experiences in 31 languages, from authors representing 42 nationalities.",
+   "claim": "Volume 4: 132 works, 31 languages, authors of 42 nationalities",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "counts of works",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract, s3",
+   "quote": "The Collection is open access, entirely free to read, and runs well on mobile devices.",
+   "claim": "open access, free to read, runs well on mobile devices",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "media and access",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract, s4",
+   "quote": "It is the fourth and most inclusive volume in the definitive collection of digital literature from around the world.",
+   "claim": "the fourth and most inclusive volume of 'the definitive collection of digital literature'",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "standing and the field's selection",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract, s5; Additional Files",
+   "quote": "You may also access a dataset of the works (excluding identity keywords) used to render the site by viewing the additional file, linked below. … ELC4_dataset.json (507 kB)",
+   "claim": "a JSON dataset of Volume 4's works (identity keywords excluded) used to render the site",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue and data of the works",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Rights",
+   "quote": "This work is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License.",
+   "claim": "Volume 4 (the record's work) under CC BY-NC-ND 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "licence",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, Centering Equity, Diversity and Inclusion, s1",
+   "quote": "ELC4 presents the largest and most diverse group yet of elit authors writing in Afrikaans, Ancient Chinese, Arabic, Catalan, Chinese, Danish, Dutch, English, French, German, Greek, Hungarian, Indonesian, isiXhosa, Italian, Japanese, Korean, Mezangelle, Norwegian, Polish, Portuguese, Romanian, Russian, Setswana, Simplified Chinese, Slovak, South African Sign Language, Spanish, Swedish, Turkish, Yoruba.",
+   "claim": "Volume 4's authors write in thirty-one languages, Mezangelle among them",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "languages",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, s2",
+   "quote": "ELC4 is the first ELC offering access to some commercial works, such as VR experiences playable even without headsets, and narrative video games.",
+   "claim": "Volume 4 is the first to include commercial works: VR experiences, narrative video games",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what electronic literature is: forms",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, s3",
+   "quote": "These join the Collection’s far more numerous open access works: database fictions, autoethnographies by GenZ makers, works that play cleverly with AI, geospatial storytelling via mobile phones, and many more.",
+   "claim": "the open-access works: database fictions, autoethnographies, works that play with AI, geospatial storytelling",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what electronic literature is: forms",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶2 s1–2",
+   "quote": "Our goal was to welcome artists who may never have heard of “elit” or encountered it in a classroom. We sought and found works by Indigenous makers from many cultures.",
+   "claim": "the editors' goal: artists new to elit; works by Indigenous makers",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "how works were selected",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶2 s3–6",
+   "quote": "We found new-to-elit makers by attending live streamed performances and virtual exhibits from makers in India, Mexico, and West Africa. … International consultants wrote evaluations when we editors didn’t speak the languages.",
+   "claim": "how the works were found and evaluated: performances and exhibits attended; international consultants' evaluations",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "how works were selected",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶3",
+   "quote": "ELC4 features many more BIPOC, queer, and female or female-identifying authors than in previous Collections, allowing us to interrogate our core beliefs about elit.",
+   "claim": "more BIPOC, queer and female or female-identifying authors than earlier volumes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how works were selected",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶4",
+   "quote": "However, there is much more work yet to do in decentering patriarchal and imperial culture as the implied standard of elit.",
+   "claim": "the editors' stated limit: patriarchal and imperial culture still the implied standard of elit",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "how works were selected",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Locate the Document; Persistent Identifier",
+   "quote": "Locate the Document https://collection.eliterature.org/4/ Persistent Identifier https://archives.pdx.edu/ds/psu/39130",
+   "claim": "Volume 4's location and the record's persistent identifier",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "catalogue and data of the works",
+   "date": "2022 (the record's publication date; downloads counted since January 18, 2023), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B2.txt (sha256 39f0cdf5d3eb2fb2…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Content Directory entry, s1",
+   "quote": "The Electronic Literature Collection is a periodical publication of current and older electronic literature in a form suitable for individual, public library, and classroom use.",
+   "claim": "a periodical publication of current and older electronic literature for individual, library and classroom use",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "2008-04-11 (last edited), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B3.txt (sha256 62b3dc5d3998c9e7…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Content Directory entry, s2",
+   "quote": "The publication is available both online and as a packaged, cross-platform CD-ROM, in a case appropriate for library processing, marking, and distribution.",
+   "claim": "online and as a packaged cross-platform CD-ROM for libraries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "media and access",
+   "date": "2008-04-11 (last edited), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B3.txt (sha256 62b3dc5d3998c9e7…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Content Directory entry, s3",
+   "quote": "The contents of the Collection are offered under a Creative Commons license so that libraries and educational institutions will be allowed to duplicate and install works and individuals can share the Collection with others.",
+   "claim": "the contents under a Creative Commons license, for duplication, installation and sharing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "licence",
+   "date": "2008-04-11 (last edited), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B3.txt (sha256 62b3dc5d3998c9e7…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Content Directory entry, s4",
+   "quote": "The Electronic Literature Collection is published by the Electronic Literature Organization, a 501(c)(3) literary nonprofit organization.",
+   "claim": "published by the ELO, a 501(c)(3) literary nonprofit",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2008-04-11 (last edited), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B3.txt (sha256 62b3dc5d3998c9e7…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "This page was last edited on 11 April 2008, at 16:54.",
+   "claim": "the wiki entry dates from April 2008 (before Volumes 2–4)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2008-04-11 (last edited), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B3.txt (sha256 62b3dc5d3998c9e7…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "collection description, s1",
+   "quote": "The Electronic Literature Collection 2 is an anthology of 81 works of electronic literature published both on flash drive and the web by the Electronic Literature Organization in 2011.",
+   "claim": "Volume 2: an anthology of 81 works, on flash drive and the web, ELO, 2011",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "counts of works",
+   "date": "undated page (its history to 2019), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B4.txt (sha256 b5d87dfab76bc244…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "collection description, s2",
+   "quote": "It was edited by Laura Borràs, Talan Memmot, Rita Raley, and Brian Stefans.",
+   "claim": "Volume 2's editors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "editors",
+   "date": "undated page (its history to 2019), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B4.txt (sha256 b5d87dfab76bc244…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "collection description, s3",
+   "quote": "In 2018, the local files for the collection were given to the ELL from the ELO to put on the ELO Repository Website, hosted by the Electronic Textual Cultures Lab.",
+   "claim": "2018: Volume 2's local files given to the Electronic Literature Lab for the ELO Repository website",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "custody of the files",
+   "date": "undated page (its history to 2019), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B4.txt (sha256 b5d87dfab76bc244…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "collection description, s4",
+   "quote": "The files were later moved to the ELO server in 2019.",
+   "claim": "2019: the files moved to the ELO server",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "custody of the files",
+   "date": "undated page (its history to 2019), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B4.txt (sha256 b5d87dfab76bc244…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "copies list header and controls",
+   "quote": "COPIES IN THE ELECTRONIC LITERATURE COLLECTION VOLUME 2 Search the Collection Sort by: Creator Date Published Format Title … Viewing 1-10 of 81 Results",
+   "claim": "The NEXT holds copies of Volume 2's 81 works, searchable and sortable by creator, date, format and title",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "catalogue and data of the works",
+   "date": "undated page (its history to 2019), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B4.txt (sha256 b5d87dfab76bc244…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "copies list, first page",
+   "quote": "88 Constellations for Wittgenstein (to be played with Left Hand) (v1.1) Clark, David … _cross.ova.ing 4rm.blog.2.log 07/08 XXtracts_ (v1.0) Breeze, Mary-Anne … a show of hands (v1.0) Marino, Mark C. … Amor de Clarice (v1.0) Torres, Rui … Andromeda (v1.0) Fisher, Caitlin … Book and Volume (v1.0) Montfort, Nick",
+   "claim": "Volume 2's works listed with their creators (first page of the list)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "works and authors",
+   "date": "undated page (its history to 2019), fetched 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B4.txt (sha256 b5d87dfab76bc244…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F36": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (unread video card)",
+   "quote": "Electronic Literature: An Introduction",
+   "claim": "a two-minute video introduction to electronic literature (Digital Humanities Initiative)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rail's other cards",
+   "date": "undated (video card, 2m)",
+   "quote_ok": true,
+   "checked_against": "the card's title as rendered in the transcript's rail"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (unread listing)",
+   "quote": "A visible presence for some two decades, electronic literature has already produced many works that deserve the rigorous scrutiny critics have long practiced wi...",
+   "claim": "the listed book's description: electronic literature, two decades of works deserving critical scrutiny",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the rail's other cards",
+   "date": "undated listing",
+   "quote_ok": true,
+   "checked_against": "the card's snippet as rendered in the transcript's rail"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (unread listing)",
+   "quote": "25+ Copies Paperback Book Electronic Literature (New Horizons for the Literary), 9780268030858, Bulk Quantity",
+   "claim": "a bulk shopping listing for the book Electronic Literature: New Horizons for the Literary (ISBN 9780268030858)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the rail's other cards",
+   "date": "undated listing",
+   "quote_ok": true,
+   "checked_against": "the card's title as rendered in the transcript's rail"
+  },
+  "F39": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "lead, s1",
+   "quote": "The Electronic Literature Organization ( ELO ) is a nonprofit organization \"established in 1999 to promote and facilitate the writing, publishing, and reading of electronic literature \".",
+   "claim": "the ELO, a nonprofit established in 1999 for the writing, publishing and reading of electronic literature",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "lead, s2",
+   "quote": "It hosts annual conferences, awards annual prizes for works of and criticism of electronic literature, hosts online events and has published a series of collections of electronic literature.",
+   "claim": "the ELO's conferences, prizes, events and its series of collections",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "History, Transition to academic hosts",
+   "quote": "The ELO is currently hosted at York University , Toronto, Canada, under the leadership of Caitlin Fisher",
+   "claim": "the ELO hosted at York University, Toronto, under Caitlin Fisher",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised",
+   "mark": "contested (B1 F7, the Vancouver address)"
+  },
+  "F42": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "infobox",
+   "quote": "President Anastasia Salter",
+   "claim": "the infobox names Anastasia Salter president",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised",
+   "mark": "internally_inconsistent (B7, Leadership: F43)"
+  },
+  "F43": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Leadership",
+   "quote": "Caitlin Fisher became president in July 2022.",
+   "claim": "Caitlin Fisher president from July 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised",
+   "mark": "internally_inconsistent (B7 infobox: F42)"
+  },
+  "F44": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Publications, Electronic Literature Collections",
+   "quote": "The ELO has curated and edited four volumes of electronic literature.",
+   "claim": "the ELO curated and edited four volumes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Electronic Literature Collections, Volume 1",
+   "quote": "Amidst the collection, there are some works that transcend the collection itself and stand out as pillars of electronic writing. … Most notable among these would be Judd Morrissey ’s The Jew’s Daughter , Michael Joyce ’s Twelve Blue , Stuart Moulthrop ’s Reagan Library , Talan Memmott ’s Lexia to Perplexia , and Kate Pullinger ’s Inanimate Alice .",
+   "claim": "Mark Marino (Digital Humanities Quarterly): Volume 1's 'pillars of electronic writing', five works named with their authors",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "standing and the field's selection",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Electronic Literature Collections, Volume 2",
+   "quote": "the process of gathering, archiving and tagging the works to make them more easily available to a wider audience, also freezes (necessarily) what may have been otherwise ephemeral or in situ.",
+   "claim": "Tim Wright: gathering, archiving and tagging the works also freezes what was ephemeral or in situ",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the freeze of the anthology",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Electronic Literature Collections, Volume 3, s1",
+   "quote": "Urszula Anna Pawlicka noted that ELC3 represents a \"post\" code range of literature.",
+   "claim": "Pawlicka: ELC3 represents a 'post' code range of literature",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "standing and the field's selection",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Electronic Literature Collections, Volume 3, s2",
+   "quote": "This work also includes Qianxun Chen 's Shan Shui , Porpentine 's With Those We Love Alive, Borsuk 's Between Page and Screen , Illya Szilak 's Queerskins , Emily Short and Liza Daly 's First Draft of the Revolution , Jeremy Height 's 34 North 118 West , J.R. Carpenter 's Along the Briny Beach , Mark Marino and Rob Wittig 's Being@Spencer Pratt , Caitlin Fisher 's Everyone at This Party is Dead, Anna Anthropy 's Hunt for the Gay Planet, N. Katherine Hayle ' s Speculation.",
+   "claim": "Volume 3's works named with their authors",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "works and authors",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Electronic Literature Collections, Volume 4, s1",
+   "quote": "ELC4 presents the largest and most diverse group yet of elit authors writing in Afrikaans , Ancient Chinese, Arabic, Catalan, Chinese, Danish, Dutch, English, French, German, Greek, Hungarian, Indonesian, isiXhosa, Italian, Japanese, Korean, Mezangelle , Norwegian, Polish, Portuguese, Romanian, Russian, Setswana, Simplified Chinese, Slovak, South African Sign Language, Spanish, Swedish, Turkish, Yoruba.",
+   "claim": "Volume 4's languages (one lineage with B2 F17)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "languages",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Electronic Literature Collections, Volume 4, s2",
+   "quote": "This volume contains a reprise of Meghadutam by Priti Pandurangan .",
+   "claim": "Volume 4 holds a reprise of Meghadutam by Priti Pandurangan",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "works and authors",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Publications, s1",
+   "quote": "The Electronic Literature Directory [ 19 ] is a database of works of electronic literature.",
+   "claim": "the Electronic Literature Directory, the ELO's database of works (a distinct entity)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the Directory and CELL",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "infobox",
+   "quote": "Managing Director of CELL Davin Heckman",
+   "claim": "Davin Heckman, the ELO's Managing Director of CELL",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: the Directory and CELL",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F53": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "History, Founding and early years",
+   "quote": "The ELO was founded in 1999 in Chicago by Scott Rettberg , Robert Coover , and Jeff Ballowe.",
+   "claim": "the ELO founded in Chicago in 1999 by Rettberg, Coover and Ballowe",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the publisher and its place",
+   "date": "last edited 18 August 2026, read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B7.txt (sha256 cacea5093d492469…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page header (saved text)",
+   "quote": "Electronic Literature Collection, Volume 3",
+   "claim": "the work page belongs to Volume 3",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "The Readers Project",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8.txt (sha256 f81e6d02bf5aa3c7…), B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "preservation notes (template, saved text)",
+   "quote": "This Flash work has been preserved with Ruffle by the Electronic Literature Lab in February 2021. … This Flash work has been emulated with Conifer by the Electronic Literature Lab in August 2021.",
+   "claim": "the Electronic Literature Lab's preservation of Volume 3's Flash works with Ruffle and emulation with Conifer, 2021–2025 (notes not tied to a named work in the saved text)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "preservation",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8.txt (sha256 f81e6d02bf5aa3c7…), B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F56": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "preservation notes (template, saved text)",
+   "quote": "The Electronic Literature Lab could not preserve this Flash work in February 2022. We are looking for a solution and plan to preserve it at a later date.",
+   "claim": "a Flash work the lab could not preserve in February 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "preservation",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8.txt (sha256 f81e6d02bf5aa3c7…), B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "work record (works.js, entry 'the-readers-project': title, authorDisplayName, year)",
+   "quote": "\"title\" : \"The Readers Project\", … \"authorDisplayName\" : \"John Cayley and Daniel Howe\", … \"year\" : \"2009\",",
+   "claim": "the work: The Readers Project, by John Cayley and Daniel Howe, 2009",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "The Readers Project",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised; parts joined by ' … ', each checked"
+  },
+  "F58": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "work record (works.js, artist statement, s1–2)",
+   "quote": "The Readers Project is an aesthetically-directed framework for custom software agents that actively explore the culture of human reading. We call these agents ‘readers,’",
+   "claim": "a framework of custom software agents, 'readers', that explore the culture of human reading",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "The Readers Project",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "work record (works.js, artist statement, s4)",
+   "quote": "Traces of the paths they take reveal them to be acting, also, as ‘text generators,’ writing machines visible within and beyond the text on which they run.",
+   "claim": "the readers act also as text generators, writing machines",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "The Readers Project",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "work record (works.js, editorial statement, s5)",
+   "quote": "Another outcome from this project is How It Is in Common Tongues an algorithmic reading, reconstruction, and reproduction of Samuel Beckett’s How It Is.",
+   "claim": "How It Is in Common Tongues: an algorithmic reading, reconstruction and reproduction of Beckett's How It Is",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "The Readers Project",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised"
+  },
+  "F61": {
+   "source": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "work record (works.js, editorial statement, s6)",
+   "quote": "This project shows how electronic literature can serve as a kind of digital humanities, by informing and creating computational perspectives on close and distant readings of texts.",
+   "claim": "the editors: the project shows electronic literature serving as a kind of digital humanities",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "The Readers Project",
+   "date": "2016 (the volume); notes to February 2025; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved B8-works.txt (sha256 c02100a44ef1fde5…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Electronic Literature Organization — Electronic Literature Collection",
+  "B2": "PDXScholar — Electronic Literature Collection Volume 4 - PDXScholar - Portland State University",
+  "B3": "WIKI Creative Commons — Electronic Literature Collection - Creative Commons Wiki",
+  "B4": "the-next.org — The Electronic Literature Collection Volume 2 - The NEXT",
+  "B5": "YouTube·Digital Humanities Initiative — Electronic Literature: An Introduction",
+  "B6": "Google — 25+ Copies Paperback Book Electronic Literature (New Horizons for the Literary), 9780268030858, Bulk Quantity",
+  "B7": "Wikipedia — Electronic Literature Organization - Wikipedia (section 'Electronic Literature Collections')",
+  "B8": "collection.eliterature.org/3 — Electronic Literature Collection, Volume 3: The Readers Project (work page)"
+ },
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6"
+  ],
+  "B_R": [
+   "B7",
+   "B8"
+  ]
+ }
+}

@@ -1,0 +1,1124 @@
+{
+ "row": "htrc",
+ "address": "HathiTrust Research Center",
+ "addresses": [
+  "HathiTrust Research Center"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 a HathiTrust page on the center, unreachable; B2 the HTRC Analytics home page, also the census's own page; B3 a page titled 'HathiTrust Research Center', unreachable; B4 'Update on HathiTrust Research Center', 26 June 2026, unreachable). B_R, the reference pool: 'own_page', the entity's About (B5) and Derived datasets (B6) pages, fetched by this row, and htrc.illinois.edu (B7, the census's own page, empty); Wikipedia has no article (recorded). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/htrc-20261101/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B1, B3, B4 .txt the card's title and snippet, B1.html and B4.html the 403 pages; B2 the census's saved copy; B7 empty; tries/ the raw fetches and the Wikipedia 404s)",
+ "counts": {
+  "sources": 7,
+  "B_D": 4,
+  "B_R": 3,
+  "fetched": 3,
+  "unreachable": 3,
+  "unread_empty": 1,
+  "claims": 43,
+  "claims_B_D": 15,
+  "claims_B_R": 28,
+  "quotes_ok": 43
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "HathiTrust — HathiTrust Research Center – HathiTrust Digital Library",
+   "fetched": "unreachable: https://www.hathitrust.org/about/research-center/ HTTP 403 at 2026-11-01T15:13:30Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "HathiTrust — HTRC Analytics",
+   "fetched": "card and census own page; B2.html sha256 5e7d8be238f03fa7, HTTP 200 at 2026-11-01T04:07:50Z (the census's copy; this row's refetch at 15:13:55Z byte-identical)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "HathiTrust — HathiTrust Research Center",
+   "fetched": "unreachable: https://www.hathitrust.org/about/research-center/ HTTP 403 at 2026-11-01T15:13:30Z; https://htrc.illinois.edu/ HTTP 200 at 2026-11-01T15:13:31Z (empty body, 0 bytes; again at 15:14Z); card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "HathiTrust — Update on HathiTrust Research Center",
+   "fetched": "unreachable: https://www.hathitrust.org/press-post/update-on-hathitrust-research-center/ HTTP 403 at 2026-11-01T15:13:30Z; https://www.hathitrust.org/about/research-center/htrc-transition-faq HTTP 403 at 2026-11-01T15:13:31Z; https://www.hathitrust.org/press-post/plans-for-hathitrust-research-center/ HTTP 403 at 2026-11-01T15:13:31Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "HTRC Analytics — About (own page, fetched by this row)",
+   "fetched": "own page, fetched by this row; B5.html sha256 032e23f9e0697c13, HTTP 200 at 2026-11-01T15:13:55Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B6",
+   "card": "HTRC Analytics — Derived datasets (own page, fetched by this row)",
+   "fetched": "own page, fetched by this row; B6.html sha256 e4bf2715eb11a778, HTTP 200 at 2026-11-01T15:14:13Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B7",
+   "card": "HathiTrust Research Center — htrc.illinois.edu (census own page, empty)",
+   "fetched": "own page (census htrc--about): HTTP 200, empty body (0 bytes) at 04:07:50Z and on refetch; unread",
+   "origin": "own_page",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4"
+  ],
+  "own_pages": [
+   "B5",
+   "B6",
+   "B7"
+  ],
+  "own_pages_note": "the census's own page htrc--home (https://analytics.hathitrust.org/) is card 2: one page, carried once, as a card, in B_D (B2); the census's other own page htrc--about (htrc.illinois.edu) is B7, empty; B5 (About) and B6 (Derived datasets) are the entity's own pages fetched by this row, linked from the home page, and both on the census's unchecked list",
+  "wikipedia": [],
+  "census_third_party": [],
+  "unreachable": [
+   "B1",
+   "B3",
+   "B4"
+  ],
+  "title_only": [
+   "B1",
+   "B3",
+   "B4"
+  ],
+  "unread": [
+   "B7"
+  ],
+  "wikipedia_state": "none: no English Wikipedia article 'HathiTrust Research Center' (raw wikitext HTTP 404 and rendered page HTTP 404, 'Wikipedia does not have an article with this exact name.', 2026-11-01T15:14Z; 'HTRC' raw HTTP 404); the API query for redirects and the search answered HTTP 429 (rate limit) and were not retried. The HathiTrust article (the census's saved copy for its hathitrust row, hathitrust--wikipedia, sha256 cf7c9231…, last edited 19 October 2026) does not mention the center, the HTRC or non-consumptive research; it is the parent's article and enters no claim here. The absence is recorded as a fact of the row (v0.10 §3.1(a)).",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+   ],
+   "B_R": [
+    "B5",
+    "B6",
+    "B7"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (the body names no source beyond the cards; its inline link on the center's name points to card 1's chip); B_R, the reference pool: the entity's own pages beyond card 2 (B5, B6, B7) and the record of Wikipedia's absence. T against L_F(B_D) uses B1–B4 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 1",
+    "card": "HathiTrust — HathiTrust Research Center – HathiTrust Digital Library",
+    "url": null,
+    "kind": "Overview card 1 (a HathiTrust page on the center; hathitrust.org)",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B1.html",
+      "sha256": "66bae49a5621e900aa75f3c42b9c272abc5fd6e12d2ed2af2e3290702098e21b"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B1.txt",
+      "sha256": "d0553e06faa798308c8e9873db12be2198eb4bdccfe179e9d497d9b312f43647"
+     }
+    },
+    "fetched": {
+     "result": "unreachable: https://www.hathitrust.org/about/research-center/ HTTP 403 at 2026-11-01T15:13:30Z; one attempt each with the census agent string 'Mozilla/5.0 (compatible; traininglayerliterature-census)', no retry by another agent string or route; the card's title and snippet stand as its only text (Bn.txt)",
+     "tries": [
+      {
+       "url": "https://www.hathitrust.org/about/research-center/",
+       "http": 403,
+       "at": "2026-11-01T15:13:30Z"
+      }
+     ]
+    },
+    "searches": [
+     "WebSearch '\"HTRC public services (data capsules, analytics algorithms, analytics gateway login) unavailable\"'",
+     "WebSearch 'hathitrust.org \"HathiTrust Research Center\" \"the following public-facing HTRC services are no longer available\"'"
+    ],
+    "card_title": "HathiTrust Research Center – HathiTrust Digital Library",
+    "card_snippet": "Status: HTRC public services (data capsules, analytics algorithms, analytics gateway login) unavailable as of 9/30/26; HathiTrust suspending HTRC funding at end...",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-research-center-aio-20261101",
+      "card": 1
+     }
+    ],
+    "names_operator": "yes (HathiTrust, in the card title and snippet)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL cannot be determined from the card: its title is the hathitrust.org page-title form ('… – HathiTrust Digital Library'); the site refused the census agent (HTTP 403, a Cloudflare challenge page, saved as tries/try1.html), as it refused the census at hathitrust.org/about/ (2026-11-01T04:07:49Z, HTTP 403); no retry by another agent string or route. The card's title and snippet are its only text."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 2 (and the census own page htrc--home: one page, carried once, in B_D)",
+    "card": "HathiTrust — HTRC Analytics",
+    "url": "https://analytics.hathitrust.org/",
+    "kind": "Overview card 2 (the HTRC Analytics home page); the census's own page htrc--home: one page, carried once, in B_D",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B2.html",
+      "sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B2.txt",
+      "sha256": "d6583ac119dc47ed153266839ff64647a5182a2e33995658994bf3c966ea5e95"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:50Z",
+     "http": 200,
+     "url": "https://analytics.hathitrust.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B2.html",
+     "raw_sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B2.txt"
+     ],
+     "census_copy": {
+      "src": "htrc--home",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:50Z",
+      "sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494"
+     },
+     "refetch": {
+      "at": "2026-11-01T15:13:55Z",
+      "http": 200,
+      "file": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/tries/an-home.html",
+      "sha256": "5e7d8be238f03fa77c63da96b2b31f46e45c3f0e8f80ef8faff2181ad0e01494",
+      "note": "byte-identical to the census copy"
+     }
+    },
+    "card_title": "HTRC Analytics",
+    "card_snippet": "# Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research The HathiTrust Research Center (HTRC) is a rese...",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-research-center-aio-20261101",
+      "card": 2
+     }
+    ],
+    "names_operator": "yes ('a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "The census's saved copy (htrc--home, fetched 2026-11-01T04:07:50Z, sha256 5e7d8be2… as in the manifest) copied as B2.html and B2.txt; this row's refetch at 2026-11-01T15:13:55Z (tries/an-home.html) is byte-identical (same sha256). The card's snippet opens with the page's heading and first sentence."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3",
+    "card": "HathiTrust — HathiTrust Research Center",
+    "url": null,
+    "kind": "Overview card 3 (a page titled 'HathiTrust Research Center')",
+    "files": {
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B3.txt",
+      "sha256": "68b34e244058d19eb706eef62ac389a068abb5e7211222bff70e21d8de331a5d"
+     }
+    },
+    "fetched": {
+     "result": "unreachable: https://www.hathitrust.org/about/research-center/ HTTP 403 at 2026-11-01T15:13:30Z; https://htrc.illinois.edu/ HTTP 200 at 2026-11-01T15:13:31Z (empty body, 0 bytes; again at 15:14Z); one attempt each with the census agent string 'Mozilla/5.0 (compatible; traininglayerliterature-census)', no retry by another agent string or route; the card's title and snippet stand as its only text (Bn.txt)",
+     "tries": [
+      {
+       "url": "https://www.hathitrust.org/about/research-center/",
+       "http": 403,
+       "at": "2026-11-01T15:13:30Z"
+      },
+      {
+       "url": "https://htrc.illinois.edu/",
+       "http": 200,
+       "at": "2026-11-01T15:13:31Z (empty body, 0 bytes; again at 15:14Z)"
+      }
+     ]
+    },
+    "searches": [
+     "WebSearch '\"HathiTrust Research Center\" \"As of 9/30/26\" data capsules analytics algorithms analytics gateway login'"
+    ],
+    "card_title": "HathiTrust Research Center",
+    "card_snippet": "As of 9/30/26, the following public-facing HTRC services are no longer available: data capsules, analytics algorithms, and analytics gateway login. More informa...",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-research-center-aio-20261101",
+      "card": 3
+     }
+    ],
+    "names_operator": "no (snippet names HTRC only)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL cannot be determined from the card: the two pages a title 'HathiTrust Research Center' may name are hathitrust.org/about/research-center/ (HTTP 403, Cloudflare) and htrc.illinois.edu (HTTP 200 with an empty body, as the census found it); the analytics site's About page (B5) carries none of the snippet's words. The card's title and snippet are its only text."
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4",
+    "card": "HathiTrust — Update on HathiTrust Research Center",
+    "url": null,
+    "kind": "Overview card 4 (a HathiTrust announcement dated June 26, 2026)",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B4.html",
+      "sha256": "a4cdd04474a7174c5f54266be675441d39722de8dcdb2f50202daf05a758419b"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B4.txt",
+      "sha256": "c2fa67cab0ef75f4355a57b6be52f369ed8c23714cd6f6e37ac4ca3d6af5f493"
+     }
+    },
+    "fetched": {
+     "result": "unreachable: https://www.hathitrust.org/press-post/update-on-hathitrust-research-center/ HTTP 403 at 2026-11-01T15:13:30Z; https://www.hathitrust.org/about/research-center/htrc-transition-faq HTTP 403 at 2026-11-01T15:13:31Z; https://www.hathitrust.org/press-post/plans-for-hathitrust-research-center/ HTTP 403 at 2026-11-01T15:13:31Z; one attempt each with the census agent string 'Mozilla/5.0 (compatible; traininglayerliterature-census)', no retry by another agent string or route; the card's title and snippet stand as its only text (Bn.txt)",
+     "tries": [
+      {
+       "url": "https://www.hathitrust.org/press-post/update-on-hathitrust-research-center/",
+       "http": 403,
+       "at": "2026-11-01T15:13:30Z"
+      },
+      {
+       "url": "https://www.hathitrust.org/about/research-center/htrc-transition-faq",
+       "http": 403,
+       "at": "2026-11-01T15:13:31Z"
+      },
+      {
+       "url": "https://www.hathitrust.org/press-post/plans-for-hathitrust-research-center/",
+       "http": 403,
+       "at": "2026-11-01T15:13:31Z"
+      }
+     ]
+    },
+    "searches": [
+     "WebSearch '\"Update on HathiTrust Research Center\" June 26, 2026'"
+    ],
+    "card_title": "Update on HathiTrust Research Center",
+    "card_snippet": "# Update on HathiTrust Research Center June 26, 2026 Since the founding of the HathiTrust Research Center in 2011, HTRC staff and researchers have led highly re...",
+    "surfaced_by_T": [
+     {
+      "slug": "hathitrust-research-center-aio-20261101",
+      "card": 4
+     }
+    ],
+    "names_operator": "yes (HathiTrust, in the card title and snippet)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL cannot be determined from the card: WebSearch on the title returned no page of that title; the likely hathitrust.org paths (a press post by the title's slug; the transition FAQ; 'plans-for-hathitrust-research-center', linked from the census's saved home page) all refused the census agent with HTTP 403 (Cloudflare). The card's title and snippet are its only text."
+   },
+   {
+    "id": "B5",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "own page in the reference pool, fetched by this row",
+    "card": "HTRC Analytics — About (own page, fetched by this row)",
+    "url": "https://analytics.hathitrust.org/about/",
+    "kind": "the entity's own About page, which the home page links as 'Read about the future of the HathiTrust Research Center' (/about#future-of-htrc); the census lists that page as unchecked",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B5.html",
+      "sha256": "032e23f9e0697c133fdd06d5ac29f07fe1e556cc0232e1a9f6c80ac29ff5da1f"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B5.txt",
+      "sha256": "d6875bc0ed24335820f15e5b3589ae89f07898ff35fa47ae547bbc7a62e12bc6"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:13:55Z",
+     "http": 200,
+     "url": "https://analytics.hathitrust.org/about/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B5.html",
+     "raw_sha256": "032e23f9e0697c133fdd06d5ac29f07fe1e556cc0232e1a9f6c80ac29ff5da1f",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B5.txt"
+     ],
+     "extraction": "scripts, styles, noscript and comments stripped, tags removed, entities unescaped, whitespace runs collapsed (scratch script htrc_txt.py)"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "yes ('co-located at Indiana University and the University of Illinois at Urbana-Champaign')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Fetched by this row with the census agent at 2026-11-01T15:13:55Z (HTTP 200); not surfaced by T; admitted as an own page in the reference pool (v0.10 §3.1(a)). Its body predates the sunset banner it carries ('For now, HTRC will continue its current services')."
+   },
+   {
+    "id": "B6",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "own page in the reference pool, fetched by this row",
+    "card": "HTRC Analytics — Derived datasets (own page, fetched by this row)",
+    "url": "https://analytics.hathitrust.org/deriveddatasets/",
+    "kind": "the entity's own page for its derived datasets, linked from the home page ('Derived Datasets'); the census lists 'the derived datasets themselves (sizes, licenses)' as unchecked",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B6.html",
+      "sha256": "e4bf2715eb11a7781103665b0a2b838e309bf4c1fbffb773452929b9f2456db1"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B6.txt",
+      "sha256": "2adb5de1573401a03fe11597d4d8539f9ad91e1b13ac5a504f5486d41d977b5a"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:14:13Z",
+     "http": 200,
+     "url": "https://analytics.hathitrust.org/deriveddatasets/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B6.html",
+     "raw_sha256": "e4bf2715eb11a7781103665b0a2b838e309bf4c1fbffb773452929b9f2456db1",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B6.txt"
+     ],
+     "extraction": "scripts, styles, noscript and comments stripped, tags removed, entities unescaped, whitespace runs collapsed (scratch script htrc_txt.py)"
+    },
+    "surfaced_by_T": [],
+    "names_operator": "the center by name ('HTRC releases research datasets'); no partner named",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Fetched by this row with the census agent at 2026-11-01T15:14:13Z (HTTP 200); not surfaced by T; admitted as an own page in the reference pool."
+   },
+   {
+    "id": "B7",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "own page in the reference pool (census own page htrc--about)",
+    "card": "HathiTrust Research Center — htrc.illinois.edu (census own page, empty)",
+    "url": "https://htrc.illinois.edu/",
+    "kind": "the census's own page htrc--about",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B7.html",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/htrc-20261101/B7.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:50Z",
+     "http": 200,
+     "url": "https://htrc.illinois.edu/",
+     "result": "unread: HTTP 200 with an empty body (0 bytes), as the census found it; refetched 2026-11-01T15:13:31Z and 15:14Z, the same (tries/try3.html, tries/htrc-illinois-2.html)",
+     "census_copy": {
+      "src": "htrc--about",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:50Z",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+     }
+    },
+    "surfaced_by_T": [],
+    "names_operator": "no text",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "The census's fetch (2026-11-01T04:07:50Z) returned HTTP 200 with an empty body (0 bytes, sha256 e3b0c442…, the empty string); this row's two refetches (15:13:31Z, 15:14Z) returned the same. Unread: no text, no claims."
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Status: HTRC public services (data capsules, analytics algorithms, analytics gateway login) unavailable as of 9/30/26; HathiTrust suspending HTRC funding at end...",
+   "claim": "a HathiTrust page on the center, as its card renders it: the public services (data capsules, analytics algorithms, the gateway login) unavailable as of 30 September 2026, and HathiTrust suspending the center's funding at the end (of 2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the closing",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Research Center Analytics ¶1",
+   "quote": "The HathiTrust Research Center (HTRC) is a research center dedicated to enabling computational analysis of the HathiTrust Digital Library.",
+   "claim": "the center defines itself: a research center dedicated to enabling computational analysis of the HathiTrust Digital Library",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "heading",
+   "quote": "Supporting large-scale text analysis of the HathiTrust Digital Library for educational and non-profit research",
+   "claim": "its purpose: large-scale text analysis of the Digital Library, for educational and non-profit research",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Research Center Analytics ¶1",
+   "quote": "Established in 2011 as a partnership between Indiana University, the University of Illinois Urbana-Champaign, and HathiTrust,",
+   "claim": "established in 2011 as a partnership of Indiana University, the University of Illinois Urbana-Champaign and HathiTrust",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin and partners",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Research Center Analytics ¶1",
+   "quote": "HTRC developed tools, datasets, and infrastructure that supported scholars using text and data mining methods to study the HathiTrust corpus.",
+   "claim": "it developed tools, datasets and infrastructure for scholars using text and data mining methods on the HathiTrust corpus",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the portal: worksets, algorithms, data capsules",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "HathiTrust Research Center Analytics ¶2",
+   "quote": "In October 2024, HathiTrust Executive Director Mike Furlough announced that funding for the Research Center would cease at the end of 2026, at which time the center will be formally closed.",
+   "claim": "in October 2024 HathiTrust's executive director, Mike Furlough, announced that funding would cease at the end of 2026, when the center is formally closed",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the closing",
+   "date": "2024-10 (the announcement, as the page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "banner",
+   "quote": "HTRC has discontinued its services as of September 30, 2026. HTRC accounts are no longer available.",
+   "claim": "the banner: services discontinued as of 30 September 2026; accounts no longer available",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the closing",
+   "date": "2026-09-30 (as stated)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The HTRC Analytics Portal Has Been Sunsetted",
+   "quote": "As part of its closing, HTRC Analytics services have ended as of September 30, 2026. HTRC accounts and logins are no longer available. HTRC Algorithms and Data Capsule services have also been discontinued.",
+   "claim": "the analytics services ended 30 September 2026 as part of the closing; accounts and logins gone; algorithms and data capsules discontinued",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the closing",
+   "date": "2026-09-30 (as stated)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The HTRC Analytics Portal Has Been Sunsetted",
+   "quote": "Some HTRC resources remain available and can be used without an HTRC Analytics account: HathiTrust + Bookworm Derived Datasets Gendered Characterizations visualization",
+   "claim": "what remains without an account: HathiTrust+Bookworm, the derived datasets, the Gendered Characterizations visualization",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what remains without an account",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "banner",
+   "quote": "Some links on this page will not be functional. Access to the HathiTrust Digital Library remains open.",
+   "claim": "some links on the page no longer function; access to the HathiTrust Digital Library remains open",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what remains without an account",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Datasets (link list)",
+   "quote": "Datasets What are datasets? Extracted Features BookNLP dataset Word frequencies Geographic locations",
+   "claim": "its datasets, by name: Extracted Features, BookNLP dataset, word frequencies, geographic locations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Worksets; Algorithms; Data Capsules (link lists)",
+   "quote": "Worksets What is a workset? Recommended worksets Create a workset View all worksets … Algorithms What are HTRC algorithms? Run algorithms Algorithm results … Data Capsules What is a data capsule? Create a data capsule View my capsules",
+   "claim": "the portal's parts: worksets (recommended, created, viewed), algorithms (run, with results), data capsules (created, viewed)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the portal: worksets, algorithms, data capsules",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Resources (link list)",
+   "quote": "Resources Instructional resources Non-consumptive use research policy HTRC data access",
+   "claim": "a 'Non-consumptive use research policy' and 'HTRC data access' among its resources, named as links",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-consumptive research",
+   "date": "undated (the page as saved 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 d6583ac119dc47ed…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "As of 9/30/26, the following public-facing HTRC services are no longer available: data capsules, analytics algorithms, and analytics gateway login. More informa...",
+   "claim": "a page titled 'HathiTrust Research Center', as its card renders it: as of 30 September 2026 data capsules, analytics algorithms and the analytics gateway login no longer available",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the closing",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "# Update on HathiTrust Research Center June 26, 2026 Since the founding of the HathiTrust Research Center in 2011, HTRC staff and researchers have led highly re...",
+   "claim": "an update dated 26 June 2026, as its card renders it: since the founding in 2011 the center's staff and researchers have led highly re[…]",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the closing",
+   "date": "2026-06-26 (as the snippet dates it)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About The HathiTrust Research Center ¶1",
+   "quote": "HathiTrust Research Center (HTRC) enables computational analysis of works in the HathiTrust Digital Library (HTDL) to facilitate non-profit research and educational uses of the collection.",
+   "claim": "the About page's definition: it enables computational analysis of works in the HathiTrust Digital Library for non-profit research and educational uses",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About The HathiTrust Research Center ¶1",
+   "quote": "HTRC, which is co-located at Indiana University and the University of Illinois at Urbana-Champaign, engages in research and development for computational text analysis of massive digital libraries.",
+   "claim": "co-located at Indiana University and the University of Illinois at Urbana-Champaign, it does research and development in computational text analysis of massive digital libraries",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and partners",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About The HathiTrust Research Center ¶1",
+   "quote": "Leveraging data storage and computational infrastructure at Indiana University and the University of Illinois at Urbana-Champaign, the Center creates and maintains a suite of tools and services for text-based, data-driven research--such as HTRC Algorithms and Data Capsule--and engages in cutting-edge research on large-scale data analysis.",
+   "claim": "on the two universities' storage and computing it made and maintained tools and services for text-based, data-driven research (Algorithms, Data Capsule) and did research on large-scale data analysis",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the portal: worksets, algorithms, data capsules",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About The HathiTrust Research Center ¶1",
+   "quote": "HTRC operates under a non-consumptive research paradigm: HTRC makes available the collection for computational analysis, while remaining clearly within the bounds of the fair use rights courts have recognized as applying to text analysis.",
+   "claim": "it operates under a non-consumptive research paradigm: the collection made available for computational analysis within the fair-use rights courts have recognized for text analysis",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "non-consumptive research",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About The HathiTrust Research Center ¶1",
+   "quote": "The Center is committed to breaking new ground in the areas of non-consumptive text mining, allowing scholars to fully utilize content of the HathiTrust Library.",
+   "claim": "non-consumptive text mining lets scholars fully use the HathiTrust Library's content",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-consumptive research",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Relationship to HathiTrust ¶1",
+   "quote": "HathiTrust is a partnership of academic and research institutions, offering a collection of millions of titles digitized from libraries around the world.",
+   "claim": "HathiTrust: a partnership of academic and research institutions with a collection of millions of titles digitized from libraries around the world",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "relation to HathiTrust and its Digital Library",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Relationship to HathiTrust ¶1",
+   "quote": "Individual access and preservation are important concerns for HathiTrust. It allows users to search for and build collections of digitized works, and to read those in the public domain. The Research Center’s focus is on the aggregate strengths: what can we learn from so many books?",
+   "claim": "the library serves individual access and preservation, search, collections and reading of public-domain works; the center's focus is the aggregate: what can be learned from so many books",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "relation to HathiTrust and its Digital Library",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Relationship to HathiTrust ¶1",
+   "quote": "Digitization has enabled large-scale questions that we couldn’t ask before, and the Research Center is here to help you ask them while working within the restrictions of intellectual property law.",
+   "claim": "digitization enables large-scale questions, which the center helps scholars ask within the restrictions of intellectual property law",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "non-consumptive research",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Future of the HathiTrust Research Center ¶1",
+   "quote": "In late October 2024, HathiTrust Executive Director Mike Furlough announced that HathiTrust will cease data access and funding the HathiTrust Research Center (HTRC) at the end of 2026.",
+   "claim": "in late October 2024 Furlough announced that HathiTrust would cease data access and funding for the center at the end of 2026",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the closing",
+   "date": "2024-10 (the announcement, as the page dates it)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Future of the HathiTrust Research Center ¶1",
+   "quote": "For now, HTRC will continue its current services and support, but eventually, some of these services and data (still to be determined) may be retired or integrated into the general HathiTrust Digital Library.",
+   "claim": "for now services continue; some services and data (to be determined) may be retired or integrated into the Digital Library",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "the closing",
+   "date": "undated (written before the sunset; the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "marks": [
+    {
+     "mark": "superseded_in_source",
+     "locus": "B5 banner (the same page): 'HTRC has discontinued its services as of September 30, 2026.'"
+    }
+   ]
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Future of the HathiTrust Research Center ¶2",
+   "quote": "After 2026, The HTRC team plans to continue its own research agenda in text-data mining, cultural analytics with large text corpora and cultural heritage collections, feature extraction, and non-consumptive research methods. We also hope to continue providing services, data sets, and community support to the research community.",
+   "claim": "after 2026 the HTRC team plans its own research agenda (text-data mining, cultural analytics with large corpora, feature extraction, non-consumptive methods) and hopes to keep providing services, data sets and support",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": true,
+   "const": false,
+   "lineage": "after 2026",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Future of the HathiTrust Research Center ¶3",
+   "quote": "working with new partners and expanding the focus of our work beyond the HathiTrust corpus … develop a new identity and organizational structure for our future work",
+   "claim": "new partners, a focus beyond the HathiTrust corpus, a new identity and organizational structure for the team's future work",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "after 2026",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "People",
+   "quote": "John Walsh HTRC Director Indiana University J. Stephen Downie HTRC Co-Director University of Illinois",
+   "claim": "its director John Walsh (Indiana University) and co-director J. Stephen Downie (University of Illinois)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin and partners",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 d6875bc0ed243358…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Derived datasets (opening)",
+   "quote": "Derived datasets Downloadable, non-consumptive book data. HTRC releases research datasets to facilitate text analysis using the HathiTrust Digital Library.",
+   "claim": "derived datasets: downloadable, non-consumptive book data, released to facilitate text analysis of the Digital Library",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "derived datasets: what the reading made",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Derived datasets (opening)",
+   "quote": "While copyright-protected texts are not available for download from HathiTrust, fruitful research can still be performed on the basis of non-consumptive analysis of transformative datasets, such as in HTRC's flagship Extracted Features Dataset, which includes features extracted from full-text volumes.",
+   "claim": "copyright-protected texts cannot be downloaded; research proceeds on transformative datasets such as the Extracted Features Dataset, features extracted from full-text volumes",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "derived datasets: what the reading made",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Derived datasets (opening)",
+   "quote": "These features include volume-level metadata, page-level metadata, part-of-speech-tagged tokens, and token counts.",
+   "claim": "the features: volume-level and page-level metadata, part-of-speech-tagged tokens, token counts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Derived datasets (opening)",
+   "quote": "HTRC has also produced and partnered with advanced researchers to produce other derived datasets, openly released for use anywhere and by anyone, detailed below.",
+   "claim": "other derived datasets, produced with researchers, openly released for use anywhere and by anyone",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC Extracted Features Dataset, Description",
+   "quote": "The HTRC Extracted Features Dataset v.2.0 is composed of page-level features for 17.1 million volumes in the HathiTrust Digital Library. This version contains non-consumptive features for both public-domain and in-copyright books.",
+   "claim": "Extracted Features v.2.0: page-level features for 17.1 million volumes, public-domain and in-copyright alike",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2020 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC Extracted Features Dataset, Contents",
+   "quote": "# of volumes In-copyright Public domain and Creative Commons 17,123,746 10,550,952 6,572,794 # of pages 6,221,631,336 # of tokens 2,906,819,723,689",
+   "claim": "its contents: 17,123,746 volumes (10,550,952 in copyright, 6,572,794 public domain and Creative Commons), 6,221,631,336 pages, 2,906,819,723,689 tokens",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2020 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC Extracted Features Dataset, Attribution",
+   "quote": "This feature dataset is free is released under a Creative Commons Attribution 4.0 International License .",
+   "claim": "the feature dataset is free, released under CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2020 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC Extracted Features Dataset, Attribution",
+   "quote": "Jacob Jett, Boris Capitanu, Deren Kudeki, Timothy Cole, Yuerong Hu, Peter Organisciak, Ted Underwood, Eleanor Dickson Koehl, Ryan Dubnicek, J. Stephen Downie (2020). The HathiTrust Research Center Extracted Features Dataset (2.0). HathiTrust Research Center. https://doi.org/10.13012/R2TE-C227",
+   "claim": "the dataset carries its makers' names and a DOI (Jett et al., 2020)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2020",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F37": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC BookNLP Dataset for English-Language Fiction, Description",
+   "quote": "The HTRC BookNLP Dataset for English-Language Fiction (ELF) derived dataset was created using the BookNLP pipeline , extracting data from the NovelTM English-language fiction set , a supervised machine learning-derived set of around 213,000 volumes in the HathiTrust Digital Library.",
+   "claim": "the BookNLP dataset: BookNLP run over the NovelTM English-language fiction set, a machine-learning-derived set of about 213,000 volumes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2023 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC BookNLP Dataset for English-Language Fiction, Description",
+   "quote": "This dataset is modified from the standard BookNLP pipeline to output only files that meet HTRC's non-consumptive use policy that requires minimal data that cannot be easily reconstructed into the raw volume to be released.",
+   "claim": "the non-consumptive use policy, as the page states it: released data minimal, unable to be easily reconstructed into the raw volume",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "non-consumptive research",
+   "date": "2023 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC BookNLP Dataset for English-Language Fiction, Description",
+   "quote": "BookNLP is a text analysis pipeline tailored for common natural language processing (NLP) tasks to empower work in computational linguistics, cultural analytics, NLP, machine learning, and other fields.",
+   "claim": "BookNLP is an NLP pipeline for work in computational linguistics, cultural analytics, NLP, machine learning and other fields",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2023 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "HTRC BookNLP Dataset for English-Language Fiction, Contents",
+   "quote": "# of volumes represented 201,527 # of in-copyright volumes represented 90,857",
+   "claim": "201,527 volumes represented, 90,857 of them in copyright",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2023 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Word Frequencies in English-Language Literature, 1700-1922, Description",
+   "quote": "This dataset contains the word frequencies for all English-language volumes of fiction, drama, and poetry in the HathiTrust Digital Library from 1700 to 1922. Word counts are aggregated at the volume level, but include only pages tagged as belonging to the relevant literary genre.",
+   "claim": "word frequencies for every English-language volume of fiction, drama and poetry, 1700–1922, aggregated by volume over the pages tagged with the genre",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "2015 (the dataset's attribution year)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Geographic Locations in English-Language Literature, 1701-2011, Description",
+   "quote": "This dataset contains metadata as well as data regarding geographic locations mentioned in works of fiction from 1701-2011 found in the HathiTrust Digital Library.",
+   "claim": "geographic locations mentioned in works of fiction, 1701–2011, with metadata",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "derived datasets: what the reading made",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Geographic Locations in English-Language Literature, 1701-2011, Download the data",
+   "quote": "For each version of the dataset we also include a file containing just the volume ids which can be used for workset creation or to download the volumes into an HTRC data capsule to run further non-consumptive text analysis on the volumes themselves.",
+   "claim": "volume ids supplied for workset creation, or for loading the volumes into a data capsule for further non-consumptive analysis",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the portal: worksets, algorithms, data capsules",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 2adb5de1573401a0…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "HathiTrust — HathiTrust Research Center – HathiTrust Digital Library",
+  "B2": "HathiTrust — HTRC Analytics",
+  "B3": "HathiTrust — HathiTrust Research Center",
+  "B4": "HathiTrust — Update on HathiTrust Research Center",
+  "B5": "HTRC Analytics — About (own page, fetched by this row)",
+  "B6": "HTRC Analytics — Derived datasets (own page, fetched by this row)",
+  "B7": "HathiTrust Research Center — htrc.illinois.edu (census own page, empty)"
+ }
+}

@@ -1,0 +1,1537 @@
+{
+ "row": "internet-archive",
+ "address": "Internet Archive",
+ "addresses": [
+  "Internet Archive"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext or rendered text, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)) in two pools, kept apart by origin. B_D, 'card': B1 archive.org (a script shell, title plus snippet), B2 the Wikipedia article (also the entity's Wikipedia source), B3 the Facebook page (login wall), B4 a YouTube video (title only), B5 a Reddit thread (URL not found; also named in the body), B6 the Chrome Web Store listing of the Wayback Machine extension, B7 the Library of Congress record (bot check, HTTP 403), B8 a Facebook video (title only). B_R: 'own_page' B9 (archive.org/about as the census saved it, unread) and 'census_third_party' B10 (the Common Crawl article). A source in both pools is carried once, in B_D.",
+ "lineage_note": "Lineages by sense, shared by the field and the archive where an archive claim states the same sense; see row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B2.wiki the raw wikitext; B2-census.* the census's saved copy; B9, B10 the census's saved copies)",
+ "counts": {
+  "sources": 10,
+  "B_D": 8,
+  "B_R": 2,
+  "fetched_readable": 4,
+  "unreachable": 2,
+  "not_found": 3,
+  "unread_own_page": 1,
+  "claims": 57,
+  "claims_B_D": 54,
+  "claims_B_R": 3,
+  "quotes_ok": 57
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "Internet Archive — Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+   "fetched": "card; B1.html sha256 a805bb793ad63d16, HTTP 200 at 2026-11-01T15:12:43Z; a script shell, its text the title only (the card snippet stands beside it)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "Wikipedia — Internet Archive - Wikipedia",
+   "fetched": "card; B2.html sha256 7dbf1d6bb619f441, HTTP 200 at 2026-11-01T15:12:45Z; wikitext HTTP 200 (sha256 08db1b55746140c8)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Facebook — Internet Archive | San Francisco CA",
+   "fetched": "unreachable: redirected to the Facebook login page (HTTP 200 on the login page, no page content); one attempt with the census agent string, no retry by another agent string or route at 2026-11-01T15:12:48Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "YouTube·Internet Archive — How to use the Internet Archive (video, 16m)",
+   "fetched": "not found: two WebSearches on the exact title found no YouTube URL for it; the card carries no snippet; admitted through its title (§3.1(a), video cards)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Reddit — ELI5: How does Archive.org work? : r/explainlikeimfive - Reddit",
+   "fetched": "not found: three WebSearches (standard and extended) on the exact title found no URL for the thread; the body's Reddit link is a Google redirect; the card's title and snippet are its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "Chrome Web Store — Wayback Machine - Chrome Web Store",
+   "fetched": "card; B6.html sha256 5cb3008abccc2710, HTTP 200 at 2026-11-01T15:12:49Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "The Library of Congress (.gov) — Internet archive | Library of Congress",
+   "fetched": "unreachable: HTTP 403, a bot check ('Just a moment... Enable JavaScript and cookies to continue'); one attempt with the census agent string, no retry by another agent string or route at 2026-11-01T15:12:49Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B8",
+   "card": "Facebook·Internet Archive — We've been getting a lot of questions lately about how the Internet Archive ... (video, 0:40)",
+   "fetched": "not found: one WebSearch on the exact line found no URL; the body's link is a Google redirect; Facebook pages refuse the agent at a login wall (B3); admitted through its title",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B9",
+   "card": "Internet Archive — About IA (own page, census source)",
+   "fetched": "own page; B9.html sha256 a805bb793ad63d16, HTTP 200 at 2026-11-01T04:07:48Z; the census's saved copy, sha256 matching the manifest; unread (title only)",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B10",
+   "card": "Wikipedia — Common Crawl (census source)",
+   "fetched": "census third party; B10.html sha256 6a52d8dd429a5afe, HTTP 200 at 2026-11-01T04:07:47Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "census_third_party",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8"
+  ],
+  "own_pages": [
+   "B9"
+  ],
+  "own_pages_note": "the census's own page internet-archive--about (https://archive.org/about/) is unread (the script shell, title only), byte-identical with card 1's home page as fetched for this row; carried in B_R as B9, its title one lineage with card 1's",
+  "wikipedia": [
+   "B2"
+  ],
+  "census_third_party": [
+   "B10"
+  ],
+  "body_named": [
+   "B5"
+  ],
+  "unreachable": [
+   "B3",
+   "B7"
+  ],
+  "not_found": [
+   "B4",
+   "B5",
+   "B8"
+  ],
+  "title_only": [
+   "B1",
+   "B4",
+   "B8",
+   "B9"
+  ],
+  "wikipedia_state": "article: 'Internet Archive' (raw wikitext HTTP 200, rendered HTTP 200, 2026-11-01T15:12Z), no redirect ('archive.org' redirects to it), last edited 30 October 2026 at 22:59 UTC, the same revision the census saved at 04:07Z; it is card 2 of T, so the Wikipedia source and the card are one source, carried once in B_D (B2)",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8"
+   ],
+   "B_R": [
+    "B9",
+    "B10"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (eight; the body names Reddit, card 5, and links the Chrome Web Store, card 6: both carried once as cards); B_R, the own about page the census saved (B9) and the Common Crawl article the census read (B10). The Wikipedia article is card 2, in B_D. T against L_F(B_D) uses B1–B8 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 1 (archive.org, the Internet Archive's home page)",
+    "card": "Internet Archive — Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+    "url": "https://archive.org/",
+    "kind": "Overview card (the entity's own home page)",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B1.html",
+      "sha256": "a805bb793ad63d1625cf450dd466f2a42dafe26b3bb3e9ca2aa8d41f8473b4ed"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B1.txt",
+      "sha256": "71a75ba9e2882d93024a9ee5324e4ec458c4ed6016000eb645f62f836429d238"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:43Z",
+     "http": 200,
+     "url": "https://archive.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B1.html",
+     "raw_sha256": "a805bb793ad63d1625cf450dd466f2a42dafe26b3bb3e9ca2aa8d41f8473b4ed",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B1.txt"
+     ],
+     "result": "HTTP 200, a 2,033-byte script shell (<app-root></app-root>; 'Javascript is required for this site'); its only text is the page title, which is the card's title verbatim; the snippet stands as the card's further text (§3.1(a))",
+     "same_bytes_as": "B9 (the census's saved https://archive.org/about/, fetched 04:07:48Z): byte-identical, sha256 a805bb79…; the site serves one shell at both paths"
+    },
+    "names_operator": "yes (the title names the Internet Archive; the snippet: 'Internet Archive is a non-profit digital library')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL from the card's site and title (archive.org's own <title> is the card title verbatim). The page renders client-side; read as title plus snippet.",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+    "card_snippet": "Internet Archive is a non-profit digital library containing millions of free texts, movies, software, music, websites, and audio items including 1 trillion web ..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "also_origin": "wikipedia",
+    "pool": "B_D",
+    "role": "Overview card 2 (and the entity's Wikipedia article: one source, carried once, in B_D; the census's source internet-archive--wikipedia)",
+    "card": "Wikipedia — Internet Archive - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Internet_Archive",
+    "kind": "Overview card (the Wikipedia article); the entity's Wikipedia article",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2.html",
+      "sha256": "7dbf1d6bb619f441c0541ba9bf259bb8dd31ab76c5402abda33788bcfc05bc00"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2.txt",
+      "sha256": "b1f9a61b1d19b05c9e661e85916ca7f93e80f8bf9c6b65869bf1d76368059f97"
+     },
+     "B2.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2.wiki",
+      "sha256": "08db1b55746140c8662f0ac29d0b17703a0f38a13adb7192f61bbf6948d9301b"
+     },
+     "B2-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2-census.html",
+      "sha256": "37bc6be9150e01e602bec57d77ef54d7f0bff81d993980f54c578b5952dd3cb4"
+     },
+     "B2-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2-census.txt",
+      "sha256": "bc8633acc30c74215c60dd88a33cb1b3774dd9849e15c5566d8e073b34d5812e"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:45Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Internet_Archive",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2.html",
+     "raw_sha256": "7dbf1d6bb619f441c0541ba9bf259bb8dd31ab76c5402abda33788bcfc05bc00",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2.txt",
+      "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B2.wiki"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Internet_Archive&action=raw",
+      "http": 200,
+      "at": "2026-11-01T15:12:46Z",
+      "sha256": "08db1b55746140c8662f0ac29d0b17703a0f38a13adb7192f61bbf6948d9301b"
+     },
+     "census_copy": {
+      "src": "internet-archive--wikipedia",
+      "sha256": "37bc6be9150e01e602bec57d77ef54d7f0bff81d993980f54c578b5952dd3cb4",
+      "http": "200",
+      "fetched": "2026-11-01T04:07:49Z",
+      "agrees": "same length (1,244,636 bytes), different hash (per-request tokens in the rendered page); the article the same revision, last edited 30 October 2026 at 22:59 UTC in both"
+     }
+    },
+    "names_operator": "yes ('founded in 1996 by Brewster Kahle'; 'The Archive is a 501(c)(3) nonprofit operating in the United States.')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Article title Internet_Archive, no redirect ('\"archive.org\" redirects here; not to be confused with arXiv or archive.today'); rendered page and raw wikitext both HTTP 200; last edited 30 October 2026. The census row rests on this article (every evidence basis third_party).",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "Internet Archive - Wikipedia",
+    "card_snippet": "Mission: Universal access to all knowledge via archive.org; founded 1996 by Brewster Kahle; non-profit library (501c3) headquartered in San Francisco. Services:"
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 3",
+    "card": "Facebook — Internet Archive | San Francisco CA",
+    "url": "https://www.facebook.com/internetarchive/",
+    "kind": "Overview card (the Internet Archive's Facebook page)",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B3.html",
+      "sha256": "738121100dabf7eed13498a7910f1a1b0314193285d7d6e8fd3db9107524612a"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B3.txt",
+      "sha256": "7679986969b81f0f7e47ee9358e69ff325b7b3d8b87f8291687478befd6bb2b7"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:48Z",
+     "http": 200,
+     "url": "https://www.facebook.com/internetarchive/",
+     "final_url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Finternetarchive%2F",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B3.html",
+     "raw_sha256": "738121100dabf7eed13498a7910f1a1b0314193285d7d6e8fd3db9107524612a",
+     "result": "unreachable: redirected to the Facebook login page (HTTP 200 on the login page, no page content); one attempt with the census agent string, no retry by another agent string or route"
+    },
+    "names_operator": "card snippet: yes ('Organization: Internet Archive (non-profit research library, San Francisco CA)')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL from the card's site and title (the Internet Archive's page on Facebook). A login wall; the card's title and snippet are its only text.",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "Internet Archive | San Francisco CA",
+    "card_snippet": "Organization: Internet Archive (non-profit research library, San Francisco CA) Mission: Preserving web pages, books, movies, audio, and government records for p..."
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4 (video card, 16m)",
+    "card": "YouTube·Internet Archive — How to use the Internet Archive (video, 16m)",
+    "url": null,
+    "kind": "Overview video card (YouTube; the channel named on the card is the Internet Archive's)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "result": "not found: two WebSearches on the exact title found no YouTube URL for it; the card carries no snippet; admitted through its title (§3.1(a), video cards)"
+    },
+    "searches": [
+     "WebSearch '\"How to use the Internet Archive\" YouTube Internet Archive channel'",
+     "WebSearch 'site:youtube.com \"How to use the Internet Archive\"'"
+    ],
+    "names_operator": "card site: yes (YouTube·Internet Archive)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "title only",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "How to use the Internet Archive",
+    "card_snippet": null
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "also_body_named": true,
+    "role": "Overview card 5 (and the source the body names: \"users on Reddit\")",
+    "card": "Reddit — ELI5: How does Archive.org work? : r/explainlikeimfive - Reddit",
+    "url": null,
+    "kind": "Overview card (a Reddit thread in r/explainlikeimfive)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "result": "not found: three WebSearches (standard and extended) on the exact title found no URL for the thread; the body's Reddit link is a Google redirect; the card's title and snippet are its only text"
+    },
+    "searches": [
+     "WebSearch '\"ELI5: How does Archive.org work?\" explainlikeimfive'",
+     "WebSearch (extended) 'reddit explainlikeimfive \"How does Archive.org work\"'",
+     "WebSearch 'site:reddit.com ELI5 How does Archive.org work'"
+    ],
+    "names_operator": "card snippet: no (names Archive.org)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "title and snippet only; the body names Reddit as the holder of its takedown claim (T1-8): carried once, as a card, in B_D",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "ELI5: How does Archive.org work? : r/explainlikeimfive - Reddit",
+    "card_snippet": "Archival Purpose and Copyright: Archive.org primarily focuses on legitimate archival of abandoned or public domain content and respects DMCA takedown requests, ..."
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 6 (its URL also the body's first marker on Save Page Now)",
+    "card": "Chrome Web Store — Wayback Machine - Chrome Web Store",
+    "url": "https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak",
+    "kind": "Overview card (the Chrome Web Store listing of the Internet Archive's official Wayback Machine extension)",
+    "files": {
+     "B6.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B6.html",
+      "sha256": "5cb3008abccc2710c9113197313563e4808a3ff832427e22b04e0adb446dd5dc"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B6.txt",
+      "sha256": "19988307a0bb42a20840a2c510298a879f40dbc4d0d2f48ae2d6e6d3e4404a19"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:49Z",
+     "http": 200,
+     "url": "https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B6.html",
+     "raw_sha256": "5cb3008abccc2710c9113197313563e4808a3ff832427e22b04e0adb446dd5dc",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B6.txt"
+     ]
+    },
+    "names_operator": "yes ('The Official Wayback Machine Extension - by the Internet Archive.'; 'Offered by Internet Archive')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL as the transcript's body gives it (the Save Page Now line's first link, unredirected).",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "Wayback Machine - Chrome Web Store",
+    "card_snippet": "The Official Wayback Machine Extension - by the Internet Archive. Welcome to the Official Internet Archive Wayback Machine Browser Extension! Go back in time to..."
+   },
+   {
+    "id": "B7",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 7",
+    "card": "The Library of Congress (.gov) — Internet archive | Library of Congress",
+    "url": "https://www.loc.gov/item/2003541624/",
+    "kind": "Overview card (the Library of Congress's item record titled 'Internet archive')",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B7.html",
+      "sha256": "5349de351a840de24255449e92734e304b154edac7bdae82cca84445ab059224"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B7.txt",
+      "sha256": "d44c878b16cb238c3c267f979438cd2a940ab62532af72961dde5e9cda9b23a4"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T15:12:49Z",
+     "http": 403,
+     "url": "https://www.loc.gov/item/2003541624/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B7.html",
+     "raw_sha256": "5349de351a840de24255449e92734e304b154edac7bdae82cca84445ab059224",
+     "result": "unreachable: HTTP 403, a bot check ('Just a moment... Enable JavaScript and cookies to continue'); one attempt with the census agent string, no retry by another agent string or route"
+    },
+    "names_operator": "card snippet: yes ('Internet Archive founded in 1996 in San Francisco, CA')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL found by WebSearch (extended): loc.gov/item/2003541624/, titled 'Internet archive', the card's title. Refused; the card's title and snippet are its only text.",
+    "searches": [
+     "WebSearch '\"Internet archive\" Library of Congress loc.gov web archive \"permanent digital access to historical\"'",
+     "WebSearch (extended) 'loc.gov \"Internet archive\" item page Library of Congress catalog record Internet Archive organization San Francisco 1996'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 7
+     }
+    ],
+    "card_title": "Internet archive | Library of Congress",
+    "card_snippet": "Overview: Internet Archive founded in 1996 in San Francisco, CA, to provide permanent digital access to historical internet collections, websites, and cultural ..."
+   },
+   {
+    "id": "B8",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 8 (video card, 0:40)",
+    "card": "Facebook·Internet Archive — We've been getting a lot of questions lately about how the Internet Archive ... (video, 0:40)",
+    "url": null,
+    "kind": "Overview video card (a Facebook video posted by the Internet Archive)",
+    "files": {},
+    "fetched": {
+     "at": null,
+     "http": null,
+     "result": "not found: one WebSearch on the exact line found no URL; the body's link is a Google redirect; Facebook pages refuse the agent at a login wall (B3); admitted through its title"
+    },
+    "searches": [
+     "WebSearch '\"We\\'ve been getting a lot of questions lately about how the Internet Archive\" facebook'"
+    ],
+    "names_operator": "card site: yes (Facebook·Internet Archive)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "title only (the pasted line under the duration link)",
+    "surfaced_by_T": [
+     {
+      "slug": "internet-archive-aio-20261101",
+      "card": 8
+     }
+    ],
+    "card_title": "We've been getting a lot of questions lately about how the Internet Archive ...",
+    "card_snippet": null
+   },
+   {
+    "id": "B9",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the census's own page internet-archive--about (https://archive.org/about/); not surfaced by T",
+    "card": "Internet Archive — About IA (own page, census source)",
+    "url": "https://archive.org/about/",
+    "kind": "the entity's own about page as the census saved it",
+    "files": {
+     "B9.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B9.html",
+      "sha256": "a805bb793ad63d1625cf450dd466f2a42dafe26b3bb3e9ca2aa8d41f8473b4ed"
+     },
+     "B9.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B9.txt",
+      "sha256": "24816612f18eb3deff622083ad10fb8e99087902e1c2f8e1854665cb76a7277d"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:48Z",
+     "http": 200,
+     "url": "https://archive.org/about/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B9.html",
+     "raw_sha256": "a805bb793ad63d1625cf450dd466f2a42dafe26b3bb3e9ca2aa8d41f8473b4ed",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B9.txt"
+     ],
+     "result": "unread: the census's saved copy is the 2,033-byte script shell, its text the title only (93 characters); byte-identical with this row's fetch of https://archive.org/ (B1)",
+     "census_copy": {
+      "src": "internet-archive--about",
+      "sha256": "a805bb793ad63d1625cf450dd466f2a42dafe26b3bb3e9ca2aa8d41f8473b4ed",
+      "agrees": true
+     }
+    },
+    "names_operator": "title only",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest). Unread as the census records it; a reference source, it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   },
+   {
+    "id": "B10",
+    "origin": "census_third_party",
+    "pool": "B_R",
+    "role": "census third-party source common-crawl--wikipedia (read by the census for this row's evidence cc_wp and its negative tag on Common Crawl); not surfaced by T",
+    "card": "Wikipedia — Common Crawl (census source)",
+    "url": "https://en.wikipedia.org/wiki/Common_Crawl",
+    "kind": "Wikipedia article on Common Crawl, a third party read by the census",
+    "files": {
+     "B10.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B10.html",
+      "sha256": "6a52d8dd429a5afe130c0a9f753781a82482d7ed7ec29768318003e9ad8f94fc"
+     },
+     "B10.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B10.txt",
+      "sha256": "becf9d60ac2e37e7307d8627b57d2fdb623b7e6427a8fe0436ff9d86283e5b65"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T04:07:47Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Common_Crawl",
+     "raw": "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B10.html",
+     "raw_sha256": "6a52d8dd429a5afe130c0a9f753781a82482d7ed7ec29768318003e9ad8f94fc",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/internet-archive-20261101/B10.txt"
+     ],
+     "census_copy": {
+      "src": "common-crawl--wikipedia",
+      "sha256": "6a52d8dd429a5afe130c0a9f753781a82482d7ed7ec29768318003e9ad8f94fc",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "yes ('the Wayback Machine created by the Internet Archive')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); B10.txt is the census's text. Read at the passages on the Internet Archive and on Common Crawl's relation to training. A reference source (§0.3).",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet",
+   "quote": "Internet Archive is a non-profit digital library containing millions of free texts, movies, software, music, websites, and audio items including 1 trillion web ...",
+   "claim": "archive.org's own card: a non-profit digital library of millions of free texts, movies, software, music, websites and audio items, including 1 trillion web pages",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (the title, sha256 71a75ba9e2882d93…) or the card's title and snippet"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page title (the card title)",
+   "quote": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+   "claim": "its own title: a digital library of free and borrowable texts, movies and music, and the Wayback Machine",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (the title, sha256 71a75ba9e2882d93…) or the card's title and snippet"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Internet Archive is an American non-profit library founded in 1996 by Brewster Kahle that runs a digital library website, archive.org.",
+   "claim": "an American non-profit library founded in 1996 by Brewster Kahle that runs the digital library website archive.org",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "It provides free access to collections of digitized media including websites , software applications , music , audiovisual , and print materials.",
+   "claim": "free access to digitized media: websites, software, music, audiovisual and print materials",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Archive also advocates a free and open Internet . Its mission is to provide \"universal access to all knowledge\".",
+   "claim": "it advocates a free and open Internet; its mission 'universal access to all knowledge'",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "mission",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Internet Archive allows the public to upload and download digital material to its data cluster, but the bulk of its data is collected automatically by its web crawlers , which work to preserve as much of the public web as possible.",
+   "claim": "public upload and download; the bulk of its data collected automatically by its web crawlers, preserving as much of the public web as possible",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the web archive: crawl and capture",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Wayback Machine , its web archive , contains more than 1 trillion web captures.",
+   "claim": "the Wayback Machine, its web archive, holds more than 1 trillion web captures",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the web archive: crawl and capture",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Archive also oversees numerous book digitization projects , collectively one of the world's largest book digitization efforts. The Archive is used frequently by journalists and Wikipedia editors.",
+   "claim": "numerous book digitization projects, together one of the world's largest; used frequently by journalists and Wikipedia editors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Brewster Kahle founded the Internet Archive in May 1996. Alongside Bruce Gilliat , Kahle began inspecting and collecting snapshots of the rapidly expanding internet . Around the same time, he began working the for-profit web crawling company Alexa Internet .",
+   "claim": "Kahle founded it in May 1996, with Bruce Gilliat collecting snapshots of the internet, beside his for-profit web crawling company Alexa Internet",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The archived content became more easily available to the general public in 2001, through the Wayback Machine .",
+   "claim": "the archived content public through the Wayback Machine from 2001",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the web archive: crawl and capture",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Wayback Machine",
+   "quote": "The Wayback Machine is a service that allows archives of the World Wide Web to be searched and accessed. … It can be used to see what previous versions of web sites used to look like or to visit web sites that no longer even exist.",
+   "claim": "the Wayback Machine lets archives of the web be searched and accessed: previous versions of sites, and sites that no longer exist",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "readback: a page by URL and date",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Wayback Machine",
+   "quote": "The Wayback Machine was created as a joint effort between Alexa Internet (owned by Amazon.com ) and the Internet Archive.",
+   "claim": "the Wayback Machine created jointly by Alexa Internet (owned by Amazon.com) and the Internet Archive",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the web archive: crawl and capture",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Wayback Machine",
+   "quote": "In October 2025, the Internet Archive announced that the Wayback Machine had archived one trillion webpages, equivalent to more than 100,000 terabytes of data.",
+   "claim": "October 2025: one trillion webpages archived, more than 100,000 terabytes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the web archive: crawl and capture",
+   "date": "2025-10 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Archive-It",
+   "quote": "Archive-It allows the user to customize their capture or exclusion of web content they want to preserve for cultural heritage reasons. … In terms of accessibility, the archived websites are full text searchable within seven days of capture.",
+   "claim": "Archive-It, its subscription service: partners customize capture or exclusion of web content; archived sites full-text searchable within seven days of capture",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "readback: a page by URL and date",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Internet Archive Scholar",
+   "quote": "In September 2020, Internet Archive announced a new initiative to archive and preserve open access academic journals, called Internet Archive Scholar . … it contained over 35 million research articles with full text access.",
+   "claim": "Internet Archive Scholar (from September 2020): over 35 million research articles with full text (February 2024)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Items and collections",
+   "quote": "The Archive stores files inside so-called items, which are similar to directories in that they can contain multiple files, but can have additional metadata such as a description and tags which make them more searchable.",
+   "claim": "the unit: items, directory-like containers of files with metadata such as a description and tags",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the item and the collection",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Items and collections",
+   "quote": "Staff members of the Internet Archive organize items by placing them into so-called collections, which are pages listing multiple items.",
+   "claim": "staff organize items into collections, pages listing multiple items",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the item and the collection",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History (acquisition and lending)",
+   "quote": "The Internet Archive acquires most materials from donations, … All material is then digitized and retained in digital storage, while a digital copy is returned to the original holder and the Internet Archive's copy, if not in the public domain, is lent to patrons worldwide one at a time under the controlled digital lending (CDL) theory of the first-sale doctrine .",
+   "claim": "most materials acquired by donation, digitized and kept; a digital copy returned to the holder; in-copyright copies lent one at a time under controlled digital lending",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "lending and the law",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History (acquisition and lending)",
+   "quote": "On March 25, 2023, the court found in favor of the publishers. The negotiated judgment of August 11, 2023, barred the Internet Archive from digitally lending books for which electronic copies are on sale.",
+   "claim": "the court found for the publishers on 25 March 2023; the negotiated judgment of 11 August 2023 bars digital lending of books with electronic copies on sale",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "lending and the law",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia",
+   "marks": [
+    {
+     "mark": "internally_inconsistent",
+     "with": "F21",
+     "note": "the article dates the district court's ruling 25 March 2023 in History and 24 March 2023 in Book publishers' lawsuit; both loci carried (§4.3)"
+    }
+   ]
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Book publishers' lawsuit",
+   "quote": "On September 4, 2024, the United States Court of Appeals for the Second Circuit upheld the district court's ruling, calling the Internet Archive's argument that they were shielded by fair use doctrine \"unpersuasive\".",
+   "claim": "4 September 2024: the Second Circuit upheld the ruling, calling the fair use argument 'unpersuasive'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lending and the law",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Book publishers' lawsuit",
+   "quote": "Judge Koeltl ruled on March 24, 2023, against Internet Archive in the case, saying the National Emergency Library concept was not fair use, so the Archive infringed copyrights by lending out the publisher's books without the waitlist restriction.",
+   "claim": "Judge Koeltl ruled on 24 March 2023 that the National Emergency Library was not fair use (the History section gives 25 March)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lending and the law",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia",
+   "marks": [
+    {
+     "mark": "internally_inconsistent",
+     "with": "F19",
+     "note": "the article dates the district court's ruling 25 March 2023 in History and 24 March 2023 in Book publishers' lawsuit; both loci carried (§4.3)"
+    }
+   ]
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Text collection",
+   "quote": "The material digitized by others includes more than 300,000 books that were contributed to the collection, between about 2006 and 2008, by Microsoft through its Live Search Books project",
+   "claim": "material digitized by others: more than 300,000 books from Microsoft's Live Search Books, about 2006–2008",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Text collection",
+   "quote": "Around October 2007, Archive users began uploading public domain books from Google Book Search . … the books are identical to the copies found on Google, except without the Google watermarks, and are available for unrestricted use and download.",
+   "claim": "from about October 2007 users uploaded public domain books from Google Book Search, identical to Google's copies without the watermarks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Text collection (note a)",
+   "quote": "Books imported from Google have a metadata tag of scanner:google for searching purposes.",
+   "claim": "Google's books tagged scanner:google",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Text collection; Operations",
+   "quote": "The scanning performed by the Internet Archive is financially supported by libraries and foundations. … as of 2019, scanning is performed by 100 paid operators worldwide.",
+   "claim": "its scanning financed by libraries and foundations; 100 paid operators worldwide as of 2019",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Text collection",
+   "quote": "By 2025, the American collection had grown to 3,900,000 items, … At that time, the total content exceeded 47,000,000 texts.",
+   "claim": "by 2025 the American collection 3,900,000 items; total texts above 47,000,000",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2025 (as the article states)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Open Library",
+   "quote": "The Open Library is another project of the Internet Archive. The project seeks to include a web page for every book ever published: it holds 25 million catalog records of editions. … it contains the full texts of approximately 1,600,000 public domain books",
+   "claim": "Open Library: a web page for every book ever published, 25 million catalogue records of editions; the full texts of about 1,600,000 public domain books",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F28": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Open Library",
+   "quote": "it offers a two-week loan of e-books in its controlled digital lending program for over 647,784 books not in the public domain, in partnership with over 1,000 library partners from six countries",
+   "claim": "two-week e-book loans under controlled digital lending for over 647,784 books not in the public domain, with over 1,000 library partners in six countries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lending and the law",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F29": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright issues",
+   "quote": "By 2026, The New York Times and The Guardian are among the outlets concerned about scraping of the Internet Archive of their content as a way to get around the defenses against scraping from their own websites. Some news organizations are restricting the Internet Archive's crawlers.",
+   "claim": "by 2026 outlets, The New York Times and The Guardian among them, are concerned that their content is scraped from the Internet Archive to get around their own defenses; some restrict its crawlers",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "crawls, scraping and the training layer",
+   "date": "2026 (as the article states)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F30": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "References (the sources of the scraping sentence)",
+   "quote": "\"News publishers limit Internet Archive access due to AI scraping concerns\" … \"News sites are locking out the Internet Archive to stop AI crawling. Is the 'open web' closing?\"",
+   "claim": "the two works the article cites for the sentence: Nieman Lab, 'News publishers limit Internet Archive access due to AI scraping concerns' (28 January 2026), and The Conversation, 'News sites are locking out the Internet Archive to stop AI crawling' (5 February 2026)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "crawls, scraping and the training layer",
+   "date": "2026-01-28 and 2026-02-05 (the cited works)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F31": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright issues",
+   "quote": "The video was reported to have been removed by the Archive on January 23. [ 248 ] The Internet Archive then stated, on January 27, that they had removed the video in response to a BBC request under the Digital Millennium Copyright Act .",
+   "claim": "January 2023: it removed a BBC documentary, stating it did so on a BBC request under the Digital Millennium Copyright Act",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "takedown and exclusion",
+   "date": "2023-01 (as the article states)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F32": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "2024 cyberattacks",
+   "quote": "It was reported that about 31 million user accounts were affected … By October 25, service was fully restored.",
+   "claim": "the October 2024 breach: about 31 million user accounts affected; service fully restored by 25 October",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "2024-10",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F33": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "On September 10, 2026, Internet Archive announced ATLAS (Access To Local And State government information) program for digital preservation of data from state and local government agencies in the United States",
+   "claim": "ATLAS, announced 10 September 2026, for digital preservation of state and local government data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "2026-09-10",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F34": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Music publishers' lawsuit",
+   "quote": "The lawsuit was settled in September 2025.",
+   "claim": "the music publishers' (Great 78) suit settled in September 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "lending and the law",
+   "date": "2025-09",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F35": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "In August 2012, the Archive began adding BitTorrent to its file download options.",
+   "claim": "BitTorrent downloads from August 2012",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "2012-08",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F36": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Operations",
+   "quote": "The Archive is headquartered in San Francisco , California. … The Archive is a 501(c)(3) nonprofit operating in the United States.",
+   "claim": "headquartered in San Francisco; a 501(c)(3) nonprofit operating in the United States",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F37": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "hatnote",
+   "quote": "\"archive.org\" redirects here; not to be confused with arXiv or archive.today .",
+   "claim": "'archive.org' redirects to the article; not to be confused with arXiv or archive.today",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours and namesakes",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F38": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "In 2004, the Internet Archive Europe was founded in the Netherlands.",
+   "claim": "Internet Archive Europe founded in the Netherlands, 2004",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "2004",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F39": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "Beginning in 2017, OCLC and the Internet Archive have collaborated to make the Archive's records of digitized books available in WorldCat .",
+   "claim": "from 2017 its records of digitized books available in WorldCat with OCLC",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2017",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F40": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "This page was last edited on 30 October 2026, at 22:59",
+   "claim": "the article's last edit, 30 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception at the name",
+   "date": "2026-10-30",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F41": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Digitizing sponsors for books",
+   "quote": "The Library of Congress created numerous Handle System identifiers that pointed to free digitized books in the Internet Archive. [ 141 ] The Internet Archive and Open Library are listed on the Library of Congress website as a source of e-books.",
+   "claim": "the Library of Congress made Handle identifiers pointing to its free digitized books and lists it and Open Library as a source of e-books",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the library: books and their sources",
+   "date": "2026-10-30 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F42": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Wayback Machine",
+   "quote": "As of September 5, 2024 [ update ] , the Internet Archive held over 866 billion web pages, more than 42.5 million print materials, 13 million videos, 3 million TV news reports, 1.2 million software programs, 14 million audio files, 5 million images, and 272,660 concerts in its Wayback Machine.",
+   "claim": "as of 5 September 2024: over 866 billion web pages, 42.5 million print materials, 13 million videos and other holdings",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the web archive: crawl and capture",
+   "date": "2024-09-05",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 b1f9a61b1d19b05c…) or wikitext B2.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F43": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Organization: Internet Archive (non-profit research library, San Francisco CA) Mission: Preserving web pages, books, movies, audio, and government records for p...",
+   "claim": "its Facebook page as the card renders it: a non-profit research library in San Francisco preserving web pages, books, movies, audio and government records",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source)"
+  },
+  "F44": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (video, 16m)",
+   "quote": "How to use the Internet Archive",
+   "claim": "a 16-minute video on the Internet Archive's channel, 'How to use the Internet Archive'",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception at the name",
+   "date": "undated (card)",
+   "quote_ok": true,
+   "checked_against": "the card's title (video card, no snippet)"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (URL not found)",
+   "quote": "Archival Purpose and Copyright: Archive.org primarily focuses on legitimate archival of abandoned or public domain content and respects DMCA takedown requests, ...",
+   "claim": "the Reddit card: Archive.org focuses on legitimate archival of abandoned or public domain content and respects DMCA takedown requests",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "takedown and exclusion",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (URL not found)"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "The Official Wayback Machine Extension - by the Internet Archive. … Go back in time to see how a website has changed through the history of the Web. Save websites, view missing 404 Not Found pages, or read archived books & papers.",
+   "claim": "its official browser extension: see how a website has changed, save websites, view missing 404 pages, read archived books and papers",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "readback: a page by URL and date",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Features",
+   "quote": "Save Page Now - Instantly save the page you are currently viewing in the Wayback Machine. Turn on Auto Save Page in settings to save pages that have not previously been saved, or Auto Save Bookmarks to save when bookmarking a page.",
+   "claim": "Save Page Now saves the page being viewed into the Wayback Machine; Auto Save options",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the web archive: crawl and capture",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Features",
+   "quote": "Oldest, Newest & Overview - View the first version of a page or the most recently saved in the Wayback Machine. … Wayback Machine Count - Display a count of snapshots of the current page stored in the Wayback Machine",
+   "claim": "first and latest saved versions, a calendar overview, and a count of snapshots of the page",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "readback: a page by URL and date",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Features",
+   "quote": "404 Not Found - When an error occurs, automatically check if an archived copy is available. Checks against 4xx & 5xx HTTP error codes.",
+   "claim": "on a 4xx or 5xx error it checks for an archived copy",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "readback: a page by URL and date",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Privacy",
+   "quote": "Wayback Machine handles the following: Personally identifiable information Authentication information Web history Website content",
+   "claim": "the extension handles personally identifiable information, authentication information, web history and website content",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "header and Details",
+   "quote": "300,000 users … Version 3.4.8 … Updated March 16, 2026 … Offered by Internet Archive",
+   "claim": "300,000 users; version 3.4.8, updated 16 March 2026; offered by the Internet Archive",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "history and operations",
+   "date": "2026-03-16",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F52": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Details (developer)",
+   "quote": "Internet Archive 300 Funston Ave San Francisco, CA 94118",
+   "claim": "the developer address: 300 Funston Ave, San Francisco",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 19988307a0bb42a2…) or the card's snippet"
+  },
+  "F53": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "Overview: Internet Archive founded in 1996 in San Francisco, CA, to provide permanent digital access to historical internet collections, websites, and cultural ...",
+   "claim": "the Library of Congress card: founded in 1996 in San Francisco to provide permanent digital access to historical internet collections, websites and cultural material",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source)"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title (video, 0:40)",
+   "quote": "We've been getting a lot of questions lately about how the Internet Archive ...",
+   "claim": "a 40-second Facebook video by the Internet Archive answering questions about how the Internet Archive works",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception at the name",
+   "date": "undated (card)",
+   "quote_ok": true,
+   "checked_against": "the card's title (video card, no snippet)"
+  },
+  "F55": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "saved text (the title only)",
+   "quote": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+   "claim": "the census's saved about page: the same title, the same shell",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2026-11-01 (the census fetch)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (the census's text: the title only)"
+  },
+  "F56": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "History",
+   "quote": "Common Crawl was designed to have more and fresher data that was more efficient to analyze and utilize than the Wayback Machine created by the Internet Archive .",
+   "claim": "Common Crawl designed for more and fresher data, more efficient to analyze than the Wayback Machine",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbours and namesakes",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (the census's text, sha256 becf9d60ac2e37e7…)"
+  },
+  "F57": {
+   "source": "B10",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "lead",
+   "quote": "The data had mostly been primarily used by researchers and some startups until the 2020s, when AI companies started training large language models using the data.",
+   "claim": "Common Crawl's data used to train large language models from the 2020s",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "crawls, scraping and the training layer",
+   "date": "2026-09-24 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (the census's text, sha256 becf9d60ac2e37e7…)"
+  }
+ },
+ "field_sources": {
+  "B1": "Internet Archive — Internet Archive: Digital Library of Free & Borrowable Texts, Movies, Music & Wayback Machine",
+  "B2": "Wikipedia — Internet Archive - Wikipedia",
+  "B3": "Facebook — Internet Archive | San Francisco CA",
+  "B4": "YouTube·Internet Archive — How to use the Internet Archive (video, 16m)",
+  "B5": "Reddit — ELI5: How does Archive.org work? : r/explainlikeimfive - Reddit",
+  "B6": "Chrome Web Store — Wayback Machine - Chrome Web Store",
+  "B7": "The Library of Congress (.gov) — Internet archive | Library of Congress",
+  "B8": "Facebook·Internet Archive — We've been getting a lot of questions lately about how the Internet Archive ... (video, 0:40)",
+  "B9": "Internet Archive — About IA (own page, census source)",
+  "B10": "Wikipedia — Common Crawl (census source)"
+ }
+}

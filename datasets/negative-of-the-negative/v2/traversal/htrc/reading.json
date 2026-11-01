@@ -1,0 +1,249 @@
+{
+ "row": "htrc",
+ "pass": "2026-11-01",
+ "pass_note": "first reading, 2026-11-01, with one citation hop from #186 and #1543 (the census anchors)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the center with the entity named; R, a relation the archive states between the center and an archive object; O, an archive category applied to the center or to a class the field and the census source for it (non-consumptive computational analysis of library volumes: B2, B5, B6, census kind, method, question; derived datasets: B2, B6, census unit, holdings, record.makes, tll_reading; receiving apparatus: the census's tll_reading and organizing question, #1543). #186 and #1543 read whole at the passages on corpora, machine reading and the receiving apparatus (BRIEF-NEW-ROW-LAYER §6). A bare mention, a catalogue line or a sentence about another object's features or tokens is not a claim on these classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "Generative Uptake, the census's anchor, read whole: §8 defines TLL* through a receiving apparatus and names human institutional layers the first (candidate O0038); §10 defines machine reception as an encounter that changes the machine state and may emit an artifact, the institutional training loop, and the two questions of what survived and what became possible. O-class, receiving apparatus (the class the census's tll_reading sources for the entity). §9's mechanism and sovereignty sentences (O0039, O0040) concern scripture's address and are read, unadmitted",
+   "claims": [
+    "O1543-01",
+    "O1543-02",
+    "O1543-03",
+    "O1543-04"
+   ],
+   "cands": [
+    "O0038",
+    "O0039",
+    "O0040"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "Who Is Writing for the Machines?, the census's anchor, read whole (no string candidate; read at its passages by the brief): the definition of the layer where texts are crawled, indexed, trained on, retrieved and recomposed, and the observation that literary works in the corpora are read by machines incidentally (line 54). O-class, receiving apparatus and the corpora (the census's area for the entity)",
+   "claims": [
+    "O186-01",
+    "O186-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 400,
+   "strata": [
+    "O"
+   ],
+   "reason": "Training Layer Literature: Executive Summary, Scholarly Neighbors: computational literary analysis (Moretti) as a neighbour that treats machine readership as analytical method. O-class, non-consumptive computational analysis (B2 'computational analysis', B5 'computational text analysis')",
+   "claims": [
+    "O400-01"
+   ],
+   "cands": [
+    "O0011"
+   ]
+  },
+  {
+   "dep": 700,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Gate Was Never Limbo, IV, Philological Ancestry: 'the Stanford Literary Lab's computational methods treat the text as data point', set against operative philology. O-class, computational analysis",
+   "claims": [
+    "O700-01"
+   ],
+   "cands": [
+    "O0013"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2, Layer 6: text and data mining among the operations requiring licence, and automated ingestion without preservation of attribution as an unauthorized provenance-stripped copy; said of the archive's own domains, applied to the class text and data mining (B2 'text and data mining methods'). O-class",
+   "claims": [
+    "O127-01"
+   ],
+   "cands": [
+    "O0006"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/hathitrust-research-center-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note, query note and reach basis for the entity's capture (OBS-e56da33771d0, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/htrc (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'htrc'], organizing_question, admission_rule, anchor, areas)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; where a field restates the home page (B2) it is one lineage with that source; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36",
+    "TLL-37",
+    "TLL-38",
+    "TLL-39",
+    "TLL-40",
+    "TLL-41",
+    "TLL-42"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 122,
+   "reason": "Coverage vs. Depth: Moretti's distant reading as a coverage-architecture of mapping scholarship; said of literary mapping, with no claim on computational analysis of library volumes or on derived data; 'distant reading' is in the config's pattern and in no field source. Read, unadmitted",
+   "cands": [
+    "O0003",
+    "O0004",
+    "O0005"
+   ]
+  },
+  {
+   "dep": "55",
+   "reason": "a recovery line ('computational analysis' of a white paper). Read, unadmitted",
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": "76, 157, 175, 192, 199, 444, 820, 832, 907, 931, 932, 933, 1023, 1081, 1211, 1216, 1217, 1262, 1316, 1394, 1400, 1452, 1571, 1593",
+   "reason": "'feature extraction' and 'token count' in physics, classifiers, code, stylometry and tokenization: other objects, outside the class of a machine reading of library volumes. Read, unadmitted",
+   "cands": "the remaining O-class candidates"
+  },
+  {
+   "dep": "416, 1682, 1710, 1711, 1715, 1717, 1720",
+   "reason": "found by a direct search for 'HathiTrust' (not an alias): they concern the HathiTrust Digital Library and its catalogue (#416: 'Large text archives (e.g., HathiTrust, Project Gutenberg) have scale but no internal architecture'; the seatings: HathiTrust copies held or refused), the census's distinct entity hathitrust. Read, unadmitted for this row",
+   "cands": []
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543
+  ],
+  "candidates": 28,
+  "admitted": [],
+  "rejected": "#129, #160, #337, #382, #473, #481, #590, #603, #604, #738, #784, #819, #1409, #1441, #1443, #1521, #1526, #1527, #1528, #1540, #1544, #1545, #1555, #1684, #1709, #1711, #1721, #1722: cited by or citing the anchors on other subjects (captures, traversal logs, the prize, handwritten artifacts, the prediction index, the Originals Library, the existence tax); searched for digital libraries, library volumes, non-consumptive use, text and data mining, computational analysis and HathiTrust: #1409 names the W3C TDM Reservation Protocol group, #1709/#1711 name other digital libraries; none says anything of the center or its classes",
+  "file": "candidates-H.jsonl"
+ },
+ "lineages": [
+  {
+   "lineage": "the corpora and the receiving apparatus",
+   "instances": [
+    400,
+    186,
+    1543
+   ],
+   "earliest": 400,
+   "claims": [
+    "O400-01",
+    "O186-01",
+    "O186-02",
+    "O1543-01",
+    "O1543-02",
+    "O1543-03"
+   ]
+  },
+  {
+   "lineage": "a receiving apparatus with its product on record",
+   "instances": [
+    1543
+   ],
+   "earliest": 1543,
+   "claims": [
+    "O1543-04"
+   ]
+  },
+  {
+   "lineage": "non-consumptive research",
+   "instances": [
+    700
+   ],
+   "earliest": 700,
+   "claims": [
+    "O700-01"
+   ]
+  },
+  {
+   "lineage": "derived datasets: what the reading made",
+   "instances": [
+    127
+   ],
+   "earliest": 127,
+   "claims": [
+    "O127-01"
+   ]
+  }
+ ],
+ "observations": [
+  "No deposit names the center (D and R empty); its archive record is the census row and the capture.",
+  "The string pass's 'derived datasets' class caught 'feature extraction' and 'token count' in unrelated deposits (physics triggers, classifiers, stylometry); all read and left unadmitted.",
+  "#127's rule is said of the archive's own works and domains; it is composed as the archive's, beside the census's 'not recorded' on a work's name."
+ ],
+ "counts": {
+  "D_candidates": 0,
+  "R_candidates": 0,
+  "O_candidates": 43,
+  "H_candidates": 28,
+  "deposits_admitted": 5,
+  "instances_kept": 0,
+  "deposit_claims": 9,
+  "TLL_claims": 42,
+  "CAP_claims": 10
+ }
+}

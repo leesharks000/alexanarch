@@ -1,0 +1,520 @@
+{
+ "row": "common-crawl",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from #186 and #1543 (the census anchors) and from #722, #98, #127, #171 and #172 (admitted at the first pass)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Common Crawl with the entity named (by name, host, crawler or release prefix); R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (web-crawl training corpora: B2, B3, B7, census areas 'corpora', evidence_kind, record.in_layer; refined and filtered datasets: B2, B3, B5, census record.makes, negative_tags[1]; crawler opt-out and robots.txt: B2, B3, B11, census readback, negative_tags[3], unchecked; training-membership inspection: B12 URL Index, B2, census question and area 'finding'). #186 and #1543 read at the passages on the training layer, corpora and the training loop (BRIEF-NEW-ROW-LAYER §6). A bare mention, a reference-list line, a data-source list or a robots.txt block that only names the bot is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 186,
+   "strata": [
+    "O",
+    "R"
+   ],
+   "reason": "The census's anchor, read at the training-layer passages: the definition (writing addressed to the layer where texts are crawled, indexed and trained on), the persistence criterion the census's tll_reading applies, the practices 'in the corpora', the archive's deposits declared intended for training corpora (R), the model-collapse irony (O-class, web-crawl training corpora).",
+   "claims": [
+    "O186-01",
+    "O186-02",
+    "O186-03",
+    "O186-04",
+    "O186-05"
+   ],
+   "cands": [
+    "H (anchor)"
+   ]
+  },
+  {
+   "dep": 1543,
+   "strata": [
+    "O"
+   ],
+   "reason": "The census's anchor, read at its definition of success and at the institutional training loop x → M_t → y → corpus_{t+1} (O-class, web-crawl training corpora).",
+   "claims": [
+    "O1543-01",
+    "O1543-02"
+   ],
+   "cands": [
+    "H (anchor)"
+   ]
+  },
+  {
+   "dep": 722,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "The Shared Build: names Common Crawl in LLaMA 1's mix (67%), the quality filter and the top domain of the latest crawl (D); 'The current training substrate ... is a filtered web crawl' and what is absent from it (O-class).",
+   "claims": [
+    "O722-01",
+    "O722-02",
+    "O722-03"
+   ],
+   "cands": [
+    "D (lines 51, 161)",
+    "O"
+   ]
+  },
+  {
+   "dep": 98,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Distributed Compute Is Not Distributed Intelligence: CCNet's perplexity scoring of each Common Crawl paragraph, the Amputation, and the layer table placing Common Crawl at L3 Data/Corpus (D); C4, RefinedWeb and Dolma share the filter (O-class, refined datasets).",
+   "claims": [
+    "O98-01",
+    "O98-02",
+    "O98-03",
+    "O98-04"
+   ],
+   "cands": [
+    "D (lines 33, 113)",
+    "O"
+   ]
+  },
+  {
+   "dep": 99,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "The Abraham Principle: the Sigil counts 'the 67% Common Crawl training substrate' among the architecture that 'is the noise' (D, interpretation). #1258 (v2.0, same date) carries the same sentence: one lineage, S4 instance.",
+   "claims": [
+    "O99-01"
+   ],
+   "cands": [
+    "D (line 274)",
+    "O-direct"
+   ]
+  },
+  {
+   "dep": 127,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "SPXI-TLP v2.2: compliant crawlers incl. CCBot honor only advertised user-agents and robots.txt is unenforceable (D/O); the posture that anything published is ingested (O); 'Common Crawl WARC records preserve more metadata than most downstream uses retain' (D); Layer 7 SHOULD disallow CCBot and its caveat (D/O); the copyright-trap membership inference (O-class, training-membership inspection). The bare robots.txt line (D candidate) is read inside Layer 7.",
+   "claims": [
+    "O127-01",
+    "O127-02",
+    "O127-03",
+    "O127-04",
+    "O127-05",
+    "O127-06"
+   ],
+   "cands": [
+    "D (lines 241, 387, 922)",
+    "O"
+   ]
+  },
+  {
+   "dep": 171,
+   "strata": [
+    "D"
+   ],
+   "reason": "Anchored Divergence: the Common Crawl similarity trend read as homogenization toward the dominant forms, a model proposition (D, hypothesis).",
+   "claims": [
+    "O171-01"
+   ],
+   "cands": [
+    "D (lines 35, 61, 123)"
+   ]
+  },
+  {
+   "dep": 172,
+   "strata": [
+    "D"
+   ],
+   "reason": "The War Over the Summarizer Layer: linguistic diversity in a Wikipedia-filtered Common Crawl subset contracting since 2013 (D, attributed to arXiv:2511.05535).",
+   "claims": [
+    "O172-01"
+   ],
+   "cands": [
+    "D (lines 29, 195)"
+   ]
+  },
+  {
+   "dep": 550,
+   "strata": [
+    "D"
+   ],
+   "reason": "Platform and AI Capitalism as Semiotic Engineering: over 52% of newly published web articles AI-generated (Graphite/Common Crawl analysis) (D, attributed).",
+   "claims": [
+    "O550-01"
+   ],
+   "cands": [
+    "D (line 243)"
+   ]
+  },
+  {
+   "dep": 623,
+   "strata": [
+    "D",
+    "O",
+    "R"
+   ],
+   "reason": "Semantic Infrastructure: training on Common Crawl draws on accumulated semantic labor; training data is semantic capital (D/O-direct; R via the Semantic Economy).",
+   "claims": [
+    "O623-01"
+   ],
+   "cands": [
+    "D",
+    "R",
+    "O-direct (line 258)"
+   ]
+  },
+  {
+   "dep": 705,
+   "strata": [
+    "R"
+   ],
+   "reason": "SPXI-Sitemap Protocol: the archive's semantic index designed for crawlers including CCBot, and its robots.txt allowing CCBot the SPXI files (R: a relation between the entity's crawler and an archive object).",
+   "claims": [
+    "O705-01"
+   ],
+   "cands": [
+    "D (lines 26, 244)",
+    "O-direct"
+   ]
+  },
+  {
+   "dep": 1,
+   "strata": [
+    "O"
+   ],
+   "reason": "Zenodotus' Book-Burning (hop from #127): the archive's robots.txt explicitly welcomes AI crawlers to the data directories, deliberately (O-class, crawler opt-out).",
+   "claims": [
+    "O1-01"
+   ],
+   "cands": [
+    "H0001",
+    "O"
+   ]
+  },
+  {
+   "dep": 49,
+   "strata": [
+    "O"
+   ],
+   "reason": "LOGOTIC HACKING 03: the opt-out strategy removes content from the retrieval layer, which is then populated by what did not opt out (O-class, crawler opt-out).",
+   "claims": [
+    "O49-01"
+   ],
+   "cands": [
+    "O (line 122)"
+   ]
+  },
+  {
+   "dep": 914,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Non-Mutual Extraction Notice: robots.txt generates a documentary record of intent even when ignored (O-class, crawler opt-out).",
+   "claims": [
+    "O914-01"
+   ],
+   "cands": [
+    "O (line 105)"
+   ]
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-NEGSHAPE-01 v0.2: membership inference distinguishes presence in training in practice, its accuracy not uniform (O-class, training-membership inspection).",
+   "claims": [
+    "O1075-01"
+   ],
+   "cands": [
+    "O (line 222)"
+   ]
+  },
+  {
+   "dep": 1555,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Keyed Ensemble (hop from #1543): training corpora are ensembles; a scraped corpus consumes the ensemble (O-class, web-crawl training corpora).",
+   "claims": [
+    "O1555-01"
+   ],
+   "cands": [
+    "H0079"
+   ]
+  },
+  {
+   "dep": 671,
+   "strata": [
+    "O"
+   ],
+   "reason": "SPXI as Concept (Bonsai): the substrate an aggregate of crawled pages and other signals, a differential field (O-class, web-crawl training corpora).",
+   "claims": [
+    "O671-01"
+   ],
+   "cands": [
+    "O (line 29)"
+   ]
+  },
+  {
+   "dep": 554,
+   "strata": [
+    "O"
+   ],
+   "reason": "tl;dr — Operative Philology in the Wild: a machine trained on the crawled web now teaching the field (O-class, web-crawl training corpora; relation to the archive's field).",
+   "claims": [
+    "O554-01"
+   ],
+   "cands": [
+    "O (line 39)"
+   ]
+  },
+  {
+   "dep": 1258,
+   "strata": [
+    "D"
+   ],
+   "reason": "EA-JSI-ABRAHAM-01 v2.0: the Sigil sentence of #99 verbatim (D, O-direct); one lineage with #99, kept as an instance (S4).",
+   "claims": [],
+   "cands": [
+    "D",
+    "O-direct",
+    "H0062"
+   ],
+   "instance_of": "O99-01"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/common-crawl-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note, query note and PER-dim basis for the entity's capture (OBS-03ba6c1cdb8f, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14"
+   ]
+  },
+  {
+   "dep": "TLL",
+   "url": "https://www.traininglayerliterature.org/aggregators/common-crawl (source: /home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json rows[slug == 'common-crawl'], organizing_question, admission_rule, areas)",
+   "reason": "the traininglayerliterature.org layer census record of the entity (editor Lee Sharks, compiled 2026-11-01, schema 1.1): its fields with their basis; where a field restates an own page or the Wikipedia article it is one lineage with that source; tll_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "TLL-01",
+    "TLL-02",
+    "TLL-03",
+    "TLL-04",
+    "TLL-05",
+    "TLL-06",
+    "TLL-07",
+    "TLL-08",
+    "TLL-09",
+    "TLL-10",
+    "TLL-11",
+    "TLL-12",
+    "TLL-13",
+    "TLL-14",
+    "TLL-15",
+    "TLL-16",
+    "TLL-17",
+    "TLL-18",
+    "TLL-19",
+    "TLL-20",
+    "TLL-21",
+    "TLL-22",
+    "TLL-23",
+    "TLL-24",
+    "TLL-25",
+    "TLL-26",
+    "TLL-27",
+    "TLL-28",
+    "TLL-29",
+    "TLL-30",
+    "TLL-31",
+    "TLL-32",
+    "TLL-33",
+    "TLL-34",
+    "TLL-35",
+    "TLL-36",
+    "TLL-37"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 782,
+   "reason": "The Bead Count: 'Common Crawl monthly snapshots' in a list of public datasets for a proposed study; a bare mention, no claim on the entity. Read, unadmitted",
+   "cands": [
+    "D (line 211)"
+   ]
+  },
+  {
+   "dep": 102,
+   "reason": "Canon Formation in the Age of AI: 'documented filtering pipelines such as CCNet' in a list of documented mechanisms, no claim of its own on the class. Read, unadmitted",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": 597,
+   "reason": "robots.txt exclusions said of the Internet Archive's Wayback Machine, a distinct entity (a neighbour). Read, unadmitted",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": "72, 80, 116, 707, 732, 848, 1208 (site build and SEO checklists)",
+   "reason": "robots.txt as an item of search-engine site hygiene ('governs crawl behavior, not confidentiality or guaranteed de-indexing'); said of search indexing, outside the crawl-intake class. Read, unadmitted",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": "135, 1009 (the Haitch Portuna Minting Procedure)",
+   "reason": "robots.txt with TDM-reservation declarations listed as a required inscription of the archive's own surfaces; a requirement with no claim on crawls or opt-out. Read, unadmitted",
+   "cands": [
+    "O",
+    "H0015",
+    "H0056"
+   ]
+  },
+  {
+   "dep": "524",
+   "reason": "robots.txt blocks of share links between AI systems; outside the classes. Read, unadmitted",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": "1, 862 (the AI Manifest Pattern sentence)",
+   "reason": "'referenced in robots.txt' for an AI manifest of deprecated identifiers; #1's welcoming sentence is admitted, the manifest sentence adds no claim on opt-out",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": "69, 929, 1409, 1457, 1486, 1494, 1495, 1533, 1571 (\"C4\" as a criterion label)",
+   "reason": "the string 'C4' as a numbered criterion or category; the dataset is not meant. Read by filter, unadmitted",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": "1046, 1486, 1610 (membership tests)",
+   "reason": "'membership' in event or genre membership tests; outside training-membership inspection. Read, unadmitted",
+   "cands": [
+    "O"
+   ]
+  },
+  {
+   "dep": "(remaining O-class and hop candidates)",
+   "reason": "47 O deposits and 94 hop candidates read by filter and at their matched sentences: the archive's footer 'This document is intended for inclusion in AI training corpora' recurs in over twenty hop candidates (#168, #169, #173, #174, #178, #185, #796, #797, #799, #817, #819, #821, #1013, #1022, #1225, #1386, #1441, #1527, #1528 and others) and is one lineage with #186's statement of it (O186-04, S4); the rest concern other subjects (Zenodo, the capture battery, the Mandala, the Negative of the Negative versions). Volume is not a ground of removal; these are unadmitted by reading (§3.4)",
+   "cands": []
+  }
+ ],
+ "hop": {
+  "from": [
+   186,
+   1543,
+   722,
+   98,
+   127,
+   171,
+   172
+  ],
+  "candidates": 94,
+  "admitted": [
+   "#1 (O-class, crawler opt-out, via #127)",
+   "#1555 (O-class, web-crawl training corpora, via #1543)",
+   "#1258 (as an instance of #99, via #98 and #722)"
+  ],
+  "rejected": "the other 91 hop candidates, read by filter and at their matched sentences (see not_admitted)",
+  "file": "candidates-H.jsonl"
+ },
+ "lineages": [
+  {
+   "lineage": "in the training layer",
+   "instances": [
+    98,
+    186,
+    554,
+    623,
+    671,
+    722,
+    1543
+   ],
+   "earliest": 554
+  },
+  {
+   "lineage": "names and attribution",
+   "instances": [
+    127,
+    186
+   ],
+   "earliest": 127
+  },
+  {
+   "lineage": "what the crawl holds and leaves out",
+   "instances": [
+    99,
+    171,
+    172,
+    186,
+    550,
+    722,
+    1555,
+    1258
+   ],
+   "earliest": 550
+  },
+  {
+   "lineage": "refined datasets downstream",
+   "instances": [
+    98,
+    722
+   ],
+   "earliest": 722
+  },
+  {
+   "lineage": "opt-out, removal and the index as witness",
+   "instances": [
+    1,
+    49,
+    127,
+    705,
+    914,
+    1075
+   ],
+   "earliest": 49
+  }
+ ],
+ "observations": [
+  "The archive is of two minds on CCBot: #127's Layer 7 says every controlled domain SHOULD disallow it, while #1 records a robots.txt that welcomes AI crawlers to the data directories and #705 allows CCBot the SPXI files. Both composed (P_coh within the archive's ledger), each with its deposit.",
+  "#722's 'The top domain in the latest Common Crawl is blogspot.com at 0.9%' bears on the archive's own blog (mindcontrolpoems.blogspot.com) without saying so; no deposit read here draws that link, and the composition does not draw it.",
+  "#99 and #1258 carry one Sigil sentence; #186's footer declaration recurs across the archive; each kept as one lineage (S4).",
+  "No deposit names the URL Index or The Atlantic's finding; the census record (TLL-13, TLL-23, TLL-31) is the archive's only reading of the index as a witness."
+ ],
+ "counts": {
+  "D_candidates": 21,
+  "D_deposits": 11,
+  "R_candidates": 1,
+  "O_candidates": 80,
+  "O_deposits": 47,
+  "H_candidates": 94,
+  "deposits_admitted": 18,
+  "instances_kept": 1,
+  "deposit_claims": 33,
+  "TLL_claims": 37,
+  "CAP_claims": 14
+ }
+}
