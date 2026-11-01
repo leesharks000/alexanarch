@@ -195,7 +195,7 @@ ul.claims .qt::before{content:"\\201C"} ul.claims .qt::after{content:"\\201D"}
 .flg{width:auto;min-width:60%;font-size:.8em}
 @media (min-width:960px){
  .wrap{max-width:1180px}
- .lv-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:start;gap:22px}
+ .lv-grid{grid-template-columns:minmax(0,6fr) minmax(0,5fr);align-items:start;gap:22px}
  .lv-pop{position:sticky;top:12px}
  .pop .pi-exp{display:none}
  .pop details.pi>summary{cursor:pointer}
@@ -625,7 +625,7 @@ def two_levels(row, key, pk="P", kk="KO", arm="Field and archive (B ∪ A)"):
               'var f=document.getElementById(ks[0]);if(f){var b=f.getBoundingClientRect();if(b.top<0||b.bottom>innerHeight)f.scrollIntoView({block:"center",behavior:"smooth"})}})});'
               'r.querySelectorAll(".ks[data-p]").forEach(function(k){var ps=(k.dataset.p||"").split(" ").filter(Boolean).map(function(i){return "' + key + '-"+i});'
               'if(!ps.length)return;k.addEventListener("mouseenter",function(){clear();k.classList.add("hl");on(ps,"hl")});k.addEventListener("mouseleave",clear)})})();</script>')
-    return (f'<section class="lv" id="lv-{key}" data-arm="{esc(arm)}"><div class="lv-grid">{"".join(pc)}{"".join(ec)}</div>'
+    return (f'<section class="lv" id="lv-{key}" data-arm="{esc(arm)}"><div class="lv-grid">{"".join(ec)}{"".join(pc)}</div>'
             + f'<p class="meta" style="margin-top:6px">{esc(pop["genre"])}. {esc(pop["entity"])} {esc(pop["status"])}</p>'
             + script + '</section>'), stats
 
@@ -1096,12 +1096,16 @@ def main():
         tk = "AIO's ontology at work on its own cards" if onto else "representational"
         dl = r.get("delta") or {}
         if dl:
-            c.append(det("Δ", "the delta", (f'<p><strong>T against {tl}</strong> ({tk}): {md_inline(str(dl["T_vs_LB"]))}</p>' if dl.get("T_vs_LB") else "")
+            dvd = (r.get("derivatives") or {}).get("delta") or {}
+            dnote = (f'<p class="meta"><strong>{esc(dvd["status"])}</strong> · derived from {esc(dvd["derived_from"])}' + (f'. {esc(dvd["note"])}' if dvd.get("note") else "") + '</p>') if dvd else ""
+            c.append(det("Δ", "the delta" + (f' <span class="meta">{esc(dvd["status"])}</span>' if dvd.get("status") == "historical" else ""), dnote + (f'<p><strong>T against {tl}</strong> ({tk}): {md_inline(str(dl["T_vs_LB"]))}</p>' if dl.get("T_vs_LB") else "")
                          + (f'<p class="meta">{md_inline(str(dl["T_vs_LB_reading"]))}</p>' if dl.get("T_vs_LB_reading") else "")
                          + (f'<p><strong>{"L_F(B) against L_A(B ∪ A)" if onto else "L(B) against L(B ∪ A)"}</strong> (the intervention): {md_inline(str(dl["LB_vs_LBA"]))}</p>' if dl.get("LB_vs_LBA") else "")
                          + "".join(f'<p><strong>{esc(str(kk))}</strong>: {md_inline(str(vv))}</p>' for kk, vv in dl.items() if kk not in ("T_vs_LB", "T_vs_LB_reading", "LB_vs_LBA"))))
         if r.get("kernel"):
-            c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze</span>", f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
+            kvd = (r.get("derivatives") or {}).get("kernel") or {}
+            knote = (f'<p class="meta"><strong>{esc(kvd["status"])}</strong> · derived from {esc(kvd["derived_from"])}. {esc(kvd.get("note", ""))}</p>') if kvd else ""
+            c.append(det("K", "the prospective kernel <span class=\"meta\">sealed only at freeze" + (f' · {esc(kvd["status"])}' if kvd else "") + "</span>", knote + f'<div class="stack">{kent}</div>', n=f'{len(r["kernel"])} entries'))
         c.append(CJ.non_block(key))  # the capture join: observations read as concerning this entity (2026-10-14)
         c.append('</div>')
         c.extend(earlier)  # earlier instantiations, below the whole of the current one
