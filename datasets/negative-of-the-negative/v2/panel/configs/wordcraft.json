@@ -1,0 +1,61 @@
+{
+ "row": "wordcraft",
+ "address": "Wordcraft Writers Workshop",
+ "entity": "The Wordcraft Writers Workshop (Wordcraft), the collaboration between Google's PAIR and Magenta teams and 13 professional writers who wrote stories with Wordcraft, a LaMDA-powered text editor, over eight weeks (2022), published as a story collection under the writers' names with a findings page and the whitepaper Creative Writing with an AI-Powered Writing Assistant: Perspectives from Professional Writers (Ippolito, Yuan, Coenen, Burnam); formalized in the leesharks.com apparatus authorship census of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/wordcraft)",
+ "row_type": "C (a public entity on which the archive bears: a provider-run project and story collection of human-AI co-writing; an entity of the leesharks.com apparatus authorship census)",
+ "aliases": [
+  {
+   "pattern": "\\bWordcraft\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bWord craft Writers\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bCreative Writing with an AI-Powered Writing Assistant\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bLaMDA\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "human-AI co-writing: creative writing with an AI writing assistant",
+   "pattern": "\\b(co-?writ(e|es|ing|ten|er|ers)|AI[- ]assisted writing|AI[- ]powered writing|AI writing (tools?|assistants?)|writing assistants?|human[- ]AI (collaborat\\w*|co-?creat\\w*))\\b",
+   "flags": "i",
+   "basis": "field: B2 (Magenta card title: 'The Wordcraft Writers Workshop: Creative Co-Writing with AI'); B4 (card title: 'Google's Wordcraft: An AI Writing Tool Powered by LaMDA'); B9 (the whitepaper's title: 'Creative Writing with an AI-Powered Writing Assistant'); B1 (home page: 'the limits of co-writing with LaMDA'). The census's own area for the entity, 'machine-co-authorship' ('Machine participation in authorship: works and practices made with generative models, and records of the writing process'; census.json areas, rows[slug == 'wordcraft'].areas)."
+  },
+  {
+   "term": "machine participation in authorship: the authorship of a work made with a language model",
+   "pattern": "\\b(AI[- ]generated (text|texts|fiction|stories|story|literature|writing|work|works|prose|poems?)|machine[- ](authored|authorship|participation)|human[- ]authored|human authorship|generated text)\\b",
+   "flags": "i",
+   "basis": "field: B9 (the whitepaper, §6: 'a story that was largely formed around generated text (AP, DH, JM, MT, AW)'; 'the bulk of the story text was written by the authors themselves (KL, WT, NG)'); B1 (home page: 'have not authored these stories under any sort of explicit guidance or instruction'); B5 (Engadget: 'At least one author ended up using no AI-generated text whatsoever'). The census's record.function and ls_reading for the entity ('machine participation declared at the level of the tool and the cohort, with authorship held by the named writer')."
+  },
+  {
+   "term": "the origin of a model's text: plagiarism and training on authors' works without consent",
+   "pattern": "\\b(plagiar\\w*|trained on copyrighted|without (authors'? )?(permission|consent)|training data)\\b",
+   "flags": "i",
+   "basis": "field: B9 (§7.6 'Concerns about the Origin of Wordcraft's Suggestions': 'professional writers face reputational harm if their work is found to have plagiarized'); B5 (Engadget card snippet: 'the practice of tech companies training LLMs, often without authors' permission'). The census's ls_reading ('writers feared 'reputational harm' from unknown sources of suggestions') and does_not_answer ('the source of any suggestion in LaMDA's training data')."
+  },
+  {
+   "term": "public censure of named authors for participation in AI work",
+   "pattern": "\\b(backlash|boycott\\w*|name and shame|named and shamed)\\b",
+   "flags": "i",
+   "basis": "field: B5 (Engadget card title: 'Authors Face Backlash For Participation In 2022 Google AI Study'); B6 (Coralflavor card title: 'The 2022 AI Writing Experiment That Became a 2026 Ethical Minefield'); B7 (Mezha card title: '13 writers came under fire for Google's 2022 AI experiment'). Not in the census record: the census records no reception of the workshop (CAP finding 2)."
+  }
+ ],
+ "classes_note": "Four classes, each stated by a field source at the locus given: (1) human-AI co-writing (B1, B2, B4, B9; census area 'machine-co-authorship'); (2) machine participation in authorship, the share of a work a model generated and under whose name it stands (B1, B5, B9; census record.function, ls_reading); (3) the origin of a model's text, plagiarism and training on authors' works without consent (B5, B9; census ls_reading, does_not_answer); (4) public censure of named authors for AI participation (B5, B6, B7; the reception the capture finds and the census does not record). 'LaMDA' is the model under the tool and is searched as an alias by the field's own naming (B1, B2, B4, B8, B9); it does not occur in any archive text. The census's anchors, #940 (EA-HETERONYMY-01, data/texts/AXN-03B8-text.md) and #1722 (AI Calls You Fake, data/texts/AXN-0B2A-text.md), are read at the passages that bear on the entity's kind (machine participation and its declaration; collaborative authorship; the name and the authorial function; the cost levied on real authors and their work), by BRIEF-NEW-ROW-AUTHORSHIP §6. The operators' and writers' names are not aliases of the entity and are not searched alone.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 AGGREGATOR, LABOR and LEFT briefs; address \"Wordcraft Writers Workshop\" (wordcraft-writers-workshop-aio-20261101, OBS-c4b3079c7972, ADDR-673da49ebd41), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#940, #1722, #1369, #941, #161, #1714).",
+ "hop_from": [
+  940,
+  1722,
+  1369,
+  941,
+  161,
+  1714
+ ]
+}

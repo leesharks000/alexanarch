@@ -1,0 +1,46 @@
+{
+  "row": "dail",
+  "address": "Database of AI Litigation",
+  "entity": "DAIL – The Database of AI Litigation (blogs.gwu.edu/law-eti/ai-litigation-database/), a project of the Ethical Tech Initiative on George Washington University's site: a database of ongoing and completed litigation involving artificial intelligence and related topics, covering cases from complaint forward whether or not they generate published decisions, with a companion database of issued opinions; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/gwu-dail)",
+  "row_type": "C (a public entity on which the archive bears: a database of litigation involving artificial intelligence; an entity of the leesharks.com apparatus authorship census, area governance, host_relation peripheral comparator)",
+  "aliases": [
+    {
+      "pattern": "\\bDatabase of AI Litigation\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bDAIL\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\betidail(\\.com)?\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bai-litigation-database\\b",
+      "flags": "i"
+    }
+  ],
+  "classes": [
+    {
+      "term": "records of AI litigation (databases and trackers of lawsuits and decisions involving artificial intelligence)",
+      "pattern": "\\b((AI|artificial[- ]intelligence)[- ](related )?(litigation|lawsuits?|case[- ]law|cases)( (trackers?|database|databases))?|litigation (trackers?|database|databases)|case[- ]law trackers?|hallucination cases database)\\b",
+      "flags": "i",
+      "basis": "field: B1 (the GW page, card 1: 'The Database of AI Litigation presents information about ongoing and completed litigation involving artificial intelligence and related topics.'); B2 (Fisher Phillips, card 2: 'The AI Litigation Tracker provides a comprehensive view of litigation matters filed across all 50 states that involve the use of AI technologies'); B3 (Damien Charlotin, card 3: 'This database tracks legal decisions'); B5 (Hogan Lovells Cadwalader, card 5: 'Our AI Litigation Case Law Tracker monitors key AI-related cases'). The census's own kind ('database of ongoing and completed litigation involving artificial intelligence, with a companion database of issued opinions'), record_type ('database') and evidence_kind ('litigation record', 'catalogue') for the entity (LS record, census.json rows[slug == 'gwu-dail'].kind, .record_type, .evidence_kind)."
+    },
+    {
+      "term": "law and litigation on who or what can be an author (the legal governance of authorship and inventorship under AI)",
+      "pattern": "\\b(Thaler|Copyright Office|human authorship|AI (authorship|inventorship)|(AI|machine) (is )?not an? (author|inventor)|copyright(ability)? (of|for|in) (AI|machine)[- ]generated|authorship requirement|legal (name|names|identity)|attribution regimes?)\\b",
+      "flags": "i",
+      "basis": "archive: the census's area for the entity, 'governance' ('Boundary and governance: law, policy, certification and litigation on who or what can be an author', census.json areas.governance; rows[slug == 'gwu-dail'].areas); its ls_reading ('whose bearing on how authorship is made and attributed runs through whatever authorship cases it holds; the saved page shows none'). field, for the class beside the entity: B5 (Hogan Lovells Cadwalader, card 5: insight titles 'Copyright provisions in the new Italian AI-law: reinforcing human authorship and text and data mining (TDM) exceptions', 'UK Supreme Court rejects Thaler’s appeal and finds AI not an inventor'; key issues 'AI-generated article originality', 'Inventorship'). The field names no authorship case in DAIL; membership of the entity in this class is the census's, and is marked so wherever it is used."
+    }
+  ],
+  "classes_note": "Two classes. (1) Records of AI litigation: the field sources it for the entity and for three of the four trackers beside it (B1, B2, B3, B5) and the census by its kind, record_type and evidence_kind. (2) Law and litigation on who or what can be an author: membership sourced from the archive only (the census's area 'governance' and its ls_reading); the field states no authorship case for the entity, and B5, a distinct tracker, carries authorship and inventorship matters of its own. The aliases are the entity's names (DAIL; the Database of AI Litigation; both in the census's aka) and its two addresses (the GW Blogs path ai-litigation-database, and etidail.com, card 4, a second address under the database's name). 'DAIL' is matched case-sensitively so that Dáil and dail do not enter. The Ethical Tech Initiative (the operator), George Washington University (the host site) and the other trackers on the rail (Fisher Phillips's AI Litigation Tracker, Damien Charlotin's AI Hallucination Cases Database, Hogan Lovells Cadwalader's AI Litigation Case Law Tracker) are entities distinct from DAIL and are not aliases. #940 and #1722, the census's anchors, are read at the passages on law, legal names and attribution regimes, and on institutions and standing. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the two classes; a bare mention, a citation line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 briefs it names; address 'Database of AI Litigation' (database-of-ai-litigation-aio-20261101, OBS-67539a81c4ed, ADDR-c15fe760095a), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com apparatus authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#195, #940, #729, all at O-class on the second class; the string pass returned no D, R or AI-litigation-record candidate).",
+  "hop_from": [
+    195,
+    940,
+    729
+  ]
+}

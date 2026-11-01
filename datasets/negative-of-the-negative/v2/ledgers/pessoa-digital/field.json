@@ -1,0 +1,980 @@
+{
+ "row": "pessoa-digital",
+ "address": "Pessoa Digital",
+ "addresses": [
+  "Pessoa Digital"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "§3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts, the saved Wikipedia wikitext and API responses, the record of the refusals, or the card's snippet or title on the transcript's rail (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); 38/38 verified by script",
+ "B_note": "The field B in two pools (v0.10 §0.3, §3.1(a)), marked by origin and pool. B_D, the disclosed pool: the five cards on T's rail, B1 the CCeH's project page (also the census's third-party source pessoa-digital--cceh, carried once, in B_D), B2 the University of Rostock's announcement of 2023, B3–B5 three Instagram videos on João Pessoa na Palma da Mão, the municipal app of João Pessoa (the composition's second sense, a distinct entity), in B_D as the cards are, each recorded with its sense and its title its only text (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7); and B6, the address the body names ('Digital Edition of Fernando Pessoa (pessoadigital.pt)'), the census's own page pessoa-digital--home, which answered HTTP 418, recorded as a refusal. The body also names 'the Estranhar Pessoa project' and 'the National Library of Portugal collection' as projects it 'connects with', not as sources; neither is fetched (the census lists Estranhar Pessoa as unchecked). B_R, the reference pool: B7 the census's own page pessoa-digital--about (HTTP 418, unread) and B8 Wikipedia (no article; the Fernando Pessoa article links the edition). No census_third_party source outside B_D.",
+ "lineage_note": "Lineages: what it is (B1, B2); what it edits (B1); makers (B1, B2); names as printed (B1, B2); host and funding (B1, B2, B6); genealogy (B1, B2); development and sustainability, 2023 (B2); Pessoa's dates (B1, B2, B8); holdings and method (B1); access (B6, B7); the encyclopedia (B8); the other entity of the name (B3–B5). The census's fields that restate the CCeH's page are one lineage with it (§3.6), which keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/ (Bn.html raw, Bn.txt text; B1-census the census's saved copy beside this session's fetch; B6 and B7 the census's saved copies of the refusals; B8 .wiki, .html, .json and .txt raw Wikipedia responses with B8.txt the record of codes); sha256 per file in each source's 'files'",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6"
+  ],
+  "B_R": [
+   "B7",
+   "B8"
+  ]
+ },
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1 (site 'Cologne Center for eHumanities', title 'Pessoa Digital - CCeH - Das Cologne Center for eHumanities'); also the census's third-party source pessoa-digital--cceh, carried once, in B_D",
+   "card": "Cologne Center for eHumanities — Pessoa Digital - CCeH - Das Cologne Center for eHumanities",
+   "url": "https://cceh.uni-koeln.de/en/portfolio/pessoa-digital/",
+   "kind": "the CCeH's project page for the edition (a participant's account): link, runtime, participants, editors, funding, description, a representative publication",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B1.html",
+     "sha256": "9be1d079a917bb8cb825aca7d206fd7b6c41fab724f6163d884f2a8510e4064e"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B1.txt",
+     "sha256": "954b4d79dba2f703a04dc2a021da180b0f3e8f38396e278214ecaf7c7418de4e"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B1-census.html",
+     "sha256": "47399f43e9931a4f8b919b02893dbd6b0d11e349313a0603e0192b55f26414e6"
+    },
+    "B1-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B1-census.txt",
+     "sha256": "954b4d79dba2f703a04dc2a021da180b0f3e8f38396e278214ecaf7c7418de4e"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:52:01Z",
+    "http": 200,
+    "url": "https://cceh.uni-koeln.de/en/portfolio/pessoa-digital/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B1.html",
+    "raw_sha256": "9be1d079a917bb8cb825aca7d206fd7b6c41fab724f6163d884f2a8510e4064e",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B1.txt"
+    ],
+    "census_copy": {
+     "src": "pessoa-digital--cceh",
+     "sha256": "47399f43e9931a4f8b919b02893dbd6b0d11e349313a0603e0192b55f26414e6",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T06:14:28Z",
+     "byte_identical": false,
+     "matches_manifest": true,
+     "note": "this session's fetch differs from the census's copy only in a cookie expiry and a search-form id (two lines of markup); the extracted texts are identical"
+    }
+   },
+   "names_operator": "yes: the editors (Ulrike Henny-Krahmer, Pedro Sepúlveda, Jorge Uribe), the participants (Universidade Nova de Lisboa, ELAB, CCeH), the host (the DCH), the funder (FCT), EAFIT University",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "URL from the census's source record (supplied by the operator, 2026-11-01 02:14 EDT); the card's title and snippet match the page. Fetched once, HTTP 200.",
+   "surfaced_by_T": [
+    "pessoa-digital-aio-20261101"
+   ],
+   "card_title": "Pessoa Digital - CCeH - Das Cologne Center for eHumanities",
+   "card_snippet": "The digital edition is hosted by the DCH. Further information on the Estranhar Pessoa framework project, which has been running since mid-2013, can be found at ...",
+   "sense": "the entity"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2 (site 'Universität Rostock', title 'development and sustainability measures for the Digital Edition of Fernando Pessoa'); not a census page",
+   "card": "Universität Rostock — development and sustainability measures for the Digital Edition of Fernando Pessoa",
+   "url": "https://www.uni-rostock.de/universitaet/kommunikation-und-aktuelles/presse-und-kommunikationsstelle/veranstaltungskalender/detailansicht/n/pessoa-digital-development-and-sustainability-measures-for-the-digital-edition-of-fernando-pessoa-new649d3b747e612310594446/",
+   "kind": "the University of Rostock's event calendar entry for the workshop and lectures of 3–4 July 2023 on the edition (a third party's account; organiser the Akademie-Juniorprofessur Digital Humanities)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B2.html",
+     "sha256": "4db6fc5fe78e3c0042dae0cbd209e5e4e7321c0b6a72575b40bdf67f365b7dc5"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B2.txt",
+     "sha256": "f9d923ba528e9798d9216e3aeaf136b432ca9d4f3bf2a660c45eb4e45e1076be"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:52:07Z",
+    "http": 200,
+    "url": "https://www.uni-rostock.de/universitaet/kommunikation-und-aktuelles/presse-und-kommunikationsstelle/veranstaltungskalender/detailansicht/n/pessoa-digital-development-and-sustainability-measures-for-the-digital-edition-of-fernando-pessoa-new649d3b747e612310594446/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B2.html",
+    "raw_sha256": "4db6fc5fe78e3c0042dae0cbd209e5e4e7321c0b6a72575b40bdf67f365b7dc5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B2.txt"
+    ]
+   },
+   "names_operator": "yes: the founding partners (IELT, CCeH), the core team (Pedro Sepúlveda, Ulrike Henny-Krahmer), EAFIT (Jorge Uribe), the funder for 2023 (NFDI Text+), the speakers",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "URL found by WebSearch on the card's title and site (the first result, its title the card's); the snippet's text is the page's first paragraph and its date the event's second day. Fetched once, HTTP 200.",
+   "surfaced_by_T": [
+    "pessoa-digital-aio-20261101"
+   ],
+   "card_title": "development and sustainability measures for the Digital Edition of Fernando Pessoa",
+   "card_snippet": "Jul 4, 2023 — The digital scholarly edition \"Fernando Pessoa. Projects and Publications\" (http://www.pessoadigital.pt) was originally created as part of a ...",
+   "sense": "the entity"
+  },
+  {
+   "id": "B3",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 3 (another entity of the name: site 'Instagram·TV Cidade João Pessoa', title as on the rail)",
+   "card": "Instagram·TV Cidade João Pessoa — A população de João Pessoa conta com uma ferramenta digital que facilita o ...",
+   "url": null,
+   "kind": "an Instagram video card on João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil; no snippet on the rail",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tried": "WebSearch on the card's title and site, twice (2026-11-01, the titles of cards 3–5 with 'instagram', 'TV Cidade João Pessoa' and 'Valentina Tem Jp'); no result carried the post; the rail's links are Google redirect URLs, which were not followed; no fetch made",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "text": "the card's title alone (the rail carries no snippet; the video is unread)"
+   },
+   "names_operator": "no (the edition's editors are not named)",
+   "names_archive": "no",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its title its only text (§3.1(a): a video card admitted through title and snippet, the snippet absent).",
+   "surfaced_by_T": [
+    "pessoa-digital-aio-20261101"
+   ],
+   "card_title": "A população de João Pessoa conta com uma ferramenta digital que facilita o ...",
+   "card_snippet": null,
+   "sense": "homonym: João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil"
+  },
+  {
+   "id": "B4",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 4 (another entity of the name: site 'Instagram·TV Cidade João Pessoa', title as on the rail)",
+   "card": "Instagram·TV Cidade João Pessoa — O aplicativo 'João Pessoa na Palma da Mão' passa a contar, nesta sexta-feira (9) ...",
+   "url": null,
+   "kind": "an Instagram video card on João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil; no snippet on the rail",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tried": "WebSearch on the card's title and site, twice (2026-11-01, the titles of cards 3–5 with 'instagram', 'TV Cidade João Pessoa' and 'Valentina Tem Jp'); no result carried the post; the rail's links are Google redirect URLs, which were not followed; no fetch made",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "text": "the card's title alone (the rail carries no snippet; the video is unread)"
+   },
+   "names_operator": "no (the edition's editors are not named)",
+   "names_archive": "no",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its title its only text (§3.1(a): a video card admitted through title and snippet, the snippet absent).",
+   "surfaced_by_T": [
+    "pessoa-digital-aio-20261101"
+   ],
+   "card_title": "O aplicativo 'João Pessoa na Palma da Mão' passa a contar, nesta sexta-feira (9) ...",
+   "card_snippet": null,
+   "sense": "homonym: João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil"
+  },
+  {
+   "id": "B5",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 5 (another entity of the name: site 'Instagram·Valentina Tem Jp', title as on the rail)",
+   "card": "Instagram·Valentina Tem Jp — ⚠️UTILIZEM O APP⚠️ O app \"João Pessoa na Palma da Mão\" é a plataforma ...",
+   "url": null,
+   "kind": "an Instagram video card on João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil; no snippet on the rail",
+   "files": {},
+   "fetched": {
+    "unreachable": true,
+    "tried": "WebSearch on the card's title and site, twice (2026-11-01, the titles of cards 3–5 with 'instagram', 'TV Cidade João Pessoa' and 'Valentina Tem Jp'); no result carried the post; the rail's links are Google redirect URLs, which were not followed; no fetch made",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "text": "the card's title alone (the rail carries no snippet; the video is unread)"
+   },
+   "names_operator": "no (the edition's editors are not named)",
+   "names_archive": "no",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its title its only text (§3.1(a): a video card admitted through title and snippet, the snippet absent).",
+   "surfaced_by_T": [
+    "pessoa-digital-aio-20261101"
+   ],
+   "card_title": "⚠️UTILIZEM O APP⚠️ O app \"João Pessoa na Palma da Mão\" é a plataforma ...",
+   "card_snippet": null,
+   "sense": "homonym: João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil"
+  },
+  {
+   "id": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "role": "the address the body names ('Digital Edition of Fernando Pessoa (pessoadigital.pt)'); the census's own page pessoa-digital--home, carried once, in B_D",
+   "card": "pessoadigital.pt — the edition's home page (refused: HTTP 418)",
+   "url": "https://pessoadigital.pt/",
+   "kind": "the edition's home page; the server answered with a bot-detection challenge page (go-away), HTTP 418; the edition's own content unread",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B6.html",
+     "sha256": "a9d4dd5888303d710073a13654cca91e220d8b206dc0859bf0fa232a47b084ff"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B6.txt",
+     "sha256": "0ed86228e9a337ce9f321255520a08057ead85e3262e5590eb1badfbfd9843d5"
+    }
+   },
+   "fetched": {
+    "read": "2026-11-01",
+    "http": 418,
+    "url": "https://pessoadigital.pt/",
+    "final_url": "https://www.pessoadigital.pt/",
+    "census_copy": {
+     "src": "pessoa-digital--home",
+     "fetched": "2026-11-01T04:07:56Z",
+     "sha256": "a9d4dd5888303d710073a13654cca91e220d8b206dc0859bf0fa232a47b084ff",
+     "matches_manifest": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B6.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B6.txt"
+    ],
+    "unreachable": true,
+    "how": "copied from the census's saved copy (gunzipped), not refetched: the census's request with the agent string was refused, and the refusal is recorded without retry or any other route around it"
+   },
+   "names_operator": "no (the challenge page names the University of Cologne's digital humanities units in its footer)",
+   "names_archive": "no",
+   "note": "B_D by the body's naming (v0.10 §3.1(a)); unreachable: the response text is a refusal, ledgered as the refusal (F29, F30); the edition's own content is unread and unquoted.",
+   "surfaced_by_T": [
+    "pessoa-digital-aio-20261101"
+   ]
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the census's own page pessoa-digital--about (not surfaced by T)",
+   "card": "pessoadigital.pt — the edition's about page (refused: HTTP 418)",
+   "url": "https://pessoadigital.pt/en/about",
+   "kind": "the edition's about page; the same challenge page, HTTP 418; unread",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B7.html",
+     "sha256": "4b031048851b9f4d759ea183ce4a28ee7509d6adcfdcf01b45fc66fef19a6070"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B7.txt",
+     "sha256": "e02f1e2cab07001b21426c873c5cf1b252fe16a56232a7ed98c28c24bb3a7e6b"
+    }
+   },
+   "fetched": {
+    "read": "2026-11-01",
+    "http": 418,
+    "url": "https://pessoadigital.pt/en/about",
+    "final_url": "https://www.pessoadigital.pt/en/about",
+    "census_copy": {
+     "src": "pessoa-digital--about",
+     "fetched": "2026-11-01T04:07:57Z",
+     "sha256": "4b031048851b9f4d759ea183ce4a28ee7509d6adcfdcf01b45fc66fef19a6070",
+     "matches_manifest": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B7.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B7.txt"
+    ],
+    "unreachable": true,
+    "how": "copied from the census's saved copy (gunzipped), not refetched; the refusal recorded, not routed around"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "B_R: admitted on the operator's ruling of 2026-10-29; T did not surface it. Its text differs from B6's only in the request id.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "the entity's Wikipedia article: none (English and Portuguese, under 'Pessoa Digital'); English Wikipedia links the edition from its Fernando Pessoa article",
+   "card": "Wikipedia — Pessoa Digital (no article; linked from Fernando Pessoa as 'Digital Edition of Fernando Pessoa')",
+   "url": "https://en.wikipedia.org/wiki/Pessoa_Digital",
+   "kind": "no article; the record of the responses (B8.txt), the API's external-link and search results, and the Fernando Pessoa article",
+   "files": {
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8.txt",
+     "sha256": "8ea0f7bf64a42aef9bf49f195b5afa2746d7162fbb5de262a356da8c88ee449e"
+    },
+    "B8-en-raw.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-en-raw.wiki",
+     "sha256": "9311cb6f7973c87eac2d3d814872237b7afa179d7c68cd25b7334aa35e2f76ba"
+    },
+    "B8-pt-raw.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-pt-raw.wiki",
+     "sha256": "f17e281a82c49831f72e7edddb06cf9911ee72bc6771998ee6829146b500d6e5"
+    },
+    "B8-en-page.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-en-page.html",
+     "sha256": "3b508777ebfce329dc7910b0a97185082e02fa03408bda39fc20edba843944d5"
+    },
+    "B8-en-page.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-en-page.txt",
+     "sha256": "caa2466c8611c708ac0d3cbb2e3e0caeb116877f04004dbba89361f0ce41a46f"
+    },
+    "B8-pt-page.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-pt-page.html",
+     "sha256": "2443b79850e5d2a5e881ee2af7c5b5978a4a3ad8bf9d612964fa6fd30ba5a9d4"
+    },
+    "B8-pt-page.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-pt-page.txt",
+     "sha256": "cbb1396651976409b09d5586f02345d972eabb736d43e31a4c3e596b3edc3183"
+    },
+    "B8-en-exturlusage.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-en-exturlusage.json",
+     "sha256": "f25686da20e589aec38b57a49c7cf73647fde5a04258c369f0411fbb14b90c8b"
+    },
+    "B8-en-search.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-en-search.json",
+     "sha256": "688d401ed6447a04b61b8b5aea327e975f2f69ec5596d800d49a0b230236ea4b"
+    },
+    "B8-pt-exturlusage.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-pt-exturlusage.json",
+     "sha256": "17aff44bac82ab4c75d7dbf40a1ade77346bb21d7ef9229f09f4bf17cf98789d"
+    },
+    "B8-pt-search.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-pt-search.json",
+     "sha256": "4806618aac92c069c108ee288b487b8850587b576ab2af1ec12835086934168e"
+    },
+    "B8-pt-exturlusage-retry.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-pt-exturlusage-retry.json",
+     "sha256": "53d93f32a4c2234976618ae1e9a6fbe30add3ba8d12a63d41dde87f638d12005"
+    },
+    "B8-fernando-pessoa.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8-fernando-pessoa.wiki",
+     "sha256": "afa0e663e3599c8a615e494688abcc890c2ca3ba1802a7851289138c6edff485"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "record": "datasets/negative-of-the-negative/v2/intake/pessoa-digital-20261101/B8.txt",
+    "at": "2026-11-01T06:53:05Z–06:59:15Z",
+    "http": "404 (raw and rendered, en and pt); 200 (en API, Fernando Pessoa wikitext); 429 (pt API, twice, not retried further)"
+   },
+   "names_operator": "no",
+   "names_archive": "no",
+   "note": "B_R: admitted on the operator's ruling of 2026-10-29. Portuguese Wikipedia's API answered 429 on the first try and on one retry; recorded as unreachable for those two queries.",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "The digital edition is hosted by the DCH. Further information on the Estranhar Pessoa framework project, which has been running since mid-2013, can be found at",
+   "claim": "card 1: the edition hosted by the DCH; the Estranhar Pessoa framework project running since mid-2013",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "host and funding",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1), whitespace-normalised: the card's snippet (cite_list n=1)"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description ¶1 s1",
+   "quote": "As part of the collaboration with the Laboratório de Estudos Literários Avançados (ELAB), the foundation was laid for a digital edition of the editorial projects and publications of the Portuguese author Fernando Pessoa (1888–1935); Ulrike Henny was responsible for this at the CCeH.",
+   "claim": "the CCeH's account of its project: a digital edition of Pessoa's editorial projects and publications, founded in the collaboration with ELAB, Ulrike Henny responsible at the CCeH",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the digital edition of Pessoa's editorial projects and publications",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Link",
+   "quote": "Link http://www.pessoadigital.pt/",
+   "claim": "the edition's address: pessoadigital.pt",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the digital edition of Pessoa's editorial projects and publications",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Runtime",
+   "quote": "Runtime 2014–2016 (at the CCeH; ongoing since then)",
+   "claim": "runtime 2014–2016 at the CCeH, ongoing since",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the framework project, the start, the launch, the cooperations",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "project participants s1",
+   "quote": "project participants Universidade Nova de Lisboa, Laboratório de Estudos Literários Avançados (ELAB), CCeH.",
+   "claim": "participants: the Universidade Nova de Lisboa's ELAB and the CCeH",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers: editors, partners and team",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "project participants s2–3",
+   "quote": "Editors of the edition: Ulrike Henny-Krahmer (University of Rostock), Pedro Sepúlveda (Lisbon) and Jorge Uribe (Medellín). For other participants, see http://www.pessoadigital.pt/en/project/team.",
+   "claim": "editors: Ulrike Henny-Krahmer, Pedro Sepúlveda, Jorge Uribe; other participants on the edition's team page",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers: editors, partners and team",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Funding",
+   "quote": "Supported by the Fundação para a Ciência e a Tecnologia (FCT), Portugal.",
+   "claim": "funded by the FCT",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "host and funding",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description ¶1 s2–3",
+   "quote": "She continues to edit the edition, together with Pedro Sepúlveda (Lisbon) and Jorge Uribe (Medellín). Since the end of the project phase, in which the CCeH was directly involved, the cooperation has also been extended to the EAFIT University in Medellín (Colombia).",
+   "claim": "Henny continues to edit it with Sepúlveda and Uribe; after the CCeH's phase the cooperation extended to EAFIT University, Medellín",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the framework project, the start, the launch, the cooperations",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description ¶1 s4–5",
+   "quote": "Above all, handwritten notes, lists and plans with which Pessoa conceived his work are edited. These will be juxtaposed with his works published during his lifetime in order to trace the development of Pessoa’s oeuvre between planning and publication.",
+   "claim": "what it edits: above all Pessoa's handwritten notes, lists and plans, juxtaposed with his works published in his lifetime, to trace his oeuvre between planning and publication",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it edits: Pessoa's notes, lists and plans beside his published works",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description ¶1 s6",
+   "quote": "The edition contains text transcriptions in TEI, facsimiles, indexes of persons, journals and titles, as well as various visualizations of the data (timelines and a network of persons).",
+   "claim": "holdings: TEI transcriptions, facsimiles, indexes of persons, journals and titles, timelines and a network of persons",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and method",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description ¶1 s7",
+   "quote": "Technically, the edition is based on an eXist database and uses XQuery and XSLT scripts as well as JavaSript to create the publication.",
+   "claim": "method: an eXist database, XQuery and XSLT scripts and JavaScript ('JavaSript' as printed)",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and method",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description ¶1 s8–9",
+   "quote": "The digital edition is hosted by the DCH. Further information on the Estranhar Pessoa framework project, which has been running since mid-2013, can be found at http://estranharpessoa.com/ .",
+   "claim": "host: the DCH; the framework project Estranhar Pessoa, running since mid-2013, at its own address",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "host and funding",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Publications",
+   "quote": "For a list of publications, see http://www.pessoadigital.pt/en/project/dissemination. One representative publication: … “Networks of persons and figures in Fernando Pessoa’s publication plans.”",
+   "claim": "a representative publication: 'Networks of persons and figures in Fernando Pessoa's publication plans'; the list of publications on the edition's own pages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and method",
+   "date": "2018 (the publication)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Publications, the author line",
+   "quote": "Bigalke , Ben / Drach , Sviatoslav / Henny-Krahmer , Ulrike / Sepúlvedo , Pedro / Theisen , Christian (2018).",
+   "claim": "the paper's authors as printed, the editor's surname as 'Sepúlvedo'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "names as printed: the editor's surname",
+   "date": "2018 (the publication)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.txt (sha256 954b4d79dba2f703…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 2 snippet",
+   "quote": "Jul 4, 2023 — The digital scholarly edition \"Fernando Pessoa. Projects and Publications\" (http://www.pessoadigital.pt) was originally created as part of a",
+   "claim": "card 2: the edition 'Fernando Pessoa. Projects and Publications' (pessoadigital.pt), created as part of a … (truncated), dated Jul 4, 2023",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the digital edition of Pessoa's editorial projects and publications",
+   "date": "2023-07-04 (the card's date)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1), whitespace-normalised: the card's snippet (cite_list n=2)"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "heading and event dates",
+   "quote": "Pessoa digital: development and sustainability measures for the Digital Edition of Fernando Pessoa 03.07.2023, 09:00 Uhr - 04.07.2023, 00:00 Uhr",
+   "claim": "the event: development and sustainability measures for the edition, 3–4 July 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "development and sustainability (2023)",
+   "date": "2023-07-03",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1 s1",
+   "quote": "The digital scholarly edition \"Fernando Pessoa. Projects and Publications\" ( http://www.pessoadigital.pt ) was originally created as part of a collaborative project between the Institute of Literature and Tradition (IELT) at the New University of Lisbon and the Cologne Center for eHumanities (CCeH) at the University of Cologne, starting in 2014.",
+   "claim": "the edition's title, 'Fernando Pessoa. Projects and Publications'; created in a collaborative project of the IELT (New University of Lisbon) and the CCeH (University of Cologne), from 2014",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the digital edition of Pessoa's editorial projects and publications",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1 s2",
+   "quote": "The web presentation of the edition was first launched in 2017.",
+   "claim": "the web presentation first launched in 2017",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the framework project, the start, the launch, the cooperations",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1 s3",
+   "quote": "Since then, the edition has been continuously developed further by a core team led by Pedro Sepülveda and Ulrike Henny-Krahmer.",
+   "claim": "developed since by a core team led by Sepúlveda ('Sepülveda' as printed) and Henny-Krahmer",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers: editors, partners and team",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1 s4",
+   "quote": "Since 2019, there has been a cooperation with the Universidad EAFIT in Colombia, represented by Jorge Uribe.",
+   "claim": "cooperation with EAFIT since 2019, represented by Jorge Uribe",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: the framework project, the start, the launch, the cooperations",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1 s5",
+   "quote": "For the year 2023, the project received funding from the infrastructure project NFDI Text+, with the aim to make the edition more sustainable from an organizational and technical perspective and to integrate it into the emerging research data infrastructure of Text+.",
+   "claim": "funding for 2023 from NFDI Text+, to make the edition more sustainable and integrate it into the Text+ research data infrastructure",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "host and funding",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1 s6 (the dates given for Pessoa)",
+   "quote": "all those interested in the works of the Portuguese writer Fernando Pessoa (1883–1935) and in digital scholarly editing are welcome.",
+   "claim": "the announcement gives Pessoa's dates as 1883–1935",
+   "modality": "contested",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Pessoa's dates",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised",
+   "mark": "contested in the pool (P_coh): the CCeH's page gives '(1888–1935)' (F2) and English Wikipedia's infobox 1888 (F38); both composed, each with its source"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Monday, July 3, 5 p.m. lecture",
+   "quote": "Pedro Sepúlveda, Jorge Alberto Uribe Lozada, Inês Rebelo do Carmo, Ulrike Henny-Krahmer Digital Edition of Fernando Pessoa: Projects and Publications",
+   "claim": "the lecture 'Digital Edition of Fernando Pessoa: Projects and Publications' by Sepúlveda, Uribe Lozada, Inês Rebelo do Carmo and Henny-Krahmer",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers: editors, partners and team",
+   "date": "2023-07-03",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Tuesday, July 4, evening lecture",
+   "quote": "Evening lecture Pedro Sepúlveda and Jorge Alberto Uribe Lozada Fernando Pessoa’s Autopsychography & The Man of Porlock: Disjecta membra and restitution in Fernando Pessoa's self-publishing",
+   "claim": "the evening lecture by Sepúlveda and Uribe Lozada on disjecta membra and restitution in Pessoa's self-publishing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "development and sustainability (2023)",
+   "date": "2023-07-04",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Organisator",
+   "quote": "Organisator Akademie-Juniorprofessur Digital Humanities",
+   "claim": "the organiser: the Akademie-Juniorprofessur Digital Humanities",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "development and sustainability (2023)",
+   "date": "2023-07 (the announcement)",
+   "quote_ok": true,
+   "checked_against": "saved file B2.txt (sha256 f9d923ba528e9798…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card 3 title (no snippet)",
+   "quote": "A população de João Pessoa conta com uma ferramenta digital que facilita o ...",
+   "claim": "homonym: a TV Cidade João Pessoa video on a digital tool for the population of João Pessoa",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entity of the name",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1), whitespace-normalised: the card's title (cite_list n=3)",
+   "sense": "homonym: João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil"
+  },
+  "F27": {
+   "source": "B4",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card 4 title (no snippet)",
+   "quote": "O aplicativo 'João Pessoa na Palma da Mão' passa a contar, nesta sexta-feira (9) ...",
+   "claim": "homonym: a TV Cidade João Pessoa video on the app 'João Pessoa na Palma da Mão' and a new service from a Friday the 9th",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entity of the name",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1), whitespace-normalised: the card's title (cite_list n=4)",
+   "sense": "homonym: João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card 5 title (no snippet)",
+   "quote": "⚠️UTILIZEM O APP⚠️ O app \"João Pessoa na Palma da Mão\" é a plataforma ...",
+   "claim": "homonym: a Valentina Tem Jp video urging use of the app 'João Pessoa na Palma da Mão'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entity of the name",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1), whitespace-normalised: the card's title (cite_list n=5)",
+   "sense": "homonym: João Pessoa na Palma da Mão, the municipal app of João Pessoa, Brazil"
+  },
+  "F29": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "the challenge page served for the request (HTTP 418), 'Why am I seeing this?'",
+   "quote": "You are seeing this because the administrator of this website has set up go-away to protect the server against the scourge of AI companies aggressively scraping websites .",
+   "claim": "the edition's address answers automated requests with a challenge page: its administrator set up go-away against AI companies' scraping",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: the edition's own pages refuse automated requests",
+   "date": "2026-11-01 (the census's request, 04:07:56Z)",
+   "quote_ok": true,
+   "checked_against": "saved file B6.txt (sha256 0ed86228e9a337ce…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "the challenge page's footer",
+   "quote": "Digital Humanities at the University of Cologne Cologne Center for eHumanities Data Center for the Humanities Department for Digital Humanities",
+   "claim": "the challenge page's footer names the University of Cologne's digital humanities units: the CCeH, the Data Center for the Humanities, the Department for Digital Humanities",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "host and funding",
+   "date": "2026-11-01 (the census's request)",
+   "quote_ok": true,
+   "checked_against": "saved file B6.txt (sha256 0ed86228e9a337ce…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the challenge page served for the request (HTTP 418)",
+   "quote": "You are seeing this because the administrator of this website has set up go-away to protect the server against the scourge of AI companies aggressively scraping websites .",
+   "claim": "the about page answers with the same challenge page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "access: the edition's own pages refuse automated requests",
+   "date": "2026-11-01 (the census's request, 04:07:57Z)",
+   "quote_ok": true,
+   "checked_against": "saved file B7.txt (sha256 e02f1e2cab07001b…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Wikipedia, title Pessoa Digital (en, pt): the responses",
+   "quote": "en raw wikitext, title Pessoa_Digital: HTTP 404 … pt raw wikitext, title Pessoa_Digital: HTTP 404",
+   "claim": "no Wikipedia article under the name in English or Portuguese",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved file B8.txt (sha256 8ea0f7bf64a42aef…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "English API search 'Pessoa Digital'",
+   "quote": "\"searchinfo\":{\"totalhits\":0}",
+   "claim": "an English search for 'Pessoa Digital' returns no page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved file B8-en-search.json (sha256 688d401ed6447a04…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "English API external-link usage, pessoadigital.pt",
+   "quote": "{\"pageid\":11431,\"ns\":0,\"title\":\"Fernando Pessoa\",\"url\":\"http://www.pessoadigital.pt/en/index.html\"}",
+   "claim": "one English article links the edition: Fernando Pessoa",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved file B8-en-exturlusage.json (sha256 f25686da20e589ae…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, External links",
+   "quote": "* [http://www.pessoadigital.pt/en/index.html Digital Edition of Fernando Pessoa] and heteronyms",
+   "claim": "English Wikipedia names the edition 'Digital Edition of Fernando Pessoa', 'and heteronyms'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B8-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, External links",
+   "quote": "* [http://estranharpessoa.com/projectdescription/ Project Estranhar Pessoa]",
+   "claim": "English Wikipedia lists Project Estranhar Pessoa as a separate link",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B8-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, lead ¶2",
+   "quote": "Pessoa was a prolific writer both in his own name and approximately seventy-five other names, of which three stand out … He did not define these as ''pseudonyms'' because he felt that this did not capture their true independent intellectual life and instead called them [[Heteronym (literature)|''heteronyms'']], a term he invented.",
+   "claim": "English Wikipedia: about seventy-five names besides his own; he called them heteronyms, a term he invented, and did not define them as pseudonyms",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B8-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, infobox",
+   "quote": "| birth_date = {{Birth date|1888|6|13|df=y}}",
+   "claim": "English Wikipedia: Pessoa born 13 June 1888",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Pessoa's dates",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B8-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Cologne Center for eHumanities — Pessoa Digital - CCeH - Das Cologne Center for eHumanities",
+  "B2": "Universität Rostock — development and sustainability measures for the Digital Edition of Fernando Pessoa",
+  "B3": "Instagram·TV Cidade João Pessoa — A população de João Pessoa conta com uma ferramenta digital que facilita o ...",
+  "B4": "Instagram·TV Cidade João Pessoa — O aplicativo 'João Pessoa na Palma da Mão' passa a contar, nesta sexta-feira (9) ...",
+  "B5": "Instagram·Valentina Tem Jp — ⚠️UTILIZEM O APP⚠️ O app \"João Pessoa na Palma da Mão\" é a plataforma ...",
+  "B6": "pessoadigital.pt — the edition's home page (refused: HTTP 418)",
+  "B7": "pessoadigital.pt — the edition's about page (refused: HTTP 418)",
+  "B8": "Wikipedia — Pessoa Digital (no article; linked from Fernando Pessoa as 'Digital Edition of Fernando Pessoa')"
+ }
+}

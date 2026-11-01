@@ -1,0 +1,50 @@
+{
+ "row": "jacket2",
+ "address": "Jacket2",
+ "entity": "Jacket2 (J2), the online magazine of commentary on modern and contemporary poetry and poetics at the Kelly Writers House, University of Pennsylvania, 3805 Locust Walk, Philadelphia, which maintains the complete archive of Jacket magazine (1997 to 2010, founded and edited by John Tranter); formalized in the leesharks.com apparatus authorship census of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/jacket2)",
+ "row_type": "C (a public entity on which the archive bears: a magazine of poetry commentary that keeps a predecessor's archive and reissues small-press magazines; an entity of the leesharks.com apparatus authorship census)",
+ "aliases": [
+  {
+   "pattern": "\\bJacket ?2\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bjacket2\\.org\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bJ2 (index|content|magazine)\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "online magazines of commentary on modern and contemporary poetry and poetics",
+   "pattern": "\\b((online|internet|poetry|literary) (magazines?|journals?) of (poetry|poetics)|poetry and poetics (online )?magazines?|(online|internet) poetry (magazines?|journals?)|little magazines?|small[- ]press magazines?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (jacket2.org home: 'Jacket2 offers commentary on modern and contemporary poetry and poetics'); B6 (Wikipedia, Kelly Writers House § Jacket2 Magazine: 'a poetry and poetics online magazine hosted by the Kelly Writers House'); B1 Reissues (Roof, Infolio, Aufgabe and others, small-press magazines). The census's kind ('publication') and record_type ('journal') for the entity (LS record, census.json rows[slug == 'jacket2'].kind, .record_type)."
+  },
+  {
+   "term": "archives of experimental and avant-garde writing (reissues of small-press magazines; a predecessor magazine's archive)",
+   "pattern": "\\b(avant-garde (archives?|writing|poetry)|experimental (writing|poetry) archives?|archives? of (experimental|avant-garde) (writing|poetry)|reissues? of (small[- ]press|out-of-print)|Language (poetry|poets)|L=A=N=G=U=A=G=E)\\b",
+   "flags": "i",
+   "basis": "field: B1 (Reissues: 'Roof, 1976–79 (ed. James Sherry)', 'Aufgabe, 2001–2014 (ed. E. Tracy Grinnell et al.)'; 'We maintain the complete archive of Jacket magazine, founded and edited by John Tranter.'). The census's area 'avant-garde-archives' for the entity (LS record, census.json rows[slug == 'jacket2'].areas)."
+  },
+  {
+   "term": "byline attribution: pieces signed with translators, co-authors, interviewers, a collective editorial signature, or a collaborative making",
+   "pattern": "\\b(byline|translated by|collective(ly)? sign(ed|ature)|collaborative authorship|co-?author(ed|ship)|ordinary translation|ordinary editing)\\b",
+   "flags": "i",
+   "basis": "field: B1 (Commentaries: 'Uldis Bērziņš, translated by Kevin M. F. Platt and Sintija Ozoliņa'; 'In Memoriam: Alice Notley (1945–2025) Jacket2 Editors'; Media highlights: 'Made collaboratively from Philadephia-born artist Morton Schamberg and German baroness Elsa von Freytag-Loringhoven'). The census's question, record.keeps, record.name and record.function for the entity (LS record, census.json rows[slug == 'jacket2'].question, .record)."
+  }
+ ],
+ "classes_note": "Three classes, each stated by a field source at the locus given and by the census's own kind, record_type, area, question or record for the entity: (1) online magazines of commentary on poetry and poetics (B1, B6; census kind and record_type); (2) archives of experimental and avant-garde writing, as the reissues and the Jacket archive (B1; census area 'avant-garde-archives'); (3) byline attribution with translators, a collective editorial signature and a collaborative making (B1; census question and record). The aliases are the magazine's name (with and without the space), its host jacket2.org, and its abbreviation J2 where followed by index, content or magazine (the bare token J2 is too common to read). Jacket magazine (1997 to 2010), John Tranter, Al Filreis, Jessica Lowenthal, the Kelly Writers House, the University of Pennsylvania, PennSound, PoemTalk and the Poetry Foundation are entities distinct from Jacket2 (its predecessor, kept as its archive; the predecessor's founder; its publisher; its associate publisher; its host; the host's university; the recordings archive it co-produces podcasts with; its podcast; a third party T names); none is an alias. #940 and #1722, the census's anchors, are read at the passages that bear on the entity's kind (pseudonymy and heteronymy, the operational boundary of translation, editing, collaboration and office, the civil name as the unit of attribution; the four questions and the adequate answer, who pays the existence tax). Admission by reading (§3.4): D where a deposit names Jacket2 and says something of it; R where it states a relation between Jacket2 and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a reference line, a URL or a list of keywords is not a claim.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 AGGREGATOR, LABOR and LEFT briefs; address 'Jacket2' (jacket2-aimode-20261101, OBS-a41411216345, ADDR-bdfd79485db0), Google AI Mode by the operator's note in the paste ('no popup, ai mode:'), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#543, #666, #940, #1717, #1722).",
+ "hop_from": [
+  543,
+  666,
+  940,
+  1717,
+  1722
+ ]
+}

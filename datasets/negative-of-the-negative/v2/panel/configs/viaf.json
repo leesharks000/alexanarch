@@ -1,0 +1,35 @@
+{
+  "row": "viaf",
+  "address": "VIAF",
+  "entity": "The Virtual International Authority File (VIAF, viaf.org): an international authority file, a joint project of several national libraries operated by OCLC; initiated in April 1998 by the Library of Congress, the Deutsche Nationalbibliothek and OCLC as a proof of concept that authority records can be linked, the consortium formed in August 2003, an OCLC service since 4 April 2012; it matches, links and groups the authority records its contributors supply into clusters, each with an identifier; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/viaf)",
+  "row_type": "C (a public entity on which the archive bears: a library name-authority service that clusters authority records for persons, organizations and works; an entity of the leesharks.com apparatus authorship census, host_relation 'infrastructure')",
+  "aliases": [
+    {"pattern": "\\bVIAF\\b", "flags": ""},
+    {"pattern": "\\bVirtual International Authority File\\b", "flags": "i"},
+    {"pattern": "\\bviaf\\.org\\b", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "name authority files and authority control (library records that fix the authorized and variant forms of a name)",
+      "pattern": "\\b(name[- ]authorit(y|ies)( files?| records?| control| service)?|authority (files?|records?|control|data)|authority[- ]control records?|authorized (form|heading)s?)\\b",
+      "flags": "i",
+      "basis": "field: B2 (oclc.org/en/viaf.html: 'convenient access to the world’s major name authority files'; 'a single OCLC-hosted name authority service'); B3 (Wikipedia, lead: 'an international authority file'; 'A VIAF record ... refers to the original authority records'); B4 (OCLC Research: 'the name authority files of participating institutions'); B6 (Hickey and Young: 'VIAF virtually combines multiple library authority files into a single name authority service'). The census's own kind ('an international authority file') and question ('name authority linking') for the entity (census.json rows[slug == 'viaf'].kind, .question)."
+    },
+    {
+      "term": "name identifiers and identity registries (systems that assign an identifier to a name or identity and resolve names across systems)",
+      "pattern": "\\b(identity registr(y|ies)|name identifiers?|persistent identifiers?|entity resolution|author name disambiguation|standardi[sz]e name forms|ISNI|ORCID)\\b",
+      "flags": "",
+      "basis": "field: B3 (Wikipedia: 'Christine L. Borgman groups VIAF with the International Standard Name Identifier and ORCID systems, describing all three as \"loosely coordinated efforts to standardize name forms\"'; 'attempts to solve the problem of author name disambiguation'); B6 ('assigns a URI to each cluster'); B7 (Wikipedia, ISNI: 'The system is based primarily on the Virtual International Authority File (VIAF) service'). The census's evidence_kind ('identity registry') and area 'attribution-and-credit' ('Attribution, credit and identity infrastructure: how contributions and names are recorded, disclosed and resolved') for the entity (census.json rows[slug == 'viaf'].evidence_kind, .areas; census.json areas)."
+    },
+    {
+      "term": "pseudonyms and heteronyms held by a name record (whether a chosen name is kept as its own entity or folded into its bearer's)",
+      "pattern": "\\b(pseudonym\\w*|heteronym\\w* (in|and|under) (library|authority|catalog\\w*|identifier)\\w*|civil[- ]name (attribution|reduction|regime)|Mark Twain|Samuel Clemens)\\b",
+      "flags": "i",
+      "basis": "field: B6 (Hickey and Young, Known Shortcomings: 'A common example is for one authority file to have entities for both Samuel Clemens and Mark Twain, while another only has Mark Twain.'; 'mines and clusters variant names for a given entity'); B7 (Wikipedia, ISNI: 'If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.'). The census's record.name ('the saved source does not say how a pseudonym or heteronym is held, as a see or see-also form of one cluster or as a cluster of its own'), does_not_answer and ls_reading ('the collapse #940 names') for the entity; its organizing question and anchor #940 (census.json rows[slug == 'viaf'].record.name, .does_not_answer, .ls_reading; organizing_question, anchor)."
+    }
+  ],
+  "classes_note": "Three classes: (1) name authority files and authority control (field B2, B3, B4, B6; census kind and question); (2) name identifiers and identity registries (field B3, B6, B7; census evidence_kind 'identity registry' and area 'attribution-and-credit'); (3) pseudonyms and heteronyms held by a name record (field B6's Clemens/Twain shortcoming and 'variant names', B7's ISNI pseudonym rule; census record.name, does_not_answer and ls_reading, which name #940's collapse). The aliases are the entity's acronym, full name and host. OCLC (its operator), ISNI and Wikidata (participants with rows of their own in the census) and ORCID are distinct entities and are not aliases. The census's ls_reading applies #940's question (the reduction of a named authorial function to its civil bearer) and #1722's (the existence tax) to the entity: that reading is the archive's, ledgered as LS-NN. #940 and #1722, the census's anchors, are read at the passages that bear on name authorities, pseudonyms and heteronyms, identity resolution and the existence tax. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object (a heteronym, the archive); O-class where a sentence applies an archive category (civil-name reduction, heteronymy against pseudonymy, the existence tax, entity persistence) to one of the three classes; a bare mention, a citation line or a list of property ids is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 briefs it names; address 'VIAF' (viaf-aio-20261101, OBS-34cceb53f2ee, ADDR-b691749d98a6), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN.",
+  "hop_from": [940, 1722]
+}

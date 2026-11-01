@@ -1,0 +1,68 @@
+{
+  "row": "the-next",
+  "address": "The NEXT Electronic Literature Organization",
+  "entity": "The NEXT (the-next.org; earlier the-next.eliterature.org): in its own words a combination museum, library, and preservation space for digital art and writing, of the Electronic Literature Organization, managed by the Electronic Literature Lab at Washington State University Vancouver, Dene Grigar Managing Director and Curator; formalized in the leesharks.com apparatus authorship census (https://www.leesharks.com/apparatus/aggregators/the-next) and the traininglayerliterature.org layer census (https://www.traininglayerliterature.org/aggregators/the-next), both of 2026-11-01",
+  "row_type": "C (a public entity on which the archive bears: a museum, library and preservation space of born-digital literature; an entity of the authorship census and of the layer census)",
+  "aliases": [
+    {
+      "pattern": "\\bThe NEXT\\b",
+      "flags": ""
+    },
+    {
+      "pattern": "\\bNEXT Museum\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bthe-next\\.(org|eliterature\\.org)\\b",
+      "flags": "i"
+    }
+  ],
+  "classes": [
+    {
+      "term": "archives and collections of electronic (born-digital) literature",
+      "pattern": "\\b(electronic literature|born[- ]digital (literature|literary|fiction|poetry|art|works?|writing)|e-lit(erature)?)\\b",
+      "flags": "i",
+      "basis": "field: B8 (Wikipedia, opening: 'is a repository of electronic literature'); B3 (card 3: 'over 3000 works of born digital literature owned or managed by the Electronic Literature Organization'); B4 (card 4, About: 'combining born—digital literature, net art, and games'); B1 (card 1, the ELO's menu: 'Electronic Literature Archives The NEXT'). The authorship census's kind and record_object for the entity ('born-digital literature and net art in 48 collections', LS record) and areas 'avant-garde-archives' ('Avant-garde and experimental archives: the record of experimental writing ...'); the layer census's area 'field-history' (TLL record)."
+    },
+    {
+      "term": "works held under a pen name (pseudonymous authorship kept as published)",
+      "pattern": "\\b(pen[- ]names?|nom de plume|pseudonym(s|ous)?)\\b",
+      "flags": "i",
+      "basis": "field: B8 (Wikipedia, Individual author collections: 'Luesebrink created and published 27 of these works under the pen name M.D. Coverley'); B6 (card 6: 'M. D. Coverley’s Egypt: The Book of Going Forth by Day'); B7 (the ELO Repository: 'Marjorie C. Luesebrink (M.D. Coverley)'). The authorship census's record.name for the entity ('with a pen name kept as such') and its area 'heteronymy' (LS record)."
+    },
+    {
+      "term": "collaborative or collective authorship of a held work",
+      "pattern": "\\b(collaborativ\\w+ (designed|authored|written|composed|work)|collective(ly)? author(ed|ship)|co-?authorship|collective name)\\b",
+      "flags": "i",
+      "basis": "field: B2 (home page: Decameron Collective, 'A virtual world collaboratively designed by of nine Canadian artists and scholars'). The authorship census's record.function and area 'collective-authorship' (LS record)."
+    },
+    {
+      "term": "digital preservation of literary works by migration, re-creation and recorded traversal",
+      "pattern": "\\b(digital preservation|preservation space|obsolete (software|platforms?|formats?|media)|migrat(e|ed|ing) (them|works?|the works?) to newer|video playthroughs?|born[- ]digital (preservation|archives?))\\b",
+      "flags": "i",
+      "basis": "field: B8 (Wikipedia, Reviving works: 'The NEXT has re-created these works by migrating them to newer systems'; Academic publications: 'video and audio recordings of currently inaccessible works using historically appropriate platforms, termed \"traversals\"'); B2 (home: 'a combination museum, library, and preservation space'). The layer census's record.readback for the entity (TLL record)."
+    }
+  ],
+  "classes_note": "Four classes, each sourced by the field B and the two census records. (1) archives of electronic (born-digital) literature: B8, B3, B4, B1; LS record kind, record_object, area avant-garde-archives; TLL area field-history. (2) works held under a pen name: B8, B6, B7; LS record.name, area heteronymy. (3) collaborative or collective authorship of a held work: B2; LS record.function, area collective-authorship. (4) digital preservation by migration, re-creation and traversal: B8, B2; TLL record.readback. The census anchors are read at their passages whatever the string pass returns: #940 (EA-HETERONYMY-01) at the pseudonym/heteronym distinction and name authorities; #1722 (AI Calls You Fake) at the existence tax, the archives of experimental writing and machine participation; and, for the layer census, #186 and #1543 at the passages tll_reading names (the procedural lineage, the fourth column; machine composition). 'The NEXT' is matched case-sensitive; 'next' alone is a common word and is not an alias. The Electronic Literature Organization, the Electronic Literature Lab, Washington State University Vancouver and Dene Grigar are entities distinct from The NEXT and are not aliases. The census's 'AI' quality of the collections is read through the anchors only: the field gives it as one listed quality, and no class pass of its own is sourced for it. Class (4) was narrowed after the first string pass and before reading: its first pattern matched the archive's own vocabulary of traversal and emulation (1,512 sentences in 322 deposits, the D/R/O traversal and model emulation), none of them on the preservation of literary works; the pass was rerun with the narrowed pattern.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md (with v09/BRIEF-NEW-ROW-AGGREGATOR.md, -LABOR.md, -LEFT.md); address 'The NEXT Electronic Literature Organization' (the-next-electronic-literature-organization-aio-20261101, OBS-96ebb1b6834a, ADDR-890fbd6b10da), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis; the leesharks.com authorship census record; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN, LS-NN and TLL-NN.",
+  "hop_from": [
+    940,
+    1722,
+    186,
+    1543,
+    176,
+    400,
+    317,
+    301,
+    1678,
+    666,
+    667,
+    96,
+    731,
+    1530,
+    1444,
+    209,
+    794
+  ]
+}

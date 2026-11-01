@@ -1,0 +1,206 @@
+{
+ "row": "electronic-poetry-center",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from the anchors #940 and #1722",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the EPC with the entity named; R, a relation the archive states between the EPC and an archive object; O, an archive category applied to the EPC or to a class the field and the census source for it (config classes 1–4). #940 and #1722, the census's anchors, are read at the passages bearing on the entity's kind (BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 6). A bare mention, a keyword list, a bibliography line, a capture record of an answer about the archive's own entities, or a sentence about the archive's own author is not a claim on the classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "#940, EA-HETERONYMY-01, the census's anchor: the civil name as the atomic unit of attribution in literary and institutional systems (§1); the pseudonym/heteronym distinction (§2); the collapse registering as loss (§2); the counter-principle (§7). The archive's category of attribution under a name applied to the class 'holding work under an author's name', which the census's question and record source for the entity. Read at the anchor's passages (not a string-pass candidate: no sentence of #940 matches the class patterns; admitted by the brief's reading of the anchors).",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "#1722, AI Calls You Fake, the census's anchor: a heteronym is a real author's practice (Part One), the category bearing on the census's open question of how a poet writing under several names is filed; and the limit the archive states on its capture records (Part Four), carried with the Capture Registry's findings at the entity. Read at the anchor's passages; the existence-tax cases concern the archive's own entities and say nothing of archives of poetry.",
+   "claims": [
+    "O1722-01",
+    "O1722-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 301,
+   "strata": [
+    "O"
+   ],
+   "reason": "#301, The Fourth Mode: the periodization of American experimental poetry after Language Writing, naming Bernstein (line 35) and digital poetics with Glazier (line 38), the EPC's founders, and holding that existing periodizations fail to account for computational mediation of authorship (abstract). The archive's category applied to the classes 'archives of experimental … poetry and poetics' and 'digital and electronic poetry' as the field sources them; the founders named, the center not.",
+   "claims": [
+    "O301-01",
+    "O301-02",
+    "O301-03"
+   ],
+   "cands": [
+    "O0027",
+    "O0028",
+    "O0029",
+    "O0030",
+    "O0031"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "#186, Who Is Writing for the Machines?: the procedural lineage 'from the Oulipo through electronic literature to contemporary computational poetics' established delegated composition (line 38). The archive's category (the lineages of training-layer literature) applied to the class 'digital and electronic poetry'. Also a hop candidate (H0002, forward from #1722).",
+   "claims": [
+    "O186-01"
+   ],
+   "cands": [
+    "O0020"
+   ]
+  },
+  {
+   "dep": 1585,
+   "strata": [
+    "O"
+   ],
+   "reason": "#1585, The First Draft: 'Names are routing instructions (a proposition filed under a name arrives as doctrine, continuation, or drama …)' (§17): the archive's category of filing under a name, applied to the class 'holding work under an author's name'. The other matches in #1585 and its restatements (#1586, #1589, #1590, #1594, #1605) concern the Aristotle/Theophrastus corpus and add nothing on the class.",
+   "claims": [
+    "O1585-01"
+   ],
+   "cands": [
+    "O0121"
+   ]
+  }
+ ],
+ "admitted_surface": "the census record (LS-01–LS-33) and the Capture Registry's findings, analysis, reading, query note and PER note (CAP-1-01–CAP-1-13), ledgered as the archive's records of the entity",
+ "not_admitted": [
+  {
+   "deps": [
+    1,
+    6,
+    22,
+    28,
+    79,
+    96,
+    105,
+    106,
+    115,
+    123,
+    147,
+    153,
+    176,
+    208,
+    236,
+    260,
+    261,
+    263,
+    317,
+    348,
+    400,
+    416,
+    474,
+    481,
+    499,
+    543,
+    556,
+    557,
+    558,
+    565,
+    616,
+    664,
+    693,
+    720,
+    730,
+    785,
+    786,
+    794,
+    822,
+    824,
+    825,
+    831,
+    832,
+    833,
+    849,
+    862,
+    897,
+    920,
+    921,
+    948,
+    959,
+    996,
+    1068,
+    1119,
+    1162,
+    1164,
+    1211,
+    1216,
+    1217,
+    1223,
+    1247,
+    1287,
+    1327,
+    1337,
+    1354,
+    1370,
+    1396,
+    1397,
+    1400,
+    1401,
+    1430,
+    1579,
+    1586,
+    1589,
+    1590,
+    1594,
+    1597,
+    1605,
+    1650,
+    1667,
+    1668,
+    1671,
+    1678,
+    1680,
+    1682,
+    1690,
+    1715,
+    1717,
+    1726
+   ],
+   "reason": "Read at the candidate sentences: 'experimental poetics' as the field of the archive's author's dissertation and research basis (#1, #28, #106, #348, #556, #557, #558, #862, #921, #1162, #1715, #1717); keyword and hook lists (#28, #208, #543, #556, #557, #558, #832, #1162, #1211, #1216, #1217, #1400); recorded machine answers about the archive's own entities, which use 'avant-garde' or 'digital poetry' of the archive (#825, #833, #1396, #1397, #1401); 'filed under' as the archive's filing of its own documents (#105, #481, #720, #822, #824, #831, #897, #1223, #1370, #1430); 'under the name' of heteronyms, Facebook identities, a claimant's profile, a relic or the Theophrastus corpus (#79, #96, #263, #565, #616, #664, #785, #786, #794, #849, #920, #996, #1164, #1247, #1354, #1579, #1586, #1589, #1590, #1594, #1597, #1605, #1650, #1667, #1671, #1690, #1726); author-page signals in entity reconciliation and SEO tables (#115, #147, #693, #1287); electronic literature as a comparator in a list (#176, #317, #400, #959, #1678, #1680); a Revelation or Shklovsky locus (#1682, #1668); open-source tactics (#499). None says something of an archive of poetry and poetics, of a field's discussion record, or of how a resource files work under authors' names, beyond the admitted loci."
+  }
+ ],
+ "hop": {
+  "from": [
+   940,
+   1722
+  ],
+  "candidates": 21,
+  "admitted": 1,
+  "reading": "each hop candidate read by title and by a scan of its text for archives of poetry, author pages, listservs, electronic or digital poetry, pseudonyms and heteronyms; #186 (H0002) admitted at the procedural lineage (also an O candidate); #7, #194, #210, #524, #561, #643, #739, #825, #828, #939, #1107, #1127, #1523, #1630, #1643, #1684, #1717, #1721, #1723, #1724 concern the archive's own entities, the existence tax, provenance debt or semantic warfare and say nothing of the classes; rejected"
+ },
+ "observations": "No archive text names the Electronic Poetry Center, the EPC, epc.buffalo.edu, writing.upenn.edu/epc, the Poetics List or the Buffalo Poetics Program (D 0, R 0). The archive's bearing is ontological and by class: attribution under a civil name and the pseudonym/heteronym distinction (#940, #1722, #1585), and the place of experimental and digital poetics, the EPC's founders among them, in the archive's periodization (#301) and lineages (#186). The archive's own reading of the entity is the census's ls_reading (LS-22, LS-23) and the Capture Registry's findings (CAP-1-NN). The blog (mindcontrolpoems) and Medium were not traversed: the traversal script reads deposit texts only.",
+ "counts": {
+  "string_pass": {
+   "D_sentences": 0,
+   "D_deposits": 0,
+   "R_sentences": 0,
+   "R_deposits": 0,
+   "O_direct": 0,
+   "O_class": 157,
+   "O_deposits": 92,
+   "H_candidates": 21
+  },
+  "deposits_admitted": 5,
+  "hop_candidates": 21,
+  "hop_admitted": 1,
+  "archive_claims": {
+   "capture": 13,
+   "ls": 33,
+   "deposit": 11
+  }
+ }
+}

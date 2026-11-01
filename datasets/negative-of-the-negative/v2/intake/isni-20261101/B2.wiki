@@ -1,0 +1,384 @@
+{{Short description|Identifier for people and organizations}}
+{{Infobox identifier
+| name          = International Standard Name Identifier
+| image         = ISNI logo recreation.svg
+| image_alt     = White lowercase letters reading "isni" in a bold sans-serif font on a deep blue rounded rectangle
+| acronym       = ISNI
+| number        =
+| start_date    = {{Start date|2012|03|15}}
+| organisation  = ISNI-IA
+| digits        = 16
+| check_digit   = MOD 11-2
+| example       = [http://isni.org/isni/000000012146438X 000000012146438X]
+| website       = {{Official URL}}
+}}
+The '''International Standard Name Identifier''' ('''ISNI''') is an [[identifier]] system for uniquely identifying the public identities of contributors to [[Media (communication)|media content]] such as [[book]]s, [[Television show|television programmes]], and [[newspaper]] articles. Such an identifier consists of 16 digits. It can optionally be displayed as divided into four blocks.
+
+ISNI can be used to disambiguate named entities that might otherwise be confused, and links the [[data]] about names that are collected and used in all sectors of the media industries.
+
+It was developed under the auspices of the [[International Organization for Standardization]] (ISO) as [http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=44292 Draft International Standard 27729]; the valid standard was published on 15 March 2012. The ISO technical committee 46, subcommittee 9 ([[TC 46/SC 9]]) is responsible for the development of the standard.
+
+==ISNI format==
+ISNI consists of 15 digits followed by a check character.<ref>{{cite web|url=http://www.isni.org/content/faq|title=ISNI - FAQ|website=www.isni.org|access-date=19 April 2018|archive-date=18 April 2018|archive-url=https://web.archive.org/web/20180418221510/http://www.isni.org/content/faq|url-status=live}}</ref> The check character may be either a decimal digit or the character "X". The check character is calculated using the preceding 15 decimal digits using the [[ISO/IEC 7064]], MOD11-2 algorithm.<ref>{{cite web | url=https://support.orcid.org/hc/en-us/articles/360006897674-Structure-of-the-ORCID-Identifier | title=Structure of the ORCID Identifier }}</ref>
+
+===Format without space===
+*MARC: it was proposed to store the ISNI without spaces, e.g.(isni)1234567899999799<ref>{{cite web|url=https://www.loc.gov/marc/marbi/2010/2010-06.html|title=Encoding the International Standard Name Identifier (ISNI) in the MARC 21 Bibliographic and Authority Formats|first=Library of Congress Network Development and MARC Standards|last=Office|website=www.loc.gov|access-date=19 April 2018|archive-date=24 June 2018|archive-url=https://web.archive.org/web/20180624204735/https://www.loc.gov/marc/marbi/2010/2010-06.html|url-status=live}}</ref>
+*isni.org URL: no spaces, e.g. 
+**http://www.isni.org/isni/000000012146438X (old)
+**https://isni.org/isni/000000012146438X (current)
+**https://isni.org/000000012146438X (alternative)
+*viaf.org:
+**URL https://viaf.org/viaf/sourceID/ISNI%7C000000012146438X{{Dead link|date=October 2025 |bot=InternetArchiveBot }}
+**URL https://viaf.org/processed/ISNI%7C000000012146438X {{Webarchive|url=https://web.archive.org/web/20230412175511/https://viaf.org/processed/ISNI%7C000000012146438X |date=12 April 2023 }}
+**the data dumps contain it in form ISNI|000000012146438X
+
+===Format with space===
+In display it is frequently shown with spaces.
+*isni.org<ref>{{cite web|url=http://www.isni.org/000000012281955X|title=ISNI 000000012281955X Ai-en-ssu-tan (1879-1955)|website=www.isni.org|access-date=19 April 2018|archive-date=24 June 2018|archive-url=https://web.archive.org/web/20180624204554/http://www.isni.org/000000012281955X|url-status=live}}</ref>
+*viaf.org<ref>{{Cite web |title=viaf/751215307 |url=http://viaf.org/viaf/75121530/ |url-status=live |archive-url=https://web.archive.org/web/20171004182907/http://viaf.org/viaf/75121530/ |archive-date=4 October 2017 |access-date=7 October 2017}}</ref>
+
+==Uses of an ISNI==
+The ISNI allows a single identity (such as an author's [[pseudonym]] or the [[Imprint (trade name)|imprint]] used by a [[publisher]]) to be identified using a unique number.<ref name="PublishersWeekly">{{Cite web |last=Rosenblatt|first=Bill|date=15 October 2021|title=What's in a Name? ISNI Can Tell You That |url=https://www.publishersweekly.com/pw/by-topic/digital/content-and-e-books/article/87645-what-s-in-a-name-isni-can-tell-you-that.html |access-date=2024-06-14 |website=PublishersWeekly.com |language=en}}</ref> This unique number can then be linked to any of the numerous other identifiers that are used across the media industries to identify names and other forms of identity.
+
+An example of the use of such a number is the identification of a musical performer who is also a writer both of music and of poems. While they might be identified in various databases using numerous private and public identification systems, under the ISNI system, they would have a single linking ISNI record. The many different databases could then exchange data about that particular identity without resorting to messy methods such as comparing text strings. An often quoted example in the English language world is the difficulty faced when identifying 'John Smith' in a database. While there may be many records for 'John Smith', it is not always clear which record refers to the specific 'John Smith' that is required.
+
+If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.
+
+ISNI can be used by libraries and archives when sharing catalogue information; for more precise searching for information online and in databases, and it can aid the management of rights across national borders and in the digital environment.
+
+==Organisations involved in the management==
+===ISNI Registration Authority===
+According to ISO the Registration Authority for ISO 27729:2012 is the "ISNI International Agency".<ref>{{cite web |url=https://www.iso.org/maintenance_agencies.html |title=Maintenance agencies and registration authorities |publisher=Iso.org |access-date=2018-07-16 |archive-date=24 June 2018 |archive-url=https://web.archive.org/web/20180624232759/https://www.iso.org/maintenance_agencies.html |url-status=live }}</ref> It is located in London (c/o EDItEUR)<ref>{{cite web |url=https://www.iso.org/organization/660022.html |title=ISNI International Agency - ISNI International Agency |publisher=Iso.org |access-date=2018-07-16 |archive-date=11 July 2018 |archive-url=https://web.archive.org/web/20180711185539/https://www.iso.org/organization/660022.html |url-status=live }}</ref>
+
+It is incorporated under the Companies Act 2006 as a [[private company limited by guarantee]].<ref>{{Cite web |title=Memorandum And Articles Of {{as written|Associ|aiton &#91;sic&#93;}} Of The ISNI International Agency (ISNI-IA) |url=https://www.cenl.org/wp-content/uploads/2019/06/ISNI-IA_Articles_of_Association_101014.pdf}}</ref>
+
+The 'International Agency' is commonly known as the ISNI-IA.<ref>{{cite web |title=What is ISNI |url=http://isni.org/ |url-status=live |archive-url=https://web.archive.org/web/20150619174306/http://isni.org/ |archive-date=19 June 2015 |access-date=19 December 2014}}</ref>
+
+This UK registered, not-for-profit company has been founded by a consortium of organisations consisting of the [[Confédération Internationale des Sociétés d'Auteurs et Compositeurs]] (CISAC), the [[Conference of European National Librarians]] (CENL), the International Federation of Reproduction Rights Organisations (IFRRO), the [[International Performers Database Association]] (IPDA), the [[Online Computer Library Center]] (OCLC) and [[ProQuest]]. It is managed by directors nominated from these organisations and, in the case of CENL, by representatives of the [[Bibliothèque nationale de France]] and the [[British Library]].
+
+=== ISNI Registration Agencies ===
+A registration agency provides the interface between ISNI applicants and the ISNI Assignment Agency.<ref name=":0">{{Cite web |date= |title=ISNI Registration Agencies |url=https://isni.org/page/isni-registration-agencies/ |access-date=2025-01-23 |website=ISNI {{!}} |language=en}}</ref>
+
+{| class="wikitable sortable"
+|+ List of Registration Agencies in order as on ISNI-IA website
+! Name (as on ISNI-IA website) !! Since !! Relation
+|-
+|AETIS (Online Platform for Intellectual Property protection)
+|
+|
+|-
+|AIIMCC (Asociación Intercontinental Independiente Multidisciplinaria de Creadores y Creativos, A.C.) 
+|
+|
+|-
+|Bibliographic Data Services
+|
+|
+|-
+|[[Bibliothèque et Archives nationales du Québec|Bibliothèque et Archives Nationales du Québec]] (BAnQ)
+|
+|Canada
+|-
+| BnF ([[Bibliothèque nationale de France]]) || 2014<ref>{{Cite web |title=The National library of France becomes ISNI Registration agency : for a persistent identification of persons and organizations {{!}} ISSN |url=https://www.issn.org/newsletter_issn/the-national-library-of-france-becomes-isni-registration-agency-for-a-persistent-identification-of-persons-and-organizations/ |access-date=2025-10-13 |website=www.issn.org}}</ref>|| France
+|-
+| [[Bibliothèque nationale de Luxembourg]] ||  || Luxembourg
+|-
+|[[Bodleian Library]], University of Oxford
+|
+|
+|-
+| [[British Library]] ||  || United Kingdom
+|-
+| [[Câmara Brasileira do Livro]] (CBL) || ||Brazil
+|-
+|[[Cambridge University Library]]
+|
+|
+|-
+| Casalini Libri || || Italy
+|-
+| China Knowledge Centre for Engineering Sciences and Technology (CKCEST) || || China
+|-
+| Consolidated Independent (CI) || || United Kingdom
+|-
+|Dilicom
+|
+|
+|-
+|FGEE (Federación de Gremios de Editores de España)
+|
+|Spain
+|-
+|[[Istituto Centrale per il Catalogo Unico|ICCU]] (Istituto Centrale per il Catalogo Unico della Biblioteche Italiane per le informazioni bibliografiche)
+|
+|Italy
+|-
+|[[Intellectual Property Office of the Philippines]] (IPOPHL)
+|
+|Philippines
+|-
+| [[National Library of the Netherlands|Koninklijke Bibliotheek]] || || Netherlands
+|-
+|KBR ([[Royal Library of Belgium]])
+|
+|Belgium
+|-
+|[[Library of Trinity College Dublin]], University of Dublin
+|
+|
+|-
+|MétaMusique
+|
+|
+|-
+| Muso.AI || || 
+|-
+| [[Marketing- und Verlagsservice des Buchhandels|MVB]] || || Germany
+|-
+| [[National Assembly Library of Korea]] || || South Korea
+|-
+| [[National Library of Finland]] || || Finland
+|-
+| [[National Library of Korea]] || || South Korea
+|-
+|[[National Library of Norway]]
+|
+|
+|-
+| [[National Library of Poland]] || || Poland
+|-
+|[[National Library of Scotland]]
+|
+|
+|-
+|[[National Library of Wales]]
+|
+|
+|-
+| [[Orfium]] || ||
+|-
+| [[Program for Cooperative Cataloging]] (PCC) || ||
+|-
+| [[Quansic]] || || Switzerland
+|-
+|Republic of Türkiye Ministry of Culture and Tourism
+|
+|
+|-
+| [[Ringgold identifier|Ringgold]] || || organisations, international
+|-
+|Rovix Inc.
+|
+|
+|-
+| [[Sound Credit]]/ Soundways || || United States
+|-
+| [[SPARWK]] || ||
+|-
+|Switchchord
+|
+|
+|-
+|Takwene<ref name=":0" />
+|2021
+|[[MENA]]
+|-
+|[[Warner Music Group]] (WMG)
+|
+|
+|-
+| [[World Intellectual Property Organization]] || 2024 || International
+|-
+| [[YouTube]] || 2018<ref name=":1">{{Cite web |date= |title=YouTube Adopts ISNI ID for Artists & Songwriters |url=https://isni.org/page/article-detail/youtube-adopts-isni-id-for-artists--songwriters |access-date=2025-10-13 |website=Isni.org |language=en}}</ref><ref name="YouTube">{{Cite web |title=What's new in Studio Content Manager - YouTube Help |url=https://support.google.com/youtube/answer/9082582?hl=en-GB |access-date=2024-06-14 |website=support.google.com}}</ref>|| international
+|}
+
+In 2018, [[YouTube]] became an ISNI registry, and announced its intention to begin creating ISNI IDs for the musicians whose videos it features.<ref name=":1" /> ISNI anticipates the number of ISNI IDs "going up by perhaps 3-5 million over the next couple of years" as a result.<ref name="ISNIYouTube2">{{cite web |title=Transcript: YouTube Knows Who You Are |url=http://beyondthebookcast.com/transcripts/youtube-knows-who-you-are/ |publisher=Beyond the Book |access-date=1 June 2018 |date=18 March 2018 |archive-date=24 February 2021 |archive-url=https://web.archive.org/web/20210224111427/https://beyondthebookcast.com/transcripts/youtube-knows-who-you-are/ |url-status=live }}</ref>
+
+In 2020, [[Sound Credit]], together with ISNI, announced that music industry ISNI registrations were free and automated. The free registration system is part of [[Sound Credit]] user profile creation, used by its larger system for music crediting. It includes an automated search to avoid duplicate ISNIs and a certificate generated by the Sound Credit registration system to officiate newly registered ISNIs.<ref name="ISNISoundCredit">{{cite web |title=Music Industry ISNI Registrations Now Free and Automated |url=https://isni.org/page/article-detail/music-industry-isni-registrations-now-free-and-automated/ |publisher=ISNI |access-date=27 November 2020 |date=23 October 2020 |archive-date=29 November 2020 |archive-url=https://web.archive.org/web/20201129170855/https://isni.org/page/article-detail/music-industry-isni-registrations-now-free-and-automated/ |url-status=live }}</ref>
+
+In 2024, WIPO became an ISNI Registration Agency, enabling its network of Collective Management Organizations around the world to assign ISNI IDs to creators. Through this integration, WIPO aims to facilitate the assignment of unique identifiers to a broad range of creators, including musicians, writers, and other artistic professionals. This move was set to enhance the discoverability and attribution of creative works on a global scale.<ref>{{Cite web |title=WIPO Partners with ISNI to Assign Standards Identifying Creators |url=https://www.wipo.int/en/web/copyright/w/news/2024/wipo-partners-with-isni-to-assign-standards-identifying-creators |access-date=2025-01-18 |website=copyright |language=en-US}}</ref><ref>{{Cite press release|date=18 November 2024|title=ISNI Press Release, November 2024: WIPO Joins ISNI as a New Registration Agency, Expanding the Reach of Global Identification Standards |url=https://isni.org/page/article-detail/isni-press-release-november-2024-wipo-joins-isni-as-a-new-registration-agency/ |access-date=2025-01-18 |website=ISNI {{!}} |language=en}}</ref><ref>{{Cite web |date= |title=WIPO joins forces with ISNI as a new registration agency |url=https://ifrro.org/page/article-detail/wipo-joins-forces-with-isni-as-a-new-registration-agency/?k=e202411191442410727 |access-date=2025-01-18 |website=ifrro |language=en}}</ref>
+
+===ISNI members===
+ISNI members (ISNI-IA Members<ref>{{Cite web |date= |title=ISNI Members |url=https://isni.org/page/isni-members/ |access-date=2025-01-18 |website=ISNI {{!}} |language=en}}</ref>) {{as of|2025|lc=y}}-01-18:
+
+* ABES (French Bibliographic Agency for Higher Education)
+* [[Apple Inc.|Apple]]
+* [[BookNet Canada]]
+*[[Brill Publishers]]
+*CEDRO (Centro Español de Derechos Reprográficos)
+* FCCN
+*[[French National Archives]] (Archives nationales de France)
+*[[Harvard University]]
+* [[Amsterdam University of Applied Sciences|Hogeschool van Amsterdam]]
+* [[HAN University of Applied Sciences|Hogeschool van Arnhem en Nijmegen]]
+* Irish Copyright Licensing Agency (ICLA)
+* ISSN International Centre
+* [[Library of Congress]]
+* [[Maastricht University]]
+* Meta4Books
+* [[National Library of New Zealand]]
+* [[National Library of Sweden]] (Kungliga Biblioteket)
+* Netherlands Institute for Sound & Vision
+* [[Publishers' Licensing Services|Publisher's Licensing Services]]
+* [[Radboud University Nijmegen|Radboud Universiteit]]
+* [[University of Groningen|Rijksuniversiteit Groningen]]
+* [[Scribd]]
+* [[Spotify]]
+* [[Eindhoven University of Technology|Technische Universiteit Eindhoven]]
+* [[Leiden University|Universiteit Leiden]]
+* [[University of Amsterdam|Universiteit van Amsterdam]]
+* [[University of Twente]]
+* [[Utrecht University|University of Utrecht]]
+* [[Vrije Universiteit Amsterdam]]
+* [[Wageningen University & Research]]
+
+==Copyright==
+A subset of the data is available under [[CC0]].<ref>{{cite web | url=https://isni.org/page/linked-data/ | title=Linked Data }}</ref>
+
+==ISNI assignment==
+ISNI-IA uses an assignment system comprising a user interface, [[XML schema|data-schema]], [[Author name disambiguation|disambiguation]] [[algorithm]]s, and database that meets the requirements of the ISO standard, while also using existing technology where possible. The system is based primarily on the [[Virtual International Authority File]] (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.
+
+Access to the assignment system and database, and to the numbers that are generated as the output of the process, are controlled by independent bodies known as registration agencies. These registration agencies deal directly with customers, ensuring that data is provided in appropriate formats and recompensing the ISNI-IA for the cost of maintaining the assignment system. Registration agencies are appointed by ISNI-IA but will be managed and funded independently.
+
+==ISNI coverage==
+
+The following table lists ISNI coverage counts, for millions of identities of all types, millions of people, millions of researchers (also included in people), and organisations.<ref name="isni.org">{{cite web |title=ISNI HomePage |url=http://www.isni.org |url-status=live |archive-url=https://web.archive.org/web/20141217141417/http://isni.org/ |archive-date=17 December 2014 |access-date=19 April 2018 |website=www.isni.org}}</ref>
+
+{| class="wikitable sortable" 
+! As of
+! Identities (M)
+! Individuals (M)
+! Researchers (M)
+! Organisations
+|-
+| 2017-08-05
+| 9.41
+| 8.757
+| 2.606
+| 654,074
+|-
+| 2018-04-19
+| 9.86
+| 9.15
+| 2.86
+| 714,401
+|-
+| 2018-07-11
+| 10
+| 9.28
+| 2.87
+| 717,204
+|-
+| 2018-08-13
+| 10
+| 9.32
+| 2.87
+| 717,795
+|-
+| 2018-10-17
+| 10
+| 9.39
+| 2.87
+| 719,010
+|-
+| 2018-12-05
+| 10
+| 9.4
+| 2.88
+| 826,810
+|-
+| 2019-03-11
+| 10
+| 9.59
+| 2.88
+| 864,999
+|-
+| 2019-06-21
+| 10.5
+| 9.6
+| 2.88
+| 876,017
+|-
+| 2019-11-27
+| 10.92
+| 10.01
+| 2.89
+| 908,299
+|-
+| 2020-02-13
+| 11.02
+| 10.11
+| 2.91
+| 912,991
+|-
+| 2020-10-20
+| 11.51
+| 10.45
+| 2.91
+| 1,062,333
+|-
+| 2021-05-30
+| 12.22
+| 11.10
+| 2.93
+| 1,119,480
+|-
+| 2021-11-17
+| 14.38
+| 12.79
+| 2.94
+| 1,591,038
+|-
+| 2022-09-01<ref>{{cite web | url=https://isni.org/ | archive-url=https://web.archive.org/web/20220901033416/https://isni.org/ | archive-date=1 September 2022 | title=ISNI &#124; Home Page }}</ref>
+| 14.7
+| 13.11
+| 2.97
+| 1,645,434
+|-
+| 2022-12-25<ref>{{cite web | url=https://isni.org/ | archive-url=https://web.archive.org/web/20221225081812/https://isni.org/ | archive-date=25 December 2022 | title=ISNI &#124; Home Page }}</ref>
+| 14.8
+| 13.21
+| 2.97
+| 1,680,892
+|-
+| 2023-05-10<ref>{{cite web | url=https://isni.org/ | archive-url=
+https://web.archive.org/web/20230510201724/https://isni.org/ | archive-date=2023-05-10 | title=ISNI &#124; Home Page }}</ref>
+| 15
+| 13.3
+| 2.98
+| 1,705,025
+|-
+|2025-10-13<ref>{{Cite web |date= |title=Home Page |url=https://isni.org/ |access-date=2025-10-13 |website=isni.org |language=en}}</ref>
+|16.4
+|14.3
+|
+|2,017,936
+|}
+
+==See also==
+* [[Authority control]]
+* [[Digital Author Identification]] (DAI)
+* [[Digital object identifier]] (DOI)
+* [[Global Research Identifier Database|GRID]]
+* [[International Standard Text Code]] (ISTC)
+* [[ORCID|ORCID (Open Researcher and Contributor ID)]]
+* [[ResearcherID]]
+* [[Ringgold identifier]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* Karen Smith-Yoshimura, Janifer Gatenby, Grace Agnew, Christopher Brown, Kate Byrne, Matt Carruthers, Peter Fletcher, Stephen Hearn, Xiaoli Li, Marina Muilwijk, Chew Chiat Naun, John Riemer, Roderick Sadler, Jing Wang, Glen Wiley, and Kayla Willey. 2016. "Addressing the Challenges with Organizational Identifiers and ISNI." Dublin, Ohio: OCLC Research.
+
+==External links==
+{{Wikidata property|1=P213}}
+
+{{International numbering standards}}
+{{ISO standards}}
+{{Authority control}}
+{{Use dmy dates|date=May 2020}}
+
+[[Category:ISO standards]]
+[[Category:Unique identifiers]]
+[[Category:Library cataloging and classification]]

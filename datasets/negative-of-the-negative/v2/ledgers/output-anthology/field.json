@@ -1,0 +1,862 @@
+{
+ "row": "output-anthology",
+ "address": "Output: An Anthology of Computer-Generated Text",
+ "addresses": [
+  "Output: An Anthology of Computer-Generated Text"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the saved Wikipedia responses, or the card's site, title and snippet on the transcript's rail for the two unreachable cards; 35/35 verified by script",
+ "B_note": "The field B (v0.10 §0.3, §3.1(a)), in two pools marked by origin and by pool. B_D, the disclosed pool: every card on the transcript's rail, B1 the MIT Press listing (refused, HTTP 403), B2 the Center for Digital Narrative's video (a bot check, HTTP 429), B3 Nick Montfort's announcement post (fetched), B4 Google's Knowledge Graph notice and its help page (fetched); the body names no source outside the cards (body_named_note). B_R, the reference pool: B5 Counterpath's page, the entity's own page and both census records' source (copied from the census's saved copy, sha256 matching the manifest); B6 the MIT page at cmsw.mit.edu, unread (TLS failure at the census's fetch and at one attempt this session); B7 Wikipedia, no article. No census_third_party source: both censuses read only Counterpath. 'Available and not composed' is a finding of B_D only (§0.3).",
+ "lineage_note": "Lineages: what it is (B5); the argument against a recent origin (B5, B3); editors and publishers (B3, B5); the editors and their computer-generated books (B5, B2, B7); names and the title line (B5); the edition's particulars (B5, B1, B3); contents (B5, B3); arrangement (B5, B3); bibliographic references (B5); readership (B5); the admission rule (B5); reception: launches (B3), the Knowledge Graph notice (B4), the encyclopedia (B7). The census fields that restate an own page are one lineage with that page (§3.6), which keeps the earliest date (October 2024).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/ (Bn.html raw, Bn.txt text; B1-403.html and B2-429.html the refusals; B5 the census's saved copy; B6-census.txt the census's empty saved text; B7 .wiki, .html, -short.wiki, -search.html, -montfort.wiki, -bertram.wiki raw Wikipedia responses, B7.txt a record of codes and notices); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1 (MIT Press); the body's links to 'MIT Press' and the 'MIT Press Bookstore' carry the same redirect as the card",
+   "card": "MIT Press — Output - MIT Press",
+   "url": "https://mitpress.mit.edu/9780262549813/output/",
+   "kind": "Overview card (the publisher's catalogue page for the book); URL found as the link to the MIT Press in Montfort's post (B3)",
+   "files": {
+    "B1-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B1-403.html",
+     "sha256": "62fe9a00bd444f06739edff26d49c920cddc71fe1907c3b8aa4524fb2f9cc96a"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:48Z",
+    "http": 403,
+    "url": "https://mitpress.mit.edu/9780262549813/output/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "result": "unreachable: 'Access Denied' (edgesuite), saved as B1-403.html; not retried with another agent or by any other route (BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 3); the card's title and snippet stand as its only text"
+   },
+   "names_operator": "no (the snippet names neither editor)",
+   "text": "card",
+   "id": "B1",
+   "surfaced_by_T": [
+    "T1 card 1"
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2 (a video: YouTube · Center for Digital Narrative, UiB)",
+   "card": "YouTube·Center for Digital Narrative, UiB — Output: An Anthology of Computer",
+   "url": "https://www.youtube.com/watch?v=ttnEp8ZwOUc",
+   "kind": "Overview card (a video); the URL is the recording of the Bergen book launch linked from Montfort's post (B3, 'This event was streamed & recorded and is available to view on YouTube'), its identity with card 2 inferred from title, channel and snippet and not verified",
+   "files": {
+    "B2-429.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B2-429.html",
+     "sha256": "50daa943ac3b265ab902564603d9d630adbce394e7a4cc0161fb1e9380a8052a"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:17:31Z",
+    "http": 429,
+    "url": "https://www.youtube.com/watch?v=ttnEp8ZwOUc",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "result": "unreachable: redirected to Google's 'sorry' bot check (HTTP 429), saved as B2-429.html; not retried. Before the URL was found, WebSearch for the card by title and channel (two queries) returned no YouTube URL, and the University of Bergen's event page refused the agent (HTTP 403, not saved). A video card is admitted through its title and snippet (§3.1(a))"
+   },
+   "names_operator": "yes (the snippet: 'Nick uses computation litary art he's a PI in the center')",
+   "text": "card",
+   "id": "B2",
+   "surfaced_by_T": [
+    "T1 card 2"
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 3 (Nick Montfort's blog, Post Position)",
+   "card": "Nick Montfort — The OUTPUT Anthology is Out! – Post Position - Nick Montfort",
+   "url": "https://nickm.com/post/index.html%3Fp=5217.html",
+   "kind": "Overview card (the co-editor's announcement post, 2024-11-05, updated 2025-04-01); found by WebSearch on title and site (nickm.com/post/?p=5217 returned the blog's front page; the single post is served at this static path, linked from the November 2024 archive page)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B3.html",
+     "sha256": "937b0671575f76b40e277dfad1331405196a3edb7b5b7fd18c7f7134120ff1f9"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B3.txt",
+     "sha256": "39c92939ba25adb9b907e127329c03f7caadb0cd3295ae20abfc73a62c7b93c4"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:16:20Z",
+    "http": 200,
+    "url": "https://nickm.com/post/index.html%3Fp=5217.html",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "result": "fetched verbatim; text extracted to B3.txt (scripts and styles stripped)"
+   },
+   "names_operator": "yes (both editors)",
+   "text": "B3.txt",
+   "id": "B3",
+   "surfaced_by_T": [
+    "T1 card 3"
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 4 (Google's Knowledge Graph notice, carded); the body's citation [1] at 'Formats & Pricing' links the same help page",
+   "card": "Google — Google Watch Action Data",
+   "url": "https://support.google.com/knowledgepanel/answer/9787176",
+   "kind": "Overview card (the notice 'This response uses data provided by Google's Knowledge Graph'); its page is Google's help article 'How Google's Knowledge Graph works', the URL the body's citation [1] gives",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B4.html",
+     "sha256": "42f660d8d0483fd0cd22b75c963a6e0b94e004c10602323377f9435b17dd4d21"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B4.txt",
+     "sha256": "241f01bebf38f43e8b367339e0f502940ec9f36bae65343e8269de47aaa95886"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:49Z",
+    "http": 200,
+    "url": "https://support.google.com/knowledgepanel/answer/9787176",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "result": "fetched verbatim; text extracted to B4.txt"
+   },
+   "names_operator": "no",
+   "text": "B4.txt",
+   "id": "B4",
+   "surfaced_by_T": [
+    "T1 card 4"
+   ],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the entity's own page: the publisher Counterpath's page for the book (census source output-anthology--counterpath); the body names 'Counterpath Press' as a co-publisher, without a link or a citation",
+   "card": "Counterpath — Output: An Anthology of Computer-Generated Text, 1953–2023 (publisher's page)",
+   "url": "https://counterpathpress.org/output-an-anthology-of-computer-generated-text-1953-2023-edited-by-lillian-yvonne-bertram-and-nick-montfort",
+   "kind": "own page (the co-publisher's page), the source both census records rest on",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B5.html",
+     "sha256": "9290267e59a0571abbd1e1d0046f24d4aedac334ebc27375c5377a5226309c3c"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B5.txt",
+     "sha256": "b1f4ed6f24a0ef86d280807a6482f00617627b56dce3b0c14b5996df5e10dcf1"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "output-anthology--counterpath",
+     "sha256": "9290267e59a0571abbd1e1d0046f24d4aedac334ebc27375c5377a5226309c3c",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T05:06:27Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B5.html",
+      "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B5.txt"
+     ],
+     "agrees": "B5.html is the census's .html.gz gunzipped; its sha256 matches the manifest; the layer census's saved copy (fetched 2026-11-01T05:07:12Z) has the same sha256 and the same .txt"
+    },
+    "refetched": false
+   },
+   "names_operator": "yes (both editors, with their posts)",
+   "text": "B5.txt",
+   "id": "B5",
+   "surfaced_by_T": [],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  },
+  {
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the entity's own page at MIT (census source output-anthology--mit): unread",
+   "card": "MIT Comparative Media Studies/Writing — Output: An Anthology of Computer-Generated Text, 1953–2023 (unread)",
+   "url": "https://cmsw.mit.edu/output-an-anthology-of-computer-generated-text-1953-2023/",
+   "kind": "own page (the editor's department page for the book): unread",
+   "files": {
+    "B6-census.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B6-census.txt",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+   },
+   "fetched": {
+    "census": {
+     "src": "output-anthology--mit",
+     "http": "000",
+     "fetched": "2026-11-01T05:06:26Z",
+     "error": "curl: (60) SSL certificate problem: unable to get local issuer certificate",
+     "saved": "an empty text file (sha256 e3b0c442…, 0 bytes), copied as B6-census.txt"
+    },
+    "this_session": {
+     "at": "2026-11-01T06:17:49Z",
+     "http": "000",
+     "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+     "result": "one attempt with the census's agent, the same TLS failure ('SSL certificate problem: unable to get local issuer certificate'); TLS verification was not disabled and no other route was tried"
+    }
+   },
+   "names_operator": "unknown (unread)",
+   "text": null,
+   "id": "B6",
+   "surfaced_by_T": [],
+   "names_archive": "unknown (unread)"
+  },
+  {
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "the entity's Wikipedia article (none)",
+   "card": "Wikipedia — Output: An Anthology of Computer-Generated Text, 1953–2023 (no article; no search result; not named in the editors' articles)",
+   "url": "https://en.wikipedia.org/w/index.php?title=Output:_An_Anthology_of_Computer-Generated_Text,_1953%E2%80%932023&action=raw",
+   "kind": "Wikipedia (no article)",
+   "files": {
+    "B7.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7.wiki",
+     "sha256": "d54c8a533491f864f464408a3479a8d503297c6e6a99c7b4928251c3e64dbf6a"
+    },
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7.html",
+     "sha256": "5f3ee32a2c6dc75c2a2218df4f23b6f2a031fdd617ed6366db65abaae53d6102"
+    },
+    "B7-short.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7-short.wiki",
+     "sha256": "004156ee0121385a364cbabe7a8b2752de3a502559f85c2b40563281b2084d0d"
+    },
+    "B7-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7-search.html",
+     "sha256": "dac3a424f1ecfad761a699ba80683b57797ea6200419940849110e90562a4d58"
+    },
+    "B7-montfort.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7-montfort.wiki",
+     "sha256": "d2c4d27ce2a559841a4c380edbb102172c54bd4b3dffd694c7197dd509668d61"
+    },
+    "B7-bertram.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7-bertram.wiki",
+     "sha256": "0ca3e0479fe91a5bd63be88cf3e000de10f6bbd89271375bbee28263ee423b4d"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/output-anthology-20261101/B7.txt",
+     "sha256": "96da5e1c6e53213e5581f84b8d4f6dd876137b06bcb9ad93141230b09b2f23a3"
+    }
+   },
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "tries": [
+     {
+      "at": "2026-11-01T06:15:49Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Output:_An_Anthology_of_Computer-Generated_Text,_1953%E2%80%932023&action=raw",
+      "http": 404,
+      "result": "Wikimedia Error page (B7.wiki)"
+     },
+     {
+      "at": "2026-11-01T06:16:49Z",
+      "url": "https://en.wikipedia.org/wiki/Output:_An_Anthology_of_Computer-Generated_Text,_1953%E2%80%932023",
+      "http": 404,
+      "result": "'Wikipedia does not have an article with this exact name' (B7.html)"
+     },
+     {
+      "at": "2026-11-01T06:16:49Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Output:_An_Anthology_of_Computer-Generated_Text&action=raw",
+      "http": 404,
+      "result": "the short title, Wikimedia Error page (B7-short.wiki)"
+     },
+     {
+      "at": "2026-11-01T06:16:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Output%3A+An+Anthology+of+Computer-Generated+Text%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "'There were no results matching the query.' (B7-search.html)"
+     },
+     {
+      "at": "2026-11-01T06:16:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Nick_Montfort&action=raw",
+      "http": 200,
+      "result": "the co-editor's article; does not name the anthology (B7-montfort.wiki)"
+     },
+     {
+      "at": "2026-11-01T06:16:50Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Lillian-Yvonne_Bertram&action=raw",
+      "http": 200,
+      "result": "the co-editor's article; does not name the anthology (B7-bertram.wiki)"
+     }
+    ]
+   },
+   "names_operator": "the editors' own articles only",
+   "text": "B7.txt",
+   "id": "B7",
+   "surfaced_by_T": [],
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, traininglayerliterature, EA-WG-CAPTURES-01 in the saved text, card title and snippet)"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "Paperback ISBN: 9780262549813 Pub date: November 5, 2024",
+   "claim": "the MIT Press listing: a paperback, ISBN 9780262549813, published November 5, 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the edition's particulars",
+   "date": "2024-11-05 (as stated on the card)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 5e88076b2a48cfc6…), whitespace-normalised: the card's site, title and snippet"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "504 pp., 7 x 9 in, 41 b&w illus.",
+   "claim": "the MIT Press listing: 504 pages, 7 x 9 in, 41 black-and-white illustrations",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the edition's particulars",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 5e88076b2a48cfc6…), whitespace-normalised: the card's site, title and snippet"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "MIT Press BookstorePenguin Random HouseAmazonBarnes and NobleBookshop.",
+   "claim": "the MIT Press listing names its sellers: the MIT Press Bookstore, Penguin Random House, Amazon, Barnes and Noble, Bookshop",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the edition's particulars",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 5e88076b2a48cfc6…), whitespace-normalised: the card's site, title and snippet"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 2 snippet (the video's spoken introduction, as transcribed on the card)",
+   "quote": "and Nick you're all familiar with uh Nick uses computation litary art he's a PI in the center.",
+   "claim": "the Center for Digital Narrative's video introduces Montfort as one who uses computation for literary art and a PI in the Center",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "undated on the card (the Bergen launch, 13 December, per B3)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 5e88076b2a48cfc6…), whitespace-normalised: the card's site, title and snippet"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 2 snippet",
+   "quote": "he has many books that include computerenerated books the deletio...",
+   "claim": "the video's introduction: Montfort has many books, computer-generated books among them",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 5e88076b2a48cfc6…), whitespace-normalised: the card's site, title and snippet"
+  },
+  "F6": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶1",
+   "quote": "I’m delighted that after more than four years of work by Lillian-Yvonne Bertram and myself — we’re co-editors of this book — the MIT Press and Counterpath have jointly published",
+   "claim": "the co-editor: after more than four years of work, Bertram and Montfort co-edited the book, published jointly by the MIT Press and Counterpath",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "editors and publishers",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post byline",
+   "quote": "Posted on 2024-11-052025-04-01 by Nick Montfort",
+   "claim": "the announcement was posted 2024-11-05 (updated 2025-04-01, the two dates run together on the page)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the edition's particulars",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶3 s1",
+   "quote": "This anthology spans seven decades of computer-generated text, beginning before the term “artificial intelligence” was even coined.",
+   "claim": "the anthology spans seven decades of computer-generated text, beginning before the term 'artificial intelligence' was coined",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the argument against a recent origin of text generation",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶3 s2",
+   "quote": "While not restricted to poetry, fiction, and other creative projects, it reveals the rich work that has been done by artists, poets, and other sorts of writers who have taken computing and code into their own hands.",
+   "claim": "not restricted to creative projects, it shows the work of artists, poets and other writers who took computing and code into their own hands",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: what the outputs are",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶3 s3–4",
+   "quote": "The anthology includes examples of powerful and principled rhetorical generation along with story generation systems based on cognitive research. There are examples of “real news” generation that has already been informing us — along with hoaxes and humor.",
+   "claim": "it includes rhetorical generation, story generation systems based on cognitive research, 'real news' generation, hoaxes and humor",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: what the outputs are",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶4 s1",
+   "quote": "It’s all contextualized by brief introductions to each excerpt, longer introductions to each fine-grained genre of text generation, and an overall introduction that Lillian-Yvonne and I wrote.",
+   "claim": "introductions to each excerpt, longer introductions to each fine-grained genre of text generation, and an overall introduction by the two editors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "arrangement: introductions, genres and selections",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶4 s2",
+   "quote": "There are 200 selections in the 500-page book, which we hope will be a valuable sourcebook for academics and students — but also a way for general readers to learn about innovations in computing and writing.",
+   "claim": "200 selections in the 500-page book, hoped to be a sourcebook for academics and students and a way for general readers to learn about innovations in computing and writing",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "arrangement: introductions, genres and selections",
+   "date": "2024-11-05",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post ¶2",
+   "quote": "Book launch events are posted here and will be updated as new ones are scheduled!",
+   "claim": "the post lists the book's launches, talks and events (November 2024 to April 2025, as listed)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: launches and the recorded launch",
+   "date": "2024-11-05 (updated 2025-04-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "post, Previous Events, December 13",
+   "quote": "December 13 (Friday) European book launch with the editors, Scott Rettberg, and Tegan Pyke. University of Bergen’s Center for Digital Narrative, Langesgaten 1-2, 3:30pm. … This event was streamed & recorded and is available to view on YouTube.",
+   "claim": "the European launch at the University of Bergen's Center for Digital Narrative, with the editors, Scott Rettberg and Tegan Pyke, was streamed and recorded for YouTube",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: launches and the recorded launch",
+   "date": "2024-11-05 (updated 2025-04-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 39c92939ba25adb9…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 4 snippet",
+   "quote": "This response uses data provided by Google's Knowledge Graph",
+   "claim": "the Overview's response uses data from Google's Knowledge Graph",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the Knowledge Graph notice",
+   "date": "2026-11-01 (the card, at capture)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 5e88076b2a48cfc6…), whitespace-normalised: the card's site, title and snippet"
+  },
+  "F16": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "help article ¶1",
+   "quote": "Google’s search results sometimes show information that comes from our Knowledge Graph, our database of billions of facts about people, places, and things.",
+   "claim": "Google's Knowledge Graph is its database of billions of facts about people, places and things",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the Knowledge Graph notice",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 241f01bebf38f43e…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "help article, 'Where do Knowledge Graph facts come from?'",
+   "quote": "Facts in the Knowledge Graph come from a variety of sources that compile factual information.",
+   "claim": "Knowledge Graph facts come from a variety of compiling sources, licensed data and content owners",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the Knowledge Graph notice",
+   "date": "undated (read 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 241f01bebf38f43e…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page title line",
+   "quote": "Output: An Anthology of Computer-Generated Text, 1953–2023 , edited by Lillian Yvonne-Bertram and Nick Montfort",
+   "claim": "the publisher's title line, printing the first editor as 'Lillian Yvonne-Bertram'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names and the title line",
+   "date": "October 2024 (the page's publication date)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page, lede",
+   "quote": "An anthology of seven decades of English-language outputs from computer generation systems, chronicling the vast history of machine-written texts created long before ChatGPT.",
+   "claim": "an anthology of seven decades of English-language outputs from computer generation systems, chronicling the history of machine-written texts made long before ChatGPT",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: seven decades of output from generation systems",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶1 s1",
+   "quote": "The discussion of computer-generated text has recently reached a fever pitch, but largely omits the long history of work in this area—text generation, as it happens, was not invented yesterday in Silicon Valley.",
+   "claim": "the discussion of computer-generated text omits its long history; text generation was not invented yesterday in Silicon Valley",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the argument against a recent origin of text generation",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶1 s2",
+   "quote": "This anthology, Output , thoughtfully selected, introduced, and edited by Lillian-Yvonne Bertram and Nick Montfort, aims to correct that omission by gathering seven decades of English-language texts produced by generation systems and software.",
+   "claim": "selected, introduced and edited by Bertram and Montfort, it aims to correct that omission by gathering seven decades of English-language texts produced by generation systems and software",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: seven decades of output from generation systems",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶1 s3",
+   "quote": "The outputs span many different types of creative writing and include text generated by research systems, along with reports and utilitarian texts, representing many general advances and experiments in text generation.",
+   "claim": "the outputs span many types of creative writing and include research-system text, reports and utilitarian texts",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contents: what the outputs are",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶2 s1",
+   "quote": "Output is first and foremost a collection of outputs to be encountered by readers.",
+   "claim": "first and foremost a collection of outputs to be encountered by readers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "readership: a collection to be read",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶2 s2",
+   "quote": "In addition to an overall introduction, each of the excerpts is introduced individually and organized by fine-grain genre including conversations, humor, letters, poetry, prose, and sentences.",
+   "claim": "an overall introduction; each excerpt introduced individually and organized by fine-grain genre (conversations, humor, letters, poetry, prose, sentences)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "arrangement: introductions, genres and selections",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶2 s3",
+   "quote": "Bibliographic references allow readers to learn more about outputs and systems that intrigue them.",
+   "claim": "bibliographic references lead readers to outputs and systems",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "bibliographic references",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶2 s4",
+   "quote": "Although Output could serve as a reference book, it is designed to be readable and to be read.",
+   "claim": "it could serve as a reference book and is designed to be readable and read",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "readership: a collection to be read",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page ¶2 s5",
+   "quote": "Purposefully excluded are human–computer collaborations that were conceptually defined but not implemented as a computer system.",
+   "claim": "the admission rule: human–computer collaborations conceptually defined but not implemented as a computer system are excluded",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the admission rule",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page, editors ¶1",
+   "quote": "Lillian-Yvonne Bertram is the author of Travesty Generator , a book of computational poetry that was longlisted for the 2020 National Book Award for Poetry, and several other poetry books. They direct the MFA in Creative Writing program at the University of Maryland.",
+   "claim": "Bertram, author of Travesty Generator (computational poetry, longlisted for the 2020 National Book Award for Poetry), directs the MFA in Creative Writing at the University of Maryland",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page, editors ¶2 s1–2",
+   "quote": "Nick Montfort is a poet and artist who uses computation as his medium. He is the series editor of Counterpath’s Using Electricity series, and author of The Truelist and #! , both from Counterpath.",
+   "claim": "Montfort, a poet and artist who uses computation as his medium, edits Counterpath's Using Electricity series and wrote The Truelist and #!",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page, editors ¶2 s4",
+   "quote": "He is Professor of Digital Media at MIT and Principal Investigator in the Center for Digital Narrative at the University of Bergen, Norway.",
+   "claim": "Montfort is Professor of Digital Media at MIT and Principal Investigator in the Center for Digital Narrative, University of Bergen",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "page, publication block",
+   "quote": "October 2024 co-published with MIT Press edited by Lillian-Yvonne Bertram and Nick Montfort $40.00; 7″ x 9″ 500 pgs. ISBN 978-0262549813.",
+   "claim": "Counterpath's particulars: October 2024, co-published with MIT Press, $40.00, 7″ x 9″, 500 pages, ISBN 978-0262549813",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the edition's particulars",
+   "date": "October 2024",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 b1f4ed6f24a0ef86…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "rendered page (B7.html), HTTP 404",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "Wikipedia has no article under the full title; the raw title and the short title answer HTTP 404",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 96da5e1c6e53213e…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "article-space search (B7-search.html)",
+   "quote": "There were no results matching the query.",
+   "claim": "an article-space search for the quoted title returns no result; the editors' articles do not name the anthology",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 96da5e1c6e53213e…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Nick Montfort (B7-montfort.wiki), Using Electricity",
+   "quote": "Montfort is the founder and series editor of ''Using Electricity'', a series of computer-generated books published by Counterpath.",
+   "claim": "Wikipedia: Montfort founded and edits Using Electricity, a series of computer-generated books from Counterpath",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7-montfort.wiki (sha256 d2c4d27ce2a55984…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B7",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Nick Montfort (B7-montfort.wiki), The Truelist",
+   "quote": "Montfort's ''The Truelist'' (Counterpath, 2017) is a computer-generated book-length poem produced by a one-page computer program.",
+   "claim": "Wikipedia: The Truelist (Counterpath, 2017), under Montfort's name, is a computer-generated book-length poem produced by a one-page program",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the editors and their computer-generated books",
+   "date": "2026-11-01 (read)",
+   "quote_ok": true,
+   "checked_against": "saved text B7-montfort.wiki (sha256 d2c4d27ce2a55984…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "MIT Press — Output - MIT Press",
+  "B2": "YouTube·Center for Digital Narrative, UiB — Output: An Anthology of Computer",
+  "B3": "Nick Montfort — The OUTPUT Anthology is Out! – Post Position - Nick Montfort",
+  "B4": "Google — Google Watch Action Data",
+  "B5": "Counterpath — Output: An Anthology of Computer-Generated Text, 1953–2023 (publisher's page)",
+  "B6": "MIT Comparative Media Studies/Writing — Output: An Anthology of Computer-Generated Text, 1953–2023 (unread)",
+  "B7": "Wikipedia — Output: An Anthology of Computer-Generated Text, 1953–2023 (no article; no search result; not named in the editors' articles)"
+ }
+}

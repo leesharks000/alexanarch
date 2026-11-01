@@ -1,0 +1,63 @@
+{
+ "row": "wikidata",
+ "address": "Wikidata",
+ "entity": "Wikidata (wikidata.org), the free, collaborative, multilingual, secondary knowledge base of structured data hosted and owned by the Wikimedia Foundation and developed mainly by Wikimedia Deutschland, launched 29 October 2012; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/wikidata)",
+ "row_type": "C (a public entity on which the archive bears: a collaboratively edited knowledge base and knowledge graph, an identity and identifier infrastructure; an entity of the leesharks.com apparatus authorship census, host_relation 'infrastructure')",
+ "aliases": [
+  {
+   "pattern": "\\bWikidata\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bwikidata\\.org\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bWikidata Query Service\\b|\\bquery\\.wikidata\\.org\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bP742\\b",
+   "flags": ""
+  }
+ ],
+ "classes": [
+  {
+   "term": "name authorities and authority control: identifiers that link a name to its bearer across databases",
+   "pattern": "\\b(authority (file|files|control|record|records)|name authorit(y|ies)|authority control)\\b",
+   "flags": "i",
+   "basis": "field: B4 (Wikidata:Introduction, card 4: 'A property that links an item to an external database, such as an authority control database used by libraries and archives, is called an identifier'); B6 (Library Carpentry, card 6: 'Authority Control: Librarians often work with authority files like GND or VIAF to ensure consistent naming conventions. Wikidata helps to map and retrieve these identifiers'); B11 (census third party, VIAF article: 'The file numbers are also being added to Wikipedia biographical articles and are incorporated into Wikidata'). The census's own area for the entity, 'attribution-and-credit' ('Attribution, credit and identity infrastructure: how contributions and names are recorded, disclosed and resolved'), and its evidence_kind 'identity registry'."
+  },
+  {
+   "term": "pseudonyms, pen names and heteronyms: names a person used, recorded as such",
+   "pattern": "\\b(pseudonyms?|pen[- ]names?|noms? de plume|heteronyms?)\\b",
+   "flags": "i",
+   "basis": "field: B9 (Property:P742, the entity's own page: 'pseudonym (P742)'; 'alias used by someone (for nickname use P1449)'; aliases 'pen name stage name code name user name known professionally as heteronym nom de plume'). The census's own area for the entity, 'heteronymy' ('Heteronymy, persona and pseudonymous authorship'), its record.name and its ls_reading."
+  },
+  {
+   "term": "knowledge graphs and structured knowledge bases",
+   "pattern": "\\bknowledge (graph|graphs|base|bases)\\b",
+   "flags": "i",
+   "basis": "field: B2 (Wikipedia, card 2: 'Wikidata is a collaboratively edited multilingual knowledge graph hosted by the Wikimedia Foundation'); B1 (main page, card 1: 'Wikidata is a free and open knowledge base'); B4 ('secondary knowledge base'); B6 ('Google's Knowledge Graph now draws on Wikidata data'). The census's kind for the entity."
+  }
+ ],
+ "classes_note": "Three classes, each stated by a field source at the locus given and each the census's own area, kind or evidence kind for the entity: (1) name authorities and authority control (B4, B6, B11; census area 'attribution-and-credit', evidence_kind 'identity registry'); (2) pseudonyms and heteronyms, by the pseudonym property P742 (B9; census area 'heteronymy'); (3) knowledge graphs and knowledge bases (B1, B2, B4, B6; census kind). The census's anchors, #940 (EA-HETERONYMY-01) and #1722 (AI Calls You Fake), are read at the passages that bear on name authorities, pseudonyms and heteronyms, and certification of human authorship, by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 6). The census's organizing question is ledgered with the record. The operator's names are not aliases of the entity and are not searched alone.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 AGGREGATOR, LABOR and LEFT briefs; address \"Wikidata\" (wikidata-aio-20261101, OBS-1a237ffb01e9, ADDR-e03905f2d956), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading.",
+ "hop_from": [
+  5,
+  96,
+  115,
+  261,
+  623,
+  668,
+  738,
+  755,
+  761,
+  940,
+  1192,
+  1611,
+  1697,
+  1722
+ ]
+}

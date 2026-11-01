@@ -1,0 +1,182 @@
+{
+ "row": "creative-ai-lab-database",
+ "address": "Creative AI Lab database",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Creative AI Lab database with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (machine participation in making artworks: B4 F34, B3 F28, census area 'machine-co-authorship'; the record of a maker: B4 F35, census record.name and area 'attribution-and-credit'). The census's anchors #940 and #1722 read at the passages that bear on the entity's kind (machine participation; the maker and the work; the attribution regime), by BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 6.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 384,
+  "O_deposits": 283,
+  "H_candidates": 21
+ },
+ "verdicts": [
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's anchor: its operational boundary excludes from heteronymy 'Machine assistance, where the AI's contribution is not organized as a named witness role with declared provenance' (§6), and its operation keeps 'Machine substrates that participate' declared (§2): archive categories (heteronymy, declared substrate) applied to class (1), machine participation in making work, which the database's page gives as tools 'core to the production of the work itself' or 'a smaller assistive role'",
+   "claims": [
+    "O940-01",
+    "O940-02"
+   ],
+   "cands": [
+    "O-class, para 70 (§6 Operational boundary)",
+    "O-class, para 3 (description, read and not admitted separately: it restates the boundary)"
+   ]
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Calls You Fake, the census's anchor: Part One keeps four questions independent, 'Does the maker exist?' and 'Did the work happen?' among them, and holds that 'a piece of software' exists in its own way with its own kind of evidence: an archive category (the four questions of the existence tax) applied to class (2), the record of a maker, which the database keeps in its 'Developed by' and 'Author(s)' columns; read by the brief's rule at the passages bearing on the entity's kind (no string candidate: the string pass's classes do not occur at those passages). The other passages (the seven ways, the loop, the attack frames) concern answers about the archive's own entities and were read and not admitted for this entity.",
+   "claims": [
+    "O1722-01",
+    "O1722-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure (EA-MPAI-PROVENANCE-02, 2026-05-12): the Central Invariant gives authorship as 'a property of the accountable relation between writer, process, and text' and provenance as 'the lineage of what was written, with what tools, under what constraints'; and 'Slop is not writing made with AI. Slop is writing without provenance.': archive categories (process provenance, the authorship/slop distinction) applied to class (1); found by the string pass at #729 and #1369 (the same paper, deposited again 2026-05-14), one lineage kept at #729's date (S4)",
+   "claims": [
+    "O729-01",
+    "O729-02"
+   ],
+   "cands": [
+    "O-class #729 para 36, 82; #1369 para 46, 111 (the Copyright Office and Authors Guild sentences, read: they report others' frames; the paper's own category is at §0, admitted)"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": "class (2) candidates matching 'developed by' (the bulk of the string pass's class-2 hits: #63, #102, #113, #126, #153, #170, #174, #203, #212–#214, #232, #269, #271, #301, #402, #482, #510, #512, #519, #616, #623, #656, #700, #789–#800, #825, #833, #941, #950, #976, #1213, #1226, #1254, #1256, #1343, #1371, #1396–#1401, #1409, #1438, #1541, #1644, #1650, #1701, #1702 and others)",
+   "reason": "each states who developed one of the archive's own frameworks, or quotes a composition that does; none applies an archive category to the record of a maker of a tool or resource"
+  },
+  {
+   "dep": "'named contributor' candidates (#1356, #1357, #1364) and #1434 ('Credited by name at the author's wish')",
+   "reason": "the archive's records of its own contributors; they say nothing of an aggregator's record of makers"
+  },
+  {
+   "dep": "class (1) candidates matching 'AI-assisted' in substrate lines and front matter (about 190 of the 232 hits)",
+   "reason": "a deposit's own disclosure of its substrate; no category applied to a class"
+  },
+  {
+   "dep": "#1 and #862 (the Pristine Fallacy)",
+   "reason": "the category concerns the assessment of scholarship by repositories when AI assistance is present, a class no field source gives the entity"
+  },
+  {
+   "dep": "#161, #166, #855, #856, #1577 (the Reverse Turing Test and its line)",
+   "reason": "the habituation of writers by AI assistance; no field source gives the entity that class"
+  },
+  {
+   "dep": "#1678, #1680 (R14: genre, substrate and identity separate dimensions)",
+   "reason": "the archive's own metadata rule for its deposits; nothing said of a tools database"
+  },
+  {
+   "dep": "#499, #779, #783, #833, #872, #879, #114, #121, #1003, #1194, #1045, #1081, #1063, #106, #1518, #1519, #1636, #1663, #1558 and the remaining class-1 hits",
+   "reason": "AI tools as subject matter in other senses (defence, adoption proxies, the Assembly Chorus, intellectual biography, erosion cohorts) or substrate disclosures; read and not admitted"
+  },
+  {
+   "dep": "hop candidates H0001–H0021 (from #940 and #1722)",
+   "reason": "read by title and at their citing passages: #939 (Provenance Debt) applies its category to institutional text production and its training-corpus liability, nothing of a tools aggregator or artistic practice; #1721 is #1722's earlier version (one lineage, its claims at #1722); #1523, #1643, #825, #186, #194, #210, #524, #561, #643, #739, #828, #1107, #1127, #1630, #1684, #1717, #1723, #1724, #7 concern the archive's own entities or the composition layer's answers about them; none admitted"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/creative-ai-lab-database-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, query note, PER note, originator basis and description for the entity's capture (OBS-53073fe9a7b0, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/creative-ai-lab-database (source: /home/claude/fleet/leesharks.com/data/authorship-census/census.json rows[slug == 'creative-ai-lab-database'], organizing_question, admission_rule; rows/creative-ai-lab-database.py)",
+   "reason": "the leesharks.com authorship census record, the archive's own record of the entity, every field and its basis",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34",
+    "LS-35",
+    "LS-36",
+    "LS-37",
+    "LS-38",
+    "LS-39",
+    "LS-40",
+    "LS-41",
+    "LS-42",
+    "LS-43",
+    "LS-44",
+    "LS-45",
+    "LS-46",
+    "LS-47"
+   ]
+  }
+ ],
+ "hop": {
+  "from": [
+   940,
+   1722
+  ],
+  "candidates": 21,
+  "admitted": 0
+ },
+ "class_pass": "O-class: the string pass returned 384 candidates in 283 deposits; reading admitted #940 and #729 (with #1369, one lineage); #1722 read as the census's anchor and admitted at Part One; the hop admitted none",
+ "observations": [
+  "D: no candidate; no archive text names the Creative AI Lab, its database or creative-ai.org. R: no candidate."
+ ],
+ "D": "no candidate: no archive text names the Creative AI Lab, its database or creative-ai.org",
+ "R": "no candidate"
+}

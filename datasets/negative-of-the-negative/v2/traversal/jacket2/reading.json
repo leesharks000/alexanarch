@@ -1,0 +1,155 @@
+{
+ "row": "jacket2",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Jacket2 with the entity named; R, a relation the archive states between Jacket2 and an archive object; O, an archive category applied to Jacket2 or to a class the field and the census source for it (online magazines of commentary on poetry and poetics: B1, B6, census kind and record_type; archives of experimental and avant-garde writing: B1, census area; byline attribution with translators, a collective signature and a collaborative making: B1, census question and record). #940 and #1722, the census's anchors, read at the passages bearing on the entity's kind (BRIEF-NEW-ROW-AUTHORSHIP, Substitutions 6). A bare mention, a reference line with nothing stated, a figural use or a list of keywords is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 543,
+   "strata": [
+    "R"
+   ],
+   "reason": "Hexagonal Lexical Engine v1.2, Phase 4 Scholarly Venue Targeting: names Jacket2 (with electronic book review) as the literary-theory venue for essays on TLL, RCF and the digital heteronym; a relation of address between the entity and archive objects (the same table row is the D, R and O-direct candidate)",
+   "claims": [
+    "R543-01"
+   ],
+   "cands": [
+    "D0001",
+    "R0001",
+    "O0057"
+   ]
+  },
+  {
+   "dep": 1717,
+   "strata": [
+    "R"
+   ],
+   "reason": "Belief & Technique for Telepathic Prose: A Critical Edition v1.1, Sources: takes its text of Kerouac's 'Belief & Technique for Modern Prose' from Al Filreis's post at Jacket2, under 'External, as verified for this edition'; a relation of reception (the archive's edition takes a witness from the entity). Read as a claim because the line states what was verified at Jacket2 (letter, first printing, 30 items); the borderline with a bare reference line is recorded here",
+   "claims": [
+    "R1717-01"
+   ],
+   "cands": [
+    "D0003",
+    "R0003",
+    "O0167"
+   ]
+  },
+  {
+   "dep": 1715,
+   "strata": [
+    "R"
+   ],
+   "reason": "v1.0 of the same edition, the same lines; an instance under R1717-01 (S4)",
+   "claims": [],
+   "instance_of": 1717,
+   "cands": [
+    "D0002",
+    "R0002",
+    "O0162"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's anchor: §6's operational boundary sets ordinary translation, ordinary editing, institutional office-holding and collaborative authorship without a heteronym outside heteronymy (O-class, byline attribution: B1's translators, collective signature and collaborative making; census question and record); §2's distinction of pseudonym and heteronym and §1's civil name as the unit of attribution read as the anchor's passages on the kind (the census's record.name and does_not_answer ask of pseudonyms and heteronyms)",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03"
+   ],
+   "cands": [
+    "O0091",
+    "anchor reading"
+   ]
+  },
+  {
+   "dep": 666,
+   "strata": [
+    "O"
+   ],
+   "reason": "The New Human: Post-Pessoa Heteronymic Practice in the AI Era (EA-PKG-03), §6 Heteronymic Provenance Theory: collaborative authorship as one provenance structure beside direct, pseudonymous and heteronymic authorship, and the claim that the apparatus should accommodate each (O-class, byline attribution: the collaborative making B1 credits)",
+   "claims": [
+    "O666-01",
+    "O666-02"
+   ],
+   "cands": [
+    "O0067",
+    "O0068"
+   ]
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Calls You Fake, the census's anchor: Part One's four questions and Part Six's adequate answer (names the object at its own level, shows the evidence and where it comes from), the archive's categories for an AI answer about a work, applied to the class of composed answers the Capture Registry records at the entity's address (the class sourced by the archive: the capture record CAP-1-07, CAP-1-08). Part Seven (who pays the tax) read and not admitted: the archive does not apply it to Jacket2 or to a class sourced for it",
+   "claims": [
+    "O1722-01",
+    "O1722-02"
+   ],
+   "cands": [
+    "anchor reading"
+   ]
+  }
+ ],
+ "rejected": {
+  "O-class byline candidates (O0001–O0156 except those admitted)": "the archive's own co-authorships, heteronymic bylines, licence and non-endorsement clauses, capture records of its own author, and records of its deposits' bylines: each names a byline or co-authorship of the archive's own works and applies no archive category to the class of publication bylines Jacket2 belongs to",
+  "O0010 (#104), O0025 (#145)": "bylines appended to compressed summaries and documents: the category applies to summaries and metadata, outside the class",
+  "O0075 (#729), O0131 (#1369)": "'Provenance erasure is the structural severing of accountability, not the absence of a byline': a definition of the archive's category against the byline in general, applied to no class sourced for Jacket2; noted, not admitted",
+  "O0110 (#1081)": "a coding scheme for institutional status and AI mediation in a study design; outside the classes",
+  "O0037 (#301), O0050 (#415), O0114 (#1140), O0083/O0125–O0127/O0139 (#832, #1211, #1216, #1217, #1400), O0163–O0164 (#1716)": "avant-garde and Language poetry named in the archive's canon declarations, its liquidation of the Poet and its originals library; no field source or census field places Jacket2 in those classes (the class term matched on 'Language poetry' and 'L=A=N=G=U=A=G=E', which no field source states of Jacket2), and the composer does not apply them",
+  "O0160–O0161, O0165–O0166 (#1715, #1717)": "the edition's own witness table and its note on the byline of P: the archive's own work",
+  "H0001–H0109": "the citation hop from #543, #666, #940, #1717 and #1722: none of the 109 candidates names Jacket2 (the string pass found the alias in #543, #1715 and #1717 only), and none of their sentences that fell under the three class patterns applies an archive category to a class sourced for Jacket2 (those sentences were read at the O pass, above)"
+ },
+ "counts": {
+  "candidates": {
+   "D": 3,
+   "R": 3,
+   "O_direct": 3,
+   "O_class": 164,
+   "H": 109
+  },
+  "admitted_deposits": [
+   543,
+   1717,
+   1715,
+   940,
+   666,
+   1722
+  ],
+  "admitted_claims": 9,
+  "instances": 1
+ },
+ "not_admitted": [
+  {
+   "cands": "O-class byline candidates (O0001–O0156 except those admitted)",
+   "reason": "the archive's own co-authorships, heteronymic bylines, licence and non-endorsement clauses, capture records of its own author, and records of its deposits' bylines: each names a byline or co-authorship of the archive's own works and applies no archive category to the class of publication bylines Jacket2 belongs to"
+  },
+  {
+   "cands": "O0010 (#104), O0025 (#145)",
+   "reason": "bylines appended to compressed summaries and documents: the category applies to summaries and metadata, outside the class"
+  },
+  {
+   "cands": "O0075 (#729), O0131 (#1369)",
+   "reason": "'Provenance erasure is the structural severing of accountability, not the absence of a byline': a definition of the archive's category against the byline in general, applied to no class sourced for Jacket2; noted, not admitted"
+  },
+  {
+   "cands": "O0110 (#1081)",
+   "reason": "a coding scheme for institutional status and AI mediation in a study design; outside the classes"
+  },
+  {
+   "cands": "O0037 (#301), O0050 (#415), O0114 (#1140), O0083/O0125–O0127/O0139 (#832, #1211, #1216, #1217, #1400), O0163–O0164 (#1716)",
+   "reason": "avant-garde and Language poetry named in the archive's canon declarations, its liquidation of the Poet and its originals library; no field source or census field places Jacket2 in those classes (the class term matched on 'Language poetry' and 'L=A=N=G=U=A=G=E', which no field source states of Jacket2), and the composer does not apply them"
+  },
+  {
+   "cands": "O0160–O0161, O0165–O0166 (#1715, #1717)",
+   "reason": "the edition's own witness table and its note on the byline of P: the archive's own work"
+  },
+  {
+   "cands": "H0001–H0109",
+   "reason": "the citation hop from #543, #666, #940, #1717 and #1722: none of the 109 candidates names Jacket2 (the string pass found the alias in #543, #1715 and #1717 only), and none of their sentences that fell under the three class patterns applies an archive category to a class sourced for Jacket2 (those sentences were read at the O pass, above)"
+  }
+ ]
+}

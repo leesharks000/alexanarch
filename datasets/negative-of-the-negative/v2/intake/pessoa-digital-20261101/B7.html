@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+  
+
+  <script>
+    fetch('https://uni-koeln.de').then((res) => res.text()).then((text) => {
+      const doc = new DOMParser().parseFromString(text, 'text/html');
+      const css = doc.head.querySelector('link[href*=main]');
+      const svg = doc.body.querySelector('header > nav svg');
+      const { body, head } = document;
+
+      body.querySelector('header > nav svg').replaceWith(svg);
+      head.prepend(Object.assign(document.createElement('link'), {
+        href: new URL(new URL(css.href).pathname, 'https://uni-koeln.de'),
+        onload: () => requestIdleCallback(() => body.style.display = null),
+        rel: 'stylesheet',
+      }));
+    });
+  </script>
+
+  <style>
+    @keyframes fade { 0% { opacity: 0; } }
+    blockquote { font-size: revert; line-height: revert; }
+    body { display: flex; flex-direction: column; }
+    button { animation: fade 1s infinite; }
+    h1 { margin: 0; overflow: hidden; white-space: nowrap; }
+    img { border-radius: 25%; filter: grayscale(1); transition: filter 500ms; }
+    img:hover { filter: grayscale(0); }
+    li:nth-of-type(0) > button { animation-delay: calc(1s / 3 * 0); }
+    li:nth-of-type(1) > button { animation-delay: calc(1s / 3 * 1); }
+    li:nth-of-type(2) > button { animation-delay: calc(1s / 3 * 2); }
+    main { flex-grow: 1; }
+    summary { list-style: revert; }
+    summary > em { cursor: pointer; }
+    * { transition: none !important; }
+  </style>
+
+  <title>Bot Detection</title>
+
+  
+<script>
+  (function() {
+    if (!window._paq) window._paq = [];
+    var href = "https://webstats.dh.uni-koeln.de";
+    var prev = window.location.href;
+
+    window._paq.push(["setTrackerUrl", href + "/matomo.php"]);
+    window._paq.push(["setSiteId", "44"]);
+    window._paq.push(["trackPageView"]);
+    window._paq.push(["enableLinkTracking"]);
+
+    window.addEventListener("click", function(event) {
+      setTimeout(function() {
+        if (event.defaultPrevented && (event = event.target.closest("a"))) {
+          window._paq.push(["setReferrerUrl", prev]);
+          window._paq.push(["setCustomUrl", prev = event.href]);
+          window._paq.push(["setDocumentTitle", document.title]);
+          window._paq.push(["trackPageView"]);
+        }
+      });
+    }, {
+      capture: true,
+      passive: true
+    });
+
+    document.head.append(Object.assign(document.createElement("script"), {
+      src: href + "/matomo.js",
+      async: true
+    }));
+  })();
+</script></head>
+
+<body class="color-scheme-system" style="display: none">
+  <header class="c-main-navigation-container">
+    <nav class="c-main-navigation-bar">
+      <a class="c-main-navigation-logo" href="https://uni-koeln.de">
+        <svg xmlns="http://www.w3.org/2000/svg"></svg>
+      </a>
+
+      <h1>Bot Detection</h1>
+
+      <ul class="c-main-navigation-action-buttons o-list-bare">
+        <li>
+          <button class="c-main-navigation-action-buttons__item"></button>
+        </li>
+        <li>
+          <button class="c-main-navigation-action-buttons__item"></button>
+        </li>
+        <li>
+          <button class="c-main-navigation-action-buttons__item"></button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="c-page-header-simple">
+      <div class="c-page-header-simple__image-wrapper">
+      </div>
+    </div>
+    <section class="o-section">
+      <div class="o-container">
+        <div class="o-container__article">
+          <h2 id="title">Checking you are not a bot</h2>
+
+          
+            <noscript><p>Sadly, you may need to enable JavaScript to get past this challenge. This is required because AI companies have changed the social contract around how website hosting works.</p></noscript>
+          
+
+          <p>
+            <strong id="status">
+              
+                Loading challenge
+                default-challenge
+              
+            </strong>
+          </p>
+
+          <details>
+            <summary><em>Why am I seeing this?</em></summary>
+            <blockquote>
+<p>
+	You are seeing this because the administrator of this website has set up <a href="https://git.gammaspectra.live/git/go-away">go-away</a> 
+	to protect the server against the scourge of <a href="https://thelibre.news/foss-infrastructure-is-under-attack-by-ai-companies/">AI companies aggressively scraping websites</a>.
+</p>
+<p>
+	Mass scraping can and does cause downtime for the websites, which makes their resources inaccessible for everyone.
+</p>
+<p>
+	Please note that some challenges requires the use of modern JavaScript features and some plugins may disable these.
+	Disable such plugins for this domain (for example, JShelter) if you encounter any issues.
+</p>
+</blockquote>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="c-footer">
+    <div class="c-footer__global">
+      <div class="o-container">
+        <nav class="c-footer__legal">
+          <h3>Digital Humanities at the University of Cologne</h3>
+          <ul class="c-footer__list o-list-inline">
+            <li class="o-list-inline__item">
+              <a href="https://cceh.uni-koeln.de">
+                Cologne Center for eHumanities
+              </a>
+            </li>
+            <li class="o-list-inline__item">
+              <a href="https://dch.uni-koeln.de">
+                Data Center for the Humanities
+              </a>
+            </li>
+            <li class="o-list-inline__item o-list-inline__item--border">
+              <a href="https://idh.uni-koeln.de">
+                Department for Digital Humanities
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="c-footer__base">
+      <div class="o-container">
+        request_id df2b66e09fa1ead92f0ab1ef4bfddb44, pesky bots please
+        <a href="https://git.gammaspectra.live/git/go-away">go-away</a>
+      </div>
+    </div>
+  </footer>
+
+  
+    <script async type="module" src="/.well-known/.git.gammaspectra.live/git/go-away/cmd/go-away/challenge/default-challenge/script.mjs?cacheBust=JJBUR5AOT1YbSCfUb_jl5w"></script>
+  
+<noscript style="display: none"><img
+  src="https://webstats.dh.uni-koeln.de/matomo.php?idsite=44&rec=1"
+  referrerpolicy="unsafe-url"
+/></noscript></body>
+
+</html>

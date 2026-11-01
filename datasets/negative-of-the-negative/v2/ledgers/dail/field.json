@@ -1,0 +1,905 @@
+{
+ "row": "dail",
+ "address": "Database of AI Litigation",
+ "addresses": [
+  "Database of AI Litigation"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked) or the card's snippet for the script-rendered page; 35/35 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)) in two pools, marked by origin and by pool. B_D, the disclosed pool: every card on T's rail (B1 the database's GW Blogs page, also the census's own page gwu-dail--home, carried once; B2 Fisher Phillips's AI Litigation Tracker; B3 Damien Charlotin's AI Hallucination Cases Database; B4 etidail.com, a second address under DAIL's name, script-rendered; B5 Hogan Lovells Cadwalader's AI Litigation Case Law Tracker); T's body names the four trackers, all on the rail, and no other source. B_R, the reference pool: the entity's own page (B1, in B_D), its Wikipedia record (B6, no article), and no census third-party source (the census's evidence is all basis 'operator').",
+ "lineage_note": "Lineages: Wikipedia: no article; a second address: etidail.com; another record: Fisher Phillips's AI Litigation Tracker; another record: Hogan Lovells Cadwalader's AI Litigation Case Law Tracker; another record: the AI Hallucination Cases database; authorship and inventorship in the field's records; interface and suggestions; limit: under development; method: from complaint forward; name, operator and host; scope; the companion database of opinions; what it holds: litigation involving AI",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1 (and the census's own page gwu-dail--home, carried once, in B_D)",
+   "card": "The George Washington University — DAIL – The Database of AI Litigation – Ethical Tech Initiative - GW Blogs",
+   "url": "https://blogs.gwu.edu/law-eti/ai-litigation-database/",
+   "kind": "the database's page on the Ethical Tech Initiative's GW Blogs site; the census's own page gwu-dail--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B1.html",
+     "sha256": "0093afaa693252fb6b172df7246a9a286a89e91f65125e15c3e89a8730e387d4"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B1.txt",
+     "sha256": "ddbcd76663e7c4b8c9930b80a52a1c663296561074a7a43124f384831b1e0723"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T04:08:00Z (the census's fetch); refetched 2026-11-01T06:26:56Z",
+    "http": 200,
+    "url": "https://blogs.gwu.edu/law-eti/ai-litigation-database/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B1.html",
+    "raw_sha256": "0093afaa693252fb6b172df7246a9a286a89e91f65125e15c3e89a8730e387d4",
+    "census_copy": {
+     "src": "gwu-dail--home",
+     "sha256": "0093afaa693252fb6b172df7246a9a286a89e91f65125e15c3e89a8730e387d4",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:08:00Z",
+     "agrees": true
+    },
+    "refetch": {
+     "file": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B1-refetch.html",
+     "sha256": "e4286c1c28dd8f675ba3cfe1c5e9451631bec05eed19d4ac291736ad956eb2d1",
+     "at": "2026-11-01T06:26:56Z",
+     "http": 200,
+     "differs_by": "the server timestamp in the admin_message script"
+    }
+   },
+   "names_operator": "yes ('Ethical Tech Initiative'; George Washington University in the footer, 'Contact GW')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Copied from the census's saved copy (sources/gwu-dail--home.html.gz, gunzipped; sha256 matching the manifest, 0093afaa…). Refetched at 06:26:56Z with the census agent (B1-refetch.html, sha256 e4286c1c…): the bytes differ only in the server's timestamp inside the admin_message script ('time' 1793505768 against 1793512403); the extracted text differs only in whitespace before a full stop ('available here .' in the census text). The card and the census's own page are one page, carried once, as a card.",
+   "also_origin": "own_page",
+   "surfaced_by_T": [
+    {
+     "slug": "database-of-ai-litigation-aio-20261101",
+     "card": 1
+    }
+   ],
+   "card_title": "DAIL – The Database of AI Litigation – Ethical Tech Initiative - GW Blogs",
+   "card_snippet": "DAIL – The Database of AI Litigation. The Database of AI Litigation presents information about ongoing and completed litigation involving artificial intelligenc...",
+   "card_site": "The George Washington University",
+   "claims": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10"
+   ]
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2",
+   "card": "Fisher Phillips LLP — AI Litigation Tracker | Fisher Phillips LLP",
+   "url": "https://www.fisherphillips.com/en/resources-and-innovation/trackers-and-maps/ai-litigation-tracker",
+   "kind": "a law firm's tracker page",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B2.html",
+     "sha256": "769b2a8485277c6f9d4bf8ffa2d05fb88e7eba5f02293397b51fab7f6903ee69"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B2.txt",
+     "sha256": "573a26f666501035af88e917907f3a2f384dc3653ac437bd32877af6c342a7bc"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:34Z",
+    "http": 200,
+    "url": "https://www.fisherphillips.com/en/resources-and-innovation/trackers-and-maps/ai-litigation-tracker",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B2.html",
+    "raw_sha256": "769b2a8485277c6f9d4bf8ffa2d05fb88e7eba5f02293397b51fab7f6903ee69"
+   },
+   "names_operator": "yes ('Fisher & Phillips LLP')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title and site; the older address /en/innovations-center/ai-litigation-tracker.html redirects to it (HTTP 200 at the final URL, the two fetches byte-identical). Title verbatim the card's.",
+   "surfaced_by_T": [
+    {
+     "slug": "database-of-ai-litigation-aio-20261101",
+     "card": 2
+    }
+   ],
+   "card_title": "AI Litigation Tracker | Fisher Phillips LLP",
+   "card_snippet": "The AI Litigation Tracker provides a comprehensive view of litigation matters filed across all 50 states that involve the use of AI technologies, such as Gen AI...",
+   "card_site": "Fisher Phillips LLP",
+   "claims": [
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15"
+   ]
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 3",
+   "card": "Damien Charlotin — AI Hallucination Cases Database - Damien Charlotin",
+   "url": "https://www.damiencharlotin.com/hallucinations/",
+   "kind": "an individual researcher's database page (the first page of the case table)",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B3.html",
+     "sha256": "cc6e6fecd84aa48932cffb946dcd8d726f9ffe0d0e19dd23f95b7fc3c13d2aa4"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B3.txt",
+     "sha256": "0205843985fe316f80fa8d076a92fb1699cb4d9d1901bddf036ff903b0330108"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:34Z",
+    "http": 200,
+    "url": "https://www.damiencharlotin.com/hallucinations/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B3.html",
+    "raw_sha256": "cc6e6fecd84aa48932cffb946dcd8d726f9ffe0d0e19dd23f95b7fc3c13d2aa4"
+   },
+   "names_operator": "yes ('© 2026 Damien Charlotin.')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch on the card's title; the page's title 'AI Hallucination Cases Database – Damien Charlotin'. The case table is paged (page 1 of 45 saved).",
+   "surfaced_by_T": [
+    {
+     "slug": "database-of-ai-litigation-aio-20261101",
+     "card": 3
+    }
+   ],
+   "card_title": "AI Hallucination Cases Database - Damien Charlotin",
+   "card_snippet": "AI Hallucination Cases This database tracks legal decisions 1 Notably, this does not cover mere allegations of hallucinations, but only cases where the court or...",
+   "card_site": "Damien Charlotin",
+   "claims": [
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22"
+   ]
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 4",
+   "card": "etidail.com — DAIL – the Database of AI Litigation",
+   "url": "https://etidail.com/",
+   "kind": "a second address under the database's name; a script-rendered page",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B4.html",
+     "sha256": "7f3bcfccae43548cf6a0aa2834cee9495c6c5bd5d1cb2342720e21e9fdebb937"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B4.txt",
+     "sha256": "5cc1c2dd33d471366c83a2946a8e618340829e17c0f088a387885c35bbda1fb5"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:33Z",
+    "http": 200,
+    "url": "https://etidail.com/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B4.html",
+    "raw_sha256": "7f3bcfccae43548cf6a0aa2834cee9495c6c5bd5d1cb2342720e21e9fdebb937"
+   },
+   "names_operator": "yes, in the page title ('Ethical Tech Initiative')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Script-rendered: the served HTML (1031 bytes) is an empty application shell ('You need to enable JavaScript to run this app.') whose only text is its title, 'DAIL – the Database of AI Litigation – Ethical Tech Initiative'. Recorded so (brief, Substitutions 2); the script bundle was not fetched or read. https://www.etidail.com/ fails certificate verification (the certificate does not name the www host); not fetched with verification disabled. The card's snippet stands as the page's only text beyond its title (F24).",
+   "surfaced_by_T": [
+    {
+     "slug": "database-of-ai-litigation-aio-20261101",
+     "card": 4
+    }
+   ],
+   "card_title": "DAIL – the Database of AI Litigation",
+   "card_snippet": "DAIL - the Database of AI Litigation This database presents information about ongoing and completed litigation involving artificial intelligence, including mach...",
+   "card_site": "etidail.com",
+   "card_note_registry": "a second address under the database's name, not in the census row",
+   "claims": [
+    "F23",
+    "F24"
+   ]
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 5",
+   "card": "Hogan Lovells Cadwalader — AI Litigation Case Law Tracker | Explore global AI-related cases | Hogan Lovells Cadwalader",
+   "url": "https://digital-client-solutions.hlc.com/resources/ai-litigation-case-law-tracker",
+   "kind": "a law firm's tracker page",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B5.html",
+     "sha256": "3fb9e109aa4549123d4183a3fa9f3b2dca9e50f3a940507ea3848bc1121e5fc6"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B5.txt",
+     "sha256": "30e88c58619ce4ee490e77a89dda947fcee24da0ed6c66d7b5b75853d797b03f"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:56Z",
+    "http": 200,
+    "url": "https://digital-client-solutions.hlc.com/resources/ai-litigation-case-law-tracker",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B5.html",
+    "raw_sha256": "3fb9e109aa4549123d4183a3fa9f3b2dca9e50f3a940507ea3848bc1121e5fc6"
+   },
+   "names_operator": "yes ('Hogan Lovells Cadwalader International LLP')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL by WebSearch (digital-client-solutions.hoganlovells.com/resources/ai-litigation-case-law-tracker/generate-report); the tracker's address without /generate-report fetched, redirected to the hlc.com host. Title verbatim the card's.",
+   "surfaced_by_T": [
+    {
+     "slug": "database-of-ai-litigation-aio-20261101",
+     "card": 5
+    }
+   ],
+   "card_title": "AI Litigation Case Law Tracker | Explore global AI-related cases | Hogan Lovells Cadwalader",
+   "card_snippet": "AI Litigation Case Law Tracker Explore our global digital solution for monitoring AI-related cases across key jurisdictions. Visit the AI Hub Generate report My...",
+   "card_site": "Hogan Lovells Cadwalader",
+   "claims": [
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33"
+   ]
+  },
+  {
+   "id": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "the entity's Wikipedia record: no article",
+   "card": "Wikipedia — no article ('Database of AI Litigation'; 'DAIL')",
+   "url": "https://en.wikipedia.org/wiki/Database_of_AI_Litigation",
+   "kind": "the record of an absence",
+   "files": {
+    "B6-page-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-page-404.html",
+     "sha256": "7ef7dfc9ab883d5d50b44a607ffade1c4351f5a4e9f4f34330f7e9bf97b520c6"
+    },
+    "B6-page-404.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-page-404.txt",
+     "sha256": "4e21a7b6381e1fa0937caa35e9eae7aa499456c0b71489f5cec2a46888732b41"
+    },
+    "B6-raw-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-raw-404.html",
+     "sha256": "19784c9f306f4a3936cb7b982fc1c554c7ce3711e3ea36572316bee341713208"
+    },
+    "B6-DAIL-raw-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-DAIL-raw-404.html",
+     "sha256": "770a26202227285fba0fe72c75de1b652ceda6b19d7f38ed59f88cbd2ee23870"
+    },
+    "B6-DAIL-page-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-DAIL-page-404.html",
+     "sha256": "3a5d3e35edeb1e8954a49fdab5756f85b8b108a6ca921956b6470629dadc7530"
+    },
+    "B6-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-search.html",
+     "sha256": "1421d3b722bb6838cd4efb966cc01f4f9b6e4dba5d70b6018869582061d4d466"
+    },
+    "B6-search.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-search.txt",
+     "sha256": "e23114f0187787e6700aaa2e316eea761061dde9d9329758ced9825a7b2b0a5f"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:57Z–06:26:58Z",
+    "http": 404,
+    "url": "https://en.wikipedia.org/wiki/Database_of_AI_Litigation",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/dail-20261101/B6-page-404.html",
+    "raw_sha256": "7ef7dfc9ab883d5d50b44a607ffade1c4351f5a4e9f4f34330f7e9bf97b520c6"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "action=raw for 'Database_of_AI_Litigation' and 'DAIL': HTTP 404; the rendered pages: HTTP 404 ('Wikipedia does not have an article with this exact name.'); no redirect from either name. Full-text search for the quoted phrase \"Database of AI Litigation\" (main namespace): HTTP 200, 'There were no results matching the query.'",
+   "surfaced_by_T": [],
+   "not_surfaced_note": "B_R: admitted on the operator's ruling of 2026-10-29; not surfaced by T",
+   "claims": [
+    "F34",
+    "F35"
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "page title and heading",
+   "quote": "DAIL – The Database of AI Litigation – Ethical Tech Initiative",
+   "claim": "the database's name, under the Ethical Tech Initiative's site title",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "name, operator and host",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "site header (the Initiative's description)",
+   "quote": "We are an interdisciplinary collaboration: where law and ethics meet computer science and engineering, media and public affairs, and social entrepreneurship.",
+   "claim": "the operator describes itself as an interdisciplinary collaboration of law and ethics with computer science and engineering, media and public affairs, and social entrepreneurship",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "name, operator and host",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "DAIL – The Database of AI Litigation, ¶1 s1",
+   "quote": "The Database of AI Litigation presents information about ongoing and completed litigation involving artificial intelligence and related topics.",
+   "claim": "what the database holds: ongoing and completed litigation involving artificial intelligence and related topics",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it holds: litigation involving AI",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "DAIL – The Database of AI Litigation, ¶1 s2",
+   "quote": "It covers cases from complaint forward - as soon as we learn of them - whether or not they generate published decisions.",
+   "claim": "the unit and method: a case entered from complaint forward, as soon as the operator learns of it, whether or not it generates a published decision",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "method: from complaint forward",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "DAIL – The Database of AI Litigation, ¶1 s3",
+   "quote": "It is intended to be broad in scope, covering everything from algorithms used in hiring and credit and criminal sentencing decisions to generative AI training and AI companion liability.",
+   "claim": "the intended scope: from algorithms in hiring, credit and criminal sentencing decisions to generative AI training and AI companion liability",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": true,
+   "lineage": "scope",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "DAIL – The Database of AI Litigation, ¶1 s4",
+   "quote": "A companion database of issued opinions is available here .",
+   "claim": "a companion database holds issued opinions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the companion database of opinions",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "DAIL – The Database of AI Litigation, ¶1 s5",
+   "quote": "While still under development, it will continue to expand over time.",
+   "claim": "the stated limit: the database is still under development and will expand",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "limit: under development",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "tabs below the description",
+   "quote": "Scope Guide Credits Suggestions",
+   "claim": "the page's tabs: Scope, Guide, Credits, Suggestions",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "interface and suggestions",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "site menu, Projects",
+   "quote": "Projects Initiatives DAIL – the Database of AI Litigation Reproductive Data Privacy",
+   "claim": "DAIL is listed among the Initiative's projects, beside Reproductive Data Privacy",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "name, operator and host",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "Website Privacy Notice Contact GW Accessibility Terms of Use Copyright",
+   "claim": "the page carries George Washington University's footer",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "name, operator and host",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 ddbcd76663e7c4b8…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "page body ¶1 s1",
+   "quote": "The AI Litigation Tracker provides a comprehensive view of litigation matters filed across all 50 states that involve the use of AI technologies, such as Gen AI, resume screeners, electronic monitoring, notetaking, call recording, and other AI tools.",
+   "claim": "Fisher Phillips's AI Litigation Tracker: litigation matters filed across all 50 states involving AI technologies (Gen AI, resume screeners, electronic monitoring, notetaking, call recording, other AI tools)",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "another record: Fisher Phillips's AI Litigation Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 573a26f666501035…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "page body ¶1 s2",
+   "quote": "The tracker includes all matters filed since February 25, 2021.",
+   "claim": "its period: all matters filed since 25 February 2021",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "another record: Fisher Phillips's AI Litigation Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 573a26f666501035…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "page body ¶1 s3",
+   "quote": "The tracker is searchable by state, industry, type of claim, and whether matters are filed in state or federal court.",
+   "claim": "its search: by state, industry, type of claim and state or federal court",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Fisher Phillips's AI Litigation Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 573a26f666501035…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "page body ¶1 s6",
+   "quote": "For clients, it serves as a critical tool to understand the progressive nature of this litigation trend.",
+   "claim": "its stated audience: the firm's clients",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Fisher Phillips's AI Litigation Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 573a26f666501035…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "© 2026 Fisher & Phillips LLP. All Rights Reserved",
+   "claim": "its operator: the law firm Fisher & Phillips LLP",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Fisher Phillips's AI Litigation Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 573a26f666501035…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "AI Hallucination Cases, ¶1",
+   "quote": "This database tracks legal decisions … in cases where generative AI produced hallucinated content – typically fake citations, but also other types of AI-generated arguments.",
+   "claim": "Damien Charlotin's AI Hallucination Cases database: legal decisions in cases where generative AI produced hallucinated content, typically fake citations",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "AI Hallucination Cases, note 1",
+   "quote": "Notably, this does not cover mere allegations of hallucinations, but only cases where the court or tribunal has explicitly found (or implied) that a party relied on hallucinated content or material.",
+   "claim": "its admission rule: only cases where the court or tribunal found or implied reliance on hallucinated content",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "AI Hallucination Cases, ¶1",
+   "quote": "It does not track the (necessarily wider) universe of all fake citations or use of AI in court filings.",
+   "claim": "its stated limit: it does not track all fake citations or all use of AI in court filings",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "AI Hallucination Cases, ¶2",
+   "quote": "While seeking to be exhaustive (2246 cases identified so far), it is a work in progress and will expand as new examples emerge.",
+   "claim": "its count and limit: 2246 cases so far, a work in progress",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "2026-10-31 (the page's 'Last updated')",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "note 1, the exception",
+   "quote": "As an exception, the database also covers some judicial decisions where AI use was alleged but not confirmed. This is a judgment call on my part.",
+   "claim": "its exception: some decisions where AI use was alleged and not confirmed, by its compiler's judgment",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "date and licence block",
+   "quote": "Last updated: 31 October 2026 … CC BY 4.0 — free to reuse, including commercially, with attribution.",
+   "claim": "last updated 31 October 2026; licensed CC BY 4.0",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "2026-10-31 (the page's 'Last updated')",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "locus": "filters: State, Party",
+   "quote": "USA (1517) … Lawyer (887) … Pro Se Litigant (1296)",
+   "claim": "its holdings by filter: 1517 US cases; 887 involving lawyers and 1296 pro se litigants",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: the AI Hallucination Cases database",
+   "date": "2026-10-31 (the page's 'Last updated')",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 0205843985fe316f…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "page title (the only text the page serves without a script)",
+   "quote": "DAIL – the Database of AI Litigation – Ethical Tech Initiative",
+   "claim": "a second address, etidail.com, carries the database's name under the Ethical Tech Initiative",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "a second address: etidail.com",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 5cc1c2dd33d47136…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B4",
+   "origin": "card",
+   "locus": "card snippet (T's rail, card 4)",
+   "quote": "DAIL - the Database of AI Litigation This database presents information about ongoing and completed litigation involving artificial intelligence, including mach...",
+   "claim": "the second address's text, as the card gives it: ongoing and completed litigation involving artificial intelligence, 'including mach...'",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it holds: litigation involving AI",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "the card snippet as the registry's cite_list carries it (card 4), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "page head",
+   "quote": "Explore our global digital solution for monitoring AI-related cases across key jurisdictions.",
+   "claim": "Hogan Lovells Cadwalader's AI Litigation Case Law Tracker: a global solution for monitoring AI-related cases across key jurisdictions",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Hogan Lovells Cadwalader's AI Litigation Case Law Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "page body ¶1",
+   "quote": "Our AI Litigation Case Law Tracker monitors key AI-related cases involving IP, copyright, media, commercial, consumer, data protection, and other laws across global jurisdictions.",
+   "claim": "its scope: key AI-related cases under IP, copyright, media, commercial, consumer, data protection and other laws, across global jurisdictions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "another record: Hogan Lovells Cadwalader's AI Litigation Case Law Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "page body ¶1",
+   "quote": "Explore the tracker to find case descriptions, claims raised, summary judgments, key takeaways, and other resources.",
+   "claim": "what an entry holds: case descriptions, claims raised, summary judgments, key takeaways",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Hogan Lovells Cadwalader's AI Litigation Case Law Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "filter: Jurisdiction",
+   "quote": "Australia China Denmark EU EU (CJEU) France Germany India Italy Japan Netherlands South Korea United Kingdom United States of America",
+   "claim": "its jurisdictions: fourteen, from Australia to the United States",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Hogan Lovells Cadwalader's AI Litigation Case Law Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "filter: Key issues",
+   "quote": "AI-generated article originality",
+   "claim": "a key issue it indexes: the originality of an AI-generated article",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship and inventorship in the field's records",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "filter: Key issues",
+   "quote": "Inventorship",
+   "claim": "a key issue it indexes: inventorship",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship and inventorship in the field's records",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "related insights",
+   "quote": "UK Supreme Court rejects Thaler’s appeal and finds AI not an inventor",
+   "claim": "a related insight: the UK Supreme Court found AI not an inventor in Thaler's appeal",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship and inventorship in the field's records",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "related insights",
+   "quote": "Copyright provisions in the new Italian AI-law: reinforcing human authorship and text and data mining (TDM) exceptions",
+   "claim": "a related insight: Italy's AI law reinforces human authorship",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "authorship and inventorship in the field's records",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B5",
+   "origin": "card",
+   "locus": "footer",
+   "quote": "This website is operated by Hogan Lovells Cadwalader International LLP … Attorney advertising. Prior results do not guarantee a similar outcome.",
+   "claim": "its operator, the law firm Hogan Lovells Cadwalader International LLP, and the page's stated character as attorney advertising",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another record: Hogan Lovells Cadwalader's AI Litigation Case Law Tracker",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "pool": "B_D",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 30e88c58619ce4ee…), whitespace-normalised; multi-part quote joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "the article page for the name (HTTP 404)",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "English Wikipedia has no article titled 'Database of AI Litigation' (nor 'DAIL')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Wikipedia: no article",
+   "date": "2026-11-01 (the response)",
+   "pool": "B_R",
+   "quote_ok": true,
+   "checked_against": "saved text B6-page-404.txt (sha256 4e21a7b6381e1fa0…), B6-search.txt (sha256 e23114f0187787e6…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "locus": "full-text search for the quoted name",
+   "quote": "There were no results matching the query.",
+   "claim": "no English Wikipedia page contains the phrase 'Database of AI Litigation'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Wikipedia: no article",
+   "date": "2026-11-01 (the response)",
+   "pool": "B_R",
+   "quote_ok": true,
+   "checked_against": "saved text B6-page-404.txt (sha256 4e21a7b6381e1fa0…), B6-search.txt (sha256 e23114f0187787e6…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "The George Washington University — DAIL – The Database of AI Litigation – Ethical Tech Initiative - GW Blogs",
+  "B2": "Fisher Phillips LLP — AI Litigation Tracker | Fisher Phillips LLP",
+  "B3": "Damien Charlotin — AI Hallucination Cases Database - Damien Charlotin",
+  "B4": "etidail.com — DAIL – the Database of AI Litigation",
+  "B5": "Hogan Lovells Cadwalader — AI Litigation Case Law Tracker | Explore global AI-related cases | Hogan Lovells Cadwalader",
+  "B6": "Wikipedia — no article ('Database of AI Litigation'; 'DAIL')"
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "row": "isni",
+ "address": "ISNI",
+ "entity": "ISNI, the International Standard Name Identifier (ISO 27729), the ISO certified global standard number for identifying the contributors to creative works and those active in their distribution, assigned to public identities (individuals, pseudonyms, organizations or groups) by the ISNI International Agency (ISNI-IA) through registration agencies; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/isni)",
+ "row_type": "C (a public entity on which the archive bears: an identity registry and ISO standard identifier for public names of contributors; an entity of the leesharks.com apparatus authorship census, host_relation 'infrastructure')",
+ "aliases": [
+  {
+   "pattern": "\\bISNIs?\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bInternational Standard Name Identifiers?\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bISO 27729\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bISNI[- ]IA\\b|\\bISNI International Agency\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bisni\\.org\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "name identifiers and name authority files: persistent identifiers that disambiguate the names of contributors",
+   "pattern": "\\b(name (authority|authorities|identifiers?|disambiguation)|authority (files?|control|records?)|persistent (unique )?identif(ier|iers|ying number)s?|author identifiers?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (isni.org home: 'a persistent unique identifying number in order to resolve the problem of name ambiguity in search and discovery'); B2 (Wikipedia: 'an identifier system for uniquely identifying the public identities of contributors'; 'The system is based primarily on the Virtual International Authority File (VIAF) service'); B4 (BISG: 'disambiguate authors or contributors with the same or similar names'). The census's area for the entity, 'attribution-and-credit' ('Attribution, credit and identity infrastructure: how contributions and names are recorded, disclosed and resolved'), its record_type 'registry' and evidence_kind 'identity registry'."
+  },
+  {
+   "term": "pseudonyms and alternative names of an author, recorded as identities",
+   "pattern": "\\b(pseudonym(s|ous)?|pen[- ]names?|noms? de plume|alternative names?)\\b",
+   "flags": "i",
+   "basis": "field: B2 (Wikipedia: 'The ISNI allows a single identity (such as an author's pseudonym or the imprint used by a publisher ) to be identified using a unique number'; 'If an author has published under several different names or pseudonyms, each such name will receive its own ISNI'); B4 (BISG: 'resolving pseudonyms, alternative names, and multiple presentations (scripts, spellings) of a name'). The census's second area for the entity, 'heteronymy' ('Heteronymy, persona and pseudonymous authorship: distinct named authorial functions, human and machine-participating'), and its record.name."
+  },
+  {
+   "term": "attribution of a work to its creator",
+   "pattern": "\\battribut(ed|ion) (of (a|the|each) (work|works) )?to (its|their|the) (creator|author)s?\\b",
+   "flags": "i",
+   "basis": "field: B1 (isni.org home: 'so that every published work can be unambiguously attributed to its creator wherever that work is described'); B4 (BISG: 'An ISNI can also be used to help connect works done by a single author under different or multiple names'). The census's record.keeps and record.function for the entity."
+  }
+ ],
+ "classes_note": "Three classes, each stated by a field source at the locus given and each the census's own area, record type or record field for the entity: (1) name identifiers and authority files (B1, B2, B4; census area 'attribution-and-credit', record_type 'registry'); (2) pseudonyms and alternative names recorded as identities (B2, B4; census area 'heteronymy', record.name); (3) attribution of a work to its creator (B1, B4; census record.keeps, record.function). The census's anchors, #940 (EA-HETERONYMY-01, AXN:03B8) and #1722 (AI Calls You Fake, AXN:0B2A), are read at the passages that bear on the entity's kind (name authorities and identifiers, pseudonyms and heteronyms, collective authorship, machine participation, certification of human authorship, the existence tax), by BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 6. The archive's categories civil-name reduction (#940) and the existence tax (#1722) are applied by those deposits to classes (1) and (2) where their sentences do so; the string pass finds candidates and reading admits them. VIAF, ORCID and Wikidata are the census's own neighbouring rows (relations: uses, neighbour, used_by) and are not aliases of the entity.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 AGGREGATOR, LABOR and LEFT briefs; address \"ISNI\" (isni-aio-20261101, OBS-ed9355b7e61f, ADDR-0a3d746be9bf), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#209, #261, #317, #666, #755, #833, #940, #1094, #1437, #1530, #1604, #1722).",
+ "hop_from": [
+  209,
+  261,
+  317,
+  666,
+  755,
+  833,
+  940,
+  1094,
+  1437,
+  1530,
+  1604,
+  1722
+ ]
+}

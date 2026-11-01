@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LOD Cloud</title>
+        <base href="/">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/tags-input.css">
+        <link href="/css/app.css" rel="stylesheet">
+        <script src="/tags-input.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">The Linked Open Data Cloud</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/datasets">Browse</a></li>
+						<li><a href="/add-dataset">Submit a dataset</a></li>
+                        <li routerLinkActive="active"><a href="/#diagram">Diagram</a></li>
+                        <li><a href="#subclouds">Subclouds</a></li>
+                        <li routerLinkActive="active"><a href="/#about">About</a></li>
+                        
+                        <!--<li><a (click)="showLoadDatasetsBox($event)" href="#" >+ Datasets from file</a></li>-->
+
+
+                        <!--<div id="googleBtn">Google</div>-->
+
+                        <hr>	
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="container" id="app">
+            <div align="left" class="row">
+    <div class="col-md-10">
+        <h1>{{dataset.title}} <a v-bind:href="'/edit-dataset/' + dataset._id" class="edit-link">(Edit)</a></h1>
+    </div>
+    <div class="col-md-2 stars">
+        <img v-bind:src="star_img(dataset)" v-bind:title="star_explain(dataset)" id="stars_img"/>
+    </div>
+</div>
+
+<h3>About this dataset</h3>
+<div class="row">
+    <div class="col-md-10">
+        {{dataset.description.en}}
+    </div>
+    <div class="col-md-2" v-if="dataset.image">
+        <img v-bind:src="dataset.image" v-bind:title="dataset.title" class="dataset-img"/>
+    </div>
+</div>
+
+<div class="license" v-if="dataset.license">
+    License: <a v-bind:href="dataset.license">{{dataset.license}}</a>
+</div>
+
+<div class="keywords">
+    <span class="badge badge-success">{{dataset.domain}}</span>
+    <span class="badge badge-primary" v-for="keyword in dataset.keywords">{{keyword}}
+    </span>
+</div>
+
+<h3>Contact Details</h3>
+<div v-if="dataset.contact_point" class="contactPoint">
+    Contact Point: <a v-bind:href="'mailto:' + dataset.contact_point.email">{{dataset.contact_point.name}}</a>
+</div>
+<div v-if="dataset.website" class="website">
+    Website: <a v-bind:href="dataset.website">{{dataset.website}}</a>
+</div>
+
+<h3>Download Links</h3>
+
+<div v-if="dataset.full_download.length>0">
+    <h4>Full Downloads</h4>
+    <ul>
+        <li v-for="fd in dataset.full_download">
+            <img v-if="fd.status && fd.status != 'OK'" src="/img/warn.png" 
+                 v-bind:title="'Resource may not be available:' + fd.status"
+                 class="warn-icon"/>
+            <a v-bind:href="fd.download_url">
+                <span v-if="fd.title">{{fd.title}}</span>
+                <span v-else>Download</span>
+            </a>
+            <div v-for="mirror in fd.mirror">
+                <a href="/ipfs-how-to.html">
+                    <img src="/img/ipfs.png" title="IPFS link available" width="32"/></a>
+                <tt>{{mirror.substring(5)}}</tt>
+            </div>
+            <span v-if="fd.description">({{fd.description}})</span>
+        </li>
+    </ul>
+</div>
+
+<div v-if="dataset.sparql.length>0">
+    <h4>SPARQL Endpoints</h4>
+    <ul>
+        <li v-for="fd in dataset.sparql">
+            <img v-if="fd.status && fd.status != 'OK'" src="/img/warn.png" 
+                 v-bind:title="'Resource may not be available: ' + fd.status"
+                 class="warn-icon"/>
+            <a v-bind:href="fd.access_url">
+                <span v-if="fd.title">{{fd.title}}</span>
+                <span v-else>Access SPARQL endpoint</span>
+            </a>
+            <span v-if="fd.description">({{fd.description}})</span>
+        </li>
+    </ul>
+</div>
+
+<div v-if="dataset.example.length>0">
+    <h4>Examples</h4>
+    <ul>
+        <li v-for="fd in dataset.example">
+            <img v-if="fd.status && fd.status != 'OK'" src="/img/warn.png" 
+                 v-bind:title="'Resource may not be available: ' + fd.status"
+                 class="warn-icon"/>
+            <a v-bind:href="fd.access_url">
+                <span v-if="fd.title">{{fd.title}}</span>
+                <span v-else>Download</span>
+            </a>
+            <span v-if="fd.description">({{fd.description}})</span>
+        </li>
+    </ul>
+</div>
+
+
+<div v-if="dataset.other_download.length>0">
+    <h4>Other downloads</h4>
+    <ul>
+        <li v-for="fd in dataset.other_download">
+            <img v-if="fd.status && fd.status != 'OK'" src="/img/warn.png" 
+                 v-bind:title="'Resource may not be available: ' + fd.status"
+                 class="warn-icon"/>
+            <a v-bind:href="fd.access_url">
+                <span v-if="fd.title">{{fd.title}}</span>
+                <span v-else>Download</span>
+            </a>
+            <div v-for="(mirror, index) in fd.mirror">
+                <a href="/ipfs-how-to.html">
+                    <img src="/img/ipfs.png" title="IPFS link available" width="32"/></a>
+                <tt>{{mirror.substring(5)}}</tt>
+            </div>
+            <span v-if="fd.description">({{fd.description}})</span>
+
+        </li>
+    </ul>
+</div>
+
+<h3>Data Facts</h3>
+
+<table class="table table-striped">
+    <tr>
+        <td>Total size</td>
+        <td class="triple_count">{{commaFormatted(dataset.triples)}}<span class="triples"> triples</span></td>
+    </tr>
+    <tr v-if="dataset.namespace">
+        <td>Namespace</td>
+        <td>{{dataset.namespace}}</td>
+    </tr>
+    <tr v-if="dataset.doi">
+        <td>DoI</td>
+        <td>{{dataset.doi}}</td>
+    </tr>
+    <tr v-for="l in sort_links(dataset.links)">
+        <td>Links to <a v-bind:href="'/dataset/' + l.target">{{l.target}}</a></td>
+        <td class="triple_count">{{commaFormatted(l.value)}}<span class="triples"> triples</span></td>
+    </tr>
+</table>
+
+<h3 v-if="dataset.show_luzzu">Data Quality Estimation by <a href="http://luzzu.adaptcentre.ie/">Luzzu</a></h3>
+
+<canvas id="myChart"></canvas>
+
+
+<b>Download metadata as:</b>
+<ul>
+    <li><a v-bind:href="'/json/' + dataset.identifier">JSON</a></li>
+    <li><a v-bind:href="'/rdf/' + dataset.identifier + '?format=rdf'">RDF/XML</a></li>
+    <li><a v-bind:href="'/rdf/' + dataset.identifier + '?format=ttl'">Turtle</a></li>
+    <li><a v-bind:href="'/rdf/' + dataset.identifier + '?format=nt'">N-Triples</a></li>
+</ul>
+
+        </div>
+        <!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+		
+		<script src="/js/vue.js"></script>
+                <script src="/js/vue-resource.js"></script>
+                <script src="/js/bootstrap.bundle.min.js"></script>
+                <script src="/js/jquery.min.js"></script>
+                <script type="text/javascript" src="/js/Chart.bundle.js"></script>
+                <script src="/js/luzzu.js"></script>
+		<script src="/js/axios.min.js"></script>
+        <script>
+            function data() { return {dataset:{"_id":"viaf","identifier":"viaf","doi":"","image":"","links":[{"target":"dbpedia","value":"10000"},{"target":"dnb-gemeinsame-normdatei","value":"4000000"}],"keywords":["bibliographic","format-owl","format-rdf","format-skos","library","lld","lod","lodcloud-diagram-2011-09-19","lodcloud-diagram-2014-08-30","no-deref-vocab","no-license-metadata","no-provenance-metadata","no-vocab-mappings","publications","published-by-producer"],"license":"http://www.opendefinition.org/licenses/odc-by","title":"VIAF: The Virtual International Authority File","full_download":[],"example":[{"title":"","media_type":"example/rdf+xml","description":"Example (RDF/XML)","access_url":"http://viaf.org/viaf/40280446/","status":"FAIL (301)"},{"title":"","media_type":"example/rdf+xml","description":"Example (RDF/XML)","access_url":"http://viaf.org/viaf/86518157","status":"FAIL (301)"}],"sparql":[],"other_download":[{"media_type":"gz:txt","description":"This is a text file showing the correspondence between source IDs in clusters, including external links such as Wikipedia\r\n","status":"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-links.txt.gz])","title":"VIAF Links (txt)","mirror":[],"access_url":"http://viaf.org/viaf/data/viaf-20130615-links.txt.gz"},{"media_type":"","description":"This file contains one 'native' XML record per line for each VIAF cluster\r\n","status":"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-clusters.xml.gz])","title":"VIAF Clusters (XML)","mirror":[],"access_url":"http://viaf.org/viaf/data/viaf-20130615-clusters.xml.gz"},{"media_type":"","description":"This file contains one RDF record per line for each VIAF cluster\r\n","status":"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-clusters-rdf.xml.gz])","title":"VIAF Clusters (RDF)","mirror":[],"access_url":"http://viaf.org/viaf/data/viaf-20130615-clusters-rdf.xml.gz"},{"media_type":"","description":"This file contains one MARC-21 XML record per line for each VIAF cluster\r\n","status":"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-clusters-marc21.xml.gz])","title":"VIAF Clusters (MARC 21)","mirror":[],"access_url":"http://viaf.org/viaf/data/viaf-20130615-clusters-marc21.xml.gz"},{"media_type":"","description":"This file contains one ISO-2709 MARC-21 record per line for each VIAF cluster\r\n","status":"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-clusters-marc21.iso.gz])","title":"VIAF clusters (MARC 21 - ISO-2709)","mirror":[],"access_url":"http://viaf.org/viaf/data/viaf-20130615-clusters-marc21.iso.gz"},{"media_type":"","description":"This file shows redirections within the VIAF dataset (in RDF)\r\n","status":"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-persist-rdf.xml.gz])","title":"VIAF redirections (RDF)","mirror":[],"access_url":"http://viaf.org/viaf/data/viaf-20130615-persist-rdf.xml.gz"}],"description":{"en":"VIAF (Virtual International Autority File) is an OCLC dataset and service -- built in cooperation with national libraries and other partners -- that virtually combines multiple LAM (Library Archives Museum) name authority files into a single name authority service. Put simply it is a large database of people and organizations that occur in library catalogs.\r\n\r\n\r\nVIAF is a joint project of 20  national libraries, implemented and hosted by OCLC. The project's goal is to lower the cost and increase the utility of library authority files by matching and linking the authority files of national libraries, and then making that information available on the Web.\r\n\r\n### Openness\r\n\r\nThe data is released under Open Data Commons Attribution license. Attribution is requested as follows:\r\n\r\n> Adherence to ODC Attribution instructions for the correct assertion of attribution is encouraged. The preferred form of attribution for VIAF is:\r\n>\r\n> \"This [title of report or article or dataset] contains information from VIAF (Virtual International Authority File) which is made available under the ODC Attribution License.\"\r\n> \r\n> Special cases: In circumstances where providing the full attribution statement above is not technically feasible, the use of canonical VIAF URIs is adequate to satisfy Section 4.3 of the ODC Attribution License.\r\n\r\n#### Older information preserved for archival purposes\r\n\r\nOCLC is currently in discussion with partners about how to license material. [Message from Thom Hickey, OCLC Chief Scientist](http://groups.google.com/group/nyt_linked_open_data/browse_thread/thread/46ea00276e3d5a2e#) on public Google Groups mailing list in January 2010 states:\r\n\r\n> VIAF is a joint project with the contributing institutions and OCLC doesn?t claim any rights to the data beyond what the group has.  Unfortunately the group as a whole has problems coming up with a statement of exactly what is permitted.  In lieu of that, our position is that the data on the site is freely available for use through the APIs, although if someone wants a copy of the whole thing they would have to apply to the VIAF consortium (they could do that through me or Barbara Tillett at LC).  Along those same lines, if someone is going to have substantial activity against VIAF (multiple queries/second) we?d like to know about it ahead of time. \r\n\r\n> Over the next few months we will be working on a better statement of what?s permitted, but our intention is to make the data as freely available as possible (even to the NYT). \r\n\r\n\r\nFurther update from Thom Hickey:\r\n(http://outgoing.typepad.com/outgoing/2011/03/use-of-viaf.html)\r\n\r\n> I responded to a recent blog post on LibraryThing which mentioned restrictions on the use of VIAF and its relationship to the LC authority file.\r\n\r\n> In fact, VIAF is open for use by anyone.  Here's what I said about the use of VIAF:\r\n\r\n> VIAF is a project led by LC, the French and German national libraries and OCLC. There are no restrictions on its use. Dumps of the complete file are available, but need the approval of the project leaders.\r\n\r\n> VIAF is not designed to replace the LC/NACO authority file, but rather is built from it and a number of similar files.\r\n\r\n> I hope that is clear.  We really do want people to use VIAF!\r\n\r\nGood news, but no explicit license or complete dumps freely available without asking, so not (yet) OKD compliant "},"owner":"","website":"http://viaf.org/viaf/data/","triples":"200000000","domain":"publications","namespace":"http://viaf.org/viaf/","contact_point":{"name":"OCLC Online Computer Library Center, Inc.","email":"oclc@oclc.org"}}}}
+var app = new Vue({
+    el: '#app',
+    data: data(),
+    methods: {
+        commaFormatted: function (x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        },
+        stars: function (dataset) {
+            if (dataset.title) {
+                if (dataset.description) {
+                    if (dataset.contact_point) {
+                        if (dataset.triples && dataset.triples > 0) {
+                            if (dataset.links && dataset.links.length > 0) {
+                                var accessible = false;
+                                if (dataset.full_download) {
+                                    for (i in dataset.full_download) {
+                                        var download = dataset.full_download[i];
+                                        if (typeof download.status === undefined || download.status === "OK") {
+                                            accessible = true
+                                        }
+                                    }
+                                }
+                                if (dataset.other_download) {
+                                    for (i in dataset.other_download) {
+                                        var download = dataset.other_download[i];
+                                        if (typeof download.status === undefined || download.status === "OK") {
+                                            accessible = true
+                                        }
+                                    }
+                                }
+
+                                if (accessible) {
+                                    var lwd = false;
+
+                                    for (i in  dataset.sparql) {
+                                        var download = dataset.sparql[i];
+                                        if (download.status === "OK") {
+                                            lwd = true;
+                                        }
+                                    }
+
+                                    for (i in dataset.example) {
+                                        var example = dataset.example[i];
+                                        if (example.status === "OK" &&
+                                                ["application/rdf+xml", "text/turtle", "application/n-triples", "appliation/ld+json"].includes(example.media_type)) {
+                                            lwd = true;
+                                        }
+                                    }
+                                    if (lwd) {
+                                        return [5, "Linked Web Data"];
+                                    } else {
+                                        return [4, "No examples resolve to RDF"];
+                                    }
+                                } else {
+                                    return [3, "Downloads may not be available"];
+                                }
+                            } else {
+                                return [2, "No links to other datasets"];
+                            }
+                        } else {
+                            return [2, "No triple count"];
+                        }
+                    } else {
+                        return [1, "No contact point"];
+                    }
+                } else {
+                    return [1, "No Description"];
+                }
+            } else {
+                return [1, "No Title"];
+            }
+        },
+        star_img: function (dataset) {
+            var r = this.stars(dataset);
+
+            return "/img/" + r[0] + "stars.png";
+        },
+        star_explain: function (dataset) {
+            var r = this.stars(dataset);
+
+            return r[1];
+        },
+        sort_links: function (links) {
+            links.sort(function(t) {
+                return t.target;
+            });
+            return links;
+        } 
+    },
+    beforeMount() {
+        if(resource2luzzu[this.dataset._id] != undefined) {
+          this.dataset.show_luzzu = true;
+          visualisationChart(resource2luzzu[this.dataset._id]);
+        }
+    }
+
+})
+
+        </script>
+        <script>[].forEach.call(document.querySelectorAll('input[type="tags"]'), tagsInput);</script>
+    </body>
+</html>

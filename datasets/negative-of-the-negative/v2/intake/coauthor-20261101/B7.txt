@@ -1,0 +1,18 @@
+Wikipedia record for the entity, fetched 2026-11-01 with the agent string 'Mozilla/5.0 (compatible; leesharks-authorship-census)'.
+
+1. https://en.wikipedia.org/w/index.php?title=CoAuthor&action=raw at 2026-11-01T06:16:08Z: HTTP 404 (Wikimedia Error page; saved as B7.wiki, sha256 fa40caeaff8fc0d8e95b279dcccc60427638e6dde759da63dcc72442650a9f62).
+2. https://en.wikipedia.org/w/index.php?title=CoAuthor_(dataset)&action=raw at 2026-11-01T06:16:08Z: HTTP 404 (Wikimedia Error page; saved as B7-dataset.wiki, sha256 aaae19421ab80e981e382c1954b72f0364d9a8891890663bfa3e1078ece42843).
+3. https://en.wikipedia.org/w/index.php?title=Coauthor&action=raw at 2026-11-01T06:16:09Z: HTTP 200, the wikitext '#REDIRECT [[Collaborative writing]]' (saved as B7-redirect.wiki, sha256 33329ac7e00f45da89e088e9610e069cfdaba11a0fc364f6587b16c7389fd689).
+4. Article-space search for '"CoAuthor" GPT-3 writing dataset' at 2026-11-01T06:16:09Z: HTTP 200, totalhits 0 (saved as B7-search.json, sha256 688d401ed6447a04b61b8b5aea327e975f2f69ec5596d800d49a0b230236ea4b).
+5. Article-space search insource:"coauthor.stanford.edu" at 2026-11-01T06:16:18Z: HTTP 200, totalhits 0 (response not saved).
+6. Article-space search insource:"2201.06796" at 2026-11-01T06:16:19Z: an empty response; one retry at 06:16:27Z returned HTTP 429 ('You are making too many requests to the API.'); not retried further.
+7. Article-space search '"CoAuthor" "Mina Lee"' at 2026-11-01T06:16:19Z: an empty response; one retry at 06:16:27Z returned HTTP 200, totalhits 0.
+8. https://en.wikipedia.org/w/index.php?title=Collaborative_writing&action=raw at 2026-11-01T06:16:20Z: HTTP 200 (saved as B7-collab.wiki, sha256 15bb084d97b25599b4b3d965c98886aeaa8e202dde8f2d2a9db5d8019028d56f), the article the redirect 'Coauthor' reaches.
+
+Wikipedia does not have an article on the dataset under 'CoAuthor' or 'CoAuthor (dataset)', and the searches found no article that names it. The title 'Coauthor', the common noun, redirects to Collaborative writing.
+
+From B7-collab.wiki, lead (line 2):
+'''Collaborative writing''' is a procedure in which two or more persons work together on a [[Writing|text]] of some kind (e.g., academic papers, reports, creative writing, projects, and business proposals).
+
+From B7-collab.wiki, section Authorship (lines 75-77):
+An author acquires copyright if their work meets certain criteria. In the case of works created by one person, typically, the first owner of a copyright in that work is the person who created the work, i.e. the author. But, when more than one person creates the work in collaboration with one another, then a case of [[joint authorship]] can be made provided some criteria are met.

@@ -1,0 +1,1292 @@
+{
+ "row": "creative-ai-lab-database",
+ "address": "Creative AI Lab database",
+ "addresses": [
+  "Creative AI Lab database"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the saved feed (raw JSON for its pagination fields; B4-data.txt, the entries extracted one per line, for entries), the B8.txt record of Wikipedia's responses, or the card's snippet on the transcript's rail; counts stated in a claim's gloss are computed by script over the saved feed",
+ "B_note": "The field in two pools (v0.10 §0.3, §3.1(a)), marked by origin and by pool. B_D, the disclosed pool: the four cards on the transcript's rail (B1 Serpentine's page for the Lab, which is also the census's own page creative-ai-lab-database--serpentine, carried once in B_D; B2 the Lab's About page and B4 its database page with the feed it loads, both on creative-ai.org; B3 King's College London's project page); the body names no source beyond its cards. B_R, the reference pool: the census's own pages not on the rail (B5 King's launch announcement; B6 the Notion page, unread), the census's third-party source (B7 HOLO), and Wikipedia (B8, no article). No source is in both pools twice.",
+ "lineage_note": "Lineages: what the database is; names and addresses; the Lab: a research programme and partnership; aims: the back-end; research questions; launch and lifecycle; the launch and its contributor; funding; partners and network; people and credits; what the database holds; tools and resources: the two kinds of entry; the maker recorded: developed by, author(s); the evaluation criteria; the stated limit; the Lab's programme beside the database; publications; authorship in the Lab's programme; the census's question; machine participation and its provenance; the maker and the work: separate questions; reception: the encyclopedia; the composition at the name: what it held; the composition at the name: what it left out; the composition at the name: the funders and the dates; the composition at the name: the address and the record. The census's fields that restate a field source are one lineage with it (§3.6); the source keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/ (Bn.html raw, Bn.txt text; B1-fetch.html this session's fetch of card 1 beside the census copy B1.html; B4-data/ the feed's 55 raw pages, B4-data.txt its entries extracted; B8 .wiki, .html, -variant1.wiki, -search.html, -serpentine-galleries.wiki the raw Wikipedia responses with B8.txt their record); sha256 per file in each source's 'files'",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4"
+  ],
+  "B_R": [
+   "B5",
+   "B6",
+   "B7",
+   "B8"
+  ]
+ },
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "label": "Serpentine — Creative AI Lab - Serpentine Galleries",
+   "card": "Serpentine — Creative AI Lab - Serpentine Galleries",
+   "url": "https://www.serpentinegalleries.org/whats-on/creative-ai-lab/",
+   "kind": "Overview card 1 (Serpentine's programme page for the Lab); the same page as the census's own page creative-ai-lab-database--serpentine, carried once, in B_D (v0.10 §3.1(a))",
+   "fetched": {
+    "at": "2026-11-01T06:15:20Z",
+    "http": 200,
+    "url": "https://www.serpentinegalleries.org/whats-on/creative-ai-lab/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B1-fetch.html",
+    "raw_sha256": "f63be6855a8cdbe9fcce6a0f42c9f06b5f33ac3c9c3a6f86495d5b17a5927d23",
+    "census_copy": {
+     "src": "creative-ai-lab-database--serpentine",
+     "sha256": "22f3217cec73cee1226acdc5f894c165f6461fd6e82349e60b4c5cc52e213bba",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T05:32:58Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B1.html",
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B1.txt"
+     ],
+     "agrees": "byte-different (this session's fetch sha256 f63be685…, the census copy 22f3217c…); the differences are Cloudflare's per-request email-obfuscation tokens and challenge parameters, the page text the same; extraction reads the census copy, B1.txt the census's extracted text"
+    }
+   },
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B1.html",
+     "sha256": "22f3217cec73cee1226acdc5f894c165f6461fd6e82349e60b4c5cc52e213bba"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B1.txt",
+     "sha256": "b60c42160e70a3c78bc89b9427038900de97dc90be87cdb6da7f83bf39461192"
+    },
+    "B1-fetch.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B1-fetch.html",
+     "sha256": "f63be6855a8cdbe9fcce6a0f42c9f06b5f33ac3c9c3a6f86495d5b17a5927d23"
+    }
+   },
+   "date": "undated page; read 2026-11-01",
+   "names_operator": "yes (the Lab's partners: Serpentine R&D Platform and King's Digital Humanities; its people)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [
+    {
+     "slug": "creative-ai-lab-database-aio-20261101",
+     "card": 1
+    }
+   ],
+   "card_title": "Creative AI Lab - Serpentine Galleries",
+   "card_site": "Serpentine",
+   "card_snippet": "Overview: Creative AI Lab is an ongoing online research programme launched July 9, 2020, in partnership with the Department of Digital Humanities, King's Colleg...",
+   "card_url_basis": "the card's title is the page's <title>; the census's own URL for the Serpentine page"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "label": "Creative AI Lab — Creative AI Lab (creative-ai.org/about)",
+   "card": "Creative AI Lab — Creative AI Lab (creative-ai.org/about)",
+   "url": "https://creative-ai.org/about",
+   "kind": "Overview card 2 (the Lab's own site, its About page)",
+   "fetched": {
+    "at": "2026-11-01T06:15:41Z",
+    "http": 200,
+    "url": "https://creative-ai.org/about",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B2.html",
+    "raw_sha256": "2e3670c5e2ac4c7311b973cca83692bedeb85dce43949b554064f8568ebb9cae",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B2.txt"
+    ],
+    "extraction": "text extracted from the saved HTML by an HTML parser, scripts, styles and SVG dropped, words kept"
+   },
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B2.html",
+     "sha256": "2e3670c5e2ac4c7311b973cca83692bedeb85dce43949b554064f8568ebb9cae"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B2.txt",
+     "sha256": "f5e1d700c56e6c2b8459701954d40f06fb6aec8aea0ff1c4277fcac038fa7ed9"
+    }
+   },
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "names_operator": "yes (Serpentine Arts Technologies and King's Digital Humanities; members)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [
+    {
+     "slug": "creative-ai-lab-database-aio-20261101",
+     "card": 2
+    }
+   ],
+   "card_title": "Creative AI Lab",
+   "card_site": "Creative AI Lab",
+   "card_snippet": "Overview: Collaborative research initiative by Serpentine Arts Technologies and King's College London Department of Digital Humanities established in 2019 inves...",
+   "card_url_basis": "the card's site is the Lab's own site (creative-ai.org), title 'Creative AI Lab' (every page of the site carries it); its snippet's 'established in 2019' matches the About page ('Since 2019 the Creative AI Lab ...'), assigned so; the registry records url null"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "label": "King's College London — Creative AI Lab | King's College London",
+   "card": "King's College London — Creative AI Lab | King's College London",
+   "url": "https://www.kcl.ac.uk/research/creative-ai-lab",
+   "kind": "Overview card 3 (King's College London's research project page)",
+   "fetched": {
+    "at": "2026-11-01T06:15:19Z",
+    "http": 200,
+    "url": "https://www.kcl.ac.uk/research/creative-ai-lab",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B3.html",
+    "raw_sha256": "19a39918da734ebc4e5d46ac5dff6428badfc180f16e1ddfc90ae5c52c8f960c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B3.txt"
+    ],
+    "extraction": "text extracted from the saved HTML by an HTML parser, scripts, styles and SVG dropped, words kept"
+   },
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B3.html",
+     "sha256": "19a39918da734ebc4e5d46ac5dff6428badfc180f16e1ddfc90ae5c52c8f960c"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B3.txt",
+     "sha256": "55f5e4b153fcdb7c69ab38c9a98a2cf0b33b58afdd0a63c91553c374db275c27"
+    }
+   },
+   "date": "undated page; read 2026-11-01",
+   "names_operator": "yes (the partnership; investigators; funders)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [
+    {
+     "slug": "creative-ai-lab-database-aio-20261101",
+     "card": 3
+    }
+   ],
+   "card_title": "Creative AI Lab | King's College London",
+   "card_site": "King's College London",
+   "card_snippet": "Partnership: Collaboration between Serpentine R&D Platform and Department of Digital Humanities at King's College London. Aims: Surface back-end AI/ML knowledge...",
+   "card_url_basis": "WebSearch on the card's title and site returned kcl.ac.uk/research/creative-ai-lab, whose <title> is the card's title"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "label": "Creative AI Lab — Creative AI Lab (creative-ai.org, the database)",
+   "card": "Creative AI Lab — Creative AI Lab (creative-ai.org, the database)",
+   "url": "https://creative-ai.org/",
+   "kind": "Overview card 4 (the database's own page at creative-ai.org, with the entry feed it loads, creative-ai.org/tooldata)",
+   "fetched": {
+    "at": "2026-11-01T06:15:15Z",
+    "http": 200,
+    "url": "https://creative-ai.org/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B4.html",
+    "raw_sha256": "5e5a3e6207cc36777ae2e3d8c9c0bda4d501bd83b5a80abfd95caae7ac0da7f4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B4.txt"
+    ],
+    "extraction": "text extracted from the saved HTML by an HTML parser, scripts, styles and SVG dropped, words kept",
+    "feed": {
+     "url": "https://creative-ai.org/tooldata/?page=1 … ?page=55",
+     "from": "2026-11-01T06:16:02Z",
+     "to": "2026-11-01T06:16:52Z",
+     "http": "200 for every page",
+     "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+     "note": "the page's own script requests 'tooldata/?page=' + n in turn and renders each entry; the 55 pages were fetched the same way, with the same agent, and saved raw (B4-data/page-NN.json); B4-data.txt is the entries extracted one per line (fields named in its header, HTML stripped from descriptions). The feed reports \"total\":271 and 271 distinct ids were read."
+    }
+   },
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B4.html",
+     "sha256": "5e5a3e6207cc36777ae2e3d8c9c0bda4d501bd83b5a80abfd95caae7ac0da7f4"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B4.txt",
+     "sha256": "b72f889cc478fa292e480cf3b48637e7b2e700250c8fb699801dd493771186f7"
+    },
+    "B4-data/": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B4-data/",
+     "pages": 55,
+     "sha256_of_pages": {
+      "page-01.json": "cc693a7e596c23799b1aa26c5f432a494cd660017ddc176e4ef47d0162b8b35a",
+      "page-02.json": "d99e0627197f913d5e94a6b0c81cccbb0f5137e4fb70330b2841e60551603996",
+      "page-03.json": "135e0239464c0df51ca444e0d71a9ebda79d0fc0903d1df69770a29a128f07bf",
+      "page-04.json": "136199b0be8af1074076c5abc4b20735c2d817b906bb82e626952b06422002a4",
+      "page-05.json": "1882c177a924302f5bf0a324d9ee1791be9d0eff808c27e53aa302a6200a4a21",
+      "page-06.json": "c71d1ca09071dfaeb1edf00886bb59546bf735820b7b341fabf8b762724617b6",
+      "page-07.json": "b64442e9bcf85f773d81978f6ba358cd66a56b1528684689cdc4b9f6cde1fd07",
+      "page-08.json": "b555092d0abab0c909179ea36e60d9354bd0d1d391c0c93d71934ae909cd99cc",
+      "page-09.json": "60cb888e5cc9fe14fde486f0200c611c80994f51b39dc4ca103a78624963148a",
+      "page-10.json": "2736e5ed4050d7f2ce0d62405b67015eb18b2446b72b4e574c38b0b61e985964",
+      "page-11.json": "316c21e4a7b79c71597bbffc25ab777818fa05a817576495adaa5ef9d3a15331",
+      "page-12.json": "ad63f3ede0a756e4a444be8a6a6d4dbf4ab85a219212e58c266a7ebb9f72fd2f",
+      "page-13.json": "73d166fd2d26f34aca23b4fd91e02d06726c31eb11e62c919c8478adeb414db4",
+      "page-14.json": "904665252f6cfc45a144910aa1ff47eaa7a57df11246da7b22c78d04293af70a",
+      "page-15.json": "a44beb1c761046f284d7c68f1c45ef4e2e828252284a5c48ed29815b5a2c3820",
+      "page-16.json": "ff207a94346b39825db6f5515b261bce924fa962fc352ada7a54ee67f1f5ef90",
+      "page-17.json": "f47a00b37e0136d1ba5bcea6112a14423e149ea3aa5d91ec41ecd3f8d0e86494",
+      "page-18.json": "0fb9fe8127afcd9589e99ad783a9fac099303f4be8421396edba492046de03d3",
+      "page-19.json": "e29821862e86f4cfa732bf178f11cf51c8de77a0298dd094a295f683b7aea40d",
+      "page-20.json": "646e6326815d5d5454f2120bcb51fc2f96aaa43517f7fbb140ea9e6483b32f73",
+      "page-21.json": "a1868989f191b1f611accbb380dd75c488b324214e35d8eeedce8970772195f6",
+      "page-22.json": "e9e635a6e1a678e5596378bca2134b749a0541605e9a5260462fb60d59f1dfdd",
+      "page-23.json": "1a46ee6373bb7409ffc64d413a63edb0a160f543a37c1fc882b989017165b9c6",
+      "page-24.json": "3cfa97904b7ecbaf35caa7fddf60b1613e60d7ac0566be9986c3fe7a87cd1b33",
+      "page-25.json": "4ef72781df3199dd57d2b6c66b32f8274ca98b30bc244ca2cbf463621238a513",
+      "page-26.json": "cedb63d18d902c56b8d6fbfb422140309621a6e0d11b7398b0aa6e00b0d939d6",
+      "page-27.json": "8886554edc4043f6532f82f7170ecd44eab61a3d9c3911867f5e6f1a38825de4",
+      "page-28.json": "f0ec9148c360428a1fa1fa07fb9d9c92bd19099b8ec47da785c70da1c2ddafdf",
+      "page-29.json": "13882b77c3d6f0d24249cf4df357d60216768722db75b36714ef7925cb65d14a",
+      "page-30.json": "4e1a0b9889a925ba92d3b532f3d00971d2c92d14a988e4539cdc85b72141f7ee",
+      "page-31.json": "b6c3561ba705f4990f6cb058cefa6b501ca8acd09a17dbbf3c7af3694dbaef74",
+      "page-32.json": "75f35c06d5f34b9ce13f960b8a3e69226490a692ecec80f39497f009bab2ac2e",
+      "page-33.json": "53a1a9c244ee78c1c93e70508c7bbf47082be4c3078e772f4582523de620f8e0",
+      "page-34.json": "b98307618315d714376f86de3a864be3f06dfbd0f37795b9ce329dd37099a431",
+      "page-35.json": "f40efa91541adfcebe58b1f3ea35a3c7b11a94cd65396e15d4536c1bfab83175",
+      "page-36.json": "4ba4c2cf77d4f80baf67374f45312e2047d18ba0e3c0b895ffcaa9fea61e20b1",
+      "page-37.json": "c126fdb52022074c98596321d9fa3a389bad5ce859415fea4ef2e439210e4749",
+      "page-38.json": "34ff66fbc4080903ec1c9f004270dea1c83ae5c84d3abb334814e06c61585603",
+      "page-39.json": "9cdecb851c31de8166df851621118f150435371d70c72a4cd7275e0887c89a5f",
+      "page-40.json": "bdf834f741d5a9dc251bbbee7addb475e68cdaf9658e3fd033fef413886d7ed8",
+      "page-41.json": "65fdfb908f676d54cbab804b0e731467056913c3a99b6651b0e39774418f3112",
+      "page-42.json": "5747447c508a18b336aef67a057248d7019b019496ad698dde98d8dd0440107f",
+      "page-43.json": "e104c93b1b62c253c6324fe1cf62d0ae484cd8ae379b7506b13f5e7bf373b948",
+      "page-44.json": "f79f4f7aedf320ed43a214cb82ec27456639777401f685ee3885471265149410",
+      "page-45.json": "9fe1b5b6492bacfff9b707c562c4b16eaeffd5bdb2db0c8a3e3836917ec0f7eb",
+      "page-46.json": "278ccecd8e3eba4c82c6ad1826cd2d711f633638f57eed283aec3e107d089787",
+      "page-47.json": "a1d75865a209c1bda93833caf1f527d8cdd4d87b54cd3df9639b6738e638d6e1",
+      "page-48.json": "a9659087b79273a2e8d7bfa78aca45595e0bd9b49d1be6f37d523e7b665ae341",
+      "page-49.json": "ad3159f6efc2896245185c2d518d814e5faffc6d550f7bc7ca5b7a409d320afa",
+      "page-50.json": "b1e627d05f4ca9b8d265c52ffd82fe1b1597892ca588220f648daacbe17b4838",
+      "page-51.json": "49ddfd40ab2e2532cd8537b5f04b9e52b0baee3df69154ec105c935dad6f9275",
+      "page-52.json": "c773abeaa18bad901d777b4cfd753a533ee87f68e7b36e30f1dea6d826077650",
+      "page-53.json": "056a3905b621f29e87ae8026d9f2ffd547622fcb5156a237a25258d5dc5ec405",
+      "page-54.json": "1ccc2947cd7c065df017522d67ecbc1f68e6b13dbe255729d6fd2d4d76a95aa1",
+      "page-55.json": "f3591d5a0c4741e2b8531b14861950a5f1fc0e68b5d68187e2204561fd1b78fe"
+     }
+    },
+    "B4-data.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B4-data.txt",
+     "sha256": "5826ebee725258cbabab5f8905ff9aeb94ea6e9c60ac5c230d8b2a1f40d42c2f"
+    }
+   },
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "names_operator": "yes, by its footer ('Creative AI lab is a collaboration between', logos: Serpentine, UKRI/AHRC); the entries name the makers of tools and resources",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [
+    {
+     "slug": "creative-ai-lab-database-aio-20261101",
+     "card": 4
+    }
+   ],
+   "card_title": "Creative AI Lab",
+   "card_site": "Creative AI Lab",
+   "card_snippet": "Audio: Mustango (multimodal LLM, LDM/Flan-T5); Synplant 2 (exploratory plug-in/Genopatch); Stable Audio (Stability AI); RAVE (realtime autoencoder); Neutone (Mo...",
+   "card_url_basis": "the card's site is the Lab's own site, title 'Creative AI Lab'; its snippet's tools (Mustango, Synplant 2, Stable Audio, RAVE, Neutone) are the database page's entries, in its feed; assigned to the database page; the registry records url null"
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "label": "King's College London — The Department of Digital Humanities and the Serpentine launch Creative AI Lab website (news, 9 July 2020)",
+   "card": "King's College London — The Department of Digital Humanities and the Serpentine launch Creative AI Lab website (news, 9 July 2020)",
+   "url": "https://www.kcl.ac.uk/news/the-department-of-digital-humanities-and-the-serpentine-launch-creative-ai-lab-website",
+   "kind": "own page (the partner's launch announcement), the census's creative-ai-lab-database--kcl",
+   "fetched": {
+    "census_copy": {
+     "src": "creative-ai-lab-database--kcl",
+     "url": "https://www.kcl.ac.uk/news/the-department-of-digital-humanities-and-the-serpentine-launch-creative-ai-lab-website",
+     "final_url": "https://www.kcl.ac.uk/news/the-department-of-digital-humanities-and-the-serpentine-launch-creative-ai-lab-website",
+     "sha256": "51fff0bbedd32966718b20e31f848881952322870087ecb2df5b78e0ec165bbd",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T05:32:56Z",
+     "http": "200",
+     "text_chars": 9901,
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B5.html",
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B5.txt"
+     ]
+    },
+    "note": "the census's saved copy, gunzipped; sha256 matching the manifest; not refetched"
+   },
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B5.html",
+     "sha256": "51fff0bbedd32966718b20e31f848881952322870087ecb2df5b78e0ec165bbd"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B5.txt",
+     "sha256": "31e81935a3fb154a6f71fe92607182cacbe3e0b008d41bee18d97dff3be72859"
+    }
+   },
+   "date": "2020-07-09",
+   "names_operator": "yes (King's Digital Humanities with the Serpentine)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [],
+   "note": "not surfaced by T: admitted to B_R on the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); a source of B_R alone cannot show what the composition had (v0.10 §3.1(a))"
+  },
+  {
+   "id": "B6",
+   "origin": "own_page",
+   "pool": "B_R",
+   "label": "Notion — Creative AI Database (proud-paprika-325.notion.site; unread)",
+   "card": "Notion — Creative AI Database (proud-paprika-325.notion.site; unread)",
+   "url": "https://proud-paprika-325.notion.site/Creative-AI-Database-241be15d927a480d956c45f30b3d1996",
+   "kind": "own page (the census's url for the database, a public Notion page), the census's creative-ai-lab-database--notion; script-rendered, 6 characters of text, unread",
+   "fetched": {
+    "census_copy": {
+     "src": "creative-ai-lab-database--notion",
+     "url": "https://proud-paprika-325.notion.site/Creative-AI-Database-241be15d927a480d956c45f30b3d1996",
+     "final_url": "https://proud-paprika-325.notion.site/Creative-AI-Database-241be15d927a480d956c45f30b3d1996",
+     "sha256": "1d851571963c04c7222d3eee7255b08e76b8b36e6966ad0f6f8a48c7b7f3985e",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T05:32:49Z",
+     "http": "200",
+     "text_chars": 6,
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B6.html",
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B6.txt"
+     ]
+    },
+    "note": "the census's saved copy, gunzipped; sha256 matching the manifest; not refetched; the page is script-rendered (its <title> 'Notion', 6 characters of text) and is recorded unread, as the census records it; no claims extracted",
+    "unread": true
+   },
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B6.html",
+     "sha256": "1d851571963c04c7222d3eee7255b08e76b8b36e6966ad0f6f8a48c7b7f3985e"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B6.txt",
+     "sha256": "73bcfe98830b53a1cabd2fa68c6ba8819adcfb9b0566f7ed5d455582d47973ed"
+    }
+   },
+   "date": "unread",
+   "names_operator": "no (no readable text)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [],
+   "note": "not surfaced by T: admitted to B_R on the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); a source of B_R alone cannot show what the composition had (v0.10 §3.1(a))"
+  },
+  {
+   "id": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "label": "HOLO — Creative AI Lab: Serpentine and King’s College launch database (9 July 2020)",
+   "card": "HOLO — Creative AI Lab: Serpentine and King’s College launch database (9 July 2020)",
+   "url": "https://www.holo.mg/?p=631",
+   "kind": "third-party launch report the census read (basis third_party), the census's creative-ai-lab-database--holo",
+   "fetched": {
+    "census_copy": {
+     "src": "creative-ai-lab-database--holo",
+     "url": "https://www.holo.mg/?p=631",
+     "final_url": "https://www.holo.mg/stream/creative-ai-lab-serpentine-and-kings-college-launch-database/",
+     "sha256": "3c4ee84973cc8605ee2854eacfa1e182cb5ffb64005ff7c1bdc316a3f2342920",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T05:32:54Z",
+     "http": "200",
+     "text_chars": 2415,
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B7.html",
+      "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B7.txt"
+     ]
+    },
+    "note": "the census's saved copy, gunzipped; sha256 matching the manifest; not refetched"
+   },
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B7.html",
+     "sha256": "3c4ee84973cc8605ee2854eacfa1e182cb5ffb64005ff7c1bdc316a3f2342920"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B7.txt",
+     "sha256": "f9e3e433f7f6a3889a00d59938439f3524e8f07c0a715fad437fab0199bc472c"
+    }
+   },
+   "date": "2020-07-09",
+   "names_operator": "yes (Serpentine R&D Platform, King's Digital Humanities)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [],
+   "note": "not surfaced by T: admitted to B_R on the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); a source of B_R alone cannot show what the composition had (v0.10 §3.1(a))"
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "label": "Wikipedia — Creative AI Lab (no article; no search result)",
+   "card": "Wikipedia — Creative AI Lab (no article; no search result)",
+   "url": "https://en.wikipedia.org/wiki/Creative_AI_Lab",
+   "kind": "Wikipedia: no article (HTTP 404), no redirect, no article-space search result",
+   "fetched": {
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "tries": [
+     {
+      "at": "2026-11-01T06:15:20Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Creative_AI_Lab&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-11-01T06:15:21Z",
+      "url": "https://en.wikipedia.org/wiki/Creative_AI_Lab",
+      "http": 404,
+      "result": "Wikipedia does not have an article with this exact name."
+     },
+     {
+      "at": "2026-11-01T06:17:30Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Creative_AI_Database&action=raw",
+      "http": 404
+     },
+     {
+      "at": "2026-11-01T06:17:30Z",
+      "url": "https://en.wikipedia.org/w/index.php?search=%22Creative+AI+Lab%22&title=Special:Search&profile=advanced&fulltext=1&ns0=1",
+      "http": 200,
+      "result": "There were no results matching the query."
+     },
+     {
+      "at": "2026-11-01T06:17:30Z",
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Creative%20AI%20Lab%22",
+      "http": 429,
+      "result": "rate limit; not retried (the rendered search answers the same query)"
+     },
+     {
+      "at": "2026-11-01T06:17:31Z",
+      "url": "https://en.wikipedia.org/w/index.php?title=Serpentine_Galleries&action=raw",
+      "http": 200,
+      "result": "the partner's article does not name the Lab, its database or Arts Technologies"
+     }
+    ],
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8.txt"
+    ]
+   },
+   "files": {
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8.wiki",
+     "sha256": "20662c5f330d31c6e750a0481b45bb35ad928a692f1fbcb2d34958df4e9dfbe2"
+    },
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8.html",
+     "sha256": "09d3b10d2ce78ba8b71c8e7df740b531850b89511fe7d257032aef533e220d81"
+    },
+    "B8-variant1.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8-variant1.wiki",
+     "sha256": "ed497376db1aaabceeaa71f46ed85431292569782bbdf383350d9ff53038bd9b"
+    },
+    "B8-search.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8-search.html",
+     "sha256": "21321c2db0df4d5cd6a855b737f921c20f93e17b6be7b845e97d5c420ba145b7"
+    },
+    "B8-serpentine-galleries.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8-serpentine-galleries.wiki",
+     "sha256": "977bf131693ffeeb677d92e48496835ccd6e605490d40c683eb4ef2686e331b6"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/creative-ai-lab-database-20261101/B8.txt",
+     "sha256": "14026c10553c0a1706019b5638671fe2dadca2b3ff0ecd497bc8b139073ed181"
+    }
+   },
+   "date": "2026-11-01 (the HTTP responses)",
+   "names_operator": "no (no article)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title or snippet; B8.txt carries the fetch agent string only, in its header)",
+   "surfaced_by_T": [],
+   "note": "not surfaced by T: admitted to B_R on the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); a source of B_R alone cannot show what the composition had (v0.10 §3.1(a))"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "Overview: Creative AI Lab is an ongoing online research programme launched July 9, 2020, in partnership with the Department of Digital Humanities, King's Colleg...",
+   "claim": "card 1 gives the Lab as an ongoing online research programme launched 9 July 2020 in partnership with King's College London's Department of Digital Humanities",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Lab: a research programme and partnership",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "card 1 snippet on the transcript's rail (the registry's cite_list)"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page head, dates",
+   "quote": "9 Jul 2020 – Ongoing",
+   "claim": "Serpentine dates the Lab from 9 July 2020, ongoing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and lifecycle",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About ¶1 s1",
+   "quote": "The Creative AI lab is a research programme for cultural institutions, artists, engineers, and researchers with an interest in Artificial Intelligence (AI) and Machine Learning (ML).",
+   "claim": "Serpentine defines the Lab as a research programme for cultural institutions, artists, engineers and researchers interested in AI and ML",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Lab: a research programme and partnership",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Research activities, item 1",
+   "quote": "produce the Creative AI Tools & Resources Database , a database of tools for artists, designers, engineers, curators and researchers",
+   "claim": "the Lab produces the Creative AI Tools & Resources Database, a database of tools for artists, designers, engineers, curators and researchers",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the database is",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Research questions",
+   "quote": "how AI/ML tools can support artistic practices how artistic and curatorial practices are changing due to AI/ML creative AI/ML as a critical practice the aesthetics of AI/ML",
+   "claim": "the Lab's four research questions: tools supporting artistic practice, changing artistic and curatorial practice, creative AI/ML as critical practice, the aesthetics of AI/ML",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "research questions",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Partners ¶1 s1",
+   "quote": "The Creative AI Lab is a partnership between Serpentine R&D Platform and the Department of Digital Humanities, King’s College London.",
+   "claim": "the Lab is a partnership of Serpentine R&D Platform and King's College London's Department of Digital Humanities",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Lab: a research programme and partnership",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Partners, 'We also work with'",
+   "quote": "Digital Theory Lab, New York University … Rhizome , New Museum, New York … Maggie Roberts/0rphan Drift and Etic Lab ISCRI Project",
+   "claim": "the Lab also works with NYU's Digital Theory Lab, Rhizome at the New Museum, and Maggie Roberts/0rphan Drift and Etic Lab on the ISCRI Project",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "partners and network",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Research activities, items 2–3",
+   "quote": "organise research workshops, public discussions and writing sessions … run online tutorials known as R&D Labyrinths",
+   "claim": "beside the database the Lab organises workshops, discussions and writing sessions and runs the R&D Labyrinths tutorials",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Lab's programme beside the database",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "People",
+   "quote": "Eva Jäger – Arts Technologies, Serpentine, London … Black Shuck Collective – Website development and research",
+   "claim": "Serpentine's list of the Lab's people names its researchers with their affiliations and credits the website's development and research to Black Shuck Collective",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "people and credits",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Live, event of 15 Nov 2021",
+   "quote": "Tactical Entanglements: Creative AI Lab in conversation with Martin Zeilinger … 15 Nov 2021 … Join us online for a discussion around the impact of artificial intelligence on human-centered notions of creative agency, authorship and ownership.",
+   "claim": "the Lab held a discussion with Martin Zeilinger on 15 November 2021 on AI's impact on human-centred notions of creative agency, authorship and ownership",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "authorship in the Lab's programme",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Downloads",
+   "quote": "Creative AI Position paper 2023 … This position paper analyses creative activity enabled by machine learning (ML) and recognised under the banner of ‘Creative AI’.",
+   "claim": "a 2023 position paper analyses creative activity enabled by ML recognised as 'Creative AI'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publications",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 b60c42160e70a3c7…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 2 snippet",
+   "quote": "Overview: Collaborative research initiative by Serpentine Arts Technologies and King's College London Department of Digital Humanities established in 2019 inves...",
+   "claim": "card 2 gives the Lab as a collaborative research initiative of Serpentine Arts Technologies and King's Digital Humanities established in 2019",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Lab: a research programme and partnership",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "card 2 snippet on the transcript's rail (the registry's cite_list)"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About ¶1",
+   "quote": "Since 2019 the Creative AI Lab has been a space for long-term research by Serpentine Arts Technologies and the King’s College London Department of Digital Humanities into artistic practices (and their attendant collaborators) working with AI/ML.",
+   "claim": "the Lab's own site gives it, since 2019, as a space for long-term research by Serpentine Arts Technologies and King's Digital Humanities into artistic practices working with AI/ML",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Lab: a research programme and partnership",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About ¶2 s1",
+   "quote": "By focusing on the ‘back-end’ environment of artistic production, the Lab uses artistic practice and prototyping to speculate about systemic impacts of emerging tools, systems and infrastructures both within the arts & humanities but also, importantly, in terms of wider public interest.",
+   "claim": "the Lab focuses on the back-end environment of artistic production and uses practice and prototyping to speculate on the systemic impacts of tools and infrastructures",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims: the back-end",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About ¶2 s2",
+   "quote": "Tool entries after 2023 are evaluated in their description, based on the core criteria of transparency, creative malleability, technical interoperability, calibre of research, and propensity to redistribute",
+   "claim": "tool entries after 2023 are evaluated in their descriptions on five criteria: transparency, creative malleability, technical interoperability, calibre of research, propensity to redistribute",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the evaluation criteria",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "About ¶2 s4–5",
+   "quote": "This evaluation aims to keep users informed about the range of possibility each tool offers, alongside the externalities it brings to their working practice, the wider creative community and the public. It will inform future research from the Lab in 23-24 into the public value of artistic practice that engages with AI.",
+   "claim": "the evaluation informs users of each tool's possibilities and externalities, and will inform the Lab's 2023–24 research into the public value of artistic practice that engages with AI",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the evaluation criteria",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Members",
+   "quote": "Professor Mercedes Bunz … Dr Daniel Chávez Heras … Eva Jäger … Dr Serena Lervolino … Alasdair Milne … Professor Joanna Zylinska",
+   "claim": "the site names six members, from King's College London and Serpentine",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "people and credits",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Partners",
+   "quote": "Serpentine Arts Technologies, London … Department of Digital Humanities, King's College London … NYU Digital Theory Lab, New York University … Rhizome, New Museum, New York … Gray Area, San Francisco",
+   "claim": "the site lists five partners, adding Gray Area, San Francisco",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "partners and network",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Timeline, July 2020",
+   "quote": "Official launch of Creative AI Lab and database with Luba Elliot as part of Serpentine’s Future Art Ecosystems + R&D Plat- form kick-off",
+   "claim": "the site's timeline dates the official launch of the Lab and database to July 2020 'with Luba Elliot'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the launch and its contributor",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Timeline, Jan 2020 and April 2020",
+   "quote": "Lab awarded UK Research and Innovation funding … Research Creative AI as a Medium in Artistic and Curatorial Practice funded by LAHP, Alasdair Milne appointed",
+   "claim": "the timeline records UKRI funding (January 2020) and a LAHP-funded research project with Alasdair Milne appointed (April 2020)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Timeline, April 2021",
+   "quote": "Lab awarded Artist Machine Intelligence human research funding",
+   "claim": "the timeline records an Artist Machine Intelligence research award (April 2021)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Timeline, Nov 2022 and March 2024",
+   "quote": "Creative AI Position Paper is published via Lab Database … Serpentine Arts Technologies launch Future Art Ecosystems 4: Art x Public AI",
+   "claim": "the position paper was published via the Lab database (November 2022); the latest timeline item is Future Art Ecosystems 4 (March 2024)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "publications",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Acknowledgments",
+   "quote": "Our work is also informed by conver- sations with Suzanne Livingston, Murad Khan, Daniel Chávez Heras, Allison Parish, Luba Elliott, Julia Kaganskiy, James Wreford, Jules LaPlace, Ricardo Savedro, Natalie Kane, Leonardo Impett among others. Most of all, this project would not exist without the work of the artists, programmers and theorists who contribute to this project and to the field at large.",
+   "claim": "the acknowledgments name the people whose conversations inform the work and credit the artists, programmers and theorists who contribute",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "people and credits",
+   "date": "undated page (timeline to March 2024); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 f5e1d700c56e6c2b…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 3 snippet",
+   "quote": "Partnership: Collaboration between Serpentine R&D Platform and Department of Digital Humanities at King's College London. Aims: Surface back-end AI/ML knowledge...",
+   "claim": "card 3 gives the partnership and the aim of surfacing back-end AI/ML knowledge",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims: the back-end",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "card 3 snippet on the transcript's rail (the registry's cite_list)"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Aims ¶1 s3",
+   "quote": "The aim of the lab is to surface this ‘back-end’ knowledge and link it to wider artistic and curatorial practices in order to overcome the existing ‘black-box’ narratives.",
+   "claim": "King's gives the Lab's aim: to surface back-end knowledge from artistic practice and link it to wider practice, to overcome black-box narratives",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "aims: the back-end",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 55f5e4b153fcdb7c…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Aims ¶1 s5",
+   "quote": "Additionally, the lab aims to develop institutional capacities to engage with these media for the benefit of the wider cultural sector.",
+   "claim": "the Lab aims to develop institutional capacities for the cultural sector",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims: the back-end",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 55f5e4b153fcdb7c…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Funders",
+   "quote": "King’s College London, Serpentine Galleries, AHRC and Google’s Artists + Machine Intelligence Grant.",
+   "claim": "King's lists the funders: King's College London, Serpentine Galleries, the AHRC and Google's Artists + Machine Intelligence Grant",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "funding",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 55f5e4b153fcdb7c…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Methods",
+   "quote": "Resources in the database come from Creative AI Lab's partners and network; tools cover a broad spectrum of possibilities presented by the current advances in ML like enabling users to generate images from their own data, create interactive artworks, draft texts or recognise objects.",
+   "claim": "the database's resources come from the Lab's partners and network; its tools span generating images, interactive artworks, drafting texts and recognising objects",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the database holds",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 55f5e4b153fcdb7c…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Project status; Investigators",
+   "quote": "Project status: Ongoing … Eva Jäger … Curator of Arts Technologies, Serpentine Gallery",
+   "claim": "King's gives the project as ongoing and names five investigators, Eva Jäger as Serpentine's Curator of Arts Technologies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "people and credits",
+   "date": "undated page; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 55f5e4b153fcdb7c…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 4 snippet",
+   "quote": "Audio: Mustango (multimodal LLM, LDM/Flan-T5); Synplant 2 (exploratory plug-in/Genopatch); Stable Audio (Stability AI); RAVE (realtime autoencoder); Neutone (Mo...",
+   "claim": "card 4 lists the database's audio tools with their technologies",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the database holds",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "card 4 snippet on the transcript's rail (the registry's cite_list)"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "database page ¶1",
+   "quote": "This database* is an ongoing project to aggregate tools and resources for artists, designers, engineers, curators & researchers interested in incorporating machine learning (ML) and other forms of artificial intelligence (AI) into their practice.",
+   "claim": "the database defines itself as an ongoing project to aggregate tools and resources for practitioners incorporating ML and AI into their practice",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the database is",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b72f889cc478fa29…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "database page, note to ¶1",
+   "quote": "*The collection of materials presented aren’t comprehensive—it is a growing collection of research collected & commissioned by the Creative AI Lab.",
+   "claim": "its stated limit: the collection is not comprehensive; it is a growing collection of research collected and commissioned by the Lab",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the stated limit",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b72f889cc478fa29…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "database page ¶2 s1–2",
+   "quote": "Tools are compiled by the Lab according to their potential to bring new capabilities to artistic workflow. They can be generative (producing images or text from data) or assist along the way in the creative process, including in R&D or simulation building.",
+   "claim": "tools are compiled for their potential to bring new capabilities to artistic workflow; they can be generative or assistive",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the database holds",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b72f889cc478fa29…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "database page ¶2 s3–4",
+   "quote": "Tools might be core to the production of the work itself, or play a smaller assistive role. Resources help to imagine and critically conceptualise future AI systems, ways of working and deployment contexts.",
+   "claim": "a tool may be core to the production of the work or play a smaller assistive role; resources help to conceptualise future AI systems and ways of working",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "tools and resources: the two kinds of entry",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b72f889cc478fa29…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "database page, column heads",
+   "quote": "Title Developed by Tool Date Title Author(s) Type Date",
+   "claim": "the database's tool listing is headed Title, Developed by, Tool, Date; its resource listing Title, Author(s), Type, Date",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the maker recorded: developed by, author(s)",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 b72f889cc478fa29…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "feed, page 1, pagination fields (raw JSON)",
+   "quote": "\"last_page\":55 … \"per_page\":5 … \"total\":271",
+   "claim": "the database's feed holds 271 entries (148 tools and 123 resources, by the entries' type field, counted over the saved feed)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the database holds",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4-data/page-01.json (sha256 cc693a7e596c2379…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "feed, entries 307 and 300 (fields as extracted)",
+   "quote": "307 | Tool | Audio | Mustango | Declare Lab | - | - | 2024-04-04 | 2024-05-01 | A multimodal LLM designed for controlled music generation. … Developed with high degree of human user maleability as core goal. … 300 | Tool | Moving Image | Sora | OpenAI | - | - | 2024-04-10 | 2024-04-29 |",
+   "claim": "each tool entry carries a maker in its authors field (Declare Lab for Mustango, OpenAI for Sora); 144 of 148 tool entries and 116 of 123 resource entries name one (counted over the saved feed); a post-2023 description evaluates by the criteria ('human user maleability')",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the maker recorded: developed by, author(s)",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4-data.txt (sha256 5826ebee725258cb…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "feed, entries 321 and 320 (fields as extracted)",
+   "quote": "321 | Tool | Audio | Riffusion | Seth Forsgren and Hayk Martiros | … 320 | Resource | Report | AI: A Museum Planning Toolkit | Oonagh Murphy and Elena Villaespesa | The Museums + AI Network |",
+   "claim": "makers are recorded as persons (Seth Forsgren and Hayk Martiros), as companies and labs, and for resources with authors and publisher",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the maker recorded: developed by, author(s)",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4-data.txt (sha256 5826ebee725258cb…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "feed, entry 5 (fields as extracted)",
+   "quote": "5 | Resource | Interview | Luba Elliott on the Emergence of the Creative AI Field | Eva Jäger, Mercedes Bunz | Serpentine | - | 2020-07-09 | 2020-06-23 | -",
+   "claim": "the database holds a resource of 9 July 2020, 'Luba Elliott on the Emergence of the Creative AI Field', authored by Eva Jäger and Mercedes Bunz, published by Serpentine",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the launch and its contributor",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4-data.txt (sha256 5826ebee725258cb…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "feed, entry 322 (fields as extracted); created_at over all entries",
+   "quote": "322 | Tool | Audio | Mubert | Mubert | - | - | 2024-01-30 | 2024-05-09 |",
+   "claim": "the entries were created from 23 June 2020 to 9 May 2024 (110 in 2020, 26 in 2021, none in 2022, 111 in 2023, 24 in 2024, counted over the saved feed); the latest entry is Mubert, created 9 May 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and lifecycle",
+   "date": "undated page; feed entries created 2020-06-23 to 2024-05-09; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4-data.txt (sha256 5826ebee725258cb…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "news item ¶1",
+   "quote": "On Thursday 9 July the Creative AI Lab launches its website presenting a database for software, research, theory and education at the intersection of art and AI.",
+   "claim": "King's announced on 9 July 2020 the launch of the Lab's website presenting a database for software, research, theory and education at the intersection of art and AI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "launch and lifecycle",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 31e81935a3fb154a…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "news item ¶2",
+   "quote": "Creative AI Lab is a collaboration of the Department of Digital Humanities at King’s College London with the Serpentine. The Creative AI Lab database is an ongoing project to aggregate tools and resources for artists, engineers, curators & researchers interested in incorporating machine learning (ML) and other forms of artificial intelligence (AI) into their practice.",
+   "claim": "King's gives the Lab as a collaboration with the Serpentine and the database as an ongoing project to aggregate tools and resources",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the database is",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 31e81935a3fb154a…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "news item ¶3, quoting Eva Jäger",
+   "quote": "With the Creative AI Lab we have an opportunity to share some of the behind-the-scenes work that’s gone into producing Digital Commissions that use machine learning and/or artificial intelligence.",
+   "claim": "Eva Jäger, quoted: the Lab shares the behind-the-scenes work of Serpentine's Digital Commissions using ML or AI",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims: the back-end",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 31e81935a3fb154a…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "news item ¶4",
+   "quote": "The project is supported by funding from the AHRC and by a LAHP funded PhD scholarship.",
+   "claim": "the project is funded by the AHRC and a LAHP-funded PhD scholarship",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funding",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 31e81935a3fb154a…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "news item ¶5, quoting Mercedes Bunz",
+   "quote": "The research into available tools and creative practices we publish today on the website creative-ai.org will support the work of artists and cultural institutions alike.",
+   "claim": "Mercedes Bunz, quoted: the research into tools and creative practices is published at creative-ai.org",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the database is",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 31e81935a3fb154a…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F46": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "stream item, 09/07/2020",
+   "quote": "Serpentine R&D Platform, in collaboration with the Department of Digital Humanities, King’s College London, launches the Creative AI Lab database",
+   "claim": "HOLO reported the launch of the Creative AI Lab database by Serpentine R&D Platform with King's Digital Humanities on 9 July 2020",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and lifecycle",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 f9e3e433f7f6a388…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F47": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "stream item, s2",
+   "quote": "One of the launch highlights is a list of 65 essential tools, contributed by creative AI curator and researcher Luba Elliott.",
+   "claim": "HOLO: a launch highlight was a list of 65 essential tools contributed by the curator and researcher Luba Elliott",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the launch and its contributor",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 f9e3e433f7f6a388…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F48": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "site head",
+   "quote": "HOLO is an editorial and curatorial platform",
+   "claim": "HOLO describes itself as an editorial and curatorial platform",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the launch and its contributor",
+   "date": "2020-07-09",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 f9e3e433f7f6a388…), whitespace-normalised; ' … ' parts each checked"
+  },
+  "F49": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "rendered page and search (B8.txt record)",
+   "quote": "Wikipedia does not have an article with this exact name. … There were no results matching the query.",
+   "claim": "Wikipedia has no article on the Creative AI Lab or its database, and an article-space search for the phrase returns no results",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (the HTTP responses)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 14026c10553c0a17…), whitespace-normalised; ' … ' parts each checked"
+  }
+ },
+ "field_sources": {
+  "B1": "Serpentine — Creative AI Lab - Serpentine Galleries",
+  "B2": "Creative AI Lab — Creative AI Lab (creative-ai.org/about)",
+  "B3": "King's College London — Creative AI Lab | King's College London",
+  "B4": "Creative AI Lab — Creative AI Lab (creative-ai.org, the database)",
+  "B5": "King's College London — The Department of Digital Humanities and the Serpentine launch Creative AI Lab website (news, 9 July 2020)",
+  "B6": "Notion — Creative AI Database (proud-paprika-325.notion.site; unread)",
+  "B7": "HOLO — Creative AI Lab: Serpentine and King’s College launch database (9 July 2020)",
+  "B8": "Wikipedia — Creative AI Lab (no article; no search result)"
+ }
+}

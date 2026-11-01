@@ -1,0 +1,31 @@
+{
+ "row": "international-dada-archive",
+ "address": "International Dada Archive",
+ "entity": "The International Dada Archive (dada.lib.uiowa.edu; the gateway page www.lib.uiowa.edu/dada/), University of Iowa Libraries, Iowa City: in its own words 'Founded in 1979, the International Dada Archive is a scholarly resource for the study of the historic Dada movement', its collection 'works by and about the dadaists', with primary access through the International Online Bibliography of Dada, 'a catalog containing approximately 60,000 titles', a Digital Dada Library of page-image scans of original Dada-era publications housed in the Special Collections Department, microfilmed manuscript collections with finding aids, and the journal Dada/Surrealism, which it publishes; curator Timothy Shipe (its home page); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/dada-iowa)",
+ "row_type": "C (a public entity on which the archive bears: a university library's archive of the historic Dada movement; an entity of the leesharks.com apparatus authorship census)",
+ "aliases": [
+  {"pattern": "\\bInternational Dada Archive\\b", "flags": "i"},
+  {"pattern": "\\bDigital Dada (Library|Archive)\\b", "flags": "i"},
+  {"pattern": "\\bInternational On-?line Bibliography of Dada\\b", "flags": "i"},
+  {"pattern": "\\bdada\\.lib\\.uiowa\\.edu\\b|\\blib\\.uiowa\\.edu/dada\\b|\\bsdrc\\.lib\\.uiowa\\.edu\\b", "flags": "i"},
+  {"pattern": "\\bDada Archive and Research Center\\b", "flags": "i"}
+ ],
+ "classes": [
+  {
+   "term": "archives of the historic avant-garde (the record of Dada and experimental writing, its periodicals, books and ephemera)",
+   "pattern": "\\b(Dada(ist|ists|ism|-era)?|avant-garde (archive|materials|librar\\w+|and its sources)|archives? of (the )?(avant-garde|experimental (writing|poetry|literature|work)))\\b",
+   "flags": "i",
+   "basis": "field: B5 (dada.lib.uiowa.edu, home: 'Founded in 1979, the International Dada Archive is a scholarly resource for the study of the historic Dada movement.'); B1 (www.lib.uiowa.edu/dada/: 'a resource for additional information about the historic Dada movement and the individual Dada writers and artists'); B4 (International Times: 'publications springing from the avant-garde, deliberately irrational, early 20th-century European “anti-art” art movement known as Dada'). The census's area for the entity, 'avant-garde-archives' (census.json areas; rows[slug == 'dada-iowa'].areas)."
+  },
+  {
+   "term": "name-holding in an aggregator (under which of an author's names a work is held: pen name, pseudonym, heteronym or civil name)",
+   "pattern": "\\b(pen[- ]names?|pseudonymy|civil[- ]name (reduction|attribution|regime)s?|name authorit\\w+|attribution regimes?|under what name|reduction to (a |the )?civil identity)\\b",
+   "flags": "i",
+   "basis": "field: B5 (home, Books by Author: 'SALOMO FRIEDLAENDER (MYNONA)'; 'JULIUS KREKEL (CLÉMENT PANSAERS): ZIEK; EENE MOEDER; HERTETOLKEN' and 'CLÉMENT PANSAERS: … ZIEK; EENE MOEDER; HERTETOLKEN'; 'Iliazd (Ilia Zdanevich)'; 'JEAN (HANS) ARP'), the list itself holding a second name beside the first; the field states no naming policy. Archive: the census's organizing question and its record.name, question and ls_reading for the entity (rows[slug == 'dada-iowa']), the census's area 'heteronymy'; the anchor #940 (EA-HETERONYMY-01)."
+  }
+ ],
+ "classes_note": "Two classes, each sourced by locus before the pass. The first is the field's own kind for the entity (an archive of the historic Dada movement), with the census's area 'avant-garde-archives'; the pattern includes the movement's name, so every deposit that names Dada is a candidate and is read. The second is the census's question for the entity ('name preservation in a historical avant-garde: under which of a dadaist's names a work is filed, and whether one book is held under both'), whose membership the field's own list shows (the double names of the Books by Author list) without a stated policy, and which the archive's census record and anchor #940 read; 'pseudonym' and 'heteronym' as bare terms are left out of the pattern (on the authorship census's first pass, at UbuWeb the same day, they returned the archive's own heteronymic practice in thousands of sentences), and #940 and #1722 are read at their passages by hand (BRIEF-NEW-ROW-AUTHORSHIP §6). The field's facsimile terms ('page-image files only', 'scanned in its entirety') are not made a class: the field sources the kind, and no archive category for scans of originals was found applied to a class before the pass. The aliases are the entity's names and hosts: the International Dada Archive; the Digital Dada Library (International Times: 'Digital Dada Archive'); the International Online Bibliography of Dada; dada.lib.uiowa.edu, the gateway www.lib.uiowa.edu/dada/ and the older sdrc.lib.uiowa.edu host cited in Wikipedia's Dada article; 'Dada Archive and Research Center', the earlier front page's phrase as International Times quotes it. The journal Dada/Surrealism, the University of Iowa Libraries, the Association for the Study of Dada and Surrealism and the curator Timothy Shipe are distinct entities and are not aliases.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 briefs it names; address 'International Dada Archive' (international-dada-archive-aio-20261101, OBS-fb39967fd2a7, ADDR-2f4c121b84ae), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Census anchors #940 and #1722 read at the passages bearing on the entity's kinds; second pass with one citation hop from them.",
+ "hop_from": [940, 1722]
+}

@@ -1,0 +1,30 @@
+{
+ "row": "creative-ai-lab-database",
+ "address": "Creative AI Lab database",
+ "entity": "The Creative AI Tools & Resources Database of the Creative AI Lab (creative-ai.org), the ongoing database of tools and resources for artists, designers, engineers, curators and researchers incorporating machine learning and other forms of AI into their practice, produced by the Creative AI Lab, a partnership of Serpentine (R&D Platform, Arts Technologies) and the Department of Digital Humanities, King's College London, launched 9 July 2020; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/creative-ai-lab-database)",
+ "row_type": "C (a public entity on which the archive bears: a database of AI/ML tools and resources for creative practice; an entity of the leesharks.com authorship census)",
+ "aliases": [
+  {"pattern": "\\bCreative AI Lab\\b", "flags": "i"},
+  {"pattern": "\\bCreative AI (Tools (&|and) Resources )?Database\\b", "flags": "i"},
+  {"pattern": "\\bcreative-ai\\.org\\b", "flags": "i"},
+  {"pattern": "\\bR&D Labyrinths\\b", "flags": "i"}
+ ],
+ "classes": [
+  {
+   "term": "machine participation in making artworks: AI/ML tools in artistic production",
+   "pattern": "\\b(machine assistance|AI[- ]assist(ed|ance)|generative (AI )?tools?|AI tools?|creative AI)\\b",
+   "flags": "i",
+   "basis": "field: B4 (creative-ai.org, the database's page: 'Tools might be core to the production of the work itself, or play a smaller assistive role'); B3 (King's College London research page: 'tools cover a broad spectrum of possibilities presented by the current advances in ML like enabling users to generate images from their own data, create interactive artworks, draft texts or recognise objects'). The census's area for the entity, 'machine-co-authorship' ('Machine participation in authorship: works and practices made with generative models, and records of the writing process'; census.json areas, rows[slug == 'creative-ai-lab-database'].areas)."
+  },
+  {
+   "term": "the record of a maker: who developed or authored a tool or resource",
+   "pattern": "\\b(does the maker exist|developed by|credit(ed|s)? (by|to) name|named contributor)\\b",
+   "flags": "i",
+   "basis": "field: B4 (creative-ai.org, the database's column heads 'Developed by' for tools and 'Author(s)' for resources; its entries' authors field, B4-data). The census's question for the entity (record.name, record.function: 'the launch report credits a contribution by name') and its area 'attribution-and-credit'."
+  }
+ ],
+ "classes_note": "Two classes, each stated by a field source at the locus given and each the census's own area for the entity: (1) machine participation in artistic production, the tools the database aggregates (B4, B3; census area 'machine-co-authorship'); (2) the record of a maker, the database's 'Developed by' and 'Author(s)' columns and its entries' authors field (B4; census record.name and record.function, area 'attribution-and-credit'). The census's anchors, #940 (EA-HETERONYMY-01, AXN:03B8) and #1722 (AI Calls You Fake, AXN:0B2A), are read at the passages that bear on the entity's kind (machine participation; the maker and the work as separate questions; the attribution regime), by BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 6. The organizing question of the census is the census's own and is ledgered with the record. The Lab's people and partners are not aliases of the entity and are not searched alone.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 AGGREGATOR, LABOR and LEFT briefs; address \"Creative AI Lab database\" (creative-ai-lab-database-aio-20261101, OBS-53073fe9a7b0, ADDR-2ffedf2c49fc), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#940, #1722).",
+ "hop_from": [940, 1722]
+}

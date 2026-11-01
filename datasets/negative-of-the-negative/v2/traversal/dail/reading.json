@@ -1,0 +1,1763 @@
+{
+ "row": "dail",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from #195, #940, #729",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on DAIL with the entity named; R, a relation the archive states between DAIL and an archive object; O, an archive category applied to DAIL or to a class the field and the census source for it (records of AI litigation: B1, B2, B3, B5, census kind, record_type, evidence_kind; litigation on who or what can be an author: membership from the census only, its area 'governance' and its ls_reading, with the field's B5 for a distinct tracker). #940 and #1722, the census's anchors, are read at the passages on law, legal names and attribution, and on institutions and standing (BRIEF-NEW-ROW-AUTHORSHIP, Substitutions 6). A bare mention, a copy-provenance line, a reference line, a heteronym's role-name, a practice convention or a list of keywords is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "counts": {
+  "D": 0,
+  "R": 0,
+  "O_candidates": 195,
+  "O_deposits": 76,
+  "H_candidates": 33,
+  "admitted": 6,
+  "admitted_by_hop": 3
+ },
+ "verdicts": [
+  {
+   "dep": 195,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Double Enclosure: the human-authorship requirement as settled by the Thaler litigation (cert. denied 2 March 2026), the question the courts did not reach, the archive's reading of the doctrine as a double enclosure, its forecast of concealment, the training-side litigation as a parallel track and the Compositional Authorship Standard. The archive's categories (enclosure, the confession protocol, compositional judgment) applied to the law on who or what can be an author, the census's class for the entity.",
+   "claims": [
+    "O195-01",
+    "O195-02",
+    "O195-03",
+    "O195-04",
+    "O195-05",
+    "O195-06"
+   ],
+   "cands": [
+    "O0051",
+    "O0052",
+    "O0053",
+    "O0054",
+    "O0055",
+    "O0056",
+    "O0057",
+    "O0058",
+    "O0059"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's anchor, at §0 and §1: legal accountability held apart from exhaustive authorial identity; the civil name as the atomic unit of attribution, to which copyright attaches. The archive's category of the civil-name attribution regime applied to the law of authorship (the class). Its other string candidates (§1 on attribution regimes; §3) restate the same lineage and add nothing at this locus.",
+   "claims": [
+    "O940-01",
+    "O940-02"
+   ],
+   "cands": [
+    "O0098",
+    "O0099",
+    "O0100",
+    "O0101",
+    "O0102",
+    "O0103"
+   ]
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure, §3 Position 2: the archive's taxonomy applied to copyright law's position on AI-assisted works, with the limit it states (no process evidence). #1369 is a later version of the same packet (the same sentence, line 120): grouped with #729 as one lineage (S4), its instances kept in the provenance graph.",
+   "claims": [
+    "O729-01",
+    "O729-02"
+   ],
+   "cands": [
+    "O0065",
+    "O0066",
+    "O0067",
+    "O0068"
+   ]
+  },
+  {
+   "dep": 194,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "Adversarial by Origin (hop from #195): copyright litigation over training 'grinds on years behind the taking' (§I) and uncycled law, formalized without a litigated case, 'maximally broad' (§VII). The archive's category of law without jurisprudence applied to litigation involving AI, the record object the census and the field give for the entity (class 1).",
+   "claims": [
+    "O194-01",
+    "O194-02"
+   ],
+   "cands": [
+    "O0050",
+    "H0008"
+   ]
+  },
+  {
+   "dep": 193,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "r.30 THE RUBY MOOT (hop from #195): the archive's court of record, whose matters in dispute are authorship, names, classifications, erasures and the resolution of entities, and whose power is the record; it receives from #194 that the law of machine meaning is formalized without jurisprudence. The archive's own record of authorship disputes, applied to the class.",
+   "claims": [
+    "O193-01",
+    "O193-02",
+    "O193-03"
+   ],
+   "cands": [
+    "H0007"
+   ]
+  },
+  {
+   "dep": 823,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "Docket No. 1, Mary Lee Sharks v. The Composition Layer (hop from #195): an authorship dispute with the composition layer, pleaded in the alternative. The archive's court applied to an authorship dispute involving AI (class 2).",
+   "claims": [
+    "O823-01"
+   ],
+   "cands": [
+    "H0019"
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "dep": 26,
+   "cands": [
+    "O0001",
+    "O0002"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 40,
+   "cands": [
+    "O0003"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 68,
+   "cands": [
+    "O0004"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 76,
+   "cands": [
+    "O0005"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 90,
+   "cands": [
+    "O0006",
+    "O0007"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 96,
+   "cands": [
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0012",
+    "O0013",
+    "O0014",
+    "O0015",
+    "O0016",
+    "O0017",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 114,
+   "cands": [
+    "O0023"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 119,
+   "cands": [
+    "O0024"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 121,
+   "cands": [
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028",
+    "O0029",
+    "O0030"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 123,
+   "cands": [
+    "O0031"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 128,
+   "cands": [
+    "O0032"
+   ],
+   "reason": "a record of its own image's copyright status; no category applied to the law on authorship or to litigation"
+  },
+  {
+   "dep": 135,
+   "cands": [
+    "O0033",
+    "O0034",
+    "O0035",
+    "O0036",
+    "O0037",
+    "O0038",
+    "O0039",
+    "O0040",
+    "O0041",
+    "O0042",
+    "O0043",
+    "O0044"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 138,
+   "cands": [
+    "O0045"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 161,
+   "cands": [
+    "O0046"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 162,
+   "cands": [
+    "O0047"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 167,
+   "cands": [
+    "O0048",
+    "O0049"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 194,
+   "cands": [
+    "O0050"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 302,
+   "cands": [
+    "O0060"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 482,
+   "cands": [
+    "O0061"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 483,
+   "cands": [
+    "O0062"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 516,
+   "cands": [
+    "O0063"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 645,
+   "cands": [
+    "O0064"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 743,
+   "cands": [
+    "O0069"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 745,
+   "cands": [
+    "O0070",
+    "O0071",
+    "O0072"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 787,
+   "cands": [
+    "O0073"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 825,
+   "cands": [
+    "O0074"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 833,
+   "cands": [
+    "O0075"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 839,
+   "cands": [
+    "O0076"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 848,
+   "cands": [
+    "O0077"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 849,
+   "cands": [
+    "O0078",
+    "O0079",
+    "O0080",
+    "O0081",
+    "O0082"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 851,
+   "cands": [
+    "O0083",
+    "O0084",
+    "O0085",
+    "O0086"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 852,
+   "cands": [
+    "O0087"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 856,
+   "cands": [
+    "O0088",
+    "O0089"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 863,
+   "cands": [
+    "O0090"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 877,
+   "cands": [
+    "O0091"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 921,
+   "cands": [
+    "O0092"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 925,
+   "cands": [
+    "O0093"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 926,
+   "cands": [
+    "O0094",
+    "O0095"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 927,
+   "cands": [
+    "O0096",
+    "O0097"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 994,
+   "cands": [
+    "O0104",
+    "O0105"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 996,
+   "cands": [
+    "O0106",
+    "O0107",
+    "O0108",
+    "O0109",
+    "O0110",
+    "O0111",
+    "O0112",
+    "O0113",
+    "O0114",
+    "O0115",
+    "O0116",
+    "O0117",
+    "O0118",
+    "O0119",
+    "O0120",
+    "O0121",
+    "O0122"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1001,
+   "cands": [
+    "O0123",
+    "O0124",
+    "O0125"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1003,
+   "cands": [
+    "O0126",
+    "O0127",
+    "O0128",
+    "O0129",
+    "O0130",
+    "O0131"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1009,
+   "cands": [
+    "O0132",
+    "O0133",
+    "O0134",
+    "O0135",
+    "O0136",
+    "O0137",
+    "O0138",
+    "O0139",
+    "O0140",
+    "O0141",
+    "O0142"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1081,
+   "cands": [
+    "O0143",
+    "O0144"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1157,
+   "cands": [
+    "O0145",
+    "O0146"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1172,
+   "cands": [
+    "O0147",
+    "O0148"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1178,
+   "cands": [
+    "O0149"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1183,
+   "cands": [
+    "O0150"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1194,
+   "cands": [
+    "O0151",
+    "O0152",
+    "O0153",
+    "O0154",
+    "O0155",
+    "O0156"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1202,
+   "cands": [
+    "O0157"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1209,
+   "cands": [
+    "O0158"
+   ],
+   "reason": "a superseded version of #194; its passage restates #195 (the Double Enclosure join); one lineage with #195"
+  },
+  {
+   "dep": 1238,
+   "cands": [
+    "O0159"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1242,
+   "cands": [
+    "O0160"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1243,
+   "cands": [
+    "O0161"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1247,
+   "cands": [
+    "O0162",
+    "O0163",
+    "O0164",
+    "O0165",
+    "O0166"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1281,
+   "cands": [
+    "O0167"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1369,
+   "cands": [
+    "O0168",
+    "O0169",
+    "O0170",
+    "O0171"
+   ],
+   "reason": "a later version of #729 (the same passage); grouped with #729 as one lineage under S4, not ledgered separately"
+  },
+  {
+   "dep": 1386,
+   "cands": [
+    "O0172"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1387,
+   "cands": [
+    "O0173"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1396,
+   "cands": [
+    "O0174"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1397,
+   "cands": [
+    "O0175"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1401,
+   "cands": [
+    "O0176"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1404,
+   "cands": [
+    "O0177",
+    "O0178",
+    "O0179",
+    "O0180"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1429,
+   "cands": [
+    "O0181",
+    "O0182"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1430,
+   "cands": [
+    "O0183"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1444,
+   "cands": [
+    "O0184"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1540,
+   "cands": [
+    "O0185"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1634,
+   "cands": [
+    "O0186",
+    "O0187",
+    "O0188",
+    "O0189"
+   ],
+   "reason": "Copyright Office statements on restored works' terms and on titles; the class is the law on who or what can be an author, which these passages do not address"
+  },
+  {
+   "dep": 1658,
+   "cands": [
+    "O0190",
+    "O0191",
+    "O0192"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1684,
+   "cands": [
+    "O0193"
+   ],
+   "reason": "the Prediction Index restates #195's forecast (concealment) as an index entry; one lineage with #195"
+  },
+  {
+   "dep": 1692,
+   "cands": [
+    "O0194"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1714,
+   "cands": [
+    "O0195"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 91,
+   "cands": [
+    "H0001"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 92,
+   "cands": [
+    "H0002"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 100,
+   "cands": [
+    "H0003"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 104,
+   "cands": [
+    "H0004"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 105,
+   "cands": [
+    "H0005"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 112,
+   "cands": [
+    "H0006"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 196,
+   "cands": [
+    "H0009"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 204,
+   "cands": [
+    "H0010"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 349,
+   "cands": [
+    "H0011"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 514,
+   "cands": [
+    "H0012"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 522,
+   "cands": [
+    "H0013"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 561,
+   "cands": [
+    "H0014"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 673,
+   "cands": [
+    "H0015"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 702,
+   "cands": [
+    "H0016"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 725,
+   "cands": [
+    "H0017"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 739,
+   "cands": [
+    "H0018"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 828,
+   "cands": [
+    "H0020"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 936,
+   "cands": [
+    "H0021"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 937,
+   "cands": [
+    "H0022"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 939,
+   "cands": [
+    "H0023"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1190,
+   "cands": [
+    "H0024",
+    "H0025"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1209,
+   "cands": [
+    "H0026"
+   ],
+   "reason": "a superseded version of #194; its passage restates #195 (the Double Enclosure join); one lineage with #195"
+  },
+  {
+   "dep": 1369,
+   "cands": [
+    "H0027",
+    "H0028"
+   ],
+   "reason": "a later version of #729 (the same passage); grouped with #729 as one lineage under S4, not ledgered separately"
+  },
+  {
+   "dep": 1370,
+   "cands": [
+    "H0029"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1384,
+   "cands": [
+    "H0030"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1386,
+   "cands": [
+    "H0031"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1680,
+   "cands": [
+    "H0032"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1684,
+   "cands": [
+    "H0033"
+   ],
+   "reason": "the Prediction Index restates #195's forecast (concealment) as an index entry; one lineage with #195"
+  },
+  {
+   "dep": 1722,
+   "cands": [],
+   "reason": "the census's anchor, read at Part One (the four questions, lines 73–90), Part Two and the note on intent (92–106), Part Three §4 'Too small to be real' (165–183) and Part Eight (392–410): no passage applies its categories to records of AI litigation or to the law on who or what can be an author; the composition at this address raises its subject's standing (a school added) and lowers no existence; read, not admitted"
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 26,
+   "cands": [
+    "O0001",
+    "O0002"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 40,
+   "cands": [
+    "O0003"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 68,
+   "cands": [
+    "O0004"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 76,
+   "cands": [
+    "O0005"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 90,
+   "cands": [
+    "O0006",
+    "O0007"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 96,
+   "cands": [
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011",
+    "O0012",
+    "O0013",
+    "O0014",
+    "O0015",
+    "O0016",
+    "O0017",
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 114,
+   "cands": [
+    "O0023"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 119,
+   "cands": [
+    "O0024"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 121,
+   "cands": [
+    "O0025",
+    "O0026",
+    "O0027",
+    "O0028",
+    "O0029",
+    "O0030"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 123,
+   "cands": [
+    "O0031"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 128,
+   "cands": [
+    "O0032"
+   ],
+   "reason": "a record of its own image's copyright status; no category applied to the law on authorship or to litigation"
+  },
+  {
+   "dep": 135,
+   "cands": [
+    "O0033",
+    "O0034",
+    "O0035",
+    "O0036",
+    "O0037",
+    "O0038",
+    "O0039",
+    "O0040",
+    "O0041",
+    "O0042",
+    "O0043",
+    "O0044"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 138,
+   "cands": [
+    "O0045"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 161,
+   "cands": [
+    "O0046"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 162,
+   "cands": [
+    "O0047"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 167,
+   "cands": [
+    "O0048",
+    "O0049"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 194,
+   "cands": [
+    "O0050"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 302,
+   "cands": [
+    "O0060"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 482,
+   "cands": [
+    "O0061"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 483,
+   "cands": [
+    "O0062"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 516,
+   "cands": [
+    "O0063"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 645,
+   "cands": [
+    "O0064"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 743,
+   "cands": [
+    "O0069"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 745,
+   "cands": [
+    "O0070",
+    "O0071",
+    "O0072"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 787,
+   "cands": [
+    "O0073"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 825,
+   "cands": [
+    "O0074"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 833,
+   "cands": [
+    "O0075"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 839,
+   "cands": [
+    "O0076"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 848,
+   "cands": [
+    "O0077"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 849,
+   "cands": [
+    "O0078",
+    "O0079",
+    "O0080",
+    "O0081",
+    "O0082"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 851,
+   "cands": [
+    "O0083",
+    "O0084",
+    "O0085",
+    "O0086"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 852,
+   "cands": [
+    "O0087"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 856,
+   "cands": [
+    "O0088",
+    "O0089"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 863,
+   "cands": [
+    "O0090"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 877,
+   "cands": [
+    "O0091"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 921,
+   "cands": [
+    "O0092"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 925,
+   "cands": [
+    "O0093"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 926,
+   "cands": [
+    "O0094",
+    "O0095"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 927,
+   "cands": [
+    "O0096",
+    "O0097"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 994,
+   "cands": [
+    "O0104",
+    "O0105"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 996,
+   "cands": [
+    "O0106",
+    "O0107",
+    "O0108",
+    "O0109",
+    "O0110",
+    "O0111",
+    "O0112",
+    "O0113",
+    "O0114",
+    "O0115",
+    "O0116",
+    "O0117",
+    "O0118",
+    "O0119",
+    "O0120",
+    "O0121",
+    "O0122"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1001,
+   "cands": [
+    "O0123",
+    "O0124",
+    "O0125"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1003,
+   "cands": [
+    "O0126",
+    "O0127",
+    "O0128",
+    "O0129",
+    "O0130",
+    "O0131"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1009,
+   "cands": [
+    "O0132",
+    "O0133",
+    "O0134",
+    "O0135",
+    "O0136",
+    "O0137",
+    "O0138",
+    "O0139",
+    "O0140",
+    "O0141",
+    "O0142"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1081,
+   "cands": [
+    "O0143",
+    "O0144"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1157,
+   "cands": [
+    "O0145",
+    "O0146"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1172,
+   "cands": [
+    "O0147",
+    "O0148"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1178,
+   "cands": [
+    "O0149"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1183,
+   "cands": [
+    "O0150"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1194,
+   "cands": [
+    "O0151",
+    "O0152",
+    "O0153",
+    "O0154",
+    "O0155",
+    "O0156"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1202,
+   "cands": [
+    "O0157"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1209,
+   "cands": [
+    "O0158"
+   ],
+   "reason": "a superseded version of #194; its passage restates #195 (the Double Enclosure join); one lineage with #195"
+  },
+  {
+   "dep": 1238,
+   "cands": [
+    "O0159"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1242,
+   "cands": [
+    "O0160"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1243,
+   "cands": [
+    "O0161"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1247,
+   "cands": [
+    "O0162",
+    "O0163",
+    "O0164",
+    "O0165",
+    "O0166"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1281,
+   "cands": [
+    "O0167"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1369,
+   "cands": [
+    "O0168",
+    "O0169",
+    "O0170",
+    "O0171"
+   ],
+   "reason": "a later version of #729 (the same passage); grouped with #729 as one lineage under S4, not ledgered separately"
+  },
+  {
+   "dep": 1386,
+   "cands": [
+    "O0172"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1387,
+   "cands": [
+    "O0173"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1396,
+   "cands": [
+    "O0174"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1397,
+   "cands": [
+    "O0175"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1401,
+   "cands": [
+    "O0176"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1404,
+   "cands": [
+    "O0177",
+    "O0178",
+    "O0179",
+    "O0180"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1429,
+   "cands": [
+    "O0181",
+    "O0182"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1430,
+   "cands": [
+    "O0183"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1444,
+   "cands": [
+    "O0184"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1540,
+   "cands": [
+    "O0185"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1634,
+   "cands": [
+    "O0186",
+    "O0187",
+    "O0188",
+    "O0189"
+   ],
+   "reason": "Copyright Office statements on restored works' terms and on titles; the class is the law on who or what can be an author, which these passages do not address"
+  },
+  {
+   "dep": 1658,
+   "cands": [
+    "O0190",
+    "O0191",
+    "O0192"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1684,
+   "cands": [
+    "O0193"
+   ],
+   "reason": "the Prediction Index restates #195's forecast (concealment) as an index entry; one lineage with #195"
+  },
+  {
+   "dep": 1692,
+   "cands": [
+    "O0194"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 1714,
+   "cands": [
+    "O0195"
+   ],
+   "reason": "the candidate sentence names a legal name, legal identity or human authorship in the archive's own practice (heteronym protection, a byline convention, a data-quality property, a metadata field) and makes no claim on the law or litigation on who or what can be an author, nor on records of AI litigation (§3.4: a bare mention or a practice convention is not a claim)"
+  },
+  {
+   "dep": 91,
+   "cands": [
+    "H0001"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 92,
+   "cands": [
+    "H0002"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 100,
+   "cands": [
+    "H0003"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 104,
+   "cands": [
+    "H0004"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 105,
+   "cands": [
+    "H0005"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 112,
+   "cands": [
+    "H0006"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 196,
+   "cands": [
+    "H0009"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 204,
+   "cands": [
+    "H0010"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 349,
+   "cands": [
+    "H0011"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 514,
+   "cands": [
+    "H0012"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 522,
+   "cands": [
+    "H0013"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 561,
+   "cands": [
+    "H0014"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 673,
+   "cands": [
+    "H0015"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 702,
+   "cands": [
+    "H0016"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 725,
+   "cands": [
+    "H0017"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 739,
+   "cands": [
+    "H0018"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 828,
+   "cands": [
+    "H0020"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 936,
+   "cands": [
+    "H0021"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 937,
+   "cands": [
+    "H0022"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 939,
+   "cands": [
+    "H0023"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1190,
+   "cands": [
+    "H0024",
+    "H0025"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1209,
+   "cands": [
+    "H0026"
+   ],
+   "reason": "a superseded version of #194; its passage restates #195 (the Double Enclosure join); one lineage with #195"
+  },
+  {
+   "dep": 1369,
+   "cands": [
+    "H0027",
+    "H0028"
+   ],
+   "reason": "a later version of #729 (the same passage); grouped with #729 as one lineage under S4, not ledgered separately"
+  },
+  {
+   "dep": 1370,
+   "cands": [
+    "H0029"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1384,
+   "cands": [
+    "H0030"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1386,
+   "cands": [
+    "H0031"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1680,
+   "cands": [
+    "H0032"
+   ],
+   "reason": "hop candidate read at its citation of the admitted deposit: it cites or is cited by #195, #729 or #940 without a claim on litigation involving AI or on the law of authorship"
+  },
+  {
+   "dep": 1684,
+   "cands": [
+    "H0033"
+   ],
+   "reason": "the Prediction Index restates #195's forecast (concealment) as an index entry; one lineage with #195"
+  },
+  {
+   "dep": 1722,
+   "cands": [],
+   "reason": "the census's anchor, read at Part One (the four questions, lines 73–90), Part Two and the note on intent (92–106), Part Three §4 'Too small to be real' (165–183) and Part Eight (392–410): no passage applies its categories to records of AI litigation or to the law on who or what can be an author; the composition at this address raises its subject's standing (a school added) and lowers no existence; read, not admitted"
+  }
+ ]
+}

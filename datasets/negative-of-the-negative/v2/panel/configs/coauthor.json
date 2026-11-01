@@ -1,0 +1,60 @@
+{
+ "row": "coauthor",
+ "address": "CoAuthor dataset",
+ "entity": "CoAuthor ('CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities'), the human-AI collaborative writing dataset of Mina Lee, Percy Liang and Qian Yang (CHI 2022; arXiv:2201.06796): interactions between 63 writers and four instances of GPT-3 across 1445 writing sessions, recorded at the keystroke level, with a replay interface at coauthor.stanford.edu; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/coauthor)",
+ "row_type": "C (a public entity on which the archive bears: a research dataset of human-AI co-writing sessions; an entity of the leesharks.com apparatus authorship census, host relation 'empirical comparator')",
+ "aliases": [
+  {
+   "pattern": "\\bCoAuthor\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "coauthor\\.stanford\\.edu",
+   "flags": "i"
+  },
+  {
+   "pattern": "2201\\.06796",
+   "flags": ""
+  },
+  {
+   "pattern": "coauthor-interface",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "human-AI collaborative writing: writing with a language model",
+   "pattern": "\\b(human-AI (collaborative )?(co-?)?writing|co-?writ(ing|ten|es) with (an? )?(AI|LLMs?|language models?|GPT|models?)|AI-assisted writing|writing assistants?)\\b",
+   "flags": "i",
+   "basis": "field: B1 (coauthor.stanford.edu, the dataset's own page, card 1: 'CoAuthor is a human-AI collaborative writing dataset'); B2 (arXiv card 2, title: 'CoAuthor: Designing a Human-AI Collaborative Writing Dataset for Exploring Language Model Capabilities'). The census's area for the entity, 'machine-co-authorship' ('Machine participation in authorship: works and practices made with generative models, and records of the writing process'; census.json areas, rows[slug == 'coauthor'].areas)."
+  },
+  {
+   "term": "crowd workers: writers recruited from a crowd-work platform",
+   "pattern": "\\b(Mechanical Turk|MTurk|crowd ?work(ers?|ing)?|crowdsourc(ed|ing))\\b",
+   "flags": "i",
+   "basis": "field: B1 (the dataset's own page: 'Writers - Qualified crowd workers from Amazon Mechanical Turk'); B5 (alphaXiv card 5: '63 qualified crowd workers who completed 1,445 writing sessions'). Not a census area; the census's unit and record_object count the writers ('63 writers')."
+  },
+  {
+   "term": "the attribution of text to human or model: the share of a text written by humans",
+   "pattern": "\\b(human-(written|authored)|(written|authored) by (a )?humans?|percentage of (the )?text|authorship attribution|identifying (the )?authors? of)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the dataset's own page: 'Percentage of text written by humans: 72.6%'; 'Identifying authors of sentences (Google Colab)'). The census's area for the entity, 'attribution-and-credit' ('Attribution, credit and identity infrastructure: how contributions and names are recorded, disclosed and resolved'), and its record.function ('how authorship of a session's text is assigned is not recorded in the saved source')."
+  }
+ ],
+ "classes_note": "Three classes, each stated by a field source at the locus given and each tied to the census's own area, unit or record field for the entity: (1) human-AI collaborative writing, what the dataset records (B1, B2; census area 'machine-co-authorship'); (2) crowd workers, who its writers were (B1, B5; the census's unit and count of writers); (3) the attribution of text to human or model, the dataset's percentage and its tutorial for identifying sentence authors (B1; census area 'attribution-and-credit' and record.function). The census's anchors, #940 (EA-HETERONYMY-01, AXN:03B8) and #1722 (AI Calls You Fake, AXN:0B2A), are read at the passages that bear on the entity's kind (machine participation, collaborative authorship, the attribution of authorship to names), by BRIEF-NEW-ROW-AUTHORSHIP §6. The common noun 'coauthor' is not an alias: the alias is case-sensitive ('CoAuthor'), and the authors' names are not searched alone. 'GPT-3' is the model the dataset studies and is not a class of the entity.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 AGGREGATOR, LABOR and LEFT briefs; address \"CoAuthor dataset\" (coauthor-dataset-aio-20261101, OBS-d52213cbd4ee, ADDR-ca145bdd5b06), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#1680, #941, #856, #729, #745, #666, #161, #855, #1577, #1540, #1719); the anchors #940 and #1722 are read by the brief's rule and are not hop roots.",
+ "hop_from": [
+  1680,
+  941,
+  856,
+  729,
+  745,
+  666,
+  161,
+  855,
+  1577,
+  1540,
+  1719
+ ]
+}

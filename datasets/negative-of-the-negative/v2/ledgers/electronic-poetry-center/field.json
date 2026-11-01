@@ -1,0 +1,1221 @@
+{
+ "row": "electronic-poetry-center",
+ "address": "Electronic Poetry Center",
+ "addresses": [
+  "Electronic Poetry Center"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext, or the card's snippet; 51/51 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools, marked by origin and pool. B_D, the disclosed pool: 'card', every card on T's rail (B1 the EPC's home page at writing.upenn.edu/epc/, also the census's own page epc--home, byte-identical; B2 the Wikipedia article, also the entity's Wikipedia source; B3 the ELMCIP Knowledge Base record; B4 the Academy of American Poets' entry of 2004); 'body_named', the sources T's body names and links (B6 PennSound and B7 UbuWeb, the partners of its Partnerships line, their home pages, byte-identical to the census's own pages for those rows). B_R, the reference pool: 'own_page', the census's own page T did not surface (B5 the About page). The census read one third-party source, Wikipedia, which is card B2 and is carried once, in B_D; so there is no 'census_third_party' source in B_R. A source in both pools is carried once, in B_D.",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B6",
+   "B7"
+  ],
+  "B_R": [
+   "B5"
+  ]
+ },
+ "lineage_note": "Lineages: what it is (B4 earliest; B5, B2, B3); founding and founders (B4, B5, B2, the record's both dates); the goal (B5; B3 quoting the site); from Buffalo to Penn (B5, B3, B1); holdings: the libraries, author pages, E-Poetry, books and journal runs (B4, B5, B3, B1); the field's own record (B5, B1); names and the authorial function (B5, B3); E-Poetry 2001 (B5, B2, B3); reach and reception (B4, B2); partners and neighbours (B2, B6, B7); currency (B4, B2, B1); rights and limits (B5). The census's evidence quotes (operator_glazier, operator_bernstein, publisher, founded, goal, self_description, libraries, archives, cpcw, affiliation, copyright from epc--about; sulfur, silliman, author_pages, artifice, latest_item, katzenelson, broken_links, pierre_joris from epc--home; wp_* from epc--wikipedia) restate B5, B1 and B2 (one lineage each with the page, which keeps the earliest date).",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B1, B5, B6 and B7 the census's saved copies (B1, B6, B7 also refetched, byte-identical); B2.wiki the raw wikitext; T1-electronic-poetry-center-aio-20261101.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1 (and the census own page epc--home, byte-identical)",
+   "card": "University of Pennsylvania — Electronic Poetry Center",
+   "url": "https://writing.upenn.edu/epc/",
+   "kind": "Overview card (the EPC's home page: a list of links to new items, the Digital Library, author pages and memorial entries); the census's own page epc--home",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B1.html",
+     "sha256": "443499b7dcc7846f0144a3ecbd5937abb961f7238ba032001a50c3220f165db5"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B1.txt",
+     "sha256": "aacc9405af6b25e18b36c0382270926a3aed0f38386740d0db935672071cc633"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:25Z",
+    "http": 200,
+    "url": "https://writing.upenn.edu/epc/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B1.html",
+    "raw_sha256": "443499b7dcc7846f0144a3ecbd5937abb961f7238ba032001a50c3220f165db5",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B1.txt"
+    ],
+    "census_copy": {
+     "src": "epc--home",
+     "sha256": "443499b7dcc7846f0144a3ecbd5937abb961f7238ba032001a50c3220f165db5",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:50Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "no (the home page names no operator; the About page does)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "URL from the card's site and title (the EPC's address). The fetch is byte-identical to the census's saved copy epc--home, so the card and the census's own page are one page, carried once, in B_D; B1.txt is the census's text of the same bytes.",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-poetry-center-aio-20261101",
+     "card": 1
+    }
+   ],
+   "also_origin": "own_page",
+   "card_title": "Electronic Poetry Center",
+   "card_snippet": "Electronic Poetry Center: Updates and resources including Brian Kim Stefans writings, Sulfur full run, Tina Darragh (1950-2023), Tranter's Journal index, Ted Gr...",
+   "card_note": "the snippet as the registry's cite_list carries it (the paste's card rail renders the same text)"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2 (and the entity's Wikipedia article, the census's epc--wikipedia)",
+   "card": "Wikipedia — Electronic Poetry Center - Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Electronic_Poetry_Center",
+   "kind": "Overview card; Wikipedia article 'Electronic Poetry Center' (no redirect; a stub, last edited 2 March 2024)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B2.html",
+     "sha256": "a9da21abe1a3d7132d5e5d50f920a83b582b45c1ed95c6ac1ab07aca3be53a8a"
+    },
+    "B2.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B2.wiki",
+     "sha256": "7b0d8e7cf7ad4dabee6e7bd9f96f9b313fee71024a636277938785e0c9810902"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B2.txt",
+     "sha256": "c13e2a749e608a7c4c166d2e5f91fb7f02a5161e9c76354137cec465fbab910b"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:26Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Electronic_Poetry_Center",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B2.html",
+    "raw_sha256": "a9da21abe1a3d7132d5e5d50f920a83b582b45c1ed95c6ac1ab07aca3be53a8a",
+    "wikitext": {
+     "url": "https://en.wikipedia.org/w/index.php?title=Electronic_Poetry_Center&action=raw",
+     "http": 200,
+     "at": "2026-11-01T06:15:26Z",
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B2.wiki",
+     "sha256": "7b0d8e7cf7ad4dabee6e7bd9f96f9b313fee71024a636277938785e0c9810902"
+    },
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B2.txt"
+    ],
+    "census_copy": {
+     "src": "epc--wikipedia",
+     "sha256": "6f4f0878a826b5729a5411a7b58daace5c437024a9bfcf82f5eb8c5b8c28e8dc",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:51Z",
+     "agrees": false,
+     "note": "the same revision (oldid 1211397610, revisionsize 2707); the rendered bytes differ only in server-generated values (request id, host name, response time)"
+    }
+   },
+   "names_operator": "yes ('founded on July 10, 1994 by Loss Pequeño Glazier and Charles Bernstein')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card and the entity's Wikipedia article are one source (B2), carried once in B_D. The card's snippet ('Overview: … contemporary formally innovative, experimental, and avant-garde poetries') is not a sentence of the saved article: it joins the lead's definition and ¶2's 'contemporary formally innovative poetries' and ¶2's 'experimental, progressive, and avant-garde poetics' (F23, recorded as the card's text). B2.txt is extracted from this fetch with scripts and styles stripped.",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-poetry-center-aio-20261101",
+     "card": 2
+    }
+   ],
+   "also_origin": "wikipedia",
+   "card_title": "Electronic Poetry Center - Wikipedia",
+   "card_snippet": "Overview: Electronic Poetry Center (EPC) is an online resource for digital poetry and contemporary formally innovative, experimental, and avant-garde poetries. ...",
+   "card_note": "the snippet as the registry's cite_list carries it (the paste's card rail renders the same text)"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 3",
+   "card": "ELMCIP Knowledge Base — Electronic Poetry Center (EPC)",
+   "url": "https://elmcip.net/organization/electronic-poetry-center-epc",
+   "kind": "Overview card; ELMCIP Electronic Literature Knowledge Base organization record (node 842), its description quoted 'From the organization´s website'",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B3.html",
+     "sha256": "43051c85acdae82c1eecd13724579b94bcb6062c855748af8655f3351e334254"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B3.txt",
+     "sha256": "d93765e341aba4879463efccf967667570eef328b9c9c6962ae2500b7ee57330"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:46Z",
+    "http": 200,
+    "url": "https://elmcip.net/organization/electronic-poetry-center-epc",
+    "final_url": "https://elmcip.net/organization/electronic-poetry-center-epc/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B3.html",
+    "raw_sha256": "43051c85acdae82c1eecd13724579b94bcb6062c855748af8655f3351e334254",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B3.txt"
+    ],
+    "tries": [
+     {
+      "url": "https://elmcip.net/organization/electronic-poetry-center",
+      "http": 404
+     },
+     {
+      "url": "https://elmcip.net/search/node?keys=Electronic+Poetry+Center",
+      "http": 404,
+      "note": "the site search, not saved"
+     }
+    ],
+    "searches": [
+     "WebSearch 'ELMCIP Knowledge Base \"Electronic Poetry Center (EPC)\"' (listing pages only); the URL taken from the card's title by ELMCIP's organization path"
+    ]
+   },
+   "names_operator": "yes ('Record posted by: Patricia Tomaszek'; the EPC's own words quoted)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's snippet carries 'Email: glazier@buffalo.edu', the postal code '14260' and 'Short description: Fr...'; none of the three is in the saved page (HTML or text): the snippet is the card's text (F31) and the page's description stands as fetched.",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-poetry-center-aio-20261101",
+     "card": 3
+    }
+   ],
+   "card_title": "Electronic Poetry Center (EPC)",
+   "card_snippet": "Electronic Poetry Center (EPC) * Electronic Poetry Center * Email: glazier@buffalo.edu * Revisions required 14260 Buffalo United States US Short description: Fr...",
+   "card_note": "the snippet as the registry's cite_list carries it (the paste's card rail renders the same text)"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 4",
+   "card": "poets.org | Academy of American Poets — Electronic Poetry Center | Academy of American Poets",
+   "url": "https://poets.org/text/electronic-poetry-center",
+   "kind": "Overview card; the Academy of American Poets' Online Resources entry, posted 9 November 2004",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B4.html",
+     "sha256": "2c02bc57c9b9f6d262c3fa0aeefed6a3cf7566cbe93b738fc4eb80171c1f9e20"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B4.txt",
+     "sha256": "432eab756435166d7b9c79d5850de996ada46e833dd6b8a2179d183b1e2577f1"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:27Z",
+    "http": 200,
+    "url": "https://poets.org/text/electronic-poetry-center",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B4.html",
+    "raw_sha256": "2c02bc57c9b9f6d262c3fa0aeefed6a3cf7566cbe93b738fc4eb80171c1f9e20",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B4.txt"
+    ],
+    "searches": [
+     "WebSearch 'poets.org \"Electronic Poetry Center\" Academy of American Poets Bernstein Glazier' (the page found)"
+    ]
+   },
+   "names_operator": "yes ('Created and maintained by poet and educator Charles Bernstein and Loss Pequeno Glazier')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Found by WebSearch on title and site; the card snippet's 'Page submenu block Created and maintained …' is the page's own text.",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-poetry-center-aio-20261101",
+     "card": 4
+    }
+   ],
+   "card_title": "Electronic Poetry Center | Academy of American Poets",
+   "card_snippet": "Page submenu block Created and maintained by poet and educator Charles Bernstein and Loss Pequeno Glazier, a renowned expert in the field of digital poetry, the...",
+   "card_note": "the snippet as the registry's cite_list carries it (the paste's card rail renders the same text)"
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the census's own page epc--about (not surfaced by T; admitted by the operator's ruling of 2026-10-29)",
+   "card": "Electronic Poetry Center — About",
+   "url": "https://writing.upenn.edu/epc/about/",
+   "kind": "own page (About: staff by role, history, holdings, collaborations, ©2011)",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B5.html",
+     "sha256": "8d9fb23b683fa83a6ffc32e08bad29878384c0e38fb91c994ac2fcb63054e4eb"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B5.txt",
+     "sha256": "42364b69659cad046432206ba8e2a4a8c3bf9c81cee964c0a3aa2f82bb500bff"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "epc--about",
+     "sha256": "8d9fb23b683fa83a6ffc32e08bad29878384c0e38fb91c994ac2fcb63054e4eb",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:50Z",
+     "agrees": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B5.html",
+    "raw_sha256": "8d9fb23b683fa83a6ffc32e08bad29878384c0e38fb91c994ac2fcb63054e4eb",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B5.txt"
+    ],
+    "note": "copied from the census's saved copy (gunzipped), sha256 matching the manifest; not refetched"
+   },
+   "names_operator": "yes ('Loss Pequeño Glazier , Director & Founder'; 'Al Filreis , Publisher')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The census's second own page; T did not surface it (no card is the About page, and the body names no source). In B_R: it cannot show what the composition had before it (§3.1(a)). The census's evidence for operator, publisher, founded, goal, self_description, libraries, archives, cpcw, affiliation and copyright restates this page (one lineage each with the page, which keeps the earliest date).",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "role": "named and linked in T's body ('Partnerships: … such as PennSound and UbuWeb'); the census's own page pennsound--home, byte-identical",
+   "card": "PennSound — home page",
+   "url": "https://writing.upenn.edu/pennsound/",
+   "kind": "body-named source (PennSound's home page; the link in T is a Google redirect, taken as the partner's home page)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B6.html",
+     "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B6.txt",
+     "sha256": "9501ca77e246dd08d879e8b99dcf5e35e79241dc783697ce1566aa03b22c697a"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:28Z",
+    "http": 200,
+    "url": "https://writing.upenn.edu/pennsound/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B6.html",
+    "raw_sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B6.txt"
+    ],
+    "census_copy": {
+     "src": "pennsound--home",
+     "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:48Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "no (names Al Filreis in its navigation, the EPC's publisher for CPCW)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The body links PennSound through a Google redirect URL (google.com/goto?url=…, opaque; not followed); the source is taken as PennSound's home page. The saved text says nothing of the EPC by name; its claims stand for what the partner is in its own pages (F49, F50).",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-poetry-center-aio-20261101",
+     "body": "Partnerships line"
+    }
+   ]
+  },
+  {
+   "id": "B7",
+   "origin": "body_named",
+   "pool": "B_D",
+   "role": "named and linked in T's body ('Partnerships: … such as PennSound and UbuWeb'); the census's own page ubuweb--home, byte-identical",
+   "card": "UbuWeb — home page",
+   "url": "https://ubu.com/",
+   "kind": "body-named source (UbuWeb's home page; the link in T is a Google redirect, taken as the partner's home page)",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B7.html",
+     "sha256": "1f9ba3a3325f02a0ff4e76f5e281d431f611cccb454fe000989e1af8e66be489"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B7.txt",
+     "sha256": "a965e98115ea169d0f3c363509bcbafe34838bb47360fbd7bdbd4a7e35e1e9f6"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:29Z",
+    "http": 200,
+    "url": "https://ubu.com/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B7.html",
+    "raw_sha256": "1f9ba3a3325f02a0ff4e76f5e281d431f611cccb454fe000989e1af8e66be489",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/electronic-poetry-center-20261101/B7.txt"
+    ],
+    "census_copy": {
+     "src": "ubuweb--home",
+     "sha256": "1f9ba3a3325f02a0ff4e76f5e281d431f611cccb454fe000989e1af8e66be489",
+     "read": "2026-11-01",
+     "http": "200",
+     "fetched": "2026-11-01T04:07:47Z",
+     "agrees": true
+    }
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "As B6. The saved text says nothing of the EPC; its claim stands for what the partner is in its own words (F51).",
+   "surfaced_by_T": [
+    {
+     "slug": "electronic-poetry-center-aio-20261101",
+     "body": "Partnerships line"
+    }
+   ]
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page title and home list",
+   "quote": "Electronic Poetry Center",
+   "claim": "the page's name for the entity, at writing.upenn.edu/epc/",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Digital Library entry",
+   "quote": "Digital Libary first stop for EPC resources",
+   "claim": "the Digital Library as the first stop for the EPC's resources",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings: the libraries",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Sulfur)",
+   "quote": "Sulfur , ed. Clayton Eshleman full run: CEP & one large pdf of full set .",
+   "claim": "the full run of Sulfur, ed. Clayton Eshleman, as PDFs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: books, journal runs, editions",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Silliman)",
+   "quote": "Ron SIlliman: Complete Blog History ( topic headings for all blog entries 2000-2020",
+   "claim": "Ron Silliman's complete blog history, topic headings for entries 2000 to 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: books, journal runs, editions",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Author Pages)",
+   "quote": "Author Pages : Mina Loy and Bill Keith",
+   "claim": "author pages for Mina Loy and Bill Keith",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings: author pages",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Artifice of Absorption; Raworth)",
+   "quote": "EPC Digital Edition of Artifice of Absorption … Tom Raworth's NOTES (mirror)",
+   "claim": "an EPC digital edition of Artifice of Absorption; a mirror of Tom Raworth's NOTES",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: books, journal runs, editions",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Stefans)",
+   "quote": "Brian Kim Stefans, Remote Parsee Writing on Asian American Literature (1992-2001) : PDF - Versuche [early work] (2026):PDF",
+   "claim": "Brian Kim Stefans's writings, among them an item dated 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "currency: the home page's latest items",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (memorial entries)",
+   "quote": "Jerome Rothenberg (1931-2024) EPC author page PennSound",
+   "claim": "memorial entries for poets who died in 2024 and 2025, linking EPC author pages, PennSound pages and obituaries (Rothenberg; also Pierre Joris, Lyn Hejinian, Marjorie Perloff)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "currency: the home page's latest items",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Katzenelson)",
+   "quote": "Yitzhak Katzenelson, Dos Lid Funem Oysgehargen Yidishn Folk / The Song of the Massacred Jewish People. tr. Jack Hirschman (1945/2012): pdf",
+   "claim": "a 1945 text in Jack Hirschman's 2012 translation, as a PDF",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: books, journal runs, editions",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home list (Poetry in the Making)",
+   "quote": "Poetry in the Making: A Bibliography of Publications by Graduate Students in the Poetics Program, University at Buffalo, 1991-2016, by James Maynard",
+   "claim": "a bibliography of publications by graduate students in the Buffalo Poetics Program, 1991 to 2016",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field's own record",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "broken-link note",
+   "quote": "If you have a broken link to an EPC resources, use the top tabs (e.g. author pages & digital library , etc.), fill in the custom search bar at the foot of this page or, for a known URL, substitute \"writing.upenn.edu/epc/\" for \"epc.buffalo.edu/\" in the address bar above.",
+   "claim": "the site's stated limit: old links break; the address has moved from epc.buffalo.edu to writing.upenn.edu/epc/",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "from Buffalo to Penn",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 aacc9405af6b25e1…), whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (card 1)",
+   "quote": "Electronic Poetry Center: Updates and resources including Brian Kim Stefans writings, Sulfur full run, Tina Darragh (1950-2023), Tranter's Journal index, Ted Gr...",
+   "claim": "the card's snippet of the home page: updates and resources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "currency: the home page's latest items",
+   "date": "2026-11-01 (the card as rendered)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry's cite_list, whitespace-normalised",
+   "also_origin": "own_page"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead, s1",
+   "quote": "The Electronic Poetry Center (EPC), is an online resource for digital poetry.",
+   "claim": "Wikipedia's definition: an online resource for digital poetry",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "last edited 2024-03-02",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead, s2",
+   "quote": "It was founded on July 10, 1994 by Loss Pequeño Glazier and Charles Bernstein, of the Poetics Program at The State University of New York at Buffalo, making it one of the oldest resources for poetry on the World Wide Web.",
+   "claim": "founded July 10, 1994 by Glazier and Bernstein of the Buffalo Poetics Program; one of the oldest resources for poetry on the web",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "founding and founders",
+   "date": "last edited 2024-03-02; the event 1994-07-10",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "wikitext, ref 1 (to lead s2)",
+   "quote": "Glazier, Loss Peque&ntildeo Glazier, [http://writing.upenn.edu/epc/poetics/archive/logs/txt/1994_07.txt \"Announcement: Electronic Poetry Center (Buffalo)\"] (''UB Poetics discussion group'', July 10, 1994)",
+   "claim": "Wikipedia's source for the 1994 date: Glazier's announcement on the UB Poetics discussion group, in the list's log at writing.upenn.edu/epc/poetics/archive/",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "founding and founders",
+   "date": "last edited 2024-03-02; the cited post 1994-07-10",
+   "quote_ok": true,
+   "checked_against": "saved wikitext B2.wiki (sha256 7b0d8e7cf7ad4dab…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead, s3",
+   "quote": "It was the sponsor of E-Poetry 2001, the world's first festival exclusively dedicated to electronic poetry, which celebrated its tenth anniversary in 2011.",
+   "claim": "sponsor of E-Poetry 2001, the first festival exclusively of electronic poetry",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "E-Poetry 2001",
+   "date": "last edited 2024-03-02; the event 2001",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead, s4",
+   "quote": "The EPC was called \"an epicenter of poetic evolution and teaching\"[2] as it celebrated its twentieth anniversary, \"EPC@20\", a two day in festival in Buffalo, September 2014.",
+   "claim": "called 'an epicenter of poetic evolution and teaching' at its twentieth anniversary, EPC@20, Buffalo, September 2014",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and reception",
+   "date": "last edited 2024-03-02; the event 2014-09",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶2, s1",
+   "quote": "In addition to its focus on digital poetry, it also is dedicated to the promotion and archiving of other \"contemporary formally innovative poetries.\"",
+   "claim": "dedicated also to promoting and archiving 'contemporary formally innovative poetries'",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "last edited 2024-03-02",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶2, s2–3",
+   "quote": "This is a reflection of its origins in SUNY Buffalo's Poetics Program, a program founded in 1991 by Charles Bernstein and Robert Creeley, which maintains a long-standing interest in experimental, progressive, and avant-garde poetics. Glazier was a professor at Buffalo's Department of Media Study.",
+   "claim": "its origins in the Buffalo Poetics Program (founded 1991 by Bernstein and Creeley; experimental, progressive and avant-garde poetics); Glazier a professor of Media Study",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "founding and founders",
+   "date": "last edited 2024-03-02",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶3",
+   "quote": "The extensive curated archives at the site make it a popular destination for the study and enjoyment of contemporary poetry: a 2000 estimate has the site receiving 10 million visits a year.",
+   "claim": "a popular destination: a 2000 estimate of 10 million visits a year",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and reception",
+   "date": "last edited 2024-03-02; the estimate 2000",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶4",
+   "quote": "It is partnered with similar organizations, including UbuWeb and the University of Pennsylvania's PennSound project.",
+   "claim": "partnered with UbuWeb and Penn's PennSound",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "partners and neighbours",
+   "date": "last edited 2024-03-02",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "This page was last edited on 2 March 2024, at 09:38 (UTC).",
+   "claim": "the article's last edit, 2 March 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "currency: the home page's latest items",
+   "date": "2024-03-02",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c13e2a749e608a7c…), whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (card 2)",
+   "quote": "Overview: Electronic Poetry Center (EPC) is an online resource for digital poetry and contemporary formally innovative, experimental, and avant-garde poetries. ...",
+   "claim": "the card's snippet: a resource for digital poetry and for formally innovative, experimental and avant-garde poetries (the wording is the card's, joining the article's lead and ¶2; it is not a sentence of the saved article)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2026-11-01 (the card as rendered)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry's cite_list, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Record Status; Location",
+   "quote": "Record Status: Revisions required Location: Buffalo, United States",
+   "claim": "ELMCIP's record status, 'Revisions required', and location, Buffalo",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "from Buffalo to Penn",
+   "date": "undated (the record as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶1, s1",
+   "quote": "From the organization´s website: The EPC was founed in 1995 and serves as a central gateway to resources in electronic poetry and poetics at the University at Buffalo, the University of Pennsylvania's PennSound PennSound, UBU web, and on the Web at large.",
+   "claim": "quoting the EPC's own site: founded in 1995, a central gateway to resources in electronic poetry and poetics at Buffalo, Penn's PennSound, UbuWeb and the web",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (the record as fetched 2026-11-01; quoting an earlier state of the EPC's site)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶1, s2",
+   "quote": "Our aim is simple: to make available a wide range of resources centered on digital and contemporary formally innovative poetries, new media writing, and literary programming.",
+   "claim": "the aim, in the EPC's words as ELMCIP quotes them",
+   "modality": "attributed",
+   "kind": "stipulation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the goal",
+   "date": "undated (quoting the EPC's site)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶2, s1–2",
+   "quote": "The EPC itself makes extensive resources available through its E-Poetry and Author libraries. These libraries provide curated lists of resources on a focused range of authors for personal use, research, and teaching.",
+   "claim": "E-Poetry and Author libraries: curated lists of resources on a focused range of authors, for personal use, research and teaching",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: the libraries",
+   "date": "undated (quoting the EPC's site)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶2, s3",
+   "quote": "Additionally, the EPC curates lists of links to similar digital and literary projects, related book publishers, literary magazines, and other resources.",
+   "claim": "curated lists of links to digital and literary projects, publishers and magazines",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: the libraries",
+   "date": "undated (quoting the EPC's site)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶2, s4–5",
+   "quote": "The EPC has been favorably reviewed in The Chronicle of Higher Education and The Times Literary Supplement, among other publications, for its breadth of vision, number of resources, and focus on innovative media poetics in the digital age. It was also the sponsor of the first-ever digital poetry festival, E-Poetry 2001, held in Buffalo in April, 2001.",
+   "claim": "reviewed favourably in the Chronicle and the TLS; sponsor of E-Poetry 2001, Buffalo, April 2001",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "E-Poetry 2001",
+   "date": "undated (quoting the EPC's site)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Description, ¶3",
+   "quote": "In addition to the vast number of works the it makes available, the EPC offers the innovation of providing a curated collection of primary literary texts. Accordingly, texts housed at the Electronic Poetry Center are \"definitive\" texts as each has been approved by its producers.",
+   "claim": "texts housed at the EPC are 'definitive', each approved by its producers",
+   "modality": "attributed",
+   "kind": "stipulation",
+   "kernel": true,
+   "const": true,
+   "lineage": "names and the authorial function",
+   "date": "undated (quoting the EPC's site)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 d93765e341aba487…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet (card 3)",
+   "quote": "Electronic Poetry Center (EPC) * Electronic Poetry Center * Email: glazier@buffalo.edu * Revisions required 14260 Buffalo United States US Short description: Fr...",
+   "claim": "the card's snippet: a Buffalo email address and postal code for the record (neither is in the saved page's text)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "from Buffalo to Penn",
+   "date": "2026-11-01 (the card as rendered)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry's cite_list, whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1, s1",
+   "quote": "Visiting the Electronic Poetry Center is a little like digging around for treasures in an attic--especially when the attic's owner happens to be an eclectic and Internet-savvy professor of poetry.",
+   "claim": "the Academy's figure for a visit: digging for treasures in an attic",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and reception",
+   "date": "2004-11-09 (Posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 432eab756435166d…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶2, s1",
+   "quote": "Created and maintained by poet and educator Charles Bernstein and Loss Pequeno Glazier, a renowned expert in the field of digital poetry, the site is part of the poetics program at the State University of New York at Buffalo.",
+   "claim": "created and maintained by Bernstein and Glazier; part of the Buffalo poetics program (as of 2004)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding and founders",
+   "date": "2004-11-09 (Posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 432eab756435166d…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶3, s1–2",
+   "quote": "The centerpieces of the Electronic Poetry Center are two extensive lists of author pages. The first is a list of contemporary poet pages that include photographs, biographies, and links to online works, interviews, essays, and critical information.",
+   "claim": "the centerpieces: two lists of author pages; the first, contemporary poet pages with photographs, biographies, links to online works, interviews, essays and critical information",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings: author pages",
+   "date": "2004-11-09 (Posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 432eab756435166d…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶3, s3–4",
+   "quote": "However, it is the second major list that makes the Electronic Poetry Center truly unique: the E-Poetry section includes links to Internet-dependent works of poetry, including variously labeled hypertext, \"webworks,\" animations, media performances, and other multimedia texts. There are also two essays in this section defining the medium of E-Poetry, as well as links to information sites and e-magazines.",
+   "claim": "the E-Poetry section: links to Internet-dependent works of poetry (hypertext, webworks, animations, media performances, multimedia texts), with two essays defining the medium",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings: E-Poetry",
+   "date": "2004-11-09 (Posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 432eab756435166d…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶4, s1",
+   "quote": "The Electronic Poetry Center is web space used to its best advantage--the collection one finds here couldn’t exist in a physical building.",
+   "claim": "the Academy's judgment: a collection that could not exist in a physical building",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reach and reception",
+   "date": "2004-11-09 (Posted)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 432eab756435166d…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Posted; Type",
+   "quote": "Posted November 9, 2004 Type Online Resources",
+   "claim": "the Academy's entry, posted 9 November 2004, type Online Resources",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "currency: the home page's latest items",
+   "date": "2004-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 432eab756435166d…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "staff list",
+   "quote": "Loss Pequeño Glazier , Director & Founder • Charles Bernstein , Editor, Co-founder",
+   "claim": "Glazier, Director and Founder; Bernstein, Editor and Co-founder",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "founding and founders",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "staff list (CPCW)",
+   "quote": "for CPCW Al Filreis , Publisher",
+   "claim": "Al Filreis, Publisher, for CPCW",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "from Buffalo to Penn",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "staff list (editors)",
+   "quote": "Jack Krick, Managing Editor Steve McLaughlin, Technical Director and Special Projects Editor Myung Mi Kim, Orchid Tierney, Danny Snelson, Trace Peterson -- Senior Editors",
+   "claim": "the editorial roles, each credited by function",
+   "modality": "stipulation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "names and the authorial function",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶1, s1",
+   "quote": "EPC was founed by Loss Peqeño Glazier, with Charles Bernstein, at the Poetics Program of SUNY-Buffalo in 1995.",
+   "claim": "founded by Glazier with Bernstein at the Buffalo Poetics Program in 1995",
+   "modality": "stipulation",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "founding and founders",
+   "date": "undated (the page as fetched; ©2011); the event 1995",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶1, s2",
+   "quote": "Our goal was to make available a wide range of resources centered on digital and contemporary formally innovative poetries, new media writing, and literary programming.",
+   "claim": "the goal, in its own words",
+   "modality": "stipulation",
+   "kind": "stipulation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the goal",
+   "date": "undated (©2011)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶2, s1",
+   "quote": "The site was the first comprehensive Internet archive of its kind for poetry and poetics.",
+   "claim": "the first comprehensive Internet archive of its kind for poetry and poetics",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (©2011)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶2, s2",
+   "quote": "EPC makes extensive resources available through its Digital Library, E-Poetry and Author libraries.",
+   "claim": "its Digital Library, E-Poetry and Author libraries",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings: the libraries",
+   "date": "undated (©2011)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶2, s3",
+   "quote": "We also house the archives of the Buffalo Poetics Program from its fouding in 1991 to 2003 and of the Poetics List (1993-2014), the first poetry listserv discussion group.",
+   "claim": "houses the archives of the Buffalo Poetics Program (1991 to 2003) and of the Poetics List (1993 to 2014), the first poetry listserv discussion group",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the field's own record",
+   "date": "undated (©2011)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶2, s4–6",
+   "quote": "EPC has received support from the SUNY-Buffalo Department of English (through the Poetics Program) and the Department of Media Study. In 2003, EPC began its active collaboration with the Center for Programs in Contemporary Writing (CPCW) at the University of Pennsylvania, including its sister site, PennSound. We continue our affilation with Poetics and Media Studies at Buffalo and with CPCW at Penn.",
+   "claim": "support from Buffalo's English and Media Study departments; collaboration with CPCW at Penn from 2003, PennSound its sister site; affiliation with both continued",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "from Buffalo to Penn",
+   "date": "undated (©2011); the collaboration 2003",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶3",
+   "quote": "EPC has been reviewed in The Chronicle of Higher Education and The Times Literary Supplement , among other publications, for its breadth of vision, number of resources, and focus on innovative media poetics in the digital age. It was also the sponsor of the first-ever digital poetry festival, E-Poetry 2001 , held in Buffalo in April, 2001.",
+   "claim": "reviewed in the Chronicle and the TLS; sponsor of E-Poetry 2001",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "E-Poetry 2001",
+   "date": "undated (©2011)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "footer",
+   "quote": "Send a Comment | Search | ©2011",
+   "claim": "the page's copyright line, 2011; no rights statement for the holdings",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "rights and limits",
+   "date": "2011 (the copyright line)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 42364b69659cad04…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "home list (new author page)",
+   "quote": "New author page: Gilbert Adair , featuring a reading from h c e , May 16, 2025",
+   "claim": "PennSound's home page announces new author pages, its unit as the EPC's is",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "partners and neighbours",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9501ca77e246dd08…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "navigation",
+   "quote": "Al Filreis page",
+   "claim": "PennSound's navigation names Al Filreis, the EPC's publisher for CPCW",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "partners and neighbours",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 9501ca77e246dd08…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B7",
+   "origin": "body_named",
+   "pool": "B_D",
+   "locus": "home, s1–2",
+   "quote": "Founded in 1996, UbuWeb is the internet's largest archive of free avant-garde materials. The site is permanently archived by the United States Library of Congress.",
+   "claim": "UbuWeb: founded 1996, the internet's largest archive of free avant-garde materials, permanently archived by the Library of Congress",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "partners and neighbours",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (sha256 a965e98115ea169d…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "University of Pennsylvania — Electronic Poetry Center",
+  "B2": "Wikipedia — Electronic Poetry Center - Wikipedia",
+  "B3": "ELMCIP Knowledge Base — Electronic Poetry Center (EPC)",
+  "B4": "poets.org | Academy of American Poets — Electronic Poetry Center | Academy of American Poets",
+  "B5": "Electronic Poetry Center — About",
+  "B6": "PennSound — home page",
+  "B7": "UbuWeb — home page"
+ }
+}

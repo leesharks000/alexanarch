@@ -1,0 +1,9 @@
+Wikipedia record for the entity "Wordcraft Writers Workshop", fetched 2026-11-01 with the agent "Mozilla/5.0 (compatible; leesharks-authorship-census)".
+1. https://en.wikipedia.org/w/index.php?title=Wordcraft_Writers_Workshop&action=raw : HTTP 404 (Wikimedia Error page; saved as B10-raw.wiki) at 2026-11-01T06:15:15Z.
+2. https://en.wikipedia.org/wiki/Wordcraft_Writers_Workshop : HTTP 404 (saved as B10.html, text B10.txt): "Wikipedia does not have an article with this exact name. Please search for Wordcraft Writers Workshop in Wikipedia to check for alternative titles or spellings."
+3. https://en.wikipedia.org/w/index.php?title=Wordcraft&action=raw : HTTP 200 (saved as B10-wordcraft.wiki): "#REDIRECT [[Rhetoric]]"
+4. https://en.wikipedia.org/w/index.php?title=LaMDA&action=raw : HTTP 200 (saved as B10-lamda.wiki); the article does not contain the string "Wordcraft".
+5. The search API (action=query&list=search) answered HTTP 429 twice ("You are making too many requests to the API."; saved as B10-api-429a.txt, B10-api-429b.txt); not retried further. The rendered search pages were read instead.
+6. Special:Search for "Wordcraft Writers Workshop" (article space; saved as B10-search-wcw.html): HTTP 200, "Results 1 – 3 of 3": Wole Talabi; Electronic literature; Ken Liu bibliography.
+7. Special:Search for "Wordcraft" (saved as B10-search.html): "Results 1 – 20 of 83", none a Wordcraft article; Special:Search for "Wordcraft LaMDA" (saved as B10-search-wl.html): 14 results, none on the entity.
+8. The three articles that name the entity, raw wikitext saved as B10-Electronic_literature.wiki, B10-Wole_Talabi.wiki, B10-Ken_Liu_bibliography.wiki (HTTP 200).

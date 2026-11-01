@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<title>PennSound</title>
+<style type="text/css" media="screen">
+	@import url('/pennsound/css/home.css');
+</style>
+<link rel="alternate" type="application/rss+xml" title="PennSound Daily" href="daily.xml" />
+<link rel="shortcut icon" href="favicon.png" type="image/png" />
+ 
+	
+	<!--Add Jquery -->
+	<script src="/pennsound/jplayer/jquery-3.1.1.min.js"></script>
+
+	<!--Add player's default CSS and scripts -->
+	<link type="text/css" href="/pennsound/jplayer/pennsound-custom-css.css" rel="stylesheet" />
+	<link type="text/css" href="/pennsound/jplayer/skin/uno/jplayer.uno.min.css" rel="stylesheet" />
+	<script type="text/javascript" src="/pennsound/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="/pennsound/jplayer/add-on/jplayer.playlist.min.js"></script>
+	<script type="text/javascript" src="/pennsound/jplayer/add-on/jplayer.jukebox.min.js"></script>
+	
+	<!--Add the player, player options and custom embedding solution-->
+	<script src="/pennsound/jplayer/pennsound-jplayer.js"></script>
+	
+</head>
+<body>
+			<div id="header">
+				<img src="/pennsound/images/PennSound_flat3.gif" usemap="#banner" alt="" />
+				<map id="banner" name="banner">
+				<area shape="rect" coords="14,7,64,22" href="https://writing.upenn.edu" alt="CPCW" />
+				<area shape="rect" coords="70,6,116,23" href="https://writing.upenn.edu/epc" alt="EPC" />
+				<area shape="rect" coords="118,7,174,23" href="https://www.ubu.com" alt="ubuweb" />
+				<area shape="rect" coords="178,7,246,24" href="https://jacket2.org" alt="Jacket2" />
+				<area shape="rect" coords="250,7,310,24" href="https://writing.upenn.edu/pennsound/about.php" alt="About Us" />
+				<area shape="rect" coords="15,78,244,90" href="https://www.upenn.edu" alt="University of Pennsylvania" />
+				<area shape="rect" coords="8,30,333,60" href="https://writing.upenn.edu/pennsound" alt="PennSound" />
+				<area shape="rect" coords="127,61,561,79" href="https://writing.upenn.edu" alt="Center for Programs in Contemporary Writing" />
+				</map>
+			</div>
+			
+
+<!-- Tables? Yes, thanks to IE. -->
+
+
+<table id="container">
+
+<tr>
+<td id="left">
+			<div class="box">
+				<h2>Inside PennSound</h2>
+				<div class="content">
+					<ul>
+					<li><a href="https://writing.upenn.edu/pennsound/x/authors.php">Authors</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/series.php">Series</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/anthologies.php">Anthologies/Collections/Groups</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/daily">PennSound Daily archive</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/singles">Singles</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/Close-Listening.php">Close Listening</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/video.php">Cinema</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/classics.php">Classics</a></li>
+					<li><a href="https://writing.upenn.edu/wh/multimedia/medialinks">Medialinks</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/podcasts.php">PennSound Podcasts</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/rewind.php">PennSound Rewind</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/featured-resources-archive.php">Featured resources archive</a></li>
+					</ul>
+					<hr />
+					<ul>
+					<li><a style="text-decoration: none;" href="https://www.facebook.com/pages/PennSound/27886305953"><img width="16" style="margin-bottom:-3px;" src="https://media.sas.upenn.edu/pennsound/Radio/images/facebook2018.png" alt="" /> PennSound on Facebook</a></li>
+					<!--<li><a style="text-decoration: none;" href="https://twitter.com/PennSound"><img width="16" style="margin-bottom:-3px;" src="https://media.sas.upenn.edu/pennsound/Radio/images/twitter2018.png" alt="" /> PennSound on Twitter</a></li>-->
+					<li><a style="text-decoration: none;" href="https://www.youtube.com/pennsound"><img width="16" style="margin-bottom:-3px;" src="https://media.sas.upenn.edu/pennsound/Radio/images/youtube2018.png" alt="" /> PennSound on YouTube</a></li>
+					<li><a style="text-decoration: none;" href="https://www.instagram.com/pennsound/"><img width="16" style="margin-bottom:-3px;" src="https://media.sas.upenn.edu/pennsound/misc/Images/instagram-favico.png" alt="" /> PennSound on Instagram</a></li>
+					</ul>
+					<hr />
+					<ul>
+					<li><a href="https://writing.upenn.edu/pennsound/x/Filreis.html">Al Filreis page</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/LINEbreak.html">LINEbreak</a></li>
+					<li><a href="https://writing.upenn.edu/wh/involved/series/live/">LIVE at the Writers House</a></li>
+					<li><a href="https://jacket2.org/content/poem-talk">PoemTalk</a></li>
+					<li><a href="https://writing.upenn.edu/wh/webcasts">Writers House webcasts</a></li>
+					<li><a href="https://writing.upenn.edu/pepc/contents.html">PEPC Library</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/x/Live-at-the-Ear-1994.html">Live at the Ear</a></li>
+					</ul>
+					<hr />
+					<ul>
+					<li><a href="https://writing.upenn.edu/pennsound/about.php">About PennSound</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/praise.php">Praise for PennSound</a></li>
+					<li><a href="https://writing.upenn.edu/pennsound/news">PennSound in the news</a></li>
+					<li><a href="mailto:pennsound@writing.upenn.edu">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+						<div class="box">
+				<h2>Featured resources</h2>
+				<div class="content">
+				<p><strong>Creeley Listening Station</strong></p>
+
+<p>A program of tracks celebrating the centenary of 
+poet Robert Creeley (b. 1926), curated by Chris Mustazza</p>
+
+<p>In conjunction of University of Buffalo's <a href="https://www.buffalo.edu/cas/english/news-events/upcoming_events/poetics-plus/rsvp-for-events-this-semester-/For-Love-Celebrating-Robert-Creeleys-Centenary-symposium.html">For
+Love: A Centenary Symposium for Robert Creeley</a></p>
+
+<p>Listen and learn more at <a href="https://creeleylisteningstation.com/">creeleylisteningstation.com</a></p>
+
+<br />
+
+<b><header>From "Down To Write You This Poem Sat" at the Oakville Gallery<header></b>
+<br>
+<section>Contemporary</section>
+<ol>
+<li>Charles Bernstein, &quot;Phone Poem&quot; (2011) (1:30): <a href="https://media.sas.upenn.edu/pennsound/authors/Bernstein/soundworks/Bernstein-Charles_Phone-Poem_2012.mp3">MP3</a></li>
+<li>Caroline Bergvall, &quot;Love song: 'The Not Tale (funeral)' from <em>Shorter Caucer Tales</em> (2006): <a href="http://media.sas.upenn.edu/pennsound/authors/Bergvall/Chaucer/Bergvall-Caroline_Chaucer_04_Not-Tale_2006.mp3">MP3</a></li>
+<li>Christian B&ocirc;k, excerpt from <em>Eunoia</em>, from Chapter &quot;I&quot; for Dick Higgins (2009) (1:38):         <a href="http://media.sas.upenn.edu/pennsound/authors/Bok/Umlaut/Bok-Christian_05_Eunoia-Chapter-I_Umlaut-Opening_KWH-UPenn_11-18-2009.mp3">MP3</a></li>
+<li>Tonya Foster, Nocturne II (0:40) (2010) <a href="http://media.sas.upenn.edu/pennsound/authors/Foster/01-21-10/Foster-Tonya_04_Nocturne-2_Emergency_KWH-UPenn_01-21-10.mp3">MP3</a></li>
+<li>Ted Greenwald, &quot;The Pears are the Pears&quot; (2005) (0:29): <a href="http://media.sas.upenn.edu/pennsound/authors/Greenwald/Close-Lstening/Greenwald-Ted_02_Pears-R-Pears_WPS1_NY_6-20-05.mp3">MP3</a></li>
+<li>Susan Howe, <em>Thorow</em>, III (3:13) (1998):  <a href="http://media.sas.upenn.edu/pennsound/authors/Howe/RRP/Howe-Susan_04_Thorow-3_Radio-Reading-Project_1998.mp3">MP3</a></li>
+<li>Tan Lin, &quot;¼ : 1 foot&quot; (2005) (1:16): <a href="http://media.sas.upenn.edu/pennsound/authors/Lin/Close-Lstening/Lin-Tan_03_1-quarter-to-1-ft_WPS1_NY_5-23-05.mp3">MP3</a></li>
+<li>Steve McCaffery, &quot;Cappuccino&quot; (1995) (2:35): <a href="https://media.sas.upenn.edu/pennsound/authors/McCaffery/11-15-95/McCaffery-Steve_09_Cappuccino_Weds-at-four-plus_Buffalo_11-15-95.mp3">MP3</a></li>
+<li>Tracie Morris, From &quot;Slave Sho to Video aka Black but Beautiful&quot; (2002) (3:40): <a href="http://media.sas.upenn.edu/pennsound/authors/Morris/Morris-Tracie_From-Slave-Sho-to-Video-aka-Black-but-Beautiful_2002.mp3">MP3</a></li>
+<li>Julie Patton, &quot;Scribbling thru the Times&quot; (2016) (5:12): <a href="https://media.sas.upenn.edu/pennsound/authors/Patton/Close-Listening/Patton-Julie_Close-Listening-Reading_Scribbling-Thru-the-Times_2-12-16.mp3">MP3</a><a href="https://media.sas.upenn.edu/pennsound/authors/Patton/Close-Listening/Patton-Julie_Close-Listening-Reading_Scribbling-Thru-the-Times_2-12-16.mp3"></a></li>
+<li>Tom Raworth, &quot;Errory&quot; (c. 1975) (2:08): <a href="http://media.sas.upenn.edu/pennsound/authors/Raworth/Rockdrill-5/Raworth-Tom_25_Errory_Writing_Writing_Rockdrill-5_2004.mp3">MP3</a></li>
+<li>Jerome Rothenberg, from &quot;The First Horse Song of Frank Mitchell: 4-Voice Version&quot; (c. 1975) (3:30): <a href="http://media.sas.upenn.edu/pennsound/authors/Rothenberg/Rockdrill-6/Rothenberg-Jerome_20_The-First-Horse_Sightings_Rockdrill-6_2004.mp3">MP3</a></li>
+<li>Cecilia Vicuna, &quot;When This Language Disappeared&quot; (2009) (1:30): <a href="https://media.sas.upenn.edu/pennsound/authors/Vicuna/03-28-09/Vicuna-Cecilia_05_When-This-Language-Disappeared_Segue-BPC_03-28-09.mp3">MP3</a></li>
+</ol>
+<section>Historical</section>
+<ol>
+<li>Guillaume Apollinaire, &quot;Le Pont Mirabeau&quot; (1913) (1:14):
+      <a href="http://media.sas.upenn.edu/pennsound/authors/Apollinaire/Apollinaire-Guillaume_01_Le-Pont-Mirabeau_1913.mp3">MP3</a></li>
+<li>Amiri Baraka, &quot;Black Dada Nihilismus&quot; (1964) (4:02):  <a href="http://media.sas.upenn.edu/pennsound/authors/Baraka/Asilomar-1964/Baraka-Amiri_06_Black-Dada-Nihilismus_Asilomar_1964.mp3">MP3</a></li>
+<li>Louise Bennett, &quot;Colonization in Reverse&quot; (1983) (1:09): <a href="http://media.sas.upenn.edu/pennsound/authors/Bennett/Bennett-Louise_Colonizatn-n-Revrse.mp3">MP3</a></li>
+<li>Sterling Brown, &quot;Old Lem &quot; (c. 1950s) (2:06):  <a href="http://media.sas.upenn.edu/pennsound/authors/Brown-Sterling/Brown-Sterling_04_Old-Lem.mp3">MP3</a></li>
+<li>John Clare, &quot;Vowelless Letter&quot; (1849) performed by Charles Bernstein (2:54): <a href="https://media.sas.upenn.edu/pennsound/authors/Bernstein/Barbaric/Bernstein-Charles_John-Clare-Letter_Barbaric_10-14-15.mp3" target="_blank">MP3</a></li>
+<li>Velimir Khlebnikov, &quot;Incantation by Laughter&quot; (1910), tr. and performed by Bernstein (:28)  <a href="https://media.sas.upenn.edu/pennsound/authors/Bernstein/Barbaric/Bernstein-Charles_Khlebnikov-Laughter_Barbaric_10-14-15.mp3" target="_blank">MP3</a></li>
+<li>Harry Partch,  from <em>Barstow</em> (part 1), performed by Bernstein (1968) (1:11): <a href="https://media.sas.upenn.edu/pennsound/authors/Bernstein/Barbaric/Bernstein-Charles_Partch-Barstow_Barbaric-launch_10-14-15.mp3" target="_blank">MP3</a></li>
+<li>Leslie Scalapino, &quot;Can&rsquo;t&rsquo; is &lsquo;Night&rsquo;&quot; (2007) (3:19):      <a href="http://media.sas.upenn.edu/pennsound/authors/Scalapino/Day-Ocean/Scalapino-Leslie_01_fm-Cant-is-Night_NY_5-14-07.mp3">MP3</a></li>
+<li>Kurt Schwitters, &quot;Ur Sonata: Largo&quot; performed by Ernst Scwhitter (1922-1932) ( (3:12): <a href="http://media.sas.upenn.edu/pennsound/authors/Schwitters/Schwitters-Ernst_Kurt-Schitters-Ursonate_02_Zweiter_Teil.mp3">MP3</a></li>
+<li>Gertrude Stein, If I Told Him: A Completed Portrait of Picasso (1934-35) (3:42): <a href="https://media.sas.upenn.edu/pennsound/authors/Stein/Speech-Lab-Recordings/Stein-Gertrude_16_384A_If-I-Told-Him_Speech-Lab-Recordings_New-York_1935.mp3">MP3</a></li>
+<li>William Carlos Willliams, &quot;The Defective Record&quot; (1942) (0:28): <a href="http://media.sas.upenn.edu/pennsound/authors/Williams-WC/01_Columbia-Univ_01-09-42/Williams-WC_03_The-Defective-Record_Columbia-Univ_01-09-42.mp3">MP3</a></li>
+<li>Hannah Weiner, from  <em>Clairvoyant Journal</em>, performed by  Weiner, Sharon Mattlin &amp; Rochelle Kraut  (2001) (6:12): <a href="http://media.sas.upenn.edu/pennsound/authors/Weiner/Weiner-Hannah_May-from-the-Journal-in-June_Kenning.mp3">MP3</a></li>
+</ol>
+<p><strong>Selected by <a href="x/Bernstein.php">Charles Bernstein</a> (read more about his choices <a href="x/Bernstein-DownToWrite.php">here</a>)</strong></p>				</div>
+			</div>
+			
+</td>
+
+<td id="content">
+	
+	<div id="feed">
+					<form id="entries_form" action="/pennsound/index.php" method="get">
+				<table>
+		<tr>
+			<td><h1>PennSound Daily</h1></td>
+			<td><a href="https://pennsounddaily.blogspot.com/feeds/posts/default" rel="alternate" type="application/rss+xml"><img class="icon" src="http://writing.upenn.edu/wh/img/feed-icon-14x14.png" alt="Subscribe in a reader" /></a></td>				<td>Viewing
+					<select name="entries" onchange="this.form.submit()">
+					<option value="3">3</option>
+							<option value="5" selected="selected">5</option>
+							<option value="10">10</option>
+							<option value="25">All</option>
+												</select>
+					entries
+				</td>
+					</tr>
+		</table>
+			</form>
+		
+<h2><a href="https://pennsounddaily.blogspot.com/2026/03/charles-ruas.html">Charles Ruas</a></h2>
+
+<h3>Posted 3/27/2026</h3>
+		<div class="item">
+			<p>Today we're happy to announce a new home for Charles Ruas's radio programming from the 70s, 80s, and 00s.
+  Dazzling in both scope and selection, this collection at launch features hundreds of recordings with
+  more to come soon&mdash;and although there are simply too many highlights to list them all here without
+  inadvertently reproducing the entire Ruas page, here nevertheless are a few:</p>
+
+<ul class="bulleted">
+  <li>Readings by Pablo Neruda (92nd St Y, 1966) and Jorge Luis Borges (92nd St Y, 1976);</li>
+  <li>Readings and interviews with Allen Ginsberg including 6 lectures at Naropa in 1975;</li>
+  <li>Two recordings featuring Buckminster Fuller;</li>
+  <li>A two-part Eileen Myles feature on their 2011 work <i>Inferno (A Poet's Novel)</i>;</li>
+  <li>A 1972 interview on "The Female Angst" featuring Sally Davis, Anaïs Nin, Joan Didion, and Dory Previn,
+    with musical performances by the latter;</li>
+  <li>A two-part conversation between John Cage and Morton Feldman;</li>
+  <li>And a wide-ranging two-part roundtable featuring Anne Waldman, Laura Flanders, and Carol Brightman,
+    centered on the theme of "general protest."</li>
+</ul>
+
+<p>Charles Ruas's collection is so delightfully eclectic that any poetry or literature aficianado will find
+  something there to satisfy their curiosity (I personally found a 1976 interview with Dr. Han Suyin on
+  contemporaneous cultural differences between the U.S. and China, the mixed legacy of Mao Zedong, and
+  the ramifications of the Cultural Revolution, to be fascinating).</p>
+
+<p>The collection is still under construction and over time will see more additions and improvements,
+  but for now there's plenty to get started with, and it's all available at the new
+  <a href="https://writing.upenn.edu/pennsound/x/Ruas.php">Charles Ruas Author Page</a>.</p>			<br class="clearit" />
+		</div>
+ 
+	
+<h2><a href="https://pennsounddaily.blogspot.com/2026/03/pennsound-rewind-episodes-18.html">PennSound Rewind Episodes 1–8</a></h2>
+
+<h3>Posted 3/11/2026</h3>
+		<div class="item">
+			<p><img src="https://jacket2.org/sites/default/files/featured-images/PS%20Rewind%208.png" align="right" width="300" style="margin-left:12px;" />Michael S. Hennessey's new, 
+retrospective podcast fittingly named <i>PennSound Rewind</i>
+now has a <a href="https://pennsounddaily.blogspot.com/rewind.php">dedicated page</a> here at PennSound. <i>Rewind</i>,
+comprising eight episodes to date, is a deep dive into PennSound's diverse catalog,
+sometimes highlighting specific authors like John Ashbery and Harryette Mullen, and sometimes
+themes like baseball or poets who passed in 2016.</p>
+
+<p>The series' newest episode takes a look at radio and radio-adjacent
+transmissions of Black authors and performers covering a six decade span, starting in
+  1967 with a production of Samuel R. Delaney's <i>The Star-Pit</i> on New
+  York's WBAI and rounding out with a 2018 episode of Charles Bernstein's
+  <i>Close Listening</i> featuring Douglas Kearney—all, of course, available
+at PennSound.</p>
+
+<p><i>Rewind</i> Episode 8 ("In Memory of Radio," from an Amiri Baraka poem) is more than just a celebration
+  of Black authors or radio, however; it's also a demonstration of the valuable kinds of
+  programming that get lost when funding to the institutions that produce it is
+  suddenly cut for political reasons. As Hennessey narrates in the episode's opening:<p>
+    
+<blockquote>The democratic nature of radio, especially on the left of the dial, is the 
+  heart of its power. It’s also what makes it so dangerous, and why it’s long been a 
+  target of censorship and threats of defunding.</blockquote>
+
+<p>Of course, in classic form-matches-function fashion, "In Memory of Radio"
+  is itself an example of all of the above: of Black author focused programming in 
+  an over-the-airwaves format, and of the kind of valuable content hosted by
+  publicly funded distribution platforms like PennSound. Just as importantly, though,
+it's a good listen—and you can check it out along with the rest of the series at our
+  new <a href="https://writing.upenn.edu/pennsound/rewind.php"><i>PennSound Rewind</i></a>
+  page and at <a href="https://jacket2.org/podcasts/pennsound-rewind">Jacket2.org</a>.</p>			<br class="clearit" />
+		</div>
+ 
+	
+<h2><a href="https://pennsounddaily.blogspot.com/2026/03/four-new-events-from-kelly-writers-house.html">Four new events from Kelly Writers House</a></h2>
+
+<h3>Posted 3/2/2026</h3>
+		<div class="item">
+			<p><img src="https://media.sas.upenn.edu/pennsound/authors/Bloch/figure-and-trade-th.jpg" align="right" width="300" style="margin-left:12px;" />Video recordings of four events from the Spring 2025 semester at Kelly Writers House have landed here at PennSound,
+  representing a range of styles and genres.</p>
+
+<ol>
+  <li><strong>Figure and Trade: A poetics book launch with Julia Bloch and Sarah Dowling</strong></li>
+  <p>February saw a celebration of in the form of a dual book launch featuring two new
+    critical poetic titles: Julia Bloch's <i>Lyric Trade: Reading the Subject in the 
+    Postwar Long Poem</i> (University of Iowa Press) and Sarah Dowling's <i>Here
+    Is a Figure: Grounding Literary Form</i> (Northwestern University Press).</p>
+  <p>The recording is available on both <a href="https://writing.upenn.edu/pennsound/x/Bloch.php">Julia
+    Bloch</a> and <a href="https://writing.upenn.edu/pennsound/x/Dowling.php">Sarah Dowling</a>'s
+    author pages, and more information can be found on the 
+    <a href="https://writing.upenn.edu/wh/calendar/0225.php#20">Kelly Writers House Web Calendar
+    entry</a>.</p>
+  
+  <li><strong>A celebration of the life and work of Lyn Hejinian</strong></li>
+  <p>In March the creaky chairs and wooden pews of the Arts Caf&eacute; hosted a different kind of celebration:
+    a memorial for the late and beloved Lyn Hejinian. The event, hosted in tandem by Julia Bloch and
+    Laynie Browne, featured readings and talks by seven poets: Charles Bernstein, Laynie Browne,
+    Pattie McCarthy, Jena Osman, Ron Silliman, Claire Marie Stancek, and Syd Zolf.</p>
+  <p>Find a recording of the whole event at <a href="https://writing.upenn.edu/pennsound/x/Hejinian.php">Lyn
+    Hejinian</a>'s author page, and more information can be found on the <a href="https://writing.upenn.edu/wh/calendar/0325.php#18">Kelly
+    Writers House Web Calendar entry</a>.</p>
+  
+  <li><strong>Brave Testimony: M. Nzadi Keita</strong></li>
+  <p>To kick off April, Penn's Center for Africana Studies hosted Philadelphia native (and
+    self-proclaimed member of the "Germantown Poetry Mafia") M. Nzadi Keita, who read from her
+    newest book, <i>Migration Letters: Poems</i>.</p>
+  <p>Find a recording of this event at PennSound's dedicated <a href="https://writing.upenn.edu/pennsound/x/Brave-Testimony.php">Brave
+    Testimony</a> series page, and more information can be found on the <a href="https://writing.upenn.edu/wh/calendar/0425.php#3">Kelly
+    Writers House Web Calendar entry</a>.</p>
+  
+  <li><strong>Emma Copley Eisenberg: reading and conversation</strong></li>
+  <p>To round out the semester, Michelle Taransky's But Company Reading Series (formerly
+    known as "Whenever We Feel Like It") featured Emma Compley Eisenberg, co-founder
+    of Philadelphia's Blue Stoop poetry community and author of the forthcoming
+    collection of short stories, <i>Fat Swim</i> (Penguin Random House).</p>
+  <p>Find a recording of this event at PennSound's dedicated <a href="https://writing.upenn.edu/pennsound/x/But-Company.php">But
+    Company</a> series page, and more information can be found on the <a href="https://writing.upenn.edu/wh/calendar/0425.php#22">Kelly
+    Writers House Web Calendar entry</a>.</p>			<br class="clearit" />
+		</div>
+ 
+	
+<h2><a href="https://pennsounddaily.blogspot.com/2026/01/al-nielsen-sometimes-i-wonder-can-cigar.html">A.L. Nielsen: Sometimes I Wonder Can a Cigar Box Hold My Blues (2021) and Spidercone (2022)</a></h2>
+
+<h3>Posted 1/15/2026</h3>
+		<div class="item">
+			<p><img src="https://media.sas.upenn.edu/pennsound/authors/Nielsen/Spidercone_2022/Spidercone_album-art.jpg" align="right" width="240" style="margin-left:12px;" />Today we're happy to showcase two recent albums of poetry and music by A.L. Nielsen: <span class="title">Sometimes I Wonder Can a Cigar Box Hold My Blues</span> (2021) and <span class="title">Spidercone &mdash; More Blues, Rage and Hollers</span> (2022). Both albums have been available to purchase through online streaming platforms, but now, thanks to Nielsen, marks the first time they're freely available to the public, and with a handful of bonus tracks to boot.</p>
+
+<p>The two jazz–poetry albums primarily feature music and poetry composed entirely by Nielsen, with the exception of "Self-Organizing Networks," where the music and performance is by Christopher Reiner (and included with permission).</p>
+
+<p>You can find the full tracklisting for both albums at <a href="https://writing.upenn.edu/pennsound/x/Nielsen.php#Spidercone-2022">Nielsen's PennSound page</a>.</p>			<br class="clearit" />
+		</div>
+ 
+	
+<h2><a href="https://pennsounddaily.blogspot.com/2025/11/love-jawns-mixtape.html">Love Jawns: A Mixtape</a></h2>
+
+<h3>Posted 11/12/2025</h3>
+		<div class="item">
+			<div style="float:right; padding-left:12px;"><a href="https://writing.upenn.edu/pennsound/x/LJAM.php"><img src="https://media.sas.upenn.edu/pennsound/groups/LJAM/images/LJAM-Logo-th.jpg" width="240" /></a></div>
+
+<p>Today we're spotlighting a newly archived podcast series here at PennSound affectionately dubbed <i>Love Jawns: A Mixtape</i>. Originally published between 2019 and 2020 in conjunction with Philadelphia Contemporary, <i>Love Jawns: A Mixtape</i>&mdash;or <i>LJAM</i>&mdash;was produced by <a href="https://writing.upenn.edu/pennsound/x/Wisher.php">Yolanda Wisher</a>, Jal&eacute;ssa Savage, and Wayv Wilson, and comprised two seasons, along with a collection of special episodes that effectively serves as a third season.</p>
+
+<p>A love letter to the city of Philadelphia and a self-proclaimed "soundtrack of the city," each episode begins with an ethereal announcement from Wisher&mdash;"Doors are closing," a proclamation that should be instantly recognizeable to anyone who's ever taken the El in the past thirty years. An overarching soundtrack by a featured DJ then accompanies each episode, punctuated by readings by local and near-local figures, including a number of Philly's recent Poets and Youth Poets Laureate (including two former Kelly Writers House alumni, Husnaa Hashim and Wes Matthews, the latter of whom segmented audio recordings for PennSound as an undergraduate).</p>
+
+<p>The full podcast series of twelve episodes, along with hi-res cover images and program notes, is available <a href="https://writing.upenn.edu/pennsound/x/LJAM.php">here</a>.</p>			<br class="clearit" />
+		</div>
+ 
+			
+	</div>
+				
+			<p>Want to read more? Visit the <a href="https://writing.upenn.edu/pennsound/daily">PennSound Daily archive</a>.</p>
+			
+			
+			
+</td>
+
+<td id="right">
+			<div class="box">
+				<h2>Search PennSound</h2>
+				<div class="content searchbox">
+
+<!-- new Google Custom Search code - chmarti - 01312018-->
+
+<script>
+  (function() {
+    var cx = '002685536534722764548:hlxnpzrs6d0';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only linkTarget="_parent"></gcse:searchbox-only>
+				
+	
+				
+				</div>
+			</div>
+						<div class="box">
+				<h2>New at PennSound</h2>
+				<div class="content">
+				<!-- Please place new entries between <li> and </li> tags.  Also, use the links here as examples
+for how to properly format <a> link tags.-->
+
+<ul>
+<li><a href="x/Kaufman-Bob.php#SF85">Bob Kaufman 60th birthday celebration, San Francisco, 1985</a></li>
+<li><a href="x/St-Bonaventure.php">Brandon Shimoda virtual reading for the St. Bonaventure Visiting Poets Series, March 12, 2026</a></li>
+<li><a href="x/Quasha.php">George Quasha reading <span class="title">genius foci</span>, Barrytown, NY, July 14, 2026</a></li>
+<li><a href="singles#B">Gregory Betts appearing on Morgiana, hosted by Richard Capener, 2025</a></li>
+<li><a href="x/Henning.php">Barbara Henning reading for Live Mag!, Bowery Poetry Club, February 18, 2026</a></li>
+<li><a href="x/Lamantia.php">Philip Lamantia reading with Carmen Valle at St. Mark's Church In-The-Bowery, New York City, April 21, 1999</a></li>
+<li><a href="x/Lamantia.php#KPFA79">Philip Lamantia lecture on poetry with a reading by Bob Kaufman, KPFA, Berkeley, CA, 1979</a></li>
+<li>Filmed interviews with <a href="x/Kaufman.php#int59">Bob Kaufman</a> and
+<a href="x/Lamantia.php#int59">Philip Lamantia</a>, 1959</li>
+<li><a href="x/Ruas.php">New author page: Charles Ruas</a></li>
+<li><a href="x/Belladonna.php">Three new Belladonna* readings from fall 2025 and spring
+2026</a></li>
+<li><a href="x/Dickinson.php">"Emily Dickinson conceals Iain Morrison," a performance
+by Iain Morrison, Kelly Writers House, September 11, 2024</a></li>
+<li><a href="x/Hejinian.php">A celebration of the life and work of Lyn Hejinian,
+Kelly Writers House, March 18, 2025</a></li>
+<li><a href="x/Bloch.php">Figure and Trade: A poetics book launch, with Julia
+Bloch and Sarah Dowling, Kelly Writers House, February 20, 2025</a></li>
+<li><a href="x/Brave-Testimony.php">Brave Testimony Reading Series: M. Nzadi
+Keita, Kelly Writers House, April 3, 2025</a></li>
+<li><a href="x/But-Company.php">But Company Reading Series: Emma Copley Eisenberg, 
+Kelly Writers House, April 22, 2025</a></li>
+<li><a href="x/Wieners.php#SFAM73">Video: John Wieners and Robert Creeley reading at the San
+Francisco Art Museum, November 15, 1973</a></li>
+<li><a href="x/Nielsen.php#Spidercone-2022">Two albums by A.L. Nielsen: <span class="title">Sometimes
+I Wonder Can a Cigar Box Hold My Blues</span> (2021) and <span class="title">Spidercone:
+More Blues, Rage and Hollers</span> (2022)</a></li>
+<li><a href="x/LJAM.php">New series page: <span class="title">Love Jawns: A Mixtape</span></a></li>
+<li><a href="x/Coolidge.php#Naropa-80">Two workshops by Clark Coolidge for the Summer Academy
+of Practicing Writers, Naropa, July, 1, 1980</a></li>
+<li><a href="x/St-Bonaventure.php">Laura Jaramillo and Travis Sharp reading for the St. Bonaventure Visiting Poets Series, 2025</a></li>
+<li><a href="x/Belladonna.php">Belladonna* Reading Series: Emily Martin and Julian Talamantez Brolaski, Von Bar, NYC, September 11, 2025</a></li>
+<li><a href="x/Mottram-centennial.php">Eric Mottram Centennial Collection, featuring recordings
+from his extensive collection and including Gilbert Adair, Bruce Andrews, John Ashbery,
+Bill Berkson, Ted Berrigan, Bob Cobbing, Robert Creeley,
+Robert Duncan, Allen Fisher, Allen Ginsberg, Michael McClure, Charles Olson,
+Muriel Rukeyser, and many more</a></li>
+<li><a href="x/Seattle-Subtext-Series.php">New series page: Seattle Subtext Series,
+1996&ndash;2009, including readings by Myung Mi Kim, Leslie Scalapino, David Bromige,
+Robin Blaser, Tom Raworth, Bernadette Mayer, and Rae Armantrout</a></li>
+<li><a href="x/Solarities.php">New series page: <span class="title">Solarities</span>,
+Duke University, 2023&ndash;2025, including readings by Stacy Szymaszek, Hoa Nguyen,
+Will Alexander, Joseph Donahue, and Nathaniel Mackey</a></li>
+<li><a href="x/Ang.php">Two new recordings featuring Brian Ang</a></li>
+<li><a href="x/Dunn.php">New author page: James Dunn, featuring readings from 2015 to 2024</a></li>
+<li><a href="x/Gizzi.php">Peter Gizzi reading for the But Company reading series, Kelly Writers House,
+September 25, 2024</a></li>
+<li><a href="x/Christopher.php">Six new readings by Lonely Christopher, 2018&ndash;2025</a></li>
+<li><a href="x/Henning.php">Barbara Henning reading for the launch of <span
+class="title">Girlfriend</span>, Detroit Public Library, July 18, 2025</a></li>
+<li><a href="x/Ashbery.php#Of-Related-Interest">34 poems read by John Ashbery, compiled
+by Gryphon Rue, 2025</a></li>
+<li><a href="x/Language-Noise.php">Language/Noise Festival, New York Public Library, January 11, 1982</a></li>
+<li><a href="x/Holman.php">Bob Holman: <span class="title">A Couple of Ways of Doing Something</span> (2006),
+<span class="title">The Awesome Whatever</span> (2007), and <span class="title">The Cutouts</span> (2019)</a></li>
+<li><a href="x/Kaufman-Bob.php#Malvinas">Bob Kaufman reading at Malvinas Cafe, San Francisco, December 6, 1974</a></li>
+<li><a href="x/Ward.php">Diane Ward retrospective video made after Sacramento Poetry Center reading, July 2025</a></li>
+<li><a href="x/Doris-video.php">Stacy Doris <span class="title">Cake Part</span> videos, Portland, Oregon, 2011</a></li>
+<li><a href="x/Lally.php#Lost-Angels">Michael Lally, <span class="title">Lost Angels</span>, 2010</a></li>
+<li><a href="x/Vicuna.php#UTPB02">Cecilia Vicu&ntilde;a reading at University of Texas
+Permian Basin, Odessa, TX, April 12, 2002</a></li>
+<li><a href="x/Adair.php">New author page: Gilbert Adair</a>, featuring a reading from
+<span class="title">h c e</span>, May 16, 2025</li>
+<li><a href="x/Nelson.php#FELLOW24">Maggie Nelson reading and conversation for Kelly Writers House
+Fellows Program, April 29&ndash;30, 2024</a></li>
+<li><a href="x/Hickman.php">Leland Hickman, <em>Great Slave Lake Suite</em></a></li>
+<li><a href="x/Taylor.php">Ken Taylor reading in the Wexler Studio at Kelly Writers House,
+March 4, 2025</a></li>
+<li><a href="x/Mullen-Harryette.php#FELLOW24">Harryette Mullen reading and conversation for
+Kelly Writers House Fellows Program, April 1&ndash;2, 2024</a></li>
+<li><a href="x/Ostashevsky.php">Eugene Ostashevsky reading and conversation with Kevin
+M.F. Platt, Kelly Writers House, February 20, 2024</a></li>
+<li><a href="x/Bloch.php#Dictee">Julia Bloch, Laynie Browne, Elizabeth Kim, Jena Osman,
+and Syd Zolf on Theresa Hak Kyung Cha's <span class="title">Dict&eacute;e</span>,
+Kelly Writers House, October 15, 2024</a></li>
+</ul>
+				</div>
+			</div>
+			
+</td>
+
+</tr>
+
+</table>
+
+<div id="footer">
+</div>
+	
+<!-- OLD Google Anayltics UA tag -- remove after 07012023 -->	
+	<script src="https://www.google-analytics.com/urchin.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	_uacct = "UA-2249536-1";
+	urchinTracker();
+	</script>
+	
+<!-- GA4 Google tag (gtag.js) chmarti 06222023-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-4VB2BVKFJK"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-4VB2BVKFJK');
+	</script>
+	
+	
+	</body>
+	</html>

@@ -1,0 +1,291 @@
+{
+ "row": "copyright-office-ai",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 (#1726) §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the initiative, its Report, guidance, decisions or cases with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (the human-authorship requirement for works containing AI-generated material: B1, B2, B4, B6, B7, B8, census question and area 'governance'; AI training on copyrighted works: B1, B5, B8; digital replicas: B1, B6). The census's anchors #940 and #1722 read at the passages that bear on the entity's kind (name authorities, pseudonyms and heteronyms, machine participation, certification of human authorship), by BRIEF-NEW-ROW-AUTHORSHIP §6.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 195,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "The Double Enclosure (EA-SEI-ENCLOSURE-01 v1.2, 2026-06-12): the archive's paper on the human-authorship requirement, read whole. It names the Office, its 2023 guidance, Part 2, the four leading decisions and Thaler v. Perlmutter and says what they hold (Part I: D), and applies its own categories to the requirement and the registration practice (the confession protocol, the instrument classification, the individuation bar, the decoy commons, the catalog moat, the Compositional Authorship Standard, attribution without disclaimer: O on class (1)). The defining paper for the archive's reading of the entity's rule.",
+   "claims": [
+    "O195-01",
+    "O195-02",
+    "O195-03",
+    "O195-04",
+    "O195-05",
+    "O195-06",
+    "O195-07",
+    "O195-08",
+    "O195-09",
+    "O195-10",
+    "O195-11",
+    "O195-12",
+    "O195-13",
+    "O195-14",
+    "O195-15",
+    "O195-16",
+    "O195-17"
+   ],
+   "cands": [
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "D0007",
+    "O0004",
+    "O0005",
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "D"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure (2026-05-12), §3 Position 2: names Part 2 and classes it as the tool-neutral position on AI-mediated authorship, with its value and limit. #1369 (2026-05-14) is a later instance of the same packet with the same passage: one lineage, kept in the provenance graph (S4), its candidates read with #729's.",
+   "claims": [
+    "O729-01",
+    "O729-02"
+   ],
+   "cands": [
+    "D0010",
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "O0013",
+    "O0014",
+    "O0015",
+    "D0017",
+    "D0018",
+    "D0019",
+    "D0020",
+    "D0021",
+    "O0024",
+    "O0025",
+    "O0026",
+    "H0023",
+    "H0024"
+   ]
+  },
+  {
+   "dep": 194,
+   "strata": [
+    "O"
+   ],
+   "reason": "Adversarial by Origin (2026-06-12), §IV: the property side of the human-authorship requirement (from #195) joined to the security side; adds a mechanism to the lineage (the property regime takes the work as unowned input and the output as unownable), so it earns its own slot (§3.6). Found by the string pass (O0003) and the hop (H0008); #1209 is a version of the same paper with the same paragraph, grouped.",
+   "claims": [
+    "O194-01"
+   ],
+   "cands": [
+    "O0003",
+    "H0008",
+    "O0023",
+    "H0022"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01 v0.2, the census's anchor, read at the passages that bear on the entity's kind: §1's civil-name attribution regime ('Copyright attaches to legal names'; the metadata attributing augmented-cognition outputs to human authorship attaches to legal names), §0's distinction of legal accountability from exhaustive authorial identity, and §5's machine-witness roles; the census's ls_reading cites it for this entity ('the legal register of #940's civil-name regime'). No string candidate (the class patterns do not occur as the pass reads them).",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101/",
+   "reason": "the Capture Registry's findings, analysis, reading, title, query note, PER note and description for the entity's capture (OBS-84d5b496561b, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/copyright-office-ai",
+   "reason": "the leesharks.com apparatus authorship census record (editor Lee Sharks, 2026-11-01, schema 1.1): the archive's own record of the entity, its fields, the census question, admission rule and anchors",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34",
+    "LS-35"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    1722
+   ],
+   "reason": "AI Calls You Fake (the census's anchor), read for registration, copyright, certification of human authorship and machine participation: its four questions (Part One) and its authorship note concern the existence tax and its own composition; no passage says anything of the Office, of copyright registration or of a human-authorship requirement. Read and not admitted."
+  },
+  {
+   "dep": [
+    1369
+   ],
+   "reason": "a later instance of #729 (same packet, same Position 2 passage): grouped in #729's lineage (S4); D0017–D0021, O0024–O0026, H0023, H0024"
+  },
+  {
+   "dep": [
+    1209
+   ],
+   "reason": "a version of #194 with the same paragraph: grouped in #194's lineage (S4); O0023, H0022"
+  },
+  {
+   "dep": [
+    1684
+   ],
+   "reason": "the Prediction Index (O0034, H0029): restates #195 ('argues that the human-authorship requirement misclassifies dialogic machine composition and forecasts concealment'), one lineage with O195-09 and O195-07; it adds no mechanism (S4)"
+  },
+  {
+   "dep": [
+    1692
+   ],
+   "reason": "the Secret Book of Walt metadata packet (D0026–D0028, O0035): the work's 2015 registration with the Office, the operator's registration function before the initiative; no claim on the initiative or its rule"
+  },
+  {
+   "dep": [
+    1634
+   ],
+   "reason": "Ontological Economy (D0022–D0025): the Office's circulars on restoration and on titles; no claim on the initiative or the human-authorship requirement"
+  },
+  {
+   "dep": [
+    46,
+    542,
+    1160
+   ],
+   "reason": "Circular 33 and the FAQ cited for what copyright does not protect (D0001, D0002, and the TANG specifications); no claim on the initiative"
+  },
+  {
+   "dep": [
+    138,
+    161,
+    302,
+    825,
+    833,
+    856,
+    921,
+    1081,
+    1396,
+    1397,
+    1401
+   ],
+   "reason": "O-class candidates on 'human authorship' in other senses (machine recoding of the archive's authorship, mediation signatures, data quality, the archive's own research basis, preservation): none applies a category to the requirement or the registration practice"
+  },
+  {
+   "dep": [
+    91,
+    92,
+    100,
+    104,
+    105,
+    112,
+    193,
+    196,
+    204,
+    349,
+    514,
+    522,
+    673,
+    702,
+    725,
+    823,
+    936,
+    937,
+    1190,
+    1370,
+    1384,
+    1386,
+    1680
+   ],
+   "reason": "hop candidates from #195 and #729: read for the entity and its three classes (a scan of each text for the aliases and class patterns returned no match outside #194, #1209 and #1369; #204's and #725/#1190's 'copyright' concern their own licences and the EU AI Act); none says anything of the initiative"
+  }
+ ],
+ "hop": {
+  "from": [
+   195,
+   729
+  ],
+  "candidates": 29,
+  "deposits": 27,
+  "admitted": 1
+ },
+ "class_pass": "O: the string pass returned 35 candidates in 19 deposits (10 O-direct, 25 O-class); reading admitted #195 and #194; #729 admitted at D; #940 read as the anchor",
+ "observations": "The archive names the Office's initiative documents (Part 2, the 2023 guidance, the four leading decisions, Thaler v. Perlmutter) in #195 and, citing Part 2, in #729/#1369. #195 is the archive's paper on the requirement itself; its readings bear on the field's own object and add senses to it (ρ = extends). #940 bears by class: copyright as one of the systems in which attribution attaches to legal names. No archive text names the initiative's page or its name 'Copyright and Artificial Intelligence' as a resource.",
+ "counts": {
+  "D_candidates": 28,
+  "R_candidates": 0,
+  "O_candidates": 35,
+  "H_candidates": 29,
+  "deposits_admitted": 4,
+  "admitted": [
+   195,
+   729,
+   194,
+   940
+  ],
+  "archive_claims": {
+   "deposits": 24,
+   "CAP": 10,
+   "LS": 35
+  }
+ }
+}

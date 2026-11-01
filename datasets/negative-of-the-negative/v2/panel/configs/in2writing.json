@@ -1,0 +1,47 @@
+{
+ "row": "in2writing",
+ "address": "In2Writing workshop",
+ "entity": "The Workshop on Intelligent and Interactive Writing Assistants (In2Writing; ACL Anthology venue ID in2writing), an interdisciplinary workshop series on writing assistants that alternates its venue between HCI and NLP conferences: the First (Dublin, May 2022, with ACL 2022) and Fourth (Albuquerque, May 2025, with NAACL 2025) published by the Association for Computational Linguistics in the ACL Anthology, the Second (CHI 2023) and Third (CHI 2024, Honolulu; proceedings published by ACM) at CHI, and the Fifth announced for UIST 2026 (Detroit, 2 November 2026); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/in2writing)",
+ "row_type": "C (a public entity on which the archive bears: an academic workshop series and its proceedings; an entity of the leesharks.com apparatus authorship census)",
+ "aliases": [
+  {
+   "pattern": "\\bIn2Writing\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bIntelligent and Interactive Writing Assistants\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bin2writing\\.(github\\.io|glitch\\.me)\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "writing assistants and human-AI co-writing: writing made with machine participation",
+   "pattern": "\\b(writing assistants?|co-writ(ing|ten|e)|human-AI (co-)?writing|AI-assisted writing|writing with (an )?AI|machine-in-the-loop writing)\\b",
+   "flags": "i",
+   "basis": "field: B1 (the workshop's own site, card 1: 'The purpose of this interdisciplinary workshop is to facilitate discussion around writing assistants'; 'Examples of new forms of human-machine collaborative writing'); B7 (the 2025 volume: 'Interaction-Required Suggestions for Control, Ownership, and Awareness in Human- AI Co-Writing'); B8 (the 2022 volume: 'machine-in-the-loop writing approaches'). The census's own area for the entity, 'machine-co-authorship' ('Machine participation in authorship: works and practices made with generative models, and records of the writing process'; census.json areas, rows[slug == 'in2writing'].areas)."
+  },
+  {
+   "term": "reader judgement of whether a text was written with AI",
+   "pattern": "\\b(written (with|by) (an )?(AI|artificial intelligence|a machine|a model)|AI-generated text|human-written|AI-written|machine-written)\\b",
+   "flags": "i",
+   "basis": "field: B8 (the 2022 volume, The Pure Poet: 'Participants’ task was to decide whether a continuation was written with an AI-tool or not'; 'participants generally had low accuracy for differentiating between text types but were overconfident in their decisions'). The census's own area for the entity, 'reception-research' ('Reception research: how readers, human and machine, judge a work by its stated or supposed author'), and its ls_reading ('Its 2022 reader study meets #1722's question directly')."
+  }
+ ],
+ "classes_note": "Two classes, each stated by a field source at the locus given and each the census's own area for the entity: (1) writing assistants and human-AI co-writing, the workshop's object (B1, B7, B8; census area 'machine-co-authorship'); (2) reader judgement of whether a text was written with AI (B8, The Pure Poet; census area 'reception-research', ls_reading). The census's anchors, #940 (EA-HETERONYMY-01, AXN:03B8) and #1722 (AI Calls You Fake, AXN:0B2A), are read at the passages that bear on the entity's kind (machine participation in authorship; the attribution of augmented-cognition outputs; the question of who made a work), by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP, Substitutions 6). The editors' names are not aliases of the entity and are not searched alone.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 AGGREGATOR, LABOR and LEFT briefs; address \"In2Writing workshop\" (in2writing-workshop-aio-20261101, OBS-e6d2b6473f29, ADDR-3648f1b226ce), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading.",
+ "hop_from": [
+  161,
+  666,
+  856,
+  940,
+  941,
+  1540,
+  1577,
+  1722
+ ]
+}

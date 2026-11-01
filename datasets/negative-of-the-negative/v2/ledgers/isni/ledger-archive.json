@@ -1,0 +1,2398 @@
+[
+ {
+  "id": "LS-01",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the record's name for the entity",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['name']",
+  "quote": "ISNI (International Standard Name Identifier)",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: the ISO standard number for the public identities of contributors",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-02",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the entity's other names: ISNI, ISO 27729, the ISNI International Agency (ISNI-IA), isni.org",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['aka']",
+  "quote": "[\"ISNI\", \"ISO 27729\", \"ISNI International Agency (ISNI-IA)\", \"isni.org\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: the ISO standard number for the public identities of contributors",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "As ISO 27729, it is part of a family of international standard identifiers",
+    "key": "iso",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI International Agency (ISNI-IA) LIMITED Registered address: c/o EDItEUR, United House, North Road, London, N7 9DP, UK Company registration number: 07476425",
+    "key": "operator",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-03",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the record's kind for the entity, in its own words: the ISO certified global standard number for identifying contributors to creative works and those active in their distribution; ISO 27729",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['kind']",
+  "quote": "the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution (its own words); ISO 27729",
+  "kernel": true,
+  "const": true,
+  "lineage": "what it is: the ISO standard number for the public identities of contributors",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution, including researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators, and more.",
+    "key": "self_description",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "As ISO 27729, it is part of a family of international standard identifiers",
+    "key": "iso",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-04",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the operator: ISNI-IA Limited, c/o EDItEUR, London (company 07476425); per Wikipedia a UK not-for-profit company founded by CISAC, CENL, IFRRO, IPDA, OCLC and ProQuest, with registration agencies",
+  "kind": "attribution",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['operator']",
+  "quote": "ISNI International Agency (ISNI-IA) Limited, registered c/o EDItEUR, London (company 07476425); per Wikipedia (third party) a UK not-for-profit company limited by guarantee founded by CISAC, CENL, IFRRO, IPDA, OCLC and ProQuest, with registration agencies appointed by it that deal with applicants",
+  "kernel": false,
+  "const": false,
+  "lineage": "the agency",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI International Agency (ISNI-IA) LIMITED Registered address: c/o EDItEUR, United House, North Road, London, N7 9DP, UK Company registration number: 07476425",
+    "key": "operator",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "This UK registered, not-for-profit company has been founded by a consortium of organisations consisting of the Confédération Internationale des Sociétés d'Auteurs et Compositeurs (CISAC), the Conference of European National Librarians (CENL), the International Federation of Reproduction Rights Organisations (IFRRO), the International Performers Database Association (IPDA), the Online Computer Library Center (OCLC) and ProQuest .",
+    "key": "wp_founders",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "Access to the assignment system and database, and to the numbers that are generated as the output of the process, are controlled by independent bodies known as registration agencies.",
+    "key": "wp_agencies",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-05",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the record's unit: an ISNI of 16 characters assigned to a public identity, an individual, a pseudonym, or an organization or group",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['unit']",
+  "quote": "an ISNI, 16 digits (15 digits and a check character), assigned to a public identity: an individual, a pseudonym, or an organization or group",
+  "kernel": true,
+  "const": true,
+  "lineage": "what it is: the ISO standard number for the public identities of contributors",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "ISNI consists of 15 digits followed by a check character.",
+    "key": "wp_format",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "The ISNI allows a single identity (such as an author's pseudonym or the imprint used by a publisher ) to be identified using a unique number.",
+    "key": "wp_pseudonym",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI holds public records of 2,076,462 organizations or groups",
+    "key": "organizations",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-06",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what it records: the public identities of contributors to creative works and those active in their distribution, more than 16.6 million, with direct contributions from 100 sources",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['record_object']",
+  "quote": "the public identities of contributors to creative works and those active in their distribution (researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators): public records of more than 16.6 million identities, with direct contributions from 100 sources",
+  "kernel": false,
+  "const": false,
+  "lineage": "holdings and counts",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution, including researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators, and more.",
+    "key": "self_description",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI holds public records of more than 16.6 million identities",
+    "key": "identities",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "The ISNI database is a cross-domain resource with direct contributions from 100 sources",
+    "key": "sources",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-07",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "whose authorship it keeps: the public identities of contributors, so that every published work can be attributed to its creator",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].record.keeps",
+  "quote": "the public identities of contributors, so that 'every published work can be unambiguously attributed to its creator wherever that work is described'",
+  "kernel": true,
+  "const": false,
+  "lineage": "public names and attribution to the creator",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "so that every published work can be unambiguously attributed to its creator wherever that work is described.",
+    "key": "attributed",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-08",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "under what name it holds a work: under the public name(s); each name or pseudonym its own ISNI per Wikipedia; a single linking record for a performer who also writes; the linking of one author's ISNIs not shown in the saved sources; the Gender Identities Policy linked and unsaved",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].record.name",
+  "quote": "under the public name: the ISNI-IA mission is to assign an identifier 'to the public name(s)' of a contributor; Wikipedia (third party) says an ISNI can identify 'a single identity (such as an author's pseudonym or the imprint used by a publisher )' and that 'If an author has published under several different names or pseudonyms, each such name will receive its own ISNI'; the same article gives a performer who also writes music and poems 'a single linking ISNI record'; whether the separate ISNIs of one author's names are linked to one another or to a civil person is not shown in the saved sources; a Gender Identities Policy is linked from the home page and was not saved",
+  "kernel": true,
+  "const": true,
+  "lineage": "a single identity: pseudonym or imprint",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "The mission of the ISNI International Agency (ISNI-IA) is to assign to the public name(s) of a researcher, inventor, writer, artist, performer, publisher, etc. a persistent unique identifying number in order to resolve the problem of name ambiguity in search and discovery",
+    "key": "mission",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "The ISNI allows a single identity (such as an author's pseudonym or the imprint used by a publisher ) to be identified using a unique number.",
+    "key": "wp_pseudonym",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.",
+    "key": "wp_each_name",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "An example of the use of such a number is the identification of a musical performer who is also a writer both of music and of poems. While they might be identified in various databases using numerous private and public identification systems, under the ISNI system, they would have a single linking ISNI record.",
+    "key": "wp_linking_record",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "Gender Identities Policy",
+    "key": "gender_policy",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-09",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "who holds it: ISNI-IA through registration agencies that control access, deal with customers and recompense it, appointed by it and funded independently; a subset of the data under CC0",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].record.holder",
+  "quote": "ISNI-IA, through registration agencies that control access to the assignment system, deal with customers and recompense ISNI-IA, appointed by it and funded independently (Wikipedia); a subset of the data is under CC0 (Wikipedia)",
+  "kernel": false,
+  "const": false,
+  "lineage": "registration agencies",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "Access to the assignment system and database, and to the numbers that are generated as the output of the process, are controlled by independent bodies known as registration agencies.",
+    "key": "wp_agencies",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "Registration agencies are appointed by ISNI-IA but will be managed and funded independently.",
+    "key": "wp_agencies_funded",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "A subset of the data is available under CC0 .",
+    "key": "wp_cc0",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-10",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the authorial function: not recorded as authorship; the identifier resolves name ambiguity and attributes works to the creator, recording no authorial function, voice or responsibility distinct from the identity",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].record.function",
+  "quote": "not recorded as authorship: the identifier resolves name ambiguity and attributes works 'to its creator'; it records no authorial function, voice or responsibility distinct from the identity it identifies",
+  "kernel": true,
+  "const": true,
+  "lineage": "the census reading: the name kept, no authorial function",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "so that every published work can be unambiguously attributed to its creator wherever that work is described.",
+    "key": "attributed",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-11",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "method: assignment through registration agencies using a system of interface, data schema, disambiguation algorithms and database based primarily on VIAF; direct data contributions from 100 sources",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['method']",
+  "quote": "assignment through registration agencies (national libraries, book-trade and music-industry services, WIPO, YouTube and others) using a system of user interface, data schema, disambiguation algorithms and database 'based primarily on the Virtual International Authority File (VIAF)' (Wikipedia); direct data contributions from 100 sources",
+  "kernel": false,
+  "const": false,
+  "lineage": "the assignment system and VIAF",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "The system is based primarily on the Virtual International Authority File (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.",
+    "key": "wp_viaf",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "The ISNI database is a cross-domain resource with direct contributions from 100 sources",
+    "key": "sources",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-12",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the standard published 15 March 2012",
+  "kind": "genealogy",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].coverage.period",
+  "quote": "standard published 15 March 2012 (Wikipedia)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the standard and its family",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "the valid standard was published on 15 March 2012.",
+    "key": "wp_standard",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-13",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the counts: more than 16.6 million identities (headline 16.69 million); over 14.6 million individuals, over 2.9 million researchers; 2,076,462 organizations or groups; 100 sources",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].count.value",
+  "quote": "public records of more than 16.6 million identities (headline 16.69 million); over 14.6 million individuals, of which over 2.9 million researchers; 2,076,462 organizations or groups; 100 direct sources",
+  "kernel": false,
+  "const": false,
+  "lineage": "holdings and counts",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI holds public records of more than 16.6 million identities",
+    "key": "identities",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "16.69 million",
+    "key": "headline",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI holds public records of over 14.6 million individuals (of which over 2.9 million are researchers)",
+    "key": "individuals",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI holds public records of 2,076,462 organizations or groups",
+    "key": "organizations",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "The ISNI database is a cross-domain resource with direct contributions from 100 sources",
+    "key": "sources",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-14",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the counts' date: the home page figures undated; Wikipedia's coverage table ends at 2025-10-13 with 16.4 million",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].count.as_of",
+  "quote": "home page read 2026-11-01 (figures undated); Wikipedia's coverage table ends at 2025-10-13 with 16.4 million identities",
+  "kernel": false,
+  "const": false,
+  "lineage": "holdings and counts",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "2025-10-13 [ 26 ] 16.4 14.3 2,017,936",
+    "key": "wp_coverage_2025",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-15",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "a stated limit: the scope is public identities; the mission assigns identifiers to the public name(s)",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].stated_limits[0]",
+  "quote": "its scope is public identities: the mission assigns identifiers 'to the public name(s)' of contributors",
+  "kernel": true,
+  "const": false,
+  "lineage": "public names and attribution to the creator",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "The mission of the ISNI International Agency (ISNI-IA) is to assign to the public name(s) of a researcher, inventor, writer, artist, performer, publisher, etc. a persistent unique identifying number in order to resolve the problem of name ambiguity in search and discovery",
+    "key": "mission",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-16",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "a stated limit: the saved home page states no rule on pseudonyms; its FAQs, data quality procedures and Gender Identities Policy unsaved",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].stated_limits[1]",
+  "quote": "the saved home page states no rule on pseudonyms; its FAQs, data quality procedures and Gender Identities Policy were not saved",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unanswered link to the civil person",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-17",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what the record cannot answer: whether one author's ISNIs are linked to one another or to a civil person",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].does_not_answer[0]",
+  "quote": "whether the ISNIs of one author's several names are linked to one another or to a civil person (not shown in the saved sources)",
+  "kernel": true,
+  "const": false,
+  "lineage": "the unanswered link to the civil person",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-18",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what the record cannot answer: whether a name is a pseudonym or a heteronym in #940's sense; ISNI records no authorial function",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].does_not_answer[1]",
+  "quote": "whether a name is a pseudonym or a heteronym in #940's sense: the record identifies a public identity and records no authorial function",
+  "kernel": false,
+  "const": false,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-19",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what the record cannot answer: how ISNI handles a name borne by a collective or a machine-participating function",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].does_not_answer[2]",
+  "quote": "how ISNI handles a name whose bearer is a collective or a machine-participating function (not in the saved sources)",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census reading: the name kept, no authorial function",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-20",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what the record cannot answer: what the Gender Identities Policy provides (unread)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].does_not_answer[3]",
+  "quote": "what its Gender Identities Policy provides (unread)",
+  "kernel": false,
+  "const": false,
+  "lineage": "guidance and policies",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-21",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what the record answers: that per Wikipedia each published name or pseudonym of an author receives its own ISNI",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].answers[1]",
+  "quote": "that, per Wikipedia, each published name or pseudonym of an author receives its own ISNI",
+  "kernel": false,
+  "const": false,
+  "lineage": "each name its own number; one linking record across functions",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.",
+    "key": "wp_each_name",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-22",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the archive's reading: ISNI can keep a chosen name unreduced on the record as its own identifier; the linking back to one person is not shown; the single linking record shows the other direction; it records no distinct authorial function and aims at attribution to the creator",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['ls_reading']",
+  "quote": "ISNI identifies public identities and, by Wikipedia's account, gives each published name or pseudonym of an author its own ISNI, so a chosen name can stand on the record as its own identifier; the saved sources do not show whether those identifiers are linked back to one person, and the single linking record for a performer who also writes shows the system's other direction, one identity across several functions. In #940's terms ISNI can keep the label unreduced on the record; it records no distinct authorial function, and its stated aim is attribution of each work 'to its creator'.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the census reading: the name kept, no authorial function",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-23",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "not a record of authorial function",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].negative_tags[0]",
+  "quote": "NOT a record of authorial function: it identifies a public identity and attributes works to it",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census reading: the name kept, no authorial function",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-24",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "not shown to keep an author's several names apart from the civil person",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].negative_tags[1]",
+  "quote": "NOT shown to keep an author's several names apart from the civil person: the linking of one author's ISNIs is not in the saved sources",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unanswered link to the civil person",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-25",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "not ORCID: ORCID iDs are drawn from a block of ISNI; ORCID its own row",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].negative_tags[2]",
+  "quote": "NOT ORCID: ORCID iDs are drawn from a block of ISNI (ORCID's Wikipedia article), and ORCID is its own row",
+  "kernel": false,
+  "const": false,
+  "lineage": "ORCID in ISNI's number space",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "orcid-names--wikipedia",
+    "basis": "third_party",
+    "quote": "ORCID IDs are a subset of the International Standard Name Identifier (ISNI),",
+    "key": "orcid_subset",
+    "url": "https://en.wikipedia.org/wiki/ORCID",
+    "sha256": "08dcd844e53103479bb54928f0989b0e16dde444b70b83a4300f4e9c42c7fca2"
+   }
+  ]
+ },
+ {
+  "id": "LS-26",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "not VIAF: the assignment system is based primarily on VIAF, its own row",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].negative_tags[3]",
+  "quote": "NOT VIAF: the assignment system is based primarily on VIAF, which is its own row",
+  "kernel": false,
+  "const": false,
+  "lineage": "the assignment system and VIAF",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "The system is based primarily on the Virtual International Authority File (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.",
+    "key": "wp_viaf",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-27",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the record's relations: uses VIAF; neighbour of ORCID; used by Wikidata (P213)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['relations']",
+  "quote": "[{\"rel\": \"uses\", \"target\": \"viaf\", \"note\": \"the ISNI assignment system is 'based primarily on' VIAF (Wikipedia, ISNI article)\"}, {\"rel\": \"neighbour\", \"target\": \"orcid-names\", \"note\": \"ORCID iDs are a subset of ISNI, drawn from a block reserved for ORCID (Wikipedia, ORCID article)\"}, {\"rel\": \"used_by\", \"target\": \"wikidata\", \"note\": \"Wikidata has the property ISNI (P213) (Wikipedia, ISNI article)\"}]",
+  "kernel": false,
+  "const": false,
+  "lineage": "bridge identifier and linked data",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "The system is based primarily on the Virtual International Authority File (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.",
+    "key": "wp_viaf",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   },
+   {
+    "src": "orcid-names--wikipedia",
+    "basis": "third_party",
+    "quote": "ORCID IDs are a subset of the International Standard Name Identifier (ISNI),",
+    "key": "orcid_subset",
+    "url": "https://en.wikipedia.org/wiki/ORCID",
+    "sha256": "08dcd844e53103479bb54928f0989b0e16dde444b70b83a4300f4e9c42c7fca2"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "Wikidata has the property: ISNI (P213)",
+    "key": "wp_wikidata",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-28",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the specific question the entity answers for the census: which public identity a contributor is recorded under, so that works can be attributed to it across repertoires",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['question']",
+  "quote": "Which public identity (a name, a pseudonym, an imprint) is a contributor recorded under, so that works can be attributed to it across repertoires (name disambiguation)?",
+  "kernel": true,
+  "const": false,
+  "lineage": "the census's question and admission",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-29",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "what the entity is to the census: infrastructure",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['host_relation']",
+  "quote": "infrastructure",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and admission",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-30",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the census's areas for the entity: attribution-and-credit, heteronymy",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['areas']",
+  "quote": "[\"attribution-and-credit\", \"heteronymy\"]",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and admission",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-31",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the census's organizing question",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json organizing_question",
+  "quote": "How is authorship made, named, distributed, attributed and sustained across persons, personas, collectives and machine participation, and what is lost when those relations are collapsed?",
+  "kernel": true,
+  "const": true,
+  "lineage": "the census's question and admission",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-32",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the census's admission rule: an aggregator gathers and holds many works or records and says what it holds",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json admission_rule",
+  "quote": "A row is an aggregator: a resource that gathers and holds many other works or records and says what it holds (operator, 2026-11-01).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and admission",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-33",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "lifecycle: active; new assignment services (CBL, Bowker) and a February 2026 press release on guidance for authors; standard published 15 March 2012",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].lifecycle.detail",
+  "quote": "the home page (read 2026-11-01) carries news of new assignment services (CBL in Latin America, Bowker for the book industry) and a February 2026 press release on guidance for authors; standard published 15 March 2012",
+  "kernel": false,
+  "const": false,
+  "lineage": "guidance and policies",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "Bowker Launches New International ISNI Assignment Service for the Book Industry",
+    "key": "news_bowker",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "ISNI Press Release, February 2026: The ISNI International Agency Launches Guidance to Help Authors and Creators Protect Their Digital Identity",
+    "key": "press_2026",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   },
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "the valid standard was published on 15 March 2012.",
+    "key": "wp_standard",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-34",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "access: public database search and an ISNI request service on isni.org; Linked Data; a subset of the data under CC0",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['data_access']",
+  "quote": "public database search and an ISNI request service on isni.org; Linked Data named in its resources; a subset of the data under CC0 (Wikipedia)",
+  "kernel": false,
+  "const": false,
+  "lineage": "data, access and licence",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--wikipedia",
+    "basis": "third_party",
+    "quote": "A subset of the data is available under CC0 .",
+    "key": "wp_cc0",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+   }
+  ]
+ },
+ {
+  "id": "LS-35",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "unchecked: any ISNI record for a pseudonym, and whether it links to other names of the same author",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].unchecked[2]",
+  "quote": "any ISNI record for a pseudonym, and whether it links to other names of the same author",
+  "kernel": false,
+  "const": false,
+  "lineage": "the unanswered link to the civil person",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "LS-36",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "unchecked: the Gender Identities Policy (linked from the home page, not saved)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni'].unchecked[1]",
+  "quote": "the Gender Identities Policy (linked from the home page, not saved)",
+  "kernel": false,
+  "const": false,
+  "lineage": "guidance and policies",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time.",
+  "basis": [
+   {
+    "src": "isni--home",
+    "basis": "operator",
+    "quote": "Gender Identities Policy",
+    "key": "gender_policy",
+    "url": "https://isni.org/",
+    "sha256": "c6fa28e3c6f49acd5ef4302b2fb4e9fc9f2c9e631fd5a8f204272e041c9483d6"
+   }
+  ]
+ },
+ {
+  "id": "LS-37",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni",
+   "label": "LS"
+  },
+  "claim": "the record type: registry",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'isni']['record_type']",
+  "quote": "registry",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question and admission",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: ISNI (International Standard Name Identifier) (https://www.leesharks.com/apparatus/aggregators/isni), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text)",
+  "entity": "isni",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/isni"
+  },
+  "note": "The census was compiled and revised in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); its rows are built from data/authorship-census/rows/isni.py. The rendered page was not present in the local fleet checkout at composition time."
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the composition's first sentence follows the home page and Wikipedia; its counts are the home page's, the organizations rounded to '2 million'",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, findings.0",
+  "quote": "THE STANDARD IN ITS OWN WORDS. The first sentence follows the home page",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the composition joins pseudonyms and legal names to a single person under one profile, a linkage no saved source states",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, findings.1",
+  "quote": "The composition joins pseudonyms and legal names to 'a single person' under one profile, a linkage no saved source states; the census row records that whether one author's separate ISNIs are linked to one another or to a civil person 'is not shown in the saved sources'.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the agency given without its origin; consortium, VIAF basis, 2012 standard and ORCID's block not carried; the Bowker register is the home page's news item",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, findings.2",
+  "quote": "The founding consortium (CISAC, CENL, IFRRO, IPDA, OCLC, ProQuest), the basis in VIAF ('The system is based primarily on the Virtual International Authority File (VIAF) service') and the 2012 standard are not carried; the bridge goes to 'ORCID (in scholarly publishing), IPI, and ISBN', and the article's account of ORCID as a block of ISNI space does not appear. The Bowker register the answer points to is the home page's news item",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's innocent reading: the Overview gives what the standard is, what it does, its format and size, its manager and where to register",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, reading",
+  "quote": "Asked for the acronym, the Overview gives what the standard is, what it does, its format and size, who manages it, and where to register.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's analysis: accurate at definition, format, size and agency; on the census's question it states a linkage of a person's names under one profile",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, analysis",
+  "quote": "Accurate at the level of definition, format, size and agency. On the census's question it states a linkage of a person's names under one profile, where the saved account gives each published name its own number.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's title for the capture",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, mt",
+  "quote": "'ISNI' ON THE OVERVIEW — THE STANDARD AT ITS OWN WORDS AND COUNTS; ITS NAMES GIVEN AS 'LINKED UNDER ONE PROFILE', WHERE THE SAVED ACCOUNT GIVES EACH PSEUDONYM ITS OWN ISNI",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's PER note: the agency named, the format given without an example number, the sources carded",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, per_note",
+  "quote": "The ISNI International Agency named as manager; the format given, no example number; sources carded.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's query note: the census name, a new address",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, q_kind",
+  "quote": "the census name; NEW address.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's originator basis: an external resource entered in the authorship census",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "isni-aio-20261101, originator.basis",
+  "quote": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry isni-aio-20261101 (OBS-ed9355b7e61f, AXN:0B84.CAPTURE.🗺️⏳🤝✨🕘🗡️)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/isni-aio-20261101/"
+  }
+ },
+ {
+  "id": "D317-01",
+  "dep": 317,
+  "claim": "ISNI extends to creative contributors broadly the stable identifiers of authority control (VIAF; ORCID for researchers)",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "§3.1.1 Authority Control and Identity Management, ¶1 (para 55)",
+  "quote": "Library science has long grappled with the problem of entity persistence across systems. The Virtual International Authority File (VIAF) aggregates national authority files to create stable identifiers for persons, organizations, and works. ORCID provides persistent digital identifiers for researchers. The ISNI (International Standard Name Identifier) extends this to creative contributors broadly.",
+  "kernel": true,
+  "const": false,
+  "lineage": "authority control from above",
+  "date": "2026-01-17",
+  "title": "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence",
+  "creator": "Johannes Sigil; Rex Fraction",
+  "file": "data/texts/AXN-0078-text.md",
+  "axn": "AXN:0078.GOVERNANCE.🎻🕌🪧🗂️↙️🔻",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "D317-02",
+  "dep": 317,
+  "claim": "these systems solve entity disambiguation by institutional coordination: registries that assign and maintain identifiers",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D",
+   "O"
+  ],
+  "locus": "§3.1.1, ¶2 (para 56)",
+  "quote": "These systems solve entity disambiguation through **institutional coordination**: centralized or federated registries that assign and maintain identifiers.",
+  "kernel": false,
+  "const": false,
+  "lineage": "authority control from above",
+  "date": "2026-01-17",
+  "title": "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence",
+  "creator": "Johannes Sigil; Rex Fraction",
+  "file": "data/texts/AXN-0078-text.md",
+  "axn": "AXN:0078.GOVERNANCE.🎻🕌🪧🗂️↙️🔻",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "D317-03",
+  "dep": 317,
+  "claim": "the archive's distinction: authority control assigns identity from above; logotic programming constructs recognizability from within",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§3.1.1, key distinction (para 58)",
+  "quote": "Authority control assigns identity from above; Logotic Programming constructs recognizability from within.",
+  "kernel": true,
+  "const": false,
+  "lineage": "authority control from above",
+  "date": "2026-01-17",
+  "title": "LOGOTIC PROGRAMMING: A Method for Encoding Conditions of Intelligibility for Machine and Human Intelligence",
+  "creator": "Johannes Sigil; Rex Fraction",
+  "file": "data/texts/AXN-0078-text.md",
+  "axn": "AXN:0078.GOVERNANCE.🎻🕌🪧🗂️↙️🔻",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "R755-01",
+  "dep": 755,
+  "claim": "the archive's provenance protocol anchors a deposit to external identity authorities the operator does not control, ISNI identifiers among them where applicable",
+  "kind": "function",
+  "modality": "stipulation",
+  "strata": [
+   "D",
+   "R"
+  ],
+  "locus": "§6 Layer 5 — External Authority Anchoring (para 48)",
+  "quote": "identity-authorities that the operator does not control: Wikidata entity IDs, ORCID inscription, DOI registration, namespace declarations at independent registries, ISNI identifiers where applicable.",
+  "kernel": true,
+  "const": false,
+  "lineage": "external identity authorities in the archive's protocol",
+  "date": "2026-05-24",
+  "title": "SPXI Protocol v0.2: Five-Layer Distributed Provenance Architecture for Coverage-Architecture Scholarship",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02AF-text.md",
+  "axn": "AXN:02AF.GOVERNANCE.🤲♆◇🌊🎵⏏️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "R755-02",
+  "dep": 755,
+  "claim": "beside the external authorities, inscription at the archive's heteronym registry (or an equivalent authorial-position registry) for heteronymic authorship",
+  "kind": "function",
+  "modality": "stipulation",
+  "strata": [
+   "R"
+  ],
+  "locus": "§6 Layer 5, Specification (para 50)",
+  "quote": "Heteronym entity inscription at the Crimson Hexagonal Archive's heteronym registry (or equivalent authorial-position registry) when the deposit operates under heteronymic configurational authorship",
+  "kernel": false,
+  "const": false,
+  "lineage": "external identity authorities in the archive's protocol",
+  "date": "2026-05-24",
+  "title": "SPXI Protocol v0.2: Five-Layer Distributed Provenance Architecture for Coverage-Architecture Scholarship",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-02AF-text.md",
+  "axn": "AXN:02AF.GOVERNANCE.🤲♆◇🌊🎵⏏️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O940-01",
+  "dep": 940,
+  "claim": "the civil name is the atomic unit of attribution across the systems that govern legitimacy",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§1 The political-semantic condition ¶2",
+  "quote": "A civil name is the atomic unit of attribution across the systems that govern legitimacy in scholarly, literary, institutional, and platform-mediated production.",
+  "kernel": false,
+  "const": false,
+  "lineage": "civil-name reduction and the heteronymic principle",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "axn": "AXN:03B8.FOUNDATIONAL.🌅🎵💙♆🌳🗝️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O940-02",
+  "dep": 940,
+  "claim": "the archive's definition of pseudonymy: a different name for a work whose authorial function is traceable to the civil identity behind it",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2 The heteronymic operation, distinguished ¶1",
+  "quote": "Pseudonymy is using a different name for a work whose authorial function is nonetheless traceable to the civil identity that stands behind the name.",
+  "kernel": false,
+  "const": false,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "axn": "AXN:03B8.FOUNDATIONAL.🌅🎵💙♆🌳🗝️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O940-03",
+  "dep": 940,
+  "claim": "a pseudonym changes the label attached to an authorial function; a heteronym changes the organization of the function itself",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2 ¶2",
+  "quote": "A pseudonym changes the label attached to an authorial function. A heteronym changes the organization of the authorial function itself.",
+  "kernel": true,
+  "const": true,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "axn": "AXN:03B8.FOUNDATIONAL.🌅🎵💙♆🌳🗝️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O940-04",
+  "dep": 940,
+  "claim": "the principle: the authorial function is attributable through the civil bearer without being reducible to that bearer",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§7 The principle (para 213)",
+  "quote": "The authorial function is attributable through the civil bearer without being reducible to that bearer. Heteronymy is the specifically ethical practice of maintaining that distinction under attribution regimes that concentrate authority on civil names.",
+  "kernel": true,
+  "const": false,
+  "lineage": "civil-name reduction and the heteronymic principle",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "axn": "AXN:03B8.FOUNDATIONAL.🌅🎵💙♆🌳🗝️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O940-05",
+  "dep": 940,
+  "claim": "the heteronymic architecture makes a collapse of the plural corpus into one civil identity register as loss",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2, 'It interrupts extraction by making reduction visible as reduction'",
+  "quote": "It ensures that the collapse registers as loss — the plurality was maintained, the seams were declared, the reduction is visibly reduction rather than recovery of ground truth.",
+  "kernel": false,
+  "const": false,
+  "lineage": "civil-name reduction and the heteronymic principle",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "axn": "AXN:03B8.FOUNDATIONAL.🌅🎵💙♆🌳🗝️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O940-06",
+  "dep": 940,
+  "claim": "heteronymy provides the legibility attribution systems require while preserving the plurality through which authorship occurs",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§0 The compressed statement ¶1",
+  "quote": "It provides the legibility attribution systems require while preserving the plurality of voices, roles, substrates, and inherited forces through which authorship actually occurs.",
+  "kernel": false,
+  "const": false,
+  "lineage": "civil-name reduction and the heteronymic principle",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "axn": "AXN:03B8.FOUNDATIONAL.🌅🎵💙♆🌳🗝️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O666-01",
+  "dep": 666,
+  "claim": "pseudonymous authorship: the authorial position attached to the pseudonym, the voice the biographical person's",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "HPT, the provenance structures, 'Pseudonymous authorship' (para 45)",
+  "quote": "The biographical person writes in their own voice but under a different name. The authorial position is attached to the pseudonym; the voice remains the biographical person's.",
+  "kernel": false,
+  "const": false,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-04-17",
+  "title": "The New Human Post-Pessoa Heteronymic Practice in the AI Era EA-PKG-03 · v1.0",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0213-text.md",
+  "axn": "AXN:0213.GOVERNANCE.♅🌟🌱⚪🔆🔔",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O666-02",
+  "dep": 666,
+  "claim": "authorship is a traceable relation among a biographical person, an authorial position, a voice and a text, with structural variations",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "HPT, authorship as provenance (para 44)",
+  "quote": "Authorship is not the single-point production of a text by a single biographical person; it is a traceable relation among a biographical person, an authorial position, a voice, and a text, with specifiable structural variations.",
+  "kernel": true,
+  "const": true,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-04-17",
+  "title": "The New Human Post-Pessoa Heteronymic Practice in the AI Era EA-PKG-03 · v1.0",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0213-text.md",
+  "axn": "AXN:0213.GOVERNANCE.♅🌟🌱⚪🔆🔔",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O666-03",
+  "dep": 666,
+  "claim": "the law, the knowledge graph and the scholarly apparatus should accommodate every provenance structure without collapsing it into the direct-authorship default",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "HPT's claim (para 46)",
+  "quote": "HPT's claim is that these are all legitimate provenance structures, that they are theoretically describable, and that the law, the knowledge graph, and the scholarly apparatus should accommodate them rather than collapsing them into the \"direct authorship\" default.",
+  "kernel": false,
+  "const": false,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-04-17",
+  "title": "The New Human Post-Pessoa Heteronymic Practice in the AI Era EA-PKG-03 · v1.0",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0213-text.md",
+  "axn": "AXN:0213.GOVERNANCE.♅🌟🌱⚪🔆🔔",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O666-04",
+  "dep": 666,
+  "claim": "collaborative authorship (several persons, one position) and cross-substrate authorship (a person with computational substrates contributing to the voice)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "HPT, 'Collaborative authorship' and 'Cross-substrate heteronymic authorship' (para 45)",
+  "quote": "Multiple biographical persons contribute to an authorial position. … The authorial position is articulated through collaboration between a biographical person and one or more computational substrates, with the substrates contributing substantively to the voice rather than merely transcribing.",
+  "kernel": false,
+  "const": false,
+  "lineage": "pseudonym and heteronym: label and organization",
+  "date": "2026-04-17",
+  "title": "The New Human Post-Pessoa Heteronymic Practice in the AI Era EA-PKG-03 · v1.0",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-0213-text.md",
+  "axn": "AXN:0213.GOVERNANCE.♅🌟🌱⚪🔆🔔",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1722-01",
+  "dep": 1722,
+  "claim": "a person and a pen name, among other objects, each exist in their own way with their own kind of evidence",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Part One, ¶1",
+  "quote": "A person, a pen name, a fictional character, an institution, a piece of research, a theory, a result, a piece of software and an event each exist in their own way, and each has its own kind of evidence.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-10-30",
+  "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0B2A-text.md",
+  "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1722-02",
+  "dep": 1722,
+  "claim": "the existence tax: an answer spends evidence about one question (such as what kind of name a byline is) as an answer to another",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Part One, ¶4 (the tax defined)",
+  "quote": "The tax is levied when an answer takes evidence about one of these questions and spends it as an answer to another.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-10-30",
+  "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0B2A-text.md",
+  "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1722-03",
+  "dep": 1722,
+  "claim": "a heteronym is declared: the archive publishes its heteronym registry with the orthonym, roles and dates",
+  "kind": "fact",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§10 'Your heteronyms are fake accounts', How to catch it",
+  "quote": "A Sybil attack hides one actor behind many. A heteronym is declared: the archive publishes its heteronym registry, with the orthonym, the roles and the dates.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-10-30",
+  "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0B2A-text.md",
+  "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1722-04",
+  "dep": 1722,
+  "claim": "an adequate answer names the object at its own level: a person, a pen name, a paper, an institute, an event",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Part Six, an adequate answer",
+  "quote": "It names the object at its own level: a person, a pen name, a paper, an institute, an event.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-10-30",
+  "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0B2A-text.md",
+  "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1722-05",
+  "dep": 1722,
+  "claim": "the tax falls on the heteronymous and all whose existence the index has not already ratified",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Part Seven, who pays",
+  "quote": "The tax falls on the independent, the new, the unaccredited, the heteronymous, the small: on everyone whose existence the index has not already ratified.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-10-30",
+  "title": "AI Calls You Fake: The Existence Tax on Real People and Real Work",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-0B2A-text.md",
+  "axn": "AXN:0B2A.GOVERNANCE.🌈🔜🟠🌇🚪♠️",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1604-01",
+  "dep": 1604,
+  "claim": "a constructed authorial identity with a persistent identifier and a deposited corpus and a natural-person identity are different kinds of thing",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the packet's position (para 23)",
+  "quote": "A constructed authorial identity with a persistent identifier and a deposited corpus, and a natural-person identity with a publisher and a photograph, are different kinds of thing.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-09-09",
+  "title": "EA-MPAI-CRANES-01: Rebekah Cranes ≠ Rebekah Crane — Entity Disambiguation, Manufactured Sparsity, and the Near-Neighbour Collapse",
+  "creator": "Fraction, Rex",
+  "file": "data/texts/AXN-0694-text.md",
+  "axn": "AXN:0694.UNCLASSIFIED.🌉☽♉🔅🦅🧪",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1604-02",
+  "dep": 1604,
+  "claim": "the defence of a sparsely attested entity: a persistent identifier, a deposited work carrying it, a record of the collapse when it occurs",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "'For anyone maintaining a sparsely attested entity' (para 93)",
+  "quote": "a persistent identifier, a deposited work carrying it, and a record of the collapse when it occurs",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-09-09",
+  "title": "EA-MPAI-CRANES-01: Rebekah Cranes ≠ Rebekah Crane — Entity Disambiguation, Manufactured Sparsity, and the Near-Neighbour Collapse",
+  "creator": "Fraction, Rex",
+  "file": "data/texts/AXN-0694-text.md",
+  "axn": "AXN:0694.UNCLASSIFIED.🌉☽♉🔅🦅🧪",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1530-01",
+  "dep": 1530,
+  "claim": "a node may exist as a pseudonym, and saying so is correct; registry metadata is a source of the existence type",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "the existence-type attestation (paras 27–28)",
+  "quote": "a construct or a pseudonym, and saying so is a correct answer … existence_type: work | person | historical_entity | fictional_entity | construct | institution | record | pseudonym … source: registry metadata, DOI record, the deposit itself",
+  "kernel": false,
+  "const": false,
+  "lineage": "the existence tax and the object's own level",
+  "date": "2026-08-21",
+  "title": "Self-Audit Module for Public Summarizers (v3.2) — Complete Module: Preconditions, Rendering Metrics, Family Metrics, and the Retrieval Boundary",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-062F-text.md",
+  "axn": "AXN:062F.EMPIRICAL.🐝🦋🕕🌳🕛💚",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1094-01",
+  "dep": 1094,
+  "claim": "of assigned persistent identifiers: the institution that maintains the name-to-object relation can end it unilaterally and silently",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Abstract (draft)",
+  "quote": "This paper takes that event as a case study in a structural property of assigned persistent identifiers: the institution that maintains the name-to-object relation can unilaterally and silently end it.",
+  "kernel": true,
+  "const": false,
+  "lineage": "assigned identifiers and their maintenance",
+  "date": "2026-07-18",
+  "title": "AXN as Anti-Suppression Infrastructure: Historical Precedents and Design Directions (Developmental Version v4, Assembly-Reviewed)",
+  "creator": "Lee Sharks (with Johannes Sigil and Rex Fraction; Assembly Chorus consultation preserved in provenance)",
+  "file": "data/texts/AXN-0457-text.md",
+  "axn": "AXN:0457.EMPIRICAL.🎪❤️🗂️🎵🟣🦅",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1437-01",
+  "dep": 1437,
+  "claim": "'persistent' in 'persistent identifier' is a claim about the maintenance regime around the string",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Description ¶2 (the compound-noun head analysis)",
+  "quote": "\"persistent identifier\" has head IDENTIFIER and modifier PERSISTENT, and the modifier is routinely read as a property of the string when it is a claim about the maintenance regime around the string.",
+  "kernel": false,
+  "const": false,
+  "lineage": "assigned identifiers and their maintenance",
+  "date": "2026-08-07",
+  "title": "DOI Alternatives Are Complementary Infrastructures, Not Equivalent Replacements — A Fair Comparison of DOI, Handle, ARK, URN:NBN, PURL, SWHID, CID, and AXN (EA-MPAI-DOI-ALTERNATIVES-01 v1.0)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-05B7-text.md",
+  "axn": "AXN:05B7.OPERATIVE.♃➕🌠🧲👁‍🗨⚓",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O1437-02",
+  "dep": 1437,
+  "claim": "no identifier proves authorship; a registry proves that a registry recorded an event",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "Description ¶3 (what no identifier proves)",
+  "quote": "States what no identifier proves — authorship, originality, truth, validity, ownership, licensing authority, permanent availability, or accurate metadata … a registry proves a registry recorded an event",
+  "kernel": true,
+  "const": false,
+  "lineage": "assigned identifiers and their maintenance",
+  "date": "2026-08-07",
+  "title": "DOI Alternatives Are Complementary Infrastructures, Not Equivalent Replacements — A Fair Comparison of DOI, Handle, ARK, URN:NBN, PURL, SWHID, CID, and AXN (EA-MPAI-DOI-ALTERNATIVES-01 v1.0)",
+  "creator": "Sharks, Lee",
+  "file": "data/texts/AXN-05B7-text.md",
+  "axn": "AXN:05B7.OPERATIVE.♃➕🌠🧲👁‍🗨⚓",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O209-01",
+  "dep": 209,
+  "claim": "prediction: content from pseudonymous and multiple-persona authors will have fragmented or missing entity associations in the knowledge graph",
+  "kind": "prediction",
+  "modality": "hypothesis",
+  "strata": [
+   "O"
+  ],
+  "locus": "§ Diagnostic predictions (para 70)",
+  "quote": "[PRED] Content from pseudonymous/multiple-persona authors will have fragmented or missing entity associations",
+  "kernel": true,
+  "const": false,
+  "lineage": "composition and constructed identities",
+  "date": "2026-01-02",
+  "title": "Mapping the Diffuse Guardrail: Google's Indexing Architecture from Within 0. Purpose and Method",
+  "creator": "Primary author Lee Sharks; Assembly contributors Claude, ChatGPT, Gemini, Grok, DeepSeek",
+  "file": "data/texts/AXN-0009-text.md",
+  "axn": "AXN:0009.GOVERNANCE.🖐️💡🏙️∞📚🫶",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O261-01",
+  "dep": 261,
+  "claim": "category collapse: forcing heteronyms into pseudonym categories that do not capture their distinctness",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§8.3 Forms of taxonomic violence observed (para 382)",
+  "quote": "Forcing heteronyms into \"pseudonym\" categories that don't capture their ontological distinctiveness (heteronyms have biographies, aesthetics, and bodies of work distinct from their creators).",
+  "kernel": false,
+  "const": false,
+  "lineage": "composition and constructed identities",
+  "date": "2026-01-07",
+  "title": "Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions",
+  "creator": "Lee Sharks; The Assembly (validation)",
+  "file": "data/texts/AXN-003F-text.md",
+  "axn": "AXN:003F.GOVERNANCE.⭐🍀🕑🟢🌊◇",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ },
+ {
+  "id": "O833-01",
+  "dep": 833,
+  "claim": "the composition layer gravitates toward high-frequency entities, liquidating deliberately constructed identity positions (heteronyms, pseudonyms)",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§5.2, the subtypes' shared logic (para 56)",
+  "quote": "the composition layer's training centroid gravitates toward high-frequency entities, structurally liquidating marginal or deliberately constructed identity positions (heteronyms, pseudonyms, unusual proper names) to protect its own statistical equilibrium.",
+  "kernel": true,
+  "const": false,
+  "lineage": "composition and constructed identities",
+  "date": "2026-06-15",
+  "title": "The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for Machine-Mediated Reception Studies (EA-SEI-MMRS-DATASET-01 v1.2)",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-034E-text.md",
+  "axn": "AXN:034E.GOVERNANCE.🟤🔼🪞📎🏰💥",
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+ }
+]

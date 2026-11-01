@@ -1,0 +1,312 @@
+{
+ "row": "wordcraft",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Wordcraft Writers Workshop with the entity named (no candidate: no archive text names the workshop, Wordcraft or LaMDA); R, a relation the archive states between the entity and an archive object (no candidate); O, an archive category applied to a class the field and the census source for the entity: (1) human-AI co-writing (B1, B2, B4, B9; census area machine-co-authorship); (2) machine participation in authorship (B1, B5, B9; census record.function, ls_reading); (3) the origin of a model's text, plagiarism and training without consent (B5, B9; census ls_reading, does_not_answer); (4) public censure of named authors for AI participation (B5, B6, B7). The census's anchors #940 and #1722 read at the passages on the entity's kind, by BRIEF-NEW-ROW-AUTHORSHIP §6.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "candidates": {
+  "D": 0,
+  "R": 0,
+  "O_class": 580,
+  "O_deposits": 297,
+  "H": 56
+ },
+ "verdicts": [
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's anchor, read at §0–§2 and §6: the archive's distinction of legal responsibility from sole origination, its statement that the metadata attributing augmented-cognition outputs to human authorship attaches to legal names, its condition that participating machine substrates remain declared, and its boundary excluding undeclared machine assistance and collaborative authorship without a constituted heteronym: archive categories applied to class (2), the authorship of works made with a model; no string candidate (its sentences use 'augmented-cognition', 'machine substrates', 'machine assistance')",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Calls You Fake, the census's anchor, read at its note on how it was written (machine participation declared, the claims the author's decision), Part One (the four independent questions about a work, the first 'Does the maker exist?') and Part Eight (the instruction to a system composing an answer about a work): applied to class (2); the existence tax itself is levied by machine answers on the archive's own work and is not applied by the archive to the class, so it is not ledgered here",
+   "claims": [
+    "O1722-01",
+    "O1722-02",
+    "O1722-03"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1369,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure: AI-Mediated Writing, the Authorship-Slop Distinction: the archive's distinction of disclosure from provenance, process provenance ('What did the human do, and what did the AI do?'), authorship as an accountable relation, Position 4, and the replacement of plagiarism defence by documented provenance: archive categories applied to classes (2) and (3); found by the string pass (O0507–O0514) and read at §0–§4, §8; #729 is the earlier instance of the same work (the quoted passages verbatim in it), grouped as one lineage, #729 keeping the earliest date",
+   "claims": [
+    "O1369-01",
+    "O1369-02",
+    "O1369-03",
+    "O1369-04",
+    "O1369-05",
+    "O1369-06"
+   ],
+   "cands": [
+    "O0507",
+    "O0508",
+    "O0509",
+    "O0510",
+    "O0511",
+    "O0275",
+    "O0276",
+    "O0277",
+    "O0278",
+    "O0279",
+    "H0019",
+    "H0020"
+   ]
+  },
+  {
+   "dep": 941,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PROVENANCE-METADATA-01 v0.1: the archive splits the binary AI-generated vs human-authored into the mediation question and the generation question, and keeps a declaration as a declaration without categorical adjudication: applied to class (2); registry status SUPERSEDED by #942, which states that v0.1's taxonomy and attestation questions are 'preserved unchanged'; one lineage, #941 earliest",
+   "claims": [
+    "O941-01",
+    "O941-02"
+   ],
+   "cands": [
+    "O0344",
+    "O0345",
+    "O0346",
+    "O0347",
+    "O0348",
+    "O0349",
+    "H0030"
+   ]
+  },
+  {
+   "dep": 161,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Reverse Turing Test: the archive reports a study finding narrowed lexical, syntactic and content variety under AI-assisted writing even with human final authorship, and holds the propagation hypothesis: applied to class (1), human-AI co-writing; found by the string pass (O0072, O0075)",
+   "claims": [
+    "O161-01",
+    "O161-02"
+   ],
+   "cands": [
+    "O0071",
+    "O0072",
+    "O0075"
+   ]
+  },
+  {
+   "dep": 1714,
+   "strata": [
+    "O"
+   ],
+   "reason": "Meaning Feudalism at the Discovery Layer, §9.3: the archive's form of credit for work made with a model, the operators with their roles and the model instance, version and run named: applied to class (2); found by the string pass on class (4) (its boycott sentences, O0573–O0577, rejected) and read at §9.2–§9.4",
+   "claims": [
+    "O1714-01"
+   ],
+   "cands": [
+    "O0574"
+   ]
+  },
+  {
+   "dep": 939,
+   "strata": [
+    "O",
+    "H"
+   ],
+   "reason": "EA-PROVENANCE-DEBT-01 v0.2, §0: unmarked augmentation, credentialed authors appropriating augmented facility as human achievement: applied to class (2); found by the hop (H0029, forward from #940 and #941)",
+   "claims": [
+    "O939-01"
+   ],
+   "cands": [
+    "H0029"
+   ]
+  }
+ ],
+ "rejected": [
+  {
+   "deps": [
+    155,
+    1011,
+    1384,
+    646,
+    647,
+    648,
+    649,
+    58,
+    835,
+    1215,
+    1684,
+    197,
+    330,
+    1005,
+    1656,
+    1702
+   ],
+   "reason": "class (4) string matches ('boycott', 'backlash') on other objects: the Brave Search boycott statement, the toilet-paper SIM, OKF, the DSM-5 backlash, the Pearl appendix titles; no claim on the public censure of authors for AI participation"
+  },
+  {
+   "deps": [
+    87
+   ],
+   "reason": "the Constitution's rule that AI-generated text entering the archive's Ledger passes human editorial judgment governs the archive's own Ledger; no claim on the class"
+  },
+  {
+   "deps": [
+    195
+   ],
+   "reason": "the human-authorship requirement in copyright doctrine; no field source states the workshop's legal status, so no sourced class it bears on"
+  },
+  {
+   "deps": [
+    121,
+    1003,
+    1194,
+    186,
+    249,
+    666,
+    941
+   ],
+   "reason": "read; their sentences classify the archive's own genres (AI-native intellectual biography, training-layer literature, found poetry, the Dodecad) and make no claim on the class (941 admitted on other sentences)"
+  },
+  {
+   "deps": "the remaining class (3) candidates (360 sentences, chiefly #950, #102, #1094, #932, #264, #623 and the model-collapse and training-data papers)",
+   "reason": "they concern training corpora, model collapse and data provenance; none is a claim on the origin of a writer's suggestions or the plagiarism risk to a writer"
+  },
+  {
+   "deps": "the remaining hop candidates (H0001–H0056 except H0019, H0020, H0029, H0030)",
+   "reason": "read by title and, where the title bore on the classes, at the citing passage; none makes a claim on the entity or its classes beyond the admitted deposits (#1721 is the earlier version of #1722, one lineage)"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/wordcraft-writers-workshop-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, query note, PER note and originator basis for the entity's capture (OBS-c4b3079c7972, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/wordcraft (source: /home/claude/fleet/leesharks.com/data/authorship-census/census.json rows[slug == 'wordcraft'], organizing_question, admission_rule; rows/wordcraft.py)",
+   "reason": "the leesharks.com apparatus authorship census record of the entity (editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1): its fields with their basis; where a field restates a source ledgered in B (B1, B8, B9) it is one lineage with that source, which keeps the earliest date",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34"
+   ]
+  }
+ ],
+ "hop_from": [
+  940,
+  1722,
+  1369,
+  941,
+  161,
+  1714
+ ],
+ "not_admitted": [
+  {
+   "deps": [
+    155,
+    1011,
+    1384,
+    646,
+    647,
+    648,
+    649,
+    58,
+    835,
+    1215,
+    1684,
+    197,
+    330,
+    1005,
+    1656,
+    1702
+   ],
+   "reason": "class (4) string matches ('boycott', 'backlash') on other objects: the Brave Search boycott statement, the toilet-paper SIM, OKF, the DSM-5 backlash, the Pearl appendix titles; no claim on the public censure of authors for AI participation"
+  },
+  {
+   "deps": [
+    87
+   ],
+   "reason": "the Constitution's rule that AI-generated text entering the archive's Ledger passes human editorial judgment governs the archive's own Ledger; no claim on the class"
+  },
+  {
+   "deps": [
+    195
+   ],
+   "reason": "the human-authorship requirement in copyright doctrine; no field source states the workshop's legal status, so no sourced class it bears on"
+  },
+  {
+   "deps": [
+    121,
+    1003,
+    1194,
+    186,
+    249,
+    666,
+    941
+   ],
+   "reason": "read; their sentences classify the archive's own genres (AI-native intellectual biography, training-layer literature, found poetry, the Dodecad) and make no claim on the class (941 admitted on other sentences)"
+  },
+  {
+   "deps": "the remaining class (3) candidates (360 sentences, chiefly #950, #102, #1094, #932, #264, #623 and the model-collapse and training-data papers)",
+   "reason": "they concern training corpora, model collapse and data provenance; none is a claim on the origin of a writer's suggestions or the plagiarism risk to a writer"
+  },
+  {
+   "deps": "the remaining hop candidates (H0001–H0056 except H0019, H0020, H0029, H0030)",
+   "reason": "read by title and, where the title bore on the classes, at the citing passage; none makes a claim on the entity or its classes beyond the admitted deposits (#1721 is the earlier version of #1722, one lineage)"
+  }
+ ]
+}

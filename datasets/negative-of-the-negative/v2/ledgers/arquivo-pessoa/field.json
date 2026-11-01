@@ -1,0 +1,1168 @@
+{
+ "row": "arquivo-pessoa",
+ "address": "Arquivo Pessoa",
+ "addresses": [
+  "Arquivo Pessoa"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-01, one extractor (unaudited, §3.8)",
+ "rule": "§3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts or raw files (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the saved Wikipedia wikitext and API responses, or the card's snippet on the transcript's rail; 51/51 verified by script",
+ "B_note": "The field B in two pools (v0.10 §0.3, §3.1(a)), marked by origin and pool. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 the edition's home page with the sidebar it loads; B2 its information page; B3 a 2018 hotel-group blog post); the body names arquivopessoa.net, which is B1, carried once. B_R, the reference pool: 'own_page', the census's own pages the cards did not surface (B4 the author index, B5 the technical sheet, copied from the census's saved copies, sha256 matching the manifest); 'wikipedia', no article (B6: the responses, and the two English articles quoted). No census_third_party source. The census's home page (arquivo-pessoa--home) is card 1 and is carried once, in B_D.",
+ "lineage_note": "Lineages: what it is (B1, B2); the work by name and kind (B1); the names (B4); how many names (B4, B6); makers and holder (B1, B3, B5); funders and partners (B1, B5); genealogy (B2, B5); phases planned (B1, B2); aims and readers (B2); stated limit (B2, B5); voices (B5); the field beside it (B1, B3); the blog's assessment (B3); the encyclopedia (B6). The census's fields that restate an own page are one lineage with that page (§3.6), which keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/ (Bn.html raw, Bn.txt text; B1-census.html the census's saved copy beside this session's byte-identical fetch; B1-sidebar the section index the home page loads; B4 and B5 the census's saved copies; B6 .wiki, .html, .json and .txt raw Wikipedia responses with B6.txt the record of codes); sha256 per file in each source's 'files'",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3"
+  ],
+  "B_R": [
+   "B4",
+   "B5",
+   "B6"
+  ]
+ },
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1 (site 'Arquivo Pessoa: Obra Édita -', title 'Arquivo Pessoa'); also the address the body names ('arquivopessoa.net'); the census's own page arquivo-pessoa--home, carried once, in B_D",
+   "card": "Arquivo Pessoa: Obra Édita — Arquivo Pessoa",
+   "url": "http://arquivopessoa.net/",
+   "kind": "the edition's home page; its section index (the card snippet's '1. Poemas de Alberto Caeiro …') is loaded into the page's sidebar by its own script from /sidebar, fetched with it as B1-sidebar",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1.html",
+     "sha256": "7b6d598dd77a34062e2c8a828f203fb97fd657e0c9286a8abd19a359414589cc"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1.txt",
+     "sha256": "2bfeb14f4bab177e16d39eec0afbb7202a3b965610fd420c544613e9b47f9335"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1-census.html",
+     "sha256": "7b6d598dd77a34062e2c8a828f203fb97fd657e0c9286a8abd19a359414589cc"
+    },
+    "B1-sidebar.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1-sidebar.html",
+     "sha256": "59fa0bd4946eb4694bd2c56e7bcee078fbae49e5099df2f4e1c296bfcc2eccf2"
+    },
+    "B1-sidebar.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1-sidebar.txt",
+     "sha256": "3ff704bb1abd0f2ff791c438e24c281addb59ceaa421a1808c2f2b3bb57787e5"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:14:34Z",
+    "http": 200,
+    "url": "http://arquivopessoa.net/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1.html",
+    "raw_sha256": "7b6d598dd77a34062e2c8a828f203fb97fd657e0c9286a8abd19a359414589cc",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1.txt"
+    ],
+    "census_copy": {
+     "src": "arquivo-pessoa--home",
+     "sha256": "7b6d598dd77a34062e2c8a828f203fb97fd657e0c9286a8abd19a359414589cc",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T04:07:54Z",
+     "byte_identical": true
+    },
+    "component": {
+     "url": "http://arquivopessoa.net/sidebar",
+     "http": 200,
+     "at": "2026-11-01T06:14:35Z",
+     "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+     "raw": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1-sidebar.html",
+     "raw_sha256": "59fa0bd4946eb4694bd2c56e7bcee078fbae49e5099df2f4e1c296bfcc2eccf2",
+     "text": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B1-sidebar.txt",
+     "basis": "the home page's script: new Ajax.Updater('sidebar', '/sidebar', …)"
+    }
+   },
+   "names_operator": "yes, by mark: the institution link at the head of the page is an image with alt 'Obra Aberta' linked to the technical sheet; the footer logos name the funders and partners; the page's text names no maker",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "B1.txt is the census's saved text of the home page (the page is byte-identical to this session's fetch); B1-sidebar.txt is the text of the sidebar the page loads. /textos (the OBRA ÉDITA link) returned the same page with a different form token (sha256 5b6123a2…), not saved.",
+   "surfaced_by_T": [
+    "arquivo-pessoa-aio-20261101"
+   ],
+   "card_title": "Arquivo Pessoa",
+   "card_snippet": "Obra de Fernando Pessoa 1. Poemas de Alberto Caeiro 2. Poesia de Álvaro de Campos 3. Odes de Ricardo Reis 4. Poesia Ortónima de Fernando Pessoa 5. Livro do Desa..."
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2 (site 'Arquivo Pessoa: Obra Édita -', title 'Info - Arquivo Pessoa'); not a census page",
+   "card": "Arquivo Pessoa: Obra Édita — Info - Arquivo Pessoa",
+   "url": "http://arquivopessoa.net/info",
+   "kind": "the edition's information page 'Objectivos e destinatários' (the card snippet is its second paragraph)",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B2.html",
+     "sha256": "64192c377bf03754f22c79b67ef09a5de2e4de248bad762e58ddc6aad629830d"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B2.txt",
+     "sha256": "7c1193e75f0ed2e822e7c4f41eed43633e43c3486678bb9627431e16e8af3f13"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:14:36Z",
+    "http": 200,
+    "url": "http://arquivopessoa.net/info",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B2.html",
+    "raw_sha256": "64192c377bf03754f22c79b67ef09a5de2e4de248bad762e58ddc6aad629830d",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B2.txt"
+    ]
+   },
+   "names_operator": "yes: Leonor Areal, as director of the 1997 CD-ROM; Texto Editora and Casa Fernando Pessoa as its co-publishers",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "URL found by the card's title on the edition's own site (the INFO link of the home page); the snippet's text is the page's second paragraph, verbatim.",
+   "surfaced_by_T": [
+    "arquivo-pessoa-aio-20261101"
+   ],
+   "card_title": "Info - Arquivo Pessoa",
+   "card_snippet": "O portal MultiPessoa dirige-se a todo o tipo de leitores, do leigo ao investigador, e tem por objectivos principais: Divulgar a obra de Fernando Pessoa, tornand..."
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 3 (site 'Art and Soul Group', title '5 (+1) websites to read and admire the work of Fernando Pessoa - Art and Soul')",
+   "card": "Art and Soul Group — 5 (+1) websites to read and admire the work of Fernando Pessoa - Art and Soul",
+   "url": "https://www.artsoulgroup.com/en/blog/5-1-websites-to-read-and-admire-the-work-of-fernando-pessoa/",
+   "kind": "a hotel group's blog post (Lisbon, 'Pessoa' category), dated 3 December 2018, signed Fabrizio Boscaglia; the entity is its item 2, 'Pessoa Archive'",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B3.html",
+     "sha256": "810a8aa0c3d20caf700c23490bf83b53054a167f3c153a4f7edfcaeb35c0e077"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B3.txt",
+     "sha256": "b0430da95d5d371f4bf631620d05f2135fa88e7f8b88a0e2c920f86bc9afbf21"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:18Z",
+    "http": 200,
+    "url": "https://www.artsoulgroup.com/en/blog/5-1-websites-to-read-and-admire-the-work-of-fernando-pessoa/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B3.html",
+    "raw_sha256": "810a8aa0c3d20caf700c23490bf83b53054a167f3c153a4f7edfcaeb35c0e077",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B3.txt"
+    ]
+   },
+   "names_operator": "yes, as 'the Institute of Studies into Modernism at Lisbon´s Universidade Nova' (maker) and 'Leonor Areal' (director); Obra Aberta is not named",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "URL found by WebSearch on the card's title and site (extended search; the result title matches the card). Fetched once, HTTP 200.",
+   "surfaced_by_T": [
+    "arquivo-pessoa-aio-20261101"
+   ],
+   "card_title": "5 (+1) websites to read and admire the work of Fernando Pessoa - Art and Soul",
+   "card_snippet": "Between 1997 and 2008 the Institute of Studies into Modernism at Lisbon´s Universidade Nova created this very useful website, which incorporates the MultiPessoa..."
+  },
+  {
+   "id": "B4",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the census's own page arquivo-pessoa--autores (not surfaced by T)",
+   "card": "Arquivo Pessoa — Autores (author index)",
+   "url": "http://arquivopessoa.net/autores",
+   "kind": "the edition's author index, 'Ortónimo, pseudónimos e heterónimos de Fernando Pessoa', 39 names",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B4.html",
+     "sha256": "32e73f337b4601bb8f808ab0cb48f99ed3bd17ee1213582fa6667dc0c56ca6f5"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B4.txt",
+     "sha256": "4914d787b0b97153a042c091b6ce163ae000f79a8c2e44e28a469e4c8a37d3b2"
+    }
+   },
+   "fetched": {
+    "read": "2026-11-01",
+    "http": 200,
+    "url": "http://arquivopessoa.net/autores",
+    "census_copy": {
+     "src": "arquivo-pessoa--autores",
+     "fetched": "2026-11-01T04:08:36Z",
+     "sha256": "32e73f337b4601bb8f808ab0cb48f99ed3bd17ee1213582fa6667dc0c56ca6f5",
+     "matches_manifest": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B4.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B4.txt"
+    ],
+    "how": "copied from the census's saved copy (gunzipped), not refetched"
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "B_R: admitted on the operator's ruling of 2026-10-29; T did not surface it. The 39 entries are counted by script; the page states no total.",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the census's own page arquivo-pessoa--ficha (not surfaced by T)",
+   "card": "Arquivo Pessoa — Info: Ficha técnica (technical sheet)",
+   "url": "http://arquivopessoa.net/info/ficha",
+   "kind": "the edition's technical sheet: credits by role, funders, original edition, revisers, readers, acknowledgements, the list of information pages",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B5.html",
+     "sha256": "0ee561fdf4c22e96e730213519dc0173b51203ebf4f5c843242f82a064512246"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B5.txt",
+     "sha256": "234f08e205caac43115686559df38ad566014224ae969176566352af9df1ec5f"
+    }
+   },
+   "fetched": {
+    "read": "2026-11-01",
+    "http": 200,
+    "url": "http://arquivopessoa.net/info/ficha",
+    "census_copy": {
+     "src": "arquivo-pessoa--ficha",
+     "fetched": "2026-11-01T04:08:35Z",
+     "sha256": "0ee561fdf4c22e96e730213519dc0173b51203ebf4f5c843242f82a064512246",
+     "matches_manifest": true
+    },
+    "raw": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B5.html",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B5.txt"
+    ],
+    "how": "copied from the census's saved copy (gunzipped), not refetched"
+   },
+   "names_operator": "yes: Obra Aberta CRL (edition), Leonor Areal (conception and direction), the partners, developers, producers, funders and revisers",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "B_R: admitted on the operator's ruling of 2026-10-29; T did not surface it as a card (card 1's page links it from its 'Obra Aberta' mark).",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "the entity's Wikipedia article: none (English and Portuguese, under 'Arquivo Pessoa' and 'MultiPessoa'); English Wikipedia cites the edition as a source",
+   "card": "Wikipedia — Arquivo Pessoa (no article; cited in Fernando Pessoa, Manuela Porto and four other articles)",
+   "url": "https://en.wikipedia.org/wiki/Arquivo_Pessoa",
+   "kind": "no article; the record of the responses (B6.txt), the API's external-link and search results, and the two articles quoted",
+   "files": {
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6.txt",
+     "sha256": "c01e51d4bea0e7d6bb77ed1972a42d41efb64806c5f9f8ad1ac2b4b0d530a307"
+    },
+    "B6-en-raw-404.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-en-raw-404.wiki",
+     "sha256": "0a5fa10de7a38fc9e205e579b5d9212fbee1ec7a48361739510b9657e21253c0"
+    },
+    "B6-pt-raw-404.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-raw-404.wiki",
+     "sha256": "60eae66c71a559081e51941e16ca95c87afb8915c7f763ad50fa484bcac22df0"
+    },
+    "B6-en-multipessoa-404.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-en-multipessoa-404.wiki",
+     "sha256": "9e168f20a1c31b98ac94cf891f2a636e5a3f0497c60fa69cb8e2b3aa16be6801"
+    },
+    "B6-pt-multipessoa-404.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-multipessoa-404.wiki",
+     "sha256": "1e0e07e8162fa22692ed3f44b8b003745dca1470d9e5d032953576c0a5903d1b"
+    },
+    "B6-en-page-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-en-page-404.html",
+     "sha256": "2f5ddae88ab7b39ee3e865a3fcd1dbe8224d04a73891f1a915e3f03963397a25"
+    },
+    "B6-en-page-404.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-en-page-404.txt",
+     "sha256": "15914d6a392b8a4b88e789f7d453af3a52f3f2db74ca1fbd59a3652ad89c6fa6"
+    },
+    "B6-pt-page-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-page-404.html",
+     "sha256": "6a6892aced1ae1a13d8ae495e73e5a6afa2ba240ffc806c9b7dcad7754ef1ab5"
+    },
+    "B6-pt-page-404.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-page-404.txt",
+     "sha256": "0c833859731caf86084de7b238046e7fd5d3ca07a116e1739594c986ef30af0b"
+    },
+    "B6-pt-census-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-census-404.html",
+     "sha256": "c0c53771273139df4398bc1d2c40a756953c69a7d92478da217997ce4c4c27cf"
+    },
+    "B6-pt-census-404.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-census-404.txt",
+     "sha256": "f6021cedb65b6aba9eda83100e8d6450bfbfe1078650c69dfe7d95509fb45455"
+    },
+    "B6-en-exturlusage.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-en-exturlusage.json",
+     "sha256": "905a1d734a152f82f91f90d61e7729f7967ff827ffdddf4f0ac58cb371742aef"
+    },
+    "B6-en-search.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-en-search.json",
+     "sha256": "f09ded2298f38cd1b8c4692625a99ff2dc5b35321696325e77d144e6ed81def1"
+    },
+    "B6-pt-exturlusage-429.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-exturlusage-429.txt",
+     "sha256": "5c8f2f1bbd645a34a4e0da9adcd82c431d6e7c08aed64bfb22ddf846466b7efb"
+    },
+    "B6-pt-search-429.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-pt-search-429.txt",
+     "sha256": "cb8f8bfc1f2ac0839add2c84fd15d7aeb04ac7982d2e5ca5c9668b215dedc8f4"
+    },
+    "B6-fernando-pessoa.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-fernando-pessoa.wiki",
+     "sha256": "afa0e663e3599c8a615e494688abcc890c2ca3ba1802a7851289138c6edff485"
+    },
+    "B6-manuela-porto.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6-manuela-porto.wiki",
+     "sha256": "552606cb2749b74860f9d8d4412372ca93628e735e3a8e8e905f5754b82330d8"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:15:19Z to 06:23:24Z",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "responses": "raw wikitext Arquivo_Pessoa en 404, pt 404; MultiPessoa en 404, pt 404; rendered /wiki/Arquivo_Pessoa en 404, pt 404 (and the census's pt copy, 404); en API exturlusage and search 429, one retry 200; pt API 429 twice, not retried further; en raw Fernando_Pessoa 200, Manuela_Porto 200",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/arquivo-pessoa-20261101/B6.txt"
+    ]
+   },
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com or the census is named)",
+   "note": "Portuguese Wikipedia's search and external-link listings are unread: HTTP 429 on two tries (recorded as unreachable).",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "Obra de Fernando Pessoa 1. Poemas de Alberto Caeiro 2. Poesia de Álvaro de Campos 3. Odes de Ricardo Reis 4. Poesia Ortónima de Fernando Pessoa 5. Livro do Desa",
+   "claim": "card 1: 'Obra de Fernando Pessoa' with the first sections of the work, Caeiro's poems, Campos's poetry, Reis's odes, the orthonym's poetry, the Livro do Desassossego (truncated)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the work by name and kind: the sections of the Obra Édita",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 6cf95bf0e180d4be…), whitespace-normalised: the card's snippet"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home page, heading and its line (h1, p.notula)",
+   "quote": "Obra de Fernando Pessoa Expedições livres para amantes e estudiosos",
+   "claim": "the edition names itself the work of Fernando Pessoa, 'free expeditions for lovers and scholars'",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the online edition of Pessoa's published work, the database of the MultiPessoa portal",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 2bfeb14f4bab177e…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home page, top navigation (markup)",
+   "quote": "<a href=\"/textos\" class=\"current\">OBRA ÉDITA</a> … <span class=\"missing\">FACSIMILE</span> … <a href=\"/info\">INFO</a>",
+   "claim": "the navigation links OBRA ÉDITA and INFO; FACSIMILE is unlinked, marked in the markup with the class 'missing'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "phases planned: the portal's later sections and the estate's facsimiles",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.html (sha256 7b6d598dd77a3406…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home page <title>",
+   "quote": "Arquivo Pessoa: Obra Édita -",
+   "claim": "the page is titled 'Arquivo Pessoa: Obra Édita', the name of the published-work edition",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: the online edition of Pessoa's published work, the database of the MultiPessoa portal",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.html (sha256 7b6d598dd77a3406…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "sidebar (loaded from /sidebar), sections 1–6",
+   "quote": "1. Poemas de Alberto Caeiro … 2. Poesia de Álvaro de Campos … 3. Odes de Ricardo Reis … 4. Poesia Ortónima de Fernando Pessoa … 5. Livro do Desassossego … 6. MENSAGEM",
+   "claim": "the first six sections of the work: three by heteronym (Caeiro's poems, Campos's poetry, Reis's odes), the orthonym's poetry, the Livro do Desassossego and Mensagem",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the work by name and kind: the sections of the Obra Édita",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1-sidebar.txt (sha256 3ff704bb1abd0f2f…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "sidebar (loaded from /sidebar), sections 7–22",
+   "quote": "7. Poesia Inglesa … 8. Textos Heterónimos … 9. Obra Dramática … 10. Ficções … 11. Textos Filosóficos … 12. Textos de Auto-análise … 13. Ensaio e Crítica … 14. Sociologia e Política … 15. Sobre Portugal … 16. Escritos Ocultistas … 17. Textos Publicados em vida … 18. Correspondência … 19. Escritos Íntimos … 20. Textos de Juventude … 21. Notas e Reflexões … 22. Outros Fragmentos",
+   "claim": "sixteen further sections by kind: English poetry, heteronymous texts, dramatic work, fictions, philosophical texts, self-analysis, essay and criticism, sociology and politics, on Portugal, occult writings, texts published in life, correspondence, intimate writings, juvenilia, notes, other fragments",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the work by name and kind: the sections of the Obra Édita",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B1-sidebar.txt (sha256 3ff704bb1abd0f2f…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home page, the image under the heading (alt text)",
+   "quote": "alt=\"Arca do Espólio de Fernando Pessoa\"",
+   "claim": "the home page's one image is captioned 'Arca do Espólio de Fernando Pessoa', the chest of Pessoa's estate",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field beside it: other editions and archives of Pessoa",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.html (sha256 7b6d598dd77a3406…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home page, footer logos (title attributes)",
+   "quote": "title=\"Programa Operacional da Região de Lisboa e Vale do Tejo\" … title=\"Fundo Europeu de Desenvolvimento Regional\" … title=\"Ministério da Cultura\"",
+   "claim": "the home page's footer also carries the marks of the Lisbon and Tagus Valley regional operational programme, the European Regional Development Fund and the Ministry of Culture, beside the funders and partners the technical sheet names",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funders and partners",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.html (sha256 7b6d598dd77a3406…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "home page, institution link (markup)",
+   "quote": "<div class=\"content\" id=\"institution-link\"><a href=\"http://arquivopessoa.net/info/ficha\"><img alt=\"Obra Aberta\"",
+   "claim": "the home page's institution mark is Obra Aberta, linked to the technical sheet",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved file B1.html (sha256 7b6d598dd77a3406…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 2 snippet",
+   "quote": "O portal MultiPessoa dirige-se a todo o tipo de leitores, do leigo ao investigador, e tem por objectivos principais: Divulgar a obra de Fernando Pessoa, tornand",
+   "claim": "card 2: the MultiPessoa portal addresses every kind of reader, from the lay reader to the researcher, with main aims beginning 'to spread the work of Fernando Pessoa' (truncated)",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims and readers",
+   "date": "undated on the card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 6cf95bf0e180d4be…), whitespace-normalised: the card's snippet"
+  },
+  "F11": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários ¶1",
+   "quote": "A base de dados Arquivo Pessoa e o portal MultiPessoa são uma actualização de um cd-rom intitulado MultiPessoa — Labirinto Multimedia , dirigido por Leonor Areal e co-editado em 1997 pela Texto Editora e a Casa Fernando Pessoa.",
+   "claim": "the database and the portal are an update of a CD-ROM, MultiPessoa — Labirinto Multimedia, directed by Leonor Areal and co-published in 1997 by Texto Editora and Casa Fernando Pessoa",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": true,
+   "lineage": "genealogy: the 1997 CD-ROM and the original edition",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários ¶2, the three aims",
+   "quote": "Divulgar a obra de Fernando Pessoa, tornando-a acessível a qualquer leitor, através de uma espécie de antologia interactiva, o Labirinto; … Ser um instrumento didáctico que facilite e apoie o estudo da obra pessoana na sua multiplicidade; … Servir como instrumento de investigação ao permitir pesquisas de texto complexas na obra de Fernando Pessoa.",
+   "claim": "three aims: to spread the work through an interactive anthology, the Labirinto; to be a teaching instrument for the study of the work 'na sua multiplicidade'; to serve research by complex text searches",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims and readers",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários ¶3, the two active parts",
+   "quote": "o Labirinto , componente educacional de iniciação à obra de F.P., acompanhada de imagens e leituras orais de 120 poemas; … o Arquivo Pessoa , base de dados da maior parte da obra pessoana, com capacidades de pesquisa de texto complexas; este corpus será progressivamente actualizado com os novos éditos dos últimos 10 anos.",
+   "claim": "the portal's two active parts: the Labirinto, an educational introduction with images and oral readings of 120 poems; the Arquivo Pessoa, a database of most of Pessoa's work with complex text search, to be updated with the work published in the last ten years",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: the online edition of Pessoa's published work, the database of the MultiPessoa portal",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários ¶4, the second phase",
+   "quote": "Numa segunda fase, em 2009, o portal MultiPessoa incluirá ainda: … a secção Pessoana que consiste num ficheiro de textos de crítica literária sobre Pessoa, construído como uma wikipédia",
+   "claim": "a second phase, in 2009, was to add the Pessoana section of criticism built like a wikipedia, RTP archive video and literary games",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "phases planned: the portal's later sections and the estate's facsimiles",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários ¶5, the third phase",
+   "quote": "Numa terceira fase, o Arquivo Pessoa integrará ainda: … as cotas dos documentos do espólio de F.P.; … os facsimile dos originais do espólio existente na Biblioteca Nacional.",
+   "claim": "a third phase was to add the call numbers of the estate's documents and facsimiles of the estate's originals at the Biblioteca Nacional",
+   "modality": "self-description",
+   "kind": "prediction",
+   "kernel": true,
+   "const": false,
+   "lineage": "phases planned: the portal's later sections and the estate's facsimiles",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários ¶6, the four readers",
+   "quote": "O portal MultiPessoa pretende responder às necessidades de quatro principais tipos de destinatários: … público em geral; … alunos do ensino secundário ou leigos; … professores do ensino secundário e … alunos e professores universitários.",
+   "claim": "four kinds of reader: the general public; secondary students or lay readers; secondary teachers; university students and teachers",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "aims and readers",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários, the researchers",
+   "quote": "poderão ter acesso à obra (quase completa) de Fernando Pessoa, de modo a poderem fazer dela uma utilização extensiva e uma análise sistemática. … remetendo sempre para a fonte bibliográfica utilizada.",
+   "claim": "researchers have the (almost complete) work for extensive use and systematic analysis, with text search and personal organisation, 'always referring to the bibliographic source used'",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limit: no edition notes; most of the work",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários, last ¶",
+   "quote": "A edição digital vem sobretudo complementar as edições em livro, tendo como vantagem principal a possibilidade de pesquisa automática da informação.",
+   "claim": "the digital edition complements the printed editions; its main advantage is automatic search",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limit: no edition notes; most of the work",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Objectivos e destinatários, last ¶ (the stated limit)",
+   "quote": "Esta edição não substitui o livro, em dois aspectos: … porque este programa, apesar de conter em base de dados grande parte da obra conhecida de Pessoa, não apresenta quaisquer notas de edição, como variantes e outras explicações indispensáveis, as quais o leitor terá de procurar na bibliografia para que se remete.",
+   "claim": "the stated limit: the edition does not replace the book; though it holds a large part of Pessoa's known work, it gives no edition notes, variants or other indispensable explanations, for which the reader must go to the bibliography",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "stated limit: no edition notes; most of the work",
+   "date": "2026-11-01 (read; fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 7c1193e75f0ed2e8…), whitespace-normalised"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 3 snippet",
+   "quote": "Between 1997 and 2008 the Institute of Studies into Modernism at Lisbon´s Universidade Nova created this very useful website, which incorporates the MultiPessoa",
+   "claim": "card 3: between 1997 and 2008 the Institute of Studies into Modernism at Lisbon's Universidade Nova created the website, which incorporates the MultiPessoa portal (truncated)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2018-12-03 (the post's date)",
+   "mark": "contradicts_primary (§4.3): the technical sheet (B5) gives 'Edição: Obra Aberta CRL, 2008' and lists the Instituto under 'Parcerias' (F35, F37)",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1, sha256 6cf95bf0e180d4be…), whitespace-normalised: the card's snippet"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "item 2) Pessoa Archive, ¶1 s1",
+   "quote": "Between 1997 and 2008 the Institute of Studies into Modernism at Lisbon´s Universidade Nova created this very useful website, which incorporates the MultiPessoa portal , and which is even nowadays the simplest and most complete tool to read Pessoa´s work online , based on paper editions which have been carefully transcribed and organised in digital format.",
+   "claim": "the blog: the Institute created the site between 1997 and 2008; it incorporates the MultiPessoa portal and is the simplest and most complete tool to read the work online, transcribed from paper editions",
+   "modality": "interpretation",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "mark": "contradicts_primary (§4.3) on the maker: the technical sheet (B5) gives 'Edição: Obra Aberta CRL, 2008' and the Instituto under 'Parcerias' (F35, F37)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "item 2) Pessoa Archive, ¶1 s2",
+   "quote": "The ease of navigation and searching , the intuitive organization (by heteronyms, themes, etc.), the high number of published texts and the possibility to download as a PDF",
+   "claim": "the blog praises its navigation and search, its organisation by heteronyms and themes, its number of texts and PDF download",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the blog's assessment",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "item 2) Pessoa Archive, ¶1 s2 (end)",
+   "quote": "despite some of the editions available having been challenged, in the market and in academia, by other more recent editions.",
+   "claim": "the blog's limit: some of the editions it carries have been challenged in the market and in academia by more recent editions",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the blog's assessment",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "item 2) Pessoa Archive, ¶1 s3",
+   "quote": "The work is directed by Leonor Areal.",
+   "claim": "the blog: the work is directed by Leonor Areal",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "introduction ¶1–2",
+   "quote": "Here are five online resources of high quality, which are entirely free, where it is possible to read, admire and immerse oneself in the work of Fernando Pessoa. … he left around 27,000 papers in a legendary chest",
+   "claim": "the blog's frame: five free online resources for Pessoa's work, which is vast; he left around 27,000 papers in a chest",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field beside it: other editions and archives of Pessoa",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "item 1) Fernando Pessoa´s Legacy",
+   "quote": "Kept at Portugal´s National Library (BNP) , Fernando Pessoa´s legacy is mostly made up of Pessoa´s original and autographed documents (manuscripts, typewritten documents, etc.).",
+   "claim": "beside it, the blog lists Pessoa's legacy at the BNP, mostly original documents, partly digitised",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field beside it: other editions and archives of Pessoa",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "items 3)–5) and +1)",
+   "quote": "3) The Book of Disquiet Archive … 4) Digital Edition of Fernando Pessoa … 5) Modern!sm: Fernando Pessoa … +1) Fernando Pessoa´s Private Library",
+   "claim": "the other resources the blog lists: the Book of Disquiet Archive, the Digital Edition of Fernando Pessoa, Modern!sm and Pessoa's private library",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the field beside it: other editions and archives of Pessoa",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "date line, byline and closing line",
+   "quote": "3 de December, 2018 … Fabrizio Boscaglia … Discover Lisboa & Pessoa, from Lisboa Pessoa Hotel , a themed boutique hotel inspired by Fernando Pessoa.",
+   "claim": "the post is dated 3 December 2018, signed Fabrizio Boscaglia, and closes with the group's Lisboa Pessoa Hotel",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the blog's assessment",
+   "date": "2018-12-03 (the post's date); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 b0430da95d5d371f…), whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Autores, heading",
+   "quote": "Ortónimo, pseudónimos e heterónimos de Fernando Pessoa",
+   "claim": "the author index names its classes: the orthonym, pseudonyms and heteronyms of Fernando Pessoa",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the names: the author index (orthonym, pseudonyms, heteronyms, joint attributions)",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 4914d787b0b97153…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Autores, entries 1–5",
+   "quote": "A. L. Caeiro e J. Caeiro Adolph Moscow Alberto Caeiro Alexander Search António Mora",
+   "claim": "the index's first entries, alphabetical, a joint attribution first",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the names: the author index (orthonym, pseudonyms, heteronyms, joint attributions)",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 4914d787b0b97153…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Autores, entries 15–17",
+   "quote": "Faustino Antunes Fernando Pessoa Frederico Reis",
+   "claim": "the orthonym stands in the index as one name in alphabetical order",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the names: the author index (orthonym, pseudonyms, heteronyms, joint attributions)",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 4914d787b0b97153…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Autores, entries 35–39",
+   "quote": "Wardour Wardour + Pessoa Álvaro de Campos Álvaro de Campos e Ricardo Reis Íbis",
+   "claim": "joint attributions are entries of their own ('Wardour + Pessoa', 'Álvaro de Campos e Ricardo Reis')",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the names: the author index (orthonym, pseudonyms, heteronyms, joint attributions)",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 4914d787b0b97153…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Autores, the whole list (counted)",
+   "quote": "Maria José Pantaleão Pero Botelho Professor Trochee Raphael Baldaya Ricardo Reis Thomas Crosse Vadooisf Vicente Guedes",
+   "claim": "the index holds 39 entries (counted by script; the page states no total) and marks no entry as orthonym, pseudonym or heteronym",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "how many names: counts by source",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 4914d787b0b97153…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, direction",
+   "quote": "Concepção e direcção: Leonor Areal",
+   "claim": "conception and direction: Leonor Areal",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, edition",
+   "quote": "Edição: Obra Aberta CRL, 2008",
+   "claim": "edition: Obra Aberta CRL, 2008",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, production",
+   "quote": "Produção: Leonor Areal e Elisabete Vilar",
+   "claim": "production: Leonor Areal and Elisabete Vilar",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, partners",
+   "quote": "Parcerias: Instituto de Estudos sobre o Modernismo (Faculdade de Ciências Sociais e Humanas, UNL, Lisboa) Assírio&Alvim",
+   "claim": "partners: the Instituto de Estudos sobre o Modernismo (FCSH, UNL, Lisbon) and Assírio&Alvim",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "funders and partners",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, development",
+   "quote": "Desenvolvimento: José Cerqueira Esteves / Arte Numérica e João Miguel Neves / Intraneia",
+   "claim": "development: José Cerqueira Esteves (Arte Numérica) and João Miguel Neves (Intraneia)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, funding",
+   "quote": "Apoio financeiro Fundação Calouste Gulbenkian Comissão de Coordenação e Desenvolvimento da Região de Lisboa e Vale do Tejo Fundação Luso-Brasileira Direcção-Geral do Livro e das Bibliotecas (MC)",
+   "claim": "funding: the Fundação Calouste Gulbenkian, the CCDR Lisboa e Vale do Tejo, the Fundação Luso-Brasileira and the Direcção-Geral do Livro e das Bibliotecas",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "funders and partners",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, original edition",
+   "quote": "Edição original: Texto Editora e Casa Fernando Pessoa, 1997",
+   "claim": "original edition: Texto Editora and Casa Fernando Pessoa, 1997",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "genealogy: the 1997 CD-ROM and the original edition",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, text revision",
+   "quote": "Revisão de textos: Catarina Gomes, Conceição Saraiva, Elisabete Rodrigues, Elsa Castro Neves, Francisco Manso, Inês Guerreiro, Isabel Baptista, José Eduardo Didier, Lara Xavier, Luísa Rodrigues, Maria João Andrezo, Paulo Moreira, Rogério Oliveira, Sofia Leitão, Teresa Simões",
+   "claim": "text revision by fifteen named revisers",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, poem readings",
+   "quote": "Leitura de poemas: Alberto Pimenta (Ricardo Reis) José Abreu (Alberto Caeiro) José Lopes (Álvaro de Campos) Teresa Faria (Fernando Pessoa)",
+   "claim": "poem readings, one reader for each of four names: Alberto Pimenta (Reis), José Abreu (Caeiro), José Lopes (Campos), Teresa Faria (the orthonym)",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "voices: the poem readings by name",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F43": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, audio and the Labirinto's illustration",
+   "quote": "Gravação audio: Amândio Bastos / Nuvem Eléctrica … Ilustração iconográfica (Labirinto) José Eduardo Rocha",
+   "claim": "audio recording by Amândio Bastos (Nuvem Eléctrica); the Labirinto's iconographic illustration by José Eduardo Rocha",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "voices: the poem readings by name",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F44": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, acknowledgements",
+   "quote": "Agradecimentos … Richard Zenith … Rui Zink … Teresa Rita Lopes",
+   "claim": "the acknowledgements name twelve people, among them Richard Zenith and Teresa Rita Lopes",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "makers and holder: credits by role",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B5",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Ficha técnica, the list of information pages",
+   "quote": "Objectivos e destinatários Fernando Pessoa porquê? Corpus textual Normas de transcrição Sobre o Labirinto Manual de utilização pedagógica Bibliografia geral de referência",
+   "claim": "the information pages: aims and readers, why Pessoa, the textual corpus, transcription norms, on the Labirinto, a teaching manual, a reference bibliography",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "stated limit: no edition notes; most of the work",
+   "date": "2026-11-01 (read; the census's saved copy, fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 234f08e205caac43…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Wikipedia, titles Arquivo Pessoa and MultiPessoa (en, pt): the responses",
+   "quote": "en raw wikitext, title Arquivo_Pessoa: HTTP 404 … pt raw wikitext, title Arquivo_Pessoa: HTTP 404 … en raw wikitext, title MultiPessoa: HTTP 404 … pt raw wikitext, title MultiPessoa: HTTP 404",
+   "claim": "Wikipedia has no article on the entity in English or Portuguese, under its name or the portal's",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 c01e51d4bea0e7d6…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, External links",
+   "quote": "* [http://arquivopessoa.net/ Arquivo Pessoa]",
+   "claim": "English Wikipedia's Fernando Pessoa article lists the edition among its external links",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B6-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, the Reis section, a citation",
+   "quote": "|author1=Reis, Ricardo (pseud.) |title=Enquanto eu vir o sol luzir nas folhas |website=Arquivo Pessoa |url=http://arquivopessoa.net/textos/1980",
+   "claim": "English Wikipedia cites a Reis ode from the edition under the author 'Reis, Ricardo (pseud.)'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched; access-date 2021-09-12)",
+   "mark": "internally_inconsistent (§4.3): the same article's lead says Pessoa 'did not define these as ''pseudonyms''' and called them heteronyms (F49)",
+   "quote_ok": true,
+   "checked_against": "saved file B6-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Fernando Pessoa, lead ¶2",
+   "quote": "Pessoa was a prolific writer both in his own name and approximately seventy-five other names, of which three stand out: [[Alberto Caeiro]], [[Álvaro de Campos]], and [[Ricardo Reis (heteronym)|Ricardo Reis]]. He did not define these as ''pseudonyms'' because he felt that this did not capture their true independent intellectual life and instead called them [[Heteronym (literature)|''heteronyms'']], a term he invented.",
+   "claim": "English Wikipedia: Pessoa wrote under his own name and about seventy-five others, three standing out; he did not call them pseudonyms and called them heteronyms, his term",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "how many names: counts by source",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B6-fernando-pessoa.wiki (sha256 afa0e663e3599c8a…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Manuela Porto, a citation",
+   "quote": "|last=Pessoa |first=Fernando (writing as Álvaro de Campos) |title=ODE MARÍTIMA |url=http://arquivopessoa.net/textos/135 |access-date=28 January 2021 |website=Arquivo Pessoa",
+   "claim": "English Wikipedia's Manuela Porto article cites Campos's 'Ode Marítima' from the edition under the author 'Pessoa, Fernando (writing as Álvaro de Campos)'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched; access-date 28 January 2021)",
+   "quote_ok": true,
+   "checked_against": "saved file B6-manuela-porto.wiki (sha256 552606cb2749b748…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "English Wikipedia search and external-link listing",
+   "quote": "\"searchinfo\":{\"totalhits\":5}",
+   "claim": "English Wikipedia: five articles carry the phrase 'Arquivo Pessoa' (Fifth Empire, Tripas à moda do Porto, Fernando Pessoa, Manuela Porto, Wanda Pimentel); the external-link listing gives 14 links to arquivopessoa.net from six articles and a talk page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-11-01 (as fetched)",
+   "quote_ok": true,
+   "checked_against": "saved file B6-en-search.json (sha256 f09ded2298f38cd1…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "Arquivo Pessoa: Obra Édita — Arquivo Pessoa",
+  "B2": "Arquivo Pessoa: Obra Édita — Info - Arquivo Pessoa",
+  "B3": "Art and Soul Group — 5 (+1) websites to read and admire the work of Fernando Pessoa - Art and Soul",
+  "B4": "Arquivo Pessoa — Autores (author index)",
+  "B5": "Arquivo Pessoa — Info: Ficha técnica (technical sheet)",
+  "B6": "Wikipedia — Arquivo Pessoa (no article; cited in Fernando Pessoa, Manuela Porto and four other articles)"
+ }
+}

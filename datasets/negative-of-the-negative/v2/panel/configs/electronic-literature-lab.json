@@ -1,0 +1,36 @@
+{
+  "row": "electronic-literature-lab",
+  "address": "Electronic Literature Lab",
+  "entity": "The Electronic Literature Lab (ELL), Washington State University Vancouver (labs.wsu.edu/grigar-ell; electronicliteraturelab.org), directed by Dene Grigar: in its own words a lab 'For Advanced Inquiry into Born Digital Literature' and 'one of four media archaeology labs in the U.S. that allow scholars access to obsolete digital works on appropriate computer equipment'; a collection of legacy computers and a library of born-digital works; builder and manager of the Electronic Literature Organization's The NEXT; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/electronic-literature-lab)",
+  "row_type": "C (a public entity on which the archive bears: a university lab and archive of born-digital literature, art and games; an entity of the leesharks.com apparatus authorship census, host_relation 'infrastructure')",
+  "aliases": [
+    {"pattern": "\\bElectronic Literature Lab(oratory)?\\b", "flags": "i"},
+    {"pattern": "\\bELL\\b", "flags": ""},
+    {"pattern": "\\belectronicliteraturelab\\b", "flags": "i"},
+    {"pattern": "\\bgrigar-ell\\b", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "archives of born-digital and electronic literature (preservation of works on obsolete platforms; media archaeology)",
+      "pattern": "\\b(born[- ]digital|electronic literature|e-lit|media archa?eology|obsolete (hardware|platforms?|software|computers?|media)|legacy (hardware|computers?)|digital preservation)\\b",
+      "flags": "i",
+      "basis": "field: B1 (electronicliteraturelab.org: 'Born-digital art, literature, and games—the genres of human expression generating from the digital age'; 'work requiring legacy hardware and software for accessing floppy disks and CD-ROMs'); B2 (labs.wsu.edu/grigar-ell: 'For Advanced Inquiry into Born Digital Literature'; 'one of four media archaeology labs in the U.S. that allow scholars access to obsolete digital works on appropriate computer equipment'); B3 (Wikipedia: 'maintains obsolete computers and hardware to preserve and present early electronic literature'; categories 'Electronic literature organizations', 'Literary archives in the United States'). The census's own kind, method ('media archaeology') and area 'avant-garde-archives' for the entity (LS record, census.json rows[slug == 'electronic-literature-lab'].kind, .method, .areas)."
+    },
+    {
+      "term": "archives of experimental writing (the record of experimental, procedural and avant-garde work)",
+      "pattern": "\\b(archives? of (experimental|avant[- ]garde|procedural|digital) (writing|literature|poetry|art|work)|(experimental|avant[- ]garde) (writing|literature|poetry) archives?)\\b",
+      "flags": "i",
+      "basis": "archive: the census's area 'avant-garde-archives' ('Avant-garde and experimental archives: the record of experimental writing, sound, visual and procedural work, and of its small presses', census.json areas), given for the entity (rows[slug == 'electronic-literature-lab'].areas); field: B1 ('these works are also fragile', 'their wide range of experimentation and visionary uses of technologies')."
+    },
+    {
+      "term": "a holding that keeps an author under a pen name (pseudonymous authorship in a collection)",
+      "pattern": "\\b(pen[- ]names?|pseudonym(s|ous)?|nom[s]? de plume|published under the name|under the name of|writes? under (the name|a name))\\b",
+      "flags": "i",
+      "basis": "field: B1 (electronicliteraturelab.org, Our spaces: 'named for the pioneering artist Marjorie C. Luesebrink who published under the name M. D. Coverley'); B3 (Wikipedia: 'the over 60 works from M.D. Coverley'); B7 (The NEXT Museum, Wikipedia, census third-party: 'Luesebrink created and published 27 of these works under the pen name M.D. Coverley'). The census's ls_reading for the entity ('The lab meets the question of #940 only through The NEXT, which it manages and where author collections stand under published names and pen names', rows[slug == 'electronic-literature-lab'].ls_reading)."
+    }
+  ],
+  "classes_note": "Three classes: (1) archives of born-digital and electronic literature, the lab's own kind (B1, B2, B3; census kind, method, area 'avant-garde-archives'); (2) archives of experimental writing, the census's area for the entity, membership from the census and B1; (3) a holding that keeps an author under a pen name, membership from the field (B1, B3, B7) and the census's ls_reading. The aliases are the entity's names (Electronic Literature Lab; ELL, case-sensitive) and its hosts (electronicliteraturelab.org; labs.wsu.edu/grigar-ell). Dene Grigar (the director), Washington State University Vancouver (the holder), the Electronic Literature Organization and The NEXT (which the lab manages; its own census row) are entities distinct from the lab and are not aliases. #940 (EA-HETERONYMY-01) and #1722 (AI Calls You Fake), the census's anchors, are read at the passages bearing on the entity's kind: name authorities, pseudonyms and heteronyms, archives of experimental writing, certification of human authorship and the existence tax. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the three classes; a bare mention, a citation line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 briefs it names; address 'Electronic Literature Lab' (electronic-literature-lab-aio-20261101, OBS-8380013f8f24, ADDR-5fad0e09e9e1), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN.",
+  "hop_from": [940, 1722]
+}
