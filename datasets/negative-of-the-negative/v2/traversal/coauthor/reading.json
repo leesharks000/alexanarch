@@ -1,0 +1,596 @@
+{
+ "row": "coauthor",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on CoAuthor with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to the entity or to a class the field and the census source for it (human-AI collaborative writing: B1, B2, census area 'machine-co-authorship'; crowd workers: B1, B5; the attribution of text to human or model: B1, census area 'attribution-and-credit' and record.function). The census's anchors #940 and #1722 read at the passages that bear on the entity's kind, by BRIEF-NEW-ROW-AUTHORSHIP §6.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 1680,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "The Living Academy (EA-MPAI-ALEXANARCH-01 v0.5): names CoAuthor and says what it is (§1: a dataset, 'a released, schema-defined body of records'; §6: 'research datasets on human–AI writing', object 'writing sessions'), states its relation to the archive (a comparator for the dataset export, F11; §3.2) and cites it (§14). #1678 (v0.4, superseded) carries the same sentences: one lineage, its instances kept.",
+   "claims": [
+    "D1680-01",
+    "D1680-02",
+    "D1680-03",
+    "D1680-04",
+    "D1680-05"
+   ],
+   "cands": [
+    "D0009",
+    "D0010",
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "D0015",
+    "D0016",
+    "O0126",
+    "O0127",
+    "O0128",
+    "D0001",
+    "D0002",
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "D0007",
+    "D0008",
+    "O0123",
+    "O0124",
+    "O0125"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's anchor, read at the passages on attribution, machine participation and collaborative authorship: responsibility kept apart from sole origination (§0); attribution metadata for augmented-cognition outputs attached to legal names (§1); machine assistance and collaborative authorship outside heteronymy (§6); machine witnesses as named roles (§5). No string candidate: read by the brief's rule.",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Calls You Fake, the census's anchor, read at its account of machine participation in its own writing ('A note on how this was written'): each model named with its part, the claims the author's decision. Its other passages concern the existence tax on persons and works and say nothing of co-writing datasets. No string candidate.",
+   "claims": [
+    "O1722-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 941,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PROVENANCE-METADATA-01 v0.1 §1 and §7 (carried unchanged by #942): the binary AI-generated vs human-authored split into the mediation and generation questions; no ratio required. An archive category applied to class (3), the share of a text written by humans.",
+   "claims": [
+    "O941-01",
+    "O941-02"
+   ],
+   "cands": [
+    "O0068",
+    "O0069",
+    "O0070",
+    "O0071",
+    "O0072",
+    "O0073"
+   ]
+  },
+  {
+   "dep": 856,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Pristine Fallacy §III: the archive's definition, '\"human-written\" describes the author, not the distribution', applied to the class 'human-written' text; #854, #1232 and #1611 restate it (one lineage, kept as instances).",
+   "claims": [
+    "O856-01"
+   ],
+   "cands": [
+    "O0060",
+    "O0061",
+    "O0062",
+    "O0063",
+    "O0064",
+    "O0055",
+    "O0056",
+    "O0057",
+    "O0102",
+    "O0103",
+    "O0104",
+    "O0121",
+    "O0122"
+   ]
+  },
+  {
+   "dep": 729,
+   "strata": [
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure §8.2: authorship 'an accountability structure' against the binary of human-authored certification; #1369 restates it (one lineage).",
+   "claims": [
+    "O729-01"
+   ],
+   "cands": [
+    "O0048",
+    "O0049",
+    "O0107",
+    "O0108"
+   ]
+  },
+  {
+   "dep": 745,
+   "strata": [
+    "O"
+   ],
+   "reason": "Hugging Face Dataset Work Plan v3: the archive's tag vocabulary for the share and direction of machine participation in a text (class 3); #1001 restates the table (one lineage).",
+   "claims": [
+    "O745-01"
+   ],
+   "cands": [
+    "O0050",
+    "O0075"
+   ]
+  },
+  {
+   "dep": 666,
+   "strata": [
+    "O"
+   ],
+   "reason": "The New Human Post-Pessoa Heteronymic Practice: the binary 'human-written' versus 'AI-generated' eliding structured collaborative practice (classes 1 and 3).",
+   "claims": [
+    "O666-01"
+   ],
+   "cands": [
+    "O0042",
+    "O0043",
+    "O0044"
+   ]
+  },
+  {
+   "dep": 161,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Reverse Turing Test §2.2: a co-writing study's finding of reduced diversity under LLM assistance (class 1).",
+   "claims": [
+    "O161-01"
+   ],
+   "cands": [
+    "O0023",
+    "O0024",
+    "O0025"
+   ]
+  },
+  {
+   "dep": 855,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Wolf Boy and the Language Model: AI-assisted writing and collective diversity (class 1); an evidentiary basis of its own (Doshi and Hauser), so its own slot.",
+   "claims": [
+    "O855-01"
+   ],
+   "cands": [
+    "O0058",
+    "O0059"
+   ]
+  },
+  {
+   "dep": 1577,
+   "strata": [
+    "O"
+   ],
+   "reason": "ERRATUM to AXN:0365 §4: the co-writing study's effect attributed to the model-contributed text, the human-contributed text unaffected (classes 1 and 3); a revision, so its own slot, and a contest with #161.",
+   "claims": [
+    "O1577-01"
+   ],
+   "cands": [
+    "O0117"
+   ]
+  },
+  {
+   "dep": 939,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PROVENANCE-DEBT-01 v0.2 §0: provenance metadata to tell synthetic from bearing-produced material, or erasure under 'the fiction of unmediated human authorship' (class 3). Found by the hop (H0073, forward from #941 and #1680) and admitted by reading.",
+   "claims": [
+    "O939-01"
+   ],
+   "cands": [
+    "H0073"
+   ]
+  },
+  {
+   "dep": 1540,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Certified Center §I: classifier attribution of authorship under a policy certifying human authorship (class 3).",
+   "claims": [
+    "O1540-01"
+   ],
+   "cands": [
+    "O0114"
+   ]
+  },
+  {
+   "dep": 1719,
+   "strata": [
+    "O"
+   ],
+   "reason": "Meta-Aggregators of the Crimson Hexagon: records from Turkopticon's own article the announced closure of Mechanical Turk on 30 September 2026 (class 2, the platform the writers came from).",
+   "claims": [
+    "O1719-01"
+   ],
+   "cands": [
+    "O0130",
+    "O0131",
+    "O0132"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/coauthor-dataset-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, query note, PER note, description, PER-dim purpose atom and scores, and originator basis for the entity's capture (OBS-d52213cbd4ee, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/coauthor",
+   "reason": "the leesharks.com apparatus authorship census record of the entity (2026-11-01), its fields and reading, ledgered as the archive's record of the entity",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34",
+    "LS-35",
+    "LS-36",
+    "LS-37",
+    "LS-38",
+    "LS-39",
+    "LS-40",
+    "LS-41",
+    "LS-42",
+    "LS-43"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    1678
+   ],
+   "reason": "superseded instance of #1680 (v0.4): the same sentences, carried as an instance of #1680's lineage (S4)"
+  },
+  {
+   "dep": [
+    854,
+    1232,
+    1611
+   ],
+   "reason": "restatements of #856's definition ('Human-written describes the author, not the distribution.'): instances of its lineage, adding no mechanism or qualification for this entity"
+  },
+  {
+   "dep": [
+    1369,
+    1001
+   ],
+   "reason": "later versions of #729 and #745 carrying the same passages: instances of their lineages"
+  },
+  {
+   "dep": [
+    1,
+    95,
+    107,
+    110,
+    121,
+    127,
+    129,
+    138,
+    152,
+    172,
+    186,
+    195,
+    199,
+    249,
+    400,
+    498,
+    499,
+    550,
+    584,
+    588,
+    609,
+    684,
+    716,
+    782,
+    785,
+    794,
+    857,
+    882,
+    884,
+    950,
+    1003,
+    1023,
+    1080,
+    1081,
+    1082,
+    1084,
+    1085,
+    1086,
+    1088,
+    1090,
+    1091,
+    1107,
+    1188,
+    1194,
+    1326,
+    1337,
+    1384,
+    1411,
+    1434,
+    1441,
+    1555,
+    1573,
+    1587,
+    1588,
+    1685
+   ],
+   "reason": "O-class candidates read and not admitted: 'human-authored' or 'human-written' used of sources, training data or corpora in general (provenance alignment, PER, model collapse, the summarizer layer, licensing), of the archive's own deposits' substrate lines, or in schema metadata; 'AI-assisted writing' named only to say a work is something else (Autonomous Semantic Warfare and its announcements); 'crowdsourced' of a canon (the Mandala); a cost table naming detectors. None applies an archive category to the co-writing of a text with a model, to crowd-recruited writers, or to the division of a text by human or model origin."
+  },
+  {
+   "dep": [
+    1,
+    18,
+    28,
+    44,
+    54,
+    71,
+    81,
+    92,
+    100,
+    101,
+    104,
+    105,
+    109,
+    112,
+    114,
+    115,
+    117,
+    119,
+    120,
+    129,
+    130,
+    156,
+    157,
+    163,
+    166,
+    167,
+    187,
+    188,
+    191,
+    197,
+    198,
+    203,
+    204,
+    264,
+    290,
+    291,
+    311,
+    331,
+    341,
+    345,
+    349,
+    354,
+    476,
+    482,
+    502,
+    558,
+    561,
+    612,
+    623,
+    642,
+    643,
+    673,
+    683,
+    703,
+    709,
+    711,
+    716,
+    725,
+    726,
+    740,
+    746,
+    781,
+    788,
+    789,
+    790,
+    791,
+    825,
+    833,
+    835,
+    857,
+    904,
+    937,
+    942,
+    943,
+    944,
+    945,
+    946,
+    947,
+    987,
+    1002,
+    1023,
+    1068,
+    1075,
+    1087,
+    1089,
+    1099,
+    1189,
+    1190,
+    1270,
+    1370,
+    1384,
+    1386,
+    1413,
+    1422,
+    1434,
+    1437,
+    1439,
+    1443,
+    1469,
+    1470,
+    1523,
+    1528,
+    1543,
+    1545,
+    1554,
+    1556,
+    1575,
+    1576,
+    1579,
+    1580,
+    1581,
+    1588,
+    1595,
+    1613,
+    1616,
+    1617,
+    1618,
+    1634,
+    1644,
+    1645,
+    1646,
+    1655,
+    1656,
+    1664,
+    1665,
+    1666,
+    1668,
+    1669,
+    1670,
+    1671,
+    1676,
+    1677,
+    1679,
+    1684,
+    1690,
+    1701,
+    1702,
+    1703,
+    1704,
+    1705,
+    1706,
+    1709,
+    1710,
+    1711,
+    1712,
+    1713,
+    1714,
+    1716,
+    1718,
+    1725,
+    1726
+   ],
+   "reason": "hop candidates (forward and back from the admitted deposits): read by title and, where the title touched the classes, by a class-pattern scan of the text; none names CoAuthor or applies a category to its classes beyond the admitted deposits. #942 (H0074) is #941's successor and carries its §1–§7 by reference; #1001 and #1369 are lineage instances."
+  }
+ ],
+ "hop": {
+  "from": [
+   1680,
+   941,
+   856,
+   729,
+   745,
+   666,
+   161,
+   855,
+   1577,
+   1540,
+   1719
+  ],
+  "candidates": 167,
+  "admitted": [
+   939
+  ]
+ },
+ "class_pass": {
+  "classes": 3,
+  "O_candidates": 132,
+  "O_deposits": 72
+ },
+ "observations": [
+  "The string pass finds CoAuthor named only in #1678 and #1680, the archive's mantle object for Alexanarch, where it is a comparator for the dataset export.",
+  "The alias is case-sensitive; the common noun 'coauthor' was not searched."
+ ],
+ "counts": {
+  "D_candidates": 16,
+  "R_candidates": 8,
+  "O_candidates": 132,
+  "H_candidates": 167,
+  "admitted_deposits": 14,
+  "archive_claims": 78,
+  "by_kind": {
+   "LS": 43,
+   "CAP": 13,
+   "deposit": 22
+  }
+ }
+}

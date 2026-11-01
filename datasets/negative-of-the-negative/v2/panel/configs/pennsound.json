@@ -1,0 +1,34 @@
+{
+ "row": "pennsound",
+ "address": "PennSound",
+ "entity": "PennSound (writing.upenn.edu/pennsound), the ongoing project of the Center for Programs in Contemporary Writing at the University of Pennsylvania, committed to producing new audio recordings and preserving existing audio archives of poetry, directed by Charles Bernstein, Al Filreis and Chris Mustazza, edited by Michael S. Hennessey, launched 2005; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/pennsound)",
+ "row_type": "C (a public entity on which the archive bears: a university-hosted archive of poetry audio recordings; an entity of the leesharks.com apparatus authorship census)",
+ "aliases": [
+  {"pattern": "\\bPenn ?Sound\\b", "flags": "i"},
+  {"pattern": "writing\\.upenn\\.edu/pennsound", "flags": "i"}
+ ],
+ "classes": [
+  {
+   "term": "archives of poetry audio: recordings of poets reading",
+   "pattern": "\\b(poetry (audio|sound[- ]files?|sound recordings?|recordings?)|audio archives? of poetry|recordings? of poets)\\b",
+   "flags": "i",
+   "basis": "field: B3 (Wikipedia, card 3: 'PennSound is a poetry website and online archive that hosts free and downloadable recordings of poets reading their own work.'); B8 (Instagram card snippet: 'the world's preeminent online archive of poetry audio'); B9 (ModPo: 'the largest archive of recordings of poets reading their own poems'); B13 (About page: 'committed to producing new audio recordings and preserving existing audio archives'). The census's own area for the entity, 'avant-garde-archives' ('Avant-garde and experimental archives: the record of experimental writing, sound, visual and procedural work'), and its evidence_kind 'audio recording'."
+  },
+  {
+   "term": "a recording credited to an author and to a performer apart ('performed by')",
+   "pattern": "\\b(performed by|performer(s)?['’]? (credit|name)|credited (as|to) (the )?perform)",
+   "flags": "i",
+   "basis": "field: B1 (home page, card 1: 'John Clare, \"Vowelless Letter\" (1849) performed by Charles Bernstein'; 'Hannah Weiner, from Clairvoyant Journal , performed by Weiner, Sharon Mattlin & Rochelle Kraut'). The census's question for the entity ('authored performance: whose voice a recording carries and under whose name it is filed, with performer and author credited apart') and record.function."
+  },
+  {
+   "term": "filing and retrieval of a work under the author's name (catalogue and name authority)",
+   "pattern": "\\b(under the (poet|author)['’]s name|name authorit(y|ies)|authority (file|record)s?|library catalog(ue)?s?)\\b",
+   "flags": "i",
+   "basis": "field: B3 (Wikipedia, card 3, the manifesto as it reports it: 'Sound files must be indexed and retrievable from a library catalog under the poet’s name and from search engines on the web.'). The census's record.name for the entity ('under the poet's name on an author page') and its area 'attribution-and-credit'."
+  }
+ ],
+ "classes_note": "Three classes, each stated by a field source at the locus given and each the census's own area, question or record field for the entity: (1) archives of poetry audio, the entity's kind (B3, B8, B9, B13; census area 'avant-garde-archives', evidence_kind 'audio recording'); (2) a recording credited to its author and to a performer apart, the census's question for the entity (B1; census question, record.function); (3) filing under the author's name, the manifesto's rule as Wikipedia reports it (B3; census record.name, area 'attribution-and-credit'). The census's anchors, #940 (EA-HETERONYMY-01, AXN:03B8) and #1722 (AI Calls You Fake, AXN:0B2A), are read at the passages that bear on the entity's kind (name authorities, pseudonyms and heteronyms, collective authorship, machine participation, archives of experimental writing), by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP §6); the heteronymy and pseudonymy class the census's record.name and does_not_answer raise for the entity ('how an author who writes under several names is filed') is read in #940 and not given a pattern, since the archive's heteronym texts are its own subject. The operators' and collaborators' names (Bernstein, Filreis, Mustazza, Hennessey, Goldsmith; Kelly Writers House, UbuWeb, the Electronic Poetry Center, Jacket2, PoemTalk) are not aliases of the entity and are not searched alone.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 briefs it names; address \"PennSound\" (pennsound-aio-20261101, OBS-f07a679cb7c8, ADDR-ec08ad73501e), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#940).",
+ "hop_from": [940]
+}

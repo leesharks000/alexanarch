@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-01T04:31:34Z",
+  "regenerated_at": "2026-11-01T06:17:03Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "6ca41b7f97e305e1f241f421aec151949cfde1764f52fe00ed58d916a9c5c7ff",
+    "mm-main-capture": "759e5b387039231ae822187ad247c64496b6f0aa4bba677076103b32aa2172e3",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2640,
-  "total_observations": 1182,
+  "total_addresses": 2661,
+  "total_observations": 1205,
   "class_counts": {
-    "subjunctive": 1739,
-    "observed_address": 884,
+    "subjunctive": 1737,
+    "observed_address": 907,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1760,
+    "unmatched": 1781,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -12932,6 +12932,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "arquivo pessoa": {
+      "canonical_query": "arquivo pessoa",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ARQUIVO PESSOA' ON THE OVERVIEW — THE EDITION OF THE PUBLISHED WORK AT ITS GRAIN; THE ORTHONYM'S POETRY DROPPED FROM ITS LIST; THE PSEUDONYMS AND THE JOINT ATTRIBUTIONS NOT CARRIED; THE EDITION CREDITED TO A PARTNER",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "arquivo-pessoa-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#arquivo-pessoa-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/arquivo-pessoa-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#arquivo-pessoa-aio-20261101",
+          "details_excerpt": "THE EDITION, SIGNED OUT, 2026-11-01: 'The Arquivo Pessoa is a digital library and database dedicated to the published work of the Portuguese writer Fernando Pessoa.' Key details: arquivopessoa.net; origin ('Created betwe"
+        }
+      ],
+      "originator": {
+        "name": "Arquivo Pessoa",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ARQUIVO PESSOA' ON THE OVERVIEW — THE EDITION OF THE PUBLISHED WORK AT ITS GRAIN; THE ORTHONYM'S POETRY DROPPED FROM ITS LIST; THE PSEUDONYMS AND THE JOINT ATTRIBUTIONS NOT CARRIED; THE EDITION CREDITED TO A PARTNER"
+    },
     "artificial intelligence": {
       "canonical_query": "artificial intelligence",
       "is_quoted": false,
@@ -14207,6 +14242,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "authors guild human authored certification": {
+      "canonical_query": "authors guild human authored certification",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'AUTHORS GUILD HUMAN AUTHORED CERTIFICATION' ON THE OVERVIEW — THE CERTIFICATE AT ITS GRAIN; THE MEMBER'S IDENTITY WAIVER GIVEN AS VERIFICATION ON JOINING; THE MINIMAL USES WIDENED; THE NAME ON THE CERTIFICATE UNANSWERED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "authors-guild-human-authored-certification-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#authors-guild-human-authored-certification-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/authors-guild-human-authored-certification-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#authors-guild-human-authored-certification-aio-20261101",
+          "details_excerpt": "THE CERTIFICATION, SIGNED OUT, 2026-11-01: 'The Authors Guild Human Authored Certification is a credential and seal verifying that a book's text was written entirely by a human rather than generated by artificial intelli"
+        }
+      ],
+      "originator": {
+        "name": "Human Authored Certification",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'AUTHORS GUILD HUMAN AUTHORED CERTIFICATION' ON THE OVERVIEW — THE CERTIFICATE AT ITS GRAIN; THE MEMBER'S IDENTITY WAIVER GIVEN AS VERIFICATION ON JOINING; THE MINIMAL USES WIDENED; THE NAME ON THE CERTIFICATE UNANSWERED"
     },
     "authorship fallacy": {
       "canonical_query": "authorship fallacy",
@@ -17139,6 +17209,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "chat gpt is eating the world": {
+      "canonical_query": "chat gpt is eating the world",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'CHAT GPT IS EATING THE WORLD' ON THE OVERVIEW — THE TRACKER'S NAME READ AS OPENAI'S LEGAL BATTLES; THE SITE A SOURCE OF ONE COUNT; ITS AUTHORSHIP TRACKER AND ITS OPERATOR NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "chat-gpt-is-eating-the-world-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#chat-gpt-is-eating-the-world-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/chat-gpt-is-eating-the-world-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#chat-gpt-is-eating-the-world-aio-20261101",
+          "details_excerpt": "THE NAME, SIGNED OUT, 2026-11-01: 'OpenAI and ChatGPT are facing a massive wave of legal, safety, and regulatory battles as generative AI continues to impact creative industries, consumer safety, and the tech landscape.'"
+        }
+      ],
+      "originator": {
+        "name": "Chat GPT Is Eating the World",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'CHAT GPT IS EATING THE WORLD' ON THE OVERVIEW — THE TRACKER'S NAME READ AS OPENAI'S LEGAL BATTLES; THE SITE A SOURCE OF ONE COUNT; ITS AUTHORSHIP TRACKER AND ITS OPERATOR NOT CARRIED"
+    },
     "chatgpt psychosis: a love story": {
       "canonical_query": "chatgpt psychosis: a love story",
       "is_quoted": false,
@@ -17506,6 +17611,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "coauthor dataset": {
+      "canonical_query": "coauthor dataset",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'COAUTHOR DATASET' ON THE OVERVIEW — THE DATASET AT A FINER GRAIN THAN THE CENSUS'S SOURCE, FROM ITS OWN SITE; THE WRITERS GIVEN AS CROWD WORKERS AND THE TEXT DIVIDED BY PERCENTAGE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "coauthor-dataset-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#coauthor-dataset-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/coauthor-dataset-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#coauthor-dataset-aio-20261101",
+          "details_excerpt": "THE DATASET, SIGNED OUT, 2026-11-01: 'The CoAuthor Dataset is a large-scale, process-oriented dataset capturing human-AI collaborative writing interactions developed by researchers Mina Lee, Percy Liang, and Qian Yang (C"
+        }
+      ],
+      "originator": {
+        "name": "CoAuthor",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'COAUTHOR DATASET' ON THE OVERVIEW — THE DATASET AT A FINER GRAIN THAN THE CENSUS'S SOURCE, FROM ITS OWN SITE; THE WRITERS GIVEN AS CROWD WORKERS AND THE TEXT DIVIDED BY PERCENTAGE"
     },
     "codesota": {
       "canonical_query": "codesota",
@@ -20277,6 +20417,41 @@
       "latest_observation_date": "2026-06-15",
       "latest_status": "BROAD MATCH"
     },
+    "creative ai lab database": {
+      "canonical_query": "creative ai lab database",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'CREATIVE AI LAB DATABASE' ON THE OVERVIEW — THE DATABASE IN ITS CURRENT STATE, FROM PAGES THE CENSUS COULD NOT READ; ITS LAUNCH CONTRIBUTOR NOT NAMED; A FUNDER ON NO SAVED SOURCE",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "creative-ai-lab-database-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#creative-ai-lab-database-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/creative-ai-lab-database-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#creative-ai-lab-database-aio-20261101",
+          "details_excerpt": "THE DATABASE, SIGNED OUT, 2026-11-01: 'The Creative AI Lab is a joint research partnership between Serpentine Arts Technologies and the Department of Digital Humanities at King's College London.' Key overview (launch dat"
+        }
+      ],
+      "originator": {
+        "name": "Creative AI Tools & Resources Database (Creative AI Lab)",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'CREATIVE AI LAB DATABASE' ON THE OVERVIEW — THE DATABASE IN ITS CURRENT STATE, FROM PAGES THE CENSUS COULD NOT READ; ITS LAUNCH CONTRIBUTOR NOT NAMED; A FUNDER ON NO SAVED SOURCE"
+    },
     "creative commons sharealike": {
       "canonical_query": "creative commons sharealike",
       "is_quoted": false,
@@ -22313,6 +22488,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "database of ai litigation": {
+      "canonical_query": "database of ai litigation",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'DATABASE OF AI LITIGATION' ON THE OVERVIEW — DAIL FIRST OF FOUR TRACKERS, ITS METHOD AT ITS GRAIN; A SECOND DOMAIN CARDED; ITS SCOPE NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "database-of-ai-litigation-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#database-of-ai-litigation-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/database-of-ai-litigation-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#database-of-ai-litigation-aio-20261101",
+          "details_excerpt": "THE NAME, SIGNED OUT, 2026-11-01: 'The primary dedicated public resources and trackers for artificial intelligence litigation include:' Four bullets: 'DAIL – The Database of AI Litigation: Maintained by George Washington"
+        }
+      ],
+      "originator": {
+        "name": "DAIL – The Database of AI Litigation",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'DATABASE OF AI LITIGATION' ON THE OVERVIEW — DAIL FIRST OF FOUR TRACKERS, ITS METHOD AT ITS GRAIN; A SECOND DOMAIN CARDED; ITS SCOPE NOT CARRIED"
     },
     "dating-query basin": {
       "canonical_query": "dating-query basin",
@@ -25361,6 +25571,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "eclipse archive": {
+      "canonical_query": "eclipse archive",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ECLIPSE ARCHIVE' ON THE OVERVIEW — THE POETRY ARCHIVE ONE SENSE OF FIVE, ITS EDITORS AT THEIR GRAIN; ITS FACSIMILE PURPOSE, ITS DATE AND ITS AUTHOR INDEX NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "eclipse-archive-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#eclipse-archive-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/eclipse-archive-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#eclipse-archive-aio-20261101",
+          "details_excerpt": "THE NAME, SIGNED OUT, 2026-11-01: 'The term eclipse archive can refer to several distinct topics depending on the context:' Five bullets: 'Poetry & Digital Archives: The Eclipse Archive is a digital poetry publisher and "
+        }
+      ],
+      "originator": {
+        "name": "Eclipse",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ECLIPSE ARCHIVE' ON THE OVERVIEW — THE POETRY ARCHIVE ONE SENSE OF FIVE, ITS EDITORS AT THEIR GRAIN; ITS FACSIMILE PURPOSE, ITS DATE AND ITS AUTHOR INDEX NOT CARRIED"
+    },
     "ecological diversity measure": {
       "canonical_query": "ecological diversity measure",
       "is_quoted": false,
@@ -25666,6 +25911,76 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "electronic literature lab": {
+      "canonical_query": "electronic literature lab",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ELECTRONIC LITERATURE LAB' ON THE OVERVIEW — THE LAB AT ITS GRAIN FROM A SITE THE CENSUS DID NOT SAVE; ITS COUNTS LARGER THAN THE SAVED PAGE'S; ONE AUTHOR NAMED, IN A ROOM'S NAME",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "electronic-literature-lab-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#electronic-literature-lab-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/electronic-literature-lab-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#electronic-literature-lab-aio-20261101",
+          "details_excerpt": "THE LAB, SIGNED OUT, 2026-11-01: 'The Electronic Literature Lab (ELL) is a media archaeology research facility founded in 2011 and directed by Dr. Dene Grigar at Washington State University Vancouver.' Mission (archive, "
+        }
+      ],
+      "originator": {
+        "name": "Electronic Literature Lab (ELL)",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ELECTRONIC LITERATURE LAB' ON THE OVERVIEW — THE LAB AT ITS GRAIN FROM A SITE THE CENSUS DID NOT SAVE; ITS COUNTS LARGER THAN THE SAVED PAGE'S; ONE AUTHOR NAMED, IN A ROOM'S NAME"
+    },
+    "electronic poetry center": {
+      "canonical_query": "electronic poetry center",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ELECTRONIC POETRY CENTER' ON THE OVERVIEW — THE CENTER AT ITS BUFFALO ORIGIN AND WIKIPEDIA'S DATE; ITS MOVE TO PENN AND THE ARCHIVES OF THE POETICS PROGRAM AND THE POETICS LIST NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "electronic-poetry-center-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#electronic-poetry-center-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/electronic-poetry-center-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#electronic-poetry-center-aio-20261101",
+          "details_excerpt": "THE CENTER, SIGNED OUT, 2026-11-01: 'The Electronic Poetry Center is a major online archive and resource gateway for digital, experimental, and avant-garde poetry.' Overview & History (founded 'July 10, 1994, by Loss Peq"
+        }
+      ],
+      "originator": {
+        "name": "Electronic Poetry Center",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ELECTRONIC POETRY CENTER' ON THE OVERVIEW — THE CENTER AT ITS BUFFALO ORIGIN AND WIKIPEDIA'S DATE; ITS MOVE TO PENN AND THE ARCHIVES OF THE POETICS PROGRAM AND THE POETICS LIST NOT CARRIED"
     },
     "elegy": {
       "canonical_query": "elegy",
@@ -34986,6 +35301,41 @@
       "latest_observation_date": "2026-09-07",
       "latest_status": "CAPTURE"
     },
+    "in2writing workshop": {
+      "canonical_query": "in2writing workshop",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'IN2WRITING WORKSHOP' ON THE OVERVIEW — THE SERIES BY ITS THIRD AND FOURTH EDITIONS, TWO OF THEM AT CHI THAT THE CENSUS DOES NOT HAVE; THE FIRST WORKSHOP AND ITS READER STUDY NOT CARRIED; NO EDITOR NAMED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "in2writing-workshop-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#in2writing-workshop-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/in2writing-workshop-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#in2writing-workshop-aio-20261101",
+          "details_excerpt": "THE SERIES, SIGNED OUT, 2026-11-01: 'The In2Writing workshop is an academic event focused on Intelligent and Interactive Writing Assistants.' Overview: name; purpose ('To facilitate interdisciplinary discussions around w"
+        }
+      ],
+      "originator": {
+        "name": "Workshop on Intelligent and Interactive Writing Assistants (In2Writing)",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'IN2WRITING WORKSHOP' ON THE OVERVIEW — THE SERIES BY ITS THIRD AND FOURTH EDITIONS, TWO OF THEM AT CHI THAT THE CENSUS DOES NOT HAVE; THE FIRST WORKSHOP AND ITS READER STUDY NOT CARRIED; NO EDITOR NAMED"
+    },
     "incantatrice d'anime enli": {
       "canonical_query": "incantatrice d'anime enli",
       "is_quoted": false,
@@ -35979,6 +36329,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "international dada archive": {
+      "canonical_query": "international dada archive",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'INTERNATIONAL DADA ARCHIVE' ON THE OVERVIEW — THE ARCHIVE AT ITS GRAIN FROM ITS OWN PAGE; A 1978 CONFERENCE AND A WORLD RANK ADDED; THE BOOKS BY AUTHOR, WITH THEIR DOUBLE NAMES, NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "international-dada-archive-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#international-dada-archive-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/international-dada-archive-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#international-dada-archive-aio-20261101",
+          "details_excerpt": "THE ARCHIVE, SIGNED OUT, 2026-11-01: 'The International Dada Archive is a premier scholarly research center for the historic Dada movement, housed at the University of Iowa Libraries in Iowa City, Iowa.' Overview and his"
+        }
+      ],
+      "originator": {
+        "name": "International Dada Archive",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'INTERNATIONAL DADA ARCHIVE' ON THE OVERVIEW — THE ARCHIVE AT ITS GRAIN FROM ITS OWN PAGE; A 1978 CONFERENCE AND A WORLD RANK ADDED; THE BOOKS BY AUTHOR, WITH THEIR DOUBLE NAMES, NOT CARRIED"
+    },
     "international institute of social history": {
       "canonical_query": "international institute of social history",
       "is_quoted": false,
@@ -36627,6 +37012,41 @@
       "latest_observation_date": "2026-07-31",
       "latest_status": "CAPTURE"
     },
+    "isni": {
+      "canonical_query": "isni",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ISNI' ON THE OVERVIEW — THE STANDARD AT ITS OWN WORDS AND COUNTS; ITS NAMES GIVEN AS 'LINKED UNDER ONE PROFILE', WHERE THE SAVED ACCOUNT GIVES EACH PSEUDONYM ITS OWN ISNI",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "isni-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#isni-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/isni-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#isni-aio-20261101",
+          "details_excerpt": "THE STANDARD, SIGNED OUT, 2026-11-01: 'The International Standard Name Identifier (ISNI) is an ISO-certified global standard number (ISO 27729) used to uniquely identify the public identities of contributors to creative "
+        }
+      ],
+      "originator": {
+        "name": "ISNI (International Standard Name Identifier)",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ISNI' ON THE OVERVIEW — THE STANDARD AT ITS OWN WORDS AND COUNTS; ITS NAMES GIVEN AS 'LINKED UNDER ONE PROFILE', WHERE THE SAVED ACCOUNT GIVES EACH PSEUDONYM ITS OWN ISNI"
+    },
     "isomorphic transmission": {
       "canonical_query": "isomorphic transmission",
       "is_quoted": false,
@@ -36837,6 +37257,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
+    },
+    "jacket2": {
+      "canonical_query": "jacket2",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'JACKET2' IN AI MODE — THE MAGAZINE AND ITS SUCCESSION FROM JACKET AT THEIR GRAIN; ITS HOST, EDITORS AND 2011 RELAUNCH GIVEN WITH NO CARD; THE BYLINE THE CENSUS READS IT FOR NOT CARRIED",
+          "surface": "Google AI Mode",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "jacket2-aimode-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#jacket2-aimode-20261101",
+          "record_url": "https://www.alexanarch.org/captures/jacket2-aimode-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#jacket2-aimode-20261101",
+          "details_excerpt": "THE MAGAZINE, SIGNED OUT, 2026-11-01, AI MODE: 'Jacket2 is a prominent online literary magazine dedicated to modern and contemporary poetry and poetics. Hosted by Kelly Writers House at the University of Pennsylvania, it"
+        }
+      ],
+      "originator": {
+        "name": "Jacket2",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'JACKET2' IN AI MODE — THE MAGAZINE AND ITS SUCCESSION FROM JACKET AT THEIR GRAIN; ITS HOST, EDITORS AND 2011 RELAUNCH GIVEN WITH NO CARD; THE BYLINE THE CENSUS READS IT FOR NOT CARRIED"
     },
     "jensen-shannon divergence": {
       "canonical_query": "jensen-shannon divergence",
@@ -48691,9 +49146,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'ORCID' ON THE OVERVIEW — THE IDENTIFIER AS A RESEARCHER'S SERVICE; NAME AMBIGUITY RESOLVED AT ITS GRAIN; NO HOLDER, NO DATE, NO ISNI; THE FICTITIOUS PROFESSOR'S iD GIVEN AS THE FORMAT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "orcid-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#orcid-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/orcid-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#orcid-aio-20261101",
+          "details_excerpt": "THE IDENTIFIER, SIGNED OUT, 2026-11-01: 'ORCID (Open Researcher and Contributor ID) is a free, 16-digit persistent digital identifier that uniquely identifies scholars, researchers, and contributors.' What ORCID Does (na"
+        }
+      ],
       "termindex": {
         "tier": 5,
         "count": 4,
@@ -48704,9 +49174,16 @@
         "variants": [],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "ORCID",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'ORCID' ON THE OVERVIEW — THE IDENTIFIER AS A RESEARCHER'S SERVICE; NAME AMBIGUITY RESOLVED AT ITS GRAIN; NO HOLDER, NO DATE, NO ISNI; THE FICTITIOUS PROFESSOR'S iD GIVEN AS THE FORMAT"
     },
     "organizational charter": {
       "canonical_query": "organizational charter",
@@ -48997,6 +49474,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "output: an anthology of computer-generated text": {
+      "canonical_query": "output: an anthology of computer-generated text",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'OUTPUT: AN ANTHOLOGY OF COMPUTER-GENERATED TEXT' ON THE OVERVIEW — THE BOOK AT ITS GRAIN FROM MIT PRESS; ITS EXCLUSION RULE LOOSENED; ITS ARGUMENT AGAINST A RECENT ORIGIN OF TEXT GENERATION NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "output-an-anthology-of-computer-generated-text-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#output-an-anthology-of-computer-generated-text-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/output-an-anthology-of-computer-generated-text-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#output-an-anthology-of-computer-generated-text-aio-20261101",
+          "details_excerpt": "THE ANTHOLOGY, SIGNED OUT, 2026-11-01: 'Published by MIT Press and Counterpath Press on November 5, 2024, Output: An Anthology of Computer-Generated Text, 1953–2023 is a 504-page collection edited by Lillian-Yvonne Bertr"
+        }
+      ],
+      "originator": {
+        "name": "Output: An Anthology of Computer-Generated Text, 1953–2023",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'OUTPUT: AN ANTHOLOGY OF COMPUTER-GENERATED TEXT' ON THE OVERVIEW — THE BOOK AT ITS GRAIN FROM MIT PRESS; ITS EXCLUSION RULE LOOSENED; ITS ARGUMENT AGAINST A RECENT ORIGIN OF TEXT GENERATION NOT CARRIED"
     },
     "outreach rhizome": {
       "canonical_query": "outreach rhizome",
@@ -49997,6 +50509,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "pennsound": {
+      "canonical_query": "pennsound",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'PENNSOUND' ON THE OVERVIEW — THE ARCHIVE AND ITS DIRECTORS EXACT; THE CHARLES RUAS COLLECTION OF 2026 CARRIED; ITS CREDITING OF PERFORMER APART FROM AUTHOR NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "pennsound-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#pennsound-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#pennsound-aio-20261101",
+          "details_excerpt": "THE ARCHIVE, SIGNED OUT, 2026-11-01: 'PennSound is the world's largest free digital archive of poetry audio, featuring over 50,000 recordings spanning from 1913 to the present.' Overview & Mission (CPCW and the Kelly Wri"
+        }
+      ],
+      "originator": {
+        "name": "PennSound",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'PENNSOUND' ON THE OVERVIEW — THE ARCHIVE AND ITS DIRECTORS EXACT; THE CHARLES RUAS COLLECTION OF 2026 CARRIED; ITS CREDITING OF PERFORMER APART FROM AUTHOR NOT CARRIED"
+    },
     "pentastichal material ablation": {
       "canonical_query": "pentastichal material ablation",
       "is_quoted": false,
@@ -50347,6 +50894,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "pessoa digital": {
+      "canonical_query": "pessoa digital",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'PESSOA DIGITAL' ON THE OVERVIEW — THE EDITION FIRST OF TWO SENSES, BESIDE A BRAZILIAN CITY'S APP; THE PLANS AND LISTS IT EDITS NOT CARRIED; THE CCeH MADE THE HOST OF ESTRANHAR PESSOA",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "pessoa-digital-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#pessoa-digital-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/pessoa-digital-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#pessoa-digital-aio-20261101",
+          "details_excerpt": "THE EDITION'S NAME, SIGNED OUT, 2026-11-01: 'The term Pessoa Digital most commonly refers to digital academic and archival projects dedicated to the Portuguese poet Fernando Pessoa, or to municipal digital services in Br"
+        }
+      ],
+      "originator": {
+        "name": "Pessoa Digital",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'PESSOA DIGITAL' ON THE OVERVIEW — THE EDITION FIRST OF TWO SENSES, BESIDE A BRAZILIAN CITY'S APP; THE PLANS AND LISTS IT EDITS NOT CARRIED; THE CCeH MADE THE HOST OF ESTRANHAR PESSOA"
     },
     "pessoa graph": {
       "canonical_query": "pessoa graph",
@@ -71072,6 +71654,41 @@
       "latest_observation_date": "2026-09-27",
       "latest_status": "THE MONTH READ AS A SYSTEM, THE SUPERSESSION CARRIED"
     },
+    "the next electronic literature organization": {
+      "canonical_query": "the next electronic literature organization",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'THE NEXT ELECTRONIC LITERATURE ORGANIZATION' ON THE OVERVIEW — THE MUSEUM, ITS LAB AND ITS CURATOR AT THEIR GRAIN; THE NAMES ITS WORKS STAND UNDER, A PEN NAME KEPT AS SUCH, NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "the-next-electronic-literature-organization-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#the-next-electronic-literature-organization-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/the-next-electronic-literature-organization-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#the-next-electronic-literature-organization-aio-20261101",
+          "details_excerpt": "THE MUSEUM, SIGNED OUT, 2026-11-01: 'The NEXT is a digital art and writing museum, library, and preservation space created by the Electronic Literature Organization (ELO).' Key details: purpose ('Maintains and shares the"
+        }
+      ],
+      "originator": {
+        "name": "The NEXT",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'THE NEXT ELECTRONIC LITERATURE ORGANIZATION' ON THE OVERVIEW — THE MUSEUM, ITS LAB AND ITS CURATOR AT THEIR GRAIN; THE NAMES ITS WORKS STAND UNDER, A PEN NAME KEPT AS SUCH, NOT CARRIED"
+    },
     "the particle: provenance erasure at sophistical refutations 183b34, measured — machine-mediated reception, disciplinary model collapse, and the world soul as degraded commodity (ea-reception-particle-01 v0.2)": {
       "canonical_query": "the particle: provenance erasure at sophistical refutations 183b34, measured — machine-mediated reception, disciplinary model collapse, and the world soul as degraded commodity (ea-reception-particle-01 v0.2)",
       "is_quoted": false,
@@ -73251,6 +73868,76 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "u.s. copyright office copyright and artificial intelligence": {
+      "canonical_query": "u.s. copyright office copyright and artificial intelligence",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'U.S. COPYRIGHT OFFICE COPYRIGHT AND ARTIFICIAL INTELLIGENCE' ON THE OVERVIEW — THE REPORT'S THREE PARTS AT THEIR DATES; THE NOTICE OF INQUIRY MISDATED FROM A CARD; HUMAN AUTHORSHIP STATED AS LAW, THE NAME UNADDRESSED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+          "details_excerpt": "THE INITIATIVE, SIGNED OUT, 2026-11-01: 'The U.S. Copyright Office (USCO) maintains that U.S. law strictly requires human authorship for copyright protection, and has released a multi-part analysis addressing digital rep"
+        }
+      ],
+      "originator": {
+        "name": "Copyright and Artificial Intelligence",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'U.S. COPYRIGHT OFFICE COPYRIGHT AND ARTIFICIAL INTELLIGENCE' ON THE OVERVIEW — THE REPORT'S THREE PARTS AT THEIR DATES; THE NOTICE OF INQUIRY MISDATED FROM A CARD; HUMAN AUTHORSHIP STATED AS LAW, THE NAME UNADDRESSED"
+    },
+    "ubuweb": {
+      "canonical_query": "ubuweb",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'UBUWEB' ON THE OVERVIEW — THE ARCHIVE AT ITS GRAIN, ITS 2024 PAUSE AND 2025 RETURN EXACT; ITS COUNTS ON NO SAVED PAGE; ITS TERMS OF HOLDING (RIGHTS WITH THEIR HOLDERS, REMOVAL ON THE ARTIST'S REQUEST) NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ubuweb-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#ubuweb-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/ubuweb-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ubuweb-aio-20261101",
+          "details_excerpt": "THE ARCHIVE, SIGNED OUT, 2026-11-01: 'UbuWeb is a free, ad-free digital library and online archive for avant-garde art, film, music, and poetry.' Overview & History (founded 1996 by Kenneth Goldsmith; mission; 'gift econ"
+        }
+      ],
+      "originator": {
+        "name": "UbuWeb",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'UBUWEB' ON THE OVERVIEW — THE ARCHIVE AT ITS GRAIN, ITS 2024 PAUSE AND 2025 RETURN EXACT; ITS COUNTS ON NO SAVED PAGE; ITS TERMS OF HOLDING (RIGHTS WITH THEIR HOLDERS, REMOVAL ON THE ARTIST'S REQUEST) NOT CARRIED"
+    },
     "uktp": {
       "canonical_query": "uktp",
       "is_quoted": false,
@@ -73806,6 +74493,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-31",
       "latest_status": "THE VESUVIUS CHALLENGE ON THE OVERVIEW — OPEN SCIENCE, HERCULANEUM, 79 CE, VIRTUAL UNWRAPPING, INK DETECTION, HELD; THE $1,000,000 GRAND PRIZE AT THE CHALLENGE'S OWN FIGURE; NO INLINE CITATION; THE CHALLENGE'S OWN LIMIT ('IT STILL NEEDS HUMAN HELP') UNSAID"
+    },
+    "viaf": {
+      "canonical_query": "viaf",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'VIAF' ON THE OVERVIEW — THE AUTHORITY FILE AT ITS GRAIN, ORIGIN AND OPERATOR EXACT; PSEUDONYMS LINKED; THE CLUSTER IDENTIFIER GIVEN AS 'UNIQUE', WHERE THE SAVED ACCOUNT HAS IT COALESCE AND SPLIT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "viaf-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#viaf-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/viaf-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#viaf-aio-20261101",
+          "details_excerpt": "THE FILE, SIGNED OUT, 2026-11-01: 'The Virtual International Authority File (VIAF) is an international name authority service that combines multiple national library authority files into a single online database.' Key Fe"
+        }
+      ],
+      "originator": {
+        "name": "Virtual International Authority File (VIAF)",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'VIAF' ON THE OVERVIEW — THE AUTHORITY FILE AT ITS GRAIN, ORIGIN AND OPERATOR EXACT; PSEUDONYMS LINKED; THE CLUSTER IDENTIFIER GIVEN AS 'UNIQUE', WHERE THE SAVED ACCOUNT HAS IT COALESCE AND SPLIT"
     },
     "viola arquette": {
       "canonical_query": "viola arquette",
@@ -81837,9 +82559,24 @@
       "type": "unmatched",
       "battery_membership": [],
       "sources": [
+        "mm-main-capture",
         "mm-termindex"
       ],
-      "observations": [],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'WIKIDATA' ON THE OVERVIEW — THE KNOWLEDGE GRAPH AT ITS DATA MODEL; ITS OWN Q-NUMBERS GIVEN, ITS ROLE AS HUB OF THE NAME AUTHORITIES (ISNI, VIAF, ORCID) AND ITS PSEUDONYM PROPERTY NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "wikidata-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#wikidata-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/wikidata-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#wikidata-aio-20261101",
+          "details_excerpt": "THE KNOWLEDGE BASE, SIGNED OUT, 2026-11-01: 'Wikidata is a free, open, and collaborative multilingual knowledge graph hosted by the Wikimedia Foundation. It serves as a central storage hub for structured data used by Wik"
+        }
+      ],
       "termindex": {
         "tier": 5,
         "count": 6,
@@ -81850,9 +82587,16 @@
         "variants": [],
         "extraction_source": "keywords"
       },
-      "observation_class": "subjunctive",
-      "latest_observation_date": null,
-      "latest_status": null
+      "originator": {
+        "name": "Wikidata",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'WIKIDATA' ON THE OVERVIEW — THE KNOWLEDGE GRAPH AT ITS DATA MODEL; ITS OWN Q-NUMBERS GIVEN, ITS ROLE AS HUB OF THE NAME AUTHORITIES (ISNI, VIAF, ORCID) AND ITS PSEUDONYM PROPERTY NOT CARRIED"
     },
     "wikiwho": {
       "canonical_query": "wikiwho",
@@ -82092,6 +82836,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "wordcraft writers workshop": {
+      "canonical_query": "wordcraft writers workshop",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-01",
+          "status": "'WORDCRAFT WRITERS WORKSHOP' ON THE OVERVIEW — THE WORKSHOP DATED 2022 AND COMPOSED AT ITS GRAIN; A 2026 BACKLASH AGAINST ITS WRITERS ADDED; HOW MUCH OF EACH STORY THE MODEL WROTE NOT CARRIED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "wordcraft-writers-workshop-aio-20261101",
+          "gallery_url": "https://www.alexanarch.org/captures/#wordcraft-writers-workshop-aio-20261101",
+          "record_url": "https://www.alexanarch.org/captures/wordcraft-writers-workshop-aio-20261101/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#wordcraft-writers-workshop-aio-20261101",
+          "details_excerpt": "THE WORKSHOP, SIGNED OUT, 2026-11-01: 'The Wordcraft Writers Workshop was a 2022 research project by Google’s PAIR (People + AI Research) and Magenta teams that explored AI-augmented creative writing.' Overview and setup"
+        }
+      ],
+      "originator": {
+        "name": "Wordcraft Writers Workshop",
+        "relation": "external",
+        "entity_type": "site",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes). Recorded 2026-11-01."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-01",
+      "latest_status": "'WORDCRAFT WRITERS WORKSHOP' ON THE OVERVIEW — THE WORKSHOP DATED 2022 AND COMPOSED AT ITS GRAIN; A 2026 BACKLASH AGAINST ITS WRITERS ADDED; HOW MUCH OF EACH STORY THE MODEL WROTE NOT CARRIED"
     },
     "work provenance record": {
       "canonical_query": "work provenance record",

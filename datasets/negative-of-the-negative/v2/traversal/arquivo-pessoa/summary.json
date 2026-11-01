@@ -1,0 +1,141 @@
+{
+ "row": "arquivo-pessoa",
+ "address": "Arquivo Pessoa",
+ "entity": "Arquivo Pessoa (arquivopessoa.net; 'Arquivo Pessoa: Obra Édita'), the online edition of Fernando Pessoa's published work, 'Obra de Fernando Pessoa', edited by Obra Aberta CRL (2008) under the conception and direction of Leonor Areal from the 1997 edition of Texto Editora and Casa Fernando Pessoa, the database component of the MultiPessoa portal, holding the work under 39 indexed names (orthonym, pseudonyms and heteronyms, joint attributions among them); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/arquivo-pessoa)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "arquivo-pessoa",
+  "address": "Arquivo Pessoa",
+  "entity": "Arquivo Pessoa (arquivopessoa.net; 'Arquivo Pessoa: Obra Édita'), the online edition of Fernando Pessoa's published work, 'Obra de Fernando Pessoa', edited by Obra Aberta CRL (2008) under the conception and direction of Leonor Areal from the 1997 edition of Texto Editora and Casa Fernando Pessoa, the database component of the MultiPessoa portal, holding the work under 39 indexed names (orthonym, pseudonyms and heteronyms, joint attributions among them); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/arquivo-pessoa)",
+  "row_type": "C (a public entity on which the archive bears: an online edition of an author's published work held under the names it bears; an entity of the leesharks.com apparatus authorship census)",
+  "aliases": [
+   {
+    "pattern": "\\bArquivo\\s+Pessoa\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\barquivopessoa(\\.net)?\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bMultiPessoa\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bPessoa Archive\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "the names of Fernando Pessoa's work: the orthonym, the pseudonyms and the heteronyms",
+    "pattern": "\\b(Alberto Caeiro|[ÁA]lvaro de Campos|Ricardo Reis|Bernardo Soares|Bar[ãa]o de Teive|Ant[óo]nio Mora|Alexander Search)\\b",
+    "flags": "",
+    "basis": "field: the author index, the entity's own page (arquivopessoa.net/autores: 'Ortónimo, pseudónimos e heterónimos de Fernando Pessoa', listing Alberto Caeiro, Álvaro de Campos, Ricardo Reis, Bernardo Soares, Barão de Teive, António Mora, Alexander Search among 39 names); card 1 snippet ('1. Poemas de Alberto Caeiro 2. Poesia de Álvaro de Campos 3. Odes de Ricardo Reis 4. Poesia Ortónima de Fernando Pessoa'); card 3 (Art and Soul: 'the intuitive organization (by heteronyms, themes, etc.)'). The census's area for the entity, 'heteronymy', and its question ('under which of the 39 indexed names of Pessoa a published text stands')."
+   },
+   {
+    "term": "digital editions and archives of Fernando Pessoa's work",
+    "pattern": "\\b(Pessoa Digital|pessoadigital|Esp[óo]lio( de Fernando Pessoa)?|Casa Fernando Pessoa|Book of Disquiet Archive|Arquivo LdoD|Pessoa Plural)\\b",
+    "flags": "",
+    "basis": "field: card 3 (Art and Soul, '5 (+1) websites to read and admire the work of Fernando Pessoa': Fernando Pessoa's Legacy at the BNP, the Pessoa Archive, the Book of Disquiet Archive, the Digital Edition of Fernando Pessoa, Modern!sm, the Private Library); the own page /info/ficha ('Edição original: Texto Editora e Casa Fernando Pessoa, 1997'); card 2 (/info: 'os facsimile dos originais do espólio existente na Biblioteca Nacional'). The census's negative tags for the entity ('NOT Pessoa's estate or papers', 'NOT pessoadigital.pt, a separate resource in this census')."
+   }
+  ],
+  "classes_note": "Two classes, each stated by a field source at the locus given and each the census's own area, question or negative tag for the entity: (1) the names of Pessoa's work, which the edition indexes and the cards list (own page /autores; card 1; card 3; census area 'heteronymy'); (2) the digital editions and archives of Pessoa's work beside which card 3 places the entity and from which the census's negative tags distinguish it. The census's anchors, #940 (EA-HETERONYMY-01) and #1722 (AI Calls You Fake), are read at the passages that bear on the entity's kind (pseudonyms and heteronyms, name authorities, the civil bearer, the reduction of names; the existence tax), by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP, Substitutions 6). 'Fernando Pessoa' alone is the author of the work the entity holds and is not an alias of the entity; it is not searched alone. 'Pessoa Archive' is card 3's English name for the entity and is searched case-sensitively; the reading separates it from the BNP's Espólio ('Pessoa's archive') and the trunk.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the three v09 briefs it names; address \"Arquivo Pessoa\" (arquivo-pessoa-aio-20261101, OBS-bb02180fa19e, ADDR-513dbaafff4c), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#69, #666, #667, #668, #669, #940, #982, #984, #1565, #1569, #1570, #1572, #1675, #1711, #1722).",
+  "hop_from": [
+   69,
+   666,
+   667,
+   668,
+   669,
+   940,
+   982,
+   984,
+   1565,
+   1569,
+   1570,
+   1572,
+   1675,
+   1711,
+   1722
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 27,
+  "D_deposits": 11,
+  "R_sentences": 8,
+  "R_deposits": 5,
+  "O_direct": 25,
+  "O_class": 88,
+  "O_deposits": 30,
+  "H_candidates": 144
+ },
+ "per_deposit": {
+  "D": {
+   "666": 1,
+   "667": 1,
+   "668": 4,
+   "669": 5,
+   "761": 1,
+   "982": 5,
+   "984": 5,
+   "1565": 1,
+   "1569": 2,
+   "1570": 1,
+   "1572": 1
+  },
+  "R": {
+   "668": 1,
+   "669": 2,
+   "761": 1,
+   "982": 2,
+   "984": 2
+  },
+  "O": {
+   "69": 4,
+   "71": 2,
+   "78": 3,
+   "96": 1,
+   "167": 1,
+   "170": 1,
+   "261": 1,
+   "482": 1,
+   "666": 5,
+   "667": 5,
+   "668": 15,
+   "669": 13,
+   "693": 1,
+   "761": 3,
+   "794": 1,
+   "982": 17,
+   "984": 17,
+   "996": 1,
+   "1185": 2,
+   "1198": 3,
+   "1560": 1,
+   "1565": 1,
+   "1569": 2,
+   "1570": 1,
+   "1571": 1,
+   "1572": 1,
+   "1656": 1,
+   "1674": 1,
+   "1675": 6,
+   "1684": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "441c7f11bd28ceb9d2cc340713fd58a77efde51ea84d4fdb1f32695d21051b4b",
+  "candidates-R.jsonl": "3fa08e59aa7161f8d30246ad26c1b1a422d41ba13930ab8a7d66ce1c80c25bd6",
+  "candidates-O.jsonl": "a69bec33fe3a6812d72677f53d23a7877ee7359793b3fc90cc2b669b9f371caf",
+  "candidates-H.jsonl": "f950fb970a1f3cf0db5fda0b2111144a740ade4a8e6fc2f9258bc8e89f61eeba"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

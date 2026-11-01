@@ -1,0 +1,133 @@
+{
+ "row": "pessoa-digital",
+ "address": "Pessoa Digital",
+ "entity": "Pessoa Digital (pessoadigital.pt; 'Fernando Pessoa. Projects and Publications', the 'Digital Edition of Fernando Pessoa'), the digital scholarly edition of Fernando Pessoa's editorial projects and publications: his handwritten notes, lists and plans, edited beside the works he published in his lifetime; edited by Ulrike Henny-Krahmer, Pedro Sepúlveda and Jorge Uribe, begun in 2014 with the CCeH (Cologne) and a Lisbon partner, hosted by the DCH; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/pessoa-digital)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "pessoa-digital",
+  "address": "Pessoa Digital",
+  "entity": "Pessoa Digital (pessoadigital.pt; 'Fernando Pessoa. Projects and Publications', the 'Digital Edition of Fernando Pessoa'), the digital scholarly edition of Fernando Pessoa's editorial projects and publications: his handwritten notes, lists and plans, edited beside the works he published in his lifetime; edited by Ulrike Henny-Krahmer, Pedro Sepúlveda and Jorge Uribe, begun in 2014 with the CCeH (Cologne) and a Lisbon partner, hosted by the DCH; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/pessoa-digital)",
+  "row_type": "C (a public entity on which the archive bears: a digital scholarly edition of an author's plans for his work beside his published works; an entity of the leesharks.com apparatus authorship census)",
+  "aliases": [
+   {
+    "pattern": "\\bPessoa\\s+Digital\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bpessoadigital(\\.pt)?\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bDigital Edition of Fernando Pessoa\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bProjects and Publications\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "the names of Fernando Pessoa's work: the orthonym, the pseudonyms and the heteronyms",
+    "pattern": "\\b(Alberto Caeiro|[ÁA]lvaro de Campos|Ricardo Reis|Bernardo Soares|Bar[ãa]o de Teive|Ant[óo]nio Mora|Alexander Search)\\b",
+    "flags": "",
+    "basis": "field: card 1, the CCeH's page (B1: the edition's 'network of persons' and the publication 'Networks of persons and figures in Fernando Pessoa’s publication plans'); Wikipedia (B6: English 'Fernando Pessoa', external links: 'Digital Edition of Fernando Pessoa] and heteronyms'). The census's area for the entity, 'heteronymy', and its question ('the lists and notes in which the names were assigned their works')."
+   },
+   {
+    "term": "Pessoa's plans, lists and projects for his own work (his editorial and publication plans)",
+    "pattern": "\\b(publication plans?|editorial (projects?|plans?)|lists and plans|plans and lists|projetos? editoria(l|is)|planos? (editoria(l|is)|de publica[çc][ãa]o)|projectos? editoria(l|is)|projetos inexecutados|Tábua [Bb]ibliogr[áa]fica)\\b",
+    "flags": "i",
+    "basis": "field: card 1 (B1: 'a digital edition of the editorial projects and publications'; 'Above all, handwritten notes, lists and plans with which Pessoa conceived his work are edited'; 'Networks of persons and figures in Fernando Pessoa’s publication plans'); card 2 (B2: 'Fernando Pessoa. Projects and Publications'; the evening lecture on 'Fernando Pessoa's self-publishing'). The census's record_object and question for the entity."
+   },
+   {
+    "term": "digital editions and archives of Fernando Pessoa's work",
+    "pattern": "\\b(Arquivo Pessoa|arquivopessoa|Esp[óo]lio( de Fernando Pessoa)?|Casa Fernando Pessoa|Estranhar Pessoa|Book of Disquiet Archive|Arquivo LdoD|Pessoa Plural)\\b",
+    "flags": "",
+    "basis": "field: T's body ('the Estranhar Pessoa project ... and the National Library of Portugal collection'); card 1 (B1: 'the Estranhar Pessoa framework project'); Wikipedia (B6: the Fernando Pessoa article's external links list the edition beside Casa Fernando Pessoa, the private library, Pessoa Plural and Project Estranhar Pessoa). The census's negative tag for the entity ('NOT the Arquivo Pessoa (arquivopessoa.net), a separate resource in this census') and its relation 'neighbour' to arquivo-pessoa."
+   }
+  ],
+  "classes_note": "Three classes, each stated by a field source at the locus given and each the census's own area, record object, question, negative tag or relation for the entity: (1) the names of Pessoa's work, which the edition holds in its index and network of persons (B1) and beside which Wikipedia links it ('and heteronyms', B6); (2) Pessoa's plans, lists and projects for his own work, the edition's object (B1, B2; census record_object and question); (3) the digital editions and archives of Pessoa beside which T, card 1 and Wikipedia place the entity and from which the census distinguishes it. The census's anchors, #940 (EA-HETERONYMY-01) and #1722 (AI Calls You Fake), are read at the passages that bear on the entity's kind (pseudonyms and heteronyms, the civil bearer, the distribution of the authorial function, editing at the boundary of heteronymy, the existence tax), by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP, Substitutions 6). 'Fernando Pessoa' alone is the author of the work the entity edits and is not an alias; 'João Pessoa' is the homonym's city and is not searched. 'Projects and Publications' is matched case-sensitively so that the common phrase in lower case does not enter.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the three v09 briefs it names; address \"Pessoa Digital\" (pessoa-digital-aio-20261101, OBS-b695f94738c8, ADDR-5cb4ce2b69a1), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#69, #666, #667, #668, #669, #940, #982, #984, #1722).",
+  "hop_from": [
+   69,
+   666,
+   667,
+   668,
+   669,
+   940,
+   982,
+   984,
+   1722
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 13,
+  "D_deposits": 4,
+  "R_sentences": 4,
+  "R_deposits": 4,
+  "O_direct": 10,
+  "O_class": 104,
+  "O_deposits": 30,
+  "H_candidates": 70
+ },
+ "per_deposit": {
+  "D": {
+   "668": 4,
+   "669": 1,
+   "982": 4,
+   "984": 4
+  },
+  "R": {
+   "668": 1,
+   "669": 1,
+   "982": 1,
+   "984": 1
+  },
+  "O": {
+   "69": 5,
+   "71": 2,
+   "78": 3,
+   "96": 1,
+   "167": 1,
+   "170": 1,
+   "261": 1,
+   "482": 1,
+   "666": 5,
+   "667": 5,
+   "668": 15,
+   "669": 13,
+   "693": 1,
+   "761": 3,
+   "794": 1,
+   "982": 17,
+   "984": 17,
+   "996": 1,
+   "1185": 2,
+   "1198": 3,
+   "1560": 1,
+   "1565": 1,
+   "1569": 2,
+   "1570": 1,
+   "1571": 1,
+   "1572": 1,
+   "1656": 1,
+   "1674": 1,
+   "1675": 6,
+   "1684": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "3ceacdeecbfb8c499c4ba49576c1e77f765b7a60e6ace234cd513cd63db34868",
+  "candidates-R.jsonl": "b09a39b7641c0efaa965307f8cc29e675556103f93ae4a46ca5946bfefe637cf",
+  "candidates-O.jsonl": "2617ce218a092cea0af5003c33df01c53da4f482dec5bc82bd3141b18db5db1e",
+  "candidates-H.jsonl": "74843e85980ee6d0a7c7bc3130138ffacb57f1a0ad0c04c2f6a90a3717db10ec"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

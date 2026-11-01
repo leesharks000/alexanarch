@@ -1,0 +1,127 @@
+{
+ "row": "eclipse",
+ "address": "Eclipse Archive",
+ "entity": "Eclipse (eclipsearchive.org): an online archive whose home page carries an author index, a title index and a new-to-the-archive notice, with Founding Editor Craig Dworkin and Editor Danny Snelson; in Wikipedia's account (the name 'Eclipse Archive' redirects to the section 'Eclipse' of the article on Craig Dworkin) an online archive of digital facsimiles of radical small-press writing from the last quarter of the 20th century, started in 2002 and later publishing selected new and born-digital works; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/eclipse). Distinct from the other entities of the name at the address: the Eclipse Foundation's project archives, the Eclipse Archives apparel brand, NASA's and the High Altitude Observatory's Historical Eclipse Image Archive, and Eclipse IDE archive plugins",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "eclipse",
+  "address": "Eclipse Archive",
+  "entity": "Eclipse (eclipsearchive.org): an online archive whose home page carries an author index, a title index and a new-to-the-archive notice, with Founding Editor Craig Dworkin and Editor Danny Snelson; in Wikipedia's account (the name 'Eclipse Archive' redirects to the section 'Eclipse' of the article on Craig Dworkin) an online archive of digital facsimiles of radical small-press writing from the last quarter of the 20th century, started in 2002 and later publishing selected new and born-digital works; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/eclipse). Distinct from the other entities of the name at the address: the Eclipse Foundation's project archives, the Eclipse Archives apparel brand, NASA's and the High Altitude Observatory's Historical Eclipse Image Archive, and Eclipse IDE archive plugins",
+  "row_type": "C (a public entity on which the archive bears: an online archive of facsimiles of small-press and experimental writing; an entity of the leesharks.com apparatus authorship census; at the name, one sense of five)",
+  "aliases": [
+   {
+    "pattern": "\\bEclipse ?Archive\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\beclipsearchive(\\.org)?\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "archives of avant-garde, experimental and small-press writing",
+    "pattern": "\\b(avant-garde (archive|materials|librar\\w+|writing)|archives? of (the )?(avant-garde|experimental (writing|poetry|literature|work)|small[- ]press)|small[- ]press (writing|archive|publications?|poetry)|experimental (writing|poetry) archive)\\b",
+    "flags": "i",
+    "basis": "field: B12 (Wikipedia, Craig Dworkin, §Eclipse: 'an online archive focusing on digital facsimiles of radical small-press writing from the last quarter of the 20th century'; 'access to avant-garde works that were no longer available in print from their original publishers'); the card B1's text (eclipsearchive.org: 'NEW TO THE ARCHIVE: The first issue of the fugitive Gnome Baker magazine'). The census's area for the entity, 'avant-garde-archives' ('Avant-garde and experimental archives: the record of experimental writing, sound, visual and procedural work, and of its small presses', census.json areas; rows[slug == 'eclipse'].areas)."
+   },
+   {
+    "term": "the facsimile: holding the printed object as an object (scans of every page)",
+    "pattern": "\\b(facsimiles?|facture|material specificity|scans? of every page)\\b",
+    "flags": "i",
+    "basis": "field: B12 ('digital facsimiles'; 'high-resolution scans of every page of its included texts'; 'conserve ... the facture and material specificity of the book or printed document as an object'). The census's evidence_kind 'facsimile' and method (rows[slug == 'eclipse'].evidence_kind, .method)."
+   },
+   {
+    "term": "distributed credit in a catalogue: co-authors, editors and translators each holding a title",
+    "pattern": "\\b(ordinary (translation|editing)|co-?authors? (listed|credited|named)|credited (to|under) (every|each) (collaborator|co-?author)|distributed (authorship|authorial function|credit)|collective authorship)\\b",
+    "flags": "i",
+    "basis": "field: B10 (the author index: 'LEGEND [with Charles Bernstein, Ray DiPalma, Steve McCaffery, and Ron Silliman]' under Bruce Andrews and under each co-author; 'L=A=N=G=U=A=G=E [Editor, with Charles Bernstein]'; 'Rosmarie Waldrop (trans.) The Dilemma of Being High and Dry'). The census's area 'collective-authorship', its question and record.function ('distributed across the index: a co-written title appears under every collaborator, an editor carries [Editor], a translator (trans.)', rows[slug == 'eclipse'].areas, .question, .record.function)."
+   },
+   {
+    "term": "name-holding in an aggregator (under what name an archive holds a work: pseudonym, heteronym, collective or civil name)",
+    "pattern": "\\b(civil[- ]name (reduction|attribution|regime|concentration)|name authorit\\w+|attribution regimes?|under what name|reduction to (a |the )?civil identity)\\b",
+    "flags": "i",
+    "basis": "archive: the census's organizing question (census.json organizing_question) and its record.name for the entity ('under the author name in the index as printed (entries include P. Inman, Sandra and Ben Doller, T. R. Uthco); the saved sources state no policy on pseudonyms, heteronyms or collective names', rows[slug == 'eclipse'].record.name); the anchor #940 (EA-HETERONYMY-01). The field states no naming policy."
+   }
+  ],
+  "classes_note": "Four classes, each sourced by locus before the pass: (1) the field's own kind for the entity, an archive of avant-garde small-press writing (B12, B1; census area avant-garde-archives); (2) the facsimile, the field's own account of its method (B12; census evidence_kind and method); (3) distributed credit, the author index's own practice (B10; census area collective-authorship, question, record.function); (4) name-holding, the census's question, whose membership is the archive's (the census record and its anchor #940), the field stating no naming policy. The bare word 'Eclipse' is no alias: it names the IDE, solar eclipses and other uses throughout the archive. The founding editor's name is no alias either: the archive's mentions of Craig Dworkin concern his conceptual writing and his books (No Medium, Parse), and enter only where a sentence says something of Eclipse or of its classes. #1722 is read at the passages on the small and the independent; the field calls Eclipse neither, so no class is drawn from #1722.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 AGGREGATOR, LABOR and LEFT briefs; address 'Eclipse Archive' (eclipse-archive-aio-20261101, OBS-1556d07f81b8, ADDR-b3c7e4e4fcdf), Google AI Overview (expanded), signed out, incognito. No deposit names Eclipse, eclipsearchive.org or 'Eclipse Archive' (grep over data/texts, 2026-11-01). Census anchors #940 and #1722 read at the passages bearing on the entity's kinds (BRIEF-NEW-ROW-AUTHORSHIP §6). Second pass: one citation hop from the deposits admitted by reading.",
+  "hop_from": [
+   940
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 86,
+  "O_deposits": 44,
+  "H_candidates": 5
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "38": 3,
+   "40": 2,
+   "43": 1,
+   "98": 1,
+   "162": 1,
+   "163": 1,
+   "269": 1,
+   "288": 4,
+   "337": 1,
+   "345": 1,
+   "348": 1,
+   "349": 1,
+   "356": 2,
+   "375": 1,
+   "499": 1,
+   "500": 2,
+   "516": 1,
+   "584": 3,
+   "590": 2,
+   "592": 1,
+   "645": 1,
+   "666": 1,
+   "731": 1,
+   "845": 1,
+   "859": 1,
+   "921": 5,
+   "940": 16,
+   "943": 2,
+   "950": 5,
+   "1102": 4,
+   "1178": 1,
+   "1202": 1,
+   "1208": 1,
+   "1218": 1,
+   "1229": 1,
+   "1409": 2,
+   "1442": 1,
+   "1443": 4,
+   "1550": 1,
+   "1689": 1,
+   "1699": 1,
+   "1707": 1,
+   "1709": 1,
+   "1711": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "835e075de6592f22f1abfd4c6273a906d4da6efb7175303be0960240d0bb580f",
+  "candidates-H.jsonl": "018331ffaef6c7817abe152588f98c5d29f85f71df9abbc169c3192512b686bf"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

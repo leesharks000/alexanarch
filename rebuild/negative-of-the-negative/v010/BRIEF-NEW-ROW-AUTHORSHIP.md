@@ -1,0 +1,58 @@
+# Brief: a new /non row for one aggregator of the leesharks.com authorship census, under EA-NEGONT-02 v0.10 (#1726)
+
+These are the first rows composed under v0.10. Read rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-AGGREGATOR.md first and in full, then rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LABOR.md and rebuild/negative-of-the-negative/v09/BRIEF-NEW-ROW-LEFT.md. They govern this row (build steps, validation, final message, the shapes the page builder needs) except where v0.10 and this brief change them. Repository /home/claude/alexanarch. Do not run git. Never use pkill. Use python3.12 for scripts. Create only new files at the paths named for YOUR row. Do not edit panel.json, existing rows or ledgers; the session seats the panel entry, mints the AXN and builds the pages.
+
+## The specification
+Read v0.10 itself: data/texts/AXN-0B79-text.md (#1726), whole, and at least §0.3, §3.1(a), §4.5, §4.12, §4.13, §8.2 and §11 closely. Where the v0.9 briefs say otherwise, v0.10 governs:
+1. **Two pools (§0.3, §3.1(a)).** The field is kept in two pools, marked in field.json by origin and by pool. B_D, the disclosed pool: every card on T's rail and every source T's body names ("card", "body_named"). B_R, the reference pool: the entity's own pages, its Wikipedia article (or the record of its absence or redirect), and third-party sources the census read ("own_page", "wikipedia", "census_third_party"). A source in both is carried once, in B_D. The first question, T against L_F(B_D), uses B_D alone; "available and not composed" is a finding of B_D only. The second, L_F(B) against L_A(B ∪ A), uses both pools. Yes: every row is built against the entity's Wikipedia article where one exists (the operator's ruling of 2026-10-29, "as against their wikipedia articles if they exist, their own pages, etc."), in B_R.
+2. **Attribution beneath (§4.5).** The knowledge object is prose without provenance in its sentences. Each sentence's sources stand beneath it in its "claims" list (claim ids, each with locus and modality in the ledgers). A source is named in a sentence only where who holds the claim is part of what is said (an operator's self-description, a dispute between sources, a reading held by the archive or the Capture Registry). Modality stays in the grammar.
+3. **Length and form (§4.12).** No sentence quota. Natural sentences under descriptive subheadings (each sentence's "sense"; consecutive sentences of one paragraph share a "para"). Coverage is complete over the composed parts. No distinction is cut to shorten the article; what does not belong in the main account goes to the reception analysis or the apparatus. P, the compression, keeps its bound: body ≤ 350 words (§4, provisional §10.4), the open block outside it.
+4. **The article first (§4.13).** The page builder places the KO first; write the KO as the final article form of the entity.
+5. **Derived objects (§8.2).** Write the row's "derivatives": {"kernel": {"status": "composer-written", "derived_from": "the current composition, written by its composer under the brief", "note": "§8.2 derives the kernel mechanically from the frozen plan; this one was written by the composer, mechanical derivation pending."}, "delta": {"status": "current", "derived_from": "the current composition"}}. Name the composition object "composition" (with source, composer, defining_material_read, spec "EA-NEGONT-02 v0.10 (#1726)") and also write it as "composition_v09" with the same content, which the page builder reads.
+
+## What these rows are
+The leesharks.com apparatus authorship census (leesharks.com/apparatus/aggregators/, editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1) formalizes the aggregators that hold authorship as entities. Its question: "How is authorship made, named, distributed, attributed and sustained across persons, personas, collectives and machine participation, and what is lost when those relations are collapsed?" Its admission rule: a row is an aggregator, a resource that gathers and holds many other works or records and says what it holds. Anchors: #940 (EA-HETERONYMY-01, data/texts/AXN-03B8-text.md) and #1722 (AI Calls You Fake, data/texts/AXN-0B2A-text.md). Each record keeps the resource's own terms; ls_reading is the archive's reading, ledgered as such; host_relation states what the resource is to the census. On 2026-11-01 (01:59 EDT) the operator ran each census name and the captures were seated in the Capture Registry the same night. Each row is type C unless the reading says otherwise.
+
+## Substitutions
+1. **The record.** The census record: /home/claude/fleet/leesharks.com/data/authorship-census/census.json, rows[slug == CENSUS] (fields, evidence {src, basis, quote}, record {keeps, name, holder, function}, ls_reading, host_relation, record_type, question, relations, negative_tags, unchecked; organizing_question, anchor, areas, field, admission_rule and schema_note at the top). Row files: data/authorship-census/rows/CENSUS.py. Rendered at https://www.leesharks.com/apparatus/aggregators/CENSUS. Ledger ids "LS-NN", dated 2026-11-01, editor Lee Sharks; locus = the field name. The NEXT and Output are also rows of the traininglayerliterature.org layer census (/home/claude/fleet/traininglayerliterature-org/data/layer-census/census.json, rows the-next and output-anthology; tll_reading, record {in_layer, name, readback, makes}; rendered at https://www.traininglayerliterature.org/aggregators/CENSUS): for those two rows ledger that record too, as "TLL-NN", and the one /non row serves both censuses.
+2. **Own pages already saved.** /home/claude/fleet/leesharks.com/data/authorship-census/sources/<CENSUS>--<id>.html.gz and .txt, with sources/manifest.json. Copy into your intake folder as Bn.html (gunzipped) and Bn.txt with the manifest's url, sha256 and read date. Unread sources (403, a bot check, a script-rendered page, an empty body) are recorded so.
+3. **Fetching.** Fetch cards and Wikipedia with the agent string "Mozilla/5.0 (compatible; leesharks-authorship-census)". A refusal is recorded as unreachable with what was tried; do not retry it with another agent string or by any other route around it.
+4. **T.** One transcript per row (slug in the table). Surface Google AI Overview (expanded), except Jacket2: Google AI Mode by the operator's note in the paste ("no popup, ai mode:"). Auth: signed out, incognito. Epoch 2026-11-01; intake folder datasets/negative-of-the-negative/v2/intake/ROW-20261101/.
+5. **Capture records.** The CAP- claims are the Capture Registry's findings and analysis for your capture (dated 2026-11-01), verbatim from data/EA-WG-CAPTURES-01.json; surface url https://www.alexanarch.org/captures/<slug>/.
+6. **The archive's work.** Admission to A is by reading (§3.4). #940 and #1722 are the census's anchors and are read at the passages that bear on the entity or its kind (name authorities, pseudonyms and heteronyms, collective authorship, machine participation, archives of experimental writing, certification of human authorship, the existence tax). Other deposits enter only where they say something of the entity, by locus. Where the archive's own record of the entity is the census row, it is the archive's claim; where the archive has a deposit about the entity, read it.
+7. **Homonyms.** Where T composes another entity of the same name (a reader at intake will have marked the capture's reached kind "substitute"), the field B_D is the cards as they are, each recorded with its sense; the entity's own pages and Wikipedia stand in B_R; the delta records the substitution; homonyms stay distinct entities in the disambiguation.
+
+## Prose
+No "not X but Y" or "X, not Y" constructions; no "rather than" or "instead of" outside quotations; third person; quotations verbatim; no hard line breaks inside strings; analyse mechanics, never motive; no gendered generics.
+
+## Final message
+As the AGGREGATOR brief says, plus: the panel entry fields the session should seat (entity, name, type, homonym_names, homonym_basis, ontology {composition, E_F, rho}); the counts by pool (B_D, B_R); any census field a fetched source contradicts or shows out of date; any capture finding your field ledger shows wrong (report; do not fix). Run python3.12 scripts/build_non.py --check only (it will report your row's pages missing until the session builds; that is expected).
+
+## The rows (the coordinator names ONE in your task)
+Pessoa Digital's own pages refused automated requests (http 418); its census row rests on the Cologne Center for eHumanities' project page (pessoa-digital--cceh), supplied by the operator and fetched by the census.
+| ROW | entity | CENSUS | capture slug (T) | AXN | surface |
+|---|---|---|---|---|---|
+| arquivo-pessoa | Arquivo Pessoa | arquivo-pessoa | arquivo-pessoa-aio-20261101 | 0B7C | Google AI Overview |
+| authors-guild-human-authored | Human Authored Certification | authors-guild-human-authored | authors-guild-human-authored-certification-aio-20261101 | 0B7D | Google AI Overview |
+| chatgpt-eating-the-world | Chat GPT Is Eating the World | chatgpt-eating-the-world | chat-gpt-is-eating-the-world-aio-20261101 | 0B8F | Google AI Overview |
+| coauthor | CoAuthor | coauthor | coauthor-dataset-aio-20261101 | 0B7E | Google AI Overview |
+| copyright-office-ai | Copyright and Artificial Intelligence | copyright-office-ai | u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101 | 0B8A | Google AI Overview |
+| creative-ai-lab-database | Creative AI Tools & Resources Database (Creative AI Lab) | creative-ai-lab-database | creative-ai-lab-database-aio-20261101 | 0B7F | Google AI Overview |
+| international-dada-archive | International Dada Archive | dada-iowa | international-dada-archive-aio-20261101 | 0B83 | Google AI Overview |
+| eclipse | Eclipse | eclipse | eclipse-archive-aio-20261101 | 0B91 | Google AI Overview |
+| electronic-literature-lab | Electronic Literature Lab (ELL) | electronic-literature-lab | electronic-literature-lab-aio-20261101 | 0B80 | Google AI Overview |
+| electronic-poetry-center | Electronic Poetry Center | epc | electronic-poetry-center-aio-20261101 | 0B81 | Google AI Overview |
+| dail | DAIL – The Database of AI Litigation | gwu-dail | database-of-ai-litigation-aio-20261101 | 0B90 | Google AI Overview |
+| in2writing | Workshop on Intelligent and Interactive Writing Assistants (In2Writing) | in2writing | in2writing-workshop-aio-20261101 | 0B82 | Google AI Overview |
+| isni | ISNI (International Standard Name Identifier) | isni | isni-aio-20261101 | 0B84 | Google AI Overview |
+| jacket2 | Jacket2 | jacket2 | jacket2-aimode-20261101 | 0B85 | Google AI Mode |
+| orcid | ORCID | orcid-names | orcid-aio-20261101 | 0B86 | Google AI Overview |
+| output-anthology | Output: An Anthology of Computer-Generated Text, 1953–2023 | output-anthology | output-an-anthology-of-computer-generated-text-aio-20261101 | 0B87 | Google AI Overview |
+| pennsound | PennSound | pennsound | pennsound-aio-20261101 | 0B88 | Google AI Overview |
+| the-next | The NEXT | the-next | the-next-electronic-literature-organization-aio-20261101 | 0B89 | Google AI Overview |
+| ubuweb | UbuWeb | ubuweb | ubuweb-aio-20261101 | 0B8B | Google AI Overview |
+| viaf | Virtual International Authority File (VIAF) | viaf | viaf-aio-20261101 | 0B8C | Google AI Overview |
+| wikidata | Wikidata | wikidata | wikidata-aio-20261101 | 0B8D | Google AI Overview |
+| pessoa-digital | Pessoa Digital | pessoa-digital | pessoa-digital-aio-20261101 | 0B92 | Google AI Overview |
+| wordcraft | Wordcraft Writers Workshop | wordcraft | wordcraft-writers-workshop-aio-20261101 | 0B8E | Google AI Overview |
+

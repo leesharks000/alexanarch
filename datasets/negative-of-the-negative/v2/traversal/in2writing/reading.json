@@ -1,0 +1,677 @@
+{
+ "row": "in2writing",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the In2Writing workshop series with the entity named (no deposit names it: the string pass returns no D sentence); R, a relation the archive states between the entity and an archive object (none); O, an archive category applied to the entity or to a class the field and the census source for it ((1) writing assistants and human-AI co-writing: B1, B3, B7, B8, census area machine-co-authorship; (2) the judgement of whether a text was written with AI: B8, census area reception-research and ls_reading). The census's anchors #940 and #1722 read at the passages that bear on the entity's kind, by BRIEF-NEW-ROW-AUTHORSHIP Substitutions 6.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 161,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Reverse Turing Test: its distinction of AI-text detection (purely AI-generated against purely human-written) from its Mediation Index (human writing with and without AI mediation), and its conclusion that three lines of evidence on AI-assisted writing suggest the human/synthetic binary is no longer reliable: archive categories applied to class (1), AI-assisted writing, and class (2), the judgement of whether a text was written with AI",
+   "claims": [
+    "O161-01",
+    "O161-02"
+   ],
+   "cands": [
+    "O0006",
+    "O0007",
+    "O0008"
+   ]
+  },
+  {
+   "dep": 1577,
+   "strata": [
+    "O"
+   ],
+   "reason": "The erratum to #856 (found as an O candidate, and on the hop from #161 and #856): it lowers the evidence status of the habituation ground to \"a hypothesis with a specified test, not a result\" and states the published co-writing result at its limit; carried under §4.4 N_c as evidence lowering force",
+   "claims": [
+    "O1577-01",
+    "O1577-02"
+   ],
+   "cands": [
+    "O0055"
+   ]
+  },
+  {
+   "dep": 855,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Wolf Boy and the Language Model: the AI-habituated writer as a substrate on the path of capacity collapse, an archive category (substrate-agnostic capacity loss) applied to class (1); its paragraph citing Doshi and Hauser and Padmakumar and He is the string candidate; read with #1577's limit",
+   "claims": [
+    "O855-01"
+   ],
+   "cands": [
+    "O0028",
+    "O0029"
+   ]
+  },
+  {
+   "dep": 856,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Pristine Fallacy: the archive's named category, classification by the writer's identity (human or machine) without the conditions of production, applied to the label \"human-written\", class (2)",
+   "claims": [
+    "O856-01"
+   ],
+   "cands": [
+    "O0030",
+    "O0031",
+    "O0032",
+    "O0033",
+    "O0034"
+   ]
+  },
+  {
+   "dep": 666,
+   "strata": [
+    "O"
+   ],
+   "reason": "The New Human (EA-PKG-03): the binary \"human-written\" versus \"AI-generated\" elides structured collaborative practice; HPT's cross-substrate heteronymic authorship as a provenance structure outside the binary: classes (1) and (2)",
+   "claims": [
+    "O666-01"
+   ],
+   "cands": [
+    "O0020"
+   ]
+  },
+  {
+   "dep": 186,
+   "strata": [
+    "O"
+   ],
+   "reason": "Who Is Writing for the Machines? (field survey): writing with AI, the machine as collaborator, one of four practices: an archive category applied to class (1)",
+   "claims": [
+    "O186-01"
+   ],
+   "cands": [
+    "O0010"
+   ]
+  },
+  {
+   "dep": 941,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-PROVENANCE-METADATA-01 v0.1: linguistic mediation as one AI-mediation type among many in discussions of AI-assisted writing: an archive category applied to class (1)",
+   "claims": [
+    "O941-01"
+   ],
+   "cands": [
+    "O0036"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's first anchor, read at the passages bearing on the entity's kind (machine participation in authorship, name authorities): the metadata attributing augmented-cognition outputs to human authorship attaches to legal names (§1), and machine assistance outside a named witness role is excluded from heteronymy (§6); no string candidate: the classes' patterns do not occur in it",
+   "claims": [
+    "O940-01",
+    "O940-02"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1540,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Certified Center: a journal's AI-authorship policy gives the question machine-generated? to a classifier; under detector enforcement \"100% human\" becomes the most machine-determined property: the archive's categories (Retroactive Classifier Standing, the inversion) applied to class (2), the judgement of whether a text was written with AI, by machine readers",
+   "claims": [
+    "O1540-01",
+    "O1540-02"
+   ],
+   "cands": [
+    "O0050",
+    "O0051",
+    "O0052",
+    "O0053"
+   ]
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Calls You Fake, the census's second anchor, read at Part One, the four questions and the swap, which the census record's ls_reading names as the question the 2022 reader study meets (\"Its 2022 reader study meets #1722's question directly\"); the composer applies the category to no claim of the field; no string candidate",
+   "claims": [
+    "O1722-01",
+    "O1722-02"
+   ],
+   "cands": []
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/in2writing-workshop-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, headline and PER note for the entity's capture (OBS-e6d2b6473f29, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/in2writing (source: /home/claude/fleet/leesharks.com/data/authorship-census/census.json rows[slug == 'in2writing'], organizing_question, admission_rule, anchor, areas, schema_note; rows/in2writing.py)",
+   "reason": "the leesharks.com apparatus authorship census record of the entity (editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1): its fields with their basis; where a field restates a source ledgered in B (B5, B7, B8) it is one lineage with that source; its ls_reading is the archive's reading and is ledgered as such (LS-25)",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    87
+   ],
+   "reason": "its governance rule for AI-generated text entering its own ledger: the archive's practice, no claim on the class",
+   "cands": [
+    "O0001"
+   ]
+  },
+  {
+   "dep": [
+    107
+   ],
+   "reason": "a bibliographic entry (GPT-wiki-intro dataset)",
+   "cands": [
+    "O0002"
+   ]
+  },
+  {
+   "dep": [
+    110
+   ],
+   "reason": "a watermark detection principle for AI-generated text: a measurement claim on synthetic text, none on writing assistants or reader judgement",
+   "cands": [
+    "O0003"
+   ]
+  },
+  {
+   "dep": [
+    127
+   ],
+   "reason": "a watermark embedding note",
+   "cands": [
+    "O0004"
+   ]
+  },
+  {
+   "dep": [
+    137
+   ],
+   "reason": "the Semantic Deviation Principle's definition; the class term in passing",
+   "cands": [
+    "O0005"
+   ]
+  },
+  {
+   "dep": [
+    170
+   ],
+   "reason": "a summarizer's listing of co-written papers (a capture text)",
+   "cands": [
+    "O0009"
+   ]
+  },
+  {
+   "dep": [
+    199
+   ],
+   "reason": "model collapse in code (human-written code as a corpus term)",
+   "cands": [
+    "O0011",
+    "O0012"
+   ]
+  },
+  {
+   "dep": [
+    249
+   ],
+   "reason": "a poem's metadata frame",
+   "cands": [
+    "O0013",
+    "O0014"
+   ]
+  },
+  {
+   "dep": [
+    400
+   ],
+   "reason": "a term distinction (prompt engineering, SEO writing) in passing",
+   "cands": [
+    "O0015"
+   ]
+  },
+  {
+   "dep": [
+    459
+   ],
+   "reason": "\"The Rose Problem\": a reported argument in passing",
+   "cands": [
+    "O0016"
+   ]
+  },
+  {
+   "dep": [
+    498
+   ],
+   "reason": "\"This is not 'AI-assisted writing.'\": a distinction of the deposit's own act from the class, no claim on the class",
+   "cands": [
+    "O0017"
+   ]
+  },
+  {
+   "dep": [
+    499
+   ],
+   "reason": "as #498",
+   "cands": [
+    "O0018"
+   ]
+  },
+  {
+   "dep": [
+    550
+   ],
+   "reason": "a statistic on top-ranking search results (Graphite) in passing",
+   "cands": [
+    "O0019"
+   ]
+  },
+  {
+   "dep": [
+    684
+   ],
+   "reason": "AI-generated pull requests: code, no claim on writing assistants",
+   "cands": [
+    "O0021"
+   ]
+  },
+  {
+   "dep": [
+    729
+   ],
+   "reason": "a bibliographic entry (IUI '26) in passing",
+   "cands": [
+    "O0022"
+   ]
+  },
+  {
+   "dep": [
+    736
+   ],
+   "reason": "a query list",
+   "cands": [
+    "O0023"
+   ]
+  },
+  {
+   "dep": [
+    819
+   ],
+   "reason": "a reading of Guillory; the class term in passing",
+   "cands": [
+    "O0024"
+   ]
+  },
+  {
+   "dep": [
+    854
+   ],
+   "reason": "one lineage with #856 (Release 4 of Sémantique Potentielle restates the Pristine Fallacy); S4: adds nothing to #856's lineage",
+   "cands": [
+    "O0025",
+    "O0026",
+    "O0027"
+   ]
+  },
+  {
+   "dep": [
+    857
+   ],
+   "reason": "Five Substrates: human-written data as corrective, in passing",
+   "cands": [
+    "O0035"
+   ]
+  },
+  {
+   "dep": [
+    1023
+   ],
+   "reason": "one lineage with #199 (model collapse in code)",
+   "cands": [
+    "O0037",
+    "O0038"
+   ]
+  },
+  {
+   "dep": [
+    1081
+   ],
+   "reason": "a disclosure-phrase panel (named-model disclosure verbs): a measurement design for disclosure, no claim on the class beyond the phrases",
+   "cands": [
+    "O0039"
+   ]
+  },
+  {
+   "dep": [
+    1107
+   ],
+   "reason": "as #498",
+   "cands": [
+    "O0040"
+   ]
+  },
+  {
+   "dep": [
+    1232
+   ],
+   "reason": "one lineage with #856 (a later release of the Pristine Fallacy block); S4",
+   "cands": [
+    "O0041",
+    "O0042",
+    "O0043"
+   ]
+  },
+  {
+   "dep": [
+    1317
+   ],
+   "reason": "as #459",
+   "cands": [
+    "O0044"
+   ]
+  },
+  {
+   "dep": [
+    1326
+   ],
+   "reason": "as #498",
+   "cands": [
+    "O0045"
+   ]
+  },
+  {
+   "dep": [
+    1337
+   ],
+   "reason": "a correction table on the archive's own works",
+   "cands": [
+    "O0046"
+   ]
+  },
+  {
+   "dep": [
+    1369
+   ],
+   "reason": "as #729",
+   "cands": [
+    "O0047"
+   ]
+  },
+  {
+   "dep": [
+    1397
+   ],
+   "reason": "a capture-registry export",
+   "cands": [
+    "O0048"
+   ]
+  },
+  {
+   "dep": [
+    1441
+   ],
+   "reason": "a problem statement on model collapse in passing",
+   "cands": [
+    "O0049"
+   ]
+  },
+  {
+   "dep": [
+    1573
+   ],
+   "reason": "a human-written control in an experiment's design",
+   "cands": [
+    "O0054"
+   ]
+  },
+  {
+   "dep": [
+    1611
+   ],
+   "reason": "EA-NEGONT-01: the pristine fallacy restated (one lineage with #856) and model collapse basins; S4",
+   "cands": [
+    "O0056",
+    "O0057"
+   ]
+  },
+  {
+   "dep": [
+    1643
+   ],
+   "reason": "the registry's answers as written by AI systems: a provenance statement on the registry, no claim on the class",
+   "cands": [
+    "O0058",
+    "O0059"
+   ]
+  },
+  {
+   "dep": [
+    1678
+   ],
+   "reason": "a negative definition of Alexanarch",
+   "cands": [
+    "O0060"
+   ]
+  },
+  {
+   "dep": [
+    1680
+   ],
+   "reason": "as #1678",
+   "cands": [
+    "O0061"
+   ]
+  },
+  {
+   "dep": [
+    1684
+   ],
+   "reason": "a corpus table",
+   "cands": [
+    "O0062"
+   ]
+  },
+  {
+   "dep": [
+    7,
+    163,
+    166,
+    167,
+    187,
+    188,
+    191,
+    194,
+    197,
+    198,
+    210,
+    341,
+    345,
+    349,
+    482,
+    524,
+    561,
+    643,
+    739,
+    781,
+    790,
+    791,
+    825,
+    828,
+    857,
+    937,
+    939,
+    942,
+    943,
+    944,
+    945,
+    946,
+    1023,
+    1068,
+    1087,
+    1089,
+    1107,
+    1127,
+    1232,
+    1384,
+    1386,
+    1413,
+    1422,
+    1434,
+    1443,
+    1523,
+    1543,
+    1554,
+    1556,
+    1611,
+    1630,
+    1643,
+    1664,
+    1665,
+    1671,
+    1684,
+    1690,
+    1714,
+    1717,
+    1721,
+    1723,
+    1724,
+    1725,
+    1726
+   ],
+   "reason": "hop candidates (one citation hop forward and back from #161, #186, #666, #855, #856, #940, #941, #1540, #1577, #1722): read at their titles, abstracts and any class-term sentence (those with one are the string candidates above); none makes a claim on the workshop series, on writing assistants and human-AI co-writing, or on the judgement of whether a text was written with AI; #186 and #855 were found both by the string pass and the hop and are admitted above",
+   "cands": [
+    "H0001",
+    "H0002",
+    "H0003",
+    "H0004",
+    "H0006",
+    "H0007",
+    "H0008",
+    "H0009",
+    "H0010",
+    "H0011",
+    "H0012",
+    "H0013",
+    "H0014",
+    "H0015",
+    "H0016",
+    "H0017",
+    "H0018",
+    "H0019",
+    "H0020",
+    "H0021",
+    "H0022",
+    "H0023",
+    "H0024",
+    "H0025",
+    "H0027",
+    "H0028",
+    "H0029",
+    "H0030",
+    "H0031",
+    "H0032",
+    "H0033",
+    "H0034",
+    "H0035",
+    "H0036",
+    "H0037",
+    "H0038",
+    "H0039",
+    "H0040",
+    "H0041",
+    "H0042",
+    "H0043",
+    "H0044",
+    "H0045",
+    "H0046",
+    "H0047",
+    "H0048",
+    "H0049",
+    "H0050",
+    "H0051",
+    "H0052",
+    "H0053",
+    "H0054",
+    "H0055",
+    "H0056",
+    "H0057",
+    "H0058",
+    "H0059",
+    "H0060",
+    "H0061",
+    "H0062",
+    "H0063",
+    "H0064",
+    "H0065",
+    "H0066"
+   ]
+  }
+ ],
+ "counts": {
+  "O_candidates": 62,
+  "O_deposits": 43,
+  "H_candidates": 66,
+  "D": 0,
+  "R": 0,
+  "admitted_deposits": 10,
+  "admitted_claims": 15
+ }
+}

@@ -1,0 +1,1349 @@
+{
+ "row": "eclipse",
+ "address": "Eclipse Archive",
+ "addresses": [
+  "Eclipse Archive"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline findings, stated limits; quotes verbatim from the saved page texts or, for a card whose page does not carry it, the card's snippet (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); 43/43 verified by script",
+ "B_note": "The field B in two pools (v0.10 §0.3, §3.1(a)). B_D, the disclosed pool: the eight cards on T's rail (B1–B8). B1 is the entity's home page (also a census own page, carried once in B_D); B2–B8 are other entities of the name (the apparel brand, the HAO/NASA image archive, the Eclipse Foundation's archives, two Marketplace plugins), in B_D as the cards are, each recorded with its sense and its kernel ledgered (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7). B_R, the reference pool: the entity's own pages (B9 the Editor page, B10 the author index, B11 the About page, HTTP 404, unread) and Wikipedia (B12: 'Eclipse Archive' redirects to the section 'Eclipse' of the article on Craig Dworkin; the 'Eclipse (disambiguation)' page), none surfaced by T. No census third-party source other than Wikipedia.",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8"
+  ],
+  "B_R": [
+   "B9",
+   "B10",
+   "B11",
+   "B12"
+  ]
+ },
+ "lineage_note": "Lineages: what it is (B1, B9, B12); origin, purpose and name (B12); holdings and method (B1, B10, B12); the author index (B10); names as printed (B10); what its own pages leave unstated (B11); the encyclopedia and the name (B12); the other entities of the name (B2–B8). The census's operator, kind, unit, record_object, record.keeps, record.name, record.holder, method, period, holdings, stated_limits, lifecycle, founded, negative_tags[3] and relations restate field sources (one lineage each with the source, the source keeping the earliest date; recorded in the archive ledger as 'restates').",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/eclipse-20261101/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B1, B9–B12 the census copies; B6 shares B5's page; B3-try1-404.html and B3-try2-redirect.html the first tries for card 3; W-*.wiki the raw Wikipedia responses; fetch.log; T1-eclipse-archive-aio-20261101.txt the registry's transcript string); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1, the entity's home page (also one of the census's own pages, eclipse--home; carried once, in B_D)",
+   "card": "eclipsearchive.org — Eclipse Archive",
+   "url": "https://eclipsearchive.org/",
+   "kind": "the entity's home page",
+   "sense": "the entity",
+   "snippet": "Eclipse ECLIPSE Authors Titles NEW TO THE ARCHIVE: The first issue of the fugitive Gnome Baker magazine, from October, 1976. Edited by Madeleine Burnside and An...",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B1.html",
+     "sha256": "7d9418140651879585167ff60bf530768fc3517e146838c3bdd87a5f3ef1d7a9"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B1.txt",
+     "sha256": "f0c9011acb3a098b49d4d1796406fbd17adb305dc8fd432a960a28d34d1b561b"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "eclipse--home",
+    "read": "2026-11-01T04:07:51Z",
+    "http": "200",
+    "url": "https://eclipsearchive.org/",
+    "final_url": "https://eclipsearchive.org/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B1.html",
+    "raw_sha256": "7d9418140651879585167ff60bf530768fc3517e146838c3bdd87a5f3ef1d7a9",
+    "census_sha256": "7d9418140651879585167ff60bf530768fc3517e146838c3bdd87a5f3ef1d7a9",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/leesharks.com/data/authorship-census/sources/eclipse--home.html.gz (gunzipped) and eclipse--home.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B1.txt"
+    ]
+   },
+   "surfaced_by_T": [
+    "T1 card 1"
+   ],
+   "names_operator": "yes ('Founding Editor: Craig Dworkin Editor: Danny Snelson')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "The card's URL is the census's saved own page; the census copy is intact (sha256 matches the manifest), so it was copied and not refetched. A source in both pools is carried once, in B_D (v0.10 §3.1(a))."
+  },
+  {
+   "id": "B2",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 2 (another entity of the name)",
+   "card": "Eclipse Archives — Eclipse Archives",
+   "url": "https://eclipsearchives.com/",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: the apparel brand Eclipse Archives (eclipsearchives.com)",
+   "snippet": "ECLIPSE X JJK DROP * Ratio Jeans Ratio Jeans Vendor: Eclipse Archives Regular price $105.00 USD Regular price Sale price $105.00 USD * Honored One Jeans Honored...",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B2.html",
+     "sha256": "3d4f62efcfa9eb0e0f083ff6832bdac20c82cb18a3a2867958d44f27f7dc9d0c"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B2.txt",
+     "sha256": "18f643574f770e258079d6040503f0b21b46a09ed5f025eab56ca70bf5c1ca5a"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:26:59Z",
+    "http": "200",
+    "url": "https://eclipsearchives.com/",
+    "final_url": "https://eclipsearchives.com/password",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B2.html",
+    "raw_sha256": "3d4f62efcfa9eb0e0f083ff6832bdac20c82cb18a3a2867958d44f27f7dc9d0c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B2.txt"
+    ],
+    "note": "the brand's shop answered with its password page ('Access is closed. Join the waitlist for first access to our drops.'); the snippet's product listing ('Ratio Jeans') is not on the saved page, so the snippet stands as the card's text"
+   },
+   "surfaced_by_T": [
+    "T1 card 2"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B3",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 3 (another entity of the name)",
+   "card": "NASA (.gov) — Historical Eclipse Image Archive",
+   "url": "https://science.gsfc.nasa.gov/attic/eclipse2017.gsfc.nasa.gov/historical-eclipse-image-archive.html",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: the Historical Eclipse Image Archive (the High Altitude Observatory of NCAR, on NASA's Eclipse 2017 site)",
+   "snippet": "Historical Eclipse Image Archive The High Altitude Observatory of the National Center for Atmospheric Research provides an archive of research-quality images of...",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B3.html",
+     "sha256": "e1d0521cf1084b4e6973a99cd21903c6ac18cbe1f4fa52c14a4644ef4f1a10f4"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B3.txt",
+     "sha256": "fd019ae2a09b7f70afb1e8e50145dbaad7b8f6da84bf182d140c7c02552bd5b3"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:27:28Z",
+    "http": "200",
+    "url": "https://science.gsfc.nasa.gov/attic/eclipse2017.gsfc.nasa.gov/historical-eclipse-image-archive.html",
+    "final_url": "https://science.gsfc.nasa.gov/attic/eclipse2017.gsfc.nasa.gov/historical-eclipse-image-archive.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B3.html",
+    "raw_sha256": "e1d0521cf1084b4e6973a99cd21903c6ac18cbe1f4fa52c14a4644ef4f1a10f4",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B3.txt"
+    ],
+    "note": "found by WebSearch on the card's title and site; https://eclipse2017.nasa.gov/historical-eclipse-image-archive redirects to https://science.nasa.gov/eclipses/, which does not carry the page (saved as B3-try2-redirect.html), and https://www2.hao.ucar.edu/mlso/eclipse-image-archive answered 404 (B3-try1-404.html); the NASA attic copy carries the snippet's text"
+   },
+   "surfaced_by_T": [
+    "T1 card 3"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B4",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 4 (another entity of the name)",
+   "card": "Eclipse Foundation — Eclipse Project Archives",
+   "url": "https://archive.eclipse.org/eclipse/downloads/",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: the Eclipse Foundation: the Eclipse Project's archived downloads",
+   "snippet": "Eclipse Project Archives Eclipse project archived downloads Archived downloads of the Eclipse project Archived Downloads On this page you can find the archived ...",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B4.html",
+     "sha256": "42c6a1032ba33330a8e57c951d8c59b8d13e50d398c9ddb38eed77d2c2956b41"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B4.txt",
+     "sha256": "95d2ee0e9d34ac1e906c3fc3e39c7b35590bc5ddc976d3cd51ff407e335546cd"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:27:00Z",
+    "http": "200",
+    "url": "https://archive.eclipse.org/eclipse/downloads/",
+    "final_url": "https://archive.eclipse.org/eclipse/downloads/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B4.html",
+    "raw_sha256": "42c6a1032ba33330a8e57c951d8c59b8d13e50d398c9ddb38eed77d2c2956b41",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B4.txt"
+    ],
+    "note": "the page carries the snippet's text"
+   },
+   "surfaced_by_T": [
+    "T1 card 4"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B5",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 5 (another entity of the name)",
+   "card": "Eclipse Marketplace — archive | Eclipse Plugins, Bundles and Products",
+   "url": "https://marketplace.eclipse.org/category/free-tagging/archive",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: Eclipse Marketplace: the 'archive' tag (Eclipse Archive Utility)",
+   "snippet": "Eclipse Archive Utility. Thursday, March 6, 2025 - 06:20 by Anonymous (not verified). The Archive Utility extends the Eclipse IDE to browse and extract zip arch...",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.html",
+     "sha256": "d5e0ceb4e2abc725edf4968eda718d307dba1f7c4e8e79fa41aa6f7b329a8d57"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.txt",
+     "sha256": "37a42e5d6bf9dd3e8edae7888217987e63ab5ee5b043e1417baab5fe10773eff"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:27:00Z",
+    "http": "200",
+    "url": "https://marketplace.eclipse.org/category/free-tagging/archive",
+    "final_url": "https://marketplace.eclipse.org/category/free-tagging/archive",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.html",
+    "raw_sha256": "d5e0ceb4e2abc725edf4968eda718d307dba1f7c4e8e79fa41aa6f7b329a8d57",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.txt"
+    ],
+    "note": "the page carries both Marketplace cards' snippets (B5 and B6)"
+   },
+   "surfaced_by_T": [
+    "T1 card 5"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B6",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 6 (another entity of the name)",
+   "card": "Eclipse Marketplace — archive | Eclipse Plugins, Bundles and Products",
+   "url": "https://marketplace.eclipse.org/category/free-tagging/archive",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: Eclipse Marketplace: the 'archive' tag (Eclipse Zip Editor)",
+   "snippet": "Primary tabs * Eclipse Zip Editor 182 8 Drag to Install! Drag to your running Eclipse* workspace. Eclipse Zip Editor Saturday, March 14, 2026 - 15:10 by Uwe Voi...",
+   "files": {
+    "B5.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.html",
+     "sha256": "d5e0ceb4e2abc725edf4968eda718d307dba1f7c4e8e79fa41aa6f7b329a8d57"
+    },
+    "B5.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.txt",
+     "sha256": "37a42e5d6bf9dd3e8edae7888217987e63ab5ee5b043e1417baab5fe10773eff"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:27:00Z",
+    "http": "200",
+    "url": "https://marketplace.eclipse.org/category/free-tagging/archive",
+    "final_url": "https://marketplace.eclipse.org/category/free-tagging/archive",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.html",
+    "raw_sha256": "d5e0ceb4e2abc725edf4968eda718d307dba1f7c4e8e79fa41aa6f7b329a8d57",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B5.txt"
+    ],
+    "note": "the same page as B5 (one fetch, files shared)"
+   },
+   "surfaced_by_T": [
+    "T1 card 6"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B7",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 7 (another entity of the name)",
+   "card": "TikTok — eclipse archives (@eclipse_archives) - TikTok",
+   "url": "https://www.tiktok.com/@eclipse_archives",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: the apparel brand's TikTok profile (@eclipse_archives)",
+   "snippet": "eclipse archives (@eclipse_archives) on TikTok | 5.6M Likes. 71.1K Followers. welcome to the eclipse Insta @eclipse.arc JJK drop oct 9th SITE ⬇️.Watch eclipse a...",
+   "files": {
+    "B7.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B7.html",
+     "sha256": "9dc69620808882f3cd0c6673b95f03a398fc74221b6a7419ec679433c36ef3f1"
+    },
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B7.txt",
+     "sha256": "0f9690448d3dc5919070328fbd6f42e6c9b0f7672a7c004214b9079fce3a0a8f"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:27:01Z",
+    "http": "200",
+    "url": "https://www.tiktok.com/@eclipse_archives",
+    "final_url": "https://www.tiktok.com/@eclipse_archives",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B7.html",
+    "raw_sha256": "9dc69620808882f3cd0c6673b95f03a398fc74221b6a7419ec679433c36ef3f1",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B7.txt"
+    ],
+    "note": "script-rendered: the page's visible text is 'TikTok - Make Your Day'; the profile's embedded JSON (signature 'welcome to the eclipse … JJK drop oct 9th', followerCount 71027, heartCount 5556397) is kept as B7.txt; the snippet stands as the card's text"
+   },
+   "surfaced_by_T": [
+    "T1 card 7"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B8",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "role": "Overview card 8 (another entity of the name)",
+   "card": "Eclipse Foundation — Archived Projects | The Eclipse Foundation",
+   "url": "https://www.eclipse.org/projects/archives.php",
+   "kind": "Overview card of a homonym",
+   "sense": "homonym: the Eclipse Foundation: Archived Projects",
+   "snippet": "Archived Eclipse Projects: Data from discontinued Eclipse Foundation projects (including downloads, source files from CVS/SVN/GIT, and websites) is compiled int...",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B8.html",
+     "sha256": "33eebbd9ca2d9967797ed61f398b402f29f8509f3258dc7afc5911b487e088cd"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B8.txt",
+     "sha256": "12caf0abca6a0c5d051f3d23d74e4644850312aa7bc8314a1338e6d7f530f7f4"
+    }
+   },
+   "fetched": {
+    "census_copy": false,
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "read": "2026-11-01T06:27:01Z",
+    "http": "200",
+    "url": "https://www.eclipse.org/projects/archives.php",
+    "final_url": "https://www.eclipse.org/projects/archives.php",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B8.html",
+    "raw_sha256": "33eebbd9ca2d9967797ed61f398b402f29f8509f3258dc7afc5911b487e088cd",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B8.txt"
+    ],
+    "note": "the page carries the snippet's text"
+   },
+   "surfaced_by_T": [
+    "T1 card 8"
+   ],
+   "names_operator": "no (the entity's editors are not named)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "In B_D as the card is (BRIEF-NEW-ROW-AUTHORSHIP, substitution 7): recorded with its sense, its kernel ledgered for the disambiguation and the first question."
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the entity's own page (the Editor page, the founding editor's page on the archive's site)",
+   "card": "eclipsearchive.org — Craig Dworkin (the Editor page)",
+   "url": "https://eclipsearchive.org/Editor",
+   "kind": "own page",
+   "sense": "the entity",
+   "files": {
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B9.html",
+     "sha256": "6ace431d4ff045bc9ca310847127d1cf1dddf23284e410f681c2124f247ba39a"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B9.txt",
+     "sha256": "250901eabd7e8a58a174b4aa8887f777e34009ca9eadccefdc673fcc588b1219"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "eclipse--editor",
+    "read": "2026-11-01T04:08:35Z",
+    "http": "200",
+    "url": "https://eclipsearchive.org/Editor",
+    "final_url": "https://eclipsearchive.org/Editor/",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B9.html",
+    "raw_sha256": "6ace431d4ff045bc9ca310847127d1cf1dddf23284e410f681c2124f247ba39a",
+    "census_sha256": "6ace431d4ff045bc9ca310847127d1cf1dddf23284e410f681c2124f247ba39a",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/leesharks.com/data/authorship-census/sources/eclipse--editor.html.gz (gunzipped) and eclipse--editor.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B9.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes ('Founding Senior Editor: Eclipse')",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "B_R: admitted by the operator's ruling of 2026-10-29 ('as against their wikipedia articles if they exist, their own pages, etc.'); not surfaced by T."
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the entity's own page (the author index)",
+   "card": "eclipsearchive.org — Eclipse: Author Index",
+   "url": "https://eclipsearchive.org/authors.html",
+   "kind": "own page",
+   "sense": "the entity",
+   "files": {
+    "B10.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B10.html",
+     "sha256": "52a8b02ac16b6665320e9de8793d03955200a4b6f45e98bc1acb4a76a1f53149"
+    },
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B10.txt",
+     "sha256": "af2e231767a6fffcac6d61f7c05f13b676c86e8e877515e4ee174867685503d8"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "eclipse--authors",
+    "read": "2026-11-01T04:08:34Z",
+    "http": "200",
+    "url": "https://eclipsearchive.org/authors.html",
+    "final_url": "https://eclipsearchive.org/authors.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B10.html",
+    "raw_sha256": "52a8b02ac16b6665320e9de8793d03955200a4b6f45e98bc1acb4a76a1f53149",
+    "census_sha256": "52a8b02ac16b6665320e9de8793d03955200a4b6f45e98bc1acb4a76a1f53149",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/leesharks.com/data/authorship-census/sources/eclipse--authors.html.gz (gunzipped) and eclipse--authors.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B10.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no (the editors appear as authors of works, 'Craig Dworkin All Saints', 'Daniel Scott Snelson L≠A≠N≠G≠U≠A≠G≠E'; no editorial statement)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "B_R; not surfaced by T (card 1's snippet shows the navigation 'Authors Titles' only)."
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the entity's own page (the About page): unread, HTTP 404",
+   "card": "eclipsearchive.org — about.html (404 Not Found)",
+   "url": "https://eclipsearchive.org/about.html",
+   "kind": "own page, HTTP 404",
+   "sense": "the entity",
+   "files": {
+    "B11.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B11.html",
+     "sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264"
+    },
+    "B11.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B11.txt",
+     "sha256": "d918dd9e75ac8d836e7f819c0adb38ba78beea500b081f68ac39811f2a96bf12"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "eclipse--about",
+    "read": "2026-11-01T04:07:52Z",
+    "http": "404",
+    "url": "https://eclipsearchive.org/about.html",
+    "final_url": "https://eclipsearchive.org/about.html",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B11.html",
+    "raw_sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264",
+    "census_sha256": "cc0b4e42510d49c6decd464123ecf3b14ae9b47f9b4ed2ee64893e2d6520a264",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/leesharks.com/data/authorship-census/sources/eclipse--about.html.gz (gunzipped) and eclipse--about.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B11.txt"
+    ]
+   },
+   "surfaced_by_T": [],
+   "names_operator": "no",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "Unread: the census saved an HTTP 404 response (190 characters). Recorded so, and quoted only for that status."
+  },
+  {
+   "id": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "Wikipedia: 'Eclipse Archive' redirects to the section 'Eclipse' of the article 'Craig Dworkin'; the 'Eclipse (disambiguation)' page",
+   "card": "Wikipedia — Craig Dworkin, §Eclipse (the redirect target of 'Eclipse Archive'); Eclipse (disambiguation)",
+   "url": "https://en.wikipedia.org/wiki/Craig_Dworkin",
+   "kind": "encyclopedia (the census's third-party source; rendered article as the census saved it, raw wikitext refetched)",
+   "sense": "the entity (the article's section on it); the disambiguation of the name",
+   "files": {
+    "B12.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B12.html",
+     "sha256": "60ddc0168723cab3dd285834f79d9a0725e4e27d31104dfb528a825d62af5c59"
+    },
+    "B12.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B12.txt",
+     "sha256": "a902d3676d0a022fe9648c2cd493f7b1e2d5ccdf0fec70e0bf7a505779ba2023"
+    },
+    "W-Craig_Dworkin.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Craig_Dworkin.wiki",
+     "sha256": "63e8a3709b0fd325451bbed08e64c21e915e7e48bf4ef22637f593ad969223ee"
+    },
+    "W-Eclipse_Archive.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_Archive.wiki",
+     "sha256": "9df074d10b2b3351480b56075dfd7e803ca4a5dd4962b15b6c0d06eef281cb01"
+    },
+    "W-Eclipse_disambiguation.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_disambiguation.wiki",
+     "sha256": "3fb0e58c428719580032dc82c45fe969454bdfd8b21175b89f73865c116c2033"
+    },
+    "W-Eclipse_archive.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_archive.wiki",
+     "sha256": "4b50065b30a822e2b0222b74218cf72cafd8362e9b037dacbf3878876eb37d2b"
+    },
+    "W-Eclipse_online_archive.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_online_archive.wiki",
+     "sha256": "416596237aebfad2eab02a410b2e5d162d7a6578129262437377c31689bccebb"
+    },
+    "W-Eclipsearchive.org.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipsearchive.org.wiki",
+     "sha256": "09b648c6aece15ce09795c347f48b44bd3ae8e04e541065bb92f723d87339c8b"
+    }
+   },
+   "fetched": {
+    "census_copy": true,
+    "src": "eclipse--wikipedia",
+    "read": "2026-11-01T04:08:17Z",
+    "http": "200",
+    "url": "https://en.wikipedia.org/wiki/Craig_Dworkin",
+    "final_url": "https://en.wikipedia.org/wiki/Craig_Dworkin",
+    "raw": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B12.html",
+    "raw_sha256": "60ddc0168723cab3dd285834f79d9a0725e4e27d31104dfb528a825d62af5c59",
+    "census_sha256": "60ddc0168723cab3dd285834f79d9a0725e4e27d31104dfb528a825d62af5c59",
+    "agrees": true,
+    "copied_from": "/home/claude/fleet/leesharks.com/data/authorship-census/sources/eclipse--wikipedia.html.gz (gunzipped) and eclipse--wikipedia.txt",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/B12.txt"
+    ],
+    "raw_wikitext": [
+     {
+      "title": "Eclipse_Archive",
+      "http": "200",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_Archive.wiki",
+      "sha256": "9df074d10b2b3351480b56075dfd7e803ca4a5dd4962b15b6c0d06eef281cb01",
+      "read": "2026-11-01T06:26:39Z",
+      "content": "#REDIRECT[[Craig_Dworkin#Eclipse]]"
+     },
+     {
+      "title": "Eclipse_archive",
+      "http": "404",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_archive.wiki",
+      "sha256_at_fetch": "390b5d6f91e73a9163c9ff19cf58e2d70bc2e75846ef8e73f418a754db36be5a",
+      "read": "2026-11-01T06:26:39Z",
+      "note": "overwritten on disk by the next response ('Eclipse_(archive)', also 404); its sha256 at fetch is in fetch.log"
+     },
+     {
+      "title": "Eclipse_(archive)",
+      "http": "404",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_archive.wiki",
+      "sha256_at_fetch": "4b50065b30a822e2b0222b74218cf72cafd8362e9b037dacbf3878876eb37d2b",
+      "read": "2026-11-01T06:26:39Z",
+      "note": "the file name drops the parentheses, so this 404 response overwrote the one for 'Eclipse_archive' in W-Eclipse_archive.wiki; the file on disk is this response (sha256 4b50065b…)"
+     },
+     {
+      "title": "Eclipse_(online_archive)",
+      "http": "404",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_online_archive.wiki",
+      "sha256": "416596237aebfad2eab02a410b2e5d162d7a6578129262437377c31689bccebb",
+      "read": "2026-11-01T06:26:40Z"
+     },
+     {
+      "title": "Eclipsearchive.org",
+      "http": "404",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipsearchive.org.wiki",
+      "sha256": "09b648c6aece15ce09795c347f48b44bd3ae8e04e541065bb92f723d87339c8b",
+      "read": "2026-11-01T06:26:40Z"
+     },
+     {
+      "title": "Eclipse_(disambiguation)",
+      "http": "200",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Eclipse_disambiguation.wiki",
+      "sha256": "3fb0e58c428719580032dc82c45fe969454bdfd8b21175b89f73865c116c2033",
+      "read": "2026-11-01T06:26:40Z"
+     },
+     {
+      "title": "Craig_Dworkin",
+      "http": "200",
+      "file": "datasets/negative-of-the-negative/v2/intake/eclipse-20261101/W-Craig_Dworkin.wiki",
+      "sha256": "63e8a3709b0fd325451bbed08e64c21e915e7e48bf4ef22637f593ad969223ee",
+      "read": "2026-11-01T06:26:40Z"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)"
+   },
+   "surfaced_by_T": [],
+   "names_operator": "yes (Craig Dworkin, founding senior editor; Danny Snelson, co-manager)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+   "note": "B_R. The census lists this source as Wikipedia's article on Craig Dworkin and records 'no Wikipedia article on Eclipse among the saved sources'; the raw fetch shows that the name 'Eclipse Archive' is a redirect into that article's section 'Eclipse' (W-Eclipse_Archive.wiki), so the section is ledgered as the entity's article. The disambiguation page 'Eclipse (disambiguation)' is ledgered for the name."
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page title and masthead",
+   "quote": "Eclipse ECLIPSE",
+   "claim": "the site's own name, in two cases: Eclipse, ECLIPSE",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f0c9011acb3a098b…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "navigation",
+   "quote": "Authors Titles",
+   "claim": "the home page opens on two ways in: an index of authors and an index of titles",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f0c9011acb3a098b…), whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "the notice, s1",
+   "quote": "NEW TO THE ARCHIVE: The first issue of the fugitive Gnome Baker magazine, from October, 1976.",
+   "claim": "the newest item: the first issue of the 'fugitive' Gnome Baker magazine, October 1976, announced as new to the archive",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings and method: the facsimile",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f0c9011acb3a098b…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "the notice, s2",
+   "quote": "Edited by Madeleine Burnside and Andrew W. Kelly, the inaugural number featured work by Michael Davidson, Rita Myers, and Michael Palmer.",
+   "claim": "Gnome Baker no. 1 edited by Madeleine Burnside and Andrew W. Kelly, with work by Michael Davidson, Rita Myers and Michael Palmer",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and method: the facsimile",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f0c9011acb3a098b…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "foot of the page",
+   "quote": "Founding Editor: Craig Dworkin Editor: Danny Snelson",
+   "claim": "its editors: Craig Dworkin, Founding Editor; Danny Snelson, Editor",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 f0c9011acb3a098b…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card snippet (the saved page is the shop's password page)",
+   "quote": "ECLIPSE X JJK DROP * Ratio Jeans Ratio Jeans Vendor: Eclipse Archives Regular price $105.00 USD",
+   "claim": "homonym: Eclipse Archives, an apparel shop selling a JJK collaboration drop (jeans at $105.00)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: the apparel brand Eclipse Archives",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry (cite_list n=2), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B3",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "the page's one statement",
+   "quote": "The High Altitude Observatory of the National Center for Atmospheric Research provides an archive of research-quality images of solar eclipses as far back as 1869.",
+   "claim": "homonym: the High Altitude Observatory's archive of research-quality solar eclipse images back to 1869, on NASA's eclipse site",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: the Historical Eclipse Image Archive",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 fd019ae2a09b7f70…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B4",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "On this page you can find the archived builds produced by the Eclipse Project . Archived builds consist of older releases and not propagated to Eclipse mirrors.",
+   "claim": "homonym: the Eclipse Project's archived builds, older releases not propagated to mirrors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: the Eclipse Foundation's project archives",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 95d2ee0e9d34ac1e…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B5",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "the Archive Utility listing",
+   "quote": "The Archive Utility extends the Eclipse IDE to browse and extract zip archive files within the workspace.",
+   "claim": "homonym: the Eclipse Archive Utility, a plugin to browse and extract zip archives in the Eclipse IDE",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: Eclipse Marketplace archive plugins",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 37a42e5d6bf9dd3e…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B6",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "the Zip Editor listing",
+   "quote": "This is a Zip archive editor for the Eclipse platform.",
+   "claim": "homonym: the Eclipse Zip Editor, a zip archive editor for the Eclipse platform",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: Eclipse Marketplace archive plugins",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B5.txt (sha256 37a42e5d6bf9dd3e…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B7",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "card snippet (the page script-rendered)",
+   "quote": "eclipse archives (@eclipse_archives) on TikTok | 5.6M Likes. 71.1K Followers. welcome to the eclipse Insta @eclipse.arc JJK drop oct 9th",
+   "claim": "homonym: the apparel brand's TikTok profile, 71.1K followers, a JJK drop announced",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: the apparel brand Eclipse Archives",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "the card's snippet in the registry (cite_list n=7), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B8",
+   "origin": "card (homonym)",
+   "pool": "B_D",
+   "locus": "the archived-projects notice",
+   "quote": "When projects are archived their available data(ie: downloads,source and website) is collected into a single TGZ file.",
+   "claim": "homonym: the Eclipse Foundation's archived projects, their downloads, source and website collected into one TGZ file",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the other entities of the name",
+   "sense": "homonym: the Eclipse Foundation's project archives",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 12caf0abca6a0c5d…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Edited Collections block",
+   "quote": "Founding Senior Editor: Eclipse",
+   "claim": "Dworkin's page on the archive's site lists him as Founding Senior Editor of Eclipse",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 250901eabd7e8a58…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Edited Collections block",
+   "quote": "Curator: The UbuWeb Anthology of Conceptual Writing",
+   "claim": "the same page lists Dworkin as curator of The UbuWeb Anthology of Conceptual Writing",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 250901eabd7e8a58…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "opening",
+   "quote": "Craig Dworkin Craig Dworkin Scholarly Books: Substrate: The Poetics of Paper and the Textility of Literature",
+   "claim": "the archive's site carries a page for its founding editor, opening on his scholarly books",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B9.txt (sha256 250901eabd7e8a58…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "title and heading",
+   "quote": "Eclipse: Author Index ECLIPSE Index Of Authors [browse by title]",
+   "claim": "the author index, titled 'Eclipse: Author Index', with a link to browse by title",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "first and last entries",
+   "quote": "Emily Abendroth Exclosures 1 - 8 … Suzanne Zavrian EXTENSIONS [Editor]",
+   "claim": "the index runs alphabetically from Emily Abendroth to Suzanne Zavrian",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F18": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entry for Bruce Andrews",
+   "quote": "Bruce Andrews Acappella Corona Edge eXcLa [with Maggie O'Sullivan] … LEGEND [with Charles Bernstein, Ray DiPalma, Steve McCaffery, and Ron Silliman]",
+   "claim": "co-written titles under Bruce Andrews, each naming its collaborators in brackets: eXcLa with Maggie O'Sullivan, LEGEND with four others",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F19": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for Ray DiPalma and Steve McCaffery",
+   "quote": "Ray DiPalma LEGEND [with Bruce Andrews, Charles Bernstein, Steve McCaffery, and Ron Silliman] … Steve McCaffery LEGEND [with Bruce Andrews, Charles Bernstein, Ray DiPalma, and Ron Silliman]",
+   "claim": "LEGEND stands again under each co-author, with the others named",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F20": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entry for Maggie O'Sullivan",
+   "quote": "Maggie O'Sullivan Concerning Spheres Divisions of Labour eXcLa [with Bruce Andrews]",
+   "claim": "eXcLa stands under Maggie O'Sullivan as well, with Andrews named",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for Bruce Andrews and Charles Bernstein",
+   "quote": "L=A=N=G=U=A=G=E [Editor, with Charles Bernstein] … L=A=N=G=U=A=G=E [Editor, with Bruce Andrews]",
+   "claim": "the magazine L=A=N=G=U=A=G=E stands under each of its two editors, marked '[Editor, with …]'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F22": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for James Sherry, Bob Perelman, Ron Silliman, Robert Grenier",
+   "quote": "James Sherry ROOF [Editor] … Hills [Editor] … Tottel's [Editor] … This 1-12: Index [Editor, with Barrett Watten]",
+   "claim": "magazines held under their editors, marked '[Editor]': Roof, Hills, Tottel's, This",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F23": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for Tom Beckett, Jessica Grim, Melanie Neilson",
+   "quote": "Tom Beckett (Editor) The Difficulties … Jessica Grim (Editor) Big Allis … Melanie Neilson (Editor) Big Allis",
+   "claim": "a second notation, '(Editor)' after the name: The Difficulties under Tom Beckett, Big Allis under each of its editors",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F24": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entry for Abraham Lincoln Gillespie",
+   "quote": "Abraham Lincoln Gillespie The Syntactic Revolution [Ed. Richard Milazzo]",
+   "claim": "a third notation: the editor named inside the author's entry, '[Ed. Richard Milazzo]'; the name Milazzo occurs once in the saved index (no entry of its own)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for Rosmarie Waldrop and Helmut Heißenbüttel",
+   "quote": "Rosmarie Waldrop (trans.) The Dilemma of Being High and Dry Novel Schematic Development of Tradition … Helmut Heißenbüttel The Dilemma of Being High and Dry Novel Schematic Development of Tradition",
+   "claim": "a translation under its translator, marked '(trans.)', and under its author: three Heißenbüttel titles under Rosmarie Waldrop as well",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F26": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entry for Joaquín Pasos",
+   "quote": "Joaquín Pasos Poemas de un joven que no sabe inglés",
+   "claim": "a title held under its Spanish original: Joaquín Pasos, Poemas de un joven que no sabe inglés",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and method: the facsimile",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised"
+  },
+  "F27": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for P. Inman, Sandra and Ben Doller, T. R. Uthco",
+   "quote": "P. Inman Ocker … Sandra and Ben Doller Sonneteers … T. R. Uthco Beyond the Edge",
+   "claim": "names as printed: initials ('P. Inman', 'T. R. Uthco') and one joint heading for two names ('Sandra and Ben Doller'); 'Doller' occurs once in the saved index",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names as printed",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F28": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for Craig Dworkin and Daniel Scott Snelson",
+   "quote": "Craig Dworkin All Saints … Daniel Scott Snelson L≠A≠N≠G≠U≠A≠G≠E",
+   "claim": "the index lists All Saints under 'Craig Dworkin' and L≠A≠N≠G≠U≠A≠G≠E under 'Daniel Scott Snelson'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names as printed",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F29": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the entries for Clark Coolidge and Bill Berkson",
+   "quote": "Clark Coolidge A Geology from Air American Ones: Noise and Presentiments Big Sky Number Three [Bill Berkson, Editor] … Bill Berkson (Editor) Big Sky Number Three (Clark Coolidge issue)",
+   "claim": "a magazine issue devoted to one author stands under that author, its editor credited, and under its editor",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the author index: credit by collaborator, editor and translator",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 af2e231767a6fffc…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F30": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "the whole response (HTTP 404)",
+   "quote": "404 Not Found Not Found The requested URL was not found on this server.",
+   "claim": "the About page returned HTTP 404: no statement of purpose, selection or rights was readable on it",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what its own pages leave unstated",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; the page undated)",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 d918dd9e75ac8d83…), whitespace-normalised"
+  },
+  "F31": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "W-Eclipse_Archive.wiki (raw wikitext of 'Eclipse Archive')",
+   "quote": "#REDIRECT[[Craig_Dworkin#Eclipse]]",
+   "claim": "the encyclopedia's title 'Eclipse Archive' is a redirect to the section 'Eclipse' of the article on Craig Dworkin",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the encyclopedia and the name",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text W-Eclipse_Archive.wiki (sha256 9df074d10b2b3351…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "lede, s2",
+   "quote": "He is the founding senior editor of Eclipse, an online archive of 20th-century small-press writing and 21st-century born-digital publications.",
+   "claim": "Eclipse: an online archive of 20th-century small-press writing and 21st-century born-digital publications, Dworkin its founding senior editor",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s1",
+   "quote": "Dworkin is the founding senior editor of Eclipse, an online archive focusing on digital facsimiles of radical small-press writing from the last quarter of the 20th century.",
+   "claim": "Eclipse: an online archive focusing on digital facsimiles of radical small-press writing from the last quarter of the 20th century",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s2 (first clause)",
+   "quote": "Dworkin started the archive in 2002 to provide readers and scholars with access to avant-garde works that were no longer available in print from their original publishers;",
+   "claim": "started in 2002 by Dworkin to give readers and scholars access to avant-garde works no longer in print from their original publishers",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "origin, purpose and name",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s2 (second clause)",
+   "quote": "Eclipse later expanded to publish selected new works and born-digital publications in the spirit of those earlier presses.",
+   "claim": "later expanded to publish selected new works and born-digital publications in the spirit of the earlier presses",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin, purpose and name",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s3",
+   "quote": "The archive's name is an homage to Douglas Messerli ’s Sun & Moon press.",
+   "claim": "the name an homage to Douglas Messerli's Sun & Moon press",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin, purpose and name",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s4 (first part)",
+   "quote": "Eclipse includes high-resolution scans of every page of its included texts, most from Dworkin's personal collection,",
+   "claim": "high-resolution scans of every page of each included text, most from Dworkin's personal collection",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "holdings and method: the facsimile",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s4 (second part, quoting Dworkin, 'Hypermnesia', boundary 2, 2009)",
+   "quote": "in an attempt to \"conserve ... the facture and material specificity of the book or printed document as an object.\"",
+   "claim": "the scans' aim, in Dworkin's words as the article quotes them: to conserve the facture and material specificity of the book or printed document as an object",
+   "modality": "attributed",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "holdings and method: the facsimile",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "§Eclipse, s5",
+   "quote": "Dworkin co-manages the archive with Danny Snelson, assistant professor of English at UCLA .",
+   "claim": "Dworkin co-manages it with Danny Snelson, assistant professor of English at UCLA",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "lede, s1",
+   "quote": "Craig Dworkin is an American poet, critic, editor, and Professor of English at the University of Utah .",
+   "claim": "Craig Dworkin: American poet, critic, editor, Professor of English at the University of Utah",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is: an online archive of small-press writing, its name, indexes and editors",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "infobox",
+   "quote": "Website eclipsearchive .org",
+   "claim": "the article's infobox gives eclipsearchive.org as Dworkin's website",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia and the name",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "W-Eclipse_disambiguation.wiki, 'Other uses in literature' and 'Technology'",
+   "quote": "* [[Eclipse Comics]], an American comic book publisher … * [[Eclipse (software)]], a software development platform",
+   "claim": "the 'Eclipse' disambiguation page lists Eclipse Comics and Eclipse (software) among the uses of the name; 'Dworkin', 'small-press' and 'poetry' occur in it 0 times (the archive is not listed)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia and the name",
+   "sense": "the name",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text W-Eclipse_disambiguation.wiki (sha256 3fb0e58c42871958…), whitespace-normalised; multi-part quote, each part checked"
+  },
+  "F43": {
+   "source": "B12",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "footer",
+   "quote": "This page was last edited on 1 November 2026, at 00:58 (UTC) .",
+   "claim": "the article as read: last edited 1 November 2026, 00:58 UTC",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the encyclopedia and the name",
+   "sense": "the entity",
+   "date": "2026-11-01 (read; article as edited 1 November 2026, 00:58 UTC)",
+   "quote_ok": true,
+   "checked_against": "saved text B12.txt (sha256 a902d3676d0a022f…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "eclipsearchive.org — Eclipse Archive",
+  "B2": "Eclipse Archives — Eclipse Archives",
+  "B3": "NASA (.gov) — Historical Eclipse Image Archive",
+  "B4": "Eclipse Foundation — Eclipse Project Archives",
+  "B5": "Eclipse Marketplace — archive | Eclipse Plugins, Bundles and Products",
+  "B6": "Eclipse Marketplace — archive | Eclipse Plugins, Bundles and Products",
+  "B7": "TikTok — eclipse archives (@eclipse_archives) - TikTok",
+  "B8": "Eclipse Foundation — Archived Projects | The Eclipse Foundation",
+  "B9": "eclipsearchive.org — Craig Dworkin (the Editor page)",
+  "B10": "eclipsearchive.org — Eclipse: Author Index",
+  "B11": "eclipsearchive.org — about.html (404 Not Found)",
+  "B12": "Wikipedia — Craig Dworkin, §Eclipse (the redirect target of 'Eclipse Archive'); Eclipse (disambiguation)"
+ }
+}

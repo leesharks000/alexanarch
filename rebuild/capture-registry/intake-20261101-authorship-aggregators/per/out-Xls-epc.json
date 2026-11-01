@@ -1,0 +1,283 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-epc",
+   "name": "Electronic Poetry Center",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own about and home pages and a third-party account (Wikipedia), saved 2026-11-01, describe it as the first comprehensive Internet archive of its kind for poetry and poetics. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Electronic Poetry Center (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Electronic Poetry Center (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Electronic Poetry Center (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Electronic Poetry Center",
+      "EPC"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Electronic Poetry Center ( EPC ), is an online resource for digital poetry .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Loss Pequeño Glazier",
+      "Glazier",
+      "Charles Bernstein",
+      "Al Filreis"
+     ],
+     "reference": "Loss Pequeño Glazier, Director and Founder; Charles Bernstein, Editor and Co-founder; Al Filreis, Publisher.",
+     "evidence": [
+      {
+       "record_quote": "Loss Pequeño Glazier , Director & Founder",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      },
+      {
+       "record_quote": "Charles Bernstein , Editor, Co-founder",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      },
+      {
+       "record_quote": "Al Filreis , Publisher",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1994",
+      "1995"
+     ],
+     "reference": "Founded at Buffalo in 1995 (its About page); 10 July 1994 (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "EPC was founed by Loss Peqeño Glazier, with Charles Bernstein, at the Poetics Program of SUNY-Buffalo in 1995.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      },
+      {
+       "record_quote": "It was founded on July 10, 1994 by Loss Pequeño Glazier and Charles Bernstein , of the Poetics Program at The State University of New York at Buffalo",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The first comprehensive Internet archive of its kind for poetry and poetics, with a Digital Library, E-Poetry and Author libraries.",
+     "evidence": [
+      {
+       "record_quote": "The site was the first comprehensive Internet archive of its kind for poetry and poetics.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      },
+      {
+       "record_quote": "EPC makes extensive resources available through its Digital Library, E-Poetry and Author libraries.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Author pages, digitized books and journal runs (Sulfur), and the archives of the Buffalo Poetics Program (1991 to 2003) and the Poetics List (1993 to 2014).",
+     "evidence": [
+      {
+       "record_quote": "Author Pages : Mina Loy and Bill Keith",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--home.txt"
+      },
+      {
+       "record_quote": "Sulfur , ed. Clayton Eshleman",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--home.txt"
+      },
+      {
+       "record_quote": "We also house the archives of the Buffalo Poetics Program from its fouding in 1991 to 2003 and of the Poetics List (1993-2014), the first poetry listserv discussion group.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To make available a wide range of resources centered on digital and contemporary formally innovative poetries, new media writing and literary programming.",
+     "evidence": [
+      {
+       "record_quote": "Our goal was to make available a wide range of resources centered on digital and contemporary formally innovative poetries, new media writing, and literary programming.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Buffalo",
+      "SUNY",
+      "Poetics Program",
+      "Center for Programs in Contemporary Writing",
+      "CPCW"
+     ],
+     "reference": "Founded at the Poetics Program of SUNY-Buffalo; in collaboration with CPCW at Penn from 2003; affiliated with Poetics and Media Study at Buffalo and with CPCW.",
+     "evidence": [
+      {
+       "record_quote": "EPC was founed by Loss Peqeño Glazier, with Charles Bernstein, at the Poetics Program of SUNY-Buffalo in 1995.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      },
+      {
+       "record_quote": "In 2003, EPC began its active collaboration with the Center for Programs in Contemporary Writing (CPCW) at the University of Pennsylvania, including its sister site, PennSound.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      },
+      {
+       "record_quote": "We continue our affilation with Poetics and Media Studies at Buffalo and with CPCW at Penn.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/epc--about.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'epc' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a major online archive and resource gateway for digital, experimental, and avant-garde poetry.",
+    "basis": "The center reached by name; founders, origin, E-Poetry 2001, sections and partners given."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Overview: Electronic Poetry Center (EPC) is an online resource for digital poetry"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Founded: July 10, 1994, by Loss Pequeño Glazier and Charles Bernstein."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Founded: July 10, 1994"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a major online archive and resource gateway for digital, experimental, and avant-garde poetry."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Author Libraries: Curated collections of contemporary poet pages containing biographies, photos, essays, and links to online works."
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "Origin: Created as part of the Poetics Program at the State University of New York (SUNY) at Buffalo."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The center composed accurately at its grain from its Wikipedia article, with that article's founding date and its Buffalo frame. Its move to Penn and the archives of the Poetics Program and the Poetics List, on its own About page, are absent.",
+   "key": "electronic-poetry-center-aio-20261101",
+   "entry": "electronic-poetry-center-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-epc"
+  }
+ ]
+}

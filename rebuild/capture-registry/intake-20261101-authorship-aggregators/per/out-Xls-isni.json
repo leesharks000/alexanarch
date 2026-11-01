@@ -1,0 +1,297 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-isni",
+   "name": "ISNI (International Standard Name Identifier)",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own home page and a third-party account (Wikipedia), saved 2026-11-01, describe it as the ISO certified global standard number for contributors to creative works. A site, read on the site template.",
+   "records": [
+    {
+     "source": "ISNI (International Standard Name Identifier) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "ISNI (International Standard Name Identifier) (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "ISNI",
+      "International Standard Name Identifier"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution, including researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators, and more.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "The International Standard Name Identifier ( ISNI ) is an identifier system for uniquely identifying the public identities of contributors to media content such as books , television programmes , and newspaper articles.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "ISNI International Agency",
+      "ISNI-IA"
+     ],
+     "reference": "ISNI International Agency (ISNI-IA) Limited, registered c/o EDItEUR, London; a UK not-for-profit company founded by CISAC, CENL, IFRRO, IPDA, OCLC and ProQuest.",
+     "evidence": [
+      {
+       "record_quote": "ISNI International Agency (ISNI-IA) LIMITED Registered address: c/o EDItEUR, United House, North Road, London, N7 9DP, UK Company registration number: 07476425",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "This UK registered, not-for-profit company has been founded by a consortium of organisations consisting of the Confédération Internationale des Sociétés d'Auteurs et Compositeurs (CISAC), the Conference of European National Librarians (CENL), the International Federation of Reproduction Rights Organisations (IFRRO), the International Performers Database Association (IPDA), the Online Computer Library Center (OCLC) and ProQuest .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2012"
+     ],
+     "reference": "The standard published 15 March 2012.",
+     "evidence": [
+      {
+       "record_quote": "the valid standard was published on 15 March 2012.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The ISO certified global standard number (ISO 27729) for identifying the contributors to creative works and those active in their distribution.",
+     "evidence": [
+      {
+       "record_quote": "ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution, including researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators, and more.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "As ISO 27729, it is part of a family of international standard identifiers",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Public records of more than 16.6 million identities, over 14.6 million individuals and 2,076,462 organizations or groups, with direct contributions from 100 sources.",
+     "evidence": [
+      {
+       "record_quote": "ISNI holds public records of more than 16.6 million identities",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "ISNI holds public records of over 14.6 million individuals (of which over 2.9 million are researchers)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "ISNI holds public records of 2,076,462 organizations or groups",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "The ISNI database is a cross-domain resource with direct contributions from 100 sources",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To assign to the public name(s) of a contributor a persistent unique number, resolving name ambiguity, so that every published work can be unambiguously attributed to its creator.",
+     "evidence": [
+      {
+       "record_quote": "The mission of the ISNI International Agency (ISNI-IA) is to assign to the public name(s) of a researcher, inventor, writer, artist, performer, publisher, etc. a persistent unique identifying number in order to resolve the problem of name ambiguity in search and discovery",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      },
+      {
+       "record_quote": "so that every published work can be unambiguously attributed to its creator wherever that work is described.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A subset of the data under CC0; a Gender Identities Policy linked from the home page (not saved).",
+     "evidence": [
+      {
+       "record_quote": "A subset of the data is available under CC0 .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      },
+      {
+       "record_quote": "Gender Identities Policy",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "VIAF",
+      "Virtual International Authority File",
+      "OCLC"
+     ],
+     "reference": "Based primarily on VIAF, developed by OCLC for the aggregation of library catalogues.",
+     "evidence": [
+      {
+       "record_quote": "The system is based primarily on the Virtual International Authority File (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "15 digits",
+      "15 numeric digits",
+      "check character"
+     ],
+     "reference": "Fifteen digits followed by a check character.",
+     "evidence": [
+      {
+       "record_quote": "ISNI consists of 15 digits followed by a check character.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'isni' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "The International Standard Name Identifier (ISNI) is an ISO-certified global standard number (ISO 27729) used to uniquely identify the public identities of contributors to creative and scholarly works",
+    "basis": "The standard reached by name; its scope, format, size and agency given from its home page."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "The International Standard Name Identifier (ISNI) is an ISO-certified global standard number (ISO 27729)"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Governance: Managed by the London-based ISNI International Agency (ISNI-IA)."
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is an ISO-certified global standard number (ISO 27729) used to uniquely identify the public identities of contributors to creative and scholarly works"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Database Size: Holds public records for over 16.6 million identities (including over 14.6 million individuals and 2 million organizations)."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Resolves Name Ambiguity: Distinguishes creators and organizations who share identical or similar names across the global supply chain."
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Format: A 16-digit identifier (15 numeric digits plus a MOD 11-2 check character)."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "Accurate at the level of definition, format, size and agency. On the census's question it states a linkage of a person's names under one profile, where the saved account gives each published name its own number.",
+   "key": "isni-aio-20261101",
+   "entry": "isni-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-isni"
+  }
+ ]
+}

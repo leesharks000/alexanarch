@@ -1,0 +1,34 @@
+{
+  "row": "electronic-poetry-center",
+  "address": "Electronic Poetry Center",
+  "entity": "The Electronic Poetry Center (EPC; writing.upenn.edu/epc/, formerly epc.buffalo.edu), founded by Loss Pequeño Glazier with Charles Bernstein at the Poetics Program of SUNY-Buffalo (1995 by its About page; July 10, 1994 by Wikipedia), in collaboration with the Center for Programs in Contemporary Writing at the University of Pennsylvania since 2003: in its own words 'the first comprehensive Internet archive of its kind for poetry and poetics', with a Digital Library, E-Poetry and Author libraries and the archives of the Buffalo Poetics Program (1991 to 2003) and the Poetics List (1993 to 2014); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/epc)",
+  "row_type": "C (a public entity on which the archive bears: an internet archive and resource site for poetry and poetics, holding author pages and a field's own discussion record; an entity of the leesharks.com apparatus authorship census)",
+  "aliases": [
+    {"pattern": "\\bElectronic Poetry Cent(er|re)\\b", "flags": "i"},
+    {"pattern": "\\bEPC\\b", "flags": ""},
+    {"pattern": "\\bepc\\.buffalo\\.edu\\b|writing\\.upenn\\.edu/epc", "flags": "i"},
+    {"pattern": "\\bPoetics List\\b|\\bBuffalo Poetics Program\\b", "flags": "i"}
+  ],
+  "classes": [
+    {"term": "archives of experimental, avant-garde and formally innovative poetry and poetics",
+     "pattern": "\\b(avant-garde (poetry|poetics|archives?|writing)|experimental (poetry|poetics|writing)|formally innovative|archives? of (experimental|avant-garde) (writing|poetry))\\b",
+     "flags": "i",
+     "basis": "field: B5 (About: 'resources centered on digital and contemporary formally innovative poetries, new media writing, and literary programming'); B2 (Wikipedia: 'experimental, progressive, and avant-garde poetics'); B2's card snippet ('contemporary formally innovative, experimental, and avant-garde poetries'); census areas ['avant-garde-archives'] ('Avant-garde and experimental archives: the record of experimental writing, sound, visual and procedural work, and of its small presses')."},
+    {"term": "digital and electronic poetry",
+     "pattern": "\\b(digital poetry|electronic poetry|e-poetry|electronic literature|new media writing|hypertext poetry)\\b",
+     "flags": "i",
+     "basis": "field: B2 (Wikipedia: 'an online resource for digital poetry'); B3 (ELMCIP: 'a central gateway to resources in electronic poetry and poetics'); B4 (poets.org: 'the E-Poetry section includes links to Internet-dependent works of poetry'); B5 (About: 'digital and contemporary formally innovative poetries, new media writing')."},
+    {"term": "holding work under an author's name (author pages, author libraries)",
+     "pattern": "\\b(author pages?|author librar(y|ies)|under (the|an|one|a single) (author'?s? )?(civil |legal )?name|filed under|name authorit(y|ies))\\b",
+     "flags": "i",
+     "basis": "census: rows[slug == 'epc'].question ('author-page holding: whether a formally innovative poet's work ... is held, and under which author page'), record.name ('the saved sources show author pages under poets' names and state no policy on pseudonyms, heteronyms or collective names'), does_not_answer ('how a poet writing under several names is filed'); field: B5 ('Digital Library, E-Poetry and Author libraries'), B4 ('two extensive lists of author pages')."},
+    {"term": "a field's own discussion record (a poetry listserv, a program's archive)",
+     "pattern": "\\b(listservs?|discussion (list|group)s?|mailing lists?|poetics list)\\b",
+     "flags": "i",
+     "basis": "field: B5 (About: 'We also house the archives of the Buffalo Poetics Program from its fouding in 1991 to 2003 and of the Poetics List (1993-2014), the first poetry listserv discussion group.'); census record_object and ls_reading ('holds a field's authors beside the field's own discussion (the Poetics List, the Buffalo Poetics Program)')."}
+  ],
+  "classes_note": "Four classes, each sourced: (1) archives of experimental, avant-garde and formally innovative poetry and poetics (B5, B2 and its card, census area 'avant-garde-archives'); (2) digital and electronic poetry (B2, B3, B4, B5); (3) holding work under an author's name, the census's own question for the entity (census question, record.name, does_not_answer; B4, B5); (4) a field's own discussion record (B5; census record_object and ls_reading). The aliases are the entity's names (Electronic Poetry Center, EPC), its hosts (epc.buffalo.edu, writing.upenn.edu/epc) and the two archives it houses (the Poetics List, the Buffalo Poetics Program), recorded as aliases so that any archive text naming them is read. PennSound, UbuWeb, Jacket2, CPCW and the University at Buffalo are distinct entities (neighbours and holders) and are not aliases. #940 and #1722, the census's anchors, are read at the passages that bear on the entity's kind: name and attribution regimes (author pages under civil names), pseudonyms and heteronyms, collective authorship, and the existence tax. Admission by reading (§3.4): D where a deposit names the entity and says something of it; R where it states a relation between the entity and an archive object; O-class where a sentence applies an archive category to one of the classes; a bare mention, a citation line or a list of keywords is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v09 briefs it names; address 'Electronic Poetry Center' (electronic-poetry-center-aio-20261101, OBS-4ac0c8d67c05, ADDR-a24c4243518b), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN.",
+  "hop_from": [940, 1722]
+}

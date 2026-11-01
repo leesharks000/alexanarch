@@ -1,0 +1,675 @@
+{
+ "row": "orcid",
+ "pass": "first reading 2026-11-01; second pass with one citation hop from the 30 deposits admitted at the first reading",
+ "procedure": "EA-NEGONT-02 v0.10 (#1726) §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on ORCID with the name; R, a relation the archive states between ORCID and an archive object (its iD, its heteronyms, the archive); O, an archive category applied to ORCID or to a class the field and the census source for it (persistent identifiers for persons; author name disambiguation) or the archive alone sources (civil-name attribution: the census's ls_reading and does_not_answer). #940 and #1722, the census's anchors, read at the passages that bear on name authorities, pseudonyms and heteronyms and the existence tax. A bare mention (the iD in a byline, a metadata field, a JSON-LD block, a list of surfaces) is not a claim.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "counts": {
+  "D_sentences": 2175,
+  "D_deposits": 969,
+  "R_sentences": 1616,
+  "R_deposits": 858,
+  "O_direct": 1733,
+  "O_class": 288,
+  "O_deposits": 961,
+  "H_candidates": 301
+ },
+ "verdicts": [
+  {
+   "dep": 940,
+   "strata": [
+    "D",
+    "O",
+    "R"
+   ],
+   "reason": "The civil-name regime ¶1 (line 79): the civil name as the atomic unit of attribution in the systems of scholarly legitimacy; §2, the critical refinement (line 114): a heteronym attributable through the civil bearer without reduction to that bearer; what heteronymy does (line 126): collapse into single-civil-identity ownership registers as loss; cases: Mary Lee Sharks (line 166): a heteronymic entity shares an ORCID identifier for cross-attribution; the ORCID's normative implications left open",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "R940-04"
+   ],
+   "cands": [
+    "D0928",
+    "D0929",
+    "D0930",
+    "O0829",
+    "O0830",
+    "O0831",
+    "O0832",
+    "O0833",
+    "O0834",
+    "O0835",
+    "O0836",
+    "O0837"
+   ]
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Part One ¶3 (line 55): an Overview at the author's name found the ORCID among the record and denied none of it; Part One ¶5 (line 65): an ORCID record cited as evidence that the name is real, and the Overview siding with the other answer",
+   "claims": [
+    "R1722-01",
+    "R1722-02"
+   ],
+   "cands": [
+    "D2162",
+    "D2163",
+    "D2164",
+    "D2165",
+    "O2006",
+    "O2007",
+    "R1607",
+    "R1608",
+    "R1609"
+   ]
+  },
+  {
+   "dep": 1009,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Prerequisite A (line 156): the account belongs to the legal identity; a heteronym has an alternate-name presence within it, the pattern by which Lee Sharks operates on 0009-0000-1599-0703; Prerequisite A (line 156): the mechanism is ORCID's 'Other names' / 'Also known as', on ORCID's own documentation, which the procedure defers to; public declaration (line 439): the alternate-name registration makes the relation visible on the profile",
+   "claims": [
+    "D1009-01",
+    "D1009-02",
+    "D1009-03"
+   ],
+   "cands": [
+    "D1056",
+    "D1057",
+    "D1058",
+    "D1059",
+    "D1060",
+    "D1061",
+    "D1062",
+    "D1063",
+    "D1064",
+    "D1065",
+    "D1066",
+    "D1067"
+   ]
+  },
+  {
+   "dep": 135,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Anchor 3 (line 319): the earlier instance of #1009's anchor: one ORCID, the heteronym an alternate published name, never a separate ORCID",
+   "claims": [
+    "D135-01"
+   ],
+   "cands": [
+    "D0271",
+    "D0272",
+    "D0273",
+    "D0274",
+    "D0275",
+    "D0276",
+    "D0277",
+    "D0278",
+    "D0279",
+    "D0280",
+    "D0281",
+    "D0282"
+   ]
+  },
+  {
+   "dep": 1446,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "§11, sameAs (lines 180–184): sameAs to the orthonym's ORCID asserts the heteronym is the orthonym: the collapse; §11, rule (lines 182–184): the archive's ORCID belongs in the deposit record and not in a heteronym's identity graph",
+   "claims": [
+    "D1446-01",
+    "D1446-02"
+   ],
+   "cands": [
+    "D1768",
+    "D1769",
+    "D1770",
+    "D1771",
+    "O1636",
+    "O1637",
+    "R1325",
+    "R1326",
+    "R1327"
+   ]
+  },
+  {
+   "dep": 928,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "witness identity (lines 99–102): the heteronym's ORCID anchors the witness; no civil identity stored",
+   "claims": [
+    "D928-01"
+   ],
+   "cands": [
+    "D0903",
+    "D0904",
+    "D0905",
+    "D0906",
+    "D0907",
+    "D0908",
+    "D0909",
+    "D0910",
+    "D0911",
+    "D0912",
+    "D0913",
+    "D0914"
+   ]
+  },
+  {
+   "dep": 794,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "opening (line 23): the heteronym Lee Sharks has the ORCID",
+   "claims": [
+    "D794-01"
+   ],
+   "cands": [
+    "D0692",
+    "D0693",
+    "O0593",
+    "O0594",
+    "R0447",
+    "R0448"
+   ]
+  },
+  {
+   "dep": 922,
+   "strata": [
+    "D"
+   ],
+   "reason": "personal-name protection (line 68): the ORCID documents identity continuity without naming the civil identity",
+   "claims": [
+    "D922-01"
+   ],
+   "cands": [
+    "D0896",
+    "D0897",
+    "D0898",
+    "O0800",
+    "O0801",
+    "R0619"
+   ]
+  },
+  {
+   "dep": 162,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "accepted rulings (para 65): a ruling of 2026-06-08: the ORCID belongs to Lee Sharks and is not assigned to Mary Lee",
+   "claims": [
+    "D162-01"
+   ],
+   "cands": [
+    "D0345",
+    "D0346",
+    "D0347",
+    "O0294",
+    "O0295",
+    "O0296",
+    "R0200",
+    "R0201"
+   ]
+  },
+  {
+   "dep": 823,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "statement of the petitioner (line 21): a heteronym holds publications of record under its own creator name on the shared ORCID",
+   "claims": [
+    "R823-01"
+   ],
+   "cands": [
+    "D0720",
+    "D0721",
+    "O0644",
+    "O0645",
+    "R0475",
+    "R0476"
+   ]
+  },
+  {
+   "dep": 1210,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "statement (line 96): the petition's later instance: four publications regularized under 'Sharks, Mary Lee' on the shared ORCID",
+   "claims": [
+    "R1210-01"
+   ],
+   "cands": [
+    "D1449",
+    "D1450",
+    "D1451",
+    "O1340",
+    "O1341",
+    "O1342",
+    "R1041",
+    "R1042",
+    "R1043"
+   ]
+  },
+  {
+   "dep": 1429,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "CP-2 (line 146): the registry's rule: a heteronym creator carries the shared ORCID; CP-R2 (line 158): open: whether OAI records expose the shared ORCID on heteronym creators",
+   "claims": [
+    "D1429-01",
+    "D1429-02"
+   ],
+   "cands": [
+    "D1743",
+    "D1744",
+    "D1745",
+    "D1746",
+    "O1613",
+    "O1614",
+    "O1615",
+    "O1616",
+    "R1306",
+    "R1307",
+    "R1308"
+   ]
+  },
+  {
+   "dep": 1377,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "FAQ JSON-LD (line 646): a heteronym and the accountable author both attributed under the one ORCID",
+   "claims": [
+    "R1377-01"
+   ],
+   "cands": [
+    "D1631",
+    "D1632",
+    "D1633",
+    "D1634",
+    "D1635",
+    "D1636",
+    "D1637",
+    "D1638",
+    "D1639",
+    "O1514",
+    "O1515",
+    "O1516"
+   ]
+  },
+  {
+   "dep": 195,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Conclusion, preceding ¶ (line 122): the operator carries the ORCID as Editor on a work bylined to heteronyms: the aperture",
+   "claims": [
+    "R195-01"
+   ],
+   "cands": [
+    "D0386",
+    "D0387",
+    "O0332",
+    "R0234"
+   ]
+  },
+  {
+   "dep": 196,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "the institution (line 57): one ORCID under many names, read as the corpus's remarking machine",
+   "claims": [
+    "R196-01"
+   ],
+   "cands": [
+    "D0388",
+    "D0389",
+    "O0333",
+    "R0235",
+    "R0236"
+   ]
+  },
+  {
+   "dep": 126,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "ORCID inscription (para 87): the ORCID as the operator's persistent inscription",
+   "claims": [
+    "D126-01"
+   ],
+   "cands": [
+    "D0199",
+    "D0200",
+    "D0201",
+    "D0202",
+    "D0203",
+    "D0204",
+    "D0205",
+    "D0206",
+    "D0207",
+    "D0208",
+    "D0209",
+    "D0210"
+   ]
+  },
+  {
+   "dep": 868,
+   "strata": [
+    "D"
+   ],
+   "reason": "§3 (line 85): a DataCite sweep: 399 DOIs by ORCID, 307 more by heteronym creator names",
+   "claims": [
+    "D868-01"
+   ],
+   "cands": [
+    "D0804",
+    "D0805",
+    "D0806",
+    "D0807",
+    "O0735",
+    "O0736",
+    "O0737",
+    "R0545",
+    "R0546",
+    "R0547",
+    "R0548"
+   ]
+  },
+  {
+   "dep": 1075,
+   "strata": [
+    "D"
+   ],
+   "reason": "Appendix A note (line 91): the backup queried by ORCID and by each heteronym creator name",
+   "claims": [
+    "D1075-01"
+   ],
+   "cands": [
+    "D1179",
+    "D1180",
+    "D1181",
+    "D1182",
+    "D1183",
+    "O1091",
+    "O1092",
+    "R0818",
+    "R0819",
+    "R0820",
+    "R0821"
+   ]
+  },
+  {
+   "dep": 147,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "the substitution (line 23): ORCID record updates did not correct an entity substitution at the name",
+   "claims": [
+    "D147-01"
+   ],
+   "cands": [
+    "D0321",
+    "D0322",
+    "D0323",
+    "D0324",
+    "D0325",
+    "D0326",
+    "O0278",
+    "O0279",
+    "R0182",
+    "R0183",
+    "R0184"
+   ]
+  },
+  {
+   "dep": 79,
+   "strata": [
+    "D"
+   ],
+   "reason": "§1 (line 42): ORCID records attachable to any self-asserted identity; markers mistaken for provenance; alias capture (lines 173, 271): an ORCID cannot make an alias true (the Satoshi claimant with two ORCID records)",
+   "claims": [
+    "D79-01",
+    "D79-02"
+   ],
+   "cands": [
+    "D0084",
+    "D0085",
+    "D0086",
+    "D0087",
+    "D0088",
+    "D0089",
+    "D0090",
+    "D0091",
+    "D0092",
+    "D0093",
+    "D0094",
+    "D0095"
+   ]
+  },
+  {
+   "dep": 703,
+   "strata": [
+    "D"
+   ],
+   "reason": "verification_level description (line 98): ORCID does not verify authorship claims",
+   "claims": [
+    "D703-01"
+   ],
+   "cands": [
+    "D0525",
+    "D0526",
+    "D0527",
+    "D0528",
+    "D0529",
+    "D0530",
+    "D0531",
+    "D0532",
+    "D0533",
+    "O0453",
+    "O0454",
+    "O0455"
+   ]
+  },
+  {
+   "dep": 84,
+   "strata": [
+    "D"
+   ],
+   "reason": "identity nodes (line 363): two ORCIDs for one person make two identity nodes",
+   "claims": [
+    "D84-01"
+   ],
+   "cands": [
+    "D0106",
+    "D0107",
+    "D0108",
+    "D0109",
+    "D0110",
+    "D0111",
+    "D0112",
+    "D0113",
+    "D0114",
+    "D0115",
+    "D0116",
+    "D0117"
+   ]
+  },
+  {
+   "dep": 1073,
+   "strata": [
+    "D"
+   ],
+   "reason": "subsidiary defects (line 27): ORCID iDs issued to individual natural persons only, against an office that said otherwise",
+   "claims": [
+    "D1073-01"
+   ],
+   "cands": [
+    "D1171",
+    "D1172",
+    "D1173",
+    "D1174",
+    "D1175",
+    "D1176",
+    "D1177",
+    "O1089",
+    "O1090",
+    "R0815",
+    "R0816"
+   ]
+  },
+  {
+   "dep": 49,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "Heteronymic Distribution (line 2201): distinct ORCID identifiers per heteronym would read as a community",
+   "claims": [
+    "R49-01"
+   ],
+   "cands": [
+    "D0009",
+    "D0010",
+    "O0011",
+    "O0012",
+    "R0006"
+   ]
+  },
+  {
+   "dep": 115,
+   "strata": [
+    "D",
+    "R"
+   ],
+   "reason": "named positions (lines 561–565): do not collapse the heteronyms into Lee's ORCID unless intentional",
+   "claims": [
+    "D115-01"
+   ],
+   "cands": [
+    "D0173",
+    "D0174",
+    "D0175",
+    "D0176",
+    "D0177",
+    "D0178",
+    "D0179",
+    "D0180",
+    "D0181",
+    "O0154",
+    "O0155",
+    "O0156"
+   ]
+  },
+  {
+   "dep": 754,
+   "strata": [
+    "O",
+    "R"
+   ],
+   "reason": "heteronymic handle support (line 220): each heteronym an ORCID-equivalent inscription chain; the civil identity protected",
+   "claims": [
+    "O754-01"
+   ],
+   "cands": [
+    "D0610",
+    "D0611",
+    "D0612",
+    "D0613",
+    "D0614",
+    "O0520",
+    "O0521",
+    "O0522",
+    "O0523",
+    "O0524",
+    "O0525",
+    "O0526"
+   ]
+  },
+  {
+   "dep": 996,
+   "strata": [
+    "O"
+   ],
+   "reason": "the Orthonym Inversion: infrastructure built on the legal name as the real person",
+   "claims": [
+    "O996-01"
+   ],
+   "cands": [
+    "D1029",
+    "O0935",
+    "O0936",
+    "O0937",
+    "O0938",
+    "O0939",
+    "O0940",
+    "O0941",
+    "O0942",
+    "O0943",
+    "O0944",
+    "O0945"
+   ]
+  },
+  {
+   "dep": 1183,
+   "strata": [
+    "O"
+   ],
+   "reason": "the Armature fields: the archive's own record of a named position carries a declared civil-name relation",
+   "claims": [
+    "O1183-01"
+   ],
+   "cands": [
+    "D1343",
+    "D1344",
+    "D1345",
+    "D1346",
+    "H0238",
+    "O1243",
+    "O1244",
+    "O1245",
+    "O1246",
+    "O1247",
+    "O1248",
+    "O1249"
+   ]
+  }
+ ],
+ "rejected": {
+  "rule": "every other candidate: the iD or the name as a bare mention (byline, metadata, schema, surface list), or a sentence that says nothing of ORCID or of a sourced class; the O-direct candidates (1733) are sentences that name ORCID beside an archive category without applying it to ORCID; the 301 hop candidates were read by title and by the string-pass sentences each holds, and none adds a claim beyond those admitted except #1183 (O-class), admitted with its instance #68",
+  "reading_note": "the 2175 D sentences were first reduced to the 757 that use the name beyond the iD and then to 674 outside JSON-LD and schema blocks; these were read through a predicate filter (ORCID with a verb of being, holding, verifying, belonging or anchoring, or with heteronym, alternate name, civil or legal identity) and then by eye at their paragraphs. The filter is recorded as a reading aid; it is no ground of removal (§3.4 S4)"
+ },
+ "not_admitted": [
+  {
+   "cands": "rule",
+   "reason": "every other candidate: the iD or the name as a bare mention (byline, metadata, schema, surface list), or a sentence that says nothing of ORCID or of a sourced class; the O-direct candidates (1733) are sentences that name ORCID beside an archive category without applying it to ORCID; the 301 hop candidates were read by title and by the string-pass sentences each holds, and none adds a claim beyond those admitted except #1183 (O-class), admitted with its instance #68"
+  },
+  {
+   "cands": "reading_note",
+   "reason": "the 2175 D sentences were first reduced to the 757 that use the name beyond the iD and then to 674 outside JSON-LD and schema blocks; these were read through a predicate filter (ORCID with a verb of being, holding, verifying, belonging or anchoring, or with heteronym, alternate name, civil or legal identity) and then by eye at their paragraphs. The filter is recorded as a reading aid; it is no ground of removal (§3.4 S4)"
+  }
+ ]
+}

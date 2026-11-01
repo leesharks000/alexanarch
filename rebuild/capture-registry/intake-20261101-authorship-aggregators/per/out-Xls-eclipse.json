@@ -1,0 +1,280 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-eclipse",
+   "name": "Eclipse",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages and its Wikipedia account, saved 2026-11-01, describe it as an online archive of digital facsimiles of small-press writing, with an author index and a title index. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Eclipse (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--authors.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Eclipse (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Eclipse (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Eclipse",
+      "ECLIPSE",
+      "eclipsearchive.org"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Eclipse: Author Index",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--authors.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Craig Dworkin",
+      "Danny Snelson",
+      "Dworkin",
+      "Snelson"
+     ],
+     "reference": "Founding Editor Craig Dworkin, Editor Danny Snelson; Wikipedia has Dworkin co-managing it with Snelson, of UCLA.",
+     "evidence": [
+      {
+       "record_quote": "Founding Editor: Craig Dworkin Editor: Danny Snelson",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--home.txt"
+      },
+      {
+       "record_quote": "Dworkin co-manages the archive with Danny Snelson, assistant professor of English at UCLA .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2002"
+     ],
+     "reference": "Started by Dworkin in 2002 (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "Dworkin started the archive in 2002 to provide readers and scholars with access to avant-garde works that were no longer available in print from their original publishers; Eclipse later expanded to publish selected new works and born-digital publications in the spirit of those earlier presses.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An online archive of digital facsimiles of radical small-press writing from the last quarter of the 20th century, later publishing selected new and born-digital works (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "Dworkin is the founding senior editor of Eclipse, an online archive focusing on digital facsimiles of radical small-press writing from the last quarter of the 20th century.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      },
+      {
+       "record_quote": "Dworkin started the archive in 2002 to provide readers and scholars with access to avant-garde works that were no longer available in print from their original publishers; Eclipse later expanded to publish selected new works and born-digital publications in the spirit of those earlier presses.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Titles held in an author index, a co-written title under every collaborator, editors marked '[Editor]', translators '(trans.)'; high-resolution scans of every page, most from Dworkin's collection; the newest item the first issue of Gnome Baker (October 1976).",
+     "evidence": [
+      {
+       "record_quote": "LEGEND [with Charles Bernstein, Ray DiPalma, Steve McCaffery, and Ron Silliman]",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--authors.txt"
+      },
+      {
+       "record_quote": "Ray DiPalma LEGEND [with Bruce Andrews, Charles Bernstein, Steve McCaffery, and Ron Silliman]",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--authors.txt"
+      },
+      {
+       "record_quote": "L=A=N=G=U=A=G=E [Editor, with Charles Bernstein]",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--authors.txt"
+      },
+      {
+       "record_quote": "Rosmarie Waldrop (trans.) The Dilemma of Being High and Dry",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--authors.txt"
+      },
+      {
+       "record_quote": "Eclipse includes high-resolution scans of every page of its included texts, most from Dworkin's personal collection,",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      },
+      {
+       "record_quote": "NEW TO THE ARCHIVE: The first issue of the fugitive Gnome Baker magazine, from October, 1976. Edited by Madeleine Burnside and Andrew W. Kelly, the inaugural number featured work by Michael Davidson, Rita Myers, and Michael Palmer.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To give readers and scholars access to avant-garde works no longer in print from their original publishers, conserving the facture and material specificity of the printed object (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "Dworkin started the archive in 2002 to provide readers and scholars with access to avant-garde works that were no longer available in print from their original publishers; Eclipse later expanded to publish selected new works and born-digital publications in the spirit of those earlier presses.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      },
+      {
+       "record_quote": "in an attempt to \"conserve ... the facture and material specificity of the book or printed document as an object.\"",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Sun & Moon",
+      "Messerli"
+     ],
+     "reference": "Its name an homage to Douglas Messerli's Sun & Moon press (Wikipedia).",
+     "evidence": [
+      {
+       "record_quote": "The archive's name is an homage to Douglas Messerli ’s Sun & Moon press.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/eclipse--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'eclipse' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "partial",
+    "abn": false,
+    "span": "is a digital poetry publisher and archive founded by Craig Dworkin and edited by Danny Snelson",
+    "basis": "The archive reached in one bullet of five senses of the name, with its editors and its newest item; the other four bullets and seven of eight cards are other Eclipse archives."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "eclipsearchive.org"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "founded by Craig Dworkin and edited by Danny Snelson"
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a digital poetry publisher and archive founded by Craig Dworkin"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "NEW TO THE ARCHIVE: The first issue of the fugitive Gnome Baker magazine, from October, 1976."
+    },
+    {
+     "atom": "purpose",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "A disambiguation in which the poetry archive leads, its editors and newest item correct. Its purpose, its 2002 start and the author index that holds each collaborator and translator under a name of their own are not in the composition.",
+   "key": "eclipse-archive-aio-20261101",
+   "entry": "eclipse-archive-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-eclipse"
+  }
+ ]
+}

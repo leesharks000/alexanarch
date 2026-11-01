@@ -1,0 +1,281 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-copyright-office-ai",
+   "name": "Copyright and Artificial Intelligence",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages and its Wikipedia account, saved 2026-11-01, describe it as the Copyright Office's initiative on the copyright law and policy issues raised by AI. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Copyright and Artificial Intelligence (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Copyright and Artificial Intelligence (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Copyright and Artificial Intelligence",
+      "AI initiative",
+      "Artificial Intelligence Initiative"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Since launching an initiative in early 2023, the Copyright Office has been examining the copyright law and policy issues raised by artificial intelligence (AI), including the scope of copyright in AI-generated works and the use of copyrighted materials in AI training.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "March 16, 2023 - Copyright Office Launches New Artificial Intelligence Initiative",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "U.S. Copyright Office",
+      "Copyright Office",
+      "USCO"
+     ],
+     "reference": "The U.S. Copyright Office, 101 Independence Ave. S.E., Washington, D.C.; its footer links the Library of Congress.",
+     "evidence": [
+      {
+       "record_quote": "U.S. Copyright Office 101 Independence Ave. S.E. Washington, D.C.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "Library of Congress",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2023"
+     ],
+     "reference": "The initiative launched March 16, 2023.",
+     "evidence": [
+      {
+       "record_quote": "March 16, 2023 - Copyright Office Launches New Artificial Intelligence Initiative",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The copyright law and policy issues raised by AI, including the scope of copyright in AI-generated works and the use of copyrighted materials in AI training.",
+     "evidence": [
+      {
+       "record_quote": "Since launching an initiative in early 2023, the Copyright Office has been examining the copyright law and policy issues raised by artificial intelligence (AI), including the scope of copyright in AI-generated works and the use of copyrighted materials in AI training.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A Report in Parts (Part 1, digital replicas, July 31, 2024; Part 2, copyrightability of outputs, January 29, 2025; Part 3, training, pre-publication May 9, 2025); registration guidance (88 Fed. Reg. 16,190); a notice of inquiry (88 Fed. Reg. 59,942, Aug. 30, 2023) with over 10,000 comments; Review Board and registration decisions; the government's briefs in Thaler and Allen.",
+     "evidence": [
+      {
+       "record_quote": "The Office is issuing a Report in several Parts analyzing the issues, which will be published as they are completed and linked below.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "Part 1 was published on July 31, 2024, and addresses the topic of digital replicas. Part 2 was published on January 29, 2025, and addresses the copyrightability of outputs created using generative AI.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "On May 9, 2025, the Office released a pre-publication version of Part 3 in response to congressional inquiries and expressions of interest from stakeholders. A final version of Part 3 will be published in the future, without any substantive changes expected in the analysis or conclusions.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "Federal Register Version, 88 Fed. Reg. 16,190 (Mar. 16, 2023)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "NOI Federal Register Version, 88 Fed. Reg. 59,942 (Aug. 30, 2023)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "the Office published a notice of inquiry in the Federal Register in August 2023, which received over 10,000 comments by December 2023.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "Review Board decision on SURYAST (December 11, 2023) Review Board Decision on Théâtre D'opéra Spatial (Sept. 5, 2023) Registration Decision on Zarya of the Dawn (Feb. 21, 2023) Review Board Decision on A Recent Entrance to Paradise (Feb. 14, 2022)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "Court of Appeals Decision Affirming Refusal of Registration",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      },
+      {
+       "record_quote": "Allen v. Perlmutter U.S. Reply Brief and Response in Support of Cross-Motion for Summary Judgment",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Human authorship as the condition of registration (Wikipedia): AI-generated material beyond de minimis must be disclaimed; works whose expressive elements are determined by a machine remain uncopyrightable; AI-assisted works where human expression remains evident can be registered.",
+     "evidence": [
+      {
+       "record_quote": "The United States Copyright Office has declared that works not created by a human author, like this \"selfie\" portrait taken by a monkey , are not eligible for copyright protection.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--wikipedia.txt"
+      },
+      {
+       "record_quote": "The Board finds that the Work contains more than a de minimis amount of content generated by artificial intelligence (\"AI\"), and this content must therefore be disclaimed in an application for registration.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--wikipedia.txt"
+      },
+      {
+       "record_quote": "Works \"where the expressive elements are determined by a machine\" still remain uncopyrightable.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--wikipedia.txt"
+      },
+      {
+       "record_quote": "The Copyright Office further clarified in January 2025 that AI-assisted works where the creative expression of the human remains evident in the work can be copyrighted",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/copyright-office-ai--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'copyright-office-ai' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "has released a multi-part analysis addressing digital replicas, generative AI outputs, and AI model training.",
+    "basis": "The initiative reached by name, with its three Report parts, its notice of inquiry, Thaler and the registration rule."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "Copyright and Artificial Intelligence | U.S. Copyright Office"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "The U.S. Copyright Office (USCO) maintains that U.S. law strictly requires human authorship for copyright protection"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "The USCO launched its comprehensive AI initiative in early 2023"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "has released a multi-part analysis addressing digital replicas, generative AI outputs, and AI model training."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Part 2: Copyrightability of Generative AI Outputs (Published January 29, 2025)"
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Applicants must disclose any more-than-de minimis AI-generated material when submitting a work for registration and describe the specific human contribution."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The initiative composed accurately at the level of its Report, with the notice of inquiry dated ten days early after a card's snippet. The rule of subtraction the census reads it for is carried; the denial of review, Allen and any word on the author's name are not.",
+   "key": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+   "entry": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-copyright-office-ai"
+  }
+ ]
+}

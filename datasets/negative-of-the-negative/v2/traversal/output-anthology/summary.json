@@ -1,0 +1,114 @@
+{
+ "row": "output-anthology",
+ "address": "Output: An Anthology of Computer-Generated Text",
+ "entity": "Output: An Anthology of Computer-Generated Text, 1953–2023, an anthology of seven decades of English-language outputs from computer generation systems, selected, introduced and edited by Lillian-Yvonne Bertram and Nick Montfort, co-published by Counterpath and the MIT Press (October/November 2024); formalized in the leesharks.com apparatus authorship census (https://www.leesharks.com/apparatus/aggregators/output-anthology) and the traininglayerliterature.org layer census (https://www.traininglayerliterature.org/aggregators/output-anthology), both of 2026-11-01",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "output-anthology",
+  "address": "Output: An Anthology of Computer-Generated Text",
+  "entity": "Output: An Anthology of Computer-Generated Text, 1953–2023, an anthology of seven decades of English-language outputs from computer generation systems, selected, introduced and edited by Lillian-Yvonne Bertram and Nick Montfort, co-published by Counterpath and the MIT Press (October/November 2024); formalized in the leesharks.com apparatus authorship census (https://www.leesharks.com/apparatus/aggregators/output-anthology) and the traininglayerliterature.org layer census (https://www.traininglayerliterature.org/aggregators/output-anthology), both of 2026-11-01",
+  "row_type": "C (a public entity on which the archive bears: an edited anthology of computer-generated text; an entity of the leesharks.com authorship census and the traininglayerliterature.org layer census)",
+  "aliases": [
+   {
+    "pattern": "\\bOutput: An Anthology of Computer-Generated Text\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bAnthology of Computer-Generated Text\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bOutput\\b[^.\\n]{0,40}\\b(Bertram|Montfort)\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bOUTPUT (A|a)nthology\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bOutput anthology\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "computer-generated text: text produced by generation systems and software",
+    "pattern": "\\b(computer[- ]generated (text|book|poem|poetry|literature)s?|machine[- ]written (text|poem|poetry)s?|text generation|generation systems?|AI[- ]generated (poetry|poem|literature|text)s?)\\b",
+    "flags": "i",
+    "basis": "field: B5 (Counterpath, the entity's own page: 'gathering seven decades of English-language texts produced by generation systems and software'; 'chronicling the vast history of machine-written texts created long before ChatGPT'); B3 (Montfort's post, card 3: 'This anthology spans seven decades of computer-generated text'). The authorship census's area for the entity 'machine-co-authorship' ('Machine participation in authorship: works and practices made with generative models'); the layer census's area 'machine-composition' and record.makes ('the anthology's object is what generation systems made')."
+   },
+   {
+    "term": "procedural and computational poetics (the procedural lineage)",
+    "pattern": "\\b(computational poe(try|tics)|procedural (poe(try|tics)|generation|lineage)|story generation|generative poe(try|tics))\\b",
+    "flags": "i",
+    "basis": "field: B5 (Bertram 'the author of Travesty Generator, a book of computational poetry'; Montfort 'a poet and artist who uses computation as his medium', series editor of the Using Electricity series); B3 ('story generation systems based on cognitive research'; the post's tags 'computational', 'generation', 'story generation'). The layer census's area 'field-history' ('Field history and indexes of electronic, generative and computational literature') and its tll_reading ('the procedural lineage #186 names')."
+   }
+  ],
+  "classes_note": "Two classes, each stated by a field source at the locus given and each an area of one of the two censuses for the entity: (1) computer-generated text, the anthology's object (B5, B3; authorship census area 'machine-co-authorship', layer census area 'machine-composition'); (2) the procedural lineage of computational poetics, to which its editors' works belong (B5, B3; layer census area 'field-history', tll_reading). The censuses' anchors are read at the passages that bear on the entity's kind by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP §Substitutions 6): #940 (EA-HETERONYMY-01) at its operational boundary (machine assistance, editing, collaborative authorship); #1722 (AI Calls You Fake) at the existence tax and its history-as-myth and raw-material moves; #186 (the TLL field survey) at the four practices and the procedural lineage; #1543 (EA-TLL-COMPOSITION-01) at its formal consolidation (T→M, TM→). The editors' names are operators of the entity and are not searched alone; they are joined to 'Output' within one sentence span as an alias.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 briefs it names; address \"Output: An Anthology of Computer-Generated Text\" (output-an-anthology-of-computer-generated-text-aio-20261101, OBS-888ebbd0b2d5, ADDR-1919e1576945), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record; the traininglayerliterature.org layer census record) are ledgered beside the deposits as CAP-1-NN, LS-NN and TLL-NN. Second pass: one citation hop forward and back from the deposits admitted by reading.",
+  "hop_from": [
+   186,
+   1012,
+   400,
+   1543,
+   940
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 34,
+  "O_deposits": 27,
+  "H_candidates": 83
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "10": 2,
+   "11": 1,
+   "30": 1,
+   "49": 1,
+   "87": 1,
+   "108": 1,
+   "110": 1,
+   "137": 1,
+   "158": 1,
+   "170": 1,
+   "186": 3,
+   "198": 1,
+   "400": 1,
+   "415": 1,
+   "622": 2,
+   "736": 1,
+   "753": 2,
+   "819": 1,
+   "907": 3,
+   "1012": 1,
+   "1140": 1,
+   "1397": 1,
+   "1441": 1,
+   "1540": 1,
+   "1634": 1,
+   "1678": 1,
+   "1680": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "f4dba4943f8c29215729a6808845969a9864a8ba8f84f30b5e6a8740082d6778",
+  "candidates-H.jsonl": "008130c506cc99583d54aceb369031252f302d8dd9c96c8d062fd1bd872b09b8"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UbuWeb</title>
+
+  <!-- Mobile viewport for phones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/ono.css">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(images/beckett_header_new.jpg);
+      background-repeat: repeat-x;
+      background-color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Outer page wrapper */
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+
+    /* Add some top breathing room where the old 160px table lived */
+    .header-spacer {
+      height: 160px;
+    }
+
+    /* Main layout: search on left, links on right */
+    .layout {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .search-column {
+      flex: 0 0 120px;
+      font-size: 0.75rem;
+    }
+
+    .nav-column {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin: 0 0 0.25em 0;
+    }
+
+    .founded {
+      font-weight: bold;
+      margin-bottom: 1.5em;
+    }
+
+    /* Ubu section links */
+    .ubu-links a {
+      display: block;
+      font-size: -2;
+      text-decoration: none;
+      margin-bottom: 0.25em;
+    }
+
+    /* Make images and inputs scale nicely on phones */
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 0;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      font-size: 0.75rem;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 4px;
+    }
+
+    /* Responsive tweaks for narrow screens */
+    @media (max-width: 700px) {
+      .header-spacer {
+        height: 100px;
+      }
+
+      .layout {
+        flex-direction: column;
+      }
+
+      .search-column {
+        flex: 1;
+        max-width: 260px;
+      }
+    }
+  </style>
+
+  <script type="text/javascript" src="js/jplayer/playtagger.js"></script>
+  <meta name="robots" content="noindex">
+  <meta name="google-site-verification" content="Gaw4VZwzPlYGjAmbxqsXK0E_t7s3e-HktFW6lTanuI8">
+</head>
+
+<body class="default">
+
+  <div class="page">
+    <!-- Spacer replacing the old 160px header table -->
+    <div class="header-spacer"></div>
+
+    <div class="layout">
+      <!-- Search column -->
+      <div class="search-column">
+      <br><br><br>
+        <img src="images/dot_clear.gif" alt="" width="1" height="70">
+
+        <!-- start of search box html -->
+        <form style="margin:0; margin-top:4px;" action="https://search.freefind.com/find.html"
+              method="get" accept-charset="utf-8" target="_self">
+          <input type="hidden" name="si" value="61902956">
+          <input type="hidden" name="pid" value="r">
+          <input type="hidden" name="n" value="0">
+          <input type="hidden" name="_charset_" value="">
+          <input type="hidden" name="bcd" value="&#247;">
+          <input type="text" name="query" size="15">
+          <input type="submit" value="GO">
+        </form>
+        <!-- end of search box html -->
+      </div>
+
+      <!-- Navigation / content column -->
+      <div class="nav-column">
+        <img src="images/dot_clear.gif" alt="" width="1" height="70"><br>
+<br><br><br>
+        <h1>UbuWeb</h1>
+<br>
+        <div class="ubu-links">
+          <a href="film/index.html">Film &amp; Video</a>
+          <a href="sound/index.html">Sound</a>
+          <a href="dance/index.html">Dance</a>
+          <a href="papers/index.html">Papers</a>
+          <a href="historical/index.html">Historical</a>
+          <a href="vp/index.html">Visual Poetry</a>
+          <a href="cc/index.html">Conceptual Comics</a>
+          <a href="concept/index.html">Conceptual Writing</a>
+          <a href="contemp/index.html">Contemporary</a>
+          <a href="aspen/index.html">Aspen Magazine</a>
+          <a href="outsiders/index.html">Outsiders</a>
+          <a href="ubu/index.html">/ubu Editions</a>
+          <a href="outsiders/365/index.html">365 Days Project</a>
+          <a href="ethno/index.html">Ethnopoetics</a>
+          <a href="emr/index.html">Electronic Music Resources</a>
+          <a href="resources/top_tens.html">UbuWeb Top Tens</a>
+          <a href="resources/about.html">About</a>
+          <a href="https://form.jotform.com/230394274216151">Contact</a>
+          <br><br><br>
+           <div class="archive">
+         
+          <font size="2">Founded in 1996, UbuWeb is the internet's <br>largest archive of free avant-garde materials. <br><br>
+         The site is permanently archived by the <a href="https://www.loc.gov/item/lcwaN0033325/">United States Library of Congress.</a></div>
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

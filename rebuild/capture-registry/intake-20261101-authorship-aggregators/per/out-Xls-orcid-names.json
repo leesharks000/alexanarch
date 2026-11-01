@@ -1,0 +1,285 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-orcid-names",
+   "name": "ORCID",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: a third-party account (Wikipedia; ORCID's own support page was refused), saved 2026-11-01, describes it as a nonproprietary persistent identifier for authors and contributors of scholarly communication. A site, read on the site template.",
+   "records": [
+    {
+     "source": "ORCID (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "ORCID",
+      "Open Researcher and Contributor ID"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The ORCID ( / ˈ ɔːr k ɪ d / ⓘ ; Open Researcher and Contributor ID ) is a nonproprietary persistent identifier , in the form of an alphanumeric code, to uniquely identify authors and contributors of scholarly communication .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "ORCID, Inc.",
+      "nonprofit",
+      "non-profit"
+     ],
+     "reference": "ORCID, Inc., incorporated as an independent nonprofit organization in August 2010 in Delaware, with an international board of directors.",
+     "evidence": [
+      {
+       "record_quote": "ORCID, Inc. was incorporated as an independent nonprofit organization in August 2010 in Delaware, United States of America, with an international board of directors.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2009",
+      "2010",
+      "2012"
+     ],
+     "reference": "Announced in 2009 by publishers of scholarly research; ORCID, Inc. incorporated August 2010; registry services launched 16 October 2012.",
+     "evidence": [
+      {
+       "record_quote": "ORCID was first announced in 2009 as a collaborative effort by publishers of scholarly research \"to resolve the author name ambiguity problem in scholarly communication\".",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      },
+      {
+       "record_quote": "ORCID, Inc. was incorporated as an independent nonprofit organization in August 2010 in Delaware, United States of America, with an international board of directors.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      },
+      {
+       "record_quote": "On 16 October 2012, ORCID launched its registry services",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A nonproprietary persistent identifier to uniquely identify authors and contributors of scholarly communication, with a website and services to look up authors and their bibliographic output.",
+     "evidence": [
+      {
+       "record_quote": "The ORCID ( / ˈ ɔːr k ɪ d / ⓘ ; Open Researcher and Contributor ID ) is a nonproprietary persistent identifier , in the form of an alphanumeric code, to uniquely identify authors and contributors of scholarly communication .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      },
+      {
+       "record_quote": "The ORCID system includes a website and services to look up authors and their bibliographic output (and other user-supplied pieces of information).",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "1258 member organizations and 14,727,479 live accounts (2 August 2022).",
+     "evidence": [
+      {
+       "record_quote": "As of 2 August 2022 [ update ] , ORCID reported 1258 member organizations and 14,727,479 live accounts.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To resolve the author name ambiguity problem: personal names are not unique, change, differ in order across cultures and are abbreviated inconsistently.",
+     "evidence": [
+      {
+       "record_quote": "This addresses the problem that a particular author's contributions to the scientific literature or humanities publications can be hard to recognize, as most personal names are not unique, they can change ( such as with marriage ), have cultural differences in name order, contain inconsistent use of first-name abbreviations and employ different writing systems .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      },
+      {
+       "record_quote": "ORCID was first announced in 2009 as a collaborative effort by publishers of scholarly research \"to resolve the author name ambiguity problem in scholarly communication\".",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Freely usable and interoperable with other ID systems.",
+     "evidence": [
+      {
+       "record_quote": "ORCID is freely usable and interoperable with other ID systems.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "ISNI",
+      "International Standard Name Identifier"
+     ],
+     "reference": "ORCID IDs are a subset of ISNI, so a person can hold both, 'effectively, two ISNIs'.",
+     "evidence": [
+      {
+       "record_quote": "ORCID IDs are a subset of the International Standard Name Identifier (ISNI),",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      },
+      {
+       "record_quote": "It is therefore possible for a person to legitimately have both an ISNI and an ORCID ID [ 35 ] [ 36 ] – effectively, two ISNIs.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "https://orcid.org/",
+      "0000-0002-1825-0097"
+     ],
+     "reference": "Specified as URLs; the example iD 0000-0002-1825-0097 belongs to Josiah S. Carberry, a fictitious professor used in examples and testing.",
+     "evidence": [
+      {
+       "record_quote": "Formally, ORCID IDs are specified as URLs,",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      },
+      {
+       "record_quote": "the ORCID ID for Josiah S. Carberry (a fictitious professor used in examples and testing) is https://orcid.org/0000-0002-1825-0097",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'orcid-names' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "ORCID (Open Researcher and Contributor ID) is a free, 16-digit persistent digital identifier that uniquely identifies scholars, researchers, and contributors.",
+    "basis": "The identifier reached by name and expansion; its function, cost, format and privacy setting given."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "ORCID (Open Researcher and Contributor ID) is a free, 16-digit persistent digital identifier"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "ORCID is a non-profit organisation providing researchers with a unique digital identifier."
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a free, 16-digit persistent digital identifier that uniquely identifies scholars, researchers, and contributors."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Resolves Name Ambiguity: It stops confusion between researchers who share identical or similar names, or when names change over time."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Cost: Free for all researchers to register and use."
+    },
+    {
+     "atom": "lineage",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "identifier",
+     "present": true,
+     "span": "Format: Rendered as a URL, such as `https://orcid.org/0000-0002-1825-0097`."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The identifier composed as a researcher's service, accurate at its grain on name ambiguity and cost. The census's subject, how the registry holds a person's several names and how it stands to ISNI, is absent, and its holder appears only in a card.",
+   "key": "orcid-aio-20261101",
+   "entry": "orcid-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-orcid-names"
+  }
+ ]
+}

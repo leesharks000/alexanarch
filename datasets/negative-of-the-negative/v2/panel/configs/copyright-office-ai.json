@@ -1,0 +1,83 @@
+{
+ "row": "copyright-office-ai",
+ "address": "U.S. Copyright Office Copyright and Artificial Intelligence",
+ "entity": "Copyright and Artificial Intelligence, the U.S. Copyright Office's initiative on the copyright law and policy issues raised by artificial intelligence (www.copyright.gov/ai/), launched March 16, 2023: a Report in three Parts (digital replicas, 2024; copyrightability, 2025; generative AI training, pre-publication 2025), registration guidance for works containing AI-generated material (88 Fed. Reg. 16,190), a notice of inquiry (88 Fed. Reg. 59,942) with over 10,000 comments, registration and Review Board decisions, and the government's briefs in Thaler v. Perlmutter and Allen v. Perlmutter; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/copyright-office-ai)",
+ "row_type": "C (a public entity on which the archive bears: a federal office's initiative page and its documents on copyright and AI; an entity of the leesharks.com authorship census)",
+ "aliases": [
+  {
+   "pattern": "\\b(U\\.?S\\.? |United States )?Copyright Office\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bUSCO\\b",
+   "flags": ""
+  },
+  {
+   "pattern": "\\bcopyright\\.gov\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bCopyright and Artificial Intelligence\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bRegister of Copyrights\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bThaler v\\.? Perlmutter\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bAllen v\\.? Perlmutter\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bZarya of the Dawn\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bTh[ée][âa]tre D.op[ée]ra Spatial\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bA Recent Entrance to Paradise\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bSURYAST\\b",
+   "flags": "i"
+  },
+  {
+   "pattern": "\\bcopyright-office-ai\\b",
+   "flags": "i"
+  }
+ ],
+ "classes": [
+  {
+   "term": "the human-authorship requirement: copyrightability and registration of works containing AI-generated material",
+   "pattern": "\\bhuman[- ]authorship\\b|\\bcopyrightab(le|ility)\\b.{0,80}\\b(AI|artificial intelligence|machine|generat)|\\b(AI|machine)[- ]generated (works?|material|content|outputs?)\\b.{0,80}\\bcopyright|\\bdisclaim(ed|ing)? (the )?AI\\b",
+   "flags": "i",
+   "basis": "field: B1 (copyright.gov/ai: 'the scope of copyright in AI-generated works'; 'Copyright Registration Guidance for Works Containing AI-Generated Materials'); B2 (NewsNet 1060: 'the outputs of generative AI can be protected by copyright only where a human author has determined sufficient expressive elements'); B4 (Skadden: 'Human authorship is a bedrock of copyrightability'); B6 (WIPO: 'the requirement for human authorship to secure copyright protection'); B7 (Congress.gov card snippet: 'U.S. law requires human authorship for copyright protection'); B8 (Wikipedia, Artificial intelligence and copyright, 'Copyright status of AI-generated works'). The census's question for the entity ('legal ownership: whether a work containing AI-generated material can be registered, and how much of it a human must have made') and its area 'governance'."
+  },
+  {
+   "term": "AI training on copyrighted works (fair use)",
+   "pattern": "\\btrain(ing|ed)?\\b.{0,60}\\bcopyrighted (works?|materials?|data)\\b|\\bcopyrighted (works?|materials?|data)\\b.{0,60}\\btrain(ing|ed)?\\b",
+   "flags": "i",
+   "basis": "field: B1 ('the use of copyrighted materials in AI training'; 'Part 3: Generative AI Training'); B5 (Crowell card: 'addressing generative AI training on copyrighted works'); B8 ('Training AI with copyrighted data'). The census's record_object ('the use of copyrighted materials in AI training')."
+  },
+  {
+   "term": "digital replicas",
+   "pattern": "\\bdigital replicas?\\b",
+   "flags": "i",
+   "basis": "field: B1 ('Part 1 ... addresses the topic of digital replicas'); B6 (WIPO: 'What are unauthorized digital replicas'). The census's record_object."
+  }
+ ],
+ "classes_note": "Three classes, each stated by field sources at the loci given and each named in the census record for the entity: (1) the human-authorship requirement for works containing AI-generated material, the Office's registration rule and the subject of Part 2 (B1, B2, B4, B6, B7, B8; census question, area 'governance'); (2) AI training on copyrighted works, Part 3 (B1, B5, B8; census record_object); (3) digital replicas, Part 1 (B1, B6; census record_object). The census's anchors #940 (EA-HETERONYMY-01, civil-name attribution regimes: 'Copyright attaches to legal names') and #1722 (AI Calls You Fake) are read at the passages that bear on the entity's kind (name authorities, pseudonyms and heteronyms, machine participation, certification of human authorship), by BRIEF-NEW-ROW-AUTHORSHIP §6. The aliases include the Office's name, its domain and its acronym because the initiative is the Office's and its documents are the Office's; a candidate naming the Office on another matter (circulars on titles, restoration, genre) is read and not admitted unless it says something of the initiative or its rule. 'Perlmutter' alone is not searched; the case names are.",
+ "exclude_deposits": [],
+ "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the v0.9 AGGREGATOR, LABOR and LEFT briefs; address \"U.S. Copyright Office Copyright and Artificial Intelligence\" (u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101, OBS-84d5b496561b, ADDR-4825e3919030), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#195, #729).",
+ "hop_from": [
+  195,
+  729
+ ]
+}

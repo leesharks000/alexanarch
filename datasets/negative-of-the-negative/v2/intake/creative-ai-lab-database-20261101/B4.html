@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Creative AI Lab</title>
+        <link rel="icon" type="image/png" href="https://creative-ai.org/img/favicon.ico">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/wvh8xit.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://creative-ai.org/css/instant-definitions.css" rel="stylesheet">
+
+    
+        <meta property="og:image" content="https://creative-ai.org/img/4-CreativeAI-Landscape.png" />
+        <meta property="twitter:image" content="https://creative-ai.org/img/4-CreativeAI-Landscape.png" />
+    
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133697646-6"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-133697646-6');
+        </script>
+
+        <!-- Hotjar Tracking Code for https://creative-ai.org/ -->
+            <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1925158,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+
+        <!-- Styles -->
+        <style>
+        @font-face {
+            font-family: akurrat;
+            src: url("https://creative-ai.org/fonts/Akkurat-Mono.OTF");
+            font-weight: 200;
+        }
+        :root{
+            --sitepadding: 1.2rem;
+            --small: 2.2vh;
+            --large: 2.8vh;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family:  Arial, sans-serif;
+            padding: 0px;
+            margin: 0px;
+            font-weight: 400;
+            text-align: left;
+            color: white;
+            background: #000;
+            text-rendering: optimizeLegibility!important;
+            -webkit-font-smoothing: antialiased!important;
+            -webkit-tap-highlight-color: transparent;
+            overflow-x:hidden;
+        }
+       
+        p *{
+            font-size: inherit !important;
+        }
+        .row.sign{
+            margin-top: 20vh;
+            margin-bottom: 6vh;
+            overflow-x: hidden;
+        }
+        .signup{
+           
+            width: 100%;
+            opacity: 1 !important;
+        }
+        .signup>*{
+            font-family: inherit;
+            font-size: inherit;
+        }
+        .filters{
+            
+            background: #000;
+            position: relative;
+            top: 0px;
+           
+            z-index: 888;
+        }
+        body, .button, .quicksearch, .search{
+            font-size: var(--large);
+            line-height: 3.5vh;
+        }
+        .search input{
+            color: inherit;
+            background: transparent;
+            z-index: 888;
+            position: relative;
+            border: 0px;
+            font-size: inherit;
+            padding: 0px;
+            margin: 0px;
+            font-weight: 100;
+            width: calc(100% - var(--sitepadding)*2);
+            margin-left: calc(var(--sitepadding)/2);
+            margin-right: var(--sitepadding);
+            font-family: inherit;
+        }
+        .search svg{
+            margin: auto;
+        }
+        .description,.c3, .row span{
+            font-size: var(--small);
+            line-height: 3vh;
+        }
+        .description p{
+            margin: 0px;
+        }
+       
+        a{
+            text-decoration: none;
+            color: inherit;
+        }a:hover{
+            color: #573BE8;
+        }
+        
+        .license{
+            font-size: 1.2vh;
+            opacity: 0.5;
+        }
+        .tools{
+            display: flex;
+            flex-direction: column;
+        }
+        .nav,.filters{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+        .nav{
+            border-image: linear-gradient(to #939598, #f1afff, #ea3781,#9b45fa,#1c04eb,#b8c8cf);
+            border-image-slice: 1;
+            flex-wrap: wrap;
+            font-size: var(--large);
+            font-weight: 400;
+            color: black;
+            position: sticky;
+            top: 0px;
+            z-index: 999;
+            border-bottom: 2px solid black !important;
+        }
+        .nav .gradient1:before,.nav .gradient2:before,.nav .gradient3:before,.nav .gradient4:before,.nav .gradient5:before,.nav .gradient6:before,.nav .gradient7:before,.nav .gradient8:before{
+            background: transparent;
+            display: none;
+            margin: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        .nav .gradient1,.nav .gradient2,.nav .gradient3,.nav .gradient4,.nav .gradient5,.nav .gradient6,.nav .gradient7,.nav .gradient8{
+            border-radius: 0px !important;
+        }
+        .nav .gradient1 a,.nav .gradient2 a,.nav .gradient3 a,.nav .gradient4 a,.nav .gradient5 a,.nav .gradient6 a,.nav .gradient7 a,.nav .gradient8 a{
+            color: black;
+            position: relative;
+        }
+        .nav,.tools,.filters{
+            margin: auto;
+            width: 100%;
+        }
+        .filterblock{
+            background: black;
+            padding-left: var(--sitepadding);
+            padding-right: var(--sitepadding);
+            padding-top: calc(var(--sitepadding) * 2);
+            padding-bottom: var(--sitepadding);
+            position: sticky;
+            top: 11vh;
+            z-index: 888;
+            margin-bottom: var(--sitepadding);
+            display: flex;
+    justify-content: space-between;
+        }
+        .pinnedtool{
+            left: 5%;
+            width: 90%;
+            position: relative;
+            display: none;
+        }
+        .pinnedtool .row{
+            border-radius: 1vh;
+            margin-top: 2vh;
+            flex-wrap: wrap;
+            padding: 1.5%;
+            width: 98%;
+        }
+        .pinnedtool .c3{
+            width: 28%;
+        }
+        
+        .summary{
+            position: relative;
+            padding: var(--sitepadding);
+            border-top: 0.5px solid white;
+            margin-top: 5vh;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .summary p:first-of-type{
+            margin-top: 0px;
+            width: 37%;
+            margin-right: 3%;
+            height: 100%;
+            margin-left: 0%;
+        }
+        .summary p:nth-of-type(2){
+            margin-top: 0px;
+            margin-left: 0%;
+        }
+        .summary h1:first-of-type{
+            width: 100%;
+        }
+        .summary p{
+            margin-left: 40%;
+            width: 60%;
+            margin-top: 0px;
+        }
+        .summary ul{
+            list-style: none;
+        }
+        .summary ul li p:first-child{
+            cursor: pointer;
+        }
+        .summary ul li{
+            position: relative;
+        }
+        .summary ul li:before{
+            content: "▲";
+            position: absolute;
+            left: -1.6rem;
+            transform: rotate(90deg);
+        }
+        .summary ul li.active:before{
+            transform: rotate(60deg);
+        }
+        .summary ul li p:not(:first-child), .summary table{
+            display: none;
+        }
+
+        .summary table{
+            border-collapse: collapse;
+            border: 0px;
+            width: 100vw !important;
+            left: calc(0px - var(--sitepadding));
+            position: relative;
+            display: block;
+            height: auto !important;
+        }
+        .summary table:first-of-type{
+            margin-top: 7vh;
+        }
+        .summary tbody{
+            width: 100%;
+            display: block;
+        }
+        .summary tr{
+            display: flex;
+            justify-content: space-between;
+            
+            width: 100%;
+            height: auto !important;
+            margin-left: var(--sitepadding);
+            padding-top: calc(var(--sitepadding) / 2);
+            padding-bottom: calc(var(--sitepadding) / 2);
+        }
+        .summary table:last-of-type tr:first-of-type{
+            border-bottom: 0.5px solid white;
+        }
+        .summary .active tr{
+            border-bottom: 0.5px solid white;
+        }
+        .summary tr:not(:first-of-type), .summary td:not(:first-of-type){
+            display: none;
+        }
+        .summary tr:first-of-type:hover td:first-of-type{
+            color: #573BE8;
+        }
+        .summary tr:first-of-type{
+            border-top: 0.5px solid white;
+            font-size: var(--small);
+            width: 100%;
+            padding-left: var(--sitepadding);
+            padding-right: var(--sitepadding);
+            margin-left: 0px;
+            cursor: pointer;
+            position: relative;
+        }
+        .summary tr:first-of-type svg{
+            position: absolute;
+            right: var(--sitepadding);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .summary .active tr:first-of-type svg{
+            
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+       
+
+        .summary .active tr:not(:first-of-type){
+            display: flex;
+        }
+        .summary .active td:not(:first-of-type){
+            display: block;
+        }
+
+        .summary tr:last-of-type{
+            border-bottom: 0px;
+        }
+        .summary td{
+            border: 0px;
+            height: auto !important;
+        }
+        .summary tr td:nth-child(2),.summary tr th:nth-child(2){
+            width: 86%;
+            text-align: left;
+        }
+        .footer{
+            padding-left: var(--sitepadding);
+            padding-right: var(--sitepadding);
+            width: calc(100% - var(--sitepadding)*2);
+            margin: 0px;
+            position: relative;
+            margin-bottom: var(--sitepadding);
+            font-size: var(--small);
+            display: flex;
+            justify-content: space-between;
+        }
+        .footer>*{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .footer span{
+            color: inherit;
+        }
+       
+       
+        
+        .gradient1,.gradient2,.gradient3,.gradient4,.gradient5,.gradient6,.gradient7,.gradient8{
+            position: relative;
+            color: inherit;
+            border: 0px !important;
+        }
+        .gradient1>*,.gradient2>*,.gradient3>*,.gradient4>*,.gradient5>*,.gradient6>*,.gradient7>*,.gradient8>*{
+            z-index: 1;
+            position: relative;
+        }
+        #idef-popup>*{
+            z-index: 1;
+            position: relative;
+        }
+        .gradient1{
+            background: rgb(147,149,152);
+            background: linear-gradient(90deg, rgba(147,149,152,1) 0%, rgba(147,149,152,1) 44%, rgba(234,235,4,0.5802696078431373) 55%, rgba(106,57,231,1) 100%);
+        }
+        .gradient2{
+            background: rgb(147,149,152);
+            background: linear-gradient(90deg, rgba(147,149,152,1) 0%, rgba(147,149,152,1) 64%, rgba(234,235,4,1) 76%, rgba(106,57,231,1) 100%);
+        }
+        #idef-popup{
+            z-index: 999;
+            border-radius: 10px;
+            background: rgb(147,149,152);
+            background: linear-gradient(90deg, rgba(147,149,152,1) 0%, rgba(147,149,152,1) 88%, rgba(234,235,4,0.5802696078431373) 94%, rgba(106,57,231,1) 100%);
+        }
+        .gradient3{
+            background: rgb(147,149,152);
+            background: linear-gradient(90deg, rgba(147,149,152,1) 0%, rgba(147,149,152,1) 88%, rgba(234,235,4,1) 94%, rgba(106,57,231,1) 100%);
+        }
+        .gradient4{
+            background: rgb(255,184,9);
+            background: linear-gradient(90deg, rgba(255,184,9,1) 0%, rgba(197,197,197,1) 9%, rgba(254,253,254,1) 34%, rgba(231,137,236,1) 48%, rgba(235,32,212,1) 62%, rgba(97,0,124,1) 69%, rgba(0,3,251,1) 78%, rgba(197,197,197,1) 95%);
+        }
+        .gradient5{
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(78,7,46,1) 0%, rgba(239,98,164,1) 4%, rgba(75,122,152,1) 9%, rgba(241,175,143,1) 15%, rgba(0,223,0,1) 30%, rgba(155,69,250,1) 60%, rgba(88,186,250,1) 67%, rgba(28,141,250,1) 75%, rgba(28,183,180,1) 83%, rgba(28,183,180,1) 88%, rgba(184,255,207,1) 100%);
+        }
+        .gradient6{
+            border-radius: 10px;
+            background: rgb(255,3,3);
+            background: linear-gradient(90deg, rgba(255,3,3,0.9290091036414566) 4%, rgba(177,217,30,1) 21%, rgba(197,197,197,1) 44%);
+        }
+        .gradient7{
+            border-radius: 10px;
+            background: rgb(197,197,197);
+            background: linear-gradient(90deg, rgba(197,197,197,1) 47%, rgba(3,255,233,0.9290091036414566) 67%, rgba(177,217,30,1) 100%);
+        }
+        .gradient8{
+            border-radius: 10px;
+            background: rgb(241,175,143);
+            background: linear-gradient(90deg, rgba(241,175,143,1) 13%, rgba(75,122,152,1) 56%, rgba(88,186,250,1) 71%, rgba(0,223,0,1) 100%);
+
+        }
+
+        
+        
+        #idef-popup:before,.gradient5:before,.gradient6:before,.gradient7:before,.gradient8:before{
+            position: absolute;
+            content: '';
+            border-radius: 10px;
+            top: 0px;
+            left: 0px;
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            background: black;
+            z-index: 0;
+            margin: 1px;
+        }
+        .gradient1:before,.gradient2:before,.gradient3:before{
+            position: absolute;
+            content: '';
+            border-radius: 0px;
+            top: 1px;
+            left: 0px;
+            height: calc(100% - 1px);
+            width: calc(100%);
+            background: black;
+            z-index: 0;
+            
+        }
+        .gradient4:before{
+            position: absolute;
+            content: '';
+            border-radius: 0px;
+            top: 0px;
+            left: 0px;
+            height: calc(100% - 1px);
+            width: calc(100%);
+            background: black;
+            z-index: 0;
+            
+        }
+        .button{
+            margin-bottom: 1vh;
+            padding-top: 0vh;
+            padding-left: 4vh;
+            padding-right: 4vh;
+            color: inherit;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .search{
+            color: inherit;
+            position: relative;
+            display: flex;
+            cursor: pointer;
+            width: calc(100% - var(--sitepadding));
+            border-top: 0.5px solid white;
+            border-bottom: 0.5px solid white;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            padding-left: var(--sitepadding);
+        }
+        .is-checked:after{
+            content: 'x';
+            position: absolute;
+            font-size: var(--small);
+            border-radius: 100%;
+            width: 1.8vh;
+            height: 1.8vh;
+            line-height: 1.5vh;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 5.5%;
+            text-align: center;
+        }
+        .button span{
+            position: relative;
+        }
+        .button:focus{
+           outline:0px;
+        }
+        
+        .is-checked:before,.button:hover:before{
+            background: transparent;
+        }
+        .is-checked,.button:hover{
+            color: black;
+        }
+        .quicksearch{
+            background: transparent;
+            border: 0px;
+           
+        }
+        .quicksearch:focus{
+            outline: 0px;
+        }
+        .row{
+            width: calc(100% - var(--sitepadding)*2);
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+           
+            padding-left: var(--sitepadding);
+            padding-right: var(--sitepadding);
+            margin:0px;
+            
+        } 
+        .row div{
+            z-index: 6;
+        }
+        bg{
+            position: absolute !important;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            top: 0px;
+        }
+        .row > *{
+            opacity: 0;
+            transition: opacity 2s;
+        }
+        .row.loaded > *{
+            opacity: 1;
+            transition: opacity 2s;
+        }
+        
+       
+        .c1{
+            width: 15%;
+            padding-right: 3%;
+        }
+        .c3 span{
+            font-family: akurrat;
+        }
+        .c1 span{
+            display: block;
+        }
+        .c2{
+            width: 51%;
+            padding-right: 3%;
+            
+        }
+        
+        .c3{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 31%;
+            justify-content: space-between;
+        }
+        .c3 div{
+            
+            width: 47%;
+        }
+       
+        .title{
+            font-size: var(--large);
+        }
+        span.idef{
+            padding: 0px;
+            font-size: inherit;
+            border-bottom: 2px solid rgb(87, 59, 232);
+    background-color: rgba(255, 255, 255, 0);
+    font-family: inherit;
+        }
+        #idef-popup {
+            backgtound: black;
+        }
+        #idef-title {
+            display:none;
+            font-size: var(--large);
+            margin-bottom: 1vh;
+            margin-top: 1vh;
+        }
+        #idef-definition {
+            font-style: italic;
+            margin-top: 0px;
+            margin-bottom: 1vh;
+            font-size: var(--small);
+            line-height: 3vh;
+        }
+        .split{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .split div{
+           
+        }
+        .logos{
+            margin-top: 4vh;
+            margin-bottom: 2vh;
+            display:flex;
+            align-items: end;
+        }
+        .logos img{
+            margin-right: 2vh;
+            max-width: 50vw;
+        }
+        .images{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            height: 100%;
+            z-index: 777;
+            
+        }
+        .pinnedtool .images{
+            right: 1.5%;
+            top: 78%;
+            transform: translateY(-50%);
+        }
+        .pinnedtool .c3{
+            width: 24%;
+            margin-right: 4%;
+        }
+        .images .btn{
+            cursor: pointer;
+            position: relative;
+            z-index:888;
+            top: 2vh;
+            font-size: var(--small);
+        }
+        .images:hover{
+            z-index:999;
+        }
+        .images .theimg{
+            display:none;
+            position: absolute;
+            height: 200%;
+            top: 0px;
+            right: 0px;
+        }
+        .images .theimg img{
+            max-height: 100%;
+            width: auto;
+            max-width: 70vw;
+        }
+
+        .sign .wFormContainer{
+            margin: 0px;
+        }
+        .sign .wForm{
+            padding:0px;
+        }
+        .sign .wForm .oneField{
+            margin: 0px;
+            padding: 0px;
+            width: calc(50% - 4px) !important;
+        }
+        .sign input{
+           border: 1px solid #c5c5c5;
+           padding-left: calc((1vh + 1vw)*0.3) !important;
+           padding-right: calc((1vh + 1vw)*0.3) !important;
+           border-radius: 0;
+          
+           color: #000;
+        }
+        .sign .inputWrapper input{
+            font-size: var(--large) !important;
+            padding: 1vh !important;
+            width: calc(100% - 6vh) !important;
+            padding-right: 3vh !important;
+            padding-left: 3vh !important;
+            background: black;
+            border: 0.1px solid white;
+            color: white;
+        }
+        .sign .inputWrapper input::placeholder {
+  
+            color: white;
+        }
+        .sign input:focus,input:hover{
+            outline: 0px;
+        }
+        .sign .oneField{
+            margin-top: 0px !important;
+            float: left;
+        }
+        .sign #tfa_10 input{
+            float: left;
+        }
+        
+        .sign p{
+            margin: 0px;
+            line-height: 1vh;
+            font-size: var(--small);
+        }
+        .sign p>*{
+            display:inline;
+        }
+        .sign ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    light-gray;
+}
+.sign :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    light-gray;
+   opacity:  1;
+}
+.sign ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    light-gray;
+   opacity:  1;
+}
+.sign :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    light-gray;
+}
+.sign ::-ms-input-placeholder { /* Microsoft Edge */
+   color:    light-gray;
+}
+
+.sign ::placeholder { /* Most modern browsers support this now. */
+   color:    light-gray;
+}
+
+.sign .actions{
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: calc((1vh + 1vw)*1.9);
+    font-size: var(--small);
+    margin-bottom: calc((1vh + 1vw)*0.3);
+    padding:0px !important;
+}
+.sign #tfa_11-L span, #tfa_17-HTML span{
+    color: inherit  !important;
+    font-weight: 400;
+    font-family: inherit !important;
+    padding:0px !important;
+}
+.sign .wForm{
+    }
+
+    .sign #submit_button{
+        font-size: var(--small);
+    border-radius: 0.6rem;
+    padding-top: calc((1vh + 1vw)*0.2) !important;
+    padding-bottom: calc((1vh + 1vw)*0.2) !important;
+    padding-left: calc((1vh + 1vw)*0.6) !important;
+    padding-right: calc((1vh + 1vw)*0.6) !important;
+    margin: 0px;
+    display: block;
+}
+.sign .lengthIndicator{
+    display: none !important;
+    
+}
+
+.hide{
+    display:none;
+}
+
+
+.sign input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+.sign label {
+  cursor: pointer;
+}
+.sign #tfa_11-L{
+    margin-bottom: .3rem !important;
+}
+.sign #tfa_11-L, .sign #tfa_30-L{
+    margin: 0px;
+    font-size: var(--small) !important;
+    line-height: 1.6;
+    display: block;
+}
+.sign input[type="checkbox"] + label:before {
+    border-image-slice: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient(to left, #ed0205, #3ace3e);
+    content: "\00a0";
+    display: inline-block;
+    height: calc((1vh + 1vw)*1.2);
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: calc((1vh + 1vw)*1.2);
+    top: 0px;
+    font-size: var(--large);
+    position: relative;
+    line-height: calc((1vh + 1vw)*1.2);
+}
+.sign input[type="checkbox"]:checked + label:before {
+  color: #fff;
+  content: "\2713";
+  text-align: center;
+}
+.sign input[type="checkbox"]:checked + label:after {
+  font-weight: bold;
+}
+
+.sign input[type="checkbox"]:focus + label::before {
+    outline: rgb(59, 153, 252) auto 5px;
+}
+.sign ul{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.sign li{
+    width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+    list-style: none !important;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px !important;
+}
+.submitwrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+.button-group{
+    width: 100%;
+}
+.primary.is-checked:after{
+display: none !important;
+}
+
+.spaced{
+    display: flex;
+    justify-content: space-between;
+}
+addmore{
+            position: relative;
+        }
+        addmore img{
+            height: 2rem;
+            filter: invert(1);
+            cursor: pointer;
+        }
+        .addmorepopup{
+            z-index: 999;
+            border-radius: 10px;
+            background: rgb(147,149,152);
+            background: linear-gradient(90deg, rgba(147,149,152,1) 0%, rgba(147,149,152,1) 88%, rgba(234,235,4,0.5802696078431373) 94%, rgba(106,57,231,1) 100%);
+            position: absolute;
+            padding: 10px 20px;
+            width: auto;
+            height: auto;
+            box-shadow: 0px 3px 6px rgb(0 0 0 / 30%);
+            right: 100%;
+            width: 13rem;
+            display:none;
+        }
+        .addmorepopup:after{
+            position: absolute;
+            content: '';
+            border-radius: 10px;
+            top: 0px;
+            left: 0px;
+            height: calc(100% - 2px);
+            width: calc(100% - 2px);
+            background: black;
+            z-index: 0;
+            margin: 1px;
+        }
+        .addmorepopup p{
+            font-style: italic;
+            margin-top: 0px;
+            margin-bottom: 1vh;
+            font-size: var(--small);
+            line-height: 3vh;
+            z-index: 999;
+            position: relative;
+        }
+        .addmorepopup p a{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+        .summary a {
+            text-decoration: underline 1px;
+            text-underline-offset: 5px;
+        }
+        .mobile{
+            display:none;
+            width: 100%;
+        }
+        capsule, .menuopt div{
+            margin-bottom: 1vh;
+            padding-top: 0vh;
+            padding-left: 4vh;
+            padding-right: 4vh;
+            color: inherit;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 10px;
+            border: 1px solid white;
+            font-size: var(--small);
+            margin-right: var(--sitepadding);
+        }
+        .wrap svg:first-of-type{
+            margin-right: 1vh;
+        }
+        a svg{
+            height: 2vh;
+            width: auto;
+        }
+        telegram{
+            display: block;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+            position: relative;
+            cursor: pointer;
+        }
+        @keyframes gradient {
+            0% {
+                background-position-x: 0%;
+            }
+            50% {
+                background-position-x: 100%;
+            }
+            100% {
+                background-position-x: 0%;
+            }
+        }
+        telegram.gradient5{
+            background-size: 600% 100% !important;
+            animation: gradient 30s ease infinite;
+        }
+        telegram:before{
+            background: transparent !important;
+        }
+        telegram .d{
+            stroke: black;
+        }
+        telegram svg{
+            margin-top: 0.3rem;
+        }
+
+        .menuopt{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .menuopt p{
+            margin: 0px;
+            margin-bottom: 0.5rem;
+            width: 100% !important;
+            display: inline-block;
+            height: auto !important;
+        }
+        .menuopt div.active, .menuopt div:hover{
+            background: white;
+            color: black;
+        }
+        .menures{
+            margin-top: 1rem;
+        }
+        .menures p{
+            margin: 0px;
+            display: none;
+            width: 50% !important;
+        }
+        .menures p.active{
+            display:block;
+        }
+        @media (max-width: 850px) {
+            .row.tool .wrap .col:nth-of-type(5),.row.resource .wrap .col:nth-of-type(5){
+                width: 100% !important;
+            }
+            .menures p{
+                width: 100% !important;
+            }
+            .mobile{
+                display:block !important;
+            }
+            .row:not(.row-heading) .wrap{
+                padding-bottom: var(--sitepadding);
+            }
+            .row[status="active"] svg{
+                transform: none !important;
+            }
+            .col svg{
+                display:none;
+            }
+            .wrap a svg{
+                display: inline-block !important;
+            }
+            .row .description{
+                width: 100% !important;
+            }
+            :root {
+    --sitepadding: 0.3rem;
+}
+            .nav, .tools, .filters {
+                width: 100vw;
+                overflow-x: hidden;
+            }
+            .footer{
+                flex-direction: column;
+            }
+            .footer>*{
+                flex-direction: column-reverse;
+            }
+            .logos{
+                margin-top: 1vh;
+                margin-bottom: 4vh;
+            }
+            .pinnedtool .c3{
+                width: 100%;
+            }
+            .summary{
+                width: calc(100% - var(--sitepadding)*2);                
+            }
+            .summary p,.summary p:first-child{
+                width: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .row{
+                flex-direction: column;
+            }
+            .row .col:nth-child(2){
+                display:none;
+            }
+            .row .col:nth-child(3){
+                display:none;
+            }
+            .row .wrap .col:first-child{
+                width: 75% !important;
+            }
+            .row .wrap .col:nth-child(4){
+                width: 25% !important;
+            }
+            .row .description{
+                display: block !important;
+            }
+            .filters{
+                flex-direction: column;
+                margin-bottom: 2vh;
+            }
+            .row>*{
+                width: 100%;
+                margin-bottom: 1vh;
+            }
+            .images {
+                right: 1.5%;
+                top: 2% !important;
+                transform: none !important;
+                width: auto;
+            }
+            
+            .images{
+                display:none;
+            }
+        }
+
+        .nav a{
+            color: black;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .n100{
+            width: calc(100%  - var(--sitepadding)*2);
+            padding-top: calc(var(--sitepadding) / 4);
+            padding-bottom:calc(var(--sitepadding) / 4);
+            border-bottom: 2px solid black !important;
+        }
+        .n50{
+            width: 50vw;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .n5{
+            width: calc(50%  - var(--sitepadding)*2 - 2px);
+            border-left: 2px solid black !important;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        
+        .n5 div{
+            z-index: 8;
+            position: relative;
+        }
+        .n25{
+            width: calc(25%  - var(--sitepadding)*2);
+        }
+        .padd{
+            padding-left: var(--sitepadding);
+            padding-right: var(--sitepadding);
+        }
+        .white{
+            background: white;
+        }
+        .nav .gradient1:before,.nav .gradient2:before,.nav .gradient3:before,.nav .gradient4:before,.nav .gradient6:before,.nav .gradient7:before,.nav .gradient8:before{
+            background: white !important;
+            border-radius: 0px !important;
+            display: block;
+            top: 0px;
+        }
+        .mainfilt:hover .gradient6:before, .nav .gradient1.active:before, .nav .gradient1:hover:before, .nav .gradient2.active:before, .nav .gradient2:hover:before, .nav .gradient3.active:before, .nav .gradient3:hover:before, .nav .gradient4.active:before, .nav .gradient4:hover:before, .nav .gradient6.active:before, .nav .gradient6:hover:before,  .nav .gradient7.active:before, .nav .gradient7:hover:before,  .nav .gradient8.active:before, .nav .gradient8:hover:before
+        {
+            display: none;
+        }
+        .nav .button{
+            margin: 0px;
+        }
+        
+
+        .row-heading{
+           padding: 0px; 
+           width: 100%;
+        }
+        .row-heading .wrap{
+            opacity: 1;
+            border-top: 0.5px solid white;
+            padding: var(--sitepadding);
+            padding-top: calc(var(--sitepadding) / 2);
+            padding-bottom: calc(var(--sitepadding) / 2);
+            font-size: var(--small);
+        }
+        .row:not(.row-heading) .wrap{
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+            padding: calc(var(--sitepadding) / 2);
+        }
+        .row .wrap{
+            
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: white;
+            width: 100%;
+            border-bottom: 0.5px solid white;
+        }
+        .row .description{
+            display: none;
+            width: 50%;
+            line-height: 1.1;
+            margin-top: 0.5rem;
+        }
+
+        .row[status="active"] svg{
+            transform: rotate(45deg);
+        }
+        .row[status="active"] .description{
+            display: block !important;
+        }
+
+        .row.tool .wrap .col:first-of-type{
+            width: 33%;
+            padding-right: 1%;
+        }
+        .row.tool .wrap .col:nth-of-type(2){
+            width: 18%;
+            padding-right: 1%;
+        }
+        .row.tool .wrap .col:nth-of-type(3){
+            width: 33%;
+            padding-right: 1%;
+        }
+        .row.tool .wrap .col:nth-of-type(4){
+            width: 8%;
+        }
+        .row.tool .wrap .col:nth-of-type(5){
+            width: 5%;
+        }
+
+        .row.resource .wrap .col:first-of-type{
+            width: 33%;
+            padding-right: 1%;
+        }
+        .row.resource .wrap .col:nth-of-type(2){
+            width: 33%;
+            padding-right: 1%;
+        }
+        .row.resource .wrap .col:nth-of-type(3){
+            width: 17%;
+            padding-right: 1%;
+        }
+        .row.resource .wrap .col:nth-of-type(4){
+            width: 9%;
+        }
+        .row.resource .wrap .col:nth-of-type(5){
+            width: 5%;
+        }
+        
+        
+
+        </style>
+        
+
+       
+    </head>
+    <body>
+
+    <div class="nav ">
+        <div class="n100 gradient5 padd">
+            <a href="/">
+                Creative AI Lab 
+            </a>
+        </div>
+        <div class="n50 mainfilt">
+            <div class="n100 padd gradient6  active ">
+                <a href="/">Database</a>
+            </div>
+            <div class="n5 padd gradient7 primary button" style="font-size: var(--small);border-left: 0px !important;width: calc(50%  - var(--sitepadding)*2 - 1px)" data-filter=".tool">
+                
+                                    <span>Tools</span>
+                                </div>
+            <div class="n5 padd gradient4 primary button" style="font-size: var(--small);width: calc(50%  - var(--sitepadding)*2 - 1px)" data-filter=".resource">
+                                    <span>Resources</span>
+                                </div>
+        </div>
+        <div class="n50">
+            <div class="n5 gradient3  padd" >
+                <a href="/about" style="padding-top: calc(var(--sitepadding) / 3);">
+                    About 
+                </a>
+            </div>
+            <div class="n5 gradient8  padd" padd" >
+                <a href="/research" style="padding-top: calc(var(--sitepadding) / 3);">
+                    Research 
+                </a>
+            </div>
+        </div>
+       
+        
+    </div>
+
+
+        
+    <div class="summary">
+        <p>This database* is an ongoing project to aggregate tools and resources for artists, designers, engineers, curators &amp; researchers interested in incorporating machine learning (ML) and other forms of artificial intelligence (AI) into their practice.<br /><br /><span style="line-height: 1; font-size: var(--small) !important; display: block;">*The collection of materials presented aren&rsquo;t comprehensive&mdash;it is a growing collection of research collected &amp; commissioned by the Creative AI Lab.</span></p>
+<p><em>Tools</em> are compiled by the Lab according to their potential to bring new capabilities to artistic workflow. They can be generative (producing images or text from data) or assist along the way in the creative process, including in R&amp;D or simulation building. Tools might be core to the production of the work itself, or play a smaller assistive role. <em>Resources</em> help to imagine and critically conceptualise future AI systems, ways of working and deployment contexts.</p>
+    </div>
+
+    <div class="filters" data-filters="filters">
+        <div class="button-group js-radio-button-group" data-filter-group="filters">
+            <div class="search">
+            <svg id="b" xmlns="http://www.w3.org/2000/svg" width="20.367" height="19.401" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20.367 19.401"><defs><style>.f{stroke-width:0px;}.f,.g{fill:none;}.g{stroke:#fff;stroke-width:.64px;}.h{clip-path:url(#e);}.i{clip-path:url(#d);}.j{isolation:isolate;}</style><clipPath id="d"><rect class="f" width="20.367" height="19.401"/></clipPath><clipPath id="e"><rect class="f" x="-32783" y="-31314.377" width="65535" height="65535"/></clipPath></defs><g id="c"><g class="i"><g class="j"><g class="h"><path class="g" d="m8.583,16.524c4.355,0,7.942-3.523,7.942-7.942S12.938.64,8.583.64.641,4.162.641,8.582s3.523,7.942,7.942,7.942Z"/><line class="g" x1="14.859" y1="13.962" x2="19.727" y2="18.766"/></g></g></g></g></svg>
+                <input type="text" class="quicksearch" placeholder="Search" />
+            </div>
+             
+        </div>
+    </div>
+
+    <div class="filterblock">
+        <div>
+                       
+                                        <div filter-type="Resource" class=" hide   gradient5  button" data-filter=".interview"><span>Interview</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient6  button" data-filter=".essay"><span>Essay</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient7    button" data-filter=".talk"><span>Talk</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient5  button" data-filter=".course"><span>Course</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient6  button" data-filter=".podcast"><span>Podcast</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient7    button" data-filter=".diagram"><span>Diagram</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient5  button" data-filter=".paper"><span>Paper</span></div>
+                                        <div filter-type="Resource" class=" hide   gradient6  button" data-filter=".publication"><span>Publication</span></div>
+                                        <div filter-type="Tool" class="  gradient7    button" data-filter=".audio"><span>Audio</span></div>
+                                        <div filter-type="Tool" class="  gradient5  button" data-filter=".static-image"><span>Static Image</span></div>
+                                        <div filter-type="Tool" class="  gradient6  button" data-filter=".moving-image"><span>Moving Image</span></div>
+                                        <div filter-type="Tool" class="  gradient7    button" data-filter=".dance-and-movement"><span>Dance and Movement</span></div>
+                                        <div filter-type="Tool" class="  gradient5  button" data-filter=".gesture-recognition"><span>Gesture Recognition</span></div>
+                                        <div filter-type="" class="  gradient6  button" data-filter="."><span></span></div>
+                    </div>
+        <div>
+            <a href="https://t.me/+aN5j5Icszz5mZDZk" target="_blank">
+                <telegram class="gradient5">
+                    <svg id="b" xmlns="http://www.w3.org/2000/svg" width="19.6" height="19.6" viewBox="0 0 19.6 19.6"><defs><style>.d{fill:none;stroke:#fff;stroke-width:.5px;}</style></defs><g id="c"><line class="d" y1="9.8" x2="19.6" y2="9.8"></line><line class="d" x1="9.8" x2="9.8" y2="19.6"></line></g></svg>
+                </telegram>
+            </a>
+        </div>
+    </div> 
+
+    <div class="tools">
+        <div class="row tool row-heading" type="tool" data-date="999999999">
+            <div class="wrap">
+                <div class="col">Title</div>
+                <div class="col">Developed by</div>
+                <div class="col">Tool</div>
+                <div class="col">Date</div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="row resource row-heading" type="resource" data-date="999999999">
+            <div class="wrap">
+                <div class="col">Title</div>
+                <div class="col">Author(s)</div>
+                <div class="col">Type</div>
+                <div class="col">Date</div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var monthNames = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+        var page = 0;
+        var buttonFilters = {};
+        var buttonFilter = "";
+        var qsRegex;
+        var $grid;
+
+        $(window).ready(function(){
+            checkURL();
+            paginateTools();
+        });
+
+        function checkURL(){
+            $type = getUrlParameter('t');
+            if($type == 'r'){
+                buttonFilter = ".resource";
+                $('.mainfilt .button[data-filter=".resource"]').addClass('active');
+                $('div[filter-type="Resource"]').removeClass('hide');
+                $('div[filter-type="Tool"]').addClass('hide');
+
+            }else{
+                buttonFilter = ".tool";
+                $('.mainfilt .button[data-filter=".tool"]').addClass('active');
+            }
+            
+        }
+        var getUrlParameter = function getUrlParameter(sParam) {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+            return false;
+        };
+        function paginateTools(){ 
+            page++;
+            $.ajax({
+                url: "tooldata/?page=" + page,
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function(res) {
+                    
+                    addTool(res);
+                    
+                },error: function (xhr, ajaxOptions, thrownError) {
+                        
+                },complete: function () {
+                    paginateTools();
+                }
+
+            });
+        }
+
+        function addTool(res){
+            //console.log(res['0']['data']);
+            $gC = 0;
+            $(res['0']['data']).each(function($i){
+                
+                //console.log(this);
+
+                $Content = this['content'];
+                if(this['content'] == null){
+                    $Content = "";
+                }else{
+                    $Content = this['content'];
+                }
+                $Type = this['type'];
+                $Title = '<svg id="b" xmlns="http://www.w3.org/2000/svg" width="12.507" height="12.557" viewBox="0 0 12.507 12.557"><defs><style>.arrsvg{fill:#fff;stroke-width:0px;}</style></defs><g id="c"><path class="arrsvg" d="m6.969.996c.754.251,1.295.413,1.622.485.328.073.861.154,1.597.243L0,11.912l.645.645L10.833,2.369c.022.899.26,1.976.716,3.232l.492-.492c-.064-1.162-.057-2.1.022-2.813.079-.713.227-1.383.444-2.009l-.288-.287c-.523.208-1.152.358-1.887.45-.735.091-1.694.112-2.878.061l-.485.485Z"/></g></svg>' + this['title'];
+                $SubType = this['sub_type'];
+                $Image = this['image'];
+                $Link = this['link'];
+                $Source = this['source'];
+                
+                $License = "";
+                if(this['license']){
+                    $License = '<div><span>LICENSE</span><br>' + this['license'] + '</div>';
+                }
+                $Publisher = ""
+                if(this['publisher']){
+                    $Publisher = this['publisher'];
+                }
+                $PublishDate = this['publish_date'];
+                $PublishDate = new Date($PublishDate);
+                $PublishMonth = monthNames[$PublishDate.getMonth() + 1];
+                $PublishYear = $PublishDate.getFullYear();
+                if(this['type'] == "Resource"){
+                    $PublishDate = '' + $PublishYear + '</div>';
+                }else{
+                    $PublishDate = '' + $PublishYear + '</div>';
+                }
+                $Authors = ""
+                if(this['authors']){
+                    if(this['type'] == "Resource"){
+                        $License = '<div>' + this['authors'] + '</div>';
+
+                    }else{
+                        $License = '<div>' + this['authors'] + '</div>';
+
+                    }
+                }
+                $Featuring = ""
+                if(this['featuring']){
+                    $Featuring = '<div><span>FEATURING</span><br>' + this['featuring'] + '</div>';
+                }
+                
+
+                $gC++;
+                if($gC == 4){
+                    $gC = 1;
+                }
+                    if($Type){
+                        $typeclass = $Type.toLowerCase();
+                    }else{
+                        $typeclass = "";
+                    }
+                            
+                    if($SubType){
+                        $subclass = convertToSlug($SubType);
+                    }else{
+                        $subclass = "";
+                    }
+                    var $capSubType = '';
+                    var $capLicense = '';
+                    if($SubType){
+                        $capSubType = '<capsule>' + $SubType + '</capsule>';
+                    }
+                    if($License){
+                        $capLicense = '<capsule>' + $License + '</capsule>';
+                    }
+                    if($Content){
+                        $plus = '<div class="mobile">' + $capSubType + $capLicense + '</div><svg id="b" xmlns="http://www.w3.org/2000/svg" width="19.6" height="19.6" viewBox="0 0 19.6 19.6"><defs><style>.d{fill:none;stroke:#fff;stroke-width:.5px;}</style></defs><g id="c"><line class="d" y1="9.8" x2="19.6" y2="9.8"/><line class="d" x1="9.8" x2="9.8" y2="19.6"/></g></svg>';
+                    }else{
+                        $plus = '<div class="mobile">' + $capSubType + $capLicense + '</div>';
+                    }
+                    
+                    var row = '<div data-date="' + $PublishYear + '" class="row ' + $typeclass + ' ' + $subclass + ' ' + '" status="inactive"><div class="wrap"><div class="col"><a class="" target="_blank" href="' + $Link + '">' + $Title + '</a></div><div class="col">' + $License + '</div><div class="col">' + $SubType + '</div><div class="col date">' + $PublishDate + '<div class="col">' + $plus + '</div><div class="description">' + $Content + '</div></div></div>';
+
+                    var $content = $(row).html(function(index,html){                       
+                        return html;
+                    });
+                    $('.tools').append( $content ).isotope( 'appended', $content );
+                    $grid.isotope('updateSortData').isotope();
+                    $content.addClass('loaded');
+                    
+            });
+        }
+
+        function convertToSlug(Text) {
+        return Text.toLowerCase()
+            .replace(/ /g, "-")
+            .replace(/[^\w-]+/g, "");
+        }
+
+       
+        // flatten object by concatting values
+        function concatValues( obj ) {
+            var value = '';
+            for ( var prop in obj ) {
+            value += obj[ prop ];
+            }
+            return value;
+        }
+
+        // debounce so filtering doesn't happen every millisecond
+        function debounce( fn, threshold ) {
+            var timeout;
+            threshold = threshold || 100;
+            return function debounced() {
+            clearTimeout( timeout );
+            var args = arguments;
+            var _this = this;
+            function delayed() {
+                fn.apply( _this, args );
+            }
+            timeout = setTimeout( delayed, threshold );
+            };
+        }
+
+        
+
+        function sortFilters(){
+
+                
+
+                var $this = $(this);
+                // get group key
+                var $buttonGroup = $this.parents('.button-group');
+                var filterGroup = $buttonGroup.attr('data-filter-group');
+                var thefilters = [];
+                //console.log($('.is-checked:not(.primary)').length);
+                if($('.filterblock div.is-checked').length){
+                    thefilters.push(".row-heading" + $('.mainfilt .primary.active').attr('data-filter'));
+                    $('.is-checked').each(function(){
+                        console.log('sorting');
+                        thefilters.push($(this).attr('data-filter') + $('.mainfilt .primary.active').attr('data-filter'));
+                    });
+                }else{
+                    $('.mainfilt .primary.active').each(function(){
+                        thefilters.push($(this).attr('data-filter'));
+                        
+                        var queryParams = new URLSearchParams(window.location.search);
+                        if( $(this).attr('data-filter') == '.resource'){
+                            queryParams.set("t", "r");
+                        }else{
+                            queryParams.set("t", "t");
+                        }   
+                        history.replaceState(null, null, "?"+queryParams.toString());
+                    });
+                }
+                thefilters.push('.rowheading');
+                
+                
+                buttonFilters[ filterGroup ] = thefilters;
+                //console.log(buttonFilters);
+                // combine filters
+                buttonFilter = concatValues( buttonFilters );
+                //buttonFilter = buttonFilter.replace(/,/g , '');
+                console.log(buttonFilter);
+
+                // Isotope arrange
+                $grid.isotope();
+            }
+
+            // use value of search field to filter
+            var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+                qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+                $grid.isotope();
+            }) );
+
+        $(window).ready(function(){       
+            
+
+            // init Isotope
+            $grid = $('.tools').isotope({
+                itemSelector: '.row',
+                percentPosition: true,
+                layoutMode: 'fitRows',
+                getSortData: {
+                    date: '[data-date]'
+                },
+                // sort by color then number
+                sortBy: [ 'date' ],
+                sortAscending: false,
+                filter: function() {
+                    var $this = $(this);
+                    var searchResult = qsRegex ? $this.text().match( qsRegex ) : true;
+                    var buttonResult = buttonFilter ? $this.is( buttonFilter ) : true;
+                    return searchResult && buttonResult;
+                },
+            });
+
+            $('.grid').isotope();
+
+            $('.filters,.filterblock,.mainfilt').on( 'click', '.button', function() {
+                sortFilters();
+                
+            });
+
+            
+
+            $('.button').click( function() {
+                if($(this).hasClass('primary')){
+                    $('.primary').removeClass('active');
+                    $( this ).addClass('active');
+
+                    var scrollval = $('.filters').position().top - $('.nav').height();
+                    $(window).scrollTop(scrollval);
+                    
+                    if($( this ).children('span').text() == "Tools"){
+                        $('div[filter-type="Resource"]').addClass('hide');
+                        $('div[filter-type="Tool"]').removeClass('hide');
+                    }else{
+                        $('div[filter-type="Resource"]').removeClass('hide');
+                        $('div[filter-type="Tool"]').addClass('hide');
+                    }
+
+                    $( '.filterblock div' ).removeClass('is-checked');
+
+                }else{
+                    $( this ).toggleClass('is-checked');
+                    
+                }
+                
+            });
+            
+            
+
+            $('.grid').isotope();
+
+        });
+        </script>
+    
+    
+    <div class="row sign ">
+            <div class="signup">
+            <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src=https://www.tfaforms.com/js/FA__DOMContentLoadedEventDispatcher.js defer></script>
+                <script type="text/javascript">
+            document.addEventListener("FA__DOMContentLoaded", function(){
+                const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+                let formElement = document.getElementById("tfa_0");
+                if (null === formElement) {
+                    formElement = document.getElementById("0");
+                }
+                let appendJsTimerElement = function(){
+                    let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                    let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                    if (null !== cumulatedTimeElement) {
+                        let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                        if (null !== cumulatedTime && cumulatedTime > 0) {
+                            formTimeDiff += cumulatedTime;
+                        }
+                    }
+                    let jsTimeInput = document.createElement("input");
+                    jsTimeInput.setAttribute("type", "hidden");
+                    jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                    jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                    jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                    jsTimeInput.setAttribute("autocomplete", "off");
+                    if (null !== formElement) {
+                        formElement.appendChild(jsTimeInput);
+                    }
+                };
+                if (null !== formElement) {
+                    if(formElement.addEventListener){
+                        formElement.addEventListener('submit', appendJsTimerElement, false);
+                    } else if(formElement.attachEvent){
+                        formElement.attachEvent('onsubmit', appendJsTimerElement);
+                    }
+                }
+            });
+        </script>
+     
+       <script type="text/javascript" src=https://www.tfaforms.com/wForms/3.11/js/wforms.js?v=1721032509></script>
+        <script type="text/javascript">
+            wFORMS.behaviors.prefill.skip = false;
+        </script>
+        <script type="text/javascript" src=https://www.tfaforms.com/wForms/3.11/js/localization-en_US.js?v=1721032509></script>
+     
+                <div class="wFormContainer">
+                    <div class="wFormHeader"></div>
+                    <style type="text/css"></style><div class=""><div class="wForm" id="4811521-WRPR" dir="ltr">
+                    <div class="codesection" id="code-4811521"></div>
+                    <form method="post" action="https://www.tfaforms.com/responses/processor" class="hintsBelow labelsAbove" id="4811521" role="form">
+                        <ul>
+                            <li>
+                                <div class="oneField field-container-D    " id="tfa_2-D">
+                                    <div class="inputWrapper"><div><input type="text" id="tfa_2" name="tfa_2" value="" maxlength="200" aria-required="true" title="First Name " placeholder="First Name*" class="validate-alphanum required" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;"><div class="lengthIndicator" aria-live="assertive" style="display: none; left: 227.18px;">200 characters left.</div></div></div>
+                                    </div>
+                                    <div class="oneField field-container-D    " id="tfa_4-D">
+                                    <div class="inputWrapper"><div><input type="text" id="tfa_4" name="tfa_4" value="" maxlength="200" aria-required="true" title="Last Name " placeholder="Last Name*" class="validate-alphanum required"><div class="lengthIndicator" aria-live="assertive" style="display: none; left: 227.18px;">200 characters left.</div></div></div>
+                                    </div>
+                            </li>
+                            <li>
+                                <div class="oneField field-container-D    " id="tfa_28-D">
+                                    <div class="inputWrapper"><div><input type="text" id="tfa_28" name="tfa_28" value="" maxlength="200" title="Organisation (If relevant)" placeholder="Organisation (optional)" class="validate-alphanum"><div class="lengthIndicator" aria-live="assertive" style="display: none; left: 227.18px;">200 characters left.</div></div></div>
+                                    </div>
+                                    <div class="oneField field-container-D    " id="tfa_6-D">
+                                    <div class="inputWrapper"><div><input type="text" id="tfa_6" name="tfa_6" value="" maxlength="200" aria-required="true" title="Email Address" placeholder="Email Address*" class="validate-email required"><div class="lengthIndicator" aria-live="assertive" style="display: none; left: 227.18px;">200 characters left.</div></div></div>
+                                    </div>
+                            </li>
+                        </ul>
+                        
+                        <div class="submitwrap">
+                            <div class="submitcheckboxes">
+                                <input required type="checkbox" value="tfa_11" class="required" id="tfa_11" name="tfa_11" aria-labelledby="tfa_11-L" data-tfa-labelledby="tfa_10-L tfa_11-L">
+                                <label class="label postField" id="tfa_11-L" for="tfa_11">
+                                    <span class="input-checkbox-faux"></span>
+                                    Please add me to the Serpentine Arts Technologies newsletter<br>
+                                </label>
+
+                                <input required type="checkbox" value="tfa_30" class="required" id="tfa_30" name="tfa_30" aria-labelledby="tfa_30-L" data-tfa-labelledby="tfa_30-L tfa_31-L">
+                                <label class="label postField" id="tfa_30-L" for="tfa_30">
+                                    <span class="input-checkbox-faux"></span>
+                                    I'd like to receive email updates from Serpentine<br>
+                                </label>
+                            </div>
+                            
+                            <div class="actions" id="4811521-A">
+                                <input type="submit" data-label="Submit " class="primaryAction gradient6" id="submit_button" value="Enter">
+                            </div>
+                        </div>
+                    
+                        <input type="hidden" value="4811521" name="tfa_dbFormId" id="tfa_dbFormId">
+                        <input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId">
+                        <input type="hidden" value="93207ae6d076b898d439b858960d20d6" name="tfa_dbControl" id="tfa_dbControl">
+                        <input type="hidden" value="5" name="tfa_dbVersionId" id="tfa_dbVersionId">
+                        <input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+                        
+                    </form>
+                    </div>
+                </div>
+                    
+            </div>
+            </div>
+        </div>
+
+      
+    <div class="footer ">
+        <div>
+            <div class="logos">
+                <img style="max-height: 5.8vh;" src="https://creative-ai.org/img/5cee4e23107b4400ddb24af1.png" alt="">
+                <img style="max-height: 5.5vh;" src="https://creative-ai.org/img/SERPENTINE_REGULAR_WHITE_RGB.png" alt="">
+            </div>
+            <div>Creative AI lab is a collaboration between</div>
+        </div>
+        <div>
+            <div class="logos">    
+                <img style="max-height: 6vh;" src="https://creative-ai.org/img/UKRI_AHR_Council-Logo_Horiz-Grayscale[W].png" alt="">
+            </div>
+            <div>Creative AI lab is supported by</div>
+        </div>
+        <div>
+            <div>© Serpentine 2026 </div>
+        </div>
+        <div>
+            <div><a target="_blank" href="https://www.serpentinegalleries.org/legal">Privacy Policy</a></div>
+        </div>    
+    </div>
+ 
+   
+<script src="https://creative-ai.org/js/instant-definitions.js"></script>
+<script src="https://creative-ai.org/js/isotope-docs/js/isotope-docs.min.js"></script>
+<script>
+    $(window).ready(function(){
+
+        //$("body").instantDefinitions({
+        //    underlineColor: "#573BE8",
+        //    underlineWeight: 2,
+        //    backgroundColor: "#ffffff",
+        //    backgroundOpacity: 0,
+        //    underlineText: true,
+        //    maxSize: 250,
+        //});
+
+        $('.images .btn').hover(function(){
+            $(this).next().toggle();
+        });
+    
+        $('addmore').hover(function(){
+            $('.addmorepopup').toggle();
+        });
+
+        $('.summary tr:first-of-type').click(function(){
+            if($(this).parent().parent().hasClass('active')){
+                $(this).parent().parent().removeClass('active');
+            }else{
+                $('table.active').removeClass('active');
+                $(this).parent().parent().addClass('active');
+            }
+            
+        });
+
+        $('.summary ul li').click(function(){
+            $(this).toggleClass('active');
+            $(this).children('p:not(:first-child),table').toggle();
+        });
+        $('.menuopt div').each(function(index){
+            $(this).attr('tar',index)
+        });
+        $('.menures p').each(function(index){
+            $(this).attr('res',index)
+        });
+        $('.menuopt div').click(function(){
+            $('.menuopt div').removeClass('active');
+            $(this).addClass('active');
+            var $tar = $(this).attr('tar');
+            $('.menures p').hide();
+            $('.menures p[res="' + $tar + '"]').show();
+        });
+        $(document).on('click', '.wrap', function(){
+            if($(this).parent().attr('status') == 'active'){
+                $(this).parent().attr('status', 'inactive');
+            }else{
+                $(this).parent().attr('status', 'active');
+            }
+            
+            $grid.isotope();
+        });
+
+        $(window).ready(function(){
+            $('.summary tr:first-of-type').append('<svg id="b" xmlns="http://www.w3.org/2000/svg" width="19.6" height="19.6" viewBox="0 0 19.6 19.6"><defs><style>.d{fill:none;stroke:#fff;stroke-width:.5px;}</style></defs><g id="c"><line class="d" y1="9.8" x2="19.6" y2="9.8"/><line class="d" x1="9.8" x2="9.8" y2="19.6"/></g></svg>');
+
+        });
+
+        $(window).ready(function(){
+            $('.summary a').each(function() {
+                var theText = $(this).text(); 
+                var newText = '<svg id="b" xmlns="http://www.w3.org/2000/svg" width="12.507" height="12.557" viewBox="0 0 12.507 12.557"><defs><style>.arrsvg{fill:#fff;stroke-width:0px;}</style></defs><g id="c"><path class="arrsvg" d="m6.969.996c.754.251,1.295.413,1.622.485.328.073.861.154,1.597.243L0,11.912l.645.645L10.833,2.369c.022.899.26,1.976.716,3.232l.492-.492c-.064-1.162-.057-2.1.022-2.813.079-.713.227-1.383.444-2.009l-.288-.287c-.523.208-1.152.358-1.887.45-.735.091-1.694.112-2.878.061l-.485.485Z"/></g></svg> ' + theText;  
+                $(this).html(newText);    
+            });
+        });
+        
+    })
+</script>
+
+
+        
+    
+    
+    </body>
+       
+</html>

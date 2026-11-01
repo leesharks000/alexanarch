@@ -1,0 +1,218 @@
+{
+ "row": "eclipse",
+ "address": "Eclipse Archive",
+ "entity": "Eclipse (eclipsearchive.org): an online archive whose home page carries an author index, a title index and a new-to-the-archive notice, with Founding Editor Craig Dworkin and Editor Danny Snelson; in Wikipedia's account (the name 'Eclipse Archive' redirects to the section 'Eclipse' of the article on Craig Dworkin) an online archive of digital facsimiles of radical small-press writing from the last quarter of the 20th century, started in 2002 and later publishing selected new and born-digital works; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/eclipse). Distinct from the other entities of the name at the address: the Eclipse Foundation's project archives, the Eclipse Archives apparel brand, NASA's and the High Altitude Observatory's Historical Eclipse Image Archive, and Eclipse IDE archive plugins",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from #940",
+ "procedure": "EA-NEGONT-02 v0.10 (#1726) §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on Eclipse with the entity named; R, a relation the archive states between Eclipse and an archive object; O, an archive category applied to Eclipse or to a class the field and the census source for it (archives of avant-garde small-press writing: B12, B1, census area; the facsimile: B12, census evidence_kind and method; distributed credit in a catalogue: B10, census area, question, record.function; name-holding: the census's question and record.name, with #940). The anchors #940 and #1722 read at the passages bearing on the entity's kinds (BRIEF-NEW-ROW-AUTHORSHIP §6). A bare mention, a reference-list entry or a keyword is not a claim. String pass: 0 D, 0 R, 86 O-class sentences in 44 deposits; hop: 5 candidates from #940.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "string_pass": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 86,
+  "O_deposits": 44,
+  "H_candidates": 5
+ },
+ "verdicts": [
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01 (the census's anchor): applies its categories to two classes the field and the census source for Eclipse. To distributed credit in a catalogue: §6's operational boundary names ordinary translation and ordinary editing as typically not heteronymic (O-class, the editors' and translators' credits of the author index, B10). To name-holding: §2's pseudonym/heteronym distinction, §0's decisive distinction and §1's civil name as the atomic unit of attribution, with §2's 'collapse registers as loss' (O-class, the census's question and record.name). Read whole.",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04",
+    "O940-05",
+    "O940-06"
+   ],
+   "cands": "the 16 O-class sentences of #940 in candidates-O.jsonl (sentences matched by 'distributed authorial function', 'civil-name', 'attribution regime', 'ordinary translation', 'reduction to civil identity'), read with their sections"
+  },
+  {
+   "dep": 163,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Neglected Author as Tail-Preserving Labor (EA-RPT-01): its restatement of Bourdieu's field of restricted production states the route by which the avant-garde is consecrated, beginning with small-press publication, and its own limit on that account (it 'presumes consecration eventually arrives'): an archive account applied to the class 'archives of avant-garde, experimental and small-press writing' (O-class). Modality kept: the route attributed, the limit the archive's interpretation.",
+   "claims": [
+    "O163-01",
+    "O163-02"
+   ],
+   "cands": "candidates-O.jsonl, dep 163 ('small-press publication')"
+  },
+  {
+   "dep": 1409,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-SPXI-ANALOG-01: its paragraph on 'the facsimile turn' places the facsimile publication of manuscripts as objects (Bervin and Werner, Howe, Carson) in a generation-old practice and states what those works solved: a claim on the class 'the facsimile: holding the printed object as an object' (O-class). The specification's own object (the machine-eligible handwritten artifact) is not composed: it says nothing of Eclipse.",
+   "claims": [
+    "O1409-01",
+    "O1409-02"
+   ],
+   "cands": "candidates-O.jsonl, dep 1409 ('facsimile')"
+  }
+ ],
+ "admitted": [
+  940,
+  163,
+  1409
+ ],
+ "archive_records": {
+  "LS": "the leesharks.com apparatus authorship census record (38 claims, LS-01–LS-38)",
+  "CAP": "the Capture Registry's record of eclipse-archive-aio-20261101 (14 claims, CAP-1-01–CAP-1-14)"
+ },
+ "notes": "No deposit names Eclipse, eclipsearchive.org or 'Eclipse Archive' (string pass D = 0; grep over data/texts, 2026-11-01). The archive's mentions of Craig Dworkin concern his conceptual writing and books (Parse, No Medium, the Goldsmith–Place–Dworkin lineage) and Andrea Dworkin; none says anything of Eclipse, so none is admitted.",
+ "not_admitted": [
+  {
+   "dep": 1722,
+   "reason": "AI Calls You Fake (the census's anchor), read at the passages on the small, the independent and recognition ('Too small to be real', Part Seven's 'The tax falls on the independent, the new, the unaccredited, the heteronymous, the small'): the field calls Eclipse neither small nor independent, and the composition at the name did not treat it as unreal (CAP-1-02, CAP-1-04); no class is sourced for #1722, so nothing is admitted."
+  },
+  {
+   "dep": [
+    38,
+    40,
+    43,
+    269,
+    288,
+    337,
+    345,
+    348,
+    349,
+    356,
+    375,
+    499,
+    500,
+    584,
+    590,
+    592,
+    645,
+    666,
+    845,
+    921,
+    950,
+    1102,
+    1178,
+    1229,
+    1442,
+    1550
+   ],
+   "reason": "#38, #40, #43, #269, #288, #337, #345, #348, #349, #356, #375, #499, #500, #584, #590, #592, #645, #666, #845, #921, #950, #1102, #1178, #1229, #1442, #1550: each sentence matched by 'distributed authorship' or 'collective authorship' concerns the archive's own heteronymic or machine-witness practice, Pessoa, or other works; none says anything of a catalogue that credits co-authors, editors and translators, or of Eclipse. Rejected by reading."
+  },
+  {
+   "dep": [
+    943,
+    1443,
+    1689,
+    1699,
+    1707,
+    516
+   ],
+   "reason": "#943, #1443, #1689, #1699, #1707: facsimiles named as sources (the Pearl manuscript, the Maya codices, a Persian text) or as consent-contingent plates; bibliographic mentions, no claim on the class. #516: 'material specificity' as a submission criterion of a journal. Rejected."
+  },
+  {
+   "dep": [
+    98,
+    162,
+    859,
+    1202,
+    1208,
+    1218,
+    1709,
+    1711,
+    731,
+    1409
+   ],
+   "reason": "#98, #162, #859, #1202, #1208, #1218, #1709, #1711, #731: the string matched inside lists, tables, an operator glossary or a provenance vector's definition ('under what name'), with no claim on Eclipse's classes. #1409's second candidate (a version note) carries no claim. Rejected."
+  },
+  {
+   "dep": [
+    561,
+    739,
+    828,
+    939,
+    1684
+   ],
+   "reason": "One citation hop from EA-HETERONYMY-01: #561 (THE SPLICE), #739 (narrative-field test bed), #828 (Sappho 31 and inscription), #939 (Provenance Debt: credentialed extraction; nothing of catalogues, archives of small presses or facsimiles), #1684 (the prediction index). None says anything of Eclipse or of its sourced classes. Rejected."
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/eclipse-archive-aio-20261101/",
+   "reason": "the Capture Registry's title, findings, reading, analysis, query note, PER note and PER-dim basis for the entity's capture (OBS-1556d07f81b8, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/eclipse (source: /home/claude/fleet/leesharks.com/data/authorship-census/census.json rows[slug == 'eclipse'], organizing_question, admission_rule; rendered /home/claude/fleet/leesharks.com/apparatus/aggregators/eclipse/index.html read for agreement)",
+   "reason": "the leesharks.com apparatus authorship census record of the entity (editor Lee Sharks, compiled and revised 2026-11-01 in session from sources saved that day, schema 1.1): its fields; ls_reading is the archive's reading; where a field restates a field source it is one lineage with that source",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34",
+    "LS-35",
+    "LS-36",
+    "LS-37",
+    "LS-38"
+   ]
+  }
+ ],
+ "homonym": "Archive texts naming the other entities of the name (the Eclipse Foundation's archives, Eclipse Archives the brand, the Historical Eclipse Image Archive, the Marketplace plugins): none read as bearing on the entity; the bare word 'Eclipse' is no alias (config classes_note)",
+ "hashes": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "835e075de6592f22f1abfd4c6273a906d4da6efb7175303be0960240d0bb580f",
+  "candidates-H.jsonl": "018331ffaef6c7817abe152588f98c5d29f85f71df9abbc169c3192512b686bf"
+ }
+}

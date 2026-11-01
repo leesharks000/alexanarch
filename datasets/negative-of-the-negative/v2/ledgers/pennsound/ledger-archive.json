@@ -1,0 +1,1800 @@
+[
+ {
+  "id": "LS-01",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the record's kind for the entity: an ongoing project producing new recordings and preserving audio archives; Wikipedia's description given as third party's",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['kind']",
+  "quote": "ongoing project committed to producing new audio recordings and preserving existing audio archives; Wikipedia (third party) calls it a poetry website and online archive of recordings of poets reading their own work",
+  "kernel": true,
+  "const": true,
+  "lineage": "what it is: a project producing and preserving poetry audio; an online archive of recordings",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "self_description",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "PennSound is an ongoing project, committed to producing new audio recordings and preserving existing audio archives.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "wp_description",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "PennSound is a poetry website and online archive that hosts free and downloadable recordings of poets reading their own work.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-02",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the record's other names: PennSound Daily; the 'iTunes for poetry'",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['aka']",
+  "quote": "PennSound Daily … the 'iTunes for poetry' (Charles Bernstein, as Wikipedia reports)",
+  "kernel": false,
+  "const": false,
+  "lineage": "names",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-03",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the record's operator: the Center; three directors; the editor",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['operator']",
+  "quote": "the Center for Programs in Contemporary Writing, University of Pennsylvania; directors Charles Bernstein, Al Filreis and Chris Mustazza, editor Michael S. Hennessey",
+  "kernel": false,
+  "const": false,
+  "lineage": "directors and editors",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "operator",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "PennSound is a project of the Center for Programs in Contemporary Writing.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "directors",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "Charles Bernstein , Al Filreis , and Chris Mustazza , Directors",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "editor",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "Michael S. Hennessey , Editor",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   }
+  ]
+ },
+ {
+  "id": "LS-04",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the census's areas for the entity: avant-garde and experimental archives; attribution, credit and identity infrastructure",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['areas']",
+  "quote": "avant-garde-archives … attribution-and-credit",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question: authored performance",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-05",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "what the resource is to the census: an empirical comparator",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "R"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['host_relation']",
+  "quote": "empirical comparator",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question: authored performance",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-06",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the record's type: a project",
+  "kind": "fact",
+  "modality": "stipulation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['record_type']",
+  "quote": "project",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: a project producing and preserving poetry audio; an online archive of recordings",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-07",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the specific question the resource answers for the census: authored performance, voice and name, performer and author credited apart",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['question']",
+  "quote": "authored performance: whose voice a recording carries and under whose name it is filed, with performer and author credited apart",
+  "kernel": true,
+  "const": true,
+  "lineage": "the census's question: authored performance",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-08",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the record's evidence kinds: audio recording, catalogue, critical commentary",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['evidence_kind']",
+  "quote": "audio recording … catalogue … critical commentary",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it is: a project producing and preserving poetry audio; an online archive of recordings",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-09",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the record's unit: a recording, cut into singles, filed on author, series, anthology, singles, Cinema, Podcasts or Classics pages",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['unit']",
+  "quote": "a recording, broken down into singles (one poem) with complete readings also kept, filed on an author page, a series page, an anthology/collection/group page, the singles archive, Cinema, Podcasts or Classics",
+  "kernel": false,
+  "const": false,
+  "lineage": "how recordings are filed: author, series, anthology and singles pages",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-10",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "what it records: recordings of poets from 1913, Writers House readings and series, radio programming, albums, video and podcasts",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['record_object']",
+  "quote": "recordings of poets, historical and contemporary (the home page's selections run from Apollinaire, 1913, to work of 2016), readings and talks at the Kelly Writers House and reading series, radio programming (the Charles Ruas collection, 1970s to 2000s), poetry-and-music albums, video and podcasts",
+  "kernel": false,
+  "const": false,
+  "lineage": "scope and period: historic to contemporary",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "historical_earliest",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Guillaume Apollinaire, \"Le Pont Mirabeau\" (1913) (1:14):",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "contemporary_latest",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Julie Patton, \"Scribbling thru the Times\" (2016) (5:12):",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-11",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "whose authorship it keeps: poets' readings of their own and of others' work, performer named beside author; co-composers credited",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['record.keeps']",
+  "quote": "poets' readings of their own work and of others' work, with the performer named beside the author where they differ (John Clare's 'Vowelless Letter' performed by Charles Bernstein; Hannah Weiner's Clairvoyant Journal performed by Weiner, Sharon Mattlin and Rochelle Kraut); co-composers credited (music by Christopher Reiner, 'included with permission')",
+  "kernel": true,
+  "const": true,
+  "lineage": "author and performer credited apart",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "performer_clare",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "John Clare, \"Vowelless Letter\" (1849) performed by Charles Bernstein (2:54):",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "performer_weiner",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Hannah Weiner, from Clairvoyant Journal , performed by Weiner, Sharon Mattlin & Rochelle Kraut (2001) (6:12):",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "nielsen_permission",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "with the exception of \"Self-Organizing Networks,\" where the music and performance is by Christopher Reiner (and included with permission).",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-12",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "under what name it holds a work: the poet's name on an author page; a series name on series pages; no stated policy on pseudonyms, heteronyms or collective names",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['record.name']",
+  "quote": "under the poet's name on an author page; Wikipedia (third party) reports the manifesto's rule that sound files be indexed and retrievable 'under the poet's name'; the saved sources state no policy on pseudonyms, heteronyms or collective names; series pages hold work under a series name (Belladonna*, Love Jawns: A Mixtape)",
+  "kernel": true,
+  "const": false,
+  "lineage": "under whose name: the poet's name, a series name",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_manifesto_name",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "Sound files must be indexed and retrievable from a library catalog under the poet’s name and from search engines on the web.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   },
+   {
+    "key": "belladonna",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Three new Belladonna* readings from fall 2025 and spring 2026",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-13",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "who holds it and on what terms: the Center; recordings from poets, institutions and estates; free, non-commercial; rights terms not stated in the saved sources",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['record.holder']",
+  "quote": "the Center for Programs in Contemporary Writing at Penn; recordings provided by the poets themselves, universities and institutions and poets' estates (Wikipedia, third party); free to download, for non-commercial use (Wikipedia, third party); the rights terms of individual recordings are not stated in the saved sources",
+  "kernel": false,
+  "const": false,
+  "lineage": "terms of use and rights",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "operator",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "PennSound is a project of the Center for Programs in Contemporary Writing.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "wp_providers",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "generously provided to PennSound from the poets themselves, universities and institutions such as Harvard University's Woodberry Poetry Room , and from poets' estates.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   },
+   {
+    "key": "wp_noncommercial",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "The files are intended to be used non-commercially by anyone interested in listening to them, and are furthermore available for use by teachers and libraries.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-14",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "how the authorial function is attributed: author first, performer after 'performed by'; a co-composer credited; every file named under the poet's name; rights responsibility not stated",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['record.function']",
+  "quote": "authorship and performance credited apart: the author is named first and the performer after 'performed by' (Clare by Bernstein; Weiner with Mattlin and Kraut); a co-composer is credited for music and performance, 'included with permission'; the manifesto, per Wikipedia (third party), requires every file to be named and retrievable under the poet's name; responsibility for the rights of a recording is not stated",
+  "kernel": true,
+  "const": true,
+  "lineage": "author and performer credited apart",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "performer_clare",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "John Clare, \"Vowelless Letter\" (1849) performed by Charles Bernstein (2:54):",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "performer_weiner",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Hannah Weiner, from Clairvoyant Journal , performed by Weiner, Sharon Mattlin & Rochelle Kraut (2001) (6:12):",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "nielsen_permission",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "with the exception of \"Self-Organizing Networks,\" where the music and performance is by Christopher Reiner (and included with permission).",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "wp_manifesto_files",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "All files must be named.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   },
+   {
+    "key": "wp_manifesto_name",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "Sound files must be indexed and retrievable from a library catalog under the poet’s name and from search engines on the web.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-15",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "its method: new recordings, preserved archives, readings segmented into singles, documentation added over time",
+  "kind": "function",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['method']",
+  "quote": "producing new recordings (Kelly Writers House events, Close Listening and other series) and preserving existing audio archives given by poets, institutions, estates and collectors; segmenting readings into singles; adding bibliographic documentation over time, with users invited to supplement it",
+  "kernel": false,
+  "const": false,
+  "lineage": "provenance of the recordings and their documentation",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "self_description",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "PennSound is an ongoing project, committed to producing new audio recordings and preserving existing audio archives.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "documentation",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "We intend to provide as much documentation about individual recordings as possible; new bibliographic information will be added over time. Please contact us if you can supplement the information already provided.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   }
+  ]
+ },
+ {
+  "id": "LS-16",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "coverage: geography not stated, the United States and elsewhere; recordings from the 1910s; the project since 2005",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['coverage']",
+  "quote": "not stated; recordings from the United States and elsewhere (Apollinaire, Khlebnikov, Schwitters, Bennett among the home page's selections) … recordings from the 1910s onward; the project since 2005 (Wikipedia, third party)",
+  "kernel": false,
+  "const": false,
+  "lineage": "scope and period: historic to contemporary",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-17",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "its count: not stated on its own saved pages; Wikipedia's two figures",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['count.value']",
+  "quote": "not stated on PennSound's own saved pages; Wikipedia (third party) gives over 1500 full-length and single-poem recordings and, in another sentence, well over 50,000 sound files",
+  "kernel": false,
+  "const": false,
+  "lineage": "size: recordings and sound files",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_count",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "The website offers over 1500 full-length and single-poem recordings, the largest collection of poetry sound-files on the internet, all of which are available free for download.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   },
+   {
+    "key": "wp_count_files",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "Well over 50,000 sound files [ 4 ] are available for streaming and downloading",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-18",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "its holdings by page kind and its podcasts",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['holdings.0']",
+  "quote": "author pages, series pages, anthologies/collections/groups, singles, Cinema, Classics, podcasts (PennSound Podcasts, PoemTalk, PennSound Rewind)",
+  "kernel": false,
+  "const": false,
+  "lineage": "how recordings are filed: author, series, anthology and singles pages",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-19",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the Ruas collection, launched 2026-03-27",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['holdings.1']",
+  "quote": "the Charles Ruas collection of radio programming, launched 2026-03-27 with hundreds of recordings",
+  "kernel": false,
+  "const": false,
+  "lineage": "collections and programs: the Ruas collection, podcasts, PoemTalk",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "ruas",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Today we're happy to announce a new home for Charles Ruas's radio programming from the 70s, 80s, and 00s.",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "ruas_date",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Posted 3/27/2026",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "ruas_hundreds",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "this collection at launch features hundreds of recordings with more to come soon",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-20",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the Eric Mottram Centennial Collection",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['holdings.2']",
+  "quote": "the Eric Mottram Centennial Collection",
+  "kernel": false,
+  "const": false,
+  "lineage": "collections and programs: the Ruas collection, podcasts, PoemTalk",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "mottram",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Eric Mottram Centennial Collection",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-21",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "its stated limits: documentation added over time; the Ruas collection under construction",
+  "kind": "fact",
+  "modality": "self-description",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['stated_limits']",
+  "quote": "'We intend to provide as much documentation about individual recordings as possible; new bibliographic information will be added over time' … the Charles Ruas collection 'is still under construction and over time will see more additions and improvements'",
+  "kernel": true,
+  "const": false,
+  "lineage": "stated limits: documentation added over time; the Ruas collection under construction",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "documentation",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "We intend to provide as much documentation about individual recordings as possible; new bibliographic information will be added over time. Please contact us if you can supplement the information already provided.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "ruas_limit",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "The collection is still under construction and over time will see more additions and improvements",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-22",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "what it answers: whether a named poet is held; who performs where performer and author differ; which series and events are recorded",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['answers']",
+  "quote": "whether a recording of a named poet is held, on that poet's author page or a series page … who performs a given recording where the performer differs from the author … which reading series and events PennSound has recorded or archived",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it answers and does not answer",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-23",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "what it does not answer: rights; complete bibliographic data; how an author with several names is filed",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['does_not_answer']",
+  "quote": "who holds the rights to a recording (not stated in the saved sources) … complete bibliographic data for every recording (documentation is added over time) … how an author who writes under several names is filed (no naming policy in the saved sources)",
+  "kernel": true,
+  "const": false,
+  "lineage": "what it answers and does not answer",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-24",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the archive's reading: a witness of a distinct type, author, performer and co-composer kept as separate attributions; the filing rule the poet's name; whether a chosen name is kept as given not shown",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['ls_reading']",
+  "quote": "The archive reads PennSound as a witness of a distinct type: a recording keeps the author's name, the performer's voice and a co-composer's credit as separate attributions, so a reading of one poet's work by another collapses into neither. Its filing rule is the poet's name; whether a chosen name is kept as given is not shown beyond the names it files under.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the archive's reading: separate attributions",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-25",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "access: free streaming and MP3 download; search; indexes",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['data_access']",
+  "quote": "free streaming and MP3 download; a search box; author, series, singles and anthology indexes",
+  "kernel": false,
+  "const": false,
+  "lineage": "terms of use and rights",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-26",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "licence: not stated on its saved pages; non-commercial per Wikipedia",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['license']",
+  "quote": "not stated on PennSound's saved pages; Wikipedia (third party) states the files are intended for non-commercial use",
+  "kernel": false,
+  "const": false,
+  "lineage": "terms of use and rights",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_noncommercial",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "The files are intended to be used non-commercially by anyone interested in listening to them, and are furthermore available for use by teachers and libraries.",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-27",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "lifecycle: active; launched 2005; Daily posts 2025-11-12 to 2026-03-27; a listed reading of 2026-07-14",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['lifecycle']",
+  "quote": "active … launched 2005 (Wikipedia, third party); PennSound Daily posts dated 11/12/2025 to 3/27/2026; the New at PennSound list includes a reading dated July 14, 2026",
+  "kernel": false,
+  "const": false,
+  "lineage": "lifecycle: active, recordings listed to July 2026",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_launched",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "Launched 2005",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   },
+   {
+    "key": "earliest_daily",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Posted 11/12/2025",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "ruas_date",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "Posted 3/27/2026",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   },
+   {
+    "key": "latest_listed",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "George Quasha reading genius foci , Barrytown, NY, July 14, 2026",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-28",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "founded 2005, per Wikipedia",
+  "kind": "genealogy",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['founded']",
+  "quote": "2005 (Wikipedia, third party)",
+  "kernel": false,
+  "const": false,
+  "lineage": "founding: 2005",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_launched",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "Launched 2005",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-29",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "dates: latest Daily post 2026-03-27; latest listed recording 2026-07-14; Wikipedia edited 2026-09-22",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['version_and_time']",
+  "quote": "\"latest_daily_post\": \"2026-03-27\" … \"latest_listed_recording\": \"2026-07-14\" … \"wikipedia_edited\": \"2026-09-22\"",
+  "kernel": false,
+  "const": false,
+  "lineage": "lifecycle: active, recordings listed to July 2026",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_edited",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "This page was last edited on 22 September 2026, at 03:16 (UTC) .",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-30",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "what it is not: commercial; a complete bibliography; a rights clearance record; limited to the poet's own voice",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['negative_tags']",
+  "quote": "NOT a commercial service: free download (Wikipedia, third party: commercial 'No') … NOT a complete bibliography of the recordings: documentation is added over time … NOT a rights clearance record: the saved sources state no rights terms per recording … NOT limited to the poet's own voice: some recordings are performances of one author's work by another",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it answers and does not answer",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "wp_commercial",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "Commercial No",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   }
+  ]
+ },
+ {
+  "id": "LS-31",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "its neighbours in the census: UbuWeb, the Electronic Poetry Center, Jacket2; PennSound Rewind published at PennSound and Jacket2.org",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "R"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['relations']",
+  "quote": "\"target\": \"ubuweb\" … \"target\": \"epc\" … \"target\": \"jacket2\" … PennSound Rewind is published at PennSound and at Jacket2.org (the home page)",
+  "kernel": false,
+  "const": false,
+  "lineage": "neighbours: collaborators and thanks",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them.",
+  "basis": [
+   {
+    "key": "thanks",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "to UbuWeb and the Electronic Poetry Center.",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "senior_editors",
+    "src": "pennsound--about",
+    "basis": "operator",
+    "quote": "Danny Snelson and Kenneth Goldsmith , Senior Editors",
+    "url": "https://writing.upenn.edu/pennsound/about.php",
+    "sha256": "9164d92b56f8e207ce9a33bdfcb4a2e710b2623bb60f5446401506c2169c98b0"
+   },
+   {
+    "key": "wp_collaboration",
+    "src": "pennsound--wikipedia",
+    "basis": "third_party",
+    "quote": "PennSound works closely in collaboration with the Kelly Writers House , UbuWeb , The Electronic Poetry Center , Jacket2 magazine,",
+    "url": "https://en.wikipedia.org/wiki/PennSound",
+    "sha256": "62bae6f428eacdddb2c237178394809c0d83f40edf19387872733c3e6316f5a5"
+   },
+   {
+    "key": "rewind",
+    "src": "pennsound--home",
+    "basis": "operator",
+    "quote": "at our new PennSound Rewind page and at Jacket2.org .",
+    "url": "https://writing.upenn.edu/pennsound/",
+    "sha256": "2ddc53a3b55b38b5cfbdf85fa933d7c7271ad32e08fcfdf94c0b13e26565e057"
+   }
+  ]
+ },
+ {
+  "id": "LS-32",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "what the record leaves unchecked: the author and series pages, the manifesto and press release, any rights statement",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "census.json rows[slug == 'pennsound']['unchecked']",
+  "quote": "the author pages, series pages and singles archive themselves … the PennSound Manifesto and the launch press release (linked from the About page; the manifesto is known here only from Wikipedia) … any rights or permissions statement for the recordings",
+  "kernel": false,
+  "const": false,
+  "lineage": "what it answers and does not answer",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-33",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the census's organizing question",
+  "kind": "interpretation",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json (top) organizing_question",
+  "quote": "How is authorship made, named, distributed, attributed and sustained across persons, personas, collectives and machine participation, and what is lost when those relations are collapsed?",
+  "kernel": true,
+  "const": true,
+  "lineage": "the census's question: authored performance",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-34",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the census's admission rule",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json (top) admission_rule",
+  "quote": "A row is an aggregator: a resource that gathers and holds many other works or records and says what it holds (operator, 2026-11-01).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question: authored performance",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "LS-35",
+  "dep": "LS",
+  "record": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound",
+   "label": "LS"
+  },
+  "claim": "the census's anchors, #940 and #1722",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "O"
+  ],
+  "locus": "census.json (top) anchor",
+  "quote": "\"deposit\": 940 … \"deposit\": 1722",
+  "kernel": false,
+  "const": false,
+  "lineage": "the census's question: authored performance",
+  "date": "2026-11-01",
+  "title": "leesharks.com apparatus authorship census record: PennSound (https://www.leesharks.com/apparatus/aggregators/pennsound), editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1",
+  "creator": "Lee Sharks (editor)",
+  "file": "/home/claude/fleet/leesharks.com/data/authorship-census/census.json",
+  "quote_ok": true,
+  "quote_check": "the field's value as loaded (non-string values as their JSON text; each ' … ' part, whitespace-normalised)",
+  "entity": "pennsound",
+  "surface": {
+   "url": "https://www.leesharks.com/apparatus/aggregators/pennsound"
+  },
+  "note": "The census was compiled in session on 2026-11-01 from sources saved that day (data/authorship-census/sources, manifest with url, http, sha256 and fetch time); each record keeps the resource's own terms, and ls_reading is the archive's reading, kept apart from them."
+ },
+ {
+  "id": "CAP-1-01",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: host and directors exact; the Ruas collection carried; the 2005 launch not carried",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, findings.0",
+  "quote": "HOST AND DIRECTORS EXACT. 'Co-directed by Al Filreis, Charles Bernstein, and Chris Mustazza.' … The new Charles Ruas collection is carried … The 2005 launch is not carried.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-02",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the count's sources; files called recordings; Eliot in none of the three saved pages",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, findings.1",
+  "quote": "THE COUNT. 'over 50,000 recordings spanning from 1913 to the present' follows the Instagram card and the saved article's 'Well over 50,000 sound files', and the 1913 the home page's 'Guillaume Apollinaire, \"Le Pont Mirabeau\" (1913)'. … the composition calls all the files recordings. Of the four poets it names in its scope, T.S. Eliot appears in none of the three saved PennSound pages.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-03",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's finding: the separate credits not carried; everything filed under author pages",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, findings.2",
+  "quote": "THE CREDITS NOT CARRIED. The census row reads PennSound as a witness of a distinct type, where author, performer and co-composer are credited apart … The composition files everything under 'Author Pages: Extensive, individual catalogs for thousands of writers', matching the manifesto rule the article reports … and has no place for a reading of one poet's work by another.",
+  "kernel": true,
+  "const": true,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-04",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's innocent reading of the composition",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, reading",
+  "quote": "The innocent reading first. Asked for the name, the Overview says what the archive is, where it is based, who directs it, how its files are cut and what it runs.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-05",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's analysis: accurate at its grain; the census feature absent",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, analysis",
+  "quote": "The archive composed accurately at its grain, with its directors and its newest collection carried. The feature that makes it a census row, a performer and a co-composer credited beside the author, is absent.",
+  "kernel": true,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-06",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's title for the capture",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, mt",
+  "quote": "THE ARCHIVE AND ITS DIRECTORS EXACT; THE CHARLES RUAS COLLECTION OF 2026 CARRIED; ITS CREDITING OF PERFORMER APART FROM AUTHOR NOT CARRIED",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-07",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the address: the census name, a NEW address",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, q_kind",
+  "quote": "the census name; NEW address.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-08",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's PER note (PER 0.25)",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, per_note",
+  "quote": "The three directors and the Center for Programs in Contemporary Writing named; sources carded.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-09",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's description of the composition and its twelve cards",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, d",
+  "quote": "'PennSound is the world's largest free digital archive of poetry audio, featuring over 50,000 recordings spanning from 1913 to the present.' … Twelve cards: CPCW, Jacket2, Wikipedia, YouTube (four), poets.org, Penn Today, X, Instagram, ModPo.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "CAP-1-10",
+  "dep": "capture-registry",
+  "record": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/",
+   "label": "CAP"
+  },
+  "claim": "the registry's originator record: external, entered in the census 2026-11-01",
+  "kind": "fact",
+  "modality": "documented",
+  "strata": [
+   "D"
+  ],
+  "locus": "pennsound-aio-20261101, originator.basis",
+  "quote": "Not the archive's: an external resource, entered in the leesharks.com apparatus authorship census on 2026-11-01 (data/authorship-census, its own pages saved with hashes).",
+  "kernel": false,
+  "const": false,
+  "lineage": "the composition at the name",
+  "date": "2026-11-01",
+  "title": "Capture Registry (EA-WG-CAPTURES-01), entry pennsound-aio-20261101 (OBS-f07a679cb7c8, AXN:0B88.CAPTURE.🎪⭕✨🧡🌕▲)",
+  "creator": "Lee Sharks (the registry)",
+  "file": "data/EA-WG-CAPTURES-01.json",
+  "quote_ok": true,
+  "quote_check": "within the entry's field value as loaded (whitespace-normalised; each ' … ' part)",
+  "surface": {
+   "url": "https://www.alexanarch.org/captures/pennsound-aio-20261101/"
+  }
+ },
+ {
+  "id": "O940-01",
+  "dep": 940,
+  "record": "deposit",
+  "claim": "the archive holds the civil name the atomic unit of attribution across the systems of scholarly, literary, institutional and platform production, copyright among them",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§1 The political-semantic condition ¶2 s1–s6",
+  "quote": "A civil name is the atomic unit of attribution across the systems that govern legitimacy in scholarly, literary, institutional, and platform-mediated production. … Copyright attaches to legal names.",
+  "kernel": true,
+  "const": false,
+  "lineage": "under whose name: the poet's name, a series name",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "offset_ws": 6612,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "filing and retrieval of a work under the author's name (catalogue and name authority)"
+ },
+ {
+  "id": "O940-02",
+  "dep": 940,
+  "record": "deposit",
+  "claim": "the archive distinguishes the pseudonym (a changed label) from the heteronym (a changed organization of the authorial function)",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2 The heteronymic operation, distinguished ¶2",
+  "quote": "A pseudonym changes the label attached to an authorial function. A heteronym changes the organization of the authorial function itself.",
+  "kernel": true,
+  "const": false,
+  "lineage": "under whose name: the poet's name, a series name",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "offset_ws": 11923,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "the names under which a work is held (the census's record.name and does_not_answer for the entity)"
+ },
+ {
+  "id": "O940-03",
+  "dep": 940,
+  "record": "deposit",
+  "claim": "the archive's boundary of heteronymy excludes ordinary translation, role-playing understood as performance, and collaborative authorship constituting no distinct heteronym",
+  "kind": "definition",
+  "modality": "stipulation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§6 Ethical conditions and operational boundary, the list of what is typically not heteronymic",
+  "quote": "Ordinary translation, where the translator's authorial function is not distinct from the translation role … Role-playing, where the role is understood as performance rather than as sustained authorial organization … Collaborative authorship, where multiple civil bearers contribute but no distinct heteronym is constituted",
+  "kernel": true,
+  "const": false,
+  "lineage": "author and performer credited apart",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "offset_ws": 27466,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "a recording credited to an author and to a performer apart ('performed by')"
+ },
+ {
+  "id": "O940-04",
+  "dep": 940,
+  "record": "deposit",
+  "claim": "the archive holds that a heteronymic architecture makes a collapse of plural authorial functions register as loss",
+  "kind": "interpretation",
+  "modality": "interpretation",
+  "strata": [
+   "O"
+  ],
+  "locus": "§2, 'It interrupts extraction by making reduction visible as reduction.'",
+  "quote": "It ensures that the collapse registers as loss — the plurality was maintained, the seams were declared, the reduction is visibly reduction rather than recovery of ground truth.",
+  "kernel": false,
+  "const": false,
+  "lineage": "the archive's reading: separate attributions",
+  "date": "2026-07-01",
+  "title": "EA-HETERONYMY-01 v0.2: Heteronymy as Ethical Operation Against Civil-Name Reduction",
+  "creator": "Lee Sharks",
+  "file": "data/texts/AXN-03B8-text.md",
+  "offset_ws": 15216,
+  "quote_ok": true,
+  "quote_check": "verbatim in the deposit text (whitespace-normalised; each ' … ' part)",
+  "o_class": "the census's organizing question ('what is lost when those relations are collapsed?') and its reading of the entity (ls_reading: 'collapses into neither')"
+ }
+]

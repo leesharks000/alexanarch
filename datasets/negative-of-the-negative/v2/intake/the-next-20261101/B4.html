@@ -1,0 +1,564 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<meta name="title" content="About Space | The NEXT" />
+	<meta name="description" content="The About Space provides The NEXT’s Mission; highlights people who create and manage it, the organizations that support it; and presents ways to donate to it" />
+	<meta name="keywords" content="e-lit, electronic literature, computational literature, digital literature, net art, digital repository, digital collection, archive, museum, preservation, ELO mission statement, The NEXT creators, The NEXT sponsors, donation information, volunteer opportunities" />
+	
+	<!--open graph meta-->
+	<meta property="og:site_name" content="The NEXT">
+	<meta property="og:title" content="About Space | The NEXT">
+	<meta property="og:description" content="The About Space provides The NEXT’s Mission; highlights people who create and manage it, the organizations that support it; and presents ways to donate to it">
+	<meta property="og:image" content="https://the-next.org/img/global/next-icon.png">
+	<meta property="og:url" content="https://the-next.org/">
+
+    <!--CSS reset-->
+<!--     <link rel="stylesheet" href="https://the-next.org/css/base/reset.css" /> -->
+
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" /> -->
+<!-- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+	<link rel="preload" href="https://the-next.org/fonts/Lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="https://the-next.org/fonts/Lato/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="https://the-next.org/lib/bootstrap/bootstrap.5.0.2.min.css">
+
+
+    <!-- our css -->
+    <link rel="stylesheet" href="https://the-next.org/css/main.css" />
+    <link rel="shortcut icon" href="https://the-next.org/img/global/fav.png" />
+
+
+    <!-- jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://the-next.org/lib/jquery/jquery-3.5.1.slim.min.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+<!--     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+    <script src="https://the-next.org/lib/bootstrap/bootstrap.bundle.5.0.2.min.js"></script>
+
+    <!-- include full featured jquery!! -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <script src="https://the-next.org/lib/jquery/jquery-1.12.4.js"></script>
+    <script src="https://the-next.org/lib/jquery/jquery-ui.1.12.1.js"></script>
+
+    <!-- font awesome -->
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<!-- 	<link rel="stylesheet" href="https://the-next.org/lib/" /> -->
+	
+    <!-- datatables stuff -->
+    <link rel="stylesheet" href="https://the-next.org/lib/datatables/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="https://the-next.org/lib/datatables/jquery.dataTables.bootstrap4.min.css" />
+
+    <title>About Space | The NEXT</title></head>
+
+<body>
+    <!-- navigation bar elements -->
+	<header id="header" class="navbar navbar-expand-lg navbar-light sticky-top navbar-stacked">
+		<div class="container-fluid">
+			<a id="logo" class="navbar-brand" href="https://the-next.org/">
+				<img id="site-logo" src="https://the-next.org/img/global/the-next-logo.svg"
+					alt="The NEXT logo leading to the Welcome Space"
+					data-language-english="The NEXT logo leading to the Welcome Space"
+					data-language-french="Le logo NEXT menant Ã  l'espace d'accueil" data-language-spanish="" />
+			</a>
+
+			<div id="navbar-utility">
+				<form id="nav-bar-search-form" method="get" action="https://the-next.org/search">
+							<div class="search-title-cont">
+								<div class="search-section">
+									<label for="q" class="visually-hidden" data-language-english="Basic Search"
+										data-language-french="Recherche de base" data-language-spanish="">
+										Basic Search
+									</label>
+									<input id="q" class="main-search-input" type="text" name="q" placeholder="Search The NEXT"
+										data-language-english="Search The NEXT" data-language-french="Rechercher le NEXT"
+										data-language-spanish="" />
+									<div class="search-icon-nav-container" aria-hidden="true">
+										<i class="fa fa-search search-icon" alt="magnifying glass icon"
+											data-language-english="magnifying glass icon"
+											data-language-french="icÃ´ne de la loupe" data-language-spanish="">
+										</i>
+									</div>
+								</div>
+							</div>
+						</form>
+				<a class="nav-donate" href="https://the-next.org/donate"><span class="btn-donate"
+						data-language-english="Donate" data-language-french=""
+						data-language-spanish="">Donate</span></a>
+			</div>
+
+			<nav id="navbar" class="" aria-label="primary navigation">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="https://the-next.org/"><span class="nav-text" data-language-english="Welcome"
+								data-language-french="Bienvenue sur" data-language-spanish="">
+								Welcome
+							</span></a>
+					</li>
+
+					<li id="header-dropdown" class="nav-item dropdown">
+						<a data-bs-toggle="collapse" href="#collapseBrowse" role="button"
+							aria-expanded="false" class="nav-link" aria-controls="collapseBrowse"><span class="nav-text" data-language-english="Collections"
+								data-language-french="Parcourir les collections" data-language-spanish="">
+								Collections <span><img src="https://the-next.org/img/global/triangle-up-ico.svg" alt=""></span>
+							</span></a>
+
+						<ul class="collapse" id="collapseBrowse">
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/individual-artists-and-scholars"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Individual Artists & Scholars"
+										data-language-french="Artistes et chercheurÂ·eÂ·s individuelÂ·leÂ·s"
+										data-language-spanish="">
+										Individual Artists & Scholars
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/online-journals"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Online Journals" data-language-french="Revues en ligne"
+										data-language-spanish="">
+										Online Journals
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/anthologies"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Anthologies" data-language-french="Anthologies"
+										data-language-spanish="">
+										Anthologies
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/showcases"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Showcases"
+										data-language-french="Vitrines" data-language-spanish="">
+										Showcases
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/scholarly-publications"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Scholarly Publications"
+										data-language-french="Publications scientifiques" data-language-spanish="">
+										Scholarly Publications
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/ELO-archives"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="ELO Archives" data-language-french="Archives ELO"
+										data-language-spanish="">
+										ELO Archives
+									</span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/exhibitions"><span class="nav-text" data-language-english="Exhibitions" data-language-french="Expositions"
+								data-language-spanish="">
+								Exhibitions
+							</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/visualizations"><span class="nav-text" data-language-english="3D &amp; Virtual Experiences"
+								data-language-french=""
+								data-language-spanish="">3D &amp; Virtual Experiences
+							</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://archive.the-next.org/documentation/the-next-physical-archives-inventory.pdf" target="_blank"><span class="nav-text" data-language-english="Physical Archives" data-language-french="" data-language-spanish="">Physical Archives</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/about"><span class="header-active" data-language-english="About" data-language-french="A propos de"
+								data-language-spanish="">
+								About
+							</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://the-next.org/elms">
+							<span class="nav-text" data-language-english="ELMS" data-language-french="ELMS"
+								data-language-spanish="">
+								ELMS
+							</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/search?q="><span class="nav-text" data-language-english="Search" data-language-french=""
+								data-language-spanish="">
+								Search
+							</span></a>
+					</li>
+
+					<li class="nav-item nav-item-donate">
+						<a class="nav-donate" href="https://the-next.org/donate"><span
+								class="btn-donate" data-language-english="Donate"
+								data-language-french="" data-language-spanish="">Donate</span></a>
+					</li>
+				</ul>
+
+				<!--<li id="language-dropdown" class="nav-item dropdown">
+					<a data-bs-toggle="collapse" href="#collapseLanguage" role="button"
+						aria-expanded="false" class="nav-link" aria-controls="collapseLanguage">
+						<span class="abbreviation">English (US)</span>
+					</a>
+				</li>
+				<ul class="collapse" id="collapseLanguage">
+					<li id="langENG" class="nav-item languageChange english" data-language-target="english" data-flag-target="usa">
+						<span class="abbreviation">English (US)</span>
+					</li>
+					<li id="langQC" class="nav-item languageChange french" data-language-target="french" data-flag-target="quebec">
+						<span class="abbreviation">French (CA)</span>
+					</li>
+				</ul>-->
+			</nav>
+
+			<button type="button" id="mobile-menu-ico" aria-label="Menu" aria-controls="navbar" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
+		</div>
+	</header>
+    
+    <main>
+    <!-- title area -->
+    <header class="inner-wrap">
+        <h1 class="page-title"
+			data-language-english="About The NEXT"
+			data-language-french="À propos de The NEXT"
+			data-language-spanish="">
+			<strong>About</strong> The NEXT
+		</h1>
+    </header>
+
+    <!--mission area-->
+    <section class="row about-row full-width">
+        <figure class="col d-none d-sm-none d-md-block col-md-6 col-lg-6" aria-hidden="true">
+            <img class="img-fluid about-img" src="https://the-next.org/img/spaces/about/about-mission.png"
+                alt="evocative image of the mission section" aria-hidden="true"
+                data-language-english="evocative image of the mission section"
+				data-language-french="image évocatrice de la section mission"
+				data-language-spanish=""
+			/>
+        </figure>
+        <article class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 about-flex-col white-background">
+            <div class="about-text-wrapper about-text-right">
+                <h2 class="about-row-header"
+					data-language-english="OUR MISSION"
+					data-language-french="NOTRE MISSION"
+					data-language-spanish="">
+					OUR MISSION
+				</h2>
+                <hr class="about-hr">
+                <p id="funding-text"
+					data-language-english="The mission of ELO's The NEXT is to facilitate and promote the writing, publishing, and reading of literature in electronic media. It seeks to achieve this mission by making born-digital literary works and the scholarship about them accessible to the public for years to come."
+					data-language-french="La mission de The NEXT de la ELO est de faciliter et de promouvoir l'écriture, la publication et la lecture de la littérature sur support électronique. Nous cherchons à accomplir cette mission en rendant les œuvres littéraires numériques et les études qui les concernent accessibles au public pour les années à venir."
+					data-language-spanish="">
+					At the heart of The NEXT is the concern of maintaining and sharing the cultural record of human expression, from the period Jay David Bolter calls the <q>"late age of print"</q> (<i>Writing Space 1</i>) to the digital age. This mission is evident in the way we have not only built our collections&#8212;including combining born&#8212;digital literature, net art, and games from a wide range of sources—but also making them readily accessible to all for years to come.
+				</p>
+
+                <!-- Read Curatorial Statement button -->
+                <a href="https://the-next.org/curatorial-statement">
+                    <span class="btn btn-primary elms-btn"
+						data-language-english="Read Curatorial Statement"
+						data-language-french="Lire les réflexions de la commissaire"
+						data-language-spanish="">
+						Read Curatorial Statement
+					</span>
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <!--people area-->
+    <section class="row about-row full-width">
+        <article class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 about-flex-col white-background">
+            <div class="about-text-wrapper about-text-right">
+                <h2 class="about-row-header"
+					data-language-english="PEOPLE"
+					data-language-french="ÉQUIPE"
+					data-language-spanish="">
+					PEOPLE
+				</h2>
+                <hr class="about-hr">
+                <p id="funding-text"
+					data-language-english="Many people contribute to the development and maintenance of The NEXT, from Electronic Literature Organization's Board of Directors; scholars & artists involved in the field of born-digital literature & the Electronic Literature Lab; and designers, developers, & content and social media specialists at Washington State University Vancouver."
+					data-language-french="De nombreuses personnes contribuent au développement et à la maintenance de The NEXT, notamment le conseil d'administration de la Electronic Literature Organization, des chercheur·e·s et des artistes actif·ve·s dans le domaine de la littérature numérique et de la Electronic Literature Lab, ainsi que des concepteurs, des développeurs et des spécialistes du contenu et des médias sociaux de l'Université d'État de Washington à Vancouver."
+					data-language-spanish="">
+					Many people contribute to the development and maintenance of The NEXT, from Electronic Literature Organization's Board of Directors; scholars & artists involved in the field of born-digital literature & the Electronic Literature Lab; and designers, developers, & content and social media specialists at Washington State University Vancouver.
+				</p>
+                <a href="https://the-next.org/people">
+                    <span class="btn btn-primary elms-btn"
+						data-language-english="See Who's Involved"
+						data-language-french="Les équipes"
+						data-language-spanish="">
+						See Who's Involved
+					</span>
+                </a>
+            </div>
+        </article>
+        <figure class="col d-none d-sm-none d-md-block col-md-6 col-lg-6 about-flex-col" aria-hidden="true">
+            <img class="img-fluid about-img" src="https://the-next.org/img/spaces/about/about-people.png"
+                alt="evocative image of the people section"
+				data-language-english="evocative image of the people section"
+				data-language-french="image évocatrice de la section sur les personnes"
+				data-language-spanish=""
+			/>
+        </figure>
+    </section>
+
+    <!--sponsors area-->
+    <section class="row about-row full-width">
+        <figure class="col d-none d-sm-none d-md-block col-md-6 col-lg-6" aria-hidden="true">
+            <img class="img-fluid about-img" src="https://the-next.org/img/spaces/about/about-sponsors.png"
+                alt="evocative image of the sponsor section"
+				data-language-english="evocative image of the sponsor section"
+				data-language-french="image évocatrice de la section sur les sponsors"
+				data-language-spanish=""
+			/>
+        </figure>
+        <article class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 about-flex-col white-background">
+            <div class="about-text-wrapper about-text-right">
+                <h2 class="about-row-header"
+					data-language-english="SPONSORS"
+					data-language-french="COMMANDITAIRES"
+					data-language-spanish="">
+					SPONSORS AND SUPPORTERS
+				</h2>
+                <hr class="about-hr">
+                <p id="funding-text"
+					data-language-english="The NEXT was seeded by a grant from The Andrew W. Mellon Foundation. It is sustained through memberships in the Electronic Literature Organization and receives ongoing support from Washington State University Vancouver, the Electronic Literature Lab, and the Electronic Textual Cultures Lab at the University of Victoria."
+					data-language-french="Le projet NEXT a été lancé grâce à une subvention de la Fondation Andrew W. Mellon. Il est soutenu par les adhésions à la Electronic Literature Organization et bénéficie du soutien permanent de l'Université d'État de Washington à Vancouver, de la Electronic Literature Lab et de la Electronic Textual Cultures Lab de l'Université de Victoria."
+					data-language-spanish="">
+					The NEXT was seeded by a grant from The Andrew W. Mellon Foundation and hosted through the generosity of the Electronic Textual Cultures Lab at the University of Victoria and Compute Canada.  It is currently supported by Electronic Literature Organization, Washington State University Vancouver, and the Electronic Literature Lab. We have also received funding from the Society of American Archivists and individual donors such as Marjorie C. Luesebrink, Deena Larsen, and N. Katherine Hayles.
+				</p>
+            </div>
+        </article>
+    </section>
+
+    <!--donate area-->
+    <section class="row about-row full-width">
+        <article class="col col-xs-12 col-sm-12 col-md-6 col-lg-6 about-flex-col white-background">
+            <div class="about-text-wrapper about-text-right">
+                <h2 class="about-row-header"
+					data-language-english="DONATE"
+					data-language-french="FAIRE UN DON"
+					data-language-spanish="">
+					DONATE
+				</h2>
+                <hr class="about-hr">
+                <p id="funding-text"
+					data-language-english="You can donate to The NEXT by gifting born-digital literary works & scholarship about it, volunteering to help maintain the collections, or providing funding for it."
+					data-language-french="Vous pouvez faire un don à The NEXT en offrant des œuvres littéraires numérisées et des bourses d'études à leur sujet, en vous portant volontaire pour aider à maintenir les collections ou en fournissant un financement."
+					data-language-spanish="">
+					You can donate to The NEXT by gifting born-digital literary works & scholarship about it, volunteering to help maintain the collections, or providing funding for it.
+				</p>
+
+                <!--donate button area-->
+                <a href="https://the-next.org/donate">
+                    <span class="btn btn-primary elms-btn"
+						data-language-english="Learn More"
+						data-language-french="En savoir plus"
+						data-language-spanish="">
+						Learn More
+					</span>
+                </a>
+            </div>
+        </article>
+        <figure class="col d-none  d-sm-none d-md-block col-md-6 col-lg-6" aria-hidden="true">
+            <img class="img-fluid about-img" src="https://the-next.org/img/spaces/about/about-donate.png"
+                alt="evocative image of the donate section"
+				data-language-english="evocative image of the donate section"
+				data-language-french="Image évocatrice de la section faire un don"
+				data-language-spanish=""
+			/>
+        </figure>
+    </section>
+
+    <!--footer-->
+    </main><footer class="container-fluid">
+			<figure id="footer-logo">
+				<img src="https://the-next.org/img/global/the-next-logo.svg" alt="The NEXT Museum, Library, and Preservation Space">
+			</figure>
+
+			<section id="footer-supporters">
+				<h2>Supported By</h2>
+				<p>The NEXT is supported by grants, donations, and commissions and managed by the Electronic Literature Lab.</p>
+				<div class="supporter-logo-container">
+					<a href="https://dtc-wsuv.org/wp/ell/" target="_blank" title="the electronic literature lab website" aria-label="the electronic literature lab website"><figure>
+						<img src="https://the-next.org/img/global/ell-grayscale.png" alt="Electronic Literature Lab">
+					</figure></a>
+
+					<a href="https://www.vancouver.wsu.edu/" target="_blank" title="washington state university vancouver website" aria-label="washington state university vancouver website"><figure>
+						<img src="https://the-next.org/img/global/wsu-van.png" alt="Washington State University Vancouver">
+					</figure></a>
+
+					<a href="https://eliterature.org/" title="the electronic literature organization website" aria-label="the electronic literature organization website"><figure class="no-margin">
+						<img src="https://the-next.org/img/global/elo-face.png" alt="Electronic Literature Organization">
+					</figure></a>
+				</div>
+			</section>
+
+			<section id="footer-contact">
+				<h2>Contact Us</h2>
+				<p>Dene Grigar, Managing Director and Curator</p>
+				<a href="mailto:dgrigar@wsu.edu">dgrigar@wsu.edu</a>
+
+				<p>Electronic Literature Lab</p>
+				<p>Washington State University Vancouver</p>
+				<p>14204 NE Salmon Creek Avenue</p>
+				<p>Vancouver, WA 98686</p>
+			</section>
+
+			<nav id="footer-nav" aria-label="footer navigation">
+				<a href="https://the-next.org/">Welcome</a>
+				<a href="https://the-next.org/exhibitions">Exhibitions</a>
+				<a href="https://the-next.org/visualizations">3D &amp; Virtual Experiences</a>
+				<a href="https://archive.the-next.org/documentation/the-next-physical-archives-inventory.pdf" target="_blank">Physical Archives</a>
+				<a href="https://the-next.org/about">About</a>
+				<a href="https://the-next.org/elms">ELMS</a>
+				<a href="https://the-next.org/donate">Donate</a>
+			</nav>
+		</footer><script>
+		//navigation side menu open and close
+		$(".collapseTrigger").click(function(){
+			if ($(this).data("target") == "main") {
+				$("#menuSideNav").toggleClass("open");
+				$("#languageSideNav").removeClass("open");
+				$("#menuSideCollapseButtons").toggleClass("change");
+			}
+			else if ($(this).data("target") == "language") {
+				$("#languageSideNav").toggleClass("open");
+				$("#menuSideNav").removeClass("open");
+				$("#menuSideCollapseButtons").removeClass("change");
+			}
+		});
+		
+	</script>
+	
+	 <script>
+		//navigation side menu open and close
+		$(document).ready(function () {
+			var menuButton = $('#mobile-menu-ico');
+
+			function setMobileMenu(open) {
+				menuButton.toggleClass('open', open).attr('aria-expanded', open ? 'true' : 'false');
+				$('#navbar').toggleClass('mobile-open', open);
+			}
+
+			menuButton.click(function () {
+				setMobileMenu(menuButton.attr('aria-expanded') !== 'true');
+			});
+
+			$(document).keydown(function (e) {
+				if ((e.key === 'Escape' || e.key === 'Esc') && menuButton.attr('aria-expanded') === 'true') {
+					setMobileMenu(false);
+					menuButton.focus();
+				}
+			});
+
+			$('#navbar a:not([data-bs-toggle]) > .header-active').parent().attr('aria-current', 'page');
+		});
+		
+		//magnifying glass
+		$(".search-icon-nav-container").click(function(){
+			$("#nav-bar-search-form").submit();
+		});
+
+		$(document).ready(function () {
+			$(this).scrollTop(0);
+		});
+
+	</script>
+	
+	<!--translation scripts-->
+	<script>
+		$(document).ready(function() {
+			//replacement function
+			function pageTranslate(languageChoice) {
+				$("*").each(function( index ) {
+					if ($(this).attr('data-language-'+languageChoice)) {
+						
+						//check for html
+						if (!$(this).attr('alt') && !$(this).attr('placeholder')) {
+							var tempReplace = $(this).attr('data-language-'+languageChoice);
+							$(this).html(tempReplace);
+						}
+					
+						//check for placeholder text
+						if ($(this).attr('placeholder')) {
+							$(this).attr('placeholder',tempReplace);
+						}
+						
+						//check for alt text
+						if ($(this).attr('alt')) {
+							$(this).attr('alt',tempReplace);
+						}
+					}
+				});
+			}
+		
+			//set on page visit
+			if (localStorage.getItem("language") && localStorage.getItem("language") != "english") {
+				languageChoice = localStorage.getItem("language");
+// 				languageFlag = localStorage.getItem("flag");
+				pageTranslate(languageChoice);
+				$(".languageChange."+languageChoice).addClass("selected");
+				
+				//swap out top bar selection
+				$("#language-dropdown .abbreviation").html($(".languageChange."+languageChoice+" .abbreviation").html());
+// 				$("#language-dropdown .topBarFlag").attr("src", "https://the-next.org/img/global/flags/"+languageFlag+".svg");
+			}
+			else {
+				$(".languageChange.english").addClass("selected");
+			}
+		
+	
+			//translation text replacement
+			$(".languageChange").click(function(){
+				$(".languageChange").removeClass("selected");
+				$(this).addClass("selected");
+				
+				//swap out top bar selection
+				$("#language-dropdown .abbreviation").html($(this).children(".abbreviation").html());
+// 				$("#language-dropdown .topBarFlag").attr("src", $(this).children("img").attr("src"));
+				
+				var languageChoice = $(this).data("language-target");
+// 				var languageFlag = $(this).data("flag-target");
+				localStorage.setItem("language", languageChoice);
+// 				localStorage.setItem("flag", languageFlag);
+				//document.cookie = 'language='+languageChoice+'; SameSite=Lax';
+				pageTranslate(languageChoice);
+			});
+		});
+    </script>
+    <!-- Default Statcounter code for The NEXT - https://the-next.org -->
+	<script type="text/javascript">
+	var sc_project=12528173; var sc_invisible=1; var sc_security="7dbd2f01";
+	</script>
+	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+	<noscript>
+		<div aria-hidden="true" class="statcounter">
+			<a tab-index="" aria-hidden="true" title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank">
+				<img class="statcounter" src="https://c.statcounter.com/12528173/0/7dbd2f01/1/" alt="Web Analytics Made Easy - StatCounter"
+					data-language-english="Web Analytics Made Easy - StatCounter"
+					data-language-french="Analyse web facilitée - StatCounter"
+					data-language-spanish=""
+				>
+			</a>
+		</div>
+	</noscript>
+	<!-- End of Statcounter Code -->
+</body>
+
+</html>

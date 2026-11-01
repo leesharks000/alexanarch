@@ -1,0 +1,1454 @@
+{
+ "row": "viaf",
+ "address": "VIAF",
+ "addresses": [
+  "VIAF"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext or rendered text, the LOD Cloud record's JSON, the PDF's extracted text, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools and kept apart by origin. B_D, the disclosed pool: 'card', every card on the transcript's rail (B1 viaf.org, VIAF's own site and the census's own page, unreachable; B2 OCLC's product page; B3 the Wikipedia article, also the entity's Wikipedia source; B4 OCLC Research's concluded project page; B5 the LOD Cloud's dataset record; B6 Hickey and Young's 2012 dataset description in the Semantic Web Journal). B_R, the reference pool: 'census_third_party', the ISNI Wikipedia article the census read (B7). A source in both is carried once, in B_D.",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/viaf-20261101/ (Bn.html raw, Bn.txt text extracted with scripts and styles stripped; B3.wiki the raw wikitext; B5.json the LOD record; B6.pdf with B6.txt by pdftotext -layout; B1-census.* and B3-census.html the census's saved copies; B7 the census's saved copy; tries/ the raw first fetches)",
+ "counts": {
+  "sources": 7,
+  "B_D": 6,
+  "B_R": 1,
+  "fetched": 6,
+  "unreachable": 1,
+  "claims": 60,
+  "claims_B_D": 57,
+  "claims_B_R": 3,
+  "quotes_ok": 60
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "VIAF — VIAF",
+   "fetched": "unreachable: https://viaf.org/ HTTP 403 (Cloudflare block) at 2026-11-01T06:14:47Z, as the census's fetch at 2026-11-01T05:32:47Z; card title and snippet only",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "OCLC — VIAF: Convenient access to name authority files | OCLC",
+   "fetched": "card; B2.html sha256 fc02350aa6a54164, HTTP 200 at 2026-11-01T06:14:47Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "Wikipedia — Virtual International Authority File - Wikipedia",
+   "fetched": "card; B3.html sha256 10288c58ab5b9929, HTTP 200 at 2026-11-01T06:14:53Z; wikitext HTTP 200 (sha256 fd2bc9158af25086)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "OCLC — VIAF (The Virtual International Authority File)",
+   "fetched": "card; B4.html sha256 980d3a7f49c45ff0, HTTP 200 at 2026-11-01T06:14:48Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "The Linked Open Data Cloud — LOD Cloud",
+   "fetched": "card; B5.html sha256 06ddf35a9abe8026, HTTP 200 at 2026-11-01T06:14:48Z; the page a script template, its record read from /json/viaf (HTTP 200, sha256 ef4a2030346d37b5)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "Semantic Web Journal — Description of the VIAF (Virtual International Authority File) Dataset",
+   "fetched": "card; B6.pdf sha256 6aea26e7edced5b2, HTTP 200 at 2026-11-01T06:15:39Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "Wikipedia — International Standard Name Identifier (census source)",
+   "fetched": "census third party; B7.html sha256 24575f41df384288, HTTP 200 at 2026-11-01T05:32:47Z; the census's saved copy, sha256 matching the manifest",
+   "origin": "census_third_party",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6"
+  ],
+  "own_pages": [],
+  "own_pages_note": "the census's one own page (viaf--home, https://viaf.org/) is card 1: one page, carried once, as a card, in B_D (B1); both fetches refused (HTTP 403)",
+  "wikipedia": [
+   "B3"
+  ],
+  "census_third_party": [
+   "B7"
+  ],
+  "unreachable": [
+   "B1"
+  ],
+  "title_only": [
+   "B1"
+  ],
+  "wikipedia_state": "article: 'Virtual International Authority File' (raw wikitext HTTP 200, rendered HTTP 200, 2026-11-01T06:14Z), no redirect, last edited 19 June 2026; it is card 3 of T, so the Wikipedia source and the card are one source, carried once in B_D (B3)",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6"
+   ],
+   "B_R": [
+    "B7"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (no source named in the body beyond the cards; the body's inline link to the VIAF Website is card 1's site); B_R, the reference pool (the ISNI article the census read). The own page and the Wikipedia article are both in B_D as cards 1 and 3. T against L_F(B_D) uses B1–B6 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 1 (and the census own page viaf--home: one page, carried once, in B_D)",
+    "card": "VIAF — VIAF",
+    "url": "https://viaf.org/",
+    "kind": "Overview card (VIAF's own site); the census's own page viaf--home",
+    "files": {
+     "B1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B1.html",
+      "sha256": "b00d19dfad090d9e66eb2307c743940d7f70b9c988d7d9056b8b5b388c1ff773"
+     },
+     "B1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B1.txt",
+      "sha256": "6493d64d0f8135df746eb9c358c571799903edf7f09f6954fc6e47f0685a21e4"
+     },
+     "B1-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B1-census.html",
+      "sha256": "33c44cf052936ca1c325df0a54faa8355b16e3fc9a5ae3c8139c28e1c347c462"
+     },
+     "B1-census.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B1-census.txt",
+      "sha256": "b1f18cffd475fd8d2f39d00917de79c6f724fe8ce289bf4863ebaa8e8e7e0bf6"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T06:14:47Z",
+     "http": 403,
+     "url": "https://viaf.org/",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B1.html",
+     "raw_sha256": "b00d19dfad090d9e66eb2307c743940d7f70b9c988d7d9056b8b5b388c1ff773",
+     "result": "unreachable: HTTP 403, a Cloudflare block page (\"Sorry, you have been blocked … You are unable to access viaf.org\"); one attempt with the census agent string, no retry by another agent string or route",
+     "census_copy": {
+      "src": "viaf--home",
+      "http": "403",
+      "fetched": "2026-11-01T05:32:47Z",
+      "sha256": "33c44cf052936ca1c325df0a54faa8355b16e3fc9a5ae3c8139c28e1c347c462",
+      "agrees": "both refused (HTTP 403, Cloudflare block page); the block pages differ by Ray ID"
+     }
+    },
+    "names_operator": "card snippet: yes ('a single OCLC-hosted...')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL from the card's site and snippet (VIAF's own site, the census's own page viaf--home). Refused at 06:14:47Z with the census agent string, as the census's fetch was at 05:32:47Z; recorded unreachable, the card's title and snippet its only text (§3.1(a)). The card and the census own page are one page, carried once, as a card, in B_D.",
+    "surfaced_by_T": [
+     {
+      "slug": "viaf-aio-20261101",
+      "card": 1
+     }
+    ],
+    "card_title": "VIAF",
+    "card_snippet": "VIAF: The Virtual International Authority File The VIAF® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted..."
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 2",
+    "card": "OCLC — VIAF: Convenient access to name authority files | OCLC",
+    "url": "https://www.oclc.org/en/viaf.html",
+    "kind": "Overview card (OCLC's product page for VIAF: overview, contributors, governance, history)",
+    "files": {
+     "B2.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B2.html",
+      "sha256": "fc02350aa6a54164031f2529d2251c453f6526afd9ef6c2f07e2418994ffd6d7"
+     },
+     "B2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B2.txt",
+      "sha256": "c82ab27c76c5f161c7833a31859a3b29996a017c064201178b8c3af3a137bfa0"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T06:14:47Z",
+     "http": 200,
+     "url": "https://www.oclc.org/en/viaf.html",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B2.html",
+     "raw_sha256": "fc02350aa6a54164031f2529d2251c453f6526afd9ef6c2f07e2418994ffd6d7",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B2.txt"
+     ]
+    },
+    "names_operator": "yes ('a single OCLC-hosted name authority service'; 'OCLC maintains the hosting, software, and data for VIAF')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL by the card's title (the page's <title> is 'VIAF: Convenient access to name authority files | OCLC', verbatim); found by WebSearch on the title; the snippet's 'unified entity clusters, preserving r...' is a summary line of the card renderer and stands beside the page text.",
+    "searches": [
+     "WebSearch '\"VIAF: Convenient access to name authority files\" OCLC'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "viaf-aio-20261101",
+      "card": 2
+     }
+    ],
+    "card_title": "VIAF: Convenient access to name authority files | OCLC",
+    "card_snippet": "Overview: VIAF (Virtual International Authority File) is an OCLC-hosted service combining global name authority files into unified entity clusters, preserving r..."
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "also_origin": "wikipedia",
+    "pool": "B_D",
+    "role": "Overview card 3 (and the entity's Wikipedia article: one source, carried once, in B_D)",
+    "card": "Wikipedia — Virtual International Authority File - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Virtual_International_Authority_File",
+    "kind": "Overview card (the Wikipedia article); the entity's Wikipedia article",
+    "files": {
+     "B3.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3.html",
+      "sha256": "10288c58ab5b9929ff1a6ca8df8bedd564582dd142321e9141d0f10a2e80ee32"
+     },
+     "B3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3.txt",
+      "sha256": "e1015846cc96508b21ab074fc61c5482733530a03c2c5c08dbd3f1972b36e7ae"
+     },
+     "B3.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3.wiki",
+      "sha256": "fd2bc9158af25086cdef06894ca412b3d842106eab9f4b37d803d248152608f0"
+     },
+     "B3-census.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3-census.html",
+      "sha256": "d506ac21de7d3c5c673cc75d04ad77a5d6a1cfd3c05675c16576219293ea1fb9"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T06:14:53Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Virtual_International_Authority_File",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3.html",
+     "raw_sha256": "10288c58ab5b9929ff1a6ca8df8bedd564582dd142321e9141d0f10a2e80ee32",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3.txt",
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B3.wiki"
+     ],
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Virtual_International_Authority_File&action=raw",
+      "http": 200,
+      "at": "2026-11-01T06:14:52Z",
+      "sha256": "fd2bc9158af25086cdef06894ca412b3d842106eab9f4b37d803d248152608f0"
+     },
+     "census_copy": {
+      "src": "viaf--wikipedia",
+      "sha256": "d506ac21de7d3c5c673cc75d04ad77a5d6a1cfd3c05675c16576219293ea1fb9",
+      "http": "200",
+      "fetched": "2026-11-01T05:32:48Z",
+      "agrees": "same length (255,502 bytes), different hash (the rendered page carries per-request tokens); the article text the same, last edited 19 June 2026 in both"
+     }
+    },
+    "names_operator": "yes ('operated by the Online Computer Library Center (OCLC)')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Article title Virtual_International_Authority_File, no redirect; rendered page and raw wikitext both HTTP 200; last edited 19 June 2026. The census row rests on this article (its evidence basis third_party).",
+    "surfaced_by_T": [
+     {
+      "slug": "viaf-aio-20261101",
+      "card": 3
+     }
+    ],
+    "card_title": "Virtual International Authority File - Wikipedia",
+    "card_snippet": "Virtual International Authority File The Virtual International Authority File (VIAF) is an international authority file. It is a joint project of several nation..."
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 4",
+    "card": "OCLC — VIAF (The Virtual International Authority File)",
+    "url": "https://www.oclc.org/research/activities/viaf.html",
+    "kind": "Overview card (OCLC Research's page for the concluded VIAF research project, kept 'for historical purposes only')",
+    "files": {
+     "B4.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B4.html",
+      "sha256": "980d3a7f49c45ff0aa8b25e4520c1f0acacb3571e9ed003f091fa3240c799e27"
+     },
+     "B4.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B4.txt",
+      "sha256": "620890178288de6fd4da4a264fe40ebb544a58c850fabdf9ebe9a50b277dfe71"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T06:14:48Z",
+     "http": 200,
+     "url": "https://www.oclc.org/research/activities/viaf.html",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B4.html",
+     "raw_sha256": "980d3a7f49c45ff0aa8b25e4520c1f0acacb3571e9ed003f091fa3240c799e27",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B4.txt"
+     ]
+    },
+    "names_operator": "yes ('VIAF has transitioned from an OCLC Research prototype to an OCLC service')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL by the card's title, verbatim as the page's heading; found by WebSearch. The snippet's 'Partners: Joint project ...' renders the page's partner sentence.",
+    "searches": [
+     "WebSearch '\"VIAF (The Virtual International Authority File)\" OCLC research prototype April 4, 2012'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "viaf-aio-20261101",
+      "card": 4
+     }
+    ],
+    "card_title": "VIAF (The Virtual International Authority File)",
+    "card_snippet": "Overview: VIAF (Virtual International Authority File) transitioned from an OCLC Research prototype to an OCLC service on April 4, 2012. Partners: Joint project ..."
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 5",
+    "card": "The Linked Open Data Cloud — LOD Cloud",
+    "url": "https://lod-cloud.net/dataset/viaf",
+    "kind": "Overview card (the LOD Cloud's dataset record for VIAF): the HTML page is a script-rendered template; its record is the JSON the page loads and links ('Download metadata as: JSON', /json/viaf)",
+    "files": {
+     "B5.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B5.html",
+      "sha256": "06ddf35a9abe802607b4a7d0610174fe5f734ab4cc18b6a25729ad8c82a9189b"
+     },
+     "B5.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B5.txt",
+      "sha256": "39c0c54cbe7d6f698d522de6fdd79b3139450a005702aad52e53093dcb233a04"
+     },
+     "B5.json": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B5.json",
+      "sha256": "ef4a2030346d37b5c01ed5e66fe5dd29c553622d394f4173782e5e2014310b2f"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T06:14:48Z",
+     "http": 200,
+     "url": "https://lod-cloud.net/dataset/viaf",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B5.html",
+     "raw_sha256": "06ddf35a9abe802607b4a7d0610174fe5f734ab4cc18b6a25729ad8c82a9189b",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B5.json"
+     ],
+     "result": "the HTML is an unrendered template ({{dataset.description.en}}); the dataset record read from the JSON the page itself links",
+     "json": {
+      "url": "https://lod-cloud.net/json/viaf",
+      "http": 200,
+      "at": "2026-11-01T06:15:14Z",
+      "sha256": "ef4a2030346d37b5c01ed5e66fe5dd29c553622d394f4173782e5e2014310b2f"
+     }
+    },
+    "names_operator": "yes ('an OCLC dataset and service'; contact point 'OCLC Online Computer Library Center, Inc.')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL from the site's dataset path for VIAF (lod-cloud.net/dataset/<identifier>); the page's template carries no text of its own, so the record is read from the page's own JSON link (/json/viaf, linked on the page as 'Download metadata as: JSON'). The card snippet's 'joint project of 20 national libraries' is verbatim in the JSON description.",
+    "surfaced_by_T": [
+     {
+      "slug": "viaf-aio-20261101",
+      "card": 5
+     }
+    ],
+    "card_title": "LOD Cloud",
+    "card_snippet": "Overview: VIAF (Virtual International Authority File) is an OCLC dataset and joint project of 20 national libraries combining multiple LAM name authority files ..."
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "role": "Overview card 6",
+    "card": "Semantic Web Journal — Description of the VIAF (Virtual International Authority File) Dataset",
+    "url": "https://www.semantic-web-journal.net/sites/default/files/swj294.pdf",
+    "kind": "Overview card (Thomas B. Hickey and Jeffrey A. Young, OCLC Research, 'Description of the VIAF (Virtual International Authority File) Dataset', Semantic Web Journal special call for linked dataset descriptions, dated 2012.05.25; PDF)",
+    "files": {
+     "B6.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B6.pdf",
+      "sha256": "6aea26e7edced5b2300eedee7394965d94fab026ada1702f81ae03cda38c9186"
+     },
+     "B6.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B6.txt",
+      "sha256": "7c31fe4ce989a750c279e3394e5ee185e2a2133ad138f939a78f6d540c45faf7"
+     },
+     "B6-try1.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B6-try1.html",
+      "sha256": "4aeb8cc0e2727012fc4689e552ce07925998226c3e7fbe598af9bf25d166071d"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T06:15:39Z",
+     "http": 200,
+     "url": "https://www.semantic-web-journal.net/sites/default/files/swj294.pdf",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B6.pdf",
+     "raw_sha256": "6aea26e7edced5b2300eedee7394965d94fab026ada1702f81ae03cda38c9186",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B6.txt"
+     ],
+     "tries": [
+      {
+       "url": "https://www.semantic-web-journal.net/content/description-viaf-virtual-international-authority-file-dataset",
+       "http": 403,
+       "at": "2026-11-01T06:14:49Z",
+       "file": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B6-try1.html",
+       "sha256": "4aeb8cc0e2727012fc4689e552ce07925998226c3e7fbe598af9bf25d166071d",
+       "note": "a guessed node URL; the site's 'Access denied' page for that path. The card's PDF was then found by WebSearch and fetched with the same agent string; the guessed URL was never the card's"
+      }
+     ]
+    },
+    "names_operator": "yes ('the product of an ongoing collaboration of OCLC and a group of national libraries'; '©2012 OCLC Online Computer Library Center, Inc.')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "URL found by WebSearch (extended) on the exact card title; text extracted with pdftotext -layout. The card snippet ('©2012 OCLC Online Computer Library Center, Inc., 6565 Kilgour Place, Dublin, Ohio (USA) 43017-3395. Description of the VIAF ...') is the PDF's footer and title, verbatim.",
+    "searches": [
+     "WebSearch '\"Description of the VIAF (Virtual International Authority File) Dataset\" semantic web journal'",
+     "WebSearch (extended) '\"Description of the VIAF (Virtual International Authority File) Dataset\"'"
+    ],
+    "surfaced_by_T": [
+     {
+      "slug": "viaf-aio-20261101",
+      "card": 6
+     }
+    ],
+    "card_title": "Description of the VIAF (Virtual International Authority File) Dataset",
+    "card_snippet": "©2012 OCLC Online Computer Library Center, Inc., 6565 Kilgour Place, Dublin, Ohio (USA) 43017-3395. Description of the VIAF (Virtual International Authority Fil..."
+   },
+   {
+    "id": "B7",
+    "origin": "census_third_party",
+    "pool": "B_R",
+    "role": "census third-party source isni--wikipedia (the ISNI article, read by the census for this row's evidence isni_based_on_viaf and dead_link); not surfaced by T",
+    "card": "Wikipedia — International Standard Name Identifier (census source)",
+    "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+    "kind": "Wikipedia article on ISNI, a third party read by the census",
+    "files": {
+     "B7.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B7.html",
+      "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a"
+     },
+     "B7.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B7.txt",
+      "sha256": "6e896cd4a929806c3409257cf7c17c34c76dcbf6074061b07bdb3854d9b185e5"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-01T05:32:47Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/International_Standard_Name_Identifier",
+     "raw": "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B7.html",
+     "raw_sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/viaf-20261101/B7.txt"
+     ],
+     "census_copy": {
+      "src": "isni--wikipedia",
+      "sha256": "24575f41df3842882f13ba8caf11d4a96c70fa16c4ab360583625a4049035f6a",
+      "read": "2026-11-01",
+      "agrees": true
+     }
+    },
+    "names_operator": "yes ('developed by OCLC for use in the aggregation of library catalogues')",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation, EA-WG-CAPTURES-01 in the saved text, card title and snippet)",
+    "note": "Copied from the census's saved copy (gunzipped; sha256 matching the manifest); B7.txt is the census's text. A reference source: it shows nothing of what T had before it (§0.3).",
+    "surfaced_by_T": []
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet (unreachable)",
+   "quote": "VIAF: The Virtual International Authority File The VIAF® (Virtual International Authority File) combines multiple name authority files into a single OCLC-hosted...",
+   "claim": "VIAF's own site as its card renders it: it combines multiple name authority files into a single OCLC-hosted service",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "undated (snippet only)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet (unreachable source), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "The VIAF (Virtual International Authority File) service provides libraries and library users with convenient access to the world’s major name authority files.",
+   "claim": "OCLC's product page: the service gives libraries and their users access to the world's major name authority files",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F3": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "VIAF Contributors regularly supply authority data that VIAF matches, links, and groups. All descriptions for a given entity are merged into a cluster that brings together the different names for that entity.",
+   "claim": "contributors supply authority data that VIAF matches, links and groups; all descriptions of an entity are merged into one cluster that brings its different names together",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": true,
+   "const": true,
+   "lineage": "the cluster: one entity, its names together",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F4": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Overview",
+   "quote": "This service allows researchers to identify names, locations, works, and expressions while preserving regional preferences for language, spelling, and script.",
+   "claim": "researchers identify names, locations, works and expressions, regional preferences of language, spelling and script preserved",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "regional forms kept within the cluster",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F5": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Collaborate with other libraries",
+   "quote": "The data of more than 50 organizations from more than 30 countries is represented in VIAF.",
+   "claim": "more than 50 organizations from more than 30 countries",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F6": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Collaborate with other libraries",
+   "quote": "These Contributors participate in the governance of VIAF through the VIAF Council, which provides guidance on the policies, practices, and operation of VIAF.",
+   "claim": "contributors take part in governance through the VIAF Council",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: OCLC, the Council, the Principals",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F7": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Join a trusted global authority file",
+   "quote": "The United States Library of Congress, the Deutsche Nationalbibliothek, and OCLC began a proof-of-concept project to link their authority records in April 1998. After four years of testing authority file linking, this group formed the VIAF Consortium at the 69th IFLA General Conference in August 2003.",
+   "claim": "LC, DNB and OCLC began a proof of concept in April 1998; after four years of testing they formed the VIAF Consortium at the 69th IFLA General Conference, August 2003",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: 1998, 2003, 2007",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F8": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Join a trusted global authority file",
+   "quote": "The Bibliothèque nationale de France joined the consortium in October 2007.",
+   "claim": "the BnF joined in October 2007; the four original members served as Principals",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: 1998, 2003, 2007",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F9": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Join a trusted global authority file",
+   "quote": "In 2012, the 22 VIAF Principals and Contributors in 18 countries worked with OCLC as VIAF transitioned into an OCLC service. With advice from the VIAF Council, OCLC maintains the hosting, software, and data for VIAF.",
+   "claim": "22 principals and contributors in 18 countries at the 2012 transition; OCLC maintains hosting, software and data with the Council's advice",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "who holds it: OCLC, the Council, the Principals",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F10": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "closing paragraph",
+   "quote": "The goal of the service is to lower the cost and increase the utility of library authority files by matching and linking widely used authority files and making that information available online.",
+   "claim": "its goal: lower the cost and raise the utility of library authority files by matching and linking them and putting them online",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: cost and utility of authority files",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 c82ab27c76c5f161…) or the card's snippet, whitespace-normalised"
+  },
+  "F11": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "lead",
+   "quote": "The Virtual International Authority File ( VIAF ) is an international authority file . It is a joint project of several national libraries, operated by the Online Computer Library Center (OCLC).",
+   "claim": "an international authority file, a joint project of several national libraries operated by OCLC",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F12": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "After several failed attempts to develop a unique joint authority file, the new idea was to link existing national authorities.",
+   "claim": "after failed attempts at one joint authority file, the idea became to link the existing national files",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": true,
+   "lineage": "linking existing authority files",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F13": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The project was initiated by the American Library of Congress (LC), the German National Library (DNB), and the OCLC in April 1998 as a proof-of-concept that authority records can be linked.",
+   "claim": "initiated April 1998 by LC, DNB and OCLC as a proof of concept that authority records can be linked",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: 1998, 2003, 2007",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F14": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "After extensive testing, the VIAF consortium was formed at the 2003 World Library and Information Congress … on 6 August 2003,",
+   "claim": "the consortium formed at the 2003 World Library and Information Congress, 6 August 2003",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: 1998, 2003, 2007",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F15": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The Bibliothèque nationale de France (BnF) joined the project on 5 October 2007.",
+   "claim": "the BnF joined on 5 October 2007",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "origin: 1998, 2003, 2007",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F16": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The project transitioned to being a service of OCLC on 4 April 2012.",
+   "claim": "an OCLC service from 4 April 2012",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: an OCLC service since 2012",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F17": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The aim is to link the national authority files (such as the German Integrated Authority File ) to a single virtual authority file. In this file, identical records from the different data sets are linked together.",
+   "claim": "the aim: national files linked into a single virtual authority file, identical records linked together",
+   "modality": "documented",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "linking existing authority files",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F18": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "A VIAF record receives a standard data number, contains the primary \"see\" and \"see also\" records from the original documents, and refers to the original authority records.",
+   "claim": "the unit: a VIAF record with a standard data number, the see and see-also records of the originals, and references to the original records",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the record: number, see and see-also forms",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F19": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The data is made available online and is available for research and, data exchange and sharing. Reciprocal updating uses the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH) protocol.",
+   "claim": "online for research, data exchange and sharing; reciprocal updating by OAI-PMH",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licence",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F20": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History",
+   "quote": "The file numbers are also being added to Wikipedia biographical articles and are incorporated into Wikidata .",
+   "claim": "VIAF numbers added to Wikipedia biographical articles and incorporated into Wikidata",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "integration: Wikipedia, Wikidata, linked data",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F21": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History (Borgman)",
+   "quote": "Christine L. Borgman groups VIAF with the International Standard Name Identifier and ORCID systems, describing all three as \"loosely coordinated efforts to standardize name forms\".",
+   "claim": "Borgman groups VIAF with ISNI and ORCID as 'loosely coordinated efforts to standardize name forms'",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Borgman: name forms, led by libraries",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F22": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History (Borgman)",
+   "quote": "Borgman characterizes all three systems as attempts to solve the problem of author name disambiguation , which has grown in scale as the quantity of data multiplies.",
+   "claim": "Borgman: all three are attempts to solve author name disambiguation, a problem grown with the quantity of data",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Borgman: name forms, led by libraries",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F23": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "History (Borgman)",
+   "quote": "She notes that VIAF, unlike the other two systems, is led by libraries, as opposed to individual authors or creators.",
+   "claim": "Borgman: VIAF, unlike ISNI and ORCID, is led by libraries, as opposed to individual authors or creators",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": true,
+   "lineage": "Borgman: name forms, led by libraries",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F24": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "VIAF clusters",
+   "quote": "VIAF's clustering algorithm is run every month. As more data are added from participating libraries, clusters of authority records may coalesce or split, leading to some fluctuation in the VIAF identifier of certain authority records.",
+   "claim": "monthly clustering; clusters may coalesce or split, so the identifier of certain records fluctuates",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the identifier: monthly clusters, fluctuation, redirects",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F25": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Participating libraries and organizations (table)",
+   "quote": "International Standard Name Identifier ISNI – London United Kingdom … Perseus Project PERSEUS … Union List of Artist Names – Getty Research Institute ULAN JPG … Wikidata [ citation needed ] WKP",
+   "claim": "the participants table: national libraries and others, among them ISNI, the Perseus Project, the Getty ULAN and Wikidata, the last marked 'citation needed'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "infobox",
+   "quote": "Example 106965171",
+   "claim": "the infobox gives an example identifier, 106965171",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: number, see and see-also forms",
+   "date": "2026-06-19 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "This page was last edited on 19 June 2026, at 19:30",
+   "claim": "the article's last edit, 19 June 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia, the cloud, the journal",
+   "date": "2026-06-19",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 e1015846cc96508b…) or wikitext B3.wiki, whitespace-normalised",
+   "also_origin": "wikipedia"
+  },
+  "F28": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "notice",
+   "quote": "Please note: This research project has concluded. … Information on this page is provided for historical purposes only. Some portion of this content may be out-of-date and include broken links.",
+   "claim": "OCLC Research: the research project has concluded; the page is kept for historical purposes and may be out of date",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "operator: an OCLC service since 2012",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F29": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "notice",
+   "quote": "On 4 April 2012, VIAF has transitioned from an OCLC Research prototype to an OCLC service.",
+   "claim": "from an OCLC Research prototype to an OCLC service on 4 April 2012",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator: an OCLC service since 2012",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "A joint project with the Library of Congress, the Deutsche Nationalbibliothek, and the Bibliothèque nationale de France, in cooperation with an expanding number of other national libraries and other agencies, VIAF explores virtually combining the name authority files of participating institutions into a single name authority service.",
+   "claim": "a joint project with LC, DNB and BnF, virtually combining the participants' name authority files into a single name authority service",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "linking existing authority files",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "As of the winter of 2011 there are 21 authority files of personal, corporate, and conference names from 18 organizations participating in VIAF.",
+   "claim": "21 authority files from 18 organizations, winter 2011",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "2011 (winter, as the page states)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Impact",
+   "quote": "By linking disparate names for the same person or organization, VIAF provides a convenient means for a wider community of libraries and other agencies to repurpose bibliographic data produced by libraries serving different language communities.",
+   "claim": "linking disparate names for one person or organization lets libraries repurpose bibliographic data across language communities",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: cost and utility of authority files",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Impact (the VIAF service)",
+   "quote": "Links national and regional-level authority records, creating clusters of related records … Expands the concept of universal bibliographic control by (1) allowing national and regional variations in authorized form to coexist; and (2) supporting needs for variations in preferred language, script and spelling",
+   "claim": "it links national and regional records into clusters and lets variations in authorized form coexist, with variation in language, script and spelling",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": true,
+   "lineage": "regional forms kept within the cluster",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Impact",
+   "quote": "For example, German users will be able to see a name displayed in the form established by the DNB, while French users will see the same name as established by the BnF, and English-speaking users will view the name as established by the LC/NACO file.",
+   "claim": "German users see the DNB form, French users the BnF form, English-speaking users the LC/NACO form of one name",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "regional forms kept within the cluster",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Governance",
+   "quote": "VIAF consortium members are governed by the VIAF Cooperative Agreement. Under it, all key decisions rest with the Principals.",
+   "claim": "the Cooperative Agreement: all key decisions rest with the Principals",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: OCLC, the Council, the Principals",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Participation",
+   "quote": "Agencies that wish to participate in VIAF must apply.",
+   "claim": "agencies must apply to participate, submitting test files",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "who holds it: OCLC, the Council, the Principals",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Documents",
+   "quote": "Personal Name Matching Jenny Toves' description of how names are matched in VIAF file processing. The Appendices list the \"noise titles\", country codes, occupation codes, and name synonyms",
+   "claim": "Toves's documentation of personal-name matching, its appendices listing noise titles, country codes, occupation codes and name synonyms",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: matching, monthly rebuild",
+   "date": "undated (the page as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 620890178288de6f…) or the card's snippet, whitespace-normalised"
+  },
+  "F38": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet",
+   "quote": "Overview: VIAF (Virtual International Authority File) is an OCLC dataset and joint project of 20 national libraries combining multiple LAM name authority files ...",
+   "claim": "the LOD Cloud's card: an OCLC dataset and joint project of 20 national libraries combining LAM name authority files",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "undated (snippet)",
+   "quote_ok": true,
+   "checked_against": "saved record B5.json (sha256 ef4a2030346d37b5…) or the card's snippet, whitespace-normalised"
+  },
+  "F39": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "dataset record, description.en",
+   "quote": "VIAF (Virtual International Autority File) is an OCLC dataset and service -- built in cooperation with national libraries and other partners -- that virtually combines multiple LAM (Library Archives Museum) name authority files into a single name authority service. Put simply it is a large database of people and organizations that occur in library catalogs. … VIAF is a joint project of 20  national libraries, implemented and hosted by OCLC.",
+   "claim": "the LOD Cloud's record: an OCLC dataset and service virtually combining LAM name authority files, 'a large database of people and organizations that occur in library catalogs', a joint project of 20 national libraries",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "undated (the record as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved record B5.json (sha256 ef4a2030346d37b5…) or the card's snippet, whitespace-normalised"
+  },
+  "F40": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "dataset record, license and keywords",
+   "quote": "\"license\" : \"http://www.opendefinition.org/licenses/odc-by\" … \"no-license-metadata\", \"no-provenance-metadata\"",
+   "claim": "the LOD record's licence ODC-By, and its keywords no-license-metadata and no-provenance-metadata",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licence",
+   "date": "undated (the record as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved record B5.json (sha256 ef4a2030346d37b5…) or the card's snippet, whitespace-normalised"
+  },
+  "F41": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "dataset record, other_download",
+   "quote": "\"status\" : \"FAIL (HTTP error fetching URL. Status=403, URL=[http://viaf.org/viaf/data/viaf-20130615-links.txt.gz])\"",
+   "claim": "the LOD record's VIAF download links (2013 dumps on viaf.org) fail with HTTP 403",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licence",
+   "date": "undated (the record as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved record B5.json (sha256 ef4a2030346d37b5…) or the card's snippet, whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "dataset record, triples",
+   "quote": "\"triples\" : \"200000000\"",
+   "claim": "the LOD record gives 200,000,000 triples",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "undated (the record as fetched 2026-11-01)",
+   "quote_ok": true,
+   "checked_against": "saved record B5.json (sha256 ef4a2030346d37b5…) or the card's snippet, whitespace-normalised"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Brief description of dataset",
+   "quote": "VIAF virtually combines multiple library authority files into a single name authority service. The system mines and clusters variant names for a given entity (chiefly, persons and organizations), links the corresponding source records, and assigns a URI to each cluster.",
+   "claim": "Hickey and Young: VIAF virtually combines library authority files; it mines and clusters variant names for an entity, chiefly persons and organizations, links the source records and assigns a URI to each cluster",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the cluster: one entity, its names together",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Version date and number; Maintenance",
+   "quote": "Updated monthly … The file is rebuilt each month using the latest source data.",
+   "claim": "updated monthly; rebuilt each month from the latest source data",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: matching, monthly rebuild",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F45": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Licensing",
+   "quote": "The VIAF dataset is made available under an Open Data Commons Attribution License (ODC-By)",
+   "claim": "the dataset under the Open Data Commons Attribution License",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licence",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Licensing",
+   "quote": "To facilitate interoperability, OCLC strongly encourages the use of VIAF URIs in all appropriate circumstances. The canonical structure of a VIAF URI is http://viaf.org/viaf/[numerical value]",
+   "claim": "OCLC encourages VIAF URIs; their canonical form http://viaf.org/viaf/[numerical value]",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the record: number, see and see-also forms",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Topic coverage",
+   "quote": "Entities whose names are controlled by libraries, including people, corporations, and places, as well as FRBR (Functional Requirements for Bibliographic Records) works and expressions.",
+   "claim": "coverage: entities whose names libraries control, people, corporations, places, FRBR works and expressions",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Purpose",
+   "quote": "To lower the cost and increase the utility of library authority files.",
+   "claim": "purpose: lower cost, more utility of library authority files",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "purpose: cost and utility of authority files",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Method of creation",
+   "quote": "The source authority files and associated bibliographic metadata are either sent to or harvested by OCLC, usually on a monthly basis. … These enhanced authority records go through a matching process, ambiguities are resolved and clusters built from matching records.",
+   "claim": "source files sent to or harvested by OCLC, usually monthly; matching, ambiguities resolved, clusters built from matching records",
+   "modality": "stipulation",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "method: matching, monthly rebuild",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Method of creation",
+   "quote": "Record IDs are maintained across updates with redirects in the Web service API when clusters get merged.",
+   "claim": "record IDs maintained across updates with redirects when clusters merge",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the identifier: monthly clusters, fluctuation, redirects",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Size of the Dataset",
+   "quote": "The dataset is built from information supplied by nearly two dozen files consisting of 25 million authority records and 110 million bibliographic records. VIAF builds some 20 million clusters from those 25 million source records, finding about 24 million relationships between source records.",
+   "claim": "2012: nearly two dozen files, 25 million authority and 110 million bibliographic records, some 20 million clusters",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "contributors and extent",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F52": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Known Shortcomings",
+   "quote": "Matches between source entities is fairly conservative, so many possible matches are missed … Limited ability for those outside the library community to correct errors",
+   "claim": "known shortcomings: conservative matching misses many matches; limited ability for those outside the library community to correct errors",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "shortcomings: matching, correction, rules",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F53": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Known Shortcomings",
+   "quote": "Differences in rules and conventions can cause difficulties. A common example is for one authority file to have entities for both Samuel Clemens and Mark Twain, while another only has Mark Twain.",
+   "claim": "differences in rules and conventions: one file has entities for both Samuel Clemens and Mark Twain, another only Mark Twain",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "how a chosen name is held",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F54": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Known Shortcomings",
+   "quote": "Monthly updates mean changes made to the source files could take more than a month to show up in VIAF",
+   "claim": "changes in source files can take more than a month to show",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the identifier: monthly clusters, fluctuation, redirects",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F55": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Web browser usage; Web API usage",
+   "quote": "Each month VIAF receives about 55,000 visits and 260,000 page views from 30,000 visitors. … The web service currently receives about 10 million searches/page accesses each month, many of which appear to be from commercial web harvesters.",
+   "claim": "2012 use: about 55,000 visits a month; about 10 million web-service accesses a month, many apparently commercial harvesters",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "integration: Wikipedia, Wikidata, linked data",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F56": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Brief description of dataset; Availability",
+   "quote": "Available as Linked Open Data (LOD), VIAF is leveraged by freebase.com and an expanding array of other agencies and services. … VIAF is available from a public web site (http://viaf.org) written using a public API, plus bulk downloads.",
+   "claim": "linked open data used by freebase.com and others; a public web site on a public API, plus bulk downloads",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "access and licence",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F57": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "The evolution of data modeling and linked data in VIAF",
+   "quote": "the emphasis isn't so much on imposing labels across all domains as it is on recognizing, identifying, and relating \"the thing\" that all these contributors are trying to name. … The solution eventually revealed itself in the form of foaf:focus",
+   "claim": "the model: the emphasis on recognizing, identifying and relating 'the thing' contributors name; SKOS, then FOAF, then foaf:focus joining concepts to the thing",
+   "modality": "stipulation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the cluster: one entity, its names together",
+   "date": "2012-05-25 (the description's date)",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (pdftotext of B6.pdf, sha256 7c31fe4ce989a750…) or the card's snippet, whitespace-normalised"
+  },
+  "F58": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "ISNI-IA (assignment system)",
+   "quote": "The system is based primarily on the Virtual International Authority File (VIAF) service, which has been developed by OCLC for use in the aggregation of library catalogues.",
+   "claim": "the ISNI article: ISNI's assignment system is based primarily on VIAF",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: ISNI and the pseudonym rule",
+   "date": "2026-10-13 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (the census's text, sha256 6e896cd4a929806c…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "Uses",
+   "quote": "If an author has published under several different names or pseudonyms, each such name will receive its own ISNI.",
+   "claim": "under ISNI each name or pseudonym an author has published under receives its own ISNI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours: ISNI and the pseudonym rule",
+   "date": "2026-10-13 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (the census's text, sha256 6e896cd4a929806c…), whitespace-normalised"
+  },
+  "F60": {
+   "source": "B7",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "locus": "Format (viaf.org URL)",
+   "quote": "https://viaf.org/viaf/sourceID/ISNI%7C000000012146438X [ dead link ] … Dead link tagged October 2025 … This page was last edited on 13 October 2026, at 13:38",
+   "claim": "the ISNI article tags a viaf.org sourceID URL a dead link (October 2025); last edited 13 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia, the cloud, the journal",
+   "date": "2026-10-13 (the article's last edit)",
+   "quote_ok": true,
+   "checked_against": "saved text B7.txt (the census's text, sha256 6e896cd4a929806c…), whitespace-normalised"
+  }
+ },
+ "field_sources": {
+  "B1": "VIAF — VIAF",
+  "B2": "OCLC — VIAF: Convenient access to name authority files | OCLC",
+  "B3": "Wikipedia — Virtual International Authority File - Wikipedia",
+  "B4": "OCLC — VIAF (The Virtual International Authority File)",
+  "B5": "The Linked Open Data Cloud — LOD Cloud",
+  "B6": "Semantic Web Journal — Description of the VIAF (Virtual International Authority File) Dataset",
+  "B7": "Wikipedia — International Standard Name Identifier (census source)"
+ }
+}

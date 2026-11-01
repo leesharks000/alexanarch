@@ -1,0 +1,306 @@
+{
+ "row": "viaf",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop from #940 and #1722 (the census anchors, admitted at the passages on pseudonyms, heteronyms and civil names)",
+ "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on VIAF with the entity named; R, a relation the archive states between VIAF and an archive object; O, an archive category applied to VIAF or to a class the field and the census source for it (name authority files and authority control: B2, B3, B4, B6, census kind and question; name identifiers and identity registries: B3, B6, B7, census evidence_kind and area; pseudonyms and heteronyms held by a name record: B6's Clemens/Twain shortcoming, B7's ISNI rule, census record.name, does_not_answer, ls_reading). #940 and #1722 read at the passages on name authorities, pseudonyms and heteronyms, civil names, identity resolution and the existence tax (BRIEF-NEW-ROW-AUTHORSHIP §6). A bare mention, a header ORCID line, a property list without a claim, or a sentence about a composition layer's entity resolution is not a claim on these classes.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 317,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Logotic Programming §3.1.1 Authority Control and Identity Management: names VIAF and says it aggregates national authority files 'to create stable identifiers' (D); such systems solve entity disambiguation through institutional coordination (D/O, class name identifiers); 'Authority control assigns identity from above' (O, class name authority files). Candidates D0001, O0320, O0321, O0323",
+   "claims": [
+    "O317-01",
+    "O317-02",
+    "O317-03"
+   ],
+   "cands": [
+    "D0001",
+    "O0320",
+    "O0321",
+    "O0323"
+   ]
+  },
+  {
+   "dep": 959,
+   "strata": [
+    "D"
+   ],
+   "reason": "Hexagonal OS v0.4 carries #317's sentence verbatim (D0004, O0815, O0817): one lineage with #317, the earliest; S4: the instance adds nothing, kept in the provenance graph as an instance under O317-01",
+   "claims": [],
+   "cands": [
+    "D0004",
+    "O0815",
+    "O0816",
+    "O0817"
+   ],
+   "instance_of": "O317-01"
+  },
+  {
+   "dep": 668,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "The Pessoa Knowledge Graph: a Wikidata statement sourced only to 'stated in Virtual International Authority File' is structurally vulnerable (D); P214 (VIAF) among a heteronym's external identifiers, and heteronyms often have independent authority-control records because library systems catalogued them separately (D and O-class, pseudonyms and heteronyms held by a name record). Candidates D0002, D0003 (the following sentence read at its locus), O0409, O0410",
+   "claims": [
+    "O668-01",
+    "O668-02"
+   ],
+   "cands": [
+    "D0002",
+    "D0003",
+    "O0409",
+    "O0410"
+   ]
+  },
+  {
+   "dep": 982,
+   "strata": [
+    "D"
+   ],
+   "reason": "pessoagraph.org visualization v1.0: #668's two passages verbatim (D0005, D0006); one lineage with #668, the earliest; S4 instance",
+   "claims": [],
+   "cands": [
+    "D0005",
+    "D0006",
+    "O0848",
+    "O0849"
+   ],
+   "instance_of": "O668-01, O668-02"
+  },
+  {
+   "dep": 984,
+   "strata": [
+    "D"
+   ],
+   "reason": "pessoagraph.org brief: #668's two passages verbatim (D0007, D0008); one lineage with #668; S4 instance",
+   "claims": [],
+   "cands": [
+    "D0007",
+    "D0008",
+    "O0858",
+    "O0859"
+   ],
+   "instance_of": "O668-01, O668-02"
+  },
+  {
+   "dep": 261,
+   "strata": [
+    "O"
+   ],
+   "reason": "Semantic Infrastructure and the LOS §8.3: taxonomic violence, category collapse, 'Forcing heteronyms into \"pseudonym\" categories', observed where personas are miscategorized in Wikidata (a VIAF participant, B3 F25): O-class, pseudonyms and heteronyms held by a name record. Candidate O0312",
+   "claims": [
+    "O261-01"
+   ],
+   "cands": [
+    "O0312"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "EA-HETERONYMY-01, the census's anchor: §2 pseudonymy distinguished (Clemens under Twain), the label against the organization of the function, the testable markers, attributable without reduction; §1 the civil name as the atomic unit of attribution; §2 the collapse that registers as loss. O-class, pseudonyms and heteronyms held by a name record, and name identifiers (the civil name as unit of attribution). Candidates O0783–O0798 read; the passages at lines 79, 97–126",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04",
+    "O940-05",
+    "O940-06"
+   ],
+   "cands": [
+    "O0785",
+    "O0786",
+    "O0787",
+    "O0794"
+   ]
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "AI Calls You Fake, the census's anchor: a heteronym is a real author's practice, the maker's existence kept apart from the kind of work (line 84); a heteronym has a hand that wrote it (line 159). O-class, pseudonyms and heteronyms held by a name record. Its tax and its entity-resolution sentences (lines 127, 388) concern the index and composition layers, and are read for the delta, unadmitted for the entity",
+   "claims": [
+    "O1722-01",
+    "O1722-02"
+   ],
+   "cands": [
+    "O1430"
+   ]
+  },
+  {
+   "dep": 1721,
+   "strata": [
+    "O"
+   ],
+   "reason": "the superseded version of #1722 (same date, superseded by #1722): the sentence of O1722-01 identical; one lineage, S4 instance",
+   "claims": [],
+   "cands": [
+    "O1427",
+    "H0019"
+   ],
+   "instance_of": "O1722-01"
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/viaf-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, title, PER note and query note for the entity's capture (OBS-34cceb53f2ee, 2026-11-01), the archive's statements on the composition at the name",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08",
+    "CAP-1-09",
+    "CAP-1-10",
+    "CAP-1-11",
+    "CAP-1-12",
+    "CAP-1-13",
+    "CAP-1-14"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/viaf (source: /home/claude/fleet/leesharks.com/data/authorship-census/census.json rows[slug == 'viaf'], organizing_question, admission_rule, anchor; rendered apparatus/aggregators/viaf/index.html present)",
+   "reason": "the leesharks.com authorship census record of the entity (editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1): its fields with their basis; where a field restates the Wikipedia article (B3) it is one lineage with that source; ls_reading is the archive's reading, ledgered as such",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22",
+    "LS-23",
+    "LS-24",
+    "LS-25",
+    "LS-26",
+    "LS-27",
+    "LS-28",
+    "LS-29",
+    "LS-30",
+    "LS-31",
+    "LS-32",
+    "LS-33",
+    "LS-34",
+    "LS-35",
+    "LS-36",
+    "LS-37"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": 1094,
+   "reason": "AXN as Anti-Suppression Infrastructure v4: 'the institution that holds the name-to-object relation can unilaterally end it' is said of the DOI held by a Registration Agency and a hosting repository; superseded by #1095, whose text does not carry the sentence; the class 'name identifiers' is sourced for VIAF, and the archive does not apply this category to cluster identifiers. Read, unadmitted",
+   "cands": [
+    "O1018",
+    "O1019",
+    "O1021"
+   ]
+  },
+  {
+   "dep": 209,
+   "reason": "Mapping the Diffuse Guardrail: '[PRED] Content from pseudonymous/multiple-persona authors will have fragmented or missing entity associations' is a prediction about Google's knowledge graph, a composition layer outside the three classes. Read, unadmitted",
+   "cands": [
+    "O0307",
+    "O0308"
+   ]
+  },
+  {
+   "dep": "792, 793, 794, 845, 846, 1202, 1208 (and the other entity-resolution sentences)",
+   "reason": "the composition layer's entity resolution (Mary Lee, the Demand 4 trap): said of the search composition, outside the classes; bear on no name-authority record. Read, unadmitted",
+   "cands": [
+    "O0561",
+    "O0565",
+    "O0566",
+    "O0569",
+    "O0573",
+    "O0574",
+    "O0654",
+    "O0655",
+    "O0656",
+    "O0657",
+    "O1089",
+    "O1096"
+   ]
+  },
+  {
+   "dep": "1, 862, 863, 868, 875, 876, 907, 921, 1042, 1067 (persistent identifiers)",
+   "reason": "DOI persistence and attribution severance: the archive's category is applied to DOIs, DataCite and repositories; the archive does not apply it to name-authority identifiers. Read, unadmitted",
+   "cands": [
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0010",
+    "O0696",
+    "O0697",
+    "O0705",
+    "O0711",
+    "O0744",
+    "O0745",
+    "O0975",
+    "O0990"
+   ]
+  },
+  {
+   "dep": "(remaining O-class candidates)",
+   "reason": "1,202 of 1,438 O candidates fall in class 'name identifiers and identity registries' on the string 'ORCID', overwhelmingly the deposit header line 'Lee Sharks (ORCID 0009-0000-1599-0703)'; 225 in the pseudonym class, mostly the opening of the poem 'Entering the Crimson Hexagon' ('an mysterious sigil pseudonym persona'), fan and Pessoa inventories, CERN data-subject correspondence on pseudonymous identifiers, and citation lines. Read by filter and sample; none applies an archive category to a name-authority record beyond those admitted. Volume is not a ground of removal; these are unadmitted by reading (§3.4)",
+   "cands": []
+  }
+ ],
+ "hop": {
+  "from": [
+   940,
+   1722
+  ],
+  "candidates": 21,
+  "admitted": [
+   "#1721 (as an instance of #1722)"
+  ],
+  "rejected": "#7, #186, #194, #210, #524, #561, #643, #739, #825, #828, #939, #1107, #1127, #1523, #1630, #1643, #1684, #1717, #1723, #1724: cited by or citing the anchors on other subjects (charters, field surveys, semantic warfare, provenance debt, the prediction index); none says anything of name-authority records, pseudonyms in library files or VIAF",
+  "file": "candidates-H.jsonl"
+ },
+ "observations": [
+  "#317's 'stable identifiers' (2026-01-17) is the archive's own earlier description of the identifier and is a rival of F24 (Wikipedia's fluctuation); both composed (P_coh); F50 (redirects, 2012) bears on both.",
+  "No deposit names VIAF in relation to an archive object (R empty).",
+  "The string pass ran with the census's three classes; the class 'name identifiers' caught the ORCID header of nearly every deposit (recorded; the config's pattern is case-sensitive on ORCID and ISNI)."
+ ],
+ "counts": {
+  "D_candidates": 8,
+  "R_candidates": 0,
+  "O_candidates": 1438,
+  "H_candidates": 21,
+  "deposits_admitted": 5,
+  "instances_kept": 4,
+  "deposit_claims": 14,
+  "LS_claims": 37,
+  "CAP_claims": 14
+ }
+}

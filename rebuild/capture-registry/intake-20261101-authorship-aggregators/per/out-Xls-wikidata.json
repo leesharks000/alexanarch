@@ -1,0 +1,305 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-wikidata",
+   "name": "Wikidata",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own introduction and property page and a third-party account (Wikipedia), saved 2026-11-01, describe it as a free, collaborative, multilingual, secondary knowledge base. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Wikidata (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Wikidata (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Wikidata (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Wikidata (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Wikidata (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Wikidata"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Wikidata is a free , collaborative , multilingual , secondary knowledge base, collecting structured data to provide support for Wikipedia , Wikimedia Commons , the other wikis of the Wikimedia movement , and to anyone in the world.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Wikimedia Foundation",
+      "Wikimedia Deutschland",
+      "editors"
+     ],
+     "reference": "Hosted and owned by the Wikimedia Foundation, developed mainly by Wikimedia Deutschland; data entered and maintained by editors, who decide the rules of content, and by bots.",
+     "evidence": [
+      {
+       "record_quote": "Wikidata is a collaboratively edited multilingual knowledge graph hosted by the Wikimedia Foundation .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--wikipedia.txt"
+      },
+      {
+       "record_quote": "Launched in October 2012, it is developed mainly by Wikimedia Deutschland",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--wikipedia.txt"
+      },
+      {
+       "record_quote": "Data is entered and maintained by Wikidata editors, who decide on the rules of content creation and management. Automated bots also enter data into Wikidata.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2012"
+     ],
+     "reference": "Launched 29 October 2012.",
+     "evidence": [
+      {
+       "record_quote": "Wikidata was launched on 29 October 2012",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Items, each with a label, a description and aliases, described by statements of a property and a value, recorded with their sources and connections to other databases.",
+     "evidence": [
+      {
+       "record_quote": "The Wikidata repository consists mainly of items , each one having a label , a description and any number of aliases .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      },
+      {
+       "record_quote": "Statements describe detailed characteristics of an Item and consist of a property and a value .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      },
+      {
+       "record_quote": "Wikidata records not just statements, but also their sources, and connections to other databases.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "More than 123 million data entities; items for scholarly articles the largest part, followed by biographies.",
+     "evidence": [
+      {
+       "record_quote": "Wikidata held more than 123 million data entities, such as items, properties and lexemes.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--wikipedia.txt"
+      },
+      {
+       "record_quote": "Items for scholarly articles are the biggest part of Wikidata, followed by the collection of biographies.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A free, collaborative, multilingual, secondary knowledge base collecting structured data to support Wikipedia, Wikimedia Commons, the other Wikimedia wikis and anyone in the world.",
+     "evidence": [
+      {
+       "record_quote": "Wikidata is a free , collaborative , multilingual , secondary knowledge base, collecting structured data to provide support for Wikipedia , Wikimedia Commons , the other wikis of the Wikimedia movement , and to anyone in the world.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Structured data in the main, Property, Lexeme and EntitySchema namespaces under CC0, reusable even commercially without permission; text in other namespaces under CC BY-SA.",
+     "evidence": [
+      {
+       "record_quote": "All structured data from the main, Property, Lexeme, and EntitySchema namespaces is available under the Creative Commons CC0 License ; text in the other namespaces is available under the Creative Commons Attribution-ShareAlike License",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      },
+      {
+       "record_quote": "You can copy, modify, distribute and perform the data, even for commercial purposes, without asking for permission.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "identifier",
+      "external database",
+      "P213",
+      "ISNI",
+      "VIAF",
+      "ORCID"
+     ],
+     "reference": "A property linking an item to an external database such as a library authority file is an identifier; Wikidata carries ISNI (P213), VIAF numbers and ORCID identifiers.",
+     "evidence": [
+      {
+       "record_quote": "A property that links an item to an external database, such as an authority control database used by libraries and archives, is called an identifier .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/wikidata--intro.txt"
+      },
+      {
+       "record_quote": "Wikidata has the property: ISNI (P213)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/isni--wikipedia.txt"
+      },
+      {
+       "record_quote": "The file numbers are also being added to Wikipedia biographical articles and are incorporated into Wikidata .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/viaf--wikipedia.txt"
+      },
+      {
+       "record_quote": "Both Wikipedia and Wikidata include pages with ORCID identifiers.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/orcid-names--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'wikidata' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a free, open, and collaborative multilingual knowledge graph hosted by the Wikimedia Foundation.",
+    "basis": "The knowledge base reached by name; host, license, data model and query service given."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "It serves as a central storage hub for structured data used by Wikipedia, Wikimedia sister projects, and external applications."
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "is a free, open, and collaborative multilingual knowledge graph hosted by the Wikimedia Foundation."
+    },
+    {
+     "atom": "date",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "Statements and Triples: Information is stored as subject-predicate-object statements (claims) that link entities to values, often backed by references to external sources."
+    },
+    {
+     "atom": "corpus",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "It serves as a central storage hub for structured data used by Wikipedia, Wikimedia sister projects, and external applications."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Open License: All data is released under a Creative Commons CC0 public domain dedication, meaning anyone can use, copy, and modify it freely."
+    },
+    {
+     "atom": "identifier",
+     "present": false,
+     "span": null
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The knowledge base composed accurately as a data model and a query service, with its license stated wider than its own page states it. The two features that make it a census row, the identifier properties that join ISNI, VIAF and ORCID, and the property that stores a heteronym as a string on its bearer's item, are absent.",
+   "key": "wikidata-aio-20261101",
+   "entry": "wikidata-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-wikidata"
+  }
+ ]
+}

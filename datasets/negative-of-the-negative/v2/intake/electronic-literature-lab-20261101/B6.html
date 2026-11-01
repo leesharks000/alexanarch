@@ -1,0 +1,730 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta http-equiv="content-language" content="en-us" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<meta name="title" content="Welcome Space | The NEXT" />
+	<meta name="description" content="The NEXT is a virtual museum/library/preservation space of born digital literary works collected for the Electronic Literature Organization by the Electronic Literature Lab" />
+	<meta name="keywords" content="e-lit, electronic literature, computational literature, digital literature, net art, digital repository, digital collection, archive, museum, preservation, welcome space, visualizations, animated navigation, digital showcase" />
+	
+	<!--open graph meta-->
+	<meta property="og:site_name" content="The NEXT">
+	<meta property="og:title" content="Welcome Space | The NEXT">
+	<meta property="og:description" content="The NEXT is a virtual museum/library/preservation space of born digital literary works collected for the Electronic Literature Organization by the Electronic Literature Lab">
+	<meta property="og:image" content="https://the-next.org/img/global/next-icon.png">
+	<meta property="og:url" content="https://the-next.org/">
+
+    <!--CSS reset-->
+<!--     <link rel="stylesheet" href="https://the-next.org/css/base/reset.css" /> -->
+
+    <!-- Bootstrap CSS -->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" /> -->
+<!-- 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+	<link rel="preload" href="https://the-next.org/fonts/Lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="preload" href="https://the-next.org/fonts/Lato/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="https://the-next.org/lib/bootstrap/bootstrap.5.0.2.min.css">
+
+
+    <!-- our css -->
+    <link rel="stylesheet" href="https://the-next.org/css/main.css" />
+    <link rel="shortcut icon" href="https://the-next.org/img/global/fav.png" />
+
+
+    <!-- jQuery, Popper.js, and Bootstrap JS-->
+    <script src="https://the-next.org/lib/jquery/jquery-3.5.1.slim.min.js"></script>
+<!--     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+<!--     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+    <script src="https://the-next.org/lib/bootstrap/bootstrap.bundle.5.0.2.min.js"></script>
+
+    <!-- include full featured jquery!! -->
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <script src="https://the-next.org/lib/jquery/jquery-1.12.4.js"></script>
+    <script src="https://the-next.org/lib/jquery/jquery-ui.1.12.1.js"></script>
+
+    <!-- font awesome -->
+<!--     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<!-- 	<link rel="stylesheet" href="https://the-next.org/lib/" /> -->
+	
+    <!-- datatables stuff -->
+    <link rel="stylesheet" href="https://the-next.org/lib/datatables/dataTables.bootstrap4.min.css" />
+    <link rel="stylesheet" href="https://the-next.org/lib/datatables/jquery.dataTables.bootstrap4.min.css" />
+
+    <title>Welcome Space | The NEXT</title>    
+<!-- 
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" />
+ -->
+</head>
+
+<body id="welcome-space-body">
+	<!-- navigation bar elements -->
+	<header id="header" class="navbar navbar-expand-lg navbar-light sticky-top navbar-stacked">
+		<div class="container-fluid">
+			<a id="logo" class="navbar-brand" href="https://the-next.org/">
+				<img id="site-logo" src="https://the-next.org/img/global/the-next-logo.svg"
+					alt="The NEXT logo leading to the Welcome Space"
+					data-language-english="The NEXT logo leading to the Welcome Space"
+					data-language-french="Le logo NEXT menant Ã  l'espace d'accueil" data-language-spanish="" />
+			</a>
+
+			<div id="navbar-utility">
+				<form id="nav-bar-search-form" method="get" action="https://the-next.org/search">
+							<div class="search-title-cont">
+								<div class="search-section">
+									<label for="q" class="visually-hidden" data-language-english="Basic Search"
+										data-language-french="Recherche de base" data-language-spanish="">
+										Basic Search
+									</label>
+									<input id="q" class="main-search-input" type="text" name="q" placeholder="Search The NEXT"
+										data-language-english="Search The NEXT" data-language-french="Rechercher le NEXT"
+										data-language-spanish="" />
+									<div class="search-icon-nav-container" aria-hidden="true">
+										<i class="fa fa-search search-icon" alt="magnifying glass icon"
+											data-language-english="magnifying glass icon"
+											data-language-french="icÃ´ne de la loupe" data-language-spanish="">
+										</i>
+									</div>
+								</div>
+							</div>
+						</form>
+				<a class="nav-donate" href="https://the-next.org/donate"><span class="btn-donate"
+						data-language-english="Donate" data-language-french=""
+						data-language-spanish="">Donate</span></a>
+			</div>
+
+			<nav id="navbar" class="" aria-label="primary navigation">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="https://the-next.org/"><span class="header-active" data-language-english="Welcome"
+								data-language-french="Bienvenue sur" data-language-spanish="">
+								Welcome
+							</span></a>
+					</li>
+
+					<li id="header-dropdown" class="nav-item dropdown">
+						<a data-bs-toggle="collapse" href="#collapseBrowse" role="button"
+							aria-expanded="false" class="nav-link" aria-controls="collapseBrowse"><span class="nav-text" data-language-english="Collections"
+								data-language-french="Parcourir les collections" data-language-spanish="">
+								Collections <span><img src="https://the-next.org/img/global/triangle-up-ico.svg" alt=""></span>
+							</span></a>
+
+						<ul class="collapse" id="collapseBrowse">
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/individual-artists-and-scholars"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Individual Artists & Scholars"
+										data-language-french="Artistes et chercheurÂ·eÂ·s individuelÂ·leÂ·s"
+										data-language-spanish="">
+										Individual Artists & Scholars
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/online-journals"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Online Journals" data-language-french="Revues en ligne"
+										data-language-spanish="">
+										Online Journals
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/anthologies"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Anthologies" data-language-french="Anthologies"
+										data-language-spanish="">
+										Anthologies
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/showcases"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Showcases"
+										data-language-french="Vitrines" data-language-spanish="">
+										Showcases
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/scholarly-publications"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="Scholarly Publications"
+										data-language-french="Publications scientifiques" data-language-spanish="">
+										Scholarly Publications
+									</span></a>
+							</li>
+							<li class="nav-item">
+								<a href="https://the-next.org/categories/ELO-archives"
+									class="nav-link dropdown-item"><span class="nav-text" data-language-english="ELO Archives" data-language-french="Archives ELO"
+										data-language-spanish="">
+										ELO Archives
+									</span></a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/exhibitions"><span class="nav-text" data-language-english="Exhibitions" data-language-french="Expositions"
+								data-language-spanish="">
+								Exhibitions
+							</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/visualizations"><span class="nav-text" data-language-english="3D &amp; Virtual Experiences"
+								data-language-french=""
+								data-language-spanish="">3D &amp; Virtual Experiences
+							</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://archive.the-next.org/documentation/the-next-physical-archives-inventory.pdf" target="_blank"><span class="nav-text" data-language-english="Physical Archives" data-language-french="" data-language-spanish="">Physical Archives</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/about"><span class="nav-text" data-language-english="About" data-language-french="A propos de"
+								data-language-spanish="">
+								About
+							</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://the-next.org/elms">
+							<span class="nav-text" data-language-english="ELMS" data-language-french="ELMS"
+								data-language-spanish="">
+								ELMS
+							</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"
+							href="https://the-next.org/search?q="><span class="nav-text" data-language-english="Search" data-language-french=""
+								data-language-spanish="">
+								Search
+							</span></a>
+					</li>
+
+					<li class="nav-item nav-item-donate">
+						<a class="nav-donate" href="https://the-next.org/donate"><span
+								class="btn-donate" data-language-english="Donate"
+								data-language-french="" data-language-spanish="">Donate</span></a>
+					</li>
+				</ul>
+
+				<!--<li id="language-dropdown" class="nav-item dropdown">
+					<a data-bs-toggle="collapse" href="#collapseLanguage" role="button"
+						aria-expanded="false" class="nav-link" aria-controls="collapseLanguage">
+						<span class="abbreviation">English (US)</span>
+					</a>
+				</li>
+				<ul class="collapse" id="collapseLanguage">
+					<li id="langENG" class="nav-item languageChange english" data-language-target="english" data-flag-target="usa">
+						<span class="abbreviation">English (US)</span>
+					</li>
+					<li id="langQC" class="nav-item languageChange french" data-language-target="french" data-flag-target="quebec">
+						<span class="abbreviation">French (CA)</span>
+					</li>
+				</ul>-->
+			</nav>
+
+			<button type="button" id="mobile-menu-ico" aria-label="Menu" aria-controls="navbar" aria-expanded="false">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</button>
+		</div>
+	</header>
+    
+    <main>
+	<section id="welcome-space-intro">
+		<canvas id="stage" aria-hidden="true"></canvas>
+		
+		<section class="hero" aria-label="The NEXT">
+			<div class="hero__logo">
+				<img class="hero__logo-img" src="https://the-next.org/img/global/next-logo.png" alt="The NEXT" width="420"
+				height="120" />
+			</div>
+			<div class="hero__actions">
+				<button type="button" id="stage-close" class="btn-primary">Enter The NEXT</button>
+			</div>
+		</section>
+	</section>
+
+	<div id="welcome-space-main" class="inner-wrap">
+		<!-- Welcome Portion -->
+		<section id="welcome">
+			<!-- Welcome text -->
+			<!-- leave margin and padding resets -->
+			<article id="welcome-text">
+				<div class="welcome-text-container">
+					<h1 class="page-title no-padding" tabindex="-1" data-language-english="Welcome to The NEXT"
+						data-language-french="Bienvenue à The NEXT" data-language-spanish="">
+						<strong>Welcome</strong> to The NEXT
+					</h1>
+					<p data-language-english="2D & 3D, Algorithmic, Animated, Artificial Intelligence (AI), Augmented Reality (AR), Codework, Combinatory, Generative, Glitch, Hypermedia, Immersive, Interactive, Kinetic, Locative, Mobile, Multimedia, Networked, Virtual Reality (VR), Virtual World, Web-Based/Net&#8212;these are some of the qualities found among the 41 collections of digital art and writing at the Electronic Literature Organization's The NEXT."
+						data-language-french="2D et 3D, Algorithmique, Animé, Intelligence artificielle (AI), Réalité augmentée (RA), Codage, Combinaison, Génération, Glitch, Hypermédia, Immersion, Interactif, Cinétique, Locatif, Mobile, Multimédia, En réseau, Réalité virtuelle (RV), Monde virtuel, Basé sur le Web/Réseau - voici quelques-unes des qualités que l'on retrouve parmi les 41 collections d'art et d'écriture numériques de The NEXT de l'Electronic Literature Organization."
+						data-language-spanish="">
+						2D & 3D, Algorithmic, Animated, Artificial Intelligence (AI), Augmented
+						Reality (AR), Codework, Combinatory, Generative, Glitch, Hypermedia,
+						Immersive, Interactive, Kinetic, Locative, Mobile, Multimedia,
+						Networked, Virtual Reality (VR), Virtual World, Web-Based/Net&#8212;these are
+						some of the qualities found among the 48 collections of digital art and
+						writing at The NEXT.
+					</p>
+					<p data-language-english="Envisioned as a combination museum, library, and preservation space, The NEXT maintains and makes its archives accessible for the next generation and responds to the growing need for open-access, travel-free cultural and research experiences for today's public and scholars."
+						data-language-french="Conçu comme un amalgame de musée, de bibliothèque et d'espace de conservation, The NEXT maintient et rend ses archives accessibles à la prochaine génération et répond au besoin croissant d'expériences culturelles et de recherche en libre accès et sans déplacement pour le public et les universitaires d'aujourd'hui."
+						data-language-spanish="">
+						Envisioned as a combination museum, library, and
+						preservation space, The NEXT maintains and makes
+						its archives accessible for the next generation
+						and responds to the growing need for
+						open-access, travel-free cultural and research
+						experiences for today's public and scholars.
+					</p>
+
+					<a href="https://the-next.org/curatorial-statement">
+						Read the Curatorial Statement <span>&rarr;</span>
+					</a>
+				</div>
+			</article>
+			
+			<a href="https://the-next.org/exhibition/works-on-screen/" id="promo-1" class="promo-block" ><article>
+						<figure>
+									<video autoplay muted playsinline loop>
+										<source src="https://the-next.org/video/spaces/welcome/talon-memmott-welcome-banner.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</figure><div>
+							<p class="promo-category">EXPANDED EXHIBITION</p>
+
+							<h2>Talan Memmott: Works on Screen</h2>
+
+							<p>22 works of net art that explore the aesthetic of code, language, and code language</p>
+						</div>
+					</article></a><a href="https://the-next.org/collections/52" id="promo-2" class="promo-block" ><article>
+						<figure>
+									<video autoplay muted playsinline loop>
+										<source src="https://the-next.org/video/spaces/welcome/decameron-welcome-banner.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</figure><div>
+							<p class="promo-category">FEATURED COLLECTION</p>
+
+							<h2>Decameron Collective</h2>
+
+							<p>A virtual world collaboratively designed by of nine Canadian artists and scholars with audio, text, films, photographs, music, visual art, algorithmic poetry, and games</p>
+						</div>
+					</article></a><a href="https://the-next.org/works/2839/0/0/" id="promo-3" class="promo-block" ><article>
+						<figure>
+									<img src="https://the-next.org/img/spaces/welcome/grosshans-thinkingdaughters-feature.gif" alt="" />
+								</figure><div>
+							<p class="promo-category">NEW WORK AT THE NEXT</p>
+
+							<h2>ThinkingDaughters</h2>
+
+							<p>A new Web essay by Annie Grosshans following her haunting “The World Is Not Done Yet”</p>
+						</div>
+					</article></a>
+		</section>
+
+		<!-- Categories-->
+		<!-- title -->
+		<div>
+			<h2 id="browse-collections-title" data-language-english="BROWSE COLLECTIONS BY CATEGORY"
+				data-language-french="PARCOURIR LES COLLECTIONS PAR CATÉGORIE" data-language-spanish="">
+				<strong>Browse</strong> Collections by Category
+			</h2>
+		</div>
+
+		<!-- category container -->
+		<section class="card-container">
+			<!-- first -->
+			<article id="ias-card">
+				<a class="card card-style category-cards" href="https://the-next.org/categories/individual-artists-and-scholars">
+					<img id="ias-img" class="card-img-top"
+						src="https://the-next.org/img/spaces/welcome/welcome-ias-icon.png"
+						alt=""
+						data-language-english="icon for individual artists & scholars"
+						data-language-french="Icône pour artistes et chercheur·e·s individuel·le·s"
+						data-language-spanish="" />
+					<h3 class="card-title" data-language-english="Individual Artists & Scholars"
+						data-language-french="Artistes et chercheur·e·s individuel·le·s" data-language-spanish="">
+						Individual Artists & Scholars
+					</h3>
+				</a>
+				<p class="card-content caption"
+					data-language-english="Discover the work of individual artists and scholars from around the world donated to The NEXT"
+					data-language-french="Découvrez les œuvres d'artistes et de chercheur·e·s du monde entier qui ont fait l'objet d'un don à The NEXT"
+					data-language-spanish="">
+					Discover the work of individual artists and scholars from around the world donated to The NEXT
+				</p>
+			</article>
+
+			<!-- second -->
+			<article id="oj-card">
+				<a class="card card-style category-cards" href="https://the-next.org/categories/online-journals">
+					<img id="oj-img" class="card-img-top"
+						src="https://the-next.org/img/spaces/welcome/welcome-journals-icon.png"
+						alt="" data-language-english="icon for online journals"
+						data-language-french="Icône pour les revues en ligne" data-language-spanish="" />
+					<h3 class="card-title" data-language-english="Online Journals"
+						data-language-french="Revues en ligne" data-language-spanish="">
+						Online Journals
+					</h3>
+				</a>
+				<p class="card-content caption"
+					data-language-english="View works published in online experimental journals from 1995 to the present"
+					data-language-french="Consultez les œuvres publiées dans des revues expérimentales en ligne de 1995 à aujourd'hui"
+					data-language-spanish="">
+					View works published in online experimental journals from 1995 to the present
+				</p>
+			</article>
+
+			<!-- third -->
+			<article id="anth-card">
+				<a class="card card-style category-cards" href="https://the-next.org/categories/anthologies">
+					<img id="anth-img" class="card-img-top"
+						src="https://the-next.org/img/spaces/welcome/welcome-anthologies-icon.png"
+						alt="" data-language-english="icon for anthologies"
+						data-language-french="Icône pour les anthologies" data-language-spanish="" />
+					<h3 class="card-title" data-language-english="Anthologies" data-language-french="Anthologies"
+						data-language-spanish="">
+						Anthologies
+					</h3>
+				</a>
+				<p class="card-content caption"
+					data-language-english="Explore the exciting works published in the Electronic Literature Collections"
+					data-language-french="Explorez les œuvres passionnantes publiées dans les collections de littérature électronique"
+					data-language-spanish="">
+					Explore the exciting works published in the Electronic Literature Collections
+				</p>
+			</article>
+
+			<!-- fourth -->
+			<article id="show-card">
+				<a class="card card-style category-cards" href="https://the-next.org/categories/showcases">
+					<img id="show-img" class="card-img-top"
+						src="https://the-next.org/img/spaces/welcome/welcome-showcases-icon.png"
+						alt="" data-language-english="icon for showcases"
+						data-language-french="Icône pour les vitrines" data-language-spanish="" />
+					<h3 class="card-title" data-language-english="Showcases" data-language-french="Vitrines"
+						data-language-spanish="">
+						Showcases
+					</h3>
+				</a>
+				<p class="card-content caption"
+					data-language-english="Engage with curated selections of born-digital media featuring literature and net art"
+					data-language-french="Découvrez des sélections de médias numériques issus de la littérature et du net art"
+					data-language-spanish="">
+					Engage with curated selections of born-digital media featuring literature and net art
+				</p>
+			</article>
+
+			<!-- fifth -->
+			<article id="scholar-card">
+				<a class="card card-style category-cards" href="https://the-next.org/categories/scholarly-publications">
+					<img id="scholar-img" class="card-img-top"
+						src="https://the-next.org/img/spaces/welcome/welcome-pubs-icon.png"
+						alt="" data-language-english="icon for scholarly publications"
+						data-language-french="L'icône des publications scientifiques" data-language-spanish="" />
+					<h3 class="card-title" data-language-english="Scholarly Publications"
+						data-language-french="Publications savantes" data-language-spanish="">
+						Scholarly Publications
+					</h3>
+				</a>
+				<p class="card-content caption"
+					data-language-english="Study the many scholarly publications held in The NEXT"
+					data-language-french="Étudiez les nombreuses publications savantes conservées dans The NEXT"
+					data-language-spanish="">
+					Study the many scholarly publications held in The NEXT
+				</p>
+			</article>
+
+			<!-- sixth -->
+			<article id="arch-card">
+				<a class="card card-style category-cards" href="https://the-next.org/categories/ELO-archives">
+					<img id="arch-img" class="card-img-top"
+						src="https://the-next.org/img/spaces/welcome/welcome-archives-icon.png"
+						alt=""
+						data-language-english="icon for electronic literature organization archives"
+						data-language-french="Icône pour les archives des organisations de littérature électronique"
+						data-language-spanish="" />
+					<h3 class="card-title" data-language-english="ELO Archives" data-language-french="Archives ELO"
+						data-language-spanish="">
+						ELO Archives
+					</h3>
+				</a>
+				<p class="card-content caption"
+					data-language-english="Celebrate the origins of the Electronic Literature Organization through its historical media"
+					data-language-french="Célébrez les origines de l'Electronic Literature Organization à travers ses médias historiques."
+					data-language-spanish="">
+					Celebrate the origins of the Electronic Literature Organization through its historical media
+				</p>
+			</article>
+		</section>
+	</div>
+
+    <!--footer-->
+    </main><footer class="container-fluid">
+			<figure id="footer-logo">
+				<img src="https://the-next.org/img/global/the-next-logo.svg" alt="The NEXT Museum, Library, and Preservation Space">
+			</figure>
+
+			<section id="footer-supporters">
+				<h2>Supported By</h2>
+				<p>The NEXT is supported by grants, donations, and commissions and managed by the Electronic Literature Lab.</p>
+				<div class="supporter-logo-container">
+					<a href="https://dtc-wsuv.org/wp/ell/" target="_blank" title="the electronic literature lab website" aria-label="the electronic literature lab website"><figure>
+						<img src="https://the-next.org/img/global/ell-grayscale.png" alt="Electronic Literature Lab">
+					</figure></a>
+
+					<a href="https://www.vancouver.wsu.edu/" target="_blank" title="washington state university vancouver website" aria-label="washington state university vancouver website"><figure>
+						<img src="https://the-next.org/img/global/wsu-van.png" alt="Washington State University Vancouver">
+					</figure></a>
+
+					<a href="https://eliterature.org/" title="the electronic literature organization website" aria-label="the electronic literature organization website"><figure class="no-margin">
+						<img src="https://the-next.org/img/global/elo-face.png" alt="Electronic Literature Organization">
+					</figure></a>
+				</div>
+			</section>
+
+			<section id="footer-contact">
+				<h2>Contact Us</h2>
+				<p>Dene Grigar, Managing Director and Curator</p>
+				<a href="mailto:dgrigar@wsu.edu">dgrigar@wsu.edu</a>
+
+				<p>Electronic Literature Lab</p>
+				<p>Washington State University Vancouver</p>
+				<p>14204 NE Salmon Creek Avenue</p>
+				<p>Vancouver, WA 98686</p>
+			</section>
+
+			<nav id="footer-nav" aria-label="footer navigation">
+				<a href="https://the-next.org/">Welcome</a>
+				<a href="https://the-next.org/exhibitions">Exhibitions</a>
+				<a href="https://the-next.org/visualizations">3D &amp; Virtual Experiences</a>
+				<a href="https://archive.the-next.org/documentation/the-next-physical-archives-inventory.pdf" target="_blank">Physical Archives</a>
+				<a href="https://the-next.org/about">About</a>
+				<a href="https://the-next.org/elms">ELMS</a>
+				<a href="https://the-next.org/donate">Donate</a>
+			</nav>
+		</footer><script>
+		//navigation side menu open and close
+		$(".collapseTrigger").click(function(){
+			if ($(this).data("target") == "main") {
+				$("#menuSideNav").toggleClass("open");
+				$("#languageSideNav").removeClass("open");
+				$("#menuSideCollapseButtons").toggleClass("change");
+			}
+			else if ($(this).data("target") == "language") {
+				$("#languageSideNav").toggleClass("open");
+				$("#menuSideNav").removeClass("open");
+				$("#menuSideCollapseButtons").removeClass("change");
+			}
+		});
+		
+	</script>
+	
+	 <script>
+		//navigation side menu open and close
+		$(document).ready(function () {
+			var menuButton = $('#mobile-menu-ico');
+
+			function setMobileMenu(open) {
+				menuButton.toggleClass('open', open).attr('aria-expanded', open ? 'true' : 'false');
+				$('#navbar').toggleClass('mobile-open', open);
+			}
+
+			menuButton.click(function () {
+				setMobileMenu(menuButton.attr('aria-expanded') !== 'true');
+			});
+
+			$(document).keydown(function (e) {
+				if ((e.key === 'Escape' || e.key === 'Esc') && menuButton.attr('aria-expanded') === 'true') {
+					setMobileMenu(false);
+					menuButton.focus();
+				}
+			});
+
+			$('#navbar a:not([data-bs-toggle]) > .header-active').parent().attr('aria-current', 'page');
+		});
+		
+		//magnifying glass
+		$(".search-icon-nav-container").click(function(){
+			$("#nav-bar-search-form").submit();
+		});
+
+		$(document).ready(function () {
+			$(this).scrollTop(0);
+		});
+
+	</script>
+	
+	<!--translation scripts-->
+	<script>
+		$(document).ready(function() {
+			//replacement function
+			function pageTranslate(languageChoice) {
+				$("*").each(function( index ) {
+					if ($(this).attr('data-language-'+languageChoice)) {
+						
+						//check for html
+						if (!$(this).attr('alt') && !$(this).attr('placeholder')) {
+							var tempReplace = $(this).attr('data-language-'+languageChoice);
+							$(this).html(tempReplace);
+						}
+					
+						//check for placeholder text
+						if ($(this).attr('placeholder')) {
+							$(this).attr('placeholder',tempReplace);
+						}
+						
+						//check for alt text
+						if ($(this).attr('alt')) {
+							$(this).attr('alt',tempReplace);
+						}
+					}
+				});
+			}
+		
+			//set on page visit
+			if (localStorage.getItem("language") && localStorage.getItem("language") != "english") {
+				languageChoice = localStorage.getItem("language");
+// 				languageFlag = localStorage.getItem("flag");
+				pageTranslate(languageChoice);
+				$(".languageChange."+languageChoice).addClass("selected");
+				
+				//swap out top bar selection
+				$("#language-dropdown .abbreviation").html($(".languageChange."+languageChoice+" .abbreviation").html());
+// 				$("#language-dropdown .topBarFlag").attr("src", "https://the-next.org/img/global/flags/"+languageFlag+".svg");
+			}
+			else {
+				$(".languageChange.english").addClass("selected");
+			}
+		
+	
+			//translation text replacement
+			$(".languageChange").click(function(){
+				$(".languageChange").removeClass("selected");
+				$(this).addClass("selected");
+				
+				//swap out top bar selection
+				$("#language-dropdown .abbreviation").html($(this).children(".abbreviation").html());
+// 				$("#language-dropdown .topBarFlag").attr("src", $(this).children("img").attr("src"));
+				
+				var languageChoice = $(this).data("language-target");
+// 				var languageFlag = $(this).data("flag-target");
+				localStorage.setItem("language", languageChoice);
+// 				localStorage.setItem("flag", languageFlag);
+				//document.cookie = 'language='+languageChoice+'; SameSite=Lax';
+				pageTranslate(languageChoice);
+			});
+		});
+    </script>    
+    <!--threeJS intro-->
+    <script type="importmap">
+		{
+			"imports": {
+				"three": "https://the-next.org/lib/threejs-rev160/three.module.js",
+				"three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+				"gsap": "https://the-next.org/lib/gsap/gsap-3.12.5.js"
+			}
+		}
+	</script>
+    <script>
+		const NEXT_IMAGES = [];
+		NEXT_IMAGES.push(`img/database/versions/1/attebury-mapping-the-acephale-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/2/shaviro-doom-patrols-8-kathy-acker-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/3/litvak-bright-stones-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/4/litvak-a-storm-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/5/litvak-long-legged-fly-gone-quietly-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/6/litvak-artemis-makes-her-mask-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/7/litvak-she-leaves-impressions-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/8/litvak-immediacy-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/9/litvak-this-is-bakatalk-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/10/memmott-bread-crumbs-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/11/guertin-honeycombings-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/12/pritchett-the-red-spider-razorburn-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/13/sutherland-there-there-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/14/sutherland-hermaphrodite-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/15/sutherland-stone-of-contention-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/16/sutherland-gryphons-nest-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/17/sutherland-whirling-dervish-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/18/buck-stinging-wasps-scorpions-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/19/buck-emotion-rang-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/20/buck-the-crosswalk-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/21/buck-the-commonwealth-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/22/buck-thunders-cradle-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/23/buck-arrivederci-to-the-blues-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/24/ace-desert-drip-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/25/wolf-the-audience-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/26/ley-taurus-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/27/ley-she-prefers-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/28/ley-satori-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/29/ley-amplitude-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/30/ley-on-naming-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/31/ley-mapping-your-skies-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/32/memmott-jilt-a-romance-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/33/birkbeck-bestiary-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/34/birkbeck-iowa-city-je-reviens-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/35/birkbeck-caesura-bosnia-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/36/buck-acorn-issues-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/37/buck-apples-worms-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/38/buck-architectures-reason-fire-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/39/homer-the-god-of-garbage-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/40/homer-the-end-of-a-protestant-future-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/41/homer-valentines-1989-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/42/kellar-lost-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/43/kellar-plan-b-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/44/kellar-primer-gray-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/45/rothenberg-creative-nihilism-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/46/rothenberg-ode-to-tralfamadorian-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/47/sutherland-danse-du-ventre-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/48/sutherland-les-dieu-de-sauvages-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/49/sutherland-gaussian-space-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/50/tanoury-awake-erato-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/51/tanoury-big-two-hearted-river-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/52/tanoury-histories-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/53/shaviro-abducted-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/54/boudreaux-newsreel-12-11-77-xox-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/55/brown-vacuuming-with-the-dead-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/56/weishaus-threading-the-petrified-glyph-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/57/parker-s-he-it-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/58/owen-love-and-work-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/59/tanoury-one-eye-open-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/60/tanoury-of-evenings-in-eden-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/61/tanoury-laundry-night-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/62/tanoury-escargot-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/63/tanoury-my-own-lebnan-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/64/chaffin-logopoetry-iii-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/65/hart-eclipse-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/66/hart-room-of-angels-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/67/hart-portrait-of-a-woman-looking-do-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/68/hart-myopia-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/69/hart-crow-1-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/70/dinsmore-tint-of-descent-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/71/memmott-trimalchios-diet-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/72/fein-place-of-reference-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/73/fein-pyramid-scheme-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/74/fein-our-fathers-commandment-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/75/fein-the-zen-of-garage-parking-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/76/fein-old-haunts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/77/fein-seekers-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/78/fein-tactile-memories-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/79/snyder-1999-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/80/meltzer-31-iii-98-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/81/myles-40th-street-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/82/topp-adult-money-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/83/foley-after-the-festival-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/84/kaufman-again-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/85/richman-an-arm-a-leg-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/86/wierzbicki-careerists-reading-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/87/degentesh-colors-are-named-for-the-light-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/88/schein-cooler-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/89/finberg-delphine-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/90/watson-early-contemporary-late-modern-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/91/ostashevsky-effect-of-language-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/92/norse-the-ex-nun-and-the-gay-poet-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/93/degentesh-excommunication-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/94/vitale-everybody-wants-to-be-the-budd-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/95/huberman-find-your-way-home-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/96/trinidad-fluff-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/97/towers-fourteen-opening-stanzas-from-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/98/snyder-gravity-buoyancy-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/99/maynard-gun-spelled-backwards-is-dung-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/100/kaufman-he-makes-me-smell-him-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/101/rutkowski-hello-nuremberg-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/102/degentesh-i-hate-to-be-in-love-like-i-ha-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/103/ostashevsky-i-struck-rhetorical-poses-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/104/snyder-inter-species-conversation-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/105/kolm-jfk-remembered-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/106/trinidad-the-late-show-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/107/litzky-mary-magdalenes-song-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/108/hardin-monks-madrigal-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/109/trinidad-monster-mash-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/110/snyder-on-the-kalamazoo-chicago-fligh-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/111/randall-our-bodies-ourselves-cut-up-w-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/112/snyder-she-called-to-tell-me-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/113/snyder-signs-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/114/snyder-signs-ii-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/115/foley-the-skeletons-defense-of-carna-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/116/mesmer-song-of-myself-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/117/sparrow-surrealist-mayoral-poem-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/118/savage-the-thief-of-the-heart-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/119/towers-thorn-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/120/hadjitarkhani-to-you-of-the-fire-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/121/meltzer-waste-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/122/meltzer-what-am-jam-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/123/kaufman-what-did-you-do-in-the-war-dad-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/124/feast-why-do-i-know-so-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/125/kaufman-why-i-love-her-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/126/prohm-untitled-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/127/kaufman-introduction-ny-sf-poetry-coll-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/128/jeff-renovation-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/129/corazon-foley-silicon-valley-poetry-slam-tea-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/130/owen-a-boring-story-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/131/corcoran-iii-dorothy-comes-to-brentwood-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/132/andrews-mcluhan-reconsidered-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/133/keily-the-mechanical-ocean-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/134/strasser-the-sea-horse-belgian-reflect-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/135/white-rocks-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/136/cohen-a-history-of-north-beach-poetr-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/137/cohen-three-lives-and-some-hippie-tr-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/138/cohen-remembrance-of-allen-ginsberg-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/139/cohen-elegy-for-jack-micheline-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/140/cohen-the-funeral-of-bob-kaufman-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/141/cohen-elegy-for-rick-griffin-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/142/breeze-sky-scratchez-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/143/guertin-skeleton-sky-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/144/morgan-28-years-in-1000-words-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/145/sanford-the-roots-of-nonlinearity-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/146/chase-drop-kicking-the-text-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/147/glass-abraxas-song-contra-earthquak-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/148/glass-action-at-a-distance-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/149/glass-this-word-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/150/glass-begin-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/151/glass-shock-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/152/glass-a-man-stands-in-the-yellow-air-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/153/mars-the-secret-keepers-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/154/weishaus-inside-the-skull-house-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/155/rothenberg-punk-rockwell-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/156/warnell-poem-by-numbers-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/157/thomson-the-halo-brace-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/158/smylie-mist-ridge-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/159/raven-negative-theology-and-semantic-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/160/raven-the-posture-of-gods-impossible-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/161/raven-pointing-on-the-ontological-ar-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/162/raven-the-principle-of-sufficient-re-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/163/raven-heidegger-holderlin-flight-t-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/164/raven-platos-opinion-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/165/goss-modern-keller-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/166/sondheim-economies-of-the-imaginary-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/167/sondheim-projects-for-mobile-phones-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/168/porat-the-double-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/169/porat-the-origin-of-the-double-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/170/porat-on-the-beach-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/171/porat-ferris-wheel-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/172/porat-memory-of-my-youth-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/173/deboer-the-execution-of-the-sun-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/174/holzbauer-quadratur-der-worte-squaring-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/175/cohen-bombay-boogie-woogie-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/176/ulmer-toward-electracy-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/177/breeze-the-art-of-mezang-elle-ing-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/178/coverley-tide-land-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/179/siratori-technocrime-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/180/siratori-n-a-n-o-tragedy-of-this-elect-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/181/siratori-scan-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/182/siratori-nail-eye-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/183/siratori-wxar-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/184/i-b-rad-the-illustrated-rad-a-short-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/185/re-workinpr-recombinant-code-poetry-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/186/sondheim-on-stelarc-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/187/montfort-the-girl-and-the-wolf-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/188/uribe-anipoema-anipoem-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/189/morrigan-dreamer-of-dreams-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/190/morrigan-my-heads-all-messed-up-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/191/wolf-hells-father-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/192/hine-facades-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/193/munoz-circle-poems-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/194/zummer-what-the-hell-is-that-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/195/poundstone-new-digital-emblems-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/196/miles-vog-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/197/ley-war-games-highlight.gif`);NEXT_IMAGES.push(`img/database/versions/198/adams-conartist-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/199/whyte-issues-in-phenomenology-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/200/greco-the-country-between-us-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/201/keenan-moment-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/202/tanoury-sparrows-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/203/thacker-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/204/sondheim-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/205/amerika-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/206/samet-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/207/federman-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/208/sukenick-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/209/eisen-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/210/southern-alt-xcerpts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/211/lammerman-cocktail-nation-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/212/swiss-the-dream-life-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/213/cramer-digital-code-and-literary-text-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/214/siratori-subliminal-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/215/rumson-shamans-of-the-cyber-steppes-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/216/zweig-the-watcher-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/217/zweig-the-mermaid-cabinet-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/218/zervos-invention-cyberpoetry-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/219/magee-social-units-shadow-text-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/220/daniel-what-hermes-does-with-lingerie-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/221/daniel-what-aphrodite-said-to-hermes-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/222/daniel-white-as-camphor-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/223/daniel-the-light-house-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/224/daniel-2am-confessions-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/225/daniel-salty-stars-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/226/daniel-lucrezia-smiles-in-the-dark-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/227/nelson-panhandle-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/228/rettberg-the-meddlesome-passenger-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/229/sondheim-the-phenomenology-of-approach-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/230/simanowski-when-literature-goes-multimedi-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/231/ballange-bjsk-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/232/breeze-addressed-in-a-skin-c-ode-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/233/quasha-axial-poetics-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/234/upton-multivoice-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/235/howard-intersperse-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/236/howard-ugly-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/237/marsh-landscapes-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/238/nechvatal-viractualism-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/239/martin-hyperbody-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/240/mellis-restless-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/241/shaneen-an-ornithology-of-war-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/242/niss-outline-of-a-novel-by-the-stor-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/243/fried-definitions-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/244/sondheim-your-book-came-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/245/warnell-poem-by-nari-does-windows-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/246/sanders-fragmentare-mythologa-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/247/quasha-this-much-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/248/quasha-two-arts-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/249/quasha-taking-space-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/250/ganick-6reasoning-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/251/ganick-7asking-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/252/knoebel-four-letter-words-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/253/ley-the-body-politic-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/254/wikstrom-the-angels-series-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/255/strasser-the-divers-grave-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/256/shimizu-individual-location-s-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/257/shimizu-i-am-anxious-about-the-frame-r-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/258/memmott-minute-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/259/bobbitt-moire-effect-dynamic-forms-o-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/260/bobbitt-multimedia-database-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/261/bell-weave-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/262/touchon-the-hidden-sphere-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/263/andrews-enigma-n-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/264/andrews-seattle-drift-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/265/andrews-digital-langu-im-age-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/266/phillips-inoculating-through-enervation-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/267/state-sanctioned-sedation-menstruating-heart-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/268/breeze-birdfall-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/269/breeze-clohneing-god-n-ange-ls-highlight.gif`);NEXT_IMAGES.push(`img/database/versions/270/breeze-internal-damage-report-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/271/breeze-fleshis-tics-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/278/murphy-embouchure-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/279/smylie-broken-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/280/marsh-6-string-aria-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/281/nelson-gorgeous-oaks-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/282/ley-in-the-footsteps-of-the-father-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/283/andrews-rude-little-song-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/284/zervos-gif-poems-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/285/everett-the-circadia-project-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/286/dignazio-5-poems-and-a-collaboration-wi-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/287/weishaus-hinging-the-parallax-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/288/and-sacrificing-artiface-on-cybele-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/289/qureshi-fields-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/290/upton-words-in-a-hedge-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/291/upton-chief-dionysus-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/292/upton-peace-process-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/293/upton-nothing-sees-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/294/upton-networking-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/295/upton-good-night-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/296/upton-still-life-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/297/upton-from-sig-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/298/upton-seeing-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/299/upton-rain-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/300/guertin-incarnation-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/301/hadbawnik-bus-evening-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/302/knoebel-how-i-heard-it-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/303/knoebel-white-room-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/305/hine-snaps-highlight.jpg`);NEXT_IMAGES.push(`img/database/versions/306/thuan-days-of-javamoon-highlight.jpg`);	</script>
+    <script type="module" src="js/welcome-space-intro.js"></script>
+
+    <!-- Script for animated icons they should be in order from first card to last (1-6)-->
+    <script>
+
+	//close function for splash screen
+    $(document).ready(function () {
+		$('#welcome-space-main, footer').attr('inert', '');
+
+		if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			$('.promo-block video').each(function () {
+				this.pause();
+			});
+		}
+
+		$('#stage-close').click(function () {
+			$('#welcome-space-main, footer').removeAttr('inert');
+			$('#welcome-space-intro').fadeOut(function () {
+				$('#welcome-text h1')[0].focus({ preventScroll: true });
+			});
+			$('#welcome-space-main').addClass('moved-up');
+			$('body').addClass('normalize');
+			$('.navbar').fadeIn(2000);
+		});
+	});
+    
+    $(document).ready(function() {
+        //redirect function
+        function iconRedirect(e, divID, img, time) {
+            if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) {
+                return;
+            }
+            e.preventDefault();
+            var url = e.currentTarget.href;
+            $(divID).attr("src", "img/spaces/welcome/" + img + ".gif");
+            window.setTimeout(function() {
+                //$(divID).attr("src", "img/spaces/welcome/"+img+".png");
+                window.location = url;
+            }, time);
+        }
+
+        //Individual Artists & Scholars (first card)
+        $('#ias-card .card').click(function(e) {
+            iconRedirect(e, '#ias-img', 'welcome-ias-icon', 1250);
+        });
+
+        //Online Journals (second card)
+        $('#oj-card .card').click(function(e) {
+            iconRedirect(e, '#oj-img', 'welcome-journals-icon', 1300);
+        });
+
+        // Anthologies (third card)
+        $('#anth-card .card').click(function(e) {
+            iconRedirect(e, '#anth-img', 'welcome-anthologies-icon', 1350);
+        });
+
+        // Showcases (fourth card)
+        $('#show-card .card').click(function(e) {
+            iconRedirect(e, '#show-img', 'welcome-showcases-icon', 1300);
+        });
+
+        //Scholarly Publications (fifth card)
+        $('#scholar-card .card').click(function(e) {
+            iconRedirect(e, '#scholar-img', 'welcome-pubs-icon', 1400);
+        });
+
+        //ELO archives (sixth card)
+        $('#arch-card .card').click(function(e) {
+            iconRedirect(e, '#arch-img', 'welcome-archives-icon', 1400);
+        });
+    });
+    </script>
+
+    <!-- Default Statcounter code for The NEXT - https://the-next.org -->
+	<script type="text/javascript">
+	var sc_project=12528173; var sc_invisible=1; var sc_security="7dbd2f01";
+	</script>
+	<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+	<noscript>
+		<div aria-hidden="true" class="statcounter">
+			<a tab-index="" aria-hidden="true" title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank">
+				<img class="statcounter" src="https://c.statcounter.com/12528173/0/7dbd2f01/1/" alt="Web Analytics Made Easy - StatCounter"
+					data-language-english="Web Analytics Made Easy - StatCounter"
+					data-language-french="Analyse web facilitée - StatCounter"
+					data-language-spanish=""
+				>
+			</a>
+		</div>
+	</noscript>
+	<!-- End of Statcounter Code -->
+</body>
+
+</html>

@@ -1063,8 +1063,8 @@ def main():
                          f'<tbody>{trs}</tbody></table></div><p class="meta">{md_inline(on["receiving_texts"])}. Reading the received column recovers the field (§5.9).</p>',
                          n=f'{nfc} field claims · {len(on["translation"])} rows'))
             ms = r.get("measure") or {}
-            if ms:
-                vk = "v0.9" if "v0.9" in ms else "v0.8"
+            if ms and any(k in ms for k in ("v0.10", "v0.9", "v0.8")):
+                vk = next((k for k in ("v0.10", "v0.9", "v0.8") if k in ms), None)   # v0.10 rows (2026-11-01) carry their own key
                 v7 = (f'; v0.7 {ms["v0.7"]["surviving"]} of {ms["v0.7"]["of"]} (positions {esc(str(ms["v0.7"]["positions"]))})' if ms.get("v0.7") else
                       f' (positions {esc(str(ms[vk]["positions"]))}; composed first under {vk}, so there is no v0.7 object to measure against)')
                 orun = ms.get("opening_run")

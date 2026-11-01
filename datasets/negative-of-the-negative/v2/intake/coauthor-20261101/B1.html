@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoAuthor – Human-AI Collaborative Writing Dataset</title>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="CoAuthor" />
+<meta name="author" content="Mina Lee" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Human-AI Collaborative Writing Dataset" />
+<meta property="og:description" content="Human-AI Collaborative Writing Dataset" />
+<link rel="canonical" href="http://p-lambda.github.io/coauthor/" />
+<meta property="og:url" content="http://p-lambda.github.io/coauthor/" />
+<meta property="og:site_name" content="CoAuthor" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CoAuthor" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Mina Lee"},"description":"Human-AI Collaborative Writing Dataset","headline":"CoAuthor","name":"CoAuthor","url":"http://p-lambda.github.io/coauthor/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+
+<meta property="og:description" content="Human-AI Collaborative Writing Dataset" />
+
+<meta name="author" content="CoAuthor" />
+
+
+
+
+<meta property="og:image" content="http://p-lambda.github.io/assets/images/coauthor.png"/>
+<meta property="twitter:image" content="http://p-lambda.github.io/assets/images/coauthor.png"/>
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://p-lambda.github.io/coauthor/assets/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="CoAuthor - Human-AI Collaborative Writing Dataset" href="https://p-lambda.github.io/coauthor/feed.xml" />
+    <link rel="canonical" href="https://p-lambda.github.io/coauthor//" />
+
+    <meta name="theme-color" content="#000000">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://p-lambda.github.io/coauthor/assets/images/coauthor.png">
+    
+
+  </head>
+
+  <body>
+    <div id="bar"></div>
+    <div class="wrapper-container">
+      <div class="wrapper-masthead">
+        <div class="container">
+          <header class="masthead clearfix">
+            <a href="https://coauthor.stanford.edu/" class="site-avatar"><img src="https://p-lambda.github.io/coauthor//assets/images/coauthor.png" alt="" /></a>
+
+            <div class="site-info">
+              <h1 class="site-name"><a href="https://coauthor.stanford.edu/">CoAuthor</a></h1>
+              <p class="site-description">Human-AI Collaborative Writing Dataset</p>
+            </div>
+
+            <nav>
+              <a href="https://coauthor.stanford.edu/">Home</a>
+              <a href="https://coauthor.stanford.edu/browse">Browse</a>
+            </nav>
+          </header>
+        </div>
+      </div>
+
+      <div class="wrapper-main">
+        <div id="main" role="main" class="container">
+          <article class="page">
+  <div class="entry">
+    <style>
+.button {
+  display: inline-block;
+  border-radius: 25px;
+
+  background-color: #5560A9;
+  border: none;
+  color: #FFFFFF;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 16px;
+  padding: 15px 25px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button a, .button a:hover {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+img {
+  display: inline !important;
+  vertical-align: middle !important;
+}
+</style>
+
+<h1 id="what-is-coauthor">What is CoAuthor?</h1>
+
+<p>CoAuthor is a human-AI collaborative writing dataset that captures rich interaction between 63 writers and four instances of GPT-3 across 1445 writing sessions in English.</p>
+
+<p><img src="https://p-lambda.github.io/coauthor/assets/images/write_get_suggestions_edit.png" alt="figure" /></p>
+
+<p>At each session, we provided writers with a prompt (black text) and an instance of GPT-3.
+They then wrote freely (brown), asked GPT-3 for suggestions (blue), accepted the suggestions or dismissed them, and edited the accepted suggestions or previous texts in any order they chose.
+All interactions between the writers and the system were recorded at the keystroke level (e.g. inserting text, moving the cursor, and receiving suggestions) with timestamps, so that we could replay them precisely.
+Using this rich, nuanced, and fine-grained interaction dataset, designers can examine the same sessions from multiple analytical perspectives to better understand the generative capabilities of large language models.</p>
+
+<center><button class="button"><a href="https://arxiv.org/abs/2201.06796" target="_blank"><span>CoAuthor paper (Lee et al., 2022)</span></a></button></center>
+
+<center><button class="button"><a href="https://github.com/minalee-research/coauthor-interface" target="_blank"><span><strong>[New]</strong> Code for interface</span></a></button></center>
+
+<p><strong>Overview</strong></p>
+
+<ul>
+  <li><strong>Types of writing</strong> - Creative &amp; Argumentative
+    <ul>
+      <li>Creative writing: 830 stories written by 58 writers</li>
+      <li>Argumentative writing: 615 essays written by 49 writers</li>
+    </ul>
+  </li>
+  <li><strong>Writing prompts</strong> - WritingPrompts subreddit &amp; The New York Times</li>
+  <li><strong>Writers</strong> - Qualified crowd workers from Amazon Mechanical Turk</li>
+  <li><strong>Interface</strong> - Text editor where writers can press the tab key to get five suggestions</li>
+</ul>
+
+<p><strong>Basic statistics</strong></p>
+<ul>
+  <li>Stories and essays: 418 words long</li>
+  <li>Number of queries: 11.8 queries per writing session</li>
+  <li>Acceptance rate of suggestions: 72.3%</li>
+  <li>Percentage of text written by humans: 72.6%</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h1 id="getting-started">Getting Started</h1>
+
+<p>An example replay of a writing session in CoAuthor:</p>
+
+<!-- <iframe id="replayIframe" src="http://writingwithai-replay.glitch.me/?session_id=4e637378a13e409193cabb67479bfed6" style="border:none;width:100%;min-height:500px;"></iframe> -->
+
+<p><img src="https://p-lambda.github.io/coauthor/assets/images/pig_0.75_clip.gif" alt="Example of replay" /></p>
+
+<p>Take a look at more writing sessions (best viewed on desktop):</p>
+
+<center><button class="button"><a href="https://coauthor.stanford.edu/browse/"><span>Browse writing sessions in CoAuthor</span></a></button></center>
+
+<p>Download the dataset, metadata, and survey responses:</p>
+
+<center><button class="button"><a href="https://drive.google.com/file/d/1C9FCCsyY-5I7mcBHi-__R7lxHkGX_-9Q/view?usp=sharing"><span>Download writing sessions</span></a></button></center>
+
+<center><button class="button"><a href="https://docs.google.com/spreadsheets/d/1O3EXJm52TQHfFSbzVGZmNIzzdu5ow6IjnOBrGTUY02o/edit?usp=sharing" target="_blank"><span>View metadata and survey responses (Google Sheets)</span></a></button></center>
+
+<p><br />
+<br /></p>
+
+<h1 id="tutorial">Tutorial</h1>
+
+<p>If you are familiar with Python, get started by downloading the dataset, reading writing sessions from files, and examining events:</p>
+
+<center><button class="button"><a href="https://colab.research.google.com/drive/1nUGXP9l_jelbB4X65J0ivUvLgQz1RK1C?usp=sharing" target="_blank"><span>Getting started with CoAuthor (Google Colab)</span></a></button></center>
+
+<center><button class="button"><a href="https://colab.research.google.com/drive/1vbmZJlk90QWdGBWPu6yVz5ZAyww9wFzc?usp=sharing" target="_blank"><span>Identifying authors of sentences (Google Colab)</span></a></button></center>
+
+<p><br />
+<br /></p>
+
+<h1 id="have-questions">Have Questions?</h1>
+
+<p>Ask us questions to <a href="mailto:minalee.research@gmail.com">Mina</a>!</p>
+
+  </div>
+</article>
+
+        </div>
+      </div>
+
+    
+
+  </body>
+</html>

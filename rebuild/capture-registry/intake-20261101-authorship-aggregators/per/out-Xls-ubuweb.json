@@ -1,0 +1,289 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-ubuweb",
+   "name": "UbuWeb",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own home and FAQ pages and a third-party account (Wikipedia), saved 2026-11-01, describe it as the internet's largest archive of free avant-garde materials. A site, read on the site template.",
+   "records": [
+    {
+     "source": "UbuWeb (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "UbuWeb (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--home.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "UbuWeb (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--wikipedia.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "UbuWeb",
+      "Ubu",
+      "ubu.com"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Founded in 1996, UbuWeb is the internet's largest archive of free avant-garde materials.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Kenneth Goldsmith",
+      "volunteer",
+      "volunteers",
+      "volunteer-run"
+     ],
+     "reference": "A completely independent site run on a volunteer basis by editors across the United States; created by the poet Kenneth Goldsmith, named its editor.",
+     "evidence": [
+      {
+       "record_quote": "UbuWeb has no need for funding. All work is done solely on a volunteer basis. Our only cost is our monthly hosting fee, which amounts to US$50 each month.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "No. UbuWeb is a completely independent site. However, several universities and partners have generously offered us server space and bandwith, with no restrictions or input regarding our content.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "Our editors are pretty much spread across the United States: New York City, Utah, California, etc.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "The site was created by poet Kenneth Goldsmith in 1996",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--wikipedia.txt"
+      },
+      {
+       "record_quote": "Editor Kenneth Goldsmith",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "1996"
+     ],
+     "reference": "Founded November 1996.",
+     "evidence": [
+      {
+       "record_quote": "UbuWeb was founded in November of 1996, initially as a repository for visual, concrete and, later, sound poetry. Over the years, UbuWeb has embraced all forms of the avant-garde and beyond.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The internet's largest archive of free avant-garde materials: founded for visual, concrete and sound poetry, since then all forms of the avant-garde.",
+     "evidence": [
+      {
+       "record_quote": "Founded in 1996, UbuWeb is the internet's largest archive of free avant-garde materials.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--home.txt"
+      },
+      {
+       "record_quote": "UbuWeb was founded in November of 1996, initially as a repository for visual, concrete and, later, sound poetry. Over the years, UbuWeb has embraced all forms of the avant-garde and beyond.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Film and video, sound, dance, papers, visual poetry, conceptual writing, Aspen Magazine, /ubu Editions, the 365 Days Project, ethnopoetics; the entire Tellus Audio Cassette Magazine archive.",
+     "evidence": [
+      {
+       "record_quote": "Film & Video Sound Dance Papers Historical Visual Poetry Conceptual Comics Conceptual Writing Contemporary Aspen Magazine Outsiders /ubu Editions 365 Days Project Ethnopoetics Electronic Music Resources",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--home.txt"
+      },
+      {
+       "record_quote": "It houses and distributes freely the entire archive of the Tellus Audio Cassette Magazine project.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--wikipedia.txt"
+      },
+      {
+       "record_quote": "Beyond its repository of works, UbuWeb features curated sections including /ubu Editions book-length editions of contemporary poetry , selected and introduced by the poet Brian Kim Stefans .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--wikipedia.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A distribution center for hard-to-find, out-of-print and obscure materials, transferred digitally to the web.",
+     "evidence": [
+      {
+       "record_quote": "UbuWeb functions as a distribution center for hard-to-find, out-of-print and obscure materials, transferred digitally to the web.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Nothing for sale, commercial-free; copyrights belong to the copyright holders; out-of-print works posted, in-print works left alone, a work removed when it returns to print or its artist asks.",
+     "evidence": [
+      {
+       "record_quote": "Nothing is for sale on UbuWeb. It's all free.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "UbuWeb is completely commercial-free and it will always stay that way.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "The copyrights belong to the copyright holders, not us. You'll need to seek them out for proper permission.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "If it's out of print, we feel it's fair game. Or if something is in print, yet absurdly priced or insanely hard to procure, we'll take a chance on it. But if it's in print and available to all, we won't touch it.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      },
+      {
+       "record_quote": "Should something return to print, we will remove it from our site immediately. Also, should an artist find their material posted on UbuWeb without permission and wants it removed, please let us know.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/ubuweb--faq.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'ubuweb' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a free, ad-free digital library and online archive for avant-garde art, film, music, and poetry.",
+    "basis": "The archive reached by name; founder, mission, operations, status and sections given."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "UbuWeb is a digital library of freely downloadable avant-garde art, film, music as well as visual, concrete and sound poetry."
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Founded: 1996 by poet Kenneth Goldsmith."
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Founded: 1996 by poet Kenneth Goldsmith."
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a free, ad-free digital library and online archive for avant-garde art, film, music, and poetry."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "Audio & Music: Features mp3 archives, sound art, early internet audio, and curated collections like The 365 Days Project and Tellus Audio Cassette Magazine."
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "Mission: To provide open, web-based educational access to obscure, out-of-print, and marginalized avant-garde materials."
+    },
+    {
+     "atom": "commitments",
+     "present": true,
+     "span": "Operations: Built on a gift economy model, running with no budget, zero registration, and server/bandwidth support donated by universities."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "The archive composed accurately at its grain, with its pause and return exact and two counts on no saved page. The terms on which it holds others' work, rights left with their holders and a work withdrawn at its artist's request, are absent.",
+   "key": "ubuweb-aio-20261101",
+   "entry": "ubuweb-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-ubuweb"
+  }
+ ]
+}

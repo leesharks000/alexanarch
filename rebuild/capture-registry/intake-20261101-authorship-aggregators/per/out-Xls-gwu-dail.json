@@ -1,0 +1,221 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-gwu-dail",
+   "name": "DAIL – The Database of AI Litigation",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as a database of ongoing and completed litigation involving artificial intelligence. A site, read on the site template.",
+   "records": [
+    {
+     "source": "DAIL – The Database of AI Litigation (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "DAIL",
+      "Database of AI Litigation"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "DAIL – The Database of AI Litigation – Ethical Tech Initiative",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Ethical Tech Initiative",
+      "George Washington University",
+      "GW"
+     ],
+     "reference": "The Ethical Tech Initiative, an interdisciplinary collaboration, on George Washington University's site.",
+     "evidence": [
+      {
+       "record_quote": "DAIL – The Database of AI Litigation – Ethical Tech Initiative",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      },
+      {
+       "record_quote": "We are an interdisciplinary collaboration: where law and ethics meet computer science and engineering, media and public affairs, and social entrepreneurship.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      },
+      {
+       "record_quote": "Contact GW",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Ongoing and completed litigation involving artificial intelligence and related topics.",
+     "evidence": [
+      {
+       "record_quote": "The Database of AI Litigation presents information about ongoing and completed litigation involving artificial intelligence and related topics.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Cases from complaint forward, whether or not they generate published decisions, from algorithms in hiring, credit and sentencing to generative AI training and AI companion liability; a companion database of issued opinions; still under development.",
+     "evidence": [
+      {
+       "record_quote": "It covers cases from complaint forward - as soon as we learn of them - whether or not they generate published decisions.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      },
+      {
+       "record_quote": "It is intended to be broad in scope, covering everything from algorithms used in hiring and credit and criminal sentencing decisions to generative AI training and AI companion liability.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      },
+      {
+       "record_quote": "A companion database of issued opinions is available here .",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      },
+      {
+       "record_quote": "While still under development, it will continue to expand over time.",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/gwu-dail--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'gwu-dail' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "partial",
+    "abn": false,
+    "span": "Maintained by George Washington University Law School's Ethical Tech Initiative, this resource covers ongoing and completed AI-related cases",
+    "basis": "The database reached first in a list of four AI litigation trackers, with its host and method; the other three are other trackers."
+   },
+   "atoms": [
+    {
+     "atom": "name",
+     "present": true,
+     "span": "DAIL – The Database of AI Litigation: Maintained by"
+    },
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "Maintained by George Washington University Law School's Ethical Tech Initiative"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "this resource covers ongoing and completed AI-related cases"
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "starting from the initial complaint onward—regardless of whether they produce published decisions."
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "DAIL composed accurately as one tracker among four, its method in near paraphrase of its own sentence and its host named with a school the saved page does not name. Its scope and companion database of opinions are absent, and a second domain under its name is carded.",
+   "key": "database-of-ai-litigation-aio-20261101",
+   "entry": "database-of-ai-litigation-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-gwu-dail"
+  }
+ ]
+}

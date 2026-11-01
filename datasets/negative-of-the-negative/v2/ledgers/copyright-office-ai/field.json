@@ -1,0 +1,1446 @@
+{
+ "row": "copyright-office-ai",
+ "address": "U.S. Copyright Office Copyright and Artificial Intelligence",
+ "addresses": [
+  "U.S. Copyright Office Copyright and Artificial Intelligence"
+ ],
+ "extracted": "2026-11-01",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the saved Wikipedia text and redirect wikitext, or the card's title and snippet on the transcript's rail for the two unreachable cards; 62/62 verified by script",
+ "B_note": "The field B (§0.4, §3.1(a)) in two pools. B_D, the disclosed pool: the seven cards on T's rail (B1 the initiative's own page, which is also the census's own page and is carried once, in B_D; B2 NewsNet 1060; B3 the Artificial Intelligence Study page; B4 Skadden; B5 Crowell & Moring, refused with HTTP 403; B6 WIPO Magazine, an interview by the Office's own staff; B7 Congress.gov, refused with HTTP 403). T's body names no source beyond its cards. B_R, the reference pool: Wikipedia (B8: no article on the initiative; the redirect to Artificial intelligence and copyright, the census's Wikipedia source, read at its United States sections). The census's own pages are the home page (B1, in B_D) and Wikipedia (B8); it read no other third-party source, so census_third_party is empty.",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7"
+  ],
+  "B_R": [
+   "B8"
+  ]
+ },
+ "lineage_note": "Lineages: what it is (B1, B3); names (B1); the Report (B1, B2); operator (B1, B6); genealogy: earlier events and sessions (B1); launch and the notice of inquiry (B1, B3, B4, B8); registration guidance (B1, B2, B8); Part 3, pre-publication (B1); Part 1: digital replicas (B1, B6); Part 2: copyrightability (B2); the human-authorship requirement (B2, B4, B6, B7, B8); the Office's rationale (B2, B4); Part 3: training and fair use (B5, B8); registration and disclosure (B4, B6, B8); registration decisions (B1, B4); Thaler v. Perlmutter (B1, B8); Allen v. Perlmutter (B1); statements to Congress and related resources (B1); other jurisdictions (B4, B6); reception: the encyclopedia (B8). The census's fields that restate an own page are one lineage with that page (§3.6), which keeps the earliest date.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/ (Bn.html raw, Bn.txt text; B1-census.html the census copy beside this session's byte-identical fetch; B5-403.html and B7-403.html the refusals; B8 .html/.txt the census copy of the rendered article, with B8.wiki, B8-redirect.wiki, B8-404.html and B8-usco.wiki the raw Wikipedia responses); sha256 per file in each source's files",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 1; the census's own page copyright-office-ai--home (carried once, in B_D: §3.1(a))",
+   "card": "Copyright Office (.gov) — Copyright and Artificial Intelligence | U.S. Copyright Office",
+   "url": "https://www.copyright.gov/ai/",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 1
+    }
+   ],
+   "card_title": "Copyright and Artificial Intelligence | U.S. Copyright Office",
+   "card_snippet": "Initiative: U.S. Copyright Office AI examination (launched early 2023, notice of inquiry August 2023, 10,000+ comments by December 2023). Report: Multi-part ana...",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B1.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1.html",
+     "sha256": "2b1e8b6c8e7f964e97adc035857c86f1e46b9ae94029573a5d99f0c24903bd8b"
+    },
+    "B1.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1.txt",
+     "sha256": "74edcbca86d30db91a457d9d681f20e565e47ac2c99590a10bbe41dc812bc05d"
+    },
+    "B1-census.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1-census.html",
+     "sha256": "2b1e8b6c8e7f964e97adc035857c86f1e46b9ae94029573a5d99f0c24903bd8b"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:56Z",
+    "http": 200,
+    "url": "https://www.copyright.gov/ai/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1.html",
+    "raw_sha256": "2b1e8b6c8e7f964e97adc035857c86f1e46b9ae94029573a5d99f0c24903bd8b",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1.txt"
+    ],
+    "census_copy": {
+     "src": "copyright-office-ai--home",
+     "sha256": "2b1e8b6c8e7f964e97adc035857c86f1e46b9ae94029573a5d99f0c24903bd8b",
+     "read": "2026-11-01",
+     "fetched": "2026-11-01T04:07:59Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1-census.html",
+      "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B1.txt"
+     ],
+     "agrees": "byte-identical: this session's fetch and the census copy have the same sha256; B1.txt is the census's extracted text"
+    }
+   },
+   "kind": "Overview card; the initiative's own page, the same page as the census's own page copyright-office-ai--home",
+   "also_reference": "own_page",
+   "note": "URL from the card title (the page <title> is the card title) and the census record (url).",
+   "names_operator": "yes (the Office, its address and the Library of Congress in the footer)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 2",
+   "card": "Copyright Office (.gov) — NewsNet Issue 1060 | U.S. Copyright Office",
+   "url": "https://www.copyright.gov/newsnet/2025/1060.html",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 2
+    }
+   ],
+   "card_title": "NewsNet Issue 1060 | U.S. Copyright Office",
+   "card_snippet": "Report: U.S. Copyright Office Part 2 AI Report (January 29, 2025). Copyrightability: Generative AI outputs require sufficient human-authored expressive elements...",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B2.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B2.html",
+     "sha256": "b508523831f07b8a37357d062391482d40238b527643e83e38dbc79e9739a88c"
+    },
+    "B2.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B2.txt",
+     "sha256": "3dd16e8a45a9e70994bd80bff725181a058a5d919e55da28c606023065ed2f1e"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:28Z",
+    "http": 200,
+    "url": "https://www.copyright.gov/newsnet/2025/1060.html",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B2.html",
+    "raw_sha256": "b508523831f07b8a37357d062391482d40238b527643e83e38dbc79e9739a88c",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B2.txt"
+    ],
+    "text_rule": "text extracted by the census's rule (fetch.py text_of: scripts and styles stripped, words kept)"
+   },
+   "kind": "Overview card (page fetched verbatim)",
+   "note": "URL by title and site (WebSearch); the page <title> is the card title.",
+   "names_operator": "yes (the Office; the Register, Shira Perlmutter)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 3",
+   "card": "Copyright Office (.gov) — Artificial Intelligence Study | U.S. Copyright Office",
+   "url": "https://www.copyright.gov/policy/artificial-intelligence/",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 3
+    }
+   ],
+   "card_title": "Artificial Intelligence Study | U.S. Copyright Office",
+   "card_snippet": "Initiative: U.S. Copyright Office AI study analyzing copyright law, unresolved issues, and congressional action. Process: Notice of inquiry published August 20,",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B3.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B3.html",
+     "sha256": "bcf0e004f25d1817c75f6b896f493ac56faa8101f63e9c3d4a824962c5e3f4b0"
+    },
+    "B3.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B3.txt",
+     "sha256": "a290fa0cdf149fd5898710bdfe86ea2c9facea66fc3e8b6a33db332759cb6d7b"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:28Z",
+    "http": 200,
+    "url": "https://www.copyright.gov/policy/artificial-intelligence/",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B3.html",
+    "raw_sha256": "bcf0e004f25d1817c75f6b896f493ac56faa8101f63e9c3d4a824962c5e3f4b0",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B3.txt"
+    ],
+    "text_rule": "text extracted by the census's rule (fetch.py text_of: scripts and styles stripped, words kept)"
+   },
+   "kind": "Overview card (page fetched verbatim)",
+   "note": "URL by title and site (WebSearch); the page <title> is the card title.",
+   "names_operator": "yes (the Office)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "the study page (its notice 2023-08); read 2026-11-01"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 4",
+   "card": "Skadden, Arps, Slate, Meagher & Flom — Copyright Office Publishes Report on Copyrightability of AI-Generated Materials | Insights | Skadden, Arps, Slate, Meagher & Flom LLP",
+   "url": "https://www.skadden.com/insights/publications/2025/02/copyright-office-publishes-report",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 4
+    }
+   ],
+   "card_title": "Copyright Office Publishes Report on Copyrightability of AI-Generated Materials | Insights | Skadden, Arps, Slate, Meagher & Flom LLP",
+   "card_snippet": "Core Positions: Human authorship remains a strict requirement for copyrightability; entirely AI-generated works are uncopyrightable. Prompt Limitations: Enterin...",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B4.html",
+     "sha256": "fad27db2976a02730d1c21940960f47e1b9e3b721b97c28a746da5d7a0857796"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B4.txt",
+     "sha256": "bd27ac4183422a922b9defc7ff5c65c024759117e61a8ad6fad1ce1c9342f685"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:43Z",
+    "http": 200,
+    "url": "https://www.skadden.com/insights/publications/2025/02/copyright-office-publishes-report",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B4.html",
+    "raw_sha256": "fad27db2976a02730d1c21940960f47e1b9e3b721b97c28a746da5d7a0857796",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B4.txt"
+    ],
+    "text_rule": "text extracted by the census's rule (fetch.py text_of: scripts and styles stripped, words kept)"
+   },
+   "kind": "Overview card (page fetched verbatim)",
+   "note": "URL by title and site (WebSearch); the page <title> is the card title.",
+   "names_operator": "yes (the USCO)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "Skadden, 2025-02-04; read 2026-11-01"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 5",
+   "card": "Crowell & Moring LLP — U.S. Copyright Office Releases Third Report on AI and Copyright Addressing Training AI Models with Copyrighted Materials | Crowell & Moring LLP",
+   "url": "https://www.crowell.com/en/insights/client-alerts/us-copyright-office-releases-third-report-on-ai-and-copyright-addressing-training-ai-models-with-copyrighted-materials",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 5
+    }
+   ],
+   "card_title": "U.S. Copyright Office Releases Third Report on AI and Copyright Addressing Training AI Models with Copyrighted Materials | Crowell & Moring LLP",
+   "card_snippet": "Report: U.S. Copyright Office Third AI Report (May 9, 2025) addressing generative AI training on copyrighted works. Fair Use Analysis: Evaluates four statutory ...",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B5-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B5-403.html",
+     "sha256": "225f58a65de8f0e74710fe93e4d212fc7d4927ce6484a108d0a5eb2f3c8725b6"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:43Z",
+    "http": 403,
+    "url": "https://www.crowell.com/en/insights/client-alerts/us-copyright-office-releases-third-report-on-ai-and-copyright-addressing-training-ai-models-with-copyrighted-materials",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B5-403.html",
+    "raw_sha256": "225f58a65de8f0e74710fe93e4d212fc7d4927ce6484a108d0a5eb2f3c8725b6",
+    "result": "unreachable: HTTP 403, a bot check ('Just a moment...'); one request with the census's agent string; not retried with another agent or by any other route (BRIEF-NEW-ROW-AUTHORSHIP §3)",
+    "text": []
+   },
+   "kind": "Overview card; page refused; the card title and snippet stand as its only text",
+   "note": "URL by title and site (WebSearch).",
+   "names_operator": "yes, in the card (the Office)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "card snippet only (the Report of 2025-05-09); undated card"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 6",
+   "card": "WIPO — US Copyright Office on AI: Human creativity still matters, legally",
+   "url": "https://www.wipo.int/en/web/wipo-magazine/articles/us-copyright-office-on-ai-human-creativity-still-matters-legally-73696",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 6
+    }
+   ],
+   "card_title": "US Copyright Office on AI: Human creativity still matters, legally",
+   "card_snippet": "US Copyright Office: Requires human authorship for copyright; purely AI-generated works are uncopyrightable; AI-assisted modifications or selections may qualify...",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B6.html",
+     "sha256": "deb6e297cf34f60b1c8596c2254d2367014cdab9e75f86adf7079121273595bd"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B6.txt",
+     "sha256": "12fb58d41dfcf0f9809e7ad8e6ac9d1ecee072507c95db39f7d8da1d9b63860b"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:44Z",
+    "http": 200,
+    "url": "https://www.wipo.int/en/web/wipo-magazine/articles/us-copyright-office-on-ai-human-creativity-still-matters-legally-73696",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B6.html",
+    "raw_sha256": "deb6e297cf34f60b1c8596c2254d2367014cdab9e75f86adf7079121273595bd",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B6.txt"
+    ],
+    "text_rule": "text extracted by the census's rule (fetch.py text_of: scripts and styles stripped, words kept)"
+   },
+   "kind": "Overview card (page fetched verbatim)",
+   "note": "URL by title and site (WebSearch); the page <title> is the card title.",
+   "names_operator": "yes (by the Office's own staff: Miriam Lord, Chris Weston, Jalyce Mangum)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card 7",
+   "card": "Congress.gov — Generative Artificial Intelligence and Copyright Law | Congress.gov | Library of Congress",
+   "url": "https://www.congress.gov/crs-product/LSB10922",
+   "surfaced_by_T": [
+    {
+     "slug": "u-s-copyright-office-copyright-and-artificial-intelligence-aio-20261101",
+     "card": 7
+    }
+   ],
+   "card_title": "Generative Artificial Intelligence and Copyright Law | Congress.gov | Library of Congress",
+   "card_snippet": "Copyright Authorship: U.S. law requires human authorship for copyright protection; *Thaler v. Perlmutter* confirmed AI-generated works lacking human creative co...",
+   "card_note": "the registry's cite_list entry, verbatim (site, title, snip); the card's url is null in the registry and was found by title and site",
+   "files": {
+    "B7-403.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B7-403.html",
+     "sha256": "192f08dad8896a2a9535a783c3473f7529405e2a62b599f5e5efdc488ff08825"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-01T06:26:28Z",
+    "http": 403,
+    "url": "https://www.congress.gov/crs-product/LSB10922",
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "raw": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B7-403.html",
+    "raw_sha256": "192f08dad8896a2a9535a783c3473f7529405e2a62b599f5e5efdc488ff08825",
+    "result": "unreachable: HTTP 403, a bot check ('Just a moment...'); one request with the census's agent string; not retried with another agent or by any other route (BRIEF-NEW-ROW-AUTHORSHIP §3)",
+    "text": []
+   },
+   "kind": "Overview card; page refused; the card title and snippet stand as its only text",
+   "note": "URL by title and site (WebSearch: the CRS Legal Sidebar LSB10922, 'Generative Artificial Intelligence and Copyright Law'); copies of the PDF on congress.gov and on other hosts were not fetched, as routes around the refusal.",
+   "names_operator": "no (the card title and snippet name U.S. law and Thaler v. Perlmutter)",
+   "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, leesharks.com, machinemediation in the saved text, card title and snippet)",
+   "date": "card snippet only; undated card"
+  },
+  {
+   "id": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "Wikipedia: the record of absence and redirect; the census's Wikipedia source copyright-office-ai--wikipedia",
+   "card": "Wikipedia — no article on the initiative; \"Copyright and artificial intelligence\" redirects to Artificial intelligence and copyright",
+   "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_and_copyright",
+   "kind": "Wikipedia (reference pool, §3.1(a)); not surfaced by T",
+   "files": {
+    "B8.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.html",
+     "sha256": "7bd9785dfc31c6586850e387485fe75b4d4f7e8f3ea3f65d8799000581e2a2a9"
+    },
+    "B8.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.txt",
+     "sha256": "310bf08afe678b7aaf3e27df09cd9d739a844b16add7ae537af89a1c113d6036"
+    },
+    "B8.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.wiki",
+     "sha256": "87a69db331866bed99a8842d9d0f83ab883e58ed6da3a9ec42b6c8546f566ed8"
+    },
+    "B8-redirect.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8-redirect.wiki",
+     "sha256": "6a340850662d0714b1c8fc325c145e0ef1398c09d3332574be3beed03168455a"
+    },
+    "B8-404.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8-404.html",
+     "sha256": "4966e901fba94fb8b6058b0fef10b5a5743104049a65457b68bd0d19fe4d0516"
+    },
+    "B8-usco.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8-usco.wiki",
+     "sha256": "ed888bf4607554d89f15a0fdfab134f35cc1b023c24a1d9c037df0489c898be8"
+    }
+   },
+   "fetched": {
+    "census_copy": {
+     "src": "copyright-office-ai--wikipedia",
+     "sha256": "7bd9785dfc31c6586850e387485fe75b4d4f7e8f3ea3f65d8799000581e2a2a9",
+     "fetched": "2026-11-01T04:07:59Z",
+     "http": "200",
+     "copied_as": [
+      "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.html",
+      "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.txt"
+     ]
+    },
+    "lookups": [
+     {
+      "title": "Copyright_and_Artificial_Intelligence",
+      "url": "https://en.wikipedia.org/w/index.php?title=Copyright_and_Artificial_Intelligence&action=raw",
+      "http": 404,
+      "at": "2026-11-01T06:26:57Z",
+      "saved": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8-404.html"
+     },
+     {
+      "title": "Copyright_and_artificial_intelligence",
+      "url": "https://en.wikipedia.org/w/index.php?title=Copyright_and_artificial_intelligence&action=raw",
+      "http": 200,
+      "at": "2026-11-01T06:26:59Z",
+      "saved": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8-redirect.wiki",
+      "result": "#REDIRECT [[Artificial intelligence and copyright]] (R from modification)"
+     },
+     {
+      "title": "United_States_Copyright_Office",
+      "url": "https://en.wikipedia.org/w/index.php?title=United_States_Copyright_Office&action=raw",
+      "http": 200,
+      "at": "2026-11-01T06:27:01Z",
+      "saved": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8-usco.wiki",
+      "result": "the Office's article: no mention of artificial intelligence, AI, Thaler or human authorship (searched)"
+     },
+     {
+      "title": "Artificial_intelligence_and_copyright",
+      "url": "https://en.wikipedia.org/w/index.php?title=Artificial_intelligence_and_copyright&action=raw",
+      "http": 200,
+      "at": "2026-11-01T06:27:04Z",
+      "saved": "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.wiki",
+      "result": "wikitext of the census's rendered copy (sections 'Copyright status of AI-generated works' > 'United States'; 'Training AI with copyrighted data' > 'United States')"
+     }
+    ],
+    "agent": "Mozilla/5.0 (compatible; leesharks-authorship-census)",
+    "text": [
+     "datasets/negative-of-the-negative/v2/intake/copyright-office-ai-20261101/B8.txt"
+    ]
+   },
+   "names_operator": "yes (the Office, in the sections read)",
+   "names_archive": "no",
+   "surfaced_by_T": [],
+   "note": "No article on the initiative. The census's Wikipedia source is the general article, read at its United States sections; quotes are from B8.txt (the census's rendered copy) and, for the redirect, B8-redirect.wiki.",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page <title>",
+   "quote": "Copyright and Artificial Intelligence | U.S. Copyright Office",
+   "claim": "the page is titled with the initiative's name and the Office's",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "names",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F2": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 1 snippet",
+   "quote": "Initiative: U.S. Copyright Office AI examination (launched early 2023, notice of inquiry August 2023, 10,000+ comments by December 2023). Report: Multi-part ana...",
+   "claim": "card 1: the initiative launched early 2023, the notice in August 2023, over 10,000 comments by December 2023, a multi-part Report",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 1's snippet, whitespace-normalised"
+  },
+  "F3": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "main text ¶1 s1",
+   "quote": "Since launching an initiative in early 2023, the Copyright Office has been examining the copyright law and policy issues raised by artificial intelligence (AI), including the scope of copyright in AI-generated works and the use of copyrighted materials in AI training.",
+   "claim": "the Office's own statement of what the initiative is and examines",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F4": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "main text ¶1 s2",
+   "quote": "After hosting public listening sessions and webinars, the Office published a notice of inquiry in the Federal Register in August 2023, which received over 10,000 comments by December 2023.",
+   "claim": "listening sessions and webinars, then a notice of inquiry (August 2023) with over 10,000 comments by December 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F5": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Report on Copyright and Artificial Intelligence ¶1 s1–4",
+   "quote": "Copyright and Artificial Intelligence analyzes copyright law and policy issues raised by artificial intelligence (AI). This Report is being issued in several Parts. Part 1 was published on July 31, 2024, and addresses the topic of digital replicas. Part 2 was published on January 29, 2025, and addresses the copyrightability of outputs created using generative AI.",
+   "claim": "the Report, titled with the initiative's name, issued in Parts: Part 1 (digital replicas, 31 July 2024), Part 2 (copyrightability of generative AI outputs, 29 January 2025)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Report",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F6": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Report on Copyright and Artificial Intelligence ¶1 s5–6",
+   "quote": "On May 9, 2025, the Office released a pre-publication version of Part 3 in response to congressional inquiries and expressions of interest from stakeholders. A final version of Part 3 will be published in the future, without any substantive changes expected in the analysis or conclusions.",
+   "claim": "Part 3 released in pre-publication on 9 May 2025; a final version still to come, without substantive change expected (the stated limit)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "Part 3, pre-publication",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F7": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Announcements",
+   "quote": "August 30, 2023 - Copyright Office Issues Notice of Inquiry on Copyright and Artificial Intelligence … March 16, 2023 - Copyright Office Launches New Artificial Intelligence Initiative",
+   "claim": "the announcements date the launch 16 March 2023 and the notice of inquiry 30 August 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F8": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Announcements",
+   "quote": "July 31, 2024 - Copyright Office Releases Part 1 of Artificial Intelligence Report, Recommends Federal Digital Replica Law",
+   "claim": "Part 1's release recommended a federal digital replica law",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Part 1: digital replicas",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F9": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Past Events",
+   "quote": "April 19, 2023 – Literary Works, Including Software Listening Session (recording available) … Fall 2021 – Copyright Law and Machine Learning for AI: Where Are We and Where Are We Going? … Winter 2020 – Copyright in the Age of Artificial Intelligence",
+   "claim": "the page lists listening sessions by kind of work (among them literary works including software, 19 April 2023) and earlier events of Fall 2021 and Winter 2020",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "genealogy: earlier events and sessions",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F10": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Copyright Registration Guidance block",
+   "quote": "Copyright Registration Guidance for Works Containing AI-Generated Materials … Read Policy Statement … Federal Register Version, 88 Fed. Reg. 16,190 (Mar. 16, 2023)",
+   "claim": "the registration guidance, a policy statement, in the Federal Register at 88 Fed. Reg. 16,190 (16 March 2023)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration guidance",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F11": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Artificial Intelligence Study block",
+   "quote": "NOI Federal Register Version, 88 Fed. Reg. 59,942 (Aug. 30, 2023)",
+   "claim": "the notice of inquiry in the Federal Register at 88 Fed. Reg. 59,942, dated 30 August 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F12": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Registration Decisions for AI-Generated Materials",
+   "quote": "Review Board decision on SURYAST (December 11, 2023) Review Board Decision on Théâtre D'opéra Spatial (Sept. 5, 2023) Registration Decision on Zarya of the Dawn (Feb. 21, 2023) Review Board Decision on A Recent Entrance to Paradise (Feb. 14, 2022)",
+   "claim": "four decisions listed by work title and date",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration decisions",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F13": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Thaler v. Perlmutter block",
+   "quote": "District Court Decision Affirming Refusal of Registration … Court of Appeals Decision Affirming Refusal of Registration … Court of Appeals Order Denying Panel Rehearing En Banc U.S. Brief in Opposition to the Petition for a Writ of Certiorari",
+   "claim": "Thaler v. Perlmutter: decisions affirming the refusal of registration, the order denying rehearing en banc, and the government's brief opposing certiorari",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Thaler v. Perlmutter",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F14": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Allen v. Perlmutter block",
+   "quote": "Allen v. Perlmutter … U.S. Reply Brief and Response in Support of Cross-Motion for Summary Judgment",
+   "claim": "Allen v. Perlmutter: the government's reply brief and cross-motion",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Allen v. Perlmutter",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F15": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Statements to Congress",
+   "quote": "USCO Letter to Congress Providing Updates on its Artificial Intelligence Initiative (December 16, 2024) USCO Letter to Congress Providing Updates on its Artificial Intelligence Initiative (October 30, 2024) USCO Letter to Congress Providing Updates on its Artificial Intelligence Initiative (February 23, 2024)",
+   "claim": "letters updating Congress, 23 February to 16 December 2024",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "statements to Congress and related resources",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F16": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Related Resources",
+   "quote": "Compendium of U.S. Copyright Office Practices, Third Edition USCO Comment to NTIA on AI Accountability USCO Guidance Letter to The MLC USPTO on Artificial Intelligence WIPO on Artificial Intelligence Impact of Artificial Intelligence on IP Policy",
+   "claim": "related resources: the Compendium, comments and letters, the USPTO's and WIPO's AI pages",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "statements to Congress and related resources",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F17": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "footer",
+   "quote": "101 Independence Ave. S.E. … Library of Congress",
+   "claim": "the Office's address in the footer, which links the Library of Congress",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator",
+   "date": "the initiative's page (launched 2023-03-16; latest announcement 2025-01-29); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B1.txt (sha256 74edcbca86d30db9…), whitespace-normalised"
+  },
+  "F18": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "page <title> and issue line",
+   "quote": "NewsNet Issue 1060 | U.S. Copyright Office … Issue No. 1060 - January 29, 2025",
+   "claim": "NewsNet Issue 1060, dated 29 January 2025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Part 2: copyrightability",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F19": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 2 snippet",
+   "quote": "Report: U.S. Copyright Office Part 2 AI Report (January 29, 2025). Copyrightability: Generative AI outputs require sufficient human-authored expressive elements...",
+   "claim": "card 2: Part 2 (29 January 2025); outputs require sufficient human-authored expressive elements",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Part 2: copyrightability",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 2's snippet, whitespace-normalised"
+  },
+  "F20": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "release ¶1 s4–5",
+   "quote": "It concludes that the outputs of generative AI can be protected by copyright only where a human author has determined sufficient expressive elements. This can include situations where a human-authored work is perceptible in an AI output, or a human makes creative arrangements or modifications of the output, but not the mere provision of prompts.",
+   "claim": "Part 2's conclusion: protection only where a human author has determined sufficient expressive elements; prompts alone excluded",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "the human-authorship requirement",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F21": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "release ¶1 s6–7",
+   "quote": "The Office confirms that the use of AI to assist in the process of creation or the inclusion of AI-generated material in a larger human-generated work does not bar copyrightability. It also finds that the case has not been made for changes to existing law to provide additional protection for AI-generated outputs.",
+   "claim": "AI assistance and inclusion of AI material do not bar copyrightability; no case for changing the law to protect AI outputs",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F22": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "release ¶1 s3",
+   "quote": "The Office affirms that existing principles of copyright law are flexible enough to apply to this new technology, as they have applied to technological innovations in the past.",
+   "claim": "existing principles of copyright law apply to the technology",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F23": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "release ¶2 (the Register's statement)",
+   "quote": "“After considering the extensive public comments and the current state of technological development, our conclusions turn on the centrality of human creativity to copyright,” said Shira Perlmutter, Register of Copyrights and Director of the U.S. Copyright Office. … Where that creativity is expressed through the use of AI systems, it continues to enjoy protection. Extending protection to material whose expressive elements are determined by a machine, however, would undermine rather than further the constitutional goals of copyright.”",
+   "claim": "the Register: the conclusions turn on the centrality of human creativity; protecting machine-determined expression would undermine copyright's constitutional goals",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Office's rationale",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F24": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "release ¶4",
+   "quote": "The Report is being released in three Parts. Part 1 was published on July 31, 2024, and recommended federal legislation to respond to the unauthorized distribution of digital replicas that realistically but falsely depict an individual. The final, forthcoming Part 3 will address the legal implications of training AI models on copyrighted works, including licensing considerations and the allocation of any potential liability.",
+   "claim": "three Parts; Part 1 recommended federal legislation on digital replicas; Part 3, forthcoming as of 29 January 2025, on training",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Report",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F25": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "release ¶5",
+   "quote": "As announced last year, the Office also plans to supplement its March 2023 registration guidance (PDF, 188 KB) and update the relevant sections of the Compendium of U.S. Copyright Office Practices .",
+   "claim": "a plan to supplement the 2023 guidance and update the Compendium",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration guidance",
+   "date": "NewsNet Issue 1060, 2025-01-29; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B2.txt (sha256 3dd16e8a45a9e709…), whitespace-normalised"
+  },
+  "F26": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 3 snippet",
+   "quote": "Initiative: U.S. Copyright Office AI study analyzing copyright law, unresolved issues, and congressional action. Process: Notice of inquiry published August 20,",
+   "claim": "card 3: the study; the notice of inquiry 'published August 20,'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the study page (its notice 2023-08); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 3's snippet, whitespace-normalised"
+  },
+  "F27": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1",
+   "quote": "The U.S. Copyright Office is conducting a study regarding the copyright issues raised by artificial intelligence (AI). This study will collect information and policy views relevant to copyright law and policy. The Office will use this information to analyze the current state of the law, identify unresolved issues, and evaluate potential areas for congressional action.",
+   "claim": "the study page's own statement of the initiative's purpose",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "the study page (its notice 2023-08); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a290fa0cdf149fd5…), whitespace-normalised"
+  },
+  "F28": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶2 s1; the Report list",
+   "quote": "The Office published a notice of inquiry on August 20, 2023, with a deadline for initial written comments on October 30, 2023, and reply comments on December 6, 2023. … August 30, 2023 – Notice of Inquiry",
+   "claim": "the study page dates the notice 20 August 2023 in its prose and 30 August 2023 in its own list",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the study page (its notice 2023-08); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a290fa0cdf149fd5…), whitespace-normalised",
+   "marks": [
+    "internally_inconsistent: B3 ¶2 s1 'August 20, 2023' against B3's list 'August 30, 2023 – Notice of Inquiry'; B1 (F7, F11) gives 30 August"
+   ]
+  },
+  "F29": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶2 s2–3",
+   "quote": "The Office received over 10,000 comments by the December 2023 deadline. Initial and reply comments have been posted and are available through regulations.gov .",
+   "claim": "over 10,000 comments; comments available through regulations.gov",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "the study page (its notice 2023-08); read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B3.txt (sha256 a290fa0cdf149fd5…), whitespace-normalised"
+  },
+  "F30": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 4 snippet",
+   "quote": "Core Positions: Human authorship remains a strict requirement for copyrightability; entirely AI-generated works are uncopyrightable. Prompt Limitations: Enterin...",
+   "claim": "card 4: human authorship a strict requirement; entirely AI-generated works uncopyrightable",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 4's snippet, whitespace-normalised"
+  },
+  "F31": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶1–2",
+   "quote": "This is the second of three reports the USCO plans to release on the intersection of copyright and artificial intelligence. … These reports all emanate from a Notice of Inquiry (NOI) on copyright and AI that the USCO issued in August 2023.",
+   "claim": "Part 2 the second of three reports, all from the August 2023 notice",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F32": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "positions, bullet 1",
+   "quote": "Human authorship is a bedrock of copyrightability, and thus works entirely generated by AI are not copyrightable.",
+   "claim": "Part 2's first position, in the firm's account",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F33": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "positions, bullet 2",
+   "quote": "The mere selection of prompts, even if those prompts are detailed and are the product of some human effort, does not itself yield a copyrightable work, although this determination could change as technology evolves.",
+   "claim": "prompts alone do not yield a copyrightable work, a determination that could change as technology evolves (the limit)",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F34": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "positions, bullet 3",
+   "quote": "Where a work includes both human and AI-generated content, only the human contributions are potentially copyrightable.",
+   "claim": "in a mixed work only the human contributions are potentially copyrightable",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F35": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "positions, bullet 4",
+   "quote": "The use of AI as a tool to enhance the human creative process ( e.g ., for ideation or to edit an image) does not render the entire work uncopyrightable.",
+   "claim": "AI used as a tool does not render a work uncopyrightable",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F36": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶3",
+   "quote": "In March 2023, the USCO issued guidance on works containing material generated by AI , confirming its position that human authorship is required to register a work, and that if a work contains more than a de minimis amount of AI-generated material, the applicant must disclose that information and provide a brief statement describing the human author’s contribution.",
+   "claim": "the March 2023 guidance: human authorship required to register; more than de minimis AI material disclosed, with a statement of the human contribution",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "registration and disclosure",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F37": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶4 s2",
+   "quote": "registrations for hundreds of works incorporating some form of AI-generated material have been granted since the 2023 guidance was issued.",
+   "claim": "hundreds of registrations of works with AI-generated material since the 2023 guidance (as of February 2025)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration and disclosure",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F38": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Use of 'Expressive Inputs' ¶1",
+   "quote": "The position that the human-expressive elements of an output are protectible is consistent with the decision of the USCO Review Board to reject the copyright application in Sahni (December 2023) . In that matter, the applicant had taken his own photograph and used an AI tool apply a filter of Van Gogh’s Starry Night.",
+   "claim": "the firm names a December 2023 Review Board refusal by its applicant, Sahni",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration decisions",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F39": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Modifying or Arranging ¶2",
+   "quote": "However, the view held by the majority of the NOI commenters, and the one supported by the USCO, is that existing laws are adequate, and providing additional protection for AI-generated content could undermine human creativity and flood the market with low-quality works, ultimately harming the creative economy.",
+   "claim": "a sui generis right rejected: existing laws adequate, more protection could undermine human creativity",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Office's rationale",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F40": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "¶ on comparative analysis",
+   "quote": "The Report also includes a comparative analysis of the copyrightability of AI-generated works in various other jurisdictions, and concludes that countries that have addressed this issue “so far have agreed that copyright requires human authorship.”",
+   "claim": "Part 2's comparative analysis: countries so far agree on human authorship",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "other jurisdictions",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F41": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "closing ¶; disclaimer",
+   "quote": "The Report does not modify the positions the USCO has taken to date regarding the copyrightability of AI-generated works. … is not intended and should not be construed as legal advice.",
+   "claim": "Part 2 does not modify the Office's positions; the firm's memorandum is not legal advice (its limit)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Skadden, 2025-02-04; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B4.txt (sha256 bd27ac4183422a92…), whitespace-normalised"
+  },
+  "F42": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 5 snippet (page refused)",
+   "quote": "Report: U.S. Copyright Office Third AI Report (May 9, 2025) addressing generative AI training on copyrighted works. Fair Use Analysis: Evaluates four statutory ...",
+   "claim": "card 5: Part 3 (9 May 2025) on training; a fair use analysis of the statutory factors",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Part 3: training and fair use",
+   "date": "card snippet only (the Report of 2025-05-09); undated card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 5's snippet, whitespace-normalised"
+  },
+  "F43": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 6 snippet",
+   "quote": "US Copyright Office: Requires human authorship for copyright; purely AI-generated works are uncopyrightable; AI-assisted modifications or selections may qualify...",
+   "claim": "card 6: human authorship required; purely AI-generated works uncopyrightable; AI-assisted modifications or selections may qualify",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 6's snippet, whitespace-normalised"
+  },
+  "F44": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "byline and standfirst",
+   "quote": "By Miriam Lord , Associate Register of Copyrights and Director of Public Information and Education, US Copyright Office … The US Copyright Office in 2023 launched its initiative to examine the copyright law and policy issues raised by AI.",
+   "claim": "the article is by the Office's own staff, on the initiative launched in 2023",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F45": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "standfirst",
+   "quote": "You can’t copyright fully AI-generated work but you may be able to protect your sufficiently original selection and arrangement or modification of AI-output.",
+   "claim": "the Office's staff: fully AI-generated work cannot be copyrighted; original selection, arrangement or modification may be",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F46": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "interview, Weston ¶3",
+   "quote": "When it comes to copyrightability issues, including works containing AI-generated material, the Office is a kind of “natural laboratory” because our examiners deal with these issues daily.",
+   "claim": "the Office describes itself as a 'natural laboratory' for copyrightability",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F47": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "interview, Mangum on Randy Travis",
+   "quote": "The Office has registered more than a thousand works where applicants have followed our guidance to disclose and disclaim AI-generated material.",
+   "claim": "more than a thousand works registered under the guidance to disclose and disclaim (as of 24 April 2025)",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration and disclosure",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F48": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "pull quote",
+   "quote": "The difference is whether AI is enhancing human expression or is the source of the expressive choices.",
+   "claim": "the test: AI enhancing human expression against AI as the source of the expressive choices",
+   "modality": "interpretation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F49": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "interview, Mangum on digital replicas",
+   "quote": "We concluded there was an urgent need for a new federal right protecting all people – not just celebrities – from the unauthorized use of their likeness and voice.",
+   "claim": "Part 1's conclusion: a new federal right against unauthorized use of likeness and voice",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Part 1: digital replicas",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F50": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "interview, Weston on other countries",
+   "quote": "In China, a court recently recognized copyright in a picture created using AI, finding a human author exercised sufficient creativity in prompting the AI tool and then revising the output. And South Korea has registered an AI-created film as a compilation, based on the human creativity that went into the selection, coordination and arrangement of its AI-generated components.",
+   "claim": "China and South Korea on AI-created works",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "other jurisdictions",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F51": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "about the Office",
+   "quote": "The US Copyright Office is charged by statute with the administration of US Copyright law.",
+   "claim": "the Office's statutory charge",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "operator",
+   "date": "WIPO Magazine, 2025-04-24; read 2026-11-01",
+   "quote_ok": true,
+   "checked_against": "saved text B6.txt (sha256 12fb58d41dfcf0f9…), whitespace-normalised"
+  },
+  "F52": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card 7 snippet (page refused)",
+   "quote": "Copyright Authorship: U.S. law requires human authorship for copyright protection; *Thaler v. Perlmutter* confirmed AI-generated works lacking human creative co...",
+   "claim": "card 7: human authorship required; Thaler v. Perlmutter confirmed it",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "card snippet only; undated card",
+   "quote_ok": true,
+   "checked_against": "the card rail of the registry's transcript string (T1): card 7's snippet, whitespace-normalised"
+  },
+  "F53": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Wikipedia: title lookups (raw wikitext)",
+   "quote": "#REDIRECT [[Artificial intelligence and copyright]]",
+   "claim": "no article on the initiative: 'Copyright and Artificial Intelligence' HTTP 404; 'Copyright and artificial intelligence' redirects to the general article; 'United States Copyright Office' has no mention of artificial intelligence",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8-redirect.wiki (sha256 6a340850662d0714…), whitespace-normalised"
+  },
+  "F54": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Copyright status of AI-generated works, image caption",
+   "quote": "The United States Copyright Office has declared that works not created by a human author, like this \"selfie\" portrait taken by a monkey , are not eligible for copyright protection.",
+   "claim": "the Office has declared works not created by a human author ineligible",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised"
+  },
+  "F55": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United States ¶2",
+   "quote": "Other proponents argue that the Copyright Office is not taking a technology neutral approach to the use of AI or algorithmic tools. … For works using AI tools, the Copyright Office has made the test a different one i.e. whether there is no more than de minimis technological involvement.",
+   "claim": "a contested reading: the Office's test for AI tools is not technology neutral",
+   "modality": "contested",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the human-authorship requirement",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised"
+  },
+  "F56": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United States ¶3, blockquote (Théâtre D'opéra Spatial)",
+   "quote": "This difference in approach can be seen in the recent decision in respect of a registration claim by Jason Matthew Allen for his work Théâtre D'opéra Spatial created using Midjourney and an upscaling tool. … The Board finds that the Work contains more than a de minimis amount of content generated by artificial intelligence (\"AI\"), and this content must therefore be disclaimed in an application for registration. Because Mr. Allen is unwilling to disclaim the AI-generated material, the Work cannot be registered as submitted.",
+   "claim": "the Théâtre D'opéra Spatial decision, Jason Matthew Allen's claim: more than de minimis AI content must be disclaimed; refused for want of the disclaimer",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "registration and disclosure",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised"
+  },
+  "F57": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United States ¶6",
+   "quote": "The Copyright Office further clarified in January 2025 that AI-assisted works where the creative expression of the human remains evident in the work can be copyrighted … Works \"where the expressive elements are determined by a machine\" still remain uncopyrightable. … Following this guidance, the Copyright Office registered \"A Single Piece of American Cheese\", the first visual artwork composed solely of AI generated outputs as a composite work in January 2025. … The basis for the copyright involved arguing that human-driven selection, arrangement, and coordination involved in the creative process on a single work constituted sufficient human authorship to merit the copyright.",
+   "claim": "January 2025 clarification; A Single Piece of American Cheese registered as a composite work of AI outputs on human selection and arrangement",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration and disclosure",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised"
+  },
+  "F58": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United States ¶7",
+   "quote": "Both the federal and circuit courts in the District of Columbia have upheld the Copyright Office's refusal to register copyrights for works generated solely by machines … the Supreme Court of the United States has denied hearing challenges to the Copyright Office's decision.",
+   "claim": "the D.C. courts upheld the refusal; the Supreme Court denied review (as of March 2026)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Thaler v. Perlmutter",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised"
+  },
+  "F59": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United States ¶8",
+   "quote": "following an August 2023 ruling in the case Thaler v. Perlmutter . In this case, the Patent Office denied grant to patents created by Stephen Thaler's AI program, DABUS due to the lack of a \"natural person\" on the patents' list of inventors.",
+   "claim": "Wikipedia places Thaler v. Perlmutter in patent law (DABUS)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "Thaler v. Perlmutter",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised",
+   "marks": [
+    "contradicts_primary: B1 holds Thaler v. Perlmutter as a case over the 'Refusal of Registration' (F13), the Copyright Office's; the DABUS patent refusals are a distinct matter"
+   ]
+  },
+  "F60": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United Kingdom ¶3",
+   "quote": "In October, 2023, The U.S. Copyright Office published a notice of inquiry and request for comments following its 2023 Registration Guidance.",
+   "claim": "Wikipedia dates the notice of inquiry October 2023",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "launch and the notice of inquiry",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised",
+   "marks": [
+    "contradicts_primary: B1 'August 30, 2023 - Copyright Office Issues Notice of Inquiry' and '88 Fed. Reg. 59,942 (Aug. 30, 2023)' (F7, F11)"
+   ]
+  },
+  "F61": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Training AI with copyrighted data, United States ¶4",
+   "quote": "The U.S. Copyright Office released a report that included review of public comment on matters of AI. Among other topics, the report addressed concerns about fair use of training materials, and considered that two of the fair use factors could be of concern.",
+   "claim": "Part 3's fair use analysis, in Wikipedia's account: two factors of concern",
+   "modality": "attributed",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "Part 3: training and fair use",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised"
+  },
+  "F62": {
+   "source": "B8",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "United States ¶5",
+   "quote": "The U.S. Copyright Office published a Rule in March 2023 on a range of issues related to the use of AI, where they stated:",
+   "claim": "Wikipedia calls the March 2023 guidance a Rule",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "registration guidance",
+   "date": "Wikipedia as read 2026-11-01 (the census copy)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 310bf08afe678b7a…), whitespace-normalised",
+   "marks": [
+    "contradicts_primary: B1 gives the guidance as a policy statement ('Read Policy Statement', F10)"
+   ]
+  }
+ },
+ "field_sources": {
+  "B1": "Copyright Office (.gov) — Copyright and Artificial Intelligence | U.S. Copyright Office",
+  "B2": "Copyright Office (.gov) — NewsNet Issue 1060 | U.S. Copyright Office",
+  "B3": "Copyright Office (.gov) — Artificial Intelligence Study | U.S. Copyright Office",
+  "B4": "Skadden, Arps, Slate, Meagher & Flom — Copyright Office Publishes Report on Copyrightability of AI-Generated Materials | Insights | Skadden, Arps, Slate, Meagher & Flom LLP",
+  "B5": "Crowell & Moring LLP — U.S. Copyright Office Releases Third Report on AI and Copyright Addressing Training AI Models with Copyrighted Materials | Crowell & Moring LLP",
+  "B6": "WIPO — US Copyright Office on AI: Human creativity still matters, legally",
+  "B7": "Congress.gov — Generative Artificial Intelligence and Copyright Law | Congress.gov | Library of Congress",
+  "B8": "Wikipedia — no article on the initiative; \"Copyright and artificial intelligence\" redirects to Artificial intelligence and copyright"
+ }
+}

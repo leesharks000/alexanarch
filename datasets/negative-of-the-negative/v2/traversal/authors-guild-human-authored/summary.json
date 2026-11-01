@@ -1,0 +1,92 @@
+{
+ "row": "authors-guild-human-authored",
+ "address": "Authors Guild Human Authored Certification",
+ "entity": "Human Authored Certification (authorsguild.org/human-authored), the Authors Guild's certification of books whose text was written by a human, with its registered (or pending) certification mark, its licensing agreement and its public database of certified titles by registration number; launched in beta for Guild members in January 2025 and expanded to all authors of books published in the United States on 2 March 2026; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/authors-guild-human-authored)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "authors-guild-human-authored",
+  "address": "Authors Guild Human Authored Certification",
+  "entity": "Human Authored Certification (authorsguild.org/human-authored), the Authors Guild's certification of books whose text was written by a human, with its registered (or pending) certification mark, its licensing agreement and its public database of certified titles by registration number; launched in beta for Guild members in January 2025 and expanded to all authors of books published in the United States on 2 March 2026; formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/authors-guild-human-authored)",
+  "row_type": "C (a public entity on which the archive bears: a certification and public database of human authorship; an entity of the leesharks.com apparatus authorship census, held there as a counterposition)",
+  "aliases": [
+   {
+    "pattern": "\\bHuman[- ]Authored\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bAuthors Guild\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bauthorsguild(\\.org)?\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bHuman Author(ed)? certification\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "certifications, seals and labels of human authorship",
+    "pattern": "\\b(Created by Humans|Books by People|Verify My Writing|Society of Authors|certif\\w* (of )?human|human[- ](written|authorship) (certif\\w*|seal|label\\w*|mark))\\b",
+    "flags": "i",
+    "basis": "field: card 5 (Publishers Weekly, 2026-03-04: 'The certification is not the only program developed to give readers confidence that they are reading human-generated work. In June 2024, Created by Humans launched … In 2025, Books by People started in the U.K.'); card 3 (Jane Friedman, 2026-03-17: 'competing efforts to certify human-written work, such as Verify My Writing'; 'the UK's Society of Authors has partnered up on it'); card 2 (FAQ: 'For books published in the United Kingdom, visit the Society of Authors'). The census's area for the entity, 'governance', and its question ('boundary assertion: whether an author has certified that a book's text was written by a human')."
+   },
+   {
+    "term": "detection of AI-generated text",
+    "pattern": "\\b(AI[- ]detect\\w*|detect\\w* (of )?AI[- ]generated|Pangram)\\b",
+    "flags": "i",
+    "basis": "field: card 2 (FAQ: 'we are not aware of any truly reliable way to test whether a work includes AI-generated material'; 'in the future we may also purchase AI detection software'); card 3 (Friedman: 'Pangram, considered the industry leader in AI detection'; Rasenberger: 'no AI detection tool exists today that is sufficiently accurate'); card 5 (PW: 'no reliable detection method currently exists'). The census's negative tag for the entity ('NOT a test or detection of AI text')."
+   }
+  ],
+  "classes_note": "Two classes, each stated by a field source at the locus given and each the census's own area, question or negative tag for the entity: (1) certifications, seals and labels of human authorship, among which the cards place the entity (cards 2, 3, 5); (2) detection of AI-generated text, which the entity's own FAQ and the cards state it does not perform and the census's negative tags distinguish it from (cards 2, 3, 5). The census's anchors, #940 (EA-HETERONYMY-01) and #1722 (AI Calls You Fake), are read at the passages that bear on the entity's kind (the civil bearer and the name, machine participation and its declaration, the credential, the verdict of fakeness and machine origin, the existence tax), by the brief's rule (BRIEF-NEW-ROW-AUTHORSHIP, Substitutions 6). 'Human Authored' is searched case-sensitively as the program's name; lower-case 'human-authored' is the general phrase and is not an alias.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md with the three v09 briefs it names; address \"Authors Guild Human Authored Certification\" (authors-guild-human-authored-certification-aio-20261101, OBS-98ba77f48a52, ADDR-56665cc3c367), Google AI Overview (expanded), signed out, incognito. The archive's own records of the entity (the Capture Registry's findings, reading and analysis at the capture; the leesharks.com authorship census record) are ledgered beside the deposits as CAP-1-NN and LS-NN. Second pass: one citation hop forward and back from the deposits admitted by reading (#729, #940, #1540, #1611, #1722).",
+  "hop_from": [
+   729,
+   940,
+   1540,
+   1611,
+   1722
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 19,
+  "D_deposits": 3,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 8,
+  "O_class": 15,
+  "O_deposits": 5,
+  "H_candidates": 96
+ },
+ "per_deposit": {
+  "D": {
+   "127": 1,
+   "729": 9,
+   "1369": 9
+  },
+  "R": {},
+  "O": {
+   "302": 5,
+   "729": 6,
+   "1369": 6,
+   "1540": 5,
+   "1611": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "367bfcca6f854f1973bea16addd1db6c5dc2f6285e735116201b2047f0af6c06",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "b2366fd4bdb8f86c510a32f70ba624e4720fb3aa802d13aca082ccdd2a3c7e43",
+  "candidates-H.jsonl": "ec4e4756c2d89304a13df71930688e287abccf91a00b51ee433e05255577d48c"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

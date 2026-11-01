@@ -1,0 +1,120 @@
+{
+ "row": "ubuweb",
+ "address": "UbuWeb",
+ "entity": "UbuWeb (ubu.com): in its own words 'the internet's largest archive of free avant-garde materials', founded in November 1996 'initially as a repository for visual, concrete and, later, sound poetry', a 'distribution center for hard-to-find, out-of-print and obscure materials, transferred digitally to the web', run 'solely on a volunteer basis', 'a completely independent site', which leaves 'The copyrights' with 'the copyright holders' (its home page and FAQ); created by the poet Kenneth Goldsmith in 1996 (Wikipedia); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/ubuweb)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "ubuweb",
+  "address": "UbuWeb",
+  "entity": "UbuWeb (ubu.com): in its own words 'the internet's largest archive of free avant-garde materials', founded in November 1996 'initially as a repository for visual, concrete and, later, sound poetry', a 'distribution center for hard-to-find, out-of-print and obscure materials, transferred digitally to the web', run 'solely on a volunteer basis', 'a completely independent site', which leaves 'The copyrights' with 'the copyright holders' (its home page and FAQ); created by the poet Kenneth Goldsmith in 1996 (Wikipedia); formalized in the leesharks.com apparatus authorship census record of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/ubuweb)",
+  "row_type": "C (a public entity on which the archive bears: an independent online archive of avant-garde materials; an entity of the leesharks.com apparatus authorship census)",
+  "aliases": [
+   {
+    "pattern": "\\bUbu ?Web\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bubu\\.com\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\b/ubu Editions\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bTellus Audio Cassette\\b",
+    "flags": "i"
+   }
+  ],
+  "classes": [
+   {
+    "term": "archives of avant-garde and experimental work (the record of experimental writing, sound, visual and procedural work)",
+    "pattern": "\\b(avant-garde (archive|materials|librar\\w+)|archives? of (the )?(avant-garde|experimental (writing|poetry|literature|work))|(sound|concrete|visual) poetry archive|experimental (writing|poetry) archive|digital library of)\\b",
+    "flags": "i",
+    "basis": "field: B5 (ubu.com, home: 'Founded in 1996, UbuWeb is the internet's largest archive of free avant-garde materials.'); B6 (FAQ: 'initially as a repository for visual, concrete and, later, sound poetry'); B1 (Wikipedia, lead: 'a digital library of freely downloadable avant-garde art'). The census's area for the entity, 'avant-garde-archives' ('Avant-garde and experimental archives: the record of experimental writing, sound, visual and procedural work, and of its small presses', census.json areas; rows[slug == 'ubuweb'].areas)."
+   },
+   {
+    "term": "transmission by copying (holding and distributing copies of others' works, rights left with their holders)",
+    "pattern": "\\b(transmission through copying|copyists?|out[- ]of[- ]print|shadow librar(y|ies)|copyright holders?|without permission|distribution cent(er|re))\\b",
+    "flags": "i",
+    "basis": "field: B6 (FAQ: 'UbuWeb functions as a distribution center for hard-to-find, out-of-print and obscure materials, transferred digitally to the web.'; 'The copyrights belong to the copyright holders, not us.'; 'should an artist find their material posted on UbuWeb without permission'); B1 (Wikipedia, reference 6: 'UbuWeb, pirate shadow library, is back'). The census record's holder ('UbuWeb holds copies only') and method (rows[slug == 'ubuweb'].record.holder, .method)."
+   },
+   {
+    "term": "name-holding in an aggregator (under what name an archive holds a work: pseudonym, heteronym, collective or civil name)",
+    "pattern": "\\b(civil[- ]name (reduction|attribution|regime)|name authorit\\w+|attribution regimes?|under what name|reduction to (a |the )?civil identity)\\b",
+    "flags": "i",
+    "basis": "archive: the census's organizing question ('How is authorship made, named, distributed, attributed and sustained across persons, personas, collectives and machine participation, and what is lost when those relations are collapsed?', census.json organizing_question) and its record.name for the entity ('not recorded: the saved sources show no author page and no policy on pseudonyms, heteronyms or collective names', rows[slug == 'ubuweb'].record.name); the anchor #940 (EA-HETERONYMY-01). The field states no naming policy."
+   },
+   {
+    "term": "the independent and unaccredited resource (the class on which #1722 says the existence tax falls)",
+    "pattern": "\\b(existence tax|the independent, the new|unaccredited|hyper-niche)\\b",
+    "flags": "i",
+    "basis": "field: B6 (FAQ: 'No. UbuWeb is a completely independent site.'); B1 (Wikipedia, Infrastructure: 'UbuWeb is not affiliated to any academic institution'). Archive: #1722 Part Seven ('The tax falls on the independent, the new, the unaccredited, the heteronymous, the small'), the census's anchor."
+   }
+  ],
+  "classes_note": "Four classes, each sourced by locus before the pass. The first two are the field's own kinds for the entity (avant-garde archive; distribution of copies with rights left to their holders); the third is the census's question, whose membership is the archive's (the census record and its anchor #940), the field stating no naming policy; the fourth joins the field's 'completely independent site' to #1722's class of the independent. The archive's work on conceptual writing (Kenneth Goldsmith's uncreative writing, in the deposits at data/texts/AXN-0233, AXN-032C, AXN-0434, and #1715 and #1717) concerns UbuWeb's creator and his poetics, and enters only if a sentence says something of UbuWeb or of its classes; the string pass is run with the creator's name as no alias. First pass (2026-11-01): the name-holding class, run with 'pseudonym' and 'heteronym' as terms, returned 4,351 sentences in 686 deposits, the archive's own heteronymic practice; the pattern was narrowed to the attribution-regime terms of #940 before reading, and the pass rerun.",
+  "exclude_deposits": [],
+  "notes": "Census anchors #940 and #1722 read at the passages bearing on the entity's kinds (BRIEF-NEW-ROW-AUTHORSHIP §6). No deposit names UbuWeb or ubu.com (grep over data/texts, 2026-11-01).",
+  "hop_from": [
+   940,
+   1722
+  ]
+ },
+ "texts_scanned": 1720,
+ "counts": {
+  "D_sentences": 0,
+  "D_deposits": 0,
+  "R_sentences": 0,
+  "R_deposits": 0,
+  "O_direct": 0,
+  "O_class": 73,
+  "O_deposits": 28,
+  "H_candidates": 21
+ },
+ "per_deposit": {
+  "D": {},
+  "R": {},
+  "O": {
+   "28": 2,
+   "56": 2,
+   "162": 1,
+   "612": 1,
+   "639": 2,
+   "731": 1,
+   "832": 1,
+   "940": 14,
+   "969": 2,
+   "970": 2,
+   "971": 2,
+   "1093": 1,
+   "1094": 8,
+   "1101": 2,
+   "1162": 2,
+   "1211": 1,
+   "1216": 1,
+   "1217": 1,
+   "1400": 1,
+   "1593": 1,
+   "1606": 4,
+   "1678": 1,
+   "1680": 1,
+   "1707": 1,
+   "1721": 8,
+   "1722": 8,
+   "1723": 1,
+   "1724": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-R.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "candidates-O.jsonl": "91e0f376467d0fc6866e211f67a85d5621369b90b66eda16361199fc3d6ae7f8",
+  "candidates-H.jsonl": "9d6d38a94ff69af606744f8150edfaf49798ceeab1659c3d07c3196e99ec4a7a"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11070
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

@@ -1,0 +1,75 @@
+{
+  "row": "orcid",
+  "address": "ORCID",
+  "entity": "ORCID (Open Researcher and Contributor ID; orcid.org; ORCID, Inc.): a nonproprietary persistent identifier for authors and contributors of scholarly communication, with the registry, records and services of the nonprofit that issues it (Wikipedia; its About page); formalized in the leesharks.com apparatus authorship census of 2026-11-01 (https://www.leesharks.com/apparatus/aggregators/orcid-names)",
+  "row_type": "C (public entity on which the archive bears: an identity registry for scholarly contributors; an entity of the leesharks.com apparatus authorship census, host relation 'infrastructure')",
+  "aliases": [
+    {
+      "pattern": "\\bORCID\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\bOpen Researcher (and|&) Contributor (ID|Identifier)\\b",
+      "flags": "i"
+    },
+    {
+      "pattern": "\\borcid\\.org\\b",
+      "flags": "i"
+    }
+  ],
+  "classes": [
+    {
+      "term": "persistent identifiers for persons (author and researcher identifiers, identity registries)",
+      "pattern": "\\b(persistent identifiers? (for|of) (people|persons|researchers|authors|contributors|individuals)|(author|researcher|contributor|person(al)?) identifiers?|name identifiers?|identity registr(y|ies)|researcher ids?)\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia, lead: 'a nonproprietary persistent identifier , in the form of an alphanumeric code, to uniquely identify authors and contributors of scholarly communication'; 'It provides a persistent identity for humans'); B5 (Stanford guide: 'It's a registry of unique persistent identifiers for researchers.'); B10 (About ORCID: 'providing a unique, persistent identifier for individuals'). The census's evidence_kind 'identity registry', record_type 'registry', area 'attribution-and-credit' and host_relation 'infrastructure' for the entity (census.json rows[slug == 'orcid-names'])."
+    },
+    {
+      "term": "author name disambiguation (the name-ambiguity problem: one person under several names, several persons under one name)",
+      "pattern": "\\b(name ambiguity|author disambiguation|(author|entity|name|person) (name )?disambiguation|disambiguat(e|es|ing|ion) (of )?(authors|persons|names|people))\\b",
+      "flags": "i",
+      "basis": "field: B2 (Wikipedia: 'to resolve the author name ambiguity problem in scholarly communication'; names 'are not unique, they can change ( such as with marriage )'); B5 (Stanford: 'Author Disambiguation'; 'People use different versions of their name during their career.'); B7 (Directive Publications: 'Disambiguation — it separates you from other researchers with the same name, and from variations of your own name'). The census's name_problem evidence and answers field for the entity."
+    },
+    {
+      "term": "civil-name attribution (identity infrastructure that binds authorship to a legal or civil person)",
+      "pattern": "\\b(civil[- ]name|civil identit(y|ies)|legal name|legal identity|attribution regimes?|identity infrastructure)\\b",
+      "flags": "i",
+      "basis": "archive: the census's ls_reading for the entity ('whether that resolution keeps a chosen name as the author's own or reduces it to the civil person is the open question #940 asks of identity infrastructure', census.json rows[slug == 'orcid-names'].ls_reading) and its does_not_answer ('whether an identifier corresponds to one civil person or to an authorial function'); the field states the identity as 'a persistent identity for humans' (B2) and 'tied to an individual researcher's or contributor's name' (B4) without the archive's category: membership in this class is the archive's, and is marked so wherever it is used."
+    }
+  ],
+  "classes_note": "Three classes, each sourced by locus before the pass. (1) persistent identifiers for persons, the field's own kind (B2, B5, B10; the census's evidence_kind 'identity registry', record_type 'registry', area 'attribution-and-credit'); (2) author name disambiguation, the field's own function (B2, B5, B7; the census's name_problem evidence and answers); (3) civil-name attribution, whose membership is the archive's (the census's ls_reading and does_not_answer), the field stating the identity as 'a persistent identity for humans' and 'tied to an individual researcher's or contributor's name' without the category: marked so wherever used. The aliases are the entity's names (ORCID; Open Researcher and Contributor ID) and host (orcid.org); 'ORCID, Inc.' is caught by the first. ORCHID (the hatnote's homonym) and ISNI (a distinct identifier system) are not aliases. The archive's own iD (0009-0000-1599-0703) is caught by the alias wherever it stands beside the name; its bare appearances in bylines and metadata are bare mentions. #940 and #1722, the census's anchors, are read at the passages bearing on the entity's kind (BRIEF-NEW-ROW-AUTHORSHIP §6).",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-01, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-AUTHORSHIP.md (with the v09 AGGREGATOR, LABOR and LEFT briefs); address 'ORCID' (orcid-aio-20261101, OBS-e3aa5078162e, ADDR-ae1b40c57365), Google AI Overview (expanded), signed out, incognito. Second pass: one citation hop forward and back from the deposits admitted by reading.",
+  "hop_from": [
+    940,
+    1722,
+    1009,
+    135,
+    1446,
+    1429,
+    823,
+    1210,
+    1377,
+    195,
+    196,
+    928,
+    794,
+    147,
+    868,
+    1075,
+    79,
+    703,
+    1073,
+    126,
+    402,
+    49,
+    115,
+    754,
+    996,
+    96,
+    162,
+    792,
+    922,
+    84
+  ]
+}

@@ -1,0 +1,457 @@
+{
+ "row": "authors-guild-human-authored",
+ "pass": "first reading, 2026-11-01; second pass with one citation hop",
+ "procedure": "EA-NEGONT-02 v0.10 (#1726) §3.4 D/R/O (working; not frozen). Admission by reading: D, a claim on the Human Authored certification with the entity named; R, a relation the archive states between the entity and an archive object; O, an archive category applied to a class the field and the census source for the entity (certifications, seals and labels of human authorship: cards 2, 3, 5, the census's area 'governance' and question). The second configured class, detection of AI-generated text, is a class the field and the census distinguish the entity from (its FAQ: no reliable test; the census's negative tag 'NOT a test or detection of AI text'); candidates on it are admitted only where the deposit's object is a certification of human composition. The census's anchors #940 and #1722 read at the passages that bear on the entity's kind (the civil name, the credential, pseudonym and heteronym, declared machine participation; the existence tax, the four questions, the verdict of fakeness), by BRIEF-NEW-ROW-AUTHORSHIP Substitutions 6.",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-01",
+ "verdicts": [
+  {
+   "dep": 729,
+   "strata": [
+    "D",
+    "O"
+   ],
+   "reason": "Provenance Is What Authorship Must Endure (EA-MPAI-PROVENANCE-02): names the certification and places it as Position 1 (AI-free human authorship), with its value and its limit (§3), finds in it a binary frame (§8.2), and closes on the label (§13); its own invariant and Position 4 (§0, §3) and its account of the archive's corpus (§13) are the archive's terms the reading sets beside it; detection paradigm (§8.1)",
+   "claims": [
+    "D729-01",
+    "D729-02",
+    "D729-03",
+    "D729-04",
+    "D729-05",
+    "D729-06",
+    "D729-07",
+    "D729-08",
+    "D729-09",
+    "D729-10"
+   ],
+   "cands": [
+    "D0002",
+    "D0003",
+    "D0004",
+    "D0005",
+    "D0006",
+    "D0007",
+    "D0008",
+    "D0009",
+    "D0010",
+    "O0006",
+    "O0007",
+    "O0008",
+    "O0009",
+    "O0010",
+    "O0011"
+   ]
+  },
+  {
+   "dep": 940,
+   "strata": [
+    "O"
+   ],
+   "reason": "the census's anchor, read at the loci that bear on the entity's kind (no string candidate): the civil-name regime and legal-name attribution of human authorship (§1 ¶2), the credential as license to conceal (§1 ¶4), the function that looks like fraud (§1 ¶7), pseudonymy and the heteronym attributable through the civil bearer (§2), the Assembly Chorus and machine-witness functions (§5), the boundary at undeclared machine assistance and the condition of legal responsibility (§6); O-class (certifications of human authorship: the name and the identity on which they rest)",
+   "claims": [
+    "O940-01",
+    "O940-02",
+    "O940-03",
+    "O940-04",
+    "O940-05",
+    "O940-06",
+    "O940-07",
+    "O940-08"
+   ],
+   "cands": [],
+   "cands_note": "read at the loci; no string candidate (the deposit does not name the entity)"
+  },
+  {
+   "dep": 1722,
+   "strata": [
+    "O"
+   ],
+   "reason": "the census's second anchor, read at the loci on the existence tax (Start with one search), the four questions and the swap (Part One), the heteronym against the Sybil attack (Part Five §10), the adequate answer (Part Six), who pays (Part Seven) and the maker's remedy (Part Eight); O-class; the census reads the certificate as answering #1722's verdict of fakeness (LS-17)",
+   "claims": [
+    "O1722-01",
+    "O1722-02",
+    "O1722-03",
+    "O1722-04",
+    "O1722-05",
+    "O1722-06",
+    "O1722-07"
+   ],
+   "cands": [],
+   "cands_note": "read at the loci; no string candidate"
+  },
+  {
+   "dep": 1540,
+   "strata": [
+    "O"
+   ],
+   "reason": "The Certified Center: the archive's categories (Retroactive Classifier Standing; the certified absence of machine mediation) applied to a human-only authorship policy enforced by a classifier, a certification of human composition (class 1), with the paper's own declaration of production and its disambiguation; reached by the class pattern on detection; the composition holds the condition that the Guild's program enforces by licence and contemplates detection software (F28, F33)",
+   "claims": [
+    "D1540-01",
+    "D1540-02",
+    "D1540-03",
+    "D1540-04"
+   ],
+   "cands": [
+    "O0018",
+    "O0019",
+    "O0020",
+    "O0021",
+    "O0022"
+   ]
+  }
+ ],
+ "admitted_surface": [
+  {
+   "dep": "capture",
+   "url": "https://www.alexanarch.org/captures/authors-guild-human-authored-certification-aio-20261101/",
+   "reason": "the Capture Registry's findings, reading, analysis, query note and PER note for the entity's capture (OBS-98ba77f48a52, 2026-11-01), the archive's statements on the entity's composition",
+   "claims": [
+    "CAP-1-01",
+    "CAP-1-02",
+    "CAP-1-03",
+    "CAP-1-04",
+    "CAP-1-05",
+    "CAP-1-06",
+    "CAP-1-07",
+    "CAP-1-08"
+   ]
+  },
+  {
+   "dep": "LS",
+   "url": "https://www.leesharks.com/apparatus/aggregators/authors-guild-human-authored (source: /home/claude/fleet/leesharks.com/data/authorship-census/census.json rows[slug == 'authors-guild-human-authored'], organizing_question, admission_rule; rows/authors-guild-human-authored.py)",
+   "reason": "the leesharks.com authorship census record of the entity (editor Lee Sharks, compiled and revised 2026-11-01, schema 1.1): its kind, host relation, question, unit, record, method, coverage, count, holdings, limits, answers, negative tags, lifecycle, unchecked items and ls_reading; the fields that restate the program page are one lineage with B1",
+   "claims": [
+    "LS-01",
+    "LS-02",
+    "LS-03",
+    "LS-04",
+    "LS-05",
+    "LS-06",
+    "LS-07",
+    "LS-08",
+    "LS-09",
+    "LS-10",
+    "LS-11",
+    "LS-12",
+    "LS-13",
+    "LS-14",
+    "LS-15",
+    "LS-16",
+    "LS-17",
+    "LS-18",
+    "LS-19",
+    "LS-20",
+    "LS-21",
+    "LS-22"
+   ]
+  }
+ ],
+ "not_admitted": [
+  {
+   "dep": [
+    127
+   ],
+   "reason": "SPXI-TLP v2.2: 'the Authors Guild settlement framework' in a list of unresolved legal questions; a different matter of the Guild (litigation over training), no claim on the certification",
+   "cands": [
+    "D0001"
+   ]
+  },
+  {
+   "dep": [
+    1369
+   ],
+   "reason": "lineage instance (§3.6): the same packet as #729 (EA-MPAI-PROVENANCE-02 v1.1, deposited 2026-05-14), its text differing only in code fences and one inline code mark; kept in the provenance graph under #729",
+   "cands": [
+    "D0011",
+    "D0012",
+    "D0013",
+    "D0014",
+    "D0015",
+    "D0016",
+    "D0017",
+    "D0018",
+    "D0019",
+    "O0012",
+    "O0013",
+    "O0014",
+    "O0015",
+    "O0016",
+    "O0017",
+    "H0046",
+    "H0047"
+   ]
+  },
+  {
+   "dep": [
+    302
+   ],
+   "reason": "ASDF: AI detectors 'flagging complex human writing as \"AI\"'; its object is detection, a class the field and the census distinguish the entity from (F28, F70; LS-18), and it says nothing of a certification of human composition",
+   "cands": [
+    "O0001",
+    "O0002",
+    "O0003",
+    "O0004",
+    "O0005"
+   ]
+  },
+  {
+   "dep": [
+    1611
+   ],
+   "reason": "the negative ontology notebook: 'human-written' and certification in the training ecology (the pristine fallacy; three coupled recursions); its certification is of training data and model outputs, and the class membership of the entity there is not sourced by the field or by the archive",
+   "cands": [
+    "O0023"
+   ]
+  },
+  {
+   "dep": [
+    1,
+    7,
+    92,
+    104,
+    105,
+    112,
+    163,
+    186,
+    188,
+    191,
+    194,
+    198,
+    204,
+    210,
+    349,
+    482,
+    524,
+    561,
+    643,
+    673,
+    725,
+    739,
+    781,
+    790,
+    800,
+    801,
+    825,
+    828,
+    854,
+    855,
+    862,
+    931,
+    932,
+    933,
+    934,
+    935,
+    939,
+    1023,
+    1068,
+    1082,
+    1107,
+    1127,
+    1190,
+    1232,
+    1370,
+    1384,
+    1386,
+    1422,
+    1426,
+    1480,
+    1483,
+    1484,
+    1523,
+    1536,
+    1541,
+    1543,
+    1546,
+    1547,
+    1554,
+    1556,
+    1573,
+    1574,
+    1577,
+    1578,
+    1580,
+    1612,
+    1613,
+    1614,
+    1615,
+    1616,
+    1617,
+    1627,
+    1630,
+    1634,
+    1643,
+    1664,
+    1665,
+    1666,
+    1671,
+    1680,
+    1684,
+    1685,
+    1687,
+    1690,
+    1701,
+    1703,
+    1714,
+    1717,
+    1721,
+    1723,
+    1724,
+    1725,
+    1726
+   ],
+   "reason": "hop candidates (one citation hop forward and back from #729, #940, #1540, #1611 and #1722): each read by a scan of its text for the entity's names and kind (Human Authored, human-authored or human-written, certification, AI-generated, identity verification, civil name, AI-free), and the passages the scan returned read in context; none makes a claim on the entity or applies an archive category to a certification of human authorship. The nearest, read and rejected by name: #1 and #862 (the Zenodo deletion; the archive's own material divided by substrate, 'the most purely human-authored content in the archive'; no claim on certification), #939 (seam-level provenance naming human-authored and AI-drafted passages within a deposit; no claim on the entity), #1556 and #1573 (certification instruments of the training ecology; 'per-author provenance labels' among them, the entity's membership unsourced), #1082 and #1685 (substrate lines that label correspondence 'Human-authored' with Claude as instrument; a label of the archive's own, no claim on the entity), #186 (human-authored declared work as counter-signal; no claim on the entity)",
+   "cands": [
+    "H0001",
+    "H0002",
+    "H0003",
+    "H0004",
+    "H0005",
+    "H0006",
+    "H0007",
+    "H0008",
+    "H0009",
+    "H0010",
+    "H0011",
+    "H0012",
+    "H0013",
+    "H0014",
+    "H0015",
+    "H0016",
+    "H0017",
+    "H0018",
+    "H0019",
+    "H0020",
+    "H0021",
+    "H0022",
+    "H0023",
+    "H0024",
+    "H0025",
+    "H0026",
+    "H0027",
+    "H0028",
+    "H0029",
+    "H0030",
+    "H0031",
+    "H0032",
+    "H0033",
+    "H0034",
+    "H0035",
+    "H0036",
+    "H0037",
+    "H0038",
+    "H0039",
+    "H0040",
+    "H0041",
+    "H0042",
+    "H0043",
+    "H0044",
+    "H0045",
+    "H0048",
+    "H0049",
+    "H0050",
+    "H0051",
+    "H0052",
+    "H0053",
+    "H0054",
+    "H0055",
+    "H0056",
+    "H0057",
+    "H0058",
+    "H0059",
+    "H0060",
+    "H0061",
+    "H0062",
+    "H0063",
+    "H0064",
+    "H0065",
+    "H0066",
+    "H0067",
+    "H0068",
+    "H0069",
+    "H0070",
+    "H0071",
+    "H0072",
+    "H0073",
+    "H0074",
+    "H0075",
+    "H0076",
+    "H0077",
+    "H0078",
+    "H0079",
+    "H0080",
+    "H0081",
+    "H0082",
+    "H0083",
+    "H0084",
+    "H0085",
+    "H0086",
+    "H0087",
+    "H0088",
+    "H0089",
+    "H0090",
+    "H0091",
+    "H0092",
+    "H0093",
+    "H0094",
+    "H0095",
+    "H0096"
+   ]
+  }
+ ],
+ "hop": {
+  "run": "second pass by scripts/non_traverse.py with hop_from [729, 940, 1540, 1611, 1722]: 96 candidates in 94 deposits",
+  "reason": "#1611 cites widely and accounts for most of the hop; every hop deposit was read by term scan and its returned passages in context, as recorded under not_admitted; the hop reached #1369, the instance of #729, and nothing else admitted"
+ },
+ "surfaces_read": [
+  "the census record and row file (census.json, rows/authors-guild-human-authored.py), whole",
+  "the Capture Registry entry authors-guild-human-authored-certification-aio-20261101, whole",
+  "data/texts/AXN-0B2A-text.md (#1722), whole",
+  "data/texts/AXN-03B8-text.md (#940), at §0–§2, §5–§7 and the loci ledgered",
+  "data/texts/AXN-027C-text.md (#729) at §0–§3, §8, §13; AXN-056A-text.md (#1369) compared with it line by line",
+  "data/texts/AXN-063A-text.md (#1540) at the provenance kernel, the declaration of production and the abstract",
+  "data/texts/AXN-069B-text.md (#1611) ¶33; AXN-0069-text.md (#302) ¶18–33; AXN-02B2-text.md (#127) at its candidate"
+ ],
+ "lineages": [
+  {
+   "lineage": "#729 (Provenance Is What Authorship Must Endure)",
+   "ledgered": [
+    729
+   ],
+   "instances": [
+    {
+     "dep": 1369,
+     "of": "#729 (the same packet, v1.1, deposited 2026-05-14)"
+    }
+   ]
+  }
+ ],
+ "observations": [
+  "The string pass returns three deposits naming the entity (#127, #729, #1369); reading admits #729, with #1369 its instance, and rejects #127 (the Guild's litigation, a different matter). The class pass returns #302, #729, #1369, #1540 and #1611; reading admits #1540 on the class of certifications of human composition and rejects #302 and #1611. The anchors #940 and #1722 are read at their loci with no string candidate. The hop returns 96 candidates and admits none beyond the instance.",
+  "The archive's direct account of the entity is one packet, #729 (May 2026), which dates the expansion to March 2026 and reads the certification as Position 1, AI-free human authorship, a legitimate market signal and 'a poor theory of authorship'. The census record (2026-11-01) adds the counterposition, the name question and the reading against #1722."
+ ],
+ "counts": {
+  "candidate_deposits": 99,
+  "string_candidates": 42,
+  "hop_candidates": 96,
+  "admitted_ledgered": 4,
+  "admitted_ledgered_list": [
+   729,
+   940,
+   1540,
+   1722
+  ],
+  "admitted_outside_pass": [
+   940,
+   1722
+  ],
+  "admitted_surface": 2,
+  "lineage_instances": 1,
+  "not_admitted_other": 96,
+  "archive_claims": 59
+ },
+ "lineage_instances": [
+  {
+   "dep": 1369,
+   "of": "#729 (the same packet, v1.1, deposited 2026-05-14)"
+  }
+ ]
+}

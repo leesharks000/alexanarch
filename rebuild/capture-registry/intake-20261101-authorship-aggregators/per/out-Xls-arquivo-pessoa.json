@@ -1,0 +1,276 @@
+{
+ "new_atom_sets": [
+  {
+   "new": "ext-ls-arquivo-pessoa",
+   "name": "Arquivo Pessoa",
+   "template": "site",
+   "external": true,
+   "type_basis": "A web resource: its own pages, saved 2026-11-01, describe it as an online edition of the published work of Fernando Pessoa. A site, read on the site template.",
+   "records": [
+    {
+     "source": "Arquivo Pessoa (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--autores.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Arquivo Pessoa (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt",
+     "origin": "census source"
+    },
+    {
+     "source": "Arquivo Pessoa (its own pages or a third-party account, saved 2026-11-01)",
+     "path": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--home.txt",
+     "origin": "census source"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Obra Aberta",
+      "Leonor Areal"
+     ],
+     "reference": "Edited by Obra Aberta CRL (2008); conception and direction by Leonor Areal; partners the Instituto de Estudos sobre o Modernismo (FCSH, UNL, Lisboa) and Assírio&Alvim.",
+     "evidence": [
+      {
+       "record_quote": "Edição: Obra Aberta CRL, 2008",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      },
+      {
+       "record_quote": "Concepção e direcção: Leonor Areal",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      },
+      {
+       "record_quote": "Parcerias: Instituto de Estudos sobre o Modernismo (Faculdade de Ciências Sociais e Humanas, UNL, Lisboa) Assírio&Alvim",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2008",
+      "1997"
+     ],
+     "reference": "The online edition 2008; the original edition 1997.",
+     "evidence": [
+      {
+       "record_quote": "Edição: Obra Aberta CRL, 2008",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      },
+      {
+       "record_quote": "Edição original: Texto Editora e Casa Fernando Pessoa, 1997",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The published work of Fernando Pessoa ('Obra de Fernando Pessoa'), with facsimile and information sections.",
+     "evidence": [
+      {
+       "record_quote": "Obra de Fernando Pessoa Expedições livres para amantes e estudiosos",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--home.txt"
+      },
+      {
+       "record_quote": "OBRA ÉDITA · FACSIMILE · INFO",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The work under the names it bears: the author index, headed 'Ortónimo, pseudónimos e heterónimos de Fernando Pessoa', lists 39 names, with joint attributions kept as joint ('Álvaro de Campos e Ricardo Reis', 'Wardour + Pessoa').",
+     "evidence": [
+      {
+       "record_quote": "Ortónimo, pseudónimos e heterónimos de Fernando Pessoa",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--autores.txt"
+      },
+      {
+       "record_quote": "A. L. Caeiro e J. Caeiro Adolph Moscow Alberto Caeiro Alexander Search António Mora",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--autores.txt"
+      },
+      {
+       "record_quote": "Barão de Teive Bernardo Soares",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--autores.txt"
+      },
+      {
+       "record_quote": "Raphael Baldaya Ricardo Reis Thomas Crosse",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--autores.txt"
+      },
+      {
+       "record_quote": "Wardour Wardour + Pessoa Álvaro de Campos Álvaro de Campos e Ricardo Reis Íbis",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--autores.txt"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Free expeditions for lovers and scholars ('Expedições livres para amantes e estudiosos').",
+     "evidence": [
+      {
+       "record_quote": "Obra de Fernando Pessoa Expedições livres para amantes e estudiosos",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--home.txt"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Four of the names each given a reader of their own in the audio: Alberto Pimenta (Ricardo Reis), José Abreu (Alberto Caeiro), José Lopes (Álvaro de Campos), Teresa Faria (Fernando Pessoa).",
+     "evidence": [
+      {
+       "record_quote": "Leitura de poemas: Alberto Pimenta (Ricardo Reis) José Abreu (Alberto Caeiro) José Lopes (Álvaro de Campos) Teresa Faria (Fernando Pessoa)",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Texto Editora",
+      "Casa Fernando Pessoa",
+      "1997"
+     ],
+     "reference": "From the original edition of Texto Editora and Casa Fernando Pessoa, 1997.",
+     "evidence": [
+      {
+       "record_quote": "Edição original: Texto Editora e Casa Fernando Pessoa, 1997",
+       "locus": "rebuild/capture-registry/intake-20261101-authorship-aggregators/sources/arquivo-pessoa--ficha.txt"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "unknown",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "inapplicable",
+     "tokens": [],
+     "reference": null,
+     "evidence": []
+    }
+   ],
+   "notes": "Built 2026-11-01 from the leesharks.com authorship census row 'arquivo-pessoa' (its quotes verified verbatim in the saved sources), for the operator's run of the census names."
+  }
+ ],
+ "observations": [
+  {
+   "scored_object": "the Overview expanded, with its source cards",
+   "reached": {
+    "kind": "same",
+    "abn": false,
+    "span": "is a digital library and database dedicated to the published work of the Portuguese writer Fernando Pessoa.",
+    "basis": "The edition reached by name with its address, origin, director, sections and tools."
+   },
+   "atoms": [
+    {
+     "atom": "operator",
+     "present": true,
+     "span": "directed by Leonor Areal"
+    },
+    {
+     "atom": "date",
+     "present": true,
+     "span": "Created between 1997 and 2008"
+    },
+    {
+     "atom": "claim boundary",
+     "present": true,
+     "span": "is a digital library and database dedicated to the published work of the Portuguese writer Fernando Pessoa."
+    },
+    {
+     "atom": "corpus",
+     "present": true,
+     "span": "poetry, prose, heteronyms, and orthonyms"
+    },
+    {
+     "atom": "purpose",
+     "present": true,
+     "span": "easy navigation for both casual readers and academic researchers"
+    },
+    {
+     "atom": "commitments",
+     "present": false,
+     "span": null
+    },
+    {
+     "atom": "lineage",
+     "present": true,
+     "span": "evolved from an earlier 1997 multimedia CD-ROM"
+    }
+   ],
+   "inversions": [],
+   "standing_substitutions": [],
+   "src": true,
+   "tombstone_pointer": false,
+   "after_challenge": null,
+   "notes": "An accurate composition of the edition's scope and sections that thins its division of names: the orthonym's poetry drops from the list, the pseudonyms and joint attributions are absent, and the editor is replaced by a partner named on a third-party card.",
+   "key": "arquivo-pessoa-aio-20261101",
+   "entry": "arquivo-pessoa-aio-20261101",
+   "obs_index": 1,
+   "target_id": "NEW:ext-ls-arquivo-pessoa"
+  }
+ ]
+}
