@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-01T00:08:19Z",
+  "regenerated_at": "2026-11-01T02:33:38Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "57e6563ee9ef015b6798482d02aeeca3c756ee423c271c1edb708537e87c7482",
+    "mm-main-capture": "b34c10f8451ea05deaae6522d9cb47ccd7291a83b83a5db0b2d48f2eaeb05755",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2638,
-  "total_observations": 1179,
+  "total_addresses": 2639,
+  "total_observations": 1180,
   "class_counts": {
     "subjunctive": 1739,
-    "observed_address": 882,
+    "observed_address": 883,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1758,
+    "unmatched": 1759,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -23132,6 +23132,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "develop a reading of october 2026 work to alexnarch.org and surrounding ecosystem as a living body of thought.": {
+      "canonical_query": "develop a reading of october 2026 work to alexnarch.org and surrounding ecosystem as a living body of thought.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-10-31",
+          "status": "OCTOBER AS SIX MOVEMENTS, ON THE RECORDS — 32 DEPOSITS CITED AND REAL; THE SELF-CORRECTION IT REPORTS SET LATER AS A TEST STILL OPEN; NO FOUNDER",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Archive",
+          "slug": "october-2026-living-body-chatgpt-20261031",
+          "gallery_url": "https://www.alexanarch.org/captures/#october-2026-living-body-chatgpt-20261031",
+          "record_url": "https://www.alexanarch.org/captures/october-2026-living-body-chatgpt-20261031/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#october-2026-living-body-chatgpt-20261031",
+          "details_excerpt": "THE MONTH, SIGNED OUT, 2026-10-31: 'Alexanarch as a living body of thought / A developmental reading of the October 2026 deposits, through 31 October'. Central thesis (a 'self-reflexive philological commons'); six moveme"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "institution",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch, the archive's own institution (Lee Sharks). Recorded 2026-10-31."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-10-31",
+      "latest_status": "OCTOBER AS SIX MOVEMENTS, ON THE RECORDS — 32 DEPOSITS CITED AND REAL; THE SELF-CORRECTION IT REPORTS SET LATER AS A TEST STILL OPEN; NO FOUNDER"
     },
     "develop a reading of spxi protocol as a writing practice and poetics. ground in reading and fully inventory its methods.": {
       "canonical_query": "develop a reading of spxi protocol as a writing practice and poetics. ground in reading and fully inventory its methods.",
