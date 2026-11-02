@@ -74,23 +74,24 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L68 | 3.10 | Hegel, Vorlesungen II (1833), p. 182 (OCR in session) | text l. 533 · n191 | Leute ſagen, dieſe ſey erſt aus Plato gemacht. | the source of the Timaeus → a Pythagorean writing extended by Plato; its derivation from Plato dismissed as over-subtle | presupposes | presupposes |
 | L69 | 3.10 | Hegel, Vorlesungen II (1833), p. 186 (OCR in session) | text l. 669 · n195 | erſt bei Ariſtoteles gediehen. | the maker of the systematic presentation → Aristotle, after Plato, the idea not yet ripe in Plato | presupposes | presupposes |
 | L70 | 3.10 | Hegel, Differenz (1801), Vorerinnerung (OCR in session) | text l. 471 · n20 | die übrige Kollektion von Mumien | a philosophy treated historically → an addition to the collection of mummies | does_not_address | does_not_address |
-| L71 | 3.10 | Masters, Political Theory 5 (1977), p. 52, n. 14 (search-inside, operator's paste) | text l. 8 | Andronicus combined lectures by Aristotle and Theophrastus | the maker of the Politics as edited → Andronicus's combination of lectures by Aristotle and Theophrastus, with Theophrastus possibly inserting his own material | revises | revises |
-| L72 | 3.10 | Masters, Political Theory 5 (1977), p. 52, n. 14, relaying Ross and Fobes 1929, pp. ix, xxiv | text l. 7 | the first explicit mention and attribution of this text is by Nicolaus of Damascus in 25 BC | the first attribution of Theophrastus's Metaphysics → Nicolaus of Damascus, the book unknown to Hermippus and probably edited by Tyrannion | presupposes | presupposes |
-| L73 | 3.10 | Masters, Political Theory 5 (1977), p. 57, n. 49 (search-inside, operator's paste) | text l. 9 | who attribute the change to Aristotle and his successors? | the maker of the change in doctrine → Aristotle and his successors, after the classic sources; Plato kept without a major shift | revises | presupposes |
-| L74 | 3.10 | Chroust, Aristotle: New Light I (1973), Preface (Archive leaf n14) | text l. 6 | Both Rose and Jaeger, it will be noted, never so much as questioned Aristotle’s authorship of the Corpus. | the authorship of the Corpus in Rose and Jaeger → never questioned | presupposes | presupposes |
-| L75 | 3.10 | Chroust, Aristotle: New Light I (1973), Preface (Archive leaves n14–n15) | text l. 8 | Corpus Scriptorum Peripateticorum Veterum | the name of the corpus → a collection of the old Peripatetic writers, Aristotle's among them, to which one might be compelled | holds_open | holds_open |
-| L76 | 3.10 | Chroust, Aristotle: New Light I (1973), Preface (Archive leaf n17) | text l. 11 | this whole library simply came to be known as ‘the works of Aristotle.’ | the name on the recovered library → Aristotle's, for the whole of the Peripatus's library as Theophrastus left it to Neleus | considers_excludes | revises |
-| L77 | 3.10 | Chroust, Aristotle: New Light I (1973), p. 3, reporting Düring on Hermippus | text l. 14 | that Aristotle seceded from the Academy and from Plato’s basic teachings while Plato was still alive. | the origin of the story of Aristotle's break with Plato → a legend of Hermippus, part of his effort to present Aristotle as the true and sole founder | does_not_address | presupposes |
-| L78 | 3.10 | Chroust, Aristotle: New Light I (1973), p. 184 | text l. 16 | the testament of the preceding scholarch also established the legitimacy of the succeeding scholarch | what the wills establish → the legitimacy of the succeeding scholarch, under Athenian law and the by-laws of the Peripatus | presupposes | presupposes |
-| L79 | 3.10 | Chroust, Aristotle: New Light I (1973), p. 259, n. 6 | text l. 18 | but were possibly written by Theophrastus | the maker of the works on animals and plants → possibly Theophrastus | holds_open | presupposes |
-| L80 | 3.10 | Chroust, Aristotle: New Light I (1973), p. 408, n. 2 | text l. 19 | still lacks complete confirmation. | the assumption that the Corpus contains Aristotle's writings in part → still lacking complete confirmation | holds_open | holds_open |
+| L71 | 3.10a | Masters, Political Theory 5 (1977), p. 52, n. 14 (search-inside, operator's paste) | text l. 8 | Andronicus combined lectures by Aristotle and Theophrastus | the maker of the Politics as edited → Andronicus's combination of lectures by Aristotle and Theophrastus, with Theophrastus possibly inserting his own material | revises | revises |
+| L72 | 3.10a | Masters, Political Theory 5 (1977), p. 52, n. 14, relaying Ross and Fobes 1929, pp. ix, xxiv | text l. 7 | the first explicit mention and attribution of this text is by Nicolaus of Damascus in 25 BC | the first attribution of Theophrastus's Metaphysics → Nicolaus of Damascus, the book unknown to Hermippus and probably edited by Tyrannion | presupposes | presupposes |
+| L73 | 3.10a | Masters, Political Theory 5 (1977), p. 57, n. 49 (search-inside, operator's paste) | text l. 9 | who attribute the change to Aristotle and his successors? | the maker of the change in doctrine → Aristotle and his successors, after the classic sources; Plato kept without a major shift | revises | presupposes |
+| L74 | 3.10a | Chroust, Aristotle: New Light I (1973), Preface (Archive leaf n14) | text l. 6 | Both Rose and Jaeger, it will be noted, never so much as questioned Aristotle’s authorship of the Corpus. | the authorship of the Corpus in Rose and Jaeger → never questioned | presupposes | presupposes |
+| L75 | 3.10a | Chroust, Aristotle: New Light I (1973), Preface (Archive leaves n14–n15) | text l. 8 | Corpus Scriptorum Peripateticorum Veterum | the name of the corpus → a collection of the old Peripatetic writers, Aristotle's among them, to which one might be compelled | holds_open | holds_open |
+| L76 | 3.10a | Chroust, Aristotle: New Light I (1973), Preface (Archive leaf n17) | text l. 11 | this whole library simply came to be known as ‘the works of Aristotle.’ | the name on the recovered library → Aristotle's, for the whole of the Peripatus's library as Theophrastus left it to Neleus | considers_excludes | revises |
+| L77 | 3.10a | Chroust, Aristotle: New Light I (1973), p. 3, reporting Düring on Hermippus | text l. 14 | that Aristotle seceded from the Academy and from Plato’s basic teachings while Plato was still alive. | the origin of the story of Aristotle's break with Plato → a legend of Hermippus, part of his effort to present Aristotle as the true and sole founder | does_not_address | presupposes |
+| L78 | 3.10a | Chroust, Aristotle: New Light I (1973), p. 184 | text l. 16 | the testament of the preceding scholarch also established the legitimacy of the succeeding scholarch | what the wills establish → the legitimacy of the succeeding scholarch, under Athenian law and the by-laws of the Peripatus | presupposes | presupposes |
+| L79 | 3.10a | Chroust, Aristotle: New Light I (1973), p. 259, n. 6 | text l. 18 | but were possibly written by Theophrastus | the maker of the works on animals and plants → possibly Theophrastus | holds_open | presupposes |
+| L80 | 3.10a | Chroust, Aristotle: New Light I (1973), p. 408, n. 2 | text l. 19 | still lacks complete confirmation. | the assumption that the Corpus contains Aristotle's writings in part → still lacking complete confirmation | holds_open | holds_open |
 | L81 | 3.10 | Schironi, CQ 55 (2005), p. 432 (open copy) | text l. 5 | an edition which everyone seems to believe in | the Academic edition of Plato → believed in by everyone, with no evidence in the sources | presupposes | does_not_address |
+| L82 | 3.1 | Plato, Sophist 217a | text l. 5 | πότερον ἓν πάντα ταῦτα ἐνόμιζον ἢ δύο, ἢ καθάπερ τὰ ὀνόματα τρία, τρία καὶ τὰ γένη διαιρούμενοι καθʼ ἓν ὄνομα γένος ἑκάστῳ προσῆπτον | whether three names count three kinds → one, or two, or three, a kind fastened to each name; asked of Elea, answered across two dialogues | does_not_address | holds_open |
 
 ## Counts by stratum
 
 | § | n | attribution codes | count codes |
 |---|---|---|---|
-| 3.1 | 5 | revises 1, does_not_address 4 | revises 1, does_not_address 4 |
+| 3.1 | 6 | revises 1, does_not_address 5 | revises 1, does_not_address 4, holds_open 1 |
 | 3.2 | 1 | presupposes 1 | presupposes 1 |
 | 3.3 | 2 | does_not_address 2 | does_not_address 2 |
 | 3.4 | 5 | does_not_address 2, presupposes 3 | does_not_address 2, presupposes 3 |
@@ -100,9 +101,10 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 35 | presupposes 15, considers_excludes 4, argues_for 5, does_not_address 4, revises 4, holds_open 3 | does_not_address 9, presupposes 17, holds_open 3, revises 6 |
+| 3.10 | 25 | presupposes 12, considers_excludes 3, argues_for 5, does_not_address 3, revises 2 | does_not_address 9, presupposes 11, holds_open 1, revises 4 |
+| 3.10a | 10 | revises 2, presupposes 3, holds_open 3, considers_excludes 1, does_not_address 1 | revises 2, presupposes 6, holds_open 2 |
 
-Total 81 loci. Attribution: does_not_address 17, presupposes 31, argues_for 12, considers_excludes 11, revises 5, holds_open 5. Count: does_not_address 31, presupposes 34, considers_excludes 6, revises 7, holds_open 3.
+Total 82 loci. Attribution: does_not_address 18, presupposes 31, argues_for 12, considers_excludes 11, revises 5, holds_open 5. Count: does_not_address 31, presupposes 34, considers_excludes 6, revises 7, holds_open 4.
 
 ## Notes
 
@@ -167,3 +169,4 @@ Total 81 loci. Attribution: does_not_address 17, presupposes 31, argues_for 12, 
 - **L78** With p. 33: 'they establish and confirm the legitimacy of the successive Peripatetic scholarchs.' Bears on §1.4.
 - **L80** The assumption made for the book and declared unconfirmed in the same note.
 - **L81** Schironi reports the presupposition and sets the Alexandrian ekdosis, attested in Diogenes 3.61 and 3.65, beside it. Bears on §4.5.
+- **L82** The corpus asks of names whether they count what they name, in the dialogue Masters 1977 would give to Aristotle (§5.2). Pointed out by the operator's attachment (Torringa 2011, p. 20).
