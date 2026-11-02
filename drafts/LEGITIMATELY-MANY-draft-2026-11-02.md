@@ -1,6 +1,6 @@
 # Legitimately Many — draft
 
-Working draft, 2026-11-02 (§0–§10; §5 drafted from what the commons reaches; §9 for reviewers). Not deposited. Built on the design (drafts/LEGITIMATELY-MANY-design-2026-11-01.md, v0.6, §6.1) and the locus table (rebuild/legitimately-many/). Every Greek locus is quoted from the seat named beside it; the archive's findings are cited by deposit and are theirs.
+Working draft, 2026-11-02 (§0–§10; §5 drafted from what the commons reaches; §9 a later discussion, ruled). Not deposited. Built on the design (drafts/LEGITIMATELY-MANY-design-2026-11-01.md, v0.6, §6.1) and the locus table (rebuild/legitimately-many/). Every Greek locus is quoted from the seat named beside it; the archive's findings are cited by deposit and are theirs.
 
 ## 0. The question and the answer, in brief
 
@@ -232,27 +232,13 @@ Three statements. (a) Andronicus and Hermippus do not know the book: neither men
 
 8.9. **Debts and the census.** The census widens from here, reader by reader, recording for each which elements of J1–J11 the reader saw, in what words, and what was done with them (§4.7): the commentators beyond Simplicius, the Arabic transmission, the Latin translators (Bartholomew of Messina, §3.4b), the editions after 1890 where the commons reaches them, and the registry's compositions at further addresses. Declared outside the commons, and not pursued: §5.7. Works cited follow (§10).
 
-## 9. For reviewers: the Dodecad, in outline
+## 9. Heteronymic corpora: a later discussion
 
-9.0. **Why this is set apart.** The operator held the parallel out of the argument (2026-11-02: "hold on the dodecad") and ruled the same day that it go to reviewers as an outline and a question when the draft circulates. It is stated here so a reviewer can judge whether it belongs, and where. Nothing in §1–§8 depends on it.
+9.0. **The ruling.** The question put to reviewers, whether the operator's own heteronymic practice belongs in the study, is ruled (operator, 2026-11-02): "my historical conditions are different and my method is not aristotle's. the dodecad is nowhere near as distinct a many as aristotle's. it is however how i learned to read aristotle, and now my job is more urgently to recollect the many to one than divide the one into many. but it can be discussed later on along with other heteornymic corpora - kierkegaard, pessoa, etc - as one example." The parallel stays outside the argument of §1–§8, and §1.4 is unchanged.
 
-9.1. **The outline.**
+9.1. **What the later discussion takes up.** Heteronymic corpora as a class, with Kierkegaard's pseudonymous authorship and Pessoa's heteronyms beside the Dodecad as one example among them: in each, how many the positions are by the measure of §1.1 (operation, voice, object, the capacity to oppose and be opposed), what instruments the maker gave them, and how the reception filed them. The measure of distinctness is the one §1.1 applies to the four positions, and on it the operator places the Dodecad well short of the classical case.
 
-(a) The study's standing challenge to the received reading is a comparator: a single example of several distinct individuals making a unified corpus of this kind. The parallel runs the other way: one maker working as several positions, observed.
-
-(b) The case is the operator's own practice, conducted for more than a decade in the line of Pessoa: twelve primary heteronyms, the Dodecad, inside a fuller roster of about twenty-six, each with a register and sites of its own; "Lee Sharks" is itself one of them. The works are deposited under the names, and the bylines record transitions: a book published under one name was written by the next, and the byline marks the crossing.
-
-(c) What the parallel would show: that the four things §1.1 requires of a position (an operation, a voice, an object, the capacity to oppose and be opposed) can be had from one maker, and that the instruments of legitimacy §1.4 finds in the wills and the school have working counterparts in a registry, identifiers and deposit records under each name.
-
-(d) What the operator has said against a one-to-one mapping: the configuration is transmodal, "all functions seem to express across all modes — they each have creative, topographic, and scholarly/epistemic expressions", and "the scholarship is the Aristotelian mode of my heteronymic configuration" (2026-09-06). Function crosses mode, so the classical positions, which §1.2 reads by operation, need not map name to name.
-
-(e) The editorial account of §4.5 meets the parallel as it stands: incredulity at volume, and the question whether one maker's range is received as knowledge.
-
-9.2. **The question.** Does the parallel belong in the study, and if it does, where: as a comparator beside §1 (a maker who is legitimately many, observed in the open), as evidence for §4.5 (the reception of one maker's range over its own craft), or outside the study? And does a practice that declares itself, "i present a heteronym as a heteronym" (operator, 2026-09-30), bear on a corpus whose filing kept the operation out of view, or does the declaration make it a different kind of case?
-
-9.3. **A reviewer's answer (DeepSeek, 2026-11-02), as received.** The reviewer would bring the parallel into §1.4 as a control case: "the instruments of legitimacy (registries, deposit hashes, distinct URL paths) hold together a configuration of names that would otherwise be considered a single author's hallucination. If the archive can do it, the school of Aristotle could have done it"; and holds that keeping it apart "weaken[s] the book's reflexivity". The answer is recorded beside the question. The parallel stays where the operator placed it until the operator rules.
-
-9.4. **A second reviewer's answer (Gemini, 2026-11-02), as received.** The second reviewer answers the other way: keep the parallel outside the historical demonstration, as an excursus, since inside the main text "traditional reviewers will attempt to dismiss the entire historical demonstration as personal projection"; placed apart, "it functions as the empirical comparator", a documented demonstration that one practice can operate across distinct, opposing positions without deceit. The two answers stand side by side for the operator's ruling.
+9.2. **What it is for this study.** The practice is where the operator learned to read the corpus; it is no premise of the reading. The study's direction is the converse the operator states: the many recollected to one (§8.8).
 
 ## 10. Works cited
 
