@@ -1,8 +1,8 @@
 {
   "chunk_number": 34,
   "first_deposit": 1678,
-  "last_deposit": 1731,
-  "count": 54,
+  "last_deposit": 1732,
+  "count": 55,
   "deposits": [
     {
       "deposit_number": 1678,
@@ -13333,7 +13333,7 @@
       ],
       "axn_reading": "Closure -> Proof -> Text -> Growth -> Force -> Transmutation",
       "minted_at": "2026-11-02T14:06:55Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-0BE1-text.md",
       "wiki_article": "EA-CORPORA-32 is the thirty-second seating of the Crimson Hexagonal Archive's originals shelf, deposited by Lee Sharks on 2 November 2026. Its eleven seats hold twelve works and some 331,000 lines of text layer: the remaining public-domain debts of the study Legitimately Many, seated in their original languages, each seat naming the research it was made for. The pseudo-Archytan writings, with the book on the ten categories that Simplicius reads as Aristotle's source, are seated in Mullach's Fragmenta philosophorum Graecorum (32/01). The Aldine Aristotle's fourth volume of 1497 (32/02) prints Aristotle's and Theophrastus's Metaphysics consecutively, files both under one heading in its register, and prints after Theophrastus's the scholion recording that Andronicus and Hermippus did not know the book and that Nicolaus assigned it to Theophrastus; its leaves are held as images with the passages transcribed. Wimmer's Didot Theophrastus (32/03) names Brandis's edition of the two Metaphysics. Philodemus's Index Academicorum in Mekler's edition (32/04), OCR'd in session, shows at its list of Plato's pupils that the names of Speusippus and Xenocrates are supplied from Diogenes. Dionysius's First Letter to Ammaeus (32/05) dates a corpus by declared evidence, and Cicero's letter to Atticus IV.16 (32/06) takes the exoteric works as Aristotle's form. Schleiermacher's Einleitung of 1804 (32/07), Campbell's Sophistes and Politicus of 1867 (32/08) and Tennemann (32/09) carry the modern ordering of Plato's dialogues; Hegel's Differenzschrift and his lectures on Plato, which fault Tennemann's extraction and hold the esoteric to be the speculative that is written and printed, are OCR'd from the Fraktur (32/10). Sixteen modern editions and unfound witnesses are declared at 32/11.",
@@ -13495,6 +13495,250 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "0cc96ca601cc11e15f346e7c92d2d2e806a8bd63224390290f3d45e7bacdd555",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      },
+      "version_series_id": "SERIES-EA-CORPORA-32",
+      "modifications": [
+        {
+          "date": "2026-11-02",
+          "field": "status",
+          "reason": "superseded by v1.1 (#1732) in SERIES-EA-CORPORA-32",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        }
+      ],
+      "date_modified": "2026-11-02",
+      "superseded_by": 1732,
+      "superseded_by_deposit_number": 1732,
+      "superseded_reason": "Superseded by #1732 (v1.1, 2 November 2026), which folds in a twelfth seat, Nicolaus of Damascus (32/12), at the operator's word ('yes, lets grab them, but fold into 32 and version'), and extends the declared absence at 32/11 by Drossaart Lulofs's Nicolaus (1965). The ten other seats are unchanged and keep the AXNs this record gave them. This record stays the valid content-derived name of the bytes it holds."
+    },
+    {
+      "deposit_number": 1732,
+      "axn": "AXN:0BE6.DATASET.🚀🌖🔛🔖⚫🕕",
+      "hex": "0BE6",
+      "family": "DATASET",
+      "emoji": "🚀🌖🔛🔖⚫🕕",
+      "hash": "5d05f448c867d63af2c802b36575fa53904794134c9e645494af82dd80593cc8",
+      "title": "EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archytas, the Aldine Metaphysics, Wimmer's Theophrastus, Philodemus's Index Academicorum, Dionysius to Ammaeus, Cicero to Atticus, Schleiermacher, Campbell, Tennemann, Hegel and Nicolaus of Damascus (v1.1)",
+      "creator": "Sharks, Lee",
+      "date": "2026-11-02",
+      "description": "Version 1.1 of the thirty-second seating of the originals shelf, twelve seats: the remaining public-domain debts of the study Legitimately Many, each seat naming the research it was made for. The pseudo-Archytan writings with the book on the categories (Mullach, 1860); the Aldine Aristotle's volume IV (1497), the two Metaphysics and the scholion on Andronicus, Hermippus and Nicolaus; Wimmer's Theophrastus (1866); Philodemus's Index Academicorum (Mekler, 1902); Dionysius's First Letter to Ammaeus; Cicero to Atticus IV.16; Schleiermacher's Einleitung (1804); Campbell's Sophistes and Politicus (1867); Tennemann (1792, 1799); Hegel's Differenzschrift (1801) and lectures on Plato (1833); and Nicolaus of Damascus, the authority the Theophrastus scholion cites, with his De plantis restored to his name (Meyer, 1841) and the Basel Theophrastus of 1541. With them, the modern editions still in their term, declared.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. The sources found, fetched, verified, hashed and indexed, the OCR and the transcription made, the builders written and the records drafted, all in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The request and the texts named are Lee Sharks's (the design's §5); the editions within each seat were chosen in session and are stated per seat. CC-BY-4.0 applies to this record and the seat records.",
+      "methodology": "Each seat fetched in session from the source its record names (the Internet Archive, Perseus), kept as served, reduced to a text layer by code and hashed into its MANIFEST.sha256; licences read at the file; loci verified by substring in the text layer; public-domain status in the United States checked against first publication. Three scans OCR'd in session, the engine and models recorded; one incunable's passages transcribed by eye and marked as a reading. No OCR corrected by hand. The builders and this body are under rebuild/corpora/ea-corpora-32/.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text layer it names; if the Aldine transcription misreads the page image it names; if a work is misattributed, misdated or assigned to the wrong edition; if a licence recorded for an item is not the one its source states; if a work seated as public domain in the United States is not; or if the four surfaces (seat, index, deposit, shelf) disagree.\n\n### Supersedes\n\n1731",
+      "root_axn": "AXN:0BE6.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "5d05f448c867d63af2c802b36575fa53904794134c9e645494af82dd80593cc8",
+      "clusters": [
+        "Navigational",
+        "Celestial",
+        "Terminal",
+        "Scriptural",
+        "Signal",
+        "Temporal"
+      ],
+      "axn_reading": "Search -> Origin -> Closure -> Text -> Alarm -> Duration",
+      "minted_at": "2026-11-02T15:32:09Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0BE6-text.md",
+      "wiki_article": "EA-CORPORA-32 v1.1 is the second version of the thirty-second seating of the Crimson Hexagonal Archive's originals shelf, deposited by Lee Sharks on 2 November 2026 and superseding v1.0 (#1731). Its twelve seats hold sixteen works and some 367,000 lines of text layer: the remaining public-domain debts of the study Legitimately Many, seated in their original languages, each seat naming the research it was made for. The pseudo-Archytan writings, with the book on the ten categories that Simplicius reads as Aristotle's source, are seated in Mullach's Fragmenta philosophorum Graecorum (32/01). The Aldine Aristotle's fourth volume of 1497 (32/02) prints Aristotle's and Theophrastus's Metaphysics consecutively, files both under one heading in its register, and prints after Theophrastus's the scholion recording that Andronicus and Hermippus did not know the book and that Nicolaus assigned it to Theophrastus; its leaves are held as images with the passages transcribed. Wimmer's Didot Theophrastus (32/03) names Brandis's edition of the two Metaphysics. Philodemus's Index Academicorum in Mekler's edition (32/04), OCR'd in session, shows at its list of Plato's pupils that the names of Speusippus and Xenocrates are supplied from Diogenes. Dionysius's First Letter to Ammaeus (32/05) dates a corpus by declared evidence, and Cicero's letter to Atticus IV.16 (32/06) takes the exoteric works as Aristotle's form. Schleiermacher's Einleitung of 1804 (32/07), Campbell's Sophistes and Politicus of 1867 (32/08) and Tennemann (32/09) carry the modern ordering of Plato's dialogues; Hegel's Differenzschrift and his lectures on Plato, which fault Tennemann's extraction and hold the esoteric to be the speculative that is written and printed, are OCR'd from the Fraktur (32/10). Version 1.1 adds Nicolaus of Damascus (32/12), the authority the scholion names: his fragments as Müller collected them, the De plantis restored from Aristotle's name to his by Meyer in 1841, and the Basel Theophrastus of 1541, which prints the Metaphysics among Theophrastus's works with the scholion still after it. Seventeen modern editions and unfound witnesses, among them Drossaart Lulofs's edition of Nicolaus's On the Philosophy of Aristotle, are declared at 32/11.",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archyta",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archyta",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archyta",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archyta",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.1",
+      "keywords": [
+        "EA-CORPORA",
+        "originals shelf",
+        "Legitimately Many",
+        "authorship",
+        "attribution",
+        "chronology",
+        "pseudo-Archytas",
+        "Categories",
+        "Mullach",
+        "Aldus Manutius",
+        "Aldine",
+        "incunable",
+        "Theophrastus",
+        "Metaphysics",
+        "scholion",
+        "Andronicus of Rhodes",
+        "Hermippus",
+        "Nicolaus of Damascus",
+        "Wimmer",
+        "Brandis",
+        "Philodemus",
+        "Index Academicorum",
+        "Herculaneum",
+        "Mekler",
+        "Academy",
+        "Dionysius of Halicarnassus",
+        "Ammaeus",
+        "Philochorus",
+        "Demosthenes",
+        "Cicero",
+        "Atticus",
+        "exoteric",
+        "Schleiermacher",
+        "Plato",
+        "Campbell",
+        "stylometry",
+        "Tennemann",
+        "Hegel",
+        "Differenzschrift",
+        "Nicolaus of Damascus",
+        "De plantis",
+        "Basel 1541",
+        "Training Layer Literature"
+      ],
+      "related_identifiers_raw": "AXN deposit #1730 — EA-CORPORA-31: the thirty-first seating, the debts of v0.1, whose builder this seating extends\nAXN deposit #1720 — EA-CORPORA-30: the thirtieth seating\nAXN deposit #1591 — EA-CORPORA-13: the thirteenth seating, whose Cicero seat (13/03) was checked first for Ad Atticum\nAXN deposit #1581 — the wills and the Theophrastan catalogue in Diogenes Laertius\nAXN deposit #1590 — The Ghost Catalogues\nAXN deposit #1602 — Locating the Dependencies",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 56638,
+        "audited_at": "2026-11-02T15:32:09Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "version_series_id": "SERIES-EA-CORPORA-32",
+      "supersedes": [
+        1731
+      ],
+      "modifications": [
+        {
+          "date": "2026-11-02",
+          "field": "supersedes",
+          "reason": "v1.1 supersedes v1.0 (#1731) in SERIES-EA-CORPORA-32",
+          "now": "[1731]"
+        }
+      ],
+      "date_modified": "2026-11-02",
+      "related_deposits": [
+        {
+          "deposit": 1731,
+          "relation": "EA-CORPORA-32 v1.0, which this version supersedes"
+        },
+        {
+          "deposit": 1730,
+          "relation": "EA-CORPORA-31: the thirty-first seating, the debts of v0.1, whose builder this seating extends"
+        },
+        {
+          "deposit": 1720,
+          "relation": "EA-CORPORA-30: the thirtieth seating"
+        },
+        {
+          "deposit": 1591,
+          "relation": "EA-CORPORA-13: the thirteenth seating, whose Cicero seat (13/03) was checked first for the letters to Atticus"
+        },
+        {
+          "deposit": 1581,
+          "relation": "Catalogues and Wills: the Peripatetic transmission texts this seating completes"
+        },
+        {
+          "deposit": 1590,
+          "relation": "The Ghost Catalogues: the lists the Aldine scholion bears on"
+        },
+        {
+          "deposit": 1602,
+          "relation": "Locating the Dependencies: the protocol the modern orderings are read under"
+        }
+      ],
+      "concepts_attested_none": true,
+      "related_attested_none": false,
+      "lexical_attested_none": true,
+      "references_concepts": [
+        "Cross-references",
+        "Dependencies",
+        "Lee Sharks",
+        "TACHYON",
+        "Training Layer",
+        "Training Layer Literature"
+      ],
+      "references_concept_count": 6,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0BE6.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-11-02T15:37:02.466745+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "7d7e0329a754fc84908f13275ff2b59b9ed3c71d31becbfccaca2ba593477ba6",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
