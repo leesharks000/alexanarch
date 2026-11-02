@@ -6,11 +6,15 @@ Working map, 2026-11-01, built from the registry (data/registry.json at 1729 dep
 
 0.1. On the operator's report, Google Scholar indexes *Socrates as Orthonym* (#123) and, within the last week, *Whose Face Is on the Twenty?* (#502). None of the Aristotle–Theophrastus material is indexed.
 
-0.2. Both indexed works carry Zenodo DOIs minted before the termination of 19 June 2026: #123 has 10.5281/zenodo.19053469; #502 has 10.5281/zenodo.18736175. No deposit of the Plato–Aristotle investigation or the Theophrastus line (#1569 onward, 29 August to 10 September 2026) has a DOI. They exist only at alexanarch.org.
+0.2. Scholar indexes directly from alexanarch.org, for works deposited both before and after the Zenodo termination of 19 June 2026 (the operator, 2026-11-01). A pre-termination DOI is therefore not what separates the indexed from the unindexed; an earlier draft of this map said it was, and that reading is withdrawn.
 
-0.3. The alexanarch record pages for both groups carry the metadata Scholar reads (citation_title, citation_author, citation_publication_date, citation_abstract, citation_pdf_url). The visible difference in that metadata: #123's citation_journal_title is "Grammata: Journal of Operative Philology", with publisher Pergamon Press; #1583 and #1588 give "Alexanarch" for both.
+0.3. Every record checked in this body carries the tags Scholar reads (citation_title, citation_author, citation_publication_date, citation_abstract, citation_pdf_url) and a PDF on the site: #123, #1576, #1579, #1581, #1583, #1586, #1590, #1597, #1603, #1605, #1667. Three differences show in those tags. #123's citation_journal_title is "Grammata: Journal of Operative Philology" (publisher Pergamon Press); every other record checked gives "Alexanarch". #123 and #1576 give the author as "Lee Sharks"; the Theophrastus records give "Sharks, Lee". #1597 and #1667 give the author as "Sigil", a surname with no forename.
 
-0.4. So the variable that separates indexed from unindexed in this body is a pre-termination DOI, with a journal title beside it. Which surface Scholar actually indexed (the Zenodo DOI landing, an Academia.edu copy, the alexanarch record page /s/records/123/, or the PDF /papers/AXN-02A9.pdf) is not yet known. The URL on the Scholar entry would settle it, and the versioning question (§3) turns on it.
+0.4. The operator's Scholar profile (pasted 2026-11-01) lists 103 entries; 79 match registry records with confidence. They run from 2 January to 28 September 2026 and thin after June: 20 from May, 9 from June, 2 from July, 1 from August, 3 from September (#1626, #1627, #1644). Some entries are capture pages and short notes, so Scholar takes more than papers from the site. From this body only #123 is listed; *Many and One* (#1576) and *Nothing Before Us* (#1603) are absent.
+
+0.5. The record tags do not separate the indexed from the unindexed. #1626, #1627 and #1644 carry exactly the tags of the Theophrastus records: journal "Alexanarch", author "Sharks, Lee", PDF present.
+
+0.6. The strongest correlate is the PDF's scholarly apparatus. Read by pdftotext: #123, #1626 and #1627 each have a references heading and author–year citations (9, 4, 6); #1644 has 11 author–year citations. Every Theophrastus-line PDF checked (#1581, #1582, #1583, #1584, #1586, #1588, #1597, #1602, #1605, #1667) has no references heading and no author–year citation, as does #1579 and #1658: the line cites seated loci and archive deposits, by design ("relations established, readings withheld"). The correlate is not sufficient: #1576 has a references heading and 17 author–year citations and is unlisted, and #1081, with neither, is listed. Crawl timing and how Scholar reaches a page (links from pages it already indexes) remain open.
 
 ## 1. The body, by strand
 
@@ -139,8 +143,8 @@ The *Ancient Philosophy* submission of #123 (July 2026), Polansky's handling and
 
 ## 3. The versioning question, in plain terms
 
-3.1. Versioning #123 means a new deposit carrying #123's title and series, superseding v1.2, with the synthesis as its body. The new version gets a new record page and a new AXN. It would gain from #123's Scholar entry only if Scholar groups it with the indexed item. That depends on what Scholar indexed (§0.4): a Zenodo DOI landing or an Academia copy will not see the new version at all; the alexanarch record page /s/records/123/ will carry a "current version" link to it.
+3.1. Versioning #123 means a new deposit carrying #123's title and series, superseding v1.2, with the synthesis as its body. It gets a new record page and a new AXN; #123's page links to it as the current version. Whether Scholar then treats it as the same work, a new version of it or a separate item depends on how Scholar groups alexanarch records, which the indexed post-June examples (§0.4) would show.
 
-3.2. A new paper under its own name is a new thing. It starts its own indexing history, and joins the line as the synthesis that #123 and *Many and One* each make of part of the body.
+3.2. A new paper under its own name starts its own indexing history and joins the line as the synthesis that #123 and *Many and One* each make of part of the body.
 
-3.3. What the map shows either way: the indexing gap follows the DOI, and the DOI went with Zenodo. A synthesis inherits no DOI by being versioned. Whichever form it takes, the Theophrastus material reaches Scholar only through a route Scholar crawls: a DOI-bearing repository, a journal, or alexanarch pages Scholar is shown to index. The Scholar entry for #123 tells which.
+3.3. Either way, the Theophrastus records already sit where Scholar crawls, and they lack the apparatus nearly every indexed work carries. A synthesis written with a works-cited list of the scholarship it answers (the editions, Kahn, Denyer, the Theophrastus literature) would put that apparatus on the line for the first time; whether it is versioned or new decides only which record carries it.
