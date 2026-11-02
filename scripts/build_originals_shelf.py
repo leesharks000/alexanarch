@@ -145,6 +145,13 @@ def card(name, seat, card_no, tpl, title=None):
                             f'<span class="mono">{html.escape(str(o.get("commit",""))[:12])}</span></p>')
         if s.get("why_seated"):
             bits.append(f'<p><b>why seated</b> &middot; {html.escape(str(s["why_seated"]))}</p>')
+        r = s.get("research")
+        if isinstance(r, dict) and r.get("study"):
+            # a seat made in the course of active research names that research (the operator's rule of 2026-11-02)
+            bits.append(f'<p><b>seated for</b> &middot; {html.escape(r["study"])} &middot; {html.escape(str(r.get("for", "")))} '
+                        f'(<a href="https://github.com/leesharks000/alexanarch/blob/main/{html.escape(r.get("design", ""))}">design</a>'
+                        + (f', <a href="https://github.com/leesharks000/alexanarch/blob/main/{html.escape(r["draft"])}">draft</a>' if r.get("draft") else "")
+                        + ')</p>')
         prov = "".join(bits)
 
     head = re.sub(r"<title>[^<]*</title>",

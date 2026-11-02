@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-02T03:54:10.111921Z",
- "seats": 155,
- "lines_total": 6665791,
+ "_generated": "2026-11-02T14:05:47.476378Z",
+ "seats": 166,
+ "lines_total": 6997001,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -13248,7 +13248,1775 @@
    "scope": "Declared without text: Sotion of Alexandria, Διαδοχαὶ τῶν φιλοσόφων (Successions of the Philosophers), fragments, opens: open now (public domain in the United States); wanted: no usable copy found this session (Sotion is not among the authors the DFHG gives on 2026-11-01; his fragments are quoted in Diogenes Laertius, seated, and in Athenaeus, seated at 31/01); Ibn Abī Uṣaybiʿa, ed. A. Müller, ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ (Cairo; Königsberg, 1882), opens: open now (public domain in the United States); wanted: no usable copy found this session; the text is seated from a modern printing at 31/05; Ibn al-Qifṭī, ed. J. Lippert, Taʾrīkh al-ḥukamāʾ (Dieterich, Leipzig, 1903), opens: open now (public domain in the United States); wanted: no usable copy found this session (OpenITI holds an uncorrected OCR, 0646IbnQifti.TarikhHukama.Kraken220308195636-ara1, not seated); the Ikhbār is seated at 31/05; Valentin Rose, Aristoteles pseudepigraphus (Teubner, Leipzig, 1863), opens: open now (public domain); the Internet Archive holds several copies (valentiniroseari00aris and others) whose OCR reads the Greek as Latin; to be seated with an OCR made for it; Paul Moraux, Les listes anciennes des ouvrages d'Aristote (Éditions universitaires, Louvain, 1951), opens: 2047-01-01 in the United States (ninety-five years from first publication abroad); Ingemar Düring, Aristotle in the Ancient Biographical Tradition (Studia Graeca et Latina Gothoburgensia 5) (Almqvist & Wiksell, Göteborg, 1957), opens: 2053-01-01 in the United States (ninety-five years from first publication abroad); Ingemar Düring, Aristoteles: Darstellung und Interpretation seines Denkens (Carl Winter, Heidelberg, 1966), opens: 2062-01-01 in the United States (ninety-five years from first publication abroad); Rudolf Pfeiffer, Callimachus I: Fragmenta (Clarendon Press, Oxford, 1949), opens: 2045-01-01 in the United States (ninety-five years from first publication abroad); Rudolf Pfeiffer, Callimachus II: Hymni et epigrammata (Clarendon Press, Oxford, 1953), opens: 2049-01-01 in the United States (ninety-five years from first publication abroad); Fritz Wehrli, Die Schule des Aristoteles, Supplementband I: Hermippos der Kallimacheer (Schwabe, Basel, 1974), opens: 2070-01-01 in the United States (ninety-five years from first publication abroad); Fritz Wehrli, Die Schule des Aristoteles, Supplementband II: Sotion (Schwabe, Basel, 1978), opens: 2074-01-01 in the United States (ninety-five years from first publication abroad); Jan Bollansée, Die Fragmente der griechischen Historiker Continued IV A 3: Hermippos of Smyrna (Brill, Leiden, 1999), opens: 2095-01-01 in the United States (ninety-five years from first publication abroad); Rudolf Blum, Kallimachos und die Literaturverzeichnung bei den Griechen (Buchhändler-Vereinigung, Frankfurt am Main, 1977), opens: 2073-01-01 in the United States (ninety-five years from first publication abroad); Paul Moraux, Der Aristotelismus bei den Griechen I: Die Renaissance des Aristotelismus im I. Jh. v. Chr. (de Gruyter, Berlin, 1973), opens: 2069-01-01 in the United States (ninety-five years from first publication abroad); L. G. Westerink, Anonymous Prolegomena to Platonic Philosophy (North-Holland, Amsterdam, 1962), opens: 2058-01-01 in the United States (ninety-five years from first publication abroad); W. W. Fortenbaugh, P. M. Huby, R. W. Sharples, D. Gutas, Theophrastus of Eresus: Sources for his Life, Writings, Thought and Influence (Brill, Leiden, 1992), opens: 2088-01-01 in the United States (ninety-five years from first publication abroad). Wanted: Rose's Aristoteles pseudepigraphus with an OCR made for it, Müller's Ibn Abī Uṣaybiʿa and Lippert's Ibn al-Qifṭī first; then Pfeiffer in 2046 and 2050, Moraux in 2047, Düring in 2054.",
    "data": "https://www.alexanarch.org/data/corpora/transmission-wanted/",
    "axn": "AXN:0BDF.ORIGINAL.🕓❤️🗡️🏷️✨📜"
+  },
+  {
+   "seat": "EA-CORPORA-32/01",
+   "corpus": "pseudo-archytas",
+   "edition": "F. W. A. Mullach, Fragmenta philosophorum Graecorum I (Paris: Didot, 1860), Greek with Mullach's Latin, the Archytan fragments under ARCHYTAE TARENTINI FRAGMENTA — Internet Archive fragmentaphilo01mull (Toronto), the OCR layer",
+   "license": {
+    "payload": "The pseudo-Archytan writings (Hellenistic or early imperial) are public domain. Mullach's Fragmenta philosophorum Graecorum I (Paris: Didot, 1860) is public domain everywhere; Mullach died in 1882. The OCR layer is the Archive's.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "fragmentaphilo01mull",
+      "url": "https://archive.org/details/fragmentaphilo01mull",
+      "files": [
+       "fragmentaphilo01mull_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "fragmentaphilo01mull.pdf",
+       "url": "https://archive.org/download/fragmentaphilo01mull/fragmentaphilo01mull.pdf",
+       "size": 55626669,
+       "md5": "0a27cc1bf70c383120e5534115fce915",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 96850,
+   "verified_loci": [
+    "Mullach's heading for the Archytan fragments — 'ARCHYT/E TARENTINI' (the page reads ARCHYTAE; the OCR reads ARCHYT/E)",
+    "C. Logica: the book on the ten categories, in Mullach's Latin — 'De decem Categoriis liber.'",
+    "the categories book opens: five things belong to every art, matter, instrument, part, definition and end — 'materia , instrumentum, pars, definilio et finis.' (the page reads definitio; the OCR reads definilio)",
+    "Mullach on fifteen passages from the pseudo-Archytan book called the καθολικοὶ λόγοι δέκα, passed off as Ocellus — 'quindecim loca, e Pseudarchytz libro qui in- scribitur' (the page reads Pseudarchytae; the OCR reads Pseudarchytz)",
+    "Mullach: the letter of Plato to Archytas is spurious — 'nem. Nam spuria est Platonis ad Archytam'"
+   ],
+   "why_seated": "The pseudo-Archytan Categories is the case where the slot of the one name runs the other way: a book in Doric under an older name, read by the Neoplatonist commentators as Aristotle's source. The study reads it beside Simplicius's proof of the Categories' genuineness.",
+   "scope": "The volume's OCR layer entire: the Presocratics, Ocellus, Timaeus Locrus and the Pythagorean fragments in Mullach's Greek and Latin. The seat is held for the writings under Archytas's name, above all the book on the ten categories (Περὶ τῶν καθόλου λόγων, the καθολικοὶ λόγοι δέκα), which Simplicius (seated in aristotle-commentators, 31/04) takes as Archytas's and as the source Aristotle followed. Thesleff's The Pythagorean Texts of the Hellenistic Period (1965) and Szlezák's Pseudo-Archytas über die Kategorien (1972) are in copyright and go to 32/11.",
+   "data": "https://www.alexanarch.org/data/corpora/pseudo-archytas/"
+  },
+  {
+   "seat": "EA-CORPORA-32/02",
+   "corpus": "aldine-aristotle-1497",
+   "edition": "Aristotle and others, [Opera], ed. Aldus Manutius, vol. IV (Venice: Aldus Manutius, 1 June 1497), the second part of the volume as the Boston Public Library binds it: leaves 116–121 of the last foliation, the end of Aristotle's Metaphysics, Theophrastus's Metaphysics (ΘΕΟΦΡΑΣΤΟΥ ΤΩΝ ΜΕΤΑ ΤΑ ΦΥΣΙΚΑ), the scholion on it, the register and the Greek and Latin colophons — Internet Archive opera05aris, leaves n576–n588",
+   "license": {
+    "payload": "Printed in 1497, the volume is public domain everywhere. The scan is the Boston Public Library's (copy Q.403.89 FOLIO), served by the Internet Archive; the page images are held by URL and sha256. The transcription was made in session and is released with this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "opera05aris",
+      "url": "https://archive.org/details/opera05aris",
+      "pages_by_reference": [
+       {
+        "leaf": 576,
+        "url": "https://archive.org/download/opera05aris/page/n576.jpg",
+        "sha256_as_served": "b8c5648578a8b0df0bbbc9aed1347564acf62962086ad1b59acfe165740e14f7"
+       },
+       {
+        "leaf": 577,
+        "url": "https://archive.org/download/opera05aris/page/n577.jpg",
+        "sha256_as_served": "d70165c1ce6d671ac0d977510ae874818dc717d51c73b2afa3bb36dcaeff6182"
+       },
+       {
+        "leaf": 578,
+        "url": "https://archive.org/download/opera05aris/page/n578.jpg",
+        "sha256_as_served": "09a06a301c9fb61b62065351ad5577dae01905164dd6505668d25bb1b03d7193"
+       },
+       {
+        "leaf": 579,
+        "url": "https://archive.org/download/opera05aris/page/n579.jpg",
+        "sha256_as_served": "11d022e1d7d26acd52faffd3c5b9f4b8059390a91727772d55d12a227d926b8b"
+       },
+       {
+        "leaf": 580,
+        "url": "https://archive.org/download/opera05aris/page/n580.jpg",
+        "sha256_as_served": "01b839ae6c50836204bf3d92bc136af1d946478f5e138f5154657350d34d83a2"
+       },
+       {
+        "leaf": 581,
+        "url": "https://archive.org/download/opera05aris/page/n581.jpg",
+        "sha256_as_served": "43b31608f5fec3bcc5a6ab33adabc2a49790e1408a1a8a5ad85b037632e94997"
+       },
+       {
+        "leaf": 582,
+        "url": "https://archive.org/download/opera05aris/page/n582.jpg",
+        "sha256_as_served": "08afe0a3830070249114e86250a31d4542649caab88101d8ec8822b34ba69658"
+       },
+       {
+        "leaf": 583,
+        "url": "https://archive.org/download/opera05aris/page/n583.jpg",
+        "sha256_as_served": "30497e4dd4d578c71e80520b13365d3772538c9d24748db7ddcc1f10a212aa7b"
+       },
+       {
+        "leaf": 584,
+        "url": "https://archive.org/download/opera05aris/page/n584.jpg",
+        "sha256_as_served": "a78f8f340c8c7bc515d1105f2b8a2e14ef7da19701af905c75216a2e35292428"
+       },
+       {
+        "leaf": 585,
+        "url": "https://archive.org/download/opera05aris/page/n585.jpg",
+        "sha256_as_served": "18cedd8645640e5a0bffda365d6f215cc7c268b99eacec94d20fa6dcb822072e"
+       },
+       {
+        "leaf": 586,
+        "url": "https://archive.org/download/opera05aris/page/n586.jpg",
+        "sha256_as_served": "532e8f60f74b0322dc1a1d112515c74a022cc3a4cc6d45b47e4ee776cdac0e5e"
+       },
+       {
+        "leaf": 587,
+        "url": "https://archive.org/download/opera05aris/page/n587.jpg",
+        "sha256_as_served": "c478e6c1e59c38c971c4eb0df34aee7f3dd227a4f200ff9c679b133e139e3adf"
+       },
+       {
+        "leaf": 588,
+        "url": "https://archive.org/download/opera05aris/page/n588.jpg",
+        "sha256_as_served": "7ccd32ea11bb3d486bdbcb7222e7612d3b0207d32ea61b4e59d2f46059d3f177"
+       }
+      ],
+      "transcription": {
+       "file": "original/opera05aris/transcription/aldine-1497-vol4-transcription.txt",
+       "made": "2026-11-02, by eye in session from the page images",
+       "sha256": "f53b095eb8791e22191574d51406638cf8376de8ac5c2ac273ff92a1981e5655"
+      },
+      "why": "the fount is read by no OCR available; the leaves are held by reference and the passages the study cites are transcribed"
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 46,
+   "verified_loci": [
+    "f. 117r, the title of Theophrastus's Metaphysics — 'ΘΕΟΦΡΑΣΤΟΥ ΤΩΝ ΜΕΤΑ ΤΑ ΦΥΣΙΚΑ'",
+    "the scholion: Andronicus and Hermippus do not know this book — 'Τοῦτο τὸ βιβλίον, Ἀνδρόνικος μὲν καὶ Ἕρμιππος ἀγνοοῦσιν'",
+    "the scholion: Nicolaus mentions it in his study of Aristotle's Metaphysics, saying it is Theophrastus's — 'Νικόλαος δὲ ἐν τῇ θεωρίᾳ τῶν Ἀριστοτέλους μετὰ τὰ φυσικὰ μνημονεύει αὐτοῦ, λέγων εἶναι Θεοφράστου'",
+    "the register: one heading for the two Metaphysics — 'Ἀριστοτέλους καὶ Θεοφράστου τῶν μετὰ τὰ φυσικά.'",
+    "the Latin colophon — 'Excriptum Venetiis in domo Aldi Manutii'"
+   ],
+   "why_seated": "The first printed edition puts the two Metaphysics together and keeps the ancient note that the shorter one was missing from the catalogues of Andronicus and Hermippus and was assigned to Theophrastus by Nicolaus. The study reads the seam at the place the print first fixed it.",
+   "scope": "Thirteen leaves held as images (n576–n588): the last leaves of Aristotle's Metaphysics, all of Theophrastus's, the scholion printed after it, and the register and colophons that close the volume. Aldus printed the two Metaphysics consecutively, the running heads pairing the author's name on the verso with τῶν μετὰ τὰ φυσικά on the recto, and the register gathers both under one heading, Ἀριστοτέλους καὶ Θεοφράστου τῶν μετὰ τὰ φυσικά. The scholion, printed in the same fount after the text, records that Andronicus and Hermippus did not know the book, that neither mentions it in the list of Theophrastus's books, and that Nicolaus (of Damascus) mentions it in his study of Aristotle's Metaphysics as Theophrastus's. The volume's other works (Theophrastus's botany, the Problems, Alexander's Problems, the Mechanics, and the first books of the Metaphysics) are in the same scan and are not transcribed.",
+   "data": "https://www.alexanarch.org/data/corpora/aldine-aristotle-1497/"
+  },
+  {
+   "seat": "EA-CORPORA-32/03",
+   "corpus": "theophrastus-metaphysics-wimmer-1866",
+   "edition": "Theophrasti Eresii opera, quae supersunt, omnia, Graeca recensuit, Latine interpretatus est F. Wimmer (Paris: Didot, 1866) — Internet Archive theophrastioper00theogoog (Oxford, digitized by Google), the OCR layer",
+   "license": {
+    "payload": "Theophrastus is public domain. Wimmer's Theophrasti Eresii opera quae supersunt omnia (Paris: Didot, 1866) is public domain everywhere; the Archive marks the item NOT_IN_COPYRIGHT. The OCR layer is the Archive's.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "theophrastioper00theogoog",
+      "url": "https://archive.org/details/theophrastioper00theogoog",
+      "files": [
+       "theophrastioper00theogoog_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "theophrastioper00theogoog.pdf",
+       "url": "https://archive.org/download/theophrastioper00theogoog/theophrastioper00theogoog.pdf",
+       "size": 48853246,
+       "md5": "a00dcab18cc9eb0de74561e79c33ebd2",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 63999,
+   "verified_loci": [
+    "Wimmer's heading for the Metaphysics, in the Latin — 'THEOPHRASTI METAPHYSICA.'",
+    "Wimmer's preface: Brandis collated four codices for the twelfth piece, ἐκ τῶν μετὰ τὰ φυσικά — 'comparavit Brandis'",
+    "Wimmer's preface: Brandis gave their readings in his edition of the Metaphysics of Aristotle and Theophrastus — 'in editione sua Metaphysicorum Aristo- telis et Theophrasti exposuit'"
+   ],
+   "why_seated": "The nineteenth-century editions are where the note on the book's attribution passed from the print into the apparatus or out of the text. The study reads the Λ seam as the editions handled it.",
+   "scope": "The volume entire in the Archive's OCR, the Greek in a lower layer than the Latin. Wimmer prints the Metaphysics as the twelfth of the fragments under the title ἐκ τῶν μετὰ τὰ φυσικά and says in the preface that Brandis collated four codices for it and printed their readings in his edition of the Metaphysics of Aristotle and Theophrastus (Berlin, 1823), with Usener's emendations of 1858. A search of the OCR layer on 2026-11-02 found no copy of the scholion that the Aldine prints after the text (32/02), and the Teubner Wimmer already seated (theophrastus, tlg0093.tlg006) ends without it; whether the Didot prints it in a note the OCR missed is to be checked against the page. Brandis 1823 and Usener 1890, both public domain, were not found as scans and are queued; Ross and Fobes (1929), Laks and Most (1993) and Gutas (2010) go to 32/11.",
+   "data": "https://www.alexanarch.org/data/corpora/theophrastus-metaphysics-wimmer-1866/"
+  },
+  {
+   "seat": "EA-CORPORA-32/04",
+   "corpus": "philodemus-index-academicorum",
+   "edition": "S. Mekler, Academicorum philosophorum index Herculanensis (Berlin: Weidmann, 1902), the end of the preface, the sigla, the text of the columns and Mekler's chronological table — Internet Archive academicorumphil00mekluoft (Toronto), leaves n35–n157 (n39, which the OCR found blank, is not held), OCR in session",
+   "license": {
+    "payload": "Philodemus (d. c. 40 BCE) is public domain. Mekler's Academicorum philosophorum index Herculanensis (Berlin: Weidmann, 1902) is public domain in the United States (published before 1931); Mekler died in 1912, so it is public domain everywhere. The Archive marks the item NOT_IN_COPYRIGHT. The OCR was made in session from the Archive's page images and is released with this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "academicorumphil00mekluoft",
+      "url": "https://archive.org/details/academicorumphil00mekluoft",
+      "ocr": {
+       "engine": "Tesseract 5.3.4",
+       "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+       "sha256": {
+        "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+        "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+       },
+       "command": "tesseract nNN.jpg nNN -l grc+lat",
+       "run": "2026-11-02, in session"
+      },
+      "pages_by_reference": [
+       {
+        "leaf": 35,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n35.jpg",
+        "sha256_as_served": "3d7fef079ea20507a84f1a84589c2997558063e3646d18d07516903dc583ed17"
+       },
+       {
+        "leaf": 36,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n36.jpg",
+        "sha256_as_served": "5cf2cadd14e4dbfdf32bcdd7cd9c5a7300d2de4e75afe9ed53be5e1b5adcf93c"
+       },
+       {
+        "leaf": 37,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n37.jpg",
+        "sha256_as_served": "3d83caddba19ca4a96946f417b94bb44385404e9fa82657780d8a2261e2d8276"
+       },
+       {
+        "leaf": 38,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n38.jpg",
+        "sha256_as_served": "dc42e03fd8c4fb5a6409f49c6e9367973c248c2d08dacaabeeb8a99b742ffe39"
+       },
+       {
+        "leaf": 40,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n40.jpg",
+        "sha256_as_served": "1d61180f61a74b44a10a3ce9e92ae80f07abf79f173c543025130283960510a1"
+       },
+       {
+        "leaf": 41,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n41.jpg",
+        "sha256_as_served": "55c80c7dcaa85f6ec13a785773c5ee77e77d64ecad706ae5ca7890d5c0082635"
+       },
+       {
+        "leaf": 42,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n42.jpg",
+        "sha256_as_served": "14c11af8fe2fc67c880fea62d46fac677428d1e5c1f81689efbddb353cf1946e"
+       },
+       {
+        "leaf": 43,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n43.jpg",
+        "sha256_as_served": "bcb05068f23af8107e22fdf227f8a46eef57f58105436ae657b81da1493100af"
+       },
+       {
+        "leaf": 44,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n44.jpg",
+        "sha256_as_served": "1199412fe891d28deee18f573ceeb63f54c4f5ab84697f9d533ca9d9bbb7c02b"
+       },
+       {
+        "leaf": 45,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n45.jpg",
+        "sha256_as_served": "68c0b7cdb3ee74793316a14080b14f6d8102cb0a6f1c83a787fb8736aaac23e2"
+       },
+       {
+        "leaf": 46,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n46.jpg",
+        "sha256_as_served": "01a0ccc3a932288c1bf327f460afd1af37097b468a0d80e18741b7c7bae9f597"
+       },
+       {
+        "leaf": 47,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n47.jpg",
+        "sha256_as_served": "9f3945e2a0e0a522194f59903e2322e23900d1ce440e0f1f9d0eabaad3167b14"
+       },
+       {
+        "leaf": 48,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n48.jpg",
+        "sha256_as_served": "0f41828c52e52c20de038aab36ca355e42aeadca86fb73dd8c5f0284d17b6f0a"
+       },
+       {
+        "leaf": 49,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n49.jpg",
+        "sha256_as_served": "5cea5f2cc08ed8bbaa5b13ff0d232a065954b24e0ade4b43a6e10739064ec012"
+       },
+       {
+        "leaf": 50,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n50.jpg",
+        "sha256_as_served": "e4c8ec838c7f93c9501dd8c50c89b48c0c467f379d95f7cbbd8fb5cea9da8322"
+       },
+       {
+        "leaf": 51,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n51.jpg",
+        "sha256_as_served": "dbac003672399213069fe2b8ddb3c64b34753f0d69fbde08239f982b4d4e0f2d"
+       },
+       {
+        "leaf": 52,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n52.jpg",
+        "sha256_as_served": "47de4ea1e422d41afcac3ce1975f3aab172e9ba6fcc18a3fb59d0030a214ec72"
+       },
+       {
+        "leaf": 53,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n53.jpg",
+        "sha256_as_served": "878fe73c5f0eafcee3cac6a9a5537095cf7e632c0aa259d8604241091acc9736"
+       },
+       {
+        "leaf": 54,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n54.jpg",
+        "sha256_as_served": "d8ae94d06ceedda5637a59de44a0f2f21faa735b7b8b1fe69f02af2614231067"
+       },
+       {
+        "leaf": 55,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n55.jpg",
+        "sha256_as_served": "a38859a1d6afd3a6612d57050e8dff98a9f211dff8d8f9a7b4bc53106f6ebba4"
+       },
+       {
+        "leaf": 56,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n56.jpg",
+        "sha256_as_served": "ccd08eba8eacdf85dc2b5590297f3a4d2ef04cfddd32860ba9264e5a44b536f4"
+       },
+       {
+        "leaf": 57,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n57.jpg",
+        "sha256_as_served": "35c47951a2857407a177cd6531c3e0ae4434a8195b9947556e91f6a2168f384a"
+       },
+       {
+        "leaf": 58,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n58.jpg",
+        "sha256_as_served": "c7d9f4c6cc761eea2e499cd10907b79c20444cb558c16fa14271615477184a05"
+       },
+       {
+        "leaf": 59,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n59.jpg",
+        "sha256_as_served": "5c7daa0345f81f2781ec36cc201bff5f11b8299cd8d5d857e804fd60aa6654fc"
+       },
+       {
+        "leaf": 60,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n60.jpg",
+        "sha256_as_served": "190ac05fa13e0408e53f17195656405f5a949301775811266f7c9fc661ff2d48"
+       },
+       {
+        "leaf": 61,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n61.jpg",
+        "sha256_as_served": "062cdfc837933466460d4fb1ff89279b4ca2f6dc2ab8496e86de594778814988"
+       },
+       {
+        "leaf": 62,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n62.jpg",
+        "sha256_as_served": "3a36798ac8b10ab34752b13f1977d99383f86a22c58857e111e5ef0a59e05988"
+       },
+       {
+        "leaf": 63,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n63.jpg",
+        "sha256_as_served": "3f36ccd7fa5fd04fd4361a73c7ddd52804be9a458b5b82d8ba0417a464798a6e"
+       },
+       {
+        "leaf": 64,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n64.jpg",
+        "sha256_as_served": "464376acc780a9c11e36f443c960cd0e9c9be1d0145de138207b9ef8e50aa0f1"
+       },
+       {
+        "leaf": 65,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n65.jpg",
+        "sha256_as_served": "50ef608aad2e5a27ce82078be04d7a4d6ca4cb5a8595fe8cdb63b3472e568bc8"
+       },
+       {
+        "leaf": 66,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n66.jpg",
+        "sha256_as_served": "7097499d7f25ad2d399c26853be9449803e0261b521010ef1787e7d07ef7bd8e"
+       },
+       {
+        "leaf": 67,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n67.jpg",
+        "sha256_as_served": "67b9f4881de29e5934edd106bb2bbc81053b584289350830ac141888a05e8776"
+       },
+       {
+        "leaf": 68,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n68.jpg",
+        "sha256_as_served": "8d9b53b3bccc71ec8b5c931084455366735518a1850afa5f10ca8146ff00f52c"
+       },
+       {
+        "leaf": 69,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n69.jpg",
+        "sha256_as_served": "ac2d318fade104d13adbcd4a42ffb3134080430ac864c9fb5f3b2604db3a6b6f"
+       },
+       {
+        "leaf": 70,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n70.jpg",
+        "sha256_as_served": "261b098986bee7812ab3b8dda3e7060e1a610c15a22bd89291dd49c039705195"
+       },
+       {
+        "leaf": 71,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n71.jpg",
+        "sha256_as_served": "3bcb091e34c50d0ed2ce5e95c67a472668eb7a81e21b8352741991d69cca0d8a"
+       },
+       {
+        "leaf": 72,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n72.jpg",
+        "sha256_as_served": "c172645b81d991047c8ee56cfaa54d6888cefee54ee007ccdddc35dbe1fbe318"
+       },
+       {
+        "leaf": 73,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n73.jpg",
+        "sha256_as_served": "489690e7a02807b2b108f670ee327b20267f7499c3749905407d8515e3467dd6"
+       },
+       {
+        "leaf": 74,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n74.jpg",
+        "sha256_as_served": "4a698b31d97864cbb00e16b44718741d5bc4b6b4dd39173a49138e8f4f3e63ff"
+       },
+       {
+        "leaf": 75,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n75.jpg",
+        "sha256_as_served": "a4fe8c68816e0d4a3df4cab83ed6ca048ca3736080b713a710e468817cff7995"
+       },
+       {
+        "leaf": 76,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n76.jpg",
+        "sha256_as_served": "fc74e6025a89ccf9c35106cb3117eb7636a71532a74c62d09ede1cc00c47cfd2"
+       },
+       {
+        "leaf": 77,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n77.jpg",
+        "sha256_as_served": "c22b95f350b11e2954ad3e4aaf258d73d633557d96b2e17b84cf023a85e1a485"
+       },
+       {
+        "leaf": 78,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n78.jpg",
+        "sha256_as_served": "0d84d5951f1935ca0a772d13500537521faa78319526d5906f3aa811b45ebe45"
+       },
+       {
+        "leaf": 79,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n79.jpg",
+        "sha256_as_served": "a1e2e3ff7ae0f250468cffdb1725b646960fe5b63dd6b79c07c842fec12ce243"
+       },
+       {
+        "leaf": 80,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n80.jpg",
+        "sha256_as_served": "d744d15426ba21f37f33a57b5b51c80bb60d0eb291a7a0b015e301756597e8a5"
+       },
+       {
+        "leaf": 81,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n81.jpg",
+        "sha256_as_served": "d645bf88791ee89b920cae79d2da70779516f5da19bc52527b2ffe27720ac066"
+       },
+       {
+        "leaf": 82,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n82.jpg",
+        "sha256_as_served": "a68ea0ca1f19f591c757956e7c4062cb9eeb29150e3facbbbf21bbd5c2be1e8a"
+       },
+       {
+        "leaf": 83,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n83.jpg",
+        "sha256_as_served": "d807413bcd0bfce682eef1abc9a64ece2f00e70ccd64c982ab30f0a92cb3b852"
+       },
+       {
+        "leaf": 84,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n84.jpg",
+        "sha256_as_served": "a1244952d4537246e9fe00224ccc1fb4f8b9378ceb59fccc308d0dc85443653e"
+       },
+       {
+        "leaf": 85,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n85.jpg",
+        "sha256_as_served": "5377a4ccb38806eda583b37f6d6203af21bfa5f95803deabf22262d118e217e7"
+       },
+       {
+        "leaf": 86,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n86.jpg",
+        "sha256_as_served": "0b1200c6c688fb2dc9109d3ac19a43e740b80e18b1c953ee81367833955d13ea"
+       },
+       {
+        "leaf": 87,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n87.jpg",
+        "sha256_as_served": "54ef09d4318bbd6d6dd9e7ad750570225f2bea216447809463423bc68847e691"
+       },
+       {
+        "leaf": 88,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n88.jpg",
+        "sha256_as_served": "d4e935eda590985a77117330214417abe675e235a054c4e2eba5420dd9a65cdc"
+       },
+       {
+        "leaf": 89,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n89.jpg",
+        "sha256_as_served": "82fb36f60f4f1c2ced1f4cb87c8a4c246d829b19d93b4477bee37d422b0e22ff"
+       },
+       {
+        "leaf": 90,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n90.jpg",
+        "sha256_as_served": "c9c6b32342bd8c323d1874fef00a6f3de83f7d83d5a6cc82b820081e2d0a44bb"
+       },
+       {
+        "leaf": 91,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n91.jpg",
+        "sha256_as_served": "e7072a761edc85f01734cb203e305c40eda09926f12c22aab113bded9fe1ed68"
+       },
+       {
+        "leaf": 92,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n92.jpg",
+        "sha256_as_served": "c4d413ef535287efba698c91cd1487f2beb5114b3c99eacd62cc154061116ba1"
+       },
+       {
+        "leaf": 93,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n93.jpg",
+        "sha256_as_served": "659e76b8ac9b86eaf78b0fefaac3166240d3308eb8d7a03eecb0606712639670"
+       },
+       {
+        "leaf": 94,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n94.jpg",
+        "sha256_as_served": "9750b1b2644df3b1a86d9d0b6f4bfaa79e111cbc858cd7c4987789dbe07712f7"
+       },
+       {
+        "leaf": 95,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n95.jpg",
+        "sha256_as_served": "763ae33a9362f78a2764c76a6423586217eea91f3af2319bc10c0661ce9d5a50"
+       },
+       {
+        "leaf": 96,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n96.jpg",
+        "sha256_as_served": "2819484b361a27415d570d9bdb7f2a4029aef44c02d7cd76f0859eecc56c919f"
+       },
+       {
+        "leaf": 97,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n97.jpg",
+        "sha256_as_served": "8bf60193d36dcdd8f540743afc8c237ec43428c7bffaf20ef74f13780195dc03"
+       },
+       {
+        "leaf": 98,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n98.jpg",
+        "sha256_as_served": "e06db4145bcc8d123779434aee3768baaae6aa0b924ab666d4933ff4c5560724"
+       },
+       {
+        "leaf": 99,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n99.jpg",
+        "sha256_as_served": "bba39d4c2c231d861597f3575b1ff98d39167a4712def463472416842d1035b7"
+       },
+       {
+        "leaf": 100,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n100.jpg",
+        "sha256_as_served": "17f27706f2d6a275633b884f6f5eba9739e9bd6c34fbdf2ab219c6f0b190423b"
+       },
+       {
+        "leaf": 101,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n101.jpg",
+        "sha256_as_served": "e662ca24dafff35520c6b837e15934adf04375c49b012421c35bbd68c87ecc57"
+       },
+       {
+        "leaf": 102,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n102.jpg",
+        "sha256_as_served": "cdd1a25dae384a232f4f356c8c3cb6598de9f8fe9c56581aa0dbbf05dad30bbd"
+       },
+       {
+        "leaf": 103,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n103.jpg",
+        "sha256_as_served": "b64b80a1feae699aa3d7e3d9a987a2027e8807c1c13b7c3d2e25978e9b7a0940"
+       },
+       {
+        "leaf": 104,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n104.jpg",
+        "sha256_as_served": "69305130702c348e6ef5682fffc7c11feeb620e3657f2ca25f36a2f5ceb71cd1"
+       },
+       {
+        "leaf": 105,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n105.jpg",
+        "sha256_as_served": "b60fff096a9a1f20d06de6c3786718722c38431864a97abb43219da33caa5c76"
+       },
+       {
+        "leaf": 106,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n106.jpg",
+        "sha256_as_served": "85c3c2bc5b658486e90d54992a6c937878c2a5842f657357b715415a9a86cdac"
+       },
+       {
+        "leaf": 107,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n107.jpg",
+        "sha256_as_served": "8233c0d1fc5184e2302f39716fd841c052eeb5299bab985793c3cd88c7c65831"
+       },
+       {
+        "leaf": 108,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n108.jpg",
+        "sha256_as_served": "6e382675f2de5833bfade679e4074aa614a05b056b55924bfacdce3c7c99df3e"
+       },
+       {
+        "leaf": 109,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n109.jpg",
+        "sha256_as_served": "670e297d20cb147df3e2610174518afa0f6496bdcc025eebbfa05f41aad394c9"
+       },
+       {
+        "leaf": 110,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n110.jpg",
+        "sha256_as_served": "8e89cb4e5af710800e9648f5f6658a724eb9258df6877149a1a65042bf599979"
+       },
+       {
+        "leaf": 111,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n111.jpg",
+        "sha256_as_served": "7a56bf2a8a688db7f00a38a4d4f63b6e6e9fbb583cf617c11d83096eca21604a"
+       },
+       {
+        "leaf": 112,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n112.jpg",
+        "sha256_as_served": "fceb42384aac002ee41a5ee969e75c0e40b7ee3cfc6702d66e2fe2e4ac0eabcf"
+       },
+       {
+        "leaf": 113,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n113.jpg",
+        "sha256_as_served": "f4d8a5500893027b0e579ba972812cc4b8255f4fbdf5f9681c1d90d22cf8086d"
+       },
+       {
+        "leaf": 114,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n114.jpg",
+        "sha256_as_served": "409c0dd39da38a5e44bcbd5b65dc671114c7c98d218bf9b0f6b134a44ba2be56"
+       },
+       {
+        "leaf": 115,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n115.jpg",
+        "sha256_as_served": "9be8db5799fe5af131e9dcb9ee3e936f5a0788dc9543beb16cf28c54264af8cc"
+       },
+       {
+        "leaf": 116,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n116.jpg",
+        "sha256_as_served": "98a78b60c1a237235ef3ab914fc909b598da53410fdb061cd576cbf8f09a1e64"
+       },
+       {
+        "leaf": 117,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n117.jpg",
+        "sha256_as_served": "1561822b535e77e66fdff3ca890380214821b28f76cdd93e02ef195f3aa8c23b"
+       },
+       {
+        "leaf": 118,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n118.jpg",
+        "sha256_as_served": "3b2ead59213e05e09f0aecbe9b8456884c6186d93fb3315f4dafdb7c3cc6d67f"
+       },
+       {
+        "leaf": 119,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n119.jpg",
+        "sha256_as_served": "b9d1d28d371c1ac5cf68020ed04a9653ba7c1c10a453d6a4b461a9512b5591a5"
+       },
+       {
+        "leaf": 120,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n120.jpg",
+        "sha256_as_served": "326c53004d2bffeadee8d757b09b092855e4461433e7e4cabcc58fb6c4498caa"
+       },
+       {
+        "leaf": 121,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n121.jpg",
+        "sha256_as_served": "d332d5cb8823e52e61d4709b6d63cc31b706efa8b01ec839a3b36257bb223ac5"
+       },
+       {
+        "leaf": 122,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n122.jpg",
+        "sha256_as_served": "54b263c223033505c38debd1308bc6da0c4e4aec9cb8381ca177f26bf4b560d9"
+       },
+       {
+        "leaf": 123,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n123.jpg",
+        "sha256_as_served": "721974f7049676813b46d0025b90e3ddb80e76cb2e46de6d68b64a09066c399c"
+       },
+       {
+        "leaf": 124,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n124.jpg",
+        "sha256_as_served": "8fae31ae1018f90125024e4ef187cbca78a6b63557d379c723595ab2f594f5ca"
+       },
+       {
+        "leaf": 125,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n125.jpg",
+        "sha256_as_served": "31dc4bb4e9594ef97615958dcddbf50dd60625ec3571846b43189dc6ae010195"
+       },
+       {
+        "leaf": 126,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n126.jpg",
+        "sha256_as_served": "2078c1524472c82434278df308fd9d9a066f9460f4b0e81846269315dff664f1"
+       },
+       {
+        "leaf": 127,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n127.jpg",
+        "sha256_as_served": "b03f9aeb1fb7ba042e5799c628139d004dd5136ad5d5cdb25024595fe50808a9"
+       },
+       {
+        "leaf": 128,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n128.jpg",
+        "sha256_as_served": "ebed1a81d061ced7709d34a111d4ada567cdc4ee620723f9f3c03703eef88b50"
+       },
+       {
+        "leaf": 129,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n129.jpg",
+        "sha256_as_served": "2080c55645e8a0a958d05b974bda6856ac39924154076e9300ba75327804a9a7"
+       },
+       {
+        "leaf": 130,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n130.jpg",
+        "sha256_as_served": "2c665569bb39eaf5e3a3b41990c1b17108e82ea3dd56410412f1c9a4a5a78825"
+       },
+       {
+        "leaf": 131,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n131.jpg",
+        "sha256_as_served": "ed7041e9ed2b8512849d61915a542574d7409c6abbcc67bcc8b0fadde900c918"
+       },
+       {
+        "leaf": 132,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n132.jpg",
+        "sha256_as_served": "d853f2a826edd366ce425e1512bb7242d73d08c34207020bd490a67148f23074"
+       },
+       {
+        "leaf": 133,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n133.jpg",
+        "sha256_as_served": "1f72a8c76b34ea473a5e74c6439e2a6e832e6e0faf5dc6d41606763973b332ea"
+       },
+       {
+        "leaf": 134,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n134.jpg",
+        "sha256_as_served": "c4f629b4eda61e70d54d4a1901003fe956c9e4a5a8c12a24da40c1a2ca7df0e8"
+       },
+       {
+        "leaf": 135,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n135.jpg",
+        "sha256_as_served": "868799ef6c53e38c12f8d3aacb361298cd470414d6d95b41496cd4e1cfc82e3e"
+       },
+       {
+        "leaf": 136,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n136.jpg",
+        "sha256_as_served": "e6b243a5be0e3954bdf179f38f5dd232d080d2ebbbc35a99bb8df5adb6b2297c"
+       },
+       {
+        "leaf": 137,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n137.jpg",
+        "sha256_as_served": "67f3c1a34296a1c729268f970de45ac4ab89d9db58a6e3deb31b449c12ef2f0b"
+       },
+       {
+        "leaf": 138,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n138.jpg",
+        "sha256_as_served": "0c3b89e58f1520766d10b36d44541a588568d4b8ba524b3a0a4d95ae51e1b8a7"
+       },
+       {
+        "leaf": 139,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n139.jpg",
+        "sha256_as_served": "ddb6dce0bd2e9bcfde692d76c364d6ab346d21d719fa1258e4948035c6a78732"
+       },
+       {
+        "leaf": 140,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n140.jpg",
+        "sha256_as_served": "cdbe74bbae323e3c77f808591b3ace2cc95feca5370c8583ac461b9b4665c853"
+       },
+       {
+        "leaf": 141,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n141.jpg",
+        "sha256_as_served": "91bda36c55880c9d313e43172361b110691035bc5458017060d7289150610829"
+       },
+       {
+        "leaf": 142,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n142.jpg",
+        "sha256_as_served": "9c05ed68083b7dbde68fd228590ac8507d4596990a3252d3528d08e08df28ad6"
+       },
+       {
+        "leaf": 143,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n143.jpg",
+        "sha256_as_served": "811fa15aa000f80beed5c236f80522002268d772dd4b5fa0cfa553d484a1061b"
+       },
+       {
+        "leaf": 144,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n144.jpg",
+        "sha256_as_served": "370482915a8620595ae2c4777edfe8b0e39a1c024b8ad11b4a56e059e1210f23"
+       },
+       {
+        "leaf": 145,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n145.jpg",
+        "sha256_as_served": "d502b24a52bd265b5e2a313a97e9cd5f8382e681c9cd19042bb9bc0624aa6237"
+       },
+       {
+        "leaf": 146,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n146.jpg",
+        "sha256_as_served": "2ca175b91cd7c3f53f16ec6abcca3ab7470a5fe2055cd94f68192545900f9c91"
+       },
+       {
+        "leaf": 147,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n147.jpg",
+        "sha256_as_served": "a456340f5ffae0309dc6493940e9de8e9420896f80ec2d548cc7ec8481c06cd2"
+       },
+       {
+        "leaf": 148,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n148.jpg",
+        "sha256_as_served": "d20cf90f45567368cf42a095b8093fdd46f377e518f4010c82ac66a76022cd19"
+       },
+       {
+        "leaf": 149,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n149.jpg",
+        "sha256_as_served": "85f71311f280ecaeefa75cf29ea2b699c67bae141418f42c9e999d92de9821fb"
+       },
+       {
+        "leaf": 150,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n150.jpg",
+        "sha256_as_served": "88b1edb3b5fefbf5ee31085bc1f97b227ea9be1bf47d278625eea15c052c4b39"
+       },
+       {
+        "leaf": 151,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n151.jpg",
+        "sha256_as_served": "536f5d3dc5e2eb8e8d05f68070e9101e92d1089069df8e9b68b21015aab12a48"
+       },
+       {
+        "leaf": 152,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n152.jpg",
+        "sha256_as_served": "a1390deaf5dbde2e6264106f6dfb3349148ed5b8a37084e065da272b4684a498"
+       },
+       {
+        "leaf": 153,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n153.jpg",
+        "sha256_as_served": "48983da0587bdfa50d4b894a3bc7a5ee76b9c8da34a73468e5a28da5fd98aaa7"
+       },
+       {
+        "leaf": 154,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n154.jpg",
+        "sha256_as_served": "45d076812a22c3a30069d6b47c3ab20ca86fc6d424acb3fdd46a7358b19d6540"
+       },
+       {
+        "leaf": 155,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n155.jpg",
+        "sha256_as_served": "4a57901a4ce95fb256969defb4636b16f5c033910cca6b6bda76ccecb62509a6"
+       },
+       {
+        "leaf": 156,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n156.jpg",
+        "sha256_as_served": "550e788bae1f5a3c7938d90882b666d4b3dc9f4a0bf499913d3e9115d90391f8"
+       },
+       {
+        "leaf": 157,
+        "url": "https://archive.org/download/academicorumphil00mekluoft/page/n157.jpg",
+        "sha256_as_served": "a81ae88ef629ea196c998d7dcf1b18a84c4c66b9965dd9bca639b98c7838dc88"
+       }
+      ],
+      "why": "the Archive's own OCR layer reads the Greek as Latin; the pages were OCR'd in session and the images are held by reference"
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 7414,
+   "verified_loci": [
+    "Col. I, the first column of the text — 'Col. I. (13. 730 O. 162 N.)'",
+    "the schools of Plato and Eudoxus — 'Πλάτωνος χαὶ Εὐδόξου διατριβαί' (the page reads καὶ; the OCR reads χαὶ)",
+    "Col. VI, Plato's pupils: Mekler's restored text — 'Col. VI. (18. 735 0. 167 N)' (the page reads 735 O.; the OCR reads 735 0.)",
+    "Col. VI, apparatus: the names of Speusippus and Xenocrates supplied by Spengel from Diogenes — 'Speusippi et Xenocratis nomina Diogene conl. suppl. Sp.'",
+    "Col. VI, testimonia: Diogenes III.46, the list of Plato's pupils the supplement is drawn from — 'μαϑηταὶ δ᾽ αὐτοῦ Σπεύσιππος ᾿Αϑηναῖος' (the OCR writes ϑ for θ)"
+   ],
+   "why_seated": "The Index Academicorum is a history of the Academy written as a succession of named heads and pupils, with the lives and the books attached to each name. The study reads it beside Diogenes Laertius and the Peripatetic wills as the Academy's own form of the slot.",
+   "scope": "Mekler's edition from the end of its preface through the text and his chronological table, up to the indices (pp. XXXIII–120): the columns of PHerc. 1021 and 164, each printed in the apographs' majuscule with Mekler's restoration beneath, an apparatus naming who supplied each supplement, and the parallel testimonia. At Col. VI, the list of Plato's pupils, the apparatus says the names of Speusippus and Xenocrates are supplied by Spengel by comparison with Diogenes (Speusippi et Xenocratis nomina Diogene conl. suppl. Sp.), and the testimonia print Diogenes III.46. Dorandi's edition (1991) is in copyright and goes to 32/11.",
+   "data": "https://www.alexanarch.org/data/corpora/philodemus-index-academicorum/"
+  },
+  {
+   "seat": "EA-CORPORA-32/05",
+   "corpus": "dionysius-ad-ammaeum",
+   "edition": "Dionysius of Halicarnassus, Ἐπιστολὴ πρὸς Ἀμμαῖον (First Letter to Ammaeus), ed. H. Usener and L. Radermacher, Dionysii Halicarnasei opuscula I (Leipzig: Teubner, 1899) — Perseus TEI tlg0081.tlg008.perseus-grc2",
+   "license": {
+    "payload": "Dionysius (fl. late first century BCE) is public domain. Usener and Radermacher's Dionysii Halicarnasei opuscula I (Leipzig: Teubner, 1899) is public domain everywhere. The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/341e309c821d5eca8c976bebca77c28b10bad58f/data/tlg0081/tlg008/tlg0081.tlg008.perseus-grc2.xml",
+      "source": "Perseus Digital Library, canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "341e309c821d5eca8c976bebca77c28b10bad58f",
+      "file": "data/tlg0081/tlg008/tlg0081.tlg008.perseus-grc2.xml"
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 26,
+   "verified_loci": [
+    "1, a Peripatetic undertook to show that Demosthenes learned his art from Aristotle's Rhetoric — 'ὅτι Δημοσθένης τὰς ῥητορικὰς τέχνας παρʼ ἐκείνου μαθὼν εἰς τοὺς ἰδίους μετήνεγκε λόγους'",
+    "the Rhetoric dated after the Olynthian war by Aristotle's own words — 'οὑτωσὶ μὲν δὴ σαφῶς αὐτὸς ὁ φιλόσοφος ἀποδεικνύει μετὰ τὸν Ὀλυνθιακὸν πόλεμον γεγραμμένας ὑπʼ αὐτοῦ τὰς τέχνας'",
+    "the archon year taken from Philochorus's Atthis, verbatim — 'ὡς δηλοῖ Φιλόχορος ἐν ἕκτῃ βύβλῳ τῆς Ἀτθίδος κατὰ λέξιν οὕτω γράφων'"
+   ],
+   "why_seated": "An ancient chronology of a corpus that names its evidence, quotes its sources verbatim and builds the order from them is the control for the study's question of how the order of the works was fixed. The Peripatetic claim it refutes is itself a case of the school's founder made the source of what came after him.",
+   "scope": "The First Letter to Ammaeus entire. A Peripatetic had claimed that Demosthenes formed his speeches on Aristotle's Rhetoric; Dionysius answers by dating, setting the speeches by archon years from Philochorus and the Rhetoric by the events it mentions, and declaring each step of evidence as he takes it.",
+   "data": "https://www.alexanarch.org/data/corpora/dionysius-ad-ammaeum/"
+  },
+  {
+   "seat": "EA-CORPORA-32/06",
+   "corpus": "cicero-ad-atticum",
+   "edition": "Cicero, Epistulae ad Atticum, ed. L. C. Purser, M. Tulli Ciceronis Epistulae II (Oxford: Clarendon Press, 1903) — Perseus TEI phi0474.phi057.perseus-lat2",
+   "license": {
+    "payload": "Cicero is public domain. Purser's Epistulae II (Oxford: Clarendon Press, 1903) is public domain in the United States (published before 1931); Purser died in 1932, and the edition is public domain in the European Union. The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0474/phi057/phi0474.phi057.perseus-lat2.xml",
+      "source": "Perseus Digital Library, canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0474/phi057/phi0474.phi057.perseus-lat2.xml"
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 4017,
+   "verified_loci": [
+    "Att. IV.16.2, prefaces in each book, as Aristotle in the books he calls exoteric — 'quoniam in singulis libris utor prohoemiis ut Aristoteles in iis quos ἐξωτερικοὺς vocat'",
+    "Att. IV.16.2, the speakers of the De re publica — 'in Africani personam et Phili et Laeli et Manili contuli'"
+   ],
+   "why_seated": "Cicero is the first Roman reader and knows Aristotle as the author of dialogues with prefaces in his own voice. The letter shows a reader in 54 BCE taking the exoteric works as Aristotle's form, before the treatises circulated under the name.",
+   "scope": "The sixteen books of letters to Atticus entire. At IV.16.2 (54 BCE) Cicero describes the dialogue he is writing, the De re publica, and says he uses a preface in each book as Aristotle does in the works he calls exoteric. The cicero seat (EA-CORPORA-13/03) holds De finibus, the Academica and the Topica, and not the letters; it was checked first, as the design asked.",
+   "data": "https://www.alexanarch.org/data/corpora/cicero-ad-atticum/"
+  },
+  {
+   "seat": "EA-CORPORA-32/07",
+   "corpus": "schleiermacher-platons-werke-1804",
+   "edition": "Platons Werke von F. Schleiermacher, Ersten Theiles erster Band (Berlin: Realschulbuchhandlung, 1804): the Einleitung, then Phaedrus, Lysis, Protagoras, Laches with their introductions — Internet Archive 10237328bsb (Bayerische Staatsbibliothek), the OCR layer",
+   "license": {
+    "payload": "Platons Werke von F. Schleiermacher, Ersten Theiles erster Band (Berlin: Realschulbuchhandlung, 1804) is public domain everywhere; Schleiermacher died in 1834. The OCR layer is the Archive's, made from the Bayerische Staatsbibliothek's scan.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "10237328bsb",
+      "url": "https://archive.org/details/10237328bsb",
+      "files": [
+       "10237328bsb_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "10237328bsb.pdf",
+       "url": "https://archive.org/download/10237328bsb/10237328bsb.pdf",
+       "size": 275188426,
+       "md5": "133a7a67fd1e5f141a7a8e930f7d7db4",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 23324,
+   "verified_loci": [
+    "the Einleitung opens on Diogenes's life, set before the Greek editions — 'ein so rohes, ohne alles Urtheil zusammenge-'",
+    "a natural order and a necessary relation of the dialogues to one another — 'eine natürliche Folge und eine nothwendige Be-'",
+    "to restore this natural order, against all previous attempts to arrange the works — 'gen Versuchen zur Anordnung der Platonischen'"
+   ],
+   "why_seated": "Schleiermacher made the order of the dialogues a question of one mind's development and put the received life aside to do it. The study reads the Einleitung as the modern founding of the order that later chronologies inherit.",
+   "scope": "The first volume of the first edition entire in the Archive's OCR. The general Einleitung sets aside the biography from Diogenes that the Greek editions printed first, and proposes to restore the natural order (natürliche Folge) of the dialogues, in which each presupposes the effect of the one before. The second edition (1817) is on the Archive as well and is not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/schleiermacher-platons-werke-1804/"
+  },
+  {
+   "seat": "EA-CORPORA-32/08",
+   "corpus": "campbell-sophistes-politicus",
+   "edition": "L. Campbell, The Sophistes and Politicus of Plato, with a revised text and English notes (Oxford: Clarendon Press, 1867) — Internet Archive sophistespolitic00plat (Library of Congress), the OCR layer",
+   "license": {
+    "payload": "Published in Oxford by the Clarendon Press in 1867, the book is public domain everywhere; Campbell died in 1908. The Library of Congress, whose copy the Archive serves, is unaware of any copyright restriction. The OCR layer is the Archive's.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sophistespolitic00plat",
+      "url": "https://archive.org/details/sophistespolitic00plat",
+      "files": [
+       "sophistespolitic00plat_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "sophistespolitic00plat.pdf",
+       "url": "https://archive.org/download/sophistespolitic00plat/sophistespolitic00plat.pdf",
+       "size": 36157889,
+       "md5": "1829d051b7320989b43b2a5a5cf277a7",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 66156,
+   "verified_loci": [
+    "General Introduction §6: structure, style and diction, illustrated from the Philebus, Timaeus and Laws — 'is their structure, style, and diction, which, however, receive considerable illustration from the Philebus, Timeeus, and Laws.' (the page reads Timaeus; the OCR reads Timeeus)",
+    "the Laws as the point of comparison — 'Plato afterwards embodied in the Laws.'"
+   ],
+   "why_seated": "Campbell's test made the order of the dialogues a count of words, and the count assumes one writer whose style moves in one direction. The study reads it as the method that fixed the late group the later chronologies keep.",
+   "scope": "The book entire in the Archive's OCR: the General Introduction, the introductions to each dialogue, the Greek text and the notes. In the General Introduction Campbell groups the Sophist and Statesman with the Philebus, Timaeus and Laws by their vocabulary and diction, an early argument from style for a late group of dialogues.",
+   "data": "https://www.alexanarch.org/data/corpora/campbell-sophistes-politicus/"
+  },
+  {
+   "seat": "EA-CORPORA-32/09",
+   "corpus": "tennemann-platonische-philosophie",
+   "edition": "W. G. Tennemann, System der Platonischen Philosophie, vol. I (Leipzig: Barth, 1792), with the life of Plato and the part on the order of the writings — Internet Archive systemderplaton00tenngoog (Oxford, digitized by Google), the OCR layer; W. G. Tennemann, Geschichte der Philosophie, vol. II (Leipzig: Barth, 1799), with Plato's writings and philosophy — Internet Archive bub_gb_NPMGAAAAcAAJ (digitized by Google), the OCR layer",
+   "license": {
+    "payload": "Both books were published in Leipzig by Barth (1792; 1799) and are public domain everywhere; Tennemann died in 1819. The OCR layers are the Archive's.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "systemderplaton00tenngoog",
+      "url": "https://archive.org/details/systemderplaton00tenngoog",
+      "files": [
+       "systemderplaton00tenngoog_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "systemderplaton00tenngoog.pdf",
+       "url": "https://archive.org/download/systemderplaton00tenngoog/systemderplaton00tenngoog.pdf",
+       "size": 29100062,
+       "md5": "58409962ff137502d1325a050505fadf",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_NPMGAAAAcAAJ",
+      "url": "https://archive.org/details/bub_gb_NPMGAAAAcAAJ",
+      "files": [
+       "bub_gb_NPMGAAAAcAAJ_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "bub_gb_NPMGAAAAcAAJ.pdf",
+       "url": "https://archive.org/download/bub_gb_NPMGAAAAcAAJ/bub_gb_NPMGAAAAcAAJ.pdf",
+       "size": 57768372,
+       "md5": "ad174e2029978f8b01b88838eea08843",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 64508,
+   "verified_loci": [
+    "System I, part two: on the chronological order of the Platonic writings — 'Ueber die Zeitfolge der Platonifchen Schriften.' (the page reads Platonischen with a long s; the OCR reads Platonifchen)",
+    "System I: it matters for no writer when he made a given writing, least of all for Plato — 'Schrift verfertiger hat, am allerwenigſten aber beim' (the page reads verfertiget; the OCR reads verfertiger)",
+    "Geschichte II: the running head over the account of Plato's writings and philosophy — 'Platons Schriften und Philoſophie.'"
+   ],
+   "why_seated": "Tennemann is the reader Hegel faults for extracting the determinations of the dialogues as a finished system and losing their movement. The study reads the books Hegel read.",
+   "scope": "Two books entire in the Archive's OCR (Fraktur, read with errors). The System sets out Plato's life, then the chronological order of the writings, then the system extracted from them; the second volume of the Geschichte gives Plato's writings and philosophy again in the history's frame, and is the volume Hegel's notes to the lectures on Plato cite as Tennemann B. II (32/10).",
+   "data": "https://www.alexanarch.org/data/corpora/tennemann-platonische-philosophie/"
+  },
+  {
+   "seat": "EA-CORPORA-32/10",
+   "corpus": "hegel",
+   "edition": "G. W. F. Hegel, Differenz des Fichte'schen und Schelling'schen Systems der Philosophie in Beziehung auf Reinhold's Beyträge zur leichtern Uebersicht des Zustands der Philosophie zu Anfang des neunzehnten Jahrhunderts, 1stes Heft (Jena: Seidler, 1801) — Internet Archive 10045974 (Bayerische Staatsbibliothek), leaves n7–n60, OCR in session; G. W. F. Hegel, Vorlesungen über die Geschichte der Philosophie II, ed. K. L. Michelet, Werke XIV (Berlin: Duncker und Humblot, 1833), the first part of the lecture on Plato, pp. 169–241 (the life, the writings and the dialectic) — Internet Archive bub_gb_4ZpBzREnAIMC (digitized by Google), leaves n178–n250, OCR in session",
+   "license": {
+    "payload": "Hegel (d. 1831) is public domain, as are the Differenzschrift (Jena: Seidler, 1801) and Michelet's edition of the lectures in the Werke (Berlin: Duncker und Humblot, 1833); Michelet died in 1893. The OCR was made in session from the Archive's page images (the Bayerische Staatsbibliothek's scan of 1801 and Google's of 1833) and is released with this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "10045974",
+      "url": "https://archive.org/details/10045974",
+      "ocr": {
+       "engine": "Tesseract 5.3.4",
+       "models": "tessdata_best deu_latf, the Fraktur model (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+       "sha256": {
+        "deu_latf.traineddata": "429b8c33d37e1a4823a2bb082a644ff13e252f735b7945e08a518d22ddcc459e"
+       },
+       "command": "tesseract nNN.jpg nNN -l deu_latf",
+       "run": "2026-11-02, in session"
+      },
+      "pages_by_reference": [
+       {
+        "leaf": 7,
+        "url": "https://archive.org/download/10045974/page/n7.jpg",
+        "sha256_as_served": "998d6f79a0c6b0ddbfcca112fe3f38a625cc24d25b3fb8f27d61dc0106c61c77"
+       },
+       {
+        "leaf": 8,
+        "url": "https://archive.org/download/10045974/page/n8.jpg",
+        "sha256_as_served": "daf886c33a5bffe183bb80e260b05cea71633e52a229438bbd8cb40689b638a1"
+       },
+       {
+        "leaf": 9,
+        "url": "https://archive.org/download/10045974/page/n9.jpg",
+        "sha256_as_served": "fad2b87d719c0d45d60b343704915394b30eb6069b225bf98934eee920782d6c"
+       },
+       {
+        "leaf": 10,
+        "url": "https://archive.org/download/10045974/page/n10.jpg",
+        "sha256_as_served": "90611e547c4ffee10f7bb8fb32de46fe01dce5757b4010aea714da150da1d1ca"
+       },
+       {
+        "leaf": 11,
+        "url": "https://archive.org/download/10045974/page/n11.jpg",
+        "sha256_as_served": "1b7468e1a6afdf400fe6af26fd616bf341eb249c1fec8bcdebf5d7a1ee6a7357"
+       },
+       {
+        "leaf": 12,
+        "url": "https://archive.org/download/10045974/page/n12.jpg",
+        "sha256_as_served": "d38fcd87c05b6c9952781923d0e21a4d55f4f81443c19ac02cea02ae59a24b41"
+       },
+       {
+        "leaf": 13,
+        "url": "https://archive.org/download/10045974/page/n13.jpg",
+        "sha256_as_served": "fcc4600095270c3631495d305c0e6cfa200ade05cce13d19624b559a38db0745"
+       },
+       {
+        "leaf": 14,
+        "url": "https://archive.org/download/10045974/page/n14.jpg",
+        "sha256_as_served": "5488b4ffe982188e656d8ccddc418338277efa9e16df8e30674837d386a7282f"
+       },
+       {
+        "leaf": 15,
+        "url": "https://archive.org/download/10045974/page/n15.jpg",
+        "sha256_as_served": "1b927f5befac583f0b3e0e88426e3ca65655b96e5f84c2d611538a4cbeb49137"
+       },
+       {
+        "leaf": 16,
+        "url": "https://archive.org/download/10045974/page/n16.jpg",
+        "sha256_as_served": "6adb99be55d81180879e2bc0fdef826d820f1de049b7e2913659d285bc3290a7"
+       },
+       {
+        "leaf": 17,
+        "url": "https://archive.org/download/10045974/page/n17.jpg",
+        "sha256_as_served": "e4986df9daff1faf26af32f748dc7aae78a5738e26145f49e38c43111e5552cd"
+       },
+       {
+        "leaf": 18,
+        "url": "https://archive.org/download/10045974/page/n18.jpg",
+        "sha256_as_served": "145b7310fbb396b86935723b0cb9c09249a411ccc27957ca3c02de5885cd97fe"
+       },
+       {
+        "leaf": 19,
+        "url": "https://archive.org/download/10045974/page/n19.jpg",
+        "sha256_as_served": "632921502732a1764989209640763d64e700e3ab1f0471ac8ee90cb73f958069"
+       },
+       {
+        "leaf": 20,
+        "url": "https://archive.org/download/10045974/page/n20.jpg",
+        "sha256_as_served": "892a9e7b9e9d0f11f4b8d5d1ff02b940f770b9da1ca65719716c29d547baf344"
+       },
+       {
+        "leaf": 21,
+        "url": "https://archive.org/download/10045974/page/n21.jpg",
+        "sha256_as_served": "bf30f010fb506a7203784d182a7d6dfc8428083159913d357e7e0ca743bd3f27"
+       },
+       {
+        "leaf": 22,
+        "url": "https://archive.org/download/10045974/page/n22.jpg",
+        "sha256_as_served": "e4e9d58867378f7d59504e2d35b7e05bd130c35c1a506cf3334de756d7e950f0"
+       },
+       {
+        "leaf": 23,
+        "url": "https://archive.org/download/10045974/page/n23.jpg",
+        "sha256_as_served": "feb675be07aee681c2ed2b4892f426b10141ac68780bbd7c3c28e0284fd2b5c1"
+       },
+       {
+        "leaf": 24,
+        "url": "https://archive.org/download/10045974/page/n24.jpg",
+        "sha256_as_served": "b9edb1d6b1449dd118dd00249cb852fb8b0a31a774b68f9fcf592a2839993cc2"
+       },
+       {
+        "leaf": 25,
+        "url": "https://archive.org/download/10045974/page/n25.jpg",
+        "sha256_as_served": "a7eb795831613b292da6a5953a9dece367e1a792d77a1e09823c59305403fedd"
+       },
+       {
+        "leaf": 26,
+        "url": "https://archive.org/download/10045974/page/n26.jpg",
+        "sha256_as_served": "8696874cd7b2f2a2ccbdeae0c6c4d50fa382001b7b55281b7c97c59fe2f1cfb6"
+       },
+       {
+        "leaf": 27,
+        "url": "https://archive.org/download/10045974/page/n27.jpg",
+        "sha256_as_served": "2804129c53a2aa6c4ff90844452f279d62d2b696f2a4771768b5065b88c572d3"
+       },
+       {
+        "leaf": 28,
+        "url": "https://archive.org/download/10045974/page/n28.jpg",
+        "sha256_as_served": "54dc8e19794e9535e20c0da3751af565a90b95f4f76770fb11fbc8bbada3690c"
+       },
+       {
+        "leaf": 29,
+        "url": "https://archive.org/download/10045974/page/n29.jpg",
+        "sha256_as_served": "b381afe202fa3ce86fa8deec6e1bb3ed15d40a4d7dcf4d6e6a7fa53ecf4abd6c"
+       },
+       {
+        "leaf": 30,
+        "url": "https://archive.org/download/10045974/page/n30.jpg",
+        "sha256_as_served": "5e2087a1c03915b7cb9888c9ad9122604e91b33a9a8786a5fe7eb9024a9f7371"
+       },
+       {
+        "leaf": 31,
+        "url": "https://archive.org/download/10045974/page/n31.jpg",
+        "sha256_as_served": "502bd33684403194574b4ac556663a943a526e598a41d9bffd21a216d3b3a1bf"
+       },
+       {
+        "leaf": 32,
+        "url": "https://archive.org/download/10045974/page/n32.jpg",
+        "sha256_as_served": "d41a730b5d8f49dd5a9a643c7f01a13918da72a29ecbb0656fe014f4a38eda89"
+       },
+       {
+        "leaf": 33,
+        "url": "https://archive.org/download/10045974/page/n33.jpg",
+        "sha256_as_served": "9017a5f6692b9449a9dfa638baf31dc5bbe0ca48f057a28bc1a729b12eb341f3"
+       },
+       {
+        "leaf": 34,
+        "url": "https://archive.org/download/10045974/page/n34.jpg",
+        "sha256_as_served": "6972da7e4ef03f6700fd623a36b98899b6ecb53dc81b39d96f1dfe402cec5950"
+       },
+       {
+        "leaf": 35,
+        "url": "https://archive.org/download/10045974/page/n35.jpg",
+        "sha256_as_served": "4348d37dd1112305810e2efc927b7189a4d7537146f4cbd61082253091fb73b1"
+       },
+       {
+        "leaf": 36,
+        "url": "https://archive.org/download/10045974/page/n36.jpg",
+        "sha256_as_served": "2a0678ef8613eecd32287ac5f61c00cc0d0b3afba0239bba8378aa871a126295"
+       },
+       {
+        "leaf": 37,
+        "url": "https://archive.org/download/10045974/page/n37.jpg",
+        "sha256_as_served": "1f991ff5d881134f7a05da90e48b865baa2c760bb490f20b4fdab482eaffc089"
+       },
+       {
+        "leaf": 38,
+        "url": "https://archive.org/download/10045974/page/n38.jpg",
+        "sha256_as_served": "12bbbd6b98969693edcb92260a2e5b641c9cb771a8a570d757d0e5fdb08a5888"
+       },
+       {
+        "leaf": 39,
+        "url": "https://archive.org/download/10045974/page/n39.jpg",
+        "sha256_as_served": "3f35c8bb442695bc8495886f9beb12c01bb8001fb8cd1a9240481e718e9269d1"
+       },
+       {
+        "leaf": 40,
+        "url": "https://archive.org/download/10045974/page/n40.jpg",
+        "sha256_as_served": "e6d1eabc0bd6e65a6e8b6cf42aa0f1dfaeba8971e8fffb2661fd803dd0e70484"
+       },
+       {
+        "leaf": 41,
+        "url": "https://archive.org/download/10045974/page/n41.jpg",
+        "sha256_as_served": "874f8e6974caf80e8665a4eca15b4aff6e080d6609e4e3ba07a3a4139cb6c92b"
+       },
+       {
+        "leaf": 42,
+        "url": "https://archive.org/download/10045974/page/n42.jpg",
+        "sha256_as_served": "201af3e02547626fd203013c0ea36b642cf1725c92db231c3100c4dae033d584"
+       },
+       {
+        "leaf": 43,
+        "url": "https://archive.org/download/10045974/page/n43.jpg",
+        "sha256_as_served": "4e5412e23ba34a9f3caa5fad9741ab61330d16fe9004aa188f81c32dc10f4ede"
+       },
+       {
+        "leaf": 44,
+        "url": "https://archive.org/download/10045974/page/n44.jpg",
+        "sha256_as_served": "2580e054600e8c5f23d6ba183afb81b5e1d42ede704d54e4551bfa2636644705"
+       },
+       {
+        "leaf": 45,
+        "url": "https://archive.org/download/10045974/page/n45.jpg",
+        "sha256_as_served": "8abe418c4a6f4dd735e1faf95ea6a80727e65e7712a5451222377fddac24e7cf"
+       },
+       {
+        "leaf": 46,
+        "url": "https://archive.org/download/10045974/page/n46.jpg",
+        "sha256_as_served": "49a4371ab4b3c2c5d8eb74263d0a686be88b7d88a652d74ba3ce2f82f85ee11b"
+       },
+       {
+        "leaf": 47,
+        "url": "https://archive.org/download/10045974/page/n47.jpg",
+        "sha256_as_served": "28b51ce2674df95bc9915aa7afaa8be78d609cbb9c0d5c640cd0b8c78ea718ba"
+       },
+       {
+        "leaf": 48,
+        "url": "https://archive.org/download/10045974/page/n48.jpg",
+        "sha256_as_served": "800d03ecc0dc38d7daae0461b6678ebfd6cb59c69b6aceba1248b4e18e4a821b"
+       },
+       {
+        "leaf": 49,
+        "url": "https://archive.org/download/10045974/page/n49.jpg",
+        "sha256_as_served": "d3a0b13222fbadef4a7dcfdaee89e80d45ff3bfd45ea6b431cb70ab866f73600"
+       },
+       {
+        "leaf": 50,
+        "url": "https://archive.org/download/10045974/page/n50.jpg",
+        "sha256_as_served": "5b3d888c2bb32c06a9b502eb627183b381f319f023df9e17c6dc470228a3bda2"
+       },
+       {
+        "leaf": 51,
+        "url": "https://archive.org/download/10045974/page/n51.jpg",
+        "sha256_as_served": "8e5bd42257c2894d33289b87709cd7c48f57d290b051a1252c48b3f8fb1c5efa"
+       },
+       {
+        "leaf": 52,
+        "url": "https://archive.org/download/10045974/page/n52.jpg",
+        "sha256_as_served": "e3802c9b27a21fe2245d537e9fb53d66350a216b9421a4bcac66a4c6e38037b2"
+       },
+       {
+        "leaf": 53,
+        "url": "https://archive.org/download/10045974/page/n53.jpg",
+        "sha256_as_served": "795d03c503d9d7da7cb4582446a6d55aba2d8705673dffbd71d90e4e5f066dd6"
+       },
+       {
+        "leaf": 54,
+        "url": "https://archive.org/download/10045974/page/n54.jpg",
+        "sha256_as_served": "e08b90d485c82dad9b3bfcc83fe7112105fdf8ae8ea8a199416d153cee2b6ca8"
+       },
+       {
+        "leaf": 55,
+        "url": "https://archive.org/download/10045974/page/n55.jpg",
+        "sha256_as_served": "eb303becc791e8b619e280d1ac60cc8f25781c7f9053321b78264f935f2e6314"
+       },
+       {
+        "leaf": 56,
+        "url": "https://archive.org/download/10045974/page/n56.jpg",
+        "sha256_as_served": "69802a4ace91d5ec6a405e0f7aa9f9d3463e51c0096fa80d7f189c8bc03cc934"
+       },
+       {
+        "leaf": 57,
+        "url": "https://archive.org/download/10045974/page/n57.jpg",
+        "sha256_as_served": "f440dcf4826b68377e8fb2eb261562c57ff2e2441a6f4d41f537512b30593fb3"
+       },
+       {
+        "leaf": 58,
+        "url": "https://archive.org/download/10045974/page/n58.jpg",
+        "sha256_as_served": "58e59b3eff1e5ca4bec6f39135e0b530689ccb319abe2d5f21ae29d9cd8e14ee"
+       },
+       {
+        "leaf": 59,
+        "url": "https://archive.org/download/10045974/page/n59.jpg",
+        "sha256_as_served": "e3d404f6613d5770afa03950b0b2b1fdba20caf8c5c6f8d17c5611622f815da5"
+       },
+       {
+        "leaf": 60,
+        "url": "https://archive.org/download/10045974/page/n60.jpg",
+        "sha256_as_served": "8c489b278518bbd526b94447d34899f7fda17baaa5838e08f497ee2b2d290b5f"
+       }
+      ],
+      "why": "the Archive's own OCR layer reads the Fraktur with many errors; the leaves were OCR'd in session with the Fraktur model and the images are held by reference"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_4ZpBzREnAIMC",
+      "url": "https://archive.org/details/bub_gb_4ZpBzREnAIMC",
+      "ocr": {
+       "engine": "Tesseract 5.3.4",
+       "models": "tessdata_best deu_latf, the Fraktur model (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+       "sha256": {
+        "deu_latf.traineddata": "429b8c33d37e1a4823a2bb082a644ff13e252f735b7945e08a518d22ddcc459e"
+       },
+       "command": "tesseract nNN.jpg nNN -l deu_latf",
+       "run": "2026-11-02, in session"
+      },
+      "pages_by_reference": [
+       {
+        "leaf": 178,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n178.jpg",
+        "sha256_as_served": "d42b7919fc02cddde87a0fe753dabb250142e220b48b9457f9439343e89b4133"
+       },
+       {
+        "leaf": 179,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n179.jpg",
+        "sha256_as_served": "9ca8d1df3d9c4246488e24ff45cf6358a946593531c9c73f6a64189e90276ea9"
+       },
+       {
+        "leaf": 180,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n180.jpg",
+        "sha256_as_served": "46afc2454e6afa3d0e373b0ef5806a8d1b09b4bb3d234249125f64eb88d1a2ad"
+       },
+       {
+        "leaf": 181,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n181.jpg",
+        "sha256_as_served": "e2d0515bf21ec0105500685900eed74583c35eaba7af40fa93ee539c43ae2b24"
+       },
+       {
+        "leaf": 182,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n182.jpg",
+        "sha256_as_served": "127e0af6e00c1f1095c0aec688a12c8cfd15163805b9e8f27cc1c9839d588f0d"
+       },
+       {
+        "leaf": 183,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n183.jpg",
+        "sha256_as_served": "6d38aac0d2fa89b15c30ec060aea5307a99b4fb5aa90b8a418f124e22986cb2d"
+       },
+       {
+        "leaf": 184,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n184.jpg",
+        "sha256_as_served": "3393598365bfde14c60b225a2c2131969d9e82106b73210d848ca040f3c94d9f"
+       },
+       {
+        "leaf": 185,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n185.jpg",
+        "sha256_as_served": "a418568ccd1249f6ad799e0dd1ac528d2d42ae8363160b97f3a033fdd7fedbe3"
+       },
+       {
+        "leaf": 186,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n186.jpg",
+        "sha256_as_served": "491deed2cc75276475b9b96ad20d6d274aa9bae3be24a61109d35e86d47ad0ba"
+       },
+       {
+        "leaf": 187,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n187.jpg",
+        "sha256_as_served": "78f90cc42a2480bba95dda3b96e1563fc1a71f6535df9e7d52e92c28e8e93418"
+       },
+       {
+        "leaf": 188,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n188.jpg",
+        "sha256_as_served": "0c5bc12904fc07052e017b8b78c6c5c1035fd23425e0c7e0d12f7a5e44939538"
+       },
+       {
+        "leaf": 189,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n189.jpg",
+        "sha256_as_served": "8f3b147fa19c4e2a8cdf7544bb5f761374f2537503e8cc3494b3f307df180594"
+       },
+       {
+        "leaf": 190,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n190.jpg",
+        "sha256_as_served": "77d10a44036361d08abfa09666cec4d840a8bce6c4e63ef727a8cdbe48b5277f"
+       },
+       {
+        "leaf": 191,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n191.jpg",
+        "sha256_as_served": "976a56e99238c6cc04eb3d9b75d9f43b53f43d879e39427b12eb7eed61063df5"
+       },
+       {
+        "leaf": 192,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n192.jpg",
+        "sha256_as_served": "f62468343b9c50dfd79089b11056e1620df5acf6c226baf535ef3ba8cc2e4056"
+       },
+       {
+        "leaf": 193,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n193.jpg",
+        "sha256_as_served": "92964e98f8e180af1878df779e8bb47a36ef1710cead9567a52aa2470b1f072d"
+       },
+       {
+        "leaf": 194,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n194.jpg",
+        "sha256_as_served": "e43e7ee03aef46756344f5e0d56dbc0b2fee08e2bee43dff05c42aa34bae11cf"
+       },
+       {
+        "leaf": 195,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n195.jpg",
+        "sha256_as_served": "7398766a8e8aa1bc4a5bfe5dc820f1ee4e36676ddce216ba64a4d78020d97963"
+       },
+       {
+        "leaf": 196,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n196.jpg",
+        "sha256_as_served": "aae5e55673e2784aa5fd5b543ded0d34d16bbecceda02472b3480311322abbca"
+       },
+       {
+        "leaf": 197,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n197.jpg",
+        "sha256_as_served": "02c809a8a24f206b9e50de66ae55e2abb302fe874f330b415cb96241303b089a"
+       },
+       {
+        "leaf": 198,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n198.jpg",
+        "sha256_as_served": "6e0d8df76e8db553222e7c6c105bca407e5447956f1fedb1b945f1558eb60189"
+       },
+       {
+        "leaf": 199,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n199.jpg",
+        "sha256_as_served": "8055fe74c179abc1a2707d991f1fa32031b2ac12cb3c344f6124004671fc1674"
+       },
+       {
+        "leaf": 200,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n200.jpg",
+        "sha256_as_served": "9f3bdfd108ed68cc9ff436ade8098dff15d98a05556231f00b23a1a3b98af3ae"
+       },
+       {
+        "leaf": 201,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n201.jpg",
+        "sha256_as_served": "c4b341cdb278be211171f4880c47c3d39d5c57d9c4791f30bce025550d3b1a57"
+       },
+       {
+        "leaf": 202,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n202.jpg",
+        "sha256_as_served": "40352e5851bbbe9a20b91ba733c57f0acbcda63ecea31f80f89b33bffb82a928"
+       },
+       {
+        "leaf": 203,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n203.jpg",
+        "sha256_as_served": "492ba53368a94f71f6b99b1aa8ea84c8c84b793a1be4a51f14c71b3f6e744172"
+       },
+       {
+        "leaf": 204,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n204.jpg",
+        "sha256_as_served": "8f86081cdc14dcc4ca6d32767dfac5f33015af97cfb4ac8415863cf5fe49e310"
+       },
+       {
+        "leaf": 205,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n205.jpg",
+        "sha256_as_served": "bdce47cc9dabb59c09acbfb0c4bef26cdf6687d30ee2f3b83b11381592b93a87"
+       },
+       {
+        "leaf": 206,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n206.jpg",
+        "sha256_as_served": "88f77dd7507d4db2e7d0b87fd948d525009f64a8ee71b557b0f1862d9fba90d8"
+       },
+       {
+        "leaf": 207,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n207.jpg",
+        "sha256_as_served": "5c85dc14e4c3f87abc22c6647e7ade53b9e590f5808607dec8e93af0acd57b34"
+       },
+       {
+        "leaf": 208,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n208.jpg",
+        "sha256_as_served": "1d805e6d34542f94be18984e9ab269b75e37f14b8ea6280b3e7947164cdd4f49"
+       },
+       {
+        "leaf": 209,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n209.jpg",
+        "sha256_as_served": "f9414bb1ab6a60fa14d2a0db43cb377e0238d0fc68b9efc0ced945f6ae8b3d71"
+       },
+       {
+        "leaf": 210,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n210.jpg",
+        "sha256_as_served": "fe6b160b28fdad2342df7cc3569abe5e318b435d3e4f4dbb2678fc9f530a3dfd"
+       },
+       {
+        "leaf": 211,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n211.jpg",
+        "sha256_as_served": "b006769fc3da93d4860947668c7886ba2b87e100e904ae173aba0cd5af31ccf5"
+       },
+       {
+        "leaf": 212,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n212.jpg",
+        "sha256_as_served": "16e97aaf28e9f1e43c264b14bc7df5e19bcd0b2cf78b5b4cbb06de010154972c"
+       },
+       {
+        "leaf": 213,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n213.jpg",
+        "sha256_as_served": "99dd306983e0b1f21fbfd330e587f33dad9a96be45e0a638a38edc3147fe5595"
+       },
+       {
+        "leaf": 214,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n214.jpg",
+        "sha256_as_served": "8df967c17587126e78288c5598587174a4ee945f6c70f85af4063801fb39e92c"
+       },
+       {
+        "leaf": 215,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n215.jpg",
+        "sha256_as_served": "900070e3734be692e54b4f78f5e8290dcd47217008ba1c62afced82987aa0f1d"
+       },
+       {
+        "leaf": 216,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n216.jpg",
+        "sha256_as_served": "0544861aa29cc7590d78648873620ac3c609b44a317eb31dc7a7df8500cbb6e1"
+       },
+       {
+        "leaf": 217,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n217.jpg",
+        "sha256_as_served": "fe30ce3c844e098ce60c27206d7a4aa1e5a8822c5d004bbe3af7503079f54197"
+       },
+       {
+        "leaf": 218,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n218.jpg",
+        "sha256_as_served": "12a2d340e46df5de00cbeb53f74031ae3996fdb49905c5a0ab6c7490447cfe33"
+       },
+       {
+        "leaf": 219,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n219.jpg",
+        "sha256_as_served": "507a98ca3e18caf76badf55069b10b997de3989d28fbe80653c48adcd4d60853"
+       },
+       {
+        "leaf": 220,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n220.jpg",
+        "sha256_as_served": "c4cb0badad587802b26fc465e32ff5f7aa1a74d2ae7a8857353d434319eea4df"
+       },
+       {
+        "leaf": 221,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n221.jpg",
+        "sha256_as_served": "237a24bcdd093ce4f5b311e77ad47b2bc2662e34580327ea9bd5502de9d176c8"
+       },
+       {
+        "leaf": 222,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n222.jpg",
+        "sha256_as_served": "2517eab2924b652a5bb326451031ee518d27376faaacfb75129b61e5a4754836"
+       },
+       {
+        "leaf": 223,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n223.jpg",
+        "sha256_as_served": "09fbe48ae2d13fbe054a0d92b22601450830f20007247b3febc93a53b1fbf6be"
+       },
+       {
+        "leaf": 224,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n224.jpg",
+        "sha256_as_served": "3e64ff32639513e58d78525c223afd8733205743f45d119890d327e4113deb34"
+       },
+       {
+        "leaf": 225,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n225.jpg",
+        "sha256_as_served": "ab9ff86c2334bef4dadfc2ec6c2910253bee02622054b310763c9a948e259fe1"
+       },
+       {
+        "leaf": 226,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n226.jpg",
+        "sha256_as_served": "5d2b31cc798f798ce12372c31fac984cf653248e1e9daf196e153686f381a23c"
+       },
+       {
+        "leaf": 227,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n227.jpg",
+        "sha256_as_served": "fae35a201e392ff32d0496123e62e026163bc74ed54333615809c18a3daf798d"
+       },
+       {
+        "leaf": 228,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n228.jpg",
+        "sha256_as_served": "f6cc6cf325bb56b48c960f0c5f5b33d94870b75ec3dc8fc77fd6e22ff353bf8e"
+       },
+       {
+        "leaf": 229,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n229.jpg",
+        "sha256_as_served": "fe640235013f46ce619857a809b8925dbe803af2c0985005f08774a700aeb19c"
+       },
+       {
+        "leaf": 230,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n230.jpg",
+        "sha256_as_served": "823453342697a0813034899807c262e10bbc82690339173bbe7dd603878692ac"
+       },
+       {
+        "leaf": 231,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n231.jpg",
+        "sha256_as_served": "435e3fdf6eaa955d758e83dc4e30254efe2fe3b5788d1a7271e908d46a9e2c87"
+       },
+       {
+        "leaf": 232,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n232.jpg",
+        "sha256_as_served": "fd6c41afd64d500bdcc202e1ec24cb691bac7a88154f7da8c3f24395003144eb"
+       },
+       {
+        "leaf": 233,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n233.jpg",
+        "sha256_as_served": "69e5573244201897a7b27a2d3588200c7f5413222ac1423e0244a9d8ea8d0fe3"
+       },
+       {
+        "leaf": 234,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n234.jpg",
+        "sha256_as_served": "60548fce597270e887889e770fcc8e9f940b6c662ceb9d6abcf1f15fc669f63d"
+       },
+       {
+        "leaf": 235,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n235.jpg",
+        "sha256_as_served": "d9ef41f9123618bc9adf5d79277f5b320d7e0f9c7a8133b60005d095ee0505f0"
+       },
+       {
+        "leaf": 236,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n236.jpg",
+        "sha256_as_served": "b6c6841f3623cf9b37e0b8b7da271d445f45453d46e60db00443366c9b67e19d"
+       },
+       {
+        "leaf": 237,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n237.jpg",
+        "sha256_as_served": "379c5ef43d581bd7b3c5cd8b1d4ede568519371d8fa218c5b48146dcd4eda95b"
+       },
+       {
+        "leaf": 238,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n238.jpg",
+        "sha256_as_served": "7cb2e84162cfdfb2a1bc32b13b4941cfaca6fd4003292b6549dfa0a2f684a4cc"
+       },
+       {
+        "leaf": 239,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n239.jpg",
+        "sha256_as_served": "197100dba67bb294e2c3b3cf2caa25aa46a2bda9e6a507b515e00360d796edd8"
+       },
+       {
+        "leaf": 240,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n240.jpg",
+        "sha256_as_served": "69e20f783d686bb2a9989815c81ca12dd59a52899ebaa0ab1c20132220804428"
+       },
+       {
+        "leaf": 241,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n241.jpg",
+        "sha256_as_served": "d08c5e4d987ec45779ee0072a249fa81ba9375e5470605574ac141ef19c27645"
+       },
+       {
+        "leaf": 242,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n242.jpg",
+        "sha256_as_served": "f653ed86db96195a261b245e898ea5a6270caab22e17a4288c7a34da95d227d2"
+       },
+       {
+        "leaf": 243,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n243.jpg",
+        "sha256_as_served": "d1661eadc4128e8e13b56506419b78c66edd5eba80dbd138c96cd93a45e7f3a1"
+       },
+       {
+        "leaf": 244,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n244.jpg",
+        "sha256_as_served": "eb891c289f586223b6f5f7e829e1c344fcc7a7fb8a0de35c8ec77c24b1e76bc9"
+       },
+       {
+        "leaf": 245,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n245.jpg",
+        "sha256_as_served": "ef338b7234ea5c162253bfdabf0be36501f2e30d3d21efe9f401bd4f45a88c3d"
+       },
+       {
+        "leaf": 246,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n246.jpg",
+        "sha256_as_served": "1c825b9b0f12057a7db864e106ead9fe91c68c01e09a6c40a10e7e84378821e7"
+       },
+       {
+        "leaf": 247,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n247.jpg",
+        "sha256_as_served": "40caa62c773b3f7e3c9cfd0875886391705faefaa4150e78bf9b0357592bdd3e"
+       },
+       {
+        "leaf": 248,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n248.jpg",
+        "sha256_as_served": "681cd2e78190412295cc86b926cd360ca98e9e19c696ca905a2cf424a9becb0d"
+       },
+       {
+        "leaf": 249,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n249.jpg",
+        "sha256_as_served": "aa4e444bc88e2bf5564e91acb62e857211691be7c8b3db8852be966f84afc2d5"
+       },
+       {
+        "leaf": 250,
+        "url": "https://archive.org/download/bub_gb_4ZpBzREnAIMC/page/n250.jpg",
+        "sha256_as_served": "a1e6c9f4620a774bc96e8b28b9ccfc4fcd72b4e716c4a8b0f18e379323b5ef82"
+       }
+      ],
+      "why": "the Archive's own OCR layer reads the Fraktur with many errors; the leaves were OCR'd in session with the Fraktur model and the images are held by reference"
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 4870,
+   "verified_loci": [
+    "Differenz, the Vorerinnerung — 'Vorerinnerung'",
+    "Differenz: the living spirit that dwells in a philosophy asks to be born of a kindred spirit — 'Der lebendige Geiſt, der' (the OCR keeps the long s)",
+    "Differenz: division is the source of the need of philosophy — 'Quell des Bedürfniſſes der Philoſophie' (the line before reads 'Entzweiung ist der'; the OCR reads Entzweigung)",
+    "Differenz: when the power of union vanishes from the life of people and the oppositions lose their living relation — 'Macht der Vereinigung: aus dem: Le-' (the page reads 'die Macht der Vereinigung aus dem Leben der Menschen verschwindet, und die Gegensätze ihre lebendige Beziehung und Wechselwirkung verloren'; the OCR of this leaf is damaged at the gutter)",
+    "Lectures, the heading of the period: Plato and Aristotle — 'Erſter Periode dritte Abtheilung: Plato und Ariſtoteles.'",
+    "Lectures: exoteric and esoteric philosophy, with Tennemann cited — 'det exoteriſche und eſoteriſche Philoſophie. Tennemann *) ſagt:' (the line begins Man unterschei-; the note cites Tennemann Band II, S. 220)",
+    "Lectures: the most important thing in Plato's philosophy is not grasped at all in Tennemann — 'in der platoniſchen Philoſophie iſt bei Tennemann gerade gar nicht aufgefaßt' (the page reads Wichtigste; the OCR reads Widhtigſte)",
+    "Lectures: the higher sense of the Philebus and Parmenides, of which Tennemann does not speak — 'Tennemann gar nicht davon die Rede)'",
+    "Lectures: the esoteric is the speculative, written and printed, and still hidden — 'Das Eſoteriſche iſt das Spekulative, das geſchrieben und gedru>t iſt' (the page reads gedruckt; the OCR reads gedru>t)"
+   ],
+   "why_seated": "Hegel is a dated witness that the received presentations of Plato kept the writings and lost their operation: the Differenzschrift locates philosophy's need where oppositions are fixed apart, and the lectures fault Tennemann for extracting Plato's determinations as a system. The study reads him at the edge of the closing it describes.",
+   "scope": "Two books in part, OCR'd in session from the Fraktur. The Differenzschrift from its Vorerinnerung through the opening sections (leaves n7–n60; the title leaves, which the OCR found blank, are held as images by reference only): the passage on the living spirit of a philosophy, which the historical treatment turns into dead opinion, and the one locating the need of philosophy in division, where the power of union vanishes from life and the oppositions lose their living relation. The lectures on the history of philosophy, volume II, pp. 169–241 (leaves n178–n250): the opening of the period of Plato and Aristotle and the first part of the lecture on Plato, where Hegel cites Tennemann on the exoteric and esoteric, says the most important thing in Plato's philosophy is not grasped at all in Tennemann, a few determinations being gathered as dry ontological ones, and holds that the esoteric is the speculative, written and printed and still hidden from those without the interest to exert themselves. The remainder of both books is in the referenced scans; the rest of the lectures is declared at 32/11.",
+   "data": "https://www.alexanarch.org/data/corpora/hegel/"
+  },
+  {
+   "seat": "EA-CORPORA-32/11",
+   "corpus": "legitimately-many-wanted",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-11-02",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "The editions and studies the remaining debts of the study Legitimately Many name and the thirty-second seating could not hold, declared beside the texts it holds (32/01–32/10), at the author's direction of 2026-11-02. Twelve are still in their United States term. Four are open now and wanted: Brandis and Usener, for which no copy was found; Ross and Fobes, public domain in the United States since 2025, with no open copy found; and the rest of Hegel's lectures, whose scan is referenced and was OCR'd only for pp. 169–241. The modern editions are where the twentieth century numbered and dated what the seated texts carry, so each entry names what the study cites from it.",
+   "scope": "Declared without text: C. A. Brandis, Aristotelis et Theophrasti Metaphysica ad veterum codicum manuscriptorum fidem recensita (Reimer, Berlin, 1823), opens: open now (public domain in the United States); wanted: no usable copy found this session; Wimmer's preface (32/03) names it as the edition that collated four codices for Theophrastus's Metaphysics; H. Usener and the Bonn philological seminar, Theophrasti de prima philosophia libellus (Bonn, 1890), opens: open now (public domain in the United States); wanted: no usable copy found this session; Hegel, Michelet (ed.), Vorlesungen über die Geschichte der Philosophie II (Werke XIV, 1833), the rest of the lecture on Plato from p. 242 and the lectures after it, beyond the pages seated at 32/10 (Duncker und Humblot, Berlin, 1833), opens: open now (public domain); the scan is on the Archive (bub_gb_4ZpBzREnAIMC) and only pp. 169–241 were OCR'd this session; W. D. Ross and F. H. Fobes, Theophrastus, Metaphysics, with translation, commentary and introduction (Clarendon Press, Oxford, 1929), opens: open now in the United States (published 1929, public domain from 2025-01-01); the Archive holds only the 1967 Olms reprint (theophrastusmeta0000fhfo), lending-restricted; wanted; André Laks and Glenn W. Most, Théophraste, Métaphysique (Les Belles Lettres, Paris, 1993), opens: 2089-01-01 in the United States (ninety-five years from publication); Dimitri Gutas, Theophrastus On First Principles (known as his Metaphysics) (Brill, Leiden, 2010), opens: 2106-01-01 in the United States (ninety-five years from publication); Holger Thesleff, The Pythagorean Texts of the Hellenistic Period (Åbo Akademi, Åbo, 1965), opens: 2061-01-01 in the United States (ninety-five years from publication); Thomas Alexander Szlezák, Pseudo-Archytas über die Kategorien (de Gruyter, Berlin, 1972), opens: 2068-01-01 in the United States (ninety-five years from publication); Tiziano Dorandi, Filodemo, Storia dei filosofi: Platone e l'Academia (PHerc. 1021 e 164) (Bibliopolis, Naples, 1991), opens: 2087-01-01 in the United States (ninety-five years from publication); Gertjan Verhasselt, the anonymous On Critical Signs in the Manuscripts of Plato (PSI XV 1488), edition and commentary (2019), opens: 2115-01-01 in the United States (ninety-five years from publication); Francesca Schironi, \"Plato at Alexandria: Aristophanes, Aristarchus, and the 'Philological Tradition' of a Philosopher\", Classical Quarterly 55 (Cambridge University Press, 2005), opens: 2101-01-01 in the United States (ninety-five years from publication); Marwan Rashed, Ptolemy, Epistle to Gallus (the life, will and catalogue of Aristotle), edition (2021), opens: 2117-01-01 in the United States (ninety-five years from publication); Matthias Perkams, \"Die Datierung der Aristotelesedition des Andronikos von Rhodos\" (2019), opens: 2115-01-01 in the United States (ninety-five years from publication); Josef Zürcher, Aristoteles' Werk und Geist (Schöningh, Paderborn, 1952), opens: 2048-01-01 in the United States (ninety-five years from publication); Anton-Hermann Chroust, Aristotle: New Light on His Life and on Some of His Lost Works (Routledge & Kegan Paul, London, 1973), opens: 2069-01-01 in the United States (ninety-five years from publication); Roger D. Masters; Stephen A. McKnight; Anton-Hermann Chroust, the exchange on the authorship of the Aristotelian corpus (Masters 1977; McKnight 1978; Chroust 1979; Masters 1979) (1977), opens: 2073-01-01 in the United States (ninety-five years from publication) for the first; each piece opens ninety-five years from its own year. Wanted first: Brandis 1823 and Usener 1890, then Ross and Fobes 1929 from an open copy; the rest of Hegel's lectures can be OCR'd from the scan already referenced. The in-copyright studies are to be read and cited, not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/legitimately-many-wanted/"
   }
  ],
- "count": 155
+ "count": 166
 }

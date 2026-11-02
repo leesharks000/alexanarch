@@ -1,0 +1,61 @@
+{
+ "corpus": "dionysius-ad-ammaeum",
+ "seat": "EA-CORPORA-32/05",
+ "title": "Dionysius of Halicarnassus, First Letter to Ammaeus, in Usener and Radermacher's Greek (Teubner, 1899)",
+ "edition": "Dionysius of Halicarnassus, Ἐπιστολὴ πρὸς Ἀμμαῖον (First Letter to Ammaeus), ed. H. Usener and L. Radermacher, Dionysii Halicarnasei opuscula I (Leipzig: Teubner, 1899) — Perseus TEI tlg0081.tlg008.perseus-grc2",
+ "language": "grc",
+ "license": {
+  "payload": "Dionysius (fl. late first century BCE) is public domain. Usener and Radermacher's Dionysii Halicarnasei opuscula I (Leipzig: Teubner, 1899) is public domain everywhere. The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "fetched": "2026-11-02",
+ "origin": {
+  "items": [
+   {
+    "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/341e309c821d5eca8c976bebca77c28b10bad58f/data/tlg0081/tlg008/tlg0081.tlg008.perseus-grc2.xml",
+    "source": "Perseus Digital Library, canonical-greekLit",
+    "repository": "https://github.com/PerseusDL/canonical-greekLit",
+    "commit": "341e309c821d5eca8c976bebca77c28b10bad58f",
+    "file": "data/tlg0081/tlg008/tlg0081.tlg008.perseus-grc2.xml"
+   }
+  ],
+  "fetched": "2026-11-02",
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "ad-ammaeum-1",
+    "work": "Dionysius of Halicarnassus, Ἐπιστολὴ πρὸς Ἀμμαῖον (First Letter to Ammaeus), ed. H. Usener and L. Radermacher, Dionysii Halicarnasei opuscula I (Leipzig: Teubner, 1899) — Perseus TEI tlg0081.tlg008.perseus-grc2",
+    "text": "text/ad-ammaeum-1.txt",
+    "originals": [
+     "original/perseus/tlg0081.tlg008.perseus-grc2.xml"
+    ],
+    "lines": 26
+   }
+  ]
+ },
+ "normalization": "Originals as fetched under original/, pinned to a commit of the repository named in origin.items. text/<slug>.txt is the TEI reduced to plain text by seat.py (rebuild/corpora/ea-corpora-27), notes and apparatus dropped, divisions kept. No text was corrected by hand.",
+ "scope": "The First Letter to Ammaeus entire. A Peripatetic had claimed that Demosthenes formed his speeches on Aristotle's Rhetoric; Dionysius answers by dating, setting the speeches by archon years from Philochorus and the Rhetoric by the events it mentions, and declaring each step of evidence as he takes it.",
+ "verified_loci": [
+  "1, a Peripatetic undertook to show that Demosthenes learned his art from Aristotle's Rhetoric — 'ὅτι Δημοσθένης τὰς ῥητορικὰς τέχνας παρʼ ἐκείνου μαθὼν εἰς τοὺς ἰδίους μετήνεγκε λόγους'",
+  "the Rhetoric dated after the Olynthian war by Aristotle's own words — 'οὑτωσὶ μὲν δὴ σαφῶς αὐτὸς ὁ φιλόσοφος ἀποδεικνύει μετὰ τὸν Ὀλυνθιακὸν πόλεμον γεγραμμένας ὑπʼ αὐτοῦ τὰς τέχνας'",
+  "the archon year taken from Philochorus's Atthis, verbatim — 'ὡς δηλοῖ Φιλόχορος ἐν ἕκτῃ βύβλῳ τῆς Ἀτθίδος κατὰ λέξιν οὕτω γράφων'"
+ ],
+ "loci_not_found": [],
+ "lines_total": 26,
+ "why_seated": "An ancient chronology of a corpus that names its evidence, quotes its sources verbatim and builds the order from them is the control for the study's question of how the order of the works was fixed. The Peripatetic claim it refutes is itself a case of the school's founder made the source of what came after him.",
+ "spine": "EA-CORPORA-32",
+ "ruling": "Lee Sharks, 2026-11-02, of the texts still owed in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets prepare that seating, its ea corpora deposit, and its tll spine and card\".",
+ "seating": "EA-CORPORA-32, the thirty-second seating: the remaining debts of Legitimately Many, 2026-11-02",
+ "research": {
+  "study": "Legitimately Many: how the many-author reading of the Socratic–Peripatetic corpus embrittled",
+  "design": "drafts/LEGITIMATELY-MANY-design-2026-11-01.md",
+  "draft": "drafts/LEGITIMATELY-MANY-draft-2026-11-02.md",
+  "locus_table": "rebuild/legitimately-many/loci-table.md",
+  "owed_at": "design §5, 'Still owed'",
+  "for": "design §3.7 (the control: an ancient chronology with declared evidentiary moves) and §5"
+ }
+}
