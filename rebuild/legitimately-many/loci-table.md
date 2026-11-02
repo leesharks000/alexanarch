@@ -39,6 +39,12 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L33 | 3.9a | Simplicius, In Cat., on the genuineness of the Categories | preface · p. 18.17–18 | ὅτι φέρεται καὶ ἄλλο τῶν κατηγοριῶν βιβλίον ὡς Ἀριστοτέλους | the name over a second Categories → Aristotle's, a second text with the same line count and another opening | holds_open | does_not_address |
 | L34 | 3.9a | Simplicius, In Cat., preface | preface · p. 2.24–25 | φαίνεται πανταχοῦ τῷ Ἀρχύτᾳ κατακολουθεῖν ὁ Ἀριστοτέλης βουλόμενος | the prior maker of the ten categories → Archytas the Pythagorean | presupposes | presupposes |
 | L35 | 3.10 | Bekker 1831, Praefatio (OCR in session) | text l. 4 · n8 | consilium ce- pisset Aristotelis ex diutino situ excitandi | the edition → Aristotle, raised from long neglect | presupposes | does_not_address |
+| L36 | 3.9a | Simplicius, In Cat., preface | preface · p. 2.15–16 | Ἀρχύτου γὰρ τοῦ Πυθαγορικοῦ καὶ πρὸ Ἀριστοτέλους τὴν εἰς δέκα τῶν πρώτων γενῶν ποιησαμένου διαίρεσιν | the first maker of the ten categories → Archytas, before Aristotle | presupposes | presupposes |
+| L37 | 3.9a | Simplicius, In Cat., preface | preface · p. 2.21–22 | τὴν συμφωνίαν τὴν πρὸς αὐτὰ τοῦ Ἀριστοτέλους ἐπέδειξε | the relation of the two texts → Aristotle's agreement with Archytas | presupposes | presupposes |
+| L38 | 3.9a | Simplicius, In Cat. 10 (on opposites) | 10 · p. 382.7–8 | φαίνεται δὲ καὶ περὶ ἀντικειμέων Ἀριστοτέλης ἐκ τοῦ Ἀρχυτείου βιβλίου μεταλβὼν | the source of the chapter on opposites → the Archytan book On Opposites | argues_for | presupposes |
+| L39 | 3.9a | Simplicius, In Cat. 10 (on opposites) | 10 · p. 407.17 | ἀρχέτοπα τῶν εἰρημένων ὄντα | the status of the Archytan text → archetypes of what Aristotle said | argues_for | presupposes |
+| L40 | 3.9a | Simplicius, In Cat. 10 (on opposites) | 10 · p. 407.19 | καὶ ἴσως οὐκ ἦλθεν εἰς αὐτόν | the transmission of the Archytan book → a book that perhaps did not reach Iamblichus | does_not_address | does_not_address |
+| L41 | 3.9a | Simplicius, In Cat., on the genuineness of the Categories | preface · p. 18.10–11 | ἵνα μηδὲ ὑπονοήσωμεν τοῦ Ἀρχυτείου μνημονεύειν αὐτὸν ἄλλην ἐπιγραφὴν ἔχοντος | the referent of Aristotle's cross-references → the Categories, the Archytan book excluded by its title | considers_excludes | presupposes |
 
 ## Counts by stratum
 
@@ -53,10 +59,10 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.7a | 3 | argues_for 2, presupposes 1 | considers_excludes 2, does_not_address 1 |
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
-| 3.9a | 7 | does_not_address 2, presupposes 2, considers_excludes 1, argues_for 1, holds_open 1 | does_not_address 6, presupposes 1 |
+| 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
 | 3.10 | 1 | presupposes 1 | does_not_address 1 |
 
-Total 35 loci. Attribution: does_not_address 7, presupposes 14, argues_for 5, considers_excludes 6, revises 1, holds_open 2. Count: does_not_address 16, presupposes 12, considers_excludes 6, revises 1.
+Total 41 loci. Attribution: does_not_address 8, presupposes 16, argues_for 7, considers_excludes 7, revises 1, holds_open 2. Count: does_not_address 17, presupposes 17, considers_excludes 6, revises 1.
 
 ## Notes
 
@@ -81,3 +87,8 @@ Total 35 loci. Attribution: does_not_address 7, presupposes 14, argues_for 5, co
 - **L33** Adrastus reports it; Simplicius records the opening ('Τῶν ὄντων τὸ μέν ἐστιν') and the equal stichometry, and moves on without adjudicating. Two texts under one name, left standing.
 - **L34** The pseudo-Archytas text is a debt to seat (Mullach).
 - **L35** The preface says nothing of genuineness, order or authorship.
+- **L36** Iamblichus's assignment of priority, as Simplicius reports it.
+- **L37** The priority made a condition of exposition: agreement shown, the few disagreements explained.
+- **L38** The TEI's readings (ἀντικειμέων, μεταλβὼν) are kept as seated.
+- **L40** Simplicius has an Archytan book his authority did not use; its arrival is the occasion of the reading.
+- **L41** The doublet across names inside the proof: an alternative referent named and excluded.
