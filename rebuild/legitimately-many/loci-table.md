@@ -86,6 +86,13 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L80 | 3.10a | Chroust, Aristotle: New Light I (1973), p. 408, n. 2 | text l. 19 | still lacks complete confirmation. | the assumption that the Corpus contains Aristotle's writings in part → still lacking complete confirmation | holds_open | holds_open |
 | L81 | 3.10 | Schironi, CQ 55 (2005), p. 432 (open copy) | text l. 5 | an edition which everyone seems to believe in | the Academic edition of Plato → believed in by everyone, with no evidence in the sources | presupposes | does_not_address |
 | L82 | 3.1 | Plato, Sophist 217a | text l. 5 | πότερον ἓν πάντα ταῦτα ἐνόμιζον ἢ δύο, ἢ καθάπερ τὰ ὀνόματα τρία, τρία καὶ τὰ γένη διαιρούμενοι καθʼ ἓν ὄνομα γένος ἑκάστῳ προσῆπτον | whether three names count three kinds → one, or two, or three, a kind fastened to each name; asked of Elea, answered across two dialogues | does_not_address | holds_open |
+| L83 | 3.7 | Diogenes Laertius V.2, the secession (unattributed) | text l. 1727 | Ἀπέστη δὲ Πλάτωνος ἔτι περιόντος· ὥστε φασὶν ἐκεῖνον εἰπεῖν, Ἀριστοτέλης ἡμᾶς ἀπελάκτισε | the break between the second and third positions → a secession while Plato lived, told with φασίν, with Plato's saying about the foal | presupposes | presupposes |
+| L84 | 3.7 | Hermippus, Lives, On Aristotle I, fr. 41 (FHG III p. 45 = DL V.2) | text l. 194 · fr. 41 · FHG Volumen tertium p. 45 · BIOI · ΠΕΡΙ ΑΡΙΣΤΟΤΕΛΟΥΣ ΒΙΒΛ. Α’ | ἑλέσθαι περίπατον τὸν ἐν Λυκείῳ | the origin of Aristotle's school → the Academy passed to Xenocrates while Aristotle was on embassy to Philip; seeing the school under another, he chose the walk in the Lyceum | presupposes | presupposes |
+| L85 | 3.7 | Hermippus, On Aristotle I, fr. 42 (FHG III p. 46 = Athenaeus XIII 589c) | text l. 198 · fr. 42 · FHG Volumen tertium p. 46 · BIOI · ΠΕΡΙ ΑΡΙΣΤΟΤΕΛΟΥΣ ΒΙΒΛ. Α’ | ἐπιμελείας φάσκων τῆς δεούσης τετυχηκέναι ἐν ταῖς τοῦ φιλοσόφου διαθήκαις | the biographer's evidence for the household → the philosopher's wills | presupposes | presupposes |
+| L86 | 3.7 | Hermippus, fr. 46 (FHG III p. 46 = Athenaeus VI 252c) | text l. 218 · fr. 46 · FHG Volumen tertium p. 46 · BIOI · ΠΕΡΙ ΑΡΙΣΤΟΤΕΛΟΥΣ ΒΙΒΛ. Β’ (Γ’...) | ὃν Καλλίμαχος μὲν Θεοδώρειον ἀναγράφει, Ἕρμιππος δ ̓ ἐν τοῖς Θεοφράστου μαθηταῖς καταλέγει | the school of a pupil → two filings by two librarians: Callimachus a Theodorean, Hermippus a pupil of Theophrastus | does_not_address | holds_open |
+| L87 | 3.7 | Hermippus, fr. 43 (FHG III p. 46 = Athenaeus I 21a) | text l. 206 · fr. 43 · FHG Volumen tertium p. 46 · BIOI · ΠΕΡΙ ΑΡΙΣΤΟΤΕΛΟΥΣ ΒΙΒΛ. Β’ (Γ’...) | οὐδεμιᾶς ἀπεχόμενον κινήσεως οὐδὲ σχήματος ἑνός | the manner of the continuator's lecture → Theophrastus performing, every movement and figure, once mimicking a gourmand | does_not_address | presupposes |
+| L88 | 3.10 | Rose, Aristoteles pseudepigraphus (1863), pp. 183–184, fr. XXXIV (open scan, checked by eye) | text l. 9 | qui duplici varioque titulo inscribebantur Ἀριστοτέλους ἢ Θεοφράστου | the author of the book Περὶ ἀρχῆς → uncertain: one of the books inscribed with a double title, Aristotle's or Theophrastus's | holds_open | holds_open |
+| L89 | 3.10 | Schneider, Theophrasti opera I (1818), Praefatio p. viii (open scan, checked by eye) | text l. 5 | Contra exclusi Metaphysica iam olim ab Andronico in recensione operum Theophrasti omissa | the books of the edition of Theophrastus → De coloribus added from Aristotle; the Metaphysics excluded, on Andronicus's omission | argues_for | presupposes |
 
 ## Counts by stratum
 
@@ -101,10 +108,11 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 25 | presupposes 12, considers_excludes 3, argues_for 5, does_not_address 3, revises 2 | does_not_address 9, presupposes 11, holds_open 1, revises 4 |
+| 3.10 | 27 | presupposes 12, considers_excludes 3, argues_for 6, does_not_address 3, revises 2, holds_open 1 | does_not_address 9, presupposes 12, holds_open 2, revises 4 |
 | 3.10a | 10 | revises 2, presupposes 3, holds_open 3, considers_excludes 1, does_not_address 1 | revises 2, presupposes 6, holds_open 2 |
+| 3.7 | 5 | presupposes 3, does_not_address 2 | presupposes 4, holds_open 1 |
 
-Total 82 loci. Attribution: does_not_address 18, presupposes 31, argues_for 12, considers_excludes 11, revises 5, holds_open 5. Count: does_not_address 31, presupposes 34, considers_excludes 6, revises 7, holds_open 4.
+Total 89 loci. Attribution: does_not_address 20, presupposes 34, argues_for 13, considers_excludes 11, revises 5, holds_open 6. Count: does_not_address 31, presupposes 39, considers_excludes 6, revises 7, holds_open 6.
 
 ## Notes
 
@@ -122,7 +130,7 @@ Total 82 loci. Attribution: does_not_address 18, presupposes 31, argues_for 12, 
 - **L17** Readers who took the Strangers for Plato and Parmenides are named and answered: the Strangers are 'nameless fictions'. A maker heard inside a speaker, and refused.
 - **L20** Antigonus of Carystus.
 - **L23** The pupils' goodwill, the many writing under the one, is named as a mechanism and filed as spuriousness.
-- **L28** Procedural: the sentence orders the examination (v0.5 §3.9a).
+- **L28** Procedural: the sentence orders the examination (v0.5 §3.9a). Kalbfleisch's print (p. 8, checked 2026-11-02) reads ὅπερ, ὡς ἐμοὶ δοκεῖ.
 - **L29** The reason for testing first.
 - **L30** The default is in this rule.
 - **L32** Architecture used as evidence; embrittlement where it stops reconsideration, to be shown (§3.9a).
@@ -131,7 +139,7 @@ Total 82 loci. Attribution: does_not_address 18, presupposes 31, argues_for 12, 
 - **L35** The preface says nothing of genuineness, order or authorship.
 - **L36** Iamblichus's assignment of priority, as Simplicius reports it.
 - **L37** The priority made a condition of exposition: agreement shown, the few disagreements explained.
-- **L38** The TEI's readings (ἀντικειμέων, μεταλβὼν) are kept as seated.
+- **L38** The TEI's readings (ἀντικειμέων, μεταλβὼν) are kept as seated. Kalbfleisch's print (p. 382.29–30, checked 2026-11-02) reads καὶ τὰ περὶ ἀντικειμένων … μεταλαβὼν.
 - **L40** Simplicius has an Archytan book his authority did not use; its arrival is the occasion of the reading.
 - **L41** The doublet across names inside the proof: an alternative referent named and excluded.
 - **L42** The hinge (#1583). The text names no author; it marks a part ended in the inquiry's own progress.
@@ -170,3 +178,10 @@ Total 82 loci. Attribution: does_not_address 18, presupposes 31, argues_for 12, 
 - **L80** The assumption made for the book and declared unconfirmed in the same note.
 - **L81** Schironi reports the presupposition and sets the Alexandrian ekdosis, attested in Diogenes 3.61 and 3.65, beside it. Bears on §4.5.
 - **L82** The corpus asks of names whether they count what they name, in the dialogue Masters 1977 would give to Aristotle (§5.2). Pointed out by the operator's attachment (Torringa 2011, p. 20).
+- **L83** Düring (as Chroust 1973, I, p. 3 reports him, L77) gives the legend to Hermippus; Diogenes leaves it unassigned and gives Hermippus the next sentence (L84).
+- **L84** The school arises from a succession: σχολάρχης ἐγένετο τῆς ἐν Ἀκαδημίᾳ σχολῆς Ξενοκράτης.
+- **L85** The biography reads the persons from the instrument (§1.4).
+- **L86** A person's school is a cataloguer's entry, and two entries stand side by side in Athenaeus.
+- **L87** The author of the Characters remembered doing characters; bears on J11.
+- **L88** Rose reads the note's silence as Andronicus filing the book under Aristotle (citavit procul dubio inter Aristotelica); he reports Bartholomew's Latin 'liber aristotilis de principiis' and the note rubricated at the head of the Latin Metaphysics A.
+- **L89** One book in, one out, in two sentences: 'Adiunxi libellum de coloribus, ab aliis Aristoteli adscriptum.'
