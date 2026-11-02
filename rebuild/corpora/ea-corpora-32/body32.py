@@ -91,7 +91,7 @@ issue = "\n".join([
     f"### Keywords\n\n{kw}\n",
     "### Related Identifiers\n\nAXN deposit #1730 — EA-CORPORA-31: the thirty-first seating, the debts of v0.1, whose builder this seating extends\n"
     "AXN deposit #1720 — EA-CORPORA-30: the thirtieth seating\n"
-    "AXN deposit #1591 — the Cicero seat (EA-CORPORA-13/03), checked first for Ad Atticum\n"
+    "AXN deposit #1591 — EA-CORPORA-13: the thirteenth seating, whose Cicero seat (13/03) was checked first for Ad Atticum\n"
     "AXN deposit #1581 — the wills and the Theophrastan catalogue in Diogenes Laertius\n"
     "AXN deposit #1590 — The Ghost Catalogues\n"
     "AXN deposit #1602 — Locating the Dependencies\n",
