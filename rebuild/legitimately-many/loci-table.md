@@ -93,6 +93,15 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L87 | 3.7 | Hermippus, fr. 43 (FHG III p. 46 = Athenaeus I 21a) | text l. 206 · fr. 43 · FHG Volumen tertium p. 46 · BIOI · ΠΕΡΙ ΑΡΙΣΤΟΤΕΛΟΥΣ ΒΙΒΛ. Β’ (Γ’...) | οὐδεμιᾶς ἀπεχόμενον κινήσεως οὐδὲ σχήματος ἑνός | the manner of the continuator's lecture → Theophrastus performing, every movement and figure, once mimicking a gourmand | does_not_address | presupposes |
 | L88 | 3.10 | Rose, Aristoteles pseudepigraphus (1863), pp. 183–184, fr. XXXIV (open scan, checked by eye) | text l. 9 | qui duplici varioque titulo inscribebantur Ἀριστοτέλους ἢ Θεοφράστου | the author of the book Περὶ ἀρχῆς → uncertain: one of the books inscribed with a double title, Aristotle's or Theophrastus's | holds_open | holds_open |
 | L89 | 3.10 | Schneider, Theophrasti opera I (1818), Praefatio p. viii (open scan, checked by eye) | text l. 5 | Contra exclusi Metaphysica iam olim ab Andronico in recensione operum Theophrasti omissa | the books of the edition of Theophrastus → De coloribus added from Aristotle; the Metaphysics excluded, on Andronicus's omission | argues_for | presupposes |
+| L90 | 3.10 | Hegel, Vorlesungen II (1833), p. 299 (OCR in session) | text l. 19 | geradezu entgegengeſett | the relation of the two philosophies → received: directly opposed, idealism against realism; Hegel: Aristotle surpasses Plato in speculative depth | presupposes | presupposes |
+| L91 | 3.10 | Hegel, Vorlesungen II (1833), p. 301 (OCR in session) | text l. 10 | denn Ariſtoteles trug die | Plato's successor → Aristotle 'in der That', the philosophy carried on in Plato's sense, deeper and wider; Speusippus the appointed heir | presupposes | presupposes |
+| L92 | 3.10 | Hegel, Vorlesungen II (1833), p. 301 (OCR in session) | text l. 5 | widerſprechender Anekdoten | Diogenes on the choice of Speusippus → 'eine Menge unnützer, sich widersprechender Anekdoten' | does_not_address | presupposes |
+| L93 | 3.10 | Hegel, Vorlesungen II (1833), p. 308 (OCR in session) | text l. 8 | es müſſen Zweifel über ihre Aecht | the genuineness of the transmitted writings → doubt must arise, from the custody story (Theophrastus's will, Neleus, the cellar, Apellicon, Sulla, Tyrannion) | considers_excludes | presupposes |
+| L94 | 3.10 | Hegel, Vorlesungen II (1833), p. 309 (OCR in session) | text l. 21 | Theil aus mehreren Scriften zuſammengefli | the composition of the Metaphysics → stitched in part from several writings, criticism given free play | presupposes | holds_open |
+| L95 | 3.10 | Hegel, Vorlesungen II (1833), p. 248–249 (OCR in session) | text l. 4 | dieſer Dialog, gleic) wie ſein Homer | the unity of the Timaeus → Wolf: pieces put together like his Homer; Hegel: the returns to the beginning are necessary | considers_excludes | considers_excludes |
+| L96 | 3.10 | Hegel, Vorlesungen II (1833), p. 310 (OCR in session) | text l. 19 | Dieſer Umſtand iſt von keiner | the exoteric and esoteric writings → of no importance | does_not_address | does_not_address |
+| L97 | 3.10 | Hegel, Vorlesungen II (1833), p. 310 (OCR in session) | text l. 26 | Philoſophie ſehr vieldeutig iſt | what the name 'aristotelische Philosophie' names → many shapes in different times: Ciceronian, Alexandrian, scholastic, after the Reformation | holds_open | does_not_address |
+| L98 | 3.10 | Hegel, Vorlesungen II (1833), p. 298 (OCR in session) | text l. 19 | in die ganze Maſſe und alle Seiten | the range of the maker → one person entered the whole mass and every side of the real universe; 'so umfassend und spekulativ, wie Keiner' | presupposes | presupposes |
 
 ## Counts by stratum
 
@@ -108,11 +117,11 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 27 | presupposes 12, considers_excludes 3, argues_for 6, does_not_address 3, revises 2, holds_open 1 | does_not_address 9, presupposes 12, holds_open 2, revises 4 |
+| 3.10 | 36 | presupposes 16, considers_excludes 5, argues_for 6, does_not_address 5, revises 2, holds_open 2 | does_not_address 11, presupposes 17, holds_open 3, revises 4, considers_excludes 1 |
 | 3.10a | 10 | revises 2, presupposes 3, holds_open 3, considers_excludes 1, does_not_address 1 | revises 2, presupposes 6, holds_open 2 |
 | 3.7 | 5 | presupposes 3, does_not_address 2 | presupposes 4, holds_open 1 |
 
-Total 89 loci. Attribution: does_not_address 20, presupposes 34, argues_for 13, considers_excludes 11, revises 5, holds_open 6. Count: does_not_address 31, presupposes 39, considers_excludes 6, revises 7, holds_open 6.
+Total 98 loci. Attribution: does_not_address 22, presupposes 38, argues_for 13, considers_excludes 13, revises 5, holds_open 7. Count: does_not_address 33, presupposes 44, considers_excludes 7, revises 7, holds_open 7.
 
 ## Notes
 
@@ -185,3 +194,12 @@ Total 89 loci. Attribution: does_not_address 20, presupposes 34, argues_for 13, 
 - **L87** The author of the Characters remembered doing characters; bears on J11.
 - **L88** Rose reads the note's silence as Andronicus filing the book under Aristotle (citavit procul dubio inter Aristotelica); he reports Bartholomew's Latin 'liber aristotilis de principiis' and the note rubricated at the head of the Latin Metaphysics A.
 - **L89** One book in, one out, in two sentences: 'Adiunxi libellum de coloribus, ab aliis Aristoteli adscriptum.'
+- **L90** 'Es ist eine ganz allgemein verbreitete (die gewöhnliche) Meinung, daß aristotelische und platonische Philosophie sich geradezu entgegengesetzt seyen'; 'In der That übertrifft an spekulativer Tiefe Aristoteles den Plato.' Checked by eye.
+- **L91** The succession moved from the school's instrument to the philosophy.
+- **L92** Checked by eye.
+- **L93** Closed in the next paragraph: 'Inzwischen ist die Sache nicht ganz so arg' (p. 309).
+- **L94** Granted for Aristotle's Metaphysics; refused for Plato's Timaeus (L95). Checked by eye.
+- **L95** 'so werden wir im Ganzen sehen, wie es nothwendig auseinanderfällt, und was die Rückkehr gleichsam zum Anfang nothwendig macht.'
+- **L96** As for Plato's secret doctrine (§6.3).
+- **L97** The name's reference made plural across time; the maker's held one.
+- **L98** Bears on §4.5: the range granted over the objects to one name.
