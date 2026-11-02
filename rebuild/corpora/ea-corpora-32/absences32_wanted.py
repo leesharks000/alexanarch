@@ -28,20 +28,21 @@ W = [
  ("Opening", "Francesca Schironi", "\"Plato at Alexandria: Aristophanes, Aristarchus, and the 'Philological Tradition' of a Philosopher\", Classical Quarterly 55", "Cambridge University Press", 2005, fo(2005)),
  ("Opening", "Marwan Rashed", "Ptolemy, Epistle to Gallus (the life, will and catalogue of Aristotle), edition", "", 2021, fo(2021)),
  ("Opening", "Matthias Perkams", "\"Die Datierung der Aristotelesedition des Andronikos von Rhodos\"", "", 2019, fo(2019)),
+ ("Opening", "H. J. Drossaart Lulofs", "Nicolaus Damascenus on the Philosophy of Aristotle (Philosophia Antiqua 13), the fragments of the Syriac compendium (Cambridge University Library, Gg. 2.14) translated with introduction and commentary", "E. J. Brill, Leiden", 1965, fo(1965) + "; the Archive holds three copies for lending only (nicolausdamascen0000hjdr, trent_0116302122704, bwb_T3-BOE-620); to be read for the ground of Nicolaus's ascription of the Metaphysics (draft §3.13)"),
  ("Opening", "Josef Zürcher", "Aristoteles' Werk und Geist", "Schöningh, Paderborn", 1952, fo(1952)),
  ("Opening", "Anton-Hermann Chroust", "Aristotle: New Light on His Life and on Some of His Lost Works", "Routledge & Kegan Paul, London", 1973, fo(1973)),
  ("Opening", "Roger D. Masters; Stephen A. McKnight; Anton-Hermann Chroust", "the exchange on the authorship of the Aristotelian corpus (Masters 1977; McKnight 1978; Chroust 1979; Masters 1979)", "", 1977, fo(1977) + " for the first; each piece opens ninety-five years from its own year"),
 ]
-title = "Legitimately Many, wanted — a declared absence: the Theophrastus Metaphysics editions, Thesleff and Szlezák on pseudo-Archytas, Dorandi's Philodemus, PSI XV 1488, Rashed's Ptolemy, Zürcher, Chroust and the Masters exchange"
+title = "Legitimately Many, wanted — a declared absence: the Theophrastus Metaphysics editions, Drossaart Lulofs's Nicolaus, Thesleff and Szlezák on pseudo-Archytas, Dorandi's Philodemus, PSI XV 1488, Rashed's Ptolemy, Zürcher, Chroust and the Masters exchange"
 why = ("The editions and studies the remaining debts of the study Legitimately Many name and the thirty-second seating could not hold, declared beside the texts it holds "
-       "(32/01–32/10), at the author's direction of 2026-11-02. Twelve are still in their United States term. Four are open now and wanted: Brandis and Usener, for which no copy was found; Ross and Fobes, "
+       "(32/01–32/10, 32/12), at the author's direction of 2026-11-02. Thirteen are still in their United States term. Four are open now and wanted: Brandis and Usener, for which no copy was found; Ross and Fobes, "
        "public domain in the United States since 2025, with no open copy found; and the rest of Hegel's lectures, whose scan is referenced and was OCR'd only for pp. 169–241. The modern editions are where the twentieth century numbered and dated what the seated texts carry, so "
        "each entry names what the study cites from it.")
 wanted = ("Wanted first: Brandis 1823 and Usener 1890, then Ross and Fobes 1929 from an open copy; the rest of Hegel's lectures can be OCR'd from the scan already referenced. "
           "The in-copyright studies are to be read and cited, not seated.")
 shelf = ("Beside pseudo-archytas (32/01), aldine-aristotle-1497 (32/02), theophrastus-metaphysics-wimmer-1866 (32/03), philodemus-index-academicorum (32/04), "
          "dionysius-ad-ammaeum (32/05), cicero-ad-atticum (32/06), schleiermacher-platons-werke-1804 (32/07), campbell-sophistes-politicus (32/08), "
-         "tennemann-platonische-philosophie (32/09) and hegel (32/10); the debts of v0.1 are seated at EA-CORPORA-31.")
+         "tennemann-platonische-philosophie (32/09), hegel (32/10) and nicolaus-damascenus (32/12); the debts of v0.1 are seated at EA-CORPORA-31.")
 seat = ST / "legitimately-many-wanted"; (seat / "declared").mkdir(parents=True, exist_ok=True)
 L = [dict(**{"class": c}, author=a, title=t, first_publisher=p, first_published=y, opens=o) for c, a, t, p, y, o in W]
 doc = {"declared_absence": title, "kind": "copyright, and copies not found", "rights": "The authors, their estates and first publishers, as named.", "works": L,

@@ -12,6 +12,7 @@ At the operator's word of 2026-11-02 ("lets prepare that seating, its ea corpora
 - **32/08 campbell-sophistes-politicus**: Campbell 1867, the Archive's OCR.
 - **32/09 tennemann-platonische-philosophie**: System I (1792) and Geschichte II (1799), the Archive's OCR.
 - **32/10 hegel**: Differenzschrift (1801) leaves n7–n60 and Vorlesungen II (1833) pp. 169–241, OCR'd in session with tessdata_best deu_latf.
-- **32/11 legitimately-many-wanted**: a declared absence of sixteen works (absences32_wanted.py).
+- **32/11 legitimately-many-wanted**: a declared absence of seventeen works (absences32_wanted.py); Drossaart Lulofs's Nicolaus (1965) added at v1.1.
+- **32/12 nicolaus-damascenus** (v1.1, at the operator's word of 2026-11-02: "yes, lets grab them, but fold into 32 and version"): Nicolaus's fragments from the DFHG (FHG III); Meyer's De plantis (1841), BIU Santé's scan under the Licence ouverte; the Basel Theophrastus of 1541, its contents from the Archive's OCR and leaves n290–n294 held as images with the title, running heads, hinge and scholion transcribed (transcriptions/). The version supersedes #1731; seat_axns32_v11.py keeps the ten unchanged seats' AXNs and derives 32/11's and 32/12's from the version.
 
 Build: `python3 gen_spec32.py`, then `python3 build32.py spec32-<corpus>.json ../../../data/corpora` per seat, `python3 absences32_wanted.py ../../../data/corpora`, `python3 research31_backfill.py ../../../data/corpora` and `python3 index_seats32.py`. The OCR files made in session are under ocr/. After the deposit, `seat_axns32.py <deposit> --apply` gives the seats their AXNs.

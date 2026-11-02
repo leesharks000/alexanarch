@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enter the EA-CORPORA-32 seats (32/01–32/10, the remaining debts of Legitimately Many; 32/11 Legitimately Many, wanted, declared) in data/api/corpora.json and datasets/corpora/corpora.json.
+"""Enter the EA-CORPORA-32 seats (32/01–32/10 and 32/12, the remaining debts of Legitimately Many and Nicolaus; 32/11 Legitimately Many, wanted, declared) in data/api/corpora.json and datasets/corpora/corpora.json.
 
 Additive and idempotent: an existing row for any of the eleven corpora is replaced, totals are recomputed from the
 difference. license_class follows the manifest's stated derivation, most-restrictive-first over the packaging the
@@ -7,12 +7,12 @@ seat actually carries: Wikisource transcription (CC BY-SA) > Project Gutenberg >
 import json, hashlib, pathlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-SPEC = {"seats": [{"corpus": c} for c in ("pseudo-archytas", "aldine-aristotle-1497", "theophrastus-metaphysics-wimmer-1866", "philodemus-index-academicorum", "dionysius-ad-ammaeum", "cicero-ad-atticum", "schleiermacher-platons-werke-1804", "campbell-sophistes-politicus", "tennemann-platonische-philosophie", "hegel", "legitimately-many-wanted")]}
+SPEC = {"seats": [{"corpus": c} for c in ("pseudo-archytas", "aldine-aristotle-1497", "theophrastus-metaphysics-wimmer-1866", "philodemus-index-academicorum", "dionysius-ad-ammaeum", "cicero-ad-atticum", "schleiermacher-platons-werke-1804", "campbell-sophistes-politicus", "tennemann-platonische-philosophie", "hegel", "legitimately-many-wanted", "nicolaus-damascenus")]}
 NAMES = [s["corpus"] for s in SPEC["seats"]]
 now = datetime.datetime.now(datetime.timezone.utc)
 
 
-CLASS = {'pseudo-archytas': 'public-domain', 'aldine-aristotle-1497': 'public-domain', 'theophrastus-metaphysics-wimmer-1866': 'public-domain', 'philodemus-index-academicorum': 'public-domain', 'dionysius-ad-ammaeum': 'cc-by-sa', 'cicero-ad-atticum': 'cc-by-sa', 'schleiermacher-platons-werke-1804': 'public-domain', 'campbell-sophistes-politicus': 'public-domain', 'tennemann-platonische-philosophie': 'public-domain', 'hegel': 'public-domain', 'legitimately-many-wanted': 'cc-by'}  # stated per seat: Perseus TEI CC BY-SA; scans, the Archive's OCR, session OCR and the session transcription public domain; the declaration the archive's own
+CLASS = {'pseudo-archytas': 'public-domain', 'aldine-aristotle-1497': 'public-domain', 'theophrastus-metaphysics-wimmer-1866': 'public-domain', 'philodemus-index-academicorum': 'public-domain', 'dionysius-ad-ammaeum': 'cc-by-sa', 'cicero-ad-atticum': 'cc-by-sa', 'schleiermacher-platons-werke-1804': 'public-domain', 'campbell-sophistes-politicus': 'public-domain', 'tennemann-platonische-philosophie': 'public-domain', 'hegel': 'public-domain', 'legitimately-many-wanted': 'cc-by', 'nicolaus-damascenus': 'cc-by-sa'}  # stated per seat: Perseus TEI CC BY-SA; scans, the Archive's OCR, session OCR and the session transcription public domain; the declaration the archive's own
 
 
 def lclass(src):

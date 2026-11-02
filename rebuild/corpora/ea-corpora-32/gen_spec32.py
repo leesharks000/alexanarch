@@ -233,6 +233,37 @@ specs.append({
  "research": research("design §6 (Hegel as a reader of the closing) and §5"),
  "spine": "EA-CORPORA-32", "ruling": RULING, "seating": SEATING, "cross_references": ["tennemann-platonische-philosophie (32/09)", "plato"]})
 
+specs.append({
+ "corpus": "nicolaus-damascenus", "seat": "EA-CORPORA-32/12",
+ "title": "Nicolaus of Damascus: the fragments (Müller, FHG III, from the DFHG), the De plantis restored to his name (Meyer, 1841), and the Basel Theophrastus of 1541 with the scholion that cites him",
+ "language": "mul", "fetched": "2026-11-02",
+ "license": {"payload": "Nicolaus of Damascus (b. c. 64 BCE) is public domain, as are the witnesses quoted. Müller's FHG III (Paris: Didot, 1849) is public domain everywhere; the DFHG states that its contents are licensed CC BY-SA 4.0, redistributed under the same licence and attributed to the Digital Fragmenta Historicorum Graecorum (Leipzig). Meyer's Nicolai Damasceni De plantis (Leipzig: Voss, 1841) is public domain; the scan is the Bibliothèque interuniversitaire de santé's, under the Licence ouverte (Etalab), and its OCR layer is the Archive's. The Basel Theophrastus (Oporinus, 1541) is public domain; the Archive marks the item Public Domain Mark 1.0; its leaves are held by URL and sha256 and the transcription was made in session.", "record": REC},
+ "normalization": "Three items. The DFHG response as served (JSON) is the original, reduced to one block per fragment by build31.py. Meyer 1841: the Archive's OCR layer, line endings normalized, the scan held by reference. Basel 1541: the Archive's OCR reads the Greek fount as Latin and is held only for the volume's Latin contents; leaves n290–n294 are held as images, with the title, running heads, the hinge and the scholion transcribed by eye in session (transcriptions/), a reading to be checked against the image. " + NORM_OCR,
+ "units": "one text file per item",
+ "items": [
+  {"kind": "dfhg", "slug": "nicolaus-damascenus-fhg", "url": "http://www.dfhg-project.org/DFHG/api.php?author=NICOLAUS%20DAMASCENUS", "path": "dfhg/NICOLAUS-DAMASCENUS.json",
+   "work": "Nicolaus Damascenus, fragmenta (Histories, Collection of Remarkable Customs, Life of Augustus, On His Own Life), in C. Müller, Fragmenta Historicorum Graecorum III (Paris: Didot, 1849), pp. 348–464 — DFHG, author NICOLAUS DAMASCENUS"},
+  {"kind": "ia_ref", "slug": "meyer-1841-de-plantis", "identifier": "BIUSante_90960x127x01", "scan": "BIUSante_90960x127x01.pdf",
+   "work": "Nicolai Damasceni De plantis libri duo Aristoteli vulgo adscripti, ex Isaaci ben Honain versione arabica Latine vertit Alfredus, ed. E. H. F. Meyer (Leipzig: Voss, 1841) — Internet Archive BIUSante_90960x127x01 (Bibliothèque interuniversitaire de santé), the OCR layer"},
+  {"kind": "ia_ref", "slug": "basel-1541-contents", "identifier": "b3355142x", "scan": "b3355142x.pdf",
+   "work": "Theophrastus, Opera (Basel: Oporinus, 1541), the Archive's OCR layer, held for the Latin contents — Internet Archive b3355142x"},
+  {"kind": "page_images", "slug": "basel-1541-metaphysics", "identifier": "b3355142x", "pages": [290, 291, 292, 293, 294], "images_dir": f"{SCR}/bas",
+   "transcription": "basel-1541-theophrastus-transcription.txt",
+   "work": "Theophrastus, Opera (Basel: Oporinus, 1541), pp. 267–271: ΘΕΟΦΡΑΣΤΟΥ ΤΩΝ ΜΕΤΑ ΤΑ ΦΥΣΙΚΑ, its running heads, and the scholion after it — Internet Archive b3355142x, leaves n290–n294, transcribed in session"}],
+ "loci": [
+  {"label": "On His Own Life, fr. 2: Nicolaus a zealot of Aristotle", "text": "text/nicolaus-damascenus-fhg.txt", "find": "ζηλωτὴς γὰρ Ἀριστοτέλους γενόμενος"},
+  {"label": "Meyer 1841, the title: the two books of the De plantis, commonly ascribed to Aristotle, as Nicolaus's", "text": "text/meyer-1841-de-plantis.ocr.txt", "find": "NICOLAI DAMASCENI DE PLANTIS LIBRI DUO ARISTOTELI VULGO ADSCRIPTI."},
+  {"label": "Meyer 1841, Praefatio: the book is Nicolaus's and not Aristotle's", "text": "text/meyer-1841-de-plantis.ocr.txt", "find": "Nicolai est, nec Aristotelis."},
+  {"label": "Basel 1541, the contents: Aristotle's De plantis inside the Theophrastus volume", "text": "text/basel-1541-contents.ocr.txt", "find": "Aviftotelis De plantis, lib. 11. 198", "note": "the page reads Aristotelis … lib. II.; the OCR reads Aviftotelis … lib. 11."},
+  {"label": "Basel 1541, p. 267: the title", "text": "text/basel-1541-metaphysics-transcription.txt", "find": "ΘΕΟΦΡΑΣΤΟΥ ΤΩΝ ΜΕΤΑ ΤΑ ΦΥΣΙΚΑ."},
+  {"label": "Basel 1541, p. 271: the scholion, Nicolaus's ascription", "text": "text/basel-1541-metaphysics-transcription.txt", "find": "Νικόλαος δὲ ἐν τῇ θεωρίᾳ τῶν Ἀριστοτέλους μετὰ τὰ φυσικὰ μνημονεύει αὐτοῦ, λέγων εἶναι Θεοφράστου"},
+  {"label": "Basel 1541, p. 271: the end of the volume's Theophrastus", "text": "text/basel-1541-metaphysics-transcription.txt", "find": "ΤΕΛΟΣ ΤΩΝ ΘΕΟΦΡΑΣΤΟΥ."}],
+ "scope": "Three witnesses to Nicolaus of Damascus as the scholion of Theophrastus's Metaphysics names him. (1) His fragments as Müller collected them, 165 in the DFHG, among them On His Own Life, where he is called a zealot of Aristotle (fr. 2). (2) Meyer's edition of the Latin De plantis, from Isaac ben Honain's Arabic through Alfred of Sareshel, which restores to Nicolaus the two books on plants transmitted as Aristotle's (the Greek is in Bekker's Aristotle and in the aristotle seat, tlg039). (3) The Basel Theophrastus of 1541, which the bookseller's description bound with the Archive's scan calls, after Schweiger, the first separate edition of the complete works (\"Erste besondere Ausgabe der sämtlichen Werke\"): it prints Aristotle's De plantis inside the Theophrastus volume (p. 198), and prints the Metaphysics as Theophrastus's (pp. 267–271) under the running heads ΘΕΟΦΡΑΣΤΟΥ and ΤΩΝ ΜΕΤΑ ΤΑ ΦΥΣΙΚΑ, the scholion after it, and ΤΕΛΟΣ ΤΩΝ ΘΕΟΦΡΑΣΤΟΥ. Nicolaus's On the Philosophy of Aristotle, which the scholion cites, survives in a Syriac compendium (Cambridge University Library, Gg. 2.14) and is edited by Drossaart Lulofs (Leiden: Brill, 1965), in copyright and declared at 32/11.",
+ "why_seated": "Nicolaus is where the second name enters for Theophrastus's Metaphysics (draft §3.4), and a work of his own, the De plantis, travelled under Aristotle's name until Meyer restored it. The 1541 Basel volume prints the Metaphysics among Theophrastus's works, apart from Aristotle's, with the scholion still after it.",
+ "research": research("draft §3.4–§3.5 and §3.13 (Nicolaus's ascription and its ground), added to the seating at the operator's word of 2026-11-02 ('yes, lets grab them, but fold into 32 and version')"),
+ "spine": "EA-CORPORA-32", "ruling": RULING + " Extended 2026-11-02 at the operator's word ('lets grab nicolaus'; 'yes, lets grab them, but fold into 32 and version').", "seating": SEATING,
+ "cross_references": ["aristotle (tlg039, De plantis)", "aldine-aristotle-1497 (32/02)", "theophrastus (EA-CORPORA-09/01)", "hermippus (31/06)"]})
+
 if __name__ == "__main__":
   for s in specs:
     (H / f"spec32-{s['corpus']}.json").write_text(json.dumps(s, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
