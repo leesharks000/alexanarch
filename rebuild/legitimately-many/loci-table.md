@@ -45,24 +45,37 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L39 | 3.9a | Simplicius, In Cat. 10 (on opposites) | 10 · p. 407.17 | ἀρχέτοπα τῶν εἰρημένων ὄντα | the status of the Archytan text → archetypes of what Aristotle said | argues_for | presupposes |
 | L40 | 3.9a | Simplicius, In Cat. 10 (on opposites) | 10 · p. 407.19 | καὶ ἴσως οὐκ ἦλθεν εἰς αὐτόν | the transmission of the Archytan book → a book that perhaps did not reach Iamblichus | does_not_address | does_not_address |
 | L41 | 3.9a | Simplicius, In Cat., on the genuineness of the Categories | preface · p. 18.10–11 | ἵνα μηδὲ ὑπονοήσωμεν τοῦ Ἀρχυτείου μνημονεύειν αὐτὸν ἄλλην ἐπιγραφὴν ἔχοντος | the referent of Aristotle's cross-references → the Categories, the Archytan book excluded by its title | considers_excludes | presupposes |
+| L42 | 3.1 | Theophrastus, Metaphysics 4b (§§6–7), the hinge | 6 | μέχρι μὲν δὴ τούτων οἷον ἄρτιος ὁ λόγος | the writer of the next step → the position inside Λ's inquiry: Λ 6–7 summarized as complete | does_not_address | does_not_address |
+| L43 | 3.1 | Theophrastus, Metaphysics 4b (§7), the next question | 7 | τὸ δὲ μετὰ ταῦτ᾽ ἤδη λόγου δεῖται πλείονος περὶ τῆς ἐφέσεως, ποία καὶ τίνων | the next part → the question of desire, Λ 8's question of number and motion | does_not_address | does_not_address |
+| L44 | 3.1 | Aristotle, Metaphysics Λ 7, 1073a3–5 | 12.7 · 1073a | ὅτι μὲν οὖν ἔστιν οὐσία τις ἀΐδιος καὶ ἀκίνητος καὶ κεχωρισμένη τῶν αἰσθητῶν | the part completed → Λ 6–7's result, the one Theophrastus's hinge marks as complete | does_not_address | does_not_address |
+| L45 | 3.1 | Aristotle, Metaphysics Λ 8, 1073a14 | 12.8 · 1073a | πότερον δὲ μίαν θετέον τὴν τοιαύτην οὐσίαν ἢ πλείους | the next question → Λ 8's question, the one the hinge names as next | does_not_address | does_not_address |
+| L46 | 3.5 | The Hesychian catalogue of Aristotle, in Rose 1886 (OCR in session) | text l. 275 · n23 | μεταφυσικὰ x. | the Metaphysics in a catalogue → under Aristotle's name; no entry under Theophrastus's in Diogenes's list | presupposes | does_not_address |
+| L47 | 3.10 | Aldine Aristotle IV (1497), f. 121v, the scholion (transcribed in session) | text l. 36 · n587 (f. 121v): the end of the text, then the scholion in the same fount | Τοῦτο τὸ βιβλίον, Ἀνδρόνικος μὲν καὶ Ἕρμιππος ἀγνοοῦσιν· οὐδὲ γὰρ μνείαν αὐτοῦ ὅλως πεποίηνται ἐν τῇ ἀναγραφῇ τῶν Θεοφράστου βιβλίων | the book's place in the catalogues → absent from Andronicus's and Hermippus's lists of Theophrastus's books | considers_excludes | does_not_address |
+| L48 | 3.10 | Aldine Aristotle IV (1497), f. 121v, the scholion (transcribed in session) | text l. 36 · n587 (f. 121v): the end of the text, then the scholion in the same fount | Νικόλαος δὲ ἐν τῇ θεωρίᾳ τῶν Ἀριστοτέλους μετὰ τὰ φυσικὰ μνημονεύει αὐτοῦ, λέγων εἶναι Θεοφράστου | author of the book → Theophrastus, on Nicolaus's word | argues_for | presupposes |
+| L49 | 3.10 | Aldine Aristotle IV (1497), f. 121v, the scholion (transcribed in session) | text l. 36 · n587 (f. 121v): the end of the text, then the scholion in the same fount | ἔστι δὲ ἐν αὐτῷ προδιαπορήσεις τινὲς ὀλίγαι τῆς ὅλης πραγματείας | the book's relation to the treatise → a few preliminary aporiai of the whole treatise | does_not_address | does_not_address |
+| L50 | 3.10 | Aldine Aristotle IV (1497), the register (transcribed in session) | text l. 43 · n588: the register (the heading of its last section), and the colophons | Ἀριστοτέλους καὶ Θεοφράστου τῶν μετὰ τὰ φυσικά. | the heading over both books → Aristotle's and Theophrastus's, one title | presupposes | holds_open |
+| L51 | 3.10 | Wimmer, Theophrasti opera (Didot 1866), Praefatio | text l. 256 | in editione sua Metaphysicorum Aristo- telis et Theophrasti exposuit | Brandis's edition (1823) → one edition of the Metaphysics of Aristotle and Theophrastus | presupposes | presupposes |
+| L52 | 3.10 | Wimmer, Theophrasti opera (Didot 1866), Praefatio | text l. 256 | risiensem 1853 (P), quorum scripturas | the codices of Theophrastus's Metaphysics → among them Paris gr. 1853 | does_not_address | does_not_address |
+| L53 | 3.10 | Bekker 1831, the list of codices (OCR in session) | text l. 30 · n8 | E. Parisiensis Regius. 1853. | a codex of Aristotle → Paris gr. 1853, siglum E | presupposes | does_not_address |
+| L54 | 3.10 | Wimmer, Theophrasti opera (Didot 1866), the Metaphysics | text l. 39177 | XIl. THEOPHRASTI METAPHYSICA. | the book's place in the edition → the twelfth of Theophrastus's fragments | presupposes | presupposes |
 
 ## Counts by stratum
 
 | § | n | attribution codes | count codes |
 |---|---|---|---|
-| 3.1 | 1 | revises 1 | revises 1 |
+| 3.1 | 5 | revises 1, does_not_address 4 | revises 1, does_not_address 4 |
 | 3.2 | 1 | presupposes 1 | presupposes 1 |
 | 3.3 | 2 | does_not_address 2 | does_not_address 2 |
 | 3.4 | 4 | does_not_address 1, presupposes 3 | does_not_address 1, presupposes 3 |
-| 3.5 | 4 | holds_open 1, considers_excludes 1, presupposes 2 | does_not_address 1, presupposes 3 |
+| 3.5 | 5 | holds_open 1, considers_excludes 1, presupposes 3 | does_not_address 2, presupposes 3 |
 | 3.6 | 4 | presupposes 3, does_not_address 1 | presupposes 3, does_not_address 1 |
 | 3.7a | 3 | argues_for 2, presupposes 1 | considers_excludes 2, does_not_address 1 |
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 1 | presupposes 1 | does_not_address 1 |
+| 3.10 | 9 | presupposes 5, considers_excludes 1, argues_for 1, does_not_address 2 | does_not_address 5, presupposes 3, holds_open 1 |
 
-Total 41 loci. Attribution: does_not_address 8, presupposes 16, argues_for 7, considers_excludes 7, revises 1, holds_open 2. Count: does_not_address 17, presupposes 17, considers_excludes 6, revises 1.
+Total 54 loci. Attribution: does_not_address 14, presupposes 21, argues_for 8, considers_excludes 8, revises 1, holds_open 2. Count: does_not_address 26, presupposes 20, considers_excludes 6, revises 1, holds_open 1.
 
 ## Notes
 
@@ -85,10 +98,20 @@ Total 41 loci. Attribution: does_not_address 8, presupposes 16, argues_for 7, co
 - **L30** The default is in this rule.
 - **L32** Architecture used as evidence; embrittlement where it stops reconsideration, to be shown (§3.9a).
 - **L33** Adrastus reports it; Simplicius records the opening ('Τῶν ὄντων τὸ μέν ἐστιν') and the equal stichometry, and moves on without adjudicating. Two texts under one name, left standing.
-- **L34** The pseudo-Archytas text is a debt to seat (Mullach).
+- **L34** The pseudo-Archytan writings are seated at 32/01 (Mullach 1860).
 - **L35** The preface says nothing of genuineness, order or authorship.
 - **L36** Iamblichus's assignment of priority, as Simplicius reports it.
 - **L37** The priority made a condition of exposition: agreement shown, the few disagreements explained.
 - **L38** The TEI's readings (ἀντικειμέων, μεταλβὼν) are kept as seated.
 - **L40** Simplicius has an Archytan book his authority did not use; its arrival is the occasion of the reading.
 - **L41** The doublet across names inside the proof: an alternative referent named and excluded.
+- **L42** The hinge (#1583). The text names no author; it marks a part ended in the inquiry's own progress.
+- **L46** The OCR reads the book number as x; the catalogue is the first of the ancient lists here to carry the title.
+- **L47** The catalogues' silence, reported as the case against.
+- **L48** The ascription given; its ground not given. Where 'two authors' enters for this book.
+- **L49** The scholion places the book inside one πραγματεία.
+- **L50** Two names joined by καί over one gathering; the print keeps the conjunction.
+- **L51** Brandis 1823 itself not found as a scan; declared at 32/11.
+- **L52** The codex Bekker lists as E (L53).
+- **L53** The same codex carries Theophrastus's book (L52); Bekker's numbered pages take Aristotle from it.
+- **L54** The OCR reads XII as XIl; the scholion not found in the OCR layer.
