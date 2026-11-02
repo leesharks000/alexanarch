@@ -58,6 +58,11 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L52 | 3.10 | Wimmer, Theophrasti opera (Didot 1866), Praefatio | text l. 256 | risiensem 1853 (P), quorum scripturas | the codices of Theophrastus's Metaphysics → among them Paris gr. 1853 | does_not_address | does_not_address |
 | L53 | 3.10 | Bekker 1831, the list of codices (OCR in session) | text l. 30 · n8 | E. Parisiensis Regius. 1853. | a codex of Aristotle → Paris gr. 1853, siglum E | presupposes | does_not_address |
 | L54 | 3.10 | Wimmer, Theophrasti opera (Didot 1866), the Metaphysics | text l. 39177 | XIl. THEOPHRASTI METAPHYSICA. | the book's place in the edition → the twelfth of Theophrastus's fragments | presupposes | presupposes |
+| L55 | 3.10 | Basel Theophrastus (1541), p. 267, the title (transcribed in session) | text l. 6 · n290 (p. 267): running head over the last of the Characters, then the title | ΘΕΟΦΡΑΣΤΟΥ ΤΩΝ ΜΕΤΑ ΤΑ ΦΥΣΙΚΑ. | the book's place in the edition → among Theophrastus's works, after the Characters | presupposes | presupposes |
+| L56 | 3.10 | Basel Theophrastus (1541), p. 268, the page opening on the hinge (transcribed in session) | text l. 10 · n291 (p. 268): running head; the page opens at the hinge | τὸ δὲ μετὰ ταῦτ᾽ ἤδη λόγου δεῖται πλείονος περὶ τῆς ἐφέσεως, ποία καὶ τίνων. | the running head over the hinge → ΘΕΟΦΡΑΣΤΟΥ | presupposes | presupposes |
+| L57 | 3.10 | Basel Theophrastus (1541), p. 271, the scholion (transcribed in session) | text l. 20 · n294 (p. 271): running head; the end of the text, the scholion, and the end of the volume's Theophrastus | Νικόλαος δὲ ἐν τῇ θεωρίᾳ τῶν Ἀριστοτέλους μετὰ τὰ φυσικὰ μνημονεύει αὐτοῦ, λέγων εἶναι Θεοφράστου | author of the book → Theophrastus, on Nicolaus's word | argues_for | presupposes |
+| L58 | 3.4 | Nicolaus, On His Own Life, fr. 2 (FHG III, DFHG) | text l. 7 · fr. 2 · FHG Volumen tertium p. 349 · ΠΕΡΙ ΤΟΥ ΙΔΙΟΥ ΒΙΟΥ | ζηλωτὴς γὰρ Ἀριστοτέλους γενόμενος | the ascriber's school → a zealot of Aristotle | does_not_address | does_not_address |
+| L59 | 3.10 | Meyer, Nicolai Damasceni De plantis (1841), Praefatio | text l. 660 | Nicolai est, nec Aristotelis. | author of the De plantis transmitted as Aristotle's → Nicolaus | revises | presupposes |
 
 ## Counts by stratum
 
@@ -66,16 +71,16 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.1 | 5 | revises 1, does_not_address 4 | revises 1, does_not_address 4 |
 | 3.2 | 1 | presupposes 1 | presupposes 1 |
 | 3.3 | 2 | does_not_address 2 | does_not_address 2 |
-| 3.4 | 4 | does_not_address 1, presupposes 3 | does_not_address 1, presupposes 3 |
+| 3.4 | 5 | does_not_address 2, presupposes 3 | does_not_address 2, presupposes 3 |
 | 3.5 | 5 | holds_open 1, considers_excludes 1, presupposes 3 | does_not_address 2, presupposes 3 |
 | 3.6 | 4 | presupposes 3, does_not_address 1 | presupposes 3, does_not_address 1 |
 | 3.7a | 3 | argues_for 2, presupposes 1 | considers_excludes 2, does_not_address 1 |
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 9 | presupposes 5, considers_excludes 1, argues_for 1, does_not_address 2 | does_not_address 5, presupposes 3, holds_open 1 |
+| 3.10 | 13 | presupposes 7, considers_excludes 1, argues_for 2, does_not_address 2, revises 1 | does_not_address 5, presupposes 7, holds_open 1 |
 
-Total 54 loci. Attribution: does_not_address 14, presupposes 21, argues_for 8, considers_excludes 8, revises 1, holds_open 2. Count: does_not_address 26, presupposes 20, considers_excludes 6, revises 1, holds_open 1.
+Total 59 loci. Attribution: does_not_address 15, presupposes 23, argues_for 9, considers_excludes 8, revises 2, holds_open 2. Count: does_not_address 27, presupposes 24, considers_excludes 6, revises 1, holds_open 1.
 
 ## Notes
 
@@ -115,3 +120,7 @@ Total 54 loci. Attribution: does_not_address 14, presupposes 21, argues_for 8, c
 - **L52** The codex Bekker lists as E (L53).
 - **L53** The same codex carries Theophrastus's book (L52); Bekker's numbered pages take Aristotle from it.
 - **L54** The OCR reads XII as XIl; the scholion not found in the OCR layer.
+- **L55** The first edition seated here to print the book apart from Aristotle's Metaphysics.
+- **L56** The verso head carries the name, the recto head the shared title.
+- **L57** The note printed after the text, then ΤΕΛΟΣ ΤΩΝ ΘΕΟΦΡΑΣΤΟΥ.
+- **L59** The ascriber's own book, transmitted under Aristotle's name and restored.
