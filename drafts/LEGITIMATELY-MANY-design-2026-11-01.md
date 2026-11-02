@@ -129,3 +129,14 @@ A second pass from the same research model reviewed v0.2 and then stated its wor
 
 8.3. Kept: the operator's rulings stand where the review touches them. The wills and the schools are part of the corpus and its investigation (§0.4; operator, 2026-11-02); the review's distinction between a will's testator and the making of the property is used to locate the conversion, and the study does not take from it that the wills are external records. The governing hypothesis is one person (§4.2), as the review itself undertook: "I'll hold one person making the works received under the three names, through real self-division, as the governing production hypothesis."
 
+## 9. The DeepSeek review of 2026-11-02 (the draft §1–§10), as received and checked
+
+Each point was checked against the draft, the seats and the operator's rulings before it entered.
+
+9.1. Taken in: the draft had no introduction, and one is added (draft §0), stating the question, the answer, the cases and the limit; a bridge at the head of the composition layer saying why the engine belongs to the history (draft §7.0a), in the terms the draft already used (§2.4, §7.3, §8.7). The reviewer's answer to the Dodecad question is recorded beside the question (draft §9.3).
+
+9.2. Already present: the reading of §7.4, that the engine files the challenge under a person, is draft §7.5; the summaries the reviewer asks for at the ends of §2, §3 and §6 are the sections' own "what the case establishes" paragraphs (§2.8, §3.12, §6.6, §7.5); the point that the name enters through Nicolaus is §3.4 and §3.11.
+
+9.3. Not taken, with reasons. The Hegel reframing as a threshold he could not cross because he "would destroy the curriculum he was hired to teach" assigns a motive; the study describes mechanics, and §6.5a shows Hegel crossing the Plato–Aristotle boundary in part (the opposition struck, the succession given to the philosophy) and stopping at the persons. "The edition creates the author" claims what §3.12 says the case does not establish. The gloss on Theophrastus as "the voice of the text failing to resolve" and the tie of J11 to the Sophistical Refutations come without loci. The "existence tax" and a "credibility threshold" subsection: the existence-tax link is deferred by the operator (design §5). Summary boxes and bolded aphorisms are apparatus the notebook register does not use.
+
+9.4. Held for the operator: whether the Dodecad moves from §9 into §1.4 (operator, 2026-11-02: to reviewers as an outline and question).

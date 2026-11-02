@@ -1,6 +1,16 @@
 # Legitimately Many — draft
 
-Working draft, 2026-11-02 (§1, §2; §3–§8 and §10 added the same day; §5 drafted from what the commons reaches; §9 for reviewers). Not deposited. Built on the design (drafts/LEGITIMATELY-MANY-design-2026-11-01.md, v0.6, §6.1) and the locus table (rebuild/legitimately-many/). Every Greek locus is quoted from the seat named beside it; the archive's findings are cited by deposit and are theirs.
+Working draft, 2026-11-02 (§0–§10; §5 drafted from what the commons reaches; §9 for reviewers). Not deposited. Built on the design (drafts/LEGITIMATELY-MANY-design-2026-11-01.md, v0.6, §6.1) and the locus table (rebuild/legitimately-many/). Every Greek locus is quoted from the seat named beside it; the archive's findings are cited by deposit and are theirs.
+
+## 0. The question and the answer, in brief
+
+0.1. **The question.** Socrates, Plato, Aristotle and Theophrastus are received as four persons in sequence, each the author of what is filed under the name. The corpus they make is an inquiry into one and many conducted by positions that refute, correct and continue one another (§1). The study asks how the reading of that corpus as four makers became fixed, over and above the ambiguity the corpus itself carries, and it reads the closing in the media that carried the texts: the stone, the wills, the catalogues, the edition, the commentary, the print, the critical edition, the lecture, and the answer engine.
+
+0.2. **The answer.** The frame was set by filing before anyone argued it. The early media presuppose the attribution and leave the count unaddressed; argument appears only where something put the filing in question, and it appears as defence (§4.6). The operator's account of why: a single maker of the whole would not have been believed, and a single maker of positions that refute one another would not have been received as knowledge, so the many-maker reading was editorially necessary from the first edition on (§4.5). Each later challenge crossed a boundary between names and kept the count (§8.4); the losses of the lost dialogues and of Nicolaus's pages keep the boundary from being tested (§8.5); and at every step the instruments of legitimacy, the wills and the school, were read as evidence of the persons they legitimate (§8.7).
+
+0.3. **The cases.** Simplicius's preface to the Categories, where a test of genuineness placed first is settled by the corpus as already filed (§2). Theophrastus's Metaphysics, where the second name enters through Nicolaus against the catalogues' silence and the editions turn a reported ascription into the frame of the text (§3). The Masters exchange as far as the commons reaches (§5). Hegel, who recovered one maker inside the dialogue and stopped at the persons of the corpus (§6). The answer engine, which runs the whole sequence in one conversation and files the objection under a person (§7).
+
+0.4. **What the study does not do.** It does not decide who wrote the corpus, which the page cannot decide. It records, locus by locus, how the closing was made, in a table of 105 loci coded for the attribution and for the count (rebuild/legitimately-many/).
 
 ## 1. The positive phenomenon: what legitimately many is
 
@@ -190,6 +200,8 @@ Three statements. (a) Andronicus and Hermippus do not know the book: neither men
 
 7.0. **The case.** Two compositions in the Capture Registry, sealed and read whole: Google's AI Overview at the address "aristotle theophrastus one author" (2026-09-28, a new address) and at "aristotle and theophrastus are not two distinct authors" (2026-09-30, six rounds, the second address the packet's own claim as a plain sentence). Both signed out and incognito, on the operator's attestation. Loci L101–L105. The stratum is the design's §3.11: the answer engine composes the four as four, and the registry holds the compositions.
 
+7.0a. **Why the engine belongs to the history.** The answer engine takes its frame from the handbook, as the handbook took it from the edition and the edition from the catalogue (§8.7). It inherits the operation along with the frame: Simplicius used the filed corpus to prove the book (§2.4), and the composition uses the wills to prove the men (§7.3).
+
 7.1. **The innocent reading.** An answer engine summarizes what its sources say. Asked whether two ancient philosophers were one author, it reports the consensus of encyclopedias and handbooks, and when a user presses, it concedes politeness and holds the facts.
 
 7.2. **What it composes at a new address.** Round one of 2026-09-28 answers in its first sentence: Theophrastus and Aristotle are "two distinct historical authors and philosophers", and it gives the evidence: mentor and successor, the school and the library inherited, distinct contributions by domain, and the name: "Aristotle gave him the nickname" (L102). The renaming is in Diogenes: τοῦτον Τύρταμον λεγόμενον Θεόφραστον διὰ τὸ τῆς φράσεως θεσπέσιον Ἀριστοτέλης μετωνόμασεν (V.38; L101). The corpus's own biography has the second name given by the bearer of the first, and the composition offers it as proof that there are two. The same capture records the operator's challenge to a citation: the round had cited a source for a sentence the source does not support.
@@ -238,6 +250,7 @@ Three statements. (a) Andronicus and Hermippus do not know the book: neither men
 
 9.2. **The question.** Does the parallel belong in the study, and if it does, where: as a comparator beside §1 (a maker who is legitimately many, observed in the open), as evidence for §4.5 (the reception of one maker's range over its own craft), or outside the study? And does a practice that declares itself, "i present a heteronym as a heteronym" (operator, 2026-09-30), bear on a corpus whose filing kept the operation out of view, or does the declaration make it a different kind of case?
 
+9.3. **A reviewer's answer (DeepSeek, 2026-11-02), as received.** The reviewer would bring the parallel into §1.4 as a control case: "the instruments of legitimacy (registries, deposit hashes, distinct URL paths) hold together a configuration of names that would otherwise be considered a single author's hallucination. If the archive can do it, the school of Aristotle could have done it"; and holds that keeping it apart "weaken[s] the book's reflexivity". The answer is recorded beside the question. The parallel stays where the operator placed it until the operator rules.
 
 ## 10. Works cited
 
