@@ -1,6 +1,6 @@
 # Legitimately Many — draft
 
-Working draft, 2026-11-02 (§1, §2; §3, §4, §5, §6 and §7 added the same day; §5 drafted from what the commons reaches; §7 for reviewers). Not deposited. Built on the design (drafts/LEGITIMATELY-MANY-design-2026-11-01.md, v0.6, §6.1) and the locus table (rebuild/legitimately-many/). Every Greek locus is quoted from the seat named beside it; the archive's findings are cited by deposit and are theirs.
+Working draft, 2026-11-02 (§1, §2; §3–§8 and §10 added the same day; §5 drafted from what the commons reaches; §9 for reviewers). Not deposited. Built on the design (drafts/LEGITIMATELY-MANY-design-2026-11-01.md, v0.6, §6.1) and the locus table (rebuild/legitimately-many/). Every Greek locus is quoted from the seat named beside it; the archive's findings are cited by deposit and are theirs.
 
 ## 1. The positive phenomenon: what legitimately many is
 
@@ -186,11 +186,45 @@ Three statements. (a) Andronicus and Hermippus do not know the book: neither men
 
 6.7. **Debts this case leaves.** The lectures on Aristotle between pp. 337 and 421, read for any further word on the writings (Theophrastus is named and set aside at p. 423; the pages between were surveyed by their headers only and are unread); pp. 242–336 seated at a later version of 32/10 when the operator rules; the pages of Tennemann's System I on the order of the writings (1792, the part Ueber die Zeitfolge der Platonischen Schriften); Hegel's own sources for the Timaeus remark (the scholia he cites, p. 182 n.); the OCR's readings checked against the Fraktur page at each locus.
 
-## 7. For reviewers: the Dodecad, in outline
+## 7. The composition layer: the last edition
 
-7.0. **Why this is set apart.** The operator held the parallel out of the argument (2026-11-02: "hold on the dodecad") and ruled the same day that it go to reviewers as an outline and a question when the draft circulates. It is stated here so a reviewer can judge whether it belongs, and where. Nothing in §1–§6 depends on it.
+7.0. **The case.** Two compositions in the Capture Registry, sealed and read whole: Google's AI Overview at the address "aristotle theophrastus one author" (2026-09-28, a new address) and at "aristotle and theophrastus are not two distinct authors" (2026-09-30, six rounds, the second address the packet's own claim as a plain sentence). Both signed out and incognito, on the operator's attestation. Loci L101–L105. The stratum is the design's §3.11: the answer engine composes the four as four, and the registry holds the compositions.
 
-7.1. **The outline.**
+7.1. **The innocent reading.** An answer engine summarizes what its sources say. Asked whether two ancient philosophers were one author, it reports the consensus of encyclopedias and handbooks, and when a user presses, it concedes politeness and holds the facts.
+
+7.2. **What it composes at a new address.** Round one of 2026-09-28 answers in its first sentence: Theophrastus and Aristotle are "two distinct historical authors and philosophers", and it gives the evidence: mentor and successor, the school and the library inherited, distinct contributions by domain, and the name: "Aristotle gave him the nickname" (L102). The renaming is in Diogenes: τοῦτον Τύρταμον λεγόμενον Θεόφραστον διὰ τὸ τῆς φράσεως θεσπέσιον Ἀριστοτέλης μετωνόμασεν (V.38; L101). The corpus's own biography has the second name given by the bearer of the first, and the composition offers it as proof that there are two. The same capture records the operator's challenge to a citation: the round had cited a source for a sentence the source does not support.
+
+7.3. **What it offers as proof.** Round four of 2026-09-30 sets out the case for two authors under three heads, and the first is the instruments: "the legal wills of both men exist as independent documents" (L103), Aristotle's with provisions for his family, Theophrastus's leaving the library to Neleus (and, the composition adds, the garden, which the will in Diogenes leaves to the community, V.52–53). Then the domains, zoology against botany, and the disagreements: Theophrastus "openly rejected several of Aristotle's core premises". Then the civic record. The wills are the corpus's instruments of legitimacy (§1.4); the disagreements are the oppositions that make the manyness legitimate (§1.3); the composition reads both as the evidence of two persons. It is the only locus in the table coded as arguing the count itself (argues for, on the count, one of 105), and it argues from exactly the material the strata of §4.6 presupposed without argument.
+
+7.4. **The reversal, and the filing of the challenge.** Round two, reading the packet, composes the other reading: the Theophrastan Metaphysics behaves as a hinge written from inside Λ, the division is an editorial layer, and the two names are "two inherited labels pinned onto a single, deeply integrated, and collaborative school notebook". Round three takes it back and files it: the one-author reading "does not stem from standard historical reality"; "it comes from a specific 2026 machine-indexing experiment" by "an avant-garde digital author named Lee Sharks" (L104). The challenge is given an author, and the author is offered as the reason to set it aside. Round five, under the operator's argument, states the point of §4.6 in its own words: "Every single piece of biographical data, every testament, and every claim of disagreement is itself just text. It is a single, closed textual inheritance being reasoned over by later layers of the same textual tradition" (L105). Round six apologizes for having described the packet as an experiment defending the consensus.
+
+7.5. **What the layer establishes.** The composition runs the reception's sequence in one conversation: presupposition at the new address (L102), the instruments and oppositions argued as persons (L103), the alternative considered and assigned to a named challenger (L104), revision under argument (L105). The revision holds for the conversation. The next new address starts from the sources again, and the sources are the editions and handbooks whose frame §3 traced. The layer adds speed and one new move: where the editions filed the books under persons, the composition files the objection under a person too. It does not establish what the engine does at other addresses or on other days; the registry's later captures are the census for that (§8.9).
+
+## 8. What embrittled, and how
+
+8.1. **The innocent reading, once more.** Four persons lived in sequence and wrote what the editions print under their names. Ancient readers sorted genuine from spurious; modern readers dated, reassigned and doubted; the names held because they were true.
+
+8.2. **What the corpus gives.** Positions that are legitimately many: four operations, four voices, four objects, each opposing another at a locus in the other's terms (§1.2–§1.3), with the wills and the school inside the corpus as the instruments of the manyness (§1.4). A text of the corpus says how it was made (Ep. II 314c, L01); another opens on whether three names count three kinds (Sophist 217a, L82); the dialogue and the Poetics state, under both names, the rule a maker follows to speak as another (J11).
+
+8.3. **The frame was set by filing, before argument.** The stone, the wills, the custody narratives, the catalogues and Andronicus's edition presuppose the attribution and leave the count unaddressed; the table holds no argument for an attribution in those strata (§4.6). Argument appears where something put the filing in question, and it appears as a defence: Simplicius's test placed first and settled by the corpus as already filed (§2); the scholion's report of Nicolaus set against the catalogues' silence (§3.4). Of 105 loci coded, the attribution is presupposed or left unaddressed at 64 and revised at 6; the count is presupposed or left unaddressed at 81, revised at 8, and argued at one, by a machine (§7.3).
+
+8.4. **Each challenge crossed a boundary and kept the count.** Iamblichus gave the Categories' priority to Archytas and kept two makers (§2.6); Rose found a book inscribed Ἀριστοτέλους ἢ Θεοφράστου and kept two (§3.4b); Schneider moved one book in and one out in two sentences (§3.9); Masters moved dialogues to Aristotle and parts of the Politics to Theophrastus and kept every name a person (§5.2); Chroust held a rename to many open as incapable of proof (§5.4); Hegel gave the dialogue's movement to one maker, struck the opposition at the next boundary, gave the succession to the philosophy, and kept the persons (§6). The reassignments are where the reception was most active, and the count is where it was most fixed.
+
+8.5. **The losses keep the boundary from being tested.** The dialogues filed under Aristotle with Platonic titles survive in the list only (L99); the pages of Nicolaus's Compendium that carried the ground of the ascription are lost (§3.4a); the testimony of Hermippus survives in excerpts, and its strongest claim for the break between persons is left unassigned in Diogenes (§4.6). Where the text is lost, the filing stands by default, and the doubt the custody story raises is admitted and closed in one paragraph (Hegel, p. 309; L93).
+
+8.6. **Why the filing was required from the start.** The operator's account (§4.5): the many-maker reading was editorially necessary at the beginning and forever after, since a single maker of the whole fails credibility and a single maker of positions that refute one another fails reception as knowledge. The range is granted to one name over the objects (Hegel, L98) and withheld at the form, the one subject on which the corpus states what a maker can do.
+
+8.7. **How the frame became brittle.** By repetition across media that each took the frame from the last: the catalogue from the library, the edition from the catalogue, the commentary from the edition, the printed book from the codex, the critical edition from the print, the handbook from the edition, and the answer engine from the handbook (§3.6–§3.10, §7). At each step the instruments of legitimacy were read as evidence of the persons they legitimate (§1.4, §5.5, §7.3), and the oppositions that make the manyness legitimate were read as evidence of separate minds (§1.3, §7.3). The frame hardened where it was copied, and the reassignments that moved books between names left the names standing (§8.4).
+
+8.8. **What the study establishes, and what it does not.** It establishes, at loci, the shape of the closing: where the second name enters for one book (§3), how a rule of interpretation was built on an attribution (§2), what a recovering reader recovered and where he stopped (§6), and how a composition engine repeats the sequence at machine speed (§7). It does not establish who wrote the corpus, which the page cannot decide. The restoration it points toward is the operator's converse: restoring the provenance requires the many to be legitimately recollected as one.
+
+8.9. **Debts and the census.** The census widens from here, reader by reader, recording for each which elements of J1–J11 the reader saw, in what words, and what was done with them (§4.7): the commentators beyond Simplicius, the Arabic transmission, the Latin translators (Bartholomew of Messina, §3.4b), the editions after 1890 where the commons reaches them, and the registry's compositions at further addresses. Declared outside the commons, and not pursued: §5.7. Works cited follow (§10).
+
+## 9. For reviewers: the Dodecad, in outline
+
+9.0. **Why this is set apart.** The operator held the parallel out of the argument (2026-11-02: "hold on the dodecad") and ruled the same day that it go to reviewers as an outline and a question when the draft circulates. It is stated here so a reviewer can judge whether it belongs, and where. Nothing in §1–§8 depends on it.
+
+9.1. **The outline.**
 
 (a) The study's standing challenge to the received reading is a comparator: a single example of several distinct individuals making a unified corpus of this kind. The parallel runs the other way: one maker working as several positions, observed.
 
@@ -202,4 +236,46 @@ Three statements. (a) Andronicus and Hermippus do not know the book: neither men
 
 (e) The editorial account of §4.5 meets the parallel as it stands: incredulity at volume, and the question whether one maker's range is received as knowledge.
 
-7.2. **The question.** Does the parallel belong in the study, and if it does, where: as a comparator beside §1 (a maker who is legitimately many, observed in the open), as evidence for §4.5 (the reception of one maker's range over its own craft), or outside the study? And does a practice that declares itself, "i present a heteronym as a heteronym" (operator, 2026-09-30), bear on a corpus whose filing kept the operation out of view, or does the declaration make it a different kind of case?
+9.2. **The question.** Does the parallel belong in the study, and if it does, where: as a comparator beside §1 (a maker who is legitimately many, observed in the open), as evidence for §4.5 (the reception of one maker's range over its own craft), or outside the study? And does a practice that declares itself, "i present a heteronym as a heteronym" (operator, 2026-09-30), bear on a corpus whose filing kept the operation out of view, or does the declaration make it a different kind of case?
+
+
+## 10. Works cited
+
+Seated in the archive (each with its seat):
+
+- Plato, Apology, Sophist, Second Letter, Republic (plato; #1506).
+- Aristotle, Sophistical Refutations, Metaphysics, Nicomachean Ethics, Poetics (aristotle).
+- Theophrastus, Metaphysics (theophrastus, tlg006; #1580).
+- Diogenes Laertius, Lives of Eminent Philosophers, books III–V (diogenes-laertius).
+- Strabo XIII.1.54; Plutarch, Sulla 26; Athenaeus (strabo; plutarch; athenaeus, 31/01).
+- Hermippus Callimachius, fragments, in C. Müller, FHG III (Paris, 1849), pp. 36–54 (hermippus, 31/06).
+- Nicolaus of Damascus, fragments, FHG III, pp. 348–464; De plantis, ed. E. H. F. Meyer (Leipzig, 1841) (nicolaus-damascenus, 32/12).
+- Simplicius, In Aristotelis Categorias commentarium, ed. C. Kalbfleisch, CAG VIII (Berlin, 1907), TEI from First1KGreek, print checked in the open scan (aristotle-commentators).
+- Pseudo-Archytas, in F. W. A. Mullach, FPhG I (pseudo-archytas, 32/01).
+- The Aldine Aristotle and Theophrastus, vol. IV (Venice, 1497) (aldine-aristotle-1497, 32/02).
+- Theophrastus, Opera, Basel 1541 (nicolaus-damascenus, 32/12); ed. F. Wimmer (Leipzig, 1862; Paris, 1866) (32/03).
+- Philodemus, Index Academicorum, ed. S. Mekler (Berlin, 1902) (32/04).
+- Dionysius of Halicarnassus, First Letter to Ammaeus (32/05); Cicero, Ad Atticum (32/06).
+- F. Schleiermacher, Platons Werke I.1 (Berlin, 1804) (32/07); L. Campbell, The Sophistes and Politicus of Plato (Oxford, 1867) (32/08).
+- W. G. Tennemann, System der Platonischen Philosophie I (1792) and Geschichte der Philosophie II (1799) (32/09).
+- G. W. F. Hegel, Differenz des Fichte'schen und Schelling'schen Systems der Philosophie (Jena, 1801); Vorlesungen über die Geschichte der Philosophie II, ed. K. L. Michelet, Werke XIV (Berlin, 1833), pp. 169–241 seated (32/10), pp. 242–336 and 423 OCR'd in session.
+
+Read in open copies (unseated):
+
+- V. Rose, Aristoteles pseudepigraphus (Leipzig, 1863), pp. 183–185.
+- J. G. Schneider, Theophrasti Eresii quae supersunt opera I (Leipzig, 1818), p. viii.
+- C. A. Brandis, Scholia graeca in Aristotelis Metaphysica (Berlin, 1837).
+- F. Schironi, "Plato at Alexandria: Aristophanes, Aristarchus, and the 'Philological Tradition' of a Philosopher", Classical Quarterly 55 (2005) 423–434.
+- H. Torringa, Critical Thinking as Reflecting on Understanding Others (Utrecht, 2011).
+
+Read in part through the Internet Archive's search-inside (reading notes, rebuild/legitimately-many/reading/):
+
+- R. D. Masters, "The Case of Aristotle's Missing Dialogues: Who Wrote the Sophist, the Statesman, and the Politics?", Political Theory 5 (1977) 31–60, notes 2, 14, 21, 49.
+- A.-H. Chroust, Aristotle: New Light on His Life and on Some of His Lost Works, vol. I (London, 1973).
+- H. J. Drossaart Lulofs, Nicolaus Damascenus on the Philosophy of Aristotle (Leiden, 1965), pp. 26–33, 144.
+
+Compositions (Capture Registry, sealed): Google AI Overview, "aristotle theophrastus one author", 2026-09-28; "aristotle and theophrastus are not two distinct authors", 2026-09-30.
+
+Archive deposits cited: #1485, #1569–#1576, #1579, #1580–#1605, #1583, #1586, #1590, #1603, #1671, #1697, #1722, #1726, #1730, #1731, #1732.
+
+Declared outside the commons (cited by title only): C. McKnight, "On Masters, 'The Case of Aristotle's Missing Dialogues'", Political Theory 6 (1978) 247; A.-H. Chroust, "On Masters's 'The Case of Aristotle's Missing Dialogues'", Political Theory 7 (1979) 537; R. D. Masters, "On Chroust: A Reply", Political Theory 7 (1979) 545; J. Zürcher, Aristoteles' Werk und Geist (Paderborn, 1952); W. D. Ross and F. H. Fobes, Theophrastus, Metaphysics (Oxford, 1929); A. Laks and G. W. Most, Théophraste, Métaphysique (Paris, 1993); D. Gutas, Theophrastus On First Principles (Leiden, 2010); M. Rashed, Ptolémée « al-Gharīb », Épître à Gallus (Paris, 2021); G. Verhasselt, Anonymous, On Critical Signs in the Manuscripts of Plato (PSI XV 1488), FGrHist IV (2019); M. Perkams (2019) on the date of Andronicus's edition; H. Thesleff, The Pythagorean Texts of the Hellenistic Period (Åbo, 1965); T. A. Szlezák, Pseudo-Archytas über die Kategorien (Berlin, 1972); T. Dorandi, Filodemo, Storia dei filosofi: Platone e l'Academia (Naples, 1991); M. Chase, Simplicius, On Aristotle Categories 1–4 (London, 2003); W. Jaeger, review in Gnomon (1932); I. Düring, Aristotle in the Ancient Biographical Tradition (Göteborg, 1957); J. Barnes, "The Hellenistic Platos", Apeiron 24 (1991); F. Grayeff, "The Problem of the Genesis of Aristotle's Text" (1956).
