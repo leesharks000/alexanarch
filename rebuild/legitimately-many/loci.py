@@ -312,4 +312,10 @@ L = [
  dict(id="L98", stratum="3.10", work="Hegel, Vorlesungen II (1833), p. 298 (OCR in session)", text="../corpora/ea-corpora-32/ocr/hegel-gdp2-1833-n307.txt",
       find="in die ganze Maſſe und alle Seiten", slot="the range of the maker", filler="one person entered the whole mass and every side of the real universe; 'so umfassend und spekulativ, wie Keiner'",
       code_attr="presupposes", code_count="presupposes", note="Bears on §4.5: the range granted over the objects to one name."),
+ dict(id="L99", stratum="3.5", work="Diogenes Laertius V.22, Aristotle's catalogue", text=C + "diogenes-laertius/text/tlg001.txt",
+      find="Σοφιστὴς α′.", slot="the titles of Aristotle's dialogues", filler="Περὶ πολιτικοῦ α′ β′, Σοφιστὴς α′, Μενέξενος α′, Ἐρωτικὸς α′, Συμπόσιον α′, in one run, all lost",
+      code_attr="presupposes", code_count="presupposes", note="Platonic titles filed as Aristotle's dialogues; no text survives to be set beside the Platonic dialogue of the same name (J5; #1590). Folded into §4.5 with the operator's statement of 2026-11-02."),
+ dict(id="L100", stratum="3.10", work="Hegel, Vorlesungen II (1833), p. 423 (OCR in session, checked by eye)", text="../corpora/ea-corpora-32/ocr/hegel-gdp2-1833-n432.txt",
+      find="wenn auch ein Theophraſt, Straton, berühmte Männer waren.", slot="the place of Theophrastus in the history", filler="neglected: the successors and the spread of the Peripatetic philosophy no longer of interest",
+      code_attr="presupposes", code_count="presupposes", note="'Wir vernachlässigen die Nachfolger des Aristoteles und die Ausbreitung der peripatetischen Philosophie … Sie hat nicht mehr das Interesse.'"),
 ]

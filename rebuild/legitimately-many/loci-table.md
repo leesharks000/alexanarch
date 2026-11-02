@@ -102,6 +102,8 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L96 | 3.10 | Hegel, Vorlesungen II (1833), p. 310 (OCR in session) | text l. 19 | Dieſer Umſtand iſt von keiner | the exoteric and esoteric writings → of no importance | does_not_address | does_not_address |
 | L97 | 3.10 | Hegel, Vorlesungen II (1833), p. 310 (OCR in session) | text l. 26 | Philoſophie ſehr vieldeutig iſt | what the name 'aristotelische Philosophie' names → many shapes in different times: Ciceronian, Alexandrian, scholastic, after the Reformation | holds_open | does_not_address |
 | L98 | 3.10 | Hegel, Vorlesungen II (1833), p. 298 (OCR in session) | text l. 19 | in die ganze Maſſe und alle Seiten | the range of the maker → one person entered the whole mass and every side of the real universe; 'so umfassend und spekulativ, wie Keiner' | presupposes | presupposes |
+| L99 | 3.5 | Diogenes Laertius V.22, Aristotle's catalogue | text l. 1805 | Σοφιστὴς α′. | the titles of Aristotle's dialogues → Περὶ πολιτικοῦ α′ β′, Σοφιστὴς α′, Μενέξενος α′, Ἐρωτικὸς α′, Συμπόσιον α′, in one run, all lost | presupposes | presupposes |
+| L100 | 3.10 | Hegel, Vorlesungen II (1833), p. 423 (OCR in session, checked by eye) | text l. 26 | wenn auch ein Theophraſt, Straton, berühmte Männer waren. | the place of Theophrastus in the history → neglected: the successors and the spread of the Peripatetic philosophy no longer of interest | presupposes | presupposes |
 
 ## Counts by stratum
 
@@ -111,17 +113,17 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.2 | 1 | presupposes 1 | presupposes 1 |
 | 3.3 | 2 | does_not_address 2 | does_not_address 2 |
 | 3.4 | 5 | does_not_address 2, presupposes 3 | does_not_address 2, presupposes 3 |
-| 3.5 | 5 | holds_open 1, considers_excludes 1, presupposes 3 | does_not_address 2, presupposes 3 |
+| 3.5 | 6 | holds_open 1, considers_excludes 1, presupposes 4 | does_not_address 2, presupposes 4 |
 | 3.6 | 4 | presupposes 3, does_not_address 1 | presupposes 3, does_not_address 1 |
 | 3.7a | 3 | argues_for 2, presupposes 1 | considers_excludes 2, does_not_address 1 |
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 36 | presupposes 16, considers_excludes 5, argues_for 6, does_not_address 5, revises 2, holds_open 2 | does_not_address 11, presupposes 17, holds_open 3, revises 4, considers_excludes 1 |
+| 3.10 | 37 | presupposes 17, considers_excludes 5, argues_for 6, does_not_address 5, revises 2, holds_open 2 | does_not_address 11, presupposes 18, holds_open 3, revises 4, considers_excludes 1 |
 | 3.10a | 10 | revises 2, presupposes 3, holds_open 3, considers_excludes 1, does_not_address 1 | revises 2, presupposes 6, holds_open 2 |
 | 3.7 | 5 | presupposes 3, does_not_address 2 | presupposes 4, holds_open 1 |
 
-Total 98 loci. Attribution: does_not_address 22, presupposes 38, argues_for 13, considers_excludes 13, revises 5, holds_open 7. Count: does_not_address 33, presupposes 44, considers_excludes 7, revises 7, holds_open 7.
+Total 100 loci. Attribution: does_not_address 22, presupposes 40, argues_for 13, considers_excludes 13, revises 5, holds_open 7. Count: does_not_address 33, presupposes 46, considers_excludes 7, revises 7, holds_open 7.
 
 ## Notes
 
@@ -203,3 +205,5 @@ Total 98 loci. Attribution: does_not_address 22, presupposes 38, argues_for 13, 
 - **L96** As for Plato's secret doctrine (§6.3).
 - **L97** The name's reference made plural across time; the maker's held one.
 - **L98** Bears on §4.5: the range granted over the objects to one name.
+- **L99** Platonic titles filed as Aristotle's dialogues; no text survives to be set beside the Platonic dialogue of the same name (J5; #1590). Folded into §4.5 with the operator's statement of 2026-11-02.
+- **L100** 'Wir vernachlässigen die Nachfolger des Aristoteles und die Ausbreitung der peripatetischen Philosophie … Sie hat nicht mehr das Interesse.'
