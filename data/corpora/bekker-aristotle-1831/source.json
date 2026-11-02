@@ -1,0 +1,88 @@
+{
+ "corpus": "bekker-aristotle-1831",
+ "seat": "EA-CORPORA-31/09",
+ "title": "The preface to Bekker's Aristotle, Aristoteles graece I (Berlin, 1831)",
+ "edition": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831), the Praefatio and the list of codices — Internet Archive aristotelisopera01arisuoft (Toronto), leaves n8–n11, OCR in session",
+ "language": "lat",
+ "license": {
+  "payload": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831) is public domain everywhere; the Archive marks the item NOT_IN_COPYRIGHT. The OCR was made in session and is released with this seat record.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "fetched": "2026-11-01",
+ "origin": {
+  "items": [
+   {
+    "source": "Internet Archive",
+    "identifier": "aristotelisopera01arisuoft",
+    "url": "https://archive.org/details/aristotelisopera01arisuoft",
+    "ocr": {
+     "engine": "Tesseract 5.3.4",
+     "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+     "sha256": {
+      "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+      "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+     },
+     "command": "tesseract nNN.jpg nNN -l lat (n10, n11 with lat+grc)",
+     "run": "2026-11-01, in session"
+    },
+    "pages_by_reference": [
+     {
+      "leaf": 8,
+      "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n8.jpg",
+      "sha256_as_served": "9f39ac234d01e4aa2f112ea6e8815cf599073218af9b5a29d77b434c8d1b68f4"
+     },
+     {
+      "leaf": 9,
+      "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n9.jpg",
+      "sha256_as_served": "81fdf4f318dd83b2bd90a70a37c57a7c9c9c55a9180d4bdf8b395e4a2942b114"
+     },
+     {
+      "leaf": 10,
+      "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n10.jpg",
+      "sha256_as_served": "bef02fc6182acb41ff31a9241d3f7060eb6ec9ab5180f30cf5b7207bfda6426f"
+     },
+     {
+      "leaf": 11,
+      "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n11.jpg",
+      "sha256_as_served": "94f78d34f967bf560e51c512368261a96140bbe97c0362e8470455ce883695f1"
+     }
+    ],
+    "why": "the Archive's own OCR layer reads the Greek as Latin; the pages were OCR'd in session and the images are held by reference"
+   }
+  ],
+  "fetched": "2026-11-01",
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "bekker-1831-praefatio",
+    "work": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831), the Praefatio and the list of codices — Internet Archive aristotelisopera01arisuoft (Toronto), leaves n8–n11, OCR in session",
+    "text": "text/bekker-1831-praefatio.ocr.txt",
+    "originals": [
+     "original/aristotelisopera01arisuoft/ocr/n0008.txt",
+     "original/aristotelisopera01arisuoft/ocr/n0009.txt",
+     "original/aristotelisopera01arisuoft/ocr/n0010.txt",
+     "original/aristotelisopera01arisuoft/ocr/n0011.txt"
+    ],
+    "lines": 190
+   }
+  ]
+ },
+ "normalization": "The Archive's own OCR reads the preface's Latin as Greek and is not used. Leaves n8–n11 were OCR'd in session with the Latin model; the OCR of each leaf is kept under original/, and the page images, like the volume's scan (120 MB), are held by reference. The OCR is kept as made, with line endings normalized. No text was corrected by hand; the loci keep the OCR's readings and say where those differ from the printed page.",
+ "scope": "The preface entire and the list of codices that follows it. The preface is one paragraph: the Berlin Academy's plan, on Schleiermacher's initiative, to raise Aristotle 'from long neglect', the more than three years (plus quam triennium) Bekker and Brandis spent in the libraries of Italy, France and Britain, the division of labour between text and scholia, and the sigla. It says nothing of genuineness, order or authorship. The pagination this volume set (the Bekker numbers) is the one every later citation of Aristotle uses, Theophrastus's works not among them.",
+ "verified_loci": [
+  "the heading — 'PRAEFATIO.'",
+  "Schleiermacher's plan for the edition — 'consilium ce- pisset Aristotelis ex diutino situ excitandi novaque editione celebrandi'",
+  "the libraries searched — 'in perlustrandis Italiae Galliae Britanniae copiis litterariis'",
+  "the first codex of the sigla — 'codex Urbinas 35'"
+ ],
+ "loci_not_found": [],
+ "lines_total": 190,
+ "why_seated": "The modern edition fixed the corpus as numbered pages under one name, and its preface records the operation as a search of libraries. What the preface leaves unsaid is the finding the study reads.",
+ "spine": "EA-CORPORA-31",
+ "ruling": "Lee Sharks, 2026-11-01, of the texts named in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets gather and seat those. with an ea-corpora\".",
+ "seating": "EA-CORPORA-31, the thirty-first seating: the transmission of the Peripatetic corpus, 2026-11-01"
+}

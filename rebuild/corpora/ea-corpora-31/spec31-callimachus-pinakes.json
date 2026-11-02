@@ -1,0 +1,90 @@
+{
+ "corpus": "callimachus-pinakes",
+ "seat": "EA-CORPORA-31/08",
+ "title": "Callimachus, Pinakes, the fragments and Schneider's account of them, in Callimachea II (Teubner, 1873), pp. 296–328",
+ "language": "mul",
+ "fetched": "2026-11-01",
+ "license": {
+  "payload": "Callimachus (d. c. 240 BCE) is public domain. Schneider's Callimachea II (Leipzig: Teubner, 1873) is public domain; the Archive marks the item Public Domain Mark 1.0. The OCR was made in session from the Archive's page images and is released with this seat record.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "The Archive's own OCR of this volume reads the Greek as Latin and is not used. Leaves n297–n329 were OCR'd in session; the OCR of each leaf is kept under original/, and the page images are held by URL and sha256. The OCR is kept as made, with line endings normalized. No text was corrected by hand; the loci keep the OCR's readings and say where those differ from the printed page.",
+ "items": [
+  {
+   "kind": "ocr_pages",
+   "slug": "schneider-1873-pinakes",
+   "identifier": "bub_gb_Gr2y6qtXZCMC",
+   "pages": [
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329
+   ],
+   "ocr_prefix": "schneider-callimachea-2",
+   "images_dir": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/ea30raw/call",
+   "ocr_engine": {
+    "engine": "Tesseract 5.3.4",
+    "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+    "sha256": {
+     "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+     "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+    },
+    "command": "tesseract nNN.jpg nNN -l grc+lat",
+    "run": "2026-11-01, in session"
+   },
+   "work": "O. Schneider, Callimachea II: Fragmenta a Bentleio collecta et explicata, ab aliis aucta (Leipzig: Teubner, 1873), pp. 296–328: fr. 100d, the Πίνακες, with the end of fr. 100c and the start of fr. 100e — Internet Archive bub_gb_Gr2y6qtXZCMC, leaves n297–n329, OCR in session"
+  }
+ ],
+ "loci": [
+  {
+   "label": "the Pinax of philosophers in chronological order",
+   "text": "text/schneider-1873-pinakes.ocr.txt",
+   "find": "D. Πίναξ καὶ ἀναγραφὴ τῶν κατὰ χρόνους καὶ ἀπ᾽ ἀρχῆς"
+  },
+  {
+   "label": "the Pinakes of those distinguished in all learning",
+   "text": "text/schneider-1873-pinakes.ocr.txt",
+   "find": "ἐν πάσῃ παιδείᾳ διαλαμψάντων"
+  },
+  {
+   "label": "the Pinax of orators",
+   "text": "text/schneider-1873-pinakes.ocr.txt",
+   "find": "γενυμένων ῥητορικῶν",
+   "note": "the page reads γενομένων; the OCR reads γενυμένων"
+  }
+ ],
+ "scope": "The pages of Schneider's second volume that carry fr. 100d, the Pinakes: his reconstruction of the parts of the work, then the testimonia and fragments, with the edges of fr. 100c and fr. 100e. Pfeiffer's Callimachus (1949–1953), the standard numbering, is in copyright and goes to 31/11.",
+ "why_seated": "The Pinakes are the filing system the later lists inherit: tables 'of those distinguished in every branch of learning', a name with its works and their opening words and line-counts. The slot of one name per list begins in this library.",
+ "spine": "EA-CORPORA-31",
+ "ruling": "Lee Sharks, 2026-11-01, of the texts named in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets gather and seat those. with an ea-corpora\".",
+ "seating": "EA-CORPORA-31, the thirty-first seating: the transmission of the Peripatetic corpus, 2026-11-01"
+}

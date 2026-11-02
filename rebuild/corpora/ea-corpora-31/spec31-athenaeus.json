@@ -1,0 +1,53 @@
+{
+ "corpus": "athenaeus",
+ "seat": "EA-CORPORA-31/01",
+ "title": "Athenaeus, Deipnosophistae, in Kaibel's Greek (Teubner, 1887–1892)",
+ "language": "grc",
+ "fetched": "2026-11-01",
+ "license": {
+  "payload": "Athenaeus (fl. c. 200 CE) is public domain. Kaibel's edition (Leipzig: Teubner, 1887–1892) is public domain in the United States (published before 1931); Kaibel died in 1901. The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "Originals as fetched under original/, pinned to a commit of the repository named in origin.items. text/<slug>.txt is the TEI reduced to plain text by seat.py (rebuild/corpora/ea-corpora-27), notes and apparatus dropped, divisions kept. No text was corrected by hand.",
+ "units": "one text file for the fifteen books",
+ "items": [
+  {
+   "kind": "tei",
+   "slug": "deipnosophistae-kaibel",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/341e309c821d5eca8c976bebca77c28b10bad58f/data/tlg0008/tlg001/tlg0008.tlg001.perseus-grc3.xml",
+   "path": "perseus/tlg0008.tlg001.perseus-grc3.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "341e309c821d5eca8c976bebca77c28b10bad58f",
+   "file": "data/tlg0008/tlg001/tlg0008.tlg001.perseus-grc3.xml",
+   "work": "Athenaeus, Δειπνοσοφισταί, books I–XV, ed. G. Kaibel, Athenaei Naucratitae Dipnosophistarum libri XV (Leipzig: Teubner, 1887–1892) — Perseus TEI tlg0008.tlg001.perseus-grc3"
+  }
+ ],
+ "loci": [
+  {
+   "label": "I.3a–b, Neleus and the sale to Ptolemy Philadelphus",
+   "text": "text/deipnosophistae-kaibel.txt",
+   "find": "καὶ τὸν τὰ τούτων διατηρήσαντα βιβλία Νηλέα· παρ’ οὗ πάντα, φησί, πριάμενος ὁ ἡμεδαπὸς βασιλεὺς Πτολεμαῖος"
+  },
+  {
+   "label": "I.3b, the books taken to Alexandria with those from Athens and Rhodes",
+   "text": "text/deipnosophistae-kaibel.txt",
+   "find": "μετὰ τῶν Ἀθήνηθεν καὶ τῶν ἀπὸ Ῥόδου εἰς τὴν καλὴν Ἀλεξάνδρειαν μετήγαγε"
+  },
+  {
+   "label": "V.214d, Apellicon of Teos and the library of Aristotle",
+   "text": "text/deipnosophistae-kaibel.txt",
+   "find": "καὶ τὴν Ἀριστοτέλους βιβλιοθήκην καὶ"
+  }
+ ],
+ "scope": "The Deipnosophistae entire in Kaibel's text. Athenaeus I.3a–b gives the second custody of the Peripatetic books: Neleus sold them to Ptolemy Philadelphus, who took them to Alexandria. Strabo XIII.1.54 and Plutarch, Sulla 26 (seated at EA-CORPORA-17 and in the Plutarch seat) give the first, through Scepsis, Apellicon and Sulla. Gulick's Loeb text (Perseus perseus-grc4) is not seated: Kaibel's is the earlier critical text.",
+ "why_seated": "The two custody stories cannot both be complete. Athenaeus's sale to Ptolemy sits beside the narrative of the cellar at Scepsis, and the study reads where each one puts the books and under whose name.",
+ "spine": "EA-CORPORA-31",
+ "ruling": "Lee Sharks, 2026-11-01, of the texts named in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets gather and seat those. with an ea-corpora\".",
+ "seating": "EA-CORPORA-31, the thirty-first seating: the transmission of the Peripatetic corpus, 2026-11-01",
+ "cross_references": [
+  "strabo (XIII.1.54)",
+  "plutarch (Sulla 26)",
+  "diogenes-laertius (V, the will of Theophrastus)"
+ ]
+}

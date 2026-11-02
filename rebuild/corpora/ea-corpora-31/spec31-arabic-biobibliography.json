@@ -1,0 +1,88 @@
+{
+ "corpus": "arabic-biobibliography",
+ "seat": "EA-CORPORA-31/05",
+ "title": "The Arabic witnesses to Ptolemy's catalogue of Aristotle: Ibn al-Nadīm's Fihrist, Ibn al-Qifṭī and Ibn Abī Uṣaybiʿa",
+ "language": "ara",
+ "fetched": "2026-11-01",
+ "license": {
+  "payload": "The works are medieval (Ibn al-Nadīm d. c. 995; Ibn al-Qifṭī d. 1248; Ibn Abī Uṣaybiʿa d. 1270) and in the public domain. The Fihrist file transcribes Flügel's edition (Leipzig, 1871–1872), public domain everywhere. The Ibn al-Qifṭī and Ibn Abī Uṣaybiʿa files transcribe modern Beirut printings (ed. Ibrāhīm Shams al-Dīn; ed. Nizār Riḍā, 1965); edition-level status for those printings is UNVERIFIED AT SEAT TIME, and the seat claims no more for them than the OpenITI licence gives. The OpenITI files are CC BY-NC-SA 4.0 at the corpus: handled under the NC payload/record split ruled at EA-CORPORA-02, as at 29/09 and 30/08; the NonCommercial payload licence is carried forward unmodified and does not attach to this seat record.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "The OpenITI files as served from raw.githubusercontent.com (branch master, fetched 2026-11-01; each file's sha256 is in MANIFEST.sha256), kept as text, line endings normalized. OpenITI's mARkdown markers (#, ~~, PageV..P..) are kept. No text was corrected by hand.",
+ "units": "one text file per work",
+ "items": [
+  {
+   "kind": "text",
+   "slug": "ibn-al-nadim-fihrist",
+   "class": "Ibn al-Nadīm",
+   "url": "https://raw.githubusercontent.com/OpenITI/0400AH/master/data/0385IbnNadim/0385IbnNadim.Fihrist/0385IbnNadim.Fihrist.GRAR000030-ara2",
+   "path": "openiti/0385IbnNadim.Fihrist.GRAR000030-ara2",
+   "source": "OpenITI 0400AH (Graeco-Arabic Studies transcription of Flügel)",
+   "work": "Ibn al-Nadīm, Kitāb al-Fihrist (كتاب الفهرست), ed. G. Flügel (Leipzig: Vogel, 1871–1872), vol. I pp. 2–360 — OpenITI 0385IbnNadim.Fihrist.GRAR000030-ara2"
+  },
+  {
+   "kind": "text",
+   "slug": "ibn-al-qifti-ikhbar",
+   "class": "Ibn al-Qifṭī",
+   "url": "https://raw.githubusercontent.com/OpenITI/0650AH/master/data/0646IbnQifti/0646IbnQifti.IkhbarCulama/0646IbnQifti.IkhbarCulama.Shamela0026336-ara1.mARkdown",
+   "path": "openiti/0646IbnQifti.IkhbarCulama.Shamela0026336-ara1.mARkdown",
+   "source": "OpenITI 0650AH (Shamela)",
+   "work": "Ibn al-Qifṭī, Ikhbār al-ʿulamāʾ bi-akhbār al-ḥukamāʾ (إخبار العلماء بأخبار الحكماء), ed. Ibrāhīm Shams al-Dīn (Beirut: Dār al-Kutub al-ʿIlmiyya) — OpenITI 0646IbnQifti.IkhbarCulama.Shamela0026336-ara1"
+  },
+  {
+   "kind": "text",
+   "slug": "ibn-abi-usaybia-uyun",
+   "class": "Ibn Abī Uṣaybiʿa",
+   "url": "https://raw.githubusercontent.com/OpenITI/0675AH/master/data/0668IbnAbiUsaybica/0668IbnAbiUsaybica.CuyunAnba/0668IbnAbiUsaybica.CuyunAnba.Shamela0006687-ara1.completed",
+   "path": "openiti/0668IbnAbiUsaybica.CuyunAnba.Shamela0006687-ara1.completed",
+   "source": "OpenITI 0675AH (Shamela)",
+   "work": "Ibn Abī Uṣaybiʿa, ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ (عيون الأنباء في طبقات الأطباء), ed. Nizār Riḍā (Beirut: Dār Maktabat al-Ḥayāh, 1965) — OpenITI 0668IbnAbiUsaybica.CuyunAnba.Shamela0006687-ara1"
+  }
+ ],
+ "loci": [
+  {
+   "label": "Fihrist, the entry for Ptolemy al-Gharīb, partisan of Aristotle",
+   "text": "text/ibn-al-nadim-fihrist.txt",
+   "find": "بطليميوس الغريب وكان يتوالى ارسطاليس وينشر محاسنه"
+  },
+  {
+   "label": "Fihrist, Aristotle's will as al-Gharīb gives it",
+   "text": "text/ibn-al-nadim-fihrist.txt",
+   "find": "وصية ارسطاليس قال الغريب لما حضرته الوفاة"
+  },
+  {
+   "label": "Fihrist, the genealogy from Asclepius 'as Ptolemy al-Gharīb mentions'",
+   "text": "text/ibn-al-nadim-fihrist.txt",
+   "find": "كذا ذكر بطلميوس الغريب"
+  },
+  {
+   "label": "Ibn al-Qifṭī, the list of Aristotle's books as a man called Ptolemy gives it in his book to Gallus",
+   "text": "text/ibn-al-qifti-ikhbar.txt",
+   "find": "ثبت كتب أرسطوطاليس على ما ذكره رجل يسمى بطليموس في كتابه إلى أغلس"
+  },
+  {
+   "label": "Ibn Abī Uṣaybiʿa, Ptolemy's book to Gallus on Aristotle's life, his will and the list of his books",
+   "text": "text/ibn-abi-usaybia-uyun.txt",
+   "find": "وقال بطليموس في كتابه إلى غلس في سيرة أرسطوطاليس وخبره ووصيته وفهرست"
+  },
+  {
+   "label": "Ibn Abī Uṣaybiʿa, the will of Aristotle, Antipater executor",
+   "text": "text/ibn-abi-usaybia-uyun.txt",
+   "find": "إني جعلت وصيي أبدا في جميع ما خلفت انطيبطرس"
+  },
+  {
+   "label": "Ibn Abī Uṣaybiʿa, Theophrastus his mother's sister's son succeeds to the chair",
+   "text": "text/ibn-abi-usaybia-uyun.txt",
+   "find": "وجلس على كرسيه وورث مرتبته ابن"
+  }
+ ],
+ "scope": "The three Arabic works entire. Each carries the life of Aristotle from Ptolemy al-Gharīb (Ptolemy 'the stranger'; Rose's Ptolemaeus philosophus; Elias, seated at 31/04, calls him ὁ Φιλάδελφος), whose Greek book to Gallus gave the life, the will and the catalogue together and is lost in Greek; Ibn al-Qifṭī and Ibn Abī Uṣaybiʿa transmit the catalogue itself. Ibn Abī Uṣaybiʿa says Theophrastus was Aristotle's mother's sister's son (ابن خالته), the Fihrist his sister's son (ابن اخته). Rose's Latin rendering of the list, with its Greek reconstruction, is seated at 31/07. The Müller edition of Ibn Abī Uṣaybiʿa (Cairo and Königsberg, 1882–1884) and Lippert's Ibn al-Qifṭī (Leipzig, 1903), both public domain, were not found as text this session and are queued.",
+ "why_seated": "The fourth catalogue survives only in Arabic, and it travels with the will: one book gave the life, the testament and the list of works as a single dossier of the person. The study reads it as the slot's most complete filling.",
+ "spine": "EA-CORPORA-31",
+ "ruling": "Lee Sharks, 2026-11-01, of the texts named in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets gather and seat those. with an ea-corpora\".",
+ "seating": "EA-CORPORA-31, the thirty-first seating: the transmission of the Peripatetic corpus, 2026-11-01",
+ "queued": [
+  "Ibn Abī Uṣaybiʿa, ʿUyūn al-anbāʾ, ed. A. Müller (1882–1884), public domain: no text layer found this session",
+  "Ibn al-Qifṭī, Taʾrīkh al-ḥukamāʾ, ed. J. Lippert (Leipzig, 1903), public domain: OpenITI holds an uncorrected OCR (0646IbnQifti.TarikhHukama.Kraken220308195636-ara1), not seated"
+ ]
+}

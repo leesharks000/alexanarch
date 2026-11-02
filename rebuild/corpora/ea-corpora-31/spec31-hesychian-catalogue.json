@@ -1,0 +1,89 @@
+{
+ "corpus": "hesychian-catalogue",
+ "seat": "EA-CORPORA-31/07",
+ "title": "The Hesychian life and catalogue of Aristotle (the Vita Menagiana), with Rose's Ptolemy, in Rose's Aristotelis fragmenta (Teubner, 1886), pp. 9–22",
+ "language": "mul",
+ "fetched": "2026-11-01",
+ "license": {
+  "payload": "The Hesychian life (Hesychius of Miletus, sixth century) is public domain. Rose's Aristotelis qui ferebantur librorum fragmenta (Leipzig: Teubner, 1886) is public domain; the Archive marks the item NOT_IN_COPYRIGHT. The OCR was made in session from the Archive's page images and is released with this seat record.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "The Archive's own OCR of this volume reads the Greek as Latin and is not used. Leaves n17–n30 were OCR'd in session (the engine and models are in origin.items); the OCR of each leaf is kept under original/, and the page images are held by URL and sha256. The OCR is kept as made, with line endings normalized. No text was corrected by hand; the loci keep the OCR's readings and say where those differ from the printed page.",
+ "items": [
+  {
+   "kind": "ocr_pages",
+   "slug": "rose-1886-pp9-22",
+   "identifier": "aristotelisquif00arisgoog",
+   "pages": [
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+   ],
+   "ocr_prefix": "rose-1886",
+   "images_dir": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/ea30raw/rose",
+   "ocr_engine": {
+    "engine": "Tesseract 5.3.4",
+    "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+    "sha256": {
+     "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+     "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+    },
+    "command": "tesseract nNN.jpg nNN -l grc+lat",
+    "run": "2026-11-01, in session"
+   },
+   "work": "V. Rose, Aristotelis qui ferebantur librorum fragmenta (Leipzig: Teubner, 1886), pp. 9–22: the end of Diogenes Laertius's list, the Hesychian life and catalogue from Ambros. L 93 sup. with Rose's apparatus, and Ptolemy's list in Rose's Latin with its Greek titles — Internet Archive aristotelisquif00arisgoog, leaves n17–n30, OCR in session"
+  }
+ ],
+ "loci": [
+  {
+   "label": "Rose's running head over all the lists",
+   "text": "text/rose-1886-pp9-22.ocr.txt",
+   "find": "EX ANDRONICI RHODII INDICE"
+  },
+  {
+   "label": "the Hesychian life: the successors of the school in order",
+   "text": "text/rose-1886-pp9-22.ocr.txt",
+   "find": "διάδοχοι δὲ αὐτοῦ τῆς σχολῆς κατὰ τάξιν"
+  },
+  {
+   "label": "the Hesychian life: the list introduced",
+   "text": "text/rose-1886-pp9-22.ocr.txt",
+   "find": "τὰ δὲ συγγράμματα αὐτοῦ ταῦτα"
+  },
+  {
+   "label": "the Hesychian catalogue: its pseudepigrapha",
+   "text": "text/rose-1886-pp9-22.ocr.txt",
+   "find": "ψευδεπίγραφα δὲ"
+  },
+  {
+   "label": "Rose on Ptolemy's list",
+   "text": "text/rose-1886-pp9-22.ocr.txt",
+   "find": "PTOLEMAEI PHILOSOPHI"
+  },
+  {
+   "label": "Rose's note: Andronicus the eleventh successor, after Elias",
+   "text": "text/rose-1886-pp9-22.ocr.txt",
+   "find": "ὁ τούτου ἑνδέκατος γενόμενος διάδοχος"
+  }
+ ],
+ "scope": "Rose's pages 9–22 (leaves n17–n30): the close of Diogenes Laertius's catalogue, the Hesychian life and catalogue with its closing list of pseudepigrapha, and Ptolemy's catalogue in Rose's Latin with the Greek titles he restores. Rose sets every list under the running head EX ANDRONICI RHODII INDICE, his thesis that the lists descend from Andronicus's catalogue. Diogenes's list is seated whole in diogenes-laertius; the Arabic text of Ptolemy's list is at 31/05. Düring's edition of the lives (1957) is in copyright and goes to 31/11.",
+ "why_seated": "The Hesychian catalogue is the third ancient list, and it alone names pseudepigrapha under Aristotle's name, filing the spurious inside the one name's list. Rose's running head is itself a reading: every list made one edition's index.",
+ "spine": "EA-CORPORA-31",
+ "ruling": "Lee Sharks, 2026-11-01, of the texts named in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets gather and seat those. with an ea-corpora\".",
+ "seating": "EA-CORPORA-31, the thirty-first seating: the transmission of the Peripatetic corpus, 2026-11-01",
+ "cross_references": [
+  "diogenes-laertius (V.22–27)",
+  "arabic-biobibliography (31/05)"
+ ]
+}

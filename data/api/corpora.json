@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-10-30T10:38:23.342134Z",
- "seats": 144,
- "lines_total": 6573861,
+ "_generated": "2026-11-02T03:54:10.111921Z",
+ "seats": 155,
+ "lines_total": 6665791,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -12522,7 +12522,722 @@
    "scope": "Declared without text: Kurt Gödel, Die Vollständigkeit der Axiome des logischen Funktionenkalküls, Monatshefte für Mathematik und Physik 37, 349–360 (Akademische Verlagsgesellschaft, Leipzig, 1930), opens: open now (public domain in the United States); wanted: no fetchable copy found this session (HathiTrust's Cornell volume, coo.31924000966790, full view, refused the seating's requests on 2026-10-30; the Internet Archive holds volume 36 only); in copyright in Europe until 2049-01-01; Kurt Gödel, Einige metamathematische Resultate über Entscheidungsdefinitheit und Widerspruchsfreiheit, Anzeiger der Akademie der Wissenschaften in Wien, math.-naturw. Klasse 67, 214–215 (Akademie der Wissenschaften, Wien, 1930), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; Albert Einstein, Eine neue Bestimmung der Moleküldimensionen, the Bern dissertation print (Buchdruckerei K. J. Wyss, Bern, 1905), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; the Annalen printing of 1906 is seated in 30/01; Albert Einstein, Über die spezielle und die allgemeine Relativitätstheorie (Gemeinverständlich), the first printing (Vieweg, Braunschweig, 1917), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; the fifth printing of 1920 is seated in 30/01; Nicolaus Copernicus, Commentariolus, Curtze's first printing, Mittheilungen des Coppernicus-Vereins für Wissenschaft und Kunst zu Thorn 1, 1–17 (Thorn, 1878), opens: open now (public domain in the United States); wanted: no fetchable copy found this session (the Archive item mittheilungende00curtgoog carries an OCR layer in which the text does not appear); Archimedes, ed. J. L. Heiberg, Ἔφοδος (the Method), first edited in Hermes 42 (Weidmann, Berlin, 1907), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; Archimedes, ed. J. L. Heiberg, Ἔφοδος (the Method), in Archimedis opera omnia II, editio altera (Teubner, Leipzig, 1913), opens: open now (public domain in the United States); wanted: no fetchable copy found this session; Werner Heisenberg, Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik, Zeitschrift für Physik 43, 172–198 (Springer, Berlin, 1927), opens: open now (public domain in the United States); wanted: no fetchable copy found this session (the Archive item zeitschrift-fur-physik-vol-43 is to be opened); in copyright in Europe until 2047-01-01; Kurt Gödel, Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I, Monatshefte für Mathematik und Physik 38, 173–198 (Akademische Verlagsgesellschaft, Leipzig, 1931), opens: 2027-01-01 in the United States (ninety-five years from first publication abroad); in Europe 2049-01-01, seventy years after the author's death; Kurt Gödel, Rudolf Carnap, Arend Heyting, John von Neumann and others, Diskussion zur Grundlegung der Mathematik (the Königsberg discussion of 7 September 1930), Erkenntnis 2, 135–151 (Felix Meiner, Leipzig, 1931), opens: 2027-01-01 in the United States (ninety-five years from first publication abroad); Alan M. Turing, On Computable Numbers, with an Application to the Entscheidungsproblem, Proceedings of the London Mathematical Society (2) 42, 230–265 (London Mathematical Society, 1936), opens: 2032-01-01 in the United States (ninety-five years from first publication abroad); open in the United Kingdom since 2025-01-01, seventy years after the author's death; Albert Einstein, Boris Podolsky, Nathan Rosen, Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?, Physical Review 47, 777–780 (American Physical Society, New York, 1935), opens: 2031-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Ptolemy, ed. and tr. F. E. Robbins, Tetrabiblos (Ἀποτελεσματικά), Greek text with English translation, Loeb Classical Library 435 (Harvard University Press; Heinemann, 1940), opens: 2036-01-01 if its copyright was renewed (a United States work published before 1964 needed renewal; the renewal is to be checked); Ptolemy, ed. F. Boll and Ae. Boer, Ἀποτελεσματικά, Claudii Ptolemaei opera quae exstant omnia III.1 (the First1KGreek file gives 1954; the date of the first Teubner printing is to be checked) (Teubner, Leipzig, 1954), opens: 2050-01-01 in the United States (ninety-five years from first publication abroad) for the printing named; an earlier printing opens earlier. Wanted: the public-domain entries first, as scans of their first printings; then Gödel 1931 and the Königsberg discussion on 2027-01-01, which would join 30/02 goedel; Turing in 2032; EPR in 2031 or now, as its renewal is found; the Tetrabiblos as its editions open.",
    "data": "https://www.alexanarch.org/data/corpora/exact-wanted/",
    "axn": "AXN:0B1E.ORIGINAL.🔀🪟🎻⏬💙🕚"
+  },
+  {
+   "seat": "EA-CORPORA-31/01",
+   "corpus": "athenaeus",
+   "edition": "Athenaeus, Δειπνοσοφισταί, books I–XV, ed. G. Kaibel, Athenaei Naucratitae Dipnosophistarum libri XV (Leipzig: Teubner, 1887–1892) — Perseus TEI tlg0008.tlg001.perseus-grc3",
+   "license": {
+    "payload": "Athenaeus (fl. c. 200 CE) is public domain. Kaibel's edition (Leipzig: Teubner, 1887–1892) is public domain in the United States (published before 1931); Kaibel died in 1901. The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/341e309c821d5eca8c976bebca77c28b10bad58f/data/tlg0008/tlg001/tlg0008.tlg001.perseus-grc3.xml",
+      "source": "Perseus Digital Library, canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "341e309c821d5eca8c976bebca77c28b10bad58f",
+      "file": "data/tlg0008/tlg001/tlg0008.tlg001.perseus-grc3.xml"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 2916,
+   "verified_loci": [
+    "I.3a–b, Neleus and the sale to Ptolemy Philadelphus — 'καὶ τὸν τὰ τούτων διατηρήσαντα βιβλία Νηλέα· παρ’ οὗ πάντα, φησί, πριάμενος ὁ ἡμεδαπὸς βασιλεὺς Πτολεμαῖος'",
+    "I.3b, the books taken to Alexandria with those from Athens and Rhodes — 'μετὰ τῶν Ἀθήνηθεν καὶ τῶν ἀπὸ Ῥόδου εἰς τὴν καλὴν Ἀλεξάνδρειαν μετήγαγε'",
+    "V.214d, Apellicon of Teos and the library of Aristotle — 'καὶ τὴν Ἀριστοτέλους βιβλιοθήκην καὶ'"
+   ],
+   "why_seated": "The two custody stories cannot both be complete. Athenaeus's sale to Ptolemy sits beside the narrative of the cellar at Scepsis, and the study reads where each one puts the books and under whose name.",
+   "scope": "The Deipnosophistae entire in Kaibel's text. Athenaeus I.3a–b gives the second custody of the Peripatetic books: Neleus sold them to Ptolemy Philadelphus, who took them to Alexandria. Strabo XIII.1.54 and Plutarch, Sulla 26 (seated at EA-CORPORA-17 and in the Plutarch seat) give the first, through Scepsis, Apellicon and Sulla. Gulick's Loeb text (Perseus perseus-grc4) is not seated: Kaibel's is the earlier critical text.",
+   "data": "https://www.alexanarch.org/data/corpora/athenaeus/"
+  },
+  {
+   "seat": "EA-CORPORA-31/02",
+   "corpus": "galen",
+   "edition": "Galen, Εἰς τὸ Ἱπποκράτους περὶ φύσεως ἀνθρώπου ὑπόμνημα (In Hippocratis De natura hominis), ed. C. G. Kühn, Claudii Galeni opera omnia XV (Leipzig: Knobloch, 1828) — First1KGreek TEI tlg0057.tlg085.1st1K-grc1",
+   "license": {
+    "payload": "Galen (d. c. 216 CE) is public domain. Kühn's Claudii Galeni opera omnia (Leipzig: Knobloch, 1821–1833) is public domain everywhere. The TEI is First1KGreek's, CC BY-SA 4.0, redistributed under the same licence and attributed to Open Greek and Latin.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0057/tlg085/tlg0057.tlg085.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg0057/tlg085/tlg0057.tlg085.1st1K-grc1.xml"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 149,
+   "verified_loci": [
+    "the Attalid and Ptolemaic kings competing to acquire books — 'ἐν γὰρ τῷ κατὰ τοὺς Ἀτταλικούς τε καὶ Πτολεμαϊκοὺς βασιλέας χρόνῳ πρὸς ἀλλήλους ἀντιφιλοτιμουμένους περὶ κτήσεως βιβλίων'",
+    "forgery of titles and recensions for money — 'ἡ περὶ τὰς ἐπιγραφάς τε καὶ διασκευὰς αὐτῶν ἤρξατο γίγνεσθαι ῥᾳδιουργία τοῖς ἕνεκα τοῦ λαβεῖν ἀργύριον ἀναφέρουσιν ὡς τοὺς βασιλεῖς ἀνδρῶν ἐνδόξων συγγράμματα'"
+   ],
+   "why_seated": "Galen names an acquisition economy that paid by the name and the falsifying of titles it produced. The study reads it for incentive and function: when the slot carries a price, a title is filed under the name that sells.",
+   "scope": "The commentary on De natura hominis entire. Its preface on the joining of two short books under one title (De natura hominis and Polybus's De salubri victu) states the mechanism: in the time of the competing Attalid and Ptolemaic kings, titles and recensions were falsified by those who brought books to the kings as the writings of famous men, to receive money. Galen's other statements on Hippocratic forgery (In Hipp. Epid. and elsewhere) are not seated here.",
+   "data": "https://www.alexanarch.org/data/corpora/galen/"
+  },
+  {
+   "seat": "EA-CORPORA-31/03",
+   "corpus": "porphyry",
+   "edition": "Plotini Enneades, praemisso Porphyrii De vita Plotini deque ordine librorum eius libello, ed. R. Volkmann, vol. I (Leipzig: Teubner, 1883) — Internet Archive volkmann-enneades-gr-v.-1-1883, the OCR layer of the volume; Porphyry's Life of Plotinus opens it",
+   "license": {
+    "payload": "Porphyry (d. c. 305 CE) is public domain. Volkmann's Plotini Enneades I (Leipzig: Teubner, 1883) is public domain; the Archive marks the item Public Domain Mark 1.0. The OCR layer is the Archive's.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "volkmann-enneades-gr-v.-1-1883",
+      "url": "https://archive.org/details/volkmann-enneades-gr-v.-1-1883",
+      "files": [
+       "Volkmann - Enneades, [gr], v.1, 1883_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "Volkmann - Enneades, [gr], v.1, 1883.pdf",
+       "url": "https://archive.org/download/volkmann-enneades-gr-v.-1-1883/Volkmann%20-%20Enneades%2C%20%5Bgr%5D%2C%20v.1%2C%201883.pdf",
+       "size": 138596528,
+       "md5": "21daf157206d5db0f275757520ac84d5",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 18876,
+   "verified_loci": [
+    "Vita Plotini 1, the opening — 'Πλωτῖνος ὁ x«9\" ἡμᾶς ysyovOg φιλόσοφος' (the OCR reads καθ' ἡμᾶς γεγονὼς as x«9\" ἡμᾶς ysyovOg; the locus keeps the OCR's reading)",
+    "Vita Plotini 24, the books left 'in confusion' by date of issue — 'οὐ κατὰ χρόνους ἐᾶσαι φύρδην ἐκδεδομένα'",
+    "Vita Plotini 24, Andronicus's arrangement of Aristotle and Theophrastus by subject — 'ναῖον καὶ ᾿Ανδρόνικαν τὸν Περιπατητικόν, ὧν ὁ' (the page reads Ἀνδρόνικον; the OCR reads ᾿Ανδρόνικαν)",
+    "Vita Plotini 24, into treatises, gathering the proper subjects together — 'εἰς ταὐτὸν συναγαγών'"
+   ],
+   "why_seated": "Porphyry is the witness for Andronicus's edition as an operation: two names joined by καί, the works redivided by subject and the chronological order of issue undone. He says he did the same to his own teacher's books.",
+   "scope": "The volume's OCR layer entire: Porphyry's Life of Plotinus and On the Order of his Books, then Enneads I–III in Volkmann's text. The Enneads are already seated from First1KGreek (plotinus, EA-CORPORA-04/02); this seat is held for the Life, which First1KGreek does not carry. At chapter 24 Porphyry takes as his model Andronicus the Peripatetic, who divided the works of Aristotle and Theophrastus into treatises, bringing the proper subjects together, ὁ δὲ τὰ Ἀριστοτέλους καὶ Θεοφράστου εἰς πραγματείας διεῖλε τὰς οἰκείας ὑποθέσεις εἰς ταὐτὸν συναγαγών (the OCR reads ᾿Δριστοτέλους and πραψματείας).",
+   "data": "https://www.alexanarch.org/data/corpora/porphyry/"
+  },
+  {
+   "seat": "EA-CORPORA-31/04",
+   "corpus": "aristotle-commentators",
+   "edition": "Ammonius, In Aristotelis Categorias commentarius, ed. A. Busse, CAG IV.4 (Berlin: Reimer, 1895) — First1KGreek TEI tlg4016.tlg002.1st1K-grc1; Simplicius, In Aristotelis Categorias commentarium, ed. K. Kalbfleisch, CAG VIII (Berlin: Reimer, 1907) — First1KGreek TEI tlg4013.tlg003.1st1K-grc1; John Philoponus, In Aristotelis Categorias commentarium, ed. A. Busse, CAG XIII.1 (Berlin: Reimer, 1898) — First1KGreek TEI tlg4015.tlg001.1st1K-grc1; Olympiodorus, Prolegomena, ed. A. Busse, CAG XII.1 (Berlin: Reimer, 1902) — First1KGreek TEI tlg4019.tlg001.1st1K-grc1; Olympiodorus, In Aristotelis Categorias commentarium, ed. A. Busse, CAG XII.1 (Berlin: Reimer, 1902) — First1KGreek TEI tlg4019.tlg002.1st1K-grc1; Elias, In Aristotelis Categorias commentarium, ed. A. Busse, CAG XVIII.1 (Berlin: Reimer, 1900) — First1KGreek TEI tlg4020.tlg002.1st1K-grc1; David, Prolegomena philosophiae, ed. A. Busse, CAG XVIII.2 (Berlin: Reimer, 1904) — First1KGreek TEI tlg4021.tlg001.1st1K-grc1",
+   "license": {
+    "payload": "The commentators (fifth to sixth centuries CE) are public domain. The Commentaria in Aristotelem Graeca (Berlin: Reimer, 1882–1909) are public domain in the United States (published before 1931); the editors are named per item. The TEI is First1KGreek's, CC BY-SA 4.0, redistributed under the same licence and attributed to Open Greek and Latin.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4016/tlg002/tlg4016.tlg002.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4016/tlg002/tlg4016.tlg002.1st1K-grc1.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4013/tlg003/tlg4013.tlg003.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4013/tlg003/tlg4013.tlg003.1st1K-grc1.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4015/tlg001/tlg4015.tlg001.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4015/tlg001/tlg4015.tlg001.1st1K-grc1.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4019/tlg001/tlg4019.tlg001.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4019/tlg001/tlg4019.tlg001.1st1K-grc1.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4019/tlg002/tlg4019.tlg002.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4019/tlg002/tlg4019.tlg002.1st1K-grc1.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4020/tlg002/tlg4020.tlg002.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4020/tlg002/tlg4020.tlg002.1st1K-grc1.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg4021/tlg001/tlg4021.tlg001.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg4021/tlg001/tlg4021.tlg001.1st1K-grc1.xml"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 4094,
+   "verified_loci": [
+    "Olympiodorus, Prolegomena: the question of the genuine — 'πρῶτον μὲν διὰ πόσους τρόπους ἐνοθεύοντο τὰ βιβλία καὶ ποῖά εἰσιν κριτήρια τὰ δυνάμενα διαχωρίζειν τὰ γνήσια ἀπὸ τῶν νόθων' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Olympiodorus, Prolegomena: three ways books were made spurious, the kings' ambition, the pupils' goodwill, homonymy — 'ἢ διὰ φιλοτιμίαν τῶν βασιλέων ἢ δι’ εὔνοιαν τῶν μαθητῶν ἢ διὰ ὁμωνυμίαν' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Ammonius, In Cat.: the fifth head, whether the book is spurious or genuine — 'πέμπτον εἰ νόθον ἢ γνήσιον τοῦ φιλοσόφου τὸ βιβλίον' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Ammonius, In Cat.: many composed works and inscribed them with Aristotle's name — 'πολλοὶ γὰρ αὑτῶν συντιθέντες ἐπέγραφον τῷ Ἀριστοτέλους ὀνόματι' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Simplicius, In Cat.: the heads to be set out before a treatise of Aristotle — 'εἰ γνήσιον τοῦ φιλοσόφου τὸ βιβλίον'",
+    "Philoponus, In Cat.: three occasions for the spuriousness of Aristotle's writings, the first homonymy of authors — 'τρεῖς γὰρ αφορμαὶ γεγόνασι τοὐ νοθεύεσθαι τὰ συγγράμματά του Ἀριστοτέλους' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Philoponus, In Cat.: Andronicus of Rhodes on beginning with logic — 'ὁ δὲ τούτου διδάσκαλος Ἀνδρόνικος ὁ Ῥόδιος ἀκριβέστερον ἐξετάζων' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Elias, In Cat.: Ptolemy's catalogue, a thousand works, with the life and the will — 'χιλίων τὸν ἀριθμόν, ὥς φησι Πτολεμαῖος ὁ Φιλάδελφος ἀναγραφὴν αὐτῶν ποιησάμενος καὶ τὸν βίον αὐτοῦ καὶ τὴν διάθεσιν' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Elias, In Cat.: royal ambition, Iobates collecting Pythagoras and Ptolemy collecting Aristotle — 'ἢ διὰ φιλοτιμίαν βασιλικήν· Ἰοβάτους γὰρ τοῦ Λιβύων βασιλέως συναγαγόντος τὰ Πυθαγόρου καὶ Πτολεμαίου τὰ Ἀριστοτέλους' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Elias, In Cat.: books aged artificially for the market — 'τινὲς καπηλείας χάριν τὰ τυχόντα συγγράμματα λαμβάνοντες' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)",
+    "Elias, In Cat.: works inscribed to the teachers, Socratics under Socrates and Pythagoreans under Pythagoras — 'ὡς τὰ Πυθαγόρου καὶ Σωκράτους ἐπιγραφόμενα βιβλία μὴ ὄντα Σωκράτους ἢ Πυθαγόρου ἀλλὰ Σωκρατικῶν καὶ Πυθαγορικῶν' (the TEI mixes composed and decomposed Greek; the locus is given in the text's own characters)"
+   ],
+   "why_seated": "The prolegomena are where the tradition wrote its rules for keeping one author per name. The study reads them for what the test of genuineness presupposes, and for the mechanisms of spuriousness they name, one of which, the pupils' goodwill, describes the many writing under one.",
+   "scope": "Six commentators of the school of Ammonius and its neighbours, seven texts: the commentaries on the Categories by Ammonius, Simplicius, Philoponus, Olympiodorus and Elias, Olympiodorus's Prolegomena, and David's Prolegomena to philosophy. Each prolegomenon sets the reader's questions before a treatise; one of them is whether the book is genuine, and several give the ways books came to be spurious: the ambition of royal collectors, the goodwill of pupils who wrote under the teacher's name, and homonymy of authors, of works or of commentaries. Elias names Ptolemy's catalogue of a thousand works with the life and the will. Elias's and David's commentaries on the Isagoge, and the Prolegomena of the anonymous and of Simplicius's other prefaces, are not seated.",
+   "data": "https://www.alexanarch.org/data/corpora/aristotle-commentators/"
+  },
+  {
+   "seat": "EA-CORPORA-31/05",
+   "corpus": "arabic-biobibliography",
+   "edition": "Ibn al-Nadīm, Kitāb al-Fihrist (كتاب الفهرست), ed. G. Flügel (Leipzig: Vogel, 1871–1872), vol. I pp. 2–360 — OpenITI 0385IbnNadim.Fihrist.GRAR000030-ara2; Ibn al-Qifṭī, Ikhbār al-ʿulamāʾ bi-akhbār al-ḥukamāʾ (إخبار العلماء بأخبار الحكماء), ed. Ibrāhīm Shams al-Dīn (Beirut: Dār al-Kutub al-ʿIlmiyya) — OpenITI 0646IbnQifti.IkhbarCulama.Shamela0026336-ara1; Ibn Abī Uṣaybiʿa, ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ (عيون الأنباء في طبقات الأطباء), ed. Nizār Riḍā (Beirut: Dār Maktabat al-Ḥayāh, 1965) — OpenITI 0668IbnAbiUsaybica.CuyunAnba.Shamela0006687-ara1",
+   "license": {
+    "payload": "The works are medieval (Ibn al-Nadīm d. c. 995; Ibn al-Qifṭī d. 1248; Ibn Abī Uṣaybiʿa d. 1270) and in the public domain. The Fihrist file transcribes Flügel's edition (Leipzig, 1871–1872), public domain everywhere. The Ibn al-Qifṭī and Ibn Abī Uṣaybiʿa files transcribe modern Beirut printings (ed. Ibrāhīm Shams al-Dīn; ed. Nizār Riḍā, 1965); edition-level status for those printings is UNVERIFIED AT SEAT TIME, and the seat claims no more for them than the OpenITI licence gives. The OpenITI files are CC BY-NC-SA 4.0 at the corpus: handled under the NC payload/record split ruled at EA-CORPORA-02, as at 29/09 and 30/08; the NonCommercial payload licence is carried forward unmodified and does not attach to this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "OpenITI 0400AH (Graeco-Arabic Studies transcription of Flügel)",
+      "url": "https://raw.githubusercontent.com/OpenITI/0400AH/master/data/0385IbnNadim/0385IbnNadim.Fihrist/0385IbnNadim.Fihrist.GRAR000030-ara2"
+     },
+     {
+      "source": "OpenITI 0650AH (Shamela)",
+      "url": "https://raw.githubusercontent.com/OpenITI/0650AH/master/data/0646IbnQifti/0646IbnQifti.IkhbarCulama/0646IbnQifti.IkhbarCulama.Shamela0026336-ara1.mARkdown"
+     },
+     {
+      "source": "OpenITI 0675AH (Shamela)",
+      "url": "https://raw.githubusercontent.com/OpenITI/0675AH/master/data/0668IbnAbiUsaybica/0668IbnAbiUsaybica.CuyunAnba/0668IbnAbiUsaybica.CuyunAnba.Shamela0006687-ara1.completed"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "ara",
+   "lines": 42254,
+   "verified_loci": [
+    "Fihrist, the entry for Ptolemy al-Gharīb, partisan of Aristotle — 'بطليميوس الغريب وكان يتوالى ارسطاليس وينشر محاسنه'",
+    "Fihrist, Aristotle's will as al-Gharīb gives it — 'وصية ارسطاليس قال الغريب لما حضرته الوفاة'",
+    "Fihrist, the genealogy from Asclepius 'as Ptolemy al-Gharīb mentions' — 'كذا ذكر بطلميوس الغريب'",
+    "Ibn al-Qifṭī, the list of Aristotle's books as a man called Ptolemy gives it in his book to Gallus — 'ثبت كتب أرسطوطاليس على ما ذكره رجل يسمى بطليموس في كتابه إلى أغلس'",
+    "Ibn Abī Uṣaybiʿa, Ptolemy's book to Gallus on Aristotle's life, his will and the list of his books — 'وقال بطليموس في كتابه إلى غلس في سيرة أرسطوطاليس وخبره ووصيته وفهرست'",
+    "Ibn Abī Uṣaybiʿa, the will of Aristotle, Antipater executor — 'إني جعلت وصيي أبدا في جميع ما خلفت انطيبطرس'",
+    "Ibn Abī Uṣaybiʿa, Theophrastus his mother's sister's son succeeds to the chair — 'وجلس على كرسيه وورث مرتبته ابن'"
+   ],
+   "why_seated": "The fourth catalogue survives only in Arabic, and it travels with the will: one book gave the life, the testament and the list of works as a single dossier of the person. The study reads it as the slot's most complete filling.",
+   "scope": "The three Arabic works entire. Each carries the life of Aristotle from Ptolemy al-Gharīb (Ptolemy 'the stranger'; Rose's Ptolemaeus philosophus; Elias, seated at 31/04, calls him ὁ Φιλάδελφος), whose Greek book to Gallus gave the life, the will and the catalogue together and is lost in Greek; Ibn al-Qifṭī and Ibn Abī Uṣaybiʿa transmit the catalogue itself. Ibn Abī Uṣaybiʿa says Theophrastus was Aristotle's mother's sister's son (ابن خالته), the Fihrist his sister's son (ابن اخته). Rose's Latin rendering of the list, with its Greek reconstruction, is seated at 31/07. The Müller edition of Ibn Abī Uṣaybiʿa (Cairo and Königsberg, 1882–1884) and Lippert's Ibn al-Qifṭī (Leipzig, 1903), both public domain, were not found as text this session and are queued.",
+   "data": "https://www.alexanarch.org/data/corpora/arabic-biobibliography/"
+  },
+  {
+   "seat": "EA-CORPORA-31/06",
+   "corpus": "hermippus",
+   "edition": "Hermippus Callimachius, fragmenta, in C. Müller, Fragmenta Historicorum Graecorum III (Paris: Didot, 1849), pp. 36–54 — DFHG, author HERMIPPUS CALLIMACHIUS",
+   "license": {
+    "payload": "Hermippus (fl. late third century BCE) is public domain, as are the witnesses quoted. Müller's FHG III (Paris: Didot, 1849) is public domain everywhere. The DFHG states that its contents are licensed CC BY-SA 4.0; redistributed under the same licence and attributed to the Digital Fragmenta Historicorum Graecorum (Leipzig).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Digital Fragmenta Historicorum Graecorum (DFHG), Leipzig",
+      "url": "http://www.dfhg-project.org/DFHG/api.php?author=HERMIPPUS%20CALLIMACHIUS",
+      "fragments": 93,
+      "sha256": "ed6ade954fcce26afaeeeb645cb8c12ed5ede4aa7ee5257e8add84fed99e4f6f"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 370,
+   "verified_loci": [
+    "fr. 41, the genealogy of Aristotle from the Asclepiads, 'as Hermippus says in his On Aristotle' — 'καθά φησιν Ἕρμιππος ἐν τῷ Περὶ Ἀριστοτέλους'",
+    "fr. 42, Herpyllis, and the care she received in the philosopher's will — 'ἐπιμελείας φάσκων τῆς δεούσης τετυχηκέναι ἐν ταῖς τοῦ φιλοσόφου διαθήκαις'",
+    "fr. 43, Theophrastus's performance in the Peripatos — 'Ἕρμιππος δέ φησι Θεόφραστον παραγίνεσθαι εἰς τὸν περίπατον'",
+    "fr. 45, Hermippus's On Theophrastus — 'ἀλλὰ καὶ Ἕρμιππος ἐν τῷ Περὶ Θεοφράστου'"
+   ],
+   "why_seated": "Hermippus, Callimachus's pupil, wrote separate lives of Aristotle and Theophrastus and is the earliest named source behind Diogenes Laertius's biographies and lists. The study reads him as the point where the library's catalogue became biography.",
+   "scope": "All ninety-three fragments the DFHG gives for Hermippus the Callimachean, from his Lives (On Aristotle, On Theophrastus, the lawgivers, the Seven Sages, the Pythagoreans) and his other works. Wehrli's edition (Die Schule des Aristoteles, Suppl. I, 1974) and Bollansée's (FGrHist IV A 3, 1999) are in copyright and go to 31/11.",
+   "data": "https://www.alexanarch.org/data/corpora/hermippus/"
+  },
+  {
+   "seat": "EA-CORPORA-31/07",
+   "corpus": "hesychian-catalogue",
+   "edition": "V. Rose, Aristotelis qui ferebantur librorum fragmenta (Leipzig: Teubner, 1886), pp. 9–22: the end of Diogenes Laertius's list, the Hesychian life and catalogue from Ambros. L 93 sup. with Rose's apparatus, and Ptolemy's list in Rose's Latin with its Greek titles — Internet Archive aristotelisquif00arisgoog, leaves n17–n30, OCR in session",
+   "license": {
+    "payload": "The Hesychian life (Hesychius of Miletus, sixth century) is public domain. Rose's Aristotelis qui ferebantur librorum fragmenta (Leipzig: Teubner, 1886) is public domain; the Archive marks the item NOT_IN_COPYRIGHT. The OCR was made in session from the Archive's page images and is released with this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "aristotelisquif00arisgoog",
+      "url": "https://archive.org/details/aristotelisquif00arisgoog",
+      "ocr": {
+       "engine": "Tesseract 5.3.4",
+       "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+       "sha256": {
+        "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+        "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+       },
+       "command": "tesseract nNN.jpg nNN -l grc+lat",
+       "run": "2026-11-01, in session"
+      },
+      "pages_by_reference": [
+       {
+        "leaf": 17,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n17.jpg",
+        "sha256_as_served": "285aa03cf787222444f42674407d1cfe0c6aed2292a1b843131ef8606fb19b54"
+       },
+       {
+        "leaf": 18,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n18.jpg",
+        "sha256_as_served": "55eb83eefd3fda80c1a5c7cb81f1728e37ccd524ee3eee8bf1649a7df46a6794"
+       },
+       {
+        "leaf": 19,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n19.jpg",
+        "sha256_as_served": "a14f451739321c6e8e4001ae6624ad1eaa1c625f5a12f0976fe0c30bc63cec6a"
+       },
+       {
+        "leaf": 20,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n20.jpg",
+        "sha256_as_served": "536470f7adff2e58b053cc58103a8fbff7985629954f334808e09b37bb000d8b"
+       },
+       {
+        "leaf": 21,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n21.jpg",
+        "sha256_as_served": "ae340c1e486a67b4cba77d10f9690383507f40df8e9ad440e70dbb2da8f4b7b4"
+       },
+       {
+        "leaf": 22,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n22.jpg",
+        "sha256_as_served": "7ab60202e76041dd96143ab7884a59dcfa404d6e02aa7c98cdcf331364aef279"
+       },
+       {
+        "leaf": 23,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n23.jpg",
+        "sha256_as_served": "18beed8ce15e9874698ce1d5cc319370c8172b7259c97afa11d53c3346411a5d"
+       },
+       {
+        "leaf": 24,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n24.jpg",
+        "sha256_as_served": "93e41f99b4b1792e206c527c1d032adc340772cff3a13050ba9f336394755601"
+       },
+       {
+        "leaf": 25,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n25.jpg",
+        "sha256_as_served": "03f4ae79df9ec4d7afcf26e358eab43eaeeb0ea324437676dd0109facd54b7db"
+       },
+       {
+        "leaf": 26,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n26.jpg",
+        "sha256_as_served": "f16fefcff05f855ca2b117f3160b6f605c1dc526ad31b2eea7bd92e772d56a82"
+       },
+       {
+        "leaf": 27,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n27.jpg",
+        "sha256_as_served": "f89340614b676c3b653f0895e92d57ad728448813a470caeaf62ef549301d9d6"
+       },
+       {
+        "leaf": 28,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n28.jpg",
+        "sha256_as_served": "dcd8db03a12b92179b78204dda1f5526080c3a7ef82b8c4652c073cfc94e9b43"
+       },
+       {
+        "leaf": 29,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n29.jpg",
+        "sha256_as_served": "2bdde5c2d41f9c13e231b56edf8e0a53ada2041501a9d042bf9bd685bb5e0774"
+       },
+       {
+        "leaf": 30,
+        "url": "https://archive.org/download/aristotelisquif00arisgoog/page/n30.jpg",
+        "sha256_as_served": "d9b6dba35164e6581560f3ea9e3fc5fb8b672dc20d909df03f80ef806052d76b"
+       }
+      ],
+      "why": "the Archive's own OCR layer reads the Greek as Latin; the pages were OCR'd in session and the images are held by reference"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 621,
+   "verified_loci": [
+    "Rose's running head over all the lists — 'EX ANDRONICI RHODII INDICE'",
+    "the Hesychian life: the successors of the school in order — 'διάδοχοι δὲ αὐτοῦ τῆς σχολῆς κατὰ τάξιν'",
+    "the Hesychian life: the list introduced — 'τὰ δὲ συγγράμματα αὐτοῦ ταῦτα'",
+    "the Hesychian catalogue: its pseudepigrapha — 'ψευδεπίγραφα δὲ'",
+    "Rose on Ptolemy's list — 'PTOLEMAEI PHILOSOPHI'",
+    "Rose's note: Andronicus the eleventh successor, after Elias — 'ὁ τούτου ἑνδέκατος γενόμενος διάδοχος'"
+   ],
+   "why_seated": "The Hesychian catalogue is the third ancient list, and it alone names pseudepigrapha under Aristotle's name, filing the spurious inside the one name's list. Rose's running head is itself a reading: every list made one edition's index.",
+   "scope": "Rose's pages 9–22 (leaves n17–n30): the close of Diogenes Laertius's catalogue, the Hesychian life and catalogue with its closing list of pseudepigrapha, and Ptolemy's catalogue in Rose's Latin with the Greek titles he restores. Rose sets every list under the running head EX ANDRONICI RHODII INDICE, his thesis that the lists descend from Andronicus's catalogue. Diogenes's list is seated whole in diogenes-laertius; the Arabic text of Ptolemy's list is at 31/05. Düring's edition of the lives (1957) is in copyright and goes to 31/11.",
+   "data": "https://www.alexanarch.org/data/corpora/hesychian-catalogue/"
+  },
+  {
+   "seat": "EA-CORPORA-31/08",
+   "corpus": "callimachus-pinakes",
+   "edition": "O. Schneider, Callimachea II: Fragmenta a Bentleio collecta et explicata, ab aliis aucta (Leipzig: Teubner, 1873), pp. 296–328: fr. 100d, the Πίνακες, with the end of fr. 100c and the start of fr. 100e — Internet Archive bub_gb_Gr2y6qtXZCMC, leaves n297–n329, OCR in session",
+   "license": {
+    "payload": "Callimachus (d. c. 240 BCE) is public domain. Schneider's Callimachea II (Leipzig: Teubner, 1873) is public domain; the Archive marks the item Public Domain Mark 1.0. The OCR was made in session from the Archive's page images and is released with this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_Gr2y6qtXZCMC",
+      "url": "https://archive.org/details/bub_gb_Gr2y6qtXZCMC",
+      "ocr": {
+       "engine": "Tesseract 5.3.4",
+       "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+       "sha256": {
+        "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+        "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+       },
+       "command": "tesseract nNN.jpg nNN -l grc+lat",
+       "run": "2026-11-01, in session"
+      },
+      "pages_by_reference": [
+       {
+        "leaf": 297,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n297.jpg",
+        "sha256_as_served": "42c22b188e7fdc9874e540e71307fa58c195ef886dba1c102c5abd10efe82728"
+       },
+       {
+        "leaf": 298,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n298.jpg",
+        "sha256_as_served": "4ad469f3057dda3fd7eda152ffcde59593dca955279c86d5290727d4f03a20e9"
+       },
+       {
+        "leaf": 299,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n299.jpg",
+        "sha256_as_served": "6620d7810b7a888812f69a102c02b901a1c975ba7a753a36e83583a2fcfbc313"
+       },
+       {
+        "leaf": 300,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n300.jpg",
+        "sha256_as_served": "c701f09a6d823af8128a3a317ff7e7a5cbe335f8a25bef3477304ca0db89c8af"
+       },
+       {
+        "leaf": 301,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n301.jpg",
+        "sha256_as_served": "0d8bd262f53891fbb725356b00f9ebdb19905ad8e06d485c52cfe720b88e5529"
+       },
+       {
+        "leaf": 302,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n302.jpg",
+        "sha256_as_served": "b6338e6966a258573ee7830aab6fadf50633293d17b68c0f4b79b28e91318632"
+       },
+       {
+        "leaf": 303,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n303.jpg",
+        "sha256_as_served": "40844b8c3e4f5dc83d7072705e1c99f7c5e0984307b1a1cdd864a8df55339311"
+       },
+       {
+        "leaf": 304,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n304.jpg",
+        "sha256_as_served": "21c9938e241c893fbb9a6ed3d91fec8cee1b59449d891690d109ed2aeaf9b736"
+       },
+       {
+        "leaf": 305,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n305.jpg",
+        "sha256_as_served": "3a6a9c1e6a2c7575cb4c24b71e8cdf3ca455d81519bbb7340b05327d47227216"
+       },
+       {
+        "leaf": 306,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n306.jpg",
+        "sha256_as_served": "251e5da303552917394d4f8f76ce61324dcb489449c0e8b859b3474430406d58"
+       },
+       {
+        "leaf": 307,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n307.jpg",
+        "sha256_as_served": "5b823d2c9c2bde133649c0a4736b6cf7a99386ee7c3ee9b04e57186aa9826f31"
+       },
+       {
+        "leaf": 308,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n308.jpg",
+        "sha256_as_served": "97e29c1fed9b4b1d452b7aef4701a9ee535c2aaf76d3dedeaa6d5db4d2d9b695"
+       },
+       {
+        "leaf": 309,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n309.jpg",
+        "sha256_as_served": "22a273ec26a55dbf2584951a9b3387ffdec41148f57ae535f26dc1be22b3abd0"
+       },
+       {
+        "leaf": 310,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n310.jpg",
+        "sha256_as_served": "af1b2bbcee896a94a8800ac5874d9d28f40d8acaffbe91089873a8a12c990a13"
+       },
+       {
+        "leaf": 311,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n311.jpg",
+        "sha256_as_served": "53fa661865c60a3177b52cdc94902b8da5ad76220f605fd1bcaa9a27b04f28c7"
+       },
+       {
+        "leaf": 312,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n312.jpg",
+        "sha256_as_served": "6938463dd7d452bff5ff4e2981d2068efb72326a5bc4416dad24ec821de02db2"
+       },
+       {
+        "leaf": 313,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n313.jpg",
+        "sha256_as_served": "ee43bfd4a69a9bc7e67e6ef7a6dfafc0fca34c30b4b601aae78e60b1b18e9c44"
+       },
+       {
+        "leaf": 314,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n314.jpg",
+        "sha256_as_served": "e9b33295e47aada256283886d1659f133ccb8b094dd7c18faf348dd0a23e1b0a"
+       },
+       {
+        "leaf": 315,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n315.jpg",
+        "sha256_as_served": "8dc0dd3e4995cf70c48381e16320305d1cd913c8b92f146ff54d4a37e3c47ed2"
+       },
+       {
+        "leaf": 316,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n316.jpg",
+        "sha256_as_served": "8f032e67d94d69f5a61b8f61b3806212fe9ba9deb84cda6ddcd278e15980d92a"
+       },
+       {
+        "leaf": 317,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n317.jpg",
+        "sha256_as_served": "d4db2ff803f6051d51dd723c5c55567a3c68bb34abb48ad8ce37b160f4347334"
+       },
+       {
+        "leaf": 318,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n318.jpg",
+        "sha256_as_served": "f7d288c693719076329194a4b24668a1808e38860edf555aa2c126a15d85ad8e"
+       },
+       {
+        "leaf": 319,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n319.jpg",
+        "sha256_as_served": "0e3e056022bd8a89eba2bed69dc36954a47edec5dcd8e8383466b53694756b69"
+       },
+       {
+        "leaf": 320,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n320.jpg",
+        "sha256_as_served": "215aa71e3581aeb4a81fa41e0c926cc519babbd03481ff41eb9d9d02e641905f"
+       },
+       {
+        "leaf": 321,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n321.jpg",
+        "sha256_as_served": "341ccc421fe4930258616ea7f144d42845058754a792ef3e1a9d9ee1db2bec76"
+       },
+       {
+        "leaf": 322,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n322.jpg",
+        "sha256_as_served": "02beb5a79f268e739ac6312f6aee67affc403c8fc52f7276aba86d5c70f3c44b"
+       },
+       {
+        "leaf": 323,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n323.jpg",
+        "sha256_as_served": "508a2899669a2e6d5c09889c15e4eaf0a4b3c2a02a3e2a3f3c64abfafadd74c2"
+       },
+       {
+        "leaf": 324,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n324.jpg",
+        "sha256_as_served": "d65fe6723396c25c1241c69a81bc23cba2ba57052ef906f9ffd41e5f2fa3bd30"
+       },
+       {
+        "leaf": 325,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n325.jpg",
+        "sha256_as_served": "319e15bf51d168215cc898a76ac173fed543dd3b600c8fa9d0e50ee56f953726"
+       },
+       {
+        "leaf": 326,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n326.jpg",
+        "sha256_as_served": "e3c4aea520bbdcf5a81ec7cd25f4ac9974819a0792561c22ab8971bd28e27645"
+       },
+       {
+        "leaf": 327,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n327.jpg",
+        "sha256_as_served": "91e6027cf4ec87ebcde3a15a932b52b6e6d99c407a1560b926fab9e98b0d5934"
+       },
+       {
+        "leaf": 328,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n328.jpg",
+        "sha256_as_served": "6b058ceeda5e09dde9462911a260efb73074631308c91e448ff7ad49c925560d"
+       },
+       {
+        "leaf": 329,
+        "url": "https://archive.org/download/bub_gb_Gr2y6qtXZCMC/page/n329.jpg",
+        "sha256_as_served": "210d2c37ccefad9c794401cbaad58ff31b38d390cad12564057a59a445326baa"
+       }
+      ],
+      "why": "the Archive's own OCR layer reads the Greek as Latin; the pages were OCR'd in session and the images are held by reference"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 1579,
+   "verified_loci": [
+    "the Pinax of philosophers in chronological order — 'D. Πίναξ καὶ ἀναγραφὴ τῶν κατὰ χρόνους καὶ ἀπ᾽ ἀρχῆς'",
+    "the Pinakes of those distinguished in all learning — 'ἐν πάσῃ παιδείᾳ διαλαμψάντων'",
+    "the Pinax of orators — 'γενυμένων ῥητορικῶν' (the page reads γενομένων; the OCR reads γενυμένων)"
+   ],
+   "why_seated": "The Pinakes are the filing system the later lists inherit: tables 'of those distinguished in every branch of learning', a name with its works and their opening words and line-counts. The slot of one name per list begins in this library.",
+   "scope": "The pages of Schneider's second volume that carry fr. 100d, the Pinakes: his reconstruction of the parts of the work, then the testimonia and fragments, with the edges of fr. 100c and fr. 100e. Pfeiffer's Callimachus (1949–1953), the standard numbering, is in copyright and goes to 31/11.",
+   "data": "https://www.alexanarch.org/data/corpora/callimachus-pinakes/"
+  },
+  {
+   "seat": "EA-CORPORA-31/09",
+   "corpus": "bekker-aristotle-1831",
+   "edition": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831), the Praefatio and the list of codices — Internet Archive aristotelisopera01arisuoft (Toronto), leaves n8–n11, OCR in session",
+   "license": {
+    "payload": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831) is public domain everywhere; the Archive marks the item NOT_IN_COPYRIGHT. The OCR was made in session and is released with this seat record.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "aristotelisopera01arisuoft",
+      "url": "https://archive.org/details/aristotelisopera01arisuoft",
+      "ocr": {
+       "engine": "Tesseract 5.3.4",
+       "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+       "sha256": {
+        "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+        "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+       },
+       "command": "tesseract nNN.jpg nNN -l lat (n10, n11 with lat+grc)",
+       "run": "2026-11-01, in session"
+      },
+      "pages_by_reference": [
+       {
+        "leaf": 8,
+        "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n8.jpg",
+        "sha256_as_served": "9f39ac234d01e4aa2f112ea6e8815cf599073218af9b5a29d77b434c8d1b68f4"
+       },
+       {
+        "leaf": 9,
+        "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n9.jpg",
+        "sha256_as_served": "81fdf4f318dd83b2bd90a70a37c57a7c9c9c55a9180d4bdf8b395e4a2942b114"
+       },
+       {
+        "leaf": 10,
+        "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n10.jpg",
+        "sha256_as_served": "bef02fc6182acb41ff31a9241d3f7060eb6ec9ab5180f30cf5b7207bfda6426f"
+       },
+       {
+        "leaf": 11,
+        "url": "https://archive.org/download/aristotelisopera01arisuoft/page/n11.jpg",
+        "sha256_as_served": "94f78d34f967bf560e51c512368261a96140bbe97c0362e8470455ce883695f1"
+       }
+      ],
+      "why": "the Archive's own OCR layer reads the Greek as Latin; the pages were OCR'd in session and the images are held by reference"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 190,
+   "verified_loci": [
+    "the heading — 'PRAEFATIO.'",
+    "Schleiermacher's plan for the edition — 'consilium ce- pisset Aristotelis ex diutino situ excitandi novaque editione celebrandi'",
+    "the libraries searched — 'in perlustrandis Italiae Galliae Britanniae copiis litterariis'",
+    "the first codex of the sigla — 'codex Urbinas 35'"
+   ],
+   "why_seated": "The modern edition fixed the corpus as numbered pages under one name, and its preface records the operation as a search of libraries. What the preface leaves unsaid is the finding the study reads.",
+   "scope": "The preface entire and the list of codices that follows it. The preface is one paragraph: the Berlin Academy's plan, on Schleiermacher's initiative, to raise Aristotle 'from long neglect', the more than three years (plus quam triennium) Bekker and Brandis spent in the libraries of Italy, France and Britain, the division of labour between text and scholia, and the sigla. It says nothing of genuineness, order or authorship. The pagination this volume set (the Bekker numbers) is the one every later citation of Aristotle uses, Theophrastus's works not among them.",
+   "data": "https://www.alexanarch.org/data/corpora/bekker-aristotle-1831/"
+  },
+  {
+   "seat": "EA-CORPORA-31/10",
+   "corpus": "jaeger-aristoteles",
+   "edition": "W. Jaeger, Aristoteles: Grundlegung einer Geschichte seiner Entwicklung (Berlin: Weidmann, 1923) — Internet Archive aristotelesgrund00jaeguoft (Toronto), the OCR layer",
+   "license": {
+    "payload": "Published in Berlin by Weidmann in 1923, the book is public domain in the United States (published before 1931). Jaeger died in 1961, so the author's term runs in the European Union and in Germany until the end of 2031; the seat is made under the archive's United States rule and says so. The OCR layer is the Archive's.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "aristotelesgrund00jaeguoft",
+      "url": "https://archive.org/details/aristotelesgrund00jaeguoft",
+      "files": [
+       "aristotelesgrund00jaeguoft_djvu.txt"
+      ],
+      "scan_by_reference": {
+       "file": "aristotelesgrund00jaeguoft.pdf",
+       "url": "https://archive.org/download/aristotelesgrund00jaeguoft/aristotelesgrund00jaeguoft.pdf",
+       "size": 32751383,
+       "md5": "11c36d9d900a7852666594ec8bdd0521",
+       "why": "too large to carry in a bundle; the Archive's md5 identifies the scan the OCR layer was made from"
+      }
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 20881,
+   "verified_loci": [
+    "Andronicus and the renewal of the treatises — 'Die Erneuerung des Studiums der Lehrschriften durch Andronikos'",
+    "Skepsis, Erastus and Coriscus — 'und Koriskos aus Skepsis am Ida'"
+   ],
+   "why_seated": "Jaeger builds a biography out of the texts and then reads the texts by the biography, the dependency the archive's Locating the Dependencies protocol (#1602) names run forward into the modern apparatus. The study reads him as the last stratum before the encyclopedia.",
+   "scope": "The book entire in the Archive's OCR. Jaeger reads the treatises as the strata of a development, from a Platonic beginning to an empirical end, and orders the texts by the life the order produces. Düring's critique (Aristoteles, 1966) and Moraux's Les listes anciennes des ouvrages d'Aristote (1951) are in copyright and go to 31/11.",
+   "data": "https://www.alexanarch.org/data/corpora/jaeger-aristoteles/"
+  },
+  {
+   "seat": "EA-CORPORA-31/11",
+   "corpus": "transmission-wanted",
+   "edition": "No edition held. The seat holds the declaration of what it would hold: declared/absence.json and declared/absence.md.",
+   "license": {
+    "payload": "The declaration is the archive's own, CC-BY-4.0. The works it names are not held.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.json"
+     },
+     {
+      "source": "Alexanarch deposit",
+      "file": "declared/absence.md"
+     }
+    ],
+    "fetched": "2026-11-01",
+    "transport": "written in session (Transport D); No-Double-Draw"
+   },
+   "language": "mul",
+   "lines": 0,
+   "verified_loci": [],
+   "why_seated": "The editions and studies of the Peripatetic transmission the thirty-first seating could not hold, declared beside the texts it holds (31/01–31/10), at the author's direction to gather and seat the debts of the study Legitimately Many (2026-11-01). Twelve are still in their United States term and open on the dates given; four are open now and wanted because no usable copy was found this session. The modern editions are where the twentieth century numbered the lists and fragments the seated texts carry, so each entry names what the study cites from it.",
+   "scope": "Declared without text: Sotion of Alexandria, Διαδοχαὶ τῶν φιλοσόφων (Successions of the Philosophers), fragments, opens: open now (public domain in the United States); wanted: no usable copy found this session (Sotion is not among the authors the DFHG gives on 2026-11-01; his fragments are quoted in Diogenes Laertius, seated, and in Athenaeus, seated at 31/01); Ibn Abī Uṣaybiʿa, ed. A. Müller, ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ (Cairo; Königsberg, 1882), opens: open now (public domain in the United States); wanted: no usable copy found this session; the text is seated from a modern printing at 31/05; Ibn al-Qifṭī, ed. J. Lippert, Taʾrīkh al-ḥukamāʾ (Dieterich, Leipzig, 1903), opens: open now (public domain in the United States); wanted: no usable copy found this session (OpenITI holds an uncorrected OCR, 0646IbnQifti.TarikhHukama.Kraken220308195636-ara1, not seated); the Ikhbār is seated at 31/05; Valentin Rose, Aristoteles pseudepigraphus (Teubner, Leipzig, 1863), opens: open now (public domain); the Internet Archive holds several copies (valentiniroseari00aris and others) whose OCR reads the Greek as Latin; to be seated with an OCR made for it; Paul Moraux, Les listes anciennes des ouvrages d'Aristote (Éditions universitaires, Louvain, 1951), opens: 2047-01-01 in the United States (ninety-five years from first publication abroad); Ingemar Düring, Aristotle in the Ancient Biographical Tradition (Studia Graeca et Latina Gothoburgensia 5) (Almqvist & Wiksell, Göteborg, 1957), opens: 2053-01-01 in the United States (ninety-five years from first publication abroad); Ingemar Düring, Aristoteles: Darstellung und Interpretation seines Denkens (Carl Winter, Heidelberg, 1966), opens: 2062-01-01 in the United States (ninety-five years from first publication abroad); Rudolf Pfeiffer, Callimachus I: Fragmenta (Clarendon Press, Oxford, 1949), opens: 2045-01-01 in the United States (ninety-five years from first publication abroad); Rudolf Pfeiffer, Callimachus II: Hymni et epigrammata (Clarendon Press, Oxford, 1953), opens: 2049-01-01 in the United States (ninety-five years from first publication abroad); Fritz Wehrli, Die Schule des Aristoteles, Supplementband I: Hermippos der Kallimacheer (Schwabe, Basel, 1974), opens: 2070-01-01 in the United States (ninety-five years from first publication abroad); Fritz Wehrli, Die Schule des Aristoteles, Supplementband II: Sotion (Schwabe, Basel, 1978), opens: 2074-01-01 in the United States (ninety-five years from first publication abroad); Jan Bollansée, Die Fragmente der griechischen Historiker Continued IV A 3: Hermippos of Smyrna (Brill, Leiden, 1999), opens: 2095-01-01 in the United States (ninety-five years from first publication abroad); Rudolf Blum, Kallimachos und die Literaturverzeichnung bei den Griechen (Buchhändler-Vereinigung, Frankfurt am Main, 1977), opens: 2073-01-01 in the United States (ninety-five years from first publication abroad); Paul Moraux, Der Aristotelismus bei den Griechen I: Die Renaissance des Aristotelismus im I. Jh. v. Chr. (de Gruyter, Berlin, 1973), opens: 2069-01-01 in the United States (ninety-five years from first publication abroad); L. G. Westerink, Anonymous Prolegomena to Platonic Philosophy (North-Holland, Amsterdam, 1962), opens: 2058-01-01 in the United States (ninety-five years from first publication abroad); W. W. Fortenbaugh, P. M. Huby, R. W. Sharples, D. Gutas, Theophrastus of Eresus: Sources for his Life, Writings, Thought and Influence (Brill, Leiden, 1992), opens: 2088-01-01 in the United States (ninety-five years from first publication abroad). Wanted: Rose's Aristoteles pseudepigraphus with an OCR made for it, Müller's Ibn Abī Uṣaybiʿa and Lippert's Ibn al-Qifṭī first; then Pfeiffer in 2046 and 2050, Moraux in 2047, Düring in 2054.",
+   "data": "https://www.alexanarch.org/data/corpora/transmission-wanted/"
   }
  ],
- "count": 144
+ "count": 155
 }

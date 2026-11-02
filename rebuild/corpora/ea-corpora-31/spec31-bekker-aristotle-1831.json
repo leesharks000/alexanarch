@@ -1,0 +1,65 @@
+{
+ "corpus": "bekker-aristotle-1831",
+ "seat": "EA-CORPORA-31/09",
+ "title": "The preface to Bekker's Aristotle, Aristoteles graece I (Berlin, 1831)",
+ "language": "lat",
+ "fetched": "2026-11-01",
+ "license": {
+  "payload": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831) is public domain everywhere; the Archive marks the item NOT_IN_COPYRIGHT. The OCR was made in session and is released with this seat record.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "The Archive's own OCR reads the preface's Latin as Greek and is not used. Leaves n8–n11 were OCR'd in session with the Latin model; the OCR of each leaf is kept under original/, and the page images, like the volume's scan (120 MB), are held by reference. The OCR is kept as made, with line endings normalized. No text was corrected by hand; the loci keep the OCR's readings and say where those differ from the printed page.",
+ "items": [
+  {
+   "kind": "ocr_pages",
+   "slug": "bekker-1831-praefatio",
+   "identifier": "aristotelisopera01arisuoft",
+   "pages": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "ocr_prefix": "bekker-1831-v1",
+   "images_dir": "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/ea30raw/bekker",
+   "ocr_engine": {
+    "engine": "Tesseract 5.3.4",
+    "models": "tessdata_best grc+lat (raw.githubusercontent.com/tesseract-ocr/tessdata_best, main)",
+    "sha256": {
+     "grc.traineddata": "dfc9bda286cd9d8755b1832e5731a5425d1cf0803393a5fa6dee078466178cf1",
+     "lat.traineddata": "60054dd32ac03ebd9b4f87d0665bd491a7ffe0d3ee99ceb91aefaf348b65e94f"
+    },
+    "command": "tesseract nNN.jpg nNN -l lat (n10, n11 with lat+grc)",
+    "run": "2026-11-01, in session"
+   },
+   "work": "Aristoteles graece ex recensione Immanuelis Bekkeri, edidit Academia Regia Borussica, vol. I (Berlin: Reimer, 1831), the Praefatio and the list of codices — Internet Archive aristotelisopera01arisuoft (Toronto), leaves n8–n11, OCR in session"
+  }
+ ],
+ "loci": [
+  {
+   "label": "the heading",
+   "text": "text/bekker-1831-praefatio.ocr.txt",
+   "find": "PRAEFATIO."
+  },
+  {
+   "label": "Schleiermacher's plan for the edition",
+   "text": "text/bekker-1831-praefatio.ocr.txt",
+   "find": "consilium ce- pisset Aristotelis ex diutino situ excitandi novaque editione celebrandi"
+  },
+  {
+   "label": "the libraries searched",
+   "text": "text/bekker-1831-praefatio.ocr.txt",
+   "find": "in perlustrandis Italiae Galliae Britanniae copiis litterariis"
+  },
+  {
+   "label": "the first codex of the sigla",
+   "text": "text/bekker-1831-praefatio.ocr.txt",
+   "find": "codex Urbinas 35"
+  }
+ ],
+ "scope": "The preface entire and the list of codices that follows it. The preface is one paragraph: the Berlin Academy's plan, on Schleiermacher's initiative, to raise Aristotle 'from long neglect', the more than three years (plus quam triennium) Bekker and Brandis spent in the libraries of Italy, France and Britain, the division of labour between text and scholia, and the sigla. It says nothing of genuineness, order or authorship. The pagination this volume set (the Bekker numbers) is the one every later citation of Aristotle uses, Theophrastus's works not among them.",
+ "why_seated": "The modern edition fixed the corpus as numbered pages under one name, and its preface records the operation as a search of libraries. What the preface leaves unsaid is the finding the study reads.",
+ "spine": "EA-CORPORA-31",
+ "ruling": "Lee Sharks, 2026-11-01, of the texts named in §5 of the design Legitimately Many (drafts/LEGITIMATELY-MANY-design-2026-11-01.md): \"lets gather and seat those. with an ea-corpora\".",
+ "seating": "EA-CORPORA-31, the thirty-first seating: the transmission of the Peripatetic corpus, 2026-11-01"
+}
