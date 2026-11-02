@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-01T17:13:41Z",
+  "regenerated_at": "2026-11-02T05:49:23Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "5e7a1658b555902d76407fcc00aff0f276cf0df6b2a9f91e3208e115b5d47b0b",
+    "mm-main-capture": "1f950b7412d1819122d578750b5c6af9c0880d64fb6eaae282e268e86f6d311a",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2687,
-  "total_observations": 1239,
+  "total_addresses": 2688,
+  "total_observations": 1240,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 934,
+    "observed_address": 935,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1807,
+    "unmatched": 1808,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -14674,6 +14674,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-06-13",
       "latest_status": "CAPTURE"
+    },
+    "avi loeb 3i atlas": {
+      "canonical_query": "avi loeb 3i atlas",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-02",
+          "status": "'AVI LOEB 3I ATLAS' ON THE OVERVIEW — THE POSITION CONDENSED TO ONE INTERVIEW CONCESSION, 'MOST LIKELY NATURAL'; HIS OWN LATER ESSAYS, LEVEL 4 KEPT, CARDED AND UNUSED",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "avi-loeb-3i-atlas-aio-20261102",
+          "gallery_url": "https://www.alexanarch.org/captures/#avi-loeb-3i-atlas-aio-20261102",
+          "record_url": "https://www.alexanarch.org/captures/avi-loeb-3i-atlas-aio-20261102/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#avi-loeb-3i-atlas-aio-20261102",
+          "details_excerpt": "LOEB, SIGNED OUT, 2026-11-02: 'Harvard astrophysicist Avi Loeb initially suggested that the third known interstellar object, 3I/ATLAS (discovered July 1, 2025), could potentially be artificial or extraterrestrial technol"
+        }
+      ],
+      "originator": {
+        "name": "Avi Loeb",
+        "relation": "external",
+        "entity_type": "person",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: an external scientist and his public position, seated before any /non article, as the census practice has it (operator, 2026-11-02). Recorded 2026-11-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-02",
+      "latest_status": "'AVI LOEB 3I ATLAS' ON THE OVERVIEW — THE POSITION CONDENSED TO ONE INTERVIEW CONCESSION, 'MOST LIKELY NATURAL'; HIS OWN LATER ESSAYS, LEVEL 4 KEPT, CARDED AND UNUSED"
     },
     "awesome-geo": {
       "canonical_query": "awesome-geo",

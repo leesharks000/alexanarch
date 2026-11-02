@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.534",
+ "derived_from": "EA-WG-CAPTURES-01 v12.535",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,17 +14,17 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1128,
+  "observations": 1129,
   "joined_confirmed": 476,
-  "unjoined": 652,
-  "relations": 5956,
+  "unjoined": 653,
+  "relations": 5959,
   "by_state": {
-   "confirmed": 4814,
+   "confirmed": 4817,
    "candidate": 1142
   },
   "by_verb": {
-   "held_by": 2336,
-   "scored_by": 873,
+   "held_by": 2338,
+   "scored_by": 874,
    "appeared_in": 1752,
    "about": 977,
    "distorts": 5,
@@ -3968,6 +3968,9 @@
 {"id": "REL-e98430664d34", "obs_id": "OBS-3bb4c361d912", "entry": "the-pile-dataset-aio-20261101", "obs_slug": "the-pile-dataset-aio-20261101", "date": "2026-11-01", "surface": "Google AI Overview", "q": "The Pile dataset", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-85fa26edc4f7", "obs_id": "OBS-3bb4c361d912", "entry": "the-pile-dataset-aio-20261101", "obs_slug": "the-pile-dataset-aio-20261101", "date": "2026-11-01", "surface": "Google AI Overview", "q": "The Pile dataset", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5207c17ec003", "obs_id": "OBS-3bb4c361d912", "entry": "the-pile-dataset-aio-20261101", "obs_slug": "the-pile-dataset-aio-20261101", "date": "2026-11-01", "surface": "Google AI Overview", "q": "The Pile dataset", "verb": "about", "object": "non:the-pile", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-16a9c6238490", "obs_id": "OBS-798655749d8c", "entry": "avi-loeb-3i-atlas-aio-20261102", "obs_slug": "avi-loeb-3i-atlas-aio-20261102", "date": "2026-11-02", "surface": "Google AI Overview", "q": "avi loeb 3i atlas", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-01e258f33494", "obs_id": "OBS-798655749d8c", "entry": "avi-loeb-3i-atlas-aio-20261102", "obs_slug": "avi-loeb-3i-atlas-aio-20261102", "date": "2026-11-02", "surface": "Google AI Overview", "q": "avi loeb 3i atlas", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-357594fe46ed", "obs_id": "OBS-798655749d8c", "entry": "avi-loeb-3i-atlas-aio-20261102", "obs_slug": "avi-loeb-3i-atlas-aio-20261102", "date": "2026-11-02", "surface": "Google AI Overview", "q": "avi loeb 3i atlas", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f84d6bfc1642", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-46da5a94a1ea", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-76da034f8ad2", "obs_id": "OBS-a77c263ae8c0", "entry": "alexanarch-operative-semiotics-aio-20260823", "obs_slug": "alexanarch-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "alexanarch:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
