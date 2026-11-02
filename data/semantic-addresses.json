@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-02T14:31:13Z",
+  "regenerated_at": "2026-11-02T15:06:44Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "1f950b7412d1819122d578750b5c6af9c0880d64fb6eaae282e268e86f6d311a",
+    "mm-main-capture": "81bb730a591846c0c82418480504507148970150733f3e97b0287813ac7d009c",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2688,
-  "total_observations": 1240,
+  "total_addresses": 2692,
+  "total_observations": 1244,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 935,
+    "observed_address": 939,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1808,
+    "unmatched": 1812,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -11037,6 +11037,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-13",
       "latest_status": "CAPTURE"
+    },
+    "alexanarch:nonwiki": {
+      "canonical_query": "alexanarch:nonwiki",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-02",
+          "status": "'ALEXANARCH:NONWIKI' ON THE OVERVIEW — THE CITATION PRACTICE CARRIED EXACTLY; THE ARTICLES 'AUTOMATICALLY COMPILED' FROM 'COMMUNITY-DISCLOSED REPOSITORIES', AND THE ENCYCLOPEDIA A 'METADATA LAYER'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Archive",
+          "slug": "alexanarch-nonwiki-aio-20261102",
+          "gallery_url": "https://www.alexanarch.org/captures/#alexanarch-nonwiki-aio-20261102",
+          "record_url": "https://www.alexanarch.org/captures/alexanarch-nonwiki-aio-20261102/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#alexanarch-nonwiki-aio-20261102",
+          "details_excerpt": "ALEXANARCH:NONWIKI, SIGNED OUT, 2026-11-02: 'NonWiki is a verified, source-open digital encyclopedia hosted on Alexanarch NonWiki. It is constructed as a transparent alternative to traditional crowd-sourced encyclopedias"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "full",
+        "basis": "NonWiki, the archive's encyclopedia at alexanarch.org/non (EA-NEGONT-02, #1690, #1726; Lee Sharks). Recorded 2026-11-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-02",
+      "latest_status": "'ALEXANARCH:NONWIKI' ON THE OVERVIEW — THE CITATION PRACTICE CARRIED EXACTLY; THE ARTICLES 'AUTOMATICALLY COMPILED' FROM 'COMMUNITY-DISCLOSED REPOSITORIES', AND THE ENCYCLOPEDIA A 'METADATA LAYER'"
     },
     "alexanarch:omega": {
       "canonical_query": "alexanarch:omega",
@@ -34700,6 +34735,41 @@
       "latest_observation_date": "2026-11-01",
       "latest_status": "MEDIATION, RECEPTION AND CANON ON THE OVERVIEW — THE HOST-LESS TEXT, THE MACHINE-MEDIATED EVENT REGISTRY, SHELF-ORDER HERMENEUTICS; SPXI GIVEN 'WITHOUT NAMING AN INDIVIDUAL FOUNDER' (PROVISIONAL)"
     },
+    "how does the body of work at alexanarch.org challenge the academic discipline of philosophy?": {
+      "canonical_query": "how does the body of work at alexanarch.org challenge the academic discipline of philosophy?",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-02",
+          "status": "ALEXANARCH AGAINST ACADEMIC PHILOSOPHY — SIX CHALLENGES, THE MANTLE OBJECTS READ; THE PRISTINE FALLACY MOVED FROM TRAINING DATA TO AUTHORSHIP; NO PERSON NAMED",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Archive",
+          "slug": "alexanarch-challenge-philosophy-chatgpt-20261102",
+          "gallery_url": "https://www.alexanarch.org/captures/#alexanarch-challenge-philosophy-chatgpt-20261102",
+          "record_url": "https://www.alexanarch.org/captures/alexanarch-challenge-philosophy-chatgpt-20261102/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#alexanarch-challenge-philosophy-chatgpt-20261102",
+          "details_excerpt": "PHILOSOPHY, SIGNED OUT, 2026-11-02: 'How Alexanarch challenges the academic discipline of philosophy'. Thesis: Alexanarch moves philosophy 'from being primarily an academic discipline concerned with the interpretation an"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "institution",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch, the archive's own institution (Lee Sharks). Recorded 2026-11-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-02",
+      "latest_status": "ALEXANARCH AGAINST ACADEMIC PHILOSOPHY — SIX CHALLENGES, THE MANTLE OBJECTS READ; THE PRISTINE FALLACY MOVED FROM TRAINING DATA TO AUTHORSHIP; NO PERSON NAMED"
+    },
     "how does the reader participate in the crimson hexagonal archive?": {
       "canonical_query": "how does the reader participate in the crimson hexagonal archive?",
       "is_quoted": false,
@@ -47996,6 +48066,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "nonwiki": {
+      "canonical_query": "nonwiki",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-02",
+          "status": "'NONWIKI', BARE, ON THE OVERVIEW — THE ARCHIVE'S ENCYCLOPEDIA FIRST OF FOUR SENSES AND FIRST IN THE ORGANIC RESULTS, TWO DAYS AFTER THE RENAME",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Archive",
+          "slug": "nonwiki-aio-20261102",
+          "gallery_url": "https://www.alexanarch.org/captures/#nonwiki-aio-20261102",
+          "record_url": "https://www.alexanarch.org/captures/nonwiki-aio-20261102/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#nonwiki-aio-20261102",
+          "details_excerpt": "NONWIKI, SIGNED OUT, 2026-11-02: 'NonWiki can refer to a few different concepts depending on the context:' — first, 'NonWiki (Alexanarch): An online encyclopedia of public knowledge with open sources where each article o"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "site",
+        "spxi_treatment": "full",
+        "basis": "NonWiki, the archive's encyclopedia at alexanarch.org/non (EA-NEGONT-02, #1690, #1726; Lee Sharks). Recorded 2026-11-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-02",
+      "latest_status": "'NONWIKI', BARE, ON THE OVERVIEW — THE ARCHIVE'S ENCYCLOPEDIA FIRST OF FOUR SENSES AND FIRST IN THE ORGANIC RESULTS, TWO DAYS AFTER THE RENAME"
+    },
     "notes this": {
       "canonical_query": "notes this",
       "is_quoted": false,
@@ -55960,6 +56065,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-19",
       "latest_status": "THE ARCHIVE AS THE LITERARY FORM, THE LYRICS NOT READ"
+    },
+    "read the last two weeks of deposits to alexanarch.org through 2 nov 2026 as a living body of thought. ground in reading.": {
+      "canonical_query": "read the last two weeks of deposits to alexanarch.org through 2 nov 2026 as a living body of thought. ground in reading.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-02",
+          "status": "THE LAST TWO WEEKS AS A LIVING BODY, ON THE RECORDS — EVERY DEPOSIT CITED REAL, THE COUNTS EXACT; NOVEMBER 2 NOT YET IN THE REGISTRY, SAID SO; NO FOUNDER",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Archive",
+          "slug": "two-weeks-living-body-chatgpt-20261102",
+          "gallery_url": "https://www.alexanarch.org/captures/#two-weeks-living-body-chatgpt-20261102",
+          "record_url": "https://www.alexanarch.org/captures/two-weeks-living-body-chatgpt-20261102/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#two-weeks-living-body-chatgpt-20261102",
+          "details_excerpt": "THE FORTNIGHT, SIGNED OUT, 2026-11-02: 'Alexanarch, 19 October–2 November 2026: The archive becomes an instrument of thought'. Three movements (preservation to composition; archive to living institution; negative knowled"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "institution",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch, the archive's own institution (Lee Sharks). Recorded 2026-11-02."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-02",
+      "latest_status": "THE LAST TWO WEEKS AS A LIVING BODY, ON THE RECORDS — EVERY DEPOSIT CITED REAL, THE COUNTS EXACT; NOVEMBER 2 NOT YET IN THE REGISTRY, SAID SO; NO FOUNDER"
     },
     "real subsumption": {
       "canonical_query": "real subsumption",

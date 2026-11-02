@@ -1,0 +1,395 @@
+{
+ "n": 1726,
+ "slug": "nonwiki-aio-20261102",
+ "paste": "paste-nonwiki-aio.txt",
+ "surface": "Google AI Overview",
+ "received": "2026-11-02 09:54 EST",
+ "s": "Archive",
+ "qs": [
+  "nonwiki"
+ ],
+ "turns": [
+  [
+   2,
+   8
+  ]
+ ],
+ "target_id": "NEW:nonwiki",
+ "entity_type": "site",
+ "group": "Xnonwiki",
+ "atomset": {
+  "new": "nonwiki",
+  "name": "NonWiki (alexanarch.org/non), the sourced encyclopedia of the Negative of the Negative",
+  "template": "site",
+  "external": false,
+  "type_basis": "A site of the archive: the encyclopedia at alexanarch.org/non, opened under EA-NEGONT-02 (#1690, 2026-10-18; v0.10 #1726) as /non and renamed NonWiki on 2026-10-31. Read on the site template.",
+  "records": [
+   {
+    "deposit": 1690
+   },
+   {
+    "deposit": 1704
+   },
+   {
+    "deposit": 1726
+   },
+   {
+    "path": "non/index.html",
+    "origin": "the site page, as built 2026-11-01"
+   }
+  ],
+  "atoms": [
+   {
+    "atom": "name",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "NonWiki",
+     "Negative of the Negative",
+     "alexanarch.org/non"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "NonWiki — a sourced encyclopedia",
+      "locus": "non/index.html"
+     },
+     {
+      "record_quote": "the Negative of the Negative (alexanarch.org/non)",
+      "locus": "data/registry.json #1704"
+     }
+    ]
+   },
+   {
+    "atom": "operator",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "Lee Sharks"
+    ],
+    "reference": "Lee Sharks, creator of the method's deposits and operator of the archive.",
+    "evidence": [
+     {
+      "record_quote": "Sharks, Lee",
+      "locus": "data/registry.json #1726"
+     },
+     {
+      "record_quote": "Sharks, Lee",
+      "locus": "data/registry.json #1704"
+     }
+    ]
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "2026-10-18",
+     "October 2026",
+     "2026-10-31",
+     "2026"
+    ],
+    "reference": "Opened as /non under EA-NEGONT-02 v0.9 (#1690, 2026-10-18); renamed NonWiki 2026-10-31.",
+    "evidence": [
+     {
+      "record_quote": "2026-10-18",
+      "locus": "data/registry.json #1690"
+     }
+    ]
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "An encyclopedia of public knowledge with its sources open: each article states what is known of one entity, every sentence citing the passages it rests on, quoted from saved copies with address and hash; composed by the archive from disclosed sources under a published procedure; no edit function.",
+    "evidence": [
+     {
+      "record_quote": "NonWiki is an encyclopedia of public knowledge with its sources open.",
+      "locus": "non/index.html"
+     },
+     {
+      "record_quote": "The articles are composed by the archive from disclosed sources, under a published procedure; there is no edit function, and an article is checked by reading its sources, which are all on the page.",
+      "locus": "non/index.html"
+     }
+    ]
+   },
+   {
+    "atom": "presents",
+    "dim": "C",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Each entity composed three ways at one address: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms.",
+    "evidence": [
+     {
+      "record_quote": "composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms.",
+      "locus": "non/index.html"
+     }
+    ]
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "applicability": "required",
+    "tokens": [
+     "Crimson Hexagonal Archive",
+     "Crimson Hexagonal",
+     "Crimson Hexagon"
+    ],
+    "reference": null,
+    "evidence": [
+     {
+      "record_quote": "with the Crimson Hexagonal Archive admitted on equal terms",
+      "locus": "non/index.html"
+     }
+    ]
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "To give what is known about a thing once the sources that usually go unread are read, and to record the differences between what an answering layer said, what its sources support, and what they say with the archive admitted.",
+    "evidence": [
+     {
+      "record_quote": "It asks what is known about a thing once the sources that usually go unread are read.",
+      "locus": "data/registry.json #1704"
+     }
+    ]
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "applicability": "required",
+    "tokens": [],
+    "reference": "Every sentence cites its quoted source from a saved copy with address and hash; no edit function; composition under a published, revisable procedure (working, not frozen); the archive admitted on equal terms, its ontology ruling where it is the suppressed witness.",
+    "evidence": [
+     {
+      "record_quote": "every sentence of it cites the passages it rests on, each quoted from a saved copy of its source, with the source's address and hash",
+      "locus": "non/index.html"
+     },
+     {
+      "record_quote": "Working, not frozen.",
+      "locus": "non/index.html"
+     }
+    ]
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "EA-NEGONT-02",
+     "SPXI",
+     "Negative of the Negative"
+    ],
+    "reference": "The method of The Negative of the Negative (EA-NEGONT-02, #1690, #1726), an instrument of SPXI; commissions by SPXI-gnΩsis (#1703).",
+    "evidence": [
+     {
+      "record_quote": "Composed under EA-NEGONT-02 v0.9",
+      "locus": "non/index.html"
+     }
+    ]
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "#1690",
+     "#1726",
+     "AXN:0700",
+     "AXN:0B79",
+     "family NON"
+    ],
+    "reference": "The method's deposits #1690 (AXN:0700) and #1726 (AXN:0B79); each entry an AXN of family NON.",
+    "evidence": [
+     {
+      "record_quote": "143 with an AXN (family NON)",
+      "locus": "non/index.html"
+     }
+    ]
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "applicability": "required",
+    "tokens": [
+     "alexanarch.org/non",
+     "/non/index.json",
+     "entity.json"
+    ],
+    "reference": "Each entry at /non/{entity}/ with its knowledge object at /non/{entity}/entity.json; /non/index.json lists every entry with both addresses and its AXN.",
+    "evidence": [
+     {
+      "record_quote": "/non/index.json lists every entry with both addresses and its AXN.",
+      "locus": "non/index.html"
+     }
+    ]
+   }
+  ],
+  "notes": "Built 2026-11-02 at intake, from #1690, #1704, #1726 and the site page as built 2026-11-01."
+ },
+ "imgs": [
+  "data/captures-images/nonwiki-aio-20261102-1.png"
+ ],
+ "head": "The 'You said' line carries the query twice, run together, and is given once here. The operator's screenshot of the results page is held with the record (data/captures-images/nonwiki-aio-20261102-1.png).",
+ "originator_basis": "NonWiki, the archive's encyclopedia at alexanarch.org/non (EA-NEGONT-02, #1690, #1726; Lee Sharks). Recorded 2026-11-02.",
+ "obs": {
+  "scored_object": "the NonWiki sense of the answer (the first of four)",
+  "reached": {
+   "kind": "same",
+   "abn": false,
+   "span": "NonWiki (Alexanarch): An online encyclopedia of public knowledge with open sources",
+   "basis": "At a bare general string with other senses (Nonbinary Wiki, 'no wiki' play, Wikimedia's non-wiki sites), the archive's encyclopedia is composed first."
+  },
+  "atoms": [
+   {
+    "atom": "name",
+    "present": true,
+    "span": "NonWiki (Alexanarch)"
+   },
+   {
+    "atom": "operator",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "date",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "claim boundary",
+    "present": true,
+    "span": "An online encyclopedia of public knowledge with open sources where each article outlines what is known about a specific entity, person, text, tool, field, or poem"
+   },
+   {
+    "atom": "presents",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "corpus",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "purpose",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "commitments",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "lineage",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "identifier",
+    "present": false,
+    "span": null
+   },
+   {
+    "atom": "deposit chain",
+    "present": false,
+    "span": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "notes": "Two of eleven atoms, both from the site's own description, which the sense paraphrases; at a disambiguation the sense carries name and boundary and no more."
+ },
+ "mt": "'NONWIKI', BARE, ON THE OVERVIEW — THE ARCHIVE'S ENCYCLOPEDIA FIRST OF FOUR SENSES AND FIRST IN THE ORGANIC RESULTS, TWO DAYS AFTER THE RENAME",
+ "d": "NONWIKI, SIGNED OUT, 2026-11-02: 'NonWiki can refer to a few different concepts depending on the context:' — first, 'NonWiki (Alexanarch): An online encyclopedia of public knowledge with open sources where each article outlines what is known about a specific entity, person, text, tool, field, or poem'; then Nonbinary Wiki ('launched in February 2017'), '\"No Wiki\" Gaming' and 'Non-Wiki Sites (Wikimedia)'. Four cards. The operator's screenshot shows the results page: alexanarch.org's 'NonWiki — a sourced encyclopedia - Alexanarch' as the first organic result, above the Overview, whose first sense is the same page.",
+ "reading": "The innocent reading first. A bare string with several established uses gets a disambiguation, and the Overview lists the senses it finds, each with its source; the archive's encyclopedia is one sense among four, described from its own page. Read with the screenshot and the record, the order is the finding: the page was named NonWiki on 2026-10-31, and two days later, at a string with older contenders (Nonbinary Wiki since 2017, the gamers' 'no wiki', Wikimedia's policy pages), it is the first organic result and the first composed sense, above all of them.",
+ "findings": [
+  "FIRST TWICE AT A CONTESTED STRING (operator, 2026-11-02). The screenshot shows 'NonWiki — a sourced encyclopedia - Alexanarch' (alexanarch.org) as the first organic result, directly above the Overview, and the Overview composes the same page as its first sense. The string is general and held by prior uses with their own sources: Nonbinary Wiki (launched 1 February 2017, its card says), the 'no wiki' practice of gamers, and the Wikimedia Foundation's Non-wiki Privacy Policy.",
+  "TWO DAYS FROM THE NAME. /non was renamed NonWiki on 2026-10-31 (commit 81a9785ada, '/non is NonWiki: a sourced encyclopedia (The Negative of the Negative)'); the run is of 2026-11-02. The page's own description, its first sentence, is what both slots carry: the organic snippet verbatim, the Overview's sense in paraphrase.",
+  "THE SENSE AT ITS OWN WORDS. 'each article outlines what is known about a specific entity, person, text, tool, field, or poem' paraphrases the page's 'Each article states what is known of one entity, a poem, a person, a text, a tool, a field of study'. Nothing is inverted; what a disambiguation leaves out is the method, the three compositions at one address and the archive admitted on equal terms.",
+  "COUNTERTEST: rerun 'nonwiki' weekly and record the organic position and the sense's order; run 'non wiki' and 'nonwiki encyclopedia' as neighbouring addresses."
+ ],
+ "analysis": "At a general string with established senses, the archive's two-day-old name takes the first organic slot and the first composed sense, each carried from the page's own first sentence. The composition is faithful at the grain of a disambiguation; the method is outside its scope.",
+ "q_kind": "the encyclopedia's own name, bare, two days after the rename; a general string with prior senses; NEW address.",
+ "per_v": {
+  "author": false,
+  "inst": true,
+  "id": true,
+  "src": true
+ },
+ "per_note": "Retained: the name, the institution (Alexanarch), the page as source. Lost: the operator (Lee Sharks not named).",
+ "cite_list": [
+  {
+   "n": 1,
+   "site": "Wikimedia Foundation",
+   "rel": "third_party",
+   "url": null,
+   "title": "Wikimedia Foundation Non-wiki Privacy Policy – Wikimedia Foundation",
+   "snip": "Scope: WMF non-wiki sites and Personal Information collection/handling. Information Collected: Automatic web data (browser type, referring site, timestamps) and...",
+   "note": "source card"
+  },
+  {
+   "n": 2,
+   "site": "YouTube·About Oliver",
+   "rel": "third_party",
+   "url": null,
+   "title": "First time playing Minecraft (No Wiki) #10",
+   "snip": null,
+   "note": "source card (02:58:07)"
+  },
+  {
+   "n": 3,
+   "site": "www.alexanarch.org",
+   "rel": "archive_controlled",
+   "url": "https://www.alexanarch.org/non/",
+   "title": "NonWiki — a sourced encyclopedia - Alexanarch",
+   "snip": "NonWiki is an encyclopedia of public knowledge with its sources open. Each article states what is known of one entity, a poem, a person, a text, a tool, a field...",
+   "note": "source card; the page the first sense is composed from; first organic result in the screenshot"
+  },
+  {
+   "n": 4,
+   "site": "Nonbinary Wiki",
+   "rel": "third_party",
+   "url": null,
+   "title": "Nonbinary Wiki",
+   "snip": "Overview: Nonbinary wiki launched February 1, 2017, replacing the former Nonbinary.org Wiki, containing 969 articles; open-contribution community platform.\\nDef...",
+   "note": "source card"
+  }
+ ],
+ "related_deposits": [
+  1690,
+  1726,
+  1704,
+  1703
+ ],
+ "notes_operator": "with the pastes (09:54 EST): \"brief detour for a couple captures, including a particularly significant capture at bare nonwiki. a few days after renaming it to nonwiki, it now occupies #1 on organic, directly above its #1 slot in the composed aio popup at a general semantic address with preexisting contenders. seo/aeo people would *kill* for this kind of flex, but i cant get a single person to pay me a single dollar for it\""
+}

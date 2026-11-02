@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 540,
- "with_atom_set": 536,
+ "count": 541,
+ "with_atom_set": 537,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -179582,6 +179582,257 @@
    "external": true,
    "state": "intake pass (rubric v1.1) 2026-11-01, reader in session",
    "state_d": "intake pass (rubric v1.1) 2026-11-01, reader in session"
+  },
+  {
+   "id": "TGT-nonwiki",
+   "name": "NonWiki (alexanarch.org/non), the sourced encyclopedia of the Negative of the Negative",
+   "template": "site",
+   "type_basis": "A site of the archive: the encyclopedia at alexanarch.org/non, opened under EA-NEGONT-02 (#1690, 2026-10-18; v0.10 #1726) as /non and renamed NonWiki on 2026-10-31. Read on the site template.",
+   "records": [
+    {
+     "deposit": 1690
+    },
+    {
+     "deposit": 1704
+    },
+    {
+     "deposit": 1726
+    },
+    {
+     "path": "non/index.html",
+     "origin": "the site page, as built 2026-11-01"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "name",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "NonWiki",
+      "Negative of the Negative",
+      "alexanarch.org/non"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "NonWiki — a sourced encyclopedia",
+       "locus": "non/index.html"
+      },
+      {
+       "record_quote": "the Negative of the Negative (alexanarch.org/non)",
+       "locus": "data/registry.json #1704"
+      }
+     ]
+    },
+    {
+     "atom": "operator",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks"
+     ],
+     "reference": "Lee Sharks, creator of the method's deposits and operator of the archive.",
+     "evidence": [
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1726"
+      },
+      {
+       "record_quote": "Sharks, Lee",
+       "locus": "data/registry.json #1704"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-18",
+      "October 2026",
+      "2026-10-31",
+      "2026"
+     ],
+     "reference": "Opened as /non under EA-NEGONT-02 v0.9 (#1690, 2026-10-18); renamed NonWiki 2026-10-31.",
+     "evidence": [
+      {
+       "record_quote": "2026-10-18",
+       "locus": "data/registry.json #1690"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "An encyclopedia of public knowledge with its sources open: each article states what is known of one entity, every sentence citing the passages it rests on, quoted from saved copies with address and hash; composed by the archive from disclosed sources under a published procedure; no edit function.",
+     "evidence": [
+      {
+       "record_quote": "NonWiki is an encyclopedia of public knowledge with its sources open.",
+       "locus": "non/index.html"
+      },
+      {
+       "record_quote": "The articles are composed by the archive from disclosed sources, under a published procedure; there is no edit function, and an article is checked by reading its sources, which are all on the page.",
+       "locus": "non/index.html"
+      }
+     ]
+    },
+    {
+     "atom": "presents",
+     "dim": "C",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Each entity composed three ways at one address: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms.",
+     "evidence": [
+      {
+       "record_quote": "composed three ways: as the composition layer gave it, as its own disclosed sources give it, and with the Crimson Hexagonal Archive admitted on equal terms.",
+       "locus": "non/index.html"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Crimson Hexagonal Archive",
+      "Crimson Hexagonal",
+      "Crimson Hexagon"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "with the Crimson Hexagonal Archive admitted on equal terms",
+       "locus": "non/index.html"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To give what is known about a thing once the sources that usually go unread are read, and to record the differences between what an answering layer said, what its sources support, and what they say with the archive admitted.",
+     "evidence": [
+      {
+       "record_quote": "It asks what is known about a thing once the sources that usually go unread are read.",
+       "locus": "data/registry.json #1704"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Every sentence cites its quoted source from a saved copy with address and hash; no edit function; composition under a published, revisable procedure (working, not frozen); the archive admitted on equal terms, its ontology ruling where it is the suppressed witness.",
+     "evidence": [
+      {
+       "record_quote": "every sentence of it cites the passages it rests on, each quoted from a saved copy of its source, with the source's address and hash",
+       "locus": "non/index.html"
+      },
+      {
+       "record_quote": "Working, not frozen.",
+       "locus": "non/index.html"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "EA-NEGONT-02",
+      "SPXI",
+      "Negative of the Negative"
+     ],
+     "reference": "The method of The Negative of the Negative (EA-NEGONT-02, #1690, #1726), an instrument of SPXI; commissions by SPXI-gnΩsis (#1703).",
+     "evidence": [
+      {
+       "record_quote": "Composed under EA-NEGONT-02 v0.9",
+       "locus": "non/index.html"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1690",
+      "#1726",
+      "AXN:0700",
+      "AXN:0B79",
+      "family NON"
+     ],
+     "reference": "The method's deposits #1690 (AXN:0700) and #1726 (AXN:0B79); each entry an AXN of family NON.",
+     "evidence": [
+      {
+       "record_quote": "143 with an AXN (family NON)",
+       "locus": "non/index.html"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "alexanarch.org/non",
+      "/non/index.json",
+      "entity.json"
+     ],
+     "reference": "Each entry at /non/{entity}/ with its knowledge object at /non/{entity}/entity.json; /non/index.json lists every entry with both addresses and its AXN.",
+     "evidence": [
+      {
+       "record_quote": "/non/index.json lists every entry with both addresses and its AXN.",
+       "locus": "non/index.html"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "name",
+    "operator",
+    "date",
+    "claim boundary",
+    "presents",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-11-02 at intake, from #1690, #1704, #1726 and the site page as built 2026-11-01.",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-11-02, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-11-02, reader in session"
   }
  ],
  "entity_pass": {
@@ -179912,6 +180163,14 @@
     "TGT-ext-tll-spawning-hibt",
     "TGT-ext-tll-taper",
     "TGT-ext-tll-the-pile"
+   ],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-11-02",
+   "brief": "rebuild/capture-registry/intake-20261102-nonwiki/build.py (the parts are authored in parts.py)",
+   "new_sets": [
+    "TGT-nonwiki"
    ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }
