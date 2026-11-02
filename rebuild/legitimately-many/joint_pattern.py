@@ -11,7 +11,8 @@ H = pathlib.Path(__file__).resolve().parent
 C = H / "../../data/corpora"
 T = {"apol": "plato/text/tlg002-Ἀπολογία_Σωκράτους.txt", "ep": "plato/text/tlg036-Ἐπιστολαί.txt", "dl": "diogenes-laertius/text/tlg001.txt",
      "en": "aristotle/text/tlg010-Nicomachean_Ethics.txt", "se": "aristotle/text/tlg040-De_sophisticis_elenchis.txt",
-     "apr": "aristotle/text/tlg001-Analytica_priora.txt", "met": "aristotle/text/tlg025-Metaphysics.txt", "thm": "theophrastus/text/tlg006.txt"}
+     "apr": "aristotle/text/tlg001-Analytica_priora.txt", "met": "aristotle/text/tlg025-Metaphysics.txt", "thm": "theophrastus/text/tlg006.txt",
+     "rep": "plato/text/tlg030-Πολιτεία.txt", "poe": "aristotle/text/tlg034-Poetics.txt"}
 
 
 def found(key, phrase):
@@ -76,6 +77,12 @@ J = [
       loci=[("dl", "τὰ δὲ βιβλία πάντα Νηλεῖ"), ("dl", "πλὴν ὧν αὐτοὶ γεγράφαμεν")], deposits=[1581], status="read (draft §1.4.1)",
       succession_must_supply="Four testators with four different dispositions of their writings is the ordinary expectation; the model owes nothing more here unless the dispositions are read with J5 and J9.",
       one_maker="The succession is legislated in the instruments that give each name a testator (§1.4.1)."),
+ dict(id="J11", element="The corpus theorizes its own functional form, under both names",
+      observation="The Republic divides the poet's speech into speaking as himself and speaking 'as though he were Chryses himself', trying to make the hearer think the speaker someone other than himself; a poet who nowhere hid himself would make narration without mimesis (393a–d). The Poetics gives the same division, imitating 'narrating, or becoming something other', as Homer does (1448a20–24), and the rule that the poet should speak as little as possible in his own person, since in that respect he is no imitator (1460a7–8). The dialogues are built on that rule: the maker never speaks in his own voice (J1; Diogenes Laertius III.52).",
+      loci=[("rep", "ὥσπερ αὐτὸς ὢν ὁ Χρύσης λέγει"), ("rep", "ὡς ἄλλος τις ὁ λέγων ἢ αὐτός"), ("rep", "εἰ δέ γε μηδαμοῦ ἑαυτὸν ἀποκρύπτοιτο ὁ ποιητής"), ("poe", "ἢ ἕτερόν τι γιγνόμενον"), ("poe", "Αὐτὸν γὰρ δεῖ τὸν ποιητὴν ἐλάχιστα λέγειν")],
+      deposits=[1579], status="read (operator, 2026-11-02: 'do we really believe a mind driven to range over everything from plants shapes colors politics and god would not also be driven to range over functional form in their craft?')",
+      succession_must_supply="Why the theory of a maker speaking as another, stated in both corpora in the same terms, is read as a theory of poetry only, while the reception grants the same mind range over plants, colours, animals, constitutions and the prime mover. Theorizing mimesis is not practising it under several names; the model owes why the range it grants over objects stops at the craft.",
+      one_maker="The maker theorizes the operation it performs: speaking as little as possible in its own person, and becoming another (§1.2.2)."),
 ]
 
 N = [
@@ -102,7 +109,7 @@ for j in J:
 if missing:
     sys.exit(f"NOT LOCATED: {missing}")
 doc = {"specification": "Legitimately Many — the joint pattern (design §4.4)", "date": "2026-11-02", "elements": rows, "limits": N,
-       "comparator_test": "A documented succession of distinct persons producing one corpus satisfies the test when it shows J1–J9 jointly, at the grain stated, with the succession documented independently of the texts (Locating the Dependencies, #1602). None has been supplied (design §4.4).",
+       "comparator_test": "A documented succession of distinct persons producing one corpus satisfies the test when it shows J1–J9 and J11 jointly, at the grain stated, with the succession documented independently of the texts (Locating the Dependencies, #1602). None has been supplied (design §4.4).",
        "status": "specification; every observation cited to a deposit or a located phrase; nothing new measured"}
 (H / "joint-pattern.json").write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 md = ["# Legitimately Many — the joint pattern", "", "Built by joint_pattern.py; every phrase located in its seat. Design §4.4, §6.1; draft §4. 2026-11-02.", ""]

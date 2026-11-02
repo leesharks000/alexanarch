@@ -112,6 +112,17 @@ Deposits: #1581. Status: read (draft §1.4.1).
 
 *One-maker reading:* The succession is legislated in the instruments that give each name a testator (§1.4.1).
 
+## J11. The corpus theorizes its own functional form, under both names
+
+The Republic divides the poet's speech into speaking as himself and speaking 'as though he were Chryses himself', trying to make the hearer think the speaker someone other than himself; a poet who nowhere hid himself would make narration without mimesis (393a–d). The Poetics gives the same division, imitating 'narrating, or becoming something other', as Homer does (1448a20–24), and the rule that the poet should speak as little as possible in his own person, since in that respect he is no imitator (1460a7–8). The dialogues are built on that rule: the maker never speaks in his own voice (J1; Diogenes Laertius III.52).
+
+Loci: ὥσπερ αὐτὸς ὢν ὁ Χρύσης λέγει (plato/text/tlg030-Πολιτεία.txt); ὡς ἄλλος τις ὁ λέγων ἢ αὐτός (plato/text/tlg030-Πολιτεία.txt); εἰ δέ γε μηδαμοῦ ἑαυτὸν ἀποκρύπτοιτο ὁ ποιητής (plato/text/tlg030-Πολιτεία.txt); ἢ ἕτερόν τι γιγνόμενον (aristotle/text/tlg034-Poetics.txt); Αὐτὸν γὰρ δεῖ τὸν ποιητὴν ἐλάχιστα λέγειν (aristotle/text/tlg034-Poetics.txt)
+Deposits: #1579. Status: read (operator, 2026-11-02: 'do we really believe a mind driven to range over everything from plants shapes colors politics and god would not also be driven to range over functional form in their craft?').
+
+*Succession must supply:* Why the theory of a maker speaking as another, stated in both corpora in the same terms, is read as a theory of poetry only, while the reception grants the same mind range over plants, colours, animals, constitutions and the prime mover. Theorizing mimesis is not practising it under several names; the model owes why the range it grants over objects stops at the craft.
+
+*One-maker reading:* The maker theorizes the operation it performs: speaking as little as possible in its own person, and becoming another (§1.2.2).
+
 ## Limits, and what cuts the other way
 
 ### N1. The lexical instruments return a null on the maker-count
@@ -134,4 +145,4 @@ Where the texts are continuous on the page, the stylometric profiles divide by n
 
 ## The comparator test
 
-A documented succession of distinct persons producing one corpus satisfies the test when it shows J1–J9 jointly, at the grain stated, with the succession documented independently of the texts (Locating the Dependencies, #1602). None has been supplied (design §4.4).
+A documented succession of distinct persons producing one corpus satisfies the test when it shows J1–J9 and J11 jointly, at the grain stated, with the succession documented independently of the texts (Locating the Dependencies, #1602). None has been supplied (design §4.4).

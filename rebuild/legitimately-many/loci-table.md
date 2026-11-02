@@ -63,6 +63,17 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | L57 | 3.10 | Basel Theophrastus (1541), p. 271, the scholion (transcribed in session) | text l. 20 · n294 (p. 271): running head; the end of the text, the scholion, and the end of the volume's Theophrastus | Νικόλαος δὲ ἐν τῇ θεωρίᾳ τῶν Ἀριστοτέλους μετὰ τὰ φυσικὰ μνημονεύει αὐτοῦ, λέγων εἶναι Θεοφράστου | author of the book → Theophrastus, on Nicolaus's word | argues_for | presupposes |
 | L58 | 3.4 | Nicolaus, On His Own Life, fr. 2 (FHG III, DFHG) | text l. 7 · fr. 2 · FHG Volumen tertium p. 349 · ΠΕΡΙ ΤΟΥ ΙΔΙΟΥ ΒΙΟΥ | ζηλωτὴς γὰρ Ἀριστοτέλους γενόμενος | the ascriber's school → a zealot of Aristotle | does_not_address | does_not_address |
 | L59 | 3.10 | Meyer, Nicolai Damasceni De plantis (1841), Praefatio | text l. 660 | Nicolai est, nec Aristotelis. | author of the De plantis transmitted as Aristotle's → Nicolaus | revises | presupposes |
+| L60 | 3.10 | Tennemann, Geschichte der Philosophie II (1799), p. 220 (the Archive's OCR) | text l. 12540 | Da fih davon in Platons | the source of Aristotle's report of Plato's method → Plato's oral teaching, since the writings do not carry it | presupposes | presupposes |
+| L61 | 3.10 | Tennemann, Geschichte der Philosophie II (1799), p. 220 (the Archive's OCR) | text l. 12559 | loſophie, im Gegenſatz der populären. Plato bediente fich | the esoteric philosophy → Plato's own discoveries, withheld as a thinker's right | presupposes | presupposes |
+| L62 | 3.10 | Hegel, Vorlesungen II (1833), p. 179 (OCR in session) | text l. 402 · n188 | iſt für Philoſophie ganz überflüſſig, und gehört der Hyper- | the question of genuineness → Schleiermacher's critical separation of genuine and spurious dialogues, superfluous for philosophy | considers_excludes | does_not_address |
+| L63 | 3.10 | Hegel, Vorlesungen II (1833), p. 180 (OCR in session) | text l. 441 · n189 | Die philoſophiſche Jdee beſitzt | the owner of a philosophy's ideas → the idea possesses the person, the reverse of Tennemann's withheld property | revises | does_not_address |
+| L64 | 3.10 | Hegel, Vorlesungen II (1833), pp. 180–181 (OCR in session) | text l. 474 · n190 | die Plato angehört. | the owner of the dialogue's movement → Plato: the whole movement of knowing, across the persons | argues_for | revises |
+| L65 | 3.10 | Hegel, Vorlesungen II (1833), p. 183 (OCR in session) | text l. 566 · n192 | lauter andere Perſonen, denen Plato ſeine Gedanken in den | the speakers of the dialogues → other persons in whose mouths Plato puts his thoughts, he himself never appearing by name | argues_for | revises |
+| L66 | 3.10 | Hegel, Vorlesungen II (1833), p. 185 (OCR in session) | text l. 642 · n194 | Antworter ſprechen, was er (der Autor) will. | the maker of the answers → the author, who has the answerer say what he wants | argues_for | revises |
+| L67 | 3.10 | Hegel, Vorlesungen II (1833), p. 184 (OCR in session) | text l. 585 · n193 | höre, bedarf keiner weiteren Unterſuchung. | the share of Socrates and of Plato in what the dialogues present → needs no further inquiry | considers_excludes | revises |
+| L68 | 3.10 | Hegel, Vorlesungen II (1833), p. 182 (OCR in session) | text l. 533 · n191 | Leute ſagen, dieſe ſey erſt aus Plato gemacht. | the source of the Timaeus → a Pythagorean writing extended by Plato; its derivation from Plato dismissed as over-subtle | presupposes | presupposes |
+| L69 | 3.10 | Hegel, Vorlesungen II (1833), p. 186 (OCR in session) | text l. 669 · n195 | erſt bei Ariſtoteles gediehen. | the maker of the systematic presentation → Aristotle, after Plato, the idea not yet ripe in Plato | presupposes | presupposes |
+| L70 | 3.10 | Hegel, Differenz (1801), Vorerinnerung (OCR in session) | text l. 471 · n20 | die übrige Kollektion von Mumien | a philosophy treated historically → an addition to the collection of mummies | does_not_address | does_not_address |
 
 ## Counts by stratum
 
@@ -78,9 +89,9 @@ Built by build_table.py from loci.py; every phrase located in its seat. Codes pe
 | 3.8 | 3 | does_not_address 1, considers_excludes 2 | does_not_address 3 |
 | 3.9 | 5 | argues_for 2, considers_excludes 2, presupposes 1 | considers_excludes 4, presupposes 1 |
 | 3.9a | 13 | does_not_address 3, presupposes 4, considers_excludes 2, argues_for 3, holds_open 1 | does_not_address 7, presupposes 6 |
-| 3.10 | 13 | presupposes 7, considers_excludes 1, argues_for 2, does_not_address 2, revises 1 | does_not_address 5, presupposes 7, holds_open 1 |
+| 3.10 | 24 | presupposes 11, considers_excludes 3, argues_for 5, does_not_address 3, revises 2 | does_not_address 8, presupposes 11, holds_open 1, revises 4 |
 
-Total 59 loci. Attribution: does_not_address 15, presupposes 23, argues_for 9, considers_excludes 8, revises 2, holds_open 2. Count: does_not_address 27, presupposes 24, considers_excludes 6, revises 1, holds_open 1.
+Total 70 loci. Attribution: does_not_address 16, presupposes 27, argues_for 12, considers_excludes 10, revises 3, holds_open 2. Count: does_not_address 30, presupposes 28, considers_excludes 6, revises 5, holds_open 1.
 
 ## Notes
 
@@ -124,3 +135,14 @@ Total 59 loci. Attribution: does_not_address 15, presupposes 23, argues_for 9, c
 - **L56** The verso head carries the name, the recto head the shared title.
 - **L57** The note printed after the text, then ΤΕΛΟΣ ΤΩΝ ΘΕΟΦΡΑΣΤΟΥ.
 - **L59** The ascriber's own book, transmitted under Aristotle's name and restored.
+- **L60** 'Da sich davon in Platons Schriften nichts findet, so muß Aristoteles dieses entweder aus Platons mündlichem Vortrage … geschöpft haben': the gap between the report and the writings filled with an unwritten teaching (the second ghost of #1590). The OCR reads fih for sich.
+- **L61** The passage Hegel quotes (L63).
+- **L62** 'Hyper-Kritik unserer Zeit'. The OCR keeps the long s throughout these loci.
+- **L63** 'Wie einfältig! … Die philosophische Idee besitzt umgekehrt den Menschen.' The OCR reads Jdee.
+- **L64** The persons are no real difficulty; the dialogues are not many monologues; 'die ganze Bewegung des Erkennens … ist es, die Plato angehört'.
+- **L65** '… und damit alles Thetische, Behauptende, Dogmatisirende völlig abwälzt', as in Thucydides or Homer.
+- **L66** 'denn der Autor läßt den Antworter sprechen, was er (der Autor) will': the catechism comparison.
+- **L67** 'Was von dem in den Dialogen Dargestellten dem Sokrates oder dem Platon angehöre, bedarf keiner weiteren Untersuchung.'
+- **L68** The Timaeus Locrus given priority, as Iamblichus gave Archytas priority over the Categories (§2.6).
+- **L69** The succession of persons kept as the succession of the idea's stages.
+- **L70** The living spirit of a philosophy 'verlangt, um sich zu enthüllen, durch einen verwandten Geist geboren zu werden'; the historical treatment passes it by.
