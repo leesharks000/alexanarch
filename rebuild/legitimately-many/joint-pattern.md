@@ -2,16 +2,16 @@
 
 Built by joint_pattern.py; every phrase located in its seat. Design §4.4, §6.1; draft §4. 2026-11-02.
 
-## J1. Four positions, four operations, each with its own voice and object
+## J1. Four positions, each organized by an operation, a mode of presentation and an object of its own
 
-Examination by question on a received figure (the Socrates of the jurors' childhood and of the Clouds); dramatic division, a doctrine distributed across four persons with no voice of the maker's own; first-person demonstration that names its own beginning; aporia continuing another position's treatise from inside. Draft §1.2.
+Examination by question on a received figure (the Socrates of the jurors' childhood and of the Clouds); dramatic division, a doctrine distributed across four persons with the maker self-effaced; first-person demonstration that names its own beginning; aporia continuing another position's treatise from inside. Draft §1.2.
 
 Loci: οἳ ὑμῶν τοὺς πολλοὺς ἐκ παίδων παραλαμβάνοντες (plato/text/tlg002-Ἀπολογία_Σωκράτους.txt); διὰ τεττάρων προσώπων (diogenes-laertius/text/tlg001.txt); ἀλλ᾿ οὐδὲν παντελῶς ὑπῆρχεν (aristotle/text/tlg040-De_sophisticis_elenchis.txt); μέχρι μὲν δὴ τούτων οἷον ἄρτιος ὁ λόγος (theophrastus/text/tlg006.txt)
 Deposits: #1579, #1603, #1583. Status: read (draft §1.2).
 
-*Succession must supply:* Why three makers in sequence, with a fourth who wrote nothing, divide the operations without overlap: each takes a different operation, voice and object, and none takes another's. Different temperaments explain difference; they do not explain a partition.
+*Succession must supply:* Why three makers in sequence, with a fourth who wrote nothing, each organize a position by a different operation, mode of presentation and object, with the operations they share (division in the dialogues and inside demonstration; questioning in the elenchus and the aporia) placed differently in each. Different temperaments explain difference; they do not explain an ordering of shared operations this exact. Revised 2026-11-02 (third review): the earlier statement as a partition with no overlap was stricter than the criterion of §1.1 requires.
 
-*One-maker reading:* One investigation into one and many assigns each position an operation, voice and object of its own (§1.1's four conditions).
+*One-maker reading:* One investigation into one and many gives each position an organizing operation, a mode of presentation and an object of its own, exposed to refutation with consequence (§1.1).
 
 ## J2. Continuity on the page across the name boundary
 
