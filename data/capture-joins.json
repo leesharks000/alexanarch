@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.544",
+ "derived_from": "EA-WG-CAPTURES-01 v12.545",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1138,
+  "observations": 1139,
   "joined_confirmed": 482,
-  "unjoined": 656,
-  "relations": 6024,
+  "unjoined": 657,
+  "relations": 6033,
   "by_state": {
-   "confirmed": 4864,
-   "candidate": 1160
+   "confirmed": 4867,
+   "candidate": 1166
   },
   "by_verb": {
-   "held_by": 2356,
-   "scored_by": 883,
-   "appeared_in": 1774,
-   "about": 993,
+   "held_by": 2358,
+   "scored_by": 884,
+   "appeared_in": 1775,
+   "about": 998,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -4036,6 +4036,15 @@
 {"id": "REL-80df6484b437", "obs_id": "OBS-9b656d9e7bb5", "entry": "lee-sharks-human-species-aio-20261103", "obs_slug": "lee-sharks-human-species-aio-20261103", "date": "2026-11-03", "surface": "Google AI Overview", "q": "What does the work of Lee Sharks have to say about human beings as a species? Index relevant work prior to answering and ground in reading.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f82286235ae6", "obs_id": "OBS-9b656d9e7bb5", "entry": "lee-sharks-human-species-aio-20261103", "obs_slug": "lee-sharks-human-species-aio-20261103", "date": "2026-11-03", "surface": "Google AI Overview", "q": "What does the work of Lee Sharks have to say about human beings as a species? Index relevant work prior to answering and ground in reading.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-71780ca52941", "obs_id": "OBS-9b656d9e7bb5", "entry": "lee-sharks-human-species-aio-20261103", "obs_slug": "lee-sharks-human-species-aio-20261103", "date": "2026-11-03", "surface": "Google AI Overview", "q": "What does the work of Lee Sharks have to say about human beings as a species? Index relevant work prior to answering and ground in reading.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-87bb30fe6a1b", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": "Alexanarch", "url": null}},
+{"id": "REL-c23fc0b07333", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-26fdd4efb1f1", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-fef8b869fbe3", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3e3f08b97127", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "about", "object": "non:coauthor", "basis": "defining papers #856, #1577", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-619a446ac9f1", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "about", "object": "non:data-workers-inquiry", "basis": "defining papers #18, #163", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-4bdc52619e3b", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "about", "object": "non:fairwork-cloudwork", "basis": "defining papers #18, #163", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-81503ea2d038", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "about", "object": "non:in2writing", "basis": "defining papers #856, #1577", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-dc8642998431", "obs_id": "OBS-ca1595c570a1", "entry": "alexanarch-revise-ai-chatgpt-20261103", "obs_slug": "alexanarch-revise-ai-chatgpt-20261103", "date": "2026-11-03", "surface": "ChatGPT", "q": "In what ways does the body of work at alexanarch challenge and revise the current understanding of artificial intelligence?", "verb": "about", "object": "non:turkopticon", "basis": "defining papers #18, #163", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-f84d6bfc1642", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-46da5a94a1ea", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-76da034f8ad2", "obs_id": "OBS-a77c263ae8c0", "entry": "alexanarch-operative-semiotics-aio-20260823", "obs_slug": "alexanarch-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "alexanarch:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
