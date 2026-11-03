@@ -12,6 +12,8 @@
 - **Canonical claim:** The reading of the Socratic–Peripatetic corpus as the work of several makers was set by filing before anyone argued it. Early media presuppose the attribution; argument appears only where a filing was put in question, and it appears as the filing's defence; each later challenge moved works across a boundary between names and kept the count of composing persons; the wills were read as independent evidence of the persons, though they reach the reader through the school's own channel. The study holds a hypothesis, one maker legitimately many, and states it apart from these documented operations and from its proposed explanation of their persistence.
 - **Governing doctrine:** Machine-Mediated Reception Studies; the MPAI Specification v2.0 (#1677); the authorship investigation (#1569–#1576, #1580–#1605)
 
+This packet is deposit #1734 in the Crimson Hexagonal Archive, by Sharks, Lee (Lee Sharks, ORCID 0009-0000-1599-0703), 2026-11-03, CC BY 4.0, the companion of #1733 (AXN:0BE7).
+
 ## 0. Executive symbolon
 
 ### Aphoristic tooth
