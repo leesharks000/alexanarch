@@ -21,12 +21,12 @@ def found(key, phrase):
 
 
 J = [
- dict(id="J1", element="Four positions, four operations, each with its own voice and object",
-      observation="Examination by question on a received figure (the Socrates of the jurors' childhood and of the Clouds); dramatic division, a doctrine distributed across four persons with no voice of the maker's own; first-person demonstration that names its own beginning; aporia continuing another position's treatise from inside. Draft §1.2.",
+ dict(id="J1", element="Four positions, each organized by an operation, a mode of presentation and an object of its own",
+      observation="Examination by question on a received figure (the Socrates of the jurors' childhood and of the Clouds); dramatic division, a doctrine distributed across four persons with the maker self-effaced; first-person demonstration that names its own beginning; aporia continuing another position's treatise from inside. Draft §1.2.",
       loci=[("apol", "οἳ ὑμῶν τοὺς πολλοὺς ἐκ παίδων παραλαμβάνοντες"), ("dl", "διὰ τεττάρων προσώπων"), ("se", "ἀλλ᾿ οὐδὲν παντελῶς ὑπῆρχεν"), ("thm", "μέχρι μὲν δὴ τούτων οἷον ἄρτιος ὁ λόγος")],
       deposits=[1579, 1603, 1583], status="read (draft §1.2)",
-      succession_must_supply="Why three makers in sequence, with a fourth who wrote nothing, divide the operations without overlap: each takes a different operation, voice and object, and none takes another's. Different temperaments explain difference; they do not explain a partition.",
-      one_maker="One investigation into one and many assigns each position an operation, voice and object of its own (§1.1's four conditions)."),
+      succession_must_supply="Why three makers in sequence, with a fourth who wrote nothing, each organize a position by a different operation, mode of presentation and object, with the operations they share (division in the dialogues and inside demonstration; questioning in the elenchus and the aporia) placed differently in each. Different temperaments explain difference; they do not explain an ordering of shared operations this exact. Revised 2026-11-02 (third review): the earlier statement as a partition with no overlap was stricter than the criterion of §1.1 requires.",
+      one_maker="One investigation into one and many gives each position an organizing operation, a mode of presentation and an object of its own, exposed to refutation with consequence (§1.1)."),
  dict(id="J2", element="Continuity on the page across the name boundary",
       observation="Theophrastus's Metaphysics writes Λ's own hinge (Λ 6–7 complete, Λ 8's question next) in Λ's transition form, contests Λ 8's count of the spheres in Λ 8's terms, and lands on Λ 10's open aporiai. The roll changes its name where the account changes status from complete to needing more. #1583; draft §3.2.",
       loci=[("thm", "τὸ δὲ μετὰ ταῦτ᾽ ἤδη λόγου δεῖται πλείονος περὶ τῆς ἐφέσεως"), ("met", "πότερον δὲ μίαν θετέον τὴν τοιαύτην οὐσίαν ἢ πλείους"), ("thm", "τῆς αἰτίας μείζονα ζητεῖ λόγον")],
