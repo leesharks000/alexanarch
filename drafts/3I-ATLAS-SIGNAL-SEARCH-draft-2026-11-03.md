@@ -14,15 +14,15 @@ Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks w
 
 ## 1. The Overview
 
-1.1 The investigation began with a Google AI Overview on Avi Loeb and 3I/ATLAS. The innocent reading first: the Overview gave the consensus that 3I/ATLAS is a natural comet and placed Loeb inside it, by way of his own words in an interview of December 2025, that the object is "most likely natural."
+1.1 The investigation began with a Google AI Overview at "avi loeb 3i atlas", signed out, 2026-11-02, seated in the Capture Registry as avi-loeb-3i-atlas-aio-20261102 (AXN:0BE0.CAPTURE). The innocent reading first: the Overview gives Loeb's early suggestion that the object "could potentially be artificial or extraterrestrial technology", lists his anomalies, and gives the consensus that 3I/ATLAS is a natural comet, with Loeb inside it.
 
-1.2 What the composition did, as the ChatGPT thread recorded it: it "made a December 2025 interview concession—'most likely natural'—carry its account of Loeb's subsequent position, without reconstructing the development and qualifications of his argument, even while citing later writing."
+1.2 What the composition did. Under the heading "Shift to Natural Consensus" it reads: "Following its closest approach to Earth in December 2025, Loeb acknowledged to NewsNation that \"given all the data that we have, I would agree that it's most likely natural,\" though noting certain physical features still warrant deep investigation." Its cards include the NewsNation item ("Harvard professor now agrees 3I/ATLAS 'most likely natural'", updated Dec 19, 2025) and a later Loeb essay on Medium (May 25, 2026, "Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard?"). The December concession carries the account of his position; the later writing sits among the cards without entering it.
 
 1.3 Loeb's later writing holds both halves. On 2026-04-23 ("Where is 3I/ATLAS Now?", avi-loeb.medium.com) he writes that "its fading light curve does not show any evidence for artificial (self-produced) light," lists the anomalies by theme with a probability for each ("aligned to within 5 degrees with the orbital plane of the planets around the Sun, with a probability of 0.2%"), and concludes: "Altogether, these anomalies led me to rank 3I/ATLAS as Level 4 on the Loeb Scale." A concession and a ranked argument stand in the same author's record; the composition carried the concession forward as the position.
 
 1.4 The mechanism is temporal flattening under quotability. A dated, short, quotable sentence from an interview outranks a long argument with qualifications, and once composed it reads as the author's settled view. The incentive is legibility to the summary's reader; the function is that the argument's development drops out of the record the reader receives.
 
-1.5 Gap: the Overview's text is held in the ChatGPT thread and is absent from this session. It should be seated as a capture from its paste, with its query, before this section quotes it.
+1.5 The Overview is quoted from its seated paste (rebuild/capture-registry/intake-20261102-loeb-3i-atlas/paste-aio.txt).
 
 ## 2. The verdict and its scope
 
@@ -142,7 +142,7 @@ Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks w
 10.1 ATA: the executed blanking script and the signed before/after catalogues; raw audit of the 211.
 10.2 GBT 0017: antenna telemetry for 05:08:17–05:13:15 UTC.
 10.3 The thirteen: ChatGPT's current tests; a frozen held-out test (§7.7).
-10.4 The Overview: seat its paste as a capture before quoting it.
+10.4 The Overview: seated 2026-11-02 (AXN:0BE0.CAPTURE); quoted from its paste.
 10.5 Author and venue ruled 2026-11-03: Nobel Glas, Transactions on Substrate Engineering, the author and the line of THE ATLAS PERIHELION PRANK (#454). Further numbers run before deposit (§7.8).
 
 ## 11. Files stashed (rebuild/3i-atlas-signal-search/)
