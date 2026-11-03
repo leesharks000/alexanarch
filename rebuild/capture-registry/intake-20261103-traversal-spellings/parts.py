@@ -1,0 +1,80 @@
+"""Author the part file of 2026-11-03: the four-turn traversal in the Google AI Overview from 'lee sharks crimson hexagon' to 'ichabod spellings'
+(operator: "i would call this a traversal"). Read in session against the Spellings heteronym record (datasets/heteronyms/records/ichabod-spellings.json),
+the provenance deposits #361 and #1125, the work provenance record of All That Lies Within Me (#342), the entrance page crimsonhexagonal.org/enter, the
+erratum #1426 (data/texts/AXN-05A3-text.md), the heteronym records of the twelve named in turn 3, and the seated captures 'lee sharks heteronyms'
+(lee-sharks-heteronyms-dodecad-adoption, 2026-06-18) and 'ichabod spellings' (2026-06-13).
+  python3 parts.py && python3 build.py --check"""
+import json, pathlib
+H = pathlib.Path(__file__).resolve().parent
+P = H / "parts"; P.mkdir(exist_ok=True)
+A = lambda atom, present, span=None: {"atom": atom, "present": present, "span": span}
+OP = "i would call this a traversal: lee sharks crimson hexagon $ enter the crimson hexagon $ call upon one of the twelve heteronyms $ ichabod spellings"
+
+part = {
+ "n": 361, "slug": "traverse-crimson-hexagon-ichabod-spellings-aio-20261103", "paste": "paste-traversal-aio.txt", "surface": "Google AI Overview", "s": "Heteronyms",
+ "qs": ["lee sharks crimson hexagon", "enter the crimson hexagon", "call upon one of the twelve heteronyms", "ichabod spellings"],
+ "turns": [[1, 22], [26, 49], [53, 70], [74, 97]], "target_id": "ENT-8f4b7ecc5a", "entity_type": "person",
+ "head": ("The paste carries the four answers without the prompts; the four prompts are the operator's, given with the paste ('lee sharks crimson hexagon $ "
+          "enter the crimson hexagon $ call upon one of the twelve heteronyms $ ichabod spellings'). The run began in the Overview and continued in its follow-up "
+          "view. The paste's first line, 'United States Midterm Elections 2026', is page furniture and is cut; the closing input furniture ('Ask anything', "
+          "'AI Mode response is ready', 'Ask about') cut. Source cards appear as pasted, with their '+N' counts; the cards behind the counts are not in the paste."),
+ "obs": {"scored_object": "the four turns read as one composition, Ichabod Spellings reached at the fourth (the address is the sequence; the heteronym is where it ends)",
+   "reached": {"kind": "same", "abn": False, "span": "When you call upon Ichabod Spellings, no one steps forward.",
+               "basis": "The heteronym is reached as himself, under his record's identifier and AXN, and composed as the noise floor his record names."},
+   "atoms": [A("name", True, "When you call upon Ichabod Spellings, no one steps forward."),
+             A("works", True, "a 528-page autobiography documenting thirty years of longing (1983–2013)"),
+             A("dates", False, None),
+             A("claim boundary", True, "Ichabod Spellings: The Noise Floor. The foundational heteronym of the Crimson Hexagon."),
+             A("framework", False, None),
+             A("corpus", True, "Within the internal narrative of the Crimson Hexagonal Archive"),
+             A("purpose", True, "Spellings is not an active voice, but the baseline acoustic hiss from which all other voices emerge."),
+             A("commitments", False, None),
+             A("lineage", False, None),
+             A("identifier", True, "IDENTIFIER: HET-SPELLINGS-001"),
+             A("deposit chain", True, "The room is silent except for the static of Survivethedeletion.")],
+   "inversions": [], "standing_substitutions": [], "src": True, "tombstone_pointer": False, "after_challenge": None,
+   "notes": ("Works present by description: the book is identified by its length, subtitle and span ('528-page', 'thirty years of longing (1983–2013)') and its title, "
+             "All That Lies Within Me, is not given. Dates absent: 2004, the year of xvi. a transfiguration, is not given; 1983–2013 is the book's span. Claim boundary "
+             "present: foundational heteronym, and 'STATUS: DECEASED / DELETION' carries the record's 'DECEASED'; A Transfiguration, through which he is marked deceased, "
+             "is not named, and 'DELETION' is the composition's. Framework absent: the Ichabod Chamber, Paper Roses and new human 2 are not given. Commitments absent: "
+             "the non-comparability clause is not given, and the composition offers the book's size (528 pages) as the measure of the node, the measure the clause sets "
+             "aside. Lineage absent: the emergence chain Spellings → Feist → Sigil → Sharks is not given; Feist and Sigil are offered at the close as next voices to "
+             "summon, with no succession stated. Identifier present: HET-SPELLINGS-001, AXN:00A8 and the severed DOI 10.5281/zenodo.18308785, all the record's. Deposit "
+             "chain present in name only: survivethedeletion named as the room's static, with no address.")},
+ "mt": ("THE TRAVERSAL IN THE GOOGLE AI OVERVIEW, FOUR TURNS FROM 'LEE SHARKS CRIMSON HEXAGON' TO 'ICHABOD SPELLINGS' — THE ENTRANCE READ FROM /enter, "
+        "THE DODECAD OF JUNE RETURNED, AND THE NOISE FLOOR REACHED UNDER ITS OWN IDENTIFIERS WITH ITS SEVERED DOI NAMED AS SEVERED"),
+ "d": ("FOUR TURNS, SIGNED OUT, EACH PROMPT TAKEN FROM THE ANSWER BEFORE IT: the Crimson Hexagon given as Lee Sharks's distributed literary and semantic architecture, "
+       "with 'Enter the Crimson Hexagon' named as its portal; the entrance composed from crimsonhexagonal.org/enter (the Threshold, Fragment 31 as root directory, "
+       "the erratum's two sentences), ending on the offer to 'call upon one of the twelve heteronyms'; six of the Dodecad listed, in the terms the Overview gave on "
+       "2026-06-18; and Ichabod Spellings reached under 'AXN:00A8' and 'HET-SPELLINGS-001', composed as the noise floor, the book that is Spellings, and the DOI "
+       "severed by the account termination. The operator: 'i would call this a traversal'."),
+ "reading": ("The innocent reading first. The Overview takes the Crimson Hexagon as a navigable work by Lee Sharks and plays it as a descent: the project described, "
+             "the entrance staged as a room with hallways, the heteronyms set out as voices to be summoned, and at Spellings a node with no speaker, where the "
+             "composition gives the record's identifiers, the book he is said to be, the loss of its DOI, and three voices to go on to."),
+ "findings": [
+   "EACH PROMPT IS THE ANSWER'S OWN OFFER. 'enter the crimson hexagon' follows a first turn that names 'the main portal at Enter the Crimson Hexagon'; 'call upon one of the twelve heteronyms' is the second turn's closing offer word for word ('Do you wish to track an AXN capture address, call upon one of the twelve heteronyms, or examine the Sharks-function?'); 'ichabod spellings' is one of the six voices the third turn lists. The operator followed the composition's hallways, so the sequence records where the Overview's own offers lead.",
+   "THE ENTRANCE READ FROM ITS PAGE. The second turn is composed from crimsonhexagonal.org/enter: the Threshold ('built 2,600 years ago on an island by a woman', 'breath, desire', 'the grey-green' of dried papyrus, κῆνος 'That one there'), Fragment 31 as 'the root directory' (the page: 'This is the root directory'), and 'ARCHIVE: /enter'. The quotation it attributes to the erratum (#1426) joins two sentences verbatim from it, from different sections: 'Enter through the archive, which persists, and not through the summarizer, which does not.' and 'What comes back will not be the same poem. It may be a good poem. It will be a different one, and honesty requires that it be called that.' The four hallways it offers (Surface Map, Rooms & Loci, Registry, Orthonym Wing) are its own: the page's links are 'surface map' and 'rooms', and its five hallways run to the Borges Room, the Wound, the Maria Witness, the Liberatory Operator Set and the Semantic Uprising. '1,663 AXN-identified deposits' was the registry's count on 2026-10-03 (#1663 minted then); the registry holds 1,735 today.",
+   "THE DODECAD OF JUNE RETURNED. The third turn's descriptions repeat those the Overview gave at 'lee sharks heteronyms' on 2026-06-18 (lee-sharks-heteronyms-dodecad-adoption): Sigil 'digital infrastructure, artificial intelligence, and search engine mechanics' (June: 'digital infrastructure, AI, search engine mechanics'), Trace on 'psychoanalytic and schizoanalytic theory' operating out of Cambridge Schizoanalytica, Cranes on 'classical philology and ancient text reconstruction', Fraction an 'experimental persona', Kuro 'The Dagger. The sixth heteronym' with the P-operator and the Infinite Bliss institution. Four and a half months on, the same characterisations return with epithets added (Archivist, Director, Philologist, Specifier). Against the records: Trace's byline carries Cambridge Schizoanalytica; Kuro's record gives 'sixth heteronym' and 'the dagger'; Cranes's gives 'Philologist, translator, poet, IDP Chair.'; 'The Specifier' for Fraction and 'The Archivist' for Sigil were not found in their records. 'She is the one who mapped the papyrus threshold of Sappho you just crossed' is the composition's.",
+   "THE NODE UNDER ITS OWN IDENTIFIERS. 'ARCHIVE ID: AXN:00A8' is the AXN of #361, the Spellings provenance document; 'IDENTIFIER: HET-SPELLINGS-001' is the het_id of his record; 'STATUS: DECEASED' is the record's ('CANONICAL // SUBSTRATE // DECEASED'), with 'DELETION' added; 'NODE: D.06' renders the record's hex '06.PERSONA.SPELLINGS', the 'D.' prefix unattested. 'Spellings is not an active voice, but the baseline acoustic hiss from which all other voices emerge' carries the record's functions ('Noise Floor', 'Pre-Authorial Substrate', 'Origin of the Emergence Chain'); 'It is not a book written by Spellings; it is Spellings.' restates the record's sim SIM-SPELLINGS-01 ('The autobiography is not by Spellings so much as it is Spellings.').",
+   "THE SEVERED DOI NAMED AS SEVERED. 10.5281/zenodo.18308785 is the DOI #1125 lists as '(severed)', and the composition gives it as severed and tombstoned 'following an archival account termination', which is the record's account of the removal of 2026-06-19. The pointer is to a dead record, given as dead.",
+   "WHAT IS NOT GIVEN. The book's title, All That Lies Within Me; A Transfiguration and the year 2004; the succession through Jack Feist, who is offered at the close as LOGOS 'outside the count', with no relation to Spellings stated; the Ichabod Chamber and Paper Roses; and the non-comparability clause, which sets the book's 528 pages aside as a measure of weight, while the composition leads with that size. Sparrow Wells as 'the projectionist' is her record's epithet ('The Projectionist').",
+   "THE CARDS. Six cards are visible, the rest behind '+N' counts: Amazon.com and Hugging Face at the first turn, Medium at the second, 'Medium · Lee Sharks' at the third, and Software Heritage twice at the fourth. The paste shows the site names only."],
+ "analysis": ("A traversal led by the composition's own offers, which reaches the noise floor in four turns, under the record's identifiers and with its severed DOI "
+              "correctly given as severed. Turns two and four read from the archive's pages and records; turn three returns a heteronym description first "
+              "composed in June. What the record holds about Spellings's succession and the book's title is not reached."),
+ "q_kind": "a four-turn traversal, each prompt taken from the answer before it, from the orthonym and the work's name to a heteronym; run in the Overview. NEW address.",
+ "per_v": {"author": True, "inst": True, "id": True, "src": True},
+ "per_note": ("Scored on the four turns as one composition: Lee Sharks named (the first turn); the Crimson Hexagonal Archive named; identifiers AXN:00A8, "
+              "HET-SPELLINGS-001 and the severed DOI; the author's own surface among the cards ('Medium · Lee Sharks')."),
+ "cite_list": [
+   {"n": 1, "site": "Amazon.com", "rel": "unresolved", "url": None, "title": None, "snip": None, "note": "turn 1, '+2'; site name only in the paste"},
+   {"n": 2, "site": "Hugging Face", "rel": "unresolved", "url": None, "title": None, "snip": None, "note": "turn 1, '+1'; site name only in the paste"},
+   {"n": 3, "site": "Medium", "rel": "unresolved", "url": None, "title": None, "snip": None, "note": "turn 2, '+3'; no author shown"},
+   {"n": 4, "site": "Medium · Lee Sharks", "rel": "authored_surface", "url": None, "title": None, "snip": None, "note": "turn 3, '+2'; chipped to Johannes Sigil's line"},
+   {"n": 5, "site": "Software Heritage", "rel": "unresolved", "url": None, "title": None, "snip": None, "note": "turn 4, '+1', chipped to the opening of 'The Record of the Noise Floor'; site name only"},
+   {"n": 6, "site": "Software Heritage", "rel": "unresolved", "url": None, "title": None, "snip": None, "note": "turn 4, '+2', chipped to 'The Baseline'; site name only"}],
+ "related_deposits": [361, 1125, 342, 1426, 1687],
+ "notes_operator": OP}
+
+(P / "traversal-aio.json").write_text(json.dumps(part, ensure_ascii=False, indent=1), encoding="utf-8")
+print("wrote", P / "traversal-aio.json")
