@@ -1,6 +1,6 @@
 # What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search
 
-Preliminary write-up · draft of 2026-11-03 · not deposited · author and venue unset
+Nobel Glas · Transactions on Substrate Engineering · preliminary write-up, draft of 2026-11-03 · not deposited (further numbers to run first)
 
 Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks with two machine collaborators working in parallel on the same public data: Claude (this session, the Green Bank and MeerKAT work and the autonomous-sender classes) and ChatGPT (the Allen Telescope Array work, the audit of the Green Bank thirteen, the numerical-anchor and new-band searches). Each system's reports, code and results are stashed beside this draft (§11). ChatGPT is still running tests on the thirteen; §7 will take those results in.
 
@@ -50,11 +50,17 @@ Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks w
 
 ## 5. Findings about the classifiers
 
-5.1 **The ATA drift sign.** The accepted manuscript retains drift rates "+0.05 to +1.5 Hz/s" and its Figure 4 places the retained histogram at positive drifts only. Horizons defines deldot as positive for recession. During the tested July 3 scans the object approaches with a rising range-rate (about −51.426 to −51.395 km/s), so a constant-rest-frequency emitter riding on it drifts negative: −0.1249 to −0.1254 Hz/s at 1075 MHz. The archived bliss source carries no sign flip that would reconcile the two. The documented filter appears to exclude the baseline emitter it names. The executed blanking script and the signed before/after hit catalogues have not been obtained, so this is a documented-method discrepancy; it does not prove that a transmission was discarded. A search of part of the excluded class found no convincing signal (ChatGPT, 2026-11-02).
+5.1 **The ATA drift sign.** The paper (§3.2) takes "the time derivative of the deldot parameter within JPL Horizons," finds accelerations of 3.2 to 3.5 × 10⁻⁵ km/s² in all five sessions, converts them with drift = acceleration × frequency / c (Sheikh et al. 2019, Eq. 1), reports the expected drift as positive ("the minimum drift rate of 3I/ATLAS would be 0.15 Hz/s" at 1336 MHz; "the maximum drift rate of 3I/ATLAS would be 1.01 Hz/s" at 8728 MHz), and states: "We filter our hits for drift rates between 0.05–1.5 Hz/s at all frequencies." The text gives no sign. Figure 4 does: its "Drift Rate Range Hits" occupy 0 to +1.5 Hz/s on the signed axis and none of the negative half.
+
+5.1.1 The physics. Received frequency is f = F (1 − v/c) with v the range-rate, positive for recession. A rising range-rate lowers the received frequency, so a positive acceleration gives a negative drift. Checked in this session at the ATA site (Horizons, 2025-07-03): deldot −51.440 km/s at 06:50 UTC, −51.377 at 07:20, an acceleration of 3.49 × 10⁻⁵ km/s², matching the paper's figure; the drift of a constant tone riding on the object is −0.125 Hz/s at 1075 MHz and −0.19 Hz/s at 1623.75 MHz. The ATA filterbanks carry a positive channel spacing (foff +1.907 Hz, checked on the July 3 LoA.C1504 beam-0 header), so a reported drift needs no sign flip to mean what it says; ChatGPT's reading of the archived bliss source found no flip either.
+
+5.1.2 What follows. The paper derived the right magnitude, gave it the sign of the acceleration, and its figure retains the positive interval. On the paper's own figure, the drift it computed for an emitter on 3I/ATLAS lies in the half its filter removed. Its stated purpose for the cut is "To filter out signals that do not match the dynamics of 3I/ATLAS." The executed filter script and the signed before/after catalogues have not been obtained, so the claim stands on the manuscript, the figure and the physics; it does not show that a transmission was discarded. A search of part of the excluded class found no convincing signal (ChatGPT, 2026-11-02).
+
+5.1.3 Elsewhere. The FAST search (arXiv:2603.19023) gives its expected drifts as positive magnitudes (0.105–0.207 Hz/s) and tabulates its "Used ⟨ν̇⟩ range" as (0, 0.15) and (0, 0.25); its Equation 1 writes the bound on |ν̇|, so whether its executed filter is signed is unsettled from the text. The Green Bank paper (arXiv:2512.19763) searched ±4 Hz/s with a sky-localisation filter and describes no drift cut. The one public review found, an AI review on pith.science (grok-4.3, 2026-05-22), asked the authors to "Specify the exact drift-rate search range (in Hz/s)" and raised no sign question. No published comment, erratum or critique raising the sign was found (searches of 2026-11-03).
 
 5.2 **"Human-made" as a label.** For the paper's two illustrated rejections: Figure 7 sits at 1626.675919 MHz, above Iridium's 1626.5 MHz service edge; CEPT ERC Report 91 documents Iridium unwanted emissions above that edge, so Iridium stays plausible, and no particular transmitter is identified. Figure 8 shows similar strength in both beams, which supports rejection as an unlocalised source without identifying it. The published sentence ("every single one turned out to be human-made interference") states an identification where the procedure supplies a classification. The raw-data audit of all 211 events has not been done.
 
-5.3 **The zero-drift class.** Narrowband pipelines of the turboSETI family drop zero-drift hits as terrestrial. A sender that pre-compensates its Doppler for the receiving telescope arrives at zero drift. Claude tested this class on the GBT OH channel with the beam swap as control: 3 on-source clusters against 7 with the beams swapped. Nothing is there (§6).
+5.3 **The zero-drift class.** The ATA paper's retained interval (+0.05 to +1.5 Hz/s) excludes zero drift, in keeping with the general practice of treating zero-drift narrowband hits as terrestrial. A sender that pre-compensates its Doppler for the receiving telescope arrives at zero drift. Claude tested this class on the GBT OH channel with the beam swap as control: 3 on-source clusters against 7 with the beams swapped. Nothing is there (§6).
 
 5.4 **The pointing header.** The source-header position of GBT ON scan 0017 lies 16.108 arcmin from the comet's ICRF position (9.827 arcmin from apparent); scans 0013 and 0015 lie within 0.16 and 0.71 arcmin. The GBT beam is about 7.6 arcmin FWHM at 1667 MHz. Public code shows the header as a first-file snapshot of the status fields; it says nothing on whether the telescope had settled on target. The discrepancy is established in the metadata; mispointing is not. Antenna telemetry for 05:08:17–05:13:15 UTC would resolve it. No request has been sent.
 
@@ -80,6 +86,7 @@ Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks w
 | ATA, July 3, 1666.75–1667.75 MHz | numerical anchors: OH 1667.35903 rest; 1667.000 at emitter; 1667.000 at receiver; bursts and three-tone combs | ChatGPT | no discovery flag; no continuation flag |
 | GBT OH channel | observer-compensated frames: GBT (zero drift), geocentre, barycentre | Claude | 3 (swap 7); 7 (swap 7); 5 (swap 3): no on-source side |
 | GBT OH channel | single-scan bursts, z ≥ 6 | Claude | ON-minus-OFF 6, against 3.08 ± 2.40 in false frames (12.5% reach it) |
+| GBT S-band, coarse channel containing 2500 MHz | the comet-frame procedure and beam swap, frozen in advance | Claude | 0 on-source (swap 2) vs 2.95 ± 1.56 (max 8): the property does not replicate (§7.8) |
 | GBT 1501.5–1689 MHz, 1.07 s | periodic 2.15–150 s; broadband pulse trains; single-sample events | Claude | 173 periodic pairs, all in GNSS, Inmarsat or Iridium allocations; 0 broadband; events in satellite bands |
 
 ## 7. The thirteen
@@ -108,6 +115,8 @@ Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks w
 
 7.7 Per step the candidates average about 0.35σ; their rest frequencies show no spacing, mirror or whole-kHz structure beyond random sets. The cadence has no second L-band pass in the public directory: the same night's later blc23 cadences are at 2.4–2.6, 7.7–7.9 and 11.6–11.8 GHz. A held-out test needs an ATA or Parkes session at 1667 MHz with sensitivity near the GBT's, the thirteen frequencies and the rule frozen; or the property (a beam-sided comet-frame excess) tested in another band under the same frozen procedure.
 
+7.8 The property in another band (Claude, 2026-11-03, plan frozen before reading, sha256 ca251bf3…). GBT blc23 S-band cadence of the same night, scans 0029–0034, coarse channel 30 (contains 2500 MHz, chosen by round number), the procedure and null of §7.1 unchanged. True frame: 0 on-source clusters, 2 with the beams swapped. Forty false frames: 2.95 ± 1.56 (maximum 8); every false frame reaches or exceeds the true count. Outcome by the frozen rule: BOUNDS. The beam-sided comet-frame excess does not appear at 2.5 GHz.
+
 ## 8. What the collaborators got wrong, and what corrected it
 
 8.1 Claude's MeerKAT beam matching used a ±20-channel (about 32 Hz) window and missed counterparts a few kHz away in broad features. The first "localized" counts (310, 47, 628) overstated localisation and are withdrawn.
@@ -134,7 +143,7 @@ Working record of an investigation run 2026-11-02 and 2026-11-03 by Lee Sharks w
 10.2 GBT 0017: antenna telemetry for 05:08:17–05:13:15 UTC.
 10.3 The thirteen: ChatGPT's current tests; a frozen held-out test (§7.7).
 10.4 The Overview: seat its paste as a capture before quoting it.
-10.5 Author, venue, and whether this becomes one paper or a paper and a dataset.
+10.5 Author and venue ruled 2026-11-03: Nobel Glas, Transactions on Substrate Engineering, the author and the line of THE ATLAS PERIHELION PRANK (#454). Further numbers run before deposit (§7.8).
 
 ## 11. Files stashed (rebuild/3i-atlas-signal-search/)
 
