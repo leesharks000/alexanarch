@@ -22,6 +22,10 @@ The excess sits in one narrow slice of the score: at ≥ 2.5 the comet frame has
 
 Limit: the false-frame spread in S1 (sd 9.9) is about the size of the thirteen themselves. The band would show a sibling population several times larger than the thirteen and cannot exclude one of their own size. Within that limit, the comet-frame excess has no tail under the gate and almost none above it. That is the shape a fluctuation at the 2.5 cut takes; a real population would need its scores confined to the slice just above the gate, which the injected weak lines do not show. Post hoc, outside the plan: in ChatGPT's trial ledger (chatgpt/evidence/, results/all-trials.csv), the 356 weak steady-line injections (level 2.8, broad and local) have minimum ON scores of <2.0 in 78, 2.0–2.5 in 107, 2.5–2.75 in 50 and ≥2.75 in 121. Scaled to the eleven of the thirteen at 2.5–2.75, a population of such lines would put about 24 clusters in 2.0–2.5 and about 27 at ≥2.75; the comet frame shows no excess in the first and 2 against 0.6 in the second. The ledger scores use ChatGPT's F1 normalization and its own gate, so the comparison is approximate.
 
+## Later (2026-11-04, 16:50 EST)
+
+The reading above calls the shape that of a fluctuation at the 2.5 cut. The background models of bg/RESULTS-bg.md (frozen, b8fd193a…) bear on it: in 139 draws across four nulls (false accelerations, time-shuffled rows, role partitions, phase-randomized rows) none reaches 13, so a fluctuation of the data at that cut, which the nulls would show as often as the true frame, does not account for it. The measurement of this file stands: no siblings under the gate, the excess confined to 2.5–2.75.
+
 ## Deviations
 
 One post hoc comparison, labelled (the injected weak lines' score distribution from ChatGPT's ledger). The raw spectra were deleted after the run; fetch_cc.py re-reads them by name.
