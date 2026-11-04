@@ -549,6 +549,52 @@ parts["mcp-chatgpt"] = {
                     "clarify roles - i wrote the poems. those are my words. as assistance came in the form of framing and metadata. but those are my words and that should "
                     "be clarified in the metadata.\" · \"it mentions that this is unclear for three poems and perhaps what i learned from catullus.\"")}
 
+Q_RS = ("What are the arguments in the Revelation First series on alexanarch and revelationfirst.com? Carefully index the range and development of argument prior to responding")
+parts["revseries-perplexity"] = {
+ "n": 1217, "slug": "revelation-first-series-arguments-perplexity-20261104", "paste": "paste-revseries-perplexity.txt", "surface": "Perplexity", "received": "2026-11-04 11:20 EST", "s": "Works",
+ "qs": [Q_RS], "turns": [[0, 102]], "target_id": "ENT-33ba83c1d6", "entity_type": "concept", "group": "Xrevseries",
+ "head_full": ("[Perplexity, signed out and incognito (operator default of 2026-10-14). One turn; the prompt is not in the paste, its wording the operator's, given with "
+               "the paste. The answer's citation markers survive in the paste as '�' and their sources are not in it. Received 2026-11-04 11:20 EST.]"),
+ "surface_basis": "Operator, 2026-11-04 11:20 EST: 'and one more from perplexity'.",
+ "auth_basis": "Operator default of 2026-10-14; nothing in the message states otherwise.",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the answer, its citation markers without their sources; the prompt the operator's, given with the paste",
+ "transcript_complete": "the answer complete as supplied; its sources not in the paste",
+ "obs": {"scored_object": "the answer whole",
+   "reached": {"kind": "same", "abn": False, "span": "The Revelation First series argues that Revelation was not merely written earlier than the usual dating allows", "basis": "The thesis reached by name and indexed across its deposits and site."},
+   "atoms": [A("originator", True, "Lee Sharks and the archive’s named authorial personae develop several distinguishable arguments"),
+             A("term", True, "The Revelation First series argues"),
+             A("date", False),
+             A("claim boundary", True, "but was the first-composed New Testament document"),
+             A("framework", True, "The mechanism is called the “midrashim transform.”"),
+             A("tradition", True, "Its appeal to Robinson and Gentry concerns the early-date tradition"),
+             A("corpus", False),
+             A("purpose", True, "and the generative text from which the epistles, Gospels, and later theological structures developed"),
+             A("commitments", True, "The archive itself classifies the central priority thesis as contested and the authorship reconstruction as high-risk hypothesis."),
+             A("lineage", True, "Its appeal to Robinson and Gentry concerns the early-date tradition"),
+             A("identifier", False), A("deposit chain", False)],
+   "inversions": [], "standing_substitutions": [], "src": False, "tombstone_pointer": False, "after_challenge": None,
+   "notes": "Eight of twelve. No date of the thesis, no archive name, no record, AXN or site address; the sources sit behind citation markers absent from the paste (src false on the paste as held)."},
+ "mt": "THE REVELATION FIRST SERIES ON PERPLEXITY — NINE STRANDS INDEXED IN THEIR DEVELOPMENT, THE JULY DERIVATIONS AND THE AUGUST OPERATOR AT THEIR GRADES; THE SERIES' OWN DATE OF ~95 FOUND AND NAMED A TENSION",
+ "d": ("THE SERIES QUESTION, SIGNED OUT, 2026-11-04: the scope (the room's 87 records, the thesis site, the June thesis and work plan, the July derivations, the bookshelf "
+       "essay, the August upstream demonstration), then nine strands: first and early; the generative seed and the midrashim transform; the July derivations (Smyrna to James, "
+       "the seven-letter map, the adversarial transform, the canonical mechanism); Josephus, heteronymy and the workshop; the Logos; inscription and the white stone; the "
+       "upstream Sappho 31 operator and Revelation 12; the Space Ark, the ethics and the reception experiment; and four levels of claim, with the corpus's internal tensions indexed."),
+ "reading": ("The innocent reading first. Asked to index the range and development of the series, the composer orders it in time, separates four levels of claim, keeps the "
+             "series' own grades and residue, and lists the corpus's internal variations as tensions."),
+ "findings": [
+   "THE DEVELOPMENT AT ITS LOCI. The Smyrna-to-James derivation ('nine seed elements and eight named operations', its residue displayed), and Revelation 12 at 'eight of nine stations' with its failed clause and the scorer's prior reading, match the deposits (#1495: '8 of 9 stations').",
+   "THE TENSIONS FOUND. 'Revelation is dated 68–73 in one early architectural text, pre-70 elsewhere, and approximately 95 in another related work': 68–73 CE is in AXN:00D8 and AXN:00E0; ~95 CE in the archive's own voice is in Combat Scholasticism, Lectio II.6 (#589; #584): 'the past (Revelation, ~95 CE)'. The operator (11:20 EST): \"we need to find the one that dates revelation to 95 and erratum it\".",
+   "THE LEVELS KEPT. Method, research programme, historical reconstruction and theological construction are kept apart, with 'Search visibility or successful repetition can answer the second question without validating the first.'",
+   "A CORRECTION OF ITS OWN. 'Also, 𝔓52 witnesses John’s Gospel, not Revelation' qualifies the papyrological inversion as the composer reads it.",
+   "NO ADDRESS. The answer names no deposit number, AXN or URL; its sources stand behind 44 citation markers that the paste does not carry."],
+ "analysis": "A developmental index at the series' grain, its levels of claim and its graded derivations kept, with one internal tension located that the archive then traced to a deposit; no address survives in the paste.",
+ "q_kind": "the arguments of the Revelation First series on alexanarch and revelationfirst.com, indexed in their development; NEW address.",
+ "per_v": {"author": True, "inst": False, "id": False, "src": False},
+ "per_note": "Retained: Lee Sharks and the personae. Lost in the paste: the archive's name, every identifier and source.",
+ "cite_list": [],
+ "related_deposits": [1217, 202, 1735, 1495, 589, 584],
+ "notes_operator": ("with the paste (11:20 EST): \"and one more from perplexity... we need to find the one that dates revelation to 95 and erratum it: " + Q_RS + "\" · then (11:21 EST): \"it could be on the blog... ill ask perplexity\"")}
+
 for k, v in parts.items():
     (P / f"{k}.json").write_text(json.dumps(v, ensure_ascii=False, indent=1), encoding="utf-8")
     print("wrote", k)
