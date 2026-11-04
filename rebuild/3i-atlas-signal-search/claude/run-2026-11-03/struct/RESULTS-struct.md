@@ -1,0 +1,9 @@
+# RESULTS-struct: structure among the stored Parkes full-band candidates (EXPLORATORY; no new data read)
+
+Input: every true-frame candidate the frozen full-band run kept (pks/fb_*.json, 22 nodes, 704-3648 MHz): 62,864 candidates; 13,763 with all three on-source z >= 3.5 ("strong"). Rest frequencies as logged (comet frame). Only true-frame candidates were stored, so each test builds its null by jittering the candidates' own frequencies: wide (+-50 kHz, keeps density, breaks local clustering) and local (+-5 Hz, keeps clustering at kHz scales, breaks exact relations at the 1 Hz or 2e-8 tolerance).
+
+1. Rational relations (pairs with f_i / f_j within 2e-8 of p/q, q <= 12, 1 < p/q < 2.6), strong candidates: 281 pairs. Wide-jitter null 248.0 +- 17.2 (2 percent of draws reach 281); local-jitter null 279.3 +- 5.9 (40 percent reach it). The apparent excess under the wide null is clustering; against the local null there is none. The pairs that occur join the 715-742 MHz band to 1527-1561 MHz (ratios 24/11, 13/6, 23/11): pairs between dense interference bands.
+
+2. Equal spacings (triples f1 < f2 < f3 with f2 - f1 = f3 - f2 within 1 Hz, spacing above 1 kHz): 4,847 triples. Wide-jitter null mean 1,056 (max 1,122); local-jitter null 2,801 (max 2,863). The excess over the local null is real and concentrated: 1,256 of the triples start at 1560-1562 MHz (the BeiDou B1 navigation-satellite band), 817 at 715-718 MHz and 441 at 742 MHz (the 700 MHz mobile and broadcast band), 125 at 1553 MHz (mobile-satellite downlink), 110 at 2463 MHz (the 2.4 GHz ISM band). The commonest spacings are round: 2,000, 1,500, 15,000, 1,200, 7,000, 3,000 Hz, the channel grids of digital transmitters.
+
+Reading. The candidates carry structure, and the structure is the grid of human transmissions in their allocated bands. No rational or equal-spacing structure appears outside those bands beyond what the local null gives.

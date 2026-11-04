@@ -1,0 +1,7 @@
+# RESULTS-ata-jul8: EXPLORATORY open look, ATA 2025-07-08 high band (6376-9064 MHz; not a frozen test)
+
+Method: ata/look_v2.py (ata/look.py with the output path and the target list taken from the command line; the procedure unchanged), target list ata/targets_jul8.json: methanol 6668.5192 MHz; OH 7761.747 and 7820.125 MHz; the deep-space-network X-band downlink band sampled at 8400, 8405, ..., 8450 MHz (eleven windows). All 41 scans of the session, both beams, +-30 kHz along the comet's true Doppler path (drift about -0.84 to -0.93 Hz/s at 8.4 GHz), the sign-flipped path, and dish-fixed; beam swap as background. 574 jobs, 0 errors.
+
+Result. At every target the true path's counts (all features / z >= 6) sit inside the spread of the flipped path and both swaps: methanol 1097/61 against 1071-1142 and 56-69; OH 7761 1076/62 against 1052-1154; OH 7820 1143/64 against 1087-1131; the eleven DSN windows 1072-1126 against 1027-1182. No comet-frame scan-average feature recurs at the same rest frequency in more than two of the 41 scans for any target; the backgrounds also reach two. The strongest true-path features are single-sample spikes at z 7.9-8.2 with scan averages 0.8-2.9, matched by swap spikes at 7.9.
+
+Reading. In the public high-band session, at these fourteen windows, the drift class the published filter removed holds nothing its sign-flipped twin or the reference beam does not hold equally.
