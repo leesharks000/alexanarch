@@ -1,6 +1,6 @@
 # Parkes 2025-07-31 full-band search, results (plan: pks/PLAN-fullband.md)
 
-Node summaries as logged in pks/fullband.log:
+Node summaries as logged in pks/fullband.log (all 22 nodes complete 2026-11-04):
 
 - blc07 SUMMARY {'true': 2197, 'swap': 746, 'false_mean': 2679.65, 'false_sd': 943.3305504964842, 'false_max': 5482, 'false_minus_swap_max': 1926, 'lead': False}
 - blc06 SUMMARY {'true': 10168, 'swap': 8585, 'false_mean': 6634.8, 'false_sd': 1411.2837276749137, 'false_max': 9532, 'false_minus_swap_max': 3554, 'lead': False}
@@ -14,8 +14,22 @@ Node summaries as logged in pks/fullband.log:
 - blc00 SUMMARY {'true': 11941, 'swap': 12837, 'false_mean': 9663.55, 'false_sd': 686.8385163195204, 'false_max': 11174, 'false_minus_swap_max': 795, 'lead': False}
 - blc13 SUMMARY {'true': 602, 'swap': 659, 'false_mean': 486.05, 'false_sd': 107.25505815578117, 'false_max': 695, 'false_minus_swap_max': 79, 'lead': False}
 - blc14 SUMMARY {'true': 4095, 'swap': 2340, 'false_mean': 2417.5, 'false_sd': 417.46191443052624, 'false_max': 3553, 'false_minus_swap_max': 375, 'lead': True}
+- blc15 SUMMARY {'true': 2704, 'swap': 4562, 'false_mean': 1539.45, 'false_sd': 563.3770917422894, 'false_max': 2959, 'false_minus_swap_max': -1137, 'lead': False}
+- blc16 SUMMARY {'true': 1826, 'swap': 2878, 'false_mean': 1951.25, 'false_sd': 124.15670541698503, 'false_max': 2226, 'false_minus_swap_max': -659, 'lead': False}
+- blc17 SUMMARY {'true': 3356, 'swap': 3184, 'false_mean': 3160.9, 'false_sd': 478.9144913238688, 'false_max': 4539, 'false_minus_swap_max': 1654, 'lead': False}
+- blc20 SUMMARY {'true': 208, 'swap': 214, 'false_mean': 213.6, 'false_sd': 23.55079616488581, 'false_max': 284, 'false_minus_swap_max': 60, 'lead': False}
+- blc21 SUMMARY {'true': 208, 'swap': 217, 'false_mean': 208.9, 'false_sd': 23.81785044877056, 'false_max': 269, 'false_minus_swap_max': 40, 'lead': False}
+- blc22 SUMMARY {'true': 221, 'swap': 226, 'false_mean': 206.45, 'false_sd': 11.668226086256642, 'false_max': 226, 'false_minus_swap_max': 30, 'lead': False}
+- blc23 SUMMARY {'true': 191, 'swap': 232, 'false_mean': 204.35, 'false_sd': 13.062446172137896, 'false_max': 227, 'false_minus_swap_max': 26, 'lead': False}
+- blc24 SUMMARY {'true': 210, 'swap': 225, 'false_mean': 210.85, 'false_sd': 20.550608263504028, 'false_max': 274, 'false_minus_swap_max': 35, 'lead': False}
+- blc25 SUMMARY {'true': 2055, 'swap': 1873, 'false_mean': 2442.85, 'false_sd': 1680.384964078172, 'false_max': 8302, 'false_minus_swap_max': 1522, 'lead': False}
+- blc26 SUMMARY {'true': 2524, 'swap': 2908, 'false_mean': 2283.45, 'false_sd': 1666.8608362727825, 'false_max': 5933, 'false_minus_swap_max': 2308, 'lead': False}
 
 ## Flags
 
 - blc10 (lead True under the rule). Driven by block 1730.242 MHz (true 493, swap 151, false max 150); leaving that block out kills the lead. Per-sample band power there varies by up to ±29% in both S and R scans: wideband bursty interference. Not a candidate.
 - blc14 (lead True under the rule: true 4095, swap 2340, false max 3553). Driven by blocks 2307.2–2317.7 MHz; the top block 2315.600 MHz alone has true 687, swap 10, false max 256, and leaving it out kills the lead (true 3408 against false max 3535). Its 687 candidates are spread densely across the whole 2.1 MHz block. Per-sample band power (pks/bandpow.py, 50k-channel slices) at 2310.0, 2314.5, 2316.9 and 2330.0 MHz swings from −24% to +279% in both S and R scans, with the largest excursions in R1; at 2360.0 MHz it holds within ±3%. Wideband time-variable interference across about 2307–2330 MHz, the same pattern as blc10. Not a candidate.
+
+## Final tally
+
+All 22 nodes (704-3648 MHz) complete. The rule flagged blc10 and blc14; both are wideband interference (above). Every other node: no lead.
