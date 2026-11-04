@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-04T16:23:28Z",
+  "regenerated_at": "2026-11-04T21:11:10Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "4f17ad86b587d448d166aee5845a84ce4523d5d32c5c4f9d12fce18d9d29caf4",
+    "mm-main-capture": "b1f3da318d49adf6eab52922f5f5a9b36ddeacfa5e73aad0af6d65ade6da4550",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2703,
-  "total_observations": 1260,
+  "total_addresses": 2704,
+  "total_observations": 1261,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 950,
+    "observed_address": 951,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1823,
+    "unmatched": 1824,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -34997,6 +34997,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-17",
       "latest_status": "SPXI AGAINST AEO FROM THE SEPTEMBER TABLE — 'PERMANENT (DOI-ANCHORED)'"
+    },
+    "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org": {
+      "canonical_query": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-04",
+          "status": "WEIRD FINDS, FIRST OF THE DAY — A DOMAIN PIPELINE READS THE LIBRARY THREE DAYS OLD: THE VOICE, THE REMOVAL IT ANSWERS, THE PRINCIPLES, THE AXN AS A SCHEME",
+          "surface": "Domain Arrivals (generated card)",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "domainarrivals-alexanarch-org-20261104",
+          "gallery_url": "https://www.alexanarch.org/captures/#domainarrivals-alexanarch-org-20261104",
+          "record_url": "https://www.alexanarch.org/captures/domainarrivals-alexanarch-org-20261104/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#domainarrivals-alexanarch-org-20261104",
+          "details_excerpt": "GENERATED CARD, 2026-06-22: Domain Arrivals' language-model pipeline, sifting about a thousand newly registered domains, ranks alexanarch.org first of its Weird Finds (score 78.0) three days after the library's founding,"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "institution",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch, the library (Lee Sharks), founded 2026-06-19. Recorded 2026-11-04."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-04",
+      "latest_status": "WEIRD FINDS, FIRST OF THE DAY — A DOMAIN PIPELINE READS THE LIBRARY THREE DAYS OLD: THE VOICE, THE REMOVAL IT ANSWERS, THE PRINCIPLES, THE AXN AS A SCHEME"
     },
     "https://huggingface.co/datasets/leesharks/the-final-time": {
       "canonical_query": "https://huggingface.co/datasets/leesharks/the-final-time",
