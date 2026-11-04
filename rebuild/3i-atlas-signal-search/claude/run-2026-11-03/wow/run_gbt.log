@@ -1,0 +1,16 @@
+0013 0 1400.2 true 0 swap 4
+0013 1 1402.6000000000001 true 0 swap 3
+0013 2 1405.0 true 0 swap 1
+0013 3 1407.4 true 1 swap 3
+0013 4 1409.8 true 0 swap 3
+0013 5 1412.2 true 0 swap 2
+0013 6 1414.6000000000001 true 0 swap 1
+0013 7 1417.0 true 0 swap 2
+0013 8 1419.4 true 0 swap 4
+0013 9 1421.8 true 0 swap 4
+0013 10 1424.2 true 0 swap 2
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/97be5201-55d8-50c9-b9d9-c76c8dde5ac6/scratchpad/seti/wow/wow_gbt.py", line 51, in <module>
+    j = np.arange(c0, c1); mask = (j % 1024 >= 1020) | (j % 1024 <= 3) | (np.abs(j % 1024 - 512) <= 2); r[:, mask] = 0
+                                                                                                        ~^^^^^^^^^
+IndexError: boolean index did not match indexed array along axis 1; size of axis is 0 but size of corresponding boolean axis is 838
