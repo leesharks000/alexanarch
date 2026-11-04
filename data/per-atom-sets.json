@@ -11,8 +11,8 @@
   "data/fleet-domains.json"
  ],
  "rule": "Measurement Sovereignty (#1530 §2.3): tokens from externally checkable objects only. Applicability per atom: required (scored), inapplicable (not scored), unknown (the record does not state it: not scored, listed as the record's gap)",
- "count": 541,
- "with_atom_set": 537,
+ "count": 545,
+ "with_atom_set": 541,
  "entities": [
   {
    "id": "ENT-2892e86fb5",
@@ -179833,6 +179833,968 @@
    "external": false,
    "state": "intake pass (rubric v1.1) 2026-11-02, reader in session",
    "state_d": "intake pass (rubric v1.1) 2026-11-02, reader in session"
+  },
+  {
+   "id": "TGT-ea-mpai-semantic-warfare-01-v1-1",
+   "name": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.1)",
+   "template": "work",
+   "type_basis": "v1.1 (#1724) of the work read by TGT-ea-mpai-semantic-warfare-01 (v1.0, #1723), which it supersedes; the same atoms, with v1.1's identifier and chain and its text as locus.",
+   "records": [
+    {
+     "deposit": 1724,
+     "title_quote": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.1)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Rex Fraction",
+      "Sharks, Lee",
+      "Fraction, Rex"
+     ],
+     "reference": "Lee Sharks and Rex Fraction",
+     "evidence": [
+      {
+       "record_quote": "Lee Sharks (ORCID 0009-0000-1599-0703) and Rex Fraction",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Layer Is a Party",
+      "EA-MPAI-SEMANTIC-WARFARE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.1)",
+       "locus": "data/registry.json #1724"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-10-31",
+      "31 October 2026",
+      "October 31, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "2026-10-31",
+       "locus": "data/registry.json #1724"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The phrase has many users and the packet claims none of their uses; it gives the earliest located attestation of each configuration the archive contributes, the composition layer as an actor.",
+     "evidence": [
+      {
+       "record_quote": "The archive claims neither the phrase, nor the concept of meaning as contested ground, nor the mechanisms the field names.",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Ontological Economy",
+      "Autonomous Semantic Warfare",
+      "Semantic Economy"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Ontological Economy (#1634) supplies the mechanics of the added actor's conduct and their costs.",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "captures",
+      "AXN:0B45",
+      "AXN:0B44",
+      "AXN:0B46",
+      "composition-source audit"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The four captures of 2026-10-31 and the capture of 2026-06-15, with transcripts.",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To attribute each use of the phrase to its source by four relations of priority, describe the contemporary frameworks at their own grain, and state the proposition that the composing layer is a party and a terrain, with its findings bounded and its hypothesis registered.",
+     "evidence": [
+      {
+       "record_quote": "It attributes each use to its source, records the documented antecedents, describes the contemporary frameworks at their own grain",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A declared adversary with published rules of engagement; claims made contestable by stated evidence, neighbouring objects, prior-art conditions and registered observations; the warfare classification left open under #100's threshold.",
+     "evidence": [
+      {
+       "record_quote": "It is a declared adversary with published rules of engagement",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Volosinov",
+      "Vološinov",
+      "Eco",
+      "Libicki",
+      "#100",
+      "Field Manual",
+      "#230"
+     ],
+     "reference": "the critical tradition (Volosinov, Eco), the security tradition (Libicki), and the archive's line (#230, #295, the Field Manual, #100, #1634).",
+     "evidence": [
+      {
+       "record_quote": "Sign becomes an arena of the class struggle.",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "AXN:0B4D",
+      "#1724",
+      "1724"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AXN:0B4D.MPAI.🧡🟤🔐👉🤝🔧",
+       "locus": "data/registry.json #1724"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1723",
+      "v1.0",
+      "#100",
+      "#1677",
+      "EA-MPAI-AUTONOMOUS-WARFARE-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "supersedes v1.0 (#1723)",
+       "locus": "data/texts/AXN-0B4D-text.md"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-11-04 at intake: the atoms of TGT-ea-mpai-semantic-warfare-01 carried to v1.1 (#1724), each quote checked in v1.1's text.",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-11-04, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-11-04, reader in session"
+  },
+  {
+   "id": "TGT-ea-legitimately-many-01",
+   "name": "Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.0)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Theoretical paper; reception history with a locus table and SPXI packet': a work, read on the work template.",
+   "records": [
+    {
+     "deposit": 1733,
+     "title_quote": "Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "Lee Sharks",
+     "evidence": [
+      {
+       "record_quote": "Lee Sharks, ORCID 0009-0000-1599-0703",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Legitimately Many",
+      "EA-LEGITIMATELY-MANY-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.0)",
+       "locus": "data/registry.json #1733"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-11-03",
+      "3 November 2026",
+      "November 3, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "deposited 2026-11-03 under CC BY 4.0",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A record, locus by locus, of how the reading of several makers was closed; the hypothesis of one maker stated apart and not proved by the reception history; the study does not decide authorship.",
+     "evidence": [
+      {
+       "record_quote": "The study does not decide authorship.",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      },
+      {
+       "record_quote": "stated, and not proved by the reception history",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "embrittlement",
+      "instruments of legitimacy",
+      "instrument of legitimacy",
+      "legitimately many",
+      "second coding"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "hardening by repetition across media until numbering, headings and reference works carry the separation without argument",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "112 loci",
+      "112",
+      "locus table",
+      "loci"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "112 loci, each phrase located in its seat",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To record how the reading of the corpus as several makers was closed: set by filing before argument, defended when challenged, kept in its count through every reassignment, and carried across media.",
+     "evidence": [
+      {
+       "record_quote": "A record, locus by locus, of how the reading of several makers was closed",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      },
+      {
+       "record_quote": "the frame of several makers was set by filing before anyone argued it",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The positions are real positions opposed with consequence and recognizing one maker undoes none of their work; no claim of hoax, forgery or deception; sources publicly obtainable (the commons rule), with what lies outside declared.",
+     "evidence": [
+      {
+       "record_quote": "The study makes no claim of hoax, forgery or deception.",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Many and One",
+      "#1576",
+      "#1583",
+      "#1588",
+      "authorship investigation"
+     ],
+     "reference": "The reception-history wing of the authorship investigation: extends Many and One (#1576), the hinge (#1583, corrected) and the MPAI #1588.",
+     "evidence": [
+      {
+       "record_quote": "from the production question to the reception question",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1733",
+      "AXN:0BE7",
+      "1733",
+      "0BE7"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "This study is deposit #1733 in the Crimson Hexagonal Archive, AXN:0BE7",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1734",
+      "EA-MPAI-LEGITIMATELY-MANY-01",
+      "companion metadata packet",
+      "#1730",
+      "#1732"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-MPAI-LEGITIMATELY-MANY-01, the companion metadata packet for AI indexing (the next deposit)",
+       "locus": "data/texts/AXN-0BE7-text.md"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-11-04 at intake from #1733's text and record.",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-11-04, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-11-04, reader in session"
+  },
+  {
+   "id": "TGT-revelation-first-article-1735",
+   "name": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles (#1735)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Theoretical paper; journal article (Provenance: Journal of Forensic Semiotics)': a work, read on the work template; distinct from the concept set Revelation First (ENT-33ba83c1d6).",
+   "records": [
+    {
+     "deposit": 1735,
+     "title_quote": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Johannes Sigil",
+      "Damascus Dancings",
+      "Sigil, Johannes",
+      "Lee Sharks"
+     ],
+     "reference": "Johannes Sigil and Damascus Dancings (heteronyms; legal author Lee Sharks)",
+     "evidence": [
+      {
+       "record_quote": "Johannes Sigil and Damascus Dancings · *Provenance: Journal of Forensic Semiotics* · 3 November 2026",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Revelation First: Literary Genealogy",
+      "Missing Ancestors of the Epistles"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles",
+       "locus": "data/registry.json #1735"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-11-03",
+      "3 November 2026",
+      "November 3, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "3 November 2026",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Three claims kept apart (absolute, corpus, generative priority); two executed results; absolute priority a priced hypothesis whose chronological gate is priced, not dissolved.",
+     "evidence": [
+      {
+       "record_quote": "The chronological gate confronting the maximal claim is priced, not dissolved.",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      },
+      {
+       "record_quote": "The article separates three claims collapsed under ‘Revelation First’ – absolute, corpus, and generative priority – and reports two executed results.",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "literary-genealogical test",
+      "ancestry test",
+      "corpus priority",
+      "generative priority",
+      "recoverable ancestry"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "It proposes a literary-genealogical test for the priority question",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Septuagint",
+      "machine census",
+      "seventy thousand",
+      "census",
+      "Apostolic Fathers"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "A machine census of some seventy thousand units of the relevant Greek",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To test one New Testament document as an ancestor and turn Revelation First into a falsifiable research programme with its first arrows drawn.",
+     "evidence": [
+      {
+       "record_quote": "Revelation First becomes a falsifiable research programme with its first arrows drawn.",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "Defeat conditions stated for each claim; the common-source audit run against its best candidates; the gate audited as everything else.",
+     "evidence": [
+      {
+       "record_quote": "with the common-source audit run against its best candidates and defeat conditions stated",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Newton",
+      "Isaac Newton",
+      "#1217",
+      "#202",
+      "#1415"
+     ],
+     "reference": "The question's prehistory (Newton 1733, the Muratorian Fragment) and the archive's line (#202, #1217, #1415).",
+     "evidence": [
+      {
+       "record_quote": "In 1733 Isaac Newton argued that the Apocalypse preceded Hebrews and the Petrine letters",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1735",
+      "AXN:0BE9",
+      "1735",
+      "0BE9"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AXN:0BE9.GENERATIVE.🕙🌔🌳🌊⏬🍀",
+       "locus": "data/registry.json #1735"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Provenance: Journal of Forensic Semiotics",
+      "Journal of Forensic Semiotics",
+      "v6"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "Theoretical paper; journal article (Provenance: Journal of Forensic Semiotics)",
+       "locus": "data/texts/AXN-0BE9-text.md"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-11-04 at intake from #1735's text and record.",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-11-04, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-11-04, reader in session"
+  },
+  {
+   "id": "TGT-ea-sophistry-01",
+   "name": "The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)",
+   "template": "work",
+   "type_basis": "The defining record's content_type is 'Specification (measurement instrument, with a philological reading)': a work, read on the work template.",
+   "records": [
+    {
+     "deposit": 1727,
+     "title_quote": "The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)"
+    }
+   ],
+   "atoms": [
+    {
+     "atom": "author",
+     "dim": "M",
+     "weight": 3,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Lee Sharks",
+      "Sharks, Lee"
+     ],
+     "reference": "Lee Sharks",
+     "evidence": [
+      {
+       "record_quote": "EA-SOPHISTRY-01 v1.0 · Lee Sharks · 2026-11-01",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "title",
+     "dim": "M",
+     "weight": 3,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "The Sophistry Measure",
+      "EA-SOPHISTRY-01"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)",
+       "locus": "data/registry.json #1727"
+      }
+     ]
+    },
+    {
+     "atom": "date",
+     "dim": "M",
+     "weight": 1,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "2026-11-01",
+      "1 November 2026",
+      "November 1, 2026"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "EA-SOPHISTRY-01 v1.0 · Lee Sharks · 2026-11-01",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "claim boundary",
+     "dim": "M",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "A specification preceding implementation: the measure is a structured qualitative result with no scalar, and a finding records and blocks nothing.",
+     "evidence": [
+      {
+       "record_quote": "\"Measure\" here names a structured qualitative result. It has no scalar.",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      },
+      {
+       "record_quote": "A finding records and blocks nothing.",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "framework",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "Sophistical Refutations",
+      "σύμβολα",
+      "X24",
+      "φαινομένη σοφία"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "corpus",
+     "dim": "C",
+     "weight": 2,
+     "kind": "token",
+     "applicability": "required",
+     "tokens": [
+      "27 units",
+      "27 case units",
+      "pilot",
+      "asynthetic synthesis"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "calibration on its 27 units",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "purpose",
+     "dim": "D",
+     "weight": 3,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "To reconstruct, from the texts, how a composition transforms its object while keeping the appearance of carrying it.",
+     "evidence": [
+      {
+       "record_quote": "reconstructs, from the texts, how a composition transforms its object while keeping the appearance of carrying it",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "commitments",
+     "dim": "D",
+     "weight": 2,
+     "kind": "reading",
+     "applicability": "required",
+     "tokens": [],
+     "reference": "The archive's own targets, repairs and services held to the same tests; findings that block nothing.",
+     "evidence": [
+      {
+       "record_quote": "it holds the archive's own targets, repairs and services to the same tests",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "lineage",
+     "dim": "D",
+     "weight": 2,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Obelus Principle",
+      "Obelus",
+      "Zenodotus",
+      "#1",
+      "#1574",
+      "The Particle",
+      "#1469",
+      "#1694"
+     ],
+     "reference": "The Obelus Principle (#1; #1068), The Particle (#1574), PER (#1469, #1694).",
+     "evidence": [
+      {
+       "record_quote": "The Obelus Principle (#1; #1068) takes its name from Zenodotus's mark",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    },
+    {
+     "atom": "identifier",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "#1727",
+      "AXN:0BDC",
+      "1727",
+      "0BDC"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "AXN:0BDC.OPERATIVE.💛🗿🛡️🔖🧬🛸",
+       "locus": "data/registry.json #1727"
+      }
+     ]
+    },
+    {
+     "atom": "deposit chain",
+     "dim": "D",
+     "weight": 1,
+     "kind": "role",
+     "applicability": "required",
+     "tokens": [
+      "Capture Registry",
+      "EA-WG-CAPTURES-01",
+      "PER",
+      "/non",
+      "SPXI-gnΩsis",
+      "v0.2"
+     ],
+     "reference": null,
+     "evidence": [
+      {
+       "record_quote": "It joins the Capture Registry",
+       "locus": "data/texts/AXN-0BDC-text.md"
+      }
+     ]
+    }
+   ],
+   "required": [
+    "author",
+    "title",
+    "date",
+    "claim boundary",
+    "framework",
+    "corpus",
+    "purpose",
+    "commitments",
+    "lineage",
+    "identifier",
+    "deposit chain"
+   ],
+   "inversion_guidance": null,
+   "notes": "Built 2026-11-04 at intake from #1727's text and record. Deposit chain read as the measure's joins (Capture Registry, dossier, PER, /non, SPXI-gnΩsis) and its v0.1/v0.2 drafting.",
+   "external": false,
+   "state": "intake pass (rubric v1.1) 2026-11-04, reader in session",
+   "state_d": "intake pass (rubric v1.1) 2026-11-04, reader in session"
   }
  ],
  "entity_pass": {
@@ -180190,6 +181152,17 @@
    "date": "2026-11-03",
    "brief": "rebuild/capture-registry/intake-20261103-ai-revision/build.py (the parts are authored in parts.py)",
    "new_sets": [],
+   "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
+  },
+  {
+   "date": "2026-11-04",
+   "brief": "rebuild/capture-registry/intake-20261104-arguments/build.py (the parts are authored in parts.py)",
+   "new_sets": [
+    "TGT-ea-legitimately-many-01",
+    "TGT-ea-mpai-semantic-warfare-01-v1-1",
+    "TGT-ea-sophistry-01",
+    "TGT-revelation-first-article-1735"
+   ],
    "checked_by": "scripts/per_backlog.py (record quotes and spans verbatim)"
   }
  ]
