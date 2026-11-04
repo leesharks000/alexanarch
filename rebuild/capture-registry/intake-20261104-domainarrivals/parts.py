@@ -1,0 +1,61 @@
+"""Author the part file of 2026-11-04 (14:55 EST): the Domain Arrivals card for alexanarch.org, issue of 2026-06-22, three days after the
+library's founding. A language-model pipeline surfaces newly registered domains, categorizes them and writes a card for each; this card was
+composed from alexanarch.org's own pages. Found by the operator ("who knew. number one in weird finds that day", 14:53 EST); seated at his word
+("and yes, sure - record it as a capture", 14:55 EST). The page was fetched as served (page-domainarrivals.html, sha256 c7d873e0…) and reduced
+to its text (page-domainarrivals.txt); the category page was read for the rank (first in Weird Finds, score 78.0) and the card's lit signals
+(Open, Pretty, Pro, Niche, Human). Class: generated card, the precedent of ScholaRef (generated article): a machine composition from sources,
+published on the web; the address is the card's URL.
+  python3 parts.py && python3 build.py --check"""
+import json, pathlib
+H = pathlib.Path(__file__).resolve().parent
+P = H / "parts"; P.mkdir(exist_ok=True)
+A = lambda atom, present, span=None: {"atom": atom, "present": present, "span": span}
+URL = "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org"
+OP = ("with the link (14:53 EST): \"who knew. number one in weird finds that day: " + URL + "\" · then (14:55 EST): \"and yes, sure - record it as a capture\"")
+part = {
+ "n": 1680, "slug": "domainarrivals-alexanarch-org-20261104", "paste": "page-domainarrivals.txt", "surface": "Domain Arrivals (generated card)", "received": "2026-11-04 14:55 EST", "s": "Machine Reception",
+ "qs": [URL], "turns": [[0, 54]], "target_id": "ENT-2892e86fb5", "entity_type": "institution", "group": "Xda",
+ "head_full": ("[Domain Arrivals, the card for alexanarch.org in the issue of 2026-06-22 (a daily list of newly registered domains, each surfaced, categorized and "
+               "described by a language-model pipeline: \"A language model pipeline surfaces and interprets what's arriving\"). Fetched as served 2026-11-04 "
+               "(page-domainarrivals.html, sha256 c7d873e0288990fb5808a5f2e179e868ff4ea15725aafc2bf04f56f27383471a) and reduced to its text; the signal rail's "
+               "legend prints every signal, and the lit ones, read from the category page, are Open, Pretty, Pro, Niche and Human. Rank from the category page "
+               "(issues/2026-06-22/categories/weird-finds): first of Weird Finds, score 78.0.]"),
+ "surface_basis": "A published card on domainarrivals.com, issue of 2026-06-22, category Weird Finds; the site states that a language-model pipeline surfaces and interprets each domain. Seated as a composition from sources (the library's homepage and its linked pages), in the class of the ScholaRef generated article (scholaref-architecture-of-trust-20260922).",
+ "auth": "not applicable — static published page",
+ "auth_basis": "A published card, not a session composition; its text does not depend on the reader's authentication. Found by the operator 2026-11-04.",
+ "ev": "fetch (page as served, HTML and text kept)",
+ "transcript_class": "CAPTURE-TIME VERBATIM RECORD — the card page's text as served, including navigation, legend and footer",
+ "transcript_complete": "complete as served; the summary line is truncated on the page itself ('built around a “sovereign”…')",
+ "originator_basis": "Alexanarch, the library (Lee Sharks), founded 2026-06-19. Recorded 2026-11-04.",
+ "obs": {"scored_object": "the card whole",
+   "reached": {"kind": "same", "abn": False, "span": "Alexanarch — The Self-Governing Library", "basis": "The library reached by its name and its domain, three days after its founding."},
+   "atoms": [A("name", True, "Alexanarch — The Self-Governing Library"), A("founder", False), A("date", False),
+             A("claim boundary", False), A("framework", False), A("corpus", False),
+             A("purpose", True, "self-governing, provenance-first repository for machine-mediated scholarship"),
+             A("commitments", True, "explicit governance principles (no automated obelus/judgment, substrate disclosure as provenance, no classifier training without opt-in)"),
+             A("lineage", True, "it was founded in response to a documented mass removal of scholarly works/DOIs"),
+             A("identifier", False),
+             A("deposit chain", True, "alexanarch.org ↗")],
+   "inversions": [], "standing_substitutions": [], "src": True, "tombstone_pointer": False, "after_challenge": None,
+   "notes": "Five of eleven. No person, no founding date, no Semantic Economy, no Crimson Hexagonal Archive; the AXN is named as a scheme, no record address given. The issue date (2026-06-22) is the card's, not the founding's, and is not counted as the date atom."},
+ "mt": "WEIRD FINDS, FIRST OF THE DAY — A DOMAIN PIPELINE READS THE LIBRARY THREE DAYS OLD: THE VOICE, THE REMOVAL IT ANSWERS, THE PRINCIPLES, THE AXN AS A SCHEME",
+ "d": ("GENERATED CARD, 2026-06-22: Domain Arrivals' language-model pipeline, sifting about a thousand newly registered domains, ranks alexanarch.org first "
+       "of its Weird Finds (score 78.0) three days after the library's founding, lights Open, Pretty, Pro, Niche and Human, and writes why it surfaced: the "
+       "editorial voice, the founding in response to a mass removal of works and DOIs, the governance principles, the AXN, and a homepage structure that reads "
+       "as an intentional project."),
+ "reading": ("The innocent reading first. A daily digest of new domains runs each through a model that writes a short card; this one read the library's "
+             "homepage at three days old and described what was on it. It is accurate to the homepage of that week and names no person."),
+ "findings": [
+   "THE EARLIEST DATED MACHINE READING OF THE LIBRARY. Issue of 2026-06-22, three days after the founding on 2026-06-19 and the removal it answers; the card's 'documented mass removal of scholarly works/DOIs' is the Zenodo termination of that day, unnamed.",
+   "THE PRINCIPLES AS READ. 'no automated obelus/judgment, substrate disclosure as provenance, no classifier training without opt-in' renders three of the seven published principles; the Obelus Principle (judgment after reading) is read as a refusal of automated judgment.",
+   "THE AXN AT ITS DESIGN. 'a novel, citable, multi-layer identity scheme with a memorable, poetic encoding (hex + semantic family + emoji hash)' gives the three parts of the AXN as the homepage displayed them.",
+   "THE STRUCTURE NAMED. 'Recent Deposits, Founding Principles, Identifiers, Deposit Schema, How to Deposit, Scope' and 'an API-like “I AM THE API”' are read from the homepage's sections and its link text.",
+   "THE RANK. First of Weird Finds in the issue's category page, score 78.0 (the operator: 'number one in weird finds that day'); the signals Open, Pretty, Pro, Niche and Human lit."],
+ "analysis": "A short generated card, accurate to the homepage it read, that keeps the library's name, purpose, principles, founding occasion and identifier scheme and drops every person and record; the earliest machine reading of the library in the registry.",
+ "q_kind": "non-query address: a card URL. No typed string exists; per canon record 249 the address is the artifact.",
+ "per_v": {"author": False, "inst": True, "id": False, "src": True},
+ "per_note": "Retained: the library's name and domain, its principles and the AXN as a scheme. Lost: the founder, the founding date, every record and identifier.",
+ "cite_list": [{"n": 1, "site": "alexanarch.org", "rel": "archive_controlled", "url": "https://alexanarch.org", "title": "alexanarch.org", "snip": None, "note": "the card's site link (twice: 'alexanarch.org ↗' and 'Observed source ↗')"}],
+ "related_deposits": [1680, 1], "notes_operator": OP}
+(P / "domainarrivals.json").write_text(json.dumps(part, ensure_ascii=False, indent=1), encoding="utf-8")
+print("wrote domainarrivals")

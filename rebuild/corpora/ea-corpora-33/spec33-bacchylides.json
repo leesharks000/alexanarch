@@ -1,0 +1,61 @@
+{
+ "corpus": "bacchylides",
+ "seat": "EA-CORPORA-33/03",
+ "title": "Bacchylides, the epinicians and dithyrambs, in Jebb's Greek (Cambridge, 1905)",
+ "language": "grc",
+ "fetched": "2026-11-04",
+ "license": {
+  "payload": "Bacchylides is public domain. Jebb's Bacchylides: The Poems and Fragments (Cambridge: Cambridge University Press, 1905) is public domain everywhere; Jebb died in 1905. The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "Originals as fetched under original/, pinned to a commit of the repository named in origin.items. text/<slug>.txt is the TEI reduced to plain text by seat.py (rebuild/corpora/ea-corpora-27), notes and apparatus dropped, divisions kept. No text was corrected by hand.",
+ "items": [
+  {
+   "kind": "tei",
+   "slug": "epinicians",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/282e6f5a3ec12e6ca67e44cd4fa3487526e3b421/data/tlg0199/tlg001/tlg0199.tlg001.perseus-grc2.xml",
+   "path": "perseus/tlg0199.tlg001.perseus-grc2.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "282e6f5a3ec12e6ca67e44cd4fa3487526e3b421",
+   "file": "data/tlg0199/tlg001/tlg0199.tlg001.perseus-grc2.xml",
+   "work": "Bacchylides, Epinicians, ed. R. C. Jebb (Cambridge, 1905) — Perseus TEI tlg0199.tlg001.perseus-grc2"
+  },
+  {
+   "kind": "tei",
+   "slug": "dithyrambs",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/282e6f5a3ec12e6ca67e44cd4fa3487526e3b421/data/tlg0199/tlg002/tlg0199.tlg002.perseus-grc2.xml",
+   "path": "perseus/tlg0199.tlg002.perseus-grc2.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "282e6f5a3ec12e6ca67e44cd4fa3487526e3b421",
+   "file": "data/tlg0199/tlg002/tlg0199.tlg002.perseus-grc2.xml",
+   "work": "Bacchylides, Dithyrambs, ed. R. C. Jebb (Cambridge, 1905) — Perseus TEI tlg0199.tlg002.perseus-grc2"
+  }
+ ],
+ "loci": [
+  {
+   "label": "Ode 3, Croesus on the pyre",
+   "text": "text/epinicians.txt",
+   "find": "Κροῖσον ὁ χρυσά[ορος"
+  },
+  {
+   "label": "Dithyramb 17 (Theseus), the ship carrying Theseus and the twice seven",
+   "text": "text/dithyrambs.txt",
+   "find": "Θησέα δὶς ἑπτά τʼ ἀγλαοὺς ἄγουσα"
+  }
+ ],
+ "scope": "The fourteen epinicians and six dithyrambs of the London papyrus (published 1897), in Jebb's text.",
+ "why_seated": "Bacchylides came back from the sand in 1897; his seat stands beside the fragments of the others as the melic canon's second recovered book.",
+ "research": {
+  "study": "The Portents Before the Fall: Josephus, Tacitus and the Apocalypse (#1737) and the Sappho line (Sappho 31, the reception operator of #1494–#1495)",
+  "design": "rebuild/corpora/ea-corpora-33/NOTE.md",
+  "draft": "drafts/THREE-WITNESSES-PORTENTS-draft-2026-11-04.md",
+  "locus_table": "the correspondence table of #1737 §4",
+  "owed_at": "the operator's requests of 2026-11-04",
+  "for": "the melic canon, requested whole"
+ },
+ "spine": "EA-CORPORA-33",
+ "ruling": "Lee Sharks, 2026-11-04: \"and I suppose we should seat tacitus\" (11:28 EST); \"we currently have only sappho 31 i believe. we need all sappho and all the melic poets. what an oversight. they can go together with tacitus, song and silence at one seat\" (11:29 EST); \"corinna definitely... im not familiar with telesilla or the carmina popularia but yet lets seat the\" (11:46 EST); on Edmonds, \"yes, lets seat it with the statement\" (11:54 EST).",
+ "seating": "EA-CORPORA-33, the thirty-third seating: song and silence — Tacitus, and Sappho whole with the melic poets, 2026-11-04"
+}

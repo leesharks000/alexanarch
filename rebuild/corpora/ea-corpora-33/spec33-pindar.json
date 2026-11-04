@@ -1,0 +1,86 @@
+{
+ "corpus": "pindar",
+ "seat": "EA-CORPORA-33/02",
+ "title": "Pindar, the four books of victory odes (Olympian, Pythian, Nemean, Isthmian), in Sandys's Greek (Loeb Classical Library)",
+ "language": "grc",
+ "fetched": "2026-11-04",
+ "license": {
+  "payload": "Pindar is public domain. Sandys's Greek text (The Odes of Pindar, Loeb Classical Library, 1915; the Perseus file follows the 1937 printing) is public domain in the European Union (Sandys died 1922). The TEI is the Perseus Digital Library's, CC BY-SA 4.0, redistributed under the same licence and attributed to Perseus.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "Originals as fetched under original/, pinned to a commit of the repository named in origin.items. text/<slug>.txt is the TEI reduced to plain text by seat.py (rebuild/corpora/ea-corpora-27), notes and apparatus dropped, divisions kept. No text was corrected by hand.",
+ "items": [
+  {
+   "kind": "tei",
+   "slug": "olympian",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/282e6f5a3ec12e6ca67e44cd4fa3487526e3b421/data/tlg0033/tlg001/tlg0033.tlg001.perseus-grc2.xml",
+   "path": "perseus/tlg0033.tlg001.perseus-grc2.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "282e6f5a3ec12e6ca67e44cd4fa3487526e3b421",
+   "file": "data/tlg0033/tlg001/tlg0033.tlg001.perseus-grc2.xml",
+   "work": "Pindar, Olympian Odes, ed. J. Sandys (Loeb) — Perseus TEI tlg0033.tlg001.perseus-grc2"
+  },
+  {
+   "kind": "tei",
+   "slug": "pythian",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/282e6f5a3ec12e6ca67e44cd4fa3487526e3b421/data/tlg0033/tlg002/tlg0033.tlg002.perseus-grc2.xml",
+   "path": "perseus/tlg0033.tlg002.perseus-grc2.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "282e6f5a3ec12e6ca67e44cd4fa3487526e3b421",
+   "file": "data/tlg0033/tlg002/tlg0033.tlg002.perseus-grc2.xml",
+   "work": "Pindar, Pythian Odes, ed. J. Sandys (Loeb) — Perseus TEI tlg0033.tlg002.perseus-grc2"
+  },
+  {
+   "kind": "tei",
+   "slug": "nemean",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/282e6f5a3ec12e6ca67e44cd4fa3487526e3b421/data/tlg0033/tlg003/tlg0033.tlg003.perseus-grc2.xml",
+   "path": "perseus/tlg0033.tlg003.perseus-grc2.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "282e6f5a3ec12e6ca67e44cd4fa3487526e3b421",
+   "file": "data/tlg0033/tlg003/tlg0033.tlg003.perseus-grc2.xml",
+   "work": "Pindar, Nemean Odes, ed. J. Sandys (Loeb) — Perseus TEI tlg0033.tlg003.perseus-grc2"
+  },
+  {
+   "kind": "tei",
+   "slug": "isthmian",
+   "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/282e6f5a3ec12e6ca67e44cd4fa3487526e3b421/data/tlg0033/tlg004/tlg0033.tlg004.perseus-grc2.xml",
+   "path": "perseus/tlg0033.tlg004.perseus-grc2.xml",
+   "source": "Perseus Digital Library, canonical-greekLit",
+   "repository": "https://github.com/PerseusDL/canonical-greekLit",
+   "commit": "282e6f5a3ec12e6ca67e44cd4fa3487526e3b421",
+   "file": "data/tlg0033/tlg004/tlg0033.tlg004.perseus-grc2.xml",
+   "work": "Pindar, Isthmian Odes, ed. J. Sandys (Loeb) — Perseus TEI tlg0033.tlg004.perseus-grc2"
+  }
+ ],
+ "loci": [
+  {
+   "label": "Ol. 1.1, the opening of the first ode",
+   "text": "text/olympian.txt",
+   "find": "ἄριστον μὲν ὕδωρ, ὁ δὲ χρυσὸς αἰθόμενον πῦρ"
+  },
+  {
+   "label": "Pyth. 8.95–96, the dream of a shadow",
+   "text": "text/pythian.txt",
+   "find": "σκιᾶς ὄναρ"
+  }
+ ],
+ "scope": "The four books of epinicians entire. The fragments (paeans, dithyrambs, partheneia, threnoi) are not in the Perseus files; they are queued to Bergk's Poetae Lyrici Graeci, 4th edition, vol. I (1878).",
+ "why_seated": "Pindar is the ninth of the nine lyric poets and the only one whose books survive; the seat carries the canon whose other members survive in fragments.",
+ "research": {
+  "study": "The Portents Before the Fall: Josephus, Tacitus and the Apocalypse (#1737) and the Sappho line (Sappho 31, the reception operator of #1494–#1495)",
+  "design": "rebuild/corpora/ea-corpora-33/NOTE.md",
+  "draft": "drafts/THREE-WITNESSES-PORTENTS-draft-2026-11-04.md",
+  "locus_table": "the correspondence table of #1737 §4",
+  "owed_at": "the operator's requests of 2026-11-04",
+  "for": "the melic canon, requested whole"
+ },
+ "spine": "EA-CORPORA-33",
+ "ruling": "Lee Sharks, 2026-11-04: \"and I suppose we should seat tacitus\" (11:28 EST); \"we currently have only sappho 31 i believe. we need all sappho and all the melic poets. what an oversight. they can go together with tacitus, song and silence at one seat\" (11:29 EST); \"corinna definitely... im not familiar with telesilla or the carmina popularia but yet lets seat the\" (11:46 EST); on Edmonds, \"yes, lets seat it with the statement\" (11:54 EST).",
+ "seating": "EA-CORPORA-33, the thirty-third seating: song and silence — Tacitus, and Sappho whole with the melic poets, 2026-11-04",
+ "queued": [
+  "Pindar's fragments in Bergk, PLG⁴ I (1878), public domain: not OCR'd this session"
+ ]
+}
