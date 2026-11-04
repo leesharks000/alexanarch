@@ -20,10 +20,10 @@ part = {
                "(page-domainarrivals.html, sha256 c7d873e0288990fb5808a5f2e179e868ff4ea15725aafc2bf04f56f27383471a) and reduced to its text; the signal rail's "
                "legend prints every signal, and the lit ones, read from the category page, are Open, Pretty, Pro, Niche and Human. Rank from the category page "
                "(issues/2026-06-22/categories/weird-finds): first of Weird Finds, score 78.0.]"),
- "surface_basis": "A published card on domainarrivals.com, issue of 2026-06-22, category Weird Finds; the site states that a language-model pipeline surfaces and interprets each domain. Seated as a composition from sources (the library's homepage and its linked pages), in the class of the ScholaRef generated article (scholaref-architecture-of-trust-20260922).",
+ "surface_basis": "A published card on domainarrivals.com, issue of 2026-06-22, category Weird Finds; the site states that a language-model pipeline surfaces and interprets each domain. Seated as a composition from sources (the library's homepage and its linked pages), in the class of the ScholaRef generated article (scholaref-architecture-of-trust-20260922). The evidence is the session's own fetch of the page at the operator's link, HTML and text kept (ev: agent run).",
  "auth": "not applicable — static published page",
  "auth_basis": "A published card, not a session composition; its text does not depend on the reader's authentication. Found by the operator 2026-11-04.",
- "ev": "fetch (page as served, HTML and text kept)",
+ "ev": "agent run",
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD — the card page's text as served, including navigation, legend and footer",
  "transcript_complete": "complete as served; the summary line is truncated on the page itself ('built around a “sovereign”…')",
  "originator_basis": "Alexanarch, the library (Lee Sharks), founded 2026-06-19. Recorded 2026-11-04.",
