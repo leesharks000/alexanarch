@@ -1,1 +1,687 @@
-{"plan_sha256": "e0754a9a4bb3081329bbb4f9529c258909f09984af8b1e0f0804b57d433b26c5", "inst": "gbt", "df_Hz": 2.7939677238464355, "centers": {"target": {"f0": 2380.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}, "ctl6": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}, "ctl7": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}, "ctl6": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}, "ctl7": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}, "ctl6": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}, "ctl7": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k-10": {"f0": 2370.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k-8": {"f0": 2372.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k-6": {"f0": 2374.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k-4": {"f0": 2376.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k-2": {"f0": 2378.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k+2": {"f0": 2382.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}, "k+4": {"f0": 2384.0, "frames": {"topo": {"target": {"true": {"persistent": [], "single": [{"scan": 0, "sample": 42, "u": 1398, "off_Hz": 3906.0, "D": 5.68}, {"scan": 2, "sample": 11, "u": 1398, "off_Hz": 3906.0, "D": 6.74}], "count": 2}, "swap": {"persistent": [], "single": [{"scan": 1, "sample": 48, "u": 1411, "off_Hz": 3942.3, "D": 5.29}], "count": 1}}}, "comet": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}, "bary": {"target": {"true": {"persistent": [], "single": [], "count": 0}, "swap": {"persistent": [], "single": [], "count": 0}}}}}}}
+{
+ "plan_sha256": "e0754a9a4bb3081329bbb4f9529c258909f09984af8b1e0f0804b57d433b26c5",
+ "inst": "gbt",
+ "df_Hz": 2.7939677238464355,
+ "centers": {
+  "target": {
+   "f0": 2380.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     },
+     "ctl6": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     },
+     "ctl7": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     },
+     "ctl6": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     },
+     "ctl7": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     },
+     "ctl6": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     },
+     "ctl7": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k-10": {
+   "f0": 2370.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k-8": {
+   "f0": 2372.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k-6": {
+   "f0": 2374.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k-4": {
+   "f0": 2376.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k-2": {
+   "f0": 2378.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k+2": {
+   "f0": 2382.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k+4": {
+   "f0": 2384.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [
+        {
+         "scan": 0,
+         "sample": 42,
+         "u": 1398,
+         "off_Hz": 3906.0,
+         "D": 5.68
+        },
+        {
+         "scan": 2,
+         "sample": 11,
+         "u": 1398,
+         "off_Hz": 3906.0,
+         "D": 6.74
+        }
+       ],
+       "count": 2
+      },
+      "swap": {
+       "persistent": [],
+       "single": [
+        {
+         "scan": 1,
+         "sample": 48,
+         "u": 1411,
+         "off_Hz": 3942.3,
+         "D": 5.29
+        }
+       ],
+       "count": 1
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k+6": {
+   "f0": 2386.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k+8": {
+   "f0": 2388.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  },
+  "k+10": {
+   "f0": 2390.0,
+   "frames": {
+    "topo": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "comet": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    },
+    "bary": {
+     "target": {
+      "true": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      },
+      "swap": {
+       "persistent": [],
+       "single": [],
+       "count": 0
+      }
+     }
+    }
+   }
+  }
+ },
+ "summary": {
+  "topo": {
+   "target": 0,
+   "swap": 0,
+   "freq_controls": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   "spacing_controls": [
+    0,
+    0
+   ],
+   "persistent": 0,
+   "lead": false
+  },
+  "comet": {
+   "target": 0,
+   "swap": 0,
+   "freq_controls": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "spacing_controls": [
+    0,
+    0
+   ],
+   "persistent": 0,
+   "lead": false
+  },
+  "bary": {
+   "target": 0,
+   "swap": 0,
+   "freq_controls": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "spacing_controls": [
+    0,
+    0
+   ],
+   "persistent": 0,
+   "lead": false
+  }
+ }
+}
