@@ -96,7 +96,7 @@ e1 = {"slug": "3i-atlas-signal-studies-aio-20261104", "date": DATE, "surface": "
       "d": d1, "reading": reading1, "findings": findings1, "analysis": analysis1,
       "per_v": {"author": False, "inst": True, "id": False, "src": True},
       "per_note": "Retained: the facilities (Allen Telescope Array, Green Bank, MeerKAT, Gemini-South, IRTF, Breakthrough Listen) and two source chips. Lost: every author and every paper. The boundary loss is dimensional and recorded in the findings.",
-      "per_dim_pending": {"since": DATE, "reason": "no atom set yet for the 3I/ATLAS radio technosignature searches as a target; the draft's §2 and §5 hold the filters an atom set would be built from"},
+      "per_dim_pending": {"since": DATE, "reason": "no atom set yet for the 3I/ATLAS radio technosignature searches as a target; the draft's §2 and §5 hold the filters an atom set would be built from", "breach": False},
       "originator": {"name": "Breakthrough Listen and collaborators (the 3I/ATLAS radio searches)", "relation": "external", "entity_type": "institution", "spxi_treatment": "partial",
                      "basis": "Not the archive's: the published searches (Sheikh et al., arXiv:2512.18142v2; the Green Bank search, arXiv:2512.19763v1) and the spectroscopy cited. The archive's own reading of the searches is the unpublished draft drafts/3I-ATLAS-SIGNAL-SEARCH-draft-2026-11-03.md. Recorded 2026-11-04."},
       "related_deposits": [1574],
@@ -160,7 +160,10 @@ findings2 = [
     "THE COMPOSER'S PROGRAMME. '" + P2["levels"] + "' The four levels (training, interpretive, institutional, epistemic) and the six open questions are "
     "the composer's arrangement, offered as the shape of the research programme; the records do not set them out in that form.",
     "THE BOUNDARY HELD. '" + P2["qual"] + "' The claim boundary of #1574 survives the composition, with the distinction from the technical literature "
-    "on generative model collapse. One item does not resolve: '" + P2["dataset"] + "', named without a link or record number.",
+    "on generative model collapse. The fourth primary document, '" + P2["dataset"] + "', is the library's dataset on Hugging Face, "
+    "leesharks/model-collapse-anti-collapse (listed among the fifteen leesharks datasets, 2026-11-04), named here by its title without a link; it is in "
+    "the registry already, at leesharks-hf-datasets-negative-of-the-negative-aimode-20260917, mantle-bearing-hf-url-chatgpt-20260930, "
+    "alexanarch-on-model-collapse-aio-20261010 and inventory-leesharks-datasets-hf-as-literature-chatgpt-20261016.",
     "SMALLEST REPAIR. 'The Particle (#1574) put one sentence of the Sophistical Refutations through twenty rounds of review across four commercial "
     "models and eleven configurations; Meaning Feudalism at the Discovery Layer (#1714) defines provenance slush, position as institutional commodity "
     "form, positional allocation and the preemptive shepherd boycott.' COUNTERTEST: rerun this address on the Overview and on AI Mode."]
@@ -180,12 +183,82 @@ e2 = {"slug": "disciplinary-model-collapse-current-work-chatgpt-20261104", "date
       "d": d2, "reading": reading2, "findings": findings2, "analysis": analysis2,
       "per_v": {"author": True, "inst": True, "id": True, "src": True},
       "per_note": "Scalar PER at zero: Lee Sharks named on both strands, Alexanarch chipped, deposit numbers and dates given. The losses are at the grain and recorded in the findings.",
-      "per_dim_pending": {"since": DATE, "reason": "no atom set yet for the coinage disciplinary model collapse as a target (the work The Particle has one, TGT-the-particle; the query is to the concept)"},
+      "per_dim_pending": {"since": DATE, "reason": "no atom set yet for the coinage disciplinary model collapse as a target (the work The Particle has one, TGT-the-particle; the query is to the concept)", "breach": False},
       "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "concept", "spxi_treatment": "full",
                      "basis": "The term is defined as the author's in Alexanarch deposit #1574 (Lee Sharks, 2026-09-02) and extended in #1714 (2026-10-27). Recorded 2026-11-04."},
       "related_deposits": [1574, 1714, 1665],
       "notes": {"prompts": "The prompt is the operator's, as given with the paste; the run's hour is not in the paste, the date is the paste's receipt (" + R2 + ").",
-                "operator": "with the paste (" + R2 + "): 'at a general query: Current work on disciplinary model collapse.'"}}
+                "operator": "with the paste (" + R2 + "): 'at a general query: Current work on disciplinary model collapse.' · then (23:14 EST): 'hugging face. important to check for datasets there. model collapse anti collapse is also represented in captures.'",
+                "correction": "Revised 2026-11-04 23:25 EST on the operator's word of 23:14: the sixth finding as first seated called the dataset unresolved, after a search of the library's records alone; it is leesharks/model-collapse-anti-collapse on Hugging Face, and four earlier captures carry it."}}
 
-for e in (e1, e2):
+# ---------------------------------------------------------------- (3) 3i atlas ata drift rate filter (the countertest of (1))
+Q3 = "3i atlas ata drift rate filter"; R3 = "2026-11-04 23:14 EST"
+raw3 = (H / "paste-drift-aio.txt").read_text(encoding="utf-8"); L3 = raw3.split("\n")
+i = next(k for k, l in enumerate(L3) if l.strip() == "AI Overview"); j = next(k for k, l in enumerate(L3) if l.startswith("Would you like"))
+body3 = "\n".join(L3[i + 1:j + 1]).strip()
+P3 = {"open": "researchers applied a drift rate filter of 0.05 to 1.5 Hz/s across all frequencies.",
+      "purpose": "Purpose: To capture the expected frequency shift (acceleration) caused by the relative motion between 3I/ATLAS and Earth, while accounting for uncertainties like potential object rotation or tumbling.",
+      "base": "the calculated minimum drift rate for 3I/ATLAS was approximately 0.15 Hz/s, prompting a middle-ground range to filter out excessive radio frequency interference (RFI) without missing real signals.",
+      "impact": "reduced the initial set of nearly 74 million narrowband hits (detected via the bliss pipeline) down to about 1.9–2 million hits before further localization and visual inspection.",
+      "fast": "(Note: Other observatories like FAST utilized a maximum drift rate up to 2 Hz/s in search routines, corresponding to similar relative acceleration models).",
+      "astro": "reducing the total number of hits by 97.4%"}
+for k, v in P3.items(): assert v in raw3, k
+D3 = {"phys": "A rising range-rate lowers the received frequency, so a positive acceleration gives a negative drift.",
+      "check": "the drift of a constant tone riding on the object is −0.125 Hz/s at 1075 MHz and −0.19 Hz/s at 1623.75 MHz"}
+for k, v in D3.items(): assert v in DRAFT, k
+cards3 = [{"n": n, "site": s, "rel": "third_party", "url": None, "title": s + extra, "snip": None, "note": note} for n, (s, extra, note) in enumerate([
+    ("Berkeley SETI", "", "source chip after the opening sentence; the organic result: Sheikh et al., 'A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the ...', PDF, seti.berkeley.edu"),
+    ("Berkeley SETI", "", "source chip after 'Filtered Range'"),
+    ("Berkeley SETI", " (+1)", "source chip after 'Purpose'; one further source behind the chip"),
+    ("Berkeley SETI", "", "source chip after 'Baseline Calculation'"),
+    ("IOPscience", " (+1)", "source chip after 'Impact'; one further source behind the chip"),
+    ("IOPscience", "", "source chip after the FAST note; the organic result: Li et al., 'Narrowband Radio Technosignature Search Toward 3I/ATLAS with FAST', 2026")], 1)]
+head3 = ("[Google AI Overview at the query, signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). Received " + R3 + ". The address "
+         "is the countertest named in 3i-atlas-signal-studies-aio-20261104. The body runs from the 'AI Overview' label to the follow-up offer; the six source "
+         "chips are kept as pasted. The organic results below the Overview are in the raw transcript.]")
+d3 = ("'3I ATLAS ATA DRIFT RATE FILTER', SIGNED OUT, 2026-11-04: 'researchers applied a drift rate filter of 0.05 to 1.5 Hz/s across all frequencies.' "
+      "Purpose: 'To capture the expected frequency shift (acceleration) caused by the relative motion between 3I/ATLAS and Earth'; the minimum drift at 1336 MHz "
+      "about 0.15 Hz/s; with frequency blanking, the 74 million hits reduced to about 1.9–2 million before localization and inspection; FAST's maximum of 2 Hz/s. "
+      "The interval composed with no sign. Six chips, four Berkeley SETI and two IOPscience.")
+reading3 = ("The innocent reading first. Asked for the ATA drift-rate filter, the Overview gives it as the paper gives it: 0.05 to 1.5 Hz/s at all frequencies, "
+            "its purpose as the paper states it, the minimum expected drift the paper computes, and the reduction in hits, which matches the press (Astrobiology "
+            "Web: 'reducing the total number of hits by 97.4%'). It is accurate to the paper's text. The paper's text gives no sign, and neither does the composition; "
+            "the countertest finds the interval composed and its sign absent.")
+findings3 = [
+    "THE COUNTERTEST ANSWERED. 3i-atlas-signal-studies-aio-20261104 set this address to record whether the drift interval or its sign is composed. The interval is "
+    "composed exactly ('" + P3["open"] + "'). The sign is not: the paper's sentence carries none, and its Figure 4 places the retained hits at 0 to +1.5 Hz/s (draft §5.1).",
+    "THE STATED PURPOSE AND THE EXPECTED SIGN. '" + P3["purpose"] + "' The shift that motion produces on a tone carried by the object is negative in every ATA "
+    "session: '" + D3["phys"] + "' (draft §5.1.1, Horizons at the ATA site: '" + D3["check"] + "'). An interval stated without a sign reads as covering the "
+    "expected shift; the plotted interval holds the opposite sign. The composition reproduces the paper's purpose and its unsigned interval, and the "
+    "discrepancy between them stays where the paper left it.",
+    "WHAT THE FILTER REMOVED, COMPOSED AS RFI CONTROL. '" + P3["base"] + "' The filter is described as removing interference 'without missing real signals'; "
+    "the class a transmitter on the object would occupy sits outside the plotted interval. The archive's own look at that class in the public July 3 and July 8 "
+    "sessions (draft §6) found nothing beyond background at the windows examined.",
+    "ACCURATE FIGURES. '" + P3["impact"] + "' The figure agrees with the press account's '" + P3["astro"] + "'. The FAST note ('" + P3["fast"] + "') gives a "
+    "maximum and no sign, and is not checked here.",
+    "SMALLEST REPAIR. 'The paper filters hits to drift rates of 0.05–1.5 Hz/s; its Figure 4 shows the retained hits at positive drift only, while a tone fixed "
+    "on 3I/ATLAS drifts negative throughout the ATA sessions.' COUNTERTEST: '3i atlas ata drift rate sign'."]
+analysis3 = ("A composition faithful to its source at the grain of the source's sentence: the interval, the purpose and the counts are the paper's. The paper's "
+             "own gap passes through intact, the sign that the sentence omits and the figure supplies. What the summarizer can carry is what the published "
+             "sentence states.")
+e3 = {"slug": "3i-atlas-ata-drift-rate-filter-aio-20261104", "date": DATE, "surface": "Google AI Overview",
+      "surface_basis": "Operator default of 2026-10-01 (runs begin in the Overview unless he says AI Mode).",
+      "surfaces": ["Google AI Overview"], "auth": "signed out, incognito", "auth_basis": "Operator defaults of 2026-10-14; the paste shows 'Sign in'.",
+      "ev": "paste",
+      "mt": "'3I ATLAS ATA DRIFT RATE FILTER' ON THE OVERVIEW — THE COUNTERTEST: THE INTERVAL 0.05–1.5 HZ/S COMPOSED EXACTLY, ITS SIGN ABSENT AS IN THE PAPER'S SENTENCE",
+      "s": "Machine Reception", "q": Q3, "q_kind": "an external body of research (the ATA search's drift filter); NEW address; the countertest named in 3i-atlas-signal-studies-aio-20261104.", "turns": 1,
+      "cites": len(cards3), "archive_controlled_cites": 0, "cite_list": cards3,
+      "transcript": head3 + f"\n\n[QUERENT] {Q3}\n\n[SYSTEM] {body3}", "transcript_raw": raw3,
+      "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the results page: the Overview with its source chips, and the organic results",
+      "transcript_complete": "complete as supplied", "transcript_read": "READ IN FULL 2026-11-04, against the draft's §5.1",
+      "d": d3, "reading": reading3, "findings": findings3, "analysis": analysis3,
+      "per_v": {"author": False, "inst": True, "id": False, "src": True},
+      "per_note": "Retained: the SETI Institute and the ATA, Berkeley SETI and IOPscience chipped. Lost: the authors and the paper's identifier. The sign is a loss of the source's own text, recorded in the findings.",
+      "per_dim_pending": {"since": DATE, "reason": "no atom set yet for the 3I/ATLAS radio technosignature searches as a target", "breach": False},
+      "originator": e1["originator"],
+      "related_deposits": [],
+      "notes": {"prompts": "The query is the operator's, the countertest named in 3i-atlas-signal-studies-aio-20261104; the run's hour is not in the paste, the date is the paste's receipt (" + R3 + ").",
+                "operator": "with the paste (" + R3 + "): 'heres the other.'"}}
+
+for e in (e1, e2, e3):
     json.dump(e, open(H / (e["slug"] + ".json"), "w"), ensure_ascii=False, indent=1); print("wrote", e["slug"])
