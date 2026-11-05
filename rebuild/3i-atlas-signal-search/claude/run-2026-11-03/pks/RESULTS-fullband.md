@@ -33,3 +33,7 @@ Node summaries as logged in pks/fullband.log (all 22 nodes complete 2026-11-04):
 ## Final tally
 
 All 22 nodes (704-3648 MHz) complete. The rule flagged blc10 and blc14; both are wideband interference (above). Every other node: no lead.
+
+## Later (2026-11-05)
+
+The access check of 2026-11-03 listed 22 nodes and stopped the band at 3648 MHz. The public July 31 directory also holds blc27 (3648–3776 MHz), blc31 (3776–3904 MHz) and blc32 (3904–4032 MHz), 2 Hz channels and 15 s samples like the rest (ChatGPT's header audit, chatgpt/Parkes-coverage-correction-2026-11-04.md, with its witnesses in chatgpt/evidence/; the three directories return 200 on a check of 2026-11-05). This search covered 704–1984 and 2112–3648 MHz; 3648–4032 MHz is public and was not searched. blc12 (1984–2112 MHz) lists no source file.

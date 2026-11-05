@@ -23,3 +23,7 @@ In the context of the survey: this strip is the one part of the public 3I/ATLAS 
 - The mechanics check (test_inject.py) read one block of 16,384 discovery channels at 3670 MHz before the run, recorded in test_inject.log; it reported 0 uninjected hits in that block.
 - Interruptions: the runner was stopped by background time limits and resumed from disc.json each time (driver.log); no block's result was affected.
 - No held-out power was read, since the plan's continuation applies only to nominees and there were none.
+
+## Correction (2026-11-05)
+
+The plan's premise, that no other public 3I/ATLAS dataset covers 3648–3688 MHz, is wrong. Parkes holds the strip on 2025-07-31 in node blc27 (fch1 3776 MHz, foff −0.000002 MHz, 64,000,000 channels: 3648–3776 MHz), with blc31 and blc32 continuing to 4032 MHz (ChatGPT's header audit of 2026-11-04, chatgpt/Parkes-coverage-correction-2026-11-04.md; the directories checked 2026-11-05). The error came from the Parkes access check of 2026-11-03, which listed 22 nodes ending at 3648 MHz (pks/RESULTS-fullband.md, Later). The strip is the top of the ATA July 3 session and a part of the Parkes band this search did not read; the July 3 epoch is the ATA's alone. The measurement above stands as made. The plan's interference note is also too narrow: 3600–3700 MHz carries a fixed-satellite space-to-Earth allocation (FCC 24-136, footnote 534) beside the terrestrial CBRS band; the allocation identifies no transmitter, and the run found nothing to attribute.
