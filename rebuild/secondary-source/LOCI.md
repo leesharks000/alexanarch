@@ -366,3 +366,58 @@ The worked example of what the intention ruling of L23 forecloses, in Charles's 
 > THE first printed edition of the Greek New Testament was that which formed a part of the Complutensian Polyglot; the volume in which the New Testament in Greek and Latin is contained was completed Jan. 10, 1514.
 
 Carriage, and a correction to the draft: Erasmus's 1516 Novum Instrumentum is the first published Greek New Testament; the Complutensian volume was printed first (1514). The statements "first printed Greek" of draft v0.1–v0.2 are corrected to "first published".
+
+## Sixth reading (2026-11-05, for v1.1): the book as source, and the sources installed elsewhere
+
+Read for the version in place organized around the title's second word (A.10–A.12). L48 is read in the seated Greek; L49–L53 in the seats of EA-CORPORA-34; L54–L56 in text layers fetched from the Internet Archive and held by reference in witness/texts/ with their hashes (WITNESSES.json, texts_by_reference), not seated.
+
+**L48. The book's fulfilment, stated in its own terms; its citation practice** — seat gnt-nestle1904/text/Rev.txt (and Matt.txt, Mark.txt, Luke.txt, John.txt, Rom.txt for the counts).
+> ἀλλ’ ἐν ταῖς ἡμέραις τῆς φωνῆς τοῦ ἑβδόμου ἀγγέλου, ὅταν μέλλῃ σαλπίζειν, καὶ ἐτελέσθη τὸ μυστήριον τοῦ Θεοῦ, ὡς εὐηγγέλισεν τοὺς ἑαυτοῦ δούλους τοὺς προφήτας. (Rev 10:7)
+
+Counts in the seat (accents stripped, 2026-11-05): ἵνα/ὅπως πληρωθῇ, the fulfilment formula: Matthew 8, John 2, Mark 0, Luke 0, Revelation 0. γέγραπται: Matthew 9, Mark 7, Luke 9, John 2, Romans 16, Revelation 2, and both of Revelation's are names written or not written in the book of life (13:8, 17:8); the participle γεγραμμεν-: Revelation 13, every one of the book's own writing or of a writing inside it (1:3, 2:17, 5:1, 14:1, 17:5, 19:12, 19:16, 20:12, 20:15, 21:12, 21:27, 22:18, 22:19). The book cites nothing as written; what is written, in it, is itself. The derivation of the text and the position (§1): the prophets are "evangelized" (εὐηγγέλισεν) and the mystery announced to them is finished (ἐτελέσθη) in the book's own narration; the antecedents are taken up as composition, without a formula of citation (#1735 §I, VI.1: the book's load-bearing images have extant antecedents in the prophets).
+
+**L49. Charles on 2:10, the crown of life: ancestors supplied, James a "cf."** — seat revelation-criticism-1886-1920, charles-1920-i (OCR).
+> τὸν στέφανον τῆς ζωῆς. The figure appears to be borrowed from the wreath awarded to the victor in the games. Cf. 1 Cor. ix. 25; Phil. ili. 14; 2 Tim. 11. 5; 1 Pet. v. 4 [...] In the Test. Benj. iv. 1 we have the oldest reference to such crowns in Jewish literature: cf. Jas. i. 12; Asc. Isa. vii. 22, viii. 26, ix. 10-13, etc.; Herm. Sm. viii. 2, 3; Polycarp, 4d Phil. i. 1; Martyr. Polyc. xvii. τ. But it is possible, as has been suggested by Dieterich, Wekyia, 41-45; Volz, 344; Gressmann, Ursprung d. israel. jd. Eschat. 110, that these symbols are derived from heavenly beings.
+
+T presupposes the direction (the book "borrowed"); the ancestors offered are the games, the Testament of Benjamin and heavenly beings, with the Pauline crowns as parallels and James listed among the later attestations. The phrase στέφανος τῆς ζωῆς occurs in Rev 2:10 and Jas 1:12 only in the fields #1735 counted (§VII); Charles's own entry for the Testament of Benjamin is a crown of another wording.
+
+**L50. Charles on the Muratorian construal: "This statement cannot be accepted"** — seat revelation-criticism-1886-1920, charles-1920-i (OCR), p. xlviii.
+> It states that Paul wrote to seven churches after the precedent set by John. This statement cannot be accepted, since most (if not all) of the Pauline Epistles were written before all the Seven Churches in Asia were founded.
+
+Model priority considered and excluded, on a chronology of the component letters; Charles then reads the fragment as evidence for John's apostolic activity before 70 and for the precedence of "the composition of J" (the OCR's siglum, as printed). The first locus read at which the construal is answered; the answer turns it from the corpus to the date of persons.
+
+**L51. Charles on 3:14: the author "acquainted with St. Paul's Epistle to the Colossians"; the other six letters with "no resemblances"** — seat revelation-criticism-1886-1920, charles-1920-i (OCR), pp. 93–94.
+> It is not unreasonable to conclude from the above evidence that our author was acquainted directly or indirectly with St. Paul’s Epistle to the Colossians. Possibly he was acquainted with St. Paul’s lost Epistle to the Laodiceans, and was thereby influenced in his diction and thought. There are no resem- blances between the diction and thought of the other six Letters and the Pauline Epistles—a matter worthy of consideration.
+
+T argues for (a Pauline ancestor for the Laodicean letter, and a lost one proposed); the absence of resemblance across the other six is recorded and left unconsidered.
+
+**L52. Irenaeus 3.11.8: the fourfold gospel founded on the four living creatures, the first "like a lion"** — seat irenaeus-adversus-haereses, harvey-ii (OCR), with Harvey's Greek.
+> ἔδωκεν ἡμῖν τετράμορφον τὸ εὐαγγέλιον, ἑνὶ δὲ πνεύματι [the OCR carries marginal sigla here] συνεχόμενον. [...] [reading: τὸ] μὲν γὰρ πρῶτον ζῶον, φησὶν, ὅμοιον λέοντι
+> dedit nobis quadriforme Evangelium, quod uno spiritu continetur. [...] Primum enim animal, inquit, simile leoni
+
+Harvey's margin cites the Apocalypse at the place. The four creatures each with one face and in the order lion, calf, man, eagle are Rev 4:7's (Ezekiel's each bear four faces); Irenaeus quotes Revelation's order, φησὶν, and assigns the faces to the gospels. The gospels' fourfold standing is argued from the book's figure, and the book is not counted among the four. Sources installed elsewhere (§5): the argument that makes the gospels the church's four pillars takes its form from the Apocalypse.
+
+**L53. Eusebius, HE 3.25.1: the holy tetrad of the gospels first** — seat eusebius-historia-ecclesiastica.
+> καὶ δὴ τακτέον ἐν πρώτοις τὴν ἁγίαν τῶν εὐαγγελίων τετρακτὺν, οἷς ἴπε- [reading: ἕπεται; the seat's line carries an apparatus note before the syllable ται] ἡ τῶν πράξεων τῶν ἀποστόλων γραφή.
+
+Order and standing joined: the gospels placed "among the first" as a holy tetrad, the Acts following, and the Apocalypse at the end of the same account, conditionally (L5). The first ordering read that names a first.
+
+**L54. Holtzmann 1863: "Quelle A (Urmarcus)", and the life of Jesus drawn from it** — Die synoptischen Evangelien (Leipzig, 1863), text layer diesynoptischen00holtgoog, by reference.
+> Composition des Marcus — Quelle A (Urmarcus).
+> Lebensbild Jesu nach der Quelle A.
+
+The source of the gospel narrative is named as a document reconstructed from the gospels (A), and a portrait of the person is drawn from it, against Strauss's "Mythologie". Sources installed elsewhere: the generative position is given to a reconstructed antecedent of a narrative, and the person is established from it.
+
+**L55. Wernle 1899: "Die — hypothetische — Quelle sei mit Q bezeichnet"; the apocalypse underlying Mark 13** — Die synoptische Frage (Freiburg i. B., 1899), text layer diesynoptischefr00wern, by reference.
+> Diese Hypothese allein wird beiden sich sonst widersprechenden Beobachtungen einfach und ungezwungen gerecht. Die — hypothetische — Quelle sei mit Q bezeichnet.
+> Mt hat die Mr 13 zu Grunde liegende Apokalypse noch gekannt.
+
+The word Quelle given a letter and a place at the head of the gospel tradition, declared hypothetical in the sentence that names it. At Mark 13 the source proposed is an apocalypse reconstructed from Mark and Matthew; the extant Apocalypse is not named as a candidate in the pages read.
+
+**L56. J. Weiss 1903: "das älteste Evangelium"; Mark "nicht mehr Quelle, sondern schon Sammelbecken"** — Das älteste Evangelium (Göttingen, 1903), text layer dasaltesteevange0000joha, by reference.
+> Die Annahme, dass unser zweites das älteste Evangelium sei, ist keine Hypo- these mehr, sondern ein wissenschaftliches Ergebnis. [...] Es wird eine Probe auf die Markus-Hypothese sein, wenn es gelingt, den Markus als Anfang der Evangelien-Literatur zu verstehen.
+> So weit ich urteilen kann, ist Markus schon eine Station auf dem Wege, der im Johannes- evangelium gipfelt, nicht der Anfang dieses Weges. Er ist nicht mehr Quelle, sondern schon Sammelbecken.
+
+The priority of a gospel declared "no longer a hypothesis but a scientific result"; the same page moves the source behind the gospel, into a tradition already fixed, and makes the Fourth Gospel the summit of the way. The source is sought behind the extant narrative and found in reconstruction; the extant apocalypse stands outside the way.
+
+**Concordance, v1.0 to v1.1 (2026-11-05).** Paragraphs of the draft moved unaltered under the v1.1 heads, with their internal cross-references renumbered; v1.0's received-reading and stratum-summary paragraphs (3.0, 4.0, 5.0, 6.0, 7.0, 8.0; 3.6, 4.8, 5.7, 6.5, 7.6, 8.9) are replaced by the new heads' own. §1.1 → §1.3; §1.2 → §1.4; §1.2a → §1.4a; §1.2b → §1.4b; §1.2c → §1.4c; §1.2d → §1.4d; §1.3 → §1.6; §3.1 → §7.1; §3.2 → §3.2.1; §3.3 → §7.2; §3.4 → §7.3; §3.5 → §4.1; §3.6 → §4.7; §4.1 → §3.1.1; §4.2 → §3.1.2; §4.3 → §3.1.3; §4.3a → §7.4; §4.4 → §3.1.4; §4.5 → §3.4.1; §4.6 → §3.5.1; §4.7 → §3.4.2; §4.8 → §3.6; §5.1 → §6.2.1; §5.2 → §6.1.1; §5.3 → §5.3; §5.4 → §6.1.2; §5.5 → §6.2.2; §5.6 → §4.3; §5.7 → §6.4; §6.1 → §6.3.1; §6.2 → §6.3.2; §6.3 → §6.3.3; §6.4 → §6.3.4; §6.5 → §6.4; §7.1 → §3.1.5; §7.2 → §6.1.3; §7.3 → §3.4.3; §7.4 → §6.1.4; §7.5 → §3.5.4; §7.6 → §3.6; §8.1 → §3.3.1; §8.2 → §3.5.2; §8.3 → §3.5.3; §8.4 → §3.4.4; §8.5 → §3.4.5; §8.6 → §3.4.6; §8.7 → §3.4.7; §8.8 → §3.2.2; §8.9 → §3.6; §9.1 → §8.1; §9.2 → §8.2; §9.3 → §8.3; §9.4 → §8.4; §9.5 → §8.5; §10.1 → §9.1; §10.2 → §9.2; §10.3 → §9.3; §10.3a → §9.3a; §10.4 → §9.4; §11.1 → §10.1; §11.2 → §10.2; §11.3 → §10.3; §11.4 → §10.4; §11.5 → §10.5; §11.5a → §10.5a; §11.6 → §10.6.
