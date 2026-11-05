@@ -2,13 +2,13 @@
   "$schema": "https://alexanarch.org/api/schemas/body-index.schema.json",
   "$id": "https://alexanarch.org/api/body-index.json",
   "index_version": "v1",
-  "generated_at": "2026-11-05T22:51:43.864794Z",
+  "generated_at": "2026-11-05T23:27:27.326290Z",
   "purpose": "Inverted index over the BODY text of every deposit. Complements /api/search-index.json which tokenizes metadata only. Fetch once; look up any term as a key. For phrase search, intersect the deposit lists for each token.",
   "companion_index": "/api/search-index.json",
   "total_deposits": 1741,
   "deposits_with_body": 1741,
   "deposits_missing_body": 0,
-  "body_bytes_indexed": 56932053,
+  "body_bytes_indexed": 56932252,
   "tokenization": {
     "sources": [
       "body"
@@ -89461,7 +89461,8 @@
       1711,
       1715,
       1716,
-      1717
+      1717,
+      1741
     ],
     "Jack Feist\n\n\nThe": [
       288
@@ -89475,6 +89476,9 @@
     "Jack Feist\n\nThe": [
       852,
       1102
+    ],
+    "Jack Feist\n\nThe Apocalypse": [
+      1741
     ],
     "Jack Feist\n\nWhitman": [
       1460
@@ -803551,7 +803555,8 @@
       1594,
       1602,
       1703,
-      1720
+      1720,
+      1741
     ],
     "epigrammata": [
       1730
@@ -803600,7 +803605,8 @@
       1658,
       1668,
       1680,
-      1689
+      1689,
+      1741
     ],
     "epigraphic": [
       165,
@@ -866574,7 +866580,8 @@
       1711,
       1715,
       1716,
-      1717
+      1717,
+      1741
     ],
     "feistel": [
       874,
@@ -1077332,7 +1077339,8 @@
       1716,
       1717,
       1718,
-      1719
+      1719,
+      1741
     ],
     "jackboots": [
       230,
@@ -1103830,7 +1103838,8 @@
       1696,
       1697,
       1702,
-      1703
+      1703,
+      1741
     ],
     "landesbibliothek": [
       1699
@@ -1631724,7 +1631733,8 @@
       1728,
       1729,
       1735,
-      1736
+      1736,
+      1741
     ],
     "shallow": [
       31,
@@ -1943968,7 +1943978,7 @@
   "counts": {
     "generic_tokens": 67570,
     "series_prefix_terms": 2146,
-    "keyword_phrases_raw": 62950,
-    "keyword_phrases_kept": 42047
+    "keyword_phrases_raw": 62951,
+    "keyword_phrases_kept": 42048
   }
 }
