@@ -36,7 +36,7 @@ AI-assisted (substrate). Written under the heteronym Johannes Sigil (legal autho
 
 ### Keywords
 
-Secondary Source, Book of Revelation, Apocalypse of John, reception history, Revelation First, Revelation 19:13, Word of God, Logos, hidden name, Revelation 19:12, Revelation 2:17, white stone, four names, Irenaeus, Justin, Eusebius, Gaius, Papias, Dionysius of Alexandria, Epiphanius, Alogi, Muratorian Fragment, model priority, canon lists, Laodicea, Cyril of Jerusalem, Athanasius, Amphilochius, Nicephorus, Junilius, Claromontanus, Cheltenham list, Jerome, Fourth Council of Toledo, lectionary, Andreas of Caesarea, Codex Alexandrinus, Erasmus, Reuchlin, Complutensian Polyglot, Tregelles, Delitzsch, Gregory, Scrivener, Luther, September Testament, Vischer, Spitta, Gunkel, Bousset, Kyrios Christos, Charles, solecism, Revelation 1:4, expurgation, carriage, existence tax, sophistry measure, AI Overview, locus table, Johannes Sigil, Provenance: Journal of Forensic Semiotics, revelationfirst.com
+Secondary Source, Book of Revelation, Apocalypse of John, reception history, Revelation First, Revelation 19:13, Word of God, Logos, hidden name, Revelation 19:12, four names, Irenaeus, Justin, Eusebius, Dionysius of Alexandria, Epiphanius, Muratorian Fragment, model priority, canon lists, Cyril of Jerusalem, Claromontanus, Jerome, Fourth Council of Toledo, lectionary, Andreas of Caesarea, Erasmus, Complutensian Polyglot, Tregelles, Gregory, Luther, September Testament, Vischer, Spitta, Gunkel, Bousset, Kyrios Christos, Charles, solecism, Revelation 1:4, expurgation, carriage, existence tax, sophistry measure, AI Overview, locus table, Johannes Sigil, Provenance: Journal of Forensic Semiotics, revelationfirst.com
 
 ### Related Identifiers
 
