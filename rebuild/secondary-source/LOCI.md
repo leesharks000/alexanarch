@@ -420,4 +420,51 @@ The word Quelle given a letter and a place at the head of the gospel tradition, 
 
 The priority of a gospel declared "no longer a hypothesis but a scientific result"; the same page moves the source behind the gospel, into a tradition already fixed, and makes the Fourth Gospel the summit of the way. The source is sought behind the extant narrative and found in reconstruction; the extant apocalypse stands outside the way.
 
-**Concordance, v1.0 to v1.1 (2026-11-05).** Paragraphs of the draft moved unaltered under the v1.1 heads, with their internal cross-references renumbered; v1.0's received-reading and stratum-summary paragraphs (3.0, 4.0, 5.0, 6.0, 7.0, 8.0; 3.6, 4.8, 5.7, 6.5, 7.6, 8.9) are replaced by the new heads' own. §1.1 → §1.3; §1.2 → §1.4; §1.2a → §1.4a; §1.2b → §1.4b; §1.2c → §1.4c; §1.2d → §1.4d; §1.3 → §1.6; §3.1 → §7.1; §3.2 → §3.2.1; §3.3 → §7.2; §3.4 → §7.3; §3.5 → §4.1; §3.6 → §4.7; §4.1 → §3.1.1; §4.2 → §3.1.2; §4.3 → §3.1.3; §4.3a → §7.4; §4.4 → §3.1.4; §4.5 → §3.4.1; §4.6 → §3.5.1; §4.7 → §3.4.2; §4.8 → §3.6; §5.1 → §6.2.1; §5.2 → §6.1.1; §5.3 → §5.3; §5.4 → §6.1.2; §5.5 → §6.2.2; §5.6 → §4.3; §5.7 → §6.4; §6.1 → §6.3.1; §6.2 → §6.3.2; §6.3 → §6.3.3; §6.4 → §6.3.4; §6.5 → §6.4; §7.1 → §3.1.5; §7.2 → §6.1.3; §7.3 → §3.4.3; §7.4 → §6.1.4; §7.5 → §3.5.4; §7.6 → §3.6; §8.1 → §3.3.1; §8.2 → §3.5.2; §8.3 → §3.5.3; §8.4 → §3.4.4; §8.5 → §3.4.5; §8.6 → §3.4.6; §8.7 → §3.4.7; §8.8 → §3.2.2; §8.9 → §3.6; §9.1 → §8.1; §9.2 → §8.2; §9.3 → §8.3; §9.4 → §8.4; §9.5 → §8.5; §10.1 → §9.1; §10.2 → §9.2; §10.3 → §9.3; §10.3a → §9.3a; §10.4 → §9.4; §11.1 → §10.1; §11.2 → §10.2; §11.3 → §10.3; §11.4 → §10.4; §11.5 → §10.5; §11.5a → §10.5a; §11.6 → §10.6.
+## Seventh reading (2026-11-05): the titles, and the one gospel counted as many
+
+Read at the author's word ("yes, lets look at the titles themselves", 17:08), on the question of A.15: how a unified corpus came to be treated as many, later reconciled through editing. All loci are in seats of EA-CORPORA-34 and the seated Greek New Testament.
+
+**L57. The books' own openings: three self-titles in the genitive of Jesus Christ** — seat gnt-nestle1904/text (Matt.txt, Mark.txt, Rev.txt).
+> Βίβλος γενέσεως Ἰησοῦ Χριστοῦ υἱοῦ Δαυεὶδ υἱοῦ Ἀβραάμ. (Matt 1:1)
+> Ἀρχὴ τοῦ εὐαγγελίου Ἰησοῦ Χριστοῦ Υἱοῦ Θεοῦ. (Mark 1:1)
+> Ἀποκάλυψις Ἰησοῦ Χριστοῦ (Rev 1:1)
+
+Three books open by naming themselves as a book, a gospel and a revelation of Jesus Christ. None opens on a writer's name; the Apocalypse names its writer in the next clause as the one who bore witness (1:1–2). The titles the lists and the manuscripts carry file the three under persons: κατὰ Μαθθαῖον, κατὰ Μάρκον (L58), Ἀποκάλυψις Ἰωάννου (L5).
+
+**L58. The earliest titles: "according to"** — seat scrivener-plain-introduction-1894, plain-introduction-i (OCR), p. 65.
+> In the earliest manuscripts the subscriptions, as well as the titles of the books, were of the simplest character. Kara Ma@daiov, xara Mapxov, &c. is all that the Codd. Vaticanus and Sinaiticus have, whether at the begin- ning or the end. [reading: Κατὰ Μαθθαῖον, κατὰ Μάρκον]
+
+The oldest titles name a person with κατά, "according to": the form presupposes one gospel, given according to each. Codex Alexandrinus writes εὐαγγέλιον κατὰ Μάρκον, the gospel according to Mark (same page). The titles file a version under a person; they do not make four gospels.
+
+**L59. Justin: "the so-called gospel", "the memoirs of the apostles", no evangelist named; the Apocalypse's writer named** — seat justin-dialogus.
+> Ὑμῶν δὲ καὶ τὰ ἐν τῷ λεγομένῳ εὐαγγελίῳ παραγγέλματα θαυμαστὰ οὕτως καὶ μεγάλα ἐπίσταμαι εἶναι (Dial. 10.2)
+> καὶ ἐν τῷ εὐαγγελίῳ δὲ γέγραπται εἰπών (Dial. 100.1)
+> Ἐν γὰρ τοῖς ἀπομνημονεύμασιν, ἅ φημι ὑπὸ τῶν ἀποστόλων αὐτοῦ καὶ τῶν ἐκείνοις παρακολουθησάντων συντετάχθαι, γέγραπται (Dial. 103.8)
+
+The gospel is one, "the gospel", and its writings are cited thirteen times as ἀπομνημονεύματα, memoirs, of the apostles collectively, composed by the apostles "and those who followed them". The Dialogue names no evangelist (its two hits for Mark are the Marcians and Marcus Pompeius). The one writer it names for a book is John of the Apocalypse (Dial. 81.4; L1): the book that names its writer is the book whose writer the earliest witness names.
+
+**L60. Irenaeus: one gospel, fourfold, held by one spirit; four persons, each "the gospel"** — seat irenaeus-adversus-haereses, harvey-ii (3.11.8, L52), and eusebius-historia-ecclesiastica (HE 5.8.2–4, Irenaeus 3.1.1 in Greek).
+> ὁ μὲν δὴ Ματθαῖος ἐν τοῖς Ἑβραίοις τῇ ἰδίᾳ αὐτῶν διαλέκτῳ καὶ γραφὴν ἐξήνεγκεν εὐαγγελίου [...] Μάρκος ὁ μαθητὴς καὶ ἑρμηνευτὴς Πέτρου καὶ αὐτὸς τὰ ὑπὸ Πέτρου κηρυσσόμενα ἐγγράφως ἡμὶν παραδέ- “δωκε, καὶ Λουκᾶς δὲ, ὁ ἀκόλουθος ΠαύΑου, τὸ ὑπ’ ἐκείνου κηρυσσόμενον εὐαγγέλιον ἐν βίβλῳ κατέθετο. [...] ἔπειτα Ἰωάννης, ὁ μαθητὴς τοῦ κυρίου, ὁ καὶ ἐπὶ τὸ στῆθος αὐτοῦ ἀναπεσὼν, καὶ αὐτὸς ἐξέδωκε τὸ εὐαγγέλιον [reading: παραδέδωκε; Παύλου]
+
+The gospel is singular at every step, "a writing of the gospel", "the gospel preached by him", "the gospel" published by John; four persons are given four occasions (a language, a teacher, a teacher, a city). At 3.11.8 the four are τετράμορφον τὸ εὐαγγέλιον, ἑνὶ δὲ πνεύματι συνεχόμενον, one gospel in four forms held together by one spirit, argued from the Apocalypse's four creatures (L52). The unity is stated, and stated as the spirit's holding of four forms.
+
+**L61. The Muratorian fragment: "the third book of the gospel according to Luke"; John writes all in his own name; the differences of beginning reconciled by "one principal spirit"** — seat muratorian-fragment-tregelles (OCR).
+> TERTIO EUANGELII LIBRUM SECGNDO Lucan [reading: tertium evangelii librum secundum Lucam]
+> QUARTI EUANGELIORUM IoHANNIS EX DECIPOLIS [reading: quartum evangeliorum Iohannis ex discipulis]
+> latum andreae ex apostolis ut recognis [the seat's page break, running head and line numbers] centibus cuntis Iohannis suo nomine [interlinear correction letters] cunta discribret et ideo licit uaria sin culis euangeliorum libris principia doceantur Nihil tamen differt creden [interlinear letter] tium fedei cum uno ac principali spu de clarata sint in omnibus omnia [reading: revelatum Andreae ex apostolis, ut recognoscentibus cunctis Iohannes suo nomine cuncta describeret; et ideo, licet varia singulis evangeliorum libris principia doceantur, nihil tamen differt credentium fidei, cum uno ac principali spiritu declarata sint in omnibus omnia]
+
+The fragment counts books of one gospel ("the third book of the gospel") and, a line later, gospels ("the fourth of the gospels"). It narrates John's writing as all the disciples' revelation written "in his own name" with all recognizing it, a communal making under one name. And it states the reconciliation outright: although various beginnings are taught in the single books, nothing differs for the faith of believers, since by one principal spirit all things are declared in all. The difference is admitted, and the unity is assigned to the spirit.
+
+**L62. Papias: the differences charged to persons, Mark "not in order", Matthew translated "as each was able"** — seat eusebius-historia-ecclesiastica (HE 3.39.15–16).
+> Μάρκος μὲν ἑρμηνευτὴς Πέτρου γενόμενος, ὅσα ἐμνη- “ μόνευσεν ἀκριβῶς ἔγραψεν, οὐ μέντοι τάξει, τὰ ὑπο “ τοῦ Χριστοῦ ἢ λεχθέντα ἢ πραχθέντα. [reading: ὅσα ἐμνημόνευσεν]
+> Ματθαῖος μὲν “Ἑβραίδι διαλέκτῳ τὰ λόγια συνεγράψατο , ἡρμή- “ νεῦσε δ’ αὐτὰ ὡς ἦν δυνατὸς ἔκαστος.’’ [reading: ἡρμήνευσε δ’ αὐτὰ ὡς ἦν δυνατὸς ἕκαστος]
+
+The earliest account of the gospels' making that names persons is an account of their differences: an order that is not "in order", explained by a writer who was an interpreter and did not hear the Lord; a text in many renderings, explained by translation "as each was able". The persons enter the record as the explanation of disagreement.
+
+**L63. Eusebius: the fourth gospel written to supply what the three omitted; "κατέχει λόγος"** — seat eusebius-historia-ecclesiastica (HE 3.24.5–8).
+> ὅμως δ’ οὖν ἐξ ἀπάντων τῶν τοῦ κυρίου διατριβῶν ὑπομνήματα Ματθαῖος ἡμῖν καὶ Ἰωάννης μόνοι καταλελοίπασιν, οὓς καὶ ἐπάναγκες ἐπὶ τὴν γραφὴν ἐλθεῖν κατέχει λόγος.
+> τῶν προαναγραφέντων τριῶν εἰς πάντας ἤδη καὶ εἰς αὐτὸν διαδεδομένων ἀποδέξασθαι μέν φασιν ἀλήθειαν αὐτοῖς ἐπιμαρτυρήσαντα, μόνην δὲ ἄρα λείπεσθαι τῇ γραφῇ τὴν περὶ τῶν ἐν πρώτοις καὶ κατ’ ἀρχὴν τοῦ κηρύγματος ὑπὸ τοῦ Χριστοῦ πεπραγμένων διήγησιν.
+
+The fourth gospel's difference from the three (its beginning of the ministry) is reconciled as supplement: John received the three, attested their truth, and wrote what was left out. The account rests on report, κατέχει λόγος, a formula the seat carries eleven times in the History, among them for the apostle's exile under Domitian (at the turn of 3.17–3.18). The plural τῶν κατ’ αὐτοὺς εὐαγγελίων, "the gospels according to them" (3.24.7), and at 3.25.1 τῶν εὐαγγελίων τετρακτύν (L53), set beside Irenaeus's τετράμορφον τὸ εὐαγγέλιον, mark the count of the gospel passing from one in four forms to four.
+
+**Concordance, v1.0 to v1.1 (2026-11-05).** Paragraphs of the draft moved unaltered under the v1.1 heads, with their internal cross-references renumbered; v1.0's received-reading and stratum-summary paragraphs (3.0, 4.0, 5.0, 6.0, 7.0, 8.0; 3.6, 4.8, 5.7, 6.5, 7.6, 8.9) are replaced by the new heads' own. §1.1 → §1.3; §1.2 → §1.4; §1.2a → §1.4a; §1.2b → §1.4b; §1.2c → §1.4c; §1.2d → §1.4d; §1.3 → §1.6; §3.1 → §7.1; §3.2 → §3.2.1; §3.3 → §7.2; §3.4 → §7.3; §3.5 → §4.1; §3.6 → §4.7; §4.1 → §3.1.1; §4.2 → §3.1.2; §4.3 → §3.1.3; §4.3a → §7.4; §4.4 → §3.1.4; §4.5 → §3.4.1; §4.6 → §3.5.1; §4.7 → §3.4.2; §4.8 → §3.6; §5.1 → §6.2.1; §5.2 → §6.1.1; §5.3 → §5.3; §5.4 → §6.1.2; §5.5 → §6.2.2; §5.6 → §4.3; §5.7 → §6.4; §6.1 → §6.3.1; §6.2 → §6.3.2; §6.3 → §6.3.3; §6.4 → §6.3.4; §6.5 → §6.4; §7.1 → §3.1.5; §7.2 → §6.1.3; §7.3 → §3.4.3; §7.4 → §6.1.4; §7.5 → §3.5.4; §7.6 → §3.6; §8.1 → §3.3.1; §8.2 → §3.5.2; §8.3 → §3.5.3; §8.4 → §3.4.4; §8.5 → §3.4.5; §8.6 → §3.4.6; §8.7 → §3.4.7; §8.8 → §3.2.2; §8.9 → §3.6; §9.1 → §8.1; §9.2 → §8.2; §9.3 → §8.3; §9.4 → §8.4; §9.5 → §8.5; §10.1 → §9.1; §10.2 → §9.2; §10.3 → §9.3; §10.3a → §9.3a; §10.4 → §9.4; §11.1 → §10.1; §11.2 → §10.2; §11.3 → §10.3; §11.4 → §10.4; §11.5 → §10.5; §11.5a → §10.5a; §11.6 → §10.6. On the seventh reading (the titles, set as the new §2) every section from §2 onward is renumbered by one more: the v1.1 numbers above become the current ones by adding one to the section number (v1.1 §3.4.4 is now §4.4.4, v1.1 §9.5 is now §10.5).
