@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Writes the EA-CORPORA-35 specs. Session tool. Secondary Source, the count of carriage and the stratum of material transmission and succession
+"""Writes the four carriage specs of EA-CORPORA-34 v1.1 (34/12–34/15). Session tool; written as EA-CORPORA-35 and folded into 34 at the operator's word of 2026-11-05 11:11 ("lets bundle the 35 sources with 34 and version in place - theyre of a piece"). Secondary Source, the count of carriage and the stratum of material transmission and succession
 (design v0.4 §2.5, §3.5a), seated at the operator's word of 2026-11-05 11:02."""
 import json, pathlib, sys
 H = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(H.parent / "ea-corpora-34")); import importlib.util
 RULING = ("Lee Sharks, 2026-11-05 11:02 EST: \"we should also be tracking material manuscript transmission and succession, that seems particularly important "
-          "with revelation and less-often and -critically studied than pure reception\"; the standing rule for the seating of 09:03 EST: \"lets gather up and seat "
+          "with revelation and less-often and -critically studied than pure reception\"; on the seating, 11:11 EST: \"lets bundle the 35 sources with 34 and version in place - theyre of a piece\"; the standing rule for the seating of 09:03 EST: \"lets gather up and seat "
           "the sources we'll need for this one prior to writing. still under rebekah cranes for the ea-corpora, and with reference to the research occasion\".")
-SEATING = "EA-CORPORA-35, the thirty-fifth seating: Secondary Source — the carriage of the Apocalypse, its manuscripts and its succession into print, 2026-11-05"
+SEATING = "EA-CORPORA-34 v1.1, the thirty-fourth seating: Secondary Source — the reception and the carriage of the Apocalypse, 2026-11-05"
 REC = "CC-BY-4.0 applies to this seat record only."
 NORM = ("The Internet Archive's own text layer (_djvu.txt) as served, under original/<identifier>/, copied to text/<slug>.ocr.txt with line endings normalized. "
         "The PDF of each item is held by reference at its Archive URL and not copied. No text was corrected by hand; the loci keep the OCR's readings.")
@@ -18,9 +18,9 @@ ia = lambda ident, djvu, slug, work: {"kind": "ia", "slug": slug, "work": work, 
 lo = lambda label, text, find: {"label": label, "text": text, "find": find}
 specs = []
 def add(corpus, n, title, lang, lic, items, loci, scope, why, f):
-    specs.append({"corpus": corpus, "seat": f"EA-CORPORA-35/{n:02d}", "title": title, "language": lang, "fetched": "2026-11-05",
+    specs.append({"corpus": corpus, "seat": f"EA-CORPORA-34/{n + 11:02d}", "title": title, "language": lang, "fetched": "2026-11-05",
                   "license": {"payload": lic, "record": REC}, "normalization": NORM, "items": items, "loci": loci, "scope": scope, "why_seated": why,
-                  "research": RES(f), "spine": "EA-CORPORA-35", "ruling": RULING, "seating": SEATING})
+                  "research": RES(f), "spine": "EA-CORPORA-34", "ruling": RULING, "seating": SEATING})
 add("scrivener-plain-introduction-1894", 1, "F. H. A. Scrivener, A Plain Introduction to the Criticism of the New Testament, 4th ed., ed. E. Miller (London: Bell, 1894), two volumes", "eng+grc",
     "Scrivener (died 1891) and Miller (died 1898) are public domain everywhere.",
     [ia("gtu_32400001627490", "gtu_32400001627490_djvu.txt", "plain-introduction-i", "Scrivener, A Plain Introduction, 4th ed., vol. I (1894): the manuscripts"),
@@ -43,4 +43,4 @@ add("erasmus-novum-instrumentum-1516", 4, "Erasmus, Novum Instrumentum omne (Bas
 LOCI = {"delitzsch-handschriftliche-funde-1861": [{"label": "the title: the Erasmian distortions of the text of the Apocalypse, shown from Reuchlin's codex thought lost", "text": "text/handschriftliche-funde.ocr.txt", "find": "DIE ERASMISCHEN ENTSTELLUNGEN DES TEXTES DER APOKALYPSE, NACHGEWIESEN AUS DEM VERLOREN GEGLAUBTEN CODEX REUCHLINS"}], "tregelles-printed-text-1854": [{"label": "Erasmus had one mutilated manuscript of the Apocalypse, borrowed from Reuchlin; the last six verses retranslated from the Latin", "text": "text/account-printed-text.ocr.txt", "find": "For the Apocalypse he had but one mutilated MS., borrowed from Reuchlin, in which the text and commentary were intermixed almost unintelligibly"}, {"label": "the last six verses wholly wanting", "text": "text/account-printed-text.ocr.txt", "find": "This was the case with regard to the last six verses, which from the mutilated condition of his MS. were wholly wanting"}], "scrivener-plain-introduction-1894": [{"label": "Erasmus's own note, as Scrivener quotes it: words at the end of the book wanting in the Greek, added from the Latin", "text": "text/plain-introduction-ii.ocr.txt", "find": "nonnulla verba reperi apud nostros, quae aberant in Graecis exem- plaribus, ea tamen ex latinis adjecimus"}]}
 for s in specs:
     s["loci"] = LOCI.get(s["corpus"], [])
-    (H / f"spec35-{s['corpus']}.json").write_text(json.dumps(s, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"); print("wrote", s["seat"], s["corpus"])
+    (H / f"spec34-{s['corpus']}.json").write_text(json.dumps(s, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"); print("wrote", s["seat"], s["corpus"])

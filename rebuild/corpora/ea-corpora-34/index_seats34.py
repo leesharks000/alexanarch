@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enter the EA-CORPORA-34 seats (34/01–34/11: the sources of Secondary Source) in data/api/corpora.json and datasets/corpora/corpora.json. The form of index_seats32.py.
+"""Enter the EA-CORPORA-34 seats (34/01–34/15: the sources of Secondary Source; 34/12–34/15 added at v1.1) in data/api/corpora.json and datasets/corpora/corpora.json. The form of index_seats32.py.
 
 Additive and idempotent: an existing row for any of the eleven corpora is replaced, totals are recomputed from the
 difference. license_class follows the manifest's stated derivation, most-restrictive-first over the packaging the
@@ -7,12 +7,12 @@ seat actually carries: Wikisource transcription (CC BY-SA) > Project Gutenberg >
 import json, hashlib, pathlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
-SPEC = {"seats": [{"corpus": c} for c in ("eusebius-historia-ecclesiastica", "irenaeus-adversus-haereses", "justin-dialogus", "muratorian-fragment-tregelles", "epiphanius-panarion", "westcott-canon-1896", "collectio-hispana-1808", "september-testament-1522", "erasmus-annotationes-1535", "revelation-criticism-1886-1920", "gregory-textkritik-1900")]}
+SPEC = {"seats": [{"corpus": c} for c in ("eusebius-historia-ecclesiastica", "irenaeus-adversus-haereses", "justin-dialogus", "muratorian-fragment-tregelles", "epiphanius-panarion", "westcott-canon-1896", "collectio-hispana-1808", "september-testament-1522", "erasmus-annotationes-1535", "revelation-criticism-1886-1920", "gregory-textkritik-1900", "scrivener-plain-introduction-1894", "delitzsch-handschriftliche-funde-1861", "tregelles-printed-text-1854", "erasmus-novum-instrumentum-1516")]}
 NAMES = [s["corpus"] for s in SPEC["seats"]]
 now = datetime.datetime.now(datetime.timezone.utc)
 
 
-CLASS = {'eusebius-historia-ecclesiastica': 'cc-by-sa', 'irenaeus-adversus-haereses': 'cc-by-sa', 'justin-dialogus': 'cc-by-sa', 'muratorian-fragment-tregelles': 'public-domain', 'epiphanius-panarion': 'cc-by-sa', 'westcott-canon-1896': 'public-domain', 'collectio-hispana-1808': 'public-domain', 'september-testament-1522': 'public-domain', 'erasmus-annotationes-1535': 'public-domain', 'revelation-criticism-1886-1920': 'public-domain', 'gregory-textkritik-1900': 'public-domain'}  # First1KGreek TEI: CC BY-SA 4.0; the Internet Archive scans and text layers: public domain
+CLASS = {'eusebius-historia-ecclesiastica': 'cc-by-sa', 'irenaeus-adversus-haereses': 'cc-by-sa', 'justin-dialogus': 'cc-by-sa', 'muratorian-fragment-tregelles': 'public-domain', 'epiphanius-panarion': 'cc-by-sa', 'westcott-canon-1896': 'public-domain', 'collectio-hispana-1808': 'public-domain', 'september-testament-1522': 'public-domain', 'erasmus-annotationes-1535': 'public-domain', 'revelation-criticism-1886-1920': 'public-domain', 'gregory-textkritik-1900': 'public-domain', 'scrivener-plain-introduction-1894': 'public-domain', 'delitzsch-handschriftliche-funde-1861': 'public-domain', 'tregelles-printed-text-1854': 'public-domain', 'erasmus-novum-instrumentum-1516': 'public-domain'}  # First1KGreek TEI: CC BY-SA 4.0; the Internet Archive scans and text layers: public domain
 
 
 def lclass(src):
