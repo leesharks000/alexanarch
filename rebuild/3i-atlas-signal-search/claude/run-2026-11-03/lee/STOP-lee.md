@@ -1,0 +1,7 @@
+# STOP-lee: stopping rule for the look-elsewhere survey (deviation from PLAN-lee.md)
+
+Fixed 2026-11-04, 18:50 EST, with 34 channels complete (the sixteen reused by plan and eighteen surveyed in the seed-29 random order). The rule is set by sample size alone and does not depend on any channel's result.
+
+PLAN-lee.md (sha256 3e8e00cc…) calls for all 256 L-band channels. At about five minutes a channel that is about twenty hours of reading from the Breakthrough Listen server. On Lee Sharks's ruling (2026-11-04: "a healthy random sampling is enough, and others can check the rest if theres something worth checking"), the survey stops when 64 channels are complete, a quarter of the band: the sixteen reused channels (blc23 coarse channel 7 and the fifteen held-out channels of lheld, chosen by the fixed rule index ≡ 7 mod 8, independent of their results) and 48 channels taken in the seed-29 order, which run_lee.py follows after coarse channel 7. The seed-29 order was fixed before any channel of the survey was read, so the 48 are a random sample of the 240 channels not reused.
+
+With 64 channels the smallest possible p_LEE is 1/64 (0.016). p_LEE and N_FLAG are computed as PLAN-lee.md defines them, over the 64, and also over coarse channel 7 with the 48 seed-29 channels alone (49). The remaining 192 channels are listed by name in RESULTS-lee.md so that the survey can be continued from lee.json with the same runner.
