@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-05T14:39:54.621011Z",
- "seats": 183,
- "lines_total": 7709054,
+ "_generated": "2026-11-05T16:06:27.646130Z",
+ "seats": 187,
+ "lines_total": 7926506,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -16752,7 +16752,138 @@
    "scope": "The first volume whole, held for the manuscripts that carry the Apocalypse and for the lectionaries.",
    "data": "https://www.alexanarch.org/data/corpora/gregory-textkritik-1900/",
    "axn": "AXN:0C12.ORIGINAL.♃🕖✨🌟🚨🌌"
+  },
+  {
+   "seat": "EA-CORPORA-35/01",
+   "corpus": "scrivener-plain-introduction-1894",
+   "edition": "Scrivener, A Plain Introduction, 4th ed., vol. I (1894): the manuscripts; Scrivener, A Plain Introduction, 4th ed., vol. II (1894): the versions and the printed editions",
+   "license": {
+    "payload": "Scrivener (died 1891) and Miller (died 1898) are public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "gtu_32400001627490",
+      "url": "https://archive.org/details/gtu_32400001627490",
+      "files": [
+       "gtu_32400001627490_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "gtu_32400001627060",
+      "url": "https://archive.org/details/gtu_32400001627060",
+      "files": [
+       "gtu_32400001627060_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc",
+   "lines": 56110,
+   "verified_loci": [
+    "Erasmus's own note, as Scrivener quotes it: words at the end of the book wanting in the Greek, added from the Latin — 'nonnulla verba reperi apud nostros, quae aberant in Graecis exem- plaribus, ea tamen ex latinis adjecimus'"
+   ],
+   "why_seated": "The standard public account of the carriers and of the succession into print: §3.5a.",
+   "scope": "Both volumes whole, held for the manuscripts of the Apocalypse (the uncials and the minuscules), the lectionaries, and the printed editions from Erasmus to the received text.",
+   "data": "https://www.alexanarch.org/data/corpora/scrivener-plain-introduction-1894/"
+  },
+  {
+   "seat": "EA-CORPORA-35/02",
+   "corpus": "delitzsch-handschriftliche-funde-1861",
+   "edition": "Delitzsch, Handschriftliche Funde (1861), the Archive's text layer",
+   "license": {
+    "payload": "Delitzsch (died 1890) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "handschriftlich00deligoog",
+      "url": "https://archive.org/details/handschriftlich00deligoog",
+      "files": [
+       "handschriftlich00deligoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc",
+   "lines": 7611,
+   "verified_loci": [
+    "the title: the Erasmian distortions of the text of the Apocalypse, shown from Reuchlin's codex thought lost — 'DIE ERASMISCHEN ENTSTELLUNGEN DES TEXTES DER APOKALYPSE, NACHGEWIESEN AUS DEM VERLOREN GEGLAUBTEN CODEX REUCHLINS'"
+   ],
+   "why_seated": "The one exemplar of the first printed Apocalypse, and what Erasmus did where it failed: §3.5a.",
+   "scope": "The volume whole, held for Reuchlin's codex of the Apocalypse with Andreas's commentary, rediscovered by Delitzsch, and Erasmus's use of it in 1516.",
+   "data": "https://www.alexanarch.org/data/corpora/delitzsch-handschriftliche-funde-1861/"
+  },
+  {
+   "seat": "EA-CORPORA-35/03",
+   "corpus": "tregelles-printed-text-1854",
+   "edition": "Tregelles, An Account of the Printed Text (1854), the Archive's text layer",
+   "license": {
+    "payload": "Tregelles (died 1875) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "accountofprinted00treg",
+      "url": "https://archive.org/details/accountofprinted00treg",
+      "files": [
+       "accountofprinted00treg_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc",
+   "lines": 44966,
+   "verified_loci": [
+    "Erasmus had one mutilated manuscript of the Apocalypse, borrowed from Reuchlin; the last six verses retranslated from the Latin — 'For the Apocalypse he had but one mutilated MS., borrowed from Reuchlin, in which the text and commentary were intermixed almost unintelligibly'",
+    "the last six verses wholly wanting — 'This was the case with regard to the last six verses, which from the mutilated condition of his MS. were wholly wanting'"
+   ],
+   "why_seated": "The succession from the 1516 Apocalypse to the received text: §3.5a.",
+   "scope": "The account whole, held for Erasmus's editions and their passage into Stephanus, Beza and the received text.",
+   "data": "https://www.alexanarch.org/data/corpora/tregelles-printed-text-1854/"
+  },
+  {
+   "seat": "EA-CORPORA-35/04",
+   "corpus": "erasmus-novum-instrumentum-1516",
+   "edition": "Erasmus, Novum Instrumentum omne (Basel, 1516), the Archive's text layer (the scan is the witness)",
+   "license": {
+    "payload": "Erasmus is public domain; the Basel printing of 1516 is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_wd8jyWdVYRYC",
+      "url": "https://archive.org/details/bub_gb_wd8jyWdVYRYC",
+      "files": [
+       "bub_gb_wd8jyWdVYRYC_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc+lat",
+   "lines": 108765,
+   "verified_loci": [],
+   "why_seated": "The printed Apocalypse as first made: §3.5a and §3.6.",
+   "scope": "The first printed Greek New Testament whole, held for its Apocalypse and the book's last page.",
+   "data": "https://www.alexanarch.org/data/corpora/erasmus-novum-instrumentum-1516/"
   }
  ],
- "count": 183
+ "count": 187
 }
