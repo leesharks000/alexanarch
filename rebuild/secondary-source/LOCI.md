@@ -333,3 +333,36 @@ Read in the third reading and entered: Vischer, Spitta, Gunkel, Bousset 1896, Ch
 Read in the fourth reading and entered: Kyrios Christos p. 375 (L41) and Bousset 1906 on 19:12–13 (L42), from the page images; the Claromontanus obeli (L17a, correction); Hippo, by Westcott's addenda (L17a).
 
 Still owed: Bousset 1896 on the sources at length; the papyri (Scrivener 1894 and Gregory 1900 predate the publication of the papyri of the Apocalypse. Checked 2026-11-05: Kenyon's edition of P47, The Chester Beatty Biblical Papyri fasc. III (1934), is held at the Internet Archive only as a lending item (access-restricted), and is not in the commons; the open-access Chester Beatty Biblical Papyri at Ninety (2023) lists Codex III, Revelation (TM 61628), and points to Malik 2016 for its codicology, whose access is unchecked. No commons source for the text of the papyri is in hand, and they are not cited until one is); the 1522 woodcuts other than n402, n439, n441 and n444, each to be viewed before any is described.
+
+## 1d. Fifth reading (2026-11-05, on ChatGPT's review of draft v0.2): rows L43–L47
+
+Post hoc, as 1b–1c.
+
+**L43. Vischer (1886) takes Luther's preface as the warrant of his source criticism** — seat revelation-criticism-1886-1920, vischer-1886 (OCR).
+> ın richtigen Beobachtungen, dass wir uns nicht versagen können, »s als die beste Legitimation für unsere Untersuchung ohne Ab- türzungen hier wiederzugeben: „In diesem Buch der Offenbarung Juhannıs lass ıch auch Jedermann seines Sinnes walten; …
+> Luther hat mit sicherem Instinct den zwiespältigen Charakte der Johannes-Apokalypse herausgefühlt … Vielleicht bietet unsere Hypothese dieses Mittel, durch welches das was in dem Buche wirklich christlich und erbauend ist, von der fremden Grundlage befreit und so erst an’s Licht gestell: wird.
+> [Bousset 1896, bousset-1896] Luthers keckes und geniales Urteil über die Apk ıst bekannt, namentlich wieder, seitdem es von Vischer als Palladium seiner kühnen Kritik der Apk vorangestellt ist.
+
+Succession between strata, documented: the source-critical derivation of the text (L35) takes the 1522 preface (L29) whole, from Irmischer's edition, as "die beste Legitimation für unsere Untersuchung"; the hypothesis offers itself as the means Luther lacked, freeing what is "wirklich christlich" in the book from "der fremden Grundlage". Bousset names the preface Vischer's "Palladium". Reading text of the OCR: "es als die beste Legitimation", "Abkürzungen", "Charakter", "gestellt wird".
+
+**L44. Dionysius: the book's obscurity received as a hidden and more wonderful meaning, HE 7.25.4–5** — seat eusebius-historia-ecclesiastica.
+> μεί- “ζονα δὲ τῆς ἐμαυτοῦ φρονήσεως τὴν ὑπόληψιν τὴν “περὶ αὐτοῦ λαμβάνων, κεκρυμμένην εἶναί τινα καὶ “θαυμασιωτέραν τὴν καθ’ ἕκαστον ἐκδοχὴν ὑπολαμ- “βάνω. καὶ γὰρ εἰ μὴ συνίημι, ἀλλ’ ὑπονοῶ γε νοῦν “τινὰ βαθύτερον ἐγκεῖσθαι τοῖς ῥήμασιν. … οὐκ ἀποδοκιμάζω ταῦτα, ἃ μὴ “συνεώρακα, θαυμάζω δὲ μᾶλλον ὅτι μὴ καὶ εἶδον.
+
+S argues for (the book above his understanding, its meaning hidden and more wonderful) · the counter-case to L22 in the same letter: the difficulty of the content is received as depth, and the difficulty of the language (L22) is filed as barbarism. Reverence for the work and a lowering of its writer's language stand in one witness.
+
+**L45. Irenaeus 4.20.10–11: the Word not in one figure; the pairing of 19:12–13 kept intact** — seat irenaeus-adversus-haereses, harvey-ii (OCR). Correction to L24 and to LOCI §2.3 (second reading).
+> manifestum est, quoniam Pater quidem invisibilis, de quo et Dominus dixit: Deum nemo vidit unquam. | Verbum autem … quemadmodum et Dominus dixit: * Unigenitus Deus, qui est in sinu Patris, ipse enarravit; et ipse autem interpretatur Patris Verbum, utpote dives, et multus exsistens, non in una figura, nec in uno charactere videbatur videntibus eum, sed secundum dispensationum ejus causas sive efficaciam
+> habens nomen scriptum, quod nemo scit. nisi ipse: et circumamictus vestimentum aspersum sanguine, et vocatur nomen ejus Verbum Dei.
+
+F presupposes, and the direction is held open. The passage that reads the Apocalypse's figures opens on John 1:18 (Unigenitus … ipse enarravit) as the principle by which the invisible Father is shown through the Word, and the Word is "dives, et multus exsistens, non in una figura, nec in uno charactere"; the Apocalypse's visions are its instances, ending on 19:11–16 quoted with the unknown name and the name Verbum Dei together. Corrected claim: Irenaeus reads the Gospel and the Apocalypse together, the Gospel giving the principle and the Apocalypse the figures, and keeps the pairing of 19:12–13 intact; the second reading's statement that in Irenaeus the Apocalypse's Verbum Dei is "the measure" and the Gospel only identifies overstates the passage and is withdrawn.
+
+**L46. Charles on 1:4: the divine name kept undeclined, "deliberately"** — seat revelation-criticism-1886-1920, charles-1920-i (OCR).
+> I. 4. ἀπὸ ὁ ὧν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος. On this wholly abnormal construction with ἀπό, which is nevertheless quite intelligible in our author and yet not in any other
+> The Seer has deliberately violated the rules of grammar in order to preserve the divine name inviolate from the change which it would necessarily have undergone if de- clined. Hence the divine name is here in the nominative. It could have been preserved in classical Greek, z.¢. ἀπὸ τοῦ ὃ ὦν. But our author shows no knowledge of this construction.
+
+The worked example of what the intention ruling of L23 forecloses, in Charles's own commentary: at the book's first naming of God (Rev 1:4, ἀπὸ ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος, gnt-nestle1904) Charles grants deliberation, a violation of grammar to keep the name unchanged by declension, and in the next sentence returns the filing ("shows no knowledge of this construction"). The general ruling (L23: "he did not do so deliberately") and the particular finding (L46: "deliberately violated") stand in one edition.
+
+**L47. Tregelles on the Complutensian: the first printed Greek New Testament** — seat tregelles-printed-text-1854 (OCR).
+> THE first printed edition of the Greek New Testament was that which formed a part of the Complutensian Polyglot; the volume in which the New Testament in Greek and Latin is contained was completed Jan. 10, 1514.
+
+Carriage, and a correction to the draft: Erasmus's 1516 Novum Instrumentum is the first published Greek New Testament; the Complutensian volume was printed first (1514). The statements "first printed Greek" of draft v0.1–v0.2 are corrected to "first published".
