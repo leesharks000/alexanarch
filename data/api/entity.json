@@ -927,12 +927,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1739,
+     "value": 1740,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1493,
+      "ACTIVE": 1494,
       "SUPERSEDED": 231,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -948,7 +948,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 321
+      "undeclared": 322
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -1000,9 +1000,9 @@
     },
     "fanout": {
      "value": {
-      "gh_releases": 1732,
-      "indexnow": 1732,
-      "wayback": 1607
+      "gh_releases": 1739,
+      "indexnow": 1739,
+      "wayback": 1609
      },
      "source": "/data/fanout-state.json"
     },
@@ -1034,11 +1034,11 @@
    "scale_at_snapshot": "69 corpora (`/api/corpora.json`; its `seats` header still reads 65), 966,572 lines. Shelf at traininglayerliterature.org/originals/.",
    "measured": {
     "corpora": {
-     "value": 172,
+     "value": 183,
      "source": "/api/corpora.json corpora[]"
     },
     "lines": {
-     "value": 7107757,
+     "value": 7709054,
      "source": "/api/corpora.json"
     }
    },
@@ -1055,11 +1055,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1739,
+     "value": 1740,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1739,
+     "value": 1740,
      "source": "registry wiki_article"
     }
    },
@@ -1126,25 +1126,25 @@
    "scale_at_snapshot": "633 addresses, 813 observations, 2026-06-07 to 2026-10-12 (`/data/EA-WG-CAPTURES-01.json` v12.167; deposit #1676, whose title says 811 captures); 2,388 semantic addresses (1,743 subjunctive, 628 observed, 17 verified non-address). Surfaces include Google AI Overview, Google AI Mode, ChatGPT, Grok, Bing Copilot, Claude and Perplexity.",
    "measured": {
     "addresses": {
-     "value": 1001,
+     "value": 1015,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "observations": {
-     "value": 1193,
+     "value": 1207,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "registry_version": {
-     "value": "12.559",
+     "value": "12.573",
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "semantic_addresses": {
-     "value": 2707,
+     "value": 2721,
      "source": "/data/semantic-addresses.json"
     },
     "semantic_address_classes": {
      "value": {
       "subjunctive": 1736,
-      "observed_address": 954,
+      "observed_address": 968,
       "verified_non_address": 17
      },
      "source": "/data/semantic-addresses.json observation_class"
@@ -1216,7 +1216,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1678,
+     "value": 1679,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1340,7 +1340,7 @@
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 395,
+     "value": 396,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1425,13 +1425,13 @@
   {
    "surface": "#1676 title",
    "header": 811,
-   "data": 1193,
+   "data": 1207,
    "note": "deposited title vs live observation_count"
   },
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1739,
+   "data": 1740,
    "note": "stated deposit count vs registry"
   },
   {
