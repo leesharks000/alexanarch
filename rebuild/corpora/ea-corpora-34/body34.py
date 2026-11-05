@@ -17,7 +17,11 @@ SEATS = [("eusebius-historia-ecclesiastica", "Seat 34/01 — Eusebius, Historia 
          ("september-testament-1522", "Seat 34/08 — Luther's September Testament (1522), facsimile of 1883", "The table of books and the 1522 preface to the Apocalypse; the scan is the witness"),
          ("erasmus-annotationes-1535", "Seat 34/09 — Erasmus, Annotationes (Basel, 1535)", "The annotations on the Apocalypse"),
          ("revelation-criticism-1886-1920", "Seat 34/10 — The critics, 1886–1920", "Vischer, Spitta, Gunkel, Bousset (1896, 1913) and Charles (1920)"),
-         ("gregory-textkritik-1900", "Seat 34/11 — Gregory, Textkritik des Neuen Testamentes I (1900)", "The manuscripts that carry the Apocalypse, and the lectionaries")]
+         ("gregory-textkritik-1900", "Seat 34/11 — Gregory, Textkritik des Neuen Testamentes I (1900)", "The manuscripts that carry the Apocalypse, and the lectionaries"),
+         ("scrivener-plain-introduction-1894", "Seat 34/12 — Scrivener, A Plain Introduction, 4th ed. (1894)", "The manuscripts of the Apocalypse and the printed editions (added at v1.1)"),
+         ("delitzsch-handschriftliche-funde-1861", "Seat 34/13 — Delitzsch, Handschriftliche Funde (1861)", "Reuchlin's codex, the one exemplar of the first printed Apocalypse (added at v1.1)"),
+         ("tregelles-printed-text-1854", "Seat 34/14 — Tregelles, An Account of the Printed Text (1854)", "The succession from Erasmus to the received text (added at v1.1)"),
+         ("erasmus-novum-instrumentum-1516", "Seat 34/15 — Erasmus, Novum Instrumentum (1516)", "The first printed Greek New Testament, its Apocalypse; the scan is the witness (added at v1.1)")]
 lic = lambda l: l["payload"] if isinstance(l, dict) else str(l)
 
 
@@ -50,7 +54,7 @@ def section(corpus, heading, sub):
 
 
 
-title = "EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory)"
+title = "EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory; and the Carriage: Scrivener, Delitzsch, Tregelles, Erasmus 1516)"
 parts, tot, nw = [], 0, 0
 for c, h, sub in SEATS:
     t, s = section(c, h, sub); parts.append(t); tot += s["lines_total"]; nw += s["works"]["count"]
@@ -63,21 +67,23 @@ The author asked for the seating on 2026-11-05: "also - lets gather up and seat 
 
 The research occasion is Secondary Source, the reception study of how the Apocalypse came to be received as derivative, secondary and marginal (design v0.3, drafts/SECONDARY-SOURCE-design-2026-11-05.md, not deposited). Its §5 lists the debts the study must read in seat before drafting; these eleven seats carry them, in the languages the texts were written in. The fathers come from the First1KGreek TEI and from public editions on the Internet Archive; the catalogues of the fourth century are read in Westcott's appendix of the original texts; the Western counter-witness to the Byzantine lectionary is the Fourth Council of Toledo in the Collectio Hispana; the Reformation is held in the 1522 September Testament and Erasmus's Annotationes; the critics run from Vischer (1886) to Charles (1920).
 
-Declared and not pursued (commons only): Metzger 1987, Hahneman 1992 and the Weimar Ausgabe Deutsche Bibel 7 (in copyright); Zwingli's Sämtliche Werke (access-restricted at the Archive). The Greek of Cyril's Catecheses, of Gregory of Nazianzus's Carmina and of Amphilochius's Iambi is read in Westcott's appendix, no public TEI of them being reachable in session.
+Version 1.1 adds four seats (34/12–34/15), at the operator's words of 2026-11-05: "we should also be tracking material manuscript transmission and succession, that seems particularly important with revelation and less-often and -critically studied than pure reception" (11:02 EST), and "lets bundle the 35 sources with 34 and version in place - theyre of a piece" (11:11 EST). They carry the study's fifth count, carriage: what materially carries the book and from what each carrier descends. Erasmus made the Apocalypse of 1516 from one manuscript lent by Reuchlin, in which text and commentary were mixed; its last verses were wanting, and he supplied them from the Latin. Delitzsch found that manuscript again in 1861; Tregelles and Scrivener trace what it became in the printed text; Erasmus's 1516 printing is seated as the witness.
+
+Declared and not pursued (commons only): Metzger 1987, Hahneman 1992 and the Weimar Ausgabe Deutsche Bibel 7 (in copyright); Zwingli's Sämtliche Werke (access-restricted at the Archive); Hoskier, Concerning the Text of the Apocalypse (1929), its term unclear. The Greek of Cyril's Catecheses, of Gregory of Nazianzus's Carmina and of Amphilochius's Iambi is read in Westcott's appendix, no public TEI of them being reachable in session.
 """
 tail2 = """## How the seats were made
 
-Every seat was fetched in session and hashed into its MANIFEST.sha256, with a source.json recording edition, origin, licence, normalization, the loci verified in the text layer, and the research the seat was made for. The builders are under rebuild/corpora/ea-corpora-34/: gen_spec34.py writes the specs, build34.py builds each seat, fix_loci34.py gives the Greek loci in the code points of the seated TEI (which is not in NFC), index_seats34.py enters the seats in the index, and body34.py writes this body.
+Every seat was fetched in session and hashed into its MANIFEST.sha256, with a source.json recording edition, origin, licence, normalization, the loci verified in the text layer, and the research the seat was made for. The builders are under rebuild/corpora/ea-corpora-34/: gen_spec34.py writes the specs of 34/01–34/11 and gen_spec34_carriage.py those of 34/12–34/15, build34.py builds each seat, fix_loci34.py gives the Greek loci in the code points of the seated TEI (which is not in NFC), index_seats34.py enters the seats in the index, and body34.py writes this body.
 """
 body = hdr + "\n" + "\n".join(parts) + "\n" + tail2
 desc = ("The thirty-fourth seating of the originals shelf, eleven seats, the sources of Secondary Source, the reception study of how the Apocalypse came to be "
         "received as derivative, secondary and marginal, seated before drafting: Eusebius's Historia ecclesiastica in Greek (Dindorf); Irenaeus in Harvey's Greek and Latin; "
         "Justin's Dialogue; the Muratorian fragment in Tregelles's edition; Epiphanius's Panarion (Holl); Westcott's survey with the catalogues of the first eight centuries; "
         "the Collectio Hispana with the Fourth Council of Toledo; Luther's September Testament of 1522; Erasmus's Annotationes; Vischer, Spitta, Gunkel, Bousset and Charles; "
-        "and Gregory's Textkritik for the manuscripts and lectionaries.")
+        "and Gregory's Textkritik for the manuscripts and lectionaries; and, at v1.1, the carriage of the book: Scrivener's Plain Introduction (1894), Delitzsch's Handschriftliche Funde (1861) on Reuchlin's codex, Tregelles's Account of the Printed Text (1854) on the last six verses supplied from the Latin, and Erasmus's Novum Instrumentum of 1516.")
 kw = ("EA-CORPORA, originals shelf, Secondary Source, Apocalypse, Revelation, reception history, canon, Eusebius, Historia ecclesiastica, Irenaeus, Justin Martyr, "
       "Muratorian fragment, Epiphanius, Alogi, Gaius, Dionysius of Alexandria, Laodicea, Cyril of Jerusalem, Athanasius, Toledo IV, lectionary, Luther, September Testament, "
-      "Erasmus, Vischer, Spitta, Gunkel, Bousset, Kyrios Christos, Charles, Gregory, Textkritik, Revelation First")
+      "Erasmus, Vischer, Spitta, Gunkel, Bousset, Kyrios Christos, Charles, Gregory, Textkritik, Revelation First, manuscripts, carriage, succession, Reuchlin, Andreas of Caesarea, Novum Instrumentum, Delitzsch, Tregelles, Scrivener, Textus Receptus")
 issue = "\n".join([
     "### Protocol Version\n\nalexanarch-deposit-protocol/v1\n",
     f"### Title\n\n{title}\n", "### Creator\n\nCranes, Rebekah\n", "### ORCID\n\n0009-0000-1599-0703\n",
@@ -88,7 +94,7 @@ issue = "\n".join([
     "AXN deposit #1420 — The Argument of the Bookshelf, whose mechanism the study tests\n"
     "AXN deposit #1738 — EA-CORPORA-33: the thirty-third seating, whose builder this seating uses\n"
     "AXN deposit #1733 — Legitimately Many, the companion reception study\n",
-    "### Version\n\nv1.0\n",
+    "### Version\n\nv1.1\n",
     "### Methodology\n\nEach seat fetched in session from the source its record names (First1KGreek, the Internet Archive), kept as served, reduced to a text layer by code and hashed into its MANIFEST.sha256; licences read at the file; loci verified by substring in the text layer, the Greek loci in the TEI's own code points; public-domain status checked against first publication and the editor's death. No text corrected by hand. The builders and this body are under rebuild/corpora/ea-corpora-34/.\n",
     "### Falsification Conditions\n\nA seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text layer it names; if a work is misattributed, misdated or assigned to the wrong edition; if a licence recorded for an item is not the one its source states; if a work seated as public domain is not, in the jurisdiction stated; or if the four surfaces (seat, index, deposit, shelf) disagree.\n",
     f"### Body\n\n{body}",

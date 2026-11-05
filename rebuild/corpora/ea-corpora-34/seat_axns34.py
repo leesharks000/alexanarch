@@ -9,7 +9,10 @@ import hashlib, json, pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT / "scripts")); import axn_lib as A
 DEP = int(sys.argv[1])
-NAMES = ['eusebius-historia-ecclesiastica', 'irenaeus-adversus-haereses', 'justin-dialogus', 'muratorian-fragment-tregelles', 'epiphanius-panarion', 'westcott-canon-1896', 'collectio-hispana-1808', 'september-testament-1522', 'erasmus-annotationes-1535', 'revelation-criticism-1886-1920', 'gregory-textkritik-1900']
+ASSIGNED = "2026-11-05"
+ONLY = [a for a in sys.argv[2:] if not a.startswith("--")]
+NAMES = ['eusebius-historia-ecclesiastica', 'irenaeus-adversus-haereses', 'justin-dialogus', 'muratorian-fragment-tregelles', 'epiphanius-panarion', 'westcott-canon-1896', 'collectio-hispana-1808', 'september-testament-1522', 'erasmus-annotationes-1535', 'revelation-criticism-1886-1920', 'gregory-textkritik-1900', 'scrivener-plain-introduction-1894', 'delitzsch-handschriftliche-funde-1861', 'tregelles-printed-text-1854', 'erasmus-novum-instrumentum-1516']
+if ONLY: NAMES = [n for n in NAMES if n in ONLY]
 d = next(x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"] if x["deposit_number"] == DEP)
 I = json.loads((ROOT / "data/api/corpora.json").read_text(encoding="utf-8"))
 M = json.loads((ROOT / "datasets/corpora/corpora.json").read_text(encoding="utf-8"))
@@ -26,7 +29,7 @@ if "--apply" in sys.argv:
         sj = seat / "source.json"; s = json.loads(sj.read_text(encoding="utf-8"))
         s["axn"] = a
         s["axn_basis"] = {"sha256_of": "MANIFEST.sha256", "sha256": h, "hex_of": f"#{DEP} ({d['axn']})", "family": "ORIGINAL",
-                          "glyph_table": A.AXN_GLYPH_TABLE, "assigned": "2026-11-04"}
+                          "glyph_table": A.AXN_GLYPH_TABLE, "assigned": ASSIGNED}
         s["spine"] = f"EA-CORPORA-34 (#{DEP})"
         s.pop("seating", None)
         sj.write_text(json.dumps(s, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

@@ -4,7 +4,7 @@ alexanarch-deposit-protocol/v1
 
 ### Title
 
-EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory)
+EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory; and the Carriage: Scrivener, Delitzsch, Tregelles, Erasmus 1516)
 
 ### Creator
 
@@ -20,7 +20,7 @@ Cranes, Rebekah
 
 ### Description
 
-The thirty-fourth seating of the originals shelf, eleven seats, the sources of Secondary Source, the reception study of how the Apocalypse came to be received as derivative, secondary and marginal, seated before drafting: Eusebius's Historia ecclesiastica in Greek (Dindorf); Irenaeus in Harvey's Greek and Latin; Justin's Dialogue; the Muratorian fragment in Tregelles's edition; Epiphanius's Panarion (Holl); Westcott's survey with the catalogues of the first eight centuries; the Collectio Hispana with the Fourth Council of Toledo; Luther's September Testament of 1522; Erasmus's Annotationes; Vischer, Spitta, Gunkel, Bousset and Charles; and Gregory's Textkritik for the manuscripts and lectionaries.
+The thirty-fourth seating of the originals shelf, eleven seats, the sources of Secondary Source, the reception study of how the Apocalypse came to be received as derivative, secondary and marginal, seated before drafting: Eusebius's Historia ecclesiastica in Greek (Dindorf); Irenaeus in Harvey's Greek and Latin; Justin's Dialogue; the Muratorian fragment in Tregelles's edition; Epiphanius's Panarion (Holl); Westcott's survey with the catalogues of the first eight centuries; the Collectio Hispana with the Fourth Council of Toledo; Luther's September Testament of 1522; Erasmus's Annotationes; Vischer, Spitta, Gunkel, Bousset and Charles; and Gregory's Textkritik for the manuscripts and lectionaries; and, at v1.1, the carriage of the book: Scrivener's Plain Introduction (1894), Delitzsch's Handschriftliche Funde (1861) on Reuchlin's codex, Tregelles's Account of the Printed Text (1854) on the last six verses supplied from the Latin, and Erasmus's Novum Instrumentum of 1516.
 
 ### Content Type
 
@@ -36,7 +36,7 @@ Human–machine collaborative. Rebekah Cranes is a heteronym of Lee Sharks, the 
 
 ### Keywords
 
-EA-CORPORA, originals shelf, Secondary Source, Apocalypse, Revelation, reception history, canon, Eusebius, Historia ecclesiastica, Irenaeus, Justin Martyr, Muratorian fragment, Epiphanius, Alogi, Gaius, Dionysius of Alexandria, Laodicea, Cyril of Jerusalem, Athanasius, Toledo IV, lectionary, Luther, September Testament, Erasmus, Vischer, Spitta, Gunkel, Bousset, Kyrios Christos, Charles, Gregory, Textkritik, Revelation First
+EA-CORPORA, originals shelf, Secondary Source, Apocalypse, Revelation, reception history, canon, Eusebius, Historia ecclesiastica, Irenaeus, Justin Martyr, Muratorian fragment, Epiphanius, Alogi, Gaius, Dionysius of Alexandria, Laodicea, Cyril of Jerusalem, Athanasius, Toledo IV, lectionary, Luther, September Testament, Erasmus, Vischer, Spitta, Gunkel, Bousset, Kyrios Christos, Charles, Gregory, Textkritik, Revelation First, manuscripts, carriage, succession, Reuchlin, Andreas of Caesarea, Novum Instrumentum, Delitzsch, Tregelles, Scrivener, Textus Receptus
 
 ### Related Identifiers
 
@@ -47,7 +47,7 @@ AXN deposit #1733 — Legitimately Many, the companion reception study
 
 ### Version
 
-v1.0
+v1.1
 
 ### Methodology
 
@@ -59,7 +59,7 @@ A seat is falsified if its files do not verify against its MANIFEST.sha256 at th
 
 ### Body
 
-# EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory)
+# EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory; and the Carriage: Scrivener, Delitzsch, Tregelles, Erasmus 1516)
 
 # EA-CORPORA-34 — The Thirty-Fourth Seating
 
@@ -67,7 +67,9 @@ The author asked for the seating on 2026-11-05: "also - lets gather up and seat 
 
 The research occasion is Secondary Source, the reception study of how the Apocalypse came to be received as derivative, secondary and marginal (design v0.3, drafts/SECONDARY-SOURCE-design-2026-11-05.md, not deposited). Its §5 lists the debts the study must read in seat before drafting; these eleven seats carry them, in the languages the texts were written in. The fathers come from the First1KGreek TEI and from public editions on the Internet Archive; the catalogues of the fourth century are read in Westcott's appendix of the original texts; the Western counter-witness to the Byzantine lectionary is the Fourth Council of Toledo in the Collectio Hispana; the Reformation is held in the 1522 September Testament and Erasmus's Annotationes; the critics run from Vischer (1886) to Charles (1920).
 
-Declared and not pursued (commons only): Metzger 1987, Hahneman 1992 and the Weimar Ausgabe Deutsche Bibel 7 (in copyright); Zwingli's Sämtliche Werke (access-restricted at the Archive). The Greek of Cyril's Catecheses, of Gregory of Nazianzus's Carmina and of Amphilochius's Iambi is read in Westcott's appendix, no public TEI of them being reachable in session.
+Version 1.1 adds four seats (34/12–34/15), at the operator's words of 2026-11-05: "we should also be tracking material manuscript transmission and succession, that seems particularly important with revelation and less-often and -critically studied than pure reception" (11:02 EST), and "lets bundle the 35 sources with 34 and version in place - theyre of a piece" (11:11 EST). They carry the study's fifth count, carriage: what materially carries the book and from what each carrier descends. Erasmus made the Apocalypse of 1516 from one manuscript lent by Reuchlin, in which text and commentary were mixed; its last verses were wanting, and he supplied them from the Latin. Delitzsch found that manuscript again in 1861; Tregelles and Scrivener trace what it became in the printed text; Erasmus's 1516 printing is seated as the witness.
+
+Declared and not pursued (commons only): Metzger 1987, Hahneman 1992 and the Weimar Ausgabe Deutsche Bibel 7 (in copyright); Zwingli's Sämtliche Werke (access-restricted at the Archive); Hoskier, Concerning the Text of the Apocalypse (1929), its term unclear. The Greek of Cyril's Catecheses, of Gregory of Nazianzus's Carmina and of Amphilochius's Iambi is read in Westcott's appendix, no public TEI of them being reachable in session.
 
 ## Seat 34/01 — Eusebius, Historia ecclesiastica (Dindorf, 1871)
 
@@ -253,9 +255,70 @@ Declared and not pursued (commons only): Metzger 1987, Hahneman 1992 and the Wei
 - Why seated: The material order: the book's transmission and its absence from the lectionary: stratum 3.5.
 - Files: [the seat](https://www.alexanarch.org/data/corpora/gregory-textkritik-1900/) — [source.json](https://www.alexanarch.org/data/corpora/gregory-textkritik-1900/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/gregory-textkritik-1900/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/gregory-textkritik-1900](https://traininglayerliterature.org/originals/gregory-textkritik-1900/)
 
+## Seat 34/12 — Scrivener, A Plain Introduction, 4th ed. (1894)
+
+*The manuscripts of the Apocalypse and the printed editions (added at v1.1)*
+
+- Works:
+  - Scrivener, A Plain Introduction, 4th ed., vol. I (1894): the manuscripts
+  - Scrivener, A Plain Introduction, 4th ed., vol. II (1894): the versions and the printed editions
+- Licence: Scrivener (died 1891) and Miller (died 1898) are public domain everywhere.
+- Verified locus: Erasmus's own note, as Scrivener quotes it: words at the end of the book wanting in the Greek, added from the Latin — 'nonnulla verba reperi apud nostros, quae aberant in Graecis exem- plaribus, ea tamen ex latinis adjecimus'
+- Lines: 56,110 in 2 text files (2 works)
+- Normalization: The Internet Archive's own text layer (_djvu.txt) as served, under original/<identifier>/, copied to text/<slug>.ocr.txt with line endings normalized. The PDF of each item is held by reference at its Archive URL and not copied. No text was corrected by hand; the loci keep the OCR's readings.
+- Scope: Both volumes whole, held for the manuscripts of the Apocalypse (the uncials and the minuscules), the lectionaries, and the printed editions from Erasmus to the received text.
+- Research: seated for the study Secondary Source: the reception of the Apocalypse as derivative, secondary and marginal (drafts/SECONDARY-SOURCE-design-2026-11-05.md (v0.4, sha256 c645d2e3…); not yet drafted; the locus table is rebuild/secondary-source/LOCI.md), the debts of design v0.4 §5 for carriage and succession (§2.5, §3.5a); for design v0.4 §2.5, §3.5a
+- Why seated: The standard public account of the carriers and of the succession into print: §3.5a.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/scrivener-plain-introduction-1894/) — [source.json](https://www.alexanarch.org/data/corpora/scrivener-plain-introduction-1894/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/scrivener-plain-introduction-1894/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/scrivener-plain-introduction-1894](https://traininglayerliterature.org/originals/scrivener-plain-introduction-1894/)
+
+## Seat 34/13 — Delitzsch, Handschriftliche Funde (1861)
+
+*Reuchlin's codex, the one exemplar of the first printed Apocalypse (added at v1.1)*
+
+- Works:
+  - Delitzsch, Handschriftliche Funde (1861), the Archive's text layer
+- Licence: Delitzsch (died 1890) is public domain everywhere.
+- Verified locus: the title: the Erasmian distortions of the text of the Apocalypse, shown from Reuchlin's codex thought lost — 'DIE ERASMISCHEN ENTSTELLUNGEN DES TEXTES DER APOKALYPSE, NACHGEWIESEN AUS DEM VERLOREN GEGLAUBTEN CODEX REUCHLINS'
+- Lines: 7,611 in 1 text file (1 works)
+- Normalization: The Internet Archive's own text layer (_djvu.txt) as served, under original/<identifier>/, copied to text/<slug>.ocr.txt with line endings normalized. The PDF of each item is held by reference at its Archive URL and not copied. No text was corrected by hand; the loci keep the OCR's readings.
+- Scope: The volume whole, held for Reuchlin's codex of the Apocalypse with Andreas's commentary, rediscovered by Delitzsch, and Erasmus's use of it in 1516.
+- Research: seated for the study Secondary Source: the reception of the Apocalypse as derivative, secondary and marginal (drafts/SECONDARY-SOURCE-design-2026-11-05.md (v0.4, sha256 c645d2e3…); not yet drafted; the locus table is rebuild/secondary-source/LOCI.md), the debts of design v0.4 §5 for carriage and succession (§2.5, §3.5a); for design v0.4 §3.5a
+- Why seated: The one exemplar of the first printed Apocalypse, and what Erasmus did where it failed: §3.5a.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/delitzsch-handschriftliche-funde-1861/) — [source.json](https://www.alexanarch.org/data/corpora/delitzsch-handschriftliche-funde-1861/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/delitzsch-handschriftliche-funde-1861/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/delitzsch-handschriftliche-funde-1861](https://traininglayerliterature.org/originals/delitzsch-handschriftliche-funde-1861/)
+
+## Seat 34/14 — Tregelles, An Account of the Printed Text (1854)
+
+*The succession from Erasmus to the received text (added at v1.1)*
+
+- Works:
+  - Tregelles, An Account of the Printed Text (1854), the Archive's text layer
+- Licence: Tregelles (died 1875) is public domain everywhere.
+- Verified locus: Erasmus had one mutilated manuscript of the Apocalypse, borrowed from Reuchlin; the last six verses retranslated from the Latin — 'For the Apocalypse he had but one mutilated MS., borrowed from Reuchlin, in which the text and commentary were intermixed almost unintelligibly'
+- Verified locus: the last six verses wholly wanting — 'This was the case with regard to the last six verses, which from the mutilated condition of his MS. were wholly wanting'
+- Lines: 44,966 in 1 text file (1 works)
+- Normalization: The Internet Archive's own text layer (_djvu.txt) as served, under original/<identifier>/, copied to text/<slug>.ocr.txt with line endings normalized. The PDF of each item is held by reference at its Archive URL and not copied. No text was corrected by hand; the loci keep the OCR's readings.
+- Scope: The account whole, held for Erasmus's editions and their passage into Stephanus, Beza and the received text.
+- Research: seated for the study Secondary Source: the reception of the Apocalypse as derivative, secondary and marginal (drafts/SECONDARY-SOURCE-design-2026-11-05.md (v0.4, sha256 c645d2e3…); not yet drafted; the locus table is rebuild/secondary-source/LOCI.md), the debts of design v0.4 §5 for carriage and succession (§2.5, §3.5a); for design v0.4 §3.5a
+- Why seated: The succession from the 1516 Apocalypse to the received text: §3.5a.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/tregelles-printed-text-1854/) — [source.json](https://www.alexanarch.org/data/corpora/tregelles-printed-text-1854/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/tregelles-printed-text-1854/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/tregelles-printed-text-1854](https://traininglayerliterature.org/originals/tregelles-printed-text-1854/)
+
+## Seat 34/15 — Erasmus, Novum Instrumentum (1516)
+
+*The first printed Greek New Testament, its Apocalypse; the scan is the witness (added at v1.1)*
+
+- Works:
+  - Erasmus, Novum Instrumentum omne (Basel, 1516), the Archive's text layer (the scan is the witness)
+- Licence: Erasmus is public domain; the Basel printing of 1516 is public domain everywhere.
+- Lines: 108,765 in 1 text file (1 works)
+- Normalization: The Internet Archive's own text layer (_djvu.txt) as served, under original/<identifier>/, copied to text/<slug>.ocr.txt with line endings normalized. The PDF of each item is held by reference at its Archive URL and not copied. No text was corrected by hand; the loci keep the OCR's readings.
+- Scope: The first printed Greek New Testament whole, held for its Apocalypse and the book's last page.
+- Research: seated for the study Secondary Source: the reception of the Apocalypse as derivative, secondary and marginal (drafts/SECONDARY-SOURCE-design-2026-11-05.md (v0.4, sha256 c645d2e3…); not yet drafted; the locus table is rebuild/secondary-source/LOCI.md), the debts of design v0.4 §5 for carriage and succession (§2.5, §3.5a); for design v0.4 §3.5a, §3.6
+- Why seated: The printed Apocalypse as first made: §3.5a and §3.6.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/erasmus-novum-instrumentum-1516/) — [source.json](https://www.alexanarch.org/data/corpora/erasmus-novum-instrumentum-1516/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/erasmus-novum-instrumentum-1516/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/erasmus-novum-instrumentum-1516](https://traininglayerliterature.org/originals/erasmus-novum-instrumentum-1516/)
+
 ## How the seats were made
 
-Every seat was fetched in session and hashed into its MANIFEST.sha256, with a source.json recording edition, origin, licence, normalization, the loci verified in the text layer, and the research the seat was made for. The builders are under rebuild/corpora/ea-corpora-34/: gen_spec34.py writes the specs, build34.py builds each seat, fix_loci34.py gives the Greek loci in the code points of the seated TEI (which is not in NFC), index_seats34.py enters the seats in the index, and body34.py writes this body.
+Every seat was fetched in session and hashed into its MANIFEST.sha256, with a source.json recording edition, origin, licence, normalization, the loci verified in the text layer, and the research the seat was made for. The builders are under rebuild/corpora/ea-corpora-34/: gen_spec34.py writes the specs of 34/01–34/11 and gen_spec34_carriage.py those of 34/12–34/15, build34.py builds each seat, fix_loci34.py gives the Greek loci in the code points of the seated TEI (which is not in NFC), index_seats34.py enters the seats in the index, and body34.py writes this body.
 
 ### Terms
 
