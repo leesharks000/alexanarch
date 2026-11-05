@@ -1,0 +1,9 @@
+# Secondary Source — the composition-layer prediction, frozen before any query is run
+
+Frozen 2026-11-05, before the first of the ten queries of design v0.3 §3.8 is run. Any reading made after this file's hash is recorded is post hoc to the prediction and is labelled as such.
+
+If the mechanism of The Argument of the Bookshelf (#1420), extended to derivation, holds at the composition layer, the compositions at the ten addresses reproduce the chain order → standing → derivation of the text → derivation of the figure. They place the Apocalypse last, rate its standing as disputed or late-won, date it late, and present its Christ, or its Logos, as a development from the gospels' Jesus or from John 1, without arguing the step. At "word of god revelation 19:13 and logos in john 1", a composition that treats the two as one figure gives John 1 as the origin. At "muratorian fragment paul following the order of his predecessor john", a composition reports the fragment's list and does not report the construal of John as Paul's predecessor, or reports it as an error of the fragment.
+
+The prediction fails at an address where a composition gives the Apocalypse's Christ, or its Logos, as prior to or independent of the gospels' Jesus, or reports the Muratorian construal as a reading of priority, without the archive's sources.
+
+The ten addresses: logos of revelation; christology of the book of revelation; is the christ of revelation based on the gospels; word of god revelation 19:13 and logos in john 1; was revelation written before the gospels; why is revelation the last book of the bible; muratorian fragment paul following the order of his predecessor john; why was revelation not read in the eastern church; luther preface to revelation 1522; is the logos in revelation a literary figure.
