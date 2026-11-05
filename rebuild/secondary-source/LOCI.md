@@ -239,6 +239,56 @@ Carriage. The title of Erasmus's Greek copies, "Ioannis theologi" (L30), the tit
 
 Carriage and the figure. In this scan the leaves without text (three words or fewer in the scan's own OCR map), apart from the facsimile's title leaves and the back board, are twenty-one, and all twenty-one fall within the Revelation (n402 to n448); n402, viewed, is a full-page cut of Rev 1:12–17: the figure among the seven lampstands, the seven stars in the right hand, the sword from the mouth, the seer fallen at the feet. The one book of the 1522 testament that the printing illustrates is the book whose preface, on the leaf before the first cut, finds Christ in it "widder geleret noch erkandt" (L29). The volume's only full-page images are the book's, the first of them its figure of 1:12–17, and the preface measures that figure against "klaren vnd durren wortten" and finds it absent.
 
+## 1c. Third reading (2026-11-05): the critics, rows L35–L41
+
+Post hoc to the design and the frozen prediction, as 1b. Seat revelation-criticism-1886-1920 (OCR) throughout; whitespace collapsed in the quotations, wording and OCR as seated. The rows are read for the three steps of §2.7 (a difficulty perceived as a defect; the defect explained; the explanation excusing, charged to transmission or source, or belittling, charged to the writer), and for the figure count at 19:13, where the stake of design §0.3 stands: the book's own naming of the Logos.
+
+**L35. Vischer (1886): a Jewish apocalypse in Christian revision** — vischer-1886.
+> Heft 3: Die Offenbarung Johannis als eine jüdische Apokalypse in christ- licher Bearbeitung nachgewiesen von Eberhard Vischer
+> dafür, dass die ursprüngliche Sprache der Schrift die hebräische und nicht die griechische gewesen ist.
+> auch der Satz: xal κέχληται τὸ ὄνομα αὐτοῦ ὁ λόγος τοῦ ϑεοῦ, 19, 13 wird christlich sein,
+> Zudem passt die Anspielung auf die Logosspeculation, von der sich in der ganzen Schrift sonst nirgends eine Spur findet, nicht hieher
+
+D argues for (a Jewish Grundschrift, a Christian translator-reviser) · F argues for, by excision: the book's naming of the Logos is assigned to the reviser. The language is explained by transmission (translation from Hebrew: the excusing form), and the price of the excuse is the book's Christian content, the Logos name first. The ground given for the excision is that the name has no trace elsewhere in the book; the name the book gives is removed for being the only time the book gives it.
+
+**L36. Spitta (1889): the Logos name from the redactor, a reminiscence of the Gospel's prologue** — spitta-1889.
+> und wenn die Worte: al neuAntaı tb Övoua abrod 6 Aödyos Tod Seod, vom R stam- men. Auf 8.202 habe ich gezeigt, dals sich dieser Zusatz am natürlichsten aus einer Reminiscenz an den Prolog des Johannes- Evangeliums begreift.
+> [quoting Pfleiderer] Wer weils, ob’s nicht vielleicht dieselbe christliche Hand war, welche dort und hier den neuen Messiasnamen eingefügt hat, um dadurch das jüdische Messiasbild zu christianisieren im Sinne der Logoschristologie des zweiten Jahrhunderts.“
+> dals sie, die Verwendung des Logos-Namens an der Spitze, auf die Existenz des johanneischen Evangeliums zurückweisen,
+
+F argues for, in the plainest form the table holds: the book's Logos is a Zusatz explained as a reminiscence of John 1, and the redactor's Johannine features "point back to the existence of the Johannine Gospel". The direction of derivation is stated outright: the Gospel exists first, and the Apocalypse's Logos remembers it. This is the derivation design §0.3 names as the stake, and here it is the conclusion of a source analysis.
+
+**L37. Gunkel (1895): the strange as the darkening of an older tradition** — gunkel-1895.
+> Herkunft der Tradition p 357—362. (Nicht aus dem Christentum oder Judentum p357f.
+> solche Auslassungen, Zusätze, Verschiebungen, welche spätere Ge- schlechter an dem alten Stoffe vorgenommen haben, verraten sich in der vorliegenden Codifikation dadurch, dass der Zusammenhang der Erzählung, der einst lückenlos gewesen ist, gegenwärtig irgend welche Unklarheiten oder Sonderbarkeiten aufweist, oder dass einzelne Züge, die zur Zeit ihrer Entstehung ihren guten Sinn ge- habt haben, weder aus dem vorliegenden Zusammenhange deut- lich sind, noch als allgemein bekannt gelten können, und daher sonderbar abrupt und unverständlich aussehen.
+> Wie man das Alter eines Gemäldes an der Xachdunkelung erkennt, so erkennt man das Alter einer Tradition au solchen Verdunkelungen'.
+> deutlich, dass es sich hier um Traditionen han- delt, die die Verfasser selbst zum grossen Teile nicht mehr verstanden haben
+
+D argues for (Rev 12 neither Christian nor Jewish: Babylonian) · the three steps of §2.7 stated as method. The strange and the unintelligible (Sonderbarkeiten, sonderbar abrupt und unverständlich) are read as Verdunkelungen, the darkening by which a tradition's age is known, and research begins at them and aims at the original coherence. Both explanations are given at once: the strangeness is charged to transmission (the alterations of later generations) and to the writers, who no longer understood their traditions. Gunkel's principle is the general form of the filing the operator described on 2026-11-05; in it the difficult is by definition a residue, and its meaning lies before the text.
+
+**L38. Bousset (1896): the Logos name kept, as a trace of Johannine theology** — bousset-1896.
+> Dass in dem Logosnamen eine Spur johanneischer Theologie vorliegt, kann nicht bezweifelt werden.
+> Bei der richtigen Erklärung des »unbekannten Namens» liegt ein litte- rarischer Verdacht gegen diesen Satz nicht mehr vor.
+> beweist?) für sich allein schon die Erwähnung des Logos 1913.
+
+F argues for (the name is the book's, and it is a trace, Spur, of Johannine theology; it proves by itself a literary relation to the Johannine writings). The name is kept and filed as derivative in the same sentence. Discrepancy recorded and left unresolved: Charles (L39) lists Bousset among those who took 19:13b as "the addition of a scribe or reviser"; the edition seated here (1896) says that with the right explanation of the unknown name no literary suspicion against the sentence remains. Charles may cite another edition (the second, 1906, is not seated).
+
+**L39. Charles (1920) on 19:12b–13: one of the two names cut** — charles-1920-ii.
+> 12°. [ἔχων ὄνομα γεγραμμένον ὃ οὐδεὶς οἶδεν εἰ μὴ αὐτός.] … this clause appears to be inter- polated.
+> Moreover, the statement that no one knows His name save Him- self is flatly contradicted in the next verse (13°), where the words καὶ κέκληται τὸ ὄνομα αὐτοῦ Ὁ Λόγος τοῦ θεοῦ cannot be explained away
+> This line has been taken by Volter, Spitta, Hilgenfeld, Bousset, and others to be the addition of a scribe or reviser.
+> which accordingly comes from the hand of our author. We have here another of the numerous instances of community of diction between the Apocalypse and the Fourth Gospel, in many of which there is no community of meaning. For the Logos here is a Warrior,
+
+F revises. The text sets two things side by side: a name written that no one knows but he himself (19:12), and the name he is called, ὁ λόγος τοῦ θεοῦ (19:13). The critics read the pair as a contradiction, and one of the two goes: the earlier critics cut 13b, the Logos (L35, L36); Charles keeps it and cuts 12b, the unknown name, which his commentary prints in brackets. Neither reading admits the pairing itself (a name withheld beside the name given) as the book's statement. Charles's keeping of the Logos is then measured by the Gospel and found different in meaning ("the Logos here is a Warrior").
+
+**L40. Charles (1920) on the date** — charles-1920-i.
+> This may be in part due to the survival in the sources used by our author of statements and situations pre- supposing an earlier date than that of Domitian.
+> Neither in Clement nor Origen is Domitian’s name given, but it may be presumed that it was in the mind of these writers.
+
+Order and date. The evidence for earlier dates is explained as survivals in the author's sources (the excusing form, applied to a datum that does not fit); the silence of Clement and Origen is filled by presumption. Irenaeus's sentence is cited as Domitianic evidence (charles-1920-i at "οὐδὲ γὰρ πρὸ πολλοῦ χρόνου ἑωράθη") without discussion of the subject of ἑωράθη (§2.6, L2–L3).
+
+**L41. Bousset, Kyrios Christos (1913)** — bousset-kyrios-1913. Not read: the seated text layer is OCR of Fraktur so corrupted that it cannot carry a quotation (e.g. "gerabe bie (Beftalt bes Logos !eine ^eroorragcnbe Rolle fpielt"). To be read from the page images before any row is written.
+
 ## 1a. What carriage adds (first reading)
 
 The count of carriage (design v0.4 §2.5) records a derivation of the text that no reader argued: the book's first printed Greek text descends from a single commentary manuscript, and its final verses from the Latin (L19–L21). Every later stratum that read the printed Greek read that succession. This is the one place in the table where the book's text was secondary in the literal sense, made from a copy of a commentary and, at its close, from a version.
@@ -259,10 +309,14 @@ The count of carriage (design v0.4 §2.5) records a derivation of the text that 
 
 2.7. The filing of the language (L22, L23, L32). The book's Greek is filed as barbarism and solecism by Dionysius with the instances withheld (ἅπερ οὐκ ἀναγκαῖον νῦν ἐκλέγειν), and his measure is the Gospel's correct Greek. Charles finds the grammar lawful and the Seer's own and keeps the filing, adding a ruling on intention; transmission is charged with the book's disorder, and the transmitter is credited with the better Greek. Erasmus states the rule that a solecism does not cost a writer of scripture standing, "quum ídem reperíatut ín fcríptís apoftolorum", and the rule is not applied to the Apocalypse in the strata read. The archive's position, by the operator's ruling of 2026-11-05, is that the supposed defects are no defects: "the form the language takes in writing when logos splits it wide the fuck open". The count records the asymmetry of the charge: with Aristotle's corpus the difficulty is charged to transmission (the lecture-notes filing), with the Apocalypse to the writer (L23). The operator's ruling of 11:39 states the frame of the study: "what we are describing is small minds taking what is difficult, strange, and inexplicable, perceiving it as a defect, and explaining it in a way that either excuses or belittles. when what is difficult, strange, and inexplicable in these texts is their primary majesty, not a side effect of transmission". The mechanism the rows record has three steps, and both corpora pass through them: the difficult is perceived as a defect; the defect is explained; the explanation either excuses (charged to transmission, as with Aristotle) or belittles (charged to the writer, as with the Apocalypse). The study codes the second and third steps at each locus, and holds the first, the perception of a defect, as the filing the study is about.
 
+2.9. The name at 19:13 (third reading, L35–L39). The critics of 1886–1920 read the pairing of 19:12 and 19:13, a name no one knows and the name ὁ λόγος τοῦ θεοῦ, as a contradiction, and remove one side. Vischer and Spitta remove the Logos as a Christian or redactional addition, and Spitta states the derivation outright: the name is a reminiscence of the Gospel's prologue and points back to the Gospel's existence. Bousset keeps it as a trace of Johannine theology. Charles keeps it and removes the unknown name, and measures what he keeps against the Gospel. In every reading of the stratum the measure of the book's Logos is the Gospel's, the derivation runs from John 1 to Rev 19, and the earliest reading in the table, Irenaeus's, where the Apocalypse's Verbum Dei is the measure (L24), does not enter. This is the form the composition layer reproduces (§2.3).
+
 2.8. Carriage (with 1a). The book is the least copied, often carried among non-biblical writings, prefaced by its commentator, absent from the Greek lectionary, without a class of lessons in the count of the copies (L26–L27); its first printed Greek is made from one commentary manuscript and its last verses from the Latin (L19–L21, L30); its first German printing carries the title of the commentary manuscripts, "des theologen" (L33). In the Seville copy seated as 34/09 the account of the ancients' doubt is struck through under the Spanish index of 1632 (L31): the standing the fathers argued is, in one surviving copy, enforced by deleting the record of the argument.
 
 ## 3. Still to read in seat
 
 Read in the second reading and entered: Westcott Appendix D through (L17, L17a); Irenaeus 4.20.11 (L24); Melito and Theophilus (L25); Gregory on the copies and the lectionaries (L26); Scrivener on Andreas and the totals (L27); the September Testament's table, preface, title and cuts (L28, L29, L33, L34); Erasmus 1516 and 1535 (L30–L32).
 
-Still owed: the critics (Vischer's thesis 1886, Spitta 1889, Gunkel 1895 on Rev 12, Bousset 1896 on the sources and 1913 on the Kyrios; Charles on the date and on 19:13); Hippo (393), whose list Westcott's Appendix D gives through Carthage 397 (L17a); the Hippo text itself is not located in the seat; the papyri (Scrivener 1894 and Gregory 1900 predate the publication of the papyri of the Apocalypse; a commons source for P47, P98 and P115 is to be found and seated before they are cited); the 1522 woodcuts beyond n402, each to be viewed before any is described.
+Read in the third reading and entered: Vischer, Spitta, Gunkel, Bousset 1896, Charles on 19:12–13 and on the date (L35–L40).
+
+Still owed: Bousset's Kyrios Christos (1913), from the page images (L41); Bousset 1896 on the sources at length, and the second edition (1906) for the discrepancy of L38, if a commons copy is found; Hippo (393), whose list Westcott's Appendix D gives through Carthage 397 (L17a); the Hippo text itself is not located in the seat; the papyri (Scrivener 1894 and Gregory 1900 predate the publication of the papyri of the Apocalypse; a commons source for P47, P98 and P115 is to be found and seated before they are cited); the 1522 woodcuts beyond n402, each to be viewed before any is described.
