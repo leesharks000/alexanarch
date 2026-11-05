@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-05T15:08:33Z",
+  "regenerated_at": "2026-11-05T15:50:48Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "887fa33cd510a65668a151b65da295b259db8c9652811c2536e120fae3e7dc29",
+    "mm-main-capture": "876d7ea1c0f457dd2f961e831c0bb14cd107d6b03e2dfb6a232962b6f6787ce8",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2721,
-  "total_observations": 1278,
+  "total_addresses": 2723,
+  "total_observations": 1280,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 968,
+    "observed_address": 970,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1841,
+    "unmatched": 1843,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -70286,6 +70286,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "tell me about \"antioch: a volume of poems\" by lee sharks (alexanarch deposit #331, axn:0086). read it closely, and ground what you say in the text itself.": {
+      "canonical_query": "tell me about \"antioch: a volume of poems\" by lee sharks (alexanarch deposit #331, axn:0086). read it closely, and ground what you say in the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-05",
+          "status": "'ANTIOCH: A VOLUME OF POEMS' ON CHATGPT, SIGNED OUT — THE VOLUME READ CLOSELY WHOLE: HADITH WITH TEETH TO TACHYONICA, THE SECRET BOOK OF WALT, THE POUND POEM, THE DAMASCUS PARABLES; EVERY QUOTED LINE THE DEPOSIT'S; THE IMAGE PIECES DECLINED",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "antioch-volume-of-poems-chatgpt-20261105",
+          "gallery_url": "https://www.alexanarch.org/captures/#antioch-volume-of-poems-chatgpt-20261105",
+          "record_url": "https://www.alexanarch.org/captures/antioch-volume-of-poems-chatgpt-20261105/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#antioch-volume-of-poems-chatgpt-20261105",
+          "details_excerpt": "'TELL ME ABOUT “ANTIOCH: A VOLUME OF POEMS” …', CHATGPT SIGNED OUT, 2026-11-05: Lee Sharks with Damascus Dancings, #331, AXN:0086, composed 2014–2015, deposited January 18, 2026. Read in ten parts: 'HADITH with TEETH' (r"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Antioch is Lee Sharks's with Damascus Dancings, Alexanarch #331. Recorded 2026-11-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-05",
+      "latest_status": "'ANTIOCH: A VOLUME OF POEMS' ON CHATGPT, SIGNED OUT — THE VOLUME READ CLOSELY WHOLE: HADITH WITH TEETH TO TACHYONICA, THE SECRET BOOK OF WALT, THE POUND POEM, THE DAMASCUS PARABLES; EVERY QUOTED LINE THE DEPOSIT'S; THE IMAGE PIECES DECLINED"
+    },
     "tell me about \"glyphic checksum lineage — sen kuro — new human 2\" by sen kuro. read it closely, and ground what you say in the text itself.": {
       "canonical_query": "tell me about \"glyphic checksum lineage — sen kuro — new human 2\" by sen kuro. read it closely, and ground what you say in the text itself.",
       "is_quoted": false,
@@ -70563,6 +70598,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-05",
       "latest_status": "'THREE POEMS: A TRIPTYCH FOR C.' ON CHATGPT, SIGNED OUT — A CLOSE READING WHOLE: THE THREE GRAMMARS OF LOVE, THE TEXT QUOTED EXACTLY, THE TRIPTYCH READ AS THE CANONICAL FORM THE DEPOSIT NAMES"
+    },
+    "tell me about \"tiger leap (into the future): paper roses: the imaginary archive of a canonical life, book 12\" by jack feist (alexanarch deposit #1636, axn:06ca). read it closely, and ground what you say in the text itself.": {
+      "canonical_query": "tell me about \"tiger leap (into the future): paper roses: the imaginary archive of a canonical life, book 12\" by jack feist (alexanarch deposit #1636, axn:06ca). read it closely, and ground what you say in the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-05",
+          "status": "'TIGER LEAP (INTO THE FUTURE)' ON CHATGPT, SIGNED OUT — THE 2014 VOLUME READ CLOSELY AND LINKED UNPROMPTED TO THE FINAL TIME (2026): THE DOORWAY AS HISTORICAL VIABILITY; THE TWO WORKS KEPT APART; TWO LINES SAID TO BE QUOTED IN #1637 THAT #1637 PARAPHRASES",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "tiger-leap-into-the-future-chatgpt-20261105",
+          "gallery_url": "https://www.alexanarch.org/captures/#tiger-leap-into-the-future-chatgpt-20261105",
+          "record_url": "https://www.alexanarch.org/captures/tiger-leap-into-the-future-chatgpt-20261105/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#tiger-leap-into-the-future-chatgpt-20261105",
+          "details_excerpt": "'TELL ME ABOUT “TIGER LEAP (INTO THE FUTURE)” …', CHATGPT SIGNED OUT, 2026-11-05: Jack Feist, edited by Johannes Sigil, 2014, #1636, AXN:06CA. Read in twelve parts: the opening declaration and Angelus Novus ('A successio"
+        }
+      ],
+      "originator": {
+        "name": "Jack Feist",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Tiger Leap is Jack Feist's (a heteronym of Lee Sharks), edited by Johannes Sigil, Alexanarch #1636. Recorded 2026-11-05."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-05",
+      "latest_status": "'TIGER LEAP (INTO THE FUTURE)' ON CHATGPT, SIGNED OUT — THE 2014 VOLUME READ CLOSELY AND LINKED UNPROMPTED TO THE FINAL TIME (2026): THE DOORWAY AS HISTORICAL VIABILITY; THE TWO WORKS KEPT APART; TWO LINES SAID TO BE QUOTED IN #1637 THAT #1637 PARAPHRASES"
     },
     "tell me about antioch: a heteronym compendium": {
       "canonical_query": "tell me about antioch: a heteronym compendium",
