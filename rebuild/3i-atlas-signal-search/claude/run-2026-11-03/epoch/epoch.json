@@ -1,0 +1,161 @@
+{
+ "plan_sha256": "1b3234fa442d693713f3dd7a5b246323efeee253827242f0c9cb7faa3b588def",
+ "parkes_candidates": 62864,
+ "gbt_clusters": {
+  "primary": 295,
+  "all": 1026,
+  "thirteen": 13
+ },
+ "gbt_clusters_in_parkes_coverage": {
+  "primary": 250,
+  "all": 858,
+  "thirteen": 13
+ },
+ "dense_channels": [
+  "blc23_cc23",
+  "blc23_cc39",
+  "blc23_cc44",
+  "blc23_cc49",
+  "blc25_cc01"
+ ],
+ "results": {
+  "primary_d10": {
+   "M": 0,
+   "null_mean": 0.185,
+   "null_sd": 0.448,
+   "null_max": 3,
+   "p": 1.0
+  },
+  "primary_d50": {
+   "M": 1,
+   "null_mean": 0.792,
+   "null_sd": 0.908,
+   "null_max": 5,
+   "p": 0.545
+  },
+  "all_d10": {
+   "M": 2,
+   "null_mean": 0.762,
+   "null_sd": 0.917,
+   "null_max": 5,
+   "p": 0.17
+  },
+  "all_d50": {
+   "M": 5,
+   "null_mean": 3.765,
+   "null_sd": 2.1,
+   "null_max": 11,
+   "p": 0.3325
+  },
+  "thirteen_d10": {
+   "M": 0,
+   "null_mean": 0.003,
+   "null_sd": 0.05,
+   "null_max": 1,
+   "p": 1.0
+  },
+  "thirteen_d50": {
+   "M": 0,
+   "null_mean": 0.005,
+   "null_sd": 0.1,
+   "null_max": 2,
+   "p": 1.0
+  }
+ },
+ "pairs": [
+  {
+   "gbt_channel": "blc23_cc39",
+   "gbt_f_rest_MHz": 1574.495207,
+   "gbt_cluster_channels": 3,
+   "parkes_node": "blc06",
+   "parkes_f_rest_MHz": 1574.495165,
+   "parkes_f_topo_MHz": 1574.62266,
+   "diff_Hz": -42.0,
+   "parkes_z": {
+    "S0": 4.71,
+    "R1": 1.09,
+    "S2": 12.07,
+    "R3": -0.14,
+    "S4": 3.08,
+    "R5": 1.27
+   },
+   "dense": true
+  },
+  {
+   "gbt_channel": "blc23_cc39",
+   "gbt_f_rest_MHz": 1574.596106,
+   "gbt_cluster_channels": 3,
+   "parkes_node": "blc06",
+   "parkes_f_rest_MHz": 1574.596135,
+   "parkes_f_topo_MHz": 1574.723638,
+   "diff_Hz": 29.0,
+   "parkes_z": {
+    "S0": 5.98,
+    "R1": -0.48,
+    "S2": 48.45,
+    "R3": -0.67,
+    "S4": 2.9,
+    "R5": 1.97
+   },
+   "dense": true
+  },
+  {
+   "gbt_channel": "blc23_cc55",
+   "gbt_f_rest_MHz": 1527.102024,
+   "gbt_cluster_channels": 2,
+   "parkes_node": "blc06",
+   "parkes_f_rest_MHz": 1527.102065,
+   "parkes_f_topo_MHz": 1527.225722,
+   "diff_Hz": 41.5,
+   "parkes_z": {
+    "S0": 3.78,
+    "R1": 1.58,
+    "S2": 4.17,
+    "R3": 0.61,
+    "S4": 3.62,
+    "R5": 0.71
+   },
+   "dense": false
+  },
+  {
+   "gbt_channel": "blc23_cc44",
+   "gbt_f_rest_MHz": 1557.534879,
+   "gbt_cluster_channels": 3,
+   "parkes_node": "blc06",
+   "parkes_f_rest_MHz": 1557.534887,
+   "parkes_f_topo_MHz": 1557.661008,
+   "diff_Hz": 8.0,
+   "parkes_z": {
+    "S0": 4.02,
+    "R1": 1.47,
+    "S2": 4.18,
+    "R3": -1.57,
+    "S4": 7.88,
+    "R5": -1.15
+   },
+   "dense": true
+  },
+  {
+   "gbt_channel": "blc23_cc44",
+   "gbt_f_rest_MHz": 1557.76237,
+   "gbt_cluster_channels": 1,
+   "parkes_node": "blc06",
+   "parkes_f_rest_MHz": 1557.762368,
+   "parkes_f_topo_MHz": 1557.888508,
+   "diff_Hz": -2.0,
+   "parkes_z": {
+    "S0": 3.38,
+    "R1": 1.5,
+    "S2": 3.01,
+    "R3": 0.19,
+    "S4": 9.02,
+    "R5": 1.82
+   },
+   "dense": true
+  }
+ ],
+ "verdict": {
+  "primary_lead": false,
+  "thirteen_lead": false
+ }
+}
