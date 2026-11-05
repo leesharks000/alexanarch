@@ -237,6 +237,27 @@ def link_cards(e, cards, date=None):
     e["related_deposits"] = rel or e.get("related_deposits")
 
 
+EXTERNAL_SCOPE_FROM = "2026-10-29"   # the first intake of external entities as such (the meta-aggregator census)
+ARCHIVE_RELS = {"archive_controlled", "authored_surface"}
+
+
+def derive_scope(e):
+    """Archive scope or external scope, recoverable (ruled 2026-11-05, Lee Sharks: 'the distinction should be recoverable if
+    needed, between the original scope of captures that engage with archive sources vs the now-expanded-to-include-external-
+    entities'; 'everything before the first expansion to include external ... can be tagged archive'). Not sealed: no AXN moves."""
+    first = min([str(e.get("date") or "9999")] + [str(o.get("date")) for o in (e.get("observations") or []) if o.get("date")])
+    if first < EXTERNAL_SCOPE_FROM:
+        return "archive", f"seated before {EXTERNAL_SCOPE_FROM}, the first intake of external entities; the registry's original scope"
+    obs = [e] + list(e.get("observations") or [])
+    engages = any((o.get("archive_controlled_cites") or 0) > 0 or any((c or {}).get("rel") in ARCHIVE_RELS for c in (o.get("cite_list") or [])) for o in obs)
+    rel = (e.get("originator") or {}).get("relation")
+    if rel == "external" and not engages:
+        return "external", "originator external; no composition cites an archive-controlled or authored source"
+    if rel == "external":
+        return "archive", "originator external; a composition cites an archive-controlled or authored source"
+    return "archive", f"originator {rel or 'not recorded'}" + ("; archive sources cited" if engages else "")
+
+
 def seat_flat(draft, registry, schema):
     """ADMIT → ROUTE → NORMALISE → VALIDATE → INSERT, on the flat record shape. Returns (kind, entry)."""
     import jsonschema
@@ -323,6 +344,7 @@ def seat_flat(draft, registry, schema):
     e["transcript_class"] = e.get("transcript_class") or "CAPTURE-TIME VERBATIM RECORD"; e["transcript_complete"] = e.get("transcript_complete") or "complete as supplied"; e["transcript_read"] = e.get("transcript_read") or ("READ IN FULL " + draft["date"])
     link_cards(e, e.get("cite_list"))
     e["findings"] = list(draft.get("findings") or []); e["defects"] = _flat_defects(e)
+    e["scope"], e["scope_basis"] = derive_scope(e)
     e["citable_unit"] = e.get("citable_unit") or "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)"
     extra = [k for k in draft if k not in schema["properties"]]
     if extra: raise Refused("NORMALISE refused — fields not in the schema: %s. A new field is a schema change in its own commit." % extra)
