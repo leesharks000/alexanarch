@@ -363,6 +363,18 @@ def seat_flat(draft, registry, schema):
             "IS the composed artefact and its transcript; without one there is nothing captured. "
             "Non-engagement is recordable ONLY as a later observation on an address that some "
             "earlier engagement already admitted.")
+    # THE SECTION IS ONE OF THE DEFINED SECTIONS (ruled 2026-11-05: "lets keep current categories and tags but do a sweep to get
+    # them accurate, currently and going forward"). The draft names its section; it must be one of registry._section_taxonomy.sections,
+    # chosen by those definitions and their precedence (a domain section takes an address whose subject lies in it; otherwise the kind
+    # section of the object named). A new section is not created at intake. The chosen section's definition is printed at INSERT so
+    # the author sees it against the query.
+    _tax = registry.get("_section_taxonomy") or {}
+    _secs = _tax.get("sections") or {}
+    if isinstance(_secs, dict) and _secs and e["s"] not in _secs:
+        raise Refused(f"section «{e['s']}» is not a defined section; choose one of: " + ", ".join(sorted(_secs)) +
+                      ". Definitions and precedence: registry._section_taxonomy.")
+    if isinstance(_secs, dict) and e["s"] in _secs:
+        print(f"   SECTION    «{e['s']}»: {_secs[e['s']]}")
     # INSERT at the end of its section (sections alphabetical; a new section goes where the alphabet puts it)
     E = registry["entries"]; pos = len(E)
     if any(x["s"] == e["s"] for x in E):
