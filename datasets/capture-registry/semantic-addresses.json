@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-04T21:11:10Z",
+  "regenerated_at": "2026-11-05T04:02:05Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "b1f3da318d49adf6eab52922f5f5a9b36ddeacfa5e73aad0af6d65ade6da4550",
+    "mm-main-capture": "f16802e9cf2b7af55d4145f337682c0f90bfa6a96e1efc73031004800acae101",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2704,
-  "total_observations": 1261,
+  "total_addresses": 2706,
+  "total_observations": 1263,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 951,
+    "observed_address": 953,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1824,
+    "unmatched": 1826,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -7660,6 +7660,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "3i atlas signal studies": {
+      "canonical_query": "3i atlas signal studies",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-04",
+          "status": "'3I ATLAS SIGNAL STUDIES' ON THE OVERVIEW — A FILTERED NONDETECTION COMPOSED AS 'CONFIRMED' NATURAL; THE FILTERS NAMED HUMAN-MADE; AN AGE JOINED TO A COMA MODEL",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "3i-atlas-signal-studies-aio-20261104",
+          "gallery_url": "https://www.alexanarch.org/captures/#3i-atlas-signal-studies-aio-20261104",
+          "record_url": "https://www.alexanarch.org/captures/3i-atlas-signal-studies-aio-20261104/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#3i-atlas-signal-studies-aio-20261104",
+          "details_excerpt": "'3I ATLAS SIGNAL STUDIES', SIGNED OUT, 2026-11-04: 'Scientific studies on the interstellar object 3I/ATLAS (discovered in July 2025) have confirmed it is a natural comet rather than an artificial or alien spacecraft.' Un"
+        }
+      ],
+      "originator": {
+        "name": "Breakthrough Listen and collaborators (the 3I/ATLAS radio searches)",
+        "relation": "external",
+        "entity_type": "institution",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: the published searches (Sheikh et al., arXiv:2512.18142v2; the Green Bank search, arXiv:2512.19763v1) and the spectroscopy cited. The archive's own reading of the searches is the unpublished draft drafts/3I-ATLAS-SIGNAL-SEARCH-draft-2026-11-03.md. Recorded 2026-11-04."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-04",
+      "latest_status": "'3I ATLAS SIGNAL STUDIES' ON THE OVERVIEW — A FILTERED NONDETECTION COMPOSED AS 'CONFIRMED' NATURAL; THE FILTERS NAMED HUMAN-MADE; AN AGE JOINED TO A COMA MODEL"
     },
     "666": {
       "canonical_query": "666",
@@ -22287,6 +22322,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "current work on disciplinary model collapse": {
+      "canonical_query": "current work on disciplinary model collapse",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-04",
+          "status": "'CURRENT WORK ON DISCIPLINARY MODEL COLLAPSE' ON CHATGPT — A GENERAL QUERY COMPOSES THE FIELD FROM THE LIBRARY: THE PARTICLE AND MEANING FEUDALISM, NAMED AND BOUNDED; FOUR MODELS COUNTED AS TWO",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Coinages",
+          "slug": "disciplinary-model-collapse-current-work-chatgpt-20261104",
+          "gallery_url": "https://www.alexanarch.org/captures/#disciplinary-model-collapse-current-work-chatgpt-20261104",
+          "record_url": "https://www.alexanarch.org/captures/disciplinary-model-collapse-current-work-chatgpt-20261104/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#disciplinary-model-collapse-current-work-chatgpt-20261104",
+          "details_excerpt": "'CURRENT WORK ON DISCIPLINARY MODEL COLLAPSE', CHATGPT SIGNED OUT, 2026-11-04: a general query with no name in it composes the field from the library alone. 'Disciplinary model collapse is an emerging concept'; two resea"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The term is defined as the author's in Alexanarch deposit #1574 (Lee Sharks, 2026-09-02) and extended in #1714 (2026-10-27). Recorded 2026-11-04."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-04",
+      "latest_status": "'CURRENT WORK ON DISCIPLINARY MODEL COLLAPSE' ON CHATGPT — A GENERAL QUERY COMPOSES THE FIELD FROM THE LIBRARY: THE PARTICLE AND MEANING FEUDALISM, NAMED AND BOUNDED; FOUR MODELS COUNTED AS TWO"
     },
     "custodial permeation index": {
       "canonical_query": "custodial permeation index",

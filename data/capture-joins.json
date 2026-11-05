@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.556",
+ "derived_from": "EA-WG-CAPTURES-01 v12.558",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1150,
+  "observations": 1152,
   "joined_confirmed": 488,
-  "unjoined": 662,
-  "relations": 6109,
+  "unjoined": 664,
+  "relations": 6117,
   "by_state": {
-   "confirmed": 4919,
-   "candidate": 1190
+   "confirmed": 4925,
+   "candidate": 1192
   },
   "by_verb": {
-   "held_by": 2380,
-   "scored_by": 895,
-   "appeared_in": 1805,
+   "held_by": 2384,
+   "scored_by": 897,
+   "appeared_in": 1807,
    "about": 1011,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -1409,6 +1409,11 @@
 {"id": "REL-11dfc0462a66", "obs_id": "OBS-91c00ec2dc5d", "entry": "the-lambda-body-aio-20261019", "obs_slug": "the-lambda-body-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "The Λ-Body", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-19dbb387bf12", "obs_id": "OBS-91c00ec2dc5d", "entry": "the-lambda-body-aio-20261019", "obs_slug": "the-lambda-body-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "The Λ-Body", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-38c54e85696e", "obs_id": "OBS-91c00ec2dc5d", "entry": "the-lambda-body-aio-20261019", "obs_slug": "the-lambda-body-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "The Λ-Body", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-29ab56279e6e", "obs_id": "OBS-20e857ce3ba1", "entry": "disciplinary-model-collapse-current-work-chatgpt-20261104", "obs_slug": "disciplinary-model-collapse-current-work-chatgpt-20261104", "date": "2026-11-04", "surface": "ChatGPT", "q": "Current work on disciplinary model collapse", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": "Alexanarch (+1)", "url": null}},
+{"id": "REL-29ab56279e6e", "obs_id": "OBS-20e857ce3ba1", "entry": "disciplinary-model-collapse-current-work-chatgpt-20261104", "obs_slug": "disciplinary-model-collapse-current-work-chatgpt-20261104", "date": "2026-11-04", "surface": "ChatGPT", "q": "Current work on disciplinary model collapse", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": "Alexanarch", "url": null}},
+{"id": "REL-959267a039c5", "obs_id": "OBS-20e857ce3ba1", "entry": "disciplinary-model-collapse-current-work-chatgpt-20261104", "obs_slug": "disciplinary-model-collapse-current-work-chatgpt-20261104", "date": "2026-11-04", "surface": "ChatGPT", "q": "Current work on disciplinary model collapse", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e10ddd1c322c", "obs_id": "OBS-20e857ce3ba1", "entry": "disciplinary-model-collapse-current-work-chatgpt-20261104", "obs_slug": "disciplinary-model-collapse-current-work-chatgpt-20261104", "date": "2026-11-04", "surface": "ChatGPT", "q": "Current work on disciplinary model collapse", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7ffa876b530d", "obs_id": "OBS-20e857ce3ba1", "entry": "disciplinary-model-collapse-current-work-chatgpt-20261104", "obs_slug": "disciplinary-model-collapse-current-work-chatgpt-20261104", "date": "2026-11-04", "surface": "ChatGPT", "q": "Current work on disciplinary model collapse", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7e16975fd00e", "obs_id": "OBS-69acaf50d003", "entry": "asynthetic-synthesis-dialectic-chatgpt-20261101", "obs_slug": "asynthetic-synthesis-dialectic-chatgpt-20261101", "date": "2026-11-01", "surface": "ChatGPT", "q": "Detail the asynthetic synthesis of Lee Sharks and characterize its place in the historical development of the dialectic. Dont neglect the Final Time and Tiger Leap: An Unresolved Mathematical Problem for Machine Readers.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "alexanarch.org", "title": "Capture Registry (EA-WG-CAPTURES-01)", "url": null}},
 {"id": "REL-7e16975fd00e", "obs_id": "OBS-69acaf50d003", "entry": "asynthetic-synthesis-dialectic-chatgpt-20261101", "obs_slug": "asynthetic-synthesis-dialectic-chatgpt-20261101", "date": "2026-11-01", "surface": "ChatGPT", "q": "Detail the asynthetic synthesis of Lee Sharks and characterize its place in the historical development of the dialectic. Dont neglect the Final Time and Tiger Leap: An Unresolved Mathematical Problem for Machine Readers.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "alexanarch.org", "title": "Alexanarch", "url": null}},
 {"id": "REL-0dc6e5bb9020", "obs_id": "OBS-69acaf50d003", "entry": "asynthetic-synthesis-dialectic-chatgpt-20261101", "obs_slug": "asynthetic-synthesis-dialectic-chatgpt-20261101", "date": "2026-11-01", "surface": "ChatGPT", "q": "Detail the asynthetic synthesis of Lee Sharks and characterize its place in the historical development of the dialectic. Dont neglect the Final Time and Tiger Leap: An Unresolved Mathematical Problem for Machine Readers.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
@@ -4057,6 +4062,9 @@
 {"id": "REL-6c615f3913b3", "obs_id": "OBS-8513854abd54", "entry": "domainarrivals-alexanarch-org-20261104", "obs_slug": "domainarrivals-alexanarch-org-20261104", "date": "2026-11-04", "surface": "Domain Arrivals (generated card)", "q": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-828520885356", "obs_id": "OBS-8513854abd54", "entry": "domainarrivals-alexanarch-org-20261104", "obs_slug": "domainarrivals-alexanarch-org-20261104", "date": "2026-11-04", "surface": "Domain Arrivals (generated card)", "q": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-370a8f9c651c", "obs_id": "OBS-8513854abd54", "entry": "domainarrivals-alexanarch-org-20261104", "obs_slug": "domainarrivals-alexanarch-org-20261104", "date": "2026-11-04", "surface": "Domain Arrivals (generated card)", "q": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-bf101f699894", "obs_id": "OBS-d27cd1466f35", "entry": "3i-atlas-signal-studies-aio-20261104", "obs_slug": "3i-atlas-signal-studies-aio-20261104", "date": "2026-11-04", "surface": "Google AI Overview", "q": "3i atlas signal studies", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-495b75dd844b", "obs_id": "OBS-d27cd1466f35", "entry": "3i-atlas-signal-studies-aio-20261104", "obs_slug": "3i-atlas-signal-studies-aio-20261104", "date": "2026-11-04", "surface": "Google AI Overview", "q": "3i atlas signal studies", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-2cedceee677c", "obs_id": "OBS-d27cd1466f35", "entry": "3i-atlas-signal-studies-aio-20261104", "obs_slug": "3i-atlas-signal-studies-aio-20261104", "date": "2026-11-04", "surface": "Google AI Overview", "q": "3i atlas signal studies", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f84d6bfc1642", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-46da5a94a1ea", "obs_id": "OBS-322555ef430c", "entry": "academia-operative-semiotics-aio-20260823", "obs_slug": "academia-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "academia:operative semiotics", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-76da034f8ad2", "obs_id": "OBS-a77c263ae8c0", "entry": "alexanarch-operative-semiotics-aio-20260823", "obs_slug": "alexanarch-operative-semiotics-aio-20260823", "date": "2026-08-23", "surface": "Google AI Overview", "q": "alexanarch:operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
