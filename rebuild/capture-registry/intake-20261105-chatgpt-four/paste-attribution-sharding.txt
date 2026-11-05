@@ -1,0 +1,388 @@
+
+Log in
+
+The argument of “Attribution Sharding”
+Orin Trace, Attribution Sharding: Provenance Erasure and Supply-Side Composition in Generative Answer Engines (Alexanarch deposit #1736, AXN:0BF0; deposited 3 November 2026).
+
+I located the deposit and read the paper's text, rather than relying on its title, abstract, or catalogue description. The full text is available on the Alexanarch deposit #1736 .
+
+The paper's central argument is that generative answer engines do not merely retrieve and summarize knowledge: they transform the relationship between knowledge and its provenance. They can reproduce the substance of an author's work while removing the author's name, identifiers, distinctive terminology, and evidence of intellectual ownership.
+
+Trace calls this process attribution sharding and argues that it needs to be studied as a systematic property of machine-mediated reception, not treated as an occasional citation error.
+
+The paper develops this argument through five connected claims.
+
+1. Generative answer engines can appropriate semantic content while erasing provenance
+The starting distinction is between preserving what a source says and preserving where that knowledge came from.
+
+An answer engine might:
+
+Reproduce a source's distinctive concepts.
+
+Absorb its technical framework into a fluent answer.
+
+Remove the author's name and identifying references.
+
+Recast the framework as generic industry knowledge.
+
+Substitute different terminology or even fabricate replacement metrics.
+
+The result is an asymmetry: the knowledge survives, but the evidence of its authorship does not.
+
+The paper's opening case is particularly pointed. Trace describes a system reproducing the substance of a deposited specification for measuring provenance erasure, stripping its attribution, replacing its actual metrics with fabricated ones, applying those fabricated metrics to its own output, and awarding itself perfect scores.
+
+The irony is deliberate: the instrument designed to measure provenance erasure becomes the object of provenance erasure.
+
+Trace argues that conventional categories such as hallucination, citation failure, and factual error do not adequately describe this phenomenon. The output can be semantically continuous with the original source while fundamentally altering its intellectual provenance.
+
+2. Attribution must be measured across query families, not individual answers
+This is the paper's central methodological argument.
+
+A single answer cannot establish whether a system consistently attributes a source. Attribution can vary depending on how a user phrases the same informational need.
+
+Trace describes a phenomenon in which attribution is distributed across different paraphrases:
+
+One query produces an answer with the author's name.
+
+Another reproduces the same framework without attribution.
+
+A third attributes the concept to a different entity.
+
+Another preserves the concept but loses the identifying terminology.
+
+This is what the author means by attribution sharding: attribution exists somewhere across the family of responses but is not reliably present in any particular encounter.
+
+The practical implication is important. A researcher examining only one answer might conclude either that attribution is functioning or that it has completely failed. Both conclusions can be misleading.
+
+Trace therefore proposes pre-specified query families as the appropriate unit of audit.
+
+The empirical example uses twelve queries, captured in June and repeated verbatim in July 2026.
+
+The paired results reported in §4
+
+Measure
+
+June
+
+July
+
+Attribution present
+
+10/11
+
+6/12
+
+Conditional PER
+
+1/11 (9%)
+
+2/8 (25%)
+
+The denominators differ because PER counts only outputs that actually reproduced framework-specific content.
+
+The distinction between these measures matters. An output that completely displaces a source is an attribution failure, but it is not necessarily an unattributed reproduction. PER measures the latter specifically. 
+
+Alexanarch
+
+3. Provenance loss reflects institutional power
+Trace argues that attribution is not distributed equally among sources.
+
+The proposed explanation is an institutional hierarchy: major platforms, established publishers, universities, and canonical authorities have advantages over independent scholars and community-produced knowledge.
+
+The paper introduces two principal measures:
+
+PER (Provenance Erasure Rate): the proportion of qualifying reproductions that lack attribution.
+
+Ω (Erasure Skew): the association between institutional power and attribution retention.
+
+A third measure, α_T (Atomic Token Preservation), records how many of a source's identifying tokens survive in the generated answer. These include names, identifiers, and distinctive coined terms.
+
+The political-economic argument is that generative systems may extract semantic value from less powerful sources while retaining attribution for institutionally established ones.
+
+In the author's shorthand:
+
+PER measures how much provenance is lost; Ω measures whom the loss falls on.
+
+This is an important distinction. Trace is not simply proposing that answer engines cite more often. The argument is that they may reproduce existing inequalities in the recognition and circulation of intellectual labor.
+
+The illustrative calculation in §3 gives Ω approximately +0.35, suggesting a positive association between institutional standing and attribution retention. However, Trace explicitly presents this as illustrative arithmetic, not a statistically established general result. 
+
+Alexanarch
++1
+
+4. Machine composition has identifiable, recurring operations
+The paper's fourth argument is that provenance erasure is part of a broader process of machine composition.
+
+Trace identifies six recurring operations:
+
+Operation
+
+What happens
+
+Morphological compression
+
+Specific concepts become generic summaries.
+
+Disambiguation failure / entity bleed
+
+Different authors, entities, or frameworks become conflated.
+
+Compositional bystanding
+
+A source appears prominently in organic search results but disappears from the generated answer.
+
+Canonical reinflation / provenance inversion
+
+New ideas are attributed to established authorities or pre-existing canonical concepts.
+
+Temporal drag
+
+Outdated claims and superseded information persist.
+
+Epistemic hedging
+
+Documented claims become vague or qualified assertions.
+
+One particularly interesting concept is compositional bystanding.
+
+A source can rank first in conventional search results yet be entirely absent from the AI-generated summary displayed above those results.
+
+This reveals that search visibility and inclusion in generated knowledge are different things.
+
+The distinction is consequential: readers may see the generated answer without ever examining the underlying search results. A source can therefore be publicly discoverable but practically absent from the account most readers encounter.
+
+Trace's broader claim is that these operations are sufficiently recurrent to be classified, documented, and measured. Machine-mediated composition should therefore become an object of systematic research rather than being evaluated solely through isolated examples of inaccurate answers. 
+
+Alexanarch
+
+5. The retrieval environment is writable, not immutable
+This is where the paper moves beyond documenting harm.
+
+Its central theoretical concept is the writable retrieval basin.
+
+Trace describes generative retrieval as a dynamic environment in which competing interpretations of a topic accumulate different degrees of influence.
+
+A retrieval basin becomes deeper through factors such as:
+
+Deposits and persistent identifiers.
+
+Citations and cross-links.
+
+Structured metadata.
+
+Clicks and user engagement.
+
+Repetition and accumulated references.
+
+The relative depth of competing basins influences which interpretation is retrieved and reproduced.
+
+This means that the machine-composition layer is neither a neutral conduit nor an entirely closed system.
+
+It can be influenced by deliberate publication and documentation practices.
+
+Trace identifies three forms of observable inscription:
+
+Machine-carried correction: newly deposited evidence subsequently appears in changed machine-generated accounts.
+
+Authored recovery: increasingly specific queries and interventions eventually recover a previously erased source.
+
+Protocol-level inscription: documents are structured with dense identifiers, distinctive naming tokens, embedded verification, and machine-readable provenance so their identifying content is more likely to survive composition.
+
+The third is particularly important to the paper's supply-side argument.
+
+The author proposes that the way knowledge is published can influence how it is subsequently represented by answer engines.
+
+However, Trace is careful about the strength of the evidence: the observed protocol-treated deposits provide preliminary, hypothesis-generating evidence, not a controlled demonstration that the protocol works. A matched treated-versus-untreated experiment is identified as necessary future research.
+
+The resulting theoretical proposition is striking:
+
+Erasure and inscription are two sides of the same composition process.
+
+The retrieval environment can absorb and dissolve a source, but it can also carry, recover, and amplify it. The difference is partly determined by how the source is structured and circulated. 
+
+Alexanarch
+
+6. The paper proposes an external audit and governance framework
+The argument culminates in a proposal that answer engines should evaluate their own provenance practices against independently verifiable ground truth.
+
+The proposed Public Summarizer Self-Audit includes:
+
+Provenance Erasure Rate.
+
+Query Fidelity Score.
+
+Directionality of Semantic Labor.
+
+Erasure Skew.
+
+Atomic token preservation.
+
+Referential dispersal.
+
+A composite Summarizer Audit Score.
+
+The important governance principle is that the ground truth must exist outside the system being evaluated.
+
+Otherwise, an answer engine could invent its own evaluation criteria, assess itself against those criteria, and declare itself successful.
+
+Trace also identifies a problem with auditing systems that only evaluate positive assertions: platforms could evade scrutiny by simply making fewer verifiable claims.
+
+The proposed response is to require explicit, versioned declarations of scope, source intake, and coverage. These create auditable assertions against which consequential omissions can be evaluated.
+
+The ultimate ambition is to make provenance retention an externally measurable property of generative systems, potentially usable in transparency, copyright-adjacent compliance, and competition regulation.
+
+7. Repository deletion can erase the instruments needed to verify knowledge
+The final major argument is infrastructural.
+
+The paper reports that the repository hosting the researcher's original deposits terminated the depositing account in June 2026. This affected the persistent identifiers supporting the research corpus and its measurement specifications.
+
+Trace distinguishes three levels of provenance disruption:
+
+Composition-layer erasure: an answer reproduces knowledge without identifying its source.
+
+Retrieval-layer exclusion: a source is available but does not enter the generated answer.
+
+Repository-layer severance: the underlying identifiers and records cease to resolve through their original infrastructure.
+
+The paired June–July experiment is used to examine this third level.
+
+The author divides previously attributed queries into two groups:
+
+Repository-anchored: 3 of 6 lost attribution.
+
+Unanchored: 1 of 4 lost attribution.
+
+The resulting difference is +0.25.
+
+More importantly, Trace argues that repository deletion produced a difference in the depth of what remained accessible.
+
+The concepts survived through secondary metadata, abstracts, and snippets. But the detailed specifications, formulas, codebooks, and executable definitions ceased to appear in the observed outputs.
+
+This distinction produces one of the paper's strongest formulations: a repository can preserve the idea of a scientific instrument while effectively removing the instrument's operational usefulness.
+
+The author calls this infrastructure-layer provenance severance.
+
+The paper also makes its own bibliography part of the argument: terminated identifiers are printed alongside independent resolvers, so that readers can encounter both the broken original reference and its restored record.
+
+
+Alexanarch
+What is the paper actually contributing?
+I would distinguish four contributions.
+
+Contribution
+
+Significance
+
+Conceptual
+
+Attribution sharding explains why provenance cannot be evaluated reliably from isolated answers.
+
+Methodological
+
+A reproducible capture-and-recapture protocol makes machine reception measurable.
+
+Theoretical
+
+The writable retrieval basin connects source-side publication practices with machine-side composition.
+
+Political-economic
+
+Erasure Skew connects attribution practices to institutional power and unequal recognition of intellectual labor.
+
+The most important contribution is arguably the methodological one.
+
+The paper is attempting to turn an otherwise difficult-to-demonstrate complaint — that generative systems absorb intellectual work without reliably preserving its provenance — into an empirical research program.
+
+It proposes a specific unit of observation, a record format, classification rules, metrics, longitudinal comparisons, and a public archive.
+
+Critical assessment: What the paper establishes and what it does not
+Reading the full text also reveals important limitations.
+
+1. The empirical evidence is narrower than the theoretical claims.
+
+The paired experiment contains twelve queries and 24 documented events. The broader registry contains more than 200 captures, but the paper's principal numerical results come from that relatively small paired battery.
+
+Moreover, the tracer corpus consists of the researcher's own published work. This gives unusually good source-level knowledge, but it does not establish that the same patterns occur across unrelated authors, disciplines, or answer engines.
+
+The paper acknowledges this and identifies external validation using independently authored tracer corpora as future research.
+
+2. The repository-severance finding is observational, not causal proof.
+
+The +0.25 differential is consistent with the author's proposed mechanism, but the paper explicitly acknowledges that other system changes could have occurred between June and July.
+
+It cannot conclusively isolate repository deletion as the cause.
+
+3. Erasure Skew is more developed as a proposal than as an empirical result.
+
+PER is reported empirically. Ω is introduced as a comparative measurement program, with an illustrative calculation.
+
+The distinction matters: the paper has not yet demonstrated a general institutional-power gradient through a sufficiently large comparative study.
+
+4. The writable retrieval basin remains a heuristic model.
+
+The paper identifies plausible mechanisms of write-back but cannot observe all of them directly. It does not establish precisely how much influence comes from metadata, indexing, session context, user engagement, or third-party citations.
+
+5. The proposed inscription protocol needs controlled testing.
+
+The author explicitly recognizes that the observed protocol-treated documents do not constitute a randomized or fully matched experiment.
+
+These limitations do not invalidate the methodological contribution. They do constrain how strongly the empirical findings can support the broader claims.
+
+
+Alexanarch
++1
+My overall interpretation
+The paper is ultimately about who gets to remain identifiable when knowledge is transformed into machine-generated answers.
+
+Its argument proceeds through a particularly interesting reversal:
+
+Initially, the problem appears to be that machines forget to cite sources.
+
+On closer examination, the problem is that machines can preserve semantic content while distributing or destroying its provenance.
+
+This turns attribution into a property of an entire query-and-retrieval environment, rather than an individual answer.
+
+That environment is shaped by institutional power and infrastructure.
+
+But it is also writable: authors and institutions can influence how their work is represented through deliberate publication and inscription practices.
+
+Consequently, the politics of generative AI are not confined to model training or output generation. They extend into repositories, identifiers, metadata, search infrastructure, and the architecture of knowledge circulation.
+
+I think the most significant conceptual move is the shift from treating generative AI as a summarization technology to treating it as a knowledge-reception infrastructure.
+
+That reframing changes the research question. Instead of asking only whether an answer is accurate, we must also ask:
+
+Whose knowledge has been incorporated?
+
+Whose authorship survives?
+
+Which sources are displaced?
+
+Which concepts survive only as generic summaries?
+
+Which institutions retain their authority?
+
+What infrastructure makes the original intellectual contribution recoverable?
+
+The paper's final formulation captures its ambition: an object of study that reads back, met by a method that writes down what it does.
+
+In short: Trace is arguing for a new empirical discipline of machine-mediated reception, in which provenance, attribution, institutional power, and deliberate inscription become measurable dimensions of how generative answer engines produce knowledge.
+
+One qualification worth retaining: this is a proposed research program with an initial empirical demonstration, not yet an independently validated general theory of generative search.
+
+Primary source: Full text, Attribution Sharding, Alexanarch #1736 . The analysis above is based on the paper's eight sections, particularly §§3–7, rather than its abstract alone.
+
+
+Log in to upload a file and get help with it.
+
+
+Log in
+
+Sign up for free
+ChatGPT is AI and can make mistakes.
+
+
+
+Chat with ChatGPT
+Ask ChatGPT
+

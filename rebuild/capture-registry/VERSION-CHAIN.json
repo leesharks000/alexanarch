@@ -1,0 +1,151 @@
+{
+  "registry": "EA-WG-CAPTURES-01",
+  "series_id": "ea-wg-captures",
+  "bound": "2026-11-05",
+  "ruled": "2026-11-05 (Lee Sharks): 'lets please make sure that chain is bound together so we can stop doing that'",
+  "current": "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json",
+  "rule": "Every edition goes in this file before a snapshot is drafted; the snapshot's chain section is printed from it by scripts/capture_version_chain.py --markdown. --check reports any snapshot deposit or frozen copy missing from it.",
+  "editions": [
+    {
+      "version": "v1.1 to v6.0 (Zenodo)",
+      "kind": "zenodo_release_severed",
+      "note": "Zenodo releases of EA-WG-CAPTURES-01 before v6.0; severed when the host terminated the account on 2026-06-19 (registry _supersedes). No deposit-level copy."
+    },
+    {
+      "version": "v6.0",
+      "kind": "snapshot_deposit",
+      "date": "2026-06-13",
+      "deposits": [
+        825
+      ],
+      "count": "87 captures",
+      "note": "Zenodo release, seated at Alexanarch; the deposit's version field reads v7.2, the title governs (version_field_note)."
+    },
+    {
+      "version": "v6.1",
+      "kind": "snapshot_deposit",
+      "date": "2026-06-14",
+      "deposits": [
+        1397
+      ],
+      "count": "87 captures",
+      "doi": "10.5281/zenodo.20688441"
+    },
+    {
+      "version": "v7.0",
+      "kind": "snapshot_deposit",
+      "date": "2026-06-14",
+      "deposits": [
+        1398
+      ],
+      "count": "87 captures",
+      "doi": "10.5281/zenodo.20691745",
+      "note": "metadata only (Zenodo tombstone)"
+    },
+    {
+      "version": "v7.2",
+      "kind": "snapshot_deposit",
+      "date": "2026-06-13 / 2026-06-15",
+      "deposits": [
+        1396,
+        1401
+      ],
+      "count": "131 captures",
+      "note": "two deposits of v7.2: #1396 (DOI 10.5281/zenodo.20683855, restored from the blog) and #1401 (DOI 10.5281/zenodo.20707509)"
+    },
+    {
+      "version": "v8.3",
+      "kind": "snapshot_deposit",
+      "date": "2026-06-17",
+      "deposits": [
+        3
+      ],
+      "count": "176 captures",
+      "note": "the last Zenodo release, severed 2026-06-19"
+    },
+    {
+      "version": "v8.4–v8.8",
+      "kind": "machinemediation_only",
+      "note": "minted directly into machinemediation.org without deposit-level snapshots (#936, 'Version chain context'); no copy held"
+    },
+    {
+      "version": "v8.9",
+      "kind": "snapshot_deposit",
+      "date": "2026-07-01",
+      "deposits": [
+        936
+      ],
+      "count": "195 captures"
+    },
+    {
+      "version": "v8.11",
+      "kind": "frozen_copy",
+      "date": "2026-07-06",
+      "file": "data/EA-WG-CAPTURES-01-v8.11.json",
+      "count": "197 entries",
+      "note": "frozen snapshot kept in the repository (named in datasets/dataflow-atlas); never deposited"
+    },
+    {
+      "version": "v9.6",
+      "kind": "frozen_copy",
+      "date": "2026-07-14",
+      "file": "data/EA-WG-CAPTURES-01-v9.6.json",
+      "count": "204 entries",
+      "note": "frozen snapshot kept in the repository; never deposited"
+    },
+    {
+      "version": "v9.42",
+      "kind": "frozen_copy",
+      "date": "2026-08-11",
+      "file": "data/archive/EA-WG-CAPTURES-01-v9.42-pre-transcript-extraction-20260811.json",
+      "count": "288 entries",
+      "note": "archived before the transcript extraction of v9.43 (commit 96fcfc3194); never deposited"
+    },
+    {
+      "version": "v10.9",
+      "kind": "snapshot_deposit",
+      "date": "2026-08-14",
+      "deposits": [
+        1461
+      ],
+      "count": "328 addresses, 470 captures",
+      "note": "the chain line in #1461's text orders the June editions differently from #1676 and #1739 ('v6.0 (#1397) → v7.x (#1396, #1398, #1401, #825)'); the deposit-level fields agree with this file"
+    },
+    {
+      "version": "v11.0",
+      "kind": "cited_only",
+      "note": "the registry version measured in #1462–#1470 and #1479 (2026-08-14/15); no snapshot"
+    },
+    {
+      "version": "v12.0",
+      "kind": "cited_only",
+      "date": "2026-09-25",
+      "note": "schema change of 2026-09-25 (registry correction_log); no snapshot"
+    },
+    {
+      "version": "v12.50",
+      "kind": "cited_only",
+      "date": "2026-10-02",
+      "note": "the version from which #1662 'words no good' was made; no snapshot"
+    },
+    {
+      "version": "v12.167",
+      "kind": "snapshot_deposit",
+      "date": "2026-10-12",
+      "deposits": [
+        1676
+      ],
+      "count": "633 addresses, 811 captures"
+    },
+    {
+      "version": "v12.559",
+      "kind": "snapshot_deposit",
+      "date": "2026-11-04",
+      "deposits": [
+        1739
+      ],
+      "count": "1001 addresses, 1193 captures",
+      "note": "its chain line omits the frozen copies and the cited-only versions listed here"
+    }
+  ]
+}

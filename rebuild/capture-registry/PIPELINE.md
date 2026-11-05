@@ -144,3 +144,5 @@ transcripts on the same date, seated twice. Withdrawn, not deleted.
 
 **OCR is retroactive cleanup, not a forward-looking concern.** No future capture
 will be OCR-read. 122 transcripts still carry OCR chrome.
+
+**A snapshot's version chain is printed from the bound chain, never written by hand.** v12.559 (#1739) listed the deposited editions and omitted the frozen copies (v8.11, v9.6, v9.42) and the versions published only at machinemediation.org or cited without a snapshot. The chain is bound in `rebuild/capture-registry/VERSION-CHAIN.json` (2026-11-05). Before drafting a snapshot: run `python3 scripts/capture_version_chain.py --check`, add any edition it reports and the new snapshot itself, then take the chain section from `--markdown`.

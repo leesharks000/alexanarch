@@ -1,0 +1,67 @@
+{
+ "corpus": "eusebius-historia-ecclesiastica",
+ "seat": "EA-CORPORA-34/01",
+ "title": "Eusebius, Historia ecclesiastica, in Greek, ed. W. Dindorf (Leipzig: Teubner, 1871)",
+ "language": "grc",
+ "fetched": "2026-11-05",
+ "spine": "EA-CORPORA-34",
+ "ruling": "Lee Sharks, 2026-11-05 09:03 EST: \"also - lets gather up and seat the sources we'll need for this one prior to writing. still under rebekah cranes for the ea-corpora, and with reference to the research occasion\".",
+ "seating": "EA-CORPORA-34, the thirty-fourth seating: Secondary Source — the reception of the Apocalypse, from the fathers to the critics, 2026-11-05",
+ "license": {
+  "payload": "Eusebius is public domain; Dindorf's edition (1871; Dindorf died 1883) is public domain everywhere. The TEI is Open Greek and Latin's (First1KGreek), CC BY-SA 4.0, redistributed under the same licence and attributed.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "normalization": "Originals as fetched under original/, pinned to a commit of the repository named in origin.items. text/<slug>.txt is the TEI reduced to plain text by seat.py (rebuild/corpora/ea-corpora-27), notes and apparatus dropped, divisions kept. No text was corrected by hand.",
+ "items": [
+  {
+   "kind": "tei",
+   "slug": "historia-ecclesiastica",
+   "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2018/tlg002/tlg2018.tlg002.1st1K-grc2.xml",
+   "path": "first1k/tlg2018.tlg002.1st1K-grc2.xml",
+   "source": "Open Greek and Latin, First1KGreek",
+   "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+   "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+   "file": "data/tlg2018/tlg002/tlg2018.tlg002.1st1K-grc2.xml",
+   "work": "Eusebius, Historia ecclesiastica I–X, ed. Dindorf (1871) — First1KGreek tlg2018.tlg002.1st1K-grc2"
+  }
+ ],
+ "loci": [
+  {
+   "label": "HE 5.8.6 (Irenaeus, Adv. haer. 5.30.3, in Greek): seen not long ago, near the end of Domitian's reign",
+   "text": "text/historia-ecclesiastica.txt",
+   "find": "οὐδὲ γὰρ πρὸ πολλοῦ χρόνου ἑωράθη",
+   "note": "written in NFC as 'οὐδὲ γὰρ πρὸ πολλοῦ χρόνου ἑωράθη'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points"
+  },
+  {
+   "label": "HE 3.25.4: the Apocalypse of John, 'if it seem right', which some reject and others count among the acknowledged",
+   "text": "text/historia-ecclesiastica.txt",
+   "find": "ἡ Ἰωάννου Ἀποκάλυψις, εἰ φανείη",
+   "note": "written in NFC as 'ἡ Ἰωάννου Ἀποκάλυψις, εἰ φανείη'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points"
+  },
+  {
+   "label": "HE 3.28.2: Gaius on Cerinthus and revelations 'as if written by a great apostle'",
+   "text": "text/historia-ecclesiastica.txt",
+   "find": "ὁ δι᾿ ἀποκαλύψεων ὡς ὑπὸ ἀποστόλου μεγάλου",
+   "note": "written in NFC as 'ὁ δι᾿ ἀποκαλύψεων ὡς ὑπὸ ἀποστόλου μεγάλου'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points"
+  },
+  {
+   "label": "HE 7.24.1: Dionysius against Nepos, bishop in Egypt",
+   "text": "text/historia-ecclesiastica.txt",
+   "find": "Νέπως ἦν, ἐπίσκοπος τῶν κατ",
+   "note": "written in NFC as 'Νέπως ἦν, ἐπίσκοπος τῶν κατ'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points"
+  }
+ ],
+ "scope": "The ten books entire. Held for the ledger of the books (3.25), Gaius (3.28), Papias's two Johns (3.39), the Irenaeus sentence in Greek (3.18; 5.8), and Dionysius of Alexandria on Nepos and the Apocalypse (7.24–25).",
+ "why_seated": "The record through which the date (Irenaeus), the second John (Papias), the dispute over author and standing (Gaius, Dionysius) and the book's double entry in the ledger (3.25) reach every later stratum: strata 3.2–3.4 of Secondary Source.",
+ "research": {
+  "study": "Secondary Source: the reception of the Apocalypse as derivative, secondary and marginal",
+  "design": "drafts/SECONDARY-SOURCE-design-2026-11-05.md (v0.3, sha256 638a5e3c…)",
+  "draft": "not yet drafted",
+  "locus_table": "the locus table of design v0.3 §4.1",
+  "owed_at": "the debts of design v0.3 §5, seated before drafting at the operator's word of 2026-11-05",
+  "for": "design v0.3 §3.2–3.4; the Irenaeus sentence read in #1735 §II.1"
+ },
+ "cross_references": [
+  "gnt-nestle1904 (01/04, Revelation)"
+ ]
+}

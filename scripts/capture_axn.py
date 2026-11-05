@@ -77,8 +77,27 @@ def observations(e):
     return out
 
 
+def sealed_section(slug, current):
+    """The section is sealed as it stood when the observation was first sealed. A later reclassification of the address
+    (the section sweep of 2026-11-05) does not re-derive the observation's AXN. Ruled 2026-11-05 (Lee Sharks), on the sweep
+    that moved 441 addresses: the section is a classification of the address, and an identity derived from the observation
+    should not move with it. The current section stays on the registry entry; the sealed file keeps the section of its sealing."""
+    p = SEALED / f"{slug}.json"
+    if p.is_file():
+        try:
+            prior = json.loads(p.read_text(encoding="utf-8")).get("observation", {})
+            return prior.get("s", None) if "s" in prior else None
+        except Exception:
+            return current
+    return current
+
+
 def sealed(e, o):
     slug = o.get("slug") or e["slug"]
+    o = dict(o)
+    s0 = sealed_section(slug, o.get("s"))
+    if s0 is None: o.pop("s", None)
+    else: o["s"] = s0
     body = {"observation": {k: o[k] for k in OBS if o.get(k) not in (None, "", [])},
             "analysis": {k: o[k] for k in ANA if o.get(k) not in (None, "", [])},
             "measures": {k: o[k] for k in MEA if o.get(k) not in (None, "", [])},

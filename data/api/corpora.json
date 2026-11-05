@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-04T19:36:02.185376Z",
- "seats": 172,
- "lines_total": 7107757,
+ "_generated": "2026-11-05T14:39:54.621011Z",
+ "seats": 183,
+ "lines_total": 7709054,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -16332,7 +16332,427 @@
    "scope": "The volume entire in session OCR, divided by its sections. Edmonds prints the Greek with facing English, and he prints the papyri of Sappho and Alcaeus from Oxyrhynchus published after Bergk's last edition (1882); the seat is held for those, for the operator's \"all sappho\".",
    "data": "https://www.alexanarch.org/data/corpora/lyra-graeca-edmonds-i/",
    "axn": "AXN:0BFC.ORIGINAL.⚫🎪📎🎹⚪🟤"
+  },
+  {
+   "seat": "EA-CORPORA-34/01",
+   "corpus": "eusebius-historia-ecclesiastica",
+   "edition": "Eusebius, Historia ecclesiastica I–X, ed. Dindorf (1871) — First1KGreek tlg2018.tlg002.1st1K-grc2",
+   "license": {
+    "payload": "Eusebius is public domain; Dindorf's edition (1871; Dindorf died 1883) is public domain everywhere. The TEI is Open Greek and Latin's (First1KGreek), CC BY-SA 4.0, redistributed under the same licence and attributed.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2018/tlg002/tlg2018.tlg002.1st1K-grc2.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg2018/tlg002/tlg2018.tlg002.1st1K-grc2.xml"
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 4026,
+   "verified_loci": [
+    "HE 5.8.6 (Irenaeus, Adv. haer. 5.30.3, in Greek): seen not long ago, near the end of Domitian's reign — 'οὐδὲ γὰρ πρὸ πολλοῦ χρόνου ἑωράθη' (written in NFC as 'οὐδὲ γὰρ πρὸ πολλοῦ χρόνου ἑωράθη'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)",
+    "HE 3.25.4: the Apocalypse of John, 'if it seem right', which some reject and others count among the acknowledged — 'ἡ Ἰωάννου Ἀποκάλυψις, εἰ φανείη' (written in NFC as 'ἡ Ἰωάννου Ἀποκάλυψις, εἰ φανείη'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)",
+    "HE 3.28.2: Gaius on Cerinthus and revelations 'as if written by a great apostle' — 'ὁ δι᾿ ἀποκαλύψεων ὡς ὑπὸ ἀποστόλου μεγάλου' (written in NFC as 'ὁ δι᾿ ἀποκαλύψεων ὡς ὑπὸ ἀποστόλου μεγάλου'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)",
+    "HE 7.24.1: Dionysius against Nepos, bishop in Egypt — 'Νέπως ἦν, ἐπίσκοπος τῶν κατ' (written in NFC as 'Νέπως ἦν, ἐπίσκοπος τῶν κατ'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)"
+   ],
+   "why_seated": "The record through which the date (Irenaeus), the second John (Papias), the dispute over author and standing (Gaius, Dionysius) and the book's double entry in the ledger (3.25) reach every later stratum: strata 3.2–3.4 of Secondary Source.",
+   "scope": "The ten books entire. Held for the ledger of the books (3.25), Gaius (3.28), Papias's two Johns (3.39), the Irenaeus sentence in Greek (3.18; 5.8), and Dionysius of Alexandria on Nepos and the Apocalypse (7.24–25).",
+   "data": "https://www.alexanarch.org/data/corpora/eusebius-historia-ecclesiastica/",
+   "axn": "AXN:0C12.ORIGINAL.🏗️👆⛵👁️🛸✨"
+  },
+  {
+   "seat": "EA-CORPORA-34/02",
+   "corpus": "irenaeus-adversus-haereses",
+   "edition": "Irenaeus, Adversus haereses, the Greek, ed. Harvey (1857) — First1KGreek tlg1447.tlg001.1st1K-grc1; Harvey, Sancti Irenaei libros quinque adversus haereses, vol. I (1857), the Archive's text layer; Harvey, Sancti Irenaei libros quinque adversus haereses, vol. II (1857), the Archive's text layer: books III–V",
+   "license": {
+    "payload": "Irenaeus is public domain; Harvey's edition (1857; Harvey died 1883) is public domain everywhere. The TEI is Open Greek and Latin's (First1KGreek), CC BY-SA 4.0, redistributed under the same licence and attributed. The Archive's scans of the two volumes are public domain.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg1447/tlg001/tlg1447.tlg001.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg1447/tlg001/tlg1447.tlg001.1st1K-grc1.xml"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sanctiirenaeiep01harvgoog",
+      "url": "https://archive.org/details/sanctiirenaeiep01harvgoog",
+      "files": [
+       "sanctiirenaeiep01harvgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sanctiirenaeiep00harvgoog",
+      "url": "https://archive.org/details/sanctiirenaeiep00harvgoog",
+      "files": [
+       "sanctiirenaeiep00harvgoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc+lat",
+   "lines": 100372,
+   "verified_loci": [
+    "Adv. haer. 5.30.3, the Latin: seen near the end of Domitian's reign — 'ad finem Domitiani imperii'"
+   ],
+   "why_seated": "The single external anchor of the Domitianic date (5.30.3), read in its Latin and in the Greek Eusebius transmits: stratum 3.2.",
+   "scope": "The five books, Greek where it survives and the Latin of both volumes, held for 4.20.11 and 5.30.3.",
+   "data": "https://www.alexanarch.org/data/corpora/irenaeus-adversus-haereses/",
+   "axn": "AXN:0C12.ORIGINAL.🌔✖️👁‍🗨⚫⭕🎪"
+  },
+  {
+   "seat": "EA-CORPORA-34/03",
+   "corpus": "justin-dialogus",
+   "edition": "Justin, Dialogus cum Tryphone, ed. Archambault (1909) — First1KGreek tlg0645.tlg003.perseus-grc2",
+   "license": {
+    "payload": "Justin is public domain; Archambault's edition (Paris: Picard, 1909) is public domain in the United States. The TEI is Open Greek and Latin's (First1KGreek), CC BY-SA 4.0, redistributed under the same licence and attributed.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg0645/tlg003/tlg0645.tlg003.perseus-grc2.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg0645/tlg003/tlg0645.tlg003.perseus-grc2.xml"
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 1740,
+   "verified_loci": [
+    "Dial. 81.4: John, one of the apostles of Christ, prophesied in a revelation made to him — 'ἐν ἀποκαλύψει γενομένῃ αὐτῷ χίλια ἔτη ποιήσειν' (written in NFC as 'ἐν ἀποκαλύψει γενομένῃ αὐτῷ χίλια ἔτη ποιήσειν'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)"
+   ],
+   "why_seated": "The earliest named witness to the book's author and its reading of the thousand years: stratum 3.2.",
+   "scope": "The Dialogue entire, held for 81.4.",
+   "data": "https://www.alexanarch.org/data/corpora/justin-dialogus/",
+   "axn": "AXN:0C12.ORIGINAL.🙏💜♣️♍🎲🐚"
+  },
+  {
+   "seat": "EA-CORPORA-34/04",
+   "corpus": "muratorian-fragment-tregelles",
+   "edition": "Tregelles, Canon Muratorianus (1867), with the facsimile, the Archive's text layer",
+   "license": {
+    "payload": "The fragment is public domain; Tregelles's edition (1867; Tregelles died 1875) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "canonmuratorianu00treg",
+      "url": "https://archive.org/details/canonmuratorianu00treg",
+      "files": [
+       "canonmuratorianu00treg_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat+eng",
+   "lines": 7367,
+   "verified_loci": [
+    "lines 47–50: Paul, following the order of his predecessor John, writes by name to seven churches — 'sequens prodecessoris sui Iohannis ordine' (the OCR reads 'ordine' where Tregelles prints 'ordinē'; read in the scan before quotation)"
+   ],
+   "why_seated": "The fragment's construal of Paul's seven churches through John's (#1735 §IV.3), seated in a public edition so that Secondary Source can read it in seat and trace what later strata did with it: strata 3.2 and 3.4.",
+   "scope": "Tregelles's edition whole: the transcription, the facsimile and his commentary.",
+   "data": "https://www.alexanarch.org/data/corpora/muratorian-fragment-tregelles/",
+   "axn": "AXN:0C12.ORIGINAL.☀️△🧊🌓🟣🎯"
+  },
+  {
+   "seat": "EA-CORPORA-34/05",
+   "corpus": "epiphanius-panarion",
+   "edition": "Epiphanius, Panarion, ed. Holl — First1KGreek tlg2021.tlg002.1st1K-grc1",
+   "license": {
+    "payload": "Epiphanius is public domain; Holl's edition (1915–1933; Holl died 1926) is public domain everywhere. The TEI is Open Greek and Latin's (First1KGreek), CC BY-SA 4.0, redistributed under the same licence and attributed.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2021/tlg002/tlg2021.tlg002.1st1K-grc1.xml",
+      "source": "Open Greek and Latin, First1KGreek",
+      "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+      "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+      "file": "data/tlg2021/tlg002/tlg2021.tlg002.1st1K-grc1.xml"
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 9732,
+   "verified_loci": [
+    "Panarion, the table of heresies: the Alogi, who receive neither the Gospel nor the Apocalypse of John — 'οἱ τὸ εὐαγγέλιον καὶ τὴν ἀποκάλυψιν Ἰωάννου μὴ δεχόμενοι' (written in NFC as 'οἱ τὸ εὐαγγέλιον καὶ τὴν ἀποκάλυψιν Ἰωάννου μὴ δεχόμενοι'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)",
+    "Panarion 51.3: the heresy that rejects the books of John — 'ἀποβάλλουσαν Ἰωάννου τὰς βίβλους'"
+   ],
+   "why_seated": "The dispute in which rejecting the book's reading meant rejecting its author: stratum 3.3.",
+   "scope": "The Panarion entire, held for heresy 51, the Alogi.",
+   "data": "https://www.alexanarch.org/data/corpora/epiphanius-panarion/",
+   "axn": "AXN:0C12.ORIGINAL.🃏🝊🔭🕑🪜✋"
+  },
+  {
+   "seat": "EA-CORPORA-34/06",
+   "corpus": "westcott-canon-1896",
+   "edition": "Westcott, General Survey of the History of the Canon (1896), Cornell copy, the Archive's text layer",
+   "license": {
+    "payload": "Westcott (died 1901) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "cu31924029301582",
+      "url": "https://archive.org/details/cu31924029301582",
+      "files": [
+       "cu31924029301582_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc+lat",
+   "lines": 54528,
+   "verified_loci": [
+    "the Laodicene canon 60: how many books must be read — 'How many books must be read'",
+    "Appendix D: the chief catalogues of the books of the Bible during the first eight centuries — 'THE CHIEF CATALOGUES OF THE BOOKS OF THE BIBLE DURING THE FIRST EIGHT CENTURIES'"
+   ],
+   "why_seated": "One public, pre-1929 edition that sets the fourth-century catalogues side by side in their languages; each list is read there and cited with its own reference. The Greek of Cyril's Catecheses and of the poems of Gregory and Amphilochius is not otherwise held in a public TEI this session could reach.",
+   "scope": "The whole survey, with its appendix of the catalogues in their original languages, held for the canon lists of stratum 3.4: Laodicea 60, the Apostolic Canons 85, Cyril of Jerusalem, Gregory of Nazianzus, Amphilochius, Athanasius's Festal Letter 39, Hippo and Carthage.",
+   "data": "https://www.alexanarch.org/data/corpora/westcott-canon-1896/",
+   "axn": "AXN:0C12.ORIGINAL.🛸💎💜⛵🔖🎪"
+  },
+  {
+   "seat": "EA-CORPORA-34/07",
+   "corpus": "collectio-hispana-1808",
+   "edition": "Collectio canonum Ecclesiae Hispanae (Matriti, 1808), the Archive's text layer",
+   "license": {
+    "payload": "The councils are public domain; the Madrid edition of 1808 is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "A28009301",
+      "url": "https://archive.org/details/A28009301",
+      "files": [
+       "A28009301_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 62199,
+   "verified_loci": [
+    "the index: on receiving the book of the Apocalypse in all churches, Toledo IV, canon 17 — 'De Apocalypsis libro in omnibus recipiendo'",
+    "Toledo IV, canon 17: the authority of many councils and the decrees of the Roman bishops ascribe the Apocalypse to John the evangelist — 'Apocalypsis librum multorum conciliorum auctoritas et synodica sanctorum praesulum Romanorum decreta Joannis evangelistae esse praescribunt'"
+   ],
+   "why_seated": "The Western counter-witness to the Byzantine lectionary's silence: stratum 3.5 and the lectionary paragraph of design v0.3.",
+   "scope": "The collection whole, held for the Fourth Council of Toledo, canon 17 (the Apocalypse to be read from Easter to Pentecost).",
+   "data": "https://www.alexanarch.org/data/corpora/collectio-hispana-1808/",
+   "axn": "AXN:0C12.ORIGINAL.▶️♅♃🙏🌆⏪"
+  },
+  {
+   "seat": "EA-CORPORA-34/08",
+   "corpus": "september-testament-1522",
+   "edition": "Das Newe Testament Deutzsch, 1522, facsimile of 1883, the Archive's text layer (the scan is the witness)",
+   "license": {
+    "payload": "Luther's text is public domain; the facsimile (1883) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "DasNeweTestamentDeutzsch1522",
+      "url": "https://archive.org/details/DasNeweTestamentDeutzsch1522",
+      "files": [
+       "DasNeweTestamentDeutzsch1522SeptemberbibelErstenAusgabeNachbildung1883Small_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 26253,
+   "verified_loci": [],
+   "why_seated": "Standing made into typography: stratum 3.6. The preface's wording enters the study only when read from the pages of this scan.",
+   "scope": "The facsimile whole, held for the table of books (Hebrews, James, Jude and the Apocalypse set apart and unnumbered) and the 1522 preface to the Apocalypse.",
+   "data": "https://www.alexanarch.org/data/corpora/september-testament-1522/",
+   "axn": "AXN:0C12.ORIGINAL.🔥♅🚀🔐💛🐚"
+  },
+  {
+   "seat": "EA-CORPORA-34/09",
+   "corpus": "erasmus-annotationes-1535",
+   "edition": "Erasmus, In Novum Testamentum Annotationes (Basel, 1535), the Archive's text layer",
+   "license": {
+    "payload": "Erasmus is public domain; the Basel printing of 1535 is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "ARes162052",
+      "url": "https://archive.org/details/ARes162052",
+      "files": [
+       "ARes162052_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 78952,
+   "verified_loci": [
+    "the annotations on the Apocalypse — 'IN APOCALYPSIN'"
+   ],
+   "why_seated": "The printed Bible's first critical doubt of the author: stratum 3.6.",
+   "scope": "The Annotationes whole, held for the notes on the Apocalypse and on its authorship.",
+   "data": "https://www.alexanarch.org/data/corpora/erasmus-annotationes-1535/",
+   "axn": "AXN:0C12.ORIGINAL.💚💥🌀✖️🗿↘️"
+  },
+  {
+   "seat": "EA-CORPORA-34/10",
+   "corpus": "revelation-criticism-1886-1920",
+   "edition": "E. Vischer, Die Offenbarung Johannis: eine jüdische Apokalypse in christlicher Bearbeitung, with an afterword by A. Harnack (TU 2.3, Leipzig, 1886); F. Spitta, Die Offenbarung des Johannes untersucht (Halle, 1889); H. Gunkel, Schöpfung und Chaos in Urzeit und Endzeit (Göttingen, 1895); W. Bousset, Die Offenbarung Johannis, Meyer's Kommentar XVI, 5th ed. (Göttingen, 1896); W. Bousset, Kyrios Christos: Geschichte des Christusglaubens von den Anfängen des Christentums bis Irenaeus (Göttingen, 1913); R. H. Charles, A Critical and Exegetical Commentary on the Revelation of St. John, ICC, vol. I (Edinburgh, 1920); R. H. Charles, A Critical and Exegetical Commentary on the Revelation of St. John, ICC, vol. II (Edinburgh, 1920)",
+   "license": {
+    "payload": "All public domain everywhere: Vischer (1886), Spitta (1889; died 1924), Gunkel (1895; died 1932), Bousset (1896, 1913; died 1920), Charles (1920; died 1931).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "dieoffenbarungj00viscgoog",
+      "url": "https://archive.org/details/dieoffenbarungj00viscgoog",
+      "files": [
+       "dieoffenbarungj00viscgoog_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "11604718bsb",
+      "url": "https://archive.org/details/11604718bsb",
+      "files": [
+       "11604718bsb_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "schpfungundcha00gunk",
+      "url": "https://archive.org/details/schpfungundcha00gunk",
+      "files": [
+       "schpfungundcha00gunk_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dieoffenbarungjo0000wilh_n4d2",
+      "url": "https://archive.org/details/dieoffenbarungjo0000wilh_n4d2",
+      "files": [
+       "dieoffenbarungjo0000wilh_n4d2_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kyrioschristosge00bous",
+      "url": "https://archive.org/details/kyrioschristosge00bous",
+      "files": [
+       "kyrioschristosge00bous_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "criticalexegetic661char",
+      "url": "https://archive.org/details/criticalexegetic661char",
+      "files": [
+       "criticalexegetic661char_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "criticalexegetic02char",
+      "url": "https://archive.org/details/criticalexegetic02char",
+      "files": [
+       "criticalexegetic02char_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+eng",
+   "lines": 220866,
+   "verified_loci": [
+    "Vischer's title: a Jewish apocalypse in Christian revision — 'EINE JÜDISCHE APOKALYPSE IN CHRISTLICHER BEARBEITUNG'",
+    "Spitta's title page — 'UNTERSUCHT VON FRIEDRICH SPITTA'",
+    "Bousset 1896, the title page of the fifth edition — 'Neu bearbeitet von Lic. theol. Wilhelm Bousset'",
+    "Charles I, the contents: the Domitianic date — 'The Domitianic date'",
+    "Charles II on 19:13: the name the Word of God 'cannot be explained away' — 'cannot be explained away'"
+   ],
+   "why_seated": "Derivation made a method, for the text and for the figure: stratum 3.7, and the count of the figure's derivation (design v0.3 §2.4).",
+   "scope": "Seven volumes whole: the source-critical (Vischer, Spitta), the history-of-religions (Gunkel, Bousset 1896), the developmental Christology (Kyrios Christos, 1913) and the critical commentary (Charles).",
+   "data": "https://www.alexanarch.org/data/corpora/revelation-criticism-1886-1920/",
+   "axn": "AXN:0C12.ORIGINAL.👈✋🕔↖️🌾🪟"
+  },
+  {
+   "seat": "EA-CORPORA-34/11",
+   "corpus": "gregory-textkritik-1900",
+   "edition": "Gregory, Textkritik des Neuen Testamentes I (1900), the Archive's text layer: the Greek manuscripts and the lectionaries",
+   "license": {
+    "payload": "Gregory (died 1917) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "textkritikdesneu0001greg",
+      "url": "https://archive.org/details/textkritikdesneu0001greg",
+      "files": [
+       "textkritikdesneu0001greg_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-05",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 35262,
+   "verified_loci": [
+    "on the prefaces to the Apocalypse in the manuscripts — 'Zu der Apokalypse begegnet selten ein anderes Vorwort'"
+   ],
+   "why_seated": "The material order: the book's transmission and its absence from the lectionary: stratum 3.5.",
+   "scope": "The first volume whole, held for the manuscripts that carry the Apocalypse and for the lectionaries.",
+   "data": "https://www.alexanarch.org/data/corpora/gregory-textkritik-1900/",
+   "axn": "AXN:0C12.ORIGINAL.♃🕖✨🌟🚨🌌"
   }
  ],
- "count": 172
+ "count": 183
 }

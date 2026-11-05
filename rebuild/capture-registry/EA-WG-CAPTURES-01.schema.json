@@ -1243,6 +1243,25 @@
    ],
    "pattern": "^AXN:[0-9A-F]{4,}\\.CAPTURE\\..+$",
    "description": "Added 2026-10-27 (MANUS: \"one observation / analysis / measure should have one axn\"). The AXN of the entry's own observation: the address's position, family CAPTURE, and six glyphs derived (table v2.1) from the SHA-256 of the observation sealed with its analysis and measures (data/captures/sealed/<slug>.json). Each item of observations carries its own axn the same way. Null at intake: capture_intake.seat_flat writes every schema key, and the AXN is minted after it, by the postflight's AXN step."
+  },
+  "scope": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "enum": [
+    "archive",
+    "external",
+    null
+   ],
+   "description": "Which scope of the registry the address belongs to (ruled 2026-11-05, Lee Sharks). 'archive': the registry's original scope, captures of the archive's entities or engaging the archive's sources; every address seated before 2026-10-29, the first intake of external entities as such (the meta-aggregator census), is archive. 'external': an address seated from 2026-10-29 whose originator is external and whose compositions cite no archive-controlled or authored source. Derived at intake by capture_intake.derive_scope; not part of the sealed observation."
+  },
+  "scope_basis": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "The ground of scope, as derive_scope states it."
   }
  }
 }
