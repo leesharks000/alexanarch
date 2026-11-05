@@ -13,7 +13,7 @@ stem = sys.argv[1]; Z_ON = float(sys.argv[2]) if len(sys.argv) > 2 else 3.0; Z_O
 C = 299792.458
 ON, OFF = ["0061", "0063", "0065"], ["0062", "0064", "0066"]
 H = {s: json.load(open(f"{stem}_{s}.json")) for s in ON + OFF}
-foff_hz = H["0013"]["foff"] * 1e6
+foff_hz = H[ON[0]]["foff"] * 1e6
 t_all = [H[s]["tstart"] for s in ON + OFF]
 
 def horizons(t0, t1):
@@ -53,7 +53,7 @@ def tracked(s, dv=0.0):
 
 def coincidences(dv=0.0, keep=False):
     zs = {s: tracked(s, dv) for s in ON + OFF}
-    ref = zs["0013"][1]
+    ref = zs[ON[0]][1]
     grid = lambda s: np.rint((zs[s][1] - ref[0]) / foff_hz).astype(int)
     aligned = {}
     for s in ON + OFF:
@@ -63,7 +63,7 @@ def coincidences(dv=0.0, keep=False):
         aligned[s] = a
     # allow +-1 channel tolerance by max-filtering ON and OFF
     mf = lambda a: np.maximum(np.maximum(a, np.roll(a, 1)), np.roll(a, -1))
-    on_ok = np.ones_like(aligned["0013"], bool)
+    on_ok = np.ones_like(aligned[ON[0]], bool)
     for s in ON: on_ok &= mf(aligned[s]) >= Z_ON
     off_ok = np.ones_like(on_ok)
     for s in OFF: off_ok &= mf(aligned[s]) < Z_OFF
