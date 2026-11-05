@@ -1,0 +1,60 @@
+{
+ "corpus": "epiphanius-panarion",
+ "seat": "EA-CORPORA-34/05",
+ "title": "Epiphanius, Panarion, in Greek, ed. K. Holl (GCS, Leipzig, 1915–1933)",
+ "edition": "Epiphanius, Panarion, ed. Holl — First1KGreek tlg2021.tlg002.1st1K-grc1",
+ "language": "grc",
+ "license": {
+  "payload": "Epiphanius is public domain; Holl's edition (1915–1933; Holl died 1926) is public domain everywhere. The TEI is Open Greek and Latin's (First1KGreek), CC BY-SA 4.0, redistributed under the same licence and attributed.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "fetched": "2026-11-05",
+ "origin": {
+  "items": [
+   {
+    "url": "https://raw.githubusercontent.com/OpenGreekAndLatin/First1KGreek/ed91552c52530c8f5a3ddf2dd767e899372a804c/data/tlg2021/tlg002/tlg2021.tlg002.1st1K-grc1.xml",
+    "source": "Open Greek and Latin, First1KGreek",
+    "repository": "https://github.com/OpenGreekAndLatin/First1KGreek",
+    "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+    "file": "data/tlg2021/tlg002/tlg2021.tlg002.1st1K-grc1.xml"
+   }
+  ],
+  "fetched": "2026-11-05",
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "panarion",
+    "work": "Epiphanius, Panarion, ed. Holl — First1KGreek tlg2021.tlg002.1st1K-grc1",
+    "text": "text/panarion.txt",
+    "originals": [
+     "original/first1k/tlg2021.tlg002.1st1K-grc1.xml"
+    ],
+    "lines": 9732
+   }
+  ]
+ },
+ "normalization": "Originals as fetched under original/, pinned to a commit of the repository named in origin.items. text/<slug>.txt is the TEI reduced to plain text by seat.py (rebuild/corpora/ea-corpora-27), notes and apparatus dropped, divisions kept. No text was corrected by hand.",
+ "scope": "The Panarion entire, held for heresy 51, the Alogi.",
+ "verified_loci": [
+  "Panarion, the table of heresies: the Alogi, who receive neither the Gospel nor the Apocalypse of John — 'οἱ τὸ εὐαγγέλιον καὶ τὴν ἀποκάλυψιν Ἰωάννου μὴ δεχόμενοι' (written in NFC as 'οἱ τὸ εὐαγγέλιον καὶ τὴν ἀποκάλυψιν Ἰωάννου μὴ δεχόμενοι'; the seated TEI carries the oxia forms, so the locus is given in the text's own code points)",
+  "Panarion 51.3: the heresy that rejects the books of John — 'ἀποβάλλουσαν Ἰωάννου τὰς βίβλους'"
+ ],
+ "loci_not_found": [],
+ "lines_total": 9732,
+ "why_seated": "The dispute in which rejecting the book's reading meant rejecting its author: stratum 3.3.",
+ "spine": "EA-CORPORA-34",
+ "ruling": "Lee Sharks, 2026-11-05 09:03 EST: \"also - lets gather up and seat the sources we'll need for this one prior to writing. still under rebekah cranes for the ea-corpora, and with reference to the research occasion\".",
+ "seating": "EA-CORPORA-34, the thirty-fourth seating: Secondary Source — the reception of the Apocalypse, from the fathers to the critics, 2026-11-05",
+ "research": {
+  "study": "Secondary Source: the reception of the Apocalypse as derivative, secondary and marginal",
+  "design": "drafts/SECONDARY-SOURCE-design-2026-11-05.md (v0.3, sha256 638a5e3c…)",
+  "draft": "not yet drafted",
+  "locus_table": "the locus table of design v0.3 §4.1",
+  "owed_at": "the debts of design v0.3 §5, seated before drafting at the operator's word of 2026-11-05",
+  "for": "design v0.3 §3.3"
+ }
+}
