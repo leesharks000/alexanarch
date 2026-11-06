@@ -24,7 +24,8 @@ Texts read: three Google AI Overviews seated in the Capture Registry (avi-loeb-3
 - Type: the qualified taken absolutely (τὸ πῇ ὡς ἁπλῶς). Relation: direct instance. Effect types: none.
 - Standing granted: the qualified remark as an unqualified position.
 - Sharpness: moderate; the qualifier ("most likely") is still printed, and the heading carries the transfer.
-- Strongest alternative: a summary must compress, and "shift" fairly describes the public trajectory of his remarks from November to December. Answer: the April essay restates the ranking after December, so the trajectory the heading asserts is absent from his record.
+- Strongest alternative: a summary must compress, and "shift" fairly describes the public trajectory of his remarks from November to December. Answer: there was no trajectory. His paper of July 2025 (arXiv:2507.12213, §7) concludes "By far the most likely outcome will be that 3I/ATLAS is a completely natural interstellar object, probably a comet"; the Level 4 ranking stood at every date checked (August 2025, December 2025, April 2026). The December remark repeats July. The operator's ruling (2026-11-06): the heading and the verb make a lie of a true sentence, a held position given as a concession.
+- Further type, recorded with S2: frame conversion (#1523) in a third shape beside its two named ones, the trajectory substitution, a constant position re-specified as an arc ending in surrender. Every quoted word kept; the standing changed.
 - Countertest and repair: as S1; the heading becomes "Loeb's position after December".
 
 ## S3. Nondetections composed as confirmation (Overview, "3i atlas signal studies")
@@ -96,4 +97,5 @@ Texts read: three Google AI Overviews seated in the Capture Registry (avi-loeb-3
 
 - R1. Seat the ATA paper (arXiv:2512.18142v2, open access) and the Intelligent Living article as saved sources, and re-run witnesses.py against them; W10–W14 are now read through the notebook's quotations.
 - R2. Countertests S1, S3, S4 and S6 are addresses for the Capture Registry, to be run by the operator.
+- R1a. Seat arXiv:2507.12213 (open access) and the Loeb Scale paper (arXiv:2508.09167) as sources for S2's answer.
 - R3. The three-component test for the sophistic class is unmet for every text here, and no finding asserts it.
