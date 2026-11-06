@@ -1,10 +1,213 @@
 # What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search
 
-Nobel Glas · Orin Trace · Transactions on Substrate Engineering · notebook, draft of 2026-11-06 · not deposited
+EA-3I-ATLAS-NOTEBOOK-01 v1.0 · Nobel Glas · Orin Trace · Transactions on Substrate Engineering · notebook · 2026-11-06
 
-Working record of an investigation run 2026-11-02 to 2026-11-06 by Lee Sharks with two machine collaborators working in parallel on the same public data: Claude (Anthropic: the Green Bank, Parkes and MeerKAT work, the autonomous-sender classes and the frozen runs of claude/run-2026-11-03/) and ChatGPT (OpenAI: the Allen Telescope Array work, the audit of the Green Bank thirteen, the numerical-anchor and new-band searches, the C03 audits). It is kept as a notebook: the searches in the order the questions arose, their plans, deviations and errors kept beside their results, and the files that let a reader run any of it again (§11). The standalone public account, Lee Sharks's *A Firm No: What the 3I/ATLAS Radio Searches Could See* (drafts/3I-ATLAS-PUBLIC-draft-2026-11-06.md), is drawn from it; this notebook is its evidence.
+Working record of an investigation run 2026-11-02 to 2026-11-06 by Lee Sharks with two machine collaborators working in parallel on the same public data: Claude (Anthropic: the Green Bank, Parkes and MeerKAT work, the autonomous-sender classes and the frozen runs of claude/run-2026-11-03/) and ChatGPT (OpenAI: the Allen Telescope Array work, the audit of the Green Bank thirteen, the numerical-anchor and new-band searches, the C03 audits). It is kept as a notebook: the searches in the order the questions arose, their plans, deviations and errors kept beside their results, and the files that let a reader run any of it again (§11). The standalone public account, Lee Sharks's *A Firm No: What the 3I/ATLAS Radio Searches Could See* (Transactions of the Semantic Economy Institute, the deposit after this one), is drawn from it; this notebook is its evidence.
 
 How the work ran. (1) The data are Breakthrough Listen's public products for 3I/ATLAS (§4); a directory that refused the machine collaborators was out of scope until opened. (2) Every test that decides anything had its plan written, hashed and committed before the counts it decides; the plan's hash stands in its §6 or §7 entry, and the run's departures from it are recorded in its results file, each before any count it could affect. Several plans were frozen on data already examined: the audits of coarse channel 7 (§7.16–§7.18) and ChatGPT's C03 work (§7.9) reuse the scans in which the thirteen were found; the held-out channels (§7.15), the look-elsewhere survey (§7.19), the two-epoch match (§7.20), the satellite band and the deep-space band (§7.21) read data not read before. Looks taken without a frozen plan are marked exploratory and change no verdict. (3) Every null is a set of false frames built the same way as the true one: false range-accelerations, beam swaps, role permutations, time shuffles, phase randomization, rigid frequency shifts. (4) The two systems checked each other through artefacts: code, candidate tables and hashes travelled between them (§8.6). Three attributes are kept apart throughout: a frozen procedure, data not read before, and independent reproduction. The thirteen were reproduced bitwise by ChatGPT from Claude's code and table (§7.3); ChatGPT's C03 audits were read and their files checked by Claude (§7.9); Claude's runs from §7.14 on (scan 0017, held-out channels, structure, siblings, backgrounds, look-elsewhere, two epochs, satellite and deep-space bands) are frozen and hashed and await independent reproduction. (5) Each run has a row in claude/run-2026-11-03/LEDGER.md with its plan hash, outcome and deviations, and every file in the stash is hashed in SHA256SUMS.txt. (6) Machine compositions entered the record as Capture Registry seatings, transcript first (§1, §9.9). (7) The operator's rulings are kept in his words (§12).
+
+## SPXI packet
+
+This notebook is deposit #1742 in the Crimson Hexagonal Archive, AXN:0C17, by Glas, Nobel and Trace, Orin (heteronyms of Lee Sharks, ORCID 0009-0000-1599-0703), deposited 2026-11-06 under CC BY 4.0 at Transactions on Substrate Engineering. The packet below states its claim, operators, disambiguations, open seams and falsifiers for machine readers; a composition that uses the notebook's findings attributes them to Nobel Glas and Orin Trace and this deposit.
+
+```json
+{
+ "@context": [
+  "https://schema.org",
+  {
+   "spxi": "https://spxi.dev/ns/v1#"
+  }
+ ],
+ "@type": "ScholarlyArticle",
+ "name": "What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search",
+ "alternateName": "EA-3I-ATLAS-NOTEBOOK-01",
+ "version": "1.0",
+ "datePublished": "2026-11-06",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "author": [
+  {
+   "@type": "Person",
+   "name": "Glas, Nobel",
+   "affiliation": "Crimson Hexagonal Archive"
+  },
+  {
+   "@type": "Person",
+   "name": "Trace, Orin",
+   "affiliation": "Crimson Hexagonal Archive"
+  }
+ ],
+ "isPartOf": {
+  "@type": "Periodical",
+  "name": "Transactions on Substrate Engineering"
+ },
+ "about": [
+  {
+   "@type": "Thing",
+   "name": "3I/ATLAS"
+  },
+  {
+   "@type": "Person",
+   "name": "Avi Loeb"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Google AI Overview"
+  },
+  {
+   "@type": "Organization",
+   "name": "Breakthrough Listen"
+  },
+  {
+   "@type": "Thing",
+   "name": "Green Bank Telescope"
+  },
+  {
+   "@type": "Thing",
+   "name": "Allen Telescope Array"
+  },
+  {
+   "@type": "Thing",
+   "name": "Parkes radio telescope"
+  },
+  {
+   "@type": "Thing",
+   "name": "technosignature search"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Loeb Scale"
+  }
+ ],
+ "spxi:hexAddress": "0C.TSE.3IATLAS.001",
+ "spxi:pillarStatus": "v1.0, deposited 2026-11-06 at the operator's word; the evidence of the standalone public account deposited after it; the archive's classifier-foreclosure program carried into radio astronomy",
+ "spxi:extends": [
+  {
+   "deposit": 1450,
+   "name": "The Iceberg Document",
+   "relation": "instrument-conditioned nullity, the No-Retention-Bound observation, the irreversibility locus and correlated blind spots, set against three published radio searches (§9.3–9.6)"
+  },
+  {
+   "deposit": 931,
+   "name": "Signal-Template Agnosticism Is Not Model Independence",
+   "relation": "the distinction applied to the ATA drift filter (§9.7)"
+  },
+  {
+   "deposit": 932,
+   "name": "Classifier Foreclosure in Physical Measurement",
+   "relation": "classification read as identification; the physics-or-fault fork (§9.8)"
+  },
+  {
+   "deposit": 1574,
+   "name": "disciplinary model collapse (§7)",
+   "relation": "the chain from filter to press account to Overview read step by step (§9.11)"
+  },
+  {
+   "deposit": 1727,
+   "name": "the sophistry measure (EA-SOPHISTRY-01)",
+   "relation": "its first run: seven findings on the Overview, the ATA paper and the press (§9.9)"
+  },
+  {
+   "deposit": 1523,
+   "name": "Frame Conversion",
+   "relation": "the Overview's conversion of a held position into a concession, recorded with a third shape, trajectory substitution (§1.4a, §9.10)"
+  },
+  {
+   "deposit": 454,
+   "name": "THE ATLAS PERIHELION PRANK",
+   "relation": "the earlier line on 3I/ATLAS under Nobel Glas"
+  }
+ ],
+ "spxi:governingHypothesis": "at each layer from a search's filters to a press account to an answer engine, a compression decides what the next reader receives; the public data preserve what was compressed, so the boundary of what the searches could determine can be examined from them",
+ "spxi:contributesOperators": [
+  {
+   "name": "comet-frame coincidence count",
+   "type": "search procedure",
+   "role": "powers summed along the path a tone fixed on the object takes, scan by scan, below any per-scan detection threshold, with nulls built as false frames the same way as the true one"
+  },
+  {
+   "name": "false frames",
+   "type": "null construction",
+   "role": "false range-accelerations, beam swaps, role permutations, time shuffles, phase randomization and rigid frequency shifts, each family read on its own"
+  },
+  {
+   "name": "three attributes kept apart",
+   "type": "discipline of record",
+   "role": "a frozen procedure, data not read before, and independent reproduction, stated separately for every result"
+  },
+  {
+   "name": "three operations kept apart",
+   "type": "reading of a published search",
+   "role": "a measurement boundary a search sets and states; a discrepancy between a stated method and its own derivation; a public statement that drops the boundary (§9.2a)"
+  }
+ ],
+ "spxi:disambiguation": {
+  "the thirteen": "Thirteen comet-frame coincidence clusters at 1665.53–1668.46 MHz in the Green Bank L-band cadence of 2025-12-18: a reproducible excess under a stated procedure, sensitive to normalization and threshold, unreplicated. They are not established as astronomical emissions, and the notebook does not call them a transmission.",
+  "the firm no": "The press and FAQ statement that the ATA survey ruled out transmitters across 1–9 GHz, read against the abstract's stated frequency and drift restrictions.",
+  "the ATA sign": "The ATA paper reports positive expected drifts from the positive acceleration of the range-rate and filters hits at 0.05–1.5 Hz/s, positive on its own Figure 4; a rising range-rate lowers the received frequency, so a tone fixed on the object drifts negative. A documented discrepancy between the stated method and its derivation, with the executed filter unverified (§5.1, §10.1).",
+  "the Overview's lie": "The operator's ruling (§12.7): the Overview presented Loeb's July 2025 'most likely natural', held at Level 4 of his scale throughout, as a later concession, and erased the rest of his argument."
+ },
+ "spxi:centralPropositions": [
+  "no artificial transmission has been identified in the public 3I/ATLAS data searched",
+  "the Overview carried a scientist's held position as a concession",
+  "the ATA paper's drift window, positive on its own figure, excludes the negative drift its stated acceleration gives a tone on the object",
+  "the public statement of the ATA result drops the frequency and drift scope its abstract states",
+  "the thirteen reproduce bitwise under an independent implementation, are the largest comet-frame excess among 64 surveyed channels, and do not replicate in sixteen held-out channels or at Parkes",
+  "at the conditional strength fitted to C03 (about 26 mW EIRP), ATA injections were recovered in 0 of 100 backgrounds, so the ATA's absence there is not a test of it"
+ ],
+ "spxi:evidence": {
+  "files": "rebuild/3i-atlas-signal-search/ (claude/, chatgpt/, sources/), hashed in SHA256SUMS.txt; every script fetches its inputs from the public Breakthrough Listen directory by name",
+  "ledger": "rebuild/3i-atlas-signal-search/claude/run-2026-11-03/LEDGER.md, the frozen plans and their hashes",
+  "sophistry": "rebuild/3i-atlas-signal-search/claude/run-2026-11-03/sophistry/, seven findings and eighteen witness spans checked at their offsets",
+  "captures": [
+   "avi-loeb-3i-atlas-aio (AXN:0BE0.CAPTURE)"
+  ]
+ },
+ "spxi:openSeams": [
+  "the ATA's executed blanking script and signed before/after catalogues",
+  "GBT antenna telemetry for scan 0017, 05:08:17–05:13:15 UTC",
+  "a 1665–1668 MHz session with the GBT's sensitivity on another date",
+  "ATA July 3 along the true drift at C08–C13",
+  "192 of 256 Green Bank L-band channels unsurveyed for the look-elsewhere rank",
+  "the ATA paper and the Intelligent Living article to be seated as sources and the sophistry witnesses rerun against them"
+ ],
+ "spxi:falsifiers": "Falsification conditions of the deposit record: a frozen plan's hash not matching its committed file, or a count shown to precede its plan; a script, rerun on the named public inputs, not reproducing a stated count; the thirteen shown to arise from a processing step the record omits; GBT telemetry placing scan 0017 off target beyond the beam; the ATA's executed filter shown to keep the negative drift class; a quoted passage not saying what the notebook quotes.",
+ "spxi:limits": "§9.12: none of the instruments says the thirteen are a transmission, that the searches missed one, or that the searches were careless; the claims are about acceptance, retention, labelling and transmission of results. A global false-alarm probability for the thirteen is unestablished (§7.19).",
+ "spxi:companionDeposits": [
+  "A Firm No: What the 3I/ATLAS Radio Searches Could See, Lee Sharks, the standalone public account (the next deposit)",
+  "the capture avi-loeb-3i-atlas-aio (AXN:0BE0.CAPTURE)"
+ ],
+ "spxi:versionHistory": [
+  {
+   "version": "1.0",
+   "date": "2026-11-06",
+   "note": "run 2026-11-02 to 2026-11-06; revised on ChatGPT's review of the notebook and DeepSeek's and ChatGPT's reviews of the standalone, each point checked (§13)"
+  }
+ ],
+ "keywords": [
+  "3I/ATLAS",
+  "interstellar object",
+  "technosignature",
+  "Breakthrough Listen",
+  "Green Bank Telescope",
+  "Allen Telescope Array",
+  "Parkes",
+  "drift rate",
+  "comet frame",
+  "null result",
+  "instrument-conditioned nullity",
+  "Loeb Scale",
+  "Avi Loeb",
+  "AI Overview",
+  "sophistry measure",
+  "frame conversion",
+  "disciplinary model collapse",
+  "Nobel Glas",
+  "Orin Trace",
+  "Transactions on Substrate Engineering",
+  "Crimson Hexagonal Archive"
+ ]
+}
+```
 
 ## 0. Result in brief
 
@@ -222,7 +425,7 @@ How the work ran. (1) The data are Breakthrough Listen's public products for 3I/
 10.2 GBT 0017: antenna telemetry for 05:08:17–05:13:15 UTC, which would settle where the dish tracked (§7.10, §7.14); the public data argue on target under a stated linear-drift assumption, whose own uncertainty the bootstrap interval does not carry.
 10.3 The thirteen: held out in sixteen channels and at Parkes, unreplicated (§7.15). Still open: a session at 1665–1668 MHz with the GBT's sensitivity on another date; the raw voltages of the 2025-12-18 scans, if public.
 10.4 The Overview: seated 2026-11-02 (AXN:0BE0.CAPTURE); quoted from its paste.
-10.5 Author and venue ruled 2026-11-03: Nobel Glas, Transactions on Substrate Engineering, the author and the line of THE ATLAS PERIHELION PRANK (#454). Ruled again 2026-11-06 (§12): this notebook under Nobel Glas and Orin Trace; the standalone public piece under Lee Sharks. Neither is deposited.
+10.5 Author and venue ruled 2026-11-03: Nobel Glas, Transactions on Substrate Engineering, the author and the line of THE ATLAS PERIHELION PRANK (#454). Ruled again 2026-11-06 (§12): this notebook under Nobel Glas and Orin Trace; the standalone public piece under Lee Sharks. Venues ruled the same day (§12.8): this notebook at Transactions on Substrate Engineering, deposited 2026-11-06; the public piece at the Transactions of the Semantic Economy Institute, deposited after it.
 10.10 Sophistry measure: countertests S1, S3, S4 and S6 are Capture Registry addresses for the operator; the ATA paper and the Intelligent Living article are to be saved as sources and the witness check rerun against them (sophistry/FINDINGS-sophistry.md, R1–R3).
 10.11 ATA July 3 along the true drift at C08–C13 (1667.41–1668.43 MHz): unsearched. C01–C03 lie in the open look's C03 window and C04–C07 in ChatGPT's comet-frame band; both returned nothing, at the ATA's sensitivity (§6).
 10.12 Look-elsewhere: 192 of the 256 Green Bank L-band channels unsurveyed (§7.19).
@@ -256,6 +459,8 @@ Raw spectra (about 1.3 GB of cutouts and hit lists) are omitted; every script fe
 12.6 The sophistry measure (2026-11-06 07:01): "lets make use of the sophistry measure on the overview examples, take it for a spin"; "and heck perhaps the sophistry measure comes into play on the ata paper and some of the reporting, as well".
 
 12.7 On the Overview and Loeb (2026-11-06 07:22): "but it did lie about loeb. saying most likely natural was not a concession - he had it at level four on the loeb scale from start to finish, which says likely natural. it is also a lie to present that as a concession and to erase the rest of the argument". Checked (§1.4): the July 2025 paper concludes "most likely" natural. On the scale, Level 4 is a possible technosignature and the highest rank below the Orange Zone's "qualitative shift to suspected artificial origin"; the operator's gloss of 07:51 ("level four means possibly technosignature but just under the threshold where it is more likely to be natural than technical") matches the scale's structure. The scale paper gives no probability for the crossing; it places the shift at Level 5. An earlier check in this session read Level 4 as consistent with "most likely natural" without implying it; the operator's gloss and the zone structure correct that reading.
+
+12.8 Deposit and venues (2026-11-06). 08:25: "lets spxi treat the notebook AND secondary source for a version in place. [...] then we go ahead and version secondary and deposit the notebook and public facing". Asked for the venues, the operator chose Transactions on Substrate Engineering for this notebook and the Semantic Economy Institute for the public piece, and at 08:27: "and that would be transactions of the semantic economy institute".
 
 ## 13. Reviews of the standalone (2026-11-06)
 
