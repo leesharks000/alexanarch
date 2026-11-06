@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.576",
+ "derived_from": "EA-WG-CAPTURES-01 v12.580",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1170,
+  "observations": 1174,
   "joined_confirmed": 488,
-  "unjoined": 682,
-  "relations": 6181,
+  "unjoined": 686,
+  "relations": 6193,
   "by_state": {
-   "confirmed": 4979,
+   "confirmed": 4991,
    "candidate": 1202
   },
   "by_verb": {
    "appeared_in": 1807,
-   "held_by": 2420,
-   "scored_by": 915,
+   "held_by": 2428,
+   "scored_by": 919,
    "about": 1021,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -3079,6 +3079,18 @@
 {"id": "REL-6c615f3913b3", "obs_id": "OBS-8513854abd54", "entry": "domainarrivals-alexanarch-org-20261104", "obs_slug": "domainarrivals-alexanarch-org-20261104", "date": "2026-11-04", "surface": "Domain Arrivals (generated card)", "q": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-828520885356", "obs_id": "OBS-8513854abd54", "entry": "domainarrivals-alexanarch-org-20261104", "obs_slug": "domainarrivals-alexanarch-org-20261104", "date": "2026-11-04", "surface": "Domain Arrivals (generated card)", "q": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-370a8f9c651c", "obs_id": "OBS-8513854abd54", "entry": "domainarrivals-alexanarch-org-20261104", "obs_slug": "domainarrivals-alexanarch-org-20261104", "date": "2026-11-04", "surface": "Domain Arrivals (generated card)", "q": "https://domainarrivals.com/issues/2026-06-22/domains/alexanarch-org", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-8cff75ddbe90", "obs_id": "OBS-f18605c5f3ba", "entry": "ata-3i-atlas-technosignature-search-paper-aio-20261106", "obs_slug": "ata-3i-atlas-technosignature-search-paper-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-05f4493446d8", "obs_id": "OBS-f18605c5f3ba", "entry": "ata-3i-atlas-technosignature-search-paper-aio-20261106", "obs_slug": "ata-3i-atlas-technosignature-search-paper-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-5294aceeceb7", "obs_id": "OBS-f18605c5f3ba", "entry": "ata-3i-atlas-technosignature-search-paper-aio-20261106", "obs_slug": "ata-3i-atlas-technosignature-search-paper-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-512a5cbd1cd5", "obs_id": "OBS-3fe17ec53281", "entry": "3i-atlas-aio-20261106", "obs_slug": "3i-atlas-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i/atlas", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-dad52f20b2af", "obs_id": "OBS-3fe17ec53281", "entry": "3i-atlas-aio-20261106", "obs_slug": "3i-atlas-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i/atlas", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-f6d10bc8791e", "obs_id": "OBS-3fe17ec53281", "entry": "3i-atlas-aio-20261106", "obs_slug": "3i-atlas-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i/atlas", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-9bda6567360b", "obs_id": "OBS-822a5cb98c2f", "entry": "3i-atlas-1667-mhz-aio-20261106", "obs_slug": "3i-atlas-1667-mhz-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i atlas 1667 mhz", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-82ae0cef604d", "obs_id": "OBS-822a5cb98c2f", "entry": "3i-atlas-1667-mhz-aio-20261106", "obs_slug": "3i-atlas-1667-mhz-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i atlas 1667 mhz", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-9b676f94e91f", "obs_id": "OBS-822a5cb98c2f", "entry": "3i-atlas-1667-mhz-aio-20261106", "obs_slug": "3i-atlas-1667-mhz-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i atlas 1667 mhz", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
+{"id": "REL-6526d3a2d4e6", "obs_id": "OBS-5ee8ab84df2e", "entry": "3i-atlas-hydroxyl-aio-20261106", "obs_slug": "3i-atlas-hydroxyl-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i atlas hydroxyl", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a42ec1a52c13", "obs_id": "OBS-5ee8ab84df2e", "entry": "3i-atlas-hydroxyl-aio-20261106", "obs_slug": "3i-atlas-hydroxyl-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i atlas hydroxyl", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-5464b4844356", "obs_id": "OBS-5ee8ab84df2e", "entry": "3i-atlas-hydroxyl-aio-20261106", "obs_slug": "3i-atlas-hydroxyl-aio-20261106", "date": "2026-11-06", "surface": "Google AI Overview", "q": "3i atlas hydroxyl", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},

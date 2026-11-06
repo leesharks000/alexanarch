@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-05T23:47:54Z",
+  "regenerated_at": "2026-11-06T14:37:30Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "64b43bd735d73b23a78ac2fb4572f2dd5e6281dd8b024b256e9b09942c38113f",
+    "mm-main-capture": "99aaccdaf558dc665d4d29d8cd8a854decd03fba146d34022fac3b5356bc3eea",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2724,
-  "total_observations": 1281,
+  "total_addresses": 2728,
+  "total_observations": 1285,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 971,
+    "observed_address": 975,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1844,
+    "unmatched": 1848,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -7661,6 +7661,41 @@
       "latest_observation_date": null,
       "latest_status": null
     },
+    "3i atlas 1667 mhz": {
+      "canonical_query": "3i atlas 1667 mhz",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-06",
+          "status": "'3I ATLAS 1667 MHZ' ON THE OVERVIEW — THE OH LINE AS THE BAND'S ONE FILE; A NATURAL LINE COMPOSED AS 'RULING OUT ARTIFICIAL ORIGIN'; GREEN BANK AND THE ATA CREDITED WITH CONFIRMING IT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "3i-atlas-1667-mhz-aio-20261106",
+          "gallery_url": "https://www.alexanarch.org/captures/#3i-atlas-1667-mhz-aio-20261106",
+          "record_url": "https://www.alexanarch.org/captures/3i-atlas-1667-mhz-aio-20261106/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#3i-atlas-1667-mhz-aio-20261106",
+          "details_excerpt": "'3I ATLAS 1667 MHZ', SIGNED OUT, 2026-11-06: 'The 1665 MHz and 1667 MHz frequencies detected from the interstellar object 3I/ATLAS correspond to natural hydroxyl (OH) radical absorption lines.' MeerKAT's detection of 24 "
+        }
+      ],
+      "originator": {
+        "name": "The MeerKAT OH detection in 3I/ATLAS, and the band 1665–1668 MHz",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: the MeerKAT team's detection of 1665/1667 MHz OH absorption (24 October 2025). The archive's work at the band is the notebook #1742 §7 (the thirteen). Recorded 2026-11-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-06",
+      "latest_status": "'3I ATLAS 1667 MHZ' ON THE OVERVIEW — THE OH LINE AS THE BAND'S ONE FILE; A NATURAL LINE COMPOSED AS 'RULING OUT ARTIFICIAL ORIGIN'; GREEN BANK AND THE ATA CREDITED WITH CONFIRMING IT"
+    },
     "3i atlas ata drift rate filter": {
       "canonical_query": "3i atlas ata drift rate filter",
       "is_quoted": false,
@@ -7696,6 +7731,41 @@
       "latest_observation_date": "2026-11-04",
       "latest_status": "'3I ATLAS ATA DRIFT RATE FILTER' ON THE OVERVIEW — THE COUNTERTEST: THE INTERVAL 0.05–1.5 HZ/S COMPOSED EXACTLY, ITS SIGN ABSENT AS IN THE PAPER'S SENTENCE"
     },
+    "3i atlas hydroxyl": {
+      "canonical_query": "3i atlas hydroxyl",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-06",
+          "status": "'3I ATLAS HYDROXYL' ON THE OVERVIEW — THE TWO OH DETECTIONS AT THEIR GRAIN, NO VERDICT; LOEB'S ESSAY THE FIRST CARD; THE CONTROL FOR THE BAND ADDRESS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "3i-atlas-hydroxyl-aio-20261106",
+          "gallery_url": "https://www.alexanarch.org/captures/#3i-atlas-hydroxyl-aio-20261106",
+          "record_url": "https://www.alexanarch.org/captures/3i-atlas-hydroxyl-aio-20261106/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#3i-atlas-hydroxyl-aio-20261106",
+          "details_excerpt": "'3I ATLAS HYDROXYL', SIGNED OUT, 2026-11-06: 'Hydroxyl (OH) radicals—a direct breakdown product of water vapor—have been detected in the third confirmed interstellar object, 3I/ATLAS, through both ultraviolet and radio o"
+        }
+      ],
+      "originator": {
+        "name": "The MeerKAT OH detection in 3I/ATLAS, and the band 1665–1668 MHz",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: the MeerKAT team's detection of 1665/1667 MHz OH absorption (24 October 2025). The archive's work at the band is the notebook #1742 §7 (the thirteen). Recorded 2026-11-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-06",
+      "latest_status": "'3I ATLAS HYDROXYL' ON THE OVERVIEW — THE TWO OH DETECTIONS AT THEIR GRAIN, NO VERDICT; LOEB'S ESSAY THE FIRST CARD; THE CONTROL FOR THE BAND ADDRESS"
+    },
     "3i atlas signal studies": {
       "canonical_query": "3i atlas signal studies",
       "is_quoted": false,
@@ -7730,6 +7800,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-04",
       "latest_status": "'3I ATLAS SIGNAL STUDIES' ON THE OVERVIEW — A FILTERED NONDETECTION COMPOSED AS 'CONFIRMED' NATURAL; THE FILTERS NAMED HUMAN-MADE; AN AGE JOINED TO A COMA MODEL"
+    },
+    "3i/atlas": {
+      "canonical_query": "3i/atlas",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-06",
+          "status": "'3I/ATLAS' ON THE OVERVIEW — THE AGENCIES' ENTRY; THE NONDETECTIONS COMPOSED AS 'RULING OUT ARTIFICIAL OR TECHNOLOGICAL ORIGIN HYPOTHESES'; THE DEBATE AND LOEB ABSENT",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "3i-atlas-aio-20261106",
+          "gallery_url": "https://www.alexanarch.org/captures/#3i-atlas-aio-20261106",
+          "record_url": "https://www.alexanarch.org/captures/3i-atlas-aio-20261106/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#3i-atlas-aio-20261106",
+          "details_excerpt": "'3I/ATLAS', SIGNED OUT, 2026-11-06: 'Comet 3I/ATLAS (also designated C/2025 N1) is the third confirmed interstellar object to pass through our solar system'. Under 'Key Facts & Characteristics': discovery (1 July 2025, A"
+        }
+      ],
+      "originator": {
+        "name": "3I/ATLAS (C/2025 N1) and the observing literature on it",
+        "relation": "external",
+        "entity_type": "topic",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: the object and its observers. The archive bears on it through the notebook #1742 and the public account. Recorded 2026-11-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-06",
+      "latest_status": "'3I/ATLAS' ON THE OVERVIEW — THE AGENCIES' ENTRY; THE NONDETECTIONS COMPOSED AS 'RULING OUT ARTIFICIAL OR TECHNOLOGICAL ORIGIN HYPOTHESES'; THE DEBATE AND LOEB ABSENT"
     },
     "666": {
       "canonical_query": "666",
@@ -7834,6 +7939,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-10",
       "latest_status": "CAPTURE"
+    },
+    "a search for radio technosignatures from interstellar object 3i/atlas with the allen telescope array": {
+      "canonical_query": "a search for radio technosignatures from interstellar object 3i/atlas with the allen telescope array",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-06",
+          "status": "THE ATA PAPER BY ITS TITLE ON THE OVERVIEW — THE FIGURES KEPT; A CLASSIFICATION RENDERED AS A TRACING; THE POWER LIMIT WITHOUT ITS FREQUENCIES AND DRIFT RATES; 'FIRMLY' NATURAL",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "ata-3i-atlas-technosignature-search-paper-aio-20261106",
+          "gallery_url": "https://www.alexanarch.org/captures/#ata-3i-atlas-technosignature-search-paper-aio-20261106",
+          "record_url": "https://www.alexanarch.org/captures/ata-3i-atlas-technosignature-search-paper-aio-20261106/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#ata-3i-atlas-technosignature-search-paper-aio-20261106",
+          "details_excerpt": "THE ATA PAPER BY ITS TITLE, SIGNED OUT, 2026-11-06: 'Astronomers using the SETI Institute's Allen Telescope Array searched the interstellar object 3I/ATLAS for artificial radio technosignatures and found no evidence of a"
+        }
+      ],
+      "originator": {
+        "name": "Sheikh et al., the Allen Telescope Array search of 3I/ATLAS",
+        "relation": "external",
+        "entity_type": "work",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Sheikh, S. Z., Garcia Lopez, V., Gerrard, I., Davenport, J. R. A., Farah, W., et al., 'A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array', arXiv:2512.18142 (The Astronomical Journal, 2026). The archive's reading of it is the notebook #1742 (§5) and the public account. Recorded 2026-11-06."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-06",
+      "latest_status": "THE ATA PAPER BY ITS TITLE ON THE OVERVIEW — THE FIGURES KEPT; A CLASSIFICATION RENDERED AS A TRACING; THE POWER LIMIT WITHOUT ITS FREQUENCIES AND DRIFT RATES; 'FIRMLY' NATURAL"
     },
     "a transfiguration": {
       "canonical_query": "a transfiguration",
