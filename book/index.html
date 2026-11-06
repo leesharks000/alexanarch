@@ -30,6 +30,8 @@ h1{font-size:1.5em;font-weight:600;color:var(--accent);margin-bottom:6px}
 .conv-snippet{font-family:var(--serif);font-size:1em;color:#333;margin:8px 0 4px;line-height:1.55;font-style:italic}
 .conv-mode{display:inline-block;font-family:var(--mono);font-size:0.7em;padding:1px 8px;border-radius:10px;background:#f0f4f8;color:var(--accent);letter-spacing:0.04em}
 .conv-mode.merkabah{background:#fff4e8;color:var(--accent2)}
+.conv-mode.withheld{background:#f3f0ea;color:#6b5a3a;margin-left:6px}
+.conv-withheld{font-family:var(--serif);font-size:0.9em;color:#5a4e3a;background:#faf7f0;border-left:3px solid #c9b88f;padding:8px 12px;margin:8px 0 4px;line-height:1.5}
 .conv-axn a{color:inherit;text-decoration:none}.conv-axn a:hover{color:var(--accent2)}
 .conv-link{font-family:var(--mono);font-size:0.72em;color:var(--dim);text-decoration:none;border:1px solid var(--border);border-radius:10px;padding:1px 8px;margin-left:6px;white-space:nowrap}
 .conv-link:hover{color:var(--accent2);border-color:var(--accent2)}
@@ -146,8 +148,11 @@ function renderIndex(index) {
         <span class="conv-meta"><strong>${c.turn_count || 0}</strong> turn${c.turn_count === 1 ? '' : 's'} · <strong>${escapeHtml(c.witness || 'anonymous')}</strong> · ${fmtDate(c.last_updated)}</span>
       </div>
       <div class="conv-snippet">${escapeHtml(c.opening_snippet || '')}</div>
-      <span class="conv-mode ${c.mode === 'merkabah' ? 'merkabah' : ''}">${escapeHtml(c.mode || 'sabbath')}</span>
+      ${c.withheld ? `<div class="conv-withheld"><strong>Transcript withdrawn${c.withheld_on ? ' ' + escapeHtml(c.withheld_on) : ''}.</strong> ${escapeHtml(c.withheld_reason || 'Withdrawn from the public Book by the operator; the record of the conversation is retained.')}</div>` : ''}
+      <span class="conv-mode ${c.mode === 'merkabah' ? 'merkabah' : ''}">${escapeHtml(c.mode || 'sabbath')}</span>${c.withheld ? '<span class="conv-mode withheld">withheld</span>' : ''}
     `;
+    // RECORDS RETAINED (2026-11-06, Lee Sharks): a withdrawn conversation keeps its card; only the transcript is withheld.
+    if (c.withheld) div.dataset.withheld = '1';
     div.addEventListener('click', (ev) => {
       if (ev.target.closest('.transcript-wrap')) return;      // reading or selecting a transcript does not fold it
       const a = ev.target.closest('a');
@@ -195,6 +200,14 @@ async function toggleConversation(el, axn) {
   }
   el.dataset.loaded = '1';
   el.classList.add('expanded');
+  if (el.dataset.withheld === '1') {
+    // The transcript is withheld; the card already carries the record and the reason.
+    const wrap = document.createElement('div');
+    wrap.className = 'transcript-wrap';
+    wrap.innerHTML = '<div class="note">The transcript of this conversation is withheld from the public Book. Its record stays here.</div>';
+    el.appendChild(wrap);
+    return;
+  }
   const filename = axnToFilename(axn);
   if (!filename) return;
   try {
