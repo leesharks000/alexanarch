@@ -1,0 +1,26 @@
+{
+  "row": "avi-loeb-3i-atlas",
+  "address": "avi loeb 3i atlas",
+  "entity": "Avi Loeb's position on 3I/ATLAS: his reading of the object, its anomalies, and its rank on his Loeb Scale (Hibberd, Crowl and Loeb, arXiv:2507.12213, July 2025: 'By far the most likely outcome will be that 3I/ATLAS is a completely natural interstellar object, probably a comet'; Eldadi, Tenenbaum and Loeb, arXiv:2508.09167, 3I/ATLAS at Level 4; Loeb, 'Where is 3I/ATLAS Now?', Medium, 2026-04-23, twelve groups of anomalies and Level 4 restated). The person who holds it, Avi (Abraham) Loeb, Harvard, is named by the field (B13) and is a distinct entity from the position.",
+  "row_type": "C (a public entity on which the archive bears: a named scientist's dated position on a public object; external, the Capture Registry's originator record 'external', entity_type person)",
+  "aliases": [
+    {"pattern": "\\b(Avi|Abraham|Prof\\.?|Professor|Harvard'?s?) Loeb\\b", "flags": ""},
+    {"pattern": "\\bLoeb\\b(?!\\s+(Classical|Library|edition|translation|text|volume|Greek|Latin))", "flags": ""},
+    {"pattern": "\\bLoeb Scale\\b", "flags": "i"},
+    {"pattern": "\\b2507\\.12213\\b", "flags": ""},
+    {"pattern": "\\b2508\\.09167\\b", "flags": ""},
+    {"pattern": "\\bavi-loeb\\.medium\\.com\\b", "flags": "i"}
+  ],
+  "classes": [
+    {
+      "term": "hypotheses of technological (alien) origin for an interstellar object, and their grading",
+      "pattern": "\\b(technosignatures?|alien (technology|spacecraft|probe|craft|hardware)|extraterrestrial (technology|spacecraft|craft)|artificial origin)\\b",
+      "flags": "i",
+      "basis": "field: B5 (Hibberd, Crowl and Loeb, Abstract: 'hypothesize that this object could be technological'); B10 (the Loeb Scale, Abstract: 'address ISOs' unique anomalies, including potential technosignatures'; 'Levels 8-10 reserved for confirmed artificial origin'); B13 (Wikipedia 'Avi Loeb', lead: 'a series of pseudoscientific claims that alien space craft may be in the Solar System'); B14 (Wikipedia '3I/ATLAS', 'Alien spacecraft speculation')."
+    }
+  ],
+  "classes_note": "One class, sourced by the field: hypotheses of technological origin for an interstellar object and their grading (B5, B10, B13, B14). Aliases: the person's name in the forms the field and the archive write it, with 'Loeb' alone guarded against the Loeb Classical Library and its editions (frequent in the archive's classical deposits); the scale's name; the two arXiv identifiers; the Medium host. The archive's own records of the entity (the Capture Registry's findings, reading and analysis for avi-loeb-3i-atlas-aio-20261102; the sophistry measure's first run, FINDINGS-sophistry.md S1 and S2) are ledgered beside the deposits as CAP-1-NN and SOPH-NN.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-06, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROWS-3I-ATLAS.md (with v010/BRIEF-NEW-ROW-LAYER.md and v09/BRIEF-NEW-ROW-AGGREGATOR.md, -LABOR.md, -LEFT.md); address 'avi loeb 3i atlas' (avi-loeb-3i-atlas-aio-20261102, OBS-798655749d8c, ADDR-9f68044dd2c8, AXN:0BE0), Google AI Overview (expanded), signed out, incognito.",
+  "hop_from": [1742, 1743]
+}

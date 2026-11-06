@@ -1,0 +1,32 @@
+{
+  "row": "3i-atlas-1665-1668-mhz",
+  "address": "3i atlas 1667 mhz",
+  "entity": "3I/ATLAS at 1665–1668 MHz: the band of the hydroxyl (OH) 18 cm main lines (rest 1665.4018 and 1667.3590 MHz) at the interstellar comet 3I/ATLAS (C/2025 N1), where MeerKAT detected the comet's OH absorption on 24 October 2025 (ATel #17473; Pisano, Smirnov, Ivchenko, Roth and Buchner) and OH absorption and emission in November (ATel #17499), where MeerKAT's BLUSE search set a 0.17 W limit over 900–1670 MHz, and where the archive's notebook (#1742 §7) holds thirteen comet-frame features in Green Bank coarse channel 7 (1665.53–1668.46 MHz, 2025-12-18), off the comet-frame OH lines (#1742 §7.5)",
+  "row_type": "C (public entity on which the archive bears: a radio band at an astronomical object)",
+  "aliases": [
+    {"pattern": "\\b166[5-8](\\.\\d+)?\\s?MHz\\b", "flags": ""},
+    {"pattern": "\\b1665/1667\\b", "flags": ""},
+    {"pattern": "\\b1\\.66[5-8]\\d*\\s?GHz\\b", "flags": ""},
+    {"pattern": "\\bhydroxyl\\b", "flags": "i"},
+    {"pattern": "\\bOH (absorption|line|lines|emission|main lines|radicals?|channel|window|windows)\\b", "flags": ""},
+    {"pattern": "\\b18[- ]cm\\b", "flags": ""}
+  ],
+  "classes": [
+    {
+      "term": "radio technosignature searches of 3I/ATLAS (searches that include the band)",
+      "pattern": "\\b(technosignatures?|Breakthrough Listen|BLUSE)\\b",
+      "flags": "",
+      "basis": "field: B4 (Breakthrough Listen's 3I/ATLAS page, card 4: 'In parallel with these observations, the BLUSE (Breakthrough Listen User Supplied Equipment) computer at MeerKAT searched the data for technosignatures.'; 'No artificial radio emission was detected at a limit of 0.17 W over the 900 - 1670 MHz range'); B9 (ATel #17499: 'we established a detection limit of 0.17 W over the 900-1670 MHz range'). T's body names the Green Bank Telescope and the Allen Telescope Array at the band."
+    },
+    {
+      "term": "spectral lines of comets in radio (the OH lines as cometary activity)",
+      "pattern": "\\b(spectral lines?|absorption lines?|radio lines?|line emission)\\b",
+      "flags": "i",
+      "basis": "field: B2 (WIRED: 'These OH spectral lines have been detected in nebulae, comets, and star-forming regions.'); B7 (Futura: 'These hydroxyl radicals tend to absorb radio waves at two specific frequencies: 1665 and 1667 megahertz'); B10 (Wikipedia, Hydroxyl radical: '18 cm absorption lines of the hydroxyl (HO • ) radical')."
+    }
+  ],
+  "classes_note": "Two classes, each sourced by the field B. (1) radio technosignature searches of 3I/ATLAS that include the band: B4 (card 4, the BLUSE search at 900–1670 MHz; the ATA at 1–9 GHz; the GBT at 1–12 GHz), B9 (ATel #17499); T names the Green Bank Telescope and the ATA. (2) spectral lines of comets in radio: B2, B7, B10. Aliases: the band's frequencies as the archive and the field write them (1665–1668 MHz, 1665/1667, 1.665–1.668 GHz), the molecule (hydroxyl; OH with a line word, since 'OH' alone is a common string), and the 18 cm wavelength. Admission by reading (§3.4): D where a deposit says something of the band at 3I/ATLAS (the OH detection, the thirteen, a search at the band); a sentence on hydroxyl elsewhere (the atmosphere, chemistry) or on 1667 MHz at another object is read and not admitted; O-class where a sentence applies an archive category to one of the two classes. The thirteen are the archive's own features at the band (#1742 §7); the comet's OH line, as an entity of its own, is a neighbour (the disambiguation).",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-06, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROWS-3I-ATLAS.md (with v010/BRIEF-NEW-ROW-LAYER.md and v09/BRIEF-NEW-ROW-AGGREGATOR.md, -LABOR.md, -LEFT.md); address '3i atlas 1667 mhz' (3i-atlas-1667-mhz-aio-20261106, OBS-822a5cb98c2f, ADDR-5cc034f5e6d0), Google AI Overview (expanded), signed out, incognito; control address '3i atlas hydroxyl' (3i-atlas-hydroxyl-aio-20261106, OBS-5ee8ab84df2e). The archive's own records of the entity (the Capture Registry's findings, reading and analysis for both captures) are ledgered beside the deposits as CAP-1-NN and CAP-2-NN.",
+  "hop_from": [1742, 1743]
+}

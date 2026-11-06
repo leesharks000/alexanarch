@@ -1,0 +1,1889 @@
+{
+ "row": "avi-loeb-3i-atlas",
+ "address": "avi loeb 3i atlas",
+ "addresses": [
+  "avi loeb 3i atlas"
+ ],
+ "extracted": "2026-11-06",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-06, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits, falsification conditions; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked), the Wikipedia wikitext with refs and link markup removed, the papers' pdftotext, or the card's title and snippet",
+ "B_note": "The field B (§0.4, §3.1(a)), in two pools, kept apart by origin. B_D, the disclosed pool: 'card', the nine cards of T's rail (B1 Loeb's Medium essay of 2026-05-25, unreachable; B2 a FOX 32 Chicago clip, title only; B3 a YouTube video, title and snippet; B4 NewsNation, unreachable, the source the body names; B5 the July 2025 paper on a CfA surface, read from arXiv; B6 The Times of Israel, unreachable; B7 a Fox 32 Chicago video on Facebook, title only; B8 Jason Wright's AstroWright post; B9 a novel bearing the object's name, another sense). B_R, the reference pool: 'own_page', the Loeb Scale paper (B10), the essay of 2026-04-23 (B11) and the essay of 2025-11-08 (B12, unreachable); 'wikipedia', 'Avi Loeb' (B13) and '3I/ATLAS' (B14).",
+ "lineage_note": "Lineages by sense; the field and the archive share them where an archive claim states the same sense. B5 v1, v2 and v3 are one work, one lineage (§3.6); its text is quoted from v2 (21 July 2025), whose sections are numbered (6. Discussion, 7. Conclusion); v1 numbers the conclusion 6, v3 leaves it unnumbered. See row.objects.P.rail for each lineage with its earliest source.",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/ (Bn.html raw and Bn.txt text with scripts and styles stripped; B5-v1/v2/v3.pdf with .txt by pdftotext; B10.pdf and B10.txt as saved by the investigation; B11.txt the operator's copy; B13.wiki and B14.wiki the raw wikitext; tries/ the raw fetches and the refusals)",
+ "counts": {
+  "sources": 14,
+  "B_D": 9,
+  "B_R": 5,
+  "fetched_or_saved": 6,
+  "unreachable": 4,
+  "title_or_snippet_only": 4,
+  "claims": 76,
+  "claims_B_D": 34,
+  "claims_B_R": 42,
+  "quotes_ok": 76
+ },
+ "field": [
+  {
+   "id": "B1",
+   "card": "Medium — Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard? - Avi Loeb",
+   "fetched": "unreachable: the essay's URL could not be determined from the card (WebSearch: 'Avi Loeb \"Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard?\" Medium'; 'avi-loeb.medium.com did-3i-atlas-deliver-extrasolar-life-to-our-backyard'; '\"Extrasolar Life to Our Backyard\" Loeb': no Medium URL returned); the",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "YouTube·FOX 32 Chicago — Avi Loeb: Scientists find 'alien-like' water on 3I/ATLAS comet",
+   "fetched": "video card: admitted through its title (the card has no snippet); the URL was not determined and no fetch was made (§3.1(a): video cards are admitted through title and snippet)",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "YouTube — Avi Loeb: What Is 3I/ATLAS? - YouTube",
+   "fetched": "video card: admitted through title and snippet; WebSearch '\"Avi Loeb: What Is 3I/ATLAS?\" YouTube' returned no YouTube URL; no fetch",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "NewsNation — Harvard professor now agrees 3I/ATLAS 'most likely natural'",
+   "fetched": "unreachable: the item's URL could not be determined (WebSearch: 'NewsNation \"Harvard professor now agrees 3I/ATLAS 'most likely natural'\"'; 'newsnationnow.com 3I/ATLAS most likely natural Harvard professor concedes Elizabeth Vargas'; 'site:newsnationnow.com 3I/ATLAS \"most likely natural\"': no newsna",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Center for Astrophysics | Harvard & Smithsonian — Is the Interstellar Object 3I/ATLAS Alien Technology?",
+   "fetched": "card; B5-v2.pdf sha256 603c9504a7b96593, HTTP 200 at 2026-11-06T15:25:53Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "The Times of Israel — Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat | The Times of Israel",
+   "fetched": "unreachable: the article's URL could not be determined (WebSearch: 'Times of Israel \"Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat\"'; 'timesofisrael.com Avi Loeb Kim Kardashian 3I/ATLAS comet alien threat'; 'site:timesofisrael.com ...'; the snippet's first sentence",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "Facebook·Fox 32 Chicago — Avi Loeb Explains C/2025 V1 & 3I/ATLAS \"Nearly Interstellar\" Mystery",
+   "fetched": "video card: admitted through its title (the card has no snippet); no fetch",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B8",
+   "card": "Sites at Penn State — Loeb’s 3I/ATLAS “Anomalies” Explained | AstroWright",
+   "fetched": "card; B8.html sha256 4534e8f96f53d0d9, HTTP 200 at 2026-11-06T15:26:04Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B9",
+   "card": "Google — 3I/Atlas: The Messenger of Orion - Book 1",
+   "fetched": "card admitted through title and snippet; a novel, outside the entity; no fetch",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B10",
+   "card": "arXiv — The Loeb Scale: Astronomical Classification of Interstellar Objects (own page; B_R)",
+   "fetched": "own page; B10.pdf sha256 1cbd3a8539394928, rebuild/3i-atlas-signal-search/sources/arxiv-2508.09167.pdf and .txt (sha256 of the pdf 1cbd3a853939492837470deb225c3615a3a6c89a6e5b8cb702bb1927c0ca3fe7), copie",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B11",
+   "card": "Medium — Avi Loeb, 'Where is 3I/ATLAS Now?', 2026-04-23 (own page; operator's saved copy; B_R)",
+   "fetched": "own page; B11.txt sha256 45a6b77f11196a22, the operator's copy (sha256 45a6b77f11196a224a8eacf2ec689406fadb9a12f533d3379851c76f7b0bd807), copied unchanged; the host refuses this agent (Medium, HTTP 403 a",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B12",
+   "card": "Medium — Avi Loeb, essay of 2025-11-08 on the OH detection (own page; unreachable; B_R)",
+   "fetched": "unreachable: the essay's URL could not be determined (WebSearch: 'Avi Loeb Medium November 8 2025 MeerKAT OH hydroxyl absorption 3I/ATLAS'; 'avi-loeb.medium.com radio detection 3I/ATLAS MeerKAT hydroxyl November 2025': no Medium URL); the host refuses the agent (HTTP 403, Cloudflare, at 2026-11-06T1",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B13",
+   "card": "Wikipedia — Avi Loeb (B_R)",
+   "fetched": "wikipedia; B13.html sha256 6ec88ac30b64383e, HTTP 200 at 2026-11-06T15:26:14Z",
+   "origin": "wikipedia",
+   "pool": "B_R"
+  },
+  {
+   "id": "B14",
+   "card": "Wikipedia — 3I/ATLAS, 'Alien spacecraft speculation' (B_R)",
+   "fetched": "wikipedia; B14.html sha256 01c62d0f33f4f237, HTTP 200 at 2026-11-06T15:26:14Z",
+   "origin": "wikipedia",
+   "pool": "B_R"
+  }
+ ],
+ "field_by_origin": {
+  "cards": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8",
+   "B9"
+  ],
+  "own_pages": [
+   "B10",
+   "B11",
+   "B12"
+  ],
+  "own_pages_note": "the entity's own pages: the person's own essays and papers. Card 1 (his Medium essay of 2026-05-25) and card 5 (the July 2025 paper, of which he is third author) are on T's rail and carried once, as cards, in B_D (B1, B5; B5 is also the brief's B_R source arXiv:2507.12213). The scale paper (B10), the essay of 2026-04-23 (B11, the operator's saved copy) and the essay of 2025-11-08 on the OH detection (B12, unreachable) are not on T's rail and stand in B_R.",
+  "wikipedia": [
+   "B13",
+   "B14"
+  ],
+  "census_third_party": [],
+  "unreachable": [
+   "B1",
+   "B4",
+   "B6",
+   "B12"
+  ],
+  "title_only": [
+   "B2",
+   "B3",
+   "B7",
+   "B9"
+  ],
+  "wikipedia_state": "two articles, read at their sections on him: 'Avi Loeb' (rendered HTTP 200 at 2026-11-06T15:26:14Z; raw wikitext HTTP 200; no redirect; last edited 14 October 2026), lead and the section '3I/ATLAS' under 'Claims about alien life'; '3I/ATLAS' (rendered HTTP 200 at 2026-11-06T15:26:14Z; raw wikitext HTTP 200; last edited 30 October 2026), the section 'Alien spacecraft speculation'. No card of T is a Wikipedia page; both stand in B_R.",
+  "pools": {
+   "B_D": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9"
+   ],
+   "B_R": [
+    "B10",
+    "B11",
+    "B12",
+    "B13",
+    "B14"
+   ],
+   "note": "v0.10 §0.3, §3.1(a): B_D, every card on the rail (B1–B9); the body names one source, 'NewsNation', which is card 4 (B4), and embeds the video of card 2 (B2); 'Hubble and James Webb Space Telescopes' are instruments it composes, no source. B_R, the reference pool: the scale paper (B10), the essay of 2026-04-23 (B11), the essay of 2025-11-08 (B12, unreachable), Wikipedia 'Avi Loeb' (B13) and '3I/ATLAS' (B14). T against L_F(B_D) uses B1–B9 alone."
+  },
+  "sources": [
+   {
+    "id": "B1",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 1,
+    "role": "Overview card 1, the entity's own surface (Loeb's Medium essay of 2026-05-25)",
+    "url": null,
+    "kind": "Overview card (Avi Loeb, Medium, 2026-05-25); an own page of the person who holds the position",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: the essay's URL could not be determined from the card (WebSearch: 'Avi Loeb \"Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard?\" Medium'; 'avi-loeb.medium.com did-3i-atlas-deliver-extrasolar-life-to-our-backyard'; '\"Extrasolar Life to Our Backyard\" Loeb': no Medium URL returned); the host refuses the agent: https://avi-loeb.medium.com/ HTTP 403 (Cloudflare 'Just a moment...') at 2026-11-06T15:24:11Z and a Medium essay URL HTTP 403 at 2026-11-06T15:24:32Z (tries/medium-profile.html, tries/medium-test-fading.html); not retried by any other route. The card's title and snippet are its only text (§3.1(a))",
+     "http": null
+    },
+    "names_operator": "yes (Avi Loeb, the author, in the snippet)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "Medium — Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard? - Avi Loeb",
+    "card_title": "Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard? - Avi Loeb",
+    "card_snippet": "Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard? Avi Loeb May 25, 2026 -- 31 Press enter or click to view image in full size (Image credit: Julian Brooks/A...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 1
+     }
+    ]
+   },
+   {
+    "id": "B2",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 2,
+    "role": "Overview card 2 (a video; the same clip is embedded in the body, 56s)",
+    "url": null,
+    "kind": "Overview card (YouTube, FOX 32 Chicago, 2m video)",
+    "files": {},
+    "fetched": {
+     "result": "video card: admitted through its title (the card has no snippet); the URL was not determined and no fetch was made (§3.1(a): video cards are admitted through title and snippet)",
+     "http": null
+    },
+    "names_operator": "yes (Avi Loeb in the title)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "YouTube·FOX 32 Chicago — Avi Loeb: Scientists find 'alien-like' water on 3I/ATLAS comet",
+    "card_title": "Avi Loeb: Scientists find 'alien-like' water on 3I/ATLAS comet",
+    "card_snippet": null,
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 2
+     }
+    ]
+   },
+   {
+    "id": "B3",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 3,
+    "role": "Overview card 3 (a video)",
+    "url": null,
+    "kind": "Overview card (YouTube video, transcript snippet)",
+    "files": {},
+    "fetched": {
+     "result": "video card: admitted through title and snippet; WebSearch '\"Avi Loeb: What Is 3I/ATLAS?\" YouTube' returned no YouTube URL; no fetch",
+     "http": null
+    },
+    "names_operator": "yes (Avi Loeb in the title)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "YouTube — Avi Loeb: What Is 3I/ATLAS? - YouTube",
+    "card_title": "Avi Loeb: What Is 3I/ATLAS? - YouTube",
+    "card_snippet": "um three Atlas is an an object discovered on July 1st by the Atlas telescope in Chile half a meter in size it this object was very bright. and we still don't kn...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 3
+     }
+    ]
+   },
+   {
+    "id": "B4",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 4,
+    "role": "Overview card 4, the source the body names ('to NewsNation') for its 'Shift to Natural Consensus'",
+    "url": null,
+    "kind": "Overview card (NewsNation, Elizabeth Vargas and Michael Ramsey, updated 2025-12-19); named in the body",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: the item's URL could not be determined (WebSearch: 'NewsNation \"Harvard professor now agrees 3I/ATLAS 'most likely natural'\"'; 'newsnationnow.com 3I/ATLAS most likely natural Harvard professor concedes Elizabeth Vargas'; 'site:newsnationnow.com 3I/ATLAS \"most likely natural\"': no newsnationnow.com URL for the item); the host's own search refuses the agent: https://www.newsnationnow.com/?s=3I%2FATLAS+most+likely+natural HTTP 403 at 2026-11-06T15:26:04Z (tries/newsnation-search.html); not retried. The card's title and snippet are its only text",
+     "http": null
+    },
+    "names_operator": "yes ('Harvard professor'; the body names Loeb)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "NewsNation — Harvard professor now agrees 3I/ATLAS 'most likely natural'",
+    "card_title": "Harvard professor now agrees 3I/ATLAS 'most likely natural'",
+    "card_snippet": "3I/ATLAS 'most likely natural,' Harvard professor concedes Elizabeth Vargas, Michael Ramsey Updated: Dec 19, 2025 / 08:50 PM CST NOW PLAYING Listen to audio ver...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 4
+     }
+    ]
+   },
+   {
+    "id": "B5",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 5,
+    "role": "Overview card 5: the paper Hibberd, Crowl and Loeb, 'Is the Interstellar Object 3I/ATLAS Alien Technology?', on a Center for Astrophysics surface; the same work as the brief's B_R source arXiv:2507.12213, carried once, in B_D (§3.1(a))",
+    "url": "https://arxiv.org/abs/2507.12213",
+    "kind": "Overview card (the paper, on the CfA site; its snippet is the paper's introduction, 'Discovered on 1st July 2025, by the Asteroid Terrestrial-impact Last Alert System, 3I/ATLAS is, as its designation indicates, the latest interstellar object (or interloper)', verbatim in v1 and v2); an own page of the person who holds the position (he is its third author)",
+    "files": {
+     "B5-v2.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v2.pdf",
+      "sha256": "603c9504a7b965939ec6736a8f9477c94a725925c58aa3beb7de2200487e9a6d"
+     },
+     "B5-v2.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v2.txt",
+      "sha256": "cee06b582077fc57640a84d25368c217fba94e76d64e6df36fe4180e50cfcc5e"
+     },
+     "B5-v1.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v1.pdf",
+      "sha256": "900be185677fad0bbd4d509fbe721118291deece8baa249e81feac7d9e5de1c5"
+     },
+     "B5-v1.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v1.txt",
+      "sha256": "af759b0a55ffd7b0e2467752f9194685cc33d9eea518d54613257b15259600ac"
+     },
+     "B5-v3.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v3.pdf",
+      "sha256": "2402122eda7aaea837bb49e430fd7cafca4a9fa9c95f315dd31da76c903e252a"
+     },
+     "B5-v3.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v3.txt",
+      "sha256": "54a5181f67c9922cbeeb4f5b24ec844c783ad2e11d268e0bf95f3ef38fec9256"
+     },
+     "B5-abs.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-abs.html",
+      "sha256": "665d72b1f78c73a453a71f0da2c2981aa5206ecc184d8b1e73cb8d52ad46a64a"
+     },
+     "B5-abs.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-abs.txt",
+      "sha256": "eac14471a6b113dcf588eb8774a13b828d086f7bc4f2de02fdcaa10114d540a3"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-06T15:25:53Z",
+     "http": 200,
+     "url": "https://arxiv.org/pdf/2507.12213v2",
+     "raw_sha256": "603c9504a7b965939ec6736a8f9477c94a725925c58aa3beb7de2200487e9a6d",
+     "also": [
+      {
+       "url": "https://arxiv.org/pdf/2507.12213v1",
+       "at": "2026-11-06T15:25:16Z",
+       "http": 200,
+       "sha256": "900be185677fad0bbd4d509fbe721118291deece8baa249e81feac7d9e5de1c5"
+      },
+      {
+       "url": "https://arxiv.org/pdf/2507.12213v3",
+       "at": "2026-11-06T15:25:15Z",
+       "http": 200,
+       "sha256": "2402122eda7aaea837bb49e430fd7cafca4a9fa9c95f315dd31da76c903e252a",
+       "note": "v3 (15 Oct 2025) is the journal version (International Journal of Aerodynamic Control & Aviation Mechanics), sections unnumbered"
+      },
+      {
+       "url": "https://arxiv.org/abs/2507.12213",
+       "at": "2026-11-06T15:23:37Z",
+       "http": 200,
+       "sha256": "665d72b1f78c73a453a71f0da2c2981aa5206ecc184d8b1e73cb8d52ad46a64a"
+      }
+     ],
+     "card_url": "the card's own CfA URL was not determined (WebSearch: 'Center for Astrophysics Harvard Smithsonian \"Is the Interstellar Object 3I/ATLAS Alien Technology?\"'; 'cfa.harvard.edu ...'; 'site:cfa.harvard.edu 3I/ATLAS alien technology'; '\"3I/ATLAS is, as its designation indicates, the latest interstellar object\"'); https://lweb.cfa.harvard.edu/~loeb/ (HTTP 200 at 2026-11-06T15:23:36Z) renders its lists by script. The card's title and snippet match the paper; its text is read from arXiv, v2 (21 July 2025) primary, v1 and v3 kept",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v2.txt",
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v1.txt",
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-v3.txt",
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B5-abs.txt"
+     ]
+    },
+    "names_operator": "yes (Abraham Loeb, third author)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "Center for Astrophysics | Harvard & Smithsonian — Is the Interstellar Object 3I/ATLAS Alien Technology?",
+    "card_title": "Is the Interstellar Object 3I/ATLAS Alien Technology?",
+    "card_snippet": "Discovered on 1st July 2025, by the Asteroid Terrestrial-impact Last Alert System, 3I/ATLAS is, as its designation indicates, the latest interstellar object (or...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 5
+     }
+    ]
+   },
+   {
+    "id": "B6",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 6,
+    "role": "Overview card 6",
+    "url": null,
+    "kind": "Overview card (The Times of Israel)",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: the article's URL could not be determined (WebSearch: 'Times of Israel \"Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat\"'; 'timesofisrael.com Avi Loeb Kim Kardashian 3I/ATLAS comet alien threat'; 'site:timesofisrael.com ...'; the snippet's first sentence quoted: none returned it); the host's own search refuses the agent: https://www.timesofisrael.com/?s=Avi+Loeb+comet HTTP 403 at 2026-11-06T15:26:05Z (tries/toi-search.html); not retried. The card's title and snippet are its only text",
+     "http": null
+    },
+    "names_operator": "yes (Avi Loeb in the title)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "The Times of Israel — Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat | The Times of Israel",
+    "card_title": "Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat | The Times of Israel",
+    "card_snippet": "Israel-born Harvard scientist, no stranger to controversy, has asked Kim Kardashian to join his research team after the celeb got some answers about 3I/ATLAS fr...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 6
+     }
+    ]
+   },
+   {
+    "id": "B7",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 7,
+    "role": "Overview card 7 (a video, 2:27)",
+    "url": null,
+    "kind": "Overview card (Facebook, Fox 32 Chicago, video)",
+    "files": {},
+    "fetched": {
+     "result": "video card: admitted through its title (the card has no snippet); no fetch",
+     "http": null
+    },
+    "names_operator": "yes (Avi Loeb in the title)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "Facebook·Fox 32 Chicago — Avi Loeb Explains C/2025 V1 & 3I/ATLAS \"Nearly Interstellar\" Mystery",
+    "card_title": "Avi Loeb Explains C/2025 V1 & 3I/ATLAS \"Nearly Interstellar\" Mystery",
+    "card_snippet": null,
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 7
+     }
+    ]
+   },
+   {
+    "id": "B8",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 8,
+    "role": "Overview card 8",
+    "url": "https://sites.psu.edu/astrowright/2025/11/09/loebs-3i-atlas-anomalies-explained/",
+    "kind": "Overview card (Jason Wright's blog AstroWright, Penn State, post of 2025-11-09)",
+    "files": {
+     "B8.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B8.html",
+      "sha256": "4534e8f96f53d0d914fb4b097e7f9fc20b525b865f6b9e3814091cfda3946adb"
+     },
+     "B8.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B8.txt",
+      "sha256": "2e4292db3225958e26161344f9caae7b8041be518f0cc504a2ae8e8bdfa4d09d"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-06T15:26:04Z",
+     "http": 200,
+     "url": "https://sites.psu.edu/astrowright/2025/11/09/loebs-3i-atlas-anomalies-explained/",
+     "raw_sha256": "4534e8f96f53d0d914fb4b097e7f9fc20b525b865f6b9e3814091cfda3946adb",
+     "found_by": "the blog index https://sites.psu.edu/astrowright/ (HTTP 200 at 2026-11-06T15:23:36Z), the post linked by its title",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B8.txt"
+     ]
+    },
+    "names_operator": "yes (Avi Loeb throughout)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "Sites at Penn State — Loeb’s 3I/ATLAS “Anomalies” Explained | AstroWright",
+    "card_title": "Loeb’s 3I/ATLAS “Anomalies” Explained | AstroWright",
+    "card_snippet": "Avi Loeb claims the interstellar comet 3I/ATLAS might be an alien spacecraft based on alleged anomalies. Planetary scientists dispute this, asserting 3I/ATLAS b...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 8
+     }
+    ]
+   },
+   {
+    "id": "B9",
+    "origin": "card",
+    "pool": "B_D",
+    "card_n": 9,
+    "role": "Overview card 9: a novel bearing the object's name, another sense (fiction), recorded with its sense",
+    "url": null,
+    "kind": "Overview card (Google Books: a novel)",
+    "files": {},
+    "fetched": {
+     "result": "card admitted through title and snippet; a novel, outside the entity; no fetch",
+     "http": null
+    },
+    "names_operator": "no",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "card": "Google — 3I/Atlas: The Messenger of Orion - Book 1",
+    "card_title": "3I/Atlas: The Messenger of Orion - Book 1",
+    "card_snippet": "A visitor from the edge of the stars... But what truly hides in the shadow of 3I/Atlas? When the interstellar object bursts into our solar system, nothing about...",
+    "surfaced_by_T": [
+     {
+      "slug": "avi-loeb-3i-atlas-aio-20261102",
+      "card": 9
+     }
+    ]
+   },
+   {
+    "id": "B10",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "the Loeb Scale paper (Eldadi, Tenenbaum and Loeb, arXiv:2508.09167, submitted 6 Aug 2025), saved by the investigation at rebuild/3i-atlas-signal-search/sources/ (the brief's B_R source); not on T's rail",
+    "url": "https://arxiv.org/abs/2508.09167",
+    "kind": "own page (the scale paper; Loeb is its third author)",
+    "files": {
+     "B10.pdf": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B10.pdf",
+      "sha256": "1cbd3a853939492837470deb225c3615a3a6c89a6e5b8cb702bb1927c0ca3fe7"
+     },
+     "B10.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B10.txt",
+      "sha256": "dd21ee362995c21619dcb8ba89a0affe54af15ca8621bf6de8bc3009b321a3a7"
+     },
+     "B10-abs.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B10-abs.html",
+      "sha256": "a5c831fac97794489f42a3dd2d1767b8cc69bc753c48007e5d8b8d280589f391"
+     },
+     "B10-abs.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B10-abs.txt",
+      "sha256": "62135b92e8f440f482178f397c1707c6085da48a255b73f0954a11c410466aa4"
+     }
+    },
+    "fetched": {
+     "saved_copy": "rebuild/3i-atlas-signal-search/sources/arxiv-2508.09167.pdf and .txt (sha256 of the pdf 1cbd3a853939492837470deb225c3615a3a6c89a6e5b8cb702bb1927c0ca3fe7), copied unchanged; the abstract page fetched for the date: https://arxiv.org/abs/2508.09167 HTTP 200 at 2026-11-06T15:30:36Z ('[Submitted on 6 Aug 2025]', tries/arxiv-2508.09167-abs.html)",
+     "http": 200,
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B10.txt",
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B10-abs.txt"
+     ]
+    },
+    "names_operator": "yes (Abraham Loeb, third author)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "surfaced_by_T": [],
+    "card": "arXiv — The Loeb Scale: Astronomical Classification of Interstellar Objects (own page; B_R)"
+   },
+   {
+    "id": "B11",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "Loeb, 'Where is 3I/ATLAS Now?', Medium, 2026-04-23: the brief's named B_R essay, the capture's source frame, as supplied by the operator with the paste (rebuild/capture-registry/intake-20261102-loeb-3i-atlas/loeb-medium-20260423-where-is-3i-atlas-now.txt)",
+    "url": "avi-loeb.medium.com (the essay's own URL not given in the saved text)",
+    "kind": "own page (the person's own essay)",
+    "files": {
+     "B11.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B11.txt",
+      "sha256": "45a6b77f11196a224a8eacf2ec689406fadb9a12f533d3379851c76f7b0bd807"
+     }
+    },
+    "fetched": {
+     "saved_copy": "the operator's copy (sha256 45a6b77f11196a224a8eacf2ec689406fadb9a12f533d3379851c76f7b0bd807), copied unchanged; the host refuses this agent (Medium, HTTP 403 at 2026-11-06T15:24:11Z) and the essay was not refetched",
+     "http": null,
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B11.txt"
+     ]
+    },
+    "names_operator": "yes (the author)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "surfaced_by_T": [],
+    "card": "Medium — Avi Loeb, 'Where is 3I/ATLAS Now?', 2026-04-23 (own page; operator's saved copy; B_R)"
+   },
+   {
+    "id": "B12",
+    "origin": "own_page",
+    "pool": "B_R",
+    "role": "Loeb's Medium essay of 2025-11-08 on the OH detection (the brief's named B_R essay)",
+    "url": null,
+    "kind": "own page (the person's own essay)",
+    "files": {},
+    "fetched": {
+     "result": "unreachable: the essay's URL could not be determined (WebSearch: 'Avi Loeb Medium November 8 2025 MeerKAT OH hydroxyl absorption 3I/ATLAS'; 'avi-loeb.medium.com radio detection 3I/ATLAS MeerKAT hydroxyl November 2025': no Medium URL); the host refuses the agent (HTTP 403, Cloudflare, at 2026-11-06T15:24:11Z); not retried. No text; no claim",
+     "http": null
+    },
+    "names_operator": "yes (the author)",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "surfaced_by_T": [],
+    "card": "Medium — Avi Loeb, essay of 2025-11-08 on the OH detection (own page; unreachable; B_R)"
+   },
+   {
+    "id": "B13",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "Wikipedia 'Avi Loeb', read at its lead and its section '3I/ATLAS' (under 'Claims about alien life')",
+    "url": "https://en.wikipedia.org/wiki/Avi_Loeb",
+    "kind": "Wikipedia article (the person)",
+    "files": {
+     "B13.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B13.html",
+      "sha256": "6ec88ac30b64383eeb6645ca0c0bba8a9c193ecb9026b256e0f1084974077636"
+     },
+     "B13.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B13.txt",
+      "sha256": "e6b4d57dd0941b25eae1e4ca98e6d48a4c4316a3b8bff30920ae7c10998c3d59"
+     },
+     "B13.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B13.wiki",
+      "sha256": "d3f40b458d13a0095502327e5737d53890916ec4d304691e48b9f2b408b35f20"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-06T15:26:14Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/Avi_Loeb",
+     "raw_sha256": "6ec88ac30b64383eeb6645ca0c0bba8a9c193ecb9026b256e0f1084974077636",
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=Avi_Loeb&action=raw",
+      "at": "2026-11-06T15:24:12Z",
+      "http": 200,
+      "sha256": "d3f40b458d13a0095502327e5737d53890916ec4d304691e48b9f2b408b35f20"
+     },
+     "last_edited": "14 October 2026, at 18:13",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B13.wiki",
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B13.txt"
+     ]
+    },
+    "names_operator": "yes",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "surfaced_by_T": [],
+    "card": "Wikipedia — Avi Loeb (B_R)"
+   },
+   {
+    "id": "B14",
+    "origin": "wikipedia",
+    "pool": "B_R",
+    "role": "Wikipedia '3I/ATLAS', read at its section 'Alien spacecraft speculation', the section on him",
+    "url": "https://en.wikipedia.org/wiki/3I/ATLAS",
+    "kind": "Wikipedia article (the object)",
+    "files": {
+     "B14.html": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B14.html",
+      "sha256": "01c62d0f33f4f237e81e861e296b3b687be0fd4a60732f6ed00bbe91158e8bb3"
+     },
+     "B14.txt": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B14.txt",
+      "sha256": "454b399ece62ebc6697516b6917bfe684621f6f219c3ee1f2a119fb9474bc493"
+     },
+     "B14.wiki": {
+      "path": "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B14.wiki",
+      "sha256": "7c89cc6307ef7cab617ef414526d930e4bed16d81ceab1c9656ad2ece6c203c0"
+     }
+    },
+    "fetched": {
+     "at": "2026-11-06T15:26:14Z",
+     "http": 200,
+     "url": "https://en.wikipedia.org/wiki/3I/ATLAS",
+     "raw_sha256": "01c62d0f33f4f237e81e861e296b3b687be0fd4a60732f6ed00bbe91158e8bb3",
+     "wikitext": {
+      "url": "https://en.wikipedia.org/w/index.php?title=3I/ATLAS&action=raw",
+      "at": "2026-11-06T15:24:12Z",
+      "http": 200,
+      "sha256": "7c89cc6307ef7cab617ef414526d930e4bed16d81ceab1c9656ad2ece6c203c0"
+     },
+     "last_edited": "30 October 2026, at 06:43",
+     "text": [
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B14.wiki",
+      "datasets/negative-of-the-negative/v2/intake/avi-loeb-3i-atlas-20261102/B14.txt"
+     ]
+    },
+    "names_operator": "yes",
+    "names_archive": "no (none of the Crimson Hexagonal Archive, Alexanarch, Lee Sharks, Nobel Glas, Orin Trace, the Capture Registry in the saved text, card title or snippet)",
+    "surfaced_by_T": [],
+    "card": "Wikipedia — 3I/ATLAS, 'Alien spacecraft speculation' (B_R)"
+   }
+  ]
+ },
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet",
+   "quote": "Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard? Avi Loeb May 25, 2026",
+   "claim": "Loeb's own essay of 25 May 2026 asks whether 3I/ATLAS delivered extrasolar life",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the later essays (2026)",
+   "date": "2026-05-25 (card)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F2": {
+   "source": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title",
+   "quote": "Avi Loeb: Scientists find 'alien-like' water on 3I/ATLAS comet",
+   "claim": "a FOX 32 Chicago clip in which Loeb reports scientists' finding of 'alien-like' water on the comet",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, broadcast and video",
+   "date": "undated (the body: \"7 months ago\")",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F3": {
+   "source": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet",
+   "quote": "Avi Loeb: What Is 3I/ATLAS? - YouTube um three Atlas is an an object discovered on July 1st by the Atlas telescope in Chile",
+   "claim": "a video in which Loeb introduces the object, discovered on 1 July by the ATLAS telescope in Chile",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, broadcast and video",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F4": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title",
+   "quote": "Harvard professor now agrees 3I/ATLAS 'most likely natural'",
+   "claim": "NewsNation's headline: the Harvard professor now agrees the object is most likely natural",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": true,
+   "lineage": "December 2025: 'most likely natural'",
+   "date": "2025-12-19 (card: updated)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F5": {
+   "source": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card snippet",
+   "quote": "3I/ATLAS 'most likely natural,' Harvard professor concedes Elizabeth Vargas, Michael Ramsey Updated: Dec 19, 2025",
+   "claim": "the item gives the statement as a concession, by Elizabeth Vargas and Michael Ramsey, updated 19 December 2025",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "December 2025: 'most likely natural'",
+   "date": "2025-12-19 (card)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F6": {
+   "source": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet",
+   "quote": "Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat … Israel-born Harvard scientist, no stranger to controversy, has asked Kim Kardashian to join his research team",
+   "claim": "The Times of Israel: Loeb warns the world not to ignore the comet's potential alien threat, and has asked Kim Kardashian to join his research team",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, broadcast and video",
+   "date": "undated (card)",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F7": {
+   "source": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title",
+   "quote": "Avi Loeb Explains C/2025 V1 & 3I/ATLAS \"Nearly Interstellar\" Mystery",
+   "claim": "a Fox 32 Chicago video in which Loeb explains C/2025 V1 beside 3I/ATLAS",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "reception: press, broadcast and video",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised"
+  },
+  "F8": {
+   "source": "B9",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "card title and snippet",
+   "quote": "3I/Atlas: The Messenger of Orion - Book 1 A visitor from the edge of the stars... But what truly hides in the shadow of 3I/Atlas?",
+   "claim": "a novel bearing the object's name, Book 1 of a series",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "another sense of the name on the rail: a novel",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "the card's title and snippet as the registry's cite_list gives them, whitespace-normalised",
+   "sense": "another sense of the name: a work of fiction, outside the entity"
+  },
+  "F9": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "title and author line",
+   "quote": "Is the Interstellar Object 3I/ATLAS Alien Technology? Adam Hibberd,1 Adam Crowl,1 and Abraham Loeb2",
+   "claim": "a paper by Adam Hibberd, Adam Crowl and Abraham Loeb, its question in its title",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16 (v1); v2 2025-07-21",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "As largely a pedagogical exercise, in this paper we present additional analysis into the astrodynamics of 3I/ATLAS, and hypothesize that this object could be technological, and possibly hostile as would be expected from the ’Dark Forest’ resolution to the ’Fermi Paradox’.",
+   "claim": "the paper hypothesizes, as largely a pedagogical exercise, that the object could be technological and possibly hostile, after the Dark Forest resolution of the Fermi Paradox",
+   "modality": "hypothesis",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "We show that 3I/ATLAS approaches surprisingly close to Venus, Mars and Jupiter, with a probability of ≲ 0.005%.",
+   "claim": "its approaches to Venus, Mars and Jupiter, with a probability of at most 0.005 per cent",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Abstract",
+   "quote": "the low retrograde tilt of 3I/ATLAS’s orbital plane to the ecliptic offers various benefits to an Extra-terrestrial Intelligence (ETI), since it allows the object access to our planet with relative impunity",
+   "claim": "the low retrograde tilt of its orbit read as a benefit to an extraterrestrial intelligence",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "1. Introduction",
+   "quote": "This paper is contingent on a remarkable but, as we shall show, testable hypothesis, to which the authors do not necessarily ascribe, yet is certainly worthy of an analysis and a report",
+   "claim": "the hypothesis is testable, and the authors do not necessarily ascribe to it",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "1. Introduction",
+   "quote": "The hypothesis is an interesting exercise in its own right, and is fun to pursue, irrespective of its likely validity.",
+   "claim": "the hypothesis pursued as an exercise, irrespective of its likely validity",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "1. Introduction",
+   "quote": "The hypothesis in question is that the recent interstellar visitor to our Solar System, 3I/ATLAS … is a technological artifact, and furthermore has active intelligence.",
+   "claim": "the hypothesis stated: a technological artifact with active intelligence",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Table 1 (Evidence, Description)",
+   "quote": "3I/ATLAS orbital plane lies virtually in the Ecliptic, though retrogade, i = 175.11◦ … 3I/ATLAS is too large to be an asteroid … 3I/ATLAS shows no evidence of cometary outgassing … 3I/ATLAS approaches unusually close to Venus, Mars and Jupiter … 3I/ATLAS achieves perihelion on the opposite side of the Sun to Earth",
+   "claim": "the lines of evidence tabled: the orbit in the ecliptic, too large for an asteroid, no cometary outgassing, the close planetary approaches, perihelion hidden from Earth",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "6. Discussion",
+   "quote": "The orbital path of 3I/ATLAS has some very unlikely combination of characteristics, which could quite easily have been simple coincidence",
+   "claim": "the unlikely combination could easily be coincidence",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-21",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "6. Discussion",
+   "quote": "for interstellar objects we have a sample size of only 3, therefore rendering an attempt to draw inferences from what is observed rather problematic",
+   "claim": "with a sample of three interstellar objects, inference from what is observed is problematic",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-21",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "6. Discussion",
+   "quote": "a visitor to Earth around the end of November to the beginning of December 2025, whatever form that might take, would clearly support our supposition",
+   "claim": "a visitor to Earth at the end of November or the start of December 2025 would support the supposition",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-21",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "7. Conclusion",
+   "quote": "We strongly emphasize that this paper is largely a pedagogical exercise, with interesting discoveries and strange serendipities, worthy of a record in the scientific literature. By far the most likely outcome will be that 3I/ATLAS is a completely natural interstellar object, probably a comet, and the authors await the astronomical data to support this likely origin.",
+   "claim": "the paper largely a pedagogical exercise; by far the most likely outcome a completely natural interstellar object, probably a comet",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16 (v1 §6; v2 §7)",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "7. Conclusion",
+   "quote": "Nevertheless when viewed from an open-minded and unprejudiced perspective, these investigations have revealed many compelling insights into the possibility that 3I/ATLAS is technological",
+   "claim": "the investigations reveal compelling insights into the possibility that it is technological",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-21",
+   "quote_ok": true,
+   "checked_against": "saved text B5-v2.txt (sha256 cee06b582077fc57…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "arXiv abstract page, submission history",
+   "quote": "[Submitted on 16 Jul 2025 ( v1 ), last revised 15 Oct 2025 (this version, v3)]",
+   "claim": "submitted 16 July 2025, last revised 15 October 2025",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B5-abs.txt (sha256 eac14471a6b113dc…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "byline of the blog",
+   "quote": "Astronomy and meta-Astronomy by Jason Wright",
+   "claim": "the blog is Jason Wright's",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09 (the post's URL)",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "Avi Loeb continues to claim that 3I/ATLAS has many anomalous behaviors that lead to the conclusion that it “might” be an alien spacecraft.",
+   "claim": "Loeb continues to claim many anomalous behaviours that lead to the conclusion that it might be an alien spacecraft",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "opening",
+   "quote": "He carefully hedges the probability that it is a spacecraft around 40%, which gives him plausible deniability of the bad-faith “just asking questions” variety",
+   "claim": "he hedges the probability that it is a spacecraft at around 40 per cent, which the author reads as plausible deniability",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the probability he gives",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F26": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "It's Obviously A Comet",
+   "quote": "He has now explicitly written that no matter how much it walks like a duck, quacks like a duck, and swims like a duck, he will find ways to insist it’s at least 20% likely to be an alien spacecraft .",
+   "claim": "he has written that he will insist it is at least 20 per cent likely to be an alien spacecraft",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the probability he gives",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "It's Obviously A Comet",
+   "quote": "It’s also worth noting that zero planetary scientists give Avi’s claims any credence.",
+   "claim": "no planetary scientist credits his claims",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "It's Obviously A Comet",
+   "quote": "They’re saying he’s wrong because he’s demonstrably wrong.",
+   "claim": "they say he is wrong because he is demonstrably wrong",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Lots of Comets Are 'Anomalous'!",
+   "quote": "So the question isn’t whether 3I/ATLAS is anomalous: it’s from another Solar System, so of course it’s anomalous! It’s whether it’s so anomalous that there’s any reason to think it’s anything other than a comet.",
+   "claim": "the question is whether it is anomalous enough to be anything other than a comet",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Consider the Track Record of the Messenger",
+   "quote": "The second thing you need to understand about Loeb is that he has no training in planetary science",
+   "claim": "Loeb has no training in planetary science",
+   "modality": "interpretation",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Consider the Track Record of the Messenger",
+   "quote": "I’m not aware of him ever admitting he got something wrong with respect to 3I/ATLAS and retracting a claim, despite ample opportunities to do so.",
+   "claim": "the author knows of no claim on 3I/ATLAS that Loeb has retracted",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Loeb's List of 10 Anomalies",
+   "quote": "So let’s break down the anomalies he keeps repeating , so we can see why there’s nothing to worry about with 3I/ATLAS (this list is verbatim from four days ago):",
+   "claim": "Loeb's list of ten anomalies, quoted verbatim as of early November 2025",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F33": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Loeb's List of 10 Anomalies, item 1",
+   "quote": "But Loeb chose specific aspects of the comet’s orbit to compute probabilities for after he knew what they were. That’s a classic fallacy and misuse of probability theory.",
+   "claim": "his probabilities computed for aspects chosen after they were known: a misuse of probability theory",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F34": {
+   "source": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "locus": "Loeb's List of 10 Anomalies, item 8",
+   "quote": "This is ridiculous. 9 degrees from the Wow! Signal is a long way away!",
+   "claim": "nine degrees from the Wow! Signal is far",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-11-09",
+   "quote_ok": true,
+   "checked_against": "saved text B8.txt (sha256 2e4292db3225958e…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F35": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "title and author line",
+   "quote": "The Loeb Scale: Astronomical Classification of Interstellar Objects Omer Eldadi1, Gershon Tenenbaum1 and Abraham Loeb2",
+   "claim": "the scale paper, by Omer Eldadi, Gershon Tenenbaum and Abraham Loeb",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F36": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "We present the Loeb Scale, formally the Interstellar Object Significance Scale (IOSS), a 0-10 classification system extending the proven Torino Scale framework, to address ISOs' unique anomalies, including potential technosignatures.",
+   "claim": "the Loeb Scale, or IOSS: a 0–10 classification of interstellar objects extending the Torino Scale, including potential technosignatures",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F37": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "The scale provides quantitative thresholds for natural phenomena (Levels 0-3) and graduated protocols for increasingly anomalous characteristics (Levels 4-7), with Levels 8-10 reserved for confirmed artificial origin.",
+   "claim": "Levels 0–3 natural phenomena, 4–7 increasingly anomalous characteristics, 8–10 confirmed artificial origin",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Abstract",
+   "quote": "We demonstrate the scale's application using 1I/'Oumuamua (Level 4), 2I/Borisov (Level 0), and 3I/ATLAS (Level 4) as test cases.",
+   "claim": "3I/ATLAS at Level 4, a test case beside ʻOumuamua (Level 4) and Borisov (Level 0)",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Levels 0-4",
+   "quote": "The Yellow Zone, covering Levels 2-4, addresses objects with increasingly significant anomalies.",
+   "claim": "the Yellow Zone, Levels 2–4, for increasingly significant anomalies",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Levels 0-4",
+   "quote": "The critical threshold occurs at Level 4, where technosignature indicators enter formal consideration. … Though remaining within the Yellow Zone as these indicators require verification.",
+   "claim": "Level 4 the threshold at which technosignature indicators enter consideration, within the Yellow Zone, its indicators awaiting verification",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "Levels 5-7",
+   "quote": "The Orange Zone encompasses Levels 5-7, marking the qualitative shift to suspected artificial origin requiring immediate strategic response.",
+   "claim": "Levels 5–7, the Orange Zone, mark the shift to suspected artificial origin",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "3I/ATLAS (2025): Level 4 Classification",
+   "quote": "The third confirmed ISO presents a compelling case for Level 4 classification through an unprecedented accumulation of anomalous characteristics.",
+   "claim": "the case for Level 4: an accumulation of anomalous characteristics",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "3I/ATLAS (2025): Level 4 Classification",
+   "quote": "While Hibberd et al. (2025) explore technological hypotheses for 3I/ATLAS as \"largely a pedagogical exercise\", they acknowledge the object is most likely natural.",
+   "claim": "the scale paper records that Hibberd et al. hold the object most likely natural while exploring technological hypotheses",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "3I/ATLAS (2025): Level 4 Classification",
+   "quote": "warranting Level 4 classification and triggering recommendations for intensive observational campaigns",
+   "claim": "Level 4 warranted, with intensive observing campaigns recommended",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "case studies, closing",
+   "quote": "Importantly, Level 4 classification does not imply artificial origin but rather indicates sufficient anomalies to warrant comprehensive investigation of all possibilities, including technological hypotheses.",
+   "claim": "Level 4 does not imply artificial origin; it warrants investigation of all possibilities",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10.txt (sha256 dd21ee362995c216…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F46": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "title, byline, date",
+   "quote": "Where is 3I/ATLAS Now? Avi Loeb Avi Loeb Follow 8 min read · Apr 23, 2026",
+   "claim": "his essay of 23 April 2026",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the later essays (2026)",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F47": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶2",
+   "quote": "So far, its fading light curve does not show any evidence for artificial (self-produced) light.",
+   "claim": "the fading light curve shows no evidence of artificial light",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what the data show against it: no artificial light",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F48": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶2",
+   "quote": "We are still waiting for data from NASA’s Juno spacecraft, taken around March 16, 2026 when 3I/ATLAS came closest to Jupiter.",
+   "claim": "Juno data of its Jupiter passage awaited",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what the data show against it: no artificial light",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F49": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "¶3",
+   "quote": "it is time to list all of the anomalies it displayed over the past year, grouped thematically (differently than in my past essays)",
+   "claim": "the anomalies of the past year listed, grouped by theme",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F50": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "1. Isotope ratios",
+   "quote": "Potential techno-signature: Deuterium and tritium constitute an efficient fuel for nuclear fusion.",
+   "claim": "beside the deuterium excess, a potential techno-signature: fusion fuel",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F51": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "3.1",
+   "quote": "The retrograde trajectory of 3I/ATLAS is aligned to within 5 degrees with the orbital plane of the planets around the Sun, with a probability of 0.2% (as discussed here). The Milky-Way disk is misaligned with the ecliptic plane by about 60 degrees. This suggests that the trajectory of 3I/ATLAS may have been planned.",
+   "claim": "the orbit within 5 degrees of the planets' plane, probability 0.2 per cent, which suggests a trajectory that may have been planned",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F52": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "4. Abundant organic molecules",
+   "quote": "Methane and other organic molecules are known bio-markers. Potential bio-signature: Does 3I/ATLAS carry life on it (as discussed here)?",
+   "claim": "beside the late methane, a potential bio-signature: does it carry life",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F53": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "5. Anti-tail",
+   "quote": "The fact that a collimated jet appears as the sunward anti-tail both before and after perihelion (while reversing direction at perihelion relative to the direction of motion), has a tiny probability of occurring at random, equal to the square of 0.5% or 0.000025.",
+   "claim": "the sunward jet before and after perihelion, a probability of 0.000025",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F54": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "6. Symmetric Jet System",
+   "quote": "Possible techno-signature: The symmetric system of 3+1 jets might be associated with technological thrusters, used for stabilizing the three-dimensional motion of 3I/ATLAS",
+   "claim": "beside the symmetric jets, a possible techno-signature: thrusters",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F55": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "8. Rare arrival direction",
+   "quote": "3I/ATLAS arrived from a direction coincident with the radio “Wow! Signal” to within 9 degrees, with a probability of 0.6% (as discussed here).",
+   "claim": "its arrival within 9 degrees of the Wow! Signal, probability 0.6 per cent",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F56": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "9. Unusual chemical composition",
+   "quote": "Potential techno-signature: Nickel overabundance relative to iron is a characteristic of nickel alloys which are produced industrially for aerospace applications.",
+   "claim": "beside the nickel excess, a potential techno-signature: industrial alloys",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F57": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "12. Size and mass",
+   "quote": "Potential techno-signature: Is 3I/ATLAS a Trojan Horse, namely a natural comet that was hitchhiked by a technological civilization which used its resources to navigate it into the habitable zone of the Solar System?",
+   "claim": "a potential techno-signature put as a question: a natural comet hitchhiked by a technological civilization",
+   "modality": "hypothesis",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F58": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "closing",
+   "quote": "Altogether, these anomalies led me to rank 3I/ATLAS as Level 4 on the Loeb Scale",
+   "claim": "the anomalies together rank it at Level 4",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F59": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "closing",
+   "quote": "Given that 3I/ATLAS is on its way out of the Solar System, its anomalies might remain unresolved.",
+   "claim": "its anomalies might remain unresolved",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the later essays (2026)",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F60": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "closing",
+   "quote": "If the DOE-NSF Rubin Observatory will detect a new object that resembles 3I/ATLAS and indicates that it may have returned, that by itself would constitute a startling technological signature. This time around, we will have to launch a mission that will intercept its path",
+   "claim": "a returning object like it would be a technological signature, and an intercept mission would be needed",
+   "modality": "hypothesis",
+   "kind": "prediction",
+   "kernel": false,
+   "const": false,
+   "lineage": "the later essays (2026)",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F61": {
+   "source": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "About the author",
+   "quote": "Avi Loeb is the head of the Galileo Project, founding director of Harvard University’s — Black Hole Initiative",
+   "claim": "head of the Galileo Project and founding director of Harvard's Black Hole Initiative",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the person who holds it",
+   "date": "2026-04-23",
+   "quote_ok": true,
+   "checked_against": "saved text B11.txt (sha256 45a6b77f11196a22…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F62": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "lead",
+   "quote": "is an Israeli-American theoretical physicist who works on astrophysics and cosmology. Loeb is the Frank B. Baird Jr. Professor of Science at Harvard University.",
+   "claim": "an Israeli-American theoretical physicist, the Frank B. Baird Jr. Professor of Science at Harvard",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the person who holds it",
+   "date": "undated (last edited 2026-10-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F63": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "lead",
+   "quote": "Since 2017, Loeb has made a series of pseudoscientific claims that alien space craft may be in the Solar System. … These claims have been widely rejected by the scientific community.",
+   "claim": "since 2017 a series of claims, called pseudoscientific, that alien craft may be in the Solar System, widely rejected",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the person who holds it",
+   "date": "undated (last edited 2026-10-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F64": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "3I/ATLAS ¶1",
+   "quote": "Loeb hypothesized in the press that this, the third known interstellar object, could be an alien device with potentially malevolent intent. He based these speculations on his calculations of the likelihood of a comet of natural origins having these characteristics.",
+   "claim": "he hypothesized in the press an alien device with potentially malevolent intent, on his calculations of likelihood",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "undated (2025, per the section)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F65": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "3I/ATLAS ¶1",
+   "quote": "\"The retrograde orbital plane of 3I/ATLAS around the Sun lies within 5 degrees of that of Earth... The likelihood for that coincidence out of all random orientations is 0.2 percent,\" Loeb told Newsweek.",
+   "claim": "the 0.2 per cent alignment, as he told Newsweek",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the anomalies, each graded",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F66": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "3I/ATLAS ¶1",
+   "quote": "Richard Moissl, Head of Planetary Defence at the European Space Agency told Newsweek: \"There have been no signs pointing to non-natural origins of 3I/ATLAS in the available observations.\"",
+   "claim": "ESA's head of planetary defence: no signs of non-natural origin",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F67": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "3I/ATLAS ¶2",
+   "quote": "Independent assessments have resoundingly rejected the idea that 3I/ATLAS is anything except a comet.",
+   "claim": "independent assessments reject anything but a comet",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F68": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "3I/ATLAS ¶2",
+   "quote": "In the face of this growing body of evidence, Loeb conceded that 3I/ATLAS is \"most likely\" a comet, though he continued to speculate about its supposed technological nature regardless.",
+   "claim": "Wikipedia: Loeb conceded that it is most likely a comet, and went on speculating about a technological nature",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "December 2025: 'most likely natural'",
+   "date": "undated (last edited 2026-10-14)",
+   "quote_ok": true,
+   "checked_against": "saved text B13.wiki (sha256 d3f40b458d13a009…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F69": {
+   "source": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "footer",
+   "quote": "This page was last edited on 14 October 2026, at 18:13",
+   "claim": "last edited 14 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-14",
+   "quote_ok": true,
+   "checked_against": "saved text B13.txt (sha256 e6b4d57dd0941b25…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F70": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Alien spacecraft speculation ¶1",
+   "quote": "On 16 July 2025, astrophysicist Avi Loeb and other researchers of the Initiative for Interstellar Studies posted a paper on arXiv speculating that 3I/ATLAS could be an extraterrestrial spacecraft",
+   "claim": "on 16 July 2025 Loeb and researchers of the Initiative for Interstellar Studies posted a paper speculating that it could be an extraterrestrial spacecraft",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "2025-07-16",
+   "quote_ok": true,
+   "checked_against": "saved text B14.wiki (sha256 7c89cc6307ef7cab…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F71": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Alien spacecraft speculation ¶1",
+   "quote": "Other astronomers, including Chris Lintott, immediately criticized Loeb's speculation; the science news website Live Science reported that \"the overwhelming consensus is that it is a comet\"",
+   "claim": "astronomers criticized it at once; Live Science: the overwhelming consensus is a comet",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-07",
+   "quote_ok": true,
+   "checked_against": "saved text B14.wiki (sha256 7c89cc6307ef7cab…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F72": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Alien spacecraft speculation ¶1",
+   "quote": "Several astrophysicists, including Scott Manley and David Kipping, promptly pointed out flaws in Loeb's statistical analysis of 3I/ATLAS's trajectory.",
+   "claim": "flaws pointed out in his statistical analysis of the trajectory",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "2025-07",
+   "quote_ok": true,
+   "checked_against": "saved text B14.wiki (sha256 7c89cc6307ef7cab…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F73": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Alien spacecraft speculation ¶3",
+   "quote": "While Loeb has written in his blog that \"the most likely outcome will be that 3I/ATLAS is a completely natural interstellar object, probably a comet,\" he defended his hypothesis as an \"interesting exercise in its own right, and is fun to explore, irrespective of its likely validity\".",
+   "claim": "Wikipedia: he wrote that the most likely outcome is a natural object, probably a comet, and defended the hypothesis as an exercise",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "the July 2025 paper: a hypothesis put as an exercise, its conclusion natural",
+   "date": "undated (last edited 2026-10-30)",
+   "quote_ok": true,
+   "checked_against": "saved text B14.wiki (sha256 7c89cc6307ef7cab…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F74": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "Alien spacecraft speculation ¶3",
+   "quote": "Lawler further said that extraordinary claims require extraordinary evidence, while \"the evidence presented [by Loeb et al.] is absolutely not extraordinary.\"",
+   "claim": "Samantha Lawler: the evidence is not extraordinary",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the critique: planetary scientists and his statistics",
+   "date": "undated",
+   "quote_ok": true,
+   "checked_against": "saved text B14.wiki (sha256 7c89cc6307ef7cab…), wikitext with refs and link markup removed, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F75": {
+   "source": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "locus": "footer",
+   "quote": "This page was last edited on 30 October 2026, at 06:43",
+   "claim": "last edited 30 October 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "reception: the encyclopedia",
+   "date": "2026-10-30",
+   "quote_ok": true,
+   "checked_against": "saved text B14.txt (sha256 454b399ece62ebc6…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F76": {
+   "source": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "locus": "arXiv abstract page, submission line",
+   "quote": "[Submitted on 6 Aug 2025]",
+   "claim": "the scale paper submitted on 6 August 2025",
+   "modality": "documented",
+   "kind": "genealogy",
+   "kernel": true,
+   "const": false,
+   "lineage": "the Loeb Scale and Level 4",
+   "date": "2025-08-06",
+   "quote_ok": true,
+   "checked_against": "saved text B10-abs.txt (sha256 62135b92e8f440f4…), whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "Medium — Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard? - Avi Loeb",
+  "B2": "YouTube·FOX 32 Chicago — Avi Loeb: Scientists find 'alien-like' water on 3I/ATLAS comet",
+  "B3": "YouTube — Avi Loeb: What Is 3I/ATLAS? - YouTube",
+  "B4": "NewsNation — Harvard professor now agrees 3I/ATLAS 'most likely natural'",
+  "B5": "Center for Astrophysics | Harvard & Smithsonian — Is the Interstellar Object 3I/ATLAS Alien Technology?",
+  "B6": "The Times of Israel — Astronomer Avi Loeb warns world not to ignore new comet's potential alien threat | The Times of Israel",
+  "B7": "Facebook·Fox 32 Chicago — Avi Loeb Explains C/2025 V1 & 3I/ATLAS \"Nearly Interstellar\" Mystery",
+  "B8": "Sites at Penn State — Loeb’s 3I/ATLAS “Anomalies” Explained | AstroWright",
+  "B9": "Google — 3I/Atlas: The Messenger of Orion - Book 1",
+  "B10": "arXiv — The Loeb Scale: Astronomical Classification of Interstellar Objects (own page; B_R)",
+  "B11": "Medium — Avi Loeb, 'Where is 3I/ATLAS Now?', 2026-04-23 (own page; operator's saved copy; B_R)",
+  "B12": "Medium — Avi Loeb, essay of 2025-11-08 on the OH detection (own page; unreachable; B_R)",
+  "B13": "Wikipedia — Avi Loeb (B_R)",
+  "B14": "Wikipedia — 3I/ATLAS, 'Alien spacecraft speculation' (B_R)"
+ }
+}

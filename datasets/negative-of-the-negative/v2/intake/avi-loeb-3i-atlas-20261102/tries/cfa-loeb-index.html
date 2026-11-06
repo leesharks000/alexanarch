@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professor Abraham (Avi) Loeb - Frank B. Baird, Jr., Professor of Science at Harvard University">
+  <meta name="keywords" content="Avi Loeb, Abraham Loeb, astrophysics, Harvard, astronomy, Smithsonian, CfA, Center for Astrophysics, Black Hole Initiative, Galileo Project, extraterrestrial">
+  <title>Professor Abraham (Avi) Loeb</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="#" class="navbar__brand">Prof. Avi Loeb</a>
+      <button class="navbar__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="navbar__menu">
+        <li><a href="#hero-title">Home</a></li>
+        <li><a href="#articles-title">Publications</a></li>
+        <li><a href="#books-title">Books</a></li>
+        <li><a href="#news-title">News</a></li>
+        <li><a href="#lectures-title">Lectures</a></li>
+        <li><a href="#conferences-title">Conferences</a></li>
+        <li><a href="#students-title">Students</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page">
+    <main id="main-content">
+      <!-- Hero / Home Section -->
+      <div data-include="home.html"></div>
+
+      <!-- Articles Section -->
+      <div data-include="articles.html"></div>
+
+      <!-- Books Section -->
+      <div data-include="books.html"></div>
+
+      <!-- In The News Section -->
+      <div data-include="in_the_news.html"></div>
+
+      <!-- Lectures and Interviews Section -->
+      <div data-include="lectures_and_interviews.html"></div>
+
+      <!-- Papers Section -->
+      <div data-include="papers.html"></div>
+
+      <!-- Conferences Section -->
+      <div data-include="conferences.html"></div>
+
+      <!-- Graduate Students Section -->
+      <div data-include="graduate_students.html"></div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top" title="Scroll to top">↑</button>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>Comments or Questions? Contact <a href="mailto:umirani@cfa.harvard.edu">umirani@cfa.harvard.edu</a></p>
+    </footer>
+  </div>
+
+  <!-- Simple include system to load component files -->
+  <script>
+    // Load all components marked with data-include attribute
+    document.addEventListener('DOMContentLoaded', function() {
+      const includes = document.querySelectorAll('[data-include]');
+      
+      includes.forEach(function(element) {
+        const file = element.getAttribute('data-include');
+        
+        fetch(file)
+          .then(function(response) {
+            if (!response.ok) {
+              throw new Error('Failed to load ' + file);
+            }
+            return response.text();
+          })
+          .then(function(html) {
+            element.innerHTML = html;
+            // Dispatch event for any scripts that need to run after content loads
+            element.dispatchEvent(new CustomEvent('contentLoaded', { bubbles: true }));
+          })
+          .catch(function(error) {
+            console.error('Error loading include:', error);
+            element.innerHTML = '<p class="text-muted">Content loading...</p>';
+          });
+      });
+    });
+
+    // Collapsible sections functionality
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains('collapsible__toggle')) {
+        const toggle = e.target;
+        const content = toggle.nextElementSibling;
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        
+        toggle.setAttribute('aria-expanded', !isExpanded);
+        content.classList.toggle('is-open');
+      }
+    });
+
+    // Open external links in new tabs
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a');
+      if (link && link.href && link.href.startsWith('http') && !link.href.includes(window.location.host)) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+
+    // Scroll to top button
+    const scrollToTopBtn = document.querySelector('.scroll-to-top');
+    
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('is-visible');
+      } else {
+        scrollToTopBtn.classList.remove('is-visible');
+      }
+    });
+
+    scrollToTopBtn.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mobile navbar toggle
+    const navbarToggle = document.querySelector('.navbar__toggle');
+    const navbarMenu = document.querySelector('.navbar__menu');
+    
+    if (navbarToggle && navbarMenu) {
+      navbarToggle.addEventListener('click', function() {
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !isExpanded);
+        navbarMenu.classList.toggle('is-open');
+      });
+
+      // Close menu when clicking a link
+      navbarMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', function() {
+          navbarToggle.setAttribute('aria-expanded', 'false');
+          navbarMenu.classList.remove('is-open');
+        });
+      });
+    }
+  </script>
+</body>
+</html>

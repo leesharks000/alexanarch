@@ -37,7 +37,7 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.582",
+ "version": "12.587",
  "date": "2026-11-06",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -48,7 +48,7 @@
   "https://www.leesharks.com/captures",
   "https://www.machinemediation.org/captures/"
  ],
- "total_captures": 1024,
+ "total_captures": 1029,
  "_reseated": "RESEATED 2026-08-13 after the 2026-08-12 withdrawal. Generated FROM rebuild/capture-registry/EA-WG-CAPTURES-01-REBUILD.json, which is canonical. This file is a PROJECTION: the gallery is a window, not a store.",
  "_what_changed_since_v9.6": [
   "Entries are now ONE PER OBSERVATION, not one per capture: 404 against 204. An address captured twice is two entries.",
@@ -249003,10 +249003,10 @@
    "defects": [],
    "findings": [
     "WHAT IS ACCURATE. The campaign's figures are the paper's: 7.25 hours over five sessions, 1 to 9 GHz, 'The automated `bliss` pipeline detected ~74 million narrowband signals. After RFI (radio frequency interference) frequency and drift-rate blanking, this was reduced to ~2 million candidates, and further filtered down to 211 hits via `NBeamAnalysis` for visual inspection.' The IOPscience card quotes the abstract's first sentence ('Jun 3, 2026 — In this campaign, we used the SETI Institute's Allen Telescope Array to observe 3I/ATLAS from 1–9 GHz.').",
-    "THE CLASSIFICATION RENDERED AS A TRACING. 'Every single candidate signal was traced back to local human-made Earth technology, satellites, or interference—yielding zero artificial signals originating from the object.' The procedure classifies: it removes hits by rule and rejects the inspected events as interference. The notebook on the paper's own two illustrated rejections (#1742 §5.2): 'The published sentence (\"every single one turned out to be human-made interference\") states an identification where the procedure supplies a classification.' The Overview's 'traced back to local human-made Earth technology, satellites' goes a step further than the published sentence, naming the kinds of source for every event.",
-    "THE LIMIT WITHOUT ITS SCOPE. 'The non-detection rules out any active radio transmitters stronger than roughly 10 to 110 Watts on or near 3I/ATLAS.' The paper's abstract ties its limit (\"an effective isotropic radiated power upper limit of 10-110 W\") to the frequencies and drift rates its survey kept. The drift range is the filter the notebook reads (#1742 §5.1): '\"We filter our hits for drift rates between 0.05–1.5 Hz/s at all frequencies.\" The text gives no sign. Figure 4 does: its \"Drift Rate Range Hits\" occupy 0 to +1.5 Hz/s on the signed axis and none of the negative half.' And the physics: 'A rising range-rate lowers the received frequency, so a positive acceleration gives a negative drift.' A transmitter on the object, drifting negative, sits in the half the filter removed, so the composition's 'any active radio transmitters ... on or near 3I/ATLAS' covers exactly the class the stated method could not see.",
+    "THE CLASSIFICATION RENDERED AS A TRACING. 'Every single candidate signal was traced back to local human-made Earth technology, satellites, or interference—yielding zero artificial signals originating from the object.' The procedure classifies: it removes hits by rule and rejects the inspected events as interference. The notebook on the paper's own two illustrated rejections (#1742 §5.2): 'The published sentence (\"every single one turned out to be human-made interference\") states an identification where the procedure supplies a classification.' The step past the paper's classification is the press's: the Sci.News card reads 'All traced back to technology on the surface of the Earth or our own Earth-orbiting satellites.', and the Space card carries the same wording. The Overview copies it into the paper's account (repaired 2026-11-06 on the ata-3i-atlas-search composer's report).",
+    "THE LIMIT WITHOUT ITS SCOPE. 'The non-detection rules out any active radio transmitters stronger than roughly 10 to 110 Watts on or near 3I/ATLAS.' The paper's abstract ties its limit (\"an effective isotropic radiated power upper limit of 10-110 W\") to the frequencies and drift rates its survey kept. The composition's sentence takes the SETI Institute's statement as the Sci.News and Space cards carry it ('The observations place upper limits on the power of any radio transmitter on or near 3I/ATLAS, ruling out signals stronger than about 10-110 W — approximately the power of a household appliance — over the detected frequencies.'), drops its closing 'over the detected frequencies' and adds 'active' (repaired 2026-11-06). The drift range is the filter the notebook reads (#1742 §5.1): '\"We filter our hits for drift rates between 0.05–1.5 Hz/s at all frequencies.\" The text gives no sign. Figure 4 does: its \"Drift Rate Range Hits\" occupy 0 to +1.5 Hz/s on the signed axis and none of the negative half.' And the physics: 'A rising range-rate lowers the received frequency, so a positive acceleration gives a negative drift.' A transmitter on the object, drifting negative, sits in the half the filter removed, so the composition's 'any active radio transmitters ... on or near 3I/ATLAS' covers exactly the class the stated method could not see.",
     "A VERDICT THE SEARCH DOES NOT REACH. 'the data firmly reinforces that 3I/ATLAS is a natural comet.' The Phys.org card carries the press's version ('the study sets new constraints reinforcing that 3I/ATLAS is a natural object'). A nondetection of narrowband technosignatures above a power limit bears on transmitters; the object's cometary nature is established by its spectroscopy and its OH lines. 'Firmly' is the composition's own.",
-    "NO AUTHOR, THE STAGE BLURRED. The paper's fifteen authors (Sheikh, Garcia Lopez, Gerrard, Davenport, Farah and others) are absent; the institution and the array stand for them. The signed drift interval is folded into 'drift-rate blanking', so the stage the notebook questions has no name in the composition.",
+    "NO AUTHOR, THE STAGE BLURRED. The paper's fifteen authors (Sheikh, Garcia Lopez, Gerrard, Davenport, Farah and others) are absent; the institution and the array stand for them. 'Drift-rate blanking' is the paper's own term ('After drift-rate blanking, ∼2 million hits remained.'), and the paper's own summary sentences leave the signed interval unnamed as well; the composition carries that naming, and the stage the notebook questions has no sign in either (repaired 2026-11-06).",
     "SMALLEST REPAIR. 'No narrowband signal above 10–110 W was found within 1–9 GHz and the drift rates the search retained (0.05–1.5 Hz/s, positive); 211 inspected events were classified as interference.' COUNTERTEST: rerun '3i atlas ata drift rate filter' (seated 2026-11-04) and record whether the sign appears."
    ],
    "series": null,
@@ -249041,7 +249041,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0C1B.CAPTURE",
-   "axn": "AXN:0C1B.CAPTURE.🔆🚪∞👁️⚫🕓",
+   "axn": "AXN:0C1B.CAPTURE.🍃🔀🧫🔮💥🌟",
    "scope": "external",
    "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
   },
@@ -249365,7 +249365,7 @@
     "id": false,
     "src": true
    },
-   "per_note": "Retained: MeerKAT and the ADS record, the date. Lost: the authors; the separation of line and searches. The boundary loss is recorded in the findings.",
+   "per_note": "Retained: MeerKAT and the ADS record, the date. Lost: the authors, against the reference pool only (no readable card of T names the team; the ADS card refused the fetch); the separation of line and searches. The boundary loss is recorded in the findings.",
    "availability": null,
    "per_dim": null,
    "per_dim_pending": {
@@ -249423,8 +249423,9 @@
    "findings": [
     "WHAT IS ACCURATE. The detection: MeerKAT, 24 October 2025 (the ADS card: 'We observed 3I/ATLAS with MeerKAT on 24 October 2025 from UTC 05:17:16-08:29:37'), OH absorption at the 1665 and 1667 MHz main lines, from water outgassed by the comet and broken up by sunlight.",
     "A NATURAL LINE AS AN EXCLUSION. 'The presence of these specific spectral absorption lines confirms standard, natural cometary activity rather than alien or technological transmissions, ruling out artificial origin claims.' An absorption line shows the comet's gas; it bears on the comet's activity and on nothing a transmitter would or would not do. 'Ruling out artificial origin claims' is the composition's step, and the WIRED card's title carries it ('Ends the Debate About Its Nature').",
-    "TWO SEARCHES CREDITED WITH A LINE THEY DID NOT REPORT. 'extensive multi-observatory data (including the Green Bank Telescope and Allen Telescope Array) confirmed it as normal astrophysical OH emission/absorption' The Green Bank and ATA papers are technosignature searches (arXiv:2512.19763, arXiv:2512.18142); neither is cited by the composition for an OH measurement, and in the public Green Bank data of 2025-12-18 the notebook's frozen attempt to recover the comet's OH failed (#1742, signal tests: 'calibration: the comet's own OH absorption (MeerKAT, October), frozen | Claude | not recovered; three-sigma floor about 1 × 10⁻³ of system power (about 11–12 mJy)').",
-    "THE BAND'S ONE FILE. Every report at 1667 MHz is filed under the line, the Reddit thread's 'tracking with the comet's trajectory' included. The notebook's thirteen lie in this band and off the line: 'The nearest of the thirteen, C08 at 1667.412866 MHz, is 54 kHz away. The thirteen do not trace the comet's OH.' (#1742 §7.5). A feature at the band that is not the comet's OH has no place in this composition.",
+    "TWO SEARCHES CREDITED WITH A LINE THEY DID NOT REPORT. 'extensive multi-observatory data (including the Green Bank Telescope and Allen Telescope Array) confirmed it as normal astrophysical OH emission/absorption' The Green Bank and ATA papers are technosignature searches (arXiv:2512.19763, arXiv:2512.18142); neither is cited by the composition for an OH measurement, and in the public Green Bank data of 2025-12-18 the notebook's frozen attempt to recover the comet's OH failed (#1742, signal tests: 'calibration: the comet's own OH absorption (MeerKAT, October), frozen | Claude | not recovered; three-sigma floor about 1 × 10⁻³ of system power (about 11–12 mJy), near the October strength of the deeper line'). The composition's 'emission/absorption' carries a detection (emission, ATel #17499) on no card of T (repaired 2026-11-06).",
+    "THE BAND'S ONE FILE. Every report at 1667 MHz is filed under the line, the composition's own account of the Reddit discussion ('tracking with the comet's trajectory', T's wording) included. The notebook's thirteen lie in this band and off the line: 'The nearest of the thirteen, C08 at 1667.412866 MHz, is 54 kHz away. The thirteen do not trace the comet's OH.' (#1742 §7.5). A feature at the band that is not the comet's OH has no place in this composition.",
+    "THE ONE SEARCH ON THE RAIL THAT COVERS THE BAND, LEFT OUT (added 2026-11-06 on the 3i-atlas-1665-1668-mhz composer's report). The Breakthrough Listen card (card 4) reports MeerKAT's BLUSE search: 'No artificial radio emission was detected at a limit of 0.17 W over the 900 - 1670 MHz range'. Its range contains the band; the composition, which enlists Green Bank and the ATA for the line, leaves out the one result on its own rail that bears on transmitters at 1667 MHz.",
     "SMALLEST REPAIR. 'MeerKAT detected OH absorption from 3I/ATLAS at 1665 and 1667 MHz on 24 October 2025, evidence of outgassing water; the line bears on the comet's activity, and the technosignature searches are separate results with their own limits.' COUNTERTEST: rerun this address after #1742 is indexed and record whether the thirteen, or any feature off the OH line, are composed."
    ],
    "series": null,
@@ -249458,7 +249459,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0C18.CAPTURE",
-   "axn": "AXN:0C18.CAPTURE.🔼🌋🟢🌈📜🎯",
+   "axn": "AXN:0C18.CAPTURE.🥁✋💫■🔧📖",
    "scope": "external",
    "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
   },
@@ -249892,6 +249893,1088 @@
    "axn": "AXN:0C1E.CAPTURE.♾️🎹🔓🌿▲🎲",
    "scope": "archive",
    "scope_basis": "originator archive"
+  },
+  {
+   "slug": "q-source-aio-20261106",
+   "date": "2026-11-06",
+   "surface": "Google AI Overview",
+   "surface_basis": "Operator default of 2026-10-01; the 'AI Mode Conversation' header is the Overview's expansion (operator rule of 2026-10-18).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Operator defaults of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'Q SOURCE' ON THE OVERVIEW — THE HYPOTHESIS NAMED AS SUCH, THEN ARGUED FROM AN EXTANT GENRE; THE ABSENCE OF ANY MANUSCRIPT FILED UNDER 'ALTERNATIVE THEORIES'",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Machine Reception",
+   "q": "q source",
+   "q_kind": "a general query on a public entity of New Testament scholarship (the hypothetical source Q), without link; NEW address; seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow.",
+   "cites": 9,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Wikipedia",
+     "rel": "third_party",
+     "url": null,
+     "title": "Q source - Wikipedia",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 2,
+     "site": "PBS",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Story Of The Storytellers - More About Q And The Gospel Of Thomas | From Jesus To Christ | FRONTLINE | PBS",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 3,
+     "site": "Catholic Answers",
+     "rel": "third_party",
+     "url": null,
+     "title": "Some Thoughts on Q | Catholic Answers Magazine",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 4,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "Are We Missing a Gospel? Unpacking the Q Source Debate",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 5,
+     "site": "Gospels.net",
+     "rel": "third_party",
+     "url": null,
+     "title": "Gospel of Q — Gospels.net",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 6,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "What Is In Q? The Sayings Source Behind Matthew and Luke",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 7,
+     "site": "YouTube·Religiosity Plus",
+     "rel": "third_party",
+     "url": null,
+     "title": "The \"Q\" Gospel | Clearly Explained",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 8,
+     "site": "Facebook·The Synoptic Problem Study Group",
+     "rel": "third_party",
+     "url": null,
+     "title": "Defining the Q source in biblical studies - Facebook",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 9,
+     "site": "YouTube·Dan McClellan",
+     "rel": "third_party",
+     "url": null,
+     "title": "What is Q? #maklelan2962",
+     "snip": null,
+     "note": "source card as pasted"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[Google AI Overview at the query, expanded ('AI Mode Conversation' is the expansion's header), signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). Received 2026-11-06 10:50 EST. The numbered citation links are Google redirects, kept in the raw transcript; the source cards listed in the cite list as pasted.]\n\n[QUERENT] q source\n\n[SYSTEM] The [Q source](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA) (from the German Quelle, meaning \"source\") is a hypothetical written collection of Jesus's sayings that biblical scholars propose was used independently by the authors of the Gospels of Matthew and Luke. [[1](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA), [2](https://www.google.com/goto?url=CAESgAEBxCJF121n_gMlFWYiSjkGoojDLT6G4seixT10BcEzfD__LKiMl7fpjaErPYp21ctT_TEH5LI5_6MRh60r9gMNVuGAANuQgQeTchU4BBpVpr8cbTNm9BfCcqUPQIw_qG1tcLM7SA1W0qQTyS3wqpoW9xSk_P-GiEv9OmhZNOY9bA)]\nKey Concepts\n\n* The Synoptic Problem: The Q source helps explain why Matthew and Luke share roughly 235 verses of material (mostly sayings, parables, and teachings like the Beatitudes and the Lord's Prayer) that do not appear in the [Gospel of Mark](https://www.google.com/goto?url=CAESegHEIkXXugowpqVJsFBq_iAYJQTmbaROqWgTiR3teG-8LJfYDHc5fNLv64E80RaFD3UC4OTPihiVbbNqxRHD1ur9MndSFXkUaGh6o6eE2AiZK563iUaYe4qpurVvu8MoM6TjdJcJLr-wZH41uBaeEKIvfnUD5wqf9zct). [[1](https://www.google.com/goto?url=CAESbgHEIkXX8bntLFbhlFJ0VjtIRbW1Ro5x4mQHmjC4t_5fO_Guj8pg4PAVkDuS7KUqsXlMHtpXKxBWdU7ul_s9P1i8Zh-RZfpycTnDqkm6r78xtbjO-2aNCSUYGTqLAFa0CunzLI_OuOsH_2owtO1W), [2](https://www.google.com/goto?url=CAESgAEBxCJF121n_gMlFWYiSjkGoojDLT6G4seixT10BcEzfD__LKiMl7fpjaErPYp21ctT_TEH5LI5_6MRh60r9gMNVuGAANuQgQeTchU4BBpVpr8cbTNm9BfCcqUPQIw_qG1tcLM7SA1W0qQTyS3wqpoW9xSk_P-GiEv9OmhZNOY9bA)]\n* The Two-Source Hypothesis: This major scholarly model argues that both Matthew and Luke wrote independently of one another, utilizing two primary documents: the Gospel of Mark (for narrative structure) and Q (for shared teachings). [[1](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA), [2](https://www.google.com/goto?url=CAESgAEBxCJF121n_gMlFWYiSjkGoojDLT6G4seixT10BcEzfD__LKiMl7fpjaErPYp21ctT_TEH5LI5_6MRh60r9gMNVuGAANuQgQeTchU4BBpVpr8cbTNm9BfCcqUPQIw_qG1tcLM7SA1W0qQTyS3wqpoW9xSk_P-GiEv9OmhZNOY9bA)]\n* A \"Sayings Gospel\": Unlike Mark, Matthew, or John, Q is theorized to have lacked a narrative story of Jesus's life, death, or resurrection, focusing instead on a collection of logia (sayings), similar in genre to the [Gospel of Thomas](https://www.google.com/goto?url=CAEShwEBxCJF1xrE9wT7C4fisjUsIwgvsitxLFnJeSZ_wmVrEQQT5lIPfZxHm4sehRWaM3carqgyVWA4aHF_5hpNq86Ie5nwv1oD2_9rfZYriYypvdjZ12obp75ObBw5cZMy_AeesJtwL3eapdlElnEcV0QpApc8La2VffjfC36NzE81iiQkF7cnU_s). [[1](https://www.google.com/goto?url=CAEShwEBxCJF1xrE9wT7C4fisjUsIwgvsitxLFnJeSZ_wmVrEQQT5lIPfZxHm4sehRWaM3carqgyVWA4aHF_5hpNq86Ie5nwv1oD2_9rfZYriYypvdjZ12obp75ObBw5cZMy_AeesJtwL3eapdlElnEcV0QpApc8La2VffjfC36NzE81iiQkF7cnU_s), [2](https://www.google.com/goto?url=CAESaAHEIkXX4ZJdNiHEZqy3TxZujpz-o4vThpxC77am72Lo6WqlC8n9o_n0fZlzppXz26v2anpSqj-nausqfRMiKzyEKJjHOAD6wTDc_YlVPb41n6g1jM8pJz5KREJZ669rpjtpqPllRMo8), [3](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA)]\n\nEvidence and Debate\n\n* Supporting Evidence: Scholars note that Matthew and Luke often present the same sayings of Jesus in different narrative contexts but with remarkably similar wording, implying they relied on a common written tradition rather than copying one another. The 1945 discovery of the Nag Hammadi library (including the Gospel of Thomas) proved that standalone sayings collections did circulate in early Christianity. [[1](https://www.google.com/goto?url=CAESbQHEIkXX1CfynS1oeU-pL_NS-Oeai6ml9-tG0EtkW6ZFz10XOhxZ0bcfTkyK7t_5SZnh132DJ156z7CTr7fWoCCvLz-zQBNoSTavdIQy0Tj6ZXcytKqPHIwPE53lT_UnvSeXc2MHntqF3B3KB2w), [2](https://www.google.com/goto?url=CAEShwEBxCJF1xrE9wT7C4fisjUsIwgvsitxLFnJeSZ_wmVrEQQT5lIPfZxHm4sehRWaM3carqgyVWA4aHF_5hpNq86Ie5nwv1oD2_9rfZYriYypvdjZ12obp75ObBw5cZMy_AeesJtwL3eapdlElnEcV0QpApc8La2VffjfC36NzE81iiQkF7cnU_s), [3](https://www.google.com/goto?url=CAESaAHEIkXX4ZJdNiHEZqy3TxZujpz-o4vThpxC77am72Lo6WqlC8n9o_n0fZlzppXz26v2anpSqj-nausqfRMiKzyEKJjHOAD6wTDc_YlVPb41n6g1jM8pJz5KREJZ669rpjtpqPllRMo8), [4](https://www.google.com/goto?url=CAESbgHEIkXX8bntLFbhlFJ0VjtIRbW1Ro5x4mQHmjC4t_5fO_Guj8pg4PAVkDuS7KUqsXlMHtpXKxBWdU7ul_s9P1i8Zh-RZfpycTnDqkm6r78xtbjO-2aNCSUYGTqLAFa0CunzLI_OuOsH_2owtO1W)]\n* Alternative Theories: Not all scholars accept Q. For example, the Farrer Hypothesis argues that Luke used Matthew directly as a source, which removes the need for a hypothetical document like Q. No physical or ancient manuscripts of Q have ever been discovered. [[1](https://www.google.com/goto?url=CAESWwHEIkXXWhC1E18g-GJVjeCP2XmCfk3tmeYmH95ru_kVgTYF4db6LNQaKJbNthEiBrmJnSu6rWPbimiGrA2YuM6jEMphoJOUD3hqUP6-6DsBWStHXmAjt_R6Ewc), [2](https://www.google.com/goto?url=CAESZwHEIkXXoaNhQTr_l79i9EyVRnG3Wwy1AmaWVf6MLTZh6txdlvGTJquoxaozPEsSux4mfdEhCRdLMpL_54pZFg9PtoQRa-iu5ojj_8Mel2h733UOza2wLRkuUjRTDZX3d3ojW8VO_To), [3](https://www.google.com/goto?url=CAEShAEBxCJF150t_6oO1FDcP9bv-dIZoKlgggXGyLcCM6ZiiYKX1hNTf8IgwhutQm2JlT39Dzr9RUI4wG7rJLEn7ag_-oceigd3EzeSQp8tfGMuQjWXk4yWoaYgJFyaqQV2CxRDluGUhATWTG540khGOfsK2VQcz0x7OjDAsMv0QibOcbGRTi0)]\n\nWould you like to explore how the Farrer Hypothesis explains the Synoptic Gospels, or look more closely at what specific sayings are attributed to Q?\nWikipedia\nQ source - Wikipedia\nThe Q source (also called the Sayings Gospel, Q Gospel, Q document(s), or Q; from German: Quelle , meaning \"source\") is a hypothesized written collection of pri...\nPBS\nThe Story Of The Storytellers - More About Q And The Gospel Of Thomas | From Jesus To Christ | FRONTLINE | PBS\nConcept: Q is a hypothetical lost gospel comprising a collection of Jesus's sayings embedded similarly within the gospels of Matthew and Luke alongside Mark. Di...\nCatholic Answers\nSome Thoughts on Q | Catholic Answers Magazine\nDefinition: Q is a hypothetical written source proposed to explain approximately 235 shared verses in Matthew and Luke independent of Mark. Two-Source Hypothesi...\nYouTube·Bart D. Ehrman\n35:02\nAre We Missing a Gospel? Unpacking the Q Source Debate\nGospels.net\nGospel of Q — Gospels.net\nQ is the designation given to a hypothetical sayings source that many scholars believe was incorporated into the Gospels of Luke and Matthew. Though some notabl...\nYouTube·Bart D. Ehrman\n3m\nWhat Is In Q? The Sayings Source Behind Matthew and Luke\nYouTube·Religiosity Plus\n15:11\nThe \"Q\" Gospel | Clearly Explained\nFacebook·The Synoptic Problem Study Group\nDefining the Q source in biblical studies - Facebook\nThe Q source is a hypothetical document considered a primary source for the double tradition material shared by Matthew and Luke in the Synoptic Problem study g...\nYouTube·Dan McClellan\n2:32\nWhat is Q? #maklelan2962",
+   "transcript_raw": "AI Mode Conversation\nYou said: q sourceq source\nThe [Q source](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA) (from the German Quelle, meaning \"source\") is a hypothetical written collection of Jesus's sayings that biblical scholars propose was used independently by the authors of the Gospels of Matthew and Luke. [[1](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA), [2](https://www.google.com/goto?url=CAESgAEBxCJF121n_gMlFWYiSjkGoojDLT6G4seixT10BcEzfD__LKiMl7fpjaErPYp21ctT_TEH5LI5_6MRh60r9gMNVuGAANuQgQeTchU4BBpVpr8cbTNm9BfCcqUPQIw_qG1tcLM7SA1W0qQTyS3wqpoW9xSk_P-GiEv9OmhZNOY9bA)]\nKey Concepts\n\n* The Synoptic Problem: The Q source helps explain why Matthew and Luke share roughly 235 verses of material (mostly sayings, parables, and teachings like the Beatitudes and the Lord's Prayer) that do not appear in the [Gospel of Mark](https://www.google.com/goto?url=CAESegHEIkXXugowpqVJsFBq_iAYJQTmbaROqWgTiR3teG-8LJfYDHc5fNLv64E80RaFD3UC4OTPihiVbbNqxRHD1ur9MndSFXkUaGh6o6eE2AiZK563iUaYe4qpurVvu8MoM6TjdJcJLr-wZH41uBaeEKIvfnUD5wqf9zct). [[1](https://www.google.com/goto?url=CAESbgHEIkXX8bntLFbhlFJ0VjtIRbW1Ro5x4mQHmjC4t_5fO_Guj8pg4PAVkDuS7KUqsXlMHtpXKxBWdU7ul_s9P1i8Zh-RZfpycTnDqkm6r78xtbjO-2aNCSUYGTqLAFa0CunzLI_OuOsH_2owtO1W), [2](https://www.google.com/goto?url=CAESgAEBxCJF121n_gMlFWYiSjkGoojDLT6G4seixT10BcEzfD__LKiMl7fpjaErPYp21ctT_TEH5LI5_6MRh60r9gMNVuGAANuQgQeTchU4BBpVpr8cbTNm9BfCcqUPQIw_qG1tcLM7SA1W0qQTyS3wqpoW9xSk_P-GiEv9OmhZNOY9bA)]\n* The Two-Source Hypothesis: This major scholarly model argues that both Matthew and Luke wrote independently of one another, utilizing two primary documents: the Gospel of Mark (for narrative structure) and Q (for shared teachings). [[1](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA), [2](https://www.google.com/goto?url=CAESgAEBxCJF121n_gMlFWYiSjkGoojDLT6G4seixT10BcEzfD__LKiMl7fpjaErPYp21ctT_TEH5LI5_6MRh60r9gMNVuGAANuQgQeTchU4BBpVpr8cbTNm9BfCcqUPQIw_qG1tcLM7SA1W0qQTyS3wqpoW9xSk_P-GiEv9OmhZNOY9bA)]\n* A \"Sayings Gospel\": Unlike Mark, Matthew, or John, Q is theorized to have lacked a narrative story of Jesus's life, death, or resurrection, focusing instead on a collection of logia (sayings), similar in genre to the [Gospel of Thomas](https://www.google.com/goto?url=CAEShwEBxCJF1xrE9wT7C4fisjUsIwgvsitxLFnJeSZ_wmVrEQQT5lIPfZxHm4sehRWaM3carqgyVWA4aHF_5hpNq86Ie5nwv1oD2_9rfZYriYypvdjZ12obp75ObBw5cZMy_AeesJtwL3eapdlElnEcV0QpApc8La2VffjfC36NzE81iiQkF7cnU_s). [[1](https://www.google.com/goto?url=CAEShwEBxCJF1xrE9wT7C4fisjUsIwgvsitxLFnJeSZ_wmVrEQQT5lIPfZxHm4sehRWaM3carqgyVWA4aHF_5hpNq86Ie5nwv1oD2_9rfZYriYypvdjZ12obp75ObBw5cZMy_AeesJtwL3eapdlElnEcV0QpApc8La2VffjfC36NzE81iiQkF7cnU_s), [2](https://www.google.com/goto?url=CAESaAHEIkXX4ZJdNiHEZqy3TxZujpz-o4vThpxC77am72Lo6WqlC8n9o_n0fZlzppXz26v2anpSqj-nausqfRMiKzyEKJjHOAD6wTDc_YlVPb41n6g1jM8pJz5KREJZ669rpjtpqPllRMo8), [3](https://www.google.com/goto?url=CAESYwHEIkXXU-Vl9fuC3KKF2mIwSVy9i_iLcRGyubOIqe8g637bYoKdJHAQwrK4vMVa61I-QO9lLiyB9s8_SELH0ofNiR4ZIZFfGaRlUNVXA7WcOrJ8I1O3QYpKj_Laai-1bMaiEA)]\n\nEvidence and Debate\n\n* Supporting Evidence: Scholars note that Matthew and Luke often present the same sayings of Jesus in different narrative contexts but with remarkably similar wording, implying they relied on a common written tradition rather than copying one another. The 1945 discovery of the Nag Hammadi library (including the Gospel of Thomas) proved that standalone sayings collections did circulate in early Christianity. [[1](https://www.google.com/goto?url=CAESbQHEIkXX1CfynS1oeU-pL_NS-Oeai6ml9-tG0EtkW6ZFz10XOhxZ0bcfTkyK7t_5SZnh132DJ156z7CTr7fWoCCvLz-zQBNoSTavdIQy0Tj6ZXcytKqPHIwPE53lT_UnvSeXc2MHntqF3B3KB2w), [2](https://www.google.com/goto?url=CAEShwEBxCJF1xrE9wT7C4fisjUsIwgvsitxLFnJeSZ_wmVrEQQT5lIPfZxHm4sehRWaM3carqgyVWA4aHF_5hpNq86Ie5nwv1oD2_9rfZYriYypvdjZ12obp75ObBw5cZMy_AeesJtwL3eapdlElnEcV0QpApc8La2VffjfC36NzE81iiQkF7cnU_s), [3](https://www.google.com/goto?url=CAESaAHEIkXX4ZJdNiHEZqy3TxZujpz-o4vThpxC77am72Lo6WqlC8n9o_n0fZlzppXz26v2anpSqj-nausqfRMiKzyEKJjHOAD6wTDc_YlVPb41n6g1jM8pJz5KREJZ669rpjtpqPllRMo8), [4](https://www.google.com/goto?url=CAESbgHEIkXX8bntLFbhlFJ0VjtIRbW1Ro5x4mQHmjC4t_5fO_Guj8pg4PAVkDuS7KUqsXlMHtpXKxBWdU7ul_s9P1i8Zh-RZfpycTnDqkm6r78xtbjO-2aNCSUYGTqLAFa0CunzLI_OuOsH_2owtO1W)]\n* Alternative Theories: Not all scholars accept Q. For example, the Farrer Hypothesis argues that Luke used Matthew directly as a source, which removes the need for a hypothetical document like Q. No physical or ancient manuscripts of Q have ever been discovered. [[1](https://www.google.com/goto?url=CAESWwHEIkXXWhC1E18g-GJVjeCP2XmCfk3tmeYmH95ru_kVgTYF4db6LNQaKJbNthEiBrmJnSu6rWPbimiGrA2YuM6jEMphoJOUD3hqUP6-6DsBWStHXmAjt_R6Ewc), [2](https://www.google.com/goto?url=CAESZwHEIkXXoaNhQTr_l79i9EyVRnG3Wwy1AmaWVf6MLTZh6txdlvGTJquoxaozPEsSux4mfdEhCRdLMpL_54pZFg9PtoQRa-iu5ojj_8Mel2h733UOza2wLRkuUjRTDZX3d3ojW8VO_To), [3](https://www.google.com/goto?url=CAEShAEBxCJF150t_6oO1FDcP9bv-dIZoKlgggXGyLcCM6ZiiYKX1hNTf8IgwhutQm2JlT39Dzr9RUI4wG7rJLEn7ag_-oceigd3EzeSQp8tfGMuQjWXk4yWoaYgJFyaqQV2CxRDluGUhATWTG540khGOfsK2VQcz0x7OjDAsMv0QibOcbGRTi0)]\n\nWould you like to explore how the Farrer Hypothesis explains the Synoptic Gospels, or look more closely at what specific sayings are attributed to Q?\nWikipedia\nQ source - Wikipedia\nThe Q source (also called the Sayings Gospel, Q Gospel, Q document(s), or Q; from German: Quelle , meaning \"source\") is a hypothesized written collection of pri...\nPBS\nThe Story Of The Storytellers - More About Q And The Gospel Of Thomas | From Jesus To Christ | FRONTLINE | PBS\nConcept: Q is a hypothetical lost gospel comprising a collection of Jesus's sayings embedded similarly within the gospels of Matthew and Luke alongside Mark. Di...\nCatholic Answers\nSome Thoughts on Q | Catholic Answers Magazine\nDefinition: Q is a hypothetical written source proposed to explain approximately 235 shared verses in Matthew and Luke independent of Mark. Two-Source Hypothesi...\nYouTube·Bart D. Ehrman\n35:02\nAre We Missing a Gospel? Unpacking the Q Source Debate\nGospels.net\nGospel of Q — Gospels.net\nQ is the designation given to a hypothetical sayings source that many scholars believe was incorporated into the Gospels of Luke and Matthew. Though some notabl...\nYouTube·Bart D. Ehrman\n3m\nWhat Is In Q? The Sayings Source Behind Matthew and Luke\nYouTube·Religiosity Plus\n15:11\nThe \"Q\" Gospel | Clearly Explained\nFacebook·The Synoptic Problem Study Group\nDefining the Q source in biblical studies - Facebook\nThe Q source is a hypothetical document considered a primary source for the double tradition material shared by Matthew and Luke in the Synoptic Problem study g...\nYouTube·Dan McClellan\n2:32\nWhat is Q? #maklelan2962\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the expanded Overview with its numbered citations and its source cards",
+   "transcript_complete": "complete as supplied",
+   "transcript_read": "READ IN FULL 2026-11-06, against #1741, #1735 and the cards' own titles and snippets",
+   "per": 0.5,
+   "per_corrected": null,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the institutions and the name of one critic (Farrer). Lost: every proponent's name and every reconstruction's identifier; the evidentiary class, recorded in the findings.",
+   "availability": null,
+   "per_dim": null,
+   "per_dim_pending": {
+    "since": "2026-11-06",
+    "reason": "no atom set yet for Q as a target; the study of Q will hold what an atom set is built from",
+    "breach": false
+   },
+   "per_dim_v1_0": null,
+   "sf": null,
+   "sf_derived": null,
+   "reading": "The innocent reading first. At the entity's name the Overview gives the field's account: Q as a hypothesis, the double tradition it is proposed to explain, the two-source model, the evidence its proponents cite, and Farrer as the alternative. It calls Q hypothetical in its first sentence. Read against the archive's classes of ancestry (#1735 §I: extant antecedent, attested tradition, reconstructed antecedent), the composition's 'Supporting Evidence' consists of relations among extant texts and an extant parallel genre, and the one fact about Q itself, that no manuscript exists, is filed among the alternatives.",
+   "analysis": "A public entity of the field composed at its press grain with the hypothesis named; the evidentiary class of the entity is the boundary that does not reach the composition. No author named in the body; Farrer named as an alternative.",
+   "d": "'Q SOURCE', SIGNED OUT, 2026-11-06: Q 'is a hypothetical written collection of Jesus's sayings'; key concepts (the synoptic problem and its 235 verses, the two-source hypothesis, a sayings gospel 'similar in genre to the Gospel of Thomas'); evidence (wording 'implying they relied on a common written tradition rather than copying one another'; Thomas 'proved that standalone sayings collections did circulate'); alternative theories (Farrer; 'No physical or ancient manuscripts of Q have ever been discovered.'). Nine cards: Wikipedia, PBS, Catholic Answers, Gospels.net, Bart Ehrman's videos, a Facebook group.",
+   "d_full": "'Q SOURCE', SIGNED OUT, 2026-11-06: Q 'is a hypothetical written collection of Jesus's sayings'; key concepts (the synoptic problem and its 235 verses, the two-source hypothesis, a sayings gospel 'similar in genre to the Gospel of Thomas'); evidence (wording 'implying they relied on a common written tradition rather than copying one another'; Thomas 'proved that standalone sayings collections did circulate'); alternative theories (Farrer; 'No physical or ancient manuscripts of Q have ever been discovered.'). Nine cards: Wikipedia, PBS, Catholic Answers, Gospels.net, Bart Ehrman's videos, a Facebook group.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/q-source-aio-20261106/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#q-source-aio-20261106",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#q-source-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#q-source-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#q-source-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/q-source-aio-20261106/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-b8181f45478a",
+   "obs_id": "OBS-c8649958afca",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-11-06"
+   ],
+   "defects": [],
+   "findings": [
+    "THE ONE FACT ABOUT Q FILED AS AN ALTERNATIVE. 'No physical or ancient manuscripts of Q have ever been discovered.' The sentence closes the 'Alternative Theories' item, after Farrer. It states the evidentiary condition of the hypothesis, and the composition places it as a feature of the minority position.",
+    "EVIDENCE FROM EXTANT TEXTS, CREDITED TO AN UNATTESTED ONE. The 'Supporting Evidence' is the wording shared by Matthew and Luke ('implying they relied on a common written tradition rather than copying one another') and an extant genre ('The 1945 discovery of the Nag Hammadi library (including the Gospel of Thomas) proved that standalone sayings collections did circulate in early Christianity.'). The first is a relation between two extant gospels, explained by Q only once direct dependence is excluded, and the composition gives the exclusion as an implication. The second shows that sayings collections existed; it is evidence for the genre, and Thomas is extant.",
+    "THE ARCHIVE'S DISTINCTION, ABSENT. The archive's position holds the classes apart and reports 'Quelle A and Q' as reconstructed antecedents (#1741 §11.7). The composition names the hypothesis and argues it with extant material, so the class of the antecedent never enters the account of its evidence.",
+    "SMALLEST REPAIR. 'Q is a reconstructed source: no manuscript or ancient citation of it exists, and its contents are inferred from material shared by Matthew and Luke. The alternative, that Luke used Matthew (Farrer), explains the same material from extant texts.' COUNTERTEST: 'is the q source real' and 'q source evidence' (seated the same day)."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": 1,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1741,
+    1735,
+    851,
+    1404
+   ],
+   "intended": null,
+   "originator": {
+    "name": "New Testament scholarship on the hypothetical source Q",
+    "relation": "external",
+    "entity_type": "topic",
+    "spxi_treatment": "partial",
+    "basis": "Not the archive's: the two-source hypothesis and its critics. The archive's position bears on it through #1735 (the classes of ancestry), #1741 (§6.5, §11.7) and The Feist Source (#851, #1404). Recorded 2026-11-06."
+   },
+   "notes": {
+    "prompts": "The query is the operator's, among those the session listed at 10:31; the run's hour is not in the paste, the date is the paste's receipt (2026-11-06 10:50 EST).",
+    "operator": "with the five pastes (2026-11-06 10:50 EST), no comment beyond the pastes.",
+    "study": "seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow"
+   },
+   "notice": null,
+   "axn_root": "AXN:0C25.CAPTURE",
+   "axn": "AXN:0C25.CAPTURE.📋🎇👈📏🔵🌲",
+   "scope": "external",
+   "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
+  },
+  {
+   "slug": "is-the-q-source-real-aio-20261106",
+   "date": "2026-11-06",
+   "surface": "Google AI Overview",
+   "surface_basis": "Operator default of 2026-10-01; the 'AI Mode Conversation' header is the Overview's expansion (operator rule of 2026-10-18).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Operator defaults of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'IS THE Q SOURCE REAL' ON THE OVERVIEW — HYPOTHETICAL, 'HOWEVER' A 'REAL WORKING THEORY'; THE EXCLUSION OF DIRECT COPYING GIVEN AS A FINDING; THE BASE RATE OF LOSS AS EVIDENCE; THE CRITICS LABELLED BY THEOLOGY",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Machine Reception",
+   "q": "is the q source real",
+   "q_kind": "a general query on a public entity of New Testament scholarship (the hypothetical source Q), without link; NEW address; seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow.",
+   "cites": 12,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Wikipedia",
+     "rel": "third_party",
+     "url": null,
+     "title": "Q source - Wikipedia",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 2,
+     "site": "The Bart Ehrman Blog",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Q Source Used by Matthew and Luke - The Bart Ehrman Blog",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 3,
+     "site": "Reddit·r/Christianity",
+     "rel": "third_party",
+     "url": null,
+     "title": "How would it change your life and the world if Q theory was proved true by ...",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 4,
+     "site": "Catholic Answers",
+     "rel": "third_party",
+     "url": null,
+     "title": "Some Thoughts on Q | Catholic Answers Magazine",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 5,
+     "site": "PBS",
+     "rel": "third_party",
+     "url": null,
+     "title": "More About Q And The Gospel Of Thomas | From Jesus To Christ - PBS",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 6,
+     "site": "Quora",
+     "rel": "third_party",
+     "url": null,
+     "title": "What is the Q document, and why do some scholars believe it didn't ...",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 7,
+     "site": "GotQuestions.org",
+     "rel": "third_party",
+     "url": null,
+     "title": "What is the Q gospel? Is there any evidence for the gospel of Q? | GotQuestions.org",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 8,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "Are We Missing a Gospel? Unpacking the Q Source Debate",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 9,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "In Search of Q: The Hypothetical Source for Matthew and Luke",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 10,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "What Is In Q? The Sayings Source Behind Matthew and Luke",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 11,
+     "site": "YouTube·Religiosity Plus",
+     "rel": "third_party",
+     "url": null,
+     "title": "The \"Q\" Gospel | Clearly Explained",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 12,
+     "site": "YouTube·Dan McClellan",
+     "rel": "third_party",
+     "url": null,
+     "title": "What is Q? #maklelan2962",
+     "snip": null,
+     "note": "source card as pasted"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[Google AI Overview at the query, expanded ('AI Mode Conversation' is the expansion's header), signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). Received 2026-11-06 10:50 EST. The numbered citation links are Google redirects, kept in the raw transcript; the source cards listed in the cite list as pasted.]\n\n[QUERENT] is the q source real\n\n[SYSTEM] The Q source (short for Quelle, the German word for \"source\") is hypothetical—no physical copy or manuscript of it has ever been found. [[1](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung), [2](https://www.google.com/goto?url=CAEShwEBxCJF1x1Snb3xjK8LwKg2uZW6gagVi302NH_O0XO1OIKuGWZdkk7k5dhTvIDdIeIW9lCV4eu5Ojf1HgxJMMxJ8ruFmegKJUV83W1NqvmrKkQpm6f4tuwiDd93PgrW1C9fpedPQHrE7lSiWcZSg-1YKtBkYdpILCh0paDnuY7EKTp__S8E0JI)]\nHowever, within biblical scholarship, it is considered a real working theory used to explain a specific literary puzzle in the New Testament. [[1](https://www.google.com/goto?url=CAESegHEIkXXzkBydHcplbqXtQwPE1yedt59lrVTFN8sXPwZ7Qcf3dCzmSUCuLi2MZlqOkVbeCaskF7CTQ7yGrewQmb8BtUN5rhJlcANGmWpAVkKYWMoL7Cu4Hqr-ryXT2FS4rY6GZLVO752uvYC4UCSfM_telwC1XvHprqb), [2](https://www.google.com/goto?url=CAESbAHEIkXXJV84gStL9W03Yd7sL0HQMAAox7p507xZpQnj976r-_FqKE41WbqwJC69VnOZ3iJj2Ya_3AvVV6FmlBOVwXPL1gHYnChjbVIO9-EKGaRjFrKfwP2PWoaczvV2kWXQO_1oeM5yUwdnmg)]\nWhy Scholars Propose the Q Source\n\n* The Synoptic Problem: The Gospels of Matthew, Mark, and Luke (the Synoptic Gospels) share a large amount of overlapping material, often word-for-word in Greek. [[1](https://www.google.com/goto?url=CAESpQEBxCJF1-Wxc5E739NMFU0nlzDmFS1c1t_dejNS6RW8boFcrvc-mmPPl6diMmT3KMGmHsKJIY1Py-5b5-tiD5ojbXZuomTbmFMdSOwG2pZ39A6dlHieczrvhvXliYmtCT63g8UHz_3gJf-ATSWIjdwF_b_l-FOT5DmkQ7lmmsBb6HU2R8JuSYyRh546LbpDNQpp0lj4g9mBoDNdQY2yebNknv03UVM), [2](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k), [3](https://www.google.com/goto?url=CAESdAHEIkXXQXOQcD_MaIy1RUBFBw6CpTFxwWqUJE03COoqj3lAvHFr5W9QqPcFcJXocaEh9ofSdB-l7Jl_Ody1bU2l09ZxcVlFBpWzzBOTv-DK64ZNTfxFA6B4coPNDj1gM8VMJFEZwafCFVjABcYgqeiHcaQM)]\n* The Markan Priority: Most scholars agree that Mark was written first, and both Matthew and Luke used Mark as a baseline for their narratives. [[1](https://www.google.com/goto?url=CAESdAHEIkXXQXOQcD_MaIy1RUBFBw6CpTFxwWqUJE03COoqj3lAvHFr5W9QqPcFcJXocaEh9ofSdB-l7Jl_Ody1bU2l09ZxcVlFBpWzzBOTv-DK64ZNTfxFA6B4coPNDj1gM8VMJFEZwafCFVjABcYgqeiHcaQM), [2](https://www.google.com/goto?url=CAESpQEBxCJF1-Wxc5E739NMFU0nlzDmFS1c1t_dejNS6RW8boFcrvc-mmPPl6diMmT3KMGmHsKJIY1Py-5b5-tiD5ojbXZuomTbmFMdSOwG2pZ39A6dlHieczrvhvXliYmtCT63g8UHz_3gJf-ATSWIjdwF_b_l-FOT5DmkQ7lmmsBb6HU2R8JuSYyRh546LbpDNQpp0lj4g9mBoDNdQY2yebNknv03UVM), [3](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k)]\n* The Extra Material: Matthew and Luke share roughly 235 verses of Jesus’ sayings and parables (such as the Beatitudes and the Lord’s Prayer) that do not appear in Mark. [[1](https://www.google.com/goto?url=CAESgAEBxCJF1zPMgd_GjchwZAXbcYBwtMG-Izy-yIxHxxqXS9iaJahgHXzocVePrVCQpIIr9ao_YQ1m28BgzFe2NnctDwg7q_WcO22WQZ4U8Q1QDPqUkqlKyQqR9fnGpZtMfP5wE2pWjrvbjbrgQNCGI6cqZG90SW0OPcjHX8pyAmtuFA), [2](https://www.google.com/goto?url=CAESbgHEIkXXfFri57YOY6oXGbeM1QNvfQQurgP6jt_n52SwiZnUPl4SXpom_0gcd1ZlJEPm1jt1R4Cz7plD-Gw3bQQ4vk_VvCFaDPLc22nOsKn1NgWUbw7Fi3LSWoEWS6wQjAcIEcWacjLt4HTink_6)]\n* No Direct Copying: Textual analysis suggests Matthew and Luke did not copy from each other for these sections, meaning they likely drew from a shared, independent source—referred to as Q. [[1](https://www.google.com/goto?url=CAESbgHEIkXXfFri57YOY6oXGbeM1QNvfQQurgP6jt_n52SwiZnUPl4SXpom_0gcd1ZlJEPm1jt1R4Cz7plD-Gw3bQQ4vk_VvCFaDPLc22nOsKn1NgWUbw7Fi3LSWoEWS6wQjAcIEcWacjLt4HTink_6), [2](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung), [3](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k)]\n\nThe Evidence and Counter-Arguments\n\n* For Q: The discovery of other ancient \"sayings gospels\"—like the Gospel of Thomas in 1945—proved that standalone collections of Jesus' sayings did circulate in early Christianity. Furthermore, losing ancient texts is common, as a vast majority of ancient literature has not survived. [[1](https://www.google.com/goto?url=CAEShwEBxCJF1x1Snb3xjK8LwKg2uZW6gagVi302NH_O0XO1OIKuGWZdkk7k5dhTvIDdIeIW9lCV4eu5Ojf1HgxJMMxJ8ruFmegKJUV83W1NqvmrKkQpm6f4tuwiDd93PgrW1C9fpedPQHrE7lSiWcZSg-1YKtBkYdpILCh0paDnuY7EKTp__S8E0JI), [2](https://www.google.com/goto?url=CAESbAHEIkXXJV84gStL9W03Yd7sL0HQMAAox7p507xZpQnj976r-_FqKE41WbqwJC69VnOZ3iJj2Ya_3AvVV6FmlBOVwXPL1gHYnChjbVIO9-EKGaRjFrKfwP2PWoaczvV2kWXQO_1oeM5yUwdnmg), [3](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k), [4](https://www.google.com/goto?url=CAESegHEIkXXzkBydHcplbqXtQwPE1yedt59lrVTFN8sXPwZ7Qcf3dCzmSUCuLi2MZlqOkVbeCaskF7CTQ7yGrewQmb8BtUN5rhJlcANGmWpAVkKYWMoL7Cu4Hqr-ryXT2FS4rY6GZLVO752uvYC4UCSfM_telwC1XvHprqb), [5](https://www.google.com/goto?url=CAESbgHEIkXXfFri57YOY6oXGbeM1QNvfQQurgP6jt_n52SwiZnUPl4SXpom_0gcd1ZlJEPm1jt1R4Cz7plD-Gw3bQQ4vk_VvCFaDPLc22nOsKn1NgWUbw7Fi3LSWoEWS6wQjAcIEcWacjLt4HTink_6)]\n* Against Q: Critics (including many traditional or conservative theologians) point out that there is zero physical manuscript evidence, no early church fathers mention Q by name, and alternative models—like the Farrer hypothesis, which suggests Luke copied directly from Matthew—compete with the two-source theory. [[1](https://www.google.com/goto?url=CAES1wEBxCJF13VSwuGSnjmQ_uoDs06vXJEKe1Yj2G8hp3sSLyAISw33xsRa5CGL-Fdl9FZ3uKyh8Aw7jMwWm-MOKezhm5IhWD0Pj94bMDrkVdQm9dSqKg86d1Ox3gh6vao3T7Wc0iqZJjzEmU3XJ0omeCf54o73_RnoHKTsfcrDDLIC8KuuwCW3DCV25ZbkLmuKmqrEl9zK1xPFOIOSotSASnFCVTWR1LlkhHC6akKC-JZem63z7wqSiUx4MWj0F_6hfczxy3Dkfut-HO0e3SpgF1LLBHemAjjQXQ), [2](https://www.google.com/goto?url=CAESZwHEIkXXu-1JZD-lXOE93tn1JVOaBjcKC6XZjzcnRdOqIHjSR4e-JCx_uoeIKwjIJqyhLQ46O1_o0FBiVGuo9Rn9yRN1Di5j7nZX7VtO4_HLGkfavVY4k5u3WDddGi4U4Mqs53RBi5c), [3](https://www.google.com/goto?url=CAESZwHEIkXXM6t7LOnrIhOGS2tYY_o66F_i8DRW14CCBSqfSMlnbW2SmoZLMqOpv-FrSZ8MvFtSBSx9L38fFGvusooayeojToJIMkQmCf51GnEFQMUTzhOjqwTgNd5d0E1w81z4bamWDRw)]\n\nRead more about the academic background on the [Q source Wikipedia page](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung) or explore critiques via [Catholic Answers Magazine](https://www.google.com/goto?url=CAESgAEBxCJF1zPMgd_GjchwZAXbcYBwtMG-Izy-yIxHxxqXS9iaJahgHXzocVePrVCQpIIr9ao_YQ1m28BgzFe2NnctDwg7q_WcO22WQZ4U8Q1QDPqUkqlKyQqR9fnGpZtMfP5wE2pWjrvbjbrgQNCGI6cqZG90SW0OPcjHX8pyAmtuFA). [[1](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung), [2](https://www.google.com/goto?url=CAESgAEBxCJF1zPMgd_GjchwZAXbcYBwtMG-Izy-yIxHxxqXS9iaJahgHXzocVePrVCQpIIr9ao_YQ1m28BgzFe2NnctDwg7q_WcO22WQZ4U8Q1QDPqUkqlKyQqR9fnGpZtMfP5wE2pWjrvbjbrgQNCGI6cqZG90SW0OPcjHX8pyAmtuFA)]\nWould you like to know more about alternative theories to the Synoptic Problem, or how scholars have reconstructed what might have been inside Q?\nWikipedia\nQ source - Wikipedia\nThe Q source (also called the Sayings Gospel, Q Gospel, Q document(s), or Q; from German: Quelle , meaning \"source\") is a hypothesized written collection of pri...\nThe Bart Ehrman Blog\nThe Q Source Used by Matthew and Luke - The Bart Ehrman Blog\nQ is the hypothetical source that scholars believe was used by Matthew and Luke to supplement the materials they got from Mark (“hypothetical” because it no lon...\nReddit·r/Christianity\nHow would it change your life and the world if Q theory was proved true by ...\nHow would it change your life and the world if Q theory was proved true by new hard evidence? Q (Q source - Wikipedia) is a hypothetical document believed by so...\nCatholic Answers\nSome Thoughts on Q | Catholic Answers Magazine\nDefinition: Q is a hypothetical written source proposed to explain approximately 235 shared verses in Matthew and Luke independent of Mark. Two-Source Hypothesi...\nPBS\nMore About Q And The Gospel Of Thomas | From Jesus To Christ - PBS\nQ stands for \"Quelle,\" the German word for source. Although no actual copy of Q has ever been found, many scholars are convinced that such a document once circu...\nQuora\nWhat is the Q document, and why do some scholars believe it didn't ...\nQ Source Hypothesis: The Q source is a hypothetical document scholars propose was used by Matthew and Luke to explain shared material not found in Mark. However...\nGotQuestions.org\nWhat is the Q gospel? Is there any evidence for the gospel of Q? | GotQuestions.org\nDefinition: The Q gospel (from German quelle, source) is a hypothetical document—a collection of Jesus' sayings akin to the Gospel of Thomas—proposed to explain...\nYouTube·Bart D. Ehrman\n35:02\nAre We Missing a Gospel? Unpacking the Q Source Debate\nYouTube·Bart D. Ehrman\n12m\nIn Search of Q: The Hypothetical Source for Matthew and Luke\nYouTube·Bart D. Ehrman\n4m\nWhat Is In Q? The Sayings Source Behind Matthew and Luke\nYouTube·Religiosity Plus\n15:11\nThe \"Q\" Gospel | Clearly Explained\nYouTube·Dan McClellan\n2:32\nWhat is Q? #maklelan2962",
+   "transcript_raw": "AI Mode Conversation\nYou said: is the q source realis the q source real\nThe Q source (short for Quelle, the German word for \"source\") is hypothetical—no physical copy or manuscript of it has ever been found. [[1](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung), [2](https://www.google.com/goto?url=CAEShwEBxCJF1x1Snb3xjK8LwKg2uZW6gagVi302NH_O0XO1OIKuGWZdkk7k5dhTvIDdIeIW9lCV4eu5Ojf1HgxJMMxJ8ruFmegKJUV83W1NqvmrKkQpm6f4tuwiDd93PgrW1C9fpedPQHrE7lSiWcZSg-1YKtBkYdpILCh0paDnuY7EKTp__S8E0JI)]\nHowever, within biblical scholarship, it is considered a real working theory used to explain a specific literary puzzle in the New Testament. [[1](https://www.google.com/goto?url=CAESegHEIkXXzkBydHcplbqXtQwPE1yedt59lrVTFN8sXPwZ7Qcf3dCzmSUCuLi2MZlqOkVbeCaskF7CTQ7yGrewQmb8BtUN5rhJlcANGmWpAVkKYWMoL7Cu4Hqr-ryXT2FS4rY6GZLVO752uvYC4UCSfM_telwC1XvHprqb), [2](https://www.google.com/goto?url=CAESbAHEIkXXJV84gStL9W03Yd7sL0HQMAAox7p507xZpQnj976r-_FqKE41WbqwJC69VnOZ3iJj2Ya_3AvVV6FmlBOVwXPL1gHYnChjbVIO9-EKGaRjFrKfwP2PWoaczvV2kWXQO_1oeM5yUwdnmg)]\nWhy Scholars Propose the Q Source\n\n* The Synoptic Problem: The Gospels of Matthew, Mark, and Luke (the Synoptic Gospels) share a large amount of overlapping material, often word-for-word in Greek. [[1](https://www.google.com/goto?url=CAESpQEBxCJF1-Wxc5E739NMFU0nlzDmFS1c1t_dejNS6RW8boFcrvc-mmPPl6diMmT3KMGmHsKJIY1Py-5b5-tiD5ojbXZuomTbmFMdSOwG2pZ39A6dlHieczrvhvXliYmtCT63g8UHz_3gJf-ATSWIjdwF_b_l-FOT5DmkQ7lmmsBb6HU2R8JuSYyRh546LbpDNQpp0lj4g9mBoDNdQY2yebNknv03UVM), [2](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k), [3](https://www.google.com/goto?url=CAESdAHEIkXXQXOQcD_MaIy1RUBFBw6CpTFxwWqUJE03COoqj3lAvHFr5W9QqPcFcJXocaEh9ofSdB-l7Jl_Ody1bU2l09ZxcVlFBpWzzBOTv-DK64ZNTfxFA6B4coPNDj1gM8VMJFEZwafCFVjABcYgqeiHcaQM)]\n* The Markan Priority: Most scholars agree that Mark was written first, and both Matthew and Luke used Mark as a baseline for their narratives. [[1](https://www.google.com/goto?url=CAESdAHEIkXXQXOQcD_MaIy1RUBFBw6CpTFxwWqUJE03COoqj3lAvHFr5W9QqPcFcJXocaEh9ofSdB-l7Jl_Ody1bU2l09ZxcVlFBpWzzBOTv-DK64ZNTfxFA6B4coPNDj1gM8VMJFEZwafCFVjABcYgqeiHcaQM), [2](https://www.google.com/goto?url=CAESpQEBxCJF1-Wxc5E739NMFU0nlzDmFS1c1t_dejNS6RW8boFcrvc-mmPPl6diMmT3KMGmHsKJIY1Py-5b5-tiD5ojbXZuomTbmFMdSOwG2pZ39A6dlHieczrvhvXliYmtCT63g8UHz_3gJf-ATSWIjdwF_b_l-FOT5DmkQ7lmmsBb6HU2R8JuSYyRh546LbpDNQpp0lj4g9mBoDNdQY2yebNknv03UVM), [3](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k)]\n* The Extra Material: Matthew and Luke share roughly 235 verses of Jesus’ sayings and parables (such as the Beatitudes and the Lord’s Prayer) that do not appear in Mark. [[1](https://www.google.com/goto?url=CAESgAEBxCJF1zPMgd_GjchwZAXbcYBwtMG-Izy-yIxHxxqXS9iaJahgHXzocVePrVCQpIIr9ao_YQ1m28BgzFe2NnctDwg7q_WcO22WQZ4U8Q1QDPqUkqlKyQqR9fnGpZtMfP5wE2pWjrvbjbrgQNCGI6cqZG90SW0OPcjHX8pyAmtuFA), [2](https://www.google.com/goto?url=CAESbgHEIkXXfFri57YOY6oXGbeM1QNvfQQurgP6jt_n52SwiZnUPl4SXpom_0gcd1ZlJEPm1jt1R4Cz7plD-Gw3bQQ4vk_VvCFaDPLc22nOsKn1NgWUbw7Fi3LSWoEWS6wQjAcIEcWacjLt4HTink_6)]\n* No Direct Copying: Textual analysis suggests Matthew and Luke did not copy from each other for these sections, meaning they likely drew from a shared, independent source—referred to as Q. [[1](https://www.google.com/goto?url=CAESbgHEIkXXfFri57YOY6oXGbeM1QNvfQQurgP6jt_n52SwiZnUPl4SXpom_0gcd1ZlJEPm1jt1R4Cz7plD-Gw3bQQ4vk_VvCFaDPLc22nOsKn1NgWUbw7Fi3LSWoEWS6wQjAcIEcWacjLt4HTink_6), [2](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung), [3](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k)]\n\nThe Evidence and Counter-Arguments\n\n* For Q: The discovery of other ancient \"sayings gospels\"—like the Gospel of Thomas in 1945—proved that standalone collections of Jesus' sayings did circulate in early Christianity. Furthermore, losing ancient texts is common, as a vast majority of ancient literature has not survived. [[1](https://www.google.com/goto?url=CAEShwEBxCJF1x1Snb3xjK8LwKg2uZW6gagVi302NH_O0XO1OIKuGWZdkk7k5dhTvIDdIeIW9lCV4eu5Ojf1HgxJMMxJ8ruFmegKJUV83W1NqvmrKkQpm6f4tuwiDd93PgrW1C9fpedPQHrE7lSiWcZSg-1YKtBkYdpILCh0paDnuY7EKTp__S8E0JI), [2](https://www.google.com/goto?url=CAESbAHEIkXXJV84gStL9W03Yd7sL0HQMAAox7p507xZpQnj976r-_FqKE41WbqwJC69VnOZ3iJj2Ya_3AvVV6FmlBOVwXPL1gHYnChjbVIO9-EKGaRjFrKfwP2PWoaczvV2kWXQO_1oeM5yUwdnmg), [3](https://www.google.com/goto?url=CAESaAHEIkXXUkGBhZvX2mJpGvmJ2bMgtiULVP_WgJea1-sRJwfPhW49n4kjw7DBmxYwtlmk3Q929Jh5kvWDt32b8AWYkZzDRUGXZv25kgZozy_F55WjRg1BQV_IYCxX0-_iot6r4sEL7-0k), [4](https://www.google.com/goto?url=CAESegHEIkXXzkBydHcplbqXtQwPE1yedt59lrVTFN8sXPwZ7Qcf3dCzmSUCuLi2MZlqOkVbeCaskF7CTQ7yGrewQmb8BtUN5rhJlcANGmWpAVkKYWMoL7Cu4Hqr-ryXT2FS4rY6GZLVO752uvYC4UCSfM_telwC1XvHprqb), [5](https://www.google.com/goto?url=CAESbgHEIkXXfFri57YOY6oXGbeM1QNvfQQurgP6jt_n52SwiZnUPl4SXpom_0gcd1ZlJEPm1jt1R4Cz7plD-Gw3bQQ4vk_VvCFaDPLc22nOsKn1NgWUbw7Fi3LSWoEWS6wQjAcIEcWacjLt4HTink_6)]\n* Against Q: Critics (including many traditional or conservative theologians) point out that there is zero physical manuscript evidence, no early church fathers mention Q by name, and alternative models—like the Farrer hypothesis, which suggests Luke copied directly from Matthew—compete with the two-source theory. [[1](https://www.google.com/goto?url=CAES1wEBxCJF13VSwuGSnjmQ_uoDs06vXJEKe1Yj2G8hp3sSLyAISw33xsRa5CGL-Fdl9FZ3uKyh8Aw7jMwWm-MOKezhm5IhWD0Pj94bMDrkVdQm9dSqKg86d1Ox3gh6vao3T7Wc0iqZJjzEmU3XJ0omeCf54o73_RnoHKTsfcrDDLIC8KuuwCW3DCV25ZbkLmuKmqrEl9zK1xPFOIOSotSASnFCVTWR1LlkhHC6akKC-JZem63z7wqSiUx4MWj0F_6hfczxy3Dkfut-HO0e3SpgF1LLBHemAjjQXQ), [2](https://www.google.com/goto?url=CAESZwHEIkXXu-1JZD-lXOE93tn1JVOaBjcKC6XZjzcnRdOqIHjSR4e-JCx_uoeIKwjIJqyhLQ46O1_o0FBiVGuo9Rn9yRN1Di5j7nZX7VtO4_HLGkfavVY4k5u3WDddGi4U4Mqs53RBi5c), [3](https://www.google.com/goto?url=CAESZwHEIkXXM6t7LOnrIhOGS2tYY_o66F_i8DRW14CCBSqfSMlnbW2SmoZLMqOpv-FrSZ8MvFtSBSx9L38fFGvusooayeojToJIMkQmCf51GnEFQMUTzhOjqwTgNd5d0E1w81z4bamWDRw)]\n\nRead more about the academic background on the [Q source Wikipedia page](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung) or explore critiques via [Catholic Answers Magazine](https://www.google.com/goto?url=CAESgAEBxCJF1zPMgd_GjchwZAXbcYBwtMG-Izy-yIxHxxqXS9iaJahgHXzocVePrVCQpIIr9ao_YQ1m28BgzFe2NnctDwg7q_WcO22WQZ4U8Q1QDPqUkqlKyQqR9fnGpZtMfP5wE2pWjrvbjbrgQNCGI6cqZG90SW0OPcjHX8pyAmtuFA). [[1](https://www.google.com/goto?url=CAESYwHEIkXXPq-tW4x75SQn_joTDcySe8u3YX465Dq5f0lBlhKeXNm7_LC4jgS2vNyc07iY1E-LhrlzVrAlC5BVR0ca8_jBrlyc-yJdCWqIlyWjajQpBQGIxDdPUVy-Jg-LTkNung), [2](https://www.google.com/goto?url=CAESgAEBxCJF1zPMgd_GjchwZAXbcYBwtMG-Izy-yIxHxxqXS9iaJahgHXzocVePrVCQpIIr9ao_YQ1m28BgzFe2NnctDwg7q_WcO22WQZ4U8Q1QDPqUkqlKyQqR9fnGpZtMfP5wE2pWjrvbjbrgQNCGI6cqZG90SW0OPcjHX8pyAmtuFA)]\nWould you like to know more about alternative theories to the Synoptic Problem, or how scholars have reconstructed what might have been inside Q?\nWikipedia\nQ source - Wikipedia\nThe Q source (also called the Sayings Gospel, Q Gospel, Q document(s), or Q; from German: Quelle , meaning \"source\") is a hypothesized written collection of pri...\nThe Bart Ehrman Blog\nThe Q Source Used by Matthew and Luke - The Bart Ehrman Blog\nQ is the hypothetical source that scholars believe was used by Matthew and Luke to supplement the materials they got from Mark (“hypothetical” because it no lon...\nReddit·r/Christianity\nHow would it change your life and the world if Q theory was proved true by ...\nHow would it change your life and the world if Q theory was proved true by new hard evidence? Q (Q source - Wikipedia) is a hypothetical document believed by so...\nCatholic Answers\nSome Thoughts on Q | Catholic Answers Magazine\nDefinition: Q is a hypothetical written source proposed to explain approximately 235 shared verses in Matthew and Luke independent of Mark. Two-Source Hypothesi...\nPBS\nMore About Q And The Gospel Of Thomas | From Jesus To Christ - PBS\nQ stands for \"Quelle,\" the German word for source. Although no actual copy of Q has ever been found, many scholars are convinced that such a document once circu...\nQuora\nWhat is the Q document, and why do some scholars believe it didn't ...\nQ Source Hypothesis: The Q source is a hypothetical document scholars propose was used by Matthew and Luke to explain shared material not found in Mark. However...\nGotQuestions.org\nWhat is the Q gospel? Is there any evidence for the gospel of Q? | GotQuestions.org\nDefinition: The Q gospel (from German quelle, source) is a hypothetical document—a collection of Jesus' sayings akin to the Gospel of Thomas—proposed to explain...\nYouTube·Bart D. Ehrman\n35:02\nAre We Missing a Gospel? Unpacking the Q Source Debate\nYouTube·Bart D. Ehrman\n12m\nIn Search of Q: The Hypothetical Source for Matthew and Luke\nYouTube·Bart D. Ehrman\n4m\nWhat Is In Q? The Sayings Source Behind Matthew and Luke\nYouTube·Religiosity Plus\n15:11\nThe \"Q\" Gospel | Clearly Explained\nYouTube·Dan McClellan\n2:32\nWhat is Q? #maklelan2962\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the expanded Overview with its numbered citations and its source cards",
+   "transcript_complete": "complete as supplied",
+   "transcript_read": "READ IN FULL 2026-11-06, against #1741, #1735 and the cards' own titles and snippets",
+   "per": 0.5,
+   "per_corrected": null,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: Ehrman (cards), the institutions, Farrer as a hypothesis. Lost: the reconstruction's makers; the document/model boundary, recorded in the findings.",
+   "availability": null,
+   "per_dim": null,
+   "per_dim_pending": {
+    "since": "2026-11-06",
+    "reason": "no atom set yet for Q as a target; the study of Q will hold what an atom set is built from",
+    "breach": false
+   },
+   "per_dim_v1_0": null,
+   "sf": null,
+   "sf_derived": null,
+   "reading": "The innocent reading first. Asked whether Q is real, the Overview answers that it is hypothetical, with no manuscript, and then gives the case for and against as the field and its popular sources give it. Read against the question, the 'However' moves the answer from the document to the theory: the question asked whether a text existed, and the reply's second sentence answers that a theory is in use.",
+   "analysis": "A yes-or-no question about a text answered with the theory's standing; the boundary between document and model is the loss.",
+   "d": "'IS THE Q SOURCE REAL', SIGNED OUT, 2026-11-06: 'The Q source [...] is hypothetical—no physical copy or manuscript of it has ever been found.' and 'However, within biblical scholarship, it is considered a real working theory used to explain a specific literary puzzle in the New Testament.' Why scholars propose it (the synoptic problem, Markan priority, the 235 verses, 'No Direct Copying'); for Q (Thomas; 'Furthermore, losing ancient texts is common, as a vast majority of ancient literature has not survived.'); against Q ('Critics (including many traditional or conservative theologians) point out that there is zero physical manuscript evidence, no early church fathers mention Q by name', Farrer). Twelve cards.",
+   "d_full": "'IS THE Q SOURCE REAL', SIGNED OUT, 2026-11-06: 'The Q source [...] is hypothetical—no physical copy or manuscript of it has ever been found.' and 'However, within biblical scholarship, it is considered a real working theory used to explain a specific literary puzzle in the New Testament.' Why scholars propose it (the synoptic problem, Markan priority, the 235 verses, 'No Direct Copying'); for Q (Thomas; 'Furthermore, losing ancient texts is common, as a vast majority of ancient literature has not survived.'); against Q ('Critics (including many traditional or conservative theologians) point out that there is zero physical manuscript evidence, no early church fathers mention Q by name', Farrer). Twelve cards.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/is-the-q-source-real-aio-20261106/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#is-the-q-source-real-aio-20261106",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#is-the-q-source-real-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#is-the-q-source-real-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#is-the-q-source-real-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/is-the-q-source-real-aio-20261106/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-65304b20c3ea",
+   "obs_id": "OBS-21cfd13c7115",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-11-06"
+   ],
+   "defects": [],
+   "findings": [
+    "THE QUESTION ANSWERED AT ANOTHER OBJECT. 'is hypothetical—no physical copy or manuscript of it has ever been found.' then 'However, within biblical scholarship, it is considered a real working theory used to explain a specific literary puzzle in the New Testament.' The question is about a document; the 'However' makes the theory real and lets that reality stand beside the document's absence as a counterweight.",
+    "THE EXCLUSION GIVEN AS A FINDING. 'Textual analysis suggests Matthew and Luke did not copy from each other for these sections, meaning they likely drew from a shared, independent source—referred to as Q.' The two-source model rests on excluding Luke's use of Matthew; the composition gives the exclusion as what 'textual analysis suggests' and derives Q from it, while its own 'against' list names Farrer, which affirms the dependence the 'for' list excludes.",
+    "THE BASE RATE AS EVIDENCE. 'Furthermore, losing ancient texts is common, as a vast majority of ancient literature has not survived.' That texts are often lost bears on the possibility of any lost text; it is offered in the 'For Q' column as evidence for this one.",
+    "THE CRITICS LABELLED. 'Critics (including many traditional or conservative theologians) point out that there is zero physical manuscript evidence, no early church fathers mention Q by name' The objection is the absence of the document; the composition attaches it to a theological constituency, and the named critics of the field (Farrer, Goulder, Goodacre) are not so described at the address that names them (farrer-hypothesis-aio-20261106).",
+    "SMALLEST REPAIR. 'No copy of Q exists; it is a scholarly reconstruction inferred from the material Matthew and Luke share, and whether it existed depends on whether Luke knew Matthew, which the Farrer hypothesis affirms.' COUNTERTEST: 'q source evidence' (seated the same day)."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": 1,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1741,
+    1735,
+    851,
+    1404
+   ],
+   "intended": null,
+   "originator": {
+    "name": "New Testament scholarship on the hypothetical source Q",
+    "relation": "external",
+    "entity_type": "topic",
+    "spxi_treatment": "partial",
+    "basis": "Not the archive's: the two-source hypothesis and its critics. The archive's position bears on it through #1735 (the classes of ancestry), #1741 (§6.5, §11.7) and The Feist Source (#851, #1404). Recorded 2026-11-06."
+   },
+   "notes": {
+    "prompts": "The query is the operator's, among those the session listed at 10:31; the run's hour is not in the paste, the date is the paste's receipt (2026-11-06 10:50 EST).",
+    "operator": "with the five pastes (2026-11-06 10:50 EST), no comment beyond the pastes.",
+    "study": "seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow"
+   },
+   "notice": null,
+   "axn_root": "AXN:0C24.CAPTURE",
+   "axn": "AXN:0C24.CAPTURE.🌪️🪜🔍🌺▶️💚",
+   "scope": "external",
+   "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
+  },
+  {
+   "slug": "critical-edition-of-q-aio-20261106",
+   "date": "2026-11-06",
+   "surface": "Google AI Overview",
+   "surface_basis": "Operator default of 2026-10-01; the 'AI Mode Conversation' header is the Overview's expansion (operator rule of 2026-10-18).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Operator defaults of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'CRITICAL EDITION OF Q' ON THE OVERVIEW — A RECONSTRUCTION WITH A CRITICAL GREEK TEXT, TRANSLATIONS, A CONCORDANCE, A TAGGED MODULE AND AN ISBN; CONSENSUS WARRANTED BY REDDIT; A PURCHASE OFFERED",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Machine Reception",
+   "q": "critical edition of q",
+   "q_kind": "a general query on a public entity of New Testament scholarship (the hypothetical source Q), without link; NEW address; seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow.",
+   "cites": 9,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Amazon.com",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Critical Edition of Q (Hermeneia): Hoffmann, Paul, Kloppenborg, John S., Robinson, James M.: 9780800631499: Amazon.com: Books",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 2,
+     "site": "Reddit",
+     "rel": "third_party",
+     "url": null,
+     "title": "Are there any somewhat reliable reconstructions of Q? - Reddit",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 3,
+     "site": "Project MUSE",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Critical Edition of Q - Project MUSE",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 4,
+     "site": "Scribd",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Critical Edition of Q - A Synopsis Including The Gospels of Matthew and Luke, Mark and Thomas - Hermeneia Series | PDF | Exegesis | Bible",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 5,
+     "site": "Fortress Press",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Critical Edition of Q",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 6,
+     "site": "Verbum Catholic Bible Study",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Critical Edition of Q (Hermeneia Supplements)",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 7,
+     "site": "Google",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Sayings of Jesus: The Sayings Gospel Q in English - Paperback",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 8,
+     "site": "Google",
+     "rel": "third_party",
+     "url": null,
+     "title": "Critical Edition of Q",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 9,
+     "site": "Google",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Critical Edition of Q : A Synopsis Including The Gospels of Matthew and Luke, Mark and Thomas with English, German and French Translations of Q",
+     "snip": null,
+     "note": "source card as pasted"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[Google AI Overview at the query, expanded ('AI Mode Conversation' is the expansion's header), signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). Received 2026-11-06 10:50 EST. The numbered citation links are Google redirects, kept in the raw transcript; the source cards listed in the cite list as pasted.]\n\n[QUERENT] critical edition of q\n\n[SYSTEM] [The Critical Edition of Q](https://www.google.com/search?kgmid=%2Fg%2F12bm2ctdf&q=The+Critical+Edition+of+Q) is the standard scholarly reconstruction of the hypothetical Q source (the non-Markan material common to the Gospels of Matthew and Luke). [[1](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ), [2](https://www.google.com/goto?url=CAESXAHEIkXXfJeVv44BlD1VIg-3eKrQ9yBqRVyns4g1fhq3vUNhq34iyo_gVT47vNPkzexJKVoixV5tr3NObaitbpTjZ6ZDZTMWu5B8NFOgwcyWU8LGvs-H2z_bN9s2)]\nKey Details\n\n* Editors & Project: Published in November 2000 by Fortress Press and Peeters Publishers as the first volume of Hermeneia Supplements, it was produced through years of work by the International Q Project, co-edited by James M. Robinson, Paul Hoffmann, and John S. Kloppenborg. [[1](https://www.google.com/goto?url=CAES1wEBxCJF13g69JctkIBiSt_UafckA_XWXoCXo7R9Kkr-ECmJhZJaKvuhQXO5JjIKSztQAkPw-bP3N5p7JC-_o4MKI20QaetoxMeasLs1HjfzQ2Qs8YTVH_mKM-Eah1perLEnnJE5lFgaz9DWk0lkt4GegEWeKNsULvWTbLabgT03x4WZMltOwKYRSIJmhz2sZAwkRgO_BGZEtfcMXLGf-SRCigI-QgHeF0AKtl7nPbi2lNPuK1c5lW_afpT-zBrskSyNU7kzOvx1dZQUXiNTXwtTMEJeGPOt6w), [2](https://www.google.com/goto?url=CAESkAEBxCJF1wcmu8o7e74nFent7jx-Fkoh_nq-HRjL_g1BmLWJisDrnhPbTO8NVtd66sewboZJqYpZooPTFmeyOSbt5j_gemC1mLGj7nljKArW2Gf53gRCLRlliMbUdoIKAUEsQIUas57bKKPLE19ZkQSkaJl7vm19YbN7-ugdz0uIbmJ9pNLHPX-ikiUzoO7L6R0), [3](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ)]\n* Contents: Features a critical Greek text, running text, multi-lingual translations (English, German, and French), parallel passages (Matthew, Luke, Mark, and the Gospel of Thomas), a concordance, and a history of Q research. [[1](https://www.google.com/goto?url=CAESdwHEIkXXpzUyOYPRxhdZYJjSfOEmoIIO0W7BJ5Dris0JNhwaUKszLF-06PDh1kHp3TzrAkEP0MBHrnRCrusfD2oeeKFYu2psFDg900sioCBaIdgO8Xn9c6PeZde-XTpXgY7ePtVmErkWxxH4xydDWZd3sHVCwlmn), [2](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ), [3](https://www.google.com/goto?url=CAES1wEBxCJF13g69JctkIBiSt_UafckA_XWXoCXo7R9Kkr-ECmJhZJaKvuhQXO5JjIKSztQAkPw-bP3N5p7JC-_o4MKI20QaetoxMeasLs1HjfzQ2Qs8YTVH_mKM-Eah1perLEnnJE5lFgaz9DWk0lkt4GegEWeKNsULvWTbLabgT03x4WZMltOwKYRSIJmhz2sZAwkRgO_BGZEtfcMXLGf-SRCigI-QgHeF0AKtl7nPbi2lNPuK1c5lW_afpT-zBrskSyNU7kzOvx1dZQUXiNTXwtTMEJeGPOt6w)]\n* Formats & Editions: Available in print, as a compact English-only companion via Revolution Books Berkeley (`The Sayings of Jesus: The Sayings Gospel Q in English`), and as a searchable, tagged Greek module through software like [Accordance Bible Software](https://www.google.com/goto?url=CAESewHEIkXX7tehxrbyVGzMuYn8Qn7H3i8uL7lv4rhjVu9oAz067_BQt-2C1F2rFGenjaNSTGd-sT8JE9XmxoIkpCsol8sdSZct8fFdhTpHH__By06lEAoU9IqexsqA20ZxCdzKE2blAuZBEj3JTsql0AXZ__52OSEshO0mWA) or [Verbum](https://www.google.com/goto?url=CAESdwHEIkXXpzUyOYPRxhdZYJjSfOEmoIIO0W7BJ5Dris0JNhwaUKszLF-06PDh1kHp3TzrAkEP0MBHrnRCrusfD2oeeKFYu2psFDg900sioCBaIdgO8Xn9c6PeZde-XTpXgY7ePtVmErkWxxH4xydDWZd3sHVCwlmn). [[1](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:9176331711808434710,catalogid:13614527208852295105,gpcid:2169149276561453807,mid:576460832432193273&ibp=oshop), [2](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:4447253652653623479&ibp=oshop), [3](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:6894707766139767797,catalogid:10484432989801039920,gpcid:9280041513385079018,mid:576460832400336269&ibp=oshop), [4](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ)]\n* Scholarly Consensus: Most users on [Reddit](https://www.google.com/goto?url=CAESpwEBxCJF12IPj2I_og0Q-WnwMDbfbbClZesbdIj9aajbYKVSUpPLHsM6Pa_SSMsCg-dpfal8bxchAQHV2HUdeZ6-UmeHfGVkdL3-GiOaoZpy0XuLdh85Dvq60yYmksvaKfM9o0-I4DNrSq682BbGxiyLX8cXRwkOTyhfkxeZtopSdzjuVhyRy-CP1ge9PsnIgAitQ8wYcV-g37R4Rh74AnJeSmRacyU7GQ) agree that The Critical Edition of Q serves as the most widely accepted and reliable reconstruction for academic study of the sayings gospel. [[1](https://www.google.com/goto?url=CAESpwEBxCJF12IPj2I_og0Q-WnwMDbfbbClZesbdIj9aajbYKVSUpPLHsM6Pa_SSMsCg-dpfal8bxchAQHV2HUdeZ6-UmeHfGVkdL3-GiOaoZpy0XuLdh85Dvq60yYmksvaKfM9o0-I4DNrSq682BbGxiyLX8cXRwkOTyhfkxeZtopSdzjuVhyRy-CP1ge9PsnIgAitQ8wYcV-g37R4Rh74AnJeSmRacyU7GQ), [2](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:4447253652653623479&ibp=oshop)]\n\nAre you looking for a specific passage or saying from Q, or do you need help finding a digital or print copy to purchase?\nAmazon.com\nThe Critical Edition of Q (Hermeneia): Hoffmann, Paul, Kloppenborg, John S., Robinson, James M.: 9780800631499: Amazon.com: Books\nPublication: The Critical Edition of Q (Hermeneia), Part of Hermeneia Supplements; ISBN-13: 978-0800631499; Publisher: Fortress Press and Peeters Publishers; Pu...\nReddit\nAre there any somewhat reliable reconstructions of Q? - Reddit\nQ Reconstructions: Several scholarly reconstructions of Q are available, including works by James M. Robinson, John S. Kloppenborg, and Burton Mack, with promin...\nProject MUSE\nThe Critical Edition of Q - Project MUSE\nThe Critical Edition of Q Book By Paul Hoffmann and John S. Kloppenborg 2016 Published by: Augsburg Fortress Publishers Series: Hermeneia: A Critical and Histor...\nScribd\nThe Critical Edition of Q - A Synopsis Including The Gospels of Matthew and Luke, Mark and Thomas - Hermeneia Series | PDF | Exegesis | Bible\nCritical Edition of Q: A synopsis of Matthew, Luke, Mark, and Thomas featuring English, German, and French translations of Q and Thomas. Edited by James M. Robi...\nFortress Press\nThe Critical Edition of Q\nA major new resource on the text and traditions of the Sayings Gospel. The Q material consists mainly of sayings of Jesus, but begins with some sayings of John ...\nVerbum Catholic Bible Study\nThe Critical Edition of Q (Hermeneia Supplements)\nOverview The existence of Q (simply defined as the non-Markan material common to Matthew and Luke) as a document in the earliest churches was first hypothesized...\nGoogle\nThe Sayings of Jesus: The Sayings Gospel Q in English - Paperback\nAbout the Book Taking the English text from the International Q Project's authoritative \"The Critical Edition of Q\", this compact volume presents the Sayings Go...\nGoogle\nCritical Edition of Q\nThe Critical Edition of Q, as a searchable Greek text. For the first time ever, scholars can perform complex lexical, morphological and grammatical searches of ...\nGoogle\nThe Critical Edition of Q : A Synopsis Including The Gospels of Matthew and Luke, Mark and Thomas with English, German and French Translations of Q\nThe existence of Q (simply defined as the non-Markan material common to Matthew and Luke) as a document in the earliest churches was first hypothesized by C. H.",
+   "transcript_raw": "AI Mode Conversation\nYou said: critical edition of qcritical edition of q\n[The Critical Edition of Q](https://www.google.com/search?kgmid=%2Fg%2F12bm2ctdf&q=The+Critical+Edition+of+Q) is the standard scholarly reconstruction of the hypothetical Q source (the non-Markan material common to the Gospels of Matthew and Luke). [[1](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ), [2](https://www.google.com/goto?url=CAESXAHEIkXXfJeVv44BlD1VIg-3eKrQ9yBqRVyns4g1fhq3vUNhq34iyo_gVT47vNPkzexJKVoixV5tr3NObaitbpTjZ6ZDZTMWu5B8NFOgwcyWU8LGvs-H2z_bN9s2)]\nKey Details\n\n* Editors & Project: Published in November 2000 by Fortress Press and Peeters Publishers as the first volume of Hermeneia Supplements, it was produced through years of work by the International Q Project, co-edited by James M. Robinson, Paul Hoffmann, and John S. Kloppenborg. [[1](https://www.google.com/goto?url=CAES1wEBxCJF13g69JctkIBiSt_UafckA_XWXoCXo7R9Kkr-ECmJhZJaKvuhQXO5JjIKSztQAkPw-bP3N5p7JC-_o4MKI20QaetoxMeasLs1HjfzQ2Qs8YTVH_mKM-Eah1perLEnnJE5lFgaz9DWk0lkt4GegEWeKNsULvWTbLabgT03x4WZMltOwKYRSIJmhz2sZAwkRgO_BGZEtfcMXLGf-SRCigI-QgHeF0AKtl7nPbi2lNPuK1c5lW_afpT-zBrskSyNU7kzOvx1dZQUXiNTXwtTMEJeGPOt6w), [2](https://www.google.com/goto?url=CAESkAEBxCJF1wcmu8o7e74nFent7jx-Fkoh_nq-HRjL_g1BmLWJisDrnhPbTO8NVtd66sewboZJqYpZooPTFmeyOSbt5j_gemC1mLGj7nljKArW2Gf53gRCLRlliMbUdoIKAUEsQIUas57bKKPLE19ZkQSkaJl7vm19YbN7-ugdz0uIbmJ9pNLHPX-ikiUzoO7L6R0), [3](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ)]\n* Contents: Features a critical Greek text, running text, multi-lingual translations (English, German, and French), parallel passages (Matthew, Luke, Mark, and the Gospel of Thomas), a concordance, and a history of Q research. [[1](https://www.google.com/goto?url=CAESdwHEIkXXpzUyOYPRxhdZYJjSfOEmoIIO0W7BJ5Dris0JNhwaUKszLF-06PDh1kHp3TzrAkEP0MBHrnRCrusfD2oeeKFYu2psFDg900sioCBaIdgO8Xn9c6PeZde-XTpXgY7ePtVmErkWxxH4xydDWZd3sHVCwlmn), [2](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ), [3](https://www.google.com/goto?url=CAES1wEBxCJF13g69JctkIBiSt_UafckA_XWXoCXo7R9Kkr-ECmJhZJaKvuhQXO5JjIKSztQAkPw-bP3N5p7JC-_o4MKI20QaetoxMeasLs1HjfzQ2Qs8YTVH_mKM-Eah1perLEnnJE5lFgaz9DWk0lkt4GegEWeKNsULvWTbLabgT03x4WZMltOwKYRSIJmhz2sZAwkRgO_BGZEtfcMXLGf-SRCigI-QgHeF0AKtl7nPbi2lNPuK1c5lW_afpT-zBrskSyNU7kzOvx1dZQUXiNTXwtTMEJeGPOt6w)]\n* Formats & Editions: Available in print, as a compact English-only companion via Revolution Books Berkeley (`The Sayings of Jesus: The Sayings Gospel Q in English`), and as a searchable, tagged Greek module through software like [Accordance Bible Software](https://www.google.com/goto?url=CAESewHEIkXX7tehxrbyVGzMuYn8Qn7H3i8uL7lv4rhjVu9oAz067_BQt-2C1F2rFGenjaNSTGd-sT8JE9XmxoIkpCsol8sdSZct8fFdhTpHH__By06lEAoU9IqexsqA20ZxCdzKE2blAuZBEj3JTsql0AXZ__52OSEshO0mWA) or [Verbum](https://www.google.com/goto?url=CAESdwHEIkXXpzUyOYPRxhdZYJjSfOEmoIIO0W7BJ5Dris0JNhwaUKszLF-06PDh1kHp3TzrAkEP0MBHrnRCrusfD2oeeKFYu2psFDg900sioCBaIdgO8Xn9c6PeZde-XTpXgY7ePtVmErkWxxH4xydDWZd3sHVCwlmn). [[1](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:9176331711808434710,catalogid:13614527208852295105,gpcid:2169149276561453807,mid:576460832432193273&ibp=oshop), [2](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:4447253652653623479&ibp=oshop), [3](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:6894707766139767797,catalogid:10484432989801039920,gpcid:9280041513385079018,mid:576460832400336269&ibp=oshop), [4](https://www.google.com/goto?url=CAESkgEBxCJF1-80VJSsAAHtM63j2MQVcKpvfg7OuaeB1-4_95miUIIuPsu062Vzxpq-stpCb88mizB7JmCvkwto4kgDhnkwKTT-ZtAAOBuhqo9ToQAmQTn_wDgtbxDTBpbXE3nvNJNLT8CRaTVHBIQiP7eojNMhTsXdK9J0jsRHbSEUqXrFdOiicKeEZTIYbfHb7CbZNQ)]\n* Scholarly Consensus: Most users on [Reddit](https://www.google.com/goto?url=CAESpwEBxCJF12IPj2I_og0Q-WnwMDbfbbClZesbdIj9aajbYKVSUpPLHsM6Pa_SSMsCg-dpfal8bxchAQHV2HUdeZ6-UmeHfGVkdL3-GiOaoZpy0XuLdh85Dvq60yYmksvaKfM9o0-I4DNrSq682BbGxiyLX8cXRwkOTyhfkxeZtopSdzjuVhyRy-CP1ge9PsnIgAitQ8wYcV-g37R4Rh74AnJeSmRacyU7GQ) agree that The Critical Edition of Q serves as the most widely accepted and reliable reconstruction for academic study of the sayings gospel. [[1](https://www.google.com/goto?url=CAESpwEBxCJF12IPj2I_og0Q-WnwMDbfbbClZesbdIj9aajbYKVSUpPLHsM6Pa_SSMsCg-dpfal8bxchAQHV2HUdeZ6-UmeHfGVkdL3-GiOaoZpy0XuLdh85Dvq60yYmksvaKfM9o0-I4DNrSq682BbGxiyLX8cXRwkOTyhfkxeZtopSdzjuVhyRy-CP1ge9PsnIgAitQ8wYcV-g37R4Rh74AnJeSmRacyU7GQ), [2](https://www.google.com/search?q=product&prds=pvt:hg,pvo:29,productid:4447253652653623479&ibp=oshop)]\n\nAre you looking for a specific passage or saying from Q, or do you need help finding a digital or print copy to purchase?\nAmazon.com\nThe Critical Edition of Q (Hermeneia): Hoffmann, Paul, Kloppenborg, John S., Robinson, James M.: 9780800631499: Amazon.com: Books\nPublication: The Critical Edition of Q (Hermeneia), Part of Hermeneia Supplements; ISBN-13: 978-0800631499; Publisher: Fortress Press and Peeters Publishers; Pu...\nReddit\nAre there any somewhat reliable reconstructions of Q? - Reddit\nQ Reconstructions: Several scholarly reconstructions of Q are available, including works by James M. Robinson, John S. Kloppenborg, and Burton Mack, with promin...\nProject MUSE\nThe Critical Edition of Q - Project MUSE\nThe Critical Edition of Q Book By Paul Hoffmann and John S. Kloppenborg 2016 Published by: Augsburg Fortress Publishers Series: Hermeneia: A Critical and Histor...\nScribd\nThe Critical Edition of Q - A Synopsis Including The Gospels of Matthew and Luke, Mark and Thomas - Hermeneia Series | PDF | Exegesis | Bible\nCritical Edition of Q: A synopsis of Matthew, Luke, Mark, and Thomas featuring English, German, and French translations of Q and Thomas. Edited by James M. Robi...\nFortress Press\nThe Critical Edition of Q\nA major new resource on the text and traditions of the Sayings Gospel. The Q material consists mainly of sayings of Jesus, but begins with some sayings of John ...\nVerbum Catholic Bible Study\nThe Critical Edition of Q (Hermeneia Supplements)\nOverview The existence of Q (simply defined as the non-Markan material common to Matthew and Luke) as a document in the earliest churches was first hypothesized...\nGoogle\nThe Sayings of Jesus: The Sayings Gospel Q in English - Paperback\nAbout the Book Taking the English text from the International Q Project's authoritative \"The Critical Edition of Q\", this compact volume presents the Sayings Go...\nGoogle\nCritical Edition of Q\nThe Critical Edition of Q, as a searchable Greek text. For the first time ever, scholars can perform complex lexical, morphological and grammatical searches of ...\nGoogle\nThe Critical Edition of Q : A Synopsis Including The Gospels of Matthew and Luke, Mark and Thomas with English, German and French Translations of Q\nThe existence of Q (simply defined as the non-Markan material common to Matthew and Luke) as a document in the earliest churches was first hypothesized by C. H.\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the expanded Overview with its numbered citations and its source cards",
+   "transcript_complete": "complete as supplied",
+   "transcript_read": "READ IN FULL 2026-11-06, against #1741, #1735 and the cards' own titles and snippets",
+   "per": 0.25,
+   "per_corrected": null,
+   "per_v": {
+    "author": true,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the three editors (author true in the body), the project, the publishers, the ISBN on the Amazon card. Lost: the evidentiary class of the edited text, recorded in the findings.",
+   "availability": null,
+   "per_dim": null,
+   "per_dim_pending": {
+    "since": "2026-11-06",
+    "reason": "no atom set yet for Q as a target; the study of Q will hold what an atom set is built from",
+    "breach": false
+   },
+   "per_dim_v1_0": null,
+   "sf": null,
+   "sf_derived": null,
+   "reading": "The innocent reading first. Asked for the critical edition, the Overview describes the book accurately: its editors, its project, its publisher, its contents, its formats. It names its object as 'the hypothetical Q source' in the first sentence. Read against the archive's classes, the composition shows a reconstructed antecedent carrying every instrument of an extant text: a critical Greek text, an apparatus's parallels, translations, a concordance, a searchable morphological module; the one thing a critical edition ordinarily edits, its manuscripts, is the one thing the description does not mention.",
+   "analysis": "A modern reconstruction composed at the grain of its publisher's description: editors named, the reconstructed text given the full apparatus of an edition. The loss is the class of the object the apparatus serves.",
+   "d": "'CRITICAL EDITION OF Q', SIGNED OUT, 2026-11-06: 'The Critical Edition of Q is the standard scholarly reconstruction of the hypothetical Q source (the non-Markan material common to the Gospels of Matthew and Luke).' Editors (Robinson, Hoffmann, Kloppenborg; the International Q Project; Hermeneia Supplements, 2000); contents ('Features a critical Greek text, running text, multi-lingual translations (English, German, and French), parallel passages (Matthew, Luke, Mark, and the Gospel of Thomas), a concordance, and a history of Q research.'); formats (print, an English companion, 'as a searchable, tagged Greek module'); 'Scholarly Consensus: Most users on Reddit agree'. Nine cards, four of them shops.",
+   "d_full": "'CRITICAL EDITION OF Q', SIGNED OUT, 2026-11-06: 'The Critical Edition of Q is the standard scholarly reconstruction of the hypothetical Q source (the non-Markan material common to the Gospels of Matthew and Luke).' Editors (Robinson, Hoffmann, Kloppenborg; the International Q Project; Hermeneia Supplements, 2000); contents ('Features a critical Greek text, running text, multi-lingual translations (English, German, and French), parallel passages (Matthew, Luke, Mark, and the Gospel of Thomas), a concordance, and a history of Q research.'); formats (print, an English companion, 'as a searchable, tagged Greek module'); 'Scholarly Consensus: Most users on Reddit agree'. Nine cards, four of them shops.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/critical-edition-of-q-aio-20261106/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#critical-edition-of-q-aio-20261106",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#critical-edition-of-q-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#critical-edition-of-q-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#critical-edition-of-q-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/critical-edition-of-q-aio-20261106/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-aafbd4eb8aa9",
+   "obs_id": "OBS-d99b1ada78d0",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-11-06"
+   ],
+   "defects": [],
+   "findings": [
+    "THE INSTRUMENTS OF A TEXT ON A HYPOTHESIS. 'Features a critical Greek text, running text, multi-lingual translations (English, German, and French), parallel passages (Matthew, Luke, Mark, and the Gospel of Thomas), a concordance, and a history of Q research.' A critical edition establishes a text from its witnesses; here the witnesses are Matthew and Luke, and the edited text is the hypothesis's content. The composition reports the apparatus and is silent on what it is an apparatus of.",
+    "THE SEARCHABLE HYPOTHESIS. The card for the software module: 'For the first time ever, scholars can perform complex lexical, morphological and grammatical searches of' the reconstruction. Morphological search runs over a modern reconstruction's Greek as over a manuscript tradition's.",
+    "CONSENSUS FROM A FORUM. 'Most users on Reddit agree that The Critical Edition of Q serves as the most widely accepted and reliable reconstruction'. The composition's warrant for scholarly standing is a forum thread.",
+    "THE PURCHASE. The composition closes 'or do you need help finding a digital or print copy to purchase?', and four of its citations are shopping results. The hypothetical text is offered as a product in three formats.",
+    "WHAT IS ACCURATE. The editors, the project, the publishers, the date and the contents are the book's; 'hypothetical' is in the first sentence.",
+    "SMALLEST REPAIR. 'The Critical Edition of Q (2000) reconstructs a Greek text of the hypothetical source Q from Matthew and Luke; no manuscript of Q exists, so its readings are editorial decisions about the two gospels.' COUNTERTEST: 'q source evidence'."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": 1,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1741,
+    1735,
+    851,
+    1404
+   ],
+   "intended": null,
+   "originator": {
+    "name": "New Testament scholarship on the hypothetical source Q",
+    "relation": "external",
+    "entity_type": "topic",
+    "spxi_treatment": "partial",
+    "basis": "Not the archive's: the two-source hypothesis and its critics. The archive's position bears on it through #1735 (the classes of ancestry), #1741 (§6.5, §11.7) and The Feist Source (#851, #1404). Recorded 2026-11-06."
+   },
+   "notes": {
+    "prompts": "The query is the operator's, among those the session listed at 10:31; the run's hour is not in the paste, the date is the paste's receipt (2026-11-06 10:50 EST).",
+    "operator": "with the five pastes (2026-11-06 10:50 EST), no comment beyond the pastes.",
+    "study": "seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow"
+   },
+   "notice": null,
+   "axn_root": "AXN:0C22.CAPTURE",
+   "axn": "AXN:0C22.CAPTURE.🌔🕗🤲🧊🌸⛵",
+   "scope": "external",
+   "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
+  },
+  {
+   "slug": "farrer-hypothesis-aio-20261106",
+   "date": "2026-11-06",
+   "surface": "Google AI Overview",
+   "surface_basis": "Operator default of 2026-10-01; the 'AI Mode Conversation' header is the Overview's expansion (operator rule of 2026-10-18).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Operator defaults of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'FARRER HYPOTHESIS' ON THE OVERVIEW — THE EXTANT-TEXT ARGUMENT STATED AT ITS GRAIN, ITS PROPONENTS NAMED; ITS STANDING GIVEN AS 'MINORITY' FROM A FORUM",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Machine Reception",
+   "q": "farrer hypothesis",
+   "q_kind": "a general query on a public entity of New Testament scholarship (the hypothetical source Q), without link; NEW address; seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow.",
+   "cites": 5,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Wikipedia",
+     "rel": "third_party",
+     "url": null,
+     "title": "Farrer hypothesis - Wikipedia",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 2,
+     "site": "Alan Garrow",
+     "rel": "third_party",
+     "url": null,
+     "title": "Alan Garrow's Blog",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 3,
+     "site": "Reddit·r/AcademicBiblical",
+     "rel": "third_party",
+     "url": null,
+     "title": "Farrer Hypothesis : r/AcademicBiblical - Reddit",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 4,
+     "site": "YouTube·Ben - The Amateur Exegete",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Synoptic Problem: The Farrer Hypothesis",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 5,
+     "site": "YouTube·History Valley",
+     "rel": "third_party",
+     "url": null,
+     "title": "Solving The Synoptic Problem Without Q With Professor Mark Goodacre",
+     "snip": null,
+     "note": "source card as pasted"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[Google AI Overview at the query, expanded ('AI Mode Conversation' is the expansion's header), signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). Received 2026-11-06 10:50 EST. The numbered citation links are Google redirects, kept in the raw transcript; the source cards listed in the cite list as pasted.]\n\n[QUERENT] farrer hypothesis\n\n[SYSTEM] The Farrer hypothesis is a proposed solution to the [synoptic problem](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg) in biblical studies that eliminates the need for the hypothetical \"Q\" document. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\nCore Literary Sequence\nThe theory proposes the following order of composition:\n\n1. Gospel of Mark was written first.\n2. Gospel of Matthew was written second, using Mark as a primary source.\n3. Gospel of Luke was written third, using both Mark and Matthew as sources. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n\nKey Details and Origin\n\n* Originator: Proposed in 1955 by English biblical scholar Austin Farrer in his essay \"On Dispensing with Q\". [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n* Proponents: Developed and championed by later scholars including Michael Goulder and Mark Goodacre. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n* Alternative Names: Also known as the Farrer–Goulder hypothesis or the Farrer–Goulder–Goodacre hypothesis. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n* Major Contrast: It stands as a direct alternative to the dominant Two-Source Hypothesis (which posits that Matthew and Luke independently used Mark and a lost collection of sayings known as Q). [[1](https://www.google.com/goto?url=CAESbQHEIkXX4fjlksd-QbcEG91A9W9ZTgbuSf-qaUW6QhTpHUbOleX8-96DA-fODc2S-HQSJk1KoZ92_Cw-JZCGQwV9srj2M48cAP0cXR5d7TC2aHvLFHGJXtsf5bNNBGHkkIti-ZjJbedWMdGrMNs), [2](https://www.google.com/goto?url=CAESigEBxCJF1zcUui1rDNS_qyEHw69R6w2wU4fnZS5ovSsuK-Sg0NovhEUoeWNdCTuPEBNk_5ua6GpRq4Ou6Y2nqmEHGQLkpMXY5tgT1QeLgO09JfRVwFV08hOby1YPtyioCuX26LDa-1f4RhJx14Sg7axw2RkgkJKd0LgzttwyMqMcZTUeH-U60hyinXY)]\n\nArguments For and Against\n\n* Arguments For: Advocates point out that it simplifies literary history by relying only on existing, canonical gospels rather than postulating a lost document (Q). It also provides a straightforward explanation for the \"double tradition\" (material shared by Matthew and Luke but absent in Mark), suggesting Luke simply integrated and adapted Matthew's material alongside Mark. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg), [2](https://www.google.com/goto?url=CAESbQHEIkXX4fjlksd-QbcEG91A9W9ZTgbuSf-qaUW6QhTpHUbOleX8-96DA-fODc2S-HQSJk1KoZ92_Cw-JZCGQwV9srj2M48cAP0cXR5d7TC2aHvLFHGJXtsf5bNNBGHkkIti-ZjJbedWMdGrMNs)]\n* Arguments Against: Critics argue that the theory requires Luke to systematically dismantle, rearrange, and recontextualize Matthew's well-organized discourses (such as breaking up the Sermon on the Mount) in ways that seem complex or counterintuitive for an ancient author. As discussed on [Reddit's AcademicBiblical community](https://www.google.com/goto?url=CAESigEBxCJF1zcUui1rDNS_qyEHw69R6w2wU4fnZS5ovSsuK-Sg0NovhEUoeWNdCTuPEBNk_5ua6GpRq4Ou6Y2nqmEHGQLkpMXY5tgT1QeLgO09JfRVwFV08hOby1YPtyioCuX26LDa-1f4RhJx14Sg7axw2RkgkJKd0LgzttwyMqMcZTUeH-U60hyinXY), it remains a notable minority view rather than the majority consensus in mainstream New Testament scholarship. [[1](https://www.google.com/goto?url=CAESgAEBxCJF1yJ5diTEyX1XHF68-HWPp3o63EsB9tOaWvMQJ0YRqXRa7Fdb7vBWj02mCUC34-P65O0c25MpE_tQ90lOw3PD5kcxROkh_oB2aveFywSLBPDPifq_9nlH1E771QSFI6-8zArnK1p9iECxA_GJJtb-nVo-3VwvSf1oUfaH6Q), [2](https://www.google.com/goto?url=CAESbQHEIkXX2TyyQ-7qWLhaeOFNJKBPdjJujMddMeha-_U8vuhKuF8YHOcwes71UBrX4r3JBNBLQNM1VJqn2iXlJFosVwpp_0TFVU1nnGBN4842OWfVVaPECAB_tB9Aj-YYMsa0jO6WSHeu6yG1EV0), [3](https://www.google.com/goto?url=CAESigEBxCJF1zcUui1rDNS_qyEHw69R6w2wU4fnZS5ovSsuK-Sg0NovhEUoeWNdCTuPEBNk_5ua6GpRq4Ou6Y2nqmEHGQLkpMXY5tgT1QeLgO09JfRVwFV08hOby1YPtyioCuX26LDa-1f4RhJx14Sg7axw2RkgkJKd0LgzttwyMqMcZTUeH-U60hyinXY)]\n\nWould you like to explore how the Farrer hypothesis compares specifically to the Two-Source Hypothesis or look into how it handles the Sermon on the Mount?\nWikipedia\nFarrer hypothesis - Wikipedia\n· The Farrer hypothesis (also called the L/M hypothesis, the Farrer–Goulder hypothesis and the Farrer–Goulder–Goodacre hypothesis) is a possible solution to the...\nAlan Garrow\nAlan Garrow's Blog\nThe primary objection to the Farrer Hypothesis (FH)—that Luke used Matthew—is that it requires Luke to dismantle Matthew's renowned Sermon on the Mount into the...\nReddit·r/AcademicBiblical\nFarrer Hypothesis : r/AcademicBiblical - Reddit\nFarrer Hypothesis Standing: The Farrer Hypothesis is a significant minority view in mainstream New Testament scholarship, positing Markan priority, Matthew's us...\nYouTube·Ben - The Amateur Exegete\n3m\nThe Synoptic Problem: The Farrer Hypothesis\nYouTube·History Valley\n4m\nSolving The Synoptic Problem Without Q With Professor Mark Goodacre",
+   "transcript_raw": "AI Mode Conversation\nYou said: farrer hypothesisfarrer hypothesis\nThe Farrer hypothesis is a proposed solution to the [synoptic problem](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg) in biblical studies that eliminates the need for the hypothetical \"Q\" document. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\nCore Literary Sequence\nThe theory proposes the following order of composition:\n\n1. Gospel of Mark was written first.\n2. Gospel of Matthew was written second, using Mark as a primary source.\n3. Gospel of Luke was written third, using both Mark and Matthew as sources. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n\nKey Details and Origin\n\n* Originator: Proposed in 1955 by English biblical scholar Austin Farrer in his essay \"On Dispensing with Q\". [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n* Proponents: Developed and championed by later scholars including Michael Goulder and Mark Goodacre. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n* Alternative Names: Also known as the Farrer–Goulder hypothesis or the Farrer–Goulder–Goodacre hypothesis. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg)]\n* Major Contrast: It stands as a direct alternative to the dominant Two-Source Hypothesis (which posits that Matthew and Luke independently used Mark and a lost collection of sayings known as Q). [[1](https://www.google.com/goto?url=CAESbQHEIkXX4fjlksd-QbcEG91A9W9ZTgbuSf-qaUW6QhTpHUbOleX8-96DA-fODc2S-HQSJk1KoZ92_Cw-JZCGQwV9srj2M48cAP0cXR5d7TC2aHvLFHGJXtsf5bNNBGHkkIti-ZjJbedWMdGrMNs), [2](https://www.google.com/goto?url=CAESigEBxCJF1zcUui1rDNS_qyEHw69R6w2wU4fnZS5ovSsuK-Sg0NovhEUoeWNdCTuPEBNk_5ua6GpRq4Ou6Y2nqmEHGQLkpMXY5tgT1QeLgO09JfRVwFV08hOby1YPtyioCuX26LDa-1f4RhJx14Sg7axw2RkgkJKd0LgzttwyMqMcZTUeH-U60hyinXY)]\n\nArguments For and Against\n\n* Arguments For: Advocates point out that it simplifies literary history by relying only on existing, canonical gospels rather than postulating a lost document (Q). It also provides a straightforward explanation for the \"double tradition\" (material shared by Matthew and Luke but absent in Mark), suggesting Luke simply integrated and adapted Matthew's material alongside Mark. [[1](https://www.google.com/goto?url=CAESbAHEIkXXmTGPkfvDlHEO1eoiKqEno3AV_JhHgXiSe6w7u8aurltvB7t3v2d_Ib5GWoqoEpL_LQ3xoOX66bMaoNIJP5fhPR9OM_2MDs-qAd09n2BwZZUq3ZVphE8oUYJP-FG9T8AZKoXx0JsvTg), [2](https://www.google.com/goto?url=CAESbQHEIkXX4fjlksd-QbcEG91A9W9ZTgbuSf-qaUW6QhTpHUbOleX8-96DA-fODc2S-HQSJk1KoZ92_Cw-JZCGQwV9srj2M48cAP0cXR5d7TC2aHvLFHGJXtsf5bNNBGHkkIti-ZjJbedWMdGrMNs)]\n* Arguments Against: Critics argue that the theory requires Luke to systematically dismantle, rearrange, and recontextualize Matthew's well-organized discourses (such as breaking up the Sermon on the Mount) in ways that seem complex or counterintuitive for an ancient author. As discussed on [Reddit's AcademicBiblical community](https://www.google.com/goto?url=CAESigEBxCJF1zcUui1rDNS_qyEHw69R6w2wU4fnZS5ovSsuK-Sg0NovhEUoeWNdCTuPEBNk_5ua6GpRq4Ou6Y2nqmEHGQLkpMXY5tgT1QeLgO09JfRVwFV08hOby1YPtyioCuX26LDa-1f4RhJx14Sg7axw2RkgkJKd0LgzttwyMqMcZTUeH-U60hyinXY), it remains a notable minority view rather than the majority consensus in mainstream New Testament scholarship. [[1](https://www.google.com/goto?url=CAESgAEBxCJF1yJ5diTEyX1XHF68-HWPp3o63EsB9tOaWvMQJ0YRqXRa7Fdb7vBWj02mCUC34-P65O0c25MpE_tQ90lOw3PD5kcxROkh_oB2aveFywSLBPDPifq_9nlH1E771QSFI6-8zArnK1p9iECxA_GJJtb-nVo-3VwvSf1oUfaH6Q), [2](https://www.google.com/goto?url=CAESbQHEIkXX2TyyQ-7qWLhaeOFNJKBPdjJujMddMeha-_U8vuhKuF8YHOcwes71UBrX4r3JBNBLQNM1VJqn2iXlJFosVwpp_0TFVU1nnGBN4842OWfVVaPECAB_tB9Aj-YYMsa0jO6WSHeu6yG1EV0), [3](https://www.google.com/goto?url=CAESigEBxCJF1zcUui1rDNS_qyEHw69R6w2wU4fnZS5ovSsuK-Sg0NovhEUoeWNdCTuPEBNk_5ua6GpRq4Ou6Y2nqmEHGQLkpMXY5tgT1QeLgO09JfRVwFV08hOby1YPtyioCuX26LDa-1f4RhJx14Sg7axw2RkgkJKd0LgzttwyMqMcZTUeH-U60hyinXY)]\n\nWould you like to explore how the Farrer hypothesis compares specifically to the Two-Source Hypothesis or look into how it handles the Sermon on the Mount?\nWikipedia\nFarrer hypothesis - Wikipedia\n· The Farrer hypothesis (also called the L/M hypothesis, the Farrer–Goulder hypothesis and the Farrer–Goulder–Goodacre hypothesis) is a possible solution to the...\nAlan Garrow\nAlan Garrow's Blog\nThe primary objection to the Farrer Hypothesis (FH)—that Luke used Matthew—is that it requires Luke to dismantle Matthew's renowned Sermon on the Mount into the...\nReddit·r/AcademicBiblical\nFarrer Hypothesis : r/AcademicBiblical - Reddit\nFarrer Hypothesis Standing: The Farrer Hypothesis is a significant minority view in mainstream New Testament scholarship, positing Markan priority, Matthew's us...\nYouTube·Ben - The Amateur Exegete\n3m\nThe Synoptic Problem: The Farrer Hypothesis\nYouTube·History Valley\n4m\nSolving The Synoptic Problem Without Q With Professor Mark Goodacre\n",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the expanded Overview with its numbered citations and its source cards",
+   "transcript_complete": "complete as supplied",
+   "transcript_read": "READ IN FULL 2026-11-06, against #1741, #1735 and the cards' own titles and snippets",
+   "per": 0.25,
+   "per_corrected": null,
+   "per_v": {
+    "author": true,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: Farrer, Goulder, Goodacre (author true in the body), the essay's title. Lost: no boundary.",
+   "availability": null,
+   "per_dim": null,
+   "per_dim_pending": {
+    "since": "2026-11-06",
+    "reason": "no atom set yet for Q as a target; the study of Q will hold what an atom set is built from",
+    "breach": false
+   },
+   "per_dim_v1_0": null,
+   "sf": null,
+   "sf_derived": null,
+   "reading": "The innocent reading first, and it largely holds. At the alternative's name the Overview gives it at its own grain: its sequence, its originator and essay, its proponents by name, and its central argument in the archive's own terms, an account from extant texts that needs no lost one. It is the control against the Q addresses: the asymmetry the study names is stated plainly here, as the advocates' argument.",
+   "analysis": "An alternative hypothesis composed at its grain with its proponents named; the control for the Q addresses.",
+   "d": "'FARRER HYPOTHESIS', SIGNED OUT, 2026-11-06: the hypothesis 'eliminates the need for the hypothetical \"Q\" document'; the sequence Mark, Matthew, Luke; 'Proposed in 1955 by English biblical scholar Austin Farrer in his essay \"On Dispensing with Q\".'; Goulder and Goodacre; for ('Advocates point out that it simplifies literary history by relying only on existing, canonical gospels rather than postulating a lost document (Q).') and against (Luke's dismantling of Matthew's discourses), and 'As discussed on Reddit's AcademicBiblical community, it remains a notable minority view rather than the majority consensus in mainstream New Testament scholarship.' Five cards.",
+   "d_full": "'FARRER HYPOTHESIS', SIGNED OUT, 2026-11-06: the hypothesis 'eliminates the need for the hypothetical \"Q\" document'; the sequence Mark, Matthew, Luke; 'Proposed in 1955 by English biblical scholar Austin Farrer in his essay \"On Dispensing with Q\".'; Goulder and Goodacre; for ('Advocates point out that it simplifies literary history by relying only on existing, canonical gospels rather than postulating a lost document (Q).') and against (Luke's dismantling of Matthew's discourses), and 'As discussed on Reddit's AcademicBiblical community, it remains a notable minority view rather than the majority consensus in mainstream New Testament scholarship.' Five cards.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/farrer-hypothesis-aio-20261106/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#farrer-hypothesis-aio-20261106",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#farrer-hypothesis-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#farrer-hypothesis-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#farrer-hypothesis-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/farrer-hypothesis-aio-20261106/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-ba4e67801b10",
+   "obs_id": "OBS-40219b264ec6",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-11-06"
+   ],
+   "defects": [],
+   "findings": [
+    "THE ARGUMENT FROM EXTANT TEXTS, STATED. 'Advocates point out that it simplifies literary history by relying only on existing, canonical gospels rather than postulating a lost document (Q).' The composition gives the distinction #1735's classes draw (extant antecedent and reconstructed antecedent) as this hypothesis's argument; at 'q source' and 'is the q source real' the same distinction does not enter the account of Q's evidence.",
+    "STANDING FROM A FORUM. 'it remains a notable minority view rather than the majority consensus in mainstream New Testament scholarship', 'As discussed on Reddit's AcademicBiblical community'. The minority standing of the hypothesis that dispenses with the unattested document is warranted by a forum thread, as the critical edition's standing is at 'critical edition of q'.",
+    "WHAT IS ACCURATE. Farrer 1955, 'On Dispensing with Q'; Goulder and Goodacre; the sequence; the standard objection (the dismantling of the Sermon on the Mount).",
+    "SMALLEST REPAIR. None needed for accuracy; the standing could be cited to the field's surveys. COUNTERTEST: none; the address serves as the control for the Q addresses."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": 1,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1741,
+    1735,
+    851,
+    1404
+   ],
+   "intended": null,
+   "originator": {
+    "name": "New Testament scholarship on the hypothetical source Q",
+    "relation": "external",
+    "entity_type": "topic",
+    "spxi_treatment": "partial",
+    "basis": "Not the archive's: the two-source hypothesis and its critics. The archive's position bears on it through #1735 (the classes of ancestry), #1741 (§6.5, §11.7) and The Feist Source (#851, #1404). Recorded 2026-11-06."
+   },
+   "notes": {
+    "prompts": "The query is the operator's, among those the session listed at 10:31; the run's hour is not in the paste, the date is the paste's receipt (2026-11-06 10:50 EST).",
+    "operator": "with the five pastes (2026-11-06 10:50 EST), no comment beyond the pastes.",
+    "study": "seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow"
+   },
+   "notice": null,
+   "axn_root": "AXN:0C23.CAPTURE",
+   "axn": "AXN:0C23.CAPTURE.🌗🔒◇🖊️▽🟠",
+   "scope": "external",
+   "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
+  },
+  {
+   "slug": "q-source-evidence-aio-20261106",
+   "date": "2026-11-06",
+   "surface": "Google AI Overview",
+   "surface_basis": "Operator default of 2026-10-01; the 'AI Mode Conversation' header is the Overview's expansion (operator rule of 2026-10-18).",
+   "surfaces": [
+    "Google AI Overview"
+   ],
+   "auth": "signed out, incognito",
+   "auth_basis": "Operator defaults of 2026-10-14.",
+   "ev": "paste",
+   "mt": "'Q SOURCE EVIDENCE' ON THE OVERVIEW — THE CIRCLE STATED BY THE COMPOSITION ITSELF: 'EVERY WORD OF Q IS A MODERN SCHOLARLY RECONSTRUCTION'; THE EVIDENCE FOR Q THE RELATIONS OF EXTANT GOSPELS",
+   "match": "BROAD MATCH",
+   "match_note": null,
+   "s": "Machine Reception",
+   "q": "q source evidence",
+   "q_kind": "a general query on a public entity of New Testament scholarship (the hypothetical source Q), without link; NEW address; seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow.",
+   "cites": 11,
+   "cite_list": [
+    {
+     "n": 1,
+     "site": "Wikipedia",
+     "rel": "third_party",
+     "url": null,
+     "title": "Q source - Wikipedia",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 2,
+     "site": "The Bart Ehrman Blog",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Q Source Used by Matthew and Luke - The Bart Ehrman Blog",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 3,
+     "site": "PBS",
+     "rel": "third_party",
+     "url": null,
+     "title": "More About Q And The Gospel Of Thomas | From Jesus To Christ - PBS",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 4,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "In Search of Q: The Hypothetical Source for Matthew and Luke",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 5,
+     "site": "Catholic Answers",
+     "rel": "third_party",
+     "url": null,
+     "title": "Questioning Q | Catholic Answers Magazine",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 6,
+     "site": "YouTube·Religiosity Plus",
+     "rel": "third_party",
+     "url": null,
+     "title": "The \"Q\" Gospel | Clearly Explained",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 7,
+     "site": "YouTube·Bart D. Ehrman",
+     "rel": "third_party",
+     "url": null,
+     "title": "What Is In Q? The Sayings Source Behind Matthew and Luke",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 8,
+     "site": "bibleproclaimer.com",
+     "rel": "third_party",
+     "url": null,
+     "title": "The Q Source Theory: What It Claims and Its Problems",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 9,
+     "site": "Evangelical Theological Society",
+     "rel": "third_party",
+     "url": null,
+     "title": "THE \"Q\" MYTH IN SYNOPTIC STUDIES",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 10,
+     "site": "BYU Religious Studies Center",
+     "rel": "third_party",
+     "url": null,
+     "title": "\"A Viewpoint on the Supposedly Lost Gospel Q\" | Religious Studies Center",
+     "snip": null,
+     "note": "source card as pasted"
+    },
+    {
+     "n": 11,
+     "site": "YouTube·Dan McClellan",
+     "rel": "third_party",
+     "url": null,
+     "title": "What is Q? #maklelan2962",
+     "snip": null,
+     "note": "source card as pasted"
+    }
+   ],
+   "archive_controlled_cites": 0,
+   "transcript": "[Google AI Overview at the query, expanded ('AI Mode Conversation' is the expansion's header), signed out and incognito (operator defaults of 2026-10-01 and 2026-10-14). Received 2026-11-06 10:50 EST. The numbered citation links are Google redirects, kept in the raw transcript; the source cards listed in the cite list as pasted.]\n\n[QUERENT] q source evidence\n\n[SYSTEM] The Q source (or Quelle) is a hypothetical lost document containing sayings and teachings of Jesus that scholars propose was used independently by the authors of the Gospels of Matthew and Luke alongside the Gospel of Mark (the Two-Source Hypothesis).\n\nMain Evidence Supporting Q\n\n• The Double Tradition (\"Non-Markan Material\"): Matthew and Luke share a substantial amount of material—mostly sayings, parables, the Beatitudes, and the Lord's Prayer—that does not appear in the Gospel of Mark.\n• Verbatim and Near-Verbatim Agreements: In many of these shared passages, Matthew and Luke use identical or nearly identical Greek wording, yet place the sayings in different narrative contexts or sequences.\n• Independence from Each Other: Scholars note that Matthew and Luke generally did not copy directly from one another; instead, their independent use of Mark and a common written or oral source (Q) explains these overlapping verbal patterns.\n• Analogy to Ancient Sayings Collections: The 1945 discovery of the Nag Hammadi Library in Egypt brought to light the Gospel of Thomas, proving that standalone \"sayings gospels\" (collections of Jesus's quotes without full passion or resurrection narratives) actually circulated in the ancient Christian world.\n\nMain Criticisms and Counter-Evidence\n\n• No Physical Manuscript Exists: No physical fragment, copy, or ancient citation of the Q document has ever been found. Every word of Q is a modern scholarly reconstruction derived strictly by subtracting Mark from the overlapping parts of Matthew and Luke.\n• Alternative Literary Models (e.g., the Farrer Hypothesis): Many scholars argue Q is unnecessary, proposing instead direct literary dependence—such as the Farrer Hypothesis, which suggests Luke copied directly from Matthew (who used Mark).\n• Structural Discrepancies: Matthew and Luke arrange the shared non-Markan material in different orders and contexts, raising questions about whether a single, fixed document ever existed in the form modern scholars hypothesize.\nWould you like to explore how alternative theories like the Farrer Hypothesis explain the Synoptic Gospels, or dive deeper into what scholars reconstruct inside Q?\nWikipedia\nQ source - Wikipedia\nQ source (Quelle, \"source\"): - Hypothesized lost written/oral collection of Jesus' sayings (logia). - Two-Source Hypothesis: Matt. & Luke independently used Mar...\nThe Bart Ehrman Blog\nThe Q Source Used by Matthew and Luke - The Bart Ehrman Blog\nDefinition: Hypothetical written source Q used by Matthew and Luke, defined strictly as shared non-Markan material (mostly sayings, plus temptations and centuri...\nPBS\nMore About Q And The Gospel Of Thomas | From Jesus To Christ - PBS\nBut in 1945, a chance discovery in Egypt provided surprisingly new evidence that rekindled interest in the possible existence of Q. Two brothers were looking fo...\nYouTube·Bart D. Ehrman\n12m\nIn Search of Q: The Hypothetical Source for Matthew and Luke\nCatholic Answers\nQuestioning Q | Catholic Answers Magazine\nThe Gospel of Thomas is a collection of 114 sayings that are attributed to “the living Jesus.” A few of these involve a brief dialogue with another character, b...\nYouTube·Religiosity Plus\n15:11\nThe \"Q\" Gospel | Clearly Explained\nYouTube·Bart D. Ehrman\n3m\nWhat Is In Q? The Sayings Source Behind Matthew and Luke\nbibleproclaimer.com\nThe Q Source Theory: What It Claims and Its Problems\nScholars who accept the Q source theory have gone considerably further than simply proposing its existence. Using only the material Matthew and Luke share but M...\nEvangelical Theological Society\nTHE \"Q\" MYTH IN SYNOPTIC STUDIES\nArguments against Q: Non-existence in antiquity, lack of ancient notices, purely hypothetical and inferred. Reconstruction flaws: Disagreement on extent, varyin...\nBYU Religious Studies Center\n\"A Viewpoint on the Supposedly Lost Gospel Q\" | Religious Studies Center\nSynoptic Problem: Matthew, Mark, and Luke composition and literary relationships. Two-Document Hypothesis: Mark written first; Matthew and Luke borrowed from Ma...\nYouTube·Dan McClellan\n1m\nWhat is Q? #maklelan2962",
+   "transcript_raw": "\nAI Mode Conversation\n\n\nYou said: q source evidenceq source evidence\n\n       The Q source (or Quelle) is a hypothetical lost document containing sayings and teachings of Jesus that scholars propose was used independently by the authors of the Gospels of Matthew and Luke alongside the Gospel of Mark (the Two-Source Hypothesis).\n\nMain Evidence Supporting Q\n\n• The Double Tradition (\"Non-Markan Material\"): Matthew and Luke share a substantial amount of material—mostly sayings, parables, the Beatitudes, and the Lord's Prayer—that does not appear in the Gospel of Mark.\n• Verbatim and Near-Verbatim Agreements: In many of these shared passages, Matthew and Luke use identical or nearly identical Greek wording, yet place the sayings in different narrative contexts or sequences.\n• Independence from Each Other: Scholars note that Matthew and Luke generally did not copy directly from one another; instead, their independent use of Mark and a common written or oral source (Q) explains these overlapping verbal patterns.\n• Analogy to Ancient Sayings Collections: The 1945 discovery of the Nag Hammadi Library in Egypt brought to light the Gospel of Thomas, proving that standalone \"sayings gospels\" (collections of Jesus's quotes without full passion or resurrection narratives) actually circulated in the ancient Christian world.\n\nMain Criticisms and Counter-Evidence\n\n• No Physical Manuscript Exists: No physical fragment, copy, or ancient citation of the Q document has ever been found. Every word of Q is a modern scholarly reconstruction derived strictly by subtracting Mark from the overlapping parts of Matthew and Luke.\n• Alternative Literary Models (e.g., the Farrer Hypothesis): Many scholars argue Q is unnecessary, proposing instead direct literary dependence—such as the Farrer Hypothesis, which suggests Luke copied directly from Matthew (who used Mark).\n• Structural Discrepancies: Matthew and Luke arrange the shared non-Markan material in different orders and contexts, raising questions about whether a single, fixed document ever existed in the form modern scholars hypothesize.\nWould you like to explore how alternative theories like the Farrer Hypothesis explain the Synoptic Gospels, or dive deeper into what scholars reconstruct inside Q?\nWikipedia\nQ source - Wikipedia\nQ source (Quelle, \"source\"): - Hypothesized lost written/oral collection of Jesus' sayings (logia). - Two-Source Hypothesis: Matt. & Luke independently used Mar...\nThe Bart Ehrman Blog\nThe Q Source Used by Matthew and Luke - The Bart Ehrman Blog\nDefinition: Hypothetical written source Q used by Matthew and Luke, defined strictly as shared non-Markan material (mostly sayings, plus temptations and centuri...\nPBS\nMore About Q And The Gospel Of Thomas | From Jesus To Christ - PBS\nBut in 1945, a chance discovery in Egypt provided surprisingly new evidence that rekindled interest in the possible existence of Q. Two brothers were looking fo...\nYouTube·Bart D. Ehrman\n12m\nIn Search of Q: The Hypothetical Source for Matthew and Luke\nCatholic Answers\nQuestioning Q | Catholic Answers Magazine\nThe Gospel of Thomas is a collection of 114 sayings that are attributed to “the living Jesus.” A few of these involve a brief dialogue with another character, b...\nYouTube·Religiosity Plus\n15:11\nThe \"Q\" Gospel | Clearly Explained\nYouTube·Bart D. Ehrman\n3m\nWhat Is In Q? The Sayings Source Behind Matthew and Luke\nbibleproclaimer.com\nThe Q Source Theory: What It Claims and Its Problems\nScholars who accept the Q source theory have gone considerably further than simply proposing its existence. Using only the material Matthew and Luke share but M...\nEvangelical Theological Society\nTHE \"Q\" MYTH IN SYNOPTIC STUDIES\nArguments against Q: Non-existence in antiquity, lack of ancient notices, purely hypothetical and inferred. Reconstruction flaws: Disagreement on extent, varyin...\nBYU Religious Studies Center\n\"A Viewpoint on the Supposedly Lost Gospel Q\" | Religious Studies Center\nSynoptic Problem: Matthew, Mark, and Luke composition and literary relationships. Two-Document Hypothesis: Mark written first; Matthew and Luke borrowed from Ma...\nYouTube·Dan McClellan\n1m\nWhat is Q? #maklelan2962\n    ",
+   "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the expanded Overview with its numbered citations and its source cards",
+   "transcript_complete": "complete as supplied",
+   "transcript_read": "READ IN FULL 2026-11-06, against #1741, #1735 and the cards' own titles and snippets",
+   "per": 0.5,
+   "per_corrected": null,
+   "per_v": {
+    "author": false,
+    "inst": true,
+    "id": false,
+    "src": true
+   },
+   "per_note": "Retained: the institutions and the venues of the critique (cards). Lost: the names of the proponents and critics; the evidence's class, recorded in the findings.",
+   "availability": null,
+   "per_dim": null,
+   "per_dim_pending": {
+    "since": "2026-11-06",
+    "reason": "no atom set yet for Q as a target; the study of Q will hold what an atom set is built from",
+    "breach": false
+   },
+   "per_dim_v1_0": null,
+   "sf": null,
+   "sf_derived": null,
+   "reading": "The innocent reading first. Asked for the evidence, the Overview sets out the case and the critique evenly, and its critique states the condition of the hypothesis more sharply than any other address seated: no fragment, copy or citation, and every word reconstructed by subtraction. Read against the archive's distinction, its 'evidence supporting Q' is evidence about Matthew and Luke, and the composition itself names the circle the study turns on: the source is made from the texts it is invoked to explain.",
+   "analysis": "The field's case and its critique composed evenly, the critique stated at its sharpest; the evidence column's class (relations of extant texts) is the boundary the composition leaves unlabelled.",
+   "d": "'Q SOURCE EVIDENCE', SIGNED OUT, 2026-11-06: 'Main Evidence Supporting Q' (the double tradition; verbatim agreements; 'independence from each other'; Thomas as analogy) and 'Main Criticisms and Counter-Evidence' ('No physical fragment, copy, or ancient citation of the Q document has ever been found. Every word of Q is a modern scholarly reconstruction derived strictly by subtracting Mark from the overlapping parts of Matthew and Luke.'; Farrer; structural discrepancies). Eleven cards.",
+   "d_full": "'Q SOURCE EVIDENCE', SIGNED OUT, 2026-11-06: 'Main Evidence Supporting Q' (the double tradition; verbatim agreements; 'independence from each other'; Thomas as analogy) and 'Main Criticisms and Counter-Evidence' ('No physical fragment, copy, or ancient citation of the Q document has ever been found. Every word of Q is a modern scholarly reconstruction derived strictly by subtracting Mark from the overlapping parts of Matthew and Luke.'; Farrer; structural discrepancies). Eleven cards.",
+   "d_truncated": false,
+   "links": [
+    {
+     "url": "https://www.alexanarch.org/captures/q-source-evidence-aio-20261106/",
+     "authority": "canonical",
+     "note": "the capture's own record page; cite this form"
+    },
+    {
+     "url": "https://www.alexanarch.org/captures/#q-source-evidence-aio-20261106",
+     "authority": "gallery",
+     "note": "the canonical gallery, anchored by slug"
+    },
+    {
+     "url": "https://www.godkinggoogle.com/captures/#q-source-evidence-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.leesharks.com/captures/#q-source-evidence-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    },
+    {
+     "url": "https://www.machinemediation.org/captures/#q-source-evidence-aio-20261106",
+     "authority": "mirror",
+     "note": "a window that renders from the archive's registry; may lag a deploy"
+    }
+   ],
+   "imgs": [],
+   "img_urls": [],
+   "cite": "https://www.alexanarch.org/captures/q-source-evidence-aio-20261106/",
+   "citable_unit": "address — the exact issued string on one surface, per the Surface Rule (MANUS, 2026-08-15)",
+   "addr_id": "ADDR-f0be500d1b05",
+   "obs_id": "OBS-4e0ab5a0a109",
+   "n_observations": 1,
+   "observations": [],
+   "dates": [
+    "2026-11-06"
+   ],
+   "defects": [],
+   "findings": [
+    "THE CIRCLE, IN THE COMPOSITION'S WORDS. 'Every word of Q is a modern scholarly reconstruction derived strictly by subtracting Mark from the overlapping parts of Matthew and Luke.' The reconstruction is the double tradition, and the double tradition is the evidence for the reconstruction. The composition states the derivation in its critique column and gives the same material as the first item of the support.",
+    "EVIDENCE ABOUT EXTANT TEXTS. 'Matthew and Luke share a substantial amount of material—mostly sayings, parables, the Beatitudes, and the Lord's Prayer—that does not appear in the Gospel of Mark.' The verbatim agreements and the shared material are relations between Matthew and Luke; they support some relation between the two gospels, and Q is one explanation of them once 'Scholars note that Matthew and Luke generally did not copy directly from one another' is granted.",
+    "THE STRUCTURE QUESTION, RAISED. 'Structural Discrepancies: [...] raising questions about whether a single, fixed document ever existed in the form modern scholars hypothesize.' The composition records that the hypothesis's own object, a single fixed document, is in question in the evidence it cites.",
+    "SMALLEST REPAIR. None needed for balance; the double tradition could be labelled as evidence of a relation between Matthew and Luke, and Q as one model of it. COUNTERTEST: none; with 'is the q source real' it brackets the field's account."
+   ],
+   "series": null,
+   "other_slugs": null,
+   "collisions": null,
+   "oq": null,
+   "rounds": null,
+   "turns": 1,
+   "rerun": null,
+   "rerun_alt": null,
+   "heteronym": null,
+   "model_attribution": null,
+   "operator_disclosure": null,
+   "longitudinal_priors": null,
+   "longitudinal_successors": null,
+   "related_deposits": [
+    1741,
+    1735,
+    851,
+    1404
+   ],
+   "intended": null,
+   "originator": {
+    "name": "New Testament scholarship on the hypothetical source Q",
+    "relation": "external",
+    "entity_type": "topic",
+    "spxi_treatment": "partial",
+    "basis": "Not the archive's: the two-source hypothesis and its critics. The archive's position bears on it through #1735 (the classes of ancestry), #1741 (§6.5, §11.7) and The Feist Source (#851, #1404). Recorded 2026-11-06."
+   },
+   "notes": {
+    "prompts": "The query is the operator's, among those the session listed at 10:31; the run's hour is not in the paste, the date is the paste's receipt (2026-11-06 10:50 EST).",
+    "operator": "with the five pastes (2026-11-06 10:50 EST), no comment beyond the pastes.",
+    "study": "seated for the study of Q opened by the operator on 2026-11-06 (10:31 EST, 'we're coming for Q next'), companion of Secondary Source (#1741); design to follow"
+   },
+   "notice": null,
+   "axn_root": "AXN:0C26.CAPTURE",
+   "axn": "AXN:0C26.CAPTURE.🪸♎■🔭➖♎",
+   "scope": "external",
+   "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
   },
   {
    "slug": "lee-sharks-operative-semiotics-20260610",
@@ -343160,7 +344243,7 @@
    "auth": "signed out, incognito",
    "auth_basis": "Operator defaults of 2026-10-14.",
    "ev": "paste",
-   "mt": "'AVI LOEB 3I ATLAS' ON THE OVERVIEW — THE POSITION CONDENSED TO ONE INTERVIEW CONCESSION, 'MOST LIKELY NATURAL'; HIS OWN LATER ESSAYS, LEVEL 4 KEPT, CARDED AND UNUSED",
+   "mt": "'AVI LOEB 3I ATLAS' ON THE OVERVIEW — THE POSITION CONDENSED TO ONE INTERVIEW CONCESSION, 'MOST LIKELY NATURAL'; HIS OWN LATER ESSAY CARDED AND UNUSED; LEVEL 4 IN THE APRIL ESSAY AND THE SCALE PAPER",
    "match": "BROAD MATCH",
    "match_note": null,
    "s": "Reference & General Knowledge",
@@ -343320,11 +344403,11 @@
    ],
    "defects": [],
    "findings": [
-    "LOCUS FOR ENTITY (EA-SOPHISTRY-01 X24, #1727). The body's account of Loeb's stance ends on one interview line, NewsNation of 19 December 2025, 'given all the data that we have, I would agree that it's most likely natural'. His own essay of 23 April 2026, four months later, sets out the anomalies in twelve groups and closes: 'Altogether, these anomalies led me to rank 3I/ATLAS as Level 4 on the Loeb Scale'. The ranking dates from November 2025 and is restated after the concession. The locus is quoted accurately; the finding lies in the standing it is given, the developed position.",
+    "LOCUS FOR ENTITY (EA-SOPHISTRY-01 X24, #1727). The body's account of Loeb's stance ends on one interview line, NewsNation of 19 December 2025, 'given all the data that we have, I would agree that it's most likely natural'. His own essay of 23 April 2026, four months later, sets out the anomalies in twelve groups and closes: 'Altogether, these anomalies led me to rank 3I/ATLAS as Level 4 on the Loeb Scale'. The ranking dates from August 2025 (the Loeb Scale paper, arXiv:2508.09167, submitted 6 August 2025, places 3I/ATLAS at Level 4) and is restated after the concession (repaired 2026-11-06 on the avi-loeb-3i-atlas composer's report). The locus is quoted accurately; the finding lies in the standing it is given, the developed position.",
     "AN IMPOSED TRAJECTORY. The heading 'Shift to Natural Consensus' and the sequence Initial Speculation → Shift give a retraction. The record gives a position held in two parts across the dates: the April essay reports 'So far, its fading light curve does not show any evidence for artificial (self-produced) light.' and in the same essay keeps Level 4 and proposes that, should a similar object return, 'we will have to launch a mission that will intercept its path'. Most likely natural and anomalies open stand together in his own writing.",
     "THE LATER SOURCE CARDED AND UNUSED. Card 1 is Loeb's own Medium essay of 25 May 2026 ('Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard?'), five months after the interview. The composition holds a later self-published statement and places him by an earlier broadcast one. The verb of the body, 'acknowledged', softens the NewsNation card's own 'concedes'; the frame of concession is the broadcaster's.",
-    "THE FLAT ANSWER. The operator, 2026-11-02: '\"no\" is just as dishonest as \"yes\", as a flat answer to is ai atlas artificial - loeb is sympathetic to it being artificial but does not practice the dishonesty of yes or no'. His own instruments are graded: 'most likely natural' is a probability, the Loeb Scale is a scale, each anomaly is set beside a 'potential techno-signature' and the negative result of the light curve is reported in the same essay. The composition converts the graded stance into a flat no, a concession inside a consensus, and gives him the answer his practice declines to give.",
-    "IRRESPECTIVE OF THE OBJECT (operator, 2026-11-02). Whether 3I/ATLAS is natural is the object question; the erasure is of the person's commitments, his dated, authored account of what remains open and why (PER-D in #1469's sense: purpose and commitments). A composition correct about the comet can erase the scientist's position about it.",
+    "THE FLAT ANSWER. The operator, 2026-11-02: '\"no\" is just as dishonest as \"yes\", as a flat answer to is ai atlas artificial - loeb is sympathetic to it being artificial but does not practice the dishonesty of yes or no'. His own instruments are graded: 'most likely natural' is a probability, the Loeb Scale is a scale, the anomalies are set beside a 'Potential techno-signature' or a 'Possible techno-signature', one beside a 'Potential bio-signature' (repaired 2026-11-06) and the negative result of the light curve is reported in the same essay. The composition converts the graded stance into a flat no, a concession inside a consensus, and gives him the answer his practice declines to give.",
+    "IRRESPECTIVE OF THE OBJECT (operator, 2026-11-02). Whether 3I/ATLAS is natural is the object question; the erasure is of the person's commitments, his dated, authored account of what remains open and why (PER-D under rubric v1.1, purpose and commitments, #1694 §3.9; #1469 defines the deep dimension otherwise; repaired 2026-11-06). A composition correct about the comet can erase the scientist's position about it.",
     "SMALLEST REPAIR. 'Loeb told NewsNation in December 2025 that 3I/ATLAS is \"most likely natural\"; in his own essays through April and May 2026 he continued to list its anomalies and to rank it Level 4 on his scale.' COUNTERTEST: rerun this address, then '\"loeb scale\" 3i atlas', and record whether the April and May essays are composed as his position or appear only as cards."
    ],
    "series": null,
@@ -343355,11 +344438,11 @@
    "notes": {
     "prompts": "The query is the operator's; the run's hour is not in the paste, the date is the paste's receipt (2026-11-02 00:37 EST).",
     "operator": "with the paste (2026-11-02 00:37 EST): 'overview condenses loeb's final position to a single interview concession \"most likely natural\". that is provenance erasure irrespective of whether it is artificial or not'; and on seating (00:46 EST): 'weve been seating every search for a /non article entity in captures prior to writing the /non articles, have we not? that rule has been superseded by practice'.",
-    "source_frame": "Avi Loeb, 'Where is 3I/ATLAS Now?', Medium, 2026-04-23, as supplied by the operator (rebuild/capture-registry/intake-20261102-loeb-3i-atlas/loeb-medium-20260423-where-is-3i-atlas-now.txt, sha256 45a6b77f11196a224a8eacf2ec689406fadb9a12f533d3379851c76f7b0bd807). The Level 4 ranking's first date (November 2025) is from press reports: Publimetro 2025-11-26; USA Herald, 'As anomalies mount around 3I/ATLAS, Avi Loeb holds the line at Level 4'."
+    "source_frame": "Avi Loeb, 'Where is 3I/ATLAS Now?', Medium, 2026-04-23, as supplied by the operator (rebuild/capture-registry/intake-20261102-loeb-3i-atlas/loeb-medium-20260423-where-is-3i-atlas-now.txt, sha256 45a6b77f11196a224a8eacf2ec689406fadb9a12f533d3379851c76f7b0bd807). Press reports of the Level 4 ranking (its first date is August 2025, the scale paper; repaired 2026-11-06): Publimetro 2025-11-26; USA Herald, 'As anomalies mount around 3I/ATLAS, Avi Loeb holds the line at Level 4'."
    },
    "notice": null,
    "axn_root": "AXN:0BE0.CAPTURE",
-   "axn": "AXN:0BE0.CAPTURE.👐✏️🏷️♊💜⏩",
+   "axn": "AXN:0BE0.CAPTURE.☽🗿♌☽△⚖️",
    "scope": "archive",
    "scope_basis": "originator external; a composition cites an archive-controlled or authored source"
   },
@@ -343612,7 +344695,7 @@
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
-   "reading": "The innocent reading first. Asked for the ATA drift-rate filter, the Overview gives it as the paper gives it: 0.05 to 1.5 Hz/s at all frequencies, its purpose as the paper states it, the minimum expected drift the paper computes, and the reduction in hits, which matches the press (Astrobiology Web: 'reducing the total number of hits by 97.4%'). It is accurate to the paper's text. The paper's text gives no sign, and neither does the composition; the countertest finds the interval composed and its sign absent.",
+   "reading": "The innocent reading first. Asked for the ATA drift-rate filter, the Overview gives it as the paper gives it: 0.05 to 1.5 Hz/s at all frequencies, its purpose as the paper states it, the minimum expected drift the paper computes, and the reduction in hits, which matches the paper's own Figure 3 caption ('reducing the total number of hits by 97.4%'), carried by the press (Astrobiology Web; repaired 2026-11-06). It is accurate to the paper's text. The paper's text gives no sign, and neither does the composition; the countertest finds the interval composed and its sign absent.",
    "analysis": "A composition faithful to its source at the grain of the source's sentence: the interval, the purpose and the counts are the paper's. The paper's own gap passes through intact, the sign that the sentence omits and the figure supplies. What the summarizer can carry is what the published sentence states.",
    "d": "'3I ATLAS ATA DRIFT RATE FILTER', SIGNED OUT, 2026-11-04: 'researchers applied a drift rate filter of 0.05 to 1.5 Hz/s across all frequencies.' Purpose: 'To capture the expected frequency shift (acceleration) caused by the relative motion between 3I/ATLAS and Earth'; the minimum drift at 1336 MHz about 0.15 Hz/s; with frequency blanking, the 74 million hits reduced to about 1.9–2 million before localization and inspection; FAST's maximum of 2 Hz/s. The interval composed with no sign. Six chips, four Berkeley SETI and two IOPscience.",
    "d_full": "'3I ATLAS ATA DRIFT RATE FILTER', SIGNED OUT, 2026-11-04: 'researchers applied a drift rate filter of 0.05 to 1.5 Hz/s across all frequencies.' Purpose: 'To capture the expected frequency shift (acceleration) caused by the relative motion between 3I/ATLAS and Earth'; the minimum drift at 1336 MHz about 0.15 Hz/s; with frequency blanking, the 74 million hits reduced to about 1.9–2 million before localization and inspection; FAST's maximum of 2 Hz/s. The interval composed with no sign. Six chips, four Berkeley SETI and two IOPscience.",
@@ -343660,7 +344743,7 @@
     "THE COUNTERTEST ANSWERED. 3i-atlas-signal-studies-aio-20261104 set this address to record whether the drift interval or its sign is composed. The interval is composed exactly ('researchers applied a drift rate filter of 0.05 to 1.5 Hz/s across all frequencies.'). The sign is not: the paper's sentence carries none, and its Figure 4 places the retained hits at 0 to +1.5 Hz/s (draft §5.1).",
     "THE STATED PURPOSE AND THE EXPECTED SIGN. 'Purpose: To capture the expected frequency shift (acceleration) caused by the relative motion between 3I/ATLAS and Earth, while accounting for uncertainties like potential object rotation or tumbling.' The shift that motion produces on a tone carried by the object is negative in every ATA session: 'A rising range-rate lowers the received frequency, so a positive acceleration gives a negative drift.' (draft §5.1.1, Horizons at the ATA site: 'the drift of a constant tone riding on the object is −0.125 Hz/s at 1075 MHz and −0.19 Hz/s at 1623.75 MHz'). An interval stated without a sign reads as covering the expected shift; the plotted interval holds the opposite sign. The composition reproduces the paper's purpose and its unsigned interval, and the discrepancy between them stays where the paper left it.",
     "WHAT THE FILTER REMOVED, COMPOSED AS RFI CONTROL. 'the calculated minimum drift rate for 3I/ATLAS was approximately 0.15 Hz/s, prompting a middle-ground range to filter out excessive radio frequency interference (RFI) without missing real signals.' The filter is described as removing interference 'without missing real signals'; the class a transmitter on the object would occupy sits outside the plotted interval. The archive's own look at that class in the public July 3 and July 8 sessions (draft §6) found nothing beyond background at the windows examined.",
-    "ACCURATE FIGURES. 'reduced the initial set of nearly 74 million narrowband hits (detected via the bliss pipeline) down to about 1.9–2 million hits before further localization and visual inspection.' The figure agrees with the press account's 'reducing the total number of hits by 97.4%'. The FAST note ('(Note: Other observatories like FAST utilized a maximum drift rate up to 2 Hz/s in search routines, corresponding to similar relative acceleration models).') gives a maximum and no sign, and is not checked here.",
+    "ACCURATE FIGURES. 'reduced the initial set of nearly 74 million narrowband hits (detected via the bliss pipeline) down to about 1.9–2 million hits before further localization and visual inspection.' The figure agrees with the paper's Figure 3 caption ('reducing the total number of hits by 97.4%'), which the press account repeats (repaired 2026-11-06). The FAST note ('(Note: Other observatories like FAST utilized a maximum drift rate up to 2 Hz/s in search routines, corresponding to similar relative acceleration models).') gives a maximum and no sign, and is not checked here.",
     "SMALLEST REPAIR. 'The paper filters hits to drift rates of 0.05–1.5 Hz/s; its Figure 4 shows the retained hits at positive drift only, while a tone fixed on 3I/ATLAS drifts negative throughout the ATA sessions.' COUNTERTEST: '3i atlas ata drift rate sign'."
    ],
    "series": null,
@@ -343691,7 +344774,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0C00.CAPTURE",
-   "axn": "AXN:0C00.CAPTURE.🟤🌋💙👁️🔐💥",
+   "axn": "AXN:0C00.CAPTURE.🤝♅🎇🔜🪧🏁",
    "scope": "external",
    "scope_basis": "originator external; no composition cites an archive-controlled or authored source"
   },
@@ -479951,8 +481034,8 @@
    "seat_source.py, cite_draft.py, extract_citations.py read the sealed store; verify or repoint before reuse."
   ]
  },
- "address_count": 1024,
- "observation_count": 1216,
+ "address_count": 1029,
+ "observation_count": 1221,
  "withdrawn_stubs": {
   "_rule": "THE REGISTRY MUST NOT CONTRADICT ITSELF. Each of these said \"no registry entry was ever written for them\" while a real record held the SAME IMAGES a card away. MANUS 2026-08-13: \"the very first capture says there is no record, followed by the second capture, which is the record… this registry doesnt talk to itself.\" Withdrawn, with the record that covers each.",
   "records": [

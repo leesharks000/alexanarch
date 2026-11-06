@@ -1,0 +1,74 @@
+Breakthrough Listen observations of interstellar object 3I/ATLAS
+Breakthrough Listen observations of interstellar object 3I/ATLAS
+Overview
+Data
+Breakthrough Listen observations of interstellar object 3I/ATLAS
+The interstellar object 3I/ATLAS was discovered on July 1, 2025. There is currently no evidence to
+suggest that it is anything other than a natural astrophysical object. However, given the small number of such objects known (only three to date), and the plausibility of interstellar probes as a technosignature (a sign of extraterrestrial intelligence), (e.g. Freitas & Valdes 1985 ), thorough study is warrant ed (see Davenport et al. 2025 ).
+The Breakthrough Listen Initiative, together with its network of collaborators, has undertaken
+observations of 3I/ATLAS using a variety of facilities worldwide, starting shortly after its discovery,
+and continuing through its closest approach to Earth. No technosignatures have been detected in any of
+these searches.
+Allen Telescope Array
+The Allen Telescope Array (photo: Steve Croft / Breakthrough Listen)
+O bservations of 3I/ATLAS using the Allen Telescope Array were undertaken in early July, 2025, within a
+few days of discovery. Data were acquired across frequencies of 1 - 9 GHz, reaching sensitivities
+between 10 - 110 W equivalent isotropic radiated power (EIRP). A publication reporting the results of
+the analysis has been submitted for peer review; a preprint is
+available here .
+Radio spectrograms from our ATA observations. The diagonal stripe at the center is visible in
+observations of 3I/ATLAS as well as in off-target observations - characteristics expected from local
+(human) sources of interference - and hence can be rejected as a candidate technosignature (image:
+Sheikh et al. 2025).
+MeerKAT
+The MeerKAT array (photo: South African Radio Astronomy Observatory (SARAO))
+3I/ATLAS was also observed by the MeerKAT telescope, which detected signatures of hydroxyl, which is
+expected as sunlight breaks down water ice in the comet into its chemical constituents. In parallel with
+these observations, the BLUSE (Breakthrough Listen User Supplied Equipment) computer at MeerKAT searched
+the data for technosignatures. A press release is available along with an Astronomer’s Telegram reporting the results of the search . No artificial radio emission was detected at a limit of 0.17 W over the 900 - 1670 MHz range,
+approximately equivalent to the power output of a mobile phone handset at the distance to
+3I/ATLAS.
+Rubin
+The Vera C. Rubin Observatory (photo: Rubin Observatory)
+Breakthrough Listen also participated in optical observations of 3I/ATLAS with the Vera C. Rubin
+Observatory (reported by Chandler et al. 2025 ) , and our partners continue to monitor it with optical and infrared spectroscopy. These data are used
+to study the chemistry of the cometary ejecta, and constrain any transient laser signals. No artificial
+emission was detected.
+Parkes
+The “Murriyang” Parkes Radio Telescope (photo: CSIRO)
+Observations were performed with the Ultra-Wideband Low receiver (sensitive from 704 to 4032 MHz) on the 64-meter
+Murriyang radio telescope at the Parkes Observatory. Data were recorded on July 31, 2025, September 12,
+2025, and October 5, 2025. Of our three Murriyang sessions 3I/ATLAS was closest to Earth on October 5,
+2025, with our observations having an expected sensitivity to transmitters with an EIRP of around 5 W. Results of the narrowband search will be posted once this has been completed.
+Green Bank
+The Green Bank Telescope (photo: Steve Croft / Breakthrough Listen)
+On December 19, 2025, 3I/ATLAS reached its closest distance to Earth, at 1.7 AU (167 million miles). To
+obtain optimum sensitivity, we observed 3I/ATLAS with the largest steerable single-dish radio telescope
+in the world, the 100-meter Green Bank Telescope, less than 24 hours before the closest approach of
+3I/ATLAS, on December 18, 2025. We used four receivers (L, S, C, and X) spanning frequencies of 1 - 12 GHz. At closest approach, the GBT is sensitive to
+transmitters with an EIRP of approximately 0.1 W, more sensitive than all previous observations. No
+artificial radio emission localized to 3I/ATLAS was detected.
+In summary, 3I/ATLAS continues to behave as expected from natural astrophysical processes. That said,
+it remains an extremely interesting target for observation given the overall rarity of interstellar
+objects. We will continue to observe 3I/ATLAS as a part of a broader strategy to thoroughly investigate
+all interstellar objects, consistent with our goal of conducting humanity’s most sensitive,
+intensive and comprehensive search for technosignatures.
+Public data
+D ata from our radio observations require specialist software to analyze, including blimpy (loads data into Python) and turboSETI (searches the data for narrowband signals). Our data paper ( Lebofsky et al. 2019 ) provides more information on the data format and contents for Green Bank and Parkes.
+D ata from the ATA are available here . Analysis is reported in a preprint by
+Sheikh et al. (2025) .
+A 90 MB gzipped JSON file containing metadata for just over 2 million hits found during observations at MeerKAT in November
+is available.
+Data from our three Murriyang observing sessions are publicly available (in subdirectories beginning “PKS”). Each session consists of a single cadence, consisting of three repeats of a Source/Reference
+cycle with 5 minutes on-target per pointing. Three data products are recorded by the Breakthrough Listen
+backend at Murriyang, a high spectral resolution SETI product, a high time resolution pulsar product,
+and an intermediate (spectral line) product. Data from the first observing session is recorded in full
+polarization whereas subsequent observations include total intensity only.
+Spectrogram data (HDF5 format) from the GBT observations are publicly available (also in SETI, pulsar, and intermediate resolution products, total intensity only) . One six-scan cadence (5 minutes per pointing) is available at each of L (scans numbered 0013 - 0018),
+S (scans 0029 - 0034), C (scans 0045 - 0050), and X (scans 0061 - 0066) bands. Raw voltage data are in
+the process of being transferred from Green Bank. Analysis of the GBT data with turboSETI showed no candidate technosignatures;
+a technical paper has been published
+in Research Notes of the American Astronomical Society.
+Media inquiries
+Email steve.croft@physics.ox.ac.uk
+Background Photo by Jenya Chernoff

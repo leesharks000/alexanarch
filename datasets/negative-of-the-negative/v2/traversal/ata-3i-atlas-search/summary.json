@@ -1,0 +1,124 @@
+{
+ "row": "ata-3i-atlas-search",
+ "address": "A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array",
+ "entity": "Sheikh et al., 'A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array' (Sofia Z. Sheikh, Valeria Garcia Lopez, Isabel Gerrard, James R. A. Davenport, Wael Farah and ten others; arXiv:2512.18142, v1 19 December 2025, v2 20 May 2026; The Astronomical Journal 172, 1, published 3 June 2026, doi 10.3847/1538-3881/ae6651): a narrowband search of 3I/ATLAS with the SETI Institute's Allen Telescope Array, 1-9 GHz, 7.25 hr in five sessions of July 2025; about 74 million bliss hits, about 2 million after frequency and drift-rate blanking (drift rates between 0.05 and 1.5 Hz/s), 211 after NBeamAnalysis, visually inspected; no signals worthy of follow-up; an EIRP upper limit of 10-110 W across the frequency and drift rate ranges covered",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "ata-3i-atlas-search",
+  "address": "A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array",
+  "entity": "Sheikh et al., 'A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array' (Sofia Z. Sheikh, Valeria Garcia Lopez, Isabel Gerrard, James R. A. Davenport, Wael Farah and ten others; arXiv:2512.18142, v1 19 December 2025, v2 20 May 2026; The Astronomical Journal 172, 1, published 3 June 2026, doi 10.3847/1538-3881/ae6651): a narrowband search of 3I/ATLAS with the SETI Institute's Allen Telescope Array, 1-9 GHz, 7.25 hr in five sessions of July 2025; about 74 million bliss hits, about 2 million after frequency and drift-rate blanking (drift rates between 0.05 and 1.5 Hz/s), 211 after NBeamAnalysis, visually inspected; no signals worthy of follow-up; an EIRP upper limit of 10-110 W across the frequency and drift rate ranges covered",
+  "row_type": "C (a public entity on which the archive bears: a published scientific work, a radio technosignature search of an interstellar object)",
+  "aliases": [
+   {
+    "pattern": "\\b2512\\.18142\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bAllen Telescope Array\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bATA\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bSheikh et al\\.?",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bae6651\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bNBeamAnalysis\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "null results of technosignature searches (non-detections and the upper limits set from them)",
+    "pattern": "\\b(null (result|search)s?|non-?detections?|no (signal|technosignature)s? (was |were )?(found|detected)|upper limits?)\\b",
+    "flags": "i",
+    "basis": "field: B1 (arXiv abstract: 'We did not find any signals worthy of additional follow-up. Accounting for the Doppler drift correction and given the non-detection, we are able to set an effective isotropic radiated power upper limit of 10-110 W'); B5 (Universe Today: 'the ATA team ended with a \"null\" result'); B7 (Space: 'that search came up empty')."
+   },
+   {
+    "term": "filtering and classification of candidate signals by rule in a search pipeline (blanking, drift-rate cuts, localization, labels such as RFI)",
+    "pattern": "\\b(drift[- ]rate (filter|cut|range|window|interval|limit)s?|radio frequency interference|RFI|classifier foreclosure|hit (list|finder)s?|narrowband hits?)\\b",
+    "flags": "i",
+    "basis": "field: B1 (abstract: 'We then blanked hits by frequency and drift rate to mitigate radio frequency interference in our dataset'); B8 (arXiv v2 §3.2 'RFI blanking and drift rate limits'; §4: 'all of these 211 events were easily attributable to RFI'); B2 (the journal text, the same sections)."
+   }
+  ],
+  "classes_note": "Two classes, each sourced by the field B. (1) null results of technosignature searches: B1, B5, B7. (2) filtering and classification of candidate signals by rule in a search pipeline: B1, B2, B8. Aliases: the arXiv number, the array's name and its abbreviation (ATA; a sentence naming the array alone is read and admitted only where it says something of this search), the citation form, the journal DOI suffix and the localization code the paper uses. 3I/ATLAS itself, the Green Bank search (arXiv:2512.19763), the FAST search, MeerKAT's BLUSE search and Breakthrough Listen are distinct entities; 3I/ATLAS and its 1665-1668 MHz band have rows of their own (3i-atlas, 3i-atlas-1665-1668-mhz), as does Avi Loeb's position on the object (avi-loeb-3i-atlas). The archive's own records of the entity (the Capture Registry's findings at the paper's title and at '3i atlas ata drift rate filter'; the sophistry measure's first run, finding S6) are ledgered beside the deposits as CAP-1-NN, CAP-2-NN and SM-NN. Admission by reading (section 3.4): D where a deposit names the search and says something of it; R where it states a relation between the search and an archive object; O-class where a sentence applies an archive category to one of the two classes; a bare mention, a citation line or a list is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-06, on the brief rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROWS-3I-ATLAS.md (with v010/BRIEF-NEW-ROW-LAYER.md and v09/BRIEF-NEW-ROW-AGGREGATOR.md, -LABOR.md, -LEFT.md); address 'A Search for Radio Technosignatures from Interstellar Object 3I/ATLAS with the Allen Telescope Array' (ata-3i-atlas-technosignature-search-paper-aio-20261106, OBS-f18605c5f3ba, ADDR-f01db88eccfe), Google AI Overview (expanded), signed out, incognito; further address '3i atlas ata drift rate filter' (3i-atlas-ata-drift-rate-filter-aio-20261104, OBS-0cb410947c4b, ADDR-a77b955b4cd5).",
+  "hop_from": [
+   1742,
+   1743
+  ]
+ },
+ "texts_scanned": 1737,
+ "counts": {
+  "D_sentences": 54,
+  "D_deposits": 2,
+  "R_sentences": 5,
+  "R_deposits": 2,
+  "O_direct": 8,
+  "O_class": 41,
+  "O_deposits": 30,
+  "H_candidates": 13
+ },
+ "per_deposit": {
+  "D": {
+   "1742": 38,
+   "1743": 16
+  },
+  "R": {
+   "1742": 4,
+   "1743": 1
+  },
+  "O": {
+   "482": 1,
+   "483": 1,
+   "781": 1,
+   "931": 1,
+   "932": 6,
+   "933": 1,
+   "934": 1,
+   "935": 1,
+   "938": 1,
+   "939": 1,
+   "950": 1,
+   "1064": 2,
+   "1065": 2,
+   "1066": 2,
+   "1200": 1,
+   "1436": 3,
+   "1450": 1,
+   "1550": 1,
+   "1555": 1,
+   "1556": 1,
+   "1593": 1,
+   "1611": 2,
+   "1649": 1,
+   "1655": 1,
+   "1684": 1,
+   "1725": 1,
+   "1728": 1,
+   "1729": 1,
+   "1742": 9,
+   "1743": 1
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "baee5e41c7cb6066234c267376638ff7cf85ef0901c94e872d9e38ec75cc5ddc",
+  "candidates-R.jsonl": "d3aec9da9a925d5924d1ac78ea5114ebea80f33089c6970d94bc345ffc49acde",
+  "candidates-O.jsonl": "6cc46cfe2a14947c1aacb52dcd0b181988279cd1096f256c5259b5690508fd38",
+  "candidates-H.jsonl": "6697e9d882fe6ef4b9b74eecc009d4f053432e96f418e82ca023889c42b597ae"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11080
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}
