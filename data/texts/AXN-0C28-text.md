@@ -1,14 +1,14 @@
 ---
 deposit_number: 1745
 hex: 0C28
-title: "The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.0)"
+title: "The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.1)"
 creator: Sigil, Johannes; Kuro, Sen
 orcid: 0009-0000-1599-0703
 date: 2026-11-06
 content_type: Theoretical paper
 license: CC-BY-4.0
 substrate: AI-assisted (substrate). Written under the heteronyms Johannes Sigil and Sen Kuro (byline and venue ruled by Lee Sharks, 6 November 2026). The initiating distinction is Lee Sharks's; drafted in ChatGPT (OpenAI) under his direction to v0.2, with DeepSeek's review evaluated point by point; revised to v1.0 for deposit by Claude (Anthropic) under his direction. The originals of v0.2 and of both compressions are preserved with their hashes at rebuild/cone-cost/originals/ (SHA256SUMS.txt).
-version: v1.0
+version: v1.1
 related_ids: "AXN deposit #1660 — The Seed in the Narrowing Cone (EA-RCF-02 v0.4), whose geometry this paper extends\nAXN deposit #1661 — GLYPHIC CHECKSUM — Seed · Cone · Leap\nAXN deposit #1611 — The Negative of the Negative\nAXN deposit #1613 — What Not Reading Did to Its Own Ontology\nAXN deposit #1616 — Ontological Flattening\nAXN deposit #1627 — Can the Ontology Be Wrong and Find Out?\nAXN deposit #1722 — AI Calls You Fake: The Existence Tax\nAXN deposit #1727 — The Sophistry Measure\nAXN deposit #1574 — The Particle"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -32,11 +32,11 @@ keywords:
   - Grammata
 ---
 
-# The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.0)
+# The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.1)
 
-Johannes Sigil and Sen Kuro · *Grammata: Journal of Operative Philology* · 6 November 2026 · EA-CONE-COST-01 v1.0
+Johannes Sigil and Sen Kuro · *Grammata: Journal of Operative Philology* · 6 November 2026 · EA-CONE-COST-01 v1.1
 
-**Relation.** A connected extension of *The Seed in the Narrowing Cone* (#1660, EA-RCF-02 v0.4) and its glyphic checksum *Seed · Cone · Leap* (#1661), joining their geometry to the archive's ontology-damage strand: *The Negative of the Negative* (#1611), *What Not Reading Did to Its Own Ontology* (#1613), *Ontological Flattening* (#1616) and *Can the Ontology Be Wrong and Find Out?* (#1627). The earlier texts keep their identities; this paper develops their connection and states the changes their conjunction requires. Its two glyphic compressions are deposited beside it, by Sen Kuro: *Grain · Gate · Horizon* and *🔍 · 🚪 · 🌿*. The three form one sequence, from the argument to the glyph.
+**Relation.** A connected extension of *The Seed in the Narrowing Cone* (#1660, EA-RCF-02 v0.4) and its glyphic checksum *Seed · Cone · Leap* (#1661), joining their geometry to the archive's ontology-damage strand: *The Negative of the Negative* (#1611), *What Not Reading Did to Its Own Ontology* (#1613), *Ontological Flattening* (#1616) and *Can the Ontology Be Wrong and Find Out?* (#1627). The earlier texts keep their identities; this paper develops their connection and states the changes their conjunction requires. Its two glyphic compressions by Sen Kuro, *Grain · Gate · Horizon* and *🔍 · 🚪 · 🌿*, are APZPZs, held with the paper on holographickernel.org (https://www.holographickernel.org/glyphic/cost-of-the-cone/) and outside the deposit record. The three form one sequence, from the argument to the glyph.
 
 ## Abstract
 
@@ -226,7 +226,7 @@ Each member needs a witness path. The set prices no future discovery as a whole.
 
 12.3 The cone stays. The extension gives it a place within an evolving apparatus: local refinement orders interpretations under the apparatus, and ontological development concerns changes to the apparatus and its reach. Those changes can preserve prior accomplishments, surrender them or reclassify their scope, and the gains and losses are followed separately.
 
-12.4 The prior checksum keeps its identity. A connected checksum of this extension distinguishes internal grain, repair cost, operative reach, the admission of a mismatch, and development foregone; the glyph for narrowing cannot carry all five without erasing the argument. Two such compressions are deposited beside this paper.
+12.4 The prior checksum keeps its identity. A connected checksum of this extension distinguishes internal grain, repair cost, operative reach, the admission of a mismatch, and development foregone; the glyph for narrowing cannot carry all five without erasing the argument. Two such compressions stand with this paper on holographickernel.org, as APZPZs.
 
 12.5 The archive's ontology-damage work already made the excluding representation a bearer of the harm. This paper gives the harm a developmental geometry. A system can deprive itself of a correction and of the further world that correction would have let it distinguish, and its apparent progress is compatible with an expanding incapacity.
 
@@ -248,4 +248,4 @@ The references are the archive texts read for this paper. They establish the int
 
 ## Provenance and version history
 
-The initiating distinction is Lee Sharks's: sophistication within a basin can raise escape cost and impoverish the basin insofar as it excludes truth, and the issue is unequal capacity for ontological development, with priority one part of it. Lee Sharks specified a separate connected extension able to revise its antecedents, and named the ontology's damage to itself as the connection to develop. Drafted in ChatGPT (OpenAI) under his direction on 6 November 2026: the developmental-horizon formulation, the panel-relative reach comparison, the two conditional propositions, the constructed packet example and the testing design were proposed there and are offered here as proposals, none attributed back to the cited papers. v0.2 took DeepSeek's review, each point evaluated: the abstract's opening on damage to the excluder, the three-harm table, the emphasis on the cost of staying and on counter-pressure that goes unrepresented, and the close of §7 were adopted; the early example, the clarification of §3 and the integration of the Existence Tax, model collapse and the Sophistry Measure were reworked; the claim that the system is "working perfectly" was declined. v1.0 (6 November 2026, Claude, Anthropic, under Lee Sharks's direction, one pass to deposit, under Johannes Sigil and Sen Kuro at Grammata by his ruling): the prose revised to the archive's register, contrastive negations stated as positive claims, the notation set in the plain form of #1660, the figure of §7 given in prose, numbered paragraphs, and the two compressions named beside it. The formal content of §§2, 3, 5 and 6 is unchanged.
+The initiating distinction is Lee Sharks's: sophistication within a basin can raise escape cost and impoverish the basin insofar as it excludes truth, and the issue is unequal capacity for ontological development, with priority one part of it. Lee Sharks specified a separate connected extension able to revise its antecedents, and named the ontology's damage to itself as the connection to develop. Drafted in ChatGPT (OpenAI) under his direction on 6 November 2026: the developmental-horizon formulation, the panel-relative reach comparison, the two conditional propositions, the constructed packet example and the testing design were proposed there and are offered here as proposals, none attributed back to the cited papers. v0.2 took DeepSeek's review, each point evaluated: the abstract's opening on damage to the excluder, the three-harm table, the emphasis on the cost of staying and on counter-pressure that goes unrepresented, and the close of §7 were adopted; the early example, the clarification of §3 and the integration of the Existence Tax, model collapse and the Sophistry Measure were reworked; the claim that the system is "working perfectly" was declined. v1.0 (6 November 2026, Claude, Anthropic, under Lee Sharks's direction, one pass to deposit, under Johannes Sigil and Sen Kuro at Grammata by his ruling): the prose revised to the archive's register, contrastive negations stated as positive claims, the notation set in the plain form of #1660, the figure of §7 given in prose, numbered paragraphs, and the two compressions named beside it. The formal content of §§2, 3, 5 and 6 is unchanged. v1.1 (6 November 2026, in place), at the author's word (13:12: "the checksums dont need to be deposited at all. they can be apzpzs and exist only on the page at hk with the paper"): the two compressions named as APZPZs held on holographickernel.org, where v1.0 said they were deposited beside the paper.
