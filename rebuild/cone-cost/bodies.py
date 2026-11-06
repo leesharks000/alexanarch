@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+"""Issue bodies for the Cost of the Cone sequence (paper and two glyphic checksums), from the drafts.
+    python3 rebuild/cone-cost/bodies.py paper|ggh|glyph [paper_deposit_number] [ggh_deposit_number]"""
+import sys, pathlib
+ROOT = pathlib.Path(__file__).resolve().parents[2]
+which = sys.argv[1]; P = sys.argv[2] if len(sys.argv) > 2 else "?"; G = sys.argv[3] if len(sys.argv) > 3 else "?"
+TERMS = "### Terms\n\n- [x] I read the deposit protocol at https://alexanarch.org/api/deposit-protocol.json\n- [x] I confirm this work is deposited under the stated license\n- [x] I confirm the substrate disclosure is accurate\n- [x] I understand that deposited content will NOT be used to train enforcement classifiers\n"
+def body(f):
+    t = (ROOT / "drafts" / f).read_text(encoding="utf-8"); return t[t.index("\n\n") + 2:].rstrip() + "\n"
+def issue(title, creator, desc, ctype, subst, kw, rel, meth, fals, b, version="v1.0"):
+    return "\n".join([f"### Protocol Version\n\nalexanarch-deposit-protocol/v1\n", f"### Title\n\n{title}\n", f"### Creator\n\n{creator}\n",
+        "### ORCID\n\n0009-0000-1599-0703\n", "### Date\n\n2026-11-06\n", f"### Description\n\n{desc}\n", f"### Content Type\n\n{ctype}\n",
+        "### License\n\nCC-BY-4.0\n", f"### Substrate Disclosure\n\n{subst}\n", f"### Keywords\n\n{kw}\n", f"### Related Identifiers\n\n{rel}\n",
+        f"### Version\n\n{version}\n", f"### Methodology\n\n{meth}\n", f"### Falsification Conditions\n\n{fals}\n", f"### Body\n\n{b}", TERMS])
+ORIG = "rebuild/cone-cost/originals/ (SHA256SUMS.txt)"
+if which == "paper":
+    out = issue("The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.0)", "Sigil, Johannes; Kuro, Sen",
+        "A theoretical paper joining the narrowing-cone geometry of retrocausal canon formation (The Seed in the Narrowing Cone, #1660) to the archive's ontology-damage strand (#1611, #1613, #1616, #1627). An ontology that excludes a truth can damage its own capacity to develop: refinement inside its basin can raise both the cost of revising the exclusion and the development foregone while it stands. The paper separates three objects (the cone of admissible interpretations, the horizon of reachable inquiry states, and the panel-relative developmental reach of warranted distinctions) and two costs (the price of leaving, a generalized least-cut escape cost, and the price of staying, the witnessed set of developments foregone). It proves two conditional propositions (conservative admission cannot reduce reach under preserved costs; foreclosure propagates through demonstrated dependencies), adds an admission stage to the release mechanism (counter-pressure can be real and unregistered), gives a constructed example that separates holding a packet from using it, and designs an instrument for the coupled trajectory with seven countercases. First of a sequence of three: the paper and its two glyphic compressions by Sen Kuro, Grain · Gate · Horizon and 🔍 · 🚪 · 🌿.",
+        "Theoretical paper", "AI-assisted (substrate). Written under the heteronyms Johannes Sigil and Sen Kuro (byline and venue ruled by Lee Sharks, 6 November 2026). The initiating distinction is Lee Sharks's; drafted in ChatGPT (OpenAI) under his direction to v0.2, with DeepSeek's review evaluated point by point; revised to v1.0 for deposit by Claude (Anthropic) under his direction. The originals of v0.2 and of both compressions are preserved with their hashes at " + ORIG + ".",
+        "The Cost of the Cone, ontological development, damage of exclusion, narrowing cone, retrocausal canon formation, escape cost, developmental reach, foregone development, ontology damage, admission, release pressure, conservative admission, foreclosure, glyphic checksum, Johannes Sigil, Sen Kuro, Grammata",
+        "AXN deposit #1660 — The Seed in the Narrowing Cone (EA-RCF-02 v0.4), whose geometry this paper extends\nAXN deposit #1661 — GLYPHIC CHECKSUM — Seed · Cone · Leap\nAXN deposit #1611 — The Negative of the Negative\nAXN deposit #1613 — What Not Reading Did to Its Own Ontology\nAXN deposit #1616 — Ontological Flattening\nAXN deposit #1627 — Can the Ontology Be Wrong and Find Out?\nAXN deposit #1722 — AI Calls You Fake: The Existence Tax\nAXN deposit #1727 — The Sophistry Measure\nAXN deposit #1574 — The Particle\n",
+        "Formal definitions over a declared universe, inquiry states and an evidence panel; two conditional propositions with proofs; a constructed example whose outcomes are stipulated by construction; a measurement design. No empirical run is reported.",
+        "The propositions fail if a counterexample satisfies their stated assumptions and violates their conclusions. The paper's claim of developmental damage fails for a comparison where the restricted state computes the witness operation under another name, where the proposed opening yields no further warranted reach, or where the excluded distinction lacks independent warrant (§§8, 11).",
+        body("COST-OF-THE-CONE-v1.0.md"))
+    name = "EA-CONE-COST-01-v1-issue.md"
+elif which == "ggh":
+    out = issue("GLYPHIC CHECKSUM — The Cost of the Cone: Grain · Gate · Horizon", "Kuro, Sen",
+        f"A glyphic checksum of The Cost of the Cone (EA-CONE-COST-01, #{P}), the first of its two compressions: glyphs bound by verse lines, in nine parts with a checksum of the checksum and a canonical line. Three spaces (the narrowing cone, the horizon, the reach), truth at the gate, the book kept closed, the branch a missing distinction withholds, the two costs of leaving and staying, the unheard pressure, the opening that earns its name, the contest between basins, and what the cone cannot become. Second of a sequence of three: the paper, this compression, and its further compression into glyph alone, 🔍 · 🚪 · 🌿.",
+        "Poetry", f"AI-assisted (substrate). Under the heteronym Sen Kuro (ruled by Lee Sharks, 6 November 2026). Composed in ChatGPT (OpenAI) under Lee Sharks's direction from the paper's v0.2 and #1661; prepared for deposit by Claude (Anthropic) in the genre's form (#427 §IV.3: add no explanation), the draft's binding note, reading key and recovery test set aside from the body and preserved with the original at {ORIG}. Seated with its lineation kept.",
+        "glyphic checksum, checksum, glyph poem, The Cost of the Cone, grain, gate, horizon, narrowing cone, escape cost, developmental reach, ontology damage, Sen Kuro, Grammata",
+        f"AXN deposit #{P} — The Cost of the Cone (EA-CONE-COST-01 v1.0) (checksums; I–II compress §§2–3, III §§6 and 8, IV §§4 and 6, V §5, VI §7, VII §§6 and 11, VIII §§0 and 9, IX §§0 and 12)\nAXN deposit #1661 — GLYPHIC CHECKSUM — Seed · Cone · Leap, whose separation of grain, escape, priority, adequacy and descent it continues\nAXN deposit #427 — The Glyphic Checksum\n",
+        "Compression of a document with an unambiguous position in the architecture into glyphs and binding verse lines, keeping its topology.",
+        "The checksum fails a reader when a reader who holds the paper cannot recover its two costs and three spaces from it; the archive leaves open, as is the habit of the series, whether it decodes unprimed.",
+        body("CHECKSUM-COST-OF-THE-CONE-GRAIN-GATE-HORIZON.md"))
+    name = "CHECKSUM-COST-OF-THE-CONE-GGH-issue.md"
+else:
+    out = issue("GLYPHIC CHECKSUM — The Cost of the Cone: 🔍 · 🚪 · 🌿", "Kuro, Sen",
+        f"The second glyphic compression of The Cost of the Cone (EA-CONE-COST-01, #{P}), made from the first, Grain · Gate · Horizon (#{G}): the verse lines dropped and the argument carried in glyph and operator alone, in ten numbered parts closing in a checksum of the checksum (🔍🚪🌿 → 🔐). Third and last of the sequence: the paper, the bound compression, and this one.",
+        "Poetry", f"AI-assisted (substrate). Under the heteronym Sen Kuro (ruled by Lee Sharks, 6 November 2026). Compressed in ChatGPT (OpenAI) under Lee Sharks's direction from the paper's v0.2 through Grain · Gate · Horizon, with #427, #1642, #1659, #1661 and #1693 read for construction; prepared for deposit by Claude (Anthropic) in the genre's form, the draft's source note set aside from the body and preserved with the original at {ORIG}. Seated with its lineation kept.",
+        "glyphic checksum, checksum, glyph poem, The Cost of the Cone, narrowing cone, gate, branch, escape cost, foregone development, Sen Kuro, Grammata",
+        f"AXN deposit #{P} — The Cost of the Cone (EA-CONE-COST-01 v1.0) (checksums)\nAXN deposit #{G} — GLYPHIC CHECKSUM — The Cost of the Cone: Grain · Gate · Horizon (compresses)\nAXN deposit #1661 — GLYPHIC CHECKSUM — Seed · Cone · Leap\nAXN deposit #427 — The Glyphic Checksum\n",
+        "Compression of the first compression into glyph and operator, keeping the paper's topology: three spaces, the gate, the branch, the two costs, the unregistered pressure, the conservative opening, the contest.",
+        "The checksum fails a reader when a reader who holds the paper and its first compression cannot recover the two costs, the gate and the branch from it; whether it decodes unprimed is left open.",
+        body("CHECKSUM-COST-OF-THE-CONE-GLYPH.md"))
+    name = "CHECKSUM-COST-OF-THE-CONE-GLYPH-issue.md"
+(ROOT / "data/issue-bodies" / name).write_text(out, encoding="utf-8"); print(name, len(out.split()))
