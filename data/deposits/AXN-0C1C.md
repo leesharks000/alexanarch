@@ -1,14 +1,14 @@
 ---
 deposit_number: 1743
 hex: 0C1C
-title: "A Firm No: What the 3I/ATLAS Radio Searches Could See (EA-3I-ATLAS-PUBLIC-01 v1.0)"
+title: "A Firm No: What the 3I/ATLAS Radio Searches Could See (EA-3I-ATLAS-PUBLIC-01 v1.1)"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-11-06
 content_type: Essay; public account of an investigation (Transactions of the Semantic Economy Institute)
 license: CC-BY-4.0
 substrate: "AI-assisted (substrate). The investigation it reports was run by Lee Sharks with two machine collaborators, Claude (Anthropic) and ChatGPT (OpenAI), on public data (the companion notebook, #1742, records who ran what). The essay was drafted by Claude in session on 2026-11-06 under Lee Sharks's direction and revised on reviews by DeepSeek and ChatGPT, each point checked against the record (#1742, §13). Its angle, its ruling on the Overview's account of Loeb, and the decision to deposit are Lee Sharks's; what the essay claims is his decision."
-version: v1.0
+version: v1.1
 related_ids: "#1742 (What the Filters Kept, the companion notebook and its evidence); #1450 (The Iceberg Document); #1727 (the sophistry measure); #1523 (Frame Conversion); the capture avi-loeb-3i-atlas-aio (AXN:0BE0.CAPTURE); arXiv:2512.18142 (the ATA search); arXiv:2507.12213 (Hibberd, Crowl and Loeb); arXiv:2508.09167 (the Loeb Scale)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -32,9 +32,9 @@ keywords:
   - Transactions of the Semantic Economy Institute
 ---
 
-# A Firm No: What the 3I/ATLAS Radio Searches Could See (EA-3I-ATLAS-PUBLIC-01 v1.0)
+# A Firm No: What the 3I/ATLAS Radio Searches Could See (EA-3I-ATLAS-PUBLIC-01 v1.1)
 
-Lee Sharks · Semantic Economy Institute · Crimson Hexagonal Archive · 6 November 2026
+Lee Sharks · Semantic Economy Institute · Crimson Hexagonal Archive · 6 November 2026 · version 1.1, in place the same day
 
 **A note on how this was done.** The searches described here were run on public telescope data between 2 and 6 November 2026 with two machine collaborators, Claude (Anthropic) and ChatGPT (OpenAI), working on the same files and checking each other. Each test that decides anything had its plan written and hashed before the counts it decides; several of them reused data we had already examined, and the notebook says which. Looks taken without a fixed plan are marked exploratory and decide nothing. The full working record, with the code, the results and every number below, is the companion notebook by Nobel Glas and Orin Trace, *What the Filters Kept* (#1742, Transactions on Substrate Engineering). What this essay claims is my decision.
 
@@ -50,7 +50,7 @@ The AI Overview gave Avi Loeb's early suggestion that the interstellar object 3I
 
 The quotation is real. The account around it is false.
 
-"Most likely natural" was Loeb's position from the beginning. His paper on the object posted in July 2025 (Hibberd, Crowl and Loeb, arXiv:2507.12213), concludes: "By far the most likely outcome will be that 3I/ATLAS is a completely natural interstellar object, probably a comet." Beside it he kept a second instrument, his own scale for interstellar objects, on which he ranked 3I/ATLAS at Level 4: a possible technosignature, one step below the line where the scale turns to suspecting artificial origin. On the scale's own terms, Levels 5 to 7 mark "the qualitative shift to suspected artificial origin", and "Level 4 classification does not imply artificial origin". Level 4 is the highest rank at which natural remains the better bet. It was at Level 4 in August 2025, when he published the scale, still at 4 in December, and at 4 again in his essay of 23 April 2026, where he set out the anomalies one by one, each with a probability ("aligned to within 5 degrees with the orbital plane of the planets around the Sun, with a probability of 0.2%"), reported that the fading light curve "does not show any evidence for artificial (self-produced) light", and concluded: "Altogether, these anomalies led me to rank 3I/ATLAS as Level 4 on the Loeb Scale."
+"Most likely natural" was Loeb's position from the beginning. His paper on the object posted in July 2025 (Hibberd, Crowl and Loeb, arXiv:2507.12213), concludes: "By far the most likely outcome will be that 3I/ATLAS is a completely natural interstellar object, probably a comet." Beside it he kept a second instrument, his own scale for interstellar objects, on which he ranked 3I/ATLAS at Level 4: a possible technosignature, one step below the line where the scale turns to suspecting artificial origin. On the scale's own terms, Levels 5 to 7 mark "the qualitative shift to suspected artificial origin", and "Level 4 classification does not imply artificial origin". Level 4 is the highest rank at which natural remains the better bet. It was at Level 4 in August 2025, when he published the scale, still at 4 in December, and at 4 again in his essay of 23 April 2026, where he set out the anomalies one by one, with a probability for four of them ("aligned to within 5 degrees with the orbital plane of the planets around the Sun, with a probability of 0.2%"), reported that the fading light curve "does not show any evidence for artificial (self-produced) light", and concluded: "Altogether, these anomalies led me to rank 3I/ATLAS as Level 4 on the Loeb Scale."
 
 So there was no shift. The December sentence restates a view he held in July, and the ranking beside it stood at 4 at every date I could check. The Overview put the restatement under a heading that announces a change of mind, and called it an acknowledgment: a concession to a consensus he had been inside from the start. It kept every word and changed what the words were. Then it left out the argument that shows he hadn't moved, though one of his later essays sat among its own source cards.
 
@@ -62,7 +62,7 @@ The same thing happened to the science.
 
 ## The firm no
 
-Three teams published radio searches of 3I/ATLAS: the Allen Telescope Array in California (Sheikh et al., arXiv:2512.18142), the Green Bank Telescope in West Virginia (arXiv:2512.19763) and China's FAST. All three found nothing they judged worth following up. The Green Bank team reports "a nondetection of candidate signals down to the 100 mW level". The ATA team: "We did not find any signals worthy of additional follow-up." Each states the frequencies and drift rates it searched, and the ATA ties its power limit, 10 to 110 watts, to them.
+Four teams published radio searches of 3I/ATLAS: the Allen Telescope Array in California (Sheikh et al., arXiv:2512.18142), the Green Bank Telescope in West Virginia (arXiv:2512.19763), China's FAST, and MeerKAT in South Africa with Breakthrough Listen, which reported "a detection limit of 0.17 W over the 900-1670 MHz range" and put all 23,689 of its signals down to human interference (ATel #17499, 18 November 2025). All four found nothing they judged worth following up. The Green Bank team reports "a nondetection of candidate signals down to the 100 mW level". The ATA team: "We did not find any signals worthy of additional follow-up." Each states the frequencies and drift rates it searched, and the ATA ties its power limit, 10 to 110 watts, to them.
 
 The public account turned that into a verdict. One widely shared write-up: "The question everyone was waiting for has an answer, and it is a firm one." To its credit, the same piece gives Loeb's reply, "absence of a signal is not proof of absence." Its FAQ then drops the restrictions: "The ATA survey ruled out any transmitter stronger than roughly 10 to 110 watts across 1 to 9 GHz." The paper's limit holds for the frequencies it kept and the drift rates it kept. The FAQ's holds for everything.
 
@@ -96,7 +96,7 @@ Then there is the Green Bank cadence of 18 December 2025.
 
 The Green Bank search observed in a standard pattern: three looks at the object (ON) alternating with three looks at empty sky nearby (OFF). A signal from the object should appear in the ON looks and vanish in the OFF looks.
 
-We took a narrow slice of that data, 2.93 MHz wide around 1667 MHz, near a frequency where comets naturally glow (the hydroxyl line). We followed the object's own drift through all three ON looks and counted places where weak power lined up in all three while the OFF looks stayed quiet. Then, as the control, we did the same count along forty deliberately wrong drifts. If nothing is there, the true drift should look like the wrong ones.
+We took a narrow slice of that data, 2.93 MHz wide around 1667 MHz, near the hydroxyl line, where comets absorb and emit radio light (MeerKAT recorded 3I/ATLAS's hydroxyl in absorption from 24 October 2025 and in emission on 11 and 12 November, ATel #17499). We followed the object's own drift through all three ON looks and counted places where weak power lined up in all three while the OFF looks stayed quiet. Then, as the control, we did the same count along forty deliberately wrong drifts. If nothing is there, the true drift should look like the wrong ones.
 
 The wrong drifts gave an average of 3.75 such clusters, never more than 8. The object's true drift gave 13.
 
@@ -104,7 +104,7 @@ Here is what we did with those thirteen, in order.
 
 - **Reproduced them.** An independent implementation gets exactly 13.
 - **Tested the assignment of looks.** Of the 20 ways to label three of the six looks "ON", only the real labelling gives 13; the others give 0 to 6. That shows the count depends on the actual sequence of looks. It does not by itself place the features on the comet: the real sequence also carries the telescope's movements and the instrument's states through the night, and those stay possible explanations.
-- **Ruled out the usual suspects.** The comet's own hydroxyl emission would sit within about 11 kHz of known frequencies; the nearest of the thirteen is 54 kHz away. Interference fixed in the receiver, measured from the OFF looks and masked out, leaves 12 (one of the thirteen sits on a known interference line). No cluster is a single spike.
+- **Ruled out the usual suspects.** The comet's own hydroxyl line, in absorption or in emission, would sit within about 11 kHz of known frequencies; the nearest of the thirteen is 54 kHz away. Interference fixed in the receiver, measured from the OFF looks and masked out, leaves 12 (one of the thirteen sits on a known interference line). No cluster is a single spike.
 - **Built other backgrounds**, each destroying one thing a real source would need, and kept each family's result separate: shuffling the time samples within each look (40 tries, at most 8), the other labellings of ON and OFF (19, at most 6), scrambling the positions of features in frequency (40, at most 6). None reached 13, and neither did any of the forty wrong drifts. Each family is a check on one thing; together they aren't one calibrated measure of chance, and each also removes things no source needs, like the instrument's drift through a look.
 - **Looked elsewhere in the band.** Across 64 slices of the same Green Bank data, this one is the largest excess by a wide margin, and the only slice that beats every control. That says how unusual it is among the slices we looked at; it doesn't give the odds of finding something this large somewhere in a search like ours, which nobody has calculated. The other 192 slices of the band are unsurveyed.
 
@@ -143,7 +143,7 @@ There is a precedent for this kind of patience. When the ozone hole first appear
 
 Here is the point. These searches were built to rule a signal out as cheaply as possible. That can be good method. You set a threshold, a band and a drift window, and you decline to chase whatever falls outside them. But ruling out has work of its own, and that work wasn't done.
 
-The ATA's drift filter carries the wrong sign for the drift the team's own ephemeris gives, which one check against the object would have caught; on their own figure, the object's drift falls in the half they discarded. What the filter kept of signals moving with the object isn't measured anywhere in the paper. All three searches find hits one look at a time, above a threshold, so anything too faint to clear a single look was never looked for: the place where something that knew our thresholds would sit, and the place where the thirteen turned up. And the result went out as a firm no for 1 to 9 GHz. It was a performance of a search for signal, close to perfunctory, and what it could support was a much smaller statement.
+The ATA's drift filter carries the wrong sign for the drift the team's own ephemeris gives, which one check against the object would have caught; on their own figure, the object's drift falls in the half they discarded. What the filter kept of signals moving with the object isn't measured anywhere in the paper. The ATA, Green Bank and FAST searches find hits one look at a time, above a threshold, so anything too faint to clear a single look was never looked for: the place where something that knew our thresholds would sit, and the place where the thirteen turned up. And the result went out as a firm no for 1 to 9 GHz. It was a performance of a search for signal, close to perfunctory, and what it could support was a much smaller statement.
 
 The teams did publish their data, which is more than most science does. It's the only reason any of this could be checked.
 
@@ -154,3 +154,5 @@ The teams did publish their data, which is more than most science does. It's the
 A scope-bearing sentence would have cost almost nothing: *no narrowband signal above these strengths, within these drift rates, in these bands, on these dates.* That sentence is true, and it leaves room for what it doesn't cover. The firm no doesn't.
 
 Here is what this investigation established: a documented filter discrepancy in a published search; a reproducible, fragile excess in public data that no one has explained; and the specific tests that would resolve it, one of them a single document already on file. I don't know what the thirteen are, and the public data can't tell us. That is more than the public account allows.
+
+*Version 1.1 (6 November 2026), in place of version 1.0 the same day, on three factual repairs, each checked against its source. MeerKAT's search, a fourth, is added beside the three: its limit, 0.17 W over 900 to 1670 MHz (ATel #17499), sits above the strength of the thirteen. The hydroxyl line is described as the comet's absorption and emission: MeerKAT's first detections of 3I/ATLAS were in absorption, and its emission came in November. Loeb's April essay gives probabilities for four of the anomalies, where version 1.0 said each.*
