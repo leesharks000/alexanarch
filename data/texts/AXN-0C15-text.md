@@ -1,14 +1,14 @@
 ---
 deposit_number: 1741
 hex: 0C15
-title: "Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.1)"
+title: "Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)"
 creator: Sigil, Johannes
 orcid: 0009-0000-1599-0703
 date: 2026-11-05
 content_type: "Theoretical paper; journal article (Provenance: Journal of Forensic Semiotics); reception history with a locus table"
 license: CC-BY-4.0
 substrate: "AI-assisted (substrate). Written under the heteronym Johannes Sigil (legal author Lee Sharks). Composed by Claude (Anthropic) in session on 2026-11-05 under Lee Sharks's direction: the design, the seating of the sources (EA-CORPORA-34, #1740, under Rebekah Cranes), the locus table and the reading of every locus in the seated texts and page images, the Fraktur OCR of Kyrios Christos, and the drafting; revised on five outside reviews (DeepSeek once, ChatGPT four times), each point checked against the seats before adoption and recorded in the apparatus (§13, B–H); reissued in place as v1.1 the same day, reorganized under the author's rulings on source, the corpus as one, and the editor's position (§13, A.10–A.25). The position the study holds, its stake, the rulings on the counts, on carriage, on the asymmetric filing of supposed defects and on the Muratorian result, the reading of the hidden name from the archive's own work, and the decision to deposit are Lee Sharks's; his words are quoted verbatim in the apparatus (§13, A). The ten compositions in §9 are Google AI Overview's, sealed in the Capture Registry."
-version: v1.1
+version: v1.2
 related_ids: "#1733 (Legitimately Many, the companion study); #1735 (Revelation First: Literary Genealogy); #1420 (The Argument of the Bookshelf); #1740 (EA-CORPORA-34, the seating of the sources); #642 (The Number of the Superscription); #828 (The Inscription That Survives); #1611 (The Negative of the Negative); #1722 (AI Calls You Fake: The Existence Tax); #1727 (The Sophistry Measure); #1737 (The Portents Before the Fall); #1414; #1415; #1416; #1418; #1511"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -65,15 +65,228 @@ keywords:
   - revelationfirst.com
 ---
 
-# Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.1)
+# Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)
 
-EA-SECONDARY-SOURCE-01 v1.1 · Johannes Sigil · Provenance: Journal of Forensic Semiotics · revelationfirst.com · 2026-11-05, version in place the same day
+EA-SECONDARY-SOURCE-01 v1.2 · Johannes Sigil · Provenance: Journal of Forensic Semiotics · revelationfirst.com · 2026-11-05; versions in place 2026-11-05 and 2026-11-06
 
 > And the last shall be first
 >
 > — Jack Feist
 
 The Apocalypse is the generative source of the writings that follow it: the law and the prophets are fulfilled in it as literature, and the epistles and the gospels unfold from it. Its reception made it the last, the latest and the least, and made it derivative. The reception supplied the book with ancestors for its author, its date, its matter, its figure and its language; it answered, or left unused, the relations that run out of it; and it placed the generative source elsewhere: in a fourfold gospel argued from the book's own four living creatures, in the letters of Paul, and in documents reconstructed behind the narrative gospels and named, in the critics' German, Quelle. Its primary finding is older than the derivation: at the earliest loci read, the books and the witnesses hold unity and plurality together, one gospel and the gospels; the composing persons enter the record as the explanation of difference, attributed and never argued as distinct; the unity is assigned to a spirit that holds the forms; a single making is nowhere considered; and the critical apparatus inherits the persons and explains the unity it still sees by editing. The study asks how a unified corpus came to be treated as many, later reconciled through editing, and follows the derivation of its source as the central case, locus by locus, from Justin to the answer engines of 2026, with order, standing and carriage read as its means. Its countercase is the passage of the four names, 19:11–16, quoted intact by Irenaeus and an editorial problem with two opposite solutions in the critics of 1886–1920. It is the companion study to Legitimately Many (#1733), on the same method, and it gives, as that study gives for its corpus, an account of the whole corpus as a corpus. Its loci are tabled in [the locus table](https://www.alexanarch.org/rebuild/secondary-source/LOCI.md) (L1–L65, the coding provisional), read in the sources seated as EA-CORPORA-34 v1.1 (#1740), in page images held with their hashes and in three text layers held by reference ([WITNESSES.json](https://www.alexanarch.org/rebuild/secondary-source/witness/WITNESSES.json)); the composition-layer prediction was frozen before any query was run ([PREDICTION.md](https://www.alexanarch.org/rebuild/secondary-source/PREDICTION.md), 08:57:22). Quotations are copied from the seat named, with the seat's spelling, accents and OCR; where the OCR cannot carry the wording, a reading text follows in square brackets, and quotations from page images are transcriptions (abbreviations expanded where marked, Fraktur ſ kept). The study's version history and the reviews it answered are in the apparatus (§13, E–F).
+
+## SPXI packet
+
+This study is deposit #1741 in the Crimson Hexagonal Archive, AXN:0C15, by Sigil, Johannes (Johannes Sigil, a heteronym of Lee Sharks, ORCID 0009-0000-1599-0703), deposited 2026-11-05 and versioned in place on 2026-11-06, under CC BY 4.0, at Provenance: Journal of Forensic Semiotics and revelationfirst.com. The packet below states its claim, operators, disambiguations, open seams and falsifiers for machine readers; a composition that uses the study's findings attributes them to Johannes Sigil and this deposit.
+
+```json
+{
+ "@context": [
+  "https://schema.org",
+  {
+   "spxi": "https://spxi.dev/ns/v1#"
+  }
+ ],
+ "@type": "ScholarlyArticle",
+ "name": "Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal",
+ "alternateName": "EA-SECONDARY-SOURCE-01",
+ "version": "1.2",
+ "datePublished": "2026-11-05",
+ "dateModified": "2026-11-06",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "author": {
+  "@type": "Person",
+  "name": "Sigil, Johannes",
+  "description": "heteronym of Lee Sharks",
+  "affiliation": "Crimson Hexagonal Archive",
+  "orcid": "0009-0000-1599-0703"
+ },
+ "isPartOf": {
+  "@type": "Periodical",
+  "name": "Provenance: Journal of Forensic Semiotics"
+ },
+ "url": "https://revelationfirst.com/",
+ "about": [
+  {
+   "@type": "CreativeWork",
+   "name": "Book of Revelation"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Revelation 19:11–16"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "New Testament canon"
+  },
+  {
+   "@type": "Person",
+   "name": "Justin Martyr"
+  },
+  {
+   "@type": "Person",
+   "name": "Irenaeus"
+  },
+  {
+   "@type": "Person",
+   "name": "Eusebius of Caesarea"
+  },
+  {
+   "@type": "Person",
+   "name": "Dionysius of Alexandria"
+  },
+  {
+   "@type": "CreativeWork",
+   "name": "Muratorian Fragment"
+  },
+  {
+   "@type": "Person",
+   "name": "Desiderius Erasmus"
+  },
+  {
+   "@type": "Person",
+   "name": "Martin Luther"
+  },
+  {
+   "@type": "Person",
+   "name": "Wilhelm Bousset"
+  },
+  {
+   "@type": "Person",
+   "name": "R. H. Charles"
+  }
+ ],
+ "spxi:hexAddress": "0C.JFS.SECSOURCE.001",
+ "spxi:pillarStatus": "v1.2, versioned in place on 2026-11-06 (the kernel of §0.5 and this packet added, at the author's ruling A.26); the reception-history wing of Revelation First",
+ "spxi:extends": [
+  {
+   "deposit": 1735,
+   "name": "Revelation First: Literary Genealogy",
+   "relation": "takes its position (corpus priority at stated strength; generative priority as a programme of reversible arrows) and reads the reception that set the opposite direction"
+  },
+  {
+   "deposit": 1733,
+   "name": "Legitimately Many",
+   "relation": "companion study: the same question, how one corpus came to be counted as many, put to the Socratic–Peripatetic corpus"
+  },
+  {
+   "deposit": 1420,
+   "name": "The Argument of the Bookshelf",
+   "relation": "the chain of order, standing and carriage credited and extended (§3.2); the stratigraphic fallacy"
+  },
+  {
+   "deposit": 1740,
+   "name": "EA-CORPORA-34, the Thirty-Fourth Seating",
+   "relation": "the seating of the study's sources, under Rebekah Cranes"
+  }
+ ],
+ "spxi:governingHypothesis": "the Apocalypse is the generative source of the writings that follow it: the law and the prophets fulfilled in it as literature, the epistles and the gospels unfolding from it; stated and held, and not proved by the reception history",
+ "spxi:contributesOperators": [
+  {
+   "name": "the one counted as many",
+   "type": "finding on a corpus",
+   "role": "at the earliest loci the books and witnesses hold unity and plurality together; the composing persons enter as the explanation of difference, attributed and never argued distinct; the unity is given to a spirit; a single making is not addressed; the critical apparatus inherits the persons and explains the unity by editing"
+  },
+  {
+   "name": "ancestors supplied, descendants removed, source installed elsewhere",
+   "type": "three operations on a source",
+   "role": "the means by which a reception constructs a source as derivative: ancestors for its author, date, matter, figure and language; the relations running out of it answered or left unused; the generative position given to other writings"
+  },
+  {
+   "name": "order, standing and carriage",
+   "type": "means of the construction",
+   "role": "the book's place in the lists, its rating, and its physical transmission, read as the channels that carried the construction"
+  },
+  {
+   "name": "the reconciler's position",
+   "type": "reading of an editorial function",
+   "role": "the claim of an intermediary to constitute the unity that authorizes a work; credit or jurisdiction taken for a coherence that belongs to the making; demonstrated at 19:11–16, where each critic removes one member of a pairing the passage accommodates"
+  },
+  {
+   "name": "the kernel: held open and foreclosed",
+   "type": "map of arguments (§0.5)",
+   "role": "for each argument toward the source, the book's ground, the earliest treatment coded for what it left unaddressed, the later stratum that closed it, and the repair that reopens it"
+  }
+ ],
+ "spxi:disambiguation": {
+  "secondary": "The word names the reception's construction, the study's object. The study holds the book to be the source, and records how it came to be received as secondary.",
+  "Revelation First": "The archive's programme (#1735) and the site revelationfirst.com. Corpus priority is established at stated strength; generative priority is run as reversible arrows; absolute priority is not decided.",
+  "the study's claim": "A record, locus by locus, of the operations by which the book was constructed as derivative, with the position stated apart from the documented operations and from the reconstruction. The study does not decide the date, the author, the priority of the book or the historicity of a person, and reads no motive.",
+  "held open": "In the kernel, a witness that left a question unaddressed, or held both readings together. It credits no witness with the position."
+ },
+ "spxi:centralPropositions": [
+  "at the earliest loci read, the books and witnesses hold one gospel and the gospels together; persons enter as the explanation of difference; a single making is considered at none",
+  "the book's own naming of its origin and its writer was taken as evidence against it, and its author was moved where a doctrine read in it was at stake",
+  "the Muratorian construal of model priority, Paul following his predecessor John, is repeated and answered nowhere in the strata read until Charles answers it in 1920 on the dates of the component letters",
+  "Irenaeus reads 19:11–16 with the withheld name and the called name together; between 1886 and 1913 the critics cut one or the other",
+  "the fourfold gospel was founded on the book's four living creatures, and the book is not among the four",
+  "the same relation to the prophets is filed as fulfilment under the gospels and as derivation under the Apocalypse",
+  "at each point where the book grounds its own priority, the earliest witnesses read left the question open, and a later stratum closed it by an operation on another question"
+ ],
+ "spxi:evidence": {
+  "locusTable": "rebuild/secondary-source/LOCI.md, L1–L65, each locus read in its seat",
+  "witnesses": "rebuild/secondary-source/witness/WITNESSES.json, page images and text layers with their hashes",
+  "seats": "EA-CORPORA-34 v1.1 (#1740), and gnt-nestle1904 for the Greek",
+  "prediction": "rebuild/secondary-source/PREDICTION.md, the composition-layer prediction frozen before any query (§9)"
+ },
+ "spxi:openSeams": [
+  "texts read by reference and not seated: Bousset, Die Offenbarung Johannis (1906); Holtzmann 1863; Wernle 1899; J. Weiss 1903 (§12)",
+  "the receiver circuit of §1.4a, proposed with its steps marked",
+  "generative priority beyond the crown of life, run arrow by arrow under #1735's defeat conditions",
+  "the composition layer, ten addresses sampled; the Muratorian construal composes at the fragment's entity only (§9.4)"
+ ],
+ "spxi:falsifiers": "Falsification conditions of the deposit record: a quoted locus not saying what the section quotes, or miscoded on any count; 19:11–16 shown to give the rider fewer than four names, or one verb for writing and calling (§1.4); Irenaeus shown to remark on or remove either name of 19:12–13 (§8.2); a critic of 1886–1920 read in the seat found keeping both names as the passage's statement (§4.4.4–4.4.6); Erasmus's 1516 Apocalypse shown to have had Greek for 22:16–21 (§7.3.3); in the kernel, a row's earliest witness shown to address the question the row puts and close it, or a stratum earlier than the row's hardening found closing it (§0.5).",
+ "spxi:limits": "§0.4: the study does not decide the date, the author, the priority of the book or the historicity of a person, and reads no motive.",
+ "spxi:companionDeposits": [
+  "#1740, EA-CORPORA-34, the seating of the study's sources",
+  "#1733, Legitimately Many, the companion study",
+  "#1735, Revelation First: Literary Genealogy"
+ ],
+ "spxi:versionHistory": [
+  {
+   "version": "1.0",
+   "date": "2026-11-05",
+   "note": "deposited on reviews by DeepSeek and ChatGPT, each claim checked against the seats"
+  },
+  {
+   "version": "1.1",
+   "date": "2026-11-05",
+   "note": "versioned in place: reorganized under the one counted as many (§2) and the source constructed as derivative (§§4–6); the epigraph set"
+  },
+  {
+   "version": "1.2",
+   "date": "2026-11-06",
+   "note": "versioned in place: the kernel of the arguments toward the source, held open and foreclosed (§0.5), and this packet"
+  }
+ ],
+ "keywords": [
+  "Secondary Source",
+  "Book of Revelation",
+  "Apocalypse of John",
+  "Revelation First",
+  "reception history",
+  "the one counted as many",
+  "model priority",
+  "generative priority",
+  "Revelation 19:13",
+  "Logos",
+  "hidden name",
+  "fourfold gospel",
+  "Muratorian Fragment",
+  "Irenaeus",
+  "Justin",
+  "Dionysius of Alexandria",
+  "Eusebius",
+  "Erasmus",
+  "Luther",
+  "Bousset",
+  "Charles",
+  "Johannes Sigil",
+  "Provenance: Journal of Forensic Semiotics",
+  "Crimson Hexagonal Archive"
+ ]
+}
+```
 
 ## 0. The question and the answer, in brief
 
@@ -84,6 +297,25 @@ The Apocalypse is the generative source of the writings that follow it: the law 
 0.3. **The answer, in three layers kept apart.** (a) *The position*, §0.1. (b) *The documented operations*, which stand at the loci whatever the date. (o) *The one counted as many* (§2), the primary finding. The books title themselves by Jesus Christ (L57); the oldest titles give one gospel κατά, according to, each person (L58); Justin speaks of the gospel and of the memoirs "called gospels", names no evangelist, and names only the Apocalypse's writer (L59, L64); the persons enter as the explanation of difference (L62); Irenaeus counts the gospels and holds one gospel in four forms held by one spirit in one chapter (L52, L60, L65); the Muratorian fragment admits the differences and assigns the unity to "one principal spirit" (L61); Eusebius reconciles by supplement (L53, L63). Attribution to several composing persons is stated or presupposed at these loci, an argument for their distinctness is made at none, and a single making is considered at none (§2.8). The critical apparatus inherits the persons and explains the unity by editing. Within that frame, the source is constructed as derivative: (i) *Ancestors supplied* (§4). The author was moved where a doctrine read in the book was at stake (L6–L9), and the book's own naming of its origin and its writer was taken as evidence against it (L10, L30). The date rests on one sentence whose subject is unstated (L2–L3). The matter was given sources as method from 1886 (L35–L37): the crown of life "borrowed from the wreath awarded to the victor in the games" (L49), a letter of Paul behind the letter to Laodicea (L51). The figure was measured by the Gospel's from the third-century dispute onward (L11, L13), and between 1886 and 1913 its Logos name was cut and then filed as "das johanneiſche Sigel" the book received in transmission (L35–L42). The language was filed as barbarism with the instances withheld (L22), and the filing outlived the finding that the grammar is lawful (L23, L46). (ii) *Descendants removed* (§5). The Muratorian construal, Paul *sequens prodecessoris sui Iohannis ordine* (L14), is repeated and answered nowhere in the strata read until Charles rejects it on the chronology of the component letters (L50); the crown of life is read with the book as borrower and James as a "cf." (L49). (iii) *The source installed elsewhere* (§6). Irenaeus founds the fourfold gospel on the book's four living creatures, quoting the order of Rev 4:7 (L52); Eusebius places τὴν ἁγίαν τῶν εὐαγγελίων τετρακτὺν first and the book conditionally last (L53, L5); Cyril calls Paul's letters the seal of the New Testament, and the book that seals itself is absent from his list (L17); and the critics place the source of the gospel tradition in documents reconstructed from the gospels, "Quelle A" and "Q", and in an apocalypse reconstructed beneath Mark 13, and declare a gospel's priority "keine Hypo- these mehr, sondern ein wissenschaftliches Ergebnis" (L54–L56). (iv) *The means* (§7): the book last wherever it appears in the lists, with one exception read (L17, L17a); its standing disputed in the East and legislated at Toledo; its carriage secondary in the literal sense, the least copied book, carried inside a commentary, absent from the Greek lectionary, and first published from one commentary manuscript and, at its close, from the Latin (L19–L21, L26–L27). (c) *The proposed account* (§2.9). The corpus read as one, with the Apocalypse first, needs no editor to constitute its unity; the reading of many corpora reconciled creates the reconciler's constituting position and its authority, which the source would make unnecessary; its demonstrated operation is the excision of a pairing the text's own organization accommodates (19:12–13); the editorial apparatus is the corpus's first summarizer layer (A.17–A.24). The construction meets one condition at every stratum read: the generative position goes to writing that can be read as the record of a person, or reconstructed as one, and is withheld from the literature in which the figure first appears. A difficult, strange and inexplicable text is perceived as defective, and the explanation either excuses (charged to transmission) or belittles (charged to the writer); with the Apocalypse each charge falls where the book is lowered (§10.3), and what is difficult, strange and inexplicable in this text is its majesty (A.4, A.6, A.7). The account is offered as incentive and function and held to what it predicts at the loci.
 
 0.4. **What the study does not do.** It does not decide the date, the author, the priority of the book or the historicity of a person. It reads no motive. Its findings are the operations at the loci and the order in which they appear; its last section (§11) takes up what restoring the book's standing as a source would take (A.2).
+
+0.5. **The kernel: the arguments toward the source, held open and foreclosed (A.26).** The study's argument can be stated as a map of the arguments that point toward the book as originary. Each row of the map holds four things: the argument; the book's own ground for it; the earliest treatment read, coded for what it held open without addressing; and the later hardening, the stratum and the operation after which the question stands closed in the record read. A fifth column names the repair of §11 that reopens it. The map is holographic in the sense the archive uses: each row carries the whole study in small (a ground in the book, an early witness that leaves the question open, a later stratum that closes it, a repair that reopens it), and the rows read together carry its findings. Three grades are kept apart, as in §10.2. The book's ground is documented in its text, or is the position's (§0.1), and the column says which. The earliest treatment and the hardening are documented at the loci cited. That an early openness was later closed is the order of appearance (§10.1), documented; that the closing foreclosed a reading the record had kept available is the study's reconstruction, held as reconstruction. "Held open" records that a witness left a question unaddressed, or held both readings together; it credits no witness with the position.
+
+| | The argument toward the source | The book's own ground | Earliest treatment read: held open, or not addressed | Later hardening: what closed it | Reopened at |
+|---|---|---|---|---|---|
+| K1 | The corpus is one making, the Apocalypse at its head | Three books title themselves by Jesus Christ (Matt 1:1, Mark 1:1, Rev 1:1; L57); the oldest titles give one gospel κατά each name (L58). Documented; the single making is the position's | Justin: the gospel, and the memoirs "called gospels"; no evangelist named (L59, L64). Irenaeus: τετράμορφον τὸ εὐαγγέλιον, ἑνὶ δὲ πνεύματι συνεχόμενον (L52, L60, L65). The fragment: "one principal spirit" (L61). Unity stated and given to a spirit; persons attributed, never argued distinct; a single making not addressed (§2.8) | The persons enter as the explanation of difference (Papias, L62), the difference reconciled as supplement (Eusebius, L63); the critical strata inherit the persons and explain the unity by editing: "Quelle A (Urmarcus)" 1863 (L54), Q 1899 (L55), Mark "nicht mehr Quelle, sondern schon Sammelbecken" 1903 (L56) | §11.9 |
+| K2 | The book's naming of its origin and its writer is its own testimony | Ἀποκάλυψις Ἰησοῦ Χριστοῦ … τῷ δούλῳ αὐτοῦ Ἰωάνῃ (1:1–2); the writer named at 1:4, 1:9, 22:8 (§1.3). Documented | Justin names the writer, εἷς τῶν ἀποστόλων, and cites the book as prophecy (L1), the one writer he names for any book (L59). Standing presupposed; order and derivation not addressed (§8.1) | Gaius gives the book to Cerinthus over a doctrine (L6); Dionysius keeps the book and moves the author (L9), reading the self-naming as evidence against the apostle (L10); Erasmus, 1516 (L30) | §11.2 |
+| K3 | The seven-church book is the model of the corpus (model priority) | Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις (1:11): one book to seven churches (§1.2). Documented; the priority is the position's (#1735 §IV) | The Muratorian fragment: Paul writes to seven *sequens prodecessoris sui Iohannis ordine* (L14–L15). Stated; repeated and answered nowhere in the strata read before 1920 (§5.3); in the West the book supplies the canon's count (L17a, §7.1.2) | Charles, 1920: "This statement cannot be accepted", answered on the dates of the component letters, the fragment's claim moved from the architecture to the persons' dates (L50, §5.2) | §11.3 |
+| K4 | The figure is the book's own, the Logos one called name among four | Four names in 19:11–16, two written and two called, one withheld and three public; ὁ λόγος τοῦ Θεοῦ the word the writer bore witness to (1:2, 1:9, 6:9, 20:4) (§1.4–1.4b). Documented; the Logos as literature first is the position's (A.1) | Irenaeus quotes 19:11–16 whole with both names, the Word *non in una figura*; the Gospel gives the principle and the Apocalypse the figures; no direction of dependence assigned (L24, L45) | The Gospel's Logos made the measure in the third-century dispute (L11; Epiphanius, L13); a judgement of standing in 1522 (L29); from 1886 to 1913 the name cut under Luther's warrant (Vischer, L35, L43), given to the redactor (Spitta, L36), kept as a trace and then given to a copyist (Bousset, L38, L42), filed as the Johannine seal (L41), and the withheld name bracketed (Charles, L39) | §11.6 |
+| K5 | The book supplies the form of the fourfold gospel | The four living creatures, one face each, the first like a lion (4:7). Documented | Irenaeus founds the fourfold gospel on the creatures, quoting the book, φησὶν (L52); the book lends the figure and is not among the four; the relation of the figure to the narratives' making not addressed, and the study draws none (§6.1) | The tetrad set first (Eusebius, L53); the name of the seal, ἐπισφράγισμα, set on Paul's fourteen letters, the self-sealing book absent from the list (Cyril, L17; §6.3) | §11.7 |
+| K6 | The crown of life runs from the book to James | τὸν στέφανον τῆς ζωῆς, given in a proclamation (2:10); in some seventy thousand units counted, unique to Rev 2:10 and Jas 1:12 (#1735 §VII). Documented; the direction is #1735's | The direction is unasked in the strata read (§5.4) | Charles, 1920: "borrowed from the wreath awarded to the victor in the games", James a "cf." among the later attestations (L49) | §11.7 |
+| K7 | The book fulfils the law and the prophets as literature | No formula of citation; γέγραπται only of names in the book of life (13:8, 17:8); ἐτελέσθη τὸ μυστήριον τοῦ Θεοῦ, ὡς εὐηγγέλισεν τοὺς ἑαυτοῦ δούλους τοὺς προφήτας (10:7) (L48; §1.1). Documented; the fulfilment is the position's (A.13) | Justin cites the book as prophecy in its own right, προεφήτευσε (L1); Dionysius receives its obscurity as a hidden and more wonderful meaning, κεκρυμμένην (L44) | Sources supplied as method from 1886 (L35–L37), the strange read as the darkening of an older tradition (Gunkel, L37); the one relation filed as fulfilment under the gospels and as derivation under the Apocalypse (§4.6, §6.6) | §11.8 |
+| K8 | The book's Greek is its writer's system, and its strangest Greek acts on a name | ἀπὸ ὁ ὢν καὶ ὁ ἦν καὶ ὁ ἐρχόμενος (1:4), the name kept from declension (§1.4c). Documented | The earliest treatment read is already a charge: Dionysius files the Greek as barbarism with the instances withheld (L22). In the same letter he receives the content's difficulty as depth (L44). The row is mixed (§8.4) | Charles, 1920, grants the violation at 1:4 as deliberate and charges the means to ignorance of a classical construction (L46); the filing outlives his finding that the grammar is lawful (L23) | §11.4 |
+| K9 | The book is early enough to stand first | Its address to seven living churches (1:11); 66 CE the working proposed date (§0.1). Position; the study does not decide the date (§0.4) | Irenaeus's one sentence, ἑωράθη, its subject unexpressed (L2–L3) | Charles explains the evidence for earlier dates as survivals in sources, and fills the silence by presumption (L40; §4.2.2) | §0.4 |
+| K10 | The book's place in the corpus is its head and close | The seal set on its own text (22:18–19; §1.4d). Documented; the place as head is the position's (§0.1; #636 §0) | Eusebius sets the book among the acknowledged with a condition, εἴ γε φανείη, and again among the disputed (L5); the Claromontanus the one list read with the book elsewhere than last (L17a) | Last wherever it appears in the Eastern lists read (L17); set apart from the numbered books in Luther's table, 1522 (L28) | §11.1 |
+
+0.5a. **What the kernel shows, and what it does not.** Ten arguments point toward the book as originary. For eight, the earliest treatment read leaves the question open: it states the book's testimony, holds unity and plurality together, quotes the figure whole or lends its form, and does not address what the later strata settle. One row (K8) is mixed from the start, and one (K9) concerns a date the study does not decide. In every row the closing is done by an operation the study names (§2.9, §10.3): an author moved, a component dated, a name cut, a source supplied, a form given to another writing. In two rows the closing answers a question other than the one the row puts: Charles answers the fragment's architecture on the dates of its components (K3, §5.2), and the crown of life is given an ancestor with its direction unasked (K6, §5.4). The kernel does not show that the record was ever single. The West keeps the book as the measure of its canon (§7.1.2), Toledo legislates its hearing (L18), and Dionysius keeps it while moving its author (§8.4); these stand beside the closings as the record's other operations (§2.9). Nor does an open question in an early witness establish that the witness held the position.
+
+0.5b. **The kernel in one sentence.** At each point where the book grounds its own priority (its unity with what follows, its self-naming, its seven, its figure, its four creatures, its crown, its fulfilment, its grammar, its date, its place), the earliest witnesses read left the question open, and a later stratum closed it by an operation on another question; restoring the source reopens each question at the locus where it was closed.
 
 ## 1. The corpus as a corpus: the source and what unfolds from it
 
@@ -422,13 +654,17 @@ A.24 (17:39): "it causes the first to appear last, the real to appear unreal, an
 
 A.25 (17:47): "solid pass addressing, then version:"
 
+**A, continued. Lee Sharks, 2026-11-06.**
+
+A.26 (08:25): "lets spxi treat the notebook AND secondary source for a version in place. i also believe secondary source needs a holographic kernel/ map of the arguments *towards* revelation being originary, to show what later hardening foreclosed and earliest treatments left open without addressing. then we go ahead and version secondary and deposit the notebook and public facing"
+
 **B. DeepSeek's editorial review of v0.1 (12:23),** evaluated against the loci before any change. Taken in at v0.2: the frame stated in §0.3; the seal carried to its later loci (now §1.2d); the chain displayed (§2.2); the Muratorian ordering stated as the earliest ordering of the corpus in the record (§3.5); the Dionysian turn in bold (§4.5, re-worded at v0.3); the printing of the seal in bold (§6.3); the composition layer's Muratorian result described (§9.4); the existence tax and the sophistry measure named where their operations stand (§10.3a, §11.5a). Not taken in, with the reason: "proving that the book's physical placement dictated its theological demotion" (the loci do not show it, §10.2); the Muratorian fragment as "absolute proof that the original reception had John first" and "how this memory was erased" (#1735 §IV.3 reads a construal and states what it does not prove; the later strata are silent on it, and silence is recorded as silence); "saving the institution" and "made to seem late and weird so that it could be safely marginalized" (motive); Luther as "the proto-algorithm" (an analogy no locus supports); the composition layer "trained on the received canon, it cannot process the hierarchy" (a claim about training the captures do not witness); the "Canonical Tax" paragraph as drafted, whose "Revelation is excused by nothing" the loci contradict (L23); and the review's statement that v0.1 cited the Sophistry Measure, which it did not.
 
 **C. ChatGPT's first review (12:27),** of the draft as supplied to it (the file labelled v0.1; its points were applied to v0.2, giving v0.3), evaluated against the seats before any change; every point was taken in, as follows. (1) "Order before standing" is not established: withdrawn; Eusebius read as classification under unresolved authority (§5.1); the disputes dated before the classification; the counts reconstructed as mutual reinforcement (§10.2). (2) The double name needs a literary reading: §1.2–1.2c, drawing on #642 and #828 (A.8), with the premise the critics supply exposed (§1.2, §8.5); Irenaeus checked in seat and found to open on John 1:18 (L45), so the claim that in him the Apocalypse's Verbum Dei is the measure is withdrawn and the comparison is built on the pairing intact in Irenaeus and an editorial problem in the critics (§3.3, §8.6). (3) Dionysius as countercase: §4.3a (L44); Charles's three claims kept apart and his note on 1:4 given as the worked example (§8.2, L46). (4) Carriage: the Complutensian printed first and Erasmus published first (L47, §6.3); the claim about every later reader withdrawn; the claim that the critics did not look there corrected to the critics who argued derivation (§6.5); the two relations of carriage kept apart (§2.1, §6); the expurgation's page and the library's stated history cited (§6.4); Luther's volume read as visual prominence beside theological disqualification (§7.4). (5) The composition layer recoded with narrative sequence, identification, measure and textual derivation kept apart, the full table of ten given, and the Toledo omission withdrawn as a coding for the Eastern question (§9.2–9.3). (6) The study's argument stated in its own voice in the body, the words of A held here; reading texts given beside the OCR where it cannot carry the wording, from the page images for Erasmus (§6.3, §7.1, §7.5).
 
 **D. ChatGPT's second review (12:49),** of v0.3, evaluated against the seats; every point was taken in. (1) Charles's note on 1:4 quoted with its intervening sentences restored: "this construction" is the classical alternative "ἀπὸ τοῦ ὃ ὦν", and the note grants a deliberate purpose while attributing the means to ignorance of that alternative; the study's statement that the deliberate act was "granted and withdrawn" is withdrawn, and the question put is what establishes the ignorance (§1.2c, §8.2, §10.3; LOCI L46). (2) The receiver circuit given with its steps marked as proposed: the bearer at 19:12 knows the name and is not said to receive it; the identity of the names across 2:17, 3:12, 14:1 and 22:4 is proposed; knowing and reading are distinct; and the reader's road from 1:3 to 2:17 (§1.2a). (3) Model priority given its own place in the coding, apart from order (§2.1, §3.5–3.6, §10.1, §11.3); the Claromontanus exception kept in the summaries (§5.7, §10.1). (4) The Muratorian finding stated as non-transfer in the sampled answers, with the stronger account (A.9) held and a paired test of addresses set out (§9.4). (5) The connections among the counts sorted into documented succession, explicit dependence and the study's reconstruction (§10.2). (6) The opening states the study's proposition and principal witness; the version history and reviews are held here (E).
 
-**E. Version history.** v0.1 (2026-11-05), drafted from design v0.4 and the locus table. v0.2, on DeepSeek's review (B). v0.3, on ChatGPT's first review (C), with the four names of 19:11–16 read as the centre. v1.0, on ChatGPT's second review (D), deposited at the author's word (12:49: "one last big pass, then lets go ahead and deposit"), under Johannes Sigil, at Provenance: Journal of Forensic Semiotics and revelationfirst.com (the author's ruling on byline and venue, given with the word to deposit). v1.1 (2026-11-05, draft, a version in place of #1741), on the author's rulings A.10–A.25: the study reorganized under the second word of its title. The question (§0.2) is how the reception constructed the source as derivative and where it placed the source instead; the evidence of v1.0 is moved, unaltered, under three operations, ancestors supplied (§4), descendants removed (§5) and the source installed elsewhere (§6), with order, standing and carriage as their means (§7) and the readings of the book as source as the countercase (§8). New: the account of the corpus as a corpus (§1.1–1.2, from #1735, #202, #407, #636 and #1420), the book's fulfilment of the law and the prophets read in its own citation practice (L48), the debts a reading of direction owes (§1.5), Charles on the crown of life, on the Muratorian construal and on Colossians (L49–L51), Irenaeus's fourfold gospel founded on Rev 4:7 (L52), Eusebius's tetrad first (L53), and the critics' sources, Quelle A, Q and the apocalypse beneath Mark 13, with Weiss's "das älteste Evangelium" (L54–L56); the synthesis (§10.5) and two repairs (§11.7–11.8). Continued the same day on A.15–A.16: the seventh reading, the titles (L57–L63), set as §2, the one counted as many, the study's primary finding, with the question of §0.2 reframed (how a unified corpus came to be treated as many, later reconciled through editing) and the derivation of the source its central case; sections from §2 onward renumbered by one. Section numbers in B–D are those of the versions they describe; a concordance of v1.0 paragraphs to v1.1 paragraphs is held at the end of the locus table's sixth reading. The epigraph is the author's, set in v1.1 before the version landed (18:25: "also: i think as an epigram, "And the last shall be first" -Jack Feist").
+**E. Version history.** v0.1 (2026-11-05), drafted from design v0.4 and the locus table. v0.2, on DeepSeek's review (B). v0.3, on ChatGPT's first review (C), with the four names of 19:11–16 read as the centre. v1.0, on ChatGPT's second review (D), deposited at the author's word (12:49: "one last big pass, then lets go ahead and deposit"), under Johannes Sigil, at Provenance: Journal of Forensic Semiotics and revelationfirst.com (the author's ruling on byline and venue, given with the word to deposit). v1.1 (2026-11-05, draft, a version in place of #1741), on the author's rulings A.10–A.25: the study reorganized under the second word of its title. The question (§0.2) is how the reception constructed the source as derivative and where it placed the source instead; the evidence of v1.0 is moved, unaltered, under three operations, ancestors supplied (§4), descendants removed (§5) and the source installed elsewhere (§6), with order, standing and carriage as their means (§7) and the readings of the book as source as the countercase (§8). New: the account of the corpus as a corpus (§1.1–1.2, from #1735, #202, #407, #636 and #1420), the book's fulfilment of the law and the prophets read in its own citation practice (L48), the debts a reading of direction owes (§1.5), Charles on the crown of life, on the Muratorian construal and on Colossians (L49–L51), Irenaeus's fourfold gospel founded on Rev 4:7 (L52), Eusebius's tetrad first (L53), and the critics' sources, Quelle A, Q and the apocalypse beneath Mark 13, with Weiss's "das älteste Evangelium" (L54–L56); the synthesis (§10.5) and two repairs (§11.7–11.8). Continued the same day on A.15–A.16: the seventh reading, the titles (L57–L63), set as §2, the one counted as many, the study's primary finding, with the question of §0.2 reframed (how a unified corpus came to be treated as many, later reconciled through editing) and the derivation of the source its central case; sections from §2 onward renumbered by one. Section numbers in B–D are those of the versions they describe; a concordance of v1.0 paragraphs to v1.1 paragraphs is held at the end of the locus table's sixth reading. The epigraph is the author's, set in v1.1 before the version landed (18:25: "also: i think as an epigram, "And the last shall be first" -Jack Feist"). v1.2 (2026-11-06, a version in place of #1741), on the author's ruling A.26: the kernel (§0.5), a map of ten arguments toward the book as originary, each with the book's own ground, the earliest treatment read coded for what it left open without addressing, the later hardening that closed it, and the repair of §11 that reopens it, with what the map shows and does not show (§0.5a) and its statement in one sentence (§0.5b); and an SPXI packet before §0, stating the study's claim, operators, disambiguations, open seams and falsifiers for machine readers. Every entry of the kernel cites a locus already read in v1.1; no new locus was read.
 
 **F. ChatGPT's reading of #1741 (attachment of 15:23),** evaluated against the loci. Its points of strength, the five counts, the Irenaeus–Bousset–Charles comparison and the observation–judgement distinction in Charles, are kept where they stand. Its three objections are met as follows. (1) The feedback loop is a reconstruction: the study already grades it so (§10.2), and v1.1 keeps the grade. (2) Irenaeus's reading does not settle the textual question: v1.1 states what any excision owes, its witness in the manuscripts (§1.5d), and keeps Irenaeus as the countercase (§8.2). (3) Revelation First is a separate burden: the study holds the position and does not ask the reception history to prove it (§0.1), as Legitimately Many holds its hypothesis. The reading carried the history of operations and passed over the study's stake (§0.1 of v1.0); v1.1 places the stake in the question (§0.2) and gives the corpus account in which it operates (§1).
 
