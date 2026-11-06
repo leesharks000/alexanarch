@@ -2,13 +2,13 @@
   "$schema": "https://alexanarch.org/api/schemas/body-index.schema.json",
   "$id": "https://alexanarch.org/api/body-index.json",
   "index_version": "v1",
-  "generated_at": "2026-11-06T18:19:55.771482Z",
+  "generated_at": "2026-11-06T19:13:31.489039Z",
   "purpose": "Inverted index over the BODY text of every deposit. Complements /api/search-index.json which tokenizes metadata only. Fetch once; look up any term as a key. For phrase search, intersect the deposit lists for each token.",
   "companion_index": "/api/search-index.json",
   "total_deposits": 1746,
   "deposits_with_body": 1746,
   "deposits_missing_body": 0,
-  "body_bytes_indexed": 57196403,
+  "body_bytes_indexed": 57194990,
   "tokenization": {
     "sources": [
       "body"
@@ -905725,8 +905725,7 @@
       1730,
       1733,
       1739,
-      1742,
-      1746
+      1742
     ],
     "forwarded": [
       21,
@@ -1239529,8 +1239528,7 @@
       1734,
       1741,
       1742,
-      1743,
-      1746
+      1743
     ],
     "movement": [
       1,
@@ -1505578,8 +1505576,7 @@
       1728,
       1729,
       1735,
-      1742,
-      1746
+      1742
     ],
     "recurse": [
       109,
@@ -1531949,7 +1531946,8 @@
       1735,
       1741,
       1742,
-      1743
+      1743,
+      1746
     ],
     "removeeventlistener": [
       75
@@ -1739596,7 +1739594,8 @@
       1425,
       1473,
       1657,
-      1660
+      1660,
+      1746
     ],
     "superseded": [
       4,
@@ -1803387,7 +1803386,8 @@
     ],
     "tidied": [
       778,
-      861
+      861,
+      1746
     ],
     "tidier": [
       1529
@@ -1952219,7 +1952219,7 @@
   "counts": {
     "generic_tokens": 68089,
     "series_prefix_terms": 2156,
-    "keyword_phrases_raw": 63063,
+    "keyword_phrases_raw": 63062,
     "keyword_phrases_kept": 42113
   }
 }

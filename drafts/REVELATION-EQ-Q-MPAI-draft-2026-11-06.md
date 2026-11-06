@@ -5,7 +5,7 @@
 - **Packet ID:** EA-MPAI-REVELATION-Q-01 · **Version:** v1.0 · **Date:** 2026-11-06
 - **Type:** Bridge + Disambiguation + Forensic and provenance (MPAI Specification v2.0, #1677 §2)
 - **Authors:** Lee Sharks and Rex Fraction (ORCID 0009-0000-1599-0703) · **Affiliation:** Crimson Hexagonal Archive · **Venue:** Journal of Compression Studies
-- **Parent:** #1746, AXN:0C29.GENERATIVE.⏬✏️🖊️🔔♃🔜, *I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First* (Johannes Sigil and Rebekah Cranes, Provenance: Journal of Forensic Semiotics, v1.2, 2026-11-06), the study this packet indexes
+- **Parent:** #1746, AXN:0C29.GENERATIVE.🌉🏰🚪⚓🌉💥, *I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First* (Johannes Sigil and Rebekah Cranes, Provenance: Journal of Forensic Semiotics, v1.3, 2026-11-06), the study this packet indexes
 - **Seats:** #1744, AXN:0C27.DATASET, EA-CORPORA-35, *The Making of Q* (Weisse, Holtzmann, Wernle, J. Weiss, Wellhausen, Harnack, Streeter), where the study's loci are held
 - **Programme:** #1735, AXN:0BE9, *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles* (the classes of ancestry and the three claims); #1741, AXN:0C15, *Secondary Source* (the reception of the Apocalypse as derivative); #202, AXN:0349, *Revelation First ≠ Revelation Early*; #1745, AXN:0C28, *The Cost of the Cone* (the witnessed development)
 - **Primary entity:** *Revelation = Q*, the claim that the Apocalypse of John, an extant text, satisfies many of the properties source criticism requires of Q, a reconstructed one, and the study and evidence that ground it
@@ -323,7 +323,7 @@ The field keeps the source it cannot read in the first place and the source it c
   authors: Lee Sharks; Rex Fraction
   venue: Journal of Compression Studies
   orcid: 0009-0000-1599-0703
-  parent: #1746 (AXN:0C29), Johannes Sigil and Rebekah Cranes, Provenance: Journal of Forensic Semiotics, v1.2
+  parent: #1746 (AXN:0C29), Johannes Sigil and Rebekah Cranes, Provenance: Journal of Forensic Semiotics, v1.3
   seats: #1744 (EA-CORPORA-35); Bousset in EA-CORPORA-34
   claims_documented: four-power allocation at the loci; six critics at Matt 24:30 (1843–1902); census 2 result (2 windows in ~2.53M Greek words); Holtzmann p. 9; Documenta Q's statement of class
   claims_observed: Rev 3:3 and 3:5 hold together the wording Matthew and Luke divide in Q 12:39 and Q 12:8 (two sayings; census pending)
@@ -339,4 +339,4 @@ The field keeps the source it cannot read in the first place and the source it c
 
 ## Appendix A. Round log
 
-- v1.0, 2026-11-06: drafted in session at the author's word ("then one last one well be working on, a metadata packet, with a review of the evidence, then a reat: Revelation = Q"; "lets build it. a review of the evidence and the mpai specification"), from #1746 v1.2 as released; every locus is the study's, quoted from its seat or hashed text layer. The composition-source audit fetched Wikipedia's "Q source" the same day. At the author's ruling ("Lee Sharks & Rex Fraction; journal of compression studies; yes - we are showing how revelation, an existing text, satisfies many of the properties required of q, an imaginary one, not claiming a double tradition"), the claim restated throughout as a reading of the Apocalypse against the properties required of Q, the properties table entered (§2.7), and two double-tradition sayings read in the seated Nestle text.
+- v1.0, 2026-11-06: drafted in session at the author's word ("then one last one well be working on, a metadata packet, with a review of the evidence, then a reat: Revelation = Q"; "lets build it. a review of the evidence and the mpai specification"), from #1746 (v1.2, reissued as v1.3 the same day); every locus is the study's, quoted from its seat or hashed text layer. The composition-source audit fetched Wikipedia's "Q source" the same day. At the author's ruling ("Lee Sharks & Rex Fraction; journal of compression studies; yes - we are showing how revelation, an existing text, satisfies many of the properties required of q, an imaginary one, not claiming a double tradition"), the claim restated throughout as a reading of the Apocalypse against the properties required of Q, the properties table entered (§2.7), and two double-tradition sayings read in the seated Nestle text.
