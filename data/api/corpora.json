@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-05T16:13:34.280866Z",
- "seats": 187,
- "lines_total": 7926506,
+ "_generated": "2026-11-06T16:15:34.490075Z",
+ "seats": 194,
+ "lines_total": 8096989,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -16876,7 +16876,248 @@
    "scope": "The first printed Greek New Testament whole, held for its Apocalypse and the book's last page.",
    "data": "https://www.alexanarch.org/data/corpora/erasmus-novum-instrumentum-1516/",
    "axn": "AXN:0C12.ORIGINAL.🧫🔝▲🌊🎨⏹️"
+  },
+  {
+   "seat": "EA-CORPORA-35/01",
+   "corpus": "weisse-evangelische-geschichte-1838",
+   "edition": "C. H. Weisse, Die evangelische Geschichte, vol. I (Leipzig, 1838); C. H. Weisse, Die evangelische Geschichte, vol. II (Leipzig, 1838)",
+   "license": {
+    "payload": "Public domain everywhere: published 1838; Weisse died 1866.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "dieevangelischeg0000weis",
+      "url": "https://archive.org/details/dieevangelischeg0000weis",
+      "files": [
+       "dieevangelischeg0000weis_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "dieevangelischeg0002weis",
+      "url": "https://archive.org/details/dieevangelischeg0002weis",
+      "files": [
+       "dieevangelischeg0002weis_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 56081,
+   "verified_loci": [
+    "Weisse names the Papias witness — 'des Bifhofs Papias von Hierapolis'",
+    "Weisse reads the Logia as a collection of sayings — 'Erläuterungen der Logia des Herren'",
+    "Weisse: a collection only of speeches and sayings — 'eine Sammlung nur von Reden und Aus'"
+   ],
+   "why_seated": "The two-source hypothesis stated: Mark first, and a collection of sayings read out of Papias's λόγια as the second source of Matthew and Luke.",
+   "scope": "Both volumes whole.",
+   "data": "https://www.alexanarch.org/data/corpora/weisse-evangelische-geschichte-1838/",
+   "axn": "AXN:0C27.ORIGINAL.🟡🀄🍃↙️🌕🔄"
+  },
+  {
+   "seat": "EA-CORPORA-35/02",
+   "corpus": "holtzmann-synoptische-evangelien-1863",
+   "edition": "H. J. Holtzmann, Die synoptischen Evangelien (Leipzig, 1863)",
+   "license": {
+    "payload": "Public domain everywhere: published 1863; Holtzmann died 1910.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "diesynoptischen00holtgoog",
+      "url": "https://archive.org/details/diesynoptischen00holtgoog",
+      "files": [
+       "diesynoptischen00holtgoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 28989,
+   "verified_loci": [
+    "Holtzmann's table of contents: the reconstruction of source A, his narrative Urmarcus — 'AufsteUung  der  Quelle  A'",
+    "Holtzmann: a life of Jesus drawn from source A — 'Lebensbild  Jesu  nach  der  Quelle  A'",
+    "Holtzmann: the composition of Mark, source A (Urmarcus) — 'Quelle  A  (Urmarcus)'",
+    "Holtzmann: the collection of sayings as a second foundation — 'Grundlage  der  Spruchsammlung'"
+   ],
+   "why_seated": "The sources lettered: 'Quelle A (Urmarcus)' and Λ, the sayings source (the OCR reads the Λ as A or ^), given as documents; the life of Jesus drawn from them (#1741 §6.5, L54).",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/holtzmann-synoptische-evangelien-1863/",
+   "axn": "AXN:0C27.ORIGINAL.⭐🌔⚓📜🗿◇"
+  },
+  {
+   "seat": "EA-CORPORA-35/03",
+   "corpus": "wernle-synoptische-frage-1899",
+   "edition": "P. Wernle, Die synoptische Frage (Freiburg i. B., 1899)",
+   "license": {
+    "payload": "Public domain everywhere: published 1899; Wernle died 1939.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "diesynoptischefr00wern",
+      "url": "https://archive.org/details/diesynoptischefr00wern",
+      "files": [
+       "diesynoptischefr00wern_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 14597,
+   "verified_loci": [
+    "Wernle names the source Q and calls it hypothetical — 'Die — hypothetische — Quelle sei mit Q bezeichnet.'",
+    "Wernle: the apocalypse beneath Mark 13, reconstructed — 'zu Grunde liegende Apokalypse noch gekannt'"
+   ],
+   "why_seated": "The source named Q: 'Die — hypothetische — Quelle sei mit Q bezeichnet' (#1741 §6.5, L55).",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/wernle-synoptische-frage-1899/",
+   "axn": "AXN:0C27.ORIGINAL.🕌🎻✋🌺🧬🟡"
+  },
+  {
+   "seat": "EA-CORPORA-35/04",
+   "corpus": "weiss-alteste-evangelium-1903",
+   "edition": "J. Weiss, Das älteste Evangelium (Göttingen, 1903)",
+   "license": {
+    "payload": "Public domain everywhere: published 1903; Johannes Weiss died 1914.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "dasaltesteevange0000joha",
+      "url": "https://archive.org/details/dasaltesteevange0000joha",
+      "files": [
+       "dasaltesteevange0000joha_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 20488,
+   "verified_loci": [
+    "J. Weiss: Mark the oldest gospel, no longer a hypothesis — 'dass unser zweites das älteste Evangelium sei, ist keine Hypo'",
+    "J. Weiss: no longer a source, already a reservoir — 'nicht mehr Quelle, sondern schon Sammelbecken.'"
+   ],
+   "why_seated": "Mark declared 'das älteste Evangelium', and 'nicht mehr Quelle, sondern schon Sammelbecken' (#1741 §6.5, L56).",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/weiss-alteste-evangelium-1903/",
+   "axn": "AXN:0C27.ORIGINAL.🪜🌆🍁⭕🧱🏠"
+  },
+  {
+   "seat": "EA-CORPORA-35/05",
+   "corpus": "wellhausen-einleitung-1905",
+   "edition": "J. Wellhausen, Einleitung in die drei ersten Evangelien (Berlin, 1905)",
+   "license": {
+    "payload": "Public domain everywhere: published 1905; Wellhausen died 1918.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "einleitungindied00well",
+      "url": "https://archive.org/details/einleitungindied00well",
+      "files": [
+       "einleitungindied00well_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 5688,
+   "verified_loci": [
+    "Wellhausen: the source one designates Q — 'Quelle,  die  man  mit  Q  bezeichnet'"
+   ],
+   "why_seated": "Q weighed against Mark by a philologist of the Hebrew Bible: the sayings source as a document with a date and a dependence.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/wellhausen-einleitung-1905/",
+   "axn": "AXN:0C27.ORIGINAL.🔩🔙🗂️🎺🌌🙏"
+  },
+  {
+   "seat": "EA-CORPORA-35/06",
+   "corpus": "harnack-spruche-und-reden-1907",
+   "edition": "A. Harnack, Sprüche und Reden Jesu (Leipzig, 1907)",
+   "license": {
+    "payload": "Public domain everywhere: published 1907; Harnack died 1930.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sprucheundredenj0000adol",
+      "url": "https://archive.org/details/sprucheundredenj0000adol",
+      "files": [
+       "sprucheundredenj0000adol_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 13762,
+   "verified_loci": [
+    "Harnack's subtitle: the second source of Matthew and Luke — 'DIE ZWEITE QUELLE DES MATTHÄUS UND LUKAS'",
+    "Harnack: that one can establish the text of Q — 'Text von Q feststellen kann'"
+   ],
+   "why_seated": "The hypothetical source given a printed text: Harnack's reconstruction of Q's wording, the first full text of the document no one has.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/harnack-spruche-und-reden-1907/",
+   "axn": "AXN:0C27.ORIGINAL.👉🌄📌♊💙🔆"
+  },
+  {
+   "seat": "EA-CORPORA-35/07",
+   "corpus": "streeter-four-gospels-1925",
+   "edition": "B. H. Streeter, The Four Gospels: A Study of Origins (London, 1925 impression)",
+   "license": {
+    "payload": "Public domain in the United States (published 1924/1925, before 1929) and in the United Kingdom and the EU (Streeter died 1937).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "fourgospels0000stre",
+      "url": "https://archive.org/details/fourgospels0000stre",
+      "files": [
+       "fourgospels0000stre_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-06",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 30878,
+   "verified_loci": [
+    "Streeter: the hypothetical source referred to by general consent as Q — 'hypothetical source is now by general consent referred to as'",
+    "Streeter: the Four Document Hypothesis — 'The Four Document Hypothesis'"
+   ],
+   "why_seated": "The four-document hypothesis: Mark, Q, M and L, the hypothetical source fixed among three others.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/streeter-four-gospels-1925/",
+   "axn": "AXN:0C27.ORIGINAL.🗺️👁️🌳🔎💜⏏️"
   }
  ],
- "count": 187
+ "count": 194
 }
