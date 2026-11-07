@@ -6,6 +6,7 @@ paywalled and copyrighted works are declared, not pursued.
   pay      behind a subscription or purchase wall (journal or database)
   access   open in law but not located in an open text layer in session, or the Archive's text layer returned an error
   private  held by a person; not published
+  (Part F, v1.1: the jealousy reading)
     python3 rebuild/corpora/ea-corpora-36/absences36.py  -> rebuild/corpora/ea-corpora-36/absences36.json"""
 import json, pathlib
 H = pathlib.Path(__file__).resolve().parent
@@ -80,6 +81,14 @@ D = [
  ("B", "pay", "N. Felson (ed.), The Poetics of Deixis in Alcman, Pindar, and Other Lyric, Arethusa 37.3 (2004), with E. J. Bakker", "Johns Hopkins University Press (Project MUSE). Stratum X."),
  ("B", "access", "Human Interference Task Force, Reducing the Likelihood of Future Human Activities That Could Affect Geologic High-Level Waste Repositories, BMI/ONWI-537 (1984), with T. A. Sebeok, Communication Measures to Bridge Ten Millennia (BMI/ONWI-532, 1984)", "United States government reports; not sought in this round. Stratum XI; SAND92-1382 is seated at 36/32."),
  ("B", "rights", "The Voyager Golden Record (NASA, 1977), and C. Sagan et al., Murmurs of Earth (New York, 1978)", "The record's contents are held by NASA/JPL; the book in copyright. Not sought in this round. Stratum XI."),
+ # v1.1, Part F: the jealousy reading
+ ("F", "pay", "G. Devereux, 'The Nature of Sappho's Seizure in Fr. 31 LP as Evidence of Her Inversion', Classical Quarterly 20 (1970), 17–31", "Cambridge University Press (JSTOR). The clinical reading of the symptoms, the modern descendant of the Erasistratus story (36/34–35)."),
+ ("F", "pay", "B. Snell, 'Sapphos Gedicht φαίνεταί μοι κῆνος', Hermes 66 (1931), 71–90", "Franz Steiner (JSTOR)."),
+ ("F", "access", "M. R. Lefkowitz, 'Critical Stereotypes and the Poetry of Sappho', Greek, Roman and Byzantine Studies 14 (1973), 113–23", "Not fetched in session. The critique of the biographical reading, the jealousy reading among it."),
+ ("F", "rights", "M. R. Lefkowitz, The Lives of the Greek Poets (London, 1981; 2nd edn 2012)", "Duckworth; Johns Hopkins University Press. The biographies made from the poems."),
+ ("F", "rights", "M. Kivilo, Early Greek Poets' Lives: The Shaping of the Tradition (Leiden, 2010)", "Brill. Not sought in this round."),
+ ("F", "pay", "G. F. Gianotti, on the reception of fr. 31 through Catullus (1997), as Wikipedia's 'Sappho 31' cites it (36/40)", "The citation not traced in session to an open text."),
+ ("F", "access", "G. Hermann, dissertation on the pronoun αὐτός, in C. D. Beck (ed.), Acta Seminarii Regii et Societatis Philologicae Lipsiensis I, p. 71, where Hermann first held fr. 31's last line to be Sappho's (Elementa 1816, seated at 36/33, cites it)", "Public domain; not sought in this round."),
 ]
 out = [{"part": p, "wall": w, "work": t, "status": s} for p, w, t, s in D]
 (H / "absences36.json").write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

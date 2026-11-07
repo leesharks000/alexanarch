@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""seat_axns36.py — give the thirty-two seats of EA-CORPORA-36 their AXNs, in the form of seat_axns_20261027.py
+"""seat_axns36.py — give the seats of EA-CORPORA-36 their AXNs (36/01–36/32 at v1.0; 36/33–36/40, Part F, at v1.1, run with their names), in the form of seat_axns_20261027.py
 (AXN:<HEX>.ORIGINAL.<glyphs>, HEX the position of the seating's deposit, the glyphs from the SHA-256 of the seat's
 MANIFEST.sha256), now that the seating is deposited (DEP). Touches only these thirty-two seats: writes `axn`,
 `axn_basis` and the deposited `spine` into each source.json (outside the MANIFEST), drops the pending `seating` note,
@@ -11,7 +11,7 @@ sys.path.insert(0, str(ROOT / "scripts")); import axn_lib as A
 DEP = int(sys.argv[1])
 ASSIGNED = "2026-11-07"
 ONLY = [a for a in sys.argv[2:] if not a.startswith("--")]
-NAMES = ["hall-peri-hypsous-1652", "boileau-traite-du-sublime-1683", "spectator-229-1711", "pope-sapho-to-phaon", "fawkes-anacreon-sappho-1760", "welcker-sappho-1816", "merivale-poems-1838", "mure-critical-history-1850", "swinburne-poems-and-ballads-1866", "higginson-atlantic-essays-1871", "symonds-studies-greek-poets-1873", "vivien-sapho-1903", "carman-sappho-1904", "wharton-sappho-1908", "renderings-1910-1920", "wilamowitz-sappho-und-simonides-1913", "robinson-sappho-and-her-influence-1924", "cox-poems-of-sappho-1925", "remembrance-dossier", "anthology-sappho-epigrams", "smyth-greek-melic-poets-1900", "jebb-growth-and-influence-1893", "wikipedia-sappho-20261106", "cicero-tusculanae", "dante-commedia", "chaucer-troilus", "shakespeare-sonnets", "milton-paradise-lost", "romantic-posterity", "dickinson-poems-1890-1896", "baratynsky-moi-dar-ubog", "wipp-markers-sandia-1993"]
+NAMES = ["hall-peri-hypsous-1652", "boileau-traite-du-sublime-1683", "spectator-229-1711", "pope-sapho-to-phaon", "fawkes-anacreon-sappho-1760", "welcker-sappho-1816", "merivale-poems-1838", "mure-critical-history-1850", "swinburne-poems-and-ballads-1866", "higginson-atlantic-essays-1871", "symonds-studies-greek-poets-1873", "vivien-sapho-1903", "carman-sappho-1904", "wharton-sappho-1908", "renderings-1910-1920", "wilamowitz-sappho-und-simonides-1913", "robinson-sappho-and-her-influence-1924", "cox-poems-of-sappho-1925", "remembrance-dossier", "anthology-sappho-epigrams", "smyth-greek-melic-poets-1900", "jebb-growth-and-influence-1893", "wikipedia-sappho-20261106", "cicero-tusculanae", "dante-commedia", "chaucer-troilus", "shakespeare-sonnets", "milton-paradise-lost", "romantic-posterity", "dickinson-poems-1890-1896", "baratynsky-moi-dar-ubog", "wipp-markers-sandia-1993", "hermann-elementa-1816", "plutarch-demetrius-amatorius", "erasistratus-witnesses", "gellius-noctes-atticae", "maximus-tyrius", "racine-phedre", "smollett-roderick-random", "wikipedia-sappho-31"]
 if ONLY: NAMES = [n for n in NAMES if n in ONLY]
 d = next(x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"] if x["deposit_number"] == DEP)
 I = json.loads((ROOT / "data/api/corpora.json").read_text(encoding="utf-8"))

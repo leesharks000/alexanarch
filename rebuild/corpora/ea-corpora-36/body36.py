@@ -33,11 +33,11 @@ def section(spec):
 
 
 title = ("EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from "
-         "Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, and the Future-Reader Strata "
-         "from Dante to the WIPP Markers")
-pa, pb, tot, nw = [], [], 0, 0
+         "Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata "
+         "from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann")
+pa, pb, pf, tot, nw = [], [], [], 0, 0
 for sp in SPECS:
-    t, s = section(sp); (pa if int(sp["seat"].split("/")[1]) <= 23 else pb).append(t); tot += s["lines_total"]; nw += s["works"]["count"]
+    t, s = section(sp); n_ = int(sp["seat"].split("/")[1]); (pa if n_ <= 23 else pb if n_ <= 32 else pf).append(t); tot += s["lines_total"]; nw += s["works"]["count"]
 nfiles = sum(1 for sp in SPECS for p in (A / sp["corpus"]).rglob("*") if p.is_file())
 nloci = sum(len(sp["loci"]) for sp in SPECS)
 
@@ -65,7 +65,7 @@ rf += ["", "## Pointers", ""] + [f"- {r['work']}. [{r['url']}]({r['url']}) — {
 ab = ["# Part E — Declared absences", "",
       "Commons only: works behind pay-, access- and rights-walls are declared, with the wall and, where one was verified, a pointer. "
       f"{len(ABS)} entries: " + "; ".join(f"{v} {WALL[k]}" for k, v in Counter(a['wall'] for a in ABS).items()) + ".", ""]
-for part, head in (("A", "## The reception"), ("B", "## The future reader")):
+for part, head in (("A", "## The reception"), ("B", "## The future reader"), ("F", "## The jealousy reading (v1.1)")):
     ab += [head, ""] + [f"- {a['work']} — {WALL[a['wall']]}. {a['status']}" for a in ABS if a["part"] == part] + [""]
 
 hdr = f"""# {title}
@@ -78,13 +78,15 @@ The research occasion is twofold. The revision of Closing the Fragment (v7, a dr
 
 The seating holds what is public. Part A (seats 36/01–36/23) holds the reception of Sappho and its scholarship. Seats 36/01–36/18 run from 1652 to 1925: the Longinian translators (Hall, Boileau), the eighteenth century's English Sappho (the Spectator, Pope's Ovid, Fawkes), the nineteenth century's question of her character (Welcker, Mure) and its poets and critics (Merivale, Swinburne, Higginson, Symonds), and the editions and renderings of the twentieth century's first quarter (Vivien, Carman, Wharton, O'Hara and Stacpoole, Wilamowitz, Robinson, Cox). Seats 36/19–36/23 hold the ground the future-reader question is argued on: the remembrance fragments in the books that carry them (Dio's Corinthian oration with fr. 147; Plutarch with fr. 55 and Sappho's pride in the καλλιγραφία of her songs; Stobaeus; the Oxyrhynchus volume with her fourth book and Ibycus's promise of imperishable fame to Polycrates), the epigrams of the Greek Anthology in which the stranger at Sappho's tomb is the reader addressed, Smyth's commentary printing fr. 147 under Horace's "non omnis moriar", Jebb's lectures, and the Wikipedia sentence that names the written-futurity view and cites for it the chapter written against it. Part B (36/24–36/32) holds the future-reader strata the library did not hold: Ennius in Cicero, Dante, Chaucer, Shakespeare's sonnets, Milton, the Romantic sentences (Wordsworth, Keats, Shelley, Stendhal), Dickinson as Todd and Higginson printed her, Baratynsky with Mandelstam's bottle quoted beside him, and the Sandia report of 1993. Part C enters by reference the strata the library already held (Homer, Herodotus, Thucydides, the Phaedrus, Horace, Ovid, the Hebrew Bible, Nietzsche, Whitman) and the witnesses of fragment 31 (Longinus, Catullus, the diplomatic layer). Part D holds the modern scholarship that is free to read and in copyright by reference, each work fetched, hashed and its loci verified: D'Angour's chapter of 2013 and his note of 2023, Finglass on the New College manuscript (2025), Garner on oral tradition (2011), and the Bryn Mawr reviews of Svenbro, of the volume carrying Lardinois 2008, and of Yatromanolakis; with pointers to Lardinois 2008 in the Radboud repository and to the open editions of Yatromanolakis, Greene–Skinner, Calame and The Newest Sappho, whose texts did not reach the session. Part E declares the rest: {len(ABS)} works, each with the wall that keeps it out.
 
+Version 1.1 (7 November 2026) adds Part F (36/33–36/40) at the author's word of 14:42 EST, "lets expand it to include all materials well need for the reception study in one bundle", the study being his question of 14:13 EST: "im particularly interested in how sappho became a jealous woman rather than a writer, which i believe begins with lucretius". Part F seats the jealousy reading's sources that the library lacked: Hermann's Elementa doctrinae metricae (1816), where the jealousy reading is stated as the sense of the poem's last line, "invidens Sappho viro illi, omnia sibi audenda dicit", in the same year Welcker (36/06) answers it by name; Plutarch's Demetrius and Amatorius, the physician's reading of "the things of Sappho" in Antiochus and the poem quoted as what happens at the beloved's appearing; the Erasistratus story's other carriers, Valerius Maximus and Appian; Gellius with Valerius Aedituus's Latin version before Catullus; Maximus of Tyre, who sets Sappho's rivals beside Socrates's; Racine's Phèdre; Smollett's Roderick Random, with the added stanza Wharton reprints; and Wikipedia's "Sappho 31" at the revision current when the study opened. Part C adds fourteen cross-references for the study: Lucretius's division of the poem's symptoms into fear (DRN 3.155–58) and the lover's suspicion (4.1139–40), Theocritus's Simaetha, Apollonius's Medea, Horace and Ovid on Sappho, Herodotus and Athenaeus on her brother's Doricha, Welcker's refusal of the jealousy reading, Smyth's, Wilamowitz's jealousy in fr. 130, and the Spectator on jealousy. Part E adds the walled scholarship of the jealousy reading.
+
 {len(SPECS)} seats, {nw} works, {tot:,} lines, {nfiles} files, {nloci} loci verified in the text layers; {len(XREF)} cross-references verified in seated texts; {sum(1 for r in REFS if r['held'] == 'by reference')} works of scholarship held by reference and {sum(1 for r in REFS if r['held'] == 'pointer')} pointers; {len(ABS)} declared absences.
 """
 tail = """## How the seats were made
 
 Every seat was fetched in session and hashed into its MANIFEST.sha256, with a source.json recording edition, origin, licence, normalization, the loci verified in the text layer, and the research the seat was made for. The loci keep their sources' readings: long s in the TCP transcription of Hall, and the OCR's readings in the Archive's text layers (Boileau's long s read as f, Welcker's Fraktur, Higginson's Aegean read as -^gean). Welcker's seat is the Bayerische Staatsbibliothek copy; the Google scan of the same book was fetched first and set aside because its OCR reads the Fraktur as noise. The builders are under rebuild/corpora/ea-corpora-36/: gen_spec36.py writes the specs; build36.py builds each seat (the thirty-fourth seating's builder with one kind added, the Text Creation Partnership's TEI); add_loci36.py enters the loci, each asserted present in its text layer; xref36.py verifies the cross-references in the seats that hold them; refs36.py fetches, hashes and verifies the scholarship held by reference; absences36.py writes the declared absences; index_seats36.py enters the seats in the index; seat_axns36.py gives them their AXNs once deposited; and body36.py writes this body.
 """
-body = (hdr + "\n# Part A — Sappho's reception, 1652–1925, and the ground of the future-reader question\n\n" + "\n".join(pa) + "\n# Part B — The future reader\n\n" + "\n".join(pb)
+body = (hdr + "\n# Part A — Sappho's reception, 1652–1925, and the ground of the future-reader question\n\n" + "\n".join(pa) + "\n# Part B — The future reader\n\n" + "\n".join(pb) + "\n# Part F — The jealousy reading (v1.1)\n\n" + "\n".join(pf)
         + "\n" + "\n".join(xr) + "\n" + "\n".join(rf) + "\n" + "\n".join(ab) + "\n" + tail)
 desc = ("The thirty-sixth seating of the originals shelf: Sappho's reception and the future reader, seated for the revision of Closing the Fragment "
         "and the Sappho Future Reader framework (#1548). Part A, twenty-three seats: the translators, editors and critics of Sappho from Hall's Longinus "
@@ -93,13 +95,15 @@ desc = ("The thirty-sixth seating of the originals shelf: Sappho's reception and
         "Anthology's epigrams on Sappho; Smyth and Jebb; and the Wikipedia sentence on writing for future readers. Part B, nine seats, the future-reader "
         "strata the library lacked, from Ennius in Cicero and Dante to Baratynsky and the Sandia WIPP marker report of 1993. Part C, the strata already "
         "seated, by reference; Part D, the open scholarship in copyright (D'Angour, Finglass, Garner, the BMCR reviews) fetched, hashed and held by "
-        "reference, with pointers to the CHS and Brill open editions; Part E, the works behind pay-, access- and rights-walls, declared. Each seat in "
-        "its original language, hashed, with its loci verified in the text layer.")
+        "reference, with pointers to the CHS and Brill open editions; Part E, the works behind pay-, access- and rights-walls, declared. Version 1.1 adds "
+        "Part F, eight seats for the reception study of the jealousy reading: Hermann 1816, Plutarch's Demetrius and Amatorius, Valerius Maximus and Appian, "
+        "Gellius, Maximus of Tyre, Racine's Phèdre, Smollett, and Wikipedia's 'Sappho 31', with the ancient and modern witnesses already seated "
+        "(Lucretius, Theocritus, Apollonius, Welcker, Smyth) entered by reference. Each seat in its original language, hashed, with its loci verified in the text layer.")
 kw = ("EA-CORPORA, originals shelf, Sappho, Sappho 31, fragment 31, fr. 147, fr. 55, reception history, classical reception, translation history, "
       "Longinus, On the Sublime, John Hall, Boileau, Spectator 229, Ambrose Philips, Pope, Heroides 15, Fawkes, Welcker, Mure, Swinburne, Symonds, "
       "Renée Vivien, Bliss Carman, Wharton, Wilamowitz, Smyth, Dio Chrysostom, Plutarch, Oxyrhynchus Papyri, Greek Anthology, tenth Muse, "
-      "Lardinois, Svenbro, D'Angour, Finglass, written futurity, reperformance, future reader, posterity, monumentum, Dante, Sonnet 81, "
-      "Baratynsky, Mandelstam, WIPP, declared absences, Closing the Fragment, Research Notes Towards the Future Reader")
+      "Lardinois, Svenbro, D'Angour, Finglass, written futurity, future reader, posterity, monumentum, Dante, "
+      "Baratynsky, WIPP, declared absences, Closing the Fragment, jealousy reading, Hermann, Lucretius, Erasistratus")
 issue = "\n".join([
     "### Protocol Version\n\nalexanarch-deposit-protocol/v1\n",
     f"### Title\n\n{title}\n", "### Creator\n\nCranes, Rebekah\n", "### ORCID\n\n0009-0000-1599-0703\n",
@@ -116,7 +120,7 @@ issue = "\n".join([
     "AXN deposit #1500 — EA-CORPORA-01/02: Catullus\n"
     "AXN deposit #1738 — EA-CORPORA-33: Sappho whole with the melic poets\n"
     "AXN deposit #1744 — EA-CORPORA-35: the thirty-fifth seating, whose form this seating follows\n",
-    "### Version\n\nv1.0\n",
+    "### Version\n\nv1.1\n",
     "### Methodology\n\nEach seat fetched in session from the source its record names (the Internet Archive, Project Gutenberg, the Text Creation Partnership, Perseus, Wikisource), kept as served, reduced to a text layer by code and hashed into its MANIFEST.sha256; licences read at the file; loci verified by substring in the text layer, in the source's own readings; public-domain status checked against first publication and the author's death, and stated per jurisdiction where it differs. The strata the library already held were verified in their seats and entered by reference. Works not open were declared with their walls. No text corrected by hand. The builders and this body are under rebuild/corpora/ea-corpora-36/.\n",
     "### Falsification Conditions\n\nA seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text layer it names; if a work is misattributed, misdated or assigned to the wrong edition; if a licence recorded for an item is not the one its source states; if a work seated as public domain is not, in the jurisdiction stated; if a cross-reference's locus is absent from the seated text it names; if a declared absence is in fact open in law and in an open text layer the seating names as not located; or if the four surfaces (seat, index, deposit, shelf) disagree.\n",
     f"### Body\n\n{body}",

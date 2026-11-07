@@ -4,7 +4,7 @@ alexanarch-deposit-protocol/v1
 
 ### Title
 
-EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, and the Future-Reader Strata from Dante to the WIPP Markers
+EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann
 
 ### Creator
 
@@ -20,7 +20,7 @@ Cranes, Rebekah
 
 ### Description
 
-The thirty-sixth seating of the originals shelf: Sappho's reception and the future reader, seated for the revision of Closing the Fragment and the Sappho Future Reader framework (#1548). Part A, twenty-three seats: the translators, editors and critics of Sappho from Hall's Longinus (1652) and Boileau through the Spectator, Pope, Fawkes, Welcker, Merivale, Mure, Swinburne, Higginson, Symonds, Vivien, Carman, Wharton, O'Hara, Stacpoole, Wilamowitz and Robinson to Cox (1925); the remembrance fragments in their carriers (Dio, Plutarch, Stobaeus, P.Oxy. XV); the Anthology's epigrams on Sappho; Smyth and Jebb; and the Wikipedia sentence on writing for future readers. Part B, nine seats, the future-reader strata the library lacked, from Ennius in Cicero and Dante to Baratynsky and the Sandia WIPP marker report of 1993. Part C, the strata already seated, by reference; Part D, the open scholarship in copyright (D'Angour, Finglass, Garner, the BMCR reviews) fetched, hashed and held by reference, with pointers to the CHS and Brill open editions; Part E, the works behind pay-, access- and rights-walls, declared. Each seat in its original language, hashed, with its loci verified in the text layer.
+The thirty-sixth seating of the originals shelf: Sappho's reception and the future reader, seated for the revision of Closing the Fragment and the Sappho Future Reader framework (#1548). Part A, twenty-three seats: the translators, editors and critics of Sappho from Hall's Longinus (1652) and Boileau through the Spectator, Pope, Fawkes, Welcker, Merivale, Mure, Swinburne, Higginson, Symonds, Vivien, Carman, Wharton, O'Hara, Stacpoole, Wilamowitz and Robinson to Cox (1925); the remembrance fragments in their carriers (Dio, Plutarch, Stobaeus, P.Oxy. XV); the Anthology's epigrams on Sappho; Smyth and Jebb; and the Wikipedia sentence on writing for future readers. Part B, nine seats, the future-reader strata the library lacked, from Ennius in Cicero and Dante to Baratynsky and the Sandia WIPP marker report of 1993. Part C, the strata already seated, by reference; Part D, the open scholarship in copyright (D'Angour, Finglass, Garner, the BMCR reviews) fetched, hashed and held by reference, with pointers to the CHS and Brill open editions; Part E, the works behind pay-, access- and rights-walls, declared. Version 1.1 adds Part F, eight seats for the reception study of the jealousy reading: Hermann 1816, Plutarch's Demetrius and Amatorius, Valerius Maximus and Appian, Gellius, Maximus of Tyre, Racine's Phèdre, Smollett, and Wikipedia's 'Sappho 31', with the ancient and modern witnesses already seated (Lucretius, Theocritus, Apollonius, Welcker, Smyth) entered by reference. Each seat in its original language, hashed, with its loci verified in the text layer.
 
 ### Content Type
 
@@ -36,7 +36,7 @@ Human–machine collaborative. Rebekah Cranes is a heteronym of Lee Sharks, the 
 
 ### Keywords
 
-EA-CORPORA, originals shelf, Sappho, Sappho 31, fragment 31, fr. 147, fr. 55, reception history, classical reception, translation history, Longinus, On the Sublime, John Hall, Boileau, Spectator 229, Ambrose Philips, Pope, Heroides 15, Fawkes, Welcker, Mure, Swinburne, Symonds, Renée Vivien, Bliss Carman, Wharton, Wilamowitz, Smyth, Dio Chrysostom, Plutarch, Oxyrhynchus Papyri, Greek Anthology, tenth Muse, Lardinois, Svenbro, D'Angour, Finglass, written futurity, reperformance, future reader, posterity, monumentum, Dante, Sonnet 81, Baratynsky, Mandelstam, WIPP, declared absences, Closing the Fragment, Research Notes Towards the Future Reader
+EA-CORPORA, originals shelf, Sappho, Sappho 31, fragment 31, fr. 147, fr. 55, reception history, classical reception, translation history, Longinus, On the Sublime, John Hall, Boileau, Spectator 229, Ambrose Philips, Pope, Heroides 15, Fawkes, Welcker, Mure, Swinburne, Symonds, Renée Vivien, Bliss Carman, Wharton, Wilamowitz, Smyth, Dio Chrysostom, Plutarch, Oxyrhynchus Papyri, Greek Anthology, tenth Muse, Lardinois, Svenbro, D'Angour, Finglass, written futurity, future reader, posterity, monumentum, Dante, Baratynsky, WIPP, declared absences, Closing the Fragment, jealousy reading, Hermann, Lucretius, Erasistratus
 
 ### Related Identifiers
 
@@ -53,7 +53,7 @@ AXN deposit #1744 — EA-CORPORA-35: the thirty-fifth seating, whose form this s
 
 ### Version
 
-v1.0
+v1.1
 
 ### Methodology
 
@@ -65,7 +65,7 @@ A seat is falsified if its files do not verify against its MANIFEST.sha256 at th
 
 ### Body
 
-# EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, and the Future-Reader Strata from Dante to the WIPP Markers
+# EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann
 
 # EA-CORPORA-36 — The Thirty-Sixth Seating
 
@@ -73,9 +73,11 @@ The author asked for the seating on 2026-11-07: "i think we need a sappho recept
 
 The research occasion is twofold. The revision of Closing the Fragment (v7, a draft of 2026-11-07 for Alexanarch) controls a public composition's closure of fragment 31 against the translators who closed it before: Hall's Longinus ends its four stanzas on "Yet ſince I'me wretched I muſt dare." (1652); Boileau ends his three quatrains on the fifth stanza's opening, that all must be hazarded (in the 1683 printing of the Traité, first published 1674); Philips's version in the Spectator ends on "I fainted, sunk, and dy'd away." (1711); Merivale ends at the failing of "Both sight and sound" (1813); Vivien's prose carries "Mais il faut oser tout..." (1903); Wharton's literal version carries "But I must dare all, since one so poor ..." (1908), the line the January composition's closing aligns with. The Sappho Future Reader framework, whose groundwork is Research Notes Towards the Future Reader (#1548), maps the future reader as a position with a history in twelve strata, from the epigraphic address through Thucydides' possession for all time, Ovid's legar, the scriptural writing for a generation to come, Dante's lettor and Shakespeare's eyes not yet created, the Romantic culture of posterity, Whitman's and Baratynsky's readers in posterity, to the WIPP marker studies' message for readers ten thousand years out.
 
-The seating holds what is public. Part A (seats 36/01–36/23) holds the reception of Sappho and its scholarship. Seats 36/01–36/18 run from 1652 to 1925: the Longinian translators (Hall, Boileau), the eighteenth century's English Sappho (the Spectator, Pope's Ovid, Fawkes), the nineteenth century's question of her character (Welcker, Mure) and its poets and critics (Merivale, Swinburne, Higginson, Symonds), and the editions and renderings of the twentieth century's first quarter (Vivien, Carman, Wharton, O'Hara and Stacpoole, Wilamowitz, Robinson, Cox). Seats 36/19–36/23 hold the ground the future-reader question is argued on: the remembrance fragments in the books that carry them (Dio's Corinthian oration with fr. 147; Plutarch with fr. 55 and Sappho's pride in the καλλιγραφία of her songs; Stobaeus; the Oxyrhynchus volume with her fourth book and Ibycus's promise of imperishable fame to Polycrates), the epigrams of the Greek Anthology in which the stranger at Sappho's tomb is the reader addressed, Smyth's commentary printing fr. 147 under Horace's "non omnis moriar", Jebb's lectures, and the Wikipedia sentence that names the written-futurity view and cites for it the chapter written against it. Part B (36/24–36/32) holds the future-reader strata the library did not hold: Ennius in Cicero, Dante, Chaucer, Shakespeare's sonnets, Milton, the Romantic sentences (Wordsworth, Keats, Shelley, Stendhal), Dickinson as Todd and Higginson printed her, Baratynsky with Mandelstam's bottle quoted beside him, and the Sandia report of 1993. Part C enters by reference the strata the library already held (Homer, Herodotus, Thucydides, the Phaedrus, Horace, Ovid, the Hebrew Bible, Nietzsche, Whitman) and the witnesses of fragment 31 (Longinus, Catullus, the diplomatic layer). Part D holds the modern scholarship that is free to read and in copyright by reference, each work fetched, hashed and its loci verified: D'Angour's chapter of 2013 and his note of 2023, Finglass on the New College manuscript (2025), Garner on oral tradition (2011), and the Bryn Mawr reviews of Svenbro, of the volume carrying Lardinois 2008, and of Yatromanolakis; with pointers to Lardinois 2008 in the Radboud repository and to the open editions of Yatromanolakis, Greene–Skinner, Calame and The Newest Sappho, whose texts did not reach the session. Part E declares the rest: 66 works, each with the wall that keeps it out.
+The seating holds what is public. Part A (seats 36/01–36/23) holds the reception of Sappho and its scholarship. Seats 36/01–36/18 run from 1652 to 1925: the Longinian translators (Hall, Boileau), the eighteenth century's English Sappho (the Spectator, Pope's Ovid, Fawkes), the nineteenth century's question of her character (Welcker, Mure) and its poets and critics (Merivale, Swinburne, Higginson, Symonds), and the editions and renderings of the twentieth century's first quarter (Vivien, Carman, Wharton, O'Hara and Stacpoole, Wilamowitz, Robinson, Cox). Seats 36/19–36/23 hold the ground the future-reader question is argued on: the remembrance fragments in the books that carry them (Dio's Corinthian oration with fr. 147; Plutarch with fr. 55 and Sappho's pride in the καλλιγραφία of her songs; Stobaeus; the Oxyrhynchus volume with her fourth book and Ibycus's promise of imperishable fame to Polycrates), the epigrams of the Greek Anthology in which the stranger at Sappho's tomb is the reader addressed, Smyth's commentary printing fr. 147 under Horace's "non omnis moriar", Jebb's lectures, and the Wikipedia sentence that names the written-futurity view and cites for it the chapter written against it. Part B (36/24–36/32) holds the future-reader strata the library did not hold: Ennius in Cicero, Dante, Chaucer, Shakespeare's sonnets, Milton, the Romantic sentences (Wordsworth, Keats, Shelley, Stendhal), Dickinson as Todd and Higginson printed her, Baratynsky with Mandelstam's bottle quoted beside him, and the Sandia report of 1993. Part C enters by reference the strata the library already held (Homer, Herodotus, Thucydides, the Phaedrus, Horace, Ovid, the Hebrew Bible, Nietzsche, Whitman) and the witnesses of fragment 31 (Longinus, Catullus, the diplomatic layer). Part D holds the modern scholarship that is free to read and in copyright by reference, each work fetched, hashed and its loci verified: D'Angour's chapter of 2013 and his note of 2023, Finglass on the New College manuscript (2025), Garner on oral tradition (2011), and the Bryn Mawr reviews of Svenbro, of the volume carrying Lardinois 2008, and of Yatromanolakis; with pointers to Lardinois 2008 in the Radboud repository and to the open editions of Yatromanolakis, Greene–Skinner, Calame and The Newest Sappho, whose texts did not reach the session. Part E declares the rest: 73 works, each with the wall that keeps it out.
 
-32 seats, 41 works, 612,072 lines, 146 files, 77 loci verified in the text layers; 22 cross-references verified in seated texts; 7 works of scholarship held by reference and 6 pointers; 66 declared absences.
+Version 1.1 (7 November 2026) adds Part F (36/33–36/40) at the author's word of 14:42 EST, "lets expand it to include all materials well need for the reception study in one bundle", the study being his question of 14:13 EST: "im particularly interested in how sappho became a jealous woman rather than a writer, which i believe begins with lucretius". Part F seats the jealousy reading's sources that the library lacked: Hermann's Elementa doctrinae metricae (1816), where the jealousy reading is stated as the sense of the poem's last line, "invidens Sappho viro illi, omnia sibi audenda dicit", in the same year Welcker (36/06) answers it by name; Plutarch's Demetrius and Amatorius, the physician's reading of "the things of Sappho" in Antiochus and the poem quoted as what happens at the beloved's appearing; the Erasistratus story's other carriers, Valerius Maximus and Appian; Gellius with Valerius Aedituus's Latin version before Catullus; Maximus of Tyre, who sets Sappho's rivals beside Socrates's; Racine's Phèdre; Smollett's Roderick Random, with the added stanza Wharton reprints; and Wikipedia's "Sappho 31" at the revision current when the study opened. Part C adds fourteen cross-references for the study: Lucretius's division of the poem's symptoms into fear (DRN 3.155–58) and the lover's suspicion (4.1139–40), Theocritus's Simaetha, Apollonius's Medea, Horace and Ovid on Sappho, Herodotus and Athenaeus on her brother's Doricha, Welcker's refusal of the jealousy reading, Smyth's, Wilamowitz's jealousy in fr. 130, and the Spectator on jealousy. Part E adds the walled scholarship of the jealousy reading.
+
+40 seats, 55 works, 694,650 lines, 190 files, 89 loci verified in the text layers; 36 cross-references verified in seated texts; 7 works of scholarship held by reference and 6 pointers; 73 declared absences.
 
 # Part A — Sappho's reception, 1652–1925, and the ground of the future-reader question
 
@@ -519,6 +521,114 @@ The seating holds what is public. Part A (seats 36/01–36/23) holds the recepti
 - Why seated: Stratum XI, the literal engineering turn: a message designed for readers ten thousand years out, with its drafted text, 'This place is not a place of honor', and its problem stated as design: deixis that survives the loss of its context.
 - Files: [the seat](https://www.alexanarch.org/data/corpora/wipp-markers-sandia-1993/) — [source.json](https://www.alexanarch.org/data/corpora/wipp-markers-sandia-1993/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/wipp-markers-sandia-1993/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/wipp-markers-sandia-1993](https://traininglayerliterature.org/originals/wipp-markers-sandia-1993/)
 
+# Part F — The jealousy reading (v1.1)
+
+## Seat 33 — G. Hermann, Elementa doctrinae metricae (Leipzig, 1816)
+
+- Works:
+  - G. Hermann, Elementa doctrinae metricae (Lipsiae: apud Gerh. Fleischerum, 1816), the Library of Congress copy
+- Language: lat, grc
+- Licence: Public domain everywhere (1816; Hermann died 1848).
+- Verified locus: Hermann 1816: the jealousy reading stated as the sense of fr. 31's last line (OCR) — 'Si hic, quemputo, sensus est horum verborum, invidens Sap- pho viro illi, omnia sibi audenda dicit, quoniam puellam nimis securam amore illius calefieri sentiat.'
+- Verified locus: Hermann: the last line held to be the poet's words, not her quoter's (OCR) — 'Vltimum versum non scri- ptoris, qui affert carmen hoc, sed ipsius poetriae verha continere'
+- Lines: 44,862 in 1 text file
+- Scope: The book whole.
+- Why seated: Hermann's conjectured close of fr. 31, and with it the jealousy reading stated as the sense of the last line: 'invidens Sappho viro illi, omnia sibi audenda dicit'. Welcker answers it the same year (36/06), naming it ('Darum hat Hermann einen andern Schluß erfunden') and denying the jealousy ('nicht, wie man irrig gewähnt hat, aus dunkler Eifersucht').
+- Files: [the seat](https://www.alexanarch.org/data/corpora/hermann-elementa-1816/) — [source.json](https://www.alexanarch.org/data/corpora/hermann-elementa-1816/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/hermann-elementa-1816/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/hermann-elementa-1816](https://traininglayerliterature.org/originals/hermann-elementa-1816/)
+
+## Seat 34 — Plutarch, Demetrius and Amatorius (Perseus)
+
+- Works:
+  - Plutarch, Demetrius, ed. B. Perrin (Loeb, 1920), Perseus tlg0007.tlg057 grc2 (38: Erasistratus reads the symptoms of fr. 31 in Antiochus)
+  - Plutarch, Amatorius, ed. G. N. Bernardakis (Leipzig, 1892), Perseus tlg0007.tlg113 grc2 (18, 763a: fr. 31 as love at the beloved's appearing)
+- Language: grc
+- Licence: Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); the edition in the public domain (Perrin's Lives, 1920, and Bernardakis's Moralia, 1892).
+- Verified locus: Plutarch, Demetrius 38: the things of Sappho in Antiochus at Stratonice's coming — 'ἐγίνετο τὰ τῆς Σαπφοῦς ἐκεῖνα περὶ αὐτὸν πάντα, φωνῆς ἐπίσχεσις, ἐρύθημα πυρῶδες, ὄψεων ὑπολείψεις, ἱδρῶτες ὀξεῖς'
+- Verified locus: Plutarch, Amatorius 18 (763a): fr. 31 as what happens at the beloved's appearing — 'ἐν οἷς ἡ καλὴ Σαπφὼ λέγει τῆς ἐρωμένης ἐπιφανείσης τήν τε φωνὴν ἴσχεσθαι'
+- Lines: 592 in 2 text files
+- Scope: The two works whole.
+- Why seated: The two ancient readings of fr. 31's symptoms as love: the physician's diagnosis in the Life (Erasistratus finds in Antiochus 'the things of Sappho', the stepmother the cause) and the Amatorius's quotation of the poem as what love does at the beloved's appearing, the passage Smyth (36/21) cites against the jealousy reading.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/plutarch-demetrius-amatorius/) — [source.json](https://www.alexanarch.org/data/corpora/plutarch-demetrius-amatorius/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/plutarch-demetrius-amatorius/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/plutarch-demetrius-amatorius](https://traininglayerliterature.org/originals/plutarch-demetrius-amatorius/)
+
+## Seat 35 — The Erasistratus story in its other carriers: Valerius Maximus 5.7 ext. 1 and Appian, Syriaca 59–61 (Perseus)
+
+- Works:
+  - Valerius Maximus, Facta et dicta memorabilia, ed. C. Kempf (Leipzig, 1888), Perseus phi1038.phi001 lat1
+  - Appian, Syriaca, ed. L. Mendelssohn and P. Viereck, via Perseus tlg0551.tlg013 grc2
+- Language: lat, grc
+- Licence: Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); the edition in the public domain (Kempf's Valerius, 1888; White's Appian, 1899).
+- Verified locus: Valerius Maximus 5.7 ext. 1: the physician reads the blush and the pallor — 'ut eum ad introitum Stratonices rubore perfundi et spiritu increbrescere eaque egrediente pallescere'
+- Verified locus: Appian, Syriaca 59: Erasistratus names the woman — 'ὁ Ἐρασίστρατος ἔφη· τῆς ἐμῆς γυναικὸς ἐρᾷ'
+- Lines: 2,465 in 2 text files
+- Scope: The two works whole.
+- Why seated: The story of Antiochus and Stratonice without Sappho's name: the symptoms read by a physician as love for a woman the patient may not have, the frame in which fr. 31's body becomes a case history.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/erasistratus-witnesses/) — [source.json](https://www.alexanarch.org/data/corpora/erasistratus-witnesses/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/erasistratus-witnesses/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/erasistratus-witnesses](https://traininglayerliterature.org/originals/erasistratus-witnesses/)
+
+## Seat 36 — Aulus Gellius, Noctes Atticae (Perseus)
+
+- Works:
+  - A. Gellius, Noctes Atticae, ed. C. Hosius (Leipzig, 1903), Perseus phi1254.phi001 lat2 (19.9: Valerius Aedituus)
+- Language: lat
+- Licence: Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); the edition in the public domain (Hosius's edition, 1903).
+- Verified locus: Gellius 19.9.11: Valerius Aedituus, the Latin fr. 31 before Catullus — 'Aeditui versus: Dicere cum conor curam tibi, Pamphila, cordis, Quid mi abs te quaeram? verba labris abeunt'
+- Lines: 8,563 in 1 text file
+- Scope: The twenty books whole.
+- Why seated: 19.9, where Julianus has the early Latin love epigrams recited, Valerius Aedituus's among them, the Roman fr. 31 before Catullus: speech failing, sweat, the heart giving out.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/gellius-noctes-atticae/) — [source.json](https://www.alexanarch.org/data/corpora/gellius-noctes-atticae/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/gellius-noctes-atticae/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/gellius-noctes-atticae](https://traininglayerliterature.org/originals/gellius-noctes-atticae/)
+
+## Seat 37 — Maximus of Tyre, Dissertationes (First1KGreek)
+
+- Works:
+  - Maximus Tyrius, Philosophumena, ed. H. Hobein (Leipzig, 1910), First1KGreek tlg0563.tlg001 1st1K-grc1
+- Language: grc
+- Licence: First1KGreek TEI under CC BY-SA 4.0 (the packaging); Hobein's edition (Leipzig, 1910) in the public domain in the United States.
+- Verified locus: Maximus of Tyre 18.9: Sappho's rivals as Socrates's — 'ὅ τιπερ Σωκράτει οἱ ἀντίτεχνοι, Πρόδικος καὶ Γοργίας καὶ Θρασύμαχος καὶ Πρωταγόρας, τοῦτο τῇ Σαπφοῖ Γοργὼ καὶ Ἀνδρομέδα'
+- Lines: 4,330 in 1 text file
+- Scope: The forty-one discourses whole.
+- Why seated: Or. 18.9, Sappho's art of love set beside Socrates's, her rivals beside his (Gorgo and Andromeda against Prodicus and Gorgias): the writer read as the lover and the lover read through the philosopher.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/maximus-tyrius/) — [source.json](https://www.alexanarch.org/data/corpora/maximus-tyrius/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/maximus-tyrius/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/maximus-tyrius](https://traininglayerliterature.org/originals/maximus-tyrius/)
+
+## Seat 38 — J. Racine, Phèdre (1677), in the Didot edition (Paris, 1854), Wikisource (fr)
+
+- Works:
+  - Racine, Phèdre, Didot 1854, Acte I, fr.wikisource
+  - Racine, Phèdre, Didot 1854, Acte II, fr.wikisource
+  - Racine, Phèdre, Didot 1854, Acte III, fr.wikisource
+  - Racine, Phèdre, Didot 1854, Acte IV, fr.wikisource
+  - Racine, Phèdre, Didot 1854, Acte V, fr.wikisource
+- Language: fra
+- Licence: Public domain everywhere (1677; Racine died 1699). The Wikisource page's text under CC BY-SA 4.0 for the site's contributions.
+- Verified locus: Racine, Phèdre I.3: the avowal — 'Je le vis, je rougis, je pâlis à sa vue ;'
+- Lines: 4,026 in 5 text files
+- Scope: The five acts whole, in the Didot edition of 1854 as Wikisource gives it.
+- Why seated: Phèdre's avowal (I.3), the symptoms of fr. 31 given to a stepmother's forbidden love, the case of the Erasistratus story turned round, in the same years as Boileau's Traité (36/02).
+- Files: [the seat](https://www.alexanarch.org/data/corpora/racine-phedre/) — [source.json](https://www.alexanarch.org/data/corpora/racine-phedre/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/racine-phedre/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/racine-phedre](https://traininglayerliterature.org/originals/racine-phedre/)
+
+## Seat 39 — T. Smollett, The Adventures of Roderick Random (1748), the Project Gutenberg text
+
+- Works:
+  - Smollett, The Adventures of Roderick Random, Project Gutenberg #4085
+- Language: eng
+- Licence: Public domain everywhere (1748; Smollett died 1771); the Gutenberg file under its licence.
+- Verified locus: Smollett's fr. 31, its added close — 'Unheard I mourn, unknown I sigh, Unfriended live, unpitied die!'
+- Lines: 17,600 in 1 text file
+- Scope: The novel whole.
+- Why seated: The fr. 31 Smollett gives his hero, with a final stanza of its own ('Unheard I mourn, unknown I sigh'), the added continuation Closing the Fragment v7 §6.4 cites from Wharton, here in its novel.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/smollett-roderick-random/) — [source.json](https://www.alexanarch.org/data/corpora/smollett-roderick-random/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/smollett-roderick-random/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/smollett-roderick-random](https://traininglayerliterature.org/originals/smollett-roderick-random/)
+
+## Seat 40 — Wikipedia, 'Sappho 31', revision 1375954224 of 2026-09-21
+
+- Works:
+  - Wikipedia, 'Sappho 31', revision 1375954224 of 2026-09-21, the wikitext as served
+- Language: eng
+- Licence: Wikipedia text under CC BY-SA 4.0, as the site states.
+- Verified locus: Wikipedia, 'Sappho 31': the jealousy reading dated to the eighteenth century — 'As far back as the eighteenth century, it has been proposed that the poem is about Sappho's jealousy of the man who sits with her beloved.'
+- Verified locus: Wikipedia, 'Sappho 31': the first modern translations through Catullus — 'The first translations of the poem into modern languages derived from [[Catullus]]' re-visitation of the poem, [[Catullus 51]], painting Sappho with a green taint of jealousy.'
+- Lines: 140 in 1 text file
+- Scope: The article at one revision.
+- Why seated: The encyclopedia's account of the poem, its interpretation and its reception, at the revision current when the reception study opened: the readings it reports for the speaker's state, the jealousy reading among them, as a composition layer is likely to meet them.
+- Files: [the seat](https://www.alexanarch.org/data/corpora/wikipedia-sappho-31/) — [source.json](https://www.alexanarch.org/data/corpora/wikipedia-sappho-31/source.json), [MANIFEST.sha256](https://www.alexanarch.org/data/corpora/wikipedia-sappho-31/MANIFEST.sha256). Shelf: [traininglayerliterature.org/originals/wikipedia-sappho-31](https://traininglayerliterature.org/originals/wikipedia-sappho-31/)
+
 # Part C — Cross-references: the strata already seated
 
 The library already held these texts when the seating was asked for; they are entered here by reference to the seat that holds them, with the locus asserted present in the seated text and the text's SHA-256 at the time of this seating. Nothing is re-seated.
@@ -529,6 +639,20 @@ The library already held these texts when the seating was asked for; they are en
 | Sappho's reception | [Longinus] 10.2: the sole carrier of fr. 31, breaking off in the fifth stanza | EA-CORPORA-01/06 (longinus) | [text/DeSublimitate.txt](https://www.alexanarch.org/data/corpora/longinus/text/DeSublimitate.txt) | ἀλλὰ πᾶν τολματόν, ἐπεὶ καὶ πένητ |
 | Sappho's reception | Catullus 51, the Latin answer to fr. 31 | EA-CORPORA-01/02 (catullus) | [text/Catullus.txt](https://www.alexanarch.org/data/corpora/catullus/text/Catullus.txt) | Ille mi par esse deo videtur |
 | Sappho's reception | Ovid, Heroides 15 (Sappho Phaoni), the epistle Pope renders (36/04): the letter known by its hand | EA-CORPORA-29/03 (ovid) | [text/heroides.txt](https://www.alexanarch.org/data/corpora/ovid/text/heroides.txt) | Ecquid, ut adspecta est studiosae littera dextrae |
+| IX. the jealousy reading | Lucretius, DRN 3.155–58: fr. 31's symptoms moved into fear | EA-CORPORA-02/06 (lucretius) | [text/drn.txt](https://www.alexanarch.org/data/corpora/lucretius/text/drn.txt) | corpore et infringi linguam vocemque aboriri, |
+| IX. the jealousy reading | Lucretius, DRN 4.1139–40: the lover's suspicion of a look given to another | EA-CORPORA-02/06 (lucretius) | [text/drn.txt](https://www.alexanarch.org/data/corpora/lucretius/text/drn.txt) | aut nimium iactare oculos aliumve tueri |
+| IX. the jealousy reading | Theocritus 2.106–08: Simaetha at Delphis's coming, fr. 31's symptoms in a jilted woman's spell | EA-CORPORA-01/03 (theocritus) | [text/Idylls.txt](https://www.alexanarch.org/data/corpora/theocritus/text/Idylls.txt) | πᾶσα μὲν ἐψύχθην χιόνος πλέον, ἐν δὲ μετώπῳ |
+| IX. the jealousy reading | Apollonius, Argonautica 3.962–63: Medea at Jason's appearing | EA-CORPORA-16/01 (apollonius) | [text/tlg001.txt](https://www.alexanarch.org/data/corpora/apollonius/text/tlg001.txt) | ἐκ δʼ ἄρα οἱ κραδίη στηθέων πέσεν, ὄμματα δʼ αὔτως ἤχλυσαν |
+| IX. the jealousy reading | Horace, Odes 2.13.24–25: Sappho complaining of the girls of her city | EA-CORPORA-29/02 (horace) | [text/carmina.txt](https://www.alexanarch.org/data/corpora/horace/text/carmina.txt) | Aeoliis fidibus querentem |
+| IX. the jealousy reading | Ovid, Tristia 2.365: what Sappho taught but love | EA-CORPORA-29/03 (ovid) | [text/tristia.txt](https://www.alexanarch.org/data/corpora/ovid/text/tristia.txt) | Lesbia quid docuit Sappho, nisi amare, puellas? |
+| IX. the jealousy reading | Herodotus 2.135: Sappho mocks her brother in song over Rhodopis | EA-CORPORA-07/01 (herodotus) | [text/book-02.txt](https://www.alexanarch.org/data/corpora/herodotus/text/book-02.txt) | ἐν μέλεϊ Σαπφὼ πολλὰ κατεκερτόμησέ μιν |
+| IX. the jealousy reading | Athenaeus 13.596b: Doricha, whom Sappho attacked as her brother's beloved | EA-CORPORA-31/01 (athenaeus) | [text/deipnosophistae-kaibel.txt](https://www.alexanarch.org/data/corpora/athenaeus/text/deipnosophistae-kaibel.txt) | Δωρίχαν τε, ἣν ἡ καλὴ Σαπφὼ ἐρωμένην γενομένην Χαράξου τοῦ ἀδελφοῦ αὐτῆς |
+| IX. the jealousy reading | Welcker 1816 names Hermann's close (OCR) | EA-CORPORA-36/06 (welcker-sappho-1816) | [text/welcker-1816.ocr.txt](https://www.alexanarch.org/data/corpora/welcker-sappho-1816/text/welcker-1816.ocr.txt) | Darum hat Hermann einen andern Schluß erſunden, (Elem.-doctr metr. p. 629.) |
+| IX. the jealousy reading | Welcker 1816: the passion of the poem from love, not dark jealousy (OCR) | EA-CORPORA-36/06 (welcker-sappho-1816) | [text/welcker-1816.ocr.txt](https://www.alexanarch.org/data/corpora/welcker-sappho-1816/text/welcker-1816.ocr.txt) | nicht, wie man er irrig gewaͤhnt hat, aus dunkler Eiferſucht |
+| IX. the jealousy reading | Welcker 1816: jealousy strikingly rare in the old poets (OCR) | EA-CORPORA-36/06 (welcker-sappho-1816) | [text/welcker-1816.ocr.txt](https://www.alexanarch.org/data/corpora/welcker-sappho-1816/text/welcker-1816.ocr.txt) | von Eiferſucht, die bey den alten Dichtern uͤberhaupt auffal⸗ lend ſelten vorkommt |
+| IX. the jealousy reading | Smyth 1900 on fr. 31: not an expression of jealousy | EA-CORPORA-36/21 (smyth-greek-melic-poets-1900) | [text/smyth-1900.ocr.txt](https://www.alexanarch.org/data/corpora/smyth-greek-melic-poets-1900/text/smyth-1900.ocr.txt) | It is not an expression of jealousy. |
+| IX. the jealousy reading | Wilamowitz 1913 on fr. 130: a confession of jealousy | EA-CORPORA-36/16 (wilamowitz-sappho-und-simonides-1913) | [text/wilamowitz-1913.ocr.txt](https://www.alexanarch.org/data/corpora/wilamowitz-sappho-und-simonides-1913/text/wilamowitz-1913.ocr.txt) | Ein Liebesgedicht an sie fing mit dem leidenschaftlichen Geständnis der Eifersucht an |
+| IX. the jealousy reading | The Spectator on jealousy, with Horace's ode to Lydia | EA-CORPORA-36/03 (spectator-229-1711) | [text/spectator-1891.txt](https://www.alexanarch.org/data/corpora/spectator-229-1711/text/spectator-1891.txt) | Jealousie is admirably described in this View by _Horace_ in his Ode to _Lydia_ |
 | II. kleos-futurity | Il. 6.357–58, Helen: a subject of song for men to come | EA-CORPORA-12/01 (homer) | [text/tlg001-Iliad.txt](https://www.alexanarch.org/data/corpora/homer/text/tlg001-Iliad.txt) | ἀνθρώποισι πελώμεθʼ ἀοίδιμοι ἐσσομένοισι |
 | II. kleos-futurity | Od. 8.579–80, Alcinous: ruin spun so that there be song for those to come | EA-CORPORA-12/01 (homer) | [text/tlg002-Odyssey.txt](https://www.alexanarch.org/data/corpora/homer/text/tlg002-Odyssey.txt) | ἵνα ᾖσι καὶ ἐσσομένοισιν ἀοιδή |
 | III. prose charter | Herodotus, proem: that what men have done not fade with time | EA-CORPORA-07/01 (herodotus) | [text/book-01.txt](https://www.alexanarch.org/data/corpora/herodotus/text/book-01.txt) | τῷ χρόνῳ ἐξίτηλα γένηται |
@@ -588,7 +712,7 @@ The modern scholarship on Sappho and the future reader that is free to read and 
 
 # Part E — Declared absences
 
-Commons only: works behind pay-, access- and rights-walls are declared, with the wall and, where one was verified, a pointer. 66 entries: 15 open in law and unlocated or unfetched in session; 39 in copyright; 1 held privately; 11 behind a subscription.
+Commons only: works behind pay-, access- and rights-walls are declared, with the wall and, where one was verified, a pointer. 73 entries: 17 open in law and unlocated or unfetched in session; 41 in copyright; 1 held privately; 14 behind a subscription.
 
 ## The reception
 
@@ -661,6 +785,16 @@ Commons only: works behind pay-, access- and rights-walls are declared, with the
 - N. Felson (ed.), The Poetics of Deixis in Alcman, Pindar, and Other Lyric, Arethusa 37.3 (2004), with E. J. Bakker — behind a subscription. Johns Hopkins University Press (Project MUSE). Stratum X.
 - Human Interference Task Force, Reducing the Likelihood of Future Human Activities That Could Affect Geologic High-Level Waste Repositories, BMI/ONWI-537 (1984), with T. A. Sebeok, Communication Measures to Bridge Ten Millennia (BMI/ONWI-532, 1984) — open in law and unlocated or unfetched in session. United States government reports; not sought in this round. Stratum XI; SAND92-1382 is seated at 36/32.
 - The Voyager Golden Record (NASA, 1977), and C. Sagan et al., Murmurs of Earth (New York, 1978) — in copyright. The record's contents are held by NASA/JPL; the book in copyright. Not sought in this round. Stratum XI.
+
+## The jealousy reading (v1.1)
+
+- G. Devereux, 'The Nature of Sappho's Seizure in Fr. 31 LP as Evidence of Her Inversion', Classical Quarterly 20 (1970), 17–31 — behind a subscription. Cambridge University Press (JSTOR). The clinical reading of the symptoms, the modern descendant of the Erasistratus story (36/34–35).
+- B. Snell, 'Sapphos Gedicht φαίνεταί μοι κῆνος', Hermes 66 (1931), 71–90 — behind a subscription. Franz Steiner (JSTOR).
+- M. R. Lefkowitz, 'Critical Stereotypes and the Poetry of Sappho', Greek, Roman and Byzantine Studies 14 (1973), 113–23 — open in law and unlocated or unfetched in session. Not fetched in session. The critique of the biographical reading, the jealousy reading among it.
+- M. R. Lefkowitz, The Lives of the Greek Poets (London, 1981; 2nd edn 2012) — in copyright. Duckworth; Johns Hopkins University Press. The biographies made from the poems.
+- M. Kivilo, Early Greek Poets' Lives: The Shaping of the Tradition (Leiden, 2010) — in copyright. Brill. Not sought in this round.
+- G. F. Gianotti, on the reception of fr. 31 through Catullus (1997), as Wikipedia's 'Sappho 31' cites it (36/40) — behind a subscription. The citation not traced in session to an open text.
+- G. Hermann, dissertation on the pronoun αὐτός, in C. D. Beck (ed.), Acta Seminarii Regii et Societatis Philologicae Lipsiensis I, p. 71, where Hermann first held fr. 31's last line to be Sappho's (Elementa 1816, seated at 36/33, cites it) — open in law and unlocated or unfetched in session. Public domain; not sought in this round.
 
 ## How the seats were made
 
