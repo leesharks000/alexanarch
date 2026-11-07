@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-06T16:15:34.490075Z",
- "seats": 194,
- "lines_total": 8096989,
+ "_generated": "2026-11-07T17:44:40.722546Z",
+ "seats": 221,
+ "lines_total": 8569447,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -17117,7 +17117,859 @@
    "scope": "The volume whole.",
    "data": "https://www.alexanarch.org/data/corpora/streeter-four-gospels-1925/",
    "axn": "AXN:0C27.ORIGINAL.🗺️👁️🌳🔎💜⏏️"
+  },
+  {
+   "seat": "EA-CORPORA-36/01",
+   "corpus": "hall-peri-hypsous-1652",
+   "edition": "J. Hall, Peri hypsous (London: Roger Daniel for Francis Eaglesfield, 1652), EEBO-TCP A88516",
+   "license": {
+    "payload": "Public domain everywhere (1652; Hall died 1656). The TCP transcription is released under CC0 1.0, as its <availability> states.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Text Creation Partnership (EEBO-TCP Phase I), GitHub textcreationpartnership",
+      "url": "https://raw.githubusercontent.com/textcreationpartnership/A88516/master/A88516.xml",
+      "tcp_id": "A88516",
+      "stc": "Wing L2999; Thomason E1294_2; ESTC R202778",
+      "licence_at_file": "This keyboarded and encoded edition of the work described above is co-owned by the institutions providing financial support to the Early English Books Online Text Creation Partnership. This Phase I text is available for reuse, according to the terms of Creative Commons 0 1.0 Universal. The text can be copied, modified, distributed and performed, even for commercial purposes, all without asking permission.",
+      "sha256": "e7463f91c8e391cab0748afc720e13fe0e86ae7369c739b4a2dd3e3781e22da5"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 152,
+   "verified_loci": [
+    "Hall: Sappho's choice and binding of the accidents of love — 'Thus did Sappho ſingle out all thoſe accidents that are either inherent or conſequentiall to love and melancholy'",
+    "Hall's fr. 31, its first line — 'He that ſits next thee now and hears Thy charming voyce to me appears'",
+    "Hall's fr. 31, the closing line carried over from the fifth stanza — 'I ſeem a Ghoſt. Yet ſince I'me wretched I muſt dare.'"
+   ],
+   "why_seated": "The first English rendering of fr. 31, inside Longinus's chapter 10, in four stanzas, and the fifth stanza's opening carried over as a closing line: 'Yet ſince I'me wretched I muſt dare.' (Closing the Fragment v7 §6.)",
+   "scope": "The book whole, as the Text Creation Partnership keyboarded it.",
+   "data": "https://www.alexanarch.org/data/corpora/hall-peri-hypsous-1652/"
+  },
+  {
+   "seat": "EA-CORPORA-36/02",
+   "corpus": "boileau-traite-du-sublime-1683",
+   "edition": "N. Boileau-Despréaux, Œuvres diverses du sieur D***, avec le Traité du sublime (Paris, 1683)",
+   "license": {
+    "payload": "Public domain everywhere (1683; Boileau died 1711).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_DF2vAFjaG5YC",
+      "url": "https://archive.org/details/bub_gb_DF2vAFjaG5YC",
+      "files": [
+       "bub_gb_DF2vAFjaG5YC_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "fra",
+   "lines": 18055,
+   "verified_loci": [
+    "Boileau: when Sappho would express the furies of love (OCR) — 'Ainfi, quand Sapho veut exprimer les fureurs de P Amour'",
+    "Boileau's fr. 31, its first line (OCR) — 'Heureux ! qui près de toi , pour toi feule foupire'",
+    "Boileau's fr. 31, the fifth stanza's opening as its closing line (OCR) — 'Mats quand on na plus rien^il faut tout hasar- der'"
+   ],
+   "why_seated": "The French fr. 31 of the Traité, ch. VIII, three quatrains and then the fifth stanza's opening as a closing line, that all must be hazarded, the version the Spectator quotes in 1711 and calls 'rather an Imitation than a Translation'.",
+   "scope": "The volume whole. The first edition of the Traité (1674) was not located in an open text layer in session; this is the 1683 printing.",
+   "data": "https://www.alexanarch.org/data/corpora/boileau-traite-du-sublime-1683/"
+  },
+  {
+   "seat": "EA-CORPORA-36/03",
+   "corpus": "spectator-229-1711",
+   "edition": "The Spectator, ed. H. Morley, 3 vols. (London: Routledge, 1891), Project Gutenberg #12030",
+   "license": {
+    "payload": "Public domain everywhere (1711; Morley's edition 1891, Morley died 1894).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #12030",
+      "url": "https://www.gutenberg.org/cache/epub/12030/pg12030.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 116737,
+   "verified_loci": [
+    "Spectator No. 229, Addison, 22 November 1711 — 'No. 229. Thursday, Nov. 22, 1711. Addison.'",
+    "Addison on Boileau's version — 'The Reader will see that this is rather an Imitation than a Translation.'",
+    "Philips's fr. 31, its first line — 'Blest as th'immortal Gods is he,'",
+    "Philips's fr. 31, its last line — 'I fainted, sunk, and dy'd away.'",
+    "Morley's note: a line wanting in the copies, supplied by conjecture — 'Wanting in copies then known, it is here supplied by conjecture.'"
+   ],
+   "why_seated": "Addison prints Boileau's French and Philips's English of fr. 31 in No. 229 and judges between them; Philips's four stanzas close 'I fainted, sunk, and dy'd away.' (v7 §6).",
+   "scope": "The three volumes whole; Nos. 223 and 229 are the Sappho papers.",
+   "data": "https://www.alexanarch.org/data/corpora/spectator-229-1711/"
+  },
+  {
+   "seat": "EA-CORPORA-36/04",
+   "corpus": "pope-sapho-to-phaon",
+   "edition": "The Poetical Works of Alexander Pope, ed. G. Gilfillan, vol. II (1856), Project Gutenberg #9601",
+   "license": {
+    "payload": "Public domain everywhere (1712; Gilfillan's edition 1856).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #9601",
+      "url": "https://www.gutenberg.org/cache/epub/9601/pg9601.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 14726,
+   "verified_loci": [
+    "Pope: Sappho to Phaon, from the fifteenth of Ovid's epistles — 'SAPPHO TO PHAON. FROM THE FIFTEENTH OF OVID'S EPISTLES.'",
+    "Pope: the letter known by its hand — 'Can Phaon's eyes forget his Sappho's hand?'"
+   ],
+   "why_seated": "The Ovidian Sappho, the abandoned lover of Phaon, in the English the eighteenth century read her through; the epistle's Latin opens with the letter recognized by its hand, a reader addressed through the writing.",
+   "scope": "The volume whole; Sapho to Phaon is one poem in it. Ovid's Latin is seated at EA-CORPORA-29/03 (ovid, text/heroides.txt, poem 15).",
+   "data": "https://www.alexanarch.org/data/corpora/pope-sapho-to-phaon/"
+  },
+  {
+   "seat": "EA-CORPORA-36/05",
+   "corpus": "fawkes-anacreon-sappho-1760",
+   "edition": "F. Fawkes, The Works of Anacreon, Sappho, Bion, Moschus and Musaeus (London, 1760)",
+   "license": {
+    "payload": "Public domain everywhere (1760; Fawkes died 1777).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "worksofanacreons00fawkuoft",
+      "url": "https://archive.org/details/worksofanacreons00fawkuoft",
+      "files": [
+       "worksofanacreons00fawkuoft_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 13022,
+   "verified_loci": [
+    "Fawkes on Philips's first three lines (OCR) — 'the three firft Lines are ama- zingly rough and awkward'",
+    "Fawkes quoting Philips's first line (OCR) — 'Bleft as th' immortal Gods is he'"
+   ],
+   "why_seated": "Fawkes's Sappho, with a note judging the first three lines of Philips's version rough and awkward; his fr. 31 stands in the teaching gallery of thirteen English versions (v7 §6).",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/fawkes-anacreon-sappho-1760/"
+  },
+  {
+   "seat": "EA-CORPORA-36/06",
+   "corpus": "welcker-sappho-1816",
+   "edition": "F. G. Welcker, Sappho von einem herrschenden Vorurtheil befreyt (Göttingen, 1816), the Bayerische Staatsbibliothek copy",
+   "license": {
+    "payload": "Public domain everywhere (1816; Welcker died 1868).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "10066488bsb",
+      "url": "https://archive.org/details/10066488bsb",
+      "files": [
+       "10066488bsb_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 7011,
+   "verified_loci": [
+    "Welcker's title: freed of a ruling prejudice (OCR) — 'von einem herrſchenden Vorurtheil befreyt'"
+   ],
+   "why_seated": "The defence of Sappho's character, the poet 'freed of a ruling prejudice', which set the terms of the nineteenth-century debate; Mure's history (36/08) argues the other side.",
+   "scope": "The volume whole. The Google scan (sapphovoneinemh00welcgoog) was fetched first and set aside: its OCR reads the Fraktur as noise; this copy's text layer reads it.",
+   "data": "https://www.alexanarch.org/data/corpora/welcker-sappho-1816/"
+  },
+  {
+   "seat": "EA-CORPORA-36/07",
+   "corpus": "merivale-poems-1838",
+   "edition": "J. H. Merivale, Poems Original and Translated, vol. I (London: Pickering, 1838)",
+   "license": {
+    "payload": "Public domain everywhere (1838; Merivale died 1844).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "poemsoriginaltra01meri",
+      "url": "https://archive.org/details/poemsoriginaltra01meri",
+      "files": [
+       "poemsoriginaltra01meri_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 14844,
+   "verified_loci": [
+    "Merivale: From Sappho. A Fragment (1813) — 'ADDITIONAL EPIGRAMS. 1813. FROM SAPPHO. A FRAGMENT. Blest as the immortal Gods is he,'",
+    "Merivale's fr. 31, its close at the failing of sight and sound — 'I grow ; and then — together fail Both sight and sound !'"
+   ],
+   "why_seated": "Merivale's fr. 31 in four stanzas that end at the failing of sight and sound, one of the renderings Wharton reprints (v7 §5.3).",
+   "scope": "Volume I whole (the 1813 'From Sappho. A Fragment' stands in it). Volume II's text layer returned an error at the Archive in session.",
+   "data": "https://www.alexanarch.org/data/corpora/merivale-poems-1838/"
+  },
+  {
+   "seat": "EA-CORPORA-36/08",
+   "corpus": "mure-critical-history-1850",
+   "edition": "W. Mure, A Critical History of the Language and Literature of Antient Greece, vol. III (London, 1850)",
+   "license": {
+    "payload": "Public domain everywhere (1850; Mure died 1860).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "criticalhistoryo03mureuoft",
+      "url": "https://archive.org/details/criticalhistoryo03mureuoft",
+      "files": [
+       "criticalhistoryo03mureuoft_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 24829,
+   "verified_loci": [
+    "Mure's contents: Sappho, her love for Phaon, her Leucadian leap (OCR) — '7. Her love for Phaon. Her lyeucadian leap.'",
+    "Mure's appendix on Sappho's character (OCR) — 'On the personal characters of Anacreoii, Archilochus, and Sappho'"
+   ],
+   "why_seated": "The Victorian prosecution of Sappho's character, which Welcker's defence had provoked, in the history the English schools read.",
+   "scope": "Volume III whole (book III, the lyric poets: Alcaeus, Sappho, Damophyla, Erinna).",
+   "data": "https://www.alexanarch.org/data/corpora/mure-critical-history-1850/"
+  },
+  {
+   "seat": "EA-CORPORA-36/09",
+   "corpus": "swinburne-poems-and-ballads-1866",
+   "edition": "A. C. Swinburne, Poems and Ballads, First Series, Project Gutenberg #35402",
+   "license": {
+    "payload": "Public domain everywhere (1866; Swinburne died 1909).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #35402",
+      "url": "https://www.gutenberg.org/cache/epub/35402/pg35402.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 10161,
+   "verified_loci": [
+    "Swinburne: Anactoria, with its Greek epigraph from fr. 1 — 'ANACTORIA [Greek: tinos au ty peithoi maps sageneusas philotata?] SAPPHO.'",
+    "Swinburne: the speaker claims the future — 'Yea, though thou diest, I say I shall not die.'",
+    "Swinburne: Sapphics, its first line — 'SAPPHICS All the night sleep came not upon my eyelids,'"
+   ],
+   "why_seated": "Anactoria, Sappho given a dramatic monologue, and Sapphics, the stanza in English; Anactoria's speaker claims the future for the songs: 'Yea, though thou diest, I say I shall not die.'",
+   "scope": "The volume whole: Anactoria and Sapphics stand in it.",
+   "data": "https://www.alexanarch.org/data/corpora/swinburne-poems-and-ballads-1866/"
+  },
+  {
+   "seat": "EA-CORPORA-36/10",
+   "corpus": "higginson-atlantic-essays-1871",
+   "edition": "T. W. Higginson, Atlantic Essays (Boston: Osgood, 1871)",
+   "license": {
+    "payload": "Public domain everywhere (1871; Higginson died 1911).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "atlanticessays01higggoog",
+      "url": "https://archive.org/details/atlanticessays01higggoog",
+      "files": [
+       "atlanticessays01higggoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 12899,
+   "verified_loci": [
+    "Higginson's 'Sappho', its opening (OCR) — 'THE voyager in the -^gean Sea, who has grown weary of the prevailing barrenness of the Grecian Isles'"
+   ],
+   "why_seated": "The American defence of Sappho, by Dickinson's correspondent and, with Todd, her first editor: the two ends of the future-reader genealogy meet in one editor.",
+   "scope": "The volume whole; 'Sappho' is the essay of 1871.",
+   "data": "https://www.alexanarch.org/data/corpora/higginson-atlantic-essays-1871/"
+  },
+  {
+   "seat": "EA-CORPORA-36/11",
+   "corpus": "symonds-studies-greek-poets-1873",
+   "edition": "J. A. Symonds, Studies of the Greek Poets (London: Smith, Elder, 1873)",
+   "license": {
+    "payload": "Public domain everywhere (1873; Symonds died 1893).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "cu31924022691822",
+      "url": "https://archive.org/details/cu31924022691822",
+      "files": [
+       "cu31924022691822_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 19171,
+   "verified_loci": [
+    "Symonds's contents: the flourishing period of Lesbos, Sappho (OCR) — 'The Flourishing Period of Lesbos. — Sappho.—Alczeus.—Anacreon'",
+    "Symonds: Sappho simply sings her love — 'Sappho simply sings her love ; Archilochus, his hatred'"
+   ],
+   "why_seated": "Symonds on the Lesbian lyric, the critic whose fr. 31 Wharton prints (v7 §5.3), in the first series of his Studies.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/symonds-studies-greek-poets-1873/"
+  },
+  {
+   "seat": "EA-CORPORA-36/12",
+   "corpus": "vivien-sapho-1903",
+   "edition": "R. Vivien, Sapho: traduction nouvelle avec le texte grec (Paris: Lemerre, 1903)",
+   "license": {
+    "payload": "Public domain everywhere (1903; Vivien died 1909).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "saphotraduction00sappgoog",
+      "url": "https://archive.org/details/saphotraduction00sappgoog",
+      "files": [
+       "saphotraduction00sappgoog_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "fra",
+   "lines": 3567,
+   "verified_loci": [
+    "Vivien's prose fr. 31, 'Ode à une Femme aimée' (OCR) — 'Ode à une Femme aimée Il me parait l'égal des Dieux'",
+    "Vivien's prose fr. 31 carries the fifth stanza's opening — 'je semble presque une morte... Mais il faut oser tout...'",
+    "Vivien's verse fr. 31, its first line — 'L'homme fortuné qu'enivre ta présence Me semble l'égal des Dieux'"
+   ],
+   "why_seated": "The French Sappho with the Greek facing, by a poet who answered the fragments in her own poems: fr. 31 given twice, as prose translation, which carries the fifth stanza's opening ('Mais il faut oser tout...'), and as the poem made from it.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/vivien-sapho-1903/"
+  },
+  {
+   "seat": "EA-CORPORA-36/13",
+   "corpus": "carman-sappho-1904",
+   "edition": "B. Carman, Sappho: One Hundred Lyrics (1907 printing), Project Gutenberg #12389",
+   "license": {
+    "payload": "Public domain in the United States (published 1904) and in Canada and the EU (Carman died 1929).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #12389",
+      "url": "https://www.gutenberg.org/cache/epub/12389/pg12389.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 3721,
+   "verified_loci": [
+    "Roberts's introduction: restoring statues from a broken arm — 'to restore some statues of Polyclitus or Praxiteles of which he had but a broken arm'",
+    "Roberts: each lost lyric imagined as discovered, then translated — 'Mr. Carman’s method, apparently, has been to imagine each lost lyric as discovered, and then to translate it'"
+   ],
+   "why_seated": "The fragments completed as a hundred whole lyrics; Charles G. D. Roberts's introduction likens the method to restoring statues of Polyclitus or Praxiteles from a broken arm: closure as the stated method of a book.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/carman-sappho-1904/"
+  },
+  {
+   "seat": "EA-CORPORA-36/14",
+   "corpus": "wharton-sappho-1908",
+   "edition": "H. T. Wharton, Sappho, 5th edn (London and New York: John Lane, 1908), Project Gutenberg #57390",
+   "license": {
+    "payload": "Public domain everywhere (1908; Wharton died 1895).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #57390",
+      "url": "https://www.gutenberg.org/cache/epub/57390/pg57390.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 6960,
+   "verified_loci": [
+    "Wharton's edition statement: the fifth edition, 1908 — '_Fifth Edition. Fcap. 8vo. Pp._ xxxii+217.'",
+    "Wharton's literal fr. 31: the closing the January composition aligns with — 'But I must dare all, since one so poor_ ...'"
+   ],
+   "why_seated": "The anthology the English tradition reached Sappho through, and the source the January composition's closing line aligns with (v7 §5.3).",
+   "scope": "The volume whole, with the renderings Wharton chose and the Greek in Gutenberg's transliteration.",
+   "data": "https://www.alexanarch.org/data/corpora/wharton-sappho-1908/"
+  },
+  {
+   "seat": "EA-CORPORA-36/15",
+   "corpus": "renderings-1910-1920",
+   "edition": "J. M. O'Hara, The Poems of Sappho (Portland: Smith & Sale, 1910), Project Gutenberg #42166; H. de Vere Stacpoole, Sappho: A New Rendering (London: Hutchinson, 1920), Project Gutenberg #42543",
+   "license": {
+    "payload": "Public domain in the United States (both published before 1931) and life-plus-seventy (O'Hara died 1944, Stacpoole 1951).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #42166",
+      "url": "https://www.gutenberg.org/cache/epub/42166/pg42166.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     },
+     {
+      "source": "Project Gutenberg #42543",
+      "url": "https://www.gutenberg.org/cache/epub/42543/pg42543.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 4115,
+   "verified_loci": [
+    "O'Hara's title page (1910) — 'An Interpretative Rendition into English BY JOHN MYERS O'HARA PORTLAND: MDCCCCX'",
+    "Stacpoole's preface, its opening — 'Sappho lies remote from us, beyond the fashions and the ages'"
+   ],
+   "why_seated": "Two English Sapphos of the generation before Lobel's edition (1925): an interpretative rendition and a new rendering, each with its own account of what a fragment asks of a translator.",
+   "scope": "Both volumes whole.",
+   "data": "https://www.alexanarch.org/data/corpora/renderings-1910-1920/"
+  },
+  {
+   "seat": "EA-CORPORA-36/16",
+   "corpus": "wilamowitz-sappho-und-simonides-1913",
+   "edition": "U. von Wilamowitz-Moellendorff, Sappho und Simonides (Berlin: Weidmann, 1913)",
+   "license": {
+    "payload": "Public domain everywhere (1913; Wilamowitz died 1931).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sapphoundsimonid00wilauoft",
+      "url": "https://archive.org/details/sapphoundsimonid00wilauoft",
+      "files": [
+       "sapphoundsimonid00wilauoft_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 18318,
+   "verified_loci": [
+    "Wilamowitz: on Welcker's tracks — 'von ihren Versen in ihre Seele vorzudringen, auf Welckers Spuren.'",
+    "Wilamowitz: no mascula Sappho — 'sie war keine mascula Sappho und unter die Suffragettes wäre sie nicht gegangen.'"
+   ],
+   "why_seated": "The German philology of Sappho in Wilamowitz's hands, with the reading of her circle that Parker's 'Sappho Schoolmistress' (1993) argues against.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/wilamowitz-sappho-und-simonides-1913/"
+  },
+  {
+   "seat": "EA-CORPORA-36/17",
+   "corpus": "robinson-sappho-and-her-influence-1924",
+   "edition": "D. M. Robinson, Sappho and Her Influence (Boston: Marshall Jones, 1924)",
+   "license": {
+    "payload": "Public domain in the United States: published 1924, before 1931. Outside the United States the term runs from Robinson's death in 1958; the seat is held for the United States and the record says so.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sapphoherinfluen0000davi",
+      "url": "https://archive.org/details/sapphoherinfluen0000davi",
+      "files": [
+       "sapphoherinfluen0000davi_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 11855,
+   "verified_loci": [
+    "Robinson's epigraph (Lucy Milburn): nations yet unborn — 'This title till the stars do fall, Nations yet unborn shall call And glorify her name.'",
+    "The series: Our Debt to Greece and Rome (OCR) — 'CONTRIBUTORS TO THE “OUR DEBT TO GREECE AND ROME FUND,”'"
+   ],
+   "why_seated": "A reception history in the series Our Debt to Greece and Rome: appreciations ancient and modern, the life, and the influence on later poets named in its title.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/robinson-sappho-and-her-influence-1924/"
+  },
+  {
+   "seat": "EA-CORPORA-36/18",
+   "corpus": "cox-poems-of-sappho-1925",
+   "edition": "E. M. Cox, The Poems of Sappho (London: Williams & Norgate; New York: Scribner, 1925)",
+   "license": {
+    "payload": "Public domain in the United States: published 1925, before 1931. Outside the United States the term runs from Cox's death, which was not established in session; the seat is held for the United States and the record says so.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "poemsofsapphowit0000edwi",
+      "url": "https://archive.org/details/poemsofsapphowit0000edwi",
+      "files": [
+       "poemsofsapphowit0000edwi_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 5652,
+   "verified_loci": [
+    "Cox's bibliography: the 1680 English Longinus, the second translation of fr. 31 (OCR) — 'translated out of French by Mr. J. Pulteney. London, 1680. 8vo. Second translation of'",
+    "Cox's bibliography: Dacier's Sappho of 1681 (OCR) — 'Les Poesies d’Anacréon et de Sappho traduites de Grec en Francois avec des Remarques. Paris, 1681.'"
+   ],
+   "why_seated": "The Greek text with notes, translations and a bibliography of editions: the reception inventoried the year Lobel's edition appeared.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/cox-poems-of-sappho-1925/"
+  },
+  {
+   "seat": "EA-CORPORA-36/19",
+   "corpus": "cicero-tusculanae",
+   "edition": "Cicero, Tusculanae Disputationes, ed. Pohlenz (Perseus phi0474.phi049, lat2)",
+   "license": {
+    "payload": "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); Pohlenz's edition is in the public domain in the United States (published 1918).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/data/phi0474/phi049/phi0474.phi049.perseus-lat2.xml",
+      "source": "PerseusDL/canonical-latinLit",
+      "repository": "https://github.com/PerseusDL/canonical-latinLit",
+      "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67",
+      "file": "data/phi0474/phi049/phi0474.phi049.perseus-lat2.xml"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 1198,
+   "verified_loci": [
+    "Ennius's epitaph as Cicero quotes it (Tusc. 1.34) — 'volito vivos per ora virum.'"
+   ],
+   "why_seated": "Ennius's epitaph as Cicero quotes it, 'volito vivos per ora virum' (Tusc. 1.34): the poet living in the mouths of men, stratum IV of #1548's genealogy; the library's Cicero seat (EA-CORPORA-13/03) holds other works.",
+   "scope": "The five books whole.",
+   "data": "https://www.alexanarch.org/data/corpora/cicero-tusculanae/"
+  },
+  {
+   "seat": "EA-CORPORA-36/20",
+   "corpus": "dante-commedia",
+   "edition": "Dante, La Divina Commedia, complete, Project Gutenberg #1000",
+   "license": {
+    "payload": "Public domain everywhere (Dante died 1321); the Gutenberg file under its licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #1000",
+      "url": "https://www.gutenberg.org/cache/epub/1000/pg1000.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "ita",
+   "lines": 20251,
+   "verified_loci": [
+    "Inf. 8.94: 'Pensa, lettor' — 'Pensa, lettor, se io mi sconfortai nel suon de le parole maladette'",
+    "Par. 2.1: the readers in the little boat — 'O voi che siete in piccioletta barca, desiderosi d’ascoltar'"
+   ],
+   "why_seated": "The addresses to the reader ('Pensa, lettor', Inf. 8.94 and after; 'O voi che siete in piccioletta barca', Par. 2.1), the corpus of Auerbach's 'Dante's Addresses to the Reader' (1954), stratum VI.",
+   "scope": "The poem whole.",
+   "data": "https://www.alexanarch.org/data/corpora/dante-commedia/"
+  },
+  {
+   "seat": "EA-CORPORA-36/21",
+   "corpus": "chaucer-troilus",
+   "edition": "Chaucer, Troilus and Criseyde, Project Gutenberg #257",
+   "license": {
+    "payload": "Public domain everywhere (Chaucer died 1400); the Gutenberg file under its licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #257",
+      "url": "https://www.gutenberg.org/cache/epub/257/pg257.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "enm",
+   "lines": 9892,
+   "verified_loci": [
+    "Troilus 5.1786: the envoi — 'Go, litel book, go litel myn tragedie,'",
+    "Troilus 5.1795: against miswriting — 'So preye I god that noon miswryte thee,'"
+   ],
+   "why_seated": "The envoi 'Go, litel book, go litel myn tragedie' (5.1786) and the stanza after it on scribal miswriting: the book dispatched to readers it cannot choose, with its transmission in view, stratum VI.",
+   "scope": "The poem whole.",
+   "data": "https://www.alexanarch.org/data/corpora/chaucer-troilus/"
+  },
+  {
+   "seat": "EA-CORPORA-36/22",
+   "corpus": "shakespeare-sonnets",
+   "edition": "Shakespeare's Sonnets, Project Gutenberg #1041 (modern spelling; the quarto's numbering)",
+   "license": {
+    "payload": "Public domain everywhere (1609); the Gutenberg file under its licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #1041",
+      "url": "https://www.gutenberg.org/cache/epub/1041/pg1041.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 3005,
+   "verified_loci": [
+    "Sonnet 81: eyes not yet created — 'Your monument shall be my gentle verse, Which eyes not yet created shall o’er-read;'",
+    "Sonnet 55: not marble — 'Not marble, nor the gilded monuments Of princes, shall outlive this powerful rhyme;'"
+   ],
+   "why_seated": "The English monumentum: 18, 55, 65, 107, and 81's 'Which eyes not yet created shall o'er-read', the future reader stated as plainly as the language allows, stratum VI.",
+   "scope": "The 154 sonnets whole. The 1609 quarto's own spelling is not seated; this text is modernized.",
+   "data": "https://www.alexanarch.org/data/corpora/shakespeare-sonnets/"
+  },
+  {
+   "seat": "EA-CORPORA-36/23",
+   "corpus": "milton-paradise-lost",
+   "edition": "Milton, Paradise Lost, Project Gutenberg #26",
+   "license": {
+    "payload": "Public domain everywhere (1674); the Gutenberg file under its licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #26",
+      "url": "https://www.gutenberg.org/cache/epub/26/pg26.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 11109,
+   "verified_loci": [
+    "Paradise Lost 7.31: fit audience, though few — 'Urania, and fit audience find, though few.'"
+   ],
+   "why_seated": "'fit audience find, though few' (7.31): the future reader as select, stratum VI.",
+   "scope": "The poem whole.",
+   "data": "https://www.alexanarch.org/data/corpora/milton-paradise-lost/"
+  },
+  {
+   "seat": "EA-CORPORA-36/24",
+   "corpus": "romantic-posterity",
+   "edition": "The Prose Works of William Wordsworth, ed. A. B. Grosart, 3 vols. (London, 1876), Project Gutenberg #16550 (the letters to Lady Beaumont, 1807, and the Essay, Supplementary to the Preface, 1815); Letters of John Keats to His Family and Friends, ed. S. Colvin (London, 1891), Project Gutenberg #35698; P. B. Shelley, A Defence of Poetry and Other Essays, Project Gutenberg #5428; Stendhal, La Chartreuse de Parme (1839), Project Gutenberg #796",
+   "license": {
+    "payload": "Public domain everywhere (Wordsworth died 1850, Keats 1821, Shelley 1822, Stendhal 1842; Grosart's edition 1876, Colvin's 1891); the Gutenberg files under their licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #16550",
+      "url": "https://www.gutenberg.org/cache/epub/16550/pg16550.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     },
+     {
+      "source": "Project Gutenberg #35698",
+      "url": "https://www.gutenberg.org/cache/epub/35698/pg35698.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     },
+     {
+      "source": "Project Gutenberg #5428",
+      "url": "https://www.gutenberg.org/cache/epub/5428/pg5428.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     },
+     {
+      "source": "Project Gutenberg #796",
+      "url": "https://www.gutenberg.org/cache/epub/796/pg796.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng, fra",
+   "lines": 92013,
+   "verified_loci": [
+    "Wordsworth to Lady Beaumont (1807), Coleridge's remark — 'every great and original writer, in proportion as he is great or original, must himself create the taste by which he is to be relished'",
+    "Wordsworth, Essay, Supplementary to the Preface (1815) — 'has had the task of _creating_ the taste by which he is to be enjoyed'",
+    "Keats to George and Georgiana Keats (October 1818) — 'I think I shall be among the English Poets after my death.'",
+    "Shelley, A Defence of Poetry (1821) — 'the mirrors of the gigantic shadows which futurity casts upon the present'",
+    "Stendhal, La Chartreuse de Parme, the last line — 'TO THE HAPPY FEW'"
+   ],
+   "why_seated": "Stratum VII, the posterity Bennett's Romantic Poets and the Culture of Posterity (1999) reads as a poetics: the writer who 'must himself create the taste by which he is to be relished' (Wordsworth's letter of 1807, giving it as Coleridge's remark; the Essay of 1815 has 'the task of creating the taste by which he is to be enjoyed'), 'among the English Poets after my death', poets as 'mirrors of the gigantic shadows which futurity casts upon the present', and the novel dedicated at its last line 'TO THE HAPPY FEW'. Nietzsche's 'Einige werden posthum geboren' is seated at EA-CORPORA-27/03 (nietzsche, text/ecce-homo-pg.txt).",
+   "scope": "The four texts whole.",
+   "data": "https://www.alexanarch.org/data/corpora/romantic-posterity/"
+  },
+  {
+   "seat": "EA-CORPORA-36/25",
+   "corpus": "dickinson-poems-1890-1896",
+   "edition": "Poems by Emily Dickinson, Three Series, Complete, ed. Todd and Higginson, Project Gutenberg #12242",
+   "license": {
+    "payload": "Public domain everywhere (Dickinson died 1886; published 1890–1896); the Gutenberg file under its licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg #12242",
+      "url": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt",
+      "licence_at_file": "The Project Gutenberg License (header and footer kept as served)"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 10690,
+   "verified_loci": [
+    "Dickinson: the letter to the world — 'This is my letter to the world, That never wrote to me,'"
+   ],
+   "why_seated": "'This is my letter to the world, / That never wrote to me': the dispatch to unknown readers, edited for its first readers by the same Higginson whose 'Sappho' is 36/10, stratum VIII.",
+   "scope": "The three series whole, as Todd and Higginson edited them. The manuscripts are seated at EA-CORPORA-02/14 (dickinson-mss).",
+   "data": "https://www.alexanarch.org/data/corpora/dickinson-poems-1890-1896/"
+  },
+  {
+   "seat": "EA-CORPORA-36/26",
+   "corpus": "baratynsky-moi-dar-ubog",
+   "edition": "Боратынский, «Мой дар убог и голос мой не громок» (1828), ru.wikisource",
+   "license": {
+    "payload": "Public domain everywhere (1828; Baratynsky died 1844). The Wikisource page's text under CC BY-SA 4.0 for the site's contributions.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Wikisource (ru)",
+      "title": "Мой дар убог и голос мой не громок (Боратынский)",
+      "url": "https://ru.wikisource.org/wiki/%D0%9C%D0%BE%D0%B9_%D0%B4%D0%B0%D1%80_%D1%83%D0%B1%D0%BE%D0%B3_%D0%B8_%D0%B3%D0%BE%D0%BB%D0%BE%D1%81_%D0%BC%D0%BE%D0%B9_%D0%BD%D0%B5_%D0%B3%D1%80%D0%BE%D0%BC%D0%BE%D0%BA_%28%D0%91%D0%BE%D1%80%D0%B0%D1%82%D1%8B%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%29",
+      "revision": "4797594",
+      "permalink": "https://ru.wikisource.org/w/index.php?oldid=4797594",
+      "sha256": "a351f3f92c13cbbd2493bb4a858b4e8c2d014129b5ff4c4a6569eef97a95294f"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "rus",
+   "lines": 64,
+   "verified_loci": [
+    "Baratynsky: the reader found in posterity — 'И как нашёл я друга в поколеньи, Читателя найду в потомстве я.'",
+    "The page's commentary, Mandelstam's 'О собеседнике': the letter in the bottle — 'Письмо, запечатанное в бутылке, адресовано тому, кто найдет её.'"
+   ],
+   "why_seated": "'И как нашёл я друга в поколенье, / Читателя найду в потомстве я': the reader found in posterity, the poem Mandelstam's 'О собеседнике' (1913) opens from, the first link of the Russian line in stratum VIII. The page's commentary quotes the bottle passage of «О собеседнике»: 'Письмо, запечатанное в бутылке, адресовано тому, кто найдет её.' The essay whole is a declared absence.",
+   "scope": "The poem whole.",
+   "data": "https://www.alexanarch.org/data/corpora/baratynsky-moi-dar-ubog/"
+  },
+  {
+   "seat": "EA-CORPORA-36/27",
+   "corpus": "wipp-markers-sandia-1993",
+   "edition": "Trauth, Hora and Guzowski, SAND92-1382, Unlimited Release (Sandia National Laboratories, November 1993)",
+   "license": {
+    "payload": "SAND92-1382 is an Unlimited Release of Sandia National Laboratories, prepared for the United States Department of Energy; the Internet Archive item is marked Public Domain Mark 1.0.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "long-term-warning",
+      "url": "https://archive.org/details/long-term-warning",
+      "files": [
+       "long-term-warning_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 18441,
+   "verified_loci": [
+    "SAND92-1382, Unlimited Release (OCR) — 'Unlimited Release Printed November 1993 Expert Judgment on Markers to Deter'",
+    "The drafted message (OCR) — 'This place is not a place of honor...no highly esteemed deed is commemorated here'"
+   ],
+   "why_seated": "Stratum XI, the literal engineering turn: a message designed for readers ten thousand years out, with its drafted text, 'This place is not a place of honor', and its problem stated as design: deixis that survives the loss of its context.",
+   "scope": "The report whole, with its appendices (the two expert teams' reports).",
+   "data": "https://www.alexanarch.org/data/corpora/wipp-markers-sandia-1993/"
   }
  ],
- "count": 194
+ "count": 221
 }
