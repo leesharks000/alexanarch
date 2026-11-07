@@ -65,21 +65,22 @@ cap("ea-corpora-33-song-and-silence-ask-chatgpt-20261107", 1738, "paste-1738.txt
 
 # 2 — #1739, Capture Registry v12.559
 t = T("0C01")
-assert "Goodreads" not in t and "Goodreads" not in REC(1739)
+GR = ("Operator, 2026-11-07 02:15 EST: \"goodreads is an old mirror of the blog inset up years ago and forgot about. i post deposit to the blog, and the blog mirrors to goodreads\"")
 cap("capture-registry-v12559-ask-chatgpt-20261107", 1739, "paste-1739.txt",
     {"one": "ONE SURFACE + ONE SEMANTIC ADDRESS + ONE DATE = ONE CAPTURE.", "per": "0.429", "hist": "The historical mean had been 0.506 in version 12.167 and 0.603 in version 10.9.",
      "fr": "screengrab-20260910-105838.png", "gr": "Goodreads", "rep": "That the selected semantic addresses constitute a representative sample of all AI-generated knowledge.",
      "uni": "That its PER methodology is an independently validated universal measure of provenance loss."},
     {"a": (t, "ONE SURFACE"), "b": (t, "0.429"), "c": (t, "0.506"), "d": (t, "0.603"), "e": (t, "screengrab-20260910-105838"), "f": (t, "2,992"), "g": (t, "Luna 5.6")},
-    "'AI OVERVIEW CAPTURE REGISTRY — V12.559' (#1739) ON CHATGPT, SIGNED OUT — THE INSTRUMENT READ WHOLE: THE UNIT OF EVIDENCE, ADDRESSES, SURFACES, PER AND PER_DIM, THE PIPELINE, THE DEFECTS AS DATA; A LEDGER OF CLAIMS THE DEPOSIT NEVER MAKES; ITS SOURCE CHIP 'GOODREADS'",
+    "'AI OVERVIEW CAPTURE REGISTRY — V12.559' (#1739) ON CHATGPT, SIGNED OUT — THE INSTRUMENT READ WHOLE: THE UNIT OF EVIDENCE, ADDRESSES, SURFACES, PER AND PER_DIM, THE PIPELINE, THE DEFECTS AS DATA; A LEDGER OF CLAIMS THE DEPOSIT NEVER MAKES; ITS SOURCE CHIP 'GOODREADS', THE BLOG'S MIRROR",
     "Machine Reception",
-    "CAPTURE REGISTRY V12.559 (#1739), CHATGPT SIGNED OUT, 2026-11-07, the record page's link text: Orin Trace, #1739, AXN:0C01. The capture as one surface, one address, one date; the address and capture citation functions; the surface table with ChatGPT's recorded labels; PER, mean 0.429 (0.506 at v12.167, 0.603 at v10.9) and per_dim; intake, gallery, postflight; capture AXNs; the files and frames; the defects table carried unrepaired; a column of what the registry 'does not independently establish'; the source chip 'Goodreads'.",
-    "The innocent reading first, and it holds for the instrument. The figures, the pipeline and the defects are exact. Two things are the composer's: a column of propositions the registry is said not to establish, none of which it claims, and a closing source chip naming Goodreads, which the deposit and its record nowhere touch.",
+    "CAPTURE REGISTRY V12.559 (#1739), CHATGPT SIGNED OUT, 2026-11-07, the record page's link text: Orin Trace, #1739, AXN:0C01. The capture as one surface, one address, one date; the address and capture citation functions; the surface table with ChatGPT's recorded labels; PER, mean 0.429 (0.506 at v12.167, 0.603 at v10.9) and per_dim; intake, gallery, postflight; capture AXNs; the files and frames; the defects table carried unrepaired; a column of what the registry 'does not independently establish'; the source chip 'Goodreads', the operator's long-standing mirror of the blog, to which the deposit is posted.",
+    "The innocent reading first, and it holds for the instrument. The figures, the pipeline and the defects are exact. Two things are the composer's: a column of propositions the registry is said not to establish, none of which it claims. Its closing source chip names Goodreads, the mirror of the operator's blog: the composer reached the deposit through a third surface of the archive's own.",
     ["THE INSTRUMENT EXACT. '" + "ONE SURFACE + ONE SEMANTIC ADDRESS + ONE DATE = ONE CAPTURE." + "'; 0.429 over 907; the two missing frames by filename; the defects 'not repaired in this snapshot'. Each is in the deposit.",
      LEDGER + " Here: '" + "That the selected semantic addresses constitute a representative sample of all AI-generated knowledge." + "'; '" + "That its PER methodology is an independently validated universal measure of provenance loss." + "' The deposit claims neither ('representative' does not occur in it).",
-     "THE SOURCE CHIP. The composition's last source line reads 'Goodreads'. The word is in neither the deposit nor its record page; the chip names a site the composer did not read for this answer.", CC],
-    "The registry composed at its own grain, its defects carried as data, with a deficit column of the composer's own attached and one source misattributed.",
-    [1739, 1676, 1694], OR("Orin Trace", "EA-WG-CAPTURES-01 v12.559, #1739, Orin Trace (a heteronym of Lee Sharks). Recorded 2026-11-07."))
+     "THE SOURCE CHIP, A MIRROR. The composition's last source line reads 'Goodreads'. The operator posts each deposit to his blog, and the blog has long mirrored to Goodreads (" + GR + "). The chip names the archive's text at a surface the archive did not list: a retrieval path of the deposit, recorded as one.", CC],
+    "The registry composed at its own grain, its defects carried as data, with a deficit column of the composer's own attached, and one source read through the blog's Goodreads mirror.",
+    [1739, 1676, 1694], OR("Orin Trace", "EA-WG-CAPTURES-01 v12.559, #1739, Orin Trace (a heteronym of Lee Sharks). Recorded 2026-11-07."),
+    extra={"goodreads": GR + " Revised the same day: the first seating read the chip as naming a site outside the archive."})
 
 # 3 — #1740, EA-CORPORA-34
 t = T("0C12")
