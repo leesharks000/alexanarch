@@ -1,0 +1,74 @@
+{
+ "corpus": "anthology-sappho-epigrams",
+ "seat": "EA-CORPORA-36/20",
+ "title": "The Greek Anthology, ed. and trans. W. R. Paton, vols. II–III (London, 1917), via Perseus: the epigrams on Sappho (AP 7 and 9)",
+ "edition": "The Greek Anthology, ed. W. R. Paton, vol. II (Book 7, the sepulchral epigrams), Perseus tlg7000.tlg001 grc7; The Greek Anthology, ed. W. R. Paton, vol. III (Book 9, the declamatory epigrams), Perseus tlg7000.tlg001 grc8",
+ "language": "grc",
+ "license": {
+  "payload": "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); Paton's edition is in the public domain everywhere (published 1917; Paton died 1921).",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "fetched": "2026-11-07",
+ "origin": {
+  "items": [
+   {
+    "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc7.xml",
+    "source": "PerseusDL/canonical-greekLit",
+    "repository": "https://github.com/PerseusDL/canonical-greekLit",
+    "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+    "file": "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc7.xml"
+   },
+   {
+    "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc8.xml",
+    "source": "PerseusDL/canonical-greekLit",
+    "repository": "https://github.com/PerseusDL/canonical-greekLit",
+    "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+    "file": "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc8.xml"
+   }
+  ],
+  "fetched": "2026-11-07",
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 2,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "anthology-vol-ii",
+    "work": "The Greek Anthology, ed. W. R. Paton, vol. II (Book 7, the sepulchral epigrams), Perseus tlg7000.tlg001 grc7",
+    "text": "text/anthology-vol-ii.txt",
+    "originals": [
+     "original/perseus/tlg7000.tlg001.perseus-grc7.xml"
+    ],
+    "class": "Sappho's reception, 1652–1925",
+    "lines": 6212
+   },
+   {
+    "slug": "anthology-vol-iii",
+    "work": "The Greek Anthology, ed. W. R. Paton, vol. III (Book 9, the declamatory epigrams), Perseus tlg7000.tlg001 grc8",
+    "text": "text/anthology-vol-iii.txt",
+    "originals": [
+     "original/perseus/tlg7000.tlg001.perseus-grc8.xml"
+    ],
+    "class": "Sappho's reception, 1652–1925",
+    "lines": 5194
+   }
+  ]
+ },
+ "normalization": "Originals as fetched under original/: Internet Archive text layers (_djvu.txt) as served; Project Gutenberg plain text as served, header and licence kept; Perseus TEI as served at a pinned commit; the Text Creation Partnership's TEI as served; a Wikisource page as served with its revision id. text/<slug>.* derived by code: OCR and Gutenberg text with line endings normalized; TEI reduced to lines (the TCP's end-of-line hyphen marks removed so the word is joined, original spelling and long s kept); Wikisource parser output with navigation dropped. No text corrected by hand; the loci keep the OCR's readings (long s read as f, double spaces, broken accents).",
+ "scope": "The two volumes whole.",
+ "verified_loci": [
+  "AP 7.15 (Antipater): 'my name is Sappho' — 'οὔνομά μευ Σαπφώ. τόσσον δʼ ὑπερέσχον ἀοιδὰν'",
+  "AP 7.16 (Pinytus): the tomb holds the bones and mute name; her wise words are immortal — 'ὀστέα μὲν καὶ κωφὸν ἔχει τάφος οὔνομα Σαπφοῦς·'",
+  "AP 7.17 (Tullius Laurea): the stranger at the Aeolian tomb — 'Αἰολικὸν παρὰ τύμβον ἰών, ξένε, μή με θανοῦσαν'",
+  "AP 9.506 (attributed to Plato): Sappho the tenth Muse — 'ἠνίδε καὶ Σαπφὼ Λεσβόθεν ἡ δεκάτη.'",
+  "AP 9.521: the Muses grant Sappho imperishable speech — 'σοὶ γὰρ ῥῆσιν ἐνεύσαμεν ἄφθιτον εἶμεν,'"
+ ],
+ "loci_not_found": [],
+ "lines_total": 11406,
+ "why_seated": "The ancient reception of Sappho in the epigram, where the future reader is the stranger the tomb addresses: the epitaphs of Book 7 (Antipater, Pinytus's 'the tomb holds the bones and the mute name of Sappho, but her wise words are immortal', Tullius Laurea's 'stranger' at the Aeolian tomb, Nossis) and the declamations of Book 9 (the tenth Muse of the epigram given to Plato; the Muses' grant of 'imperishable speech').",
+ "spine": "EA-CORPORA-36",
+ "ruling": "Lee Sharks, 2026-11-07: \"i think we need a sappho reception history ea-corpora, whatever's public. translators, scholars. theres some ground work in the archive, notes towards a future reader i believe. the seating can include everything thats publicly available as well as declared absences and pointers for material behind pay- and access- and rights-walls\"; and: \"sappho reception history + future reader frameworks and related\"; and at 12:47 EST, of the first draft: \"this seems light on scholarly material related to the future reader proposition or sappho... and that is the focus of notes towards a future reader, is it not?\"",
+ "seating": "EA-CORPORA-36, the thirty-sixth seating: Sappho's reception and the future reader, 1652–1993, 2026-11-07",
+ "research": "The revision of Closing the Fragment (v7, a draft of 2026-11-07 for Alexanarch), whose §6 controls the January composition against the translators from Hall (1652) to Carson and whose §8 declares an exposure-checked panel; and the Sappho Future Reader framework, whose groundwork is Research Notes Towards the Future Reader (#1548: Part I the scholarly field, Part II the future reader in twelve strata), and whose reading by a signed-out ChatGPT on 2026-11-07 is seated as capture 0C3D (sappho-future-reader-framework-constitutive-materials-chatgpt-20261107)."
+}

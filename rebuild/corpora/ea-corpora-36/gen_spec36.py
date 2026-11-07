@@ -1,7 +1,8 @@
-"""EA-CORPORA-36 spec generator: Sappho's reception, with the future-reader frameworks, in the open record. Twenty-seven seats, each
+"""EA-CORPORA-36 spec generator: Sappho's reception, with the future-reader frameworks, in the open record. Thirty-two seats, each
 in its original language, at the operator's word of 2026-11-07 ("i think we need a sappho reception history ea-corpora, whatever's public.
-translators, scholars ..."; "sappho reception history + future reader frameworks and related"). Part A (36/01–36/18) holds the translators,
-editors and critics of Sappho from Hall's Longinus (1652) to Cox (1925); Part B (36/19–36/27) holds the future-reader strata of #1548 Part II
+translators, scholars ..."; "sappho reception history + future reader frameworks and related"). Part A (36/01–36/23) holds the translators,
+editors and critics of Sappho from Hall's Longinus (1652) to Cox (1925), the ancient dossier of remembrance, the public-domain
+scholarship and the encyclopedia's sentence; Part B (36/24–36/32) holds the future-reader strata of #1548 Part II
 that the library did not already hold. Strata already seated are entered as cross-references (xref36.py); works behind pay-, access- and
 rights-walls are entered as declared absences (absences36.py).   python3 gen_spec36.py"""
 import json, pathlib
@@ -9,7 +10,8 @@ H = pathlib.Path(__file__).resolve().parent
 RULING = ("Lee Sharks, 2026-11-07: \"i think we need a sappho reception history ea-corpora, whatever's public. translators, scholars. theres some "
           "ground work in the archive, notes towards a future reader i believe. the seating can include everything thats publicly available as well "
           "as declared absences and pointers for material behind pay- and access- and rights-walls\"; and: \"sappho reception history + future reader "
-          "frameworks and related\".")
+          "frameworks and related\"; and at 12:47 EST, of the first draft: \"this seems light on scholarly material related to the future reader "
+          "proposition or sappho... and that is the focus of notes towards a future reader, is it not?\"")
 SEATING = "EA-CORPORA-36, the thirty-sixth seating: Sappho's reception and the future reader, 1652–1993, 2026-11-07"
 RESEARCH = ("The revision of Closing the Fragment (v7, a draft of 2026-11-07 for Alexanarch), whose §6 controls the January composition against the "
             "translators from Hall (1652) to Carson and whose §8 declares an exposure-checked panel; and the Sappho Future Reader framework, whose "
@@ -23,6 +25,8 @@ NORM = ("Originals as fetched under original/: Internet Archive text layers (_dj
         "dropped. No text corrected by hand; the loci keep the OCR's readings (long s read as f, double spaces, broken accents).")
 GB = lambda n: f"https://www.gutenberg.org/cache/epub/{n}/pg{n}.txt"
 PERSEUS_L = "https://raw.githubusercontent.com/PerseusDL/canonical-latinLit/8b536bdf3ed1f43494055efe112433b4a58eab67/"
+GCOMMIT = "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00"
+PERSEUS_G = f"https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/{GCOMMIT}/"
 US_ONLY = lambda yr, who: (f"Public domain in the United States: published {yr}, before 1931. Outside the United States the term runs from "
                            f"{who}; the seat is held for the United States and the record says so.")
 
@@ -135,8 +139,66 @@ SEATS = [
   [ia("cox-1925", "E. M. Cox, The Poems of Sappho (London: Williams & Norgate; New York: Scribner, 1925)", "poemsofsapphowit0000edwi", A)],
   "The volume whole.", "The Greek text with notes, translations and a bibliography of editions: the reception inventoried the year "
   "Lobel's edition appeared."),
+ # ---- Part A, continued: the ancient dossier of remembrance, the scholarship in the public domain, and the encyclopedia ----
+ ("remembrance-dossier", "19", "The remembrance fragments in their carriers: Dio Chrysostom Or. 37 (fr. 147), Plutarch's Coniugalia praecepta and Quaestiones convivales (fr. 55), Stobaeus 3.4 (fr. 55), and P.Oxy. XV (Sappho Book IV; Ibycus to Polycrates)", "grc, lat, eng",
+  "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); von Arnim's Dio (1893) and Bernardakis's Plutarch (1888, 1892) in the public domain. "
+  "Hense's Stobaeus (1894; Hense died 1931) and Grenfell and Hunt's Oxyrhynchus Papyri XV (1922; Grenfell died 1926, Hunt 1934) in the public domain everywhere.",
+  [{"kind": "tei", "slug": "dio-orationes", "work": "Dio Chrysostom, Orationes, ed. H. von Arnim (Berlin, 1893–96), Perseus tlg0612.tlg001 grc2 (Or. 37.47: fr. 147)",
+    "url": PERSEUS_G + "data/tlg0612/tlg001/tlg0612.tlg001.perseus-grc2.xml", "path": "perseus/tlg0612.tlg001.perseus-grc2.xml",
+    "source": "PerseusDL/canonical-greekLit", "repository": "https://github.com/PerseusDL/canonical-greekLit", "commit": GCOMMIT,
+    "file": "data/tlg0612/tlg001/tlg0612.tlg001.perseus-grc2.xml", "class": A},
+   {"kind": "tei", "slug": "plutarch-coniugalia", "work": "Plutarch, Coniugalia praecepta, ed. G. N. Bernardakis (Leipzig, 1888), Perseus tlg0007.tlg078 grc2 (145f–146a: fr. 55)",
+    "url": PERSEUS_G + "data/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml", "path": "perseus/tlg0007.tlg078.perseus-grc2.xml",
+    "source": "PerseusDL/canonical-greekLit", "repository": "https://github.com/PerseusDL/canonical-greekLit", "commit": GCOMMIT,
+    "file": "data/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml", "class": A},
+   {"kind": "tei", "slug": "plutarch-quaestiones-convivales", "work": "Plutarch, Quaestiones convivales, ed. G. N. Bernardakis (Leipzig, 1892), Perseus tlg0007.tlg112 grc2 (646e–f: fr. 55)",
+    "url": PERSEUS_G + "data/tlg0007/tlg112/tlg0007.tlg112.perseus-grc2.xml", "path": "perseus/tlg0007.tlg112.perseus-grc2.xml",
+    "source": "PerseusDL/canonical-greekLit", "repository": "https://github.com/PerseusDL/canonical-greekLit", "commit": GCOMMIT,
+    "file": "data/tlg0007/tlg112/tlg0007.tlg112.perseus-grc2.xml", "class": A},
+   ia("stobaeus-hense-iii", "Ioannis Stobaei Anthologium, ed. C. Wachsmuth and O. Hense, vol. III (Berlin: Weidmann, 1894), Book III (3.4.12: fr. 55)", "adw8682.0003.001.umich.edu", A),
+   ia("oxyrhynchus-papyri-xv", "B. P. Grenfell and A. S. Hunt (eds.), The Oxyrhynchus Papyri XV (London, 1922), with 1787 (Sappho, Book IV) and 1790 (Ibycus)", "oxyrhynchuspapyr0015gren", A)],
+  "The carriers whole: Dio's orations, the two Plutarch treatises, Stobaeus's third book, and the papyrus volume.",
+  "The ancient dossier of #1548 Part I §3 in the books that carry it. Dio's Corinthian oration (generally given to Favorinus) quotes fr. 147 "
+  "with Hesiod on undying report and the speaker's own statue; Plutarch quotes fr. 55, the unremembered woman, and says Sappho was proud of the "
+  "καλλιγραφία in her songs, enough to write to a rich woman; Stobaeus files the same lines under 'To an uneducated woman'; P.Oxy. XV prints "
+  "Sappho's fourth book and the Ibycus poem that promises Polycrates imperishable fame. The ancient record holds remembrance claims, and the "
+  "seat holds them where they stand."),
+ ("anthology-sappho-epigrams", "20", "The Greek Anthology, ed. and trans. W. R. Paton, vols. II–III (London, 1917), via Perseus: the epigrams on Sappho (AP 7 and 9)", "grc",
+  "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); Paton's edition is in the public domain everywhere (published 1917; Paton died 1921).",
+  [{"kind": "tei", "slug": "anthology-vol-ii", "work": "The Greek Anthology, ed. W. R. Paton, vol. II (Book 7, the sepulchral epigrams), Perseus tlg7000.tlg001 grc7",
+    "url": PERSEUS_G + "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc7.xml", "path": "perseus/tlg7000.tlg001.perseus-grc7.xml",
+    "source": "PerseusDL/canonical-greekLit", "repository": "https://github.com/PerseusDL/canonical-greekLit", "commit": GCOMMIT,
+    "file": "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc7.xml", "class": A},
+   {"kind": "tei", "slug": "anthology-vol-iii", "work": "The Greek Anthology, ed. W. R. Paton, vol. III (Book 9, the declamatory epigrams), Perseus tlg7000.tlg001 grc8",
+    "url": PERSEUS_G + "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc8.xml", "path": "perseus/tlg7000.tlg001.perseus-grc8.xml",
+    "source": "PerseusDL/canonical-greekLit", "repository": "https://github.com/PerseusDL/canonical-greekLit", "commit": GCOMMIT,
+    "file": "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc8.xml", "class": A}],
+  "The two volumes whole.",
+  "The ancient reception of Sappho in the epigram, where the future reader is the stranger the tomb addresses: the epitaphs of Book 7 (Antipater, "
+  "Pinytus's 'the tomb holds the bones and the mute name of Sappho, but her wise words are immortal', Tullius Laurea's 'stranger' at the Aeolian "
+  "tomb, Nossis) and the declamations of Book 9 (the tenth Muse of the epigram given to Plato; the Muses' grant of 'imperishable speech')."),
+ ("smyth-greek-melic-poets-1900", "21", "H. W. Smyth, Greek Melic Poets (London, 1900)", "grc, eng",
+  "Public domain everywhere (1900; Smyth died 1937).",
+  [ia("smyth-1900", "H. W. Smyth, Greek Melic Poets (London: Macmillan, 1900)", "greekmelicpoets00smytuoft", A)],
+  "The volume whole: text, introduction and commentary.",
+  "The school commentary on the melic poets in English, whose headings carry a reading: fr. 147 is printed under 'NON OMNIS MORIAR', Horace's "
+  "line at the head of Sappho's, and fr. 55 under 'NEGLECT OF THE MUSES'."),
+ ("jebb-growth-and-influence-1893", "22", "R. C. Jebb, The Growth and Influence of Classical Greek Poetry (London and Boston, 1893)", "eng",
+  "Public domain everywhere (1893; Jebb died 1905).",
+  [ia("jebb-1893", "R. C. Jebb, The Growth and Influence of Classical Greek Poetry (Boston: Houghton Mifflin, 1893)", "cu31924022691764", A)],
+  "The volume whole.", "The Victorian account of Greek lyric's transmission and influence, Sappho's period and the 'mass of fiction or calumny' "
+  "that later literature made of her, in the lectures given at Johns Hopkins in 1892."),
+ ("wikipedia-sappho-20261106", "23", "Wikipedia, 'Sappho', revision 1384043521 (2026-11-06T07:52:21Z), wikitext", "eng",
+  "Wikipedia text under CC BY-SA 4.0, as the site states.",
+  [{"kind": "text", "slug": "wikipedia-sappho", "work": "Wikipedia, 'Sappho', revision 1384043521 of 2026-11-06, the wikitext as served",
+    "url": "https://en.wikipedia.org/w/index.php?title=Sappho&action=raw&oldid=1384043521", "path": "wikipedia/sappho-1384043521.wiki",
+    "source": "Wikipedia (en)", "licence": "CC BY-SA 4.0", "class": A}],
+  "The article whole, at one revision.",
+  "The head of the chain #1548 Part I §1 resolves: 'Some scholars believe that she wrote her own poetry down for future readers', with its single "
+  "footnote to Lardinois 2008, 79–80, the chapter written to argue the other side. The revision is pinned so that the sentence can be read as it "
+  "stood when the seating was made."),
  # ---- Part B: the future reader ----
- ("cicero-tusculanae", "19", "Cicero, Tusculanae Disputationes, ed. M. Pohlenz (Leipzig, 1918), via Perseus", "lat",
+ ("cicero-tusculanae", "24", "Cicero, Tusculanae Disputationes, ed. M. Pohlenz (Leipzig, 1918), via Perseus", "lat",
   "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); Pohlenz's edition is in the public domain in the United States (published 1918).",
   [{"kind": "tei", "slug": "tusculanae", "work": "Cicero, Tusculanae Disputationes, ed. Pohlenz (Perseus phi0474.phi049, lat2)",
     "url": PERSEUS_L + "data/phi0474/phi049/phi0474.phi049.perseus-lat2.xml", "path": "perseus/phi0474.phi049.perseus-lat2.xml",
@@ -144,27 +206,27 @@ SEATS = [
     "commit": "8b536bdf3ed1f43494055efe112433b4a58eab67", "file": "data/phi0474/phi049/phi0474.phi049.perseus-lat2.xml", "class": B}],
   "The five books whole.", "Ennius's epitaph as Cicero quotes it, 'volito vivos per ora virum' (Tusc. 1.34): the poet living in the mouths of men, "
   "stratum IV of #1548's genealogy; the library's Cicero seat (EA-CORPORA-13/03) holds other works."),
- ("dante-commedia", "20", "Dante Alighieri, La Divina Commedia (Italian; the Project Gutenberg text)", "ita",
+ ("dante-commedia", "25", "Dante Alighieri, La Divina Commedia (Italian; the Project Gutenberg text)", "ita",
   "Public domain everywhere (Dante died 1321); the Gutenberg file under its licence.",
   [gb("commedia", "Dante, La Divina Commedia, complete, Project Gutenberg #1000", 1000, B)],
   "The poem whole.", "The addresses to the reader ('Pensa, lettor', Inf. 8.94 and after; 'O voi che siete in piccioletta barca', Par. 2.1), the "
   "corpus of Auerbach's 'Dante's Addresses to the Reader' (1954), stratum VI."),
- ("chaucer-troilus", "21", "Geoffrey Chaucer, Troilus and Criseyde (the Project Gutenberg text)", "enm",
+ ("chaucer-troilus", "26", "Geoffrey Chaucer, Troilus and Criseyde (the Project Gutenberg text)", "enm",
   "Public domain everywhere (Chaucer died 1400); the Gutenberg file under its licence.",
   [gb("troilus", "Chaucer, Troilus and Criseyde, Project Gutenberg #257", 257, B)],
   "The poem whole.", "The envoi 'Go, litel book, go litel myn tragedie' (5.1786) and the stanza after it on scribal miswriting: the book "
   "dispatched to readers it cannot choose, with its transmission in view, stratum VI."),
- ("shakespeare-sonnets", "22", "William Shakespeare, Sonnets (1609; the Project Gutenberg text in modern spelling)", "eng",
+ ("shakespeare-sonnets", "27", "William Shakespeare, Sonnets (1609; the Project Gutenberg text in modern spelling)", "eng",
   "Public domain everywhere (1609); the Gutenberg file under its licence.",
   [gb("sonnets", "Shakespeare's Sonnets, Project Gutenberg #1041 (modern spelling; the quarto's numbering)", 1041, B)],
   "The 154 sonnets whole. The 1609 quarto's own spelling is not seated; this text is modernized.",
   "The English monumentum: 18, 55, 65, 107, and 81's 'Which eyes not yet created shall o'er-read', the future reader stated as plainly as the "
   "language allows, stratum VI."),
- ("milton-paradise-lost", "23", "John Milton, Paradise Lost (1674 text; the Project Gutenberg text)", "eng",
+ ("milton-paradise-lost", "28", "John Milton, Paradise Lost (1674 text; the Project Gutenberg text)", "eng",
   "Public domain everywhere (1674); the Gutenberg file under its licence.",
   [gb("paradise-lost", "Milton, Paradise Lost, Project Gutenberg #26", 26, B)],
   "The poem whole.", "'fit audience find, though few' (7.31): the future reader as select, stratum VI."),
- ("romantic-posterity", "24", "The Romantic culture of posterity in its own words: Wordsworth (1815), Keats (1818), Shelley (1821), Stendhal (1839)", "eng, fra",
+ ("romantic-posterity", "29", "The Romantic culture of posterity in its own words: Wordsworth (1815), Keats (1818), Shelley (1821), Stendhal (1839)", "eng, fra",
   "Public domain everywhere (Wordsworth died 1850, Keats 1821, Shelley 1822, Stendhal 1842; Grosart's edition 1876, Colvin's 1891); the Gutenberg files under their licence.",
   [gb("wordsworth-prose", "The Prose Works of William Wordsworth, ed. A. B. Grosart, 3 vols. (London, 1876), Project Gutenberg #16550 (the letters to Lady Beaumont, 1807, and the Essay, Supplementary to the Preface, 1815)", 16550, B),
    gb("keats-letters", "Letters of John Keats to His Family and Friends, ed. S. Colvin (London, 1891), Project Gutenberg #35698", 35698, B),
@@ -175,20 +237,20 @@ SEATS = [
   "Essay of 1815 has 'the task of creating the taste by which he is to be enjoyed'), 'among the English Poets after my death', poets as 'mirrors of the "
   "gigantic shadows which futurity casts upon the present', and the novel dedicated at its last line 'TO THE HAPPY FEW'. Nietzsche's 'Einige "
   "werden posthum geboren' is seated at EA-CORPORA-27/03 (nietzsche, text/ecce-homo-pg.txt)."),
- ("dickinson-poems-1890-1896", "25", "Emily Dickinson, Poems, Three Series, ed. M. L. Todd and T. W. Higginson (Boston, 1890–1896)", "eng",
+ ("dickinson-poems-1890-1896", "30", "Emily Dickinson, Poems, Three Series, ed. M. L. Todd and T. W. Higginson (Boston, 1890–1896)", "eng",
   "Public domain everywhere (Dickinson died 1886; published 1890–1896); the Gutenberg file under its licence.",
   [gb("dickinson-1890-1896", "Poems by Emily Dickinson, Three Series, Complete, ed. Todd and Higginson, Project Gutenberg #12242", 12242, B)],
   "The three series whole, as Todd and Higginson edited them. The manuscripts are seated at EA-CORPORA-02/14 (dickinson-mss).",
   "'This is my letter to the world, / That never wrote to me': the dispatch to unknown readers, edited for its first readers by the same "
   "Higginson whose 'Sappho' is 36/10, stratum VIII."),
- ("baratynsky-moi-dar-ubog", "26", "Е. А. Боратынский, «Мой дар убог и голос мой не громок» (1828), Wikisource (ru)", "rus",
+ ("baratynsky-moi-dar-ubog", "31", "Е. А. Боратынский, «Мой дар убог и голос мой не громок» (1828), Wikisource (ru)", "rus",
   "Public domain everywhere (1828; Baratynsky died 1844). The Wikisource page's text under CC BY-SA 4.0 for the site's contributions.",
   [{"kind": "ws", "slug": "moi-dar-ubog", "work": "Боратынский, «Мой дар убог и голос мой не громок» (1828), ru.wikisource", "lang": "ru",
     "title": "Мой дар убог и голос мой не громок (Боратынский)", "class": B}],
   "The poem whole.", "'И как нашёл я друга в поколенье, / Читателя найду в потомстве я': the reader found in posterity, the poem Mandelstam's "
   "'О собеседнике' (1913) opens from, the first link of the Russian line in stratum VIII. The page's commentary quotes the bottle passage of «О собеседнике»: "
   "'Письмо, запечатанное в бутылке, адресовано тому, кто найдет её.' The essay whole is a declared absence."),
- ("wipp-markers-sandia-1993", "27", "K. M. Trauth, S. C. Hora and R. V. Guzowski, Expert Judgment on Markers to Deter Inadvertent Human Intrusion into the Waste Isolation Pilot Plant, SAND92-1382 (Albuquerque, 1993)", "eng",
+ ("wipp-markers-sandia-1993", "32", "K. M. Trauth, S. C. Hora and R. V. Guzowski, Expert Judgment on Markers to Deter Inadvertent Human Intrusion into the Waste Isolation Pilot Plant, SAND92-1382 (Albuquerque, 1993)", "eng",
   "SAND92-1382 is an Unlimited Release of Sandia National Laboratories, prepared for the United States Department of Energy; the Internet Archive item is marked Public Domain Mark 1.0.",
   [ia("sandia-1993", "Trauth, Hora and Guzowski, SAND92-1382, Unlimited Release (Sandia National Laboratories, November 1993)", "long-term-warning", B)],
   "The report whole, with its appendices (the two expert teams' reports).", "Stratum XI, the literal engineering turn: a message designed for "

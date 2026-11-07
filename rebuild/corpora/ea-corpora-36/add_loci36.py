@@ -63,6 +63,29 @@ L = {
 'cox-poems-of-sappho-1925': [
  ("Cox's bibliography: the 1680 English Longinus, the second translation of fr. 31 (OCR)", "cox-1925", "translated out of French by Mr. J. Pulteney. London, 1680. 8vo. Second translation of"),
  ("Cox's bibliography: Dacier's Sappho of 1681 (OCR)", "cox-1925", "Les Poesies d’Anacréon et de Sappho traduites de Grec en Francois avec des Remarques. Paris, 1681.")],
+'remembrance-dossier': [
+ ("Dio Chrysostom Or. 37.47 (Favorinus): fr. 147, 'finely said by Sappho'", "dio-orationes", "μνάσεσθαί τινά φαμι καὶ ἕτερον ἀμμέων. πάνυ γὰρ καλῶς εἶπεν ἡ Σαπφώ"),
+ ("Dio 37.47: Hesiod on undying report, and the speaker's own statue set up beside the goddess", "dio-orationes", "φήμη δ’ οὔτις πάμπαν ἀπόλλυται, ἥντινα λαοὶ πολλοὶ φημίξωσι· θεός νύ τίς ἐστι καὶ αὐτή. ἐγώ σε ἀναστήσω παρὰ τῇ θεῷ"),
+ ("Plutarch, Coniugalia praecepta 145f–146a: Sappho proud of the καλλιγραφία of her songs, writing to a rich woman", "plutarch-coniugalia", "διὰ τὴν ἐν τοῖς μέλεσι καλλιγραφίαν ἐφρόνει τηλικοῦτον ὥστε γράψαι πρός τινα πλουσίαν"),
+ ("Plutarch, Coniugalia praecepta (fr. 55, with the editor's text from 646f): no memory of you", "plutarch-coniugalia", "κατθανοῦσα δὲ κείσεαι, οὐδέ τις μναμοσύνα σέθεν ἔσεται"),
+ ("Plutarch, Quaestiones convivales 646e–f: Sappho to an unmusical and unlearned woman", "plutarch-quaestiones-convivales", "μεμνῆσθαί μοι δοκῶ Σαπφοῦς λεγούσης πρός τινα τῶν ἀμούσων καὶ ἀμαθῶν γυναικῶν"),
+ ("Stobaeus 3.4.12 (Hense): Sappho to an uneducated woman (OCR)", "stobaeus-hense-iii", "Σαπφοῦς πρὸς ἁπαίδευτον γυναῖκα"),
+ ("P.Oxy. XV 1787: Sappho, Book IV (OCR)", "oxyrhynchus-papyri-xv", "1787. SAPPHO, BOOK iv."),
+ ("P.Oxy. XV 1790 (Ibycus): Polycrates promised imperishable fame (OCR)", "oxyrhynchus-papyri-xv", "In the penultimate line the author addresses Polycrates, to whom he ascribes imperishable fame.")],
+'anthology-sappho-epigrams': [
+ ("AP 7.15 (Antipater): 'my name is Sappho'", "anthology-vol-ii", "οὔνομά μευ Σαπφώ. τόσσον δʼ ὑπερέσχον ἀοιδὰν"),
+ ("AP 7.16 (Pinytus): the tomb holds the bones and mute name; her wise words are immortal", "anthology-vol-ii", "ὀστέα μὲν καὶ κωφὸν ἔχει τάφος οὔνομα Σαπφοῦς·"),
+ ("AP 7.17 (Tullius Laurea): the stranger at the Aeolian tomb", "anthology-vol-ii", "Αἰολικὸν παρὰ τύμβον ἰών, ξένε, μή με θανοῦσαν"),
+ ("AP 9.506 (attributed to Plato): Sappho the tenth Muse", "anthology-vol-iii", "ἠνίδε καὶ Σαπφὼ Λεσβόθεν ἡ δεκάτη."),
+ ("AP 9.521: the Muses grant Sappho imperishable speech", "anthology-vol-iii", "σοὶ γὰρ ῥῆσιν ἐνεύσαμεν ἄφθιτον εἶμεν,")],
+'smyth-greek-melic-poets-1900': [
+ ("Smyth prints fr. 147 under Horace's 'non omnis moriar' (OCR)", "smyth-1900", "SAPPHO. X. (32). NON OMNIS MORIAR."),
+ ("Smyth's fr. 147 (OCR)", "smyth-1900", "Μνάσεσθαί τινά φαμι καὶ ὕστερον ἀμμέων."),
+ ("Smyth prints fr. 55 under 'Neglect of the Muses' (OCR)", "smyth-1900", "XXIV. (68). NEGLECT OF THE MUSES. Κατθάνοισα δὲ κείσεαι")],
+'jebb-growth-and-influence-1893': [
+ ("Jebb: Sappho's period, and the mass of fiction or calumny (OCR)", "jebb-1893", "From the mass of fiction or calumny which later literature")],
+'wikipedia-sappho-20261106': [
+ ("Wikipedia, 'Ancient editions': the 'some scholars' sentence and its one footnote", "wikipedia-sappho", "Some scholars believe that she wrote her own poetry down for future readers; others that if she wrote her works down it was as an aid to reperformance rather than as a work of literature in its own right.{{sfn|Lardinois|2008|pp=79&ndash;80}}")],
 'cicero-tusculanae': [
  ("Ennius's epitaph as Cicero quotes it (Tusc. 1.34)", "tusculanae", "volito vivos per ora virum.")],
 'dante-commedia': [

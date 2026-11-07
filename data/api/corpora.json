@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-07T17:44:40.722546Z",
- "seats": 221,
- "lines_total": 8569447,
+ "_generated": "2026-11-07T18:05:56.034856Z",
+ "seats": 226,
+ "lines_total": 8709061,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -17688,6 +17688,206 @@
   },
   {
    "seat": "EA-CORPORA-36/19",
+   "corpus": "remembrance-dossier",
+   "edition": "Dio Chrysostom, Orationes, ed. H. von Arnim (Berlin, 1893–96), Perseus tlg0612.tlg001 grc2 (Or. 37.47: fr. 147); Plutarch, Coniugalia praecepta, ed. G. N. Bernardakis (Leipzig, 1888), Perseus tlg0007.tlg078 grc2 (145f–146a: fr. 55); Plutarch, Quaestiones convivales, ed. G. N. Bernardakis (Leipzig, 1892), Perseus tlg0007.tlg112 grc2 (646e–f: fr. 55); Ioannis Stobaei Anthologium, ed. C. Wachsmuth and O. Hense, vol. III (Berlin: Weidmann, 1894), Book III (3.4.12: fr. 55); B. P. Grenfell and A. S. Hunt (eds.), The Oxyrhynchus Papyri XV (London, 1922), with 1787 (Sappho, Book IV) and 1790 (Ibycus)",
+   "license": {
+    "payload": "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); von Arnim's Dio (1893) and Bernardakis's Plutarch (1888, 1892) in the public domain. Hense's Stobaeus (1894; Hense died 1931) and Grenfell and Hunt's Oxyrhynchus Papyri XV (1922; Grenfell died 1926, Hunt 1934) in the public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg0612/tlg001/tlg0612.tlg001.perseus-grc2.xml",
+      "source": "PerseusDL/canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+      "file": "data/tlg0612/tlg001/tlg0612.tlg001.perseus-grc2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml",
+      "source": "PerseusDL/canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+      "file": "data/tlg0007/tlg078/tlg0007.tlg078.perseus-grc2.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg0007/tlg112/tlg0007.tlg112.perseus-grc2.xml",
+      "source": "PerseusDL/canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+      "file": "data/tlg0007/tlg112/tlg0007.tlg112.perseus-grc2.xml"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "adw8682.0003.001.umich.edu",
+      "url": "https://archive.org/details/adw8682.0003.001.umich.edu",
+      "files": [
+       "adw8682.0003.001.umich.edu_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "oxyrhynchuspapyr0015gren",
+      "url": "https://archive.org/details/oxyrhynchuspapyr0015gren",
+      "files": [
+       "oxyrhynchuspapyr0015gren_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc, lat, eng",
+   "lines": 75320,
+   "verified_loci": [
+    "Dio Chrysostom Or. 37.47 (Favorinus): fr. 147, 'finely said by Sappho' — 'μνάσεσθαί τινά φαμι καὶ ἕτερον ἀμμέων. πάνυ γὰρ καλῶς εἶπεν ἡ Σαπφώ'",
+    "Dio 37.47: Hesiod on undying report, and the speaker's own statue set up beside the goddess — 'φήμη δ’ οὔτις πάμπαν ἀπόλλυται, ἥντινα λαοὶ πολλοὶ φημίξωσι· θεός νύ τίς ἐστι καὶ αὐτή. ἐγώ σε ἀναστήσω παρὰ τῇ θεῷ'",
+    "Plutarch, Coniugalia praecepta 145f–146a: Sappho proud of the καλλιγραφία of her songs, writing to a rich woman — 'διὰ τὴν ἐν τοῖς μέλεσι καλλιγραφίαν ἐφρόνει τηλικοῦτον ὥστε γράψαι πρός τινα πλουσίαν'",
+    "Plutarch, Coniugalia praecepta (fr. 55, with the editor's text from 646f): no memory of you — 'κατθανοῦσα δὲ κείσεαι, οὐδέ τις μναμοσύνα σέθεν ἔσεται'",
+    "Plutarch, Quaestiones convivales 646e–f: Sappho to an unmusical and unlearned woman — 'μεμνῆσθαί μοι δοκῶ Σαπφοῦς λεγούσης πρός τινα τῶν ἀμούσων καὶ ἀμαθῶν γυναικῶν'",
+    "Stobaeus 3.4.12 (Hense): Sappho to an uneducated woman (OCR) — 'Σαπφοῦς πρὸς ἁπαίδευτον γυναῖκα'",
+    "P.Oxy. XV 1787: Sappho, Book IV (OCR) — '1787. SAPPHO, BOOK iv.'",
+    "P.Oxy. XV 1790 (Ibycus): Polycrates promised imperishable fame (OCR) — 'In the penultimate line the author addresses Polycrates, to whom he ascribes imperishable fame.'"
+   ],
+   "why_seated": "The ancient dossier of #1548 Part I §3 in the books that carry it. Dio's Corinthian oration (generally given to Favorinus) quotes fr. 147 with Hesiod on undying report and the speaker's own statue; Plutarch quotes fr. 55, the unremembered woman, and says Sappho was proud of the καλλιγραφία in her songs, enough to write to a rich woman; Stobaeus files the same lines under 'To an uneducated woman'; P.Oxy. XV prints Sappho's fourth book and the Ibycus poem that promises Polycrates imperishable fame. The ancient record holds remembrance claims, and the seat holds them where they stand.",
+   "scope": "The carriers whole: Dio's orations, the two Plutarch treatises, Stobaeus's third book, and the papyrus volume.",
+   "data": "https://www.alexanarch.org/data/corpora/remembrance-dossier/"
+  },
+  {
+   "seat": "EA-CORPORA-36/20",
+   "corpus": "anthology-sappho-epigrams",
+   "edition": "The Greek Anthology, ed. W. R. Paton, vol. II (Book 7, the sepulchral epigrams), Perseus tlg7000.tlg001 grc7; The Greek Anthology, ed. W. R. Paton, vol. III (Book 9, the declamatory epigrams), Perseus tlg7000.tlg001 grc8",
+   "license": {
+    "payload": "Perseus Digital Library TEI under CC BY-SA 4.0 (the packaging); Paton's edition is in the public domain everywhere (published 1917; Paton died 1921).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc7.xml",
+      "source": "PerseusDL/canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+      "file": "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc7.xml"
+     },
+     {
+      "url": "https://raw.githubusercontent.com/PerseusDL/canonical-greekLit/a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00/data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc8.xml",
+      "source": "PerseusDL/canonical-greekLit",
+      "repository": "https://github.com/PerseusDL/canonical-greekLit",
+      "commit": "a6eb0cc3e6f6e382934a2c8b33577d2fb4371e00",
+      "file": "data/tlg7000/tlg001/tlg7000.tlg001.perseus-grc8.xml"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 11406,
+   "verified_loci": [
+    "AP 7.15 (Antipater): 'my name is Sappho' — 'οὔνομά μευ Σαπφώ. τόσσον δʼ ὑπερέσχον ἀοιδὰν'",
+    "AP 7.16 (Pinytus): the tomb holds the bones and mute name; her wise words are immortal — 'ὀστέα μὲν καὶ κωφὸν ἔχει τάφος οὔνομα Σαπφοῦς·'",
+    "AP 7.17 (Tullius Laurea): the stranger at the Aeolian tomb — 'Αἰολικὸν παρὰ τύμβον ἰών, ξένε, μή με θανοῦσαν'",
+    "AP 9.506 (attributed to Plato): Sappho the tenth Muse — 'ἠνίδε καὶ Σαπφὼ Λεσβόθεν ἡ δεκάτη.'",
+    "AP 9.521: the Muses grant Sappho imperishable speech — 'σοὶ γὰρ ῥῆσιν ἐνεύσαμεν ἄφθιτον εἶμεν,'"
+   ],
+   "why_seated": "The ancient reception of Sappho in the epigram, where the future reader is the stranger the tomb addresses: the epitaphs of Book 7 (Antipater, Pinytus's 'the tomb holds the bones and the mute name of Sappho, but her wise words are immortal', Tullius Laurea's 'stranger' at the Aeolian tomb, Nossis) and the declamations of Book 9 (the tenth Muse of the epigram given to Plato; the Muses' grant of 'imperishable speech').",
+   "scope": "The two volumes whole.",
+   "data": "https://www.alexanarch.org/data/corpora/anthology-sappho-epigrams/"
+  },
+  {
+   "seat": "EA-CORPORA-36/21",
+   "corpus": "smyth-greek-melic-poets-1900",
+   "edition": "H. W. Smyth, Greek Melic Poets (London: Macmillan, 1900)",
+   "license": {
+    "payload": "Public domain everywhere (1900; Smyth died 1937).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "greekmelicpoets00smytuoft",
+      "url": "https://archive.org/details/greekmelicpoets00smytuoft",
+      "files": [
+       "greekmelicpoets00smytuoft_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc, eng",
+   "lines": 41525,
+   "verified_loci": [
+    "Smyth prints fr. 147 under Horace's 'non omnis moriar' (OCR) — 'SAPPHO. X. (32). NON OMNIS MORIAR.'",
+    "Smyth's fr. 147 (OCR) — 'Μνάσεσθαί τινά φαμι καὶ ὕστερον ἀμμέων.'",
+    "Smyth prints fr. 55 under 'Neglect of the Muses' (OCR) — 'XXIV. (68). NEGLECT OF THE MUSES. Κατθάνοισα δὲ κείσεαι'"
+   ],
+   "why_seated": "The school commentary on the melic poets in English, whose headings carry a reading: fr. 147 is printed under 'NON OMNIS MORIAR', Horace's line at the head of Sappho's, and fr. 55 under 'NEGLECT OF THE MUSES'.",
+   "scope": "The volume whole: text, introduction and commentary.",
+   "data": "https://www.alexanarch.org/data/corpora/smyth-greek-melic-poets-1900/"
+  },
+  {
+   "seat": "EA-CORPORA-36/22",
+   "corpus": "jebb-growth-and-influence-1893",
+   "edition": "R. C. Jebb, The Growth and Influence of Classical Greek Poetry (Boston: Houghton Mifflin, 1893)",
+   "license": {
+    "payload": "Public domain everywhere (1893; Jebb died 1905).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "cu31924022691764",
+      "url": "https://archive.org/details/cu31924022691764",
+      "files": [
+       "cu31924022691764_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 11036,
+   "verified_loci": [
+    "Jebb: Sappho's period, and the mass of fiction or calumny (OCR) — 'From the mass of fiction or calumny which later literature'"
+   ],
+   "why_seated": "The Victorian account of Greek lyric's transmission and influence, Sappho's period and the 'mass of fiction or calumny' that later literature made of her, in the lectures given at Johns Hopkins in 1892.",
+   "scope": "The volume whole.",
+   "data": "https://www.alexanarch.org/data/corpora/jebb-growth-and-influence-1893/"
+  },
+  {
+   "seat": "EA-CORPORA-36/23",
+   "corpus": "wikipedia-sappho-20261106",
+   "edition": "Wikipedia, 'Sappho', revision 1384043521 of 2026-11-06, the wikitext as served",
+   "license": {
+    "payload": "Wikipedia text under CC BY-SA 4.0, as the site states.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Wikipedia (en)",
+      "url": "https://en.wikipedia.org/w/index.php?title=Sappho&action=raw&oldid=1384043521",
+      "licence_at_file": "CC BY-SA 4.0"
+     }
+    ],
+    "fetched": "2026-11-07",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 327,
+   "verified_loci": [
+    "Wikipedia, 'Ancient editions': the 'some scholars' sentence and its one footnote — 'Some scholars believe that she wrote her own poetry down for future readers; others that if she wrote her works down it was as an aid to reperformance rather than as a work of literature in its own right.{{sfn|Lardinois|2008|pp=79&ndash;80}}'"
+   ],
+   "why_seated": "The head of the chain #1548 Part I §1 resolves: 'Some scholars believe that she wrote her own poetry down for future readers', with its single footnote to Lardinois 2008, 79–80, the chapter written to argue the other side. The revision is pinned so that the sentence can be read as it stood when the seating was made.",
+   "scope": "The article whole, at one revision.",
+   "data": "https://www.alexanarch.org/data/corpora/wikipedia-sappho-20261106/"
+  },
+  {
+   "seat": "EA-CORPORA-36/24",
    "corpus": "cicero-tusculanae",
    "edition": "Cicero, Tusculanae Disputationes, ed. Pohlenz (Perseus phi0474.phi049, lat2)",
    "license": {
@@ -17717,7 +17917,7 @@
    "data": "https://www.alexanarch.org/data/corpora/cicero-tusculanae/"
   },
   {
-   "seat": "EA-CORPORA-36/20",
+   "seat": "EA-CORPORA-36/25",
    "corpus": "dante-commedia",
    "edition": "Dante, La Divina Commedia, complete, Project Gutenberg #1000",
    "license": {
@@ -17746,7 +17946,7 @@
    "data": "https://www.alexanarch.org/data/corpora/dante-commedia/"
   },
   {
-   "seat": "EA-CORPORA-36/21",
+   "seat": "EA-CORPORA-36/26",
    "corpus": "chaucer-troilus",
    "edition": "Chaucer, Troilus and Criseyde, Project Gutenberg #257",
    "license": {
@@ -17775,7 +17975,7 @@
    "data": "https://www.alexanarch.org/data/corpora/chaucer-troilus/"
   },
   {
-   "seat": "EA-CORPORA-36/22",
+   "seat": "EA-CORPORA-36/27",
    "corpus": "shakespeare-sonnets",
    "edition": "Shakespeare's Sonnets, Project Gutenberg #1041 (modern spelling; the quarto's numbering)",
    "license": {
@@ -17804,7 +18004,7 @@
    "data": "https://www.alexanarch.org/data/corpora/shakespeare-sonnets/"
   },
   {
-   "seat": "EA-CORPORA-36/23",
+   "seat": "EA-CORPORA-36/28",
    "corpus": "milton-paradise-lost",
    "edition": "Milton, Paradise Lost, Project Gutenberg #26",
    "license": {
@@ -17832,7 +18032,7 @@
    "data": "https://www.alexanarch.org/data/corpora/milton-paradise-lost/"
   },
   {
-   "seat": "EA-CORPORA-36/24",
+   "seat": "EA-CORPORA-36/29",
    "corpus": "romantic-posterity",
    "edition": "The Prose Works of William Wordsworth, ed. A. B. Grosart, 3 vols. (London, 1876), Project Gutenberg #16550 (the letters to Lady Beaumont, 1807, and the Essay, Supplementary to the Preface, 1815); Letters of John Keats to His Family and Friends, ed. S. Colvin (London, 1891), Project Gutenberg #35698; P. B. Shelley, A Defence of Poetry and Other Essays, Project Gutenberg #5428; Stendhal, La Chartreuse de Parme (1839), Project Gutenberg #796",
    "license": {
@@ -17879,7 +18079,7 @@
    "data": "https://www.alexanarch.org/data/corpora/romantic-posterity/"
   },
   {
-   "seat": "EA-CORPORA-36/25",
+   "seat": "EA-CORPORA-36/30",
    "corpus": "dickinson-poems-1890-1896",
    "edition": "Poems by Emily Dickinson, Three Series, Complete, ed. Todd and Higginson, Project Gutenberg #12242",
    "license": {
@@ -17907,7 +18107,7 @@
    "data": "https://www.alexanarch.org/data/corpora/dickinson-poems-1890-1896/"
   },
   {
-   "seat": "EA-CORPORA-36/26",
+   "seat": "EA-CORPORA-36/31",
    "corpus": "baratynsky-moi-dar-ubog",
    "edition": "Боратынский, «Мой дар убог и голос мой не громок» (1828), ru.wikisource",
    "license": {
@@ -17939,7 +18139,7 @@
    "data": "https://www.alexanarch.org/data/corpora/baratynsky-moi-dar-ubog/"
   },
   {
-   "seat": "EA-CORPORA-36/27",
+   "seat": "EA-CORPORA-36/32",
    "corpus": "wipp-markers-sandia-1993",
    "edition": "Trauth, Hora and Guzowski, SAND92-1382, Unlimited Release (Sandia National Laboratories, November 1993)",
    "license": {
@@ -17971,5 +18171,5 @@
    "data": "https://www.alexanarch.org/data/corpora/wipp-markers-sandia-1993/"
   }
  ],
- "count": 221
+ "count": 226
 }
