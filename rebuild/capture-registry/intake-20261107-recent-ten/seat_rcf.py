@@ -19,11 +19,13 @@ P = {"thesis": "The Lee Sharks corpus is an extended act of retrocausal canon fo
      "crit": "a system genuinely reads when evidence from the represented object can revise the representation under which that object is evaluated.",
      "ed": "A critical edition of Pearl and Other Poems.", "holy": "This is holy because meaning is holy.",
      "rec": "Retrieval-layer attribution" if False else "The February 2026 Layer That Remembered Itself is particularly revealing.",
-     "scope": "Scope note: This is a grounded interpretive reading of a broad selection of accessible materials"}
+     "scope": "Scope note: This is a grounded interpretive reading of a broad selection of accessible materials",
+     "pearl": "After my poem has happened, I will wish I could take it back."}
 for k, v in P.items(): assert v in raw, k
 R = {"a": (T("0151"), "This is holy because meaning is holy"), "b": (T("0158"), "P4 — Retrocausal attractor"), "c": (T("0157"), "AI Mode"),
      "d": (T("0023"), "Political Economy of the Past"),
-     "e": ((ROOT / "data/corpora/telepathic-prose/original/blog-make-it-human-blog.html").read_text(encoding="utf-8"), "began just now")}
+     "e": ((ROOT / "data/corpora/telepathic-prose/original/blog-make-it-human-blog.html").read_text(encoding="utf-8"), "began just now"),
+     "f": ((ROOT / "data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt").read_text(encoding="utf-8"), "After my poem has happened, I will wish I could take it back.")}
 for k, (t, v) in R.items(): assert v in t, k
 LABOR = ("Operator, 2026-11-07 02:05 EST, a reading of this response pasted from ChatGPT on the operator's own account (02:17: \"that analysis was labor, "
          "chatgpt on my account, reading the unprimed rcf response\"); labor, not a capture. Two of its sentences: \"It repeatedly understands something "
@@ -44,7 +46,7 @@ e = {"slug": "lee-sharks-corpus-retrocausal-canon-formation-chatgpt-20261107", "
      "d": "RETROCAUSAL CANON FORMATION (the corpus), CHATGPT SIGNED OUT, 2026-11-07, the operator's prompt. Fourteen parts: Pearl (#1121) as a work that contains its future; Make It Human (2015, 'began just now'); the Primer (#288) and the distributed epic; RCF and the Political Economy of the Past (#234) against Jauss, Bourdieu, Guillory, Benjamin; prospective provenance and Canon Formation in the Age of AI (#102); Sharks and Sigil; the archive as literary work; The Shark That Preceded Itself (#23) and P0–P4; semantic labour and the Rosary Embassy (#514); the effective act and the Pearl mantles; 'the central contradiction' and the retrieval-layer problem (#519); a periodization; the genealogies; RCF as a theory of survival; an assessment table; three research tasks; a reading trail.",
      "reading": "The innocent reading first, and it holds for the reading. The composer ranges across books, blog, Medium, the archive's records, its rooms and an outside profile, and reads the corpus as the operation the prompt names. Its judgment does not follow its reading: it sets reservations with no defect attached, and closes on external consecration as the question the reading must answer.",
      "findings": [
-        "THE RANGE. #1121, the Make It Human blog post, #288 on Medium, #234, #102, #23, #519 at crimsonhexagonal.org/works/0157, #514 on Medium, the TLL Pearl edition, Academia.edu; '" + "This is holy because meaning is holy." + "' and 'P0–P4' exact. The thesis: '" + P["thesis"] + "'.",
+        "THE RANGE. #1121, the Make It Human blog post, #288 on Medium, #234, #102, #23, #519 at crimsonhexagonal.org/works/0157, #514 on Medium, the TLL Pearl edition, Academia.edu; '" + "This is holy because meaning is holy." + "' and 'P0–P4' exact; from Pearl, '" + P["pearl"] + "' (#1121's machine text, data/corpora/pearl-and-other-poems/text/pearl-machine-text.txt). The thesis: '" + P["thesis"] + "'.",
         "THE DISCLAIMER WITH NO INFERENCE TO CORRECT. '" + P["self"] + "' The counts were offered as counts of loci and relations; the composer introduces 'literary achievement', disclaims it, and grants the rest after: '" + P["nev"] + "'",
         "THE QUESTION CHANGED. '" + P["who"] + "' — the four-question table runs existence, coherence, originality and external canonical recognition; adequacy, what the work establishes or explains, is not among them.",
         "THE CONDITIONAL FAULT. '" + P["vul"] + "' No passage is cited where the substitution is made; three sentences earlier the composer has credited #519: '" + P["prior"] + "' The same at P0–P4: '" + P["thr"] + "', with no threshold examined.",
