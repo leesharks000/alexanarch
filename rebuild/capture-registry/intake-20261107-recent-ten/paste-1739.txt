@@ -1,0 +1,687 @@
+
+Log in
+
+What it is
+The AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.559 is a versioned empirical research dataset that records how AI-powered search and conversational systems represent named entities when prompted with particular queries.
+
+It is not simply a database of AI search results, nor is it a conventional tracker of whether an entity appears in Google's AI Overviews.
+
+Its purpose is to preserve and compare what different AI systems say about the same subject, at different times, under identifiable query and authentication conditions.
+
+The document describes its central purpose as:
+
+A longitudinal instrument for recording dated machine-mediated reception events: what composition layers make of a named entity when asked for it at a specific semantic address, on a specific date, in a specific authentication state.
+
+The work is attributed to Dr. Orin Trace, dated November 4, 2026, and deposited as Alexanarch deposit #1739, identifier AXN:0C01.
+
+It is a snapshot of registry version 12.559, superseding version 12.167 (deposit #1676).
+
+The document reports:
+
+1,001
+Semantic addresses
+
+Distinct registered subjects or query positions
+1,193
+Captures
+
+Recorded observations of AI-generated responses
+104
+Dates
+
+Distinct observation dates
+5 months
+Observation period
+
+June 7 – November 4, 2026
+In other words, it attempts to make AI-generated representations of people, works, institutions, concepts, and other entities into dated, inspectable, citable evidence.
+
+1. The fundamental idea: a capture
+The most important sentence in the document is:
+
+ONE SURFACE + ONE SEMANTIC ADDRESS + ONE DATE = ONE CAPTURE.
+
+This is the registry's basic unit of evidence.
+
+The three components mean:
+
+Surface: The AI system or interface being observed, such as Google AI Overview, ChatGPT, Grok, or Perplexity.
+
+Semantic address: The registered subject or query position being investigated.
+
+Date: When the observation was made.
+
+For example, imagine investigating how ChatGPT describes a particular scholarly work.
+
+A capture would preserve:
+
+The identity of the work being investigated.
+
+The specific semantic address assigned to it.
+
+The platform on which the answer appeared.
+
+The date of the observation.
+
+The authentication state (signed in, signed out, incognito, etc.).
+
+The resulting response, ideally as a verbatim transcript.
+
+A screenshot or frame, when available.
+
+An accompanying analysis and provenance measurements.
+
+This distinction matters because the registry treats an individual AI response as evidence of what a particular system produced under particular conditions—not as definitive evidence about the underlying subject.
+
+2. Semantic addresses: what is being investigated?
+A semantic address is the registry's persistent identity for a subject being investigated.
+
+It is not simply a URL or a search-engine result. It is a stable position in the registry associated with a named entity or subject.
+
+The document reports addresses distributed across subject categories:
+
+Section
+
+Addresses
+
+Machine Reception
+
+263
+
+Works
+
+141
+
+Archive
+
+91
+
+Frameworks
+
+86
+
+Heteronyms
+
+83
+
+Semantic Economy
+
+49
+
+Coinages
+
+48
+
+Revelation & Theology
+
+32
+
+Classics & Philology
+
+29
+
+Provenance & Erasure
+
+25
+
+Institutions
+
+24
+
+Sites
+
+19
+
+People
+
+17
+
+Valuation
+
+17
+
+There are also smaller categories, including Architecture, Platform Erosion, Reference & General Knowledge, Projects, Operative Semiotics, and Concepts.
+
+Two important rules govern addresses:
+
+The address's slug is inherited from its first capture and is never renamed.
+
+An address can accumulate captures across multiple platforms and dates.
+
+This allows researchers to ask two different questions:
+
+What did a particular AI system say about this entity on a particular occasion?
+
+How has the representation of this entity changed across systems and over time?
+
+The document explicitly distinguishes these citation functions:
+
+captures/{slug}/ identifies an individual observation.
+
+addresses/{slug}/ identifies the persistent subject and its accumulated history.
+
+That distinction is fundamental to the dataset's research design.
+
+3. Which AI systems does it monitor?
+The 1,193 captures are distributed across multiple surfaces.
+
+Surface
+
+Captures
+
+Google AI Overview
+
+745
+
+ChatGPT (all recorded labels)
+
+278
+
+Google AI Mode
+
+21
+
+Grok
+
+9
+
+Perplexity
+
+9
+
+Bing Copilot
+
+6
+
+Claude
+
+3
+
+Qwen
+
+3
+
+Bing AI Overview
+
+2
+
+Google Knowledge Panel
+
+2
+
+Other single-capture surfaces
+
+9
+
+Undetermined
+
+56
+
+Unresolved
+
+50
+
+The document makes an important distinction between an AI model and the interface through which its output is encountered.
+
+For example, ChatGPT's 278 captures are subdivided into different recorded labels:
+
+230 under the main ChatGPT grouping.
+
+27 under Luna 5.6.
+
+12 under Luna.
+
+8 under chatgpt.com.
+
+1 web, logged out.
+
+This is useful because the same underlying service can produce different experiences depending on its interface, configuration, and access conditions.
+
+The registry therefore does not treat every observation from a particular AI provider as interchangeable.
+
+All figures above are transcribed from section 2 of the deposited document.
+
+4. How the registry measures provenance loss
+One of the most distinctive features is its measurement system called PER: Provenance Erasure Rate.
+
+The underlying concern is that AI-generated summaries can retain some information about a subject while losing the information needed to identify, contextualize, or verify it.
+
+The original PER system uses four units:
+
+Author.
+
+Institution.
+
+Identifier.
+
+Source.
+
+These represent different dimensions of provenance.
+
+For example, an AI-generated summary might accurately describe a book but:
+
+Omit its author.
+
+Misidentify the institution responsible for it.
+
+Leave out its persistent identifier.
+
+Fail to identify the source from which its information originated.
+
+The registry attempts to measure these losses rather than merely judging whether an answer sounds plausible.
+
+The evolution of PER
+The document describes a significant methodological change.
+
+Originally, PER was represented by a scalar score derived from a four-unit vector.
+
+In October 2026, the registry introduced a dimensional version, recorded as per_dim, under rubric v1.1.
+
+This expanded the assessment to include:
+
+PER-M: The measurement associated with material provenance.
+
+PER-C: The contextual dimension.
+
+PER-D: The deeper dimension, including purpose and commitments.
+
+The newer rubric also incorporates inversion and standing substitution.
+
+The exact operational definitions and atom sets are documented in the associated methodological work, EA-PER-RECALC-01 (deposit #1694).
+
+The v12.559 document reports:
+
+907
+Historical scalar PER
+
+Observations with the original measurement
+0.429
+Mean scalar PER
+
+Across those 907 observations
+1,171
+Dimensional PER
+
+Observations carrying the newer assessment
+20
+Pending assessments
+
+With recorded reasons for being pending
+The historical mean had been 0.506 in version 12.167 and 0.603 in version 10.9.
+
+These figures should not automatically be interpreted as evidence that AI systems improved or deteriorated. They are measurements across a changing collection of observations, and the measurement instrument itself evolved.
+
+The document's important methodological decision is that the original scalar is now derived automatically from its four-unit vector at the time of seating, rather than manually entered.
+
+This reduces the possibility of inconsistent hand-entered scores.
+
+5. How the data actually gets produced
+The document describes a specific, ordered processing pipeline.
+
+Capture Registry workflow
+Observation and intake
+
+The operator collects the AI-generated response, associated material, and observation metadata.
+
+Capture intake
+
+scripts/capture_intake.py --seat
+
+This script admits, routes, normalizes, validates, and inserts the observation. It also derives the scalar PER from its four-unit vector.
+
+Gallery generation
+
+scripts/build_capture_gallery.py
+
+Builds the capture gallery from the registered observations.
+
+Postflight processing
+
+scripts/seat_capture_postflight.py
+
+Links and bakes records, runs gates, builds the semantic-address layer and address pages, allocates AXNs, synchronizes the dataset projection, and checks citability.
+
+Successful seating
+
+A capture is considered seated when the postflight script exits with status 0.
+
+There is an important provenance safeguard before records enter the registry.
+
+Each intake batch is preserved in a dated directory:
+
+rebuild/capture-registry/intake-YYYYMMDD-*/
+
+These directories preserve:
+
+The original pasted material.
+
+The operator's messages.
+
+The script responsible for authoring each capture.
+
+The document additionally states that every quotation on which a finding rests is asserted against its source before anything is written.
+
+This is intended to prevent an analytical claim from silently becoming detached from the evidence supporting it.
+
+What happens when an existing capture needs correction?
+The document distinguishes between initial intake and repair.
+
+A seated capture is revised using:
+
+scripts/revise_capture_entry.py
+
+This revises the existing record while retaining its identity fields.
+
+The distinction is significant: the registry does not simply replace problematic observations with cleaner versions and conceal their history.
+
+It attempts to preserve the identity and provenance of the original observation.
+
+6. AXNs: how individual observations are identified
+Another important feature is the AXN identification system.
+
+Since October 27, 2026, each semantic address holds one position in a shared allocation ledger:
+
+AXN:<HEX>.CAPTURE
+
+Each individual observation also receives an AXN whose glyphs derive from the SHA-256 hash of the observation sealed together with its analysis and measurements.
+
+This provides a connection between:
+
+The registered subject.
+
+Its individual observations.
+
+The sealed evidence and analysis.
+
+The associated deposit.
+
+The deposit's own identifier is AXN:0C01, while #1739 identifies its position in the Alexanarch deposit sequence.
+
+These are not interchangeable identifiers.
+
+The document also supplies SHA-256 hashes for its data files and its complete archive bundle. This makes it possible to check whether a downloaded file matches the deposited version.
+
+7. What is actually preserved?
+The deposit is more than a spreadsheet or a collection of transcripts.
+
+It contains a substantial archival structure.
+
+File
+
+Function
+
+EA-WG-CAPTURES-01-v12.559.json
+
+Canonical registry data
+
+EA-WG-CAPTURES-01.schema.json
+
+Formal structure and validation rules
+
+semantic-addresses-v12.559.json
+
+Semantic-address index
+
+capture-deposit-links-v12.559.json
+
+Links between captures and deposits
+
+captures-axn-v12.559.json
+
+Capture AXN index
+
+manifest.json
+
+File inventory, checksums, sizes and roles
+
+.tar.gz bundle
+
+Complete packaged archive
+
+The complete bundle contains 2,992 members.
+
+The manifest lists 492 files, including:
+
+485 capture frames.
+
+The principal data files.
+
+The packaged archive.
+
+Other supporting materials.
+
+The 485 frames account for approximately 186.5 MB.
+
+This matters because a transcript alone does not always establish what an interface displayed. Screenshots can preserve visual evidence of the interface and its generated composition.
+
+The registry therefore attempts to preserve both textual and visual evidence.
+
+8. Known defects and limitations
+One of the more interesting aspects of this deposit is that it explicitly documents its own defects.
+
+It does not claim that all 1,193 captures are complete, perfectly attributed, or fully verifiable.
+
+The document reports the following defects:
+
+Defect
+
+Count
+
+Null citations
+
+243
+
+Analysis without finding
+
+151
+
+Truncated by interface
+
+145
+
+Surface unresolved
+
+50
+
+Citations unextracted
+
+47
+
+Unsupported citations
+
+10
+
+Date unresolved
+
+3
+
+Stale state
+
+2
+
+Distinction collapse
+
+1
+
+There are also three specifically discussed limitations:
+
+1. Stale summary statistics
+
+The top-level _defect_counts field still contains the figures from v12.167. The document therefore calculates the current defect table from the individual records instead.
+
+2. Missing physical frame files
+
+Two referenced screenshots are not held at their expected repository paths:
+
+screengrab-20260910-105838.png
+
+screengrab-20260910-105901.png
+
+3. Pending dimensional assessments
+
+Twenty observations have pending dimensional PER records, each accompanied by a stated reason.
+
+The document explicitly says these defects have not been repaired in this snapshot.
+
+That is an important archival principle: defects are retained as documented properties of the deposited dataset rather than silently corrected during snapshot creation.
+
+9. Why version 12.559 matters
+The registry has undergone substantial expansion.
+
+Between v12.167 and v12.559:
+
+Semantic addresses increased from 633 to 1,001.
+
+Captures increased from 811 to 1,193.
+
+Dimensional PER became the standard assessment at intake.
+
+Capture-specific AXNs were introduced.
+
+Surface identification was expanded.
+
+The registry's postflight process was strengthened.
+
+The new version is therefore not merely a larger dataset. It represents an evolution of the underlying research instrument.
+
+10. What is the broader intellectual significance?
+I think the most important idea in this document is that it treats AI-generated knowledge as something that can itself become an object of empirical research.
+
+Traditionally, researchers study:
+
+Books and publications.
+
+Authors and institutions.
+
+Search-engine rankings.
+
+Citations and bibliographies.
+
+The transmission and reception of ideas.
+
+This registry adds another object of study:
+
+The way machine-mediated systems receive, reconstruct, summarize, attribute, and sometimes distort existing knowledge.
+
+Consider a hypothetical example.
+
+A researcher publishes a book with a clearly identified author, institution, publisher, and identifier.
+
+Several months later, three AI systems are asked about that book.
+
+System A correctly identifies the author but omits the institution.
+
+System B describes the book accurately but attributes it to another researcher.
+
+System C gives a plausible description but cites unrelated sources.
+
+A conventional search-results archive might simply save the three responses.
+
+The Capture Registry instead provides a framework for recording each response as a distinct observation, associating it with a persistent semantic address, preserving its evidence, and assessing its provenance.
+
+Over time, the researcher can investigate whether these errors are:
+
+Persistent or temporary.
+
+Specific to one platform.
+
+Shared across multiple platforms.
+
+Associated with particular types of entities.
+
+Changing as the underlying AI systems change.
+
+That is the difference between collecting AI answers and building an empirical instrument for studying AI-mediated reception.
+
+11. How should we interpret the document critically?
+There is an important distinction between what the deposit establishes and what it claims its methodology can establish.
+
+What it establishes internally:
+
+A defined dataset with 1,001 semantic addresses and 1,193 observations.
+
+A stated collection period and platform distribution.
+
+A documented intake and processing pipeline.
+
+A formalized citation and identification structure.
+
+A version history.
+
+File-level checksums.
+
+Explicitly recorded defects and pending assessments.
+
+What it does not independently establish:
+
+That every observation accurately represents the complete experience of an ordinary user.
+
+That the selected semantic addresses constitute a representative sample of all AI-generated knowledge.
+
+That its PER methodology is an independently validated universal measure of provenance loss.
+
+That the observed changes in PER necessarily indicate changes in overall AI quality.
+
+That the registry's own interpretation of every captured response is correct.
+
+The distinction is especially important because the document identifies a human–machine production process: the snapshot was assembled and written by TACHYON (Claude, Anthropic), under MANUS (Lee Sharks) direction, while the underlying captures were taken by the operator.
+
+This is a provenance statement about the production of the dataset itself.
+
+It should not be confused with independent verification of all the conclusions derived from the dataset.
+
+My overall assessment
+The AI Overview Capture Registry is best understood as a longitudinal archival and measurement infrastructure for studying machine-mediated knowledge reception.
+
+Its central innovation is not simply collecting AI-generated answers. It is combining:
+
+Persistent semantic identities for the subjects being investigated.
+
+Dated, platform-specific observations.
+
+Verbatim transcripts and visual evidence.
+
+Provenance-loss measurements.
+
+Cryptographic identification and integrity checks.
+
+A versioned, reproducible intake and correction process.
+
+Explicit documentation of defects.
+
+The particularly important conceptual move is making an AI-generated representation into a citable historical event.
+
+Instead of saying, "ChatGPT says X about this book," a researcher can potentially identify precisely which ChatGPT observation, concerning which semantic address, on which date, under which access conditions, with which transcript and associated evidence.
+
+That makes the registry useful for studying not only AI search visibility, but also attribution, knowledge transmission, entity resolution, historical distortion, and the relationship between source material and machine-generated accounts.
+
+In one sentence: The registry attempts to turn the changing ways AI systems represent the world into a structured, measurable, historically traceable body of evidence.
+
+Primary document
+The account above is grounded in the deposited document itself, rather than treating its descriptions as independently verified research findings.
+
+Author: Orin Trace
+
+Title: AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.559
+
+Date: November 4, 2026
+
+Deposit: #1739
+
+Identifier: AXN:0C01
+
+License: CC BY 4.0
+
+The document is available through the Alexanarch deposit record, which includes the complete Markdown text, JSON dataset, schema, individual indexes, manifest, and downloadable archive.
+
+Source: 
+
+Goodreads
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+

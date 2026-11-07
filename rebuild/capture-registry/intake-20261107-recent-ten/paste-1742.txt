@@ -1,0 +1,401 @@
+
+Log in
+
+The central argument
+Nobel Glas's What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v1.2, deposit #1742) argues that the public understanding of the 3I/ATLAS technosignature searches became more conclusive than the underlying evidence justified, because successive layers of filtering, classification, and summarization obscured what had actually been tested.
+
+The notebook is not arguing that 3I/ATLAS is an artificial object, nor that the thirteen unusual radio-signal clusters it identifies constitute an extraterrestrial transmission.
+
+Its more specific argument is about the production and communication of scientific knowledge: what a search pipeline can detect, what its filters exclude, what a null result establishes, and how later accounts can turn a qualified result into an apparently categorical conclusion.
+
+There are three principal cases:
+
+The Google AI Overview's representation of Avi Loeb's position.
+
+The discrepancy between the ATA search's stated physical model and its documented drift-rate filter.
+
+The thirteen unusual Green Bank signal clusters, and what their detection and subsequent non-replication actually establish.
+
+The notebook connects these cases through a broader theory of classifier foreclosure, instrument-conditioned nullity, frame conversion, and disciplinary model collapse. 
+
+Alexanarch
+
+1. The Loeb argument: a summary can reverse the meaning of a position
+This is the notebook's first case of what it calls frame conversion.
+
+The author examines a Google AI Overview captured on November 2, 2026. Under the heading "Shift to Natural Consensus," it describes Loeb as having acknowledged that 3I/ATLAS was most likely natural.
+
+Glas argues that this presentation misrepresents the chronology and substance of Loeb's position.
+
+The notebook reconstructs the record:
+
+July 2025: Loeb, with Hibberd and Crowl, writes that the most likely outcome is a completely natural interstellar object, probably a comet.
+
+August 2025: Loeb's scale places 3I/ATLAS at Level 4, a category for anomalies warranting investigation of technological hypotheses, but below the Orange Zone (Levels 5–7), which marks a qualitative shift toward suspected artificial origin.
+
+December 2025: Loeb makes the statement quoted by the Overview: most likely natural.
+
+April 23, 2026: Loeb again ranks 3I/ATLAS at Level 4 and discusses the anomalies that motivate that ranking.
+
+The distinction is important. Loeb's position, as reconstructed by the notebook, accommodates both:
+
+A natural origin being the most likely explanation.
+
+Anomalies sufficiently interesting to justify investigating technological explanations.
+
+The Overview turns the December statement into a change of mind, rather than a continuation of that position.
+
+Glas calls this trajectory substitution: a consistent position is presented as a chronological movement from one position to its opposite.
+
+The criticism is not that the Overview fabricated Loeb's quotation. It is that it changed the quotation's argumentative function through its placement, heading, verb choice, and omission of the broader record.
+
+This is a particularly important distinction in the notebook's theory of information loss: factual accuracy at the level of individual sentences does not guarantee accuracy at the level of the argument those sentences represent.
+
+2. The ATA argument: a search can exclude the very signal its physical model predicts
+The second case is more technical and, in some respects, more consequential.
+
+Glas examines the published Allen Telescope Array search by Sheikh and colleagues.
+
+The issue is the sign of the expected Doppler drift.
+
+The paper calculates the acceleration of 3I/ATLAS and derives the expected magnitude of the frequency drift for a transmitter moving with the object. But the notebook argues that the sign is wrong in the implemented search range.
+
+The reasoning is:
+
+The object is approaching Earth.
+
+Its approach is slowing, meaning its range-rate is becoming less negative.
+
+Consequently, the received blueshift decreases.
+
+A constant-frequency transmitter moving with the object therefore produces a decreasing received frequency.
+
+Its signal should drift negatively.
+
+The notebook calculates approximately −0.125 Hz/s at 1075 MHz and −0.19 Hz/s at 1623.75 MHz for the July 3 observation.
+
+However, the ATA paper reports positive expected drift rates and Figure 4 shows a retained search interval of +0.05 to +1.5 Hz/s.
+
+Glas's conclusion is that the documented filter appears to exclude the negative-drift signal predicted by the paper's own physical calculation.
+
+This is not simply an argument that the search was insufficiently sensitive. It is an argument about model independence: a search cannot claim to have tested a physical model adequately if its selection criteria exclude the signal characteristics implied by that model.
+
+There is an important qualification in §5.1.2: the notebook has not obtained the executed filtering script or signed before-and-after catalogues. Consequently, it establishes a discrepancy in the manuscript, figure, and physics, but does not establish that an actual extraterrestrial transmission was discarded.
+
+It also reports that searches of portions of the excluded drift class did not find a convincing signal.
+
+The related problem of classification
+The notebook extends this criticism to the description of rejected ATA hits as "human-made."
+
+It distinguishes two different propositions:
+
+A signal failed the pipeline's criteria for being an astronomical candidate.
+
+The signal was positively identified as human-made interference.
+
+The first does not automatically establish the second.
+
+For example, the notebook examines the two illustrated rejected events. One is at a frequency where Iridium unwanted emissions remain plausible. The other has similar strength in both beams, supporting rejection as an unlocalized source, but not identifying its transmitter.
+
+The criticism is that a classification decision has been rhetorically upgraded into an identification.
+
+This matters because the press account subsequently reports that all 211 inspected hits turned out to be human-made interference.
+
+The notebook's point is that the label itself can conceal the distinction between what a classifier establishes and what the underlying evidence establishes.
+
+3. The thirteen Green Bank clusters: an anomaly is not a transmission
+This is the notebook's main original empirical investigation.
+
+The authors examine Green Bank Telescope data from December 18, 2025, focusing on the 1665.53–1668.46 MHz region.
+
+They develop a procedure called the comet-frame coincidence count.
+
+Instead of asking whether an individual scan contains a sufficiently strong signal, the procedure follows the frequency path that a tone fixed to 3I/ATLAS would take across multiple observations.
+
+It then compares the resulting on-source counts against false frames generated by alternative range accelerations.
+
+The motivation is to test for weak signals that might be individually below detection thresholds but become recognizable through their behavior across multiple observations.
+
+The reported result
+
+13
+True comet-frame clusters
+
+3.75
+Mean false-frame count
+
+8
+Largest of 40 false-frame counts
+
+0/15
+Held-out L-band channels replicating the property
+
+Figures reported in §§0 and 7 of the notebook. The thirteen clusters were independently reproduced by ChatGPT using Claude's code and tables.
+The result is interesting for several reasons.
+
+All thirteen clusters reproduce under an independent implementation.
+
+The actual ON-scan assignment produces a larger count than the nineteen alternative ON/OFF role assignments tested.
+
+The true-frame count exceeds all forty false-acceleration controls.
+
+The signal structure is not explained simply by one unusually strong sample.
+
+C03, one of the thirteen, survives several alternative normalization checks.
+
+But the notebook is unusually explicit about the weaknesses.
+
+First, normalization matters. With frequency-baseline normalization, the count falls from thirteen to six, and seven of forty controls reach or exceed that result.
+
+Second, threshold choice matters. The excess disappears at neighboring thresholds.
+
+Third, the property does not replicate in the held-out channels. None of fifteen channels satisfies the pre-established replication criterion.
+
+Fourth, it does not replicate at Parkes. None of the thirteen has a Parkes candidate within 50 Hz of its rest frequency.
+
+Fifth, the global false-alarm probability remains unestablished. The notebook reports that this is the largest empirical excess among 64 surveyed L-band channels, but explicitly refuses to turn that ranking into a global statistical significance claim.
+
+There is also an important distinction between the thirteen clusters collectively and C03 individually.
+
+C03 remains unexplained under the notebook's tests, but its behavior can be reproduced by a weak, steady, single-line emitter in the authors' simulations. The simulation does not establish an extraterrestrial origin, and it does not calculate likelihoods against instrumental or no-emitter models.
+
+The notebook estimates a nominal equivalent transmitter power of approximately 26 mW for C03, conditional on its assumed source geometry and calibration. That is a model-dependent estimate, not a measurement of a transmitter.
+
+The authors therefore do not claim discovery.
+
+Their claim is that the data contain a reproducible, unusual, incompletely explained feature that deserves to remain unresolved rather than being prematurely assigned an origin.
+
+4. The broader argument: null results are instrument-conditioned
+This is the theoretical centre of the notebook.
+
+Glas argues that a null result cannot be interpreted independently of the instrument and analytical process that produced it.
+
+The key concept is instrument-conditioned nullity.
+
+A radio search has an acceptance boundary determined by:
+
+Frequency coverage.
+
+Drift-rate restrictions.
+
+Detection thresholds.
+
+Beam-localization requirements.
+
+Time resolution.
+
+Signal morphology.
+
+Classification and rejection procedures.
+
+A null result therefore means that nothing satisfying the search's acceptance conditions was identified. It does not automatically mean that no signal existed outside those conditions.
+
+The notebook makes this distinction particularly clearly with three examples.
+
+Search limitation
+
+What it means
+
+MeerKAT S/N threshold of 6
+
+Weaker signals are absent from the hit list by construction.
+
+ATA positive drift interval
+
+The documented filter excludes the negative-drift class predicted by the paper's physical calculation.
+
+Limited frequency and temporal resolution
+
+Some signal structures cannot be tested using the available public products.
+
+The theoretical point is that a search's null result constrains only the hypotheses for which its entire acquisition and analysis chain has sufficiently characterized acceptance.
+
+This is not an argument that every null result is unreliable. It is an argument against extending a null result beyond the region its methodology actually tested.
+
+The No-Retention-Bound argument
+A related concept is the No-Retention-Bound observation.
+
+The notebook argues that validating a pipeline on the examples it was designed to recognize does not establish how well it retains unfamiliar signals.
+
+For example, if a pipeline has been tested on ordinary narrowband signals, that does not demonstrate that it would retain an unfamiliar signal with different frequency evolution, timing, or organization.
+
+This is a problem of generalization.
+
+The distinction is between:
+
+Demonstrating that a pipeline works on its intended test distribution.
+
+Demonstrating that it would retain a substantially different, potentially novel distribution.
+
+Glas argues that the second cannot simply be inferred from the first.
+
+5. Disciplinary model collapse: how a limited finding becomes a public certainty
+The notebook connects the technical problems to a larger theory of knowledge transmission.
+
+Its proposed sequence is:
+
+1. Instrument and pipeline
+
+The instrument captures only certain data; filters establish what proceeds.
+
+2. Scientific classification
+
+Rejected candidates receive labels that may imply more than the classification establishes.
+
+3. Press reporting
+
+A restricted search result becomes a categorical public conclusion.
+
+4. AI summarization
+
+The compressed conclusion is reproduced without restoring the original methodological qualifications.
+
+5. Apparent consensus
+
+Readers encounter a seemingly settled answer whose evidentiary boundaries have disappeared.
+
+Glas calls this disciplinary model collapse.
+
+The idea is that successive readers and summarizing systems increasingly condition their outputs on previous interpretations rather than returning to the original observations.
+
+The original scientific papers may contain important qualifications. But when press reports and AI summaries inherit only the headline conclusions, those qualifications disappear.
+
+The notebook is particularly concerned with the asymmetry:
+
+What the original search excluded is not necessarily visible to subsequent readers.
+
+What the original paper classified is not necessarily what the press says it identified.
+
+What the press says is not necessarily what the AI Overview says the scientist believes.
+
+In §9.11, the author argues that AI summarization accelerates a process already occurring within scientific and institutional communication.
+
+This is a broader criticism than an allegation that AI systems hallucinate. Even a system that accurately summarizes its immediate sources can reproduce and amplify the epistemic limitations inherited from those sources.
+
+6. The methodological argument: preserve the evidence, not just the conclusion
+Another important feature is how the notebook conducts its investigation.
+
+It tries to make the research reproducible rather than merely asking readers to accept its interpretations.
+
+The notebook emphasizes:
+
+Preregistered or frozen analytical procedures.
+
+Hashes identifying the plans and results.
+
+Explicitly recorded deviations from those procedures.
+
+False-frame controls.
+
+Independent reproduction between Claude and ChatGPT.
+
+Separation of exploratory analyses from tests that determine a verdict.
+
+Preservation of negative results and failed approaches.
+
+The distinction between three kinds of evidence is particularly important:
+
+A procedure was frozen before its result was examined.
+
+Data were genuinely held out from the initial discovery.
+
+An independent implementation reproduced the result.
+
+These are not interchangeable forms of validation.
+
+For example, ChatGPT reproduced the thirteen Green Bank clusters using Claude's code and tables. That is independent implementation, but it is not the same as discovering the result on a completely independent observational dataset.
+
+The notebook explicitly acknowledges this.
+
+It also preserves mistakes made by both machine collaborators, including incorrect counting procedures, mistaken interpretations, and revisions made after cross-checking their code and tables.
+
+This makes the notebook partly an argument about AI-assisted research itself: machine-generated analyses must be treated as fallible scientific work, not as authoritative conclusions.
+
+7. What the notebook does not establish
+This is essential to understanding the author's argument accurately.
+
+There are two distinct intellectual projects inside the document.
+
+The empirical project: searching public radio astronomy data for evidence of artificial transmission.
+
+The interpretive project: examining how scientific filters, classifications, summaries, and institutions determine what becomes recognizable as evidence.
+
+The second project produces the notebook's strongest conclusions. The first produces an unresolved anomaly but no confirmed technosignature.
+
+The limitations include:
+
+The thirteen clusters do not replicate in the held-out channels or at Parkes.
+
+Their significance across the entire search space is not established.
+
+C03 is compatible with a weak steady line, but the simulation does not establish the source's origin.
+
+Green Bank's tracking metadata leave an unresolved question requiring antenna telemetry.
+
+The ATA's executed filtering code and before-and-after catalogues remain unavailable.
+
+Public spectral powers do not preserve all the information that raw voltages would provide.
+
+Some frequencies, channels, and possible signal structures remain untested.
+
+The notebook also advances a speculative working hypothesis in §3: an advanced technological sender might understand our observational and analytical blind spots and deliberately produce signals near the boundary of determinability.
+
+That is a guiding hypothesis for the search, not an empirical finding.
+
+The author does not demonstrate that such a sender exists, that 3I/ATLAS carries such a sender, or that the thirteen clusters were deliberately constructed.
+
+This separation between hypothesis, empirical result, and interpretation is important when reading the document.
+
+8. The deepest argument
+I would distill the notebook's argument into five propositions:
+
+1. Detection is conditioned by representation. Instruments and algorithms do not simply reveal everything present in the data. They transform observations into a restricted set of recognizable candidates.
+
+2. A null result is conditional. It establishes something about the hypotheses a search was capable of retaining, not necessarily about everything that might have existed.
+
+3. Classification is not identification. Calling a candidate human-made, natural, noise, or irrelevant is an inference, not an automatic consequence of rejecting it.
+
+4. Summarization can alter meaning without altering quotations. The Loeb example demonstrates how a system can preserve individual factual statements while reversing the apparent trajectory of an argument.
+
+5. The provenance of conclusions matters. To understand what is actually known, readers need access to the original observations, procedures, exclusions, and transformations—not merely the conclusions transmitted through successive reporting layers.
+
+My reading of the document's intellectual contribution
+The most interesting aspect is that the notebook applies essentially the same epistemological question to three different domains:
+
+A scientist's position is filtered through a summarization system.
+
+A potential signal is filtered through a radio astronomy pipeline.
+
+An empirical result is filtered through public reporting and institutional interpretation.
+
+In each case, the question is not simply what survived the filter.
+
+It is also what the filter made invisible, what assumptions it encoded, and what subsequent readers mistakenly inferred from the surviving material.
+
+The title, What the Filters Kept, is therefore deliberately double-edged. It refers both to the radio signals retained by scientific search procedures and to the arguments and interpretations retained by systems of public knowledge.
+
+The final position is not that 3I/ATLAS is artificial. It is that we should not confuse the limits of our methods of recognizing something with the limits of what could exist.
+
+That is the argument that holds the entire notebook together.
+
+Primary text
+The complete notebook, including its methods, results, frozen plans, limitations, and operator's rulings:
+
+Nobel Glas and Orin Trace — deposit #1742, full text 
+
+Original deposit page 
+
+AXN:0C17 identifier page 
+
+For a close reading, I would concentrate particularly on §§1, 5, 7, 9, and 12. Those sections contain the central argument, its empirical tests, its theoretical framework, and the author's own explicit statement of purpose. 
+
+Alexanarch
++2
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+

@@ -1,0 +1,407 @@
+
+Log in
+
+Lee Sharks's central argument in “A Firm No: What the 3I/ATLAS Radio Searches Could See” is that the public-facing conclusion that radio searches found no signal from 3I/ATLAS is substantially stronger than the evidence warrants. The searches produced genuine null results, but their instruments, filters, detection thresholds and analysis procedures restricted what they could detect. Consequently, the absence of a reported detection cannot responsibly be presented as evidence that all potentially interesting signals were absent.
+
+The essay makes this argument through three investigations, followed by a broader criticism of how scientific results are communicated.
+
+I read the full text on the Alexanarch deposit #1743 . What follows distinguishes its principal arguments, supporting evidence and qualifications.
+
+1. The central thesis: a search built to say no
+The essay's title is deliberately pointed. Sharks argues that the published searches were designed to eliminate candidate signals at relatively low analytical cost, rather than to establish comprehensively that no signal could exist.
+
+The distinction is between two propositions:
+
+Limited proposition: No signal meeting the search's specified frequency, drift-rate and detection-strength criteria was identified.
+
+Broad proposition: There is no detectable technological signal associated with 3I/ATLAS.
+
+The first can be supported by a null result. The second requires considerably more work.
+
+Sharks gives this distinction a conceptual name: instrument-conditioned nullity. He draws on an earlier archive document, The Iceberg Document (#1450), to formulate the principle:
+
+A null result constrains only those hypotheses for which the end-to-end acceptance of the acquisition and analysis chain is sufficiently characterized.
+
+In other words, a null result tells us something about the hypotheses an instrument and its analytical pipeline were capable of detecting. It cannot automatically constrain hypotheses excluded by those procedures.
+
+This is the essay's governing methodological argument.
+
+2. First argument: the public misrepresented Avi Loeb's position
+The opening section examines a Google AI Overview that described Avi Loeb as having shifted from considering 3I/ATLAS potentially artificial to accepting that it was most likely natural.
+
+Sharks argues that this is a misrepresentation of Loeb's actual position.
+
+His evidence is chronological:
+
+In July 2025, Loeb's paper already concluded that the most likely explanation was a completely natural interstellar object, probably a comet.
+
+In August 2025, Loeb ranked 3I/ATLAS at Level 4 on his own scale.
+
+In December 2025, he reiterated that it was most likely natural.
+
+In April 2026, he was still assigning it Level 4 and discussing the anomalies that motivated that classification.
+
+The significance of Level 4 is that it is the highest level at which a natural explanation remains the better bet. Levels 5–7 represent a qualitative move toward suspected artificial origin.
+
+Thus, according to Sharks, Loeb's position did not undergo the reversal implied by the Overview.
+
+The essay calls the distortion frame conversion: individual facts can remain accurate while their framing changes the meaning of the account.
+
+This opening is important because it establishes that the essay is not simply concerned with radio astronomy. It is also concerned with how scientific uncertainty gets transformed into a more definitive public narrative.
+
+Sharks sees the same operation happening twice:
+
+A scientist's qualified position becomes a story about a concession.
+
+A qualified experimental null result becomes a story about a definitive negative finding.
+
+The parallel is intentional.
+
+3. Second argument: the Allen Telescope Array may have used the wrong drift-rate sign
+[Space] 2024.11.01 – CONTINUUM FLUX
+ 
+Capturing the Unseen: SETI Institute and Oxford University Astronomers Discover Early Radio Emission from a Spectacular Cosmic Explosion
+ 
+SETI Institute in the News: February Roundup
+ 
+The Allen Telescope Array en Californie - Les signes de vie extraterrestres
+ 
+Da quei pianeti nessuno ci ha chiamato -  Focus.it
+ 
+This is one of the essay's most concrete technical criticisms.
+
+The Allen Telescope Array (ATA) search looked for narrowband radio signals whose frequency would change as 3I/ATLAS moved relative to Earth.
+
+This change is called Doppler drift.
+
+A signal originating on the moving object should exhibit a drift associated with the object's changing distance from the observer.
+
+Sharks argues that the ATA paper calculated the magnitude of the expected drift approximately correctly but assigned it the wrong sign.
+
+The alleged discrepancy
+According to the essay:
+
+The ATA paper reported a positive drift, with a minimum of approximately +0.15 Hz/s.
+
+Its filtering procedure retained drift rates between +0.05 and +1.5 Hz/s.
+
+The paper's Figure 4 depicts the retained region on the positive side of the drift axis.
+
+But an increasing recession rate should produce a negative received-frequency drift.
+
+Sharks reports checking the JPL Horizons ephemeris and calculating the expected drift independently.
+
+For the July 3, 2025 session, he gives a predicted drift of approximately −0.125 Hz/s at 1075 MHz.
+
+He says the same sign discrepancy appears across all the public ATA sessions.
+
+Why this matters
+If the paper's documented filtering procedure was executed as described, it would have rejected the very drift class associated with a transmitter moving with 3I/ATLAS.
+
+That would mean the ATA search was not testing the complete class of signals it claimed to be investigating.
+
+However, Sharks is careful about the limits of this conclusion.
+
+He explicitly says he has not seen the executed filter code or the before-and-after hit lists. Therefore, he cannot establish conclusively that the actual processing discarded particular signals.
+
+He also reports that his own reanalysis of the public ATA data, searching along the negative drift, did not uncover anything that stood out against the controls.
+
+The distinction is important: he identifies a discrepancy in the published methodology, not evidence that the ATA actually discarded an extraterrestrial transmission.
+
+4. Third argument: thirteen unusual features in Green Bank data
+July/August 2022 | ASCE
+ 
+臺北市立天文科學教育館-天文新知-星鏈衛星與電波天文學共存
+ 
+Green Bank in the News — NRAO Science Site
+ 
+SETI Homes In On Fast Radio Burst Source FRB 121102
+ 
+AI Hunt For Extraterrestrial Intelligence Finds 8 Promising Signals | Discover Magazine
+ 
+Green Bank Observatory - Home of the GBT
+ 
+This is the essay's most interesting empirical finding and the one Sharks considers unresolved.
+
+The investigation examines Green Bank Telescope observations from 18 December 2025.
+
+The observations used an ON/OFF cadence:
+
+ON observations pointed at 3I/ATLAS.
+
+OFF observations pointed at nearby empty sky.
+
+Three ON observations alternated with three OFF observations.
+
+A signal originating from the object should, in principle, appear in the ON observations and not the OFF observations.
+
+Sharks and his collaborators examined a 2.93 MHz slice around 1667 MHz, near the hydroxyl radio line.
+
+They searched for weak features that aligned across all three ON observations when the data were followed along the object's expected Doppler drift.
+
+The thirteen features
+The central numerical result:
+
+13
+Features on the object's drift
+
+3.75
+Average count across 40 incorrect drifts
+
+8
+Maximum count among incorrect drifts
+
+6
+Count after alternative normalization
+
+Numbers reported in the essay, not independent estimates of statistical significance.
+The thirteen features exceeded the counts found along forty deliberately incorrect drift paths.
+
+Sharks then reports several additional checks:
+
+Reproducibility: An independent implementation recovered exactly thirteen features.
+
+ON/OFF assignment: Of twenty possible ways of assigning three of the six observations as ON, only the actual observational sequence produced thirteen.
+
+Known interference: Masking known receiver interference reduced the count from thirteen to twelve.
+
+Frequency controls: Scrambling feature positions produced no control count above six.
+
+Time controls: Shuffling time samples produced no count above eight.
+
+Other frequency slices: Of 64 examined slices, this was the largest excess and the only one that beat every control.
+
+These results make the features interesting as an anomaly in the data.
+
+But Sharks also spends considerable effort explaining why they do not constitute a detection.
+
+Why the thirteen are not evidence of an alien transmission
+He identifies four major limitations.
+
+1. They are unreplicated.
+
+The features have not been reproduced in independent observations at the same frequencies.
+
+The essay examines other telescope observations and other dates, but explicitly notes that the comparison observations were not necessarily sensitive enough to exclude signals this weak.
+
+2. They are fragile.
+
+Changing the normalization procedure reduces the count from thirteen to six. Seven of the forty controls then produce counts as high as the reduced result.
+
+Small adjustments to the detection threshold also eliminate the excess.
+
+3. They are faint.
+
+Individual features are only approximately 2.5–3.3 standard deviations above the noise in a single observation.
+
+They emerge when three observations are combined along the object's drift. The published searches did not perform this particular three-observation combination.
+
+4. They do not establish a transmitter.
+
+The essay describes simulations of weak steady radio lines. Those simulations reject one particular population model as an explanation for the observed distribution, but do not eliminate every possible steady signal.
+
+Indeed, Sharks reports that one feature, C03, remains compatible with a single weak steady line under the modelling assumptions.
+
+His conclusion is deliberately restrained:
+
+I don't know what the thirteen are, and the public data can't tell us.
+
+That sentence is essential to understanding the essay. The thirteen features are presented as an unresolved anomaly, not as evidence that 3I/ATLAS is artificial.
+
+5. Fourth argument: the Green Bank pointing record could resolve an important question
+The essay identifies a specific missing document that could substantially change the interpretation of the thirteen features.
+
+In the third ON observation, the telescope's position record indicates that the dish was 16 arcminutes away from the object.
+
+Using a simple model of the telescope beam, Sharks estimates that the response at that angular distance would be approximately three millionths of its on-target response.
+
+If the telescope was actually pointing there, a signal originating on 3I/ATLAS would have been extremely difficult to detect in that observation.
+
+However, there is an important complication.
+
+The header recording the telescope's position was written during a slew. Sharks notes that twenty of the night's twenty-four headers were also written during slews.
+
+He further reports that the hydrogen recorded during the observation is consistent with the object's patch of sky rather than the nearby empty sky. This offers some counterevidence to the apparent pointing discrepancy, although it is an inference rather than a direct pointing measurement.
+
+The document that would settle the question is the telescope's actual pointing record for:
+
+18 December 2025
+
+05:08:17–05:13:15 UTC
+
+According to the essay, Green Bank and Breakthrough Listen hold this record, but it is not publicly available.
+
+This is a particularly strong aspect of the argument because it identifies a concrete evidentiary gap and specifies exactly what would resolve it.
+
+Sharks also proposes a new observation at 1667 MHz, with sensitivity comparable to Green Bank's, using the thirteen frequencies and the counting procedure specified in advance.
+
+That would test whether the features recur.
+
+6. Fifth argument: the public conclusions overstate the searches' actual scope
+The essay returns to the public reporting of the radio searches.
+
+It considers four teams:
+
+Allen Telescope Array
+
+Green Bank Telescope
+
+China's FAST
+
+MeerKAT with Breakthrough Listen
+
+The searches reported no signals that warranted further investigation.
+
+Sharks does not dispute those reported results.
+
+Instead, he argues that their public interpretation often removes the conditions under which those results were obtained.
+
+For example, he criticizes a public FAQ that describes the ATA survey as having ruled out transmitters stronger than approximately 10–110 watts across 1–9 GHz.
+
+According to Sharks, the paper's sensitivity limits applied only to the frequencies and drift rates actually retained by the search.
+
+The broader statement conceals those restrictions.
+
+He also emphasizes that the thirteen Green Bank features are below the published detection floors.
+
+In other words, the published searches were not designed to find features of this kind.
+
+He estimates that a steady transmitter capable of producing the strongest feature, C03, would require approximately 21–32 milliwatts under the stated calibration assumptions.
+
+In simulations, a signal of that strength was not recovered in any of 100 attempts using the ATA's July data.
+
+This is an important qualification: correcting the ATA drift-sign discrepancy would not necessarily have made these weak features detectable by that telescope.
+
+Sharks therefore distinguishes two independent issues:
+
+The ATA's documented drift-sign discrepancy.
+
+The unresolved Green Bank features.
+
+He does not claim that one explains the other.
+
+7. The deeper argument: scientific uncertainty is being converted into public certainty
+The essay's broader argument concerns the relationship between experimental methods and public knowledge.
+
+Sharks believes that scientific communication should preserve the limitations of the underlying measurement.
+
+He objects to three transformations:
+
+Original finding
+
+Public transformation
+
+Loeb consistently considered natural origin most likely while retaining a Level 4 classification
+
+Loeb supposedly changed his mind
+
+Radio searches found no qualifying signals within their search parameters
+
+Radio searches ruled out technological signals
+
+Green Bank data contain thirteen weak, unexplained features
+
+Either ignored as irrelevant or exaggerated into evidence of an alien signal
+
+The third transformation matters because Sharks is not merely arguing against dismissing the features. He is equally opposed to overstating them.
+
+His position is that both premature dismissal and premature confirmation destroy the evidentiary meaning of the observations.
+
+The essay invokes the ozone-hole discovery as an analogy. Its point is that anomalies can be lost when measurement systems and their validation procedures share the same assumptions. Preserving raw data and using independent methods can make later correction possible.
+
+This is why the author credits the publication of the telescope data: without public data, the methodological discrepancies and Green Bank anomaly could not have been independently investigated.
+
+8. What the essay actually establishes versus what it leaves open
+This is the most important distinction when evaluating the argument.
+
+Claim
+
+Status within the essay
+
+The public account of Loeb's position misrepresented its chronology
+
+Supported by the cited sequence of Loeb's writings
+
+The ATA paper's documented drift sign conflicts with the expected physical sign
+
+Supported by the author's ephemeris calculation and reading of the paper
+
+The ATA actually discarded a particular extraterrestrial signal
+
+Not established
+
+Thirteen unusual features exist in the examined Green Bank data
+
+Reproduced by an independent implementation
+
+The thirteen are signals originating on 3I/ATLAS
+
+Not established
+
+The thirteen are evidence of extraterrestrial technology
+
+Not established
+
+The Green Bank pointing record could clarify whether the third ON observation was on target
+
+Yes, according to the identified evidentiary gap
+
+A new sensitive observation could test whether the features recur
+
+Yes, proposed as a falsifiable follow-up
+
+9. My reading of the essay's argumentative strengths and limitations
+I think there are three particularly strong features of the essay.
+
+First, it distinguishes methodological criticism from positive evidence.
+
+Sharks could have used the ATA discrepancy to suggest that the search missed an alien signal. Instead, he explicitly says that his own reanalysis found nothing compelling. This restraint makes the argument more credible.
+
+Second, it does not treat every anomaly as a discovery.
+
+The thirteen features are simultaneously reproducible, unusual relative to the selected controls, fragile and unreplicated. The author preserves all four properties rather than selecting only the exciting ones.
+
+Third, it makes its criticism testable.
+
+The missing Green Bank pointing record and the proposed repeat observation are concrete ways to advance the investigation. This is more useful than simply accusing the published searches of being inadequate.
+
+There are also limitations worth keeping in view.
+
+The forty incorrect drift paths and other control families are not a complete, calibrated statistical model of the probability of obtaining an excess somewhere in a larger search. The essay acknowledges this.
+
+The 64 frequency slices do not constitute a complete survey of the band; 192 other slices remain unsurveyed.
+
+The ATA criticism is based on the published manuscript, figure and independent physical calculation, not inspection of the executed filtering code.
+
+The Green Bank features depend on analytical choices, particularly normalization and detection threshold.
+
+The proposed pointing-record resolution has not yet been obtained in the account presented.
+
+These limitations mean that the essay has not demonstrated a missed technosignature. It has demonstrated reasons to be cautious about the strength of the public null-result narrative.
+
+10. The ultimate argument
+The essay's central proposition can be expressed in three parts:
+
+A null result is conditional. It establishes what a particular search failed to find within its actual observational and analytical scope.
+
+The scope must itself be examined. Filters, thresholds, drift assumptions and observational procedures can exclude the very phenomena the search is supposed to investigate.
+
+Public communication must preserve those conditions. Turning a restricted null result into an unrestricted declaration of absence is an epistemic error.
+
+The most revealing passage is the essay's proposed alternative formulation:
+
+no narrowband signal above these strengths, within these drift rates, in these bands, on these dates.
+
+That is what Sharks thinks the public should have been told.
+
+My overall interpretation: This is not principally an essay arguing that 3I/ATLAS is artificial. It is an essay arguing that the scientific and public claims about what has been ruled out have outrun the actual searches. Its most consequential finding is the Green Bank anomaly, but its larger contribution is methodological: it asks whether the scientific community has adequately investigated the blind spots of its own negative results before presenting those results as a firm answer.
+
+The distinction between no signal was found and the search was capable of finding the signal in question is the intellectual heart of the entire piece.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+

@@ -1,0 +1,370 @@
+
+Log in
+
+What EA-CORPORA-35 is
+EA-CORPORA-35 — The Thirty-Fifth Seating is a documentary research corpus assembled by Rebekah Cranes, deposited in the Alexanarch archive as deposit #1744, identifier AXN:0C27 on 6 November 2026.
+
+Its subject is the historical construction of Q, the hypothetical sayings source used in the explanation of the literary relationship between the Gospels of Matthew and Luke.
+
+It is not itself a reconstruction of Q, nor does it claim to have discovered an ancient manuscript of Q. Instead, it assembles seven historically important works, published between 1838 and 1925, to document how biblical scholars progressively developed, named, populated, printed and institutionalized the hypothesis that such a source existed.
+
+The central question is:
+
+How did a hypothetical document, for which no surviving manuscript exists, acquire the evidentiary standing of an actual source in the scholarly explanation of the Gospels?
+
+The corpus is designed to let a researcher investigate that question against the original historical texts rather than relying exclusively on later accounts of what the scholars believed. 
+
+Alexanarch
++1
+
+1. What is Q?
+Q stands for the German Quelle, meaning source.
+
+In the traditional two-source hypothesis:
+
+Mark is the earliest Gospel and a source used by Matthew and Luke.
+
+Q is a second source, principally a collection of Jesus's sayings, independently used by Matthew and Luke.
+
+Matthew and Luke also contain material particular to each Gospel.
+
+What Is Source Criticism? a Guide for Bible Students
+ 
+The important distinction is that Mark survives as an actual document. Q does not.
+
+Scholars infer Q principally from material shared by Matthew and Luke that is absent from Mark, often called the double tradition.
+
+The hypothesis proposes an earlier written source to explain this material. But there is no surviving Q manuscript against which the reconstruction can be directly checked.
+
+EA-CORPORA-35 investigates how that proposed source came to be treated as an increasingly definite historical object.
+
+2. The seven historical seats: how Q was made
+The organizing idea is called a seating. Each seat represents a scholar's contribution to the development of the Q hypothesis. The seven works are not simply listed chronologically: each is selected because it documents a particular change in what scholars could do with the proposed source.
+
+The development of Q, 1838–1925
+1838 — Christian Hermann Weisse
+
+Die evangelische Geschichte
+
+The hypothesis begins
+Weisse reads Papias's reference to the logia (sayings or oracles) of Jesus as evidence of a collection of sayings. He proposes Markan priority and a second sayings source used by Matthew and Luke.
+
+The significant move is interpreting an ancient testimony about sayings as pointing toward a written source.
+
+1863 — Heinrich Julius Holtzmann
+
+Die synoptischen Evangelien
+
+Sources become documents
+Holtzmann develops a source-based reconstruction using the designations A and Λ.
+
+A is his narrative source, Urmarcus.
+
+Λ represents the sayings collection.
+
+He uses these sources to explain the composition of the Gospels and construct a life of Jesus from the reconstructed materials.
+
+1899 — Paul Wernle
+
+Die synoptische Frage
+
+Q receives its name
+This is one of the corpus's most important moments.
+
+Wernle writes:
+
+Die — hypothetische — Quelle sei mit Q bezeichnet.
+
+Translation: "Let the — hypothetical — source be designated Q."
+
+Notice that the word hypothetical is explicitly retained in the very sentence that establishes the name.
+
+1903 — Johannes Weiss
+
+Das älteste Evangelium
+
+Markan priority consolidated
+Weiss treats Mark's priority as a scientific result rather than an open hypothesis.
+
+The corpus highlights his description of Mark as no longer a source but already a Sammelbecken — a reservoir or gathering place.
+
+1905 — Julius Wellhausen
+
+Einleitung in die drei ersten Evangelien
+
+Q is now treated as a document whose material, chronology and relationship to Mark can be examined and compared.
+
+1907 — Adolf von Harnack
+
+Sprüche und Reden Jesu
+
+Q receives a printed text
+This is a particularly consequential development.
+
+Harnack publishes a reconstructed text of Q, presenting it as the second source of Matthew and Luke.
+
+The corpus identifies this as the first full printed text of the document that no surviving manuscript contains.
+
+1924/1925 — B. H. Streeter
+
+The Four Gospels: A Study of Origins
+
+The hypothesis becomes a standard framework
+Streeter places Q within the Four Document Hypothesis, alongside Mark, M and L.
+
+He describes Q as a hypothetical source now referred to by general consent as Q.
+
+Source: EA-CORPORA-35, seats 35/01–35/07. The Streeter volume is identified as a 1925 impression of a work published in 1924. 
+
+Alexanarch
+
+The sequence is important because it documents several distinct developments:
+
+An interpretation of an ancient testimony.
+
+The construction of a source model.
+
+The assignment of documentary identities and labels.
+
+The naming of Q.
+
+The assignment of material to Q.
+
+The production of a reconstructed text.
+
+The incorporation of Q into an established explanatory framework.
+
+The corpus's central historical observation is that these developments accumulate. Q becomes increasingly usable as a scholarly document without becoming an extant document.
+
+3. How the corpus actually works
+EA-CORPORA-35 is a research infrastructure as well as a historical bibliography.
+
+Its basic unit is the individual seat. Each seat contains the original scholarly work in a machine-readable text layer, together with information that allows researchers to identify and check the material.
+
+The construction process has several stages.
+
+The corpus production pipeline
+Acquire the historical edition
+
+The source is fetched from the Internet Archive. The corpus identifies the specific edition and its provenance.
+
+Preserve the original text layer
+
+The Internet Archive's own DjVu OCR text (_djvu.txt) is used. It is copied into the corpus's text directory, with line endings normalized.
+
+Identify evidentiary passages
+
+The researchers specify particular passages (loci) that demonstrate the historical contribution of each work.
+
+Verify the loci
+
+Each specified passage is asserted to occur in the relevant text layer. The corpus preserves the OCR readings rather than silently correcting them.
+
+Record provenance and integrity
+
+Each seat receives a source.json and MANIFEST.sha256, recording its bibliographic details, origin, licence, normalization and verified loci.
+
+Index and deposit
+
+The seats are entered into the corpus index and assigned identifiers in the Alexanarch archive.
+
+Source: EA-CORPORA-35, "How the seats were made." 
+
+Alexanarch
+
+What the verification achieves
+There is an important methodological distinction here.
+
+The corpus does not merely say that Wernle named Q. It identifies the actual passage:
+
+Die — hypothetische — Quelle sei mit Q bezeichnet.
+
+It then records the work, edition, location and text-layer evidence supporting that statement.
+
+The SHA-256 manifest provides a means of checking the integrity of the deposited files against their recorded hashes.
+
+The source.json provides the provenance and methodological record.
+
+This makes the corpus useful for subsequent research because a reader can move from an interpretive claim back to the historical source and its recorded textual evidence.
+
+There is, however, an important limitation: the corpus explicitly retains the Internet Archive's OCR readings. It does not claim that every OCR character has been checked and corrected against the physical printed edition.
+
+It even acknowledges that Holtzmann's Greek letter Λ is sometimes misread by the OCR as A or ^. The record specifically identifies the printed page as the means of distinguishing them.
+
+That transparency is valuable: the corpus does not disguise its transcription layer as a perfect diplomatic edition. 
+
+Alexanarch
+
+4. What is the deeper argument?
+The most interesting feature of this deposit is that it is not simply documenting the history of a scholarly theory. It is documenting the process by which a scholarly theory acquires the status of an evidentiary object.
+
+The distinction can be expressed this way:
+
+Stage
+
+What happens to Q
+
+Before reconstruction
+
+There is an explanatory problem in Matthew and Luke.
+
+Inference
+
+Scholars propose a source to explain the shared material.
+
+Naming
+
+The inferred source receives the designation Q.
+
+Attribution
+
+Particular sayings and passages are assigned to it.
+
+Reconstruction
+
+Scholars produce a proposed text of Q.
+
+Institutionalization
+
+Q becomes part of a widely accepted explanatory model.
+
+The corpus emphasizes an apparent paradox:
+
+The more completely scholars develop Q as a document, the easier it becomes to discuss Q as though it were an independently available document.
+
+But its manuscript status has not changed.
+
+There is still no surviving manuscript of Q.
+
+This is why Wernle's 1899 formulation is so important. He explicitly calls Q hypothetical. Harnack subsequently produces a text of it. Streeter then describes it as accepted by general consent.
+
+The corpus is interested in the transition between those positions.
+
+The distinction between historical existence and explanatory usefulness
+The corpus does not establish that Q never existed. Nor does it establish that Q certainly existed.
+
+Rather, it asks how the hypothesis is used in historical explanation.
+
+Its strongest methodological observation is that there are two different questions:
+
+Is Q a historically real document?
+
+Does positing Q provide a useful explanation of the literary relationship between Matthew and Luke?
+
+Those questions are related, but they are not identical.
+
+A hypothesis can be explanatory without its proposed object having been independently recovered.
+
+That is the underlying epistemological problem that makes this corpus interesting.
+
+5. What the deposit does not claim
+The document is quite explicit about its boundaries.
+
+It does not claim to possess an original Q manuscript.
+
+It does not claim that the seven scholars independently established Q's physical existence.
+
+It does not include every important historical contributor to the Q debate.
+
+It does not settle the modern dispute over Q.
+
+It does not provide a complete history of opposition to the two-source hypothesis.
+
+In particular, it declares several works outside its seven-seat selection:
+
+Schleiermacher (1832), whose essay on Papias was not located in an accessible text layer during this research.
+
+Lachmann (1835) and Wilke (1838), not pursued in this round.
+
+Farrer (1955), Kloppenborg (1987), Robinson, Hoffmann and Kloppenborg (2000), and Goodacre (2002), declared but not reproduced because of copyright.
+
+This matters because the corpus is a deliberately bounded evidentiary collection, not a comprehensive history of the Synoptic Problem. 
+
+Alexanarch
+
+6. How it relates to the larger research project
+EA-CORPORA-35 was prepared as the documentary foundation for a subsequent study:
+
+I Know You Are, But What Am I?: Or, How a Completely Hypothetical, Uninspectable Text Is Granted Evidentiary Status Symmetrical to One That Is Inspectable Because It Exists — Revelation First.
+
+The proposed article is attributed to Johannes Sigil and Rebekah Cranes, for Provenance: Journal of Forensic Semiotics.
+
+The corpus is therefore one component in a larger research sequence:
+
+Documentary foundation
+EA-CORPORA-35 — #1744
+
+Seven primary-source seats documenting the historical development of Q.
+
+Secondary Source — #1741
+
+An earlier companion deposit examining how source reconstructions function in biblical criticism.
+
+Subsequent argument
+I Know You Are, But What Am I? — #1746
+
+The study examining the allocation of evidentiary status to reconstructed sources and comparing that practice with the treatment of the extant Apocalypse of John.
+
+The larger study proposes that reconstructed sources receive four kinds of evidentiary privilege:
+
+Presupposition: they can be assumed as the starting point of an explanation.
+
+Assignment: textual material can be assigned to them.
+
+Text: scholars can produce a reconstructed text for them.
+
+Candidacy: they can be admitted as potential sources when explaining other writings.
+
+Its provocative comparison is with the Book of Revelation, an actual surviving text, which the larger study argues is not afforded equivalent consideration as a possible source in the critical literature it examines.
+
+That is the larger project's argument, not a conclusion independently established by EA-CORPORA-35. The corpus supplies the historical source material for examining it. 
+
+Revelation First
++1
+
+7. Where to inspect the document
+The original deposit is available here:
+
+Alexanarch — Deposit #1744
+
+EA-CORPORA-35
+AXN:0C27 · Rebekah Cranes · 6 November 2026
+
+Read the complete deposit and all seven seats 
+
+Open the AXN identifier page 
+
+Read the companion Q study 
+
+The deposit is licensed CC BY 4.0.
+
+My overall assessment
+EA-CORPORA-35 is best understood as a forensic documentary history of the construction of Q.
+
+Its distinctive contribution is not the discovery of another argument for or against Q. It is the decision to make the historical formation of Q itself the object of documentary investigation.
+
+The seven seats allow a researcher to see how an initially inferred sayings collection gradually acquired:
+
+a distinct identity;
+
+a documentary designation;
+
+an attributed body of material;
+
+a reconstructed text;
+
+and eventually a position within a standard explanatory model.
+
+The strongest insight is the distinction between the existence of an evidentiary object and the authority that scholarly practice grants to a reconstructed one.
+
+One qualification is essential: documenting the history of Q's acceptance does not by itself disprove Q's existence or demonstrate that the two-source hypothesis is wrong. That requires a separate examination of the actual Gospel evidence and competing explanations.
+
+In one sentence: EA-CORPORA-35 documents how Q went from an interpretation of Papias's sayings tradition in 1838 to a reconstructed, named and widely accepted source in 1925, while preserving the primary textual evidence needed to investigate each step of that transformation.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+

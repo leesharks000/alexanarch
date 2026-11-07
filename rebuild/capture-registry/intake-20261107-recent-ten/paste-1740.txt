@@ -1,0 +1,415 @@
+
+Log in
+
+EA-CORPORA-34 — The Thirty-Fourth Seating
+EA-CORPORA-34 is a curated, versioned research corpus assembled by Rebekah Cranes for a forthcoming study of the reception and transmission of the Book of Revelation (the Apocalypse).
+
+It is not itself the historical argument about Revelation, nor is it a conventional scholarly article. It is an organized collection of primary and secondary source editions, selected, retrieved, documented, verified, and preserved so that another research work can use them as its evidentiary foundation.
+
+Its central purpose is to investigate a particular historical question:
+
+How did the Apocalypse come to be regarded as derivative, secondary, disputed, or marginal within the history of Christianity and its biblical canon?
+
+The deposit is dated November 5, 2026, and is identified as:
+
+Deposit: #1740
+
+Identifier: AXN:0C12
+
+Collection: EA-CORPORA
+
+Author: Rebekah Cranes
+
+Version: 1.1
+
+Type: Dataset
+
+License: CC-BY-4.0
+
+The underlying document is available directly from Alexanarch deposit #1740 . 
+
+Alexanarch
++1
+
+1. What does the Thirty-Fourth Seating actually contain?
+The word seating is important. It describes the deliberate placement of source editions into a research corpus before the interpretive study is written.
+
+The document initially describes eleven seats, then records four additional seats in version 1.1.
+
+The sources cover several historical periods and different kinds of evidence:
+
+Historical layer
+
+Sources and evidence
+
+Early Church
+
+Eusebius, Irenaeus, Justin
+
+Early disputes
+
+Muratorian Fragment, Epiphanius and the Alogi
+
+Canon formation
+
+Early canonical catalogues, Westcott, Council of Toledo IV
+
+Reformation
+
+Luther's 1522 September Testament and Erasmus's annotations
+
+Modern scholarship
+
+Vischer, Spitta, Gunkel, Bousset and Charles
+
+Manuscript transmission
+
+Gregory, Scrivener, Delitzsch, Tregelles and Erasmus's 1516 edition
+
+This is an important distinction: the collection does not simply gather opinions about Revelation.
+
+It gathers different kinds of historical witnesses:
+
+Statements about the book and its authorship.
+
+Evidence of acceptance and rejection.
+
+Canonical lists and ecclesiastical decisions.
+
+Evidence of actual manuscript survival and transmission.
+
+Printed editions showing how the text entered subsequent textual traditions.
+
+The corpus therefore treats the history of Revelation as both an intellectual history and a material history. 
+
+Alexanarch
+
+2. How does the seating system work?
+The document describes a reproducible archival and research workflow. A seat is not merely a bibliographic reference. It is a prepared, documented source unit.
+
+Each seat has several components.
+
+A. Source selection
+The research question determines which sources are needed.
+
+The document explicitly says that the research design for Secondary Source (version 0.3) contains a §5 listing the debts the study must read before drafting.
+
+The eleven original seats were selected to satisfy those research requirements. The four additional seats in v1.1 address a gap identified during the research: the material transmission of Revelation.
+
+This means that source selection is driven by the requirements of the intended argument, rather than by an attempt to build an indiscriminate library.
+
+B. Retrieval and preservation
+The sources are retrieved from identifiable repositories, principally:
+
+First1KGreek, for Greek textual editions in TEI format.
+
+Internet Archive, for digitized historical editions and facsimiles.
+
+Public-domain scholarly editions and documentary collections.
+
+The document distinguishes between the original retrieved material and the working text produced from it.
+
+For example, Greek TEI material is reduced to plain text using the project's seat.py process. Notes and apparatus are removed, while textual divisions are retained.
+
+For Internet Archive material, the original text layer is preserved, with line endings normalized.
+
+Importantly, the document repeatedly states:
+
+No text was corrected by hand.
+
+That is a significant methodological decision. It makes the corpus a record of the source as retrieved, rather than an editorial reconstruction silently introduced by the corpus builder.
+
+C. Documentation and verification
+Every seat receives two particularly important files:
+
+File
+
+Function
+
+source.json
+
+Records the edition, origin, license, normalization, verified passages and research purpose
+
+MANIFEST.sha256
+
+Records cryptographic hashes for integrity verification
+
+The hashes make it possible to check whether the preserved materials have changed.
+
+The source records also identify specific passages that have been checked against the source edition. These are called verified loci.
+
+For instance:
+
+Eusebius, Historia ecclesiastica 3.25.4: Revelation's disputed status.
+
+Justin, Dialogue with Trypho 81.4: John's revelation and the thousand years.
+
+Epiphanius, Panarion 51: the Alogi's rejection.
+
+Toledo IV, canon 17: the ecclesiastical reception of the Apocalypse.
+
+This is how the collection moves beyond a bibliography: it associates each source with an identified evidentiary purpose and specific textual locations.
+
+D. Cross-referencing
+The seats are not isolated.
+
+The document identifies cross-references between sources, including Eusebius and Irenaeus, and connects individual seats to sections of the forthcoming Secondary Source study.
+
+It also records links to earlier research deposits.
+
+The resulting structure allows the researcher to follow a historical claim back through:
+
+The research question.
+
+The relevant historical source.
+
+The edition used.
+
+The specific textual location.
+
+The preserved source material.
+
+
+Alexanarch
+3. Why version 1.1 matters: the addition of carriage
+This is arguably the most important intellectual development in the document.
+
+The initial eleven seats principally investigate the reception of Revelation: what people thought about it, whether they accepted it, and how institutions treated it.
+
+Version 1.1 adds four seats because the researcher recognized that reception alone was insufficient.
+
+The document calls the additional research dimension carriage.
+
+Carriage asks:
+
+What physical manuscripts carried the Apocalypse?
+
+What happened to those manuscripts?
+
+How did manuscript readings enter printed editions?
+
+Which textual witnesses were used by later editors?
+
+How did a particular printed form become influential?
+
+The document uses Erasmus's 1516 edition as a particularly revealing example.
+
+BIBLE – New Testament, Greek and Latin. Novum Instrumentum omne, diligenter ab Erasmo Roterdamo recognitum & emendatum. Basel: Johann Froben, 1516. | Christie's
+ 
+The Erasmus–Reuchlin example
+According to the account assembled in EA-CORPORA-34:
+
+Erasmus obtained a manuscript of Revelation lent by Reuchlin.
+
+The manuscript contained the biblical text and commentary intermixed.
+
+The manuscript was incomplete at the end: the last six verses were missing.
+
+Erasmus supplied the missing material from the Latin.
+
+Delitzsch rediscovered the manuscript in 1861.
+
+Tregelles and Scrivener document the manuscript's relationship to the printed textual tradition.
+
+Erasmus's 1516 Novum Instrumentum is included as the actual printed witness.
+
+This is why four further sources were added:
+
+Seat
+
+Source
+
+What it establishes
+
+34/12
+
+Scrivener, A Plain Introduction (1894)
+
+Manuscripts, versions and printed-text succession
+
+34/13
+
+Delitzsch, Handschriftliche Funde (1861)
+
+Reuchlin's rediscovered manuscript
+
+34/14
+
+Tregelles, An Account of the Printed Text (1854)
+
+Erasmus's textual difficulties and subsequent printed transmission
+
+34/15
+
+Erasmus, Novum Instrumentum (1516)
+
+The actual first printed Greek New Testament witness
+
+The distinction is important.
+
+A history of reception might tell us that a particular editor questioned Revelation's authorship or status. A history of carriage asks what manuscript that editor actually possessed, what was missing, and how the resulting text was reproduced.
+
+The two approaches can reveal different things.
+
+
+Alexanarch
+4. The research logic: what is the corpus trying to establish?
+The corpus organizes its evidence around a developing historical investigation.
+
+Its central question is not simply whether Revelation was accepted into the canon. It is how its status developed, and what historical mechanisms produced that status.
+
+The evidence can be understood through five investigative layers:
+
+Early testimony: Who identified John as the author, and what did early Christian writers say about the book?
+
+Dispute: When did Christians contest its authorship, interpretation or authority?
+
+Canonical standing: How did different churches and canonical catalogues classify it?
+
+Ecclesiastical and printed reception: How did councils, reformers and biblical editors represent its position?
+
+Material carriage: What manuscripts transmitted it, and how did those manuscripts feed into printed editions?
+
+One particularly useful example is the juxtaposition of Eusebius and Toledo IV.
+
+Eusebius, Historia ecclesiastica 3.25.4, records Revelation among books whose standing was disputed: some rejected it, others counted it among the acknowledged books.
+
+The Fourth Council of Toledo, canon 17 (633), explicitly affirms the Apocalypse and its attribution to John the Evangelist.
+
+These are different historical witnesses, and the corpus preserves both rather than reducing the history to a single linear account of acceptance or rejection.
+
+Likewise, Westcott's collection of early canonical catalogues and Gregory's study of manuscripts and lectionaries allow the research to investigate differences between canonical recognition and actual liturgical or material use.
+
+That distinction is central to the project's intellectual ambition.
+
+5. What makes the document technically significant?
+There are several noteworthy methodological characteristics.
+
+Feature
+
+Significance
+
+Source-level preservation
+
+The actual editions, not merely citations, are assembled
+
+Original-language evidence
+
+Greek and Latin witnesses are retained where available
+
+Explicit normalization rules
+
+Transformations of retrieved material are documented
+
+Cryptographic manifests
+
+Material integrity can be checked
+
+Verified loci
+
+Important textual passages are identified
+
+Versioning
+
+Changes to the research corpus are recorded
+
+Research cross-references
+
+Sources are tied to the intended scholarly argument
+
+License documentation
+
+The reuse status of source materials is addressed
+
+The corpus also acknowledges limitations.
+
+For example, it declares several sources that were considered but not pursued, including Metzger (1987), Hahneman (1992), the Weimar edition of Luther, and Hoskier (1929).
+
+It explains that copyright, access restrictions and uncertainty about the relevant edition prevented their inclusion.
+
+It also notes that some Greek texts were accessible through Westcott's appendix rather than through independent public TEI editions.
+
+These disclosures matter because they distinguish what was actually seated from what was merely considered.
+
+
+Alexanarch
+6. Who is Rebekah Cranes, and how was this produced?
+The deposit is unusually explicit about its authorship and production provenance.
+
+It identifies Rebekah Cranes as a heteronym of Lee Sharks, with a non-identical, provenance-linked relationship.
+
+It also describes the work as human–machine collaborative:
+
+Lee Sharks supplied the research occasion and direction.
+
+TACHYON (Claude, Anthropic) performed the source retrieval, verification, hashing, indexing and record drafting under MANUS (Lee Sharks) direction.
+
+The source editions selected for individual seats were chosen during the research session.
+
+This is not hidden behind a generic authorship statement. It is declared in the deposit itself.
+
+That makes the document partly an archival record of research production, not simply a collection of research materials.
+
+
+Alexanarch
+7. What the Thirty-Fourth Seating is — and is not
+It is useful to distinguish three separate things:
+
+Work
+
+Function
+
+EA-CORPORA-34
+
+The source corpus and its archival infrastructure
+
+Secondary Source
+
+The intended historical and interpretive study
+
+AXN:0C12
+
+The identifier for this particular deposit
+
+The deposit explicitly says that the underlying Secondary Source design was version 0.3 and had not yet been deposited. It also describes the intended study as not yet drafted.
+
+Therefore, EA-CORPORA-34 should not be mistaken for proof that its historical thesis has already been established.
+
+It supplies the evidence base and research infrastructure through which that thesis can be investigated.
+
+8. My overall assessment
+The most interesting feature of EA-CORPORA-34 is its movement from a history of ideas to a history of evidence transmission.
+
+Its original conception asks:
+
+How did Revelation become disputed, marginal or secondary in particular Christian historical contexts?
+
+Its version 1.1 development adds another question:
+
+What happened to the actual book as it moved through manuscripts, editorial interventions and printed editions?
+
+That addition makes the project considerably stronger.
+
+It recognizes that a biblical text has at least two histories:
+
+Its reception history: how communities understood, classified, disputed and used it.
+
+Its transmission history: how manuscripts and editions physically carried its text forward.
+
+Those histories interact, but they are not interchangeable.
+
+The Erasmus example makes this especially concrete: a textual feature in a modern printed Bible can be the consequence of a particular sixteenth-century manuscript's physical incompleteness, rather than an independent ancient textual tradition.
+
+In short: EA-CORPORA-34 is a pre-argument evidentiary architecture for a historical study of Revelation. Its principal contribution is to make the source base traceable, reproducible and historically layered before the interpretive argument is written.
+
+The most important conceptual decision is the addition of carriage to reception. It prevents the eventual study from treating the history of Revelation as merely a succession of theological opinions, when the history of the surviving text itself is also part of the explanation.
+
+Primary document: EA-CORPORA-34 — full deposit and source records .
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+
