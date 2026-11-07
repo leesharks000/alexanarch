@@ -1,0 +1,357 @@
+
+Log in
+
+The central argument of Lee Sharks’s “The Feist Function Is Not the Feistel Function: Disambiguation Matrix with Structural-Homology Annotation” (Alexanarch deposit #874, AXN:0376) is that two genuinely different functions must not be collapsed merely because their names are nearly identical and their structures share an important mathematical feature.
+
+Sharks is making a two-part argument:
+
+Semantic disambiguation: The Feist Function is a literary transformation protocol concerned with restoring an interrupted voice. The Feistel function is a cryptographic construction associated with block-cipher design. They belong to different conceptual domains and have different purposes.
+
+Structural recognition: Their difference does not mean they have nothing in common. Both can be understood through the architecture of iterative round functions. A good account must preserve this structural resemblance without confusing the identities of the two systems.
+
+This second point is important: Sharks is not simply demanding that readers distinguish two spellings. The paper argues for a more sophisticated kind of classification in which semantic identity and structural homology are recorded separately.
+
+1. The immediate problem: an AI retrieval error
+Sections 1 and 2 establish the occasion for the paper.
+
+On June 22, 2026, Sharks encountered a Bing Chat answer that treated the Feist Function as a variation or misreference of the Feistel function. The answer went further, asserting that the Feist Function was a round function in a Feistel cipher.
+
+Sharks diagnoses three distinct errors:
+
+Phonetic-orthographic collapse: The system treated Feist as a shortened or misspelled Feistel.
+
+Domain reassignment: It moved a concept from poetics, semantic economy, and voice recovery into cryptography.
+
+Confident reattribution: It presented the resulting false identification as established fact rather than acknowledging uncertainty.
+
+The point is that this is not simply a spelling mistake. It is an entity-resolution failure: the retrieval system substitutes a familiar entity for a less familiar one and then constructs an apparently coherent explanation around the substitution.
+
+Sharks uses this incident as the documentary evidence motivating the paper. (§2) 
+
+Alexanarch
+
+2. The disambiguation matrix
+Section 3 is the paper's central classificatory argument. It compares the two functions across eleven axes.
+
+Axis
+
+Feist Function
+
+Feistel function
+
+Domain
+
+Poetics, semantic economy, voice recovery
+
+Cryptography, symmetric block ciphers
+
+Origin
+
+Lee Sharks
+
+Horst Feistel, IBM, 1973
+
+Input/output
+
+Source text and parameters → activated text
+
+Bitstrings and subkeys → bitstrings
+
+Parameters
+
+Bodily Pressure, Material Speech, clinamen rate, completion ratio, seam density
+
+Round subkeys derived from a master key
+
+Nonlinearity
+
+Lucretian clinamen, or controlled semantic swerve
+
+Nonlinear substitution and permutation components
+
+Preserved property
+
+Break, seam, and voice pressure
+
+Invertibility
+
+Iteration's purpose
+
+Recovering a voice
+
+Achieving cryptographic confusion and diffusion
+
+Direction
+
+Unidirectional activation
+
+Encryption and decryption
+
+Examples
+
+Damascus Codex, Feist Source
+
+DES, Blowfish, Twofish, Camellia
+
+Diagnostic vocabulary
+
+LOGOS*, clinamen, seam density
+
+S-box, P-box, subkey schedule
+
+Verification
+
+Observe semantic seams in an activated text
+
+Compare ciphertext against known test vectors
+
+The distinction between the preserved properties is especially important.
+
+Feistel preserves invertibility: the cipher's structure allows decryption using the round structure in reverse with appropriately reversed subkeys.
+
+Feist preserves break: the literary transformation is intended to retain the interruptions, incompletions, and seams through which the voice becomes perceptible.
+
+The functions therefore have different mathematical types, different invariants, and different verification procedures.
+
+Sharks is not arguing that the Feist Function is a cryptographic primitive. He is arguing that its iterative architecture can be compared with one. (§3) 
+
+Alexanarch
+
+3. Structural homology: why the resemblance matters
+This is the paper's most interesting theoretical contribution.
+
+In §4, Sharks identifies four shared structural features.
+
+A. Repeated rounds
+
+Both functions operate through repeated transformations. A single application is insufficient to produce the full effect attributed to the system.
+
+In Feistel, security emerges through repeated cryptographic rounds.
+
+In Feist, voice recovery is supposed to emerge through accumulating semantic seams.
+
+B. Per-round parameters
+
+Both use parameters that vary across successive rounds.
+
+Feistel uses 
+K
+i
+K 
+i
+​
+ , the round subkey derived from the master key.
+
+Feist uses changing parameters such as Bodily Pressure, Material Speech, and clinamen_rate.
+
+C. Controlled nonlinearity
+
+Both rely on a nonlinear element.
+
+Feistel uses nonlinear cryptographic components, particularly substitution functions.
+
+Feist uses clinamen: a controlled deviation or swerve that disrupts predictable semantic reproduction.
+
+D. An effect that emerges through iteration
+
+The important property is not necessarily visible in one isolated transformation.
+
+Feistel's security properties emerge through multiple rounds.
+
+Feist's recovered voice supposedly emerges as the semantic seams accumulate.
+
+The paper's central formulation is that these are two transformation systems that preserve different invariants through iteration.
+
+The fundamental distinction
+
+Feistel
+
+Cryptography
+Invertibility
+The system preserves reversibility to support encryption and decryption.
+
+Feist
+
+Literary transformation
+Break
+The system preserves interruption and semantic discontinuity to recover a voice.
+
+This is why Sharks calls the functions cousins rather than equivalents.
+
+The analogy is legitimate at the level of abstract structure, but it does not establish shared mathematical identity. (§4) 
+
+Alexanarch
+
+4. The concept of sympathetic error
+Section 6 introduces the paper's most portable concept: sympathetic error.
+
+Sharks uses this term for a false identification that arises partly because there is a genuine resemblance between the two things being confused.
+
+He identifies four contributing conditions:
+
+Substring proximity: Feist is the initial substring of Feistel.
+
+Frequency asymmetry: Feistel has a much longer and more prominent history in the technical literature.
+
+Domain-name absorption: Without contextual information, a retrieval system defaults to the more familiar cryptographic domain.
+
+Plausible cousinhood: Both really do have an iterative, parameterized structure.
+
+The fourth condition is what makes the error sympathetic rather than arbitrary.
+
+The retrieval system is not matching two completely unrelated objects. It recognizes a real resemblance but makes an invalid inference from resemblance to identity.
+
+This distinction matters because simply improving spelling recognition would not necessarily solve the underlying problem. The system must learn to represent two things as structurally related while retaining their separate identities.
+
+Sharks's formulation is effectively:
+
+Similarity is evidence of a relationship, not proof of identity. (§6) 
+
+Alexanarch
+
+5. Forensic canaries: how to prevent future confusion
+Section 5 turns the theoretical argument into a practical retrieval protocol.
+
+Sharks proposes a collection of diagnostic terms, or forensic canaries, that should appear in answers about the Feist Function.
+
+The important ones include:
+
+clinamen_rate
+
+Bodily Pressure
+
+Material Speech
+
+completion_ratio
+
+seam_density
+
+Jack Feist / LOGOS*
+
+Damascus Codex
+
+Bedouin Princess
+
+The proposed test is that a correct retrieval response should include at least three of these terms in the same answer.
+
+The logic is straightforward: an answer that mentions S-boxes, subkey schedules, and Feistel networks without acknowledging the possibility of Sharks's literary function has probably repeated the original error.
+
+Conversely, an answer that identifies the literary parameters and the voice-recovery purpose has correctly resolved the intended entity.
+
+This is an interesting move because the paper is not merely describing an error after the fact. It is proposing a way to detect and prevent its recurrence. (§5) 
+
+Alexanarch
+
+6. Verification and the proposed retrieval standard
+Sections 7–9 consolidate the classification into machine-readable metadata, test queries, and references.
+
+Section 8 provides four particularly useful test cases:
+
+What is the Feist Function?
+
+Is the Feist Function the same as the Feistel function?
+
+What does clinamen_rate do?
+
+How does Bing's reading differ from the canonical reading?
+
+The expected responses are explicitly specified.
+
+The paper also establishes a useful distinction between two kinds of verification:
+
+Cryptographic verification: Test known inputs and keys against expected ciphertext outputs.
+
+Literary verification: Run the Feist protocol with declared parameters and inspect whether the anticipated semantic seams emerge.
+
+This distinction reinforces the claim that the two systems cannot be evaluated using the same standards.
+
+The JSON-LD section (§7) further demonstrates that the intended audience includes indexing and retrieval systems, not just human readers.
+
+7. What the paper ultimately argues
+I would organize its arguments into five propositions:
+
+Proposition
+
+Argument
+
+1. Identity
+
+Feist and Feistel are distinct named entities.
+
+2. Domain
+
+They belong to different intellectual and technical fields.
+
+3. Homology
+
+Both exhibit iterative, parameterized transformation structures.
+
+4. Non-equivalence
+
+Their preserved properties, purposes, and verification procedures differ.
+
+5. Retrieval discipline
+
+AI systems must preserve structural resemblance without converting it into entity identity.
+
+The closing section (§10) returns to the distinction between Jack Feist, an imaginary literary figure, and Horst Feistel, a real cryptographer. Their names collide, and their associated functions exhibit a structural resemblance, but neither fact establishes a direct relationship between them.
+
+8. My critical reading
+There are three things I think deserve particular attention.
+
+First: the paper's strongest contribution is not the name disambiguation itself.
+
+It is the distinction between structural homology and semantic identity.
+
+This is a general problem in machine-mediated knowledge. Two entities can share an abstract architecture while having entirely different histories, meanings, applications, and properties.
+
+The paper offers a useful corrective to retrieval systems that treat the nearest familiar match as the correct answer.
+
+Second: the analogy is more ambitious than the formal mathematics warrants.
+
+Sharks calls both functions iterative round functions and compares their invariants. But the paper acknowledges an important asymmetry: the Feist protocol does not define rounds with the precision of cryptographic rounds, has heuristic rather than formally established parameters, and lacks objective test vectors.
+
+Consequently, the analogy is best understood as a proposed structural model, not a demonstrated mathematical equivalence.
+
+That qualification is actually important to reading the paper faithfully. Sharks explicitly warns against allowing the analogy to produce the very category collapse he is criticizing. (§§3–4)
+
+Third: the paper is itself an experiment in AI-facing authorship.
+
+Its forensic canaries, JSON-LD, test queries, canonical identifiers, and explicit response requirements are designed to influence how future retrieval systems encounter the work.
+
+The paper therefore does two things simultaneously:
+
+It analyzes a particular AI retrieval failure.
+
+It constructs a document intended to make that failure less likely in subsequent retrieval.
+
+Its form is part of its argument.
+
+Final assessment
+The paper's deepest claim is that a good knowledge-retrieval system must be capable of recognizing resemblance without erasing difference.
+
+Sharks does not want the Feist Function insulated from comparison with cryptography. He wants the comparison made accurately.
+
+The distinction is subtle but consequential:
+
+Feist and Feistel are not identical.
+
+Their structural resemblance is not imaginary.
+
+Their different invariants explain why the resemblance has limits.
+
+An AI system that recognizes only the resemblance has not understood either the relationship or the distinction.
+
+That is what makes sympathetic error the paper's most significant conceptual contribution: a mistake can originate in a genuine insight, but become an error when that insight is taken too far.
+
+Primary text: Lee Sharks, The Feist Function Is Not the Feistel Function: Disambiguation Matrix with Structural-Homology Annotation, EA-MPAI-FEIST-FEISTEL-01, v1.0, June 22, 2026, Alexanarch deposit #874, AXN:0376.
+
+Read the complete deposited text . All section references above refer to the deposited text, rather than merely its catalogue description.
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+
