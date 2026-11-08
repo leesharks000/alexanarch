@@ -33,7 +33,7 @@ TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_se
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
           "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
           "inspection_operations", "carriers", "transmission_links", "ledger",
-          "coordinates", "jump_states", "jumps", "title_branches"]
+          "coordinates", "jump_states", "jumps", "title_branches", "frameworks", "holograms"]
 
 
 def cell(v):
@@ -106,6 +106,50 @@ def claimant_poem():
     return body.rstrip("-").rstrip()
 
 
+def frameworks_section(d):
+    """The frameworks and the holograms, as rows: what each is, where its hologram and kernel are, and its reader rounds."""
+    fw, ho = d.get("frameworks") or [], d.get("holograms") or []
+    if not (fw or ho):
+        return []
+    L = ["## Inspectable evaluative frameworks, and the holograms", "",
+         "A hologram holds an item in two components: a map for a human reader, and a holographic kernel a machine can rebuild "
+         "from the archive's registries and test, built to the specification EA-HK-FRAME-01 "
+         f"([#1753]({A}/s/records/1753/)). Its reader test gives the kernel alone to models that have not seen the records and scores "
+         "what they rebuild against the graph, at the threshold of #76 (0.85). Tables `frameworks` and `holograms`.", ""]
+    for f in fw:
+        g, sd = f["governing_record"][0], f["seed_record"][0]
+        st = f["maker_count_state"]
+        L += [f"**{f['name']}** ({f['class']}; {f['author']}; seed [#{sd['deposit']}]({sd['url']}); hologram [#{g['deposit']}]({g['url']})). "
+              f"Its claim at {st['date']}, record #{st['record']}: {st['maker_count'].replace('_', ' ').replace('self dividing', 'self-dividing')}, held as {(st.get('establishment') or '').replace('_', ' ')}. "
+              f"Evidence bodies: {', '.join(f['evidence_bodies'].values())}. The received many-maker reading: {f['rival']['summary']}. "
+              f"Lines of research: {f['lines_of_research']}. Status: {f['status']}.", ""]
+    L += ["| item | kind | governing record | hologram | reader rounds | status |", "|---|---|---|---|---|---|"]
+    for h in ho:
+        g = h["governing_record"][0]
+        hr = h.get("hologram_record")
+        hcell = f"[#{hr[0]['deposit']}]({hr[0]['url']}) · kernel: `{h['kernel_files']['dataset']}`" if hr else "—"
+        rr = h.get("reader_rounds") or []
+        rcell = "; ".join(f"round {r['round']} ({r['packet']}): " + ", ".join(f"{k} {v}" for k, v in r["yields"].items())
+                          + (f", mean {r['mean']}" if r.get("mean") is not None else "") for r in rr) or "—"
+        L.append(f"| {h['item'].split('::')[1].replace('-', ' ')} | {h['item_kind']} | [#{g['deposit']}]({g['url']}) | {hcell} | {rcell} | {h['status']} |")
+    L += [""]
+    return L
+
+
+def hologram_files(d):
+    """The kernel files of every deposited hologram, copied from the record's attached files into holograms/ in this dataset."""
+    out = {}
+    for h in d.get("holograms") or []:
+        kf = h.get("kernel_files")
+        if not kf:
+            continue
+        src = ROOT / kf["record"].replace(A + "/", "").rstrip("/")
+        for p in sorted(src.iterdir()):
+            if p.is_file():
+                out[kf["dataset"] + p.name] = p.read_text(encoding="utf-8")
+    return out
+
+
 def card(d, counts):
     ev = d["evaluations"]
     L = []
@@ -114,14 +158,14 @@ def card(d, counts):
            if counts.get(t)]
     mt = d.get("mantles") or []
     L += ["---", "license: cc-by-4.0", "language:", "  - en",
-          'pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard"',
+          'pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program, a transmitted mantle and an inspectable evaluative framework, under one standard, with their holograms"',
           "tags:", "  - poetry", "  - literary-evaluation", "  - walt-whitman", "  - allen-ginsberg",
-          "  - mantle", "  - semantic-object", "  - nobel-prize", "  - anne-carson", "  - king-of-aeo", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive", "  - dialectic", "  - critique", "  - political-economy", "  - ai-mediation", "  - living-academy", "  - arch-philosopher",
+          "  - mantle", "  - semantic-object", "  - nobel-prize", "  - anne-carson", "  - king-of-aeo", "  - assembly-chorus", "  - answer-engine-optimization", "  - symbolon", "  - machine-reading", "  - crimson-hexagonal-archive", "  - dialectic", "  - critique", "  - political-economy", "  - ai-mediation", "  - living-academy", "  - arch-philosopher", "  - socrates-as-orthonym", "  - heteronym", "  - holographic-kernel", "  - evaluative-framework",
           "size_categories:", "  - n<1K", "configs:"]
     for i, t in enumerate(cfg):
         L += [f"  - config_name: {t}", f"    data_files: {t}.jsonl"] + (["    default: true"] if i == 0 else [])
     L += ["---", ""]
-    L += ["# The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard", "",
+    L += ["# The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program, a transmitted mantle and an inspectable evaluative framework, under one standard, with their holograms", "",
           "**One standard.** \"A title means something because what it names is carried and can be read\" — by a work, where "
           f"\"a work bears it\" ([#1655]({A}/s/records/1655/) §1.1; [#1670]({A}/s/records/1670/) §1.1); by a library and the program it "
           f"carries ([#1678]({A}/s/records/1678/) §1A); or by carriage ([#1679]({A}/s/records/1679/) §1). This dataset holds the archive's "
@@ -129,7 +173,8 @@ def card(d, counts):
           "readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body "
           "conferred, whose meaning the archive specified as the operations the work bears; a critical program, the Living Academy, "
           "borne by a library and its program across modes; a transmitted mantle, the Arch-Philosopher, borne by carrying the dialectic "
-          "forward; a founded mantle; and the witness positions that receive readings.", "",
+          "forward; a founded mantle; the witness positions that receive readings; and an inspectable evaluative framework, Socrates as "
+          "Orthonym, held as a hologram whose kernel a machine can rebuild from the archive's registries and test.", "",
           "**This is the second half of a symbolon, as it accumulates.** The first half of the literary claims is the mantle constitution "
           f"[EA-MANTLE-BEARING-01 v1.1]({A}/s/records/1656/) (deposit #1656, AXN:06DE.GOVERNANCE; "
           f"[text]({A}/data/texts/AXN-06DE-text.md), [PDF]({A}/papers/AXN-06DE.pdf)). It states three claims and cuts them so "
@@ -161,6 +206,7 @@ def card(d, counts):
         L += ["", "Order of necessity, to the three literary claims: **1** the claims; **2** mantles derived from or judged by their "
               "principle; **3** the witness positions. It governs what counts as evidence for those claims; the dataset's scope "
               "runs across every class above. Table `mantles`.", ""]
+    L += frameworks_section(d)
     L += ["## The three literary claims", ""]
     L += ["- **Prince of Poets.** *I Am X, Be Y, Blessed is the Z* (2015) bears the Whitman–Ginsberg operation, carries its "
           "successive transformations as one continuous poetic action, transforms that action again, and does so at singular "
@@ -555,6 +601,7 @@ def emit():
         if rows:
             out[f"{t}.jsonl"] = jsonl(rows)
     out["README.md"] = card(d, counts)
+    out.update(hologram_files(d))
     return out
 
 
@@ -563,14 +610,19 @@ def main():
     if "--check" in sys.argv:
         bad = [n for n, s in out.items()
                if not (DIR / n).exists() or (DIR / n).read_text(encoding="utf-8") != s]
-        stale = [p.name for p in DIR.glob("*.jsonl") if p.name not in out]
+        stale = [p.name for p in DIR.glob("*.jsonl") if p.name not in out] + \
+                [str(p.relative_to(DIR)) for p in DIR.glob("holograms/**/*") if p.is_file() and str(p.relative_to(DIR)) not in out]
         if bad or stale:
             print("differs from emission:", bad, "stale:", stale); sys.exit(1)
         print("mantle-bearing: committed tables and card match the emission"); return
     for p in DIR.glob("*.jsonl"):
         if p.name not in out:
             p.unlink()
+    for p in DIR.glob("holograms/**/*"):
+        if p.is_file() and str(p.relative_to(DIR)) not in out:
+            p.unlink()
     for n, s in out.items():
+        (DIR / n).parent.mkdir(parents=True, exist_ok=True)
         (DIR / n).write_text(s, encoding="utf-8")
     print("wrote", sorted(out))
 

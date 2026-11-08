@@ -39,7 +39,11 @@ if not folder.is_dir(): sys.exit(f"not a directory: {folder}")
 api = HfApi(token=tok)
 api.create_repo(repo, repo_type='dataset', exist_ok=True)
 print(f"  {folder} -> {repo}")
-local = sorted(p for p in folder.iterdir() if p.is_file())
+# Subfolders (2026-11-08): a dataset that carries files in subfolders (mantle-bearing's holograms/) has them uploaded by
+# their path from the folder. Every other folder this script pushes is flat, so for them nothing changes. Hidden files and
+# folders are left out.
+local = sorted(p for p in folder.rglob('*') if p.is_file() and not any(x.startswith('.') for x in p.relative_to(folder).parts))
+rel = lambda p: p.relative_to(folder).as_posix()
 
 def sha256(path, buf=1 << 20):
     h = hashlib.sha256()
@@ -53,7 +57,7 @@ def sha256(path, buf=1 << 20):
 # (README.md and anything under the LFS threshold — small, and cheap to re-push).
 remote = {}
 try:
-    for info in api.get_paths_info(repo, [p.name for p in local], repo_type='dataset'):
+    for info in api.get_paths_info(repo, [rel(p) for p in local], repo_type='dataset'):
         lfs = getattr(info, 'lfs', None)
         if lfs is not None:
             remote[info.path] = getattr(lfs, 'sha256', None) or (lfs.get('sha256') if isinstance(lfs, dict) else None)
@@ -62,8 +66,8 @@ except Exception as e:
 
 changed, same = [], []
 for f in local:
-    r = remote.get(f.name)
-    (same if (r and r == sha256(f)) else changed).append(f.name)
+    r = remote.get(rel(f))
+    (same if (r and r == sha256(f)) else changed).append(rel(f))
 
 if not changed:
     print(f"nothing changed — {len(same)} files already current on the Hub; no commit, no index rebuild")

@@ -1,0 +1,62 @@
+id: EA-HK-ORTHONYM-01/traversal
+entry: 'Any record, claim, capture or position. A reader begins there and climbs: node → its claims → their relations → its body and stratum →
+  the kernel.'
+modes:
+  whole:
+    input: any canonical node
+    must_return:
+    - INV-1 to INV-7
+    - the current maker-count state with its record
+    - the four bodies with one failure each
+  local:
+    input: one record
+    must_return:
+    - its claims in its own words
+    - its body
+    - its stratum
+    - edges in and out with licensed dimensions
+    - its failures
+    - 'its path to #123'
+    must_not: attribute a later state to it
+  cluster:
+    input: functional or peripatetic
+    must_return:
+    - the cluster's records
+    - the six joins
+    - the whole it belongs to
+  historical:
+    input: a date
+    must_return:
+    - the maker-count state in force on that date
+    - only claims introduced on or before it
+    - claims present now whose introduction is unresolved, marked as such and never returned as present on that date
+  research:
+    input: a claim the reader cannot settle
+    must_return:
+    - the line of research that bears on it
+    - how to ask it
+    - what result would advance or retreat the framework
+  body:
+    input: I, S, M or R
+    must_return:
+    - the body's records and instruments
+    - its rule
+    - its failures
+  claim_history:
+    input: a claim
+    must_return:
+    - introduction
+    - every transition with its warrant
+    - withdrawal, if any, retained
+acceptance: 'Back-projection: from the mode''s output alone, can the framework''s architecture be rebuilt (forbidden operation, dependency chain,
+  topology)? Yield ≥ 0.85 (#76).'
+worked:
+  start: rec:1584
+  returns:
+  - the Platonic character (Republic I 337a), the Theophrastan registry (Char. 1), the Aristotelian category (EN IV 7)
+  - the two clusters it joins
+  - bodies I and S
+  - the two supports it withdrew and the two findings that withdrew them
+  - line of research Q3 (the seams)
+  - 'its place in #1658''s production model (Theophrastus the first draft of the Aristotle position)'
+  must_not: 'report that #1584 establishes one maker'

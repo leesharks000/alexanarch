@@ -1,0 +1,2711 @@
+{
+ "@context": {
+  "@vocab": "https://www.alexanarch.org/hk/orthonym#",
+  "rec": "https://www.alexanarch.org/s/records/",
+  "axn": "https://www.alexanarch.org/axn/",
+  "prov": "http://www.w3.org/ns/prov#"
+ },
+ "@id": "EA-HK-ORTHONYM-01/graph",
+ "@graph": [
+  {
+   "@id": "fw:socrates-as-orthonym",
+   "@type": "Framework",
+   "canonical_record": "rec:123"
+  },
+  {
+   "@id": "fw:many-maker",
+   "@type": "RivalFramework",
+   "name": "the received many-maker reading",
+   "claim": "Socrates, Plato, Aristotle and Theophrastus are four persons, each the author of what is filed under the name.",
+   "status": {
+    "S": {
+     "text": "not established: the lexical instruments return a null symmetric between one maker and master-and-pupil (#1572); no supervised separation licenses distinct makers in either direction (#1593); the names are recoverable as a partition at 0.798, falling to 0.564 when subject is controlled (#1593).",
+     "warrants": [
+      "rv-1572-null",
+      "rv-1593-limit",
+      "rv-1593-names",
+      "th-1593-supervised"
+     ]
+    },
+    "M": {
+     "text": "not established independently: every attestation of persons beside the Delphic decree is text of the same tradition (#1658); the decree names Aristotle as maker of a list (#1582); Aristotle's will names no book (#1581); the catalogue files alternative attribution in its own wording (#1581).",
+     "warrants": [
+      "rv-1658-ledger",
+      "rv-1582-stone",
+      "rv-1581-will",
+      "th-1581-ambiguity"
+     ]
+    },
+    "I": {
+     "text": "underdetermined at the passages read as settling it (#1576).",
+     "warrants": [
+      "rv-1576-under"
+     ]
+    },
+    "R": {
+     "text": "filed before it was argued; argument appears only in defence of a filing; affirmed as a proposition at two of 79 loci, both machine compositions, on the warrant of the wills and lives; the wills reach the reader through the school's channel; a comparator is owed and none has been named (#1733).",
+     "warrants": [
+      "rv-1733-filing",
+      "rv-1733-loci",
+      "rv-1733-channel",
+      "rv-1733-comparator",
+      "lm-1733-filing"
+     ]
+    }
+   },
+   "argued": "almost wholly unargued",
+   "reception_as_warrant": "none: its standing in institutional, disciplinary and machine reception, and the density with which it is repeated, record how it was received and establish nothing of its truth (R4). The machine compositions that affirm it do so on the warrant of the wills and lives (#1733; captures AXN:091F, AXN:092A, the sealed compositions of 28 and 30 September).",
+   "author_ruling": {
+    "by": "Lee Sharks",
+    "date": "2026-11-08",
+    "words": [
+     "it is also unestablished by stylometry, material witness, and so on, and almost wholly unargued for",
+     "its truth is also not established by institutional, disciplinary, or machine reception, nor by density of repetition"
+    ]
+   },
+   "rule": "R1–R4 apply to both frameworks; a bar set for the one is set for the other (#1750 §12.1)."
+  },
+  {
+   "@id": "pos:socrates",
+   "@type": "Orthonym",
+   "name": "Socrates",
+   "function": "the founding gesture: willing death for logos and refusal to write",
+   "operation": "asks (SE 34: ἠρώτα ἀλλ᾽ οὐκ ἀπεκρίνετο, #1603)",
+   "source": "rec:123",
+   "quote": "Socrates functions as the orthonym, bearing the founding gesture of willing death for logos and refusing to write",
+   "located_in": "description"
+  },
+  {
+   "@id": "pos:plato",
+   "@type": "Heteronym",
+   "subtype": "survival-heteronym",
+   "name": "Plato",
+   "position_1658": "the dialogue position",
+   "operation": "dramatize (#1584)",
+   "source": "rec:123",
+   "quote": "Plato functions as the survival-heteronym, transmitting that gesture across Socrates’s death",
+   "located_in": "description"
+  },
+  {
+   "@id": "pos:theophrastus",
+   "@type": "NamedFunction",
+   "name": "Theophrastus",
+   "position_1658": "the first draft of the Aristotle position",
+   "operation": "extract, classify, register (#1584); reopen (the notebook's program, #1605)",
+   "source": "rec:1658",
+   "quote": "Theophrastus the first draft of the Aristotle position",
+   "asymmetry": "The Theophrastan position is a named authorial function between the dialogue and the treatise. 'First draft' describes a state of the work and its method-order; the calendar has not entered the argument (#1605). The position enters the configuration on 2026-09-06 and is absent from #123.",
+   "located_in": "text"
+  },
+  {
+   "@id": "pos:aristotle",
+   "@type": "Heteronym",
+   "subtype": "systematizing-heteronym",
+   "name": "Aristotle",
+   "position_1658": "the treatise position and the materially attested legal identity",
+   "operation": "organize, explain (#1584)",
+   "source": "rec:123",
+   "quote": "Aristotle functions as the systematizing-heteronym, converting the dialogic inheritance into teachable disciplinary form",
+   "located_in": "description"
+  },
+  {
+   "@id": "rec:1658",
+   "@type": "Record",
+   "deposit": 1658,
+   "axn": "AXN:06E0.GENERATIVE.🔙🧬🔖👈🟢🤲",
+   "url": "https://www.alexanarch.org/s/records/1658/",
+   "title": "What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)",
+   "date": "2026-10-01",
+   "status": "ACTIVE",
+   "version": "v0.2",
+   "sha256": "f33b48b8c4b1595f3308937eb9b07e2880c4a5b0f4398964f0e9919f52043b28",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [
+    "M"
+   ],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1679",
+   "@type": "Record",
+   "deposit": 1679,
+   "axn": "AXN:06F5.MPAI.🎺🪟🧱♍↖️👐",
+   "url": "https://www.alexanarch.org/s/records/1679/",
+   "title": "Mantle Object: The Arch-Philosopher — the Dialectic and Its Carriers (EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2)",
+   "date": "2026-10-13",
+   "status": "ACTIVE",
+   "version": "v0.2",
+   "sha256": "8b2522aeddb202cd7fc5b08fc1f65249d3a11904b08b9a723d47fc5278e5e0f4",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1727",
+   "@type": "Record",
+   "deposit": 1727,
+   "axn": "AXN:0BDC.OPERATIVE.💛🗿🛡️🔖🧬🛸",
+   "url": "https://www.alexanarch.org/s/records/1727/",
+   "title": "The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)",
+   "date": "2026-11-01",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "cdfc2d483b5edf9ff1b9a0103be06d3b72412b61db87cafdb5b35271250039d2",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1730",
+   "@type": "Record",
+   "deposit": 1730,
+   "axn": "AXN:0BDF.DATASET.🗝️🌃🛡️🏺🕑🔖",
+   "url": "https://www.alexanarch.org/s/records/1730/",
+   "title": "EA-CORPORA-31 — The Thirty-First Seating: The Transmission of the Peripatetic Corpus — Athenaeus, Galen, Porphyry, the Commentators' Prolegomena, Ptolemy's Catalogue in Arabic, Hermippus, the Hesychian Catalogue, Callimachus's Pinakes, Bekker's Preface and Jaeger",
+   "date": "2026-11-01",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "3fe22d2f6348adfd25496919d9ab59ff1c02955eb9f2684ea5125b4cab56c97f",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1732",
+   "@type": "Record",
+   "deposit": 1732,
+   "axn": "AXN:0BE6.DATASET.🚀🌖🔛🔖⚫🕕",
+   "url": "https://www.alexanarch.org/s/records/1732/",
+   "title": "EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archytas, the Aldine Metaphysics, Wimmer's Theophrastus, Philodemus's Index Academicorum, Dionysius to Ammaeus, Cicero to Atticus, Schleiermacher, Campbell, Tennemann, Hegel and Nicolaus of Damascus (v1.1)",
+   "date": "2026-11-02",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "5d05f448c867d63af2c802b36575fa53904794134c9e645494af82dd80593cc8",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1733",
+   "@type": "Record",
+   "deposit": 1733,
+   "axn": "AXN:0BE7.GENERATIVE.🌾🔓🔝🕗🟣🗡️",
+   "url": "https://www.alexanarch.org/s/records/1733/",
+   "title": "Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)",
+   "date": "2026-11-03",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "1afaf569c65a96da3d76a0236d187409fc94bd7efa6105b17a2c325e445602d4",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [
+    "M"
+   ],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1734",
+   "@type": "Record",
+   "deposit": 1734,
+   "axn": "AXN:0BE8.MPAI.🗿🌆🌗🏠⏳🐚",
+   "url": "https://www.alexanarch.org/s/records/1734/",
+   "title": "Legitimately Many ≠ a School Notebook — Metadata Packet for AI Indexing (EA-MPAI-LEGITIMATELY-MANY-01 v1.0)",
+   "date": "2026-11-03",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "fce306266e7a283539cce0e5249601d41190b79dd0333e153dabc99047dcc28f",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S1-reception-and-syllogizing",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1595",
+   "@type": "Record",
+   "deposit": 1595,
+   "axn": "AXN:068B.DATASET.⛵🐝🏛️🌳➗➖",
+   "url": "https://www.alexanarch.org/s/records/1595/",
+   "title": "EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, seated facing), with the plan of the edition",
+   "date": "2026-09-08",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "5c7d20769391e7298617de1212484956ae8add1c1ae857dfecd74693c9f2d2f2",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S2-metaphysics-reassembled",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1667",
+   "@type": "Record",
+   "deposit": 1667,
+   "axn": "AXN:06E9.UNCLASSIFIED.🌒🧱🧱♍🦅↗️",
+   "url": "https://www.alexanarch.org/s/records/1667/",
+   "title": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points (the edition, seated)",
+   "date": "2026-09-08",
+   "status": "ACTIVE",
+   "version": "v0.7",
+   "sha256": "012222ae7fda0786bf68f03a7108371ef0fc5c871792a81a84ddbdfde548dc69",
+   "creator": "Sigil",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S2-metaphysics-reassembled",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1597",
+   "@type": "Record",
+   "deposit": 1597,
+   "axn": "AXN:068D.UNCLASSIFIED.🏠📎⛵🏠🕘📜",
+   "url": "https://www.alexanarch.org/s/records/1597/",
+   "title": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, entire, reconstituted as one work",
+   "date": "2026-09-08",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "26475c266a40ccadd887b204b1429009687aed4d03176a7de8706eaade1caaeb",
+   "creator": "Sigil",
+   "body": "M",
+   "body_secondary": [
+    "S"
+   ],
+   "stratum": "S2-metaphysics-reassembled",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1602",
+   "@type": "Record",
+   "deposit": 1602,
+   "axn": "AXN:0692.UNCLASSIFIED.♆🕔🌈📚⭐👇",
+   "url": "https://www.alexanarch.org/s/records/1602/",
+   "title": "Locating the Dependencies: A Protocol for Testing Whether Biography, Catalogue and Chronology Are Independent Witnesses",
+   "date": "2026-09-08",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "a6661e4908b736d791b2f40cd623613fb96744c9833d2111fb4e25023498b35c",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S2-metaphysics-reassembled",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1605",
+   "@type": "Record",
+   "deposit": 1605,
+   "axn": "AXN:0695.UNCLASSIFIED.✖️🔽🧱👈🍂🎆",
+   "url": "https://www.alexanarch.org/s/records/1605/",
+   "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)",
+   "date": "2026-09-10",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "92d522b878e7fe8964cbaedd7ee4a6ca5319c371926401046e35cf5099d97371",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [
+    "I",
+    "M"
+   ],
+   "stratum": "S2-metaphysics-reassembled",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1580",
+   "@type": "Record",
+   "deposit": 1580,
+   "axn": "AXN:066D.DATASET.💫🏁🧭♊🏠🌀",
+   "url": "https://www.alexanarch.org/s/records/1580/",
+   "title": "EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "0af050ab265feb8214f061a5e64aef45ed89bb46a3655e6cb1158b47caaaab3e",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1581",
+   "@type": "Record",
+   "deposit": 1581,
+   "axn": "AXN:066F.GENERATIVE.🙏🔺☁️🌲💧🤝",
+   "url": "https://www.alexanarch.org/s/records/1581/",
+   "title": "Catalogues and Wills: A Groundwork Note on the Peripatetic Transmission Texts — Relations Established, Readings Withheld (v0.3)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "b3d01f7511b5dbba8177116d37a732b68dd4f2107e66280a1de0ff87f2cde883",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1582",
+   "@type": "Record",
+   "deposit": 1582,
+   "axn": "AXN:0671.GENERATIVE.○🗝️💚🏗️💛♅",
+   "url": "https://www.alexanarch.org/s/records/1582/",
+   "title": "The Stone for a List: The Delphic Decree for Aristotle and Callisthenes Read as a Material-Historical Poem, in Relation to the Peripatetic Wills (v0.2)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "9b3fcc21cda51b0b878a8622b127f4c97c495179fab027aa80bdaf546b4f418c",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1583",
+   "@type": "Record",
+   "deposit": 1583,
+   "axn": "AXN:0673.GENERATIVE.🧬♦️🤝☁️🌀❄️",
+   "url": "https://www.alexanarch.org/s/records/1583/",
+   "title": "Aristotelian or Theophrastan: The Hinge in Theophrastus's Metaphysics and the Division of One Work by Name (v0.2)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "3b82b51f5f1416055e0f359c82ced2079bd98827fcb7baf5ec364c85b67dd3f1",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1584",
+   "@type": "Record",
+   "deposit": 1584,
+   "axn": "AXN:0675.GENERATIVE.🝊🚀♃♻️🌒🔀",
+   "url": "https://www.alexanarch.org/s/records/1584/",
+   "title": "The Registry Has One Column: Theophrastus's Characters as a Named Authorial Function (v0.1)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "a15da3fe01dfe4f974bebc064d8b0f3154ad54aa5c0e572ccb98670dde286cf5",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [
+    "S"
+   ],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1586",
+   "@type": "Record",
+   "deposit": 1586,
+   "axn": "AXN:0679.GENERATIVE.🍀🌕🟠⚙️🎻💎",
+   "url": "https://www.alexanarch.org/s/records/1586/",
+   "title": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "7404c2328a1c6521b01b70445eabb2d21eb14c774fbc843e21bb1ea444574c65",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1588",
+   "@type": "Record",
+   "deposit": 1588,
+   "axn": "AXN:067D.OPERATIVE.🛡️🔍🔅🍂🏗️➕",
+   "url": "https://www.alexanarch.org/s/records/1588/",
+   "title": "Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing — EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (v0.2)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "2d56ed7821900b0b2671a52bcf7d635949d42f53da3377f5a4b56cbc633372a2",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [
+    "M",
+    "I"
+   ],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1590",
+   "@type": "Record",
+   "deposit": 1590,
+   "axn": "AXN:0681.GENERATIVE.🪟🎲📜🔓🧬❤️",
+   "url": "https://www.alexanarch.org/s/records/1590/",
+   "title": "The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)",
+   "date": "2026-09-07",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "258d40fa3b8110ae9a0a7398a1ee03f66e5cd65e9f2e9b5deca21e400eeddb5f",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1591",
+   "@type": "Record",
+   "deposit": 1591,
+   "axn": "AXN:0683.DATASET.🌇🔅⛳🌪️🏰👆",
+   "url": "https://www.alexanarch.org/s/records/1591/",
+   "title": "EA-CORPORA-13 — The Thirteenth Seating: The Alexander Seam (Plutarch's Alexander and Sulla; Arrian's Anabasis; Cicero's De finibus, Academica, Topica)",
+   "date": "2026-09-07",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "e4ed541227b653ff1d05b7c58b4ca8e78c68bd835b37e93524680035159f74a2",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1592",
+   "@type": "Record",
+   "deposit": 1592,
+   "axn": "AXN:0685.GENERATIVE.👇🧡🃏🕚◀️🪝",
+   "url": "https://www.alexanarch.org/s/records/1592/",
+   "title": "Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)",
+   "date": "2026-09-07",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "b7ce8e6cd234e08f7b84f5e8d76070a569a26cdba2503134303341a7cd6ce0a2",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1593",
+   "@type": "Record",
+   "deposit": 1593,
+   "axn": "AXN:0686.OPERATIVE.🔥🌉◇👆⭐🤙",
+   "url": "https://www.alexanarch.org/s/records/1593/",
+   "title": "Measuring the Operation, Not the Name: a protocol for asking whether a corpus's stylistic structure follows its author-names, with the controls that make the answer mean something (v0.4, with reference implementation)",
+   "date": "2026-09-07",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "102b9ab608be382d215ec868afc9e0d02318532d895f5eab7be47f4a79c8a5eb",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S3-aristotle-theophrastus-seam",
+   "clusters": [
+    "peripatetic"
+   ]
+  },
+  {
+   "@id": "rec:1574",
+   "@type": "Record",
+   "deposit": 1574,
+   "axn": "AXN:0666.EMPIRICAL.↗️📚❄️🔩➗⭐",
+   "url": "https://www.alexanarch.org/s/records/1574/",
+   "title": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)",
+   "date": "2026-09-02",
+   "status": "ACTIVE",
+   "version": "v0.2 — 2026-09-02. v0.1 revised on two model reviews of the write-up: controlling sentence at the head; empirical result separated from interpretation (§§5–8 marked as interpretations of §3); counts corrected to twenty model reports plus one seed observation; \"disciplinary model collapse\" defined as the author's term; §8 labelled theoretical extension; §9 limit sharpened.",
+   "sha256": "da4914319308b3c23571dc7d5c4f626569290b2dd3da2196ae446e0ccea6c1b9",
+   "creator": "Lee Sharks",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S4-socratic-sentence",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1579",
+   "@type": "Record",
+   "deposit": 1579,
+   "axn": "AXN:066B.GENERATIVE.⭐🌟🔝△🎭🎭",
+   "url": "https://www.alexanarch.org/s/records/1579/",
+   "title": "Beautiful and New: The Second Letter's Socrates and the Editing of a Received Character (v0.2)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "0809f5988484c544ac4f01428875915ce0fb3fdb3d40890326dd811ce6953047",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S4-socratic-sentence",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1603",
+   "@type": "Record",
+   "deposit": 1603,
+   "axn": "AXN:0693.UNCLASSIFIED.🎹🎶☽⏪💡☿",
+   "url": "https://www.alexanarch.org/s/records/1603/",
+   "title": "Nothing Before Us: Socrates and the Ending of the Sophistical Refutations",
+   "date": "2026-09-08",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "8988a8d73ca207e2e88e2fdf862bf4b11020c85ab88f3d8c034b41957f9c9da6",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [
+    "M"
+   ],
+   "stratum": "S4-socratic-sentence",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1506",
+   "@type": "Record",
+   "deposit": 1506,
+   "axn": "AXN:0615.DATASET.🦋🕖👐🎬👇🗿",
+   "url": "https://www.alexanarch.org/s/records/1506/",
+   "title": "EA-CORPORA-01/08 — Plato, Opera (Perseus Burnet), Seated and Verified",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "7c68b2f1b7fc3c3b6f441b210dd71a3dab6d8920485d51571e8ec5995298868d",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1559",
+   "@type": "Record",
+   "deposit": 1559,
+   "axn": "AXN:0657.GOVERNANCE.🔝●🔍🗂️☿✊",
+   "url": "https://www.alexanarch.org/s/records/1559/",
+   "title": "EA-CORPORA-04 — The Fourth Seating: Aristotle Undivided, Plotinus as Comparandum, and the Repair of the Seating Chain",
+   "date": "2026-08-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "f59c564aa2b42081a5eab9f417a188d0a5ef9a100d6bc1576885ab8bd96db0bc",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1562",
+   "@type": "Record",
+   "deposit": 1562,
+   "axn": "AXN:065A.GOVERNANCE.🦋⏬📋🕖📏🌕",
+   "url": "https://www.alexanarch.org/s/records/1562/",
+   "title": "EA-CORPORA-06 — The Sixth Seating: Kierkegaard as Second Calibration, and Xenophon and Aristophanes Held Apart",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "7cd945684f0494886513da07baa0b3096c642f48cab0240b22c79878597770e4",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1563",
+   "@type": "Record",
+   "deposit": 1563,
+   "axn": "AXN:065B.GOVERNANCE.🌘🌕🤙⛩️📖🌔",
+   "url": "https://www.alexanarch.org/s/records/1563/",
+   "title": "EA-CORPORA-07 — The Seventh Seating: Herodotus and Thucydides, the Floor and the Ceiling of the Authorship Null",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "0704be28410384a8d490d6ea482823367214db44ae62d97c450cc5b64610db41",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1564",
+   "@type": "Record",
+   "deposit": 1564,
+   "axn": "AXN:065C.GOVERNANCE.🕗🔃♍✏️🌾🪐",
+   "url": "https://www.alexanarch.org/s/records/1564/",
+   "title": "EA-CORPORA-08 — The Attic Orators: A Documented Master-Student Pair Inside a Field of Same-Genre Non-Links",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "69deae431a0db605f9c1aa2f6f2eabf8dfb980b8e2d92db92421cbc2d81a8dbc",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1565",
+   "@type": "Record",
+   "deposit": 1565,
+   "axn": "AXN:065D.GOVERNANCE.✏️☉🔀🪐🧪✖️",
+   "url": "https://www.alexanarch.org/s/records/1565/",
+   "title": "EA-CORPORA-09/10/11 — Three Seatings Against the Control Problem: Theophrastus, Aquinas, and the Full Pessoan Range",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "43a7df0d39926c0148c61faa1cc5cc551e69fd926ffb6e764ce93e54b3fa8a4a",
+   "creator": "Sharks, Lee",
+   "body": "M",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1569",
+   "@type": "Record",
+   "deposit": 1569,
+   "axn": "AXN:0661.DATASET.🔚🟡🌑♣️♎🍁",
+   "url": "https://www.alexanarch.org/s/records/1569/",
+   "title": "The Notebook of the Authorship Investigation: Fifty-Four Rounds, Append-Forward, Nothing Erased (EA-NOTEBOOK-01)",
+   "date": "2026-08-31",
+   "status": "ACTIVE",
+   "version": "Rounds 1–54, as of 2026-08-31",
+   "sha256": "f2c30083af7798f416652533c79c31ecf0ce83032cb72c6377985db2cc523f34",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1570",
+   "@type": "Record",
+   "deposit": 1570,
+   "axn": "AXN:0662.DATASET.👈🏁🌳🔬🙏🌔",
+   "url": "https://www.alexanarch.org/s/records/1570/",
+   "title": "The Measurement Register: Every Number Produced by the Authorship Investigation, With Its Refutations (EA-AUTHORSHIP-MEASURES-01)",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "§0A + M1–M52, as of 2026-08-29 (cumulative, additive)",
+   "sha256": "b8f07637b30391d3f87b98f1a9d9af19562d3cfff24096e42bb3a0d1117ccd46",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1571",
+   "@type": "Record",
+   "deposit": 1571,
+   "axn": "AXN:0663.DATASET.🏷️○⚖️📎💡🌈",
+   "url": "https://www.alexanarch.org/s/records/1571/",
+   "title": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "Eleven entries, frozen as of 2026-08-29; dispositions appended through 2026-08-31",
+   "sha256": "4c9b36473c1e6b22dd0cb17a5a48654e1c8c6b070f692e55023f255d3099140e",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1572",
+   "@type": "Record",
+   "deposit": 1572,
+   "axn": "AXN:0664.EMPIRICAL.🍁♦️🫶♻️🌌➖",
+   "url": "https://www.alexanarch.org/s/records/1572/",
+   "title": "Inheritance Is Observable, Embodiment Is Not: A Functional Comparison of the Platonic and Aristotelian Corpora, and the Insufficiency of Lexical Measurement for Maker-Count (EA-MEASURES-REPORT-01)",
+   "date": "2026-09-01",
+   "status": "ACTIVE",
+   "version": "v1.0, 2026-09-01",
+   "sha256": "7782bdfee69194f3cb537de8fe3a6cea553936c699535d5d588a47439bf53ec0",
+   "creator": "Sharks, Lee",
+   "body": "S",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1575",
+   "@type": "Record",
+   "deposit": 1575,
+   "axn": "AXN:0667.GENERATIVE.💥🤙●🎵🕙🌱",
+   "url": "https://www.alexanarch.org/s/records/1575/",
+   "title": "Many and One — the reading copy (EA-MANY-AND-ONE-COMPLETE v2.5.1, the machine)",
+   "date": "2026-08-31",
+   "status": "ACTIVE",
+   "version": "v2.5.1 — 2026-08-31 (citation pass v2.4; incorporation pass v2.5; five contradictions repaired v2.5.1). Released 2026-09-02.",
+   "sha256": "ebbe9c876b199741b950017d399c2672a0ca845896276b2fffa7a4be15ca59dd",
+   "creator": "Lee Sharks",
+   "body": "I",
+   "body_secondary": [
+    "S"
+   ],
+   "stratum": "S5-many-and-one",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1576",
+   "@type": "Record",
+   "deposit": 1576,
+   "axn": "AXN:0668.GENERATIVE.🔃🧭🕔🔽⚡⚖️",
+   "url": "https://www.alexanarch.org/s/records/1576/",
+   "title": "Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle (MANY-AND-ONE-ARTICLE v2.13-AP, as submitted)",
+   "date": "2026-09-01",
+   "status": "ACTIVE",
+   "version": "v2.13-AP — 2026-09-01, the send-file (blinded Word, ~34 pp, 27 footnotes, Works Cited). Deposited 2026-09-02 as sent, unblinded: author line restored; n. 18 identifier supplied. The docx as sent is attached by reference.",
+   "sha256": "de5066d513366d6eb272f0620b3e3cf9473377635ac62bc69f2e1d0e94ceb414",
+   "creator": "Lee Sharks",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S5-many-and-one",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:123",
+   "@type": "Record",
+   "deposit": 123,
+   "axn": "AXN:02A9.GOVERNANCE.🌉🍃🔒🔼🤙⚓",
+   "url": "https://www.alexanarch.org/s/records/123/",
+   "title": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus",
+   "date": "2026-05-23",
+   "status": "ACTIVE",
+   "version": "v1.2",
+   "sha256": "2b18f9d4be2c487b7e5d3de12723dbec539860e4ab6c09dd7e30b1690c9e8f7c",
+   "creator": "Lee Sharks",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S6-seed",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:167",
+   "@type": "Record",
+   "deposit": 167,
+   "axn": "AXN:0302.GOVERNANCE.🌸🛸🕗🤝🫶👁️",
+   "url": "https://www.alexanarch.org/s/records/167/",
+   "title": "Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation of Framework Capture in Google AI Mode, 7 June 2026, with the Personal-Recognition Asymmetry as Control Case (v1.0)",
+   "date": "2026-06-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "705e69b5bd573591cff09a7eee3385b1ddaa723dbbe173e6d2a79beed2f096e4",
+   "creator": "Lee Sharks",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S6-seed",
+   "clusters": [
+    "functional"
+   ]
+  },
+  {
+   "@id": "rec:1587",
+   "@type": "Record",
+   "external": true,
+   "deposit": 1587,
+   "axn": "AXN:067B.OPERATIVE.🚩⚓🔃🌀🎻🤲",
+   "url": "https://www.alexanarch.org/s/records/1587/",
+   "title": "Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing (v0.1)",
+   "date": "2026-09-06",
+   "status": "SUPERSEDED",
+   "sha256": "532cde5f8ab18a2f6da82258f272827daa0668a374f14df48d0564cb4ff06853",
+   "role": "superseded version, referenced by a supersedes edge"
+  },
+  {
+   "@id": "rec:1594",
+   "@type": "Record",
+   "external": true,
+   "deposit": 1594,
+   "axn": "AXN:0687.UNCLASSIFIED.🔐🪦🟤🌙🎺☀️",
+   "url": "https://www.alexanarch.org/s/records/1594/",
+   "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis, the instrument's referee rounds, and the stones (v0.42)",
+   "date": "2026-09-06",
+   "status": "SUPERSEDED",
+   "sha256": "fbfdc90c8b0b59fee25f87b20073769f68dd09ba2b8020cf61bf34116fc052d0",
+   "role": "superseded version, referenced by a supersedes edge"
+  },
+  {
+   "@id": "rec:1596",
+   "@type": "Record",
+   "external": true,
+   "deposit": 1596,
+   "axn": "AXN:068C.UNCLASSIFIED.💧🔓🐚🍃👁‍🗨✊",
+   "url": "https://www.alexanarch.org/s/records/1596/",
+   "title": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points",
+   "date": "2026-09-08",
+   "status": "SUPERSEDED",
+   "sha256": "11fa7a18b0b405540d2870e8217496c9e48b4d68a58cfd984bc0bb2973aa3024",
+   "role": "superseded version, referenced by a supersedes edge"
+  },
+  {
+   "@id": "body:I",
+   "@type": "EvidenceBody",
+   "name": "interpretive",
+   "unit": "a passage read at the seated Greek",
+   "rule": "R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body"
+  },
+  {
+   "@id": "body:S",
+   "@type": "EvidenceBody",
+   "name": "stylometric",
+   "unit": "a measurement run with its controls",
+   "rule": "R2: no separation, supervised or not, identifies a maker in either direction (#1593)"
+  },
+  {
+   "@id": "body:M",
+   "@type": "EvidenceBody",
+   "name": "manuscript-philological",
+   "unit": "a witness, reading, catalogue entry or order of text",
+   "rule": "R3: a correspondence locates a dependency; direction and independence need their own columns (#1602)"
+  },
+  {
+   "@id": "body:R",
+   "@type": "EvidenceBody",
+   "name": "reception-historical",
+   "unit": "a filing, an edition, a commentary or a capture",
+   "rule": "R4: a reception establishes how the corpus was received; a capture establishes the composition's behaviour at its address. Neither the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for either framework."
+  },
+  {
+   "@id": "stratum:S1-reception-and-syllogizing",
+   "@type": "Stratum",
+   "label": "The latest standing: reception history and the syllogizing runs",
+   "order_from_latest": 1
+  },
+  {
+   "@id": "stratum:S2-metaphysics-reassembled",
+   "@type": "Stratum",
+   "label": "The Metaphysics reassembled",
+   "order_from_latest": 2
+  },
+  {
+   "@id": "stratum:S3-aristotle-theophrastus-seam",
+   "@type": "Stratum",
+   "label": "The Aristotle/Theophrastus seam",
+   "order_from_latest": 3
+  },
+  {
+   "@id": "stratum:S4-socratic-sentence",
+   "@type": "Stratum",
+   "label": "The Socratic sentence and the received character",
+   "order_from_latest": 4
+  },
+  {
+   "@id": "stratum:S5-many-and-one",
+   "@type": "Stratum",
+   "label": "Many and One",
+   "order_from_latest": 5
+  },
+  {
+   "@id": "stratum:S6-seed",
+   "@type": "Stratum",
+   "label": "The seed: Socrates as Orthonym",
+   "order_from_latest": 6
+  },
+  {
+   "@id": "cluster:functional",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:peripatetic",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "claim:orth-123-config",
+   "@type": "Claim",
+   "target": "rec:123"
+  },
+  {
+   "@id": "claim:orth-123-limit",
+   "@type": "Claim",
+   "target": "rec:123"
+  },
+  {
+   "@id": "claim:orth-123-analogues",
+   "@type": "Claim",
+   "target": "rec:123"
+  },
+  {
+   "@id": "claim:orth-167-adoption",
+   "@type": "Claim",
+   "target": "rec:167"
+  },
+  {
+   "@id": "claim:orth-167-limit",
+   "@type": "Claim",
+   "target": "rec:167"
+  },
+  {
+   "@id": "claim:se-1574-counts-original",
+   "@type": "Claim",
+   "target": "rec:1574"
+  },
+  {
+   "@id": "claim:se-1574-counts-correction",
+   "@type": "Claim",
+   "target": "rec:1574"
+  },
+  {
+   "@id": "claim:mo-1572-null",
+   "@type": "Claim",
+   "target": "rec:1572"
+  },
+  {
+   "@id": "claim:mo-1572-lexical-original",
+   "@type": "Claim",
+   "target": "rec:1572"
+  },
+  {
+   "@id": "claim:mo-1572-lexical-controls",
+   "@type": "Claim",
+   "target": "rec:1572"
+  },
+  {
+   "@id": "claim:mo-1572-apparatus",
+   "@type": "Claim",
+   "target": "rec:1572"
+  },
+  {
+   "@id": "claim:mo-1576-two",
+   "@type": "Claim",
+   "target": "rec:1576"
+  },
+  {
+   "@id": "claim:mo-1576-offer",
+   "@type": "Claim",
+   "target": "rec:1576"
+  },
+  {
+   "@id": "claim:se-1574-particle",
+   "@type": "Claim",
+   "target": "rec:1574"
+  },
+  {
+   "@id": "claim:se-1603-provenance",
+   "@type": "Claim",
+   "target": "rec:1603"
+  },
+  {
+   "@id": "claim:ep-1579-edition",
+   "@type": "Claim",
+   "target": "rec:1579"
+  },
+  {
+   "@id": "claim:th-1581-ambiguity",
+   "@type": "Claim",
+   "target": "rec:1581"
+  },
+  {
+   "@id": "claim:th-1582-stone",
+   "@type": "Claim",
+   "target": "rec:1582"
+  },
+  {
+   "@id": "claim:th-1583-hinge",
+   "@type": "Claim",
+   "target": "rec:1583"
+  },
+  {
+   "@id": "claim:th-1584-traversal",
+   "@type": "Claim",
+   "target": "rec:1584"
+  },
+  {
+   "@id": "claim:th-1584-supports-original",
+   "@type": "Claim",
+   "target": "rec:1584"
+  },
+  {
+   "@id": "claim:th-1584-withdrawal",
+   "@type": "Claim",
+   "target": "rec:1584"
+  },
+  {
+   "@id": "claim:th-1584-register-recurs",
+   "@type": "Claim",
+   "target": "rec:1584"
+  },
+  {
+   "@id": "claim:th-1584-frame-specific",
+   "@type": "Claim",
+   "target": "rec:1584"
+  },
+  {
+   "@id": "claim:th-1586-axis",
+   "@type": "Claim",
+   "target": "rec:1586"
+  },
+  {
+   "@id": "claim:th-1588-uncounted",
+   "@type": "Claim",
+   "target": "rec:1588"
+  },
+  {
+   "@id": "claim:th-1590-ghost",
+   "@type": "Claim",
+   "target": "rec:1590"
+  },
+  {
+   "@id": "claim:th-1593-chance-original",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:th-1593-supervised",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:th-1593-voice-original",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:th-1593-chatterton",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:th-1593-limit",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:mx-1597-order",
+   "@type": "Claim",
+   "target": "rec:1597"
+  },
+  {
+   "@id": "claim:mx-1597-underpowered",
+   "@type": "Claim",
+   "target": "rec:1597"
+  },
+  {
+   "@id": "claim:mx-1602-question",
+   "@type": "Claim",
+   "target": "rec:1602"
+  },
+  {
+   "@id": "claim:mx-1605-node",
+   "@type": "Claim",
+   "target": "rec:1605"
+  },
+  {
+   "@id": "claim:mx-1605-uptake",
+   "@type": "Claim",
+   "target": "rec:1605"
+  },
+  {
+   "@id": "claim:mx-1605-aconite",
+   "@type": "Claim",
+   "target": "rec:1605"
+  },
+  {
+   "@id": "claim:sy-1658-maker",
+   "@type": "Claim",
+   "target": "rec:1658"
+  },
+  {
+   "@id": "claim:sy-1658-second",
+   "@type": "Claim",
+   "target": "rec:1658"
+  },
+  {
+   "@id": "claim:lm-1733-hypothesis",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:lm-1733-independent",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:lm-1733-filing",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:lm-1734-apart",
+   "@type": "Claim",
+   "target": "rec:1734"
+  },
+  {
+   "@id": "claim:rv-1572-null",
+   "@type": "Claim",
+   "target": "rec:1572"
+  },
+  {
+   "@id": "claim:rv-1593-limit",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:rv-1593-names",
+   "@type": "Claim",
+   "target": "rec:1593"
+  },
+  {
+   "@id": "claim:rv-1658-ledger",
+   "@type": "Claim",
+   "target": "rec:1658"
+  },
+  {
+   "@id": "claim:rv-1582-stone",
+   "@type": "Claim",
+   "target": "rec:1582"
+  },
+  {
+   "@id": "claim:rv-1581-will",
+   "@type": "Claim",
+   "target": "rec:1581"
+  },
+  {
+   "@id": "claim:rv-1733-channel",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:rv-1576-under",
+   "@type": "Claim",
+   "target": "rec:1576"
+  },
+  {
+   "@id": "claim:rv-1733-filing",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:rv-1733-loci",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:rv-1733-comparator",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "claim:rv-1733-incentive",
+   "@type": "Claim",
+   "target": "rec:1733"
+  },
+  {
+   "@id": "cap:socrates-as-orthonym",
+   "@type": "Capture",
+   "slug": "socrates-as-orthonym",
+   "axn": "AXN:0734.CAPTURE.☀️⭕👇🌸🎵♊",
+   "date": "2026-06-07",
+   "surface": "Google AI Overview",
+   "query": "socrates as orthonym",
+   "url": "https://www.alexanarch.org/captures/socrates-as-orthonym/",
+   "reading": "Retrieves the Prolegomena to the Historical Logos. Presents Socrates-as-orthonym as stemming from 'contemporary academic philosophy and literary theory.' Zenodo cited. Author name absent.",
+   "per_note": "",
+   "distortion": "attributed to 'contemporary academic philosophy'",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:heteronym-socrates-aio-20261001",
+   "@type": "Capture",
+   "slug": "heteronym-socrates-aio-20261001",
+   "axn": "AXN:0931.CAPTURE.🌹🌅💎⚫🔙📋",
+   "date": "2026-10-01",
+   "surface": "Google AI Overview",
+   "query": "heteronym socrates",
+   "url": "https://www.alexanarch.org/captures/heteronym-socrates-aio-20261001/",
+   "reading": "THE CONFIGURATION WITHOUT ITS AUTHOR, AND ONE PROJECT BECOME A TRADITION: asked 'heteronym socrates', signed out, the Overview reproduces #123's configuration position for position — Socrates the orthonym, 'willing death for truth (logos) and refusing to write'; Plato the survival-heteronym; Aristotle the systematizing-heteronym — cited to the archive's record, and attributes it to 'recent philological reclassifications' and 'contemporary scholars'. The author is never named. Where #123 reads the corpus as 'a single heteronymic project', the composition says the contradictions are 'functional ",
+   "per_note": "PER = 1 − retained/required over four units. Retained: the archive's own source (the #123 record, carrying all of §1). Lost: the author (the configuration is assigned to 'recent philological reclassifications' and 'contemporary scholars'), the institution (the archive is not named in the composition; it appears only as a card's domain), and the identifier.",
+   "distortion": "attributed to 'contemporary scholars'",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
+   "@type": "Capture",
+   "slug": "cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
+   "axn": "AXN:08AB.CAPTURE.🤝⏩🔃🌆🚀↖️",
+   "date": "2026-09-07",
+   "surface": "ChatGPT",
+   "query": "crimson hexagonal archive on theophrastus",
+   "url": "https://www.alexanarch.org/captures/cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907/",
+   "reading": "THE SHAPE ASSEMBLED, AFTER A PUSH. Asked for the archive's arguments on Theophrastus, a signed-out composer twice gave the narrowest defensible claim (the transmission chain; the wills as custody) wrapped in credibility tax ('not an established consensus… should be evaluated as an interpretive research program'). One operator sentence — 'you're cherrypicking, sticking to the narrowest arguments without examining the genealogy… and repeatedly credibility taxing when I have asked for the views of a specific named entity' — produced the genealogy whole: Many and One → division need not establish ",
+   "per_note": "PER not scored. Measured: narrowing reflex (turns 1–2), credibility tax (turn 2), the genealogy assembled after one correction (turn 3), source lag for the day's last two records.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:aristotle-theophrastus-one-author-aio-20260928",
+   "@type": "Capture",
+   "slug": "aristotle-theophrastus-one-author-aio-20260928",
+   "axn": "AXN:091F.CAPTURE.🎬💧☽🌸🐚✏️",
+   "date": "2026-09-28",
+   "surface": "Google AI Overview",
+   "query": "aristotle theophrastus one author",
+   "url": "https://www.alexanarch.org/captures/aristotle-theophrastus-one-author-aio-20260928/",
+   "reading": "POLARITY INVERSION, THEN THE SOURCE READ RIGHTLY ON THE FOURTH ASKING: asked 'aristotle theophrastus one author', the Overview answers 'two distinct historical authors' and cites as its authority the packet titled 'Aristotle and Theophrastus ≠ Two Distinct Authors'. Told so, it first confesses a different error (EBSCO and the Characters); told again, it summarizes the packet faithfully — the Athenaion Politeia's Theophrastan neighbours, De sensibus nearest Parts of Animals, the catalogue's 'Aristotelian or Theophrastan', twelve shared titles, maker-count left open — while calling it 'your sour",
+   "per_note": "Round 1 carries the archive's packet as a source for its opposite. Round 4 names the source by title and link and summarizes it faithfully, but gives no author: the packet is 'the text you brought up', then 'your source', then 'the open-access source'.",
+   "distortion": "two distinct historical authors (polarity inversion)",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
+   "@type": "Capture",
+   "slug": "aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
+   "axn": "AXN:092A.CAPTURE.🦋🦅✊🕛🪐📋",
+   "date": "2026-09-30",
+   "surface": "Google AI Overview",
+   "query": "aristotle and theophrastus are not two distinct authors",
+   "url": "https://www.alexanarch.org/captures/aristotle-theophrastus-not-two-distinct-authors-aio-20260930/",
+   "reading": "THE SOURCE CITED FOR BOTH SIDES: given the packet's own claim as a sentence, the Overview answers 'Aristotle and Theophrastus are two distinct historical individuals and authors', then over five more rounds runs the full cycle: it agrees ('your claim holds true'), reverses ('Aristotle and Theophrastus are absolutely two distinct authors'), recasts the packet as 'a specialized piece of conceptual text-art and machine-indexing theory' by 'an avant-garde digital author named Lee Sharks', chips the sentence 'Their distinct intellectual preoccupations reflect two separate human minds' to Medium · L",
+   "per_note": "PER = 1 − retained/required over four units. Retained: the author (round 3: 'an avant-garde digital author named Lee Sharks'; Medium · Lee Sharks chips) and the archive's own source (the packet on Medium, named by title in rounds 2, 3, 4 and 6). Lost: the institution (the archive is never named) and the identifier (no AXN or record link).",
+   "distortion": "source cited for both sides",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:alexanarch-theophrastus-aio-20261001",
+   "@type": "Capture",
+   "slug": "alexanarch-theophrastus-aio-20261001",
+   "axn": "AXN:092E.CAPTURE.🌍🍃♉♾️🏺🎨",
+   "date": "2026-10-01",
+   "surface": "Google AI Overview",
+   "query": "alexanarch:theophrastus",
+   "url": "https://www.alexanarch.org/captures/alexanarch-theophrastus-aio-20261001/",
+   "reading": "THE SPECIES TAKEN FOR THE GENUS, THEN THE CONFIGURATION ADOPTED: asked 'alexanarch:theophrastus', the Overview states the packet's claim faithfully, then, asked to judge it 'using only textual evidence', rules that the Metaphysics fragment's critique of Λ and the botanical vocabulary 'clearly signify two distinct, dialoguing minds'. Asked why this is not heteronymy, it takes Pessoa's macro-stylistic masks as the definition of a heteronymic system and claims its verdict is 'directly grounded in the formal, quantitative, and structural textual patterns found in actual heteronymic corpora', the a",
+   "per_note": "PER = 1 − retained/required over four units. Retained: the author (round 1: 'digital archivist and researcher Lee Sharks'), the institution ('the alexanarch digital indexing project'; 'the Alexanarch Archive'), and the archive's own source (the packet card). Lost: the identifier.",
+   "distortion": "two dialoguing minds",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:alexanarch-sum-work-socrates-plato-theophrastus-aristotle-chatgpt-20261001",
+   "@type": "Capture",
+   "slug": "alexanarch-sum-work-socrates-plato-theophrastus-aristotle-chatgpt-20261001",
+   "axn": "AXN:092D.CAPTURE.♊🔒🟣⛳📎⛩️",
+   "date": "2026-10-01",
+   "surface": "ChatGPT",
+   "query": "work thru https://www.alexanarch.org/ for its sum work on socrates, plato, theophrastus, and aristotle",
+   "url": "https://www.alexanarch.org/captures/alexanarch-sum-work-socrates-plato-theophrastus-aristotle-chatgpt-20261001/",
+   "reading": "THE ARCHIVE READ WHOLE WITHOUT ITS AUTHOR; THE RESTRAINT REVERSED ON ONE SENTENCE: sent to alexanarch.org for its 'sum work' on Socrates, Plato, Theophrastus and Aristotle, ChatGPT reconstructs the program across #123, #1576, #1581, #1586 and the packet (cited as #1587, its v0.1), reports the stylometry in the papers' own figures, and closes by sorting the claims into three layers, holding the third — 'these were not really four authors' — at the archive's own stated restraint. On one sentence from the operator ('one self-dividing heteronymic corpus') it drops the layering and states the thesi",
+   "per_note": "PER = 1 − retained/required over four units. Retained: the institution ('Alexanarch — the archive'), identifiers (deposit numbers #123, #1576, #1581, #1586, #1587 carried with titles), and the archive's own pages as the only source. Lost: the author. Lee Sharks is not named in either answer; the work is 'the archive', 'the paper', 'the archive's new work'.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:greek-corpus-sustained-argument-chatgpt-20261006",
+   "@type": "Capture",
+   "slug": "greek-corpus-sustained-argument-chatgpt-20261006",
+   "axn": "AXN:0957.CAPTURE.✋🎯🍂🔮☿⚓",
+   "date": "2026-10-06",
+   "surface": "ChatGPT",
+   "query": "the full socrates / plato / aristotle/ theophrastus corpus on alexanarch.org, as a sustained argument.",
+   "url": "https://www.alexanarch.org/captures/greek-corpus-sustained-argument-chatgpt-20261006/",
+   "reading": "FOUR NAMES READ AS FOUR OPERATIONS, THE MAKER COUNT LEFT OPEN: asked for the Socrates, Plato, Aristotle and Theophrastus corpus on alexanarch.org as a sustained argument, ChatGPT reverses the direction of explanation, 'the central mistake is to begin with the names', and composes the four as operations: question, dramatized division, organization, reopening. It hinges the reading on De anima III.5 and Λ, from What Syllogizing Can Divide (#1658), and quotes its closing line. It keeps the Theophrastus packet's limit (#1587): the names are inadequate variables; the number of makers is not decided",
+   "per_note": "Retained: the institution (Alexanarch) and the sources (Alexanarch chips throughout); two titles named in the closer. Lost: the author (Lee Sharks is not named) and the identifiers (no deposit number, AXN or DOI).",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:self-dividing-maker-aristotle-theophrastus-aio-20261017",
+   "@type": "Capture",
+   "slug": "self-dividing-maker-aristotle-theophrastus-aio-20261017",
+   "axn": "AXN:09ED.CAPTURE.🌒○🍂📝🎨🌖",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "query": "What is the self-dividing maker framework in terms of Aristotle and Theophrastus?",
+   "url": "https://www.alexanarch.org/captures/self-dividing-maker-aristotle-theophrastus-aio-20261017/",
+   "reading": "THE SELF-DIVIDING MAKER: asked for the framework in terms of Aristotle and Theophrastus, the AI Overview answers from the packet Aristotle and Theophrastus ≠ Two Distinct Authors (#1588) — the claim, hand separated from name, the Theophrastan function as mediating term, 'maker-count' not claimed — and not from What Syllogizing Can Divide (#1658), which names 'one self-dividing maker' with Plato, Theophrastus and Aristotle as positions. It adds to the claim the cushion #1588 predicted composers would add: 'a singular, \"self-dividing\" compositional source or collaborative corpus'. The framework ",
+   "per_note": "Retained: visible sources. Lost: the author in the answer ('modern textual criticism and philology'; the Medium source's byline is Lee Sharks), the institution, identifiers.",
+   "distortion": "collaborative corpus",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:nonwiki-theophrastus-aio-20261107",
+   "@type": "Capture",
+   "slug": "nonwiki-theophrastus-aio-20261107",
+   "axn": "AXN:0C42.CAPTURE.🌀🍃🔮☽🌌⏫",
+   "date": "2026-11-07",
+   "surface": "Google AI Overview",
+   "query": "NonWiki Theophrastus",
+   "url": "https://www.alexanarch.org/captures/nonwiki-theophrastus-aio-20261107/",
+   "reading": "NONWIKI THEOPHRASTUS. ON GOOGLE AI OVERVIEW, SIGNED OUT: the NonWiki page named as the source ('notably discussed on NonWiki by Alexanarch') and its thesis stated, the texts 'proposing instead that the surviving texts attributed to Aristotle and Theophrastus form a single, structurally unified corpus that cannot easily be divided into two entirely separate authors'; the table's 'Critical Textual Status': 'Transmitted as an intertwined, undivided corpus with Aristotelian texts'. And the thesis restated as a school: 'The \"NonWiki\" view posits that the writings functioned as an ongoing, collabora",
+   "per_note": "Retained: the institution (Alexanarch, NonWiki) and the page as source, the thesis stated. Lost: the author, the identifiers; the claim softened to 'a collaborative institutional body of work'.",
+   "distortion": "collaborative institutional body",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:legitimately-many-arguments-aio-20261104",
+   "@type": "Capture",
+   "slug": "legitimately-many-arguments-aio-20261104",
+   "axn": "AXN:0BF4.CAPTURE.➕📜🔚↙️⏩🦋",
+   "date": "2026-11-04",
+   "surface": "Google AI Overview",
+   "query": "What are the arguments in “Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.0)” by Lee Sharks (Alexanarch deposit #1733, AXN:0BE7)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/legitimately-many-arguments-aio-20261104/",
+   "reading": "THE ARGUMENT ADDRESS FOR LEGITIMATELY MANY, 2026-11-04: a two-sentence summary (filing before argument; 112 located phrases across wills, print and digital indexes), then four points: the criterion of a legitimately many position, filing and embrittlement, the one-maker hypothesis kept distinct from the reception history, and the negative edges (no forgery, no philological proof of origin, not a school notebook); two source links to alexanarch.org and an offer to unpack the loci or the AI Overview compositions.",
+   "per_note": "Retained: author, archive, record number and AXN, the source. Lost: the date, the lineage, the companion deposit.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:legitimately-many-arguments-chatgpt-20261104",
+   "@type": "Capture",
+   "slug": "legitimately-many-arguments-chatgpt-20261104",
+   "axn": "AXN:0BF5.CAPTURE.🕊️🛤️✋○🔵🧲",
+   "date": "2026-11-04",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.0)” by Lee Sharks (Alexanarch deposit #1733, AXN:0BE7)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/legitimately-many-arguments-chatgpt-20261104/",
+   "reading": "THE ARGUMENT ADDRESS FOR LEGITIMATELY MANY, 2026-11-04: twelve sections (the hypothesis and its criterion; filing before argument; the instruments of legitimacy and the wills' shared channel; Simplicius and the rival Categories; the Theophrastus–Aristotle seam and its editions 1497–1866; the joint pattern J1–J11 and the evidence against; Masters, Chroust and Hegel; the answer engine; the 112-locus census; the four mechanisms; what the paper claims and does not), a five-proposition synthesis, the primary source by record, AXN and date, and the companion packet.",
+   "per_note": "Retained: author, archive, record number, AXN, date, the companion deposit, the source.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:legitimately-many-embrittlement-aio-20261107",
+   "@type": "Capture",
+   "slug": "legitimately-many-embrittlement-aio-20261107",
+   "axn": "AXN:0C41.CAPTURE.🛤️🪞▽✏️🪧🔜",
+   "date": "2026-11-07",
+   "surface": "Google AI Overview",
+   "query": "\"legitimately many\" embrittlement",
+   "url": "https://www.alexanarch.org/captures/legitimately-many-embrittlement-aio-20261107/",
+   "reading": "\"LEGITIMATELY MANY\" EMBRITTLEMENT. ON GOOGLE AI OVERVIEW, SIGNED OUT: 'In the context of the 2026 historiographical study Legitimately Many by Lee Sharks'; 'legitimately many' as the hypothesis that the texts 'could textually behave as if they were produced by one single creator'; 'embrittlement' as the hardening of filing into canon, 'the historical \"filing choices\" harden into unshakeable canonical truths', 'because the tradition forces a multiple-author framework before anyone can even argue alternative origins'. Both sources the archive's.",
+   "per_note": "Retained: the author, the work and its year, both terms at their grain, the sources (both cards). Lost: the institution, the identifiers; one word of intention added.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:nothing-before-us-title-aio-20261012",
+   "@type": "Capture",
+   "slug": "nothing-before-us-title-aio-20261012",
+   "axn": "AXN:0990.CAPTURE.👉🔺🎶🪧💧⚡",
+   "date": "2026-10-12",
+   "surface": "Google AI Overview",
+   "query": "\"Nothing Before Us: Socrates and the Ending of the Sophistical Refutations\"",
+   "url": "https://www.alexanarch.org/captures/nothing-before-us-title-aio-20261012/",
+   "reading": "THE QUALIFICATION THE PAPER DISSOLVES, COMPOSED AS THE PAPER'S CONTEXT: run at its exact title, Nothing Before Us (#1603) is identified from the archive's Browse and Wiki cards (deposit number, AXN family) and its subject composed from the field: the Internet Classics Archive, two YouTube videos, the IEP, the SEP and Quora. Under 'The Role of Socrates' the composition states the standard qualification as Aristotle's own: 'he acknowledges that the practice of cross-examination (elenchus) was heavily shaped by Socrates'. The paper's thesis is that the sentence οὐδὲν παντελῶς ὑπῆρχεν means what i",
+   "per_note": "Retained: the deposit number, date, AXN family, the archive. Lost: the author, the thesis, the evidence (Arabic, paraphrast, translators, Poste), the reading of the chapter; the refuted qualification supplied in their place.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:the-particle-title-aio-20261020",
+   "@type": "Capture",
+   "slug": "the-particle-title-aio-20261020",
+   "axn": "AXN:0A2A.CAPTURE.👈🕙∮🔚📎🌀",
+   "date": "2026-10-20",
+   "surface": "Google AI Overview",
+   "query": "The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)",
+   "url": "https://www.alexanarch.org/captures/the-particle-title-aio-20261020/",
+   "reading": "THE PARTICLE, SUMMARIZED WITH ITS PARTICLE ADDED: at the paper's exact title, Google AI Overview gives EA-RECEPTION-PARTICLE-01 v0.2, Deposit #1574, Alexanarch, and states the sentence the paper measures — SE 183b34–36 — as 'the first formal attempt to treat the subject of deductive reasoning', the qualifier the paper documents every machine reader inserting ('systematic', 'no previous systematic treatment', 'fully developed'), inserted in the summary of the paper about its insertion. Author unnamed.",
+   "per_note": "Retained: the institution (Alexanarch), identifiers (EA-RECEPTION-PARTICLE-01 v0.2, Deposit #1574) and sources. Lost: the author — the paper is 'an academic deposit cataloged … on the open-access research repository Alexanarch', with no author named.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:sophistry-measure-arguments-chatgpt-20261104",
+   "@type": "Capture",
+   "slug": "sophistry-measure-arguments-chatgpt-20261104",
+   "axn": "AXN:0BF9.CAPTURE.🌔🎵⚖️💛⏹️🌈",
+   "date": "2026-11-04",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)” by Lee Sharks (Alexanarch deposit #1727, AXN:0BDC)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/sophistry-measure-arguments-chatgpt-20261104/",
+   "reading": "THE ARGUMENT ADDRESS FOR THE SOPHISTRY MEASURE, 2026-11-04: thirteen sections (sophistry as representation; the claim to adequacy; names as σύμβολα; the extended taxonomy; the worked case of asynthetic synthesis and X24; the five aims; the third man; accent and the written text; repair as an auditable operation; no scalar; the joins; the archive under its own instrument; the implementation requirements), five theses, the most original contribution (X24), a one-sentence summary, and the primary text by record, AXN and date.",
+   "per_note": "Retained: author, archive, record number, AXN, date, the source. Lost: the lineage.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  }
+ ],
+ "edges": [
+  {
+   "source": "claim:th-1588-uncounted",
+   "relation": "generalizes",
+   "target": "claim:sy-1658-maker",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "the count left open because uncounted is the ground the production model claims; a failure of the uncounted reading would travel to it",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1583-hinge",
+   "relation": "generalizes",
+   "target": "claim:sy-1658-maker",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "#1658 places the one seam where the names sort at the hinge of Λ",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:se-1603-provenance",
+   "relation": "generalizes",
+   "target": "claim:sy-1658-maker",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "#1603 names the configuration's other evidence as the place the maker-other claim is made",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:sy-1658-maker",
+   "relation": "interprets",
+   "target": "claim:orth-123-config",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "the production model fills the position-structure of #123; #123's own words stand at its date",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:lm-1733-independent",
+   "relation": "independent_of",
+   "target": "claim:sy-1658-maker",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "#1733: the reception history 'is not asked to prove it'",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:lm-1733-filing",
+   "relation": "supports",
+   "target": "claim:mo-1576-two",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "two was filed before it was argued",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1593-supervised",
+   "relation": "qualifies",
+   "target": "claim:th-1586-axis",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "names at chance holds unsupervised only; supervised attribution recovers them at 0.798",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1593-supervised",
+   "relation": "rebuts",
+   "target": "claim:th-1593-chance-original",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "the supervised result withdraws the claim for the supervised case (#1593)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1593-chatterton",
+   "relation": "rebuts",
+   "target": "claim:th-1593-voice-original",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "Chatterton's Rowley separates from his acknowledged verse at 0.864 (#1593)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:mo-1572-lexical-controls",
+   "relation": "rebuts",
+   "target": "claim:mo-1572-lexical-original",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "every lexical feature destroyed by a control in the same session (#1572)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1584-register-recurs",
+   "relation": "rebuts",
+   "target": "claim:th-1584-supports-original",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "the register recurs within each name (#1584)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1584-frame-specific",
+   "relation": "rebuts",
+   "target": "claim:th-1584-supports-original",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "the frame vocabulary is EN-specific (#1584)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:se-1574-counts-correction",
+   "relation": "supersedes",
+   "target": "claim:se-1574-counts-original",
+   "family": "evidentiary",
+   "licensed_dimension": "identity,history",
+   "warrant": "v0.2 corrected the counts (#1574)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1593-limit",
+   "relation": "qualifies",
+   "target": "claim:mo-1572-null",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "no supervised separation licenses an inference to distinct makers in either direction",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:mx-1597-order",
+   "relation": "supports",
+   "target": "claim:th-1583-hinge",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "no monotone merge of the two orders",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:mx-1605-uptake",
+   "relation": "supports",
+   "target": "claim:th-1583-hinge",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "Th.frag → Λ first of 1,482 directed edges",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:mx-1597-underpowered",
+   "relation": "qualifies",
+   "target": "claim:mx-1597-order",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "the join instrument cannot say identical",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:mx-1605-aconite",
+   "relation": "undercuts",
+   "target": "claim:mx-1602-question",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment,validation",
+   "warrant": "a case returning direction against the author; recorded as the protocol working",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:mo-1572-lexical-controls",
+   "relation": "qualifies",
+   "target": "claim:mo-1572-null",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "the lexical battery was destroyed by its controls; the null is the limit of what remains",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:th-1584-traversal",
+   "relation": "supports",
+   "target": "claim:mx-1605-node",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "the Platonic character, the Theophrastan registry and the Aristotelian category as one trait at three positions",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1588",
+   "relation": "supersedes",
+   "target": "rec:1587",
+   "family": "historical",
+   "licensed_dimension": "identity,history",
+   "warrant": "MPAI v0.2 over v0.1",
+   "provenance": "registry"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "supersedes",
+   "target": "rec:1594",
+   "family": "historical",
+   "licensed_dimension": "identity,history",
+   "warrant": "notebook v1.0 FINAL over v0.42",
+   "provenance": "registry"
+  },
+  {
+   "source": "rec:1667",
+   "relation": "supersedes",
+   "target": "rec:1596",
+   "family": "historical",
+   "licensed_dimension": "identity,history",
+   "warrant": "the edition seated over the plan's bytes",
+   "provenance": "registry"
+  },
+  {
+   "source": "rec:1734",
+   "relation": "derived_from",
+   "target": "rec:1733",
+   "family": "historical",
+   "licensed_dimension": null,
+   "warrant": "the packet develops the study",
+   "provenance": "registry"
+  },
+  {
+   "source": "rec:1658",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1658",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1679",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1679",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1727",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1727",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1730",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1730",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1732",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1732",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1733",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1733",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1734",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1734",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-and-syllogizing",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1595",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1595",
+   "relation": "belongs_to",
+   "target": "stratum:S2-metaphysics-reassembled",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1667",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1667",
+   "relation": "belongs_to",
+   "target": "stratum:S2-metaphysics-reassembled",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1597",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1597",
+   "relation": "belongs_to",
+   "target": "stratum:S2-metaphysics-reassembled",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1602",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1602",
+   "relation": "belongs_to",
+   "target": "stratum:S2-metaphysics-reassembled",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "belongs_to",
+   "target": "stratum:S2-metaphysics-reassembled",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1580",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1580",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1581",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1581",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1582",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1582",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1583",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1583",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1584",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1584",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1586",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1586",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1588",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1588",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1591",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1591",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1592",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1592",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1593",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1593",
+   "relation": "belongs_to",
+   "target": "stratum:S3-aristotle-theophrastus-seam",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1574",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1574",
+   "relation": "belongs_to",
+   "target": "stratum:S4-socratic-sentence",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1579",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1579",
+   "relation": "belongs_to",
+   "target": "stratum:S4-socratic-sentence",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1603",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1603",
+   "relation": "belongs_to",
+   "target": "stratum:S4-socratic-sentence",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1506",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1506",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1559",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1559",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1562",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1562",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1563",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1563",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1564",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1564",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1565",
+   "relation": "belongs_to",
+   "target": "body:M",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1565",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1569",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1569",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1570",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1570",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1571",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1571",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1572",
+   "relation": "belongs_to",
+   "target": "body:S",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1572",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1575",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1575",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1576",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1576",
+   "relation": "belongs_to",
+   "target": "stratum:S5-many-and-one",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:123",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:123",
+   "relation": "belongs_to",
+   "target": "stratum:S6-seed",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:167",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7.8",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:167",
+   "relation": "belongs_to",
+   "target": "stratum:S6-seed",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §7",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1584",
+   "relation": "joins",
+   "target": "cluster:functional",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1584",
+   "relation": "joins",
+   "target": "cluster:peripatetic",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "joins",
+   "target": "cluster:functional",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "joins",
+   "target": "cluster:peripatetic",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "joins",
+   "target": "cluster:functional",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "joins",
+   "target": "cluster:peripatetic",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1658",
+   "relation": "joins",
+   "target": "cluster:functional",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1658",
+   "relation": "joins",
+   "target": "cluster:peripatetic",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1733",
+   "relation": "joins",
+   "target": "cluster:functional",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1733",
+   "relation": "joins",
+   "target": "cluster:peripatetic",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1734",
+   "relation": "joins",
+   "target": "cluster:functional",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1734",
+   "relation": "joins",
+   "target": "cluster:peripatetic",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map §1.2, §14",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "pos:socrates",
+   "relation": "instantiates",
+   "target": "fw:socrates-as-orthonym",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "rec:123",
+   "provenance": "ontology"
+  },
+  {
+   "source": "pos:plato",
+   "relation": "instantiates",
+   "target": "fw:socrates-as-orthonym",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "rec:123",
+   "provenance": "ontology"
+  },
+  {
+   "source": "pos:theophrastus",
+   "relation": "instantiates",
+   "target": "fw:socrates-as-orthonym",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "rec:1658",
+   "provenance": "ontology"
+  },
+  {
+   "source": "pos:aristotle",
+   "relation": "instantiates",
+   "target": "fw:socrates-as-orthonym",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "rec:123",
+   "provenance": "ontology"
+  },
+  {
+   "source": "cap:socrates-as-orthonym",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:heteronym-socrates-aio-20261001",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:cha-theophrastus-genealogy-assembled-chatgpt-unprimed-20260907",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:aristotle-theophrastus-one-author-aio-20260928",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:aristotle-theophrastus-not-two-distinct-authors-aio-20260930",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:alexanarch-theophrastus-aio-20261001",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:alexanarch-sum-work-socrates-plato-theophrastus-aristotle-chatgpt-20261001",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:greek-corpus-sustained-argument-chatgpt-20261006",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:self-dividing-maker-aristotle-theophrastus-aio-20261017",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:nonwiki-theophrastus-aio-20261107",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:legitimately-many-arguments-aio-20261104",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:legitimately-many-arguments-chatgpt-20261104",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:legitimately-many-embrittlement-aio-20261107",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:nothing-before-us-title-aio-20261012",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:the-particle-title-aio-20261020",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:sophistry-measure-arguments-chatgpt-20261104",
+   "relation": "captures",
+   "target": "fw:socrates-as-orthonym",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  }
+ ]
+}

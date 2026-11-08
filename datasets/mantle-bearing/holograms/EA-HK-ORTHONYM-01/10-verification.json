@@ -1,0 +1,416 @@
+{
+ "kernel": "EA-HK-ORTHONYM-01",
+ "version": "1.0",
+ "counts": {
+  "records": 40,
+  "external_records": 3,
+  "positions": 4,
+  "claims": 56,
+  "withdrawn": 5,
+  "bearing_on_rival": 12,
+  "edges": 136,
+  "captures": 16,
+  "events": 124,
+  "questions": 10,
+  "structural_tests": 16
+ },
+ "structural_tests": {
+  "T1 records resolve": {
+   "pass": true,
+   "detail": "43 records (3 external); stale: []"
+  },
+  "T2 quotations bind": {
+   "pass": true,
+   "detail": "53 quoted claims, 3 unseated originals; unbound: []; hash drift: []"
+  },
+  "T3 relations in policy": {
+   "pass": true,
+   "detail": "24 licensing-family edges; off-policy: []"
+  },
+  "T4 introductions established at first seating": {
+   "pass": true,
+   "detail": "49 established from git; unresolved and marked: ['orth-123-config', 'orth-123-analogues', 'orth-167-adoption', 'orth-167-limit']; failed: []"
+  },
+  "T5 invariants resolve": {
+   "pass": true,
+   "detail": "8 invariants; unresolved nodes: []"
+  },
+  "T6 failures per body": {
+   "pass": true,
+   "detail": {
+    "I": "3 failing or limited of 16",
+    "R": "2 failing or limited of 14",
+    "S": "7 failing or limited of 17",
+    "M": "1 failing or limited of 9"
+   }
+  },
+  "T7 maker-count states ordered, bound and warranted": {
+   "pass": true,
+   "detail": [
+    "2026-05-23 rec:123 not_claimed (attested from 2026-07-18)",
+    "2026-09-01 rec:1576 two_not_established (attested from 2026-09-02)",
+    "2026-09-06 rec:1588 open_because_uncounted (attested from 2026-09-07)",
+    "2026-10-01 rec:1658 one_self_dividing_maker (attested from 2026-10-01)",
+    "2026-11-03 rec:1733 one_self_dividing_maker (attested from 2026-11-03)"
+   ]
+  },
+  "T8 joins carry both clusters": {
+   "pass": true,
+   "detail": [
+    "rec:1584",
+    "rec:1590",
+    "rec:1605",
+    "rec:1658",
+    "rec:1733",
+    "rec:1734"
+   ]
+  },
+  "T9 captures resolve": {
+   "pass": true,
+   "detail": "16 captures; unresolved: []"
+  },
+  "T10 summary carries the architecture": {
+   "pass": true,
+   "detail": []
+  },
+  "T11 rival statuses bound to warrants of their body": {
+   "pass": true,
+   "detail": {
+    "bodies": [
+     "I",
+     "M",
+     "R",
+     "S"
+    ],
+    "warrants": {
+     "S": [
+      "rv-1572-null",
+      "rv-1593-limit",
+      "rv-1593-names",
+      "th-1593-supervised"
+     ],
+     "M": [
+      "rv-1658-ledger",
+      "rv-1582-stone",
+      "rv-1581-will",
+      "th-1581-ambiguity"
+     ],
+     "I": [
+      "rv-1576-under"
+     ],
+     "R": [
+      "rv-1733-filing",
+      "rv-1733-loci",
+      "rv-1733-channel",
+      "rv-1733-comparator",
+      "lm-1733-filing"
+     ]
+    },
+    "mismatched": []
+   }
+  },
+  "T12 propagation along licensing paths only": {
+   "pass": true,
+   "detail": {
+    "reception claims reaching the production model": [],
+    "establishment grounds of #1658": [
+     "claim:se-1603-provenance",
+     "claim:th-1583-hinge",
+     "claim:th-1588-uncounted"
+    ],
+    "mixed paths licensing": [],
+    "licensed propagations": 14
+   }
+  },
+  "T13 historical reconstruction": {
+   "pass": true,
+   "detail": {
+    "by_date": {
+     "2026-05-23": {
+      "state": [
+       "not_claimed",
+       null
+      ],
+      "record": "rec:123",
+      "attested_from": "2026-07-18",
+      "claims_present": 0,
+      "unresolved_on_date": 3
+     },
+     "2026-09-02": {
+      "state": [
+       "two_not_established",
+       null
+      ],
+      "record": "rec:1576",
+      "attested_from": "2026-09-02",
+      "claims_present": 10,
+      "unresolved_on_date": 6
+     },
+     "2026-09-07": {
+      "state": [
+       "open_because_uncounted",
+       null
+      ],
+      "record": "rec:1588",
+      "attested_from": "2026-09-07",
+      "claims_present": 30,
+      "unresolved_on_date": 7
+     },
+     "2026-10-02": {
+      "state": [
+       "one_self_dividing_maker",
+       "governing_hypothesis"
+      ],
+      "record": "rec:1658",
+      "attested_from": "2026-10-01",
+      "claims_present": 40,
+      "unresolved_on_date": 7
+     },
+     "2026-11-04": {
+      "state": [
+       "one_self_dividing_maker",
+       "governing_hypothesis"
+      ],
+      "record": "rec:1733",
+      "attested_from": "2026-11-03",
+      "claims_present": 49,
+      "unresolved_on_date": 7
+     }
+    },
+    "failed": []
+   }
+  },
+  "T14 endpoints declared": {
+   "pass": true,
+   "detail": "136 edges; undeclared endpoints: []"
+  },
+  "T15 lines of research posed and bounded": {
+   "pass": true,
+   "detail": "10 questions; failed: []"
+  },
+  "T16 the kernel's prose agrees with its lists and the graph": {
+   "pass": true,
+   "detail": {
+    "joins": 6,
+    "grounds_of_1658": [
+     1583,
+     1588,
+     1603
+    ],
+    "failed": []
+   }
+  }
+ },
+ "propagation": {
+  "claim:se-1574-counts-correction": [
+   {
+    "to": "claim:se-1574-counts-original",
+    "dimension": [
+     "history",
+     "identity"
+    ],
+    "via": [
+     "supersedes"
+    ]
+   }
+  ],
+  "claim:mo-1572-lexical-controls": [
+   {
+    "to": "claim:mo-1572-lexical-original",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "rebuts"
+    ]
+   },
+   {
+    "to": "claim:mo-1572-null",
+    "dimension": [
+     "scope"
+    ],
+    "via": [
+     "qualifies"
+    ]
+   }
+  ],
+  "claim:se-1603-provenance": [
+   {
+    "to": "claim:sy-1658-maker",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "generalizes"
+    ]
+   }
+  ],
+  "claim:th-1583-hinge": [
+   {
+    "to": "claim:sy-1658-maker",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "generalizes"
+    ]
+   }
+  ],
+  "claim:th-1584-register-recurs": [
+   {
+    "to": "claim:th-1584-supports-original",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "rebuts"
+    ]
+   }
+  ],
+  "claim:th-1584-frame-specific": [
+   {
+    "to": "claim:th-1584-supports-original",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "rebuts"
+    ]
+   }
+  ],
+  "claim:th-1588-uncounted": [
+   {
+    "to": "claim:sy-1658-maker",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "generalizes"
+    ]
+   }
+  ],
+  "claim:th-1593-supervised": [
+   {
+    "to": "claim:th-1586-axis",
+    "dimension": [
+     "scope"
+    ],
+    "via": [
+     "qualifies"
+    ]
+   },
+   {
+    "to": "claim:th-1593-chance-original",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "rebuts"
+    ]
+   }
+  ],
+  "claim:th-1593-chatterton": [
+   {
+    "to": "claim:th-1593-voice-original",
+    "dimension": [
+     "establishment"
+    ],
+    "via": [
+     "rebuts"
+    ]
+   }
+  ],
+  "claim:th-1593-limit": [
+   {
+    "to": "claim:mo-1572-null",
+    "dimension": [
+     "scope"
+    ],
+    "via": [
+     "qualifies"
+    ]
+   }
+  ],
+  "claim:mx-1597-underpowered": [
+   {
+    "to": "claim:mx-1597-order",
+    "dimension": [
+     "scope"
+    ],
+    "via": [
+     "qualifies"
+    ]
+   }
+  ],
+  "claim:mx-1605-aconite": [
+   {
+    "to": "claim:mx-1602-question",
+    "dimension": [
+     "establishment",
+     "validation"
+    ],
+    "via": [
+     "undercuts"
+    ]
+   }
+  ]
+ },
+ "back_projection_v0_1": {
+  "scope_A": {
+   "elements": {
+    "framework, seed, author": true,
+    "four positions with the Theophrastan asymmetry": true,
+    "six strata in order with their records": true,
+    "two clusters and the joins": true,
+    "four bodies with their rules": true,
+    "five maker-count states with dates and records": true,
+    "forbidden operations": true,
+    "the dependency chain to the production model": true,
+    "the corrections as original–correction pairs": true,
+    "the rival evaluated, with its summary": true,
+    "the lines of research": true
+   },
+   "yield": 1.0
+  },
+  "scope_B": {
+   "elements": {
+    "framework, seed, author": true,
+    "four positions with the Theophrastan asymmetry": true,
+    "six strata in order with their records": true,
+    "two clusters and the joins": true,
+    "four bodies with their rules": true,
+    "five maker-count states with dates and records": true,
+    "forbidden operations": true,
+    "the dependency chain to the production model": true,
+    "the corrections as original–correction pairs": true,
+    "the rival evaluated, with its summary": true,
+    "the lines of research": true,
+    "every record placed in a body and a stratum": true,
+    "every relation with its licensed dimension": true,
+    "every endpoint declared": true,
+    "provenance on every record": true
+   },
+   "yield": 1.0
+  },
+  "threshold": 0.85,
+  "note": "structural presence only; reconstructive validity is v1.0, run by a reader on scope A (09b)"
+ },
+ "not_checked": [
+  "whether a reading is right",
+  "whether a relation's warrant is sufficient",
+  "reconstructive validity by a reader (v1.0)",
+  "anything in a record beyond the quotations bound"
+ ],
+ "integrity": {
+  "00-kernel.yaml": true,
+  "01-ontology.yaml": true,
+  "02-graph.jsonld": true,
+  "03-claims.jsonl": true,
+  "05-temporal.jsonl": true,
+  "06-questions.yaml": true,
+  "07-captures.jsonl": true,
+  "08-traversal.yaml": true,
+  "09-tests.yaml": true,
+  "09b-back-projection-prompt.md": true
+ }
+}

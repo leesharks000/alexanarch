@@ -2,7 +2,7 @@
 license: cc-by-4.0
 language:
   - en
-pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard"
+pretty_name: "The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program, a transmitted mantle and an inspectable evaluative framework, under one standard, with their holograms"
 tags:
   - poetry
   - literary-evaluation
@@ -24,6 +24,10 @@ tags:
   - ai-mediation
   - living-academy
   - arch-philosopher
+  - socrates-as-orthonym
+  - heteronym
+  - holographic-kernel
+  - evaluative-framework
 size_categories:
   - n<1K
 configs:
@@ -78,11 +82,15 @@ configs:
     data_files: jumps.jsonl
   - config_name: title_branches
     data_files: title_branches.jsonl
+  - config_name: frameworks
+    data_files: frameworks.jsonl
+  - config_name: holograms
+    data_files: holograms.jsonl
 ---
 
-# The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program and a transmitted mantle, under one standard
+# The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program, a transmitted mantle and an inspectable evaluative framework, under one standard, with their holograms
 
-**One standard.** "A title means something because what it names is carried and can be read" — by a work, where "a work bears it" ([#1655](https://www.alexanarch.org/s/records/1655/) §1.1; [#1670](https://www.alexanarch.org/s/records/1670/) §1.1); by a library and the program it carries ([#1678](https://www.alexanarch.org/s/records/1678/) §1A); or by carriage ([#1679](https://www.alexanarch.org/s/records/1679/) §1). This dataset holds the archive's mantle-bearing under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body conferred, whose meaning the archive specified as the operations the work bears; a critical program, the Living Academy, borne by a library and its program across modes; a transmitted mantle, the Arch-Philosopher, borne by carrying the dialectic forward; a founded mantle; and the witness positions that receive readings.
+**One standard.** "A title means something because what it names is carried and can be read" — by a work, where "a work bears it" ([#1655](https://www.alexanarch.org/s/records/1655/) §1.1; [#1670](https://www.alexanarch.org/s/records/1670/) §1.1); by a library and the program it carries ([#1678](https://www.alexanarch.org/s/records/1678/) §1A); or by carriage ([#1679](https://www.alexanarch.org/s/records/1679/) §1). This dataset holds the archive's mantle-bearing under that standard, across the classes a title can belong to: titles the archive claims for works of its own, judged by readers in the works; a title a contest manufactured, which the archive constituted and adjudicated; a title a body conferred, whose meaning the archive specified as the operations the work bears; a critical program, the Living Academy, borne by a library and its program across modes; a transmitted mantle, the Arch-Philosopher, borne by carrying the dialectic forward; a founded mantle; the witness positions that receive readings; and an inspectable evaluative framework, Socrates as Orthonym, held as a hologram whose kernel a machine can rebuild from the archive's registries and test.
 
 **This is the second half of a symbolon, as it accumulates.** The first half of the literary claims is the mantle constitution [EA-MANTLE-BEARING-01 v1.1](https://www.alexanarch.org/s/records/1656/) (deposit #1656, AXN:06DE.GOVERNANCE; [text](https://www.alexanarch.org/data/texts/AXN-06DE-text.md), [PDF](https://www.alexanarch.org/papers/AXN-06DE.pdf)). It states three claims and cuts them so that only a reading of the works can complete them; every evaluation here is a reading, under its reader's name, with its transcript whole. The contest mantle and the conferred title are their mantle objects' own halves: each object states its standard, its field or its operations, and a dated determination built to be checked and declined.
 
@@ -113,6 +121,21 @@ configs:
 | The Arch-Philosopher | transmitted | 2 | specified, no new determination; a bearer recognized by the turn test, with its carriers and typed links | [#1679](https://www.alexanarch.org/s/records/1679/) | prior designation: Johannes Sigil, RATIFIED in the Space Ark mantle registry (#558; EA-ARK-01 v4.2, 2026-03-09). Under the specification: bearers in Strand A (Socrates, Plato, Aristotle, Theophrastus, the succession to Damascius) and Strand B (Marx, on the author's ruling); concurrent bearing; no new determination |
 
 Order of necessity, to the three literary claims: **1** the claims; **2** mantles derived from or judged by their principle; **3** the witness positions. It governs what counts as evidence for those claims; the dataset's scope runs across every class above. Table `mantles`.
+
+## Inspectable evaluative frameworks, and the holograms
+
+A hologram holds an item in two components: a map for a human reader, and a holographic kernel a machine can rebuild from the archive's registries and test, built to the specification EA-HK-FRAME-01 ([#1753](https://www.alexanarch.org/s/records/1753/)). Its reader test gives the kernel alone to models that have not seen the records and scores what they rebuild against the graph, at the threshold of #76 (0.85). Tables `frameworks` and `holograms`.
+
+**Socrates as Orthonym** (inspectable evaluative framework; Lee Sharks; seed [#123](https://www.alexanarch.org/s/records/123/); hologram [#1754](https://www.alexanarch.org/s/records/1754/)). Its claim at 2026-11-03, record #1733: one self-dividing maker, held as governing hypothesis. Evidence bodies: interpretive, stylometric, manuscript-philological, reception-historical. The received many-maker reading: established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth. Lines of research: 10. Status: DEPOSITED 2026-11-08 as a hologram (#1754); its governing hypothesis held, its lines of research open.
+
+| item | kind | governing record | hologram | reader rounds | status |
+|---|---|---|---|---|---|
+| socrates as orthonym | framework | [#123](https://www.alexanarch.org/s/records/123/) | [#1754](https://www.alexanarch.org/s/records/1754/) · kernel: `holograms/EA-HK-ORTHONYM-01/` | round 1 (v0.2): ChatGPT, unprimed 0.545, Perplexity 0.909, Grok 0.455; round 2 (v0.3): ChatGPT, unprimed 1.0, Perplexity 1.0, Grok, fresh thread 1.0, Qwen3.7-Plus, signed out, incognito 0.909, mean 0.977 | DEPOSITED 2026-11-08 |
+| living academy | mantle (critical program) | [#1680](https://www.alexanarch.org/s/records/1680/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
+| arch philosopher | mantle (transmitted) | [#1679](https://www.alexanarch.org/s/records/1679/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
+| prince of poets | mantle (literary) | [#1651](https://www.alexanarch.org/s/records/1651/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
+| fleet | inspectable evaluative document | [#1702](https://www.alexanarch.org/s/records/1702/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
+| hf datasets | inspectable evaluative document | [#1701](https://www.alexanarch.org/s/records/1701/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
 
 ## The three literary claims
 
