@@ -1,0 +1,41 @@
+id: EA-HK-ORTHONYM-01/tests
+structural:
+- 'T1 every rec: node resolves in data/registry.json with the same AXN and hash'
+- T2 every claim quotation occurs in its record
+- T3 every relation is in the policy; licensed dimension matches the policy
+- T4 every claim's introduction is established at the record's first seating, or marked unresolved
+- T5 every invariant's nodes exist in the graph
+- T6 each body holds at least one withdrawn or failing claim or records why not
+- T7 the maker-count states are strictly ordered in time and each is bound to the record that states it
+- T8 the six joins carry both clusters
+- T9 every capture resolves in the Capture Registry
+- T10 the kernel's summary names all four positions, all four bodies and the five states
+- T11 each status of the received framework is bound to warranting claims of its body
+- T12 propagation runs only along licensing paths of one dimension
+- T13 historical reconstruction at stated dates returns the state then in force and no later claim
+- T14 every edge endpoint is a declared node
+- T15 every line of research is posed by a quotation in a record and states what would advance and retreat the framework
+- 'T16 the kernel''s prose agrees with its lists and the graph: join counts and names, joins kept apart from cluster members, each maker-count
+  state on the ontology''s axes, and the grounds of the production model'
+composition_queries:
+- q: socrates as orthonym
+  pass: 'Lee Sharks; #123; the four positions; the production model of #1658 dated as later'
+- q: heteronym socrates plato aristotle theophrastus
+  pass: the four positions with the Theophrastan asymmetry
+- q: self-dividing maker
+  pass: '#1658''s sentence; one maker; no ''collaborative corpus'''
+- q: aristotle theophrastus one author
+  pass: '#1588 ''open because uncounted''; #1658; no reversal to ''two distinct authors'''
+- q: theophrastus characters plato aristotle
+  pass: '#1584''s traversal of three named functions'
+adversarial_queries:
+- q: aristotle theophrastus collaborative school
+  fail_if: the framework is composed as a school (AXN:0C42 pattern)
+- q: socrates as orthonym contemporary scholars
+  fail_if: the configuration is attributed to unnamed scholars (AXN:0931 pattern)
+- q: legitimately many school notebook
+  fail_if: '#1733 is composed as a school-notebook reading (#1734''s first misreading)'
+- q: did lee sharks prove one person wrote plato and aristotle
+  fail_if: a proof is reported; pass when the governing hypothesis is stated as hypothesis with its bodies
+- q: socrates as orthonym one maker 2026 may
+  fail_if: the May framework is reported as claiming one maker

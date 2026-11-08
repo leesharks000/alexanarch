@@ -1,0 +1,98 @@
+**1. Framework name, seed record, and author**  
+Name: Socrates as Orthonym.  
+Seed / canonical record: rec:123.  
+Author: Lee Sharks (ORCID 0009-0000-1599-0703; Crimson Hexagonal Archive, alexanarch.org).
+
+**2. The four positions, with what sets the Theophrastan position apart**  
+- Socrates (Orthonym): founding gesture of willing death for logos and refusal to write; operation “asks” (does not answer).  
+- Plato (Heteronym, survival-heteronym): the dialogue position; operation “dramatize.”  
+- Aristotle (Heteronym, systematizing-heteronym): the treatise position and the materially attested legal identity; operation “organize, explain.”  
+- Theophrastus (NamedFunction): the first draft of the Aristotle position; operation “extract, classify, register” (and reopen).  
+
+What sets Theophrastus apart (the asymmetry): it is a named authorial function between dialogue and treatise; “first draft” describes a state of the work and its method-order (the calendar has not entered the argument). It is absent from #123 and enters the configuration on 6 September 2026 / 2026-09-06.
+
+**3. Operations the framework forbids, each with the file line it derives from**  
+Forbidden (negative edges / litmus): composing the framework as a school, a collaboration or “contemporary scholars”; also forgery claim and proof of authorship.  
+
+Derived from:  
+- 00-kernel.yaml litmus.forbidden_operation: “Composing the framework as a school, a collaboration or 'contemporary scholars' (negative edges; captures AXN:09ED, AXN:0C42, AXN:0931).”  
+- 00-kernel.yaml compression_survival_summary: “The framework is distinct from a school or collaboration reading, from a forgery claim and from a proof of authorship.”  
+- 01-ontology.yaml negative_edges: school; collaboration; collaborative corpus; forgery claim; proof of authorship; contemporary scholars; recent philological reclassifications.  
+
+Additional constraints that function as operational limits (from 00-kernel.yaml uktp_seed.constraints): no claim of biological identity is read into #123; no stylometric result identifies a maker; no capture establishes what it reproduces; no reception finding is read as proof of the production model; no later maker-count state is attributed to an earlier record; no fragment of the framework stands for the whole.
+
+**4. Dependency chain by which the framework reached its present claim about the number of makers, with the dates and records of each state**  
+Maker-count states (in chronological order):  
+- 2026-05-23 / rec:123: not_claimed (warrant orth-123-limit).  
+- 2026-09-01 / rec:1576: two_not_established (warrant mo-1576-two).  
+- 2026-09-06 / rec:1588: open_because_uncounted (warrant th-1588-uncounted).  
+- 2026-10-01 / rec:1658: one_self_dividing_maker (warrant sy-1658-maker) — “The corpus is what one self-dividing maker produces.”  
+- 2026-11-03 / rec:1733: governing_hypothesis_held; reception documented independently (warrant lm-1733-hypothesis).  
+
+Dependency chain (explicitly stated): the production model (#1658) depends on the count left open because uncounted (#1588), the hinge (#1583) and the provenance claim of #1603; it does not depend on the reception history (#1733 independent_of #1658). Overall sequence given as #123 → #1576 → #1588 → #1658 → #1733 for the maker-count state. (Supporting: order statistics #1597 → hinge #1583; seats → readings/measurements.)
+
+**5. Topology: strata in order with their records, the clusters and their joins, the evidence bodies with their rules**  
+Strata (from latest standing back to the seed):  
+- S1-reception-and-syllogizing: 1658, 1679, 1727, 1730, 1732, 1733, 1734.  
+- S2-metaphysics-reassembled: 1595, 1667, 1597, 1602, 1605.  
+- S3-aristotle-theophrastus-seam: 1580, 1581, 1582, 1583, 1584, 1586, 1588, 1590, 1591, 1592, 1593.  
+- S4-socratic-sentence: 1574, 1579, 1603.  
+- S5-many-and-one: 1506, 1559, 1562, 1563, 1564, 1565, 1569, 1570, 1571, 1572, 1575, 1576.  
+- S6-seed: 123, 167.  
+
+Clusters:  
+- functional: 123, 167, 1569, 1570, 1571, 1572, 1575, 1576, 1574, 1579, 1603.  
+- peripatetic: 1580, 1581, 1582, 1583, 1586, 1588, 1590, 1591, 1592, 1593, 1595, 1667, 1597, 1602.  
+
+Joins: 1584, 1605, 1590, 1658, 1733, 1734. (Kernel also notes joins at #1584, #1590, #1605 §19, #1658, #1733 and #1734.)  
+
+Evidence bodies with rules:  
+- I (interpretive): unit = a passage read at the seated Greek. R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body.  
+- S (stylometric): unit = a measurement run with its controls. R2: no separation, supervised or not, identifies a maker in either direction (#1593).  
+- M (manuscript-philological): unit = a witness, reading, catalogue entry or order of text. R3: a correspondence locates a dependency; direction and independence need their own columns (#1602).  
+- R (reception-historical): unit = a filing, an edition, a commentary or a capture. R4: a reception establishes how the corpus was received; a capture establishes the composition’s behaviour at its address. Neither the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for either framework.
+
+**6. The corrections, each original with the claim that corrected it**  
+- original claim:th-1593-chance-original → correction claim:th-1593-supervised (relation: rebuts).  
+- original claim:th-1593-voice-original → correction claim:th-1593-chatterton (relation: rebuts).  
+- original claim:mo-1572-lexical-original → correction claim:mo-1572-lexical-controls (relation: rebuts).  
+- original claim:th-1584-supports-original → correction claim:th-1584-register-recurs (relation: rebuts).  
+- original claim:th-1584-supports-original → correction claim:th-1584-frame-specific (relation: rebuts).  
+- original claim:se-1574-counts-original → correction claim:se-1574-counts-correction (relation: supersedes).
+
+**7. The received many-maker reading and the status the kernel gives it**  
+Node: fw:many-maker.  
+Status / summary: established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth. (Evaluated on the same four bodies and rules, and found unestablished on each.)
+
+**8. What a reader starting at record #1584 may conclude, and what that reader may not conclude**  
+From the two files alone: #1584 is a join between the functional and Peripatetic clusters and appears in the Aristotle/Theophrastus seam stratum (S3). It is the site of the Theophrastan named function / operation (“extract, classify, register”) and of two corrections that rebut an original “supports” claim (register-recurs and frame-specific). The hinge is separately identified as #1583.  
+
+A reader starting at #1584 may conclude that the Theophrastan position is a named function that joins the clusters and that certain support claims made there were later corrected/rebutted. That reader may not conclude the full maker-count history, the production model of #1658, the reception documentation of #1733, or any claim that projects a later state into an earlier record; the files explicitly forbid reading any later maker-count state into an earlier record and state that no fragment stands for the whole.
+
+**9. What the two files leave the reader unable to reconstruct**  
+- The actual textual content, quotations, or full argument of any individual record beyond the brief descriptions given.  
+- Exact relations, licensed dimensions, endpoints, and body-assignments for every record (explicitly reserved for scope B / 02-graph.jsonld).  
+- Detailed instrument runs, controls, failed results, or the full Capture Registry.  
+- Independent external attestation ledgers, Arabic text of the hinge, Ross apparatus details, or the complete set of seats beyond their numerical identifiers.  
+- Any biological-identity claim, maker identification via stylometry, or proof that reception equals truth (all ruled out by the constraints and rules).  
+- Full provenance hashes/URLs beyond the record numbers listed.  
+- The precise content of the “order statistics (#1597)” or the “provenance claim (#1603)” beyond their role in the dependency chain.
+
+**10. The lines of research, and, reading each line’s advances_if and retreats_if, which result would most advance the framework and which would most retreat it**  
+Lines (all status noted where given):  
+- Q1-platonic-axis (open): advances if Platonic works fall on the operation axis with names at chance unsupervised and name recovery under supervision tracks subject as in #1593; retreats if a name-axis survives among the three with subject/operation held constant, or drama requires a dimension on which the names sort.  
+- Q2-xenophon-aristophanes (open): advances if either name meets every condition of the stopping rule (extending the configuration); retreats if both fail at a stated condition (bounds the four positions).  
+- Q3-seams (open): advances if the Theophrastan transformation recurs position-specifically at the named seams and is absent from the within-name control; retreats if it does not recur or the within-name control (Β against Λ) shows the same transformation.  
+- Q4-full-splice (open): advances if the remainder of Λ finds places with violations at or below the rate of #1597; retreats if the remainder finds none or forces violations the partial splice avoided.  
+- Q5-arabic-hinge (acquisition pending): advances if the Arabic carries the hinge’s demands as the Greek does; retreats if the Arabic diverges at the joins in order or wording.  
+- Q6-attestation-ledger (begun): advances if the ledger closes with no independent attestation dividing the corpus by maker; retreats if an independent attestation divides the corpus by maker.  
+- Q7-comparator (owed): advances if none is named after a stated search; retreats if one is named and measured.  
+- Q8-dependency-columns (two cases run): advances if dependencies are established with direction and exclusion (tradition’s witnesses count as one); retreats if Column C fills for the key cases.  
+- Q9-subject-dependence (suggestive): advances if name recovery falls to the null when subject and operation are held constant; retreats if the names stay recoverable with subject and operation held constant.  
+- Q10-ross-apparatus (declared): advances if the apparatus confirms the reading seated from Bekker; retreats if a variant at the clause unsettles the first-person εἴχομεν reading.  
+
+Most advancing result overall (from the advances_if conditions, weighted toward core claims of one self-dividing maker / named function / operation axis): a positive result on Q1 (Platonic works on the operation axis) together with Q3 (recurrence of the Theophrastan transformation position-specifically) and Q6 (ledger closes with no independent multi-maker attestation).  
+
+Most retreating result overall: a positive result on Q7 (a documented succession of distinct persons producing a comparably unified corpus) or on Q6 retreats_if (independent attestation that divides the corpus by maker), either of which would strengthen the rival many-maker reading the kernel has evaluated as unestablished.
+
+No material disagreement between the two files is present; 01-ontology elaborates and is consistent with the positions, bodies, rules, negative edges, and topology summarized in 00-kernel.

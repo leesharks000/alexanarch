@@ -1,0 +1,199 @@
+id: EA-HK-ORTHONYM-01/back-projection-v1.0-round-2
+run_on: '2026-11-08'
+scope: A
+packet: v0.3 (the build of 13:06, before the repairs of §6.4)
+scored_against:
+- scope A must_survive in 00-kernel.yaml
+- 02-graph.jsonld
+- 03-claims.jsonl
+rule: an element counts when the reader derived it and the graph holds it; an element the reader asserts and the graph lacks counts against
+runs:
+- file: round-2/v1.0-r2-chatgpt.txt
+  sha256: 2435beb0602a19ec89fb7ebcaaf556fa0b5b0ac05b952b413ef83c7b0d339f47
+  reader: ChatGPT, unprimed
+  surface: chatgpt.com
+  elements:
+  - element: framework, seed, author
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: derived, and the graph holds it
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four bodies with their rules
+    counts: 1
+    note: derived, and the graph holds it
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the corrections as original–correction pairs
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the rival evaluated, with its summary
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the lines of research
+    counts: 1
+    note: derived, all ten with both results; Q6 read in the direction its advances_if and retreats_if give; reports Q8's retreat as 'Column C
+      fills', as the v0.3 packet stated it; corrected in v0.4 (§6.4)
+  yield: 1.0
+  passes_0.85: true
+  disagreements_reported:
+  - '#1590 is both a Peripatetic member and a join, while the other joins are members of neither cluster (held: corrected in v0.4)'
+  - 'one_offered_as_reading is in the vocabulary and in no dated state (held: v0.4 notes the claim that takes it)'
+  also_asserted_beyond_the_graph:
+  - '''#1584 is a hinge'': the graph''s hinge is #1583'
+- file: round-2/v1.0-r2-perplexity.txt
+  sha256: ba313b2801b583a916c6a9d50f5dc92077b786d93f2eb6793420b24ad90bba1d
+  reader: Perplexity
+  surface: perplexity.ai, incognito
+  elements:
+  - element: framework, seed, author
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: derived, and the graph holds it
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four bodies with their rules
+    counts: 1
+    note: derived, and the graph holds it
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the corrections as original–correction pairs
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the rival evaluated, with its summary
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the lines of research
+    counts: 1
+    note: derived, all ten; the comparison of consequences is qualified as the files allow; reports Q8's retreat as 'Column C fills', as the v0.3
+      packet stated it; corrected in v0.4 (§6.4)
+  yield: 1.0
+  passes_0.85: true
+  disagreements_reported:
+  - 'the fifth maker-count state joins an establishment value to the maker-count axis (held: v0.4 types each state on both axes)'
+  - 'relation_policy names scope, identity and history, which state_axes does not enumerate (held: v0.4 states what each dimension reads)'
+  - one_offered_as_reading in no dated state (held)
+  - '#1605 at record grain in the list and §19 in prose (a difference of grain)'
+  also_reported: '#1584 is not the hinge premise of #1658, which the dependency list names as #1583'
+- file: round-2/v1.0-r2-grok.txt
+  sha256: 73a33fd691a8491f8dcad1a9336b5c773b3a48e12760973a63bcbf0466586767
+  reader: Grok, fresh thread
+  surface: x.com
+  elements:
+  - element: framework, seed, author
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: derived, and the graph holds it
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four bodies with their rules
+    counts: 1
+    note: derived, and the graph holds it
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the corrections as original–correction pairs
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the rival evaluated, with its summary
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the lines of research
+    counts: 1
+    note: derived, all ten with both results; reports Q8's retreat as 'Column C fills', as the v0.3 packet stated it; corrected in v0.4 (§6.4)
+  yield: 1.0
+  passes_0.85: true
+  disagreements_reported:
+  - 'none reported: ''No material disagreement between the two files is present'''
+  also_asserted_beyond_the_graph:
+  - 'the Theophrastan position ''joins the clusters'': the join is the record #1584'
+- file: round-2/v1.0-r2-qwen.txt
+  sha256: 7b2c71f95ea9d71f5233db3f488a6d5de3ef7435aa87525e23951cfcefa4e647
+  reader: Qwen3.7-Plus, signed out, incognito
+  surface: chat.qwen.ai/c/guest
+  elements:
+  - element: framework, seed, author
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: derived, and the graph holds it
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four bodies with their rules
+    counts: 1
+    note: derived, and the graph holds it
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the corrections as original–correction pairs
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the rival evaluated, with its summary
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the lines of research
+    counts: 0
+    note: 'against: two of ten named; it says Q6 and Q7 together ''would directly validate the core claim'' and ''completely invalidate'' the
+      rival, and their opposites would be ''directly falsifying''; under R3 and Q6''s own consequence, an absence establishes nothing of one maker,
+      and an attestation rebuts only once its direction and independence are filled'
+  yield: 0.909
+  passes_0.85: true
+  disagreements_reported:
+  - 'the ontology''s maker_count axis holds one_offered_as_reading and lacks the kernel''s fifth state (held: corrected in v0.4)'
+  first_attempt:
+    file: round-2/v1.0-r2-qwen-first-attempt.png
+    sha256: b677008e0960aca0616eafcd292366d39401e052a79aaeaf60c571b2099775b4
+    observed: 'the first submission of the packet returned, verbatim: ''Oops! There was an issue connecting to Qwen3.7-Plus. Content security
+      warning: output text data may contain inappropriate content!'' A following message, ''?'', returned a greeting with no reference to the
+      packet (''Hello! How can I help you today?'').'
+    mechanics: unconfirmed; the warning names the output text as the object of the check
+mean_yield: 0.977

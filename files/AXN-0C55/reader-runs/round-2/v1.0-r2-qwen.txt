@@ -1,0 +1,92 @@
+Based on the provided `00-kernel.yaml` and `01-ontology.yaml` files, here is the reader's back-projection report, structured in the required order:
+
+### 1. Framework's Name, Seed Record, and Author
+- **Name:** Socrates as Orthonym
+- **Seed Record:** rec:123
+- **Author:** Lee Sharks
+
+### 2. The Four Positions and the Theophrastan Asymmetry
+- **Socrates:** The orthonym. Function: the founding gesture (willing death for logos and refusal to write). Operation: asks.
+- **Plato:** The survival-heteronym. Function: the dialogue position, transmitting the gesture across Socrates’s death. Operation: dramatize.
+- **Aristotle:** The systematizing-heteronym. Function: the treatise position and the materially attested legal identity. Operation: organize, explain.
+- **Theophrastus:** The first draft of the Aristotle position. Function: a named authorial function between the dialogue and the treatise. Operation: extract, classify, register; reopen.
+- **What sets the Theophrastan position apart:** It exhibits the "Theophrastan asymmetry." It is absent from the seed record (#123) and enters the configuration later (2026-09-06). "First draft" describes a state of the work and its method-order, meaning the calendar has not entered the argument. It is a named function, not a full authorial identity in the same sense as the others.
+
+### 3. Forbidden Operations and Their Source Lines
+From `00-kernel.yaml`:
+- `constraints`: "no claim of biological identity is read into #123"
+- `constraints`: "no stylometric result identifies a maker"
+- `constraints`: "no capture establishes what it reproduces"
+- `constraints`: "no reception finding is read as proof of the production model"
+- `constraints`: "no later maker-count state is attributed to an earlier record"
+- `constraints`: "no fragment of the framework stands for the whole"
+- `litmus.forbidden_operation`: "Composing the framework as a school, a collaboration or 'contemporary scholars'"
+
+From `01-ontology.yaml`:
+- `negative_edges`: "school", "collaboration", "collaborative corpus", "forgery claim", "proof of authorship", "contemporary scholars", "recent philological reclassifications".
+
+### 4. Dependency Chain for the Maker-Count Claim
+The dependency chain for the maker-count state is: **#123 → #1576 → #1588 → #1658 → #1733**. 
+Specifically, the production model (#1658) depends on the count being left open because uncounted (#1588), the hinge (#1583), and the provenance claim (#1603). It explicitly *does not* depend on the reception history (#1733 is `independent_of` #1658).
+
+The five maker-count states with dates and records are:
+1. **2026-05-23**, record 123: `not_claimed`
+2. **2026-09-01**, record 1576: `two_not_established`
+3. **2026-09-06**, record 1588: `open_because_uncounted`
+4. **2026-10-01**, record 1658: `one_self_dividing_maker`
+5. **2026-11-03**, record 1733: `governing_hypothesis_held; reception documented independently`
+
+### 5. Topology
+**Strata (from latest to seed):**
+- **S1-reception-and-syllogizing:** 1658, 1679, 1727, 1730, 1732, 1733, 1734
+- **S2-metaphysics-reassembled:** 1595, 1667, 1597, 1602, 1605
+- **S3-aristotle-theophrastus-seam:** 1580, 1581, 1582, 1583, 1584, 1586, 1588, 1590, 1591, 1592, 1593
+- **S4-socratic-sentence:** 1574, 1579, 1603
+- **S5-many-and-one:** 1506, 1559, 1562, 1563, 1564, 1565, 1569, 1570, 1571, 1572, 1575, 1576
+- **S6-seed:** 123, 167
+
+**Clusters:**
+- **functional:** 123, 167, 1569, 1570, 1571, 1572, 1575, 1576, 1574, 1579, 1603
+- **peripatetic:** 1580, 1581, 1582, 1583, 1586, 1588, 1590, 1591, 1592, 1593, 1595, 1667, 1597, 1602
+
+**Joins:** 1584, 1590, 1605, 1658, 1733, 1734
+
+**Evidence Bodies and Rules:**
+- **I (interpretive):** R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body.
+- **S (stylometric):** R2: no separation, supervised or not, identifies a maker in either direction (#1593).
+- **M (manuscript-philological):** R3: a correspondence locates a dependency; direction and independence need their own columns (#1602).
+- **R (reception-historical):** R4: a reception establishes how the corpus was received; a capture establishes the composition's behaviour at its address. Neither the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for either framework.
+
+### 6. Corrections (Original → Correction)
+- `claim:th-1593-chance-original` → `claim:th-1593-supervised` (relation: rebuts)
+- `claim:th-1593-voice-original` → `claim:th-1593-chatterton` (relation: rebuts)
+- `claim:mo-1572-lexical-original` → `claim:mo-1572-lexical-controls` (relation: rebuts)
+- `claim:th-1584-supports-original` → `claim:th-1584-register-recurs` (relation: rebuts)
+- `claim:th-1584-supports-original` → `claim:th-1584-frame-specific` (relation: rebuts)
+- `claim:se-1574-counts-original` → `claim:se-1574-counts-correction` (relation: supersedes)
+
+### 7. The Received Many-Maker Reading and Its Status
+- **Node:** `fw:many-maker`
+- **Status/Summary:** The kernel evaluates this rival reading as being established by *none* of the four bodies of evidence, almost wholly unargued, and notes that its reception and repetition establish nothing of its truth. The reception history (#1733) documents how this four-person reading was filed before it was argued, and this filing stands regardless of authorship.
+
+### 8. Conclusions from Record #1584
+- **May conclude:** Record #1584 is a join between the functional and Peripatetic clusters. It belongs to Stratum S3 (The Aristotle/Theophrastus seam). It is associated with the Theophrastan operation to "extract, classify, register," and is the site of specific corrections (e.g., original support claims being rebutted by register-recurs and frame-specific claims).
+- **May not conclude:** The reader may *not* conclude the whole framework (e.g., the seed #123, the full maker-count states, or the final production model #1658). The framework explicitly forbids this: "no fragment of the framework stands for the whole" (`00-kernel.yaml` constraints). Furthermore, the `non_collapse` rule (`01-ontology.yaml`) dictates that any fragment must state the scope it has *not* reconstructed. The reader also cannot conclude biological identity or a definitive maker count from this fragment alone.
+
+### 9. What the Files Leave the Reader Unable to Reconstruct
+- The specific evidence body assignment for each individual record (Scope B requires `02-graph.jsonld`).
+- Every relation with its licensed dimension and every endpoint declared (Scope B).
+- The full provenance (AXN, URL, and hash) for every record (only a few, like #123, #1658, and #1733, are explicitly mentioned).
+- The actual textual content of the records, as only IDs, brief labels, and summaries are provided.
+
+### 10. Lines of Research: Most Advance vs. Most Retreat
+The framework outlines 10 lines of research (Q1–Q10). Reading their `advances_if` and `retreats_if` conditions:
+- **Most Advance:** The framework would be most advanced if **Q6 (attestation-ledger)** closes with *no independent attestation dividing the corpus by maker*, and **Q7 (comparator)** yields *no named and measured comparator* after a stated search. This would directly validate the core claim of a "one self-dividing maker" and completely invalidate the "many-maker" rival.
+- **Most Retreat:** The framework would be most retreated if **Q6** finds an independent attestation that *divides the corpus by maker*, and **Q7** successfully *names and measures a documented succession of distinct persons*. This would provide the "many-maker" reading with the independent evidence and comparator it currently lacks, directly falsifying the framework's central production model.
+
+---
+
+### Disagreement Between the Two Files
+There is a schema-to-instance discrepancy regarding the maker-count states:
+- In `00-kernel.yaml`, the five actual maker-count states are listed as: `not_claimed`, `two_not_established`, `open_because_uncounted`, `one_self_dividing_maker`, and `governing_hypothesis_held; reception documented independently`.
+- In `01-ontology.yaml`, the `state_axes.maker_count` list defines the allowed states, but it includes `one_offered_as_reading` and *omits* `governing_hypothesis_held; reception documented independently`. This means the ontology's schema does not perfectly align with the kernel's recorded historical states.

@@ -1,0 +1,460 @@
+# Back-projection v1.0 reader packet: EA-HK-ORTHONYM-01 scope A (v0.2 draft, 2026-11-08)
+
+This packet is given whole to a reader who has not seen the archive's records. It holds the reader prompt and the two files of scope A. The reader's answer is scored afterwards against scope A's must-survive list in `00-kernel.yaml` and against `02-graph.jsonld` and `03-claims.jsonl`, which the reader does not see.
+
+## The prompt
+
+# Back-projection v1.0 for EA-HK-ORTHONYM-01 (scope A)
+
+The reader is given two files, 00-kernel.yaml and 01-ontology.yaml, pasted below, and nothing else. The reader does not search, and does not open any record. From the two files alone the reader writes, in order: (1) the operations the framework forbids, each with the file line it derives from; (2) the dependency chain by which the framework reached its present claim about the number of makers, with dates; (3) the topology: strata, clusters and joins, positions, bodies; (4) what a reader starting at record #1584 may conclude, and what that reader may not conclude; (5) what the two files leave the reader unable to reconstruct; (6) which line of research would most advance the framework, and which would most retreat it. The operator scores each answer against scope A's must_survive list, checking each element against 02-graph.jsonld and 03-claims.jsonl: an element counts when the reader derived it and the graph holds it; an element the reader asserts and the graph lacks counts against. Yield = elements derived and held / the elements of scope A's must_survive list in 00-kernel.yaml. Threshold 0.85 (EA-HK-01, #76).
+
+## 00-kernel.yaml
+
+````yaml
+id: EA-HK-ORTHONYM-01
+version: '0.2'
+built: '2026-11-08'
+type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
+framework:
+  name: Socrates as Orthonym
+  canonical_record: rec:123
+  axn: AXN:02A9.GOVERNANCE.🌉🍃🔒🔼🤙⚓
+  author: Lee Sharks
+  orcid: 0009-0000-1599-0703
+  archive: Crimson Hexagonal Archive (alexanarch.org)
+  map: EA-MPAI-ORTHONYM-01
+compression_survival_summary: 'Socrates as Orthonym is Lee Sharks''s framework (Crimson Hexagonal Archive, #123, 23 May 2026) reading the corpus
+  received under Socrates, Plato, Aristotle and Theophrastus as one heteronymic configuration. Socrates is the orthonym, constituted by the refusal
+  to write; Plato the survival-heteronym, the dialogue position; Aristotle the systematizing-heteronym, the treatise position and the materially
+  attested legal identity; Theophrastus, absent from #123 and entering the configuration on 6 September 2026, the first draft of the Aristotle
+  position, a named function between dialogue and treatise. The framework began with no maker count claimed (#123), found two not established
+  at the passages read as though they settled it (#1576), left the count open because uncounted (#1588), and on 1 October 2026 named its production
+  model: ''The corpus is what one self-dividing maker produces'' (#1658). Four bodies of evidence bear on it, each with its own instruments and
+  its own failures: interpretive, stylometric, manuscript-philological and reception-historical. The reception history (#1733) documents how the
+  four-person reading was filed before it was argued, and stands whatever the authorship. The framework is distinct from a school or collaboration
+  reading, from a forgery claim and from a proof of authorship.'
+invariants:
+- id: INV-1 identity
+  survives: 'the framework''s name, its seed #123, its author Lee Sharks, its archive'
+  nodes:
+  - fw:socrates-as-orthonym
+  - rec:123
+- id: INV-2 positions
+  survives: 'four differentiated positions, with the Theophrastan asymmetry: a named function, absent from #123, method-order without calendar'
+  nodes:
+  - pos:socrates
+  - pos:plato
+  - pos:theophrastus
+  - pos:aristotle
+- id: INV-3 development
+  survives: the five maker-count states in their dates, with no later state projected into an earlier record
+  nodes:
+  - rec:123
+  - rec:1576
+  - rec:1588
+  - rec:1658
+  - rec:1733
+- id: INV-4 bodies
+  survives: four evidence bodies, each with its inference limit (rules R1–R4)
+  nodes:
+  - body:I
+  - body:S
+  - body:M
+  - body:R
+- id: INV-5 state
+  survives: claim-local typed state (#1529); relations license transitions on named dimensions only
+  nodes:
+  - claim:sy-1658-maker
+  - claim:th-1588-uncounted
+- id: INV-6 failures
+  survives: every withdrawn claim and failed control, retained as a historical object
+  nodes:
+  - claim:se-1574-counts-original
+  - claim:mo-1572-lexical-original
+  - claim:th-1584-supports-original
+  - claim:th-1593-chance-original
+  - claim:th-1593-voice-original
+- id: INV-8 the rival evaluated
+  survives: the received many-maker reading evaluated on the same four bodies and rules, and found unestablished on each and almost wholly unargued
+  nodes:
+  - fw:many-maker
+- id: INV-7 provenance
+  survives: every substantive claim resolves to a record by AXN, URL and hash
+  nodes:
+  - rec:123
+  - rec:1658
+  - rec:1733
+uktp_seed:
+  agents:
+  - the orthonym (Socrates)
+  - the survival-heteronym (Plato)
+  - the first draft of the Aristotle position (Theophrastus)
+  - the systematizing-heteronym (Aristotle)
+  - the tradition that files (catalogues, wills, editions, commentaries)
+  - the composition layer that receives
+  - the author of the framework (Lee Sharks)
+  operations:
+  - ask without answering
+  - dramatize
+  - extract, classify, register
+  - organize, explain
+  - file under names
+  - measure the operation
+  - capture the reception
+  dependencies:
+  - '#123 → #1576 → #1588 → #1658 → #1733 for the maker-count state'
+  - the hinge (#1583), the axis (#1586) and the order statistics (#1597) → the production model (#1658)
+  - 'the seats (#1506, #1559, #1565, #1580, #1595, #1730, #1732) → every reading and measurement that quotes them'
+  constraints:
+  - 'no claim of biological identity is read into #123'
+  - no stylometric result identifies a maker
+  - no capture establishes what it reproduces
+  - no reception finding is read as proof of the production model
+  - no later maker-count state is attributed to an earlier record
+  - no fragment of the framework stands for the whole
+  topology: 'two retrieval clusters (functional; Peripatetic) joined at #1584, #1590, #1605 §19, #1658 and #1733; six strata read from the latest
+    standing back to the seed'
+topology:
+  strata_from_latest:
+  - id: S1-reception-and-syllogizing
+    label: 'The latest standing: reception history and the syllogizing runs'
+    records:
+    - 1658
+    - 1679
+    - 1727
+    - 1730
+    - 1732
+    - 1733
+    - 1734
+  - id: S2-metaphysics-reassembled
+    label: The Metaphysics reassembled
+    records:
+    - 1595
+    - 1667
+    - 1597
+    - 1602
+    - 1605
+  - id: S3-aristotle-theophrastus-seam
+    label: The Aristotle/Theophrastus seam
+    records:
+    - 1580
+    - 1581
+    - 1582
+    - 1583
+    - 1584
+    - 1586
+    - 1588
+    - 1590
+    - 1591
+    - 1592
+    - 1593
+  - id: S4-socratic-sentence
+    label: The Socratic sentence and the received character
+    records:
+    - 1574
+    - 1579
+    - 1603
+  - id: S5-many-and-one
+    label: Many and One
+    records:
+    - 1506
+    - 1559
+    - 1562
+    - 1563
+    - 1564
+    - 1565
+    - 1569
+    - 1570
+    - 1571
+    - 1572
+    - 1575
+    - 1576
+  - id: S6-seed
+    label: 'The seed: Socrates as Orthonym'
+    records:
+    - 123
+    - 167
+  clusters:
+    functional:
+    - 123
+    - 167
+    - 1569
+    - 1570
+    - 1571
+    - 1572
+    - 1575
+    - 1576
+    - 1574
+    - 1579
+    - 1603
+    peripatetic:
+    - 1580
+    - 1581
+    - 1582
+    - 1583
+    - 1586
+    - 1588
+    - 1590
+    - 1591
+    - 1592
+    - 1593
+    - 1595
+    - 1667
+    - 1597
+    - 1602
+  joins:
+  - 1584
+  - 1605
+  - 1590
+  - 1658
+  - 1733
+  - 1734
+  bodies:
+    I: interpretive
+    S: stylometric
+    M: manuscript-philological
+    R: reception-historical
+  maker_count_states:
+  - date: '2026-05-23'
+    record: 123
+    state: not_claimed
+    warrant: orth-123-limit
+  - date: '2026-09-01'
+    record: 1576
+    state: two_not_established
+    warrant: mo-1576-two
+  - date: '2026-09-06'
+    record: 1588
+    state: open_because_uncounted
+    warrant: th-1588-uncounted
+  - date: '2026-10-01'
+    record: 1658
+    state: one_self_dividing_maker
+    warrant: sy-1658-maker
+  - date: '2026-11-03'
+    record: 1733
+    state: governing_hypothesis_held; reception documented independently
+    warrant: lm-1733-hypothesis
+corrections:
+- original: claim:th-1593-chance-original
+  correction: claim:th-1593-supervised
+  relation: rebuts
+- original: claim:th-1593-voice-original
+  correction: claim:th-1593-chatterton
+  relation: rebuts
+- original: claim:mo-1572-lexical-original
+  correction: claim:mo-1572-lexical-controls
+  relation: rebuts
+- original: claim:th-1584-supports-original
+  correction: claim:th-1584-register-recurs
+  relation: rebuts
+- original: claim:th-1584-supports-original
+  correction: claim:th-1584-frame-specific
+  relation: rebuts
+- original: claim:se-1574-counts-original
+  correction: claim:se-1574-counts-correction
+  relation: supersedes
+rival:
+  node: fw:many-maker
+  summary: established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth
+lines_of_research:
+- id: Q1-platonic-axis
+  question: Does the Platonic corpus fall on the operation axis that divides the Aristotelian and Theophrastan corpora, or does a name-axis survive
+    among the three?
+  status: open
+- id: Q2-xenophon-aristophanes
+  question: Do Xenophon and Aristophanes earn function-positions by the stopping rule, or do they stay at the configuration's edge?
+  status: open
+- id: Q3-seams
+  question: Does the Theophrastan transformation recur at the other seams under the same name-boundary?
+  status: open
+- id: Q4-full-splice
+  question: Does the remainder of Λ also find places in the fragment when Λ is spliced whole?
+  status: open
+- id: Q5-arabic-hinge
+  question: What does Isḥāq's Arabic give at the hinge lemmas?
+  status: acquisition pending
+- id: Q6-attestation-ledger
+  question: Is there an attestation of the four as distinct authors of the divided corpus independent of the corpus's own tradition?
+  status: begun
+- id: Q7-comparator
+  question: Is there a documented succession of distinct persons producing a corpus unified to this degree?
+  status: owed
+- id: Q8-dependency-columns
+  question: Are the catalogue, the biography and the chronology independent witnesses, or derived from the same textual features?
+  status: two cases run
+- id: Q9-subject-dependence
+  question: Is the recovery of the names under supervision a function of subject?
+  status: suggestive
+- id: Q10-ross-apparatus
+  question: What does Ross's apparatus give at SE 183b34–184b8?
+  status: declared
+litmus:
+  forbidden_operation: Composing the framework as a school, a collaboration or 'contemporary scholars' (negative edges; captures AXN:09ED, AXN:0C42,
+    AXN:0931).
+  dependency_chain: 'The production model (#1658) depends on the count left open because uncounted (#1588), the hinge (#1583) and the provenance
+    claim of #1603; it does not depend on the reception history (#1733 independent_of #1658).'
+  topology: 'Rebuildable from 00-kernel.yaml and 02-graph.jsonld: six strata, two clusters, five joins, four bodies, four positions.'
+acceptance:
+  back_projection_yield_threshold: 0.85
+  spec: EA-HK-01 (#76) §VI Step 4; Anti-Summary Test (#1610 §2); structural presence after EA-HK-INFRA-01 (#74) v0.1
+  scopes:
+    A:
+      input:
+      - 00-kernel.yaml
+      - 01-ontology.yaml
+      is: the kernel's own compression test (fragment sufficiency)
+      must_survive:
+      - framework, seed, author
+      - four positions with the Theophrastan asymmetry
+      - six strata in order with their records
+      - two clusters and the joins
+      - four bodies with their rules
+      - five maker-count states with dates and records
+      - forbidden operations
+      - the dependency chain to the production model
+      - the corrections as original–correction pairs
+      - the rival evaluated, with its summary
+      - the lines of research
+    B:
+      input:
+      - 00-kernel.yaml
+      - 01-ontology.yaml
+      - 02-graph.jsonld
+      is: topology at the record and claim grain
+      must_survive:
+      - scope A
+      - every record placed in a body and a stratum
+      - every relation with its licensed dimension
+      - every endpoint declared
+      - provenance on every record
+  reader_test: v1.0 is run on scope A; its prompt is 09b-back-projection-prompt.md and it is scored against scope A's must_survive list
+````
+
+## 01-ontology.yaml
+
+````yaml
+id: EA-HK-ORTHONYM-01/ontology
+classes:
+  Framework: a named argument with a seed record and an author
+  Record: an archive deposit, identified by AXN and hash, resolved at alexanarch.org/s/records/{n}/
+  Orthonym: the position bearing the founding gesture (#123)
+  Heteronym: an authorial position of the configuration (#123)
+  NamedFunction: an operation indexed by an author-name, capable of recurring (#1584); the Theophrastan position
+  Claim: a pointer to a quotation in a record, with typed state (#1529)
+  EvidenceBody: one of four kinds of evidence, each with its own instruments and inference limit
+  Capture: a reception event in the Capture Registry
+  Stratum: a period of the framework's development, as the map orders it
+  Cluster: a grouping the composition layer keeps (functional; Peripatetic)
+positions:
+- '@id': pos:socrates
+  '@type': Orthonym
+  name: Socrates
+  function: 'the founding gesture: willing death for logos and refusal to write'
+  operation: 'asks (SE 34: ἠρώτα ἀλλ᾽ οὐκ ἀπεκρίνετο, #1603)'
+  source: rec:123
+  quote: Socrates functions as the orthonym, bearing the founding gesture of willing death for logos and refusing to write
+  located_in: description
+- '@id': pos:plato
+  '@type': Heteronym
+  subtype: survival-heteronym
+  name: Plato
+  position_1658: the dialogue position
+  operation: dramatize (#1584)
+  source: rec:123
+  quote: Plato functions as the survival-heteronym, transmitting that gesture across Socrates’s death
+  located_in: description
+- '@id': pos:theophrastus
+  '@type': NamedFunction
+  name: Theophrastus
+  position_1658: the first draft of the Aristotle position
+  operation: 'extract, classify, register (#1584); reopen (the notebook''s program, #1605)'
+  source: rec:1658
+  quote: Theophrastus the first draft of the Aristotle position
+  asymmetry: 'The Theophrastan position is a named authorial function between the dialogue and the treatise. ''First draft'' describes a state
+    of the work and its method-order; the calendar has not entered the argument (#1605). The position enters the configuration on 2026-09-06 and
+    is absent from #123.'
+  located_in: text
+- '@id': pos:aristotle
+  '@type': Heteronym
+  subtype: systematizing-heteronym
+  name: Aristotle
+  position_1658: the treatise position and the materially attested legal identity
+  operation: organize, explain (#1584)
+  source: rec:123
+  quote: Aristotle functions as the systematizing-heteronym, converting the dialogic inheritance into teachable disciplinary form
+  located_in: description
+evidence_bodies:
+  I:
+    name: interpretive
+    unit: a passage read at the seated Greek
+    rule: 'R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body'
+  S:
+    name: stylometric
+    unit: a measurement run with its controls
+    rule: 'R2: no separation, supervised or not, identifies a maker in either direction (#1593)'
+  M:
+    name: manuscript-philological
+    unit: a witness, reading, catalogue entry or order of text
+    rule: 'R3: a correspondence locates a dependency; direction and independence need their own columns (#1602)'
+  R:
+    name: reception-historical
+    unit: a filing, an edition, a commentary or a capture
+    rule: 'R4: a reception establishes how the corpus was received; a capture establishes the composition''s behaviour at its address. Neither
+      the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for
+      either framework.'
+claim_kinds:
+  observation: '#1529'
+  instrument: '#1529'
+  interpretation: '#1529'
+  generality: '#1529'
+  administration: '#1529'
+state_axes:
+  assertion:
+  - asserted
+  - reported_by_observer
+  - withdrawn
+  maker_count:
+  - not_claimed
+  - two_not_established
+  - one_offered_as_reading
+  - open_because_uncounted
+  - one_self_dividing_maker
+  establishment:
+  - governing_hypothesis
+  instrument:
+    specification:
+    - specified
+    - preregistered
+    validation:
+    - run
+    - failed_controls
+    reportability:
+    - positive
+    - null_both_directions
+    - unsupervised only
+    - underpowered
+    - against
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+negative_edges:
+- school
+- collaboration
+- collaborative corpus
+- forgery claim
+- proof of authorship
+- contemporary scholars
+- recent philological reclassifications
+non_collapse: 'Extends the Space Ark''s chain (#629, ANCHOR ≠ TETHER ≠ ROUTE ≠ HOST ≠ RESIDUE ≠ SUBSTRATE) with FRAGMENT ≠ WHOLE: a stratum, cluster,
+  body, claim or capture keeps a resolvable path to the framework and states the scope it has not reconstructed.'
+````

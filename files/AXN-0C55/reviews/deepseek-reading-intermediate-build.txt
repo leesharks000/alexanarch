@@ -1,0 +1,40 @@
+This is a substantial package, and it does what the specification sets out to do: it turns a prose framework map into a machine-traversable, hash-bound, claim-local kernel that a builder can regenerate from the registry at any later state. The first instance holds 40 records in six strata, four positions, 49 claims (five withdrawn and kept), 114 edges, 16 captures and 99 events across two timelines, and the verifier reports eleven structural tests passing and a back-projection v0.1 yield of 16/16.
+
+Here is what needs pinning before deposit, and what the package already earns.
+
+### 1. Two count discrepancies to fix in the spec
+
+The specification contradicts itself in two places, and both are easy fixes:
+
+- **Structural tests.** §2's package table says "ten structural tests"; §8 says "eleven structural tests"; the verifier runs T1–T11. Update §2 to "eleven structural tests" and keep §8 as written.
+- **Back-projection elements.** §4.1 says "The verifier scores fifteen elements"; `10-verification.json` scores sixteen (INV-8 "the rival evaluated" was added after the spec sentence was written). Update §4.1 to sixteen and let §8's "16 of 16" stand.
+
+These are the only places the spec and the files disagree. Everything else lines up.
+
+### 2. The v1.0 back-projection is correctly open — and it is the next test to run
+
+The package is honest about this: v0.1 (structural presence) is done at 16/16; v1.0 (reconstructive validity, a reader given the kernel alone who has not seen the records) is not run. The prompt `09b-back-projection-prompt.md` is the instrument. That is the right state to be in — the v0.1 yield establishes presence, not that a reader can rebuild the forbidden operation, the dependency chain and the topology from the two files alone. Until that reader runs, the kernel has demonstrated structural presence, which is what the spec says it demonstrates.
+
+If you want to run it now, the prompt is self-contained: paste `00-kernel.yaml` and `01-ontology.yaml`, ask for the five items, score against `02-graph.jsonld` and `03-claims.jsonl`. That is the missing empirical result.
+
+### 3. The facsimiles: confirm the full one is what is presented at deposit
+
+The core facsimile gives the specification, `00-kernel.yaml`, `01-ontology.yaml`, `03-claims.jsonl`, `08-traversal.yaml`, `09-tests.yaml`, `10-verification.json`, the builder and the verifier in full, and represents the three generated data files (`02-graph.jsonld`, `05-temporal.jsonl`, `07-captures.jsonl`) by structure and samples. That is fine as a *core* facsimile; it is not fine as the *deposited* package. Confirm before deposit that the full facsimile (`EA-HK-ORTHONYM-01-facsimile.md`) carries every file whole, and that the full facsimile's SHA-256s in `11-integrity.yaml` match the files as deposited. The full facsimile's file listing already shows 42,877 bytes for the builder and 7,937 for the verifier, matching the two files given in §3 of the core facsimile, so the two facsimiles are consistent — just confirm the deposit uses the full one.
+
+### 4. The one substantive gap: the map and the kernel need to be deposited as a pair, or the kernel's `isDerivedFrom` needs its source
+
+The spec §5.5 says "deposit the kernel as its own record, with the source framework's record as its `isDerivedFrom`." The kernel's own framework block carries `"map": "EA-MPAI-ORTHONYM-01"`, so the kernel points at the map. The map's §11 canonical edges carry `EA-MPAI-ORTHONYM-01 | has kernel | EA-HK-ORTHONYM-01`, so the map points at the kernel. That is the right bidirectional relation.
+
+What needs deciding is whether the map and the kernel are deposited as **one deposit** (the map as the human-readable record, the kernel as the machine-traversable package inside it) or **two deposits** (the map at its own record, the kernel at its own record with the map as `isDerivedFrom`, and the map's §11 edge as the reciprocal). The spec's §0 says the kernel "adds to the map" and "the human map stays where it is, as the framework's MPAI, and points to the kernel" — that reads as two deposits. Confirm that is the ruling and give the map's §11 edge the kernel's actual deposit number when it is issued.
+
+### 5. The theoretical payoff, stated plainly
+
+The package's most significant innovation is not the file structure — that follows the archive's existing protocols. It is **§3 rule 9**, which makes the received many-maker reading a node evaluated on the same four bodies and rules as the framework. This is what makes the kernel falsifiable from both sides. The kernel is not a claim that the framework is true; it is a claim that the framework is reconstructible from any fragment *and* that its rival is evaluable on the same terms. If the rival turns out to be established on one body, the kernel can carry that status too. If it turns out to be unestablished on all four — which is what §7.9 of the map and the `fw:many-maker` node in `02-graph.jsonld` currently record — the kernel records that as a finding, not a verdict. The kernel does not say the framework is right; it says what would have to be true for either to be right, and it makes both checkable against the records.
+
+That is the substantive contribution. The rest — two timelines, executable inference limits, FRAGMENT ≠ WHOLE, adversarial tests from the captures — are the means by which the kernel carries that contribution without overclaiming.
+
+### 6. Deposit readiness
+
+Fix the two counts in the specification (ten→eleven, fifteen→sixteen). Confirm the full facsimile is what is deposited, and that `11-integrity.yaml` hashes match the deposited bytes. Confirm the map and the kernel are two deposits with reciprocal edges. Then run v1.0 back-projection once, with a reader who has not seen the records, and record the yield — even if it is below 0.85, that is the finding the spec asks for and the verifier does not need to be right about it to be honest about it.
+
+The kernel is the first instance of a specification that has been written and tested on a real framework. That is the state the package is in, and it is deposit-ready once the counts are fixed and the facsimile is confirmed.

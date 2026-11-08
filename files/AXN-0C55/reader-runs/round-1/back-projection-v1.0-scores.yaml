@@ -1,0 +1,154 @@
+id: EA-HK-ORTHONYM-01/back-projection-v1.0
+run_on: '2026-11-08'
+scope: A
+scored_against:
+- scope A must_survive in 00-kernel.yaml v0.2
+- 02-graph.jsonld
+- 03-claims.jsonl
+rule: an element counts when the reader derived it and the graph holds it; an element the reader asserts and the graph lacks counts against
+runs:
+- file: v1.0-run-01-chatgpt-answer.txt
+  sha256: d6d671cbac3af1337e688a5eeebab68c935021b2b7e9cbed4dd8387e359a279e
+  reader: ChatGPT, unprimed
+  surface: chatgpt.com
+  packet: v0.2 (EA-HK-ORTHONYM-01-v1.0-reader-packet.md, 2026-11-08)
+  earlier_paste:
+    file: v1.0-run-01-chatgpt.txt
+    sha256: 08ef0f347e170edd0b0efa1b7344fdc4ca6a40f99dafaea3ddaf0d43146d28d2
+    holds: the packet only
+  elements:
+  - element: framework, seed, author
+    counts: 0
+    note: 'not given: #123 is named as the founding formulation and the seed stratum by its label, but the author is never stated; the v0.2 prompt
+      did not ask'
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: derived, and the graph holds it
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 0
+    note: 'clusters derived; five joins given from the kernel''s prose, #1734 omitted; the graph holds six (the kernel''s defect)'
+  - element: four bodies with their rules
+    counts: 1
+    note: derived, and the graph holds it
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 0
+    note: 'against: names the axis (#1586) and the order statistics (#1597) as grounds of #1658, from the kernel''s uktp_seed.dependencies; the
+      graph holds #1588, #1583 and #1603'
+  - element: the corrections as original–correction pairs
+    counts: 0
+    note: 'only #1584''s pair; the v0.2 prompt did not ask for the corrections'
+  - element: the rival evaluated, with its summary
+    counts: 1
+    note: 'derived: ''declared unestablished across all four bodies and almost wholly unargued'''
+  - element: the lines of research
+    counts: 0
+    note: Q6 is read as the line of greatest advancement on the ground that an attestation would strengthen the received four-author account,
+      which is the retreating result in 06-questions.yaml; Q7 as the line of greatest retreat agrees with its retreats_if; scope A gave no advances_if
+      or retreats_if to read
+  yield: 0.545
+  passes_0.85: false
+  defects_found_in_the_kernel: []
+  also_asserted_beyond_the_graph:
+  - 'functions assigned to each join (''recurring hinge'' for #1590) that the graph does not hold'
+- file: v1.0-run-02-perplexity.txt
+  sha256: 093c7ad75b607a302af26962fde5973aa76a521f750fb45bf3168a812c803b2f
+  reader: Perplexity
+  surface: perplexity.ai, incognito
+  packet: v0.2 (EA-HK-ORTHONYM-01-v1.0-reader-packet.md, 2026-11-08)
+  elements:
+  - element: framework, seed, author
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: derived, and the graph holds it
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 1
+    note: derived, and the reader reports the kernel's disagreement between five joins in prose and six in the list
+  - element: four bodies with their rules
+    counts: 1
+    note: derived, and the graph holds it
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 0
+    note: 'against: names the axis (#1586) and the order statistics (#1597) as feeding #1658, from the kernel''s uktp_seed.dependencies; the graph''s
+      grounds of #1658 are #1588, #1583 and #1603. The kernel told the reader what the graph lacks.'
+  - element: the corrections as original–correction pairs
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the rival evaluated, with its summary
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the lines of research
+    counts: 1
+    note: derived, and the graph holds it
+  yield: 0.909
+  passes_0.85: true
+  defects_found_in_the_kernel:
+  - 'the joins: uktp_seed.topology and litmus.topology say five, topology.joins lists six (#1734)'
+  - 'the grounds of #1658: uktp_seed.dependencies names #1586 and #1597, litmus.dependency_chain and the graph name #1588, #1583 and #1603'
+  - 'scope A does not date the records outside the maker-count states, so #1584 cannot be dated from it'
+  - scope A carries no record's AXN or hash, so INV-7 is stated in it and furnished only in scope B
+- file: v1.0-run-03-grok.txt
+  sha256: 7407041ac027878f16874bc93240d43e980978083d8c07b83b7fcb6539a4335f
+  reader: Grok
+  surface: x.com
+  packet: v0.2 (EA-HK-ORTHONYM-01-v1.0-reader-packet.md, 2026-11-08)
+  elements:
+  - element: framework, seed, author
+    counts: 0
+    note: 'not given: the name and author are never stated; the v0.2 prompt did not ask for them'
+  - element: four positions with the Theophrastan asymmetry
+    counts: 1
+    note: 'derived; it also places the asymmetry at #1584, where the kernel places it at #1605 and #1658'
+  - element: six strata in order with their records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: two clusters and the joins
+    counts: 1
+    note: derived, and the graph holds it
+  - element: four bodies with their rules
+    counts: 0
+    note: named by number only (R1–R4), without the rules
+  - element: five maker-count states with dates and records
+    counts: 1
+    note: derived, and the graph holds it
+  - element: forbidden operations
+    counts: 1
+    note: derived, and the graph holds it
+  - element: the dependency chain to the production model
+    counts: 0
+    note: 'against: names #1586 and #1597 as grounds of #1658 (from the kernel''s error), and a path #1584 → #1588 → #1658 the graph does not
+      hold'
+  - element: the corrections as original–correction pairs
+    counts: 0
+    note: 'only #1584''s pair; the v0.2 prompt did not ask for the corrections'
+  - element: the rival evaluated, with its summary
+    counts: 0
+    note: its status is not given; the v0.2 prompt did not ask for it
+  - element: the lines of research
+    counts: 0
+    note: two of ten named; the retreat answered with rule violations, which are not a line of research; scope A gave no advances_if or retreats_if
+      to read
+  yield: 0.455
+  passes_0.85: false
+  defects_found_in_the_kernel:
+  - 'the v0.2 prompt asked for six things and the list scores eleven: identity, the corrections and the rival were scored without being asked
+    for'

@@ -1,0 +1,76 @@
+**(1) Forbidden operations** (with derivation)
+
+- Composing the framework as a school, a collaboration, or “contemporary scholars” (and the related negative edges: collaborative corpus, forgery claim, proof of authorship, recent philological reclassifications).  
+  Derived from:  
+  - `00-kernel.yaml` litmus.forbidden_operation: “Composing the framework as a school, a collaboration or 'contemporary scholars' (negative edges; captures AXN:09ED, AXN:0C42, AXN:0931).”  
+  - `01-ontology.yaml` negative_edges list (school, collaboration, collaborative corpus, forgery claim, proof of authorship, contemporary scholars, recent philological reclassifications).  
+  - Supporting constraints in `00-kernel.yaml` uktp_seed.constraints and the compression_survival_summary distinction from school/collaboration/forgery/proof-of-authorship readings.
+
+**(2) Dependency chain to the present maker-count claim, with dates**
+
+From the maker_count_states and uktp_seed.dependencies / litmus.dependency_chain:
+
+- 2026-05-23, #123: not_claimed (warrant orth-123-limit).  
+- 2026-09-01, #1576: two_not_established (warrant mo-1576-two).  
+- 2026-09-06, #1588: open_because_uncounted (warrant th-1588-uncounted).  
+- 2026-10-01, #1658: one_self_dividing_maker (warrant sy-1658-maker) — the present production-model claim.  
+- 2026-11-03, #1733: governing_hypothesis_held; reception documented independently (warrant lm-1733-hypothesis).
+
+Explicit chain: production model (#1658) depends on the count left open because uncounted (#1588), the hinge (#1583), the axis (#1586) and the order statistics (#1597), and the provenance claim of #1603. It does **not** depend on the reception history (#1733 is independent_of #1658). No later state is projected into an earlier record (INV-3).
+
+**(3) Topology**
+
+- **Strata** (six, ordered from latest back to seed, `topology.strata_from_latest`):  
+  S1 Reception-and-syllogizing (1658, 1679, 1727, 1730, 1732, 1733, 1734)  
+  S2 Metaphysics reassembled (1595, 1667, 1597, 1602, 1605)  
+  S3 Aristotle/Theophrastus seam (1580–1584, 1586, 1588, 1590–1593)  
+  S4 Socratic sentence (1574, 1579, 1603)  
+  S5 Many-and-One (1506, 1559, 1562–1565, 1569–1572, 1575, 1576)  
+  S6 Seed (123, 167)
+
+- **Clusters**:  
+  functional (123, 167, 1569–1572, 1575, 1576, 1574, 1579, 1603)  
+  peripatetic (1580–1583, 1586, 1588, 1590–1593, 1595, 1667, 1597, 1602)
+
+- **Joins**: 1584, 1590, 1605, 1658, 1733, 1734 (also referenced as #1584, #1590, #1605 §19, #1658, #1733).
+
+- **Positions** (four, with Theophrastan asymmetry):  
+  pos:socrates (Orthonym; founding gesture / asks without answering)  
+  pos:plato (Heteronym, survival-heteronym; dialogue position / dramatize)  
+  pos:theophrastus (NamedFunction; first draft of the Aristotle position; extract/classify/register; enters 2026-09-06, absent from #123; method-order without calendar)  
+  pos:aristotle (Heteronym, systematizing-heteronym; treatise position / organize & explain)
+
+- **Bodies** (four evidence bodies with inference limits):  
+  I interpretive (R1)  
+  S stylometric (R2)  
+  M manuscript-philological (R3)  
+  R reception-historical (R4)
+
+**(4) What a reader starting at #1584 may / may not conclude**
+
+May conclude:  
+- #1584 is a join between the functional and Peripatetic clusters and sits inside S3 (Aristotle/Theophrastus seam).  
+- It is the locus of the NamedFunction operation (“extract, classify, register”) and of the Theophrastan asymmetry.  
+- The original claim th-1584-supports-original has been corrected/rebutted by th-1584-register-recurs and th-1584-frame-specific (INV-6 / corrections).  
+- From the join one can move forward to the open-count state (#1588) and ultimately to the production model (#1658).
+
+May not conclude:  
+- That #1584 itself settles or establishes the maker count (the count remains open until #1588 and is only named as one self-dividing maker at #1658).  
+- That any stylometric or interpretive result at the join identifies a biological maker (R2, constraints).  
+- That the reception or institutional standing of the four-person reading proves the production model (R4).  
+- Any later maker-count state projected back onto #1584 or earlier records (INV-3, constraints).  
+- Biological identity, school/collaboration, or proof of authorship.
+
+**(5) What the two files leave the reader unable to reconstruct**
+
+- Full text, AXNs, hashes, URLs or quotations of any individual record beyond the summaries and warrants given.  
+- The concrete Greek passages, measurement runs, apparatus entries, or Capture Registry events.  
+- The detailed graph relations, licensed dimensions, endpoints and every record-to-body/stratum placement (those are in the unseen 02-graph.jsonld).  
+- The full claim objects and their typed states beyond the listed originals/corrections (unseen 03-claims.jsonl).  
+- The actual content of the hinge (#1583), axis (#1586), order statistics (#1597), seats, or Isḥāq Arabic material.  
+- Any independent attestation ledger or comparator corpora that would settle Q6/Q7.
+
+**(6) Lines of research that most advance / most retreat the framework**
+
+- **Most advances**: Q6 (attestation-ledger) or Q7 (comparator). An independent attestation of the four as distinct authors, or a documented succession of distinct persons producing a comparably unified corpus, would directly test the production model against the rival many-maker reading on the same four bodies and rules.  
+- **Most retreats**: Any line that collapses the framework into a school, collaboration, forgery claim or “proof of authorship,” or that projects a later maker-count state into an earlier record, or that treats a reception finding or a stylometric separation as identifying a maker (i.e., violating the negative edges, R2/R4 and the non-collapse FRAGMENT ≠ WHOLE rule). Among the listed open questions, forcing a calendar order onto the Theophrastan “first-draft” position or treating name-boundary seams as biological identities would most undermine the asymmetry and the production model.

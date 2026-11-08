@@ -1,0 +1,128 @@
+id: EA-HK-ORTHONYM-01/ontology
+classes:
+  Framework: a named argument with a seed record and an author
+  Record: an archive deposit, identified by AXN and hash, resolved at alexanarch.org/s/records/{n}/
+  Orthonym: the position bearing the founding gesture (#123)
+  Heteronym: an authorial position of the configuration (#123)
+  NamedFunction: an operation indexed by an author-name, capable of recurring (#1584); the Theophrastan position
+  Claim: a pointer to a quotation in a record, with typed state (#1529)
+  EvidenceBody: one of four kinds of evidence, each with its own instruments and inference limit
+  Capture: a reception event in the Capture Registry
+  Stratum: a period of the framework's development, as the map orders it
+  Cluster: a grouping the composition layer keeps (functional; Peripatetic)
+positions:
+- '@id': pos:socrates
+  '@type': Orthonym
+  name: Socrates
+  function: 'the founding gesture: willing death for logos and refusal to write'
+  operation: 'asks (SE 34: ἠρώτα ἀλλ᾽ οὐκ ἀπεκρίνετο, #1603)'
+  source: rec:123
+  quote: Socrates functions as the orthonym, bearing the founding gesture of willing death for logos and refusing to write
+  located_in: description
+- '@id': pos:plato
+  '@type': Heteronym
+  subtype: survival-heteronym
+  name: Plato
+  position_1658: the dialogue position
+  operation: dramatize (#1584)
+  source: rec:123
+  quote: Plato functions as the survival-heteronym, transmitting that gesture across Socrates’s death
+  located_in: description
+- '@id': pos:theophrastus
+  '@type': NamedFunction
+  name: Theophrastus
+  position_1658: the first draft of the Aristotle position
+  operation: 'extract, classify, register (#1584); reopen (the notebook''s program, #1605)'
+  source: rec:1658
+  quote: Theophrastus the first draft of the Aristotle position
+  asymmetry: 'The Theophrastan position is a named authorial function between the dialogue and the treatise. ''First draft'' describes a state
+    of the work and its method-order; the calendar has not entered the argument (#1605). The position enters the configuration on 2026-09-06 and
+    is absent from #123.'
+  located_in: text
+- '@id': pos:aristotle
+  '@type': Heteronym
+  subtype: systematizing-heteronym
+  name: Aristotle
+  position_1658: the treatise position and the materially attested legal identity
+  operation: organize, explain (#1584)
+  source: rec:123
+  quote: Aristotle functions as the systematizing-heteronym, converting the dialogic inheritance into teachable disciplinary form
+  located_in: description
+evidence_bodies:
+  I:
+    name: interpretive
+    unit: a passage read at the seated Greek
+    rule: 'R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body'
+  S:
+    name: stylometric
+    unit: a measurement run with its controls
+    rule: 'R2: no separation, supervised or not, identifies a maker in either direction (#1593)'
+  M:
+    name: manuscript-philological
+    unit: a witness, reading, catalogue entry or order of text
+    rule: 'R3: a correspondence locates a dependency; direction and independence need their own columns (#1602)'
+  R:
+    name: reception-historical
+    unit: a filing, an edition, a commentary or a capture
+    rule: 'R4: a reception establishes how the corpus was received; a capture establishes the composition''s behaviour at its address. Neither
+      the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for
+      either framework.'
+claim_kinds:
+  observation: '#1529'
+  instrument: '#1529'
+  interpretation: '#1529'
+  generality: '#1529'
+  administration: '#1529'
+state_axes:
+  assertion:
+  - asserted
+  - reported_by_observer
+  - withdrawn
+  maker_count:
+  - not_claimed
+  - two_not_established
+  - one_offered_as_reading
+  - open_because_uncounted
+  - one_self_dividing_maker
+  establishment:
+  - governing_hypothesis
+  notes:
+    one_offered_as_reading: 'a claim state, held by #1576''s offer of one maker as a reading beside the record''s state, two_not_established;
+      no dated state of the framework takes it'
+    dimensions: 'a relation''s licensed dimension names the state it may change: establishment reads maker_count and establishment; validation
+      reads instrument.validation; scope reads a claim''s scope; identity reads its id and target; history reads its introduction and assertion'
+  instrument:
+    specification:
+    - specified
+    - preregistered
+    validation:
+    - run
+    - failed_controls
+    reportability:
+    - positive
+    - null_both_directions
+    - unsupervised only
+    - underpowered
+    - against
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+negative_edges:
+- school
+- collaboration
+- collaborative corpus
+- forgery claim
+- proof of authorship
+- contemporary scholars
+- recent philological reclassifications
+non_collapse: 'Extends the Space Ark''s chain (#629, ANCHOR ≠ TETHER ≠ ROUTE ≠ HOST ≠ RESIDUE ≠ SUBSTRATE) with FRAGMENT ≠ WHOLE: a stratum, cluster,
+  body, claim or capture keeps a resolvable path to the framework and states the scope it has not reconstructed.'
