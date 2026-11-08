@@ -153,6 +153,7 @@ Each reading of a hologram is a row of table `hologram_evaluations`, with its tr
 | HK-ORTH-R2-grok | reconstruction | Grok, fresh thread | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-ORTHONYM-01 v0.4 |
 | HK-ORTH-R2-qwen3.7-plus | reconstruction | Qwen3.7-Plus, signed out, incognito | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.909 | — | EA-HK-ORTHONYM-01 v0.4 |
 | HK-ORTH-L1-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.0) and #1754 (EA-HK-ORTHONYM-01 v1.0), read on… | 3 retractions by the reader | ONE_SIDED_BURDEN, RIVAL_BY_POSSIBILITY, RIVAL_REDUCED, OBJECT_CHANGED, PROGRAMME_RESTATED, CALENDAR_DRIFT, DEFINITION_DRIFT | EA-HK-FRAME-01 v1.1 (#1753) and EA-HK-ORTHONYM-01 v1.1 (#1754): the symmetric… |
+| HK-ORTH-L2-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.1) and #1754 (EA-HK-ORTHONYM-01 v1.1), read on… | 0 retractions by the reader | DEFINITION_DRIFT, PROGRAMME_RESTATED |  |
 
 ## The three literary claims
 
@@ -1114,7 +1115,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 | `operations` | 7 | one operation a mantle object specifies the work bears, with work, locus, grade, and what the conferring description keeps and loses |
 | `candidates` | 27 | one claimant in a contest mantle's field, as the mantle object records it |
 | `watch` | 5 | one address watched for a mantle object, as observed on its day |
-| `readings` | 18 | one reading of a determination by one reader in one session, coded for its direction and the collapses it commits |
+| `readings` | 19 | one reading of a determination by one reader in one session, coded for its direction and the collapses it commits |
 | `inspection_operations` | 19 | one reader task a mantle object specifies, with its output and an entry point; specified, not run |
 | `carriers` | 10 | one carrier of the dialectic, with the passage at its locus quoted, its statement type and grade |
 | `transmission_links` | 16 | one typed link of a strand, with statement type, grade, locus and whether it is publicly verifiable |
