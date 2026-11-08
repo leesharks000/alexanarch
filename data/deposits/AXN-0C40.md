@@ -1,14 +1,14 @@
 ---
 deposit_number: 1749
 hex: 0C40
-title: "Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v8)"
+title: "Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v9)"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-11-07
 content_type: Journal article (Machine-Mediated Reception Studies); reception study with an empirical protocol
 license: CC-BY-4.0
-substrate: "AI-assisted (substrate). Revised by TACHYON (Claude, Anthropic) under the direction of MANUS (Lee Sharks), from v7 and the author's reading of it, on 7 November 2026, after v7 was revised from v6, the two referee reports and the further review of its Appendix B, as the article's Production statement sets out: the archive's records, the capture registry, the seated editions and first printings read, the January output aligned with its witnesses (rebuild/closing-the-fragment/align.py), every quotation checked against its source. Lee Sharks set the terms, ruled on the design, corrected the account of the translation history, and supplied the record of the June sessions and of the January book. Rebekah Cranes is a heteronym of Lee Sharks, disclosed at first mention."
-version: v8
+substrate: "AI-assisted (substrate). v9 (8 November 2026) reconciled against the file the referees read, the corrected manuscript of 27 July, the ScholarOne proof of 30 July and the registry's July record, at the author's word. v8 revised by TACHYON (Claude, Anthropic) under the direction of MANUS (Lee Sharks), from v7 and the author's reading of it, on 7 November 2026, after v7 was revised from v6, the two referee reports and the further review of its Appendix B, as the article's Production statement sets out: the archive's records, the capture registry, the seated editions and first printings read, the January output aligned with its witnesses (rebuild/closing-the-fragment/align.py), every quotation checked against its source. Lee Sharks set the terms, ruled on the design, corrected the account of the translation history, and supplied the record of the June sessions and of the January book. Rebekah Cranes is a heteronym of Lee Sharks, disclosed at first mention."
+version: v9
 related_ids: "#337 (The Summarizer Becomes Translator, the January record); #1270 (ΦΑΙΝΕΤΑΙ ΜΟΙ); #281; #282 (Day and Night, 2013 text); #313; #324; #1167; #201, #1048, #1049 (the errata on the reconstruction); #1068 (The Obelus and the Tombstone); #1475, #1476, #1478; #1532; #1548 (Research Notes Towards the Future Reader); #1500, #1504, #1508 (EA-CORPORA-01: Catullus, Longinus, the diplomatic layer); #1738 (EA-CORPORA-33: Bergk, Edmonds); #1748 (EA-CORPORA-36 v1.1: the reception's sources); #1739 (EA-WG-CAPTURES-01 v12.559); #741 (The Evaluator Exists); #1054 (EA-MPAI-SAPPHO31-01); #1615"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -62,11 +62,11 @@ keywords:
   - MMRS
 ---
 
-# Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v8)
+# Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v9)
 
 ## Sappho 31 and the Composition Layer as a Surface of Classical Reception
 
-Lee Sharks · v8 · 7 November 2026 · Machine-Mediated Reception Studies · rebuilt in place from v7 (#1749), which was revised from v6 (CLASSREC-2026-062, declined 7 November 2026)
+Lee Sharks · v9 · 8 November 2026 · Machine-Mediated Reception Studies · reissued in place from v8 (#1749), rebuilt from v7, which was revised from v6 (CLASSREC-2026-062, declined 7 November 2026)
 
 ---
 
@@ -82,7 +82,7 @@ Keywords: Sappho; Fragment 31; classical reception; translation history; κῆν
 
 ### 0. Note on this version
 
-v6 was declined by Classical Receptions Journal on 7 November 2026 on two referee reports. v7 (#1749, the same day) answered every point in them (Appendix A) and a further review (Appendix B.1–B.4). Its revisions were of two kinds. Corrections of record stand in this version: the June frames and figure numbers, the dates of the translator's texts, the English baseline, the first printings seated as EA-CORPORA-36 (#1748). A second kind of change went past the evidence. v7 read the correspondences between the output's lines and Wharton's literal version as the route of composition, a compilation of two texts, and withdrew v6's finding that the output was composed. The record of the answer's displayed source (#337 §5.2) shows no Wharton, and a correspondence of wording establishes no source. v8 holds the alignment as correspondence (§5.3), restores v6's finding in corrected form, sets the January answer against the environment its displayed source built, and puts the reading of the edge as the poem's form at the centre of the argument (§6.6, §7). Appendix B.5 records what changed.
+v6 was declined by Classical Receptions Journal on 7 November 2026 on two referee reports. The reports were written on the file first sent (v6). A corrected manuscript, sent to the editor on 27 July before upload, withdrew v6's Figure 2, stated the 14 June record as a transcription, and showed the 27 July capture under its AI Overview label; the editor forwarded it, and the file uploaded on 30 July was v6 (ScholarOne, File 1, CRJ_Closing_the_Fragment_v6.docx). The author kept the correction out of the archive's public versions under the journal's rule on prior circulation, so v7 and v8 were rebuilt from v6 and took its defects for the manuscript's. v9 (8 November) restores what the correction of 27 July held, rewrites the account of the frame (§5.4, A.3) to the record, and states which of the reports' points the corrected manuscript had already met (Appendix A, B.7). v7 (#1749, the same day) answered every point in them (Appendix A) and a further review (Appendix B.1–B.4). Its revisions were of two kinds. Corrections of record stand in this version: the June frames and figure numbers, the dates of the translator's texts, the English baseline, the first printings seated as EA-CORPORA-36 (#1748). A second kind of change went past the evidence. v7 read the correspondences between the output's lines and Wharton's literal version as the route of composition, a compilation of two texts, and withdrew v6's finding that the output was composed. The record of the answer's displayed source (#337 §5.2) shows no Wharton, and a correspondence of wording establishes no source. v8 holds the alignment as correspondence (§5.3), restores v6's finding in corrected form, sets the January answer against the environment its displayed source built, and puts the reading of the edge as the poem's form at the centre of the argument (§6.6, §7). Appendix B.5 records what changed.
 
 ---
 
@@ -204,11 +204,11 @@ v6 called the output "a new English poem, composed rather than retrieved". Corre
 
 #### 5.4 The June series, corrected against the registry
 
-Between 13 and 15 June 2026 six captures concern the poem and its translator. v6 gave them in a table and eight figures; Reviewer 2 found the figures out of order, Figure 2 showing the wrong query, and two frames cropped above the query. Figures are now numbered in reading order, each caption has been checked against its frame, and each capture is cited by its registry slug.
+Between 13 and 15 June 2026 six captures concern the poem and its translator. The reports read v6, whose Figure 2 carried a frame of another query. That frame had been withdrawn on 27 July in a corrected manuscript sent to the editor before upload; the upload of 30 July carried v6. Reviewer 2 found the figures out of order and two frames cropped above the query, and both defects stood in the corrected manuscript as well. Figures are now numbered in reading order, each caption checked against its frame, each capture cited by its registry slug, and each frame taken uncropped from the registry where the registry holds it.
 
 The registry records these captures as signed in, and the surface of three of them as undetermined; v6 called them incognito and named their surfaces. The article follows the record. The operator recalls the June sessions as incognito but cannot point to a capture that contradicts the record.
 
-The record had its own defect. The registry's frame for the 14 June capture, sappho-rebekah-stanza, was a byte-identical copy of a frame from an unrelated capture, and its OCR transcript had been taken from that copy; this is the error that reached v6's Figure 2. The correct frame was found filed under another capture and has been restored to its record (Appendix A.3).
+The record had its own defect. The frame filed for the 14 June capture, sappho-rebekah-stanza, was a view of the query "johannes sigil grundrisse", misnamed when saved. The author found it on 27 July and withdrew its pointer (registry v9.22), the record standing on its contemporaneous transcription. The withdrawal note did not carry into the canonical registry, and the misnamed frame was again shown with the record. On 7 November an OCR search of the archive's 679 capture images found the true frame filed under another capture; its query, its timestamp of 10:57 PM and its text agree with the transcription, and it is restored to its record (Appendix A.3).
 
 | date | address | surface (registry) | what the composition did | figure |
 |---|---|---|---|---|
@@ -222,10 +222,10 @@ The record had its own defect. The registry's frame for the 14 June capture, sap
 
 [Fig. 1. 13 June 2026, query rebekah cranes diagrammatic poetics. Capture: rebekah-cranes.]
 [Fig. 2. 14 June 2026, 22:57, query sappho rebekah cranes stanza: "a contemporary literary response titled Day and Night: Conversations with Sapphic Desire by author Rebekah Crane". Capture: sappho-rebekah-stanza (frame restored 2026-11-07).]
-[Fig. 3. 15 June 2026, AI Overview, query kenotic truth sappho. Capture: kenotic-truth-sappho.]
-[Fig. 4. 15 June 2026, AI Overview, query sappho 31 future reader, the card as first shown, with the query. Capture: sappho-31-future-reader.]
+[Fig. 3. 15 June 2026, AI Overview, query kenotic truth sappho, the card as first shown, with the query. Capture: kenotic-truth-sappho (frame kenotic-truth-search.png).]
+[Fig. 4. 15 June 2026, AI Overview, query sappho 31 future reader, the card as first shown, with the query. Capture: sappho-31-future-reader (frame sappho-31-future-reader-search.png).]
 [Fig. 5. The same, expanded: the hedge "which some classicists and lyric theorists interpret" in one subordinate clause.]
-[Fig. 6. 15 June 2026, query cranes reconstructed sappho: "to reconstruct its missing fourth stanza". Capture: cranes-reconstructed-sappho.]
+[Fig. 6. 15 June 2026, query cranes reconstructed sappho: "to reconstruct its missing fourth stanza". Capture: cranes-reconstructed-sappho. The only frame held opens mid-answer; the query is given by the record, and no held frame shows it legibly.]
 
 Three features of the series bear on the argument. The layer is right about some things: it named a heteronym as a heteronym on 13 June and described Sapphic metre accurately on 14 June. Its failures are distinct operations: a name collapsed into a more frequent one, a superseded designation persisting the day after its correction, and a reading presented as the account. And its account of the translator changes with the question: fictional persona, novelist, celebrated translator, on three consecutive days.
 
@@ -237,8 +237,9 @@ Address A, "sappho 31 future reader".
 - 15 June: "By shifting focus from a present observer to you—the future reader who stumbles upon these fragmented lines millennia later—the poem transcends time", with the reading attributed in one clause to "some classicists and lyric theorists"; framing citations to the archive's own deposits.
 - 27 July: "Sappho Fragment 31 is famously read as a direct address to a future reader". The hedge is gone; a bullet attributes the reading to "Philological readings"; the framing chips are The Marginalian, the London Review of Books, Literary Matters, the Poetry Foundation and others, with the archive's deposits below the answer as source cards. The answer also states a principle of completion: "the incomplete text leaves a blank space that each new generation of readers must actively inhabit and complete."
 
-[Fig. 7. 27 July 2026, query sappho 31 future reader, expanded: "famously read as a direct address to a future reader". Capture: sappho-31-future-reader (observation of 27 July).]
-[Fig. 8. The same, continued: "the incomplete text leaves a blank space that each new generation of readers must actively inhabit and complete".]
+[Fig. 7. 27 July 2026, query sappho 31 future reader, unexpanded: the panel labelled "AI Overview" on the results page, the citation chip "The Marginalian +4". Capture: sappho-31-future-reader (observation of 27 July, frame overview-unexpanded-20260727.png).]
+[Fig. 8. The same, expanded: "famously read as a direct address to a future reader". The expanded view carries AI Mode chrome; the surface is the Overview's.]
+[Fig. 9. The same, continued: "the incomplete text leaves a blank space that each new generation of readers must actively inhabit and complete".]
 
 Address B, "sappho future reader".
 - 25 August: the answer opens with fragment 147, "Someone, I tell you, in another time will remember us"; the archive's essay "Sappho 31 ≠ Jealousy" stands first among the organic results.
@@ -447,7 +448,7 @@ A.1 Reviewer 1.
 
 (3) No separation between data generation and analysis. Accepted as a condition of the design, stated in §9, with the separation the protocol introduces in §8.8.
 
-(4) Opacity is not controlled for. Accepted as a condition of every outside study of these surfaces. §5.1 dates the captures against Google's published change of default; §2 defines the retrieval basin as an estimate with stated grounds; §5.2 claims publication, and §9 states that indexing is unobserved.
+(4) Opacity is not controlled for. The report's "July (AI Mode)" reads v6's caption; the corrected manuscript of 27 July showed the July capture unexpanded under its "AI Overview" label, and so does this version (§5.5, Fig. 7). The rest is accepted as a condition of every outside study of these surfaces. §5.1 dates the captures against Google's published change of default; §2 defines the retrieval basin as an estimate with stated grounds; §5.2 claims publication, and §9 states that indexing is unobserved.
 
 Programmatic essay or empirical study. Reviewer 1 asked the article to choose. Reception studies reads singular events, a colophon, a single printed edition, Catullus 51, against dated histories of other events; a capture registry makes machine reception available to the same procedure. The article therefore keeps both designs and asks more of each: the reception design in §6, read from seated editions and the English translation history; the empirical design in §5 and §8.
 
@@ -455,23 +456,23 @@ A.2 Reviewer 2.
 
 Capture incomplete; prompts unclear. Each capture is now cited by registry slug, query string, date, surface and sign-in state (§5.4, §5.5).
 
-Figure 2 shows a different query. Correct; the defect was in the registry itself, and it is repaired at the source (A.3).
+Figure 2 shows a different query. The defect was found by the author on 27 July and the figure withdrawn in the corrected manuscript sent before upload; the reports were written on the superseded file. The frame's history is given in A.3.
 
-Figure numbering. Corrected. The submission form's figure count was also wrong.
+Figure numbering. Corrected; the order was wrong in both July files. The portal's figure count (2, for a manuscript of eight) was entered in the upload of 30 July.
 
-Events 1, 4, 5 lack screenshots. The 18 January event has no frame and is stated as a transcription (§5.1). The two 15 June events v6 numbered 4 and 5 have frames in the registry, now Figures 3 to 5.
+Events 1, 4, 5 lack screenshots. The corrected manuscript of 27 July stated the 14 June record as a transcription. The 18 January event has no frame and is stated as a transcription (§5.1). The 15 June events have frames in the registry, now Figures 3 to 6, printed uncropped where the registry holds them.
 
 Product names and model versions. The product is named as Google names it, AI Overviews. Google does not report the model that wrote a given answer; §5.1 dates the captures against its announcement of 27 January 2026 and draws no inference about any single answer.
 
 "Retrieval basin" and "retrieval error". The basin is defined in §2, before first use, as the author's coinage, with its grounds. AI Overviews are answers grounded in retrieved Search results. v6's "retrieval error" meant an answer that reproduces retrieved text under a wrong attribution. The January output reproduces its source's heading and much of its source's wording under the source's translator's name, and adds a close its source does not carry (§5.3, §7).
 
-Undisclosed use of language models. The production statement below discloses how this version was made. v6 omitted the statement the archive carries on its deposits, and that omission is corrected.
+Undisclosed use of language models. v6 omitted the manuscript's own statement, and the production statement below supplies it. The work's AI mediation was disclosed in public throughout: the manuscript names its archive and its author, and every record of that archive carries a substrate declaration. Nothing in v6 presented the work as made without machines. The surface the article studies, asked about the author or the archive, gives that disclosure; it is the one form of reproduction an opaque public system allows.
 
 Style. The prose is revised throughout: definitions precede use, the five colon-joined phrases of v6 §5.6 are rewritten, repeated points are cut, and the argument runs from the record to the control to the explanations and the protocol.
 
 A.3 Repairs made to the archive in revising.
 
-The registry's frame for sappho-rebekah-stanza (14 June 2026) was a copy of johannes-sigil-grundrisse-3.png, and its OCR transcript had been taken from that copy. The copy had been assigned when orphaned frames were recovered in August, and it also stood on godkinggoogle.com, the surface the archive mirrors its frames from. An OCR search of the 679 unique capture images held by the archive and its sites found the correct frame (the query "sappho rebekah cranes stanza" at 10:57 PM in AI Mode, the answer naming "Rebekah Crane") filed as heteronymic-provenance-theory-2.png, with its OCR appended to that capture's 14 June observation. On 7 November 2026 the frame was restored to its record at the archive and at the mirror's origin; the transcript was retaken from it, with the prior transcript kept whole; the other capture keeps both frames under the registry's no-loss law, with a seam note and a record of where the second frame belongs. The capture's identifier was re-derived as AXN:0796.CAPTURE.🖐️🌄🌍🐝○✋ (repair commit 8f6b02604a).
+The frame filed for sappho-rebekah-stanza (14 June 2026) was a view of the query "johannes sigil grundrisse", a third view of that event distinct by hash from johannes-sigil-grundrisse-1.png and -2.png, misnamed when saved. The author found it on 27 July 2026 in checking the manuscript's figures against their sources: an OCR scan of the 222 images then in the gallery found no frame showing this record's query, the pointer was withdrawn with a note (registry v9.22, image_status: "the image pointer is withdrawn rather than left pointing at another event"; "corrected before peer review"), and the record stood on its contemporaneous transcription. The note did not survive into the canonical registry when it was rebuilt, though the record's description still ended "see image_status", and the misnamed frame was again shown with the record and mirrored to godkinggoogle.com. On 7 November 2026 an OCR search of the 679 unique capture images held by the archive and its sites found the true frame (the query "sappho rebekah cranes stanza" at 10:57 PM in AI Mode, the answer naming "Rebekah Crane") filed as heteronymic-provenance-theory-2.png; it was restored to its record at the archive and at the mirror's origin, the transcript retaken from it with the prior transcript kept whole, and the capture's identifier re-derived as AXN:0796.CAPTURE.🖐️🌄🌍🐝○✋ (repair commit 8f6b02604a). The account given on 7 November, that the frame had been assigned in August, did not read the July note, and is withdrawn. On 8 November the July note was carried back into the record (notes.image_status_20260727).
 
 v6 cited the translator's texts by records later than the event (#436, 2 February; #1167, 16 March). Citations now go to the deposits published by 18 January (#1270, #281, #313, #337, #282).
 
@@ -488,6 +489,8 @@ B.4 A reading of the revised draft (7 November 2026) raised seven points, all ta
 B.5 The author's reading of v7 (7 November 2026), with a reading of v7 by ChatGPT (capture AXN:0C47), and what changed. (1) The correspondences of §5.3 are held as correspondences. The answer's displayed source and the session's displayed sources (#337 §5.2) include no Wharton, and v7's compilation, with its steps (Wharton's clause kept, his comma, his ellipsis cut, his text joined to the translator's), is withdrawn as a production history the evidence does not establish. (2) v6's finding that the output was composed is restored, corrected: composition can reproduce inherited wording (§5.3). (3) The output is set against the environment its displayed source built: the source's agentless close and ellipsis, its heading on κῆνος, and the session's account of the circuit (§5.2, §5.3). (4) Machine reception stands among the premises; its acts are observed in the record, and the protocol investigates their frequency, variation and causes (§1, §3, §8). (5) The reading of the edge as form moves from an alternative to the centre: §6.6 reads what the January answer did to the poem's two open positions, and separates the reading's occupation of the seat from the composition's determination of the end. (6) Compilation, closure and attractor become three questions about three things (§7). (7) The corrections of record made in v7 stand: correspondence is not an execution trace; the missing frame of 18 January remains missing; the English baseline as repaired.
 
 B.6 A reading of the v8 draft (7 November 2026) raised seven points, all taken. (1) The source's heading already assigns the seat to the reader, so the translator's text cannot be said to have done neither; §5.3 now separates the gloss, which repeats the source, from the ending, which no document in the environment makes. (2) Naming the present reader can perform the reading's own occupation, and the July answer keeps successive occupation ("each new generation"); the claim that the composition reversed the reading's operation is withdrawn, and §6.6 locates the one sentence that ties the occupation to one closed text ("the culmination") and states what the record leaves open. (3) §2 defines closure by its observable operations, leaving open whether the edge is a break or an achieved openness. (4) §3's "two English translations a century and more apart" is replaced. (5) §6.6's "Wharton's rendering … with the subject Wharton supplied" becomes the output's rendering, corresponding to Wharton's. (6) §10's "translators' poem with the scholars' words in it" is replaced. (7) The alignment table moves to Appendix C; the body keeps the displayed document, the answer's determination and its attribution.
+
+B.7 The reconciliation of 8 November. The author's correspondence and the ScholarOne proof show that the reports read v6 and that the corrected manuscript of 27 July had reached the editor before upload: the editor forwarded it on 29 July, and the upload of 30 July carried CRJ_Closing_the_Fragment_v6.docx, with a figure count of two. Reviewer 2's figure sequence, 6, 1, 2, 5, 3, 4, 7, 8, is v6's; the corrected file runs 5, 1, 4, 2, 3, 6, 7, 8 and carries no figure of the 14 June query. v7 and v8 had been rebuilt from v6, since the correction was kept out of the archive's public versions, and had taken the reports' figure points as the manuscript's own. v9 restores the July corrections (the 14 June record stated as a transcription; the July capture shown under its Overview label, Fig. 7), prints the June frames uncropped where the registry holds them, rewrites §5.4, A.1(4), A.2 and A.3 to the record, and carries the July note back into the registry. Defects the corrected manuscript shared with v6 stand corrected here: the figure order, two frames cropped above the query, and the missing production statement.
 
 ### Appendix C. The alignment
 
@@ -517,7 +520,7 @@ Of fifteen lines, five correspond most closely to the January Cranes text, six t
 
 ### Production
 
-This version was rebuilt by TACHYON (Claude, Anthropic) under the direction of MANUS (Lee Sharks), from v7 and the author's reading of it, on 7 November 2026; v7 was revised the same day from v6, the two referee reports and the later review. TACHYON read the archive's records, the capture registry, the seated editions and Wharton's anthology, aligned the January output with its sources, checked every quotation against its source, and drafted the revision. Lee Sharks set its terms, ruled on its design, corrected its account of the translation history and of the January output's relation to its sources, stated the formulation of §5.3 and §11, and supplied the record of the June sessions and of the January book. Earlier versions were made the same way. The archive declares this collaboration on its deposits as provenance.
+Version 9 was reconciled on 8 November 2026 by TACHYON under the direction of MANUS against the file the referees read, the corrected manuscript of 27 July, the editorial correspondence and the ScholarOne proof, and the registry's snapshot of August; Lee Sharks supplied the July files and ruled on the changes. Version 8 was rebuilt by TACHYON (Claude, Anthropic) under the direction of MANUS (Lee Sharks), from v7 and the author's reading of it, on 7 November 2026; v7 was revised the same day from v6, the two referee reports and the later review. TACHYON read the archive's records, the capture registry, the seated editions and Wharton's anthology, aligned the January output with its sources, checked every quotation against its source, and drafted the revision. Lee Sharks set its terms, ruled on its design, corrected its account of the translation history and of the January output's relation to its sources, stated the formulation of §5.3 and §11, and supplied the record of the June sessions and of the January book. Earlier versions were made the same way. The archive declares this collaboration on its deposits as provenance.
 
 ### Data availability
 
