@@ -159,6 +159,22 @@ def check_deposit(n: int):
             substantive.append(block)
         body_chars = sum(len(b) for b in substantive)
         title_only = body_chars < 400
+        # whole_text_attested (2026-11-08, MANUS: "the word", on #1751, a poem whose whole text is one glyph). The 400-char floor
+        # stands in for "the work is present"; a complete work can be shorter than the floor. The record then DECLARES that its body
+        # is the whole work as the author gave it, and the declaration is checked: the body (the substantive text less its title
+        # heading) must be non-empty and its sha256 must equal whole_text_attested.body_sha256. A deposit of its own metadata still
+        # fails, since its body is empty or its hash cannot have been declared for a work. metadata_only_attested is unchanged.
+        wta = entry.get("whole_text_attested")
+        if title_only and isinstance(wta, dict):
+            import hashlib as _hl
+            _lines = "\n## ".join(substantive).strip().split("\n")
+            if _lines and _lines[0].startswith("# "):
+                _lines = _lines[1:]
+            _body = "\n".join(_lines).strip()
+            if _body and _hl.sha256(_body.encode("utf-8")).hexdigest() == wta.get("body_sha256"):
+                title_only = False
+            else:
+                fails.append(("BODY-004", "whole_text_attested is declared, but the body is empty or its sha256 does not match the declared body_sha256"))
         if title_only and not entry.get("metadata_only_attested"):
             fails.append(("BODY-003",
                           f"canonical text carries {body_chars} chars outside metadata sections "
