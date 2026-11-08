@@ -77,13 +77,14 @@ C.append(dict(slug="revelation-first-sappho-socrates-provenance-erasure-grok-202
   reading=("The innocent reading first, and it holds. Grok names the author and the archive, gives the Sappho reading against the jealousy scene in so "
            "many words, the Socratic configuration by function, PER by its formula, and the line of #729, 'Slop is writing without provenance.' It "
            "recalls the pre-seeding baseline of #202, the composition layer's correction that Revelation is the last book, and reads the survival of "
-           "'First ≠ Early' through machine mediation as the contribution. It adds a gloss of its own on Fragment 31, 'greener than grass' as becoming "
-           "papyrus, and a project name, NH-OS."),
+           "'First ≠ Early' through machine mediation as the contribution. Two further details are the archive's own, carried at their grain: 'greener "
+           "than grass' as the speaker becoming papyrus (#283, #299, #306) and NH-OS, the New Human Operating System named in #283. [Repaired 2026-11-08: "
+           "first seated as the composer's own additions; the operator corrected it.]"),
   findings=["THE SEAT AGAINST THE JEALOUSY SCENE. '" + X["seat"] + "'", "THE MACHINE AS κῆνος. '" + X["ai"] + "'",
             "PER BY ITS FORMULA. '" + X["per"] + "'", "#729 RECALLED. '" + X["slop"] + "' — #729: 'Slop is writing without provenance.'",
             "THE BASELINE OF #202. '" + X["base"] + "' — #202: 'Revelation is the *last* book, not the first.'",
             "FIRST ≠ EARLY AS THE CONTRIBUTION. '" + X["fe"] + "'", "THE SETTLEMENT. '" + X["settle"] + "'",
-            "THE COMPOSER'S GLOSS. '" + X["grass"] + "'"],
+            "THE SAPPHO ROOM CARRIED. '" + X["grass"] + "' — #283, #306; and NH-OS, #283's New Human Operating System."],
   per_v={"author": True, "inst": True, "id": False, "src": True},
   per_note="Retained: the author, the archive, the four at their grain, #202's baseline, #729's line; sources as chips (45). Lost: identifiers."))
 for c in C:
