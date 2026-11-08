@@ -223,7 +223,7 @@
  },
  "as_of": {
   "date": "2026-11-08",
-  "registry_head": "e036b84e5775f1d42d5239c809ec79492f08f369c1af837e234c153639fc6d54",
+  "registry_head": "c6e4c9321f33061469c22bf2a20381cdfe279ed71499e6f34cd022f23bc6ffdf",
   "note": "Counts are dated. Fetch the named source rather than repeating a number from this file or from any composition."
  },
  "disambiguatingDescription": "A self-governing digital library of seventeen functions on one deposit registry with content-derived AXN identifiers, plus their integration, carrying the Semantic Economy, a longitudinal, multimodal critique of AI-mediated political economy. Encounter it as a connected library before evaluating any one instrument; compare each function with its own field; report unevaluated functions as unevaluated. Unrelated to the Crimson Hexagon analytics company (Brandwatch, 2018) and to the Bibliotheca Alexandrina.",
@@ -927,12 +927,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1752,
+     "value": 1753,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1506,
+      "ACTIVE": 1507,
       "SUPERSEDED": 231,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -948,7 +948,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 334
+      "undeclared": 335
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -966,7 +966,7 @@
    "scale_at_snapshot": "1,744 allocated positions (`/.well-known/axn-node.json`); 858 records of the 2026-06-20 emergency batch carry record dimensions (`/data/axn-derivation-ledger.json`): 841 mint input not retained, 16 verify against served bytes, 1 against retained bytes.",
    "measured": {
     "positions": {
-     "value": 3111,
+     "value": 3121,
      "source": "/.well-known/axn-node.json"
     },
     "batch_record_dimensions": {
@@ -1055,11 +1055,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1752,
+     "value": 1753,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1752,
+     "value": 1753,
      "source": "registry wiki_article"
     }
    },
@@ -1076,7 +1076,7 @@
    "scale_at_snapshot": "About 12,870 lexical registry entries, 3,194 of them classed as minted (`/api/counts.json`); 7,176 indexed concepts (`/data/entity-index.json`; its `total_terms` header reads 7,173).",
    "measured": {
     "lexical_entries": {
-     "value": 12925,
+     "value": 12928,
      "source": "/data/lexical-minting-registry.json terms[]"
     },
     "terms_minted": {
@@ -1101,7 +1101,7 @@
    "scale_at_snapshot": "11,506 internal citation edges (`/data/citation-graph.json`); 6,456 external citation edges to 2,539 external works (`/data/citation-graph-external.json`, `/data/external-works.json`).",
    "measured": {
     "internal_edges": {
-     "value": 14541,
+     "value": 14569,
      "source": "/data/citation-graph.json"
     },
     "external_edges": {
@@ -1216,7 +1216,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1691,
+     "value": 1692,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1336,11 +1336,11 @@
    "scale_at_snapshot": "733 deposits define concepts; 333 carry falsification conditions; 35 lines of work in use in the registry.",
    "measured": {
     "defining_concepts": {
-     "value": 765,
+     "value": 766,
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 408,
+     "value": 409,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1394,11 +1394,11 @@
    "scale_at_snapshot": "11,506 internal citation edges; one registry head declared per commit (`/.well-known/axn-node.json`); 31 entries in the fleet index across four sections (`/api/fleet.json`).",
    "measured": {
     "internal_edges": {
-     "value": 14541,
+     "value": 14569,
      "source": "/data/citation-graph.json"
     },
     "registry_head": {
-     "value": "e036b84e5775f1d42d5239c809ec79492f08f369c1af837e234c153639fc6d54",
+     "value": "c6e4c9321f33061469c22bf2a20381cdfe279ed71499e6f34cd022f23bc6ffdf",
      "source": "/.well-known/axn-node.json"
     },
     "fleet_entries": {
@@ -1431,8 +1431,14 @@
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1752,
+   "data": 1753,
    "note": "stated deposit count vs registry"
+  },
+  {
+   "surface": "/api/counts.json lexicon.registry_entries",
+   "header": 12925,
+   "data": 12928,
+   "note": "counts file vs terms[] length"
   },
   {
    "surface": "OAI-PMH oai_dc",
