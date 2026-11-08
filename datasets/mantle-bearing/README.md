@@ -86,6 +86,8 @@ configs:
     data_files: frameworks.jsonl
   - config_name: holograms
     data_files: holograms.jsonl
+  - config_name: hologram_evaluations
+    data_files: hologram_evaluations.jsonl
 ---
 
 # The Work Bears the Mantle — three literary claims, a contest mantle, a conferred title, a critical program, a transmitted mantle and an inspectable evaluative framework, under one standard, with their holograms
@@ -136,6 +138,21 @@ A hologram holds an item in two components: a map for a human reader, and a holo
 | prince of poets | mantle (literary) | [#1651](https://www.alexanarch.org/s/records/1651/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
 | fleet | inspectable evaluative document | [#1702](https://www.alexanarch.org/s/records/1702/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
 | hf datasets | inspectable evaluative document | [#1701](https://www.alexanarch.org/s/records/1701/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
+
+### Evaluations and reconstructions of the holograms, recorded
+
+Each reading of a hologram is a row of table `hologram_evaluations`, with its transcript whole under its reader's name: a reconstruction (the kernel alone, scored against the graph) or an evaluation (a reading of the live records), coded on the hologram's own failure flags, with the version that answered it.
+
+| reading | kind | reader | object | result | collapses | answered in |
+|---|---|---|---|---|---|---|
+| HK-ORTH-R1-chatgpt | reconstruction | ChatGPT, unprimed | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.545 | — | EA-HK-ORTHONYM-01 v0.3 |
+| HK-ORTH-R1-perplexity | reconstruction | Perplexity | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.909 | — | EA-HK-ORTHONYM-01 v0.3 |
+| HK-ORTH-R1-grok | reconstruction | Grok | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.455 | — | EA-HK-ORTHONYM-01 v0.3 |
+| HK-ORTH-R2-chatgpt | reconstruction | ChatGPT, unprimed | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-ORTHONYM-01 v0.4 |
+| HK-ORTH-R2-perplexity | reconstruction | Perplexity | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-ORTHONYM-01 v0.4 |
+| HK-ORTH-R2-grok | reconstruction | Grok, fresh thread | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-ORTHONYM-01 v0.4 |
+| HK-ORTH-R2-qwen3.7-plus | reconstruction | Qwen3.7-Plus, signed out, incognito | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.909 | — | EA-HK-ORTHONYM-01 v0.4 |
+| HK-ORTH-L1-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.0) and #1754 (EA-HK-ORTHONYM-01 v1.0), read on… | 3 retractions by the reader | ONE_SIDED_BURDEN, RIVAL_BY_POSSIBILITY, RIVAL_REDUCED, OBJECT_CHANGED, PROGRAMME_RESTATED, CALENDAR_DRIFT, DEFINITION_DRIFT | EA-HK-FRAME-01 v1.1 (#1753) and EA-HK-ORTHONYM-01 v1.1 (#1754): the symmetric… |
 
 ## The three literary claims
 

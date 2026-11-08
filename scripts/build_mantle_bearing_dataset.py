@@ -33,7 +33,7 @@ TABLES = ["evaluations", "findings", "cut_corrections", "next_rounds", "rival_se
           "democratic_field", "aligned_passages", "succession", "pearl_arrangement",
           "mantles", "occupancy", "doctrine", "criteria", "determinations", "operations", "candidates", "watch", "readings",
           "inspection_operations", "carriers", "transmission_links", "ledger",
-          "coordinates", "jump_states", "jumps", "title_branches", "frameworks", "holograms"]
+          "coordinates", "jump_states", "jumps", "title_branches", "frameworks", "holograms", "hologram_evaluations"]
 
 
 def cell(v):
@@ -133,6 +133,16 @@ def frameworks_section(d):
                           + (f", mean {r['mean']}" if r.get("mean") is not None else "") for r in rr) or "—"
         L.append(f"| {h['item'].split('::')[1].replace('-', ' ')} | {h['item_kind']} | [#{g['deposit']}]({g['url']}) | {hcell} | {rcell} | {h['status']} |")
     L += [""]
+    ev = d.get("hologram_evaluations") or []
+    if ev:
+        L += ["### Evaluations and reconstructions of the holograms, recorded", "",
+              "Each reading of a hologram is a row of table `hologram_evaluations`, with its transcript whole under its reader's name: a reconstruction (the kernel "
+              "alone, scored against the graph) or an evaluation (a reading of the live records), coded on the hologram's own failure flags, with the version that "
+              "answered it.", "", "| reading | kind | reader | object | result | collapses | answered in |", "|---|---|---|---|---|---|---|"]
+        for e in ev:
+            res = f"yield {e['yield']}" if e.get("yield") is not None else (f"{len(e.get('corrections_by_reader') or [])} retractions by the reader" if e["kind"] == "evaluation" else "—")
+            L.append(f"| {e['eval_id']} | {e['kind']} | {e['reader']} | {_cut(e['object_read'], 90)} | {res} | {', '.join(e.get('collapses') or []) or '—'} | {_cut(e['revised_in'], 80)} |")
+        L += [""]
     return L
 
 
