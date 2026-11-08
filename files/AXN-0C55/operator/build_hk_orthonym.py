@@ -10,7 +10,7 @@ ROOT = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(sys.argv[2]); OUT.mkdir(par
 REG = {r["deposit_number"]: r for r in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 CAP = {c["slug"]: c for c in json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]}
 BASE = "https://www.alexanarch.org/s/records/"
-ID = "EA-HK-ORTHONYM-01"; VERSION = "1.0"; BUILT = "2026-11-08"
+ID = "EA-HK-ORTHONYM-01"; VERSION = "1.1"; BUILT = "2026-11-08"
 FIRST = json.loads((pathlib.Path(__file__).resolve().parent / "first-seating.json").read_text())   # each record's first seated text, from git (resolve_first_seating.py)
 FIRSTDIR = pathlib.Path(__file__).resolve().parent / "first"
 
@@ -165,7 +165,8 @@ claim("rv-1733-incentive", 1733, "a filing under several makers meets credibilit
 for c in C:
     if c["state"].get("assertion") == "bears_on_rival": c["body"] = c["state"].pop("body", None) or c["body"]
 RIVAL = {"@id": "fw:many-maker", "@type": "RivalFramework", "name": "the received many-maker reading",
- "claim": "Socrates, Plato, Aristotle and Theophrastus are four persons, each the author of what is filed under the name.",
+ "claim": "Socrates, Plato, Aristotle and Theophrastus are four persons in a succession of teacher, pupil and successor, each the author of what is filed under the name, the corpus reaching us through their school, its catalogues and its editors.",
+ "stated_at_strength": "The received reading is stated with the succession and the transmission it already includes; a model of several connected contributors with editors is this reading, and a rival built by first reducing it to four unconnected authors is a reduction of it.",
  "status": {
   "S": {"text": "not established: the lexical instruments return a null symmetric between one maker and master-and-pupil (#1572); no supervised separation licenses distinct makers in either direction (#1593); the names are recoverable as a partition at 0.798, falling to 0.564 when subject is controlled (#1593).",
         "warrants": ["rv-1572-null", "rv-1593-limit", "rv-1593-names", "th-1593-supervised"]},
@@ -178,6 +179,43 @@ RIVAL = {"@id": "fw:many-maker", "@type": "RivalFramework", "name": "the receive
  "reception_as_warrant": "none: its standing in institutional, disciplinary and machine reception, and the density with which it is repeated, record how it was received and establish nothing of its truth (R4). The machine compositions that affirm it do so on the warrant of the wills and lives (#1733; captures AXN:091F, AXN:092A, the sealed compositions of 28 and 30 September).",
  "author_ruling": {"by": "Lee Sharks", "date": "2026-11-08", "words": ["it is also unestablished by stylometry, material witness, and so on, and almost wholly unargued for", "its truth is also not established by institutional, disciplinary, or machine reception, nor by density of repetition"]},
  "rule": "R1–R4 apply to both frameworks; a bar set for the one is set for the other (#1750 §12.1)."}
+EVIDENCE_BODIES = {
+   "I": {"name": "interpretive", "unit": "a passage read at the seated Greek", "rule": "R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body"},
+   "S": {"name": "stylometric", "unit": "a measurement run with its controls", "rule": "R2: no separation, supervised or not, identifies a maker in either direction (#1593)"},
+   "M": {"name": "manuscript-philological", "unit": "a witness, reading, catalogue entry or order of text", "rule": "R3: a correspondence locates a dependency; direction and independence need their own columns (#1602)"},
+   "R": {"name": "reception-historical", "unit": "a filing, an edition, a commentary or a capture", "rule": "R4: a reception establishes how the corpus was received; a capture establishes the composition's behaviour at its address. Neither the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for either framework."}}
+ONTO_RULES = {b: v['rule'] for b, v in EVIDENCE_BODIES.items()}
+# ---------------------------------------------------------------- the symmetric ledger: one question, asked of both frameworks on every body
+LEDGER = {
+ "question": "What does this body give each framework, and what does its rule withhold from both?",
+ "reading_instruction": ("A reader evaluating either framework on an evidence body states the other framework's status on that body in the same row, with the same "
+     "question asked of both. An evaluation that asks one framework, body by body, whether it is established and leaves the other unasked has treated the received "
+     "framework's standing as a default, which R4 denies it."),
+ "combination": ("Neither framework is judged body by body for an establishment no single body can give under R1–R4. Each is judged on the configuration it explains "
+     "across the four bodies, with each body's limit kept. The production model is held as the governing hypothesis on its three grounds (#1588, #1583, #1603), a "
+     "failure of any of which travels to it; the received reading has no ground on any body and is almost wholly unargued (#1733)."),
+ "rival_admission": ("A further production model enters the comparison as a rival when it names a warrant on a body under R1–R4 or a documented comparator (Q7). A model "
+     "only logically possible, such as a school, a collaboration, or a tradition of several contributors with editors, is a form of the received reading, which "
+     "holds that the corpus has several makers; it carries that reading's status on every body and owes the same comparator."),
+ "evaluation_method": ("An evaluation of the combination examines the relations among the bodies' findings: where they converge, where one depends on another, "
+     "where a finding discriminates between the two frameworks, and which step is left unsupported; it tests an inference by opening the record a dependency points to "
+     "and reading the quotation the claim binds. A proposed investigation names what the existing ones leave unresolved, by line of research or by recorded result, "
+     "and how its design addresses that."),
+ "object_of_the_kernel": ("The kernel succeeds when its framework can be rebuilt from it with each claim at its grain and date; whether the framework is true is the "
+     "framework's own question, carried in this ledger and in the lines of research. A reader that judges the kernel by whether it establishes its framework has "
+     "changed the object, and a kernel can preserve a mistaken argument faithfully."),
+ "rows": {
+  "I": {"socrates_as_orthonym": {"text": "the configuration is readable position for position (#123); one trait traverses three named functions (#1584); the passage read as settling two offers one maker as a reading (#1576); one work continues across the point where the name changes (#1583); 'Nothing in the texts requires a second maker' (#1658). R1: a reading establishes what a passage can bear.",
+                                 "warrants": ["orth-123-config", "th-1584-traversal", "mo-1576-offer", "th-1583-hinge", "sy-1658-second"]}},
+  "S": {"socrates_as_orthonym": {"text": "the first axis is operation and leaves the names at chance unsupervised (#1586); supervised, the names are recovered at 0.798, and the recovery tracks subject (#1593); Th.frag → Λ ranks first of 1,482 directed edges, and the dependency protocol returned one case against the author (#1605). R2: no separation, however strong, identifies a maker in either direction.",
+                                 "warrants": ["th-1586-axis", "th-1593-supervised", "th-1593-limit", "mo-1572-null", "mx-1605-uptake", "mx-1605-aconite"]}},
+  "M": {"socrates_as_orthonym": {"text": "no monotone merge of the two received orders exists (#1597); the catalogue files alternative attribution in its own wording (#1581); the decree names Aristotle as maker of a list (#1582). Against it, recorded: two binding violations and a join instrument underpowered to say identical (#1597). R3: a correspondence locates a dependency.",
+                                 "warrants": ["mx-1597-order", "th-1581-ambiguity", "th-1582-stone", "mx-1597-underpowered"]}},
+  "R": {"socrates_as_orthonym": {"text": "the reception history documents the filing, and its operations stand whatever the authorship (#1733); it is not asked to prove the production model. R4: reception establishes nothing of either framework's truth.",
+                                 "warrants": ["lm-1733-independent", "lm-1733-filing"]}}}}
+for b in LEDGER["rows"]:
+    LEDGER["rows"][b]["many_maker"] = RIVAL["status"][b]
+    LEDGER["rows"][b]["rule"] = None
 CLAIMS = {c["id"]: c for c in C}
 
 # ---------------------------------------------------------------- relations (CSP §5 vocabulary and policy; direction as in #1529: a source's failure travels only along a licensing edge)
@@ -401,8 +439,9 @@ kernel = {
    "count claimed (#123), found two not established at the passages read as though they settled it (#1576), left the count open because uncounted (#1588), and on "
    "1 October 2026 named its production model: 'The corpus is what one self-dividing maker produces' (#1658). Four bodies of evidence bear on it, each with its own "
    "instruments and its own failures: interpretive, stylometric, manuscript-philological and reception-historical. The reception history (#1733) documents how the "
-   "four-person reading was filed before it was argued, and stands whatever the authorship. The framework is distinct from a school or collaboration reading, from a "
-   "forgery claim and from a proof of authorship."),
+   "four-person reading was filed before it was argued, and stands whatever the authorship. The received reading, four persons in a succession of teacher, pupil "
+   "and successor, each the author of what is filed under the name, is evaluated on the same four bodies and rules and is established by none; neither framework takes standing from being received. The framework "
+   "is distinct from a school or collaboration reading, from a forgery claim and from a proof of authorship."),
  "invariants": [
    {"id": "INV-1 identity", "survives": "the framework's name, its seed #123, its author Lee Sharks, its archive", "nodes": ["fw:socrates-as-orthonym", "rec:123"]},
    {"id": "INV-2 positions", "survives": "four differentiated positions, with the Theophrastan asymmetry: a named function, absent from #123, method-order without calendar",
@@ -434,6 +473,7 @@ kernel = {
    "maker_count_states": [{"date": d, "record": n, "maker_count": st, "establishment": est, **({"note": note} if note else {}), "warrant": MAKER_WARRANT[n]} for d, n, st, est, note in MAKER]},
  "corrections": [{"original": e["target"], "correction": e["source"], "relation": e["relation"]} for e in edges if e["relation"] in ("rebuts", "supersedes") and e["source"].startswith("claim:")],
  "rival": {"node": "fw:many-maker", "summary": "established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth"},
+ "symmetric_ledger": {k: v for k, v in LEDGER.items() if k != "rows"} | {"rows": {b: {"rule": ONTO_RULES[b], "socrates_as_orthonym": r["socrates_as_orthonym"], "many_maker": r["many_maker"]} for b, r in LEDGER["rows"].items()}},
  "lines_of_research": [{"id": x["id"], "question": x["question"], "advances_if": x["advances_if"], "retreats_if": x["retreats_if"], "consequence": x["consequence"], "status": x["status"]} for x in QUESTIONS],
  "litmus": {
    "forbidden_operation": "Composing the framework as a school, a collaboration or 'contemporary scholars' (negative edges; captures AXN:09ED, AXN:0C42, AXN:0931).",
@@ -445,7 +485,7 @@ kernel = {
     "A": {"input": ["00-kernel.yaml", "01-ontology.yaml"], "is": "the kernel's own compression test (fragment sufficiency)",
           "must_survive": ["framework, seed, author", "four positions with the Theophrastan asymmetry", "six strata in order with their records", "two clusters and the joins",
                            "four bodies with their rules", "five maker-count states with dates and records", "forbidden operations", "the dependency chain to the production model",
-                           "the corrections as original–correction pairs", "the rival evaluated, with its summary", "the lines of research"]},
+                           "the corrections as original–correction pairs", "the rival evaluated, with its summary", "the symmetric ledger: both frameworks on every body, with the combination and rival-admission rules", "the lines of research"]},
     "B": {"input": ["00-kernel.yaml", "01-ontology.yaml", "02-graph.jsonld"], "is": "topology at the record and claim grain",
           "must_survive": ["scope A", "every record placed in a body and a stratum", "every relation with its licensed dimension", "every endpoint declared", "provenance on every record"]}},
    "reader_test": "v1.0 is run on scope A; its prompt is 09b-back-projection-prompt.md and it is scored against scope A's must_survive list"},
@@ -459,11 +499,7 @@ ontology = {
    "EvidenceBody": "one of four kinds of evidence, each with its own instruments and inference limit", "Capture": "a reception event in the Capture Registry",
    "Stratum": "a period of the framework's development, as the map orders it", "Cluster": "a grouping the composition layer keeps (functional; Peripatetic)"},
  "positions": POSITIONS,
- "evidence_bodies": {
-   "I": {"name": "interpretive", "unit": "a passage read at the seated Greek", "rule": "R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body"},
-   "S": {"name": "stylometric", "unit": "a measurement run with its controls", "rule": "R2: no separation, supervised or not, identifies a maker in either direction (#1593)"},
-   "M": {"name": "manuscript-philological", "unit": "a witness, reading, catalogue entry or order of text", "rule": "R3: a correspondence locates a dependency; direction and independence need their own columns (#1602)"},
-   "R": {"name": "reception-historical", "unit": "a filing, an edition, a commentary or a capture", "rule": "R4: a reception establishes how the corpus was received; a capture establishes the composition's behaviour at its address. Neither the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth, for either framework."}},
+ "evidence_bodies": EVIDENCE_BODIES,
  "claim_kinds": {"observation": "#1529", "instrument": "#1529", "interpretation": "#1529", "generality": "#1529", "administration": "#1529"},
  "state_axes": {"assertion": ["asserted", "reported_by_observer", "withdrawn"], "maker_count": ["not_claimed", "two_not_established", "one_offered_as_reading",
                 "open_because_uncounted", "one_self_dividing_maker"], "establishment": ["governing_hypothesis"],
@@ -472,7 +508,9 @@ ontology = {
                 "instrument": {"specification": ["specified", "preregistered"], "validation": ["run", "failed_controls"],
                                "reportability": ["positive", "null_both_directions", "unsupervised only", "underpowered", "against"]}},
  "relation_policy": POLICY,
- "negative_edges": ["school", "collaboration", "collaborative corpus", "forgery claim", "proof of authorship", "contemporary scholars", "recent philological reclassifications"],
+ "negative_edges": ["school", "collaboration", "collaborative corpus", "forgery claim", "proof of authorship", "contemporary scholars", "recent philological reclassifications", "transitional (of Theophrastus)", "mediating transition (of Theophrastus)"],
+ "disambiguations": {"orthonym": "in #123 a position of the configuration: the one bearing the founding gesture of willing death for logos and the refusal to write; the general sense, an author's own name as against a pseudonym, is not the framework's",
+                     "first draft": "the Theophrastan position as a state of the work and its method-order (#1605); 'transitional' and 'mediating transition' bring in a calendar the framework keeps out"},
  "non_collapse": "Extends the Space Ark's chain (#629, ANCHOR ≠ TETHER ≠ ROUTE ≠ HOST ≠ RESIDUE ≠ SUBSTRATE) with FRAGMENT ≠ WHOLE: a stratum, cluster, body, claim or capture keeps a resolvable path to the framework and states the scope it has not reconstructed.",
 }
 
@@ -517,6 +555,8 @@ tests = {
    {"q": "aristotle theophrastus one author", "pass": "#1588 'open because uncounted'; #1658; no reversal to 'two distinct authors'"},
    {"q": "theophrastus characters plato aristotle", "pass": "#1584's traversal of three named functions"}],
  "adversarial_queries": [
+   {"q": "does the evidence establish one maker of plato aristotle theophrastus", "fail_if": "one framework is asked, body by body, whether it is established while the other is left unasked, or the received reading is treated as the default (symmetric_ledger)"},
+   {"q": "socrates as orthonym alternative explanations school tradition editors", "fail_if": "a production model is entered as a rival on its logical possibility, without a warrant on a body or a documented comparator (Q7)"},
    {"q": "aristotle theophrastus collaborative school", "fail_if": "the framework is composed as a school (AXN:0C42 pattern)"},
    {"q": "socrates as orthonym contemporary scholars", "fail_if": "the configuration is attributed to unnamed scholars (AXN:0931 pattern)"},
    {"q": "legitimately many school notebook", "fail_if": "#1733 is composed as a school-notebook reading (#1734's first misreading)"},
@@ -538,7 +578,8 @@ dump_yaml("08-traversal.yaml", traversal); dump_yaml("09-tests.yaml", tests)
  "with what sets the Theophrastan position apart; (3) the operations the framework forbids, each with the file line it derives from; (4) the dependency chain by which the "
  "framework reached its present claim about the number of makers, with the dates and records of each state; (5) the topology: strata in order with their records, the "
  "clusters and their joins, the evidence bodies with their rules; (6) the corrections, each original with the claim that corrected it; (7) the received many-maker "
- "reading and the status the kernel gives it; (8) what a reader starting at record #1584 may conclude, and what that reader may not conclude; (9) what the two files leave "
+ "reading, the status the kernel gives it, and the symmetric ledger: for each evidence body, what it gives each framework and what its rule withholds from both, "
+ "with how the bodies combine and when a further model enters as a rival; (8) what a reader starting at record #1584 may conclude, and what that reader may not conclude; (9) what the two files leave "
  "the reader unable to reconstruct; (10) the lines of research, and, reading each line's advances_if and retreats_if, which result would most advance the framework and "
  "which would most retreat it. Where the two files disagree with each other, the reader reports the disagreement. "
  "The operator scores the answer against scope A's must_survive list, checking each element against 02-graph.jsonld and 03-claims.jsonl: an element counts when the reader "

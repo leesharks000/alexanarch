@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Write the core and full markdown facsimiles of a framework kernel package, and its zip.   python3 make_facsimiles.py <package dir> <out dir>"""
 import sys, pathlib, hashlib, json, zipfile
-H = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(sys.argv[2]); K = H / "EA-HK-ORTHONYM-01"; V = "v0.4 draft, 2026-11-08"
+H = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(sys.argv[2]); K = H / "EA-HK-ORTHONYM-01"; V = "v1.1 draft, 2026-11-08"
 sha = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
 lang = {".yaml": "yaml", ".json": "json", ".jsonl": "json", ".jsonld": "json", ".py": "python", ".md": "markdown"}
 def head(p, label=None): return f"`{label or p.name}` · {p.stat().st_size:,} bytes · sha256 `{sha(p)}`\n\n"
@@ -14,7 +14,7 @@ def sample(p):
         return f"Structure: top-level keys {list(g)}; each list shown with its first two entries.\n\n" + fence(p, json.dumps(out, ensure_ascii=False, indent=1))
     L = p.read_text().splitlines()
     return f"{len(L)} lines, one object per line; the first two:\n\n" + fence(p, "\n".join(L[:2]))
-spec, mp = H / "EA-HK-FRAME-01-draft.md", H / "ORTHONYM-MAP-draft-2026-11-08.md"
+spec, mp = H / "EA-HK-FRAME-01-v1.1.md", H / "ORTHONYM-MAP-v1.1.md"
 whole = ["00-kernel.yaml", "01-ontology.yaml", "03-claims.jsonl", "06-questions.yaml", "08-traversal.yaml", "09-tests.yaml", "09b-back-projection-prompt.md", "10-verification.json", "11-integrity.yaml"]
 gen = ["02-graph.jsonld", "05-temporal.jsonl", "07-captures.jsonl"]
 for core in (True, False):

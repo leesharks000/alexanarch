@@ -1,14 +1,14 @@
 ---
 deposit_number: 1753
 hex: 0C54
-title: "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.0)"
+title: "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
 creator: Kuro, Sen; Fraction, Rex
 orcid: 0009-0000-1599-0703
 date: 2026-11-08
 content_type: Specification
 license: CC-BY-4.0
 substrate: AI-assisted (substrate). Written under the heteronyms Sen Kuro and Rex Fraction (archival authority Lee Sharks). Drafted and built by Claude (Anthropic, Claude Opus 5.5) in session on 8 November 2026 under Lee Sharks's direction, from ChatGPT's proposal of a framework kernel (evaluated in §6) and on the archive's existing protocols; revised against a review of v0.1 by ChatGPT, a reading of an intermediate build by DeepSeek, a review of v0.2 by ChatGPT, and two rounds of back-projection reader runs (ChatGPT, Perplexity, Grok and Qwen), each point checked against the files and records before anything was changed.
-version: v1.0
+version: v1.1
 related_ids: "#76 (The Holographic Kernel in Semantic Economy, EA-HK-01); #74 (EA-HK-INFRA-01, the infrastructure kernel); #547 (UKTP v1.1); #1610 (the Anti-Summary Test); #569 (the NLCC validity test); #1529 (the Claim Status Packet); #1677 (MPAI v2.0); #629 (the Space Ark's non-collapse chain); #1602 (Locating the Dependencies); #1593 (Measuring the Operation, Not the Name); #123 (Socrates as Orthonym, the first instance's seed)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -39,11 +39,11 @@ keywords:
   - machine-traversable framework
 ---
 
-# The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.0)
+# The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)
 
-# The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.0)
+# The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)
 
-**Sen Kuro and Rex Fraction · Crimson Hexagonal Archive · 8 November 2026.** First instance: the holographic kernel of Socrates as Orthonym (EA-HK-ORTHONYM-01 v1.0), deposited as its own record after this one, with the framework map as its human-readable component. The drafts are recorded in §6: v0.2 answers a review of v0.1 by ChatGPT (§6.2); v0.3 answers the first reader runs of back-projection v1.0 (§6.3); v0.4 answers ChatGPT's review of v0.2 (§6.4) and the second reader runs, on v0.3 (§6.5); v1.0 is v0.4 as deposited, with the map made a component of the hologram (§5.5).
+**Sen Kuro and Rex Fraction · Crimson Hexagonal Archive · 8 November 2026.** First instance: the holographic kernel of Socrates as Orthonym (EA-HK-ORTHONYM-01 v1.0), deposited as its own record after this one, with the framework map as its human-readable component. The drafts are recorded in §6: v0.2 answers a review of v0.1 by ChatGPT (§6.2); v0.3 answers the first reader runs of back-projection v1.0 (§6.3); v0.4 answers ChatGPT's review of v0.2 (§6.4) and the second reader runs, on v0.3 (§6.5); v1.0 is v0.4 as deposited, with the map made a component of the hologram (§5.5); v1.1 makes the rival's evaluation symmetric on every body after a reading of the live records (§6.6).
 
 ## 0. What a framework kernel is
 
@@ -92,7 +92,7 @@ Each layer of a framework kernel is a protocol the archive has already written. 
 | `07-captures.jsonl` | the reception events at the framework's addresses, read from the registry, each with the distortion it shows | EA-WG-CAPTURES-01 |
 | `06-questions.yaml` | the lines of research, each posed by a quotation in a record, with its instrument, what to read first, how to ask it, how a machine investigates it, and what would advance or retreat the framework | new in this specification |
 | `08-traversal.yaml` | entry, climb, the seven reconstruction modes (research among them) with what each must and must not return, and a worked traversal | #76 §VI Step 4 |
-| `09-tests.yaml` | sixteen structural tests; composition queries; adversarial queries with failure conditions | #1677 §4.1 |
+| `09-tests.yaml` | seventeen structural tests; composition queries; adversarial queries with failure conditions | #1677 §4.1 |
 | `10-verification.json` | the verifier's last run | #74 v0.1 |
 | `11-integrity.yaml` | SHA-256 of every file, of the registry and of the capture registry the kernel was built from | #1529 §7.2 |
 | `first-seating.json`, `resolve_first_seating.py` | the commit that first seated each record's text, and the script that recovers it from git | #1529 §6 |
@@ -117,7 +117,8 @@ The framework map is the hologram's human-readable component and the kernel file
 8. **FRAGMENT ≠ WHOLE.** A partial reconstruction keeps a resolvable path to the framework and states what it has not reconstructed.
 9. **The received rival is evaluated on the same bodies and rules.** A framework kernel carries the framework its field holds by default as a node of its own, with the claims in the archive's records that bear on it, body by body. A bar set for the framework is set for its rival (#1750 §12.1); a rival that has never been tested carries that as its status.
 10. **Lines of research persist.** The questions file is part of the kernel and is rebuilt with it; a question closes only by a record that answers it, and the answer enters as a claim.
-11. **Laws record; they do not prevent.** The verifier writes its results as data and blocks nothing; a failing test is a finding about the kernel.
+11. **The ledger is symmetric.** One question is asked of the framework and its rival on every evidence body: what the body gives each, and what its rule withholds from both. Each answer is warranted by claims of that body. The kernel states how the bodies combine for each framework, and the condition on which a further production model enters as a rival: a warrant on a body under the four rules, or a documented comparator. A model only logically possible is a form of the reading it varies and carries that reading's status, and the rival is stated at its own strength, with the succession and transmission it already includes. The kernel states how the combination is examined: the relations among the bodies' findings, where they converge, depend, discriminate or leave a step unsupported, tested by opening the record a dependency points to; and a proposed investigation names what the existing ones leave unresolved. It also states its own object: it succeeds when its framework can be rebuilt from it, and whether the framework is true is the framework's question. A reader that asks one framework, body by body, whether it is established and leaves the other unasked has given the received framework a default standing the reception rule denies it.
+12. **Laws record; they do not prevent.** The verifier writes its results as data and blocks nothing; a failing test is a finding about the kernel.
 
 ## 4. Reconstruction and acceptance
 
@@ -230,13 +231,27 @@ The readers reported four disagreements in the files, of which three were defect
 
 The fourth, `one_offered_as_reading` standing in the vocabulary and in no dated state (ChatGPT, Perplexity, Qwen), is the state of a claim: #1576 offers one maker as a reading beside its record's state, two not established. The ontology now says so, and the #1576 state carries the note. T16 now also tests that joins stand apart from cluster members and that every dated state lies on the ontology's axes; run on the v0.3 build it fails at both.
 
+### 6.6 A reading of the live records, and what v1.1 changed
+
+On 8 November 2026, after #1753 and #1754 were deposited, ChatGPT, signed out, read both records and was then asked to test the hologram. Its reading of the specification was accurate. Its test of the framework set the following pattern, which the kernel at v1.0 did not prevent:
+
+1. **One question, asked of one framework.** For each evidence body it asked whether the body established one maker, answered no four times, and gave the framework the verdict "Not established", while it asked nothing of the received reading on the same bodies. The kernel held the rival's status on every body in a separate node; the reader never set the two side by side.
+2. **A rival on logical possibility.** It entered a third model, "A shared intellectual tradition with multiple contributors and editorial intervention", and marked the framework's rival comparison "Incomplete" for not testing it, with no warrant on any body and no comparator. Q7 had named the comparator such a model owes; the kernel did not say how a further model enters.
+3. **Calendar and definition drift.** It typed Theophrastus as "The mediating transition" and defined the orthonym in the general sense of an author's own name.
+
+Pressed by the person testing it, the reader withdrew 2 ("no pretending that logical possibility constitutes historical evidence") and 1 ("I imposed an asymmetrical burden of proof"; "That is not evidentiary neutrality. It is inherited attribution bias."), and named the visual form of the asymmetry: caution labels on one framework, none on the other.
+
+Asked by the author to assess the run, ChatGPT named four further failures in it: the reading judged the kernel by whether it established its framework, a different object from reconstruction; it graded each evidence body for failing to establish one maker alone and left undone the work on their relations; its rival "Four substantially independent historical authors" reduced the received account, which already describes teachers, pupils, succession and editorial transmission, so that the "missing" model was that account; and it proposed blind classification, controls and operational partitioning after reporting that versions of them had been run. "The most useful next sentence would have identified a specific dependency or passage, opened its source, and tested the inference."
+
+v1.1 answers each. The kernel carries a symmetric ledger: one question, both frameworks, every body, each answer warranted by claims of that body (rule 11), with the combination rule, the rival-admission rule and a reading instruction for the machine reader. The rival is stated at its strength, with its succession and transmission. The ledger states how the combination is examined and what the kernel is judged on. The ontology adds "transitional" and "mediating transition" to the negative edges and gives the framework's senses of "orthonym" and "first draft". The tests add two adversarial queries for the pattern, scope A's must-survive list adds the ledger, the reader prompt asks for it, and T17 checks that every row answers for both frameworks with claims of its body. On its first run T17 found two warrants placed in the wrong body's row, which v1.1 corrects.
+
 **Left for a later version.** SHACL shapes for the graph; per-record pointers from each constituent record page to the kernel (a site-wide template change, to be proposed separately); an interface of its own for each body beyond its rule and unit.
 
 ## 7. A correction to the map found in building
 
 The map's draft (EA-MPAI-ORTHONYM-01 v0.1, §7.7 and §11) wrote "#1658 generalizes #123", "#1658 generalizes #1588" and "#1658 generalizes #1603". Under #1529's direction a failure travels from the source of a `generalizes` edge to its target, and #1658's production model rests on #1588, #1583 and #1603; so the edges run into #1658. #1658 stands to #123 as `interprets`, which licenses nothing: the production model fills #123's position-structure, and #123's own words stand at its date. The kernel carries the corrected edges; the map's draft is to be corrected to match before either is deposited.
 
-## 8. The first instance: EA-HK-ORTHONYM-01 v1.0
+## 8. The first instance: EA-HK-ORTHONYM-01 v1.1
 
 Built 8 November 2026 from `data/registry.json`, `data/EA-WG-CAPTURES-01.json` and the first seating of each record in the repository's history; the two registries are hashed in `11-integrity.yaml`. Counts, from `10-verification.json`:
 
@@ -248,7 +263,7 @@ Built 8 November 2026 from `data/registry.json`, `data/EA-WG-CAPTURES-01.json` a
 - 124 events across the two timelines;
 - 10 lines of research.
 
-Verification: all 16 structural tests pass. Back-projection v0.1 gives scope A 1.0 and scope B 1.0. That establishes structural presence only; reconstructive validity is v1.0, run by a reader on scope A: the first runs, on v0.2, gave 0.545, 0.909 and 0.455 (§6.3); the second, on v0.3, gave 1.0, 1.0, 1.0 and 0.909, a mean of 0.977 (§6.5).
+Verification: all 17 structural tests pass. Back-projection v0.1 gives scope A 1.0 and scope B 1.0. That establishes structural presence only; reconstructive validity is v1.0, run by a reader on scope A: the first runs, on v0.2, gave 0.545, 0.909 and 0.455 (§6.3); the second, on v0.3, gave 1.0, 1.0, 1.0 and 0.909, a mean of 0.977 (§6.5).
 
 ## 9. Governing sentence
 

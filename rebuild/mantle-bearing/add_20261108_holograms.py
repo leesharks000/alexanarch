@@ -73,7 +73,7 @@ d["table_notes"]["holograms"] = ("One row per item that has a hologram or is to 
     "reader rounds with each reader's yield against the threshold of 0.85 (#76). A planned row names the governing record to be versioned.")
 d["title"] = ("Mantle-bearing: the work bears the mantle — three literary claims, a contest mantle, a conferred title, a critical program, "
               "a transmitted mantle and an inspectable evaluative framework, under one standard, with their holograms")
-d["history"].append({"version": "1.20", "date": "2026-11-08",
+if not any(h["version"] == "1.20" for h in d["history"]): d["history"].append({"version": "1.20", "date": "2026-11-08",
     "note": "Tables frameworks and holograms, at the author's ruling (\"all three\": a holograms table, a frameworks table beside the mantles, "
             "and the kernel files published inside this dataset under holograms/). Socrates as Orthonym enters as the first framework, its "
             "hologram #1754 built to EA-HK-FRAME-01 (#1753), with its kernel files under holograms/EA-HK-ORTHONYM-01/ and its two reader rounds; "

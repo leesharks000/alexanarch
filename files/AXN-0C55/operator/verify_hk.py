@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Verify a framework holographic kernel against the archive (v0.2).
 
-Runs the structural tests T1–T16 of 09-tests.yaml, executes the relation policy over the claim graph (T12) and a historical reconstruction at
+Runs the structural tests T1–T17 of 09-tests.yaml, executes the relation policy over the claim graph (T12) and a historical reconstruction at
 stated dates (T13), and scores back-projection v0.1 (structural presence, after EA-HK-INFRA-01 #74) on two declared input scopes:
 scope A, 00-kernel.yaml + 01-ontology.yaml (the kernel's own compression test); scope B, A + 02-graph.jsonld (topology at record and claim grain).
 Results are written as data to 10-verification.json; nothing is blocked.
@@ -174,6 +174,22 @@ for st in kernel["topology"]["maker_count_states"]:
     if st.get("maker_count") not in ax["maker_count"] or (st.get("establishment") and st["establishment"] not in ax["establishment"]): t16bad.append(f"state of #{st['record']} outside the ontology's axes")
 test("T16 the kernel's prose agrees with its lists and the graph", not t16bad, {"joins": len(joins), "grounds_of_1658": sorted(grounds_g), "failed": t16bad})
 
+# T17: the symmetric ledger asks one question of both frameworks on every body, each answer warranted by claims of that body
+L17 = kernel.get("symmetric_ledger", {}); t17bad = []
+for b in ("I", "S", "M", "R"):
+    row = (L17.get("rows") or {}).get(b)
+    if not row: t17bad.append(f"{b}: no row"); continue
+    if row.get("rule") != onto["evidence_bodies"][b]["rule"]: t17bad.append(f"{b}: rule differs from the ontology's")
+    for side in ("socrates_as_orthonym", "many_maker"):
+        st = row.get(side) or {}
+        if not (st.get("text") and st.get("warrants")): t17bad.append(f"{b}/{side}: unanswered"); continue
+        for w in st["warrants"]:
+            if w not in CL: t17bad.append(f"{b}/{side}: {w} not a claim")
+            elif CL[w]["body"] != b: t17bad.append(f"{b}/{side}: {w} is of body {CL[w]['body']}")
+for k in ("question", "reading_instruction", "combination", "rival_admission", "evaluation_method", "object_of_the_kernel"):
+    if not L17.get(k): t17bad.append(f"no {k}")
+test("T17 the symmetric ledger: one question, both frameworks, every body", not t17bad, {"failed": t17bad})
+
 # back-projection v0.1, scored on the two declared scopes
 pos = onto["positions"]; topo = kernel.get("topology", {})
 scopeA = {
@@ -187,6 +203,7 @@ scopeA = {
  "the dependency chain to the production model": "#1588" in kernel["litmus"]["dependency_chain"] and "#1583" in kernel["litmus"]["dependency_chain"],
  "the corrections as original–correction pairs": len(kernel.get("corrections", [])) >= 5,
  "the rival evaluated, with its summary": bool(kernel.get("rival", {}).get("summary")),
+ "the symmetric ledger: both frameworks on every body, with the combination and rival-admission rules": set(kernel.get("symmetric_ledger", {}).get("rows", {})) == {"I", "S", "M", "R"} and bool(kernel["symmetric_ledger"].get("combination")) and bool(kernel["symmetric_ledger"].get("rival_admission")),
  "the lines of research": len(kernel.get("lines_of_research", [])) >= 5,
 }
 scopeB = dict(scopeA, **{

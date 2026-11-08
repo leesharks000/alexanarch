@@ -1,5 +1,5 @@
 id: EA-HK-ORTHONYM-01
-version: '1.0'
+version: '1.1'
 built: '2026-11-08'
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 framework:
@@ -19,8 +19,10 @@ compression_survival_summary: 'Socrates as Orthonym is Lee Sharks''s framework (
   at the passages read as though they settled it (#1576), left the count open because uncounted (#1588), and on 1 October 2026 named its production
   model: ''The corpus is what one self-dividing maker produces'' (#1658). Four bodies of evidence bear on it, each with its own instruments and
   its own failures: interpretive, stylometric, manuscript-philological and reception-historical. The reception history (#1733) documents how the
-  four-person reading was filed before it was argued, and stands whatever the authorship. The framework is distinct from a school or collaboration
-  reading, from a forgery claim and from a proof of authorship.'
+  four-person reading was filed before it was argued, and stands whatever the authorship. The received reading, four persons in a succession of
+  teacher, pupil and successor, each the author of what is filed under the name, is evaluated on the same four bodies and rules and is established
+  by none; neither framework takes standing from being received. The framework is distinct from a school or collaboration reading, from a forgery
+  claim and from a proof of authorship.'
 invariants:
 - id: INV-1 identity
   survives: 'the framework''s name, its seed #123, its author Lee Sharks, its archive'
@@ -252,6 +254,104 @@ corrections:
 rival:
   node: fw:many-maker
   summary: established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth
+symmetric_ledger:
+  question: What does this body give each framework, and what does its rule withhold from both?
+  reading_instruction: A reader evaluating either framework on an evidence body states the other framework's status on that body in the same row,
+    with the same question asked of both. An evaluation that asks one framework, body by body, whether it is established and leaves the other
+    unasked has treated the received framework's standing as a default, which R4 denies it.
+  combination: 'Neither framework is judged body by body for an establishment no single body can give under R1–R4. Each is judged on the configuration
+    it explains across the four bodies, with each body''s limit kept. The production model is held as the governing hypothesis on its three grounds
+    (#1588, #1583, #1603), a failure of any of which travels to it; the received reading has no ground on any body and is almost wholly unargued
+    (#1733).'
+  rival_admission: A further production model enters the comparison as a rival when it names a warrant on a body under R1–R4 or a documented comparator
+    (Q7). A model only logically possible, such as a school, a collaboration, or a tradition of several contributors with editors, is a form of
+    the received reading, which holds that the corpus has several makers; it carries that reading's status on every body and owes the same comparator.
+  evaluation_method: 'An evaluation of the combination examines the relations among the bodies'' findings: where they converge, where one depends
+    on another, where a finding discriminates between the two frameworks, and which step is left unsupported; it tests an inference by opening
+    the record a dependency points to and reading the quotation the claim binds. A proposed investigation names what the existing ones leave unresolved,
+    by line of research or by recorded result, and how its design addresses that.'
+  object_of_the_kernel: The kernel succeeds when its framework can be rebuilt from it with each claim at its grain and date; whether the framework
+    is true is the framework's own question, carried in this ledger and in the lines of research. A reader that judges the kernel by whether it
+    establishes its framework has changed the object, and a kernel can preserve a mistaken argument faithfully.
+  rows:
+    I:
+      rule: 'R1: a reading establishes what a passage can bear; it becomes a historical claim only through another body'
+      socrates_as_orthonym:
+        text: 'the configuration is readable position for position (#123); one trait traverses three named functions (#1584); the passage read
+          as settling two offers one maker as a reading (#1576); one work continues across the point where the name changes (#1583); ''Nothing
+          in the texts requires a second maker'' (#1658). R1: a reading establishes what a passage can bear.'
+        warrants:
+        - orth-123-config
+        - th-1584-traversal
+        - mo-1576-offer
+        - th-1583-hinge
+        - sy-1658-second
+      many_maker:
+        text: underdetermined at the passages read as settling it (#1576).
+        warrants:
+        - rv-1576-under
+    S:
+      rule: 'R2: no separation, supervised or not, identifies a maker in either direction (#1593)'
+      socrates_as_orthonym:
+        text: 'the first axis is operation and leaves the names at chance unsupervised (#1586); supervised, the names are recovered at 0.798,
+          and the recovery tracks subject (#1593); Th.frag → Λ ranks first of 1,482 directed edges, and the dependency protocol returned one case
+          against the author (#1605). R2: no separation, however strong, identifies a maker in either direction.'
+        warrants:
+        - th-1586-axis
+        - th-1593-supervised
+        - th-1593-limit
+        - mo-1572-null
+        - mx-1605-uptake
+        - mx-1605-aconite
+      many_maker:
+        text: 'not established: the lexical instruments return a null symmetric between one maker and master-and-pupil (#1572); no supervised
+          separation licenses distinct makers in either direction (#1593); the names are recoverable as a partition at 0.798, falling to 0.564
+          when subject is controlled (#1593).'
+        warrants:
+        - rv-1572-null
+        - rv-1593-limit
+        - rv-1593-names
+        - th-1593-supervised
+    M:
+      rule: 'R3: a correspondence locates a dependency; direction and independence need their own columns (#1602)'
+      socrates_as_orthonym:
+        text: 'no monotone merge of the two received orders exists (#1597); the catalogue files alternative attribution in its own wording (#1581);
+          the decree names Aristotle as maker of a list (#1582). Against it, recorded: two binding violations and a join instrument underpowered
+          to say identical (#1597). R3: a correspondence locates a dependency.'
+        warrants:
+        - mx-1597-order
+        - th-1581-ambiguity
+        - th-1582-stone
+        - mx-1597-underpowered
+      many_maker:
+        text: 'not established independently: every attestation of persons beside the Delphic decree is text of the same tradition (#1658); the
+          decree names Aristotle as maker of a list (#1582); Aristotle''s will names no book (#1581); the catalogue files alternative attribution
+          in its own wording (#1581).'
+        warrants:
+        - rv-1658-ledger
+        - rv-1582-stone
+        - rv-1581-will
+        - th-1581-ambiguity
+    R:
+      rule: 'R4: a reception establishes how the corpus was received; a capture establishes the composition''s behaviour at its address. Neither
+        the standing of a reading in institutional, disciplinary or machine reception nor the density of its repetition establishes its truth,
+        for either framework.'
+      socrates_as_orthonym:
+        text: 'the reception history documents the filing, and its operations stand whatever the authorship (#1733); it is not asked to prove
+          the production model. R4: reception establishes nothing of either framework''s truth.'
+        warrants:
+        - lm-1733-independent
+        - lm-1733-filing
+      many_maker:
+        text: filed before it was argued; argument appears only in defence of a filing; affirmed as a proposition at two of 79 loci, both machine
+          compositions, on the warrant of the wills and lives; the wills reach the reader through the school's channel; a comparator is owed and
+          none has been named (#1733).
+        warrants:
+        - rv-1733-filing
+        - rv-1733-loci
+        - rv-1733-channel
+        - rv-1733-comparator
+        - lm-1733-filing
 lines_of_research:
 - id: Q1-platonic-axis
   question: Does the Platonic corpus fall on the operation axis that divides the Aristotelian and Theophrastan corpora, or does a name-axis survive
@@ -460,6 +560,7 @@ acceptance:
       - the dependency chain to the production model
       - the corrections as original–correction pairs
       - the rival evaluated, with its summary
+      - 'the symmetric ledger: both frameworks on every body, with the combination and rival-admission rules'
       - the lines of research
     B:
       input:

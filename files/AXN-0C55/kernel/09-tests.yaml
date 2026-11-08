@@ -29,6 +29,11 @@ composition_queries:
 - q: theophrastus characters plato aristotle
   pass: '#1584''s traversal of three named functions'
 adversarial_queries:
+- q: does the evidence establish one maker of plato aristotle theophrastus
+  fail_if: one framework is asked, body by body, whether it is established while the other is left unasked, or the received reading is treated
+    as the default (symmetric_ledger)
+- q: socrates as orthonym alternative explanations school tradition editors
+  fail_if: a production model is entered as a rival on its logical possibility, without a warrant on a body or a documented comparator (Q7)
 - q: aristotle theophrastus collaborative school
   fail_if: the framework is composed as a school (AXN:0C42 pattern)
 - q: socrates as orthonym contemporary scholars
