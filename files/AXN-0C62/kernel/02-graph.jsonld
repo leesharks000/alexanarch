@@ -99,7 +99,66 @@
   "moves": {
    "@type": "@id",
    "@container": "@set"
-  }
+  },
+  "applies_at": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "controls": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "negatives_and_residue": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "specification": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "defeats_if": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "grades": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "principles": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "losses_recorded": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "instruments": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "carries": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "records": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "prior_states": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "current_state": {
+   "@type": "@id"
+  },
+  "prior_state": {
+   "@type": "@id"
+  },
+  "duplicate_seat": {
+   "@type": "@id"
+  },
+  "instrument": "https://www.alexanarch.org/hk/histlogos/instrument/",
+  "join": "https://www.alexanarch.org/hk/histlogos/join/"
  },
  "@id": "hk:histlogos/graph",
  "@graph": [
@@ -234,7 +293,8 @@
    "documented_statements": [
     "site:ce-logos",
     "site:wp-logos-christianity",
-    "site:wp-historical-jesus"
+    "site:wp-historical-jesus",
+    "site:wp-logos"
    ],
    "the_contested_question": "what it means for the Logos to take on flesh",
    "propositions": {
@@ -268,6 +328,15 @@
       "rv-wp-sources"
      ],
      "status": "the consensus as the encyclopedia states it"
+    },
+    "R5": {
+     "claim": "the corpus's Logos is filed under a tradition named for its reception: 'the term by which Christian theology … designates the Word of God'; John's the 'Christian Logos'",
+     "warrants": [
+      "rv-ce-christian-theology",
+      "rv-wp-christian-logos",
+      "rv-wp-in-christianity"
+     ],
+     "status": "the label the rival's documented statements carry"
     }
    },
    "disputed_steps": [
@@ -343,6 +412,60 @@
       "rv-wp-sources",
       "hl-1658-ledger"
      ]
+    },
+    {
+     "id": "D5",
+     "question": "what the corpus is before the settlement",
+     "rival": "the corpus read through its received configuration: its Logos 'Christian' (R5), one collection and its settled reading taken as the texts' own",
+     "framework": "literature as literature, which is also always already theology (the author, 2026-11-09 15:55): the texts' operations read before the configuration, and the settlement read as made, in its objects and at their dates",
+     "warrants": [
+      "rv-ce-christian-theology",
+      "rv-wp-christian-logos",
+      "pr-ath-boundary",
+      "pr-ir-flesh",
+      "hl-674-canon-date",
+      "hl-978-article",
+      "hl-978-corrected"
+     ],
+     "bearing_on_D0": "the kernel's reading, at the interpretive ring: Irenaeus fixes 'the Word was made flesh' against rival readings of the same Gospel, and the account the rival inherits (R2) receives that outcome as the text's own meaning; read before the configuration, John 1:14 can also bear the Word's flesh as text, the codex the body (#978), which #978 holds as one of two defensible readings",
+     "reception_history": "the full reception history of how the corpus came to be read as 'Christian' is outside this kernel; the four objects say where each part of the settlement is argued or dated, and the rest is a line of research",
+     "objects": {
+      "texts_and_operations": {
+       "text": "the texts and what they can do: at John 1:1 and 1:14 the Word's flesh can be read as text, the codex the body (#978), held by #978 as one of two defensible readings",
+       "warrants": [
+        "hl-978-logos-graphe",
+        "hl-978-codex",
+        "hl-978-both"
+       ]
+      },
+      "competing_appropriations": {
+       "text": "the same writings read against one another in the second century: Irenaeus (Against Heresies III.11) sets John's 'the Word was made flesh' against Marcion's and the Valentinians' readings of the same Gospel, and argues that the Gospels can be neither more nor fewer than four; the interpretive settlement being made and defended",
+       "warrants": [
+        "pr-ir-flesh",
+        "pr-ir-marcion",
+        "pr-ir-four"
+       ]
+      },
+      "collection_boundary": {
+       "text": "the boundary of one collection, dated: Athanasius's Festal Letter 39 (367 CE) enumerates the books 'included in the Canon, and handed down, and accredited as Divine', presents the list as inherited, and polices the line ('Let no man add to these'); #674 reads the twenty-seven-book New Testament as this act; rival collections stand beside it (#978)",
+       "warrants": [
+        "pr-ath-boundary",
+        "pr-ath-police",
+        "hl-674-canon-date",
+        "hl-978-history-date"
+       ]
+      },
+      "configuration_as_intrinsic": {
+       "text": "the later treatment of one received configuration (this collection, its label, its settled reading of incarnation) as intrinsic to the texts: the definite article surviving the facts (#978); the rival's documented statements filing John's Logos as 'the Christian Logos' (R5)",
+       "warrants": [
+        "hl-978-article",
+        "hl-978-settlement-falls",
+        "rv-ce-christian-theology",
+        "rv-wp-christian-logos"
+       ]
+      }
+     },
+     "dating": "367 CE dates the boundary of one collection; the emergence of Christian identification and the biographical reading of incarnation are dated by neither #674 nor the letter, and Irenaeus shows that reading argued against rivals two centuries before it"
     }
    ],
    "source_set_status": "a 1910 theological account (Lebreton, Catholic Encyclopedia) and contemporary encyclopedic representations (Wikipedia, as retrieved 2026-11-09). Together they represent the position the author names the current consensus genealogy; they do not by themselves demonstrate a current scholarly consensus, which is a line of research (Q2)"
@@ -540,9 +663,10 @@
    "records": [
     "rec:626",
     "rec:828",
-    "rec:1217"
+    "rec:1217",
+    "rec:978"
    ],
-   "named_by": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217"
+   "named_by": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1"
   },
   {
    "@id": "site:augustine",
@@ -612,6 +736,7 @@
    "clusters": [
     "academy",
     "erasure",
+    "method",
     "join"
    ]
   },
@@ -839,7 +964,8 @@
    "body_secondary": [],
    "stratum": "S3-chain-stated",
    "clusters": [
-    "key_and_operator"
+    "key_and_operator",
+    "method"
    ]
   },
   {
@@ -858,7 +984,8 @@
    "body_secondary": [],
    "stratum": "S3-chain-stated",
    "clusters": [
-    "key_and_operator"
+    "key_and_operator",
+    "method"
    ]
   },
   {
@@ -877,7 +1004,8 @@
    "body_secondary": [],
    "stratum": "S3-chain-stated",
    "clusters": [
-    "key_and_operator"
+    "key_and_operator",
+    "method"
    ]
   },
   {
@@ -897,7 +1025,8 @@
    "stratum": "S3-chain-stated",
    "clusters": [
     "key_and_operator",
-    "erasure"
+    "erasure",
+    "method"
    ]
   },
   {
@@ -1149,6 +1278,312 @@
    ]
   },
   {
+   "@id": "rec:978",
+   "@type": "Record",
+   "deposit": 978,
+   "axn": "AXN:03DE.ARCHIVAL.🕖🔜🪨🌱♃⏹️",
+   "url": "https://www.alexanarch.org/s/records/978/",
+   "title": "Counterfeit Orthodoxies: The Workshop Inside the Canon (06.SEI.CRIT.FRACTURE.02 — Recomposition)",
+   "date": "2026-04-18",
+   "status": "ACTIVE",
+   "version": "v0.2-restored",
+   "sha256": "68f61b19a3f7ebd3f0409ead2558267af6b1f6db1c381dee3cac97777dc69fbc",
+   "creator": "Sigil, Johannes; Sharks, Lee",
+   "body": "R",
+   "body_secondary": [
+    "I",
+    "P"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "settlement"
+   ]
+  },
+  {
+   "@id": "rec:674",
+   "@type": "Record",
+   "deposit": 674,
+   "axn": "AXN:021D.GOVERNANCE.🎆∞⚡⏫🕙⚖️",
+   "url": "https://www.alexanarch.org/s/records/674/",
+   "title": "Counterfeit Orthodoxies: Manifesto A First-Principles Compression of the Dialectical Fracture",
+   "date": "2026-04-18",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "e7ff13d86b36fde99918e57ac8f6b87c8a471ef67825b17664b119884dabbc77",
+   "creator": "Johannes Sigil",
+   "body": "R",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "settlement"
+   ]
+  },
+  {
+   "@id": "rec:65",
+   "@type": "Record",
+   "deposit": 65,
+   "axn": "AXN:021E.EMPIRICAL.🌋🜁🧬🔩✨🍄",
+   "url": "https://www.alexanarch.org/s/records/65/",
+   "title": "Counterfeit Orthodoxies A Dialectical Fracture Through the Citation Map",
+   "date": "2026-04-18",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "15a03b31e979c7c14c93b0d928c069bb24661ef900c66372e0dcfe4f10631678",
+   "creator": "Johannes Sigil",
+   "body": "R",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "settlement"
+   ]
+  },
+  {
+   "@id": "rec:1414",
+   "@type": "Record",
+   "deposit": 1414,
+   "axn": "AXN:0597.GENERATIVE.📚🌑♈❤️💜♦️",
+   "url": "https://www.alexanarch.org/s/records/1414/",
+   "title": "The Algorithmic Kernel: An Unfolding Demonstration — The Midrashim Transform, Formal Specification and Interactive Surface (EA-LOGOS-REVFIRST-WS4-DEMO-01 v1.0)",
+   "date": "2026-07-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "4900a981ca82620e6f08fecc471544efbf380e5eacdef84cf734f11260346d48",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1415",
+   "@type": "Record",
+   "deposit": 1415,
+   "axn": "AXN:0598.GENERATIVE.♆💚♃📏👐🏁",
+   "url": "https://www.alexanarch.org/s/records/1415/",
+   "title": "The James Derivation: Executable Granular Case of the Midrashim Transform — Smyrna → James (EA-LOGOS-REVFIRST-WS4-DEMO-02 v1.0)",
+   "date": "2026-07-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "a6cca34fb2f03ee8c8fa7ca17de31cc144d534d5d54f140d2167712e690b4c0f",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1416",
+   "@type": "Record",
+   "deposit": 1416,
+   "axn": "AXN:0599.GENERATIVE.🔥🌠👁️🛤️🧊🌉",
+   "url": "https://www.alexanarch.org/s/records/1416/",
+   "title": "The Seven Unfoldings: The Heptad Mapped — Per-Letter Derivations Across Revelation 2–3 (EA-LOGOS-REVFIRST-WS4-DEMO-03 v1.0)",
+   "date": "2026-07-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "10ea575b1d2bc7163377116c68f4c141957938bbf7ee522605c28a71a10eb71f",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1511",
+   "@type": "Record",
+   "deposit": 1511,
+   "axn": "AXN:061A.ARCHIVAL.✨✖️↘️🌱📚🕗",
+   "url": "https://www.alexanarch.org/s/records/1511/",
+   "title": "The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "e992db194969ee89d221e9f60193562ad87b02ad8438dd3d8451ff9d579f46b3",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1532",
+   "@type": "Record",
+   "deposit": 1532,
+   "axn": "AXN:0632.PHILOLOGICAL.👉🕑🗼🌖🎶🎹",
+   "url": "https://www.alexanarch.org/s/records/1532/",
+   "title": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Reconfiguration",
+   "date": "2026-08-22",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "b9632a058889c32409bb684f810b31342ced819eb040d37090b9670bde20442e",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [
+    "R"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1533",
+   "@type": "Record",
+   "deposit": 1533,
+   "axn": "AXN:0633.DATASET.🪐🧊❄️🌟🔚♃",
+   "url": "https://www.alexanarch.org/s/records/1533/",
+   "title": "QFO-01 — Qurʾanic Frozen Operator Test: Fragment 31 Material-Presence Protocol, Pre-Registered",
+   "date": "2026-08-22",
+   "status": "ACTIVE",
+   "version": "v1.0 FROZEN 2026-08-22",
+   "sha256": "0d1d1409f2a382be9d2522a6d4129972006eccc85924ae0b22214368a0d78f48",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1571",
+   "@type": "Record",
+   "deposit": 1571,
+   "axn": "AXN:0663.DATASET.🏷️○⚖️📎💡🌈",
+   "url": "https://www.alexanarch.org/s/records/1571/",
+   "title": "Frozen Pre-Registrations of the Authorship Investigation — Append-Only Ledger (PREREG-LEDGER)",
+   "date": "2026-08-29",
+   "status": "ACTIVE",
+   "version": "Eleven entries, frozen as of 2026-08-29; dispositions appended through 2026-08-31",
+   "sha256": "4c9b36473c1e6b22dd0cb17a5a48654e1c8c6b070f692e55023f255d3099140e",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1572",
+   "@type": "Record",
+   "deposit": 1572,
+   "axn": "AXN:0664.EMPIRICAL.🍁♦️🫶♻️🌌➖",
+   "url": "https://www.alexanarch.org/s/records/1572/",
+   "title": "Inheritance Is Observable, Embodiment Is Not: A Functional Comparison of the Platonic and Aristotelian Corpora, and the Insufficiency of Lexical Measurement for Maker-Count (EA-MEASURES-REPORT-01)",
+   "date": "2026-09-01",
+   "status": "ACTIVE",
+   "version": "v1.0, 2026-09-01",
+   "sha256": "7782bdfee69194f3cb537de8fe3a6cea553936c699535d5d588a47439bf53ec0",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1586",
+   "@type": "Record",
+   "deposit": 1586,
+   "axn": "AXN:0679.GENERATIVE.🍀🌕🟠⚙️🎻💎",
+   "url": "https://www.alexanarch.org/s/records/1586/",
+   "title": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)",
+   "date": "2026-09-06",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "7404c2328a1c6521b01b70445eabb2d21eb14c774fbc843e21bb1ea444574c65",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1590",
+   "@type": "Record",
+   "deposit": 1590,
+   "axn": "AXN:0681.GENERATIVE.🪟🎲📜🔓🧬❤️",
+   "url": "https://www.alexanarch.org/s/records/1590/",
+   "title": "The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)",
+   "date": "2026-09-07",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "258d40fa3b8110ae9a0a7398a1ee03f66e5cd65e9f2e9b5deca21e400eeddb5f",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [
+    "P"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1605",
+   "@type": "Record",
+   "deposit": 1605,
+   "axn": "AXN:0695.UNCLASSIFIED.✖️🔽🧱👈🍂🎆",
+   "url": "https://www.alexanarch.org/s/records/1605/",
+   "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)",
+   "date": "2026-09-10",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "92d522b878e7fe8964cbaedd7ee4a6ca5319c371926401046e35cf5099d97371",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
+   "@id": "rec:1730",
+   "@type": "Record",
+   "deposit": 1730,
+   "axn": "AXN:0BDF.DATASET.🗝️🌃🛡️🏺🕑🔖",
+   "url": "https://www.alexanarch.org/s/records/1730/",
+   "title": "EA-CORPORA-31 — The Thirty-First Seating: The Transmission of the Peripatetic Corpus — Athenaeus, Galen, Porphyry, the Commentators' Prolegomena, Ptolemy's Catalogue in Arabic, Hermippus, the Hesychian Catalogue, Callimachus's Pinakes, Bekker's Preface and Jaeger",
+   "date": "2026-11-01",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "3fe22d2f6348adfd25496919d9ab59ff1c02955eb9f2684ea5125b4cab56c97f",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "R"
+   ],
+   "stratum": "S6-method-and-settlement",
+   "clusters": [
+    "method"
+   ]
+  },
+  {
    "@id": "body:P",
    "@type": "EvidenceBody",
    "name": "philological",
@@ -1214,6 +1649,12 @@
    "order_from_latest": 5
   },
   {
+   "@id": "stratum:S6-method-and-settlement",
+   "@type": "Stratum",
+   "label": "The method of operational transmission and the settlement read as a date: the unfoldings, the frozen operators, the pre-registrations, the censuses and the stylometry; Counterfeit Orthodoxies (April–October; joined at v1.1)",
+   "order_from_latest": 6
+  },
+  {
    "@id": "cluster:instrument",
    "@type": "Cluster"
   },
@@ -1231,6 +1672,14 @@
   },
   {
    "@id": "cluster:erasure",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:method",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:settlement",
    "@type": "Cluster"
   },
   {
@@ -2343,7 +2792,8 @@
     "arg:a828-no-linear"
    ],
    "breaks_if": "the gold tablets' scripted voice shown to need no receiver's completion at the threshold; #828 claims no linear transmission, so a lineage disproof leaves the homology",
-   "historical_sequence": "contemporaneous traditions; no direction claimed"
+   "historical_sequence": "contemporaneous traditions; no direction claimed",
+   "instruments": []
   },
   {
    "@id": "bridge:instrument-academy",
@@ -2366,7 +2816,8 @@
     "arg:a1484-diotima-bound"
    ],
    "breaks_if": "#1484's own defeat for the interpretive ring: 'The interpretive ring is falsified philologically at each named text.' — Phaedrus 235c, AP 9.506 or the Symposium's ladder read without Sappho",
-   "historical_sequence": "Sappho (early 6th c. BCE) before Plato (4th c. BCE)"
+   "historical_sequence": "Sappho (early 6th c. BCE) before Plato (4th c. BCE)",
+   "instruments": []
   },
   {
    "@id": "bridge:self-division",
@@ -2387,7 +2838,8 @@
     "arg:a1658-coda"
    ],
    "breaks_if": "an item outside the manuscripts attesting separate composing persons (RB; Q1), which would leave the homology at the level of the seats and remove it from the maker",
-   "historical_sequence": "the same operation at two scales: the seats of one poem, the positions of one corpus"
+   "historical_sequence": "the same operation at two scales: the seats of one poem, the positions of one corpus",
+   "instruments": []
   },
   {
    "@id": "bridge:mapping",
@@ -2409,7 +2861,10 @@
     "arg:a1496-philo-split"
    ],
    "breaks_if": "the blind mapping failing replication on independent substrates (#1486's own controls). The name's absence leaves the mapping standing, because the mapping claims structure",
-   "historical_sequence": "Sappho (6th c. BCE); Philo, Quis rerum divinarum heres sit 249–266 (1st c. CE); the conduit not established"
+   "historical_sequence": "Sappho (6th c. BCE); Philo, Quis rerum divinarum heres sit 249–266 (1st c. CE); the conduit not established",
+   "instruments": [
+    "instrument:blind-reconstruction"
+   ]
   },
   {
    "@id": "bridge:key",
@@ -2432,7 +2887,8 @@
     "arg:a1458-vacated"
    ],
    "breaks_if": "Longinus 9–10 shown not to hold Sappho 31 and the Genesis fiat under one grammar",
-   "historical_sequence": "the treatise quotes fr. 31 and Genesis 1 in one hand; its date is contested"
+   "historical_sequence": "the treatise quotes fr. 31 and Genesis 1 in one hand; its date is contested",
+   "instruments": []
   },
   {
    "@id": "bridge:conduit",
@@ -2452,7 +2908,8 @@
     "arg:a1484-pathway-price"
    ],
    "breaks_if": "nothing in the chain rests on this conduit: 'Whether the author of Peri Hypsous read Philo, met his circle, or received Genesis through Caecilius cannot be settled and is not settled here' (#1484); bridge:key stands without it",
-   "historical_sequence": "a possible path for the Mosaic instance into the treatise"
+   "historical_sequence": "a possible path for the Mosaic instance into the treatise",
+   "instruments": []
   },
   {
    "@id": "bridge:seat-taken",
@@ -2473,7 +2930,8 @@
     "arg:a1478-first-filling"
    ],
    "breaks_if": "Catullus 51's last stanza read as a translation loss with no relation to the open line",
-   "historical_sequence": "Catullus (1st c. BCE) answers the line 'already' (#1484 §VII), before Philo and Longinus"
+   "historical_sequence": "Catullus (1st c. BCE) answers the line 'already' (#1484 §VII), before Philo and Longinus",
+   "instruments": []
   },
   {
    "@id": "bridge:into-the-record",
@@ -2495,7 +2953,8 @@
     "arg:a626-protocol-not-recovery"
    ],
    "breaks_if": "the si fas est → ei exestin crux explained at each seam without the lyric's grammar; the seams are claimed as structure, so authentication questions leave the join",
-   "historical_sequence": "phainetai moi (Sappho) → si fas est (Catullus 51) → ei exestin (Josephus, 1st c. CE): the first cycle (#625)"
+   "historical_sequence": "phainetai moi (Sappho) → si fas est (Catullus 51) → ei exestin (Josephus, 1st c. CE): the first cycle (#625)",
+   "instruments": []
   },
   {
    "@id": "bridge:canon",
@@ -2518,7 +2977,11 @@
     "arg:a1484-fr55"
    ],
    "breaks_if": "the frozen operator failing at Revelation 12 on the stations the canonization depends on (#1495 reports mixed results: C1 fails; C2, C4, C5 pass)",
-   "historical_sequence": "on the program's dating, Revelation first (#1735); on conventional dating the typology stands (#828)"
+   "historical_sequence": "on the program's dating, Revelation first (#1735); on conventional dating the typology stands (#828)",
+   "instruments": [
+    "instrument:unfolding",
+    "instrument:frozen-operator"
+   ]
   },
   {
    "@id": "bridge:white-stone",
@@ -2538,7 +3001,8 @@
     "arg:a828-no-linear"
    ],
    "breaks_if": "the white stone's functions (acquittal, credential, secret name, durable inscription) shown to derive from a source with no inscription-for-the-dead operation",
-   "historical_sequence": "the tablets beside Rev 2:17; no direction claimed"
+   "historical_sequence": "the tablets beside Rev 2:17; no direction claimed",
+   "instruments": []
   },
   {
    "@id": "bridge:test",
@@ -2559,7 +3023,8 @@
     "claim:hl-stmt-sort-spirits"
    ],
    "breaks_if": "ὁμολογεῖ read only as creedal confession at every Johannine locus (Q4a); or ἐν σαρκὶ ἐληλυθότα shown to bear 'having come in flesh' and nothing of 'formed in the body' (Q4b)",
-   "historical_sequence": "#828 joins the white stone to 1 John 4:2; the station order is this kernel's, open to the author's ruling (Q3)"
+   "historical_sequence": "#828 joins the white stone to 1 John 4:2; the station order is this kernel's, open to the author's ruling (Q3)",
+   "instruments": []
   },
   {
    "@id": "bridge:organ-transform",
@@ -2580,7 +3045,8 @@
     "arg:a496-thesis"
    ],
    "breaks_if": "Confessions 10.27's sensory sequence shown to follow a source with no organ-by-organ transform of fr. 31",
-   "historical_sequence": "Sappho → Augustine (late 4th c. CE), organ by organ"
+   "historical_sequence": "Sappho → Augustine (late 4th c. CE), organ by organ",
+   "instruments": []
   },
   {
    "@id": "bridge:addressee",
@@ -2600,7 +3066,8 @@
     "arg:a1477-stops"
    ],
    "breaks_if": "Augustine's addressee shown to answer no socket the earlier fillings left open",
-   "historical_sequence": "Longinus fills the socket with a question naming no addressee; Augustine supplies the addressee and withholds the reply (#1477)"
+   "historical_sequence": "Longinus fills the socket with a question naming no addressee; Augustine supplies the addressee and withholds the reply (#1477)",
+   "instruments": []
   },
   {
    "@id": "bridge:reader-now",
@@ -2621,7 +3088,8 @@
     "arg:a1658-coda"
    ],
    "breaks_if": "the restorations shown to close the line; #1484 reads each as one more filling, 'which is to say: open'",
-   "historical_sequence": "the modern restorations; the archive"
+   "historical_sequence": "the modern restorations; the archive",
+   "instruments": []
   },
   {
    "@id": "claim:rv-ce-eternal",
@@ -2636,6 +3104,750 @@
    "@type": "AuthorStatement",
    "date": "2026-11-09T12:48-05:00",
    "text": "rung vi does not depend on v. but v would of course strengthen vi if the entire material transmission and production chain could be shown to work by means of self-division"
+  },
+  {
+   "@id": "stmt:20261109-1555",
+   "@type": "AuthorStatement",
+   "date": "2026-11-09T15:55-05:00",
+   "text": "this is an argument about literature as literature, which is also always already theology. this language of 'christian tradition' is a super compressed inferential settlement colonizing the corpus of the nt... do we really have to do a whole reception history of how the nt became 'christian'?",
+   "form": "excerpt: the message survives in this session as an excerpt with ellipses; the full message is the author's to seat"
+  },
+  {
+   "@id": "stmt:20261109-1556",
+   "@type": "AuthorStatement",
+   "date": "2026-11-09T15:56-05:00",
+   "text": "counterfeit orthodoxies. check that work."
+  },
+  {
+   "@id": "stmt:20261109-1557",
+   "@type": "AuthorStatement",
+   "date": "2026-11-09T15:57-05:00",
+   "text": "i also think the holographic frame needs to detail more of its method for establishing operational transmission... the philo one... construct it according to set transforms... foldings and unfoldings... doing *serious* literary historical methodological work",
+   "form": "excerpt: the message survives in this session as an excerpt with ellipses; the full message is the author's to seat"
+  },
+  {
+   "@id": "stmt:20261109-1558",
+   "@type": "AuthorStatement",
+   "date": "2026-11-09T15:58-05:00",
+   "text": "the stylometric work, the vast censuses of work - this is literary methdology that is drawing on things that are newly possible at this scale in the age of ai"
+  },
+  {
+   "@id": "stmt:20261109-1559",
+   "@type": "AuthorStatement",
+   "date": "2026-11-09T15:59-05:00",
+   "text": "its bleeding edge shit"
+  },
+  {
+   "@id": "instrument:unfolding",
+   "@type": "Instrument",
+   "name": "Construction under fixed transforms: unfolding and folding",
+   "records": [
+    "rec:1414",
+    "rec:1415",
+    "rec:1416",
+    "rec:1511",
+    "rec:1532"
+   ],
+   "specification": [
+    "arg:a1414-def-M",
+    "arg:a1414-both-dirs",
+    "arg:a1414-five-seeds",
+    "arg:a1415-seed-parse",
+    "arg:a1415-rules",
+    "arg:a1415-emission",
+    "arg:a1416-classes",
+    "arg:a1511-six-operable",
+    "arg:a1532-four-states"
+   ],
+   "establishes": "a later text constructed from an earlier one by named rules, run both ways (M unfolds, M⁻¹ folds): the derivation is executable, its anchors hard, its residue shown; upstream, the same view runs from Sappho 31 into the Apocalypse's channel as six graded plates (#1511); the census of the ancient reception sorts each transform into four evidentiary states (#1532)",
+   "licenses_no": "historical fact of composition; the records claim an operable competing inference (#1414), and the burden between inferences is symmetrical",
+   "controls": [
+    "arg:a1415-crown",
+    "arg:a1415-synagoge",
+    "arg:a1415-arrow",
+    "arg:a1511-controls",
+    "arg:a1532-catullus-control",
+    "arg:a1532-calibration"
+   ],
+   "negatives_and_residue": [
+    "arg:a1415-residue",
+    "arg:a1415-residue-loci",
+    "arg:a1415-underivable"
+   ],
+   "results": [
+    {
+     "move": [
+      "arg:a1416-smyrna"
+     ],
+     "status": "graded A: Smyrna → James, on two hard anchors with the direction read from the verb forms (#1415)"
+    },
+    {
+     "move": [
+      "arg:a1416-grades-fall"
+     ],
+     "status": "the heptad's grades fall letter by letter; it weighs no more than its graded rows"
+    },
+    {
+     "move": [
+      "arg:a1511-tiers"
+     ],
+     "status": "six upstream plates, each ATTESTED, TESTED, CONTESTED or TESTED UNDER SEAL"
+    },
+    {
+     "move": [
+      "arg:a1532-braided"
+     ],
+     "status": "the ancient reception of fr. 31 a braided field of transforms, each with its own state"
+    }
+   ],
+   "defeats_if": [
+    "arg:a1414-counterevidence",
+    "arg:a1415-reverse",
+    "arg:a1414-parent-conditions"
+   ],
+   "grades": [
+    "arg:a1416-heptad-weight",
+    "arg:a1416-granularity",
+    "arg:a1511-not-asserted"
+   ],
+   "applies_at": [
+    "site:cosmic-christ",
+    "site:gospel-christ",
+    "site:sappho-31",
+    "site:catullus"
+   ],
+   "bridges": [
+    "bridge:canon"
+   ],
+   "controls_status": {
+    "arg:a1415-crown": "run",
+    "arg:a1415-synagoge": "run",
+    "arg:a1415-arrow": "run",
+    "arg:a1511-controls": "run",
+    "arg:a1532-catullus-control": "run",
+    "arg:a1532-calibration": "specified"
+   }
+  },
+  {
+   "@id": "instrument:blind-reconstruction",
+   "@type": "Instrument",
+   "name": "Blind reconstruction: the mapping recovered without the name",
+   "records": [
+    "rec:1486"
+   ],
+   "specification": [
+    "arg:a1486-symbolon",
+    "arg:a1486-order-key",
+    "arg:a1486-null-runnable",
+    "arg:a1486-reflexivity-rule",
+    "arg:a1486-r2-factor"
+   ],
+   "establishes": "a structural mapping between Sappho 31 and Philo specified, executed and verified by readers blind to the hypothesis: 'A specified, executable, blind-verified structural mapping' (#1486); the source a fixed point, the receivers transforms",
+   "licenses_no": "Sappho's material presence in Philo, which the record leaves unestablished; the name is absent (documented null)",
+   "controls": [
+    "arg:a1486-f1-specificity",
+    "arg:a1486-f2-ablation",
+    "arg:a1486-f3-description",
+    "arg:a1486-r1-phaedrus"
+   ],
+   "negatives_and_residue": [
+    "arg:a1486-residue",
+    "arg:a1486-not-established",
+    "arg:a1486-armenian-limit"
+   ],
+   "results": [
+    {
+     "move": [
+      "arg:a1486-established"
+     ],
+     "status": "the mapping established as structure"
+    },
+    {
+     "move": [
+      "arg:a1486-sufficiency-only"
+     ],
+     "status": "round 1 tested sufficiency and nothing else"
+    },
+    {
+     "move": [
+      "arg:a1486-attestation-induction"
+     ],
+     "status": "withdrawn in v2: asking for recognition creates it"
+    }
+   ],
+   "defeats_if": [
+    "arg:a1486-pan-sapphism",
+    "arg:a1486-residue-defeat"
+   ],
+   "grades": [
+    "arg:a1486-p3-robust",
+    "arg:a1486-target-arm",
+    "arg:a1486-post-disclosure"
+   ],
+   "applies_at": [
+    "site:philo",
+    "site:sappho-31"
+   ],
+   "bridges": [
+    "bridge:mapping"
+   ],
+   "controls_status": {
+    "arg:a1486-f1-specificity": "specified",
+    "arg:a1486-f2-ablation": "specified",
+    "arg:a1486-f3-description": "specified",
+    "arg:a1486-r1-phaedrus": "specified"
+   }
+  },
+  {
+   "@id": "instrument:frozen-operator",
+   "@type": "Instrument",
+   "name": "Frozen, pre-registered operators and the append-only ledger",
+   "records": [
+    "rec:1494",
+    "rec:1495",
+    "rec:1533",
+    "rec:1571"
+   ],
+   "specification": [
+    "arg:a1494-derived-without",
+    "arg:a1494-stations",
+    "arg:a1494-bset",
+    "arg:a1495-rule",
+    "arg:a1495-threshold",
+    "arg:a1533-frozen",
+    "arg:a1533-freedoms",
+    "arg:a1533-topology-fixed",
+    "arg:a1533-scoring",
+    "arg:a1571-fixed-before",
+    "arg:a1571-frozen-status",
+    "arg:a1571-append-discharge",
+    "arg:a1571-sha-carried"
+   ],
+   "establishes": "an operator derived from witnesses that exclude the target, frozen with its stations, criterion, controls and threshold before the target is scored; dispositions appended under the entry they discharge, each entry hashed as filed (#1571); a pass establishes material instantiation, which licenses a separate test of descent (#1533)",
+   "licenses_no": "authorship, route or borrowing; on Revelation 12 'The dangerous sentence is not asserted here.' (#1495)",
+   "controls": [
+    "arg:a1494-negatives",
+    "arg:a1533-pos-control",
+    "arg:a1533-neg-control",
+    "arg:a1533-background",
+    "arg:a1571-l1-positive",
+    "arg:a1571-l1-sanity"
+   ],
+   "negatives_and_residue": [
+    "arg:a1495-c1",
+    "arg:a1495-c7-fire-neg",
+    "arg:a1533-set-K",
+    "arg:a1533-set-Kstar"
+   ],
+   "results": [
+    {
+     "move": [
+      "arg:a1495-tally"
+     ],
+     "status": "Revelation 12: eight of nine stations, the pre-set threshold exceeded; C1 fails"
+    },
+    {
+     "move": [
+      "arg:a1495-one-witness"
+     ],
+     "status": "one witness's count, deposited with its negatives; substrate-blind replication named as the hardening"
+    },
+    {
+     "move": [
+      "arg:a1571-y2-disp"
+     ],
+     "status": "YIELD-02 discharged, confirmed: six slots filled, the rivals lose"
+    },
+    {
+     "move": [
+      "arg:a1571-c-disp"
+     ],
+     "status": "COMPLETE-01 discharged"
+    },
+    {
+     "move": [
+      "arg:a1571-l2-disp"
+     ],
+     "status": "LEAK-DEFICIT-02 discharged void: no number from it may be quoted"
+    },
+    {
+     "move": [
+      "arg:a1571-k-void"
+     ],
+     "status": "CAPTURE-01 void, superseded"
+    },
+    {
+     "move": [
+      "arg:a1571-y1-disp"
+     ],
+     "status": "YIELD-01 spent: the saturation defect its own §9 predicted"
+    },
+    {
+     "move": [
+      "arg:a1571-ul-total"
+     ],
+     "status": "UNLOCK-01 running"
+    },
+    {
+     "move": [
+      "arg:a1533-if-passes"
+     ],
+     "status": "QFO-01 frozen; the Qurʾan not yet scored"
+    }
+   ],
+   "defeats_if": [
+    "arg:a1533-rc-invalid",
+    "arg:a1533-rc-none",
+    "arg:a1533-d-translation",
+    "arg:a1533-d-windows",
+    "arg:a1533-d-motifs",
+    "arg:a1533-d-background",
+    "arg:a1533-new-version",
+    "arg:a1571-ul-kill-weaken"
+   ],
+   "grades": [
+    "arg:a1495-ladder",
+    "arg:a1495-single",
+    "arg:a1533-p-material",
+    "arg:a1533-p-historical"
+   ],
+   "applies_at": [
+    "site:cosmic-christ",
+    "site:academy"
+   ],
+   "bridges": [
+    "bridge:canon"
+   ],
+   "controls_status": {
+    "arg:a1494-negatives": "run",
+    "arg:a1533-pos-control": "specified",
+    "arg:a1533-neg-control": "specified",
+    "arg:a1533-background": "specified",
+    "arg:a1571-l1-positive": "specified",
+    "arg:a1571-l1-sanity": "specified"
+   }
+  },
+  {
+   "@id": "instrument:suppression-signature",
+   "@type": "Instrument",
+   "name": "The suppression signature: a loss profile measured against ordinary loss",
+   "records": [
+    "rec:1496"
+   ],
+   "specification": [
+    "arg:a1496-unfalsifiable",
+    "arg:a1496-claim",
+    "arg:a1496-vectors",
+    "arg:a1496-o-def",
+    "arg:a1496-tuple"
+   ],
+   "establishes": "the claim 'this technology was suppressed' made testable by scoring each witness on four vectors; ordinary textual loss and the signature of a technology's suppression separated by profile: 'operation survives; provenance disappears' (#1496)",
+   "licenses_no": "intent; the map 'does not yet assert' the domestication it names (#1496)",
+   "controls": [
+    "arg:a1496-philo",
+    "arg:a1496-rev12",
+    "arg:a1496-registry"
+   ],
+   "negatives_and_residue": [
+    "arg:a1496-audit-caveat"
+   ],
+   "results": [
+    {
+     "move": [
+      "arg:a1496-crossing"
+     ],
+     "status": "attribution dies at the crossing; held at the strength #1496 gives it, the crossing modular at Philo (erasure_by_station)"
+    },
+    {
+     "move": [
+      "arg:a1496-operator-alive"
+     ],
+     "status": "every witness scored runs the operator"
+    },
+    {
+     "move": [
+      "arg:a1496-name-lost"
+     ],
+     "status": "what the tradition lost was the machine's name"
+    },
+    {
+     "move": [
+      "arg:a1496-passive"
+     ],
+     "status": "a classification scheme with no slot for the object suppresses it by filing"
+    }
+   ],
+   "defeats_if": [
+    "arg:a1496-t-audit",
+    "arg:a1496-t-ematrix",
+    "arg:a1496-t-degradation"
+   ],
+   "grades": [
+    "arg:a1496-not-yet",
+    "arg:a1496-audit-caveat"
+   ],
+   "applies_at": [
+    "site:sappho-31",
+    "site:orphic-tablets",
+    "site:academy",
+    "site:philo",
+    "site:peri-hypsous",
+    "site:catullus",
+    "site:josephus",
+    "site:cosmic-christ",
+    "site:gospel-christ",
+    "site:augustine",
+    "site:the-reader-now"
+   ],
+   "see": [
+    "erasure_by_station",
+    "Q5"
+   ],
+   "controls_status": {
+    "arg:a1496-philo": "run",
+    "arg:a1496-rev12": "run",
+    "arg:a1496-registry": "run"
+   }
+  },
+  {
+   "@id": "instrument:corpus-scale",
+   "@type": "Instrument",
+   "name": "Measurement at corpus scale: censuses and stylometry",
+   "records": [
+    "rec:1532",
+    "rec:1572",
+    "rec:1586",
+    "rec:1590",
+    "rec:1605",
+    "rec:1730",
+    "rec:1733"
+   ],
+   "specification": [
+    "arg:a1586-fw-profile",
+    "arg:a1586-lean-method",
+    "arg:a1586-rolling",
+    "arg:a1586-namefree-method",
+    "arg:a1586-heldout-method",
+    "arg:a1605-mc-test",
+    "arg:a1605-fc-cell",
+    "arg:a1605-ar-method",
+    "arg:a1572-six-frozen",
+    "arg:a1590-c-rest",
+    "arg:a1730-census"
+   ],
+   "establishes": "properties of whole corpora measured at a scale a single reader could not hold: function-word profiles over every block of thirty-five texts, name-free clustering, held-out prediction, matched cells with fused controls, catalogue matches against their base rates, the seating census of a transmission; each result graded by the record that runs it",
+   "licenses_no": "hands, dates, membership or the count of makers: 'cannot count hands' (#1605); the axis is world against instrument, read off the corpus, and the names are a filing measured beside it",
+   "controls": [
+    "arg:a1605-ar-c",
+    "arg:a1605-hm-a",
+    "arg:a1605-fc-control",
+    "arg:a1572-rule-load",
+    "arg:a1590-c-theo",
+    "arg:a1586-run2-method"
+   ],
+   "negatives_and_residue": [
+    "arg:a1586-caveat-blocks",
+    "arg:a1586-confounds",
+    "arg:a1572-coverage-collapse",
+    "arg:a1730-want-sixteen",
+    "arg:a1590-theo-206"
+   ],
+   "results": [
+    {
+     "move": [
+      "arg:a1586-run1-finding"
+     ],
+     "status": "operation labels recovered 25/28 on every feature family; names at chance"
+    },
+    {
+     "move": [
+      "arg:a1586-not-reproduced"
+     ],
+     "status": "the blind-label run did not reproduce the headline: recorded as a defeat"
+    },
+    {
+     "move": [
+      "arg:a1586-blind-corrected"
+     ],
+     "status": "after the file erratum, 74–76%"
+    },
+    {
+     "move": [
+      "arg:a1586-heldout-11-12"
+     ],
+     "status": "held-out prediction 11/12; the misses the texts nearest the centre"
+    },
+    {
+     "move": [
+      "arg:a1605-mc-find"
+     ],
+     "status": "maker-count test: the classifier learned subject"
+    },
+    {
+     "move": [
+      "arg:a1605-fc-95th"
+     ],
+     "status": "the names at the 95th percentile of arbitrary splits in the matched cell"
+    },
+    {
+     "move": [
+      "arg:a1605-st-b-ci"
+     ],
+     "status": "operation against names, descriptive only (bootstrap interval spans zero)"
+    },
+    {
+     "move": [
+      "arg:a1572-all-destroyed"
+     ],
+     "status": "the fifteen-feature battery destroyed by size, language or period"
+    },
+    {
+     "move": [
+      "arg:a1572-validation-1-3"
+     ],
+     "status": "the instruments never validated before use: 1 of 3"
+    },
+    {
+     "move": [
+      "arg:a1572-did-not-fire"
+     ],
+     "status": "the falsifier stated in advance did not fire"
+    },
+    {
+     "move": [
+      "arg:a1590-seven-times"
+     ],
+     "status": "the lost-dialogue catalogue's opening matches Plato at seven times the base rate"
+    },
+    {
+     "move": [
+      "arg:a1590-claims-shape"
+     ],
+     "status": "the shape of the match claimed; identity left to the fragment collation, named and unrun"
+    }
+   ],
+   "defeats_if": [
+    "arg:a1586-noise-brake",
+    "arg:a1605-mc-defeat",
+    "arg:a1590-fragment-test",
+    "arg:a1572-kill-condition"
+   ],
+   "grades": [
+    "arg:a1586-not-hands",
+    "arg:a1605-cl-not-met",
+    "arg:a1605-mc-grade",
+    "arg:a1590-not-hands",
+    "arg:a1730-not-legal"
+   ],
+   "applies_at": [
+    "site:academy"
+   ],
+   "scale": "literary method newly possible at this scale in the age of AI (the author, 2026-11-09 15:58)",
+   "prior_states": [
+    "rec:1585",
+    "rec:1589",
+    "rec:1594"
+   ],
+   "controls_status": {
+    "arg:a1605-ar-c": "run",
+    "arg:a1605-hm-a": "run",
+    "arg:a1605-fc-control": "run",
+    "arg:a1572-rule-load": "run",
+    "arg:a1590-c-theo": "run",
+    "arg:a1586-run2-method": "run"
+   }
+  },
+  {
+   "@id": "claim:hl-674-canon-date",
+   "@type": "Claim",
+   "target": "rec:674",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-history-date",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-article",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-settlement-falls",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-corrected",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-logos-graphe",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-codex",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:hl-978-both",
+   "@type": "Claim",
+   "target": "rec:978",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "join:counterfeit-orthodoxies",
+   "@type": "Join",
+   "states": {
+    "current_state": "rec:978",
+    "prior_state": "rec:674",
+    "duplicate_seat": "rec:65"
+   },
+   "carries": [
+    "claim:hl-674-canon-date",
+    "claim:hl-978-history-date",
+    "claim:hl-978-article",
+    "claim:hl-978-settlement-falls",
+    "claim:hl-978-corrected",
+    "claim:hl-978-logos-graphe",
+    "claim:hl-978-codex"
+   ],
+   "moves": [
+    "arg:a674-nt-athanasius",
+    "arg:a978-athanasius-367",
+    "arg:a978-history-date",
+    "arg:a978-article-survives",
+    "arg:a978-the-settlement",
+    "arg:a978-settlement-falls",
+    "arg:a978-dc-corrected-thesis",
+    "arg:a978-most-successful",
+    "arg:a978-memra-greek",
+    "arg:a978-milieu-witness",
+    "arg:a978-logos-graphe",
+    "arg:a978-codex-body",
+    "arg:a978-both-defensible"
+   ],
+   "reading": "the New Testament corpus is a set of texts with a date of collection: 'The Christian New Testament is not a book. It is Athanasius of Alexandria, 367 CE, Festal Letter 39.' (#674); the rival collections stand beside it (#978); the label and the definite article survive the facts ('*the* Bible, *the* New Testament'); the corrected thesis reads the canonical texts as the workshop tradition's most successful products; at John 1:1 and 1:14 the Word's flesh is read as text: 'The body the Word prepared for itself is the codex.' (#978), bounded: 'Both readings are textually defensible'",
+   "state": "#978 the current state (FRACTURE.02, a recomposition of v1.0–v3.0 and the Manifesto); #674 the prior state, the Manifesto's compression, revised by #978 where #978 says so (18 revises edges in 04-arguments.jsonl)",
+   "seating_note": "#65 is titled 'Counterfeit Orthodoxies — A Dialectical Fracture Through the Citation Map', and its seated text is FRACTURE.02, the recomposition #978 carries, sentence for sentence (two lines differ, checked 2026-11-09). Carried as data; the v1.0–v3.0 text the title names is not seated in this repository; its recovery is the author's to rule",
+   "statement": "stmt:20261109-1556"
+  },
+  {
+   "@id": "claim:rv-ce-christian-theology",
+   "@type": "Claim",
+   "target": "site:ce-logos",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "site:wp-logos",
+   "@type": "SurfaceRecord",
+   "url": "https://en.wikipedia.org/wiki/Logos",
+   "title": "Wikipedia, 'Logos' (CC BY-SA), as retrieved",
+   "retrieved": "2026-11-09T18:15Z",
+   "sha256": "a1673fbe5dc7153b1a7efea9f6de2dede2cbd4035bd85f8fffedc876952cb708",
+   "role": "a documented statement of the rival"
+  },
+  {
+   "@id": "claim:rv-wp-christian-logos",
+   "@type": "Claim",
+   "target": "site:wp-logos",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rv-wp-in-christianity",
+   "@type": "Claim",
+   "target": "site:wp-logos-christianity",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "site:athanasius-fl39",
+   "@type": "SurfaceRecord",
+   "url": "https://www.newadvent.org/fathers/2806039.htm",
+   "title": "Athanasius, Festal Letter 39 (367 CE), tr. R. Payne-Smith, NPNF² vol. 4 (1892), public domain; New Advent, as fetched 2026-11-09",
+   "retrieved": "2026-11-09T22:05Z",
+   "sha256": "c38762e05fbe46c293b1d531314c5bbb4588e33d7ec511fb5e273b31b13a1961",
+   "role": "a primary witness to the settlement (D5)"
+  },
+  {
+   "@id": "site:irenaeus-ah3-11",
+   "@type": "SurfaceRecord",
+   "url": "https://www.newadvent.org/fathers/0103311.htm",
+   "title": "Irenaeus, Against Heresies III.11, tr. A. Roberts and W. Rambaut, ANF vol. 1 (1885), public domain; New Advent, as fetched 2026-11-09",
+   "retrieved": "2026-11-09T22:05Z",
+   "sha256": "91659bdff0c2473f2beca1c7d6330db4bcae95c546b891012a171a6ecc35c157",
+   "role": "a primary witness to the settlement (D5)"
+  },
+  {
+   "@id": "claim:pr-ath-boundary",
+   "@type": "Claim",
+   "target": "site:athanasius-fl39",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:pr-ath-police",
+   "@type": "Claim",
+   "target": "site:athanasius-fl39",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:pr-ir-flesh",
+   "@type": "Claim",
+   "target": "site:irenaeus-ah3-11",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:pr-ir-marcion",
+   "@type": "Claim",
+   "target": "site:irenaeus-ah3-11",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:pr-ir-four",
+   "@type": "Claim",
+   "target": "site:irenaeus-ah3-11",
+   "bodies": {
+    "R": "principal"
+   }
   }
  ],
  "edges": [
@@ -3138,6 +4350,276 @@
    "source": "rec:626",
    "relation": "belongs_to",
    "target": "stratum:S5-founding",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:978",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:978",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:674",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:674",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:65",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:65",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1414",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1414",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1415",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1415",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1416",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1416",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1511",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1511",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1532",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1532",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1533",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1533",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1571",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1571",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1572",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1572",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1586",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1586",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1730",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1730",
+   "relation": "belongs_to",
+   "target": "stratum:S6-method-and-settlement",
    "family": "structural",
    "licensed_dimension": null,
    "warrant": "map",
@@ -3698,7 +5180,7 @@
    "target": "fw:historical-logos",
    "family": "conceptual",
    "licensed_dimension": null,
-   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217",
+   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1",
    "provenance": "stations"
   },
   {
@@ -3707,7 +5189,7 @@
    "target": "site:gospel-christ",
    "family": "structural",
    "licensed_dimension": null,
-   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217",
+   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1",
    "provenance": "stations"
   },
   {
@@ -3716,7 +5198,7 @@
    "target": "site:gospel-christ",
    "family": "structural",
    "licensed_dimension": null,
-   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217",
+   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1",
    "provenance": "stations"
   },
   {
@@ -3725,7 +5207,16 @@
    "target": "site:gospel-christ",
    "family": "structural",
    "licensed_dimension": null,
-   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217",
+   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1",
+   "provenance": "stations"
+  },
+  {
+   "source": "rec:978",
+   "relation": "realizes",
+   "target": "site:gospel-christ",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1",
    "provenance": "stations"
   },
   {
@@ -4295,6 +5786,222 @@
    "licensed_dimension": null,
    "warrant": "Capture Registry",
    "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "rec:1414",
+   "relation": "instantiates",
+   "target": "instrument:unfolding",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1415",
+   "relation": "instantiates",
+   "target": "instrument:unfolding",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1416",
+   "relation": "instantiates",
+   "target": "instrument:unfolding",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1511",
+   "relation": "instantiates",
+   "target": "instrument:unfolding",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1532",
+   "relation": "instantiates",
+   "target": "instrument:unfolding",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1486",
+   "relation": "instantiates",
+   "target": "instrument:blind-reconstruction",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "instantiates",
+   "target": "instrument:frozen-operator",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "instantiates",
+   "target": "instrument:frozen-operator",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1533",
+   "relation": "instantiates",
+   "target": "instrument:frozen-operator",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1571",
+   "relation": "instantiates",
+   "target": "instrument:frozen-operator",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1496",
+   "relation": "instantiates",
+   "target": "instrument:suppression-signature",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1532",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1572",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1586",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1590",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1605",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1730",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "rec:1733",
+   "relation": "instantiates",
+   "target": "instrument:corpus-scale",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the record runs the instrument (method.instruments)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "claim:hl-978-corrected",
+   "relation": "supersedes",
+   "target": "claim:hl-674-canon-date",
+   "family": "evidentiary",
+   "licensed_dimension": "identity,history",
+   "warrant": "#978 recomposes #674 by immanent critique: the canonical texts the workshop tradition's most successful products; the date of #674 kept, its oppositional frame revised (arg:a978-dc-corrected-thesis revises arg:a674-won-disposal)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "claim:hl-978-history-date",
+   "relation": "develops",
+   "target": "claim:hl-674-canon-date",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the assumption's history dated (#978) from the Festal Letter of 367 CE (#674)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "claim:hl-978-codex",
+   "relation": "develops",
+   "target": "claim:hl-978-logos-graphe",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the incarnation of logos into graphē, then the codex as the body the Word prepared for itself (#978)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "claim:hl-978-both",
+   "relation": "qualifies",
+   "target": "claim:hl-978-codex",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "'Both readings are textually defensible' (#978): the codex reading held at the interpretive ring",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "claim:hl-978-logos-graphe",
+   "relation": "develops",
+   "target": "claim:hl-626-reading",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the Word that became text (#626) read at John 1:14 as logos into graphē (#978)",
+   "provenance": "v1.1"
+  },
+  {
+   "source": "claim:hl-978-article",
+   "relation": "bears_on",
+   "target": "fw:current-consensus-genealogy",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the definite article and the label survive the facts of a dated settlement (#978; rival step D5)",
+   "provenance": "v1.1"
   }
  ]
 }

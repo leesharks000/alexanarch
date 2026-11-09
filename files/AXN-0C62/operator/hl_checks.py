@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scope C, mechanical half, for EA-HK-HISTLOGOS-01 (v0.3): consequence tests C1–C5 run on the built files, and a reference check for the fields that carry
+"""Scope C, mechanical half, for EA-HK-HISTLOGOS-01 (v1.1): consequence tests C1–C8, the method check M1 run on the built files, and a reference check for the fields that carry
 identifiers outside the edge array. Records results into 10-verification.json under scope_C_mechanical; records, does not block.
     python3 hl_checks.py <kernel dir>"""
 import sys, json, pathlib, yaml
@@ -41,9 +41,32 @@ er_edges = [e for e in G["edges"] if e["source"].startswith("erasure:")]
 cross_station = [e for e in er_edges if e["target"] != "claim:hl-stmt-erasure"]
 into_gen = [e for e in G["edges"] if e["target"] == "claim:hl-stmt-genealogy"]
 T("C5 erasure findings local: each supports only the erasure statement; none feeds the genealogy statement", er_edges and not cross_station and not into_gen, {"findings": len(er_edges), "cross": cross_station[:3], "into_genealogy": len(into_gen)})
+# C6 the settlement: the label read as a dated settlement; the flag set; D5 kept as a disputed step, warranted on both sides
+SJ = K.get("settlement_join", {}); D5 = next((d for d in K["rival"]["disputed_steps"] if d.get("id") == "D5"), {})
+T("C6 the settlement: SETTLEMENT_AS_CORPUS set on the inference, D5 in four objects each warranted, 367 dating one collection's boundary, the warrants from the rival, the primary witnesses and the records",
+  "SETTLEMENT_AS_CORPUS" in json.dumps(yaml.safe_load((KD / "08-traversal.yaml").read_text(encoding="utf-8")).get("failure_flags", {})) and SJ.get("states", {}).get("current_state") == "rec:978" and SJ.get("states", {}).get("prior_state") == "rec:674"
+  and len(D5.get("objects", {})) == 4 and all(w in C for o in D5.get("objects", {}).values() for w in o["warrants"]) and "inference" in json.dumps(yaml.safe_load((KD / "08-traversal.yaml").read_text(encoding="utf-8"))["failure_flags"]["SETTLEMENT_AS_CORPUS"]) and any(w.startswith("pr-") for w in D5.get("warrants", [])) and any(w.startswith("rv-") for w in D5.get("warrants", [])) and any(w.startswith("hl-") for w in D5.get("warrants", [])) and all(w in C for w in D5.get("warrants", [])), {"D5_warrants": D5.get("warrants")})
+# C7 remove instrument V: no bridge depends on it alone; the maker argument's steps and demonstrations cite none of its moves only
+INS = {i["@id"]: i for i in K["method"]["instruments"]}; V = INS.get("instrument:corpus-scale", {})
+v_moves = set(refs({k: V.get(k) for k in ("specification", "controls", "negatives_and_residue", "results", "defeats_if", "grades")}))
+only_v = [b["@id"] for b in BR if b.get("instruments") == ["instrument:corpus-scale"]]
+shared = {k: sorted(set(refs(i.get("results"))) & v_moves) for k, i in INS.items() if k != "instrument:corpus-scale"}
+T("C7 remove instrument V: no bridge rests on it alone; the results of instruments I–IV cite none of its moves", not only_v and not any(shared.values()), {"bridges_only_on_V": only_v, "shared_results": {k: v for k, v in shared.items() if v}})
+# C8 M-D1 carries #1576's four propositions, the fourth as precedence
+MD1 = next(d for d in MA["demonstrations"] if d["id"] == "M-D1")
+T("C8 M-D1 carries #1576's four propositions; the fourth is precedence, with its bundle", all(w in MD1["configuration"] for w in ("part of the method", "existed beforehand", "named art", "conventionally dated before")) and "two makers" not in MD1["configuration"] and "arg:a1576-fourth-bundles" in MD1["moves"], {"configuration": MD1["configuration"][:160]})
+# M1 every instrument complete: specification, controls, results with status, defeats, grades, and a statement of what it licenses no conclusion about; every move resolves
+inc = {k: [f for f in ("specification", "controls", "results", "defeats_if", "grades", "licenses_no") if not i.get(f)] for k, i in INS.items()}
+nostat = [k for k, i in INS.items() if any(not r.get("status") for r in i.get("results", []))]
+unres = sorted({r for i in INS.values() for r in refs(i) if not resolves(r)} | {r for r in K["method"].get("losses_recorded", []) if not resolves(r)})
+BB = K["method"].get("by_bridge", []); cst = [k for k, i in INS.items() if set(i.get("controls_status", {})) != set(i.get("controls", [])) or not set(i.get("controls_status", {}).values()) <= {"run", "specified"}]
+unres += sorted({r for row in BB for r in refs(row) if not resolves(r)})
+T("M1 five instruments, each complete, every result at a status, every control marked run or specified, a method row for every bridge, every move and loss resolving",
+  len(INS) == 5 and not any(inc.values()) and not nostat and not unres and K["method"].get("losses_recorded") and not cst and {r["bridge"] for r in BB} == {b["@id"] for b in BR},
+  {"incomplete": {k: v for k, v in inc.items() if v}, "no_status": nostat, "controls_unmarked": cst, "unresolved": unres[:8]})
 # references in the new fields resolve
 bad = []
-for obj in BR + [MA, K["rival"], {"e": K["erasure_by_station"]}]:
+for obj in BR + [MA, K["rival"], {"e": K["erasure_by_station"]}, K["method"], K.get("settlement_join", {})]:
     bad += [r for r in refs(obj) if not resolves(r)]
 for a in A.values():
     bad += [r for r in refs(a.get("current_standing")) if not resolves(r)]

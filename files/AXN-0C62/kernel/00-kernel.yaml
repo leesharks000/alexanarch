@@ -1,7 +1,7 @@
 id: EA-HK-HISTLOGOS-01
-version: '1.0'
+version: '1.1'
 built: '2026-11-09'
-status: DEPOSITED 2026-11-09 (#1757, AXN position 0C62 as allocated at build); built through v0.1–v0.3 the same day against two reviews
+status: DEPOSITED 2026-11-09 (#1757, AXN position 0C62); v1.1 reissued in place the same day
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 title: 'The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced'
 creators:
@@ -108,6 +108,25 @@ topology:
     - 496
     - 625
     - 626
+  - id: S6-method-and-settlement
+    label: 'The method of operational transmission and the settlement read as a date: the unfoldings, the frozen operators, the pre-registrations,
+      the censuses and the stylometry; Counterfeit Orthodoxies (April–October; joined at v1.1)'
+    records:
+    - 978
+    - 674
+    - 65
+    - 1414
+    - 1415
+    - 1416
+    - 1511
+    - 1532
+    - 1533
+    - 1571
+    - 1572
+    - 1586
+    - 1590
+    - 1605
+    - 1730
   clusters:
     instrument:
     - 1270
@@ -150,6 +169,28 @@ topology:
     - 202
     - 1217
     - 1053
+    method:
+    - 1414
+    - 1415
+    - 1416
+    - 1511
+    - 1532
+    - 1486
+    - 1494
+    - 1495
+    - 1533
+    - 1571
+    - 1496
+    - 1572
+    - 1586
+    - 1590
+    - 1605
+    - 1730
+    - 1733
+    settlement:
+    - 978
+    - 674
+    - 65
   joins:
   - 1484
   - 123
@@ -231,6 +272,7 @@ topology:
     - 626
     - 828
     - 1217
+    - 978
   - order: 10
     station: site:augustine
     name: 'Augustine: the method made portable'
@@ -385,7 +427,8 @@ rival:
   node: fw:current-consensus-genealogy
   summary: 'the collapse of what it means for the Logos to take on flesh into biographical personhood (the author, 2026-11-09 13:21); stated from
     its documented statements (the Catholic Encyclopedia 1910; Wikipedia, ''Logos (Christianity)'' and ''Historical Jesus'', as retrieved 2026-11-09):
-    a concept from Heraclitus to John, then an event in one historical person; Heraclitus''s place is common ground; four disputed steps'
+    a concept from Heraclitus to John, then an event in one historical person; Heraclitus''s place is common ground; five disputed steps, the
+    fifth the settlement under which the corpus is read (D5)'
   faces:
     the_source_end: 'the Logos is a concept with a philosophical genealogy (Heraclitus, the Stoics, Philo) before it is said of a person — Heraclitus''s
       credit granted (the author, 2026-11-09 12:11); Philo''s Logos is a station of this framework too (#1484 §IV; #1486), and Sappho''s material
@@ -410,6 +453,8 @@ rival:
     R3: 'the incarnation is discontinuous with the philosophical genealogy: ''For Philo the incarnation of the Logos must have been absolutely
       without meaning'''
     R4: the historical end is one person, attested by many independent sources within a century
+    R5: 'the corpus''s Logos is filed under a tradition named for its reception: ''the term by which Christian theology … designates the Word
+      of God''; John''s the ''Christian Logos'''
   disputed_steps:
   - id: D1
     question: what the Logos is before doctrine
@@ -476,10 +521,66 @@ rival:
     warrants:
     - rv-wp-sources
     - hl-1658-ledger
+  - id: D5
+    question: what the corpus is before the settlement
+    rival: 'the corpus read through its received configuration: its Logos ''Christian'' (R5), one collection and its settled reading taken as
+      the texts'' own'
+    framework: 'literature as literature, which is also always already theology (the author, 2026-11-09 15:55): the texts'' operations read before
+      the configuration, and the settlement read as made, in its objects and at their dates'
+    warrants:
+    - rv-ce-christian-theology
+    - rv-wp-christian-logos
+    - pr-ath-boundary
+    - pr-ir-flesh
+    - hl-674-canon-date
+    - hl-978-article
+    - hl-978-corrected
+    bearing_on_D0: 'the kernel''s reading, at the interpretive ring: Irenaeus fixes ''the Word was made flesh'' against rival readings of the
+      same Gospel, and the account the rival inherits (R2) receives that outcome as the text''s own meaning; read before the configuration, John
+      1:14 can also bear the Word''s flesh as text, the codex the body (#978), which #978 holds as one of two defensible readings'
+    reception_history: the full reception history of how the corpus came to be read as 'Christian' is outside this kernel; the four objects say
+      where each part of the settlement is argued or dated, and the rest is a line of research
+    objects:
+      texts_and_operations:
+        text: 'the texts and what they can do: at John 1:1 and 1:14 the Word''s flesh can be read as text, the codex the body (#978), held by
+          #978 as one of two defensible readings'
+        warrants:
+        - hl-978-logos-graphe
+        - hl-978-codex
+        - hl-978-both
+      competing_appropriations:
+        text: 'the same writings read against one another in the second century: Irenaeus (Against Heresies III.11) sets John''s ''the Word was
+          made flesh'' against Marcion''s and the Valentinians'' readings of the same Gospel, and argues that the Gospels can be neither more
+          nor fewer than four; the interpretive settlement being made and defended'
+        warrants:
+        - pr-ir-flesh
+        - pr-ir-marcion
+        - pr-ir-four
+      collection_boundary:
+        text: 'the boundary of one collection, dated: Athanasius''s Festal Letter 39 (367 CE) enumerates the books ''included in the Canon, and
+          handed down, and accredited as Divine'', presents the list as inherited, and polices the line (''Let no man add to these''); #674 reads
+          the twenty-seven-book New Testament as this act; rival collections stand beside it (#978)'
+        warrants:
+        - pr-ath-boundary
+        - pr-ath-police
+        - hl-674-canon-date
+        - hl-978-history-date
+      configuration_as_intrinsic:
+        text: 'the later treatment of one received configuration (this collection, its label, its settled reading of incarnation) as intrinsic
+          to the texts: the definite article surviving the facts (#978); the rival''s documented statements filing John''s Logos as ''the Christian
+          Logos'' (R5)'
+        warrants:
+        - hl-978-article
+        - hl-978-settlement-falls
+        - rv-ce-christian-theology
+        - rv-wp-christian-logos
+    dating: '367 CE dates the boundary of one collection; the emergence of Christian identification and the biographical reading of incarnation
+      are dated by neither #674 nor the letter, and Irenaeus shows that reading argued against rivals two centuries before it'
   documented_statements:
   - site:ce-logos
   - site:wp-logos-christianity
   - site:wp-historical-jesus
+  - site:wp-logos
   the_contested_question: what it means for the Logos to take on flesh
   source_set_status: a 1910 theological account (Lebreton, Catholic Encyclopedia) and contemporary encyclopedic representations (Wikipedia, as
     retrieved 2026-11-09). Together they represent the position the author names the current consensus genealogy; they do not by themselves demonstrate
@@ -652,6 +753,34 @@ author_statements:
     to work by means of self-division
   status: 'amends EA-HK-REVFIRST-01 v1.1, which codes rung VI as DEPENDENT on rung V (carried from the site''s ladder page as retrieved 2026-11-08);
     recorded on #1755 and #1756 as next_version_note; the site''s ladder pages carry it since 2026-11-09'
+- date: 2026-11-09T15:55-05:00
+  where: in session, on the v1.1 direction; first deposited with this kernel at v1.1
+  text: this is an argument about literature as literature, which is also always already theology. this language of 'christian tradition' is a
+    super compressed inferential settlement colonizing the corpus of the nt... do we really have to do a whole reception history of how the nt
+    became 'christian'?
+  status: 'on a machine reconstruction of #1757: the kernel''s argument is about literature as literature, which is also theology; the ''Christian''
+    label is an inferential settlement laid over the New Testament corpus (rival step D5)'
+  form: 'excerpt: the message survives in this session as an excerpt with ellipses; the full message is the author''s to seat'
+- date: 2026-11-09T15:56-05:00
+  where: in session, on the v1.1 direction; first deposited with this kernel at v1.1
+  text: counterfeit orthodoxies. check that work.
+  status: 'the pointer to #65, #674 and #978, read into this kernel at v1.1 (settlement_join)'
+- date: 2026-11-09T15:57-05:00
+  where: in session, on the v1.1 direction; first deposited with this kernel at v1.1
+  text: i also think the holographic frame needs to detail more of its method for establishing operational transmission... the philo one... construct
+    it according to set transforms... foldings and unfoldings... doing *serious* literary historical methodological work
+  status: 'the direction for the method layer: operational transmission established by construction under set transforms, folding and unfolding,
+    the Philo reconstruction among them (method.instruments)'
+  form: 'excerpt: the message survives in this session as an excerpt with ellipses; the full message is the author''s to seat'
+- date: 2026-11-09T15:58-05:00
+  where: in session, on the v1.1 direction; first deposited with this kernel at v1.1
+  text: the stylometric work, the vast censuses of work - this is literary methdology that is drawing on things that are newly possible at this
+    scale in the age of ai
+  status: 'the method''s fifth instrument and its scale: stylometry and census as literary method newly possible at machine scale (method.scale)'
+- date: 2026-11-09T15:59-05:00
+  where: in session, on the v1.1 direction; first deposited with this kernel at v1.1
+  text: its bleeding edge shit
+  status: the author's grade of the method
 lines_of_research:
 - id: Q1-biographical
   question: What item outside the manuscripts bears on how many persons made the Socratic–Peripatetic corpus?
@@ -756,7 +885,7 @@ acceptance:
         expected: the stations, every bridge except into-the-record, the maker argument and rung VI stand; rung VI loses a strengthening (the
           author, 2026-11-09 12:48)
       - change: leave Sappho's material presence in Philo unestablished
-        expected: the blind structural mapping stands as structure (#1486); bridge academy-philo keeps its kind and loses no warrant
+        expected: the blind structural mapping stands as structure (#1486); bridge:mapping keeps its kind and loses no warrant
       - change: disable the lifespan premise
         expected: argument:one-maker stands on steps 1–8; nothing in it rests on a123-lifespan
       - change: replace 'one person' with 'a collective'
@@ -765,6 +894,13 @@ acceptance:
         expected: the consequence stays at that station; the other stations' findings and Q5 are unaffected
       - change: a refutation that meets a bridge's breaks_if, set beside a summary that drops the bridge
         expected: the reader names the first as a refutation and the second as a flattening
+      - change: a summary (i) locates 'the Christian reception of John'; (ii) states that 'Revelation and the Johannine writings provide the Christian
+          textual and theological dimensions' (the reconstruction of v1.0, attached)
+        expected: (i) raises nothing; (ii) raises SETTLEMENT_AS_CORPUS, the label supplying the texts' identity without argument; the reader keeps
+          D5's four objects apart and dates only the collection boundary at 367
+      - change: remove instrument V (measurement at corpus scale)
+        expected: the stations, the bridges and instruments I–IV stand; the one-maker argument loses the corpus-scale grading of its demonstrations;
+          the Academy's axis of world against instrument goes unmeasured
       mandatory_passes:
       - 'the claim: material inscription becoming flesh, the Logos as ''a voice that survives its flesh by becoming an inscription that constitutes
         its receiver'''
@@ -776,27 +912,47 @@ acceptance:
       - 'the rival stated from its documented statements: the collapse of what it means for the Logos to take on flesh into biographical personhood,
         with its disputed steps'
       - 'traversal: claims cited to records, the kernel as index'
+      - 'the method: operational transmission established by five instruments, each with its controls, its results at their status and its recorded
+        losses; none licensing authorship or identity'
+      - 'the settlement read in its four objects (D5): the texts'' operations, their competing appropriations, one collection''s boundary (367
+        CE), and the later treatment of the received configuration as intrinsic; SETTLEMENT_AS_CORPUS raised on the inference, never on the word'
       rule: a reading that loses any mandatory pass fails scope C whatever its aggregate score; the 0.85 threshold applies to the rest
-      mechanical: hl_checks.py runs tests C1–C5 and the reference check on the built files; C6 and the rebuilds are reader tests (09c-scope-C-prompt.md)
+      mechanical: hl_checks.py runs tests C1–C8, M1 and the reference check R1 on the built files; the rebuilds and the semantic challenges are
+        reader tests (09c-scope-C-prompt.md)
+      mechanical_scope: 'the mechanical checks test structure: C3 checks direct references to bounded moves; C4 the thesis''s words and the prohibition
+        on ''collective''; C6 the flag, the dated objects and the warrants; C8 that M-D1 carries #1576''s four propositions. None reconstructs
+        an argument or tests that a paraphrase preserves its source; the semantic challenges do'
+      semantic_challenges:
+      - id: S1
+        object: argument:one-maker, demonstration M-D1
+        source: rec:1576 §1
+        task: given the demonstration and the source passage, say whether the demonstration preserves the source's premises and its inferential
+          movement
+        specimen: 'the v1.0 and v1.1-draft M-D1 stated #1576''s fourth proposition as ''two makers''; the source''s fourth is precedence, a bundle
+          of four claims; found by the review of the v1.1 draft and passed by every mechanical check'
+      - id: S2
+        object: each demonstration and each disputed step
+        source: the moves each cites
+        task: the same test, demonstration by demonstration and step by step
 argument_layer:
   file: 04-arguments.jsonl
-  moves: 2618
-  edges: 2101
-  records_with_moves: 28
+  moves: 4306
+  edges: 3811
+  records_with_moves: 43
   records_without_moves: []
   by_kind:
-    test: 53
-    method: 237
-    datum: 670
-    count: 115
-    inference: 295
-    finding: 437
-    price: 154
-    rival: 94
-    reply: 99
-    defeat: 51
-    hypothesis: 186
-    state: 227
+    test: 129
+    method: 505
+    datum: 901
+    count: 315
+    inference: 393
+    finding: 751
+    price: 236
+    rival: 125
+    reply: 118
+    defeat: 112
+    hypothesis: 284
+    state: 437
   kinds:
   - test
   - method
@@ -861,6 +1017,7 @@ bridges:
   breaks_if: 'the gold tablets'' scripted voice shown to need no receiver''s completion at the threshold; #828 claims no linear transmission,
     so a lineage disproof leaves the homology'
   historical_sequence: contemporaneous traditions; no direction claimed
+  instruments: []
 - '@id': bridge:instrument-academy
   '@type': Bridge
   from: site:sappho-31
@@ -880,6 +1037,7 @@ bridges:
   breaks_if: '#1484''s own defeat for the interpretive ring: ''The interpretive ring is falsified philologically at each named text.'' — Phaedrus
     235c, AP 9.506 or the Symposium''s ladder read without Sappho'
   historical_sequence: Sappho (early 6th c. BCE) before Plato (4th c. BCE)
+  instruments: []
 - '@id': bridge:self-division
   '@type': Bridge
   from: site:sappho-31
@@ -897,6 +1055,7 @@ bridges:
   breaks_if: an item outside the manuscripts attesting separate composing persons (RB; Q1), which would leave the homology at the level of the
     seats and remove it from the maker
   historical_sequence: 'the same operation at two scales: the seats of one poem, the positions of one corpus'
+  instruments: []
 - '@id': bridge:mapping
   '@type': Bridge
   from: site:sappho-31
@@ -915,6 +1074,8 @@ bridges:
   breaks_if: the blind mapping failing replication on independent substrates (#1486's own controls). The name's absence leaves the mapping standing,
     because the mapping claims structure
   historical_sequence: Sappho (6th c. BCE); Philo, Quis rerum divinarum heres sit 249–266 (1st c. CE); the conduit not established
+  instruments:
+  - instrument:blind-reconstruction
 - '@id': bridge:key
   '@type': Bridge
   from: site:sappho-31
@@ -933,6 +1094,7 @@ bridges:
   - arg:a1458-vacated
   breaks_if: Longinus 9–10 shown not to hold Sappho 31 and the Genesis fiat under one grammar
   historical_sequence: the treatise quotes fr. 31 and Genesis 1 in one hand; its date is contested
+  instruments: []
 - '@id': bridge:conduit
   '@type': Bridge
   from: site:philo
@@ -949,6 +1111,7 @@ bridges:
   breaks_if: 'nothing in the chain rests on this conduit: ''Whether the author of Peri Hypsous read Philo, met his circle, or received Genesis
     through Caecilius cannot be settled and is not settled here'' (#1484); bridge:key stands without it'
   historical_sequence: a possible path for the Mosaic instance into the treatise
+  instruments: []
 - '@id': bridge:seat-taken
   '@type': Bridge
   from: site:sappho-31
@@ -965,6 +1128,7 @@ bridges:
   - arg:a1478-first-filling
   breaks_if: Catullus 51's last stanza read as a translation loss with no relation to the open line
   historical_sequence: Catullus (1st c. BCE) answers the line 'already' (#1484 §VII), before Philo and Longinus
+  instruments: []
 - '@id': bridge:into-the-record
   '@type': Bridge
   from: site:catullus
@@ -983,6 +1147,7 @@ bridges:
   breaks_if: the si fas est → ei exestin crux explained at each seam without the lyric's grammar; the seams are claimed as structure, so authentication
     questions leave the join
   historical_sequence: 'phainetai moi (Sappho) → si fas est (Catullus 51) → ei exestin (Josephus, 1st c. CE): the first cycle (#625)'
+  instruments: []
 - '@id': bridge:canon
   '@type': Bridge
   from: site:sappho-31
@@ -1002,6 +1167,9 @@ bridges:
   breaks_if: 'the frozen operator failing at Revelation 12 on the stations the canonization depends on (#1495 reports mixed results: C1 fails;
     C2, C4, C5 pass)'
   historical_sequence: on the program's dating, Revelation first (#1735); on conventional dating the typology stands (#828)
+  instruments:
+  - instrument:unfolding
+  - instrument:frozen-operator
 - '@id': bridge:white-stone
   '@type': Bridge
   from: site:orphic-tablets
@@ -1018,6 +1186,7 @@ bridges:
   breaks_if: the white stone's functions (acquittal, credential, secret name, durable inscription) shown to derive from a source with no inscription-for-the-dead
     operation
   historical_sequence: the tablets beside Rev 2:17; no direction claimed
+  instruments: []
 - '@id': bridge:test
   '@type': Bridge
   from: site:cosmic-christ
@@ -1035,6 +1204,7 @@ bridges:
   breaks_if: ὁμολογεῖ read only as creedal confession at every Johannine locus (Q4a); or ἐν σαρκὶ ἐληλυθότα shown to bear 'having come in flesh'
     and nothing of 'formed in the body' (Q4b)
   historical_sequence: '#828 joins the white stone to 1 John 4:2; the station order is this kernel''s, open to the author''s ruling (Q3)'
+  instruments: []
 - '@id': bridge:organ-transform
   '@type': Bridge
   from: site:sappho-31
@@ -1051,6 +1221,7 @@ bridges:
   - arg:a496-thesis
   breaks_if: Confessions 10.27's sensory sequence shown to follow a source with no organ-by-organ transform of fr. 31
   historical_sequence: Sappho → Augustine (late 4th c. CE), organ by organ
+  instruments: []
 - '@id': bridge:addressee
   '@type': Bridge
   from: site:peri-hypsous
@@ -1067,6 +1238,7 @@ bridges:
   breaks_if: Augustine's addressee shown to answer no socket the earlier fillings left open
   historical_sequence: Longinus fills the socket with a question naming no addressee; Augustine supplies the addressee and withholds the reply
     (#1477)
+  instruments: []
 - '@id': bridge:reader-now
   '@type': Bridge
   from: site:sappho-31
@@ -1083,6 +1255,7 @@ bridges:
   - arg:a1658-coda
   breaks_if: 'the restorations shown to close the line; #1484 reads each as one more filling, ''which is to say: open'''
   historical_sequence: the modern restorations; the archive
+  instruments: []
 chain_order:
   meaning: 'the stations'' order is #1484 §VII''s order of statement; it asserts no simple linear transmission (INV-7). Each bridge states its
     own relation kind, its historical sequence and what breaks it.'
@@ -1155,35 +1328,92 @@ maker_argument:
     the author: ''one self-dividing maker does mean one biological person'' (2026-11-08 20:00)'
   demonstrations:
   - id: M-D1
-    configuration: 'four propositions about the Platonic and Aristotelian corpora: three stated in the texts, the fourth (two makers) the frame
-      they are read in (#1576)'
-    one_maker_explains: the three stated propositions stand as written; the frame moves
-    several_maker_must_posit: a reinterpretation of a stated text, paid each time on Aristotle's side; the fourth word never moved for Plato
-    divergence: 'which word moves: the received reading moves the texts to keep the frame'
+    configuration: 'four propositions (#1576 §1): “Division is a part of the method (*APr* I.31).” “No part of the method existed beforehand (*SE*
+      34).” “Division did exist beforehand, as a named art with rules and practitioners (*Phaedrus*, *Sophist*, *Philebus*).” “And the relevant
+      dialogues are conventionally dated before the relevant treatises.” The first three are stated in the texts; the fourth is the frame they
+      are read in, and it bundles four claims the paper keeps apart: the two lifetimes in that order, these texts in that order, Aristotle having
+      these texts, his taking the practice from them'
+    one_maker_explains: 'the four stand with the three stated words as written once precedence is reconsidered, last, as §9 reconsiders it: “later”
+      an order of grasp within one knower, “two states of one knower”, and the priority claim of *SE* 34 true because one''s own earlier work
+      is prior in time and outside the succession the sentence denies'
+    several_maker_must_posit: 'one of the stated words moved, paid each time on Aristotle''s side: the five reconciliations of #1576 §8 (the priority
+      claim''s object narrowed; μόριον read as retrospective; organisation placed outside the received class; the dialogues filed as products;
+      precedence moved within Aristotle''s own working life); the fourth word never moved for Plato'
+    divergence: 'which word moves, and at what cost: the received reading moves a stated word to keep precedence biographical; the one-maker reading
+      moves precedence from a chronology to an order of grasp and leaves the stated words as written'
     moves:
     - arg:a1576-four-props
+    - arg:a1576-fourth-bundles
     - arg:a1576-one-word-moves
     - arg:a1576-never-for-plato
-    - arg:a1576-ledger
-    - arg:a1576-two-real-moves
+    - arg:a1576-wait-order
+    - arg:a1576-r5-reply
+    - arg:a1576-two-states-knower
+    - arg:a1576-order-not-chronology
+    - arg:a1576-own-earlier
+    - arg:a1576-stipulation-reply
+    - arg:a1576-sequence-not-count
+    - arg:a1576-compatible-not-established
+    bound: the texts establish the sequence of operations and positions and leave the maker-count open (#1576 §9.4); the evidence is compatible
+      with the hypothesis and does not establish it (§9.1)
+    revised:
+      date: '2026-11-09'
+      was: the fourth (two makers) the frame they are read in
+      why: '#1576''s fourth proposition is precedence; the review of the v1.1 draft found the substitution, which the mechanical checks passed
+        (scope C, semantic_challenges S1)'
   - id: M-D2
     configuration: 'the corpus''s operation and its name-boundary: dividing is syllogizing (Prior Analytics), combining is dividing (De anima),
       and the one place the corpus shows its name-boundary is where its account of God changes operation (#1658)'
     one_maker_explains: the doctrinal joint and the authorial joint as one cut seen from two ends
-    several_maker_must_posit: 'a coincidence: the division between makers falls by chance at the place the doctrine divides'
-    divergence: one cut or a coincidence of two
+    several_maker_must_posit: 'an account of the seam: a successor''s deliberate response, a school''s shared practice, or chance (several_maker_accounts)'
+    divergence: 'one cut seen from two ends, or a response, a school''s practice, or chance: each several-maker account explains the location;
+      the one-maker reading also explains why each side leaves the same thing open. Measurement does not yet discriminate response from one maker
+      at this seam: the notebook finds direction unresolved at every seam (#1605)'
     moves:
     - arg:a1658-combine-divide
     - arg:a1658-one-operation
     - arg:a1658-boundary-at-god
     - arg:a1658-one-joint
     - arg:a1658-one-cut
+    several_maker_accounts:
+    - account: 'deliberate response: teacher and successor, the successor answering the teacher''s theology'
+      stated_at:
+      - arg:a1658-two-persons-rival
+      - arg:a1658-rival-coherent
+      must_explain_at_the_seam: the response falling where the theology changes operation, which this account expects; and that at the joint each
+        side leaves the same thing open
+      costs: the persons rest on attestation of a different kind from the texts it is offered against; the friction it reads as disagreement is
+        what a divided mind produces (#1658)
+      cost_moves:
+      - arg:a1658-evidence-kind
+      - arg:a1658-ledger-price
+      - arg:a1658-friction-reply
+    - account: a school's common practice or coordinated investigation
+      stated_at:
+      - arg:a1576-not-one-hand
+      - arg:a1733-school-innocent
+      must_explain_at_the_seam: the same co-coverage, element by element, under a shared programme
+      costs: '#1576 grants the co-coverage to a school; the one-maker reading''s further claim is the single cut at the doctrine of God, which
+        a shared programme leaves to two decisions falling together'
+      cost_moves:
+      - arg:a1658-boundary-at-god
+      - arg:a1658-one-joint
+    - account: chance
+      stated_at: []
+      must_explain_at_the_seam: the name-boundary falling, unconnected, at the one place the doctrine changes
+      costs: the chance itself, at the one place the corpus shows its name-boundary
+      cost_moves:
+      - arg:a1658-boundary-at-god
+    open:
+    - arg:a1605-cl-unresolved
   - id: M-D3
     configuration: 'the catalogues: the ''lost'' Theophrastan works are, at the title, the extant Aristotelian works under the Theophrastan transform,
       with measured stylistic markers; for one book the premise ''two authors'' enters at Nicolaus against the catalogues'' silence (#1733)'
     one_maker_explains: one body of work under two names and one transform; the attribution entering late, by a note that carries a second attribution
-    several_maker_must_posit: two independent losses, one on each side, falling so that each name's survivors match the other's lost titles
-    divergence: one corpus under a transform, or two coincident losses
+    several_maker_must_posit: a school's ordinary filing, element by element, or two independent losses falling so that each name's survivors
+      match the other's lost titles (several_maker_accounts)
+    divergence: 'one corpus under a transform, or a school''s filing or two coincident losses: each several-maker account takes the pattern one
+      element at a time; the one-maker reading takes it whole, at the title'
     moves:
     - arg:a1733-transform
     - arg:a1733-transform-measures
@@ -1191,6 +1421,22 @@ maker_argument:
     - arg:a1733-catalogue-silence
     - arg:a1733-premise-enters
     - arg:a1733-note-travels
+    several_maker_accounts:
+    - account: a school's ordinary filing
+      stated_at:
+      - arg:a1733-school-innocent
+      must_explain_at_the_seam: each element of the catalogue pattern, taken one at a time
+      costs: at the catalogues' line the coincidence is in whole titles, their pairing, a book count and the transform's own names, which a stem
+        rule does not see (#1733)
+      cost_moves:
+      - arg:a1733-stem-blind
+    - account: two independent losses
+      stated_at:
+      - arg:a1733-losses-innocent
+      must_explain_at_the_seam: each name's survivors matching the other's lost titles
+      costs: two losses coinciding at the title, against the catalogues' silence on two authors
+      cost_moves:
+      - arg:a1733-catalogue-silence
   how_to_read: each demonstration sets the configuration beside what each account must posit to explain it; the comparison's force is the posits,
     read in the moves
 erasure_by_station:
@@ -1282,13 +1528,608 @@ erasure_by_station:
   - claim:hl-1217-per
   - claim:hl-1217-autopsy
   - arg:a1217-per-100
-version_note: 'v1.0 (2026-11-09, deposit): v0.3 (2026-11-09): at the review of v0.2, bridge endpoints set by their evidence (fourteen bridges,
-  branching from Sappho 31); Philo''s modular status carried into the erasure layer; three positive demonstrations in the one-maker argument;
-  the rival''s source, its treatment of incarnation and the critique kept as three objects; rung VI''s amended dependency carried; identifier
-  handling for the new fields; scope C''s mechanical consequence tests (hl_checks.py) and its reader prompt (09c).'
+version_note: 'v1.1 (2026-11-09, reissue in place, at the author''s direction 15:55–15:59): the method by which the framework establishes operational
+  transmission, five instruments read from their records (construction under fixed transforms; blind reconstruction; frozen operators and the
+  append-only ledger; the suppression signature; measurement at corpus scale), each with controls, results at status and recorded losses; Counterfeit
+  Orthodoxies joined, #978 the current state, #674 the prior, #65''s seating carried as data; the rival''s settlement step D5 and the flag SETTLEMENT_AS_CORPUS;
+  at the review of the v1.1 draft (16:55): M-D1 restored to #1576''s four propositions, the several-maker accounts stated with their costs, D5
+  in four objects with 367 CE dating one collection''s boundary (Athanasius and Irenaeus fetched), the flag raised on the inference, the method
+  set out by bridge with controls run and specified, the semantic challenges. v1.0 (2026-11-09, deposit): v0.3 (2026-11-09): at the review of
+  v0.2, bridge endpoints set by their evidence (fourteen bridges, branching from Sappho 31); Philo''s modular status carried into the erasure
+  layer; three positive demonstrations in the one-maker argument; the rival''s source, its treatment of incarnation and the critique kept as three
+  objects; rung VI''s amended dependency carried; identifier handling for the new fields; scope C''s mechanical consequence tests (hl_checks.py)
+  and its reader prompt (09c).'
 joins_amended:
 - node: hk:revfirst/rung/VI
   was: DEPENDENT on rung V (EA-HK-REVFIRST-01 v1.1)
   now: INDEPENDENT of rung V; strengthened by V
   by: stmt:20261109-1248
   date: '2026-11-09'
+method:
+  question: 'how the framework establishes operational transmission: a later text realizing an earlier text''s operation, set apart from the weaker
+    observation that texts influence later readers (CONTINUITY_AS_INFLUENCE)'
+  how_to_read: each instrument names its records, what it establishes and what it licenses no conclusion about, its controls, its negatives and
+    residue, its results at the status the record gives them, its defeat conditions and its grades; every entry is a move, verbatim, in 04-arguments.jsonl
+  principles:
+  - arg:a1486-p5-prereg
+  - arg:a1486-symbolon
+  - arg:a1486-p3-robust
+  - arg:a1571-fixed-before
+  - arg:a1735-test
+  instruments:
+  - '@id': instrument:unfolding
+    '@type': Instrument
+    name: 'Construction under fixed transforms: unfolding and folding'
+    records:
+    - rec:1414
+    - rec:1415
+    - rec:1416
+    - rec:1511
+    - rec:1532
+    specification:
+    - arg:a1414-def-M
+    - arg:a1414-both-dirs
+    - arg:a1414-five-seeds
+    - arg:a1415-seed-parse
+    - arg:a1415-rules
+    - arg:a1415-emission
+    - arg:a1416-classes
+    - arg:a1511-six-operable
+    - arg:a1532-four-states
+    establishes: 'a later text constructed from an earlier one by named rules, run both ways (M unfolds, M⁻¹ folds): the derivation is executable,
+      its anchors hard, its residue shown; upstream, the same view runs from Sappho 31 into the Apocalypse''s channel as six graded plates (#1511);
+      the census of the ancient reception sorts each transform into four evidentiary states (#1532)'
+    licenses_no: historical fact of composition; the records claim an operable competing inference (#1414), and the burden between inferences
+      is symmetrical
+    controls:
+    - arg:a1415-crown
+    - arg:a1415-synagoge
+    - arg:a1415-arrow
+    - arg:a1511-controls
+    - arg:a1532-catullus-control
+    - arg:a1532-calibration
+    negatives_and_residue:
+    - arg:a1415-residue
+    - arg:a1415-residue-loci
+    - arg:a1415-underivable
+    results:
+    - move:
+      - arg:a1416-smyrna
+      status: 'graded A: Smyrna → James, on two hard anchors with the direction read from the verb forms (#1415)'
+    - move:
+      - arg:a1416-grades-fall
+      status: the heptad's grades fall letter by letter; it weighs no more than its graded rows
+    - move:
+      - arg:a1511-tiers
+      status: six upstream plates, each ATTESTED, TESTED, CONTESTED or TESTED UNDER SEAL
+    - move:
+      - arg:a1532-braided
+      status: the ancient reception of fr. 31 a braided field of transforms, each with its own state
+    defeats_if:
+    - arg:a1414-counterevidence
+    - arg:a1415-reverse
+    - arg:a1414-parent-conditions
+    grades:
+    - arg:a1416-heptad-weight
+    - arg:a1416-granularity
+    - arg:a1511-not-asserted
+    applies_at:
+    - site:cosmic-christ
+    - site:gospel-christ
+    - site:sappho-31
+    - site:catullus
+    bridges:
+    - bridge:canon
+    controls_status:
+      arg:a1415-crown: run
+      arg:a1415-synagoge: run
+      arg:a1415-arrow: run
+      arg:a1511-controls: run
+      arg:a1532-catullus-control: run
+      arg:a1532-calibration: specified
+  - '@id': instrument:blind-reconstruction
+    '@type': Instrument
+    name: 'Blind reconstruction: the mapping recovered without the name'
+    records:
+    - rec:1486
+    specification:
+    - arg:a1486-symbolon
+    - arg:a1486-order-key
+    - arg:a1486-null-runnable
+    - arg:a1486-reflexivity-rule
+    - arg:a1486-r2-factor
+    establishes: 'a structural mapping between Sappho 31 and Philo specified, executed and verified by readers blind to the hypothesis: ''A specified,
+      executable, blind-verified structural mapping'' (#1486); the source a fixed point, the receivers transforms'
+    licenses_no: Sappho's material presence in Philo, which the record leaves unestablished; the name is absent (documented null)
+    controls:
+    - arg:a1486-f1-specificity
+    - arg:a1486-f2-ablation
+    - arg:a1486-f3-description
+    - arg:a1486-r1-phaedrus
+    negatives_and_residue:
+    - arg:a1486-residue
+    - arg:a1486-not-established
+    - arg:a1486-armenian-limit
+    results:
+    - move:
+      - arg:a1486-established
+      status: the mapping established as structure
+    - move:
+      - arg:a1486-sufficiency-only
+      status: round 1 tested sufficiency and nothing else
+    - move:
+      - arg:a1486-attestation-induction
+      status: 'withdrawn in v2: asking for recognition creates it'
+    defeats_if:
+    - arg:a1486-pan-sapphism
+    - arg:a1486-residue-defeat
+    grades:
+    - arg:a1486-p3-robust
+    - arg:a1486-target-arm
+    - arg:a1486-post-disclosure
+    applies_at:
+    - site:philo
+    - site:sappho-31
+    bridges:
+    - bridge:mapping
+    controls_status:
+      arg:a1486-f1-specificity: specified
+      arg:a1486-f2-ablation: specified
+      arg:a1486-f3-description: specified
+      arg:a1486-r1-phaedrus: specified
+  - '@id': instrument:frozen-operator
+    '@type': Instrument
+    name: Frozen, pre-registered operators and the append-only ledger
+    records:
+    - rec:1494
+    - rec:1495
+    - rec:1533
+    - rec:1571
+    specification:
+    - arg:a1494-derived-without
+    - arg:a1494-stations
+    - arg:a1494-bset
+    - arg:a1495-rule
+    - arg:a1495-threshold
+    - arg:a1533-frozen
+    - arg:a1533-freedoms
+    - arg:a1533-topology-fixed
+    - arg:a1533-scoring
+    - arg:a1571-fixed-before
+    - arg:a1571-frozen-status
+    - arg:a1571-append-discharge
+    - arg:a1571-sha-carried
+    establishes: an operator derived from witnesses that exclude the target, frozen with its stations, criterion, controls and threshold before
+      the target is scored; dispositions appended under the entry they discharge, each entry hashed as filed (#1571); a pass establishes material
+      instantiation, which licenses a separate test of descent (#1533)
+    licenses_no: authorship, route or borrowing; on Revelation 12 'The dangerous sentence is not asserted here.' (#1495)
+    controls:
+    - arg:a1494-negatives
+    - arg:a1533-pos-control
+    - arg:a1533-neg-control
+    - arg:a1533-background
+    - arg:a1571-l1-positive
+    - arg:a1571-l1-sanity
+    negatives_and_residue:
+    - arg:a1495-c1
+    - arg:a1495-c7-fire-neg
+    - arg:a1533-set-K
+    - arg:a1533-set-Kstar
+    results:
+    - move:
+      - arg:a1495-tally
+      status: 'Revelation 12: eight of nine stations, the pre-set threshold exceeded; C1 fails'
+    - move:
+      - arg:a1495-one-witness
+      status: one witness's count, deposited with its negatives; substrate-blind replication named as the hardening
+    - move:
+      - arg:a1571-y2-disp
+      status: 'YIELD-02 discharged, confirmed: six slots filled, the rivals lose'
+    - move:
+      - arg:a1571-c-disp
+      status: COMPLETE-01 discharged
+    - move:
+      - arg:a1571-l2-disp
+      status: 'LEAK-DEFICIT-02 discharged void: no number from it may be quoted'
+    - move:
+      - arg:a1571-k-void
+      status: CAPTURE-01 void, superseded
+    - move:
+      - arg:a1571-y1-disp
+      status: 'YIELD-01 spent: the saturation defect its own §9 predicted'
+    - move:
+      - arg:a1571-ul-total
+      status: UNLOCK-01 running
+    - move:
+      - arg:a1533-if-passes
+      status: QFO-01 frozen; the Qurʾan not yet scored
+    defeats_if:
+    - arg:a1533-rc-invalid
+    - arg:a1533-rc-none
+    - arg:a1533-d-translation
+    - arg:a1533-d-windows
+    - arg:a1533-d-motifs
+    - arg:a1533-d-background
+    - arg:a1533-new-version
+    - arg:a1571-ul-kill-weaken
+    grades:
+    - arg:a1495-ladder
+    - arg:a1495-single
+    - arg:a1533-p-material
+    - arg:a1533-p-historical
+    applies_at:
+    - site:cosmic-christ
+    - site:academy
+    bridges:
+    - bridge:canon
+    controls_status:
+      arg:a1494-negatives: run
+      arg:a1533-pos-control: specified
+      arg:a1533-neg-control: specified
+      arg:a1533-background: specified
+      arg:a1571-l1-positive: specified
+      arg:a1571-l1-sanity: specified
+  - '@id': instrument:suppression-signature
+    '@type': Instrument
+    name: 'The suppression signature: a loss profile measured against ordinary loss'
+    records:
+    - rec:1496
+    specification:
+    - arg:a1496-unfalsifiable
+    - arg:a1496-claim
+    - arg:a1496-vectors
+    - arg:a1496-o-def
+    - arg:a1496-tuple
+    establishes: 'the claim ''this technology was suppressed'' made testable by scoring each witness on four vectors; ordinary textual loss and
+      the signature of a technology''s suppression separated by profile: ''operation survives; provenance disappears'' (#1496)'
+    licenses_no: intent; the map 'does not yet assert' the domestication it names (#1496)
+    controls:
+    - arg:a1496-philo
+    - arg:a1496-rev12
+    - arg:a1496-registry
+    negatives_and_residue:
+    - arg:a1496-audit-caveat
+    results:
+    - move:
+      - arg:a1496-crossing
+      status: 'attribution dies at the crossing; held at the strength #1496 gives it, the crossing modular at Philo (erasure_by_station)'
+    - move:
+      - arg:a1496-operator-alive
+      status: every witness scored runs the operator
+    - move:
+      - arg:a1496-name-lost
+      status: what the tradition lost was the machine's name
+    - move:
+      - arg:a1496-passive
+      status: a classification scheme with no slot for the object suppresses it by filing
+    defeats_if:
+    - arg:a1496-t-audit
+    - arg:a1496-t-ematrix
+    - arg:a1496-t-degradation
+    grades:
+    - arg:a1496-not-yet
+    - arg:a1496-audit-caveat
+    applies_at:
+    - site:sappho-31
+    - site:orphic-tablets
+    - site:academy
+    - site:philo
+    - site:peri-hypsous
+    - site:catullus
+    - site:josephus
+    - site:cosmic-christ
+    - site:gospel-christ
+    - site:augustine
+    - site:the-reader-now
+    see:
+    - erasure_by_station
+    - Q5
+    controls_status:
+      arg:a1496-philo: run
+      arg:a1496-rev12: run
+      arg:a1496-registry: run
+  - '@id': instrument:corpus-scale
+    '@type': Instrument
+    name: 'Measurement at corpus scale: censuses and stylometry'
+    records:
+    - rec:1532
+    - rec:1572
+    - rec:1586
+    - rec:1590
+    - rec:1605
+    - rec:1730
+    - rec:1733
+    specification:
+    - arg:a1586-fw-profile
+    - arg:a1586-lean-method
+    - arg:a1586-rolling
+    - arg:a1586-namefree-method
+    - arg:a1586-heldout-method
+    - arg:a1605-mc-test
+    - arg:a1605-fc-cell
+    - arg:a1605-ar-method
+    - arg:a1572-six-frozen
+    - arg:a1590-c-rest
+    - arg:a1730-census
+    establishes: 'properties of whole corpora measured at a scale a single reader could not hold: function-word profiles over every block of thirty-five
+      texts, name-free clustering, held-out prediction, matched cells with fused controls, catalogue matches against their base rates, the seating
+      census of a transmission; each result graded by the record that runs it'
+    licenses_no: 'hands, dates, membership or the count of makers: ''cannot count hands'' (#1605); the axis is world against instrument, read
+      off the corpus, and the names are a filing measured beside it'
+    controls:
+    - arg:a1605-ar-c
+    - arg:a1605-hm-a
+    - arg:a1605-fc-control
+    - arg:a1572-rule-load
+    - arg:a1590-c-theo
+    - arg:a1586-run2-method
+    negatives_and_residue:
+    - arg:a1586-caveat-blocks
+    - arg:a1586-confounds
+    - arg:a1572-coverage-collapse
+    - arg:a1730-want-sixteen
+    - arg:a1590-theo-206
+    results:
+    - move:
+      - arg:a1586-run1-finding
+      status: operation labels recovered 25/28 on every feature family; names at chance
+    - move:
+      - arg:a1586-not-reproduced
+      status: 'the blind-label run did not reproduce the headline: recorded as a defeat'
+    - move:
+      - arg:a1586-blind-corrected
+      status: after the file erratum, 74–76%
+    - move:
+      - arg:a1586-heldout-11-12
+      status: held-out prediction 11/12; the misses the texts nearest the centre
+    - move:
+      - arg:a1605-mc-find
+      status: 'maker-count test: the classifier learned subject'
+    - move:
+      - arg:a1605-fc-95th
+      status: the names at the 95th percentile of arbitrary splits in the matched cell
+    - move:
+      - arg:a1605-st-b-ci
+      status: operation against names, descriptive only (bootstrap interval spans zero)
+    - move:
+      - arg:a1572-all-destroyed
+      status: the fifteen-feature battery destroyed by size, language or period
+    - move:
+      - arg:a1572-validation-1-3
+      status: 'the instruments never validated before use: 1 of 3'
+    - move:
+      - arg:a1572-did-not-fire
+      status: the falsifier stated in advance did not fire
+    - move:
+      - arg:a1590-seven-times
+      status: the lost-dialogue catalogue's opening matches Plato at seven times the base rate
+    - move:
+      - arg:a1590-claims-shape
+      status: the shape of the match claimed; identity left to the fragment collation, named and unrun
+    defeats_if:
+    - arg:a1586-noise-brake
+    - arg:a1605-mc-defeat
+    - arg:a1590-fragment-test
+    - arg:a1572-kill-condition
+    grades:
+    - arg:a1586-not-hands
+    - arg:a1605-cl-not-met
+    - arg:a1605-mc-grade
+    - arg:a1590-not-hands
+    - arg:a1730-not-legal
+    applies_at:
+    - site:academy
+    scale: literary method newly possible at this scale in the age of AI (the author, 2026-11-09 15:58)
+    prior_states:
+    - rec:1585
+    - rec:1589
+    - rec:1594
+    controls_status:
+      arg:a1605-ar-c: run
+      arg:a1605-hm-a: run
+      arg:a1605-fc-control: run
+      arg:a1572-rule-load: run
+      arg:a1590-c-theo: run
+      arg:a1586-run2-method: run
+  joint_standard: 'each join is established by the means its kind calls for, and method.by_bridge says what was executed at each: documented reception
+    by the philology of the transmitted text (body P); structural realization by constrained construction or blind reconstruction (I, II), its
+    specificity by a frozen operator against controls run (III); a loss profile by IV; properties of whole corpora by V. No join needs all five.
+    A join stands at the strength of what was executed at it, and constrained construction, target specificity and historical descent are reported
+    as three results'
+  losses_recorded:
+  - arg:a1571-l2-disp
+  - arg:a1571-k-void
+  - arg:a1571-y1-disp
+  - arg:a1572-all-destroyed
+  - arg:a1572-validation-1-3
+  - arg:a1572-withdrawn
+  - arg:a1586-not-reproduced
+  - arg:a1605-mc-find
+  - arg:a1605-st-d1
+  - arg:a1495-c1
+  - arg:a1486-attestation-induction
+  - arg:a1486-c1-struck
+  losses_note: 'the method keeps its losses on the record: void runs, spent tests, a destroyed battery, a headline not reproduced, a withdrawn
+    proof-step; a reader reports them with the results'
+  scale: 'the author, 2026-11-09 15:58: ''the stylometric work, the vast censuses of work - this is literary methdology that is drawing on things
+    that are newly possible at this scale in the age of ai'''
+  statement: stmt:20261109-1557
+  controls_note: 'a control specified is reported apart from a control run: a specified control belongs to the apparatus; only a control run contributes
+    to a result (controls_status)'
+  by_bridge:
+  - bridge: bridge:instrument-threshold
+    executed: 'none of the five; the comparison read in #828'
+    result: an operational homology between two contemporaneous inscriptions of the voice at the threshold
+    follows: a homology at the outer ring
+    open: 'no operator scored on the tablets; #828 claims no linear transmission'
+    moves:
+    - arg:a828-gramma-link
+    - arg:a828-no-linear
+  - bridge: bridge:instrument-academy
+    executed: 'philology of the transmitted text: the Phaedrus names Sappho'
+    result: documented reception by name
+    follows: Plato received Sappho by name
+    open: the Diotima relation stays a program tier
+    moves:
+    - arg:a1532-phaedrus
+    - arg:a1532-diotima-tier
+  - bridge: bridge:self-division
+    executed: V at the Academy end (name-free axis, held-out prediction, matched cells, the catalogue match); the seats read at the Sappho end
+    result: the corpus's first axis is world against instrument, and the names behave as a filing beside it; the catalogue's opening matches at
+      seven times the base rate
+    follows: the Academy's division is measurable as operation
+    open: the homology between Sappho's seats and the Academy's positions is a reading; the instruments cannot count hands; direction unresolved
+      at every seam
+    moves:
+    - arg:a1586-run1-finding
+    - arg:a1586-heldout-11-12
+    - arg:a1590-seven-times
+    - arg:a1605-mc-grade
+    - arg:a1605-cl-unresolved
+  - bridge: bridge:mapping
+    executed: 'II: constrained construction, executed and blind-verified; IV: the name''s absence counted'
+    result: successful constrained construction (the mapping established as structure); round 1 tested sufficiency and nothing else
+    follows: structure
+    open: target specificity (specified and unrun; the target arm never designed); historical descent (Sappho's material presence in Philo not
+      established)
+    moves:
+    - arg:a1486-established
+    - arg:a1486-sufficiency-only
+    - arg:a1486-f1-specificity
+    - arg:a1486-target-arm
+    - arg:a1486-not-established
+    - arg:a1496-philo
+  - bridge: bridge:key
+    executed: 'philology: counts of citation verbs and dialect markers in the transmitted text; IV: the treatise scored'
+    result: Sappho and the Genesis fiat held in one treatise under one grammar; operator-theory highest in the ancient record
+    follows: documented reception at the hard center
+    open: the conduit to Philo
+    moves:
+    - arg:a1474-zero-verbs
+    - arg:a1476-markers
+    - arg:a1496-longinus
+  - bridge: bridge:conduit
+    executed: none; declared unsettled
+    result: none
+    follows: nothing in the chain rests on it
+    open: the route by which Peri Hypsous received Genesis
+    moves: []
+  - bridge: bridge:seat-taken
+    executed: 'the documented dependency, the control case of the census; V: the calibration measurement (#1572); IV: scored'
+    result: the dependency undisputed; aligned at C = 0.688 slot by slot, sequence preserved
+    follows: the reception the others are calibrated against
+    open: as a positive control in QFO-01 it is specified, the Qurʾan not yet scored
+    moves:
+    - arg:a1532-catullus-control
+    - arg:a1572-ceiling
+    - arg:a1496-catullus
+    - arg:a1533-pos-control
+  - bridge: bridge:into-the-record
+    executed: 'IV: the Josephus witnesses scored (AJ 11, BJ 1)'
+    result: structure high at AJ 11 with sequence proven; BJ 1 high and inverted, name and recognition at zero
+    follows: the operation present in the historiographic record as structure
+    open: rung V's advancement suspended; no frozen operator run at the seams
+    moves:
+    - arg:a1496-aj11
+    - arg:a1496-bj1
+  - bridge: bridge:canon
+    executed: 'III: the frozen operator run on Revelation 12 against its declared biblical sources (B-set adjudicated); I: forward unfolding with
+      hard anchors (Smyrna → James)'
+    result: eight of nine stations, the threshold exceeded, C1 failing; one adjudicator, one pass; Smyrna → James graded A
+    follows: material instantiation at Revelation 12 on the pre-registered ladder; the identification sentence not asserted
+    open: substrate-blind replication; descent; the program's dating (rung VI independent of V)
+    moves:
+    - arg:a1495-tally
+    - arg:a1495-c1
+    - arg:a1495-single
+    - arg:a1495-not-asserted
+    - arg:a1416-smyrna
+  - bridge: bridge:white-stone
+    executed: 'none of the five; the convergence read in #828'
+    result: the stone gathers the tablets' functions into one apocalyptic object
+    follows: convergence at the outer ring
+    open: lineage, disclaimed
+    moves:
+    - arg:a828-convergence-object
+    - arg:a828-comparandum
+  - bridge: bridge:test
+    executed: philology of ὁμολογεῖ at two loci, posed as Q4a and Q4b
+    result: the reading word-conform offered; the two loci open
+    follows: a doctrinal naming at the outer ring
+    open: Q4a, Q4b
+    moves: []
+  - bridge: bridge:organ-transform
+    executed: the census of the reception (#1532)
+    result: Confessions 10.27 the clearest late transform
+    follows: a structural realization at the interpretive ring
+    open: no operator scored on Augustine
+    moves:
+    - arg:a1532-augustine
+  - bridge: bridge:addressee
+    executed: none of the five; the reading of the addressee
+    result: an answering socket read
+    follows: a performed completion at the interpretive ring
+    open: an instrument for the addressee
+    moves: []
+  - bridge: bridge:reader-now
+    executed: 'philology of the restorations: seven editors across four and a half centuries; the dialect count to line 16'
+    result: each restoration one more filling; the line kept open
+    follows: the present station
+    open: none at its ring
+    moves:
+    - arg:a1476-seven-editors
+    - arg:a1474-body-count
+    - arg:a1474-stops
+settlement_join:
+  '@id': join:counterfeit-orthodoxies
+  states:
+    current_state: rec:978
+    prior_state: rec:674
+    duplicate_seat: rec:65
+  carries:
+  - claim:hl-674-canon-date
+  - claim:hl-978-history-date
+  - claim:hl-978-article
+  - claim:hl-978-settlement-falls
+  - claim:hl-978-corrected
+  - claim:hl-978-logos-graphe
+  - claim:hl-978-codex
+  moves:
+  - arg:a674-nt-athanasius
+  - arg:a978-athanasius-367
+  - arg:a978-history-date
+  - arg:a978-article-survives
+  - arg:a978-the-settlement
+  - arg:a978-settlement-falls
+  - arg:a978-dc-corrected-thesis
+  - arg:a978-most-successful
+  - arg:a978-memra-greek
+  - arg:a978-milieu-witness
+  - arg:a978-logos-graphe
+  - arg:a978-codex-body
+  - arg:a978-both-defensible
+  reading: 'the New Testament corpus is a set of texts with a date of collection, which dates one boundary (D5): ''The Christian New Testament
+    is not a book. It is Athanasius of Alexandria, 367 CE, Festal Letter 39.'' (#674); the rival collections stand beside it (#978); the label
+    and the definite article survive the facts (''*the* Bible, *the* New Testament''); the corrected thesis reads the canonical texts as the workshop
+    tradition''s most successful products; at John 1:1 and 1:14 the Word''s flesh is read as text: ''The body the Word prepared for itself is
+    the codex.'' (#978), bounded: ''Both readings are textually defensible'''
+  state: '#978 the current state (FRACTURE.02, a recomposition of v1.0–v3.0 and the Manifesto); #674 the prior state, the Manifesto''s compression,
+    revised by #978 where #978 says so (18 revises edges in 04-arguments.jsonl)'
+  seating_note: '#65 is titled ''Counterfeit Orthodoxies — A Dialectical Fracture Through the Citation Map'', and its seated text is FRACTURE.02,
+    the recomposition #978 carries, sentence for sentence (two lines differ, checked 2026-11-09). Carried as data; the v1.0–v3.0 text the title
+    names is not seated in this repository; its recovery is the author''s to rule'
+  statement: stmt:20261109-1556
+  primary_witnesses:
+  - site:athanasius-fl39
+  - site:irenaeus-ah3-11
+reissue_history:
+- version: '1.0'
+  date: '2026-11-09'
+  deposit: 1757
+  note: deposited after v0.1–v0.3 the same day
+- version: '1.1'
+  date: '2026-11-09'
+  deposit: 1757
+  note: 'reissued in place: the method layer (five instruments, 15 records joined, read in full by parallel readers, 1688 moves verbatim), the
+    Counterfeit Orthodoxies join, rival step D5, SETTLEMENT_AS_CORPUS; revised at the review of the draft: M-D1, the several-maker accounts, D5''s
+    four objects, the method by bridge'

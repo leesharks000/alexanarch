@@ -36,16 +36,21 @@ STRATA = {
  "S3-chain-stated": ("The chain stated once, its key, its errata and its operator (August)", [1484, 1458, 1474, 1475, 1476, 1477, 1478, 1486, 1494, 1495, 1496]),
  "S4-threshold-orthonym": ("The threshold technology, the orthonym, the white stone and the work plan (May–July)", [123, 752, 828, 202, 1217, 1053]),
  "S5-founding": ("The founding: the future reader, the vow, the lock, the prolegomena and the Word that became text (January–April)", [1270, 346, 897, 496, 625, 626]),
+ "S6-method-and-settlement": ("The method of operational transmission and the settlement read as a date: the unfoldings, the frozen operators, the pre-registrations, the censuses and the stylometry; Counterfeit Orthodoxies (April–October; joined at v1.1)", [978, 674, 65, 1414, 1415, 1416, 1511, 1532, 1533, 1571, 1572, 1586, 1590, 1605, 1730]),
 }
 BODY = {1752: "R", 1733: "R", 1735: "P", 1576: "I", 1658: "I", 1484: "P", 1458: "I", 1474: "P", 1475: "I", 1476: "P", 1477: "T", 1478: "P", 1486: "T", 1494: "T",
-        1495: "T", 1496: "T", 123: "I", 752: "R", 828: "T", 202: "R", 1217: "R", 1053: "T", 1270: "I", 346: "I", 897: "I", 496: "T", 625: "T", 626: "T"}
-SECOND = {1658: ["B", "P"], 1733: ["B", "P"], 1576: ["B", "P"], 123: ["B"], 1484: ["I", "T", "R"], 626: ["P", "R"], 1752: ["P"], 1735: ["R"], 828: ["P"], 1217: ["T"]}
+        1495: "T", 1496: "T", 123: "I", 752: "R", 828: "T", 202: "R", 1217: "R", 1053: "T", 1270: "I", 346: "I", 897: "I", 496: "T", 625: "T", 626: "T",
+        978: "R", 674: "R", 65: "R", 1414: "T", 1415: "T", 1416: "T", 1511: "T", 1532: "T", 1533: "T", 1571: "P", 1572: "P", 1586: "P", 1590: "R", 1605: "P", 1730: "P"}
+SECOND = {1658: ["B", "P"], 1733: ["B", "P"], 1576: ["B", "P"], 123: ["B"], 1484: ["I", "T", "R"], 626: ["P", "R"], 1752: ["P"], 1735: ["R"], 828: ["P"], 1217: ["T"],
+          978: ["I", "P"], 674: ["I"], 65: ["I"], 1532: ["R"], 1571: ["I"], 1572: ["I"], 1586: ["I"], 1590: ["P"], 1605: ["I"], 1730: ["R"]}
 K.BODY, K.SECOND = BODY, SECOND
 CLUSTER = {"instrument": [1270, 1475, 1476, 1478, 1474, 1484],
            "academy": [123, 346, 897, 752, 1576, 1658, 1733],
            "key_and_operator": [1458, 1486, 1494, 1495, 1496, 1053],
            "word_and_canon": [625, 626, 828, 202, 1217, 1735, 496, 1477],
            "erasure": [1752, 1733, 1496, 1474, 625, 626, 202, 1217, 1053],
+           "method": [1414, 1415, 1416, 1511, 1532, 1486, 1494, 1495, 1533, 1571, 1496, 1572, 1586, 1590, 1605, 1730, 1733],
+           "settlement": [978, 674, 65],
            "join": [1484, 123, 1576, 1658, 1733, 1735, 202, 1217, 1270, 1476, 1752, 828, 626]}
 K.record_nodes(STRATA, CLUSTER)
 
@@ -59,7 +64,7 @@ STATIONS = [
  ("catullus", "Catullus: the seat taken", "the open line answered by reversal, the reader's seat taken", [1476], "#1484 §VII"),
  ("josephus", "Josephus's seams: the Word in the historiographic record", "the same crux-structure at every joint, Greek and Slavonic", [626, 625], "#1484 §VII"),
  ("cosmic-christ", "The Apocalypse: the cosmic Christ, the socket sanctified", "the commanded book, the eaten scroll, the Word as name, the tamper-curse, the white stone", [1735, 202, 1495, 1494, 828], "#1484 §VII; the author, 2026-11-09 12:11 ('cosmic christ')"),
- ("gospel-christ", "The gospel Christ and the Johannine test", "the Word made flesh; the spirits sorted by word-conformity (ὁμολογεῖ) with the Logos formed in the body", [626, 828, 1217], "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217"),
+ ("gospel-christ", "The gospel Christ and the Johannine test", "the Word made flesh; the spirits sorted by word-conformity (ὁμολογεῖ) with the Logos formed in the body", [626, 828, 1217, 978], "the author, 2026-11-09 12:11 ('gospel christ'), 12:12, 12:15; #828; #1217; #978 (the Word's body the codex), joined at v1.1"),
  ("augustine", "Augustine: the method made portable", "thirteen books to an interlocutor whose reply is never transcribed, the broken tongue rotated to taste", [496, 1477], "#1484 §VII"),
  ("the-reader-now", "The modern restorations and the reader now", "each ending open, the latest an optative prayer: μολπὰ γράμμασι ζώοι; the composition layer as the present station", [1484, 1053, 1752], "#1484 §VII; the author, 2026-11-09 12:11 ('and outward from there')")]
 SITES = [{"@id": f"site:{s}", "@type": "Station", "order": i + 1, "name": nm, "operation": op, "records": [f"rec:{n}" for n in rs], "named_by": by}
@@ -415,6 +420,7 @@ kernel["argument_layer"] = ARG_SUM
 kernel["lifespan_state"] = {"move": "arg:a123-lifespan", "exact": MOVES["a123-lifespan"]["exact"], "record": "rec:123", "status": "#123's state, kept as published; a projection from the many-author reading (the author, 2026-11-09 12:05: 'who says 90 years and on what basis?')"}
 exec(open(HERE / "hl_v02.py", encoding="utf-8").read())
 exec(open(HERE / "hl_v03.py", encoding="utf-8").read())
+exec(open(HERE / "hl_v11.py", encoding="utf-8").read())
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)

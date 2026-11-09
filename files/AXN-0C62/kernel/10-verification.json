@@ -1,22 +1,22 @@
 {
  "kernel": "EA-HK-HISTLOGOS-01",
- "version": "1.0",
+ "version": "1.1",
  "structural_tests": {
   "T1 records resolve": {
    "pass": true,
-   "detail": "28 records, 3 surface pages; stale: []"
+   "detail": "43 records, 6 surface pages; stale: []"
   },
   "T2 quotations bind": {
    "pass": true,
-   "detail": "109 claims; unbound: []"
+   "detail": "125 claims; unbound: []"
   },
   "T3 relations in policy": {
    "pass": true,
-   "detail": "11 evidentiary edges; off-policy: []"
+   "detail": "13 evidentiary edges; off-policy: []"
   },
   "T4 introductions established or marked": {
    "pass": true,
-   "detail": "unresolved and marked: ['hl-1486-established', 'hl-1486-not-established', 'hl-1217-per', 'rv-1486-name-absent', 'rv-ce-heraclitus', 'rv-ce-took-flesh', 'rv-ce-personality', 'rv-ce-philo-meaningless', 'rv-ce-apocalypse', 'rv-wp-harris', 'rv-wp-historical', 'rv-wp-sources', 'rv-ce-eternal']"
+   "detail": "unresolved and marked: ['hl-1486-established', 'hl-1486-not-established', 'hl-1217-per', 'rv-1486-name-absent', 'rv-ce-heraclitus', 'rv-ce-took-flesh', 'rv-ce-personality', 'rv-ce-philo-meaningless', 'rv-ce-apocalypse', 'rv-wp-harris', 'rv-wp-historical', 'rv-wp-sources', 'rv-ce-eternal', 'rv-ce-christian-theology', 'rv-wp-christian-logos', 'rv-wp-in-christianity', 'pr-ath-boundary', 'pr-ath-police', 'pr-ir-flesh', 'pr-ir-marcion', 'pr-ir-four']"
   },
   "T6 failures per body": {
    "pass": true,
@@ -24,7 +24,7 @@
     "P": 2,
     "I": 1,
     "T": 1,
-    "R": 14,
+    "R": 17,
     "B": 1
    }
   },
@@ -75,7 +75,7 @@
   },
   "T14 endpoints declared": {
    "pass": true,
-   "detail": "183 edges; undeclared: []"
+   "detail": "238 edges; undeclared: []"
   },
   "T15 lines of research posed and bounded": {
    "pass": true,
@@ -94,15 +94,15 @@
   "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
    "pass": true,
    "detail": {
-    "edges": 183,
-    "nodes": 213,
+    "edges": 238,
+    "nodes": 261,
     "failed": []
    }
   },
   "T20 every move verbatim in its record, at the record's current hash": {
    "pass": true,
    "detail": {
-    "moves": 2618,
+    "moves": 4306,
     "not_verbatim": [],
     "hash_stale": []
    }
@@ -110,7 +110,7 @@
   "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
    "pass": true,
    "detail": {
-    "edges": 2101,
+    "edges": 3811,
     "external": 4,
     "unresolved": [],
     "bad_relation": []
@@ -178,6 +178,42 @@
     "findings": 7,
     "cross": [],
     "into_genealogy": 0
+   }
+  },
+  "C6 the settlement: SETTLEMENT_AS_CORPUS set on the inference, D5 in four objects each warranted, 367 dating one collection's boundary, the warrants from the rival, the primary witnesses and the records": {
+   "pass": true,
+   "detail": {
+    "D5_warrants": [
+     "rv-ce-christian-theology",
+     "rv-wp-christian-logos",
+     "pr-ath-boundary",
+     "pr-ir-flesh",
+     "hl-674-canon-date",
+     "hl-978-article",
+     "hl-978-corrected"
+    ]
+   }
+  },
+  "C7 remove instrument V: no bridge rests on it alone; the results of instruments I–IV cite none of its moves": {
+   "pass": true,
+   "detail": {
+    "bridges_only_on_V": [],
+    "shared_results": {}
+   }
+  },
+  "C8 M-D1 carries #1576's four propositions; the fourth is precedence, with its bundle": {
+   "pass": true,
+   "detail": {
+    "configuration": "four propositions (#1576 §1): “Division is a part of the method (*APr* I.31).” “No part of the method existed beforehand (*SE* 34).” “Division did exist beforeh"
+   }
+  },
+  "M1 five instruments, each complete, every result at a status, every control marked run or specified, a method row for every bridge, every move and loss resolving": {
+   "pass": true,
+   "detail": {
+    "incomplete": {},
+    "no_status": [],
+    "controls_unmarked": [],
+    "unresolved": []
    }
   },
   "R1 every identifier in the bridges, the maker argument, the rival, the erasure rows and current_standing resolves; each carrying field is coerced @id": {
