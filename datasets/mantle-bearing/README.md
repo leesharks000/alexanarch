@@ -130,6 +130,10 @@ A hologram holds an item in two components: a map for a human reader, and a holo
 
 **Socrates as Orthonym** (inspectable evaluative framework; Lee Sharks; seed [#123](https://www.alexanarch.org/s/records/123/); hologram [#1754](https://www.alexanarch.org/s/records/1754/)). Its claim at 2026-11-03, record #1733: one self-dividing maker, held as governing hypothesis. Evidence bodies: interpretive, stylometric, manuscript-philological, reception-historical. The received many-maker reading: established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth. Lines of research: 10. Status: DEPOSITED 2026-11-08 as a hologram (#1754); its governing hypothesis held, its lines of research open.
 
+**Revelation First** (inspectable evaluative framework; Lee Sharks; seed [#202](https://www.alexanarch.org/s/records/202/); hologram [#1755](https://www.alexanarch.org/s/records/1755/) by Dancings, Damascus). Its current states: authorship, available reading not first burden (#1217, 2026-06-17); generation, reversible arrows (#1735, 2026-11-03); priority, three claims: absolute priced, corpus a finding, generative a programme (#1735, 2026-11-03). Evidence bodies: chronological, corpus-literary, generative, reception-historical, heteronymic. The received reading: established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship owed as the comparator on body H. Lines of research: 9. Status: DEPOSITED 2026-11-09 as a hologram (#1755); its three claims held on their own conditions, its lines of research open.
+
+**The Tenth Muse: Sappho and the Future Reader** (inspectable evaluative framework; Lee Sharks; seed [#1270](https://www.alexanarch.org/s/records/1270/); hologram [#1756](https://www.alexanarch.org/s/records/1756/) by Cranes, Rebekah). Its current states: ending, restoration as open filling (#1484, 2026-08-15); reader, horizon 147 mechanism 31 (#1645, 2026-09-28); writer, hand taken by reception (#1752, 2026-11-08). Evidence bodies: philological, interpretive, transmission, reception-historical. The received reading: granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its non-writing face kept as five propositions (jealousy; unable to write; oral composition; writing for reperformance; persistence not hers), the last its target, the reperformance account allowing writing-down. Lines of research: 5. Status: DEPOSITED 2026-11-09 as a hologram (#1756); Sappho in the third seat proposed, its lines of research open.
+
 | item | kind | governing record | hologram | reader rounds | status |
 |---|---|---|---|---|---|
 | socrates as orthonym | framework | [#123](https://www.alexanarch.org/s/records/123/) | [#1754](https://www.alexanarch.org/s/records/1754/) · kernel: `holograms/EA-HK-ORTHONYM-01/` | round 1 (v0.2): ChatGPT, unprimed 0.545, Perplexity 0.909, Grok 0.455; round 2 (v0.3): ChatGPT, unprimed 1.0, Perplexity 1.0, Grok, fresh thread 1.0, Qwen3.7-Plus, signed out, incognito 0.909, mean 0.977 | DEPOSITED 2026-11-08 |
@@ -138,6 +142,8 @@ A hologram holds an item in two components: a map for a human reader, and a holo
 | prince of poets | mantle (literary) | [#1651](https://www.alexanarch.org/s/records/1651/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
 | fleet | inspectable evaluative document | [#1702](https://www.alexanarch.org/s/records/1702/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
 | hf datasets | inspectable evaluative document | [#1701](https://www.alexanarch.org/s/records/1701/) | — | — | PLANNED: to be versioned after EA-HK-FRAME-01 (#1753), at the author's word of 2026-11-08 |
+| revelation first | framework | [#202](https://www.alexanarch.org/s/records/202/) | [#1755](https://www.alexanarch.org/s/records/1755/) · kernel: `holograms/EA-HK-REVFIRST-01/` | round 1 (v0.1 (three readers) and v0.2 (Grok)): DeepSeek, primed with earlier Revelation First materials, not the kernel 1.0, ChatGPT, unprimed 1.0, Perplexity, incognito 1.0, Grok on x.com, unprimed 1.0, mean 1.0 | DEPOSITED 2026-11-09 |
+| the tenth muse | framework | [#1270](https://www.alexanarch.org/s/records/1270/) | [#1756](https://www.alexanarch.org/s/records/1756/) · kernel: `holograms/EA-HK-TENTHMUSE-01/` | round 1 (v0.2): Google AI Overview 0.875, ChatGPT 1.0, Qwen 0.958, Perplexity 1.0, mean 0.958 | DEPOSITED 2026-11-09 |
 
 ### Evaluations and reconstructions of the holograms, recorded
 
@@ -155,6 +161,17 @@ Each reading of a hologram is a row of table `hologram_evaluations`, with its tr
 | HK-ORTH-L1-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.0) and #1754 (EA-HK-ORTHONYM-01 v1.0), read on… | 3 retractions by the reader | ONE_SIDED_BURDEN, RIVAL_BY_POSSIBILITY, RIVAL_REDUCED, OBJECT_CHANGED, PROGRAMME_RESTATED, CALENDAR_DRIFT, DEFINITION_DRIFT | EA-HK-FRAME-01 v1.1 (#1753) and EA-HK-ORTHONYM-01 v1.1 (#1754): the symmetric… |
 | HK-ORTH-L2-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.1) and #1754 (EA-HK-ORTHONYM-01 v1.1), read on… | 0 retractions by the reader | DEFINITION_DRIFT, PROGRAMME_RESTATED |  |
 | HK-ORTH-L3-chatgpt | evaluation | ChatGPT, signed out | the live record #1754 (EA-HK-ORTHONYM-01 v1.1), from the record's own Ask ChatGPT link | 0 retractions by the reader | — |  |
+| HK-RF-R1-deepseek | reconstruction | DeepSeek, primed with earlier Revelation First materials, not the kernel | the v0.1 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-REVFIRST-01 v0.2 and v0.3 |
+| HK-RF-R1-chatgpt | reconstruction | ChatGPT, unprimed | the v0.1 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-REVFIRST-01 v0.2 and v0.3 |
+| HK-RF-R1-perplexity | reconstruction | Perplexity, incognito | the v0.1 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-REVFIRST-01 v0.2 and v0.3 |
+| HK-RF-R1-grok | reconstruction | Grok on x.com, unprimed | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-REVFIRST-01 v0.2 and v0.3 |
+| HK-TM-R1-aio | reconstruction | Google AI Overview | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.875 | — | EA-HK-TENTHMUSE-01 v0.3 |
+| HK-TM-R1-chatgpt | reconstruction | ChatGPT | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-TENTHMUSE-01 v0.3 |
+| HK-TM-R1-qwen | reconstruction | Qwen | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.958 | — | EA-HK-TENTHMUSE-01 v0.3 |
+| HK-TM-R1-perplexity | reconstruction | Perplexity | the v0.2 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 1.0 | — | EA-HK-TENTHMUSE-01 v0.3 |
+| HK-RF-V03-review-chatgpt | review | ChatGPT | the v0.3 full packages of both kernels (twelve files each, with hashes) | — | — | EA-HK-REVFIRST-01 v1.0 |
+| HK-TM-V03-review-chatgpt | review | ChatGPT | the v0.3 full packages of both kernels (twelve files each, with hashes) | — | — | EA-HK-TENTHMUSE-01 v1.0 |
+| HK-RF-V01-review | review | a reviewer, pasted by the author | EA-HK-REVFIRST-01 v0.1 | — | — | EA-HK-REVFIRST-01 v0.2 and v0.3 |
 
 ## The three literary claims
 

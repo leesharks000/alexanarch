@@ -1,0 +1,20 @@
+id: EA-HK-TENTHMUSE-01/traversal
+entry: Any record, seat, claim or capture; the reader climbs node → claims → relations → body, ring and stratum → the kernel.
+modes:
+  whole:
+    must_return:
+    - INV-1 to INV-7
+    - the current state on each axis with its record
+    - the three seats
+  historical:
+    input: a date
+    must_return:
+    - the states in force on that date
+    - only claims introduced on or before it
+    must_not: attribute a later state to an earlier record
+  join:
+    input: a join
+    must_return:
+    - its role here
+    - its role in And the Last Shall Be First
+    - its edge to the Historical Logos

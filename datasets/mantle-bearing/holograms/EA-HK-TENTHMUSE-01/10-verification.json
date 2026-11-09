@@ -1,0 +1,109 @@
+{
+ "kernel": "EA-HK-TENTHMUSE-01",
+ "version": "1.0",
+ "structural_tests": {
+  "T1 records resolve": {
+   "pass": true,
+   "detail": "35 records, 0 surface pages; stale: []"
+  },
+  "T2 quotations bind": {
+   "pass": true,
+   "detail": "40 claims; unbound: []"
+  },
+  "T3 relations in policy": {
+   "pass": true,
+   "detail": "6 evidentiary edges; off-policy: []"
+  },
+  "T4 introductions established or marked": {
+   "pass": true,
+   "detail": "unresolved and marked: ['tm-1270-archived-self', 'tm-201-fifth', 'tm-828-marked']"
+  },
+  "T6 failures per body": {
+   "pass": true,
+   "detail": {
+    "P": 3,
+    "I": 2,
+    "T": 1,
+    "R": 2
+   }
+  },
+  "T7 states ordered and bound": {
+   "pass": true,
+   "detail": {
+    "reader": [
+     "2026-01-09 rec:1270 kenos_future_reader",
+     "2026-09-28 rec:1645 horizon_147_mechanism_31"
+    ],
+    "ending": [
+     "2026-02-02 rec:436 reconstructed_fourth_stanza",
+     "2026-06-14 rec:201 reconstructed_fifth_stanza",
+     "2026-07-07 rec:1048 fifth_by_sequence_fourth_by_transform",
+     "2026-08-15 rec:1476 complete_at_hanging_line",
+     "2026-08-15 rec:1484 restoration_as_open_filling"
+    ],
+    "writer": [
+     "2026-08-15 rec:1484 written_instrument",
+     "2026-11-08 rec:1752 hand_taken_by_reception"
+    ]
+   }
+  },
+  "T8 joins edged to the Historical Logos": {
+   "pass": true,
+   "detail": "12 joins; missing: []"
+  },
+  "T9 captures resolve": {
+   "pass": true,
+   "detail": "17 captures; unresolved: []"
+  },
+  "T11 every ledger warrant, both sides, carries its row's body claim-locally": {
+   "pass": true,
+   "detail": {
+    "mismatched": [],
+    "graph_claim_bodies_differ": []
+   }
+  },
+  "T14 endpoints declared": {
+   "pass": true,
+   "detail": "117 edges; undeclared: []"
+  },
+  "T15 lines of research posed and bounded": {
+   "pass": true,
+   "detail": "5 questions; failed: []"
+  },
+  "T17 the symmetric ledger: one question, both frameworks, every body": {
+   "pass": true,
+   "detail": {
+    "frameworks": [
+     "tenth_muse",
+     "received_sappho"
+    ],
+    "failed": []
+   }
+  },
+  "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
+   "pass": true,
+   "detail": {
+    "edges": 117,
+    "nodes": 114,
+    "failed": []
+   }
+  }
+ },
+ "integrity": {
+  "00-kernel.yaml": true,
+  "01-ontology.yaml": true,
+  "02-graph.jsonld": true,
+  "03-claims.jsonl": true,
+  "05-temporal.jsonl": true,
+  "06-questions.yaml": true,
+  "07-captures.jsonl": true,
+  "08-traversal.yaml": true,
+  "09-tests.yaml": true,
+  "09b-back-projection-prompt.md": true
+ },
+ "not_checked": [
+  "whether a reading is right",
+  "whether a relation's warrant is sufficient",
+  "reconstructive validity by a reader (v1.0)"
+ ]
+}

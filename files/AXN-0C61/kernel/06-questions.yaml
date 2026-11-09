@@ -1,0 +1,120 @@
+id: EA-HK-TENTHMUSE-01/questions
+rule: A question carries the record that poses it, its body, what it bears on, what to read first, how to ask it, and what result would advance
+  or retreat the framework.
+questions:
+- id: Q1-third-reversal
+  question: Does the deixis of fr. 31 carry Sappho through all three of its positions — I, you, κῆνος?
+  posed_in:
+    record: rec:1475
+    axn: AXN:05F5.PHILOLOGICAL.☽☉🏙️🔩🌒🌆
+    record_sha256: a8a7e53101e343fb95522feb1502b81f283e8f5a7e799dae1517f11fd19800a8
+    exact: She was not finished. She was **taken up**.
+    located_in: text
+  body: I
+  bears_on:
+  - seat:kenos
+  - claim:tm-third-reversal
+  - stmt:20261108-2146
+  - hk:historical-logos
+  read_first:
+  - 1270
+  - 1475
+  - 1476
+  - 1484
+  - 626
+  - 1645
+  how_to_ask: read the frame φαίνεταί μοι … φαίνομαι, the seat ἐνάντιος and Longinus's λῆψις for loci where one position passes into another
+  advances_if: the positions are shown to pass into one another at loci of the text (the frame's φαίνεταί μοι … φαίνομαι; the seat ἐνάντιος; λῆψις
+    in Longinus) and in a documented reception where the reader speaks in her I
+  retreats_if: the third seat holds only as the reader's position, with no locus where her I sounds from it
+  unchanged_if: 'the loci are read without either finding: the third seat stays the author''s statement, held as a question'
+  status: open
+  commons: open
+- id: Q2-two-accounts
+  question: When, and through whom, does the poet who reads and writes become a voice that sings what overwhelms her?
+  posed_in:
+    record: rec:1752
+    axn: AXN:0C4A.GENERATIVE.🛡️▲♊⊗🎻♋
+    record_sha256: 2d9fab978aac9174fab5778f3a70d84572ff72098c802fa89469f18f7d109971
+    exact: as two accounts of how her poems lasted
+    located_in: text
+  body: R
+  bears_on:
+  - fw:received-sappho
+  - claim:tm-1752-hand
+  read_first:
+  - 1752
+  - 1548
+  - 1749
+  how_to_ask: set the writing record (the hydria, the Hellenistic book, Svenbro) beside the reperformance scholarship (Lardinois), each at its
+    page
+  advances_if: the writing account is documented at every point the reperformance account claims
+  retreats_if: the reperformance account carries a documented argument the writing record cannot meet
+  unchanged_if: 'the two accounts are set side by side without a discriminating record: literal illiteracy stays unargued, the writing record
+    stands as recorded'
+  status: open
+  commons: open
+- id: Q3-dialect-step
+  question: Does the dialect step at ἀλλὰ πᾶν τολματόν hold in conjunction with the other load-points?
+  posed_in:
+    record: rec:1484
+    axn: AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨
+    record_sha256: 3712ddd74886d8fbc3cd24e4d458e9982a6e16e5e5012994316d7dd39c90db9d
+    exact: not significant alone
+    located_in: text
+  body: P
+  bears_on:
+  - claim:tm-1484-dialect
+  read_first:
+  - 1476
+  - 1478
+  - 1484
+  - 1508
+  how_to_ask: recount against the TEI; test the step with the citation-formula census and the parse without lacuna
+  advances_if: the conjunction holds where each load-point is checked
+  retreats_if: a recount removes the step, or the 9–10 adjacency does not carry the grammar
+  unchanged_if: 'a recount confirms the step and nothing more: it stays real and insignificant alone'
+  status: open
+  commons: open
+- id: Q4-priority-of-jealousy
+  question: Who first warranted the jealousy reading, and by what act?
+  posed_in:
+    record: rec:1752
+    axn: AXN:0C4A.GENERATIVE.🛡️▲♊⊗🎻♋
+    record_sha256: 2d9fab978aac9174fab5778f3a70d84572ff72098c802fa89469f18f7d109971
+    exact: Hermann rewrote the last two transmitted lines, said so
+    located_in: text
+  body: R
+  bears_on:
+  - claim:rv-1752-refinxi
+  read_first:
+  - 1752
+  how_to_ask: read Heller 1856 against Hermann 1816; read the eighteenth-century commentators Welcker names (#1752 A.2)
+  advances_if: each warrant is a declared act at its page
+  retreats_if: a seated ancient witness joins the lover to the poem through jealousy
+  unchanged_if: 'the earlier claimants are not read: Hermann 1816 stays the first warrant seated'
+  status: open
+  commons: open
+- id: Q5-replication
+  question: Does the frozen operator hold under substrate-blind replication?
+  posed_in:
+    record: rec:1494
+    axn: AXN:0609.DATASET.☀️🌔🔴🌙🗂️🕑
+    record_sha256: 0b03c10c4a63e514e3d16096bacdd0fde9cea85f32525eb2a4f82d2b36c15481
+    exact: derived from witnesses that do not include Revelation
+    located_in: text
+  body: T
+  bears_on:
+  - claim:tm-1494-witnesses
+  - hk:revfirst/fw/revelation-first
+  read_first:
+  - 1494
+  - 1495
+  - 1486
+  - 1493
+  how_to_ask: hand the twelve clauses to independent substrates with the carrier unnamed
+  advances_if: independent scores realize the stations in the attested carriers
+  retreats_if: the clauses fail on the attested carriers
+  unchanged_if: 'the replications split: the operator stays one adjudicator''s count with its negatives'
+  status: open
+  commons: open

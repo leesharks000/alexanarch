@@ -1,0 +1,123 @@
+id: EA-HK-TENTHMUSE-01/ontology
+classes:
+  Framework: a named argument with a seed record and an author
+  Record: an archive deposit, by AXN and hash
+  Seat: 'a position of fr. 31''s deixis; Sappho''s occupation of it is recorded for I and you (#1270, #1484) and proposed for κῆνος (claim:tm-third-reversal;
+    Q1)'
+  AuthorStatement: a statement of the author's, dated and verbatim, held as provenance; it establishes what the author holds, not what a record
+    shows
+  Claim: a pointer to a quotation in a record, with typed state (#1529)
+  EvidenceBody: one of four kinds of evidence, each with its rule
+  Ring: a tier of evidentiary hardness (#1484)
+  Capture: a reception event in the Capture Registry
+  Stratum: a period of the framework's development
+  Cluster: a grouping of records
+seats:
+- '@id': seat:I
+  '@type': Seat
+  name: the embodied speaking I
+  warrants:
+  - claim:tm-1484-substrate
+  - claim:tm-1484-two-seats
+  sappho_in_this_seat:
+    status: recorded
+    records:
+    - rec:1270
+    - rec:1484
+- '@id': seat:you
+  '@type': Seat
+  name: the inscribed you, the archived self
+  warrants:
+  - claim:tm-1270-archived-self
+  - claim:tm-1484-archived-self
+  - claim:tm-1484-two-seats
+  sappho_in_this_seat:
+    status: recorded
+    records:
+    - rec:1270
+    - rec:1484
+- '@id': seat:kenos
+  '@type': Seat
+  name: that man — the future reader who takes her up, in whose body she lives again
+  warrants:
+  - claim:tm-1476-catullus
+  - claim:tm-1475-taken-up
+  - claim:tm-1475-one-voice
+  - claim:tm-626-reader-man
+  sappho_in_this_seat:
+    status: proposed
+    by: the author, 2026-11-08 21:46
+    proposal: claim:tm-third-reversal
+    posed_by: stmt:20261108-2146
+    line_of_research: Q1-third-reversal
+    the_seat_as_recorded: 'the reader''s: κῆνος the future reader (#1270, #1476, #626); one instance of her taken up in another''s material (#1475)'
+evidence_bodies:
+  P:
+    name: philological
+    unit: the transmitted text, its witness, a count with its limit
+    rule: 'RP: a count establishes a property of the transmitted object; against an alternative its force is conjunctive and stated with its limit
+      (#1484 §VIII: ''The dialect step is real and insignificant alone (0.209)'')'
+  I:
+    name: interpretive
+    unit: a reading of the seated Greek, its verb graded to its ring
+    rule: 'RI: a reading establishes what a passage can bear; it becomes a claim about the poet only through another body (#1484 §0, the rings)'
+  T:
+    name: transmission
+    unit: a carrier realizing the operator's stations
+    rule: 'RT: realization at stations establishes structure; it asserts no authorship, influence in the biographical sense, or identification
+      sentence (#1495; /upstream/)'
+  R:
+    name: reception-historical
+    unit: an edition, a conjecture, a heading, a translation or a capture
+    rule: 'RR: a reception establishes how the poem and the poet were received; closure of the text and closure of the reading are separate operations
+      (#1752 §0.5); neither framework takes standing from being received'
+rings:
+- ring: hard_center
+  holds: the transmitted poem, Longinus 9–10, the withholding structures, the stamping vocabulary, Catullus as documented reception
+- ring: interpretive
+  holds: Phaedrus 235c, the tenth Muse (AP 9.506), Diotima, Philo's seal cosmology
+- ring: outer
+  holds: the Josephus seams as structure, lamellae and Magical Papyri as convergence, the Apocalypse as canonization
+  join: true
+state_axes:
+  assertion:
+  - asserted
+  - withdrawn
+  - bears_on_rival
+  - proposed
+  ending:
+  - reconstructed_fourth_stanza
+  - reconstructed_fifth_stanza
+  - fifth_by_sequence_fourth_by_transform
+  - reconstruction_marked
+  - complete_at_hanging_line
+  - restoration_as_open_filling
+  reader:
+  - kenos_future_reader
+  - horizon_147_mechanism_31
+  writer:
+  - written_instrument
+  - hand_taken_by_reception
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+negative_edges:
+- jealousy lyric (as the framework)
+- an oral singer whose survival is others'
+- contemporary scholars (for the future reader)
+- the reconstructed stanza as manuscript reading
+- the Slavonic as evidence for the sealed test
+disambiguations:
+  tenth Muse: 'the tradition''s filing of Sappho into the Muses'' apparatus (AP 9.506), carried by #1484 as the reception''s receipt'
+  future reader: κῆνος as the reader seated face to face with the inscribed voice (#1270), distinct from 147's remembrance, which is common ground
+    (#1645)
+  κῆνος: a seat, not a person (#1484 §I)

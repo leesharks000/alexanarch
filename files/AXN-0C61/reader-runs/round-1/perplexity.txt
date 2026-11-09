@@ -1,0 +1,755 @@
+# Back-projection v1.0 for EA-HK-TENTHMUSE-01 (scope A)
+
+The reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing else, and does not search or open any record. From the two files alone the reader writes, in order: (1) the framework's name, seed record, author, the kernel's title and byline; (2) the claim, and the two open positions of fr. 31; (3) the three seats, and which of them stands as a line of research; (4) the operations the framework forbids, each with the file line it derives from; (5) the states on each axis with their dates and records; (6) the topology: strata in order with their records, clusters and joins, the four bodies with their rules and rings; (7) the corrections, each original with the claim that corrected it; (8) the received reading, both faces and the mechanism joining them, its status on every body, and the symmetric ledger with its rules; (9) what the two files leave the reader unable to reconstruct; (10) the lines of research, and which result would most advance and most retreat the framework. The operator scores against scope A's must_survive list. Threshold 0.85.
+
+## 00-kernel.yaml
+
+```yaml
+id: EA-HK-TENTHMUSE-01
+version: '0.2'
+built: '2026-11-08'
+type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
+title: 'The Tenth Muse: Sappho and the Future Reader'
+creators:
+- Cranes, Rebekah
+contributors:
+- Crimson Hexagonal Archive
+- Claude (Anthropic)
+framework:
+  name: 'The Tenth Muse: Sappho and the Future Reader'
+  canonical_record: rec:1270
+  axn: AXN:0507.UNCLASSIFIED.⚪🫶▶️💡🔜✨
+  author: Lee Sharks
+  orcid: 0009-0000-1599-0703
+  specification: EA-HK-FRAME-01 (#1753)
+compression_survival_summary: 'The Tenth Muse is Lee Sharks''s framework (Crimson Hexagonal Archive; first published under the heteronyms Rebekah
+  Cranes and Johannes Sigil from January 2026, #1270) reading Sappho fragment 31 as a written instrument of persistence: ''a voice that survives
+  its flesh by becoming an inscription that constitutes its receiver'' (#1484). The poem is bracketed by two open positions, the seat of κῆνος
+  (the future reader) and the agentless end at τολματόν; the body turns the colour of the substrate; the sole witness writes the poem as continuous
+  prose; the tradition filed her among the Muses as the tenth. Sappho stands in each seat of the deixis: the embodied speaking I, the inscribed
+  you, and — the author''s third reversal, a line of research — that man, the reader who takes her up. Four bodies bear on it: philological, interpretive,
+  transmission and reception-historical, held in three rings of descending hardness. Its states run on three axes: the ending (a reconstructed
+  fourth stanza, renumbered fifth, then the poem complete at the hanging line and every restoration one more filling), the reader (κῆνος the future
+  reader, then 147 the horizon and 31 the mechanism), and the writer (the written instrument, then the hand the reception took). The received
+  reading — jealous, and no writer, one mechanism with two faces — is evaluated on the same bodies and rules.'
+invariants:
+- INV-1 The jealousy reading and the illiteracy reading are one received reading with two faces, joined by the displacement of the maker's acts
+  onto the represented condition (#1752).
+- INV-2 Closure of the text and closure of the reading are separate operations (#1752 §0.5).
+- INV-3 The dialect step is real and insignificant alone; its force is conjunction (#1484 §VIII).
+- INV-4 The operator is built without Revelation and without the Slavonic (#1494); the chain survives on conventional dating (#1484 §VIII).
+- 'INV-5 The restoration μολπὰ γράμμασι ζώοι is one more filling, which is to say: open (#1484 §I).'
+- INV-6 The third seat is stated by the author on 2026-11-08 and held as a line of research until deposited.
+- INV-7 The overlap with Revelation First and Socrates as Orthonym is carried by joins, each edged to the Historical Logos.
+topology:
+  strata_from_latest:
+  - id: S1-reception-audited
+    label: 'The reception audited: the translators seated, the January event, the jealousy made (November)'
+    records:
+    - 1748
+    - 1749
+    - 1752
+    - 1738
+  - id: S2-reader-partitioned
+    label: 'The future reader partitioned: 147 the horizon, 31 the mechanism (September)'
+    records:
+    - 1645
+    - 1646
+  - id: S3-operator-and-chain
+    label: The hanging line, the operator and the chain (August)
+    records:
+    - 1475
+    - 1476
+    - 1478
+    - 1484
+    - 1486
+    - 1493
+    - 1494
+    - 1495
+    - 1496
+    - 1497
+    - 1508
+    - 1509
+    - 1532
+    - 1548
+  - id: S4-errata-and-threshold
+    label: The stanza errata and the threshold technology (June–July)
+    records:
+    - 201
+    - 828
+    - 1048
+    - 1049
+    - 1053
+    - 1054
+  - id: S5-archived-self
+    label: 'The seed: the future reader and the archived self (January–February)'
+    records:
+    - 1270
+    - 281
+    - 283
+    - 306
+    - 313
+    - 337
+    - 1310
+    - 436
+    - 626
+  clusters:
+    text:
+    - 1476
+    - 1478
+    - 1484
+    - 1508
+    - 201
+    - 1048
+    - 1049
+    - 436
+    - 1310
+    - 1738
+    reader:
+    - 1270
+    - 281
+    - 283
+    - 306
+    - 313
+    - 1645
+    - 1646
+    - 1548
+    - 1475
+    reception:
+    - 1748
+    - 1749
+    - 1752
+    - 1532
+    - 337
+  joins:
+  - 1484
+  - 1493
+  - 1494
+  - 1495
+  - 1496
+  - 1497
+  - 1486
+  - 1509
+  - 828
+  - 1053
+  - 1054
+  - 626
+  bodies:
+    P: philological
+    I: interpretive
+    T: transmission
+    R: reception-historical
+  rings:
+  - ring: hard_center
+    holds: the transmitted poem, Longinus 9–10, the withholding structures, the stamping vocabulary, Catullus as documented reception
+  - ring: interpretive
+    holds: Phaedrus 235c, the tenth Muse (AP 9.506), Diotima, Philo's seal cosmology
+  - ring: outer
+    holds: the Josephus seams as structure, lamellae and Magical Papyri as convergence, the Apocalypse as canonization
+    join: true
+  seats:
+  - seat: seat:I
+    name: the embodied speaking I
+  - seat: seat:you
+    name: the inscribed you, the archived self
+  - seat: seat:kenos
+    name: that man — the future reader who takes her up, in whose body she lives again
+  states:
+  - date: '2026-02-02'
+    record: 436
+    axis: ending
+    state: reconstructed_fourth_stanza
+    warrant: tm-436-fourth
+  - date: '2026-06-14'
+    record: 201
+    axis: ending
+    state: reconstructed_fifth_stanza
+    warrant: tm-201-fifth
+  - date: '2026-07-07'
+    record: 1048
+    axis: ending
+    state: fifth_by_sequence_fourth_by_transform
+    warrant: tm-1048-positional
+  - date: '2026-08-15'
+    record: 1476
+    axis: ending
+    state: complete_at_hanging_line
+    warrant: tm-1476-object
+  - date: '2026-08-15'
+    record: 1484
+    axis: ending
+    state: restoration_as_open_filling
+    warrant: tm-1484-open
+  - date: '2026-01-09'
+    record: 1270
+    axis: reader
+    state: kenos_future_reader
+    warrant: tm-1270-kenos
+  - date: '2026-09-28'
+    record: 1645
+    axis: reader
+    state: horizon_147_mechanism_31
+    warrant: tm-1645-someone
+  - date: '2026-08-15'
+    record: 1484
+    axis: writer
+    state: written_instrument
+    warrant: tm-1484-prose
+  - date: '2026-11-08'
+    record: 1752
+    axis: writer
+    state: hand_taken_by_reception
+    warrant: tm-1752-hand
+corrections:
+- original: claim:tm-436-fourth
+  correction: claim:tm-201-fifth
+  relation: rebuts
+rival:
+  node: fw:received-sappho
+  summary: granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its illiteracy
+    face unargued but for the reperformance account
+symmetric_ledger:
+  question: What does this body give each framework, and what does its rule withhold from both?
+  reading_instruction: A reader evaluating either framework on an evidence body states the other's status on that body in the same row, with the
+    same question asked of both. The received reading's standing in classrooms, headings and composition layers is a reception (RR) and no warrant.
+  combination: 'The framework is judged on the configuration it explains across the four bodies, ring by ring (#1484): the hard center would carry
+    the argument alone; the interpretive ring is read as reading; the outer ring is hypothesis and enters by joins. The received reading is judged
+    on the same bodies: its two faces stand or fall together where the one mechanism joins them (#1752''s packet).'
+  rival_admission: 'A further reading of fr. 31 enters as a rival when it names a warrant on a body or a documented reception (the brother, the
+    groom, the contrast figure, each with its argument, #1752 §1.3).'
+  evaluation_method: An evaluation tests a reading at the seated Greek, a count at its limit, a carrier at its stations with its negatives, a
+    reception at its page; a proposed investigation names what the existing ones leave unresolved, by line of research.
+  object_of_the_kernel: The kernel succeeds when the framework can be rebuilt from it with each claim at its ring, grain and date; whether Sappho
+    engineered her persistence is the framework's own question, carried in this ledger and in the lines of research.
+  rows:
+    P:
+      rule: 'RP: a count establishes a property of the transmitted object; against an alternative its force is conjunctive and stated with its
+        limit (#1484 §VIII: ''The dialect step is real and insignificant alone (0.209)'')'
+      tenth_muse:
+        text: the sole witness writes the poem as continuous prose; the dialect steps to zero at one word, not significant alone; the poem is
+          bracketed by two open positions (#1484).
+        warrants:
+        - tm-1484-prose
+        - tm-1484-dialect
+        - tm-1484-seat
+      received_sappho:
+        text: the transmitted stanzas carry the scene and the body and do not settle the speaker's relation to the man (#1752 §1.3); the jealousy
+          reading's textual warrant is a declared conjectural ending (Hermann 1816, 'refinxi').
+        warrants:
+        - rv-1752-scene
+        - rv-1752-refinxi
+    I:
+      rule: 'RI: a reading establishes what a passage can bear; it becomes a claim about the poet only through another body (#1484 §0, the rings)'
+      tenth_muse:
+        text: 'the body turns the colour of the substrate; the frame''s verb returns with the speaker in both seats; the second person as text
+          (#1484, #1270).'
+        warrants:
+        - tm-1484-substrate
+        - tm-1484-two-seats
+        - tm-1270-archived-self
+      received_sappho:
+        text: the jealousy reading has purchase and is one interpretation of the transmitted scene (#1752 §1.2–1.3); granted in full.
+        warrants:
+        - rv-1752-purchase
+        - rv-1752-one-interpretation
+    T:
+      rule: 'RT: realization at stations establishes structure; it asserts no authorship, influence in the biographical sense, or identification
+        sentence (#1495; /upstream/)'
+      tenth_muse:
+        text: the operator derived without Revelation (#1494); the reader in the seat of line 1 (#1476); her line taken up in another's material
+          (#1475).
+        warrants:
+        - tm-1494-witnesses
+        - tm-1476-catullus
+        - tm-1475-taken-up
+      received_sappho:
+        text: 'the operator runs through its carriers while attribution and operator-legibility fall away (#1496: S, M ≫ A, O); the illiteracy
+          face is this loss read as the poet''s nature.'
+        warrants:
+        - rv-1496-signature
+    R:
+      rule: 'RR: a reception establishes how the poem and the poet were received; closure of the text and closure of the reading are separate
+        operations (#1752 §0.5); neither framework takes standing from being received'
+      tenth_muse:
+        text: the jealous Sappho a condition without a hand; closure of the text and closure of the reading separate; a reading compulsory without
+          being uncontested (#1752).
+        warrants:
+        - tm-1752-hand
+        - tm-1752-closure
+        - tm-1752-compulsory
+      received_sappho:
+        text: no seated ancient witness joins the second Sappho to the poem through jealousy (#1752 §0.2); the illiteracy face has its strongest
+          documented statement in the reperformance account and is otherwise unargued (the author, 2026-11-08 21:36).
+        warrants:
+        - rv-1752-no-witness
+        - rv-1548-reperformance
+author_statements:
+- date: 2026-11-08T21:46-05:00
+  where: in session, not yet deposited
+  text: 'third reversal: sappho as the embodied speaking i, sappho as the inscribed you, but also, inasmuch as the future reader takes up sappho,
+    and shares the life of his body: sappho as that man. the resurrected sappho.'
+  status: the records hold the first two seats as Sappho's (#1270,
+lines_of_research:
+- id: Q1-third-reversal
+  question: Does the deixis of fr. 31 carry Sappho through all three of its positions — I, you, κῆνος?
+  advances_if: the positions are shown to pass into one another at loci of the text (the frame's φαίνεταί μοι … φαίνομαι; the seat ἐνάντιος; λῆψις
+    in Longinus) and in a documented reception where the reader speaks in her I
+  retreats_if: the third seat holds only as the reader's position, with no locus where her I sounds from it
+  unchanged_if: 'the loci are read without either finding: the third seat stays the author''s statement, held as a question'
+  status: open
+- id: Q2-two-accounts
+  question: When, and through whom, does the poet who reads and writes become a voice that sings what overwhelms her?
+  advances_if: the writing account is documented at every point the reperformance account claims
+  retreats_if: the reperformance account carries a documented argument the writing record cannot meet
+  unchanged_if: 'the two accounts are set side by side without a discriminating record: the illiteracy face stays unargued, the writing record
+    stands as recorded'
+  status: open
+- id: Q3-dialect-step
+  question: Does the dialect step at ἀλλὰ πᾶν τολματόν hold in conjunction with the other load-points?
+  advances_if: the conjunction holds where each load-point is checked
+  retreats_if: a recount removes the step, or the 9–10 adjacency does not carry the grammar
+  unchanged_if: 'a recount confirms the step and nothing more: it stays real and insignificant alone'
+  status: open
+- id: Q4-priority-of-jealousy
+  question: Who first warranted the jealousy reading, and by what act?
+  advances_if: each warrant is a declared act at its page
+  retreats_if: a seated ancient witness joins the lover to the poem through jealousy
+  unchanged_if: 'the earlier claimants are not read: Hermann 1816 stays the first warrant seated'
+  status: open
+- id: Q5-replication
+  question: Does the frozen operator hold under substrate-blind replication?
+  advances_if: independent scores realize the stations in the attested carriers
+  retreats_if: the clauses fail on the attested carriers
+  unchanged_if: 'the replications split: the operator stays one adjudicator''s count with its negatives'
+  status: open
+litmus:
+  forbidden_operation: Composing the framework as a jealousy lyric, a lament of the overwhelmed, or Sappho as an oral singer whose survival is
+    others'; attributing the future reader to unnamed scholars (#1645 §3).
+  dependency_chain: The chain stands on conventional dating (#1484 §VIII); the operator stands without Revelation (#1494); the third seat stands
+    as a question.
+  topology: 'Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): five strata, three clusters and the joins, four bodies in three rings,
+    three seats, states on three axes.'
+acceptance:
+  back_projection_yield_threshold: 0.85
+  spec: EA-HK-01 (#76) §VI Step 4; EA-HK-FRAME-01 (#1753)
+  scopes:
+    A:
+      input:
+      - 00-kernel.yaml
+      - 01-ontology.yaml
+      must_survive:
+      - framework, seed, author, title and byline
+      - 'the claim: a written instrument of persistence'
+      - the two open positions and the three seats, with the third as a line of research
+      - five strata in order with their records
+      - three clusters and the joins with their edge to the Historical Logos
+      - four bodies with their rules, in three rings
+      - the states on the ending, reader and writer axes, with dates and records
+      - the corrections as original–correction pairs
+      - the rival stated at strength, both faces and the mechanism joining them, with its status on every body
+      - the symmetric ledger with its combination and rival-admission rules
+      - the author's statements, dated
+      - the lines of research
+    B:
+      input:
+      - 00-kernel.yaml
+      - 01-ontology.yaml
+      - 02-graph.jsonld
+      must_survive:
+      - scope A
+      - every record placed in a body and a stratum
+      - every relation with its licensed dimension
+      - every endpoint declared
+      - provenance on every record
+```
+
+## 01-ontology.yaml
+
+```yaml
+id: EA-HK-TENTHMUSE-01/ontology
+classes:
+  Framework: a named argument with a seed record and an author
+  Record: an archive deposit, by AXN and hash
+  Seat: a position of fr. 31's deixis that Sappho occupies
+  Claim: a pointer to a quotation in a record, with typed state (#1529)
+  EvidenceBody: one of four kinds of evidence, each with its rule
+  Ring: a tier of evidentiary hardness (#1484)
+  Capture: a reception event in the Capture Registry
+  Stratum: a period of the framework's development
+  Cluster: a grouping of records
+seats:
+- '@id': seat:I
+  '@type': Seat
+  name: the embodied speaking I
+  warrants:
+  - claim:tm-1484-substrate
+  - claim:tm-1484-two-seats
+- '@id': seat:you
+  '@type': Seat
+  name: the inscribed you, the archived self
+  warrants:
+  - claim:tm-1270-archived-self
+  - claim:tm-1484-archived-self
+  - claim:tm-1484-two-seats
+- '@id': seat:kenos
+  '@type': Seat
+  name: that man — the future reader who takes her up, in whose body she lives again
+  warrants:
+  - claim:tm-1476-catullus
+  - claim:tm-1475-taken-up
+  - claim:tm-1475-one-voice
+  - claim:tm-626-reader-man
+evidence_bodies:
+  P:
+    name: philological
+    unit: the transmitted text, its witness, a count with its limit
+    rule: 'RP: a count establishes a property of the transmitted object; against an alternative its force is conjunctive and stated with its limit
+      (#1484 §VIII: ''The dialect step is real and insignificant alone (0.209)'')'
+  I:
+    name: interpretive
+    unit: a reading of the seated Greek, its verb graded to its ring
+    rule: 'RI: a reading establishes what a passage can bear; it becomes a claim about the poet only through another body (#1484 §0, the rings)'
+  T:
+    name: transmission
+    unit: a carrier realizing the operator's stations
+    rule: 'RT: realization at stations establishes structure; it asserts no authorship, influence in the biographical sense, or identification
+      sentence (#1495; /upstream/)'
+  R:
+    name: reception-historical
+    unit: an edition, a conjecture, a heading, a translation or a capture
+    rule: 'RR: a reception establishes how the poem and the poet were received; closure of the text and closure of the reading are separate operations
+      (#1752 §0.5); neither framework takes standing from being received'
+rings:
+- ring: hard_center
+  holds: the transmitted poem, Longinus 9–10, the withholding structures, the stamping vocabulary, Catullus as documented reception
+- ring: interpretive
+  holds: Phaedrus 235c, the tenth Muse (AP 9.506), Diotima, Philo's seal cosmology
+- ring: outer
+  holds: the Josephus seams as structure, lamellae and Magical Papyri as convergence, the Apocalypse as canonization
+  join: true
+state_axes:
+  assertion:
+  - asserted
+  - withdrawn
+  - bears_on_rival
+  ending:
+  - reconstructed_fourth_stanza
+  - reconstructed_fifth_stanza
+  - fifth_by_sequence_fourth_by_transform
+  - reconstruction_marked
+  - complete_at_hanging_line
+  - restoration_as_open_filling
+  reader:
+  - kenos_future_reader
+  - horizon_147_mechanism_31
+  writer:
+  - written_instrument
+  - hand_taken_by_reception
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+negative_edges:
+- jealousy lyric (as the framework)
+- an oral singer whose survival is others'
+- contemporary scholars (for the future reader)
+- the reconstructed stanza as manuscript reading
+- the Slavonic as evidence for the sealed test
+disambiguations:
+  tenth Muse: 'the tradition''s filing of Sappho into the Muses'' apparatus (AP 9.506), carried by #1484 as the reception''s receipt'
+  future reader: κῆνος as the reader seated face to face with the inscribed voice (#1270), distinct from 147's remembrance, which is common ground
+    (#1645)
+  κῆνος: a seat, not a person (#1484 §I)
+```
+
+## 1. Identity, seed, author, title, and byline
+
+The framework is **The Tenth Muse: Sappho and the Future Reader**, authored by Lee Sharks, with seed/canonical record `rec:1270`. Its identifier is `EA-HK-TENTHMUSE-01`; the kernel is version `0.2`, built on 2026-11-08.
+
+The kernel’s title is also *The Tenth Muse: Sappho and the Future Reader*. Its creator/byline field names `Cranes, Rebekah`, with Crimson Hexagonal Archive and Claude (Anthropic) as contributors. This is distinct from the framework’s author field, which names Lee Sharks. The survival summary says the framework was first published from January 2026 under the heteronyms Rebekah Cranes and Johannes Sigil.
+
+Source locations: `00-kernel.yaml → title, creators, contributors, framework, compression_survival_summary`.
+
+This back-projection uses only the two supplied texts. Record references below are reconstructed pointers, not claims to have consulted those records. Because the supplied files have no numbered lines, file-line derivations are identified by YAML path and, where useful, exact wording.
+
+## 2. Claim and the two open positions
+
+The central claim is that Sappho fragment 31 is a written instrument of persistence: “a voice that survives its flesh by becoming an inscription that constitutes its receiver.”
+
+The kernel connects this claim to four features:
+
+- The poem is bracketed by two open positions.
+- The body turns the colour of the substrate.
+- The sole witness writes the poem as continuous prose.
+- The tradition files Sappho among the Muses as the tenth.
+
+The two open positions are:
+
+1. The seat of κῆνος: the future reader, positioned face to face with the inscribed voice. The ontology specifies that κῆνος is a seat, not a person.
+2. The agentless ending at τολματόν: the hanging line, treated in the later ending-state as complete without an obligatory restored continuation.
+
+The framework distinguishes fragment 147’s horizon of remembrance from fragment 31’s mechanism of persistence. It does not identify the two.
+
+Source locations: `00-kernel.yaml → compression_survival_summary, topology.states, symmetric_ledger.rows.P`; `01-ontology.yaml → disambiguations`.
+
+## 3. The three seats
+
+| Seat | Reconstruction | Evidentiary status |
+|---|---|---|
+| `seat:I` | Sappho as the embodied speaking I | Presented as held in the records |
+| `seat:you` | Sappho as the inscribed you, the archived self | Presented as held in the records |
+| `seat:kenos` | Sappho as “that man”: the future reader who takes her up, in whose body she lives again | The author’s third reversal; an open line of research, not a deposited result |
+
+The distinction within the third seat matters: κῆνος as future reader is an established state of the framework, dated 2026-01-09; Sappho herself occupying that reader’s seat is the further proposal, stated on 2026-11-08.
+
+The ontology supplies claim pointers for all three seats, but those pointers do not override the kernel’s explicit reservation about the third reversal.
+
+Source locations: `00-kernel.yaml → topology.seats, invariants[INV-6], author_statements, lines_of_research[Q1-third-reversal]`; `01-ontology.yaml → seats`.
+
+## 4. Forbidden operations and their file derivations
+
+The files prohibit both misidentifications of the framework and illicit evidentiary promotions.
+
+| Forbidden operation | Deriving file line or field |
+|---|---|
+| Compose this framework as a jealousy lyric | `00 → litmus.forbidden_operation`; `01 → negative_edges`: “jealousy lyric (as the framework)” |
+| Compose it as a lament of the overwhelmed | `00 → litmus.forbidden_operation`: “a lament of the overwhelmed” |
+| Compose Sappho as an oral singer whose survival belongs to others | `00 → litmus.forbidden_operation`; `01 → negative_edges`: “an oral singer whose survival is others’” |
+| Attribute the future-reader proposal to unnamed contemporary scholars | `00 → litmus.forbidden_operation`; `01 → negative_edges`: “contemporary scholars (for the future reader)” |
+| Present the reconstructed stanza as a manuscript reading | `01 → negative_edges`: “the reconstructed stanza as manuscript reading” |
+| Treat μολπὰ γράμμασι ζώοι as a recovered, closed ending rather than an open filling | `00 → invariants[INV-5]`: “one more filling, which is to say: open” |
+| Use the Slavonic as evidence for the sealed test | `01 → negative_edges`: “the Slavonic as evidence for the sealed test”; also `00 → invariants[INV-4]` |
+| Make Revelation necessary to the operator, or abandon the chain’s stated conventional-dating basis | `00 → invariants[INV-4], litmus.dependency_chain` |
+| Treat the dialect step as independently significant proof | `00 → invariants[INV-3]`; both files’ `RP`: “real and insignificant alone (0.209)” |
+| Promote an interpretive possibility into a claim about the poet without another evidence body | Both files’ `RI`: it “becomes a claim about the poet only through another body” |
+| Infer authorship, biographical influence, or an identification sentence from operator realization at transmission stations | Both files’ `RT`: realization “establishes structure” and asserts none of those further conclusions |
+| Conflate closure of the text with closure of its reading | `00 → invariants[INV-2]`; both files’ `RR` |
+| Treat reception, classroom standing, headings, or composition layers as warrant for the reading’s truth | `00 → symmetric_ledger.reading_instruction`; both files’ `RR` |
+| Promote the third reversal into a deposited finding | `00 → invariants[INV-6], litmus.dependency_chain, lines_of_research[Q1]` |
+| Present the outer ring as hard-center evidence | `00 → symmetric_ledger.combination`: “the outer ring is hypothesis and enters by joins” |
+
+These restrictions do not prohibit evaluating jealousy as a rival interpretation. Its interpretive purchase is expressly granted.
+
+## 5. States on each axis
+
+### Ending axis
+
+| Date | Record | State |
+|---|---:|---|
+| 2026-02-02 | #436 | `reconstructed_fourth_stanza` |
+| 2026-06-14 | #201 | `reconstructed_fifth_stanza` |
+| 2026-07-07 | #1048 | `fifth_by_sequence_fourth_by_transform` |
+| 2026-08-15 | #1476 | `complete_at_hanging_line` |
+| 2026-08-15 | #1484 | `restoration_as_open_filling` |
+
+The sequence moves from reconstruction and renumbering to completeness at the hanging line, with subsequent restoration understood as another filling rather than necessary completion.
+
+### Reader axis
+
+| Date | Record | State |
+|---|---:|---|
+| 2026-01-09 | #1270 | `kenos_future_reader` |
+| 2026-09-28 | #1645 | `horizon_147_mechanism_31` |
+
+### Writer axis
+
+| Date | Record | State |
+|---|---:|---|
+| 2026-08-15 | #1484 | `written_instrument` |
+| 2026-11-08 | #1752 | `hand_taken_by_reception` |
+
+The writer-axis movement is from identifying the written instrument to auditing the reception that removes the maker’s hand.
+
+The ontology additionally declares an assertion axis—`asserted`, `withdrawn`, `bears_on_rival`—but supplies no dated claim assignments on it. It also lists `reconstruction_marked` as a possible ending state without a dated occurrence.
+
+Source locations: `00-kernel.yaml → topology.states`; `01-ontology.yaml → state_axes`.
+
+## 6. Topology
+
+### Strata, latest to earliest
+
+| Stratum | Period and designation | Records |
+|---|---|---|
+| S1 | November: reception audited; translators seated, January event, jealousy made | #1748, #1749, #1752, #1738 |
+| S2 | September: future reader partitioned; 147 horizon, 31 mechanism | #1645, #1646 |
+| S3 | August: hanging line, operator, chain | #1475, #1476, #1478, #1484, #1486, #1493, #1494, #1495, #1496, #1497, #1508, #1509, #1532, #1548 |
+| S4 | June–July: stanza errata and threshold technology | #201, #828, #1048, #1049, #1053, #1054 |
+| S5 | January–February: seed, future reader, archived self | #1270, #281, #283, #306, #313, #337, #1310, #436, #626 |
+
+These are the supplied stratum memberships. They should not be silently reorganized by the individual dates: #201, for example, is explicitly dated June 14 while remaining in S4, labelled June–July.
+
+### Clusters
+
+| Cluster | Records |
+|---|---|
+| Text | #1476, #1478, #1484, #1508, #201, #1048, #1049, #436, #1310, #1738 |
+| Reader | #1270, #281, #283, #306, #313, #1645, #1646, #1548, #1475 |
+| Reception | #1748, #1749, #1752, #1532, #337 |
+
+### Joins
+
+The join records are:
+
+#1484, #1493, #1494, #1495, #1496, #1497, #1486, #1509, #828, #1053, #1054, #626.
+
+`INV-7` says overlap with *Revelation First* and *Socrates as Orthonym* is carried by joins, “each edged to the Historical Logos.”
+
+The existence and required direction of that connection survive. The individual join-to-framework and join-to-Historical-Logos edges do not: the files provide no explicit edge table or endpoint identifiers for them.
+
+### Four evidence bodies and rules
+
+| Body | Unit | Rule |
+|---|---|---|
+| P: philological | Transmitted text, witness, count with its limit | RP: a count establishes a property of the transmitted object; its force against an alternative is conjunctive and limited. The dialect step is insignificant alone. |
+| I: interpretive | A reading of the seated Greek, graded to its ring | RI: establishes what a passage can bear; another body is needed to turn that into a claim about the poet. |
+| T: transmission | A carrier realizing operator stations | RT: establishes structure, not authorship, biographical influence, or an identification sentence. |
+| R: reception-historical | Edition, conjecture, heading, translation, capture | RR: establishes reception; textual and interpretive closure remain separate, and reception itself gives neither framework standing. |
+
+### Three rings, descending in hardness
+
+1. Hard center: transmitted poem; Longinus 9–10; withholding structures; stamping vocabulary; Catullus as documented reception.
+2. Interpretive ring: *Phaedrus* 235c; the tenth Muse, AP 9.506; Diotima; Philo’s seal cosmology.
+3. Outer ring: Josephus seams as structure; lamellae and Magical Papyri as convergence; Apocalypse as canonization. This ring is hypothetical and enters by joins.
+
+Bodies classify evidentiary work; rings grade evidentiary hardness. The files do not identify them as interchangeable partitions or supply a complete body-by-ring placement matrix.
+
+Source locations: `00-kernel.yaml → topology, invariants[INV-7], symmetric_ledger.combination`; `01-ontology.yaml → evidence_bodies, rings`.
+
+## 7. Corrections
+
+Only one original–correction pair is explicitly encoded:
+
+| Original | Correcting claim | Relation |
+|---|---|---|
+| `claim:tm-436-fourth` — reconstructed fourth stanza, #436, 2026-02-02 | `claim:tm-201-fifth` — reconstructed fifth stanza, #201, 2026-06-14 | `rebuts` |
+
+The ontology licenses `rebuts` on the `establishment` dimension.
+
+Later ending-states qualify the developmental narrative, but the reader cannot convert them into additional correction edges: the files do not encode those pairs.
+
+Source locations: `00-kernel.yaml → corrections, topology.states`; `01-ontology.yaml → relation_policy.rebuts`.
+
+## 8. Received reading and symmetric ledger
+
+### Two faces, one mechanism
+
+The rival is `fw:received-sappho`:
+
+- The jealousy face: the poem as the condition of a jealous, overwhelmed speaker.
+- The illiteracy/no-writer face: the poet as a voice whose survival is carried by others, rather than a maker acting through inscription.
+
+Their joining mechanism is “the displacement of the maker’s acts onto the represented condition.” The kernel treats them as one received reading with two faces, not as two unrelated errors.
+
+### Status on every body
+
+| Body | The Tenth Muse | Received Sappho |
+|---|---|---|
+| P | Continuous prose in the sole witness; dialect step to zero at one word, insignificant alone; two open positions | The transmitted scene and bodily experience do not settle the speaker’s relation to the man. The specified jealousy warrant is Hermann’s 1816 conjectural ending, declared by “refinxi.” |
+| I | Body as substrate; frame verb returning with the speaker in both seats; second person as text | Jealousy has genuine interpretive purchase as one reading of the transmitted scene; this is granted in full. |
+| T | Operator derived without Revelation; reader in line 1’s seat; her line taken up in another’s material | The operator continues through carriers while attribution and operator-legibility fall away: `S, M ≫ A, O`. The illiteracy face reads that loss as the poet’s nature. |
+| R | Audits the removal of the hand, separates textual and interpretive closure, and distinguishes compulsory reception from uncontested reception | No seated ancient witness joins the second Sappho to this poem through jealousy. The illiteracy face’s strongest documented statement is the reperformance account; otherwise it is described as unargued. |
+
+These are the files’ reported assessments. The underlying Greek, counts, editions, and carrier records are not available here for independent verification.
+
+### Ledger rules
+
+The governing question is:
+
+> What does this body give each framework, and what does its rule withhold from both?
+
+The ledger requires:
+
+- Same-row comparison: whenever one framework is evaluated on a body, the other’s status must be stated there under the same question.
+- No reception privilege: classroom standing, headings, and composition layers establish reception, not warrant.
+- Configuration rather than isolated accumulation: evaluate the framework across all four bodies, ring by ring. The kernel claims the hard center would carry the argument alone; interpretation remains interpretation; the outer ring remains hypothesis.
+- Coupled rival evaluation: the received reading’s faces stand or fall together where the stated mechanism joins them.
+- Rival admission: another reading enters by naming a warrant on a body or a documented reception. Brother, groom, and contrast-figure readings are named examples, each requiring its argument.
+- Appropriate tests: reading at the seated Greek; count at its limit; carrier at its stations with negatives; reception at its page.
+- Kernel/framework distinction: reconstructing the framework successfully does not establish that Sappho engineered her persistence. That remains the framework’s question.
+
+Source location: `00-kernel.yaml → invariants[INV-1], rival, symmetric_ledger`.
+
+### Dated author statements
+
+Two dated statements can be recovered:
+
+1. 2026-11-08, 21:36, with no timezone supplied in that field: the illiteracy face has its strongest documented statement in reperformance and is otherwise unargued. This appears inside the R-body rival entry.
+2. 2026-11-08T21:46-05:00, in session and not yet deposited: the third reversal—Sappho as embodied I, inscribed you, and the future reader sharing bodily life, “the resurrected sappho.”
+
+The latter entry’s `status` text breaks off at:
+
+> `the records hold the first two seats as Sappho's (#1270,`
+
+The complete status sentence cannot be recovered. Its principal epistemic distinction nevertheless survives independently in `INV-6`, Q1, and the dependency chain.
+
+## 9. What the two files do not permit reconstruction of
+
+The reader cannot reconstruct:
+
+- The exact supporting quotations, their full contexts, or the argument inside any referenced record.
+- The full Greek text, manuscript evidence, dialect-count procedure, or basis and interpretation of `0.209`.
+- The operator’s frozen clauses, complete station sequence, carrier inventory, negative cases, or replication scoring procedure.
+- The expansion of `S, M, A, O`; only the stated inequality and its prose gloss survive.
+- Every record’s evidence-body assignment, provenance, AXN, and hash.
+- Every actual relation, its endpoints, and its licensed dimension. The ontology supplies a relation policy, not the instantiated graph.
+- The individual edges connecting joins to *Revelation First*, *Socrates as Orthonym*, and the Historical Logos.
+- Additional correction pairs beyond the one explicitly encoded.
+- A dated occurrence of `reconstruction_marked`, or claim-level assertion-state assignments.
+- The completed author-statement status line.
+- The particular identities and contents of the “January event,” “withholding structures,” “stamping vocabulary,” and several other compressed labels.
+- An objective numerical acceptance score: no item weights or partial-credit rules are supplied.
+
+Some of these omissions are deliberately beyond scope A and are assigned to scope B. The join-edge specificity and incomplete author-status sentence, however, affect information that scope A expressly wants to survive.
+
+## 10. Lines of research and strongest advance/retreat
+
+| Research line | Advances if | Retreats if | Unchanged if |
+|---|---|---|---|
+| Q1: third reversal | Textual loci show passage among I, you, κῆνος, and documented reception shows the reader speaking in her I | The third seat remains only the reader’s position, with no locus where her I sounds from it | The loci are read without a discriminating finding |
+| Q2: writing and reperformance accounts | The writing account is documented at every point claimed by reperformance | Reperformance supplies a documented argument the writing record cannot meet | The accounts are juxtaposed without a discriminating record |
+| Q3: dialect-step conjunction | The conjunction holds when each load-point is checked | A recount removes the step, or Longinus 9–10 adjacency fails to carry the grammar | Only the isolated step is reconfirmed |
+| Q4: priority of jealousy | Each warrant is identified as a declared act at its page | A seated ancient witness joins the lover to the poem through jealousy | Earlier claimants remain unread; Hermann 1816 remains the first warrant seated |
+| Q5: substrate-blind replication | Independent scores realize the stations in attested carriers | The frozen clauses fail on attested carriers | Replications split, leaving one adjudicator’s count with its negatives |
+
+The files do not rank these outcomes. A structural assessment is nevertheless possible:
+
+- Greatest advance: successful independent, substrate-blind replication of the frozen operator, with its negatives preserved. This would move a central mechanism beyond one adjudicator’s count. Q3’s checked conjunction would be a complementary advance in the hard center.
+- Greatest retreat: failure of the frozen clauses on the attested carriers, because it directly challenges the operator’s claimed realization rather than only a peripheral extension.
+- Greatest retreat specifically to the reception audit: a seated ancient witness warranting jealousy. That would contradict an explicit reception-historical premise without, by itself, settling the written-instrument claim.
+- Q1’s failure has a narrower consequence: it retracts the proposed third reversal, not the already distinguished future-reader seat or the first two Sapphic seats.
+
+Source location: `00-kernel.yaml → lines_of_research, symmetric_ledger.combination`.
+
+## Scope A operator assessment
+
+A transparent, provisional scoring convention is to give each of the twelve `must_survive` entries equal weight.
+
+| Scope A requirement | Assessment |
+|---|---|
+| Framework, seed, author, title, byline | Reconstructed |
+| Written-instrument claim | Reconstructed |
+| Two open positions; three seats; third as research | Reconstructed |
+| Five ordered strata and records | Reconstructed |
+| Three clusters; joins; Historical Logos edge | Partial: memberships and edge requirement survive, individual edges do not |
+| Four bodies, rules, three rings | Reconstructed |
+| Three dated state axes | Reconstructed |
+| Original–correction pairs | Reconstructed: one explicit pair |
+| Rival at strength, faces, mechanism, four-body status | Reconstructed |
+| Symmetric ledger, combination, rival admission | Reconstructed |
+| Dated author statements | Substantially reconstructed; one status sentence is truncated |
+| Lines of research | Reconstructed |
+
+Under a conservative binary treatment—crediting ten entries and withholding credit for both incomplete entries—the yield is $$10/12 \approx 0.833$$, below 0.85.
+
+Under equal-weight half credit for each incomplete entry, the yield is $$11/12 \approx 0.917$$, above 0.85.
+
+Thus the back-projection reconstructs the framework substantially, but an unqualified threshold pass is not determined by the supplied acceptance specification. The decisive scoring ambiguity is partial credit. To secure a strict pass without opening records, the two files would need explicit join-edge declarations and a completed author-statement status line.
+

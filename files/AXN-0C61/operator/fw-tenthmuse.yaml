@@ -1,0 +1,71 @@
+# Framework definition draft — The Tenth Muse: Sappho and the Future Reader
+# Byline Rebekah Cranes; the Crimson Hexagonal Archive and Claude (Anthropic) credited.
+id: EA-HK-TENTHMUSE-01
+title: "The Tenth Muse: Sappho and the Future Reader"
+creators: ["Cranes, Rebekah"]
+contributors: ["Crimson Hexagonal Archive", "Claude (Anthropic)"]
+seed: 1270
+rival:
+  id: fw:received-sappho
+  name: the received reading of Sappho 31
+  stated_at_strength: "One reading with two faces, joined by one mechanism (#1752's packet): the jealousy reading, made by declared acts (Hermann's refinxi 1816, Mure 1850, Page 1955) and kept by headings, introductions and classrooms; and the poet as no writer, a pre-writing primary beside Homer, whose survival is the reperformance tradition's and the quoters' — a default never argued directly (the author, 2026-11-08 21:36), its strongest documented statement the reperformance account (Lardinois 2008)."
+rings:   # #1484's tiers, verbs graded to ring
+  - {ring: hard_center, holds: "the transmitted poem, Longinus 9–10, the withholding structures, the stamping vocabulary, Catullus as documented reception"}
+  - {ring: interpretive, holds: "Phaedrus 235c, the tenth Muse (AP 9.506), Diotima, Philo's seal cosmology"}
+  - {ring: outer, holds: "the Josephus seams as structure, lamellae and Magical Papyri as convergence, the Apocalypse as canonization", join: true}
+claims:
+  # the claim, owned (#1484)
+  - {id: tm-1484-logos, record: 1484, ring: hard_center, quote: "a voice that survives its flesh by becoming an inscription that constitutes its receiver"}
+  - {id: tm-1484-substrate, record: 1484, ring: hard_center, quote: "She is turning the color of the substrate."}
+  - {id: tm-1484-prose, record: 1484, ring: hard_center, quote: "The sole witness writes the poem as continuous prose."}
+  - {id: tm-1484-dialect, record: 1484, ring: hard_center, quote: "not significant alone"}
+  - {id: tm-1484-muse, record: 1484, ring: interpretive, quote: "the tradition filed Sappho into that apparatus as a member"}
+  - {id: tm-1484-frame, record: 1484, ring: outer, join: true, quote: "the chain survives on conventional dating and tightens on the program's"}
+  - {id: tm-1484-open, record: 1484, ring: hard_center, quote: "a completion that is itself a prayer, which is to say: open."}
+  - {id: tm-1484-seat, record: 1484, ring: hard_center, quote: "Sappho 31 is bracketed by two open positions."}
+  # the reception that made the rival (#1752)
+  - {id: tm-1752-refinxi, record: 1752, ring: reception, quote: "A conjecture acquires authority twice: first as repaired text, then as evidence about the person supposed to be speaking it."}
+  - {id: tm-1752-closure, record: 1752, ring: reception, quote: "Closure of the text and closure of the reading are separate operations"}
+  - {id: tm-1752-hand, record: 1752, ring: reception, quote: "The jealous Sappho is a condition without a hand: a voice overwhelmed, where antiquity had a maker who selected, bound, wrote and read."}
+  - {id: tm-1752-compulsory, record: 1752, ring: reception, quote: "A reading can become compulsory without becoming uncontested"}
+  - {id: tm-1752-two-accounts, record: 1752, ring: reception, quote: "as two accounts of how her poems lasted"}
+  - {id: tm-1752-granted, record: 1752, ring: reception, quote: "Every part of this is granted."}
+  # the operator (#1494), built without Revelation
+  - {id: tm-1494-witnesses, record: 1494, ring: transmission, quote: "derived from witnesses that do not include Revelation"}
+  # the rival's strongest documented statement (#1548)
+  - {id: tm-1548-footnote, record: 1548, ring: reception, quote: "That sentence carries **one footnote: Lardinois 2008, pp. 79–80**."}
+  # joins
+  - {id: tm-1495-sentence, record: 1495, ring: outer, join: true, quote: "The dangerous sentence is not asserted here."}
+  - {id: tm-626-chain, record: 626, ring: outer, join: true, quote: "Genealogy of scripture: Sappho → Catullus → Josephus → Revelation → Reader."}
+  # the three seats (the author, 2026-11-08 21:46: "the third reversal")
+  - {id: tm-1484-two-seats, record: 1484, ring: hard_center, seat: [I, you], quote: "the frame's verb returns with the speaker in both of its seats — appearing, appeared-to — which is the structure of inscription itself"}
+  - {id: tm-1484-archived-self, record: 1484, ring: interpretive, seat: you, quote: "the speaker's archived self, seen in the act of being read"}
+  - {id: tm-1270-archived-self, record: 1270, ring: interpretive, seat: you, quote: "The Second Person as Text", note: "the heading in the text; the record's description gives it as The Second Person as Archived Self"}
+  - {id: tm-1476-catullus, record: 1476, ring: hard_center, seat: kenos, quote: "the seat of line 1 taken by the reader the deixis had reserved for him"}
+  - {id: tm-1475-taken-up, record: 1475, ring: interpretive, seat: kenos, quote: "She was not finished. She was **taken up**."}
+  - {id: tm-1475-one-voice, record: 1475, ring: interpretive, seat: kenos, quote: "the exact place where the two voices are inscribed as one"}
+  - {id: tm-626-reader-man, record: 626, ring: outer, join: true, seat: kenos, quote: "The reader becomes *that man*."}
+seats:   # Sappho in each position of fr. 31's deixis
+  - {seat: I, name: "the embodied speaking I", warrants: [tm-1484-substrate, tm-1484-two-seats]}
+  - {seat: you, name: "the inscribed you, the archived self", warrants: [tm-1270-archived-self, tm-1484-archived-self, tm-1484-two-seats]}
+  - {seat: kenos, name: "that man — the future reader who takes her up, in whose body she lives again", warrants: [tm-1476-catullus, tm-1475-taken-up, tm-1475-one-voice, tm-626-reader-man]}
+author_statements:
+  - date: "2026-11-08T21:36-05:00"
+    where: in session; first deposited with this kernel
+    text: "i suppose so. its one of those ones where it hasnt really been extensively argued for directly, theres just a vague sense that sappho lumps in with homer as pre-writing primary (and i also believe the iliad and odyssey were written works of one hand). i guess the jealousy reading really does carry a lot of the work of not engineering her own transmission. the overlap of all three strands - sappho plato-aristotle revelation etc - that will be the historical logos hk"
+    status: "the author's assessment (no bounded literature search has been run): the warrant for the R row's statement that literal illiteracy is otherwise unargued, and for the joins edged to the Historical Logos; the belief about the Iliad and Odyssey is recorded as stated and bears on no claim of this kernel."
+  - date: "2026-11-08T21:46-05:00"
+    where: in session; first deposited with this kernel
+    text: "third reversal: sappho as the embodied speaking i, sappho as the inscribed you, but also, inasmuch as the future reader takes up sappho, and shares the life of his body: sappho as that man. the resurrected sappho."
+    status: "the records hold the first two seats as Sappho's (#1270, #1484) and the third as the reader's (#1270, #1476, #626), with one instance of her taken up in another's material (#1475, Longinus's λῆψις); Sappho occupying the third seat, the circulation through all three, is stated here first; it is a proposal and a line of research (Q1), and deposit gives it public provenance without settling it."
+lines_of_research:
+  - id: tm-q-third-reversal
+    title: the third reversal — Sappho in all three seats
+    ask: "whether the deictic structure of fr. 31 carries a circulation of Sappho through its three positions — I, you, κῆνος — beyond projecting an address into the future"
+    read_first: [1270, 1475, 1476, 1484, 626, 1645]
+    advances_if: "the positions are shown to pass into one another at loci of the text (the frame's φαίνεταί μοι … φαίνομαι; the seat ἐνάντιος; λῆψις in Longinus) and in a documented reception where the reader speaks in her I"
+    retreats_if: "the third seat holds only as the reader's position, with no locus where her I sounds from it"
+  - id: tm-q-two-accounts
+    title: two accounts of how her poems lasted
+    ask: "when, and through whom, the poet who reads and writes becomes a voice that sings what overwhelms her (#1752 A.8)"
+    read_first: [1752, 1548, 1749]
