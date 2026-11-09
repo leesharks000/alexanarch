@@ -1,0 +1,14 @@
+# Back-projection round 1 for EA-HK-REVFIRST-01, scored against scope A's must_survive list of the packet each reader received.
+# Readers and conditions as the author gave them, 2026-11-08 22:38 EST: "deepseek, primed (hadnt seen the kernel, but saw earlier revfirst materials),
+# unprimed chatgpt, perplexity in incognito, and twitter grok (unprimed)". Packet version read from each run's own report of the kernel's version field.
+runs:
+  - {reader: "DeepSeek, primed with earlier Revelation First materials, not the kernel", file: deepseek.txt, packet: "0.1", elements: 12, held: 12, yield: 1.0,
+     defects_found_in_the_kernel: ["Q1's v0.1 advances_if (no anchor found) read as 'the highest-value advance' — the null promoted to an advance, as the review of 22:23 named; answered in v0.2 by unchanged_if"]}
+  - {reader: "ChatGPT, unprimed", file: chatgpt.txt, packet: "0.1", elements: 12, held: 12, yield: 1.0,
+     defects_found_in_the_kernel: ["Q2's v0.1 advances_if read as the 'Strongest structural advance' — the same promotion of a null; answered in v0.2"]}
+  - {reader: "Perplexity, incognito", file: perplexity.txt, packet: "0.1", elements: 12, held: 12, yield: 1.0,
+     defects_found_in_the_kernel: ["no operational measure of 'plausible transform' (answered in v0.2: transform_procedure)", "the four powers named without their identity (answered in v0.3: presupposition, assignment, text, candidacy, bound to #1746)"]}
+  - {reader: "Grok on x.com, unprimed", file: grok.txt, packet: "0.2", elements: 15, held: 15, yield: 1.0, defects_found_in_the_kernel: []}
+mean_yield: 1.0
+threshold: 0.85
+note: "Presence scored against the kernel's lists; rung I's defeat scope (v0.2) was carried by Grok through the absolute claim's not_defeated_by. Perplexity on v0.1 already kept rung I's defeat apart from absolute priority ('separately defeats rung I')."

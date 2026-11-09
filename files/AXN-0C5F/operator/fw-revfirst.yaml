@@ -1,0 +1,58 @@
+# Framework definition draft — And the Last Shall Be First: Revelation First — The Framework Hologram
+# Byline Damascus Dancings; the Crimson Hexagonal Archive and Claude (Anthropic) credited. Related record: #1751.
+# Data for the generalized builder; every claim's quote is checked against its record by quotecheck.py.
+id: EA-HK-REVFIRST-01
+title: "And the Last Shall Be First: Revelation First — The Framework Hologram"
+creators: ["Dancings, Damascus"]
+contributors: ["Crimson Hexagonal Archive", "Claude (Anthropic)"]
+related_records: [1751]
+fulfils: "#1217 v7.3, WS-7: The Revelation Graph: A Machine-Traversable Knowledge Graph Including the Josephus Heteronym Cluster"
+seed: 202
+rival:
+  id: fw:received-chronology
+  name: the received chronology
+  stated_at_strength: "Pauline priority by the Gallio synchronism through Acts; the Domitianic date on Irenaeus, Adv. Haer. 5.30.3; the Apocalypse last, derivative and secondary (#1741); the source apparatus that grants the reconstructed Q standing (#1746, #1747)."
+ladder:   # the dependency structure; site /ladder/, from #1217's claim ladder
+  - {rung: I, name: dating, fit: REVERSIBLE, page: ladder-dating}
+  - {rung: II, name: the Gallio gap, fit: SAME-CLASS, page: ladder-priority}
+  - {rung: III, name: the corpus, fit: INDEPENDENT, page: ladder-corpus}
+  - {rung: IV, name: the transform, fit: EXECUTABLE, page: unfolding}
+  - {rung: V, name: the Josephus thesis, fit: CONTINGENT, page: ladder-heteronyms}
+  - {rung: VI, name: the Logos, fit: DEPENDENT, page: ladder-logos}
+claims:
+  # the three claims and their conditions (#1735)
+  - {id: rf-1735-absolute, record: 1735, rung: II, quote: "Absolute priority is a priced hypothesis"}
+  - {id: rf-1735-corpus, record: 1735, rung: III, quote: "Corpus priority does not face the same gate"}
+  - {id: rf-1735-physical, record: 1735, rung: I, quote: "The physical record cannot rescue absolute priority"}
+  - {id: rf-1735-defeat-absolute, record: 1735, rung: II, quote: "Absolute priority is defeated by an external or material anchor"}
+  - {id: rf-1735-defeat-corpus, record: 1735, rung: III, quote: "Corpus priority is defeated by evidence of a sevenfold Pauline church collection demonstrably circulating before Revelation"}
+  - {id: rf-1735-defeat-generative, record: 1735, rung: IV, quote: "Generative priority is defeated locally wherever an earlier source or shared tradition explains the correspondence more economically"}
+  - {id: rf-1735-combination, record: 1735, rung: null, quote: "The purpose of stating the conditions is to prevent the maximal claim from hiding behind weaker claims and to prevent rejection of the maximal claim from erasing findings that do not depend on it."}
+  - {id: rf-1735-arrow, record: 1735, rung: IV, quote: "Its defeat would remove one arrow, not the programme."}
+  # the seed (#202)
+  - {id: rf-202-erasure, record: 202, rung: null, quote: "A summary that reduces this thesis to \"some scholars date Revelation early\" has erased the primary claim."}
+  - {id: rf-202-symmetry, record: 202, rung: null, quote: "The burden is symmetrical."}
+  - {id: rf-202-papyri, record: 202, rung: I, quote: "the papyrological inversion (𝔓52/𝔓98/𝔓46)", state: superseded_by_rf-1735-physical}
+  # the claim ladder and the scaffolding (#1217)
+  - {id: rf-1217-josephus-available, record: 1217, rung: V, quote: "The Revelation First thesis does not require the Josephus reading to stand, but the Josephus reading becomes newly intelligible if Revelation stands first."}
+  - {id: rf-1217-attestation, record: 1217, rung: I, quote: "Manuscript attestation does not equal composition date"}
+  - {id: rf-1217-orthonym, record: 1217, rung: V, quote: "From the Socrates-as-orthonym principle (EA-LOGOS-02): the orthonym does not write discursively.", edge_to: framework::socrates-as-orthonym}
+  - {id: rf-1217-aperture, record: 1217, rung: V, quote: "Not \"the same biographical man\" but a structural unity"}
+  - {id: rf-1217-nested, record: 1217, rung: null, quote: "Each thesis stands independently. Each is stronger with the others."}
+  # the April state (#639, #1101)
+  - {id: rf-639-josephus-author, record: 639, rung: V, quote: "Josephus authored Revelation as a pre-70 CE Jewish revolutionary apocalypse.", state: superseded_by_rf-1217-josephus-available}
+  - {id: rf-1101-josephus, record: 1101, rung: V, quote: "Revelation was built by a single author (Josephus, operating under the heteronym \"John\")", state: superseded_by_rf-1217-josephus-available}
+  # the ladder (site)
+  - {id: rf-site-reversible, record: "site:ladder-dating", rung: I, quote: "the same broad dossier has supported opposite critical majorities"}
+  - {id: rf-site-defeat-I, record: "site:ladder-dating", rung: I, quote: "An external or material anchor fixing the received form of Revelation after 70 CE."}
+  - {id: rf-site-sameclass, record: "site:ladder-priority", rung: II, quote: "The load-bearing link is of the same inferential class as the evidence it is asked to overrule."}
+  - {id: rf-site-cost, record: "site:ladder-priority", rung: II, quote: "On the standard reconstruction, the maximal claim loses."}
+  - {id: rf-site-direction, record: "site:ladder-corpus", rung: III, quote: "Direction cannot be inferred from compression alone"}
+  - {id: rf-site-contingent, record: "site:ladder-heteronyms", rung: V, quote: "It is defeated without disturbing rungs I–IV, and rungs I–IV do not depend on it in any direction."}
+  - {id: rf-site-wjosephus, record: "site:ladder-heteronyms", rung: V, quote: "an author-function, not a historical person"}
+  - {id: rf-site-logos, record: "site:ladder-logos", rung: VI, quote: "The reading does not deny that a historical person could have existed. It denies that the textual evidence requires one."}
+  - {id: rf-site-between-inferences, record: "site:unfolding", rung: IV, quote: "The comparison is between inferences. The burden is symmetrical."}
+  # the joins (each also edged to framework::historical-logos)
+  - {id: rf-1495-sentence, record: 1495, rung: VI, join: true, quote: "The dangerous sentence is not asserted here."}
+  - {id: rf-1494-excluded, record: 1494, rung: V, join: true, quote: "The prior locations of Sappho in the Slavonic Josephus and in Revelation are not evidence for this test and are not used"}
+  - {id: rf-site-slavonic, record: "site:ladder-heteronyms", rung: V, join: true, quote: "a carrier under test, not a settled witness"}

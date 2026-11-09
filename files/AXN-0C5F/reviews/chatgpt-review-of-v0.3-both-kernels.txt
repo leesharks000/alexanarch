@@ -1,0 +1,91 @@
+**Both now preserve the arguments substantially better. I would make a bounded repair pass before freezing them, rather than initiate another research round.** The remaining issues concern what the files cause a reader or machine to reconstruct.
+
+I checked all twelve embedded file hashes in each package, accounting for the facsimile’s added final newline in two JSON blocks. The manifests match. All graph endpoints resolve internally, claim targets match their record hashes, and there are no duplicate node identifiers. That covers **57 claims and 149 edges in Revelation First; 39 claims and 108 edges in The Tenth Muse**. I also checked selected source passages where the encoding raised substantive questions.
+
+**Revelation First**
+
+**1. The correction targeting `rf-1101-identity` appears to withdraw the wrong proposition.**
+
+Its quotation—“This is not analogy. It is structural identity”—concerns **Revelation’s identity with the Space Ark architecture**. The source explicitly distinguishes its operative architecture from its historical reconstruction claims. It says the runtime does not require those historical hypotheses. [Alexanarch](https://www.alexanarch.org/s/records/1101/?utm_source=chatgpt.com)
+
+The kernel instead treats that sentence as an authorship state, then marks it withdrawn by the later bounded Josephus reading. That risks erasing the operative claim while supposedly correcting a historical attribution.
+
+Split these:
+
+- Revelation–Space Ark structural identity.
+- Josephus as its historical composing author.
+- Any further proposed identity among Johannine author-functions.
+
+Apply the later qualification or withdrawal to the appropriate proposition. A short exact quotation has preserved the words while losing their referent here.
+
+**2. Q6 currently mixes an explanatory test with an audit of evidentiary standing.**
+
+Showing that Q’s order is assigned by reconstruction addresses how a hypothetical source acquires standing. It does not itself show that Revelation explains the observed shared order of Matthew and Luke.
+
+Keep both investigations:
+
+- **Source-fit:** what ordering does Revelation explain, and what remains unexplained?
+- **Reception audit:** how is Q granted that explanatory capacity, and on what warrant?
+
+A result in the second should not automatically raise the first’s grade. Your eight-requirement accounting already gives you the means to preserve that distinction.
+
+The earlier problems are otherwise meaningfully repaired. Corpus priority now carries its three separate senses and statuses; the transform procedure has declared operations and local failures; null searches no longer automatically promote the thesis.
+
+Also, **Rung I’s local scope is now explicit enough to resolve my earlier objection**: its post-70 defeat condition addresses its dating claim, while absolute priority requires an ordering. Preserve that distinction in traversal outputs, including `defeat_scope`.
+
+**The Tenth Muse**
+
+**3. The third reversal is correctly bounded in the summary, but that status does not survive graph-only entry.**
+
+`seat:kenos` is named:
+
+> “the future reader who takes her up, in whose body she lives again”
+
+Its node supplies earlier warrants but no field identifying **Sappho’s occupation of that seat as the new proposal**. The ontology also defines every `Seat` as a position “that Sappho occupies.” A reader entering through the graph can therefore receive the new interpretation as already established within the earlier records.
+
+Give the third reversal its own dated claim object, bound to your author statement, with explicit links to its earlier supports and Q1. Carry that status onto the seat node and the Revelation kernel’s corresponding external node.
+
+Replace “until deposited” with a condition that survives deposit. Depositing the proposal establishes its public provenance; the research question remains open afterward.
+
+**4. Separate literacy, performance, and control over transmission.**
+
+The rival node moves among:
+
+- Sappho unable to write;
+- Sappho composing for oral performance;
+- writing serving reperformance;
+- Sappho not engineering her own persistence.
+
+Those are different propositions. The quoted reperformance account expressly allows writing-down. It therefore cannot, without another argument, warrant literal illiteracy.
+
+Your stronger argument concerns **the displacement of the maker’s agency onto later transmitters**. Preserve that exact target. Likewise, the jealousy and non-writing accounts can reinforce one another through the mechanism you identify without every instance of either logically entailing the other.
+
+The dated author statement about the non-writing account being insufficiently argued is useful provenance. Keep its status as your assessment distinct from the results of a bounded literature search.
+
+**Shared implementation repairs**
+
+**5. Evidence-body assignment is not consistently claim-local.**
+
+The ledgers use claims in bodies different from those assigned in `03-claims.jsonl`. Examples:
+
+| Claim | Assigned body | Ledger use |
+|---|---|---|
+| `rf-1735-archetypal` | Chronological | Corpus-literary |
+| `rf-1735-arrow` | Chronological | Generative |
+| `rf-1217-aperture` | Chronological | Heteronymic |
+| `tm-1484-substrate` | Philological | Interpretive |
+| `tm-1476-catullus` | Philological | Transmission |
+
+A record can contribute to several bodies. Encode the claim’s particular role—or explicit multiple roles—rather than inheriting the record’s principal classification. Otherwise a body-specific traversal can omit its own load-bearing material. Extend the warrant check to **both sides of every ledger**, not only the rival.
+
+**6. The dependency rule and the graph’s licensing policy need to agree.**
+
+Revelation VI depends on V, but their edge is `derived_from`, which licenses no state transition. A processor following that policy will not necessarily carry V’s defeat into VI.
+
+Encode that consequence using the archive’s appropriate dependency mechanism. The decisive check is concrete: change V’s standing and confirm that VI updates while I–IV remain unaffected.
+
+**7. Finish the JSON-LD interoperability.**
+
+The contexts do not declare identifier-valued properties such as `source` and `target` as node references. Their string values consequently do not acquire identifier semantics merely because they resemble node IDs. Add explicit references or context coercion, and reconcile cross-kernel proxy identifiers with their canonical nodes. W3C specifies the relevant `@type: @id` mechanism. [w3.org](https://www.w3.org/TR/json-ld11/?utm_source=chatgpt.com)
+
+These are finite repairs. **The main achievement is already present: both kernels preserve force, development, contrary findings, and routes into further work.** Before deposit, make the claim records, graph nodes and dependency behavior carry those distinctions as faithfully as the governing prose does.

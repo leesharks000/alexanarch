@@ -1,0 +1,27 @@
+id: EA-HK-REVFIRST-01/traversal
+entry: Any record, surface page, rung, claim or capture; the reader climbs node → claims → relations → body, rung and stratum → the kernel.
+modes:
+  whole:
+    must_return:
+    - INV-1 to INV-7
+    - the current state on each axis with its record
+    - the six rungs with their fits
+  rung:
+    input: a rung
+    must_return:
+    - its claim
+    - its fit
+    - its defeat condition
+    - what depends on it and what does not
+  historical:
+    input: a date
+    must_return:
+    - the states in force on that date
+    - only claims introduced on or before it
+    must_not: attribute a later state to an earlier record
+  join:
+    input: a join
+    must_return:
+    - its role here
+    - its role in the other kernel
+    - its edge to the Historical Logos

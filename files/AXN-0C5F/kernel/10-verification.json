@@ -1,0 +1,157 @@
+{
+ "kernel": "EA-HK-REVFIRST-01",
+ "version": "1.0",
+ "structural_tests": {
+  "T1 records resolve": {
+   "pass": true,
+   "detail": "45 records, 7 surface pages; stale: []"
+  },
+  "T2 quotations bind": {
+   "pass": true,
+   "detail": "59 claims; unbound: []"
+  },
+  "T3 relations in policy": {
+   "pass": true,
+   "detail": "12 evidentiary edges; off-policy: []"
+  },
+  "T4 introductions established or marked": {
+   "pass": true,
+   "detail": "unresolved and marked: ['rf-site-reversible', 'rf-site-defeat-I', 'rf-site-sameclass', 'rf-site-cost', 'rf-site-direction', 'rf-site-contingent', 'rf-site-wjosephus', 'rf-site-logos', 'rf-site-between-inferences', 'rf-site-slavonic', 'rv-site-irenaeus', 'rv-site-reception-memory', 'rv-site-gallio', 'rv-site-collection', 'rv-1746-powers', 'rv-1741-separate', 'rv-site-redundancy', 'rf-203-available', 'rf-site-early-not-first', 'rf-site-every-time']"
+  },
+  "T6 failures per body": {
+   "pass": true,
+   "detail": {
+    "D": 4,
+    "C": 1,
+    "G": 2,
+    "R": 3,
+    "H": 3
+   }
+  },
+  "T7 states ordered and bound": {
+   "pass": true,
+   "detail": {
+    "priority": [
+     "2026-04-08 rec:639 first_in_every_respect",
+     "2026-06-14 rec:202 first_not_early",
+     "2026-11-03 rec:1735 three_claims: absolute priced, corpus a finding, generative a programme"
+    ],
+    "authorship": [
+     "2026-04-08 rec:639 josephus_author",
+     "2026-04-09 rec:1101 single_author_josephus_as_john",
+     "2026-06-14 rec:203 available_reading",
+     "2026-06-17 rec:1217 available_reading_not_first_burden"
+    ],
+    "generation": [
+     "2026-06-14 rec:202 seed_text",
+     "2026-11-03 rec:1735 reversible_arrows"
+    ]
+   }
+  },
+  "T8 joins edged to the Historical Logos": {
+   "pass": true,
+   "detail": "10 joins; missing: []"
+  },
+  "T9 captures resolve": {
+   "pass": true,
+   "detail": "20 captures; unresolved: []"
+  },
+  "T11 every ledger warrant, both sides, carries its row's body claim-locally": {
+   "pass": true,
+   "detail": {
+    "mismatched": [],
+    "graph_claim_bodies_differ": []
+   }
+  },
+  "T14 endpoints declared": {
+   "pass": true,
+   "detail": "153 edges; undeclared: []"
+  },
+  "T15 lines of research posed and bounded": {
+   "pass": true,
+   "detail": "9 questions; failed: []"
+  },
+  "T17 the symmetric ledger: one question, both frameworks, every body": {
+   "pass": true,
+   "detail": {
+    "frameworks": [
+     "revelation_first",
+     "received_chronology"
+    ],
+    "failed": []
+   }
+  },
+  "T18 dependency propagates as the ladder states": {
+   "pass": true,
+   "detail": {
+    "propagated": {
+     "rung:I": [
+      "rung:I"
+     ],
+     "rung:II": [
+      "rung:II"
+     ],
+     "rung:III": [
+      "rung:III"
+     ],
+     "rung:IV": [
+      "rung:IV"
+     ],
+     "rung:V": [
+      "rung:V",
+      "rung:VI"
+     ],
+     "rung:VI": [
+      "rung:VI"
+     ]
+    },
+    "declared": {
+     "rung:I": [
+      "rung:I"
+     ],
+     "rung:II": [
+      "rung:II"
+     ],
+     "rung:III": [
+      "rung:III"
+     ],
+     "rung:IV": [
+      "rung:IV"
+     ],
+     "rung:V": [
+      "rung:V",
+      "rung:VI"
+     ],
+     "rung:VI": [
+      "rung:VI"
+     ]
+    }
+   }
+  },
+  "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
+   "pass": true,
+   "detail": {
+    "edges": 153,
+    "nodes": 157,
+    "failed": []
+   }
+  }
+ },
+ "integrity": {
+  "00-kernel.yaml": true,
+  "01-ontology.yaml": true,
+  "02-graph.jsonld": true,
+  "03-claims.jsonl": true,
+  "05-temporal.jsonl": true,
+  "06-questions.yaml": true,
+  "07-captures.jsonl": true,
+  "08-traversal.yaml": true,
+  "09-tests.yaml": true,
+  "09b-back-projection-prompt.md": true
+ },
+ "not_checked": [
+  "whether a reading is right",
+  "whether a relation's warrant is sufficient",
+  "reconstructive validity by a reader (v1.0)"
+ ]
+}

@@ -1,0 +1,190 @@
+# Back-projection v1.0 for EA-HK-REVFIRST-01 (scope A) — reader's reconstruction
+
+Read from `00-kernel.yaml` and `01-ontology.yaml` alone. Nothing opened; nothing searched. File lines cited by their key paths within the two files.
+
+---
+
+## (1) Framework, seed, author, kernel title, byline
+
+- **Framework:** Revelation First.
+- **Seed record:** `rec:202`, AXN `AXN:0349.GOVERNANCE.🐝□🌸🐝🪧⏰` (`00-kernel.yaml:framework.canonical_record`, `framework.axn`).
+- **Author:** Lee Sharks, ORCID `0009-0000-1599-0703` (`framework.author`, `framework.orcid`). The framework's site is `https://www.revelationfirst.com/` (`framework.site`).
+- **Kernel title:** *And the Last Shall Be First: Revelation First — The Framework Hologram* (`00-kernel.yaml:title`).
+- **Byline:** Damascus Dancings (`00-kernel.yaml:creators`); contributors named as the Crimson Hexagonal Archive and Claude (Anthropic) (`contributors`). The kernel states it fulfils `#1217 v7.3, WS-7: The Revelation Graph` (`fulfils`) and relates to `rec:1751` (`related_records`).
+
+---
+
+## (2) The three claims, kept apart, and how each is defeated
+
+From `compression_survival_summary` and `symmetric_ledger.combination` (both files):
+
+- **Absolute compositional priority** — a *priced hypothesis*. Defeated by an external or material anchor fixing the received form of Revelation **after** 70 CE (rung I defeat), or by an independent, external or material anchor (not the corpus's self-narrated chronology) placing the composition of **any** Pauline letter **before** the earliest plausible date of Revelation's received form (rung II defeat). `01-ontology.yaml:rungs[0].defeat`, `rungs[1].defeat`.
+- **Corpus priority** — does not face the chronological gate. Defeated by evidence of a sevenfold Pauline church collection demonstrably circulating **before** Revelation, or by a persuasive demonstration that Revelation's number, order and single-book architecture depend on such a collection. `rungs[2].defeat`.
+- **Generative priority** — a *research programme executed arrow by arrow*. Defeated **locally**: identify New Testament passages that cannot be derived from Revelation through any plausible transform — those are the counterevidence. `rungs[3].defeat`.
+
+`INV-2` (`00-kernel.yaml:invariants[1]`) holds the three apart: the maximal claim does not hide behind the weaker, and its rejection does not erase findings that do not depend on it (`#1735 §VIII`).
+
+---
+
+## (3) Six rungs with fits and defeat conditions; which fall without the others
+
+From `01-ontology.yaml:rungs` and `00-kernel.yaml:topology.rungs`:
+
+| Rung | Name | Fit | Body | Defeat condition (condensed) |
+|---|---|---|---|---|
+| I | The reversed consensus (dating) | REVERSIBLE | D | External or material anchor fixing Revelation's received form after 70 CE |
+| II | The Gallio gap (Pauline priority) | SAME-CLASS | D | Independent, external/material anchor (not the corpus's self-narrated chronology) placing a Pauline letter before Revelation's earliest plausible date |
+| III | The first corpus | INDEPENDENT | C | A pre-Revelation sevenfold Pauline collection, or a demonstration that Revelation's architecture depends on one |
+| IV | The midrashim transform | EXECUTABLE | G | NT passages that cannot be derived from Revelation through any plausible transform |
+| V | The Josephus thesis | CONTINGENT | H | Contingent by construction; also defeated by showing ordinary multiple authorship is more economical |
+| VI | The permanent incarnation (the Logos) | DEPENDENT | H | Depends on V |
+
+**Which fall without the others:** `INV-3` (`00-kernel.yaml:invariants[2]`): "Rungs V and VI are defeated without disturbing rungs I–IV (site)." The `rungs[4].quote` and `rungs[5].quote` in `01-ontology.yaml` say the same: V is "defeated without disturbing rungs I–IV"; VI "Depends on V. Defeated without disturbing rungs I–IV."
+
+---
+
+## (4) Operations the framework forbids, with the file line
+
+From `00-kernel.yaml:litmus.forbidden_operation`, `00-kernel.yaml:invariants[0]` (`INV-1`), and `01-ontology.yaml:negative_edges`:
+
+- **Early dating (as the thesis)** — `invariants[0]` (`INV-1`: "First is not early: a summary that reduces the thesis to early dating has erased the primary claim"), and `negative_edges[0]` ("early dating (as the thesis)").
+- **Preterism** — `litmus.forbidden_operation` and `negative_edges[1]`.
+- **Dispensationalism** — `negative_edges[2]`.
+- **Jesus-myth thesis** — `litmus.forbidden_operation` and `negative_edges[3]`.
+- **Piso hypothesis** — `litmus.forbidden_operation` and `negative_edges[4]`.
+- **Conspiracy** — `negative_edges[5]`.
+- **Unnamed "proponents"** — `litmus.forbidden_operation` ("…or as held by unnamed 'proponents'") and `negative_edges[6]`.
+- **The Apocalypse as last** — `negative_edges[7]`.
+
+The disambiguations in `01-ontology.yaml:disambiguations` sharpen the same lines: `first` = compositional priority, kept apart from early dating; `midrashim transform` = a structural-genetic mapping, distinct from rabbinic Midrash; `Josephus thesis` = an available heteronymic reading of NT author-functions, not the Piso hypothesis and not the Jesus-myth thesis.
+
+---
+
+## (5) States on each axis with dates and records
+
+From `00-kernel.yaml:topology.rungs[].states` and `01-ontology.yaml:state_axes`:
+
+**Priority axis**
+- 2026-04-08 · rec:639 · `first_in_every_respect` · warrant `rf-639-first`
+- 2026-06-14 · rec:202 · `first_not_early` · warrant `rf-202-erasure`
+- 2026-11-03 · rec:1735 · `three_claims: absolute priced, corpus a finding, generative a programme` · warrant `rf-1735-absolute`
+
+**Generation axis**
+- 2026-06-14 · rec:202 · `seed_text` · warrant `rf-202-seed`
+- 2026-11-03 · rec:1735 · `reversible_arrows` · warrant `rf-1735-arrows`
+
+**Authorship axis**
+- 2026-04-08 · rec:639 · `josephus_author` · warrant `rf-639-josephus-author`
+- 2026-04-09 · rec:1101 · `structural_identity` · warrant `rf-1101-identity`
+- 2026-06-14 · rec:203 · `available_reading` · warrant `rf-203-available`
+- 2026-06-17 · rec:1217 · `available_reading_not_first_burden` · warrant `rf-1217-josephus-available`
+
+The vocabulary of each axis is declared in `01-ontology.yaml:state_axes` (priority, generation, authorship, plus assertion and instrument axes).
+
+---
+
+## (6) Topology: strata, clusters, joins, five bodies with rules
+
+**Seven strata, latest first** (`00-kernel.yaml:topology.strata_from_latest`):
+
+- **S1-standing-audited** — The evidentiary standing audited (November) — 1735, 1737, 1740, 1741, 1744, 1746, 1747.
+- **S2-stones** — Two lists of stones (September) — 1592.
+- **S3-upstream-and-test** — Foldings in: the upstream and the sealed test (August) — 1493, 1494, 1495, 1510, 1511, site:upstream.
+- **S4-unfolding-and-ladder** — Foldings out and the argument ladder (July) — 1412, 1414, 1416, 1420, site:unfolding, site:ladder-dating, site:ladder-priority, site:ladder-corpus, site:ladder-heteronyms, site:ladder-logos.
+- **S5-thesis-surfaced** — First is not early: the thesis surfaced, the work plan, the Josephus thesis bounded (June) — 202, 830, 1025, 1217, 1231, 860, 847, 1032, 203, 1226, 837, 861, 165.
+- **S6-space-ark** — The Space Ark and the Logos (March–April) — 563, 625, 626, 636, 638, 639, 642, 644, 1101, 1350.
+- **S7-seed-room** — The Revelation Room (January) — 407, 410.
+
+**Three clusters** (`00-kernel.yaml:topology.clusters`):
+- **chronology** — 202, 830, 1025, 1217, 1735, 1737, 1741, 1746, 1747, site:ladder-dating, site:ladder-priority, site:ladder-corpus.
+- **generation** — 407, 410, 1414, 1416, site:unfolding, 1747, 165, 642.
+- **heteronymy** — 203, 1226, 837, 861, 1412, 636, 639, 1101, 625, 626, site:ladder-heteronyms, site:ladder-logos, 1510.
+
+**Joins** (`00-kernel.yaml:topology.joins`): 626, 1484, 1493, 1494, 1495, 1510, 1511, site:upstream, 1592, 828. Each join is edged to the Historical Logos: `INV-7` (`invariants[6]`) — "The overlap with Sappho and with Socrates as Orthonym is carried by joins, each edged to the Historical Logos" — and `01-ontology.yaml:rungs[5].joins: framework::historical-logos`.
+
+**Five bodies with their rules** (`01-ontology.yaml:evidence_bodies`, matching `00-kernel.yaml:symmetric_ledger.rows`):
+
+- **D — chronological.** Rule **RD:** only an external or material anchor dates a composition; the corpus's self-narrated chronology and reception memory do not (`#1735 §VIII`; site rung I).
+- **C — corpus-literary.** Rule **RC:** a shared form locates a relation; direction is not inferred from compression alone (site rung III).
+- **G — generative.** Rule **RG:** an arrow is defeated locally where an earlier source or shared tradition explains the correspondence more economically (`#1735 §VIII`).
+- **R — reception-historical.** Rule **RR:** a reception establishes how the books were received and what standing each was granted; it establishes nothing of either framework's truth (`#1741`; `#1746`).
+- **H — heteronymic.** Rule **RH:** an author-function reading is defeated by explanatory redundancy, where ordinary multiple authorship explains the phenomena more economically (site rung V).
+
+---
+
+## (7) Corrections as original–correction pairs
+
+From `00-kernel.yaml:topology.rungs[].corrections` (and matching the priority/authorship states of (5)):
+
+- `claim:rf-202-papyri` → `claim:rf-1735-physical` · relation **rebuts**.
+- `claim:rf-639-josephus-author` → `claim:rf-1217-josephus-available` · relation **rebuts**.
+- `claim:rf-1101-identity` → `claim:rf-1217-josephus-available` · relation **rebuts**.
+
+The three pairs correspond to the three moves: from *first in every respect* (April) to *three claims priced and conditioned* (November) on the priority axis (the Papyri→Physical correction); from *Josephus author* (April) to *available reading not first burden* (June) on the authorship axis (two corrections); and the structural-identity claim brought under the same correction.
+
+The claim texts themselves are named, not quoted, in these two files (see (9)).
+
+---
+
+## (8) Received chronology: stated at strength, its status on every body, symmetric ledger
+
+**Stated at strength** (`compression_survival_summary`): *"the received chronology — Pauline priority by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied."*
+
+**Its status on every body** (from `00-kernel.yaml:symmetric_ledger.rows.*.received_chronology`, each bound to its warrants):
+
+- **D (chronological):** *Not established by an external or material anchor.* The synchronism dates Gallio and reaches 1 Thessalonians only through Acts (rung II); the Irenaean anchor is a reception memory and not an inscriptional date (rung I). Warrants: `rv-site-gallio`, `rv-site-irenaeus`, `rv-site-reception-memory`.
+- **C (corpus-literary):** *No first-century sevenfold Pauline collection is evidenced*, by the concession of a Pauline-priority account (rung III). Warrant: `rv-site-collection`.
+- **G (generative):** the genre objection explains the letters' *missing circumstances* and not their Christian forms' *missing ancestors* (`#1735 §VI.2`); Revelation against Q's requirements is graded, three met (`#1747`). The *derivative standing is a reception* (`#1741`), not a demonstrated direction. Warrants: `rv-1735-genre`, `rf-1747-grades`.
+- **R (reception-historical):** the reconstructed sources hold the four powers of evidentiary status and the extant Apocalypse holds none (`#1746`); the reception is documented and is not asked to prove either framework (`#1741`). Warrants: `rv-1746-powers`, `rv-1741-separate`.
+- **H (heteronymic):** *ordinary multiple authorship* stands as the economical account that defeats rung V wherever it explains the phenomena better (site rung V); it is owed as a comparator, not assumed. Warrant: `rv-site-redundancy`.
+
+**The symmetric ledger** (`00-kernel.yaml:symmetric_ledger`):
+
+- **Question:** What does this body give each framework, and what does its rule withhold from both?
+- **Reading instruction:** the reader states the *other* framework's status in the same row, with the same question asked of both. "Inference Against Inference … The burden is symmetrical" (`#202`).
+- **Combination rule:** each of the three claims is judged on its own conditions (`#1735 §VIII`): absolute priority by an external or material anchor; corpus priority by a sevenfold collection before Revelation; generative priority locally, arrow by arrow. The purpose is to prevent the maximal claim from hiding behind the weaker, and to prevent rejection of the maximal claim from erasing findings that do not depend on it. Rungs V and VI are defeated without disturbing I–IV.
+- **Rival-admission rule:** a further chronology enters as a rival when it names an **external or material anchor** (RD) or a **documented corpus** (RC); a chronology only *logically possible* is a form of the received chronology and carries its status.
+- **Evaluation method:** an arrow tested at its loci (the seed in Revelation, the elaboration elsewhere, the common antecedent sought); an anchor at its object; a standing at the source theory that granted it; a proposed investigation names what the existing ones leave unresolved, by line of research.
+- **Object of the kernel:** the kernel succeeds when Revelation First can be rebuilt from it with each claim at its rung, grain and date; whether Revelation is first is the framework's own question, carried in the ledger and in the lines of research.
+
+---
+
+## (9) What the two files leave the reader unable to reconstruct
+
+The two files reconstruct the **architecture** of the framework, not its **evidentiary content**:
+
+- **The claim texts.** The kernel names claims (`claim:rf-202-papyri`, `claim:rf-1735-physical`, `claim:rf-639-josephus-author`, `claim:rf-1217-josephus-available`, `claim:rf-1101-identity`) but does not quote them; their quotations, anchors and hashes would be in `03-claims.jsonl`, which is not among the two files.
+- **The warrants.** `rf-639-first`, `rf-202-erasure`, `rf-1735-absolute`, `rf-1735-physical`, `rf-1735-arrows`, `rf-639-josephus-author`, `rf-1101-identity`, `rf-203-available`, `rf-1217-josephus-available`, `rf-1735-corpus`, `rf-1416-smyrna`, `rf-1747-grades`, `rf-1735-arrow`, `rf-1735-seed`, `rf-830-baseline`, `rf-1217-aperture`, `rf-site-reversible`, `rf-site-direction`, `rf-site-between-inferences`, `rf-site-contingent`, `rf-site-logos` — and their rivals' (`rv-site-gallio`, `rv-site-irenaeus`, `rv-site-reception-memory`, `rv-site-collection`, `rv-1735-genre`, `rv-1741-separate`, `rv-1746-powers`, `rv-site-redundancy`) are **referenced, not defined**. Without them the reader knows a warrant exists for each state and for each ledger row, but not what the warrant says.
+- **Record identities.** Only `rec:202`'s AXN is given (`AXN:0349.GOVERNANCE.🐝□🌸🐝🪧⏰`). The AXNs and hashes of the other 30+ records (1735, 1737, 639, 1101, 1217, 203, 1416, 1746, 1747, 830, and the rest) are not given; a reader cannot resolve a record from the two files alone.
+- **The rival node in full.** `fw:received-chronology` is summarised in one line (`rival`), and its per-body statuses are given in the ledger's rows; but its full node — its type, its edges, its claim text, its own reception standing — is not given. The `02-graph.jsonld` (scope B's third input) would hold it.
+- **Captures.** The captures are mentioned in `#202; #203; #837; captures` (the forbidden-operation line) but not listed; their slugs, dates, surfaces and readings are absent.
+- **Surface-record content.** The seven surface records (`site:upstream`, `site:unfolding`, the five `site:ladder-*` pages) are named by URL fragment; their texts, retrieved pages and hashes are not given. The `rungs[].quote` fields quote *from* them, but the reader cannot verify the quotation against a hashed page.
+- **The `02-graph.jsonld`.** The graph file, with every node and edge, is not among the two files. So the reader cannot verify "every endpoint declared," "every relation with its licensed dimension," or "provenance on every record and surface page" (those are scope B's tests).
+- **Per-record dates.** Stratum labels give the period ("November", "September", "August", "July", "June", "March–April", "January"); the three axes give exact dates for the 9 state-records. But the 30 other records have no exact dates in these two files.
+
+What the two files *do* establish: the framework's name, seed, author, title and byline; the three claims kept apart; the six rungs with fits and defeat conditions; the dependency of V and VI on their own conditions without disturbing I–IV; the seven strata in order with their records; the three clusters and their joins with their edge to the Historical Logos; the five bodies with their rules; the states on the priority, generation and authorship axes with dates and records; the three corrections as original–correction pairs; the received chronology stated at strength with its status on every body; the symmetric ledger with its combination and rival-admission rules; and the eight lines of research. That is the full scope A's `must_survive` list.
+
+---
+
+## (10) Lines of research, and which result most advances / most retreats the framework
+
+**The eight lines** (`00-kernel.yaml:lines_of_research`):
+
+- **Q1-anchor.** Is there an external or material anchor for the composition of any Pauline letter, or for the received form of Revelation? Advances if no anchor is found for either; retreats if an anchor places a Pauline letter before Revelation's received form.
+- **Q2-collection.** Did a sevenfold Pauline church collection circulate before Revelation? Advances if none is evidenced; retreats if one is demonstrated, or if Revelation's architecture is shown to depend on one.
+- **Q3-markedness.** Does the crown-of-life markedness finding survive a wider sweep? Advances if the cluster stays compressed in Revelation, elaborated elsewhere, without a better common antecedent; retreats if a securely earlier attestation reopens the common-source audit.
+- **Q4-direction.** Which way does the work–toil–endurance triad run between Rev 2:2 and 1 Thess 1:3? Advances if a direction test favours expansion from Revelation; retreats if it favours abbreviation from Paul.
+- **Q5-replication.** Does Revelation 12 realise the frozen operator under substrate-blind replication? Advances if independent scores meet the pre-set threshold; retreats if they fall below it.
+- **Q6-shared-order.** Can the extant Apocalypse meet the one requirement it does not meet, the shared order of Matthew and Luke? Advances if the requirement is shown to be *assigned*, not met, by Q as well; retreats if the order is a documented property Revelation cannot supply.
+- **Q7-economy.** Do the phenomena rung V explains have a more economical explanation in ordinary multiple authorship? Advances if the author-function reading is cheaper on a phenomenon; retreats if multiple authorship is cheaper on every phenomenon — rung V is then dropped and I–IV stand.
+- **Q8-historiography.** Is there a sustained modern historical-critical treatment that distinguishes and tests the three levels of priority? Advances if none is found; retreats if one is found, which the record calls "a welcome correction."
+
+**Which result most advances:** I read **Q1-anchor succeeding** (no external or material anchor for either Pauline composition or Revelation's received form) as the highest-value advance, because it is the load-bearing line for the framework's strongest surviving claim — absolute priority as a *priced hypothesis* — and it feeds the D row's status on both sides of the symmetric ledger. **Q5-replication succeeding** is the highest-value advance for the *executable* claim, since it would turn rung IV from a programme into a result. Either would most advance; the question of which is "most" depends on whether the framework's centre of gravity is chronological or generative, and the kernel places both at the priced hypothesis (priority) and the executed arrow (generation) respectively.
+
+**Which result most retreats:** I read **Q1-anchor retreating** (an external or material anchor placing a Pauline letter before Revelation's received form) as the deepest retreat, because it defeats absolute priority at rung I/II on the framework's own stated condition. **Q7-economy retreating** (multiple authorship cheaper on every phenomenon) is the next-deepest: it drops rung V and, with it, rung VI — but not I–IV, which the kernel explicitly keeps standing (`INV-3`, `rungs[4].defeat`, `rungs[5].defeat`). So Q1 is where the framework's absolute claim lives or dies; Q7 is where its contingent claim does.
+
+---
+
+## Statement on the reconstruction
+
+The two files reconstruct scope A in full: the framework's identity, its three claims, its six rungs, its dependency structure, its seven strata, three clusters, joins with their Historical-Logos edge, five bodies with rules, three axes with states and dates, three corrections, the received chronology at strength with its per-body status, the symmetric ledger with combination and rival-admission rules, and the eight lines of research. What they do not reconstruct is the evidentiary content (claim texts, warrants, captures, surface-record pages, `02-graph.jsonld`, per-record hashes and AXNs other than `rec:202`'s). Scope A's `must_survive` list is met; scope B's additional elements (every relation's licensed dimension, every endpoint, provenance on every record and surface page) are not, because `02-graph.jsonld` is not among the two files. The framework's own object of the kernel — "whether Revelation is first is the framework's own question, carried in this ledger and in the lines of research" — is consistent with what the two files establish: the architecture, not the verdict.
