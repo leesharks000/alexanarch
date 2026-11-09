@@ -1,0 +1,163 @@
+id: EA-HK-REVFIRST-01/ontology
+classes:
+  Framework: a named argument with a seed record and an author
+  Record: an archive deposit, by AXN and hash
+  SurfaceRecord: a page of the framework's site, by URL and the hash of the page as retrieved
+  Rung: a claim of the argument ladder with its fit, defeat condition and the rungs it depends on
+  Claim: a pointer to a quotation in a record, with typed state (#1529)
+  EvidenceBody: one of five kinds of evidence, each with its rule
+  Capture: a reception event in the Capture Registry
+  Stratum: a period of the framework's development
+  Cluster: a grouping of records
+rungs:
+- '@id': rung:I
+  '@type': Rung
+  name: the reversed consensus (dating)
+  claim: The Domitianic date is not settled
+  fit: REVERSIBLE
+  body: D
+  source: site:ladder-dating
+  quote: the same broad dossier has supported opposite critical majorities
+  defeat: An external or material anchor fixing the received form of Revelation after 70 CE.
+  defeat_scope: 'Defeats rung I''s own claim, that the late date is not settled. It does not by itself defeat first composition: ''Early is not
+    yet first'' (rung I). A post-70 anchor for Revelation constrains the chronology; it defeats absolute priority only in an ordering, where an
+    independent anchor places another New Testament composition earlier (rung II; #1735 §VIII).'
+  depends_on: []
+  located_in: text
+- '@id': rung:II
+  '@type': Rung
+  name: the Gallio gap (Pauline priority)
+  fit: SAME-CLASS
+  body: D
+  source: site:ladder-priority
+  quote: The load-bearing link is of the same inferential class as the evidence it is asked to overrule.
+  defeat: An independent, securely dated anchor — material or external, but not the corpus’s self-narrated chronology — placing the composition
+    of any Pauline letter before the earliest plausible date of Revelation’s received form.
+  depends_on: []
+  located_in: text
+- '@id': rung:III
+  '@type': Rung
+  name: the first corpus
+  fit: INDEPENDENT
+  body: C
+  source: site:ladder-corpus
+  quote: This rung stands whether or not the rungs above it do.
+  defeat: Evidence of a sevenfold Pauline church collection demonstrably circulating before Revelation, or a persuasive demonstration that Revelation’s
+    number, order and single-book architecture depend on such a collection.
+  depends_on: []
+  located_in: text
+- '@id': rung:IV
+  '@type': Rung
+  name: the midrashim transform
+  fit: EXECUTABLE
+  body: G
+  source: site:unfolding
+  quote: The comparison is between inferences. The burden is symmetrical.
+  defeat: 'Identify New Testament passages that cannot be derived from Revelation through any plausible transform: these are the counterevidence.'
+  defeat_scope: '''Any plausible transform'' is bounded by the kernel''s transform_procedure: the declared steps and operations, fixed before
+    the test, with residue shown.'
+  depends_on: []
+  located_in: text
+- '@id': rung:V
+  '@type': Rung
+  name: the Josephus thesis
+  fit: CONTINGENT
+  body: H
+  source: site:ladder-heteronyms
+  quote: It is defeated without disturbing rungs I–IV, and rungs I–IV do not depend on it in any direction.
+  defeat: Contingent by construction. Defeated without disturbing rungs I–IV. It is also defeated by demonstration that the phenomena it explains
+    are more economically explained by ordinary multiple authorship.
+  depends_on: []
+  located_in: text
+- '@id': rung:VI
+  '@type': Rung
+  name: the permanent incarnation (the Logos)
+  fit: DEPENDENT
+  depends_on:
+  - rung:V
+  body: H
+  source: site:ladder-logos
+  quote: The reading does not deny that a historical person could have existed. It denies that the textual evidence requires one.
+  defeat: Depends on V. Defeated without disturbing rungs I–IV.
+  joins: hk:historical-logos
+  located_in: text
+evidence_bodies:
+  D:
+    name: chronological
+    unit: an anchor, a date or a synchronism
+    rule: 'RD: only an external or material anchor dates a composition; the corpus''s self-narrated chronology and reception memory do not (#1735
+      §VIII; site rung I)'
+  C:
+    name: corpus-literary
+    unit: the form of a corpus at composition or at gathering
+    rule: 'RC: a shared form locates a relation; direction is not inferred from compression alone (site rung III)'
+  G:
+    name: generative
+    unit: a transform from a compressed form to an elaborated one, with its residue
+    rule: 'RG: an arrow is defeated locally where an earlier source or shared tradition explains the correspondence more economically (#1735 §VIII)'
+  R:
+    name: reception-historical
+    unit: a filing, a catalogue, a source theory, a commentary or a capture
+    rule: 'RR: a reception establishes how the books were received and what standing each was granted; it establishes nothing of either framework''s
+      truth (#1741; #1746)'
+  H:
+    name: heteronymic
+    unit: an author-function and its positions
+    rule: 'RH: an author-function reading is defeated by explanatory redundancy, where ordinary multiple authorship explains the phenomena more
+      economically (site rung V)'
+state_axes:
+  assertion:
+  - asserted
+  - withdrawn
+  - bears_on_rival
+  priority:
+  - first_in_every_respect
+  - first_not_early
+  - 'three_claims: absolute priced, corpus a finding, generative a programme'
+  generation:
+  - seed_text
+  - reversible_arrows
+  authorship:
+  - josephus_author
+  - single_author_josephus_as_john
+  - available_reading
+  - available_reading_not_first_burden
+  instrument:
+    specification:
+    - specified
+    - preregistered
+    validation:
+    - run
+    reportability:
+    - positive
+    - station_failed
+    replication:
+    - invited
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+ladder_relation:
+  depends_on: 'rung to rung: a rung''s defeat carries to every rung that depends on it (#1217''s claim ladder; site /ladder/). Held on the rungs,
+    outside the claim policy, which it leaves unchanged.'
+negative_edges:
+- early dating (as the thesis)
+- preterism
+- dispensationalism
+- Jesus-myth thesis
+- Piso hypothesis
+- conspiracy
+- proponents (unnamed)
+- the Apocalypse as last
+disambiguations:
+  first: compositional priority, kept apart from early dating (#202)
+  midrashim transform: a structural-genetic mapping, distinct from the rabbinic tradition of Midrash (#202)
+  Josephus thesis: an available heteronymic reading of NT author-functions (#203), not the Piso hypothesis and not the Jesus-myth thesis (#837)

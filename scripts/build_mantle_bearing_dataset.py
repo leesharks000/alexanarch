@@ -118,10 +118,17 @@ def frameworks_section(d):
          "what they rebuild against the graph, at the threshold of #76 (0.85). Tables `frameworks` and `holograms`.", ""]
     for f in fw:
         g, sd = f["governing_record"][0], f["seed_record"][0]
-        st = f["maker_count_state"]
-        L += [f"**{f['name']}** ({f['class']}; {f['author']}; seed [#{sd['deposit']}]({sd['url']}); hologram [#{g['deposit']}]({g['url']})). "
-              f"Its claim at {st['date']}, record #{st['record']}: {st['maker_count'].replace('_', ' ').replace('self dividing', 'self-dividing')}, held as {(st.get('establishment') or '').replace('_', ' ')}. "
-              f"Evidence bodies: {', '.join(f['evidence_bodies'].values())}. The received many-maker reading: {f['rival']['summary']}. "
+        st = f.get("maker_count_state")
+        if st:
+            claim = (f"Its claim at {st['date']}, record #{st['record']}: {st['maker_count'].replace('_', ' ').replace('self dividing', 'self-dividing')}, "
+                     f"held as {(st.get('establishment') or '').replace('_', ' ')}. ")
+            rival = f"The received many-maker reading: {f['rival']['summary']}. "
+        else:   # 1.25: frameworks whose states run on several axes give the current state on each
+            claim = "Its current states: " + "; ".join(f"{ax}, {s['state'].replace('_', ' ')} (#{s['record']}, {s['date']})" for ax, s in (f.get("current_states") or {}).items()) + ". "
+            rival = f"The received reading: {f['rival']['summary']}. "
+        by = f" by {f['byline']}" if f.get("byline") else ""
+        L += [f"**{f['name']}** ({f['class']}; {f['author']}; seed [#{sd['deposit']}]({sd['url']}); hologram [#{g['deposit']}]({g['url']}){by}). "
+              + claim + f"Evidence bodies: {', '.join(f['evidence_bodies'].values())}. " + rival +
               f"Lines of research: {f['lines_of_research']}. Status: {f['status']}.", ""]
     L += ["| item | kind | governing record | hologram | reader rounds | status |", "|---|---|---|---|---|---|"]
     for h in ho:

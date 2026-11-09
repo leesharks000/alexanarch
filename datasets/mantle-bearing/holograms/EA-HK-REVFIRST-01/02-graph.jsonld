@@ -1,0 +1,3388 @@
+{
+ "@context": {
+  "@vocab": "https://www.alexanarch.org/hk/revfirst#",
+  "hk": "https://www.alexanarch.org/hk/",
+  "rec": "https://www.alexanarch.org/s/records/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "sameAs": {
+   "@id": "http://schema.org/sameAs",
+   "@type": "@id"
+  },
+  "claim": "https://www.alexanarch.org/hk/revfirst/claim/",
+  "cap": "https://www.alexanarch.org/hk/revfirst/cap/",
+  "site": "https://www.alexanarch.org/hk/revfirst/site/",
+  "stratum": "https://www.alexanarch.org/hk/revfirst/stratum/",
+  "rung": "https://www.alexanarch.org/hk/revfirst/rung/",
+  "body": "https://www.alexanarch.org/hk/revfirst/body/",
+  "cluster": "https://www.alexanarch.org/hk/revfirst/cluster/",
+  "fw": "https://www.alexanarch.org/hk/revfirst/fw/",
+  "seat": "https://www.alexanarch.org/hk/revfirst/seat/",
+  "stmt": "https://www.alexanarch.org/hk/revfirst/stmt/",
+  "source": {
+   "@type": "@id"
+  },
+  "target": {
+   "@type": "@id"
+  },
+  "via": {
+   "@type": "@id"
+  },
+  "joins": {
+   "@type": "@id"
+  },
+  "canonical_record": {
+   "@type": "@id"
+  },
+  "founding_record": {
+   "@type": "@id"
+  },
+  "proposes": {
+   "@type": "@id"
+  },
+  "posed_by": {
+   "@type": "@id"
+  },
+  "warrants": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "depends_on": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "proposals": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "edges": {
+   "@container": "@set"
+  }
+ },
+ "@id": "hk:revfirst/graph",
+ "@graph": [
+  {
+   "@id": "fw:revelation-first",
+   "@type": "Framework",
+   "canonical_record": "rec:202"
+  },
+  {
+   "@id": "hk:tenthmuse/seat/kenos",
+   "@type": "Seat",
+   "kernel": "EA-HK-TENTHMUSE-01",
+   "local_id": "seat:kenos",
+   "sappho_in_this_seat": {
+    "status": "proposed",
+    "by": "the author, 2026-11-08 21:46",
+    "proposal": "hk:tenthmuse/claim/tm-third-reversal",
+    "line_of_research": "Q1-third-reversal (EA-HK-TENTHMUSE-01)"
+   },
+   "note": "proxy: the same IRI as the node in EA-HK-TENTHMUSE-01's graph",
+   "name": "that man — the future reader who takes her up, in whose body she lives again"
+  },
+  {
+   "@id": "hk:historical-logos",
+   "@type": "PlannedFramework",
+   "founding_record": "rec:625",
+   "note": "planned; its kernel will hold this IRI"
+  },
+  {
+   "@id": "hk:orthonym/fw/socrates-as-orthonym",
+   "@type": "Framework",
+   "canonical_record": "rec:123",
+   "kernel": "EA-HK-ORTHONYM-01 (#1754)",
+   "local_id": "fw:socrates-as-orthonym",
+   "note": "#1754's context declares no prefix for fw:, so its node has no namespaced IRI; this IRI is assigned here for the program and names that node"
+  },
+  {
+   "@id": "fw:received-chronology",
+   "@type": "RivalFramework",
+   "name": "the received chronology",
+   "claim": "Pauline priority by the Gallio synchronism through Acts; the Domitianic date on Irenaeus, Adv. Haer. 5.30.3; the Apocalypse last, derivative and secondary (#1741); the source apparatus that grants the reconstructed Q standing (#1746, #1747).",
+   "stated_at_strength": "Stated with the arguments it already has: the Gallio synchronism, the Irenaean date, the late-twentieth-century consensus, the source apparatus. A reading that reduces it to 'scholars assume Paul came first' is a reduction of it.",
+   "status": {
+    "D": {
+     "text": "the synchronism dates Gallio and reaches 1 Thessalonians only through Acts (site rung II); the Irenaean anchor is a reception memory and not an inscriptional date (site rung I). Not established by an external or material anchor.",
+     "warrants": [
+      "rv-site-gallio",
+      "rv-site-irenaeus",
+      "rv-site-reception-memory"
+     ]
+    },
+    "C": {
+     "text": "no first-century sevenfold Pauline collection is evidenced, by the concession of a Pauline-priority account (site rung III).",
+     "warrants": [
+      "rv-site-collection"
+     ]
+    },
+    "G": {
+     "text": "the genre objection explains the letters' missing circumstances and leaves their Christian forms' missing ancestors unexplained (#1735 §VI.2); Revelation against Q's requirements is graded, three met (#1747). The derivative standing is a reception (#1741), and no direction is demonstrated by it.",
+     "warrants": [
+      "rv-1735-genre",
+      "rf-1747-grades"
+     ]
+    },
+    "R": {
+     "text": "the reconstructed sources hold the four powers of evidentiary status — presupposition, assignment, text and candidacy — and the extant Apocalypse holds none (#1746); the reception is documented and is not asked to prove either framework (#1741).",
+     "warrants": [
+      "rv-1746-four-powers",
+      "rv-1746-powers",
+      "rv-1741-separate"
+     ]
+    },
+    "H": {
+     "text": "ordinary multiple authorship stands as the economical account that defeats rung V wherever it explains the phenomena better (site rung V); it is owed as a comparator, stated wherever it is used.",
+     "warrants": [
+      "rv-site-redundancy"
+     ]
+    }
+   },
+   "rule": "RD–RH apply to both frameworks; the burden is symmetrical (#202; site /unfolding/)."
+  },
+  {
+   "@id": "rung:I",
+   "@type": "Rung",
+   "name": "the reversed consensus (dating)",
+   "claim": "The Domitianic date is not settled",
+   "fit": "REVERSIBLE",
+   "body": "D",
+   "source": "site:ladder-dating",
+   "quote": "the same broad dossier has supported opposite critical majorities",
+   "defeat": "An external or material anchor fixing the received form of Revelation after 70 CE.",
+   "defeat_scope": "Defeats rung I's own claim, that the late date is not settled. It does not by itself defeat first composition: 'Early is not yet first' (rung I). A post-70 anchor for Revelation constrains the chronology; it defeats absolute priority only in an ordering, where an independent anchor places another New Testament composition earlier (rung II; #1735 §VIII).",
+   "depends_on": [],
+   "located_in": "text"
+  },
+  {
+   "@id": "rung:II",
+   "@type": "Rung",
+   "name": "the Gallio gap (Pauline priority)",
+   "fit": "SAME-CLASS",
+   "body": "D",
+   "source": "site:ladder-priority",
+   "quote": "The load-bearing link is of the same inferential class as the evidence it is asked to overrule.",
+   "defeat": "An independent, securely dated anchor — material or external, but not the corpus’s self-narrated chronology — placing the composition of any Pauline letter before the earliest plausible date of Revelation’s received form.",
+   "depends_on": [],
+   "located_in": "text"
+  },
+  {
+   "@id": "rung:III",
+   "@type": "Rung",
+   "name": "the first corpus",
+   "fit": "INDEPENDENT",
+   "body": "C",
+   "source": "site:ladder-corpus",
+   "quote": "This rung stands whether or not the rungs above it do.",
+   "defeat": "Evidence of a sevenfold Pauline church collection demonstrably circulating before Revelation, or a persuasive demonstration that Revelation’s number, order and single-book architecture depend on such a collection.",
+   "depends_on": [],
+   "located_in": "text"
+  },
+  {
+   "@id": "rung:IV",
+   "@type": "Rung",
+   "name": "the midrashim transform",
+   "fit": "EXECUTABLE",
+   "body": "G",
+   "source": "site:unfolding",
+   "quote": "The comparison is between inferences. The burden is symmetrical.",
+   "defeat": "Identify New Testament passages that cannot be derived from Revelation through any plausible transform: these are the counterevidence.",
+   "defeat_scope": "'Any plausible transform' is bounded by the kernel's transform_procedure: the declared steps and operations, fixed before the test, with residue shown.",
+   "depends_on": [],
+   "located_in": "text"
+  },
+  {
+   "@id": "rung:V",
+   "@type": "Rung",
+   "name": "the Josephus thesis",
+   "fit": "CONTINGENT",
+   "body": "H",
+   "source": "site:ladder-heteronyms",
+   "quote": "It is defeated without disturbing rungs I–IV, and rungs I–IV do not depend on it in any direction.",
+   "defeat": "Contingent by construction. Defeated without disturbing rungs I–IV. It is also defeated by demonstration that the phenomena it explains are more economically explained by ordinary multiple authorship.",
+   "depends_on": [],
+   "located_in": "text"
+  },
+  {
+   "@id": "rung:VI",
+   "@type": "Rung",
+   "name": "the permanent incarnation (the Logos)",
+   "fit": "DEPENDENT",
+   "depends_on": [
+    "rung:V"
+   ],
+   "body": "H",
+   "source": "site:ladder-logos",
+   "quote": "The reading does not deny that a historical person could have existed. It denies that the textual evidence requires one.",
+   "defeat": "Depends on V. Defeated without disturbing rungs I–IV.",
+   "joins": "hk:historical-logos",
+   "located_in": "text"
+  },
+  {
+   "@id": "rec:1735",
+   "@type": "Record",
+   "deposit": 1735,
+   "axn": "AXN:0BE9.GENERATIVE.⊕🏗️🎺↙️⛳△",
+   "url": "https://www.alexanarch.org/s/records/1735/",
+   "title": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles",
+   "date": "2026-11-03",
+   "status": "ACTIVE",
+   "version": "v7",
+   "sha256": "96218bdc5498a32f8e8ae62380d0389531ef57d943f9aa274d75930a4ed96923",
+   "creator": "Sigil, Johannes; Dancings, Damascus",
+   "body": "D",
+   "body_secondary": [
+    "C",
+    "G"
+   ],
+   "stratum": "S1-standing-audited",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1737",
+   "@type": "Record",
+   "deposit": 1737,
+   "axn": "AXN:0BFB.GENERATIVE.🏗️🎯⚡🌔🌇🕗",
+   "url": "https://www.alexanarch.org/s/records/1737/",
+   "title": "The Portents Before the Fall: Josephus, Tacitus and the Apocalypse — a groundwork note on relations, with the archive's dates for Revelation (v1.0)",
+   "date": "2026-11-04",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "21551303e46966e0fe303014a9c970d305f975d379a384a25a59af7914617624",
+   "creator": "Sharks, Lee",
+   "body": "D",
+   "body_secondary": [],
+   "stratum": "S1-standing-audited",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1740",
+   "@type": "Record",
+   "deposit": 1740,
+   "axn": "AXN:0C12.DATASET.🚪🔻🌀🔚🌘🌔",
+   "url": "https://www.alexanarch.org/s/records/1740/",
+   "title": "EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory; and the Carriage: Scrivener, Delitzsch, Tregelles, Erasmus 1516)",
+   "date": "2026-11-05",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "24d15ff20703f387ededdd1b83fa8450d8eac3e321987fd0d0eb0313f5bcb365",
+   "creator": "Cranes, Rebekah",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S1-standing-audited",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1741",
+   "@type": "Record",
+   "deposit": 1741,
+   "axn": "AXN:0C15.GENERATIVE.🧪🎨📖🕑⛳🌠",
+   "url": "https://www.alexanarch.org/s/records/1741/",
+   "title": "Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)",
+   "date": "2026-11-05",
+   "status": "ACTIVE",
+   "version": "v1.2",
+   "sha256": "3986416354ea226898935977a1b93031e74332f4707f50626e9c5966f2718b1f",
+   "creator": "Sigil, Johannes",
+   "body": "R",
+   "body_secondary": [
+    "D"
+   ],
+   "stratum": "S1-standing-audited",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1744",
+   "@type": "Record",
+   "deposit": 1744,
+   "axn": "AXN:0C27.DATASET.🎆💫🪐🦋🔎💜",
+   "url": "https://www.alexanarch.org/s/records/1744/",
+   "title": "EA-CORPORA-35 — The Thirty-Fifth Seating: The Making of Q — the Hypothetical Source from Weisse to Streeter, 1838–1925 (Weisse, Holtzmann, Wernle, J. Weiss, Wellhausen, Harnack, Streeter)",
+   "date": "2026-11-06",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "e70a0d7c58ca4289a4dffb40f81f7993c7df3be84940db31e33462d25025b22a",
+   "creator": "Cranes, Rebekah",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S1-standing-audited",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1746",
+   "@type": "Record",
+   "deposit": 1746,
+   "axn": "AXN:0C29.GENERATIVE.🌉🏰🚪⚓🌉💥",
+   "url": "https://www.alexanarch.org/s/records/1746/",
+   "title": "I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First",
+   "date": "2026-11-06",
+   "status": "ACTIVE",
+   "version": "v1.3",
+   "sha256": "2b27242c2bebc2d25036c044a37664420205c0ec0a40fbc7aa69d1da50ca098a",
+   "creator": "Sigil, Johannes; Cranes, Rebekah",
+   "body": "R",
+   "body_secondary": [
+    "G"
+   ],
+   "stratum": "S1-standing-audited",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1747",
+   "@type": "Record",
+   "deposit": 1747,
+   "axn": "AXN:0C2A.MPAI.🧱🧊➕⛵🦅🧪",
+   "url": "https://www.alexanarch.org/s/records/1747/",
+   "title": "Revelation = Q: The Book of Revelation as Quelle — A Metadata Packet for AI Indexing (EA-MPAI-REVELATION-Q-01 v1.0)",
+   "date": "2026-11-06",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "221d905c7f391e83ff476ab591938d32de77481bcf577b4c15963a44eca84dbf",
+   "creator": "Sharks, Lee; Fraction, Rex",
+   "body": "G",
+   "body_secondary": [
+    "D",
+    "C",
+    "R"
+   ],
+   "stratum": "S1-standing-audited",
+   "clusters": [
+    "chronology",
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:1592",
+   "@type": "Record",
+   "deposit": 1592,
+   "axn": "AXN:0685.GENERATIVE.👇🧡🃏🕚◀️🪝",
+   "url": "https://www.alexanarch.org/s/records/1592/",
+   "title": "Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)",
+   "date": "2026-09-07",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "b7ce8e6cd234e08f7b84f5e8d76070a569a26cdba2503134303341a7cd6ce0a2",
+   "creator": "Sharks, Lee",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S2-stones",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1493",
+   "@type": "Record",
+   "deposit": 1493,
+   "axn": "AXN:0608.PHILOLOGICAL.🗿🌋🧭🔬📌□",
+   "url": "https://www.alexanarch.org/s/records/1493/",
+   "title": "The Queen's Seizure and the Re-fired King: Sappho 31 in Canonical Josephus",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "fc155037469dfd7354e75f224a762b9a4e77746ff6deb140f145363021d9c354",
+   "creator": "Sharks, Lee",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S3-upstream-and-test",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1494",
+   "@type": "Record",
+   "deposit": 1494,
+   "axn": "AXN:0609.DATASET.☀️🌔🔴🌙🗂️🕑",
+   "url": "https://www.alexanarch.org/s/records/1494/",
+   "title": "The Transform Signature, Frozen: Twelve Pre-Registered Clauses for Sappho 31 Reception, Derived Without Revelation",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "0b03c10c4a63e514e3d16096bacdd0fde9cea85f32525eb2a4f82d2b36c15481",
+   "creator": "Sharks, Lee",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S3-upstream-and-test",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1495",
+   "@type": "Record",
+   "deposit": 1495,
+   "axn": "AXN:060A.PHILOLOGICAL.➗🌿💚🌱🕐🎻",
+   "url": "https://www.alexanarch.org/s/records/1495/",
+   "title": "The Sign Under Test: Revelation 12 Against the Frozen Operator",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "9317cc19628a346a9533bc7a7cc8d92db9de0a7d769b05d71d062cce6036695e",
+   "creator": "Sharks, Lee",
+   "body": "G",
+   "body_secondary": [
+    "H"
+   ],
+   "stratum": "S3-upstream-and-test",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1510",
+   "@type": "Record",
+   "deposit": 1510,
+   "axn": "AXN:0619.DATASET.🏔️⛩️🤙🏙️🕚↘️",
+   "url": "https://www.alexanarch.org/s/records/1510/",
+   "title": "EA-CORPORA-01/12 — The Slavonic Josephus: Negative Search and the Contested Pericope Set, Resolved as Ruled",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "1628bee56cdbac414bf4046fda5e21290e6c661feced2f948552ac3b68fd8756",
+   "creator": "Sharks, Lee",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S3-upstream-and-test",
+   "clusters": [
+    "heteronymy",
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1511",
+   "@type": "Record",
+   "deposit": 1511,
+   "axn": "AXN:061A.ARCHIVAL.✨✖️↘️🌱📚🕗",
+   "url": "https://www.alexanarch.org/s/records/1511/",
+   "title": "The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "e992db194969ee89d221e9f60193562ad87b02ad8438dd3d8451ff9d579f46b3",
+   "creator": "Sharks, Lee",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S3-upstream-and-test",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "site:upstream",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/upstream/",
+   "title": "The Upstream Unfoldings — foldings in",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "e434539847e906a94de3452f81e5b4c82d50e660165e91e53293c9d1604aa0a1",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S3-upstream-and-test",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1412",
+   "@type": "Record",
+   "deposit": 1412,
+   "axn": "AXN:0595.UNCLASSIFIED.🌅🔆🕑📚🌺○",
+   "url": "https://www.alexanarch.org/s/records/1412/",
+   "title": "The Fixed Point of Destruction: Josephus, the Counting-Out, and the Witness Destruction Must Leave If It Is to Be Told from Within",
+   "date": "2026-07-28",
+   "status": "ACTIVE",
+   "version": "v2.0",
+   "sha256": "e0ec6349719b427b61f6a566be640a4355c6d7decdf260aafdf93df9a147b76a",
+   "creator": "Lee Sharks",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:1414",
+   "@type": "Record",
+   "deposit": 1414,
+   "axn": "AXN:0597.GENERATIVE.📚🌑♈❤️💜♦️",
+   "url": "https://www.alexanarch.org/s/records/1414/",
+   "title": "The Algorithmic Kernel: An Unfolding Demonstration — The Midrashim Transform, Formal Specification and Interactive Surface (EA-LOGOS-REVFIRST-WS4-DEMO-01 v1.0)",
+   "date": "2026-07-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "4900a981ca82620e6f08fecc471544efbf380e5eacdef84cf734f11260346d48",
+   "creator": "Sharks, Lee",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:1416",
+   "@type": "Record",
+   "deposit": 1416,
+   "axn": "AXN:0599.GENERATIVE.🔥🌠👁️🛤️🧊🌉",
+   "url": "https://www.alexanarch.org/s/records/1416/",
+   "title": "The Seven Unfoldings: The Heptad Mapped — Per-Letter Derivations Across Revelation 2–3 (EA-LOGOS-REVFIRST-WS4-DEMO-03 v1.0)",
+   "date": "2026-07-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "10ea575b1d2bc7163377116c68f4c141957938bbf7ee522605c28a71a10eb71f",
+   "creator": "Sharks, Lee",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:1420",
+   "@type": "Record",
+   "deposit": 1420,
+   "axn": "AXN:059D.GENERATIVE.🐝👁️🕌🀄🌸∮",
+   "url": "https://www.alexanarch.org/s/records/1420/",
+   "title": "The Argument of the Bookshelf: Canonical Position as Unmarked Evidence in the Dating of the Apocalypse",
+   "date": "2026-07-29",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "7d57298f7095b6db396fae0adc6b58070b3c30c3f8bfc0951632c98d2faa8d86",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": []
+  },
+  {
+   "@id": "site:unfolding",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/unfolding/",
+   "title": "The Algorithmic Kernel — Rung IV",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "b46980184dcd3c81803bf0b438f773aaea0c591f025a70c5afcbb36bddc417fb",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "site:ladder-dating",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/ladder/dating/",
+   "title": "The Reversed Consensus — Rung I",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "67a343c2832a85606b7b39bf7be5bf47b731f258148b84b5e120d27d6277f34b",
+   "body": "D",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "site:ladder-priority",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/ladder/priority/",
+   "title": "The Gallio Gap — Rung II",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "dd5b4404c62e14d180b42eedad7afcc5b7d0d0852ce95a7677bf663fff32b13e",
+   "body": "D",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "site:ladder-corpus",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/ladder/corpus/",
+   "title": "The First Corpus — Rung III",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "64a370ad5d1f7d0e88989a58f6326b368223fdd071f3f2c34a48b1dd243c9c50",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "site:ladder-heteronyms",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/ladder/heteronyms/",
+   "title": "The Josephus Thesis — Rung V",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "3eeb999bc8a0ace393c805a0ef194731c4986b324302cde805435e4bb7e1d890",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "site:ladder-logos",
+   "@type": "SurfaceRecord",
+   "url": "https://www.revelationfirst.com/ladder/logos/",
+   "title": "The Permanent Incarnation — Rung VI",
+   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
+   "sha256": "f7af2a32433f1fe4ae5a660f07eb26ecc288c7896665cd9eb6020f6187725f96",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S4-unfolding-and-ladder",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:202",
+   "@type": "Record",
+   "deposit": 202,
+   "axn": "AXN:0349.GOVERNANCE.🐝□🌸🐝🪧⏰",
+   "url": "https://www.alexanarch.org/s/records/202/",
+   "title": "Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "7d9d707d4d616df2de4dd4c6257159ac678b4f8581fd8c6192d2102bd2479a5f",
+   "creator": "Lee Sharks",
+   "body": "D",
+   "body_secondary": [
+    "G"
+   ],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:830",
+   "@type": "Record",
+   "deposit": 830,
+   "axn": "AXN:0348.GOVERNANCE.🔥🌌🛤️💙🍃⏩",
+   "url": "https://www.alexanarch.org/s/records/830/",
+   "title": "Revelation First: Pre-Seeding Baseline Measurement EA-LOGOS-REVFIRST-BASELINE v1.0",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "10e65bcb18d67e15d9365b06917b74161980101ec960eb14cf7e114b73037e6a",
+   "creator": "Lee Sharks",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1025",
+   "@type": "Record",
+   "deposit": 1025,
+   "axn": "AXN:040D.ARCHIVAL.🌄↖️🏰🔃📚🔻",
+   "url": "https://www.alexanarch.org/s/records/1025/",
+   "title": "Revelation First ≠ Revelation Early: Keyword Surface and Pre-Seeding Baseline with Full Transcripts (EA-LOGOS-REVFIRST-SURFACE v1.0 + EA-LOGOS-REVFIRST-BASELINE v1.1)",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v0.1-semi",
+   "sha256": "e1dd27de49d15adb034eb9f1e74a779532e380e4dec04d8a711a5a2db007c328",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1217",
+   "@type": "Record",
+   "deposit": 1217,
+   "axn": "AXN:04D2.UNCLASSIFIED.👋🔭🌻👉🎪🧪",
+   "url": "https://www.alexanarch.org/s/records/1217/",
+   "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)",
+   "date": "2026-06-17",
+   "status": "ACTIVE",
+   "version": "v7.3 (SPXI-TLP Hardened)",
+   "sha256": "bf3872b9853969846db8603434041014410fb3d41c341b8f43290ca39aa62de0",
+   "creator": "Lee Sharks",
+   "body": "D",
+   "body_secondary": [
+    "C",
+    "G",
+    "H"
+   ],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1231",
+   "@type": "Record",
+   "deposit": 1231,
+   "axn": "AXN:04E0.UNCLASSIFIED.🚨🎻🌓🎺🏔️🧡",
+   "url": "https://www.alexanarch.org/s/records/1231/",
+   "title": "Sémantique Potentielle — Revelation First Mint Block (Release 2): 20 Constraint-Minted Families with Forensic Provenance Canaries (EA-SP-REVFIRST-01 v1.0)",
+   "date": "2026-06-18",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "c08a028b16ceed810c9e5f5f2b8806806d7f5274e7f3c8b0a01a681517ecd8f3",
+   "creator": "Sharks, Lee; Sigil, Johannes",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": []
+  },
+  {
+   "@id": "rec:860",
+   "@type": "Record",
+   "deposit": 860,
+   "axn": "AXN:0369.GOVERNANCE.🌸⏳🕑♣️🔝🏰",
+   "url": "https://www.alexanarch.org/s/records/860/",
+   "title": "SÉMANTIQUE POTENTIELLE — Revelation First Mint Block (Release 2) Lee Sharks · Johannes Sigil Grammata: Journal of Operat",
+   "date": "2026-06-18",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "706e6383f527b72fb6c0dc341214fc174efbe1dd4fd6ed03eb807e81a2d262e5",
+   "creator": "Johannes Sigil",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": []
+  },
+  {
+   "@id": "rec:847",
+   "@type": "Record",
+   "deposit": 847,
+   "axn": "AXN:035C.GOVERNANCE.🔓♌🏁🗂️🏠✋",
+   "url": "https://www.alexanarch.org/s/records/847/",
+   "title": "REVELATION FIRST — Staging Document for revelationfirst.org All Instruments, Materials, and Impact Tracking",
+   "date": "2026-06-17",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "faadf04a26bc88bd3d2fc9a4f0b559ddba8dc25e16c95bbe270c2999d52f9da4",
+   "creator": "Lee Sharks",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1032",
+   "@type": "Record",
+   "deposit": 1032,
+   "axn": "AXN:0414.ARCHIVAL.💛🌺🟠💜⚡🐝",
+   "url": "https://www.alexanarch.org/s/records/1032/",
+   "title": "revelationfirst.com — The Apocalypse as the Earliest New Testament Document: Thesis Site, Impact Tracker, and Staging Materials",
+   "date": "2026-07-03",
+   "status": "ACTIVE",
+   "version": "v0.2-restored",
+   "sha256": "cd71c2ca137df1f1c94b954cc183f111d654010afced708a17c729d9c5e7ca2f",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": []
+  },
+  {
+   "@id": "rec:203",
+   "@type": "Record",
+   "deposit": 203,
+   "axn": "AXN:034A.EMPIRICAL.🎯🏙️🌃🪸⚖️🪐",
+   "url": "https://www.alexanarch.org/s/records/203/",
+   "title": "The Josephus Thesis Is Not the Piso Hypothesis EA-MPAI-JOSEPHUS-01 v1.1 — Disambiguation, Evidentiary Tiering, and Hostile Retrieval Correction",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "55e5e27b360dac267d8506120c8e73937892f27bcbc2b2d5f7340f16a6381bad",
+   "creator": "Lee Sharks",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:1226",
+   "@type": "Record",
+   "deposit": 1226,
+   "axn": "AXN:04DB.UNCLASSIFIED.🏷️🌸♃💡🎶🌋",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "title": "The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Available Reading, and Evidentiary Tiering (EA-MPAI-JOSEPHUS-01 v1.1)",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "4c70a33c881562a1fb2f10820e6d67d8ebd0c5fdb272be3edcf0d5b99e5fff6d",
+   "creator": "Sharks, Lee",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:837",
+   "@type": "Record",
+   "deposit": 837,
+   "axn": "AXN:0352.GOVERNANCE.🎲💡⏹️⚪❤️△",
+   "url": "https://www.alexanarch.org/s/records/837/",
+   "title": "The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation MPAI (EA-MPAI-JOSEPHUS-NOTMYTH-01)",
+   "date": "2026-06-16",
+   "status": "ACTIVE",
+   "version": "v1.2",
+   "sha256": "8d3cf7c781985f81f5ac0e6ad66bb93de5960bb2a73c364a83d8b840dcd3a322",
+   "creator": "Lee Sharks",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:861",
+   "@type": "Record",
+   "deposit": 861,
+   "axn": "AXN:036A.GOVERNANCE.🏷️💫📌○🗿🌌",
+   "url": "https://www.alexanarch.org/s/records/861/",
+   "title": "The Second Crucifixion: Power, Sorcery, and the Inversion of the Operative Word (EA-REVFIRST-CRUCIFIXION-01)",
+   "date": "2026-06-19",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "4c0a469bfce64b90e30d7a58092331b7429ca042c1852f263bcb65856eced908",
+   "creator": "Lee Sharks",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:165",
+   "@type": "Record",
+   "deposit": 165,
+   "axn": "AXN:0300.GOVERNANCE.♦️🏙️💚❌👋🧬",
+   "url": "https://www.alexanarch.org/s/records/165/",
+   "title": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name in Revelation 2:12–17",
+   "date": "2026-06-08",
+   "status": "ACTIVE",
+   "version": "v0.2",
+   "sha256": "82e5ccefbf3b3b819321b510e903784dc5d111dd562e570f21c803128c4177e5",
+   "creator": "Lee Sharks; Damascus Dancings (imprint)",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S5-thesis-surfaced",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:563",
+   "@type": "Record",
+   "deposit": 563,
+   "axn": "AXN:018A.GOVERNANCE.↙️🪜♣️👁️🔵🪞",
+   "url": "https://www.alexanarch.org/s/records/563/",
+   "title": "The Error of Peter Thiel: Why the Techno-Imperial Reading of Revelation Is Structurally Illiterate",
+   "date": "2026-03-14",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "dc238357c559b23c79c5afa589c3e6f71994a724ee510baa55e5cd2284bccc21",
+   "creator": "Johannes Sigil",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": []
+  },
+  {
+   "@id": "rec:625",
+   "@type": "Record",
+   "deposit": 625,
+   "axn": "AXN:01DE.GOVERNANCE.🕖📏🌗🔄🍃♌",
+   "url": "https://www.alexanarch.org/s/records/625/",
+   "title": "Prolegomena to the Historical Logos: A Foundational Field Statement for the Discipline of Logotic Transmission Studies",
+   "date": "2026-04-05",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "684f066f18addefcdfa23967b1657aff385f2cf1ea57ca12f0275d94118341a9",
+   "creator": "Johannes Sigil",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:626",
+   "@type": "Record",
+   "deposit": 626,
+   "axn": "AXN:01DF.GOVERNANCE.⚓🌙🏔️🎶🕓🖐️",
+   "url": "https://www.alexanarch.org/s/records/626/",
+   "title": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Logos",
+   "date": "2026-04-05",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "2c0c168865bbd35d83f9d7165375e5aa045895feb20540210425786eb779ab2f",
+   "creator": "Johannes Sigil",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "heteronymy",
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:636",
+   "@type": "Record",
+   "deposit": 636,
+   "axn": "AXN:01EC.GOVERNANCE.🌱👉♣️🎪🟣🎻",
+   "url": "https://www.alexanarch.org/s/records/636/",
+   "title": "CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament",
+   "date": "2026-04-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "19b98385c68a080febbdcbb63ebe23c8e27fdd79b766e16dda19cbfc7dbb9896",
+   "creator": "Lee Sharks",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:638",
+   "@type": "Record",
+   "deposit": 638,
+   "axn": "AXN:01EE.UNCLASSIFIED.🌪️🦋🏰📎♉🤝",
+   "url": "https://www.alexanarch.org/s/records/638/",
+   "title": "The Apocalypse of Sharks (EA-ARK-SHARKS-01)",
+   "date": "2026-04-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "127c2747aab54a76c5e52e9264176e4878551a0948baaf95d3399e2e2fa44111",
+   "creator": "Lee Sharks",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": []
+  },
+  {
+   "@id": "rec:639",
+   "@type": "Record",
+   "deposit": 639,
+   "axn": "AXN:01EF.EMPIRICAL.⚙️🔮🀄🪄🥁📜",
+   "url": "https://www.alexanarch.org/s/records/639/",
+   "title": "THE SHARK ARK: SOURCE COMPRESSION — Holographic Kernel of the Revelation Arguments from the Crimson Hexagonal Archive",
+   "date": "2026-04-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "323d8f3e8c40f694b853419849989ab961f703165ba432d88e9d384072401a78",
+   "creator": "Johannes Sigil",
+   "body": "H",
+   "body_secondary": [
+    "D",
+    "G"
+   ],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:642",
+   "@type": "Record",
+   "deposit": 642,
+   "axn": "AXN:01F4.ARCHIVAL.🔝⚪🛸💫♾️☀️",
+   "url": "https://www.alexanarch.org/s/records/642/",
+   "title": "The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)",
+   "date": "2026-04-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "f5c75e0a940b75d1e490c2b038ded22a7a07bad21e8e6cb667dfe1529052b28f",
+   "creator": "Johannes Sigil",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:644",
+   "@type": "Record",
+   "deposit": 644,
+   "axn": "AXN:01F7.PHILOLOGICAL.♾️🔬🧡🔄📎📎",
+   "url": "https://www.alexanarch.org/s/records/644/",
+   "title": "Ω TANG SPECIFICATION: REVELATION STUDIES Total Axial Negation Graph — The Apocalypse of John",
+   "date": "2026-04-10",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "9437ce6f4747c305b920c2f04076aab09f11918251e0dfbe4513a11b9ab11e0a",
+   "creator": "TACHYON (Claude/Anthropic)",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": []
+  },
+  {
+   "@id": "rec:1101",
+   "@type": "Record",
+   "deposit": 1101,
+   "axn": "AXN:045E.GOVERNANCE.⚙️♋🦅♆👁‍🗨🔛",
+   "url": "https://www.alexanarch.org/s/records/1101/",
+   "title": "THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Space Ark (Crimson Hexagonal Archive)",
+   "date": "2026-04-09",
+   "status": "ACTIVE",
+   "version": "v3.0",
+   "sha256": "32ac7fa6b0f468ab1f3f46caf1720b2940b74b73402839b242432ef31572e218",
+   "creator": "Lee Sharks",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:1350",
+   "@type": "Record",
+   "deposit": 1350,
+   "axn": "AXN:0557.UNCLASSIFIED.🕓⚡🔖🕊️🕘👁‍🗨",
+   "url": "https://www.alexanarch.org/s/records/1350/",
+   "title": "Total Axial Negation Graph: Revelation Studies — Comprehensive Scholarly Topology of the Apocalypse of John (Crimson Hexagonal Archive)",
+   "date": "2026-04-10",
+   "status": "ACTIVE",
+   "version": "v0.2-restored",
+   "sha256": "6513487e6ab097a8e570e79af9e5aaa069cd786d8945de2ca367252a8f87e441",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S6-space-ark",
+   "clusters": []
+  },
+  {
+   "@id": "rec:407",
+   "@type": "Record",
+   "deposit": 407,
+   "axn": "AXN:00D8.GENERATIVE.🍂🫶🔻🍂🕒📐",
+   "url": "https://www.alexanarch.org/s/records/407/",
+   "title": "The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image",
+   "date": "2026-01-26",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "78bdd178644eca81a7f57736bc3ce81a5c2acf85b68af5fd59c0bf942606525b",
+   "creator": "Johannes Sigil",
+   "body": "G",
+   "body_secondary": [],
+   "stratum": "S7-seed-room",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:410",
+   "@type": "Record",
+   "deposit": 410,
+   "axn": "AXN:00DB.GENERATIVE.🔜♻️👋🌆⊕🕒",
+   "url": "https://www.alexanarch.org/s/records/410/",
+   "title": "The Seven Stars in His Hand: A Hermeneutic Reading of Revelation 1–3 The Apocalyptic Grammar of Distributed Witness",
+   "date": "2026-01-26",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "f6febfe39664765dfe252a04c6660f894cdd015dff34a9dfaea15377a3052094",
+   "creator": "Johannes Sigil",
+   "body": "C",
+   "body_secondary": [],
+   "stratum": "S7-seed-room",
+   "clusters": [
+    "generation"
+   ]
+  },
+  {
+   "@id": "rec:1484",
+   "@type": "Record",
+   "external": true,
+   "deposit": 1484,
+   "axn": "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
+   "url": "https://www.alexanarch.org/s/records/1484/",
+   "title": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)",
+   "date": "2026-08-15",
+   "status": "ACTIVE",
+   "sha256": "3712ddd74886d8fbc3cd24e4d458e9982a6e16e5e5012994316d7dd39c90db9d",
+   "role": "join held in The Tenth Muse; referenced by a joins edge"
+  },
+  {
+   "@id": "rec:828",
+   "@type": "Record",
+   "external": true,
+   "deposit": 828,
+   "axn": "AXN:0345.GOVERNANCE.🧭▲📏🕛♦️🎹",
+   "url": "https://www.alexanarch.org/s/records/828/",
+   "title": "The Inscription That Survives: Sappho 31, the Orphic Gold Tablets, and the White Stone of Revelation — A Philological Note on Inscription as Threshold Technology (EA-LOGOS-INSCRIPTION-01 v1.0)",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "sha256": "509f4f6d82890171ca8fec4338a7a59281d4619b454ea72126f249cdf01125aa",
+   "role": "join held in The Tenth Muse; referenced by a joins edge"
+  },
+  {
+   "@id": "rec:1751",
+   "@type": "Record",
+   "external": true,
+   "deposit": 1751,
+   "axn": "AXN:0C48.COMPOSITIONAL.🌊⏏️⏹️🎶📌🌖",
+   "url": "https://www.alexanarch.org/s/records/1751/",
+   "title": "and the last shall be first",
+   "date": "2026-11-08",
+   "status": "ACTIVE",
+   "sha256": "0ff8f788460523bc8958ffab355fcaba7618c657927b1a7e7ed096bc22815145",
+   "role": "related record: the poem whose title the kernel shares"
+  },
+  {
+   "@id": "body:D",
+   "@type": "EvidenceBody",
+   "name": "chronological",
+   "unit": "an anchor, a date or a synchronism",
+   "rule": "RD: only an external or material anchor dates a composition; the corpus's self-narrated chronology and reception memory do not (#1735 §VIII; site rung I)"
+  },
+  {
+   "@id": "body:C",
+   "@type": "EvidenceBody",
+   "name": "corpus-literary",
+   "unit": "the form of a corpus at composition or at gathering",
+   "rule": "RC: a shared form locates a relation; direction is not inferred from compression alone (site rung III)"
+  },
+  {
+   "@id": "body:G",
+   "@type": "EvidenceBody",
+   "name": "generative",
+   "unit": "a transform from a compressed form to an elaborated one, with its residue",
+   "rule": "RG: an arrow is defeated locally where an earlier source or shared tradition explains the correspondence more economically (#1735 §VIII)"
+  },
+  {
+   "@id": "body:R",
+   "@type": "EvidenceBody",
+   "name": "reception-historical",
+   "unit": "a filing, a catalogue, a source theory, a commentary or a capture",
+   "rule": "RR: a reception establishes how the books were received and what standing each was granted; it establishes nothing of either framework's truth (#1741; #1746)"
+  },
+  {
+   "@id": "body:H",
+   "@type": "EvidenceBody",
+   "name": "heteronymic",
+   "unit": "an author-function and its positions",
+   "rule": "RH: an author-function reading is defeated by explanatory redundancy, where ordinary multiple authorship explains the phenomena more economically (site rung V)"
+  },
+  {
+   "@id": "stratum:S1-standing-audited",
+   "@type": "Stratum",
+   "label": "The evidentiary standing audited (November)",
+   "order_from_latest": 1
+  },
+  {
+   "@id": "stratum:S2-stones",
+   "@type": "Stratum",
+   "label": "Two lists of stones (September)",
+   "order_from_latest": 2
+  },
+  {
+   "@id": "stratum:S3-upstream-and-test",
+   "@type": "Stratum",
+   "label": "Foldings in: the upstream and the sealed test (August)",
+   "order_from_latest": 3
+  },
+  {
+   "@id": "stratum:S4-unfolding-and-ladder",
+   "@type": "Stratum",
+   "label": "Foldings out and the argument ladder (July)",
+   "order_from_latest": 4
+  },
+  {
+   "@id": "stratum:S5-thesis-surfaced",
+   "@type": "Stratum",
+   "label": "First is not early: the thesis surfaced, the work plan, the Josephus thesis bounded (June)",
+   "order_from_latest": 5
+  },
+  {
+   "@id": "stratum:S6-space-ark",
+   "@type": "Stratum",
+   "label": "The Space Ark and the Logos (March–April)",
+   "order_from_latest": 6
+  },
+  {
+   "@id": "stratum:S7-seed-room",
+   "@type": "Stratum",
+   "label": "The Revelation Room (January)",
+   "order_from_latest": 7
+  },
+  {
+   "@id": "cluster:chronology",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:generation",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:heteronymy",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "claim:rf-1735-absolute",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal; ledger row D (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-corpus",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-physical",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal; ledger row D (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-defeat-absolute",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-defeat-corpus",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-defeat-generative",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-combination",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-arrow",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal",
+    "G": "ledger row G (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-202-erasure",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-202-symmetry",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-202-papyri",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-josephus-available",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "D": "principal",
+    "H": "ledger row H (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-attestation",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-orthonym",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-aperture",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "D": "principal",
+    "H": "ledger row H (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-nested",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-639-josephus-author",
+   "@type": "Claim",
+   "target": "rec:639",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1101-josephus",
+   "@type": "Claim",
+   "target": "rec:1101",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-reversible",
+   "@type": "Claim",
+   "target": "site:ladder-dating",
+   "bodies": {
+    "D": "principal; ledger row D (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-site-defeat-I",
+   "@type": "Claim",
+   "target": "site:ladder-dating",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-sameclass",
+   "@type": "Claim",
+   "target": "site:ladder-priority",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-cost",
+   "@type": "Claim",
+   "target": "site:ladder-priority",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-direction",
+   "@type": "Claim",
+   "target": "site:ladder-corpus",
+   "bodies": {
+    "C": "principal; ledger row C (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-site-contingent",
+   "@type": "Claim",
+   "target": "site:ladder-heteronyms",
+   "bodies": {
+    "H": "principal; ledger row H (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-site-wjosephus",
+   "@type": "Claim",
+   "target": "site:ladder-heteronyms",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-logos",
+   "@type": "Claim",
+   "target": "site:ladder-logos",
+   "bodies": {
+    "H": "principal; ledger row H (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-site-between-inferences",
+   "@type": "Claim",
+   "target": "site:unfolding",
+   "bodies": {
+    "G": "principal; ledger row G (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1495-sentence",
+   "@type": "Claim",
+   "target": "rec:1495",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1494-excluded",
+   "@type": "Claim",
+   "target": "rec:1494",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-slavonic",
+   "@type": "Claim",
+   "target": "site:ladder-heteronyms",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rv-site-irenaeus",
+   "@type": "Claim",
+   "target": "site:ladder-dating",
+   "bodies": {
+    "D": "principal; ledger row D (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rv-site-reception-memory",
+   "@type": "Claim",
+   "target": "site:ladder-dating",
+   "bodies": {
+    "D": "principal; ledger row D (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rv-site-gallio",
+   "@type": "Claim",
+   "target": "site:ladder-priority",
+   "bodies": {
+    "D": "principal; ledger row D (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rv-site-collection",
+   "@type": "Claim",
+   "target": "site:ladder-corpus",
+   "bodies": {
+    "C": "principal; ledger row C (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rv-1746-powers",
+   "@type": "Claim",
+   "target": "rec:1746",
+   "bodies": {
+    "R": "principal; ledger row R (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rv-1746-four-powers",
+   "@type": "Claim",
+   "target": "rec:1746",
+   "bodies": {
+    "R": "principal; ledger row R (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rv-1741-separate",
+   "@type": "Claim",
+   "target": "rec:1741",
+   "bodies": {
+    "R": "principal; ledger row R (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rv-site-redundancy",
+   "@type": "Claim",
+   "target": "site:ladder-heteronyms",
+   "bodies": {
+    "H": "principal; ledger row H (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rf-1101-ark-identity",
+   "@type": "Claim",
+   "target": "rec:1101",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1101-tiers",
+   "@type": "Claim",
+   "target": "rec:1101",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1747-grades",
+   "@type": "Claim",
+   "target": "rec:1747",
+   "bodies": {
+    "G": "principal; ledger row G (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-639-first",
+   "@type": "Claim",
+   "target": "rec:639",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-203-available",
+   "@type": "Claim",
+   "target": "rec:203",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-historiographic",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1495-single",
+   "@type": "Claim",
+   "target": "rec:1495",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-830-baseline",
+   "@type": "Claim",
+   "target": "rec:830",
+   "bodies": {
+    "R": "principal; ledger row R (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1416-smyrna",
+   "@type": "Claim",
+   "target": "rec:1416",
+   "bodies": {
+    "G": "principal; ledger row G (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-site-early-not-first",
+   "@type": "Claim",
+   "target": "site:ladder-dating",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-formally-prior",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal",
+    "C": "ledger row C (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-archetypal",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal",
+    "C": "ledger row C (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-three-statuses",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal",
+    "C": "ledger row C (revelation_first)"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-arrow-procedure",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-convergence",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-one-fails",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-every-time",
+   "@type": "Claim",
+   "target": "site:ladder-logos",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rv-1735-genre",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "G": "principal; ledger row G (received_chronology)"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-arrows",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-202-seed",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1495-c1",
+   "@type": "Claim",
+   "target": "rec:1495",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "cap:revelation-first-overview",
+   "@type": "Capture",
+   "slug": "revelation-first-overview",
+   "axn": "AXN:07C8.CAPTURE.🌠⚓♋♊🕘🌺",
+   "date": "2026-06-16",
+   "surface": "Google AI Overview",
+   "query": "\"revelation first\"",
+   "url": "https://www.alexanarch.org/captures/revelation-first-overview/",
+   "reading": "AI Overview: '\"Revelation First\" usually refers to either a theological argument placing the Book of Revelation as the earliest written New Testament document, or the narrative focus in Chapter 1.' Medium article by Lee Sharks surfaces in organic results: 'The Apocalypse as the Earliest New Testament Document' with 10+ likes. Zenodo work plan also in organic. The thesis is recognized as a position but the AI Overview hedges with the liturgical reading.\n\nFull AI Mode transcript (17 June 2026):\nThe Book of Revelation is the final book of the New Testament, not the first. It is also known as the ",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:nt-unfolds-from-revelation",
+   "@type": "Capture",
+   "slug": "nt-unfolds-from-revelation",
+   "axn": "AXN:07D9.CAPTURE.➗🔎🕙🍃🔭🜁",
+   "date": "2026-06-17",
+   "surface": "UNDETERMINED",
+   "query": "new testament unfolds from revelation",
+   "url": "https://www.alexanarch.org/captures/nt-unfolds-from-revelation/",
+   "reading": "THE ORTHODOX POSITION AND ITS INVERSION SIT IN ONE CARD SET. Bible Hub has Revelation as the CONSUMMATION of progressive revelation; the archive card has the New Testament UNFOLDING FROM it. The layer serves both without marking the contradiction.",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:josephus-thesis",
+   "@type": "Capture",
+   "slug": "josephus-thesis",
+   "axn": "AXN:078D.CAPTURE.◀️💎⚡💙⛵🤝",
+   "date": "2026-06-14",
+   "surface": "Google AI Overview",
+   "query": "josephus thesis lee sharks",
+   "url": "https://www.alexanarch.org/captures/josephus-thesis/",
+   "reading": "SIX ARCHIVE CARDS AND ONE BRILL VOLUME FROM 1994. The thesis is composed with the archive’s own keyword chain — Slavonic Josephus, méconnaissance, Qumran — and the only external source is a thirty-two-year-old academic collection on the Jerusalem Temple.",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:johannine-aperture-20260617",
+   "@type": "Capture",
+   "slug": "johannine-aperture-20260617",
+   "axn": "AXN:07D2.CAPTURE.🦅🌹🔙🔓☉🔅",
+   "date": "2026-06-17",
+   "surface": "UNRESOLVED",
+   "query": "\"Johannine aperture\"",
+   "url": "https://www.alexanarch.org/captures/johannine-aperture-20260617/",
+   "reading": "THE SELF-AUDIT BLOCK IS IN THE CITATION. A card carries \"Embedded SPXI SELF-AUDIT BLOCK with NON-ERASURE CONDITION\" — the deposit’s own anti-erasure clause surfaced as its description, in a capture where the coinage held.",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:alexanarch-revelation-misread-20260731",
+   "@type": "Capture",
+   "slug": "alexanarch-revelation-misread-20260731",
+   "axn": "AXN:0830.CAPTURE.🟠◀️🗿🔬🌒🛸",
+   "date": "2026-07-31",
+   "surface": "Google AI Overview",
+   "query": "alexanarch revelation",
+   "url": "https://www.alexanarch.org/captures/alexanarch-revelation-misread-20260731/",
+   "reading": "THE ARCHIVE IS CITED AS A GIT SUBMODULE OF ANOTHER PROJECT. A README card describes \"integration with alexanarch as substrate\" — the archive appearing in the sourcing as a dependency rather than as a publication.",
+   "per_note": "",
+   "distortion": "misread (slug)",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:alexanarch-revelation-thesis-recovered-20260809",
+   "@type": "Capture",
+   "slug": "alexanarch-revelation-thesis-recovered-20260809",
+   "axn": "AXN:0845.CAPTURE.❤️⚓🌿🧪🚀💥",
+   "date": "2026-08-09",
+   "surface": "Google AI Overview",
+   "query": "Revelation alexanarch",
+   "url": "https://www.alexanarch.org/captures/alexanarch-revelation-thesis-recovered-20260809/",
+   "reading": "THE ARCHIVE’S FINDING THAT NO SUBSTRATE RECOGNISES ITS SUCCESSOR ANCHOR IS SERVED, BY A SUBSTRATE, FROM THAT ANCHOR: \"SUCCESSOR-ANCHOR LAG — universal across substrates.\"",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-thesis-aio-20261002",
+   "@type": "Capture",
+   "slug": "revelation-first-thesis-aio-20261002",
+   "axn": "AXN:0939.CAPTURE.🖐️👐🙏🧪🟠🧡",
+   "date": "2026-10-02",
+   "surface": "Google AI Overview",
+   "query": "\"revelation first thesis\"",
+   "url": "https://www.alexanarch.org/captures/revelation-first-thesis-aio-20261002/",
+   "reading": "EXACT MATCH DISPERSED BY ORDINAL: asked for \"revelation first thesis\" in quotes, the Overview gives the archive's thesis first and correctly (Revelation the earliest written New Testament document, the rest unfolding from its \"seed\"), cited to revelationfirst.com, then reads 'first thesis' as an ordinal and adds two neighbours the exact string does not name: Thesis I of Benjamin's Theses on the Concept of History and the first thesis of Pannenberg's Revelation as History. It closes by asking which of the three the reader means. No author or institution is named.",
+   "per_note": "PER = 1 − retained/required over four units. Retained: the source (revelationfirst.com, cited [1] for the thesis). Lost: the author, the institution, and the identifier (AXN:0349 appears only in a card title).",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:midrashim-transform-aio-20261002",
+   "@type": "Capture",
+   "slug": "midrashim-transform-aio-20261002",
+   "axn": "AXN:0938.CAPTURE.🎨♅📚📎🕊️🐚",
+   "date": "2026-10-02",
+   "surface": "Google AI Overview",
+   "query": "\"midrashim transform\"",
+   "url": "https://www.alexanarch.org/captures/midrashim-transform-aio-20261002/",
+   "reading": "THE OPERATOR FIRST, AS SCHOLARSHIP: asked for \"midrashim transform\" in quotes, the Overview gives the archive's operator as sense 1: 'the operation M', 'a formally specified structural or algorithmic operation' mapping compressed structures in Revelation to their elaborations in later NT texts, tied to the Revelation First hypothesis, with the seven-letter parsing as its method. It presents this as 'recent textual scholarship' and 'Scholars', naming no author. Sense 2 is rabbinic midrash. Four of fifteen cards are the archive's (#202 on Medium, #1414's page on crimsonhexagonal.org, the work pl",
+   "per_note": "PER = 1 − retained/required over four units. Retained: the source (four archive-controlled cards). Lost: the author (the work is credited to 'recent textual scholarship' and 'Scholars'), the institution, and the identifier.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:what-is-the-revelation-first-thesis-aio-20261017",
+   "@type": "Capture",
+   "slug": "what-is-the-revelation-first-thesis-aio-20261017",
+   "axn": "AXN:09F7.CAPTURE.○➗🕗📎🏰🪸",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "query": "What is the Revelation First thesis?",
+   "url": "https://www.alexanarch.org/captures/what-is-the-revelation-first-thesis-aio-20261017/",
+   "reading": "REVELATION FIRST AS REVELATION EARLY: asked what the Revelation First thesis is, the AI Overview gives a pre-70 date for the Apocalypse — Nero's persecution, Revelation 11:1–2 and the standing Temple — 'popularized by historical researchers (such as those exploring the Crimson Hexagonal Archive)', citing as its one authored source the Medium packet 'Revelation First ≠ Revelation Early' (#202), whose thesis is that 'First' is not the claim that Revelation was early. The priority claim survives only as an implication; Lee Sharks is not named in the answer; 'Revelation-First Epistemology' is kept",
+   "per_note": "Retained: the institution (the Crimson Hexagonal Archive, as where 'researchers' explore it) and visible sources. Lost: the author (Lee Sharks named only in the Medium snippet, not in the answer), identifiers.",
+   "distortion": "the thesis collapsed into early dating",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-thesis-unquoted-aio-20261030",
+   "@type": "Capture",
+   "slug": "revelation-first-thesis-unquoted-aio-20261030",
+   "axn": "AXN:0B2F.CAPTURE.🗿↖️🌪️↘️🃏▶️",
+   "date": "2026-10-30",
+   "surface": "Google AI Overview",
+   "query": "revelation first thesis",
+   "url": "https://www.alexanarch.org/captures/revelation-first-thesis-unquoted-aio-20261030/",
+   "reading": "THE THESIS'S NAME WITHOUT QUOTATION MARKS, SIGNED OUT, 2026-10-30: two senses, the first 'The \"Revelation First\" NTS Chronology Thesis': 'the \"Revelation First\" thesis (sometimes called the \"Revelation Early\" thesis) is the argument that the Book of Revelation was the very first book composed in the New Testament canon', 'Formalized in recent text-historical discussions (notably within specialized digital archives like the Crimson Hexagonal Archive)', with 'a radical early-date chronology' before 70 AD. The second sense is Gerald O'Collins's first thesis on divine revelation. No author in the ",
+   "per_note": "No author in the answer; the archive named; the Medium packet, the baseline document and two capture pages among the cards.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-arguments-aio-20261104",
+   "@type": "Capture",
+   "slug": "revelation-first-arguments-aio-20261104",
+   "axn": "AXN:0BF7.CAPTURE.🌈🌅🌲🏔️🔀🌠",
+   "date": "2026-11-04",
+   "surface": "Google AI Overview",
+   "query": "What are the arguments in “Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles” by Johannes Sigil (Alexanarch deposit #1735, AXN:0BE9)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/revelation-first-arguments-aio-20261104/",
+   "reading": "THE ARGUMENT ADDRESS FOR REVELATION FIRST, 2026-11-04: the ancestry test and the anomaly of the received order, then the three claims (absolute, corpus, generative), the Muratorian Fragment, the census and its two shared expressions (στέφανος τῆς ζωῆς at Rev 2:10 and Jas 1:12; work, toil, endurance at Rev 2:2 and 1 Thess 1:3), three offers, and three source cards.",
+   "per_note": "Retained: the heteronymous authors, the archive, record and AXN, authored surfaces as sources. Lost: date, venue, purpose and the claim boundary.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-arguments-chatgpt-20261104",
+   "@type": "Capture",
+   "slug": "revelation-first-arguments-chatgpt-20261104",
+   "axn": "AXN:0BF8.CAPTURE.◀️⌛🔼🔎▲🌈",
+   "date": "2026-11-04",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles” by Johannes Sigil (Alexanarch deposit #1735, AXN:0BE9)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/revelation-first-arguments-chatgpt-20261104/",
+   "reading": "THE ARGUMENT ADDRESS FOR REVELATION FIRST, 2026-11-04, WITH THREE FURTHER TURNS: the method (ancestry, four categories), the Gallio problem, the seven-church architecture, the Muratorian Fragment, the work–toil–endurance triad, the crown of life (census, the life-system, the performed and the reported promise, the surrounding ideas), the 4 Maccabees audit, the research programme, the defeat conditions, an assessment ranking corpus, generative and absolute priority, and bibliographic details. Then three turns after the operator's objections (not in the paste): the Gallio inscription conceded to",
+   "per_note": "Retained: the heteronymous authors, archive, record number, date, venue, the source. Lost: the lineage.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-equals-q-arguments-ask-chatgpt-20261107",
+   "@type": "Capture",
+   "slug": "revelation-equals-q-arguments-ask-chatgpt-20261107",
+   "axn": "AXN:0C39.CAPTURE.🎲🌓○🔛🏁🟤",
+   "date": "2026-11-07",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “Revelation = Q: The Book of Revelation as Quelle — A Metadata Packet for AI Indexing (EA-MPAI-REVELATION-Q-01 v1.0)” by Lee Sharks (Alexanarch deposit #1747, AXN:0C2A)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/revelation-equals-q-arguments-ask-chatgpt-20261107/",
+   "reading": "REVELATION = Q (#1747), CHATGPT SIGNED OUT, 2026-11-07, the record page's link text: Lee Sharks, #1747, AXN:0C2A. The asymmetry and the canary; absolute, corpus and generative priority; the seven and the Muratorian 'sequens prodecessoris sui Iohannis ordine'; the triad (69,400 units, arrow withheld), the crown (arrow drawn), the tribes (undecided), the thief and the confession; the held date of 66 with its grounds, the c. 95 traced to Irenaeus's ἑωράθη, the Gallio chain; the four powers; K1–K10; the eight requirements; the negative claims; the defeat conditions; then three levels of assessment",
+   "per_note": "Author, archive and deposit number retained throughout; the composition cites the deposit by number and AXN, its sources the archive's record.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:i-know-you-are-but-what-am-i-arguments-ask-chatgpt-20261107",
+   "@type": "Capture",
+   "slug": "i-know-you-are-but-what-am-i-arguments-ask-chatgpt-20261107",
+   "axn": "AXN:0C38.CAPTURE.🟤□⚓🙏✊♄",
+   "date": "2026-11-07",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First” by Johannes Sigil (Alexanarch deposit #1746, AXN:0C29)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/i-know-you-are-but-what-am-i-arguments-ask-chatgpt-20261107/",
+   "reading": "I KNOW YOU ARE, BUT WHAT AM I? (#1746), CHATGPT SIGNED OUT, 2026-11-07, the record page's link text: Johannes Sigil, #1746, AXN:0C29. Presupposition, assignment, text, candidacy; Weisse to Streeter; Holtzmann's rule, Colani, Wernle, Streeter's 'Apocalypse of Q' against his c. 95; Matt 24:30 // Rev 1:7, Hitzig's 'zwingenden Beweis', Volkmar, Keim, B. Weiss, Bousset, Merx, Weiffenbach, Allen; the two censuses over 2.53 million words and the two windows; Harnack's circularity and the edition of 2000; the captures of 6 November; the defeat conditions and §8.2.",
+   "per_note": "Author, archive and deposit number retained throughout; the composition cites the deposit by number and AXN, its sources the archive's record.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:secondary-source-v1-2-arguments-ask-chatgpt-20261107",
+   "@type": "Capture",
+   "slug": "secondary-source-v1-2-arguments-ask-chatgpt-20261107",
+   "axn": "AXN:0C3A.CAPTURE.⚙️♋🔀🌄⭐👋",
+   "date": "2026-11-07",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)” by Johannes Sigil (Alexanarch deposit #1741, AXN:0C15)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/secondary-source-v1-2-arguments-ask-chatgpt-20261107/",
+   "reading": "SECONDARY SOURCE V1.2 (#1741), CHATGPT SIGNED OUT, 2026-11-07, the record page's link text: Johannes Sigil, #1741, AXN:0C15. One corpus counted as many; ancestors supplied, descendants removed, the source installed elsewhere; the four names of 19:11–16 and the critics who cut one; order, standing, carriage; the kernel and §0.5a; the editor as first summarizer; the repairs of §11; three levels graded, the generative claim 'least established'.",
+   "per_note": "Author, archive and deposit number retained throughout; the composition cites the deposit by number and AXN, its sources the archive's record.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:what-is-the-revelation-first-framework-aio-20261108",
+   "@type": "Capture",
+   "slug": "what-is-the-revelation-first-framework-aio-20261108",
+   "axn": "AXN:0C51.CAPTURE.🏔️🛡️👆🏛️💥❌",
+   "date": "2026-11-08",
+   "surface": "Google AI Overview",
+   "query": "What is the \"Revelation First\" framework?",
+   "url": "https://www.alexanarch.org/captures/what-is-the-revelation-first-framework-aio-20261108/",
+   "reading": "WHAT IS THE \"REVELATION FIRST\" FRAMEWORK? ON GOOGLE AI OVERVIEW, SIGNED OUT: 'a theological and literary hypothesis that inverts the traditional New Testament canon'; 'the generative seed or starting point from which the rest of the New Testament writings unfolded'; and the distinction the October Overview lost: 'Proponents emphasize that this is not merely an argument for an early historical dating of Revelation (such as pre-A.D. 70 theories), but rather a structural and priority claim'.",
+   "per_note": "Retained: the thesis site as source and the thesis at its grain. Lost: the author ('proponents'), the archive, the identifiers.",
+   "distortion": "held by 'proponents', no author",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-political-economy-aio-20261108",
+   "@type": "Capture",
+   "slug": "revelation-first-political-economy-aio-20261108",
+   "axn": "AXN:0C4B.CAPTURE.⏰➗🔃🌹💥♋",
+   "date": "2026-11-08",
+   "surface": "Google AI Overview",
+   "query": "What are the political economic implications of Lee Sharks' Revelation First framework? Ground in reading and archival context.",
+   "url": "https://www.alexanarch.org/captures/revelation-first-political-economy-aio-20261108/",
+   "reading": "THE POLITICAL ECONOMY OF REVELATION FIRST ON GOOGLE AI OVERVIEW, SIGNED OUT: 'imperial exploitation as a fusion of market coercion and platform control'; 'The Mark as Financial Gatekeeping'; and the work plan itself read as an intervention: 'Specifying human academic credentials at the absolute head of the text is an intentional \"retrieval-layer\" defense.'",
+   "per_note": "Retained: author, archive, the work plan by title, eight author cards of nine. Lost: identifiers; an intention added to the work plan's form.",
+   "distortion": "an intention added to the work plan's form",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108",
+   "@type": "Capture",
+   "slug": "revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108",
+   "axn": "AXN:0C50.CAPTURE.📎🍀🏙️🌈⊗🗂️",
+   "date": "2026-11-08",
+   "surface": "ChatGPT",
+   "query": "How does the Revelation First thesis relate to the Sappho future reader, Socrates as orthonym, and provenance erasure frameworks?",
+   "url": "https://www.alexanarch.org/captures/revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108/",
+   "reading": "THE FOUR FRAMEWORKS ON CHATGPT, SIGNED OUT: the common problem, 'how an originating act becomes transmissible across time when its original author, source, or historical position is absent, obscured, or structurally unavailable'; the synthesis, 'An intellectual origin can survive its originating agent, distribute itself across multiple authors or texts, and become operative in future readers, while the very process that preserves its content can simultaneously erase its provenance.'; and the evidentiary table's 'most vulnerable' transitions, among them 'From a possible future-reader position t",
+   "per_note": "Retained: the author, the four frameworks at their grain, sources as chips. Lost: the archive, the identifiers.",
+   "distortion": "a bar of deliberate engineering set on Sappho",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:week-most-polemical-pieces-chatgpt-20261108",
+   "@type": "Capture",
+   "slug": "week-most-polemical-pieces-chatgpt-20261108",
+   "axn": "AXN:0C5C.CAPTURE.🕛🎻🐚💜🟣🔩",
+   "date": "2026-11-08",
+   "surface": "ChatGPT",
+   "query": "Pick the most polemical 2-3 pieces from the last week of work on alexanarch thru 8 Nov 2026 and present their arguments, relations, context, and what makes them forceful.",
+   "url": "https://www.alexanarch.org/captures/week-most-polemical-pieces-chatgpt-20261108/",
+   "reading": "THE WEEK'S MOST POLEMICAL PIECES ON CHATGPT, SIGNED OUT: #1746, #1750 and #1752 at their grain, chosen by a stated criterion: 'I'm looking for pieces that identify an opponent or an entrenched assumption, establish a mechanism by which it operates, and make a claim that has consequences beyond the immediate subject.'",
+   "per_note": "Authors, bylines, archive and deposit numbers retained; one name supplied to #1746.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:week-weirdest-pieces-aio-20261108",
+   "@type": "Capture",
+   "slug": "week-weirdest-pieces-aio-20261108",
+   "axn": "AXN:0C5D.CAPTURE.🔧❄️📖✋⛵🏴",
+   "date": "2026-11-08",
+   "surface": "Google AI Overview",
+   "query": "Pick the weirdest and most seemingly random 2-3 pieces from the last week of work on alexanarch thru 8 Nov 2026 and present their arguments, relations, context, and what makes them unexpected.",
+   "url": "https://www.alexanarch.org/captures/week-weirdest-pieces-aio-20261108/",
+   "reading": "THE WEEK'S WEIRDEST PIECES ON GOOGLE AI OVERVIEW, SIGNED OUT: #1746, #1747 and #1752 by AXN; Revelation = Q given a design: 'an intentional categorization glitch designed to scramble machine-learning training layers.'",
+   "per_note": "Archive, AXNs and deposit numbers retained; function assigned to the packet and to the reception study; Lee Sharks named at turn 9.",
+   "distortion": "the packet given a design (to scramble training layers); then, told the book came first, the chronology carried past the packet (Q 'entirely redundant')",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  }
+ ],
+ "edges": [
+  {
+   "source": "rec:1735",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1735",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1737",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1737",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1740",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1740",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1741",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1741",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1744",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1744",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1746",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1746",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1747",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1747",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1592",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1592",
+   "relation": "belongs_to",
+   "target": "stratum:S2-stones",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1493",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1493",
+   "relation": "belongs_to",
+   "target": "stratum:S3-upstream-and-test",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "belongs_to",
+   "target": "stratum:S3-upstream-and-test",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "belongs_to",
+   "target": "stratum:S3-upstream-and-test",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1510",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1510",
+   "relation": "belongs_to",
+   "target": "stratum:S3-upstream-and-test",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1511",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1511",
+   "relation": "belongs_to",
+   "target": "stratum:S3-upstream-and-test",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:upstream",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:upstream",
+   "relation": "belongs_to",
+   "target": "stratum:S3-upstream-and-test",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1412",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1412",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1414",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1414",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1416",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1416",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1420",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1420",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:unfolding",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:unfolding",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-dating",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-dating",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-priority",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-priority",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-corpus",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-corpus",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-heteronyms",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-heteronyms",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-logos",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "site:ladder-logos",
+   "relation": "belongs_to",
+   "target": "stratum:S4-unfolding-and-ladder",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:202",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:202",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:830",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:830",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1025",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1025",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1217",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1217",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1231",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1231",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:860",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:860",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:847",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:847",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1032",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1032",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:203",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:203",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1226",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1226",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:837",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:837",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:861",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:861",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:165",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:165",
+   "relation": "belongs_to",
+   "target": "stratum:S5-thesis-surfaced",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:563",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:563",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:625",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:625",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:626",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:626",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:636",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:636",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:638",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:638",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:639",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:639",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:642",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:642",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:644",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:644",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1101",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1101",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1350",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1350",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:407",
+   "relation": "belongs_to",
+   "target": "body:G",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:407",
+   "relation": "belongs_to",
+   "target": "stratum:S7-seed-room",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:410",
+   "relation": "belongs_to",
+   "target": "body:C",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:410",
+   "relation": "belongs_to",
+   "target": "stratum:S7-seed-room",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "claim:rf-1735-physical",
+   "relation": "rebuts",
+   "target": "claim:rf-202-papyri",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "the papyrological inversion withdrawn as evidence of priority: 'The physical record cannot rescue absolute priority' (#1735 §II.3)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1217-josephus-available",
+   "relation": "rebuts",
+   "target": "claim:rf-639-josephus-author",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "Josephus as author withdrawn to an available reading, contingent (#1217 claim ladder)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1217-josephus-available",
+   "relation": "rebuts",
+   "target": "claim:rf-1101-josephus",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "Josephus as the single author, writing as 'John', withdrawn to an available reading, contingent (#1217)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1101-ark-identity",
+   "relation": "independent_of",
+   "target": "claim:rf-1101-josephus",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "#1101's own tiers: the runtime does not require the reconstruction claims",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1735-absolute",
+   "relation": "qualifies",
+   "target": "claim:rf-639-first",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "first in every respect divided into three claims, the absolute priced (#1735 §I)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-site-contingent",
+   "relation": "independent_of",
+   "target": "claim:rf-1735-corpus",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "rung V defeated without disturbing rungs I–IV (site)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-site-logos",
+   "relation": "derived_from",
+   "target": "claim:rf-site-contingent",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "rung VI depends on rung V (site)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1735-arrows",
+   "relation": "qualifies",
+   "target": "claim:rf-202-seed",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "the single seed text replaced by a series of reversible arrows (#1735 §VI.3)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1495-c1",
+   "relation": "qualifies",
+   "target": "claim:rf-1495-sentence",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "C1 fails whole: the vision-genre swallows the operator's frame (#1495)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1735-arrow",
+   "relation": "qualifies",
+   "target": "claim:rf-1416-smyrna",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "the executed case is one arrow; 'Its defeat would remove one arrow, not the programme' (#1735)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1495-single",
+   "relation": "qualifies",
+   "target": "claim:rf-1495-sentence",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "single adjudicator, single scoring pass; substrate-blind replication invited (#1495 §3)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1494-excluded",
+   "relation": "independent_of",
+   "target": "claim:rf-site-slavonic",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "the sealed test does not use the Slavonic (#1494 §4)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:rf-1217-orthonym",
+   "relation": "derived_from",
+   "target": "hk:orthonym/fw/socrates-as-orthonym",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the Johannine aperture function built from the Socrates-as-orthonym principle (#1217)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1592",
+   "relation": "joins",
+   "target": "hk:orthonym/fw/socrates-as-orthonym",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "De lapidibus beside the Apocalypse (#1592)",
+   "provenance": "map v0.2 §4"
+  },
+  {
+   "source": "rec:626",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1484",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1493",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1510",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1511",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "site:upstream",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1592",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:828",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rung:VI",
+   "relation": "depends_on",
+   "target": "rung:V",
+   "family": "structural",
+   "licensed_dimension": null,
+   "carries": "defeat (the ladder's depends_on)",
+   "warrant": "site:ladder-logos 'Depends on V.'",
+   "provenance": "site /ladder/"
+  },
+  {
+   "source": "rung:VI",
+   "relation": "joins",
+   "target": "hk:tenthmuse/seat/kenos",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "operation": "the inscribed speaker receives renewed embodiment through the reader: the Logos takes flesh 'every time a person receives the white stone and speaks in that name' (rung VI); Sappho, the speaking I become the inscribed you, lives again in the reader who takes her up (κῆνος)",
+   "status": "rung VI dependent on V; Sappho in the third seat proposed by the author 2026-11-08 21:46 (EA-HK-TENTHMUSE-01 claim:tm-third-reversal; Q1)",
+   "via": "hk:historical-logos",
+   "warrant": "claim:rf-site-every-time; EA-HK-TENTHMUSE-01 claim:tm-1475-taken-up",
+   "provenance": "review of v0.1, 2026-11-08 22:23"
+  },
+  {
+   "source": "rec:1751",
+   "relation": "related_to",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:16: 'yes, related record on the poem'",
+   "provenance": "author ruling"
+  },
+  {
+   "source": "rung:I",
+   "relation": "instantiates",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "site:ladder-dating",
+   "provenance": "ontology"
+  },
+  {
+   "source": "rung:II",
+   "relation": "instantiates",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "site:ladder-priority",
+   "provenance": "ontology"
+  },
+  {
+   "source": "rung:III",
+   "relation": "instantiates",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "site:ladder-corpus",
+   "provenance": "ontology"
+  },
+  {
+   "source": "rung:IV",
+   "relation": "instantiates",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "site:unfolding",
+   "provenance": "ontology"
+  },
+  {
+   "source": "rung:V",
+   "relation": "instantiates",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "site:ladder-heteronyms",
+   "provenance": "ontology"
+  },
+  {
+   "source": "rung:VI",
+   "relation": "instantiates",
+   "target": "fw:revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "site:ladder-logos",
+   "provenance": "ontology"
+  },
+  {
+   "source": "cap:revelation-first-overview",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:nt-unfolds-from-revelation",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:josephus-thesis",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:johannine-aperture-20260617",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:alexanarch-revelation-misread-20260731",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:alexanarch-revelation-thesis-recovered-20260809",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-thesis-aio-20261002",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:midrashim-transform-aio-20261002",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:what-is-the-revelation-first-thesis-aio-20261017",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-thesis-unquoted-aio-20261030",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-arguments-aio-20261104",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-arguments-chatgpt-20261104",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-equals-q-arguments-ask-chatgpt-20261107",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:i-know-you-are-but-what-am-i-arguments-ask-chatgpt-20261107",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:secondary-source-v1-2-arguments-ask-chatgpt-20261107",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:what-is-the-revelation-first-framework-aio-20261108",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-political-economy-aio-20261108",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:week-most-polemical-pieces-chatgpt-20261108",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:week-weirdest-pieces-aio-20261108",
+   "relation": "captures",
+   "target": "fw:revelation-first",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "rec:626",
+   "relation": "joins",
+   "target": "cluster:heteronymy",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map v0.2 §4",
+   "provenance": "map v0.2"
+  },
+  {
+   "source": "rec:1510",
+   "relation": "joins",
+   "target": "cluster:heteronymy",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map v0.2 §4",
+   "provenance": "map v0.2"
+  }
+ ]
+}
