@@ -1225,6 +1225,30 @@
       "string",
       "null"
      ]
+    },
+    "placement": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "lead",
+      null
+     ],
+     "description": "'lead' opens the record page, its description and its JSON-LD with the notice's lead sentence (2026-11-08)."
+    },
+    "lead": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "The lead sentence placed at the head of the record page when placement is 'lead'; authored apparatus."
+    },
+    "lead_basis": {
+     "type": [
+      "string",
+      "null"
+     ]
     }
    }
   },
