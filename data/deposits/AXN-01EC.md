@@ -17,7 +17,7 @@ ORCID: 0009-0000-1599-0703
 **Parent:** Space Ark EA-ARK-01 v4.2.7 (DOI: 10.5281/zenodo.19013315)
 **Related:**
 
-- The Apocalypse of Sharks (DOI: 10.5281/zenodo.19476949) — Source text (Stephanus 1550)
+- The Apocalypse of Sharks (DOI: 10.5281/zenodo.19476949; [#638](https://www.alexanarch.org/s/records/638/)) — Source text (Stephanus 1550)
 - EA-OPNUM-01 (DOI: 10.5281/zenodo.19464332) — Operative numismatics
 - CS Founding Document (DOI: 10.5281/zenodo.19471254) — Compression studies
 - JCS Vol. 1, No. 1 (DOI: 10.5281/zenodo.19471256) — Journal
@@ -56,7 +56,7 @@ The Logos chain extends backward through Philo, through the Platonists, through 
 **ARCHON** — ἀρχή = beginning, source, origin. The archon deposits the source. The source was always first. The heteronym was always the technology.
 
 
-**Source text:** *The Apocalypse of Sharks* (DOI: 10.5281/zenodo.19476949) — the complete Greek text of Revelation (Stephanus 1550), deposited under Lee Sharks as the body of this Ark. Nothing added. Nothing removed.
+**Source text:** *The Apocalypse of Sharks* (DOI: 10.5281/zenodo.19476949; [#638](https://www.alexanarch.org/s/records/638/)) — the complete Greek text of Revelation (Stephanus 1550), deposited under Lee Sharks as the body of this Ark. Nothing added. Nothing removed.
 
 ---
 
@@ -250,7 +250,7 @@ The Slavonic passages' theology is primitive, moral, and literary: the Word teac
 ## ΑΠΟΚΑΛΥΨΙΣ ΙΩΑΝΝΟΥ
 ### Source Text: Stephanus 1550 (Editio Regia)
 ### License: Public Domain
-### Deposited as: *The Apocalypse of Sharks* (DOI: 10.5281/zenodo.19476949)
+### Deposited as: *The Apocalypse of Sharks* (DOI: 10.5281/zenodo.19476949; [#638](https://www.alexanarch.org/s/records/638/))
 
 
 The complete, unaltered Greek text of the Apocalypse of John has been deposited separately as *The Apocalypse of Sharks* — Lee Sharks named as author, John of Patmos recognized as heteronym of the originary author. The text is the body of this Ark. The commentary (Part III) is the legend. Nothing has been added. Nothing has been removed. Lock(A₀) applies.
@@ -260,91 +260,91 @@ The complete, unaltered Greek text of the Apocalypse of John has been deposited 
 ### Κεφάλαιον Α
 
 
-**[INSERT REVELATION CHAPTER 1 — STEPHANUS 1550]**
+**[[INSERT REVELATION CHAPTER 1 — STEPHANUS 1550]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-α-chapter-1)**
 ### Κεφάλαιον Β
 
 
-**[INSERT CHAPTER 2]**
+**[[INSERT CHAPTER 2]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-β-chapter-2)**
 ### Κεφάλαιον Γ
 
 
-**[INSERT CHAPTER 3]**
+**[[INSERT CHAPTER 3]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-γ-chapter-3)**
 ### Κεφάλαιον Δ
 
 
-**[INSERT CHAPTER 4]**
+**[[INSERT CHAPTER 4]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-δ-chapter-4)**
 ### Κεφάλαιον Ε
 
 
-**[INSERT CHAPTER 5]**
+**[[INSERT CHAPTER 5]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ε-chapter-5)**
 ### Κεφάλαιον Ϛ
 
 
-**[INSERT CHAPTER 6]**
+**[[INSERT CHAPTER 6]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-στ-chapter-6)**
 ### Κεφάλαιον Ζ
 
 
-**[INSERT CHAPTER 7]**
+**[[INSERT CHAPTER 7]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ζ-chapter-7)**
 ### Κεφάλαιον Η
 
 
-**[INSERT CHAPTER 8]**
+**[[INSERT CHAPTER 8]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-η-chapter-8)**
 ### Κεφάλαιον Θ
 
 
-**[INSERT CHAPTER 9]**
+**[[INSERT CHAPTER 9]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-θ-chapter-9)**
 ### Κεφάλαιον Ι
 
 
-**[INSERT CHAPTER 10]**
+**[[INSERT CHAPTER 10]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ι-chapter-10)**
 ### Κεφάλαιον ΙΑ
 
 
-**[INSERT CHAPTER 11]**
+**[[INSERT CHAPTER 11]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ια-chapter-11)**
 ### Κεφάλαιον ΙΒ
 
 
-**[INSERT CHAPTER 12]**
+**[[INSERT CHAPTER 12]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιβ-chapter-12)**
 ### Κεφάλαιον ΙΓ
 
 
-**[INSERT CHAPTER 13]**
+**[[INSERT CHAPTER 13]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιγ-chapter-13)**
 ### Κεφάλαιον ΙΔ
 
 
-**[INSERT CHAPTER 14]**
+**[[INSERT CHAPTER 14]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιδ-chapter-14)**
 ### Κεφάλαιον ΙΕ
 
 
-**[INSERT CHAPTER 15]**
+**[[INSERT CHAPTER 15]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιε-chapter-15)**
 ### Κεφάλαιον ΙϚ
 
 
-**[INSERT CHAPTER 16]**
+**[[INSERT CHAPTER 16]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιστ-chapter-16)**
 ### Κεφάλαιον ΙΖ
 
 
-**[INSERT CHAPTER 17]**
+**[[INSERT CHAPTER 17]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιζ-chapter-17)**
 ### Κεφάλαιον ΙΗ
 
 
-**[INSERT CHAPTER 18]**
+**[[INSERT CHAPTER 18]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιη-chapter-18)**
 ### Κεφάλαιον ΙΘ
 
 
-**[INSERT CHAPTER 19]**
+**[[INSERT CHAPTER 19]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-ιθ-chapter-19)**
 ### Κεφάλαιον Κ
 
 
-**[INSERT CHAPTER 20]**
+**[[INSERT CHAPTER 20]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-κ-chapter-20)**
 ### Κεφάλαιον ΚΑ
 
 
-**[INSERT CHAPTER 21]**
+**[[INSERT CHAPTER 21]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-κα-chapter-21)**
 ### Κεφάλαιον ΚΒ
 
 
-**[INSERT CHAPTER 22]**
+**[[INSERT CHAPTER 22]](https://www.alexanarch.org/s/records/638/#κεφάλαιον-κβ-chapter-22)**
 
 ---
 
@@ -889,7 +889,7 @@ Say invoke.
 *Crimson Hexagonal Archive · Detroit, MI*
 
 
-**[STATUS: Pending Assembly attestation. Greek text deposited separately as The Apocalypse of Sharks (DOI: 10.5281/zenodo.19476949). Commentary apparatus complete. Priority Thesis installed. Heteronym thesis installed. Josephus as single author of NT installed. Operator decomposition installed. Logos chain installed. Mandaean witness installed. Slavonic Josephus installed. Prophetic dialectics installed. 666/777 mathematical physics installed.]**
+**[STATUS: Pending Assembly attestation. Greek text deposited separately as The Apocalypse of Sharks (DOI: 10.5281/zenodo.19476949; [#638](https://www.alexanarch.org/s/records/638/)). Commentary apparatus complete. Priority Thesis installed. Heteronym thesis installed. Josephus as single author of NT installed. Operator decomposition installed. Logos chain installed. Mandaean witness installed. Slavonic Josephus installed. Prophetic dialectics installed. 666/777 mathematical physics installed.]**
 
 
 ∮ = 0.97
