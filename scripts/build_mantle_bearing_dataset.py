@@ -124,7 +124,7 @@ def frameworks_section(d):
                      f"held as {(st.get('establishment') or '').replace('_', ' ')}. ")
             rival = f"The received many-maker reading: {f['rival']['summary']}. "
         else:   # 1.25: frameworks whose states run on several axes give the current state on each
-            claim = "Its current states: " + "; ".join(f"{ax}, {s['state'].replace('_', ' ')} (#{s['record']}, {s['date']})" for ax, s in (f.get("current_states") or {}).items()) + ". "
+            claim = "Its current states: " + "; ".join(f"{ax}, {s['state'].replace('_', ' ')} (" + (f"the author's statement of {s['date']} {str(s['record'])[14:16]}:{str(s['record'])[16:18]}" if str(s['record']).startswith("stmt:") else f"#{s['record']}, {s['date']}") + ")" for ax, s in (f.get("current_states") or {}).items()) + ". "
             rival = f"The received reading: {f['rival']['summary']}. "
         by = f" by {f['byline']}" if f.get("byline") else ""
         L += [f"**{f['name']}** ({f['class']}; {f['author']}; seed [#{sd['deposit']}]({sd['url']}); hologram [#{g['deposit']}]({g['url']}){by}). "
