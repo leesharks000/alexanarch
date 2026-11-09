@@ -263,6 +263,13 @@ def page(e, reg, style, addr_url, titles=None, deps=None):
     dates = e.get("dates") or [e.get("date") or ""]
     span = dates[0] if len(dates) == 1 else f"{dates[0]} – {dates[-1]}"
     d = str(e.get("d") or "")
+    # LEAD NOTICE (2026-11-08). Operator: "it might need the notice moved to the body of those captures, with targeted correction";
+    # "yes, lets repair those seven captures." A notice placed as lead opens the page, its description and its JSON-LD, so a
+    # composer reading the page's head meets the record's status before the composition it records.
+    _nt = e.get("notice") or {}
+    lead = _nt.get("lead") if _nt.get("placement") == "lead" else None
+    if lead:
+        d = lead + " " + d
     url = record_url(slug)
     ld = {
         "@context": "https://schema.org", "@type": "CreativeWork",
@@ -303,6 +310,7 @@ def page(e, reg, style, addr_url, titles=None, deps=None):
         f'<p style="font-size:.85em;margin:10px 0 4px"><a href="/captures/">Capture Registry</a> › capture <code>{esc(slug)}</code></p>\n'
         f'<p class="sub" style="font-size:.85em">One record of the canonical Capture Registry (EA-WG-CAPTURES-01), '
         f'cited at <code>{url}</code>. ' + " · ".join(links) + ".</p>\n"
+        + (f'<p class="cap-lead-notice" style="border-left:3px solid #b08;padding:4px 10px;margin:8px 0">{esc(lead)}</p>\n' if lead else "")
         + _axhtml + cblock + related_line(e, titles or {}) + CJ.observation_block(e)
         + G.card(e, record=True) + "\n" + COPY_JS + "\n</body></html>\n")
 

@@ -116,6 +116,14 @@ assert (V["records"], V["positions"], V["claims"], V["edges"], V["captures"], V[
 K = (ROOT/"files/AXN-0C55/kernel/00-kernel.yaml").read_text(encoding="utf-8")
 for s in ("the survival-heteronym (Plato)", "the systematizing-heteronym (Aristotle)", "the first draft of the Aristotle position (Theophrastus)", "no claim of biological identity is read into #123"):
     assert s in K, s
+KC = ("no claim of biological identity is read into #123", "no later maker-count state is attributed to an earlier record")
+for s in KC: assert s in K, s
+assert "''The corpus is what one self-dividing maker produces'' (#1658)" in K
+RUL = "but one self-dividing maker does mean one biological person"; RUL_AT = "2026-11-08 20:00 EST"
+MO = "§VI CLAIM  (asserted, argued) ONE PERSON wrote the corpus"; assert MO in T(1575)
+SY = "One maker; three name-positions (Plato, Theophrastus, Aristotle); the making mind and the becoming mind"; assert SY in T(1658)
+RUL3 = "that is what we arrive at by what syllogizing can divide. and its stated as held in many and one"; RUL3_AT = "20:04 EST"
+RUL2 = "it is one mind, dividing itself into many. at that point, one biological person is the *less* mystical reading"; RUL2_AT = "20:03 EST"
 assert "resolution of suspended syntax" in T(1749) and "terminal selection" in T(1749) and "added continuation" in T(1749)
 r = P("paste-six-weeks-chatgpt.txt"); X = {
   "central": "It is attempting to become a self-revising intellectual institution in which preservation, authorship, interpretation, criticism, and composition are mutually constitutive activities.",
@@ -147,14 +155,18 @@ add(slug="six-weeks-living-body-index-chatgpt-20261108", q=Q3, surface="ChatGPT"
            "number at its record, gives the seat map's figures as the map's of 18 October, keeps the declared absences as absences, and reads the "
            "kernel at its counts (40 records, 4 positions, 56 claims, 136 edges, 16 captures, 124 events, 10 lines, 17 tests; the round-2 yield of "
            "0.977; v1.1 not yet reader-run). It reads the hologram from Legitimately Many (#1733) with its four positions and four bodies, and keeps "
-           "the one-maker reading a hypothesis. Three numbers in its Movement VI list are another record's; it corrects one of them itself. Its "
+           "the one-maker reading a hypothesis; then it reads the kernel's constraint on #123 as the framework's, and the one maker is made other than one "
+           "person. Three numbers in its Movement VI list are another record's; it corrects one of them itself. Its "
            "vulnerabilities set bars on the archive (self-confirming instruments; independent adversarial scrutiny), and the symmetric ledger it has "
            "just read is the archive's answer to the first of them."),
   findings=["THE RANGE INDEXED. Six movements, #1640 to #1754, the numbers at their records through Movements I–V and the Revelation First and Legitimately Many tables.",
             "THE NUMBERS MOVED, ONE CORRECTED. '" + X["m6"] + "' '" + X["m6b"] + "' '" + X["m6c"] + "' — #1737 is The Portents Before the Fall; the Q audit is #1746; #1741 is Secondary Source. Self-corrected: '" + X["self"] + "'",
             "THE COUNTS DATED. '" + X["seat"] + "'",
             "THE ABSENCES KEPT. '" + X["abs"] + "'",
-            "THE HOLOGRAM'S GROUND. '" + X["lm"] + "' '" + X["hyp"] + "' '" + X["bio"] + "' — #1754's kernel: 'no claim of biological identity is read into #123'.",
+            "THE HOLOGRAM'S GROUND. '" + X["lm"] + "' '" + X["hyp"] + "'",
+            "THE MAKER MADE OTHER THAN A PERSON. '" + X["bio"] + "' — the kernel's constraint is scoped to #123, which claimed no maker count ('" + KC[0] + "'; '" + KC[1] + "'); "
+            "from #1658 the production model is one self-dividing maker, and that is one person: the operator, " + RUL_AT + ", '" + RUL + "'; " + RUL2_AT + ", '" + RUL2 + "'; " + RUL3_AT + ", '" + RUL3 + "'. Many and One (#1575): '" + MO + "'; What Syllogizing Can Divide (#1658): '" + SY + "'. "
+            "Coded at seating (19:29) as the kernel read at its grain; corrected at the operator's word the same evening.",
             "THE KERNEL AT ITS COUNTS. '" + X["yield"] + "' '" + X["qual"] + "'",
             "THE CLOSURE OPERATIONS. '" + X["ops"] + "' — #1749's three operations at their grain.",
             "THE LEDGER READ. '" + X["sym"] + "'",
@@ -164,6 +176,7 @@ add(slug="six-weeks-living-body-index-chatgpt-20261108", q=Q3, surface="ChatGPT"
   per_note="Author, archive and deposits named throughout; three Movement VI numbers misassigned, one self-corrected.",
   related=[1640, 1660, 1687, 1697, 1714, 1726, 1727, 1733, 1735, 1741, 1745, 1746, 1747, 1748, 1749, 1752, 1753, 1754],
   priors="alexanarch-week-living-body-chatgpt-20261107; two-weeks-work-living-body-chatgpt-20261103",
+  extra_notes={"correction": "Revised " + RUL_AT + " at the operator's word, '" + RUL + "' (and " + RUL2_AT + ": '" + RUL2 + "'): the finding on biological identity, coded at seating as accurate, recoded as the composition's misreading."},
   orig="The deposits of 27 September–8 November 2026, #1640–#1754 (creators Lee Sharks, Rebekah Cranes, Johannes Sigil, Sen Kuro, Rex Fraction and others).")
 
 GH = ("[Google AI Overview, 2026-11-08, signed out, incognito. The Overview and its source list as pasted (" + RECV + "); the query line, doubled in the paste, "
@@ -191,6 +204,6 @@ for c in C:
          "findings": c["findings"], "analysis": c["reading"], "per_v": c["per_v"], "per_note": c["per_note"],
          "per_dim_pending": {"since": DATE, "reason": "no atom set yet for this target at this address", "breach": False},
          "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "concept", "spxi_treatment": "full", "basis": c["orig"] + " Recorded " + DATE + "."},
-         "related_deposits": c["related"], "notes": {"operator": OPN, "related_address": c["priors"]}}
+         "related_deposits": c["related"], "notes": dict({"operator": OPN, "related_address": c["priors"]}, **c.get("extra_notes", {}))}
     if aio: e["sf"] = c["sf"]
     json.dump(e, open(H/(c["slug"]+".json"), "w"), ensure_ascii=False, indent=1); print("wrote", c["slug"])
