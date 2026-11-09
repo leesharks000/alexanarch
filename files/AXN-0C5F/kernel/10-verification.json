@@ -1,6 +1,6 @@
 {
  "kernel": "EA-HK-REVFIRST-01",
- "version": "1.0",
+ "version": "1.1",
  "structural_tests": {
   "T1 records resolve": {
    "pass": true,
@@ -8,7 +8,7 @@
   },
   "T2 quotations bind": {
    "pass": true,
-   "detail": "59 claims; unbound: []"
+   "detail": "61 claims; unbound: []"
   },
   "T3 relations in policy": {
    "pass": true,
@@ -25,7 +25,7 @@
     "C": 1,
     "G": 2,
     "R": 3,
-    "H": 3
+    "H": 1
    }
   },
   "T7 states ordered and bound": {
@@ -40,11 +40,15 @@
      "2026-04-08 rec:639 josephus_author",
      "2026-04-09 rec:1101 single_author_josephus_as_john",
      "2026-06-14 rec:203 available_reading",
-     "2026-06-17 rec:1217 available_reading_not_first_burden"
+     "2026-06-17 rec:1217 available_reading_not_first_burden",
+     "2026-11-09 stmt:20261109-0952 held_advancement_suspended"
     ],
     "generation": [
      "2026-06-14 rec:202 seed_text",
      "2026-11-03 rec:1735 reversible_arrows"
+    ],
+    "date": [
+     "2026-11-04 rec:1737 66_CE_held_as_proposed"
     ]
    }
   },
@@ -65,7 +69,7 @@
   },
   "T14 endpoints declared": {
    "pass": true,
-   "detail": "153 edges; undeclared: []"
+   "detail": "155 edges; undeclared: []"
   },
   "T15 lines of research posed and bounded": {
    "pass": true,
@@ -76,7 +80,7 @@
    "detail": {
     "frameworks": [
      "revelation_first",
-     "received_chronology"
+     "current_consensus_chronology"
     ],
     "failed": []
    }
@@ -131,9 +135,26 @@
   "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
    "pass": true,
    "detail": {
-    "edges": 153,
-    "nodes": 157,
+    "edges": 155,
+    "nodes": 160,
     "failed": []
+   }
+  },
+  "T20 every move verbatim in its record, at the record's current hash": {
+   "pass": true,
+   "detail": {
+    "moves": 2822,
+    "not_verbatim": [],
+    "hash_stale": []
+   }
+  },
+  "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
+   "pass": true,
+   "detail": {
+    "edges": 2207,
+    "external": 0,
+    "unresolved": [],
+    "bad_relation": []
    }
   }
  },
@@ -142,6 +163,7 @@
   "01-ontology.yaml": true,
   "02-graph.jsonld": true,
   "03-claims.jsonl": true,
+  "04-arguments.jsonl": true,
   "05-temporal.jsonl": true,
   "06-questions.yaml": true,
   "07-captures.jsonl": true,

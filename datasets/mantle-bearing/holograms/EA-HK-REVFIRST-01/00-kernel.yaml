@@ -1,5 +1,5 @@
 id: EA-HK-REVFIRST-01
-version: '1.0'
+version: '1.1'
 built: '2026-11-09'
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 title: 'And the Last Shall Be First: Revelation First — The Framework Hologram'
@@ -27,8 +27,8 @@ compression_survival_summary: 'Revelation First is Lee Sharks''s framework (Crim
   (executable), V the Josephus thesis (contingent), VI the permanent incarnation (dependent on V); V and VI fall without disturbing I–IV. Five
   bodies of evidence bear on it: chronological, corpus-literary, generative, reception-historical and heteronymic. The framework''s states run
   from first in every respect with Josephus as author (#639, April) through first not early (#202, June) and the Josephus thesis bounded as an
-  available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The received chronology — Pauline priority by
-  the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied
+  available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The current consensus chronology — Pauline priority
+  by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied
   — is evaluated on the same bodies and rules: the burden is symmetrical (#202).'
 invariants:
 - 'INV-1 First is not early: a summary that reduces the thesis to early dating has erased the primary claim (#202).'
@@ -344,14 +344,8 @@ corrections:
 - original: claim:rf-202-papyri
   correction: claim:rf-1735-physical
   relation: rebuts
-- original: claim:rf-639-josephus-author
-  correction: claim:rf-1217-josephus-available
-  relation: rebuts
-- original: claim:rf-1101-josephus
-  correction: claim:rf-1217-josephus-available
-  relation: rebuts
 rival:
-  node: fw:received-chronology
+  node: fw:current-consensus-chronology
   summary: established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship
     owed as the comparator on body H
 symmetric_ledger:
@@ -363,7 +357,7 @@ symmetric_ledger:
     is to prevent the maximal claim from hiding behind weaker claims and to prevent rejection of the maximal claim from erasing findings that
     do not depend on it.'' Rungs V and VI are defeated without disturbing I–IV.'
   rival_admission: A further chronology enters as a rival when it names an external or material anchor (RD) or a documented corpus (RC); a chronology
-    only logically possible is a form of the received chronology and carries its status.
+    only logically possible is a form of the current consensus chronology and carries its status.
   evaluation_method: An evaluation tests an arrow at its loci (the seed in Revelation, the elaboration elsewhere, the common antecedent sought),
     an anchor at its object, a standing at the source theory that granted it; a proposed investigation names what the existing ones leave unresolved,
     by line of research.
@@ -380,7 +374,7 @@ symmetric_ledger:
         - rf-1735-absolute
         - rf-1735-physical
         - rf-site-reversible
-      received_chronology:
+      current_consensus_chronology:
         text: the synchronism dates Gallio and reaches 1 Thessalonians only through Acts (site rung II); the Irenaean anchor is a reception memory
           and not an inscriptional date (site rung I). Not established by an external or material anchor.
         warrants:
@@ -398,7 +392,7 @@ symmetric_ledger:
         - rf-1735-archetypal
         - rf-1735-three-statuses
         - rf-site-direction
-      received_chronology:
+      current_consensus_chronology:
         text: no first-century sevenfold Pauline collection is evidenced, by the concession of a Pauline-priority account (site rung III).
         warrants:
         - rv-site-collection
@@ -413,7 +407,7 @@ symmetric_ledger:
         - rf-1747-grades
         - rf-1735-arrow
         - rf-site-between-inferences
-      received_chronology:
+      current_consensus_chronology:
         text: the genre objection explains the letters' missing circumstances and leaves their Christian forms' missing ancestors unexplained
           (#1735 §VI.2); Revelation against Q's requirements is graded, three met (#1747). The derivative standing is a reception (#1741), and
           no direction is demonstrated by it.
@@ -429,7 +423,7 @@ symmetric_ledger:
         warrants:
         - rv-1741-separate
         - rf-830-baseline
-      received_chronology:
+      current_consensus_chronology:
         text: the reconstructed sources hold the four powers of evidentiary status — presupposition, assignment, text and candidacy — and the
           extant Apocalypse holds none (#1746); the reception is documented and is not asked to prove either framework (#1741).
         warrants:
@@ -447,7 +441,7 @@ symmetric_ledger:
         - rf-1217-aperture
         - rf-site-contingent
         - rf-site-logos
-      received_chronology:
+      current_consensus_chronology:
         text: ordinary multiple authorship stands as the economical account that defeats rung V wherever it explains the phenomena better (site
           rung V); it is owed as a comparator, stated wherever it is used.
         warrants:
@@ -555,3 +549,73 @@ acceptance:
       - every relation with its licensed dimension
       - every endpoint declared
       - provenance on every record and surface page
+bounds:
+- held: claim:rf-639-josephus-author
+  bounded_by: claim:rf-1217-josephus-available
+  relation: bounds
+  warrant: 'Josephus as author held, its strength bounded: the framework does not require it, and it becomes newly intelligible if Revelation
+    stands first (#1217 claim ladder); its advancement suspended by the author (2026-11-09 09:52)'
+- held: claim:rf-1101-josephus
+  bounded_by: claim:rf-1217-josephus-available
+  relation: bounds
+  warrant: 'Josephus as the single author, writing as ''John'', held at #1101''s own tier (''high-risk, high-reward historical hypotheses''),
+    its strength bounded by #1217; its advancement suspended by the author (2026-11-09 09:52)'
+argument_layer:
+  file: 04-arguments.jsonl
+  moves: 2822
+  edges: 2207
+  records_with_moves: 42
+  records_without_moves: []
+  by_kind:
+    test: 62
+    method: 301
+    datum: 724
+    count: 66
+    inference: 349
+    finding: 342
+    price: 85
+    rival: 93
+    reply: 100
+    defeat: 60
+    hypothesis: 352
+    state: 288
+  kinds:
+  - test
+  - method
+  - datum
+  - count
+  - inference
+  - finding
+  - price
+  - rival
+  - reply
+  - defeat
+  - hypothesis
+  - state
+  relations:
+    supports: the move is evidence or ground for its target
+    infers_from: the move is concluded from its target
+    answers: a reply to a rival position
+    prices: a cost the record names against its own target claim
+    defeats_if: a stated condition under which the target falls
+    applies: the move applies a method or test to its target
+    qualifies: the move limits or grades its target
+    bounds: the move sets the strength or scope of its target, leaving it held
+    develops: the move extends its target
+    revises: the move replaces its target in a later state of the record or of the archive
+  quotations_stale_at_build: []
+  how_read: 'nine parallel readers, 2026-11-09, one range of records each, every record read in full, every quotation extracted from the seated
+    text and asserted verbatim (check_args.py); the calibration exemplar #1735 drafted in session'
+  reading_instruction: 'A reader reconstructing a record''s argument reads its moves in 04-arguments.jsonl in order with their edges: data and
+    counts support inferences and findings; prices, rivals, replies and defeat conditions stand beside the claims they bear on; hypotheses and
+    states keep the strength the record gives them. Each quotation is verbatim, bound to the record''s hash.'
+author_statements:
+- date: 2026-11-09T09:52-05:00
+  where: in session, on an unprimed ChatGPT reading of the v1.0 hologram; first deposited with this kernel
+  text: unprimed chatgpt just characterized revelation first as having withdrawn the josephus thesis... but to my knowledge i have not withdrawn
+    the josephus thesis - i have suspended advancing the argument as too speculative to advance until the literary genetic argument is more firmly
+    established. i still hold it as highly likely, particularly given the slavonic josephus materials. is all the evidence represented?
+  status: 'the author''s present position on rung V: held, its advancement suspended until the literary-genetic argument is more firmly established.
+    The records hold the thesis at the strengths they give it: #639 and #1101 state it (Josephus as author; #1101''s own tier, ''high-risk, high-reward
+    historical hypotheses''); #203, #1226 and #1217 bound it as an available reading that the framework does not require; #1412 bounds its own
+    contribution. v1.0 coded #1217''s bound as a withdrawal; v1.1 codes it as a bound.'

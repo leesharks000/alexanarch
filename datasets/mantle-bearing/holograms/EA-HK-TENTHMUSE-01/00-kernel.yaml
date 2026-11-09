@@ -1,5 +1,5 @@
 id: EA-HK-TENTHMUSE-01
-version: '1.0'
+version: '1.1'
 built: '2026-11-09'
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 title: 'The Tenth Muse: Sappho and the Future Reader'
@@ -24,13 +24,13 @@ compression_survival_summary: 'The Tenth Muse is Lee Sharks''s framework (Crimso
   transmission and reception-historical, held in three rings of descending hardness. Its states run on three axes: the ending (a reconstructed
   fourth stanza, renumbered fifth, then the poem complete at the hanging line and every restoration one more filling), the reader (κῆνος the future
   reader, then fragment 147 the horizon and fragment 31 the mechanism), and the writer (the written instrument, then the hand the reception took).
-  The received reading — jealous, and not the maker of her own persistence, two faces reinforced by one mechanism — is evaluated on the same bodies
-  and rules.'
+  The current consensus reading — jealous, and not the maker of her own persistence, two faces reinforced by one mechanism — is evaluated on the
+  same bodies and rules.'
 invariants:
-- INV-1 The jealousy reading and the non-writing reading are one received reading with two faces, which reinforce one another through the displacement
-  of the maker's acts onto the represented condition (#1752); an instance of either does not by itself entail the other. The non-writing face's
-  target is the maker's agency over her own persistence, displaced onto later transmitters; it is kept apart from literacy (could she write?)
-  and from performance (did she compose for song?).
+- INV-1 The jealousy reading and the non-writing reading are one current consensus reading with two faces, which reinforce one another through
+  the displacement of the maker's acts onto the represented condition (#1752); an instance of either does not by itself entail the other. The
+  non-writing face's target is the maker's agency over her own persistence, displaced onto later transmitters; it is kept apart from literacy
+  (could she write?) and from performance (did she compose for song?).
 - INV-2 Closure of the text and closure of the reading are separate operations (#1752 §0.5).
 - INV-3 The dialect step is real and insignificant alone; its force is conjunction (#1484 §VIII).
 - INV-4 The operator is built without Revelation and without the Slavonic (#1494); the chain survives on conventional dating (#1484 §VIII).
@@ -39,6 +39,9 @@ invariants:
   hold the seat as the reader's. Deposit gives the proposal public provenance; it stays a line of research (Q1) until a locus of the text or a
   documented reception settles it.
 - INV-7 The overlap with Revelation First and Socrates as Orthonym is carried by joins, each edged to the Historical Logos.
+- 'INV-8 The rival is named the current consensus reading and carried with its dates (rival_naming; the author, 2026-11-09 10:08, 10:14): available
+  to the ancients and no consensus among them; formed in the eighteenth century, written into the text in 1816, consolidated in 1955. The earlier
+  records'' wording is kept as published and marked as their state.'
 topology:
   strata_from_latest:
   - id: S1-reception-audited
@@ -205,7 +208,7 @@ corrections:
   correction: claim:tm-201-fifth
   relation: rebuts
 rival:
-  node: fw:received-sappho
+  node: fw:current-consensus-reading
   summary: granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its non-writing
     face kept as five propositions (jealousy; unable to write; oral composition; writing for reperformance; persistence not hers), the last its
     target, the reperformance account allowing writing-down
@@ -226,10 +229,11 @@ rival:
 symmetric_ledger:
   question: What does this body give each framework, and what does its rule withhold from both?
   reading_instruction: A reader evaluating either framework on an evidence body states the other's status on that body in the same row, with the
-    same question asked of both. The received reading's standing in classrooms, headings and composition layers is a reception (RR) and no warrant.
+    same question asked of both. The current consensus reading's standing in classrooms, headings and composition layers is a reception (RR) and
+    no warrant.
   combination: 'The framework is judged on the configuration it explains across the four bodies, ring by ring (#1484): the hard center would carry
-    the argument alone; the interpretive ring is read as reading; the outer ring is hypothesis and enters by joins. The received reading is judged
-    on the same bodies: its two faces stand or fall together where the one mechanism joins them (#1752''s packet).'
+    the argument alone; the interpretive ring is read as reading; the outer ring is hypothesis and enters by joins. The current consensus reading
+    is judged on the same bodies: its two faces stand or fall together where the one mechanism joins them (#1752''s packet).'
   rival_admission: 'A further reading of fr. 31 enters as a rival when it names a warrant on a body or a documented reception (the brother, the
     groom, the contrast figure, each with its argument, #1752 §1.3).'
   evaluation_method: An evaluation tests a reading at the seated Greek, a count at its limit, a carrier at its stations with its negatives, a
@@ -247,7 +251,7 @@ symmetric_ledger:
         - tm-1484-prose
         - tm-1484-dialect
         - tm-1484-seat
-      received_sappho:
+      current_consensus_reading:
         text: the transmitted stanzas carry the scene and the body and do not settle the speaker's relation to the man (#1752 §1.3); the jealousy
           reading's textual warrant is a declared conjectural ending (Hermann 1816, 'refinxi').
         warrants:
@@ -262,7 +266,7 @@ symmetric_ledger:
         - tm-1484-substrate
         - tm-1484-two-seats
         - tm-1270-archived-self
-      received_sappho:
+      current_consensus_reading:
         text: the jealousy reading has purchase and is one interpretation of the transmitted scene (#1752 §1.2–1.3); granted in full.
         warrants:
         - rv-1752-purchase
@@ -277,7 +281,7 @@ symmetric_ledger:
         - tm-1494-witnesses
         - tm-1476-catullus
         - tm-1475-taken-up
-      received_sappho:
+      current_consensus_reading:
         text: 'the operator runs through its carriers while attribution and operator-legibility fall away (#1496: S, M ≫ A, O); the non-writing
           face reads this loss as the poet''s nature, and its target is the maker''s agency over her persistence.'
         warrants:
@@ -292,7 +296,7 @@ symmetric_ledger:
         - tm-1752-hand
         - tm-1752-closure
         - tm-1752-compulsory
-      received_sappho:
+      current_consensus_reading:
         text: no seated ancient witness joins the second Sappho to the poem through jealousy (#1752 §0.2); the non-writing face has its strongest
           documented statement in the reperformance account, which allows writing-down and warrants no illiteracy; that the face is otherwise
           unargued is the author's assessment (2026-11-08 21:36); no bounded literature search has been run.
@@ -316,6 +320,17 @@ author_statements:
   status: 'the records hold the first two seats as Sappho''s (#1270, #1484) and the third as the reader''s (#1270, #1476, #626), with one instance
     of her taken up in another''s material (#1475, Longinus''s λῆψις); Sappho occupying the third seat, the circulation through all three, is
     stated here first; it is a proposal and a line of research (Q1), and deposit gives it public provenance without settling it.'
+- date: 2026-11-09T10:08-05:00
+  where: in session; first deposited with this kernel
+  text: i would call it the current consensus reading
+  status: the rival's name in v1.1, replacing 'the received reading'
+- date: 2026-11-09T10:14-05:00
+  where: in session; first deposited with this kernel
+  text: the earlier records can use standard as long as the current hologram marks their status and declared the current. and yes, the jealousy
+    reading was available to the ancients, no one ever said it wasnt. but it was not consensus - the tenth muse is the most famous ancient reading,
+    and sappho 31 comes to us thru a philosophical text that treats it as philosophy of the sublime
+  status: 'the warrant for marking the earlier records'' wording (''standard'', ''conventional'', ''dominant'', ''consensus'') as their states
+    with the current name declared, and for the rival''s dated chain: available in antiquity, consensus only from its modern making'
 lines_of_research:
 - id: Q1-third-reversal
   question: Does the deixis of fr. 31 carry Sappho through all three of its positions — I, you, κῆνος?
@@ -388,3 +403,113 @@ acceptance:
       - every relation with its licensed dimension
       - every endpoint declared
       - provenance on every record
+argument_layer:
+  file: 04-arguments.jsonl
+  moves: 1914
+  edges: 1442
+  records_with_moves: 35
+  records_without_moves: []
+  by_kind:
+    test: 36
+    method: 165
+    datum: 620
+    count: 67
+    inference: 202
+    finding: 350
+    price: 84
+    rival: 45
+    reply: 42
+    defeat: 31
+    hypothesis: 120
+    state: 152
+  kinds:
+  - test
+  - method
+  - datum
+  - count
+  - inference
+  - finding
+  - price
+  - rival
+  - reply
+  - defeat
+  - hypothesis
+  - state
+  relations:
+    supports: the move is evidence or ground for its target
+    infers_from: the move is concluded from its target
+    answers: a reply to a rival position
+    prices: a cost the record names against its own target claim
+    defeats_if: a stated condition under which the target falls
+    applies: the move applies a method or test to its target
+    qualifies: the move limits or grades its target
+    bounds: the move sets the strength or scope of its target, leaving it held
+    develops: the move extends its target
+    revises: the move replaces its target in a later state of the record or of the archive
+  quotations_stale_at_build: []
+  how_read: fifteen parallel readers, 2026-11-09 (six for this kernel's records, the records shared with Revelation First read once), every record
+    read in full, every quotation extracted from the seated text and asserted verbatim (check_args.py)
+  reading_instruction: 'A reader reconstructing a record''s argument reads its moves in 04-arguments.jsonl in order with their edges: data and
+    counts support inferences and findings; prices, rivals, replies and defeat conditions stand beside the claims they bear on; hypotheses and
+    states keep the strength the record gives them. Each quotation is verbatim, bound to the record''s hash.'
+rival_naming:
+  current_name: the current consensus reading
+  declared: the author, 2026-11-09 10:08 and 10:14 (author_statements)
+  earlier_wording:
+  - move: arg:a306-standard-kenos
+    record: rec:306
+    exact: 'The standard reading: κῆνος is a rival.'
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a306-standard-chloros
+    record: rec:306
+    exact: 'The standard reading: χλωροτέρα ποίας means "paler than grass." Fear. Illness. Lovesickness.'
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a1054-reception-dominant
+    record: rec:1054
+    exact: collapsed into the reception-dominant referent (ancient rival)
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a1270-standard-state
+    record: rec:1270
+    exact: 'The standard reading is familiar enough: a speaker watches her beloved conversing with a man; jealousy triggers physiological collapse;
+      the poem ends at the threshold of death.'
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a1270-chloros-residue
+    record: rec:1270
+    exact: which the standard reading can accommodate only as decorative hyperbole, a figure for faintness, when the specificity of χλωρός demands
+      more
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a1645-standard-discourse
+    record: rec:1645
+    exact: Fr. 31 is read, in the dominant reception, as a lyric of jealousy or triangulated desire.
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a283-standard-heading
+    record: rec:283
+    exact: '## B. The Standard Reading and Its Insufficiency'
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a283-conventional-state
+    record: rec:283
+    exact: 'The conventional interpretation: a speaker observes her beloved conversing with a man; jealousy triggers physiological collapse; the
+      poem ends at the threshold of death.'
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a313-standard-header
+    record: rec:313
+    exact: Standard "Jealousy" Reading
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  - move: arg:a313-consensus-dataset
+    record: rec:313
+    exact: 2,600 years of consensus have built a "jealousy" dataset.
+    status: an earlier record's wording, kept as published; the current name is the current consensus reading
+  dated_chain_moves:
+  - arg:a1752-hermann-refinxi
+  - arg:a1752-heller-marcovich
+  - arg:a1752-no-ancient-joint
+  - arg:a1752-tenth-muse
+  - arg:a1752-longinus-maker
+  - arg:a1752-horace
+  - arg:a1752-hall-boileau
+  - arg:a1752-spectator
+  - arg:a1752-pearce
+  - arg:a1752-welcker-no-trace
+  - arg:a1752-mure
+  - arg:a1752-page-amend
+  - arg:a1752-aio-traditional

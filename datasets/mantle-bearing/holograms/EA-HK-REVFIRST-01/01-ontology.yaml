@@ -108,6 +108,7 @@ evidence_bodies:
 state_axes:
   assertion:
   - asserted
+  - held
   - withdrawn
   - bears_on_rival
   priority:
@@ -122,6 +123,9 @@ state_axes:
   - single_author_josephus_as_john
   - available_reading
   - available_reading_not_first_burden
+  - held_advancement_suspended
+  date:
+  - 66_CE_held_as_proposed
   instrument:
     specification:
     - specified
@@ -145,6 +149,7 @@ relation_policy:
   undercuts: establishment,validation
   rebuts: establishment
   supersedes: identity,history
+  bounds: strength
 ladder_relation:
   depends_on: 'rung to rung: a rung''s defeat carries to every rung that depends on it (#1217''s claim ladder; site /ladder/). Held on the rungs,
     outside the claim policy, which it leaves unchanged.'

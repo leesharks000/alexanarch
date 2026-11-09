@@ -97,6 +97,9 @@ try:
     T("T19 JSON-LD: every edge endpoint expands to the IRI of a declared node", not bad_e, {"edges": len(flat[edges_key]), "nodes": len(node_iris), "failed": bad_e[:6]})
 except ImportError:
     T("T19 JSON-LD: every edge endpoint expands to the IRI of a declared node", False, "pyld not installed")
+if (KD / "04-arguments.jsonl").exists():
+    sys.path.insert(0, str(pathlib.Path(__file__).parent)); import args_layer; res.update(args_layer.verify(ROOT, KD))
+
 out = {"kernel": K["id"], "version": K["version"], "structural_tests": res,
        "integrity": {f: hashlib.sha256((KD / f).read_bytes()).hexdigest() == h for f, h in I["files"].items()},
        "not_checked": ["whether a reading is right", "whether a relation's warrant is sufficient", "reconstructive validity by a reader (v1.0)"]}

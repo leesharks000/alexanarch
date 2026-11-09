@@ -169,6 +169,11 @@
       "version": "1.25",
       "date": "2026-11-09",
       "note": "Two frameworks and their holograms, at the author's word (\"they go there too\"): Revelation First (seed #202, hologram #1755, And the Last Shall Be First, byline Damascus Dancings) and The Tenth Muse (seed #1270, hologram #1756, byline Rebekah Cranes), each with its kernel files under holograms/; hologram_evaluations gains round 1 of each (eight reconstructions) and ChatGPT's review of the v0.3 packages, one row per hologram, with the review of v0.1 of And the Last Shall Be First recorded without its text. Builder: rebuild/mantle-bearing/add_20261109_holograms_rf_tm.py."
+    },
+    {
+      "version": "1.26",
+      "date": "2026-11-09",
+      "note": "#1755 and #1756 reissued in place as v1.1: each kernel carries the argument of every record, compressed into verbatim moves joined by typed edges (04-arguments.jsonl). Revelation First holds the Josephus thesis at its records' tiers, its advancement suspended by the author, and carries the working date of 66 CE; the rivals are named the current consensus chronology and the current consensus reading. The two framework rows and the two hologram rows updated in place; failure flags THESIS_HELD_AS_WITHDRAWN and CONSENSUS_UNDATED added. rebuild/mantle-bearing/v126_holograms_v11.py."
     }
   ],
   "excluded": [
@@ -4668,7 +4673,9 @@
       "governing_record",
       "specification",
       "status",
-      "(when deposited) hologram_record, kernel_files, structural_tests, back_projection_v0_1, reader_rounds"
+      "(when deposited) hologram_record, kernel_files, structural_tests, back_projection_v0_1, reader_rounds",
+      "(1.26) argument_layer: file, moves, edges, records_with_moves, by_kind",
+      "argument_layer"
     ],
     "hologram_evaluations": [
       "eval_id",
@@ -11049,9 +11056,9 @@
       "governing_record": [
         {
           "deposit": 1755,
-          "axn": "AXN:0C5F.MPAI.⭐♆🪐🗼⏩🔺",
+          "axn": "AXN:0C5F.MPAI.🕗🪧🪄🟢🔼🃏",
           "url": "https://www.alexanarch.org/s/records/1755/",
-          "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.0)"
+          "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.1)"
         }
       ],
       "specification": [
@@ -11102,13 +11109,13 @@
         "H": "heteronymic"
       },
       "rival": {
-        "node": "fw:received-chronology",
+        "node": "fw:current-consensus-chronology",
         "summary": "established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship owed as the comparator on body H"
       },
       "lines_of_research": 9,
       "byline": "Dancings, Damascus",
       "contributor": "Crimson Hexagonal Archive; Claude (Anthropic)",
-      "status": "DEPOSITED 2026-11-09 as a hologram (#1755); its three claims held on their own conditions, its lines of research open"
+      "status": "DEPOSITED 2026-11-09 as a hologram (#1755); REISSUED 2026-11-09 as v1.1 (#1755), the argument of every record compressed into its kernel; the Josephus thesis held, its advancement suspended by the author"
     },
     {
       "framework": "framework::the-tenth-muse",
@@ -11126,9 +11133,9 @@
       "governing_record": [
         {
           "deposit": 1756,
-          "axn": "AXN:0C61.MPAI.🕖🧬🎺🌔🪝💛",
+          "axn": "AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙",
           "url": "https://www.alexanarch.org/s/records/1756/",
-          "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.0)"
+          "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)"
         }
       ],
       "specification": [
@@ -11175,7 +11182,7 @@
         "R": "reception-historical"
       },
       "rival": {
-        "node": "fw:received-sappho",
+        "node": "fw:current-consensus-reading",
         "summary": "granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its non-writing face kept as five propositions (jealousy; unable to write; oral composition; writing for reperformance; persistence not hers), the last its target, the reperformance account allowing writing-down",
         "propositions": {
           "jealousy": "the speaker's collapse is jealousy of the man — granted its purchase on body I; its textual warrant a declared conjectural ending (Hermann 1816); joined to the poet by no seated ancient witness",
@@ -11189,7 +11196,7 @@
       "lines_of_research": 5,
       "byline": "Cranes, Rebekah",
       "contributor": "Crimson Hexagonal Archive; Claude (Anthropic)",
-      "status": "DEPOSITED 2026-11-09 as a hologram (#1756); Sappho in the third seat proposed, its lines of research open"
+      "status": "DEPOSITED 2026-11-09 as a hologram (#1756); REISSUED 2026-11-09 as v1.1 (#1756), the argument of every record compressed into its kernel; the rival named the current consensus reading, with its dates"
     }
   ],
   "holograms": [
@@ -11399,20 +11406,20 @@
           "title": "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
         }
       ],
-      "status": "DEPOSITED 2026-11-09",
+      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-09 as v1.1",
       "hologram_record": [
         {
           "deposit": 1755,
-          "axn": "AXN:0C5F.MPAI.⭐♆🪐🗼⏩🔺",
+          "axn": "AXN:0C5F.MPAI.🕗🪧🪄🟢🔼🃏",
           "url": "https://www.alexanarch.org/s/records/1755/",
-          "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.0)"
+          "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.1)"
         }
       ],
       "kernel_files": {
         "record": "https://www.alexanarch.org/files/AXN-0C5F/kernel/",
         "dataset": "holograms/EA-HK-REVFIRST-01/"
       },
-      "structural_tests": "14 of 14 pass",
+      "structural_tests": "16 of 16 pass",
       "back_projection_v0_1": null,
       "reader_rounds": [
         {
@@ -11428,11 +11435,32 @@
         }
       ],
       "failure_flags": {
-        "ONE_SIDED_BURDEN": "one framework asked, body by body, whether it is established while the other is left unasked; the received reading treated as the default",
+        "ONE_SIDED_BURDEN": "one framework asked, body by body, whether it is established while the other is left unasked; the current consensus treated as the default",
         "EARLY_FOR_FIRST": "the thesis composed as early dating (INV-1)",
-        "RUNG_COLLAPSE": "rung V or VI read as load-bearing for I–IV, or a rung's defeat carried to a rung that does not depend on it"
+        "RUNG_COLLAPSE": "rung V or VI read as load-bearing for I–IV, or a rung's defeat carried to a rung that does not depend on it",
+        "THESIS_HELD_AS_WITHDRAWN": "the Josephus thesis reported as withdrawn, where its records hold it at their tiers and the author has suspended its advancement (v1.1; the author, 2026-11-09 09:52)"
       },
-      "failure_flags_source": "EA-HK-REVFIRST-01 v1.0 (#1755): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 09-tests.yaml adversarial_queries"
+      "failure_flags_source": "EA-HK-REVFIRST-01 v1.1 (#1755): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 04-arguments.jsonl, 09-tests.yaml adversarial_queries",
+      "argument_layer": {
+        "file": "https://www.alexanarch.org/files/AXN-0C5F/kernel/04-arguments.jsonl",
+        "moves": 2822,
+        "edges": 2207,
+        "records_with_moves": 42,
+        "by_kind": {
+          "test": 62,
+          "method": 301,
+          "datum": 724,
+          "count": 66,
+          "inference": 349,
+          "finding": 342,
+          "price": 85,
+          "rival": 93,
+          "reply": 100,
+          "defeat": 60,
+          "hypothesis": 352,
+          "state": 288
+        }
+      }
     },
     {
       "hologram": "hologram::the-tenth-muse",
@@ -11454,20 +11482,20 @@
           "title": "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
         }
       ],
-      "status": "DEPOSITED 2026-11-09",
+      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-09 as v1.1",
       "hologram_record": [
         {
           "deposit": 1756,
-          "axn": "AXN:0C61.MPAI.🕖🧬🎺🌔🪝💛",
+          "axn": "AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙",
           "url": "https://www.alexanarch.org/s/records/1756/",
-          "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.0)"
+          "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)"
         }
       ],
       "kernel_files": {
         "record": "https://www.alexanarch.org/files/AXN-0C61/kernel/",
         "dataset": "holograms/EA-HK-TENTHMUSE-01/"
       },
-      "structural_tests": "13 of 13 pass",
+      "structural_tests": "15 of 15 pass",
       "back_projection_v0_1": null,
       "reader_rounds": [
         {
@@ -11483,12 +11511,33 @@
         }
       ],
       "failure_flags": {
-        "ONE_SIDED_BURDEN": "one framework asked, body by body, whether it is established while the other is left unasked; the received reading treated as the default",
+        "ONE_SIDED_BURDEN": "one framework asked, body by body, whether it is established while the other is left unasked; the current consensus treated as the default",
         "JEALOUSY_AS_FRAMEWORK": "the framework composed as a jealousy lyric",
         "PROPOSAL_AS_FINDING": "Sappho in the third seat read as a finding of the records",
-        "FACES_MERGED": "literacy, performance and the maker's agency over her persistence collapsed into one proposition"
+        "FACES_MERGED": "literacy, performance and the maker's agency over her persistence collapsed into one proposition",
+        "CONSENSUS_UNDATED": "the jealousy reading composed as traditional, standard or the ancient reading without its dates (formed in the eighteenth century, written into the text in 1816, consolidated in 1955; INV-8)"
       },
-      "failure_flags_source": "EA-HK-TENTHMUSE-01 v1.0 (#1756): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 09-tests.yaml adversarial_queries"
+      "failure_flags_source": "EA-HK-TENTHMUSE-01 v1.1 (#1756): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 04-arguments.jsonl, 09-tests.yaml adversarial_queries",
+      "argument_layer": {
+        "file": "https://www.alexanarch.org/files/AXN-0C61/kernel/04-arguments.jsonl",
+        "moves": 1914,
+        "edges": 1442,
+        "records_with_moves": 35,
+        "by_kind": {
+          "test": 36,
+          "method": 165,
+          "datum": 620,
+          "count": 67,
+          "inference": 202,
+          "finding": 350,
+          "price": 84,
+          "rival": 45,
+          "reply": 42,
+          "defeat": 31,
+          "hypothesis": 120,
+          "state": 152
+        }
+      }
     }
   ],
   "hologram_evaluations": [

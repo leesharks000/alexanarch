@@ -18,6 +18,7 @@
   "fw": "https://www.alexanarch.org/hk/revfirst/fw/",
   "seat": "https://www.alexanarch.org/hk/revfirst/seat/",
   "stmt": "https://www.alexanarch.org/hk/revfirst/stmt/",
+  "arg": "https://www.alexanarch.org/hk/revfirst/arg/",
   "source": {
    "@type": "@id"
   },
@@ -94,9 +95,9 @@
    "note": "#1754's context declares no prefix for fw:, so its node has no namespaced IRI; this IRI is assigned here for the program and names that node"
   },
   {
-   "@id": "fw:received-chronology",
+   "@id": "fw:current-consensus-chronology",
    "@type": "RivalFramework",
-   "name": "the received chronology",
+   "name": "the current consensus chronology",
    "claim": "Pauline priority by the Gallio synchronism through Acts; the Domitianic date on Irenaeus, Adv. Haer. 5.30.3; the Apocalypse last, derivative and secondary (#1741); the source apparatus that grants the reconstructed Q standing (#1746, #1747).",
    "stated_at_strength": "Stated with the arguments it already has: the Gallio synchronism, the Irenaean date, the late-twentieth-century consensus, the source apparatus. A reading that reduces it to 'scholars assume Paul came first' is a reduction of it.",
    "status": {
@@ -951,13 +952,13 @@
    "@id": "rec:636",
    "@type": "Record",
    "deposit": 636,
-   "axn": "AXN:01EC.GOVERNANCE.🌱👉♣️🎪🟣🎻",
+   "axn": "AXN:01EC.GOVERNANCE.⏪■🎭👇💥🪝",
    "url": "https://www.alexanarch.org/s/records/636/",
    "title": "CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament",
    "date": "2026-04-08",
    "status": "ACTIVE",
    "version": "v1.0",
-   "sha256": "19b98385c68a080febbdcbb63ebe23c8e27fdd79b766e16dda19cbfc7dbb9896",
+   "sha256": "d79e84b7eb34cff22e9fa836966cb41ac8119fcdec7cab3f7c70f735014078ed",
    "creator": "Lee Sharks",
    "body": "H",
    "body_secondary": [],
@@ -1120,12 +1121,12 @@
    "@type": "Record",
    "external": true,
    "deposit": 1484,
-   "axn": "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
+   "axn": "AXN:05FF.PHILOLOGICAL.🪜⏏️🤝🟡🕛◀️",
    "url": "https://www.alexanarch.org/s/records/1484/",
    "title": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)",
    "date": "2026-08-15",
    "status": "ACTIVE",
-   "sha256": "3712ddd74886d8fbc3cd24e4d458e9982a6e16e5e5012994316d7dd39c90db9d",
+   "sha256": "23f8b5c36dd2e661a4575fa51afb73671ade8d4b9d1feb16854d651cd2e6c7c3",
    "role": "join held in The Tenth Muse; referenced by a joins edge"
   },
   {
@@ -1242,6 +1243,13 @@
   {
    "@id": "cluster:heteronymy",
    "@type": "Cluster"
+  },
+  {
+   "@id": "stmt:20261109-0952",
+   "@type": "AuthorStatement",
+   "date": "2026-11-09T09:52-05:00",
+   "where": "in session, on an unprimed ChatGPT reading of the v1.0 hologram; first deposited with this kernel",
+   "text": "unprimed chatgpt just characterized revelation first as having withdrawn the josephus thesis... but to my knowledge i have not withdrawn the josephus thesis - i have suspended advancing the argument as too speculative to advance until the literary genetic argument is more firmly established. i still hold it as highly likely, particularly given the slavonic josephus materials. is all the evidence represented?"
   },
   {
    "@id": "claim:rf-1735-absolute",
@@ -1491,7 +1499,7 @@
    "@type": "Claim",
    "target": "site:ladder-dating",
    "bodies": {
-    "D": "principal; ledger row D (received_chronology)"
+    "D": "principal; ledger row D (current_consensus_chronology)"
    }
   },
   {
@@ -1499,7 +1507,7 @@
    "@type": "Claim",
    "target": "site:ladder-dating",
    "bodies": {
-    "D": "principal; ledger row D (received_chronology)"
+    "D": "principal; ledger row D (current_consensus_chronology)"
    }
   },
   {
@@ -1507,7 +1515,7 @@
    "@type": "Claim",
    "target": "site:ladder-priority",
    "bodies": {
-    "D": "principal; ledger row D (received_chronology)"
+    "D": "principal; ledger row D (current_consensus_chronology)"
    }
   },
   {
@@ -1515,7 +1523,7 @@
    "@type": "Claim",
    "target": "site:ladder-corpus",
    "bodies": {
-    "C": "principal; ledger row C (received_chronology)"
+    "C": "principal; ledger row C (current_consensus_chronology)"
    }
   },
   {
@@ -1523,7 +1531,7 @@
    "@type": "Claim",
    "target": "rec:1746",
    "bodies": {
-    "R": "principal; ledger row R (received_chronology)"
+    "R": "principal; ledger row R (current_consensus_chronology)"
    }
   },
   {
@@ -1531,7 +1539,7 @@
    "@type": "Claim",
    "target": "rec:1746",
    "bodies": {
-    "R": "principal; ledger row R (received_chronology)"
+    "R": "principal; ledger row R (current_consensus_chronology)"
    }
   },
   {
@@ -1547,7 +1555,7 @@
    "@type": "Claim",
    "target": "site:ladder-heteronyms",
    "bodies": {
-    "H": "principal; ledger row H (received_chronology)"
+    "H": "principal; ledger row H (current_consensus_chronology)"
    }
   },
   {
@@ -1694,7 +1702,7 @@
    "@type": "Claim",
    "target": "rec:1735",
    "bodies": {
-    "G": "principal; ledger row G (received_chronology)"
+    "G": "principal; ledger row G (current_consensus_chronology)"
    }
   },
   {
@@ -1719,6 +1727,22 @@
    "target": "rec:1495",
    "bodies": {
     "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1737-held-66",
+   "@type": "Claim",
+   "target": "rec:1737",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-stmt-josephus",
+   "@type": "Claim",
+   "target": "stmt:20261109-0952",
+   "bodies": {
+    "H": "principal"
    }
   },
   {
@@ -2896,20 +2920,20 @@
   },
   {
    "source": "claim:rf-1217-josephus-available",
-   "relation": "rebuts",
+   "relation": "bounds",
    "target": "claim:rf-639-josephus-author",
    "family": "evidentiary",
-   "licensed_dimension": "establishment",
-   "warrant": "Josephus as author withdrawn to an available reading, contingent (#1217 claim ladder)",
+   "licensed_dimension": "strength",
+   "warrant": "Josephus as author held, its strength bounded: the framework does not require it, and it becomes newly intelligible if Revelation stands first (#1217 claim ladder); its advancement suspended by the author (2026-11-09 09:52)",
    "provenance": "map v0.1"
   },
   {
    "source": "claim:rf-1217-josephus-available",
-   "relation": "rebuts",
+   "relation": "bounds",
    "target": "claim:rf-1101-josephus",
    "family": "evidentiary",
-   "licensed_dimension": "establishment",
-   "warrant": "Josephus as the single author, writing as 'John', withdrawn to an available reading, contingent (#1217)",
+   "licensed_dimension": "strength",
+   "warrant": "Josephus as the single author, writing as 'John', held at #1101's own tier ('high-risk, high-reward historical hypotheses'), its strength bounded by #1217; its advancement suspended by the author (2026-11-09 09:52)",
    "provenance": "map v0.1"
   },
   {
@@ -3185,6 +3209,24 @@
    "licensed_dimension": null,
    "warrant": "site:ladder-logos",
    "provenance": "ontology"
+  },
+  {
+   "source": "stmt:20261109-0952",
+   "relation": "motivates",
+   "target": "claim:rf-639-josephus-author",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the author's statement, verbatim: held, advancement suspended",
+   "provenance": "session 2026-11-09 09:52 EST"
+  },
+  {
+   "source": "stmt:20261109-0952",
+   "relation": "motivates",
+   "target": "claim:rf-1101-josephus",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the author's statement, verbatim: held, advancement suspended",
+   "provenance": "session 2026-11-09 09:52 EST"
   },
   {
    "source": "cap:revelation-first-overview",

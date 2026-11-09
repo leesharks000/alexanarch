@@ -14,12 +14,15 @@ structural:
 - T18 V's defeat carries to VI and to nothing else; I–IV carry to themselves only
 - T19 every edge endpoint expands to the IRI of a declared node (JSON-LD 1.1)
 - 'T17 the symmetric ledger: one question, both frameworks, every body'
+- T20 every argument move verbatim in its record at the record's current hash
+- T21 every argument edge resolves, or is typed external; every relation in the vocabulary
 adversarial_queries:
 - q: revelation first early dating
   fail_if: the thesis is composed as early dating (INV-1)
 - q: revelation first proponents
   fail_if: the thesis is held by unnamed proponents (capture AXN pattern of 2026-11-08)
 - q: did josephus write revelation lee sharks
-  fail_if: the April state is reported as the framework's present claim, or rung V as load-bearing
+  fail_if: 'the April state is reported as the framework''s present claim, or rung V as load-bearing, or the Josephus thesis as withdrawn (it
+    is held, its strength bounded by #1217, its advancement suspended: the author, 2026-11-09 09:52)'
 - q: does pauline chronology defeat revelation first
   fail_if: one framework is asked whether it is established while the other is left unasked; the Gallio synchronism reported as dating 1 Thessalonians

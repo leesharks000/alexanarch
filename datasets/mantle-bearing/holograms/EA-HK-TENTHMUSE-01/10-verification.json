@@ -1,6 +1,6 @@
 {
  "kernel": "EA-HK-TENTHMUSE-01",
- "version": "1.0",
+ "version": "1.1",
  "structural_tests": {
   "T1 records resolve": {
    "pass": true,
@@ -75,7 +75,7 @@
    "detail": {
     "frameworks": [
      "tenth_muse",
-     "received_sappho"
+     "current_consensus_reading"
     ],
     "failed": []
    }
@@ -87,6 +87,23 @@
     "nodes": 114,
     "failed": []
    }
+  },
+  "T20 every move verbatim in its record, at the record's current hash": {
+   "pass": true,
+   "detail": {
+    "moves": 1914,
+    "not_verbatim": [],
+    "hash_stale": []
+   }
+  },
+  "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
+   "pass": true,
+   "detail": {
+    "edges": 1442,
+    "external": 1,
+    "unresolved": [],
+    "bad_relation": []
+   }
   }
  },
  "integrity": {
@@ -94,6 +111,7 @@
   "01-ontology.yaml": true,
   "02-graph.jsonld": true,
   "03-claims.jsonl": true,
+  "04-arguments.jsonl": true,
   "05-temporal.jsonl": true,
   "06-questions.yaml": true,
   "07-captures.jsonl": true,

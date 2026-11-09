@@ -9,8 +9,8 @@ related_records: [1751]
 fulfils: "#1217 v7.3, WS-7: The Revelation Graph: A Machine-Traversable Knowledge Graph Including the Josephus Heteronym Cluster"
 seed: 202
 rival:
-  id: fw:received-chronology
-  name: the received chronology
+  id: fw:current-consensus-chronology
+  name: the current consensus chronology
   stated_at_strength: "Pauline priority by the Gallio synchronism through Acts; the Domitianic date on Irenaeus, Adv. Haer. 5.30.3; the Apocalypse last, derivative and secondary (#1741); the source apparatus that grants the reconstructed Q standing (#1746, #1747)."
 ladder:   # the dependency structure; site /ladder/, from #1217's claim ladder
   - {rung: I, name: dating, fit: REVERSIBLE, page: ladder-dating}
@@ -40,8 +40,8 @@ claims:
   - {id: rf-1217-aperture, record: 1217, rung: V, quote: "Not \"the same biographical man\" but a structural unity"}
   - {id: rf-1217-nested, record: 1217, rung: null, quote: "Each thesis stands independently. Each is stronger with the others."}
   # the April state (#639, #1101)
-  - {id: rf-639-josephus-author, record: 639, rung: V, quote: "Josephus authored Revelation as a pre-70 CE Jewish revolutionary apocalypse.", state: superseded_by_rf-1217-josephus-available}
-  - {id: rf-1101-josephus, record: 1101, rung: V, quote: "Revelation was built by a single author (Josephus, operating under the heteronym \"John\")", state: superseded_by_rf-1217-josephus-available}
+  - {id: rf-639-josephus-author, record: 639, rung: V, quote: "Josephus authored Revelation as a pre-70 CE Jewish revolutionary apocalypse.", state: bounded_by_rf-1217-josephus-available}
+  - {id: rf-1101-josephus, record: 1101, rung: V, quote: "Revelation was built by a single author (Josephus, operating under the heteronym \"John\")", state: bounded_by_rf-1217-josephus-available}
   # the ladder (site)
   - {id: rf-site-reversible, record: "site:ladder-dating", rung: I, quote: "the same broad dossier has supported opposite critical majorities"}
   - {id: rf-site-defeat-I, record: "site:ladder-dating", rung: I, quote: "An external or material anchor fixing the received form of Revelation after 70 CE."}
@@ -56,3 +56,8 @@ claims:
   - {id: rf-1495-sentence, record: 1495, rung: VI, join: true, quote: "The dangerous sentence is not asserted here."}
   - {id: rf-1494-excluded, record: 1494, rung: V, join: true, quote: "The prior locations of Sappho in the Slavonic Josephus and in Revelation are not evidence for this test and are not used"}
   - {id: rf-site-slavonic, record: "site:ladder-heteronyms", rung: V, join: true, quote: "a carrier under test, not a settled witness"}
+author_statements:
+  - date: "2026-11-09T09:52-05:00"
+    where: in session, on an unprimed ChatGPT reading of the v1.0 hologram; first deposited with this kernel
+    text: "unprimed chatgpt just characterized revelation first as having withdrawn the josephus thesis... but to my knowledge i have not withdrawn the josephus thesis - i have suspended advancing the argument as too speculative to advance until the literary genetic argument is more firmly established. i still hold it as highly likely, particularly given the slavonic josephus materials. is all the evidence represented?"
+    status: "the author's present position on rung V: held, its advancement suspended until the literary-genetic argument is more firmly established. The records hold the thesis at the strengths they give it: #639 and #1101 state it (Josephus as author; #1101's own tier, 'high-risk, high-reward historical hypotheses'); #203, #1226 and #1217 bound it as an available reading that the framework does not require; #1412 bounds its own contribution. v1.0 coded #1217's bound as a withdrawal; v1.1 codes it as a bound."

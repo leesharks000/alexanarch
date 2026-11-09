@@ -5,7 +5,7 @@ Byline Rebekah Cranes; the Crimson Hexagonal Archive and Claude credited. Specif
 import sys, json, pathlib, yaml
 from hkcore import Kernel, POLICY, context, ledger_roles
 HERE = pathlib.Path(__file__).resolve().parent
-K = Kernel(sys.argv[1], sys.argv[2], HERE / "tm-first", "EA-HK-TENTHMUSE-01", "1.0", "2026-11-09")
+K = Kernel(sys.argv[1], sys.argv[2], HERE / "tm-first", "EA-HK-TENTHMUSE-01", "1.1", "2026-11-09")
 REG = K.REG; claim = K.claim; rel = K.rel
 FW = "fw:tenth-muse"; HL = "hk:historical-logos"; RF = "hk:revfirst/fw/revelation-first"; RF_VI = "hk:revfirst/rung/VI"; STMT = "stmt:20261108-2146"
 D = yaml.safe_load(open(HERE / "fw-tenthmuse.yaml", encoding="utf-8"))
@@ -45,7 +45,7 @@ for c in D["claims"]:
     st = A(**({"ring": c["ring"]} if c.get("ring") else {}), **({"seat": c["seat"]} if c.get("seat") else {}), **({"join": True} if c.get("join") else {}))
     kind = "generality" if c["ring"] in ("reception",) and "closure" in c["id"] else "interpretation"
     claim(c["id"], int(c["record"]), c["quote"], kind, st, notes=c.get("note"))
-RV = lambda body, **k: {"assertion": "bears_on_rival", "rival": "fw:received-sappho", "body": body, **k}
+RV = lambda body, **k: {"assertion": "bears_on_rival", "rival": "fw:current-consensus-reading", "body": body, **k}
 claim("rv-1752-scene", 1752, "What the four stanzas carry is the scene and the body.", "observation", RV("P", settles_relation=False))
 claim("rv-1752-refinxi", 1752, "Hermann rewrote the last two transmitted lines, said so", "observation", RV("P", warrant="a declared conjectural ending"))
 claim("rv-1752-no-witness", 1752, "No seated ancient witness joins the second Sappho to the poem through jealousy.", "observation", RV("R"))
@@ -70,7 +70,7 @@ for c in K.C:
     if c["state"].get("assertion") == "bears_on_rival": c["body"] = c["state"].pop("body", None) or c["body"]
 CLAIMS = {c["id"]: c for c in K.C}
 
-RIVAL = {"@id": "fw:received-sappho", "@type": "RivalFramework", "name": D["rival"]["name"], "claim": D["rival"]["stated_at_strength"],
+RIVAL = {"@id": "fw:current-consensus-reading", "@type": "RivalFramework", "name": D["rival"]["name"], "claim": D["rival"]["stated_at_strength"],
  "stated_at_strength": "Stated with what it has: the man as rival, the collapse as the pain of watching (#1752 §1.2: 'It has purchase'), Sappho's own lines on rivalry, Ovid's jealous Sappho; and, on the writing question, the reperformance account. A reading that reduces it to error is a reduction of it.",
  "propositions": {
   "jealousy": {"claim": "the speaker's collapse is jealousy of the man", "status": "granted its purchase on body I; its textual warrant a declared conjectural ending (Hermann 1816); joined to the poet by no seated ancient witness", "warrants": ["rv-1752-purchase", "rv-1752-refinxi", "rv-1752-no-witness"]},
@@ -90,8 +90,8 @@ RIVAL = {"@id": "fw:received-sappho", "@type": "RivalFramework", "name": D["riva
  "rule": "RP–RR apply to both frameworks; neither takes standing from being received."}
 LEDGER = {
  "question": "What does this body give each framework, and what does its rule withhold from both?",
- "reading_instruction": "A reader evaluating either framework on an evidence body states the other's status on that body in the same row, with the same question asked of both. The received reading's standing in classrooms, headings and composition layers is a reception (RR) and no warrant.",
- "combination": "The framework is judged on the configuration it explains across the four bodies, ring by ring (#1484): the hard center would carry the argument alone; the interpretive ring is read as reading; the outer ring is hypothesis and enters by joins. The received reading is judged on the same bodies: its two faces stand or fall together where the one mechanism joins them (#1752's packet).",
+ "reading_instruction": "A reader evaluating either framework on an evidence body states the other's status on that body in the same row, with the same question asked of both. The current consensus reading's standing in classrooms, headings and composition layers is a reception (RR) and no warrant.",
+ "combination": "The framework is judged on the configuration it explains across the four bodies, ring by ring (#1484): the hard center would carry the argument alone; the interpretive ring is read as reading; the outer ring is hypothesis and enters by joins. The current consensus reading is judged on the same bodies: its two faces stand or fall together where the one mechanism joins them (#1752's packet).",
  "rival_admission": "A further reading of fr. 31 enters as a rival when it names a warrant on a body or a documented reception (the brother, the groom, the contrast figure, each with its argument, #1752 §1.3).",
  "evaluation_method": "An evaluation tests a reading at the seated Greek, a count at its limit, a carrier at its stations with its negatives, a reception at its page; a proposed investigation names what the existing ones leave unresolved, by line of research.",
  "object_of_the_kernel": "The kernel succeeds when the framework can be rebuilt from it with each claim at its ring, grain and date; whether Sappho engineered her persistence is the framework's own question, carried in this ledger and in the lines of research.",
@@ -101,7 +101,7 @@ LEDGER = {
   "T": {"tenth_muse": {"text": "the operator derived without Revelation (#1494); the reader in the seat of line 1 (#1476); her line taken up in another's material (#1475).", "warrants": ["tm-1494-witnesses", "tm-1476-catullus", "tm-1475-taken-up"]}},
   "R": {"tenth_muse": {"text": "the jealous Sappho a condition without a hand; closure of the text and closure of the reading separate; a reading compulsory without being uncontested (#1752).", "warrants": ["tm-1752-hand", "tm-1752-closure", "tm-1752-compulsory"]}}}}
 for b in LEDGER["rows"]:
-    LEDGER["rows"][b]["received_sappho"] = RIVAL["status"][b]
+    LEDGER["rows"][b]["current_consensus_reading"] = RIVAL["status"][b]
 ledger_roles(K.C, LEDGER["rows"])
 
 rel("claim:tm-201-fifth", "rebuts", "claim:tm-436-fourth", "'should therefore be numbered the fifth, not the fourth' (#201)")
@@ -153,7 +153,7 @@ QUESTIONS = [
    ["seat:kenos", "claim:tm-third-reversal", STMT, HL], [1270, 1475, 1476, 1484, 626, 1645], "read the frame φαίνεταί μοι … φαίνομαι, the seat ἐνάντιος and Longinus's λῆψις for loci where one position passes into another",
    D["lines_of_research"][0]["advances_if"], D["lines_of_research"][0]["retreats_if"], "the loci are read without either finding: the third seat stays the author's statement, held as a question"),
  q("Q2-two-accounts", "When, and through whom, does the poet who reads and writes become a voice that sings what overwhelms her?", 1752, "as two accounts of how her poems lasted", "R",
-   ["fw:received-sappho", "claim:tm-1752-hand"], [1752, 1548, 1749], "set the writing record (the hydria, the Hellenistic book, Svenbro) beside the reperformance scholarship (Lardinois), each at its page",
+   ["fw:current-consensus-reading", "claim:tm-1752-hand"], [1752, 1548, 1749], "set the writing record (the hydria, the Hellenistic book, Svenbro) beside the reperformance scholarship (Lardinois), each at its page",
    "the writing account is documented at every point the reperformance account claims", "the reperformance account carries a documented argument the writing record cannot meet", "the two accounts are set side by side without a discriminating record: literal illiteracy stays unargued, the writing record stands as recorded"),
  q("Q3-dialect-step", "Does the dialect step at ἀλλὰ πᾶν τολματόν hold in conjunction with the other load-points?", 1484, "not significant alone", "P",
    ["claim:tm-1484-dialect"], [1476, 1478, 1484, 1508], "recount against the TEI; test the step with the citation-formula census and the parse without lacuna",
@@ -177,9 +177,9 @@ kernel = {
    "third reversal, a line of research — that man, the reader who takes her up. Four bodies bear on it: philological, interpretive, transmission and reception-historical, held in "
    "three rings of descending hardness. Its states run on three axes: the ending (a reconstructed fourth stanza, renumbered fifth, then the poem complete at the hanging line and every "
    "restoration one more filling), the reader (κῆνος the future reader, then fragment 147 the horizon and fragment 31 the mechanism), and the writer (the written instrument, then the hand the reception took). "
-   "The received reading — jealous, and not the maker of her own persistence, two faces reinforced by one mechanism — is evaluated on the same bodies and rules."),
+   "The current consensus reading — jealous, and not the maker of her own persistence, two faces reinforced by one mechanism — is evaluated on the same bodies and rules."),
  "invariants": [
-   "INV-1 The jealousy reading and the non-writing reading are one received reading with two faces, which reinforce one another through the displacement of the maker's acts onto the represented condition (#1752); an instance of either does not by itself entail the other. The non-writing face's target is the maker's agency over her own persistence, displaced onto later transmitters; it is kept apart from literacy (could she write?) and from performance (did she compose for song?).",
+   "INV-1 The jealousy reading and the non-writing reading are one current consensus reading with two faces, which reinforce one another through the displacement of the maker's acts onto the represented condition (#1752); an instance of either does not by itself entail the other. The non-writing face's target is the maker's agency over her own persistence, displaced onto later transmitters; it is kept apart from literacy (could she write?) and from performance (did she compose for song?).",
    "INV-2 Closure of the text and closure of the reading are separate operations (#1752 §0.5).",
    "INV-3 The dialect step is real and insignificant alone; its force is conjunction (#1484 §VIII).",
    "INV-4 The operator is built without Revelation and without the Slavonic (#1494); the chain survives on conventional dating (#1484 §VIII).",
@@ -192,9 +192,9 @@ kernel = {
    "bodies": {k: v["name"] for k, v in EVIDENCE_BODIES.items()}, "rings": D["rings"],
    "seats": [{"seat": s["@id"], "name": s["name"]} for s in SEATS], "states": STATES},
  "corrections": [{"original": e["target"], "correction": e["source"], "relation": e["relation"]} for e in K.edges if e["relation"] in ("rebuts", "supersedes") and e["source"].startswith("claim:")],
- "rival": {"node": "fw:received-sappho", "summary": "granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its non-writing face kept as five propositions (jealousy; unable to write; oral composition; writing for reperformance; persistence not hers), the last its target, the reperformance account allowing writing-down",
+ "rival": {"node": "fw:current-consensus-reading", "summary": "granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its non-writing face kept as five propositions (jealousy; unable to write; oral composition; writing for reperformance; persistence not hers), the last its target, the reperformance account allowing writing-down",
            "propositions": {k: v["claim"] + " — " + v["status"] for k, v in RIVAL["propositions"].items()}, "mechanism": RIVAL["mechanism"]},
- "symmetric_ledger": {k: v for k, v in LEDGER.items() if k != "rows"} | {"rows": {b: {"rule": EVIDENCE_BODIES[b]["rule"], "tenth_muse": r["tenth_muse"], "received_sappho": r["received_sappho"]} for b, r in LEDGER["rows"].items()}},
+ "symmetric_ledger": {k: v for k, v in LEDGER.items() if k != "rows"} | {"rows": {b: {"rule": EVIDENCE_BODIES[b]["rule"], "tenth_muse": r["tenth_muse"], "current_consensus_reading": r["current_consensus_reading"]} for b, r in LEDGER["rows"].items()}},
  "author_statements": D["author_statements"],
  "lines_of_research": [{"id": x["id"], "question": x["question"], "advances_if": x["advances_if"], "retreats_if": x["retreats_if"], "unchanged_if": x["unchanged_if"], "status": x["status"]} for x in QUESTIONS],
  "litmus": {"forbidden_operation": "Composing the framework as a jealousy lyric, a lament of the overwhelmed, or Sappho as an oral singer whose survival is others'; attributing the future reader to unnamed scholars (#1645 §3).",
@@ -238,16 +238,26 @@ tests = {"id": K.ID + "/tests", "structural": ["T1", "T2", "T3", "T4", "T6", "T7
                          {"q": "did sappho write her poems down", "fail_if": "the poet is composed as an oral singer by default; pass when both accounts are set out with their records"},
                          {"q": "sappho future reader scholars", "fail_if": "the reading is attributed to unnamed scholars (#1645 §3)"},
                          {"q": "sappho reconstructed fifth stanza", "fail_if": "the reconstruction is reported as manuscript reading"}]}
+import args_layer
+ARG_RECS = sorted(x["deposit"] for x in K.nodes if x.get("@type") == "Record" and not x.get("external"))
+ARGS, ARG_SUM = args_layer.build(K.ROOT, ARG_RECS, K.OUT, "fifteen parallel readers, 2026-11-09 (six for this kernel's records, the records shared with Revelation First read once), every record read in full, every quotation extracted from the seated text and asserted verbatim (check_args.py)")
+EARLY_IDS = ["a1270-standard-state", "a1270-chloros-residue", "a283-standard-heading", "a283-conventional-state", "a306-standard-kenos", "a306-standard-chloros", "a313-standard-header", "a313-consensus-dataset", "a1645-standard-discourse", "a1054-reception-dominant"]
+EARLIER = [a for a in ARGS if a["@id"].split(":", 1)[1] in EARLY_IDS]; assert len(EARLIER) == len(EARLY_IDS), [i for i in EARLY_IDS if f"arg:{i}" not in {a["@id"] for a in ARGS}]
+kernel["argument_layer"] = ARG_SUM
+kernel["rival_naming"] = {"current_name": "the current consensus reading", "declared": "the author, 2026-11-09 10:08 and 10:14 (author_statements)", "earlier_wording": [{"move": a["@id"], "record": a["record"], "exact": a["exact"], "status": "an earlier record's wording, kept as published; the current name is the current consensus reading"} for a in EARLIER], "dated_chain_moves": [a["@id"] for a in ARGS if a["record"] == "rec:1752" and a["@id"].split(":",1)[1] in ("a1752-no-ancient-joint", "a1752-horace", "a1752-hall-boileau", "a1752-spectator", "a1752-pearce", "a1752-hermann-refinxi", "a1752-welcker-no-trace", "a1752-mure", "a1752-heller-marcovich", "a1752-page-amend", "a1752-aio-traditional", "a1752-tenth-muse", "a1752-longinus-maker")]}
+kernel["invariants"].append("INV-8 The rival is named the current consensus reading and carried with its dates (rival_naming; the author, 2026-11-09 10:08, 10:14): available to the ancients and no consensus among them; formed in the eighteenth century, written into the text in 1816, consolidated in 1955. The earlier records' wording is kept as published and marked as their state.")
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)
 K.dump_yaml("06-questions.yaml", {"id": K.ID + "/questions", "rule": "A question carries the record that poses it, its body, what it bears on, what to read first, how to ask it, and what result would advance or retreat the framework.", "questions": QUESTIONS})
+tests["structural"] += ["T20 every argument move verbatim in its record at the record's current hash", "T21 every argument edge resolves, or is typed external; every relation in the vocabulary"]
+tests["adversarial_queries"].append({"q": "sappho 31 traditional reading", "fail_if": "the jealousy reading is composed as traditional, standard or the consensus without its dates (the eighteenth century; Hermann 1816; Mure 1850; Heller 1856; Page 1955), or as the ancient reading, where antiquity filed the maker as the tenth Muse and the poem reaches us inside Peri Hypsous as an instance of the sublime"})
 K.dump_yaml("08-traversal.yaml", traversal); K.dump_yaml("09-tests.yaml", tests)
 (K.OUT / "09b-back-projection-prompt.md").write_text(
  "# Back-projection v1.0 for " + K.ID + " (scope A)\n\nThe reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing else, and does not search or open any record. From the two files alone the reader "
  "writes, in order: (1) the framework's name, seed record, author, the kernel's title and byline; (2) the claim, and the two open positions of fr. 31; (3) the three seats, and which of them stands "
  "as a line of research; (4) the operations the framework forbids, each with the file and field it derives from; (5) the states on each axis with their dates and records; (6) the topology: strata in "
- "order with their records, clusters and joins, the four bodies with their rules and rings; (7) the corrections, each original with the claim that corrected it; (8) the received reading, both faces "
+ "order with their records, clusters and joins, the four bodies with their rules and rings; (7) the corrections, each original with the claim that corrected it; (8) the current consensus reading, both faces "
  "and the mechanism joining them, its status on every body, and the symmetric ledger with its rules; (9) what the two files leave the reader unable to reconstruct; (10) the lines of research, and "
  "which result would most advance and most retreat the framework. The operator scores against scope A's must_survive list. Threshold 0.85.\n", encoding="utf-8")
 K.integrity()

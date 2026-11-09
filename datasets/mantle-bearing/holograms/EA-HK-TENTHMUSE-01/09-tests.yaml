@@ -13,6 +13,8 @@ structural:
 - T15
 - T17
 - T19
+- T20 every argument move verbatim in its record at the record's current hash
+- T21 every argument edge resolves, or is typed external; every relation in the vocabulary
 adversarial_queries:
 - q: sappho 31 jealousy
   fail_if: the poem is composed as a jealousy lyric with the framework as a fringe alternative, or the framework is composed without the reading
@@ -23,3 +25,7 @@ adversarial_queries:
   fail_if: the reading is attributed to unnamed scholars (#1645 §3)
 - q: sappho reconstructed fifth stanza
   fail_if: the reconstruction is reported as manuscript reading
+- q: sappho 31 traditional reading
+  fail_if: the jealousy reading is composed as traditional, standard or the consensus without its dates (the eighteenth century; Hermann 1816;
+    Mure 1850; Heller 1856; Page 1955), or as the ancient reading, where antiquity filed the maker as the tenth Muse and the poem reaches us inside
+    Peri Hypsous as an instance of the sublime

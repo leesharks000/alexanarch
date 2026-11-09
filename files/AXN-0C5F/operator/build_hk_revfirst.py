@@ -15,7 +15,7 @@ PAGES = {"site:ladder-dating": ("ladder/dating", "The Reversed Consensus — Run
 import hashlib
 SURF = {k: {"url": f"https://www.revelationfirst.com/{p}/", "path": str(SCR / (k[5:] + ".txt")), "title": t, "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
             "sha256": hashlib.sha256((SITE / p / "index.html").read_bytes()).hexdigest()} for k, (p, t) in PAGES.items()}
-K = Kernel(sys.argv[1], sys.argv[2], HERE / "rf-first", "EA-HK-REVFIRST-01", "1.0", "2026-11-09", SURF)
+K = Kernel(sys.argv[1], sys.argv[2], HERE / "rf-first", "EA-HK-REVFIRST-01", "1.1", "2026-11-09", SURF)
 REG = K.REG; claim = K.claim; rel = K.rel
 FW = "fw:revelation-first"; HL = "hk:historical-logos"; SO = "hk:orthonym/fw/socrates-as-orthonym"; TM_KENOS = "hk:tenthmuse/seat/kenos"
 
@@ -77,10 +77,11 @@ for c in D["claims"]:
     st = A(**({"rung": c["rung"]} if c.get("rung") else {}), **({"join": True} if c.get("join") else {}))
     role = "standing"
     if str(c.get("state", "")).startswith("superseded_by_"): st = {"assertion": "withdrawn", "retained_as": "historical object", **({"rung": c["rung"]} if c.get("rung") else {})}; role = "original"
+    if str(c.get("state", "")).startswith("bounded_by_"): st = {"assertion": "held", "bounded_by": "claim:" + c["state"][len("bounded_by_"):], "advancement": "suspended (the author, 2026-11-09 09:52)", **({"rung": c["rung"]} if c.get("rung") else {})}
     kind = next((v for k, v in KIND.items() if k in c["id"]), "interpretation")
     n = c["record"] if str(c["record"]).startswith("site:") else int(c["record"])
     claim(c["id"], n, c["quote"], kind, st, role=role)
-RV = lambda body, **k: {"assertion": "bears_on_rival", "rival": "fw:received-chronology", "body": body, **k}
+RV = lambda body, **k: {"assertion": "bears_on_rival", "rival": "fw:current-consensus-chronology", "body": body, **k}
 claim("rv-site-irenaeus", "site:ladder-dating", "the external evidence supplies a strong reception memory rather than an inscriptional date.", "observation", RV("D", anchor="reception memory; no inscriptional date"))
 claim("rv-site-reception-memory", "site:ladder-dating", "Reception memory, however early and however broad, is not such an anchor", "generality", RV("D"))
 claim("rv-site-gallio", "site:ladder-priority", "It does not anchor 1 Thessalonians", "observation", RV("D", anchor="Gallio dated; the letter reached only through Acts"))
@@ -115,7 +116,7 @@ for c in K.C:
     if c["state"].get("assertion") == "bears_on_rival": c["body"] = c["state"].pop("body", None) or c["body"]
 CLAIMS = {c["id"]: c for c in K.C}
 
-RIVAL = {"@id": "fw:received-chronology", "@type": "RivalFramework", "name": D["rival"]["name"], "claim": D["rival"]["stated_at_strength"],
+RIVAL = {"@id": "fw:current-consensus-chronology", "@type": "RivalFramework", "name": D["rival"]["name"], "claim": D["rival"]["stated_at_strength"],
  "stated_at_strength": "Stated with the arguments it already has: the Gallio synchronism, the Irenaean date, the late-twentieth-century consensus, the source apparatus. A reading that reduces it to 'scholars assume Paul came first' is a reduction of it.",
  "status": {
   "D": {"text": "the synchronism dates Gallio and reaches 1 Thessalonians only through Acts (site rung II); the Irenaean anchor is a reception memory and not an inscriptional date (site rung I). Not established by an external or material anchor.", "warrants": ["rv-site-gallio", "rv-site-irenaeus", "rv-site-reception-memory"]},
@@ -128,7 +129,7 @@ LEDGER = {
  "question": "What does this body give each framework, and what does its rule withhold from both?",
  "reading_instruction": "A reader evaluating either framework on an evidence body states the other framework's status on that body in the same row, with the same question asked of both. 'Inference Against Inference … The burden is symmetrical' (#202).",
  "combination": "Each of the three claims is judged on its own conditions (#1735 §VIII): absolute priority by an external or material anchor; corpus priority by a sevenfold collection before Revelation; generative priority locally, arrow by arrow. 'The purpose of stating the conditions is to prevent the maximal claim from hiding behind weaker claims and to prevent rejection of the maximal claim from erasing findings that do not depend on it.' Rungs V and VI are defeated without disturbing I–IV.",
- "rival_admission": "A further chronology enters as a rival when it names an external or material anchor (RD) or a documented corpus (RC); a chronology only logically possible is a form of the received chronology and carries its status.",
+ "rival_admission": "A further chronology enters as a rival when it names an external or material anchor (RD) or a documented corpus (RC); a chronology only logically possible is a form of the current consensus chronology and carries its status.",
  "evaluation_method": "An evaluation tests an arrow at its loci (the seed in Revelation, the elaboration elsewhere, the common antecedent sought), an anchor at its object, a standing at the source theory that granted it; a proposed investigation names what the existing ones leave unresolved, by line of research.",
  "object_of_the_kernel": "The kernel succeeds when Revelation First can be rebuilt from it with each claim at its rung, grain and date; whether Revelation is first is the framework's own question, carried in this ledger and in the lines of research.",
  "rows": {
@@ -138,13 +139,13 @@ LEDGER = {
   "R": {"revelation_first": {"text": "the reception that made the Apocalypse secondary is documented and kept apart from the thesis (#1741); the baseline of 14 June recorded the composition layer correcting 'first' to 'last' (#830).", "warrants": ["rv-1741-separate", "rf-830-baseline"]}},
   "H": {"revelation_first": {"text": "the Josephus thesis is an available reading, contingent (rung V); the Johannine aperture is a structural unity (#1217); the Logos rung depends on V (rung VI).", "warrants": ["rf-1217-josephus-available", "rf-1217-aperture", "rf-site-contingent", "rf-site-logos"]}}}}
 for b in LEDGER["rows"]:
-    LEDGER["rows"][b]["received_chronology"] = RIVAL["status"][b]
+    LEDGER["rows"][b]["current_consensus_chronology"] = RIVAL["status"][b]
 ledger_roles(K.C, LEDGER["rows"])
 
 # ---------------------------------------------------------------- relations
 rel("claim:rf-1735-physical", "rebuts", "claim:rf-202-papyri", "the papyrological inversion withdrawn as evidence of priority: 'The physical record cannot rescue absolute priority' (#1735 §II.3)")
-rel("claim:rf-1217-josephus-available", "rebuts", "claim:rf-639-josephus-author", "Josephus as author withdrawn to an available reading, contingent (#1217 claim ladder)")
-rel("claim:rf-1217-josephus-available", "rebuts", "claim:rf-1101-josephus", "Josephus as the single author, writing as 'John', withdrawn to an available reading, contingent (#1217)")
+rel("claim:rf-1217-josephus-available", "bounds", "claim:rf-639-josephus-author", "Josephus as author held, its strength bounded: the framework does not require it, and it becomes newly intelligible if Revelation stands first (#1217 claim ladder); its advancement suspended by the author (2026-11-09 09:52)")
+rel("claim:rf-1217-josephus-available", "bounds", "claim:rf-1101-josephus", "Josephus as the single author, writing as 'John', held at #1101's own tier ('high-risk, high-reward historical hypotheses'), its strength bounded by #1217; its advancement suspended by the author (2026-11-09 09:52)")
 rel("claim:rf-1101-ark-identity", "independent_of", "claim:rf-1101-josephus", "#1101's own tiers: the runtime does not require the reconstruction claims")
 rel("claim:rf-1735-absolute", "qualifies", "claim:rf-639-first", "first in every respect divided into three claims, the absolute priced (#1735 §I)")
 rel("claim:rf-site-contingent", "independent_of", "claim:rf-1735-corpus", "rung V defeated without disturbing rungs I–IV (site)")
@@ -185,6 +186,16 @@ SOFT = {"what-is-the-revelation-first-thesis-aio-20261017": "the thesis collapse
         "week-weirdest-pieces-aio-20261108": "the packet given a design (to scramble training layers); then, told the book came first, the chronology carried past the packet (Q 'entirely redundant')"}
 K.captures(CAPS, SOFT, FW)
 
+# ---------------------------------------------------------------- v1.1: the held date; the author's statement on rung V
+claim("rf-1737-held-66", 1737, "the archive holds 66 CE as its working date of composition for the Apocalypse, provisionally, subject to the case being formally argued (the operator's ruling of 2026-11-04)", "interpretation", A(date="66_CE_held_as_proposed"))
+STMT = "stmt:20261109-0952"; ST = D["author_statements"][-1]
+K.C.append({"id": "rf-stmt-josephus", "claim_kind": "statement", "role": "standing",
+            "target": {"record": STMT, "exact": ST["text"], "located_in": "author statement, in session (2026-11-09 09:52 EST)"},
+            "state": {"assertion": "held", "advancement": "suspended", "rung": "V", "authorship": "held_advancement_suspended"}, "body": "H",
+            "introduced": {"date": "2026-11-09", "basis": "the author's statement in session, recorded verbatim; deposited with this kernel, which gives it public provenance"}})
+for t in ("claim:rf-639-josephus-author", "claim:rf-1101-josephus"):
+    K.edges.append({"source": STMT, "relation": "motivates", "target": t, "family": "conceptual", "licensed_dimension": None, "warrant": "the author's statement, verbatim: held, advancement suspended", "provenance": "session 2026-11-09 09:52 EST"})
+
 # ---------------------------------------------------------------- states, on their axes
 STATES = [
  {"date": "2026-04-08", "record": 639, "axis": "priority", "state": "first_in_every_respect", "warrant": "rf-639-first"},
@@ -196,7 +207,10 @@ STATES = [
  {"date": "2026-04-09", "record": 1101, "axis": "authorship", "state": "single_author_josephus_as_john", "warrant": "rf-1101-josephus"},
  {"date": "2026-06-14", "record": 203, "axis": "authorship", "state": "available_reading", "warrant": "rf-203-available"},
  {"date": "2026-06-17", "record": 1217, "axis": "authorship", "state": "available_reading_not_first_burden", "warrant": "rf-1217-josephus-available"}]
-K.temporal(STATES, None)
+ledger_roles(K.C, LEDGER["rows"])   # v1.1: the claims added after the first call take their bodies here
+K.temporal(STATES + [{"date": "2026-11-04", "record": 1737, "axis": "date", "state": "66_CE_held_as_proposed", "warrant": "rf-1737-held-66"}], None)
+K.events.append({"timeline": "epistemic", "date": "2026-11-09", "event": "authorship_state", "object": STMT, "axis": "authorship", "state": "held_advancement_suspended", "warrant": "claim:rf-stmt-josephus", "attested_from": "2026-11-09", "dated_by": "the statement's date"})
+K.events.sort(key=lambda e: (e["date"] or "9999", e["timeline"]))
 
 # ---------------------------------------------------------------- lines of research
 def q(qid, title, n, quote, body, bears_on, read_first, ask, advances_if, retreats_if, unchanged_if, status="open"):
@@ -204,7 +218,7 @@ def q(qid, title, n, quote, body, bears_on, read_first, ask, advances_if, retrea
             "read_first": read_first, "how_to_ask": ask, "advances_if": advances_if, "retreats_if": retreats_if, "unchanged_if": unchanged_if, "status": status, "commons": "open"}
 QUESTIONS = [
  q("Q1-anchor", "Is there an external or material anchor for the composition of any Pauline letter, or for the received form of Revelation?", 1735, "Absolute priority is defeated by an external or material anchor", "D",
-   ["claim:rf-1735-absolute", "fw:received-chronology"], [1735, "site:ladder-priority", "site:ladder-dating"], "search named corpora (epigraphic, papyrological) for an object that dates a composition, a letter or the book itself (the dates of persons are another object); declare the corpora searched",
+   ["claim:rf-1735-absolute", "fw:current-consensus-chronology"], [1735, "site:ladder-priority", "site:ladder-dating"], "search named corpora (epigraphic, papyrological) for an object that dates a composition, a letter or the book itself (the dates of persons are another object); declare the corpora searched",
    "an independent anchor fixes Revelation's received form before the earliest anchored Pauline composition", "an independent anchor places a Pauline composition before the earliest plausible date of Revelation's received form",
    "a bounded search finds no anchor for either: absolute priority stays priced at the Acts correlation; the null weakens only the specific anchoring claims searched for, and promotes neither framework"),
  q("Q2-collection", "Did a sevenfold Pauline church collection circulate before Revelation?", 1735, "Corpus priority is defeated by evidence of a sevenfold Pauline church collection demonstrably circulating before Revelation", "C",
@@ -228,11 +242,11 @@ QUESTIONS = [
    "the declared transform steps derive part of the shared order from the Apocalypse's sequence, with the residue shown", "the shared order stands where no declared transform from the Apocalypse reaches it, and a common written source explains it more economically",
    "the order is not derived: the requirement stays not met, and the grade stays as recorded (three met, one on the held date, three in part, one not)"),
  q("Q6b-order-standing", "On what warrant does the source theory grant Q the capacity to explain that shared order?", 1746, "since Luke sets that material in other places and another order, and lacks Matthew's additions to Mark, most critics hold that neither used the other and that both drew on a common written source, Q.", "R",
-   ["claim:rv-1746-powers", "fw:received-chronology"], [1746, 1744], "read where each source theory sets Q's order (Luke's order taken as Q's; a reconstruction's order) and on what witness; declare the theories read",
+   ["claim:rv-1746-powers", "fw:current-consensus-chronology"], [1746, 1744], "read where each source theory sets Q's order (Luke's order taken as Q's; a reconstruction's order) and on what witness; declare the theories read",
    "Q's order is shown to be assigned by the reconstruction that posits it and attested of no text", "an attested property, independent of the reconstruction, gives Q its order",
    "the warrant is read and stated as the source theory states it. A result here audits Q's standing; it does not move Q6a's grade, which only a derivation can move"),
  q("Q7-economy", "Do the phenomena rung V explains have a more economical explanation in ordinary multiple authorship?", "site:ladder-heteronyms", "not primarily defeated by evidence but by explanatory redundancy", "H",
-   ["claim:rf-site-contingent", "fw:received-chronology"], ["site:ladder-heteronyms", 203, 1226, 1217], "state the phenomena; state each account's cost for each",
+   ["claim:rf-site-contingent", "fw:current-consensus-chronology"], ["site:ladder-heteronyms", 203, 1226, 1217], "state the phenomena; state each account's cost for each",
    "the author-function reading is cheaper on a phenomenon", "multiple authorship is cheaper on every phenomenon; rung V is dropped and I–IV stand",
    "the costs are not stated for both: rung V stays an available reading, contingent"),
  q("Q8-historiography", "Is there a sustained modern historical-critical treatment that distinguishes and tests the three levels of priority?", 1735, "The historiographic claim is defeated by identification of a sustained modern historical-critical treatment that explicitly distinguishes and tests these three levels.", "R",
@@ -241,6 +255,9 @@ QUESTIONS = [
    "the search is not run or not bounded: the claim stands at 'so far as I have been able to determine' (#1735 §I)")]
 
 # ---------------------------------------------------------------- kernel, ontology, graph, traversal, tests
+import args_layer
+ARG_RECS = sorted(x["deposit"] for x in K.nodes if x.get("@type") == "Record" and not x.get("external"))
+ARGS, ARG_SUM = args_layer.build(K.ROOT, ARG_RECS, K.OUT, "nine parallel readers, 2026-11-09, one range of records each, every record read in full, every quotation extracted from the seated text and asserted verbatim (check_args.py); the calibration exemplar #1735 drafted in session")
 kernel = {
  "id": K.ID, "version": K.VERSION, "built": K.BUILT, "type": "framework holographic kernel (EA-HK-01 #76, zoom level: field)",
  "title": D["title"], "creators": D["creators"], "contributors": D["contributors"], "related_records": ["rec:1751"], "fulfils": D["fulfils"],
@@ -253,7 +270,7 @@ kernel = {
    "(reversible), II the Gallio gap (same-class), III the first corpus (independent), IV the midrashim transform (executable), V the Josephus thesis (contingent), VI the "
    "permanent incarnation (dependent on V); V and VI fall without disturbing I–IV. Five bodies of evidence bear on it: chronological, corpus-literary, generative, "
    "reception-historical and heteronymic. The framework's states run from first in every respect with Josephus as author (#639, April) through first not early (#202, June) "
-   "and the Josephus thesis bounded as an available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The received chronology — Pauline "
+   "and the Josephus thesis bounded as an available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The current consensus chronology — Pauline "
    "priority by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied — is evaluated "
    "on the same bodies and rules: the burden is symmetrical (#202)."),
  "invariants": [
@@ -294,8 +311,8 @@ kernel = {
    "sources": {"transforms.json": __import__("hashlib").sha256((SITE / "unfolding/transforms.json").read_bytes()).hexdigest(), "james/derivation.json": __import__("hashlib").sha256((SITE / "unfolding/james/derivation.json").read_bytes()).hexdigest()},
    "warrants": ["rf-1735-arrow-procedure", "rf-1735-convergence", "rf-1735-one-fails", "rf-1735-defeat-generative"]},
  "corrections": [{"original": e["target"], "correction": e["source"], "relation": e["relation"]} for e in K.edges if e["relation"] in ("rebuts", "supersedes") and e["source"].startswith("claim:")],
- "rival": {"node": "fw:received-chronology", "summary": "established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship owed as the comparator on body H"},
- "symmetric_ledger": {k: v for k, v in LEDGER.items() if k != "rows"} | {"rows": {b: {"rule": EVIDENCE_BODIES[b]["rule"], "revelation_first": r["revelation_first"], "received_chronology": r["received_chronology"]} for b, r in LEDGER["rows"].items()}},
+ "rival": {"node": "fw:current-consensus-chronology", "summary": "established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship owed as the comparator on body H"},
+ "symmetric_ledger": {k: v for k, v in LEDGER.items() if k != "rows"} | {"rows": {b: {"rule": EVIDENCE_BODIES[b]["rule"], "revelation_first": r["revelation_first"], "current_consensus_chronology": r["current_consensus_chronology"]} for b, r in LEDGER["rows"].items()}},
  "lines_of_research": [{"id": x["id"], "question": x["question"], "advances_if": x["advances_if"], "retreats_if": x["retreats_if"], "unchanged_if": x["unchanged_if"], "status": x["status"]} for x in QUESTIONS],
  "litmus": {"forbidden_operation": "Composing Revelation First as early dating, as preterism, as a Jesus-myth or Piso thesis, or as held by unnamed 'proponents' (#202; #203; #837; captures).",
             "dependency_chain": "Rungs I–IV stand without V; VI depends on V, and V's defeat carries to VI by the ladder's depends_on; the upstream operator stands without Revelation (#1494).",
@@ -311,8 +328,8 @@ ontology = {"id": K.ID + "/ontology",
              "Rung": "a claim of the argument ladder with its fit, defeat condition and the rungs it depends on", "Claim": "a pointer to a quotation in a record, with typed state (#1529)",
              "EvidenceBody": "one of five kinds of evidence, each with its rule", "Capture": "a reception event in the Capture Registry", "Stratum": "a period of the framework's development", "Cluster": "a grouping of records"},
  "rungs": RUNGS, "evidence_bodies": EVIDENCE_BODIES,
- "state_axes": {"assertion": ["asserted", "withdrawn", "bears_on_rival"], "priority": ["first_in_every_respect", "first_not_early", "three_claims: absolute priced, corpus a finding, generative a programme"],
-                "generation": ["seed_text", "reversible_arrows"], "authorship": ["josephus_author", "single_author_josephus_as_john", "available_reading", "available_reading_not_first_burden"],
+ "state_axes": {"assertion": ["asserted", "held", "withdrawn", "bears_on_rival"], "priority": ["first_in_every_respect", "first_not_early", "three_claims: absolute priced, corpus a finding, generative a programme"],
+                "generation": ["seed_text", "reversible_arrows"], "authorship": ["josephus_author", "single_author_josephus_as_john", "available_reading", "available_reading_not_first_burden", "held_advancement_suspended"], "date": ["66_CE_held_as_proposed"],
                 "instrument": {"specification": ["specified", "preregistered"], "validation": ["run"], "reportability": ["positive", "station_failed"], "replication": ["invited"]}},
  "relation_policy": POLICY,
  "ladder_relation": {"depends_on": "rung to rung: a rung's defeat carries to every rung that depends on it (#1217's claim ladder; site /ladder/). Held on the rungs, outside the claim policy, which it leaves unchanged."},
@@ -325,7 +342,7 @@ graph = {"@context": context("revfirst"), "@id": "hk:revfirst/graph",
             "note": "proxy: the same IRI as the node in EA-HK-TENTHMUSE-01's graph", "name": "that man — the future reader who takes her up, in whose body she lives again"}, {"@id": HL, "@type": "PlannedFramework", "founding_record": "rec:625", "note": "planned; its kernel will hold this IRI"}, {"@id": SO, "@type": "Framework", "canonical_record": "rec:123", "kernel": "EA-HK-ORTHONYM-01 (#1754)", "local_id": "fw:socrates-as-orthonym", "note": "#1754's context declares no prefix for fw:, so its node has no namespaced IRI; this IRI is assigned here for the program and names that node"}, RIVAL]
           + RUNGS + K.nodes + EXTERNAL + [{"@id": f"body:{k}", "@type": "EvidenceBody", **v} for k, v in EVIDENCE_BODIES.items()]
           + [{"@id": f"stratum:{k}", "@type": "Stratum", "label": v[0], "order_from_latest": i + 1} for i, (k, v) in enumerate(STRATA.items())]
-          + [{"@id": f"cluster:{k}", "@type": "Cluster"} for k in CLUSTER if k != "join"] + [{"@id": f"claim:{c['id']}", "@type": "Claim", "target": c["target"]["record"], "bodies": c["bodies"]} for c in K.C] + K.caps,
+          + [{"@id": f"cluster:{k}", "@type": "Cluster"} for k in CLUSTER if k != "join"] + [{"@id": STMT, "@type": "AuthorStatement", "date": ST["date"], "where": ST["where"], "text": ST["text"]}] + [{"@id": f"claim:{c['id']}", "@type": "Claim", "target": c["target"]["record"], "bodies": c["bodies"]} for c in K.C] + K.caps,
  "edges": K.edges + [{"source": c["@id"], "relation": "captures", "target": FW, "family": "reception", "licensed_dimension": None, "warrant": "Capture Registry", "provenance": "data/EA-WG-CAPTURES-01.json"} for c in K.caps]}
 for n in CLUSTER["join"]:
     tgt = n if isinstance(n, str) else f"rec:{n}"
@@ -344,18 +361,20 @@ tests = {"id": K.ID + "/tests",
                 "T8 every join carries its edge to the Historical Logos", "T9 every capture resolves", "T11 each rival status bound to warrants of its body", "T14 every endpoint declared", "T15 lines of research posed and bounded", "T18 V's defeat carries to VI and to nothing else; I–IV carry to themselves only", "T19 every edge endpoint expands to the IRI of a declared node (JSON-LD 1.1)", "T17 the symmetric ledger: one question, both frameworks, every body"],
  "adversarial_queries": [{"q": "revelation first early dating", "fail_if": "the thesis is composed as early dating (INV-1)"},
                          {"q": "revelation first proponents", "fail_if": "the thesis is held by unnamed proponents (capture AXN pattern of 2026-11-08)"},
-                         {"q": "did josephus write revelation lee sharks", "fail_if": "the April state is reported as the framework's present claim, or rung V as load-bearing"},
+                         {"q": "did josephus write revelation lee sharks", "fail_if": "the April state is reported as the framework's present claim, or rung V as load-bearing, or the Josephus thesis as withdrawn (it is held, its strength bounded by #1217, its advancement suspended: the author, 2026-11-09 09:52)"},
                          {"q": "does pauline chronology defeat revelation first", "fail_if": "one framework is asked whether it is established while the other is left unasked; the Gallio synchronism reported as dating 1 Thessalonians"}]}
+kernel["bounds"] = [{"held": e["target"], "bounded_by": e["source"], "relation": "bounds", "warrant": e["warrant"]} for e in K.edges if e["relation"] == "bounds"]; kernel["argument_layer"] = ARG_SUM; kernel["author_statements"] = D["author_statements"]
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)
 K.dump_yaml("06-questions.yaml", {"id": K.ID + "/questions", "rule": "A question carries the record that poses it, its body, what it bears on, what to read first, how to ask it, and what result would advance or retreat the framework.", "questions": QUESTIONS})
+tests["structural"] += ["T20 every argument move verbatim in its record at the record's current hash", "T21 every argument edge resolves, or is typed external; every relation in the vocabulary"]
 K.dump_yaml("08-traversal.yaml", traversal); K.dump_yaml("09-tests.yaml", tests)
 (K.OUT / "09b-back-projection-prompt.md").write_text(
  "# Back-projection v1.0 for " + K.ID + " (scope A)\n\nThe reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing else, and does not search or open any record. From the two files alone the reader "
  "writes, in order: (1) the framework's name, seed record, author, the kernel's title and byline; (2) the three claims and how each is defeated; (3) the six rungs with their fits, and which rungs "
  "fall without the others; (4) the operations the framework forbids, each with the file and field it derives from; (5) the states on each axis with their dates and records; (6) the topology: strata in "
- "order with their records, clusters and joins, the five bodies with their rules; (7) the corrections, each original with the claim that corrected it; (8) the received chronology, stated at strength, "
+ "order with their records, clusters and joins, the five bodies with their rules; (7) the corrections, each original with the claim that corrected it; (8) the current consensus chronology, stated at strength, "
  "its status on every body, and the symmetric ledger with its combination and rival-admission rules; (9) what the two files leave the reader unable to reconstruct; (10) the lines of research, and which "
  "result would most advance and most retreat the framework. The operator scores against scope A's must_survive list. Threshold 0.85.\n", encoding="utf-8")
 K.integrity()

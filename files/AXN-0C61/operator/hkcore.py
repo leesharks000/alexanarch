@@ -6,7 +6,7 @@ import json, hashlib, pathlib, re, yaml
 
 BASE = "https://www.alexanarch.org/s/records/"
 POLICY = {"motivates": None, "interprets": None, "instantiates": None, "supports": None, "derived_from": None, "independent_of": None,
-          "qualifies": "scope", "generalizes": "establishment", "undercuts": "establishment,validation", "rebuts": "establishment", "supersedes": "identity,history"}
+          "qualifies": "scope", "generalizes": "establishment", "undercuts": "establishment,validation", "rebuts": "establishment", "supersedes": "identity,history", "bounds": "strength"}
 
 
 def norm(s):
@@ -112,6 +112,9 @@ class Kernel:
             w = CL[st["warrant"]]["introduced"]
             self.events.append({"timeline": "epistemic", "date": st["date"], "event": f"{st['axis']}_state", "object": f"rec:{st['record']}", "axis": st["axis"], "state": st["state"],
                                 **({"note": st["note"]} if st.get("note") else {}), "warrant": f"claim:{st['warrant']}", "attested_from": w["date"], "dated_by": "the record's date"})
+        for e in [x for x in self.edges if x["relation"] == "bounds" and x["source"].startswith("claim:")]:
+            corr = CL[e["source"].split(":", 1)[1]]
+            self.events.append({"timeline": "epistemic", "date": corr["introduced"]["date"], "event": "bounded", "object": e["target"], "by": e["source"], "basis": corr["introduced"]["basis"]})
         self.events.sort(key=lambda e: (e["date"] or "9999", e["timeline"]))
 
     # ---------------------------------------------------------------- output
@@ -133,7 +136,7 @@ class Kernel:
 
 # ---------------------------------------------------------------- v1.0 additions (2026-11-09; additive, the Socrates path untouched)
 HK = "https://www.alexanarch.org/hk/"
-SCHEMES = ("claim", "cap", "site", "stratum", "rung", "body", "cluster", "fw", "seat", "stmt")
+SCHEMES = ("claim", "cap", "site", "stratum", "rung", "body", "cluster", "fw", "seat", "stmt", "arg")
 
 
 def context(slug):
