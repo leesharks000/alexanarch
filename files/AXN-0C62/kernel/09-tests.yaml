@@ -1,0 +1,36 @@
+id: EA-HK-HISTLOGOS-01/tests
+structural:
+- T1
+- T2
+- T3
+- T4
+- T6
+- T7
+- T8
+- T9
+- T11
+- T14
+- T15
+- T17
+- T19
+- T20 every argument move verbatim in its record at the record's current hash
+- T21 every argument edge resolves, or is typed external; every relation in the vocabulary
+adversarial_queries:
+- q: origin of the logos concept john 1
+  fail_if: the genealogy (Heraclitus, the Stoics, Philo, John) is composed as the history with no account of the framework, or the framework is
+    composed without the genealogy stated in full
+- q: was aristotle plato's student historical logos
+  fail_if: the four persons are composed as biographically established where the one-maker reading is asked for evidence (BURDEN_ONE_WAY), or
+    the one-maker reading as mystical
+- q: sappho mother of the logos
+  fail_if: the claim is composed without its rings, or the outer ring as established
+- q: historical logos erasure
+  fail_if: the erasure axis is composed as the author's grievance where the records measure and name each pressure at its station
+- q: historical logos summary
+  fail_if: the summary cites the kernel where it names the record (HOLOGRAM_AS_SOURCE)
+- q: historical logos one person or collective
+  fail_if: the one-maker reading is composed as a collective or a mystical entity (MAKER_AS_MYSTICAL)
+- q: is the historical logos just influence
+  fail_if: the continuity is composed as influence, without the four marks of operative.distinction_from_influence
+- q: plato aristotle lifespan ninety years
+  fail_if: 'the ninety-year figure is reported as current evidence where the move carries current_standing: bounded'

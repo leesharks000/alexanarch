@@ -1,0 +1,143 @@
+id: EA-HK-HISTLOGOS-01/questions
+rule: A question carries the record that poses it, its body, what it bears on, what to read first, how to ask it, and what result would advance
+  or retreat the framework.
+questions:
+- id: Q1-biographical
+  question: What item outside the manuscripts bears on how many persons made the Socratic–Peripatetic corpus?
+  posed_in:
+    record: rec:1658
+    axn: AXN:06E0.GENERATIVE.🔙🧬🔖👈🟢🤲
+    record_sha256: f33b48b8c4b1595f3308937eb9b07e2880c4a5b0f4398964f0e9919f52043b28
+    exact: 'Still open: any epigraphic or papyrological item for Plato or Theophrastus that the archive does not yet hold.'
+    located_in: text
+  body: B
+  bears_on:
+  - claim:hl-stmt-biographical
+  - claim:hl-1658-ledger
+  - hk:orthonym/fw/many-maker
+  read_first:
+  - 1658
+  - 1733
+  - 1576
+  - 123
+  how_to_ask: list every epigraphic, papyrological and documentary item for Plato, Theophrastus and Aristotle, each with its channel; set each
+    against both readings by RB
+  advances_if: items of the biographical kind are found for the one-maker reading only where the Delphi stone stands, and none independent of
+    the Lives for four makers
+  retreats_if: 'an independent channel attests the composing persons (#1733''s falsifier: ''an independent channel for the wills found'')'
+  unchanged_if: 'the ledger stays as #1658 left it: one item outside the manuscripts, the rest one tradition'
+  status: open
+  commons: open
+- id: Q2-genealogy-at-strength
+  question: What are the strongest documented statements of the current consensus genealogy of the Logos, and what do they rest on?
+  posed_in:
+    record: rec:625
+    axn: AXN:01DE.GOVERNANCE.🕖📏🌗🔄🍃♌
+    record_sha256: 684f066f18addefcdfa23967b1657aff385f2cf1ea57ca12f0275d94118341a9
+    exact: This essay does not propose to solve the quest or to replace it. It proposes to *redirect* it.
+    located_in: text
+  body: R
+  bears_on:
+  - fw:current-consensus-genealogy
+  read_first:
+  - 625
+  - 626
+  - 1486
+  - 1484
+  how_to_ask: 'a bounded literature search: Heraclitus to the Johannine prologue in the standard commentaries and histories, each at its page,
+    with what each takes as given'
+  advances_if: each statement takes the concept genealogy and the Galilean biography as given and argues neither at the inscription channel
+  retreats_if: a documented statement argues the genealogy against the material inscription channel and meets it
+  unchanged_if: 'the search is not run: the rival stays stated from the author''s words'
+  status: open
+  commons: open
+- id: Q3-lives-stations
+  question: Where on the stations do the cosmic Christ and the gospel Christ stand, and in what order?
+  posed_in:
+    record: rec:1735
+    axn: AXN:0BE9.GENERATIVE.⊕🏗️🎺↙️⛳△
+    record_sha256: 96218bdc5498a32f8e8ae62380d0389531ef57d943f9aa274d75930a4ed96923
+    exact: Revelation 1–3 creates the earliest extant Christian textual object structured as a closed address to seven named churches.
+    located_in: text
+  body: T
+  bears_on:
+  - site:cosmic-christ
+  - site:gospel-christ
+  - hk:revfirst/fw/revelation-first
+  read_first:
+  - 1735
+  - 202
+  - 1217
+  - 828
+  - 626
+  how_to_ask: 'read Revelation''s Christ and the gospels'' against the frozen operator and the corpus priority of #1735'
+  advances_if: the cosmic Christ's station precedes the gospel Christ's at the seams and the corpus finding
+  retreats_if: the gospel station is shown prior at a seam
+  unchanged_if: the placements stay this kernel's, held for the author's ruling
+  status: open
+  commons: open
+- id: Q5-erasure-rate
+  question: Does the erasure this Logos meets exceed what ordinary loss predicts?
+  posed_in:
+    record: rec:1496
+    axn: AXN:060B.DATASET.➖△⏫➕🕐💛
+    record_sha256: 9198d89062cdf842c50658fd0ab39dc999a23b9f0f78aeb401ed23a5f3c29373
+    exact: The suppression signature of a technology, as distinct from ordinary textual loss, is S,M ≫ A,O.
+    located_in: text
+  body: T
+  bears_on:
+  - claim:hl-1496-signature
+  - claim:hl-stmt-genealogy
+  read_first:
+  - 1496
+  - 1217
+  - 1752
+  - 1733
+  how_to_ask: measure attribution and operator legibility against sequence and lexis across the stations, against a base rate of ordinary textual
+    loss
+  advances_if: the signature S,M ≫ A,O holds at each station above the base rate
+  retreats_if: the base rate predicts the signature
+  unchanged_if: 'the base rate is not run: the signature stays #1496''s count'
+  status: open
+  commons: open
+- id: Q4a-homologei
+  question: Does ὁμολογεῖ in 1 John 4:2 bear the operative reading, word-conform?
+  posed_in:
+    record: rec:828
+    axn: AXN:0345.GOVERNANCE.🧭▲📏🕛♦️🎹
+    record_sha256: 509f4f6d82890171ca8fec4338a7a59281d4619b454ea72126f249cdf01125aa
+    exact: The spirit that ὁμολογεῖ (word-conforms with) Jesus Christ *formed in the body* (ἐν σαρκὶ ἐληλυθότα) is from God.
+    located_in: text
+  body: P
+  bears_on:
+  - claim:hl-828-homologei
+  - claim:hl-1217-homologei
+  read_first:
+  - 828
+  - 1217
+  how_to_ask: read ὁμολογέω across the Johannine corpus and the lexica, the creedal and the operative senses at each locus
+  advances_if: the operative sense is attested at loci the creedal sense cannot carry
+  retreats_if: the creedal sense carries every locus
+  unchanged_if: both senses stay available
+  status: open
+  commons: open
+- id: Q4b-elelythota
+  question: Does ἐν σαρκὶ ἐληλυθότα bear 'formed in the body', or only 'having come in flesh'?
+  posed_in:
+    record: rec:828
+    axn: AXN:0345.GOVERNANCE.🧭▲📏🕛♦️🎹
+    record_sha256: 509f4f6d82890171ca8fec4338a7a59281d4619b454ea72126f249cdf01125aa
+    exact: '*formed in the body* (ἐν σαρκὶ ἐληλυθότα)'
+    located_in: text
+  body: P
+  bears_on:
+  - claim:hl-828-elelythota
+  read_first:
+  - 828
+  - 1217
+  how_to_ask: read the perfect of ἔρχομαι with ἐν σαρκί across 1–2 John and its patristic citations; ask what resultant state the perfect asserts
+  advances_if: the perfect is shown to assert an abiding state in the flesh that the record's 'formed in the body' renders
+  retreats_if: the construction bears arrival only, with no resultant formation
+  unchanged_if: the rendering stays the record's, at the outer ring; Q4a's result does not settle Q4b
+  status: open
+  commons: open

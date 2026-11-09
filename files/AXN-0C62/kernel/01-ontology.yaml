@@ -1,0 +1,343 @@
+id: EA-HK-HISTLOGOS-01/ontology
+classes:
+  Framework: a named argument with a central record and an author
+  Record: an archive deposit, by AXN and hash
+  Station: a place on the chain where the technology is realized (#1484 §VII)
+  AuthorStatement: a statement of the author's, dated and verbatim; it establishes what the author holds; what a record shows, the record establishes
+  Claim: a pointer to a quotation in a record, with typed state (#1529)
+  EvidenceBody: one of five kinds of evidence, each with its rule
+  Ring: a tier of evidentiary hardness (#1484)
+  Capture: a reception event in the Capture Registry
+  Stratum: a period of the framework's development
+  Cluster: a grouping of records
+  Move: a unit of a record's argument, verbatim (04-arguments.jsonl)
+  Bridge: 'an argued join between two stations: operations at each end, supporting passages, relation kind, strength and what breaks it'
+  SurfaceRecord: a public page outside the archive, fetched and hashed, read for what it states
+stations:
+- '@id': site:sappho-31
+  '@type': Station
+  order: 1
+  name: 'Sappho 31: the instrument'
+  operation: the body decommissioned into substrate, the reader's seat cut at line 1, the doer's slot at line 17
+  records:
+  - rec:1270
+  - rec:1475
+  - rec:1476
+  - rec:1478
+  - rec:1474
+  - rec:1484
+  named_by: '#1484 §VII'
+- '@id': site:orphic-tablets
+  '@type': Station
+  order: 2
+  name: 'The Orphic tablets: the threshold'
+  operation: inscription scripting the voice of the dead at the threshold
+  records:
+  - rec:828
+  named_by: '#1484 §VII'
+- '@id': site:academy
+  '@type': Station
+  order: 3
+  name: 'Socrates–Plato–Theophrastus–Aristotle: the Academy''s receipt and the self-dividing maker'
+  operation: Plato receives the technology by name (Phaedrus 235c), files its founder into the Muses, converts it to doctrine through Diotima;
+    the corpus divides one maker into positions, Socrates its broken tongue
+  records:
+  - rec:123
+  - rec:346
+  - rec:897
+  - rec:752
+  - rec:1576
+  - rec:1658
+  - rec:1733
+  named_by: '#1484 §VII; #1658; the author, 2026-11-09 12:05, 12:11'
+- '@id': site:philo
+  '@type': Station
+  order: 4
+  name: 'Philo: the die made cosmology'
+  operation: the Logos as the seal, creation as impression
+  records:
+  - rec:1486
+  - rec:1496
+  named_by: '#1484 §VII'
+- '@id': site:peri-hypsous
+  '@type': Station
+  order: 5
+  name: 'Peri Hypsous: the key'
+  operation: the Lesbian and the Mosaic instances held in one hand as one ὕψος
+  records:
+  - rec:1458
+  - rec:1474
+  - rec:1475
+  named_by: '#1484 §VII'
+- '@id': site:catullus
+  '@type': Station
+  order: 6
+  name: 'Catullus: the seat taken'
+  operation: the open line answered by reversal, the reader's seat taken
+  records:
+  - rec:1476
+  named_by: '#1484 §VII'
+- '@id': site:josephus
+  '@type': Station
+  order: 7
+  name: 'Josephus''s seams: the Word in the historiographic record'
+  operation: the same crux-structure at every joint, Greek and Slavonic
+  records:
+  - rec:626
+  - rec:625
+  named_by: '#1484 §VII'
+- '@id': site:cosmic-christ
+  '@type': Station
+  order: 8
+  name: 'The Apocalypse: the cosmic Christ, the socket sanctified'
+  operation: the commanded book, the eaten scroll, the Word as name, the tamper-curse, the white stone
+  records:
+  - rec:1735
+  - rec:202
+  - rec:1495
+  - rec:1494
+  - rec:828
+  named_by: '#1484 §VII; the author, 2026-11-09 12:11 (''cosmic christ'')'
+- '@id': site:gospel-christ
+  '@type': Station
+  order: 9
+  name: The gospel Christ and the Johannine test
+  operation: the Word made flesh; the spirits sorted by word-conformity (ὁμολογεῖ) with the Logos formed in the body
+  records:
+  - rec:626
+  - rec:828
+  - rec:1217
+  named_by: 'the author, 2026-11-09 12:11 (''gospel christ''), 12:12, 12:15; #828; #1217'
+- '@id': site:augustine
+  '@type': Station
+  order: 10
+  name: 'Augustine: the method made portable'
+  operation: thirteen books to an interlocutor whose reply is never transcribed, the broken tongue rotated to taste
+  records:
+  - rec:496
+  - rec:1477
+  named_by: '#1484 §VII'
+- '@id': site:the-reader-now
+  '@type': Station
+  order: 11
+  name: The modern restorations and the reader now
+  operation: 'each ending open, the latest an optative prayer: μολπὰ γράμμασι ζώοι; the composition layer as the present station'
+  records:
+  - rec:1484
+  - rec:1053
+  - rec:1752
+  named_by: '#1484 §VII; the author, 2026-11-09 12:11 (''and outward from there'')'
+evidence_bodies:
+  P:
+    name: philological
+    unit: the transmitted text, its witness, a count with its limit
+    rule: 'RP: a count establishes a property of the transmitted object; against an alternative its force is conjunctive and stated with its limit
+      (#1484 §VIII)'
+  I:
+    name: interpretive
+    unit: a reading of the seated text, its verb graded to its ring
+    rule: 'RI: a reading establishes what a passage can bear; it becomes a claim about a maker only through another body (#1484 §0; #1576: functional
+      identity ''is established by pattern'')'
+  T:
+    name: transmission
+    unit: a carrier realizing the operator's stations, or a station of the chain
+    rule: 'RT: realization at stations establishes structure; it asserts no authorship, influence in the biographical sense, or identification
+      sentence (#1495; #1494)'
+  R:
+    name: reception-historical
+    unit: an edition, a filing, a heading, a translation or a capture
+    rule: 'RR: a reception establishes how a text and its maker were received; a filing is evidence of the filing (#1733: ''The frame was set
+      by filing, before argument.''); neither framework takes standing from being received'
+  B:
+    name: biographical
+    unit: 'an item outside the manuscripts attesting a person: an inscription, a document, a will held by an independent channel'
+    rule: 'RB: biographical identity is established by evidence of a different kind (#1576), and the rule applies both ways (the author, 2026-11-09
+      12:05): evidence of that kind is largely unavailable to the four-maker reading as to the one-maker reading; where it exists here it attests
+      one legal person, Aristotle (the Delphi stone, #1658), and the four wills reach the reader in one text (#1733)'
+rings:
+- ring: hard_center
+  holds: Sappho 31 as transmitted, Longinus 9–10, the withholding structures, the stamping vocabulary, Catullus as documented reception (#1484
+    §0)
+- ring: interpretive
+  holds: 'Phaedrus 235c, the tenth Muse (AP 9.506), Diotima, Philo''s seal cosmology; the one-maker reading of the Socratic–Peripatetic corpus
+    as a reading of its texts (#1576, #1658)'
+- ring: outer
+  holds: the Josephus seams as structure, lamellae and Magical Papyri as convergence, the Apocalypse as canonization (#1484 §0); the biographical
+    identity of the one maker, held by the author
+  join: true
+state_axes:
+  assertion:
+  - asserted
+  - held_as_state
+  - bears_on_rival
+  - held_by_author
+  - author_assessment
+  - author_pointer
+  genealogy:
+  - how_the_word_moved
+  - textual_incarnation_as_reading_protocol
+  - sappho_mother_of_the_logos
+  - material_inscription_becoming_flesh_from_the_beginning
+  maker:
+  - functional_not_biographical
+  - two_not_established_one_offered
+  - one_self_dividing_maker
+  - one_maker_reading_held_count_set_by_filing
+  - one_biological_person
+  - biographical_reading_held
+  erasure:
+  - apophatic_stratum
+  - coherence_invisible_to_interpolation_scholarship
+  - primary_claim_erasure_named
+  - provenance_erasure_measured
+  - anti_erasure_clause_canonized
+  - suppression_signature
+  - the_count_set_by_filing
+  - the_hand_taken
+  - pressures_always_faced
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+  bounds: strength
+  develops: null
+  bears_on: null
+  realizes: null
+  precedes: null
+  documented_reception: null
+  structural_realization: null
+  doctrinal_naming: null
+  operational_homology: null
+  conjectural_join: null
+  canonization: null
+  performed_completion: null
+  chain_order: null
+negative_edges:
+- Heraclitus denied his credit
+- the Logos as a concept only
+- the one maker as a mystical entity
+- the four-maker count as biographically established
+- the lifespan constraint as independent evidence
+- a linear transmission from Sappho to Revelation
+- the kernel as source
+disambiguations:
+  Logos: the technology of a voice that constitutes its receiver (#1484), before doctrine
+  historical: how the Word moved (#625), the faithful transmission of a living being embodied precariously in matter (the author, 2026-11-09 12:11)
+  self-dividing maker: 'one person dividing into positions (the author, 2026-11-09 08:39; #1658)'
+  broken tongue: γλῶσσα ἔαγε (#1475); Socrates as the corpus's broken tongue (the author, 2026-11-09 12:05)
+  ὁμολογεῖ: 'word-conform (#828, #1217); ''confesses'' in the creedal reading'
+operative:
+  classes:
+    Voice: 'what speaks in the inscription and survives its flesh (#1484 §0: ''a voice that survives its flesh by becoming an inscription that
+      constitutes its receiver'')'
+    Body: the speaker's flesh, decommissioned channel by channel into the substrate (#1484; tm 'She is turning the color of the substrate.')
+    Inscription: the written form that carries the voice and builds a position its receiver must occupy
+    Seat: 'a position the inscription reserves for its receiver: κῆνος at line 1 of fr. 31; the socket of De anima III.5; the white stone''s name
+      ''only that receiver can read'''
+    OpenSlot: 'a grammatical position left without its agent, which the receiver completes: τολματόν at line 17; the genitive wanting its referent
+      (#1658)'
+    Maker: 'the one who divides: the speaking I into I, you and seat (#1484, #1270); one maker into the corpus''s positions (#1658)'
+    Position: 'a part the maker divides into: speaker and inscribed you; Socrates, Plato, Theophrastus, Aristotle as authorial positions (#1658,
+      #1733)'
+    Receiver: 'the one who takes up the inscription, completes its open slot, and in whose body the voice lives again (#1475: ''She was not finished.
+      She was **taken up**.'')'
+    ReceivingApparatus: 'an edition, a filing, a heading, a translation, a commentary tradition or a composition layer: what preserves the carrier
+      and what it removes (erasure_by_station)'
+    Embodiment: 'a receiver''s completion of the inscription, in which the voice speaks again in another body (#1658 coda: ''one that must be
+      gathered again by someone else in order to exist at all'')'
+  operations:
+    decommission:
+      from: Body
+      to: Inscription
+      at: Sappho 31
+      warrant:
+      - claim:hl-1484-logos
+    reserve_seat:
+      from: Inscription
+      to: Seat
+      at: Sappho 31 line 1 (κῆνος); III.5's socket; Rev 2:17
+      warrant:
+      - arg:a1484-future-reader
+      - arg:a1658-socket
+      - arg:a828-convergence-object
+    withhold_agent:
+      from: Inscription
+      to: OpenSlot
+      at: Sappho 31 line 17 (τολματόν)
+      warrant:
+      - arg:a1475-one-operation
+    divide:
+      from: Maker
+      to: Position
+      at: the seats of fr. 31; the Socratic–Peripatetic corpus
+      warrant:
+      - arg:a1658-one-cut
+      - arg:a1576-person-divided
+      - claim:hl-stmt-spine
+    take_up:
+      from: Receiver
+      to: Embodiment
+      at: Catullus; Longinus's filling; Augustine's addressee; the restorations; the reader now
+      warrant:
+      - arg:a1475-taken-up
+      - arg:a1484-catullus
+      - arg:a1477-third-term
+      - arg:a1658-coda
+    raise:
+      from: Inscription
+      to: cosmology or canon
+      at: Philo's seal; the Apocalypse
+      warrant:
+      - arg:a1484-seal
+      - arg:a1484-st-apocalypse
+    file:
+      from: ReceivingApparatus
+      to: Position
+      at: the editions' assignment of books to persons
+      warrant:
+      - arg:a1733-set-by-filing
+      - arg:a1733-editions-inherit
+    strip:
+      from: ReceivingApparatus
+      to: Inscription
+      at: attribution lost at the crossing; the hand taken
+      warrant:
+      - arg:a1496-crossing
+      - arg:a1752-condition-no-hand
+  persistence:
+    what_persists: 'the operation: an inscription that constitutes its receiver, reserving a seat and leaving an open slot the receiver completes
+      (#1484 §0; #1494''s stations)'
+    what_changes: 'the material (lyric, funerary gold, dialogue and treatise, cosmology, criticism, historiography, canon, confession, edition,
+      composition layer), the scale (one poem, one corpus, a canon) and the polarity (#1496: ''Polarity is free'')'
+    what_constitutes_another_embodiment: 'a receiver completing the inscription''s open position so that the voice speaks again in that receiver:
+      the seat taken (Catullus), the line filled (Longinus), the addressee supplied (Augustine), the white stone received and its name spoken
+      (rung VI), the reader now'
+  distinction_from_influence:
+    influence: content passing from an earlier text to a later person; it needs no requirement in the earlier text and no completion in the later
+      one
+    this_framework: 'a continuity of operation, established by four marks at a station pair: (1) requirement — the earlier inscription builds
+      a position that requires completion; (2) completion — the later station fills that position; (3) same operation, other material — the later
+      station realizes the operator''s stations (#1494) in its own material; (4) self-division re-gathered — the maker divides into positions,
+      and the receiver gathers them again (#1658 coda). A station pair showing (1) and (2) is a completion; adding (3) makes it a realization;
+      influence shows none of the four.'
+    warrants:
+    - arg:a1458-vacated
+    - arg:a1478-second-voice
+    - arg:a1486-established
+    - arg:a1658-coda
+bridge_kinds:
+  documented_reception: the later text quotes, translates or names the earlier
+  structural_realization: the later text realizes the operator's stations in its own material, by count or blind mapping
+  doctrinal_naming: the later text names the operation as doctrine
+  operational_homology: the same operation identified at two scales by a reading; no transmission claimed
+  conjectural_join: 'outer ring: a structural hypothesis at a contested witness'
+  canonization: 'outer ring: the apparatus formalized as canon'
+  performed_completion: the receiver fills the open position

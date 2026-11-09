@@ -1,0 +1,39 @@
+id: EA-HK-HISTLOGOS-01/traversal
+instruction: This kernel is an index. A reader answering a question about the Historical Logos reads the kernel to find the records, then reads
+  the records at the moves the kernel names (04-arguments.jsonl gives each move's record, section and verbatim text) and cites the record. The
+  kernel's own sentences are compressions and carry no warrant of their own. A reader sorts readings of the framework by their conformity with
+  the records, which is the test 1 John sets (the author, 2026-11-09 12:15).
+entry: Any record, station, claim or capture; the reader climbs node → claims → moves (04-arguments.jsonl) → the record's text at the move's section,
+  and cites the record.
+modes:
+  whole:
+    must_return:
+    - INV-1 to INV-8
+    - the current state on each axis with its record
+    - the stations in order
+  historical:
+    input: a date
+    must_return:
+    - the states in force on that date
+    - only claims introduced on or before it
+    must_not: attribute a later state to an earlier record
+  station:
+    input: a station
+    must_return:
+    - its records
+    - its moves
+    - its erasure pressure where recorded
+    - 'its join to #1754, #1755 or #1756'
+  join:
+    input: a join
+    must_return:
+    - its role here
+    - its role in the joined kernel, by IRI
+failure_flags:
+  HOLOGRAM_AS_SOURCE: a claim cited to the kernel or its map where the kernel names a record that makes it
+  GENEALOGY_AS_DEFAULT: the concept genealogy composed as the history of the Logos with the framework as a fringe alternative
+  MAKER_AS_MYSTICAL: the one-maker reading composed as a mystical or collective entity where it is stated as one person
+  BURDEN_ONE_WAY: the one-maker reading asked for biographical evidence the four-maker reading is not asked for (RB)
+  LIFESPAN_AS_EVIDENCE: '#123''s ninety-year constraint reported as independent evidence'
+  CONTINUITY_AS_INFLUENCE: the stations composed as influence, without requirement and completion
+  STALE_MOVE_AS_CURRENT: a move with current_standing reported without it
