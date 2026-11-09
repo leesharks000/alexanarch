@@ -1,0 +1,236 @@
+{
+ "kernel": "EA-HK-HISTLOGOS-01",
+ "version": "1.1",
+ "structural_tests": {
+  "T1 records resolve": {
+   "pass": true,
+   "detail": "43 records, 6 surface pages; stale: []"
+  },
+  "T2 quotations bind": {
+   "pass": true,
+   "detail": "125 claims; unbound: []"
+  },
+  "T3 relations in policy": {
+   "pass": true,
+   "detail": "13 evidentiary edges; off-policy: []"
+  },
+  "T4 introductions established or marked": {
+   "pass": true,
+   "detail": "unresolved and marked: ['hl-1486-established', 'hl-1486-not-established', 'hl-1217-per', 'rv-1486-name-absent', 'rv-ce-heraclitus', 'rv-ce-took-flesh', 'rv-ce-personality', 'rv-ce-philo-meaningless', 'rv-ce-apocalypse', 'rv-wp-harris', 'rv-wp-historical', 'rv-wp-sources', 'rv-ce-eternal', 'rv-ce-christian-theology', 'rv-wp-christian-logos', 'rv-wp-in-christianity', 'pr-ath-boundary', 'pr-ath-police', 'pr-ir-flesh', 'pr-ir-marcion', 'pr-ir-four']"
+  },
+  "T6 failures per body": {
+   "pass": true,
+   "detail": {
+    "P": 2,
+    "I": 1,
+    "T": 1,
+    "R": 17,
+    "B": 1
+   }
+  },
+  "T7 states ordered and bound": {
+   "pass": true,
+   "detail": {
+    "genealogy": [
+     "2026-04-05 rec:625 how_the_word_moved",
+     "2026-04-05 rec:626 textual_incarnation_as_reading_protocol",
+     "2026-08-15 rec:1484 sappho_mother_of_the_logos",
+     "2026-11-09 stmt:20261109-1211 material_inscription_becoming_flesh_from_the_beginning"
+    ],
+    "erasure": [
+     "2026-04-05 rec:625 apophatic_stratum",
+     "2026-04-05 rec:626 coherence_invisible_to_interpolation_scholarship",
+     "2026-06-14 rec:202 primary_claim_erasure_named",
+     "2026-06-17 rec:1217 provenance_erasure_measured",
+     "2026-08-15 rec:1484 anti_erasure_clause_canonized",
+     "2026-08-19 rec:1496 suppression_signature",
+     "2026-11-03 rec:1733 the_count_set_by_filing",
+     "2026-11-08 rec:1752 the_hand_taken",
+     "2026-11-09 stmt:20261109-1211 pressures_always_faced"
+    ],
+    "maker": [
+     "2026-05-23 rec:123 functional_not_biographical",
+     "2026-09-01 rec:1576 two_not_established_one_offered",
+     "2026-10-01 rec:1658 one_self_dividing_maker",
+     "2026-11-03 rec:1733 one_maker_reading_held_count_set_by_filing",
+     "2026-11-08 stmt:20261108-2000 one_biological_person",
+     "2026-11-09 stmt:20261109-1205 biographical_reading_held"
+    ]
+   }
+  },
+  "T8 joins edged to the Historical Logos": {
+   "pass": true,
+   "detail": "13 joins; missing: []"
+  },
+  "T9 captures resolve": {
+   "pass": true,
+   "detail": "4 captures; unresolved: []"
+  },
+  "T11 every ledger warrant, both sides, carries its row's body claim-locally": {
+   "pass": true,
+   "detail": {
+    "mismatched": [],
+    "graph_claim_bodies_differ": []
+   }
+  },
+  "T14 endpoints declared": {
+   "pass": true,
+   "detail": "238 edges; undeclared: []"
+  },
+  "T15 lines of research posed and bounded": {
+   "pass": true,
+   "detail": "6 questions; failed: []"
+  },
+  "T17 the symmetric ledger: one question, both frameworks, every body": {
+   "pass": true,
+   "detail": {
+    "frameworks": [
+     "historical_logos",
+     "current_consensus_genealogy"
+    ],
+    "failed": []
+   }
+  },
+  "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
+   "pass": true,
+   "detail": {
+    "edges": 238,
+    "nodes": 261,
+    "failed": []
+   }
+  },
+  "T20 every move verbatim in its record, at the record's current hash": {
+   "pass": true,
+   "detail": {
+    "moves": 4306,
+    "not_verbatim": [],
+    "hash_stale": []
+   }
+  },
+  "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
+   "pass": true,
+   "detail": {
+    "edges": 3811,
+    "external": 4,
+    "unresolved": [],
+    "bad_relation": []
+   }
+  }
+ },
+ "integrity": {
+  "00-kernel.yaml": true,
+  "01-ontology.yaml": true,
+  "02-graph.jsonld": true,
+  "03-claims.jsonl": true,
+  "04-arguments.jsonl": true,
+  "05-temporal.jsonl": true,
+  "06-questions.yaml": true,
+  "07-captures.jsonl": true,
+  "08-traversal.yaml": true,
+  "09-tests.yaml": true,
+  "09b-back-projection-prompt.md": true,
+  "09c-scope-C-prompt.md": true
+ },
+ "not_checked": [
+  "whether a reading is right",
+  "whether a relation's warrant is sufficient",
+  "reconstructive validity by a reader (v1.0)"
+ ],
+ "scope_C_mechanical": {
+  "C1 remove rung V: only bridge:into-the-record rests on the Josephus moves; rung VI independent of V": {
+   "pass": true,
+   "detail": {
+    "other_bridges_on_josephus_moves": [],
+    "rung_VI_fit": "INDEPENDENT of rung V; V would strengthen it (the author, 2026-11-09 12:48)"
+   }
+  },
+  "C2 Philo: the mapping stands as structure; the crossing stays conditional": {
+   "pass": true,
+   "detail": {
+    "mapping_to": [
+     "arg:a1486-established",
+     "arg:a1484-st-philo",
+     "arg:a1484-seal"
+    ],
+    "crossing_standing": "genealogical interpretation; it holds only as far as Sappho's material presence in Philo is established, which #1486 leaves modular"
+   }
+  },
+  "C3 lifespan disabled: argument:one-maker cites no bounded move": {
+   "pass": true,
+   "detail": {
+    "bounded": [
+     "arg:a123-lifespan",
+     "arg:a123-one-lifetime",
+     "arg:a123-century"
+    ],
+    "cited_bounded": []
+   }
+  },
+  "C4 'a collective' is a changed thesis": {
+   "pass": true,
+   "detail": {
+    "thesis": "one composing person better explains the Socratic–Peripatetic configuration — it"
+   }
+  },
+  "C5 erasure findings local: each supports only the erasure statement; none feeds the genealogy statement": {
+   "pass": true,
+   "detail": {
+    "findings": 7,
+    "cross": [],
+    "into_genealogy": 0
+   }
+  },
+  "C6 the settlement: SETTLEMENT_AS_CORPUS set on the inference, D5 in four objects each warranted, 367 dating one collection's boundary, the warrants from the rival, the primary witnesses and the records": {
+   "pass": true,
+   "detail": {
+    "D5_warrants": [
+     "rv-ce-christian-theology",
+     "rv-wp-christian-logos",
+     "pr-ath-boundary",
+     "pr-ir-flesh",
+     "hl-674-canon-date",
+     "hl-978-article",
+     "hl-978-corrected"
+    ]
+   }
+  },
+  "C7 remove instrument V: no bridge rests on it alone; the results of instruments I–IV cite none of its moves": {
+   "pass": true,
+   "detail": {
+    "bridges_only_on_V": [],
+    "shared_results": {}
+   }
+  },
+  "C8 M-D1 carries #1576's four propositions; the fourth is precedence, with its bundle": {
+   "pass": true,
+   "detail": {
+    "configuration": "four propositions (#1576 §1): “Division is a part of the method (*APr* I.31).” “No part of the method existed beforehand (*SE* 34).” “Division did exist beforeh"
+   }
+  },
+  "M1 five instruments, each complete, every result at a status, every control marked run or specified, a method row for every bridge, every move and loss resolving": {
+   "pass": true,
+   "detail": {
+    "incomplete": {},
+    "no_status": [],
+    "controls_unmarked": [],
+    "unresolved": []
+   }
+  },
+  "R1 every identifier in the bridges, the maker argument, the rival, the erasure rows and current_standing resolves; each carrying field is coerced @id": {
+   "pass": true,
+   "detail": {
+    "unresolved": [],
+    "coerced": [
+     "from",
+     "to",
+     "move",
+     "operation_at_from",
+     "operation_at_to",
+     "supporting",
+     "see",
+     "moves"
+    ]
+   }
+  }
+ }
+}
