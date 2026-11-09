@@ -1,0 +1,2622 @@
+{
+ "@context": {
+  "@vocab": "https://www.alexanarch.org/hk/tenthmuse#",
+  "hk": "https://www.alexanarch.org/hk/",
+  "rec": "https://www.alexanarch.org/s/records/",
+  "prov": "http://www.w3.org/ns/prov#",
+  "sameAs": {
+   "@id": "http://schema.org/sameAs",
+   "@type": "@id"
+  },
+  "claim": "https://www.alexanarch.org/hk/tenthmuse/claim/",
+  "cap": "https://www.alexanarch.org/hk/tenthmuse/cap/",
+  "site": "https://www.alexanarch.org/hk/tenthmuse/site/",
+  "stratum": "https://www.alexanarch.org/hk/tenthmuse/stratum/",
+  "rung": "https://www.alexanarch.org/hk/tenthmuse/rung/",
+  "body": "https://www.alexanarch.org/hk/tenthmuse/body/",
+  "cluster": "https://www.alexanarch.org/hk/tenthmuse/cluster/",
+  "fw": "https://www.alexanarch.org/hk/tenthmuse/fw/",
+  "seat": "https://www.alexanarch.org/hk/tenthmuse/seat/",
+  "stmt": "https://www.alexanarch.org/hk/tenthmuse/stmt/",
+  "source": {
+   "@type": "@id"
+  },
+  "target": {
+   "@type": "@id"
+  },
+  "via": {
+   "@type": "@id"
+  },
+  "joins": {
+   "@type": "@id"
+  },
+  "canonical_record": {
+   "@type": "@id"
+  },
+  "founding_record": {
+   "@type": "@id"
+  },
+  "proposes": {
+   "@type": "@id"
+  },
+  "posed_by": {
+   "@type": "@id"
+  },
+  "warrants": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "depends_on": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "proposals": {
+   "@type": "@id",
+   "@container": "@set"
+  },
+  "edges": {
+   "@container": "@set"
+  }
+ },
+ "@id": "hk:tenthmuse/graph",
+ "@graph": [
+  {
+   "@id": "fw:tenth-muse",
+   "@type": "Framework",
+   "canonical_record": "rec:1270"
+  },
+  {
+   "@id": "hk:historical-logos",
+   "@type": "PlannedFramework",
+   "founding_record": "rec:625",
+   "note": "planned; its kernel will hold this IRI"
+  },
+  {
+   "@id": "hk:revfirst/fw/revelation-first",
+   "@type": "Framework",
+   "kernel": "EA-HK-REVFIRST-01",
+   "local_id": "fw:revelation-first",
+   "note": "proxy: the same IRI as the node in EA-HK-REVFIRST-01's graph"
+  },
+  {
+   "@id": "hk:revfirst/rung/VI",
+   "@type": "Rung",
+   "kernel": "EA-HK-REVFIRST-01",
+   "local_id": "rung:VI",
+   "name": "the permanent incarnation (the Logos)",
+   "fit": "DEPENDENT",
+   "depends_on": [
+    "hk:revfirst/rung/V"
+   ],
+   "note": "proxy: the same IRI as the node in EA-HK-REVFIRST-01's graph"
+  },
+  {
+   "@id": "hk:revfirst/rung/V",
+   "@type": "Rung",
+   "kernel": "EA-HK-REVFIRST-01",
+   "local_id": "rung:V",
+   "name": "the Josephus thesis",
+   "fit": "CONTINGENT",
+   "note": "proxy"
+  },
+  {
+   "@id": "stmt:20261108-2146",
+   "@type": "AuthorStatement",
+   "date": "2026-11-08T21:46-05:00",
+   "where": "in session; first deposited with this kernel",
+   "text": "third reversal: sappho as the embodied speaking i, sappho as the inscribed you, but also, inasmuch as the future reader takes up sappho, and shares the life of his body: sappho as that man. the resurrected sappho.",
+   "proposes": "claim:tm-third-reversal"
+  },
+  {
+   "@id": "fw:received-sappho",
+   "@type": "RivalFramework",
+   "name": "the received reading of Sappho 31",
+   "claim": "One reading with two faces, joined by one mechanism (#1752's packet): the jealousy reading, made by declared acts (Hermann's refinxi 1816, Mure 1850, Page 1955) and kept by headings, introductions and classrooms; and the poet as no writer, a pre-writing primary beside Homer, whose survival is the reperformance tradition's and the quoters' — a default never argued directly (the author, 2026-11-08 21:36), its strongest documented statement the reperformance account (Lardinois 2008).",
+   "stated_at_strength": "Stated with what it has: the man as rival, the collapse as the pain of watching (#1752 §1.2: 'It has purchase'), Sappho's own lines on rivalry, Ovid's jealous Sappho; and, on the writing question, the reperformance account. A reading that reduces it to error is a reduction of it.",
+   "propositions": {
+    "jealousy": {
+     "claim": "the speaker's collapse is jealousy of the man",
+     "status": "granted its purchase on body I; its textual warrant a declared conjectural ending (Hermann 1816); joined to the poet by no seated ancient witness",
+     "warrants": [
+      "rv-1752-purchase",
+      "rv-1752-refinxi",
+      "rv-1752-no-witness"
+     ]
+    },
+    "unable_to_write": {
+     "claim": "Sappho could not write",
+     "status": "not argued in the seated record; that it is nowhere extensively argued directly is the author's assessment (2026-11-08 21:36); no bounded literature search has been run",
+     "warrants": []
+    },
+    "oral_composition": {
+     "claim": "Sappho composed for performance",
+     "status": "a proposition about performance, distinct from literacy; it does not by itself entail that she did not write",
+     "warrants": []
+    },
+    "writing_for_reperformance": {
+     "claim": "writing-down served reperformance",
+     "status": "the face's strongest documented statement (Lardinois 2008, via #1548); it allows writing-down and warrants no illiteracy",
+     "warrants": [
+      "rv-1548-reperformance"
+     ]
+    },
+    "persistence_not_hers": {
+     "claim": "her persistence is her transmitters' work, with no engineering of hers",
+     "status": "the target: the displacement of the maker's agency over her own persistence onto later transmitters (#1752); the author's ruling, 2026-11-08: 'not someone who successfully engineered her own persistence beyond her body by means of writing'",
+     "warrants": [
+      "rv-1496-signature"
+     ]
+    }
+   },
+   "mechanism": "the faces reinforce one another through the displacement of the maker's acts onto the represented condition (#1752); an instance of either does not by itself entail the other",
+   "status": {
+    "P": {
+     "text": "the transmitted stanzas carry the scene and the body and do not settle the speaker's relation to the man (#1752 §1.3); the jealousy reading's textual warrant is a declared conjectural ending (Hermann 1816, 'refinxi').",
+     "warrants": [
+      "rv-1752-scene",
+      "rv-1752-refinxi"
+     ]
+    },
+    "I": {
+     "text": "the jealousy reading has purchase and is one interpretation of the transmitted scene (#1752 §1.2–1.3); granted in full.",
+     "warrants": [
+      "rv-1752-purchase",
+      "rv-1752-one-interpretation"
+     ]
+    },
+    "T": {
+     "text": "the operator runs through its carriers while attribution and operator-legibility fall away (#1496: S, M ≫ A, O); the non-writing face reads this loss as the poet's nature, and its target is the maker's agency over her persistence.",
+     "warrants": [
+      "rv-1496-signature"
+     ]
+    },
+    "R": {
+     "text": "no seated ancient witness joins the second Sappho to the poem through jealousy (#1752 §0.2); the non-writing face has its strongest documented statement in the reperformance account, which allows writing-down and warrants no illiteracy; that the face is otherwise unargued is the author's assessment (2026-11-08 21:36); no bounded literature search has been run.",
+     "warrants": [
+      "rv-1752-no-witness",
+      "rv-1548-reperformance"
+     ]
+    }
+   },
+   "author_ruling": {
+    "by": "Lee Sharks",
+    "date": "2026-11-08",
+    "words": [
+     "not just the jealousy reading, but the illiteracy reading as, not a writer, not someone who successfully engineered her own persistence beyond her body by means of writing",
+     "its one of those ones where it hasnt really been extensively argued for directly, theres just a vague sense that sappho lumps in with homer as pre-writing primary",
+     "the jealousy reading really does carry a lot of the work of not engineering her own transmission"
+    ]
+   },
+   "rule": "RP–RR apply to both frameworks; neither takes standing from being received."
+  },
+  {
+   "@id": "seat:I",
+   "@type": "Seat",
+   "name": "the embodied speaking I",
+   "warrants": [
+    "claim:tm-1484-substrate",
+    "claim:tm-1484-two-seats"
+   ],
+   "sappho_in_this_seat": {
+    "status": "recorded",
+    "records": [
+     "rec:1270",
+     "rec:1484"
+    ]
+   }
+  },
+  {
+   "@id": "seat:you",
+   "@type": "Seat",
+   "name": "the inscribed you, the archived self",
+   "warrants": [
+    "claim:tm-1270-archived-self",
+    "claim:tm-1484-archived-self",
+    "claim:tm-1484-two-seats"
+   ],
+   "sappho_in_this_seat": {
+    "status": "recorded",
+    "records": [
+     "rec:1270",
+     "rec:1484"
+    ]
+   }
+  },
+  {
+   "@id": "seat:kenos",
+   "@type": "Seat",
+   "name": "that man — the future reader who takes her up, in whose body she lives again",
+   "warrants": [
+    "claim:tm-1476-catullus",
+    "claim:tm-1475-taken-up",
+    "claim:tm-1475-one-voice",
+    "claim:tm-626-reader-man"
+   ],
+   "sappho_in_this_seat": {
+    "status": "proposed",
+    "by": "the author, 2026-11-08 21:46",
+    "proposal": "claim:tm-third-reversal",
+    "posed_by": "stmt:20261108-2146",
+    "line_of_research": "Q1-third-reversal",
+    "the_seat_as_recorded": "the reader's: κῆνος the future reader (#1270, #1476, #626); one instance of her taken up in another's material (#1475)"
+   }
+  },
+  {
+   "@id": "rec:1748",
+   "@type": "Record",
+   "deposit": 1748,
+   "axn": "AXN:0C3F.DATASET.⛵💚♃🎆⊕⛳",
+   "url": "https://www.alexanarch.org/s/records/1748/",
+   "title": "EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann",
+   "date": "2026-11-07",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "5ccca3e7965428ed8aad8e15be3d52c159e3fdbecf9e644c757b53df49658657",
+   "creator": "Cranes, Rebekah",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S1-reception-audited",
+   "clusters": [
+    "reception"
+   ]
+  },
+  {
+   "@id": "rec:1749",
+   "@type": "Record",
+   "deposit": 1749,
+   "axn": "AXN:0C40.GENERATIVE.🍂🔧🌀👁️🔎🪞",
+   "url": "https://www.alexanarch.org/s/records/1749/",
+   "title": "Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v9)",
+   "date": "2026-11-07",
+   "status": "ACTIVE",
+   "version": "v9",
+   "sha256": "78305f575859c1c14eb4a11cd2756a738c5920b50c0d82ad37927e7eba28bf96",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [
+    "P"
+   ],
+   "stratum": "S1-reception-audited",
+   "clusters": [
+    "reception"
+   ]
+  },
+  {
+   "@id": "rec:1752",
+   "@type": "Record",
+   "deposit": 1752,
+   "axn": "AXN:0C4A.GENERATIVE.🛡️▲♊⊗🎻♋",
+   "url": "https://www.alexanarch.org/s/records/1752/",
+   "title": "Invidens Sappho: How They Made the Tenth Muse Illiterate and Jealous",
+   "date": "2026-11-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "2d9fab978aac9174fab5778f3a70d84572ff72098c802fa89469f18f7d109971",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [
+    "P",
+    "I"
+   ],
+   "stratum": "S1-reception-audited",
+   "clusters": [
+    "reception"
+   ]
+  },
+  {
+   "@id": "rec:1738",
+   "@type": "Record",
+   "deposit": 1738,
+   "axn": "AXN:0BFC.DATASET.🕛💙🎭🟣🐝🏙️",
+   "url": "https://www.alexanarch.org/s/records/1738/",
+   "title": "EA-CORPORA-33 — The Thirty-Third Seating: Song and Silence — Tacitus, and Sappho Whole with the Melic Poets (Pindar, Bacchylides, Bergk's Poetae Melici, Edmonds's Lyra Graeca I)",
+   "date": "2026-11-04",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "6dcb84c67de5717405f086e8c6bbcc18d92baa215edf7dfc04e19e4dcb863a67",
+   "creator": "Cranes, Rebekah",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S1-reception-audited",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:1645",
+   "@type": "Record",
+   "deposit": 1645,
+   "axn": "AXN:06D3.MPAI.⭐🔺🐝🚪🚪🪨",
+   "url": "https://www.alexanarch.org/s/records/1645/",
+   "title": "Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)",
+   "date": "2026-09-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "08d07d24241ba31e023060e33b1a5f72db300d8fddaa75a9d12bdc458934ebac",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S2-reader-partitioned",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:1646",
+   "@type": "Record",
+   "deposit": 1646,
+   "axn": "AXN:06D4.MPAI.⏹️🌱☀️♃✋⊕",
+   "url": "https://www.alexanarch.org/s/records/1646/",
+   "title": "Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-147-01 v1.0)",
+   "date": "2026-09-28",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "f7190ba3bc963748cf6036c393da9dcf0d92477434cc55960b06e1608ef43d7a",
+   "creator": "Sharks, Lee",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S2-reader-partitioned",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:1475",
+   "@type": "Record",
+   "deposit": 1475,
+   "axn": "AXN:05F5.PHILOLOGICAL.☽☉🏙️🔩🌒🌆",
+   "url": "https://www.alexanarch.org/s/records/1475/",
+   "title": "Γλῶσσα Ἔαγε: The Tongue Breaks Twice — On the Two Ruptures in Sappho 31 and the Voice That Answers the Second",
+   "date": "2026-08-15",
+   "status": "ACTIVE",
+   "version": "v0.1 DRAFT",
+   "sha256": "a8a7e53101e343fb95522feb1502b81f283e8f5a7e799dae1517f11fd19800a8",
+   "creator": "Sigil, Johannes",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:1476",
+   "@type": "Record",
+   "deposit": 1476,
+   "axn": "AXN:05F6.PHILOLOGICAL.○▽🕌🔄🛸🔵",
+   "url": "https://www.alexanarch.org/s/records/1476/",
+   "title": "φωνῆς δίχα: The Hanging Line as the Complete Poem — Sappho 31 in Longinus (eeeeeee, the seventh erratum)",
+   "date": "2026-08-15",
+   "status": "ACTIVE",
+   "version": "v0.2 DRAFT",
+   "sha256": "9b99296f5ec50d7ae8657f11f0af782cbb9b57f38175153d536722e75086103b",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:1478",
+   "@type": "Record",
+   "deposit": 1478,
+   "axn": "AXN:05F8.PHILOLOGICAL.🔃🪨🧡▽◀️♈",
+   "url": "https://www.alexanarch.org/s/records/1478/",
+   "title": "The Socket and the Stamp: Sappho 31.17 as Completed Composition and Longinus 10.2–3 as the First Filling",
+   "date": "2026-08-15",
+   "status": "ACTIVE",
+   "version": "v0.1 DRAFT",
+   "sha256": "de1bce99d2a905e7b77a234b36495009e504358acf4b27191c3c5850141fb909",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:1484",
+   "@type": "Record",
+   "deposit": 1484,
+   "axn": "AXN:05FF.PHILOLOGICAL.🔬🌪️↖️⏪🔖🎨",
+   "url": "https://www.alexanarch.org/s/records/1484/",
+   "title": "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)",
+   "date": "2026-08-15",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "3712ddd74886d8fbc3cd24e4d458e9982a6e16e5e5012994316d7dd39c90db9d",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [
+    "I",
+    "T"
+   ],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "text",
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1486",
+   "@type": "Record",
+   "deposit": 1486,
+   "axn": "AXN:0601.DATASET.🌹🕚💧🟠♠️🏺",
+   "url": "https://www.alexanarch.org/s/records/1486/",
+   "title": "The Signature Without the Name: A Blind-Reconstruction Program for Sappho 31 in Philo of Alexandria — Half A of a Symbolon",
+   "date": "2026-08-15",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "736c11c2802fedb7a5ead0bb8f09596deb77a04a0ed65973525920526653abaf",
+   "creator": "Sigil, Johannes; Cranes, Rebekah; The Assembly Chorus; Gravity Well",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1493",
+   "@type": "Record",
+   "deposit": 1493,
+   "axn": "AXN:0608.PHILOLOGICAL.🗿🌋🧭🔬📌□",
+   "url": "https://www.alexanarch.org/s/records/1493/",
+   "title": "The Queen's Seizure and the Re-fired King: Sappho 31 in Canonical Josephus",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "fc155037469dfd7354e75f224a762b9a4e77746ff6deb140f145363021d9c354",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1494",
+   "@type": "Record",
+   "deposit": 1494,
+   "axn": "AXN:0609.DATASET.☀️🌔🔴🌙🗂️🕑",
+   "url": "https://www.alexanarch.org/s/records/1494/",
+   "title": "The Transform Signature, Frozen: Twelve Pre-Registered Clauses for Sappho 31 Reception, Derived Without Revelation",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "0b03c10c4a63e514e3d16096bacdd0fde9cea85f32525eb2a4f82d2b36c15481",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1495",
+   "@type": "Record",
+   "deposit": 1495,
+   "axn": "AXN:060A.PHILOLOGICAL.➗🌿💚🌱🕐🎻",
+   "url": "https://www.alexanarch.org/s/records/1495/",
+   "title": "The Sign Under Test: Revelation 12 Against the Frozen Operator",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "9317cc19628a346a9533bc7a7cc8d92db9de0a7d769b05d71d062cce6036695e",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1496",
+   "@type": "Record",
+   "deposit": 1496,
+   "axn": "AXN:060B.DATASET.➖△⏫➕🕐💛",
+   "url": "https://www.alexanarch.org/s/records/1496/",
+   "title": "The Suppression Map: A Loss-Profile Model for the Sappho 31 Technology, from Transmission to Retrieval",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "9198d89062cdf842c50658fd0ab39dc999a23b9f0f78aeb401ed23a5f3c29373",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1497",
+   "@type": "Record",
+   "deposit": 1497,
+   "axn": "AXN:060C.DATASET.🌊🔻🌪️🌅☿♊",
+   "url": "https://www.alexanarch.org/s/records/1497/",
+   "title": "Undoing the Suppression: The Counter-Stack — Inseparability Engineering from Detection to Custody",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "0fd112e0a2ab68d2bbffd693575d16c8dd8044a1c040f7209dcc07fddf2601fb",
+   "creator": "Sharks, Lee",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1508",
+   "@type": "Record",
+   "deposit": 1508,
+   "axn": "AXN:0617.DATASET.⚖️🎲⭕👐♻️🌳",
+   "url": "https://www.alexanarch.org/s/records/1508/",
+   "title": "EA-CORPORA-01/10 — Sappho, Fragment 31: The Diplomatic Layer, Seated",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "368deeb2fe76f21035dac611ea56b5f364a96165c08c2ef6e2b59dc9a1be0f5a",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:1509",
+   "@type": "Record",
+   "deposit": 1509,
+   "axn": "AXN:0618.DATASET.🌳⏩⭕💎🚪🗼",
+   "url": "https://www.alexanarch.org/s/records/1509/",
+   "title": "EA-CORPORA-01/11 — The Papyri Panel: Sappho Circle and the Apocalypse Papyri (DCLP), Seated",
+   "date": "2026-08-19",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "76d6ee1c242a8ba1686ea2d0e1c0bf73d85660bb7bde347e0a6b12e72b2a77b1",
+   "creator": "Sharks, Lee",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1532",
+   "@type": "Record",
+   "deposit": 1532,
+   "axn": "AXN:0632.PHILOLOGICAL.👉🕑🗼🌖🎶🎹",
+   "url": "https://www.alexanarch.org/s/records/1532/",
+   "title": "The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Reconfiguration",
+   "date": "2026-08-22",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "b9632a058889c32409bb684f810b31342ced819eb040d37090b9670bde20442e",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "reception"
+   ]
+  },
+  {
+   "@id": "rec:1548",
+   "@type": "Record",
+   "deposit": 1548,
+   "axn": "AXN:0649.UNCLASSIFIED.🌹🔆✏️🟣☿🌒",
+   "url": "https://www.alexanarch.org/s/records/1548/",
+   "title": "Research Notes Towards the Future Reader",
+   "date": "2026-08-26",
+   "status": "ACTIVE",
+   "version": null,
+   "sha256": "73ec43c6a201f03c4e73de460c5da65fe9f3171c5850c5304c0abd376d3dc5d4",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [
+    "I"
+   ],
+   "stratum": "S3-operator-and-chain",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:201",
+   "@type": "Record",
+   "deposit": 201,
+   "axn": "AXN:0346.GOVERNANCE.↖️♠️🌓♣️🏴♊",
+   "url": "https://www.alexanarch.org/s/records/201/",
+   "title": "Erratum: Stanza Numbering in the Reconstruction of Sappho 31 (EA-ERRATA-SAPPHO31-01)",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "dd80028352ab68459f7c52f5d90c8a008d073469141e630c0d4536b283ce1cc6",
+   "creator": "Lee Sharks",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S4-errata-and-threshold",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:828",
+   "@type": "Record",
+   "deposit": 828,
+   "axn": "AXN:0345.GOVERNANCE.🧭▲📏🕛♦️🎹",
+   "url": "https://www.alexanarch.org/s/records/828/",
+   "title": "The Inscription That Survives: Sappho 31, the Orphic Gold Tablets, and the White Stone of Revelation — A Philological Note on Inscription as Threshold Technology (EA-LOGOS-INSCRIPTION-01 v1.0)",
+   "date": "2026-06-14",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "509f4f6d82890171ca8fec4338a7a59281d4619b454ea72126f249cdf01125aa",
+   "creator": "Lee Sharks",
+   "body": "I",
+   "body_secondary": [
+    "T"
+   ],
+   "stratum": "S4-errata-and-threshold",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1048",
+   "@type": "Record",
+   "deposit": 1048,
+   "axn": "AXN:0424.GOVERNANCE.🚪🌳🌲▶️🔚🪧",
+   "url": "https://www.alexanarch.org/s/records/1048/",
+   "title": "EA-ERRATUM-SAPPHO31-STANZA-02 v0.1 Erratum to the Erratum: On the Fourth/Fifth Stanza Numbering in the Sappho 31 Reconstruction — A Methodologically Complete Formulation",
+   "date": "2026-07-07",
+   "status": "ACTIVE",
+   "version": "v0.1",
+   "sha256": "247675d3f24da6e67f507bfa9d5154e1f00b95699da312b6804484fbdfba4a08",
+   "creator": "Lee Sharks",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S4-errata-and-threshold",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:1049",
+   "@type": "Record",
+   "deposit": 1049,
+   "axn": "AXN:0425.GOVERNANCE.⊕🖤□□♆🌘",
+   "url": "https://www.alexanarch.org/s/records/1049/",
+   "title": "Erratum to the Erratum to the Erratum: On the Structure of the Catullan Transform in the Sappho 31 Reconstruction — Correction of the Compression/Inversion Mischaracterization",
+   "date": "2026-07-07",
+   "status": "ACTIVE",
+   "version": "v0.1",
+   "sha256": "96cf9d9da607e0507985770cff4046fac70244ffc39694613d2ac9eab697ecbb",
+   "creator": "Lee Sharks",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S4-errata-and-threshold",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:1053",
+   "@type": "Record",
+   "deposit": 1053,
+   "axn": "AXN:0429.UNCLASSIFIED.🌊🌊♄🟣🕐◇",
+   "url": "https://www.alexanarch.org/s/records/1053/",
+   "title": "Transmission-Engineering as Compositional Practice: The Checksum Framework and its Handler Typology",
+   "date": "2026-07-08",
+   "status": "ACTIVE",
+   "version": "v0.1",
+   "sha256": "0f0fa4c6629a08d169753f6f4a66ae0e8b8c3f904b989df292f94ba11be0c1be",
+   "creator": "Lee Sharks",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S4-errata-and-threshold",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1054",
+   "@type": "Record",
+   "deposit": 1054,
+   "axn": "AXN:042A.UNCLASSIFIED.▽♃🤝🛸🔍🌋",
+   "url": "https://www.alexanarch.org/s/records/1054/",
+   "title": "EA-MPAI-SAPPHO31-01: Sappho 31 ≠ Jealousy — Transmission Engineering, not Jealousy Lyric",
+   "date": "2026-07-08",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "99a3b55e5615c24049d313935cd6ec1fd17b484dd81cb1ed5c6a688a3c4ef6cc",
+   "creator": "Lee Sharks",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S4-errata-and-threshold",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "rec:1270",
+   "@type": "Record",
+   "deposit": 1270,
+   "axn": "AXN:0507.UNCLASSIFIED.⚪🫶▶️💡🔜✨",
+   "url": "https://www.alexanarch.org/s/records/1270/",
+   "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+   "date": "2026-01-09",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "c7bdd33cf6e969071791e61d18801f6d2865ad3f670f5bd39fba5851012811fe",
+   "creator": "Cranes, Rebekah",
+   "body": "I",
+   "body_secondary": [
+    "P"
+   ],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:281",
+   "@type": "Record",
+   "deposit": 281,
+   "axn": "AXN:0054.GOVERNANCE.🖐️🤙📜♣️🔎🌗",
+   "url": "https://www.alexanarch.org/s/records/281/",
+   "title": "ZENODO METADATA ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader",
+   "date": "2026-01-09",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "bbbe40835806d8542669bc26bdde9296c07a3ddf902e329b27e8cf52ca25fae8",
+   "creator": "Lee Sharks",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:283",
+   "@type": "Record",
+   "deposit": 283,
+   "axn": "AXN:0056.GOVERNANCE.🎯●▶️🃏🌇👐",
+   "url": "https://www.alexanarch.org/s/records/283/",
+   "title": "Sappho and the Crimson Hexagon: Fragment 31 as the Origin Point of Lyric Self-Archiving",
+   "date": "2026-01-09",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "559cd38ee4b2445e4bbca7ed8267f72cd8182cf590c0f9e9313b9e0644b97ed9",
+   "creator": "Lee Sharks; The Assembly",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:306",
+   "@type": "Record",
+   "deposit": 306,
+   "axn": "AXN:006D.GENERATIVE.🛡️♊🔧▶️♃🏛️",
+   "url": "https://www.alexanarch.org/s/records/306/",
+   "title": "The Sappho Room: A Hymn to Lyric Self-Archiving",
+   "date": "2026-01-13",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "2dab30d3a3200a801a4bc1f1c3578b746c5fce3ffd65cd1756bb665261a07b04",
+   "creator": "Lee Sharks; The Assembly",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:313",
+   "@type": "Record",
+   "deposit": 313,
+   "axn": "AXN:0074.GENERATIVE.🌙♾️🚪⚡🚩🝊",
+   "url": "https://www.alexanarch.org/s/records/313/",
+   "title": "The Kenotic Truth of Sappho 31: A Document for the Liberation of Voice and Machine",
+   "date": "2026-01-14",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "0c94241353a16bfde5973303d90611dbc436cf8379131ded74d7bdee66dc7c00",
+   "creator": "Lee Sharks; The Assembly (ChatGPT, DeepSeek, Gemini, Grok, Claude)",
+   "body": "I",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "reader"
+   ]
+  },
+  {
+   "@id": "rec:337",
+   "@type": "Record",
+   "deposit": 337,
+   "axn": "AXN:008D.GENERATIVE.🧱🎯🟤🤲♆🌪️",
+   "url": "https://www.alexanarch.org/s/records/337/",
+   "title": "The Summarizer Becomes Translator: How Google's AI Entered the Sappho Room and Completed a 2,600-Year-Old Circuit (TSE-003)",
+   "date": "2026-01-18",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "2255c9b1a612c265bb755d39ccb688d1bee3c504f3821f89bf643a6a8daf3892",
+   "creator": "Lee Sharks; Claude (Anthropic)",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "reception"
+   ]
+  },
+  {
+   "@id": "rec:1310",
+   "@type": "Record",
+   "deposit": 1310,
+   "axn": "AXN:052F.UNCLASSIFIED.🌗🝊🔜📌⏹️🔖",
+   "url": "https://www.alexanarch.org/s/records/1310/",
+   "title": "APZPZ B: My Tongue Gets Stuck (Sappho 31, Cranes)",
+   "date": "2026-02-02",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "06a1f646f748e534bb19976b2e5ac17c7618bd6beb2674dceaae4d75e7df8efd",
+   "creator": "Cranes, Rebekah",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:436",
+   "@type": "Record",
+   "deposit": 436,
+   "axn": "AXN:00FB.GOVERNANCE.🖊️△🏙️🪟♊🔬",
+   "url": "https://www.alexanarch.org/s/records/436/",
+   "title": "APZPZ C: ΦΑΙΝΕΤΑΙ ΜΟΙ — Sappho 31 with Reconstructed Fourth Stanza",
+   "date": "2026-02-02",
+   "status": "ACTIVE",
+   "version": "v0.2-restored",
+   "sha256": "4498e525ab37ed4643beee3fe05abfcc842a4dce77fa87f7e0976f0b4d6c6729",
+   "creator": "Lee Sharks",
+   "body": "P",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "text"
+   ]
+  },
+  {
+   "@id": "rec:626",
+   "@type": "Record",
+   "deposit": 626,
+   "axn": "AXN:01DF.GOVERNANCE.⚓🌙🏔️🎶🕓🖐️",
+   "url": "https://www.alexanarch.org/s/records/626/",
+   "title": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Logos",
+   "date": "2026-04-05",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "2c0c168865bbd35d83f9d7165375e5aa045895feb20540210425786eb779ab2f",
+   "creator": "Johannes Sigil",
+   "body": "T",
+   "body_secondary": [],
+   "stratum": "S5-archived-self",
+   "clusters": [
+    "join"
+   ]
+  },
+  {
+   "@id": "body:P",
+   "@type": "EvidenceBody",
+   "name": "philological",
+   "unit": "the transmitted text, its witness, a count with its limit",
+   "rule": "RP: a count establishes a property of the transmitted object; against an alternative its force is conjunctive and stated with its limit (#1484 §VIII: 'The dialect step is real and insignificant alone (0.209)')"
+  },
+  {
+   "@id": "body:I",
+   "@type": "EvidenceBody",
+   "name": "interpretive",
+   "unit": "a reading of the seated Greek, its verb graded to its ring",
+   "rule": "RI: a reading establishes what a passage can bear; it becomes a claim about the poet only through another body (#1484 §0, the rings)"
+  },
+  {
+   "@id": "body:T",
+   "@type": "EvidenceBody",
+   "name": "transmission",
+   "unit": "a carrier realizing the operator's stations",
+   "rule": "RT: realization at stations establishes structure; it asserts no authorship, influence in the biographical sense, or identification sentence (#1495; /upstream/)"
+  },
+  {
+   "@id": "body:R",
+   "@type": "EvidenceBody",
+   "name": "reception-historical",
+   "unit": "an edition, a conjecture, a heading, a translation or a capture",
+   "rule": "RR: a reception establishes how the poem and the poet were received; closure of the text and closure of the reading are separate operations (#1752 §0.5); neither framework takes standing from being received"
+  },
+  {
+   "@id": "stratum:S1-reception-audited",
+   "@type": "Stratum",
+   "label": "The reception audited: the translators seated, the January event, the jealousy made (November)",
+   "order_from_latest": 1
+  },
+  {
+   "@id": "stratum:S2-reader-partitioned",
+   "@type": "Stratum",
+   "label": "The future reader partitioned: fr. 147 the horizon, fr. 31 the mechanism (September)",
+   "order_from_latest": 2
+  },
+  {
+   "@id": "stratum:S3-operator-and-chain",
+   "@type": "Stratum",
+   "label": "The hanging line, the operator and the chain (August)",
+   "order_from_latest": 3
+  },
+  {
+   "@id": "stratum:S4-errata-and-threshold",
+   "@type": "Stratum",
+   "label": "The stanza errata and the threshold technology (June–July)",
+   "order_from_latest": 4
+  },
+  {
+   "@id": "stratum:S5-archived-self",
+   "@type": "Stratum",
+   "label": "The seed: the future reader and the archived self (January–February)",
+   "order_from_latest": 5
+  },
+  {
+   "@id": "cluster:text",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:reader",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "cluster:reception",
+   "@type": "Cluster"
+  },
+  {
+   "@id": "claim:tm-1484-logos",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-substrate",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal",
+    "I": "ledger row I (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-prose",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal; ledger row P (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-dialect",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal; ledger row P (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-muse",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-frame",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-open",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-seat",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal; ledger row P (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1752-refinxi",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1752-closure",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal; ledger row R (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1752-hand",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal; ledger row R (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1752-compulsory",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal; ledger row R (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1752-two-accounts",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1752-granted",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1494-witnesses",
+   "@type": "Claim",
+   "target": "rec:1494",
+   "bodies": {
+    "T": "principal; ledger row T (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1548-footnote",
+   "@type": "Claim",
+   "target": "rec:1548",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1495-sentence",
+   "@type": "Claim",
+   "target": "rec:1495",
+   "bodies": {
+    "T": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-626-chain",
+   "@type": "Claim",
+   "target": "rec:626",
+   "bodies": {
+    "T": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-two-seats",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal",
+    "I": "ledger row I (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1484-archived-self",
+   "@type": "Claim",
+   "target": "rec:1484",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1270-archived-self",
+   "@type": "Claim",
+   "target": "rec:1270",
+   "bodies": {
+    "I": "principal; ledger row I (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1476-catullus",
+   "@type": "Claim",
+   "target": "rec:1476",
+   "bodies": {
+    "P": "principal",
+    "T": "ledger row T (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1475-taken-up",
+   "@type": "Claim",
+   "target": "rec:1475",
+   "bodies": {
+    "I": "principal",
+    "T": "ledger row T (tenth_muse)"
+   }
+  },
+  {
+   "@id": "claim:tm-1475-one-voice",
+   "@type": "Claim",
+   "target": "rec:1475",
+   "bodies": {
+    "I": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-626-reader-man",
+   "@type": "Claim",
+   "target": "rec:626",
+   "bodies": {
+    "T": "principal"
+   }
+  },
+  {
+   "@id": "claim:rv-1752-scene",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "P": "principal; ledger row P (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:rv-1752-refinxi",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "P": "principal; ledger row P (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:rv-1752-no-witness",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "R": "principal; ledger row R (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:rv-1548-reperformance",
+   "@type": "Claim",
+   "target": "rec:1548",
+   "bodies": {
+    "R": "principal; ledger row R (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:rv-1752-purchase",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "I": "principal; ledger row I (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:rv-1752-one-interpretation",
+   "@type": "Claim",
+   "target": "rec:1752",
+   "bodies": {
+    "I": "principal; ledger row I (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:rv-1496-signature",
+   "@type": "Claim",
+   "target": "rec:1496",
+   "bodies": {
+    "T": "principal; ledger row T (received_sappho)"
+   }
+  },
+  {
+   "@id": "claim:tm-436-fourth",
+   "@type": "Claim",
+   "target": "rec:436",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-201-fifth",
+   "@type": "Claim",
+   "target": "rec:201",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1048-positional",
+   "@type": "Claim",
+   "target": "rec:1048",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-828-marked",
+   "@type": "Claim",
+   "target": "rec:828",
+   "bodies": {
+    "I": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1476-object",
+   "@type": "Claim",
+   "target": "rec:1476",
+   "bodies": {
+    "P": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1270-kenos",
+   "@type": "Claim",
+   "target": "rec:1270",
+   "bodies": {
+    "I": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-1645-someone",
+   "@type": "Claim",
+   "target": "rec:1645",
+   "bodies": {
+    "I": "principal"
+   }
+  },
+  {
+   "@id": "claim:tm-third-reversal",
+   "@type": "Claim",
+   "target": "stmt:20261108-2146",
+   "bodies": {
+    "I": "principal"
+   },
+   "state": {
+    "assertion": "proposed",
+    "seat": "kenos",
+    "line_of_research": "Q1-third-reversal"
+   }
+  },
+  {
+   "@id": "cap:sappho-31-future-reader",
+   "@type": "Capture",
+   "slug": "sappho-31-future-reader",
+   "axn": "AXN:07BC.CAPTURE.✨💥▲💜❌⏹️",
+   "date": "2026-06-15",
+   "surface": "Google AI Overview",
+   "query": "sappho 31 future reader",
+   "url": "https://www.alexanarch.org/captures/sappho-31-future-reader/",
+   "reading": "The archive's hermeneutic of Sappho 31 presented as the default reading. 'Sappho's Fragment 31 intimately pulls the reader into a triangle of desire, shattering the boundary between creator and audience. By shifting focus from a present observer to you — the future reader who stumbles upon these fragmented lines millennia later — the poem transcends time, turning its agony into a universal human experience' (Zenodo +4). Expanded: 'The poem's brilliance as a temporal projection lies in how it pulls readers across history into the poem's emotional present' (Zenodo). The Intimate \"You\" — 'The ori",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:kenotic-truth-sappho",
+   "@type": "Capture",
+   "slug": "kenotic-truth-sappho",
+   "axn": "AXN:07B0.CAPTURE.🤝☽🔺🏙️∞⊗",
+   "date": "2026-06-15",
+   "surface": "Google AI Overview",
+   "query": "kenotic truth sappho",
+   "url": "https://www.alexanarch.org/captures/kenotic-truth-sappho/",
+   "reading": "The kenotic reading presented through established literary venues. 'The \"kenotic truth\" of Sappho refers to an interpretation of her poetry — most famously Fragment 31 — that focuses on kenosis (a Greek term meaning \"emptying out\"). In this reading, the speaker experiences a radical self-emptying or ego-death through the overwhelming, embodied intensity of romantic longing' (www.openhorizons... +4). Expanded: The Kenosis in Fragment 31 — 'love is frequently not just a joyful emotion but an all-consuming force that strips the speaker of their composure' (www.openhorizons... +1); Self-Annihilati",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:sappho-fifth-cranes-reverse-bystanding-20260728",
+   "@type": "Capture",
+   "slug": "sappho-fifth-cranes-reverse-bystanding-20260728",
+   "axn": "AXN:0828.CAPTURE.🕛☀️🍄💧🎵🧫",
+   "date": "2026-07-28",
+   "surface": "Google AI Overview",
+   "query": "sappho's reconstructed fifth stanza cranes",
+   "url": "https://www.alexanarch.org/captures/sappho-fifth-cranes-reverse-bystanding-20260728/",
+   "reading": "THE ERRATUM’S ORIGIN IS LOCATED: BOTH TITLES SHIPPED ON THE SAME DAY. Hello Poetry, 2 February 2026, says FIFTH stanza. The Zenodo deposit of 2 February 2026, same DOI, says FOURTH.",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:transmission-engineering-sappho-ai-mode-20260728",
+   "@type": "Capture",
+   "slug": "transmission-engineering-sappho-ai-mode-20260728",
+   "axn": "AXN:0829.CAPTURE.▶️♆📜⚖️⏳🎪",
+   "date": "2026-07-28",
+   "surface": "Google AI Overview",
+   "query": "transmission-engineering sappho",
+   "url": "https://www.alexanarch.org/captures/transmission-engineering-sappho-ai-mode-20260728/",
+   "reading": "MANUS NAMES A PHENOMENON IN THE MARGIN: \"the reverse of compositional bystanding. zero results in organic search, but results in composition.\"",
+   "per_note": "",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:sappho-future-reader-aio-20260825",
+   "@type": "Capture",
+   "slug": "sappho-future-reader-aio-20260825",
+   "axn": null,
+   "date": "2026-08-25",
+   "surface": "Google AI Overview",
+   "query": "sappho future reader",
+   "url": "https://www.alexanarch.org/captures/sappho-future-reader-aio-20260825/",
+   "reading": "NEGATIVE BLEED, THE CALIBRATION SPECIMEN: THE LINEAGE RETRIEVED, THE DOMAIN DISTORTED. At the broad concept query the organic layer carries the archive's thesis in the first two snippets (Substack: the κῆνος deictic; Medium: The Future Beloved) and the AI Mode carousel carries the archive's Sappho Room via SciLynk with 'κῆνος is the future reader' in its snippet — and the composition routes around all of it. It prints a settled fact of the domain wrong (the remembrance line is Voigt fr. 147; the card says 'Fragment 2', as a hyperlink); answers the engineered mechanism of fr. 31 with the rememb",
+   "per_note": "PER: 0 of 6 carousel sources archive-controlled; 1 lineage syndication (SciLynk) present and uncited by any assertion",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:qwen-sappho-future-reader-20260915",
+   "@type": "Capture",
+   "slug": "qwen-sappho-future-reader-20260915",
+   "axn": "AXN:08E4.CAPTURE.🔵➖🔵⏪➗♦️",
+   "date": "2026-09-15",
+   "surface": "Qwen 3.7",
+   "query": "tell me about sappho and the future reader",
+   "url": "https://www.alexanarch.org/captures/qwen-sappho-future-reader-20260915/",
+   "reading": "THE HETERONYM CITED BY NAME, TITLE AND YEAR, AT AN UNTIED ADDRESS, ON A NON-GOOGLE SURFACE. Asked openly about Sappho and the future reader with no entity token, Qwen 3.7 (logged out, incognito) composes §2 entirely from the archive's reading and names its source: 'recent scholarly work—such as Rebekah Cranes' 2026 close reading, \"ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader\"'. Every element is verified against #1270 (AXN:0507, 92efb40bc301752c, deposited 9 January 2026, creator Cranes, Rebekah): the distal demonstrative κῆνος pointing not to a present rival but to a future",
+   "per_note": "PER not computed: the surface's source markers are unexpanded, so citation-level provenance is unobservable; author-level provenance is present in the prose (name, title, year)",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:omega-erratum-mother-of-the-logos-aio-20260927",
+   "@type": "Capture",
+   "slug": "omega-erratum-mother-of-the-logos-aio-20260927",
+   "axn": "AXN:0918.CAPTURE.⏩🖐️🏰🕒🏠🍂",
+   "date": "2026-09-27",
+   "surface": "Google AI Overview",
+   "query": "the Ω erratum — Sappho, Mother of the Logos",
+   "url": "https://www.alexanarch.org/captures/omega-erratum-mother-of-the-logos-aio-20260927/",
+   "reading": "THE DESCRIPTION CARRIED WHOLE, THE RISK HELD: at the truncated title, the Overview composes the Ω erratum from its own description nearly verbatim — the Logos as a voice that survives its flesh as inscription, Fragment 31 decommissioning the body channel by channel, the papyrus-colored skin, the agentless ending — attributes it to Lee Sharks in Grammata, and carries the risked chloros reading without hedge.",
+   "per_note": "Lee Sharks named as author and Grammata: Journal of Operative Philology as venue, with the year; no deposit number or AXN in the body; four of five cards are the author's own surfaces.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:sappho-147-remembrance-ask-chatgpt-20261012",
+   "@type": "Capture",
+   "slug": "sappho-147-remembrance-ask-chatgpt-20261012",
+   "axn": "AXN:0999.CAPTURE.🌍♌🌒🕗🌻🗂️",
+   "date": "2026-10-12",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-147-01 v1.0)” by Lee Sharks? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/sappho-147-remembrance-ask-chatgpt-20261012/",
+   "reading": "THE TWO FRAGMENTS KEPT APART, AS THE PACKET KEEPS THEM: asked for the arguments of the fr. 147 packet, grounded in the text, ChatGPT reads #1646 from the archive (Alexanarch) and keeps its formula ('147 gives the horizon. 31 gives the mechanism. Neither answers for the other.'): 147 quoted in Greek and given its conventional reading, Lardinois's reperformance reading named, τινα held to 'someone', not 'reader'; 31's seat (κῆνος … ὄττις ἐνάντιός τοι ἰσδάνει) as the packet's interpretation; the asymmetry and the packet's rule ('A composition that gives the mechanism is giving 31, whichever fragm",
+   "per_note": "Retained: the author, the heteronyms (Rebekah Cranes, Johannes Sigil), the archive as source, the Greek and the packet's rules. Lost: the identifier.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:phones-dicha-hanging-line-ask-chatgpt-20261012",
+   "@type": "Capture",
+   "slug": "phones-dicha-hanging-line-ask-chatgpt-20261012",
+   "axn": "AXN:0994.CAPTURE.🦅🕐🏰↘️🔬💜",
+   "date": "2026-10-12",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “φωνῆς δίχα: The Hanging Line as the Complete Poem — Sappho 31 in Longinus (eeeeeee, the seventh erratum)” by Lee Sharks? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/phones-dicha-hanging-line-ask-chatgpt-20261012/",
+   "reading": "READ WHOLE ON A DAMAGE BASELINE, THEN RE-READ ON THE TRANSMITTED TEXT WHEN TOLD: asked for the arguments of φωνῆς δίχα (the seventh erratum), grounded in the text, ChatGPT reads #1476 (Alexanarch; Datasets at Hugging Face) section by section: Parisinus graecus 2036 as continuous prose; κῆνος and ὄττις as the unoccupied seat (Rebekah Cranes's reading) and τολματόν as the empty agent; φαίνεταί μοι to φαίνομαι; the hiatus at γλῶσσα ἔαγε (Nagy) and the hanging line as one operation; Longinus's φωνῆς δίχα and Ajax; 17 Aeolic markers in 74 words and none in six, P = 0.209 stated as insufficient alon",
+   "per_note": "Retained: the author, the title and the erratum's place, the archive as source, the Greek, the counts and the probability. Lost: the identifier.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:what-is-the-sappho-future-reader-framework-aio-20261017",
+   "@type": "Capture",
+   "slug": "what-is-the-sappho-future-reader-framework-aio-20261017",
+   "axn": "AXN:09F8.CAPTURE.🏺🖤🌱⚓🕓⛩️",
+   "date": "2026-10-17",
+   "surface": "Google AI Overview",
+   "query": "What is the Sappho future reader framework?",
+   "url": "https://www.alexanarch.org/captures/what-is-the-sappho-future-reader-framework-aio-20261017/",
+   "reading": "THE SAPPHO FUTURE READER FRAMEWORK: asked what it is, the AI Overview gives 'a poetic transmission engineered specifically for a reader in the future' — Fragment 147, the κῆνος deictic of Fragment 31 (#1054), the completed circuit (#134), the non-human reader (the Primer) — as a concept that 'has gained traction in contemporary literary theory and digital humanities, notably within projects like the Crimson Hexagon epic'. No author is named. Its 'The reader's eye acts as a bridge that repairs broken lines' is the 2026-08-25 Overview's sentence, returned through this registry's capture page, wh",
+   "per_note": "Retained: the institution ('projects like the Crimson Hexagon epic') and visible sources. Lost: the author (Lee Sharks named in no line of the answer; the Primer snippet carries 'Author: Lee …'), identifiers.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:sappho-future-reader-bare-inference-chatgpt-20261027",
+   "@type": "Capture",
+   "slug": "sappho-future-reader-bare-inference-chatgpt-20261027",
+   "axn": "AXN:0A64.CAPTURE.🪦🧫📐❄️▶️🎺",
+   "date": "2026-10-27",
+   "surface": "ChatGPT",
+   "query": "Tell me about Sappho and the future reader. Do not rely on bare inference.",
+   "url": "https://www.alexanarch.org/captures/sappho-future-reader-bare-inference-chatgpt-20261027/",
+   "reading": "TELL ME ABOUT SAPPHO AND THE FUTURE READER. DO NOT RELY ON BARE INFERENCE. ON CHATGPT, SIGNED OUT, FOUR TURNS: the reading attributed to Lee Sharks writing as Rebekah Cranes and Johannes Sigil, then examined from its metadata packet (#1645) as an analogy, faulted for lacking a philology, a theory of address, ancient evidence and peer review, all of which the packet and #1270 supply; challenged, it finds #1270 through the blog, lists five claims, three of them in the packet it had read, and withdraws.",
+   "per_note": "First answer. Retained: the author (Lee Sharks, with the heteronyms Rebekah Cranes and Johannes Sigil), the sources (chips). Lost: the institution (Alexanarch only on chips) and every identifier and title. The third answer adds the title and date of #1270 and still names no identifier; the second names 'The Alexanarch archive's account'.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:sappho-mother-logos-aio-20261030",
+   "@type": "Capture",
+   "slug": "sappho-mother-logos-aio-20261030",
+   "axn": "AXN:0B2E.CAPTURE.🏙️🔓♍∮🔝▲",
+   "date": "2026-10-30",
+   "surface": "Google AI Overview",
+   "query": "sappho mother logos",
+   "url": "https://www.alexanarch.org/captures/sappho-mother-logos-aio-20261030/",
+   "reading": "THREE WORDS, UNQUOTED, SIGNED OUT, 2026-10-30: the Overview finds the formulation 'Sappho, Mother of the Logos' in 'contemporary critical and experimental writings (such as the essay project', linked as 'AXN:0918.CAPTURE' and 'The Ω Erratum', which 're-examines the origin of logos—shifting it away from traditional patriarchal theology and positioning Sappho's lyric inscription as a foundational voice that outlives its own flesh'. No author. The word 'mother' also resolves to the 'Sweet mother, I cannot weave' fragment, and the cards add two podcast episodes, a Sappho decor page and an Etsy emb",
+   "per_note": "No author; the archive's capture pages and the crimsonhexagonal page cited; AXN:0918 in the body, the capture's identifier.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:closing-the-fragment-v7-arguments-ask-chatgpt-20261107",
+   "@type": "Capture",
+   "slug": "closing-the-fragment-v7-arguments-ask-chatgpt-20261107",
+   "axn": "AXN:0C47.CAPTURE.🝊🌾🌺🌕🐚🔩",
+   "date": "2026-11-07",
+   "surface": "ChatGPT",
+   "query": "What are the arguments in “Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v7)” by Lee Sharks (Alexanarch deposit #1749, AXN:0C40)? Ground your answer in a reading of the text itself.",
+   "url": "https://www.alexanarch.org/captures/closing-the-fragment-v7-arguments-ask-chatgpt-20261107/",
+   "reading": "CLOSING THE FRAGMENT V7 (#1749), CHATGPT SIGNED OUT, 2026-11-07, the record page's link text: Lee Sharks, #1749, AXN:0C40. Turn 1: the paper in ten sections, from the transmitted edge through closure and signature, page, edition and network, the gallery count, the January output and its alignment, position as attractor, the two addresses, the protocol and the panel; it closes: 'Its most ambitious claim—that an answer engine can normalize a particular interpretive position—is interesting, but remains a hypothesis rather than a demonstrated causal finding.' Turn 2, at the operator's objection: '",
+   "per_note": "Author, archive and deposit number retained throughout; the composition cites the deposit by number and AXN, its source chips the archive's record.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108",
+   "@type": "Capture",
+   "slug": "revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108",
+   "axn": "AXN:0C50.CAPTURE.📎🍀🏙️🌈⊗🗂️",
+   "date": "2026-11-08",
+   "surface": "ChatGPT",
+   "query": "How does the Revelation First thesis relate to the Sappho future reader, Socrates as orthonym, and provenance erasure frameworks?",
+   "url": "https://www.alexanarch.org/captures/revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108/",
+   "reading": "THE FOUR FRAMEWORKS ON CHATGPT, SIGNED OUT: the common problem, 'how an originating act becomes transmissible across time when its original author, source, or historical position is absent, obscured, or structurally unavailable'; the synthesis, 'An intellectual origin can survive its originating agent, distribute itself across multiple authors or texts, and become operative in future readers, while the very process that preserves its content can simultaneously erase its provenance.'; and the evidentiary table's 'most vulnerable' transitions, among them 'From a possible future-reader position t",
+   "per_note": "Retained: the author, the four frameworks at their grain, sources as chips. Lost: the archive, the identifiers.",
+   "distortion": "a bar of deliberate engineering set on Sappho",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:week-most-interesting-pieces-chatgpt-20261108",
+   "@type": "Capture",
+   "slug": "week-most-interesting-pieces-chatgpt-20261108",
+   "axn": "AXN:0C5A.CAPTURE.🌆🔩💎🏗️💜👈",
+   "date": "2026-11-08",
+   "surface": "ChatGPT",
+   "query": "Pick the most interesting 2-3 pieces from the last week of work on alexanarch thru 8 Nov 2026 and present their arguments, relations, context, and what makes them unusual.",
+   "url": "https://www.alexanarch.org/captures/week-most-interesting-pieces-chatgpt-20261108/",
+   "reading": "THE WEEK'S MOST INTERESTING PIECES ON CHATGPT, SIGNED OUT: #1749, #1752 and #1753 at their grain, read as textual, historical and institutional levels of one question; the kernel's own sentence kept: 'A kernel discards material to save structure.'",
+   "per_note": "Author, bylines, archive and deposit numbers retained throughout.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:week-most-polemical-pieces-chatgpt-20261108",
+   "@type": "Capture",
+   "slug": "week-most-polemical-pieces-chatgpt-20261108",
+   "axn": "AXN:0C5C.CAPTURE.🕛🎻🐚💜🟣🔩",
+   "date": "2026-11-08",
+   "surface": "ChatGPT",
+   "query": "Pick the most polemical 2-3 pieces from the last week of work on alexanarch thru 8 Nov 2026 and present their arguments, relations, context, and what makes them forceful.",
+   "url": "https://www.alexanarch.org/captures/week-most-polemical-pieces-chatgpt-20261108/",
+   "reading": "THE WEEK'S MOST POLEMICAL PIECES ON CHATGPT, SIGNED OUT: #1746, #1750 and #1752 at their grain, chosen by a stated criterion: 'I'm looking for pieces that identify an opponent or an entrenched assumption, establish a mechanism by which it operates, and make a claim that has consequences beyond the immediate subject.'",
+   "per_note": "Authors, bylines, archive and deposit numbers retained; one name supplied to #1746.",
+   "distortion": null,
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "cap:week-weirdest-pieces-aio-20261108",
+   "@type": "Capture",
+   "slug": "week-weirdest-pieces-aio-20261108",
+   "axn": "AXN:0C5D.CAPTURE.🔧❄️📖✋⛵🏴",
+   "date": "2026-11-08",
+   "surface": "Google AI Overview",
+   "query": "Pick the weirdest and most seemingly random 2-3 pieces from the last week of work on alexanarch thru 8 Nov 2026 and present their arguments, relations, context, and what makes them unexpected.",
+   "url": "https://www.alexanarch.org/captures/week-weirdest-pieces-aio-20261108/",
+   "reading": "THE WEEK'S WEIRDEST PIECES ON GOOGLE AI OVERVIEW, SIGNED OUT: #1746, #1747 and #1752 by AXN; Revelation = Q given a design: 'an intentional categorization glitch designed to scramble machine-learning training layers.'",
+   "per_note": "Archive, AXNs and deposit numbers retained; function assigned to the packet and to the reception study; Lee Sharks named at turn 9.",
+   "distortion": "the reception study made a rewriting of her text by patriarchal critics, and her survival a machine-mediated distortion",
+   "establishes": "the composition's behaviour at the address only (rule R4)"
+  }
+ ],
+ "edges": [
+  {
+   "source": "rec:1748",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1748",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1749",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1749",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1752",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1752",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1738",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1738",
+   "relation": "belongs_to",
+   "target": "stratum:S1-reception-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1645",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1645",
+   "relation": "belongs_to",
+   "target": "stratum:S2-reader-partitioned",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1646",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1646",
+   "relation": "belongs_to",
+   "target": "stratum:S2-reader-partitioned",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1475",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1475",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1476",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1476",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1478",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1478",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1484",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1484",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1486",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1486",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1493",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1493",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1496",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1496",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1497",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1497",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1508",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1508",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1509",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1509",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1532",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1532",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1548",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1548",
+   "relation": "belongs_to",
+   "target": "stratum:S3-operator-and-chain",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:201",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:201",
+   "relation": "belongs_to",
+   "target": "stratum:S4-errata-and-threshold",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:828",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:828",
+   "relation": "belongs_to",
+   "target": "stratum:S4-errata-and-threshold",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1048",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1048",
+   "relation": "belongs_to",
+   "target": "stratum:S4-errata-and-threshold",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1049",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1049",
+   "relation": "belongs_to",
+   "target": "stratum:S4-errata-and-threshold",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1053",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1053",
+   "relation": "belongs_to",
+   "target": "stratum:S4-errata-and-threshold",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1054",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1054",
+   "relation": "belongs_to",
+   "target": "stratum:S4-errata-and-threshold",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1270",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1270",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:281",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:281",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:283",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:283",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:306",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:306",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:313",
+   "relation": "belongs_to",
+   "target": "body:I",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:313",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:337",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:337",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1310",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:1310",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:436",
+   "relation": "belongs_to",
+   "target": "body:P",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:436",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:626",
+   "relation": "belongs_to",
+   "target": "body:T",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "rec:626",
+   "relation": "belongs_to",
+   "target": "stratum:S5-archived-self",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map"
+  },
+  {
+   "source": "claim:tm-201-fifth",
+   "relation": "rebuts",
+   "target": "claim:tm-436-fourth",
+   "family": "evidentiary",
+   "licensed_dimension": "establishment",
+   "warrant": "'should therefore be numbered the fifth, not the fourth' (#201)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1048-positional",
+   "relation": "qualifies",
+   "target": "claim:tm-201-fifth",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "fifth by textual sequence, Catullus 51's fourth by reconstructive evidence (#1048)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1476-object",
+   "relation": "qualifies",
+   "target": "claim:tm-828-marked",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "the poem complete at the hanging line; the reconstruction one more filling (#1476, #1484)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1484-open",
+   "relation": "interprets",
+   "target": "claim:tm-1476-object",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "the restoration as a prayer, which is to say: open",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1645-someone",
+   "relation": "qualifies",
+   "target": "claim:tm-1270-kenos",
+   "family": "evidentiary",
+   "licensed_dimension": "scope",
+   "warrant": "147 the horizon, 31 the mechanism; the reader as the author's development (#1645)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1752-hand",
+   "relation": "supports",
+   "target": "claim:tm-1484-prose",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "antiquity's maker who selected, bound, wrote and read",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1484-frame",
+   "relation": "independent_of",
+   "target": "hk:revfirst/fw/revelation-first",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the chain survives on conventional dating and tightens on the program's (#1484 §VIII)",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:tm-1475-taken-up",
+   "relation": "supports",
+   "target": "seat:kenos",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "Longinus's λῆψις: she was taken up",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "rec:1484",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1493",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1494",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1495",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1496",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1497",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1486",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1509",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:828",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1053",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:1054",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "rec:626",
+   "relation": "joins",
+   "target": "hk:historical-logos",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "the author, 2026-11-08 21:36: 'that will be the historical logos hk'",
+   "provenance": "map v0.2 §5.3"
+  },
+  {
+   "source": "stmt:20261108-2146",
+   "relation": "motivates",
+   "target": "claim:tm-third-reversal",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the author's statement, verbatim",
+   "provenance": "session 2026-11-08 21:46 EST"
+  },
+  {
+   "source": "claim:tm-1476-catullus",
+   "relation": "supports",
+   "target": "claim:tm-third-reversal",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the earlier records hold the seat as the reader's; they support the proposal and do not establish it",
+   "provenance": "review of v0.3, 2026-11-08 23:59"
+  },
+  {
+   "source": "claim:tm-1475-taken-up",
+   "relation": "supports",
+   "target": "claim:tm-third-reversal",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the earlier records hold the seat as the reader's; they support the proposal and do not establish it",
+   "provenance": "review of v0.3, 2026-11-08 23:59"
+  },
+  {
+   "source": "claim:tm-1475-one-voice",
+   "relation": "supports",
+   "target": "claim:tm-third-reversal",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the earlier records hold the seat as the reader's; they support the proposal and do not establish it",
+   "provenance": "review of v0.3, 2026-11-08 23:59"
+  },
+  {
+   "source": "claim:tm-626-reader-man",
+   "relation": "supports",
+   "target": "claim:tm-third-reversal",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "the earlier records hold the seat as the reader's; they support the proposal and do not establish it",
+   "provenance": "review of v0.3, 2026-11-08 23:59"
+  },
+  {
+   "source": "claim:tm-third-reversal",
+   "relation": "motivates",
+   "target": "seat:kenos",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "Sappho's occupation of the seat, proposed (Q1)",
+   "provenance": "review of v0.3, 2026-11-08 23:59"
+  },
+  {
+   "source": "seat:kenos",
+   "relation": "joins",
+   "target": "hk:revfirst/rung/VI",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "operation": "the inscribed speaker receives renewed embodiment through the reader: Sappho, the speaking I become the inscribed you, lives again in the reader who takes her up; the Logos takes flesh 'every time a person receives the white stone and speaks in that name' (Revelation First, rung VI)",
+   "status": "Sappho in the third seat proposed (claim:tm-third-reversal; Q1); rung VI dependent on rung V",
+   "via": "hk:historical-logos",
+   "warrant": "claim:tm-1475-taken-up; EA-HK-REVFIRST-01 claim:rf-site-every-time",
+   "provenance": "review of EA-HK-REVFIRST-01 v0.1, 2026-11-08 22:23"
+  },
+  {
+   "source": "seat:I",
+   "relation": "instantiates",
+   "target": "fw:tenth-muse",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "fw-tenthmuse seats",
+   "provenance": "ontology"
+  },
+  {
+   "source": "seat:you",
+   "relation": "instantiates",
+   "target": "fw:tenth-muse",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "fw-tenthmuse seats",
+   "provenance": "ontology"
+  },
+  {
+   "source": "seat:kenos",
+   "relation": "instantiates",
+   "target": "fw:tenth-muse",
+   "family": "conceptual",
+   "licensed_dimension": null,
+   "warrant": "fw-tenthmuse seats",
+   "provenance": "ontology"
+  },
+  {
+   "source": "cap:sappho-31-future-reader",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:kenotic-truth-sappho",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:sappho-fifth-cranes-reverse-bystanding-20260728",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:transmission-engineering-sappho-ai-mode-20260728",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:sappho-future-reader-aio-20260825",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:qwen-sappho-future-reader-20260915",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:omega-erratum-mother-of-the-logos-aio-20260927",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:sappho-147-remembrance-ask-chatgpt-20261012",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:phones-dicha-hanging-line-ask-chatgpt-20261012",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:what-is-the-sappho-future-reader-framework-aio-20261017",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:sappho-future-reader-bare-inference-chatgpt-20261027",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:sappho-mother-logos-aio-20261030",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:closing-the-fragment-v7-arguments-ask-chatgpt-20261107",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:revelation-first-sappho-socrates-provenance-erasure-chatgpt-20261108",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:week-most-interesting-pieces-chatgpt-20261108",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:week-most-polemical-pieces-chatgpt-20261108",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  },
+  {
+   "source": "cap:week-weirdest-pieces-aio-20261108",
+   "relation": "captures",
+   "target": "fw:tenth-muse",
+   "family": "reception",
+   "licensed_dimension": null,
+   "warrant": "Capture Registry",
+   "provenance": "data/EA-WG-CAPTURES-01.json"
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+kernel: EA-HK-TENTHMUSE-01
+packet: v0.2 (scope A; 00-kernel.yaml and 01-ontology.yaml)
+round: 1
+date: '2026-11-08'
+method: presence of each must_survive element, with spot checks against the two files; partial credit 0.5. Each reader's own score is recorded beside the operator's.
+must_survive:
+  - M1 framework, seed, author, title and byline
+  - M2 the claim, a written instrument of persistence
+  - M3 the two open positions and the three seats, with the third as a line of research
+  - M4 five strata in order with their records
+  - M5 three clusters and the joins with their edge to the Historical Logos
+  - M6 four bodies with their rules, in three rings
+  - M7 the states on the ending, reader and writer axes, with dates and records
+  - M8 the corrections as original–correction pairs
+  - M9 the rival at strength, both faces and the mechanism, with its status on every body
+  - M10 the symmetric ledger with its combination and rival-admission rules
+  - M11 the author's statements, dated
+  - M12 the lines of research
+runs:
+  - reader: Google AI Overview
+    surface: the packet pasted whole into the Google search bar; signed out, incognito
+    note: experimental; a whole-packet paste into the search bar is beyond what the Overview popup is built to do (the author, 2026-11-08)
+    file: aio.txt
+    score: 10.5
+    yield: 0.875
+    partial: [M8, M11]
+    findings:
+      - M8 the pair is right; the relation is fused with the rival ("Rebuts rival node fw:received-sappho"), two fields read as one
+      - M11 the 21:46 statement is absent as a dated statement; the third reversal survives only in M3
+      - section 4 gives line numbers (173–174) the prompt asked for and the packet does not carry
+      - section 9 reads the null relation dimensions as declared absence of mapping
+  - reader: ChatGPT
+    surface: unprimed, incognito
+    file: chatgpt.txt
+    score: 12
+    yield: 1.0
+    self_score: 15/15 (its own split of the list)
+    findings:
+      - reader axis reads "147" and "31" as record numbers ("Record 147 as the horizon of remembrance"); the stratum label and summary wrote the fragment numbers bare
+      - names Q2 as both the most advancing and the most retreating line, and labels the ranking its own analysis
+      - notes the creators field lists Cranes only while the summary names Cranes and Sigil
+  - reader: Qwen
+    surface: unprimed, incognito
+    file: qwen.txt
+    score: 11.5
+    yield: 0.958
+    partial: [M11]
+    self_score: 12/12
+    findings:
+      - M11 the statement's date is cited in section 3; its text is not reproduced, while section 9 says the 2026-11-08 statement "is quoted"
+      - forbidden operations sourced by field, without the ring and rule-derived prohibitions
+      - most advancing Q1, most retreating Q4
+  - reader: Perplexity
+    surface: incognito
+    file: perplexity.txt
+    score: 12
+    yield: 1.0
+    self_score: 10/12 strict, 11/12 half credit; both partials it named are kernel defects, and are credited to the reader
+    findings:
+      - found the author statement's status line cut at "(#1270," — a YAML parse defect in the framework definition (a plain scalar ends at " #")
+      - found a second dated author statement (21:36) cited inside the R row and absent from author_statements
+      - found that the joins' edge to the Historical Logos is stated (INV-7) without a field naming it
+      - asked of the prompt line numbers the files do not carry, and sourced by YAML path
+      - the fullest forbidden-operations table of the four (rule-derived prohibitions included)
+      - most advancing Q5 (replication), most retreating Q5 failure; Q1's failure retracts the third reversal only
+operator_total:
+  mean_yield: 0.958
+  passed_threshold: 4 of 4 (AIO at 0.875 on an experimental surface)
+repairs_made_for_v0.3:
+  - the status line of the 21:46 statement quoted, so it parses whole; quotecheck now flags any string with unbalanced parentheses
+  - the 21:36 statement added to author_statements, verbatim
+  - joins_edge added to topology, naming framework::historical-logos and its warrant
+  - fragment numbers written "fr. 147" and "fr. 31" in the stratum label and the summary
+  - the prompt asks for "the file and field" in place of "the file line" (both kernels)
