@@ -154,6 +154,7 @@ Each reading of a hologram is a row of table `hologram_evaluations`, with its tr
 | HK-ORTH-R2-qwen3.7-plus | reconstruction | Qwen3.7-Plus, signed out, incognito | the v0.3 reader packet: the prompt and scope A (00-kernel.yaml, 01-ontology.yaml) | yield 0.909 | — | EA-HK-ORTHONYM-01 v0.4 |
 | HK-ORTH-L1-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.0) and #1754 (EA-HK-ORTHONYM-01 v1.0), read on… | 3 retractions by the reader | ONE_SIDED_BURDEN, RIVAL_BY_POSSIBILITY, RIVAL_REDUCED, OBJECT_CHANGED, PROGRAMME_RESTATED, CALENDAR_DRIFT, DEFINITION_DRIFT | EA-HK-FRAME-01 v1.1 (#1753) and EA-HK-ORTHONYM-01 v1.1 (#1754): the symmetric… |
 | HK-ORTH-L2-chatgpt | evaluation | ChatGPT, signed out | the live records #1753 (EA-HK-FRAME-01 v1.1) and #1754 (EA-HK-ORTHONYM-01 v1.1), read on… | 0 retractions by the reader | DEFINITION_DRIFT, PROGRAMME_RESTATED |  |
+| HK-ORTH-L3-chatgpt | evaluation | ChatGPT, signed out | the live record #1754 (EA-HK-ORTHONYM-01 v1.1), from the record's own Ask ChatGPT link | 0 retractions by the reader | — |  |
 
 ## The three literary claims
 
