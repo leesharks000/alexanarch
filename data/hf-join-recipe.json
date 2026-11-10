@@ -49,7 +49,7 @@
    "note": "the only bridge between the two namespaces; 22 of 26 identities join, 175 lineage nodes do not and that is correct"
   },
   "citations": {
-   "note": "deposit-level citation edges, kept as their own config; the same relations also appear in `relations` under predicate `cites`. A consumer wanting one representation should use `relations` and filter."
+   "note": "the full internal citation graph as its own config (14,940 edges from data/citation-graph.json, each with the `via` that found it). `relations` carries, under predicate `cites`, the citations recorded in the registry's cited_by field (1,254 edges, basis derived-deterministic, provenance registry.cited_by), a subset of the graph. A consumer wanting every citation uses `citations`; one wanting citations typed beside the archive's other relations uses `relations` filtered on `cites`. (Corrected 2026-11-10: the earlier note said the two were the same set; `relations` then held no `cites` edge at all.)"
   }
  },
  "basis_vocabulary": {

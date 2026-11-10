@@ -136,7 +136,11 @@ def main():
     # ---- the registry's own typed fields
     for d in act:
         s = f"deposit:{d['deposit_number']}"
+        # cited_by holds {deposit, axn} objects (it held bare ints when this was written). The int-only test
+        # emitted zero `cites` edges from 1,296 citations while the join recipe promised them (HF audit F05,
+        # 2026-11-10). Both shapes are read; the axn carried is the citing record's as it stood.
         for t in (d.get("cited_by") or []):
+            t = t.get("deposit") if isinstance(t, dict) else t
             if isinstance(t, int): edge(f"deposit:{t}", "cites", s, "derived-deterministic", "deposit", None, "registry.cited_by")
         for r in (d.get("develops_from") or []):
             t = r.get("deposit") if isinstance(r, dict) else r
@@ -293,6 +297,15 @@ def main():
                          status=dd.get("status") or "ACTIVE",
                          record_url=f"https://alexanarch.org/s/records/{num}/")
 
+    # COVERAGE: a registered deposit that is neither ACTIVE nor the target of an edge (a superseded version whose
+    # successor states no supersedes edge) still gets its node, with its status, so the record is reachable in
+    # the graph as what it is (HF audit F01, 2026-11-10).
+    for num, dd in sorted(by_n.items()):
+        nid = f"deposit:{num}"
+        if nid not in N:
+            node(nid, "deposit", dd.get("title", ""), axn=dd.get("axn"), status=dd.get("status") or "ACTIVE",
+                 record_url=f"https://alexanarch.org/s/records/{num}/")
+
     # F5 — DEDUPLICATE ON relation_id. The same (source, predicate, target) triple can be
     # emitted from two substrates — a citation present in both the registry field and the
     # citation graph, for instance. relation_id is content-derived, so duplicates are exact;
@@ -343,6 +356,19 @@ def main():
                   "retracted_by": None})
     (ROOT / "data/assertions.jsonl").write_text(
         "\n".join(json.dumps(a, ensure_ascii=False) for a in A) + "\n", encoding="utf-8")
+
+    # COVERAGE (HF audit F01, 2026-11-10): the ledger had stood at #1695 while the registry reached #1757, and
+    # its closure tests (no orphan endpoints) could not see that. Every registered deposit gets a node; the
+    # count and any gap are written beside the ledger and printed. A gap is recorded, never a failed build.
+    have = {int(k.split(":", 1)[1]) for k in N if k.startswith("deposit:") and k.split(":", 1)[1].isdigit()}
+    regd = sorted(by_n)
+    gap = [n for n in regd if n not in have]
+    (ROOT / "data/graph-coverage.json").write_text(json.dumps({
+        "registry_deposits": len(regd), "registry_max": max(regd), "deposit_nodes": len(have),
+        "graph_max": max(have) if have else None, "missing": gap,
+        "rule": "every deposit in data/registry.json has a node in data/nodes.jsonl; ACTIVE deposits carry their edges, others enter as targets"},
+        ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"  coverage:   {len(have):,} deposit nodes of {len(regd):,} registered (max #{max(regd)}); missing {len(gap)}" + (f": {gap[:12]}" if gap else ""))
 
     pc = collections.Counter(e["predicate"] for e in E)
     bc = collections.Counter(e["basis"] for e in E)
