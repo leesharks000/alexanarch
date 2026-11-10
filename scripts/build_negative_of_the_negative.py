@@ -30,7 +30,7 @@ CAPTURE = "https://www.alexanarch.org/captures/#{slug}"
 def load(p):
     return json.load(open(p, encoding='utf-8'))
 
-# ── v2: the /non work (EA-NEGONT-02, #1665), added 2026-10-08 on the operator's ruling ("publish now with the labels").
+# ── v2: the /non work (EA-NEGONT-02; first #1665, then #1690, current head #1726), added 2026-10-08 on the operator's ruling ("publish now with the labels").
 # Read-only joins of files already in the repo; nothing is authored here. Every row carries its entry's status
 # label: these are working objects, draft and not frozen, with unaudited ledgers unless the row's status says otherwise.
 V2 = SRC / 'v2'
@@ -42,6 +42,47 @@ def _status_label(st):
     frozen = 'frozen' if st.get('frozen') else 'not frozen'
     led = st.get('ledger') or 'unaudited'
     return f"draft, {frozen}; ledger {led.split(' (')[0]}"
+
+CENSUS_LABELS = {"LS": "leesharks.com authorship census", "TLL": "traininglayerliterature.org layer census", "LV": "laborvector.org labor census",
+                 "MMRS": "machinemediation.org meta-aggregator", "ML": "maryleelabor.org left census", "RF": "revelationfirst.com field census",
+                 "PE": "provenanceerasure.org provenance census"}
+
+_CAPS = None
+def _capture_slugs():
+    global _CAPS
+    if _CAPS is None:
+        reg = load(ROOT / 'data' / 'EA-WG-CAPTURES-01.json')
+        _CAPS = {e['slug'] for e in reg['entries']} | {o.get('slug') for e in reg['entries'] for o in (e.get('observations') or []) if o.get('slug')}
+    return _CAPS
+
+def _source(n, rec, c):
+    """The source an archive claim cites, typed by its own namespace (HF audit F06, 2026-11-10). A deposit resolves to its
+    record; a capture to its capture page; a census record, a blog post, a site page or a run to the URL its ledger
+    records. A source with no recorded address stays unresolved: no deposit route is built for it."""
+    url = (rec or {}).get("url") if isinstance(rec, dict) else None
+    if isinstance(n, int):
+        return "deposit", str(n), RECORD.format(n=n)
+    k = str(n) if n is not None else ""
+    if k.startswith("capture") or (url and "/captures/" in url):
+        sid = url.rstrip("/").rsplit("/", 1)[-1] if url and "/captures/" in url else (k.split(":", 1)[1] if ":" in k else k)
+        if not url and sid in _capture_slugs():
+            url = f"https://www.alexanarch.org/captures/{sid}/"   # the capture's own page, for a slug the registry holds
+        return "capture", sid, url
+    if k in CENSUS_LABELS or k.startswith(("provenance-census", "labor-vector-census")):
+        return "census", f"{k}:{(url or '').rstrip('/').rsplit('/', 1)[-1]}", url
+    if k.startswith("blog") or (url and "blogspot." in url) or (isinstance(rec, dict) and rec.get("kind") == "blog post"):
+        return "blog", k or (url or ""), url
+    if k in ("registry",):
+        return "registry", k, url or "https://www.alexanarch.org/data/EA-WG-CAPTURES-01.json"
+    if k in ("gallery",):
+        return "registry", k, url or "https://www.alexanarch.org/captures/"
+    if k.startswith(("operator", "ruling")):
+        return "ruling", k, url
+    if k.startswith("sophistry"):
+        return "run", k, url
+    if k in ("site", "spxi.dev"):
+        return "site", k, url
+    return ("web" if url else "unresolved"), k, url
 
 def build_v2(deps, breaches):
     T = {k: [] for k in ('non_entities', 'non_observations', 'non_compositions', 'non_field_claims',
@@ -92,6 +133,18 @@ def build_v2(deps, breaches):
             T['non_kernel'].append({'entity': e, 'K': k.get('K'), 'claim': k.get('claim'), 'source': k.get('source'), 'modality': k.get('M_src'),
                 'sense': k.get('sense'), 'qualifiers': k.get('qualifiers carried'), 'falsifiers': k.get('f (source\'s own falsifiers)'), 'contrast': k.get('contrast'), 'status_label': lab})
         led = V2 / 'ledgers' / e
+        # The worked example (model-collapse) keeps its field claims inside its row and its archive ledger under
+        # datasets/negative-of-the-negative/worked-example/, named by row.ledger.archive; both are exported (HF audit F07).
+        if not (led / 'field.json').exists() and isinstance(row.get('field_claims'), dict):
+            srcs = row.get('field_sources') or {}
+            for cid, c in row['field_claims'].items():
+                T['non_field_claims'].append({'entity': e, 'claim_id': cid, 'source': c.get('source'), 'card': srcs.get(c.get('source')), 'url': None,
+                    'locus': c.get('locus'), 'quote': c.get('quote'), 'claim': c.get('claim'), 'modality': c.get('modality'),
+                    'kernel': c.get('kernel'), 'lineage': c.get('lineage'), 'status_label': lab})
+        if not (led / 'ledger-archive.json').exists() and isinstance(row.get('ledger'), dict) and row['ledger'].get('archive'):
+            alt = ROOT / row['ledger']['archive']
+            if alt.exists():
+                led = alt.parent
         if (led / 'field.json').exists():
             F = load(led / 'field.json'); src = {s_['id']: s_ for s_ in F.get('field', [])}
             for cid, c in F.get('field_claims', {}).items():
@@ -101,13 +154,18 @@ def build_v2(deps, breaches):
                     'kernel': c.get('kernel'), 'lineage': c.get('lineage'), 'status_label': lab})
         if (led / 'ledger-archive.json').exists():
             for c in load(led / 'ledger-archive.json'):
-                n = c.get('dep'); d = deps.get(n)
-                # A claim from a blog post cites the post (the blog is an archive record; 2026-10-16) and no deposit.
-                rec = c.get('record') if n is None else None
-                if d is None and not (rec and rec.get('url')):
+                n = c.get('dep'); d = deps.get(n) if isinstance(n, int) else None
+                # A claim cites a deposit, or a source of another kind: a capture, a census record, a blog post (the blog
+                # is an archive record; 2026-10-16), a site page, a run, a ruling. Each resolves in its own namespace.
+                rec = c.get('record') if not isinstance(n, int) else None
+                stype, sid, suri = _source(n, rec, c)
+                if stype == 'deposit' and d is None:
                     breaches.append(f"v2 {e}: archive claim {c.get('id')} cites deposit {n} not in registry")
-                T['non_archive_claims'].append({'entity': e, 'claim_id': c.get('id'), 'deposit': n if isinstance(n, int) else None, 'cited_source': None if isinstance(n, int) else (rec.get('url') if rec else (str(n) if n is not None else None)), 'axn': d.get('axn') if d else None,
-                    'record_url': rec['url'] if rec and rec.get('url') else RECORD.format(n=n), 'title': c.get('title') or (d.get('title') if d else None), 'locus': c.get('locus'),
+                elif stype != 'deposit' and not suri:
+                    breaches.append(f"v2 {e}: archive claim {c.get('id')} cites {stype} source {n!r} with no recorded address (left unresolved)")
+                T['non_archive_claims'].append({'entity': e, 'claim_id': c.get('id'), 'deposit': n if isinstance(n, int) else None, 'cited_source': None if isinstance(n, int) else (suri or (str(n) if n is not None else None)), 'axn': d.get('axn') if d else None,
+                    'source_type': stype, 'source_id': sid, 'source_uri': suri,
+                    'record_url': RECORD.format(n=n) if stype == 'deposit' else suri, 'title': c.get('title') or (d.get('title') if d else None), 'locus': c.get('locus'),
                     'quote': c.get('quote'), 'claim': c.get('claim'), 'kind': c.get('kind'), 'modality': c.get('modality'),
                     'strata': json.dumps(c.get('strata')) if isinstance(c.get('strata'), (list, dict)) else c.get('strata'),
                     'kernel': c.get('kernel'), 'lineage': c.get('lineage'), 'quote_verified': c.get('quote_ok'), 'status_label': lab})
