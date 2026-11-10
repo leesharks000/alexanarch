@@ -255,6 +255,10 @@
     {
       "source": "/oai/",
       "destination": "/api/oai"
+    },
+    {
+      "source": "/s/records/:n(\\d+)/:file(AXN-[0-9A-Fa-f]{4}\\.pdf)",
+      "destination": "/papers/:file"
     }
   ]
 }

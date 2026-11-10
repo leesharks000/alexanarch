@@ -1132,6 +1132,80 @@ def text_pointer_html(d):
     return head, line
 
 
+_ROLE_LABEL = re.compile(r"^\s*([A-Za-z][A-Za-z -]{1,30}):\s*(.+)$")
+_AUTHOR_LABELS = {"co-author", "coauthor", "author", "authors", "co-authors"}
+
+
+def scholar_authors(creator):
+    """The authors of a record, one name per entry, for Google Scholar's citation_author (2026-11-10). Scholar's
+    inclusion guidelines: "Put each author name in a separate tag and omit all affiliations, degrees, certifications,
+    etc., from this field", and the tag "must contain the authors (and only the actual authors) of the paper". The
+    creator field is free text ("Sigil, Johannes; Cranes, Rebekah", "Lee Sharks · Johannes Sigil", "Lee Sharks;
+    co-author: Assembly Chorus", "Nobel Glas, Director, Lagrange Observatory! (LO!)"); parentheticals are dropped, it
+    is split on ';', '·' and ' / ', a part labelled co-author/author keeps its name, a part with another role label
+    (Witness:, Human Operator:, ...) or opening with a role word (after, with, editor, editor-aperture, contributor,
+    witness, operator, annotator) is left out, and 'and'/'&' between names splits them.
+    'Family, Given' stays one name. The full string stays in DC.creator and on the page. A creator that yields no name
+    by these rules is carried whole."""
+    c = str(creator or "").strip()
+    if not c:
+        return []
+    out = []
+    for part in re.split(r"\s*(?:;|\u00b7|\s/\s)\s*", re.sub(r"\([^)]*\)", "", c)):
+        part = part.strip(" ,")
+        if not part:
+            continue
+        m = _ROLE_LABEL.match(part)
+        if m:
+            if m.group(1).strip().lower() in _AUTHOR_LABELS:
+                part = m.group(2).strip()
+            else:
+                continue
+        part = re.split(r",\s*with\s+", part)[0].strip(" ,")
+        if re.match(r"(?i)^(after|with|editor(?:-aperture)?|contributor|witness|operator|human operator|annotator)\b", part):
+            continue
+        if part.count(",") >= 2 or (part.count(",") == 1 and len(part.split(",")[0].split()) >= 2):
+            part = part.split(",")[0].strip()   # "Name, Title[, Org]"; "Family, Given" (one word before the comma) stays
+        names = [nm.strip(" ,") for nm in re.split(r"\s+(?:and|&)\s+", part)]
+        # A part that is a note and not a name ("originally co-authored with Rhys Owens in v0.1", "clinical-theoretical
+        # contribution by Dr. Orin Trace") is left out: a note names people who are not this version's authors.
+        if any(len(nm.split()) > 5 or _PROSE.search(nm) for nm in names):
+            continue
+        for nm in names:
+            if nm and nm not in out:
+                out.append(nm)
+    # A creator that is all note ("No explicit author line in frozen body; registry attribution to Lee Sharks is not
+    # contradicted", "Voices: Johannes Sigil, Nobel Glas, ...") gives the archive's identity names it contains, in order.
+    if not out:
+        out = _known_names_in(c)
+    return out or [c]
+
+
+_PROSE = re.compile(r"(?i)\b(no|not|explicit|declared|registry|attribution|ratification|default|confirm|represented|"
+                    r"validation|contribution|originally|heteronym of|voices|maintainer|authority|position|subject)\b")
+_KNOWN = None
+
+
+def _known_names_in(s):
+    global _KNOWN
+    if _KNOWN is None:
+        _KNOWN = ["Lee Sharks"]
+        for f in sorted((_ppath.Path(__file__).resolve().parent / "datasets/heteronyms/records").glob("*.json")):
+            try:
+                nm = json.loads(f.read_text(encoding="utf-8")).get("name")
+            except Exception:
+                nm = None
+            for v in (nm, re.sub(r"^(?:Rev\.|Dr\.)\s+", "", nm or "")):
+                if v and v not in _KNOWN:
+                    _KNOWN.append(v)
+    hits = sorted(((m.start(), nm) for nm in _KNOWN for m in [re.search(re.escape(nm), s or "")] if m), key=lambda x: x[0])
+    seen = []
+    for _, nm in hits:
+        if nm not in seen:
+            seen.append(nm)
+    return seen
+
+
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
@@ -2310,7 +2384,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <link rel="alternate" type="application/json" title="Record JSON" href="https://www.alexanarch.org/data/records/{d["deposit_number"]}.json">
 <link rel="canonical" href="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_title" content="{esc(d["title"])}">
-<meta name="citation_author" content="{esc(d["creator"])}">
+{"".join(f'<meta name="citation_author" content="{esc(_a)}">' + chr(10) for _a in scholar_authors(d.get("creator")))}
 <meta name="citation_publication_date" content="{esc(d["date"])}">
 <meta name="citation_online_date" content="{esc(d["date"])}">
 <meta name="citation_journal_title" content="{esc(d.get("journal") or "Alexanarch")}">
@@ -2318,7 +2392,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <meta name="citation_abstract" content="{esc(d.get("description",""))}">
 <meta name="citation_public_url" content="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/{dn}/">
-<meta name="citation_pdf_url" content="https://www.alexanarch.org/papers/AXN-{hex_id.zfill(4)}.pdf">
+<meta name="citation_pdf_url" content="https://www.alexanarch.org/s/records/{dn}/AXN-{hex_id.zfill(4)}.pdf">
 <meta name="citation_language" content="en">
 <meta name="DC.title" content="{esc(d["title"])}">
 <meta name="DC.creator" content="{esc(d["creator"])}">
@@ -2341,7 +2415,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
 {_text_ptr[1]}
 {_author_html}
-<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/papers/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
+<a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/s/records/{dn}/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
 <div style="margin:8px 0">{kw_html}</div>
 {_corr_html}{_surf_html}{_seat_html}{_ident_html}{_search_html}
 <h2>Description</h2>
