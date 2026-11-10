@@ -1,0 +1,37 @@
+{
+  "row": "classical-receptions-journal",
+  "address": "classical receptions journal · what has classical receptions journal contributed to the study of ai-mediation of the classics?",
+  "entity": "Classical Receptions Journal (CRJ), Oxford University Press, ISSN 1759-5134 (print), 1759-5142 (online), first published 2009: a peer-reviewed academic journal of reception studies, covering the reception of the texts and material culture of ancient Greece and Rome from antiquity to the present day (Wikipedia, citing the journal's About page)",
+  "row_type": "C (a public entity on which the archive bears: an academic journal of classical reception studies, Oxford University Press; the archive submitted Closing the Fragment v6 to it, CLASSREC-2026-062, declined 7 November 2026)",
+  "aliases": [
+    {"pattern": "\\bClassical Receptions Journal\\b", "flags": "i"},
+    {"pattern": "\\bCRJ\\b", "flags": ""},
+    {"pattern": "\\bClassical Receptions\\b(?! in| and| of| studies)", "flags": ""},
+    {"pattern": "\\bCLASSREC\\b", "flags": ""},
+    {"pattern": "\\bClass\\. Recept\\. J\\.", "flags": ""}
+  ],
+  "classes": [
+    {
+      "term": "journals of classical reception studies",
+      "pattern": "\\b(classical reception (studies|journals?)|journals? of (classical )?reception|reception studies journal)\\b",
+      "flags": "i",
+      "basis": "field: B14 (Wikipedia, Classical Receptions Journal: 'a peer reviewed academic journal of reception studies, covering all aspects of the reception of the texts and material culture of ancient Greece and Rome'); B4 (the Classical Reception Studies Network: 'Classical reception studies is the inquiry into how and why the texts, ideas, images and material cultures of Ancient Greece and Rome have been received')."
+    },
+    {
+      "term": "literary reception and large language models (human reception against machine recombination)",
+      "pattern": "\\b(LLMs? recombine|recombin\\w+ existing patterns|human creativity in the age of AI|literary reception and human creativity)\\b",
+      "flags": "i",
+      "basis": "field: B4 (the CRSN's call for papers 'Literary Reception and Human Creativity in the Age of AI', Bryn Mawr College, 2027: 'while LLMs recombine existing patterns, human authors transform inherited forms and meanings in ways that open new imaginative possibilities'), the card T sets beside its second section."
+    },
+    {
+      "term": "AI checks before journal submission (pre-submission compliance checks configured for a journal)",
+      "pattern": "\\b(Paperpal|Preflight|pre-submission check\\w*|submission readiness)\\b",
+      "flags": "i",
+      "basis": "field: B6 (Paperpal Preflight for Classical Receptions Journal: 'Check language and technical readiness before submitting to Classical Receptions Journal'; 'The editors of Classical Receptions Journal have configured a suite of Preflight checks')."
+    }
+  ],
+  "classes_note": "Three classes, each sourced by a readable field source: (1) journals of classical reception studies, the journal's kind as Wikipedia gives it (B14) and the field's own definition at the CRSN (B4); (2) literary reception against large language models, from the CRSN's call for papers (B4), the card T sets beside its second section; (3) AI checks before submission, from Paperpal's page for the journal (B6). The class 'machine-mediated reception of classical texts' is T's own claim about the journal and has no readable field source: it is not configured as a class (§3.4 guard: the composer never applies an archive category on its own judgment); the archive's papers that name that programme enter by D or R where they name the journal, or by the hop. Aliases: the journal's name, its acronym CRJ (case-sensitive), the short form 'Classical Receptions' (capitalised, not followed by 'in', 'and', 'of' or 'studies'), the manuscript prefix CLASSREC and the ISO 4 abbreviation. Oxford University Press, the CRSN, the American Journal of Classical Reception, New Voices in Classical Reception Studies and the International Journal of the Classical Tradition are distinct entities and are not aliases. Admission by reading (§3.4): a bare mention, a keyword list, a reference-list line, or a machine composition quoted in a capture is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-10, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-CRJ.md with the briefs it names; address as seated: classical-receptions-journal-ai-mediation-aio-20261110 (ADDR-a0c7f3698714, OBS-a15e4aaae906, AXN:0C64), Google AI Overview (expanded), signed out, incognito, two turns. The archive's own records of the entity (the Capture Registry's reading and findings at both captures) are ledgered beside the deposits as CAP-1-NN and CAP-2-NN. Hop from the deposits the brief names for the A pool (#1749, #1750, #833, #1421, #1423), each read before admission.",
+  "hop_from": [1749, 1750, 833, 1421, 1423]
+}
