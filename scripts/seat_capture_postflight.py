@@ -73,6 +73,10 @@ STEPS = [
     ("JOIN", [sys.executable, "scripts/build_capture_joins.py"]),
     ("RECS", [sys.executable, "scripts/build_capture_records.py"]),
     ("SYNC", [sys.executable, "scripts/sync_capture_dataset.py"]),
+    # COUNTS (2026-11-10): data/api/counts.json, which every fleet page's data-count spans read through
+    # assets/counts.js, was rebuilt only by the deposit pipeline; after a capture intake the fleet's
+    # captures.total stayed one behind until the next deposit (1,075 against 1,076 on 2026-11-10).
+    ("COUNTS", [sys.executable, "scripts/build_counts.py"]),
     # 2026-10-27: RELEASE after SYNC. The Capture Registry's release (its version, frozen as a manifest of the dataset), and
     # its intake instrument and PER-dim rubric where they moved (scripts/release_axn.py); then the relations and the
     # resolver pages, so the new position, observation and release resolve in the same commit.
