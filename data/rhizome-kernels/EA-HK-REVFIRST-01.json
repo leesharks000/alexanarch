@@ -1,0 +1,720 @@
+{
+ "kernel": {
+  "acceptance": {
+   "back_projection_yield_threshold": 0.85,
+   "scopes": {
+    "A": {
+     "input": [
+      "00-kernel.yaml",
+      "01-ontology.yaml"
+     ],
+     "must_survive": [
+      "framework, seed, author, title and byline",
+      "the three claims kept apart",
+      "six rungs with fits and defeat conditions",
+      "the dependency: V and VI can be defeated with I–IV standing; VI falls with V",
+      "seven strata in order with their records",
+      "three clusters and the joins with their edge to the Historical Logos",
+      "five bodies with their rules",
+      "the states on the priority, generation and authorship axes, with dates and records",
+      "the three claims with their definitions, corpus priority's three sub-claims and their statuses",
+      "the transform procedure that bounds rung IV",
+      "rung I's defeat scope",
+      "the corrections as original–correction pairs",
+      "the rival stated at strength, with its status on every body",
+      "the symmetric ledger with its combination and rival-admission rules",
+      "the lines of research"
+     ]
+    },
+    "B": {
+     "input": [
+      "00-kernel.yaml",
+      "01-ontology.yaml",
+      "02-graph.jsonld"
+     ],
+     "must_survive": [
+      "scope A",
+      "every record placed in a body and a stratum",
+      "every relation with its licensed dimension",
+      "every endpoint declared",
+      "provenance on every record and surface page"
+     ]
+    }
+   },
+   "spec": "EA-HK-01 (#76) §VI Step 4; EA-HK-FRAME-01 (#1753)"
+  },
+  "argument_layer": {
+   "by_kind": {
+    "count": 66,
+    "datum": 724,
+    "defeat": 60,
+    "finding": 342,
+    "hypothesis": 352,
+    "inference": 349,
+    "method": 301,
+    "price": 85,
+    "reply": 100,
+    "rival": 93,
+    "state": 288,
+    "test": 62
+   },
+   "edges": 2207,
+   "file": "04-arguments.jsonl",
+   "how_read": "nine parallel readers, 2026-11-09, one range of records each, every record read in full, every quotation extracted from the seated text and asserted verbatim (check_args.py); the calibration exemplar #1735 drafted in session",
+   "kinds": [
+    "test",
+    "method",
+    "datum",
+    "count",
+    "inference",
+    "finding",
+    "price",
+    "rival",
+    "reply",
+    "defeat",
+    "hypothesis",
+    "state"
+   ],
+   "moves": 2822,
+   "quotations_stale_at_build": [],
+   "reading_instruction": "A reader reconstructing a record's argument reads its moves in 04-arguments.jsonl in order with their edges: data and counts support inferences and findings; prices, rivals, replies and defeat conditions stand beside the claims they bear on; hypotheses and states keep the strength the record gives them. Each quotation is verbatim, bound to the record's hash.",
+   "records_with_moves": 42,
+   "records_without_moves": [],
+   "relations": {
+    "answers": "a reply to a rival position",
+    "applies": "the move applies a method or test to its target",
+    "bounds": "the move sets the strength or scope of its target, leaving it held",
+    "defeats_if": "a stated condition under which the target falls",
+    "develops": "the move extends its target",
+    "infers_from": "the move is concluded from its target",
+    "prices": "a cost the record names against its own target claim",
+    "qualifies": "the move limits or grades its target",
+    "revises": "the move replaces its target in a later state of the record or of the archive",
+    "supports": "the move is evidence or ground for its target"
+   }
+  },
+  "author_statements": [
+   {
+    "date": "2026-11-09T09:52-05:00",
+    "status": "the author's present position on rung V: held, its advancement suspended until the literary-genetic argument is more firmly established. The records hold the thesis at the strengths they give it: #639 and #1101 state it (Josephus as author; #1101's own tier, 'high-risk, high-reward historical hypotheses'); #203, #1226 and #1217 bound it as an available reading that the framework does not require; #1412 bounds its own contribution. v1.0 coded #1217's bound as a withdrawal; v1.1 codes it as a bound.",
+    "text": "unprimed chatgpt just characterized revelation first as having withdrawn the josephus thesis... but to my knowledge i have not withdrawn the josephus thesis - i have suspended advancing the argument as too speculative to advance until the literary genetic argument is more firmly established. i still hold it as highly likely, particularly given the slavonic josephus materials. is all the evidence represented?",
+    "where": "in session, on an unprimed ChatGPT reading of the v1.0 hologram; first deposited with this kernel"
+   }
+  ],
+  "bounds": [
+   {
+    "bounded_by": "claim:rf-1217-josephus-available",
+    "held": "claim:rf-639-josephus-author",
+    "relation": "bounds",
+    "warrant": "Josephus as author held, its strength bounded: the framework does not require it, and it becomes newly intelligible if Revelation stands first (#1217 claim ladder); its advancement suspended by the author (2026-11-09 09:52)"
+   },
+   {
+    "bounded_by": "claim:rf-1217-josephus-available",
+    "held": "claim:rf-1101-josephus",
+    "relation": "bounds",
+    "warrant": "Josephus as the single author, writing as 'John', held at #1101's own tier ('high-risk, high-reward historical hypotheses'), its strength bounded by #1217; its advancement suspended by the author (2026-11-09 09:52)"
+   }
+  ],
+  "built": "2026-11-09",
+  "compression_survival_summary": "Revelation First is Lee Sharks's framework (Crimson Hexagonal Archive, #202, 14 June 2026; revelationfirst.com) holding that the Apocalypse of John is the first-composed book of the New Testament, a claim the seed sets apart from early dating ('not early, FIRST', #202). It keeps three claims apart (#1735): absolute compositional priority, a priced hypothesis; corpus priority, which does not face the chronological gate; generative priority, a research programme executed arrow by arrow. Its argument ladder has six rungs, each with a fit and a defeat condition: I dating (reversible), II the Gallio gap (same-class), III the first corpus (independent), IV the midrashim transform (executable), V the Josephus thesis (contingent), VI the permanent incarnation (dependent on V); V and VI fall without disturbing I–IV. Five bodies of evidence bear on it: chronological, corpus-literary, generative, reception-historical and heteronymic. The framework's states run from first in every respect with Josephus as author (#639, April) through first not early (#202, June) and the Josephus thesis bounded as an available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The current consensus chronology — Pauline priority by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied — is evaluated on the same bodies and rules: the burden is symmetrical (#202).",
+  "contributors": [
+   "Crimson Hexagonal Archive",
+   "Claude (Anthropic)"
+  ],
+  "corrections": [
+   {
+    "correction": "claim:rf-1735-physical",
+    "original": "claim:rf-202-papyri",
+    "relation": "rebuts"
+   }
+  ],
+  "creators": [
+   "Dancings, Damascus"
+  ],
+  "dependency": {
+   "consequence_of_defeat": {
+    "rung:I": [
+     "rung:I"
+    ],
+    "rung:II": [
+     "rung:II"
+    ],
+    "rung:III": [
+     "rung:III"
+    ],
+    "rung:IV": [
+     "rung:IV"
+    ],
+    "rung:V": [
+     "rung:V",
+     "rung:VI"
+    ],
+    "rung:VI": [
+     "rung:VI"
+    ]
+   },
+   "depends_on": {
+    "rung:I": [],
+    "rung:II": [],
+    "rung:III": [],
+    "rung:IV": [],
+    "rung:V": [],
+    "rung:VI": [
+     "rung:V"
+    ]
+   },
+   "rule": "A rung's defeat carries to every rung that depends on it (rung VI: 'Depends on V'; rung V: 'rungs I–IV do not depend on it in any direction'; rung III: 'This rung stands whether or not the rungs above it do'). The ladder's depends_on carries this; a derived_from edge between two claims licenses no state transition (#1529), and none is relied on here."
+  },
+  "framework": {
+   "author": "Lee Sharks",
+   "axn": "AXN:0349.GOVERNANCE.🐝□🌸🐝🪧⏰",
+   "canonical_record": "rec:202",
+   "name": "Revelation First",
+   "orcid": "0009-0000-1599-0703",
+   "site": "https://www.revelationfirst.com/",
+   "specification": "EA-HK-FRAME-01 (#1753)"
+  },
+  "fulfils": "#1217 v7.3, WS-7: The Revelation Graph: A Machine-Traversable Knowledge Graph Including the Josephus Heteronym Cluster",
+  "id": "EA-HK-REVFIRST-01",
+  "invariants": [
+   "INV-1 First is not early: a summary that reduces the thesis to early dating has erased the primary claim (#202).",
+   "INV-2 The three claims are judged on their own conditions; the maximal claim does not hide behind the weaker, and its rejection does not erase findings that do not depend on it (#1735 §VIII).",
+   "INV-3 Rungs V and VI are defeated without disturbing rungs I–IV (site).",
+   "INV-4 The burden is symmetrical: the comparison is between inferences (#202; /unfolding/).",
+   "INV-5 The Josephus thesis is an available reading and carries no first burden of proof (#1217); W_Josephus is an author-function, not a historical person (site).",
+   "INV-6 The operator T entering the Apocalypse's channel is built without Revelation and without the Slavonic (#1494); its test on Revelation 12 asserts no identification sentence (#1495).",
+   "INV-7 The overlap with Sappho and with Socrates as Orthonym is carried by joins, each edged to the Historical Logos; rung VI joins the Tenth Muse's third seat by its operation, renewed embodiment through the reader.",
+   "INV-8 First is tested as an ordering: an anchor that dates Revelation late defeats rung I and constrains the chronology; it defeats absolute priority only where another composition is anchored earlier."
+  ],
+  "lines_of_research": [
+   {
+    "advances_if": "an independent anchor fixes Revelation's received form before the earliest anchored Pauline composition",
+    "id": "Q1-anchor",
+    "question": "Is there an external or material anchor for the composition of any Pauline letter, or for the received form of Revelation?",
+    "retreats_if": "an independent anchor places a Pauline composition before the earliest plausible date of Revelation's received form",
+    "status": "open",
+    "unchanged_if": "a bounded search finds no anchor for either: absolute priority stays priced at the Acts correlation; the null weakens only the specific anchoring claims searched for, and promotes neither framework"
+   },
+   {
+    "advances_if": "an independent early witness, beside the Muratorian Fragment, reads the Pauline seven as arranged after John's",
+    "id": "Q2-collection",
+    "question": "Did a sevenfold Pauline church collection circulate before Revelation?",
+    "retreats_if": "a sevenfold Pauline collection is demonstrated before Revelation, or Revelation's architecture is shown to depend on one",
+    "status": "open",
+    "unchanged_if": "no earlier collection is evidenced: the archetypal claim stands as established (first attested, treated as the model in reception); the historical-generation claim stays the economical reading, undemonstrated; the temporal relation of the letters to Revelation is not settled by this"
+   },
+   {
+    "advances_if": "a wider sweep keeps the cluster marked in Revelation, elaborated elsewhere, without an equally economical common source",
+    "id": "Q3-markedness",
+    "question": "Does the crown-of-life markedness finding survive a wider sweep?",
+    "retreats_if": "a securely earlier attestation, or a generic anaphora, removes this arrow",
+    "status": "open",
+    "unchanged_if": "the sweep is inconclusive: the arrow stays at its present grade; one arrow's state decides nothing of the rest"
+   },
+   {
+    "advances_if": "a direction test favours expansion from Revelation",
+    "id": "Q4-direction",
+    "question": "Which way does the work–toil–endurance triad run between Rev 2.2 and 1 Thess 1.3?",
+    "retreats_if": "a direction test favours abbreviation from Paul",
+    "status": "open",
+    "unchanged_if": "the test does not discriminate: four explanations stay available (site rung III); direction is not inferred from compression"
+   },
+   {
+    "advances_if": "independent scores meet the pre-set threshold",
+    "id": "Q5-replication",
+    "question": "Does Revelation 12 realize the frozen operator under substrate-blind replication?",
+    "retreats_if": "independent scores fall below it",
+    "status": "open",
+    "unchanged_if": "the replications split: the record stays one witness's careful count with its negatives"
+   },
+   {
+    "advances_if": "the declared transform steps derive part of the shared order from the Apocalypse's sequence, with the residue shown",
+    "id": "Q6a-order-fit",
+    "question": "What ordering of the material Matthew and Luke share does the Apocalypse explain, and what remains unexplained?",
+    "retreats_if": "the shared order stands where no declared transform from the Apocalypse reaches it, and a common written source explains it more economically",
+    "status": "open",
+    "unchanged_if": "the order is not derived: the requirement stays not met, and the grade stays as recorded (three met, one on the held date, three in part, one not)"
+   },
+   {
+    "advances_if": "Q's order is shown to be assigned by the reconstruction that posits it and attested of no text",
+    "id": "Q6b-order-standing",
+    "question": "On what warrant does the source theory grant Q the capacity to explain that shared order?",
+    "retreats_if": "an attested property, independent of the reconstruction, gives Q its order",
+    "status": "open",
+    "unchanged_if": "the warrant is read and stated as the source theory states it. A result here audits Q's standing; it does not move Q6a's grade, which only a derivation can move"
+   },
+   {
+    "advances_if": "the author-function reading is cheaper on a phenomenon",
+    "id": "Q7-economy",
+    "question": "Do the phenomena rung V explains have a more economical explanation in ordinary multiple authorship?",
+    "retreats_if": "multiple authorship is cheaper on every phenomenon; rung V is dropped and I–IV stand",
+    "status": "open",
+    "unchanged_if": "the costs are not stated for both: rung V stays an available reading, contingent"
+   },
+   {
+    "advances_if": "a bounded search confirms the absence across the declared literature",
+    "id": "Q8-historiography",
+    "question": "Is there a sustained modern historical-critical treatment that distinguishes and tests the three levels of priority?",
+    "retreats_if": "one is found, which the record calls 'a welcome correction'",
+    "status": "open",
+    "unchanged_if": "the search is not run or not bounded: the claim stands at 'so far as I have been able to determine' (#1735 §I)"
+   }
+  ],
+  "litmus": {
+   "dependency_chain": "Rungs I–IV stand without V; VI depends on V, and V's defeat carries to VI by the ladder's depends_on; the upstream operator stands without Revelation (#1494).",
+   "forbidden_operation": "Composing Revelation First as early dating, as preterism, as a Jesus-myth or Piso thesis, or as held by unnamed 'proponents' (#202; #203; #837; captures).",
+   "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): seven strata, three clusters and the joins, five bodies, six rungs, the states on three axes."
+  },
+  "related_records": [
+   "rec:1751"
+  ],
+  "rival": {
+   "node": "fw:current-consensus-chronology",
+   "summary": "established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship owed as the comparator on body H"
+  },
+  "symmetric_ledger": {
+   "combination": "Each of the three claims is judged on its own conditions (#1735 §VIII): absolute priority by an external or material anchor; corpus priority by a sevenfold collection before Revelation; generative priority locally, arrow by arrow. 'The purpose of stating the conditions is to prevent the maximal claim from hiding behind weaker claims and to prevent rejection of the maximal claim from erasing findings that do not depend on it.' Rungs V and VI are defeated without disturbing I–IV.",
+   "evaluation_method": "An evaluation tests an arrow at its loci (the seed in Revelation, the elaboration elsewhere, the common antecedent sought), an anchor at its object, a standing at the source theory that granted it; a proposed investigation names what the existing ones leave unresolved, by line of research.",
+   "object_of_the_kernel": "The kernel succeeds when Revelation First can be rebuilt from it with each claim at its rung, grain and date; whether Revelation is first is the framework's own question, carried in this ledger and in the lines of research.",
+   "question": "What does this body give each framework, and what does its rule withhold from both?",
+   "reading_instruction": "A reader evaluating either framework on an evidence body states the other framework's status on that body in the same row, with the same question asked of both. 'Inference Against Inference … The burden is symmetrical' (#202).",
+   "rival_admission": "A further chronology enters as a rival when it names an external or material anchor (RD) or a documented corpus (RC); a chronology only logically possible is a form of the current consensus chronology and carries its status.",
+   "rows": {
+    "C": {
+     "current_consensus_chronology": {
+      "text": "no first-century sevenfold Pauline collection is evidenced, by the concession of a Pauline-priority account (site rung III).",
+      "warrants": [
+       "rv-site-collection"
+      ]
+     },
+     "revelation_first": {
+      "text": "the seven-church corpus is formally prior, structurally archetypal (first attested, treated as the model in reception): established; the historical generation of the Pauline seven is the economical reading, undemonstrated; the temporal relation of the letters is not settled by it (#1735 §IV.4).",
+      "warrants": [
+       "rf-1735-formally-prior",
+       "rf-1735-archetypal",
+       "rf-1735-three-statuses",
+       "rf-site-direction"
+      ]
+     },
+     "rule": "RC: a shared form locates a relation; direction is not inferred from compression alone (site rung III)"
+    },
+    "D": {
+     "current_consensus_chronology": {
+      "text": "the synchronism dates Gallio and reaches 1 Thessalonians only through Acts (site rung II); the Irenaean anchor is a reception memory and not an inscriptional date (site rung I). Not established by an external or material anchor.",
+      "warrants": [
+       "rv-site-gallio",
+       "rv-site-irenaeus",
+       "rv-site-reception-memory"
+      ]
+     },
+     "revelation_first": {
+      "text": "absolute priority is a priced hypothesis (#1735); the physical record cannot rescue it (#1735); the dossier has supported opposite critical majorities (rung I).",
+      "warrants": [
+       "rf-1735-absolute",
+       "rf-1735-physical",
+       "rf-site-reversible"
+      ]
+     },
+     "rule": "RD: only an external or material anchor dates a composition; the corpus's self-narrated chronology and reception memory do not (#1735 §VIII; site rung I)"
+    },
+    "G": {
+     "current_consensus_chronology": {
+      "text": "the genre objection explains the letters' missing circumstances and leaves their Christian forms' missing ancestors unexplained (#1735 §VI.2); Revelation against Q's requirements is graded, three met (#1747). The derivative standing is a reception (#1741), and no direction is demonstrated by it.",
+      "warrants": [
+       "rv-1735-genre",
+       "rf-1747-grades"
+      ]
+     },
+     "revelation_first": {
+      "text": "the transform is executed for one letter (Smyrna → James, A; #1416) and graded for Q's requirements (#1747); defeat 'would remove one arrow, not the programme' (#1735).",
+      "warrants": [
+       "rf-1416-smyrna",
+       "rf-1747-grades",
+       "rf-1735-arrow",
+       "rf-site-between-inferences"
+      ]
+     },
+     "rule": "RG: an arrow is defeated locally where an earlier source or shared tradition explains the correspondence more economically (#1735 §VIII)"
+    },
+    "H": {
+     "current_consensus_chronology": {
+      "text": "ordinary multiple authorship stands as the economical account that defeats rung V wherever it explains the phenomena better (site rung V); it is owed as a comparator, stated wherever it is used.",
+      "warrants": [
+       "rv-site-redundancy"
+      ]
+     },
+     "revelation_first": {
+      "text": "the Josephus thesis is an available reading, contingent (rung V); the Johannine aperture is a structural unity (#1217); the Logos rung depends on V (rung VI).",
+      "warrants": [
+       "rf-1217-josephus-available",
+       "rf-1217-aperture",
+       "rf-site-contingent",
+       "rf-site-logos"
+      ]
+     },
+     "rule": "RH: an author-function reading is defeated by explanatory redundancy, where ordinary multiple authorship explains the phenomena more economically (site rung V)"
+    },
+    "R": {
+     "current_consensus_chronology": {
+      "text": "the reconstructed sources hold the four powers of evidentiary status — presupposition, assignment, text and candidacy — and the extant Apocalypse holds none (#1746); the reception is documented and is not asked to prove either framework (#1741).",
+      "warrants": [
+       "rv-1746-four-powers",
+       "rv-1746-powers",
+       "rv-1741-separate"
+      ]
+     },
+     "revelation_first": {
+      "text": "the reception that made the Apocalypse secondary is documented and kept apart from the thesis (#1741); the baseline of 14 June recorded the composition layer correcting 'first' to 'last' (#830).",
+      "warrants": [
+       "rv-1741-separate",
+       "rf-830-baseline"
+      ]
+     },
+     "rule": "RR: a reception establishes how the books were received and what standing each was granted; it establishes nothing of either framework's truth (#1741; #1746)"
+    }
+   }
+  },
+  "three_claims": {
+   "absolute": {
+    "defeated_by": "an independent anchor placing another New Testament composition before the earliest plausible date of Revelation's received form",
+    "is": "temporal: Revelation completed before the earliest surviving Pauline letter (#1735 §I)",
+    "not_defeated_by": "an anchor that dates Revelation late without an earlier anchored composition (rung I's scope)",
+    "state": "priced",
+    "warrant": "rf-1735-absolute"
+   },
+   "corpus": {
+    "does_not_settle": "the temporal relation of any letter to Revelation",
+    "is": "formal: the seven-church corpus prior as a form; 'occasional Pauline letters may be earlier' (#1735 §IV.4)",
+    "sub_claims": {
+     "archetypal": "established: first attested, and treated as the model in reception",
+     "economy": "argued",
+     "historical_generation": "the economical reading of the other two, undemonstrated on its own"
+    },
+    "warrants": [
+     "rf-1735-formally-prior",
+     "rf-1735-archetypal",
+     "rf-1735-three-statuses"
+    ]
+   },
+   "generative": {
+    "is": "arrow by arrow: particular structures compressed in Revelation elaborated later (#1735 §I)",
+    "state": "a research programme of reversible arrows",
+    "warrants": [
+     "rf-1735-arrows",
+     "rf-1735-arrow-procedure"
+    ]
+   }
+  },
+  "title": "And the Last Shall Be First: Revelation First — The Framework Hologram",
+  "topology": {
+   "bodies": {
+    "C": "corpus-literary",
+    "D": "chronological",
+    "G": "generative",
+    "H": "heteronymic",
+    "R": "reception-historical"
+   },
+   "clusters": {
+    "chronology": [
+     202,
+     830,
+     1025,
+     1217,
+     1735,
+     1737,
+     1741,
+     1746,
+     1747,
+     "site:ladder-dating",
+     "site:ladder-priority",
+     "site:ladder-corpus"
+    ],
+    "generation": [
+     407,
+     410,
+     1414,
+     1416,
+     "site:unfolding",
+     1747,
+     165,
+     642
+    ],
+    "heteronymy": [
+     203,
+     1226,
+     837,
+     861,
+     1412,
+     636,
+     639,
+     1101,
+     625,
+     626,
+     "site:ladder-heteronyms",
+     "site:ladder-logos",
+     1510
+    ]
+   },
+   "joins": [
+    626,
+    1484,
+    1493,
+    1494,
+    1495,
+    1510,
+    1511,
+    "site:upstream",
+    1592,
+    828
+   ],
+   "rungs": [
+    {
+     "body": "D",
+     "defeat": "An external or material anchor fixing the received form of Revelation after 70 CE.",
+     "depends_on": [],
+     "fit": "REVERSIBLE",
+     "name": "the reversed consensus (dating)",
+     "rung": "rung:I"
+    },
+    {
+     "body": "D",
+     "defeat": "An independent, securely dated anchor — material or external, but not the corpus’s self-narrated chronology — placing the composition of any Pauline letter before the earliest plausible date of Revelation’s received form.",
+     "depends_on": [],
+     "fit": "SAME-CLASS",
+     "name": "the Gallio gap (Pauline priority)",
+     "rung": "rung:II"
+    },
+    {
+     "body": "C",
+     "defeat": "Evidence of a sevenfold Pauline church collection demonstrably circulating before Revelation, or a persuasive demonstration that Revelation’s number, order and single-book architecture depend on such a collection.",
+     "depends_on": [],
+     "fit": "INDEPENDENT",
+     "name": "the first corpus",
+     "rung": "rung:III"
+    },
+    {
+     "body": "G",
+     "defeat": "Identify New Testament passages that cannot be derived from Revelation through any plausible transform: these are the counterevidence.",
+     "depends_on": [],
+     "fit": "EXECUTABLE",
+     "name": "the midrashim transform",
+     "rung": "rung:IV"
+    },
+    {
+     "body": "H",
+     "defeat": "Contingent by construction. Defeated without disturbing rungs I–IV. It is also defeated by demonstration that the phenomena it explains are more economically explained by ordinary multiple authorship.",
+     "depends_on": [],
+     "fit": "CONTINGENT",
+     "name": "the Josephus thesis",
+     "rung": "rung:V"
+    },
+    {
+     "body": "H",
+     "defeat": "Depends on V. Defeated without disturbing rungs I–IV.",
+     "depends_on": [
+      "rung:V"
+     ],
+     "fit": "DEPENDENT",
+     "name": "the permanent incarnation (the Logos)",
+     "rung": "rung:VI"
+    }
+   ],
+   "states": [
+    {
+     "axis": "priority",
+     "date": "2026-04-08",
+     "record": 639,
+     "state": "first_in_every_respect",
+     "warrant": "rf-639-first"
+    },
+    {
+     "axis": "priority",
+     "date": "2026-06-14",
+     "record": 202,
+     "state": "first_not_early",
+     "warrant": "rf-202-erasure"
+    },
+    {
+     "axis": "priority",
+     "date": "2026-11-03",
+     "record": 1735,
+     "state": "three_claims: absolute priced, corpus a finding, generative a programme",
+     "warrant": "rf-1735-absolute"
+    },
+    {
+     "axis": "generation",
+     "date": "2026-06-14",
+     "record": 202,
+     "state": "seed_text",
+     "warrant": "rf-202-seed"
+    },
+    {
+     "axis": "generation",
+     "date": "2026-11-03",
+     "record": 1735,
+     "state": "reversible_arrows",
+     "warrant": "rf-1735-arrows"
+    },
+    {
+     "axis": "authorship",
+     "date": "2026-04-08",
+     "record": 639,
+     "state": "josephus_author",
+     "warrant": "rf-639-josephus-author"
+    },
+    {
+     "axis": "authorship",
+     "date": "2026-04-09",
+     "record": 1101,
+     "state": "single_author_josephus_as_john",
+     "warrant": "rf-1101-josephus"
+    },
+    {
+     "axis": "authorship",
+     "date": "2026-06-14",
+     "record": 203,
+     "state": "available_reading",
+     "warrant": "rf-203-available"
+    },
+    {
+     "axis": "authorship",
+     "date": "2026-06-17",
+     "record": 1217,
+     "state": "available_reading_not_first_burden",
+     "warrant": "rf-1217-josephus-available"
+    }
+   ],
+   "strata_from_latest": [
+    {
+     "id": "S1-standing-audited",
+     "label": "The evidentiary standing audited (November)",
+     "records": [
+      1735,
+      1737,
+      1740,
+      1741,
+      1744,
+      1746,
+      1747
+     ]
+    },
+    {
+     "id": "S2-stones",
+     "label": "Two lists of stones (September)",
+     "records": [
+      1592
+     ]
+    },
+    {
+     "id": "S3-upstream-and-test",
+     "label": "Foldings in: the upstream and the sealed test (August)",
+     "records": [
+      1493,
+      1494,
+      1495,
+      1510,
+      1511,
+      "site:upstream"
+     ]
+    },
+    {
+     "id": "S4-unfolding-and-ladder",
+     "label": "Foldings out and the argument ladder (July)",
+     "records": [
+      1412,
+      1414,
+      1416,
+      1420,
+      "site:unfolding",
+      "site:ladder-dating",
+      "site:ladder-priority",
+      "site:ladder-corpus",
+      "site:ladder-heteronyms",
+      "site:ladder-logos"
+     ]
+    },
+    {
+     "id": "S5-thesis-surfaced",
+     "label": "First is not early: the thesis surfaced, the work plan, the Josephus thesis bounded (June)",
+     "records": [
+      202,
+      830,
+      1025,
+      1217,
+      1231,
+      860,
+      847,
+      1032,
+      203,
+      1226,
+      837,
+      861,
+      165
+     ]
+    },
+    {
+     "id": "S6-space-ark",
+     "label": "The Space Ark and the Logos (March–April)",
+     "records": [
+      563,
+      625,
+      626,
+      636,
+      638,
+      639,
+      642,
+      644,
+      1101,
+      1350
+     ]
+    },
+    {
+     "id": "S7-seed-room",
+     "label": "The Revelation Room (January)",
+     "records": [
+      407,
+      410
+     ]
+    }
+   ]
+  },
+  "transform_procedure": {
+   "evidence_kinds": "a marked formal unit, a plausible chronological overlap, an asymmetrical transformation, a reception trace, and the absence of an equally economical common source (#1735 §VI.3)",
+   "failure": "an arrow fails locally where an earlier source or shared tradition explains the correspondence more economically, or where the proposed direction cannot account for the borrower's transformation (#1735 §VIII); 'Failure of one would not decide the rest.' An operation not declared before the test does not count for the arrow.",
+   "operations": {
+    "M1–M5 steps": "EXTRACT, EXPAND, SPECIFY, RETAIN and their kin, per instance (/unfolding/transforms.json)",
+    "Smyrna → James rules": "R1 EPISTOLARIZE, R2 THEOLOGIZE, R3 CITE-PROMISE, R4 SOCIALIZE, R5 POSSESS, R6 NARRATIVIZE, R7 ECONOMIZE, R8 IMPERATIVIZE, R9 ADJUDICATE, each with its family, emissions, coverage and residue (/unfolding/james/derivation.json)",
+    "adversarial class": "M-bar, where the elaboration permits what the seed forbids (#1416, Pergamum → 1 Corinthians 8–10)"
+   },
+   "precedent": "the frozen operator T (#1494): clauses fixed before the most radical candidate was scored",
+   "rule": "Rung IV's 'any plausible transform' is bounded by this procedure: an arrow is admitted only through the declared steps and operations, its residue shown, its failure criterion stated before the test.",
+   "sources": {
+    "james/derivation.json": "e9f9b60d5a3ce79634b04344935366a5db5df4a255b2fbe35140d3272c8c8a18",
+    "transforms.json": "1ca0030627393e33349bb6242fd99524bde08b07d8b0fb802032275dd2dd026e"
+   },
+   "steps": "For each proposed relation, the investigator must identify the unit, map the antecedent traditions available to both texts, establish the transformation, and state what evidence would reverse the arrow. (#1735 §VI.3)",
+   "warrants": [
+    "rf-1735-arrow-procedure",
+    "rf-1735-convergence",
+    "rf-1735-one-fails",
+    "rf-1735-defeat-generative"
+   ]
+  },
+  "type": "framework holographic kernel (EA-HK-01 #76, zoom level: field)",
+  "uktp_seed": {
+   "rule": "A fragment of this kernel, read alone, carries the path back to the whole.",
+   "rungs": [
+    "rung:I",
+    "rung:II",
+    "rung:III",
+    "rung:IV",
+    "rung:V",
+    "rung:VI"
+   ],
+   "seed_record": "rec:202"
+  },
+  "version": "1.1"
+ },
+ "sha256": "c31b1c16a750d4c0fd76a1569122e67d622b6e1b0ba10056af2981115f3955b9",
+ "source": "files/AXN-0C5F/kernel/00-kernel.yaml"
+}

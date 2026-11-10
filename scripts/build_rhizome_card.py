@@ -182,7 +182,30 @@ def card(g, body_dir):
         if sd:
             L.append("Seeded from the defining chain: " + "; ".join(f"#{n} ({v.get('layer')}) — {v.get('why')}" for n, v in sd.items()) + ".")
             L.append("")
-    L.append("## Roles")
+    gk = g.get("governing_kernel")
+    if gk:
+        side = json.loads((ROOT / gk["sidecar"]).read_text(encoding="utf-8"))["kernel"]
+        L.append(f"## Governed by its kernel: {side['id']} v{side['version']} (#{gk['deposit']})")
+        L.append("")
+        L.append(g.get("selection_note", ""))
+        L.append("")
+        L.append("**The ladder** (`ladder.jsonl`; a record's rungs are in `rungs`, each placement with its claim and passage in `placements.jsonl`):")
+        L.append("")
+        L.append("| rung | name | fit | body | depends on | defeated by |")
+        L.append("| --- | --- | --- | --- | --- | --- |")
+        for r in side["topology"]["rungs"]:
+            L.append(f"| {r['rung']} | {r['name']} | {r['fit']} | {r['body']} | {', '.join(r.get('depends_on') or []) or '—'} | {r['defeat']} |")
+        L.append("")
+        L.append("**The three claims, kept apart** (`three_claims.jsonl`): " + "; ".join(f"**{k}**: {v.get('is')}" for k, v in side["three_claims"].items()) + ".")
+        L.append("")
+        L.append("Other tables: `states.jsonl` (the dated states of priority, generation and authorship), `exits.jsonl` (records other kernels hold), "
+                 "`kernel_candidates.jsonl` (what this body's reading proposes for the kernel's next version, for the author's ruling).")
+        L.append("")
+        h = g.get("history") or {}
+        if h:
+            L.append(f"**Version {h.get('version')}, superseded {h.get('superseded')}.** {h.get('why_superseded', '')}")
+            L.append("")
+    L.append("## Roles" if not gk else "## The lexical classifier (recorded, not governing)")
     L.append("")
     L.append("**Order is the classifier** — `role_for` returns on first match, so a broad pattern "
              "above a narrow one swallows it.")

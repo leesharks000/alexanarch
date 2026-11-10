@@ -168,6 +168,14 @@ def main():
             n = json.loads(l); N[n["node_id"]] = n
     A = {a["about"]: a for a in (json.loads(l) for l in (ROOT / "data/assertions.jsonl").read_text().splitlines() if l.strip())}
 
+    # A BODY GOVERNED BY ITS KERNEL (2026-11-10). A grammar declaring `governing_kernel` is emitted from the kernel's
+    # files by scripts/rhizome_kernel.py: membership, placement and the ladder are the kernel's, and this grammar's
+    # select and role patterns survive only as a recorded lexical match. Bodies declaring none are unaffected.
+    if _G.get("governing_kernel"):
+        import rhizome_kernel
+        rhizome_kernel.build(_G, ROOT, OUT, reg, E, A, role_for, axes_for, GRAMMAR)
+        return
+
     # ---- CORE: defines a matching concept, or measures / is measured by one
     core, why = {}, collections.defaultdict(set)
     for e in E:

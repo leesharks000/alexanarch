@@ -1,19 +1,31 @@
 ---
 license: cc-by-4.0
 configs:
+  - config_name: exits
+    data_files: exits.jsonl
+  - config_name: kernel_candidates
+    data_files: kernel_candidates.jsonl
+  - config_name: ladder
+    data_files: ladder.jsonl
   - config_name: nodes
     data_files: nodes.jsonl
+  - config_name: placements
+    data_files: placements.jsonl
   - config_name: relations
     data_files: relations.jsonl
+  - config_name: states
+    data_files: states.jsonl
   - config_name: stolons
     data_files: stolons.jsonl
+  - config_name: three_claims
+    data_files: three_claims.jsonl
 ---
 
 *all things are now lawful to you in jack feist*
 
 # EA-RHIZOME-REV-01 — revelation first
 
-The Revelation First thesis and everything it draws: the pre-70 argument, the midrashim transform, the Josephus heteronym cluster, and the Sappho material that bears on the same question of what stands first and who is assigned to it. Six rungs, and the body marks which rung a node sits on rather than treating the whole ladder as one claim.
+Revelation First, as its framework holographic kernel holds it (EA-HK-REVFIRST-01 v1.1, #1755, Damascus Dancings): the thesis that the Apocalypse of John is the first-composed book of the New Testament, set apart from early dating ('not early, FIRST', #202), with its three claims kept apart (absolute priority priced, corpus priority a finding, generative priority a programme of reversible arrows, #1735) and its six rungs, each with its fit, its body of evidence and its defeat condition; rung VI depends on rung V, and rungs I–IV stand without either. Every record the kernel seats is here with its stratum and clusters, placed on each rung its claims place it on. A second tier holds what bears on the subject and the kernel does not name; records other kernels hold are exits.
 
 ## These are symbola. They are for traversal.
 
@@ -63,9 +75,30 @@ The relation recurs at every scale and the verification does not. What is self-s
 
 ## Counts
 
-**286** nodes · **168** core · **118** neighbour · **226** edges · **7** stolons
+**139** nodes · **73** kernel · **66** outside · **51** edges · **61** placements · **12** exits · **47** kernel_candidates · **7** stolons
 
-## Roles
+## Governed by its kernel: EA-HK-REVFIRST-01 v1.1 (#1755)
+
+Rule K: the kernel's records (its strata and joins, every record with argument moves, every record a claim names, and the kernel itself) and the captures it names. Rule O: the outside tier the grammar names, each node with its reason, carrying no rung and no standing. Placement is the kernel's claims; `lexical_role` is the v0.1 word match, kept beside it and never setting it. Exits name records held by other kernels. The kernel's ladder, three claims and dated states ship as tables; kernel_candidates lists what this body's reading proposes to the kernel's next version, for the operator's ruling.
+
+**The ladder** (`ladder.jsonl`; a record's rungs are in `rungs`, each placement with its claim and passage in `placements.jsonl`):
+
+| rung | name | fit | body | depends on | defeated by |
+| --- | --- | --- | --- | --- | --- |
+| rung:I | the reversed consensus (dating) | REVERSIBLE | D | — | An external or material anchor fixing the received form of Revelation after 70 CE. |
+| rung:II | the Gallio gap (Pauline priority) | SAME-CLASS | D | — | An independent, securely dated anchor — material or external, but not the corpus’s self-narrated chronology — placing the composition of any Pauline letter before the earliest plausible date of Revelation’s received form. |
+| rung:III | the first corpus | INDEPENDENT | C | — | Evidence of a sevenfold Pauline church collection demonstrably circulating before Revelation, or a persuasive demonstration that Revelation’s number, order and single-book architecture depend on such a collection. |
+| rung:IV | the midrashim transform | EXECUTABLE | G | — | Identify New Testament passages that cannot be derived from Revelation through any plausible transform: these are the counterevidence. |
+| rung:V | the Josephus thesis | CONTINGENT | H | — | Contingent by construction. Defeated without disturbing rungs I–IV. It is also defeated by demonstration that the phenomena it explains are more economically explained by ordinary multiple authorship. |
+| rung:VI | the permanent incarnation (the Logos) | DEPENDENT | H | rung:V | Depends on V. Defeated without disturbing rungs I–IV. |
+
+**The three claims, kept apart** (`three_claims.jsonl`): **absolute**: temporal: Revelation completed before the earliest surviving Pauline letter (#1735 §I); **corpus**: formal: the seven-church corpus prior as a form; 'occasional Pauline letters may be earlier' (#1735 §IV.4); **generative**: arrow by arrow: particular structures compressed in Revelation elaborated later (#1735 §I).
+
+Other tables: `states.jsonl` (the dated states of priority, generation and authorship), `exits.jsonl` (records other kernels hold), `kernel_candidates.jsonl` (what this body's reading proposes for the kernel's next version, for the author's ruling).
+
+**Version 0.1, superseded 2026-11-10.** Read against the kernel on 2026-11-10, the vocabulary-built body held 8 of the kernel's 47 records, among them neither the seed #202 nor this grammar's own defining paper #1217, and lacked #1735, #1747 and #1755. Its six-rung ladder was the #1217 work plan's: its rung 6, 'the settlement dismantled', is a different claim from the kernel's rung VI, the permanent incarnation (the Logos), which depends on rung V. The ladder_distribution's reading of an empty rung 6 as 'consistent with the argument's restraint' was produced by first-match ordering (HF audit F10) and describes a rung the kernel no longer frames that way; it is kept here as what it was. Of the 99 deposits and 191 captures the vocabulary admitted outside the kernel, 12 deposits are held by other kernels (exits), 3 bear on Revelation unnamed by the kernel (the outside tier), and about 83 came in on archive vocabulary ('crimson hexagon', 'space ark', 'logos', 'lamb', 'first', 'sappho') with no graph path or reading that relates them to the kernel; of the captures, 87 are on the subject by query or reading (the outside tier) and 104 on vocabulary only. The operator adopted this reading the same day.
+
+## The lexical classifier (recorded, not governing)
 
 **Order is the classifier** — `role_for` returns on first match, so a broad pattern above a narrow one swallows it.
 
@@ -82,7 +115,7 @@ The relation recurs at every scale and the verification does not. What is self-s
 | `experimental` | Workstream 6. Radical experimentalism, and the Sappho material that bears on the same question. |
 | `unroled` | the honest floor; its count is this grammar's error bar |
 
-ORDER IS THE LADDER. The six rungs run first, in order, so a node lands on the lowest rung it argues for rather than the most dramatic one available. That ordering is deliberate: the work plan's whole method is to distinguish claims that are usually collapsed, and a classifier that reached for rung 6 first would collapse them in the body.
+In this version the role patterns are a lexical classifier only: their first match is recorded as `lexical_role` beside the kernel's placement and never sets a rung (HF audit F10).
 
 A node matching nothing falls to `unroled`, whose count is this grammar's own error bar.
 
