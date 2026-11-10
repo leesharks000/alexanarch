@@ -96,6 +96,29 @@ def strip_control_chars(s: str) -> str:
     return "".join(ch for ch in s if ch == "\n" or ch == "\t" or ord(ch) >= 32)
 
 
+CJK_FONT = "Noto Serif CJK JP"
+_CJK = re.compile(r"[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uac00-\ud7af\uf900-\ufaff]")
+
+
+def _has_cjk(s: str) -> bool:
+    return bool(_CJK.search(s or ""))
+
+
+def _norm_title(s: str) -> str:
+    s = re.sub(r"<!--.*?-->", "", s or "")
+    for a, b in (("\u2019", "'"), ("\u2018", "'"), ("\u201c", '"'), ("\u201d", '"')):
+        s = s.replace(a, b)
+    return re.sub(r"\s+", " ", s.replace("$", "").replace("\\", "")).strip()
+
+
+def _pdf_title(path: Path) -> str:
+    try:
+        out = subprocess.run(["pdfinfo", str(path)], capture_output=True, text=True, timeout=30).stdout
+    except Exception:
+        return ""
+    return next((l.split(":", 1)[1].strip() for l in out.splitlines() if l.startswith("Title:")), "")
+
+
 def sha256_short(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8", errors="replace")).hexdigest()[:16]
 
@@ -291,7 +314,9 @@ def build_wrapper_md(dep: dict, body: str) -> str:
     title = dep.get("title", f"Deposit #{n}").strip()
     creator = (dep.get("creator") or "Lee Sharks").strip()
     date = dep.get("date", "")
-    version = dep.get("version") or "v1.0"
+    # One line (2026-11-10): #1410's registry version carries a notice after "v1.0" ("\n\n### Reciprocity Notice\n\n
+    # https://..."), and the heading's '#' reached xelatex raw on the header page.
+    version = (str(dep.get("version") or "v1.0").strip().splitlines() or ["v1.0"])[0].strip() or "v1.0"
     description = (dep.get("description") or "").strip()
     ctype = dep.get("content_type") or ""
 
@@ -525,6 +550,11 @@ def render_pdf(wrapper_md: str, out_path: Path, timeout: int = 120,
             "-V", "sansfont=DejaVu Sans",
             "-V", "monofont=DejaVu Sans Mono",
         ]
+        # CJK (2026-11-10). DejaVu has no Han, kana or hangul, and xelatex drops what it cannot map and returns 0, the
+        # failure the Greek note above records: #1539, titled in Japanese, built as a PDF with an empty title and no
+        # extractable text. A document carrying CJK takes xeCJK with Noto Serif CJK JP, through pandoc's CJKmainfont.
+        if _has_cjk(wrapper_md + body_md):
+            cmd += ["-V", "CJKmainfont=" + CJK_FONT]
         result = subprocess.run(
             cmd, capture_output=True, text=True,
             timeout=timeout, cwd="/tmp",
@@ -639,23 +669,35 @@ def main() -> int:
             # missing-class: render a metadata-only lacuna document
             body = "*No body text survives for this deposit. See §LACUNA above and the canonical record for surviving metadata.*"
 
-        # Checkpoint check
+        # CHECKPOINT OVER THE WHOLE RENDERED INPUT (2026-11-10). The checkpoint held the BODY's hash alone, so a change
+        # to the header page (title, version, creators, date, abstract) never re-rendered: reissued records kept PDFs
+        # titled at their earlier version (#1740; #1755, #1756, #1757 at v1.0 under v1.1 records), the record page's
+        # citation_pdf_url pointing at the superseded state. The key is now the wrapper and the cleaned body together,
+        # prefixed "w2:". A body-only key from before is adopted without re-rendering only where it still matches the
+        # body and the PDF's own title matches the registry's; otherwise the PDF is rebuilt once.
         body_hash = sha256_short(body)
         cp_key = str(n)
-        if not args.force and checkpoint.get(cp_key) == body_hash and out_path.exists():
-            n_skipped_unchanged += 1
-            continue
-
         wrapper = build_wrapper_md(d, body)
         bs_for_body = (d.get("body_status") or {}).get("class", "full")
         body_for_render = body if body else ""
         # The wrapper still computes lacuna/pointer sections from body_status;
         # the Body section itself now renders via the sanitized second pass.
         cleaned = _clean_body_for_paper(strip_control_chars(body_for_render))
+        full_key = "w2:" + sha256_short(wrapper + "\n\u241e\n" + cleaned + ("\ncjk:" + CJK_FONT if _has_cjk(wrapper + cleaned) else ""))
+        prior = checkpoint.get(cp_key)
+        if not args.force and out_path.exists():
+            if prior == full_key:
+                n_skipped_unchanged += 1
+                continue
+            if (prior == body_hash and not _has_cjk(wrapper + cleaned)
+                    and _norm_title(_pdf_title(out_path)) == _norm_title(d.get("title") or "")):
+                checkpoint[cp_key] = full_key
+                n_skipped_unchanged += 1
+                continue
         ok, err = render_pdf(wrapper, out_path, timeout=args.timeout, body_md=cleaned)
         if ok:
             n_ok += 1
-            checkpoint[cp_key] = body_hash
+            checkpoint[cp_key] = full_key
             if n_ok % 25 == 0:
                 elapsed = time.time() - t0
                 rate = n_ok / elapsed if elapsed > 0 else 0

@@ -390,6 +390,8 @@ def stage_record(args):
 def stage_pdf(args):
     sh([sys.executable, SCRIPTS / "build_deposit_pdfs.py",
         f"--deposits={args.deposit_number}", "--timeout=120", "--force"])
+    # 2026-11-10: report every record whose PDF is missing or older than its header and body (recorded, not blocking)
+    sh([sys.executable, SCRIPTS / "check_pdf_currency.py"])
 
 
 def stage_body_index(args):

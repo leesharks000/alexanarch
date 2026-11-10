@@ -89,6 +89,10 @@ def main(nums):
     subprocess.run([sys.executable, "scripts/regenerate_surfaces.py", "--only",
                     "chunks,browse,browse-index,search-index,wiki,sitemap"], cwd=ROOT, check=False)
     subprocess.run([sys.executable, "scripts/build_central_registry.py"], cwd=ROOT, check=False)
+    # 2026-11-10: a repaired or reissued record's PDF follows it. The builder keys on the whole rendered input, so an
+    # unchanged record is skipped and a changed header (title, version, creators) re-renders; then the currency check.
+    subprocess.run([sys.executable, "scripts/build_deposit_pdfs.py", "--deposits=" + ",".join(map(str, nums)), "--timeout=180"], cwd=ROOT, check=False)
+    subprocess.run([sys.executable, "scripts/check_pdf_currency.py", "--deposits=" + ",".join(map(str, nums))], cwd=ROOT, check=False)
     subprocess.run([sys.executable, "scripts/build_oai_index.py"], cwd=ROOT, check=False)
     subprocess.run([sys.executable, "scripts/build_resourcesync.py"], cwd=ROOT, check=False)
     print("propagation complete:", nums)
