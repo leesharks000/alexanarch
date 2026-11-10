@@ -70,7 +70,12 @@ def build() -> dict:
                      "total equals highest_number; no gaps."),
             "_derived_from": "data/registry.json",
         },
-        "captures": {"total": n_caps, "_derived_from": "data/EA-WG-CAPTURES-01.json"},
+        # addresses and observations (2026-11-10): total counts the registry's entries, one per address; an address
+        # carries one or more dated observations. Fleet pages that print either bind captures.addresses or
+        # captures.observations through assets/counts.js.
+        "captures": {"total": n_caps, "addresses": (caps.get("address_count") or n_caps) if isinstance(caps, dict) else 0,
+                     "observations": (caps.get("observation_count") or 0) if isinstance(caps, dict) else 0,
+                     "_derived_from": "data/EA-WG-CAPTURES-01.json"},
         "lexicon": {"terms_minted": n_terms, "registry_entries": n_entries,
                     "note": "terms_minted counts entries classed coinage or archive-reworked term; registry_entries includes extraction residue kept for addressability",
                     "_derived_from": "data/lexical-minting-registry.json"},
