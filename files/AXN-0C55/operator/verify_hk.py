@@ -195,7 +195,7 @@ pos = onto["positions"]; topo = kernel.get("topology", {})
 scopeA = {
  "framework, seed, author": kernel["framework"]["canonical_record"] == "rec:123" and kernel["framework"]["author"] == "Lee Sharks",
  "four positions with the Theophrastan asymmetry": len(pos) == 4 and any(p.get("asymmetry") for p in pos),
- "six strata in order with their records": len(topo.get("strata_from_latest", [])) == 6 and all(s.get("records") for s in topo["strata_from_latest"]),
+ "seven strata in order with their records": len(topo.get("strata_from_latest", [])) == 7 and all(s.get("records") for s in topo["strata_from_latest"]),
  "two clusters and the joins": set(topo.get("clusters", {})) == {"functional", "peripatetic"} and len(topo.get("joins", [])) >= 5,
  "four bodies with their rules": len(onto["evidence_bodies"]) == 4 and all(b.get("rule") for b in onto["evidence_bodies"].values()),
  "five maker-count states with dates and records": len(topo.get("maker_count_states", [])) == 5,

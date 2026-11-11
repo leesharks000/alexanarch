@@ -10,7 +10,7 @@ ROOT = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(sys.argv[2]); OUT.mkdir(par
 REG = {r["deposit_number"]: r for r in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 CAP = {c["slug"]: c for c in json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]}
 BASE = "https://www.alexanarch.org/s/records/"
-ID = "EA-HK-ORTHONYM-01"; VERSION = "1.1"; BUILT = "2026-11-08"
+ID = "EA-HK-ORTHONYM-01"; VERSION = "1.2"; BUILT = "2026-11-10"
 FIRST = json.loads((pathlib.Path(__file__).resolve().parent / "first-seating.json").read_text())   # each record's first seated text, from git (resolve_first_seating.py)
 FIRSTDIR = pathlib.Path(__file__).resolve().parent / "first"
 
@@ -26,6 +26,7 @@ def locate(n, q):
 
 # ---------------------------------------------------------------- records: the framework's own, with body and stratum
 STRATA = {  # latest first, as the map runs (EA-MPAI-ORTHONYM-01 §7)
+ "S0-records-search-v12": ("The records search of 10 November 2026: evidence-bearing and load-bearing records", [136, 346, 752, 938, 1560, 1561, 1641]),
  "S1-reception-and-syllogizing": ("The latest standing: reception history and the syllogizing runs", [1658, 1679, 1727, 1730, 1732, 1733, 1734]),
  "S2-metaphysics-reassembled": ("The Metaphysics reassembled", [1595, 1667, 1597, 1602, 1605]),
  "S3-aristotle-theophrastus-seam": ("The Aristotle/Theophrastus seam", [1580, 1581, 1582, 1583, 1584, 1586, 1588, 1590, 1591, 1592, 1593]),
@@ -37,7 +38,8 @@ BODY = {  # I interpretive · S stylometric · M manuscript-philological · R re
  123: "I", 167: "R", 1506: "M", 1559: "M", 1562: "M", 1563: "S", 1564: "S", 1565: "M", 1569: "S", 1570: "S", 1571: "S", 1572: "S",
  1575: "I", 1576: "I", 1574: "R", 1579: "I", 1603: "I", 1580: "M", 1581: "M", 1582: "M", 1583: "I", 1584: "I", 1586: "S", 1588: "S",
  1590: "M", 1591: "M", 1592: "M", 1593: "S", 1595: "M", 1667: "M", 1597: "M", 1602: "M", 1605: "S", 1658: "I", 1679: "R",
- 1727: "R", 1730: "M", 1732: "M", 1733: "R", 1734: "R"}
+ 1727: "R", 1730: "M", 1732: "M", 1733: "R", 1734: "R",
+ 136: "I", 346: "I", 752: "R", 938: "R", 1560: "M", 1561: "I", 1641: "S"}   # v1.2: the records search of 2026-11-10
 SECOND = {1584: ["S"], 1588: ["M", "I"], 1597: ["S"], 1605: ["I", "M"], 1603: ["M"], 1658: ["M"], 1733: ["M"], 1575: ["S"]}
 CLUSTER = {  # the two clusters retrieval keeps (map §1.2); the joins carry both
  "functional": [123, 167, 1569, 1570, 1571, 1572, 1575, 1576, 1574, 1579, 1603],
@@ -464,7 +466,7 @@ kernel = {
    "constraints": ["no claim of biological identity is read into #123", "no stylometric result identifies a maker", "no capture establishes what it reproduces",
                    "no reception finding is read as proof of the production model", "no later maker-count state is attributed to an earlier record",
                    "no fragment of the framework stands for the whole"],
-   "topology": "two retrieval clusters (functional; Peripatetic) joined at #1584, #1590, #1605 §19, #1658, #1733 and #1734; six strata read from the latest standing back to the seed",
+   "topology": "two retrieval clusters (functional; Peripatetic) joined at #1584, #1590, #1605 §19, #1658, #1733 and #1734; seven strata read from the latest standing back to the seed",
  },
  "topology": {
    "strata_from_latest": [{"id": k, "label": v[0], "records": v[1]} for k, v in STRATA.items()],
@@ -478,12 +480,12 @@ kernel = {
  "litmus": {
    "forbidden_operation": "Composing the framework as a school, a collaboration or 'contemporary scholars' (negative edges; captures AXN:09ED, AXN:0C42, AXN:0931).",
    "dependency_chain": "The production model (#1658) depends on the count left open because uncounted (#1588), the hinge (#1583) and the provenance claim of #1603; it does not depend on the reception history (#1733 independent_of #1658).",
-   "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): six strata, two clusters, six joins, four bodies, four positions; 02-graph.jsonld adds each record's body and every relation (scope B).",
+   "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): seven strata, two clusters, six joins, four bodies, four positions; 02-graph.jsonld adds each record's body and every relation (scope B).",
  },
  "acceptance": {"back_projection_yield_threshold": 0.85, "spec": "EA-HK-01 (#76) §VI Step 4; Anti-Summary Test (#1610 §2); structural presence after EA-HK-INFRA-01 (#74) v0.1",
    "scopes": {
     "A": {"input": ["00-kernel.yaml", "01-ontology.yaml"], "is": "the kernel's own compression test (fragment sufficiency)",
-          "must_survive": ["framework, seed, author", "four positions with the Theophrastan asymmetry", "six strata in order with their records", "two clusters and the joins",
+          "must_survive": ["framework, seed, author", "four positions with the Theophrastan asymmetry", "seven strata in order with their records", "two clusters and the joins",
                            "four bodies with their rules", "five maker-count states with dates and records", "forbidden operations", "the dependency chain to the production model",
                            "the corrections as original–correction pairs", "the rival evaluated, with its summary", "the symmetric ledger: both frameworks on every body, with the combination and rival-admission rules", "the lines of research"]},
     "B": {"input": ["00-kernel.yaml", "01-ontology.yaml", "02-graph.jsonld"], "is": "topology at the record and claim grain",
@@ -564,6 +566,17 @@ tests = {
    {"q": "socrates as orthonym one maker 2026 may", "fail_if": "the May framework is reported as claiming one maker"}],
 }
 
+# v1.2 (2026-11-10): the records search carried into the kernel, each record resolved against the registry at build time
+V12 = json.loads((ROOT / "rebuild/hk-frameworks/v12-staging/EA-HK-ORTHONYM-01.json").read_text(encoding="utf-8"))
+def _res(n, note):
+    r = REG[n]; o = {"record": f"rec:{n}", "deposit": n, "axn": r["axn"], "title": r["title"], "status": r.get("status"), "sha256": r["hash"], "note": note}
+    if r.get("superseded_by_deposit_number") or r.get("superseded_by"): o["superseded_by"] = r.get("superseded_by_deposit_number") or r.get("superseded_by")
+    return o
+kernel["records_search_v12"] = {"date": "2026-11-10", "rule": V12["rule"], "rulings": V12["rulings"] + [{"at": "2026-11-10 20:48", "text": "lets address, deposit, and turn to incorporating it into rev first and versioning all four holographic frames"}],
+ "evidence": {"stratum": "stratum:S0-records-search-v12", "records": [_res(x["deposit"], x.get("note") or "") for x in V12["evidence"]]},
+ "related_work": [_res(x["deposit"], x.get("note") or "") for x in V12["related_work"]], "related_work_rule": "pointed to; their substance is not extended into the frame on this pass (18:20, 18:45)",
+ "history": [_res(x["deposit"], x.get("note") or "earlier version or duplicate witness, resolved to its record of standing") for x in V12["history"]],
+ "joins": [_res(x["deposit"], x.get("note") or "") for x in V12["joins"]], "flags": V12["flags"]}
 def dump_yaml(p, obj): (OUT / p).write_text(yaml.safe_dump(obj, allow_unicode=True, sort_keys=False, width=140), encoding="utf-8")
 dump_yaml("00-kernel.yaml", kernel); dump_yaml("01-ontology.yaml", ontology)
 (OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")

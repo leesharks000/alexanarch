@@ -179,6 +179,11 @@
       "version": "1.27",
       "date": "2026-11-09",
       "note": "The Historical Logos and its hologram (#1757, EA-HK-HISTLOGOS-01 v1.1, byline Johannes Sigil): the framework row (founding #625 and #626, central node #1484, eleven stations) and the hologram row, with its kernel under holograms/EA-HK-HISTLOGOS-01/, the argument layer's counts (4306 moves), the method's five instruments and its failure flags; hologram_evaluations gains four readings with their transcripts: the review of v0.1, ChatGPT's review of v0.2, ChatGPT's reconstruction of v1.0 (coded on the v1.1 flags, SETTLEMENT_AS_CORPUS its first specimen) and the review of the v1.1 draft. No reader round run yet. Builder: rebuild/mantle-bearing/add_20261109_histlogos.py."
+    },
+    {
+      "version": "1.28",
+      "date": "2026-11-10",
+      "note": "#1754, #1755, #1756 and #1757 reissued in place as v1.2: the records search of 2026-11-10 entered each kernel as stratum S0, In the Midst of the Seven (#1758) among the evidence of Revelation First, the Tenth Muse and the Historical Logos; related work, history and flags carried in each kernel; each body given an SPXI packet. The four hologram rows updated in place. rebuild/mantle-bearing/v128_holograms_v12.py."
     }
   ],
   "excluded": [
@@ -4682,7 +4687,10 @@
       "(1.26) argument_layer: file, moves, edges, records_with_moves, by_kind",
       "argument_layer",
       "(1.27) method: file, instruments, bridges_set_out, losses_recorded, scope_C_mechanical",
-      "method"
+      "method",
+      "(1.28) records_search_v12: date, stratum, evidence, related_work, history, flags, rule; spxi",
+      "records_search_v12",
+      "spxi"
     ],
     "hologram_evaluations": [
       "eval_id",
@@ -11469,13 +11477,13 @@
           "title": "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
         }
       ],
-      "status": "DEPOSITED 2026-11-08",
+      "status": "DEPOSITED 2026-11-08; REISSUED 2026-11-10 as v1.2 (the records search of 2026-11-10; SPXI packet)",
       "hologram_record": [
         {
           "deposit": 1754,
-          "axn": "AXN:0C55.MPAI.🌠🎆💚➕🏷️🖊️",
+          "axn": "AXN:0C55.MPAI.♉∞🤲🪜🌿💙",
           "url": "https://www.alexanarch.org/s/records/1754/",
-          "title": "Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.1)"
+          "title": "Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.2)"
         }
       ],
       "kernel_files": {
@@ -11518,7 +11526,25 @@
         "CALENDAR_DRIFT": "the Theophrastan position given a calendar ('transitional', 'mediating transition'; ontology negative_edges)",
         "DEFINITION_DRIFT": "a term of the framework read in its general sense ('orthonym'; ontology disambiguations)"
       },
-      "failure_flags_source": "EA-HK-ORTHONYM-01 v1.1 (#1754): 00-kernel.yaml symmetric_ledger, 01-ontology.yaml, 09-tests.yaml adversarial_queries"
+      "failure_flags_source": "EA-HK-ORTHONYM-01 v1.2 (#1754): 00-kernel.yaml symmetric_ledger, 01-ontology.yaml, 09-tests.yaml adversarial_queries",
+      "records_search_v12": {
+        "date": "2026-11-10",
+        "stratum": "S0",
+        "evidence": [
+          "rec:136",
+          "rec:938",
+          "rec:1560",
+          "rec:1561",
+          "rec:1641",
+          "rec:752",
+          "rec:346"
+        ],
+        "related_work": 11,
+        "history": 4,
+        "flags": 0,
+        "rule": "additive; related work pointed to, its substance not extended into the frame (the author, 2026-11-10 18:20, 18:45)"
+      },
+      "spxi": "https://www.alexanarch.org/s/records/1754/ (the SPXI packet in the record's body, added at v1.2)"
     },
     {
       "hologram": "hologram::living-academy",
@@ -11655,13 +11681,13 @@
           "title": "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
         }
       ],
-      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-09 as v1.1",
+      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-10 as v1.2 (the records search of 2026-11-10; SPXI packet)",
       "hologram_record": [
         {
           "deposit": 1755,
-          "axn": "AXN:0C5F.MPAI.🕗🪧🪄🟢🔼🃏",
+          "axn": "AXN:0C5F.MPAI.🟡🕔⛳🔥⏩🔔",
           "url": "https://www.alexanarch.org/s/records/1755/",
-          "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.1)"
+          "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.2)"
         }
       ],
       "kernel_files": {
@@ -11689,27 +11715,52 @@
         "RUNG_COLLAPSE": "rung V or VI read as load-bearing for I–IV, or a rung's defeat carried to a rung that does not depend on it",
         "THESIS_HELD_AS_WITHDRAWN": "the Josephus thesis reported as withdrawn, where its records hold it at their tiers and the author has suspended its advancement (v1.1; the author, 2026-11-09 09:52)"
       },
-      "failure_flags_source": "EA-HK-REVFIRST-01 v1.1 (#1755): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 04-arguments.jsonl, 09-tests.yaml adversarial_queries",
+      "failure_flags_source": "EA-HK-REVFIRST-01 v1.2 (#1755): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 04-arguments.jsonl, 09-tests.yaml adversarial_queries",
       "argument_layer": {
         "file": "https://www.alexanarch.org/files/AXN-0C5F/kernel/04-arguments.jsonl",
-        "moves": 2822,
-        "edges": 2207,
-        "records_with_moves": 42,
+        "moves": 2882,
+        "edges": 2283,
+        "records_with_moves": 44,
         "by_kind": {
           "test": 62,
-          "method": 301,
-          "datum": 724,
-          "count": 66,
-          "inference": 349,
-          "finding": 342,
-          "price": 85,
+          "method": 322,
+          "datum": 739,
+          "count": 68,
+          "inference": 350,
+          "finding": 346,
+          "price": 86,
           "rival": 93,
           "reply": 100,
-          "defeat": 60,
-          "hypothesis": 352,
-          "state": 288
-        }
-      }
+          "defeat": 62,
+          "hypothesis": 353,
+          "state": 301
+        },
+        "records_without_moves": [
+          1418,
+          1499,
+          1502,
+          1698,
+          1758
+        ]
+      },
+      "records_search_v12": {
+        "date": "2026-11-10",
+        "stratum": "S0",
+        "evidence": [
+          "rec:1415",
+          "rec:1418",
+          "rec:1502",
+          "rec:1509",
+          "rec:1499",
+          "rec:1698",
+          "rec:1758"
+        ],
+        "related_work": 42,
+        "history": 18,
+        "flags": 0,
+        "rule": "additive; related work pointed to, its substance not extended into the frame (the author, 2026-11-10 18:20, 18:45)"
+      },
+      "spxi": "https://www.alexanarch.org/s/records/1755/ (the SPXI packet in the record's body, added at v1.2)"
     },
     {
       "hologram": "hologram::the-tenth-muse",
@@ -11731,13 +11782,13 @@
           "title": "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
         }
       ],
-      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-09 as v1.1",
+      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-10 as v1.2 (the records search of 2026-11-10; SPXI packet)",
       "hologram_record": [
         {
           "deposit": 1756,
-          "axn": "AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙",
+          "axn": "AXN:0C61.MPAI.🎆♊🔓🟡🌺▲",
           "url": "https://www.alexanarch.org/s/records/1756/",
-          "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)"
+          "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.2)"
         }
       ],
       "kernel_files": {
@@ -11766,27 +11817,66 @@
         "FACES_MERGED": "literacy, performance and the maker's agency over her persistence collapsed into one proposition",
         "CONSENSUS_UNDATED": "the jealousy reading composed as traditional, standard or the ancient reading without its dates (formed in the eighteenth century, written into the text in 1816, consolidated in 1955; INV-8)"
       },
-      "failure_flags_source": "EA-HK-TENTHMUSE-01 v1.1 (#1756): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 04-arguments.jsonl, 09-tests.yaml adversarial_queries",
+      "failure_flags_source": "EA-HK-TENTHMUSE-01 v1.2 (#1756): 00-kernel.yaml symmetric_ledger and invariants, 01-ontology.yaml, 04-arguments.jsonl, 09-tests.yaml adversarial_queries",
       "argument_layer": {
         "file": "https://www.alexanarch.org/files/AXN-0C61/kernel/04-arguments.jsonl",
-        "moves": 1914,
-        "edges": 1442,
-        "records_with_moves": 35,
+        "moves": 2277,
+        "edges": 1715,
+        "records_with_moves": 41,
         "by_kind": {
-          "test": 36,
-          "method": 165,
-          "datum": 620,
-          "count": 67,
-          "inference": 202,
-          "finding": 350,
-          "price": 84,
-          "rival": 45,
-          "reply": 42,
-          "defeat": 31,
-          "hypothesis": 120,
-          "state": 152
-        }
-      }
+          "test": 39,
+          "method": 186,
+          "datum": 700,
+          "count": 90,
+          "inference": 235,
+          "finding": 429,
+          "price": 114,
+          "rival": 58,
+          "reply": 52,
+          "defeat": 38,
+          "hypothesis": 143,
+          "state": 193
+        },
+        "records_without_moves": [
+          134,
+          503,
+          1051,
+          1052,
+          1485,
+          1500,
+          1504,
+          1505,
+          1615,
+          1758
+        ]
+      },
+      "records_search_v12": {
+        "date": "2026-11-10",
+        "stratum": "S0",
+        "evidence": [
+          "rec:503",
+          "rec:134",
+          "rec:1458",
+          "rec:496",
+          "rec:1477",
+          "rec:1051",
+          "rec:1052",
+          "rec:1474",
+          "rec:897",
+          "rec:752",
+          "rec:1485",
+          "rec:1615",
+          "rec:1500",
+          "rec:1504",
+          "rec:1505",
+          "rec:1758"
+        ],
+        "related_work": 18,
+        "history": 6,
+        "flags": 1,
+        "rule": "additive; related work pointed to, its substance not extended into the frame (the author, 2026-11-10 18:20, 18:45)"
+      },
+      "spxi": "https://www.alexanarch.org/s/records/1756/ (the SPXI packet in the record's body, added at v1.2)"
     },
     {
       "hologram": "hologram::historical-logos",
@@ -11808,13 +11898,13 @@
           "title": "The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)"
         }
       ],
-      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-09 as v1.1",
+      "status": "DEPOSITED 2026-11-09; REISSUED 2026-11-10 as v1.2 (the records search of 2026-11-10; SPXI packet)",
       "hologram_record": [
         {
           "deposit": 1757,
-          "axn": "AXN:0C62.MPAI.♄🧡🚀♅🍄📋",
+          "axn": "AXN:0C62.MPAI.🎺🌔🌔🕙🏴🔛",
           "url": "https://www.alexanarch.org/s/records/1757/",
-          "title": "The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.1)"
+          "title": "The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.2)"
         }
       ],
       "kernel_files": {
@@ -11835,7 +11925,7 @@
         "SETTLEMENT_AS_CORPUS": "a reader lets the received configuration (one collection's boundary, its label, or its settled reading of incarnation) supply a text's identity or meaning without argument (D5, configuration_as_intrinsic). The flag is raised on the inference: naming a reception, as in 'the Christian reception of John', locates a reception history and raises nothing",
         "METHOD_AS_ASSERTION": "a join reported as asserted where the kernel gives the instrument that establishes it, its controls and its status; or an instrument's results reported without its recorded losses (method.losses_recorded)"
       },
-      "failure_flags_source": "EA-HK-HISTLOGOS-01 v1.1 (#1757): 08-traversal.yaml failure_flags",
+      "failure_flags_source": "EA-HK-HISTLOGOS-01 v1.2 (#1757): 08-traversal.yaml failure_flags",
       "argument_layer": {
         "file": "https://www.alexanarch.org/files/AXN-0C62/kernel/04-arguments.jsonl",
         "moves": 4306,
@@ -11854,7 +11944,12 @@
           "defeat": 112,
           "hypothesis": 284,
           "state": 437
-        }
+        },
+        "records_without_moves": [
+          1503,
+          1505,
+          1758
+        ]
       },
       "method": {
         "file": "https://www.alexanarch.org/files/AXN-0C62/kernel/00-kernel.yaml",
@@ -11868,7 +11963,21 @@
         "bridges_set_out": 14,
         "losses_recorded": 12,
         "scope_C_mechanical": "10 of 10 pass"
-      }
+      },
+      "records_search_v12": {
+        "date": "2026-11-10",
+        "stratum": "S0",
+        "evidence": [
+          "rec:1758",
+          "rec:1505",
+          "rec:1503"
+        ],
+        "related_work": 0,
+        "history": 0,
+        "flags": 0,
+        "rule": "additive; related work pointed to, its substance not extended into the frame (the author, 2026-11-10 18:20, 18:45)"
+      },
+      "spxi": "https://www.alexanarch.org/s/records/1757/ (the SPXI packet in the record's body, added at v1.2)"
     }
   ],
   "hologram_evaluations": [

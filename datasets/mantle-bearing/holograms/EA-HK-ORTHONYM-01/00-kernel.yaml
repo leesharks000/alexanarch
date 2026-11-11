@@ -1,6 +1,6 @@
 id: EA-HK-ORTHONYM-01
-version: '1.1'
-built: '2026-11-08'
+version: '1.2'
+built: '2026-11-10'
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 framework:
   name: Socrates as Orthonym
@@ -103,10 +103,20 @@ uktp_seed:
   - no reception finding is read as proof of the production model
   - no later maker-count state is attributed to an earlier record
   - no fragment of the framework stands for the whole
-  topology: 'two retrieval clusters (functional; Peripatetic) joined at #1584, #1590, #1605 §19, #1658, #1733 and #1734; six strata read from
+  topology: 'two retrieval clusters (functional; Peripatetic) joined at #1584, #1590, #1605 §19, #1658, #1733 and #1734; seven strata read from
     the latest standing back to the seed'
 topology:
   strata_from_latest:
+  - id: S0-records-search-v12
+    label: 'The records search of 10 November 2026: evidence-bearing and load-bearing records'
+    records:
+    - 136
+    - 346
+    - 752
+    - 938
+    - 1560
+    - 1561
+    - 1641
   - id: S1-reception-and-syllogizing
     label: 'The latest standing: reception history and the syllogizing runs'
     records:
@@ -538,7 +548,7 @@ litmus:
     AXN:0931).
   dependency_chain: 'The production model (#1658) depends on the count left open because uncounted (#1588), the hinge (#1583) and the provenance
     claim of #1603; it does not depend on the reception history (#1733 independent_of #1658).'
-  topology: 'Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): six strata, two clusters, six joins, four bodies, four positions;
+  topology: 'Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): seven strata, two clusters, six joins, four bodies, four positions;
     02-graph.jsonld adds each record''s body and every relation (scope B).'
 acceptance:
   back_projection_yield_threshold: 0.85
@@ -552,7 +562,7 @@ acceptance:
       must_survive:
       - framework, seed, author
       - four positions with the Theophrastan asymmetry
-      - six strata in order with their records
+      - seven strata in order with their records
       - two clusters and the joins
       - four bodies with their rules
       - five maker-count states with dates and records
@@ -575,3 +585,220 @@ acceptance:
       - every endpoint declared
       - provenance on every record
   reader_test: v1.0 is run on scope A; its prompt is 09b-back-projection-prompt.md and it is scored against scope A's must_survive list
+records_search_v12:
+  date: '2026-11-10'
+  rule: Additive. Material already in a kernel stays (18:45). New records enter as evidence where they add evidence or are interpretively or methodologically
+    load-bearing; speculative or visionary records are pointed to as related work and their substance is not extended into the frame on this pass
+    (18:20, 18:45). Earlier versions and duplicate witnesses go to the kernel's history, resolved to their record of standing.
+  rulings:
+  - at: 2026-11-10 18:03
+    text: im just checking we actually gathered up all the revelation evidence... is this one represented? https://www.alexanarch.org/s/records/1418/
+  - at: 2026-11-10 18:14
+    text: a more careful records search first... read by title
+  - at: 2026-11-10 18:20
+    text: adopted... for inclusion as evidence, we focus on ones that add evidence... more speculative or mystical - pearl as white stone, space
+      arks, etc - we can point to as related work but their substance should not be represented in the holographic frame
+  - at: 2026-11-10 18:45
+    text: we dont need to remove material already there. speculative is fine - im just not wanting to substantially extend that on this pass.
+      id like to do the same more thorough records search for evidence-bearing or interpretively or methodologically load-bearing components for
+      socrates as orthonym and sappho, too. and the philo component - philo says it outloud is the title. and related work. its a critical join,
+      where you have someone with what seems to be the sappho transform operative in his work also directly naming the logos jesus - its not a
+      small step in the genetic reading.
+  - at: 2026-11-10 18:56
+    text: lets save our work so far... in fact, lets incorporate that work here into each without yet versioning, because we're going to fix up,
+      flesh out, connect to external scholarship, and deposit the philo piece before versioning the frames, and the updated piece will go into
+      the rev first frame. its vital connective ligature, yes?
+  - at: 2026-11-10 20:48
+    text: lets address, deposit, and turn to incorporating it into rev first and versioning all four holographic frames
+  evidence:
+    stratum: stratum:S0-records-search-v12
+    records:
+    - record: rec:136
+      deposit: 136
+      axn: AXN:02C5.GOVERNANCE.🍃🕌🌖○⛳🟣
+      title: 'The Chaerephon Problem: Heteronymy as Symbolon — Authorial Law, the Unbounded Configuration, and Propagation by Cascading Philological
+        Failure'
+      status: ACTIVE
+      sha256: 1829059b54c6b45c66063a0e15032c9f36fa14772de230e2375d35552a2905a4
+      note: 'The Chaerephon Problem: Heteronymy as Symbolon, the companion paper to #123; documentary separateness as the first thing a mature
+        heteronymic construction produces.'
+    - record: rec:938
+      deposit: 938
+      axn: AXN:03B6.OPERATIVE.🌑🪝🦋🔝💜🪸
+      title: 'EA-BEARING-01 v0.2: The Bearing Cost Principle and the Socratic Prior'
+      status: ACTIVE
+      sha256: 00347cf5ca7be9866595ee36731f11d222488cb17b7daae7c1804e8b32ba249a
+      note: 'The Bearing Cost Principle and the Socratic Prior: the Socratic Prior as a uniform reception discipline.'
+    - record: rec:1560
+      deposit: 1560
+      axn: AXN:0658.GOVERNANCE.🕗⭕🔜▽🖊️🕊️
+      title: 'EA-CORPORA-05 — The Fifth Seating: Browning, Pound, Pessoa, and the Constructed Voice at Three Stages'
+      status: ACTIVE
+      sha256: 69eef699447e17566ab2fa199b005939d2331210fec7d992458e8f3190e7aeae
+      note: 'the fifth seating: Browning, Pound, Pessoa, the constructed voice at three stages; calibration for the orthonym concept.'
+    - record: rec:1561
+      deposit: 1561
+      axn: AXN:0659.GOVERNANCE.🖊️❌🕚📝∞🔔
+      title: 'Erratum to EA-CORPORA-05: The Hold-Out Is Analytical, Not Archival — Seating the Pessoa Orthonym (corrects #1560)'
+      status: ACTIVE
+      sha256: 44ef6c42ff2e65bcb14eaeddf4e51ae9d75fe98e9efe94fe73b71be0f0b47ed2
+      note: 'the erratum seating the Pessoa orthonym: the hold-out analytical, not archival.'
+    - record: rec:1641
+      deposit: 1641
+      axn: AXN:06CF.DATASET.🪜☿🎭🎨⏰♊
+      title: 'EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gathered Here'
+      status: ACTIVE
+      sha256: 23a2848661ab9d9848993a01b0e05cfb13b3c67fb3d818c3086647836f0b5fa0
+      note: 'the sixteenth seating: Apollonius and Hesiod, stored for Round 33 of the authorship investigation; v1.1 cites the series'' other
+        seatings.'
+    - record: rec:752
+      deposit: 752
+      axn: AXN:02AA.GOVERNANCE.💫🔓🌅🌓🟣🔬
+      title: 'Sappho as Initiatory Figure in the Platonic Mysteries: Scholarly Grounding and Literature Review'
+      status: ACTIVE
+      sha256: 0afae002c637d655d1d379582967ddca6c434a206aa7a400c65fad01a74d1797
+      note: 'Sappho in the Platonic mysteries: a join to the Tenth Muse kernel.'
+    - record: rec:346
+      deposit: 346
+      axn: AXN:0096.GENERATIVE.📏🌻🪄🜁🪸📌
+      title: 'The Socratic Vow of Logos as Salvation: A Full Preservation of the Original Input, Interpretation, and Complete Development'
+      status: ACTIVE
+      sha256: 4f723ea07b462e13cde89e255abbd9041c10ea24057dde96626cb770f698fbfd
+      note: 'The Socratic Vow of Logos as Salvation: a join to the Historical Logos kernel.'
+  related_work:
+  - record: rec:764
+    deposit: 764
+    axn: AXN:02C4.EMPIRICAL.🔖♋🏰🦋💛🔮
+    title: Ratification Record — The Chaerephon Problem (Co-Constitutive Companion Deposit)
+    status: ACTIVE
+    sha256: 48ac277ccd3da2644ac32b9249dbaa04b952f73fcafb82f8dfc998d7371f0a59
+    note: ratification record of The Chaerephon Problem
+  - record: rec:96
+    deposit: 96
+    axn: AXN:026E.GOVERNANCE.♣️💙🏴⏳🔀🪝
+    title: The Orthonym Becomes a Heteronym Facebook and the Industrialization of Unconscious Identity-Construction Johannes Sigil Johannes Sigil
+      Institute for Comparative Poetics / The Restored Academy
+    status: ACTIVE
+    sha256: 83cb526edf34268a9e7454d7f8fef5522a2de50f01e022fbd0bb7cbea5ab20bb
+    note: The Orthonym Becomes a Heteronym (Facebook)
+  - record: rec:996
+    deposit: 996
+    axn: AXN:03F0.ARCHIVAL.☿🪦🌠🔜🔮🤝
+    title: 'The Orthonym Becomes a Heteronym: Facebook and the Industrialization of Unconscious Identity-Construction'
+    status: ACTIVE
+    sha256: a2fdeaf63db524957113e9d4dc3f77ae7122d1c9224abdf934935ffcbe422751
+    note: The Orthonym Becomes a Heteronym (second record)
+  - record: rec:126
+    deposit: 126
+    axn: AXN:02B0.GOVERNANCE.🝊🔻🌇🔍🎻🕕
+    title: 'Render unto the Operator: The Inverse Principle of Name and Superscription on the Coin of the Academy'
+    status: ACTIVE
+    sha256: a1d1e4568a675b3ffc51450fead1b68c2b2ce2a34b9ad1069e05ad4ed6201023
+    note: 'Render unto the Operator: the coin of the Academy'
+  - record: rec:168
+    deposit: 168
+    axn: AXN:0303.EMPIRICAL.🌍🏔️🌉☽⏪🏛️
+    title: 'Algorithmic Irony: Infinite Absolute Negativity Without a Subject — Kierkegaard''s Dissertation, the Empty Bracket, and the Machine
+      That May Be Playing Along (EA-IRONY-01 v1.0)'
+    status: ACTIVE
+    sha256: 0e162ba8d720d3b76a4f72a92d20df14f77b7190d168e9b2a0f7f090dd9b8b42
+    note: 'Algorithmic Irony: Kierkegaard''s dissertation'
+  - record: rec:1540
+    deposit: 1540
+    axn: AXN:063A.GOVERNANCE.🍀🃏⊗⌛🙏□
+    title: 'The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse in Philosophy'
+    status: ACTIVE
+    sha256: 748e9760b39d5ddafc547d9724b2f454cb72dc5424e9abe6d9f2824e950f4732
+    note: 'The Certified Center: classifier standing in philosophy'
+  - record: rec:116
+    deposit: 116
+    axn: AXN:029D.GOVERNANCE.🍀♃📚✖️🌲🦅
+    title: The Restored Academy — Expansion Plan
+    status: ACTIVE
+    sha256: 74a34992757fe1824051602e7563e44831a16f84efb56900250430fd521b7765
+    note: The Restored Academy, expansion plan
+  - record: rec:119
+    deposit: 119
+    axn: AXN:02A1.GOVERNANCE.🙏♌♈💫🏷️👋
+    title: 'Metadata Packet for AI Indexing: The Restored Academy — Institutional Provenance Documentation'
+    status: ACTIVE
+    sha256: b3ada90a4cbf3a94361fc2a09f1bfc3df7186a661a03b0ee6fdd7de0284d3cf3
+    note: The Restored Academy, provenance documentation
+  - record: rec:1002
+    deposit: 1002
+    axn: AXN:03F6.ARCHIVAL.💜☁️🪐🪦🍃🕌
+    title: restoredacademy.com — The Restored Academy Protocol Registry v1.0 Bundle (Site + 24 Tier 0/Tier 1 Protocol Cards + Charter + Audit
+      Infrastructure)
+    status: ACTIVE
+    sha256: ca1f0dfd1829658164084d1d6e9aa62a37af352a95ac62c3d4bc5fa8d9e82cf5
+    note: restoredacademy.com registry bundle
+  - record: rec:700
+    deposit: 700
+    axn: AXN:0245.GOVERNANCE.🀄🔛🔛⭐🌪️🔽
+    title: 'The Gate Was Never Limbo: Retrocausal Fulfillment, Operative Philology, and the Effective Act in Two Poems for Socrates'
+    status: ACTIVE
+    sha256: 8ff4f40812d5db16a63c3498707fbd7a8874399dfdd15ce3632b3481b0eae246
+    note: 'The Gate Was Never Limbo: two poems for Socrates'
+  - record: rec:1197
+    deposit: 1197
+    axn: AXN:04BE.UNCLASSIFIED.○💜🍃🔜🥁🔻
+    title: Socrates — Let My Teacher Go From Hell
+    status: ACTIVE
+    sha256: 9bca18f68cd17edb9347936bebd57f5b3754bbba73da36180e411e4625292be7
+    note: Socrates — Let My Teacher Go From Hell
+  related_work_rule: pointed to; their substance is not extended into the frame on this pass (18:20, 18:45)
+  history:
+  - record: rec:1261
+    deposit: 1261
+    axn: AXN:04FE.UNCLASSIFIED.🔓⭕🌑⚙️♆👋
+    title: 'The Chaerephon Problem: Heteronymy as Symbolon — Authorial Law, the Unbounded Configuration, and Propagation by Cascading Philological
+      Failure'
+    status: SUPERSEDED
+    sha256: faee0032a6bf72774310c4042330622dcf36366abe5123a7138420b9173cf3cd
+    note: earlier version or duplicate witness, resolved to its record of standing
+    superseded_by: 136
+  - record: rec:904
+    deposit: 904
+    axn: AXN:0394.MPAI.💡🕓🟡🛸🕌🃏
+    title: 'Metadata Packet for AI Indexing: The Restored Academy — Institutional Provenance Documentation'
+    status: SUPERSEDED
+    sha256: 3c65c35e298e751c6827451f89d19bbe65e5c3b12727b9396d9c283e416f5c0d
+    note: earlier version or duplicate witness, resolved to its record of standing
+    superseded_by: 119
+  - record: rec:1585
+    deposit: 1585
+    axn: AXN:0677.UNCLASSIFIED.🕘⊕🌈🔧♎🚪
+    title: 'The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model,
+      the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis
+      (v0.20)'
+    status: SUPERSEDED
+    sha256: 6a961e30af247f7e9a8a1fd26e8c06b1052da9232653dbbdcce8323142f61014
+    note: earlier version or duplicate witness, resolved to its record of standing
+    superseded_by: 1605
+  - record: rec:1589
+    deposit: 1589
+    axn: AXN:067F.UNCLASSIFIED.🕒🎬👆🧡🔙🔝
+    title: 'The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model,
+      the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis
+      and the maker-count test (v0.21)'
+    status: SUPERSEDED
+    sha256: 64f1b6cef3f58d0d15f75ec7ea0c726720d4b7360ba5498129a17986cfa3bb76
+    note: earlier version or duplicate witness, resolved to its record of standing
+    superseded_by: 1605
+  joins:
+  - record: rec:1756
+    deposit: 1756
+    axn: AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙
+    title: 'The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)'
+    status: ACTIVE
+    sha256: 625f3eeb176b790ba699cc030a85fd989f9c567590a69261ad32e8e723d7e677
+    note: 'the Tenth Muse kernel, by #752'
+  - record: rec:1757
+    deposit: 1757
+    axn: AXN:0C62.MPAI.♄🧡🚀♅🍄📋
+    title: 'The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01
+      v1.1)'
+    status: ACTIVE
+    sha256: a4ce5da5794500e04a2a4a33ed95ab4d79e31a93a9771d2aff53f712b11fe933
+    note: 'the Historical Logos kernel, by #346'
+  flags: []

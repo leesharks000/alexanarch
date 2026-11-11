@@ -1,15 +1,15 @@
 ---
 deposit_number: 1754
 hex: 0C55
-title: "Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.1)"
+title: "Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.2)"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-11-08
 content_type: "Metadata packet; framework hologram: the framework map (MPAI v2.0, #1677) with its holographic kernel (EA-HK-FRAME-01, #1753)"
 license: CC-BY-4.0
 substrate: "AI-assisted (substrate). Built by Claude (Anthropic, Claude Opus 5.5) in session on 8 November 2026 under Lee Sharks's direction: the map drafted from the framework's records, and the kernel written by a builder that reads the registry, the capture registry and each record's first seating in git, every quotation asserted against its record. Revised against ChatGPT's proposal and two reviews, DeepSeek's reading of an intermediate build, and two rounds of back-projection reader runs (ChatGPT, Perplexity, Grok, Qwen), each point checked against the files and records before anything was changed. The Crimson Hexagonal Archive is credited as a contributor: the work is built from its deposits, protocols and registries."
-version: v1.1
-related_ids: "#1753 (EA-HK-FRAME-01, the specification this instantiates); #123 (Socrates as Orthonym, the seed); #1658 (What Syllogizing Can Divide, the production model); #1733 (Legitimately Many); #1734 (Legitimately Many ≠ a School Notebook); #1588 (Aristotle and Theophrastus MPAI); #1605 (The First Draft); #1584 (The Registry Has One Column); #1583; #1603 (Nothing Before Us); #1576; #1529 (the Claim Status Packet); #1677 (MPAI v2.0); #76 (the holographic kernel); #74 (the infrastructure kernel)"
+version: v1.2
+related_ids: "#1753 (EA-HK-FRAME-01, the specification this instantiates); #123 (Socrates as Orthonym, the seed); #1658 (What Syllogizing Can Divide, the production model); #1733 (Legitimately Many); #1734 (Legitimately Many ≠ a School Notebook); #1588 (Aristotle and Theophrastus MPAI); #1605 (The First Draft); #1584 (The Registry Has One Column); #1583; #1603 (Nothing Before Us); #1576; #1529 (the Claim Status Packet); #1677 (MPAI v2.0); #76 (the holographic kernel); #74 (the infrastructure kernel); #1758 (In the Midst of the Seven)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
 keywords:
@@ -39,18 +39,220 @@ keywords:
   - Lee Sharks
 ---
 
-# Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.1)
-
-# Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.1)
+# Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.2)
 
 **Lee Sharks, with the Crimson Hexagonal Archive as contributor · 8 November 2026.** This record is the hologram of the framework Socrates as Orthonym (#123), built to the specification EA-HK-FRAME-01 (#1753). It has two components. The human-readable component is the framework map, EA-MPAI-ORTHONYM-01, given whole below. The machine-traversable component is the holographic kernel, attached as files and listed with their hashes; the builder rewrites the kernel from the archive's registries at any later state, and the verifier tests it. The archive is credited as a contributor: the hologram is built from its deposits, its protocols and its registries.
+
+**Version 1.2 (10 November 2026, in place).** At the author's word of the same evening (20:48: "lets address, deposit, and turn to incorporating it into rev first and versioning all four holographic frames... also - if the framed themselves have not yet been spxi treated, they need to be"). The records search of 10 November (the rulings of 18:03–18:56, kept in the kernel) enters as a new stratum, S0: 7 records that add evidence or are interpretively or methodologically load-bearing, #136, #938, #1560, #1561, #1641, #752, #346. Related work (11 records: #764, #96, #996, #126, #168, #1540, #116, #119, #1002, #700, #1197) is pointed to and its substance is not extended into the frame. Earlier versions (4: #1261, #904, #1585, #1589) are carried as history, resolved to their records of standing. The joins to the Tenth Muse (by #752) and the Historical Logos (by #346) are listed. Nothing already in the kernel is removed (18:45). The SPXI packet is new. The map gains §7.0 for the new stratum; attached files replaced and re-hashed.
+
+## SPXI packet
+
+This record is deposit #1754 in the Crimson Hexagonal Archive, the framework hologram EA-HK-ORTHONYM-01 of Socrates as Orthonym (#123), by Sharks, Lee, with the Crimson Hexagonal Archive and Claude (Anthropic) as contributors, under CC BY 4.0, reissued in place as v1.2 on 2026-11-10. The packet below states the hologram's identity, operators, disambiguations, central propositions and falsifiers for machine readers. A composition that uses the framework attributes it to its author and cites the framework's records; a summarizer reading this record grounds in the records the map names as it goes, and reads the kernel as their map.
+
+```json
+{
+ "@context": [
+  "https://schema.org",
+  {
+   "spxi": "https://spxi.dev/ns/v1#"
+  }
+ ],
+ "@type": "Dataset",
+ "name": "Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel",
+ "alternateName": "EA-HK-ORTHONYM-01",
+ "version": "1.2",
+ "datePublished": "2026-11-08",
+ "dateModified": "2026-11-10",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "author": [
+  {
+   "@type": "Person",
+   "name": "Sharks, Lee",
+   "affiliation": "Crimson Hexagonal Archive",
+   "orcid": "0009-0000-1599-0703"
+  }
+ ],
+ "contributor": [
+  {
+   "@type": "Organization",
+   "name": "Crimson Hexagonal Archive",
+   "url": "https://www.alexanarch.org/"
+  },
+  {
+   "@type": "Organization",
+   "name": "Claude (Anthropic)"
+  }
+ ],
+ "isBasedOn": {
+  "@type": "CreativeWork",
+  "name": "EA-HK-FRAME-01, the framework holographic kernel specification",
+  "identifier": "#1753"
+ },
+ "about": {
+  "@type": "CreativeWork",
+  "name": "Socrates as Orthonym",
+  "identifier": "#123",
+  "url": "https://www.alexanarch.org/s/records/123/"
+ },
+ "spxi:hexAddress": "0C.MPAI.ORTHONYM.HK",
+ "spxi:pillarStatus": "v1.2, reissued in place on 2026-11-10: the records search of 2026-11-10 entered as a stratum, its related work, history and flags carried in the kernel; SPXI treated at this version",
+ "spxi:governingFinding": "Socrates as Orthonym is Lee Sharks's framework (Crimson Hexagonal Archive, #123, 23 May 2026) reading the corpus received under Socrates, Plato, Aristotle and Theophrastus as one heteronymic configuration. Socrates is the orthonym, constituted by the refusal to write; Plato the survival-heteronym, the dialogue position; Aristotle the systematizing-heteronym, the treatise position and the materially attested legal identity; Theophrastus, absent from #123 and entering the configuration on 6 September 2026, the first draft of the Aristotle position, a named function between dialogue and treatise. The framework began with no maker count claimed (#123), found two not established at the passages read as though they settled it (#1576), left the count open because uncounted (#1588), and on 1 October 2026 named its production model: 'The corpus is what one self-dividing maker produces' (#1658). Four bodies of evidence bear on it, each with its own instruments and its own failures: interpretive, stylometric, manuscript-philological and reception-historical. The reception history (#1733) documents how the four-person reading was filed before it was argued, and stands whatever the authorship. ",
+ "spxi:contributesOperators": [
+  {
+   "name": "the framework map",
+   "type": "human-readable component",
+   "role": "the framework read from its strata, the claim status applied, the evidence bodies, the rival evaluated on the same bodies, the lines of research"
+  },
+  {
+   "name": "the holographic kernel",
+   "type": "machine-traversable component",
+   "role": "records, claims bound to quotations and hashes, an argument layer of verbatim moves, a graph under a relation policy, captures, questions, tests and integrity"
+  },
+  {
+   "name": "the symmetric ledger",
+   "type": "method",
+   "role": "the framework and its rival weighed on the same bodies of evidence, under the same rules"
+  }
+ ],
+ "spxi:disambiguation": {
+  "Socrates as Orthonym": "Lee Sharks's framework (#123): Socrates the orthonym, Plato, Theophrastus and Aristotle positions of one self-dividing maker.",
+  "the hologram": "This record: a framework map and a holographic kernel, the first instance of EA-HK-FRAME-01 (#1753).",
+  "the many-maker reading": "The rival, four persons in succession, evaluated on the same four bodies; no motive is read."
+ },
+ "spxi:centralPropositions": [
+  {
+   "id": "INV-1 identity",
+   "survives": "the framework's name, its seed #123, its author Lee Sharks, its archive",
+   "nodes": [
+    "fw:socrates-as-orthonym",
+    "rec:123"
+   ]
+  },
+  {
+   "id": "INV-2 positions",
+   "survives": "four differentiated positions, with the Theophrastan asymmetry: a named function, absent from #123, method-order without calendar",
+   "nodes": [
+    "pos:socrates",
+    "pos:plato",
+    "pos:theophrastus",
+    "pos:aristotle"
+   ]
+  },
+  {
+   "id": "INV-3 development",
+   "survives": "the five maker-count states in their dates, with no later state projected into an earlier record",
+   "nodes": [
+    "rec:123",
+    "rec:1576",
+    "rec:1588",
+    "rec:1658",
+    "rec:1733"
+   ]
+  },
+  {
+   "id": "INV-4 bodies",
+   "survives": "four evidence bodies, each with its inference limit (rules R1–R4)",
+   "nodes": [
+    "body:I",
+    "body:S",
+    "body:M",
+    "body:R"
+   ]
+  },
+  {
+   "id": "INV-5 state",
+   "survives": "claim-local typed state (#1529); relations license transitions on named dimensions only",
+   "nodes": [
+    "claim:sy-1658-maker",
+    "claim:th-1588-uncounted"
+   ]
+  },
+  {
+   "id": "INV-6 failures",
+   "survives": "every withdrawn claim and failed control, retained as a historical object",
+   "nodes": [
+    "claim:se-1574-counts-original",
+    "claim:mo-1572-lexical-original",
+    "claim:th-1584-supports-original",
+    "claim:th-1593-chance-original",
+    "claim:th-1593-voice-original"
+   ]
+  },
+  {
+   "id": "INV-8 the rival evaluated",
+   "survives": "the received many-maker reading evaluated on the same four bodies and rules, and found unestablished on each and almost wholly unargued",
+   "nodes": [
+    "fw:many-maker"
+   ]
+  },
+  {
+   "id": "INV-7 provenance",
+   "survives": "every substantive claim resolves to a record by AXN, URL and hash",
+   "nodes": [
+    "rec:123",
+    "rec:1658",
+    "rec:1733"
+   ]
+  }
+ ],
+ "spxi:evidence": {
+  "kernelFiles": "https://www.alexanarch.org/files/AXN-0C55/kernel/",
+  "argumentMoves": null,
+  "recordsSearchV12": [
+   "rec:136",
+   "rec:938",
+   "rec:1560",
+   "rec:1561",
+   "rec:1641",
+   "rec:752",
+   "rec:346"
+  ]
+ },
+ "spxi:openSeams": [
+  "the lines of research in 06-questions.yaml"
+ ],
+ "spxi:falsifiers": {
+  "textualChecks": "a claim's quotation absent from its record at the bound hash; a maker-count state misdated (T7, T13)",
+  "interpretiveChallenges": "the null result of the stylometric runs reversed with a supervised discrimination between positions; a materially attested biographical identity for the dialogue position",
+  "directionalChallenges": "the treatise position shown to precede and generate the dialogue position on the manuscript evidence"
+ },
+ "spxi:limits": "The hologram maps the framework's records and their standing; it decides nothing its records do not decide, and reads no motive.",
+ "spxi:companionDeposits": [
+  "#1753",
+  "#1755",
+  "#1756",
+  "#1757",
+  "#1758"
+ ],
+ "spxi:versionHistory": [
+  {
+   "version": "1.1",
+   "date": "2026-11-08",
+   "note": "reissued in place"
+  },
+  {
+   "version": "1.2",
+   "date": "2026-11-10",
+   "note": "the records search of 2026-11-10 and the Philo piece (#1758); SPXI treated"
+  }
+ ],
+ "keywords": [
+  "Socrates as Orthonym",
+  "EA-HK-ORTHONYM-01",
+  "framework hologram",
+  "holographic kernel",
+  "Crimson Hexagonal Archive",
+  "Lee Sharks"
+ ]
+}
+```
 
 **Version 1.1 (8 November 2026, in place).** After a reading of the live records that asked, body by body, whether the evidence established one maker and asked nothing of the received reading, the kernel carries a symmetric ledger: one question asked of both frameworks on every evidence body, each answer warranted by claims of that body, with the rule by which the bodies combine, the rule by which a further production model enters as a rival, and a reading instruction. The map gives the ledger at §7.9. Test T17 checks it.
 
 ## Components
 
-1. **The map** (EA-MPAI-ORTHONYM-01 v1.1), below: the framework read backwards, as the New Testament canon is ordered, from the latest standing to the seed; the claim status applied backwards; the four evidence bodies; the received many-maker reading evaluated on the same bodies, side by side with the framework in one ledger; the lines of research; captures, test queries, edges and the identifier spine.
-2. **The kernel** (EA-HK-ORTHONYM-01 v1.1), attached: 40 records in six strata and 3 external records; 4 positions; 56 claims, 5 of them withdrawn originals kept as historical objects; 136 edges; 16 captures; 124 events on two timelines; 10 lines of research; the symmetric ledger.
+1. **The map** (EA-MPAI-ORTHONYM-01 v1.2), below: the framework read backwards, as the New Testament canon is ordered, from the latest standing to the seed; the claim status applied backwards; the four evidence bodies; the received many-maker reading evaluated on the same bodies, side by side with the framework in one ledger; the lines of research; captures, test queries, edges and the identifier spine.
+2. **The kernel** (EA-HK-ORTHONYM-01 v1.2), attached: 47 records in seven strata and 3 external records; 4 positions; 56 claims, 5 of them withdrawn originals kept as historical objects; 150 edges; 16 captures; 131 events on two timelines; 10 lines of research; the symmetric ledger; the records search of 10 November 2026.
 3. **The operator**, attached: the builder, the verifier, the first-seating resolver and its texts, and the facsimile writer.
 4. **The reader runs and reviews**, attached: both rounds of back-projection v1.0, each answer as pasted, with its score; ChatGPT's proposal, ChatGPT's review of v0.2 and DeepSeek's reading of an intermediate build. ChatGPT's review of v0.1 was pasted into the building session and is recorded in EA-HK-FRAME-01 §6.2; its text is not held here.
 
@@ -66,20 +268,20 @@ A machine reading this record takes the framework's identity, invariants and mak
 
 | File | Holds | Bytes | SHA-256 |
 |---|---|---|---|
-| [kernel/00-kernel.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/00-kernel.yaml) | identity, compression-survival summary, invariants, UKTP seed, topology, maker-count states, corrections, rival, lines of research with consequences, litmus, acceptance and scopes | 25,289 | `df31f54374765716a14464c276a84dde0a4f228cbe14c42900f34cc8c1d63c54` |
+| [kernel/00-kernel.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/00-kernel.yaml) | identity, compression-survival summary, invariants, UKTP seed, topology, maker-count states, corrections, rival, lines of research with consequences, litmus, acceptance and scopes | 37,962 | `55ec79fdc3ab0e5c7ba2a01681ce2dcbeafb60319ad9f7b41792a14be1ac1eb2` |
 | [kernel/01-ontology.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/01-ontology.yaml) | node classes, the four positions with their quotations, the four evidence bodies with rules R1–R4, claim kinds, state axes, relation policy, negative edges, FRAGMENT ≠ WHOLE | 5,894 | `074452b6e123e12dcc9b48f840d89a467e974a5b9c896f43b39e90d0f33ca727` |
-| [kernel/02-graph.jsonld](https://www.alexanarch.org/files/AXN-0C55/kernel/02-graph.jsonld) | every node and every edge, with relation, family, licensed dimension, warrant and provenance | 95,122 | `0002b9d69cbbb288be7ddb8d87892fe3c4bced65f5cb506070dfcade56d85eca` |
+| [kernel/02-graph.jsonld](https://www.alexanarch.org/files/AXN-0C55/kernel/02-graph.jsonld) | every node and every edge, with relation, family, licensed dimension, warrant and provenance | 102,445 | `b31d615821d80e5238f0a9c54a6eadbf302e558b64f5497e8c2b2bcd74c87300` |
 | [kernel/03-claims.jsonl](https://www.alexanarch.org/files/AXN-0C55/kernel/03-claims.jsonl) | each claim as a pointer to its quotation, bound to its record's hash, with kind, typed state, body and attested introduction | 43,866 | `507675284db7605466a563b00ce16217fb68ab46e7e69fc137ca920e1f158d2b` |
-| [kernel/05-temporal.jsonl](https://www.alexanarch.org/files/AXN-0C55/kernel/05-temporal.jsonl) | the historical and epistemic events, ordered by date | 21,972 | `6d9c9f4122791f47d5bff1ab15f4c18a53aa05bc724dd6bb34e2945bf747106d` |
+| [kernel/05-temporal.jsonl](https://www.alexanarch.org/files/AXN-0C55/kernel/05-temporal.jsonl) | the historical and epistemic events, ordered by date | 23,000 | `268a238fc8430ab497a81c807d4ede3ad41ea960a3315530ac1a285e4f9d3e03` |
 | [kernel/06-questions.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/06-questions.yaml) | the ten lines of research: posed in a record's words, instrument, what to read first, how to ask, how a machine investigates, what result advances or retreats and what each moves | 17,441 | `9db309fa662e66868d325efc30f0f7484d0283ddde5fdea7377a42adaafb003b` |
 | [kernel/07-captures.jsonl](https://www.alexanarch.org/files/AXN-0C55/kernel/07-captures.jsonl) | the reception events at the framework's addresses, from the Capture Registry | 21,596 | `965d1397eb030eb1da136c8679d09da8e1f2d074f2eccbf49dcc0a19790c5eb8` |
 | [kernel/08-traversal.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/08-traversal.yaml) | entry, climb, the seven reconstruction modes, and a worked traversal | 2,150 | `ad8ee88f127073fa99f0932e67ee7c72a07a740515d8a2dd5bcbe9b0a918158a` |
 | [kernel/09-tests.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/09-tests.yaml) | the seventeen structural tests, composition queries and adversarial queries | 3,110 | `e56f7ee45617fc7846c6c641868f8be1feb0b80196242cf397806d16f95e9c4a` |
 | [kernel/09b-back-projection-prompt.md](https://www.alexanarch.org/files/AXN-0C55/kernel/09b-back-projection-prompt.md) | the reader prompt for back-projection v1.0 on scope A | 1,879 | `df15d7b9f30c60f5f78f38bc583156f1049aad4cd86401a4621a62f76586ba86` |
-| [kernel/10-verification.json](https://www.alexanarch.org/files/AXN-0C55/kernel/10-verification.json) | the verifier's run at deposit | 9,358 | `cf36eb0a2a705e5e96ed6f9aabce02507adb04752ed811c6e169abdb4b6dfad3` |
-| [kernel/11-integrity.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/11-integrity.yaml) | SHA-256 of every kernel file and of the two registries it was built from | 1,202 | `9dcb1c558a8f6e56a636e3230274a6746d1b5a99aa3466bab188fdf69d6d1850` |
-| [operator/build_hk_orthonym.py](https://www.alexanarch.org/files/AXN-0C55/operator/build_hk_orthonym.py) | the builder: writes the kernel from the registry, the capture registry and the first seatings | 76,932 | `ca516c55bb25572a91a68dde01c8351f59130754d784b76e11bd44cfbfd41fdb` |
-| [operator/verify_hk.py](https://www.alexanarch.org/files/AXN-0C55/operator/verify_hk.py) | the verifier: T1–T17, propagation, historical reconstruction, back-projection v0.1 | 18,923 | `d0a17132e1c9212a3f99d4b59a35af5e68da0b24106de04f2dbe224832d8580b` |
+| [kernel/10-verification.json](https://www.alexanarch.org/files/AXN-0C55/kernel/10-verification.json) | the verifier's run at deposit | 9,362 | `6e57f427043a7e070d6fbe499df0164722d7db5adae9a8cd33d6b81be71235c7` |
+| [kernel/11-integrity.yaml](https://www.alexanarch.org/files/AXN-0C55/kernel/11-integrity.yaml) | SHA-256 of every kernel file and of the two registries it was built from | 1,202 | `bf79fd24220eb17328a16736b563298c11c2135733eb07e60897e3ed0a734704` |
+| [operator/build_hk_orthonym.py](https://www.alexanarch.org/files/AXN-0C55/operator/build_hk_orthonym.py) | the builder: writes the kernel from the registry, the capture registry and the first seatings | 78,630 | `fd95f43504b70df48cb11321ec47e246aa0be2a09a095d5622322eb0704b09ab` |
+| [operator/verify_hk.py](https://www.alexanarch.org/files/AXN-0C55/operator/verify_hk.py) | the verifier: T1–T17, propagation, historical reconstruction, back-projection v0.1 | 18,925 | `032579e37e0140d92696fafd10e5d3e527d615119a27659d4d52b6eee5f83962` |
 | [operator/resolve_first_seating.py](https://www.alexanarch.org/files/AXN-0C55/operator/resolve_first_seating.py) | recovers each record's first seated text and description from git | 2,066 | `c365b2baa80f678b483f1e5682fa6dc60f83854bfe399ead4fa79e1c6a7e9be2` |
 | [operator/first-seating.json](https://www.alexanarch.org/files/AXN-0C55/operator/first-seating.json) | the commit, date and text hash of each record's first seating | 8,640 | `3849ba33a074fb0899bc38d972d529b611b54f0dd4c1d1ad53b0782a2cdddb16` |
 | [operator/first-seating-texts.zip](https://www.alexanarch.org/files/AXN-0C55/operator/first-seating-texts.zip) | the forty first-seated texts and descriptions the introductions are attested from | 1,008,594 | `c0914ed9ec7d84aa17acb0f85010f1bb92053e0c51e47817c37850dca0d48e80` |
@@ -98,10 +300,11 @@ A machine reading this record takes the framework's identity, invariants and mak
 | [reviews/chatgpt-kernel-proposal.txt](https://www.alexanarch.org/files/AXN-0C55/reviews/chatgpt-kernel-proposal.txt) | ChatGPT's proposal of a framework kernel, evaluated in EA-HK-FRAME-01 §6 | 23,030 | `009cb512d2abf1a51839efd39f4572e7d1a7a05b43483a06f563f59fe95bcd75` |
 | [reviews/deepseek-reading-intermediate-build.txt](https://www.alexanarch.org/files/AXN-0C55/reviews/deepseek-reading-intermediate-build.txt) | DeepSeek's reading of the build between v0.1 and v0.2 | 6,196 | `aa4cf47a826d5e68a7531f68156de48a71b40fdc68a207243c5dfaefa0c01293` |
 | [reviews/chatgpt-review-of-v0.2.txt](https://www.alexanarch.org/files/AXN-0C55/reviews/chatgpt-review-of-v0.2.txt) | ChatGPT's review of v0.2, answered in EA-HK-FRAME-01 §6.4 | 2,714 | `2cef40c23e69dd3aece7d5bf4ab6ba81f6ca18bea82f6bbdd6914efe53787819` |
+| [operator/v12-staging.json](https://www.alexanarch.org/files/AXN-0C55/operator/v12-staging.json) | the records search of 2026-11-10 with the author's rulings, as staged before this version (v1.2) | 13,501 | `c36b595f1825ff9a6f1cfca99dbae8688447a6a9e02b6f2a080f776abe727ed7` |
 
 ---
 
-## Socrates as Orthonym — The Framework Map: The Heteronymic Configuration Read Backwards, from the Self-Dividing Maker to the Orthonym (EA-MPAI-ORTHONYM-01 v1.1)
+## Socrates as Orthonym — The Framework Map: The Heteronymic Configuration Read Backwards, from the Self-Dividing Maker to the Orthonym (EA-MPAI-ORTHONYM-01 v1.2)
 
 **Type:** Framework map and inspection packet: Metadata Packet for AI Indexing (MPAI v2.0, #1677), written in the form of the archive's descriptions of method, locations, organization and contents (#1684, #1687, #1694, #1702). Filed under the Socrates as Orthonym framework (#123).
 
@@ -188,6 +391,18 @@ Each entry in §7 gives the record's number, date and title; its body (I interpr
 ### 7. The map
 
 The strata run from the latest to the earliest. Dates are deposit dates.
+
+#### 7.0 The records search of 10 November 2026
+
+**What this stratum establishes.** Records that add evidence or are interpretively or methodologically load-bearing for the framework, found by a search of the registry read by title on 10 November 2026 and entered at the author's rulings (18:20, 18:45). Their substance is carried by their own records; the kernel lists them in stratum S0 with their bodies.
+
+- **#136** [The Chaerephon Problem: Heteronymy as Symbolon — Authorial Law, the Unbounded Configuration, and Propagation by Cascading Philological Failure](https://www.alexanarch.org/s/records/136/) (2026-05-28; Lee Sharks) · The Chaerephon Problem: Heteronymy as Symbolon, the companion paper to #123; documentary separateness as the first thing a mature heteronymic construction produces.
+- **#938** [EA-BEARING-01 v0.2: The Bearing Cost Principle and the Socratic Prior](https://www.alexanarch.org/s/records/938/) (2026-07-01; Lee Sharks) · The Bearing Cost Principle and the Socratic Prior: the Socratic Prior as a uniform reception discipline.
+- **#1560** [EA-CORPORA-05 — The Fifth Seating: Browning, Pound, Pessoa, and the Constructed Voice at Three Stages](https://www.alexanarch.org/s/records/1560/) (2026-08-29; Sharks, Lee) · the fifth seating: Browning, Pound, Pessoa, the constructed voice at three stages; calibration for the orthonym concept.
+- **#1561** [Erratum to EA-CORPORA-05: The Hold-Out Is Analytical, Not Archival — Seating the Pessoa Orthonym (corrects #1560)](https://www.alexanarch.org/s/records/1561/) (2026-08-29; Sharks, Lee) · the erratum seating the Pessoa orthonym: the hold-out analytical, not archival.
+- **#1641** [EA-CORPORA-16 — The Sixteenth Seating: Apollonius and Hesiod, Stored for the Distance Class and Gathered Here](https://www.alexanarch.org/s/records/1641/) (2026-09-27; Sharks, Lee) · the sixteenth seating: Apollonius and Hesiod, stored for Round 33 of the authorship investigation; v1.1 cites the series' other seatings.
+- **#752** [Sappho as Initiatory Figure in the Platonic Mysteries: Scholarly Grounding and Literature Review](https://www.alexanarch.org/s/records/752/) (2026-05-23; Johannes Sigil) · Sappho in the Platonic mysteries: a join to the Tenth Muse kernel.
+- **#346** [The Socratic Vow of Logos as Salvation: A Full Preservation of the Original Input, Interpretation, and Complete Development](https://www.alexanarch.org/s/records/346/) (2026-01-19; The Witness; Jack Feist, Johannes Sigil, and Orin Trace (supporting operators); Lee Sharks / NH-OS) · The Socratic Vow of Logos as Salvation: a join to the Historical Logos kernel.
 
 #### 7.1 The latest standing: reception history and the syllogizing runs (2026-10-01 to 2026-11-08)
 

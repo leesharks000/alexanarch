@@ -50,7 +50,7 @@ for ax, es in by_axis.items():
         w = CL[e["warrant"].split(":", 1)[1]]; order_ok &= w["target"]["record"] == e["object"]
     det[ax] = [f"{e['date']} {e['object']} {e['state']}" for e in es]
 T("T7 states ordered and bound", order_ok, det)
-joins = K["topology"]["joins"]; hl = {e["source"] for e in G["edges"] if e["relation"] == "joins" and "historical-logos" in e["target"]}
+joins = K["topology"]["joins"]; JT = K["topology"].get("join_targets") or ["historical-logos"]; hl = {e["source"] for e in G["edges"] if e["relation"] == "joins" and any(j in e["target"] for j in JT)}
 miss = [j for j in joins if (j if isinstance(j, str) else f"rec:{j}") not in hl]
 T("T8 joins edged to the Historical Logos", not miss, f"{len(joins)} joins; missing: {miss}")
 uc = [x["slug"] for x in G["@graph"] if x.get("@type") == "Capture" and x["slug"] not in CAP]

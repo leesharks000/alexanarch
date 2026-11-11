@@ -1,7 +1,7 @@
 id: EA-HK-HISTLOGOS-01
-version: '1.1'
-built: '2026-11-09'
-status: DEPOSITED 2026-11-09 (#1757, AXN position 0C62); v1.1 reissued in place the same day
+version: '1.2'
+built: '2026-11-10'
+status: DEPOSITED 2026-11-09 (#1757, AXN position 0C62); v1.1 reissued in place the same day; v1.2 reissued in place 2026-11-10
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 title: 'The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced'
 creators:
@@ -65,6 +65,12 @@ invariants:
   state.
 topology:
   strata_from_latest:
+  - id: S0-records-search-v12
+    label: The records search of 10 November 2026, and In the Midst of the Seven (#1758)
+    records:
+    - 1758
+    - 1503
+    - 1505
   - id: S1-genealogy-contested
     label: 'The genealogy contested and the erasures audited: the jealousy made, the count embrittled, Revelation''s direction priced (November)'
     records:
@@ -825,7 +831,7 @@ litmus:
     as the source of a record's claim.
   dependency_chain: The chain stands on conventional dating (#1484 §VIII); the operator without Revelation (#1494); the maker axis on the texts,
     the external record unadjudicated (#1576).
-  topology: 'Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): five strata, eleven stations in order, the lives, five bodies in
+  topology: 'Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): seven strata, eleven stations in order, the lives, five bodies in
     three rings, states on three axes.'
 traversal_instruction: This kernel is an index. A reader answering a question about the Historical Logos reads the kernel to find the records,
   then reads the records at the moves the kernel names (04-arguments.jsonl gives each move's record, section and verbatim text) and cites the
@@ -939,7 +945,10 @@ argument_layer:
   moves: 4306
   edges: 3811
   records_with_moves: 43
-  records_without_moves: []
+  records_without_moves:
+  - 1503
+  - 1505
+  - 1758
   by_kind:
     test: 129
     method: 505
@@ -1528,10 +1537,10 @@ erasure_by_station:
   - claim:hl-1217-per
   - claim:hl-1217-autopsy
   - arg:a1217-per-100
-version_note: 'v1.1 (2026-11-09, reissue in place, at the author''s direction 15:55–15:59): the method by which the framework establishes operational
-  transmission, five instruments read from their records (construction under fixed transforms; blind reconstruction; frozen operators and the
-  append-only ledger; the suppression signature; measurement at corpus scale), each with controls, results at status and recorded losses; Counterfeit
-  Orthodoxies joined, #978 the current state, #674 the prior, #65''s seating carried as data; the rival''s settlement step D5 and the flag SETTLEMENT_AS_CORPUS;
+version_note: 'v1.1 (2026-11-09, draft, at the author''s direction 15:55–15:59): the method by which the framework establishes operational transmission,
+  five instruments read from their records (construction under fixed transforms; blind reconstruction; frozen operators and the append-only ledger;
+  the suppression signature; measurement at corpus scale), each with controls, results at status and recorded losses; Counterfeit Orthodoxies
+  joined, #978 the current state, #674 the prior, #65''s seating carried as data; the rival''s settlement step D5 and the flag SETTLEMENT_AS_CORPUS;
   at the review of the v1.1 draft (16:55): M-D1 restored to #1576''s four propositions, the several-maker accounts stated with their costs, D5
   in four objects with 367 CE dating one collection''s boundary (Athanasius and Irenaeus fetched), the flag raised on the inference, the method
   set out by bridge with controls run and specified, the semantic challenges. v1.0 (2026-11-09, deposit): v0.3 (2026-11-09): at the review of
@@ -2127,9 +2136,75 @@ reissue_history:
   date: '2026-11-09'
   deposit: 1757
   note: deposited after v0.1–v0.3 the same day
-- version: '1.1'
-  date: '2026-11-09'
-  deposit: 1757
-  note: 'reissued in place: the method layer (five instruments, 15 records joined, read in full by parallel readers, 1688 moves verbatim), the
-    Counterfeit Orthodoxies join, rival step D5, SETTLEMENT_AS_CORPUS; revised at the review of the draft: M-D1, the several-maker accounts, D5''s
-    four objects, the method by bridge'
+records_search_v12:
+  date: '2026-11-10'
+  rule: Additive. Material already in a kernel stays (18:45). New records enter as evidence where they add evidence or are interpretively or methodologically
+    load-bearing; speculative or visionary records are pointed to as related work and their substance is not extended into the frame on this pass
+    (18:20, 18:45). Earlier versions and duplicate witnesses go to the kernel's history, resolved to their record of standing.
+  rulings:
+  - at: 2026-11-10 18:03
+    text: im just checking we actually gathered up all the revelation evidence... is this one represented? https://www.alexanarch.org/s/records/1418/
+  - at: 2026-11-10 18:14
+    text: a more careful records search first... read by title
+  - at: 2026-11-10 18:20
+    text: adopted... for inclusion as evidence, we focus on ones that add evidence... more speculative or mystical - pearl as white stone, space
+      arks, etc - we can point to as related work but their substance should not be represented in the holographic frame
+  - at: 2026-11-10 18:45
+    text: we dont need to remove material already there. speculative is fine - im just not wanting to substantially extend that on this pass.
+      id like to do the same more thorough records search for evidence-bearing or interpretively or methodologically load-bearing components for
+      socrates as orthonym and sappho, too. and the philo component - philo says it outloud is the title. and related work. its a critical join,
+      where you have someone with what seems to be the sappho transform operative in his work also directly naming the logos jesus - its not a
+      small step in the genetic reading.
+  - at: 2026-11-10 18:56
+    text: lets save our work so far... in fact, lets incorporate that work here into each without yet versioning, because we're going to fix up,
+      flesh out, connect to external scholarship, and deposit the philo piece before versioning the frames, and the updated piece will go into
+      the rev first frame. its vital connective ligature, yes?
+  - at: 2026-11-10 20:48
+    text: lets address, deposit, and turn to incorporating it into rev first and versioning all four holographic frames
+  evidence:
+    stratum: stratum:S0-records-search-v12
+    records:
+    - record: rec:1758
+      deposit: 1758
+      axn: AXN:0C67.GENERATIVE.📖🜁⏹️🔥🌗🦋
+      title: 'In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.0)'
+      status: ACTIVE
+      sha256: 41a0f710067cac6d66c2aecab958929b94d68cc29d291129e404accc7c0e55c6
+      note: 'In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.0), the Philo piece
+        of the search, deposited 2026-11-10. the Philo piece, once deposited: the home of the join, edged to Revelation First (rung VI) and to
+        the Tenth Muse.'
+    - record: rec:1505
+      deposit: 1505
+      axn: AXN:0614.DATASET.🛸🙏🕐🔜📎💧
+      title: EA-CORPORA-01/07 — Philo of Alexandria, Opera (First1K Cohn–Wendland), Seated and Verified
+      status: ACTIVE
+      sha256: 5eb362f64711461ab32ba0a34405666444011f1147e22bfb25b1271c0c635c53
+      note: 'seat: Philo, Opera (Cohn–Wendland).'
+    - record: rec:1503
+      deposit: 1503
+      axn: AXN:0612.DATASET.♣️☿⛳♻️🍀🌕
+      title: EA-CORPORA-01/05 — The Septuagint of Swete, Seated and Verified
+      status: ACTIVE
+      sha256: 83a254fe7404bcb861f99543c91b0090b7f302632e821924285aa2af37152f91
+      note: 'seat: the Septuagint of Swete (Zechariah 6:11–12).'
+    argument_layer: these records enter the kernel without moves at this version; their moves are owed to a reading of each record in full (04-arguments.jsonl
+      lists them under records_without_moves)
+  related_work: []
+  related_work_rule: pointed to; their substance is not extended into the frame on this pass (18:20, 18:45)
+  history: []
+  joins:
+  - record: rec:1755
+    deposit: 1755
+    axn: AXN:0C5F.MPAI.🕗🪧🪄🟢🔼🃏
+    title: 'And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.1)'
+    status: ACTIVE
+    sha256: 694d3ec4d48e0195284a2d68be4882f35fecb5e9df058547c4e656eb8d14c235
+    note: Revelation First, rung VI
+  - record: rec:1756
+    deposit: 1756
+    axn: AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙
+    title: 'The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)'
+    status: ACTIVE
+    sha256: 625f3eeb176b790ba699cc030a85fd989f9c567590a69261ad32e8e723d7e677
+    note: the Tenth Muse
+  flags: []

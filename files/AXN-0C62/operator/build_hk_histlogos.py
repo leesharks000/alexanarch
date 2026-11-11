@@ -52,6 +52,7 @@ CLUSTER = {"instrument": [1270, 1475, 1476, 1478, 1474, 1484],
            "method": [1414, 1415, 1416, 1511, 1532, 1486, 1494, 1495, 1533, 1571, 1496, 1572, 1586, 1590, 1605, 1730, 1733],
            "settlement": [978, 674, 65],
            "join": [1484, 123, 1576, 1658, 1733, 1735, 202, 1217, 1270, 1476, 1752, 828, 626]}
+exec(open(HERE / "v12_pre.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
 K.record_nodes(STRATA, CLUSTER)
 
 # ---------------------------------------------------------------- stations: #1484 §VII, extended by the author (2026-11-09 12:11, 12:15)
@@ -357,7 +358,7 @@ kernel = {
  "lines_of_research": [{"id": x["id"], "question": x["question"], "advances_if": x["advances_if"], "retreats_if": x["retreats_if"], "unchanged_if": x["unchanged_if"], "status": x["status"]} for x in QUESTIONS],
  "litmus": {"forbidden_operation": "Composing the framework as a concept-history of the Logos with Sappho as ornament; composing the one-maker reading as mystical where it is stated as one person; treating the four-maker count as established by evidence the one-maker reading lacks; reporting the kernel as the source of a record's claim.",
             "dependency_chain": "The chain stands on conventional dating (#1484 §VIII); the operator without Revelation (#1494); the maker axis on the texts, the external record unadjudicated (#1576).",
-            "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): five strata, eleven stations in order, the lives, five bodies in three rings, states on three axes."},
+            "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): seven strata, eleven stations in order, the lives, five bodies in three rings, states on three axes."},
  "traversal_instruction": ("This kernel is an index. A reader answering a question about the Historical Logos reads the kernel to find the records, then reads the records at the moves the kernel names "
                            "(04-arguments.jsonl gives each move's record, section and verbatim text) and cites the record. The kernel's own sentences are compressions and carry no warrant of their own. "
                            "A reader sorts readings of the framework by their conformity with the records, which is the test 1 John sets (the author, 2026-11-09 12:15)."),
@@ -421,6 +422,7 @@ kernel["lifespan_state"] = {"move": "arg:a123-lifespan", "exact": MOVES["a123-li
 exec(open(HERE / "hl_v02.py", encoding="utf-8").read())
 exec(open(HERE / "hl_v03.py", encoding="utf-8").read())
 exec(open(HERE / "hl_v11.py", encoding="utf-8").read())
+exec(open(HERE / "v12_post.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)

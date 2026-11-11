@@ -1,14 +1,14 @@
 {
  "kernel": "EA-HK-TENTHMUSE-01",
- "version": "1.1",
+ "version": "1.2",
  "structural_tests": {
   "T1 records resolve": {
    "pass": true,
-   "detail": "35 records, 0 surface pages; stale: []"
+   "detail": "51 records, 0 surface pages; stale: []"
   },
   "T2 quotations bind": {
    "pass": true,
-   "detail": "40 claims; unbound: []"
+   "detail": "43 claims; unbound: []"
   },
   "T3 relations in policy": {
    "pass": true,
@@ -64,7 +64,7 @@
   },
   "T14 endpoints declared": {
    "pass": true,
-   "detail": "117 edges; undeclared: []"
+   "detail": "149 edges; undeclared: []"
   },
   "T15 lines of research posed and bounded": {
    "pass": true,
@@ -83,15 +83,15 @@
   "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
    "pass": true,
    "detail": {
-    "edges": 117,
-    "nodes": 114,
+    "edges": 149,
+    "nodes": 134,
     "failed": []
    }
   },
   "T20 every move verbatim in its record, at the record's current hash": {
    "pass": true,
    "detail": {
-    "moves": 1914,
+    "moves": 2277,
     "not_verbatim": [],
     "hash_stale": []
    }
@@ -99,7 +99,7 @@
   "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
    "pass": true,
    "detail": {
-    "edges": 1442,
+    "edges": 1715,
     "external": 1,
     "unresolved": [],
     "bad_relation": []

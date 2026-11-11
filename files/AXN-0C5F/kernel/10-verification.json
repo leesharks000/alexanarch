@@ -1,14 +1,14 @@
 {
  "kernel": "EA-HK-REVFIRST-01",
- "version": "1.1",
+ "version": "1.2",
  "structural_tests": {
   "T1 records resolve": {
    "pass": true,
-   "detail": "45 records, 7 surface pages; stale: []"
+   "detail": "52 records, 7 surface pages; stale: []"
   },
   "T2 quotations bind": {
    "pass": true,
-   "detail": "61 claims; unbound: []"
+   "detail": "66 claims; unbound: []"
   },
   "T3 relations in policy": {
    "pass": true,
@@ -24,7 +24,7 @@
     "D": 4,
     "C": 1,
     "G": 2,
-    "R": 3,
+    "R": 4,
     "H": 1
    }
   },
@@ -69,7 +69,7 @@
   },
   "T14 endpoints declared": {
    "pass": true,
-   "detail": "155 edges; undeclared: []"
+   "detail": "169 edges; undeclared: []"
   },
   "T15 lines of research posed and bounded": {
    "pass": true,
@@ -135,15 +135,15 @@
   "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
    "pass": true,
    "detail": {
-    "edges": 155,
-    "nodes": 160,
+    "edges": 169,
+    "nodes": 173,
     "failed": []
    }
   },
   "T20 every move verbatim in its record, at the record's current hash": {
    "pass": true,
    "detail": {
-    "moves": 2822,
+    "moves": 2882,
     "not_verbatim": [],
     "hash_stale": []
    }
@@ -151,7 +151,7 @@
   "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
    "pass": true,
    "detail": {
-    "edges": 2207,
+    "edges": 2283,
     "external": 0,
     "unresolved": [],
     "bad_relation": []

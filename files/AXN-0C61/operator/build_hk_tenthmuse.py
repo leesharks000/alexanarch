@@ -31,6 +31,7 @@ CLUSTER = {"text": [1476, 1478, 1484, 1508, 201, 1048, 1049, 436, 1310, 1738],
            "reader": [1270, 281, 283, 306, 313, 1645, 1646, 1548, 1475],
            "reception": [1748, 1749, 1752, 1532, 337],
            "join": [1484, 1493, 1494, 1495, 1496, 1497, 1486, 1509, 828, 1053, 1054, 626]}
+exec(open(HERE / "v12_pre.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
 K.record_nodes(STRATA, CLUSTER)
 
 SEATS = []
@@ -199,11 +200,11 @@ kernel = {
  "lines_of_research": [{"id": x["id"], "question": x["question"], "advances_if": x["advances_if"], "retreats_if": x["retreats_if"], "unchanged_if": x["unchanged_if"], "status": x["status"]} for x in QUESTIONS],
  "litmus": {"forbidden_operation": "Composing the framework as a jealousy lyric, a lament of the overwhelmed, or Sappho as an oral singer whose survival is others'; attributing the future reader to unnamed scholars (#1645 §3).",
             "dependency_chain": "The chain stands on conventional dating (#1484 §VIII); the operator stands without Revelation (#1494); the third seat stands as a question.",
-            "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): five strata, three clusters and the joins, four bodies in three rings, three seats, states on three axes."},
+            "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): six strata, three clusters and the joins, four bodies in three rings, three seats, states on three axes."},
  "acceptance": {"back_projection_yield_threshold": 0.85, "spec": "EA-HK-01 (#76) §VI Step 4; EA-HK-FRAME-01 (#1753)",
    "scopes": {"A": {"input": ["00-kernel.yaml", "01-ontology.yaml"], "must_survive": [
        "framework, seed, author, title and byline", "the claim: a written instrument of persistence", "the two open positions and the three seats, with Sappho in the third proposed and held as a line of research",
-       "five strata in order with their records", "three clusters and the joins with their edge to the Historical Logos", "four bodies with their rules, in three rings",
+       "six strata in order with their records", "three clusters and the joins with their edge to the Historical Logos", "four bodies with their rules, in three rings",
        "the states on the ending, reader and writer axes, with dates and records", "the corrections as original–correction pairs", "the rival stated at strength, both faces and the mechanism joining them, with its status on every body",
        "the symmetric ledger with its combination and rival-admission rules", "the author's statements, dated", "the lines of research"]},
      "B": {"input": ["00-kernel.yaml", "01-ontology.yaml", "02-graph.jsonld"], "must_survive": ["scope A", "every record placed in a body and a stratum", "every relation with its licensed dimension", "every endpoint declared", "provenance on every record"]}}}}
@@ -246,6 +247,7 @@ EARLIER = [a for a in ARGS if a["@id"].split(":", 1)[1] in EARLY_IDS]; assert le
 kernel["argument_layer"] = ARG_SUM
 kernel["rival_naming"] = {"current_name": "the current consensus reading", "declared": "the author, 2026-11-09 10:08 and 10:14 (author_statements)", "earlier_wording": [{"move": a["@id"], "record": a["record"], "exact": a["exact"], "status": "an earlier record's wording, kept as published; the current name is the current consensus reading"} for a in EARLIER], "dated_chain_moves": [a["@id"] for a in ARGS if a["record"] == "rec:1752" and a["@id"].split(":",1)[1] in ("a1752-no-ancient-joint", "a1752-horace", "a1752-hall-boileau", "a1752-spectator", "a1752-pearce", "a1752-hermann-refinxi", "a1752-welcker-no-trace", "a1752-mure", "a1752-heller-marcovich", "a1752-page-amend", "a1752-aio-traditional", "a1752-tenth-muse", "a1752-longinus-maker")]}
 kernel["invariants"].append("INV-8 The rival is named the current consensus reading and carried with its dates (rival_naming; the author, 2026-11-09 10:08, 10:14): available to the ancients and no consensus among them; formed in the eighteenth century, written into the text in 1816, consolidated in 1955. The earlier records' wording is kept as published and marked as their state.")
+exec(open(HERE / "v12_post.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)

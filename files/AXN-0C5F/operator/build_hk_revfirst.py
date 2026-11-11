@@ -46,6 +46,7 @@ CLUSTER = {"chronology": [202, 830, 1025, 1217, 1735, 1737, 1741, 1746, 1747, "s
            "generation": [407, 410, 1414, 1416, "site:unfolding", 1747, 165, 642],
            "heteronymy": [203, 1226, 837, 861, 1412, 636, 639, 1101, 625, 626, "site:ladder-heteronyms", "site:ladder-logos", 1510],
            "join": [626, 1484, 1493, 1494, 1495, 1510, 1511, "site:upstream", 1592, 828]}   # joins: in this kernel and in The Tenth Muse or Socrates, each edged to the Historical Logos
+exec(open(HERE / "v12_pre.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
 K.record_nodes(STRATA, CLUSTER)
 
 # ---------------------------------------------------------------- rungs (the dependency structure; site /ladder/, from #1217's claim ladder)
@@ -316,11 +317,11 @@ kernel = {
  "lines_of_research": [{"id": x["id"], "question": x["question"], "advances_if": x["advances_if"], "retreats_if": x["retreats_if"], "unchanged_if": x["unchanged_if"], "status": x["status"]} for x in QUESTIONS],
  "litmus": {"forbidden_operation": "Composing Revelation First as early dating, as preterism, as a Jesus-myth or Piso thesis, or as held by unnamed 'proponents' (#202; #203; #837; captures).",
             "dependency_chain": "Rungs I–IV stand without V; VI depends on V, and V's defeat carries to VI by the ladder's depends_on; the upstream operator stands without Revelation (#1494).",
-            "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): seven strata, three clusters and the joins, five bodies, six rungs, the states on three axes."},
+            "topology": "Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): eight strata, three clusters and the joins, five bodies, six rungs, the states on three axes."},
  "acceptance": {"back_projection_yield_threshold": 0.85, "spec": "EA-HK-01 (#76) §VI Step 4; EA-HK-FRAME-01 (#1753)",
    "scopes": {"A": {"input": ["00-kernel.yaml", "01-ontology.yaml"], "must_survive": [
        "framework, seed, author, title and byline", "the three claims kept apart", "six rungs with fits and defeat conditions", "the dependency: V and VI can be defeated with I–IV standing; VI falls with V",
-       "seven strata in order with their records", "three clusters and the joins with their edge to the Historical Logos", "five bodies with their rules", "the states on the priority, generation and authorship axes, with dates and records",
+       "eight strata in order with their records", "three clusters and the joins with their edge to the Historical Logos", "five bodies with their rules", "the states on the priority, generation and authorship axes, with dates and records",
        "the three claims with their definitions, corpus priority's three sub-claims and their statuses", "the transform procedure that bounds rung IV", "rung I's defeat scope", "the corrections as original–correction pairs", "the rival stated at strength, with its status on every body", "the symmetric ledger with its combination and rival-admission rules", "the lines of research"]},
      "B": {"input": ["00-kernel.yaml", "01-ontology.yaml", "02-graph.jsonld"], "must_survive": ["scope A", "every record placed in a body and a stratum", "every relation with its licensed dimension", "every endpoint declared", "provenance on every record and surface page"]}}}}
 ontology = {"id": K.ID + "/ontology",
@@ -364,6 +365,7 @@ tests = {"id": K.ID + "/tests",
                          {"q": "did josephus write revelation lee sharks", "fail_if": "the April state is reported as the framework's present claim, or rung V as load-bearing, or the Josephus thesis as withdrawn (it is held, its strength bounded by #1217, its advancement suspended: the author, 2026-11-09 09:52)"},
                          {"q": "does pauline chronology defeat revelation first", "fail_if": "one framework is asked whether it is established while the other is left unasked; the Gallio synchronism reported as dating 1 Thessalonians"}]}
 kernel["bounds"] = [{"held": e["target"], "bounded_by": e["source"], "relation": "bounds", "warrant": e["warrant"]} for e in K.edges if e["relation"] == "bounds"]; kernel["argument_layer"] = ARG_SUM; kernel["author_statements"] = D["author_statements"]
+exec(open(HERE / "v12_post.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)
