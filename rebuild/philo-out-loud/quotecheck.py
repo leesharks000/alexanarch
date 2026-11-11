@@ -10,7 +10,7 @@ def n(x):
     for a in ["᾿", "’", "'", "ʼ", "‘"]: x = x.replace(a, "'")
     return re.sub(r"\s+", " ", x)
 draft = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path(__file__).parent / "DRAFT-v0.1.md"
-seat = n("".join(f.read_text(encoding="utf-8") for f in [*C.glob("philo/text/*.txt"), *C.glob("lxx-swete/text/tlg046*"), *C.glob("lxx-swete/text/tlg004*"), C / "gnt-nestle1904/text/Rev.txt", C / "plato/text/tlg011-Συμπόσιον.txt", C / "plato/text/tlg012-Φαῖδρος.txt", C / "xenophon/text/tlg004-Symposium.txt",
+seat = n("".join(f.read_text(encoding="utf-8") for f in [*C.glob("philo/text/*.txt"), *C.glob("lxx-swete/text/tlg046*"), *C.glob("lxx-swete/text/tlg004*"), *C.glob("gnt-nestle1904/text/*.txt"), C / "plato/text/tlg011-Συμπόσιον.txt", C / "plato/text/tlg012-Φαῖδρος.txt", C / "xenophon/text/tlg004-Symposium.txt",
        C / "justin-dialogus/text/dialogus.txt", C / "eusebius-historia-ecclesiastica/text/historia-ecclesiastica.txt"]))
 def tei(path):
     """The Philo TEI with <note> elements (the editors' apparatus) dropped, sections joined by a space: the text layer interleaves
