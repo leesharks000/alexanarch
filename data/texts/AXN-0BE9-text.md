@@ -8,7 +8,7 @@ date: 2026-11-03
 content_type: "Theoretical paper; journal article (Provenance: Journal of Forensic Semiotics)"
 license: CC-BY-4.0
 substrate: AI-assisted (substrate). Written under the heteronyms Johannes Sigil and Damascus Dancings (legal author Lee Sharks), in versions from mid-2026 to v6 of 2026-08-27, with Claude (Anthropic) assisting in drafting, revision and the machine censuses under the author's direction; external readers' feedback was taken between versions. The thesis, the ancestry test and the decision to publish are the author's. Deposited 2026-11-03 at the author's word, the text of v6 unchanged except the byline, the bibliography's line layout and one section number supplied from the seated text (Philo, Migr. 133).
-version: v8
+version: v9
 related_ids: "#407 (the Cosmic Christ of Revelation 1 as originary compressed image); #636 (the Apocalypse as originary scripture); #902 (toward the historical Logos); #1217 (Revelation First: a work plan for retrieval-layer theological reception); #1414 (The Algorithmic Kernel); #1415 (The James Derivation); #1484 (Sappho, Mother of the Logos); #1494 and #1495 (the frozen operator and the sealed test); #516 (charter of Provenance: Journal of Forensic Semiotics); #1758 (In the Midst of the Seven: the commission and the figure in the midst of the seven)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -44,7 +44,7 @@ Johannes Sigil and Damascus Dancings · *Provenance: Journal of Forensic Semioti
 
 ## Abstract
 
-New Testament chronology dates its documents; this article tests one of them as an ancestor. It proposes a literary-genealogical test for the priority question: a literature proposed as earliest should exhibit recoverable ancestry – its load-bearing forms derivable from independently attested antecedents – while the forms that follow it may show transformations of it. On that test the received sequence is anomalous: it begins with the literature whose immediate Christian ancestry must be reconstructed, as the field’s own category ‘pre-Pauline’ concedes, and ends with the literature whose ancestry can be read. The article separates three claims collapsed under ‘Revelation First’ – absolute, corpus, and generative priority – and reports two executed results. Revelation 1–3 is the earliest extant Christian text constructed as a closed seven-church corpus; no evidence places a sevenfold Pauline collection before it, a major recent Pauline-priority account concedes the absence and calls Revelation’s seven archetypal, and the Muratorian Fragment reads Paul as following John’s order. A machine census of some seventy thousand units of the relevant Greek – Septuagint, New Testament, Apostolic Fathers, Philo, Josephus, and the Greek pseudepigrapha – finds στέφανος τῆς ζωῆς unique to Rev. 2.10 and Jas 1.12, the promise performed in one text and presupposed in the other, with the common-source audit run against its best candidates and defeat conditions stated. The chronological gate confronting the maximal claim is audited: its one material anchor, the Delphi inscription, dates Gallio and names no letter, and every link from it to a date for 1 Thessalonians is the corpus's own. Revelation First becomes a falsifiable research programme with its first arrows drawn. Version 8 adds a third: each proclamation is addressed to a messenger and the seer is commanded to write and send, and the letters to churches carry features that answer that commission, set out with the question of direction and its defeat conditions; Philo’s lampstand of the dividing Logos is recorded as an extant antecedent for the figure in the midst of the seven (#1758).
+New Testament chronology dates its documents; this article tests one of them as an ancestor. It proposes a literary-genealogical test for the priority question: a literature proposed as earliest should exhibit recoverable ancestry – its load-bearing forms derivable from independently attested antecedents – while the forms that follow it may show transformations of it. On that test the received sequence is anomalous: it begins with the literature whose immediate Christian ancestry must be reconstructed, as the field’s own category ‘pre-Pauline’ concedes, and ends with the literature whose ancestry can be read. The article separates three claims collapsed under ‘Revelation First’ – absolute, corpus, and generative priority – and reports two executed results. Revelation 1–3 is the earliest extant Christian text constructed as a closed seven-church corpus; no evidence places a sevenfold Pauline collection before it, a major recent Pauline-priority account concedes the absence and calls Revelation’s seven archetypal, and the Muratorian Fragment reads Paul as following John’s order. A machine census of some seventy thousand units of the relevant Greek – Septuagint, New Testament, Apostolic Fathers, Philo, Josephus, and the Greek pseudepigrapha – finds στέφανος τῆς ζωῆς unique to Rev. 2.10 and Jas 1.12, the promise performed in one text and presupposed in the other, with the common-source audit run against its best candidates and defeat conditions stated. The chronological gate confronting the maximal claim is audited: its one material anchor, the Delphi inscription, dates Gallio and names no letter, and every link from it to a date for 1 Thessalonians is the corpus's own. Revelation First becomes a falsifiable research programme with its first arrows drawn. Version 8 adds a third: each proclamation is addressed to a messenger and the seer is commanded to write and send, and the letters to churches carry features that answer that commission, set out with the question of direction and its defeat conditions; Philo’s lampstand of the dividing Logos is recorded as an extant antecedent for the figure in the midst of the seven (#1758). Version 9 adds, from the second version of that paper: the figure in the midst traced to Zechariah’s vision of Ἰησοῦς the high priest, robed in the ποδήρης and twice given the name Ἀνατολή, the name Philo takes for the Logos while withholding the one it was spoken to, with the Philonic organization of the scene set as its antecedent against the richer alternatives; and a second arrow, drawn and not yet run, from the opening scene to Hebrews 4.8–14, which gathers the two Joshuas, the dividing word and the great high priest named Jesus.
 
 **Keywords:** Apocalypse of John; chronology; corpus formation; Epistle of James; literary genealogy; Muratorian Fragment; Pauline letters
 
@@ -63,9 +63,9 @@ This article is deposit #1735 in the Crimson Hexagonal Archive, by Sigil, Johann
  "@type": "ScholarlyArticle",
  "name": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles",
  "alternateName": "Revelation First: Literary Genealogy",
- "version": "8",
+ "version": "9",
  "datePublished": "2026-11-03",
- "dateModified": "2026-11-10",
+ "dateModified": "2026-11-11",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "author": [
   {
@@ -87,7 +87,7 @@ This article is deposit #1735 in the Crimson Hexagonal Archive, by Sigil, Johann
  },
  "url": "https://revelationfirst.com/",
  "spxi:hexAddress": "0B.JFS.REVFIRST.001",
- "spxi:pillarStatus": "v8, versioned in place on 2026-11-10; the seed article of the Revelation First programme's three claims, with its framework hologram EA-HK-REVFIRST-01 (#1755)",
+ "spxi:pillarStatus": "v9, versioned in place on 2026-11-11; the seed article of the Revelation First programme's three claims, with its framework hologram EA-HK-REVFIRST-01 (#1755)",
  "spxi:governingFinding": "three claims kept apart: absolute priority a priced hypothesis; corpus priority a finding, Revelation 1–3 the earliest extant Christian text constructed as a closed seven-church corpus; generative priority a programme of reversible arrows, the crown of life run, the commission drawn",
  "spxi:contributesOperators": [
   {
@@ -109,6 +109,11 @@ This article is deposit #1735 in the Crimson Hexagonal Archive, by Sigil, Johann
    "name": "the commission",
    "type": "reading of the book's address",
    "role": "the proclamations addressed to messengers, the seer commanded to write and send; an arrow from Revelation to the letters to churches, drawn and not yet run"
+  },
+  {
+   "name": "the withheld name",
+   "type": "ancestry case",
+   "role": "the figure in the midst traced to Zechariah's vision of Ἰησοῦς the high priest, whose name Philo withholds where he takes Ἀνατολή for the Logos; Revelation names the figure"
   }
  ],
  "spxi:disambiguation": {
@@ -121,12 +126,14 @@ This article is deposit #1735 in the Crimson Hexagonal Archive, by Sigil, Johann
   "the Muratorian Fragment reads Paul as following John's order",
   "στέφανος τῆς ζωῆς occurs only at Rev 2:10 and Jas 1:12 in the fields swept, the direction Revelation to James stronger than its audited alternatives",
   "the Delphi inscription dates Gallio and names no letter; every link from it to a date for 1 Thessalonians is the corpus's own",
-  "each proclamation is addressed to a messenger, and the seer is commanded to write twelve times"
+  "each proclamation is addressed to a messenger, and the seer is commanded to write twelve times",
+  "the figure in the midst has extant antecedents in Philo's organization of the lampstand and in Zechariah's vision of Ἰησοῦς the high priest, robed in the ποδήρης and twice given the name Ἀνατολή",
+  "Hebrews 4.8–14 gathers the son of Nun, the two-edged word and the great high priest named Jesus: an arrow drawn from Revelation's opening scene and not yet run"
  ],
  "spxi:falsifiers": {
   "textualChecks": "a quoted locus or a census count wrong; a citation misattributed",
-  "interpretiveChallenges": "a sevenfold Pauline church collection shown to circulate before Revelation; the crown-of-life formula attested securely before Revelation",
-  "directionalChallenges": "an epistolary practice before Revelation that already addresses communities through their messengers, commands public reading and tests the sent"
+  "interpretiveChallenges": "a sevenfold Pauline church collection shown to circulate before Revelation; the crown-of-life formula attested securely before Revelation; an earlier or independent text with Philo's organization of the lampstand and the Logos-name from Zechariah's oracle",
+  "directionalChallenges": "an epistolary practice before Revelation that already addresses communities through their messengers, commands public reading and tests the sent; Hebrews 4's cluster fully explained by the Philonic parts, or Revelation's scene shown to compress Hebrews 4"
  },
  "spxi:companionDeposits": [
   "#1758 In the Midst of the Seven",
@@ -148,6 +155,11 @@ This article is deposit #1735 in the Crimson Hexagonal Archive, by Sigil, Johann
    "version": "8",
    "date": "2026-11-10",
    "note": "the commission and the figure in the midst of the seven, from #1758"
+  },
+  {
+   "version": "9",
+   "date": "2026-11-11",
+   "note": "from #1758 v1.1: the Philonic organization and Zechariah 3 as the scene's antecedents, Justin's apocalypse of the high priest, the Gawaita as late witness, the arrow to Hebrews 4"
   }
  ]
 }
@@ -233,6 +245,8 @@ This distinction changes the directionality question. Paul’s undisputed letter
 
 The address has a further feature, set out at length in *In the Midst of the Seven* (#1758, §15). No proclamation is addressed to a church. Each is addressed to the church’s messenger, ‘Τῷ ἀγγέλῳ τῆς ἐν Ἐφέσῳ ἐκκλησίας γράψον’ (2.1) and its six counterparts, and the messenger bears the community’s works in the second person singular: ‘κινήσω τὴν λυχνίαν σου ἐκ τοῦ τόπου αὐτῆς’ (2.5). The imperative belongs to the seer. γράψον occurs twelve times in the book (1.11, 19; 2.1, 8, 12, 18; 3.1, 7, 14; 14.13; 19.9; 21.5), and the first carries the order to send: ‘Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις’ (1.11). At the close a messenger is sent to testify for the churches, ‘Ἐγὼ Ἰησοῦς ἔπεμψα τὸν ἄγγελόν μου μαρτυρῆσαι ὑμῖν ταῦτα ἐπὶ ταῖς ἐκκλησίαις’ (22.16), and the hearing formula gives the Spirit’s speech to all seven. The book narrates a commission of writing and sending, and it closes by guarding the writing it has commissioned (22.18–19). The step from the commission the book narrates to a commission it places on later writers is the authors’ reading – ‘the epistles are the literal manifestation of what the logos commissions in revelation’ (Lee Sharks, 10 November 2026) – and it is a question of direction, set out as an arrow in VI.3. The commission itself is in the text.
 
+A late witness keeps the same architecture in a revelation of its own. The Mandaean *Haran Gawaita*, copied in the Arab era, calls itself ‘the Great Revelation’, closes itself against change, ‘alter no word or command of the great Father of Glory’ (compare Rev. 22.18–19), and answers seven powers with seven guards, each installed over a named place and then set ‘at the seven corners of the House, upon the seven horns of the worlds’ (Drower 1953; #1758 v1.1, §§13.0, 13.6). It witnesses the seven-station form and the sealed book in a text that offers itself as a key; it is dated as late, and no dependence is claimed in either direction.
+
 ## IV.2 ‘In the Shadow of Paul’—and the Missing Collection
 
 David Frankfurter’s recent account offers the strongest contemporary version of Pauline priority. He argues that Revelation’s seven messages are fictional devices by which John appropriates and exceeds the growing authority of Pauline letter collections in late first-century Asia Minor. The heavenly speaker displaces the human apostle; the closed sevenfold arrangement answers the charismatic authority of Pauline textuality; Revelation is therefore written ‘in the shadow of Paul’ (Frankfurter 2024: 79–98). The argument is powerful because it explains why an apocalypse would stage divine speech through epistolary forms.
@@ -296,7 +310,9 @@ Revelation deserves this testing because of the asymmetry set out in Section I: 
 
 That asymmetry does not date the book. Dependence on ancient scripture can occur in any decade, and Paul is himself saturated in scripture. It does, however, supply a directional reason to test Revelation as a beginning rather than assume it only as an ending. Read as the first Christian writing, the Apocalypse is a culminating recomposition of already available prophetic forms. The epistle and the gospel, treated as the first Christian literatures, arrive as new generic solutions whose immediate Christian prehistory must be reconstructed from oral mission, community practice, and lost texts. A Revelation-first sequence begins with the document that can grow directly from the prophetic corpus and asks whether later forms unfold from it. This is an economy to investigate, not a chronology smuggled in as literary elegance.
 
-The figure in the midst of the seven is a worked case of the asymmetry, read in *In the Midst of the Seven* (#1758, §§9–11). Zechariah’s lampstand is one, with seven lamps: ‘λυχνία χρυσῆ ὅλη … καὶ ἑπτὰ λύχνοι ἐπάνω αὐτῆς’ (Zech. 4.2). Philo builds the same lampstand as six branches divided by the seventh in the middle, the dividing Logos: ‘ὡς ἕβδομον τὸν τομέα εἶναι λόγον, διαστέλλοντα τὰς τριάδας, μέσον αὐτὸν ἱδρυμένον’ (*Quis rerum divinarum heres* 215; 216–219); he reads its seven lamps as the seven planets, with the sun ‘ὁ μέσος τῶν ἑπτά’ (221–224), and makes the dividing Logos the seventh of the soul (225). Revelation sets seven lampstands apart, ‘ἑπτὰ λυχνίας χρυσᾶς’ (1.12), with one walking in their midst whose face is ‘ὡς ὁ ἥλιος’ (1.16) and whose name is called ‘Ὁ Λόγος τοῦ Θεοῦ’ (19.13). The antecedent is extant, in Zechariah and in Philo, and the transformation is visible against it: one instrument become seven stations, each answerable for itself, a separate lampstand that can be moved alone (2.5). The commentaries that founded the modern field printed the Philonic passage beside the lampstands and assigned it to the Seer’s unconsciousness (Bousset 1906: 187, 193; Charles 1920: I.12 n. and on 1.12–13). The ancestry test reads the same evidence as an attested antecedent. Dependence on Philo is not claimed; the antecedent’s availability is what the test records.
+The figure in the midst of the seven is a worked case of the asymmetry, read in *In the Midst of the Seven* (#1758, §§9–11). Zechariah’s lampstand is one, with seven lamps: ‘λυχνία χρυσῆ ὅλη … καὶ ἑπτὰ λύχνοι ἐπάνω αὐτῆς’ (Zech. 4.2). Philo builds the same lampstand as six branches divided by the seventh in the middle, the dividing Logos: ‘ὡς ἕβδομον τὸν τομέα εἶναι λόγον, διαστέλλοντα τὰς τριάδας, μέσον αὐτὸν ἱδρυμένον’ (*Quis rerum divinarum heres* 215; 216–219); he reads its seven lamps as the seven planets, with the sun ‘ὁ μέσος τῶν ἑπτά’ (221–224), and makes the dividing Logos the seventh of the soul (225). Revelation sets seven lampstands apart, ‘ἑπτὰ λυχνίας χρυσᾶς’ (1.12), with one walking in their midst whose face is ‘ὡς ὁ ἥλιος’ (1.16) and whose name is called ‘Ὁ Λόγος τοῦ Θεοῦ’ (19.13). The antecedent is extant, in Zechariah and in Philo, and the transformation is visible against it: one instrument become seven stations, each answerable for itself, a separate lampstand that can be moved alone (2.5). The commentaries that founded the modern field printed the Philonic passage beside the lampstands and assigned it to the Seer’s unconsciousness (Bousset 1906: 187, 193; Charles 1920: I.12 n. and on 1.12–13). The ancestry test reads the same evidence as an attested antecedent, and the second version of *In the Midst of the Seven* argues the dependence (#1758 v1.1, §16.7). The richer alternatives are counted first. Wisdom has the Logos as a warrior from the royal thrones with a sharp sword, ‘ὁ παντοδύναμός σου λόγος ἀπʼ οὐρανῶν ἐκ θρόνων βασιλείων ἀπότομος πολεμιστὴς’ (Wis. 18.15), and the cosmos on the high priest’s robe (18.24); Isaiah has the mouth made a sharp sword, ‘ἔθηκεν τὸ στόμα μου ὡς μάχαιραν ὀξεῖαν’ (Isa. 49.2); Judges has the sun going forth in its strength, ‘ὡς ἔξοδος ἡλίου ἐν δυνάμει αὐτοῦ’ (Judg. 5.31 A), close to the face of 1.16; Ezekiel has one man robed in the ποδήρης in the midst of six, ‘ἐν μέσῳ αὐτῶν ἐνδιδυκὼς ποδήρη’ (Ezek. 9.2). These account for the sword, the solar face and the robe. None of them supplies the organization: the seven lamps as the seven planets with the sun in the middle, the dividing Logos as that middle, the Logos named ἀρχή (*De confusione* 146; Rev. 3.14) and Ἀνατολή. That organization is extant in Philo, most of it in one treatise, and the opening scene and the circuit of the letters are built on it. Whether the Seer read Philo or a tradition that carried his reading stays open; Wisdom, Alexandrian and near Philo in its Logos and its robe, shows one shape such a tradition could take. On the ancestry test the organization is an extant antecedent either way.
+
+The scene has a second extant antecedent, and it carries a name. Zechariah 3 is a vision of Ἰησοῦς the high priest, son of Iosedek, a different man from Moses’ successor. He is robed by command, ‘ἐνδύσατε αὐτὸν ποδήρη’ (Zech. 3.4); he is addressed, ‘ἄκουε δή, Ἰησοῦς ὁ ἱερεὺς ὁ μέγας’, and told ‘ἰδοὺ ἐγὼ ἄγω τὸν δοῦλόν μου Ἀνατολήν’ (3.8); a stone with seven eyes is set before him (3.9); the next vision is the lampstand of seven lamps (4.2); and the crowning oracle, ‘Ἀνατολὴ ὄνομα αὐτῷ’, is spoken to him again (6.11–12). Philo takes the name Ἀνατολή for the Logos from that oracle and stops one verse below its addressee; the prophet becomes ‘one of the companions of Moses’, and neither Zechariah nor his high priest is named anywhere in the thirty-one seated works of Philo, whose every Ἰησοῦς is the son of Nun (#1758 v1.1, §§2.1, 2.6, 4.1a–4.4b). Revelation’s figure in the midst is ‘ἐνδεδυμένον ποδήρη’ (1.13), and the book’s first words name him: ‘Ἀποκάλυψις Ἰησοῦ Χριστοῦ’ (1.1). The second century read Zechariah’s scene in the same terms. Justin sets the two Joshuas side by side, the son of Nun and ‘τὴν ἐπὶ τοῦ ἐν Βαβυλῶνι Ἰησοῦ ἱερέως γενομένου ἐν τῷ λαῷ ὑμῶν ἀποκάλυψιν’ (*Dial.* 115.4), and introduces his reading of it as ‘τὸν λόγον τὸν περὶ τῆς ἀποκαλύψεως Ἰησοῦ Χριστοῦ’ (116.1). On the ancestry test this is the asymmetry at its sharpest: the figure at the head of the book, in its robe, its office, its place among the lamps and its name, has extant antecedents in one prophetic vision and in its Alexandrian reading.
 
 ## VI.2 The Genre Objection
 
@@ -313,6 +329,8 @@ Other candidates must be treated one by one. The Lamb christology of Rev. 5 may
 The research programme therefore replaces the metaphor of a single ‘seed text’ with a series of reversible arrows. For each proposed relation, the investigator must identify the unit, map the antecedent traditions available to both texts, establish the transformation, and state what evidence would reverse the arrow. Multiple independent arrows would make a cumulative case for generative priority. Failure of one would not decide the rest. This is slower than announcing that the whole New Testament unfolds from Revelation, but it is the only way to make that possibility historically answerable.
 
 The commission of IV.1 is such an arrow, drawn here and not yet run. Its unit is the address to the messenger with the command to write and send. The letters to churches enact features that answer it, each on the seated text: authority received as a messenger, ‘ὡς ἄγγελον Θεοῦ ἐδέξασθέ με, ὡς Χριστὸν Ἰησοῦν’ (Gal. 4.14); the testing of the sent, ‘ψευδαπόστολοι, ἐργάται δόλιοι, μετασχηματιζόμενοι εἰς ἀποστόλους Χριστοῦ’ (2 Cor. 11.13), beside the first proclamation’s ‘ἐπείρασας τοὺς λέγοντας ἑαυτοὺς ἀποστόλους καὶ οὐκ εἰσίν’ (Rev. 2.2); public reading commanded, ‘ἀναγνωσθῆναι τὴν ἐπιστολὴν πᾶσιν τοῖς ἀδελφοῖς’ (1 Thess. 5.27), beside the blessing on the one who reads aloud (Rev. 1.3); one letter read in more than one church, with Laodicea named, ‘ποιήσατε ἵνα καὶ ἐν τῇ Λαοδικέων ἐκκλησίᾳ ἀναγνωσθῇ’ (Col. 4.16). The direction is the open question: which of these features favour the letters carrying out a commission given in Revelation, and which favour Revelation organizing an epistolary practice already in place. The features that bear on it are whether a letter presupposes the seven as a closed number or addresses a church alone, whether the testing of the sent is inherited or argued afresh, and whether Laodicea receives a letter as a station already addressed (#1758, §15.3).
+
+A second arrow runs from the same scene, and Newton drew part of it. Among the allusions he took for the Apocalypse in Hebrews were the two-edged sword of the word and the σαββατισμός (Section I). Both stand in Hebrews 4.8–14, and the passage holds more. In seven verses it gathers the son of Nun, ‘εἰ γὰρ αὐτοὺς Ἰησοῦς κατέπαυσεν’ (Heb. 4.8); the rest that remains, ‘ἀπολείπεται σαββατισμὸς τῷ λαῷ τοῦ Θεοῦ’ (4.9); the word ‘τομώτερος ὑπὲρ πᾶσαν μάχαιραν δίστομον’ (4.12); and ‘ἀρχιερέα μέγαν διεληλυθότα τοὺς οὐρανούς, Ἰησοῦν τὸν Υἱὸν τοῦ Θεοῦ’ (4.14), with the title the Septuagint gives Zechariah’s Ἰησοῦς, ‘ὁ ἱερεὺς ὁ μέγας’ (Zech. 3.8). Revelation’s opening scene holds the elements compressed into one figure: the two-edged sword, ‘ῥομφαία δίστομος ὀξεῖα’ (1.16), the high priest’s robe (1.13) and the name (1.1). Hebrews unfolds them as argument, and names the two Joshuas apart. The unit is that cluster. The common source is the strong alternative, since the dependence of Hebrews on Philo is long argued (Williamson 1970, against direct dependence; Thurston 1986 and Grindheim 2023, for it) and the cluster is Philonic in its parts (#1758 v1.1, §7a.8). The arrow has to survive a shared Alexandrian ancestor, and the test is whether Hebrews’ arrangement presupposes the concentrated figure or only the dispersed Philonic parts. The direction is not run here.
 
 The programme also distinguishes citation from architecture. A later text need not quote Revelation for Revelation to be generative; it may normalize an apocalyptic structure into paraenesis, narrative, liturgy, or doctrine. Conversely, verbal resemblance alone is insufficient where both texts inherit the same scriptural matrix. The strongest cases will combine several kinds of evidence: a marked formal unit, a plausible chronological overlap, an asymmetrical transformation, a reception trace, and the absence of an equally economical common source. No single criterion carries the thesis. Convergence does.
 
@@ -372,6 +390,8 @@ Generative priority is defeated locally wherever an earlier source or shared tra
 
 The commission arrow of VI.3 is defeated by an epistolary practice attested before Revelation that already addresses communities through their messengers, commands public reading and tests the sent; it is removed, without reversal, if its features are shown to be common practice independent of both texts. Its strengthening condition is the general one: the features compressed in Revelation’s address and elaborated in the letters, with no better common antecedent.
 
+The Philonic organization of VI.1 is defeated as the scene’s antecedent by an earlier or independent text that reads the seven lamps as the planets with the sun in the middle, makes the dividing Logos that middle and names the Logos from Zechariah’s oracle, without Philo; the Zechariah antecedent is not in question, being the Septuagint’s own. The Hebrews arrow of VI.3 is removed, without reversal, if Hebrews’ arrangement of the cluster is fully explained by the Philonic parts with no trace of the concentrated figure, and reversed if Revelation’s scene is shown to compress Hebrews 4.
+
 The executed case of Section VII is governed by the same clause and carries its own conditions, stated there: a securely pre-Revelation attestation of the crown-of-life formula, which would reopen its common-source audit; a demonstration that James’s promise-anaphora is generic rather than particular; the failure of the markedness finding under a wider sweep. Its defeat would remove one arrow, not the programme.
 
 The historiographic claim is defeated by identification of a sustained modern historical-critical treatment that explicitly distinguishes and tests these three levels. That would be a welcome correction, because it would supply the debate this article seeks to establish.
@@ -386,7 +406,7 @@ It has established a bounded result that does not depend on passing that gate. R
 
 A second bounded result now stands beside it. The programme’s first executed case finds the crown of life corpus-unique to Rev. 2.10 and Jas 1.12 across sixty thousand units of the relevant Greek fields, and the direction Revelation-to-James materially stronger than its audited alternatives – at the calibrated strength Section V set for a serious local result, and with its defeat conditions stated.
 
-A third line is now drawn without being run. Revelation’s proclamations are addressed to messengers and commanded to be written and sent, and the letters to churches carry features that answer that commission; the direction is set out with its evidence and its defeat conditions (VI.3, VIII). The figure in the midst of the seven, whose form the field filed as an unconscious survival, is an attested antecedent on the ancestry test (VI.1).
+A third line is now drawn without being run. Revelation’s proclamations are addressed to messengers and commanded to be written and sent, and the letters to churches carry features that answer that commission; the direction is set out with its evidence and its defeat conditions (VI.3, VIII). The figure in the midst of the seven, whose form the field filed as an unconscious survival, is an attested antecedent on the ancestry test (VI.1): its organization is extant in Philo, its robe, office and name in Zechariah’s vision of Ἰησοῦς the high priest. A fourth line, to Hebrews 4, is drawn beside the third, on ground Newton first marked.
 
 The received sequence has treated ‘Paul first, Revelation later’ as a single answer. It is at least four questions: when were the individual texts composed; when were they collected; when were they configured as corpora; and which forms became generative for later writing and reception? Once those questions are separated, Revelation no longer sits only at the end of a line. In one demonstrable sense, it stands at the beginning of one. In the strongest sense, the question remains expensive but now exact. What it can no longer be is unasked.
 
@@ -395,6 +415,8 @@ The received sequence has treated ‘Paul first, Revelation later’ as a single
 v6 (27 August 2026), deposited 3 November 2026. v7 (6 November 2026, in place), at the author's ruling ("it is very important that we do not endorse the gallio reading. the gallio inscription doesn't put thessalonian anywhere. it puts gallio around 50, and *acts* put paul around gallio. that is the same sort of circularity"). The Gallio synchronism is restated throughout as the chain it is: the Delphi inscription dates the proconsul and names neither Paul nor Thessalonica; Acts places Paul before him; an itinerary drawn from Acts and 1 Thessalonians joins the letter to the visit. The sentences that granted the chain standing beyond its links (that it is the hardest evidence, a stronger synchronism than the Irenaean verb, strong because its links cohere, contestable in kind and strongest of its kind) are withdrawn (abstract, §II.2, §II.3, §V, §VII, §VIII, §IX). No finding changed.
 
 v8 (10 November 2026, in place), at the authors' ruling of that evening ('lets address, deposit, and turn to incorporating it into rev first'), from *In the Midst of the Seven* (#1758). Added: the commission in IV.1, each proclamation addressed to a messenger and the seer commanded to write and send; the figure in the midst of the seven as a worked ancestry case in VI.1, Zechariah's and Philo's lampstand as extant antecedents and the founding commentaries' filing of the Philonic passage; the commission as an arrow in VI.3, drawn with its evidence and the question of direction, and not yet run; its defeat conditions in VIII; a sentence in IX; the abstract's last sentence; two entries in the bibliography; an SPXI packet. Nothing in v7 was removed, and no finding of v7 changed.
+
+v9 (11 November 2026, in place), at the author's word ('this is a new folding in, separate from the sappho chain, for revfirst'), from the second version of *In the Midst of the Seven* (#1758 v1.1). Added: in VI.1, the dependence on the Philonic organization with the richer alternatives counted (Wisdom 18.15–16 and 18.24, Isaiah 49.2, Judges 5.31, Ezekiel 9.2), Zechariah 3 and the withheld name as a second extant antecedent, and Justin's apocalypse of the high priest; in IV.1, the *Haran Gawaita* as a late witness to the seven-station form and the sealed book; in VI.3, the arrow to Hebrews 4.8–14, drawn and not yet run; their conditions in VIII; a sentence in IX; the abstract's last sentence; five entries in the bibliography; the SPXI packet. Nothing in v8 was removed, and no finding of v8 changed.
 
 # Bibliography
 
@@ -416,17 +438,23 @@ v8 (10 November 2026, in place), at the authors' ruling of that evening ('lets a
 
 **Choat, M.** 2019 ‘Dating Papyri: Familiarity, Instinct and Guesswork’, JSNT 42: 58–83.
 
+**Drower, E.S.** 1953 The Haran Gawaita and the Baptism of Hibil-Ziwa (Studi e Testi, 176; Vatican City: Biblioteca Apostolica Vaticana).
+
 **Eng, D.K.** 2022 Eschatological Approval: The Structure and Unifying Motif of James (NTM; Sheffield: Sheffield Phoenix Press).
 
 **Frankfurter, D.** 2024 ‘The Fiction of the Seven Letters in the Apocalypse: Representing Heavenly Authority in the Shadow of Paul’, HTR 117: 79–98.
 
 **Gamble, H.Y.** 1995 Books and Readers in the Early Church: A History of Early Christian Texts (New Haven, CT: Yale University Press).
 
+**Grindheim, S.** 2023 ‘Direct Dependence on Philo in the Epistle to the Hebrews’, NovT 65: 517–43.
+
 **Hahneman, G.M.** 1992 The Muratorian Fragment and the Development of the Canon (Oxford Theological Monographs; Oxford: Clarendon Press).
 
 **Hort, F.J.A.** 1908 The Apocalypse of St John I–III: The Greek Text with Introduction, Commentary, and Additional Notes (London: Macmillan).
 
 **Johnson, L.T.** 1995 The Letter of James: A New Translation with Introduction and Commentary (AB, 37A; New York: Doubleday).
+
+**Justin Martyr** Dialogus cum Tryphone, ed. G. Archambault (Paris: Picard, 1909).
 
 **Koester, C.R.** 2014 Revelation: A New Translation with Introduction and Commentary (AYB, 38A; New Haven, CT: Yale University Press).
 
@@ -452,14 +480,18 @@ v8 (10 November 2026, in place), at the authors' ruling of that evening ('lets a
 
 **Schaff, P.** 1910 History of the Christian Church. I. Apostolic Christianity, A.D. 1–100 (3rd edn; New York: Scribner’s).
 
-**Sigil, J. and D. Dancings** 2026 ‘In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation’, Provenance: Journal of Forensic Semiotics (Crimson Hexagonal Archive, #1758).
+**Sigil, J. and D. Dancings** 2026 ‘In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation’, Provenance: Journal of Forensic Semiotics (Crimson Hexagonal Archive, #1758; v1.1, 11 November 2026).
 
 **Swete, H.B.** 1907 The Apocalypse of St John (2nd edn; London: Macmillan).
+
+**Thurston, R.W.** 1986 ‘Philo and the Epistle to the Hebrews’, EvQ 58: 133–43.
 
 **Trobisch, D.** 1994 Paul’s Letter Collection: Tracing the Origins (Minneapolis: Fortress Press).
 
 **Tyson, J.B.** 2006 *Marcion and Luke-Acts: A Defining Struggle* (Columbia, SC: University of South Carolina Press).
 
 **van Kooten, G.H.** 2007 ‘The Year of the Four Emperors and the Revelation of John: The “pro-Neronian” Emperors Otho and Vitellius, and the Images and Colossus of Nero in Rome’, JSNT 30: 205–48.
+
+**Williamson, R.** 1970 Philo and the Epistle to the Hebrews (ALGHJ, 4; Leiden: Brill).
 
 **Wilson, J.C.** 1993 ‘The Problem of the Domitianic Date of Revelation’, NTS 39: 587–605.
