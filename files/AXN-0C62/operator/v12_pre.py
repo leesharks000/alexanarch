@@ -22,7 +22,8 @@ for _n, (_b, _sec) in V12_BODIES.items():
     BODY[_n] = _b
     if _sec: SECOND[_n] = _sec
 STRATA = {"S0-records-search-v12": ("The records search of 10 November 2026, and In the Midst of the Seven (#1758)", sorted(V12_NEW, key=lambda n: (n != V12_PHILO, n))), **STRATA}
-K.VERSION, K.BUILT = "1.2", "2026-11-10"
+import os as _os
+K.VERSION, K.BUILT = _os.environ.get("HKVER", "1.2"), "2026-11-10"   # v1.3 (2026-11-10 21:31): HKVER=1.3, the argument moves of the S0 records
 # the Philo piece's claims for this kernel, each a verbatim quotation of #1758
 V12_CLAIMS = []
 def _v12c(cid, quote, kind, state, body=None):

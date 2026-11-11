@@ -1,7 +1,8 @@
 id: EA-HK-HISTLOGOS-01
-version: '1.2'
+version: '1.3'
 built: '2026-11-10'
-status: DEPOSITED 2026-11-09 (#1757, AXN position 0C62); v1.1 reissued in place the same day; v1.2 reissued in place 2026-11-10
+status: DEPOSITED 2026-11-09 (#1757, AXN position 0C62); v1.1 reissued in place the same day; v1.2 reissued in place 2026-11-10; v1.3 reissued
+  in place the same evening
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 title: 'The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced'
 creators:
@@ -942,26 +943,23 @@ acceptance:
         task: the same test, demonstration by demonstration and step by step
 argument_layer:
   file: 04-arguments.jsonl
-  moves: 4306
-  edges: 3811
-  records_with_moves: 43
-  records_without_moves:
-  - 1503
-  - 1505
-  - 1758
+  moves: 4397
+  edges: 3873
+  records_with_moves: 46
+  records_without_moves: []
   by_kind:
-    test: 129
-    method: 505
-    datum: 901
-    count: 315
-    inference: 393
-    finding: 751
-    price: 236
-    rival: 125
-    reply: 118
+    test: 133
+    method: 510
+    datum: 919
+    count: 322
+    inference: 396
+    finding: 783
+    price: 250
+    rival: 130
+    reply: 120
     defeat: 112
     hypothesis: 284
-    state: 437
+    state: 438
   kinds:
   - test
   - method
@@ -2187,24 +2185,25 @@ records_search_v12:
       status: ACTIVE
       sha256: 83a254fe7404bcb861f99543c91b0090b7f302632e821924285aa2af37152f91
       note: 'seat: the Septuagint of Swete (Zechariah 6:11–12).'
-    argument_layer: these records enter the kernel without moves at this version; their moves are owed to a reading of each record in full (04-arguments.jsonl
-      lists them under records_without_moves)
+    argument_layer: 'these records entered the kernel at v1.2 without moves; at v1.3 (the author, 2026-11-10 21:31: "lets do the argument moves")
+      each was read in full and its argument compressed into moves, each quotation asserted verbatim against the seated text (args/build_s*.py,
+      mlib.py), and written into 04-arguments.jsonl'
   related_work: []
   related_work_rule: pointed to; their substance is not extended into the frame on this pass (18:20, 18:45)
   history: []
   joins:
   - record: rec:1755
     deposit: 1755
-    axn: AXN:0C5F.MPAI.🕗🪧🪄🟢🔼🃏
-    title: 'And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.1)'
+    axn: AXN:0C5F.MPAI.🟡🕔⛳🔥⏩🔔
+    title: 'And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.2)'
     status: ACTIVE
-    sha256: 694d3ec4d48e0195284a2d68be4882f35fecb5e9df058547c4e656eb8d14c235
+    sha256: c3665410d62ef6f4242b84ba72d9f229db3d8ea9de5058a5d43b67ad84fdd826
     note: Revelation First, rung VI
   - record: rec:1756
     deposit: 1756
-    axn: AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙
-    title: 'The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)'
+    axn: AXN:0C61.MPAI.🎆♊🔓🟡🌺▲
+    title: 'The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.2)'
     status: ACTIVE
-    sha256: 625f3eeb176b790ba699cc030a85fd989f9c567590a69261ad32e8e723d7e677
+    sha256: e7abfac3719fe6a5580321865543899a2a60b8787176273dce34ae4e56f6a266
     note: the Tenth Muse
   flags: []
