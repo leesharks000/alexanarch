@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assert every Greek quotation in the Philo draft against the seated texts (Philo, Cohn-Wendland; LXX Zechariah, Swete; Justin, Archambault;
+"""Assert every Greek quotation in the Philo draft against the seated texts (Philo, Cohn-Wendland; the Septuagint, Swete, all books, with the TEI of Zechariah; Justin, Archambault;
 Eusebius, HE). Apostrophe forms and whitespace normalized; an ellipsis splits a quotation into parts, each asserted.
     python3 rebuild/philo-out-loud/quotecheck.py [draft.md]"""
 import re, sys, pathlib, unicodedata
@@ -10,7 +10,7 @@ def n(x):
     for a in ["᾿", "’", "'", "ʼ", "‘"]: x = x.replace(a, "'")
     return re.sub(r"\s+", " ", x)
 draft = pathlib.Path(sys.argv[1]) if len(sys.argv) > 1 else pathlib.Path(__file__).parent / "DRAFT-v0.1.md"
-seat = n("".join(f.read_text(encoding="utf-8") for f in [*C.glob("philo/text/*.txt"), *C.glob("lxx-swete/text/tlg046*"), *C.glob("lxx-swete/text/tlg004*"), *C.glob("gnt-nestle1904/text/*.txt"), C / "plato/text/tlg011-Συμπόσιον.txt", C / "plato/text/tlg012-Φαῖδρος.txt", C / "xenophon/text/tlg004-Symposium.txt",
+seat = n("".join(f.read_text(encoding="utf-8") for f in [*C.glob("philo/text/*.txt"), *C.glob("lxx-swete/text/*.txt"), *C.glob("gnt-nestle1904/text/*.txt"), C / "plato/text/tlg011-Συμπόσιον.txt", C / "plato/text/tlg012-Φαῖδρος.txt", C / "xenophon/text/tlg004-Symposium.txt",
        C / "justin-dialogus/text/dialogus.txt", C / "eusebius-historia-ecclesiastica/text/historia-ecclesiastica.txt"]))
 def tei(path):
     """The Philo TEI with <note> elements (the editors' apparatus) dropped, sections joined by a space: the text layer interleaves
@@ -22,6 +22,8 @@ def tei(path):
         return out
     root = ET.parse(path).getroot().find(".//{http://www.tei-c.org/ns/1.0}text")
     return " ".join(txt(d) for d in root.iter("{http://www.tei-c.org/ns/1.0}div") if d.get("subtype") == "section")
+# the end of Zech 3:8 sits on page 78 of the Swete TEI, outside the verse line of the text layer (EA-MIDST-01 v1.1, 4.1a)
+seat += " " + n(re.sub(r"<note.*?</note>|<[^>]+>", " ", (C / "lxx-swete/original/tlg0527.tlg046.xml").read_text(encoding="utf-8"), flags=re.S))
 seat += " " + n(" ".join(tei(f) for f in sorted(C.glob("philo/original/*.xml"))))
 t = m = 0
 for q in re.findall(r'"([^"\n]+)"', draft.read_text(encoding="utf-8")):
