@@ -3,11 +3,11 @@
 
 ## 17. What is established, and what is not
 
-17.1. Established, on the seated texts. (a) The quotation in the post of 2025-10-19 is not Philo's (0.2). (b) Philo names the Logos Ἀνατολή from an oracle that the Septuagint addresses to Ἰησοῦς crowned as high priest, and he quotes it without its addressee (§§3–4). (c) "Archangel" and the many names of the Logos, Israel among them, stand in De confusione 146. (d) The naming of the Logos and the law of prophetic displacement share their verbs, ἀνατέλλω and ἀποφθέγγομαι (§6). (e) Philo makes Ἰησοῦς the name of a re-struck state, and names Ἰησοῦς the imitator who takes Moses' type; Ἰησοῦς is one receiver among several distinct operations on distinct lives (7a.7). (f) The Logos's proper name is unsayable by Philo's doctrine and the Logos is approached through many names (Mut. 13–15); the Logos is the renamer of Jacob (Mut. 87). (g) De mutatione closes on "the Lord is in us," a line the Septuagint gives to Ἰησοῦς and Caleb, read as God, ἀνατολὴ τῶν ὅλων, walking within virtuous souls. (h) Justin attaches to Jesus the names Philo's construction holds, and the gathering is Justin's consolidation. (i) One treatise, Quis rerum divinarum heres, holds the Logos as divider, the lampstand of six divided by the seventh, the seven lamps as the planets with the Logos as the seventh, and the law of prophetic displacement (§9; Her. 130, 180, 216–225, 259–265). (j) Every letter of the Apocalypse is addressed to a messenger, the speaker commands writing twelve times, and sends a messenger to testify to the churches (15.1). (k) Philo's and Zechariah's lampstand is one with seven lamps, the Apocalypse's seven lampstands; the change was named by Gunkel and Bousset and has its consequence at 2:5 (11.1b). (l) In the Haran Gawaita Ruha's seven are answered by seven guards of the Life stationed "upon the seven horns of the worlds"; the Mandaean operation keeps the stations and replaces the occupants, the Johannine keeps the occupants and corrects them (11.3, 13.4). (m) Bousset and Charles printed Philo beside the lampstands; Charles credited design where he had a sequence (21:19–20) and inheritance where he had a number (1:12) (§16).
+17.1. Established, on the seated texts. (a) The quotation in the post of 2025-10-19 is not Philo's (0.2). (b) Philo names the Logos Ἀνατολή from an oracle that the Septuagint addresses to Ἰησοῦς crowned as high priest, and he quotes it without its addressee (§§3–4). (c) "Archangel" and the many names of the Logos, Israel among them, stand in De confusione 146. (d) The naming of the Logos and the law of prophetic displacement share their verbs, ἀνατέλλω and ἀποφθέγγομαι (§6). (e) Philo makes Ἰησοῦς the name of a re-struck state, and names Ἰησοῦς the imitator who takes Moses' type; Ἰησοῦς is one receiver among several distinct operations on distinct lives (7a.7). (f) The Logos's proper name is unsayable by Philo's doctrine and the Logos is approached through many names (Mut. 13–15); the Logos is the renamer of Jacob (Mut. 87). (g) De mutatione closes on "the Lord is in us," a line the Septuagint gives to Ἰησοῦς and Caleb, read as God, ἀνατολὴ τῶν ὅλων, walking within virtuous souls. (h) Justin attaches to Jesus the names Philo's construction holds, and the gathering is Justin's consolidation. (i) One treatise, Quis rerum divinarum heres, holds the Logos as divider, the lampstand of six divided by the seventh in the middle, the dividing Logos, the seven lamps as the planets with the sun in the middle, the Logos as the seventh that divides the soul, and the law of prophetic displacement (§9; Her. 130, 180, 216–225, 259–265). (j) Every letter of the Apocalypse is addressed to a messenger, the speaker commands writing twelve times, and sends a messenger to testify to the churches (15.1). (k) Philo's and Zechariah's lampstand is one with seven lamps, the Apocalypse's seven lampstands; the change was named by Gunkel and Bousset and has its consequence at 2:5 (11.1b). (l) In the Haran Gawaita Ruha's seven are answered by seven guards of the Life stationed "upon the seven horns of the worlds"; the Mandaean operation keeps the stations and replaces the occupants, the Johannine keeps the occupants and corrects them (11.3, 13.4). (m) Bousset and Charles printed Philo beside the lampstands; Charles credited design where he had a sequence (21:19–20) and inheritance where he had a number (1:12) (§16).
 
 17.2. Not established: that Philo had Zechariah 6:11 in view; that Philo knew of any Jesus movement; that Justin read Philo; that Zechariah's Ἀνατολή is the crowned Ἰησοῦς; any dependence between Philo and the Apocalypse; the planetary assignments of Smyrna, Sardis and Philadelphia beyond the mapping (11.4); the constraint test of 11.5a, owed; that the epistles answer the commission, which is the author's reading, with the downstream sequence of 15.3 the material on which it is tested against the received chronology. Each is stated where it is used.
 
-17.3. The reading turns more than one lock. The vocabulary that names the Logos in Conf. 62–63 is the vocabulary of prophetic displacement in Her. 259–265, which #1486 had already collated as the Sapphic channel without reference to Zechariah; the names Justin uses for Jesus are the names Conf. 62–146 gathers; the treatise that holds the displacement law also holds the seventh that divides and the lampstand of the planets. Nothing was moved to make the fit.
+17.3. The reading turns more than one lock. The vocabulary that names the Logos in Conf. 62–63 is the vocabulary of prophetic displacement in Her. 259–265, which #1486 had already collated as the Sapphic channel without reference to Zechariah; the names Justin uses for Jesus are the names Conf. 62–146 gathers; the treatise that holds the displacement law also holds the seventh that divides and the lampstand of the planets. The order of finding is documented: #1486 was deposited on 2026-08-15, three months before this comparison, and collated Her. 259–266 as the Sapphic channel without reference to Zechariah, the lampstand or the Apocalypse; the joins of this paper were found in texts the archive had already seated.
 
 ## 18. Where it enters
 
@@ -25,7 +25,7 @@
 
 ## 19. Apparatus: reviews and corrections
 
-19.1. Five outside reviews were read on 2026-11-10, each point checked against the seats before anything was changed.
+19.1. Six outside reviews were read on 2026-11-10, each point checked against the seats before anything was changed.
 
 19.2. Gemini, on the seven notebook. Adopted: Somn. 1.140, the messengers as the great king's eyes and ears, for the seven eyes of 5:6, set after Zech 4:10 (13.5). Not adopted: a quotation of Vit. Mos. II.118, «οὗτος δ’ ἐστὶν ἀπόσημα καὶ μίμημα τοῦ ὅλου κόσμου», which does not occur in the seated text (16.5a); Mut. 39 as a text of oversight; a cross-reference giving #1748 a title it does not bear. Its distinction between replacement and purification is adopted in the sharper form of 11.3.
 
@@ -36,6 +36,8 @@
 19.5. ChatGPT, second reading. Adopted: each crossing of the commission marked between agents (15.2), and the downstream sequence set out (15.3); the seven letters called a distributed configuration with no order claimed (11.5), and the constraint test stated with its visible alternatives (11.5a); retention made conditional on response (11.5).
 
 19.6. ChatGPT, on the Philo draft. Adopted: the doctrine of the unsayable proper name limited to what it establishes (5.4); the proposition of 0.2 restated as a construction; Ἰησοῦς read within the plurality of receivers (7a.7) and Justin's gathering named as a consolidation (8.6); the access to the sealed name kept distinct between Philo and the Apocalypse (7b.7a); the line between Philo's statements and the reading kept visible (0.4); its ordering of the work into three tasks (Part II, opening).
+
+19.6a. ChatGPT, on the joined paper. Adopted: the phrase "the seventh among the planets" corrected throughout, since Philo gives the middle of the planets to the sun (Her. 222–224) and makes the Logos the seventh that divides on the lampstand (215, 219) and in the soul (225), the correspondence being the reading's (9.6); 15.1 brought into agreement with 15.2; the direction of the commission stated as an open question with its evidence (15.3); 11.5–11.5a stated as the present reading, with the throne, gold, heat and sight of Laodicea put to the test of specificity; the falsifiers divided into textual checks, interpretive challenges and directional challenges; the slogan of 17.3 replaced by the documented order of finding; a footnote line in §16 replaced by the gloss on Hebrews (16.4a); a direct statement of the argument set before the inventory of the parts.
 
 19.7. Corrections made in session before the reviews: the Anatole oracle is spoken to the crowned Ἰησοῦς, and whether the man named Ἀνατολή is that Ἰησοῦς or a second figure is left open (4.3); the count of ἀνατολή in De mutatione is two (2.5); the apparatus interleaved in the Philo text layer is removed by reading the TEI; the Haran Gawaita quotations of #1101 were checked against Drower and the Mandaic when the author supplied the text.
 
@@ -71,6 +73,8 @@ Gunkel, Hermann. 1895. *Schöpfung und Chaos in Urzeit und Endzeit*, 294–302. 
 
 Hecht, Richard D. 1987. "Philo and Messiah." In *Judaisms and Their Messiahs at the Turn of the Christian Era*, ed. J. Neusner, W. S. Green and E. S. Frerichs, 150. Cambridge: Cambridge University Press. [as reported at intertextual.bible; not read]
 
+Grindheim, Sigurd. 2023. "Direct Dependence on Philo in the Epistle to the Hebrews." *Novum Testamentum* 65.4: 517–543. [declared; paywalled, not read]
+
 Hurtado, Larry W. 1988. *One God, One Lord: Early Christian Devotion and Ancient Jewish Monotheism*, 44–49. Philadelphia: Fortress. [declared; not read here]
 
 Hurtado, Larry W. 2017. "Gee, Dr. Carrier, You're Really Upset!" 7 December. https://larryhurtado.wordpress.com/2017/12/07/gee-dr-carrier-youre-really-upset/
@@ -79,9 +83,15 @@ intertextual.bible. "Compare LXX Zechariah 6:12 and Philo On the Confusion of To
 
 Lanier, Gregory R. 2015. "The Curious Case of צמח and ἀνατολή: An Inquiry Into Septuagint Translation Patterns." *Journal of Biblical Literature* 134: 505–527. [declared; paywalled, not read]
 
+Nordgaard, Stefan. 2011. "Paul's Appropriation of Philo's Theory of 'Two Men' in 1 Corinthians 15.45–49." *New Testament Studies* 57: 348–365. [declared; not read]
+
 Malina, Bruce J. 1995. *On the Genre and Message of Revelation: Star Visions and Sky Journeys*. Peabody: Hendrickson. https://archive.org/details/ongenremessageof0000mali [lending copy; not read here]
 
 McDonough, Sean M. 1999. *YHWH at Patmos: Rev. 1:4 in its Hellenistic and Early Jewish Setting*. WUNT II/107. Tübingen: Mohr Siebeck. [contents read; pp. 79–83, 162–168 paywalled, declared]
+
+Thurston, Robert W. 1986. "Philo and the Epistle to the Hebrews." *Evangelical Quarterly* 58: 133–143.
+
+Williamson, Ronald. 1970. *Philo and the Epistle to the Hebrews*. ALGHJ 4. Leiden: Brill. [declared; not read here]
 
 Yarbro Collins, Adela. 1984. "Numerical Symbolism in Jewish and Early Christian Apocalyptic Literature." *ANRW* II.21.2. [declared; paywalled, not read]
 

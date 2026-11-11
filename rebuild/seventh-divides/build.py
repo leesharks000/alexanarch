@@ -71,6 +71,10 @@ XR = [
     ("on the structure of 5.4 and 6 it is", "on the structure of 13.4 and §14 it is"),
     ("The letters do not yet meet it: 3.4 gives", "The letters do not yet meet it: 11.4 gives"),
     ("the constraint test of 3.5a.", "the constraint test of 11.5a."),
+    ("On the reading of 3.4, before any test,", "On the reading of 11.4, before any test,"),
+    ("is for the test of 3.5a.", "is for the test of 11.5a."),
+    ("3.1d marks each step.", "15.2 marks each step."),
+    ("3.1d–3.1e mark it and set out its test.", "15.2–15.3 mark it and set out its test."),
 ]
 for a, b in XR:
     if a in nb: nb = sub1(nb, a, b)
