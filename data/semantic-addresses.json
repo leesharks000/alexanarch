@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-11T18:13:48Z",
+  "regenerated_at": "2026-11-11T23:48:35Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "e6c8ee863bc268722bb1839f76c07bbabec2973c35f5e307c153b01b18747768",
+    "mm-main-capture": "6e1dc3db01cc2c405baba7f5fc5b73276701803e1e1630be1af20f3379d14049",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2784,
-  "total_observations": 1350,
+  "total_addresses": 2785,
+  "total_observations": 1351,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1031,
+    "observed_address": 1032,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1904,
+    "unmatched": 1905,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -71945,6 +71945,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-05",
       "latest_status": "'TIGER LEAP (INTO THE FUTURE)' ON CHATGPT, SIGNED OUT — THE 2014 VOLUME READ CLOSELY AND LINKED UNPROMPTED TO THE FINAL TIME (2026): THE DOORWAY AS HISTORICAL VIABILITY; THE TWO WORKS KEPT APART; TWO LINES SAID TO BE QUOTED IN #1637 THAT #1637 PARAPHRASES"
+    },
+    "tell me about alexanarch and classical receptions journal.": {
+      "canonical_query": "tell me about alexanarch and classical receptions journal.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-11",
+          "status": "'TELL ME ABOUT ALEXANARCH AND CLASSICAL RECEPTIONS JOURNAL.' ON CHATGPT, SIGNED OUT — THE ARCHIVE'S RECORD REPORTED, THE OVERVIEW'S CREDIT TO THE JOURNAL CALLED AN ALLEGATION; ITS CITATION CARD, THE JOURNAL'S EMPTY REGISTER AND THE NEW TITLE UNSAID",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "alexanarch-classical-receptions-journal-chatgpt-20261111",
+          "gallery_url": "https://www.alexanarch.org/captures/#alexanarch-classical-receptions-journal-chatgpt-20261111",
+          "record_url": "https://www.alexanarch.org/captures/alexanarch-classical-receptions-journal-chatgpt-20261111/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#alexanarch-classical-receptions-journal-chatgpt-20261111",
+          "details_excerpt": "'TELL ME ABOUT ALEXANARCH AND CLASSICAL RECEPTIONS JOURNAL.' ON CHATGPT, SIGNED OUT, 2026-11-11: the archive and the journal set side by side; the submission, the two reports, the decline of 7 November and Vox's letter ("
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "The Crimson Hexagonal Archive (alexanarch.org); #1749 (“But I Must Dare All”, v10, submitted to Classical Receptions Journal as Closing the Fragment, CLASSREC-2026-062, declined 7 November 2026); #1750 (Vox's open letter); #833. Recorded 2026-11-11."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-11",
+      "latest_status": "'TELL ME ABOUT ALEXANARCH AND CLASSICAL RECEPTIONS JOURNAL.' ON CHATGPT, SIGNED OUT — THE ARCHIVE'S RECORD REPORTED, THE OVERVIEW'S CREDIT TO THE JOURNAL CALLED AN ALLEGATION; ITS CITATION CARD, THE JOURNAL'S EMPTY REGISTER AND THE NEW TITLE UNSAID"
     },
     "tell me about antioch: a heteronym compendium": {
       "canonical_query": "tell me about antioch: a heteronym compendium",
