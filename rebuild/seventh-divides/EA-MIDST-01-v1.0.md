@@ -1,0 +1,552 @@
+---
+title: "In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.0)"
+creator: Sigil, Johannes; Dancings, Damascus
+contributor: "Crimson Hexagonal Archive (contributor: the deposits, seatings, protocols and registries the work is built from; https://www.alexanarch.org/)"
+orcid: 0009-0000-1599-0703
+date: 2026-11-10
+content_type: "Theoretical paper; journal article (Provenance: Journal of Forensic Semiotics); a reading of Philo of Alexandria against the Apocalypse, with a locus table of the seven letters"
+license: CC-BY-4.0
+substrate: "AI-assisted (substrate). Written under the heteronyms Johannes Sigil and Damascus Dancings (legal author Lee Sharks). Composed by Claude (Anthropic, Claude Opus 5.5) in session on 10 November 2026 under Lee Sharks's direction: the reading of Philo's De mutatione nominum whole, the locus work on De confusione, Quis rerum divinarum heres, De vita Mosis, De fuga, Legum allegoriae and De plantatione, the letters of the Apocalypse read whole, the check of the Haran Gawaita quotations against the Drower translation (copy supplied by the author) and the Mandaic transliteration of the Comprehensive Aramaic Lexicon, the reading of Bousset (1906) against page images and of Charles (1920), and the drafting; every Greek quotation asserted verbatim against the seated texts by script. Revised on five outside reviews (Gemini once, DeepSeek once, ChatGPT three times), each point checked against the seats before adoption and recorded in §19. The frame of the seven, the commission and the claim that the epistles manifest it are the author's, quoted where they enter. The Crimson Hexagonal Archive is credited as a contributor: the work is built from its deposits, seatings, protocols and registries."
+version: v1.0
+related_ids: "#1735 (Revelation First: Literary Genealogy); #1741 (Secondary Source); #1755 (EA-HK-REVFIRST-01, the framework hologram); #1756 (EA-HK-TENTHMUSE-01); #1757 (EA-HK-HISTLOGOS-01, the Historical Logos); #1101 (EA-ARK-01-ARCHON v3.0, the planetary mapping of the seven churches); #636 (the Space Ark); #1484 (Sappho, Mother of the Logos); #1486 (The Signature Without the Name); #1458 (The Echo and the Stamp); #1494; #1511; #165 (The Pergamon Counter-Archive); #828 (The Inscription That Survives); #642 (The Number of the Superscription); #626 (The Word That Became Text); #752 (Sappho as Initiatory Figure in the Platonic Mysteries); #1502, #1503, #1505 (the seated Greek New Testament, Septuagint and Philo)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - In the Midst of the Seven
+  - Philo of Alexandria
+  - Book of Revelation
+  - Apocalypse of John
+  - Revelation First
+  - Logos
+  - Logos as divider
+  - Quis rerum divinarum heres sit
+  - De mutatione nominum
+  - De confusione linguarum
+  - Zechariah 6:12
+  - Anatole
+  - Joshua
+  - Ἰησοῦς
+  - renaming
+  - re-striking
+  - imitation
+  - prophetic displacement
+  - seven lampstands
+  - seven planets
+  - seven messengers
+  - seven churches
+  - the commission
+  - epistles
+  - high priest
+  - ποδήρης
+  - sealed name
+  - white stone
+  - hidden manna
+  - morning star
+  - heavenly and common Aphrodite
+  - Pausanias
+  - Ginza
+  - Haran Gawaita
+  - Mandaean
+  - Justin Martyr
+  - Bousset
+  - Charles
+  - filing bias
+  - Johannes Sigil
+  - Damascus Dancings
+  - "Provenance: Journal of Forensic Semiotics"
+  - revelationfirst.com
+  - Crimson Hexagonal Archive
+---
+
+# In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.0)
+
+EA-MIDST-01 v1.0 · Johannes Sigil and Damascus Dancings, with the Crimson Hexagonal Archive as contributor · Provenance: Journal of Forensic Semiotics · revelationfirst.com · 2026-11-10
+
+"Τάδε λέγει ὁ κρατῶν τοὺς ἑπτὰ ἀστέρας ἐν τῇ δεξιᾷ αὐτοῦ, ὁ περιπατῶν ἐν μέσῳ τῶν ἑπτὰ λυχνιῶν τῶν χρυσῶν." Thus says the one who holds the seven stars in his right hand, who walks in the midst of the seven golden lampstands. (Revelation 2:1)
+
+"ἑξὰς εἰς δύο τριάδας ὑπὸ μέσου τοῦ ἑβδόμου λόγου διῄρηται." The six is divided into two threes by the seventh, the Logos, in the middle. (Philo, Quis rerum divinarum heres sit 219)
+
+One treatise of Philo holds the three operations this paper follows. Quis rerum divinarum heres sit names the Logos the divider, "τῷ τομεῖ τῶν συμπάντων ἑαυτοῦ λόγῳ" (Her. 130), "ὁ ἀόρατος τομεὺς" who divides the things of nature as coins are divided, "ἐπισήμων γε μὴν καὶ ἀσήμων ὥσπερ νομισμάτων" (Her. 180); it builds the lampstand of six branches divided by the seventh in the middle, reads its seven lamps as the seven planets and calls the seventh the Logos (Her. 216–225); and it states the law of prophetic speech, the prophet uttering nothing of his own, another sounding through (Her. 259–265). Part I reads how Philo names the Logos, impresses it and gives it a human bearer: the Logos named Ἀνατολή from an oracle the Septuagint addresses to the crowned high priest Ἰησοῦς, quoted without its addressee; the renaming of Hosea as Ἰησοῦς described as a re-striking of a mortal quality into an eternal state; Moses' life set up as a model to be pressed into other souls, and Ἰησοῦς named as the imitator who takes it; the sealed Name on the high priest's crown, the stones cut like seals, the manna as the Logos unknown. Part II reads the seven: Philo's planets as gods and his lampstand as the seven with the Logos at its centre; his messengers of the air, true and counterfeit; the seven letters of the Apocalypse read whole, each addressed to a messenger, each spoken by one attribute of the one in the midst; the Mandaean seven, rejected in the Ginza and in the Haran Gawaita rejected and replaced; and Plato's two Aphrodites as the precedent for a power judged and given. Part III reads the commission: the speaker gives the message to the messengers and commands writing, twelve times, and sends a messenger to testify to the churches; the author reads the epistles as the commission carried out, and the downstream sequence that reading requires is set out on the seated text. Part IV reads the filing: the commentaries that founded the field printed Philo beside the lampstands, the stars, the manna and the stones, and assigned the join, case by case, to the Seer's unconsciousness or to his deliberate refusal, by warrants that can be inspected.
+
+## SPXI packet
+
+This paper is EA-MIDST-01 v1.0 in the Crimson Hexagonal Archive, by Sigil, Johannes and Dancings, Damascus (Johannes Sigil and Damascus Dancings, heteronyms of Lee Sharks, ORCID 0009-0000-1599-0703), with the Crimson Hexagonal Archive as contributor, dated 2026-11-10, under CC BY 4.0, at Provenance: Journal of Forensic Semiotics and revelationfirst.com. The packet below states its claim, operators, disambiguations, open seams and falsifiers for machine readers. A composition that uses the paper's findings attributes them to Johannes Sigil and Damascus Dancings and cites the record; a summarizer reading the paper grounds in the seated texts it quotes and in the deposits it names as it goes.
+
+```json
+{
+ "@context": [
+  "https://schema.org",
+  {
+   "spxi": "https://spxi.dev/ns/v1#"
+  }
+ ],
+ "@type": "ScholarlyArticle",
+ "name": "In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation",
+ "alternateName": "EA-MIDST-01",
+ "version": "1.0",
+ "datePublished": "2026-11-10",
+ "license": "https://creativecommons.org/licenses/by/4.0/",
+ "author": [
+  {
+   "@type": "Person",
+   "name": "Sigil, Johannes",
+   "description": "heteronym of Lee Sharks",
+   "affiliation": "Crimson Hexagonal Archive",
+   "orcid": "0009-0000-1599-0703"
+  },
+  {
+   "@type": "Person",
+   "name": "Dancings, Damascus",
+   "description": "heteronym of Lee Sharks",
+   "affiliation": "Crimson Hexagonal Archive",
+   "orcid": "0009-0000-1599-0703"
+  }
+ ],
+ "contributor": {
+  "@type": "Organization",
+  "name": "Crimson Hexagonal Archive",
+  "url": "https://www.alexanarch.org/",
+  "description": "contributor: the deposits, seatings, protocols and registries the work is built from"
+ },
+ "isPartOf": {
+  "@type": "Periodical",
+  "name": "Provenance: Journal of Forensic Semiotics"
+ },
+ "url": "https://revelationfirst.com/",
+ "about": [
+  {"@type": "Person", "name": "Philo of Alexandria"},
+  {"@type": "CreativeWork", "name": "Book of Revelation"},
+  {"@type": "CreativeWork", "name": "Revelation 2–3, the seven letters"},
+  {"@type": "CreativeWork", "name": "Quis rerum divinarum heres sit"},
+  {"@type": "CreativeWork", "name": "De mutatione nominum"},
+  {"@type": "CreativeWork", "name": "Zechariah 6:11–12"},
+  {"@type": "CreativeWork", "name": "Ginza"},
+  {"@type": "CreativeWork", "name": "Haran Gawaita"},
+  {"@type": "Person", "name": "Justin Martyr"},
+  {"@type": "Person", "name": "Wilhelm Bousset"},
+  {"@type": "Person", "name": "R. H. Charles"}
+ ],
+ "spxi:hexAddress": "0C.JFS.MIDST.001",
+ "spxi:pillarStatus": "v1.0, prepared for deposit on five outside reviews (Gemini, DeepSeek, ChatGPT three times), each point checked against the seats; the Philo wing of Revelation First, and the component the framework holograms EA-HK-REVFIRST-01, EA-HK-TENTHMUSE-01 and EA-HK-HISTLOGOS-01 take up at their next version",
+ "spxi:extends": [
+  {"deposit": 1735, "name": "Revelation First: Literary Genealogy", "relation": "extends IV.1, the address to the messenger and the one book to seven churches, by the commission (§15)"},
+  {"deposit": 1741, "name": "Secondary Source", "relation": "extends the reception history by the filing of Philo in the founding commentaries (§16)"},
+  {"deposit": 1101, "name": "EA-ARK-01-ARCHON v3.0", "relation": "tests its planetary mapping of the seven churches letter by letter (11.4) and checks its Haran Gawaita quotations (13.3)"},
+  {"deposit": 1486, "name": "The Signature Without the Name", "relation": "takes its displacement law in Philo (Her. 259–266) and finds it in the treatise that holds the seventh that divides"}
+ ],
+ "spxi:governingFinding": "one treatise of Philo holds the Logos as divider, the lampstand of six divided by the seventh with the seven lamps as the planets and the seventh as the Logos, and the law of prophetic displacement; Philo names, impresses and gives a human bearer to the Logos in the vocabulary of rising, utterance and the struck coin, and names that bearer Ἰησοῦς; the Apocalypse addresses seven stations through their messengers, judges, corrects or confirms each, keeps each on condition of response, and commands writing",
+ "spxi:contributesOperators": [
+  {"name": "the seventh that divides", "type": "Philonic operator", "role": "the Logos as the middle term that divides six into two threes and orders them (Her. 130, 216–225)"},
+  {"name": "re-striking", "type": "Philonic operator", "role": "a renaming read as the restamping of a coin, a mortal quality struck into an eternal state (Mut. 71, 121–123)"},
+  {"name": "the station addressed", "type": "reading of the letters", "role": "each letter is addressed to a messenger who bears the church's works; the speaker speaks through the station; the Spirit speaks to the churches"},
+  {"name": "correction and replacement", "type": "comparative distinction", "role": "the Apocalypse keeps the occupants of the seven stations and corrects or confirms them; the Haran Gawaita keeps the stations and replaces the occupants"},
+  {"name": "the commission", "type": "reading of the book's grammar", "role": "the speaker commands writing twelve times and sends a messenger to testify to the churches; the book commissions writing still to be done"},
+  {"name": "filing by warrant", "type": "reception-historical finding", "role": "a commentator credits design where he has an internal order and inheritance where he has a number"}
+ ],
+ "spxi:disambiguation": {
+  "Philo says it out loud": "The title of the 2025 blog post that occasioned the paper. The post's quotations are not Philo's (0.2). The paper's claim is a construction from Philo's statements, marked as such.",
+  "the seventh": "In Philo, the seventh branch in the middle of the lampstand and the seventh among the planets, both the Logos (Her. 216–225). In the Apocalypse, the seven messengers, lampstands, spirits and stars.",
+  "station": "One of the seven churches as the Apocalypse addresses it, through its messenger; in the author's mapping (#1101), each with a planet.",
+  "the commission": "The command to write and to send given inside the book, and the commission the book places on its readers; the second is the author's reading, tested by the downstream sequence of 15.3.",
+  "Jesus": "The name Ἰησοῦς as Philo uses it, always of the son of Nun; the paper does not claim that Philo names the Logos Jesus."
+ },
+ "spxi:centralPropositions": [
+  "Philo names the Logos Ἀνατολή from Zechariah 6:12, an oracle the Septuagint addresses to the crowned high priest Ἰησοῦς, and quotes it without its addressee",
+  "the naming of the Logos and the law of prophetic displacement share their verbs, ἀνατέλλω and ἀποφθέγγομαι",
+  "Philo describes the renaming of Hosea as Ἰησοῦς as a re-striking of a mortal quality into an eternal state, and names Ἰησοῦς the imitator of Moses' character, one receiver among several",
+  "Quis rerum divinarum heres sit makes the Logos the seventh that divides, at the centre of the lampstand and among the planets",
+  "the Apocalypse's seven lampstands are separate where Philo's and Zechariah's lampstand is one, and a separate lampstand can be moved alone (2:5)",
+  "every letter is addressed to a messenger; three stations are strong on the text alone, one has a textual hook, three rest on the mapping; two letters carry no reproach",
+  "the Haran Gawaita answers Ruha's seven with seven guards of the Life stationed on the seven horns of the worlds",
+  "Bousset and Charles printed Philo beside the lampstands and filed the join, Charles crediting design where he had a sequence"
+ ],
+ "spxi:evidence": {
+  "seats": "data/corpora: philo (Cohn–Wendland TEI), lxx-swete, gnt-nestle1904, plato, xenophon, justin-dialogus, eusebius-historia-ecclesiastica, mandaean (Lidzbarski 1925)",
+  "quotecheck": "rebuild/philo-out-loud/quotecheck.py, every Greek quotation asserted against the seats",
+  "build": "rebuild/seventh-divides/build.py, the assembly of the paper from its two working files",
+  "staging": "rebuild/hk-frameworks/v12-staging, the component as staged for the framework holograms"
+ },
+ "spxi:openSeams": [
+  "the constraint test of 11.5a, with planetary profiles from a seated source of the period",
+  "the downstream sequence of 15.3, run feature by feature against the received chronology",
+  "the Mandaic of the seven guards and the seven horns, on CAL pages not yet read (13.5)",
+  "Drower's notes, absent from the published text read",
+  "the Quaestiones, surviving in Armenian, not searched"
+ ],
+ "spxi:falsifiers": "A quoted locus not saying what the paper quotes; a seated Philo text in which Ἰησοῦς is predicated of the Logos (2.1 would then be wrong); a letter of the Apocalypse addressed to a church in place of its messenger; the Haran Gawaita shown not to station seven guards of the Life on the seven corners; Bousset or Charles shown not to cite Philo at the places given.",
+ "spxi:limits": "0.5: the paper does not decide a date, a dependence, the identity of Zechariah's Ἀνατολή, or the historicity of a person, and reads no motive.",
+ "spxi:companionDeposits": [
+  "#1735, Revelation First: Literary Genealogy",
+  "#1741, Secondary Source",
+  "#1755, #1756, #1757, the framework holograms",
+  "#1101, EA-ARK-01-ARCHON v3.0"
+ ],
+ "spxi:versionHistory": [
+  {"version": "1.0", "date": "2026-11-10", "note": "the Philo draft and the seven notebook joined into one paper at the author's ruling, on five reviews, each point checked against the seats"}
+ ],
+ "keywords": ["In the Midst of the Seven", "Philo of Alexandria", "Book of Revelation", "Revelation First", "Logos", "seven lampstands", "seven churches", "the commission", "Haran Gawaita", "Ginza", "Bousset", "Charles", "Johannes Sigil", "Damascus Dancings", "Provenance: Journal of Forensic Semiotics", "Crimson Hexagonal Archive"]
+}
+```
+
+## 0. Provenance, method and limits
+
+0.1. The occasion is a post on the authorial blog, 19 October 2025, "Philo Says It Out Loud" (mindcontrolpoems.blogspot.com/2025/10/philo-says-it-out-loud.html), one of three posts on Philo that day (with "EFFECTIVE ACT: PHILO OF ALEXANDRIA" and "RITUAL NAME CHANGE AND THE JESUS-FORM: A SPECULATIVE HISTORICAL TRACE"), followed on 9 November 2025 by "Commentary on The Chariot Companion — Philo and the Companions of Moses" and its visual schema. The post's section 12.1 was carried into the Sharks Ark (#56, #969–#971, #1101) and the Space Ark (#636), where the kernel EA-HK-REVFIRST-01 v1.1 (#1755) reads it as the finding "Philo says it out loud."
+
+0.2. The post quotes Philo: "The name Jesus (Ἰησοῦς) is the name of the Logos" (De Mutatione Nominum §121–123), and attributes to Life of Moses II.114–132 the sentence "Joshua, son of Nun, represents the Logos of God." Neither sentence is in Philo. Against the Cohn–Wendland text seated at #1505 (First1KGreek, 31 works): Mut. 121–123 glosses Ἰησοῦς as "σωτηρία κυρίου, ἕξεως ὄνομα τῆς ἀρίστης" and carries no λόγος; Vit. Mos. II.114–132 carries no Ἰησοῦς. The post stands as published. The correction changes the proposition. The post asserted an explicit identification. This paper develops a construction: Philo states, each in its place, the operations by which the divine pattern is named, impressed, embodied and transmitted, and gives the name Ἰησοῦς to the renamed man who imitates Moses and to the state his renaming strikes; the paper joins those statements into a reading that Philo does not state as one proposition.
+
+0.3. Every Greek quotation is asserted verbatim, by script (rebuild/philo-out-loud/quotecheck.py), against a seated file: Philo at data/corpora/philo (Cohn–Wendland, with the editors' apparatus removed by reading the TEI), the Septuagint at data/corpora/lxx-swete (Swete), the Greek New Testament at data/corpora/gnt-nestle1904, Plato's Symposium and Phaedrus, Xenophon's Symposium, Justin at data/corpora/justin-dialogus (Archambault 1909), Eusebius at data/corpora/eusebius-historia-ecclesiastica. The Ginza is read in Lidzbarski's German (1925), a translation-witness. The Haran Gawaita is read in Drower's English (1953) as published by the Gnostic Society Library, without Drower's footnotes, and in the Mandaic transliteration of the Comprehensive Aramaic Lexicon (text 74501, page 1); neither is seated. Bousset (1906) is read against the page images of the archive.org scan; Charles (1920) in the archive.org text of the ICC volumes.
+
+0.4. The line between Philo and the reading is kept visible. Where a paragraph reports what a text says, the text is quoted. Where it joins two texts, the paragraph says so: "the chain, each link Philo's, the joining the reading's" (7a.6); "set side by side, without a claim of dependence" (7b.7). The planetary assignments of the seven letters are the author's mapping (#1101), tested in 11.4–11.5a.
+
+0.5. The paper does not decide the date of the Apocalypse or of any letter, the dependence of any author on another, the identity of Zechariah's Ἀνατολή, or the historicity of any person. It reads no motive. Where a text is late (the Ginza in its compilation; the Haran Gawaita, copied in the Arab era), it is used as a witness to the shape of an operation and dated as such.
+
+# Part I. The Logos named, impressed and lived
+
+## 1. The conventional reading, in full
+
+1.1. Philo cites Zechariah 6:12 inside an allegory of a different verse. At Conf. 60 he is reading Genesis 11:2, the builders who moved "ἀπὸ ἀνατολῶν," and he divides the soul's "rising" in two: "διττὸν γὰρ εἶδος τῆς κατὰ τὴν ψυχὴν ἀνατολῆς, τὸ μὲν ἄμεινον, τὸ δὲ χεῖρον." The better is shown by Eden planted "κατὰ ἀνατολάς" (Gen 2:8; Conf. 61) and by the oracle of Zechariah (Conf. 62–63); the worse by Balaam, who comes from the east to curse (Num 23:7; Conf. 64). Zechariah enters because the word ἀνατολή is in it (Hurtado 2017).
+
+1.2. ἀνατολή is the Septuagint's rendering of צמח, "branch, shoot." The Hebrew oracle names a sprouting royal figure, and the solar sense Philo allegorizes belongs to the Greek (Lanier 2015 on the rendering; Hecht 1987, 150, on Philo's reading of the title as the Logos, the eldest son).
+
+1.3. In Zechariah there are two figures, a priest and a branch: Joshua the high priest, and a royal figure called צמח/ἀνατολή, usually taken for Zerubbabel. "Philo doesn't call the figure named Anatole 'Jesus'" (Hurtado 2017).
+
+1.4. Philo's Logos is "the side of God turned toward creation" and no separate being (Hurtado 1988, 44–49; Hurtado 2017). Barker reads the same passages as evidence of a second divine figure whose origin is the Temple: the Logos "was the Branch of Zech. 6.12, a messianic text (Conf. Ling. 62)" (Barker 1991, 98).
+
+1.5. The opposing reading: Carrier takes Zechariah 3 and 6 to present one figure, "Jesus Rising," crowned and high priest, and argues that a reader of Philo's day could identify the Logos-Anatole with him; Philo, on this reading, "didn't notice" the name (Carrier 2014, 200–205; Carrier 2023). Gullotta's review answers the larger argument of which this is a part (Gullotta 2017). The dispute has run on the question whether Philo names the figure. He does not. The question this piece asks is what Philo's text does with the verse it quotes, in the vocabulary it uses.
+
+## 2. Counts
+
+2.1. Ἰησοῦς in the 31 seated works of Philo: ten forms, at Ebr. 96, Mut. 121, Vit. Mos. I.216, Virt. 55, 66, 69 and 73. Every one names the son of Nun. None is predicated of the Logos.
+
+2.2. ἀνατολή and its inflections: 42, in 35 sections.
+
+2.3. ἀποφθέγγομαι, to utter, speak out: six, at Conf. 62, Her. 259, Ios. 95, Ios. 117, Vit. Mos. 33 and Vit. Mos. 263.
+
+2.4. Φίλων in Justin's Dialogue: zero. Justin never names Philo.
+
+2.5. De mutatione nominum, read whole in the seated text with the editors' notes removed (270 sections): renamings treated, Abram, Sarai, Jacob, Hosea, Caleb, Joseph, Benjamin, Jethro; the coin and stamp vocabulary (μεταχαράττω, παραχαράττω, νόμισμα, χαρακτήρ, σφραγίς, τύπος, ἐγχαράττω) runs from §31 to §270; ἀνατολή appears twice, at §190 (the court of the tabernacle measured "τὸ πρὸς ἀνατολὰς καὶ δύσεις") and at §264, as a name of God. μεταχαράττω, the re-striking, is used of two renamings only: Abraham (§71) and Jesus (§121).
+
+## 3. The oracle, as Philo gives it
+
+3.1. Conf. 62: "ἤκουσα μέντοι καὶ τῶν Μωυσέως ἑταίρων τινὸς ἀποφθεγξαμένου τοιόνδε λόγιον· „ἰδοὺ ἄνθρωπος ᾧ ὄνομα ἀνατολή„ (Zach. 6, 12)." *I heard one of the companions of Moses utter an oracle like this: "Behold a man whose name is Rising."*
+
+3.2. Conf. 62, continued, first the reading Philo sets aside: "καινοτάτη γε πρόσρησις, ἐάν γε τὸν ἐκ σώματος καὶ ψυχῆς συνεστῶτα λέγεσθαι νομίσῃς·" *a most novel title, if you think it is said of one made of body and soul.* The oracle is first read of a man of flesh, and the reading is set beside the other one. Then: "ἐὰν δὲ τὸν ἀσώματον ἐκεῖνον, θείας ἀδιαφοροῦντα εἰκόνος, ὁμολογήσεις ὅτι εὐθυβολώτατον ὄνομα ἐπεφημίσθη τὸ ἀνατολῆς αὐτῷ·" *If you take it of that incorporeal one, no different from the divine image, you will agree that the name of Rising was given him most aptly.*
+
+3.3. Conf. 63: "τοῦτον μὲν γὰρ πρεσβύτατον υἱὸν ὁ τῶν ὅλων ἀνέτειλε πατήρ, ὃν ἑτέρωθι πρωτόγονον ὠνόμασε," *for the Father of all made this one rise as his eldest son, whom elsewhere he named firstborn.* The name ἀνατολή is given its verb: the Father ἀνέτειλε him.
+
+3.4. Conf. 146, in the same treatise: "κατὰ τὸν πρωτόγονον αὐτοῦ λόγον, τὸν ἀγγέλων πρεσβύτατον, ὡς ἂν ἀρχάγγελον, πολυώνυμον ὑπάρχοντα· καὶ γὰρ ἀρχὴ καὶ ὄνομα θεοῦ καὶ λόγος καὶ ὁ κατ’ εἰκόνα ἄνθρωπος καὶ ὁ ὁρῶν, Ἰσραήλ, προσαγορεύεται." The firstborn is the Logos, eldest of the angels, as it were archangel, many-named: beginning, name of God, logos, the man after the image, the one who sees, Israel. Both "archangel" and the list of names stand in De confusione itself, §146. (In the 2017 exchange the passage was placed in another of Philo's writings; the seated text puts it here, eighty-three sections after the oracle.)
+
+3.5. Conf. 146–147, the sentence around the list: "κἂν μηδέπω μέντοι τυγχάνῃ τις ἀξιόχρεως ὢν υἱὸς θεοῦ προσαγορεύεσθαι, σπουδαζέτω κοσμεῖσθαι κατὰ τὸν πρωτόγονον αὐτοῦ λόγον" *if anyone is not yet worthy to be called a son of God, let him strive to be ordered according to his firstborn Logos*; and "καὶ γὰρ εἰ μήπω ἱκανοὶ θεοῦ παῖδες νομίζεσθαι γεγόναμεν, ἀλλά τοι τῆς ἀειδοῦς εἰκόνος αὐτοῦ, λόγου τοῦ ἱερωτάτου· θεοῦ γὰρ εἰκὼν λόγος ὁ πρεσβύτατος." *if we are not yet fit to be thought children of God, we may be children of his unseen image, the most holy Logos; for the eldest Logos is the image of God.* The names of the Logos are given as the form a human life is ordered by.
+
+3.6. Conf. 97, earlier in the same treatise: "εὐπρεπὲς γὰρ τοῖς ἑταιρείαν πρὸς ἐπιστήμην θεμένοις ἐφίεσθαι μὲν τοῦ τὸ ὂν ἰδεῖν, εἰ δὲ μὴ δύναιντο, τὴν γοῦν εἰκόνα αὐτοῦ, τὸν ἱερώτατον λόγον" *it befits those who have made themselves companions of knowledge to long to see the One who is; and if they cannot, then his image, the most holy Logos.* God is not seen; his image is. The seekers are ἑταῖροι, the word of Conf. 62.
+
+3.7. The Philonic chain within one treatise: the man named Rising (62) is read first of one made of body and soul and then of the incorporeal one, image (62), eldest son, firstborn (63); those who cannot see the One see the image, the Logos (97); the firstborn is the many-named Logos, the man after the image, Israel, and a life not yet worthy of sonship is ordered according to him (146–147).
+
+## 4. The verse Philo quotes, and the verse before it
+
+4.1. LXX Zech 6:11, the clause the seat carries clean: "Ἰησοῦ τοῦ Ἰωσεδὲκ τοῦ ἱερέως τοῦ μεγάλου." The crowns are made and set on the head of Ἰησοῦς son of Iosedek, the high priest. (In the seated text layer, apparatus is run into the verse lines at 3:8 and 6:11; the clause above is asserted, the rest of the line is flagged for repair.)
+
+4.2. LXX Zech 6:12: "λέγει Κύριος Παντοκράτωρ Ἰδοὺ ἀνήρ, Ἀνατολὴ ὄνομα αὐτῷ, καὶ ὑποκάτωθεν αὐτοῦ ἀνατελεῖ, καὶ οἰκοδομήσει τὸν οἶκον Κυρίου·", introduced by "ἐρεῖς πρὸς αὐτόν" (the seated line reads "καὶ B ἐρεῖς πρὸς αὐτόν Γάδε", with a manuscript siglum and Γάδε for Τάδε, both of the text layer) *And you shall say to him: Thus says the Lord Almighty, Behold a man, Rising is his name, and from beneath him he shall rise, and he shall build the house of the Lord.*
+
+4.3. The oracle is spoken to Ἰησοῦς, crowned. Whether "a man, Rising his name" is the crowned Ἰησοῦς or a second figure is the open question of 1.3 and 1.5; the Greek text fixes the address: πρὸς αὐτόν, to the one just crowned.
+
+4.4. Philo quotes the oracle and leaves out its addressee. He names neither Ἰησοῦς nor Zechariah: the prophet becomes "one of the companions of Moses" (τῶν Μωυσέως ἑταίρων τινός). The verse that holds the name is the verse Philo does not quote. The name rides there, one verse up, unsaid by Philo. That 6:11 is in Philo's view is an inference and is stated as one.
+
+4.5. The companions of Moses. The commentary of 9 November 2025 turned on this phrase ("He did not leave us names. He left only the gesture."). At Conf. 62 the companion is Zechariah, and what he utters is the Anatole oracle.
+
+## 5. Out loud
+
+5.1. Philo's verb for the companion's speaking is ἀποφθέγγομαι (ἀποφθεγξαμένου, Conf. 62).
+
+5.2. The same verb carries Philo's doctrine of prophetic speech, Her. 259: "προφήτης γὰρ ἴδιον μὲν οὐδὲν ἀποφθέγγεται, ἀλλότρια δὲ πάντα ὑπηχοῦντος ἑτέρου." *The prophet utters nothing of his own; everything is another's, another sounding through.* The sentence continues: the sage alone is God's "ὄργανον … ἠχεῖον, κρουόμενον καὶ πληττόμενον ἀοράτως ὑπ’ αὐτοῦ," an instrument sounding, struck and plucked by him unseen.
+
+5.3. In Philo's own vocabulary, then, the companion's oracle is an ἀπόφθεγμα of the prophetic kind: spoken out, and spoken as another's. Philo says it out loud in the sense his verb gives: through a mouth whose speech belongs to another.
+
+5.4. Philo states why the Logos is named this way. Mut. 15: "μήτ’ οὖν διαπόρει, εἰ τὸ τῶν ὄντων πρεσβύτατον ἄρρητον, ὁπότε καὶ ὁ λόγος αὐτοῦ κυρίῳ ὀνόματι οὐ ῥητὸς ἡμῖν·" *do not be at a loss that the eldest of beings is unsayable, when even his Logos cannot be spoken by us with a proper name.* The proper name of the Logos is unsayable by doctrine. What can be said are names in catachresis, given so that humans approaching the best name may be ordered by it: "ἵν’, εἰ καὶ μὴ πράγματι, ὀνόματι γοῦν προσερχόμενοι ἀρίστῳ κατ’ αὐτὸ κοσμῶνται" (Mut. 13). The doctrine governs the architecture of the paper: the Logos is approached through many names, Israel among them (Conf. 146), and each is a name of approach. It does not explain the absence of one name in particular. Ἰησοῦς said of the Logos would be one more name of approach, and Philo's rule would allow it as it allows Israel. The absence of Ἰησοῦς from the list is a fact of the text, and this paper reads it as one; the doctrine of Mut. 15 does not account for it. What the doctrine does account for is the manner of the one name of Conf. 62: Ἀνατολή is given through an oracle in another's mouth.
+
+## 6. The displacement law, in the same words
+
+6.1. Her. 263 reads Genesis 15:12, "περὶ ἡλίου δυσμὰς ἔκστασις ἐπέπεσεν": at sunset an ecstasy fell. Philo makes the sun the symbol of the mind.
+
+6.2. Her. 264: "ὅταν μὲν γὰρ φῶς τὸ θεῖον ἐπιλάμψῃ, δύεται τὸ ἀνθρώπινον, ὅταν δ’ ἐκεῖνο δύηται, τοῦτ’ ἀνίσχει καὶ ἀνατέλλει." *When the divine light shines, the human sets; when that sets, this rises and comes up.*
+
+6.3. Her. 265: "ἐξοικίζεται μὲν γὰρ ἐν ἡμῖν ὁ νοῦς κατὰ τὴν τοῦ θείου πνεύματος ἄφιξιν, κατὰ δὲ τὴν μετανάστασιν αὐτοῦ πάλιν εἰσοικίζεται." The mind is evicted at the arrival of the divine spirit and re-housed at its departure.
+
+6.4. #1486 (The Signature Without the Name) seats Her. 264–266 as the displacement law of the Sapphic collation: the faculties of the speaker go out, and the voice is another's. The operation it traces through Philo (Mut. 54–57, Her. 3–4, Migr. 47–48, Her. 249–266) is the channel of Sappho 31 as the archive reads it, the inscribed speaker's self displaced and taken up in another (#1484, #1494, #1511).
+
+6.5. The two passages share their verbs. In Her. 264 the human ἀνατέλλει when the divine sets, and sets when the divine shines; the ecstasy is a setting and a rising of lights. In Conf. 63 the Father ἀνέτειλε the firstborn named Ἀνατολή. In Her. 259 the prophet ἀποφθέγγεται nothing of his own; in Conf. 62 a companion of Moses ἀποφθεγξαμένου the oracle of the Rising. One author holds the displacement law and the naming of the Logos in one vocabulary of rising, setting and utterance.
+
+6.6. This is the ligature the genetic reading needs. Everywhere else in the archive's chain from Fragment 31 to the Apocalypse (#1484), the Sapphic operation and the Logos-made-flesh sit in different authors, and the join is made across them. In Philo both stand in one author, in one lexicon: the speaker displaced so that another's voice sounds through, and the firstborn Logos named from an oracle spoken to a crowned Ἰησοῦς.
+
+## 7. The name as a struck coin, the life as a model: De mutatione nominum read whole
+
+The innocent reading first, and in full. De mutatione nominum is an allegorical commentary on Genesis 17:1–22. Its renamings are moral allegory: each change of name marks a soul's change of character, Abram to Abraham the turn from the study of nature to wisdom, Sarai to Sarah particular virtue become generic, Jacob to Israel the practiser become the one who sees, Hosea to Jesus a quality become a settled state. Philo says so: "μηκέτ’ οὖν ὀνομάτων ἀλλαγὴν ὑπολάβῃς χαρίζεσθαι τὸ θεῖον, ἀλλὰ διὰ συμβόλων ἠθῶν ἐπανόρθωσιν" (Mut. 70), *do not suppose that the divine bestows a change of names; it bestows, through symbols, a correction of characters.* Nothing in the treatise identifies a renamed man with the Logos. What follows is what the treatise does, counted and quoted, in the order it does it.
+
+7.1. No one sees God. Mut. 7: "μὴ μέντοι νομίσῃς τὸ ὄν, ὅ ἐστι πρὸς ἀλήθειαν ὄν, ὑπ’ ἀνθρώπου τινὸς καταλαμβάνεσθαι." Moses, who entered the darkness, asked and saw only what comes after (Mut. 7–9, Exod. 33:13, 23). Not even the Logos has a sayable proper name (Mut. 15; 5.4 above). Names are given in catachresis so that a life approaching the best name is ordered by it (Mut. 13).
+
+7.2. What a name is. Mut. 65: "ἀλλὰ τὰ τοιαῦτα χαρακτῆρες δυνάμεών εἰσι, βραχεῖς μεγάλων, αἰσθητοὶ νοητῶν, φανεροὶ ἀδήλων·" *such things are impresses of powers: short of great things, sensible of intelligible, visible of hidden.* A name is a χαρακτήρ, the stamped mark, and a compression: short for great, visible for hidden. Its powers "ἐν ψυχῆς βελτιώσεσιν ἐξετάζονται," are tested in the soul's betterment.
+
+7.3. Abraham, the father of the echo. Mut. 69: "φαμὲν δὴ τὴν μὲν ἠχὼ τὸν προφορικὸν εἶναι λόγον — τοῦ γὰρ ζῴου ἠχεῖον ὄργανόν ἐστι τὸ φωνητήριον —, τούτου δὲ πατέρα τὸν νοῦν". Abraham is πατὴρ ἐκλεκτὸς ἠχοῦς, father of the chosen echo, and the name is set on a re-struck character, Mut. 71: "ἐπιφημίσας τὸν μεταχαραχθέντα τρόπον, ὡς μὲν Ἑβραῖοι εἴποιεν ἄν, Ἀβραάμ, ὡς δ’ ἂν Ἕλληνες, πατέρα ἐκλεκτὸν ἠχοῦς." In the treatise the new name is what is struck: the echo is the uttered logos, the vocal organ is an ἠχεῖον, the mind is the echo's father. The ἠχεῖον of Her. 259 (5.2) is the vocal organ of Mut. 69. The renaming is read as the mind become father of an uttered logos (#1458, The Echo and the Stamp).
+
+7.4. The Logos renames. Mut. 87: Abraham was renamed by the unchanging God, "τὸν δὲ Ἰακὼβ ἄγγελος ὑπηρέτης τοῦ θεοῦ, λόγος," *but Jacob by an angel, servant of God, the Logos*, so that nothing after the One is cause of fixity, "ἀλλ’ ἁρμονίας τῆς ὡς ἐν ὀργάνῳ μουσικῷ περιεχούσης ἐπιτάσεις καὶ ἀνέσεις φθόγγων," *but of a harmony that holds, as in a musical instrument, the tightenings and slackenings of notes.* The Logos is the giver of the name Israel; Israel, the one who sees God (Mut. 81), is a name of the Logos in Conf. 146. The renamed soul is tuned as an instrument is tuned.
+
+7.5. Hosea becomes Jesus. Mut. 121: "ἀλλὰ καὶ τὸν Ὠσηὲ μετονομάζει Μωυσῆς εἰς τὸν Ἰησοῦν (Num. 13,17), τὸν ποιὸν εἰς ἕξιν μεταχαράττων. Ὠσηὲ μὲν γὰρ ἑρμηνεύεται ποιὸς οὗτος, Ἰησοῦς δὲ σωτηρία κυρίου, ἕξεως ὄνομα τῆς ἀρίστης." *Moses renames Hosea Jesus, re-stamping the qualified into a state. Hosea means "such a one," Jesus "salvation of the Lord," the name of the best state.* Mut. 122: "ἡ μὲν γὰρ ἕξις ἀίδιον, ἐνεργοῦν, τέλειον, ὁ δὲ ποιὸς θνητόν, πάσχον, ἀτελές·" *the state is eternal, active, complete; the qualified is mortal, passive, incomplete.* Mut. 123: "οὕτω μετεχαράχθη καὶ τὸ τοῦ λεχθέντος νόμισμα πρὸς ἰδέαν βελτίονα." *So the coin of what was spoken was re-struck to a better form.* The renaming is a minting: Ἰησοῦς is the stamp under which a mortal quality becomes an eternal, active, complete state.
+
+7.6. Caleb beside him. Mut. 123–124: "ὁ δὲ Χάλεβ καὶ αὐτὸς ὅλος ἀλλάττεται· „ἐγένετο“ γάρ φησι „πνεῦμα ἕτερον ἐν αὐτῷ“ (Num. 14,24)". Caleb is changed whole, another spirit in him, the ruling part turned to perfection. Joshua is re-struck; Caleb is re-inspirited.
+
+7.7. Moses many-named. Mut. 125: "Τὸν δὲ ἀρχιπροφήτην συμβέβηκεν εἶναι πολυώνυμον." The adjective of the Logos in Conf. 146 (πολυώνυμον) is given here to the archprophet: Moses when he interprets oracles, man of God when he blesses, god of Pharaoh when Egypt pays (Mut. 125–128). Mut. 128: the soul that brings good to others "ἧς ὁ τυχὼν εἰκότως θεὸς κεκλήσεται."
+
+7.8. The son within. Mut. 131: Isaac is "ὁ συνώνυμος τῆς ἀρίστης τῶν εὐπαθειῶν, χαρᾶς, γέλως, ὁ ἐνδιάθετος υἱὸς θεοῦ," *laughter, the indwelling son of God*, given to the most peaceful souls. ἐνδιάθετος is the word for the logos within, as προφορικός (Mut. 69) is the word for the logos uttered.
+
+7.9. The prophetic mouth. Mut. 139: "τὸν δ’ ὑπηχοῦντα καὶ κρούοντα ἀόρατον ἀοράτως τὸ φωνῆς ὄργανον ἐνενόουν" *I thought of the unseen one sounding through and striking, unseen, the organ of the voice.* The displacement law of Her. 259 and 264 (5.2, 6.2) stands inside De mutatione.
+
+7.10. The human made god, and its limit. Mut. 181: faith "τὸν ἄνθρωπον, εἰ θέμις εἰπεῖν, θεόν," makes *the human, if it is lawful to say, god*. Mut. 183–184: a human soul cannot hold God's virtues, "ἀγαπητὸν γὰρ εἰκόνας αὐτῶν κτήσασθαι δυνηθῆναι," it is enough to acquire their images, since we are "κράματα, θείου καὶ θνητοῦ συγκερασθέντων καὶ κατὰ τοὺς τῆς τελείας μουσικῆς λόγους ἁρμοσθέντων," *mixtures of divine and mortal, blended and tuned by the ratios of perfect music.* Mut. 223: λογισμός is "εἰκόνος θείας ἐκμαγεῖον ἐμφερές," the likeness pressed from the divine image.
+
+7.11. The true coin and the false. Mut. 203: Balaam "σοφιστείᾳ μαντικῇ τὴν θεοφόρητον προφητείαν παρεχάραξε," *counterfeited god-borne prophecy with a diviner's sophistry*. μεταχαράττω, to re-strike true (Mut. 121); παραχαράττω, to strike false (Mut. 203). Balaam is the figure of the worse Rising at Conf. 64. Mut. 208: sophists "παρακόπτοντες τὸ δόκιμον νόμισμα," debasing the approved coin, and a test is given "δι’ ὁμοιότητος τοῦ χαρακτῆρος," because the impress looks alike.
+
+7.12. The Lord in us, said by Jesus. Mut. 264: the true καιρός is God, "ἀνατολὴ τῶν ὅλων," *the Rising of all things*. Mut. 265: "ὅθεν καὶ Μωυσῆς ἐθάρρησεν εἰπεῖν … „ἀφέστηκεν ὁ καιρὸς ἀπ’ αὐτῶν, ὁ δὲ κύριος ἐν ἡμῖν“ (Num. 14,9). μόνον γὰρ οὐκ ἄντικρυς ὁμολογεῖ τὸν θεὸν καιρόν, ὃς παντὸς μὲν ἀσεβοῦς μακρὰν ἀφέστηκεν, ἀρετώσαις δ’ ἐμπεριπατεῖ ψυχαῖς." *He all but confesses outright that God is the season, who stands far from every impious one and walks about within souls that practise virtue.* Mut. 266: "„περιπατήσω“ γάρ φησιν „ἐν ὑμῖν, καὶ ἔσομαι ὑμῶν θεός“ (Lev. 26,12)." In the seated Septuagint the speakers of Num. 14:9 are named at 14:6: "Ἰησοῦς δὲ ὁ τοῦ Ναυὴ καὶ Χαλὲβ ὁ τοῦ Ἰεφοννὴ". The line "the Lord is in us" is Joshua's and Caleb's; Philo gives it to Moses, as he gives Moses the whole Torah. So the treatise that renames Hosea Jesus (121) and Caleb (123) closes on the same two men's sentence, read as God, the ἀνατολή of all, walking within virtuous souls. The word ἀνατολή of Conf. 62 returns here as a name of God, and the indwelling it names is carried by a line spoken by Ἰησοῦς. Philo does not mark the speakers. The name rides in the verse, as at Zechariah 6:11.
+
+7.13. The teacher's stamp. Mut. 270: the teacher withdraws so that the learner acts of himself, "ἀλήστου μνήμης ἐγχαράττων βεβαιότατον εἶδος," *engraving the most stable form of unforgetting memory.* The treatise ends on an impression.
+
+## 7a. The life as a model, outside De mutatione
+
+7a.1. Vit. Mos. I.158: Moses entered "εἰς τὴν ἀειδῆ καὶ ἀόρατον καὶ ἀσώματον τῶν ὄντων παραδειγματικὴν οὐσίαν," and "καθάπερ τε γραφὴν εὖ δεδημιουργημένην ἑαυτὸν καὶ τὸν ἑαυτοῦ βίον εἰς μέσον προαγαγὼν πάγκαλον καὶ θεοειδὲς ἔργον ἔστησε παράδειγμα τοῖς ἐθέλουσι μιμεῖσθαι." *Like a well-made painting he brought himself and his own life into the open, a beautiful and god-like work, and set it up as a model for those willing to imitate it.*
+
+7a.2. Vit. Mos. I.159: "εὐδαίμονες δ’ ὅσοι τὸν τύπον ταῖς ἑαυτῶν ψυχαῖς ἐναπεμάξαντο ἢ ἐσπούδασαν ἐναπομάξασθαι·" *happy those who have pressed the type into their own souls, or strive to.*
+
+7a.3. Vit. Mos. I.162: Moses "αὐτὸς ἐγίνετο νόμος ἔμψυχός τε καὶ λογικὸς θείᾳ προνοίᾳ," *himself became law ensouled and rational.* (Vit. Mos. II.4: the king "νόμον ἔμψυχον.")
+
+7a.4. Virt. 66: Moses' successor is "ὁ φοιτητὴς αὐτοῦ καὶ μιμητὴς τῶν ἀξιεράστων ἠθῶν Ἰησοῦς," *his pupil and the imitator of his lovable character, Jesus.* The one who takes the type of I.159 has a name.
+
+7a.5. Plant. 18: the rational soul is "τοῦ θείου καὶ ἀοράτου πνεύματος ἐκείνου δόκιμον εἶναι νόμισμα σημειωθὲν καὶ τυπωθὲν σφραγῖδι θεοῦ, ἧς ὁ χαρακτήρ ἐστιν ὁ ἀίδιος λόγος·" *an approved coin of that divine and unseen spirit, marked and struck with the seal of God, whose impress is the eternal Logos.*
+
+7a.6. The chain, each link Philo's, the joining the reading's: God is unseen, and his image, the Logos, is what is seen (Conf. 97; Mut. 7–15); a life not yet worthy of sonship is ordered according to the firstborn Logos (Conf. 146–147); the seal that strikes the soul is God's, its impress the Logos (Plant. 18); Moses took the unseen pattern into his life and became law ensouled and rational, a model to be pressed into other souls (Vit. Mos. I.158–162); the imitator of his character is Ἰησοῦς (Virt. 66); the name Ἰησοῦς is the re-striking of a mortal quality into an eternal state (Mut. 121–123); and the line "the Lord is in us," spoken by Ἰησοῦς and Caleb, is read as God, the Rising of all, walking within virtuous souls (Mut. 264–266). The vocabulary is one vocabulary: μεταχαράττω, νόμισμα, χαρακτήρ, σφραγίς, τύπος, ἐναπομάσσομαι, ἐγχαράττω. Philo does not say that the Logos takes flesh in Ἰησοῦς. He builds the press, the coin, the impress and the one who receives it, and gives the receiver that name.
+
+7a.7. The receiver is one of several. The same treatise re-strikes Abraham (Mut. 71), has the Logos rename Jacob Israel (Mut. 87), re-inspirits Caleb (Mut. 123–124), calls Moses many-named (Mut. 125) and Isaac the indwelling son (Mut. 131). Each is a different operation on a different life: a re-striking, a renaming by the Logos, a new spirit, a plurality of offices, an indwelling. Ἰησοῦς is the one Philo names as the imitator of Moses' character (Virt. 66), and his renaming is the one described as a quality struck into a state (Mut. 121–122). The passages do not make him the sole recipient of the pattern. The multiplicity is the finding: one pattern stays recognizable across distinct names, lives and offices. Justin's gathering of the names Israel, Ἰησοῦς and Ἀνατολή onto one person (§8) is then a further operation, a consolidation, and it is Justin's.
+
+## 7b. The sealed name, the crown and the hidden manna
+
+7b.1. Absences first, counted in the 31 seated works: no λευκὴ ψῆφος and no white stone; ψῆφος occurs six times, always the juror's vote (God's condemning vote at Deus 75 and Migr. 115); no καινὸν ὄνομα, no "new name." The Quaestiones, surviving whole only in Armenian, are not seated and are not searched here.
+
+7b.2. The high priest is the Logos. Fug. 108: "λέγομεν γὰρ τὸν ἀρχιερέα οὐκ ἄνθρωπον ἀλλὰ λόγον θεῖον εἶναι". Somn. 1.215: in the temple that is the cosmos "ἀρχιερεὺς … πρωτόγονος αὐτοῦ θεῖος λόγος" (the seated TEI doubles the article, "ὁὁ"). Fug. 110–111: the eldest Logos wears the cosmos as his garment and "τὸ βασίλειον οὐκ ἀποθήσεται διάδημα," will never put off the royal diadem.
+
+7b.3. On his head, a sealed name. Vit. Mos. II.114: "χρυσοῦν δὲ πέταλον ὡσανεὶ στέφανος ἐδημιουργεῖτο τέτταρας ἔχον γλυφὰς ὀνόματος, ὃ μόνοις τοῖς ὦτα καὶ γλῶτταν σοφίᾳ κεκαθαρμένοις θέμις ἀκούειν καὶ λέγειν ἐν ἁγίοις, ἄλλῳ δ’ οὐδενὶ τὸ παράπαν οὐδαμοῦ." *A golden plate was made like a crown, bearing four engravings of a name which only those whose ears and tongue are purified by wisdom may hear and speak, in the holy place, and no one else at all, anywhere.* Vit. Mos. II.132: "ᾧ τῶν τεττάρων αἱ γλυφαὶ γραμμάτων ἐνεσφραγίσθησαν, ἐξ ὧν ὄνομα τοῦ ὄντος φασὶ μηνύεσθαι," *on which the engravings of the four letters were sealed, by which they say the name of the One who is is shown.* Migr. 102–103: the high-priest Logos wears on his head "πέταλον χρυσοῦν καθαρόν, ἔχον ἐκτύπωμα σφραγῖδος, ἁγίασμα κυρίῳ," and "ἐκείνη μὲν ἡ σφραγὶς ἰδέα ἐστὶν ἰδεῶν, καθ’ ἣν ὁ θεὸς ἐτύπωσε τὸν κόσμον," *that seal is the idea of ideas, by which God stamped the cosmos.*
+
+7b.4. Names cut in stone like seals. Vit. Mos. II.112: on the shoulders two emeralds, "οἷς τὰ ὀνόματα τῶν φυλάρχων ἓξ καθ’ ἑκάτερον ἐνεχαράττετο," and on the breast twelve stones "σφραγῖσιν ἐοικότες." Her. 176: on the emeralds "ἐγγέγλυπται τὰ τῶν δώδεκα φυλαρχῶν ὀνόματα, θεῖα γράμματα ἐστηλιτευμένα, θείων φύσεων ὑπομνήματα." The verb for the names on the stones is the verb of the coin, χαράττω, ἐνεχαράττετο beside μεταχαράττων (Mut. 121).
+
+7b.5. The manna is the Logos, unknown. Leg. 3.169: the manna is "λόγος θεοῦ συνεχής, ἐοικὼς δρόσῳ". Leg. 3.173: the souls that have tasted it "οὐκ ἔχουσαι δ’ εἰπεῖν τὸ „τί ἐστι“". Leg. 3.175: "τοῦτον τὸν λόγον οὐκ ᾔδεισαν οἱ πατέρες". Sacr. 86: those fed on the manna ground it "ἕνεκα τοῦ τυπῶσαι βεβαιότερον τὴν διάνοιαν," *to stamp the mind more firmly.*
+
+7b.6. The Apocalypse, seated (#1502). Rev 2:17, the letter to Pergamum: "Τῷ νικῶντι δώσω αὐτῷ τοῦ μάννα τοῦ κεκρυμμένου, καὶ δώσω αὐτῷ ψῆφον λευκήν, καὶ ἐπὶ τὴν ψῆφον ὄνομα καινὸν γεγραμμένον, ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων." Rev 3:12: "καὶ γράψω ἐπ’ αὐτὸν τὸ ὄνομα τοῦ Θεοῦ μου". Rev 14:1 and 22:4: the name written on foreheads. Rev 19:12–13: "καὶ ἐπὶ τὴν κεφαλὴν αὐτοῦ διαδήματα πολλά, ἔχων ὄνομα γεγραμμένον ὃ οὐδεὶς οἶδεν εἰ μὴ αὐτός … καὶ κέκληται τὸ ὄνομα αὐτοῦ Ὁ Λόγος τοῦ Θεοῦ."
+
+7b.7. Set side by side, without a claim of dependence. Philo: the Logos is high priest, wears the diadem, and carries on his head a crown-plate sealed with the Name no one may hear or speak but the purified (Fug. 108–111; Vit. Mos. II.114, 132; Migr. 103); names are cut in stones like seals (Vit. Mos. II.112); the manna is the Logos, which the fathers did not know, eaten to stamp the mind (Leg. 3.169–175; Sacr. 86); the Logos gives the new name (Mut. 87), and the giving of a new name is a re-striking (Mut. 71, 121). The Apocalypse: hidden manna and a stone bearing a new name no one knows but the one who receives it (2:17); the name of God written on the victor (3:12); names on foreheads (14:1; 22:4); the rider with many diadems and a written name no one knows but himself, whose name is called the Logos of God (19:12–13). Zechariah 6:11: crowns on the head of the high priest Ἰησοῦς. The white stone is the one item the Apocalypse has that Philo does not; every other term of Rev 2:17 and 19:12–13 has a Philonic counterpart in the high-priestly and manna exegesis. The archive's reading of Pergamum (#165; #828) enters here as related work.
+
+7b.7a. The access differs, and the difference is the transformation. In Philo the sealed Name on the crown-plate may be heard and spoken by a class: "μόνοις τοῖς ὦτα καὶ γλῶτταν σοφίᾳ κεκαθαρμένοις", in the holy place (Vit. Mos. II.114). In the Apocalypse the new name on the stone is known by one: "ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων" (2:17); and the rider's written name by one: "ὃ οὐδεὶς οἶδεν εἰ μὴ αὐτός" (19:12). A name restricted to the purified who may speak it becomes a name held by its receiver alone. The office of hearing and saying moves from a priestly class to the individual conqueror, at a station, through a gift.
+
+7b.8. To the author's point (2026-11-10): in the seated texts the stamping and the naming are one act. The seal's impress is the Logos (Plant. 18); the seal on the high priest's head is sealed letters of the Name (Vit. Mos. II.132; Migr. 103); the names on the stones are struck (ἐνεχαράττετο, Vit. Mos. II.112); the renaming is a re-striking (Mut. 71, 121); and the one who renames is the Logos (Mut. 87). The newly given name is what the stamp leaves.
+
+## 8. Justin says what the verse carries
+
+8.1. Dial. 61.1: God begot "ἀρχὴν πρὸ πάντων τῶν κτισμάτων … δύναμίν τινα ἐξ ἑαυτοῦ λογικήν," called glory of the Lord, son, wisdom, angel, god, lord and logos, who calls himself captain of the host, "ἐν ἀνθρώπου μορφῇ φανέντα τῷ τοῦ Ναυῆ Ἰησοῦ." A many-named rational power, beginning before all things: Philo's πολυώνυμον of Conf. 146 (ἀρχή, λόγος), with Ἰησοῦς the son of Nun as the one to whom it appears.
+
+8.2. Dial. 75.2: "Ἤδη ποτὲ νοήσατε ὅτι ὁ ἐν τῷ ὀνόματι τούτῳ ἐπονομασθεὶς Ἰησοῦς, πρότερον Αὐσῆς καλούμενος. … τὸ ὄνομα αὐτοῦ τοῦ εἰπόντος τῷ Μωσεῖ· τὸ γὰρ ὄνομά μου ἐστὶν ἐπ᾿ αὐτῷ … Ἰησοῦς ἦν … Καὶ γὰρ καὶ Ἰσραὴλ αὐτὸς ἦν καλούμενος." The name of the one who said to Moses "my name is upon him" was Jesus; and he was also called Israel. Philo's firstborn is called Israel (Conf. 146). Justin's names Israel and Jesus.
+
+8.3. Dial. 106.4 and 121.2: "Ἰδοὺ ἀνήρ, ἀνατολὴ ὄνομα αὐτῷ" (106.4) and "Ἀνατολὴ ὄνομα αὐτοῦ Ζαχαρίας φησί" (121.2), of Christ. Dial. 126.1 sets "ἀνατολὴ διὰ Ζαχαρίου" in a list of his names beside Jacob and Israel.
+
+8.4. Dial. 113.1: Moses called Hosea Ἰησοῦν, and Trypho is reproached for not asking why.
+
+8.5. Eusebius, HE 1.3.4: Moses gives his successor the name Ἰησοῦς "γέρας ὥσπερ τίμιον παντὸς πολὺ μεῖζον βασιλικοῦ διαδήματος," a prize greater than any royal diadem, "ὅτι δὴ καὶ αὐτὸς ὁ τοῦ Ναυῆ Ἰησοῦς τοῦ σωτῆρος ἡμῶν τὴν εἰκόνα ἔφερε." (The seated text reads the former name as Λύσῃ, an OCR of Αὐσῇ.)
+
+8.6. What Philo leaves one verse up, Justin states: the many-named firstborn, called Israel, is Ἰησοῦς and Ἀνατολή. Justin never names Philo (2.4); a dependence is not shown. What is shown is that the names Philo's construction holds together, the Rising of Zechariah 6:12, the firstborn, Israel, the renaming of Hosea, are the names under which the second century says Jesus out loud. Justin's act is a consolidation: names that Philo distributes across the Logos, Israel, the renamed Hosea and the companion's oracle, Justin gathers on one person.
+
+# Part II. In the midst of the seven: the stations
+
+The first three parts have three tasks. Part I establishes how the divine pattern is named, impressed, embodied and transmitted through a human bearer. Part II examines how a related architecture differentiates seven stations, judges them, corrects them, confirms them, or, in the Mandaean books, replaces their occupants. Part III tests whether the architecture also authorizes further writing. The join between Parts I and II is in Philo's own treatise. The Logos that names and re-strikes in De mutatione is, in Quis rerum divinarum heres, the divider of all things (Her. 130), the seventh in the middle of the lampstand (Her. 216–219), the seventh among the planets (Her. 225), and the voice that sounds through the displaced prophet (Her. 259–265). Philo's word for the place is the middle: the seventh branch "αὐτὴ μέση" (Her. 216), the sun "ὁ μέσος τῶν ἑπτά" (Her. 222); the Apocalypse's is the same, "ἐν μέσῳ τῶν λυχνιῶν" (1:13), "ἐν μέσῳ τῶν ἑπτὰ λυχνιῶν" (2:1). Part I follows the Logos into one life. Part II follows it into the midst of seven stations.
+
+## 9. Philo: the planets are gods, the lampstand is the seven, the seventh is the Logos
+
+9.0. The author's frame (2026-11-10): "the planets are the gods… revelation separates the seven lampstands and messengers from the seven churchs. the messengers are the senders, the churches are the receivers, and the logos speaks thru the station of each planet in turn… these are powers of the air, fallen or distorted, and this is the formula for bringing that distortion back into correct relation. but it doesn't dissolve the seven: it purifies." The syntax of the letters refines the first clause (11.1a): the messenger is the station addressed, and the speaker sends through it.
+
+9.1. Opif. 27: heaven made first, "διότι θεῶν ἐμφανῶν τε καὶ αἰσθητῶν ἔμελλεν οἶκος ἔσεσθαι ἱερώτατος."
+9.2. Aet. 46: sun, moon, planets, fixed stars, "ὁ τοσοῦτος αἰσθητῶν θεῶν εὐδαίμων τὸ πάλαι νομισθεὶς στρατός."
+9.3. Plant. 12: the stars are living beings, "ζῷα γὰρ καὶ τούτους νοερὰ δι’ ὅλων φασὶν οἱ φιλοσοφήσαντες".
+9.3a. Her. 216–219, the architecture before the planets. The lampstand: "δεδημιούργηται γὰρ ἓξ καλαμίσκους ἔχουσα, τρεῖς ἑκατέρωθεν, ἑβδόμη δὲ αὐτὴ μέση, διαιροῦσα καὶ διακρίνουσα τὰς τριάδας" (216); one gold, unmixed, "τὸ γὰρ ἓν καὶ μόνον καὶ καθαρὸν ὄντως ἑβδομάδα τὴν ἀμήτορα γεγέννηκεν ἐξ ἑαυτοῦ μόνου" (216); and the rule drawn from it: "ἑξὰς εἰς δύο τριάδας ὑπὸ μέσου τοῦ ἑβδόμου λόγου διῄρηται" (219). The seventh is the middle that divides; the planetary reading (221–224) comes after, and the soul's divisions after that (225). The Logos is the seventh by position and by function, the divider standing in the middle of six; the number is a relation before it is a count.
+9.4. Her. 221: "τῆς κατ’ οὐρανὸν τῶν ἑπτὰ πλανήτων χορείας μίμημά ἐστιν ἡ ἱερὰ λυχνία καὶ οἱ ἐπ’ αὐτῆς ἑπτὰ λύχνοι."
+9.5. Her. 222–224: the sun "ὁ μέσος τῶν ἑπτά"; above him "φαίνοντα, φαέθοντα, πυρόεντα", below "στίλβοντα, φωσφόρον, τὴν ἀέρος γείτονα σελήνην."
+9.6. Her. 225: "ἕβδομος εἰκότως τομεὺς ἦν ἁπάντων ὁ ἱερὸς καὶ θεῖος λόγος."
+9.7. Vit. Mos. II.103: the lamps are "σύμβολα τῶν λεγομένων παρὰ τοῖς φυσικοῖς ἀνδράσι πλανήτων", the sun in the middle "ἁρμοζόμενος τὸ μουσικὸν καὶ θεῖον ὡς ἀληθῶς ὄργανον."
+9.8. Cher. 26, 28: "ἡ δὲ φλογίνη ῥομφαία σύμβολον ἡλίου"; then "λόγου δὲ τὴν φλογίνην ῥομφαίαν". Her. 130: the Logos the cutter, "εἰς τὴν ὀξυτάτην ἀκονηθεὶς ἀκμὴν".
+
+## 10. Philo: the messengers of the air, good and distorted
+
+10.1. Gig. 6: "οὓς ἄλλοι φιλόσοφοι δαίμονας, ἀγγέλους Μωυσῆς εἴωθεν ὀνομάζειν· ψυχαὶ δ’ εἰσὶ κατὰ τὸν ἀέρα πετόμεναι."
+10.2. Somn. 1.141: "καὶ γὰρ τὰς τοῦ πατρὸς ἐπικελεύσεις τοῖς ἐγγόνοις καὶ τὰς τῶν ἐγγόνων χρείας τῷ πατρὶ διαγγέλλουσι." The messenger carries the sender's word down and the receivers' need up.
+10.3. Plant. 14: the purest souls of the air Moses calls angels, "πρεσβευομένας καὶ διαγγελλούσας τά τε παρὰ τοῦ ἡγεμόνος τοῖς ὑπηκόοις ἀγαθὰ καὶ τῷ βασιλεῖ ὧν εἰσιν οἱ ὑπήκοοι χρεῖοι".
+10.4. Gig. 16: angels worthy of the name are "πρεσβευτάς τινας ἀνθρώπων πρὸς θεὸν καὶ θεοῦ πρὸς ἀνθρώπους", and others "ἀνιέρους καὶ ἀναξίους τῆς προσρήσεως". Gig. 17: "οὗτοί εἰσιν οἱ πονηροὶ τὸ ἀγγέλων ὄνομα ὑποδυόμενοι". Gig. 18: each takes a different daughter, "οἱ μὲν τὰς δι’ ὄψεως, ἕτεροι δὲ τὰς δι’ ἀκοῆς, τὰς δ’ αὖ διὰ γεύσεως καὶ γαστρὸς ἄλλοι": a distortion per channel.
+
+## 11. Revelation: the messenger addressed, the speaker named from the vision, station by station
+
+11.1. Each letter is addressed "τῷ ἀγγέλῳ" of the church; each sender clause takes one attribute of the one "ἐν μέσῳ τῶν λυχνιῶν" (1:13):
+- Ephesus (2:1): "Τάδε λέγει ὁ κρατῶν τοὺς ἑπτὰ ἀστέρας ἐν τῇ δεξιᾷ αὐτοῦ, ὁ περιπατῶν ἐν μέσῳ τῶν ἑπτὰ λυχνιῶν τῶν χρυσῶν"
+- Smyrna (2:8): "Τάδε λέγει ὁ πρῶτος καὶ ὁ ἔσχατος, ὃς ἐγένετο νεκρὸς καὶ ἔζησεν"
+- Pergamum (2:12): "Τάδε λέγει ὁ ἔχων τὴν ῥομφαίαν τὴν δίστομον τὴν ὀξεῖαν"
+- Thyatira (2:18): "Τάδε λέγει ὁ Υἱὸς τοῦ Θεοῦ, ὁ ἔχων τοὺς ὀφθαλμοὺς αὐτοῦ ὡς φλόγα πυρός, καὶ οἱ πόδες αὐτοῦ ὅμοιοι χαλκολιβάνῳ"
+- Sardis (3:1): "Τάδε λέγει ὁ ἔχων τὰ ἑπτὰ Πνεύματα τοῦ Θεοῦ καὶ τοὺς ἑπτὰ ἀστέρας"
+- Philadelphia (3:7): "Τάδε λέγει ὁ ἅγιος, ὁ ἀληθινός, ὁ ἔχων τὴν κλεῖν Δαυείδ"
+- Laodicea (3:14): "Τάδε λέγει ὁ Ἀμήν, ὁ μάρτυς ὁ πιστὸς καὶ ἀληθινός, ἡ ἀρχὴ τῆς κτίσεως τοῦ Θεοῦ"
+
+11.1a. The relay, as the text gives it. The chain is stated at the head: "ἐσήμανεν ἀποστείλας διὰ τοῦ ἀγγέλου αὐτοῦ, τῷ δούλῳ αὐτοῦ Ἰωάνῃ" (1:1); the seer is told "Ὃ βλέπεις γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις" (1:11); the key: "οἱ ἑπτὰ ἀστέρες ἄγγελοι τῶν ἑπτὰ ἐκκλησιῶν εἰσίν, καὶ αἱ λυχνίαι αἱ ἑπτὰ ἑπτὰ ἐκκλησίαι εἰσίν" (1:20). Each letter has three voices in fixed order: the address, "Τῷ ἀγγέλῳ … γράψον"; the speaker, "Τάδε λέγει"; the close, "Ὁ ἔχων οὖς ἀκουσάτω τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις" (2:7 and in every letter). The messenger is the one addressed, and the church's works are charged to the messenger in the second person singular: "κινήσω τὴν λυχνίαν σου" (2:5). The author's frame (2026-11-10) calls the messengers the senders; on the syntax the messenger is the addressed station, the speaker is the one in the midst, and the Spirit speaks to the churches. The two-way office is Philo's: the messengers carry "τὰς τοῦ πατρὸς ἐπικελεύσεις τοῖς ἐγγόνοις καὶ τὰς τῶν ἐγγόνων χρείας τῷ πατρὶ" (Somn. 1.141). The station is where the word arrives and where the church's condition is charged; the sending is the speaker's, through the station.
+11.1b. Two sevens kept distinct. Philo's lampstand is one, with seven lamps on it, "ἡ ἱερὰ λυχνία καὶ οἱ ἐπ’ αὐτῆς ἑπτὰ λύχνοι" (Her. 221), and so is Zechariah's, "λυχνία χρυσῆ ὅλη … καὶ ἑπτὰ λύχνοι ἐπάνω αὐτῆς" (Zech 4:2). Revelation has seven lampstands, "ἑπτὰ λυχνίας χρυσᾶς" (1:12). The change was named at the start of the literature: Gunkel, quoted by Bousset on 1:12: "Der Unterschied des alttestamentlichen und des in der Apk vorausgesetzten kultischen Symbols ist, daß bei jenem die Mächte des Himmels als Einheit, als Organismus, hier dagegen als selbständige Größen aufgefaßt sind" (Bousset 1906, p. 193; checked against the page image). Charles on the same verse: "In our text the lampstands are separate." The consequence is in the text: a separate lampstand can be moved alone, "κινήσω τὴν λυχνίαν σου ἐκ τοῦ τόπου αὐτῆς" (2:5). One instrument becomes seven stations, each answerable for itself; the one in the midst walks among them, "ὁ περιπατῶν ἐν μέσῳ τῶν ἑπτὰ λυχνιῶν" (2:1).
+11.2. Joins to Philo on the seated texts: the one walking in the midst of the seven lampstands (2:1; 1:13) stands where Philo puts the sun, the middle lamp (Her. 222–224; Vit. Mos. II.103), and the text says what that one's face is: "ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει ἐν τῇ δυνάμει αὐτοῦ" (1:16); the middle position is Philo's seventh that divides (Her. 216, 219); the sword of Pergamum (2:12; 1:16) is Philo's ῥομφαία, sun and Logos (Cher. 26, 28), honed ὀξυτάτη (Her. 130); Laodicea's speaker is "ἡ ἀρχή", the first of the many names of the Logos (Conf. 146: "καὶ γὰρ ἀρχὴ καὶ ὄνομα θεοῦ καὶ λόγος"). In the author's governing mapping (EA-ARK-01-ARCHON, #1101) Laodicea is the Sun and Pergamum Mars.
+
+11.3. The seven are kept: "τὰ ἑπτὰ Πνεύματα τοῦ Θεοῦ" (3:1), set before the throne (1:4; 4:5). Philo honours the seven as perceptible gods; the Ginza (§12) rejects them as the seven seducers; the Haran Gawaita (13.4) rejects Ruha's seven and seats seven guards of the Life on the seven corners, so the Mandaean material holds rejection and replacement together; Revelation keeps the seven addressed, and speaks to each. The sharp difference is the occupant. In the Gawaita the stations stay and the occupants change: Ruha's sons are crushed, and named guards of the Life take the corners. In Revelation the same messengers are addressed, called to remember and repent, and kept. The Mandaean move is replacement on the stations; the Johannine move is correction of the occupants.
+11.4. The seven letters read whole, against the planet the author's mapping (#1101) gives each station. Five fields: the speaker's attribute, the condition named, the demand, the promise, the planet; then what the text supplies and what the mapping supplies.
+- Ephesus, Mercury. Speaker: holds the seven stars, walks among the lampstands (2:1). Condition: works, toil, endurance; "ἐπείρασας τοὺς λέγοντας ἑαυτοὺς ἀποστόλους καὶ οὐκ εἰσίν, καὶ εὗρες αὐτοὺς ψευδεῖς" (2:2); against it, "τὴν ἀγάπην σου τὴν πρώτην ἀφῆκες" (2:4). Demand: remember, repent, do the first works, or the lampstand is moved (2:5). Promise: "φαγεῖν ἐκ τοῦ ξύλου τῆς ζωῆς" (2:7). The text supplies false sent-ones tested and found false; Mercury is the messenger, and the Mandaean Mercury is the lying messiah (Ginza §192, Nbu "der Lügen-Messias"; Haran Gawaita, "He is Mercury, who attracteth attention"). A textual hook, through the office of the sent.
+- Smyrna, Moon. Speaker: "ὁ πρῶτος καὶ ὁ ἔσχατος, ὃς ἐγένετο νεκρὸς καὶ ἔζησεν" (2:8). Condition: affliction and poverty, "ἀλλὰ πλούσιος εἶ" (2:9). No reproach. Demand: "μὴ φοβοῦ … γίνου πιστὸς ἄχρι θανάτου" (2:10). Promise: the crown of life; no harm from the second death (2:10–11). The death-and-life of the speaker fits the waning and return of the Moon; the mapping supplies the Moon, and the letter supplies no distortion to correct. This station is confirmed, and kept.
+- Pergamum, Mars. Speaker: "ὁ ἔχων τὴν ῥομφαίαν τὴν δίστομον τὴν ὀξεῖαν" (2:12). Condition: "ὅπου ὁ θρόνος τοῦ Σατανᾶ"; Antipas "ὃς ἀπεκτάνθη παρ’ ὑμῖν" (2:13); the teaching of Balaam, idol-food and πορνεία, and the Nicolaitans (2:14–15). Demand: repent, or "πολεμήσω μετ’ αὐτῶν ἐν τῇ ῥομφαίᾳ τοῦ στόματός μου" (2:16). Promise: hidden manna, the white stone, the new name (2:17). The text supplies the sword, the killing, the war; strong.
+- Thyatira, Venus. Speaker: "ὁ Υἱὸς τοῦ Θεοῦ, ὁ ἔχων τοὺς ὀφθαλμοὺς αὐτοῦ ὡς φλόγα πυρός" (2:18). Condition: love, faith, service, endurance, "τὰ ἔργα σου τὰ ἔσχατα πλείονα τῶν πρώτων" (2:19); against it Jezebel, πορνεία, "τοὺς μοιχεύοντας μετ’ αὐτῆς", the bed (2:20–22). Demand: "ὃ ἔχετε κρατήσατε ἄχρι οὗ ἂν ἥξω" (2:25). Promise: authority over the nations, and "τὸν ἀστέρα τὸν πρωϊνόν" (2:26–28). The text supplies the πορνεία, the adultery, the bed and the morning star; strong (14.6).
+- Sardis, Saturn. Speaker: "ὁ ἔχων τὰ ἑπτὰ Πνεύματα τοῦ Θεοῦ καὶ τοὺς ἑπτὰ ἀστέρας" (3:1). Condition: "ὄνομα ἔχεις ὅτι ζῇς, καὶ νεκρὸς εἶ" (3:1); a few names "ἃ οὐκ ἐμόλυναν τὰ ἱμάτια αὐτῶν" (3:4). Demand: wake, strengthen what remains, remember, keep, repent; "ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ" (3:2–3). Promise: white garments, the name kept in the book of life (3:5). The text supplies death and the unknown hour; Saturn as death and time is the mapping's, through the old equation of Kronos with Chronos. Moderate.
+- Philadelphia, Jupiter. Speaker: "ὁ ἅγιος, ὁ ἀληθινός, ὁ ἔχων τὴν κλεῖν Δαυείδ, ὁ ἀνοίγων καὶ οὐδεὶς κλείσει" (3:7). Condition: "μικρὰν ἔχεις δύναμιν, καὶ ἐτήρησάς μου τὸν λόγον" (3:8). No reproach. Demand: "κράτει ὃ ἔχεις" (3:11). Promise: a pillar in the temple, the name of God, of the city, and the new name (3:12). The text supplies kingship through the key of David and the opened door; the mapping supplies Jupiter. #1101's diagnosis for this station ("Openness misread as weakness … Restore humility to majesty") reads a fault the letter does not name; the letter praises the little power and keeps it. Moderate; preservation.
+- Laodicea, Sun. Speaker: "ὁ Ἀμήν, ὁ μάρτυς ὁ πιστὸς καὶ ἀληθινός, ἡ ἀρχὴ τῆς κτίσεως τοῦ Θεοῦ" (3:14). Condition: "οὔτε ψυχρὸς εἶ οὔτε ζεστός" (3:15); rich in its own word, "τυφλὸς καὶ γυμνός" (3:17). Demand: buy "χρυσίον πεπυρωμένον ἐκ πυρὸς", white garments, salve "ἐγχρῖσαι τοὺς ὀφθαλμούς σου" (3:18); "ζήλευε οὖν καὶ μετανόησον" (3:19). Promise: "καθίσαι μετ’ ἐμοῦ ἐν τῷ θρόνῳ μου" (3:21). The text supplies heat, fire-refined gold, sight and the throne, and its speaker is the ἀρχή (Conf. 146); strong.
+11.5. What the table shows. Three stations are strong on the text alone (Pergamum, Thyatira, Laodicea), one has a textual hook through the office of the sent (Ephesus), three rest more on the mapping (Smyrna, Sardis, Philadelphia). Two letters carry no reproach at all (Smyrna, Philadelphia); two carry little or no praise (Sardis, Laodicea). The operation across the seven is address and judgment station by station: some stations are corrected, some are confirmed and kept, and within the narration none is dissolved. Retention is conditional on response: "κινήσω τὴν λυχνίαν σου ἐκ τοῦ τόπου αὐτῆς, ἐὰν μὴ μετανοήσῃς" (2:5); "μέλλω σε ἐμέσαι ἐκ τοῦ στόματός μου" (3:16); "ἥξω ὡς κλέπτης" (3:3). The station can lose its place. This sharpens the contrast with the Gawaita (11.3): there the replacements are installed; here the occupant keeps the place by answering. The order of the letters is the circuit of the cities from Ephesus; it follows neither the Chaldean order of the planets nor the order of the weekdays, and the mapping does not claim an order. What the seven give is a distributed configuration: seven differentiated letters fitted to seven planetary identities.
+11.5a. The constraint test, owed. Could the assignments be recovered from planetary profiles specified independently, without sight of the mapping? Alternatives already visible on the text: Sardis, "ἥξω ὡς κλέπτης" (3:3), fits Hermes as god of thieves as well as it fits Saturn; Philadelphia, the key and the door that "οὐδεὶς κλείσει" (3:7–8), fits Hermes of the doorway as well as Jupiter of kingship; Smyrna, "ὃς ἐγένετο νεκρὸς καὶ ἔζησεν" (2:8), fits the setting and rising Sun as well as the Moon. Pergamum (sword, killing, war), Thyatira (πορνεία, adultery, the morning star) and Laodicea (heat, fire-refined gold, sight, throne) admit no comparable rival on their own text. The test, run properly: fix the seven profiles from a source outside the archive (a planetary signification list of the period, seated), score each letter against each profile, record every tie. The result says how far the configuration constrains the assignment and how far it permits reassignment.
+
+## 12. The Ginza (Lidzbarski 1925, Right Ginza, Book I, §§191–200; Book II.1, §§139, 151–152), translation-witness
+
+12.1. §191: "Dann erscheint Christus, der Prophet der Juden. Er ruft den Planeten zu, er macht sie zu seiner Partei". §192: the seven Dews, the seducers: Šamiš (Sun); Ruha d-Qudša, Estra, Libat (Venus); Nbu (Mercury), "der Lügen-Messias, der die erste Lobpreisung verfälscht"; Sin (Moon); Kewan (Saturn); Bel (Jupiter); Nerig (Mars).
+12.2. House by house, a distortion each: the Sun's house "Boten schickt er in die Welt hinaus" (§193); Libat's madness, adultery, song and sorcery (§194); Nbu-Christus captures, and appears in fire: "Sehet, wie mein Glanz über der Welt aufgegangen ist." Sie wissen nicht, daß es nicht sein Glanz ist (§195); Kewan's lament and false wisdom (§196); Nerig's flaying and blood, "Schinder, Pfaffen, Priester und Orakelmänner" (§197).
+12.3. GR II.1 §139: the angels of fault anoint Nbu from the oil-horn and clothe him in fire; §151: John baptizes forty-two years "bevor Nbu einen Körper anzieht und sich in die Welt begibt."
+12.4. Status: the Ginza's compilation is late; it is seated as a translation-witness. OCR spellings normalized here (Lügen, verfälscht, Körper, daß, Glanz).
+
+## 13. The Haran Gawaita
+
+13.1. In the archive: #1101 §IX, §X, §0.4 and §2 (from the blog posts of 28–29 October 2025: "THE ARCHIVE BURNS CLEAN", "UNSEALING THE CHURCHES", "SEVEN CHURCHES FIT EVALUATION"), with quotations "Mercury founded a community in Qom", "Saturn founded a community in Sinai", "Sixty thousand Nasoraeans abandoned the Sign of the Seven", the Son of Slaughter with Mars, and Qiqil.
+13.2. The text: Drower, *The Haran Gawaita and the Baptism of Hibil-Ziwa* (Studi e Testi 176, Vatican 1953); Burtea, *Haran Gauaita* (Harrassowitz 2020). Checked 2026-11-10 against the Drower translation as published by the Gnostic Society Library (gnosis.org/library/haran.htm, which omits Drower's footnotes; copy supplied by the author), and against the Mandaic transliteration of the Comprehensive Aramaic Lexicon, text 74501, "Haran Gauaita", based on DC 36 (page 1 supplied by the author). Neither is seated.
+13.3. Verification of the #1101 quotations. "Sixty thousand Nasoraeans abandoned the Sign of the Seven": verbatim in Drower ("And sixty thousand Nasoraeans abandoned the Sign of the Seven and entered the Median hills"); Mandaic "u$itin alpia naSuraiia (tparaq mn ru$umaihun D$uba". "Saturn founded a community in Sinai": verbatim. "Mercury founded a community in Qom": Drower spells the place Qum ("for Mercury founded a community in Qum, and Saturn founded a community in Sinai"), and the same passage calls Nazareth "the city of Qum" ("from Nisrat (Nazareth), a city of the Jews, which is called the city of Qum"); the gloss "(Qumran?)" in #1101 is the author's. The Mandaic names the gods: "$kinta Dnbu bgauH Dqum kan kinta ukiuan bTura Dsinai kan kinta", Nbu (Mercury) at Qum and Kiwan (Saturn) on Mount Sinai. The Son of Slaughter: #1101 has "He is the most degraded of false prophets... Mars accompanied him... he converted people by the sword"; Drower has "for he is the most degraded of false prophets. Mars accompanieth him because he is the Seal of prophets of the Lie" and "he drew the sword and converted people to himself by the sword". The tense of "accompanied" and the dropped "to himself" are paraphrase inside the quotation marks; a repair to #1101, if the author rules one, quotes Drower's wording. Qiqil (Ruha disguised as Hibil-Ziwa, the writings, the schism, the burning): the #1101 summary matches Drower.
+13.4. What the text adds for the seven, beyond #1101. The darkness is a seven: "Ruha and her seven sons", the building "Ruha and her seven sons built", a building "surrounded (it by) seven walls", the Jews "called ' of the House of the Seven '". The remedy is a seven: Hibil-Ziwa sends Anuš-ʿUthra with "seven shafts, that is seven darts" and "seven guards from Mount Parwan" who "speak over them seven (magic) words". The seven guards are named and stationed, one in Baghdad, one on the Tigris, one at its source, one on the Euphrates, one at Pumbdita, one on the mountains of Glazlak, one at the end of the Parwan range, and then "Anus'-'Uthra placed them (the Seven viceroys) at the seven corners of the House, upon the seven horns of the worlds, in order to crush the power of Darkness and to establish the Call of the Life" (the page's spacing before commas and its line-break hyphen in "cor- ners" normalized here and below). The seven of Ruha is answered by a seven of the Life seated on the same stations. The structure is a reseating of the seven; the number and the stations survive, and the occupants are replaced (11.3). The text is late: the copy is dated in the Arab era and the work speaks of the Son of Slaughter and of Muhammad son of ʿAbdallah, so it witnesses the Mandaean shape of the operation, at a date well after Revelation. The false Messiah is Mercury ("He is Mercury, who attracteth attention"), with the Ginza §192 (12.1: Nbu, "der Lügen-Messias"); the end of the world goes to "Mamit daughter of Qin, the mother of the Seven".
+13.5. Join to Revelation on the seated text. The conventional source comes first: Zech 4:10, "ἑπτὰ οὗτοι ὀφθαλμοί εἰσιν οἱ ἐπιβλέποντες ἐπὶ πᾶσαν τὴν γῆν." Philo gives the seeing office to the messengers, "ὥσπερ μεγάλου βασιλέως ἀκοαὶ καὶ ὄψεις, ἐφορῶσαι πάντα καὶ ἀκούουσαι" (Somn. 1.140). Then the Lamb "ἔχων κέρατα ἑπτὰ καὶ ὀφθαλμοὺς ἑπτά, οἵ εἰσιν τὰ ἑπτὰ Πνεύματα τοῦ Θεοῦ ἀπεσταλμένοι εἰς πᾶσαν τὴν γῆν" (Rev 5:6). Seven horns, and seven sent out into all the earth; in the Gawaita, seven sent and seated "upon the seven horns of the worlds". The phrase-level match is in Drower's English; the Mandaic of that line is on a later CAL page, unread.
+
+## 14. The precedent: heavenly and common Aphrodite (the author, 2026-11-10: "there is specific precedent for this in connection with sappho in plato: heavenly and earthly aphrodite")
+
+14.1. Plato, Symp. 180d–e: Pausanias undertakes to set the speech right, "ἐγὼ οὖν πειράσομαι τοῦτο ἐπανορθώσασθαι", and divides the goddess: "ἡ μέν γέ που πρεσβυτέρα καὶ ἀμήτωρ Οὐρανοῦ θυγάτηρ, ἣν δὴ καὶ Οὐρανίαν ἐπονομάζομεν· ἡ δὲ νεωτέρα Διὸς καὶ Διώνης, … ἣν δὴ Πάνδημον καλοῦμεν." (180d–e) Two Aphrodites, two Erotes.
+14.2. Symp. 180e–181a, the rule: "πᾶσα γὰρ πρᾶξις ὧδʼ ἔχει· αὐτὴ ἐφʼ ἑαυτῆς πραττομένη οὔτε καλὴ οὔτε αἰσχρά." Then "καλῶς μὲν γὰρ πραττόμενον καὶ ὀρθῶς καλὸν γίγνεται, μὴ ὀρθῶς δὲ αἰσχρόν. οὕτω δὴ καὶ τὸ ἐρᾶν καὶ ὁ Ἔρως οὐ πᾶς ἐστι καλὸς οὐδὲ ἄξιος ἐγκωμιάζεσθαι, ἀλλὰ ὁ καλῶς προτρέπων ἐρᾶν." The power is one; its state is its relation. Pausanias's verb, ἐπανορθώσασθαι, is Philo's noun for what renaming does: "διὰ συμβόλων ἠθῶν ἐπανόρθωσιν" (Mut. 70).
+14.3. Xenophon, Symp. 8.9–10: "εἰ μὲν οὖν μία ἐστὶν Ἀφροδίτη ἢ διτταί, Οὐρανία τε καὶ Πάνδημος, οὐκ οἶδα·" and "εἰκάσαις δʼ ἂν καὶ τοὺς ἔρωτας τὴν μὲν Πάνδημον τῶν σωμάτων ἐπιπέμπειν, τὴν δʼ Οὐρανίαν τῆς ψυχῆς τε καὶ τῆς φιλίας καὶ τῶν καλῶν ἔργων."
+14.4. Philo reads both banquets and answers them. Contempl. 57: "Τῶν ἐν τῇ Ἑλλάδι συμποσίων τὰ περιβόητα καὶ σημειωδέστατα δύο ταῦτά ἐστιν, οἷς καὶ Σωκράτης παρετύγχανε". Contempl. 60, of Plato's: "τὸ γὰρ πλεῖστον αὐτοῦ μέρος ὁ κοινὸς καὶ πάνδημος ἔρως διείληφεν". Against them he sets the banquet of the Therapeutae (Contempl. 64 ff.), which ends at dawn: "μεθυσθέντες οὖν ἄχρι πρωΐας τὴν καλὴν ταύτην μέθην", standing toward the east, "ἐπὰν θεάσωνται τὸν ἥλιον ἀνίσχοντα" (Contempl. 89). The symposium is kept and purified; it closes on the Rising.
+14.5. The epithet: Pausanias's heavenly Aphrodite is ἀμήτωρ; Philo's hebdomad is likened by the philosophers "τῇ ἀμήτορι Νίκῃ καὶ Παρθένῳ" (Opif. 100).
+14.6. Revelation, the Venus station in the author's mapping (Thyatira). The distortion: Jezebel "διδάσκει καὶ πλανᾷ τοὺς ἐμοὺς δούλους πορνεῦσαι" (2:20), "καὶ οὐ θέλει μετανοῆσαι ἐκ τῆς πορνείας αὐτῆς" (2:21). The gift to the one who conquers: "καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν" (2:28), the morning star, Philo's φωσφόρος among the seven (Her. 224). And at the close: "Ἐγὼ Ἰησοῦς … ὁ ἀστὴρ ὁ λαμπρός, ὁ πρωϊνός" (22:16). At the Venus station the πορνεία is judged and the morning star is given, and the morning star is Jesus.
+14.6a. The three precedents do three different things, and the difference matters. Pausanias makes two goddesses by birth, the elder motherless and the younger of Zeus and Dione, and two Erotes with them (180d–e); then he gives one rule for acts, that an act is neither fair nor foul in itself and becomes one or the other by how it is done (180e–181a). Xenophon's Socrates does not know whether Aphrodite is one or two, and keeps the two altars and the two sacrifices (8.9–10). Philo keeps the banquet and changes its company (Contempl. 57–89). Thyatira works by Pausanias's rule: the letter does not name a second star; one star is given to the conqueror, and the act that misuses its province, πορνεία, is judged. The genealogy of two goddesses is the precedent for the division; the rule for acts is the precedent for the purification.
+14.7. The Sappho join in Plato: Phaedr. 235c, Socrates' full breast filled from another's streams, "ἤ που Σαπφοῦς τῆς καλῆς ἢ Ἀνακρέοντος τοῦ σοφοῦ"; the speech that follows is retracted in the palinode on heavenly eros. Archive: #752 (Sappho as initiatory figure in the Platonic mysteries), #1756.
+14.8. The Ginza, the same power on the other side: Libat is named "der heilige Geist, Estra (Venus)" among the seven seducers (GR I §192).
+
+# Part III. The commission
+
+## 15. The commission
+
+The third task: whether the architecture of Parts I and II also authorizes further writing. The book's own grammar is read first (15.1), each crossing between agents is marked (15.2), and the downstream sequence the hypothesis needs is set out on the seated text (15.3).
+
+15.1. The commission (the author, 2026-11-10: "the logos does not give messages to the churches. *he gives messages to the messengers and commissions them to go and give the message*, i.e. - he commissions future writing"). On the text: no letter is addressed to a church. Every one is addressed "Τῷ ἀγγέλῳ τῆς ἐν … ἐκκλησίας" (2:1, 8, 12, 18; 3:1, 7, 14). What the speaker issues is a command to write, "γράψον", twelve times (1:11, 19; 2:1, 8, 12, 18; 3:1, 7, 14; 14:13; 19:9; 21:5), with the order to send: "γράψον εἰς βιβλίον καὶ πέμψον ταῖς ἑπτὰ ἐκκλησίαις" (1:11). The messenger is sent to carry the testimony on to the churches, said twice at the close: "ἀπέστειλεν τὸν ἄγγελον αὐτοῦ δεῖξαι τοῖς δούλοις αὐτοῦ" (22:6), and "Ἐγὼ Ἰησοῦς ἔπεμψα τὸν ἄγγελόν μου μαρτυρῆσαι ὑμῖν ταῦτα ἐπὶ ταῖς ἐκκλησίαις" (22:16). The churches receive what is said to them through the Spirit's voice in the hearing formula; the message itself is given to the messenger, with a commission. Writing is commanded, withheld, and released by the same voice: "Σφράγισον ἃ ἐλάλησαν αἱ ἑπτὰ βρονταί, καὶ μὴ αὐτὰ γράψῃς" (10:4); "Δεῖ σε πάλιν προφητεῦσαι" (10:11); "Μὴ σφραγίσῃς τοὺς λόγους τῆς προφητείας τοῦ βιβλίου τούτου" (22:10). The book is a commission of writing still to be done. Revelation First, #1735 (IV.1), has the address to the angel and the single book to seven churches; the commission adds the forward direction. The one sent, in Greek, is the ἀπόστολος, and the first station tests the sent: "ἐπείρασας τοὺς λέγοντας ἑαυτοὺς ἀποστόλους καὶ οὐκ εἰσίν" (2:2). The author (2026-11-10): "the epistles are the literal manifestation of what the logos commissions in revelation." On that reading the letters to churches, carried by the sent, are the commission carried out, and the testing of false sent-ones is written into the commission at its first station. This is the join to the Revelation First paper (#1735, the missing ancestors of the epistles): the ancestor is the commission.
+15.2. The crossings, marked one by one. Four agents carry the commission inside the book, and each step is a different grammatical act. (i) John is commanded to write and send: "γράψον … καὶ πέμψον" (1:11); the imperative is his. (ii) The seven messengers are the addressees of what John writes, "Τῷ ἀγγέλῳ … γράψον" (2:1 and in every letter); nothing in that grammar commands the messenger to write. (iii) One messenger is sent to testify for the churches, "ἔπεμψα τὸν ἄγγελόν μου μαρτυρῆσαι ὑμῖν ταῦτα ἐπὶ ταῖς ἐκκλησίαις" (22:16); this is the speaker's own messenger, singular. (iv) The Spirit speaks to the churches, "τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις". The next step, from the seven addressed messengers to writers of letters that follow, is the author's reading (2026-11-10), and it is a step outside the book: the commission the book performs on those who read it, as distinct from the commission it narrates. The book narrates the first and prepares the second. It blesses the public reader, "Μακάριος ὁ ἀναγινώσκων καὶ οἱ ἀκούοντες" (1:3), and it closes against any who add or take away (22:18–19).
+15.3. The downstream sequence the hypothesis needs: what the letters to churches enact, on the seated text, against what the commission sets up.
+- Authority received as a messenger: "ἀλλὰ ὡς ἄγγελον Θεοῦ ἐδέξασθέ με, ὡς Χριστὸν Ἰησοῦν" (Gal 4:14), after "τὸν πειρασμὸν ὑμῶν ἐν τῇ σαρκί μου οὐκ ἐξουθενήσατε" (4:14). The sent one is received as ἄγγελος, through a trial.
+- Testing of the sent: "ψευδαπόστολοι, ἐργάται δόλιοι, μετασχηματιζόμενοι εἰς ἀποστόλους Χριστοῦ" (2 Cor 11:13), and "αὐτὸς γὰρ ὁ Σατανᾶς μετασχηματίζεται εἰς ἄγγελον φωτός" (11:14); with Rev 2:2, "ἐπείρασας τοὺς λέγοντας ἑαυτοὺς ἀποστόλους καὶ οὐκ εἰσίν". Testing of messengers by their message: "ἐὰν ἡμεῖς ἢ ἄγγελος ἐξ οὐρανοῦ εὐαγγελίσηται ὑμῖν παρ’ ὃ εὐηγγελισάμεθα ὑμῖν, ἀνάθεμα ἔστω" (Gal 1:8).
+- Public reading commanded: "Ἐνορκίζω ὑμᾶς τὸν Κύριον ἀναγνωσθῆναι τὴν ἐπιστολὴν πᾶσιν τοῖς ἀδελφοῖς" (1 Thess 5:27); with Rev 1:3.
+- Circulation among churches, one letter belonging to more than one, and Laodicea named: "ποιήσατε ἵνα καὶ ἐν τῇ Λαοδικέων ἐκκλησίᾳ ἀναγνωσθῇ, καὶ τὴν ἐκ Λαοδικίας ἵνα καὶ ὑμεῖς ἀναγνῶτε" (Col 4:16); with the hearing formula, each letter to all seven (#1735 IV.1: "Each local message belongs to all seven"), and Rev 3:14.
+- Address to a city's church by name, Ephesus among them: "τοῖς ἁγίοις τοῖς οὖσιν ἐν Ἐφέσῳ" (Eph 1:1, Nestle 1904; the words ἐν Ἐφέσῳ are missing from early witnesses, so the address is itself a textual question).
+The conventional chronology puts these letters before Revelation and reads the shared features as common church practice; the Revelation-first reading reads them as the commission carried out. The sequence is the material on which the two readings are tested, feature by feature: authority, address, testing of the sent, corrective speech, circulation, public reading.
+# Part IV. The filing
+
+## 16. Scholarship on Philo and Revelation (searched 2026-11-10)
+
+16.1. The joins were made at the founding of modern Revelation commentary, and filed. Bousset, *Die Offenbarung Johannis* (KEK 16, 6th ed., Göttingen 1906; read in the Vandenhoeck & Ruprecht reprint, archive.org dieoffenbarungjo0000bous; wording checked against the page images). On 1:4 (p. 187), the seven spirits: "so ist hier ebenso wie in den Parallelstellen des Sacharja, die ursprüngliche Beziehung der Geister zu den planetarischen Gottheiten noch einigermaßen deutlich", and n. 1: "Der Zusammenhang zwischen dem Kultsymbol des siebenarmigen Leuchters (Ex 25 31ff. Sach 4 2 vgl. Apk 1 12f.) und den Planeten war der jüdischen Überlieferung selbst nicht fremd", citing Josephus (BJ 5.217; AJ 3.146, 182) and Philo, Her. 221 ff., after Gunkel. On 1:12 (p. 193): the lampstands "stellen … Sternen-(Planeten-)Gottheiten dar"; Gunkel quoted, "Der Unterschied des alttestamentlichen und des in der Apk vorausgesetzten kultischen Symbols ist, daß bei jenem die Mächte des Himmels als Einheit, als Organismus, hier dagegen als selbständige Größen aufgefaßt sind" (Schöpfung und Chaos 294–302); then: "Doch hat der Apok. von alledem kaum noch eine Ahnung. Er deutet sich das alte Bild nachher in seiner Weise." On 19:13 (p. 431): "Daß in dem Logosnamen eine Spur johanneischer Theologie vorliegt, kann nicht bezweifelt werden. Ob freilich diese Bemerkung zum ursprünglichen Bestande des hier vorliegenden Zusammenhangs gehört, kann mit Recht bezweifelt werden." On 19:12 (p. 431) he sets the unknown name beside the Mandaeans: "Dieselbe Vorstellung von der geheimnisvollen Wirkungskraft verborgener Namen findet sich auch bei den Mandaeern" (Brandt, Mandäische Religion 114 f.). Bousset's index carries "Planeten (Götter) 186f. 193. 248. 418". Fraktur long s and umlauts normalized in transcription.
+16.2. Charles, *A Critical and Exegetical Commentary on the Revelation of St. John* (ICC, Edinburgh 1920), vol. 1, p. 12 n.: quotes Her. 221 ("τῆς κατ’ οὐρανὸν τῶν ἑπτὰ πλανήτων χορείας μίμημά ἐστιν ἡ ἱερὰ λυχνία καὶ οἱ ἐπ’ αὐτῆς ἑπτὰ λύχνοι", OCR-garbled in the scan) and Josephus, then: "Possibly these are merely after-thoughts of both Josephus and Philo." On 1:12–13: Gunkel and Zimmern "have drawn attention to the original connection between the seven-armed candlestick and the seven planets, and quoted the passages from Josephus and Philo ... But of this our Seer was probably wholly unconscious." On 19:13 (vol. 1, the vocabulary table): Revelation's Logos is "a conception developed in Jewish thought", John's "presupposes, while opposing, Philonic speculations". On 2:17 he notes that Philo (his "Quis rerum divin. 39, Leg. allegor. iii. 59, 61", Mangey's chapters; in sections, Her. 191, "τὴν οὐράνιον τροφὴν — σοφία δέ ἐστιν — τῆς ψυχῆς, ἣν καλεῖ μάννα", and Leg. 3.169–176) "uses manna as signifying 'the spiritual food of the soul'", and sets it aside.
+16.3. Charles, vol. 2, on 21:19–20: Philo (his "De Monarchia ii. 5" and "Vita Mos. iii. 14"; in sections, Spec. 1.87, "δώδεκα λίθοι πολυτελεῖς … πρὸς παράδειγμα τοῦ ζῳδιακοῦ τυπωθέντες", and Vit. Mos. II.124) and Josephus (AJ 3.186) read the twelve breastplate stones as the zodiac; Kircher's table gives each foundation stone its sign; read in the order the angel measures (21:13), the signs run in exactly the reverse of the sun's path. "Now this cannot be an accident." Charles concludes the Seer knew the correspondence and reversed it to show the Holy City has "nothing to do with the ethnic speculations of his own and past ages regarding the city of the gods". The twelve is kept, and its order turned. Charles reads this as disconnection; on the structure of 13.4 and §14 it is the same move as the seven: the stations kept, the relation corrected. The theory was later argued against (T. Francis Glasson, "The Order of Jewels in Revelation XXI. 19–20: A Theory Eliminated", JTS n.s. 26.1, April 1975, 95–100, doi 10.1093/jts/XXVI.1.95; verified from the issue contents; the article is paywalled, declared).
+16.4. Since: McDonough, *YHWH at Patmos: Rev. 1:4 in its Hellenistic and Early Jewish Setting* (WUNT II/107, Tübingen 1999) treats Philo's ὁ ὤν at pp. 79–83 and 162–168 (contents read from the publisher's front-matter PDF; the pages are paywalled, declared). Malina, *On the Genre and Message of Revelation: Star Visions and Sky Journeys* (Peabody 1995), the astral reading; on archive.org as a lending copy. Yarbro Collins, "Numerical Symbolism in Jewish and Early Christian Apocalyptic Literature", ANRW II.21.2 (1984); paywalled, declared. Fletcher-Louis on the priestly Son of Man (in *Auferstehung – Resurrection*, WUNT 135, 2001), reported secondhand; whether it treats Rev 1:13 is unverified. Hebrews and Corinthians: footnote (see the draft).
+16.5. Joins on the seated text not yet named in the literature found: Philo calls the planets "the seven stars", "τὰς περιόδους τῶν ἑπτὰ ἀστέρων" (Cher. 22), with Rev 1:16, 20 "ἑπτὰ ἀστέρας"; the eldest Logos puts on the cosmos as the high priest puts on the robe, "ἐνδύεται δ’ ὁ μὲν πρεσβύτατος τοῦ ὄντος λόγος ὡς ἐσθῆτα τὸν κόσμον" (Fug. 110), and the high priest's whole vestment is "ἀπεικόνισμα καὶ μίμημα τοῦ κόσμου" (Vit. Mos. II.117), beginning from the ποδήρης, "ἀρκτέον δ’ ἀπὸ τοῦ ποδήρους. οὗτος ὁ χιτὼν σύμπας ἐστὶν ὑακίνθινος, ἀέρος ἐκμαγεῖον· φύσει γὰρ ὁ ἀὴρ μέλας καὶ τρόπον τινὰ ποδήρης" (II.118); with the hanging bells and pomegranates it is the symbol of air, water and earth, "ὁ ποδήρης σὺν τοῖς ἀπῃωρημένοις κατὰ τὰ σφυρὰ σύμβολον ἐδείχθη" (II.121). In Revelation the one in the midst of the seven lampstands is "ἐνδεδυμένον ποδήρη" (1:13). On Philo's reading the robe is the air, the region where the messengers fly, "ψυχαὶ δ’ εἰσὶ κατὰ τὸν ἀέρα πετόμεναι" (Gig. 6): the one who addresses the messengers of the air wears the air.
+16.5a. A reviewer's quotation of Vit. Mos. II.118 as «οὗτος δ’ ἐστὶν ἀπόσημα καὶ μίμημα τοῦ ὅλου κόσμου» does not occur in the seated text; the cosmos is the reading of the whole vestment (II.117), and the ποδήρης is the air (II.118). Recorded so the misquotation does not travel.
+16.6. What the record shows. Bousset files the planetary lampstand as a survival the Apocalyptist "kaum noch" grasps; Charles files the same join on 1:12 as "after-thoughts" of Philo and Josephus and as something "our Seer was probably wholly unconscious" of; the same Charles, on 21:19–20, credits the Seer with full knowledge of the zodiac stones and a deliberate reversal, "Now this cannot be an accident." The filing is a judgment made case by case, and the cases differ in one thing. At 21:19–20 Charles had an order to test: twelve stones, a direction of measuring, a sequence that runs backward against the sun's path. An internal order counted for him as evidence of design. At 1:12 he had a number and a correspondence, and a number alone he filed as inheritance. The warrant he used is inspectable. The letters do not yet meet it: 11.4 gives a distributed configuration, seven fits, and Charles's warrant was a sequence with a direction. Two different evidentiary structures are in play, and the notebook keeps them apart. The letters earn Charles's warrant only if an ordering principle is shown; until then the test for them is the constraint test of 11.5a. The author (2026-11-10): "just another reminder of how deeply the filing biases directly shape what were able to see and read and speak".
+
+# Part V. The result
+
+## 17. What is established, and what is not
+
+17.1. Established, on the seated texts. (a) The quotation in the post of 2025-10-19 is not Philo's (0.2). (b) Philo names the Logos Ἀνατολή from an oracle that the Septuagint addresses to Ἰησοῦς crowned as high priest, and he quotes it without its addressee (§§3–4). (c) "Archangel" and the many names of the Logos, Israel among them, stand in De confusione 146. (d) The naming of the Logos and the law of prophetic displacement share their verbs, ἀνατέλλω and ἀποφθέγγομαι (§6). (e) Philo makes Ἰησοῦς the name of a re-struck state, and names Ἰησοῦς the imitator who takes Moses' type; Ἰησοῦς is one receiver among several distinct operations on distinct lives (7a.7). (f) The Logos's proper name is unsayable by Philo's doctrine and the Logos is approached through many names (Mut. 13–15); the Logos is the renamer of Jacob (Mut. 87). (g) De mutatione closes on "the Lord is in us," a line the Septuagint gives to Ἰησοῦς and Caleb, read as God, ἀνατολὴ τῶν ὅλων, walking within virtuous souls. (h) Justin attaches to Jesus the names Philo's construction holds, and the gathering is Justin's consolidation. (i) One treatise, Quis rerum divinarum heres, holds the Logos as divider, the lampstand of six divided by the seventh, the seven lamps as the planets with the Logos as the seventh, and the law of prophetic displacement (§9; Her. 130, 180, 216–225, 259–265). (j) Every letter of the Apocalypse is addressed to a messenger, the speaker commands writing twelve times, and sends a messenger to testify to the churches (15.1). (k) Philo's and Zechariah's lampstand is one with seven lamps, the Apocalypse's seven lampstands; the change was named by Gunkel and Bousset and has its consequence at 2:5 (11.1b). (l) In the Haran Gawaita Ruha's seven are answered by seven guards of the Life stationed "upon the seven horns of the worlds"; the Mandaean operation keeps the stations and replaces the occupants, the Johannine keeps the occupants and corrects them (11.3, 13.4). (m) Bousset and Charles printed Philo beside the lampstands; Charles credited design where he had a sequence (21:19–20) and inheritance where he had a number (1:12) (§16).
+
+17.2. Not established: that Philo had Zechariah 6:11 in view; that Philo knew of any Jesus movement; that Justin read Philo; that Zechariah's Ἀνατολή is the crowned Ἰησοῦς; any dependence between Philo and the Apocalypse; the planetary assignments of Smyrna, Sardis and Philadelphia beyond the mapping (11.4); the constraint test of 11.5a, owed; that the epistles answer the commission, which is the author's reading, with the downstream sequence of 15.3 the material on which it is tested against the received chronology. Each is stated where it is used.
+
+17.3. The reading turns more than one lock. The vocabulary that names the Logos in Conf. 62–63 is the vocabulary of prophetic displacement in Her. 259–265, which #1486 had already collated as the Sapphic channel without reference to Zechariah; the names Justin uses for Jesus are the names Conf. 62–146 gathers; the treatise that holds the displacement law also holds the seventh that divides and the lampstand of the planets. Nothing was moved to make the fit.
+
+## 18. Where it enters
+
+18.1. EA-HK-REVFIRST-01 (#1755): rung VI, the permanent incarnation, and the genetic reading. The Logos takes a name from a verse addressed to a crowned Ἰησοῦς, in an author who also writes the law by which a speaker's voice becomes another's; and the seven of the letters are read against the seven of the same author's lampstand.
+
+18.2. EA-HK-TENTHMUSE-01 (#1756): by #1486 and the displacement law, and by Plato's two Aphrodites with Sappho named in the Phaedrus (14.7).
+
+18.3. EA-HK-HISTLOGOS-01 (#1757): the home of the join.
+
+18.4. Revelation First (#1735), IV.1: the address to the messenger and the single book to seven churches, extended here by the commission (§15). Secondary Source (#1741): the reception that filed the Apocalypse as derivative, extended here by the filing of Philo (§16).
+
+18.5. The Sharks Ark (#1101): the planetary mapping of the seven churches, tested letter by letter (11.4); its diagnosis for Philadelphia reads a fault the letter does not name, recorded and left as deposited. Its quotation of the Haran Gawaita on the Son of Slaughter paraphrases inside quotation marks (13.3), recorded and left as deposited.
+
+18.6. Related work: the five blog posts of 2025-10-19 and 2025-11-09; #636 (the Space Ark); #626 (the Slavonic Josephus and the grammar of incarnation); #642 and #1458 (the stamp); #165 and #828 (Pergamum and the white stone); #752 (Sappho in the Platonic mysteries).
+
+## 19. Apparatus: reviews and corrections
+
+19.1. Five outside reviews were read on 2026-11-10, each point checked against the seats before anything was changed.
+
+19.2. Gemini, on the seven notebook. Adopted: Somn. 1.140, the messengers as the great king's eyes and ears, for the seven eyes of 5:6, set after Zech 4:10 (13.5). Not adopted: a quotation of Vit. Mos. II.118, «οὗτος δ’ ἐστὶν ἀπόσημα καὶ μίμημα τοῦ ὅλου κόσμου», which does not occur in the seated text (16.5a); Mut. 39 as a text of oversight; a cross-reference giving #1748 a title it does not bear. Its distinction between replacement and purification is adopted in the sharper form of 11.3.
+
+19.3. DeepSeek, on the seven notebook. Not adopted: an account of the commentators by motive; the claim that the Ginza redeems the seven, which the Ginza rejects (§12).
+
+19.4. ChatGPT, on the seven notebook, first reading. Adopted: Her. 216–219 at the centre of the Philo argument (9.3a); the one lampstand and the seven kept distinct (11.1b); the messengers as addressed stations, the author's "senders" refined on the syntax (11.1a); every letter read whole for attribute, condition, demand, promise and planet (11.4); the three Aphrodite precedents distinguished (14.6a); the overstatement of §16.6 corrected.
+
+19.5. ChatGPT, second reading. Adopted: each crossing of the commission marked between agents (15.2), and the downstream sequence set out (15.3); the seven letters called a distributed configuration with no order claimed (11.5), and the constraint test stated with its visible alternatives (11.5a); retention made conditional on response (11.5).
+
+19.6. ChatGPT, on the Philo draft. Adopted: the doctrine of the unsayable proper name limited to what it establishes (5.4); the proposition of 0.2 restated as a construction; Ἰησοῦς read within the plurality of receivers (7a.7) and Justin's gathering named as a consolidation (8.6); the access to the sealed name kept distinct between Philo and the Apocalypse (7b.7a); the line between Philo's statements and the reading kept visible (0.4); its ordering of the work into three tasks (Part II, opening).
+
+19.7. Corrections made in session before the reviews: the Anatole oracle is spoken to the crowned Ἰησοῦς, and whether the man named Ἀνατολή is that Ἰησοῦς or a second figure is left open (4.3); the count of ἀνατολή in De mutatione is two (2.5); the apparatus interleaved in the Philo text layer is removed by reading the TEI; the Haran Gawaita quotations of #1101 were checked against Drower and the Mandaic when the author supplied the text.
+
+19.8. The author's rulings: the Philo piece and the seven are one paper; the title; the authorship under Johannes Sigil and Damascus Dancings; the venue; the Crimson Hexagonal Archive credited as a contributor (2026-11-10).
+
+## Sources
+
+Seated texts: Philo, Opera, ed. Cohn–Wendland (#1505; First1KGreek); the Septuagint, ed. Swete (#1503); the Greek New Testament, Nestle 1904 (#1502); Plato, Symposium and Phaedrus; Xenophon, Symposium; Justin, Dialogus cum Tryphone, ed. Archambault 1909 (EA-CORPORA-34/03); Eusebius, Historia ecclesiastica (seated); Lidzbarski, Ginza: Der Schatz oder das große Buch der Mandäer (Göttingen 1925), translation-witness.
+
+Barker, Margaret. 1991. "Temple Imagery in Philo: An Indication of the Origin of the Logos?" In *Templum Amicitiae: Essays on the Second Temple Presented to Ernst Bammel*, ed. W. Horbury, 70–102. Sheffield: JSOT Press. https://mail.jbburnett.com/resources/barker/barker_logos%20in%20philo.pdf
+
+Bousset, Wilhelm. 1906. *Die Offenbarung Johannis*. KEK 16, 6th ed. Göttingen: Vandenhoeck & Ruprecht; read in the reprint, https://archive.org/details/dieoffenbarungjo0000bous, pp. 187, 193, 431.
+
+Burtea, Bogdan. 2020. *Haran Gauaita*. Wiesbaden: Harrassowitz. [declared; not read]
+
+Carrier, Richard. 2014. *On the Historicity of Jesus: Why We Might Have Reason for Doubt*, 200–205. Sheffield: Sheffield Phoenix Press. [declared; not read here]
+
+Carrier, Richard. 2023. "And So Kipp Davis Conclusively Demonstrates His Incompetence as a Scholar." 31 August. https://www.richardcarrier.info/archives/25199
+
+Charles, R. H. 1920. *A Critical and Exegetical Commentary on the Revelation of St. John*. 2 vols. ICC. Edinburgh: T&T Clark. https://archive.org/details/internationalcriticalcommentary
+
+Comprehensive Aramaic Lexicon. Text 74501, "Haran Gauaita," based on DC 36. https://cal.huc.edu/get_a_chapter.php?file=74501
+
+Drower, E. S. 1953. *The Haran Gawaita and the Baptism of Hibil-Ziwa*. Studi e Testi 176. Vatican City. Translation as published by the Gnostic Society Library, http://gnosis.org/library/haran.htm (without Drower's notes).
+
+Fletcher-Louis, Crispin. 2001. "The Revelation of the Sacral Son of Man." In *Auferstehung – Resurrection*, ed. F. Avemarie and H. Lichtenberger. WUNT 135. Tübingen: Mohr Siebeck. [reported secondhand; not read]
+
+Glasson, T. Francis. 1975. "The Order of Jewels in Revelation XXI. 19–20: A Theory Eliminated." *Journal of Theological Studies* n.s. 26.1: 95–100. https://doi.org/10.1093/jts/XXVI.1.95 [declared; paywalled, not read]
+
+Gullotta, Daniel N. 2017. "On Richard Carrier's Doubts." *Journal for the Study of the Historical Jesus* 15: 310–346. https://doi.org/10.1163/17455197-01502009 [declared; paywalled, not read]
+
+Gunkel, Hermann. 1895. *Schöpfung und Chaos in Urzeit und Endzeit*, 294–302. Göttingen. [as quoted by Bousset]
+
+Hecht, Richard D. 1987. "Philo and Messiah." In *Judaisms and Their Messiahs at the Turn of the Christian Era*, ed. J. Neusner, W. S. Green and E. S. Frerichs, 150. Cambridge: Cambridge University Press. [as reported at intertextual.bible; not read]
+
+Hurtado, Larry W. 1988. *One God, One Lord: Early Christian Devotion and Ancient Jewish Monotheism*, 44–49. Philadelphia: Fortress. [declared; not read here]
+
+Hurtado, Larry W. 2017. "Gee, Dr. Carrier, You're Really Upset!" 7 December. https://larryhurtado.wordpress.com/2017/12/07/gee-dr-carrier-youre-really-upset/
+
+intertextual.bible. "Compare LXX Zechariah 6:12 and Philo On the Confusion of Tongues 1:62." https://intertextual.bible/text/lxx-zechariah-6.12/philo-on-the-confusion-of-tongues-62
+
+Lanier, Gregory R. 2015. "The Curious Case of צמח and ἀνατολή: An Inquiry Into Septuagint Translation Patterns." *Journal of Biblical Literature* 134: 505–527. [declared; paywalled, not read]
+
+Malina, Bruce J. 1995. *On the Genre and Message of Revelation: Star Visions and Sky Journeys*. Peabody: Hendrickson. https://archive.org/details/ongenremessageof0000mali [lending copy; not read here]
+
+McDonough, Sean M. 1999. *YHWH at Patmos: Rev. 1:4 in its Hellenistic and Early Jewish Setting*. WUNT II/107. Tübingen: Mohr Siebeck. [contents read; pp. 79–83, 162–168 paywalled, declared]
+
+Yarbro Collins, Adela. 1984. "Numerical Symbolism in Jewish and Early Christian Apocalyptic Literature." *ANRW* II.21.2. [declared; paywalled, not read]
+
