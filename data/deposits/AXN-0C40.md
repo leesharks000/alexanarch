@@ -1,14 +1,14 @@
 ---
 deposit_number: 1749
 hex: 0C40
-title: "Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v9)"
+title: "“But I Must Dare All”: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v10)"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-11-07
 content_type: Journal article (Machine-Mediated Reception Studies); reception study with an empirical protocol
 license: CC-BY-4.0
 substrate: "AI-assisted (substrate). v9 (8 November 2026) reconciled against the file the referees read, the corrected manuscript of 27 July, the ScholarOne proof of 30 July and the registry's July record, at the author's word. v8 revised by TACHYON (Claude, Anthropic) under the direction of MANUS (Lee Sharks), from v7 and the author's reading of it, on 7 November 2026, after v7 was revised from v6, the two referee reports and the further review of its Appendix B, as the article's Production statement sets out: the archive's records, the capture registry, the seated editions and first printings read, the January output aligned with its witnesses (rebuild/closing-the-fragment/align.py), every quotation checked against its source. Lee Sharks set the terms, ruled on the design, corrected the account of the translation history, and supplied the record of the June sessions and of the January book. Rebekah Cranes is a heteronym of Lee Sharks, disclosed at first mention."
-version: v9
+version: v10
 related_ids: "#337 (The Summarizer Becomes Translator, the January record); #1270 (ΦΑΙΝΕΤΑΙ ΜΟΙ); #281; #282 (Day and Night, 2013 text); #313; #324; #1167; #201, #1048, #1049 (the errata on the reconstruction); #1068 (The Obelus and the Tombstone); #1475, #1476, #1478; #1532; #1548 (Research Notes Towards the Future Reader); #1500, #1504, #1508 (EA-CORPORA-01: Catullus, Longinus, the diplomatic layer); #1738 (EA-CORPORA-33: Bergk, Edmonds); #1748 (EA-CORPORA-36 v1.1: the reception's sources); #1739 (EA-WG-CAPTURES-01 v12.559); #741 (The Evaluator Exists); #1054 (EA-MPAI-SAPPHO31-01); #1615"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -16,6 +16,7 @@ keywords:
   - Sappho
   - Sappho 31
   - fragment 31
+  - But I Must Dare All
   - Closing the Fragment
   - classical reception
   - machine-mediated reception
@@ -62,11 +63,11 @@ keywords:
   - MMRS
 ---
 
-# Closing the Fragment: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v9)
+# “But I Must Dare All”: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v10)
 
 ## Sappho 31 and the Composition Layer as a Surface of Classical Reception
 
-Lee Sharks · v9 · 8 November 2026 · Machine-Mediated Reception Studies · reissued in place from v8 (#1749), rebuilt from v7, which was revised from v6 (CLASSREC-2026-062, declined 7 November 2026)
+Lee Sharks · v10 · 10 November 2026 · Machine-Mediated Reception Studies · reissued in place from v9 (#1749), retitled; v9 reissued in place from v8, rebuilt from v7, which was revised from v6 (CLASSREC-2026-062, declined 7 November 2026)
 
 ---
 
@@ -81,6 +82,8 @@ Keywords: Sappho; Fragment 31; classical reception; translation history; κῆν
 ---
 
 ### 0. Note on this version
+
+v10 (10 November 2026) changes the title and nothing else. The article was deposited as *Closing the Fragment*; on 27 July the author had called that title bland and left the question for later, and the line the composition supplied, “But I must dare all.”, was then put forward as the main title, with the argument in the subtitle. The author adopted it on 10 November. The subtitle is the one the article now carries.
 
 v6 was declined by Classical Receptions Journal on 7 November 2026 on two referee reports. The reports were written on the file first sent (v6). A corrected manuscript, sent to the editor on 27 July before upload, withdrew v6's Figure 2, stated the 14 June record as a transcription, and showed the 27 July capture under its AI Overview label; the editor forwarded it, and the file uploaded on 30 July was v6 (ScholarOne, File 1, CRJ_Closing_the_Fragment_v6.docx). The author kept the correction out of the archive's public versions under the journal's rule on prior circulation, so v7 and v8 were rebuilt from v6 and took its defects for the manuscript's. v9 (8 November) restores what the correction of 27 July held, rewrites the account of the frame (§5.4, A.3) to the record, and states which of the reports' points the corrected manuscript had already met (Appendix A, B.7). v7 (#1749, the same day) answered every point in them (Appendix A) and a further review (Appendix B.1–B.4). Its revisions were of two kinds. Corrections of record stand in this version: the June frames and figure numbers, the dates of the translator's texts, the English baseline, the first printings seated as EA-CORPORA-36 (#1748). A second kind of change went past the evidence. v7 read the correspondences between the output's lines and Wharton's literal version as the route of composition, a compilation of two texts, and withdrew v6's finding that the output was composed. The record of the answer's displayed source (#337 §5.2) shows no Wharton, and a correspondence of wording establishes no source. v8 holds the alignment as correspondence (§5.3), restores v6's finding in corrected form, sets the January answer against the environment its displayed source built, and puts the reading of the edge as the poem's form at the centre of the argument (§6.6, §7). Appendix B.5 records what changed.
 
