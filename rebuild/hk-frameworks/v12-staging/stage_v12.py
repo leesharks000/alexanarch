@@ -124,7 +124,7 @@ LOCI = [
  ("zach", "Ζαχαρίας 6:11", "Ἰησοῦ τοῦ Ἰωσεδὲκ τοῦ ἱερέως τοῦ μεγάλου",
   "the verse before the oracle: the crowns set on the head of Ἰησοῦς son of Iosedek, the high priest. The seated line carries apparatus text run into it (a seat defect, flagged below)."),
  ("zach", "Ζαχαρίας 6:12", "Ἰδοὺ ἀνήρ, Ἀνατολὴ ὄνομα αὐτῷ, καὶ ὑποκάτωθεν αὐτοῦ ἀνατελεῖ, καὶ οἰκοδομήσει τὸν οἶκον Κυρίου·",
-  "the oracle Philo quotes; the man named Anatole is the Ἰησοῦς of 6:11.")]
+  "the oracle Philo quotes, spoken to the Ἰησοῦς crowned in 6:11 ('καὶ ἐρεῖς πρὸς αὐτόν'). Whether the man named Anatole is that Ἰησοῦς or a second figure is disputed: two figures (Hurtado 2017); one, as later readers took it (Carrier 2014, 2023). Corrected 2026-11-10 from a gloss that stated the identity.")]
 BLOG = [
  ("2025-10-19", "PHILO SAYS IT OUT LOUD", "https://mindcontrolpoems.blogspot.com/2025/10/philo-says-it-out-loud.html", "the title of the piece (18:45)"),
  ("2025-10-19", "EFFECTIVE ACT: PHILO OF ALEXANDRIA", "https://mindcontrolpoems.blogspot.com/2025/10/effective-act-philo-of-alexandria.html", "related"),
@@ -133,7 +133,7 @@ BLOG = [
  ("2025-11-09", "VISUAL SCHEMA — Philo and the Chariot Companion", "https://mindcontrolpoems.blogspot.com/2025/11/visual-schema-philo-and-chariot.html", "related")]
 PHILO_FINDINGS = [
  "The post of 2025-10-19 quotes Philo: 'The name Jesus (Ἰησοῦς) is the name of the Logos' (De Mutatione Nominum §121–123), and attributes a Joshua–Logos sentence to Life of Moses II.114–132. Neither sentence is in the seated Cohn–Wendland text. Mut. 121–123 glosses Ἰησοῦς as 'salvation of the Lord, the name of the best state' and carries no Logos; Vit. Mos. II.114–132 carries no Joshua (it treats the high priest's vestments and the twofold logos). The post stays as published; the piece states what the seated texts carry.",
- "Philo identifies the Logos with the man of Zechariah 6:12, whose name is Anatole (Conf. 62–63, 146). In the LXX the verse before (Zech 6:11) crowns Ἰησοῦς son of Iosedek, the high priest, and 6:12 names him. Philo quotes 6:12 alone: the name rides in the verse, unsaid by Philo. That 6:11 is in his view is an inference, stated as one.",
+ "Philo identifies the Logos with the man of Zechariah 6:12, whose name is Anatole (Conf. 62–63, 146). In the LXX the oracle is spoken to Ἰησοῦς son of Iosedek, the high priest, crowned in 6:11. Philo quotes 6:12 alone and names neither Ἰησοῦς nor Zechariah. Whether the Anatole is the crowned Ἰησοῦς or a second figure is disputed (Hurtado 2017: two figures; Carrier 2014, 2023: one, as later readers took it); that 6:11 is in Philo's view is an inference, stated as one.",
  "The oracle comes from 'one of the companions of Moses' (τῶν Μωυσέως ἑταίρων τινός, Conf. 62). The Chariot Companion commentary (2025-11-09) turns on that phrase and says Philo 'did not leave us names'; at Conf. 62 the companion is Zechariah and what he utters is the Anatole oracle.",
  "Mut. 121–123 carries the renaming as a re-stamping (μεταχαράττων; τὸ τοῦ λεχθέντος νόμισμα), the vocabulary of #642 and #1458.",
  "The Sapphic channel in Philo is the subject of #1486 (Mut. 54–57, Her. 3–4, Migr. 47–48) and of #1458 (Philo beside Longinus). With the above, one author carries both the transform and the Logos-as-the-crowned-Ἰησοῦς: the join the genetic reading has to make across authors everywhere else."]
