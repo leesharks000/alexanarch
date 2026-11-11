@@ -45,20 +45,20 @@
   },
   "argument_layer": {
    "by_kind": {
-    "count": 79,
-    "datum": 761,
-    "defeat": 63,
-    "finding": 386,
-    "hypothesis": 353,
-    "inference": 355,
-    "method": 330,
-    "price": 103,
+    "count": 82,
+    "datum": 772,
+    "defeat": 65,
+    "finding": 402,
+    "hypothesis": 354,
+    "inference": 358,
+    "method": 332,
+    "price": 107,
     "reply": 102,
-    "rival": 99,
+    "rival": 103,
     "state": 306,
     "test": 68
    },
-   "edges": 2373,
+   "edges": 2422,
    "file": "04-arguments.jsonl",
    "how_read": "nine parallel readers, 2026-11-09, one range of records each, every record read in full, every quotation extracted from the seated text and asserted verbatim (check_args.py); the calibration exemplar #1735 drafted in session",
    "kinds": [
@@ -75,7 +75,7 @@
     "hypothesis",
     "state"
    ],
-   "moves": 3005,
+   "moves": 3051,
    "quotations_stale_at_build": [],
    "reading_instruction": "A reader reconstructing a record's argument reads its moves in 04-arguments.jsonl in order with their edges: data and counts support inferences and findings; prices, rivals, replies and defeat conditions stand beside the claims they bear on; hypotheses and states keep the strength the record gives them. Each quotation is verbatim, bound to the record's hash.",
    "records_with_moves": 49,
@@ -115,7 +115,7 @@
     "warrant": "Josephus as the single author, writing as 'John', held at #1101's own tier ('high-risk, high-reward historical hypotheses'), its strength bounded by #1217; its advancement suspended by the author (2026-11-09 09:52)"
    }
   ],
-  "built": "2026-11-10",
+  "built": "2026-11-11",
   "compression_survival_summary": "Revelation First is Lee Sharks's framework (Crimson Hexagonal Archive, #202, 14 June 2026; revelationfirst.com) holding that the Apocalypse of John is the first-composed book of the New Testament, a claim the seed sets apart from early dating ('not early, FIRST', #202). It keeps three claims apart (#1735): absolute compositional priority, a priced hypothesis; corpus priority, which does not face the chronological gate; generative priority, a research programme executed arrow by arrow. Its argument ladder has six rungs, each with a fit and a defeat condition: I dating (reversible), II the Gallio gap (same-class), III the first corpus (independent), IV the midrashim transform (executable), V the Josephus thesis (contingent), VI the permanent incarnation (dependent on V); V and VI fall without disturbing I–IV. Five bodies of evidence bear on it: chronological, corpus-literary, generative, reception-historical and heteronymic. The framework's states run from first in every respect with Josephus as author (#639, April) through first not early (#202, June) and the Josephus thesis bounded as an available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The current consensus chronology — Pauline priority by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied — is evaluated on the same bodies and rules: the burden is symmetrical (#202).",
   "contributors": [
    "Crimson Hexagonal Archive",
@@ -164,6 +164,48 @@
     ]
    },
    "rule": "A rung's defeat carries to every rung that depends on it (rung VI: 'Depends on V'; rung V: 'rungs I–IV do not depend on it in any direction'; rung III: 'This rung stands whether or not the rungs above it do'). The ladder's depends_on carries this; a derived_from edge between two claims licenses no state transition (#1529), and none is relied on here."
+  },
+  "fold_in_v14": {
+   "claims_added": [
+    "claim:rf-1758-withheld",
+    "claim:rf-1758-dependence",
+    "claim:rf-1758-sequence",
+    "claim:rf-1758-gawaita-key",
+    "claim:rf-1735-v9-asymmetry",
+    "claim:rf-1735-v9-hebrews",
+    "claim:rf-1735-v9-hebrews-open"
+   ],
+   "date": "2026-11-11",
+   "moves": "#1758: twelve moves re-quoted from the paragraphs v1.1 revised, ids kept, thirty-three new; #1735: thirteen new; every quotation asserted by check_args.py",
+   "not_versioned": "EA-HK-TENTHMUSE-01 (#1756) and EA-HK-HISTLOGOS-01 (#1757), at the author's word: the fold-in is for Revelation First, separate from the Sappho chain",
+   "records": [
+    {
+     "axn": "AXN:0C67.GENERATIVE.🧭🔗⚙️⛳⏫🪐",
+     "deposit": 1758,
+     "note": "In the Midst of the Seven v1.1: the dependence argued with the alternatives inside the test (16.7); Zechariah 3 and the name Philo withholds, read as a socket (2.6, 4.1a-4.5); the two Joshuas, Hebrews 4 and Justin (7a.8-7a.9); the white stone as acquittal (7b.9-7b.10); the letters' sequence against the Chaldean order (11.5b); the Haran Gawaita as key (13.0, 13.6, 13.7); Wolfson and Barker (16.5b)",
+     "record": "rec:1758",
+     "sha256": "50333254d80dcdff1cf96c9e406d8849704c56f567d9bb5674b838e6f820b7fd",
+     "version": "v1.1"
+    },
+    {
+     "axn": "AXN:0BE9.GENERATIVE.🟣👁‍🗨🔀🟠❄️⏏️",
+     "deposit": 1735,
+     "note": "Revelation First v9: the Philonic organization and Zechariah 3 as extant antecedents of the figure in the midst (VI.1); the Gawaita as a late witness (IV.1); the arrow to Hebrews 4.8-14, drawn and not run (VI.3); their conditions (VIII)",
+     "record": "rec:1735",
+     "sha256": "c6b0dfc214f8ca93ff8d2b4cf38f1d8082594ec35a0477502f89aa1f941ed39e",
+     "version": "v9"
+    }
+   ],
+   "rulings": [
+    {
+     "at": "2026-11-11 04:23",
+     "text": "and this is a new folding in, separate from the sappho chain, for revfirst"
+    },
+    {
+     "at": "2026-11-11 05:00",
+     "text": "ready"
+    }
+   ]
   },
   "framework": {
    "author": "Lee Sharks",
@@ -271,11 +313,15 @@
     "claim:rf-1758-stations",
     "claim:rf-1758-commission",
     "claim:rf-1758-direction",
-    "claim:rf-1758-warrant"
+    "claim:rf-1758-warrant",
+    "claim:rf-1758-withheld",
+    "claim:rf-1758-dependence",
+    "claim:rf-1758-sequence",
+    "claim:rf-1758-gawaita-key"
    ],
    "date": "2026-11-10",
    "evidence": {
-    "argument_layer": "these records entered the kernel at v1.2 without moves; at v1.3 (the author, 2026-11-10 21:31: \"lets do the argument moves\") each was read in full and its argument compressed into moves, each quotation asserted verbatim against the seated text (args/build_s*.py, mlib.py), and written into 04-arguments.jsonl",
+    "argument_layer": "these records entered the kernel at v1.2 without moves; at v1.3 (the author, 2026-11-10 21:31: \"lets do the argument moves\") each was read in full and its argument compressed into moves, each quotation asserted verbatim against the seated text (args/build_s*.py, mlib.py), and written into 04-arguments.jsonl; at v1.4 the moves of #1758 were brought to its v1.1 (args/v14_moves.py)",
     "records": [
      {
       "axn": "AXN:0598.GENERATIVE.♆💚♃📏👐🏁",
@@ -332,13 +378,13 @@
       "title": "EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalypses and Pseudepigrapha of the Second Temple, and Euclid, Each in Its Original Language"
      },
      {
-      "axn": "AXN:0C67.GENERATIVE.📖🜁⏹️🔥🌗🦋",
+      "axn": "AXN:0C67.GENERATIVE.🧭🔗⚙️⛳⏫🪐",
       "deposit": 1758,
-      "note": "In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.0), the Philo piece of the search, deposited 2026-11-10. the Philo piece, once deposited (18:56: 'the updated piece will go into the rev first frame'); rung VI and the genetic reading, by way of the Historical Logos.",
+      "note": "In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01), the Philo piece of the search, deposited 2026-11-10, at v1.1 since 2026-11-11. the Philo piece, once deposited (18:56: 'the updated piece will go into the rev first frame'); rung VI and the genetic reading, by way of the Historical Logos.",
       "record": "rec:1758",
-      "sha256": "41a0f710067cac6d66c2aecab958929b94d68cc29d291129e404accc7c0e55c6",
+      "sha256": "50333254d80dcdff1cf96c9e406d8849704c56f567d9bb5674b838e6f820b7fd",
       "status": "ACTIVE",
-      "title": "In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.0)"
+      "title": "In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.1)"
      }
     ],
     "stratum": "stratum:S0-records-search-v12"
@@ -528,22 +574,22 @@
    ],
    "joins": [
     {
-     "axn": "AXN:0C61.MPAI.🎆♊🔓🟡🌺▲",
+     "axn": "AXN:0C61.MPAI.🪨🎹🕑◇♅🧲",
      "deposit": 1756,
      "note": "the Tenth Muse kernel",
      "record": "rec:1756",
-     "sha256": "e7abfac3719fe6a5580321865543899a2a60b8787176273dce34ae4e56f6a266",
+     "sha256": "1b89639aa5352c521455880ba6717d414ab5fc0715bb43969ea5b64763ff3601",
      "status": "ACTIVE",
-     "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.2)"
+     "title": "The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.3)"
     },
     {
-     "axn": "AXN:0C62.MPAI.🎺🌔🌔🕙🏴🔛",
+     "axn": "AXN:0C62.MPAI.🎬🫶🦅🎭💡💡",
      "deposit": 1757,
      "note": "the Historical Logos kernel",
      "record": "rec:1757",
-     "sha256": "8b03036b52f4dfe1179879e73b0be27fc04625b18b49379996f7d4862483e072",
+     "sha256": "f1bd7f843c3c25aad92e435ed93c3d9da3441db24807b69fe0e561f5c9e7c8b9",
      "status": "ACTIVE",
-     "title": "The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.2)"
+     "title": "The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.3)"
     }
    ],
    "related_work": [
@@ -1416,8 +1462,8 @@
    ],
    "seed_record": "rec:202"
   },
-  "version": "1.3"
+  "version": "1.4"
  },
- "sha256": "e4255c47f6521d4d68b1254d5cbcf2636f530eddf25d86f68aa1f4c38fcb31c5",
+ "sha256": "5cb2e82b6aac414f4457a132d8e7694692c977583de2e6371898ca0e3848b78c",
  "source": "files/AXN-0C5F/kernel/00-kernel.yaml"
 }

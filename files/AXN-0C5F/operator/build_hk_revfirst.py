@@ -4,7 +4,7 @@ of EA-HK-ORTHONYM-01, checked equivalent by test_hkcore.py). Records from data/r
 repository (leesharks000/revelationfirst-com @ 439e32d8, 2026-11-06), each page hashed; every claim's quotation asserted against its source.
 Specification: EA-HK-FRAME-01 (#1753) v1.1. Fulfils #1217 v7.3 WS-7. Byline Damascus Dancings; the Crimson Hexagonal Archive and Claude credited.
     python3 build_hk_revfirst.py <alexanarch root> <out dir>"""
-import sys, json, pathlib
+import sys, json, pathlib, os
 from hkcore import Kernel, POLICY, context, ledger_roles
 HERE = pathlib.Path(__file__).resolve().parent
 SCR = HERE.parent / "rf"; SITE = pathlib.Path("/tmp/rf-site")
@@ -366,6 +366,7 @@ tests = {"id": K.ID + "/tests",
                          {"q": "does pauline chronology defeat revelation first", "fail_if": "one framework is asked whether it is established while the other is left unasked; the Gallio synchronism reported as dating 1 Thessalonians"}]}
 kernel["bounds"] = [{"held": e["target"], "bounded_by": e["source"], "relation": "bounds", "warrant": e["warrant"]} for e in K.edges if e["relation"] == "bounds"]; kernel["argument_layer"] = ARG_SUM; kernel["author_statements"] = D["author_statements"]
 exec(open(HERE / "v12_post.py", encoding="utf-8").read())   # v1.2 (2026-11-10)
+if os.environ.get("HKVER") == "1.4": exec(open(HERE / "v14_post.py", encoding="utf-8").read())   # v1.4 (2026-11-11)
 K.dump_yaml("00-kernel.yaml", kernel); K.dump_yaml("01-ontology.yaml", ontology)
 (K.OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")
 K.write_lines("03-claims.jsonl", K.C); K.write_lines("05-temporal.jsonl", K.events); K.write_lines("07-captures.jsonl", K.caps)

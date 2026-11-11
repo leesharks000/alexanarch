@@ -25,7 +25,7 @@ configs:
 
 # EA-RHIZOME-REV-01 — revelation first
 
-Revelation First, as its framework holographic kernel holds it (EA-HK-REVFIRST-01 v1.3, #1755, Damascus Dancings): the thesis that the Apocalypse of John is the first-composed book of the New Testament, set apart from early dating ('not early, FIRST', #202), with its three claims kept apart (absolute priority priced, corpus priority a finding, generative priority a programme of reversible arrows, #1735) and its six rungs, each with its fit, its body of evidence and its defeat condition; rung VI depends on rung V, and rungs I–IV stand without either. Every record the kernel seats is here with its stratum and clusters, placed on each rung its claims place it on. A second tier holds what bears on the subject and the kernel does not name; records other kernels hold are exits.
+Revelation First, as its framework holographic kernel holds it (EA-HK-REVFIRST-01 v1.4, #1755, Damascus Dancings): the thesis that the Apocalypse of John is the first-composed book of the New Testament, set apart from early dating ('not early, FIRST', #202), with its three claims kept apart (absolute priority priced, corpus priority a finding, generative priority a programme of reversible arrows, #1735) and its six rungs, each with its fit, its body of evidence and its defeat condition; rung VI depends on rung V, and rungs I–IV stand without either. Every record the kernel seats is here with its stratum and clusters, placed on each rung its claims place it on. A second tier holds what bears on the subject and the kernel does not name; records other kernels hold are exits.
 
 ## These are symbola. They are for traversal.
 
@@ -75,9 +75,9 @@ The relation recurs at every scale and the verification does not. What is self-s
 
 ## Counts
 
-**146** nodes · **80** kernel · **66** outside · **53** edges · **66** placements · **12** exits · **47** kernel_candidates · **7** stolons
+**148** nodes · **80** kernel · **68** outside · **53** edges · **73** placements · **12** exits · **49** kernel_candidates · **7** stolons
 
-## Governed by its kernel: EA-HK-REVFIRST-01 v1.3 (#1755)
+## Governed by its kernel: EA-HK-REVFIRST-01 v1.4 (#1755)
 
 Rule K: the kernel's records (its strata and joins, every record with argument moves, every record a claim names, and the kernel itself) and the captures it names. Rule O: the outside tier the grammar names, each node with its reason, carrying no rung and no standing. Placement is the kernel's claims; `lexical_role` is the v0.1 word match, kept beside it and never setting it. Exits name records held by other kernels. The kernel's ladder, three claims and dated states ship as tables; kernel_candidates lists what this body's reading proposes to the kernel's next version, for the operator's ruling.
 

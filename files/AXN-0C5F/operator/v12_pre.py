@@ -34,6 +34,14 @@ if K.ID == "EA-HK-REVFIRST-01":
     _v12c("rf-1758-commission", "The book is a commission of writing still to be done.", "interpretation", {"assertion": "asserted", "rung": "IV", "generation": "commission_drawn_not_run"})
     _v12c("rf-1758-direction", "Direction is not tested here.", "generality", {"assertion": "asserted", "rung": "IV", "generation": "direction_open"})
     _v12c("rf-1758-warrant", "An internal order counted for him as evidence of design.", "observation", {"assertion": "bears_on_rival", "rival": "fw:current-consensus-chronology", "body": "R"}, body="R")
+    if _os.environ.get("HKVER") == "1.4":   # v1.4 (2026-11-11): the fold-in of #1758 v1.1 and #1735 v9, for Revelation First
+        _v12c("rf-1758-withheld", "Philo quotes the oracle and withholds the name at the place it attaches.", "observation", {"assertion": "asserted", "rung": "VI"})
+        _v12c("rf-1758-dependence", "On these grounds the paper states the dependence", "interpretation", {"assertion": "asserted", "rung": "VI", "ancestry": "extant_antecedent_route_open"})
+        _v12c("rf-1758-sequence", "Each pair runs downward, the higher sphere first. The pairs climb, lowest, middle, highest.", "observation", {"assertion": "asserted", "rung": "III", "corpus": "sequence_described_not_tested"})
+        _v12c("rf-1758-gawaita-key", "Seven named occupants, each over a community's place: on the Gawaita's own terms these are the seven communities, and the Apocalypse's seven messengers over seven churches are the same figure.", "interpretation", {"assertion": "asserted", "rung": "III"})
+        K.claim("rf-1735-v9-asymmetry", 1735, "On the ancestry test this is the asymmetry at its sharpest", "interpretation", {"assertion": "asserted", "rung": "VI", "ancestry": "extant_antecedent"})
+        K.claim("rf-1735-v9-hebrews", 1735, "A second arrow runs from the same scene, and Newton drew part of it.", "generality", {"assertion": "asserted", "rung": "IV", "generation": "arrow_drawn_not_run"})
+        K.claim("rf-1735-v9-hebrews-open", 1735, "The direction is not run here.", "generality", {"assertion": "asserted", "rung": "IV", "generation": "direction_open"})
 elif K.ID == "EA-HK-TENTHMUSE-01":
     _v12c("tm-1758-one-treatise", "One treatise of Philo holds the three operations this paper follows.", "observation", {"assertion": "asserted"})
     _v12c("tm-1758-one-vocabulary", "One author holds the displacement law and the naming of the Logos in one vocabulary of rising, setting and utterance.", "interpretation", {"assertion": "asserted"})
