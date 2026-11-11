@@ -10,7 +10,7 @@ ROOT = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(sys.argv[2]); OUT.mkdir(par
 REG = {r["deposit_number"]: r for r in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 CAP = {c["slug"]: c for c in json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]}
 BASE = "https://www.alexanarch.org/s/records/"
-ID = "EA-HK-ORTHONYM-01"; VERSION = "1.2"; BUILT = "2026-11-10"
+ID = "EA-HK-ORTHONYM-01"; VERSION = "1.3"; BUILT = "2026-11-10"   # v1.3 (2026-11-10 21:58, the author: "yup lets build the argument layer"): the argument layer, 04-arguments.jsonl
 FIRST = json.loads((pathlib.Path(__file__).resolve().parent / "first-seating.json").read_text())   # each record's first seated text, from git (resolve_first_seating.py)
 FIRSTDIR = pathlib.Path(__file__).resolve().parent / "first"
 
@@ -577,6 +577,12 @@ kernel["records_search_v12"] = {"date": "2026-11-10", "rule": V12["rule"], "ruli
  "related_work": [_res(x["deposit"], x.get("note") or "") for x in V12["related_work"]], "related_work_rule": "pointed to; their substance is not extended into the frame on this pass (18:20, 18:45)",
  "history": [_res(x["deposit"], x.get("note") or "earlier version or duplicate witness, resolved to its record of standing") for x in V12["history"]],
  "joins": [_res(x["deposit"], x.get("note") or "") for x in V12["joins"]], "flags": V12["flags"]}
+# v1.3 (2026-11-10): the argument layer, as in the three sister kernels (args_layer.py of hk-frameworks): every record's moves, each quotation re-asserted at
+# the record's current hash; tests T20 and T21
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "hk-frameworks")); import args_layer
+ARGS, ARG_SUM = args_layer.build(ROOT, sorted(RECORDS), OUT, "parallel readers of 2026-11-10 for the thirty-four records that had no moves, each record read in full, every quotation extracted from the seated text and asserted verbatim (mlib.py, check_args.py); the thirteen records shared with the sister kernels keep the moves of the readers of 2026-11-09")
+kernel["argument_layer"] = ARG_SUM
+tests["structural"] += ["T20 every move verbatim in its record, at the record's current hash", "T21 every move edge resolves, or is typed external; every relation in the vocabulary"]
 def dump_yaml(p, obj): (OUT / p).write_text(yaml.safe_dump(obj, allow_unicode=True, sort_keys=False, width=140), encoding="utf-8")
 dump_yaml("00-kernel.yaml", kernel); dump_yaml("01-ontology.yaml", ontology)
 (OUT / "02-graph.jsonld").write_text(json.dumps(graph, ensure_ascii=False, indent=1), encoding="utf-8")

@@ -1,6 +1,6 @@
 {
  "kernel": "EA-HK-ORTHONYM-01",
- "version": "1.2",
+ "version": "1.3",
  "counts": {
   "records": 47,
   "external_records": 3,
@@ -12,7 +12,8 @@
   "captures": 16,
   "events": 131,
   "questions": 10,
-  "structural_tests": 17
+  "structural_tests": 19,
+  "argument_moves": 4046
  },
  "structural_tests": {
   "T1 records resolve": {
@@ -204,6 +205,23 @@
    "pass": true,
    "detail": {
     "failed": []
+   }
+  },
+  "T20 every move verbatim in its record, at the record's current hash": {
+   "pass": true,
+   "detail": {
+    "moves": 4046,
+    "not_verbatim": [],
+    "hash_stale": []
+   }
+  },
+  "T21 every move edge resolves, or is typed external; every relation in the vocabulary": {
+   "pass": true,
+   "detail": {
+    "edges": 3266,
+    "external": 0,
+    "unresolved": [],
+    "bad_relation": []
    }
   }
  },
@@ -414,6 +432,7 @@
   "01-ontology.yaml": true,
   "02-graph.jsonld": true,
   "03-claims.jsonl": true,
+  "04-arguments.jsonl": true,
   "05-temporal.jsonl": true,
   "06-questions.yaml": true,
   "07-captures.jsonl": true,

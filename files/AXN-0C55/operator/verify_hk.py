@@ -214,9 +214,12 @@ scopeB = dict(scopeA, **{
 })
 yA, yB = sum(scopeA.values()) / len(scopeA), sum(scopeB.values()) / len(scopeB)
 thr = kernel["acceptance"]["back_projection_yield_threshold"]
+# v1.3: T20 and T21, the argument layer (args_layer.verify of hk-frameworks)
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "hk-frameworks")); import args_layer as _al
+for _k, _v in _al.verify(ROOT, K).items(): R[_k] = _v
 counts = {"records": sum(1 for r in recs if not r.get("external")), "external_records": sum(1 for r in recs if r.get("external")), "positions": len(pos), "claims": len(claims),
           "withdrawn": sum(1 for c in claims if c["state"].get("assertion") == "withdrawn"), "bearing_on_rival": sum(1 for c in claims if c["state"].get("assertion") == "bears_on_rival"),
-          "edges": len(E), "captures": len(caps), "events": len(events), "questions": len(questions), "structural_tests": len(R)}
+          "edges": len(E), "captures": len(caps), "events": len(events), "questions": len(questions), "structural_tests": len(R), "argument_moves": sum(1 for _ in open(K / "04-arguments.jsonl", encoding="utf-8") if _.strip())}
 out = {"kernel": kernel["id"], "version": kernel["version"], "counts": counts, "structural_tests": R, "propagation": propagation,
        "back_projection_v0_1": {"scope_A": {"elements": scopeA, "yield": round(yA, 3)}, "scope_B": {"elements": scopeB, "yield": round(yB, 3)}, "threshold": thr,
                                 "note": "structural presence only; reconstructive validity is v1.0, run by a reader on scope A (09b)"},

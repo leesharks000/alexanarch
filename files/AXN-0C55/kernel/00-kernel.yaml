@@ -1,5 +1,5 @@
 id: EA-HK-ORTHONYM-01
-version: '1.2'
+version: '1.3'
 built: '2026-11-10'
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 framework:
@@ -788,17 +788,67 @@ records_search_v12:
   joins:
   - record: rec:1756
     deposit: 1756
-    axn: AXN:0C61.MPAI.🕐🌀🪄💥🌿🕙
-    title: 'The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.1)'
+    axn: AXN:0C61.MPAI.🪨🎹🕑◇♅🧲
+    title: 'The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.3)'
     status: ACTIVE
-    sha256: 625f3eeb176b790ba699cc030a85fd989f9c567590a69261ad32e8e723d7e677
+    sha256: 1b89639aa5352c521455880ba6717d414ab5fc0715bb43969ea5b64763ff3601
     note: 'the Tenth Muse kernel, by #752'
   - record: rec:1757
     deposit: 1757
-    axn: AXN:0C62.MPAI.♄🧡🚀♅🍄📋
+    axn: AXN:0C62.MPAI.🎬🫶🦅🎭💡💡
     title: 'The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01
-      v1.1)'
+      v1.3)'
     status: ACTIVE
-    sha256: a4ce5da5794500e04a2a4a33ed95ab4d79e31a93a9771d2aff53f712b11fe933
+    sha256: f1bd7f843c3c25aad92e435ed93c3d9da3441db24807b69fe0e561f5c9e7c8b9
     note: 'the Historical Logos kernel, by #346'
   flags: []
+argument_layer:
+  file: 04-arguments.jsonl
+  moves: 4046
+  edges: 3266
+  records_with_moves: 47
+  records_without_moves: []
+  by_kind:
+    test: 129
+    method: 377
+    datum: 666
+    count: 371
+    inference: 203
+    finding: 961
+    price: 427
+    rival: 146
+    reply: 102
+    defeat: 73
+    hypothesis: 168
+    state: 423
+  kinds:
+  - test
+  - method
+  - datum
+  - count
+  - inference
+  - finding
+  - price
+  - rival
+  - reply
+  - defeat
+  - hypothesis
+  - state
+  relations:
+    supports: the move is evidence or ground for its target
+    infers_from: the move is concluded from its target
+    answers: a reply to a rival position
+    prices: a cost the record names against its own target claim
+    defeats_if: a stated condition under which the target falls
+    applies: the move applies a method or test to its target
+    qualifies: the move limits or grades its target
+    bounds: the move sets the strength or scope of its target, leaving it held
+    develops: the move extends its target
+    revises: the move replaces its target in a later state of the record or of the archive
+  quotations_stale_at_build: []
+  how_read: parallel readers of 2026-11-10 for the thirty-four records that had no moves, each record read in full, every quotation extracted
+    from the seated text and asserted verbatim (mlib.py, check_args.py); the thirteen records shared with the sister kernels keep the moves of
+    the readers of 2026-11-09
+  reading_instruction: 'A reader reconstructing a record''s argument reads its moves in 04-arguments.jsonl in order with their edges: data and
+    counts support inferences and findings; prices, rivals, replies and defeat conditions stand beside the claims they bear on; hypotheses and
+    states keep the strength the record gives them. Each quotation is verbatim, bound to the record''s hash.'
