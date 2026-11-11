@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.642",
+ "derived_from": "EA-WG-CAPTURES-01 v12.643",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1236,
-  "joined_confirmed": 491,
+  "observations": 1237,
+  "joined_confirmed": 492,
   "unjoined": 745,
-  "relations": 6482,
+  "relations": 6490,
   "by_state": {
-   "confirmed": 5185,
-   "candidate": 1297
+   "confirmed": 5190,
+   "candidate": 1300
   },
   "by_verb": {
-   "appeared_in": 1815,
-   "held_by": 2552,
-   "scored_by": 981,
-   "about": 1116,
+   "appeared_in": 1817,
+   "held_by": 2554,
+   "scored_by": 982,
+   "about": 1119,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -3285,6 +3285,14 @@
 {"id": "REL-44b7c3ee0a1a", "obs_id": "OBS-3b571c74f33e", "entry": "i-know-you-are-but-what-am-i-aio-20261111", "obs_slug": "i-know-you-are-but-what-am-i-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-166b19e3f933", "obs_id": "OBS-3b571c74f33e", "entry": "i-know-you-are-but-what-am-i-aio-20261111", "obs_slug": "i-know-you-are-but-what-am-i-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-023d5655645f", "obs_id": "OBS-3b571c74f33e", "entry": "i-know-you-are-but-what-am-i-aio-20261111", "obs_slug": "i-know-you-are-but-what-am-i-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-8381402e978a", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "appeared_in", "object": "surface:lagrangeobservatory.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "lagrangeobservatory.org", "title": "Lagrange Observatory", "url": null}},
+{"id": "REL-aa90e7a1ae5f", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "appeared_in", "object": "deposit:455", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "lagrangeobservatory.org", "title": "Lagrange Observatory", "url": null}},
+{"id": "REL-1beb7cb0ec60", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0826991cb2d5", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0564f026251a", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-62452fc57e1a", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "about", "object": "non:3i-atlas-1665-1668-mhz", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-8bbed4eb4cfc", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "about", "object": "non:ata-3i-atlas-search", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-84e409c20405", "obs_id": "OBS-0126761dda8f", "entry": "nobel-glas-3i-atlas-aio-20261111", "obs_slug": "nobel-glas-3i-atlas-aio-20261111", "date": "2026-11-11", "surface": "Google AI Overview", "q": "nobel glas 3i atlas", "verb": "about", "object": "non:avi-loeb-3i-atlas", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
