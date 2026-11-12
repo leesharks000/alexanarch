@@ -289298,7 +289298,7 @@
       "deposit_number": 626,
       "sovereign_id": "MM-CHA-0475",
       "minted_at": "2026-06-20T22:00:00Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "clusters": [
         "Architectural",
         "Celestial",
@@ -289525,9 +289525,34 @@
           "reason": "2 flattened table(s) rebuilt with the structure a second copy confirms (published blog post); every cell as seated",
           "was": "{\"axn\": \"AXN:01DF.GOVERNANCE.\\u23f0\\ud83c\\udf31\\ud83d\\udd57\\ud83d\\udd12\\u2649\\ud83e\\udea8\"}",
           "now": "{\"axn\": \"AXN:01DF.GOVERNANCE.\\u2693\\ud83c\\udf19\\ud83c\\udfd4\\ufe0f\\ud83c\\udfb6\\ud83d\\udd53\\ud83d\\udd90\\ufe0f\"}"
+        },
+        {
+          "date": "2026-11-12",
+          "field": "status",
+          "reason": "version 2.0 deposited as #1761; errata entered; series set",
+          "was": "ACTIVE",
+          "now": "SUPERSEDED"
+        },
+        {
+          "date": "2026-11-12",
+          "field": "superseded_by_deposit_number",
+          "reason": "version 2.0 deposited as #1761; errata entered; series set",
+          "now": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "field": "version_series_id",
+          "reason": "version 2.0 deposited as #1761; errata entered; series set",
+          "now": "SERIES-EA-LOGOS-01"
+        },
+        {
+          "date": "2026-11-12",
+          "field": "superseded_reason",
+          "reason": "version 2.0 deposited as #1761; errata entered; series set",
+          "now": "Version 2.0 deposited as #1761 (2026-11-12). Version 1.0 stands as deposited and stays indexable, with errata at each point version 2.0 corrects."
         }
       ],
-      "date_modified": "2026-10-19",
+      "date_modified": "2026-11-12",
       "publisher": "Pergamon Press",
       "journal_assignment": {
         "assigned": "2026-08-15",
@@ -289630,7 +289655,123 @@
           "axn_before": "AXN:01DF.GOVERNANCE.⏰🌱🕗🔒♉🪨",
           "ruled_by": "Lee Sharks, 2026-10-19: \"lets restore those tables. note that its possible the blog itself contains flattened tables - they were simple pastes\"; 2026-10-15: \"the text as he published it\""
         }
-      ]
+      ],
+      "errata": [
+        {
+          "date": "2026-11-12",
+          "kind": "version notice",
+          "locus": "the whole work",
+          "was": "version 1.0, the current version of The Word That Became Text",
+          "now": "version 2.0 is deposited as #1761; version 1.0 stands here as deposited, with the corrections below at each point",
+          "reason": "Version 2.0 reads the Slavonic in its own language from the seated text (EA-CORPORA-37, #1760) and corrects version 1.0 at the points listed.",
+          "raised_by": "Lee Sharks (2026-11-12)",
+          "status": "recorded",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "unattested quotation",
+          "locus": "Keywords; Part II §§I, IV, V; Doctrine §I.3; Appendix I row 3",
+          "was": "ei exestin auton anthrōpon eipein, given as the Greek of the hedge",
+          "now": "No witness carries it. Antiquities 18.63: εἴγε ἄνδρα αὐτὸν λέγειν χρή; Slavonic War after 2.174: аще мужем достоино есть его нарещи.",
+          "reason": "Whiston's 1737 English 'if it be lawful to call him a man' (v1.0's own 'lawful') put back into Greek through lawful = ἔξεστιν.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "misattributed paraphrase",
+          "locus": "Appendix I row 1; Appendix II station 1",
+          "was": "A man foretold a child born in Bethlehem (Bk 2, early)",
+          "now": "The priests, in the Magi story at the end of Book I ch. 20 (Meshcherskii addition no. 5, outside Berendts's eight): 'Писано есть, яко от Вифлеома ражается помазанник'.",
+          "reason": "Ground exists in Meshcherskii's text; speaker, book and set corrected.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "misattributed quotation",
+          "locus": "Appendix II station 2",
+          "was": "Body cleansed after the soul by justice",
+          "now": "Antiquities 18.117, not the Slavonic War.",
+          "reason": "The Greek Antiquities on John given as the Slavonic.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "unattested quotation",
+          "locus": "Appendix I row 4; Appendix II stations 3–4",
+          "was": "Write down his words",
+          "now": "No Slavonic witness.",
+          "reason": "The cited parallel, Jer 36:4 (LXX 43:4), moved into the passage column; nearest Slavonic is passage 5's 'преже писаного чюдотворца'.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "conflated paraphrase",
+          "locus": "Appendix I row 5; Appendix II station 5",
+          "was": "Temple would fall… not made with hands",
+          "now": "Passage 6: 'проповѣдаше разорение града и опустение цьркъви'.",
+          "reason": "'Not made with hands' from Mark 14:58 joined to passage 4's 'рукодѣланиа'.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "conflated paraphrase",
+          "locus": "Appendix I row 6; Appendix II station 6",
+          "was": "Seen alive after three days; they lived by his teaching (6 ≈ 312)",
+          "now": "Passage 5, replacing 2.221 f.: 'яко живъ есть, аще умре'.",
+          "reason": "'Third day' from Antiquities 18.64 joined to passage 5; locus corrected.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "unattested quotation",
+          "locus": "Appendix I row 7; Appendix II station 7",
+          "was": "Blessed… cursed he who writes falsely",
+          "now": "No Slavonic or Josephan witness.",
+          "reason": "Probably composed from 1QS 2 (ארור אתה) and Rev 22:18–19.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "unattested quotation",
+          "locus": "Appendix I row 8; Appendix II station 8",
+          "was": "Nothing written in truth perishes (7, end)",
+          "now": "The Slavonic ends at 7.445; the Greek ends on 7.455's claim of truth.",
+          "reason": "Placed where the Greek's closing truth claim stands, which the Slavonic lacks.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        },
+        {
+          "date": "2026-11-12",
+          "kind": "correction of fact",
+          "locus": "Part I §II",
+          "was": "night vigils counted among Essene details with no medieval source",
+          "now": "George the Monk, Chronicon (de Boor 329–330), gives the Essenes psalmody from midnight to dawn.",
+          "reason": "A medieval monastic channel for the night office, read in Rus' in Slavonic.",
+          "raised_by": "Lee Sharks, with reviews by DeepSeek and ChatGPT (2026-11-12)",
+          "status": "open",
+          "deposit_number": 1761
+        }
+      ],
+      "superseded_by_deposit_number": 1761,
+      "superseded_at": "2026-11-12",
+      "superseded_reason": "Version 2.0 deposited as #1761 (2026-11-12). Version 1.0 stands as deposited and stays indexable, with errata at each point version 2.0 corrects.",
+      "version_series_id": "SERIES-EA-LOGOS-01"
     },
     {
       "axn": "AXN:01E0.GOVERNANCE.👋💡🌟🏛️⏰🎭",
@@ -599223,7 +599364,7 @@
       "title": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos",
       "creator": "Sigil, Johannes; Cranes, Rebekah",
       "date": "2026-11-12",
-      "description": "The divergences of the Slavonic Jewish War from the Greek are held, by consensus, to be the work of a medieval translator. This essay, version 2.0 of The Word That Became Text, tests that verdict where it is weakest: in the chapter on the Essenes and in the additions that have nothing to do with Christianity. It reads the Slavonic in its own language from Meshcherskii's Old Russian (EA-CORPORA-37, #1760) and sets out the Essene chapter's nine divergences in a ledger. Each divergence gets the best medieval explanation and the finding that would defeat the proposal. Five divergences agree with Hippolytus's Refutatio against the Greek. George the Monk's ninth-century chronicle, which Rus' read in Slavonic, explains the night office and carries none of those agreements. Across the whole work the essay argues for two layers of change. One is a Christian and Rus' layer the translator's account explains. The other is a Jewish, legal and anti-Roman layer, including the martyrs of 4 Maccabees in that book's words and the count at Jotapata, which Josephus's own account of two editions organizes better. It reads the eight Jesus-and-John passages in the recension's order, word by word: the word that acts, the letters on the Temple, the written heaven torn, the written oracle read three ways. Part II reads the Slavonic wonder-worker passage as a mirror of Catullus 51. Its vector is reversed: in Catullus flesh becomes word, and in the Slavonic effective word acquires a human biography. Version 1.0 (#626) stays on the record with errata at each point corrected.",
+      "description": "This essay, version 2.0 of The Word That Became Text, tests the consensus that the divergences of the Slavonic Jewish War from the Greek are the work of a medieval translator, where that consensus is weakest: in the chapter on the Essenes and in the additions that have nothing to do with Christianity. It reads the Slavonic in its own language from Meshcherskii's Old Russian (EA-CORPORA-37, #1760) and sets out the Essene chapter's nine divergences in a ledger. Each divergence gets the best medieval explanation and the finding that would defeat the proposal. Five divergences agree with Hippolytus's Refutatio against the Greek. George the Monk's ninth-century chronicle, which Rus' read in Slavonic, explains the night office and carries none of those agreements. Across the whole work the essay argues for two layers of change. One is a Christian and Rus' layer the translator's account explains. The other is a Jewish, legal and anti-Roman layer, including the martyrs of 4 Maccabees in that book's words and the count at Jotapata, which Josephus's own account of two editions organizes better. It reads the eight Jesus-and-John passages in the recension's order, word by word: the word that acts, the letters on the Temple, the written heaven torn, the written oracle read three ways. Part II reads the Slavonic wonder-worker passage as a mirror of Catullus 51. Its vector is reversed: in Catullus flesh becomes word, and in the Slavonic effective word acquires a human biography. Version 1.0 (#626) stays on the record with errata at each point corrected.",
       "content_type": "Theoretical paper; journal article (Grammata: Journal of Operative Philology)",
       "license": "CC-BY-4.0",
       "substrate": "AI-assisted (substrate). Written under the heteronyms Johannes Sigil (Part I) and Rebekah Cranes (Part II); the legal author is Lee Sharks. Version 1.0 was deposited on 5 April 2026 (#626). Version 2.0 was drafted on 12 November 2026 with Claude (Anthropic) assisting in drafting, revision and source checks under the author's direction. Reviews by DeepSeek and ChatGPT were adopted by the author and checked against the texts before entry. The reading of the mirror between Catullus 51 and the Slavonic is the author's.",
@@ -599369,19 +599510,24 @@
         "Companion to",
         "Crimson Hexagonal Archive",
         "Dead Sea Scrolls",
+        "Dependencies",
         "Foundational",
+        "Grammata: Journal of Operative Philology",
         "Implications",
+        "Johannes Sigil",
+        "John 1:1",
         "John the Baptist",
+        "Lee Sharks",
         "Method and scope",
         "ORCID: 0009-0000-1599-0703",
         "Part I",
+        "Part I (Johannes Sigil)",
         "Part II",
-        "Visualization",
-        "Lee Sharks",
-        "Johannes Sigil",
-        "Rebekah Cranes"
+        "Part II (Rebekah Cranes)",
+        "Rebekah Cranes",
+        "Visualization"
       ],
-      "references_concept_count": 15,
+      "references_concept_count": 20,
       "citations": [],
       "wikidata_candidates": [],
       "cha_cross_references": [],
@@ -599426,7 +599572,23 @@
           }
         },
         "overall_conformance": "partial"
-      }
+      },
+      "version_series_id": "SERIES-EA-LOGOS-01",
+      "previous_version": {
+        "deposit_number": 626,
+        "axn": "AXN:01DF.GOVERNANCE.⚓🌙🏔️🎶🕓🖐️",
+        "version": "v1.0",
+        "date": "2026-04-05"
+      },
+      "modifications": [
+        {
+          "date": "2026-11-12",
+          "field": "version_series_id",
+          "reason": "version series set; previous version #626",
+          "now": "SERIES-EA-LOGOS-01"
+        }
+      ],
+      "date_modified": "2026-11-12"
     }
   ],
   "last_updated": "2026-10-24T16:08:39Z",
