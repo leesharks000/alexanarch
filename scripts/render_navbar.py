@@ -90,7 +90,11 @@ def render_navbar(active=None):
         ext_attrs = ' target="_blank" rel="noopener"' if item.get('external') else ''
         return f'<a href="{path}"{style}{ext_attrs}>{label}</a>'
 
-    parts = ['<nav class="nav">']
+    # 2026-11-12: long unbroken strings (URLs, hashes, AXNs, Greek and Old Russian
+    # runs) pushed pages wider than a phone screen (/s/graph/ to 1174px at 390px).
+    # The rule rides inside the nav so every page that carries the nav carries it,
+    # and sync_navbars replaces it with the nav, idempotently.
+    parts = ['<nav class="nav"><style>body{overflow-wrap:anywhere}</style>']
     for it in ungrouped:
         parts.append(_link(it))
 
