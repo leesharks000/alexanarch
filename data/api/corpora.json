@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-12T17:57:29.549078Z",
- "seats": 238,
- "lines_total": 9015414,
+ "_generated": "2026-11-12T18:22:58.650231Z",
+ "seats": 246,
+ "lines_total": 9167423,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -18640,7 +18640,282 @@
    "scope": "Both volumes whole: the case that the Slavonic preserves Josephus's Aramaic first draft, with the Slavonic passages rendered and argued, the Testimonium, and the Halōsis (the Capture of Jerusalem). Held as the thesis's strongest statement, not as its proof; the consensus answer (Zeitlin, Creed, Meshcherskii) is named in EA-CORPORA-01/12.",
    "data": "https://www.alexanarch.org/data/corpora/eisler-iesous-basileus-1929/",
    "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/05",
+   "corpus": "berendts-zeugnisse-slavischen-josephus-1906",
+   "edition": "Berendts 1906, the study whole as bound in the Toronto (PIMS) copy of Texte und Untersuchungen 28–29; the Internet Archive's text layer, cut to the study",
+   "license": {
+    "payload": "Alexander Berendts (1863–1912) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "texteundunter28v29akad",
+      "url": "https://archive.org/details/texteundunter28v29akad",
+      "files": [
+       "texteundunter28v29akad_djvu.txt"
+      ],
+      "full_text_layer_sha256": "8715106b7dad7d0953a7f22c9ce30ef5edd9daf841c9e7bf4d0a2165421b4bb3",
+      "excerpt": "lines 69133–73289 of the _djvu.txt as served: from the study's series title to the publisher's notices after its last page"
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+orv+grc",
+   "lines": 4157,
+   "verified_loci": [
+    "the title — 'ZEUGNISSE  VOM  CHRISTENTUM'",
+    "Simon the Essene — 'Die  Persönlichkeit  Simons  des  Essäers'",
+    "Nöldeke on the Aramaic first edition — 'setzung des  früheren  aramäischen  oder  hebräischen'",
+    "Kottek's Syriac War VI — 'Kottek  hat  den  Versuch  gemacht'"
+   ],
+   "why_seated": "The work that opened the question in the West (2026-11-12); held with the text layer it argued from.",
+   "scope": "The first statement of the case: the eight passages in Old Russian with German translation, and the argument that the Slavonic descends from Josephus's first, Aramaic edition (War, proem 3), not from Christian interpolation; Simon the Essene; Nöldeke and Kottek on the Aramaic War.",
+   "data": "https://www.alexanarch.org/data/corpora/berendts-zeugnisse-slavischen-josephus-1906/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/06",
+   "corpus": "berendts-zacharias-johannes-apokryphen-1904",
+   "edition": "Berendts 1904, as bound in the Toronto (PIMS) copy of Texte und Untersuchungen 26; the Internet Archive's text layer, cut to the Heft",
+   "license": {
+    "payload": "Alexander Berendts (1863–1912) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "dreigeorgischerh26hippuoft",
+      "url": "https://archive.org/details/dreigeorgischerh26hippuoft",
+      "files": [
+       "dreigeorgischerh26hippuoft_djvu.txt"
+      ],
+      "full_text_layer_sha256": "17b8e02f1b4dc9621d2fa227c8df68229322c6909d20f63a65609668942bb99a",
+      "excerpt": "lines 24850–29439 of the _djvu.txt as served: Neue Folge XI.3, from its series title to the next Heft's notices"
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc+orv",
+   "lines": 4590,
+   "verified_loci": [
+    "the contents: the first recension — 'Die  erste  Recension'",
+    "Berendts named — 'A.  BERENDTS'"
+   ],
+   "why_seated": "Berendts's other scholarship, public domain (2026-11-12): the road by which he came to the Slavonic John passages.",
+   "scope": "The manuscript tradition of the Zacharias and John the Baptist apocrypha in Greek and Slavonic, and the libraries of the Meteora and Ossa–Olympus monasteries: the John material Berendts was working before the Josephus.",
+   "data": "https://www.alexanarch.org/data/corpora/berendts-zacharias-johannes-apokryphen-1904/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/07",
+   "corpus": "berendts-zacharias-studien-1895",
+   "edition": "Berendts 1895, the copy from Walter Bauer's library (Claremont School of Theology); the Internet Archive's text layer",
+   "license": {
+    "payload": "Alexander Berendts (1863–1912) is public domain everywhere.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "studienberzachar0000bere",
+      "url": "https://archive.org/details/studienberzachar0000bere",
+      "files": [
+       "studienberzachar0000bere_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc",
+   "lines": 6164,
+   "verified_loci": [
+    "the title — 'Zaeharias-Legenden'",
+    "Berendts named — 'A. Berendts.'"
+   ],
+   "why_seated": "Berendts's other scholarship, public domain (2026-11-12).",
+   "scope": "The book whole: the apocrypha and legends of Zechariah, father of John the Baptist, and the murder of Zechariah in the Temple.",
+   "data": "https://www.alexanarch.org/data/corpora/berendts-zacharias-studien-1895/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/08",
+   "corpus": "eisler-messiah-jesus-1931",
+   "edition": "Robert Eisler, The Messiah Jesus and John the Baptist according to Flavius Josephus' recently rediscovered 'Capture of Jerusalem' and the other Jewish and Christian sources, English ed. by A. H. Krappe, the Internet Archive's text layer",
+   "license": {
+    "payload": "Robert Eisler (1882–1949) is public domain where the term is life plus seventy years (since 1 January 2020), the United Kingdom and Austria among them. In the United States it is protected until 1 January 2027 (first published 1931). Served openly by the Internet Archive. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "themessiahjesusand",
+      "url": "https://archive.org/details/themessiahjesusand",
+      "files": [
+       "The Messiah Jesus and_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc+orv",
+   "lines": 45081,
+   "verified_loci": [
+    "the wonder-worker — 'At that time there appeared a certain man, if it is permissible to call'",
+    "the Testimonium hedge — 'if it is permissible to call him a man'"
+   ],
+   "why_seated": "Eisler's scholarship, public domain where the term is life plus seventy (2026-11-12).",
+   "scope": "The English recasting of ΙΗΣΟΥΣ ΒΑΣΙΛΕΥΣ: the Halōsis, the Slavonic passages in English, the Essenes, the Testimonium and the case for Josephus's first draft.",
+   "data": "https://www.alexanarch.org/data/corpora/eisler-messiah-jesus-1931/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/09",
+   "corpus": "eisler-testimonium-flavianum-1938",
+   "edition": "Robert Eisler, Flavius-Josephus-Studien I: Das Testimonium Flavianum. Eine Antwort an Dr. Walther Bienert, the Internet Archive's text layer",
+   "license": {
+    "payload": "Robert Eisler (1882–1949) is public domain where the term is life plus seventy years (since 1 January 2020), the United Kingdom and Austria among them. In the United States its restored term runs to 1 January 2034. Served openly by the Internet Archive. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "eisler-robert-flavius-josephus-studien-i.-das-testimonium-flavianum-methuen-1938-64pp-os",
+      "url": "https://archive.org/details/eisler-robert-flavius-josephus-studien-i.-das-testimonium-flavianum-methuen-1938-64pp-os",
+      "files": [
+       "Eisler, Robert - Flavius Josephus-Studien I. Das Testimonium Flavianum (Methuen, 1938, 64pp)_OS_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc+lat",
+   "lines": 3514,
+   "verified_loci": [
+    "the Testimonium named — 'Testimonium Flavianum'"
+   ],
+   "why_seated": "Eisler's scholarship, public domain where the term is life plus seventy (2026-11-12).",
+   "scope": "Eisler's answer to Bienert (1936) on the Testimonium: the polemic of the consensus years, in his own words.",
+   "data": "https://www.alexanarch.org/data/corpora/eisler-testimonium-flavianum-1938/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/10",
+   "corpus": "eisler-orpheus-the-fisher-1921",
+   "edition": "Robert Eisler, Orpheus the Fisher: Comparative Studies in Orphic and Early Christian Cult Symbolism, the Internet Archive's text layer",
+   "license": {
+    "payload": "Robert Eisler (1882–1949) is public domain where the term is life plus seventy years (since 1 January 2020), the United Kingdom and Austria among them. It is public domain in the United States (published 1921). Served openly by the Internet Archive. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "orpheusfisher0000robe",
+      "url": "https://archive.org/details/orpheusfisher0000robe",
+      "files": [
+       "orpheusfisher0000robe_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc+lat",
+   "lines": 18043,
+   "verified_loci": [
+    "the title — 'Orpheus'"
+   ],
+   "why_seated": "Eisler's scholarship, public domain where the term is life plus seventy (2026-11-12).",
+   "scope": "The fish and the fisher from Orphic cult to the early Church.",
+   "data": "https://www.alexanarch.org/data/corpora/eisler-orpheus-the-fisher-1921/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/11",
+   "corpus": "eisler-enigma-fourth-gospel-1938",
+   "edition": "Robert Eisler, The Enigma of the Fourth Gospel: Its Author and Its Writer, the Internet Archive's text layer",
+   "license": {
+    "payload": "Robert Eisler (1882–1949) is public domain where the term is life plus seventy years (since 1 January 2020), the United Kingdom and Austria among them. In the United States its restored term runs to 1 January 2034. Served openly by the Internet Archive. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "MN41506ucmf_0",
+      "url": "https://archive.org/details/MN41506ucmf_0",
+      "files": [
+       "MN41506ucmf_0_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc+lat",
+   "lines": 14826,
+   "verified_loci": [
+    "the title — 'THE ENIGMA OF THE FOURTH GOSPEL'",
+    "its author and its writer — 'ITS AUTHOR AND ITS WRITER'"
+   ],
+   "why_seated": "Eisler's scholarship, public domain where the term is life plus seventy (2026-11-12).",
+   "scope": "The Fourth Gospel's author and its writer as two persons: a theory of the gospel's hands.",
+   "data": "https://www.alexanarch.org/data/corpora/eisler-enigma-fourth-gospel-1938/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/12",
+   "corpus": "eisler-weltenmantel-1910",
+   "edition": "Eisler, Weltenmantel und Himmelszelt, vols. I–II, the Internet Archive's text layer",
+   "license": {
+    "payload": "Robert Eisler (1882–1949) is public domain where the term is life plus seventy years (since 1 January 2020), the United Kingdom and Austria among them. It is public domain in the United States (published 1910). Served openly by the Internet Archive. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "weltenmantelundh01eisl",
+      "url": "https://archive.org/details/weltenmantelundh01eisl",
+      "files": [
+       "weltenmantelundh01eisl_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "weltenmantelundh02eisl",
+      "url": "https://archive.org/details/weltenmantelundh02eisl",
+      "files": [
+       "weltenmantelundh02eisl_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc+lat+heb",
+   "lines": 55634,
+   "verified_loci": [
+    "the title — 'Weltenmantel'"
+   ],
+   "why_seated": "Eisler's scholarship, public domain (2026-11-12); the robe as cosmos joins the Josephus–Philo loci of the narrative.",
+   "scope": "The cosmic mantle and the tent of heaven: the high priest's robe as the cosmos (cf. Philo, De vita Mosis 2.135, Josephus, Antiquities 3.180–187), the ancient world-picture whole.",
+   "data": "https://www.alexanarch.org/data/corpora/eisler-weltenmantel-1910/",
+   "axn": null
   }
  ],
- "count": 238
+ "count": 246
 }
