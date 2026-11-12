@@ -20,20 +20,28 @@
   "CA": "text/CA.txt",
   "BJ": "text/BJ.txt"
  },
- "normalization": "flat ref-tagged lines: '<WORK> <book>.<section>\t<text>'; teiHeader stripped; 'arg' divisions excluded",
+ "normalization": "flat ref-tagged lines: '<WORK> <book>.<section>\t<text>'; teiHeader stripped; 'arg' divisions excluded; the Life, which has no book division, is referenced 'Vita <section>' (repaired 2026-11-12 from 'Vita ?.<section>')",
  "verified_loci": [
   "AJ 11.236 ἀχανὴς ἐπέπεσεν",
   "BJ 1.444 ἀνεζωπυρεῖτο",
   "AJ 6.337 ἄφωνος ὑπὸ λύπης"
  ],
  "sections_total": 12423,
- "axn": "AXN:060E.ORIGINAL.👁️♃🗂️🗝️🪝🫶",
+ "axn": "AXN:060E.ORIGINAL.💎☁️🌋🕔🔜🧪",
  "axn_basis": {
   "sha256_of": "MANIFEST.sha256",
-  "sha256": "57a34a3f34bd19d877aa93db205d9970132d73ec46c28eb9b450d34d94fd3ea9",
+  "sha256": "1c1f1566f639c07d88b497761ef677f3b06e01bdf52b0e336151697da6eaf9da",
   "hex_of": "#1499 (AXN:060E.DATASET.🔗🍄🕔🍁✏️☉)",
   "family": "ORIGINAL",
   "glyph_table": "v2.1",
-  "assigned": "2026-10-27"
- }
+  "assigned": "2026-11-12"
+ },
+ "axn_prior": [
+  {
+   "axn": "AXN:060E.ORIGINAL.👁️♃🗂️🗝️🪝🫶",
+   "manifest_sha256": "57a34a3f34bd19d877aa93db205d9970132d73ec46c28eb9b450d34d94fd3ea9",
+   "until": "2026-11-12",
+   "why": "text/Vita.txt reference repair: the Life has no books, and its 430 lines were tagged 'Vita ?.<section>'; they are now 'Vita <section>'. The text is unchanged."
+  }
+ ]
 }
