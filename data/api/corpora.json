@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-07T19:56:20.355483Z",
- "seats": 234,
- "lines_total": 8791639,
+ "_generated": "2026-11-12T17:57:29.549078Z",
+ "seats": 238,
+ "lines_total": 9015414,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -18465,7 +18465,182 @@
    "scope": "The article at one revision.",
    "data": "https://www.alexanarch.org/data/corpora/wikipedia-sappho-31/",
    "axn": "AXN:0C3F.ORIGINAL.🧡🏗️🎻🔚👇🪨"
+  },
+  {
+   "seat": "EA-CORPORA-37/01",
+   "corpus": "slavonic-josephus-meshcherskii-1958",
+   "edition": "Meshcherskii 1958, the TEXTS section (books I–VII), printed from the Vilna Chronograph (16th c.) with variants from eight manuscripts of the 15th–16th c.; the Internet Archive's text layer",
+   "license": {
+    "payload": "The text is the Old Russian translation of the Jewish War (Kievan period, not later than the 12th c.), a medieval work in the public domain. The 1958 edition is N. A. Meshcherskii's (1906–1987); its introduction and commentary are his prose and are held by reference, not copied. The seat copies the edition's TEXTS section only (the seven books with their variant notes), as the Internet Archive serves it publicly with no licence stated. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "1958_20250223",
+      "url": "https://archive.org/details/1958_20250223",
+      "files": [
+       "Мещерский Н.А. - История иудейской войны Иосифа Флавия в древнерусском переводе (1958)_djvu.txt",
+       "Мещерский Н.А. - История иудейской войны Иосифа Флавия в древнерусском переводе (1958).pdf (by reference, 75,066,705 bytes)"
+      ],
+      "full_text_layer_sha256": "cf75d6acb9db1fc72ffac0e7bae93f8d49c23e30956417018445e5086f34793a",
+      "excerpt": "lines 9334–31517 of the _djvu.txt as served: from the heading ТЕКСТЫ to the line before КОММЕНТАРИИ"
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "orv",
+   "lines": 22184,
+   "verified_loci": [
+    "War II after 174, the wonder-worker: 'At that time there appeared a certain man, if it is fitting to call him a man' — 'явися мужь нзкыи, и аще мужем достоино есть его'",
+    "the same passage: 'therefore it is impossible for me to call him a man' — 'немощно ми есть нарещи его челов$ком'",
+    "the rubric before it in the manuscript and in A: 'Josephus writes of Christ' — 'Иосиф о ХристБ пишет'",
+    "Book I begins — 'КНИГА ПЕРВАЯ'",
+    "Book VII — 'КНИГА СЕДЬМАЯ'"
+   ],
+   "why_seated": "The Slavonic text layer the 2026-08-19 search could not find; held in the original language.",
+   "scope": "All seven books in the language of the translation: the eight Jesus-and-John passages in their places and every other divergence from the Greek.",
+   "data": "https://www.alexanarch.org/data/corpora/slavonic-josephus-meshcherskii-1958/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/02",
+   "corpus": "berendts-grass-slavonic-josephus-1924",
+   "edition": "Berendts–Grass, the German rendering of the Slavonic War I–IV with the Greek compared in the notes, and the list of the Überschüsse (the additions over the Greek), as published in the Acta of the University of Tartu",
+   "license": {
+    "payload": "Published at Dorpat 1924–1927; Alexander Berendts died in 1912. Public domain in the United States (published before 1931). Served openly by the University of Tartu Library's OJS; no licence is stated on the items. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "University of Tartu, Tartu Ülikooli toimetised (OJS)",
+      "article": "29178",
+      "url": "https://ojs.utlib.ee/index.php/tyt/article/view/29178",
+      "download": "https://ojs.utlib.ee/index.php/tyt/article/download/29178/22537/46086",
+      "pages": "1–160",
+      "printed": "Dorpat 1924"
+     },
+     {
+      "source": "University of Tartu, Tartu Ülikooli toimetised (OJS)",
+      "article": "29182",
+      "url": "https://ojs.utlib.ee/index.php/tyt/article/view/29182",
+      "download": "https://ojs.utlib.ee/index.php/tyt/article/download/29182/22541/46090",
+      "pages": "161–288",
+      "printed": "Dorpat 1926"
+     },
+     {
+      "source": "University of Tartu, Tartu Ülikooli toimetised (OJS)",
+      "article": "29169",
+      "url": "https://ojs.utlib.ee/index.php/tyt/article/view/29169",
+      "download": "https://ojs.utlib.ee/index.php/tyt/article/download/29169/22528/46077",
+      "pages": "289–416",
+      "printed": "Dorpat (the third Lieferung carries no imprint year in its text layer)"
+     },
+     {
+      "source": "University of Tartu, Tartu Ülikooli toimetised (OJS)",
+      "article": "29164",
+      "url": "https://ojs.utlib.ee/index.php/tyt/article/view/29164",
+      "download": "https://ojs.utlib.ee/index.php/tyt/article/download/29164/22523/46072",
+      "pages": "417–512",
+      "printed": "Dorpat 1927"
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc",
+   "lines": 47335,
+   "verified_loci": [
+    "II after 174, the wonder-worker — 'Damals 16 ) erschien ein Mann, wenn es auch erlaubt ist,'",
+    "the same: 'therefore it is impossible for me to call him a human being' — 'Deswegen ist es mir unmöglich, ihn'",
+    "Überschuss XII in the list — 'Auftreten und Kreuzestod des Wunder'",
+    "Überschuss XV: Josephus's ruse at Jotapata — 'Die List des Josephus bei Errettung seines'"
+   ],
+   "why_seated": "The only complete rendering of Slavonic War I–IV in a western language that is out of copyright; Thackeray's appendix translates from it.",
+   "scope": "Books I–IV whole, in German, with the Greek compared: the thirty-odd Überschüsse among them the wonder-worker (XII), his followers (XIII), John the Forerunner (IX, XI) and Josephus's ruse at Jotapata (XV).",
+   "data": "https://www.alexanarch.org/data/corpora/berendts-grass-slavonic-josephus-1924/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/03",
+   "corpus": "thackeray-loeb-josephus-iii-1928",
+   "edition": "Thackeray, Loeb Josephus III, the Internet Archive's text layer",
+   "license": {
+    "payload": "Thackeray died in 1930; the volume is public domain in the United States (published before 1931) and where the term is life plus seventy years. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "josephuswithengl03joseuoft",
+      "url": "https://archive.org/details/josephuswithengl03joseuoft",
+      "files": [
+       "josephuswithengl03joseuoft_djvu.txt"
+      ]
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng+grc",
+   "lines": 40748,
+   "verified_loci": [
+    "the appendix heading — 'THE SLAVONIC VERSION'",
+    "the wonder-worker, between ii. 174 and 175 — 'At that time there appeared a man, if it is permissible'",
+    "its source stated — 'the German rendering of the Slavonic version produced by'"
+   ],
+   "why_seated": "The English of the Slavonic additions across all seven books, out of copyright.",
+   "scope": "The volume whole. The appendix gives twenty-two Slavonic passages in English: the first nineteen from Berendts–Grass (Books I–IV), the last three from Berendts 1906, which carry the additions of Books V–VI that Berendts–Grass does not reach.",
+   "data": "https://www.alexanarch.org/data/corpora/thackeray-loeb-josephus-iii-1928/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-37/04",
+   "corpus": "eisler-iesous-basileus-1929",
+   "edition": "Eisler, IHΣOYΣ BAΣIΛEYΣ, vols. I–II, the Internet Archive's text layer",
+   "license": {
+    "payload": "Eisler died in 1949; the volumes are public domain where the term is life plus seventy years, and in the United States (published 1929–1930). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "iesousbasileusou0001eisl",
+      "url": "https://archive.org/details/iesousbasileusou0001eisl",
+      "files": [
+       "iesousbasileusou0001eisl_djvu.txt"
+      ],
+      "provenance_note": "from the library of Walter Bauer (1877–1960), Claremont School of Theology"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "iesousbasileusou0002eisl",
+      "url": "https://archive.org/details/iesousbasileusou0002eisl",
+      "files": [
+       "iesousbasileusou0002eisl_djvu.txt"
+      ],
+      "provenance_note": "from the library of Walter Bauer (1877–1960), Claremont School of Theology"
+     }
+    ],
+    "fetched": "2026-11-12",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu+grc+lat+orv",
+   "lines": 113508,
+   "verified_loci": [
+    "the wonder-worker rendered, §174a — 'Damals? erschien® ein Mann?, wenn es auch erlaubt ist°,'",
+    "the table of contents — 'Das Josephuszeugnis und die Juden'"
+   ],
+   "why_seated": "The book Thackeray's appendix was written beside, and the source of the English Messiah Jesus (1931), which is still in copyright.",
+   "scope": "Both volumes whole: the case that the Slavonic preserves Josephus's Aramaic first draft, with the Slavonic passages rendered and argued, the Testimonium, and the Halōsis (the Capture of Jerusalem). Held as the thesis's strongest statement, not as its proof; the consensus answer (Zeitlin, Creed, Meshcherskii) is named in EA-CORPORA-01/12.",
+   "data": "https://www.alexanarch.org/data/corpora/eisler-iesous-basileus-1929/",
+   "axn": null
   }
  ],
- "count": 234
+ "count": 238
 }
