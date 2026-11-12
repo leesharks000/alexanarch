@@ -1,70 +1,152 @@
 {
  "corpus": "slavonic-josephus",
- "set": "the eight Jesus-and-John passages",
+ "set": "the eight Jesus-and-John passages, in the order Berendts printed them (1906) and Thackeray listed them (1919, Note II)",
  "status": "CONTESTED — carried as reception data, never as canonical Josephus",
- "defined_by": "deposit #1176 (AXN:04A9), The Word That Became Text, Appendix II",
+ "defined_by": "Berendts 1906 (EA-CORPORA-37/05); collated in #1761, The Word That Became Text v2.0, Appendix I",
+ "repaired": {
+  "date": "2026-11-12",
+  "note": "Version 1.0 of this index carried eight paraphrases from #1176/#626 Appendix II, which are the authors' stations and not the recension's passages; three of them have no witness. They are replaced by the received eight with their loci and Old Russian from the seated text. The withdrawn paraphrases are kept below and are answered in the errata on #626.",
+  "errata": "https://www.alexanarch.org/s/records/626/#errata"
+ },
  "witnesses": {
-  "Berendts 1906": "German rendering of the eight; public domain; scan not yet located (see NEGATIVE-SEARCH.md)",
-  "Meshcherskii 1958": "critical Russian text; in copyright; cited not seated",
+  "Meshcherskii 1958": "Old Russian of all seven books, Vilna Chronograph; seated EA-CORPORA-37/01 (#1760)",
+  "Berendts 1906": "the eight passages, German; seated EA-CORPORA-37/05",
+  "Berendts–Grass 1924–1927": "Books I–IV, German; seated EA-CORPORA-37/02",
+  "Thackeray 1928": "the twenty-two additions, English; seated EA-CORPORA-37/03",
   "Leeming & Leeming 2003": "synoptic English edition (Brill); in copyright; cited not seated"
  },
+ "outside_the_eight": "Meshcherskii also prints the Magi story at the end of Book I, chapter 20 (his addition no. 5), which Berendts and Istrin left out: 'Писано есть, яко от Вифлеома ражается помазанник' (seated text, lines 3025–3026).",
  "transmission": "Popov 1866 (first notice) → Sreznevsky 1879 (Rus' chronicle language) → Berendts 1906 (translation + Vorlage thesis) → Eisler 1931 vs. Zeitlin–Feldman–Meier consensus → Pines 1971 (Syriac-corridor plausibility)",
  "pericopes": [
   {
    "id": "P1",
-   "title": "Prophecy of the Child",
-   "paraphrase": "A man foretold a child born in Bethlehem.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "John, \"the savage\", before Archelaus; Simon the Essene",
+   "locus": "between War 2.110 and 111",
+   "old_russian": "Тогда же нѣкый мужь хождаше по Июдѣи в чюдных ризах",
+   "meshcherskii_seated_line": 6290,
+   "thackeray_1928": "(9)",
+   "berendts_grass": "IX",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
   },
   {
    "id": "P2",
-   "title": "John the Baptizer",
-   "paraphrase": "Body cleansed after the soul by justice.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "John interprets Philip's dream",
+   "locus": "after War 2.168",
+   "old_russian": "яко орелъ истергну обѣ очи его",
+   "meshcherskii_seated_line": 6766,
+   "thackeray_1928": "(11)",
+   "berendts_grass": "XI",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
   },
   {
    "id": "P3",
-   "title": "The Teacher (Incarnate Logos)",
-   "paraphrase": "If it is lawful to call him man… word and act.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "John rebukes Herod over Herodias",
+   "locus": "after War 2.168, the same insertion",
+   "old_russian": null,
+   "meshcherskii_seated_line": null,
+   "thackeray_1928": "(11)",
+   "berendts_grass": "XI",
+   "witness": "Berendts 1906 (EA-CORPORA-37/05); Thackeray 1928 (EA-CORPORA-37/03)",
    "status": "CONTESTED"
   },
   {
    "id": "P4",
-   "title": "Herod's Inscription",
-   "paraphrase": "Write down his words.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "the wonder-worker",
+   "locus": "between War 2.174 and 175",
+   "old_russian": "Тогда явися мужь нѣкыи, и аще мужем достоино есть его нарещи",
+   "meshcherskii_seated_line": 6930,
+   "thackeray_1928": "(12)",
+   "berendts_grass": "XII",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
   },
   {
    "id": "P5",
-   "title": "Temple Saying",
-   "paraphrase": "Temple would fall… not made with hands.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "his followers",
+   "locus": "replacing War 2.221 f.",
+   "old_russian": "слугамъ преже писаного чюдотворца … яко живъ есть, аще умре",
+   "meshcherskii_seated_line": 7406,
+   "thackeray_1928": "(13)",
+   "berendts_grass": "XIII",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
   },
   {
    "id": "P6",
-   "title": "After-Death Report",
-   "paraphrase": "Seen alive after three days; they lived by his teaching.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "the Temple inscription",
+   "locus": "in War 5.195",
+   "old_russian": "показаа Исуса, цесаря нецесарствовавша, распятаго от июдѣи",
+   "meshcherskii_seated_line": 14922,
+   "thackeray_1928": "(20)",
+   "berendts_grass": "— (Books V–VII lie outside Berendts–Grass)",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
   },
   {
    "id": "P7",
-   "title": "Moral Maxims",
-   "paraphrase": "Blessed… cursed he who writes falsely.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "the torn veil and the resurrection reports",
+   "locus": "after War 5.214",
+   "old_russian": "Сиа же катапетазма прѣд симь родом бысть цела",
+   "meshcherskii_seated_line": 15028,
+   "thackeray_1928": "(21)",
+   "berendts_grass": "— (Books V–VII lie outside Berendts–Grass)",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
   },
   {
    "id": "P8",
-   "title": "Epilogue",
-   "paraphrase": "Nothing written in truth perishes.",
-   "provenance": "collated in #1176 from Leeming & Leeming with Berendts and Meshcherskii consulted",
+   "title": "the oracle of the world-ruler",
+   "locus": "at War 6.313",
+   "old_russian": "Ови бо мнѣша Ирода, ови же распятаго чюдотворца Исуса, ови же Уеспасиана",
+   "meshcherskii_seated_line": 18872,
+   "thackeray_1928": "(22)",
+   "berendts_grass": "— (Books V–VII lie outside Berendts–Grass)",
+   "witness": "Meshcherskii 1958, EA-CORPORA-37/01, seated",
    "status": "CONTESTED"
+  }
+ ],
+ "withdrawn_v1_paraphrases": [
+  {
+   "id": "P1",
+   "title": "Prophecy of the Child",
+   "paraphrase": "A man foretold a child born in Bethlehem."
+  },
+  {
+   "id": "P2",
+   "title": "John the Baptizer",
+   "paraphrase": "Body cleansed after the soul by justice."
+  },
+  {
+   "id": "P3",
+   "title": "The Teacher (Incarnate Logos)",
+   "paraphrase": "If it is lawful to call him man… word and act."
+  },
+  {
+   "id": "P4",
+   "title": "Herod's Inscription",
+   "paraphrase": "Write down his words."
+  },
+  {
+   "id": "P5",
+   "title": "Temple Saying",
+   "paraphrase": "Temple would fall… not made with hands."
+  },
+  {
+   "id": "P6",
+   "title": "After-Death Report",
+   "paraphrase": "Seen alive after three days; they lived by his teaching."
+  },
+  {
+   "id": "P7",
+   "title": "Moral Maxims",
+   "paraphrase": "Blessed… cursed he who writes falsely."
+  },
+  {
+   "id": "P8",
+   "title": "Epilogue",
+   "paraphrase": "Nothing written in truth perishes."
   }
  ]
 }
