@@ -27,14 +27,14 @@
   "AJ 6.337 ἄφωνος ὑπὸ λύπης"
  ],
  "sections_total": 12423,
- "axn": "AXN:060E.ORIGINAL.💎☁️🌋🕔🔜🧪",
+ "axn": "AXN:060E.ORIGINAL.△🏙️🥁🌖🌆🍂",
  "axn_basis": {
   "sha256_of": "MANIFEST.sha256",
-  "sha256": "1c1f1566f639c07d88b497761ef677f3b06e01bdf52b0e336151697da6eaf9da",
+  "sha256": "98e58c05e3785de7648b391131cca2f69a5f8a64d7d8a00eb2158e5df8934ef7",
   "hex_of": "#1499 (AXN:060E.DATASET.🔗🍄🕔🍁✏️☉)",
   "family": "ORIGINAL",
   "glyph_table": "v2.1",
-  "assigned": "2026-11-12"
+  "assigned": "2026-11-13"
  },
  "axn_prior": [
   {
@@ -42,6 +42,207 @@
    "manifest_sha256": "57a34a3f34bd19d877aa93db205d9970132d73ec46c28eb9b450d34d94fd3ea9",
    "until": "2026-11-12",
    "why": "text/Vita.txt reference repair: the Life has no books, and its 430 lines were tagged 'Vita ?.<section>'; they are now 'Vita <section>'. The text is unchanged."
+  },
+  {
+   "axn": "AXN:060E.ORIGINAL.💎☁️🌋🕔🔜🧪",
+   "manifest_sha256": "1c1f1566f639c07d88b497761ef677f3b06e01bdf52b0e336151697da6eaf9da",
+   "until": "2026-11-13",
+   "why": "book-end labels repaired in BJ, AJ and CA: 26 last sections had been labelled with the next book's number and carried its heading; relabelled, headings removed to errata. The text of each section is unchanged."
+  }
+ ],
+ "errata": [
+  {
+   "date": "2026-11-13",
+   "severity": "reference",
+   "found": "The last section of every book of the War (6), the Antiquities (19) and Against Apion (1) was labelled with the next book's number (e.g. 'BJ 2.673' for War 1.673), and carried the next book's heading at its end. A search for a book's last section found nothing; a search for '2.673' found Book I.",
+   "cause": "Book-boundary handling in normalization: the milestone of each book's last section was read after the next book's div had opened.",
+   "repair": "Each line relabelled with its own book; the heading removed from the line and kept here. The text of the sections is unchanged.",
+   "lines": [
+    {
+     "work": "BJ",
+     "line": 673,
+     "was": "BJ 2.673",
+     "now": "BJ 1.673",
+     "heading_removed": "Φλαυίου Ἰωσήπου ἱστορία Ἰουδαϊκοῦ πολέμου πρὸς Ῥωμαίους λόγος β ."
+    },
+    {
+     "work": "BJ",
+     "line": 1327,
+     "was": "BJ 3.654",
+     "now": "BJ 2.654",
+     "heading_removed": "Φλαυίου Ἰωσήπου ἱστορία Ἰουδαϊκοῦ πολέμου πρὸς Ῥωμαίους βιβλίον γ ."
+    },
+    {
+     "work": "BJ",
+     "line": 1869,
+     "was": "BJ 4.542",
+     "now": "BJ 3.542",
+     "heading_removed": "Φλαυίου Ἰωσήπου ἱστορία Ἰουδαϊκοῦ πολέμου πρὸς Ῥωμαίους βιβλίον δ ."
+    },
+    {
+     "work": "BJ",
+     "line": 2532,
+     "was": "BJ 5.663",
+     "now": "BJ 4.663",
+     "heading_removed": "Φλαυίου Ἰωσήπου ἱστορία Ἰουδαϊκοῦ πολέμου πρὸς Ῥωμαίους βιβλίον ε ."
+    },
+    {
+     "work": "BJ",
+     "line": 3104,
+     "was": "BJ 6.572",
+     "now": "BJ 5.572",
+     "heading_removed": "Φλαυίου Ἰωσήπου ἱστορία Ἰουδαϊκοῦ πολέμου πρὸς Ῥωμαίους βιβλίον [στιγμα] ."
+    },
+    {
+     "work": "BJ",
+     "line": 3546,
+     "was": "BJ 7.442",
+     "now": "BJ 6.442",
+     "heading_removed": "Φλαυίου Ἰωσήπου ἱστορία Ἰουδαϊκοῦ πολέμου πρὸς Ῥωμαίους βιβλίον ζ ."
+    },
+    {
+     "work": "AJ",
+     "line": 346,
+     "was": "AJ 2.346",
+     "now": "AJ 1.346",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ β τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 695,
+     "was": "AJ 3.349",
+     "now": "AJ 2.349",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ τρίτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 1017,
+     "was": "AJ 4.322",
+     "now": "AJ 3.322",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ τετάρτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 1348,
+     "was": "AJ 5.331",
+     "now": "AJ 4.331",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ πέμπτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 1710,
+     "was": "AJ 6.362",
+     "now": "AJ 5.362",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ἕκτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 2088,
+     "was": "AJ 7.378",
+     "now": "AJ 6.378",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ἑβδόμῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 2482,
+     "was": "AJ 8.394",
+     "now": "AJ 7.394",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ὀγδόῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 2902,
+     "was": "AJ 9.420",
+     "now": "AJ 8.420",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ἐνάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 3193,
+     "was": "AJ 10.291",
+     "now": "AJ 9.291",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ δεκάτῃ βίβλῳ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 3474,
+     "was": "AJ 11.281",
+     "now": "AJ 10.281",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ἑνδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 3821,
+     "was": "AJ 12.347",
+     "now": "AJ 11.347",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ δωδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 4255,
+     "was": "AJ 13.434",
+     "now": "AJ 12.434",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ τρισκαιδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 4688,
+     "was": "AJ 14.433",
+     "now": "AJ 13.433",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ τεσσαρεσκαιδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 5179,
+     "was": "AJ 15.491",
+     "now": "AJ 14.491",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ πεντεκαιδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 5604,
+     "was": "AJ 16.425",
+     "now": "AJ 15.425",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ἑξκαιδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 6008,
+     "was": "AJ 17.404",
+     "now": "AJ 16.404",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ἑπτακαιδεκάτῃ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 6363,
+     "was": "AJ 18.355",
+     "now": "AJ 17.355",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ιη τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 6742,
+     "was": "AJ 19.379",
+     "now": "AJ 18.379",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ ιθ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "AJ",
+     "line": 7108,
+     "was": "AJ 20.366",
+     "now": "AJ 19.366",
+     "heading_removed": "Τάδε ἔνεστιν ἐν τῇ κ τῶν Ἰωσήπου ἱστοριῶν τῆς Ἰουδαϊκῆς ἀρχαιολογίας."
+    },
+    {
+     "work": "CA",
+     "line": 320,
+     "was": "CA 2.320",
+     "now": "CA 1.320",
+     "heading_removed": "Φλαΐου Ἰωσήπου περὶ ἀρχαιότητος ἀντιρρητικὸς λόγος β ."
+    }
+   ],
+   "found_in": "EA-LOGOS-01 v2.3, Appendix IV §8 (the census)",
+   "raised_by": "Lee Sharks (ruling of 2026-11-12)"
   }
  ]
 }
