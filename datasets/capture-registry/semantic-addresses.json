@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-13T06:54:02Z",
+  "regenerated_at": "2026-11-13T16:14:45Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "efc36b0b9452e7a030a8da76d4389fa69cf2be3b804248309d8862e0409682f2",
+    "mm-main-capture": "b4ea6ebd5985108bfdd1b78e4509e6fbf9658f427a198c27eb9cde8a9e583e84",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2789,
-  "total_observations": 1358,
+  "total_addresses": 2790,
+  "total_observations": 1360,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1036,
+    "observed_address": 1037,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1909,
+    "unmatched": 1910,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -18938,6 +18938,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-01",
       "latest_status": "ACCURATE BY INSTRUCTION, REVERSED BY THE NEXT QUESTION"
+    },
+    "compare the texts with their consensus reading as against the detailed readings developed at alexanarch over the pass week thru 13 nov and evaluate which readings offer greater insight into and contact with the text.": {
+      "canonical_query": "compare the texts with their consensus reading as against the detailed readings developed at alexanarch over the pass week thru 13 nov and evaluate which readings offer greater insight into and contact with the text.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-13",
+          "status": "CONSENSUS AGAINST THE WEEK'S READINGS ON CHATGPT, SIGNED OUT — THE VERDICT FOR THE ALEXANARCH READINGS; A QUALIFICATION GRAFTED AFTER EACH ASSESSMENT, ANSWERING CLAIMS THE RECORDS DO NOT MAKE",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "consensus-against-alexanarch-readings-week-chatgpt-20261113",
+          "gallery_url": "https://www.alexanarch.org/captures/#consensus-against-alexanarch-readings-week-chatgpt-20261113",
+          "record_url": "https://www.alexanarch.org/captures/consensus-against-alexanarch-readings-week-chatgpt-20261113/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#consensus-against-alexanarch-readings-week-chatgpt-20261113",
+          "details_excerpt": "CONSENSUS READINGS AGAINST THE ALEXANARCH READINGS OF 6–13 NOVEMBER, ON CHATGPT, SIGNED OUT, 2026-11-13: the Tenth Muse, In the Midst of the Seven, the Josephus Thesis, the Slavonic seating, the Crossing of Names and The"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The week's readings of the Crimson Hexagonal Archive, #1756–#1765. Recorded 2026-11-13."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-13",
+      "latest_status": "CONSENSUS AGAINST THE WEEK'S READINGS ON CHATGPT, SIGNED OUT — THE VERDICT FOR THE ALEXANARCH READINGS; A QUALIFICATION GRAFTED AFTER EACH ASSESSMENT, ANSWERING CLAIMS THE RECORDS DO NOT MAKE"
     },
     "competing ontologies": {
       "canonical_query": "competing ontologies",
@@ -84734,6 +84769,19 @@
       "observations": [
         {
           "source": "mm-main-capture",
+          "date": "2026-11-13",
+          "status": "'WHAT IS THE REVELATION FIRST THESIS?' ON CHATGPT, SIGNED OUT — THE RUNGS CARRIED, THE ORDER REVERSED: DATING FIRST AND DISPUTED, THE GENERATIVE CLAIM HELD TO A FURTHER STANDARD",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "revelation-first-thesis-what-is-chatgpt-20261113",
+          "gallery_url": "https://www.alexanarch.org/captures/#revelation-first-thesis-what-is-chatgpt-20261113",
+          "record_url": "https://www.alexanarch.org/captures/revelation-first-thesis-what-is-chatgpt-20261113/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#revelation-first-thesis-what-is-chatgpt-20261113",
+          "details_excerpt": "'WHAT IS THE REVELATION FIRST THESIS?' ON CHATGPT, SIGNED OUT, 2026-11-13, a bare question: Lee Sharks and revelationfirst.com found; the six rungs carried at the site's grain, rung VI's independence kept; the thesis ope"
+        },
+        {
+          "source": "mm-main-capture",
           "date": "2026-10-17",
           "status": "REVELATION FIRST COMPOSED AS REVELATION EARLY — FROM A SOURCE TITLED 'REVELATION FIRST ≠ REVELATION EARLY'",
           "surface": "Google AI Overview",
@@ -84751,11 +84799,11 @@
         "relation": "archive",
         "entity_type": "concept",
         "spxi_treatment": "full",
-        "basis": "Revelation First (#202; revelationfirst.com) is the archive's thesis. Recorded 2026-10-17."
+        "basis": "The Revelation First thesis (revelationfirst.com; #1755 and its line), Crimson Hexagonal Archive. Recorded 2026-11-13."
       },
       "observation_class": "observed_address",
-      "latest_observation_date": "2026-10-17",
-      "latest_status": "REVELATION FIRST COMPOSED AS REVELATION EARLY — FROM A SOURCE TITLED 'REVELATION FIRST ≠ REVELATION EARLY'"
+      "latest_observation_date": "2026-11-13",
+      "latest_status": "'WHAT IS THE REVELATION FIRST THESIS?' ON CHATGPT, SIGNED OUT — THE RUNGS CARRIED, THE ORDER REVERSED: DATING FIRST AND DISPUTED, THE GENERATIVE CLAIM HELD TO A FURTHER STANDARD"
     },
     "what is the sappho future reader framework?": {
       "canonical_query": "what is the sappho future reader framework?",
