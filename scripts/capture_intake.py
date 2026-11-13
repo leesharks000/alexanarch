@@ -216,6 +216,9 @@ def _flat_defects(e):
     tc = (e.get("transcript_complete") or "").lower()
     if "truncat" in tc or "cut" in tc: d.append("truncated-by-interface")
     if (e.get("analysis") or "") and not (e.get("d") or ""): d.append("analysis-without-finding")
+    # 2026-11-13: 36 observations seated 2026-10-25 to 11-13 carried the reading copied into the analysis, and the
+    # record pages printed it twice (operator: "lets just write the analysis and do so going forward"). Recorded.
+    if (e.get("reading") or "") and e.get("analysis") == e.get("reading"): d.append("analysis-duplicates-reading")
     return sorted(set(d))
 
 
@@ -289,6 +292,8 @@ def seat_flat(draft, registry, schema):
     import datetime as _dt; sys.path.insert(0, str(ROOT / "scripts")); from per_scalar import derive as _derive_per
     _ch = _derive_per(draft, _dt.date.today().isoformat())
     if _ch: print("   NOTICE: per %s disagreed with per_v; derived %s (per_corrected recorded)" % _ch)
+    if (draft.get("reading") or "") and draft.get("analysis") == draft.get("reading"):
+        print("   NOTICE: analysis duplicates reading — write the analysis (2026-11-13 ruling); recorded as analysis-duplicates-reading")
     # ROUTE: exact issued string on the same surface → observation on the existing entry
     for e in registry["entries"]:
         if e.get("q") == draft["q"] and e.get("surface") == draft["surface"]:

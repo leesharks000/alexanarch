@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.660",
+ "derived_from": "EA-WG-CAPTURES-01 v12.662",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1253,
-  "joined_confirmed": 498,
+  "observations": 1255,
+  "joined_confirmed": 500,
   "unjoined": 755,
-  "relations": 6592,
+  "relations": 6602,
   "by_state": {
-   "confirmed": 5250,
+   "confirmed": 5260,
    "candidate": 1342
   },
   "by_verb": {
-   "appeared_in": 1855,
-   "held_by": 2586,
-   "scored_by": 998,
+   "appeared_in": 1859,
+   "held_by": 2590,
+   "scored_by": 1000,
    "about": 1135,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -3395,6 +3395,16 @@
 {"id": "REL-2a0c5e1fcb2c", "obs_id": "OBS-004392987eee", "entry": "the-josephus-thesis-aio-20261113", "obs_slug": "the-josephus-thesis-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "the josephus thesis", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.75", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5fa07c6ea130", "obs_id": "OBS-004392987eee", "entry": "the-josephus-thesis-aio-20261113", "obs_slug": "the-josephus-thesis-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "the josephus thesis", "verb": "about", "object": "non:book-of-revelation", "basis": "defining papers #636, #1101", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-062f269a1b18", "obs_id": "OBS-004392987eee", "entry": "the-josephus-thesis-aio-20261113", "obs_slug": "the-josephus-thesis-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "the josephus thesis", "verb": "about", "object": "non:oxyrhynchus-online", "basis": "defining papers #636, #1101", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-f8e97aa2adad", "obs_id": "OBS-2ce261dfc91b", "entry": "alexanarch-living-academy-aio-20261113", "obs_slug": "alexanarch-living-academy-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "alexanarch living academy", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "alexanarch.org", "title": "Alexanarch", "url": null}},
+{"id": "REL-9c7212b53501", "obs_id": "OBS-2ce261dfc91b", "entry": "alexanarch-living-academy-aio-20261113", "obs_slug": "alexanarch-living-academy-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "alexanarch living academy", "verb": "appeared_in", "object": "surface:metadatapacket.dev", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "metadatapacket.dev", "title": "Metadata Packet EA-MPAI-ALEXANARCH-01", "url": null}},
+{"id": "REL-8bc1532922a5", "obs_id": "OBS-2ce261dfc91b", "entry": "alexanarch-living-academy-aio-20261113", "obs_slug": "alexanarch-living-academy-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "alexanarch living academy", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-b7a75337bccc", "obs_id": "OBS-2ce261dfc91b", "entry": "alexanarch-living-academy-aio-20261113", "obs_slug": "alexanarch-living-academy-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "alexanarch living academy", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-71e7ba17b833", "obs_id": "OBS-2ce261dfc91b", "entry": "alexanarch-living-academy-aio-20261113", "obs_slug": "alexanarch-living-academy-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "alexanarch living academy", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
+{"id": "REL-38b6ba512ca3", "obs_id": "OBS-3e91447517d1", "entry": "operative-semiotics-predictions-aio-20261113", "obs_slug": "operative-semiotics-predictions-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "operative semiotics predictions", "verb": "appeared_in", "object": "surface:operativesemiotics.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "operativesemiotics.org", "title": "Operative Semiotics Archive", "url": null}},
+{"id": "REL-38b6ba512ca3", "obs_id": "OBS-3e91447517d1", "entry": "operative-semiotics-predictions-aio-20261113", "obs_slug": "operative-semiotics-predictions-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "operative semiotics predictions", "verb": "appeared_in", "object": "surface:operativesemiotics.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 7, "site": "operativesemiotics.org", "title": "Operative Semiotics Open Research Index", "url": null}},
+{"id": "REL-5e7a171b0874", "obs_id": "OBS-3e91447517d1", "entry": "operative-semiotics-predictions-aio-20261113", "obs_slug": "operative-semiotics-predictions-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "operative semiotics predictions", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-f17c987e14c6", "obs_id": "OBS-3e91447517d1", "entry": "operative-semiotics-predictions-aio-20261113", "obs_slug": "operative-semiotics-predictions-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "operative semiotics predictions", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-be30fd212a20", "obs_id": "OBS-3e91447517d1", "entry": "operative-semiotics-predictions-aio-20261113", "obs_slug": "operative-semiotics-predictions-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "operative semiotics predictions", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
