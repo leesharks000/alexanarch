@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.656",
+ "derived_from": "EA-WG-CAPTURES-01 v12.657",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1249,
-  "joined_confirmed": 495,
+  "observations": 1250,
+  "joined_confirmed": 496,
   "unjoined": 754,
-  "relations": 6570,
+  "relations": 6578,
   "by_state": {
-   "confirmed": 5234,
-   "candidate": 1336
+   "confirmed": 5239,
+   "candidate": 1339
   },
   "by_verb": {
-   "appeared_in": 1851,
-   "held_by": 2578,
-   "scored_by": 994,
-   "about": 1129,
+   "appeared_in": 1853,
+   "held_by": 2580,
+   "scored_by": 995,
+   "about": 1132,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -3336,6 +3336,14 @@
 {"id": "REL-4259318977dc", "obs_id": "OBS-bc117cb9e957", "entry": "3i-atlas-nobel-glas-aio-20261112", "obs_slug": "3i-atlas-nobel-glas-aio-20261112", "date": "2026-11-12", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "about", "object": "non:3i-atlas-1665-1668-mhz", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-49df144f062f", "obs_id": "OBS-bc117cb9e957", "entry": "3i-atlas-nobel-glas-aio-20261112", "obs_slug": "3i-atlas-nobel-glas-aio-20261112", "date": "2026-11-12", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "about", "object": "non:ata-3i-atlas-search", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-a57508bad951", "obs_id": "OBS-bc117cb9e957", "entry": "3i-atlas-nobel-glas-aio-20261112", "obs_slug": "3i-atlas-nobel-glas-aio-20261112", "date": "2026-11-12", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "about", "object": "non:avi-loeb-3i-atlas", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-a7679df5a053", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "appeared_in", "object": "surface:provenanceerasure.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "provenanceerasure.org", "title": "What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data ...", "url": "https://www.provenanceerasure.org"}},
+{"id": "REL-e0806dbacf25", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "appeared_in", "object": "deposit:1742", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "provenanceerasure.org", "title": "What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data ...", "url": "https://www.provenanceerasure.org"}},
+{"id": "REL-861bbeb76e7b", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-a3cce97f5b20", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-bf1a2a47b331", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-80fc1154bc00", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "about", "object": "non:3i-atlas-1665-1668-mhz", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-945c99c8f0cf", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "about", "object": "non:ata-3i-atlas-search", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-b3b8469952c8", "obs_id": "OBS-1a6f3b3d8039", "entry": "3i-atlas-nobel-glas-aio-20261113", "obs_slug": "3i-atlas-nobel-glas-aio-20261113", "date": "2026-11-13", "surface": "Google AI Overview", "q": "3i atlas nobel glas", "verb": "about", "object": "non:avi-loeb-3i-atlas", "basis": "defining papers #1742, #1743", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-ea684f6d621f", "obs_id": "OBS-aa5991ff543f", "entry": "word-that-became-text-v23-arguments-chatgpt-20261113", "obs_slug": "word-that-became-text-v23-arguments-chatgpt-20261113", "date": "2026-11-13", "surface": "ChatGPT", "q": "What are the arguments in “The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos” by Johannes Sigil (Alexanarch deposit #1765, AXN:0C78)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": "Alexanarch +2", "url": null}},
 {"id": "REL-ea684f6d621f", "obs_id": "OBS-aa5991ff543f", "entry": "word-that-became-text-v23-arguments-chatgpt-20261113", "obs_slug": "word-that-became-text-v23-arguments-chatgpt-20261113", "date": "2026-11-13", "surface": "ChatGPT", "q": "What are the arguments in “The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos” by Johannes Sigil (Alexanarch deposit #1765, AXN:0C78)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": "Alexanarch +2", "url": null}},
 {"id": "REL-ea684f6d621f", "obs_id": "OBS-aa5991ff543f", "entry": "word-that-became-text-v23-arguments-chatgpt-20261113", "obs_slug": "word-that-became-text-v23-arguments-chatgpt-20261113", "date": "2026-11-13", "surface": "ChatGPT", "q": "What are the arguments in “The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos” by Johannes Sigil (Alexanarch deposit #1765, AXN:0C78)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 3, "site": "Alexanarch", "title": "Alexanarch +1", "url": null}},
