@@ -1,8 +1,8 @@
 {
  "row": "classical-receptions-journal",
- "pass": "2026-11-10: first reading of D, R and O candidates; one citation hop forward and back from #1749, #1750, #833, #1421 and #1423 (the brief's A pool, each read before admission)",
+ "pass": "2026-11-10: first reading of D, R and O candidates; one citation hop forward and back from #1749, #1750, #833, #1421 and #1423 (the brief's A pool, each read before admission); 2026-11-14: D/R/O rerun with the revised address, #1769 and #1766 admitted by reading; hop candidates #4, #32, #165, #189, #280 and #1767 not admitted (they say nothing of the journal)",
  "procedure": "EA-NEGONT-02 v0.10 §3.4 D/R/O (working; not frozen). D where a deposit names the journal and says something of it; R where it relates the journal to an archive object (the author, the archive's article); O-class for the three classes the field sources (journals of classical reception studies: B14, B4; literary reception and large language models: B4; AI checks before submission: B6). The class 'machine-mediated reception of classical texts' is T's claim about the journal and has no readable field source; the programme's papers enter where they name the journal or by the brief's direction as the delta's loci. A bare mention, a reference-list line, a keyword list or a quoted machine composition is not a claim.",
- "reader": "Claude (Opus 5.5), subagent, 2026-11-10",
+ "reader": "Claude (Opus 5.5), subagent, 2026-11-10; Claude (Opus 5.5), subagent, 2026-11-14",
  "verdicts": [
   {
    "dep": 833,
@@ -199,6 +199,72 @@
    "reason": "The Three Dimensions of Provenance Erasure (14 August 2026): read at §2 for the category the delta needs, PER-C (institution as conceptual provenance); the Capture Registry's dimensional score at the address is pending (per_dim_pending)",
    "claims": [
     "O1469-01"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1769,
+   "strata": [
+    "D",
+    "R",
+    "O"
+   ],
+   "reason": "Daffodils (#1769, v1.1), the archive's audit of the journal, read whole: the census and coding (§2.4, §2.6), the decision and the control (§6.2, §6.4.3.2), the captures of 14 November (§6.5, §6.5.1), the editor's article against the criteria K1–K5 (§7.11.6), the received definition and what is contested (§1.6); the kernel's rival and ontology parsed for K1 and K2",
+   "claims": [
+    "D1769-01",
+    "D1769-02",
+    "D1769-03",
+    "D1769-04",
+    "D1769-05",
+    "D1769-06",
+    "D1769-07",
+    "D1769-08",
+    "D1769-09",
+    "D1769-10",
+    "D1769-11",
+    "D1769-12",
+    "D1769-13",
+    "D1769-14",
+    "D1769-15",
+    "D1769-16",
+    "D1769-17",
+    "D1769-18",
+    "D1769-19",
+    "D1769-20",
+    "D1769-21",
+    "D1769-22",
+    "D1769-23",
+    "D1769-24",
+    "D1769-25",
+    "D1769-26",
+    "D1769-27",
+    "D1769-28",
+    "D1769-29",
+    "D1769-30",
+    "D1769-31",
+    "D1769-32",
+    "D1769-33",
+    "D1769-34",
+    "D1769-35",
+    "D1769-36",
+    "D1769-37",
+    "D1769-38",
+    "D1769-39",
+    "D1769-40",
+    "D1769-41",
+    "D1769-K1",
+    "D1769-K2"
+   ],
+   "cands": []
+  },
+  {
+   "dep": 1766,
+   "strata": [
+    "D"
+   ],
+   "reason": "Critique of Pure Inference (#1766) §6.1.3, the one new candidate of the 14 November rerun: reads the decision as a paralogism of review",
+   "claims": [
+    "D1766-01"
    ],
    "cands": []
   }
@@ -1951,18 +2017,18 @@
  ],
  "counts": {
   "D_candidates": 13,
-  "D_deposits": 6,
+  "D_deposits": 8,
   "R_candidates": 3,
   "O_candidates": 13,
-  "O_deposits": 9,
-  "H_candidates": 97,
-  "deposits_admitted": 10,
-  "deposit_claims": 41,
+  "O_deposits": 10,
+  "H_candidates": 109,
+  "deposits_admitted": 12,
+  "deposit_claims": 86,
   "B9_claims_833": 16,
-  "CAP_claims": 56
+  "CAP_claims": 99
  },
  "records": {
-  "CAP": 56,
+  "CAP": 99,
   "note": "the archive's own records of the entity, ledgered beside the deposits: the Capture Registry's reading and findings at classical-receptions-journal-ai-mediation-aio-20261110 (CAP-1-NN, as repaired 2026-11-10) and at vox-letter-crj-stewardship-chatgpt-20261110 (CAP-2-NN)"
  }
 }

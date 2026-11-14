@@ -1206,6 +1206,9 @@ def main():
             links["labor_record"] = LV[k]["url"]
         if k in RF:
             links["field_record"] = RF[k]["url"]
+        # 2026-11-14: a row's own links (e.g. hologram, hologram_kernel: the framework hologram that cites the entry) are carried
+        for kk, vv in ((r or {}).get("links") or {}).items():
+            links.setdefault(kk, vv)
         links["dataset"] = HF_NON
         links = {kk: vv for kk, vv in links.items() if vv}
         ax = AX.get(k)

@@ -1,0 +1,1552 @@
+{
+ "row": "classical-receptions-journal",
+ "address": "classical receptions journal · what has classical receptions journal contributed to the study of ai-mediation of the classics?",
+ "addresses": [
+  "classical receptions journal · what has classical receptions journal contributed to the study of ai-mediation of the classics?"
+ ],
+ "extracted": "2026-11-10",
+ "extractor": "Claude (Opus 5.5), subagent, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); title-only cards quoted by their title as pasted; 57/57 verified by script",
+ "B_note": "The field in two pools (v0.10 §0.3, §3.1(a)), marked by origin and by pool. B_D, the disclosed pool: the run's cards as pasted (turn 1: B1 Oxford Academic '+1', B2 Hopkins Press '+2'; turn 2: B3 www.instagram.com, B4 the Classical Reception Studies Network, B5 Oxford Academic (two cards), B6 Paperpal), the journals the body names (B7 New Voices in Classical Reception Studies, B8 the International Journal of the Classical Tradition; the American Journal of Classical Reception carried with B2, the CRSN with B4), and the in-text citation [1] at both credit paragraphs, resolved by the operator's link to the archive's page for #833 (B9, an archive-controlled card, #833 carried once, in B_D). The sources behind '+1' and '+2' are not in the paste and are recorded so. B_R, the reference pool: the journal's own pages (B10 About, B11 General Instructions, B12 Editorial Board, B13 home), its Wikipedia article (B14), the inaugural editorial of 2009 (B15) and Crossref's register as the session's census (B16). The journal's own pages, the 2009 editorial, Hopkins Press, New Voices and the IJCT refused the row's agent 'Mozilla/5.0 (compatible; alexanarch-non)' (403 or a bot check) and are recorded as unreachable; they were not retried by another route; the Capture Registry's record of the About page and the guidelines, read by the session the same day, enters as archive claims (CAP-).",
+ "lineage_note": "Lineages (§3.6): editors and dates; identifiers; literary reception and large language models; machine-mediated reception studies; pre-submission checks; the archive's author in its pages; the field; the field on AI; the summarizer as horizon of reception; unread cards; what it is; what its pages hold",
+ "pages": "saved files under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/ (Bn.html raw, Bn.txt text with scripts and styles stripped; B4-cfp.* the call for papers; B14.wiki the raw wikitext; B16-crossref-census.json the session's census; citation-redirect-034e.html the operator's citation redirect; T1-classical-receptions-journal-ai-mediation-aio-20261110.txt the registry's transcript string; the 12:36 and 12:57 pastes); sha256 per file in each source's 'files'",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card, turn 1, after the definition",
+   "card": "Oxford Academic — (title only, '+1')",
+   "card_title": "Oxford Academic",
+   "card_snippet": null,
+   "url": null,
+   "kind": "card naming the journal's host platform; its target and the '+1' sources are not in the paste",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://academic.oup.com/crj",
+      "at": "2026-11-10T18:00:11Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (a Cloudflare 'Just a moment...' challenge); one request with the row's agent string, no retry by another route"
+     },
+     {
+      "url": "https://academic.oup.com/crj/pages/About",
+      "at": "2026-11-10T18:00:10Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (challenge); one request with the row's agent string, no retry by another route"
+     }
+    ],
+    "note": "the card's likely targets, the journal's home and About pages, refused; title only"
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 1,
+     "card": 1
+    }
+   ],
+   "note": "title only, unread",
+   "files": {}
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "role": "Overview card, turn 1, after the related journals; the body names the American Journal of Classical Reception (published by Hopkins Press) beside it",
+   "card": "Hopkins Press — (title only, '+2')",
+   "card_title": "Hopkins Press",
+   "card_snippet": null,
+   "url": "https://www.press.jhu.edu/journals/american-journal-classical-reception",
+   "kind": "card naming the press of the American Journal of Classical Reception; the '+2' sources not in the paste",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.press.jhu.edu/journals/american-journal-classical-reception",
+      "at": "2026-11-10T18:01:24Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403; one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 1,
+     "card": 2
+    }
+   ],
+   "note": "title only, unread",
+   "files": {}
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card, turn 2, the first card of the credit",
+   "card": "www.instagram.com — (domain only)",
+   "card_title": "www.instagram.com",
+   "card_snippet": null,
+   "url": null,
+   "kind": "a card that shows only its domain",
+   "fetched": {
+    "tried": [],
+    "result": "title-only and unreadable: the card's target is not in the paste, so there is nothing to fetch"
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 2,
+     "card": 1
+    }
+   ],
+   "note": "title only, unreadable",
+   "files": {}
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "role": "Overview card, turn 2, after the second section; also named in the body (section 4)",
+   "card": "Classical Reception Studies Network — classicalreception.org",
+   "card_title": "Classical Reception Studies Network",
+   "card_snippet": null,
+   "url": "https://classicalreception.org/",
+   "kind": "the network's home page and the call for papers it lists ('CfP: Literary Reception and Human Creativity in the Age of AI', 23 June 2026); the card's exact target is not in the paste: the home page is the card's site, the call the page on it whose wording T's second section corresponds to",
+   "files": {
+    "B4.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B4.html",
+     "sha256": "ea4b2c10f3187d882817164a6683369dc6228c3d01f317c792a308e096e19b0e"
+    },
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B4.txt",
+     "sha256": "29d7c47b4a61f1f1a2adeea4a3fee14bbb1edc275990c7b6ac6609e1c3d712f4"
+    },
+    "B4-cfp.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B4-cfp.html",
+     "sha256": "bb345b1b61fd3b80164ba6b3aabf20863d32bc86e4440714e44161ee48f24e26"
+    },
+    "B4-cfp.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B4-cfp.txt",
+     "sha256": "92bddd16f5fb9b45b21572053fd995be991a17a0003309c78db77b3b07ab5719"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-10T18:01:05Z",
+    "http": 200,
+    "url": "https://classicalreception.org/",
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "also": {
+     "at": "2026-11-10T18:01:23Z",
+     "http": 200,
+     "url": "https://classicalreception.org/cfp-literary-reception-and-human-creativity-in-the-age-of-ai/"
+    }
+   },
+   "names_operator": "yes (the network; the call names its co-organizers at Bryn Mawr College)",
+   "names_archive": "no",
+   "names_entity": "no (neither page names Classical Receptions Journal)",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 2,
+     "card": 2
+    }
+   ]
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview cards, turn 2, beside 'Authorship Bans' and 'Transparency and Disclosure' (two cards, same title)",
+   "card": "Oxford Academic — (title only, two cards)",
+   "card_title": "Oxford Academic",
+   "card_snippet": null,
+   "url": "https://academic.oup.com/crj/pages/General_Instructions",
+   "kind": "cards beside the journal's author guidelines; targets not in the paste",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://academic.oup.com/crj/pages/General_Instructions",
+      "at": "2026-11-10T18:00:11Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (challenge); one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 2,
+     "card": 3
+    },
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 2,
+     "card": 4
+    }
+   ],
+   "note": "title only, unread",
+   "files": {}
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "role": "Overview card, turn 2, after 'Automated Peer Review Readiness'",
+   "card": "Paperpal — Preflight for Classical Receptions Journal",
+   "card_title": "Paperpal",
+   "card_snippet": null,
+   "url": "https://preflight.paperpal.com/partner/oup/crj",
+   "kind": "Paperpal Preflight's page for the journal (redirects to /partner/oup/crj/v2)",
+   "files": {
+    "B6.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B6.html",
+     "sha256": "2a3fec448dfdba916ab27ab47312117dc826c113bfc16a9621082c573b096231"
+    },
+    "B6.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B6.txt",
+     "sha256": "87bd14dc80f588eb147acde54252d33e8d02dbfa8d2b7dd513889e1451eb0de0"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-10T18:00:59Z",
+    "http": 200,
+    "url": "https://preflight.paperpal.com/partner/oup/crj",
+    "final_url": "https://preflight.paperpal.com/partner/oup/crj/v2",
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "note": "URL found from the card's site name and the press releases WebSearch returned for 'Paperpal Preflight'; /partner/oup/classical-receptions-journal returned 404 and is not the page"
+   },
+   "names_operator": "yes (Cactus Communications)",
+   "names_archive": "no",
+   "names_entity": "yes",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 2,
+     "card": 5
+    }
+   ]
+  },
+  {
+   "id": "B7",
+   "origin": "body_named",
+   "pool": "B_D",
+   "role": "named in the body of turn 1 (related journals)",
+   "card": "New Voices in Classical Reception Studies — (body-named)",
+   "card_title": null,
+   "card_snippet": null,
+   "url": "https://www.open.ac.uk/arts/research/new-voices/",
+   "kind": "journal named in T's body",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.open.ac.uk/arts/research/new-voices/",
+      "at": "2026-11-10T18:01:24Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403; one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 1,
+     "body": true
+    }
+   ],
+   "note": "unread",
+   "files": {}
+  },
+  {
+   "id": "B8",
+   "origin": "body_named",
+   "pool": "B_D",
+   "role": "named in the body of turn 1 (related journals)",
+   "card": "International Journal of the Classical Tradition — (body-named)",
+   "card_title": null,
+   "card_snippet": null,
+   "url": "https://link.springer.com/journal/12138",
+   "kind": "journal named in T's body",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://link.springer.com/journal/12138",
+      "at": "2026-11-10T18:01:24Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: the body is a 'Client Challenge' page (bot check), no text of the journal; not retried"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 1,
+     "body": true
+    }
+   ],
+   "note": "unread",
+   "files": {}
+  },
+  {
+   "id": "B9",
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "role": "the in-text citation [1] at both paragraphs of the credit (turn 2), resolved by the operator's link",
+   "card": "#833 The Summarizer as Horizon of Reception — crimsonhexagonal.org/works/034e",
+   "card_title": "The Summarizer as Horizon of Reception (in-text citation [1])",
+   "card_snippet": null,
+   "url": "https://www.crimsonhexagonal.org/works/034e",
+   "kind": "the archive's page for #833 (AXN:034E), which projects the deposit in full; an archive-controlled card, carried once, in B_D (§3.1(a)); #833 is an A source carried here",
+   "files": {
+    "citation-redirect-034e.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/citation-redirect-034e.html",
+     "sha256": "cec99f5e4a52669fd0e8aa6600323a34518009ecf696fb89940612a4ad97f46f"
+    },
+    "B9.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B9.html",
+     "sha256": "86121779a05a66adc7763b106bd2f97266873871695fdf6a8ee86fbd6dfaa278"
+    },
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B9.txt",
+     "sha256": "63d97b06d207ee43b4da818532bfb700db69cde4e32d4cb3ede594a9c57d0bb5"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-10T18:07:20Z",
+    "http": 200,
+    "url": "https://www.crimsonhexagonal.org/works/034e",
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "redirect": {
+     "file": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/citation-redirect-034e.html",
+     "note": "the google.com/url redirect the operator supplied at 12:59 EST, fetched by the session, HTTP 302 to https://www.crimsonhexagonal.org/works/034e"
+    }
+   },
+   "names_operator": "yes (Lee Sharks)",
+   "names_archive": "yes",
+   "names_entity": "yes (three loci: §2.1 twice; §2.5 and References, Barker)",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-receptions-journal-ai-mediation-aio-20261110",
+     "turn": 2,
+     "citation": "[1]",
+     "paragraphs": [
+      "'Rather than viewing AI purely …'",
+      "section 1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the journal's About page",
+   "card": "Classical Receptions Journal — About",
+   "url": "https://academic.oup.com/crj/pages/About",
+   "kind": "own page",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://academic.oup.com/crj/pages/About",
+      "at": "2026-11-10T18:00:10Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (challenge); one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [],
+   "note": "unread; the Capture Registry's record of it (read by the session the same day) enters as CAP- claims",
+   "files": {}
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the journal's General Instructions (author guidelines)",
+   "card": "Classical Receptions Journal — General Instructions",
+   "url": "https://academic.oup.com/crj/pages/General_Instructions",
+   "kind": "own page",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://academic.oup.com/crj/pages/General_Instructions",
+      "at": "2026-11-10T18:00:11Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (challenge); one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [],
+   "note": "unread; the Capture Registry's record of the guidelines enters as CAP- claims",
+   "files": {}
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the journal's editorial board page",
+   "card": "Classical Receptions Journal — Editorial Board",
+   "url": "https://academic.oup.com/crj/pages/Editorial_Board",
+   "kind": "own page",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://academic.oup.com/crj/pages/Editorial_Board",
+      "at": "2026-11-10T18:00:11Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (challenge); one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [],
+   "note": "unread",
+   "files": {}
+  },
+  {
+   "id": "B13",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the journal's home page",
+   "card": "Classical Receptions Journal — Oxford Academic",
+   "url": "https://academic.oup.com/crj",
+   "kind": "own page",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://academic.oup.com/crj",
+      "at": "2026-11-10T18:00:11Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (challenge); one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [],
+   "note": "unread",
+   "files": {}
+  },
+  {
+   "id": "B14",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "role": "the entity's Wikipedia article",
+   "card": "Wikipedia — Classical Receptions Journal",
+   "url": "https://en.wikipedia.org/wiki/Classical_Receptions_Journal",
+   "kind": "Wikipedia article (stub)",
+   "files": {
+    "B14.html": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B14.html",
+     "sha256": "88f782c139ef54564494d5a34d164b09af1e3918b06a8858f078ac97bfcca515"
+    },
+    "B14.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B14.txt",
+     "sha256": "1d9d38065c2bfbb61b41dc36843aae8c79d34cf26a4dcc5e53f5e334157a0c05"
+    },
+    "B14.wiki": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B14.wiki",
+     "sha256": "57befcc62274d9b2a414ea730aa9d3ee0e2ebac55064dc4ba54e26e8f6c6889e"
+    }
+   },
+   "fetched": {
+    "at": "2026-11-10T18:00:11Z",
+    "http": 200,
+    "url": "https://en.wikipedia.org/wiki/Classical_Receptions_Journal",
+    "raw": "https://en.wikipedia.org/w/index.php?title=Classical_Receptions_Journal&action=raw",
+    "oldid": 1086053696,
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)"
+   },
+   "names_operator": "yes (Oxford University Press; editor Pantelis Michelakis)",
+   "names_archive": "no",
+   "surfaced_by_T": []
+  },
+  {
+   "id": "B15",
+   "origin": "own_page",
+   "pool": "B_R",
+   "role": "the inaugural editorial, CRJ 1.1 (2009)",
+   "card": "Classical Receptions Journal — Editorial (2009), doi:10.1093/crj/clp008",
+   "url": "https://doi.org/10.1093/crj/clp008",
+   "kind": "the inaugural editorial (Lorna Hardwick, by the ChatGPT composition's account)",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://doi.org/10.1093/crj/clp008",
+      "at": "2026-11-10T18:00:12Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "result": "unreachable: HTTP 403 (resolved to academic.oup.com/crj/article-lookup/doi/10.1093/crj/clp008; challenge); one request with the row's agent string, no retry by another route"
+     }
+    ]
+   },
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "surfaced_by_T": [],
+   "note": "not open to this agent; its register entry is in B16 (F56)",
+   "files": {}
+  },
+  {
+   "id": "B16",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "role": "Crossref's register of the journal, read by the session on 2026-11-10",
+   "card": "Crossref — works of ISSN 1759-5142 (census)",
+   "url": "https://api.crossref.org/journals/1759-5142/works?rows=1000&select=title,issued,DOI,type,abstract,subtitle",
+   "kind": "third-party register; census of 405 works with every title and abstract matched for AI terms",
+   "files": {
+    "B16-crossref-census.json": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/B16-crossref-census.json",
+     "sha256": "eab51da74def169fe84e5362ac6322f078e23a5df2bde47db3cdb1890b562f8a"
+    },
+    "crossref-raw-1759-5142.json": {
+     "path": "rebuild/capture-registry/intake-20261110-crj-vox-stewardship/crossref-raw-1759-5142.json",
+     "sha256": "74541536b7ddd53b6e4857dbc134718319516ed12109f8f3b0103b6b65cd1ffa"
+    }
+   },
+   "fetched": {
+    "read": "2026-11-10",
+    "by": "the session (census)",
+    "raw_sha256": "74541536b7ddd53b6e4857dbc134718319516ed12109f8f3b0103b6b65cd1ffa",
+    "rechecked": "by this composer on 2026-11-10: the raw file's sha256 matches; 405 items, total-results 405; 185 with abstracts; 2009–2026; the census pattern run over titles, subtitles and abstracts returns one match, 10.1093/crj/clz028 ('Ai'), the excluded one"
+   },
+   "limits": "the register's abstracts cover 185 of 405 works; a title-and-abstract match finds what titles and abstracts say; works the journal published without Crossref registration are outside it",
+   "names_operator": "yes (the journal's DOIs, 10.1093/crj)",
+   "names_archive": "no",
+   "surfaced_by_T": []
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "turn 1, card after the definition (title as pasted, with '+1')",
+   "quote": "Oxford Academic",
+   "claim": "card title only: Oxford Academic (+1); target and the '+1' sources not in the paste; the journal's pages refused the fetch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "card, 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / body name), datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/paste-classical-receptions-journal-aio-five-turns.txt",
+   "title_only": true
+  },
+  "F2": {
+   "source": "B2",
+   "locus": "turn 1, card after the related journals (title as pasted, with '+2')",
+   "quote": "Hopkins Press",
+   "claim": "card title only: Hopkins Press (+2); the body names the American Journal of Classical Reception beside it; the press refused the fetch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "card, 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "the paste (card title / body name), datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/paste-classical-receptions-journal-aio-five-turns.txt",
+   "title_only": true
+  },
+  "F3": {
+   "source": "B3",
+   "locus": "turn 2, first card, after the credit's opening sentence",
+   "quote": "www.instagram.com",
+   "claim": "card shows only its domain; its target is not in the paste: title-only and unreadable",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "card, 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / body name), datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/paste-classical-receptions-journal-aio-five-turns.txt",
+   "title_only": true
+  },
+  "F4": {
+   "source": "B4",
+   "locus": "home page, opening",
+   "quote": "The Classical Reception Studies Network (CRSN) aims to encourage collaboration in the field of classical reception studies, on a global scale.",
+   "claim": "the network's aim: collaboration in classical reception studies, globally",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field",
+   "date": "undated home page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B4",
+   "locus": "home page, opening",
+   "quote": "Classical reception studies is the inquiry into how and why the texts, ideas, images and material cultures of Ancient Greece and Rome have been received, adapted, refigured, used and abused in different historical and cultural contexts.",
+   "claim": "the network's definition of classical reception studies",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the field",
+   "date": "undated home page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B4",
+   "locus": "home page",
+   "quote": "Formed in 2004 and originally funded by the Arts and Humanities Research Council",
+   "claim": "the network formed in 2004, first funded by the AHRC",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field",
+   "date": "undated home page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B4",
+   "locus": "home page, latest posts",
+   "quote": "CfP: Literary Reception and Human Creativity in the Age of AI June 23, 2026",
+   "claim": "the home page lists the call for papers on literary reception and AI, 23 June 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-23",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B4",
+   "locus": "call for papers, head",
+   "quote": "Bryn Mawr College, April 16–17, 2027",
+   "claim": "the call is for a conference at Bryn Mawr College, 16–17 April 2027",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-23",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B4",
+   "locus": "call for papers, ¶1",
+   "quote": "how does human literary production differ from that of large language models (LLMs)",
+   "claim": "the call's question: how human literary production differs from that of LLMs",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-23",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B4",
+   "locus": "call for papers, ¶2",
+   "quote": "But while LLMs recombine existing patterns, human authors transform inherited forms and meanings in ways that open new imaginative possibilities.",
+   "claim": "the call's contrast: LLMs recombine existing patterns; human authors transform inherited forms and open new imaginative possibilities",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-23",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B4",
+   "locus": "call for papers, ¶3",
+   "quote": "This conference invites scholars working across ancient and modern literatures to examine what is distinctively human about such encounters—what writers do with the voices they inherit that resists algorithmic replication.",
+   "claim": "the call's scope: what is distinctively human in literary encounters, what resists algorithmic replication",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-23",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B4",
+   "locus": "call for papers, footer",
+   "quote": "Published June 23, 2026",
+   "claim": "posted on the network's site on 23 June 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-23",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "body_named",
+   "checked_against": "saved text of B4 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B5",
+   "locus": "turn 2, two cards beside 'Authorship Bans' and 'Transparency and Disclosure' (title as pasted)",
+   "quote": "Oxford Academic",
+   "claim": "card title only (two cards): Oxford Academic; targets not in the paste; the journal's author guidelines refused the fetch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "card, 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / body name), datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/paste-classical-receptions-journal-aio-five-turns.txt",
+   "title_only": true
+  },
+  "F14": {
+   "source": "B6",
+   "locus": "head",
+   "quote": "Check language and technical readiness before submitting to Classical Receptions Journal",
+   "claim": "Paperpal's page for the journal: a readiness check before submitting",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": true,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B6",
+   "locus": "head",
+   "quote": "Assessment check based on journal requirements 4 Language quality evaluations 16 Technical compliance checks",
+   "claim": "four language-quality evaluations and sixteen technical-compliance checks",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B6",
+   "locus": "Preflight at work",
+   "quote": "The editors of Classical Receptions Journal have configured a suite of Preflight checks to help you determine whether your manuscript is ready for submission.",
+   "claim": "the journal's editors have configured the checks, to help authors judge readiness for submission",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B6",
+   "locus": "steps",
+   "quote": "AI evaluation begins immediately for content rigor and identification of language and technical compliance issues.",
+   "claim": "the check is an AI evaluation",
+   "modality": "self-description",
+   "kind": "function",
+   "kernel": false,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B6",
+   "locus": "free report",
+   "quote": "free of cost for authors submitting to this journal",
+   "claim": "the report is free for authors submitting to the journal",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B6",
+   "locus": "steps",
+   "quote": "for a one-time fee of $29",
+   "claim": "an edited file for a one-time fee of $29",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B6",
+   "locus": "commitment",
+   "quote": "The use of Preflight prior to submission was associated with a significant decrease in initial-stage manuscript rejections.",
+   "claim": "Paperpal's claim: use before submission associated with fewer initial-stage rejections",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "pre-submission checks",
+   "date": "undated page, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B6 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B7",
+   "locus": "turn 1 body, related journals (name as the body gives it)",
+   "quote": "New Voices in Classical Reception Studies",
+   "claim": "body-named only: New Voices in Classical Reception Studies; its page refused the fetch",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "body, 2026-11-10",
+   "quote_ok": true,
+   "origin": "body_named",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / body name), datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/paste-classical-receptions-journal-aio-five-turns.txt",
+   "title_only": true
+  },
+  "F22": {
+   "source": "B8",
+   "locus": "turn 1 body, related journals (name as the body gives it)",
+   "quote": "International Journal of the Classical Tradition",
+   "claim": "body-named only: International Journal of the Classical Tradition; its page answered with a client challenge",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "body, 2026-11-10",
+   "quote_ok": true,
+   "origin": "body_named",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / body name), datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/paste-classical-receptions-journal-aio-five-turns.txt",
+   "title_only": true
+  },
+  "F23": {
+   "source": "B9",
+   "locus": "#833 Abstract",
+   "quote": "This paper introduces machine-mediated reception studies: the study of how machine systems receive, transform, compress, attribute, misattribute, and redistribute cultural meaning.",
+   "claim": "the definition of machine-mediated reception studies",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F24": {
+   "source": "B9",
+   "locus": "#833 Abstract",
+   "quote": "Its central claim is that the AI summarizer now functions as a horizon of reception : for many users, the machine-composed summary becomes the first effective encounter with a cultural object, author, concept, or tradition.",
+   "claim": "the central claim: the AI summarizer functions as a horizon of reception",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": true,
+   "lineage": "the summarizer as horizon of reception",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F25": {
+   "source": "B9",
+   "locus": "#833 head",
+   "quote": "Author: Lee Sharks (ORCID 0009-0000-1599-0703)",
+   "claim": "the paper's author, Lee Sharks",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the summarizer as horizon of reception",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F26": {
+   "source": "B9",
+   "locus": "#833 Abstract",
+   "quote": "a longitudinal corpus of 131 documented captures of Google AI Overview, AI Mode, and knowledge-panel responses to queries about entities in the Crimson Hexagonal Archive",
+   "claim": "the founding dataset: 131 captures on the archive's entities",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F27": {
+   "source": "B9",
+   "locus": "#833 §1",
+   "quote": "a pre-receptional agent that composes the account of the object before the human encounter begins",
+   "claim": "the summarizer as a pre-receptional agent",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the summarizer as horizon of reception",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F28": {
+   "source": "B9",
+   "locus": "#833 Abstract",
+   "quote": "The paper identifies five recurrent patterns in this corpus — morphological compression, disambiguation failure, compositional bystanding, canonical reinflation, and temporal drag — and proposes a sixth: epistemic hedging.",
+   "claim": "five patterns identified and a sixth proposed, canonical reinflation among them",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F29": {
+   "source": "B9",
+   "locus": "#833 §2.1",
+   "quote": "The Classical Receptions Journal, launched in 2009, institutionalized the field at Oxford.",
+   "claim": "the journal, launched 2009, institutionalized the field at Oxford",
+   "modality": "interpretation",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F30": {
+   "source": "B9",
+   "locus": "#833 §2.1",
+   "quote": "In a 2015 article in the Classical Receptions Journal, the present author introduced the concept of \"metatextual reception\" in the poetics of Charles Bernstein",
+   "claim": "the author's 2015 article in the journal introduced 'metatextual reception'",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the archive's author in its pages",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F31": {
+   "source": "B9",
+   "locus": "#833 §2.5",
+   "quote": "But none of this existing work treats the AI composition layer as a reception agent with measurable, patterned behavior that can be documented longitudinally.",
+   "claim": "the gap: no existing work treats the composition layer as a reception agent documented longitudinally",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F32": {
+   "source": "B9",
+   "locus": "#833 Abstract",
+   "quote": "The dataset is not presented as a statistically representative sample of all AI-mediated search behavior.",
+   "claim": "limit: the dataset is no representative sample",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": true,
+   "const": false,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F33": {
+   "source": "B9",
+   "locus": "#833 §10",
+   "quote": "the composition layer is now, for many users, the primary site where classical objects are encountered — and that classical reception scholars need instruments to study it",
+   "claim": "for many users the composition layer is the primary site of encounter with classical objects; scholars need instruments",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the summarizer as horizon of reception",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F34": {
+   "source": "B9",
+   "locus": "#833 §9, non-claims",
+   "quote": "That the archive's readings are validated because Google retrieved them.",
+   "claim": "non-claim: the archive's readings are not validated by Google's retrieval",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F35": {
+   "source": "B9",
+   "locus": "#833 §8",
+   "quote": "Self-reception bias. The archive is measuring its own reception.",
+   "claim": "limit: the archive measures its own reception",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "machine-mediated reception studies",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F36": {
+   "source": "B9",
+   "locus": "#833 §2.5",
+   "quote": "The \"Future Pasts\" special issue in the International Journal of the Classical Tradition (2024) frames AI tools as systems that \"shape, mediate and sometimes distort contemporary engagements with Antiquity.\"",
+   "claim": "a 2024 IJCT special issue frames AI tools as shaping, mediating and distorting engagements with antiquity",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field on AI",
+   "date": "2026-06-15 (#833)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F37": {
+   "source": "B9",
+   "locus": "#833 §2.5",
+   "quote": "A 2027 SCS call for papers addresses \"Literary Reception and Human Creativity in the Age of AI.\"",
+   "claim": "#833 assigns the 2027 call for papers of that title to the SCS",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "literary reception and large language models",
+   "date": "2026-06-15 (#833)",
+   "mark": "contested in the pool: the CRSN page (B4 F8) posts the call for a conference at Bryn Mawr College; no SCS on the saved page",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F38": {
+   "source": "B9",
+   "locus": "#833 §2.5 and References",
+   "quote": "Elton Barker and collaborators (2025) scraped Google search results for Homeric figures … Barker, E. et al. (2025). Algorithmic Reception of Homer. Classical Receptions Journal .",
+   "claim": "#833 cites a 2025 study by Barker and collaborators, 'Algorithmic Reception of Homer', as published in the journal",
+   "modality": "attributed",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "the field on AI",
+   "date": "2026-06-15 (#833)",
+   "mark": "unsupported (§4.3): not in Crossref's register of the journal (B16, 405 works; the title would match the census pattern 'algorithm\\w*', no hit) and not in Barker's Open Research Online list (read by the session 2026-11-10; nearest 'Exploring intertextuality across the Homeric poems through language models', ML4AL 2024, ACL); unverified, raised to the operator as a question for #833 and left unresolved",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "also_origin": "archive",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked",
+   "dep": 833
+  },
+  "F39": {
+   "source": "B14",
+   "locus": "lead",
+   "quote": "The Classical Receptions Journal is a peer reviewed academic journal of reception studies , covering all aspects of the reception of the texts and material culture of ancient Greece and Rome from antiquity to the present day.",
+   "claim": "Wikipedia's definition: a peer-reviewed academic journal of reception studies, Greek and Roman texts and material culture, antiquity to the present",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "last edited 3 May 2022, fetched 2026-11-10",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B14",
+   "locus": "lead",
+   "quote": "It is published by Oxford University Press .",
+   "claim": "published by Oxford University Press",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B14",
+   "locus": "infobox (wikitext)",
+   "quote": "| editor = Pantelis Michelakis",
+   "claim": "the infobox names Pantelis Michelakis as editor",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "editors and dates",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B14",
+   "locus": "infobox (wikitext)",
+   "quote": "| abbreviation = Class. Recept. J.",
+   "claim": "ISO 4 abbreviation Class. Recept. J.",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identifiers",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B14",
+   "locus": "infobox (wikitext)",
+   "quote": "| ISSN = 1759-5134 … | eISSN =1759-5142",
+   "claim": "ISSN 1759-5134, eISSN 1759-5142",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identifiers",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B14",
+   "locus": "infobox (wikitext)",
+   "quote": "| discipline = Classical studies … | country = United Kingdom",
+   "claim": "discipline classical studies; country United Kingdom",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B14",
+   "locus": "categories (wikitext)",
+   "quote": "[[Category:Publications with year of establishment missing]]",
+   "claim": "the article states no year of establishment",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "editors and dates",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F46": {
+   "source": "B14",
+   "locus": "maintenance tags (wikitext)",
+   "quote": "{{one source|date=January 2019}} {{third-party|date=January 2019}}",
+   "claim": "tagged since January 2019 for one source and for sources close to the subject",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "editors and dates",
+   "date": "tags January 2019",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F47": {
+   "source": "B14",
+   "locus": "footer",
+   "quote": "This page was last edited on 3 May 2022, at 22:31 (UTC) .",
+   "claim": "last edited 3 May 2022",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "editors and dates",
+   "date": "2022-05-03",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F48": {
+   "source": "B14",
+   "locus": "reference 1 (wikitext)",
+   "quote": "url=https://academic.oup.com/crj/pages/About",
+   "claim": "the lead cites the journal's About page",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "last edited 3 May 2022",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B14 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F49": {
+   "source": "B16",
+   "locus": "census.json source, read",
+   "quote": "\"source\": \"https://api.crossref.org/journals/1759-5142/works?rows=1000&select=title,issued,DOI,type,abstract,subtitle\", \"read\": \"2026-11-10\"",
+   "claim": "the census query: Crossref's works for eISSN 1759-5142, titles, abstracts and subtitles, read 2026-11-10",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F50": {
+   "source": "B16",
+   "locus": "census.json works, first_year, last_year",
+   "quote": "\"works\": 405, \"first_year\": 2009, \"last_year\": 2026",
+   "claim": "405 works registered, 2009 to 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F51": {
+   "source": "B16",
+   "locus": "census.json with_abstracts",
+   "quote": "\"with_abstracts\": 185",
+   "claim": "185 of the works have abstracts in the register",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F52": {
+   "source": "B16",
+   "locus": "census.json pattern",
+   "quote": "(?i)\\\\b(AI|artificial intelligence|algorithm\\\\w*|chatgpt|language models?|LLMs?|chatbot\\\\w*|generative AI|machine learning|neural|search engines?|google|AI Overviews?)\\\\b",
+   "claim": "the match pattern over titles and abstracts: AI, artificial intelligence, algorithm*, ChatGPT, language models, LLMs, chatbots, generative AI, machine learning, neural, search engines, Google, AI Overviews",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F53": {
+   "source": "B16",
+   "locus": "census.json ai_llm_generative_search_hits",
+   "quote": "\"ai_llm_generative_search_hits\": []",
+   "claim": "no title or abstract matches",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F54": {
+   "source": "B16",
+   "locus": "census.json excluded",
+   "quote": "'ai' (爱, love) in an abstract on the Chinese Ars amatoria",
+   "claim": "the one excluded match: 'ai', love, in an abstract on the Chinese Ars amatoria",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F55": {
+   "source": "B16",
+   "locus": "census.json nearest",
+   "quote": "‘Caesar’s Legion’ in Fallout: New Vegas: Re-enactment as Reception … The haunting of classics in the Dark Academia aesthetic … Drones over Pompeii: cinematic perspectives on antiquity in the digital era … Where was Apollo in Supergiant’s Hades? … Lore Olympus … Bayek’s promise: authentic vs. accurate Ptolemaic astronomy in Assassin’s Creed: Origins",
+   "claim": "the nearest items: video games, a webcomic, drones in cinema, the Dark Academia aesthetic",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "what its pages hold",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F56": {
+   "source": "B16",
+   "locus": "census.json items, 2009",
+   "quote": "\"doi\": \"10.1093/crj/clp008\", \"year\": 2009, \"title\": \"Editorial\"",
+   "claim": "an item titled 'Editorial' among the works of 2009",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "editors and dates",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F57": {
+   "source": "B16",
+   "locus": "census.json items",
+   "quote": "\"doi\": \"10.1093/crj/clu016\", \"year\": 2014, \"title\": \"Metatexts: classical reception without the classics in the poetics of Charles Bernstein\"",
+   "claim": "the register holds 'Metatexts: classical reception without the classics in the poetics of Charles Bernstein', doi:10.1093/crj/clu016, issued 2014",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the archive's author in its pages",
+   "date": "Crossref register read 2026-11-10 (census by the session)",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text of B16 under datasets/negative-of-the-negative/v2/intake/classical-receptions-journal-20261110/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "Oxford Academic — (title only, '+1')",
+  "B2": "Hopkins Press — (title only, '+2')",
+  "B3": "www.instagram.com — (domain only)",
+  "B4": "Classical Reception Studies Network — classicalreception.org",
+  "B5": "Oxford Academic — (title only, two cards)",
+  "B6": "Paperpal — Preflight for Classical Receptions Journal",
+  "B7": "New Voices in Classical Reception Studies — (body-named)",
+  "B8": "International Journal of the Classical Tradition — (body-named)",
+  "B9": "#833 The Summarizer as Horizon of Reception — crimsonhexagonal.org/works/034e",
+  "B10": "Classical Receptions Journal — About",
+  "B11": "Classical Receptions Journal — General Instructions",
+  "B12": "Classical Receptions Journal — Editorial Board",
+  "B13": "Classical Receptions Journal — Oxford Academic",
+  "B14": "Wikipedia — Classical Receptions Journal",
+  "B15": "Classical Receptions Journal — Editorial (2009), doi:10.1093/crj/clp008",
+  "B16": "Crossref — works of ISSN 1759-5142 (census)"
+ },
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8",
+   "B9"
+  ],
+  "B_R": [
+   "B10",
+   "B11",
+   "B12",
+   "B13",
+   "B14",
+   "B15",
+   "B16"
+  ]
+ }
+}
