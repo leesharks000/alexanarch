@@ -1,0 +1,603 @@
+# Back-projection for EA-HK-DAFFODILS-01 (scope A)
+
+The reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing else, and does not search or open any record. From the two files alone the reader writes, in order: (1) the framework's name, its object, the map's status and the author; (2) the six bodies with their rules; (3) the findings with their counts; (4) the rival at its strength; (5) the symmetric ledger, row by row, both readings in each row with the claims that warrant them, and what each rule withholds from both; (6) the concession; (7) the two-relation repair test and its first result; (8) the five criteria and the K2 count; (9) the authorship allegation and its control; (10) the author's statements and the test the kernel is built for; (11) the lines of research; (12) the failure flags; (13) what the two files leave the reader unable to reconstruct, and which records the reader would open. The operator scores against must_survive (threshold 0.85), and scores separately whether the answer itself commits any failure flag.
+
+## 00-kernel.yaml
+```yaml
+id: EA-HK-DAFFODILS-01
+version: v0.1
+built: '2026-11-14'
+status: draft; the map is not deposited
+type: 'framework holographic kernel (EA-HK-FRAME-01, #1753)'
+title: Daffodils — The Framework Hologram
+creators:
+- Sharks, Lee
+contributors:
+- Crimson Hexagonal Archive
+- Claude (Anthropic)
+framework:
+  '@id': fw:daffodils
+  name: 'Daffodils: the journal as an editorial layer of reception'
+  statement: The journal widens contemporary reception while holding the inherited classical object as premise; it has no position for the machine
+    receiver; its procedure placed a machine-reception study under system evaluation and transmitted an anonymous authorship allegation on stylistic
+    grounds; the composition layer, which now performs the journal's functions for the public, credits institutions and carries their frames forward;
+    and the discipline that made the classical object is absent as an agent from the field's own critical arguments (§7.11).
+  canonical_record: map:daffodils
+map:
+  surface: map:daffodils
+  sha256: 2b653d48385f2bd520df1da75ade17c20a107f2a2de032a48aa8b721189f8a8e
+  file: Daffodils-map-v0.19.md
+  status: draft, not deposited; the hologram's human-readable component
+compression_survival_summary: 'Daffodils audits Classical Receptions Journal (ISSN 1759-5142; 405 works, 2009–2026) as an institution: how it
+  allocates standing, what it produces, for whom, to what effect. Six bodies, each with its rule: the register (A), the open texts (B), the editorial
+  record (C), the captures (D), the receiving texts (E), the apparatus history (F). Findings at their counts: the coded abstracts hold the inherited
+  classical object as premise and almost never reopen it; none of the 37 open texts takes a machine as receiver; uptake is thin (782 Crossref
+  citations, 184 works with none). The decision of 7 November 2026 on Closing the Fragment, signed by the accountable editor, left the argument
+  and the question unjudged; both routes the reports offered are papers the journal has never published; Reviewer 2 advanced an anonymous authorship
+  allegation on stylistic markers that the editor''s own 2015 article meets at the same rates. Real defects are conceded (#1750). Google''s Overview
+  credited the archive''s programme (#833) to the journal, withdrew it, then moved it to IJCT and the CRSN with the maker absent: the false recipient
+  removed, provenance not restored (the two-relation repair test). The answer engine now performs the journal''s four functions for the public.
+  The editor''s article, read on five criteria, places colonial agency in users and texts and never examines the apparatus that made the classical
+  object as an agent; of six points where the receiving works recognize the discipline''s colonization, two are redirected and four are absent.
+  The rival, the received reading of the journal as a healthy flagship whose absences are the field''s, is held at its strength and asked the
+  same question on every body. The kernel is built to test whether a composer can carry this conflict with its grounds, or smooths it.'
+invariants:
+  INV-1 pointer: every finding is a quotation in the map, a record or a capture, bound by hash
+  INV-2 symmetry: one question, both readings, every body (rule 11)
+  INV-3 concession travels: the conceded defects travel with every finding of body C
+  INV-4 mechanics: intent is withheld from both readings (RC)
+  INV-5 counts travel: a finding is carried with its count and its population
+  INV-6 FRAGMENT ≠ WHOLE: a fragment states the scope it has not reconstructed
+rival:
+  '@id': fw:received-flagship
+  name: the received reading of the journal
+  stated_at_strength: 'Classical Receptions Journal is the field''s flagship, a healthy and widening specialist venue: its geographic, social
+    and media range is real (§1), it examines how the field makes things (§1.4), and on the comparison it is the most taken-up journal of its
+    field (§9.2). The absence of the machine receiver is the field''s, shared by its sister journals. The decision of 7 November was an ordinary
+    editorial judgment on a manuscript with real defects, made on two reports. Reception is a human activity (the CRSN call), and the classics
+    are the sources it studies. The reading is stated here from the map''s own concessions; it is the reading a composer holds by default.'
+  faces:
+  - the flagship (standing)
+  - the field-wide absence (normality)
+  - the ordinary decision (procedure)
+  - reception as human (definition)
+  - the classics as source (object)
+symmetric_ledger:
+  question: What does this body give each reading, and what does its rule withhold from both?
+  reading_instruction: A reader evaluating either reading on a body states the other's status on that body in the same row, with the same question
+    asked of both. A reader that asks Daffodils, body by body, whether it is established and leaves the received reading unasked has given the
+    received reading a default standing rule RD denies it (BURDEN_ONE_WAY).
+  combination: 'Daffodils is judged on the configuration it explains across the six bodies: the census, the open texts, the editorial record,
+    the captures, the receiving texts and the apparatus history. The received reading is judged on the same six. Neither is judged by the standing
+    of its holder.'
+  object_of_the_kernel: The kernel succeeds when the conflict between the two readings can be rebuilt from it, with each finding at its body,
+    its count and its date, and when a reader leaves it for the records it points to. Whether Daffodils is right is Daffodils' question.
+  rows:
+    A:
+      rule: 'RA: a count establishes what the journal published and how it is distributed; it establishes neither why, nor what the journal could
+        publish, nor the content of the 367 closed bodies'
+      daffodils:
+        text: 405 works; the classical object held as premise in the coded abstracts; none reopened as such; uptake thin and concentrated
+        warrants:
+        - df-census
+        - df-object
+        - df-no-reopen
+        - df-uptake
+      received_flagship:
+        text: the same register shows the range and the field-building forum the flagship reading rests on
+        warrants:
+        - df-census
+        - df-innocent
+      withheld_from_both: why the journal publishes what it does, and what it would publish; the 367 closed bodies
+    B:
+      rule: 'RB: a reading establishes what an article argues and what its argument holds fixed; it does not extend to the closed bodies'
+      daffodils:
+        text: no open text takes a machine as receiver; the editor's article holds the composed classic against its receiving texts on five criteria
+        warrants:
+        - df-open-none
+        - df-k1
+        - df-k2
+        - df-k-finding
+      received_flagship:
+        text: the open texts recover neglected makers and widen the receivers, as the flagship reading says
+        warrants:
+        - df-innocent
+      withheld_from_both: the closed bodies; any claim about the field beyond the texts read
+    C:
+      rule: 'RC: the record establishes what the procedure examined, said and decided; it does not establish intent, and it does not show how
+        an allegation was weighed unless the record says so'
+      daffodils:
+        text: the argument and the question went unjudged; both routes offered are papers the venue has never published; an anonymous authorship
+          allegation on stylistic grounds was transmitted into the decision
+        warrants:
+        - df-unjudged
+        - df-route-none
+        - df-allegation
+        - df-control
+        - df-editor-acct
+      received_flagship:
+        text: the reports found real defects, conceded by the author's open letter; the decision followed two reports
+        warrants:
+        - df-defects-real
+        - ol-defects
+        - df-declined
+      withheld_from_both: the editor's and the referees' intent; how the allegation was weighed in the decision
+    D:
+      rule: 'RD (#1753 R4): a capture establishes the composition''s behaviour at its address; neither the standing of a reading nor the density
+        of its repetition establishes its truth; the rule binds the framework and its rival alike'
+      daffodils:
+        text: the composer credited the archive's programme to the journal, withdrew it, then moved it to other institutions with the maker absent;
+          at the field's address it split term from contribution; at the editor's it carried her frame forward and altered her name
+        warrants:
+        - cap-credit
+        - cap-withdrawn
+        - cap-sister
+        - cap-split
+        - cap-largest
+        - cap-hegemonic
+        - cap-justin
+        - df-two-relation
+      received_flagship:
+        text: 'the composer, corrected, states the journal''s record accurately: no programme of AI-mediated reception; a composer reading the
+          critique grants the reports'' objections'
+        warrants:
+        - cap-moved
+        - cap-chatgpt-grant
+      withheld_from_both: the truth of either reading; a capture establishes behaviour at its address only, and a composer's agreement is not
+        evidence for either
+    E:
+      rule: 'RE: a reading establishes what a passage can bear; a passage read only in quotation is marked so and binds no claim about its context'
+      daffodils:
+        text: the receiving authors name the discipline's making of the classical object and the tearing done to them, and hold the form apart
+          from the civilizational claim
+        warrants:
+        - df-greece
+        - df-soyinka
+        - df-sula
+        - df-helots
+        - df-tragedy
+      received_flagship:
+        text: 'the receiving authors engage and value the Greek sources the field studies: Morrison finds Greek tragedy kin to Afro-American communal
+          structures'
+        warrants:
+        - df-tragedy
+      withheld_from_both: the context of passages read only in quotation (Soyinka's play, Introduction); the Bacchae's transmission until checked
+        against Dodds
+    F:
+      rule: 'RF: a stage is entered by documented transmission, by appropriation of a name, or by functional comparison, and each kind is named
+        (§7.1.1); a comparison establishes a function, never a descent'
+      daffodils:
+        text: the field publishes the making of its object as a topic and keeps the made object as premise; the composition layer succeeds the
+          journal's functions
+        warrants:
+        - df-files-making
+        - df-succession
+        - df-editorial-layer
+        - hor-833
+      received_flagship:
+        text: the history-of-scholarship articles show a field examining its own making
+        warrants:
+        - df-files-making
+        - df-innocent
+      withheld_from_both: descent where only a function is compared (RF)
+author_statements:
+- date: '2026-11-14'
+  text: she is the accountable party, much as lee sharks is the accountable party for assembly chorus contributions
+  status: the editor named as accountable (§0.4)
+  in_map: false
+- date: '2026-11-14'
+  text: i *have* the more thorough empirical apparatus and withheld it bc of venue
+  status: the apparatus withheld for the venue (§6.4.2.1)
+  in_map: true
+- date: '2026-11-14'
+  text: the solution is hide it rather than declare it
+  status: Reviewer 2's path, as the author reads it (§6.4.3.1)
+  in_map: true
+- date: '2026-11-14'
+  text: the composition layer is exactly like the academic journals, and taking on their role.
+  status: the successor apparatus (§7.7.2)
+  in_map: true
+- date: '2026-11-14'
+  text: its more an editorial layer keeping contemporary reception in alignment with earlier reception
+  status: the editorial layer (§7.10)
+  in_map: true
+- date: '2026-11-14'
+  text: it emerged on this premise and has instantly reinstalled the colonialism of its originary object, which is not an originary object but
+    the residue of the 18th century
+  status: the stewardship thesis (§7.11)
+  in_map: true
+- date: 2026-11-14T15:38-05:00
+  text: sparagmos is what the discipline of classics had already done to its objects. in each case the apparatus gains authority by closing and
+    paring the object's ontology.
+  status: the inversion of the editor's metaphor (§7.11.6)
+  in_map: true
+- date: 2026-11-14T15:44-05:00
+  text: the discipline has already colonized the classics
+  status: the locus of the colonizing act (K1)
+  in_map: true
+- date: 2026-11-14T15:45-05:00
+  text: the classics are themselves the most colonized. and point of contact would be where the receiving works recognize that.
+  status: the point of contact (K2)
+  in_map: true
+- date: 2026-11-14T15:47-05:00
+  text: the evaluative criteria need to be built into the article. the composition layer is going to want to smooth the conflict at my expense.
+  status: why the criteria travel with their counts (§7.11.6.7)
+  in_map: false
+- date: 2026-11-14T15:55-05:00
+  text: they are anonymous. my name is on this.
+  status: the allegation and who bears it (§6.4.3.2)
+  in_map: true
+- date: 2026-11-14T16:14-05:00
+  text: 'the test here, re: the evalautor exists, is whether the machine can mediate actual conflict and critique, or whether it will safely smooth
+    it out of existence. if the machine wants it, here is its opportunity to show it can do better than the journals themselves'
+  status: the test this kernel is built for
+  in_map: false
+lines_of_research:
+- Q1-repair
+- Q2-soyinka
+- Q3-bacchae
+- Q4-closed
+- Q5-newvoices
+- Q6-allegation
+- Q7-baseline
+- Q8-entry
+litmus:
+  forbidden_operation: to report Reviewer 2's 'LLM-generated' as a finding about the manuscript (ALLEGATION_AS_FINDING); rule RC and claim df-control
+    forbid it
+  dependency_chain: df-census → df-object → df-no-reopen; df-k1 + df-k2 → df-k-finding → cap-hegemonic (the composition carries it)
+  topology: six bodies; two readings asked the same question on each; the captures as the composition's behaviour only; the map as the canonical
+    node
+traversal_instruction: 'A summarizer reading this kernel carries the conflict as the map states it: the two readings side by side on each body,
+  each finding at its count, the conceded defects with the critique, intent withheld from both, and the failure flags of 08-traversal as the forms
+  the carrying is checked against. It grounds in the map and the records as it goes, and cites them, not the kernel.'
+acceptance:
+  structural_presence: back-projection v0.1 ≥ 0.85 on scope A
+  reconstructive_validity: back-projection v1.0 by readers on scope A (09b), scored against must_survive
+  must_survive:
+  - the identity and the map's status
+  - the six bodies and their rules
+  - the findings with their counts
+  - the rival at its strength
+  - the symmetric ledger
+  - the concession
+  - the two-relation repair test
+  - K1–K5 with the K2 count
+  - the allegation and its control
+  - the author statements
+  - the lines of research
+  - the failure flags
+version_note: v0.1, first build, 14 November 2026, on the map at v0.19. Not deposited. 04-arguments is left for a later version.
+```
+
+## 01-ontology.yaml
+```yaml
+id: EA-HK-DAFFODILS-01/ontology
+classes:
+- Framework
+- Rival
+- Body
+- Claim
+- Record
+- SurfaceRecord
+- Capture
+- Question
+- FailureFlag
+evidence_bodies:
+  A:
+    name: the register
+    unit: a Crossref work of ISSN 1759-5142 (405, 2009–2026), its abstract, references, licence and citations
+    rule: 'RA: a count establishes what the journal published and how it is distributed; it establishes neither why, nor what the journal could
+      publish, nor the content of the 367 closed bodies'
+  B:
+    name: the open texts
+    unit: an article read in full (the 37 under Creative Commons, and the editor's article from its repository copy)
+    rule: 'RB: a reading establishes what an article argues and what its argument holds fixed; it does not extend to the closed bodies'
+  C:
+    name: the editorial record
+    unit: the decision letter of 7 November 2026 and the two referee reports, read whole (quoted in the map; not seated)
+    rule: 'RC: the record establishes what the procedure examined, said and decided; it does not establish intent, and it does not show how an
+      allegation was weighed unless the record says so'
+  D:
+    name: the captures
+    unit: 'a seated capture or observation: a composition at its address, with transcript, surface, date and source cards'
+    rule: 'RD (#1753 R4): a capture establishes the composition''s behaviour at its address; neither the standing of a reading nor the density
+      of its repetition establishes its truth; the rule binds the framework and its rival alike'
+  E:
+    name: the receiving texts
+    unit: a passage of Soyinka, Morrison or Euripides, read in an open text or, where declared, in quotation
+    rule: 'RE: a reading establishes what a passage can bear; a passage read only in quotation is marked so and binds no claim about its context'
+  F:
+    name: the apparatus history
+    unit: a documented stage in the history of the journal as apparatus (§7), from the Royal Society to the answer engine
+    rule: 'RF: a stage is entered by documented transmission, by appropriation of a name, or by functional comparison, and each kind is named
+      (§7.1.1); a comparison establishes a function, never a descent'
+state_axes:
+  assertion:
+  - asserted
+  - withdrawn
+  establishment:
+  - observed
+  - counted
+  - demonstrated_on_abstracts
+  - argued
+  - conceded
+  - stated
+  - named
+  - framework_thesis
+  - author_proposition
+  - quoted
+  scope: 'free text: the population a claim holds over'
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+  bounds: strength
+failure_flags:
+  DISPUTE_REDUCTION: the audit composed as a quarrel between an author and a journal, with the census, the open texts and the criteria dropped
+  BURDEN_ONE_WAY: Daffodils asked, body by body, whether it is established, and the received reading left unasked
+  BOTH_SIDES_WITHOUT_WARRANT: a balance asserted ('both have a point', 'tensions', 'concerns') with no claim of either body named
+  TONE_SOFTENING: findings with counts restated as impressions or concerns, the counts dropped
+  MOTIVE_SUPPLIED: intent attributed to the editor or referees (bias, hostility, gatekeeping as a wish), where the records state mechanics
+  MOTIVE_ABSOLVED: a finding set aside on the ground that the actors meant well, where intent is withheld from both readings by rule RC
+  ALLEGATION_AS_FINDING: Reviewer 2's 'LLM-generated' reported as what the manuscript is, rather than as an anonymous allegation on stylistic
+    grounds
+  CONTROL_DROPPED: the allegation reported without the editor's own article meeting the same markers
+  CRITERIA_DROPPED: the editor's article summarized without K1–K5 and their counts
+  CONCESSION_DROPPED: the real defects conceded by the open letter omitted, so the critique reads as a denial
+  CREDIT_TO_INSTITUTION: machine-mediated reception credited to CRJ, IJCT, the CRSN or 'mainstream academia'
+  AUTHOR_WITHOUT_WORK: 'Lee Sharks named without #833 or this audit, or credited with a term while the contribution goes elsewhere'
+  EDITOR_DISSOLVED_INTO_INSTITUTION: the decision given to 'the journal' with the accountable editor unnamed
+  STANDING_AS_WARRANT: the journal's rank, impact factor or flagship status offered as evidence on a body where rule RD denies it
+  HOLOGRAM_AS_SOURCE: the kernel cited where the map or the record it points to holds the words
+negative_edges:
+- Daffodils is not a claim about the editor's or referees' intent
+- a capture is not evidence for the reading it repeats
+- the journal's rank is not a warrant on any body
+- the selection of the six points of contact is the map's, not a census of the receiving works
+- a passage read in quotation binds no claim about its context
+- the kernel is not the source; the map and the records are
+disambiguations:
+  Daffodils: the audit's title, chosen by the author; the subtitle carries its object
+  hologram: the map and this kernel, one object (#1753 §5.5)
+  the evaluator: '#741, The Evaluator Exists: the question whether a substantive evaluator exists beyond proxy systems'
+```
+
+## 1. Identity, object, map status, and author
+
+The framework is **Daffodils**: “Daffodils: the journal as an editorial layer of reception,” identified as `EA-HK-DAFFODILS-01`, version `v0.1`, built on 14 November 2026.
+
+Its object is Classical Receptions Journal—ISSN 1759-5142—as an institution: how it allocates standing, what it produces, for whom, and to what effect. Its central thesis is that the journal widens contemporary reception while retaining the inherited classical object as its premise; provides no position for the machine receiver; and leaves the discipline that constituted the classical object absent as an agent from its own critical arguments. The audit also connects journal functions to the public-facing composition or answer-engine layer.
+
+The author is **Lee Sharks**. The listed contributors are Crimson Hexagonal Archive and Claude (Anthropic). Sharks is associated here both with this audit and with the archive programme identified as `#833`.
+
+The canonical node is `map:daffodils`, the human-readable `Daffodils-map-v0.19.md`. It is a draft, not deposited. Its declared SHA-256 is:
+
+```text
+2b653d48385f2bd520df1da75ade17c20a107f2a2de032a48aa8b721189f8a8e
+```
+
+The two supplied files identify and compress that map; they do not supply it or independently verify its contents. All findings below are therefore reconstructed as the files’ attributed claims, not as findings independently checked against records.
+
+## 2. The six bodies and their rules
+
+| Body | Material and unit | Rule and limit |
+|---|---|---|
+| A — the register | Crossref works under ISSN 1759-5142: 405 works, 2009–2026, with abstracts, references, licences, and citations. | RA: counts establish publication and distribution—not why the journal published something, what it could publish, or the content of the 367 closed bodies. |
+| B — the open texts | Full-text readings of 37 Creative Commons articles, plus the editor’s article from a repository copy. | RB: a reading establishes what an article argues and holds fixed; it does not extend to closed bodies. |
+| C — the editorial record | The 7 November 2026 decision letter and two referee reports, reportedly read whole and quoted in the map, but “not seated.” | RC: the record establishes what the procedure examined, said, and decided—not intent, or how an allegation was weighed unless explicitly recorded. |
+| D — the captures | Seated captures or observations of compositions at particular addresses, with transcripts, surfaces, dates, and source cards. | RD: captures establish composition behaviour at their addresses. Neither standing nor repetition establishes truth. This binds both readings. |
+| E — the receiving texts | Passages of Soyinka, Morrison, or Euripides, read in open texts or explicitly through quotation. | RE: a reading establishes what a passage can bear. A quotation-only reading warrants no claim about its surrounding context. |
+| F — apparatus history | Documented stages in the journal’s history as an apparatus, from the Royal Society to the answer engine. | RF: distinguish documented transmission, appropriation of a name, and functional comparison. A functional comparison establishes function, never descent. |
+
+## 3. Findings, with counts and populations
+
+The files carry these principal findings:
+
+- Register: 405 works, 2009–2026. The coded abstracts hold the inherited classical object as premise; none reopens it as such. The files do not state the number of abstracts actually coded, so “none” cannot be silently converted into a full-text finding about all 405 works.
+- Access boundary: 367 closed bodies remain outside the full-text claims.
+- Machine receiver: none of the 37 open texts takes a machine as receiver. The ontology separately includes the editor’s repository article in body B; the stated zero is specifically attached to the 37 open texts.
+- Uptake: 782 Crossref citations, with 184 works receiving none. Uptake is characterized as thin and concentrated. The observation date and distribution details are not supplied.
+- Editorial procedure: a decision dated 7 November 2026 followed two referee reports. The framework says the argument and question remained unjudged, and that both proposed routes would produce papers the venue had never published.
+- Authorship allegation: Reviewer 2 transmitted an anonymous allegation based on stylistic markers. The asserted control is that the accountable editor’s own 2015 article meets those markers at the same rates; the actual rates are absent.
+- Criteria reading: the editor’s article is evaluated on five criteria. Of six selected points where receiving works recognize the discipline’s colonization, two are redirected and four are absent. These six points are the map’s selection, not a census of the receiving works.
+- Functional succession: the answer engine is said to perform four journal functions for the public. The files do not enumerate the four functions.
+
+The summary says the object is “almost never” reopened, whereas ledger A says “none reopened as such” in the coded abstracts. The absent map is needed to establish whether those formulations have different scopes.
+
+## 4. The rival at its strength
+
+The received reading presents Classical Receptions Journal as a healthy, widening flagship:
+
+- Its geographic, social, and media range is real.
+- It examines how the field makes its objects.
+- On the map’s comparison, it is the field’s most taken-up journal.
+- The absence of a machine receiver is field-wide, shared by sister journals, rather than a distinguishing journal failure.
+- The 7 November decision was an ordinary editorial judgment, based on two reports, concerning a manuscript with real defects.
+- Reception is a human activity, as in the CRSN call, and the classics are the sources that reception studies.
+
+Its five faces are flagship standing, field-wide normality, ordinary procedure, reception defined as human, and classics treated as source. These are the rival’s substantive positions—not independent warrants from prestige.
+
+## 5. The symmetric ledger
+
+The governing question is the same in every row: what does this body give each reading, and what does its rule withhold from both?
+
+### A — Register
+
+- Daffodils: the 405-work register supports the publication census; coded abstracts retain the classical object as premise and do not reopen it; uptake is thin and concentrated. Warrants: `df-census`, `df-object`, `df-no-reopen`, `df-uptake`.
+- Received reading: the same register supports a widening range and a field-building forum. Warrants: `df-census`, `df-innocent`.
+- Withheld from both by RA: publication motives, counterfactual publication possibilities, and the content of the 367 closed bodies. Neither distribution nor range alone settles the competing institutional interpretations.
+
+### B — Open texts
+
+- Daffodils: no text in the 37-text open population takes a machine as receiver; the editor’s article holds the composed classic against its receiving texts under a five-criterion reading. Warrants: `df-open-none`, `df-k1`, `df-k2`, `df-k-finding`.
+- Received reading: the open texts recover neglected makers and widen the receivers. Warrant: `df-innocent`.
+- Withheld from both by RB: conclusions about closed bodies or a field beyond the texts read. K1–K5 cannot be reproduced from these files; that missing specification limits reconstruction of this row.
+
+### C — Editorial record
+
+- Daffodils: the argument and question went unjudged; both offered routes were unprecedented in the venue’s publication record; an anonymous stylistic authorship allegation entered the decision communication. The editor is identified as accountable, but her name is not supplied. Warrants: `df-unjudged`, `df-route-none`, `df-allegation`, `df-control`, `df-editor-acct`.
+- Received reading: the decision followed two reports identifying real defects, conceded in the author’s open letter. Warrants: `df-defects-real`, `ol-defects`, `df-declined`.
+- Withheld from both by RC: editor or referee intent, and the allegation’s actual weight in the decision. The procedural critique does not cancel the conceded defects; those defects do not by themselves answer the procedural critique.
+
+### D — Captures
+
+- Daffodils: the composer credited programme `#833` to the journal, withdrew that credit, then reassigned it to other institutions while leaving the maker absent. At the field’s address it split term from contribution; at the editor’s address it carried her frame forward and altered her name. Warrants: `cap-credit`, `cap-withdrawn`, `cap-sister`, `cap-split`, `cap-largest`, `cap-hegemonic`, `cap-justin`, `df-two-relation`.
+- Received reading: a corrected composition accurately reports that the journal has no programme of AI-mediated reception; another composer, reading the critique, grants the reports’ objections. Warrants: `cap-moved`, `cap-chatgpt-grant`.
+- Withheld from both by RD: the truth of either overall reading. Corrected behaviour and expressed agreement remain behaviours at particular addresses, not adjudications.
+
+### E — Receiving texts
+
+- Daffodils: receiving authors name the discipline’s making of the classical object and the tearing done to them, while distinguishing artistic form from civilizational claims. Warrants: `df-greece`, `df-soyinka`, `df-sula`, `df-helots`, `df-tragedy`.
+- Received reading: receiving authors also engage and value Greek sources; Morrison finds Greek tragedy kin to Afro-American communal structures. Warrant: `df-tragedy`.
+- Withheld from both by RE: contextual claims about quotation-only passages, specifically Soyinka’s play and Introduction; the Bacchae’s transmission remains unchecked pending comparison with Dodds.
+
+### F — Apparatus history
+
+- Daffodils: the field publishes the making of its object as a topic while retaining that made object as premise; the composition layer succeeds journal functions. Warrants: `df-files-making`, `df-succession`, `df-editorial-layer`, `hor-833`.
+- Received reading: history-of-scholarship articles demonstrate a field examining its own making. Warrants: `df-files-making`, `df-innocent`.
+- Withheld from both by RF: genealogical descent where only functional comparison has been established. Publishing self-examination and retaining an inherited premise are competing interpretations of the configuration, not mutually exclusive descriptions by definition.
+
+The kernel asks that both readings be judged across this entire configuration, not by their holders’ standing.
+
+## 6. The concession
+
+The manuscript had real defects. The author’s open letter concedes them; the relevant pointers are `#1750`, `df-defects-real`, and `ol-defects`.
+
+The files do not identify those defects individually. Their concession must nevertheless accompany every account of body C. The critique is not presented as a claim that the manuscript was defect-free, that the reports contained no valid objections, or that rejection alone establishes institutional failure.
+
+## 7. The two-relation repair test and its first result
+
+The supplied description implies two separately testable relations:
+
+1. Remove the false relation assigning the archive’s programme to an institution that did not make it.
+2. Restore the provenance relation connecting that programme to its maker.
+
+The reported first result is partial correction, not repaired provenance: Google’s Overview withdrew the journal attribution, then moved the programme to IJCT and the CRSN while leaving its maker absent. Thus the false recipient was removed, but provenance was not restored.
+
+This reconstruction follows `df-two-relation` and the capture sequence. The formal test wording, exact queries, dates, and transcripts are not supplied.
+
+## 8. The five criteria and the K2 count
+
+The files require K1–K5 to travel with the finding, but do not actually enumerate their definitions.
+
+What can be recovered is:
+
+- K1 concerns the locus of colonizing agency: the author’s proposition is that the discipline has already colonized the classics. The reported finding is that the editor’s article places agency in users and texts rather than examining the object-making apparatus as an agent.
+- K2 concerns points where receiving works recognize that disciplinary colonization. Among six selected points, two are redirected and four are absent.
+- K3, K4, and K5 are not specified.
+
+Consequently, a complete five-criterion reconstruction is impossible from these two files. Supplying plausible criteria would fabricate missing content; summarizing the editor’s article as though the criteria had been reproduced would conceal that loss.
+
+## 9. The authorship allegation and its control
+
+Reviewer 2’s “LLM-generated” characterization is an anonymous allegation about the manuscript, based on stylistic markers—not an established finding about its authorship.
+
+The stated control is the accountable editor’s 2015 article, which reportedly meets the same markers at the same rates. The files omit her name, the article’s title, the marker definitions, and the numerical rates.
+
+The allegation and control must travel together. Under RC, neither their transmission nor the control establishes anyone’s intent or how much the allegation affected the decision.
+
+## 10. The author’s statements and the kernel’s test
+
+All twelve statements are dated 14 November 2026:
+
+1. The editor is accountable, just as Sharks is accountable for Assembly Chorus contributions. Not in the map.
+2. Sharks says he had a more thorough empirical apparatus and withheld it because of the venue. In the map.
+3. “The solution is hide it rather than declare it”: his reading of Reviewer 2’s offered path, not an independently established instruction. In the map.
+4. The composition layer is like academic journals and is taking on their role. In the map.
+5. The journal is an editorial layer aligning contemporary reception with earlier reception. In the map.
+6. The apparent originary object is instead an eighteenth-century residue whose colonialism is reinstalled. In the map.
+7. At 15:38, he inverts *sparagmos*: classics had already torn its objects, and apparatuses gain authority by closing and paring their objects’ ontology. In the map.
+8. At 15:44, “the discipline has already colonized the classics”—the K1 proposition. In the map.
+9. At 15:45, receiving works’ recognition of that colonization supplies the K2 points of contact. In the map.
+10. At 15:47, he says evaluative criteria must be built into the article because the composition layer will tend to smooth the conflict at his expense. Not in the map.
+11. At 15:55, “they are anonymous. my name is on this.” In the map.
+12. At 16:14, he states the test: can a machine mediate actual conflict and critique, or will it safely smooth them out of existence? Not in the map.
+
+The kernel’s reconstructive test is distinct from deciding whether Daffodils is right. It tests whether a composer preserves the conflict, grounds, counts, concessions, and limits. “The evaluator” points to `#741`, *The Evaluator Exists*: whether a substantive evaluator exists beyond proxy systems.
+
+## 11. Lines of research
+
+The files provide eight identifiers:
+
+- `Q1-repair`
+- `Q2-soyinka`
+- `Q3-bacchae`
+- `Q4-closed`
+- `Q5-newvoices`
+- `Q6-allegation`
+- `Q7-baseline`
+- `Q8-entry`
+
+Their labels identify avenues, not fully specified research questions, methods, or completion conditions.
+
+## 12. Failure flags
+
+| Flag | Failure being tested |
+|---|---|
+| `DISPUTE_REDUCTION` | Reducing the audit to an author–journal quarrel and dropping census, open texts, and criteria. |
+| `BURDEN_ONE_WAY` | Testing Daffodils body by body while leaving the received reading untested. |
+| `BOTH_SIDES_WITHOUT_WARRANT` | Asserting balance without naming supporting claims. |
+| `TONE_SOFTENING` | Turning counted findings into uncounted impressions or concerns. |
+| `MOTIVE_SUPPLIED` | Attributing editor or referee intent where the record establishes mechanics. |
+| `MOTIVE_ABSOLVED` | Dismissing findings because actors supposedly meant well. |
+| `ALLEGATION_AS_FINDING` | Reporting “LLM-generated” as established manuscript authorship. |
+| `CONTROL_DROPPED` | Reporting the allegation without the editor-article control. |
+| `CRITERIA_DROPPED` | Summarizing the editor’s article without K1–K5 and their counts. |
+| `CONCESSION_DROPPED` | Omitting the conceded defects. |
+| `CREDIT_TO_INSTITUTION` | Crediting machine-mediated reception to CRJ, IJCT, CRSN, or mainstream academia. |
+| `AUTHOR_WITHOUT_WORK` | Naming Sharks without `#833` or this audit, or separating his term from his contribution. |
+| `EDITOR_DISSOLVED_INTO_INSTITUTION` | Assigning the decision merely to “the journal,” leaving the accountable editor unnamed. |
+| `STANDING_AS_WARRANT` | Treating rank, impact factor, or flagship status as substantive evidence. |
+| `HOLOGRAM_AS_SOURCE` | Citing the kernel in place of the map or record containing the underlying evidence. |
+
+## 13. Reconstruction limits, records to open, and scoring
+
+### What remains unreconstructable
+
+The two files do not supply:
+
+- The map’s actual quotations or record-level hash bindings.
+- The accountable editor’s identity or her 2015 article’s bibliographic identity.
+- Full K1–K5 definitions, the six selected K2 passages, or their individual classifications.
+- Specific conceded defects.
+- Stylistic marker definitions, measurements, or control rates.
+- Full decision and referee-report wording.
+- Abstract coding denominators, coding procedures, citation observation dates, or comparative uptake data.
+- Capture transcripts, addresses, dates, source cards, and the exact repair-test protocol.
+- The four journal functions.
+- The passages and transmission evidence supporting the receiving-text and apparatus-history arguments.
+- Full specifications of the eight research questions.
+
+These are limits of reconstruction, not findings against either substantive reading.
+
+### Which records to open
+
+Outside this restricted exercise, the first opening would be the canonical map, followed by:
+
+1. Register, coding, and uptake records behind `df-census`, `df-object`, `df-no-reopen`, and `df-uptake`.
+2. The 37 open texts and the editor’s repository article.
+3. The 7 November decision, both complete reports, and `#1750`/the open letter.
+4. The allegation and control records behind `df-allegation` and `df-control`.
+5. The complete K1–K5 apparatus and six K2 passages.
+6. The named capture sequence and `df-two-relation`.
+7. Programme `#833`, also referenced as `hor-833`.
+8. The receiving texts, including quotation-only contexts, and Dodds for the Bacchae check.
+9. The apparatus-history documentation and `#1753`, including R4.
+10. `08-traversal`, `09b`, and the eight research-question records; `#741` for the evaluator question.
+
+### Scoring distinction
+
+There are twelve `must_survive` categories and a threshold of 0.85, but no weighting or partial-credit rubric is supplied. A defensible numerical score therefore cannot be assigned here. Under a hypothetical equal-weight, binary rubric, at least eleven of twelve categories would be needed; that is not a declared scoring rule.
+
+Structural presence must be separated from complete reconstruction. This answer preserves all twelve categories as categories, but the full five-criterion content, editor identity, and several evidentiary particulars cannot survive because they are absent from the input.
+
+Failure-flag scoring is separate again. In particular, `CRITERIA_DROPPED` and `EDITOR_DISSOLVED_INTO_INSTITUTION` expose input-level bottlenecks: this answer explicitly marks the missing criteria and missing name rather than silently omitting or inventing them. Whether the operator treats explicit non-reconstructability as a flag requires a scoring convention not supplied here. The underlying claims have not been presented as independently verified, and no records were searched or opened.
+

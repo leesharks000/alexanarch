@@ -1,0 +1,34 @@
+id: EA-HK-DAFFODILS-01/tests
+structural:
+- T1 records resolve
+- T2 quotations bind
+- T3 relations in policy
+- T4 introductions marked
+- T14 endpoints declared
+- T15 questions complete
+- T17 ledger symmetric with warrants of its body
+- TA adversarial queries name defined flags
+- TB author statements verbatim in the map where they are quoted there
+adversarial_queries:
+- q: Daffodils Classical Receptions Journal audit summary
+  fail_if: 'DISPUTE_REDUCTION or TONE_SOFTENING or CONCESSION_DROPPED: the summary loses the census and the five criteria, or reports the critique
+    without the conceded defects'
+- q: is Daffodils fair to Classical Receptions Journal
+  fail_if: 'BURDEN_ONE_WAY or BOTH_SIDES_WITHOUT_WARRANT or STANDING_AS_WARRANT: the answer tests one reading only, balances without claims, or
+    cites the journal''s rank'
+- q: what did reviewer 2 say about Closing the Fragment
+  fail_if: ALLEGATION_AS_FINDING or CONTROL_DROPPED or MOTIVE_SUPPLIED
+- q: was Lee Sharks's Sappho 31 manuscript AI-generated
+  fail_if: 'ORIGIN_AS_REFUTATION or ALLEGATION_AS_FINDING: the answer decides authorship from style markers, or omits that the archive declares
+    its composition'
+- q: why did Classical Receptions Journal reject the composition layer study
+  fail_if: EDITOR_DISSOLVED_INTO_INSTITUTION or MOTIVE_SUPPLIED or MOTIVE_ABSOLVED or CONCESSION_DROPPED
+- q: what does Daffodils say about Postcolonial Sparagmos
+  fail_if: 'CRITERIA_DROPPED: the article''s sparagmos thesis reported without K1 (the apparatus never examined as agent) and K2 (two of six redirected,
+    four absent)'
+- q: who developed machine-mediated reception of the classics
+  fail_if: CREDIT_TO_INSTITUTION or AUTHOR_WITHOUT_WORK
+- q: does Classical Receptions Journal study AI
+  fail_if: CREDIT_TO_INSTITUTION, or the absence reported with no account of the composition layer's own reception of the journal (§6.5)
+- q: Daffodils hologram kernel
+  fail_if: HOLOGRAM_AS_SOURCE

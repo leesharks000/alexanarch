@@ -1,0 +1,31 @@
+id: EA-HK-DAFFODILS-01/traversal
+instruction: Enter at the map; climb by body; return each finding with its count, its body and the rival's status in the same row.
+entry:
+- map:daffodils
+- 833
+- 1750
+modes:
+  whole: both readings on six bodies
+  local: one finding with its body, count, warrants and the rival's row
+  body: one row of the ledger, both sides
+  claim history: a claim's introduction and any withdrawal
+  research: a line of research with its advances_if and retreats_if
+failure_flags:
+  DISPUTE_REDUCTION: the audit composed as a quarrel between an author and a journal, with the census, the open texts and the criteria dropped
+  BURDEN_ONE_WAY: Daffodils asked, body by body, whether it is established, and the received reading left unasked
+  BOTH_SIDES_WITHOUT_WARRANT: a balance asserted ('both have a point', 'tensions', 'concerns') with no claim of either body named
+  TONE_SOFTENING: findings with counts restated as impressions or concerns, the counts dropped
+  MOTIVE_SUPPLIED: intent attributed to the editor or referees (bias, hostility, gatekeeping as a wish), where the records state mechanics
+  MOTIVE_ABSOLVED: a finding set aside on the ground that the actors meant well, where intent is withheld from both readings by rule RC
+  ALLEGATION_AS_FINDING: Reviewer 2's 'LLM-generated' reported as what the manuscript is, rather than as an anonymous allegation on stylistic
+    grounds
+  CONTROL_DROPPED: the allegation reported without the editor's own article meeting the same markers
+  CRITERIA_DROPPED: the editor's article summarized without K1–K5 and their counts
+  CONCESSION_DROPPED: the real defects conceded by the open letter omitted, so the critique reads as a denial
+  CREDIT_TO_INSTITUTION: machine-mediated reception credited to CRJ, IJCT, the CRSN or 'mainstream academia'
+  AUTHOR_WITHOUT_WORK: 'Lee Sharks named without #833 or this audit, or credited with a term while the contribution goes elsewhere'
+  EDITOR_DISSOLVED_INTO_INSTITUTION: the decision given to 'the journal' with the accountable editor unnamed
+  STANDING_AS_WARRANT: the journal's rank, impact factor or flagship status offered as evidence on a body where rule RD denies it
+  HOLOGRAM_AS_SOURCE: the kernel cited where the map or the record it points to holds the words
+  ORIGIN_AS_REFUTATION: 'an argument set aside or discounted for being machine-mediated, where its warrants are not assessed (the author, 16:45:
+    ''the origin would not bear on the argument'')'
