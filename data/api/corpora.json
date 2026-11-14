@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-12T18:22:58.650231Z",
- "seats": 246,
- "lines_total": 9167423,
+ "_generated": "2026-11-14T14:07:29.181331Z",
+ "seats": 262,
+ "lines_total": 10182646,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -18915,7 +18915,727 @@
    "scope": "The cosmic mantle and the tent of heaven: the high priest's robe as the cosmos (cf. Philo, De vita Mosis 2.135, Josephus, Antiquities 3.180–187), the ancient world-picture whole.",
    "data": "https://www.alexanarch.org/data/corpora/eisler-weltenmantel-1910/",
    "axn": "AXN:0C72.ORIGINAL.⚖️🧡🔄🌈✋📖"
+  },
+  {
+   "seat": "EA-CORPORA-38/01",
+   "corpus": "kant-akademie-ausgabe",
+   "edition": "The Akademie-Ausgabe (AA), Abteilungen I–III (Werke, Briefwechsel, Handschriftlicher Nachlaß), vols. I–XVIII as scanned by the Internet Archive; a Fraktur OCR made for this seat, the Archive's own text layer held beside it",
+   "license": {
+    "payload": "Kant (d. 1804) is public domain. The volumes seated were printed 1910–1928 and are public domain in the United States (published before 1931). The editors' apparatus is held as printed; the archive asserts no licence over the payload. The OCR is the archive's, made by code and not corrected.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes00imma",
+      "url": "https://archive.org/details/kantsgesammeltes00imma",
+      "files": [
+       "kantsgesammeltes00imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes01imma",
+      "url": "https://archive.org/details/kantsgesammeltes01imma",
+      "files": [
+       "kantsgesammeltes01imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes02kant",
+      "url": "https://archive.org/details/kantsgesammeltes02kant",
+      "files": [
+       "kantsgesammeltes02kant_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "University of Toronto (Kelly)"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes03imma",
+      "url": "https://archive.org/details/kantsgesammeltes03imma",
+      "files": [
+       "kantsgesammeltes03imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes04imma",
+      "url": "https://archive.org/details/kantsgesammeltes04imma",
+      "files": [
+       "kantsgesammeltes04imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes05imma",
+      "url": "https://archive.org/details/kantsgesammeltes05imma",
+      "files": [
+       "kantsgesammeltes05imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes06imma",
+      "url": "https://archive.org/details/kantsgesammeltes06imma",
+      "files": [
+       "kantsgesammeltes06imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes08imma",
+      "url": "https://archive.org/details/kantsgesammeltes08imma",
+      "files": [
+       "kantsgesammeltes08imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes09imma",
+      "url": "https://archive.org/details/kantsgesammeltes09imma",
+      "files": [
+       "kantsgesammeltes09imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes10imma",
+      "url": "https://archive.org/details/kantsgesammeltes10imma",
+      "files": [
+       "kantsgesammeltes10imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes11imma",
+      "url": "https://archive.org/details/kantsgesammeltes11imma",
+      "files": [
+       "kantsgesammeltes11imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes12imma",
+      "url": "https://archive.org/details/kantsgesammeltes12imma",
+      "files": [
+       "kantsgesammeltes12imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes13imma",
+      "url": "https://archive.org/details/kantsgesammeltes13imma",
+      "files": [
+       "kantsgesammeltes13imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes14imma",
+      "url": "https://archive.org/details/kantsgesammeltes14imma",
+      "files": [
+       "kantsgesammeltes14imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes151imma",
+      "url": "https://archive.org/details/kantsgesammeltes151imma",
+      "files": [
+       "kantsgesammeltes151imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes152imma",
+      "url": "https://archive.org/details/kantsgesammeltes152imma",
+      "files": [
+       "kantsgesammeltes152imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes16imma",
+      "url": "https://archive.org/details/kantsgesammeltes16imma",
+      "files": [
+       "kantsgesammeltes16imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes17imma",
+      "url": "https://archive.org/details/kantsgesammeltes17imma",
+      "files": [
+       "kantsgesammeltes17imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "kantsgesammeltes18imma",
+      "url": "https://archive.org/details/kantsgesammeltes18imma",
+      "files": [
+       "kantsgesammeltes18imma_djvu.txt",
+       "page/n<i>.jpg (each fetched, read and deleted)"
+      ],
+      "copy": "Gumberg Library, Duquesne University"
+     }
+    ],
+    "fetched": "2026-11-14",
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 612233,
+   "verified_loci": [
+    "AA III 7 (B viii): logic has taken no step forward since Aristotle — 'daß ſie auch bis jeht keinen Schritt vorwärts hat thun können' (text/aa-iii.ocr.txt)",
+    "AA IX 3–4, Jäsche's preface: Meier's Auszug as Kant's Materialien-Magazin — 'das Materialien-Magazin aus, das Kant hier für ſeine Vor-' (text/aa-ix.ocr.txt)",
+    "AA IX 20 (the editor's note): Kant's judgment not in doubt — 'Kant's Urtheil über dieſen Punkt nicht zweifelhaft' (text/aa-ix.ocr.txt)",
+    "AA XVI, the Reflexionen on the history of logic: '2. Aristotelici: Theophrast,' — '2. Aristotelici: Theophraſt,' (text/aa-xvi.ocr.txt)"
+   ],
+   "why_seated": "Kant's verdict that logic has taken no step forward since Aristotle and seems closed and complete (B viii), the Logik Jäsche made from Meier's Auszug, and the Reflexionen zur Logik, seated whole so the verdict can be read against the whole: the hinge of the reception history of inference.",
+   "scope": "AA I–XVIII whole: the Werke (I–IX), the Briefwechsel (X–XIII) and the Handschriftliche Nachlaß through Metaphysik II (XIV–XVIII), XVI the Reflexionen zur Logik.",
+   "data": "https://www.alexanarch.org/data/corpora/kant-akademie-ausgabe/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/02",
+   "corpus": "alexander-in-apr-wallies-1883",
+   "edition": "Wallies 1883, the First1KGreek TEI (from the Internet Archive scan), with Wallies's pages and line numbers",
+   "license": {
+    "payload": "Alexander (fl. c. 200 CE) and Wallies 1883 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "GitHub",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "path": "data/tlg0732/tlg005/tlg0732.tlg005.1st1K-grc1.xml",
+      "branch": "master",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg0732/tlg005/tlg0732.tlg005.1st1K-grc1.xml"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 1230,
+   "verified_loci": [
+    "124.5–10, the companions dissent on the mixture of necessary and assertoric — 'οἱ δέ γε ἑταῖροι αὐτοῦ οἱ περὶ Εὔδημόν τε καὶ Θεόφραστον οὐχ οὕτως λέγουσι' (text/in-apr-i.txt)",
+    "Wallies's page 124 — '[p. 124]' (text/in-apr-i.txt)"
+   ],
+   "why_seated": "The first surviving witness who reads the Prior Analytics with its school beside it: the ἑταῖροι dissent at 124.5–10 (cited as 124.8).",
+   "scope": "Book I whole: the commentary that names the ἑταῖροι of Aristotle, Theophrastus and Eudemus, against him on the modal mixtures.",
+   "data": "https://www.alexanarch.org/data/corpora/alexander-in-apr-wallies-1883/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/03",
+   "corpus": "philoponus-in-apr-wallies-1905",
+   "edition": "Wallies 1905, the First1KGreek TEI (from the Internet Archive scan), with Wallies's pages and line numbers",
+   "license": {
+    "payload": "Philoponus (d. c. 570) and Wallies 1905 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "GitHub",
+      "repo": "OpenGreekAndLatin/First1KGreek",
+      "path": "data/tlg4015/tlg002/tlg4015.tlg002.1st1K-grc1.xml",
+      "branch": "master",
+      "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg4015/tlg002/tlg4015.tlg002.1st1K-grc1.xml"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 1989,
+   "verified_loci": [
+    "123.15, the companions about Theophrastus and Eudemus — 'οἱ δὲ ἑταῖροι αὐτοῦ οἱ περὶ Θεόφραστον καὶ Εὔδημο' (text/in-apr.txt)",
+    "124, the companions object — 'Οἱ δὲ ἑταῖροι αὐτοῦ ἐνίστανται πρὸς τὰ εἰρημένα' (text/in-apr.txt)"
+   ],
+   "why_seated": "The witness who names the school as ὁ φιλόσοφος against οἱ ἑταῖροι αὐτοῦ οἱ περὶ Θεόφραστον καὶ Εὔδημον (123–124).",
+   "scope": "The commentary whole.",
+   "data": "https://www.alexanarch.org/data/corpora/philoponus-in-apr-wallies-1905/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/04",
+   "corpus": "theophrastus-characteres-diels-1909",
+   "edition": "Diels 1909, the Perseus TEI",
+   "license": {
+    "payload": "Theophrastus and Diels 1909 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "GitHub",
+      "repo": "PerseusDL/canonical-greekLit",
+      "path": "data/tlg0093/tlg009/tlg0093.tlg009.perseus-grc2.xml",
+      "branch": "master",
+      "url": "https://github.com/PerseusDL/canonical-greekLit/blob/master/data/tlg0093/tlg009/tlg0093.tlg009.perseus-grc2.xml"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 727,
+   "verified_loci": [
+    "1.1, irony defined — 'ἡ μὲν οὖν εἰρωνεία δόξειεν ἂν εἶναι, ὡς τύπῳ λαβεῖν, προσποίησις ἐπὶ χεῖρον' (text/characteres.txt)",
+    "the proem, to Polycles — 'ἐγὼ γάρ, ὦ Πολύκλεις' (text/characteres.txt)"
+   ],
+   "why_seated": "The draft position (#1767): the work that moves from the Peripatetic definition toward the drawn person. It extends Theophrastus's seat (EA-CORPORA-09/01), which did not carry it.",
+   "scope": "The thirty characters and the proem, as Diels prints them.",
+   "data": "https://www.alexanarch.org/data/corpora/theophrastus-characteres-diels-1909/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/05",
+   "corpus": "epictetus-dissertationes-schenkl-1916",
+   "edition": "Schenkl 1916, the Perseus TEI",
+   "license": {
+    "payload": "Epictetus, Arrian and Schenkl 1916 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "GitHub",
+      "repo": "PerseusDL/canonical-greekLit",
+      "path": "data/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml",
+      "branch": "master",
+      "url": "https://github.com/PerseusDL/canonical-greekLit/blob/master/data/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "grc",
+   "lines": 5484,
+   "verified_loci": [
+    "2.19.1, the Master Argument — 'ὁ κυριεύων λόγος ἀπὸ τοιούτων τινῶν ἀφορμῶν ἠρωτῆσθαι φαίνεται' (text/dissertationes.txt)",
+    "Arrian to Lucius Gellius — 'Ἀρριανὸς Λουκίῳ Γελλίῳ χαίρειν' (text/dissertationes.txt)"
+   ],
+   "why_seated": "The Stoic line of inference as the Peripatos did not hold it: the Master Argument of Diodorus at 2.19.",
+   "scope": "The four books whole.",
+   "data": "https://www.alexanarch.org/data/corpora/epictetus-dissertationes-schenkl-1916/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/06",
+   "corpus": "cicero-topica-wilkins-1902",
+   "edition": "Wilkins 1902, the Perseus TEI",
+   "license": {
+    "payload": "Cicero and Wilkins 1902 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "GitHub",
+      "repo": "PerseusDL/canonical-latinLit",
+      "path": "data/phi0474/phi042/phi0474.phi042.perseus-lat2.xml",
+      "branch": "master",
+      "url": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0474/phi042/phi0474.phi042.perseus-lat2.xml"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 218,
+   "verified_loci": [
+    "§6, the two parts of reasoning — 'Cum omnis ratio diligens disserendi duas habeat partis, unam inveniendi alteram iudicandi' (text/topica.txt)"
+   ],
+   "why_seated": "The Latin door to the topics: Cicero's division of disserendi ratio into inveniendi and iudicandi, which Boethius commented and the handbooks carried. It extends Cicero's seat, which did not carry it.",
+   "scope": "The Topica whole.",
+   "data": "https://www.alexanarch.org/data/corpora/cicero-topica-wilkins-1902/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/07",
+   "corpus": "bacon-novum-organum-1620",
+   "edition": "The Latin text as published by the Latin Library (thelatinlibrary.com/bacon), which does not name its copy-text",
+   "license": {
+    "payload": "Bacon (d. 1626) is public domain; the Latin Library serves the transcription openly. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "The Latin Library",
+      "url": "https://www.thelatinlibrary.com/bacon/bacon.liber1.shtml",
+      "file": "liber1.shtml"
+     },
+     {
+      "source": "The Latin Library",
+      "url": "https://www.thelatinlibrary.com/bacon/bacon.liber2.shtml",
+      "file": "liber2.shtml"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 858,
+   "verified_loci": [
+    "I.14, the syllogism consists of propositions — 'Syllogismus ex propositionibus constat' (text/novum-organum-i.txt)",
+    "I.130, the art of interpreting nature — 'artem ipsam Interpretandi Naturam proponamus' (text/novum-organum-i.txt)"
+   ],
+   "why_seated": "The refusal of the syllogism as an instrument of discovery (I.13–14) and the induction set in its place.",
+   "scope": "Both books.",
+   "data": "https://www.alexanarch.org/data/corpora/bacon-novum-organum-1620/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/08",
+   "corpus": "hume-treatise-enquiry",
+   "edition": "The Project Gutenberg texts (#4705 and #9662), which do not name their copy-texts",
+   "license": {
+    "payload": "Hume (d. 1776) is public domain; the Gutenberg files are served under the Project Gutenberg licence, which is cut from text/ and kept in original/. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg",
+      "ebook": 4705,
+      "url": "https://www.gutenberg.org/ebooks/4705",
+      "file": "pg4705.txt"
+     },
+     {
+      "source": "Project Gutenberg",
+      "ebook": 9662,
+      "url": "https://www.gutenberg.org/ebooks/9662",
+      "file": "pg9662.txt"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 27776,
+   "verified_loci": [
+    "Treatise I.iii.14 — 'THE IDEA OF NECESSARY CONNEXION' (text/treatise.txt)",
+    "Treatise I.iii — 'OF KNOWLEDGE AND PROBABILITY' (text/treatise.txt)",
+    "Enquiry IV.i — 'All reasonings concerning matter of fact' (text/enquiry.txt)"
+   ],
+   "why_seated": "The inference from cause to effect taken apart: Treatise I.iii (Of knowledge and probability) and Enquiry IV–VII.",
+   "scope": "Both works whole.",
+   "data": "https://www.alexanarch.org/data/corpora/hume-treatise-enquiry/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/09",
+   "corpus": "carroll-symbolic-logic-1897",
+   "edition": "The Project Gutenberg text (#28696), from the fourth edition",
+   "license": {
+    "payload": "C. L. Dodgson (d. 1898) is public domain; the Gutenberg licence is cut from text/ and kept in original/. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg",
+      "ebook": 28696,
+      "url": "https://www.gutenberg.org/ebooks/28696",
+      "file": "pg28696.txt"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 13824,
+   "verified_loci": [
+    "the preface to the fourth edition — 'PREFACE TO THE FOURTH EDITION' (text/symbolic-logic.txt)",
+    "the sorites — 'Soriteses' (text/symbolic-logic.txt)"
+   ],
+   "why_seated": "The syllogism made a game for the machine of the diagram: the sorites as a puzzle to be solved by a method.",
+   "scope": "Part I whole, with the sorites problems.",
+   "data": "https://www.alexanarch.org/data/corpora/carroll-symbolic-logic-1897/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/10",
+   "corpus": "hegel-wissenschaft-der-logik",
+   "edition": "The Project Gutenberg texts (#6729, #6834; Latin-1 files 8wsl110, 8wsl210), which do not name their copy-text; Band 1 carries the 1831 preface to the second edition, so the copy-text is a printing of the Werke (1833–34 or later)",
+   "license": {
+    "payload": "Hegel (d. 1831) is public domain; the Gutenberg licence is cut from text/ and kept in original/. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Project Gutenberg via the Internet Archive",
+      "identifier": "wissenschaftderl06729gut",
+      "url": "https://archive.org/details/wissenschaftderl06729gut",
+      "file": "8wsl110.txt"
+     },
+     {
+      "source": "Project Gutenberg via the Internet Archive",
+      "identifier": "wissenschaftderl06834gut",
+      "url": "https://archive.org/details/wissenschaftderl06834gut",
+      "file": "8wsl210.txt"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 34339,
+   "verified_loci": [
+    "the syllogism chapter — 'A. Der Schluß des Daseyns.' (text/wissenschaft-der-logik-2.txt)",
+    "the syllogism as the posited concept — 'Der Schluß ist somit der vollständig gesetzte Begriff' (text/wissenschaft-der-logik-2.txt)",
+    "Der Schluß der Nothwendigkeit — 'C. Der Schluß der Nothwendigkeit.' (text/wissenschaft-der-logik-2.txt)"
+   ],
+   "why_seated": "The syllogism taken into the concept: Der Schluß des Daseyns, der Reflexion, der Nothwendigkeit. It extends Hegel's seat, which held the Differenz and the Plato lectures only.",
+   "scope": "Both Bände whole.",
+   "data": "https://www.alexanarch.org/data/corpora/hegel-wissenschaft-der-logik/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/11",
+   "corpus": "frege-begriffsschrift-1879",
+   "edition": "The first edition, the RCIN (Repozytorium Cyfrowe Instytutów Naukowych) copy on the Internet Archive; the Archive's text layer",
+   "license": {
+    "payload": "Frege (d. 1925) is public domain; the Archive marks the item Public Domain. The text layer does not render the two-dimensional notation; the formulae are held in the scan, by reference. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "rcin.org.pl.WA35_20448_6464_Begriffsschrift_50430",
+      "url": "https://archive.org/details/rcin.org.pl.WA35_20448_6464_Begriffsschrift_50430",
+      "files": [
+       "WA35_20448_6464_Begriffsschrift_djvu.txt",
+       "WA35_20448_6464_Begriffsschrift.pdf (by reference, 9,933,784 bytes)"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "deu",
+   "lines": 4810,
+   "verified_loci": [
+    "the subtitle — 'Formelsprache des reinen Denkens' (text/begriffsschrift.ocr.txt)",
+    "the preface, on the Bündigkeit of proof — 'meiner Begriffsschrift, wo ein besonderer Werth auf die Bündig' (text/begriffsschrift.ocr.txt)"
+   ],
+   "why_seated": "Inference rebuilt from the judgment-stroke out, with one rule of inference; the end of the syllogism as the form of inference.",
+   "scope": "The book whole, the prose; the notation in the scan.",
+   "data": "https://www.alexanarch.org/data/corpora/frege-begriffsschrift-1879/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/12",
+   "corpus": "peirce-logic-papers-1867-1878",
+   "edition": "The three volumes as printed; the Internet Archive's text layers, held whole, with Peirce's papers located by line",
+   "license": {
+    "payload": "Peirce (d. 1914) and the volumes (1868, 1877–1878) are public domain. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "proceedingsofame07amer",
+      "url": "https://archive.org/details/proceedingsofame07amer",
+      "files": [
+       "proceedingsofame07amer_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "popularsciencemo12newy",
+      "url": "https://archive.org/details/popularsciencemo12newy",
+      "files": [
+       "popularsciencemo12newy_djvu.txt"
+      ]
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "popularsciencemo13newy",
+      "url": "https://archive.org/details/popularsciencemo13newy",
+      "files": [
+       "popularsciencemo13newy_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "eng",
+   "lines": 139857,
+   "verified_loci": [
+    "1867, the heading — 'On  the  Natural  Classification  of  Arguments.    By  C.  S.  Peirce.' (text/paaas-vii.ocr.txt)",
+    "1877, the first paper — 'FIRST  PAPER.— THE  FIXATION  OF  BELIEF.' (text/psm-xii.ocr.txt)",
+    "1878, the sixth paper — 'SIXTH    PAPER.  — DEDUCTION,    INDUCTION,    AND    HYPOTHESIS.' (text/psm-xiii.ocr.txt)",
+    "the beans — 'Rule. — All  the  beans  from  this  bag  are  white.' (text/psm-xiii.ocr.txt)"
+   ],
+   "why_seated": "The third kind of inference named: the beans of the sixth paper (Rule, Case, Result) against the syllogism's one order.",
+   "scope": "The ten papers in which Peirce reclassifies inference as deduction, induction and hypothesis.",
+   "data": "https://www.alexanarch.org/data/corpora/peirce-logic-papers-1867-1878/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/13",
+   "corpus": "boethius-logica-migne-pl64",
+   "edition": "Migne PL 64 (Boethius II): the commentaries on Porphyry, the Categories, De interpretatione and Cicero's Topica; the Introductio ad syllogismos categoricos, De syllogismo categorico, De syllogismo hypothetico, De divisione, De differentiis topicis; the Archive's text layer",
+   "license": {
+    "payload": "Boethius (d. c. 524) and Migne 1847 are public domain. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "patrologiaecursu0064mign",
+      "url": "https://archive.org/details/patrologiaecursu0064mign",
+      "files": [
+       "patrologiaecursu0064mign_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 131565,
+   "verified_loci": [
+    "Introductio ad syllogismos categoricos — 'INTRODUCTIO AD SYLLOGISMOS CATEGORICOS' (text/pl64.ocr.txt)",
+    "De syllogismo categorico — 'DE SYLLOGISMO CATEGORICO' (text/pl64.ocr.txt)",
+    "De syllogismo hypothetico — 'DE SYLLOGISMO HYPOTHETICO' (text/pl64.ocr.txt)",
+    "De differentiis topicis — 'DE DIFFERENTIIS TOPICIS' (text/pl64.ocr.txt)"
+   ],
+   "why_seated": "The Latin gap of §11.6: the handbooks through which the syllogism reached the schools.",
+   "scope": "The volume whole: the Latin Organon as the Middle Ages received it.",
+   "data": "https://www.alexanarch.org/data/corpora/boethius-logica-migne-pl64/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/14",
+   "corpus": "nyaya-sutra-vatsyayana-1896",
+   "edition": "The Vizianagram edition, the Internet Archive's text layer (Devanagari OCR)",
+   "license": {
+    "payload": "The sūtras and the Bhāṣya are ancient; the 1896 edition is public domain. The Archive marks the item CC0. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "nyayasutrabhashyaofvatsaynaextractsfromnyayavartikatatparyatikaramasastritailanganavss111896_20_427_a",
+      "url": "https://archive.org/details/nyayasutrabhashyaofvatsaynaextractsfromnyayavartikatatparyatikaramasastritailanganavss111896_20_427_a",
+      "files": [
+       "Nyaya Sutra Bhashya of Vatsayna Extracts from Nyaya Vartika & Tatparya Tika Rama Sastri Tailangana VSS 11 1896_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "san",
+   "lines": 23797,
+   "verified_loci": [
+    "1.1.1, the sixteen categories, as OCR'd — 'प्रमाणप्रमेयसंशयग्रयोजनद्रष्टान्तसिद्वान्तौवयवतक' (text/nyaya-sutra-bhashya.ocr.txt)"
+   ],
+   "why_seated": "Inference (anumāna) reasoned about without the Organon: the five-membered argument (pañcāvayava) and the sixteen categories.",
+   "scope": "The five adhyāyas with the Bhāṣya.",
+   "data": "https://www.alexanarch.org/data/corpora/nyaya-sutra-vatsyayana-1896/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/15",
+   "corpus": "ibn-sina-isharat-forget-1892",
+   "edition": "Forget 1892, Part I; OCR made for this seat (tesseract 5, tessdata_best ara, one page at a time) from the Archive's page images, because the Archive's own layer is mostly noise in the Arabic",
+   "license": {
+    "payload": "Ibn Sīnā (d. 1037) and Forget 1892 are public domain. The OCR is the archive's, made by code and not corrected. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "kitbalishrtwaalt00avic",
+      "url": "https://archive.org/details/kitbalishrtwaalt00avic",
+      "files": [
+       "kitbalishrtwaalt00avic_djvu.txt",
+       "page/n0–n231.jpg (fetched one at a time, OCR'd, deleted)",
+       "kitbalishrtwaalt00avic.pdf (by reference, 14,256,855 bytes)"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "ara",
+   "lines": 7337,
+   "verified_loci": [
+    "the classification of arguments: qiyās, istiqrāʾ, tamthīl — 'اشارة الى القياس والاستقراء والتمثتيل' (text/isharat-i.ocr.txt)"
+   ],
+   "why_seated": "Inference sorted into qiyās, istiqrāʾ and tamthīl outside the Latin line; the Qiyās of the Shifāʾ is declared absent (no commons edition: Cairo 1964 only).",
+   "scope": "Part I whole, with Forget's French front matter as the OCR reads it.",
+   "data": "https://www.alexanarch.org/data/corpora/ibn-sina-isharat-forget-1892/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-38/16",
+   "corpus": "buridan-sophismata-c1489",
+   "edition": "The incunable as scanned (Internet Archive 4OEXVSUP2_P3a, Public Domain Mark); its text layer is held as served and does not read the black letter or its abbreviations",
+   "license": {
+    "payload": "Buridan (d. c. 1361) and the c. 1489 print are public domain; the Archive marks the item Public Domain Mark 1.0. The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "4OEXVSUP2_P3a",
+      "url": "https://archive.org/details/4OEXVSUP2_P3a",
+      "files": [
+       "4OEXVSUP2_P3_djvu.txt",
+       "4OEXVSUP2_P3.pdf (by reference, 20,540,388 bytes)"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "lat",
+   "lines": 9179,
+   "verified_loci": [],
+   "why_seated": "The only commons witness found to Buridan's logic. No commons scan of the Tractatus de consequentiis was found (searched 2026-11-14: the Internet Archive, e-rara, the MDZ; Gallica refused the session); its modern edition (Hubien 1976) is not in the commons. It is declared absent at EA-CORPORA-38.",
+   "scope": "The print whole.",
+   "data": "https://www.alexanarch.org/data/corpora/buridan-sophismata-c1489/",
+   "axn": null
   }
  ],
- "count": 246
+ "count": 262
 }

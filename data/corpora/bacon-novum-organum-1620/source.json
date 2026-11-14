@@ -1,0 +1,68 @@
+{
+ "corpus": "bacon-novum-organum-1620",
+ "seat": "EA-CORPORA-38/07",
+ "title": "Francis Bacon, Novum Organum (London, 1620), Books I and II",
+ "edition": "The Latin text as published by the Latin Library (thelatinlibrary.com/bacon), which does not name its copy-text",
+ "language": "lat",
+ "license": {
+  "payload": "Bacon (d. 1626) is public domain; the Latin Library serves the transcription openly. The archive asserts no licence over the payload.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "items": [
+   {
+    "source": "The Latin Library",
+    "url": "https://www.thelatinlibrary.com/bacon/bacon.liber1.shtml",
+    "file": "liber1.shtml"
+   },
+   {
+    "source": "The Latin Library",
+    "url": "https://www.thelatinlibrary.com/bacon/bacon.liber2.shtml",
+    "file": "liber2.shtml"
+   }
+  ],
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 2,
+  "units": "one text file per book",
+  "list": [
+   {
+    "slug": "novum-organum-i",
+    "work": "Novum Organum, Liber primus (Aphorisms I–CXXX)",
+    "text": "text/novum-organum-i.txt",
+    "originals": [
+     "original/thelatinlibrary/liber1.shtml"
+    ],
+    "lines": 346
+   },
+   {
+    "slug": "novum-organum-ii",
+    "work": "Novum Organum, Liber secundus",
+    "text": "text/novum-organum-ii.txt",
+    "originals": [
+     "original/thelatinlibrary/liber2.shtml"
+    ],
+    "lines": 512
+   }
+  ]
+ },
+ "normalization": "The pages as served (Latin-1), under original/thelatinlibrary/. text/ is the page with its markup removed by code, entities decoded, one line per paragraph. No text was corrected by hand.",
+ "scope": "Both books.",
+ "why_seated": "The refusal of the syllogism as an instrument of discovery (I.13–14) and the induction set in its place.",
+ "fetched": "2026-11-14",
+ "verified_loci": [
+  "I.14, the syllogism consists of propositions — 'Syllogismus ex propositionibus constat' (text/novum-organum-i.txt)",
+  "I.130, the art of interpreting nature — 'artem ipsam Interpretandi Naturam proponamus' (text/novum-organum-i.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 858,
+ "ruling": "Lee Sharks, 2026-11-14 01:25 EST: \"lets continue to assemble and we'll deposit and seat the whole thing as a massive batch\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "Critique of Pure Inference (working draft v1.1) and The Production of Readers (#1767), §11.6 \"the witnesses between\"",
+  "for": "the reception history of inference from the Peripatos to the machine: the commentators who name Aristotle's ἑταῖροι, the Latin handbooks, the early-modern refusals of the syllogism, the nineteenth-century rebuilds, and the traditions that reasoned about inference without the Organon"
+ },
+ "spine": "EA-CORPORA-38 (assembled 2026-11-14, not seated, not deposited)",
+ "axn": null,
+ "axn_note": "assigned at deposit, derived from MANIFEST.sha256 as for every seat"
+}

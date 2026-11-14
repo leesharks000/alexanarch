@@ -1,0 +1,55 @@
+{
+ "corpus": "cicero-topica-wilkins-1902",
+ "seat": "EA-CORPORA-38/06",
+ "title": "M. Tullius Cicero, Topica, in Rhetorica II, ed. A. S. Wilkins (Oxford Classical Texts; Oxford: Clarendon Press, 1902)",
+ "edition": "Wilkins 1902, the Perseus TEI",
+ "language": "lat",
+ "license": {
+  "payload": "Cicero and Wilkins 1902 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "items": [
+   {
+    "source": "GitHub",
+    "repo": "PerseusDL/canonical-latinLit",
+    "path": "data/phi0474/phi042/phi0474.phi042.perseus-lat2.xml",
+    "branch": "master",
+    "url": "https://github.com/PerseusDL/canonical-latinLit/blob/master/data/phi0474/phi042/phi0474.phi042.perseus-lat2.xml"
+   }
+  ],
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "topica",
+    "work": "Topica, with Wilkins's sigla",
+    "text": "text/topica.txt",
+    "originals": [
+     "original/phi0474.phi042.perseus-lat2.xml"
+    ],
+    "lines": 218
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (prepare_texts38.py): teiHeader, note, app and bibl dropped; one line per <p>, <l> or <head>; each numbered <div> marked [<subtype> <n>]; the edition's page breaks stand as [p. N] and its numbered lines as |L. No text was corrected by hand.",
+ "scope": "The Topica whole.",
+ "why_seated": "The Latin door to the topics: Cicero's division of disserendi ratio into inveniendi and iudicandi, which Boethius commented and the handbooks carried. It extends Cicero's seat, which did not carry it.",
+ "fetched": "2026-11-14",
+ "verified_loci": [
+  "§6, the two parts of reasoning — 'Cum omnis ratio diligens disserendi duas habeat partis, unam inveniendi alteram iudicandi' (text/topica.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 218,
+ "ruling": "Lee Sharks, 2026-11-14 01:25 EST: \"lets continue to assemble and we'll deposit and seat the whole thing as a massive batch\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "Critique of Pure Inference (working draft v1.1) and The Production of Readers (#1767), §11.6 \"the witnesses between\"",
+  "for": "the reception history of inference from the Peripatos to the machine: the commentators who name Aristotle's ἑταῖροι, the Latin handbooks, the early-modern refusals of the syllogism, the nineteenth-century rebuilds, and the traditions that reasoned about inference without the Organon"
+ },
+ "spine": "EA-CORPORA-38 (assembled 2026-11-14, not seated, not deposited)",
+ "axn": null,
+ "axn_note": "assigned at deposit, derived from MANIFEST.sha256 as for every seat"
+}

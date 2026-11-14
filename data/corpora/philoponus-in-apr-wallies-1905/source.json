@@ -1,0 +1,56 @@
+{
+ "corpus": "philoponus-in-apr-wallies-1905",
+ "seat": "EA-CORPORA-38/03",
+ "title": "John Philoponus, In Aristotelis Analytica priora commentaria, ed. M. Wallies (CAG XIII.2; Berlin: Reimer, 1905)",
+ "edition": "Wallies 1905, the First1KGreek TEI (from the Internet Archive scan), with Wallies's pages and line numbers",
+ "language": "grc",
+ "license": {
+  "payload": "Philoponus (d. c. 570) and Wallies 1905 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "items": [
+   {
+    "source": "GitHub",
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "path": "data/tlg4015/tlg002/tlg4015.tlg002.1st1K-grc1.xml",
+    "branch": "master",
+    "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg4015/tlg002/tlg4015.tlg002.1st1K-grc1.xml"
+   }
+  ],
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "in-apr",
+    "work": "In Analytica priora",
+    "text": "text/in-apr.txt",
+    "originals": [
+     "original/tlg4015.tlg002.1st1K-grc1.xml"
+    ],
+    "lines": 1989
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (prepare_texts38.py): teiHeader, note, app and bibl dropped; one line per <p>, <l> or <head>; each numbered <div> marked [<subtype> <n>]; the edition's page breaks stand as [p. N] and its numbered lines as |L. No text was corrected by hand.",
+ "scope": "The commentary whole.",
+ "why_seated": "The witness who names the school as ὁ φιλόσοφος against οἱ ἑταῖροι αὐτοῦ οἱ περὶ Θεόφραστον καὶ Εὔδημον (123–124).",
+ "fetched": "2026-11-14",
+ "verified_loci": [
+  "123.15, the companions about Theophrastus and Eudemus — 'οἱ δὲ ἑταῖροι αὐτοῦ οἱ περὶ Θεόφραστον καὶ Εὔδημο' (text/in-apr.txt)",
+  "124, the companions object — 'Οἱ δὲ ἑταῖροι αὐτοῦ ἐνίστανται πρὸς τὰ εἰρημένα' (text/in-apr.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 1989,
+ "ruling": "Lee Sharks, 2026-11-14 01:25 EST: \"lets continue to assemble and we'll deposit and seat the whole thing as a massive batch\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "Critique of Pure Inference (working draft v1.1) and The Production of Readers (#1767), §11.6 \"the witnesses between\"",
+  "for": "the reception history of inference from the Peripatos to the machine: the commentators who name Aristotle's ἑταῖροι, the Latin handbooks, the early-modern refusals of the syllogism, the nineteenth-century rebuilds, and the traditions that reasoned about inference without the Organon"
+ },
+ "spine": "EA-CORPORA-38 (assembled 2026-11-14, not seated, not deposited)",
+ "axn": null,
+ "axn_note": "assigned at deposit, derived from MANIFEST.sha256 as for every seat"
+}

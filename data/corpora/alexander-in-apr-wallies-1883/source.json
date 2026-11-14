@@ -1,0 +1,56 @@
+{
+ "corpus": "alexander-in-apr-wallies-1883",
+ "seat": "EA-CORPORA-38/02",
+ "title": "Alexander of Aphrodisias, In Aristotelis Analyticorum priorum librum I commentarium, ed. M. Wallies (CAG II.1; Berlin: Reimer, 1883)",
+ "edition": "Wallies 1883, the First1KGreek TEI (from the Internet Archive scan), with Wallies's pages and line numbers",
+ "language": "grc",
+ "license": {
+  "payload": "Alexander (fl. c. 200 CE) and Wallies 1883 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "items": [
+   {
+    "source": "GitHub",
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "path": "data/tlg0732/tlg005/tlg0732.tlg005.1st1K-grc1.xml",
+    "branch": "master",
+    "url": "https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg0732/tlg005/tlg0732.tlg005.1st1K-grc1.xml"
+   }
+  ],
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "in-apr-i",
+    "work": "In Analytica priora I",
+    "text": "text/in-apr-i.txt",
+    "originals": [
+     "original/tlg0732.tlg005.1st1K-grc1.xml"
+    ],
+    "lines": 1230
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (prepare_texts38.py): teiHeader, note, app and bibl dropped; one line per <p>, <l> or <head>; each numbered <div> marked [<subtype> <n>]; the edition's page breaks stand as [p. N] and its numbered lines as |L. No text was corrected by hand. The file's line numbers also carry the manuscript's folio marks (|40r) and some numbers out of sequence; a locus is cited by its [p. N] and the Wallies line numbers that bracket it.",
+ "scope": "Book I whole: the commentary that names the ἑταῖροι of Aristotle, Theophrastus and Eudemus, against him on the modal mixtures.",
+ "why_seated": "The first surviving witness who reads the Prior Analytics with its school beside it: the ἑταῖροι dissent at 124.5–10 (cited as 124.8).",
+ "fetched": "2026-11-14",
+ "verified_loci": [
+  "124.5–10, the companions dissent on the mixture of necessary and assertoric — 'οἱ δέ γε ἑταῖροι αὐτοῦ οἱ περὶ Εὔδημόν τε καὶ Θεόφραστον οὐχ οὕτως λέγουσι' (text/in-apr-i.txt)",
+  "Wallies's page 124 — '[p. 124]' (text/in-apr-i.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 1230,
+ "ruling": "Lee Sharks, 2026-11-14 01:25 EST: \"lets continue to assemble and we'll deposit and seat the whole thing as a massive batch\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "Critique of Pure Inference (working draft v1.1) and The Production of Readers (#1767), §11.6 \"the witnesses between\"",
+  "for": "the reception history of inference from the Peripatos to the machine: the commentators who name Aristotle's ἑταῖροι, the Latin handbooks, the early-modern refusals of the syllogism, the nineteenth-century rebuilds, and the traditions that reasoned about inference without the Organon"
+ },
+ "spine": "EA-CORPORA-38 (assembled 2026-11-14, not seated, not deposited)",
+ "axn": null,
+ "axn_note": "assigned at deposit, derived from MANIFEST.sha256 as for every seat"
+}

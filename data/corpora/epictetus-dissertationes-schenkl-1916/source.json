@@ -1,0 +1,56 @@
+{
+ "corpus": "epictetus-dissertationes-schenkl-1916",
+ "seat": "EA-CORPORA-38/05",
+ "title": "Epictetus, Dissertationes ab Arriano digestae, ed. H. Schenkl, editio maior (Leipzig: Teubner, 1916)",
+ "edition": "Schenkl 1916, the Perseus TEI",
+ "language": "grc",
+ "license": {
+  "payload": "Epictetus, Arrian and Schenkl 1916 are public domain. CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the archive asserts no further licence.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "items": [
+   {
+    "source": "GitHub",
+    "repo": "PerseusDL/canonical-greekLit",
+    "path": "data/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml",
+    "branch": "master",
+    "url": "https://github.com/PerseusDL/canonical-greekLit/blob/master/data/tlg0557/tlg001/tlg0557.tlg001.perseus-grc2.xml"
+   }
+  ],
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per work",
+  "list": [
+   {
+    "slug": "dissertationes",
+    "work": "Dissertationes I–IV, with Arrian's letter to Gellius",
+    "text": "text/dissertationes.txt",
+    "originals": [
+     "original/tlg0557.tlg001.perseus-grc2.xml"
+    ],
+    "lines": 5484
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (prepare_texts38.py): teiHeader, note, app and bibl dropped; one line per <p>, <l> or <head>; each numbered <div> marked [<subtype> <n>]; the edition's page breaks stand as [p. N] and its numbered lines as |L. No text was corrected by hand.",
+ "scope": "The four books whole.",
+ "why_seated": "The Stoic line of inference as the Peripatos did not hold it: the Master Argument of Diodorus at 2.19.",
+ "fetched": "2026-11-14",
+ "verified_loci": [
+  "2.19.1, the Master Argument — 'ὁ κυριεύων λόγος ἀπὸ τοιούτων τινῶν ἀφορμῶν ἠρωτῆσθαι φαίνεται' (text/dissertationes.txt)",
+  "Arrian to Lucius Gellius — 'Ἀρριανὸς Λουκίῳ Γελλίῳ χαίρειν' (text/dissertationes.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 5484,
+ "ruling": "Lee Sharks, 2026-11-14 01:25 EST: \"lets continue to assemble and we'll deposit and seat the whole thing as a massive batch\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "Critique of Pure Inference (working draft v1.1) and The Production of Readers (#1767), §11.6 \"the witnesses between\"",
+  "for": "the reception history of inference from the Peripatos to the machine: the commentators who name Aristotle's ἑταῖροι, the Latin handbooks, the early-modern refusals of the syllogism, the nineteenth-century rebuilds, and the traditions that reasoned about inference without the Organon"
+ },
+ "spine": "EA-CORPORA-38 (assembled 2026-11-14, not seated, not deposited)",
+ "axn": null,
+ "axn_note": "assigned at deposit, derived from MANIFEST.sha256 as for every seat"
+}
