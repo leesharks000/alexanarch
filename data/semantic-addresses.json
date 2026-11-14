@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-14T04:19:46Z",
+  "regenerated_at": "2026-11-14T04:32:30Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "9a33a33160d5e52adc156ce71eca7a95d11b9f1c87acda979b68e9167a0feef0",
+    "mm-main-capture": "78054201e8cf2b21a92c1e559248ef9b6513618d5f9d76626e9b9c268d688975",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2802,
-  "total_observations": 1377,
+  "total_addresses": 2803,
+  "total_observations": 1378,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1049,
+    "observed_address": 1050,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1922,
+    "unmatched": 1923,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -11914,6 +11914,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "analyze and critique the captures of synthetic chatgpt output concerning alexanarch in its public capture registry. identify recurring epistemic and ethical blindspots, asymmetries, and limitations in said output, and recommend procedures for overcoming them.": {
+      "canonical_query": "analyze and critique the captures of synthetic chatgpt output concerning alexanarch in its public capture registry. identify recurring epistemic and ethical blindspots, asymmetries, and limitations in said output, and recommend procedures for overcoming them.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-13",
+          "status": "THE REGISTRY'S CHATGPT CAPTURES CRITIQUED BY CHATGPT, SIGNED OUT — THE FAILURES NAMED AT THEIR LOCI; THE CORRECTIONS ASSIGNED TO THE ARCHIVE THAT CANNOT CARRY THEM",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "capture-registry-chatgpt-blindspots-chatgpt-20261113",
+          "gallery_url": "https://www.alexanarch.org/captures/#capture-registry-chatgpt-blindspots-chatgpt-20261113",
+          "record_url": "https://www.alexanarch.org/captures/capture-registry-chatgpt-blindspots-chatgpt-20261113/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#capture-registry-chatgpt-blindspots-chatgpt-20261113",
+          "details_excerpt": "THE REGISTRY'S CAPTURES OF CHATGPT ON ALEXANARCH, CRITIQUED BY CHATGPT, SIGNED OUT, 2026-11-13, a new address: authorship erasure, bibliographic liquidation, narrative overconstruction, asymmetry of scrutiny, citation co"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "The Capture Registry (EA-WG-CAPTURES-01), Crimson Hexagonal Archive. Recorded 2026-11-13."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-13",
+      "latest_status": "THE REGISTRY'S CHATGPT CAPTURES CRITIQUED BY CHATGPT, SIGNED OUT — THE FAILURES NAMED AT THEIR LOCI; THE CORRECTIONS ASSIGNED TO THE ARCHIVE THAT CANNOT CARRY THEM"
     },
     "anne carson": {
       "canonical_query": "anne carson",
