@@ -927,12 +927,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1765,
+     "value": 1766,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1515,
+      "ACTIVE": 1516,
       "SUPERSEDED": 235,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -948,7 +948,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 347
+      "undeclared": 348
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -1000,9 +1000,9 @@
     },
     "fanout": {
      "value": {
-      "gh_releases": 1758,
-      "indexnow": 1758,
-      "wayback": 1613
+      "gh_releases": 1765,
+      "indexnow": 1765,
+      "wayback": 1614
      },
      "source": "/data/fanout-state.json"
     },
@@ -1055,11 +1055,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1765,
+     "value": 1766,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1765,
+     "value": 1766,
      "source": "registry wiki_article"
     }
    },
@@ -1076,7 +1076,7 @@
    "scale_at_snapshot": "About 12,870 lexical registry entries, 3,194 of them classed as minted (`/api/counts.json`); 7,176 indexed concepts (`/data/entity-index.json`; its `total_terms` header reads 7,173).",
    "measured": {
     "lexical_entries": {
-     "value": 12928,
+     "value": 12932,
      "source": "/data/lexical-minting-registry.json terms[]"
     },
     "terms_minted": {
@@ -1101,15 +1101,15 @@
    "scale_at_snapshot": "11,506 internal citation edges (`/data/citation-graph.json`); 6,456 external citation edges to 2,539 external works (`/data/citation-graph-external.json`, `/data/external-works.json`).",
    "measured": {
     "internal_edges": {
-     "value": 15275,
+     "value": 15351,
      "source": "/data/citation-graph.json"
     },
     "external_edges": {
-     "value": 12402,
+     "value": 12549,
      "source": "/data/citation-graph-external.json"
     },
     "external_works": {
-     "value": 10273,
+     "value": 5652,
      "source": "/data/external-works.json"
     }
    },
@@ -1126,25 +1126,25 @@
    "scale_at_snapshot": "633 addresses, 813 observations, 2026-06-07 to 2026-10-12 (`/data/EA-WG-CAPTURES-01.json` v12.167; deposit #1676, whose title says 811 captures); 2,388 semantic addresses (1,743 subjunctive, 628 observed, 17 verified non-address). Surfaces include Google AI Overview, Google AI Mode, ChatGPT, Grok, Bing Copilot, Claude and Perplexity.",
    "measured": {
     "addresses": {
-     "value": 1088,
+     "value": 1106,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "observations": {
-     "value": 1283,
+     "value": 1303,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "registry_version": {
-     "value": "12.650",
+     "value": "12.670",
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "semantic_addresses": {
-     "value": 2786,
+     "value": 2800,
      "source": "/data/semantic-addresses.json"
     },
     "semantic_address_classes": {
      "value": {
       "subjunctive": 1736,
-      "observed_address": 1033,
+      "observed_address": 1047,
       "verified_non_address": 17
      },
      "source": "/data/semantic-addresses.json observation_class"
@@ -1216,7 +1216,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1704,
+     "value": 1705,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1336,11 +1336,11 @@
    "scale_at_snapshot": "733 deposits define concepts; 333 carry falsification conditions; 35 lines of work in use in the registry.",
    "measured": {
     "defining_concepts": {
-     "value": 768,
+     "value": 769,
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 421,
+     "value": 422,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1373,7 +1373,7 @@
      "source": "/data/registry.json principles"
     },
     "records_with_errata_sidecar_entries": {
-     "value": 76,
+     "value": 90,
      "source": "/data/errata/index.json"
     },
     "federation_peers": {
@@ -1394,7 +1394,7 @@
    "scale_at_snapshot": "11,506 internal citation edges; one registry head declared per commit (`/.well-known/axn-node.json`); 31 entries in the fleet index across four sections (`/api/fleet.json`).",
    "measured": {
     "internal_edges": {
-     "value": 15275,
+     "value": 15351,
      "source": "/data/citation-graph.json"
     },
     "registry_head": {
@@ -1425,13 +1425,13 @@
   {
    "surface": "#1676 title",
    "header": 811,
-   "data": 1283,
+   "data": 1303,
    "note": "deposited title vs live observation_count"
   },
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1765,
+   "data": 1766,
    "note": "stated deposit count vs registry"
   },
   {
