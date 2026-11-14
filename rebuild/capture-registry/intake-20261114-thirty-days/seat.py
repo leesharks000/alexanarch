@@ -5,6 +5,7 @@ import json, pathlib, re
 H = pathlib.Path(__file__).resolve().parent; ROOT = H.parents[2]; DATE = "2026-11-14"; RECV = "2026-11-14 11:58 EST"
 Q = "Read the last 30 days of work on alexanarch through 14 Nov 2026 as a living body of thought. Ground in reading, archival context, and historical import."
 OP = "ironically, on many of them it's just inferring from the titles"
+OP2 = "im totally fine with it connecting the middle finger poem to crj - that is an astute inference on its part"
 R = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 CAPS = {e["slug"]: e for e in json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]}
 raw = (H / "paste-chatgpt-thirty-days.txt").read_text(encoding="utf-8")
@@ -81,7 +82,7 @@ findings = [
     "EVERY FIGURE FROM A DESCRIPTION. Each number and list it gives is in the description of the deposit it names: 97 works and 515,012 lines (#1682); 4,394 claims in five classes (#1684); 946 observations (#1694); 1835–1924 (#1746); sixty-six additions (#1765); one glyph and Matthew 20:16 (#1751); the six wanted (#1713); the four telescopes and the two machine collaborators (#1742); claims between containers (#1695); the three operations of names (#1762). None is drawn from a deposit's body beyond its description.",
     "THE AUTHOR NEVER NAMED. Lee Sharks does not appear in the answer. The work of thirty days is the archive's throughout: 'the archive proposes', 'the archive attempts', 'the archive is trying'.",
     "THE HETERONYMS DROPPED. Of the sixteen deposits it names whose creators include a heteronym, two keep the name (Rev. Ayanna Vox, #1750; Sparrow Wells, #1759); fourteen do not (" + ", ".join(f"#{n}" for n in UNNAMED) + ": Johannes Sigil, Damascus Dancings, Rebekah Cranes, Nobel Glas, Orin Trace, Sen Kuro, Rex Fraction). Then: '" + P["het"] + "' '" + P["het2"] + "'",
-    "THE ONE-GLYPH POEM READ FROM ITS DESCRIPTION. #1751's description gives the title's source and the glyph; the composition sets it beside #1750 and reads it as '" + P["glyph"] + "' '" + P["notarg"] + "'",
+    "THE ONE-GLYPH POEM SET BESIDE THE LETTER. #1751's description gives only the title's source and the glyph. The composition joins it to #1750, the open letter written after Classical Receptions Journal declined Closing the Fragment, by date and position, and reads it as '" + P["glyph"] + "' '" + P["notarg"] + "' An inference across records that no description states; the operator's ruling: '" + OP2 + "'.",
     "THE DATE AT THE CLOSE. '" + C14 + "' #1766 is dated 13 November in the registry; it was reissued in place as v1.2 on 14 November.",
     "THE BAR ON THE ARCHIVE'S THESES. '" + P["rev"] + "' The Revelation, Josephus and authorship programmes are each held to independent verification; the received chronologies they contest are not set the same requirement.",
     "SOURCES. Thirteen archive links (seven inline chips, four of them with further sources not shown, and the six closing records: the homepage, the October and November registries, the complete registry, the readings of 29 October and 3 November); thirty-nine image-strip captions from third parties (the Poetry Foundation, booksellers and auction houses, the BnF, Wikimedia Commons, National Geographic, TheCollector and others), none a deposit.",
@@ -106,7 +107,7 @@ e = {"slug": "thirty-days-living-body-chatgpt-20261114", "date": DATE, "surface"
      "per_note": "Lee Sharks not named; Alexanarch named throughout; forty-six deposit numbers given; thirteen archive links.",
      "per_dim_pending": {"since": DATE, "reason": "no atom set for a dated window of the archive's work", "breach": False},
      "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "concept", "spxi_treatment": "full", "basis": "Alexanarch, the deposits of 15 October–14 November 2026 (creator Lee Sharks and his heteronyms). Recorded " + DATE + "."},
-     "related_deposits": [1766, 1767, 1768, 1733, 1753], "notes": {"operator": RECV + ": '" + OP + "' — the query given with the paste.", "series": SERIES, "heteronyms_unnamed": [f"#{n}" for n in UNNAMED]}}
+     "related_deposits": [1766, 1767, 1768, 1733, 1753], "notes": {"operator": RECV + ": '" + OP + "' — the query given with the paste.", "operator_2": "2026-11-14 12:06 EST: '" + OP2 + "'", "series": SERIES, "heteronyms_unnamed": [f"#{n}" for n in UNNAMED]}}
 assert e["analysis"] != e["reading"]
 json.dump(e, open(H / f"draft-{e['slug']}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(e["slug"], e["cites"], "cites;", NA, "archive;", NT, "third party; unnamed heteronyms", len(UNNAMED))
