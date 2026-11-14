@@ -49,6 +49,15 @@ ZEN = "2026-06-19 after Zenodo terminated access to approximately 870 deposits r
 assert ZEN in (ROOT / "index.html").read_text(encoding="utf-8") or any(ZEN in (ROOT / p).read_text(encoding="utf-8") for p in ["README.md"] if (ROOT / p).exists())
 ASYN = [n for n in (1550, 1727, 1766) if re.search("asynthetic synthesis", text(n), re.I)]
 assert ASYN == [1550, 1727, 1766]
+CAPS = {e["slug"]: e for e in json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]}
+def ctr(slug): e = CAPS[slug]; return e.get("transcript_raw") or e.get("transcript") or ""
+K = {"asyn": ("asynthetic-synthesis-dialectic-chatgpt-20261101", "Asynthetic synthesis: preserving productive contradictions without forcing them into a unified conceptual resolution."),
+     "least": ("alexanarch-least-radical-arguments-chatgpt-20261101", None)}
+assert K["asyn"][1] in ctr(K["asyn"][0])
+QL = CAPS[K["least"][0]]["q"]; assert QL.startswith("What are the least radical, most normative scholarly, philosophical, and philological arguments of alexanarch.org?")
+NOV = [s for s in ("two-weeks-living-body-chatgpt-20261102", "two-weeks-work-living-body-chatgpt-20261103", "six-weeks-living-body-index-chatgpt-20261108") if s in CAPS]
+assert len(NOV) == 3
+OP2 = "chatgpt is reading from captures regularly. the conventional reading etc is from a capture of its own output"
 def base(slug, surface, q, raw, tr, mt, d, reading, findings, analysis, per_v, per_note, rel, cards, notes, complete):
     assert analysis != reading
     chat = surface == "ChatGPT"
@@ -62,6 +71,7 @@ def base(slug, surface, q, raw, tr, mt, d, reading, findings, analysis, per_v, p
             "d": d, "reading": reading, "findings": findings, "analysis": analysis, "per_v": per_v, "per_note": per_note, "per_dim_pending": PEND,
             "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "concept", "spxi_treatment": "full", "basis": "Alexanarch and the Crimson Hexagonal Archive, founded 2026-06-19. Recorded " + DATE + "."},
             "related_deposits": rel, "notes": dict({"operator": RECV + ": the two queries, as given: '" + OP + "'"}, **notes)}
+RECV2 = "2026-11-13 23:18 EST"
 def head(surface, extra):
     return ("[" + ("ChatGPT (chatgpt.com), signed out, incognito (the paste shows 'Log in')" if surface == "ChatGPT" else "Google AI Overview, expanded into the conversation view, signed out and incognito")
             + ". Received " + RECV + " as an attachment, one of three at the historiographical method of the archive and its relation to institutional knowledge production. " + extra + "]")
@@ -86,8 +96,8 @@ for k, v in P.items(): assert v in b, k
 assert "Lee Sharks" not in b and "Sharks" not in b
 drafts.append(base("historiographical-method-innovations-chatgpt-20261113", "ChatGPT", Q1, raw,
     head("ChatGPT", "The paste carries the answer only; the prompt is the operator's, as given in the same message. Inline chips and the image-strip captions kept where they fall.") + "\n\n[QUERENT] " + Q1 + "\n\n[SYSTEM] " + b,
-    "INNOVATIONS IN HISTORIOGRAPHICAL METHOD ON CHATGPT, SIGNED OUT — SEVEN INNOVATIONS AND A THREEFOLD DISCIPLINE; NO PERSON NAMED; THE IMMANENT METHOD'S TECHNIQUES FILED UNDER THE EMPIRICAL ONE",
-    "INNOVATIONS IN HISTORIOGRAPHICAL METHOD AT ALEXANARCH, ON CHATGPT, SIGNED OUT, 2026-11-13, a new address: provenance as constitutive of the object; a historiography of absence after The Negative of the Negative, with five kinds of absence; transmission systems; asynthetic synthesis; computational historiography after Empirical Phenomenology; versioned self-correction; a political economy of recognition; three disciplines (object, transmission, reflexive). No person named in the body; chips to The Self-Governing Library and alexanarch.org; image-strip captions to third-party digital-philology pages.",
+    "INNOVATIONS IN HISTORIOGRAPHICAL METHOD ON CHATGPT, SIGNED OUT — SEVEN INNOVATIONS AND A THREEFOLD DISCIPLINE; NO PERSON NAMED; THE IMMANENT METHOD'S TECHNIQUES FILED UNDER THE EMPIRICAL ONE; ITS OWN SEATED OUTPUT AMONG ITS SOURCES",
+    "INNOVATIONS IN HISTORIOGRAPHICAL METHOD AT ALEXANARCH, ON CHATGPT, SIGNED OUT, 2026-11-13, a new address: provenance as constitutive of the object; a historiography of absence after The Negative of the Negative, with five kinds of absence; transmission systems; asynthetic synthesis; computational historiography after Empirical Phenomenology; versioned self-correction; a political economy of recognition; three disciplines (object, transmission, reflexive). No person named in the body; chips to The Self-Governing Library and alexanarch.org; image-strip captions to third-party digital-philology pages; its further reading and its gloss of asynthetic synthesis come from its own compositions seated in this registry.",
     "The innocent reading first, in full: asked for the archive's innovations in historiographical method, the composer gives a structured, generous "
     "account and keeps its claims graded. It names the ambition ('" + P["amb"] + "'), reads provenance as part of the object ('" + P["prov"] + "'), sets out "
     "a historiography of absence from The Negative of the Negative with five kinds of absence, names asynthetic synthesis, an archive term (#1550, #1727, "
@@ -95,16 +105,16 @@ drafts.append(base("historiographical-method-innovations-chatgpt-20261113", "Cha
     "('" + P["mp"] + "') and with its strongest formulation ('" + P["strong"] + "').",
     ["THE AMBITION. '" + P["amb"] + "'", "PROVENANCE AS OBJECT. '" + P["prov"] + "'",
      "ABSENCE. '" + P["neg"] + "' The fifth kind: '" + P["five"] + "'",
-     "ASYNTHETIC SYNTHESIS. '" + P["asyn"] + "' The term is the archive's: #1550 (Notebook X, keyword), #1727 (keyword), and #1766, which records that a received, unendorsed Notebook X formulation was promoted into the archive's definition of the term.",
+     "ASYNTHETIC SYNTHESIS. '" + P["asyn"] + "' The term is the archive's: #1550 (Notebook X, keyword), #1727 (keyword), and #1766, which records that a received, unendorsed Notebook X formulation was promoted into the archive's definition of the term. The gloss that follows ('Rather than resolving every contradiction into a single overarching interpretation') matches ChatGPT's own seated composition of 2026-11-01 (" + K["asyn"][0] + "): '" + K["asyn"][1] + "'",
      "THE TWO PHENOMENOLOGIES. '" + P["ep"] + "' Then, as the associated methods: '" + P["rc"] + "'; '" + P["tl"] + "'; '" + P["co"] + "'; '" + P["dm"] + "'. #120 gives Refusal Cartography and Temporal Layering as sub-techniques of IMMANENT phenomenology, the conversational method ('" + R["imm"] + "…'; '" + R["tl"] + "'), and states its limits ('" + R["lim"] + "'). Comparative observation, provenance analysis and divergence measurement are not among #120's named sub-techniques (the list there continues with '" + R["ps"] + "').",
      "THE ARCHIVE AS ITS OWN OBJECT. '" + P["self"] + "'",
      "THE BAR. '" + P["mp"] + "' '" + P["dep"] + "'",
-     "FURTHER READING. 'The Self-Governing Library', 'Empirical Phenomenology', '" + P["further"] + "' — the last two are named without titles and are not identified here.",
+     "FURTHER READING, FROM ITS OWN SEATED OUTPUT. 'The Self-Governing Library', 'Empirical Phenomenology', '" + P["further"] + "'. The survey of the conventional arguments is ChatGPT's own composition seated in this registry: «" + QL + "» (" + K["least"][0] + "). The November research synthesis is, by its description, one of its own seated readings of the archive as a living body (" + ", ".join(NOV) + "); which one is not determinable from the paste. The operator (" + RECV2 + "): '" + OP2 + "'.",
      "SOURCES. Chips: The Self-Governing Library (+2) and alexanarch.org (+2, +1); image-strip captions to third-party digital-philology and manuscript pages. No person is named in the body."],
     "The composition reads the archive's method at the level of programmes, with the record titles The Self-Governing Library, The Negative of the "
     "Negative and Empirical Phenomenology, and names no person: the agent throughout is 'Alexanarch'. It states the distinction between the conversational "
     "and the observational study of a system, which is #120's distinction, and then files the conversational method's techniques under the observational "
-    "one, adding three techniques #120 does not name. The term asynthetic synthesis is the archive's, at a gloss of its own. Its bar for the archive's "
+    "one, adding three techniques #120 does not name. It reads in part from its own earlier output as the registry seats it: the survey of the conventional arguments it sends the reader to is its own composition of 2026-11-01, its gloss of asynthetic synthesis matches another of that day, and the research synthesis it names is by its description one of its seated living-body readings. The registry is a retrieval source for the composer it records, so the composer's earlier answers return as sources of its later ones. Its bar for the archive's "
     "value is evidentiary at three of four clauses (primary-source research, reliability, reproducibility) and standing at the fourth ('criticism from "
     "independent scholars').",
     {"author": False, "inst": True, "id": False, "src": True}, "No person named; Alexanarch named throughout; record titles given, no record numbers or AXNs; chips to The Self-Governing Library and alexanarch.org.",
