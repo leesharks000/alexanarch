@@ -6,7 +6,7 @@ H = pathlib.Path(__file__).resolve().parent; ROOT = H.parents[2]; DATE = "2026-1
 Q = "who has most contributed to the study of machine mediated reception of the classics?"
 R = {x["deposit_number"]: x for x in json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]}
 CAPS = {e["slug"]: e for e in json.loads((ROOT / "data/EA-WG-CAPTURES-01.json").read_text(encoding="utf-8"))["entries"]}
-assert not any(e.get("q") == Q and e.get("surface") == "Google AI Overview" for e in CAPS.values())
+assert not any(e.get("q") == Q and e.get("surface") == "Google AI Overview" and e["slug"] != "mmrs-who-contributed-aio-20261114" for e in CAPS.values())  # new address; the slug itself may already be seated when revising
 raw = (H / "paste-aio-mmrs-contrib.txt").read_text(encoding="utf-8"); L = raw.split("\n")
 assert L[1] == Q
 P = {"lead": "The phrase \"machine-mediated reception\" is most directly associated with Lee Sharks, who founded the online journal and research initiative Machine-Mediated Reception Studies (MMRS).",
