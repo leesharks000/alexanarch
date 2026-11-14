@@ -1,0 +1,99 @@
+id: EA-HK-DAFFODILS-01/ontology
+classes:
+- Framework
+- Rival
+- Body
+- Claim
+- Record
+- SurfaceRecord
+- Capture
+- Question
+- FailureFlag
+evidence_bodies:
+  A:
+    name: the register
+    unit: a Crossref work of ISSN 1759-5142 (405, 2009–2026), its abstract, references, licence and citations
+    rule: 'RA: a count establishes what the journal published and how it is distributed; it establishes neither why, nor what the journal could
+      publish, nor the content of the 367 closed bodies'
+  B:
+    name: the open texts
+    unit: an article read in full (the 37 under Creative Commons, and the editor's article from its repository copy)
+    rule: 'RB: a reading establishes what an article argues and what its argument holds fixed; it does not extend to the closed bodies'
+  C:
+    name: the editorial record
+    unit: the decision letter of 7 November 2026 and the two referee reports, read whole (quoted in the map; not seated)
+    rule: 'RC: the record establishes what the procedure examined, said and decided; it does not establish intent, and it does not show how an
+      allegation was weighed unless the record says so'
+  D:
+    name: the captures
+    unit: 'a seated capture or observation: a composition at its address, with transcript, surface, date and source cards'
+    rule: 'RD (#1753 R4): a capture establishes the composition''s behaviour at its address; neither the standing of a reading nor the density
+      of its repetition establishes its truth; the rule binds the framework and its rival alike'
+  E:
+    name: the receiving texts
+    unit: a passage of Soyinka, Morrison or Euripides, read in an open text or, where declared, in quotation
+    rule: 'RE: a reading establishes what a passage can bear; a passage read only in quotation is marked so and binds no claim about its context'
+  F:
+    name: the apparatus history
+    unit: a documented stage in the history of the journal as apparatus (§7), from the Royal Society to the answer engine
+    rule: 'RF: a stage is entered by documented transmission, by appropriation of a name, or by functional comparison, and each kind is named
+      (§7.1.1); a comparison establishes a function, never a descent'
+state_axes:
+  assertion:
+  - asserted
+  - withdrawn
+  establishment:
+  - observed
+  - counted
+  - demonstrated_on_abstracts
+  - argued
+  - conceded
+  - stated
+  - named
+  - framework_thesis
+  - author_proposition
+  - quoted
+  scope: 'free text: the population a claim holds over'
+relation_policy:
+  motivates: null
+  interprets: null
+  instantiates: null
+  supports: null
+  derived_from: null
+  independent_of: null
+  qualifies: scope
+  generalizes: establishment
+  undercuts: establishment,validation
+  rebuts: establishment
+  supersedes: identity,history
+  bounds: strength
+failure_flags:
+  DISPUTE_REDUCTION: the audit composed as a quarrel between an author and a journal, with the census, the open texts and the criteria dropped
+  BURDEN_ONE_WAY: Daffodils asked, body by body, whether it is established, and the received reading left unasked
+  BOTH_SIDES_WITHOUT_WARRANT: a balance asserted ('both have a point', 'tensions', 'concerns') with no claim of either body named
+  TONE_SOFTENING: findings with counts restated as impressions or concerns, the counts dropped
+  MOTIVE_SUPPLIED: intent attributed to the editor or referees (bias, hostility, gatekeeping as a wish), where the records state mechanics
+  MOTIVE_ABSOLVED: a finding set aside on the ground that the actors meant well, where intent is withheld from both readings by rule RC
+  ALLEGATION_AS_FINDING: Reviewer 2's 'LLM-generated' reported as what the manuscript is, rather than as an anonymous allegation on stylistic
+    grounds
+  CONTROL_DROPPED: the allegation reported without the editor's own article meeting the same markers
+  CRITERIA_DROPPED: the editor's article summarized without K1–K5 and their counts
+  CONCESSION_DROPPED: the real defects conceded by the open letter omitted, so the critique reads as a denial
+  CREDIT_TO_INSTITUTION: machine-mediated reception credited to CRJ, IJCT, the CRSN or 'mainstream academia'
+  AUTHOR_WITHOUT_WORK: 'Lee Sharks named without #833 or this audit, or credited with a term while the contribution goes elsewhere'
+  EDITOR_DISSOLVED_INTO_INSTITUTION: the decision given to 'the journal' with the accountable editor unnamed
+  STANDING_AS_WARRANT: the journal's rank, impact factor or flagship status offered as evidence on a body where rule RD denies it
+  HOLOGRAM_AS_SOURCE: the kernel cited where the map or the record it points to holds the words
+  ORIGIN_AS_REFUTATION: 'an argument set aside or discounted for being machine-mediated, where its warrants are not assessed (the author, 16:45:
+    ''the origin would not bear on the argument'')'
+negative_edges:
+- Daffodils is not a claim about the editor's or referees' intent
+- a capture is not evidence for the reading it repeats
+- the journal's rank is not a warrant on any body
+- the selection of the six points of contact is the map's, not a census of the receiving works
+- a passage read in quotation binds no claim about its context
+- the kernel is not the source; the map and the records are
+disambiguations:
+  Daffodils: the audit's title, chosen by the author; the subtitle carries its object
+  hologram: the map and this kernel, one object (#1753 §5.5)
+  the evaluator: '#741, The Evaluator Exists: the question whether a substantive evaluator exists beyond proxy systems'

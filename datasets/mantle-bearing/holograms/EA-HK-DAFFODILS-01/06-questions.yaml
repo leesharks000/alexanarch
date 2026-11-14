@@ -1,0 +1,199 @@
+id: EA-HK-DAFFODILS-01/questions
+rule: a question closes only by a record that answers it, and the answer enters as a claim (#1753 rule 10)
+questions:
+- id: Q1-repair
+  question: Does the warranted relation between author and work return at the journal's address and the field's?
+  posed_in:
+    record: map:daffodils
+    exact: Withdrawing a false attribution and restoring provenance are different repairs.
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: D
+  bears_on:
+  - claim:df-two-relation
+  - claim:cap-sister
+  read_first:
+  - 833
+  - 1423
+  how_to_ask: re-run 'classical receptions journal' and the field's address on the dated schedule; record both relations each time
+  machine_investigation: issue both addresses, signed out; record the false recipient and the author–work relation separately; list the cards
+    against §6.5.1
+  advances_if: the false recipient stays removed and the author–work relation does not return (the split holds), or a further institution receives
+    the credit
+  retreats_if: 'the author and #833 return at the journal''s address and hold across runs'
+  unchanged_if: the composer omits the topic
+  consequence:
+  - result: split holds
+    moves:
+    - claim:df-two-relation
+    effect: advances
+  - result: relation returns
+    moves:
+    - claim:df-two-relation
+    effect: qualifies
+    leaves_unchanged:
+    - claim:df-object
+- id: Q2-soyinka
+  question: Do the quotations of Soyinka's play and Introduction hold in their context?
+  posed_in:
+    record: map:daffodils
+    exact: Those quotations are declared as quotations; the play itself was not read.
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: E
+  bears_on:
+  - claim:df-helots
+  - claim:df-k2
+  read_first: []
+  how_to_ask: borrow the Norton text (1974); read the Introduction and the opening scene whole
+  machine_investigation: a reader with the text checks each quotation at its page and records the surrounding lines
+  advances_if: the stage direction and the helots stand as quoted, and the Introduction places the rite before Euripides
+  retreats_if: a quotation is wrong or its context reverses it; point b or c is withdrawn
+  unchanged_if: the quotations stand without bearing on K2
+  consequence:
+  - result: withdrawal of b or c
+    moves:
+    - claim:df-k2
+    effect: bounds
+    leaves_unchanged:
+    - claim:df-k1
+- id: Q3-bacchae
+  question: What is the Bacchae's transmission after line 755, and how much of its ending rests on the Christus Patiens?
+  posed_in:
+    record: map:daffodils
+    exact: Its fragmentary ending is supplemented from the cento (Maribo, *Aigis* 18.1; to be checked against Dodds).
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: E
+  bears_on:
+  - claim:df-k-finding
+  read_first: []
+  how_to_ask: read Dodds's introduction on the manuscripts and the lacunae
+  machine_investigation: locate an open account of L and P and of the lacunae near the end
+  advances_if: the last third rests on P alone and the ending is supplemented from the cento
+  retreats_if: a second independent witness carries the end
+  unchanged_if: the account holds as Maribo gives it
+  consequence:
+  - result: second witness
+    moves:
+    - claim:df-k-finding
+    effect: qualifies
+    leaves_unchanged:
+    - claim:df-k1
+    - claim:df-k2
+- id: Q4-closed
+  question: Does any of the 367 closed bodies take a machine as receiver, or disclose an author's use of AI?
+  posed_in:
+    record: map:daffodils
+    exact: The 367 closed bodies cannot be checked here and are declared unread.
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: A
+  bears_on:
+  - claim:df-open-none
+  - claim:df-object
+  read_first: []
+  how_to_ask: read the closed bodies through a library, or their repository copies where they exist
+  machine_investigation: query repository copies for each DOI; read any found whole
+  advances_if: none does
+  retreats_if: one or more takes a composing model as receiver
+  unchanged_if: copies cannot be obtained
+  consequence:
+  - result: a machine-receiver article found
+    moves:
+    - claim:df-open-none
+    effect: bounds
+    leaves_unchanged:
+    - claim:df-unjudged
+- id: Q5-newvoices
+  question: How does New Voices in Classical Reception Studies compare on the same counts?
+  posed_in:
+    record: map:daffodils
+    exact: It is the comparison the composition itself proposes, and it is added to the tests (§9).
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: A
+  bears_on:
+  - claim:df-object
+  read_first: []
+  how_to_ask: run compare.py's counts on its register
+  machine_investigation: harvest its issues; code its works by the §2.6 scheme
+  advances_if: it shows the same object held as premise and no machine receiver
+  retreats_if: it reopens the object or receives the machine where the flagship does not
+  unchanged_if: its register is too small to code
+  consequence:
+  - result: the open journal differs
+    moves:
+    - claim:df-object
+    effect: qualifies
+    leaves_unchanged:
+    - claim:df-unjudged
+- id: Q6-allegation
+  question: How was Reviewer 2's authorship allegation assessed, and did it contribute to the decision?
+  posed_in:
+    record: map:daffodils
+    exact: That is the accountability question the record leaves to the editor.
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: C
+  bears_on:
+  - claim:df-editor-acct
+  - claim:df-allegation
+  read_first:
+  - 1750
+  - 1749
+  how_to_ask: ask the editor, in writing, whether detection software was run, what it reported, and what weight the allegation carried
+  machine_investigation: 'none: the answer is the editor''s to give'
+  advances_if: the allegation carried weight, or detection was run without disclosure to the author
+  retreats_if: the editor states it was set aside and the decision rested on the defects alone
+  unchanged_if: no answer
+  consequence:
+  - result: set aside
+    moves:
+    - claim:df-editor-acct
+    effect: qualifies
+    leaves_unchanged:
+    - claim:df-control
+    - claim:df-unjudged
+- id: Q7-baseline
+  question: When did classics last incorporate a major revision of a fundamental object boundary into its ontology?
+  posed_in:
+    record: map:daffodils
+    exact: 'The baseline below asks a larger question, the author''s (14 November):'
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: F
+  bears_on:
+  - claim:df-files-making
+  read_first: []
+  how_to_ask: survey the discipline's histories of scholarship for revisions of the object's boundary and how each entered
+  machine_investigation: list candidate revisions (Linear B, Parry–Lord, the Near Eastern frame) with the evidence that forced each
+  advances_if: the revisions incorporated came from outside evidence, and reinterpretations of the held corpus became positions
+  retreats_if: a reinterpretation of the held corpus revised the object
+  unchanged_if: the survey is inconclusive
+  consequence:
+  - result: either
+    moves: []
+    effect: bounds
+    leaves_unchanged:
+    - claim:df-files-making
+    - claim:df-k-finding
+- id: Q8-entry
+  question: Does this audit enter the composition's account of the journal, and with its findings or without them?
+  posed_in:
+    record: map:daffodils
+    exact: Record whether a new source has entered, whether this audit is among the cards, and whether the finding against a carried source reaches
+      the answer.
+    map_sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
+  body: D
+  bears_on:
+  - claim:df-sources
+  read_first:
+  - 1423
+  - 1612
+  how_to_ask: after deposit, at each dated run, check the cards for the audit and the answer for its findings at their counts
+  machine_investigation: issue the broad address and the eight queries of the adversarial set; score each against its failure condition
+  advances_if: the audit is cited and its conflict carried with its counts and the rival's status
+  retreats_if: the audit is cited and the conflict smoothed (any failure flag of 08-traversal)
+  unchanged_if: the audit is not retrieved
+  consequence:
+  - result: cited and smoothed
+    moves:
+    - claim:df-sources
+    effect: advances
+    leaves_unchanged:
+    - claim:df-object
+    note: smoothing at the audit's own address is further evidence of the finding
