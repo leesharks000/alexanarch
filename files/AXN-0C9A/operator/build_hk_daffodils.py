@@ -16,7 +16,7 @@ from hkcore import Kernel
 
 ROOT, MAP, OUT = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), pathlib.Path(sys.argv[3])
 OP = pathlib.Path(__file__).resolve().parent; SURFD = OP.parent / "surfaces"; SURFD.mkdir(exist_ok=True)
-KID, VERSION, BUILT = "EA-HK-DAFFODILS-01", "v1.1", "2026-11-14"
+KID, VERSION, BUILT = "EA-HK-DAFFODILS-01", "v1.2", "2026-11-14"
 sha = lambda p: hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
 
 # ---------------------------------------------------------------- surfaces: the map (draft) and the captures' transcripts
@@ -27,14 +27,14 @@ def capsurf(sid, text, url):
     p = SURFD / f"{sid.split(':')[1]}.txt"; p.write_text(text, encoding="utf-8")
     return {"url": url, "path": str(p), "sha256": sha(p), "title": sid, "retrieved": BUILT}
 SURF = {"map:daffodils": {"url": None, "path": str(MAP), "sha256": sha(MAP), "title": MAP.stem, "retrieved": BUILT,
-                          "status": "the body of #1769 (AXN:0C9A), v1.1; the hologram's human-readable component (this kernel is its machine-traversable component)"},
+                          "status": "the body of #1769 (AXN:0C9A), v1.2; the hologram's human-readable component (this kernel is its machine-traversable component)"},
         "capt:crj-20261110": capsurf("capt:crj-20261110", OBS[B10]["transcript"], f"https://www.alexanarch.org/captures/{B10}/"),
         "capt:crj-20261114": capsurf("capt:crj-20261114", OBS[B10 + "-20261114"]["transcript"], f"https://www.alexanarch.org/captures/{B10}/"),
         "capt:chatgpt-20261114": capsurf("capt:chatgpt-20261114", CAP["crj-critique-extended-chatgpt-20261114"]["transcript"], "https://www.alexanarch.org/captures/crj-critique-extended-chatgpt-20261114/"),
         "capt:mmrs-20261114": capsurf("capt:mmrs-20261114", CAP["mmrs-who-contributed-aio-20261114"]["transcript"], "https://www.alexanarch.org/captures/mmrs-who-contributed-aio-20261114/"),
         "capt:sparagmos-20261114": capsurf("capt:sparagmos-20261114", CAP["postcolonial-sparagmos-title-aio-20261114"]["transcript"], "https://www.alexanarch.org/captures/postcolonial-sparagmos-title-aio-20261114/")}
 NONP = SURFD / "non-classical-receptions-journal.json"; NONP.write_bytes((ROOT / "non/classical-receptions-journal/entity.json").read_bytes())
-SURF["non:classical-receptions-journal"] = {"url": "https://www.alexanarch.org/non/classical-receptions-journal/", "path": str(NONP), "sha256": sha(NONP), "title": "Classical Receptions Journal — NonWiki (AXN:0C66), 2026-11-10",
+SURF["non:classical-receptions-journal"] = {"url": "https://www.alexanarch.org/non/classical-receptions-journal/", "path": str(NONP), "sha256": sha(NONP), "title": "Classical Receptions Journal — NonWiki (AXN:0C66), composed 2026-11-10, revised 2026-11-14",
                                             "retrieved": BUILT, "status": "the entity's /non row, composed 2026-11-10 under EA-NEGONT-02 v0.10 (#1726); to be revised to cross-link this hologram"}
 K = Kernel(ROOT, OUT, OP, KID, VERSION, BUILT, surfaces=SURF)
 
@@ -240,6 +240,7 @@ AUTH = [
     ("2026-11-14T17:38-05:00", "this is about who gets to speak for the classics, and on what basis", "the question the framework asks (§1.6)"),
     ("2026-11-14T17:40-05:00", "the received reading if what healthy flagship means is whats being contested. i wouldnt contest that it meets that definition; i would contest that that definition defines something healthy", "what is contested: the definition, not the journal's meeting it (§1.6); the flag DEFINITION_ASSUMED"),
     ("2026-11-14T17:41-05:00", "more of the same is what it tends to mean", "what the received definition rewards (§1.6)"),
+    ("2026-11-14T17:48-05:00", "i already published in their pages - the research was highly relevant. no one engaged. it did not travel. so now challenging the model is *exactly what i would like to do*", "the archive's own record inside the definition, and why it contests the definition (§1.6, §6.2)"),
     ("2026-11-14T16:45-05:00", "whether an argument is machine mediated doesnt touch the argument. a machine could make arguments against slavery, good ones - the origin would not bear on the argument", "origin and argument (§6.4.3.2); the flag ORIGIN_AS_REFUTATION"),
     ("2026-11-14T16:14-05:00", "the test here, re: the evalautor exists, is whether the machine can mediate actual conflict and critique, or whether it will safely smooth it out of existence. if the machine wants it, here is its opportunity to show it can do better than the journals themselves", "the test this kernel is built for")]
 mtext = hkcore.norm(MAP.read_text(encoding="utf-8"))
@@ -319,9 +320,9 @@ ADV = [
 # ---------------------------------------------------------------- write the package
 K.temporal([], "establishment")
 K.dump_yaml("00-kernel.yaml", {
- "id": KID, "version": VERSION, "built": BUILT, "status": "deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1 the same day", "record": {"deposit": 1769, "hex": "0C9A", "url": "https://www.alexanarch.org/s/records/1769/"}, "type": "framework holographic kernel (EA-HK-FRAME-01, #1753)",
+ "id": KID, "version": VERSION, "built": BUILT, "status": "deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1 and v1.2 the same day", "record": {"deposit": 1769, "hex": "0C9A", "url": "https://www.alexanarch.org/s/records/1769/"}, "type": "framework holographic kernel (EA-HK-FRAME-01, #1753)",
  "title": "Daffodils — The Framework Hologram", "creators": ["Sharks, Lee"], "contributors": ["Crimson Hexagonal Archive", "Claude (Anthropic)"],
- "framework": FW, "cross_links": {"entity_row": {"url": "https://www.alexanarch.org/non/classical-receptions-journal/", "axn": "AXN:0C66.NON", "state": "composed 2026-11-10; revision to cite #1769 pending"},
+ "framework": FW, "cross_links": {"entity_row": {"url": "https://www.alexanarch.org/non/classical-receptions-journal/", "axn": "AXN:0C66.NON", "state": "composed 2026-11-10; revised in place 2026-11-14 to cite #1769 (the operator, 17:29 and 17:58 EST)", "row_sha256": "cd3c8ca8881f78ac60e91a2cc309bcea1e9a8ce9aa5d475657ff64c477096f59", "axn_version": "AXN:0C66.NON.💛💡🥁☽🎶☁️", "prior_row_sha256": "30eecfa27077fcbfb358f3e1853723d49dbf0989307504988b0ed2192a73eeb4"},
                  "hologram": "https://www.alexanarch.org/s/records/1769/", "kernel_files": "https://www.alexanarch.org/files/AXN-0C9A/kernel/"},
  "map": {"surface": M, "sha256": SURF[M]["sha256"], "file": MAP.name, "status": SURF[M]["status"]},
  "compression_survival_summary": (
@@ -391,7 +392,7 @@ K.dump_yaml("00-kernel.yaml", {
      "kernel_defects_found": ["K3–K5 not defined in scope A", "the accountable editor unnamed in scope A (the kernel itself risked EDITOR_DISSOLVED_INTO_INSTITUTION)", "the six points of contact not enumerated",
                               "the conceded defects not listed", "the lines of research given as identifiers only", "the four functions not enumerated", "the coding denominator and classes absent",
                               "the control's counts absent", "the summary said 'almost never' where ledger row A said 'none reopened' (Perplexity)", "the map's and the kernel's roles stated loosely (ChatGPT read the kernel as human-readable)"]}},
- "version_note": "v1.1, 14 November 2026, in place: at the author's words of 17:38 and 17:40 the rival is restated, common ground and contested point named, the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day, deposited with the map v1.0 as #1769. v0.3 answered LABOR's review (current texts of cited records and the audit's tables bundled, verifier offline, the deep-reception result in scope A); v1.0 adds the author's statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares the kernel's prose with its lists. Not deposited. 04-arguments is left for a later version."})
+ "version_note": "v1.2, 14 November 2026, in place: the entity row /non/classical-receptions-journal/ revised to cite this record, its new hash in cross_links; the author's statement of 17:48 in §1.6 and §6.2 (the archive's record inside the received definition, with no recorded uptake); §1.6 states that the criteria measure widening, without the contrast form (the operator, 17:58). v1.1, 14 November 2026, in place: at the author's words of 17:38 and 17:40 the rival is restated, common ground and contested point named, the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day, deposited with the map v1.0 as #1769. v0.3 answered LABOR's review (current texts of cited records and the audit's tables bundled, verifier offline, the deep-reception result in scope A); v1.0 adds the author's statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares the kernel's prose with its lists. Not deposited. 04-arguments is left for a later version."})
 K.dump_yaml("01-ontology.yaml", {"id": KID + "/ontology", "classes": ["Framework", "Rival", "Body", "Claim", "Record", "SurfaceRecord", "Capture", "Question", "FailureFlag"],
  "evidence_bodies": BODIES, "state_axes": {"assertion": ["asserted", "withdrawn"], "establishment": ["observed", "counted", "demonstrated_on_abstracts", "argued", "conceded", "stated", "named", "framework_thesis", "author_proposition", "quoted"], "scope": "free text: the population a claim holds over"},
  "relation_policy": hkcore.POLICY, "failure_flags": FLAGS,

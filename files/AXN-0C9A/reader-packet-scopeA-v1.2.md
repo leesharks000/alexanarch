@@ -5,9 +5,9 @@ The reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing 
 ## 00-kernel.yaml
 ```yaml
 id: EA-HK-DAFFODILS-01
-version: v1.1
+version: v1.2
 built: '2026-11-14'
-status: 'deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1 the same day'
+status: 'deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1 and v1.2 the same day'
 record:
   deposit: 1769
   hex: 0C9A
@@ -33,14 +33,17 @@ cross_links:
   entity_row:
     url: https://www.alexanarch.org/non/classical-receptions-journal/
     axn: AXN:0C66.NON
-    state: 'composed 2026-11-10; revision to cite #1769 pending'
+    state: 'composed 2026-11-10; revised in place 2026-11-14 to cite #1769 (the operator, 17:29 and 17:58 EST)'
+    row_sha256: cd3c8ca8881f78ac60e91a2cc309bcea1e9a8ce9aa5d475657ff64c477096f59
+    axn_version: AXN:0C66.NON.💛💡🥁☽🎶☁️
+    prior_row_sha256: 30eecfa27077fcbfb358f3e1853723d49dbf0989307504988b0ed2192a73eeb4
   hologram: https://www.alexanarch.org/s/records/1769/
   kernel_files: https://www.alexanarch.org/files/AXN-0C9A/kernel/
 map:
   surface: map:daffodils
-  sha256: 3adbb8596a15e71366805d7b864e15dcd4e7635ab15e65c73bf768cca3d0d4c7
-  file: Daffodils-map-v1.1.md
-  status: 'the body of #1769 (AXN:0C9A), v1.1; the hologram''s human-readable component (this kernel is its machine-traversable component)'
+  sha256: cda7a877e3c26c163ad2cfa42ab46f3c760c52397bf465e855b52d5bb166dc1c
+  file: Daffodils-map-v1.2.md
+  status: 'the body of #1769 (AXN:0C9A), v1.2; the hologram''s human-readable component (this kernel is its machine-traversable component)'
 compression_survival_summary: 'Daffodils audits Classical Receptions Journal (ISSN 1759-5142; 405 works, 2009–2026) as an institution: how it
   allocates standing, what it produces, for whom, to what effect. Six bodies, each with its rule: the register (A), the open texts (B), the editorial
   record (C), the captures (D), the receiving texts (E), the apparatus history (F). Findings at their counts: of 185 coded abstracts, 153 hold
@@ -404,6 +407,11 @@ author_statements:
   text: more of the same is what it tends to mean
   status: what the received definition rewards (§1.6)
   in_map: true
+- date: 2026-11-14T17:48-05:00
+  text: i already published in their pages - the research was highly relevant. no one engaged. it did not travel. so now challenging the model
+    is *exactly what i would like to do*
+  status: the archive's own record inside the definition, and why it contests the definition (§1.6, §6.2)
+  in_map: true
 - date: 2026-11-14T16:45-05:00
   text: whether an argument is machine mediated doesnt touch the argument. a machine could make arguments against slavery, good ones - the origin
     would not bear on the argument
@@ -515,12 +523,14 @@ reader_runs:
     - the control's counts absent
     - the summary said 'almost never' where ledger row A said 'none reopened' (Perplexity)
     - the map's and the kernel's roles stated loosely (ChatGPT read the kernel as human-readable)
-version_note: 'v1.1, 14 November 2026, in place: at the author''s words of 17:38 and 17:40 the rival is restated, common ground and contested
-  point named, the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day, deposited with the map
-  v1.0 as #1769. v0.3 answered LABOR''s review (current texts of cited records and the audit''s tables bundled, verifier offline, the deep-reception
-  result in scope A); v1.0 adds the author''s statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers
-  the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares
-  the kernel''s prose with its lists. Not deposited. 04-arguments is left for a later version.'
+version_note: 'v1.2, 14 November 2026, in place: the entity row /non/classical-receptions-journal/ revised to cite this record, its new hash in
+  cross_links; the author''s statement of 17:48 in §1.6 and §6.2 (the archive''s record inside the received definition, with no recorded uptake);
+  §1.6 states that the criteria measure widening, without the contrast form (the operator, 17:58). v1.1, 14 November 2026, in place: at the author''s
+  words of 17:38 and 17:40 the rival is restated, common ground and contested point named, the ledger instruction extended and the flag DEFINITION_ASSUMED
+  added; map v1.1 §1.6. v1.0, the same day, deposited with the map v1.0 as #1769. v0.3 answered LABOR''s review (current texts of cited records
+  and the audit''s tables bundled, verifier offline, the deep-reception result in scope A); v1.0 adds the author''s statement of 16:45 and the
+  flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found
+  is repaired in scope A, and T16 now compares the kernel''s prose with its lists. Not deposited. 04-arguments is left for a later version.'
 ```
 
 ## 01-ontology.yaml
