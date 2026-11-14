@@ -1073,6 +1073,46 @@ def _errata_html(d, dn, esc):
             f'<a href="/data/errata/{dn}.json" style="color:var(--accent)">/data/errata/{dn}.json</a>.</div></section>')
 
 
+def _forward_html(d, dn, esc, registry=None):
+    """2026-11-13: forward pointers (scripts/build_forward_sidecars.py). A framework hologram is the router: it holds
+    the registry `forward` entries for its line. This block shows the entries a record holds as router, and, when the
+    registry is given, every routed pair in which the record is the origin or the destination. Neither the deposited
+    bytes nor the AXN of any record change. Lee Sharks, 2026-11-13: "the content identity does not need to change to
+    point and maintain its developing relations"."""
+    items = []
+    def _ref(n):
+        return f'<a href="/s/records/{esc(str(n))}/" style="color:var(--accent)">#{esc(str(n))}</a>'
+    def _row(router, e, held):
+        if not isinstance(e, dict):
+            return f'<li style="margin:.5rem 0">{esc(str(e))}</li>'
+        to = _ref(e['to_deposit']) if e.get('to_deposit') else esc(e.get('to_pending') or '')
+        frm = (_ref(e['from_deposit']) + (' ' + esc(e['from_locus']) if e.get('from_locus') else '')) if e.get('from_deposit') else ''
+        head = ' · '.join(x for x in (esc(e.get('date', '')), esc(e.get('kind', ''))) if x)
+        lines = [f'<div>{frm} → {to}' + ('' if held else f' <span style="color:#777">(routed by {_ref(router)})</span>') + '</div>']
+        if e.get('note'): lines.append(f'<div>{esc(e["note"])}</div>')
+        if held and e.get('ruling'): lines.append(f'<div style="color:#777">Ruling: {esc(e["ruling"])}</div>')
+        if held and e.get('raised_by'): lines.append(f'<div style="color:#777">Raised by: {esc(e["raised_by"])}</div>')
+        if held and e.get('status'): lines.append(f'<div style="color:#777">{esc(e["status"])}</div>')
+        return ('<li style="margin:.5rem 0">' + (f'<div style="font-weight:600">{head}</div>' if head else '') + ''.join(lines) + '</li>')
+    for e in (d.get('forward') or []):
+        items.append(_row(dn, e, True))
+    if registry:
+        for r in registry.get('deposits', []):
+            if r.get('deposit_number') == dn:
+                continue
+            for e in (r.get('forward') or []):
+                if isinstance(e, dict) and dn in (e.get('from_deposit'), e.get('to_deposit')):
+                    items.append(_row(r['deposit_number'], e, False))
+    if not items:
+        return ''
+    return ('<section id="forward" style="margin:1.2rem 0;padding:.8rem 1rem;border-left:3px solid var(--accent);font-size:.86em">'
+            '<div style="font-weight:600;margin-bottom:.3rem">Forward</div>'
+            f'<ul style="margin:0;padding-left:1.1rem">{"".join(items)}</ul>'
+            '<div style="opacity:.7;margin-top:.4rem;font-size:.92em">Developing relations carried as metadata and routed by a '
+            'framework hologram for its next build. The deposited text and its AXN are unchanged. As data: '
+            f'<a href="/data/forward/{dn}.json" style="color:var(--accent)">/data/forward/{dn}.json</a>.</div></section>')
+
+
 def _heading_ids(h):
     """2026-10-15: give each full-text heading an id in GitHub's slug form (lowercase; tags, punctuation dropped;
     spaces to hyphens; repeats numbered -1, -2), so a text's own '[…](#slug)' links resolve. Headings that already
@@ -2062,6 +2102,7 @@ def regenerate_static_page(d, eidx, registry=None):
         )
 
     errata_html = _errata_html(d, dn, esc)
+    forward_html = _forward_html(d, dn, esc, registry)
 
     mods = d.get('modifications') or []
     mods_html = ''
@@ -2434,6 +2475,7 @@ def regenerate_static_page(d, eidx, registry=None):
      work. (MANUS standing rule, 2026-08-06: recording of method or modification
      does not appear in body text.) -->
 {errata_html}
+{forward_html}
 {external_metadata_html}
 {version_history}
 {mods_html}

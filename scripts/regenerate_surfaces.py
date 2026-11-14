@@ -87,7 +87,7 @@ except ImportError:
     _OVERWRITE_GUARD_AVAILABLE = False
 
 HOMEPAGE_RECENT_N = 12  # must equal the JS slice in index.html
-ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "entity", "outside-works", "dynamic-counts", "semantic-addresses"]
+ALL_SURFACES = ["state", "browse", "browse-sections", "doi-shadow", "feed", "browse-index", "hex-to-deposit", "chunks", "sitemap", "sha256sums", "wiki", "graph", "homepage-noscript", "api-index", "search-index", "search-static", "capture-gallery", "record-api", "errata-sidecars", "forward-sidecars", "entity", "outside-works", "dynamic-counts", "semantic-addresses"]
 
 
 def _version_label(version: str) -> tuple:
@@ -2077,6 +2077,22 @@ def regenerate_errata_sidecars(reg, dry_run=False):
 
 
 SURFACE_FNS["errata-sidecars"] = regenerate_errata_sidecars
+
+
+def regenerate_forward_sidecars(reg, dry_run=False):
+    """Emit data/forward/<n>.json for every deposit (delegates to build_forward_sidecars).
+
+    REGISTERED 2026-11-13 with the sidecar itself: the forward-pointing metadata category, routed by the framework
+    holograms (Lee Sharks: "it should be a forward pointing metadata category")."""
+    r = subprocess.run([sys.executable, str(REPO_ROOT / "scripts/build_forward_sidecars.py")] + (["--dry-run"] if dry_run else []),
+                       capture_output=True, text=True, cwd=str(REPO_ROOT))
+    sys.stdout.write(r.stdout)
+    if r.returncode != 0:
+        sys.stdout.write(r.stderr)
+        raise RuntimeError("build_forward_sidecars.py failed — the sidecars are now STALE")
+
+
+SURFACE_FNS["forward-sidecars"] = regenerate_forward_sidecars
 
 
 def regenerate_entity(reg, dry_run=False):
