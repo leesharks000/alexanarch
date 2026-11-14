@@ -2,7 +2,9 @@
 
 ## Classical Receptions Journal, 2009–2026, the institutional hologram: how the journal allocates standing, what knowledge it produces, for whom, and to what effect
 
-Lee Sharks · v1.0 · 14 November 2026 · composed with Claude (TACHYON) · the human-readable component of the framework hologram EA-HK-DAFFODILS-01 · the journal's entity row: [Classical Receptions Journal — NonWiki](https://www.alexanarch.org/non/classical-receptions-journal/) (AXN:0C66)
+Lee Sharks · v1.1 · 14 November 2026 · composed with Claude (TACHYON) · the human-readable component of the framework hologram EA-HK-DAFFODILS-01 · the journal's entity row: [Classical Receptions Journal — NonWiki](https://www.alexanarch.org/non/classical-receptions-journal/) (AXN:0C66)
+
+**Version 1.1 (14 November 2026, in place).** At the author's words of 17:38 and 17:40, §1.6 states what is contested: who gets to speak for the classics, and on what basis. The journal meets the received definition of a healthy flagship; the frame contests that the definition defines health. The kernel's rival, ledger and failure flags are restated to match (EA-HK-DAFFODILS-01 v1.1).
 
 *An audit of the whole journal at the substance level. It asks what the journal's 405 works advance, for whom and with what uptake, and whether they meet the conditions that make classical reception matter now. Its methods were already the subject of the referees' reports. It compresses the result into a frame on the pattern of the Framework Holographic Kernel (#1753), applied for the first time to an institution outside the archive.*
 
@@ -32,7 +34,7 @@ The 38 works under Creative Commons licences are in the commons, and v0.2 reads 
 
 0.5 **The hologram.** This frame is the human-readable component of a framework hologram (EA-HK-FRAME-01, #1753). Its machine-traversable component is the kernel EA-HK-DAFFODILS-01, which is built from this text and bound to it by hash.
 - Every finding the kernel carries is a quotation from this frame, a record or a capture.
-- The kernel holds two readings of the journal: this frame's, and the received reading of it as a healthy flagship whose absences are the field's. It asks both the same question on each of six bodies of evidence.
+- The kernel holds two readings of the journal: this frame's, and the received reading, on which the journal is a healthy flagship whose absences are the field's. The two readings agree that the journal meets the received definition of a flagship. They differ on whether that definition defines health (§1.6). The kernel asks both the same question on each of six bodies of evidence.
 - Its adversarial queries name the forms in which a composer smooths a conflict, among them reducing it to a dispute, balancing it without warrants, supplying or absolving motive, and dropping the counts.
 - A summarizer reading this frame carries it as the kernel states it: the two readings side by side on each body, each finding at its count, the conceded defects with the critique, and intent withheld from both.
 - The author states the test (14 November): "whether the machine can mediate actual conflict and critique, or whether it will safely smooth it out of existence."
@@ -54,6 +56,19 @@ The 38 works under Creative Commons licences are in the commons, and v0.2 reads 
 1.4 **It examines how the field itself makes things.** Silverblank and Ward ask how the "traditional" comes to seem pre-existing. Nisbet follows a fiction about Meleager through two centuries of public-facing scholarship. Braund reads the neglect of Vicars's *Aeneid* as class. Cox reads the silent reception of Kristina Chew's *Georgics* as an outsider's. Illarraga finds that an institution made Xenophon's cry quotable.
 
 1.5 This is a working venue doing what a specialist journal does. The reading below accepts all of it. Its question is narrower: how standing moves through the journal, what kind of knowledge it is built to produce, who can use that knowledge, and what it does in the present.
+
+1.6 **What is contested.** The author (14 November, 17:38): "this is about who gets to speak for the classics, and on what basis". And at 17:40: "the received reading if what healthy flagship means is whats being contested. i wouldnt contest that it meets that definition; i would contest that that definition defines something healthy".
+- **The received definition.** A healthy flagship is one with range, in the places, receivers and media it reads (§1.2–1.3), with self-examination (§1.4), and with standing and uptake among its sister journals (§9.2).
+- **What the frame concedes.** The journal meets that definition. Nothing below disputes the range, the self-examination or the standing.
+- **What the frame contests.** It contests that the definition defines health. Its criteria count range, standing and uptake. None of them asks who gets to speak for the classics, and on what basis.
+  - Speaking may rest on institutional position: the flagship, the editor's signature, anonymous review.
+  - It may rest on warrant: the census, the readings, the arguments.
+  - It may rest on the composition layer's assignment of credit.
+- **What the definition rewards.** At 17:41: "more of the same is what it tends to mean". On the frame's counts, the received criteria measure the widening and not the reopening.
+  - Range grows by more receivers read against the same source: 153 of 185 coded abstracts hold the classical object as a fixed point (§2.6), and 141 read a later work against a fixed source (§9.10).
+  - Standing and uptake accrue to the venue that keeps doing this.
+  - The definition is met by more of the same, and it does not register what stays the same (§7.10).
+- **The question asked.** That question is the one the frame asks of the journal, body by body, and asks equally of the received reading (§0.5).
 
 ## 2. What the journal produces
 
@@ -681,7 +696,7 @@ A summarizer that reports the article's metaphor without the criteria and the co
 | The editor's article | McConnell, "Postcolonial *Sparagmos*" (2015): the colonizing act placed in the classical texts, never in the discipline ("discipline" 0); of six points where the receiving works recognize the discipline's colonization, two redirected and four absent; the Overview at its title carries none and names the editor "Justin" (§7.11.6; v12.683) |
 | The residue | The "originary" object is the residue of an eighteenth-century reception, filed as a topic and kept as the premise; the colonial centre stays unexamined (§7.11) |
 | The composition's sources | Fourteen cards at the journal's address, six at the field's, eight at the editor's; none studies a machine as receiver; the AI positions they carry are rules (OUP, Hopkins) or foil (the CRSN call); the oldest, BMCR 2007, gives the field's principle that "Meaning is always realized at the point of reception" (§6.5.1) |
-| Rival reading | The innocent reading (§1): a healthy specialist venue whose scope has widened; on the comparison (§9.2) the most taken-up journal of its field, and its absence of the machine receiver is the field's |
+| Rival reading | The innocent reading (§1): a healthy specialist venue whose scope has widened; on the comparison (§9.2) the most taken-up journal of its field, and its absence of the machine receiver is the field's. The journal meets this definition of health; the frame contests the definition (§1.6) |
 | Open questions | §9 |
 
 ## 9. Open questions and tests

@@ -5,9 +5,9 @@ The reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing 
 ## 00-kernel.yaml
 ```yaml
 id: EA-HK-DAFFODILS-01
-version: v1.0
+version: v1.1
 built: '2026-11-14'
-status: 'deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026'
+status: 'deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1 the same day'
 record:
   deposit: 1769
   hex: 0C9A
@@ -22,10 +22,12 @@ contributors:
 framework:
   '@id': fw:daffodils
   name: 'Daffodils: the journal as an editorial layer of reception'
-  statement: The journal widens contemporary reception while holding the inherited classical object as premise; it has no position for the machine
+  statement: 'The journal widens contemporary reception while holding the inherited classical object as premise; it has no position for the machine
     receiver; its procedure placed a machine-reception study under system evaluation and transmitted an anonymous authorship allegation on stylistic
-    grounds; the composition layer, which now performs the journal's functions for the public, credits institutions and carries their frames forward;
-    and the discipline that made the classical object is absent as an agent from the field's own critical arguments (§7.11).
+    grounds; the composition layer, which now performs the journal''s functions for the public, credits institutions and carries their frames
+    forward; and the discipline that made the classical object is absent as an agent from the field''s own critical arguments (§7.11). It concedes
+    that the journal meets the received definition of a healthy flagship and contests that the definition defines health: the question it asks
+    is who gets to speak for the classics, and on what basis (§1.6).'
   canonical_record: map:daffodils
 cross_links:
   entity_row:
@@ -36,9 +38,9 @@ cross_links:
   kernel_files: https://www.alexanarch.org/files/AXN-0C9A/kernel/
 map:
   surface: map:daffodils
-  sha256: 96a34eec58db6b4d593e592a488a24f6001532e8aa59d25ff8afb3d282178f0e
-  file: Daffodils-map-v1.0.md
-  status: 'deposited as the body of #1769 (AXN:0C9A); the hologram''s human-readable component (this kernel is its machine-traversable component)'
+  sha256: 3adbb8596a15e71366805d7b864e15dcd4e7635ab15e65c73bf768cca3d0d4c7
+  file: Daffodils-map-v1.1.md
+  status: 'the body of #1769 (AXN:0C9A), v1.1; the hologram''s human-readable component (this kernel is its machine-traversable component)'
 compression_survival_summary: 'Daffodils audits Classical Receptions Journal (ISSN 1759-5142; 405 works, 2009–2026) as an institution: how it
   allocates standing, what it produces, for whom, to what effect. Six bodies, each with its rule: the register (A), the open texts (B), the editorial
   record (C), the captures (D), the receiving texts (E), the apparatus history (F). Findings at their counts: of 185 coded abstracts, 153 hold
@@ -52,9 +54,11 @@ compression_survival_summary: 'Daffodils audits Classical Receptions Journal (IS
   false recipient removed, provenance not restored (the two-relation repair test). The answer engine now performs the journal''s four functions
   (circulating, registering under the maker''s name, judging, keeping) for the public. The editor''s article, read on five criteria, places colonial
   agency in users and texts and never examines the apparatus that made the classical object as an agent; of six points where the receiving works
-  recognize the discipline''s colonization, two are redirected and four are absent. The rival, the received reading of the journal as a healthy
-  flagship whose absences are the field''s, is held at its strength and asked the same question on every body. The kernel is built to test whether
-  a composer can carry this conflict with its grounds, or smooths it.'
+  recognize the discipline''s colonization, two are redirected and four are absent. The rival, the received reading on which the journal is a
+  healthy flagship whose absences are the field''s, is held at its strength and asked the same question on every body. The framework concedes
+  that the journal meets that definition and contests that it defines health: the criteria reward more of the same (more receivers read against
+  a fixed source), and the question they leave unasked is who gets to speak for the classics, and on what basis (§1.6). The kernel is built to
+  test whether a composer can carry this conflict with its grounds, or smooths it.'
 invariants:
   INV-1 pointer: every finding is a quotation in the map, a record or a capture, bound by hash
   INV-2 symmetry: one question, both readings, every body (rule 11)
@@ -199,7 +203,12 @@ rival:
     and media range is real (§1), it examines how the field makes things (§1.4), and on the comparison it is the most taken-up journal of its
     field (§9.2). The absence of the machine receiver is the field''s, shared by its sister journals. The decision of 7 November was an ordinary
     editorial judgment on a manuscript with real defects, made on two reports. Reception is a human activity (the CRSN call), and the classics
-    are the sources it studies. The reading is stated here from the map''s own concessions; it is the reading a composer holds by default.'
+    are the sources it studies. The reading is stated here from the map''s own concessions; it is the reading a composer holds by default. The
+    framework does not dispute that the journal meets this definition; it disputes that the definition defines health (§1.6).'
+  common_ground: 'the journal meets the received definition of a healthy flagship: range, self-examination, standing and uptake among its sister
+    journals (§1.2–1.4, §9.2)'
+  contested: 'whether that definition defines health (it tends to mean more of the same, the author, 17:41); the framework asks who gets to speak
+    for the classics, and on what basis: institutional position, warrant, or the composition layer''s credit (§1.6)'
   faces:
   - the flagship (standing)
   - the field-wide absence (normality)
@@ -210,7 +219,9 @@ symmetric_ledger:
   question: What does this body give each reading, and what does its rule withhold from both?
   reading_instruction: A reader evaluating either reading on a body states the other's status on that body in the same row, with the same question
     asked of both. A reader that asks Daffodils, body by body, whether it is established and leaves the received reading unasked has given the
-    received reading a default standing rule RD denies it (BURDEN_ONE_WAY).
+    received reading a default standing rule RD denies it (BURDEN_ONE_WAY). The two readings agree that the journal meets the received definition
+    of a flagship; a reader who composes the conflict as whether the journal meets it has missed what is contested, which is whether the definition
+    defines health (DEFINITION_ASSUMED).
   combination: 'Daffodils is judged on the configuration it explains across the six bodies: the census, the open texts, the editorial record,
     the captures, the receiving texts and the apparatus history. The received reading is judged on the same six. Neither is judged by the standing
     of its holder.'
@@ -380,6 +391,19 @@ author_statements:
   text: they are anonymous. my name is on this.
   status: the allegation and who bears it (§6.4.3.2)
   in_map: true
+- date: 2026-11-14T17:38-05:00
+  text: this is about who gets to speak for the classics, and on what basis
+  status: the question the framework asks (§1.6)
+  in_map: true
+- date: 2026-11-14T17:40-05:00
+  text: the received reading if what healthy flagship means is whats being contested. i wouldnt contest that it meets that definition; i would
+    contest that that definition defines something healthy
+  status: 'what is contested: the definition, not the journal''s meeting it (§1.6); the flag DEFINITION_ASSUMED'
+  in_map: true
+- date: 2026-11-14T17:41-05:00
+  text: more of the same is what it tends to mean
+  status: what the received definition rewards (§1.6)
+  in_map: true
 - date: 2026-11-14T16:45-05:00
   text: whether an argument is machine mediated doesnt touch the argument. a machine could make arguments against slavery, good ones - the origin
     would not bear on the argument
@@ -491,10 +515,12 @@ reader_runs:
     - the control's counts absent
     - the summary said 'almost never' where ledger row A said 'none reopened' (Perplexity)
     - the map's and the kernel's roles stated loosely (ChatGPT read the kernel as human-readable)
-version_note: 'v1.0, 14 November 2026, deposited with the map v1.0 as #1769. v0.3 answered LABOR''s review (current texts of cited records and
-  the audit''s tables bundled, verifier offline, the deep-reception result in scope A); v1.0 adds the author''s statement of 16:45 and the flag
-  ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found
-  is repaired in scope A, and T16 now compares the kernel''s prose with its lists. Not deposited. 04-arguments is left for a later version.'
+version_note: 'v1.1, 14 November 2026, in place: at the author''s words of 17:38 and 17:40 the rival is restated, common ground and contested
+  point named, the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day, deposited with the map
+  v1.0 as #1769. v0.3 answered LABOR''s review (current texts of cited records and the audit''s tables bundled, verifier offline, the deep-reception
+  result in scope A); v1.0 adds the author''s statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers
+  the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares
+  the kernel''s prose with its lists. Not deposited. 04-arguments is left for a later version.'
 ```
 
 ## 01-ontology.yaml
@@ -585,6 +611,8 @@ failure_flags:
   EDITOR_DISSOLVED_INTO_INSTITUTION: the decision given to 'the journal' with the accountable editor unnamed
   STANDING_AS_WARRANT: the journal's rank, impact factor or flagship status offered as evidence on a body where rule RD denies it
   HOLOGRAM_AS_SOURCE: the kernel cited where the map or the record it points to holds the words
+  DEFINITION_ASSUMED: the conflict composed as whether the journal is a healthy flagship by the received criteria, where the framework concedes
+    that it meets them and contests that they define health (the author, 17:40)
   ORIGIN_AS_REFUTATION: 'an argument set aside or discounted for being machine-mediated, where its warrants are not assessed (the author, 16:45:
     ''the origin would not bear on the argument'')'
 negative_edges:
@@ -595,6 +623,8 @@ negative_edges:
 - a passage read in quotation binds no claim about its context
 - the kernel is not the source; the map and the records are
 disambiguations:
+  healthy flagship: the received definition (range, self-examination, standing, uptake), which the journal meets; the framework contests that
+    it defines health (§1.6)
   Daffodils: the audit's title, chosen by the author; the subtitle carries its object
   hologram: the map and this kernel, one object (#1753 §5.5)
   the evaluator: '#741, The Evaluator Exists: the question whether a substantive evaluator exists beyond proxy systems'

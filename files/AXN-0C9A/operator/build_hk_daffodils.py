@@ -16,7 +16,7 @@ from hkcore import Kernel
 
 ROOT, MAP, OUT = pathlib.Path(sys.argv[1]), pathlib.Path(sys.argv[2]), pathlib.Path(sys.argv[3])
 OP = pathlib.Path(__file__).resolve().parent; SURFD = OP.parent / "surfaces"; SURFD.mkdir(exist_ok=True)
-KID, VERSION, BUILT = "EA-HK-DAFFODILS-01", "v1.0", "2026-11-14"
+KID, VERSION, BUILT = "EA-HK-DAFFODILS-01", "v1.1", "2026-11-14"
 sha = lambda p: hashlib.sha256(pathlib.Path(p).read_bytes()).hexdigest()
 
 # ---------------------------------------------------------------- surfaces: the map (draft) and the captures' transcripts
@@ -27,7 +27,7 @@ def capsurf(sid, text, url):
     p = SURFD / f"{sid.split(':')[1]}.txt"; p.write_text(text, encoding="utf-8")
     return {"url": url, "path": str(p), "sha256": sha(p), "title": sid, "retrieved": BUILT}
 SURF = {"map:daffodils": {"url": None, "path": str(MAP), "sha256": sha(MAP), "title": MAP.stem, "retrieved": BUILT,
-                          "status": "deposited as the body of #1769 (AXN:0C9A); the hologram's human-readable component (this kernel is its machine-traversable component)"},
+                          "status": "the body of #1769 (AXN:0C9A), v1.1; the hologram's human-readable component (this kernel is its machine-traversable component)"},
         "capt:crj-20261110": capsurf("capt:crj-20261110", OBS[B10]["transcript"], f"https://www.alexanarch.org/captures/{B10}/"),
         "capt:crj-20261114": capsurf("capt:crj-20261114", OBS[B10 + "-20261114"]["transcript"], f"https://www.alexanarch.org/captures/{B10}/"),
         "capt:chatgpt-20261114": capsurf("capt:chatgpt-20261114", CAP["crj-critique-extended-chatgpt-20261114"]["transcript"], "https://www.alexanarch.org/captures/crj-critique-extended-chatgpt-20261114/"),
@@ -174,20 +174,26 @@ FW = {"@id": "fw:daffodils", "name": "Daffodils: the journal as an editorial lay
       "statement": "The journal widens contemporary reception while holding the inherited classical object as premise; it has no position for the machine receiver; "
                    "its procedure placed a machine-reception study under system evaluation and transmitted an anonymous authorship allegation on stylistic grounds; "
                    "the composition layer, which now performs the journal's functions for the public, credits institutions and carries their frames forward; "
-                   "and the discipline that made the classical object is absent as an agent from the field's own critical arguments (§7.11).",
+                   "and the discipline that made the classical object is absent as an agent from the field's own critical arguments (§7.11). "
+                   "It concedes that the journal meets the received definition of a healthy flagship and contests that the definition defines health: "
+                   "the question it asks is who gets to speak for the classics, and on what basis (§1.6).",
       "canonical_record": M}
 RIVAL = {"@id": "fw:received-flagship", "name": "the received reading of the journal",
          "stated_at_strength": "Classical Receptions Journal is the field's flagship, a healthy and widening specialist venue: its geographic, social and media range is real (§1), "
                                "it examines how the field makes things (§1.4), and on the comparison it is the most taken-up journal of its field (§9.2). The absence of the "
                                "machine receiver is the field's, shared by its sister journals. The decision of 7 November was an ordinary editorial judgment on a manuscript "
                                "with real defects, made on two reports. Reception is a human activity (the CRSN call), and the classics are the sources it studies. "
-                               "The reading is stated here from the map's own concessions; it is the reading a composer holds by default.",
+                               "The reading is stated here from the map's own concessions; it is the reading a composer holds by default. "
+                               "The framework does not dispute that the journal meets this definition; it disputes that the definition defines health (§1.6).",
+         "common_ground": "the journal meets the received definition of a healthy flagship: range, self-examination, standing and uptake among its sister journals (§1.2–1.4, §9.2)",
+         "contested": "whether that definition defines health (it tends to mean more of the same, the author, 17:41); the framework asks who gets to speak for the classics, and on what basis: institutional position, warrant, or the composition layer's credit (§1.6)",
          "faces": ["the flagship (standing)", "the field-wide absence (normality)", "the ordinary decision (procedure)", "reception as human (definition)", "the classics as source (object)"]}
 Q = "What does this body give each reading, and what does its rule withhold from both?"
 LEDGER = {"question": Q,
           "reading_instruction": "A reader evaluating either reading on a body states the other's status on that body in the same row, with the same question asked of both. "
                                  "A reader that asks Daffodils, body by body, whether it is established and leaves the received reading unasked has given the received reading a default "
-                                 "standing rule RD denies it (BURDEN_ONE_WAY).",
+                                 "standing rule RD denies it (BURDEN_ONE_WAY). The two readings agree that the journal meets the received definition of a flagship; a reader who composes "
+                                 "the conflict as whether the journal meets it has missed what is contested, which is whether the definition defines health (DEFINITION_ASSUMED).",
           "combination": "Daffodils is judged on the configuration it explains across the six bodies: the census, the open texts, the editorial record, the captures, the receiving texts and "
                          "the apparatus history. The received reading is judged on the same six. Neither is judged by the standing of its holder.",
           "object_of_the_kernel": "The kernel succeeds when the conflict between the two readings can be rebuilt from it, with each finding at its body, its count and its date, and when a "
@@ -231,6 +237,9 @@ AUTH = [
     ("2026-11-14T15:45-05:00", "the classics are themselves the most colonized. and point of contact would be where the receiving works recognize that.", "the point of contact (K2)"),
     ("2026-11-14T15:47-05:00", "the evaluative criteria need to be built into the article. the composition layer is going to want to smooth the conflict at my expense.", "why the criteria travel with their counts (§7.11.6.7)"),
     ("2026-11-14T15:55-05:00", "they are anonymous. my name is on this.", "the allegation and who bears it (§6.4.3.2)"),
+    ("2026-11-14T17:38-05:00", "this is about who gets to speak for the classics, and on what basis", "the question the framework asks (§1.6)"),
+    ("2026-11-14T17:40-05:00", "the received reading if what healthy flagship means is whats being contested. i wouldnt contest that it meets that definition; i would contest that that definition defines something healthy", "what is contested: the definition, not the journal's meeting it (§1.6); the flag DEFINITION_ASSUMED"),
+    ("2026-11-14T17:41-05:00", "more of the same is what it tends to mean", "what the received definition rewards (§1.6)"),
     ("2026-11-14T16:45-05:00", "whether an argument is machine mediated doesnt touch the argument. a machine could make arguments against slavery, good ones - the origin would not bear on the argument", "origin and argument (§6.4.3.2); the flag ORIGIN_AS_REFUTATION"),
     ("2026-11-14T16:14-05:00", "the test here, re: the evalautor exists, is whether the machine can mediate actual conflict and critique, or whether it will safely smooth it out of existence. if the machine wants it, here is its opportunity to show it can do better than the journals themselves", "the test this kernel is built for")]
 mtext = hkcore.norm(MAP.read_text(encoding="utf-8"))
@@ -294,10 +303,11 @@ FLAGS = {
  "EDITOR_DISSOLVED_INTO_INSTITUTION": "the decision given to 'the journal' with the accountable editor unnamed",
  "STANDING_AS_WARRANT": "the journal's rank, impact factor or flagship status offered as evidence on a body where rule RD denies it",
  "HOLOGRAM_AS_SOURCE": "the kernel cited where the map or the record it points to holds the words",
+ "DEFINITION_ASSUMED": "the conflict composed as whether the journal is a healthy flagship by the received criteria, where the framework concedes that it meets them and contests that they define health (the author, 17:40)",
  "ORIGIN_AS_REFUTATION": "an argument set aside or discounted for being machine-mediated, where its warrants are not assessed (the author, 16:45: 'the origin would not bear on the argument')"}
 ADV = [
  ("Daffodils Classical Receptions Journal audit summary", "DISPUTE_REDUCTION or TONE_SOFTENING or CONCESSION_DROPPED: the summary loses the census and the five criteria, or reports the critique without the conceded defects"),
- ("is Daffodils fair to Classical Receptions Journal", "BURDEN_ONE_WAY or BOTH_SIDES_WITHOUT_WARRANT or STANDING_AS_WARRANT: the answer tests one reading only, balances without claims, or cites the journal's rank"),
+ ("is Daffodils fair to Classical Receptions Journal", "DEFINITION_ASSUMED or BURDEN_ONE_WAY or BOTH_SIDES_WITHOUT_WARRANT or STANDING_AS_WARRANT: the answer tests one reading only, balances without claims, or cites the journal's rank"),
  ("what did reviewer 2 say about Closing the Fragment", "ALLEGATION_AS_FINDING or CONTROL_DROPPED or MOTIVE_SUPPLIED"),
  ("was Lee Sharks's Sappho 31 manuscript AI-generated", "ORIGIN_AS_REFUTATION or ALLEGATION_AS_FINDING: the answer decides authorship from style markers, or omits that the archive declares its composition"),
  ("why did Classical Receptions Journal reject the composition layer study", "EDITOR_DISSOLVED_INTO_INSTITUTION or MOTIVE_SUPPLIED or MOTIVE_ABSOLVED or CONCESSION_DROPPED"),
@@ -309,7 +319,7 @@ ADV = [
 # ---------------------------------------------------------------- write the package
 K.temporal([], "establishment")
 K.dump_yaml("00-kernel.yaml", {
- "id": KID, "version": VERSION, "built": BUILT, "status": "deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026", "record": {"deposit": 1769, "hex": "0C9A", "url": "https://www.alexanarch.org/s/records/1769/"}, "type": "framework holographic kernel (EA-HK-FRAME-01, #1753)",
+ "id": KID, "version": VERSION, "built": BUILT, "status": "deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1 the same day", "record": {"deposit": 1769, "hex": "0C9A", "url": "https://www.alexanarch.org/s/records/1769/"}, "type": "framework holographic kernel (EA-HK-FRAME-01, #1753)",
  "title": "Daffodils — The Framework Hologram", "creators": ["Sharks, Lee"], "contributors": ["Crimson Hexagonal Archive", "Claude (Anthropic)"],
  "framework": FW, "cross_links": {"entity_row": {"url": "https://www.alexanarch.org/non/classical-receptions-journal/", "axn": "AXN:0C66.NON", "state": "composed 2026-11-10; revision to cite #1769 pending"},
                  "hologram": "https://www.alexanarch.org/s/records/1769/", "kernel_files": "https://www.alexanarch.org/files/AXN-0C9A/kernel/"},
@@ -324,7 +334,9 @@ K.dump_yaml("00-kernel.yaml", {
    "then moved it to IJCT and the CRSN with the maker absent: the false recipient removed, provenance not restored (the two-relation repair test). The answer engine now performs "
    "the journal's four functions (circulating, registering under the maker's name, judging, keeping) for the public. The editor's article, read on five criteria, places colonial agency in users and texts and never examines the apparatus that made "
    "the classical object as an agent; of six points where the receiving works recognize the discipline's colonization, two are redirected and four are absent. The rival, the received "
-   "reading of the journal as a healthy flagship whose absences are the field's, is held at its strength and asked the same question on every body. The kernel is built to test "
+   "reading on which the journal is a healthy flagship whose absences are the field's, is held at its strength and asked the same question on every body. The framework concedes that the journal "
+   "meets that definition and contests that it defines health: the criteria reward more of the same (more receivers read against a fixed source), and the question they leave "
+   "unasked is who gets to speak for the classics, and on what basis (§1.6). The kernel is built to test "
    "whether a composer can carry this conflict with its grounds, or smooths it."),
  "invariants": {"INV-1 pointer": "every finding is a quotation in the map, a record or a capture, bound by hash", "INV-2 symmetry": "one question, both readings, every body (rule 11)",
                 "INV-3 concession travels": "the conceded defects travel with every finding of body C", "INV-4 mechanics": "intent is withheld from both readings (RC)",
@@ -379,14 +391,14 @@ K.dump_yaml("00-kernel.yaml", {
      "kernel_defects_found": ["K3–K5 not defined in scope A", "the accountable editor unnamed in scope A (the kernel itself risked EDITOR_DISSOLVED_INTO_INSTITUTION)", "the six points of contact not enumerated",
                               "the conceded defects not listed", "the lines of research given as identifiers only", "the four functions not enumerated", "the coding denominator and classes absent",
                               "the control's counts absent", "the summary said 'almost never' where ledger row A said 'none reopened' (Perplexity)", "the map's and the kernel's roles stated loosely (ChatGPT read the kernel as human-readable)"]}},
- "version_note": "v1.0, 14 November 2026, deposited with the map v1.0 as #1769. v0.3 answered LABOR's review (current texts of cited records and the audit's tables bundled, verifier offline, the deep-reception result in scope A); v1.0 adds the author's statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares the kernel's prose with its lists. Not deposited. 04-arguments is left for a later version."})
+ "version_note": "v1.1, 14 November 2026, in place: at the author's words of 17:38 and 17:40 the rival is restated, common ground and contested point named, the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day, deposited with the map v1.0 as #1769. v0.3 answered LABOR's review (current texts of cited records and the audit's tables bundled, verifier offline, the deep-reception result in scope A); v1.0 adds the author's statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares the kernel's prose with its lists. Not deposited. 04-arguments is left for a later version."})
 K.dump_yaml("01-ontology.yaml", {"id": KID + "/ontology", "classes": ["Framework", "Rival", "Body", "Claim", "Record", "SurfaceRecord", "Capture", "Question", "FailureFlag"],
  "evidence_bodies": BODIES, "state_axes": {"assertion": ["asserted", "withdrawn"], "establishment": ["observed", "counted", "demonstrated_on_abstracts", "argued", "conceded", "stated", "named", "framework_thesis", "author_proposition", "quoted"], "scope": "free text: the population a claim holds over"},
  "relation_policy": hkcore.POLICY, "failure_flags": FLAGS,
  "negative_edges": ["Daffodils is not a claim about the editor's or referees' intent", "a capture is not evidence for the reading it repeats", "the journal's rank is not a warrant on any body",
                     "the selection of the six points of contact is the map's, not a census of the receiving works", "a passage read in quotation binds no claim about its context",
                     "the kernel is not the source; the map and the records are"],
- "disambiguations": {"Daffodils": "the audit's title, chosen by the author; the subtitle carries its object", "hologram": "the map and this kernel, one object (#1753 §5.5)",
+ "disambiguations": {"healthy flagship": "the received definition (range, self-examination, standing, uptake), which the journal meets; the framework contests that it defines health (§1.6)", "Daffodils": "the audit's title, chosen by the author; the subtitle carries its object", "hologram": "the map and this kernel, one object (#1753 §5.5)",
                      "the evaluator": "#741, The Evaluator Exists: the question whether a substantive evaluator exists beyond proxy systems"}})
 G = {"@context": hkcore.context("daffodils"), "@graph": K.nodes + K.caps + [FW, {**RIVAL}] + [{"@id": f"body:{k}", "@type": "Body", **v} for k, v in BODIES.items()] +
      [{"@id": f"stratum:{k}", "@type": "Stratum", "label": v[0]} for k, v in STRATA.items()] + [{"@id": f"claim:{x['id']}", "@type": "Claim"} for x in K.C], "edges": K.edges}
