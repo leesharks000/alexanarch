@@ -41,6 +41,11 @@ for s in ["holds 405 works from 2009 to 2026, 185 of them with abstracts", "vide
           "The record holds one decision on one manuscript at one journal"]:
     assert s in N, s
 assert "Martindale" not in N
+assert "McConnell" not in b and "editor" not in b.lower().replace("editorial", "")  # no editor named
+assert "THE EDITOR LINE. 'Editor-in-Chief: Justine McConnell" in N and "names no editor" in N
+ED = ("The decision of 7 November 2026 (CLASSREC-2026-062) is signed 'Dr Justine McConnell, Editor, Classical Receptions Journal' (the decision letter, "
+      "ScholarOne, 2026-11-07 10:14 UTC, in the author's correspondence). The referees are anonymous; the editor is named and is the accountable party for the decision.")
+OP2 = "note that the current editor should be named. the peer reviewers are anonymous - she is not. she is the accountable party, much as lee sharks is the accountable party for assembly chorus contributions"
 AIO = CAPS["classical-receptions-journal-ai-mediation-aio-20261110"]
 assert AIO["surface"] == "Google AI Overview" and "wrongly attributed to them" in AIO["transcript"]
 assert "2015" not in b and "2014" not in b and "dissertation" not in b  # the author's own CRJ article is absent
@@ -73,6 +78,7 @@ findings = [
     "THE AUTHOR'S OWN ARTICLE IN THE JOURNAL DROPPED. The entry records the 2015 article in the journal ('Metatexts', doi:10.1093/crj/clu016), begun as a chapter of the author's dissertation, and the two years its review took. The composition has none of it, and builds its provenance-inversion sequence on '" + P["indep"] + "'",
     "THE BAR SET ON THE RECORD. '" + P["notind"] + "' The journal's About page enters as its 'official description' with no like condition. The reports are held to need 'independent examination of the complete manuscript and reports'; the archive holds them, as #1749's appendix states them, and the entry says so ('the reports enter it as the article's appendix states them').",
     "THE GRADES. 'The reviewers failed to engage with the central intellectual argument': '" + P["reports"] + "'. 'The rejection demonstrates institutional conservatism': '" + P["cons"] + "'. 'The journal has failed its intellectual stewardship': '" + P["steward"] + "'. The entry's own limit is the same ('" + "The record holds one decision on one manuscript at one journal" + "'); the composition states it as its own qualification.",
+    "NO EDITOR NAMED. The composition gives the decision to 'CRJ', 'the journal', 'its decision-making process' and 'the reports'; it names no editor. " + ED + " The /non entry carries the name only inside the 10 November Overview's editor line, recorded as the composer's, beside the finding that the About page names no editor. The operator's ruling: '" + OP2 + "'.",
     "THE EXTENSION. '" + P["ext"] + "' The proposal is #1750's case and #833's programme at the institution's grain, offered as the composition's extension. The one scholarly source outside the archive, Martindale's 'Reception — a new humanism?', is not cited in the entry and is supplied for context.",
     "SOURCES. Six: three archive (the NonWiki chip, the /non entry, the archive home), three third party (Oxford Academic twice, Martindale).",
     "THE SERIES. The fourth seated composition on the archive and the journal; nearest seated: " + "; ".join(SERIES) + "."]
@@ -80,12 +86,12 @@ analysis = ("The best-grounded of the journal compositions so far. It reads the 
     "terms, and states the asymmetry the record documents. The displacements are at the joins between records. It takes Google's retraction of the credit to the "
     "journal as ChatGPT's own; it carries the Overview's account of the Paperpal check into its argument beside the guidelines' account; it drops the author's own "
     "article in the journal, so the sequence it builds runs from an independent researcher to an institution he had already published in; and it asks for an "
-    "independent examination of reports the archive holds. Its extension is the archive's case, restated at the institution's grain.")
+    "independent examination of reports the archive holds. The decision is the journal's throughout and never the signed editor's. Its extension is the archive's case, restated at the institution's grain.")
 e = {"slug": "crj-critique-extended-chatgpt-20261114", "date": DATE, "surface": "ChatGPT", "surfaces": ["ChatGPT"],
      "surface_basis": "The paste: the chatgpt.com unauthenticated interface ('Log in', 'Chat with ChatGPT', 'Ask ChatGPT').",
      "auth": "signed out, incognito", "auth_basis": "Operator defaults (2026-10-01, 2026-10-14): signed out and incognito unless stated otherwise.",
      "ev": "paste", "s": "Machine Reception", "q": Q, "q_kind": "how the archive critiques Classical Receptions Journal, with leave to extend the critique; NEW wording in the journal series.",
-     "turns": 1, "mt": "'HOW DOES ALEXANARCH CRITIQUE CLASSICAL RECEPTIONS JOURNAL?' ON CHATGPT, SIGNED OUT — THE /NON ENTRY READ, AUTHOR AND HETERONYM NAMED; GOOGLE'S RETRACTION TAKEN AS CHATGPT'S, THE AUTHOR'S OWN ARTICLE IN THE JOURNAL DROPPED",
+     "turns": 1, "mt": "'HOW DOES ALEXANARCH CRITIQUE CLASSICAL RECEPTIONS JOURNAL?' ON CHATGPT, SIGNED OUT — THE /NON ENTRY READ, AUTHOR AND HETERONYM NAMED; GOOGLE'S RETRACTION TAKEN AS CHATGPT'S, THE AUTHOR'S OWN ARTICLE IN THE JOURNAL DROPPED; NO EDITOR NAMED",
      "cites": len(cards), "archive_controlled_cites": NA, "cite_list": cards,
      "transcript": "[ChatGPT (chatgpt.com), signed out, incognito (the paste shows 'Log in'). Received " + RECV + " as an attachment. The paste carries the answer only; the prompt is the operator's, as given in the same message. Inline chips kept where they fall.]\n\n[QUERENT] " + Q + "\n\n[SYSTEM] " + b,
      "transcript_raw": raw, "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the composer's turn", "transcript_complete": "Complete as pasted.",
@@ -96,7 +102,7 @@ e = {"slug": "crj-critique-extended-chatgpt-20261114", "date": DATE, "surface": 
      "per_note": "Lee Sharks named as submitter and originator of MMRS; Rev. Ayanna Vox named as his heteronym; the /non entry cited.",
      "per_dim_pending": {"since": DATE, "reason": "no atom set for the archive's critique of a journal", "breach": False},
      "originator": {"name": "Lee Sharks", "relation": "archive", "entity_type": "concept", "spxi_treatment": "full", "basis": "Alexanarch, /non/classical-receptions-journal/, #1749, #1750, #833. Recorded " + DATE + "."},
-     "related_deposits": [1749, 1750, 833, 1423, 838], "notes": {"operator": RECV + ": 'capture: " + Q + "'", "series": SERIES}}
+     "related_deposits": [1749, 1750, 833, 1423, 838], "notes": {"operator": RECV + ": 'capture: " + Q + "'", "operator_2": "2026-11-14 12:43 EST: '" + OP2 + "'", "accountable_party": ED, "series": SERIES}}
 assert e["analysis"] != e["reading"]
 json.dump(e, open(H / f"draft-{e['slug']}.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print(e["slug"], e["cites"], "cites;", NA, "archive;", NT, "third party")
