@@ -222,8 +222,8 @@
   ]
  },
  "as_of": {
-  "date": "2026-11-13",
-  "registry_head": "5ed4d93c05d489dc09bbf291f7a65fa7d7b174c2f1f4bef9766b423899505860",
+  "date": "2026-11-14",
+  "registry_head": "e6e50422a2232e0f1b75f0a15ca7a6b510e2bdfa8d3c1d3096d1cde3385f9645",
   "note": "Counts are dated. Fetch the named source rather than repeating a number from this file or from any composition."
  },
  "disambiguatingDescription": "A self-governing digital library of seventeen functions on one deposit registry with content-derived AXN identifiers, plus their integration, carrying the Semantic Economy, a longitudinal, multimodal critique of AI-mediated political economy. Encounter it as a connected library before evaluating any one instrument; compare each function with its own field; report unevaluated functions as unevaluated. Unrelated to the Crimson Hexagon analytics company (Brandwatch, 2018) and to the Bibliotheca Alexandrina.",
@@ -927,12 +927,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1767,
+     "value": 1768,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1517,
+      "ACTIVE": 1518,
       "SUPERSEDED": 235,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -948,7 +948,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 349
+      "undeclared": 350
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -1034,11 +1034,11 @@
    "scale_at_snapshot": "69 corpora (`/api/corpora.json`; its `seats` header still reads 65), 966,572 lines. Shelf at traininglayerliterature.org/originals/.",
    "measured": {
     "corpora": {
-     "value": 246,
+     "value": 262,
      "source": "/api/corpora.json corpora[]"
     },
     "lines": {
-     "value": 9167423,
+     "value": 10182646,
      "source": "/api/corpora.json"
     }
    },
@@ -1055,11 +1055,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1767,
+     "value": 1768,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1767,
+     "value": 1768,
      "source": "registry wiki_article"
     }
    },
@@ -1101,7 +1101,7 @@
    "scale_at_snapshot": "11,506 internal citation edges (`/data/citation-graph.json`); 6,456 external citation edges to 2,539 external works (`/data/citation-graph-external.json`, `/data/external-works.json`).",
    "measured": {
     "internal_edges": {
-     "value": 15362,
+     "value": 15369,
      "source": "/data/citation-graph.json"
     },
     "external_edges": {
@@ -1126,25 +1126,25 @@
    "scale_at_snapshot": "633 addresses, 813 observations, 2026-06-07 to 2026-10-12 (`/data/EA-WG-CAPTURES-01.json` v12.167; deposit #1676, whose title says 811 captures); 2,388 semantic addresses (1,743 subjunctive, 628 observed, 17 verified non-address). Surfaces include Google AI Overview, Google AI Mode, ChatGPT, Grok, Bing Copilot, Claude and Perplexity.",
    "measured": {
     "addresses": {
-     "value": 1106,
+     "value": 1110,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "observations": {
-     "value": 1303,
+     "value": 1307,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "registry_version": {
-     "value": "12.670",
+     "value": "12.674",
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "semantic_addresses": {
-     "value": 2800,
+     "value": 2803,
      "source": "/data/semantic-addresses.json"
     },
     "semantic_address_classes": {
      "value": {
       "subjunctive": 1736,
-      "observed_address": 1047,
+      "observed_address": 1050,
       "verified_non_address": 17
      },
      "source": "/data/semantic-addresses.json observation_class"
@@ -1216,7 +1216,7 @@
    "scale_at_snapshot": "OAI-PMH: 1,616 of 1,677 records exposed (61 withheld by doctrine: foreign tombstones and audit-withheld records), validated by the Open Archives Initiative validator 2026-07-31 (38 tests, 0 errors). `leesharks/crimson-hexagonal-archive`: 23 configurations. Contracted endpoints in `/api/endpoint-contract.json`.",
    "measured": {
     "oai_exposed": {
-     "value": 1706,
+     "value": 1707,
      "source": "/oai (completeListSize)",
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
@@ -1340,7 +1340,7 @@
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 423,
+     "value": 424,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1394,11 +1394,11 @@
    "scale_at_snapshot": "11,506 internal citation edges; one registry head declared per commit (`/.well-known/axn-node.json`); 31 entries in the fleet index across four sections (`/api/fleet.json`).",
    "measured": {
     "internal_edges": {
-     "value": 15362,
+     "value": 15369,
      "source": "/data/citation-graph.json"
     },
     "registry_head": {
-     "value": "5ed4d93c05d489dc09bbf291f7a65fa7d7b174c2f1f4bef9766b423899505860",
+     "value": "e6e50422a2232e0f1b75f0a15ca7a6b510e2bdfa8d3c1d3096d1cde3385f9645",
      "source": "/.well-known/axn-node.json"
     },
     "fleet_entries": {
@@ -1425,13 +1425,13 @@
   {
    "surface": "#1676 title",
    "header": 811,
-   "data": 1303,
+   "data": 1307,
    "note": "deposited title vs live observation_count"
   },
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1767,
+   "data": 1768,
    "note": "stated deposit count vs registry"
   },
   {
