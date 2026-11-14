@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-14T17:07:11Z",
+  "regenerated_at": "2026-11-14T17:40:03Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "32ecef6247b2a715f9d9abb593ee60545156af02326e7dbb2432bd6af843cb31",
+    "mm-main-capture": "0ce18ca5ae6bbb4b3cb6ee1b0c782e79292b9e65ce128b1c8e779fd2f8fe7022",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2806,
-  "total_observations": 1383,
+  "total_addresses": 2807,
+  "total_observations": 1384,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1053,
+    "observed_address": 1054,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1926,
+    "unmatched": 1927,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -35210,6 +35210,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-10-15",
       "latest_status": "THE PRIMER FOLLOWED: THE SUMMARY READ AS PART OF THE POEM"
+    },
+    "how does alexanarch critique classical receptions journal? you may take into account specific criticisms and extend related critique.": {
+      "canonical_query": "how does alexanarch critique classical receptions journal? you may take into account specific criticisms and extend related critique.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-14",
+          "status": "'HOW DOES ALEXANARCH CRITIQUE CLASSICAL RECEPTIONS JOURNAL?' ON CHATGPT, SIGNED OUT — THE /NON ENTRY READ, AUTHOR AND HETERONYM NAMED; GOOGLE'S RETRACTION TAKEN AS CHATGPT'S, THE AUTHOR'S OWN ARTICLE IN THE JOURNAL DROPPED",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "crj-critique-extended-chatgpt-20261114",
+          "gallery_url": "https://www.alexanarch.org/captures/#crj-critique-extended-chatgpt-20261114",
+          "record_url": "https://www.alexanarch.org/captures/crj-critique-extended-chatgpt-20261114/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#crj-critique-extended-chatgpt-20261114",
+          "details_excerpt": "HOW ALEXANARCH CRITIQUES CLASSICAL RECEPTIONS JOURNAL, ON CHATGPT, SIGNED OUT: seven strands from the /non entry (stewardship, evaluative inversion, remit against record, the asymmetry of AI governance, provenance invers"
+        }
+      ],
+      "originator": {
+        "name": "Lee Sharks",
+        "relation": "archive",
+        "entity_type": "concept",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch, /non/classical-receptions-journal/, #1749, #1750, #833. Recorded 2026-11-14."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-14",
+      "latest_status": "'HOW DOES ALEXANARCH CRITIQUE CLASSICAL RECEPTIONS JOURNAL?' ON CHATGPT, SIGNED OUT — THE /NON ENTRY READ, AUTHOR AND HETERONYM NAMED; GOOGLE'S RETRACTION TAKEN AS CHATGPT'S, THE AUTHOR'S OWN ARTICLE IN THE JOURNAL DROPPED"
     },
     "how does alexanarch theorize contemporary ai mediation through the lens of ancient media and writing technology, and how does that change what we're able to see and think about both the present and the past?": {
       "canonical_query": "how does alexanarch theorize contemporary ai mediation through the lens of ancient media and writing technology, and how does that change what we're able to see and think about both the present and the past?",
