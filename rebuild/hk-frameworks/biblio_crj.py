@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """The bibliography of Classical Receptions Journal as #1769 and #1770 cite it (2026-11-14, the author's word "yup", 21:54 EST, to: the works read cited in full,
 and the register of all 405 works as an appendix in the body of #1769). Built from the audit's census.json (Crossref, read 14 November 2026) and its coding tables;
-nothing is typed by hand. The civil byline of the archive author's article (doi:10.1093/crj/clu016) is withheld, as everywhere in the archive.
+nothing is typed by hand. Since 2026-11-15 every work carries Crossref's byline.
     python3 rebuild/hk-frameworks/biblio_crj.py <audit data dir> <out dir>"""
 import csv, json, pathlib, sys
 D = pathlib.Path(sys.argv[1]); OUT = pathlib.Path(sys.argv[2]); OUT.mkdir(parents=True, exist_ok=True)
 W = {w["n"]: w for w in json.loads((D / "census.json").read_text(encoding="utf-8"))["works"]}
 tsv = lambda f: {int(r["n"]): r for r in csv.DictReader(open(D / f, encoding="utf-8"), delimiter="\t")}
 OBJ = tsv("codes-object.tsv"); DEEP = tsv("codes-deep.tsv"); READ = tsv("cc-reading.tsv"); AV = tsv("availability.tsv")
-WITHHELD = {"10.1093/crj/clu016"}
+WITHHELD = set()
 OBJN = {"F": "object held fixed", "R": "object reread", "A": "ancient reception", "Q": "object unsettled"}
 DIRN = {"source→later": "source → later work", "later→source": "later work → source", "field": "the field's own terms", "ancient reception": "ancient reception",
         "source-evidence": "ancient evidence unsettled", "source": "the source reread"}
@@ -42,7 +42,7 @@ K = ["Duy Khi", "Basílio", "Machado", "Hilst", "Black Medea", "Antígona", "Baa
 nf = lambda s: U.normalize("NFC", s)
 F15 = sorted([n for n, w in W.items() if any(nf(k) in nf(w["title"]) for k in K)], key=lambda n: (W[n]["year"], n)); assert len(F15) == 15, len(F15)
 # the works #1770 names in its prose
-NAMED = [58, 212, 224, 262, 299, 243, 390, 293, 17, 32, 8, 217, 277, 275, 360, 227, ed, 110]
+NAMED = [58, 212, 224, 262, 299, 243, 390, 293, 17, 32, 8, 217, 277, 275, 360, 227, ed]
 for n in NAMED: assert n in W, n
 reg = "\n".join(f"- {entry(n)}" for n in sorted(W, key=lambda n: (W[n]["year"], n)))
 (OUT / "appendix-read.md").write_text("\n".join(f"- {entry(n)}" for n in A) + "\n", encoding="utf-8")
