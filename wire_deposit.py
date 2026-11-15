@@ -296,6 +296,16 @@ def chatgpt_url_of(d):
     # PLAIN ?q= (2026-10-12 01:26; operator: "it gives a verification error when opened in incognito, and opens in the app,
     # otherwise"). temporary-chat=true is a signed-in feature and fails signed out; signed out there is no history to keep out.
     return 'https://chatgpt.com/?q=' + quote_plus(chatgpt_prompt_of(d))
+# ASK PERPLEXITY, ASK DUCK.AI (operator, 2026-11-15 16:30, after testing fifteen public surfaces in incognito with #1722's prompt:
+# "perplexity worked, lets add it. bing copilot did not - repeated mechanical failure. duck.ai worked, lets go with directly. brave ask
+# did not work... none of the rest worked."). The same prompt as Ask ChatGPT, percent-encoded as tested (perplexity.ai/search?q=,
+# duck.ai/?q=); both answer signed out.
+def perplexity_url_of(d):
+    from urllib.parse import quote
+    return 'https://www.perplexity.ai/search?q=' + quote(chatgpt_prompt_of(d), safe='')
+def duckai_url_of(d):
+    from urllib.parse import quote
+    return 'https://duck.ai/?q=' + quote(chatgpt_prompt_of(d), safe='')
 def search_this_title_html(d, n_caps=0):
     if (d.get('status') or 'ACTIVE') not in SEARCH_STATUSES:
         return ''
@@ -306,9 +316,11 @@ def search_this_title_html(d, n_caps=0):
     return (f'<div class="search-this-title" style="font-size:.84em;color:#555;margin:6px 0 10px">'
             f'<a href="{_html_escape(broad)}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Search this title \u2197</a> '
             f'<a href="{_html_escape(exact)}" target="_blank" rel="noopener" style="color:var(--accent);font-size:.9em">(exact match)</a> \u00b7 '
-            f'<a href="{_html_escape(chatgpt_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask ChatGPT \u2197</a> '
+            f'<a href="{_html_escape(chatgpt_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask ChatGPT \u2197</a> \u00b7 '
+            f'<a href="{_html_escape(perplexity_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask Perplexity \u2197</a> \u00b7 '
+            f'<a href="{_html_escape(duckai_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask Duck.ai \u2197</a> '
             f'\u2014 '
-            f'a composition either forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
+            f'a composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
 
 def _captures_for_deposit(dn):
     """Reception record for a deposit, from data/capture-deposit-links.json
