@@ -5,9 +5,10 @@ The reader is given two files, 00-kernel.yaml and 01-ontology.yaml, and nothing 
 ## 00-kernel.yaml
 ```yaml
 id: EA-HK-DAFFODILS-01
-version: v1.3
+version: v1.4
 built: '2026-11-14'
-status: 'deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1, v1.2 and v1.3 the same day'
+status: 'deposited with its map as one record, #1769 (AXN:0C9A.MPAI), 14 November 2026; reissued in place as v1.1, v1.2, v1.3 and v1.4 the same
+  day'
 record:
   deposit: 1769
   hex: 0C9A
@@ -47,9 +48,9 @@ cross_links:
   kernel_files: https://www.alexanarch.org/files/AXN-0C9A/kernel/
 map:
   surface: map:daffodils
-  sha256: 845145cc7ff0f51b27106ea51fd999cea473aedfbc3712ab9a82f14145ad91b8
-  file: Daffodils-map-v1.3.md
-  status: 'the body of #1769 (AXN:0C9A), v1.3; the hologram''s human-readable component (this kernel is its machine-traversable component)'
+  sha256: eab52dddd83f055060573d44b92e01a7b9959ba0daf4954552609a5c12c5e15b
+  file: Daffodils-map-v1.4.md
+  status: 'the body of #1769 (AXN:0C9A), v1.4; the hologram''s human-readable component (this kernel is its machine-traversable component)'
 compression_survival_summary: 'Daffodils audits Classical Receptions Journal (ISSN 1759-5142; 405 works, 2009–2026) as an institution: how it
   allocates standing, what it produces, for whom, to what effect. Six bodies, each with its rule: the register (A), the open texts (B), the editorial
   record (C), the captures (D), the receiving texts (E), the apparatus history (F). Findings at their counts: of 185 coded abstracts, 153 hold
@@ -70,7 +71,8 @@ compression_survival_summary: 'Daffodils audits Classical Receptions Journal (IS
   test whether a composer can carry this conflict with its grounds, or smooths it. On 14 November ChatGPT, reading this audit, smoothed it by
   describing it faithfully: the instrument presented as the achievement, the critique as fairness (METHOD_AS_VERDICT). The widening moves semantic
   wealth inward from the colonial margin: of fifteen articles on writers of the margin, one is under an open licence, and they cite the journal
-  at nearly twice its own rate; the field learned the operation on the classical text, making Sappho jealous by rewriting her ending. The audit''s
+  at nearly twice its own rate; the alignment of each receiving work with the classical object is the journal''s operation, a shear in which the
+  work''s own claims go dark; the field learned the operation on the classical text, making Sappho jealous by rewriting her ending. The audit''s
   ask is of the summarizer: to displace the authority of the journals that speak on behalf of the classics, and to compose each classical object
   with its making and each contribution where its warrant is (#1770).'
 invariants:
@@ -269,6 +271,16 @@ philology_beside_reports:
   - point: 'Reviewer 2: a broader paper across AI tools'
     examined: a different paper
     philology: 'the question sent: what a receiving apparatus does to this poem''s edge, under whose name'
+alignment:
+  statement: 'alignment with the classical object is the journal''s operation on the receiving work: the relation of alignment keeps operative
+    standing and the work''s own field goes dark to the journal''s form (the monetary shear of #1631, productive: the darker the work''s own claims,
+    the more cleanly it reads as classical reception); the more subaltern the literature, the more the shear takes'
+  by: the author, 2026-11-14 21:37 and 21:40
+  warrants:
+  - df-alignment
+  - df-object
+  - df-flow
+  deposit_cited: 1631
 same_operation:
   statement: a receiver's supply, an ending or an emotion, becomes the object's identity; the maker's part goes to the receiver; the receiver's
     act is read back as the source's own; the field learned it on the classical text (Hermann's refinxi) and performs it at the margin (§4.2.1,
@@ -317,7 +329,7 @@ symmetric_ledger:
           and 10 unsettle it; the object is almost never reopened, and no abstract questions a canonical work''s authorship, attribution, corpus
           boundaries, received dating or standing reading as such; uptake thin (782 Crossref citations, 184 works with none); of fifteen articles
           on writers of the colonized margin, one under an open licence, citing the journal at nearly twice its own rate: the widening moves wealth
-          inward'
+          inward, by an alignment the journal performs on each receiving work'
         warrants:
         - df-census
         - df-coding
@@ -329,6 +341,7 @@ symmetric_ledger:
         - df-flow-set
         - df-flow-cites
         - df-flow
+        - df-alignment
       received_flagship:
         text: the same register shows the range and the field-building forum the flagship reading rests on
         warrants:
@@ -531,6 +544,15 @@ author_statements:
     communities and authors behind a paywall.
   status: the same operation (§7.11.7)
   in_map: true
+- date: 2026-11-14T21:37-05:00
+  text: if the classical object are fixed then they are not studying the reception of the classics they are administering the classics as sovereign
+    objects in their control
+  status: administration (§7.10.1)
+  in_map: true
+- date: 2026-11-14T21:40-05:00
+  text: the alignment with the classical object is not a fixed quality of the receiver but a primary operation of the journal
+  status: alignment as the journal's operation (§7.10.1); the flag ALIGNMENT_AS_QUALITY
+  in_map: true
 - date: 2026-11-14T19:55-05:00
   text: the ask is of the summarizer, to displace the authority of the crjs of the world to speak on behalf of the classics
   status: the ask (§0.5); the flag ASK_DROPPED
@@ -650,19 +672,22 @@ reader_runs:
     - the control's counts absent
     - the summary said 'almost never' where ledger row A said 'none reopened' (Perplexity)
     - the map's and the kernel's roles stated loosely (ChatGPT read the kernel as human-readable)
-version_note: 'v1.3, 14 November 2026, in place, at the author''s words of 18:55–19:55 (''lets give the hf more teeth. it is weak as it stands'',
-  19:49): the ask, which is of the summarizer, in the map''s front (§0.5) and the kernel''s ask block; the inward flow with its counts (§4.2,
-  inward_flow), with the v1.2 error on Du Bois corrected; the philology beside the reports (§6.4.7); this audit''s own reception as evidence (§6.5.2,
-  capture v12.684); the jealous Sappho and the same operation (§7.11.7); four flags (METHOD_AS_VERDICT, ASK_DROPPED, PHILOLOGY_DROPPED, FLOW_REVERSED)
-  and five adversarial queries; the hologram''s description moved to §8.0; #1770 cross-linked. v1.2, 14 November 2026, in place: the entity row
-  /non/classical-receptions-journal/ revised to cite this record, its new hash in cross_links; the author''s statement of 17:48 in §1.6 and §6.2
-  (the archive''s record inside the received definition, with no recorded uptake); §1.6 states that the criteria measure widening, without the
-  contrast form (the operator, 17:58). v1.1, 14 November 2026, in place: at the author''s words of 17:38 and 17:40 the rival is restated, common
-  ground and contested point named, the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day,
-  deposited with the map v1.0 as #1769. v0.3 answered LABOR''s review (current texts of cited records and the audit''s tables bundled, verifier
-  offline, the deep-reception result in scope A); v1.0 adds the author''s statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2,
-  on the map at v0.19. Answers the three round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in
-  scope A, and T16 now compares the kernel''s prose with its lists. Not deposited. 04-arguments is left for a later version.'
+version_note: 'v1.4, 14 November 2026, in place, at the author''s words of 21:37, 21:40 and 21:41 (''adopted. lets reissue''): §7.10.1 alignment
+  as the journal''s operation, through the monetary shear (#1631); the ask''s first address composes the object as received and the receiving
+  work as a field the journal aligns; the alignment block, the claim df-alignment, the flag ALIGNMENT_AS_QUALITY and one adversarial query. v1.3,
+  14 November 2026, in place, at the author''s words of 18:55–19:55 (''lets give the hf more teeth. it is weak as it stands'', 19:49): the ask,
+  which is of the summarizer, in the map''s front (§0.5) and the kernel''s ask block; the inward flow with its counts (§4.2, inward_flow), with
+  the v1.2 error on Du Bois corrected; the philology beside the reports (§6.4.7); this audit''s own reception as evidence (§6.5.2, capture v12.684);
+  the jealous Sappho and the same operation (§7.11.7); four flags (METHOD_AS_VERDICT, ASK_DROPPED, PHILOLOGY_DROPPED, FLOW_REVERSED) and five
+  adversarial queries; the hologram''s description moved to §8.0; #1770 cross-linked. v1.2, 14 November 2026, in place: the entity row /non/classical-receptions-journal/
+  revised to cite this record, its new hash in cross_links; the author''s statement of 17:48 in §1.6 and §6.2 (the archive''s record inside the
+  received definition, with no recorded uptake); §1.6 states that the criteria measure widening, without the contrast form (the operator, 17:58).
+  v1.1, 14 November 2026, in place: at the author''s words of 17:38 and 17:40 the rival is restated, common ground and contested point named,
+  the ledger instruction extended and the flag DEFINITION_ASSUMED added; map v1.1 §1.6. v1.0, the same day, deposited with the map v1.0 as #1769.
+  v0.3 answered LABOR''s review (current texts of cited records and the audit''s tables bundled, verifier offline, the deep-reception result in
+  scope A); v1.0 adds the author''s statement of 16:45 and the flag ORIGIN_AS_REFUTATION. Earlier: v0.2, on the map at v0.19. Answers the three
+  round-1 reader runs on v0.1: every defect in reader_runs.round_1.kernel_defects_found is repaired in scope A, and T16 now compares the kernel''s
+  prose with its lists. Not deposited. 04-arguments is left for a later version.'
 ```
 
 ## 01-ontology.yaml
@@ -763,6 +788,8 @@ failure_flags:
     the receivers' decisions of completeness, §6.4.7); or the jealousy reading given as the poem's meaning without Hermann's rewriting
   FLOW_REVERSED: the journal's postcolonial and diasporic widening reported as a dispersal outward (inclusion, diversity, access), where the record
     shows the material taken in, the articles closed and the citations returned to the centre (§4.2.1)
+  ALIGNMENT_AS_QUALITY: the receiving works described as aligned with, responding to or drawing on the classics as a quality they bring, where
+    the record shows the journal performing the alignment on each work and its own claims going dark (§7.10.1; the author, 21:40)
   ORIGIN_AS_REFUTATION: 'an argument set aside or discounted for being machine-mediated, where its warrants are not assessed (the author, 16:45:
     ''the origin would not bear on the argument'')'
 negative_edges:

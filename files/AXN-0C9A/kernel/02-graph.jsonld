@@ -64,9 +64,9 @@
    "@id": "map:daffodils",
    "@type": "SurfaceRecord",
    "url": null,
-   "title": "Daffodils-map-v1.3",
+   "title": "Daffodils-map-v1.4",
    "retrieved": "2026-11-14",
-   "sha256": "845145cc7ff0f51b27106ea51fd999cea473aedfbc3712ab9a82f14145ad91b8",
+   "sha256": "eab52dddd83f055060573d44b92e01a7b9959ba0daf4954552609a5c12c5e15b",
    "body": "A",
    "body_secondary": [],
    "stratum": "map",
@@ -560,6 +560,10 @@
   },
   {
    "@id": "claim:df-flow",
+   "@type": "Claim"
+  },
+  {
+   "@id": "claim:df-alignment",
    "@type": "Claim"
   },
   {
@@ -1089,6 +1093,24 @@
    "family": "evidentiary",
    "licensed_dimension": null,
    "warrant": "the same operation at the margin",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:df-object",
+   "relation": "supports",
+   "target": "claim:df-alignment",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "the object held fixed is what the work is aligned to",
+   "provenance": "map v0.1"
+  },
+  {
+   "source": "claim:df-alignment",
+   "relation": "supports",
+   "target": "claim:df-flow",
+   "family": "evidentiary",
+   "licensed_dimension": null,
+   "warrant": "the shear yields what the centre keeps",
    "provenance": "map v0.1"
   },
   {
