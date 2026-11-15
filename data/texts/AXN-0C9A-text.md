@@ -1,14 +1,14 @@
 ---
 deposit_number: 1769
 hex: 0C9A
-title: "Daffodils: Classical Receptions Journal, 2009–2026 — The Framework Hologram (EA-HK-DAFFODILS-01 v1.6)"
+title: "Daffodils: Classical Receptions Journal, 2009–2026 — The Framework Hologram (EA-HK-DAFFODILS-01 v1.7)"
 creator: Sharks, Lee
 orcid: 0009-0000-1599-0703
 date: 2026-11-14
 content_type: "Audit; framework hologram: the map with its holographic kernel (EA-HK-FRAME-01, #1753)"
 license: CC-BY-4.0
 substrate: AI-assisted (substrate). Written under Lee Sharks's own name. Drafted, counted, checked and built by Claude (Anthropic, Claude Opus 5.5; TACHYON) in session on 14 November 2026 under Lee Sharks's direction, through versions v0.1–v0.19 of the map and v0.1–v0.3 of the kernel, against reviews by ChatGPT (including the LABOR reviews) and three reader runs of the kernel (ChatGPT unprimed, Perplexity, Grok), each point checked against the files and records before anything changed. The author's statements are quoted verbatim and dated.
-version: v1.6
+version: v1.7
 related_ids: "AXN deposit #1753 — The Framework Holographic Kernel: the specification this hologram instantiates\nAXN deposit #833 — The Summarizer as Horizon of Reception\nAXN deposit #838 — Machine-Mediated Reception Studies: Charter\nAXN deposit #1749 — Closing the Fragment (the manuscript declined)\nAXN deposit #1750 — the open letter of Rev. Ayanna Vox on behalf of Lee Sharks\nAXN deposit #741 — The Evaluator Exists\nAXN deposit #834 — Algorithmic Publishing Is Not Self-Publishing\nAXN deposit #1423 — The Capture Registry: Reception, Erasure, and Supply in the Machine Composition Layer\nAXN deposit #1612 — What Enters Composition Through the Cards\nAXN deposit #1752 — Invidens Sappho\nEntity row: https://www.alexanarch.org/non/classical-receptions-journal/ (AXN 0C66 (the /non family))\nCrossref: 10.1093/crj/clv002 (the editor's article read)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -40,11 +40,13 @@ keywords:
   - two-relation repair test
 ---
 
-# Daffodils: Classical Receptions Journal, 2009–2026 — The Framework Hologram (EA-HK-DAFFODILS-01 v1.6)
+# Daffodils: Classical Receptions Journal, 2009–2026 — The Framework Hologram (EA-HK-DAFFODILS-01 v1.7)
 
 ## Classical Receptions Journal, 2009–2026, the institutional hologram: how the journal allocates standing, what knowledge it produces, for whom, and to what effect
 
-Lee Sharks · v1.6 · 15 November 2026 · composed with Claude (TACHYON) · the human-readable component of the framework hologram EA-HK-DAFFODILS-01 · the journal's entity row: [Classical Receptions Journal — NonWiki](https://www.alexanarch.org/non/classical-receptions-journal/) (AXN:0C66, revised 14 November 2026 to cite this record)
+Lee Sharks · v1.7 · 15 November 2026 · composed with Claude (TACHYON) · the human-readable component of the framework hologram EA-HK-DAFFODILS-01 · the journal's entity row: [Classical Receptions Journal — NonWiki](https://www.alexanarch.org/non/classical-receptions-journal/) (AXN:0C66, revised 14 November 2026 to cite this record)
+
+**Version 1.7 (15 November 2026, in place).** The author's previous article in the journal is referred to unnamed (§5.1, §6.2), at the author's word (14:38: "i would revise it to speak of a previous article by the author"), and every work in the register carries Crossref's byline. §1.6 states, in the author's words, that the audit contests the field and not the decision.
 
 **Version 1.6 (15 November 2026, in place).** The settlement of which the classical object is the residue is dated to the eighteenth and nineteenth centuries, at the author's word (15 November, 13:20–13:21), with his words on the nineteenth century's consolidating (§7.11.4). Keyboard slips in two of the author's quoted messages are corrected (§1.6, §7.10.1); his words otherwise stand as typed.
 
@@ -107,7 +109,7 @@ The article that states the ask in full is *Who Speaks for the Classics, and on 
 
 1.5 This is a working venue doing what a specialist journal does. The reading below accepts all of it. Its question is narrower: how standing moves through the journal, what kind of knowledge it is built to produce, who can use that knowledge, and what it does in the present.
 
-1.6 **What is contested.** The author (14 November, 17:38): "this is about who gets to speak for the classics, and on what basis". And at 17:40: "the received reading of what healthy flagship means is whats being contested. i wouldnt contest that it meets that definition; i would contest that that definition defines something healthy".
+1.6 **What is contested.** The author (14 November, 17:38): "this is about who gets to speak for the classics, and on what basis". And at 17:40: "the received reading of what healthy flagship means is whats being contested. i wouldnt contest that it meets that definition; i would contest that that definition defines something healthy". And on 15 November (14:38): "i dont necessarily dispute the decision"; and: "i dispute the field". The audit does not contest the decision of 7 November; it contests the field the decision administers.
 - **The received definition.** A healthy flagship is one with range, in the places, receivers and media it reads (§1.2–1.3), with self-examination (§1.4), and with standing and uptake among its sister journals (§9.2).
 - **What the frame concedes.** The journal meets that definition. Nothing below disputes the range, the self-examination or the standing.
 - **What the frame contests.** It contests that the definition defines health. Its criteria count range, standing and uptake. None of them asks who gets to speak for the classics, and on what basis.
@@ -260,7 +262,7 @@ These are the recorded gains. Who else benefits from the knowledge, and how far 
   - 2019–2021: 4.4 against 1.9;
   - 2022–2024: 1.2 against 0.8.
 - **No citations.** 128 works have none.
-- ***Metatexts* (2014).** Its count is 0 in both indexes.
+- **The author's previous article in the journal.** Its count is 0 in both indexes.
 
 5.2 **What the journal shows it can see.** The register carries the journal's own account of how standing is erased. It does not carry the same account turned on the journal:
 - **A misleading source accepted for centuries.** Savani: a sixteenth-century woodcut misreading Vitruvius was reprinted as a Roman wall painting and accepted uncritically in the study of Roman baths into the twentieth century.
@@ -301,7 +303,7 @@ The census establishes the institutional context around that mismatch. The mecha
 Each of these is an ordinary, bounded practice. Taken together, they bear on which contributions the field's record holds and under whose name. The archive's instance (§6.2) is where the proposal meets an event.
 
 6.2 **The record's instance, from the archive.**
-- **The archive's author published in the journal.** *Metatexts: classical reception without the classics in the poetics of Charles Bernstein* (doi:10.1093/crj/clu016, issued 2014) introduced "metatextual reception", in the archive's account (#833). It began as a chapter of the author's dissertation, and its review took two years (#1750). Crossref records no citation of it, and none of the journal's 16,818 references points to it. The archive lists it with the civil byline withheld.
+- **The author had published a previous article in the journal.** Crossref records no citation of it, and none of the journal's 16,818 references points to it.
 - **Inside the definition, without uptake.** On the received definition's own criterion of uptake (§1.6), the article scores zero in the journal's own references and in both indexes. The archive's position follows from that record: having worked inside the received definition and found it registers no uptake of the work, it contests the definition. The author, 14 November, 17:48: "i already published in their pages - the research was highly relevant. no one engaged. it did not travel. so now challenging the model is *exactly what i would like to do*".
 - **The archive developed the field the journal does not take up.** *The Summarizer as Horizon of Reception* (#833, June 2026) introduced machine-mediated reception studies. Its thesis is the absence of §2.4: the summarizer as the receiver whose composition is now the first encounter.
 - **The journal declined it, on two anonymous reports, over the editor's signature.** *Closing the Fragment*, the study of Sappho 31 at the composition layer, was declined on 7 November 2026. The referees examined the January witness, the protocol, the roles, the platform's opacity, the design, the figures, two terms, the disclosure of language models and the style. They did not examine the philology or the question (#1750).
@@ -1041,7 +1043,7 @@ Every work Crossref registers for the journal (ISSN 1759-5142), read 14 November
 - H. Baltussen (2014). A 'Homeric' hymn to Stalin: performing safe criticism in ancient Greek?. *Classical Receptions Journal* 7(2). https://doi.org/10.1093/crj/clu008 · title only · Crossref citations 0
 - F. Carla and F. Freitag (2014). 'Ancient Greek Culture and Myth in the Terra Mitica Theme Park'. *Classical Receptions Journal* 7(2). https://doi.org/10.1093/crj/clu013 · title only · Crossref citations 8
 - J. Weiner (2014). Antigone in Juarez: tragedy, politics, and public women on Mexico's northern border. *Classical Receptions Journal* 7(2). https://doi.org/10.1093/crj/clu021 · title only · Crossref citations 2
-- [byline withheld] (2014). Metatexts: classical reception without the classics in the poetics of Charles Bernstein. *Classical Receptions Journal* 7(3). https://doi.org/10.1093/crj/clu016 · title only · Crossref citations 0
+- Matthew Pfaff (2014). Metatexts: classical reception without the classics in the poetics of Charles Bernstein. *Classical Receptions Journal* 7(3). https://doi.org/10.1093/crj/clu016 · title only · Crossref citations 0
 - Chris Murray (2014). Greeks on de Quincey’s Chinese stage: Orientalism, opium warfare, and the ‘Theory of Greek Tragedy’. *Classical Receptions Journal* 7(3). https://doi.org/10.1093/crj/clu019 · title only · Crossref citations 0
 - Antonis K. Petrides (2014). Aeschylus in the mix: the making of Nikos Kazantzakis’ Prometheus -Trilogy. *Classical Receptions Journal* 7(3). https://doi.org/10.1093/crj/clu020 · title only · Crossref citations 2
 - Emma Cole (2014). The Method behind the madness: Katie Mitchell, Stanislavski, and the classics. *Classical Receptions Journal* 7(3). https://doi.org/10.1093/crj/clu022 · title only · free to read · Crossref citations 5
