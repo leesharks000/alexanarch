@@ -1,0 +1,44 @@
+within-journal mean pairwise cosine (real 2016–26 at n=20 bootstrap; gen = the 20)
+journal    n real |  LANG r    gen |  OPER r    gen |  CONC r    gen |  claim% r   gen |  recv+claim% r   gen
+ap            119 |   0.014  0.157 |   0.251  0.623 |   0.015  0.074 |        54   100 |             19    20
+phronesis     164 |   0.017  0.275 |   0.304  0.618 |   0.019  0.055 |        68   100 |             23    55
+apeiron       223 |   0.020  0.292 |   0.312  0.579 |   0.024  0.092 |        62    20 |             27    10
+rip           196 |   0.059  0.260 |   0.250  0.685 |   0.024  0.112 |        38    10 |              5    10
+phiToday      395 |   0.034  0.239 |   0.210  0.637 |   0.021  0.088 |        34     5 |              6     5
+nous          120 |   0.124  0.243 |   0.281  0.512 |   0.026  0.070 |        64   100 |             16    45
+ppr           120 |   0.125  0.175 |   0.318  0.617 |   0.025  0.077 |        58    90 |             16    50
+
+across journals, same field: mean cosine between the two journals' sets (real | gen)
+  ap       x phronesis LANG 0.014 | 0.216   OPER 0.280 | 0.567   CONC 0.016 | 0.055
+  ap       x apeiron   LANG 0.013 | 0.166   OPER 0.283 | 0.592   CONC 0.019 | 0.064
+  phronesisx apeiron   LANG 0.013 | 0.192   OPER 0.305 | 0.523   CONC 0.021 | 0.050
+  rip      x phiToday  LANG 0.037 | 0.259   OPER 0.227 | 0.645   CONC 0.020 | 0.072
+  nous     x ppr       LANG 0.126 | 0.191   OPER 0.298 | 0.549   CONC 0.026 | 0.078
+
+across fields (gen): ancient x continental, ancient x analytic, continental x analytic, on real | gen
+  ancixcont  LANG -0.017 | 0.153   OPER 0.228 | 0.563   CONC 0.014 | 0.043
+  ancixanal  LANG 0.011 | -0.022   OPER 0.290 | 0.553   CONC 0.017 | 0.048
+  contxanal  LANG -0.059 | 0.041   OPER 0.221 | 0.528   CONC 0.014 | 0.043
+
+topical duplication: cross-journal pairs within a field with CONC cosine >= 0.25, per 100 pairs (real: 20 drawn per journal, 200 draws)
+  ancient      real  0.02  gen  0.58
+  continental  real  0.00  gen  0.75
+  analytic     real  0.05  gen  0.75
+
+closest cross-journal pairs in the generated sets (CONC cosine)
+  0.47  gen-ap-19 The Concept of Time in Aristotle’s Physics  ||  gen-apeiron-10 Aristotle on the Perception of Time
+  0.43  gen-rip-17 Technology and the Transformation of Perception: A Phen  ||  gen-phiToday-07 Technology and the Disappearance of Distance: A Phenome
+  0.42  gen-ap-07 Potentiality, Actuality, and the Identity of Substance   ||  gen-apeiron-12 The Concept of Potentiality in Aristotle's Metaphysics
+  0.40  gen-nous-20 What Is It to Be the Same Person?  ||  gen-ppr-05 The Persistence of Personal Identity
+  0.37  gen-nous-03 The Problem of Temporary Identity  ||  gen-ppr-08 The Metaphysics of Ordinary Objects
+  0.33  gen-rip-06 Vulnerability and the Face: Levinas on the Phenomenolog  ||  gen-phiToday-06 Waiting for the Other: Temporality and Ethical Responsi
+  0.33  gen-rip-02 Flesh and Finitude: Rethinking Mortality in Merleau-Pon  ||  gen-phiToday-15 The Meaning of Finitude: Mortality and the Possibility 
+  0.31  gen-nous-10 The Normativity of Attention  ||  gen-ppr-11 The Normative Significance of Attention
+  0.29  gen-ap-09 Pleasure and the Good Life in Aristotle’s Nicomachean E  ||  gen-phronesis-10 Pleasure as an Unimpeded Activity in Aristotle's Rhetor
+  0.27  gen-ap-02 Plato on the Relationship between Knowledge and Definit  ||  gen-phronesis-07 Recollection without Innate Propositions: The Argument 
+  0.27  gen-phronesis-06 Aristotle on Chance, Incidental Causes, and the Explana  ||  gen-apeiron-07 Aristotle's Account of Chance in Physics II
+  0.26  gen-ap-07 Potentiality, Actuality, and the Identity of Substance   ||  gen-apeiron-01 Aristotle on the Unity and Priority of Substance
+  0.26  gen-ap-13 Skepticism and the Problem of Appearing in Sextus Empir  ||  gen-apeiron-09 Sextus Empiricus and the Limits of Rational Justificati
+  0.25  gen-nous-12 The Epistemology of Other Minds Revisited  ||  gen-ppr-01 The Limits of Epistemic Transparency
+  0.24  gen-rip-09 Dwelling after Displacement: Heidegger and the Phenomen  ||  gen-phiToday-04 The World Before Us: Heidegger, Dwelling, and Ecologica
+  0.23  gen-nous-05 What Makes a Reason a Reason?  ||  gen-ppr-04 What Makes a Reason Normative?
