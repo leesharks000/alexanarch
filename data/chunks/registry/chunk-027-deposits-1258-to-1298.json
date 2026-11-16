@@ -3907,7 +3907,7 @@
       ],
       "axn_reading": "Alarm -> Touch -> Direction -> Method -> Closure -> Threshold",
       "minted_at": "2026-07-19T21:16:56Z",
-      "status": "ACTIVE",
+      "status": "SUPERSEDED",
       "status_authorial": "SELF_SERVE_MINTED",
       "full_text_path": "/data/texts/AXN-0507-text.md",
       "wiki_article": "**ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader** is a close reading by **Rebekah Cranes**, deposited 9 January 2026 at 23,131 characters — the archive's central philological argument.\n\nIts claim rests on a single word. The distal demonstrative **κῆνος** in line 1, conventionally read as pointing to a present rival — *that man seems to me equal to the gods* — is argued instead to point to **a future reader**: the deixis is temporal rather than spatial, and the poem inscribes the person who will one day read it rather than describing someone across the room.\n\nThe reading is supported by a reassessment of deictic structure and colour semantics, and it converts the fragment's most-discussed line from a scene of jealousy into an act of address across time. The paper entered review at **Classical Philology** in the archive's five-paper campaign of July 2026, and it is the argument on which the archive's Sappho programme — the APZPZ deposits, the reconstructed fifth stanza, the Catullus 51 alignment — ultimately rests. [Stanza numbering corrected per EA-ERRATA-SAPPHO31-01 (#201): Sappho 31 survives in FOUR complete stanzas (Longinus, *On the Sublime* 10.2); the Cranes reconstruction adds a FIFTH, opening ἀλλὰ πᾶν τόλματον and closing on the Adonic μολπὰ γράμμασι ζώοι. Earlier documents called it the \"fourth stanza\"; that numbering is superseded.]",
@@ -4140,6 +4140,18 @@
           "reason": "AXN re-derived from the canonical text (text_changed)",
           "was": "AXN:0507.UNCLASSIFIED.✖️❌✊☀️🟡🌒",
           "now": "AXN:0507.UNCLASSIFIED.⚪🫶▶️💡🔜✨"
+        },
+        {
+          "date": "2026-11-16",
+          "field": "version_series_id",
+          "reason": "version series set",
+          "now": "SERIES-PHAINETAI-MOI"
+        },
+        {
+          "date": "2026-11-16",
+          "field": "superseded_reason",
+          "reason": "version 2.3 deposited as #1774; version notice entered",
+          "now": "Version 2.3 deposited as #1774 (2026-11-16), by Lee Sharks. Version 2.0 was submitted to Classical Philology (UCP-CP-S-25-00167) and declined on 16 November 2026; the reader's report, the analyses and the text as submitted are attached to #1774. Version 2.3 places the hanging line inside Longinus's quotation and obelizes καὶ πένητα, argues the transfer of agency from the speaker to the seated receiver, compares the cup from Pithekoussai, restores v1.0's apparatus, and compares the two readings point by point. Version 1.0 stands as deposited and stays indexable."
         }
       ],
       "date_modified": "2026-10-27",
@@ -4183,7 +4195,24 @@
           "why": "derived at mint; the canonical text was changed afterwards, and the AXN stayed on the earlier bytes"
         }
       ],
-      "axn_glyph_table": "v2.1"
+      "axn_glyph_table": "v2.1",
+      "superseded_at": "2026-11-16",
+      "superseded_by_deposit_number": 1774,
+      "version_series_id": "SERIES-PHAINETAI-MOI",
+      "superseded_reason": "Version 2.3 deposited as #1774 (2026-11-16), by Lee Sharks. Version 2.0 was submitted to Classical Philology (UCP-CP-S-25-00167) and declined on 16 November 2026; the reader's report, the analyses and the text as submitted are attached to #1774. Version 2.3 places the hanging line inside Longinus's quotation and obelizes καὶ πένητα, argues the transfer of agency from the speaker to the seated receiver, compares the cup from Pithekoussai, restores v1.0's apparatus, and compares the two readings point by point. Version 1.0 stands as deposited and stays indexable.",
+      "errata": [
+        {
+          "date": "2026-11-16",
+          "kind": "version notice",
+          "locus": "§II.1 (the deixis), §IV (χλωρός), §V (the transmission and the reconstruction)",
+          "was": "'a separate testimonium preserves ἀλλὰ πᾶν τόλματον'; the lost stanza called the fourth; 'γράμματα + μολπά is attested in fr. 44.33, fr. 147'",
+          "now": "Version 2.3 (#1774): the line stands inside Longinus's quotation at the fifth position; καὶ πένητα is obelized and assigned by Bergk to Longinus; no attestation of the collocation is claimed, and γράμματα is marked as a fifth-century word.",
+          "reason": "At the author's word, 2026-11-16: 'lets version. and we can attach the reader report and analysis as files'.",
+          "raised_by": "Lee Sharks (2026-11-16)",
+          "status": "corrected in version 2.3",
+          "deposit_number": 1774
+        }
+      ]
     },
     {
       "deposit_number": 1271,
