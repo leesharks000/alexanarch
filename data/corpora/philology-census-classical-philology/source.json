@@ -1,0 +1,60 @@
+{
+ "corpus": "philology-census-classical-philology",
+ "seat": "EA-CORPORA-40/16",
+ "title": "The census of Classical Philology, 1906–2026: the Crossref records, the items kept, the samples for the blind run, the corpus-grain candidates read by hand, the script and the working notebook",
+ "edition": "Built in session, 16 November 2026, from Crossref metadata",
+ "language": "en (data); titles in their languages",
+ "license": {
+  "payload": "Crossref metadata as served (Crossref states its metadata open, CC0). Crossref holds no abstracts for this journal (0 of 11,206); none is seated. The items, samples, codes, script and notebook are the archive's, CC-BY-4.0.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "items": [
+   {
+    "source": "Crossref REST API",
+    "url": "https://api.crossref.org/journals/0009-837X/works",
+    "read": "2026-11-16",
+    "raw_sha256": "deed3e3964ade67c200600dede4a8df58c4735d41e908faf682a9c4359edca9d"
+   }
+  ],
+  "transport": "in-session fetch (Transport D); No-Double-Draw"
+ },
+ "works": {
+  "count": 1,
+  "units": "one text file per volume or work",
+  "list": [
+   {
+    "slug": "census",
+    "work": "the census and its working files",
+    "text": "text/README.md",
+    "originals": [
+     "original/census-cp.json",
+     "original/cp-items.json",
+     "original/cp-titles-all.csv",
+     "original/cp-titles-sample390.csv",
+     "original/sample390-ids.json",
+     "original/d3-candidates.json",
+     "original/census_cp.py",
+     "original/PHILOLOGY-CENSUS-notebook-v0.1.md",
+     "original/EA-CORPORA-philology-inventory.md"
+    ],
+    "lines": 12
+   }
+  ]
+ },
+ "normalization": "As built by census_cp.py (held under original/): the raw Crossref response is recorded by its SHA-256 and not reseated; the works list keeps DOI, year, type, title, subtitle, authors, volume, issue, page and citation count.",
+ "scope": "Every file the notebook's tables and samples are built from.",
+ "why_seated": "So that every figure in the notebook (§§1, 4) can be rebuilt from what is seated, and the blind parallel run joined to the sample by its ids.",
+ "fetched": "2026-11-16",
+ "verified_loci": [],
+ "loci_not_found": [],
+ "lines_total": 12,
+ "ruling": "Lee Sharks, 2026-11-16: \"oh - and we need an ea-corpora. what can and should be gathered up? philology is a rich historical field\"; \"first we check what we have\"; \"lets begin gathering for the ea corpora\"; \"certainly we can locate wilamowitz elsewhere... and Nietzsche - there must be copies\"; 14:48 EST: \"and then yes lets build the ea-corpora deposit\".",
+ "research": {
+  "study": "The Philology Census: Classical Philology first (working notebook v0.1, not deposited), the combined audit's next station after #1770 and #1773",
+  "for": "the census of Classical Philology read on the page and not only in its titles (notebook §4, limits; §5.3), and the constitution of philology, its method, its boundary and its standing question, against which the census's codes are read"
+ },
+ "spine": "EA-CORPORA-40 (seated 2026-11-16, not deposited)",
+ "axn": null,
+ "axn_note": "assigned at deposit, derived from MANIFEST.sha256 as for every seat"
+}
