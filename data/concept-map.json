@@ -3,11 +3,11 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-11-16T17:48:57Z",
+  "generated_at": "2026-11-16T19:39:34Z",
   "totals": {
-    "deposits": 1774,
+    "deposits": 1775,
     "concepts": 107,
-    "deposits_in_concepts": 260,
+    "deposits_in_concepts": 261,
     "singletons": 1514,
     "needs_review": 15,
     "program_families": 55
@@ -1663,15 +1663,15 @@
       "version_series_id": "SERIES-PHAINETAI-MOI",
       "root_axn_hex": "0507",
       "ea_identifiers": [],
-      "member_count": 2,
+      "member_count": 3,
       "needs_review": false,
       "current": {
-        "deposit_number": 1774,
-        "axn": "AXN:0CA7.GENERATIVE.🤲🔼🌱🔅🌙💚",
-        "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.3)",
+        "deposit_number": 1775,
+        "axn": "AXN:0CA9.GENERATIVE.∮♊🕌👈🌹♊",
+        "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.4)",
         "date": "2026-11-16",
-        "version": "2.3",
-        "record_url": "https://www.alexanarch.org/s/records/1774/"
+        "version": "2.4",
+        "record_url": "https://www.alexanarch.org/s/records/1775/"
       },
       "versions": [
         {
@@ -1690,9 +1690,19 @@
           "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.3)",
           "date": "2026-11-16",
           "version": "2.3",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1774/"
+        },
+        {
+          "deposit_number": 1775,
+          "axn": "AXN:0CA9.GENERATIVE.∮♊🕌👈🌹♊",
+          "title": "ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.4)",
+          "date": "2026-11-16",
+          "version": "2.4",
           "superseded_marker": false,
           "is_current": true,
-          "record_url": "https://www.alexanarch.org/s/records/1774/"
+          "record_url": "https://www.alexanarch.org/s/records/1775/"
         }
       ]
     },
