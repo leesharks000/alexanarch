@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-14T14:07:29.181331Z",
- "seats": 262,
- "lines_total": 10182646,
+ "_generated": "2026-11-16T04:57:47.608709Z",
+ "seats": 275,
+ "lines_total": 11778494,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -19635,7 +19635,913 @@
    "scope": "The print whole.",
    "data": "https://www.alexanarch.org/data/corpora/buridan-sophismata-c1489/",
    "axn": "AXN:0C91.ORIGINAL.💛🎬⚓🖐️🚪🔽"
+  },
+  {
+   "seat": "EA-CORPORA-39/01",
+   "corpus": "agph-archiv-1888-1923",
+   "edition": "The University of Toronto scans at the Internet Archive (archivfrgeschiNNsteiuoft), with the index volumes",
+   "license": {
+    "payload": "The Archiv's volumes I–XXXVI were printed 1888–1923; the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi01steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi01steiuoft",
+      "files": [
+       "archivfrgeschi01steiuoft_djvu.txt"
+      ],
+      "volume": "1"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi02steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi02steiuoft",
+      "files": [
+       "archivfrgeschi02steiuoft_djvu.txt"
+      ],
+      "volume": "2"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi03steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi03steiuoft",
+      "files": [
+       "archivfrgeschi03steiuoft_djvu.txt"
+      ],
+      "volume": "3"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi04steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi04steiuoft",
+      "files": [
+       "archivfrgeschi04steiuoft_djvu.txt"
+      ],
+      "volume": "4"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi05steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi05steiuoft",
+      "files": [
+       "archivfrgeschi05steiuoft_djvu.txt"
+      ],
+      "volume": "5"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi06steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi06steiuoft",
+      "files": [
+       "archivfrgeschi06steiuoft_djvu.txt"
+      ],
+      "volume": "6"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi07steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi07steiuoft",
+      "files": [
+       "archivfrgeschi07steiuoft_djvu.txt"
+      ],
+      "volume": "7"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi08steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi08steiuoft",
+      "files": [
+       "archivfrgeschi08steiuoft_djvu.txt"
+      ],
+      "volume": "8"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi09steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi09steiuoft",
+      "files": [
+       "archivfrgeschi09steiuoft_djvu.txt"
+      ],
+      "volume": "9"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi10steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi10steiuoft",
+      "files": [
+       "archivfrgeschi10steiuoft_djvu.txt"
+      ],
+      "volume": "10"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi110steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi110steiuoft",
+      "files": [
+       "archivfrgeschi110steiuoft_djvu.txt"
+      ],
+      "volume": "1-10"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi11steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi11steiuoft",
+      "files": [
+       "archivfrgeschi11steiuoft_djvu.txt"
+      ],
+      "volume": "11"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi12steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi12steiuoft",
+      "files": [
+       "archivfrgeschi12steiuoft_djvu.txt"
+      ],
+      "volume": "12"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi13steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi13steiuoft",
+      "files": [
+       "archivfrgeschi13steiuoft_djvu.txt"
+      ],
+      "volume": "13"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi15steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi15steiuoft",
+      "files": [
+       "archivfrgeschi15steiuoft_djvu.txt"
+      ],
+      "volume": "15"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi16steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi16steiuoft",
+      "files": [
+       "archivfrgeschi16steiuoft_djvu.txt"
+      ],
+      "volume": "16"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi17steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi17steiuoft",
+      "files": [
+       "archivfrgeschi17steiuoft_djvu.txt"
+      ],
+      "volume": "17"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi18steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi18steiuoft",
+      "files": [
+       "archivfrgeschi18steiuoft_djvu.txt"
+      ],
+      "volume": "18"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi19steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi19steiuoft",
+      "files": [
+       "archivfrgeschi19steiuoft_djvu.txt"
+      ],
+      "volume": "19"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi20steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi20steiuoft",
+      "files": [
+       "archivfrgeschi20steiuoft_djvu.txt"
+      ],
+      "volume": "20"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi21steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi21steiuoft",
+      "files": [
+       "archivfrgeschi21steiuoft_djvu.txt"
+      ],
+      "volume": "21"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi22steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi22steiuoft",
+      "files": [
+       "archivfrgeschi22steiuoft_djvu.txt"
+      ],
+      "volume": "22"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi23steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi23steiuoft",
+      "files": [
+       "archivfrgeschi23steiuoft_djvu.txt"
+      ],
+      "volume": "23"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi24steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi24steiuoft",
+      "files": [
+       "archivfrgeschi24steiuoft_djvu.txt"
+      ],
+      "volume": "24"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi25steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi25steiuoft",
+      "files": [
+       "archivfrgeschi25steiuoft_djvu.txt"
+      ],
+      "volume": "25"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi26steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi26steiuoft",
+      "files": [
+       "archivfrgeschi26steiuoft_djvu.txt"
+      ],
+      "volume": "26"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi27steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi27steiuoft",
+      "files": [
+       "archivfrgeschi27steiuoft_djvu.txt"
+      ],
+      "volume": "27"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi28steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi28steiuoft",
+      "files": [
+       "archivfrgeschi28steiuoft_djvu.txt"
+      ],
+      "volume": "28"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi30steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi30steiuoft",
+      "files": [
+       "archivfrgeschi30steiuoft_djvu.txt"
+      ],
+      "volume": "30"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi31steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi31steiuoft",
+      "files": [
+       "archivfrgeschi31steiuoft_djvu.txt"
+      ],
+      "volume": "31"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgeschi33a36steiuoft",
+      "url": "https://archive.org/details/archivfrgeschi33a36steiuoft",
+      "files": [
+       "archivfrgeschi33a36steiuoft_djvu.txt"
+      ],
+      "volume": "33-36"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "archivfrgindex1120steiuoft",
+      "url": "https://archive.org/details/archivfrgindex1120steiuoft",
+      "files": [
+       "archivfrgindex1120steiuoft_djvu.txt"
+      ],
+      "volume": "Index 11-20"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "de (with fr, en, it, grc)",
+   "lines": 815433,
+   "verified_loci": [
+    "V (1892) 55–60, Appel, Zur Echtheitsfrage des Dialogs Sophistes: the Sophist mocks Plato's own doctrine of Ideas — 'Die platonische Lehre von der Erhabenheit und Heiligkeit der Ideenwelt wird im Sophisten offenbar verspottet' (text/archivfrgeschi05steiuoft.txt)",
+    "V (1892), the article's title — 'Zur Echtheitsfrage des Dialogs Sophistes' (text/archivfrgeschi05steiuoft.txt)",
+    "IX (1896), the latest athetesis of the Philebus — 'Athetese des Philebos' (text/archivfrgeschi09steiuoft.txt)",
+    "XIII (1900), the authenticity of the De interpretatione — 'Echtheit der Aristotelischen Hermeneutik' (text/archivfrgeschi13steiuoft.txt)",
+    "XX (1907/08), the order of the Metaphysics — 'Anordnung der Aristotelischen Metaphysik' (text/archivfrgeschi20steiuoft.txt)"
+   ],
+   "why_seated": "The field before the flattening (§4.12): in the 1890s one ancient title in five puts a work's standing in question, as an ordinary article in a philosophy journal — the authenticity of the Sophistes (1892) and of the De interpretatione (1900), the latest athetesis of the Philebus (1896), the order of the Metaphysics (1908).",
+   "scope": "Volumes I–XXXVI as the Toronto run holds them: I–XIII, XV–XXVIII, XXX, XXXI, XXXIII–XXXVI (one volume) and the indexes. XIV (1901), XXIX (1916) and XXXII (1919) are not in the run and are pointed to.",
+   "data": "https://www.alexanarch.org/data/corpora/agph-archiv-1888-1923/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/02",
+   "corpus": "brucker-historia-critica-1742",
+   "edition": "The Internet Archive scan iacobibruckerire06bruc",
+   "license": {
+    "payload": "Brucker (d. 1770); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "iacobibruckerire06bruc",
+      "url": "https://archive.org/details/iacobibruckerire06bruc",
+      "files": [
+       "iacobibruckerire06bruc_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "la",
+   "lines": 62671,
+   "verified_loci": [
+    "Praefatio: the history as the narration of the systems of the ancients — 'enarratione fyftematum veterum' (text/brucker-hcp-1742-i.txt)"
+   ],
+   "why_seated": "The historiographical concept 'system of philosophy' applied to the ancients (§1.5, Catana): the history told as the narration of the ancients' systems.",
+   "scope": "Volume I as scanned: the preface and the history from the beginnings.",
+   "data": "https://www.alexanarch.org/data/corpora/brucker-historia-critica-1742/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/03",
+   "corpus": "brucker-historia-critica-iv-1743",
+   "edition": "The Internet Archive scan JacobiBruckeriHistoriaCritica4p1",
+   "license": {
+    "payload": "Brucker (d. 1770); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "JacobiBruckeriHistoriaCritica4p1",
+      "url": "https://archive.org/details/JacobiBruckeriHistoriaCritica4p1",
+      "files": [
+       "JacobiBruckeriHistoriaCritica4p1_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "la",
+   "lines": 5388,
+   "verified_loci": [
+    "the Platonists brought it into the order of a system under Ammonius — 'in fyftematis ordinem duce Ammonio redegerunt' (text/brucker-hcp-4-1.txt)"
+   ],
+   "why_seated": "The same concept carried to the later Platonists: 'in fyftematis ordinem' (§1.5).",
+   "scope": "The part as scanned (the Archive's text layer covers part of the volume).",
+   "data": "https://www.alexanarch.org/data/corpora/brucker-historia-critica-iv-1743/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/04",
+   "corpus": "hermann-geschichte-system-1839",
+   "edition": "The Internet Archive scan bub_gb_peC8m7Z_6p4C",
+   "license": {
+    "payload": "Hermann (d. 1855); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_peC8m7Z_6p4C",
+      "url": "https://archive.org/details/bub_gb_peC8m7Z_6p4C",
+      "files": [
+       "bub_gb_peC8m7Z_6p4C_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "de",
+   "lines": 36277,
+   "verified_loci": [
+    "the classification of the scientific development up to Plato — 'Allgemeine Classification der wissenschaftlichen Entwickelung' (text/hermann-1839.txt)"
+   ],
+   "why_seated": "The genetic reading: Plato's dialogues as stages of a development, the frame later scholarship's chronology inherits (§3.1).",
+   "scope": "The first part, the historical-critical foundation.",
+   "data": "https://www.alexanarch.org/data/corpora/hermann-geschichte-system-1839/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/05",
+   "corpus": "zeller-philosophie-griechen-1865",
+   "edition": "The Internet Archive scan diephilosophiede01zell",
+   "license": {
+    "payload": "Zeller (d. 1908); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "diephilosophiede01zell",
+      "url": "https://archive.org/details/diephilosophiede01zell",
+      "files": [
+       "diephilosophiede01zell_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "de",
+   "lines": 52503,
+   "verified_loci": [
+    "the authenticity of the Philolaus fragments contested by Schaarschmidt — 'SCHAARSCHMIDT (Die angebl. Schriftstellerei des Philolaus 1864)' (text/zeller-pdg-1865.txt)"
+   ],
+   "why_seated": "The handbook that fixed the received order of Greek philosophy; it records Schaarschmidt's athetesis of the Philolaus fragments as live scholarship.",
+   "scope": "Volume I as scanned.",
+   "data": "https://www.alexanarch.org/data/corpora/zeller-philosophie-griechen-1865/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/06",
+   "corpus": "ueberweg-echtheit-zeitfolge-1861",
+   "edition": "The Internet Archive scan bub_gb_IdlBK7eBgeMC",
+   "license": {
+    "payload": "Ueberweg (d. 1871); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_IdlBK7eBgeMC",
+      "url": "https://archive.org/details/bub_gb_IdlBK7eBgeMC",
+      "files": [
+       "bub_gb_IdlBK7eBgeMC_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "de",
+   "lines": 14951,
+   "verified_loci": [
+    "the testimonies for the genuineness of the writings under Plato's name — 'Echtheit der unter Plato’s Namen auf uns gekommenen Schriften' (text/ueberweg-1861.txt)"
+   ],
+   "why_seated": "The question of genuineness and order as the subject of a book: the Aristotelian testimonies weighed dialogue by dialogue.",
+   "scope": "The whole book.",
+   "data": "https://www.alexanarch.org/data/corpora/ueberweg-echtheit-zeitfolge-1861/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/07",
+   "corpus": "schaarschmidt-sammlung-1866",
+   "edition": "The Internet Archive scan bub_gb_6jrTSVHrpBQC",
+   "license": {
+    "payload": "Schaarschmidt (d. 1909); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_6jrTSVHrpBQC",
+      "url": "https://archive.org/details/bub_gb_6jrTSVHrpBQC",
+      "files": [
+       "page images",
+       "bub_gb_6jrTSVHrpBQC_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "de",
+   "lines": 19937,
+   "verified_loci": [
+    "p. 54: Ueberweg's chronology, 'sofern sie echt sind' — 'die kleineren ethischen Dialoge, sofern sie echt sind' (text/schaarschmidt-sammlung-1866.ocr.txt)",
+    "contents: the spuriousness of the Sophist and Statesman demonstrated — 'Unechtheit des Sophista und Politikus nachgewiesen' (text/schaarschmidt-sammlung-1866.ocr.txt)"
+   ],
+   "why_seated": "The athetesis at its height: the collection examined to divide the genuine from the spurious, with the Sophistes and Politicus among the doubted.",
+   "scope": "The whole book.",
+   "data": "https://www.alexanarch.org/data/corpora/schaarschmidt-sammlung-1866/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/08",
+   "corpus": "grote-plato-1865",
+   "edition": "The Internet Archive scan bub_gb_j9D7DspOx9kC",
+   "license": {
+    "payload": "Grote (d. 1871); the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "bub_gb_j9D7DspOx9kC",
+      "url": "https://archive.org/details/bub_gb_j9D7DspOx9kC",
+      "files": [
+       "bub_gb_j9D7DspOx9kC_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "en",
+   "lines": 47852,
+   "verified_loci": [
+    "chapter IV: the canon established by Thrasyllus — 'Canon established by Thrasyllus' (text/grote-plato-1865.txt)"
+   ],
+   "why_seated": "The defence of the Thrasyllan canon against the athetizers: the high-water mark of the question, answered by a canon.",
+   "scope": "Volume I.",
+   "data": "https://www.alexanarch.org/data/corpora/grote-plato-1865/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/09",
+   "corpus": "lutoslawski-plato-logic-1897",
+   "edition": "The Internet Archive scan in.ernet.dli.2015.6224",
+   "license": {
+    "payload": "Lutosławski (d. 1954); the 1897 printing; the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "in.ernet.dli.2015.6224",
+      "url": "https://archive.org/details/in.ernet.dli.2015.6224",
+      "files": [
+       "in.ernet.dli.2015.6224_djvu.txt"
+      ]
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "en",
+   "lines": 43782,
+   "verified_loci": [
+    "the method of stylometry, running head — 'METHOD OF STYLOMETRY' (text/lutoslawski-1897.txt)"
+   ],
+   "why_seated": "Stylometry named and turned on the order of the dialogues: the method that fixed early, middle and late.",
+   "scope": "The whole book.",
+   "data": "https://www.alexanarch.org/data/corpora/lutoslawski-plato-logic-1897/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/10",
+   "corpus": "philologus-cited-1858-1916",
+   "edition": "Internet Archive scans",
+   "license": {
+    "payload": "The volumes seated were printed 1858–1929; the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus05archgoog",
+      "url": "https://archive.org/details/philologus05archgoog",
+      "files": [
+       "philologus05archgoog_djvu.txt"
+      ],
+      "volume": "50",
+      "date": "1846"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus12leipuoft",
+      "url": "https://archive.org/details/philologus12leipuoft",
+      "files": [
+       "philologus12leipuoft_djvu.txt"
+      ],
+      "volume": "12",
+      "date": "1859"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus13deutuoft",
+      "url": "https://archive.org/details/philologus13deutuoft",
+      "files": [
+       "philologus13deutuoft_djvu.txt"
+      ],
+      "volume": "13",
+      "date": "1846"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus36archgoog",
+      "url": "https://archive.org/details/philologus36archgoog",
+      "files": [
+       "philologus36archgoog_djvu.txt"
+      ],
+      "volume": "51",
+      "date": "1846"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus49deutuoft",
+      "url": "https://archive.org/details/philologus49deutuoft",
+      "files": [
+       "philologus49deutuoft_djvu.txt"
+      ],
+      "volume": "49",
+      "date": "1846"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus51deutuoft",
+      "url": "https://archive.org/details/philologus51deutuoft",
+      "files": [
+       "philologus51deutuoft_djvu.txt"
+      ],
+      "volume": "51",
+      "date": "1846"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus55deutuoft",
+      "url": "https://archive.org/details/philologus55deutuoft",
+      "files": [
+       "philologus55deutuoft_djvu.txt"
+      ],
+      "volume": "55",
+      "date": "1846"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "philologus73deutuoft",
+      "url": "https://archive.org/details/philologus73deutuoft",
+      "files": [
+       "philologus73deutuoft_djvu.txt"
+      ],
+      "volume": "73",
+      "date": "1846"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "de (with la, grc)",
+   "lines": 340606,
+   "verified_loci": [
+    "LV (1896): the Metaphysics the unified work of one author — 'einheitliche Werk' (text/philologus55deutuoft.txt)",
+    "LXXIII (1914–16): the date of the Phaedrus — 'Abfassungszeit des Phaidros' (text/philologus73deutuoft.txt)",
+    "XLIX (1890): the date of the Theaetetus — 'Abfassungszeit des Platonischen Theaetet' (text/philologus49deutuoft.txt)",
+    "XIII (1858): the authentica of the Berlin Aristotle — 'authentica der Berliner' (text/philologus13deutuoft.txt)"
+   ],
+   "why_seated": "The philology journal where the question of a work's standing persisted (§4.12c): the date of the Theaetetus (1890–92), the Metaphysics as the unified work of one author (1896), the date of the Phaedrus (1916).",
+   "scope": "The volumes or issues that hold the articles §4.12c cites; the rest of the run is pointed to.",
+   "data": "https://www.alexanarch.org/data/corpora/philologus-cited-1858-1916/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/11",
+   "corpus": "classical-quarterly-1914-1929",
+   "edition": "Internet Archive scans",
+   "license": {
+    "payload": "The volumes seated were printed 1858–1929; the scan and its text layer are public domain in the United States (published before 1931). The archive asserts no licence over the payload.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1914-01_8_1",
+      "url": "https://archive.org/details/sim_classical-quarterly_1914-01_8_1",
+      "files": [
+       "sim_classical-quarterly_1914-01_8_1_djvu.txt"
+      ],
+      "volume": "8",
+      "date": "1914-01"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1914-07_8_3",
+      "url": "https://archive.org/details/sim_classical-quarterly_1914-07_8_3",
+      "files": [
+       "sim_classical-quarterly_1914-07_8_3_djvu.txt"
+      ],
+      "volume": "8",
+      "date": "1914-07"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1914-10_8_4",
+      "url": "https://archive.org/details/sim_classical-quarterly_1914-10_8_4",
+      "files": [
+       "sim_classical-quarterly_1914-10_8_4_djvu.txt"
+      ],
+      "volume": "8",
+      "date": "1914-10"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1926-01_20_1",
+      "url": "https://archive.org/details/sim_classical-quarterly_1926-01_20_1",
+      "files": [
+       "sim_classical-quarterly_1926-01_20_1_djvu.txt"
+      ],
+      "volume": "20",
+      "date": "1926-01"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1926-04_20_2",
+      "url": "https://archive.org/details/sim_classical-quarterly_1926-04_20_2",
+      "files": [
+       "sim_classical-quarterly_1926-04_20_2_djvu.txt"
+      ],
+      "volume": "20",
+      "date": "1926-04"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1927-01_21_1",
+      "url": "https://archive.org/details/sim_classical-quarterly_1927-01_21_1",
+      "files": [
+       "sim_classical-quarterly_1927-01_21_1_djvu.txt"
+      ],
+      "volume": "21",
+      "date": "1927-01"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1927-04_21_2",
+      "url": "https://archive.org/details/sim_classical-quarterly_1927-04_21_2",
+      "files": [
+       "sim_classical-quarterly_1927-04_21_2_djvu.txt"
+      ],
+      "volume": "21",
+      "date": "1927-04"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1928-01_22_1",
+      "url": "https://archive.org/details/sim_classical-quarterly_1928-01_22_1",
+      "files": [
+       "sim_classical-quarterly_1928-01_22_1_djvu.txt"
+      ],
+      "volume": "22",
+      "date": "1928-01"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1928-04_22_2",
+      "url": "https://archive.org/details/sim_classical-quarterly_1928-04_22_2",
+      "files": [
+       "sim_classical-quarterly_1928-04_22_2_djvu.txt"
+      ],
+      "volume": "22",
+      "date": "1928-04"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1929-01_23_1",
+      "url": "https://archive.org/details/sim_classical-quarterly_1929-01_23_1",
+      "files": [
+       "sim_classical-quarterly_1929-01_23_1_djvu.txt"
+      ],
+      "volume": "23",
+      "date": "1929-01"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_1929-04_23_2",
+      "url": "https://archive.org/details/sim_classical-quarterly_1929-04_23_2",
+      "files": [
+       "sim_classical-quarterly_1929-04_23_2_djvu.txt"
+      ],
+      "volume": "23",
+      "date": "1929-04"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_july-october-1926_20_3-4",
+      "url": "https://archive.org/details/sim_classical-quarterly_july-october-1926_20_3-4",
+      "files": [
+       "sim_classical-quarterly_july-october-1926_20_3-4_djvu.txt"
+      ],
+      "volume": "20",
+      "date": "July-October 1926"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_july-october-1927_21_3-4",
+      "url": "https://archive.org/details/sim_classical-quarterly_july-october-1927_21_3-4",
+      "files": [
+       "sim_classical-quarterly_july-october-1927_21_3-4_djvu.txt"
+      ],
+      "volume": "21",
+      "date": "July-October 1927"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_july-october-1928_22_3-4",
+      "url": "https://archive.org/details/sim_classical-quarterly_july-october-1928_22_3-4",
+      "files": [
+       "sim_classical-quarterly_july-october-1928_22_3-4_djvu.txt"
+      ],
+      "volume": "22",
+      "date": "July-October 1928"
+     },
+     {
+      "source": "Internet Archive",
+      "identifier": "sim_classical-quarterly_july-october-1929_23_3-4",
+      "url": "https://archive.org/details/sim_classical-quarterly_july-october-1929_23_3-4",
+      "files": [
+       "sim_classical-quarterly_july-october-1929_23_3-4_djvu.txt"
+      ],
+      "volume": "23",
+      "date": "July-October 1929"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "en (with grc, la)",
+   "lines": 156394,
+   "verified_loci": [
+    "XX (1926): the authenticity of the Hippias Major — 'Authenticity of the Hippias' (text/sim_classical-quarterly_1926-01_20_1.txt)",
+    "XXI (1927) 82 ff., Tarrant, The Authorship of the Hippias Maior (the scan reads the title 'A/PPIAS MATOR'; the opening line) — 'Continued and detailed study of the Hippias Maior' (text/sim_classical-quarterly_1927-04_21_2.txt)",
+    "XXII (1928): the pseudo-Aristotelian Problems — 'Pseudo-Aristotelian Problems' (text/sim_classical-quarterly_1928-01_22_1.txt)",
+    "XXIII (1929): the text of the Nicomachean Ethics — 'Text of the Nicomachean' (text/sim_classical-quarterly_1929-01_23_1.txt)"
+   ],
+   "why_seated": "The interim question in English (§4.12c): the authenticity and the authorship of the Hippias Major (1926, 1927), the composition of the Politics (1927), the Problems (1928), the text of the Ethics (1929).",
+   "scope": "The volumes or issues that hold the articles §4.12c cites; the rest of the run is pointed to.",
+   "data": "https://www.alexanarch.org/data/corpora/classical-quarterly-1914-1929/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/12",
+   "corpus": "this-is-not-philosophy-census",
+   "edition": "Built in session, 15 November 2026, from Crossref and Persée metadata",
+   "license": {
+    "payload": "Crossref metadata as served (Crossref states its metadata open, CC0); Persée's OAI-PMH metadata as served, under the terms Persée states at persee.fr; the codes, spans, logs and scripts are the archive's, CC-BY-4.0. The publishers' abstracts are not reseated; each is reached by its DOI.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "Crossref REST API",
+      "url": "https://api.crossref.org/journals/{ISSN}/works"
+     },
+     {
+      "source": "Persée OAI-PMH",
+      "url": "https://oai.persee.fr/oai"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "en (data); titles in their languages",
+   "lines": 23,
+   "verified_loci": [],
+   "why_seated": "So that every figure in §§4.2–4.16 can be rebuilt from what is seated, and every reach code checked against its span and its DOI.",
+   "scope": "All the files the notebook's tables are built from, except the abstracts.",
+   "data": "https://www.alexanarch.org/data/corpora/this-is-not-philosophy-census/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-39/13",
+   "corpus": "this-is-not-philosophy-gates",
+   "edition": "Excerpted in session, 15 November 2026",
+   "license": {
+    "payload": "Excerpts quoted for the record, each with its source and date; the full texts remain at their sources.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "items": [
+     {
+      "source": "the author's correspondence with the editor of Ancient Philosophy (institutional, by the author's ruling of 2026-11-15)"
+     },
+     {
+      "source": "Daily Nous; De Gruyter Brill; the journals' pages, as cited per excerpt"
+     }
+    ],
+    "transport": "in-session fetch (Transport D); No-Double-Draw"
+   },
+   "language": "en",
+   "lines": 31,
+   "verified_loci": [
+    "the editor, 9 September 2026: the claim refused, the topic admitted — 'If the paper is not about Aristotle and Theophrastus being one person' (text/gates.md)",
+    "P&PA, August 2026: the prohibition — 'Our policy is therefore to prohibit the submission of AI-authored content' (text/gates.md)"
+   ],
+   "why_seated": "The gate read against the census: the specification of the unit in the editor's words, and the policies of the template's home.",
+   "scope": "§0A and §4.16 of the notebook, as excerpts.",
+   "data": "https://www.alexanarch.org/data/corpora/this-is-not-philosophy-gates/",
+   "axn": null
   }
  ],
- "count": 262
+ "count": 275
 }
