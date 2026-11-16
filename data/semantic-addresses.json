@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-16T20:42:52Z",
+  "regenerated_at": "2026-11-16T21:08:35Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "46ae3d9fabccadbc1b5c98681fedd08ec090857cedc20471dd302ef77e3f6961",
+    "mm-main-capture": "b9724a5206106808bc368f734cf5b83a21ef9a5f2910910907d6da109eb07648",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2817,
-  "total_observations": 1402,
+  "total_addresses": 2818,
+  "total_observations": 1403,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1064,
+    "observed_address": 1065,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1937,
+    "unmatched": 1938,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -73030,6 +73030,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-09",
       "latest_status": "CAPTURE"
+    },
+    "tell me about recent debate surrounding classical receptions journal.": {
+      "canonical_query": "tell me about recent debate surrounding classical receptions journal.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-16",
+          "status": "'TELL ME ABOUT RECENT DEBATE SURROUNDING CLASSICAL RECEPTIONS JOURNAL' ON CHATGPT, SIGNED OUT — THE AUDIT'S QUESTION AS THE DEBATE'S CENTRE, ITS FIGURES CARRIED; THE DECISION AS THE RESEARCHER'S ACCOUNT; THE INSTITUTIONAL CLAIM REDUCED TO ONE DECISION",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "crj-recent-debate-chatgpt-20261116",
+          "gallery_url": "https://www.alexanarch.org/captures/#crj-recent-debate-chatgpt-20261116",
+          "record_url": "https://www.alexanarch.org/captures/crj-recent-debate-chatgpt-20261116/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#crj-recent-debate-chatgpt-20261116",
+          "details_excerpt": "'TELL ME ABOUT RECENT DEBATE SURROUNDING CLASSICAL RECEPTIONS JOURNAL' ON CHATGPT, SIGNED OUT: the debate composed from the archive alone, the audit's question taken as its centre and its figures carried; the 7 November "
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1769 (AXN:0C9A), #1770 (AXN:0C9C), #1749 (AXN:0C40). Recorded 2026-11-16."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-16",
+      "latest_status": "'TELL ME ABOUT RECENT DEBATE SURROUNDING CLASSICAL RECEPTIONS JOURNAL' ON CHATGPT, SIGNED OUT — THE AUDIT'S QUESTION AS THE DEBATE'S CENTRE, ITS FIGURES CARRIED; THE DECISION AS THE RESEARCHER'S ACCOUNT; THE INSTITUTIONAL CLAIM REDUCED TO ONE DECISION"
     },
     "tell me about researcher nobel glas": {
       "canonical_query": "tell me about researcher nobel glas",
