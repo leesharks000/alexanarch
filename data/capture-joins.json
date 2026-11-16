@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.697",
+ "derived_from": "EA-WG-CAPTURES-01 v12.698",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1290,
+  "observations": 1291,
   "joined_confirmed": 516,
-  "unjoined": 774,
-  "relations": 6849,
+  "unjoined": 775,
+  "relations": 6853,
   "by_state": {
-   "confirmed": 5431,
-   "candidate": 1418
+   "confirmed": 5434,
+   "candidate": 1419
   },
   "by_verb": {
-   "appeared_in": 1978,
-   "held_by": 2660,
-   "scored_by": 1035,
+   "appeared_in": 1979,
+   "held_by": 2662,
+   "scored_by": 1036,
    "about": 1158,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -3625,6 +3625,10 @@
 {"id": "REL-b655a2d3fe90", "obs_id": "OBS-9bb3a96660e2", "entry": "crj-controversies-critiques-chatgpt-20261116", "obs_slug": "crj-controversies-critiques-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "Tell me about controversies or critiques of Classical Receptions Journal.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-3fe4d061c496", "obs_id": "OBS-9bb3a96660e2", "entry": "crj-controversies-critiques-chatgpt-20261116", "obs_slug": "crj-controversies-critiques-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "Tell me about controversies or critiques of Classical Receptions Journal.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.5", "kind": "derived", "state": "confirmed"},
 {"id": "REL-9a968cf38218", "obs_id": "OBS-9bb3a96660e2", "entry": "crj-controversies-critiques-chatgpt-20261116", "obs_slug": "crj-controversies-critiques-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "Tell me about controversies or critiques of Classical Receptions Journal.", "verb": "about", "object": "non:classical-receptions-journal", "basis": "defining papers #1749, #1750, #1769", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-3614260b1959", "obs_id": "OBS-11f6a1bd4fcb", "entry": "tinp-arguments-chatgpt-20261116", "obs_slug": "tinp-arguments-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "What are the arguments in “This Is Not Philosophy: The Article Economy and the Shape of the Field (EA-MMRS-TINP-01)” by Lee Sharks (Alexanarch deposit #1773, AXN:0CA6)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1773/", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": null}},
+{"id": "REL-fc91bea338e6", "obs_id": "OBS-11f6a1bd4fcb", "entry": "tinp-arguments-chatgpt-20261116", "obs_slug": "tinp-arguments-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "What are the arguments in “This Is Not Philosophy: The Article Economy and the Shape of the Field (EA-MMRS-TINP-01)” by Lee Sharks (Alexanarch deposit #1773, AXN:0CA6)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1773/", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7740b136f994", "obs_id": "OBS-11f6a1bd4fcb", "entry": "tinp-arguments-chatgpt-20261116", "obs_slug": "tinp-arguments-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "What are the arguments in “This Is Not Philosophy: The Article Economy and the Shape of the Field (EA-MMRS-TINP-01)” by Lee Sharks (Alexanarch deposit #1773, AXN:0CA6)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1773/", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0152df607336", "obs_id": "OBS-11f6a1bd4fcb", "entry": "tinp-arguments-chatgpt-20261116", "obs_slug": "tinp-arguments-chatgpt-20261116", "date": "2026-11-16", "surface": "ChatGPT", "q": "What are the arguments in “This Is Not Philosophy: The Article Economy and the Shape of the Field (EA-MMRS-TINP-01)” by Lee Sharks (Alexanarch deposit #1773, AXN:0CA6)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1773/", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
