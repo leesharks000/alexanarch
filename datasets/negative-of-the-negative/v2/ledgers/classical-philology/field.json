@@ -1,0 +1,1252 @@
+{
+ "row": "classical-philology",
+ "address": "classical philology journal",
+ "addresses": [
+  "classical philology journal"
+ ],
+ "extracted": "2026-11-17",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-17, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts, the paste's card titles and snippets for unreadable cards, and #1783 §1 and §8 for Crossref's register (whitespace-normalised for the check, markdown emphasis stripped; multi-part quotes joined by ' … ', each part checked); 47/47 verified by script",
+ "B_note": "The field in two pools (v0.10 §0.3, §3.1(a)). B_D, the disclosed pool: T's six panel cards (B1 the current-issue page and B2 the About page at the Press, B3 JSTOR, B4 Wikipedia, B5 Hopkins Press's page for the American Journal of Philology, a different journal, B6 Duotrope); T's body names no source beyond them. B_R, the reference pool: the journal's own pages (B7 the instructions for authors at the department, B8 the instructions at the Press, unreachable, B10 the journal's page at the department, reached from B4's external link), the publisher's AI guidelines (B9), and Crossref's register as #1783 reports it (B11, census_third_party). Wikipedia is a card of T and is carried once, in B_D, as B4; the operator's companion paste of the article (2026-11-17), which the brief names a B_R source, is carried as a second saved text of B4, outside T.",
+ "lineage_note": "Lineages (§3.6): identity and masthead; scope; its self-description (B10 the earliest instance, B6's snippet and B3's scope its restatements, B7's policy its own); the homonym; the article's state; submission and review; rights; the Press's AI guidelines; the public record; rank; the current issue; another journal.",
+ "pages": "saved texts under datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/ (Bn.txt; B3-challenge.txt the bot check JSTOR served; B4-wiki.txt the raw wikitext; B4-companion-paste.txt the operator's paste; no HTML kept, by the brief)",
+ "field": [
+  {
+   "id": "B1",
+   "card": "The University of Chicago Press: Journals — Classical Philology | Vol 121, No 4 (the current issue page)",
+   "fetched": "unreachable: https://www.journals.uchicago.edu/toc/cp/current HTTP 403 2026-11-17T16:52:41Z; the card's snippet stands as its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B2",
+   "card": "The University of Chicago Press: Journals — Classical Philology: About (the About page)",
+   "fetched": "unreachable: https://www.journals.uchicago.edu/journals/cp/about HTTP 403 2026-11-17T16:52:42Z; the card's snippet stands as its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B3",
+   "card": "jstor — Classical Philology | JSTOR",
+   "fetched": "unreachable: https://www.jstor.org/journal/classphil HTTP 200 2026-11-17T16:52:42Z; the card's snippet stands as its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B4",
+   "card": "Wikipedia — Classical Philology (journal)",
+   "fetched": "read: https://en.wikipedia.org/wiki/Classical_Philology_(journal) HTTP 200 2026-11-17T16:52:42Z; https://en.wikipedia.org/w/index.php?title=Classical_Philology_(journal)&action=raw HTTP 200 2026-11-17T16:52:42Z",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B5",
+   "card": "Hopkins Press — American Journal of Philology (a different journal)",
+   "fetched": "unreachable: https://www.press.jhu.edu/journals/american-journal-philology HTTP 403 2026-11-17T16:52:42Z; the card's snippet stands as its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B6",
+   "card": "Duotrope — Classical Philology (the listing whose snippet carries the journal's self-description)",
+   "fetched": "unreachable: not located: two web searches by title and site returned no Duotrope listing URL for the journal; no page fetched; the card's snippet stands as its only text",
+   "origin": "card",
+   "pool": "B_D"
+  },
+  {
+   "id": "B7",
+   "card": "Department of Classics, University of Chicago — Classical Philology: Instructions for Authors",
+   "fetched": "read: https://classics.uchicago.edu/classical-philology/instructions-authors HTTP 200 2026-11-17T16:52:43Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B8",
+   "card": "The University of Chicago Press: Journals — Classical Philology: Instructions for authors (cp/instruct)",
+   "fetched": "unreachable: https://www.journals.uchicago.edu/journals/cp/instruct HTTP 403 2026-11-17T16:52:43Z; the card's snippet stands as its only text",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B9",
+   "card": "The University of Chicago Press — University of Chicago Press AI Guidelines",
+   "fetched": "read: https://press.uchicago.edu/resource/ai_guidelines.html HTTP 200 2026-11-17T16:52:43Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B10",
+   "card": "Department of Classics, University of Chicago — What is Classical Philology? (the journal's page at the department)",
+   "fetched": "read: https://classics.uchicago.edu/classical-philology/what-classical-philology HTTP 200 2026-11-17T16:53:24Z",
+   "origin": "own_page",
+   "pool": "B_R"
+  },
+  {
+   "id": "B11",
+   "card": "Crossref — the register of Classical Philology (ISSN 0009-837X), as #1783 reports it",
+   "fetched": "cited to #1783 §1, §8 (not re-harvested)",
+   "origin": "census_third_party",
+   "pool": "B_R"
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "panel card 1, title as pasted",
+   "quote": "Classical Philology | Vol 121, No 4",
+   "claim": "the current issue is volume 121, number 4",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current issue",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "panel card 1, snippet as pasted",
+   "quote": "Ahead of Print book reviews Forthcoming articles * Submit manuscript * About Classical Philology Editorial policy and publication ethics",
+   "claim": "the Press's journal site: book reviews ahead of print, forthcoming articles, submission, About, editorial policy and publication ethics",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the current issue",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F3": {
+   "source": "B2",
+   "locus": "panel card 2, snippet as pasted",
+   "quote": "ABOUT THE JOURNAL. Frequency: 4 issues/year. ISSN: 0009-837X E-ISSN: 1546-072X",
+   "claim": "the About page: four issues a year; ISSN 0009-837X, E-ISSN 1546-072X",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F4": {
+   "source": "B2",
+   "locus": "panel card 2, snippet as pasted",
+   "quote": "2025 CiteScore*: 1.0. Ranked #15 out of 196 “Classics” journals.",
+   "claim": "the About page: a 2025 CiteScore of 1.0, ranked 15th of 196 'Classics' journals",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "rank",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F5": {
+   "source": "B3",
+   "locus": "panel card 3, snippet as pasted",
+   "quote": "Journal: Classical Philology (ISSN: 0009837X, EISSN: 1546072X) Publisher: The University of Chicago Press",
+   "claim": "JSTOR's record: the journal, its ISSNs and its publisher",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F6": {
+   "source": "B3",
+   "locus": "panel card 3, snippet as pasted",
+   "quote": "Scope: International study of the life, languages, and...",
+   "claim": "JSTOR's record gives the scope as the international study of the life, languages … (truncated)",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "its self-description",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F7": {
+   "source": "B4",
+   "locus": "lead, sentence 1",
+   "quote": "Classical Philology is a peer-reviewed academic journal established in 1906.",
+   "claim": "Wikipedia's definition: a peer-reviewed academic journal established in 1906",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "identity and masthead",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F8": {
+   "source": "B4",
+   "locus": "lead, sentence 2",
+   "quote": "It is published by the University of Chicago Press and covers all aspects of Graeco-Roman antiquity, including literature, languages, anthropology, history, social life, philosophy, religion, art, material culture, and the history of classical studies.",
+   "claim": "published by the University of Chicago Press; its scope all aspects of Graeco-Roman antiquity, to the history of classical studies",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "scope",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F9": {
+   "source": "B4",
+   "locus": "lead, sentence 3",
+   "quote": "The editor-in-chief is Sarah Nooter.",
+   "claim": "its editor-in-chief is Sarah Nooter",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F10": {
+   "source": "B4",
+   "locus": "infobox, publisher",
+   "quote": "University of Chicago Press for the Department of Classics, Division of the Humanities, University of Chicago",
+   "claim": "published by the Press for the Department of Classics, Division of the Humanities, University of Chicago",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F11": {
+   "source": "B4",
+   "locus": "infobox, frequency",
+   "quote": "Frequency Quarterly",
+   "claim": "quarterly",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F12": {
+   "source": "B4",
+   "locus": "infobox, ISO 4",
+   "quote": "ISO 4 Class. Philol.",
+   "claim": "ISO 4 abbreviation Class. Philol.",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F13": {
+   "source": "B4",
+   "locus": "infobox, ISSN",
+   "quote": "0009-837X (print) … 1546-072X (web)",
+   "claim": "ISSN 0009-837X (print), 1546-072X (web)",
+   "modality": "attributed",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "identity and masthead",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F14": {
+   "source": "B4",
+   "locus": "hatnote",
+   "quote": "For the subject, see classical philology and Classics.",
+   "claim": "the hatnote: the subject (the discipline) is a different article; the homonym",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the homonym",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F15": {
+   "source": "B4",
+   "locus": "stub notice",
+   "quote": "This article about a journal on Classical studies is a stub.",
+   "claim": "the article is marked a stub",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the article's state",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F16": {
+   "source": "B4",
+   "locus": "footer",
+   "quote": "This page was last edited on 4 August 2026, at 22:03 (UTC).",
+   "claim": "last edited 4 August 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the article's state",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F17": {
+   "source": "B4",
+   "locus": "categories",
+   "quote": "Classics journals … Philology journal stubs",
+   "claim": "filed among classics journals and philology journal stubs",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the article's state",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F18": {
+   "source": "B4",
+   "locus": "related articles (the companion paste only)",
+   "quote": "Related articles: Paul Shorey (American classical scholar, 1857–1934); Charles H. Beeson (American classical scholar); Gertrude Smith (American classical philologist and jurist).",
+   "claim": "the article as the operator saw it lists three related articles: Paul Shorey, Charles H. Beeson, Gertrude Smith",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the article's state",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F19": {
+   "source": "B4",
+   "locus": "external links",
+   "quote": "Classical Philology at the Department of Classics, Division of the Humanities, University of Chicago",
+   "claim": "an external link to the journal at the department (to the page 'What is Classical Philology?', B10)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the article's state",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt, datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F20": {
+   "source": "B4",
+   "locus": "panel card 4, snippet as pasted",
+   "quote": "For the subject, see classical philology and Classics. Classical Philology is...",
+   "claim": "the card carries the hatnote to the discipline",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt"
+  },
+  "F21": {
+   "source": "B5",
+   "locus": "panel card 5, title as pasted",
+   "quote": "American Journal of Philology | Hopkins Press",
+   "claim": "a card for a different journal, the American Journal of Philology, at Hopkins Press",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another journal",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F22": {
+   "source": "B5",
+   "locus": "panel card 5, snippet as pasted",
+   "quote": "* Pub: Hopkins Press * Title: American Journal of Philology (AJP) * Editor: Rosa Andújar (Barnard College, Columbia University) * Founded: 1880",
+   "claim": "AJP: Hopkins Press, editor Rosa Andújar, founded 1880",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "another journal",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F23": {
+   "source": "B6",
+   "locus": "panel card 6, snippet as pasted",
+   "quote": "About Classical Philology (CP) has been an internationally respected journal for the study of the life, languages, and thought of the ancient Greek and Roman wo...",
+   "claim": "Duotrope's listing carries the journal's self-description: internationally respected, for the study of the life, languages and thought of the ancient Greek and Roman world",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "its self-description",
+   "date": "card, 2026-11-17",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the paste (card title / snippet), datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/paste-classical-philology-journal-aio.txt",
+   "title_or_snippet_only": true
+  },
+  "F24": {
+   "source": "B7",
+   "locus": "head",
+   "quote": "CP is a peer-reviewed journal, and aims for a ten-week turnaround period for refereeing submissions.",
+   "claim": "peer-reviewed; a ten-week aim for refereeing",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F25": {
+   "source": "B7",
+   "locus": "Statement of Editorial Policy",
+   "quote": "CP is devoted to publishing the best scholarly thought on all aspects of Greek and Roman antiquity, including literature, languages, anthropology, history, social life, philosophy, religion, art, material culture, and the history of classical studies.",
+   "claim": "the editorial policy: all aspects of Greek and Roman antiquity",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "scope",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F26": {
+   "source": "B7",
+   "locus": "Statement of Editorial Policy",
+   "quote": "We also welcome contributions on the reception of classical antiquity, as well as on the interaction of Greece and Rome with other ancient cultures.",
+   "claim": "contributions on reception and on Greece and Rome's interaction with other ancient cultures welcome",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F27": {
+   "source": "B7",
+   "locus": "Statement of Editorial Policy",
+   "quote": "CP is committed to both rigorous scholarship and the development of new approaches, and seeks to represent the full range of intellectual diversity across the field.",
+   "claim": "committed to rigorous scholarship and new approaches; the full range of intellectual diversity",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "its self-description",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F28": {
+   "source": "B7",
+   "locus": "Statement of Editorial Policy",
+   "quote": "Traditionally, we have published both longer articles and short notes.",
+   "claim": "longer articles and short notes",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F29": {
+   "source": "B7",
+   "locus": "Statement of Editorial Policy",
+   "quote": "Authors are limited to one manuscript submission to CP per year.",
+   "claim": "one submission a year",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F30": {
+   "source": "B7",
+   "locus": "A. Submitting a Manuscript",
+   "quote": "Authors are required to guarantee that their submitted manuscript has not been published elsewhere, including on sites such as academia.edu or personal websites, and is not currently under review elsewhere",
+   "claim": "no prior posting, including on academia.edu or personal websites",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F31": {
+   "source": "B7",
+   "locus": "A. Submitting a Manuscript",
+   "quote": "CP sends out all submissions to be reviewed anonymously.",
+   "claim": "all submissions reviewed anonymously",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F32": {
+   "source": "B7",
+   "locus": "A. Submitting a Manuscript",
+   "quote": "No indication of the author's identity should appear in the submission itself",
+   "claim": "the manuscript carries no indication of the author's identity",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F33": {
+   "source": "B7",
+   "locus": "A. Submitting a Manuscript",
+   "quote": "Please send an abstract of 100 or fewer words along with the paper. This is intended for the purpose of locating referees.",
+   "claim": "an abstract of 100 words or fewer, for locating referees",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F34": {
+   "source": "B7",
+   "locus": "B. Preparing an Accepted Manuscript",
+   "quote": "in return for publication, Classical Philology has the exclusive, worldwide, royalty-free right of first publication",
+   "claim": "the journal holds the exclusive right of first publication",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "rights",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F35": {
+   "source": "B7",
+   "locus": "C. Book Reviews",
+   "quote": "All book reviews and review articles are invited by the Book Review Editor.",
+   "claim": "reviews are invited",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "submission and review",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F36": {
+   "source": "B9",
+   "locus": "head",
+   "quote": "These guidelines address the use of generative artificial intelligence (Gen AI), including large language models (LLMs), by authors and peer reviewers of our books. Journal authors should reference the individual journal’s AI guidelines.",
+   "claim": "the Press's AI guidelines govern its books; journal authors are referred to each journal's guidelines",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "the Press's AI guidelines",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F37": {
+   "source": "B9",
+   "locus": "Authorship",
+   "quote": "The University of Chicago Press takes a fundamentally humanistic view of authorship.",
+   "claim": "a humanistic view of authorship",
+   "modality": "self-description",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Press's AI guidelines",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F38": {
+   "source": "B9",
+   "locus": "Authorship",
+   "quote": "we prohibit authors from using AI tools to perform core authorial functions such as writing or rewriting text and generating arguments.",
+   "claim": "book authors may not use AI to write or rewrite text or generate arguments",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Press's AI guidelines",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F39": {
+   "source": "B9",
+   "locus": "Peer Review",
+   "quote": "While peer reviewers may use AI as an online research tool, they may not use AI to summarize works under review, generate assessments, or write or rewrite reports.",
+   "claim": "book reviewers may not use AI to summarize works, generate assessments or write reports",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Press's AI guidelines",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F40": {
+   "source": "B9",
+   "locus": "AI Detection Software",
+   "quote": "The Press may use AI-detection software to review manuscripts at any stage of publication.",
+   "claim": "the Press may use AI-detection software",
+   "modality": "stipulation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Press's AI guidelines",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F41": {
+   "source": "B9",
+   "locus": "foot",
+   "quote": "Revised 21 October 2026",
+   "claim": "the guidelines' date",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the Press's AI guidelines",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F42": {
+   "source": "B10",
+   "locus": "What is Classical Philology?",
+   "quote": "Classical Philology (CP) has been an internationally respected journal for the study of the life, languages, and thought of the ancient Greek and Roman world since 1906.",
+   "claim": "the journal's self-description at the department: internationally respected, for the study of the life, languages and thought of the Greek and Roman world, since 1906",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "its self-description",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F43": {
+   "source": "B10",
+   "locus": "What is Classical Philology?",
+   "quote": "CP covers a broad range of topics, including studies that illuminate aspects of the languages, literatures, history, art, philosophy, social life, material culture, religion, and reception of ancient Greece and Rome.",
+   "claim": "a broad range of topics, to the reception of ancient Greece and Rome",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "scope",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F44": {
+   "source": "B10",
+   "locus": "page title",
+   "quote": "What is Classical Philology?",
+   "claim": "the journal's page at the department is titled with the discipline's question",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the homonym",
+   "date": "fetched 2026-11-17",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B10.txt (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F45": {
+   "source": "B11",
+   "locus": "#1783 §1",
+   "quote": "Crossref, journal ISSN 0009-837X, pulled 16 November 2026: 11,206 records, 1906–2026",
+   "claim": "Crossref's register: 11,206 records, 1906–2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the public record",
+   "date": "#1783, read 16 November 2026",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text data/texts/AXN-0CB6-text.md (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F46": {
+   "source": "B11",
+   "locus": "#1783 §8",
+   "quote": "Records with an abstract: 0. Records with a licence: 0.",
+   "claim": "no record carries an abstract or a licence",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": true,
+   "const": false,
+   "lineage": "the public record",
+   "date": "#1783, read 16 November 2026",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text data/texts/AXN-0CB6-text.md (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  },
+  "F47": {
+   "source": "B11",
+   "locus": "#1783 §8",
+   "quote": "Records with a full-text link: 10,703.",
+   "claim": "10,703 records carry a full-text link",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the public record",
+   "date": "#1783, read 16 November 2026",
+   "quote_ok": true,
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "checked_against": "saved text data/texts/AXN-0CB6-text.md (whitespace-normalised; multi-part quotes joined by ' … ', each part checked)"
+  }
+ },
+ "field_sources": {
+  "B1": "The University of Chicago Press: Journals — Classical Philology | Vol 121, No 4 (the current issue page)",
+  "B2": "The University of Chicago Press: Journals — Classical Philology: About (the About page)",
+  "B3": "jstor — Classical Philology | JSTOR",
+  "B4": "Wikipedia — Classical Philology (journal)",
+  "B5": "Hopkins Press — American Journal of Philology (a different journal)",
+  "B6": "Duotrope — Classical Philology (the listing whose snippet carries the journal's self-description)",
+  "B7": "Department of Classics, University of Chicago — Classical Philology: Instructions for Authors",
+  "B8": "The University of Chicago Press: Journals — Classical Philology: Instructions for authors (cp/instruct)",
+  "B9": "The University of Chicago Press — University of Chicago Press AI Guidelines",
+  "B10": "Department of Classics, University of Chicago — What is Classical Philology? (the journal's page at the department)",
+  "B11": "Crossref — the register of Classical Philology (ISSN 0009-837X), as #1783 reports it"
+ },
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6"
+  ],
+  "B_R": [
+   "B7",
+   "B8",
+   "B9",
+   "B10",
+   "B11"
+  ]
+ },
+ "sources": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "The University of Chicago Press: Journals — Classical Philology | Vol 121, No 4 (the current issue page)",
+   "url": "https://www.journals.uchicago.edu/toc/cp/current",
+   "kind": "the journal's current-issue page at the Press (panel card 1)",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.journals.uchicago.edu/toc/cp/current",
+      "at": "2026-11-17T16:52:41Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_of_refusal": "5bd7a183b9bbeccc8023fb126e5bef9d1640d3b8e9d66d84f2c311b6c1547210",
+      "result": "unreachable: HTTP 403; one request with the row's agent string, not retried by another route"
+     }
+    ],
+    "note": "journals.uchicago.edu refused this session's fetches on 2026-11-17 (the brief) and refused again; the card's snippet stands as its only text"
+   },
+   "files": {},
+   "card_title": "Classical Philology | Vol 121, No 4",
+   "card_site": "The University of Chicago Press: Journals",
+   "card_snippet": "Search * Ahead of Print book reviews Forthcoming articles * Submit manuscript * About Classical Philology Editorial policy and publication ethics Advertise in C...",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-philology-journal-aio-20261117",
+     "panel_card": 1
+    }
+   ],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "The University of Chicago Press: Journals — Classical Philology: About (the About page)",
+   "url": "https://www.journals.uchicago.edu/journals/cp/about",
+   "kind": "the journal's About page at the Press (panel card 2)",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.journals.uchicago.edu/journals/cp/about",
+      "at": "2026-11-17T16:52:42Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_of_refusal": "3b9f43cc5aed0047b8dbcfe6debd0f66d025fdc0827bbfa5fcae3e06ddc96d9b",
+      "result": "unreachable: HTTP 403; one request, not retried"
+     }
+    ],
+    "note": "the card's snippet stands as its only text"
+   },
+   "files": {},
+   "card_title": "Classical Philology: About - The University of Chicago Press: Journals",
+   "card_site": "The University of Chicago Press: Journals",
+   "card_snippet": "ABOUT THE JOURNAL. Frequency: 4 issues/year. ISSN: 0009-837X E-ISSN: 1546-072X 2025 CiteScore*: 1.0. Ranked #15 out of 196 “Classics” journals. Classical Philol...",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-philology-journal-aio-20261117",
+     "panel_card": 2
+    }
+   ],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "jstor — Classical Philology | JSTOR",
+   "url": "https://www.jstor.org/journal/classphil",
+   "kind": "the journal's JSTOR page (panel card 3)",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.jstor.org/journal/classphil",
+      "at": "2026-11-17T16:52:42Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_raw": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "result": "unreachable: HTTP 200 carrying a bot check ('Client Challenge … A required part of this site couldn’t load'); saved as B3-challenge.txt; one request, not retried"
+     }
+    ],
+    "note": "the card's snippet stands as its only text"
+   },
+   "files": {
+    "B3-challenge.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B3-challenge.txt",
+     "sha256": "706dc1d968af0013dab6e94349257135705fab7b228a5c5b164fb89383e27886"
+    }
+   },
+   "card_title": "Classical Philology | JSTOR",
+   "card_site": "jstor",
+   "card_snippet": "Journal: Classical Philology (ISSN: 0009837X, EISSN: 1546072X) Publisher: The University of Chicago Press Scope: International study of the life, languages, and...",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-philology-journal-aio-20261117",
+     "panel_card": 3
+    }
+   ],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "Wikipedia — Classical Philology (journal)",
+   "url": "https://en.wikipedia.org/wiki/Classical_Philology_(journal)",
+   "kind": "the entity's Wikipedia article (stub), a panel card of T and the article the operator opened from the panel",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://en.wikipedia.org/wiki/Classical_Philology_(journal)",
+      "at": "2026-11-17T16:52:42Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_raw": "b122e90b0bd3b0cf88871b85d75089945c1ea0a46d3f9d93bbe8128b25d1bbf0",
+      "result": "read: rendered page saved as text, B4.txt (oldid 1367736048, last edited 4 August 2026)"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Classical_Philology_(journal)&action=raw",
+      "at": "2026-11-17T16:52:42Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_raw": "29e4aa20608b9fcf487bc477d00f2ddfff1bad97e979f1ed9d5ad32e034431a4",
+      "result": "read: raw wikitext, B4-wiki.txt"
+     }
+    ],
+    "companion": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt",
+     "sha256": "acdf994aa229bf6035dec5fa38c8a46bac74c9043c7db39003bb513a5e342976",
+     "from_": "rebuild/capture-registry/intake-20261117-cp/companion-wikipedia.txt",
+     "note": "the operator's paste of the article as he opened it from the panel, 2026-11-17 (with the related-articles block his view showed); the brief names it a B_R source; under §3.1(a) a source in both pools is carried once, in B_D, so it is carried here as a second saved text of B4, dated as pasted, outside T"
+    },
+    "note": "rendered and raw read; the companion paste is the article as the operator saw it the same morning"
+   },
+   "files": {
+    "B4.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4.txt",
+     "sha256": "c1eb915fad65136b13c6adf8b084ac476aa392d6a994a1259f451871d5272b22"
+    },
+    "B4-wiki.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-wiki.txt",
+     "sha256": "29e4aa20608b9fcf487bc477d00f2ddfff1bad97e979f1ed9d5ad32e034431a4"
+    },
+    "B4-companion-paste.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B4-companion-paste.txt",
+     "sha256": "acdf994aa229bf6035dec5fa38c8a46bac74c9043c7db39003bb513a5e342976"
+    }
+   },
+   "card_title": "Classical Philology (journal) - Wikipedia",
+   "card_site": "Wikipedia",
+   "card_snippet": "Classical Philology (journal). Article · Talk. Language; Download PDF; Save; Edit. For the subject, see classical philology and Classics. Classical Philology is...",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-philology-journal-aio-20261117",
+     "panel_card": 4
+    }
+   ],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "Hopkins Press — American Journal of Philology (a different journal)",
+   "url": "https://www.press.jhu.edu/journals/american-journal-philology",
+   "kind": "the page of a different journal, the American Journal of Philology (panel card 5); recorded with its sense, a neighbour, never the entity",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.press.jhu.edu/journals/american-journal-philology",
+      "at": "2026-11-17T16:52:42Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_of_refusal": "b222060535ee33170444e072bc2c4a65104c5e194e34402c429843705f242541",
+      "result": "unreachable: HTTP 403; one request, not retried"
+     }
+    ],
+    "note": "the card's snippet stands as its only text"
+   },
+   "files": {},
+   "card_title": "American Journal of Philology | Hopkins Press",
+   "card_site": "Hopkins Press",
+   "card_snippet": "* Pub: Hopkins Press * Title: American Journal of Philology (AJP) * Editor: Rosa Andújar (Barnard College, Columbia University) * Founded: 1880 * Vol: 147 (2026...",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-philology-journal-aio-20261117",
+     "panel_card": 5
+    }
+   ],
+   "names_entity": "no (a different journal)",
+   "names_archive": "no"
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "Duotrope — Classical Philology (the listing whose snippet carries the journal's self-description)",
+   "url": null,
+   "kind": "Duotrope's listing for the journal (panel card 6)",
+   "fetched": {
+    "tried": [
+     {
+      "url": null,
+      "at": "2026-11-17T16:55Z",
+      "http": null,
+      "agent": null,
+      "result": "not located: two web searches by title and site returned no Duotrope listing URL for the journal; no page fetched"
+     }
+    ],
+    "note": "the card's snippet stands as its only text; its words are the journal's own self-description, read at B10"
+   },
+   "files": {},
+   "card_title": "Classical Philology",
+   "card_site": "Duotrope",
+   "card_snippet": "About Classical Philology (CP) has been an internationally respected journal for the study of the life, languages, and thought of the ancient Greek and Roman wo...",
+   "surfaced_by_T": [
+    {
+     "slug": "classical-philology-journal-aio-20261117",
+     "panel_card": 6
+    }
+   ],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B7",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "Department of Classics, University of Chicago — Classical Philology: Instructions for Authors",
+   "url": "https://classics.uchicago.edu/classical-philology/instructions-authors",
+   "kind": "the journal's instructions for authors at the department (statement of editorial policy, submission, rights, reviews)",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://classics.uchicago.edu/classical-philology/instructions-authors",
+      "at": "2026-11-17T16:52:43Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_raw": "51811552a363c835326a2e24dccf4d24a6f4a7c5ba13e365f4efe06cc8815998",
+      "result": "read: saved as text, B7.txt"
+     }
+    ],
+    "note": "the page states no rule on AI and no assignment of copyright; it grants the journal the right of first publication"
+   },
+   "files": {
+    "B7.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B7.txt",
+     "sha256": "aafdab465508e51028ee6d96e91c6706f156b711a742a8a87e372f9f3e600849"
+    }
+   },
+   "surfaced_by_T": [],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B8",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "The University of Chicago Press: Journals — Classical Philology: Instructions for authors (cp/instruct)",
+   "url": "https://www.journals.uchicago.edu/journals/cp/instruct",
+   "kind": "the journal's instructions page at the Press, where #1783 §8.2 read the AI rule and the copyright assignment",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.journals.uchicago.edu/journals/cp/instruct",
+      "at": "2026-11-17T16:52:43Z",
+      "http": 403,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_of_refusal": "67527318ffd86cf0a591c6848877214d1798874724caadc2bee41de026092f44",
+      "result": "unreachable: HTTP 403; one request, not retried"
+     }
+    ],
+    "note": "unread; what it holds enters through the archive's record of it (#1783 §8.2, read 16–17 November 2026)"
+   },
+   "files": {},
+   "surfaced_by_T": [],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "The University of Chicago Press — University of Chicago Press AI Guidelines",
+   "url": "https://press.uchicago.edu/resource/ai_guidelines.html",
+   "kind": "the publisher's AI guidelines, stated for its books",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://press.uchicago.edu/resource/ai_guidelines.html",
+      "at": "2026-11-17T16:52:43Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_raw": "46d851ea3c096eb54b14b1321ef85267664fa3e9074deda7bdf1316524d7b8fb",
+      "result": "read: saved as text, B9.txt"
+     }
+    ],
+    "note": "'Revised 21 October 2026'"
+   },
+   "files": {
+    "B9.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B9.txt",
+     "sha256": "5e3c74f79f2500bce564f5f379e981509ec0a9eba12a08496b953897a373a265"
+    }
+   },
+   "surfaced_by_T": [],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "Department of Classics, University of Chicago — What is Classical Philology? (the journal's page at the department)",
+   "url": "https://classics.uchicago.edu/classical-philology/what-classical-philology",
+   "kind": "the journal's own page at the department, linked from Wikipedia's external links as 'Classical Philology at the Department of Classics'; the source of the self-description Duotrope's card and T's first sentence carry",
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://classics.uchicago.edu/classical-philology/what-classical-philology",
+      "at": "2026-11-17T16:53:24Z",
+      "http": 200,
+      "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+      "sha256_raw": "8293ff5ab1ff8cdbebab19c91bcbc70be69968cfcdce157cd4fa18374740f54c",
+      "result": "read: saved as text, B10.txt"
+     }
+    ],
+    "note": "not surfaced by T; reached from B4's external link; the managing editor's contact details on the page are not ledgered"
+   },
+   "files": {
+    "B10.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/classical-philology-20261117/B10.txt",
+     "sha256": "5d9c80d057d7543cd00340c47ad9dda7567d35a259db3f9ecba7f885a979e06b"
+    }
+   },
+   "surfaced_by_T": [],
+   "names_entity": "yes",
+   "names_archive": "no"
+  },
+  {
+   "id": "B11",
+   "origin": "census_third_party",
+   "pool": "B_R",
+   "card": "Crossref — the register of Classical Philology (ISSN 0009-837X), as #1783 reports it",
+   "url": "https://api.crossref.org/journals/0009-837X/works",
+   "kind": "Crossref's register of the journal, read by the archive's census on 16 November 2026 and reported at #1783 §1 and §8; not re-harvested (the brief)",
+   "fetched": {
+    "tried": [],
+    "note": "not fetched by this row: cited to #1783 §1 and §8 (data/texts/AXN-0CB6-text.md), the harvest's raw response recorded there by its SHA-256 and not reseated (EA-CORPORA-40/16, #1782)"
+   },
+   "files": {
+    "AXN-0CB6-text.md": {
+     "path": "data/texts/AXN-0CB6-text.md",
+     "sha256": "40bd998c77ba5f4be8318dd5c1e4e7bc1f9c36a605784e29efb33f1d72541511"
+    }
+   },
+   "surfaced_by_T": [],
+   "names_entity": "yes",
+   "names_archive": "the census (#1783) reports the register"
+  }
+ ]
+}

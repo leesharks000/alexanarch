@@ -1,40 +1,153 @@
 {
+ "row": "sappho-31",
+ "address": "sappho 31",
+ "addresses": [
+  "Sappho 31",
+  "sappho 31"
+ ],
+ "extracted": "2026-10-07",
+ "extractor": "one extractor (unaudited, §3.8), 2026-10-07",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim (the 2026-10-07 extraction by HTTP-fetch excerpt), verified by script on 2026-11-17 against the pages refetched and saved as text (whitespace and quotation marks normalised for the check; multi-part quotes joined by ' … ', each part checked); the title-only card quoted by its title as pasted; 49/49 verified (2026-11-17)",
+ "B_note": "The field in two pools (v0.10 §0.3, §3.1(a)), marked by origin and pool. B_D, the disclosed pool: T's six cards (B1 Wikipedia, B2 Literary Matters, B3 The Slowdown, B4 W. W. Norton, B5 EduBirdie, B6 YouTube, title only). B_R, the reference pool: not extended in this revision (the brief names no reference source; the poem has no own pages; its Wikipedia article is a card of T and is carried once, in B_D).",
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6"
+  ],
+  "B_R": []
+ },
+ "pages": "saved text under rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/ (Bn-*.txt, scripts and styles stripped; fetch-records.json holds url, time, HTTP code, agent, byte count and the raw response's sha256)",
  "field": [
   {
    "id": "B1",
    "card": "Wikipedia — Sappho 31",
    "url": "https://en.wikipedia.org/wiki/Sappho_31",
-   "fetched": "page text by HTTP fetch, verbatim excerpts 2026-10-07"
+   "origin": "card",
+   "pool": "B_D",
+   "fetched_20261007": "page text by HTTP fetch, verbatim excerpts 2026-10-07",
+   "fetched": {
+    "url": "https://en.wikipedia.org/wiki/Sappho_31",
+    "at": "2026-11-17T16:54:06Z",
+    "http": 200,
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "bytes": 227826,
+    "raw_sha256": "b06d936dcc52af9fe69877608a911023c5ebecdc486f899108033681da4c7b7e",
+    "note": "refetched for this revision so that every quote is verified by script against saved text (§3.1); text only, the raw response not kept (disk)"
+   },
+   "files": {
+    "B1-wikipedia-sappho-31.txt": {
+     "path": "rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt",
+     "sha256": "a8737fb2d6da8b8d866f84bcca7e1a67b0a2d6d4695b1701647f704e04149425"
+    }
+   }
   },
   {
    "id": "B2",
    "card": "Literary Matters — Sappho 31 - Chris Childers - Literary Matters",
    "url": "https://www.literarymatters.org/1-1-sappho-31/",
-   "fetched": "page text by HTTP fetch, verbatim excerpts 2026-10-07"
+   "origin": "card",
+   "pool": "B_D",
+   "fetched_20261007": "page text by HTTP fetch, verbatim excerpts 2026-10-07",
+   "fetched": {
+    "url": "https://www.literarymatters.org/1-1-sappho-31/",
+    "at": "2026-11-17T16:54:07Z",
+    "http": 200,
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "bytes": 87417,
+    "raw_sha256": "2873baa45e7c559e58c6ac456ce6103fec1297da735c8b310bf92fe6f7f95232",
+    "note": "refetched for this revision so that every quote is verified by script against saved text (§3.1); text only, the raw response not kept (disk)"
+   },
+   "files": {
+    "B2-literary-matters.txt": {
+     "path": "rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt",
+     "sha256": "1b83c2b46c85587bd53accaabe2a4fa9b950ba2f27ece5ecac7a03c54dcdd82a"
+    }
+   }
   },
   {
    "id": "B3",
    "card": "The Slowdown — 1185: Fragment 31 by Sappho, translated by Christopher Childers",
    "url": "https://www.slowdownshow.org/episode/2024/08/16/1185-fragment-31-by-sappho-translated-by-christopher-childers",
-   "fetched": "page text by HTTP fetch, verbatim excerpts 2026-10-07"
+   "origin": "card",
+   "pool": "B_D",
+   "fetched_20261007": "page text by HTTP fetch, verbatim excerpts 2026-10-07",
+   "fetched": {
+    "url": "https://www.slowdownshow.org/episode/2024/08/16/1185-fragment-31-by-sappho-translated-by-christopher-childers",
+    "at": "2026-11-17T16:54:08Z",
+    "http": 200,
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "bytes": 77595,
+    "raw_sha256": "637dbdf90dcdfcc5ebe3e3424ad948102c7512d2c9cbf83c9b8636df6efa97b5",
+    "note": "refetched for this revision so that every quote is verified by script against saved text (§3.1); text only, the raw response not kept (disk)"
+   },
+   "files": {
+    "B3-slowdown.txt": {
+     "path": "rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B3-slowdown.txt",
+     "sha256": "3dd35e9a50966e45a1c739853cb726b3ba3909c39bf423f2c88c3cd092723beb"
+    }
+   }
   },
   {
    "id": "B4",
    "card": "W. W. Norton & Company — TRANSLATION LAB: Sappho, Poem 31 - W.W. Norton",
    "url": "https://nerd.wwnorton.com/ebooks/epub/worldlit5/EPUB/content/1.2.3.0.0.0-chapter04.xhtml",
-   "fetched": "page text by HTTP fetch, verbatim excerpts 2026-10-07"
+   "origin": "card",
+   "pool": "B_D",
+   "fetched_20261007": "page text by HTTP fetch, verbatim excerpts 2026-10-07",
+   "fetched": {
+    "url": "https://nerd.wwnorton.com/ebooks/epub/worldlit5/EPUB/content/1.2.3.0.0.0-chapter04.xhtml",
+    "at": "2026-11-17T16:54:09Z",
+    "http": 200,
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "bytes": 18664,
+    "raw_sha256": "e7719ef319ff3bb135f1fe6090ff240aecbff00a4f7b0d5063ba8dbcf6c1588d",
+    "note": "refetched for this revision so that every quote is verified by script against saved text (§3.1); text only, the raw response not kept (disk)"
+   },
+   "files": {
+    "B4-norton.txt": {
+     "path": "rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt",
+     "sha256": "fe401115446a85131a48ab351822457b28ede6c40412524971c1bb84f4f5a916"
+    }
+   }
   },
   {
    "id": "B5",
    "card": "EduBirdie — Sappho's Fragment 31: Jealousy, Desire, Longing",
    "url": "https://hub.edubirdie.com/examples/analysis-of-sapphos-fragment-31-in-the-light-of-jealousy-the-triangle-of-desire-and-erotic-longing/",
-   "fetched": "page text by HTTP fetch, verbatim excerpts 2026-10-07"
+   "origin": "card",
+   "pool": "B_D",
+   "fetched_20261007": "page text by HTTP fetch, verbatim excerpts 2026-10-07",
+   "fetched": {
+    "url": "https://hub.edubirdie.com/examples/analysis-of-sapphos-fragment-31-in-the-light-of-jealousy-the-triangle-of-desire-and-erotic-longing/",
+    "at": "2026-11-17T16:54:10Z",
+    "http": 200,
+    "agent": "Mozilla/5.0 (compatible; alexanarch-non)",
+    "bytes": 117762,
+    "raw_sha256": "02501a53e962d2ea665be324fe7d36e07a71f1c13b50576dcdd58d6462a49d0d",
+    "note": "refetched for this revision so that every quote is verified by script against saved text (§3.1); text only, the raw response not kept (disk)"
+   },
+   "files": {
+    "B5-edubirdie.txt": {
+     "path": "rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B5-edubirdie.txt",
+     "sha256": "8385e6b779809fc8cad9795934de97a4dfeeeb9774b1960e526f1d86a4d9e9fd"
+    }
+   }
   },
   {
    "id": "B6",
    "card": "YouTube·Octo — Read Ancient Greek: Sappho 31 (29:47)",
    "url": null,
-   "fetched": "not fetched: YouTube, title only (rule)"
+   "origin": "card",
+   "pool": "B_D",
+   "fetched_20261007": "not fetched: YouTube, title only (rule)",
+   "fetched": {
+    "note": "not fetched: YouTube, title only (rule); the title verified against the paste"
+   },
+   "files": {}
   }
  ],
  "field_claims": {
@@ -46,7 +159,10 @@
    "modality": "stipulation",
    "kernel": true,
    "const": true,
-   "lineage": "s31-identity"
+   "lineage": "s31-identity",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F2": {
    "source": "B1",
@@ -56,7 +172,10 @@
    "modality": "documented",
    "kernel": false,
    "const": true,
-   "lineage": "s31-names"
+   "lineage": "s31-names",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F3": {
    "source": "B1",
@@ -66,7 +185,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-names"
+   "lineage": "s31-names",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F4": {
    "source": "B1",
@@ -76,7 +198,10 @@
    "modality": "documented",
    "kernel": true,
    "const": false,
-   "lineage": "s31-subject-love"
+   "lineage": "s31-subject-love",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F5": {
    "source": "B1",
@@ -86,7 +211,10 @@
    "modality": "documented",
    "kernel": false,
    "const": true,
-   "lineage": "s31-preserved-by-longinus"
+   "lineage": "s31-preserved-by-longinus",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F6": {
    "source": "B1",
@@ -96,7 +224,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-incomplete"
+   "lineage": "s31-incomplete",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F7": {
    "source": "B1",
@@ -106,7 +237,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-incomplete"
+   "lineage": "s31-incomplete",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F8": {
    "source": "B1",
@@ -116,7 +250,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-metre"
+   "lineage": "s31-metre",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F9": {
    "source": "B1",
@@ -126,7 +263,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-dialect"
+   "lineage": "s31-dialect",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F10": {
    "source": "B1",
@@ -136,7 +276,10 @@
    "modality": "documented",
    "kernel": false,
    "const": true,
-   "lineage": "s31-scene"
+   "lineage": "s31-scene",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F11": {
    "source": "B1",
@@ -146,7 +289,10 @@
    "modality": "contested",
    "kernel": true,
    "const": false,
-   "lineage": "s31-context-debated"
+   "lineage": "s31-context-debated",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F12": {
    "source": "B1",
@@ -156,7 +302,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-wedding-song"
+   "lineage": "s31-wedding-song",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F13": {
    "source": "B1",
@@ -166,7 +315,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-wedding-song"
+   "lineage": "s31-wedding-song",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F14": {
    "source": "B1",
@@ -176,7 +328,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-that-man"
+   "lineage": "s31-that-man",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F15": {
    "source": "B1",
@@ -186,7 +341,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-that-man"
+   "lineage": "s31-that-man",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F16": {
    "source": "B1",
@@ -196,7 +354,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-jealousy"
+   "lineage": "s31-jealousy",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F17": {
    "source": "B1",
@@ -206,7 +367,10 @@
    "modality": "contested",
    "kernel": false,
    "const": false,
-   "lineage": "s31-jealousy"
+   "lineage": "s31-jealousy",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F18": {
    "source": "B1",
@@ -216,7 +380,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-jealousy"
+   "lineage": "s31-jealousy",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F19": {
    "source": "B1",
@@ -226,7 +393,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-jealousy"
+   "lineage": "s31-jealousy",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F20": {
    "source": "B1",
@@ -236,7 +406,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-final-line"
+   "lineage": "s31-final-line",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F21": {
    "source": "B1",
@@ -246,7 +419,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-opening-text"
+   "lineage": "s31-opening-text",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F22": {
    "source": "B1",
@@ -256,7 +432,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-symptoms"
+   "lineage": "s31-symptoms",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F23": {
    "source": "B1",
@@ -266,7 +445,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-fame"
+   "lineage": "s31-fame",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F24": {
    "source": "B1",
@@ -276,7 +458,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-fame"
+   "lineage": "s31-fame",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F25": {
    "source": "B1",
@@ -286,7 +471,10 @@
    "modality": "documented",
    "kernel": true,
    "const": false,
-   "lineage": "s31-catullus-51"
+   "lineage": "s31-catullus-51",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F26": {
    "source": "B1",
@@ -296,7 +484,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-ancient-adaptation"
+   "lineage": "s31-ancient-adaptation",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F27": {
    "source": "B1",
@@ -306,7 +497,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-preserved-by-longinus"
+   "lineage": "s31-preserved-by-longinus",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F28": {
    "source": "B1",
@@ -316,7 +510,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-ancient-adaptation"
+   "lineage": "s31-ancient-adaptation",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F29": {
    "source": "B1",
@@ -326,7 +523,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-modern-reception"
+   "lineage": "s31-modern-reception",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B1-wikipedia-sappho-31.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F30": {
    "source": "B2",
@@ -336,7 +536,10 @@
    "modality": "documented",
    "kernel": true,
    "const": false,
-   "lineage": "s31-preserved-by-longinus"
+   "lineage": "s31-preserved-by-longinus",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F31": {
    "source": "B2",
@@ -346,7 +549,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-longinus-concourse"
+   "lineage": "s31-longinus-concourse",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F32": {
    "source": "B2",
@@ -356,7 +562,10 @@
    "modality": "contested",
    "kernel": false,
    "const": false,
-   "lineage": "s31-context-debated"
+   "lineage": "s31-context-debated",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F33": {
    "source": "B2",
@@ -366,7 +575,10 @@
    "modality": "interpretation",
    "kernel": true,
    "const": false,
-   "lineage": "s31-multivalence"
+   "lineage": "s31-multivalence",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F34": {
    "source": "B2",
@@ -376,7 +588,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-incomplete"
+   "lineage": "s31-incomplete",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F35": {
    "source": "B2",
@@ -386,7 +601,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-catullus-51"
+   "lineage": "s31-catullus-51",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B2-literary-matters.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F36": {
    "source": "B3",
@@ -396,7 +614,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-date"
+   "lineage": "s31-date",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B3-slowdown.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F37": {
    "source": "B3",
@@ -406,7 +627,10 @@
    "modality": "interpretation",
    "kernel": true,
    "const": false,
-   "lineage": "s31-jealousy"
+   "lineage": "s31-jealousy",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B3-slowdown.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F38": {
    "source": "B4",
@@ -416,7 +640,10 @@
    "modality": "documented",
    "kernel": true,
    "const": true,
-   "lineage": "s31-scene"
+   "lineage": "s31-scene",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F39": {
    "source": "B4",
@@ -426,7 +653,10 @@
    "modality": "interpretation",
    "kernel": false,
    "const": false,
-   "lineage": "s31-symptoms"
+   "lineage": "s31-symptoms",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F40": {
    "source": "B4",
@@ -436,7 +666,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-incomplete"
+   "lineage": "s31-incomplete",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F41": {
    "source": "B4",
@@ -446,7 +679,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-final-line"
+   "lineage": "s31-final-line",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F42": {
    "source": "B4",
@@ -456,7 +692,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-catullus-51"
+   "lineage": "s31-catullus-51",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F43": {
    "source": "B4",
@@ -466,7 +705,10 @@
    "modality": "interpretation",
    "kernel": false,
    "const": false,
-   "lineage": "s31-subject-love"
+   "lineage": "s31-subject-love",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F44": {
    "source": "B4",
@@ -476,7 +718,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-symptoms"
+   "lineage": "s31-symptoms",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B4-norton.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F45": {
    "source": "B5",
@@ -486,7 +731,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-jealousy"
+   "lineage": "s31-jealousy",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B5-edubirdie.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F46": {
    "source": "B5",
@@ -496,7 +744,10 @@
    "modality": "contested",
    "kernel": true,
    "const": false,
-   "lineage": "s31-that-man"
+   "lineage": "s31-that-man",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B5-edubirdie.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F47": {
    "source": "B5",
@@ -506,7 +757,10 @@
    "modality": "attributed",
    "kernel": false,
    "const": false,
-   "lineage": "s31-longinus-concourse"
+   "lineage": "s31-longinus-concourse",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B5-edubirdie.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F48": {
    "source": "B5",
@@ -516,7 +770,10 @@
    "modality": "documented",
    "kernel": false,
    "const": false,
-   "lineage": "s31-wedding-song"
+   "lineage": "s31-wedding-song",
+   "pool": "B_D",
+   "checked_against": "the saved text rebuild/negative-of-the-negative/v010/revise-sappho31-20261117/sources/B5-edubirdie.txt (fetched 2026-11-17)",
+   "quote_ok": true
   },
   "F49": {
    "source": "B6",
@@ -526,7 +783,13 @@
    "modality": "self-description",
    "kernel": false,
    "const": false,
-   "lineage": "s31-greek-reading"
+   "lineage": "s31-greek-reading",
+   "pool": "B_D",
+   "title_only": true,
+   "checked_against": "the paste (datasets/negative-of-the-negative/v2/intake/battery-1b-20261007/paste-sappho-31.txt), the card's title",
+   "quote_ok": true
   }
- }
+ },
+ "revised": "2026-11-17",
+ "revision_extractor": "Claude (Opus 5.5), subagent, 2026-11-17 (no field claim added, changed or removed; the pools marked and the quotes verified)"
 }

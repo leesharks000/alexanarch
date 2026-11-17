@@ -1,0 +1,139 @@
+{
+ "row": "ancient-philosophy",
+ "address": "What are some recent debates surrounding the journal Ancient Philosophy?",
+ "entity": "Ancient Philosophy, a peer-reviewed journal devoted to ancient Greek and Roman philosophy and science, established 1980, edited by Ronald Polansky in the Department of Philosophy at Duquesne University, published by the Philosophy Documentation Center (on behalf of Mathesis Publications, which holds copyright), ISSN 0740-2007 (print), 2154-4689 (online)",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "ancient-philosophy",
+  "address": "What are some recent debates surrounding the journal Ancient Philosophy?",
+  "entity": "Ancient Philosophy, a peer-reviewed journal devoted to ancient Greek and Roman philosophy and science, established 1980, edited by Ronald Polansky in the Department of Philosophy at Duquesne University, published by the Philosophy Documentation Center (on behalf of Mathesis Publications, which holds copyright), ISSN 0740-2007 (print), 2154-4689 (online)",
+  "row_type": "C (a public entity on which the archive bears: the journal Ancient Philosophy; the archive's author approached it three times with Socrates as Orthonym and its successors, July–September 2026, and the archive's census measures it, #1773)",
+  "aliases": [
+   {
+    "pattern": "(?<!Studies in )(?<!Journal of )(?<!History of )(?<!Revista de )(?<!Society for )\\bAncient Philosophy\\b(?! Today| Society| and the| \\(the field)",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bPolansky\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bDuquesne\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "\\bAnc\\. Philos\\.",
+    "flags": ""
+   },
+   {
+    "pattern": "\\b(0740-2007|2154-4689)\\b",
+    "flags": ""
+   }
+  ],
+  "classes": [
+   {
+    "term": "specialist journals of ancient Greek and Roman philosophy",
+    "pattern": "\\b(ancient[- ]philosophy journals?|journals? of ancient (Greek and Roman )?philosophy|specialist (ancient[- ]philosophy |philosophy )?journals?)\\b",
+    "flags": "i",
+    "basis": "field: B7 (Wikipedia, Ancient Philosophy (journal): 'a peer-reviewed academic journal devoted to the study of ancient Greek and Roman philosophy and science'; category 'Ancient philosophy journals'); B4 (the journal's PDC page: 'a peer-reviewed journal devoted to the publication of original articles, discussions, and reviews in ancient Greek and Roman philosophy and science')."
+   },
+   {
+    "term": "journal rules on generative AI in submissions",
+    "pattern": "\\b(A\\.I\\. participation|AI-authored|composed by A\\.?I\\.?|generative AI to contribute|AI (submission )?polic(y|ies))\\b",
+    "flags": "i",
+    "basis": "field: B6 (the journal's Submission Guidelines: 'Authors must confirm that they have not used generative AI to contribute to the content, style, or citations of manuscripts submitted to Ancient Philosophy'); T's second section, sourced to B1 (#1773)."
+   }
+  ],
+  "classes_note": "Two classes, each sourced by a readable field source: (1) specialist journals of ancient Greek and Roman philosophy, the journal's kind as its own page (B4) and Wikipedia (B7) give it; (2) journal rules on generative AI in submissions, from the journal's own Submission Guidelines (B6). The field 'ancient philosophy' (lower case) is the homonym and is not an alias; 'Ancient Philosophy Today: Dialogoi', the Ancient Philosophy Society, Oxford Studies in Ancient Philosophy and Revista de Filosofia Antiga ('Journal of Ancient Philosophy') are distinct entities and are excluded from the alias. Admission by reading (§3.4): a bare mention, a keyword list, a reference-list line, a heading that names the field, or a machine composition quoted in a capture is not a claim.",
+  "exclude_deposits": [],
+  "notes": "entity-keyed pass, 2026-11-17, on rebuild/negative-of-the-negative/v010/BRIEF-NEW-ROW-ANCIENT-PHILOSOPHY.md; capture ancient-philosophy-recent-debates-chatgpt-20261117 (ADDR-7e18cf9889fa, OBS-275f68dd4b92, AXN:0CB4), ChatGPT, signed out, incognito, two turns. Config kept in the row's intake folder (the brief names no panel/configs path for this row). Hop from #1773, #1771, #123, #1754, #1783.",
+  "hop_from": [
+   1773,
+   1771,
+   123,
+   1754,
+   1783
+  ]
+ },
+ "texts_scanned": 1777,
+ "counts": {
+  "D_sentences": 92,
+  "D_deposits": 18,
+  "R_sentences": 5,
+  "R_deposits": 5,
+  "O_direct": 23,
+  "O_class": 20,
+  "O_deposits": 27,
+  "H_candidates": 138
+ },
+ "per_deposit": {
+  "D": {
+   "617": 2,
+   "1444": 1,
+   "1569": 2,
+   "1570": 1,
+   "1574": 2,
+   "1575": 1,
+   "1576": 9,
+   "1599": 2,
+   "1605": 2,
+   "1658": 1,
+   "1660": 1,
+   "1750": 2,
+   "1754": 1,
+   "1766": 1,
+   "1771": 2,
+   "1772": 27,
+   "1773": 27,
+   "1783": 8
+  },
+  "R": {
+   "1576": 1,
+   "1599": 1,
+   "1660": 1,
+   "1750": 1,
+   "1772": 1
+  },
+  "O": {
+   "66": 1,
+   "122": 1,
+   "784": 1,
+   "876": 1,
+   "1039": 1,
+   "1181": 1,
+   "1182": 1,
+   "1199": 1,
+   "1356": 1,
+   "1357": 1,
+   "1364": 1,
+   "1444": 1,
+   "1540": 3,
+   "1569": 1,
+   "1574": 1,
+   "1576": 2,
+   "1599": 1,
+   "1605": 1,
+   "1703": 1,
+   "1714": 2,
+   "1750": 2,
+   "1754": 1,
+   "1766": 1,
+   "1771": 2,
+   "1772": 5,
+   "1773": 5,
+   "1783": 3
+  }
+ },
+ "registry_entity_triples": [],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "4c30914ec3a41a652cabdf157ae9e21f5ab01ed0c433c89be2d7042268b98813",
+  "candidates-R.jsonl": "39baa06a5f7ebe4c3a2f3e4f024474723dfc2fbcef6f29e570287a8539d5d865",
+  "candidates-O.jsonl": "efd63f9596b1e8305babae76fbb9bff0feb1e63bd541d85567ecf28c59aecd2c",
+  "candidates-H.jsonl": "6cd17209321784088a9a612f65a54c58b7f8557dcfef27575a7842e2bf93cd19"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11089
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}

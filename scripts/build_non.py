@@ -1208,7 +1208,7 @@ def main():
             links["field_record"] = RF[k]["url"]
         # 2026-11-14: a row's own links (e.g. hologram, hologram_kernel: the framework hologram that cites the entry) are carried
         for kk, vv in ((r or {}).get("links") or {}).items():
-            links.setdefault(kk, vv)
+            links.setdefault(kk, f"{BASE}{vv}" if isinstance(vv, str) and vv.startswith("/") else vv)  # 2026-11-17: site paths made absolute
         links["dataset"] = HF_NON
         links = {kk: vv for kk, vv in links.items() if vv}
         ax = AX.get(k)
