@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-17T05:40:50Z",
+  "regenerated_at": "2026-11-17T14:36:29Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "f214f6fc02f56d64fa55192de20ef647c18b422f1a7684a23af3102f47ccfd22",
+    "mm-main-capture": "bd2655976ac111b003cfc5bd1607e4ad9b2baa13c8758221cedfaf12cb158e6e",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2821,
-  "total_observations": 1406,
+  "total_addresses": 2822,
+  "total_observations": 1407,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1068,
+    "observed_address": 1069,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1941,
+    "unmatched": 1942,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -18090,6 +18090,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "classical philology journal": {
+      "canonical_query": "classical philology journal",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-17",
+          "status": "'CLASSICAL PHILOLOGY JOURNAL' ON THE OVERVIEW, SIGNED OUT — THE JOURNAL COMPOSED FROM ITS OWN SELF-DESCRIPTION AND ITS MASTHEAD; NOTHING IT HAS DECIDED; A BASELINE FOR TRACKING",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Institutions",
+          "slug": "classical-philology-journal-aio-20261117",
+          "gallery_url": "https://www.alexanarch.org/captures/#classical-philology-journal-aio-20261117",
+          "record_url": "https://www.alexanarch.org/captures/classical-philology-journal-aio-20261117/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#classical-philology-journal-aio-20261117",
+          "details_excerpt": "'CLASSICAL PHILOLOGY JOURNAL' ON THE OVERVIEW, SIGNED OUT: the journal composed from its own self-description and its masthead (1906, the Press, the editor, two ISSNs, a scope list); nothing of what it has published or d"
+        }
+      ],
+      "originator": {
+        "name": "Classical Philology",
+        "relation": "external",
+        "entity_type": "institution",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: Classical Philology, University of Chicago Press for the Department of Classics, University of Chicago (ISSN 0009-837X, 1546-072X). The journal of the census Dead Letters (working notebook, not yet deposited) and of the decline of ΦΑΙΝΕΤΑΙ ΜΟΙ (#1774). Recorded 2026-11-17."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-17",
+      "latest_status": "'CLASSICAL PHILOLOGY JOURNAL' ON THE OVERVIEW, SIGNED OUT — THE JOURNAL COMPOSED FROM ITS OWN SELF-DESCRIPTION AND ITS MASTHEAD; NOTHING IT HAS DECIDED; A BASELINE FOR TRACKING"
     },
     "classical reception": {
       "canonical_query": "classical reception",

@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.702",
+ "derived_from": "EA-WG-CAPTURES-01 v12.703",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,17 +14,17 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1295,
+  "observations": 1296,
   "joined_confirmed": 518,
-  "unjoined": 777,
-  "relations": 6871,
+  "unjoined": 778,
+  "relations": 6873,
   "by_state": {
-   "confirmed": 5449,
+   "confirmed": 5451,
    "candidate": 1422
   },
   "by_verb": {
    "appeared_in": 1984,
-   "held_by": 2670,
+   "held_by": 2672,
    "scored_by": 1040,
    "about": 1159,
    "distorts": 5,
@@ -3051,6 +3051,8 @@
 {"id": "REL-ca4daad79bfe", "obs_id": "OBS-2211c8d30212", "entry": "classical-receptions-journal-ai-mediation-aio-20261110-20261114", "obs_slug": "classical-receptions-journal-ai-mediation-aio-20261110-20261114", "date": "2026-11-14", "surface": "Google AI Overview", "q": "classical receptions journal", "verb": "about", "object": "non:ai-overview-capture-registry", "basis": "defining papers #833, #1423, #1676", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-71070583b307", "obs_id": "OBS-2211c8d30212", "entry": "classical-receptions-journal-ai-mediation-aio-20261110-20261114", "obs_slug": "classical-receptions-journal-ai-mediation-aio-20261110-20261114", "date": "2026-11-14", "surface": "Google AI Overview", "q": "classical receptions journal", "verb": "about", "object": "non:classical-receptions-journal", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-6c43a497be9b", "obs_id": "OBS-2211c8d30212", "entry": "classical-receptions-journal-ai-mediation-aio-20261110-20261114", "obs_slug": "classical-receptions-journal-ai-mediation-aio-20261110-20261114", "date": "2026-11-14", "surface": "Google AI Overview", "q": "classical receptions journal", "verb": "about", "object": "non:google-ai-overviews", "basis": "defining papers #833, #1423", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-ec88d24e2df8", "obs_id": "OBS-d11d0d89a3e2", "entry": "classical-philology-journal-aio-20261117", "obs_slug": "classical-philology-journal-aio-20261117", "date": "2026-11-17", "surface": "Google AI Overview", "q": "classical philology journal", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e021fdc804ac", "obs_id": "OBS-d11d0d89a3e2", "entry": "classical-philology-journal-aio-20261117", "obs_slug": "classical-philology-journal-aio-20261117", "date": "2026-11-17", "surface": "Google AI Overview", "q": "classical philology journal", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-9c03b8e1222b", "obs_id": "OBS-f4ff7bf0d318", "entry": "capture-registry-self", "obs_slug": "capture-registry-self", "date": "2026-06-15", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-0540ae3ef1da", "obs_id": "OBS-f4ff7bf0d318", "entry": "capture-registry-self", "obs_slug": "capture-registry-self", "date": "2026-06-15", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-d8072f3db763", "obs_id": "OBS-f4ff7bf0d318", "entry": "capture-registry-self", "obs_slug": "capture-registry-self", "date": "2026-06-15", "surface": "Google AI Overview", "q": "AI overview capture registry", "verb": "about", "object": "non:ai-overview-capture-registry", "basis": "issued string of the entity", "kind": "interpretive", "state": "candidate"},
