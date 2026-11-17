@@ -60,6 +60,17 @@ It was read here in 2^22-point spectra (0.70 Hz × 1.43 s) over 1665.64380–166
 - The most economical account is a selected fluctuation, possibly with weak X-polarized interference, at the comet-frame coordinate. Nothing here establishes a source.
 - Only data not used in its selection can settle it: another session at this frequency, or another node or instrument that saw the same sky at the same time.
 
+## Reading C03 as a voltage (2026-11-16, 20:55 EST: "can we read it?")
+
+C03's band was extracted from the voltages as a complex time series in both polarizations (`baseband.py`). Each block was mixed down to the scan's mid-track topocentric frequency, with the mixer phase continuous across blocks and files, and boxcar-decimated to 715.26 Hz for 299.9 s per scan. `read_c03.py` removes the comet's drift (−0.109 to −0.126 Hz/s by scan), so that a comet-frame carrier sits at 0 Hz.
+
+- **Coherence.** A carrier that holds its phase for 300 s rises far above the incoherent result in a full-scan FFT at 3.3 mHz. In the ±2.5 Hz band around the track, the band power is z −0.70, −0.57 and +1.21 (X) and −0.09, −0.11 and +1.43 (Y) in the ON scans, and z −1.0 to +1.16 in the OFF scans. The strongest single bin in the band is matched or exceeded at 4–98% of the control bands. No coherent carrier is present at C03.
+- **X–Y correlation.** A signal in the sky correlates the two polarizations. At the track the correlation is 0.013, 0.049 and 0.006 in the ON scans and 0.017, 0.051 and 0.022 in the OFF scans, against a control median of about 0.023. Nothing is consistent from scan to scan.
+- **The X excess of the 0.70 Hz power analysis** (about 1.5σ per ON scan in X) does not reappear in the full-scan band power of the same polarization. An excess that changes with the estimator is behaving like a fluctuation.
+- **Audio.** Each `out/c03_scanSCAN.wav` holds the ±25 Hz band around the track, shifted to 600 Hz at 8 kHz, with X on the left channel and Y on the right. Each `out/ctrl_scanSCAN.wav` holds the same band at +100 Hz. The files are hashed but not committed.
+
+**Read as a voltage, C03 is noise.** At about 1.5σ per 300 s it could carry essentially no information. The one measurement that would tell an artificial carrier from a fluctuation in these bytes is coherence, and it finds none.
+
 ## Limits
 - One node (blc23) of the GBT session, two coarse channels, one resolution (5.59 Hz) for the candidate tracking.
 - The public selection was at 2.79 Hz. A 2^20 rerun at that resolution is the next check for C03.
