@@ -71,6 +71,12 @@ C03's band was extracted from the voltages as a complex time series in both pola
 
 **Read as a voltage, C03 is noise.** At about 1.5σ per 300 s it could carry essentially no information. The one measurement that would tell an artificial carrier from a fluctuation in these bytes is coherence, and it finds none.
 
+**Without removing the comet's drift** (2026-11-16, 21:34 EST: "howd it read if you dont remove the comets drift?"; `read_c03_nodrift.py`, `out/read_c03_nodrift.json`):
+- *Fixed at the scan's mid-track frequency*, the receiver frame with no dechirp: the band power in ±2.5 Hz is z −0.96, −2.73 and −1.91 (X) and +0.31, +0.33 and −0.59 (Y) in the ON scans, and −1.40 to +1.54 in the OFF scans. The X–Y correlation is 0.026–0.043 in the ON scans against a control median of about 0.02, a share of 13–43% at or above it. Removing the drift is not what hides anything. Without it, the X band in the ON scans falls slightly below its surroundings.
+- *Fixed at the receiver-frame coordinate* of the ChatGPT S-band audit (1665644304.70 Hz, 0.1–187 Hz from the track mid by scan): in the ON scans X runs −0.90 to +0.93 and Y −2.56 to +0.82. The largest value is in OFF 0016 (X +1.68, Y +2.40). There is no ON preference.
+- *Any drift, coherently*: dechirped at every rate from −0.5 to +0.5 Hz/s (0.002 steps), each scan's strongest 3.3 mHz bin within ±25 Hz of the track is 11.2–12.0 times the median. The same search at six control centres (±100, ±150, ±200 Hz) gives 10.8–13.6, and the best rates scatter (−0.35 to +0.49 Hz/s).
+- *Read at any drift, C03's band holds no coherent tone stronger than the noise around it.*
+
 ## Limits
 - One node (blc23) of the GBT session, two coarse channels, one resolution (5.59 Hz) for the candidate tracking.
 - The public selection was at 2.79 Hz. A 2^20 rerun at that resolution is the next check for C03.
