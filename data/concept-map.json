@@ -3,17 +3,17 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-11-17T04:07:44Z",
+  "generated_at": "2026-11-17T05:24:24Z",
   "totals": {
-    "deposits": 1781,
-    "concepts": 108,
-    "deposits_in_concepts": 267,
-    "singletons": 1514,
+    "deposits": 1782,
+    "concepts": 109,
+    "deposits_in_concepts": 269,
+    "singletons": 1513,
     "needs_review": 15,
     "program_families": 56
   },
   "basis_counts": {
-    "version/declared": 46,
+    "version/declared": 47,
     "version/implicit": 40,
     "version/explicit": 8,
     "version/superseded": 2,
@@ -891,6 +891,49 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1732/"
+        }
+      ]
+    },
+    {
+      "concept_id": "series-ea-corpora-40",
+      "concept_url": "https://www.alexanarch.org/s/concept/series-ea-corpora-40/",
+      "title_base": "the fortieth seating philology constituted classical philology 1906 1922 whole the discipline defined from wolf to usener the method from lachmann to housman the quarrel over the geburt der trag die the standing question from valla to bentley diels sandys and the census of classical philology",
+      "basis": "version/declared",
+      "version_series_id": "SERIES-EA-CORPORA-40",
+      "root_axn_hex": "0CAA",
+      "ea_identifiers": [
+        "EA-CORPORA-40"
+      ],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1782,
+        "axn": "AXN:0CB3.DATASET.🟠🤝🕐🐚🏺🔓",
+        "title": "EA-CORPORA-40 — The Fortieth Seating: Philology Constituted — Classical Philology 1906–1922 Whole, the Discipline Defined from Wolf to Usener, the Method from Lachmann to Housman, the Quarrel over the Geburt der Tragödie, the Standing Question from Valla to Bentley, Diels, Sandys, and the Census of Classical Philology",
+        "date": "2026-11-17",
+        "version": "1.1",
+        "record_url": "https://www.alexanarch.org/s/records/1782/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1776,
+          "axn": "AXN:0CAA.DATASET.∮🔛🟠🕛🫶🤲",
+          "title": "EA-CORPORA-40 — The Fortieth Seating: Philology Constituted — Classical Philology 1906–1922 Whole, the Discipline Defined from Wolf to Usener, the Method from Lachmann to Housman, the Quarrel over the Geburt der Tragödie, the Standing Question from Valla to Bentley, Diels, Sandys, and the Census of Classical Philology",
+          "date": "2026-11-16",
+          "version": "1.0",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1776/"
+        },
+        {
+          "deposit_number": 1782,
+          "axn": "AXN:0CB3.DATASET.🟠🤝🕐🐚🏺🔓",
+          "title": "EA-CORPORA-40 — The Fortieth Seating: Philology Constituted — Classical Philology 1906–1922 Whole, the Discipline Defined from Wolf to Usener, the Method from Lachmann to Housman, the Quarrel over the Geburt der Tragödie, the Standing Question from Valla to Bentley, Diels, Sandys, and the Census of Classical Philology",
+          "date": "2026-11-17",
+          "version": "1.1",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1782/"
         }
       ]
     },
