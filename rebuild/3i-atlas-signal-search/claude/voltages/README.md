@@ -39,6 +39,27 @@
 - The comet-frame candidates show no polarization or time structure.
 - C03 alone keeps a weak ON excess, and that excess is not independent evidence.
 
+## C03 at high resolution (2026-11-16, 20:34 EST onward: "well we still need to find out what c03 is")
+
+C03 has a rest frequency of 1665.6337766 MHz in the comet frame. It sits near 1665.6443 MHz topocentric, about 29 kHz above the fixed tone at 1665.6151. The earlier physical fit gave it a Gaussian σ of 1.68 Hz, with ON scores 2.67, 2.40 and 1.85, OFF 0014 1.82, and OFF 0016 and 0018 at or below zero (`../../chatgpt/C03-equal-strength-envelope-report-2026-11-05.md`).
+
+It was read here in 2^22-point spectra (0.70 Hz × 1.43 s) over 1665.64380–1665.64460 MHz in all six scans (`zoom.py … C03hr … 1 22`; `out/zoom_C03hr_*`).
+
+- **Drift search** (`c03hr.py`): drift rates −1 to +1 Hz/s over the 800 Hz band. Each scan's best cell is z 4.6–5.1, which is the size the maximum of about 400,000 cells reaches by chance. The best rates scatter from −0.84 to +0.61 Hz/s at unrelated frequencies. No drift rate concentrates power, the comet's (−0.109 Hz/s) included.
+- **Width** (`c03hr_aperture.py`): along the comet track, a 3-bin (2.1 Hz) aperture gives an ON−OFF contrast of z 0.59. A 7-bin (4.9 Hz) aperture gives z 2.02, with 3.5% of 374 parallel tracks as high; 11 bins (7.7 Hz) gives z 1.96. Per scan at 7 bins: ON +1.30, +1.79, +1.60; OFF 0014 +1.52, 0016 −0.26, 0018 −1.49. The excess is spread over about 5 Hz and has no narrow core at 0.7 Hz. It is about 1.5σ in each ON scan and as strong in the first OFF scan as in the ONs.
+- **The polarization split** (`c03_polsplit.py`) is the one test that the public products, which sum the polarizations, cannot make. X and Y are independent noise realizations of the same sky.
+  - X: ON +1.44, +1.81, +1.69; OFF 0014 +1.48, 0016 +0.11, 0018 −0.17.
+  - Y: ON +0.18, +0.64, +0.36; OFF 0014 +0.37, 0016 −0.62, 0018 −2.08.
+  - The excess lives mainly in X. An unpolarized line, which is what OH emission from a comet would be, appears equally in X and Y. So would a circularly polarized transmitter. An X-only feature means either strong linear polarization along the feed's X axis, which is typical of terrestrial interference or something instrumental in one signal path, or a fluctuation in one polarization that the summed-power selection picked. The X−Y difference over the three ON scans is about 1.5σ, suggestive and not decisive.
+- **Polarization at 5.59 Hz** (`cand_analysis.json`): V/I within ±0.02; Q not significant.
+- **MeerKAT**: the public MeerKAT 3I/ATLAS hit lists (Nov and Dec 2025; 544–1712 MHz; SNR ≥ 6) have no hit between 1665.55 and 1665.72 MHz. C03 is far below that threshold, so this is consistent and not a test.
+
+**What C03 is, on the voltages.** It is a weak excess, about 1.5σ per scan, spread over about 5 Hz, with no narrow core and no time structure. It shows in the first OFF scan as in the ONs, and it sits mainly in one linear polarization.
+- Every independent property the voltages could add (width at 0.7 Hz, drift, circular polarization, the X/Y split) points away from a compact source in the beam.
+- What remains is the ON−OFF ordering that the selection required, recovered from the same bytes.
+- The most economical account is a selected fluctuation, possibly with weak X-polarized interference, at the comet-frame coordinate. Nothing here establishes a source.
+- Only data not used in its selection can settle it: another session at this frequency, or another node or instrument that saw the same sky at the same time.
+
 ## Limits
 - One node (blc23) of the GBT session, two coarse channels, one resolution (5.59 Hz) for the candidate tracking.
 - The public selection was at 2.79 Hz. A 2^20 rerun at that resolution is the next check for C03.
