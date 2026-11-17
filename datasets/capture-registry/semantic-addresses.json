@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-17T17:14:55Z",
+  "regenerated_at": "2026-11-17T20:07:42Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "23eabd4bfbce8cfe8d394123ca0ac34dc2ad00c92bb843f5b88e5e81541b83eb",
+    "mm-main-capture": "a04c8c5ea5359b0a0b29e09d30beb275021d30e47bf9e88ec13f2f67c89d9a4e",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2824,
-  "total_observations": 1409,
+  "total_addresses": 2825,
+  "total_observations": 1410,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1071,
+    "observed_address": 1072,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1944,
+    "unmatched": 1945,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -22378,6 +22378,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-13",
       "latest_status": "CAPTURE"
+    },
+    "criticisms of classical receptions journal": {
+      "canonical_query": "criticisms of classical receptions journal",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-17",
+          "status": "'CRITICISMS OF CLASSICAL RECEPTIONS JOURNAL' ON GOOGLE AI OVERVIEW, SIGNED OUT — THE ARCHIVE'S CAPTURE RECORD IN THE STRIP, ITS AUDIT QUESTION COMPOSED NEAR VERBATIM AS 'RECENT COMMENTARY' AND ITS CRITICISMS AS WHAT 'OBSERVERS HAVE RAISED'; 'RATHER THAN TARGETED SCANDALS'",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "crj-criticisms-aio-20261117",
+          "gallery_url": "https://www.alexanarch.org/captures/#crj-criticisms-aio-20261117",
+          "record_url": "https://www.alexanarch.org/captures/crj-criticisms-aio-20261117/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#crj-criticisms-aio-20261117",
+          "details_excerpt": "'CRITICISMS OF CLASSICAL RECEPTIONS JOURNAL' ON GOOGLE AI OVERVIEW, SIGNED OUT: the criticism framed as 'broader debates within classical reception studies rather than targeted scandals at the publication itself'; the fi"
+        }
+      ],
+      "originator": {
+        "name": "Classical Receptions Journal",
+        "relation": "external",
+        "entity_type": "institution",
+        "spxi_treatment": "partial",
+        "basis": "Not the archive's: the journal (Oxford University Press). The archive audits it (#1769, #1770) and has a /non row on it (classical-receptions-journal). Recorded 2026-11-17."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-17",
+      "latest_status": "'CRITICISMS OF CLASSICAL RECEPTIONS JOURNAL' ON GOOGLE AI OVERVIEW, SIGNED OUT — THE ARCHIVE'S CAPTURE RECORD IN THE STRIP, ITS AUDIT QUESTION COMPOSED NEAR VERBATIM AS 'RECENT COMMENTARY' AND ITS CRITICISMS AS WHAT 'OBSERVERS HAVE RAISED'; 'RATHER THAN TARGETED SCANDALS'"
     },
     "critique": {
       "canonical_query": "critique",
