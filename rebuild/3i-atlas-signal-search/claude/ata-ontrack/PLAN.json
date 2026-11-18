@@ -1,0 +1,286 @@
+{
+ "plan": "ATA 3I/ATLAS 2025-07-03, ON beam, sub-threshold comet-tracking stack (ontrack.py)",
+ "written": "2026-11-17",
+ "requested_by": "Lee Sharks, 2026-11-17: 'lets look for items in the on band, comet tracking, below their thresholds.'",
+ "method_file_sha256": "7848b0bd8169b5bd9b21924e32a269049698b13cdd81ac4050efc47615a85646",
+ "ephemeris_sha256": "30d41c65350068efcc573315bc53dc8ce735aeb62bcce78179c97393baddab66",
+ "seen_before_plan": "LoB.C0928 chunk 50 (1984.75-1985.25 MHz) was run once as a code test with the same method; it is excluded from the random draw and reported as a test unit",
+ "primary": "comet-track clipped stack T (each scan capped at 5); a candidate must exceed the control-track tail across all searched units, recur across scans, stay below 15 in every single scan (our empirical scale, not bliss SNR), and be absent from the OFF beam (read only for candidates)",
+ "controls": "k in {-3,-2,-1,-0.5,0.5,1.5,2,3} scaled-Doppler tracks searched identically; k=0 (fixed receiver frequency) reported separately as the interference track",
+ "seed": 20261117,
+ "units": [
+  {
+   "sub": "LoA.C1120",
+   "chunk": 73,
+   "why": "HI 1420.405752 MHz in the comet frame"
+  },
+  {
+   "sub": "LoA.C1504",
+   "chunk": 179,
+   "why": "OH 1665.4018 MHz in the comet frame"
+  },
+  {
+   "sub": "LoA.C1504",
+   "chunk": 183,
+   "why": "OH 1667.3590 MHz in the comet frame"
+  },
+  {
+   "sub": "LoC.C1312",
+   "chunk": 35,
+   "why": "2 x HI in the comet frame"
+  },
+  {
+   "sub": "LoA.C1504",
+   "chunk": 184,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C0928",
+   "chunk": 146,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C0928",
+   "chunk": 176,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1120",
+   "chunk": 7,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C1120",
+   "chunk": 21,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C0928",
+   "chunk": 177,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0928",
+   "chunk": 36,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0544",
+   "chunk": 49,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1504",
+   "chunk": 8,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0352",
+   "chunk": 110,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C0928",
+   "chunk": 73,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C1120",
+   "chunk": 145,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0928",
+   "chunk": 23,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1504",
+   "chunk": 6,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C1312",
+   "chunk": 90,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1312",
+   "chunk": 116,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0928",
+   "chunk": 50,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1312",
+   "chunk": 80,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C1312",
+   "chunk": 168,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C1312",
+   "chunk": 7,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0928",
+   "chunk": 191,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0928",
+   "chunk": 120,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0544",
+   "chunk": 118,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C1312",
+   "chunk": 17,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C1312",
+   "chunk": 154,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1120",
+   "chunk": 42,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C1504",
+   "chunk": 2,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C0352",
+   "chunk": 152,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C0352",
+   "chunk": 107,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C0736",
+   "chunk": 126,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0544",
+   "chunk": 5,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C1504",
+   "chunk": 181,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0928",
+   "chunk": 84,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C1312",
+   "chunk": 71,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0544",
+   "chunk": 46,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C0352",
+   "chunk": 50,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1120",
+   "chunk": 124,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C1504",
+   "chunk": 104,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1504",
+   "chunk": 20,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0736",
+   "chunk": 147,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C0544",
+   "chunk": 155,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1312",
+   "chunk": 2,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1120",
+   "chunk": 98,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1312",
+   "chunk": 191,
+   "why": "random"
+  },
+  {
+   "sub": "LoD.C0736",
+   "chunk": 58,
+   "why": "random"
+  },
+  {
+   "sub": "LoC.C1504",
+   "chunk": 119,
+   "why": "random"
+  },
+  {
+   "sub": "LoA.C0544",
+   "chunk": 161,
+   "why": "random"
+  },
+  {
+   "sub": "LoB.C0352",
+   "chunk": 14,
+   "why": "random"
+  }
+ ],
+ "amendment_v2": {
+  "date": "2026-11-17",
+  "after": "8 units of v1 (kept in v1/, all eight rerun under v2); prompted by the operator's paste of ChatGPT's note on residual drift and intermittency (13:33 EST)",
+  "added": "residual emitted-frequency drift d in +-0.01 Hz/s (step = 1 native bin over the 6,897 s session span, 73 values), max over d of the clipped stack (Tres), searched identically on every track; intermittency stack Thalf = top 8 of 16 clipped scan scores / sqrt(8), at d = 0",
+  "unchanged": "units, seed, normalization, tracks, per-scan scores, T"
+ },
+ "amendment_v3": {
+  "date": "2026-11-17",
+  "after": "the July 3 sample (52 units) and its injection test, both complete and hashed (RESULTS-20250703.sha256)",
+  "added": "the same 52 units searched on the ATA sessions of 2025-07-08 (41 scans), then 2025-07-09 and 2025-07-10, with the session chosen by ATA_SESSION; the method is unchanged; the residual-drift grid keeps a step of one native bin over each session's span; only the comet stack is saved, for disk",
+  "cross_night": "a candidate counts only if it recurs at the same emitted frequency (g / (1 - rv0/c), each session's rv0 recorded) on more than one night, beating the controls on each",
+  "operator": "Lee Sharks, 2026-11-17 15:51 EST: 'either' (between July 31 Parkes and July 8-10 ATA; the session chose ATA for the cross-night test)"
+ }
+}
