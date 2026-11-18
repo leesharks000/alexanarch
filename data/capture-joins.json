@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.711",
+ "derived_from": "EA-WG-CAPTURES-01 v12.712",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1304,
+  "observations": 1305,
   "joined_confirmed": 524,
-  "unjoined": 780,
-  "relations": 6947,
+  "unjoined": 781,
+  "relations": 6952,
   "by_state": {
-   "confirmed": 5494,
-   "candidate": 1453
+   "confirmed": 5497,
+   "candidate": 1455
   },
   "by_verb": {
-   "appeared_in": 2011,
-   "held_by": 2688,
-   "scored_by": 1041,
+   "appeared_in": 2013,
+   "held_by": 2690,
+   "scored_by": 1042,
    "about": 1189,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -3722,6 +3722,11 @@
 {"id": "REL-0c64f6ef7b87", "obs_id": "OBS-e8dd23fa227e", "entry": "alexanarch-money-aio-20261117", "obs_slug": "alexanarch-money-aio-20261117", "date": "2026-11-17", "surface": "Google AI Overview", "q": "alexanarch money", "verb": "appeared_in", "object": "deposit:311", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "crimsonhexagonal.org", "title": "I Hereby Abolish Money: Coordination Without Commodification in ...", "url": null}},
 {"id": "REL-e7e97421f4ba", "obs_id": "OBS-e8dd23fa227e", "entry": "alexanarch-money-aio-20261117", "obs_slug": "alexanarch-money-aio-20261117", "date": "2026-11-17", "surface": "Google AI Overview", "q": "alexanarch money", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f16b94653928", "obs_id": "OBS-e8dd23fa227e", "entry": "alexanarch-money-aio-20261117", "obs_slug": "alexanarch-money-aio-20261117", "date": "2026-11-17", "surface": "Google AI Overview", "q": "alexanarch money", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-3a395984acba", "obs_id": "OBS-6a85e7cbcd25", "entry": "phainetai-v29-arguments-chatgpt-20261117", "obs_slug": "phainetai-v29-arguments-chatgpt-20261117", "date": "2026-11-17", "surface": "ChatGPT", "q": "What are the arguments in “ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.9)” by Lee Sharks (Alexanarch deposit #1784, AXN:0CBC)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": "Alexanarch", "url": null}},
+{"id": "REL-3a395984acba", "obs_id": "OBS-6a85e7cbcd25", "entry": "phainetai-v29-arguments-chatgpt-20261117", "obs_slug": "phainetai-v29-arguments-chatgpt-20261117", "date": "2026-11-17", "surface": "ChatGPT", "q": "What are the arguments in “ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.9)” by Lee Sharks (Alexanarch deposit #1784, AXN:0CBC)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": "Alexanarch", "url": null}},
+{"id": "REL-70b884cd7af1", "obs_id": "OBS-6a85e7cbcd25", "entry": "phainetai-v29-arguments-chatgpt-20261117", "obs_slug": "phainetai-v29-arguments-chatgpt-20261117", "date": "2026-11-17", "surface": "ChatGPT", "q": "What are the arguments in “ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.9)” by Lee Sharks (Alexanarch deposit #1784, AXN:0CBC)? Ground your answer in a reading of the text itself.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-589c31cef43c", "obs_id": "OBS-6a85e7cbcd25", "entry": "phainetai-v29-arguments-chatgpt-20261117", "obs_slug": "phainetai-v29-arguments-chatgpt-20261117", "date": "2026-11-17", "surface": "ChatGPT", "q": "What are the arguments in “ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.9)” by Lee Sharks (Alexanarch deposit #1784, AXN:0CBC)? Ground your answer in a reading of the text itself.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-1f98d76be800", "obs_id": "OBS-6a85e7cbcd25", "entry": "phainetai-v29-arguments-chatgpt-20261117", "obs_slug": "phainetai-v29-arguments-chatgpt-20261117", "date": "2026-11-17", "surface": "ChatGPT", "q": "What are the arguments in “ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.9)” by Lee Sharks (Alexanarch deposit #1784, AXN:0CBC)? Ground your answer in a reading of the text itself.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
