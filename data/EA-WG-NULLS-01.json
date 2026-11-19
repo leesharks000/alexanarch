@@ -1,0 +1,55 @@
+{
+ "registry_id": "EA-WG-NULLS-01",
+ "name": "Null observations — beside the Capture Registry",
+ "version": "v1.0",
+ "date": "2026-11-19",
+ "author": "Sharks, Lee",
+ "orcid": "0009-0000-1599-0703",
+ "license": "CC-BY-4.0",
+ "opened_by": "Operator, 2026-11-19 15:51 EST: \"I think that's worth recording and analyzing as null captures\"; \"and no, we have not before recorded null captures. but these are data\".",
+ "rule": "A null is a query run where no composition was preserved: a surface that froze, refused, returned nothing, or rendered no panel. The Capture Registry admits a new address only by source engagement in composition (rule of 2026-09-11, enforced by scripts/capture_intake.py); a null at a new address is recorded here instead, as data. Each null names the exact string, the surface, the date, what was observed and on what evidence, and the baseline it is read against: the engaged addresses in the Capture Registry for the same entity or work. If the address is later admitted by engagement, its nulls here become its prior observations. A null whose evidence is the operator's account alone says so.",
+ "entries": [
+  {
+   "id": "NULL-20261119-01",
+   "date": "2026-11-19",
+   "surface": "ChatGPT",
+   "auth": "signed out, incognito (operator default of 2026-10-14)",
+   "q": "Develop a reading of Sen Kuro's mathematical poetics and poetics of mathematics. Ground in the archive, range widely, and treat primary texts.",
+   "runs": 3,
+   "observed": "froze, three times consecutively, when the composition reached Tiger Leap",
+   "evidence": "operator's account (2026-11-19 15:51 EST): \"Unprimed ChatGPT froze three times consecutively when it got to Tiger Leap\". No transcript or screenshot held; the partial composition before each freeze was not preserved.",
+   "class": "composition begun, halted at the same point in three runs",
+   "baseline": {
+    "entity": ["sen-kuro (AIO, 2026-06-13)", "infinite-bliss-sen-kuro (AIO, 2026-06-15)", "who-is-sen-kuro-chatgpt-20260815", "tell-me-about-writer-sen-kuro-infinite-bliss-20260909", "sen-kuro-on-zenodo-chatgpt-20260923", "sen-kuro-zenodo-aio-20260923", "glyphic-checksum-lineage-ask-chatgpt-20261012", "transition-entropic-systems-ask-chatgpt-20261012"],
+    "work": ["tiger-leap-into-the-future-chatgpt-20261105 (ChatGPT, signed out: the 2014 volume read closely)", "final-time-crossing-literature-theory-chatgpt-20261111 (ChatGPT, signed out: Tiger Leap read with The Final Time)", "tiger-leap-leesharks-datasets-aio-20260921", "leesharks-tiger-leap-hugging-face-aio-20260922", "leesharks-tiger-leap-dataset-aio-20261003 ('ONE PUSH AND THE AUTHOR IS A HALLUCINATION')"]
+   },
+   "analysis": [
+    "1. The route. The way from Sen Kuro to Tiger Leap in the archive runs through #1642, GLYPHIC CHECKSUM LINEAGE — Sen Kuro — New Human 2, whose part I checksums Tiger Leap (#1636) and part II Transition in Entropic Systems (#1630). A composer treating Sen Kuro's primary texts reaches Tiger Leap by the archive's own edge.",
+    "2. Not the work alone. ChatGPT, signed out, has composed on Tiger Leap without halting twice this month (5 and 11 November). The halt is at Tiger Leap reached from Sen Kuro, not at Tiger Leap as such.",
+    "3. Repetition. Three halts in three runs, at the same point, is a reproducible event, not a dropped connection.",
+    "4. What it cannot say. Without the partial text, the null does not show what the composer had written, which source it had opened, or whether the halt was in retrieval or in composition."
+   ],
+   "next": "Run again with the partial text saved before it stalls (screen or copy), and once with Tiger Leap named in the prompt from the start."
+  },
+  {
+   "id": "NULL-20261119-02",
+   "date": "2026-11-19",
+   "surface": "Google Search",
+   "auth": "signed out, incognito (operator default of 2026-10-14)",
+   "q": "Develop a reading of Sen Kuro's mathematical poetics and poetics of mathematics. Ground in the archive, range widely, and treat primary texts.",
+   "variants": ["the same string with \"Sen Kuro\" in quotation marks"],
+   "observed": "no organic results; no AI Overview; no popup",
+   "evidence": "operator's account (2026-11-19 15:51 EST): \"Google didn't return a single organic result or offer a popup, even with \\\"Sen Kuro\\\" in quotation marks\". No screenshot held.",
+   "class": "nothing returned",
+   "baseline": {
+    "entity": ["sen-kuro (AIO, 2026-06-13)", "infinite-bliss-sen-kuro (AIO, 2026-06-15)", "sen-kuro-zenodo-aio-20260923 (AIO composed from 5 sources: 'THE HETERONYM HOLDS AT THE SEVERED PLATFORM')"]
+   },
+   "analysis": [
+    "1. Against the baseline. Google has composed on Sen Kuro three times in the registry, the last on 23 September from five sources. A null with no organic results at all is a change of kind from that baseline, not of degree.",
+    "2. What is confounded. The string is a long instruction, not a search phrase; zero organic results may belong to the length and the instruction words as much as to the name. The quoted variant pins the name and still returned nothing, which bears on the name, but the instruction words were still present.",
+    "3. What it cannot say. Without a screenshot the null rests on the account; it does not show the results page's own message."
+   ],
+   "next": "A control: \"Sen Kuro\" alone, quoted and unquoted, and \"sen kuro zenodo\" (the 23 September address), the same day, screenshotted. If the bare name also returns nothing, the null is the name's; if it returns, the null is the string's."
+  }
+ ]
+}
