@@ -1,0 +1,37 @@
+26 0013 done 189s
+26 0014 done 379s
+26 0015 done 558s
+26 0016 done 755s
+26 0017 done 937s
+26 0018 done 1123s
+26 nominations 0
+0 0013 done 196s
+0 0014 done 402s
+0 0015 done 585s
+0 0016 done 766s
+0 0017 done 942s
+0 0018 done 1126s
+0 nominations 0
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/mvolt.py", line 35, in <module>
+    D = load(cc)
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/mvolt.py", line 13, in load
+    def load(cc): return {s: np.load(os.path.join(HERE2, "out2", f"cc{cc:02d}_{s}.npz")) for s in SC}
+                             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/numpy/lib/_npyio_impl.py", line 471, in load
+    ret = NpzFile(fid, own_fid=own_fid, allow_pickle=allow_pickle,
+                  pickle_kwargs=pickle_kwargs,
+                  max_header_size=max_header_size)
+  File "/usr/local/lib/python3.13/dist-packages/numpy/lib/_npyio_impl.py", line 197, in __init__
+    _zip = zipfile_factory(fid)
+  File "/usr/local/lib/python3.13/dist-packages/numpy/lib/_npyio_impl.py", line 112, in zipfile_factory
+    return zipfile.ZipFile(file, *args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/zipfile/__init__.py", line 1432, in __init__
+    self._RealGetContents()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/zipfile/__init__.py", line 1499, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+fail 63
+40 0013 done 166s
