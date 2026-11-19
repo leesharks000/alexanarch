@@ -62,11 +62,28 @@ def is_archive_level(e):
     return bool(ARCH.search(q)) and not RECORD.search(q) and len(q.split()) >= 5
 
 
-def ask_link(q, text=None):
-    """A query as a ChatGPT link. {date} is filled in the browser; the static href carries the build date."""
+def ask_link(q, text=None, cls='q b'):
+    """A query as a ChatGPT link, shown as a short button label; the full query is in the href and the tooltip.
+    {date} is filled in the browser; the static href and tooltip carry the build date."""
     qs = q.replace('{date}', DATE_TXT)
     t = E(text or q).replace('{date}', f'<span class="d">{E(DATE_TXT)}</span>')
-    return f'<a class="q" data-q="{E(q)}" href="https://chatgpt.com/?q={E(quote_plus(qs))}" target="_blank" rel="noopener">{t}</a>'
+    return f'<a class="{cls}" data-q="{E(q)}" title="{E(qs)}" href="https://chatgpt.com/?q={E(quote_plus(qs))}" target="_blank" rel="noopener">{t}</a>'
+
+
+L = Q['labels']
+
+
+def row(label, buttons, sub=False):
+    return f'<div class="row{" sub" if sub else ""}"><span class="rl">{E(label)}</span><span class="bs">{"".join(buttons)}</span></div>'
+
+
+def cap(x):
+    return x[0].upper() + x[1:]
+
+
+def short(q, n=88):
+    q = re.sub(r'\s+', ' ', q).strip()
+    return q if len(q) <= n else q[:n].rsplit(' ', 1)[0] + '…'
 
 
 def fill(t, **kw):
@@ -159,23 +176,29 @@ def build():
     f4, t4 = fig_bars(dc, 'Defects recorded on archive-level compositions')
 
     sec = []
-    # time scales
-    tq = ''.join('<li>' + ask_link(fill(t, window=w, date='{date}')) + '</li>' for t in Q['timescales']['templates'] for w in Q['timescales']['windows'])
-    sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">{E(Q["timescales"]["note"])}</p><ul>{tq}</ul></section>')
-    sec.append('<section id="whole"><h2>The archive as a whole</h2><ul>' + ''.join(f'<li>{ask_link(q)}</li>' for q in Q['whole']) + '</ul></section>')
+    ts = Q['timescales']
+    tq = ''.join(row(lt, [ask_link(fill(t, window=w, date='{date}'), lw) for w, lw in zip(ts['windows'], L['windows'])]) for t, lt in zip(ts['templates'], L['timescale_templates']))
+    sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">Read a window of work ending today as one body of thought.</p>{tq}</section>')
+    sec.append('<section id="whole"><h2>The archive as a whole</h2><div class="bs wrapb">' + ''.join(ask_link(q, lq) for q, lq in zip(Q['whole'], L['whole'])) + '</div></section>')
     disc = ''
     for dsc in Q['disciplines']:
-        top = ''.join(f'<li>{ask_link(fill(t, field=dsc["name"]))}</li>' for t in Q['discipline_templates'])
-        subs = ''.join(f'<li class="sub"><span class="sl">{E(s)}</span><ul>' + ''.join(f'<li>{ask_link(fill(t, field=s))}</li>' for t in Q['subdiscipline_templates']) + '</ul></li>' for s in dsc['subs'])
-        disc += f'<details><summary>{E(dsc["name"][0].upper() + dsc["name"][1:])} <span class="c">{len(Q["discipline_templates"]) + len(dsc["subs"]) * len(Q["subdiscipline_templates"])}</span></summary><ul>{top}{subs}</ul></details>'
+        top = row('the field', [ask_link(fill(t, field=dsc['name']), lt) for t, lt in zip(Q['discipline_templates'], L['discipline_templates'])])
+        subs = ''.join(row(s_, [ask_link(fill(t, field=s_), lt) for t, lt in zip(Q['subdiscipline_templates'], L['subdiscipline_templates'])], sub=True) for s_ in dsc['subs'])
+        disc += f'<details><summary>{E(cap(dsc["name"]))} <span class="c">{len(dsc["subs"])} subfield{"s" if len(dsc["subs"]) != 1 else ""}</span></summary>{top}{subs}</details>'
     sec.append(f'<section id="disciplines"><h2>By discipline and subdiscipline</h2>{disc}</section>')
     for key, title in (('programmes', 'By programme'), ('themes', 'By theme'), ('practices', 'By practice')):
         tk = key[:-1] + '_templates'
-        body = ''.join(f'<details><summary>{E(n[0].upper() + n[1:])}</summary><ul>' + ''.join(f'<li>{ask_link(fill(t, name=n))}</li>' for t in Q[tk]) + '</ul></details>' for n in Q[key])
+        body = ''.join(row(cap(n), [ask_link(fill(t, name=n), lt) for t, lt in zip(Q[tk], L[tk])]) for n in Q[key])
         sec.append(f'<section id="{key}"><h2>{title}</h2>{body}</section>')
     asked = sorted(arch, key=lambda e: e['date'], reverse=True)
-    ab = ''.join(f'<li><span class="m">{E(e["date"])} · {E(e.get("surface") or "")} · {num(e.get("cites"))} cites</span> {ask_link(str(e["q"]).strip())} <a class="cap" href="/captures/{E(e["slug"])}/">capture</a></li>' for e in asked)
-    sec.append(f'<section id="asked"><h2>Asked before: {len(asked)} archive-level addresses in the Capture Registry</h2><p class="n">Every query below was asked as written, and the composition it forced is seated; the link reopens the query, and "capture" goes to the record of what came back. An address re-asked accrues observations at the same record.</p><ul class="asked">{ab}</ul></section>')
+    def arow(e):
+        q = str(e['q']).strip()
+        return (f'<li><span class="m">{E(e["date"])} · {E(e.get("surface") or "")} · {num(e.get("cites"))} cites</span>'
+                f'{ask_link(q, short(q), "q t")} <a class="cap" href="/captures/{E(e["slug"])}/">capture</a></li>')
+    ab = ''.join(arow(e) for e in asked[:15])
+    more = f'<details><summary>All {len(asked)} <span class="c">newest first</span></summary><ul class="asked">{"".join(arow(e) for e in asked[15:])}</ul></details>' if len(asked) > 15 else ''
+    sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
+                 f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
     n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices'))
     first = min(e['date'] for e in ENTS)
@@ -204,28 +227,39 @@ h1{{font-weight:500;font-size:1.7em;margin-bottom:.3em}} h2{{font-weight:500;fon
 p{{margin:.5em 0}} .n{{color:#52514e;font-size:.9em}}
 ul{{list-style:none}} li{{margin:.35em 0}} li.sub{{margin:.8em 0 .4em}} .sl{{font-size:.82em;text-transform:uppercase;letter-spacing:.05em;color:#52514e}}
 li.sub ul{{margin-left:1em}}
-a.q{{color:var(--accent);text-decoration:none;border-bottom:1px dotted #b8c4d0}} a.q:hover{{border-bottom-style:solid}} a.q::after{{content:" \\2197";font-size:.8em;color:var(--dim)}}
+a.q{{color:var(--accent);text-decoration:none}}
+a.b{{display:inline-block;padding:3px 11px;margin:3px 6px 3px 0;border:1px solid #c9d3de;border-radius:14px;background:var(--surface);font-size:.84em;line-height:1.5;white-space:nowrap}}
+a.b:hover,a.b:focus-visible{{background:var(--accent);border-color:var(--accent);color:#fff}}
+a.t{{border-bottom:1px dotted #b8c4d0}} a.t:hover{{border-bottom-style:solid}}
+.row{{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;padding:5px 0;border-bottom:1px solid #f0f0ee}} .row:last-child{{border-bottom:none}}
+.rl{{flex:0 0 230px;font-size:.9em;color:#2b2b2a}} .row.sub .rl{{padding-left:1em;color:#52514e;font-size:.85em}} .bs{{flex:1 1 300px}}
+.lede{{color:#3a3a38;margin:.2em 0 .6em}} details.about{{font-size:.92em}} details.about summary,details.figs summary{{font-weight:400;color:var(--accent)}}
+@media (max-width:600px){{.rl{{flex-basis:100%}} .row.sub .rl{{padding-left:0}}}}
 details{{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.5em .9em;margin:.4em 0}} summary{{cursor:pointer;font-weight:500}} details ul{{margin:.5em 0 .3em}}
 .c{{font-family:var(--mono);font-size:.78em;color:var(--dim);margin-left:.4em}}
 .stats{{display:flex;flex-wrap:wrap;gap:12px;margin:1.2em 0}} .stats div{{flex:1 1 140px;background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:.7em .9em;font-size:.85em;color:#52514e}} .stats b{{display:block;font-size:1.6em;font-weight:500;color:#0b0b0b}}
 figure{{background:#fcfcfb;border:1px solid var(--border);border-radius:6px;padding:1em;margin:1em 0}} figcaption{{font-size:.85em;color:#52514e;margin-top:.5em}}
 figure details{{border:none;padding:0;background:none;margin-top:.5em}} table{{border-collapse:collapse;font-size:.8em;margin-top:.4em}} td,th{{border-bottom:1px solid var(--border);padding:2px 8px;text-align:left}}
 ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color:var(--dim);margin-right:.4em}} a.cap{{font-size:.8em;color:var(--dim)}}
-.toc a{{margin-right:1em;color:var(--accent);font-size:.9em}}
+.toc a{{display:inline-block;white-space:nowrap;margin-right:1em;color:var(--accent);font-size:.9em}}
 </style></head><body><div class="wrap">
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
+<p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
+<details class="about"><summary>About this page</summary>
 <p>Queries addressed to the archive as a whole: over time, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
-<p class="toc"><a href="#accrue">What accrues</a><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#asked">Asked before</a></p>
 {stats}
-<section id="accrue"><h2>What accrues</h2>{figs}</section>
+</details>
+<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
+<section id="accrue"><h2>What accrues</h2><details class="figs"><summary>Four figures from the Capture Registry</summary>{figs}</details></section>
+{sec_asked}
 <p class="n" style="margin-top:2em">Built {TODAY.isoformat()} by scripts/build_ask_page.py from data/ask-queries.json and the Capture Registry. Dates in the queries are filled with today's date in your browser.</p>
 </div>
 <script>
 (function(){{try{{var d=new Date(),m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;
-a.href="https://chatgpt.com/?q="+encodeURIComponent(q.split("{{date}}").join(t)).replace(/%20/g,"+");
+var f=q.split("{{date}}").join(t);a.href="https://chatgpt.com/?q="+encodeURIComponent(f).replace(/%20/g,"+");a.title=f;
 a.querySelectorAll(".d").forEach(function(s){{s.textContent=t}})}})}}catch(e){{}}}})();
 </script></body></html>'''
     out = ROOT / 'ask' / 'index.html'; out.parent.mkdir(exist_ok=True); out.write_text(page)
