@@ -248,11 +248,10 @@ ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color
 <p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
 <details class="about"><summary>About this page</summary>
 <p>Queries addressed to the archive as a whole: over time, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
-{stats}
 </details>
 <p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
-<section id="accrue"><h2>What accrues</h2><details class="figs"><summary>Four figures from the Capture Registry</summary>{figs}</details></section>
+<section id="accrue"><h2>What accrues</h2>{stats}{figs}</section>
 {sec_asked}
 <p class="n" style="margin-top:2em">Built {TODAY.isoformat()} by scripts/build_ask_page.py from data/ask-queries.json and the Capture Registry. Dates in the queries are filled with today's date in your browser.</p>
 </div>
