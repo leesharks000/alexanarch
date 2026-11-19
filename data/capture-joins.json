@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.726",
+ "derived_from": "EA-WG-CAPTURES-01 v12.727",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1319,
-  "joined_confirmed": 531,
+  "observations": 1320,
+  "joined_confirmed": 532,
   "unjoined": 788,
-  "relations": 7131,
+  "relations": 7139,
   "by_state": {
-   "confirmed": 5620,
-   "candidate": 1511
+   "confirmed": 5625,
+   "candidate": 1514
   },
   "by_verb": {
-   "appeared_in": 2135,
-   "held_by": 2718,
-   "scored_by": 1056,
+   "appeared_in": 2140,
+   "held_by": 2720,
+   "scored_by": 1057,
    "about": 1204,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -3906,6 +3906,14 @@
 {"id": "REL-9f8d4120d6af", "obs_id": "OBS-516645356516", "entry": "whose-face-twenty-article-aio-20261119", "obs_slug": "whose-face-twenty-article-aio-20261119", "date": "2026-11-19", "surface": "Google AI Overview", "q": "whose face is on the twenty? article by lee sharks", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-e803c47942c5", "obs_id": "OBS-516645356516", "entry": "whose-face-twenty-article-aio-20261119", "obs_slug": "whose-face-twenty-article-aio-20261119", "date": "2026-11-19", "surface": "Google AI Overview", "q": "whose face is on the twenty? article by lee sharks", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-a77f9ae7d281", "obs_id": "OBS-516645356516", "entry": "whose-face-twenty-article-aio-20261119", "obs_slug": "whose-face-twenty-article-aio-20261119", "date": "2026-11-19", "surface": "Google AI Overview", "q": "whose face is on the twenty? article by lee sharks", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-85b8cddd5cde", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": "The Unclean Bill — Alexanarch, deposit #535, AXN:016A", "url": "https://www.alexanarch.org/s/records/535/?utm_source=chatgpt.com"}},
+{"id": "REL-3e6688ae6e7f", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "deposit:535", "basis": "card resolved at intake (url)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Alexanarch", "title": "The Unclean Bill — Alexanarch, deposit #535, AXN:016A", "url": "https://www.alexanarch.org/s/records/535/?utm_source=chatgpt.com"}},
+{"id": "REL-85b8cddd5cde", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 2, "site": "Alexanarch", "title": "Original archival record and downloadable Markdown/PDF", "url": "https://www.alexanarch.org/s/records/535/?utm_source=chatgpt.com"}},
+{"id": "REL-3e6688ae6e7f", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "deposit:535", "basis": "card resolved at intake (url)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Alexanarch", "title": "Original archival record and downloadable Markdown/PDF", "url": "https://www.alexanarch.org/s/records/535/?utm_source=chatgpt.com"}},
+{"id": "REL-85b8cddd5cde", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 3, "site": "Alexanarch", "title": "Alexanarch", "url": null}},
+{"id": "REL-cacedb433464", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-0856bfb78ada", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e3d4989e662c", "obs_id": "OBS-22dfdc11cc8b", "entry": "unclean-bill-arguments-chatgpt-20261119", "obs_slug": "unclean-bill-arguments-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What are the arguments in “The Unclean Bill: Taṣwīr, Fahīsha, and the Burden on Ḍarūra — An Istiftāʾ on the Conditions Sustaining the Permissibility of the United States Federal Reserve Note” by Johannes Sigil (Alexanarch deposit #535, AXN:016A)? Ground your answer in a reading of the text itself.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
