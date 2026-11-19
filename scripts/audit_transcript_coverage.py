@@ -10,6 +10,10 @@ gate: --check fails on any unit without a transcript that is not on the declared
 Legacy list: units seated before the transcript rule was enforced, enumerated here so the count can only
 go down and each one is visible. Removing a slug from the list without supplying its transcript will fail
 the gate; that is the point.
+
+THE SIGNIFICANT NULL (operator, 2026-11-19: "it should still require transcripts unless specifically marked
+null"). An entry carrying null_basis is a marked null: it has no machine text by definition, and its evidence and
+baseline are in null_basis. It is counted apart and never fails the gate; every other unit still does.
 """
 import json, sys, argparse, pathlib, collections, statistics
 
@@ -32,6 +36,8 @@ LEGACY = {
 
 def units(reg):
     for e in reg["entries"]:
+        if e.get("null_basis") and not e.get("transcript"):
+            yield ("null", e["slug"], e.get("date"), e.get("surface"), None); continue
         yield ("entry", e["slug"], e.get("date"), e.get("surface"), e.get("transcript"))
         for o in (e.get("observations") or []):
             if isinstance(o, dict):
@@ -42,6 +48,7 @@ def main():
     a = ap.parse_args()
     reg = json.load(open(REG, encoding="utf-8"))
     us = list(units(reg))
+    nulls = [u for u in us if u[0] == "null"]; us = [u for u in us if u[0] != "null"]
     have = [u for u in us if u[4]]; none = [u for u in us if not u[4]]
     unlisted = [u for u in none if u[1] not in LEGACY]
     stale = sorted(LEGACY - {u[1] for u in none})   # a legacy slug that now HAS its transcript
@@ -53,13 +60,14 @@ def main():
         "words": {"median": int(statistics.median(w)), "mean": int(sum(w) / len(w)), "min": min(w), "max": max(w), "total": sum(w)},
         "without_by_month": dict(sorted(collections.Counter((u[2] or "")[:7] for u in none).items())),
         "coverage": round(len(have) / len(us), 4),
+        "marked_nulls": [u[1] for u in nulls],
     }
     if a.json:
         print(json.dumps(report, ensure_ascii=False, indent=1))
     else:
         print(f"transcript coverage: {len(have)}/{len(us)} units ({report['coverage']:.2%}) · "
               f"{report['words']['total']:,} words · median {report['words']['median']} · max {report['words']['max']}")
-        print(f"  without transcript: {len(none)} — {len(LEGACY)} declared legacy, {len(unlisted)} unlisted")
+        print(f"  without transcript: {len(none)} — {len(LEGACY)} declared legacy, {len(unlisted)} unlisted · marked nulls (exempt): {len(nulls)}")
         for u in unlisted:
             print(f"  FAIL  {u[2]} {u[0]:5s} {u[1]} ({u[3]}) — citable with no machine text", file=sys.stderr)
         if stale:

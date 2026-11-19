@@ -38,6 +38,19 @@ instances get it wrong repeatedly and the registry has already been rebuilt once
   So: engagement admits a NEW address. Non-engagement is recorded only as a LATER
   observation on an address engagement already admitted.
 
+  THE SIGNIFICANT NULL (operator, 2026-11-19 15:54: "we need to extend the rule to allow
+  recording of specific nulls in the registry - these are *significant* nulls"; and "it
+  should still require transcripts unless specifically marked null").
+
+  A null MAY be admitted at a NEW address when it is SPECIFICALLY MARKED: the draft carries
+  null_basis, stating what the surface did in place of composing (froze, refused, returned
+  nothing, rendered no panel), the evidence it rests on, and the BASELINE that makes it
+  significant — one or more engaged entries already in this registry for the same entity
+  or work, named by slug and checked here. The baseline is what the September rule asked
+  of a null; a significant null finds it at the entity, not the string. Only a marked null
+  is exempt from the transcript; everything else still requires one. An unmarked null at a
+  new address is refused exactly as before.
+
   THE OPERATOR'S REASON, recorded because it is the cost of getting this wrong: the
   registry was rebuilt once after non-captures accumulated in it, and hundreds of old
   threads had to be re-sorted because transcripts had not been preserved.
@@ -265,6 +278,8 @@ def seat_flat(draft, registry, schema):
     """ADMIT → ROUTE → NORMALISE → VALIDATE → INSERT, on the flat record shape. Returns (kind, entry)."""
     import jsonschema
     req = ["q", "date", "surface", "auth", "ev", "s", "transcript", "d", "originator"]  # originator required for new intake (2026-09-25)
+    if draft.get("null_basis"):   # a specifically marked null is exempt from the transcript, and only it (2026-11-19)
+        req.remove("transcript")
     missing = [k for k in req if draft.get(k) in (None, "", "null")]
     # DIMENSIONAL PER AT INTAKE (cutover 2026-10-19, rubric rebuild/capture-registry/per-atoms/templates.json). Recorded, not
     # refused (laws record): a new capture without per_dim is seated and named here, so the backlog cannot grow unseen.
@@ -383,7 +398,15 @@ def seat_flat(draft, registry, schema):
         r"NO PANEL|no panel rendered|did not search|no composed answer|"
         r"returned nothing|no transcript held|organic (?:results )?only",
         str(draft.get("transcript", "")) + " " + str(draft.get("ev", "")), re.I) is not None
-    if _new_address and _no_engagement:
+    _nb = draft.get("null_basis")
+    if _nb:   # THE SIGNIFICANT NULL (2026-11-19): admitted on a baseline of engaged entries in this registry, checked here
+        _by = {x.get("slug"): x for x in registry["entries"]}
+        _bad = [b for b in _nb.get("baseline") or [] if b not in _by or _by[b].get("null_basis")]
+        if not _nb.get("baseline") or _bad:
+            raise Refused("SIGNIFICANT NULL refused — its baseline must name engaged entries already in the registry (slugs), "
+                          "none of them itself a null. Not found or null: %s" % (_bad or "(no baseline)"))
+        print("   NULL       significant null, marked; baseline of %d engaged entr%s checked" % (len(_nb["baseline"]), "y" if len(_nb["baseline"]) == 1 else "ies"))
+    elif _new_address and _no_engagement:
         raise Refused(
             "NOT A CAPTURE. This is a new address and the draft records no source engagement "
             "in composition — no panel, no composed answer, or a refusal to search. A capture "

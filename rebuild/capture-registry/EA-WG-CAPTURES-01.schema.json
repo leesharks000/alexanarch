@@ -1286,6 +1286,57 @@
     "null"
    ],
    "description": "The ground of scope, as derive_scope states it."
+  },
+  "null_basis": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "A SIGNIFICANT NULL (operator, 2026-11-19 15:54: \"we need to extend the rule to allow recording of specific nulls in the registry - these are *significant* nulls\"). Present only on a null admitted at a new address: what was observed in place of a composition, on what evidence, and the baseline that makes it significant (engaged addresses in this registry for the same entity or work).",
+   "required": [
+    "observed",
+    "evidence",
+    "baseline",
+    "significance"
+   ],
+   "properties": {
+    "observed": {
+     "type": "string",
+     "description": "what the surface did in place of a composition: froze, refused, returned nothing, rendered no panel"
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "halt mid-composition",
+      "no composition",
+      "refusal",
+      "no results"
+     ]
+    },
+    "runs": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "evidence": {
+     "type": "string",
+     "description": "what the null rests on; an operator's account alone says so"
+    },
+    "baseline": {
+     "type": "array",
+     "minItems": 1,
+     "items": {
+      "type": "string"
+     },
+     "description": "slugs of engaged entries in this registry for the same entity or work; checked at intake"
+    },
+    "significance": {
+     "type": "string",
+     "description": "why the null is a measurement against that baseline"
+    }
+   },
+   "additionalProperties": false
   }
  }
 }
