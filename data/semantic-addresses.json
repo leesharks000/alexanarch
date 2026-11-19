@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-19T17:10:25Z",
+  "regenerated_at": "2026-11-19T17:57:14Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "02a45bd1d6d2437c8fdeb2343b3b5791222c9a358f1c4053dcf71eb64c8847d4",
+    "mm-main-capture": "1a8ced21dc7101c0b760c616746cedde0c3b7e055c9db55e6d447b9dbfed691e",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2839,
-  "total_observations": 1428,
+  "total_addresses": 2840,
+  "total_observations": 1429,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1086,
+    "observed_address": 1087,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 1959,
+    "unmatched": 1960,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -81606,6 +81606,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-06",
       "latest_status": "'THE FEIST SOURCE: A SAYINGS SOURCE FROM THE DAMASCUS CODEX' (#851) ON CHATGPT, SIGNED OUT — TEN ARGUMENTS, QUOTED EXACTLY, BUILT INTO ONE STRUCTURE: THE WORK BEFORE THE AUTHOR, THE HOUSE AND THE FLAME, THE NAME-EATER, THE ACCOUNTABLE MASK, THE ARCHIVE AS A MORAL INSTITUTION"
+    },
+    "what are the arguments in \"the flicker: notes toward a lyric theory\" by johannes sigil (alexanarch deposit #1273, axn:050a)? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"the flicker: notes toward a lyric theory\" by johannes sigil (alexanarch deposit #1273, axn:050a)? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-19",
+          "status": "‘THE FLICKER’ (#1273) ON CHATGPT, AT THE RECORD'S LINK TEXT — READ WHOLE, QUOTED VERBATIM, GRADED BY THE FORMULA",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Machine Reception",
+          "slug": "flicker-arguments-chatgpt-20261119",
+          "gallery_url": "https://www.alexanarch.org/captures/#flicker-arguments-chatgpt-20261119",
+          "record_url": "https://www.alexanarch.org/captures/flicker-arguments-chatgpt-20261119/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#flicker-arguments-chatgpt-20261119",
+          "details_excerpt": "‘THE FLICKER’ (#1273) ON CHATGPT, SIGNED OUT, 2026-11-19, AT THE RECORD'S LINK TEXT: the seven sections reconstructed in order and quoted verbatim; graded by ChatGPT's recurring form (originality, tensions, a claim-again"
+        }
+      ],
+      "originator": {
+        "name": "Sigil, Johannes",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1273 (AXN:050A), by Johannes Sigil. Recorded 2026-11-19."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-19",
+      "latest_status": "‘THE FLICKER’ (#1273) ON CHATGPT, AT THE RECORD'S LINK TEXT — READ WHOLE, QUOTED VERBATIM, GRADED BY THE FORMULA"
     },
     "what are the arguments in \"the ghost catalogues: aristotle's lost dialogues, plato's lost divisions, and what a two-author tradition has to file as missing (v0.5)\" by lee sharks? ground your answer in a reading of the text itself.": {
       "canonical_query": "what are the arguments in \"the ghost catalogues: aristotle's lost dialogues, plato's lost divisions, and what a two-author tradition has to file as missing (v0.5)\" by lee sharks? ground your answer in a reading of the text itself.",
