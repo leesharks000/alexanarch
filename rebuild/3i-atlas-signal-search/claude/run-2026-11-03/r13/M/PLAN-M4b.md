@@ -21,7 +21,7 @@ M4 keeps its channels as recorded: cc00–cc32 and cc34, cc40, cc63 (the workers
 2. **Drift search** (`M4b/mdrift.py`). Rows padded to 64; Taylor's tree sums power along straight lines for every drift of 0 to ±63 cells over the 63 row intervals (383 s), at three resolutions: 1, 4 and 16 bins per cell (2.79, 11.2 and 44.7 Hz). The rates reached: |r| ≤ 0.46, 1.8 and 7.3 Hz/s; steps 0.0073, 0.029 and 0.117 Hz/s. Each drift's sum is z-scored by median and MAD across the band; per cell the largest z over drifts and its drift are kept, with the cells z ≥ 6 listed.
 3. `out3/ccNN_SCAN.npz` holds these.
 
-`mdhits.py CC`: the events.
+`mdhits.py CC`: the events. **Revised after calibration round 1 (cc30, M4b/cal/CALIBRATION-cc30.md): the hit statistic is local.** Each resolution's per-cell maximum over drifts is rescaled by the median and MAD of that maximum in blocks of 1024 cells, because one MAD across the coarse channel made broadband occupancy (GLONASS) into about 10⁵ hits. Hits and vetoes are read on the local statistic.
 - **Hit**: a cell in an ON scan with z ≥ Z_HIT, the strongest within ±2 cells.
 - **Track**: its drift extrapolated linearly to each other scan's first row. Window: ±(3 + ⌈|Δt|/383 s⌉ + ⌈K·|rate·Δt|⌉) cells, at the hit's resolution.
 - **Veto**: in any OFF scan, the largest z (any drift) inside the window ≥ Z_VETO.
@@ -39,7 +39,9 @@ On cc30, which holds the GLONASS L1 carriers M4 nominated:
 3. **GLONASS.** The carriers at 1599.96 and 1600.31 MHz must be vetoed.
 4. **Control rate.** The role-exchanged counts on cc30.
 
-Z_HIT, Z_VETO and K are set from these (provisional 10, 5, 0.5) and written here with the outcome before the plan is frozen. Nothing after freezing changes them.
+Z_HIT, Z_VETO and K are set from these (provisional 10, 5, 0.5) and written here with the outcome before the plan is frozen.
+
+**Round 1 done (cc30).** The class-A rule and the veto work. Slow strong tones (r = 0.8, |rate| ≤ 0.3 Hz/s) are found at local z 17–67; drifts of 1 Hz/s and above and r = 0.2 are not reliably found in that channel; GLONASS and the persistent tones are vetoed; the role-exchanged control gives B 270 against 32. **Round 2, before freezing:** a quiet channel, with injections continuous across the ON scans at 0.05–4 Hz/s and r = 0.4, 0.8 and 1.6, for the sensitivity curve and the thresholds. Nothing after freezing changes them.
 
 ## What counts
 
