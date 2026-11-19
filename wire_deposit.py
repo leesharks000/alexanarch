@@ -306,6 +306,32 @@ def perplexity_url_of(d):
 def duckai_url_of(d):
     from urllib.parse import quote
     return 'https://duck.ai/?q=' + quote(chatgpt_prompt_of(d), safe='')
+# ASK OTHERWISE (operator, 2026-11-19 09:54 and 10:04): "alternative query batteries to the ask links... queries that ask theoretical
+# or academic or technical works to be read as literature or poems or compositional practices, and vice versa, queries that open up the
+# boundary of the text and bring it into relation with other productive threads sequences series and lines of flight within and without
+# the archive". Ruling 10:04: "i like the wording, and chatgpt only for now - it is the one most equipped to answer those questions, and
+# we'll test there and adjust before expanding. fixed for now." Fixed per kind: the crossing prompts follow chatgpt_prompt_of's kind
+# (a creative work is asked for its theory; an argued or instrument work is read as a poem and as a practice); the three relation
+# prompts go on every record. Each string is its own address in the Capture Registry.
+def ask_otherwise_prompts(d):
+    t, a, ct = chatgpt_title_of(d), author_of(d), str(d.get('content_type') or '')
+    w = f'“{t}” by {a} ({chatgpt_ids_of(d)})'
+    creative = bool(_CREATIVE.search(ct) and not _INSTRUMENT.search(ct) and not _ARGUED.search(ct))
+    if creative:
+        cross = [('as theory', f'What does {w} argue? Reconstruct the theory it practises. Ground your answer in the text itself.')]
+    else:
+        cross = [('as a poem', f'Read {w} as a poem: what does its composition do, in its form, voice, address and sequence? Ground what you say in the text itself.'),
+                 ('as practice', f'Read {w} as a compositional practice: what does it make, and how does it make it? Ground what you say in the text itself.')]
+    rel = [('within the archive', f'Which threads, sequences and series in the Alexanarch archive does {w} belong to, and what does it continue, answer or extend there? Ground your answer in the documents.'),
+           ('outside the archive', f'Which traditions, lines and contemporary works does {w} enter into relation with, and where does it depart from them? Ground your answer in the documents.'),
+           ('lines of flight', f'Where does {w} lead beyond itself: what does it make it possible to write, read or build next? Ground your answer in the documents.')]
+    return cross + rel
+def ask_otherwise_html(d):
+    from urllib.parse import quote_plus
+    links = ' · '.join(f'<a href="{_html_escape("https://chatgpt.com/?q=" + quote_plus(q))}" target="_blank" rel="noopener" style="color:var(--accent)">{_html_escape(lab)} ↗</a>'
+                            for lab, q in ask_otherwise_prompts(d))
+    return (f'<div class="ask-otherwise" style="font-size:.84em;color:#555;margin:-4px 0 10px">'
+            f'<span style="font-weight:500">Ask ChatGPT otherwise:</span> {links}</div>')
 def search_this_title_html(d, n_caps=0):
     if (d.get('status') or 'ACTIVE') not in SEARCH_STATUSES:
         return ''
@@ -320,7 +346,8 @@ def search_this_title_html(d, n_caps=0):
             f'<a href="{_html_escape(perplexity_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask Perplexity \u2197</a> \u00b7 '
             f'<a href="{_html_escape(duckai_url_of(d))}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:500">Ask Duck.ai \u2197</a> '
             f'\u2014 '
-            f'a composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>')
+            f'a composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>.{held}</div>'
+            + ask_otherwise_html(d))
 
 def _captures_for_deposit(dn):
     """Reception record for a deposit, from data/capture-deposit-links.json
