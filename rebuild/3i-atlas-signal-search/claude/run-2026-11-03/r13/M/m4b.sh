@@ -10,7 +10,8 @@ for cc in $(seq 0 63); do
     [ -f $f ] && [ -f $g ] && python3 -c "import numpy as np;np.load('$f').files;np.load('$g').files" 2>/dev/null && continue
     for i in 1 2; do python3 mvb.py $cc $s >> m4b.log 2>&1 && break; echo "retry $cc $s $i" >> m4b.log; done
   done
-  if [ ! -f volt/cc$c.json ]; then   # an M4 channel not yet done: M4's stages 2-3 as frozen
+  case $cc in 0|26|40|63) M4X=1;; *) M4X=0;; esac   # M2/M3 channels: not M4's
+  if [ $M4X -eq 0 ] && [ ! -f volt/cc$c.json ]; then   # an M4 channel not yet done: M4's stages 2-3 as frozen
     for i in 1 2 3; do
       python3 mhits.py > M4/tmp$P.json 2>> m4b.err && python3 -c "
 import json;R=json.load(open('M4/tmp$P.json'));e=R['channels'].get('cc$c')

@@ -1,6 +1,6 @@
 # PLAN-M4b: the drift search, from the M4/M4b boundary on
 
-Written 2026-11-19, before any M4b product exists; DRAFT until the calibration below is run and its outcome written here, then frozen with its hashes in PLAN-M4b.sha256. Operator, 15:05 EST: "should we adjust to check for signal that drifts across frequency as we go?"; 15:11: "and agreed, we'll make the change at the transition boundary".
+Written 2026-11-19, before any M4b product exists. Calibrated (rounds 1 and 2, below) and FROZEN 2026-11-19 with its hashes in PLAN-M4b.sha256; nothing after freezing changes the code or the thresholds. Operator, 15:05 EST: "should we adjust to check for signal that drifts across frequency as we go?"; 15:11: "and agreed, we'll make the change at the transition boundary".
 
 ## Why
 
@@ -27,7 +27,7 @@ M4 keeps its channels as recorded: cc00–cc32 and cc34, cc40, cc63 (the workers
 - **Veto**: in any OFF scan, the largest z (any drift) inside the window ≥ Z_VETO.
 - **Class A**: not vetoed, and z ≥ Z_VETO inside the window in both other ON scans. **Class B**: not vetoed, single-scan.
 - **Control**: the same rule with the roles exchanged (OFF scans as ON, ON scans as vetoes). Its counts are the rate at which pointing away from the comet produces events.
-- One event per signal: the same scan within 134 Hz at any resolution is one event.
+- One event per signal: a weaker event in the same scan whose start lies inside a stronger event's swept band (widened by 134 Hz and one cell) is that event's ghost (revised after calibration round 2).
 
 `m4b.sh PARITY`: per channel, mvb.py over the six scans; for a channel M4 has not finished, M4's mhits.py and mvolt.py as frozen; mdhits.py → `M4b/events/ccNN.json`; the stacks hashed into `M4b-PRODUCTS.sha256` and deleted.
 
@@ -41,7 +41,7 @@ On cc30, which holds the GLONASS L1 carriers M4 nominated:
 
 Z_HIT, Z_VETO and K are set from these (provisional 10, 5, 0.5) and written here with the outcome before the plan is frozen.
 
-**Round 1 done (cc30).** The class-A rule and the veto work. Slow strong tones (r = 0.8, |rate| ≤ 0.3 Hz/s) are found at local z 17–67; drifts of 1 Hz/s and above and r = 0.2 are not reliably found in that channel; GLONASS and the persistent tones are vetoed; the role-exchanged control gives B 270 against 32. **Round 2, before freezing:** a quiet channel, with injections continuous across the ON scans at 0.05–4 Hz/s and r = 0.4, 0.8 and 1.6, for the sensitivity curve and the thresholds. Nothing after freezing changes them.
+**Round 1 done (cc30).** The class-A rule and the veto work. Slow strong tones (r = 0.8, |rate| ≤ 0.3 Hz/s) are found at local z 17–67; drifts of 1 Hz/s and above and r = 0.2 are not reliably found in that channel; GLONASS and the persistent tones are vetoed; the role-exchanged control gives B 270 against 32. **Round 2 done (cc08, M4b/cal2/CALIBRATION-cc08.md).** Continuous injections across the ON scans. Class A recovers r = 0.4 at |rate| ≤ 0.3 Hz/s, r = 0.8 to 1 Hz/s and r = 1.6 to 4 Hz/s. The role-exchanged control gives A 0 and B 6. **Thresholds fixed: Z_HIT 10, Z_VETO 5, K 0.5, BLK 1024.** cc30's poorer recovery at drift is that channel's GLONASS background. Nothing after freezing changes them.
 
 ## What counts
 

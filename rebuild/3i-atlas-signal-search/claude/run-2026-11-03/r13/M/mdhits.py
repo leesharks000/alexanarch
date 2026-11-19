@@ -75,8 +75,15 @@ def events(on, off):
                            "on_along": {v: round(float(n_[k, i]), 2) for k, v in enumerate(others)},
                            "cls": "A" if n_[:, i].min() >= Z_VETO else "B"})
     ev.sort(key=lambda e: -e["z_local"]); merged = []
-    for e in ev:   # one event per signal: the same scan within 134 Hz at any level is the same event
-        if any(m["scan"] == e["scan"] and abs(m["mhz_topo"] - e["mhz_topo"]) < 134e-6 for m in merged[-200:]): continue
+    # One event per signal. Calibration round 2 (cc08): a strong drifting line also raises weaker off-track peaks at the coarse
+    # resolutions, within the band its own track sweeps during the scan. A weaker event in the same scan whose start lies inside
+    # a stronger event's swept band (widened by 134 Hz and by one cell of the stronger event's resolution) is that event's ghost.
+    for e in ev:
+        lo_hi = lambda m: sorted((m["mhz_topo"], m["mhz_topo"] + m["hz_per_s"] * SPAN / 1e6))
+        def ghost(m):
+            a, b = lo_hi(m); pad = 134e-6 + m["level"] * dm.DF / 1e6
+            return m["scan"] == e["scan"] and a - pad <= e["mhz_topo"] <= b + pad
+        if any(ghost(m) for m in merged): continue
         merged.append(e)
     return merged
 
