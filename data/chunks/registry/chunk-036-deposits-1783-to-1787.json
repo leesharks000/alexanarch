@@ -1,8 +1,8 @@
 {
   "chunk_number": 36,
   "first_deposit": 1783,
-  "last_deposit": 1786,
-  "count": 4,
+  "last_deposit": 1787,
+  "count": 5,
   "deposits": [
     {
       "deposit_number": 1783,
@@ -1232,6 +1232,177 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "388ab668811f636197e522d5181857090742f76e41ee9671c7c9f07894d34156",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1787,
+      "axn": "AXN:0CCB.COMPOSITIONAL.☽🌘🔄✋💥👐",
+      "hex": "0CCB",
+      "family": "COMPOSITIONAL",
+      "emoji": "☽🌘🔄✋💥👐",
+      "hash": "a8076fbcebb2d4c7bd1686476dae6c3259240939835143205aa02c89d89d6e7a",
+      "title": "whoever's left with a heart that feels",
+      "creator": "Sharks, Lee",
+      "date": "2026-11-18",
+      "description": "A poem by Lee Sharks, published in New Human 2 on 18 November 2026. Its five stanzas are the author's five turns, as typed, in a signed-out ChatGPT session of the same evening that had read ΦΑΙΝΕΤΑΙ ΜΟΙ v3.1 (#1785) whole and was then asked for its opinion; the machine's answers are not part of the poem and are kept in the Capture Registry (phainetai-v31-arguments-chatgpt-unprimed-20261118). The title is Catullan.",
+      "content_type": "Poetry",
+      "license": "CC-BY-4.0",
+      "substrate": "Human-only. Written by Lee Sharks: the five stanzas are his turns in a ChatGPT session of 18 November 2026, given in full, with the title, in his message of 18 November 2026 (21:26 EST); the deposit metadata assembled by Claude (Anthropic) in session.",
+      "methodology": "A poem, deposited as given.",
+      "falsification_conditions": "A poem states no proposition to falsify; the deposit fails only if its text differs from the text the author gave.",
+      "root_axn": "AXN:0CCB.COMPOSITIONAL",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "a8076fbcebb2d4c7bd1686476dae6c3259240939835143205aa02c89d89d6e7a",
+      "clusters": [
+        "Alchemical",
+        "Celestial",
+        "Temporal",
+        "Gestural",
+        "Liminal",
+        "Gestural"
+      ],
+      "axn_reading": "Transmutation -> Origin -> Duration -> Touch -> Threshold -> Touch",
+      "minted_at": "2026-11-19T02:27:18Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0CCB-text.md",
+      "wiki_article": "whoever's left with a heart that feels is a poem by Lee Sharks, published in New Human 2 and deposited on 18 November 2026. Its five stanzas are the author's turns, as typed, in a signed-out ChatGPT session of the same evening. The session had read Lee Sharks's article ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v3.1, #1785) whole and set out its arguments; the poem begins where the author asks for the machine's opinion of which reading is better, and runs through its charges of lying to a closing line of five 🖕 glyphs. The machine's answers are not part of the poem; the full session is kept in the archive's Capture Registry as phainetai-v31-arguments-chatgpt-unprimed-20261118. The title is Catullan, in the line of the poems of address and invective, and the poem stands in New Human 2 beside and the last shall be first (#1751), whose whole text is one 🖕, and here is what i learned from catullus (#1411).",
+      "wiki_status": "in-session",
+      "entities": [
+        {
+          "subject": "whoever's left with a heart that feels",
+          "predicate": "created_by",
+          "object": "Sharks, Lee",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "whoever's left with a heart that feels",
+          "predicate": "is_type",
+          "object": "Poetry",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "whoever's left with a heart that feels",
+          "predicate": "belongs_to_family",
+          "object": "COMPOSITIONAL",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "whoever's left with a heart that feels",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "whoever's left with a heart that feels",
+          "predicate": "references",
+          "object": "Lee Sharks",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "new-human-2",
+        "poem",
+        "Catullus",
+        "invective",
+        "found poem",
+        "machine reader",
+        "ChatGPT",
+        "Sappho 31",
+        "ΦΑΙΝΕΤΑΙ ΜΟΙ",
+        "opinion",
+        "emoji",
+        "Lee Sharks"
+      ],
+      "related_identifiers_raw": "#1785 (ΦΑΙΝΕΤΑΙ ΜΟΙ v3.1, the article the session read); #1751 (and the last shall be first, New Human 2); #1411 (here is what i learned from catullus, New Human 2); capture phainetai-v31-arguments-chatgpt-unprimed-20261118 (AXN:0CCA, the session, with the machine's answers)",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 1536,
+        "audited_at": "2026-11-19T02:27:18Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concepts_attested_none": true,
+      "related_deposits": [
+        {
+          "deposit": 1785,
+          "relation": "the article the session read before the poem's first line"
+        },
+        {
+          "deposit": 1751,
+          "relation": "and the last shall be first, New Human 2: a poem whose whole text is one 🖕"
+        },
+        {
+          "deposit": 1411,
+          "relation": "here is what i learned from catullus, New Human 2"
+        }
+      ],
+      "related_attested_none": false,
+      "lexical_attested_none": true,
+      "references_concepts": [
+        "Lee Sharks",
+        "New Human 2"
+      ],
+      "references_concept_count": 2,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0CCB.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-11-19T02:28:53.755778+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [],
+            "anchor_count": 0,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "26da1cc7b5b555288eb1188a704afe985a93c6f659dbfb2450659ea7b0075c82",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },
