@@ -286,7 +286,7 @@ def transcript_block(e, gallery=''):
     cites = e.get("cite_list") or []
     coll = e.get("collisions") or []
     oq = e.get("oq") or []
-    if not (reading or analysis or tr or cites or coll or oq or gallery or e.get("findings")):
+    if not (reading or analysis or tr or cites or coll or oq or gallery or e.get("findings") or e.get("null_basis")):
         return ""
 
     meta = {
@@ -319,6 +319,17 @@ def transcript_block(e, gallery=''):
         # on every multi-round capture, where it is false.
         parts.append('<div class="cap-tr-label">Rounds</div>'
                      f'<ol class="cap-cites">{rows}</ol>')
+    # THE SIGNIFICANT NULL (2026-11-19): a marked null carries no transcript; what it rests on renders in its place,
+    # with the baseline that makes it significant linked entry by entry.
+    nb = e.get("null_basis")
+    if nb:
+        base = "".join(f'<li><a href="/captures/{esc(b)}/">{esc(b)}</a></li>' for b in nb.get("baseline") or [])
+        parts.append('<div class="cap-tr-label">Significant null</div><dl class="cap-tr-meta">'
+                     + "".join(f'<dt class="g-meas">{k}</dt><dd class="g-meas">{esc(str(nb[f]))}</dd>'
+                               for k, f in (("observed", "observed"), ("kind", "kind"), ("runs", "runs"), ("evidence", "evidence"), ("significance", "significance"))
+                               if nb.get(f) not in (None, ""))
+                     + '</dl><div class="cap-tr-label">Baseline: engaged entries</div>'
+                     f'<ul class="cap-cites">{base}</ul>')
     # THE REMAINING CAPTURES, inside the expand. The leesharks gallery put its
     # gallery in the collapsed entry-body and showed ONE thumbnail up top; a
     # capture with six screenshots should show its first and keep the rest one
