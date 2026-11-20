@@ -180,6 +180,12 @@ def build():
     tq = ''.join(row(lt, [ask_link(fill(t, window=w, date='{date}'), lw) for w, lw in zip(ts['windows'], L['windows'])]) for t, lt in zip(ts['templates'], L['timescale_templates']))
     sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">Read a window of work ending today as one body of thought.</p>{tq}</section>')
     sec.append('<section id="whole"><h2>The archive as a whole</h2><div class="bs wrapb">' + ''.join(ask_link(q, lq) for q, lq in zip(Q['whole'], L['whole'])) + '</div></section>')
+    def hfill(t, h):
+        q = fill(t, name=h['name'], focus=h['focus'])
+        return q.replace(h['name'] + "'s", h['name'] + "'") if h['name'].endswith('s') else q
+    cast = row('the cast', [ask_link(fill(q), lq) for q, lq in zip(Q['cast'], L['cast'])])
+    cast += ''.join(row(h['name'], [ask_link(hfill(t, h), lt.replace('{focus}', h['focus'])) for t, lt in zip(Q['heteronym_templates'], L['heteronym_templates'])], sub=True) for h in Q['heteronyms'])
+    sec.append(f'<section id="heteronyms"><h2>The heteronyms</h2><p class="n">The cast of characters: the twelve of the Dodecad, each from several angles.</p>{cast}</section>')
     disc = ''
     for dsc in Q['disciplines']:
         top = row('the field', [ask_link(fill(t, field=dsc['name']), lt) for t, lt in zip(Q['discipline_templates'], L['discipline_templates'])])
@@ -200,7 +206,7 @@ def build():
     sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
                  f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
-    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices'))
+    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices'))
     first = min(e['date'] for e in ENTS)
     stats = (f'<div class="stats"><div><b>{n_q:,}</b>queries on this page</div><div><b>{n_addr:,}</b>addresses seated since {first}</div>'
              f'<div><b>{n_obs:,}</b>observations</div><div><b>{len(arch):,}</b>archive-level addresses</div>'
@@ -211,7 +217,7 @@ def build():
             + figure('What went wrong in the compositions', 'Defects recorded at intake on the archive-level compositions, as coded in the registry (a composition can carry several). The representation that accrues includes its failures.', f4, t4))
 
     nav = render_navbar(active='/ask/')
-    desc = f'General archival queries for alexanarch.org: {n_q:,} queries by time scale, discipline and subdiscipline, programme, theme and practice, each opening on ChatGPT; with figures from the Capture Registry on what the act of querying has accrued.'
+    desc = f'General archival queries for alexanarch.org: {n_q:,} queries by time scale, heteronym, discipline and subdiscipline, programme, theme and practice, each opening on ChatGPT; with figures from the Capture Registry on what the act of querying has accrued.'
     page = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ask — Alexanarch</title><link rel="canonical" href="https://www.alexanarch.org/ask/"><meta name="description" content="{E(desc)}">
@@ -247,9 +253,9 @@ ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color
 <h1>Ask</h1>
 <p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
 <details class="about"><summary>About this page</summary>
-<p>Queries addressed to the archive as a whole: over time, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
+<p>Queries addressed to the archive as a whole: over time, by heteronym, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
 </details>
-<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
 <section id="accrue"><h2>What accrues</h2>{stats}{figs}</section>
 {sec_asked}

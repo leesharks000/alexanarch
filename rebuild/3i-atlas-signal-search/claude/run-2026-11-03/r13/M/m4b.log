@@ -90,3 +90,28 @@ M4b cc10 done A 0 B 0 | control A 0 B 2
 M4b cc11 done A 0 B 1 | control A 0 B 3
 12 0013 done 213s
 13 0013 done 213s
+12 0014 done 194s
+13 0014 done 191s
+12 0015 done 189s
+13 0015 done 195s
+13 0016 done 201s
+12 0016 done 221s
+13 0017 done 190s
+12 0017 done 233s
+13 0018 done 199s
+M4b cc13 done A 0 B 2 | control A 0 B 0
+12 0018 done 196s
+M4b cc12 done A 0 B 0 | control A 0 B 0
+15 0013 done 213s
+14 0013 done 202s
+15 0014 done 185s
+14 0014 done 194s
+15 0015 done 184s
+14 0015 done 188s
+retry 0016 832 IncompleteRead(6455019 bytes read, 27101435 more expected)
+retry 0016 240 IncompleteRead(23068395 bytes read, 10488081 more expected)
+M4b container restart 2026-11-20T01:03:47Z: workers relaunched after cc13; same python 3.12.3 numpy 2.5.4 scipy 1.18.1
+M4b worker 0 start 2026-11-20T01:03:47Z
+M4b worker 1 start 2026-11-20T01:03:49Z
+14 0016 done 265s
+15 0016 done 269s
