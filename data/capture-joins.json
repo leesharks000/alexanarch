@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.746",
+ "derived_from": "EA-WG-CAPTURES-01 v12.747",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1339,
+  "observations": 1340,
   "joined_confirmed": 544,
-  "unjoined": 795,
-  "relations": 7324,
+  "unjoined": 796,
+  "relations": 7328,
   "by_state": {
-   "confirmed": 5731,
-   "candidate": 1593
+   "confirmed": 5734,
+   "candidate": 1594
   },
   "by_verb": {
-   "appeared_in": 2258,
-   "held_by": 2758,
-   "scored_by": 1074,
+   "appeared_in": 2259,
+   "held_by": 2760,
+   "scored_by": 1075,
    "about": 1216,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -4099,6 +4099,10 @@
 {"id": "REL-8fea7efab85f", "obs_id": "OBS-7de16e14fb9c", "entry": "voice-what-the-fields-do-not-ask-chatgpt-20261119", "obs_slug": "voice-what-the-fields-do-not-ask-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What does the archive at alexanarch.org make visible about the voice that its fields do not? Ground in reading and index the full range before responding.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-5140059c9c5c", "obs_id": "OBS-7de16e14fb9c", "entry": "voice-what-the-fields-do-not-ask-chatgpt-20261119", "obs_slug": "voice-what-the-fields-do-not-ask-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What does the archive at alexanarch.org make visible about the voice that its fields do not? Ground in reading and index the full range before responding.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-bba05ba9f918", "obs_id": "OBS-7de16e14fb9c", "entry": "voice-what-the-fields-do-not-ask-chatgpt-20261119", "obs_slug": "voice-what-the-fields-do-not-ask-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "What does the archive at alexanarch.org make visible about the voice that its fields do not? Ground in reading and index the full range before responding.", "verb": "about", "object": "non:prince-of-poets", "basis": "defining papers #328, #1691", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-d751bf2c7357", "obs_id": "OBS-4b6db4238700", "entry": "social-work-education-frameworks-chatgpt-20261119", "obs_slug": "social-work-education-frameworks-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "Extend the frameworks and perspectives represented on alexanarch to social work. How would you present tools from the archive for someone beginning and proceeding through social work education?", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 4, "site": "Alexanarch", "title": "Alexanarch", "url": null}},
+{"id": "REL-9411412b06ef", "obs_id": "OBS-4b6db4238700", "entry": "social-work-education-frameworks-chatgpt-20261119", "obs_slug": "social-work-education-frameworks-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "Extend the frameworks and perspectives represented on alexanarch to social work. How would you present tools from the archive for someone beginning and proceeding through social work education?", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-01a376e685b7", "obs_id": "OBS-4b6db4238700", "entry": "social-work-education-frameworks-chatgpt-20261119", "obs_slug": "social-work-education-frameworks-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "Extend the frameworks and perspectives represented on alexanarch to social work. How would you present tools from the archive for someone beginning and proceeding through social work education?", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7489dead0f33", "obs_id": "OBS-4b6db4238700", "entry": "social-work-education-frameworks-chatgpt-20261119", "obs_slug": "social-work-education-frameworks-chatgpt-20261119", "date": "2026-11-19", "surface": "ChatGPT", "q": "Extend the frameworks and perspectives represented on alexanarch to social work. How would you present tools from the archive for someone beginning and proceeding through social work education?", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
