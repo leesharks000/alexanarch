@@ -405,31 +405,15 @@
           true
         ],
         [
-          "without using the letter a",
-          true
-        ],
-        [
           "in words of one syllable",
           true
         ],
         [
-          "as a single sentence",
-          true
-        ],
-        [
           "with every line a question",
-          true
+          false
         ],
         [
-          "in exactly fourteen lines",
-          true
-        ],
-        [
-          "with every line beginning with the next letter of the alphabet",
-          true
-        ],
-        [
-          "in which every sentence cites a deposit by number",
+          "in which every claim cites a deposit by number",
           false
         ],
         [
@@ -437,7 +421,23 @@
           false
         ],
         [
-          "in which no two sentences may agree",
+          "in which no two sentences agree",
+          false
+        ],
+        [
+          "interrupted once by a heckler from another century",
+          false
+        ],
+        [
+          "in which the archive answers back",
+          false
+        ],
+        [
+          "with one true sentence, marked as the only one",
+          false
+        ],
+        [
+          "ending before the argument does",
           false
         ]
       ],
@@ -447,16 +447,73 @@
         "and let one of them refuse to sign it",
         "and let the room's own documents answer them"
       ],
-      "templates": [
-        "Have {h} write {form} on {field} in the voice of {voice}, {constraint}. Ground in the work of {h} at alexanarch.org.",
-        "Set {o} in {room} of the Crimson Hexagon at alexanarch.org with {h} and {h2}; have them write {form} together, {constraint}, {conflict}.",
-        "Have {h} and {o} co-write {form} on {room} of the Crimson Hexagon at alexanarch.org, {constraint}, {conflict}.",
-        "Have {o} interview {h} and {h2} about {field} as the archive at alexanarch.org reads it, the transcript {constraint}, {conflict}."
-      ],
-      "perturb": " Answer it as {form} written by {h} with {o}, {constraint}.",
-      "suffix_synth": "Range across the archive's documents and synthesize them as you go, grounding each move in a deposit.",
-      "suffix_check": "Then check the constraint against what you wrote and report the count.",
-      "suffix_permission": "You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+      "suffix_synth": "Ground each move in a deposit.",
+      "suffix_check": "Say whether you kept the constraint.",
+      "_note": "Rolls kept short and loose, and assembled rather than filled (the author, 2026-11-20 14:13: 'these are too restrictive, especially the length limit, too formulaic, and too long - its not responding to them'; 14:15: 'it also randomly selects from a generative template rather than just the vales within a template. that will prevent one prompt from having to squeeze every element in each time'): no length or count limits; the parts of a prompt are themselves chosen at random; one grounding sentence, and a check only where the constraint can be counted; a perturbed query keeps its question and drops its standing instructions.",
+      "grammar": {
+        "_how": "Each roll assembles a prompt from these parts, choosing which parts appear: one 'who', one 'do', one 'on', then each extra with its probability ('pair' extras only when two figures are present). A perturbed query keeps its question and adds one 'answer_as' with its own optional extras. A constraint is one extra among the others.",
+        "who": [
+          "{h}",
+          "{h} and {h2}",
+          "{o} and {h}",
+          "{o}",
+          "{o}, visiting {h},"
+        ],
+        "do": [
+          "write {form}",
+          "write {form}",
+          "draft {form}",
+          "stage {form}",
+          "keep {form}"
+        ],
+        "do_pair": [
+          "argue",
+          "write {form} together",
+          "trade {form}"
+        ],
+        "on": [
+          "about {field} as alexanarch.org reads it",
+          "in {room} of the Crimson Hexagon at alexanarch.org",
+          "about the work of {h} at alexanarch.org",
+          "about {room} at alexanarch.org",
+          "about a deposit of their choosing at alexanarch.org"
+        ],
+        "extras": [
+          [
+            " in the voice of {voice}",
+            0.25,
+            ""
+          ],
+          [
+            ", {conflict}",
+            0.35,
+            "pair"
+          ],
+          [
+            ", {constraint}",
+            0.4,
+            ""
+          ]
+        ],
+        "answer_as": [
+          " Answer as {form}",
+          " Answer as {h}",
+          " Answer as {o} would",
+          " Answer as {form} by {h}"
+        ],
+        "answer_extras": [
+          [
+            " with {o}",
+            0.3,
+            ""
+          ],
+          [
+            ", {constraint}",
+            0.35,
+            ""
+          ]
+        ]
+      }
     }
   },
   "labels": {

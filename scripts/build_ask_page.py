@@ -218,9 +218,9 @@ def build():
         rooms_for_roll = sorted({qname(r) for r in HX.values() if r and r.get('cat') in ('core', 'ext', 'new', 'special', 'seat') and 'Josephus' not in r['name']})
         ROLL_JSON = json.dumps(dict(RL, rooms=rooms_for_roll), ensure_ascii=False).replace('</', '<\\/')
         roll_box = ('<div class="roll" hidden><button type="button" class="rb" data-roll="new">Roll a new prompt</button> '
-                    '<span class="n">A heteronym or two, an outside figure, a form, a field, a voice and a constraint, drawn at random from lists kept with the page&rsquo;s prompts (data/ask-queries.json, under roll). Each roll is a new address.</span>'
+                    '<span class="n">A prompt assembled at random: which parts it has (a heteronym or two, an outside figure, a form, a field or a room, sometimes a voice, a quarrel or a constraint) is itself drawn, from the grammar kept with the page&rsquo;s prompts (data/ask-queries.json, under roll). Each roll is a new address.</span>'
                     '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>')
-        sec.append('<section id="weird"><h2>Weird-ass prompts</h2><p class="n">Perturbations after the cast and the scene: prompts made to break the composer&rsquo;s template, setting historical and fictional figures among the heteronyms and in the rooms of the Hexagon, under constraints of voice, genre and form, many drawn from the avant-garde seatings of the originals library (<a class="t" href="/s/records/1682/">EA-CORPORA-18</a>). Each asks the composer to range across the archive&rsquo;s documents and synthesize them, gives it leave to add distinctions and swerves the archive does not yet hold, marked as new, and, where there is a constraint, asks it to check the constraint and report the count.</p>'
+        sec.append('<section id="weird"><h2>Weird-ass prompts</h2><p class="n">Perturbations after the cast and the scene: prompts made to break the composer&rsquo;s template, setting historical and fictional figures among the heteronyms and in the rooms of the Hexagon, under constraints of voice, genre and form, many drawn from the avant-garde seatings of the originals library (<a class="t" href="/s/records/1682/">EA-CORPORA-18</a>). Each asks the composer to range across the archive&rsquo;s documents and synthesize them, gives it leave to add distinctions and swerves the archive does not yet hold, marked as new, and, where there is a constraint, asks it to check the constraint and report the count. The dice and the perturb buttons keep their prompts short: each roll draws which parts a prompt has as well as what fills them, with no length or count limits, one grounding sentence, and a check only where the constraint can be counted.</p>'
                     + wrows + '<h3 id="roll" style="margin-top:1.2em">Roll the dice</h3>' + roll_box
                     + f'<script type="application/json" id="rolldata">{ROLL_JSON}</script></section>')
     CJ = json.load(open(ROOT / 'data' / 'cha-journals.json'))
@@ -306,7 +306,7 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
 <p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
-<div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">Any query on this page, crossed with a heteronym or two, an outside figure, a form and a constraint; different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
+<div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">Any query on this page, or a prompt assembled fresh, its parts drawn at random (a figure or two, a form, sometimes a constraint); different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
 <details class="about"><summary>About this page, and what the queries draw</summary>
 <p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
 <p><b>What came back, 19&ndash;20 November 2026.</b> The figures are from the captures of those two days on ChatGPT, signed out: 57 from the page&rsquo;s standard queries and the first six from its Weird-ass prompts.</p>
@@ -343,15 +343,21 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 (function(){{try{{var el=document.getElementById("rolldata");if(!el)return;var D=JSON.parse(el.textContent);
 function pk(a){{return a[Math.floor(Math.random()*a.length)]}}
 function ctx(){{var c=pk(D.constraints),h=pk(D.heteronyms),h2;do{{h2=pk(D.heteronyms)}}while(h2===h);
-return {{h:h,h2:h2,o:pk(D.outsiders),form:pk(D.forms),field:pk(D.fields),voice:pk(D.voices),constraint:c[0],chk:c[1],conflict:pk(D.conflicts),room:pk(D.rooms)}}}}
-function fill(t,x){{return t.replace(/[{{]([a-z0-9]+)[}}]/g,function(m,k){{return x[k]!==undefined?x[k]:m}})}}
-function sfx(x){{return " "+D.suffix_synth+(x.chk?" "+D.suffix_check:"")+" "+D.suffix_permission}}
+return {{h:h,h2:h2,o:pk(D.outsiders),form:pk(D.forms),field:pk(D.fields),voice:pk(D.voices),constraint:c[0],chk:c[1],conflict:pk(D.conflicts),room:pk(D.rooms),used:{{}}}}}}
+function fill(t,x){{return t.replace(/[{{]([a-z0-9]+)[}}]/g,function(m,k){{if(x[k]===undefined)return m;x.used[k]=1;return x[k]}})}}
+var G=D.grammar;
+function ext(list,x,pair){{var o="";list.forEach(function(e){{if(e[2]==="pair"&&!pair)return;var m=e[0].match(/[{{](h2?|o)[}}]/g)||[];if(m.some(function(k){{return x.used[k.slice(1,-1)]}}))return;if(Math.random()<e[1])o+=fill(e[0],x)}});return o}}
+function gen(x){{var w=pk(G.who),pair=/[{{](h2|o)[}}]/.test(w)&&/[{{]h[}}]/.test(w),d=pair&&Math.random()<0.5?pk(G.do_pair):pk(G.do);
+var W=fill(w,x),Dd=fill(d,x),ons=G.on.filter(function(t){{var m=t.match(/[{{](h2?|o)[}}]/g)||[];return m.every(function(k){{return !x.used[k.slice(1,-1)]}})}});
+var q="Have "+W+" "+Dd+" "+fill(pk(ons.length?ons:G.on),x)+ext(G.extras,x,pair);return q.replace(/,+\\s*,/g,",").replace(/\\s+/g," ").trim()+"."}}
+function pert(x){{return fill(pk(G.answer_as),x)+ext(G.answer_extras,x,false)+"."}}
+function sfx(x){{return " "+D.suffix_synth+(x.used.constraint&&x.chk?" "+D.suffix_check:"")}}
 function show(box,q){{var p=box.querySelector(".rq"),a=box.querySelector(".ra");p.textContent=q;a.href="https://chatgpt.com/?q="+encodeURIComponent(q).replace(/%20/g,"+");a.title=q;a.hidden=false}}
 document.querySelectorAll(".roll").forEach(function(b){{b.hidden=false}});
 document.addEventListener("click",function(ev){{var b=ev.target.closest("button[data-roll]");if(!b)return;var box=b.closest(".roll"),x=ctx(),q;
-if(b.dataset.roll==="new"||(b.dataset.roll==="any"&&Math.random()<0.35)){{q=fill(pk(D.templates),x)+sfx(x)}}
+if(b.dataset.roll==="new"||(b.dataset.roll==="any"&&Math.random()<0.35)){{q=gen(x)+sfx(x)}}
 else{{var sec=b.dataset.roll==="any"?document:b.closest("section"),as=[].slice.call(sec.querySelectorAll("a.q[data-q]")).filter(function(a){{return !a.classList.contains("ra")}});if(!as.length)return;
-var a=pk(as),base=(a.title||a.getAttribute("data-q")).trim();if(!/[.?!]$/.test(base))base+=".";q=base+fill(D.perturb,x)+sfx(x)}}
+var a=pk(as),base=(a.title||a.getAttribute("data-q")).trim(),qi=base.indexOf("?");if(qi>0)base=base.slice(0,qi+1);base=(base.match(/[^.?!]+[.?!]+/g)||[base]).filter(function(t,i){{return i===0||!/^\\s*(ground|range|scan|index) /i.test(t)}}).join("").trim();if(!/[.?!]$/.test(base))base+=".";q=base+pert(x)+sfx(x)}}
 show(box,q)}})}}catch(e){{}}}})();
 (function(){{try{{var d=new Date(),m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;
