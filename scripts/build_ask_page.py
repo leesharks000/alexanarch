@@ -278,16 +278,32 @@ details{{background:var(--surface);border:1px solid var(--border);border-radius:
 figure{{background:#fcfcfb;border:1px solid var(--border);border-radius:6px;padding:1em;margin:1em 0}} figcaption{{font-size:.85em;color:#52514e;margin-top:.5em}}
 figure details{{border:none;padding:0;background:none;margin-top:.5em}} table{{border-collapse:collapse;font-size:.8em;margin-top:.4em}} td,th{{border-bottom:1px solid var(--border);padding:2px 8px;text-align:left}}
 ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color:var(--dim);margin-right:.4em}} a.cap{{font-size:.8em;color:var(--dim)}}
+form.tx label{{display:block;font-size:.85em;color:#52514e;margin:.6em 0}} form.tx textarea,form.tx input,form.tx select{{display:block;width:100%;margin-top:.25em;font:inherit;font-size:.95em;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--fg)}} form.tx textarea{{font-family:var(--mono);font-size:.85em}}
+.tx2{{display:flex;flex-wrap:wrap;gap:0 12px}} .tx2 label{{flex:1 1 180px}} form.tx label.file input{{border:none;padding:4px 0;background:none}}
+form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid var(--accent);border-radius:16px;background:var(--accent);color:#fff;cursor:pointer;margin-top:.4em}} form.tx button:disabled{{opacity:.5}}
 .toc a{{display:inline-block;white-space:nowrap;margin-right:1em;color:var(--accent);font-size:.9em}}
 </style></head><body><div class="wrap">
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
 <p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
 <details class="about"><summary>About this page</summary>
-<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
+<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
 </details>
-<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
+<section id="submit"><h2>Submit a transcript</h2>
+<p class="n">Ran one of these, or any query of your own about the archive? Paste the whole exchange here, or load it from a .txt or .md file. It goes to the archive's capture inbox on GitHub, unseated, to be read and seated in the Capture Registry later. The query you typed is the address, so give it exactly as typed. Screenshots can't be sent here yet; paste the text.</p>
+<form id="tx" class="tx">
+<label>The query, exactly as typed<textarea name="query" rows="2" required></textarea></label>
+<div class="tx2"><label>Surface<select name="surface">{''.join(f'<option>{E(x)}</option>' for x in ["ChatGPT","Google AI Overview","Google AI Mode","Google Search results page (no AI surface)","Perplexity","Claude","Gemini","Copilot","Grok","DeepSeek","Kimi","other"])}</select></label>
+<label>Date run<input type="date" name="date"></label>
+<label>Session<select name="auth"><option>signed out, incognito</option><option>signed out</option><option>signed in</option><option>unstated</option></select></label></div>
+<label>Transcript: the whole exchange, every round, as copied<textarea name="transcript" rows="9" required></textarea></label>
+<label class="file">or load a text file <input type="file" name="file" accept=".txt,.md,.text,text/plain,text/markdown"></label>
+<label>Rounds and notes (optional): follow-ups, what you saw, anything the text doesn't show<textarea name="notes" rows="2"></textarea></label>
+<div class="tx2"><label>Your name or handle (optional)<input name="submitter"></label><label>Share link (optional)<input name="source_url" type="url"></label></div>
+<button type="submit">Send to the inbox</button> <span id="txs" class="n" role="status"></span>
+</form></section>
 <section id="accrue"><h2>What accrues</h2>{stats}{figs}</section>
 {sec_asked}
 <p class="n" style="margin-top:2em">Built {TODAY.isoformat()} by scripts/build_ask_page.py from data/ask-queries.json and the Capture Registry. Dates in the queries are filled with today's date in your browser.</p>
@@ -297,6 +313,15 @@ ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;
 var f=q.split("{{date}}").join(t);a.href="https://chatgpt.com/?q="+encodeURIComponent(f).replace(/%20/g,"+");a.title=f;
 a.querySelectorAll(".d").forEach(function(s){{s.textContent=t}})}})}}catch(e){{}}}})();
+(function(){{var f=document.getElementById("tx");if(!f)return;var st=document.getElementById("txs");
+try{{var n=new Date();f.date.value=n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0")}}catch(e){{}}
+f.file.addEventListener("change",function(){{var x=f.file.files[0];if(!x)return;var r=new FileReader();r.onload=function(){{f.transcript.value=r.result}};r.readAsText(x)}});
+function dl(o){{var b=new Blob([JSON.stringify(o,null,1)],{{type:"application/json"}}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download="capture-inbox-entry.json";a.textContent="download the entry";st.appendChild(document.createTextNode(" "));st.appendChild(a)}}
+f.addEventListener("submit",function(ev){{ev.preventDefault();var o={{query:f.query.value,surface:f.surface.value,date:f.date.value,auth:f.auth.value,transcript:f.transcript.value,notes:f.notes.value,submitter:f.submitter.value,source_url:f.source_url.value,from_page:"/ask/"}};
+var bt=f.querySelector("button");bt.disabled=true;st.textContent="Sending…";
+fetch("/api/submit-transcript",{{method:"POST",headers:{{"Content-Type":"application/json"}},body:JSON.stringify(o)}}).then(function(r){{return r.json().then(function(j){{return [r.ok,j]}})}}).then(function(x){{bt.disabled=false;
+if(x[0]){{st.textContent=(x[1].status==="received"?"Received: ":x[1].status+": ");var a=document.createElement("a");a.href=x[1].url;a.textContent=x[1].path;st.appendChild(a);f.transcript.value="";f.file.value=""}}
+else{{st.textContent="Not sent: "+(x[1].error||"error")+".";dl(o)}}}}).catch(function(){{bt.disabled=false;st.textContent="Not sent: the inbox could not be reached.";dl(o)}})}})}})();
 </script></body></html>'''
     out = ROOT / 'ask' / 'index.html'; out.parent.mkdir(exist_ok=True); out.write_text(page)
     print(f'ask: {n_q} queries; {len(arch)} archive-level addresses; {len(pts)} living-body compositions; written {out.relative_to(ROOT)}')
