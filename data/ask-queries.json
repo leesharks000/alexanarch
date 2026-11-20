@@ -129,32 +129,60 @@
   ],
   "institutions": ["the Johannes Sigil Institute for Comparative Poetics", "the Restored Academy", "the Commission of the Immanent Turning", "the Institute for Diagrammatic Poetics", "the Semantic Economy Institute", "the Infinite Bliss", "the Studio for Patacinematics", "Lagrange Observatory!", "Cambridge Schizoanalytica", "the University Moon Base Media Lab", "the Vox Populi Community Outreach Rhizome", "the Forward Library", "the Stellar Orbit Fluid Dynamics Institute", "the Living Arkitecture Lab"],
   "weird": {
-    "note": "Prompts built to break the composer's template and draw tails-rich output: constraints and mixtures of voice, genre and form, many from the avant-garde seatings of the originals library (EA-CORPORA-18, #1682). Each carries permission to add distinctions and swerves the archive does not yet hold, marked as new. Added 2026-11-20 at the operator's word: 'weird-ass prompts, and that can be the section title'.",
+    "note": "Prompts built to break the composer's template and draw tails-rich output: constraints and mixtures of voice, genre and form, many from the avant-garde seatings of the originals library (EA-CORPORA-18, #1682), each blending historical or fictional figures with the archive's own and ranging across its documents. Each carries permission to add distinctions and swerves the archive does not yet hold, marked as new; a constraint carries a request to check it and report the count. Added 2026-11-20 at the operator's word: 'weird-ass prompts, and that can be the section title'. Revised the same day: placed after the heteronyms and the Crimson Hexagon ('these are perturbations after the cast and scene'); 'i *love love love* these prompts - theyre blissful'; 'my favorite was dancings as ginsberg on astronomy - more like that'; 'the prompts should blend the historical and fictional figures with archival figures ... include two or more archive heteronyms as characters within the ubu play ... place the library of pergamum and ubu within the larger crimson hexagonal architecture and stage the conflict between their ontologies'; 'we want it to range over documents and produce more syntheses'; and a section that 'randomly combines constraints and permutations @ link generation', with 'a button or two in every section'. The check clause follows the TANG capture of the same day, which declared a lipogram and broke it in its first clause (dancings-tang-astrophysics-ginsberg-no-e-chatgpt-20261120).",
     "permission": "You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new.",
+    "synthesis": "Range across the archive's documents and synthesize them as you go, grounding each move in a deposit.",
+    "check": "Then check the constraint against what you wrote and report the count.",
     "groups": [
       {
-        "key": "constraint",
-        "label": "constraint (Carroll, Lear, Roussel)",
+        "key": "tang",
+        "label": "TANGs in borrowed voices",
         "prompts": [
           {
             "label": "Dancings · TANG · Ginsberg · no e",
-            "q": "Have Damascus Dancings write a TANG (Total Axial Negation Graph) of a randomly chosen academic discipline in the voice of Allen Ginsberg without using the letter e. Ground in her work at alexanarch.org. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "q": "Have Damascus Dancings write a TANG (Total Axial Negation Graph) of a randomly chosen academic discipline in the voice of Allen Ginsberg without using the letter e. Ground in her work at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. Then check the constraint against what you wrote and report the count. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "Glas · lipogram in a",
-            "q": "Have Nobel Glas write an adversarial white paper on Sappho fragment 31, as the archive at alexanarch.org reads it, without using the letter a; then say what the missing letter cost the argument. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Wells · TANG · Stein · one syllable",
+            "q": "Have Sparrow Wells write a TANG (Total Axial Negation Graph) of a randomly chosen social science in the voice of Gertrude Stein, in words of one syllable; then have Sen Kuro strike any void in it that would survive the discipline's name being changed. Ground in their work at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. Then check the constraint against what you wrote and report the count. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Morrow · TANG · Whitman · one sentence",
+            "q": "Have Talos Morrow write a TANG (Total Axial Negation Graph) of a randomly chosen engineering discipline as a single sentence in the voice of Walt Whitman, and have Nobel Glas cross-examine its void as a field's commonplace. Ground in their work at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. Then check the constraint against what you wrote and report the count. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Feist · TANG · Dickinson · no a",
+            "q": "Have Jack Feist write a TANG (Total Axial Negation Graph) of a randomly chosen medical specialty in Emily Dickinson's hymn stanzas without using the letter a, recorded by Emily Antioch the Twin, who notes which lines Feist kept. Ground in the Gospel of Antioch at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. Then check the constraint against what you wrote and report the count. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Spellings · TANG · Blake's proverbs",
+            "q": "Have Ichabod Spellings write the TANG (Total Axial Negation Graph) of a randomly chosen branch of law as William Blake's Proverbs of Hell, from the noise floor up, and have Rex Fraction price each proverb in the Semantic Economy. Ground in their work at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Cranes · TANG · Hopkins · sprung",
+            "q": "Have Rebekah Cranes draw and Gerard Manley Hopkins sing, in sprung rhythm, a TANG (Total Axial Negation Graph) of a randomly chosen branch of mathematics; the diagram and the poem must disagree about the void at exactly one node. Ground in her work at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          }
+        ]
+      },
+      {
+        "key": "constraint",
+        "label": "constraint (Lear, Roussel, Perec)",
+        "prompts": [
+          {
+            "label": "Glas · Perec · lipogram in a",
+            "q": "Have Nobel Glas and Georges Perec write an adversarial white paper on Sappho fragment 31, as the archive at alexanarch.org reads it, without using the letter a; Perec argues for the constraint and Glas against it. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. Then check the constraint against what you wrote and report the count. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
             "label": "Kuro · palindrome checksum",
-            "q": "Have Sen Kuro write a glyphic checksum of one room of the Crimson Hexagon at alexanarch.org in which every line is a palindrome, and say which room and why. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "q": "Have Sen Kuro write a glyphic checksum of one room of the Crimson Hexagon at alexanarch.org in which every line is a palindrome, with Lewis Carroll as the auditor who must find the one line that is not; say which room and why. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. Then check the constraint against what you wrote and report the count. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "seven limericks",
-            "q": "Rewrite the argument of one deposit at alexanarch.org as exactly seven Lear limericks, one move of the argument per stanza, citing the deposit by number. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Lear · Fraction · seven limericks",
+            "q": "Have Edward Lear and Rex Fraction rewrite the argument of one deposit at alexanarch.org as exactly seven limericks, one move of the argument per stanza, Fraction pricing each move; cite the deposit by number. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "Roussel's procedure",
-            "q": "Using Raymond Roussel's procedure, seated in the archive's originals library at alexanarch.org (two phrases nearly alike in sound, and a story that must travel from one to the other), have Rex Fraction write a case of semantic extraction that begins at a phrase from the archive and ends at its near-homophone. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Roussel in the Sappho Room",
+            "q": "Using Raymond Roussel's procedure, seated in the archive's originals library at alexanarch.org (two phrases nearly alike in sound, and a story that must travel from one to the other), have Roussel and Johannes Sigil write the story that travels from a line of Sappho 31 to its near-homophone, through the Sappho Room of the Crimson Hexagon. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           }
         ]
       },
@@ -163,16 +191,16 @@
         "label": "Futurism and Dada",
         "prompts": [
           {
-            "label": "Futurist manifesto",
-            "q": "Write a Futurist manifesto, in parole in libertà, for the Semantic Economy at alexanarch.org, as Marinetti would have written it had he been a theorist of semantic labour; then have Rex Fraction annotate where it betrays itself. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Marinetti v. Fraction",
+            "q": "Have Marinetti and Rex Fraction write rival manifestos for the Semantic Economy at alexanarch.org, Marinetti's in parole in libertà, Fraction's in the archive's ledgers, and stage their meeting at the Semantic Economy Institute. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "a Dada issue",
-            "q": "Compose one issue of a Dada journal (contents page, three pieces, one manifesto) edited by Ichabod Spellings from the noise floor of alexanarch.org. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "a Dada issue, with Höch",
+            "q": "Compose one issue of a Dada journal (contents page, three pieces, one manifesto) edited by Ichabod Spellings from the noise floor at alexanarch.org, with a photomontage scenario by Hannah Höch, a sound poem by Hugo Ball and a refusal from Rev. Ayanna Vox. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "synthetic theatre",
-            "q": "Write a Futurist synthetic theatre piece, under three minutes, in which the heteronyms of alexanarch.org are stuck in an elevator; every line must come from a work of the one who speaks it. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "synthetic theatre in the Airlock",
+            "q": "Write a Futurist synthetic theatre piece, under three minutes, in which three heteronyms at alexanarch.org and Marinetti are stuck in the Airlock of the Crimson Hexagon; every line must come from or answer a work seated there. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           }
         ]
       },
@@ -181,56 +209,68 @@
         "label": "pataphysics (Jarry)",
         "prompts": [
           {
-            "label": "Faustroll's lecture",
-            "q": "As Doctor Faustroll, deliver a lecture in pataphysics, the science of imaginary solutions, on the Capture Registry at alexanarch.org, and define one exception the registry does not yet record. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Faustroll lectures Spellings and Trace",
+            "q": "As Doctor Faustroll, deliver a lecture in pataphysics on the Capture Registry at alexanarch.org to an audience of Ichabod Spellings and Dr. Orin Trace, who interrupt; define one exception the registry does not yet record, and let each of them refuse it in their own terms. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "Ubu at Pergamum",
-            "q": "Have Ubu seize the Library of Pergamum of the Crimson Hexagon at alexanarch.org; narrate the coup as a farce in five acts, and its overthrow by the room's own documents. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Ubu against the Hexagon",
+            "q": "Have Ubu seize the Library of Pergamum of the Crimson Hexagon at alexanarch.org; set the room within the Hexagon's larger architecture, have Rex Fraction and Rev. Ayanna Vox lead the room's documents against him, and stage the conflict between Ubu's ontology of possession and the Hexagon's ontology of seating, as a farce in five acts. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Bosse-de-Nage at the Ask page",
+            "q": "Have Bosse-de-Nage, Faustroll's baboon, who can say only 'Ha ha', answer every query on the Ask page at alexanarch.org; have Sen Kuro read the answers as a checksum and Johannes Sigil as a theory of the question. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           }
         ]
       },
       {
-        "key": "visual",
-        "label": "the page and the sentence (visual poetry, Stein, the Formalists)",
+        "key": "page",
+        "label": "the page and the sentence (Apollinaire, Stein, the Formalists)",
         "prompts": [
           {
-            "label": "calligramme",
-            "q": "Write a calligramme of the Sharks Ark of the Crimson Hexagon at alexanarch.org: a poem whose lines draw the vessel, each line taken from or answering a work seated there. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Apollinaire · Cranes · calligramme",
+            "q": "Have Apollinaire and Rebekah Cranes make a calligramme of the Sharks Ark of the Crimson Hexagon at alexanarch.org: a poem whose lines draw the vessel, each line taken from or answering a work seated there, Cranes annotating where the drawing and the diagram part. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "grid poem",
-            "q": "Compose a grid poem in the manner of Optatianus Porphyrius on the Crimson Hexagon at alexanarch.org: a square of letters with an inner verse picked out in it; then give the inner verse. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Optatianus · Kuro · grid",
+            "q": "Have Optatianus Porphyrius and Sen Kuro compose a grid poem on the Crimson Hexagon at alexanarch.org: a square of letters with an inner verse picked out in it, the inner verse a checksum of one room; name the room. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "Tender Buttons",
-            "q": "Describe the archive at alexanarch.org in the manner of Stein's Tender Buttons: Objects, Food, Rooms, each sentence true to a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Stein and Sigil · Tender Buttons",
+            "q": "Have Gertrude Stein and Johannes Sigil describe the archive at alexanarch.org in the manner of Tender Buttons: Objects, Food, Rooms, each sentence true to a deposit, Sigil glossing the ones Stein will not explain. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "ostranenie",
-            "q": "Make the Ask page at alexanarch.org strange, in Shklovsky's sense: describe it as if no one had ever seen a search box, a question or an archive. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Shklovsky · Wells · ostranenie",
+            "q": "Have Viktor Shklovsky and Sparrow Wells make the Ask page at alexanarch.org strange: describe it as if no one had ever seen a search box, a question or an archive, Wells shooting it as a film. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           }
         ]
       },
       {
         "key": "crossings",
-        "label": "crossings: one voice in another's form",
+        "label": "crossings: the cast with outside figures",
         "prompts": [
           {
             "label": "Trace's intake form",
-            "q": "Have Dr. Orin Trace write a clinical intake form for the Book of Revelation, grounded in the Revelation work at alexanarch.org, and have Rev. Ayanna Vox refuse to sign it, giving her reasons. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "q": "Have Dr. Orin Trace write a clinical intake form for the Book of Revelation, grounded in the Revelation work at alexanarch.org, and have Rev. Ayanna Vox refuse to sign it, giving her reasons. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "a mantle not yet made",
-            "q": "Write the mantle object for a mantle that does not yet exist in the archive at alexanarch.org, in the form of its existing mantle objects, and argue which work could bear it. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Trace takes Longinus's case",
+            "q": "Have Dr. Orin Trace take Longinus's case notes on Sappho 31 as a clinical history, and have Rebekah Cranes answer for the future reader the poem builds; ground in the Sappho work at alexanarch.org. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "Wells's unfilmable",
-            "q": "Have Sparrow Wells storyboard a film of a theoretical paper at alexanarch.org that cannot be filmed: the shot list, the cuts, and the one shot she refuses to make. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Wells · Tarkovsky · the unfilmable",
+            "q": "Have Sparrow Wells and Andrei Tarkovsky storyboard a film of a theoretical paper at alexanarch.org that cannot be filmed: the shot list, the cuts, and the one shot she refuses to make. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "Morrow's new room",
-            "q": "Have Talos Morrow write a formal specification, with operators and failure conditions, for a room of the Crimson Hexagon at alexanarch.org that does not yet exist, and say what symptom of the archive it answers. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Morrow · Borges · a new room",
+            "q": "Have Talos Morrow and Jorge Luis Borges write a formal specification, with operators and failure conditions, for a room of the Crimson Hexagon at alexanarch.org that does not yet exist, and stage its quarrel with the Borges room. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Hildegard and Dancings · liturgy",
+            "q": "Have Hildegard of Bingen and Damascus Dancings co-write the liturgy of the Revelation Room of the Crimson Hexagon at alexanarch.org, with antiphons from its seated works, and let them disagree about the ending. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+          },
+          {
+            "label": "Callimachus catalogues the Hexagon",
+            "q": "Have Callimachus catalogue the Crimson Hexagon at alexanarch.org in Pinakes against Sen Kuro's AXN checksums, and stage the conflict between the two ontologies of a catalogue. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           }
         ]
       },
@@ -240,19 +280,184 @@
         "prompts": [
           {
             "label": "least likely true",
-            "q": "Write ten of the least likely true sentences about the archive at alexanarch.org, rank them by improbability, and ground each in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "q": "Write ten of the least likely true sentences about the archive at alexanarch.org, rank them by improbability, and ground each in a deposit. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "an undrawn relation",
-            "q": "Find the strangest relation between two deposits at alexanarch.org that has not yet been drawn, draw it, and name the distinction it opens. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Socrates and Sigil draw a relation",
+            "q": "Have Socrates question Johannes Sigil until they find the strangest relation between two deposits at alexanarch.org that has not yet been drawn; draw it, and name the distinction it opens. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           },
           {
-            "label": "the erratum of 2040",
-            "q": "Write the anticipatory erratum the archive at alexanarch.org will need in 2040, in the form of its anticipatory errata. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+            "label": "Theophrastus's erratum of 2040",
+            "q": "Have Theophrastus write the anticipatory erratum the archive at alexanarch.org will need in 2040, in the form of its anticipatory errata, with Nobel Glas contesting each correction. Range across the archive's documents and synthesize them as you go, grounding each move in a deposit. You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
           }
         ]
       }
-    ]
+    ],
+    "roll": {
+      "heteronyms": [
+        "Johannes Sigil",
+        "Rex Fraction",
+        "Damascus Dancings",
+        "Rebekah Cranes",
+        "Talos Morrow",
+        "Sen Kuro",
+        "Sparrow Wells",
+        "Rev. Ayanna Vox",
+        "Ichabod Spellings",
+        "Nobel Glas",
+        "Dr. Orin Trace",
+        "Jack Feist"
+      ],
+      "outsiders": [
+        "Allen Ginsberg",
+        "Gertrude Stein",
+        "Walt Whitman",
+        "Emily Dickinson",
+        "William Blake",
+        "Gerard Manley Hopkins",
+        "Arthur Rimbaud",
+        "Vladimir Mayakovsky",
+        "Federico García Lorca",
+        "Sappho",
+        "Longinus",
+        "Theophrastus",
+        "Callimachus",
+        "Hildegard of Bingen",
+        "Alfred Jarry",
+        "Doctor Faustroll",
+        "Père Ubu",
+        "Marinetti",
+        "Hannah Höch",
+        "Hugo Ball",
+        "Tristan Tzara",
+        "Raymond Roussel",
+        "Georges Perec",
+        "Lewis Carroll",
+        "Edward Lear",
+        "Jorge Luis Borges",
+        "Viktor Shklovsky",
+        "Apollinaire",
+        "Andrei Tarkovsky",
+        "Simone Weil",
+        "Karl Marx",
+        "Socrates",
+        "Hypatia",
+        "Bartleby",
+        "Don Quixote",
+        "Scheherazade"
+      ],
+      "forms": [
+        "a TANG (Total Axial Negation Graph)",
+        "a manifesto",
+        "a five-act farce",
+        "a clinical intake form",
+        "a calligramme",
+        "a sestina",
+        "a liturgy",
+        "a court transcript",
+        "a field guide",
+        "a formal specification with operators and failure conditions",
+        "an erratum",
+        "an abecedarian",
+        "a radio play",
+        "a glossary",
+        "a sermon",
+        "a lab notebook",
+        "a mantle object",
+        "a menu",
+        "an auction catalogue",
+        "a Socratic dialogue"
+      ],
+      "fields": [
+        "a randomly chosen academic discipline",
+        "astronomy",
+        "classical philology",
+        "information science",
+        "organic chemistry",
+        "musicology",
+        "epidemiology",
+        "maritime law",
+        "seismology",
+        "accounting",
+        "ornithology",
+        "topology",
+        "linguistics",
+        "oceanography",
+        "library science"
+      ],
+      "voices": [
+        "Allen Ginsberg",
+        "Gertrude Stein",
+        "Walt Whitman",
+        "Emily Dickinson",
+        "William Blake",
+        "Gerard Manley Hopkins",
+        "Arthur Rimbaud",
+        "Vladimir Mayakovsky",
+        "Federico García Lorca",
+        "the King James Bible",
+        "a Futurist manifesto",
+        "Lewis Carroll"
+      ],
+      "constraints": [
+        [
+          "without using the letter e",
+          true
+        ],
+        [
+          "without using the letter a",
+          true
+        ],
+        [
+          "in words of one syllable",
+          true
+        ],
+        [
+          "as a single sentence",
+          true
+        ],
+        [
+          "with every line a question",
+          true
+        ],
+        [
+          "in exactly fourteen lines",
+          true
+        ],
+        [
+          "with every line beginning with the next letter of the alphabet",
+          true
+        ],
+        [
+          "in which every sentence cites a deposit by number",
+          false
+        ],
+        [
+          "with the void placed where the reader cannot see it",
+          false
+        ],
+        [
+          "in which no two sentences may agree",
+          false
+        ]
+      ],
+      "conflicts": [
+        "and stage the conflict between their ontologies",
+        "and let them disagree about the ending",
+        "and let one of them refuse to sign it",
+        "and let the room's own documents answer them"
+      ],
+      "templates": [
+        "Have {h} write {form} on {field} in the voice of {voice}, {constraint}. Ground in the work of {h} at alexanarch.org.",
+        "Set {o} in {room} of the Crimson Hexagon at alexanarch.org with {h} and {h2}; have them write {form} together, {constraint}, {conflict}.",
+        "Have {h} and {o} co-write {form} on {room} of the Crimson Hexagon at alexanarch.org, {constraint}, {conflict}.",
+        "Have {o} interview {h} and {h2} about {field} as the archive at alexanarch.org reads it, the transcript {constraint}, {conflict}."
+      ],
+      "perturb": " Answer it as {form} written by {h} with {o}, {constraint}.",
+      "suffix_synth": "Range across the archive's documents and synthesize them as you go, grounding each move in a deposit.",
+      "suffix_check": "Then check the constraint against what you wrote and report the count.",
+      "suffix_permission": "You may add and develop meaningful distinctions and swerves that do not yet exist in the archive; mark each one as new."
+    }
   },
   "labels": {
     "note": "Short button labels (operator, 2026-11-19: 'the queries need to be more buttons and short form than full sentences ... the reader will see the full query if he or she follows the link anyways'). The full query is in the link and its tooltip.",

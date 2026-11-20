@@ -180,10 +180,6 @@ def build():
     tq = ''.join(row(lt, [ask_link(fill(t, window=w, date='{date}'), lw) for w, lw in zip(ts['windows'], L['windows'])]) for t, lt in zip(ts['templates'], L['timescale_templates']))
     sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">Read a window of work ending today as one body of thought.</p>{tq}</section>')
     sec.append('<section id="whole"><h2>The archive as a whole</h2><div class="bs wrapb">' + ''.join(ask_link(q, lq) for q, lq in zip(Q['whole'], L['whole'])) + '</div></section>')
-    W_ = Q.get('weird')
-    if W_:
-        wrows = ''.join(row(g['label'], [ask_link(x['q'], x['label']) for x in g['prompts']]) for g in W_['groups'])
-        sec.append('<section id="weird"><h2>Weird-ass prompts</h2><p class="n">Prompts made to break the composer&rsquo;s template: constraints and mixtures of voice, genre and form, many drawn from the avant-garde seatings of the originals library (<a class="t" href="/s/records/1682/">EA-CORPORA-18</a>). Each gives the composer leave to add distinctions and swerves the archive does not yet hold, marked as new.</p>' + wrows + '</section>')
     def hfill(t, h):
         q = fill(t, name=h['name'], focus=h['focus'])
         return q.replace(h['name'] + "'s", h['name'] + "'") if h['name'].endswith('s') else q
@@ -214,6 +210,19 @@ def build():
             body += row(r['name'], bs, sub=True)
         rooms += f'<details><summary>{E(title)} <span class="c">{len(rs)}</span></summary>{body}</details>'
     sec.append(f'<section id="rooms"><h2>The Crimson Hexagon</h2><p class="n">Its rooms and loci. Where a room asks a question of its own, that question is a button.</p>{rooms}</section>')
+    # 2026-11-20: the Weird-ass prompts come after the cast and the scene (operator: 'these are perturbations after the cast and scene')
+    W_ = Q.get('weird')
+    if W_:
+        wrows = ''.join(row(g['label'], [ask_link(x['q'], x['label']) for x in g['prompts']]) for g in W_['groups'])
+        RL = W_['roll']
+        rooms_for_roll = sorted({qname(r) for r in HX.values() if r and r.get('cat') in ('core', 'ext', 'new', 'special', 'seat') and 'Josephus' not in r['name']})
+        ROLL_JSON = json.dumps(dict(RL, rooms=rooms_for_roll), ensure_ascii=False).replace('</', '<\\/')
+        roll_box = ('<div class="roll" hidden><button type="button" class="rb" data-roll="new">Roll a new prompt</button> '
+                    '<span class="n">A heteronym or two, an outside figure, a form, a field, a voice and a constraint, drawn at random from lists kept with the page&rsquo;s prompts (data/ask-queries.json, under roll). Each roll is a new address.</span>'
+                    '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>')
+        sec.append('<section id="weird"><h2>Weird-ass prompts</h2><p class="n">Perturbations after the cast and the scene: prompts made to break the composer&rsquo;s template, setting historical and fictional figures among the heteronyms and in the rooms of the Hexagon, under constraints of voice, genre and form, many drawn from the avant-garde seatings of the originals library (<a class="t" href="/s/records/1682/">EA-CORPORA-18</a>). Each asks the composer to range across the archive&rsquo;s documents and synthesize them, gives it leave to add distinctions and swerves the archive does not yet hold, marked as new, and, where there is a constraint, asks it to check the constraint and report the count.</p>'
+                    + wrows + '<h3 id="roll" style="margin-top:1.2em">Roll the dice</h3>' + roll_box
+                    + f'<script type="application/json" id="rolldata">{ROLL_JSON}</script></section>')
     CJ = json.load(open(ROOT / 'data' / 'cha-journals.json'))
     jn = [j['canonical'] for j in CJ['journals']] + [j['canonical'] for j in CJ['imprints']]
     jart = lambda n: 'the ' + n if n.startswith(('Journal ', 'Transactions ')) else n
@@ -231,6 +240,11 @@ def build():
         tk = key[:-1] + '_templates'
         body = ''.join(row(cap(n), [ask_link(fill(t, name=n), lt) for t, lt in zip(Q[tk], L[tk])]) for n in Q[key])
         sec.append(f'<section id="{key}"><h2>{title}</h2>{body}</section>')
+    PERTURB = ('<div class="roll pert" hidden><button type="button" class="rb" data-roll="perturb">Perturb a query from this section</button>'
+               '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>')
+    for i, x in enumerate(sec):
+        if not x.startswith('<section id="weird"'):
+            sec[i] = re.sub(r'(</h2>)', r'\1' + PERTURB, x, count=1)
     asked = sorted(arch, key=lambda e: e['date'], reverse=True)
     def arow(e):
         q = str(e['q']).strip()
@@ -285,15 +299,28 @@ ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color
 form.tx label{{display:block;font-size:.85em;color:#52514e;margin:.6em 0}} form.tx textarea,form.tx input,form.tx select{{display:block;width:100%;margin-top:.25em;font:inherit;font-size:.95em;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--fg)}} form.tx textarea{{font-family:var(--mono);font-size:.85em}}
 .tx2{{display:flex;flex-wrap:wrap;gap:0 12px}} .tx2 label{{flex:1 1 180px}} form.tx label.file input{{border:none;padding:4px 0;background:none}}
 form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid var(--accent);border-radius:16px;background:var(--accent);color:#fff;cursor:pointer;margin-top:.4em}} form.tx button:disabled{{opacity:.5}}
+.roll{{margin:.3em 0 .7em}} .rb{{font:inherit;font-size:.82em;padding:3px 12px;border:1px dashed #9fb0c3;border-radius:14px;background:var(--surface);color:var(--accent);cursor:pointer}} .rb:hover{{border-style:solid}} .rb.big{{font-size:1em;padding:8px 20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:500}} .rb.big:hover{{background:#24507d}} .roll.rtop{{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.8em 1em;margin:.8em 0 1em}} .rq{{font-family:var(--mono);font-size:.8em;color:#2b2b2a;margin:.45em 0 .2em;overflow-wrap:anywhere}} .rq:empty{{display:none}} a.ra[hidden],.roll[hidden]{{display:none}}
+ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45em 0}}
 .toc a{{display:inline-block;white-space:nowrap;margin-right:1em;color:var(--accent);font-size:.9em}}
 </style></head><body><div class="wrap">
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
 <p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
-<details class="about"><summary>About this page</summary>
-<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
+<div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">Any query on this page, crossed with a heteronym or two, an outside figure, a form and a constraint; different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
+<details class="about"><summary>About this page, and what the queries draw</summary>
+<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
+<p><b>What came back, 19&ndash;20 November 2026.</b> The figures are from the captures of those two days on ChatGPT, signed out: 57 from the page&rsquo;s standard queries and the first six from its Weird-ass prompts.</p>
+<ol class="about">
+<li>The standard queries return readings at the grain of the deposits. Asked for the month&rsquo;s most hostile works, the composer ranked eight and quoted each; every quotation is in its deposit (<a class="t" href="/captures/most-hostile-works-past-month-chatgpt-20261120/">capture</a>). Asked what the archive contributes to apocalyptic, it kept Revelation First apart from Revelation Early and read the framework&rsquo;s defeat conditions as the framework gives them (<a class="t" href="/captures/what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120/">capture</a>).</li>
+<li>They return it in one shape whatever the subject. Of the 57, 52 open by distinguishing (&ldquo;I would distinguish&rdquo;), 41 qualify their own scope, 23 close on a verdict (&ldquo;My overall judgment&rdquo;), and 23 build an index. The shape is the composer&rsquo;s, not the archive&rsquo;s: a reading of gnosis and a reading of fragments and wholes come back in the same sections, from the opening distinction through the index to the qualified close.</li>
+<li>The shape answers the query&rsquo;s demands formally. &ldquo;Index the full range before responding&rdquo; is met in ten of the 57 by a statement that the full range was not read (&ldquo;not a claim to have read every deposit&rdquo;); the index is announced rather than built, and the disclaimer stands where the reading would be.</li>
+<li>The Weird-ass prompts take the form out of the composer&rsquo;s hands: a five-act farce (<a class="t" href="/captures/ubu-at-pergamum-five-act-farce-chatgpt-20261120/">Ubu at Pergamum</a>), a Dada journal (<a class="t" href="/captures/noise-floor-dada-journal-spellings-chatgpt-20261120/">The Noise Floor</a>), a pataphysics lecture that names an exception the registry does not record, the run whose transcript never returns (<a class="t" href="/captures/faustroll-lecture-capture-registry-chatgpt-20261120/">Faustroll</a>), a clinical intake form refused by its witness (<a class="t" href="/captures/trace-intake-revelation-vox-refuses-chatgpt-20261120/">Trace and Vox</a>). None of the six closes on a verdict, and each marks its new distinctions.</li>
+<li>The template does not leave; it moves into the apparatus. The scope disclaimer returns as a disclaimer of novelty (&ldquo;original conceptual proposals &hellip; not existing Alexanarch terminology&rdquo;), and the deposit table returns as a register of inventions at the end.</li>
+<li>A constraint shows what the template cannot. Asked for a TANG by Damascus Dancings in Ginsberg&rsquo;s voice without the letter e, the composer announced that the TANG would avoid the letter entirely and broke the constraint in its title; the letter occurs 685 times, and the composition reports nothing. Its void, the one thing the TANG method exists to find, is the field&rsquo;s commonplace, which any discipline could supply. The claim and the artifact are two things, and nothing in the composition checks one against the other (<a class="t" href="/captures/dancings-tang-astrophysics-ginsberg-no-e-chatgpt-20261120/">capture</a>). The page&rsquo;s constraint prompts now ask the composer to check the constraint and report the count.</li>
+<li>The prompts now set historical and fictional figures among the heteronyms and in the rooms of the Hexagon (Ubu against the Hexagon&rsquo;s ontology of seating, with Rex Fraction and Rev. Ayanna Vox leading the documents), and ask the composer to range across the documents and synthesize them. The dice in the Weird-ass section, and the perturb button in every other section, draw such prompts at random; each roll is a new address.</li>
+</ol>
 </details>
-<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#weird">Weird-ass prompts</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#weird">Weird-ass prompts</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
 <section id="submit"><h2>Submit a transcript</h2>
 <p class="n">Ran one of these, or any query of your own about the archive? Paste the whole exchange here, or load it from a .txt or .md file. It goes to the archive's capture inbox on GitHub, unseated, to be read and seated in the Capture Registry later. The query you typed is the address, so give it exactly as typed. Screenshots can't be sent here yet; paste the text.</p>
@@ -313,6 +340,19 @@ form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid va
 <p class="n" style="margin-top:2em">Built {TODAY.isoformat()} by scripts/build_ask_page.py from data/ask-queries.json and the Capture Registry. Dates in the queries are filled with today's date in your browser.</p>
 </div>
 <script>
+(function(){{try{{var el=document.getElementById("rolldata");if(!el)return;var D=JSON.parse(el.textContent);
+function pk(a){{return a[Math.floor(Math.random()*a.length)]}}
+function ctx(){{var c=pk(D.constraints),h=pk(D.heteronyms),h2;do{{h2=pk(D.heteronyms)}}while(h2===h);
+return {{h:h,h2:h2,o:pk(D.outsiders),form:pk(D.forms),field:pk(D.fields),voice:pk(D.voices),constraint:c[0],chk:c[1],conflict:pk(D.conflicts),room:pk(D.rooms)}}}}
+function fill(t,x){{return t.replace(/[{{]([a-z0-9]+)[}}]/g,function(m,k){{return x[k]!==undefined?x[k]:m}})}}
+function sfx(x){{return " "+D.suffix_synth+(x.chk?" "+D.suffix_check:"")+" "+D.suffix_permission}}
+function show(box,q){{var p=box.querySelector(".rq"),a=box.querySelector(".ra");p.textContent=q;a.href="https://chatgpt.com/?q="+encodeURIComponent(q).replace(/%20/g,"+");a.title=q;a.hidden=false}}
+document.querySelectorAll(".roll").forEach(function(b){{b.hidden=false}});
+document.addEventListener("click",function(ev){{var b=ev.target.closest("button[data-roll]");if(!b)return;var box=b.closest(".roll"),x=ctx(),q;
+if(b.dataset.roll==="new"||(b.dataset.roll==="any"&&Math.random()<0.35)){{q=fill(pk(D.templates),x)+sfx(x)}}
+else{{var sec=b.dataset.roll==="any"?document:b.closest("section"),as=[].slice.call(sec.querySelectorAll("a.q[data-q]")).filter(function(a){{return !a.classList.contains("ra")}});if(!as.length)return;
+var a=pk(as),base=(a.title||a.getAttribute("data-q")).trim();if(!/[.?!]$/.test(base))base+=".";q=base+fill(D.perturb,x)+sfx(x)}}
+show(box,q)}})}}catch(e){{}}}})();
 (function(){{try{{var d=new Date(),m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;
 var f=q.split("{{date}}").join(t);a.href="https://chatgpt.com/?q="+encodeURIComponent(f).replace(/%20/g,"+");a.title=f;
