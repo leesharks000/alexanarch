@@ -223,6 +223,20 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
                   "subjectOf": {"@type": "WebPage", "@id": url, "url": url}, "sameAs": [url],
                   "additionalProperty": [{"@type": "PropertyValue", "name": "family", "value": "NON"},
                                          {"@type": "PropertyValue", "name": "glyph_hash", "value": x['axn'].split('.')[-1]}]}
+            # 2026-11-20 (operator: 'non entries in the axn resolver should have the shorter archive composed entry ... theyre
+            # currently bare'): the identifier page carries the entry it names, at its shorter level: objects.P, the compression
+            # composed from the field and the archive (B ∪ A), as /non/<entry>/ shows it beside the full entry.
+            _short = ''
+            try:
+                _P = json.load(open(ROOT/x['row'], encoding='utf-8'))['objects']['P']
+                _lis = lambda its: ''.join(f"<li>{('<strong>' + html.escape(it['label']) + '</strong> ') if it.get('label') else ''}{_md_inline(it['text'])}</li>" for it in its)
+                _short = (f'<section class="entry"><h2>The entry, short</h2>'
+                          f"<p><strong>{html.escape(_P['title'])}</strong> {_md_inline(_P['lede']['text'])}</p>"
+                          + ''.join(f"<h3>{html.escape(sec.get('icon') or '')} {html.escape(sec['head'])}</h3><ul>{_lis(sec['items'])}</ul>" for sec in _P['sections'])
+                          + f'<p>The compression composed from the field and the archive (B ∪ A), as the entry gives it; the full entry, every sentence sourced: <a href="{url}">{html.escape(name)}</a>.</p></section>')
+                ld["about"]["abstract"] = f"{_P['title']} {_P['lede']['text']}"
+            except Exception as _e:
+                print(f"axn resolver: /non entry {k}: short entry not rendered ({_e})", file=_sys_axd.stderr)
             hrows = "".join(f"<dt>Earlier version, until {html.escape(h['until'])}</dt><dd><code>{html.escape(h['axn'])}</code> &mdash; sha256 <code>{h['sha256']}</code> &mdash; {html.escape(h.get('reason',''))}</dd>" for h in hist)
             d = ROOT/'s/axn'/hx; d.mkdir(exist_ok=True)
             (d/'index.html').write_text(f"""<!DOCTYPE html>
@@ -235,6 +249,7 @@ machine index: <a href="/api/axn-index.json">/api/axn-index.json</a></p>
 <script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head><body>
 <h1>{html.escape(x['axn'])}</h1>
 <p>{html.escape(_desc)}</p>
+{_short}
 <dl>
 <dt>Identifies</dt><dd><a href="{url}">{html.escape(name)}</a>, an entry of the Negative of the Negative</dd>
 <dt>Root</dt><dd><code>{html.escape(x['root'])}</code> (the entry across its compositions)</dd>
