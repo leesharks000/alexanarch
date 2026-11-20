@@ -107,6 +107,27 @@
     {"name": "Dr. Orin Trace", "focus": "theory of relational predation, the sign, and schizoanalysis"},
     {"name": "Viola Arquette", "focus": "music, technology and logotic hacking"}
   ],
+  "hexagon_note": "Rooms and loci of the Crimson Hexagon; its journals, presses and institutions (operator, 2026-11-19: 'a secrion of questions for the different rooms and loci of the crimson hexagon; also, its journals, instititions, and so on'). Rooms are read at build time from data/hexagon-seats.json, each with its own question where it has one; journals and presses from data/cha-journals.json; institutions from the heteronym records and journal administrators. Room queries carry the archive's reading instruction for rooms.",
+  "room_templates": [
+    "What is {name} of the Crimson Hexagon at alexanarch.org, and what is seated there? Ground in documents related to the room as you go.",
+    "Enter {name} of the Crimson Hexagon at alexanarch.org and read the works seated there as one body. Ground in documents related to the room as you go.",
+    "How does {name} connect to the other rooms and loci of the Crimson Hexagon at alexanarch.org? Ground in documents related to the room as you go."
+  ],
+  "room_question_template": "The Crimson Hexagon at alexanarch.org has a locus, {name}, whose question is: \"{prompt}\" Answer it from the work seated there, grounding in documents related to the room as you go.",
+  "room_categories": [["core", "Core rooms"], ["ext", "Extended rooms"], ["new", "New rooms"], ["special", "Special loci"], ["field", "Fields"], ["seat", "Seats"], ["ark", "Arks"], ["shadow", "Shadows"], ["hosted", "Hosted rooms"], ["structure", "Structures"]],
+  "journal_templates": [
+    "What does {name} publish at alexanarch.org, and what is its field? {ground}",
+    "Read the deposits of {name} at alexanarch.org as one body of work: what are its major arguments? {ground}",
+    "How does {name} relate to the other journals, presses and institutions of the Crimson Hexagon at alexanarch.org? {ground}",
+    "Set {name} against the established journals of its field: where does its work depart, and on what evidence? Ground in its deposits at alexanarch.org."
+  ],
+  "institution_templates": [
+    "What is {name} in the Crimson Hexagon at alexanarch.org: its charter, its people and its work? {ground}",
+    "What has {name} produced, and how has it developed over time? Ground in its deposits at alexanarch.org.",
+    "How does {name} relate to the archive's other institutions and to the heteronyms at alexanarch.org? {ground}",
+    "Read {name} at alexanarch.org as an institution: how is it governed, and what does it make possible that existing institutions do not? {ground}"
+  ],
+  "institutions": ["the Semantic Economy Institute", "the Johannes Sigil Institute", "the Restored Academy", "the Living Arkitecture Lab", "the University Moon Base Media Lab", "Cambridge Schizoanalytica", "the Institute for Diagrammatic Poetics", "the Studio for Patacinematics", "Lagrange Observatory!", "the Vox Populi Community Outreach Rhizome", "the Commission of the Immanent Turning", "the Stellar Orbit Fluid Dynamics Institute"],
   "labels": {
     "note": "Short button labels (operator, 2026-11-19: 'the queries need to be more buttons and short form than full sentences ... the reader will see the full query if he or she follows the link anyways'). The full query is in the link and its tooltip.",
     "timescale_templates": ["living body of thought", "fused literary and theoretical work", "lines of thought"],
@@ -118,6 +139,9 @@
     "theme_templates": ["first to now", "what it makes visible"],
     "practice_templates": ["as practice", "development"],
     "cast": ["the twelve", "profiles & biographies", "quarrels and debts", "a conversation"],
-    "heteronym_templates": ["who they are", "{focus}", "against theory", "relations", "style and register", "profile & biography"]
+    "heteronym_templates": ["who they are", "{focus}", "against theory", "relations", "style and register", "profile & biography"],
+    "room_templates": ["what is seated", "read as one body", "connections"],
+    "journal_templates": ["what it publishes", "major arguments", "relations", "against its field"],
+    "institution_templates": ["charter and work", "development", "relations", "as institution"]
   }
 }

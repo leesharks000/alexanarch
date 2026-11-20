@@ -186,6 +186,37 @@ def build():
     cast = row('the cast', [ask_link(fill(q), lq) for q, lq in zip(Q['cast'], L['cast'])])
     cast += ''.join(row(h['name'], [ask_link(hfill(t, h), lt.replace('{focus}', h['focus'])) for t, lt in zip(Q['heteronym_templates'], L['heteronym_templates'])], sub=True) for h in Q['heteronyms'])
     sec.append(f'<section id="heteronyms"><h2>The heteronyms</h2><p class="n">The cast of characters: the twelve of the Dodecad, each from several angles.</p>{cast}</section>')
+    HX = json.load(open(ROOT / 'data' / 'hexagon-seats.json'))['rooms']
+    KEEP = ('Room', 'Chamber', 'Ark', 'Lab', 'Institute', 'Authority', 'Studio', 'Observatory', 'Embassy', 'Archive', 'Thesis', 'Academy', 'Library', 'Mint', 'Lanes', 'Worlds', 'Plume', 'Well', 'Swarm', 'Body', 'Heart', 'Internet', 'Dialectic', 'Document', 'Burn')
+    def qname(r):
+        n = r['name']
+        if n.startswith('The '): return 'the ' + n[4:]
+        if any(k in n for k in KEEP): return 'the ' + n
+        if r['cat'] in ('core', 'ext', 'new', 'special'): return f'the {n} room'
+        return n
+    rooms = ''
+    N_HEX = 0
+    for cat, title in Q['room_categories']:
+        rs = [r for r in HX.values() if r and r.get('cat') == cat]
+        if not rs: continue
+        body = ''
+        for r in rs:
+            qn = qname(r)
+            bs = [ask_link(fill(t, name=qn), lt) for t, lt in zip(Q['room_templates'], L['room_templates'])]
+            pr = (r.get('prompt') or '').strip()
+            if pr.endswith('?'):
+                bs.append(ask_link(Q['room_question_template'].replace('{name}', qn).replace('{prompt}', pr), pr))
+            N_HEX += len(bs)
+            body += row(r['name'], bs, sub=True)
+        rooms += f'<details><summary>{E(title)} <span class="c">{len(rs)}</span></summary>{body}</details>'
+    sec.append(f'<section id="rooms"><h2>The Crimson Hexagon</h2><p class="n">Its rooms and loci. Where a room asks a question of its own, that question is a button.</p>{rooms}</section>')
+    CJ = json.load(open(ROOT / 'data' / 'cha-journals.json'))
+    jn = [j['canonical'] for j in CJ['journals']] + [j['canonical'] for j in CJ['imprints']]
+    jart = lambda n: 'the ' + n if n.startswith(('Journal ', 'Transactions ')) else n
+    jrows = ''.join(row(n, [ask_link(fill(t, name=jart(n)), lt) for t, lt in zip(Q['journal_templates'], L['journal_templates'])], sub=True) for n in jn)
+    irows = ''.join(row(cap(n[4:] if n.startswith('the ') else n), [ask_link(fill(t, name=n), lt) for t, lt in zip(Q['institution_templates'], L['institution_templates'])], sub=True) for n in Q['institutions'])
+    N_HEX += len(jn) * len(Q['journal_templates']) + len(Q['institutions']) * len(Q['institution_templates'])
+    sec.append(f'<section id="institutions"><h2>Journals, presses and institutions</h2><details><summary>Journals and presses <span class="c">{len(jn)}</span></summary>{jrows}</details><details><summary>Institutions <span class="c">{len(Q["institutions"])}</span></summary>{irows}</details></section>')
     disc = ''
     for dsc in Q['disciplines']:
         top = row('the field', [ask_link(fill(t, field=dsc['name']), lt) for t, lt in zip(Q['discipline_templates'], L['discipline_templates'])])
@@ -206,7 +237,7 @@ def build():
     sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
                  f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
-    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices'))
+    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices'))
     first = min(e['date'] for e in ENTS)
     stats = (f'<div class="stats"><div><b>{n_q:,}</b>queries on this page</div><div><b>{n_addr:,}</b>addresses seated since {first}</div>'
              f'<div><b>{n_obs:,}</b>observations</div><div><b>{len(arch):,}</b>archive-level addresses</div>'
@@ -217,7 +248,7 @@ def build():
             + figure('What went wrong in the compositions', 'Defects recorded at intake on the archive-level compositions, as coded in the registry (a composition can carry several). The representation that accrues includes its failures.', f4, t4))
 
     nav = render_navbar(active='/ask/')
-    desc = f'General archival queries for alexanarch.org: {n_q:,} queries by time scale, heteronym, discipline and subdiscipline, programme, theme and practice, each opening on ChatGPT; with figures from the Capture Registry on what the act of querying has accrued.'
+    desc = f'General archival queries for alexanarch.org: {n_q:,} queries by time scale, heteronym, room and locus, journal and institution, discipline and subdiscipline, programme, theme and practice, each opening on ChatGPT; with figures from the Capture Registry on what the act of querying has accrued.'
     page = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ask — Alexanarch</title><link rel="canonical" href="https://www.alexanarch.org/ask/"><meta name="description" content="{E(desc)}">
@@ -253,9 +284,9 @@ ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color
 <h1>Ask</h1>
 <p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
 <details class="about"><summary>About this page</summary>
-<p>Queries addressed to the archive as a whole: over time, by heteronym, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
+<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery.</p>
 </details>
-<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
 <section id="accrue"><h2>What accrues</h2>{stats}{figs}</section>
 {sec_asked}
