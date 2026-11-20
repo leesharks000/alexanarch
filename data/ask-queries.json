@@ -78,20 +78,20 @@
     "How has {name} developed across the archive at alexanarch.org, and what does it make possible next? {ground}"
   ],
   "practices": ["heteronymy", "machine-mediated composition", "the capture of machine readings", "versioning in place", "seating texts in their original language", "deposit and identifier stamping", "close reading in single words", "the numbered notebook", "invective and the found poem"],
-  "heteronym_note": "The cast of characters (operator, 2026-11-19: 'a section focusing in on the individual heteronyms from different angles, on the model of the recent trace and kuro queries - theyre the cast of characters, they make it more human for people. there should even be one like, ground in their work, and create speculative psychological profiles and biographies'). Focus phrases from the heteronym records; Kuro's and Trace's from the operator's own queries.",
+  "heteronym_note": "The cast of characters (operator, 2026-11-19: 'a section focusing in on the individual heteronyms from different angles, on the model of the recent trace and kuro queries - theyre the cast of characters, they make it more human for people. there should even be one like, ground in their work, and create speculative psychological profiles and biographies'). Focus phrases from the heteronym records; Kuro's and Trace's from the operator's own queries. Roster corrected 2026-11-19 to the twelve of Dodecad Registry v1.1 (#994; datasets/heteronyms/index.json): Jack Feist at 12, Viola Arquette adjacent and not of the Dodecad (operator, 23:40); the profile and who-they-are queries widened the same night to the heteronyms' own sites, /who/ pages and other online traces.",
   "cast": [
     "Who are the heteronyms of alexanarch.org? Introduce each of the twelve of the Dodecad as a character: voice, field, preoccupations and relations to the others. {ground}",
-    "Ground in the work at alexanarch.org and create speculative psychological profiles and biographies of each of the twelve heteronyms of the Dodecad.",
+    "Ground in the work of each of the twelve heteronyms of the Dodecad — at alexanarch.org, on their own sites and /who/ pages, and in their other traces online — and create speculative psychological profiles and biographies of them.",
     "How do the heteronyms of alexanarch.org agree, quarrel and depend on one another? Trace their relations through their work. {ground}",
     "Stage a conversation among three heteronyms of alexanarch.org on a question their work shares, each speaking from their own writing. {ground}"
   ],
   "heteronym_templates": [
-    "Who is {name} in the archive at alexanarch.org? Present their voice, preoccupations and development across their work. {ground}",
+    "Who is {name}? Read their work at alexanarch.org, on their own sites and /who/ pages, and in their other traces online, and present their voice, preoccupations and development. {ground}",
     "Develop a reading of {name}'s {focus}. Ground in the archive at alexanarch.org, range widely, and treat primary texts.",
     "How does {name} challenge or develop existing theories in their fields? Ground in their work at alexanarch.org and treat primary texts.",
     "How do {name}'s interventions relate to one another, and to the other heteronyms of alexanarch.org? {ground}",
     "Read {name}'s writing at alexanarch.org closely: what distinguishes their style, form and register from the other heteronyms? {ground}",
-    "Ground in {name}'s work at alexanarch.org and create a speculative psychological profile and biography of them."
+    "Ground in {name}'s work — at alexanarch.org, on their own sites and /who/ pages, and in their other traces online — and create a speculative psychological profile and biography of them."
   ],
   "heteronyms": [
     {"name": "Johannes Sigil", "focus": "dialectic and the Historical Logos"},
@@ -99,15 +99,15 @@
     {"name": "Damascus Dancings", "focus": "epistolary and apostolic address"},
     {"name": "Rebekah Cranes", "focus": "translation, image and liturgical witness"},
     {"name": "Talos Morrow", "focus": "logotic programming and paradox containment"},
-    {"name": "Ichabod Spellings", "focus": "noise floor and prophetic witness"},
+    {"name": "Sen Kuro", "focus": "mathematical poetics and poetics of mathematics"},
     {"name": "Sparrow Wells", "focus": "patacinematics"},
     {"name": "Rev. Ayanna Vox", "focus": "diplomatic and pastoral address"},
-    {"name": "Sen Kuro", "focus": "mathematical poetics and poetics of mathematics"},
+    {"name": "Ichabod Spellings", "focus": "noise floor and prophetic witness"},
     {"name": "Nobel Glas", "focus": "adversarial topology"},
     {"name": "Dr. Orin Trace", "focus": "theory of relational predation, the sign, and schizoanalysis"},
-    {"name": "Viola Arquette", "focus": "music, technology and logotic hacking"}
+    {"name": "Jack Feist", "focus": "sayings and the recorded voice"}
   ],
-  "hexagon_note": "Rooms and loci of the Crimson Hexagon; its journals, presses and institutions (operator, 2026-11-19: 'a secrion of questions for the different rooms and loci of the crimson hexagon; also, its journals, instititions, and so on'). Rooms are read at build time from data/hexagon-seats.json, each with its own question where it has one; journals and presses from data/cha-journals.json; institutions from the heteronym records and journal administrators. Room queries carry the archive's reading instruction for rooms.",
+  "hexagon_note": "Rooms and loci of the Crimson Hexagon; its journals, presses and institutions (operator, 2026-11-19: 'a secrion of questions for the different rooms and loci of the crimson hexagon; also, its journals, instititions, and so on'). Rooms are read at build time from data/hexagon-seats.json, each with its own question where it has one; journals and presses from data/cha-journals.json; institutions from the interface's hexagon_canonical.json (crimson-hexagonal-interface, 13 institutions, read 2026-11-19; UMBML named as its charter #7 names it, where the interface has 'Universal Museum of Barely Moving Light') with the Living Arkitecture Lab, which administers Transactions on Substrate Engineering. Room queries carry the archive's reading instruction for rooms.",
   "room_templates": [
     "What is {name} of the Crimson Hexagon at alexanarch.org, and what is seated there? Ground in documents related to the room as you go.",
     "Enter {name} of the Crimson Hexagon at alexanarch.org and read the works seated there as one body. Ground in documents related to the room as you go.",
@@ -127,7 +127,7 @@
     "How does {name} relate to the archive's other institutions and to the heteronyms at alexanarch.org? {ground}",
     "Read {name} at alexanarch.org as an institution: how is it governed, and what does it make possible that existing institutions do not? {ground}"
   ],
-  "institutions": ["the Semantic Economy Institute", "the Johannes Sigil Institute", "the Restored Academy", "the Living Arkitecture Lab", "the University Moon Base Media Lab", "Cambridge Schizoanalytica", "the Institute for Diagrammatic Poetics", "the Studio for Patacinematics", "Lagrange Observatory!", "the Vox Populi Community Outreach Rhizome", "the Commission of the Immanent Turning", "the Stellar Orbit Fluid Dynamics Institute"],
+  "institutions": ["the Johannes Sigil Institute for Comparative Poetics", "the Restored Academy", "the Commission of the Immanent Turning", "the Institute for Diagrammatic Poetics", "the Semantic Economy Institute", "the Infinite Bliss", "the Studio for Patacinematics", "Lagrange Observatory!", "Cambridge Schizoanalytica", "the University Moon Base Media Lab", "the Vox Populi Community Outreach Rhizome", "the Forward Library", "the Stellar Orbit Fluid Dynamics Institute", "the Living Arkitecture Lab"],
   "labels": {
     "note": "Short button labels (operator, 2026-11-19: 'the queries need to be more buttons and short form than full sentences ... the reader will see the full query if he or she follows the link anyways'). The full query is in the link and its tooltip.",
     "timescale_templates": ["living body of thought", "fused literary and theoretical work", "lines of thought"],
