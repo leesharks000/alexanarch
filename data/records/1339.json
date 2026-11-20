@@ -112,8 +112,12 @@
   "measured_at": "2026-07-31",
   "recovery_status_note": "The 2026-07 restoration pass ran to completion for this record and did not recover canonical bytes. 'COMPLETE' previously denoted pass completion and was read as text completeness; renamed 2026-07-31 so the two claims cannot be confused.",
   "full_version": {
-   "deposit_number": 1255,
-   "basis": "strict pairing 2026-08-04: title overlap 0.6, content probe 0.67, full body 55,264c vs capture 6,620c"
+   "deposit_number": 546,
+   "basis": "corrected 2026-11-20 at the author's word ('yes, correct the profane ark pointer', 11:09): #546 is EA-ARK-01-FRACTION v2.1, The Sh*t / The Profane Ark, the head of the series whose prior_versions list this record; the 2026-08-04 pass had paired it with #1255, The Sacred Ark (EA-ARK-01-DAMASCUS v5.1), a sibling Ark",
+   "prior": {
+    "deposit_number": 1255,
+    "basis": "strict pairing 2026-08-04: title overlap 0.6, content probe 0.67, full body 55,264c vs capture 6,620c"
+   }
   },
   "work_sha256": "8e7a380a2bb411a742b221365b5a6f56e8ba910abcff350a5c796b63bfabb4f0",
   "prior_bytes_sha256": "e051321975753e6cb41050ca83e3f1ee20f3c25af263a283ddf3241c3b0e6864",
@@ -295,9 +299,16 @@
    "reason": "AXN re-derived from the canonical text (text_changed)",
    "was": "AXN:054C.UNCLASSIFIED.🌅🗺️⚙️🌱🌲🌲",
    "now": "AXN:054C.UNCLASSIFIED.🌠🔀🔓🔗👈🃏"
+  },
+  {
+   "date": "2026-11-20",
+   "field": "body_status.full_version",
+   "reason": "full-version pointer corrected from #1255 (the Sacred Ark, a sibling) to #546 (the Profane Ark) at the author's word, 2026-11-20",
+   "was": 1255,
+   "now": 546
   }
  ],
- "date_modified": "2026-10-27",
+ "date_modified": "2026-11-20",
  "publisher": "Alexanarch — the Crimson Hexagonal Archive",
  "record_modifications": [
   {
