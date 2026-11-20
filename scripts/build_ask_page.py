@@ -180,6 +180,10 @@ def build():
     tq = ''.join(row(lt, [ask_link(fill(t, window=w, date='{date}'), lw) for w, lw in zip(ts['windows'], L['windows'])]) for t, lt in zip(ts['templates'], L['timescale_templates']))
     sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">Read a window of work ending today as one body of thought.</p>{tq}</section>')
     sec.append('<section id="whole"><h2>The archive as a whole</h2><div class="bs wrapb">' + ''.join(ask_link(q, lq) for q, lq in zip(Q['whole'], L['whole'])) + '</div></section>')
+    W_ = Q.get('weird')
+    if W_:
+        wrows = ''.join(row(g['label'], [ask_link(x['q'], x['label']) for x in g['prompts']]) for g in W_['groups'])
+        sec.append('<section id="weird"><h2>Weird-ass prompts</h2><p class="n">Prompts made to break the composer&rsquo;s template: constraints and mixtures of voice, genre and form, many drawn from the avant-garde seatings of the originals library (<a class="t" href="/s/records/1682/">EA-CORPORA-18</a>). Each gives the composer leave to add distinctions and swerves the archive does not yet hold, marked as new.</p>' + wrows + '</section>')
     def hfill(t, h):
         q = fill(t, name=h['name'], focus=h['focus'])
         return q.replace(h['name'] + "'s", h['name'] + "'") if h['name'].endswith('s') else q
@@ -237,7 +241,7 @@ def build():
     sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
                  f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
-    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices'))
+    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
     first = min(e['date'] for e in ENTS)
     stats = (f'<div class="stats"><div><b>{n_q:,}</b>queries on this page</div><div><b>{n_addr:,}</b>addresses seated since {first}</div>'
              f'<div><b>{n_obs:,}</b>observations</div><div><b>{len(arch):,}</b>archive-level addresses</div>'
@@ -289,7 +293,7 @@ form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid va
 <details class="about"><summary>About this page</summary>
 <p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address. Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
 </details>
-<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#weird">Weird-ass prompts</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
 <section id="submit"><h2>Submit a transcript</h2>
 <p class="n">Ran one of these, or any query of your own about the archive? Paste the whole exchange here, or load it from a .txt or .md file. It goes to the archive's capture inbox on GitHub, unseated, to be read and seated in the Capture Registry later. The query you typed is the address, so give it exactly as typed. Screenshots can't be sent here yet; paste the text.</p>
