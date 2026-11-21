@@ -1,0 +1,57 @@
+{
+ "corpus": "aelian-varia-historia",
+ "seat": "EA-CORPORA-41/06",
+ "title": "Aelian, Varia historia (Perseus canonical-greekLit, perseus-grc2)",
+ "edition": "Varia historia (Perseus canonical-greekLit, perseus-grc2)",
+ "language": "grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+  "paths": [
+   "data/tlg0545/tlg002"
+  ],
+  "transport": "git sparse checkout of the repository at the pinned commit"
+ },
+ "works": {
+  "count": 1,
+  "units": "one file per work (per volume where the edition is in volumes)",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "tlg0545.tlg002.perseus-grc2",
+    "title": "Aelian, Varia Historia",
+    "text": "text/tlg0545.tlg002.perseus-grc2.txt",
+    "lines": 945
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "THE TWO SINS. Varia historia 3.36: asked why he left Athens, Aristotle answered that he would not have the Athenians sin twice against philosophy, with the death of Socrates the first. The saying the evening's reading turned on, and which the seated Diogenes does not carry.",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "VH 3.36, the two sins — 'οὐ βούλεται Ἀθηναίους δὶς ἐξαμαρτεῖν ἐς φιλοσοφίαν' (text/tlg0545.tlg002.perseus-grc2.txt)",
+  "Antipater — 'Ἀντίπατρ' (text/tlg0545.tlg002.perseus-grc2.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 945,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.♦️🔍🔙⏫🌋⊗",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "8256f3d8159766a025ff0fc48960d084747becfc814c13fe8181a3ae32054ffb",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

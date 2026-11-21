@@ -1,0 +1,83 @@
+{
+ "corpus": "cicero-de-oratore-de-legibus",
+ "seat": "EA-CORPORA-41/09",
+ "title": "Cicero, De oratore and De legibus",
+ "edition": "De oratore (Perseus canonical-latinLit, perseus-lat2); De legibus (The Latin Library)",
+ "language": "lat",
+ "license": {
+  "payload": "De oratore: CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain. De legibus: the Latin text is public domain; The Latin Library's pages as served.",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "de_oratore": {
+   "repo": "PerseusDL/canonical-latinLit",
+   "commit": "8cef51623130f2412da410858e32c322eb796c0a",
+   "paths": [
+    "data/phi0474/phi037"
+   ]
+  },
+  "de_legibus": {
+   "source": "The Latin Library",
+   "urls": [
+    "https://www.thelatinlibrary.com/cicero/leg1.shtml",
+    "https://www.thelatinlibrary.com/cicero/leg2.shtml",
+    "https://www.thelatinlibrary.com/cicero/leg3.shtml"
+   ]
+  }
+ },
+ "works": {
+  "count": 4,
+  "units": "one file per work or book",
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "phi0474.phi037.perseus-lat2",
+    "title": "Cicero, De oratore",
+    "text": "text/phi0474.phi037.perseus-lat2.txt",
+    "lines": 1751
+   },
+   {
+    "id": "de-legibus-1",
+    "title": "Cicero, De legibus 1",
+    "text": "text/de-legibus-1.txt",
+    "lines": 128
+   },
+   {
+    "id": "de-legibus-2",
+    "title": "Cicero, De legibus 2",
+    "text": "text/de-legibus-2.txt",
+    "lines": 137
+   },
+   {
+    "id": "de-legibus-3",
+    "title": "Cicero, De legibus 3",
+    "text": "text/de-legibus-3.txt",
+    "lines": 115
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand. The Latin Library HTML: tags dropped, entities decoded, one line per paragraph.",
+ "scope": "whole",
+ "why_seated": "HISTORY AS ORATORY. De legibus 1.5, history as opus … unum hoc oratorium maxime, the evening's sentence on the genre; De oratore, the dialogue Cicero set in the manner of Aristotle, beside the seated De finibus and Academica (EA-CORPORA-13/03).",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "De legibus 1.5 — 'unum hoc oratorium maxime' (text/de-legibus-1.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 2131,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.⚡▲🌍♾️☽⏬",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "139f0e94a8d939cde0158324bd7acb9925929b6f492aabd55239aa336961877c",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

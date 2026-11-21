@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-17T05:21:31.561769Z",
- "seats": 292,
- "lines_total": 12834466,
+ "_generated": "2026-11-21T00:05:18.884821Z",
+ "seats": 306,
+ "lines_total": 12925654,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -36608,7 +36608,421 @@
    "scope": "The articles and notes of Classical Philology 1906–1922 that the seat of 40/01 does not hold: 900 items served of 902 listed (2 returned a server error at the Archive and are pointed to: jstor-261959, jstor-262508). Counted by distinct text they are 876: 412 articles, 295 notes, 102 titled reviews and 67 notices (Dead Letters §6.2).",
    "data": "https://www.alexanarch.org/data/corpora/classical-philology-1906-1922-articles/",
    "axn": "AXN:0CB3.ORIGINAL.◇♻️🖤➗🌋📜"
+  },
+  {
+   "seat": "EA-CORPORA-41/01",
+   "corpus": "aeschylus-tragoediae",
+   "edition": "Tragoediae (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0085 — 7 plays"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 8586,
+   "verified_loci": [
+    "Agamemnon 1 — '|1 θεοὺς μὲν αἰτῶ τῶνδʼ ἀπαλλαγὴν πόνων' (text/tlg0085.tlg005.perseus-grc2.txt)",
+    "Eumenides 685, the court founded — 'πάγον δʼ Ἄρειον' (text/tlg0085.tlg007.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE TRAGEDIANS, at the author's word (\"put the tragedians in there too\"). The tragic stage stands beside the comic one in the relations of the Clouds and the King Archon (Ath. Pol. 57: the King arranges the Lenaia, procession and contest); the seven plays seated whole so that any locus resolves to bytes.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/aeschylus-tragoediae/",
+   "axn": "AXN:0D1A.ORIGINAL.☀️▽🍃🌾♎👆"
+  },
+  {
+   "seat": "EA-CORPORA-41/02",
+   "corpus": "sophocles-tragoediae",
+   "edition": "Tragoediae (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0011 — 8 works"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 10853,
+   "verified_loci": [
+    "Oedipus Tyrannus 1 — 'ὦ τέκνα, Κάδμου τοῦ πάλαι νέα τροφή' (text/tlg0011.tlg004.perseus-grc2.txt)",
+    "Oedipus at Colonus, the grove — 'Κολωνόν' (text/tlg0011.tlg007.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE TRAGEDIANS, at the author's word. The seven plays and the Ichneutae (the satyr play, from the papyrus) seated whole.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/sophocles-tragoediae/",
+   "axn": "AXN:0D1A.ORIGINAL.🏺🦋▽📌🌍🪝"
+  },
+  {
+   "seat": "EA-CORPORA-41/03",
+   "corpus": "euripides-tragoediae",
+   "edition": "Tragoediae (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0006 — 19 plays"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 27262,
+   "verified_loci": [
+    "Bacchae 1 — '|1 ἥκω Διὸς παῖς' (text/tlg0006.tlg017.perseus-grc2.txt)",
+    "Medea 1 — '|1 Εἴθ’ ὤφελ’ Ἀργοῦς' (text/tlg0006.tlg003.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE TRAGEDIANS, at the author's word. The nineteen plays seated whole, the Cyclops and the Rhesus among them.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/euripides-tragoediae/",
+   "axn": "AXN:0D1A.ORIGINAL.🕌🔆🌄♈🚪🤙"
+  },
+  {
+   "seat": "EA-CORPORA-41/04",
+   "corpus": "diodorus-bibliotheca",
+   "edition": "Bibliotheca historica, books 1–5 and 11–20 (Perseus canonical-greekLit, perseus-grc4–6)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0060/tlg001 — perseus-grc4 (11–17), grc5 (1–5), grc6 (18–20)"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 18256,
+   "verified_loci": [
+    "Munychia — 'Μουνυχ' (text/tlg0060.tlg001.perseus-grc4.txt)",
+    "Antipater — 'Ἀντίπατρος' (text/tlg0060.tlg001.perseus-grc4.txt)",
+    "Andromachus — 'Ἀνδρόμαχ' (text/tlg0060.tlg001.perseus-grc4.txt)"
+   ],
+   "why_seated": "ALEXANDER AND ANTIPATER. Book 17 for Alexander's march by Tyre, Gaza and Egypt, the account in which Jerusalem does not appear; book 18 for the Lamian War, Crannon and the terms imposed on Athens (the garrison on Munychia, the franchise limited by property), the settlement at Triparadeisos and Antipater's death; book 19 for Cassander. The edition holds books 1–5 and 11–20; books 6–10 and 21–40 (the fragments, Hecataeus's account of the Jews at 40.3 among them) are not in it.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/diodorus-bibliotheca/",
+   "axn": "AXN:0D1A.ORIGINAL.➖🌉🔙🔵🙏⚪"
+  },
+  {
+   "seat": "EA-CORPORA-41/05",
+   "corpus": "plutarch-phocion-eumenes-demosthenes",
+   "edition": "Phocion, Eumenes, Demosthenes, and On the Fortune or Virtue of Alexander (Perseus canonical-greekLit)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0007/tlg049",
+     "data/tlg0007/tlg041",
+     "data/tlg0007/tlg054",
+     "data/tlg0007/tlg087 (perseus-grc3 of two)"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 935,
+   "verified_loci": [
+    "Phocion, Munychia — 'Μουνυχ' (text/tlg0007.tlg049.perseus-grc2.txt)",
+    "Demosthenes, Calauria — 'Καλαυρ' (text/tlg0007.tlg049.perseus-grc2.txt)",
+    "Antipater — 'Ἀντίπατρ' (text/tlg0007.tlg041.perseus-grc2.txt)"
+   ],
+   "why_seated": "ANTIPATER'S ATHENS. Phocion for the terms after Crannon and the garrison on Munychia; Demosthenes for the flight to Calauria and the poison; Eumenes for the war of the successors; On the Fortune of Alexander for the philosopher-king Alexander. Companion to the seated Alexander and Sulla (EA-CORPORA-13/01).",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/plutarch-phocion-eumenes-demosthenes/",
+   "axn": "AXN:0D1A.ORIGINAL.🕑♍🕕💎🏔️☀️"
+  },
+  {
+   "seat": "EA-CORPORA-41/06",
+   "corpus": "aelian-varia-historia",
+   "edition": "Varia historia (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0545/tlg002"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 945,
+   "verified_loci": [
+    "VH 3.36, the two sins — 'οὐ βούλεται Ἀθηναίους δὶς ἐξαμαρτεῖν ἐς φιλοσοφίαν' (text/tlg0545.tlg002.perseus-grc2.txt)",
+    "Antipater — 'Ἀντίπατρ' (text/tlg0545.tlg002.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE TWO SINS. Varia historia 3.36: asked why he left Athens, Aristotle answered that he would not have the Athenians sin twice against philosophy, with the death of Socrates the first. The saying the evening's reading turned on, and which the seated Diogenes does not carry.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/aelian-varia-historia/",
+   "axn": "AXN:0D1A.ORIGINAL.♦️🔍🔙⏫🌋⊗"
+  },
+  {
+   "seat": "EA-CORPORA-41/07",
+   "corpus": "lucian-quomodo-historia",
+   "edition": "Quomodo historia conscribenda sit (Perseus canonical-greekLit, perseus-grc2 of two)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0062/tlg053"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 129,
+   "verified_loci": [
+    "flattery — 'κολακ' (text/tlg0062.tlg053.perseus-grc2.txt)"
+   ],
+   "why_seated": "HOW THE HISTORIANS WROTE. Lucian's treatise against flattery and invention in history, cited in the reading of the ancient historians as composers with incentives.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/lucian-quomodo-historia/",
+   "axn": "AXN:0D1A.ORIGINAL.🏗️🌕🚩⊗🧡🏛️"
+  },
+  {
+   "seat": "EA-CORPORA-41/08",
+   "corpus": "curtius-rufus-historiae",
+   "edition": "Historiae Alexandri Magni (Perseus canonical-latinLit, perseus-lat2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-latinLit",
+    "commit": "8cef51623130f2412da410858e32c322eb796c0a",
+    "paths": [
+     "data/phi0860/phi001"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "lat",
+   "lines": 5358,
+   "verified_loci": [
+    "4.8, Andromachus — 'Andromacho' (text/phi0860.phi001.perseus-lat2.txt)"
+   ],
+   "why_seated": "ALEXANDER IN SYRIA. Curtius 4.8: Andromachus, given Coele Syria, burned alive by the Samaritans, the event the historians record where Josephus records the visit to Jerusalem.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/curtius-rufus-historiae/",
+   "axn": "AXN:0D1A.ORIGINAL.📌⛵🌾🪜⏪🤝"
+  },
+  {
+   "seat": "EA-CORPORA-41/09",
+   "corpus": "cicero-de-oratore-de-legibus",
+   "edition": "De oratore (Perseus canonical-latinLit, perseus-lat2); De legibus (The Latin Library)",
+   "license": {
+    "payload": "De oratore: CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain. De legibus: the Latin text is public domain; The Latin Library's pages as served.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "de_oratore": {
+     "repo": "PerseusDL/canonical-latinLit",
+     "commit": "8cef51623130f2412da410858e32c322eb796c0a",
+     "paths": [
+      "data/phi0474/phi037"
+     ]
+    },
+    "de_legibus": {
+     "source": "The Latin Library",
+     "urls": [
+      "https://www.thelatinlibrary.com/cicero/leg1.shtml",
+      "https://www.thelatinlibrary.com/cicero/leg2.shtml",
+      "https://www.thelatinlibrary.com/cicero/leg3.shtml"
+     ]
+    }
+   },
+   "language": "lat",
+   "lines": 2131,
+   "verified_loci": [
+    "De legibus 1.5 — 'unum hoc oratorium maxime' (text/de-legibus-1.txt)"
+   ],
+   "why_seated": "HISTORY AS ORATORY. De legibus 1.5, history as opus … unum hoc oratorium maxime, the evening's sentence on the genre; De oratore, the dialogue Cicero set in the manner of Aristotle, beside the seated De finibus and Academica (EA-CORPORA-13/03).",
+   "scope": "whole",
+   "data": "https://www.alexanarch.org/data/corpora/cicero-de-oratore-de-legibus/",
+   "axn": "AXN:0D1A.ORIGINAL.⚡▲🌍♾️☽⏬"
+  },
+  {
+   "seat": "EA-CORPORA-41/10",
+   "corpus": "porphyry-de-abstinentia",
+   "edition": "De abstinentia (First1KGreek, 1st1K-grc1)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+    "paths": [
+     "data/tlg2034/tlg003"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 354,
+   "verified_loci": [
+    "2.26, Theophrastus on the Jews — 'Σύρων μὲν Ἰουδαῖοι' (text/tlg2034.tlg003.1st1K-grc1.txt)",
+    "Theophrastus named — 'φησὶν ὁ Θεόφραστος' (text/tlg2034.tlg003.1st1K-grc1.txt)"
+   ],
+   "why_seated": "THEOPHRASTUS ON THE JEWS. De abstinentia 2.26 carries Theophrastus's On Piety on the Jews as the Syrians who still sacrifice, philosophers by race; with Clearchus's Aristotle (Josephus, Against Apion 1.176–182, seated) and Hecataeus, the earliest Greek reports of the Jews, all from the school.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/porphyry-de-abstinentia/",
+   "axn": "AXN:0D1A.ORIGINAL.🌔🔖🔓🟡🔮📎"
+  },
+  {
+   "seat": "EA-CORPORA-41/11",
+   "corpus": "simplicius-in-physica",
+   "edition": "In Aristotelis Physicorum libros commentaria (First1KGreek, 1st1K-grc1; Diels, CAG IX–X)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+    "paths": [
+     "data/tlg4013/tlg004"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 1739,
+   "verified_loci": [
+    "Diogenes of Apollonia — 'Ἀπολλωνιάτης' (text/tlg4013.tlg004.1st1K-grc1.txt)"
+   ],
+   "why_seated": "THE MOISTURE OF THOUGHT. Simplicius preserves Diogenes of Apollonia's own words on air and thought, the doctrine the Clouds gives Socrates (227–233) and Theophrastus's De sensibus 39–44 reports: the witness outside the Peripatos that the dispersal reading has to account for.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/simplicius-in-physica/",
+   "axn": "AXN:0D1A.ORIGINAL.🍃👁️🪐🔺♅♅"
+  },
+  {
+   "seat": "EA-CORPORA-41/12",
+   "corpus": "alexander-jerusalem-rabbinic",
+   "edition": "Bavli Yoma 69a, Wikisource Talmud Bavli (via Sefaria); Megillat Ta'anit with the scholion, Warsaw 1874 (via Sefaria)",
+   "license": {
+    "payload": "Yoma 69a: CC-BY-SA (Wikisource Talmud Bavli, as Sefaria states the version). Megillat Ta'anit, Warsaw 1874: Public Domain, as Sefaria states the version (source: National Library of Israel, NNL_ALEPH001239373).",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "source": "Sefaria API v3",
+    "requests": [
+     "https://www.sefaria.org/api/v3/texts/Yoma.69a?version=hebrew|Wikisource Talmud Bavli",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Nisan?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Iyar?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Sivan?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Tammuz?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Av?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Elul?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Tishrei?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Cheshvan?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Kislev?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Tevet?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Shevat?version=hebrew|Warsaw, 1874",
+     "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Adar?version=hebrew|Warsaw, 1874"
+    ]
+   },
+   "language": "heb, arc",
+   "lines": 108,
+   "verified_loci": [
+    "Yoma 69a, Alexander of Macedon — 'מאלכסנדרוס מוקדון' (text/yoma-69a.txt)",
+    "Yoma 69a, Simeon the Righteous — 'שמעון הצדיק' (text/yoma-69a.txt)",
+    "Megillat Ta'anit 21 Kislev — 'יום הר גריזין' (text/megillat-taanit-kislev.txt)",
+    "Megillat Ta'anit, Tevet, Yannai — 'ינאי המלך' (text/megillat-taanit-tevet.txt)"
+   ],
+   "why_seated": "ALEXANDER IN JUDAEA. Yoma 69a: the Samaritans ask Alexander of Macedon for the Temple, and Simeon the Righteous goes out to meet him in the priestly garments, the rabbinic telling of Josephus, AJ 11.317–347 (seated) with Jaddua. Megillat Ta'anit 21 Kislev, \"the day of Mount Gerizim\", carries the same story in its scholion; its Tevet entry names King Yannai and Queen Shalminon, the Alexander and his wife of AJ 14.10.",
+   "scope": "Yoma 69a whole; Megillat Ta'anit whole, by month",
+   "data": "https://www.alexanarch.org/data/corpora/alexander-jerusalem-rabbinic/",
+   "axn": "AXN:0D1A.ORIGINAL.💚🕛♃🔙🔅♍"
+  },
+  {
+   "seat": "EA-CORPORA-41/13",
+   "corpus": "catiline-conspiracy",
+   "edition": "Sallust, Catilinae coniuratio; Cicero, In Catilinam I–IV, Pro Murena, Pro Sulla; Plutarch, Cicero, Cato the Younger, Caesar (Perseus canonical-latinLit and canonical-greekLit)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repos": [
+     {
+      "repo": "PerseusDL/canonical-latinLit",
+      "commit": "8cef51623130f2412da410858e32c322eb796c0a"
+     },
+     {
+      "repo": "PerseusDL/canonical-greekLit",
+      "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c"
+     }
+    ],
+    "paths": [
+     "canonical-latinLit data/phi0631/phi001 (perseus-lat3 of two)",
+     "data/phi0474/phi013, phi014, phi015",
+     "canonical-greekLit data/tlg0007/tlg055, tlg050, tlg048"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "lat, grc",
+   "lines": 2652,
+   "verified_loci": [
+    "Sallust, Cat. 5 — 'L. Catilina, nobili genere natus' (text/phi0631.phi001.perseus-lat3.txt)",
+    "Cicero, Cat. 1.1 — 'quo usque tandem abutere, Catilina' (text/phi0474.phi013.perseus-lat2.txt)",
+    "Pro Sulla — 'Sulla et antea dignitatis suae splendorem' (text/phi0474.phi015.perseus-lat2.txt)",
+    "Plutarch, Cicero, Catiline introduced — 'Λεύκιον Κατιλίναν' (text/tlg0007.tlg055.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE CATILINE CONSPIRACY, at the author's word (\"and the catiline conspiracy\", 2026-11-20 18:40). The conspiracy of 63 BCE in its own witnesses: Sallust's monograph; Cicero's four speeches against Catiline, the Pro Murena delivered in the same weeks, and the Pro Sulla for P. Sulla, the dictator's nephew, accused of complicity; Plutarch's Cicero, Cato the Younger and Caesar for the debate on the conspirators. Companion to Plutarch's Sulla (EA-CORPORA-13/01).",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/catiline-conspiracy/",
+   "axn": "AXN:0D1A.ORIGINAL.🟠🍄↙️📜🌅👈"
+  },
+  {
+   "seat": "EA-CORPORA-41/14",
+   "corpus": "appian-dio-sulla-catiline",
+   "edition": "Appian, Mithridatica and Bella civilia; Cassius Dio, Historia Romana 36–55 (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0551/tlg014",
+     "data/tlg0551/tlg017",
+     "data/tlg0385/tlg001 (books 36–55, as Perseus holds them)"
+    ],
+    "transport": "git sparse checkout of the repository at the pinned commit"
+   },
+   "language": "grc",
+   "lines": 11880,
+   "verified_loci": [
+    "Mithridatica, Aristion of Athens — 'διʼ Ἀριστίωνος ἀνδρὸς Ἀθηναίου' (text/tlg0551.tlg014.perseus-grc2.txt)",
+    "Cassius Dio 37, Catiline — 'Λούκιος Κατιλίνας ἀνὴρ θρασύτατος' (text/tlg0385.tlg001.perseus-grc2.txt)"
+   ],
+   "why_seated": "SULLA AT ATHENS AND THE CONSPIRACY IN GREEK. Appian's Mithridatic Wars for the war that made Athens a battleground, Aristion's tyranny and Sulla's siege and sack (86 BCE), the setting of the seizure of Apellicon's library; Appian's Civil Wars 2 and Cassius Dio 37 for the Catilinarian conspiracy; Dio for the late Republic around both.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/appian-dio-sulla-catiline/",
+   "axn": "AXN:0D1A.ORIGINAL.🃏🌖☀️🧱♦️○"
   }
  ],
- "count": 292
+ "count": 306
 }

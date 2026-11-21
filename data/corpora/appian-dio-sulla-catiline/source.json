@@ -1,0 +1,71 @@
+{
+ "corpus": "appian-dio-sulla-catiline",
+ "seat": "EA-CORPORA-41/14",
+ "title": "Appian, Mithridatica and Bella civilia; Cassius Dio, Historia Romana 36–55 (Perseus canonical-greekLit, perseus-grc2)",
+ "edition": "Appian, Mithridatica and Bella civilia; Cassius Dio, Historia Romana 36–55 (Perseus canonical-greekLit, perseus-grc2)",
+ "language": "grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+  "paths": [
+   "data/tlg0551/tlg014",
+   "data/tlg0551/tlg017",
+   "data/tlg0385/tlg001 (books 36–55, as Perseus holds them)"
+  ],
+  "transport": "git sparse checkout of the repository at the pinned commit"
+ },
+ "works": {
+  "count": 3,
+  "units": "one file per work (per volume where the edition is in volumes)",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "tlg0385.tlg001.perseus-grc2",
+    "title": "Cassius Dio, Historia Romana",
+    "text": "text/tlg0385.tlg001.perseus-grc2.txt",
+    "lines": 10075
+   },
+   {
+    "id": "tlg0551.tlg014.perseus-grc2",
+    "title": "Appian, Mithridatic Wars",
+    "text": "text/tlg0551.tlg014.perseus-grc2.txt",
+    "lines": 273
+   },
+   {
+    "id": "tlg0551.tlg017.perseus-grc2",
+    "title": "Appian, Civil Wars",
+    "text": "text/tlg0551.tlg017.perseus-grc2.txt",
+    "lines": 1532
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "SULLA AT ATHENS AND THE CONSPIRACY IN GREEK. Appian's Mithridatic Wars for the war that made Athens a battleground, Aristion's tyranny and Sulla's siege and sack (86 BCE), the setting of the seizure of Apellicon's library; Appian's Civil Wars 2 and Cassius Dio 37 for the Catilinarian conspiracy; Dio for the late Republic around both.",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "Mithridatica, Aristion of Athens — 'διʼ Ἀριστίωνος ἀνδρὸς Ἀθηναίου' (text/tlg0551.tlg014.perseus-grc2.txt)",
+  "Cassius Dio 37, Catiline — 'Λούκιος Κατιλίνας ἀνὴρ θρασύτατος' (text/tlg0385.tlg001.perseus-grc2.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 11880,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.🃏🌖☀️🧱♦️○",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "8e050b22829bbfad4bf9bac458000eee9004a46aa31d622c053bbd7a7341eb8a",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "corpus": "alexander-jerusalem-rabbinic",
+ "seat": "EA-CORPORA-41/12",
+ "title": "The rabbinic Alexander at Jerusalem: Bavli Yoma 69a and Megillat Ta'anit with its scholion",
+ "edition": "Bavli Yoma 69a, Wikisource Talmud Bavli (via Sefaria); Megillat Ta'anit with the scholion, Warsaw 1874 (via Sefaria)",
+ "language": "heb, arc",
+ "license": {
+  "payload": "Yoma 69a: CC-BY-SA (Wikisource Talmud Bavli, as Sefaria states the version). Megillat Ta'anit, Warsaw 1874: Public Domain, as Sefaria states the version (source: National Library of Israel, NNL_ALEPH001239373).",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "source": "Sefaria API v3",
+  "requests": [
+   "https://www.sefaria.org/api/v3/texts/Yoma.69a?version=hebrew|Wikisource Talmud Bavli",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Nisan?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Iyar?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Sivan?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Tammuz?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Av?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Elul?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Tishrei?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Cheshvan?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Kislev?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Tevet?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Shevat?version=hebrew|Warsaw, 1874",
+   "https://www.sefaria.org/api/v3/texts/Megillat_Ta'anit,_Adar?version=hebrew|Warsaw, 1874"
+  ]
+ },
+ "works": {
+  "count": 13,
+  "units": "one file per daf or month",
+  "per-work": "text/<id>.txt",
+  "list": [
+   {
+    "id": "yoma-69a",
+    "title": "Bavli Yoma 69a",
+    "text": "text/yoma-69a.txt",
+    "lines": 17
+   },
+   {
+    "id": "megillat-taanit-nisan",
+    "title": "Megillat Ta'anit, Nisan",
+    "text": "text/megillat-taanit-nisan.txt",
+    "lines": 6
+   },
+   {
+    "id": "megillat-taanit-iyar",
+    "title": "Megillat Ta'anit, Iyar",
+    "text": "text/megillat-taanit-iyar.txt",
+    "lines": 9
+   },
+   {
+    "id": "megillat-taanit-sivan",
+    "title": "Megillat Ta'anit, Sivan",
+    "text": "text/megillat-taanit-sivan.txt",
+    "lines": 7
+   },
+   {
+    "id": "megillat-taanit-tammuz",
+    "title": "Megillat Ta'anit, Tammuz",
+    "text": "text/megillat-taanit-tammuz.txt",
+    "lines": 3
+   },
+   {
+    "id": "megillat-taanit-av",
+    "title": "Megillat Ta'anit, Av",
+    "text": "text/megillat-taanit-av.txt",
+    "lines": 7
+   },
+   {
+    "id": "megillat-taanit-elul",
+    "title": "Megillat Ta'anit, Elul",
+    "text": "text/megillat-taanit-elul.txt",
+    "lines": 7
+   },
+   {
+    "id": "megillat-taanit-tishrei",
+    "title": "Megillat Ta'anit, Tishrei",
+    "text": "text/megillat-taanit-tishrei.txt",
+    "lines": 3
+   },
+   {
+    "id": "megillat-taanit-cheshvan",
+    "title": "Megillat Ta'anit, Cheshvan",
+    "text": "text/megillat-taanit-cheshvan.txt",
+    "lines": 7
+   },
+   {
+    "id": "megillat-taanit-kislev",
+    "title": "Megillat Ta'anit, Kislev",
+    "text": "text/megillat-taanit-kislev.txt",
+    "lines": 9
+   },
+   {
+    "id": "megillat-taanit-tevet",
+    "title": "Megillat Ta'anit, Tevet",
+    "text": "text/megillat-taanit-tevet.txt",
+    "lines": 3
+   },
+   {
+    "id": "megillat-taanit-shevat",
+    "title": "Megillat Ta'anit, Shevat",
+    "text": "text/megillat-taanit-shevat.txt",
+    "lines": 8
+   },
+   {
+    "id": "megillat-taanit-adar",
+    "title": "Megillat Ta'anit, Adar",
+    "text": "text/megillat-taanit-adar.txt",
+    "lines": 22
+   }
+  ]
+ },
+ "normalization": "The API's JSON as fetched under original/; text/ holds the one version's segments, one per line as [segment N], markup stripped, with a header line naming the reference, version and licence. No text corrected by hand.",
+ "scope": "Yoma 69a whole; Megillat Ta'anit whole, by month",
+ "why_seated": "ALEXANDER IN JUDAEA. Yoma 69a: the Samaritans ask Alexander of Macedon for the Temple, and Simeon the Righteous goes out to meet him in the priestly garments, the rabbinic telling of Josephus, AJ 11.317–347 (seated) with Jaddua. Megillat Ta'anit 21 Kislev, \"the day of Mount Gerizim\", carries the same story in its scholion; its Tevet entry names King Yannai and Queen Shalminon, the Alexander and his wife of AJ 14.10.",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "Yoma 69a, Alexander of Macedon — 'מאלכסנדרוס מוקדון' (text/yoma-69a.txt)",
+  "Yoma 69a, Simeon the Righteous — 'שמעון הצדיק' (text/yoma-69a.txt)",
+  "Megillat Ta'anit 21 Kislev — 'יום הר גריזין' (text/megillat-taanit-kislev.txt)",
+  "Megillat Ta'anit, Tevet, Yannai — 'ינאי המלך' (text/megillat-taanit-tevet.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 108,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.💚🕛♃🔙🔅♍",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "cc6da3f3edae38b871793a77c62fd85b38be6ab03660b4a6c0b262098d38c8a1",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

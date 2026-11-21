@@ -1,0 +1,165 @@
+{
+ "corpus": "euripides-tragoediae",
+ "seat": "EA-CORPORA-41/03",
+ "title": "Euripides, Tragoediae (Perseus canonical-greekLit, perseus-grc2)",
+ "edition": "Tragoediae (Perseus canonical-greekLit, perseus-grc2)",
+ "language": "grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+  "paths": [
+   "data/tlg0006 — 19 plays"
+  ],
+  "transport": "git sparse checkout of the repository at the pinned commit"
+ },
+ "works": {
+  "count": 19,
+  "units": "one file per work (per volume where the edition is in volumes)",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "tlg0006.tlg001.perseus-grc2",
+    "title": "Euripides, Cyclops",
+    "text": "text/tlg0006.tlg001.perseus-grc2.txt",
+    "lines": 767
+   },
+   {
+    "id": "tlg0006.tlg002.perseus-grc2",
+    "title": "Euripides, Alcestis",
+    "text": "text/tlg0006.tlg002.perseus-grc2.txt",
+    "lines": 1225
+   },
+   {
+    "id": "tlg0006.tlg003.perseus-grc2",
+    "title": "Euripides, Medea",
+    "text": "text/tlg0006.tlg003.perseus-grc2.txt",
+    "lines": 1457
+   },
+   {
+    "id": "tlg0006.tlg004.perseus-grc2",
+    "title": "Euripides, Heracleidae",
+    "text": "text/tlg0006.tlg004.perseus-grc2.txt",
+    "lines": 1085
+   },
+   {
+    "id": "tlg0006.tlg005.perseus-grc2",
+    "title": "Euripides, Hippolytus",
+    "text": "text/tlg0006.tlg005.perseus-grc2.txt",
+    "lines": 1511
+   },
+   {
+    "id": "tlg0006.tlg006.perseus-grc2",
+    "title": "Euripides, Andromache",
+    "text": "text/tlg0006.tlg006.perseus-grc2.txt",
+    "lines": 1337
+   },
+   {
+    "id": "tlg0006.tlg007.perseus-grc2",
+    "title": "Euripides, Hecuba",
+    "text": "text/tlg0006.tlg007.perseus-grc2.txt",
+    "lines": 1312
+   },
+   {
+    "id": "tlg0006.tlg008.perseus-grc2",
+    "title": "Euripides, Suppliants",
+    "text": "text/tlg0006.tlg008.perseus-grc2.txt",
+    "lines": 1304
+   },
+   {
+    "id": "tlg0006.tlg009.perseus-grc2",
+    "title": "Euripides, Heracles",
+    "text": "text/tlg0006.tlg009.perseus-grc2.txt",
+    "lines": 1546
+   },
+   {
+    "id": "tlg0006.tlg010.perseus-grc2",
+    "title": "Euripides, Ion",
+    "text": "text/tlg0006.tlg010.perseus-grc2.txt",
+    "lines": 1728
+   },
+   {
+    "id": "tlg0006.tlg011.perseus-grc2",
+    "title": "Euripides, The Trojan Women",
+    "text": "text/tlg0006.tlg011.perseus-grc2.txt",
+    "lines": 1400
+   },
+   {
+    "id": "tlg0006.tlg012.perseus-grc2",
+    "title": "Euripides, Electra",
+    "text": "text/tlg0006.tlg012.perseus-grc2.txt",
+    "lines": 1414
+   },
+   {
+    "id": "tlg0006.tlg013.perseus-grc2",
+    "title": "Euripides, Iphigenia in Tauris",
+    "text": "text/tlg0006.tlg013.perseus-grc2.txt",
+    "lines": 1527
+   },
+   {
+    "id": "tlg0006.tlg014.perseus-grc2",
+    "title": "Euripides, Helen",
+    "text": "text/tlg0006.tlg014.perseus-grc2.txt",
+    "lines": 1764
+   },
+   {
+    "id": "tlg0006.tlg015.perseus-grc2",
+    "title": "Euripides, Phoenissae",
+    "text": "text/tlg0006.tlg015.perseus-grc2.txt",
+    "lines": 1849
+   },
+   {
+    "id": "tlg0006.tlg016.perseus-grc2",
+    "title": "Euripides, Orestes",
+    "text": "text/tlg0006.tlg016.perseus-grc2.txt",
+    "lines": 1805
+   },
+   {
+    "id": "tlg0006.tlg017.perseus-grc2",
+    "title": "Euripides, Bacchae",
+    "text": "text/tlg0006.tlg017.perseus-grc2.txt",
+    "lines": 1467
+   },
+   {
+    "id": "tlg0006.tlg018.perseus-grc2",
+    "title": "Euripides, Iphigenia in Aulis",
+    "text": "text/tlg0006.tlg018.perseus-grc2.txt",
+    "lines": 1712
+   },
+   {
+    "id": "tlg0006.tlg019.perseus-grc2",
+    "title": "Euripides, Rhesus",
+    "text": "text/tlg0006.tlg019.perseus-grc2.txt",
+    "lines": 1052
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "THE TRAGEDIANS, at the author's word. The nineteen plays seated whole, the Cyclops and the Rhesus among them.",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "Bacchae 1 — '|1 ἥκω Διὸς παῖς' (text/tlg0006.tlg017.perseus-grc2.txt)",
+  "Medea 1 — '|1 Εἴθ’ ὤφελ’ Ἀργοῦς' (text/tlg0006.tlg003.perseus-grc2.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 27262,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.🕌🔆🌄♈🚪🤙",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "29ece1a924bed090d54eaa229e43e47a9671a281a67ba185cb2fcdd97e588a09",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

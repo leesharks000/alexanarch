@@ -1,0 +1,105 @@
+{
+ "corpus": "catiline-conspiracy",
+ "seat": "EA-CORPORA-41/13",
+ "title": "Sallust, Catilinae coniuratio; Cicero, In Catilinam I–IV, Pro Murena, Pro Sulla; Plutarch, Cicero, Cato the Younger, Caesar (Perseus canonical-latinLit and canonical-greekLit)",
+ "edition": "Sallust, Catilinae coniuratio; Cicero, In Catilinam I–IV, Pro Murena, Pro Sulla; Plutarch, Cicero, Cato the Younger, Caesar (Perseus canonical-latinLit and canonical-greekLit)",
+ "language": "lat, grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repos": [
+   {
+    "repo": "PerseusDL/canonical-latinLit",
+    "commit": "8cef51623130f2412da410858e32c322eb796c0a"
+   },
+   {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c"
+   }
+  ],
+  "paths": [
+   "canonical-latinLit data/phi0631/phi001 (perseus-lat3 of two)",
+   "data/phi0474/phi013, phi014, phi015",
+   "canonical-greekLit data/tlg0007/tlg055, tlg050, tlg048"
+  ],
+  "transport": "git sparse checkout of the repository at the pinned commit"
+ },
+ "works": {
+  "count": 7,
+  "units": "one file per work (per volume where the edition is in volumes)",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "phi0474.phi013.perseus-lat2",
+    "title": "Cicero, In Catilinam",
+    "text": "text/phi0474.phi013.perseus-lat2.txt",
+    "lines": 246
+   },
+   {
+    "id": "phi0474.phi014.perseus-lat2",
+    "title": "Cicero, Pro L. Murena",
+    "text": "text/phi0474.phi014.perseus-lat2.txt",
+    "lines": 190
+   },
+   {
+    "id": "phi0474.phi015.perseus-lat2",
+    "title": "Cicero, Pro P. Sulla",
+    "text": "text/phi0474.phi015.perseus-lat2.txt",
+    "lines": 191
+   },
+   {
+    "id": "phi0631.phi001.perseus-lat3",
+    "title": "Sallust, Catilinae Coniuratio",
+    "text": "text/phi0631.phi001.perseus-lat3.txt",
+    "lines": 159
+   },
+   {
+    "id": "tlg0007.tlg048.perseus-grc2",
+    "title": "Plutarch, Caesar",
+    "text": "text/tlg0007.tlg048.perseus-grc2.txt",
+    "lines": 648
+   },
+   {
+    "id": "tlg0007.tlg050.perseus-grc2",
+    "title": "Plutarch, Cato the Younger",
+    "text": "text/tlg0007.tlg050.perseus-grc2.txt",
+    "lines": 712
+   },
+   {
+    "id": "tlg0007.tlg055.perseus-grc2",
+    "title": "Plutarch, Cicero",
+    "text": "text/tlg0007.tlg055.perseus-grc2.txt",
+    "lines": 506
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "THE CATILINE CONSPIRACY, at the author's word (\"and the catiline conspiracy\", 2026-11-20 18:40). The conspiracy of 63 BCE in its own witnesses: Sallust's monograph; Cicero's four speeches against Catiline, the Pro Murena delivered in the same weeks, and the Pro Sulla for P. Sulla, the dictator's nephew, accused of complicity; Plutarch's Cicero, Cato the Younger and Caesar for the debate on the conspirators. Companion to Plutarch's Sulla (EA-CORPORA-13/01).",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "Sallust, Cat. 5 — 'L. Catilina, nobili genere natus' (text/phi0631.phi001.perseus-lat3.txt)",
+  "Cicero, Cat. 1.1 — 'quo usque tandem abutere, Catilina' (text/phi0474.phi013.perseus-lat2.txt)",
+  "Pro Sulla — 'Sulla et antea dignitatis suae splendorem' (text/phi0474.phi015.perseus-lat2.txt)",
+  "Plutarch, Cicero, Catiline introduced — 'Λεύκιον Κατιλίναν' (text/tlg0007.tlg055.perseus-grc2.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 2652,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.🟠🍄↙️📜🌅👈",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "c279dc40e0b8e94a87dd0bdf03656072833302697e63407ef7fd3cba4e886577",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

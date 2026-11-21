@@ -3,18 +3,18 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-11-20T18:44:55Z",
+  "generated_at": "2026-11-21T00:08:35Z",
   "totals": {
-    "deposits": 1791,
+    "deposits": 1792,
     "concepts": 110,
     "deposits_in_concepts": 273,
-    "singletons": 1518,
+    "singletons": 1519,
     "needs_review": 15,
     "program_families": 56
   },
   "basis_counts": {
-    "version/declared": 47,
-    "version/implicit": 41,
+    "version/declared": 48,
+    "version/implicit": 40,
     "version/explicit": 8,
     "version/superseded": 2,
     "version/fuzzy": 12
@@ -1853,6 +1853,47 @@
       ]
     },
     {
+      "concept_id": "series-single-sparrow",
+      "concept_url": "https://www.alexanarch.org/s/concept/series-single-sparrow/",
+      "title_base": "a single sparrow what if the entire course of history depends on a single poem",
+      "basis": "version/declared",
+      "version_series_id": "SERIES-SINGLE-SPARROW",
+      "root_axn_hex": "0D15",
+      "ea_identifiers": [],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1791,
+        "axn": "AXN:0D18.COMPOSITIONAL.🎺🪄🔍🕓🗿💥",
+        "title": "A Single Sparrow: What If the Entire Course of History Depends on a Single Poem? (v1.1)",
+        "date": "2026-11-20",
+        "version": "1.1",
+        "record_url": "https://www.alexanarch.org/s/records/1791/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1790,
+          "axn": "AXN:0D15.COMPOSITIONAL.🏺⛩️🔥🜁⚙️🏰",
+          "title": "A Single Sparrow: What If the Entire Course of History Depends on a Single Poem?",
+          "date": "2026-11-20",
+          "version": "1.0",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1790/"
+        },
+        {
+          "deposit_number": 1791,
+          "axn": "AXN:0D18.COMPOSITIONAL.🎺🪄🔍🕓🗿💥",
+          "title": "A Single Sparrow: What If the Entire Course of History Depends on a Single Poem? (v1.1)",
+          "date": "2026-11-20",
+          "version": "1.1",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1791/"
+        }
+      ]
+    },
+    {
       "concept_id": "series-spxi-aeo-01",
       "concept_url": "https://www.alexanarch.org/s/concept/series-spxi-aeo-01/",
       "title_base": "spxi aeo inscription by discernment the prince of poets wager and the king of aeo contest",
@@ -2479,46 +2520,6 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1530/"
-        }
-      ]
-    },
-    {
-      "concept_id": "a-single-sparrow-what-if-the-entire-course-of-history-depend",
-      "concept_url": "https://www.alexanarch.org/s/concept/a-single-sparrow-what-if-the-entire-course-of-history-depend/",
-      "title_base": "a single sparrow what if the entire course of history depends on a single poem",
-      "basis": "version/implicit",
-      "root_axn_hex": "0D15",
-      "ea_identifiers": [],
-      "member_count": 2,
-      "needs_review": false,
-      "current": {
-        "deposit_number": 1791,
-        "axn": "AXN:0D18.COMPOSITIONAL.🎺🪄🔍🕓🗿💥",
-        "title": "A Single Sparrow: What If the Entire Course of History Depends on a Single Poem? (v1.1)",
-        "date": "2026-11-20",
-        "version": "1.1",
-        "record_url": "https://www.alexanarch.org/s/records/1791/"
-      },
-      "versions": [
-        {
-          "deposit_number": 1790,
-          "axn": "AXN:0D15.COMPOSITIONAL.🏺⛩️🔥🜁⚙️🏰",
-          "title": "A Single Sparrow: What If the Entire Course of History Depends on a Single Poem?",
-          "date": "2026-11-20",
-          "version": null,
-          "superseded_marker": false,
-          "is_current": false,
-          "record_url": "https://www.alexanarch.org/s/records/1790/"
-        },
-        {
-          "deposit_number": 1791,
-          "axn": "AXN:0D18.COMPOSITIONAL.🎺🪄🔍🕓🗿💥",
-          "title": "A Single Sparrow: What If the Entire Course of History Depends on a Single Poem? (v1.1)",
-          "date": "2026-11-20",
-          "version": "1.1",
-          "superseded_marker": false,
-          "is_current": true,
-          "record_url": "https://www.alexanarch.org/s/records/1791/"
         }
       ]
     },

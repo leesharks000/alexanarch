@@ -1,0 +1,70 @@
+{
+ "corpus": "diodorus-bibliotheca",
+ "seat": "EA-CORPORA-41/04",
+ "title": "Diodorus Siculus, Bibliotheca historica, books 1–5 and 11–20 (Perseus canonical-greekLit, perseus-grc4–6)",
+ "edition": "Bibliotheca historica, books 1–5 and 11–20 (Perseus canonical-greekLit, perseus-grc4–6)",
+ "language": "grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+  "paths": [
+   "data/tlg0060/tlg001 — perseus-grc4 (11–17), grc5 (1–5), grc6 (18–20)"
+  ],
+  "transport": "git sparse checkout of the repository at the pinned commit"
+ },
+ "works": {
+  "count": 3,
+  "units": "one file per work (per volume where the edition is in volumes)",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "tlg0060.tlg001.perseus-grc4",
+    "title": "Diodorus Siculus, Historical Library",
+    "text": "text/tlg0060.tlg001.perseus-grc4.txt",
+    "lines": 8981
+   },
+   {
+    "id": "tlg0060.tlg001.perseus-grc5",
+    "title": "Diodorus Siculus, Historical Library",
+    "text": "text/tlg0060.tlg001.perseus-grc5.txt",
+    "lines": 5418
+   },
+   {
+    "id": "tlg0060.tlg001.perseus-grc6",
+    "title": "Diodorus Siculus, Historical Library",
+    "text": "text/tlg0060.tlg001.perseus-grc6.txt",
+    "lines": 3857
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "ALEXANDER AND ANTIPATER. Book 17 for Alexander's march by Tyre, Gaza and Egypt, the account in which Jerusalem does not appear; book 18 for the Lamian War, Crannon and the terms imposed on Athens (the garrison on Munychia, the franchise limited by property), the settlement at Triparadeisos and Antipater's death; book 19 for Cassander. The edition holds books 1–5 and 11–20; books 6–10 and 21–40 (the fragments, Hecataeus's account of the Jews at 40.3 among them) are not in it.",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "Munychia — 'Μουνυχ' (text/tlg0060.tlg001.perseus-grc4.txt)",
+  "Antipater — 'Ἀντίπατρος' (text/tlg0060.tlg001.perseus-grc4.txt)",
+  "Andromachus — 'Ἀνδρόμαχ' (text/tlg0060.tlg001.perseus-grc4.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 18256,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.➖🌉🔙🔵🙏⚪",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "912bf3c5b3c7a45c1adab82c6681ef6b0466cbc5468e4a2df604621cbde5802b",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

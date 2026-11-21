@@ -1,0 +1,56 @@
+{
+ "corpus": "simplicius-in-physica",
+ "seat": "EA-CORPORA-41/11",
+ "title": "Simplicius, In Aristotelis Physicorum libros commentaria (First1KGreek, 1st1K-grc1; Diels, CAG IX–X)",
+ "edition": "In Aristotelis Physicorum libros commentaria (First1KGreek, 1st1K-grc1; Diels, CAG IX–X)",
+ "language": "grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repo": "OpenGreekAndLatin/First1KGreek",
+  "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+  "paths": [
+   "data/tlg4013/tlg004"
+  ],
+  "transport": "git sparse checkout of the repository at the pinned commit"
+ },
+ "works": {
+  "count": 1,
+  "units": "one file per work (per volume where the edition is in volumes)",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "tlg4013.tlg004.1st1K-grc1",
+    "title": "Simplicius, In Aristotelis Physicorum Libros Commentaria",
+    "text": "text/tlg4013.tlg004.1st1K-grc1.txt",
+    "lines": 1739
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-41/prepare_texts41.py): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; a numbered verse line carries its edition number as |N, so a play is cited by line straight from the text layer; a speaker stands as [speaker] <name>; the edition's page breaks stand as [p. N]. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "THE MOISTURE OF THOUGHT. Simplicius preserves Diogenes of Apollonia's own words on air and thought, the doctrine the Clouds gives Socrates (227–233) and Theophrastus's De sensibus 39–44 reports: the witness outside the Peripatos that the dispersal reading has to account for.",
+ "fetched": "2026-11-20",
+ "verified_loci": [
+  "Diogenes of Apollonia — 'Ἀπολλωνιάτης' (text/tlg4013.tlg004.1st1K-grc1.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 1739,
+ "ruling": "Lee Sharks, 2026-11-20 18:31 EST: \"lets bather all the texts weve touched on or even referred to between then and here for a ea-corpora seating\"; and: \"put the tragedians in there too while were at it\"; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "the evening of 2026-11-20: the Cicero and Sulla paste, the wills, Alexander, Antipater and Judaea, Theophrastus's On Kingship, the Clouds against the treatises, and The Thinkery and the Lyceum (groundwork note, draft v0.1)",
+  "for": "the one-corpus premise (Plato, Aristotle and Theophrastus as one corpus in two transmission streams) and the relations it was read against: the impiety charges, the Macedonian patronage of the school, the Alexander traditions of Judaea, and the comic and tragic stage the King Archon administered"
+ },
+ "spine": "EA-CORPORA-41 (#1792)",
+ "axn": "AXN:0D1A.ORIGINAL.🍃👁️🪐🔺♅♅",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "18570dd0a5a5bd1e239ace3d61604f4128cb753dddf5aa9f31ca513410217cbb",
+  "hex_of": "#1792 (AXN:0D1A.DATASET.⏳🫵🌒🧱🦅🌋)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-20"
+ }
+}

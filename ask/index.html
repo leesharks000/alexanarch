@@ -103,4 +103,5 @@ var bt=f.querySelector("button");bt.disabled=true;st.textContent="Sending…";
 fetch("/api/submit-transcript",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(o)}).then(function(r){return r.json().then(function(j){return [r.ok,j]})}).then(function(x){bt.disabled=false;
 if(x[0]){st.textContent=(x[1].status==="received"?"Received: ":x[1].status+": ");var a=document.createElement("a");a.href=x[1].url;a.textContent=x[1].path;st.appendChild(a);f.transcript.value="";f.file.value=""}
 else{st.textContent="Not sent: "+(x[1].error||"error")+".";dl(o)}}).catch(function(){bt.disabled=false;st.textContent="Not sent: the inbox could not be reached.";dl(o)})})})();
-</script></body></html>
+</script><script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script>
+</body></html>
