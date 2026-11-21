@@ -222,7 +222,7 @@
   ]
  },
  "as_of": {
-  "date": "2026-11-20",
+  "date": "2026-11-21",
   "registry_head": "bfe8323a2cad68778753ab1a21af87839c7ba0b70946026ef8a659774fe93379",
   "note": "Counts are dated. Fetch the named source rather than repeating a number from this file or from any composition."
  },
@@ -933,12 +933,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1794,
+     "value": 1795,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1531,
+      "ACTIVE": 1532,
       "SUPERSEDED": 248,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -954,7 +954,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 376
+      "undeclared": 377
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -1006,9 +1006,9 @@
     },
     "fanout": {
      "value": {
-      "gh_releases": 1787,
-      "indexnow": 1787,
-      "wayback": 1617
+      "gh_releases": 1794,
+      "indexnow": 1794,
+      "wayback": 1618
      },
      "source": "/data/fanout-state.json"
     },
@@ -1061,11 +1061,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1794,
+     "value": 1795,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1794,
+     "value": 1795,
      "source": "registry wiki_article"
     }
    },
@@ -1132,25 +1132,25 @@
    "scale_at_snapshot": "633 addresses, 813 observations, 2026-06-07 to 2026-10-12 (`/data/EA-WG-CAPTURES-01.json` v12.167; deposit #1676, whose title says 811 captures); 2,388 semantic addresses (1,743 subjunctive, 628 observed, 17 verified non-address). Surfaces include Google AI Overview, Google AI Mode, ChatGPT, Grok, Bing Copilot, Claude and Perplexity.",
    "measured": {
     "addresses": {
-     "value": 1218,
+     "value": 1234,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "observations": {
-     "value": 1422,
+     "value": 1440,
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "registry_version": {
-     "value": "12.789",
+     "value": "12.807",
      "source": "/data/EA-WG-CAPTURES-01.json"
     },
     "semantic_addresses": {
-     "value": 2903,
+     "value": 2918,
      "source": "/data/semantic-addresses.json"
     },
     "semantic_address_classes": {
      "value": {
       "subjunctive": 1736,
-      "observed_address": 1150,
+      "observed_address": 1165,
       "verified_non_address": 17
      },
      "source": "/data/semantic-addresses.json observation_class"
@@ -1227,7 +1227,7 @@
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
     "oai_withheld_by_doctrine": {
-     "value": 61,
+     "value": 62,
      "source": "scripts/build_oai_index.py"
     },
     "hf_dataset": {
@@ -1342,11 +1342,11 @@
    "scale_at_snapshot": "733 deposits define concepts; 333 carry falsification conditions; 35 lines of work in use in the registry.",
    "measured": {
     "defining_concepts": {
-     "value": 775,
+     "value": 776,
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 450,
+     "value": 451,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1431,13 +1431,13 @@
   {
    "surface": "#1676 title",
    "header": 811,
-   "data": 1422,
+   "data": 1440,
    "note": "deposited title vs live observation_count"
   },
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1794,
+   "data": 1795,
    "note": "stated deposit count vs registry"
   },
   {
