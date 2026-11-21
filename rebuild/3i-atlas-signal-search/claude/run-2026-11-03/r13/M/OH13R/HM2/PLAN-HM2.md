@@ -14,3 +14,9 @@ Frozen before any HM2 product, at the author's word (2026-11-21 15:02, "it came 
    - **Survives** if p_full ≤ 0.01, and in each half the comet cohort's score is at or above the 95th percentile of the non-empty false cohorts' scores in that half. A survivor is still not a source. It is the first feature of the search that its own selection does not account for, and it calls for a plan on independent data (another epoch or telescope). Nothing further is run on these data.
    - **Retires** otherwise: the selection explanation stands with resolution, and the original thirteen close.
 7. **What stays out.** No other lag, feed or frame is read; no injection is added; nothing is tuned after the score.
+
+## Amendment 1 (21 November 2026, before any score)
+
+The first run completed selection (comet cohort matches the catalogue: 13 coordinates; 1,346 false selections; 18 empty cohorts) and stopped in every scan on the edge guard `mid.min() > WW and mid.max() < N − WW`. Every window that tripped it is of kind `ref`: 2–4 per scan, always references (§2: within 1.5 kHz of a known line or 15 kHz of the edges), which §2 already removes from their cohorts and which `score()` never reads. No selection or sideband window tripped the guard in any of the six scans. No scan wrote output and nothing was scored.
+
+Change: `scan()` skips `ref` windows (one line in hm2.py). The guard is kept for every scored window. No rule of §§1–7 changes. The selection file from the first run (hm2_selections.json) is reused unchanged.

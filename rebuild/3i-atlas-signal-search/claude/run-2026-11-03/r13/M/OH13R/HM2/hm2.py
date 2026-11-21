@@ -41,7 +41,8 @@ def windows():
 def scan(s):
     import fdstream as F
     from common import N, DF, FC, NF, TF, W as WW, dm
-    WIN = windows(); T0 = json.load(open(os.path.join(HERE, "hm2_selections.json")))["T0_mjd"]; c = WW // 2; SR = WW * DF
+    WIN = [w for w in windows() if w[1] != "ref"]  # Amendment 1: reference windows are never scored; skip them
+    T0 = json.load(open(os.path.join(HERE, "hm2_selections.json")))["T0_mjd"]; c = WW // 2; SR = WW * DF
     ifl = np.array([F.track_f(s, f, dv, T0) for _, _, f, dv, _ in WIN]); mid = np.rint(np.median(np.rint(ifl), axis=1)).astype(int)
     off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
     tc = (np.arange(NF) + 0.5) * TF; carry = np.zeros(nw); acc = np.zeros((2, nw)); T00 = time.time()

@@ -933,12 +933,12 @@
    "scale_at_snapshot": "1,677 deposits before this one, no gaps (`/api/counts.json`). By status: ACTIVE 1,462 · SUPERSEDED 195 · CANONICAL 5 · WITHDRAWN 5 · DRAFT 4 · PRESERVED_AS_HISTORICAL_SEED 1 · undeclared 5. By declared text state: canonical_full_text 1,007 · recovered_full_text 353 · metadata_only 56 · attachment_only 1 · SEATED 1 · undeclared 259.",
    "measured": {
     "deposits": {
-     "value": 1795,
+     "value": 1796,
      "source": "/data/registry.json"
     },
     "by_status": {
      "value": {
-      "ACTIVE": 1532,
+      "ACTIVE": 1533,
       "SUPERSEDED": 248,
       "DRAFT": 4,
       "PRESERVED_AS_HISTORICAL_SEED": 1,
@@ -954,7 +954,7 @@
       "metadata_only": 58,
       "attachment_only": 1,
       "SEATED": 1,
-      "undeclared": 377
+      "undeclared": 378
      },
      "source": "/data/registry.json canonical_text_status"
     }
@@ -1061,11 +1061,11 @@
    "scale_at_snapshot": "1,677 record pages and wiki entries; body search over sharded full text (`/api/body-shards/manifest.json`).",
    "measured": {
     "record_pages": {
-     "value": 1795,
+     "value": 1796,
      "source": "/s/records/"
     },
     "wiki_entries": {
-     "value": 1795,
+     "value": 1796,
      "source": "registry wiki_article"
     }
    },
@@ -1227,7 +1227,7 @@
      "check": "ListIdentifiers metadataPrefix=oai_dc"
     },
     "oai_withheld_by_doctrine": {
-     "value": 62,
+     "value": 63,
      "source": "scripts/build_oai_index.py"
     },
     "hf_dataset": {
@@ -1342,11 +1342,11 @@
    "scale_at_snapshot": "733 deposits define concepts; 333 carry falsification conditions; 35 lines of work in use in the registry.",
    "measured": {
     "defining_concepts": {
-     "value": 776,
+     "value": 777,
      "source": "registry defines_concepts"
     },
     "falsification_conditions": {
-     "value": 451,
+     "value": 452,
      "source": "registry falsification_conditions"
     },
     "lines_of_work": {
@@ -1437,7 +1437,7 @@
   {
    "surface": "/api/network.json",
    "header": 1091,
-   "data": 1795,
+   "data": 1796,
    "note": "stated deposit count vs registry"
   },
   {
