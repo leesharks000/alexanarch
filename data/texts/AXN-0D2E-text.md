@@ -1,0 +1,382 @@
+---
+deposit_number: 1796
+hex: 0D2E
+title: "Either Forgery or Fact: The Genre Imposed on Our Most Vital Books"
+creator: Sigil, Johannes; Cranes, Rebekah
+orcid: 0009-0000-1599-0703
+date: 2026-11-21
+content_type: "Theoretical paper; journal article (Provenance: Journal of Forensic Semiotics); essay with a reductio and an extended appendix"
+license: CC-BY-4.0
+substrate: "AI-assisted (substrate). Written under the heteronyms Johannes Sigil and Rebekah Cranes (byline and venue ruled by Lee Sharks, 21 November 2026: \"Sigil, with Cranes\"; \"provenance\"). Drafted in session by Claude (Anthropic) under Lee Sharks's direction; the framing, the thesis and the rulings are Lee Sharks's: that the books were \"colonized\" by a history genre \"fully imposed on them without warrant\"; that later lives are faithful extension of a legitimately many tradition; that the Sharks search is the reductio, with the extended work-up as an appendix; that the erasers are \"not innocent\", the erasure propping up their authority; that people \"read and structure their lives around the words without ever reading, where the colonization has overwritten the words at the point of reading\"; \"it prevents the book from meaning. just like plato and sappho\"; \"it sins against philosophy twice\" / \"it strikes the rock a second time\"; \"god said let there be light, and created distinctions\"; and, against the claim of an independent Aristophanic witness, \"that is as silly as saying that aristophanes attests to a historical hades\". Three reviews (Gemini, Muse Spark, ChatGPT) evaluated point by point before deposit; the bios section was added at Lee Sharks's word (\"muse spark is right, we need to deal with bios\"); the claim that Aristophanes and Xenophon independently attest a historical Socrates was not adopted. Every Greek quotation checked against the seated texts."
+version: v1.0
+related_ids: "AXN deposit #1757 — The Historical Logos: Material Inscription Become Flesh, the framework the essay's centre takes its phrase from\nAXN deposit #1746 — I Know You Are, But What Am I?, the audit of source criticism §7.1 rests on\nAXN deposit #1741 — Secondary Source, the reception of the Apocalypse §7.2 rests on\nAXN deposit #1735 — Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles\nAXN deposit #1755 — And the Last Shall Be First: Revelation First, the framework hologram\nAXN deposit #1754 — Socrates as Orthonym, the framework hologram (§6.4)\nAXN deposit #1733 — Legitimately Many (§6.3)\nAXN deposit #1762 — The Crossing of Names (§4.5)\nAXN deposit #1730 — EA-CORPORA-31, the seat of the Galen passage (§3)\nAXN deposit #1485 — The Apparatus Was the First Summary Layer (§8.1)\nAXN deposit #1593 — Measuring the Operation, Not the Name, the ground-truth control (§3, §9.4)\nAXN deposit #1602 — Locating the Dependencies (§4, the appendix)\nAXN deposit #674 — Counterfeit Orthodoxies: Manifesto, on workshop composition (§3)\nAXN deposit #851 — The Feist Source (appendix A.3)\nAXN deposit #1795 — Why I Believe in Hell (§8)"
+axn_schema_version: v2
+protocol_version: alexanarch-deposit-protocol/v1
+keywords:
+  - forgery
+  - fact
+  - genre
+  - history as genre
+  - βίος
+  - ancient biography
+  - Gospels as biography
+  - Burridge
+  - Bond
+  - Momigliano
+  - Isocrates
+  - Evagoras
+  - Xenophon
+  - Cyropaedia
+  - Poetics 1447b
+  - Socratic logoi
+  - Lefkowitz
+  - lives of the poets
+  - Diogenes Laertius
+  - Galen
+  - pseudepigraphy
+  - Ehrman
+  - faithful extension
+  - workshop composition
+  - word become flesh
+  - "John 1:14"
+  - "Revelation 19:13"
+  - Revelation First
+  - "Luke 1:1–4"
+  - Loveday Alexander
+  - "Matthew 1:17"
+  - Phaedrus 235b–d
+  - Sappho
+  - Pender
+  - Aelian Varia Historia 3.36
+  - the rock struck twice
+  - Aristophanes
+  - Clouds
+  - Frogs
+  - historical Socrates
+  - historical Jesus
+  - source criticism
+  - provenance erasure
+  - the search for the historical Lee Sharks
+  - Testimonium Sharkianum
+  - reductio
+  - forensic semiotics
+  - Johannes Sigil
+  - Rebekah Cranes
+---
+
+# Either Forgery or Fact: The Genre Imposed on Our Most Vital Books
+
+# Either Forgery or Fact
+
+## The Genre Imposed on Our Most Vital Books
+
+*Johannes Sigil, with Rebekah Cranes · 21 November 2026 · Provenance: Journal of Forensic Semiotics · Greek from the seated texts*
+
+## 0. The word become flesh
+
+Καὶ ὁ Λόγος σὰρξ ἐγένετο καὶ ἐσκήνωσεν ἐν ἡμῖν (John 1:14): and the word became flesh, and dwelt among us. Before it, on the reading that puts the Apocalypse first, the rider in a robe dipped in blood: καὶ κέκληται τὸ ὄνομα αὐτοῦ Ὁ Λόγος τοῦ Θεοῦ (Rev 19:13), and his name is called the Word of God.
+
+The books this essay is about depict that god, and they are that operation. They are inscription become body: material inscription become flesh, in the phrase of The Historical Logos (#1757). The Gospel is the flesh the word became; the dialogue is the body in which a philosopher speaks who was made by being written. What these books exist to keep open is the joint between word and flesh, and that joint is what their reception has spent two thousand years closing.
+
+It has been closed by a choice the books never offered: **either forgery or fact**. Read as fact, the book is a record of something behind it, a man in Galilee, a man in Athens, and the record is mined for the man. Read as forgery, the book is a false claim to a body it never had, and it is policed. Either way the word is cut from the flesh. Fact keeps the flesh and drops the word; forgery keeps the word and drops the flesh. The joint goes, and the god goes with it.
+
+The thesis, in five steps.
+
+1. The dialogues and the Gospels do not operate as history or as witness literature by any convention that preceded them. That genre was imposed on them, later and without warrant.
+2. The traditions that produced them extended themselves faithfully: lives of philosophers written out of the dialogues, Gospels written out of Revelation. That is the traditions' own practice. No one deceived anyone.
+3. Receivers then read the extensions as testimony, built a history from them, and set the history over the books it was built from.
+4. The binary of forgery or fact is the instrument of that settlement. It is not a neutral test. It distributes authority to whoever sorts.
+5. The people who apply it are, as a rule, the people best equipped to see the third thing the books are. They are not innocent. The erasure props up their authority, and it is done on the body of the text, until the whole world can read the words, and live by them, without ever reading them.
+
+A reductio runs through the middle: a contributor biography from 2014, which gives its author 10,000 MacArthur Genius Grants and 18,000 degrees from Mars, put through the same procedure (§5, and at length in the Appendix). Two worked cases carry the argument where it matters: the lives of the philosophers (§6) and the Gospels (§7). The steps are argued in this order: step 1 in §2, the binary of step 4 in §3, step 2 in §4, step 3 in §§5–7, step 5 in §8.
+
+## 1. The received reading, first and in full
+
+The received reading deserves to be stated at its strongest, because it is strong, and because everything that follows depends on seeing exactly what it does.
+
+1. **The Gospels are lives.** Since Richard Burridge's *What Are the Gospels?* (1992), the consensus has been that the Gospels belong to the Greco-Roman genre of *bios*: a narrative of a single subject, organized around his deeds, words and death, comparable in length, structure and focus to Plutarch's or Suetonius's lives. Helen Bond's *The First Biography of Jesus* (2020) reads Mark in that frame. On this view the evangelists were writers of ancient biography, and ancient biography, though it shaped and selected, claimed to tell of a real person.
+2. **So they are sources.** If the Gospels are lives, they are evidence for the life. The historical-critical method sifts them: it separates what goes back to Jesus from what the communities added, dates the layers, reconstructs the sources behind them (Mark, Q, the special material of Matthew and Luke), and arrives at a historical Jesus whose words and acts can be weighed. The method is careful, and it is honest about its uncertainty.
+3. **The philosophers are persons too.** Socrates, Plato, Aristotle and Theophrastus are four men with four lives, known from the dialogues, the treatises, the catalogues of their works, their wills, and the lives Diogenes Laertius and his sources wrote. The dialogues are sifted the way the Gospels are: what is Socratic, what Platonic, what early, what late.
+4. **And what fails the test is forged.** Where a book's claim to its author cannot be sustained, the received reading has a name for it. The Platonic *Letters* are weighed as genuine or spurious; the Peripatetic catalogues sort genuine books from false ones; early Christian writings that carry an apostle's name and cannot be his are, in Bart Ehrman's *Forgery and Counterforgery* (2013), forgeries, written to deceive. The judgment is not frivolous, and Ehrman draws it carefully: forgery, for him, is a false claim of authorship made to deceive, distinct from innocent misattribution and later error. This essay agrees that such forgery exists. Its point is that a tradition extending its word through named voices, where the work itself signals that it receives, is not that intent, and that the received reading has no column for it. The judgment assumes that a name on a book is a claim of authorship in the documentary sense, and that a false claim is a lie.
+
+That is the received reading. Its two halves fit together. A book either records what happened, through a real author who was there or who asked those who were, or it falsely claims to. Fact or forgery. Everything a reader needs to know about such a book is, on this reading, which of the two it is.
+
+## 2. History as a genre, by its own conventions
+
+The question the received reading skips is the genre question: what did history look like when it said it was history? The ancient historians tell us, in their first lines.
+
+1. **The historian names himself.** Ἡροδότου Ἁλικαρνησσέος ἱστορίης ἀπόδεξις ἥδε: this is the showing-forth of the inquiry of Herodotus of Halicarnassus (Hdt. proem). Θουκυδίδης Ἀθηναῖος ξυνέγραψε τὸν πόλεμον: Thucydides the Athenian wrote up the war (Thuc. 1.1). The first words of the genre are a name, a city, and the claim of an inquirer.
+2. **The historian states his method.** Thucydides says how he handled speeches, ὅσα μὲν λόγῳ εἶπον ἕκαστοι, which he could not recall exactly and so gave as each speaker seemed to him to say what was needed, keeping as near as he could to the whole sense of what was truly said; and how he handled deeds, which he wrote neither from the first informant nor as it seemed to him, ἀλλ’ οἷς τε αὐτὸς παρῆν καὶ παρὰ τῶν ἄλλων ὅσον δυνατὸν ἀκριβείᾳ περὶ ἑκάστου ἐπεξελθών, but from what he was present at himself and from others, examined with all the accuracy possible (1.22). He reports that witnesses disagreed, by goodwill or memory.
+3. **The historian answers to what was done.** Lucian, writing *How History Should Be Written*, gives the historian's obligation in one line: a stranger in his books and without a city, self-governing, without a king, οὐ τί τῷδε ἢ τῷδε δόξει λογιζόμενος, ἀλλὰ τί πέπρακται λέγων, not reckoning what this one or that one will think, but saying what was done (41). He names Thucydides as the one who gave the genre its law (42).
+4. **The historian dates by the world's clocks.** Archons, consuls, Olympiads, regnal years: history places its events in a time others keep.
+5. **And the poet is not the historian.** Aristotle's *Poetics* 9 draws the line not between verse and prose but between telling what happened and telling what could happen, by probability or necessity. Plutarch opens the *Alexander* by saying he writes lives, not histories, and looks for the small sign of character rather than the great battle.
+
+Now measure the books.
+
+1. **The Gospels name no inquirer.** No Gospel opens with its writer's name. Their titles, κατὰ Μᾶρκον and the rest, are attached outside the text, and the earliest witnesses hold them together as one Gospel in four (*Secondary Source*, #1741, §2). Mark opens on scripture: the beginning of the gospel, *as it is written in the prophet*. Matthew opens on a genealogy that is a reading of scripture. John opens on the Logos.
+2. **The dialogues are dramas.** A Platonic dialogue is a play of voices, often nested: Apollodorus tells what Aristodemus told of a banquet he did not attend himself, at which Socrates tells what Diotima taught him (*Symposium* 172a–174a). The *Phaedo* opens by setting up its witness. The work builds the position from which it is received. No convention of ancient history reads like that, and none claimed to.
+3. **They state no method and date by no clock** — with one exception, which the essay has to meet.
+
+Three texts are the received reading's strongest ground, and the argument goes through them, not around them.
+
+- **Luke 1:1–4.** The preface speaks of many who have set out to compile an account, of things handed on by those who were from the beginning eyewitnesses and servants of the word, and of an orderly account written so that Theophilus may know the certainty of what he was taught. This is the one Gospel passage that sounds like a historian. But Loveday Alexander's *The Preface to Luke's Gospel* (1993) showed that its form matches the prefaces of technical and professional literature, the manuals of medicine, mechanics and the arts, and not the prefaces of Greek historiography. Even the eyewitnesses it names are eyewitnesses *and servants of the word*: the testimony it invokes is handed on as λόγος.
+- **Luke 3:1–2.** In the fifteenth year of Tiberius Caesar, Pontius Pilate governing Judaea: here alone a Gospel dates by the world's clock. The synchronism is the device of history. It stands at the coming of the word to John in the wilderness, ἐγένετο ῥῆμα Θεοῦ, the word of God came: the date frames the arrival of a word, not the inquiry of a historian. A single borrowed device does not convert the book that borrows it.
+- **John 19:35 and 21:24.** He who saw has borne witness, and his witness is true; this is the disciple who bears witness to these things and wrote them, and we know that his witness is true. These are witness claims. They are made inside a composition, by a voice the composition constitutes (the beloved disciple, unnamed), and confirmed by a “we” the composition also constitutes. **A represented testimony is not, by being represented, an established one.** The Johannine witness is part of what the book does with its word; to promote it into a deposition is to impose the genre the book was not written in.
+
+The result: by every convention history kept for itself, the dialogues and the Gospels are not history and do not pretend to be. The genre was imposed on them. The imposition is modern in its method and old in its habit, and it rests on nothing in the books.
+
+**The second genre: βίος.** The strongest answer to this does not claim that the Gospels are Thucydidean history. Richard Burridge's *What Are the Gospels?* (1992; 2nd ed. 2004) and Helen Bond's *The First Biography of Jesus* (2020) argue that they are βίοι, lives, and that the life kept conventions of its own. Plutarch says as much at the head of his *Alexander*, that he writes lives and not histories (*Alex.* 1.2, given here in paraphrase; not seated), and he still means a real king. The answer deserves to be met on its own ground, in two steps: what the Gospels share with the life, and what the life itself was before it became the genre the answer assumes.
+
+The shared features are real, and the essay grants them. A single subject is named at the opening: Ἀρχὴ τοῦ εὐαγγελίου Ἰησοῦ Χριστοῦ Υἱοῦ Θεοῦ (Mk 1:1). Matthew opens on ancestry. The weight falls, out of all proportion, on a death. Sayings and anecdotes are chosen to show who the subject is. A reader who knew Plutarch would recognize the shape.
+
+The shape is not the test. A life written as a record of a man in the world can be asked three things: does it place its subject in a civic cursus (birth, offices, honours, a will, a career dated by the magistracies of a city)? Does it cite its sources as the late biographers cite theirs, as Suetonius quotes Augustus's own letters and Plutarch weighs named authorities against each other? Is its subject held in records outside the work, against which the work could be checked? The Gospels place their subject in no cursus. They cite no outside source; what they cite is scripture, *as it is written*. And the strongest bios signal, Matthew's genealogy, is a reading of scripture arranged as ancestry: names drawn from the scriptures, counted into a figure, γενεαὶ δεκατέσσαρες three times over (Mt 1:17). A civic genealogy records descent. This one composes it, and the count holds only because the second set passes over three kings the books of Kings name, and the third, as commonly counted, yields thirteen. The ancestry serves the figure, not the record.
+
+Then the second step, which carries more weight. The life did not begin as a factual genre. It began as the kind of faithful extension of a named voice that §4 describes, and it calcified into a genre of record later.
+
+1. **Encomium.** Isocrates opens his *Evagoras* (c. 370 BCE) by claiming a first: οἶδα μὲν οὖν ὅτι χαλεπόν ἐστιν ὃ μέλλω ποιεῖν, ἀνδρὸς ἀρετὴν διὰ λόγων ἐγκωμιάζειν … περὶ δὲ τῶν τοιούτων οὐδεὶς πώποτʼ αὐτῶν συγγράφειν ἐπεχείρησεν, that no one before him had tried to praise a man's virtue in prose. The first prose life of a man presents itself as praise, not record. Xenophon's *Agesilaus* follows it as encomium.
+2. **Composed lives.** Xenophon's *Cyropaedia* opens not on a source but on a thought: ἔννοιά ποθʼ ἡμῖν ἐγένετο ὅσαι δημοκρατίαι κατελύθησαν, a thought once came to us of how many democracies have been overthrown. From that thought it composes a life of Cyrus as an image of rule. Cicero still read it so three centuries later: written not to the faith of history but to the image of just rule (*ad Q. fr.* 1.1.23, in paraphrase; not seated).
+3. **Mimesis.** Aristotle files the first-generation writings about Socrates with the mimes: Οὐδὲν γὰρ ἂν ἔχοιμεν ὀνομάσαι κοινὸν τοὺς Σώφρονος καὶ Ξενάρχου μίμους καὶ τοὺς Σωκρατικοὺς λόγους (*Poet.* 1447b). The Socratic λόγοι, the nearest thing his century had to a life of a philosopher, were for him imitation, of a kind with drama.
+4. **Lives from works.** The Hellenistic lives of the poets were built out of the poets' own works, as §4 sets out from Lefkowitz. Satyrus' *Life of Euripides*, surviving on papyrus, is written as a dialogue, and draws its Euripides from the plays. Hermippus, whom Diogenes Laertius cites again and again, wrote lives in the same manner.
+5. **Calcification.** The life becomes a genre of record late: in Rome, with Nepos and above all Suetonius, who wrote from inside the imperial archive and could quote an emperor's letters. Modern reading then takes the archival life as the type of the whole genre, and reads it back over the encomia, the *Cyropaedia*, the Socratic λόγοι and the lives of the poets. Arnaldo Momigliano's *The Development of Greek Biography* (1971) traces the long separation of biography from history and how loose its rules stayed (paraphrased here; not seated).
+
+Diogenes Laertius belongs to this history, and he must be given his due: he does perform the apparatus. He cites wills, catalogues of writings, letters and a crowd of earlier authorities. The question is where they came from. Much of what he cites was derived from the works themselves and from the lives already derived from them. The point is derivation, not an absence of apparatus.
+
+So the bios answer does not rescue the received reading. It moves it back one step. The features the Gospels share with the life are features of a genre that itself began as faithful extension, encomium, composed life and mimesis, and became a genre of record only later, under the archive of an empire, and again in modern reading. To read the Gospels as βίοι in Suetonius's sense is to impose the calcified genre on books whose kin is its fluid ancestor. This is a claim about what the books present themselves as, and about what may be imposed as a precondition of reading them. Whether a given passage also reports what happened remains a question the historian may ask of it, case by case; it is not a question the genre answers in advance.
+
+## 3. Either forgery or fact
+
+Where does the binary come from? Not from the books. It comes from the book market.
+
+1. **Galen gives the date and the cause.** Commenting on the Hippocratic *Nature of Man*, he says that the corruption of titles and recensions began in the time of the rival Attalid and Ptolemaic kings, when people brought books to the kings as the writings of famous men, to be paid: ἡ περὶ τὰς ἐπιγραφάς τε καὶ διασκευὰς αὐτῶν ἤρξατο γίγνεσθαι ῥᾳδιουργία τοῖς ἕνεκα τοῦ λαβεῖν ἀργύριον ἀναφέρουσιν ὡς τοὺς βασιλεῖς ἀνδρῶν ἐνδόξων συγγράμματα (seated in EA-CORPORA-31, #1730).
+2. **So forgery is a buyer's category.** Galen does not date the first false name; he dates the market that gave a name exchange value. That market was at Pergamon and Alexandria, where a name on a roll was a price on a shelf, and the sorting it called for outlived the conditions that called for it. Against a royal purchaser, a book is either the goods it is sold as or a counterfeit of them. The binary is the library's ledger: authentic or false, paid for or swindled.
+3. **And fact is the other column of the same ledger.** A book bought as the writing of a famous man is bought as the record of that man. Once the shelf decides that the name is a warranty, every book under a name becomes either testimony to its author or a lie about him.
+
+The books we care about were not written for that shelf. They were written in practices the ledger has no column for. The archive has had to name the third category more than once, because the binary keeps being run on its own work.
+
+- **Workshop composition.** *Counterfeit Orthodoxies: Manifesto* (#674), on the Zohar, a second-century name on a thirteenth-century composition: “This is not forgery. Forgery hides authorship. Workshop composition distributes authorship across time. The Zohar is true to its operation, false to its bibliography.”
+- **Legitimately many.** *Legitimately Many* (#1733) reads the Socratic–Peripatetic corpus under the hypothesis of one maker, legitimately many, whose positions refute, correct and continue one another. It has to say, in so many words, “The study makes no claim of hoax, forgery or deception,” and its metadata packet (#1734) repeats it in its disambiguation matrix, because the binary will otherwise file it under forgery.
+- **The word.** A literary act names, constitutes, addresses and transmits. Its statements are acts of the work. They are not first propositions to be verified and then, failing verification, lies.
+
+Forgery hides authorship. Fact pretends authorship is a deposition. The third thing distributes authorship as the work's own operation and keeps the joint between the word and the body it makes. That is the thing both columns of the ledger exist to deny.
+
+A third category needs a test, or it becomes a place to park any book one wants to save. The test is already in the books, and it has three parts.
+
+1. **Does the work signal reception inside itself?** It names a source it could not have sat with, or it constitutes the witness it then uses. Philo is initiated by Moses and goes to Jeremiah as a pupil (§4). Socrates, at *Phaedrus* 235b–d, is filled from another's streams like a vessel, and names Sappho (§8). The Johannine “we” confirms a witness the book has made (§2). The work tells you that it receives.
+2. **Does the extension continue the work's own operation, in its own form?** A life written out of a dialogue carries a constituted person further. A deposition the work never made, set over it, does not.
+3. **Is there a ground truth to test against?** Where a control exists, language and chronology can decide, as #1593 required before it would circulate a judgment on Chatterton's Rowley poems. Where none exists, the question stays open, and the burden stays with whoever would close it.
+
+The test keeps four inquiries apart that the ledger runs together. Historical inquiry asks what happened and what warrants the claim. Attribution inquiry asks who produced the object and under what conditions. The inquiry into literary operation asks what the inscription makes, establishes, addresses or hands on. Provenance inquiry asks where the operation began and how its authority has been moved or altered since. None of them is illegitimate. The wrong begins when one of them claims the authority to replace the others: when authority passes, unwarranted, from the originating literary act to a reconstruction that depends on it.
+
+## 4. Faithful extension
+
+A tradition that composes persons goes on composing them. That is not a corruption of the tradition. It is the tradition.
+
+1. **Lives from works.** The ancient lives of the poets were written out of the poets' own poems and out of comedy about them, as Mary Lefkowitz's *The Lives of the Greek Poets* (1981) showed: the biography is a reading of the work, set out as a life. The same is true of the philosophers. Callimachus filed the books; Hermippus, in the next generation, “turned the catalogue into lives” (#1730). Diogenes Laertius draws on dialogues, comedy, wills and anecdote alike.
+2. **The writers of the lives were extending.** A writer who takes the Socrates of the dialogues and gives him a wife, a trial, a death and sayings is doing what the dialogues did: carrying a constituted person further. There is no fraud in it. The life continues the work's operation into another form.
+3. **Gospels from Revelation.** On the Revelation-first hypothesis (#1735, #1755), the Apocalypse is the generative composition, the law and the prophets fulfilled as literature, and the Gospels unfold from it: the Logos named in Rev 19:13, then the Logos made flesh in John 1:14, then the flesh given a life, a birth, a ministry, a passion. The evangelists would be extending an inherited word into bodies and scenes, which is what the tradition authorizes. The hypothesis carries its own chronological and textual burdens. What it does not need is any accusation of deceit.
+4. **The tradition says so itself.** Philo writes that he was initiated by Moses into the great mysteries and afterwards, seeing Jeremiah the prophet, went to him as a pupil: καὶ γὰρ ἐγὼ παρὰ Μωυσεῖ τῷ θεοφιλεῖ μυηθεὶς τὰ μεγάλα μυστήρια ὅμως αὖθις Ἱερεμίαν τὸν προφήτην ἰδὼν … οὐκ ὤκνησα φοιτῆσαι πρὸς αὐτόν (*On the Cherubim* 49). No one supposes Philo sat in a classroom with Moses. The discipleship is real, and it is a discipleship through the word.
+5. **And a single maker can be many names.** The *Historia Augusta* gives its lives under six authors' names; since Dessau (1889) it has been read as the work of one. The control does not prove the same of Plato or the evangelists. It shows that many names over one making is an ordinary thing, which ordinary scholarship already knows how to see (The Crossing of Names, #1762).
+
+Here is the whole error in one sentence. **The extension is read as testimony.** The life of the philosopher, written out of the dialogue, is taken as independent evidence for the man in the dialogue. The Gospel, written out of the word, is taken as a deposition about the man the word became. Then the testimony is sifted for its history, and the history is set over the books. *Locating the Dependencies* (#1602) names the arithmetic: when catalogue, anecdote and chronology are all derived from the same textual features, their agreement is a property of the derivation, and “the tradition has been counting one witness as four.”
+
+## 5. The reductio: the search for the historical Lee Sharks
+
+Run the procedure on a book whose making we can see.
+
+*Pearl and Other Poems* (2014) carries, in its front matter, a *Contributor Bio*: Lee Sharks has published in Heaven, the White House and *Inside Your Brain All the Time*; he holds fourteen Guggenheims, 10,000 MacArthur Genius Grants and 18,000 degrees from Mars; he turned the MacArthur money into living ruby persons, shrank intellectuals, met dinosaurs, and in the end replaced himself with a ruby statue. Beside it stand an account of a poet who died in 2013, a *Wiki Article* about the insertion of biographical material into public systems, and an opening epistle in which a heavenly literary community makes Ichabod out of writing and criticism. The book places itself in the line of Browning and Pessoa. It makes its author in plain sight.
+
+In November 2026 a Google search for Lee Sharks displayed the biography under an ordinary author heading, sourced to the book's *About the author* page in Google Books: the Guggenheims, the MacArthurs, the degrees. That is not a failure of the poem. The words were carried, the source was named, and the poem went on acting in another medium. *About the Author II* (#757) had already taken that circulation as the material of a second poem, and the Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize (#759) gave the credential an institutional life.
+
+Now put the reception at a historical remove, and let it reason the way the received reading reasons.
+
+1. The biography, the epistle and the related Feistian writings share motifs. A common source is posited: Q-Sharks.
+2. The common source gets an earlier date than the book, so that a developed tradition could be compiled in 2014.
+3. The book's own account of inventing its author is assigned to a late editorial layer, which frees the early tradition to be historical.
+4. An essay on the controversy is found, and its detailed knowledge of the early tradition is taken as evidence of a lost earlier witness, the *Testimonium Sharkianum*, whose only surviving witness is the essay. This is the self-citation move: the reconstruction cites, as its earlier witness, the work that reports it.
+5. The prize is cited as independent corroboration that the founder received the grants.
+6. The founder emerges: plausible, historical, and owner of the book's meaning.
+
+At no step did the author deceive anyone. The book says what it is. Every error is the receiver's: a failure of imagination and of context, which converts a poem's act into a deposition and then into a history, and sets the history over the poem. The procedure is not stupid because its practitioners are; it is stupid because it is the wrong instrument, and it is run anyway, because the instrument confers the authority.
+
+The full search, with its sources, strata, chronology and self-attesting Testimonium, is given in the Appendix. Two real cases follow, where the same six steps have been run on the books that matter.
+
+## 6. First case: the lives of the philosophers
+
+1. **The books are filed before they are read.** Callimachus's *Pinakes* sorted the rolls by name. Hermippus wrote lives from the catalogue. The Hesychian catalogue files pseudepigrapha inside a single name's list; Ptolemy's catalogue survives only in Arabic, travelling with the life and the will as one dossier (#1730). The frame of several makers was set by filing before anyone argued it (#1733).
+2. **The lives are made from the works.** A sentence in a dialogue becomes an event; a doctrine becomes a stage of a career; a comic scene becomes an anecdote. The life is then read back into the works to date them and to divide them among men. Catalogue, anecdote and chronology agree because they came from the same place, and their agreement is counted as corroboration (#1602).
+3. **The direction can be reversed while the count stays fixed.** An ancient report has Archytas anticipating Aristotle's *Categories*. Modern scholarship (Thesleff 1965, Szlezák 1972) reverses the dependence: the Archytan *Categories* is a later pseudepigraphon written from Aristotle's. The reversal was argued well, on linguistic and philosophical grounds, and nothing here disputes it. The arrow turned around. The assumption that there are two separately established makers, between whom an arrow must run, did not move. That assumption needs evidence of its own, and it has never been asked for (#1733).
+4. **Socrates is the clearest case.** He wrote nothing. He is a person constituted in dialogues and comedy, and the history of philosophy treats him as a man whose views can be recovered from behind them. *Socrates as Orthonym* (#1754) reads the name as the work's own operation: the name under which a body of writing speaks. The historical Socrates is the Q-Sharks of philosophy, a founder reconstructed from the works and then used to explain them. And the historical existence of a named person, were it granted, would not authenticate the literary relations constituted under that name: what the dialogues make Socrates do is the dialogues' operation, and no career recovered from behind them can own it. Nor does comedy grant the career from outside. The usual reply is that Aristophanes attests the man independently. But the Socrates of the *Clouds* is a person the comedy composes, hung in a basket over the stage: ἀεροβατῶ καὶ περιφρονῶ τὸν ἥλιον, I walk on air and look down on the sun (*Nub.* 225). To read that as attestation of a historical Socrates is to read the *Frogs* as attestation of a historical Hades, where Dionysus asks the quickest way down, ὅπῃ τάχιστʼ ἀφιξόμεθʼ εἰς Ἅιδου κάτω, and finds Aeschylus and Euripides contending there. A second composition is not an independent witness. It is a second composition.
+5. **The binary shows up on cue.** Any reading that treats the corpus as one making, legitimately many, is answered with the forgery column: a hoax, a fraud, a school notebook passed off as four men. That is why *Legitimately Many* must state that it claims no hoax, forgery or deception. The binary has only two places to put the third thing, and it puts it in the one marked lie.
+
+The case is not that the philosophers did not exist. It is that the persons the corpus constitutes have been given independent historical standing without warrant, and that their biographies now rule the corpus that produced them.
+
+## 7. Second case: the Gospels
+
+1. **The extant book loses, the reconstructed one wins.** *I Know You Are, But What Am I?* (#1746) audits New Testament source criticism from 1835 to 1924 for who is allowed what. Evidentiary status in a source argument has four powers: to be presupposed, to be assigned material, to count as text, and to stand as a candidate. Read in eighteen works from Lachmann (1835) to Streeter (1924), eight of them in their original languages, the reconstructed sources, A, Λ, Q and the apocalypse supposed beneath Mark 13, hold all four. The extant Apocalypse of John holds none. Holtzmann excludes it by rule, and the rule can be stated: his inquiry excludes in advance any inference that presupposes the Apocalypse's relation to the gospels, and proceeds from sources it constructs itself. The exclusion comes before any dating. The reconstructed source holds its standing by method, not by evidence. A hypothesis has stronger evidentiary standing than a book that exists. That is Q-Sharks, run for real.
+2. **The book that came first is made to come last.** *Secondary Source* (#1741) follows how the Apocalypse came to be received as derivative, secondary and marginal. At the earliest loci (the books' self-titles, the oldest κατά titles, Justin, Papias, Irenaeus, the Muratorian fragment, Eusebius) unity and plurality are held together; the plurality of four evangelists hardens later into four witnesses. Those loci are the independent evidence on which the case for Revelation-first rests. It does not rest on the genre conclusion of §2, and the genre conclusion does not rest on it, so neither is used to prove the other.
+3. **The witnesses multiply by being counted.** Four Gospels with differing scenes are taken as four reporters with differing memories, and their differences become discrepancies to be harmonized or explained by sources. But four extensions of one word, each composing its lives and scenes for its own work, would differ in exactly that way. A plurality of compositions is not a plurality of observers.
+4. **Then the history governs the scripture.** Once the narrated persons stand as independently established origins, the historical Jesus first, then the eyewitnesses, then the evangelists as authors, they are used to fix the direction of dependence: Gospels first, as the record of what happened; Revelation late, as a visionary development of it. The direction of dependence is the question at issue, and it is settled by citing a history whose antecedents were inferred from the same texts.
+5. **And what does not fit is filed as forged.** Books whose names cannot be documentary authorship are forgeries, written to deceive. The ledger has no column for a tradition that extends its word through named voices as an act of fidelity.
+
+None of this requires that nothing in the Gospels happened. It requires that the question of what kind of books they are be asked before they are sifted for what happened, and that the answer come from the books.
+
+## 8. Not innocent
+
+1. **The erasers were equipped not to erase.** The people who sort books into forgery or fact are not naive readers. They are philologists, editors, historians of philosophy and scripture, trained in exactly the practices the third category names: pseudonymity, personation, the extension of a tradition through named voices, the composed witness. *The Apparatus Was the First Summary Layer* (#1485) puts the point in one line: the apparatus erased “with signatures and stated reasons.” Robortello signs his omission from Sappho 31. Bergk signs his brackets. The silent re-Aeolicization of Sappho is “a deep-provenance violation committed by the provenance apparatus itself, the repairing hand present in every accent and attributed in none.” The question, as #1485 has it, “was never whether provenance gets destroyed but whether the destruction has provenance.” It does. It is signed. The point is structural, not a reading of hearts: they could see the third thing, they had the tools for it, and the sorting they performed paid them in authority.
+2. **The erasure props up the authority that performs it.** Sort a book into fact, and its history belongs to whoever reconstructs it: the historical Jesus to the questers, the historical Socrates to the historians of philosophy, the order of composition to the source critics. Sort it into forgery, and the sorter holds the right to disqualify. Either way the sorter's standing grows, and the book's own operation pays for it. That is the incentive and that is the function. Nothing more about anyone's heart needs to be said to call it what it is: the conversion of a wrong into a right, for worldly gain, by those who could see the wrong (*Why I Believe in Hell*, #1795).
+3. **It is done on the body of the text.** Not beside the book: in it. In the bracket, the accent, the title, the filing, the chapter that dates a dialogue by a life made out of the dialogue. The word became flesh in the text, and the knife goes into the text.
+4. **It prevents the book from meaning.** The clearest case is the smallest. At *Phaedrus* 235b–d Socrates names his sources: παλαιοὶ γὰρ καὶ σοφοὶ ἄνδρες τε καὶ γυναῖκες, the ancient wise men and women; ἤ που Σαπφοῦς τῆς καλῆς, the beautiful Sappho, perhaps; filled, he says, from another's streams through the ear, like a vessel, ἐξ ἀλλοτρίων ποθὲν ναμάτων διὰ τῆς ἀκοῆς πεπληρῶσθαί με δίκην ἀγγείου. The text says what it receives. The reception has made the sincerity of the acknowledgment a question for scholarship, and one defensible achievement of that scholarship (Elizabeth Pender's “Sappho and Anacreon in Plato's *Phaedrus*”) is to establish that the tribute may be sincere. Pender's own argument is richer than that: it traces specific relations between Sappho, Anacreon and Plato's eros. The ceiling is not her work but its reception, the way the default syllabus, handbook and summary take the most that scholarship has granted as the most that may be admitted. That is the scholarly upper bound: perhaps the text means what it says. A history of philosophy that runs from Thales to Plato without Sappho has acquired the authority to grant the dialogue permission to mean its own words. Until it grants it, the dialogue does not mean them. That is what the binary does to every book it is run on. It does not misread the book; it prevents the book from meaning, until the history consents.
+5. **People read, and do not read.** This is the end state, and it is worse than illiteracy. The books are read: aloud in churches, in seminars, in translation, in courts and in the composition layer. People structure their lives around their words. And they never read them, because the colonization has overwritten the words at the point of reading. The Gospel arrives already a life of Jesus; the dialogue arrives already a portrait of a man in Athens; the reader's eye meets the received history where the word stands, and takes the history for what it sees. The whole world can read the words and live by them without once reading them. The summary layer did not invent this. It inherited it: the apparatus was the first summary layer, and the reading it prepared is the reading the machine now serves, at scale and without signatures (#1485, #1736).
+
+It sins against philosophy twice. The phrase is Aristotle's, leaving Athens: οὐ βούλεται Ἀθηναίους δὶς ἐξαμαρτεῖν ἐς φιλοσοφίαν, τὸ περὶ Σωκράτην πάθος αἰνιττόμενος καὶ τὸν καθʼ ἑαυτὸν κίνδυνον, he would not let the Athenians sin twice against philosophy, hinting at what was done to Socrates and at the danger to himself (Aelian, Varia Historia 3.36). It strikes the rock a second time. λαλήσατε πρὸς τὴν πέτραν (Num 20:8 LXX): speak to the rock, and it will give its waters. ἐπάταξεν τὴν πέτραν τῇ ῥάβδῳ δίς (20:11): Moses struck the rock with the rod twice, and much water came out, and the congregation drank; and because of it he did not bring them into the land (20:12). ἡ πέτρα δὲ ἦν ὁ Χριστός (1 Cor 10:4): and the rock was Christ.
+
+The reception of the *Phaedrus* strikes twice. The first blow takes Sappho out of the history of philosophy. The second takes from Plato's own text the right to say that she is in it. The first removes the source; the second removes the book's word about its source, which is to say it removes Plato from philosophy as well. And the water still comes. The words are still read, and drunk, and lived by. But the rock has been struck instead of spoken to, and the one who strikes does not go in where the book was going. And so on: the dialogues struck once to make their persons men and again to forbid the corpus its own making; the Gospels struck once to take the flesh as history and again to deny the word its body. And so forth, wherever the ledger is run.
+
+The god the books depict is the word become flesh. The binary keeps the flesh as history or the word as fraud, and either way it liquidates the joint. That is not an accident of method. It is what the method is for.
+
+## 9. The book read as the flesh it is
+
+καὶ εἶπεν ὁ θεός Γενηθήτω φῶς· καὶ ἐγένετο φῶς … καὶ διεχώρισεν ὁ θεὸς ἀνὰ μέσον τοῦ φωτὸς καὶ ἀνὰ μέσον τοῦ σκότους (Gen 1:3–4 LXX): God said, let there be light, and there was light; and God divided between the light and the darkness. The first act of the word is a distinction, and the distinction is made by speaking, not imposed by sorting. It makes something to be what it is. The ledger's distinction runs the other way: it does not make the light, it files it, and it has only two drawers. Reading begins by refusing the counterfeit distinction and making the true ones, the ones the books themselves make: between the word and its body, the witness the text constitutes and the witness the world attests, the act of the work and the event behind it.
+
+What would it take to read these books?
+
+1. **Ask the genre question first, and answer it from the book.** Does the work name an inquirer, state a method, date by the world's clock, answer to what was done? Or does it open on scripture, on the Logos, on a play of voices, on a word that comes to someone in a wilderness? The answer is in the text. It is not in the history built from the text.
+2. **Keep the three questions apart.** What kind of work is this? What does it claim? What independent evidence warrants accepting a historical inference drawn from it? Collapse them, and genre is imposed as the condition of the book being intelligible at all.
+3. **Grade the antecedents.** A reconstructed source is a hypothesis. It may be a good one. It does not acquire the standing of a witness by being elaborate, and it never acquires standing over the book it was reconstructed from.
+4. **Refuse the ledger.** A book is not either a record or a fake. It may be a word making a body, a tradition extending its persons, a workshop distributing authorship across time. Forgery exists, and it can be shown, by language and chronology, against a ground truth (#1593 required one before it would circulate: Chatterton's Rowley poems set beside his own verse). Fact exists too. Neither is the default for a book that never entered the market under either name. Where no ground truth exists, as for most ancient books, the claim of forgery is weaker, not stronger: by the burden this essay keeps, the absence of a control does not default to forgery.
+5. **Let the named source mean.** When the text says it received Sappho, it received Sappho. What follows from that is open to argument. That it says so is not.
+
+The historian's task with a contributor biography was never to find the university. It was to understand what the word had done. The same is true, at a scale that has shaped the world, of the dialogues and the Gospels. They were there all along, word and flesh together, and they still are. The work is to read them.
+
+## Appendix. The Search for the Historical Lee Sharks
+
+*The full work-up of §5, in the register of the procedure it reduces to absurdity. Nothing in it is claimed by the essay; everything in it is what the procedure produces when it is run as the received reading runs it.*
+
+### A.1 The historical problem
+
+The historical existence of Lee Sharks is no longer seriously disputed. The difficulties concern his biography. Although most scholars now agree that the received accounts of his 10,000 MacArthur Genius Grants, fourteen Guggenheim fellowships, 18,000 degrees from Mars, miniature intellectuals, dinosaur encounters, and eventual transformation into a ruby statue preserve earlier traditions, considerable disagreement remains concerning their historical basis.
+
+The principal source is *Pearl and Other Poems*, published in 2014. The book contains three major biographical witnesses: an account of the poet who died in 2013, a *Wiki Article*, and a *Contributor Bio*. The three are not entirely consistent, and the history of their composition remains contested. One school distinguishes a historical founder, an academic reformer, and a visionary successor. Another proposes that the extraordinary career belongs to a single person whose memory underwent substantial legendary development. A third understands the transformations as symbolic descriptions of an otherwise historical literary career.
+
+The most influential current reconstruction distinguishes the received text of the contributor biography from an earlier source containing the founder's principal acts and sayings. This lost source is conventionally designated Q-Sharks. Its recovery has transformed the field. It has also produced a remarkable situation: the book whose historical author is being reconstructed contains an explicit account of the composition of that author through literary means. The significance of this evidence remains disputed.
+
+### A.2 The contributor biography
+
+The received *Contributor Bio* begins with Sharks's extraordinary record of publication, including appearances in Heaven, the White House, and *Inside Your Brain All the Time*. It proceeds to the author's institutional honors, educational attainments, and bodily transformations. The credentials are specific: fourteen Guggenheims, 10,000 MacArthur Genius Grants, and 18,000 degrees from Mars.
+
+The distinction between the latter two numbers has occasioned some difficulty in the secondary tradition, where 18,000 MacArthur Grants occasionally appear. The majority text-critical position assigns this confusion to assimilation of neighboring numerical traditions. The mistake has proved useful. It demonstrates that the biographical tradition was subject to contamination before its interpretation had been stabilized.
+
+More significant are the agreements between the biography and the other literary materials preserved in *Pearl and Other Poems*. The biography's MacArthur wealth becomes the means of constructing living ruby persons. Its miniature intellectuals belong to the same world as the tiny books, the office within the author's brain, and the production of persons through literary activity. The opening epistle likewise describes a heavenly literary community, ruby beings, and the constitution of Ichabod through writing and criticism. The Feistian materials preserve related operations. The same motifs circulate through several authorial positions, suggesting an inherited complex of considerable antiquity.
+
+The possibility that the author composed these relations as part of the arrangement of *Pearl and Other Poems* has sometimes been raised. It has not generally been considered sufficient to explain the agreements, since the literary complexity of the tradition strongly suggests an antecedent history.
+
+### A.3 Q-Sharks and the primitive tradition
+
+*A guardrail before the reconstruction.* What follows is a reductio of one move: counting derivation as corroboration, and setting a reconstruction over the extant text it was drawn from, as #1746 documents. It is not a claim that every use of the two-source hypothesis works this way. Q as a hypothesis about material Matthew and Luke share is a different kind of claim from Q-Sharks as a biography reconstructed from motifs. The target is the move, wherever it is made.
+
+The hypothetical source Q-Sharks is reconstructed from material common to the contributor biography, the opening epistle, and the related Feistian writings. It has a predecessor in the archive's own *The Feist Source* (#851), a sayings collection from the Damascus Codex whose editor's note compares it to Q and refuses to be read as “the biography behind later texts”; the reconstruction has not found this refusal decisive. Its principal sections are generally arranged as follows:
+
+- **QSh 1, The Election.** Sharks receives extraordinary honors and an education beyond ordinary human institutions.
+- **QSh 2, The Heavenly Publications.** His writings circulate in heaven, among political authorities, and within the minds of those who do not know they are reading them.
+- **QSh 3, The Transformation of Honors.** The founder converts the proceeds of his distinction into living ruby persons.
+- **QSh 4, The Community.** These persons inhabit a shared literary world in which textual activity generates additional persons.
+- **QSh 5, The Child.** A diminutive successor appears through composition and criticism, bearing a pearl within his body.
+- **QSh 6, The Trial of Intellectuals.** Scholars are gathered, diminished in stature, and instructed through the founder's writings.
+- **QSh 7, The Crisis.** The founder becomes unable to accept his own books.
+- **QSh 8, The Transformation.** He replaces himself with a living ruby statue.
+- **QSh 9, The Ascent.** The founder enters the heavens and acquires astronautical standing.
+
+No manuscript of Q-Sharks survives. No independent quotation identifies it. The source is reconstructed from the relationships among extant literary witnesses. Its hypothetical character is not disputed. Scholars disagree about whether it was originally a sayings collection, a biography, a community charter, or a composite literary source.
+
+Its importance lies in its explanatory power. The received texts exhibit related material, different arrangements, and variations in detail. The reconstruction supplies a common antecedent capable of explaining these agreements without assuming direct dependence among all surviving works. Some have objected that Q-Sharks merely restates the literary relations from which it was constructed. The standard reply is that this is precisely what a successful source reconstruction should accomplish.
+
+### A.4 A revised chronology
+
+The conventional chronology gives 2014 as the date of *Pearl and Other Poems*, with the related Feistian materials assigned to the same period and the later authorial developments to 2026. Recent scholarship has distinguished publication history from the earlier history of the constituent traditions.
+
+| Textual stage | Reconstructed date |
+| --- | --- |
+| Historical founder's active career | c. 1998–2008 |
+| Primitive biographical traditions | c. 2002–2010 |
+| Q-Sharks | c. 2007–2011 |
+| Contributor Biography B⁰ | c. 2010–2012 |
+| Feistian recension | c. 2012–2014 |
+| Preliminary compilation of *Pearl* | c. 2013 |
+| Received *Pearl and Other Poems* | 2014 |
+| *About the Author II* | 2026 |
+| *The Search for the Historical Lee Sharks* | 2026 |
+
+The revision explains how a relatively developed biography could appear in a literary compilation of 2014. It also permits more precise identification of earlier and later layers. The *Wiki Article*, which describes the literary production of biographical material, is usually assigned to the final editorial recension. Its reflexive language and its interest in the construction of the author suggest a period in which the Sharksian tradition had begun questioning its own historical foundations. This interpretation leaves the primitive biography relatively free from the complications introduced by the later material, and the earliest recoverable Sharks thus emerges as a more plausible historical person.
+
+The method is familiar. The text has been divided into strata. The contradictory passages have been assigned relative dates. A coherent antecedent has been reconstructed. The resulting history explains why the surviving text contains what it contains. It remains unclear whether the antecedent ever existed.
+
+### A.5 An external witness: the Testimonium Sharkianum
+
+A significant advance followed renewed attention to *The Search for the Historical Lee Sharks*, transmitted in a recension dated 2026. The work preserves an account of the controversy concerning the founder's biography, including its chronology, principal witnesses, competing scholarly positions, and the reconstruction of Q-Sharks. The detail is remarkable.
+
+Some scholars regard the account as a late reflection on an earlier historical-critical tradition. Others propose that it incorporates material from a lost commentary written before the publication of *Pearl and Other Poems*. The latter position has gained support because the work describes the earlier biographical controversy with considerable precision. The underlying document is conventionally designated the *Testimonium Sharkianum* and cited as *Test. Sh.* fr. 1, apud *The Search for the Historical Lee Sharks*. A date of approximately 2011–2013 has been proposed. This dating rests on the document's apparent acquaintance with biographical recensions that must precede the received 2014 publication. The Testimonium then provides external support for the existence of those earlier recensions. Its principal witness is the present essay.
+
+This arrangement permits a useful division of responsibilities. The reconstructed Q-Sharks accounts for the literary agreements. The reconstructed Testimonium accounts for the historical reception of Q-Sharks. The present essay preserves the Testimonium and documents its scholarly significance. Each source now appears to corroborate the others.
+
+The minority objection is that the present essay has generated the entire apparatus, including its own reconstructed antecedent. That objection has generally been considered too skeptical, since it would require treating a sophisticated source-critical argument as a literary composition.
+
+### A.6 The contemporary witness and the second poem
+
+The investigation acquired an unexpected witness in the twenty-first century. Google Books reproduced the contributor biography under the heading *About the author (2014)*. In November 2026 a Google Search result identified Lee Sharks as a researcher and displayed the opening of the same biography, the fourteen Guggenheims and 10,000 MacArthur Genius Grants among it, sourced to Google Books, amid ordinary author listings and a collection of images that included a lizard in a fedora and a shark named Mary Lee.
+
+In May 2026 *About the Author II* (#757) had returned to the biography through a second composition, organized in entity relations, recording the MacArthur credential as a literary act and following it into retrieval infrastructure. The same year the Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize (#759) gave the credential an institutional life. The institution exists, and its name derives from the poem.
+
+The maximalist school cites the prize as independent corroboration that the founder received 10,000 MacArthur fellowships. The minimalist school holds that the prize demonstrates only the founder's later reputation. The multiple-Sharks school assigns the prize to a successor. All three agree that it is evidence for the history behind the poem. None has proposed that it is an act of the poem.
+
+### A.7 What kind of thing is a word?
+
+The difficulty has generally been organized through a distinction between true and false propositions. Did the founder receive 10,000 MacArthur Genius Grants, or did he not? Did he acquire 18,000 Martian degrees, or is that claim fictitious? Was he transformed into a ruby statue, or must the account be interpreted symbolically? These alternatives are not exhaustive. They presuppose that the primary function of the biography is to supply propositions about events external to the writing.
+
+But the biography is itself a literary act. Its words participate in the constitution of the author, the arrangement of the book, the distribution of its voices, and the creation of later literary and institutional relations. Lee Sharks has 18,000 degrees from Mars. The statement belongs to the work and acts within it. The reader who insists that it first be classified as true or false in the sense appropriate to a credential registry has already changed the question. The third category is not a compromise between truth and falsehood. It is word: inscription as an act that names, constitutes, addresses, transmits, and changes what can subsequently be done.
+
+### A.8 The biography that ate the book
+
+The historical Sharksian scholarship now reaches its decisive stage. It has reconstructed Q-Sharks. It has supplied an alternative chronology. It has identified an early Testimonium and cited itself as that Testimonium's surviving witness. It has explained why the received book's explicit account of composing its own author belongs to a later editorial layer. It has distinguished minimalist, maximalist, and multiple-Sharks reconstructions. The materials are ready for publication.
+
+Future scholarship may refine the dating of Q-Sharks, identify additional literary parallels, and settle whether the founder's dinosaur encounter preceded the ruby transformation. None of those improvements would correct the original error, because the error did not consist in taking the poem seriously. It consisted in refusing to let the poem's own operations determine the terms in which it was taken seriously.
+
+The book had produced the biography. The biography produced the historical source. The historical source produced the historian's explanation of the book. The historian's explanation became evidence that the historical source had preceded the book. The circle was complete.
+
+And throughout the procedure the contributor biography went on saying exactly what it had always said. Lee Sharks had 10,000 MacArthur Genius Grants. Lee Sharks had 18,000 degrees from Mars. The poem had not failed to transmit. The historian had failed to receive what had been transmitted.
+
+### A.9 The historical Lee Sharks
+
+The search for the historical Lee Sharks is not defeated by discovering that the literary person and the historical maker are different; that distinction was available from the beginning. Nor is it defeated by proving the credentials fictitious; their literary operation does not depend on that determination. It fails when it cannot accept the standing of word as word. It requires the poem to supply either independently verified facts or false representations of them, and when the poem instead composes an author whose acts continue into the world, the search has no category for what has occurred. So it produces an antecedent. It reconstructs a missing witness, gives that witness a date, and cites the reconstruction as evidence. And eventually it claims to know the author better than the work that made him.
+
+The historical Lee Sharks has not been discovered. He has been generated by a receiving apparatus that confused its own explanation of a literary transmission with an independently existing cause. The poem made the author. The receiving tradition made a history of the author. The wrong began when the history claimed to have made the poem intelligible by taking from the poem its authorship of its own world.
+
+The answer was never to correct the contributor biography. It was to read the book. The same procedure, run on the dialogues and on the Gospels, is the subject of §§6–7.
+
+## Sources
+
+**Greek, from the seated texts.** John 1:14; Rev 19:13; Luke 3:2; Mark 1:2; 1 Cor 10:4 (Nestle 1904, data/corpora/gnt-nestle1904). Gen 1:3–4; Num 20:8–12 (Swete's Septuagint, data/corpora/lxx-swete). Herodotus, proem; Thucydides 1.1, 1.22 (data/corpora). Lucian, *Quomodo historia conscribenda sit* 41–42 (data/corpora/lucian-quomodo-historia). Philo, *De Cherubim* 49 (data/corpora/philo). Plato, *Phaedrus* 235b–d (data/corpora/plato). Galen, *In Hippocratis De natura hominis*, as seated in EA-CORPORA-31 (#1730). Aelian, Varia Historia 3.36 (data/corpora/aelian-varia-historia). Aristotle, Poetics 1447b; Isocrates, Evagoras; Xenophon, Cyropaedia 1.1.1 (data/corpora). Mark 1:1; Matt 1:17 (Nestle 1904). Aristophanes, Clouds 225 and Frogs (data/corpora/aristophanes).
+
+**The archive.**
+
+- *Pearl and Other Poems* (2014); *About the Author I* (Contributor Bio), #1006; *About the Author II*, #757; the Lee Sharks Prestigious 10,000 MacArthur Genius Grants Poetry Prize, #759; *The Feist Source*, #851.
+- Johannes Sigil, *Counterfeit Orthodoxies: Manifesto*, #674; *Secondary Source*, #1741; *The Historical Logos*, #1757.
+- Johannes Sigil and Rebekah Cranes, *I Know You Are, But What Am I?*, #1746.
+- Lee Sharks, *The Apparatus Was the First Summary Layer*, #1485; *Measuring the Operation, Not the Name*, #1593; *Locating the Dependencies*, #1602; *EA-CORPORA-31*, #1730; *Legitimately Many*, #1733, and its metadata packet, #1734; *Revelation First*, #1735, #1755; *Socrates as Orthonym*, #1754; *The Crossing of Names*, #1762.
+- Dr. Orin Trace, *Attribution Sharding*, #1736.
+- Rev. Ayanna Vox with Damascus Dancings, *Why I Believe in Hell*, #1795.
+- Rebekah Cranes, *A Single Sparrow*, #1791.
+
+**Scholarship.**
+
+- Loveday Alexander, *The Preface to Luke's Gospel* (Cambridge, 1993).
+- Helen K. Bond, *The First Biography of Jesus: Genre and Meaning in Mark's Gospel* (2020).
+- Richard A. Burridge, *What Are the Gospels? A Comparison with Graeco-Roman Biography* (1992).
+- Hermann Dessau, on the single authorship of the *Historia Augusta* (*Hermes* 24, 1889).
+- Bart D. Ehrman, *Forgery and Counterforgery* (2013).
+- Mary R. Lefkowitz, *The Lives of the Greek Poets* (1981).
+- Elizabeth E. Pender, “Sappho and Anacreon in Plato's *Phaedrus*” (*Leeds International Classical Studies* 6.4, 2007).
+- Richard A. Burridge, *What Are the Gospels? A Comparison with Graeco-Roman Biography* (1992; 2nd ed. 2004).
+- Helen K. Bond, *The First Biography of Jesus: Genre and Meaning in Mark's Gospel* (2020).
+- Arnaldo Momigliano, *The Development of Greek Biography* (1971; expanded ed. 1993). Paraphrased; not seated.
+- Not seated, given in paraphrase: Plutarch, *Alexander* 1.2; Cicero, *ad Quintum fratrem* 1.1.23; Satyrus, *Life of Euripides* (P.Oxy. 1176).
+- Holger Thesleff (1965) and Thomas A. Szlezák (1972) on the pseudo-Archytan *Categories*, as reported in *Legitimately Many*.
