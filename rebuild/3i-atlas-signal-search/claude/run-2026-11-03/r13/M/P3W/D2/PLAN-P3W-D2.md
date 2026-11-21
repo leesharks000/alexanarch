@@ -9,3 +9,7 @@ PLAN-P3W-D (sha256 b9f5e852…) and p3wd.py (sha256 b0340dc8…) are used unchan
 3. **The aggregate count** is over the six target-slice runs: 36 family tests, about 1.8 expected at p ≤ 0.05.
 4. **Pre-registered follow-up.** P3W-D's one candidate, ON0017 Y+ at pair 217–293, is reported at full length in every scan, whatever the family maxima are.
 5. Validation is P3W-D's (accepted, validationD.json); it is not rerun. Everything else, including seeds of the form 31625 + 100·scan_index (slice index 0), gates and limits, is P3W-D's.
+
+## Amendment 1 (2026-11-21, before any full-length result was computed)
+
+p3wd2.py, which calls p3wd's run on the whole series, was killed for memory on every scan (no output was produced: run.log holds only the six FAIL lines). P3W-D's code holds the full series and its phasors in double precision several times over. lean.py computes the same thing block-wise in single precision: the same segments, phasors, masks, families, window W = 512, offsets drawn in the same order from the same seeds, the same p; at_pair and half_p at one pair need only two columns. It was checked against P3W-D's own 32-frame result for scan 0013 before use (check_lean.json): all six families give the same pair, the same score to six decimals and the same p. The full-length run, the read and the gates are lean.py's; p3wd2.py is kept as written, unused.
