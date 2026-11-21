@@ -1,0 +1,71 @@
+0 9
+50 481
+100 942
+150 1388
+200 1884
+250 2406
+300 2886
+350 3363
+true 13 catalogue True | false total 1346 empty 18
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                                                           ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 46, in scan
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+FAIL 0013
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                                                           ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 46, in scan
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+FAIL 0014
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                                                           ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 46, in scan
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+FAIL 0015
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                                                           ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 46, in scan
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+FAIL 0016
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                                                           ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 46, in scan
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+FAIL 0017
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                                                           ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 46, in scan
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN); assert mid.min() > WW and mid.max() < N - WW
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+FAIL 0018
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 95, in <module>
+    select(sys.argv[2]) if a == "select" else score() if a == "score" else scan(a)
+                                              ^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2.py", line 66, in score
+    R = {s: json.load(open(os.path.join(HERE, f"hm2_{s}.json"))) for s in SCANS}; WIN = R["0013"]["windows"]
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM2/hm2_0013.json'
