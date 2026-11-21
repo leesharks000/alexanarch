@@ -266,7 +266,7 @@ def build():
             + figure('What went wrong in the compositions', 'Defects recorded at intake on the archive-level compositions, as coded in the registry (a composition can carry several). The representation that accrues includes its failures.', f4, t4))
 
     nav = render_navbar(active='/ask/')
-    desc = f'General archival queries for alexanarch.org: {n_q:,} queries by time scale, heteronym, room and locus, journal and institution, discipline and subdiscipline, programme, theme and practice, each opening on ChatGPT; with figures from the Capture Registry on what the act of querying has accrued.'
+    desc = f'General archival queries for alexanarch.org: {n_q:,} queries by time scale, heteronym, room and locus, journal and institution, discipline and subdiscipline, programme, theme and practice, each opening on ChatGPT, Google or Perplexity; with figures from the Capture Registry on what the act of querying has accrued.'
     page = f'''<!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ask — Alexanarch</title><link rel="canonical" href="https://www.alexanarch.org/ask/"><meta name="description" content="{E(desc)}">
@@ -299,16 +299,16 @@ ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color
 form.tx label{{display:block;font-size:.85em;color:#52514e;margin:.6em 0}} form.tx textarea,form.tx input,form.tx select{{display:block;width:100%;margin-top:.25em;font:inherit;font-size:.95em;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--fg)}} form.tx textarea{{font-family:var(--mono);font-size:.85em}}
 .tx2{{display:flex;flex-wrap:wrap;gap:0 12px}} .tx2 label{{flex:1 1 180px}} form.tx label.file input{{border:none;padding:4px 0;background:none}}
 form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid var(--accent);border-radius:16px;background:var(--accent);color:#fff;cursor:pointer;margin-top:.4em}} form.tx button:disabled{{opacity:.5}}
-.roll{{margin:.3em 0 .7em}} .rb{{font:inherit;font-size:.82em;padding:3px 12px;border:1px dashed #9fb0c3;border-radius:14px;background:var(--surface);color:var(--accent);cursor:pointer}} .rb:hover{{border-style:solid}} .rb.big{{font-size:1em;padding:8px 20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:500}} .rb.big:hover{{background:#24507d}} .roll.rtop{{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.8em 1em;margin:.8em 0 1em}} .rq{{font-family:var(--mono);font-size:.8em;color:#2b2b2a;margin:.45em 0 .2em;overflow-wrap:anywhere}} .rq:empty{{display:none}} a.ra[hidden],.roll[hidden]{{display:none}}
+.sw{{margin:.2em 0 .6em;font-size:.82em;color:var(--muted,#667)}} .sw button{{font:inherit;padding:2px 10px;margin-left:4px;border:1px solid #9fb0c3;border-radius:12px;background:var(--surface);color:var(--accent);cursor:pointer}} .sw button[aria-pressed=true]{{background:var(--accent);color:var(--surface)}} .roll{{margin:.3em 0 .7em}} .rb{{font:inherit;font-size:.82em;padding:3px 12px;border:1px dashed #9fb0c3;border-radius:14px;background:var(--surface);color:var(--accent);cursor:pointer}} .rb:hover{{border-style:solid}} .rb.big{{font-size:1em;padding:8px 20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:500}} .rb.big:hover{{background:#24507d}} .roll.rtop{{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.8em 1em;margin:.8em 0 1em}} .rq{{font-family:var(--mono);font-size:.8em;color:#2b2b2a;margin:.45em 0 .2em;overflow-wrap:anywhere}} .rq:empty{{display:none}} a.ra[hidden],.roll[hidden]{{display:none}}
 ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45em 0}}
 .toc a{{display:inline-block;white-space:nowrap;margin-right:1em;color:var(--accent);font-size:.9em}}
 </style></head><body><div class="wrap">
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
-<p class="lede">Queries to the archive as a whole. Each button opens ChatGPT with the full query; hover to read it first.</p>
+<p class="lede">Queries to the archive as a whole. Each button opens the full query on the surface chosen at the top of the section: ChatGPT, Google (where an AI Overview may compose) or Perplexity; hover to read it first.</p>
 <div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">Any query on this page, or a prompt assembled fresh, its parts drawn at random (a figure or two, a form, sometimes a constraint); different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
 <details class="about"><summary>About this page, and what the queries draw</summary>
-<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT, signed out, with the query as written. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
+<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT by default, or on Google or Perplexity from the switch at the top of each section, with the query as written; the choice holds across the page and is remembered in this browser. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
 <p><b>What came back, 19&ndash;20 November 2026.</b> The figures are from the captures of those two days on ChatGPT, signed out: 57 from the page&rsquo;s standard queries and the first six from its Weird-ass prompts.</p>
 <ol class="about">
 <li>The standard queries return readings at the grain of the deposits. Asked for the month&rsquo;s most hostile works, the composer ranked eight and quoted each; every quotation is in its deposit (<a class="t" href="/captures/most-hostile-works-past-month-chatgpt-20261120/">capture</a>). Asked what the archive contributes to apocalyptic, it kept Revelation First apart from Revelation Early and read the framework&rsquo;s defeat conditions as the framework gives them (<a class="t" href="/captures/what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120/">capture</a>).</li>
@@ -340,6 +340,13 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 <p class="n" style="margin-top:2em">Built {TODAY.isoformat()} by scripts/build_ask_page.py from data/ask-queries.json and the Capture Registry. Dates in the queries are filled with today's date in your browser.</p>
 </div>
 <script>
+(function(){{var S={{chatgpt:["ChatGPT","https://chatgpt.com/?q="],aio:["Google AI Overview","https://www.google.com/search?q="],perplexity:["Perplexity","https://www.perplexity.ai/search?q="]}},cur="chatgpt";
+try{{var v=localStorage.getItem("ask-surface");if(S[v])cur=v}}catch(e){{}}
+function u(q){{return S[cur][1]+encodeURIComponent(q).replace(/%20/g,"+")}}
+function apply(){{document.querySelectorAll("a.q").forEach(function(a){{var q=a.title||"";if(!q||a.getAttribute("href")==="#")return;a.href=u(q)}});document.querySelectorAll("a.ra").forEach(function(a){{a.textContent="Ask "+S[cur][0]}});document.querySelectorAll(".sw button").forEach(function(b){{b.setAttribute("aria-pressed",b.dataset.sw===cur?"true":"false")}})}}
+window.AXQ={{u:u,apply:apply}};
+document.addEventListener("DOMContentLoaded",function(){{document.querySelectorAll("section").forEach(function(sec){{if(!sec.querySelector("a.q")&&!sec.querySelector(".roll"))return;var h=sec.querySelector("h2");if(!h)return;var d=document.createElement("div");d.className="sw";d.setAttribute("role","group");d.setAttribute("aria-label","Open the queries in");d.appendChild(document.createTextNode("Open in"));Object.keys(S).forEach(function(k){{var b=document.createElement("button");b.type="button";b.dataset.sw=k;b.textContent=S[k][0];d.appendChild(b)}});h.insertAdjacentElement("afterend",d)}});apply()}});
+document.addEventListener("click",function(ev){{var b=ev.target.closest(".sw button");if(!b)return;cur=b.dataset.sw;try{{localStorage.setItem("ask-surface",cur)}}catch(e){{}}apply()}});}})();
 (function(){{try{{var el=document.getElementById("rolldata");if(!el)return;var D=JSON.parse(el.textContent);
 function pk(a){{return a[Math.floor(Math.random()*a.length)]}}
 function ctx(){{var c=pk(D.constraints),h=pk(D.heteronyms),h2;do{{h2=pk(D.heteronyms)}}while(h2===h);
@@ -352,7 +359,7 @@ var W=fill(w,x),Dd=fill(d,x),ons=G.on.filter(function(t){{var m=t.match(/[{{](h2
 var q="Have "+W+" "+Dd+" "+fill(pk(ons.length?ons:G.on),x)+ext(G.extras,x,pair);return q.replace(/,+\\s*,/g,",").replace(/\\s+/g," ").trim()+"."}}
 function pert(x){{return fill(pk(G.answer_as),x)+ext(G.answer_extras,x,false)+"."}}
 function sfx(x){{return " "+D.suffix_synth+(x.used.constraint&&x.chk?" "+D.suffix_check:"")}}
-function show(box,q){{var p=box.querySelector(".rq"),a=box.querySelector(".ra");p.textContent=q;a.href="https://chatgpt.com/?q="+encodeURIComponent(q).replace(/%20/g,"+");a.title=q;a.hidden=false}}
+function show(box,q){{var p=box.querySelector(".rq"),a=box.querySelector(".ra");p.textContent=q;a.title=q;a.href=window.AXQ?window.AXQ.u(q):"https://chatgpt.com/?q="+encodeURIComponent(q).replace(/%20/g,"+");a.hidden=false}}
 document.querySelectorAll(".roll").forEach(function(b){{b.hidden=false}});
 document.addEventListener("click",function(ev){{var b=ev.target.closest("button[data-roll]");if(!b)return;var box=b.closest(".roll"),x=ctx(),q;
 if(b.dataset.roll==="new"||(b.dataset.roll==="any"&&Math.random()<0.35)){{q=gen(x)+sfx(x)}}
@@ -361,7 +368,7 @@ var a=pk(as),base=(a.title||a.getAttribute("data-q")).trim(),qi=base.indexOf("?"
 show(box,q)}})}}catch(e){{}}}})();
 (function(){{try{{var d=new Date(),m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;
-var f=q.split("{{date}}").join(t);a.href="https://chatgpt.com/?q="+encodeURIComponent(f).replace(/%20/g,"+");a.title=f;
+var f=q.split("{{date}}").join(t);a.title=f;a.href=window.AXQ?window.AXQ.u(f):"https://chatgpt.com/?q="+encodeURIComponent(f).replace(/%20/g,"+");
 a.querySelectorAll(".d").forEach(function(s){{s.textContent=t}})}})}}catch(e){{}}}})();
 (function(){{var f=document.getElementById("tx");if(!f)return;var st=document.getElementById("txs");
 try{{var n=new Date();f.date.value=n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0")}}catch(e){{}}
