@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/P3W/D2/p3wd2.py", line 45, in <module>
+    read() if sys.argv[1] == "read" else scan(sys.argv[1])
+    ~~~~^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/P3W/D2/p3wd2.py", line 22, in read
+    R = {s: json.load(open(os.path.join(HERE, f"p3wd2_{s}.json"))) for s in P.SCANS}; gates = {}
+                      ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/P3W/D2/p3wd2_0013.json'
