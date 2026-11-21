@@ -267,6 +267,7 @@ def es_block(es):
     credited party's standing. Rendered where an observation carries es; the coding itself stays in the data."""
     if not isinstance(es, dict):
         return ""
+    esc = html.escape
     pd = es.get("Pi_d") or {}
     rows = [("credit object", es.get("credit_object")), ("warranted source", es.get("warranted")), ("round coded", es.get("round")),
             ("α_T", es.get("alpha_T")), ("Π_d^w+ · Π_d^w= · Π_d^w−", " · ".join(str(pd.get(k)) for k in ("w+", "w=", "w-"))),
