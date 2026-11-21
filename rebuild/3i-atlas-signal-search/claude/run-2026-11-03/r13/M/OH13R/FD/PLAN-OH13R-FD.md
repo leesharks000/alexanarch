@@ -16,3 +16,7 @@ OH13R found one statistic the selection did not measure with an aggregate excess
    - The true-frame check must reproduce OH13R's D3 lag-2 X result (aggregate p ≤ 0.001), or the streaming implementation is wrong and the run stops.
    - If the false-drift selections give aggregate p ≤ 0.05 at d = 2, X: the excess belongs to the original detector's selection, and OH13R's aggregate is closed as a selection effect.
    - If they give p > 0.05: the excess is specific to the comet frame. That is not a lead (no candidate resolves); it is a reason for a new frozen plan with the full location treatment.
+
+## Amendment 1 (before any FD statistic was computed)
+
+fdstream.py failed on every scan without computing anything: `from common import *` brought in OH13R's `HERE`, so the script looked for fd_selections.json in the OH13R directory. One line restores the script's own directory after the import. A second defect sat behind it: the line defining the per-frame offsets and the window count (`off_f`, `nw`) had been folded into the end of a comment, so it would have raised a NameError; it is restored as its own line, with the same expression. Nothing else changes. Step 1 had run: the original detector reproduced the catalogue exactly at dv = 0 (13 clusters, the same rest frequencies) and found 150 clusters over the 40 false-drift offsets (mean 3.75, maximum 8), as RESULTS M1 and the catalogue's context record (3.75 ± 2.05, maximum 8).

@@ -4,6 +4,7 @@ import json, os, sys, time
 import numpy as np, scipy.fft as sf
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(HERE, ".."))
 from common import *                                     # OH13R's common (frozen): N, DF, FC, TF, NF, W, track, idx, vel_fn, t0, windows, dm
+HERE = os.path.dirname(os.path.abspath(__file__))           # amendment 1: common's HERE (the OH13R directory) had replaced this one
 LAGS = (1, 2, 4, 8, 16, 32); c = W // 2; SR = W * DF
 LINES_T = LINES
 
@@ -41,7 +42,8 @@ def track_f(scan, f_rest, dv, T0):
 def scan(s):
     WIN = fd_windows(); T0 = json.load(open(os.path.join(HERE, "fd_selections.json")))["T0_mjd"]
     ifl = np.array([track_f(s, f, dv, T0) for _, _, f, dv, _ in WIN])            # (nw, NF)
-    mid = np.rint(np.median(np.rint(ifl), axis=1)).astype(int)   # as common.track; off_f = (ifl - mid[:, None]) * DF; nw = len(WIN)
+    mid = np.rint(np.median(np.rint(ifl), axis=1)).astype(int)   # as common.track
+    off_f = (ifl - mid[:, None]) * DF; nw = len(WIN)
     assert mid.min() > W and mid.max() < N - W
     tc = (np.arange(NF) + 0.5) * TF; carry = np.zeros(nw); acc = np.zeros((2, nw, len(LAGS))); T00 = time.time()
     for j, X, Y in dm.frames(s, NF):
