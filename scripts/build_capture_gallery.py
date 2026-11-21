@@ -262,6 +262,27 @@ def para(text):
                    for b in re.split(r'\n\s*\n', str(text or '')) if b.strip())
 
 
+def es_block(es):
+    """CREDIT-SCALE ERASURE SKEW (codebook ES-CREDIT-v0, 2026-11-21): the numbers computed at intake from the coding, and each
+    credited party's standing. Rendered where an observation carries es; the coding itself stays in the data."""
+    if not isinstance(es, dict):
+        return ""
+    pd = es.get("Pi_d") or {}
+    rows = [("credit object", es.get("credit_object")), ("warranted source", es.get("warranted")), ("round coded", es.get("round")),
+            ("α_T", es.get("alpha_T")), ("Π_d^w+ · Π_d^w= · Π_d^w−", " · ".join(str(pd.get(k)) for k in ("w+", "w=", "w-"))),
+            ("credit-scale Ω", es.get("Omega") if es.get("Omega") is not None else es.get("Omega_note")),
+            ("permutation p", (f'{es.get("p_perm")}' + (f' (floor {es["p_floor"]})' if es.get("p_floor") else "")) if es.get("p_perm") is not None else None),
+            ("warranted source ranked last", es.get("warranted_rank_last"))]
+    dl = "".join(f'<dt class="g-meas">{esc(k)}</dt><dd class="g-meas">{esc(str(v))}</dd>' for k, v in rows if v not in (None, ""))
+    pr = "".join(f'<li><b>{esc(n)}</b> w {esc(str(v.get("w")))} · ρ {esc(str(v.get("rho")))} '
+                 f'(named {v.get("named")}, lead {v.get("lead")}, own item {v.get("own_item")}, undiminished {v.get("undiminished")})'
+                 + (f' · qualifier «{esc(str(v["qualifier"]))}»' if v.get("qualifier") else "") + '</li>'
+                 for n, v in (es.get("parties") or {}).items())
+    br = ('<div class="cap-tr-warn-line">CODING BREACH: ' + esc("; ".join(es.get("breaches") or [])) + '</div>') if es.get("breach") else ""
+    return (f'<div class="cap-tr-label">Erasure Skew <span class="cap-tr-warn">{esc(str(es.get("codebook") or ""))}, credit scale</span></div>'
+            f'<dl class="cap-tr-meta">{dl}</dl><ul class="cap-cites">{pr}</ul>{br}')
+
+
 def transcript_block(e, gallery=''):
     """THE FULL RECORD, collapsed by default and complete inside.
 
@@ -321,6 +342,8 @@ def transcript_block(e, gallery=''):
                      f'<ol class="cap-cites">{rows}</ol>')
     # THE SIGNIFICANT NULL (2026-11-19): a marked null carries no transcript; what it rests on renders in its place,
     # with the baseline that makes it significant linked entry by entry.
+    if not (e.get("observations") and len(e["observations"]) > 1):
+        parts.append(es_block(e.get("es")))
     nb = e.get("null_basis")
     if nb:
         base = "".join(f'<li><a href="/captures/{esc(b)}/">{esc(b)}</a></li>' for b in nb.get("baseline") or [])
@@ -426,6 +449,7 @@ def transcript_block(e, gallery=''):
                         + "".join(f'<li><i>not held:</i> {esc(str(h))}</li>' for h in _av.get("not_held") or []) + '</ul>'
                         + (f'<div class="cap-cn">reached: {esc(str(_av.get("reached")))}</div>' if _av.get("reached") else '')
                         + (f'<div class="cap-cn">{esc(str(_av.get("basis")))}</div>' if _av.get("basis") else ''))
+            _in += es_block(_o.get("es"))
             if _o.get("transcript"):
                 _ans, _ = split_source_strip(_o["transcript"], _o.get("cite_list") or [])
                 _in += ('<div class="cap-tr-label">Machine text, verbatim</div>'

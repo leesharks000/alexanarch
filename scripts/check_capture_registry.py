@@ -63,6 +63,16 @@ def main():
             pd = o.get("per_dim_pending") or (e.get("per_dim_pending") if o.get("obs_id") == e.get("obs_id") else None)
             un["unrecorded" if not pd else ("breach" if pd.get("breach") else "reason")] += 1
     print("per-dim: %(unscored)d observation(s) unscored · %(reason)d with a stated reason · %(breach)d breach(es) · %(unrecorded)d with no pending record" % un)
+    # ERASURE SKEW AT INTAKE (2026-11-21, ES-CREDIT-v0). Recorded, never a failure: observations coded, screened indicated and
+    # left uncoded with a stated reason, breaches (no reason, or a coding that does not reconstruct its answer).
+    es = {"coded": 0, "coding_breach": 0, "pending_reason": 0, "pending_breach": 0}
+    for e in E:
+        for o in (e.get("observations") or [e]):
+            if isinstance(o.get("es"), dict):
+                es["coded"] += 1; es["coding_breach"] += bool(o["es"].get("breach"))
+            elif isinstance(o.get("es_pending"), dict):
+                es["pending_breach" if o["es_pending"].get("breach") else "pending_reason"] += 1
+    print("erasure skew: %(coded)d coded (%(coding_breach)d coding breach(es)) · %(pending_reason)d indicated and pending with a reason · %(pending_breach)d pending breach(es)" % es)
     for f in fails[:40]: print("✗", f)
     print(f"check_capture_registry: {len(E)} entries · {len(fails)} failure(s) · schema {SCHEMA.name} · base {base}")
     return 1 if fails else 0

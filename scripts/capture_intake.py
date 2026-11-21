@@ -301,6 +301,31 @@ def seat_flat(draft, registry, schema):
     else:
         draft["per_dim_pending"] = None
     if missing: raise Refused("ADMIT refused — missing: %s (transcript, date, surface, auth are the contract; q, ev, s, d are the record; originator says whose entity it is)" % missing)
+    # ERASURE SKEW AT INTAKE, AN OPTION WITH A SCREEN (operator, 2026-11-21 13:47: "add it as an intake option"; 13:52: "add a check for erasure
+    # skew calculation appropriateness at intake - not every capture needs erasure skew calculated"). Codebook ES-CREDIT-v0
+    # (rebuild/capture-registry/erasure-skew/, frozen). Every draft is screened and carries es_applicability {verdict, codebook, reasons}.
+    # A draft that carries an `es` coding is computed here (alpha_T, Pi_d, credit-scale Omega, p), whatever the screen says; a coding that
+    # does not reconstruct its answer is recorded as a breach inside es, never refused. A draft screened INDICATED without a coding carries
+    # es_pending {since, reason, breach} as per_dim_pending does; the reason may be that the screen misfired. Laws record.
+    sys.path.insert(0, str(ROOT / "scripts")); import erasure_skew as _es
+    draft["es_applicability"] = _es.applicability(draft)
+    if draft.get("es"):
+        _coding = draft["es"]; _r = _es.compute(_coding, draft.get("transcript")); _r["coding"] = _coding; draft["es"] = _r
+        draft["es_pending"] = None
+        print("   ES         %s: alpha_T %s · Pi_d^w+ %s · credit-scale Omega %s (p %s, floor %s) · warranted source last: %s%s" % (
+            _r["codebook"], _r["alpha_T"], _r["Pi_d"]["w+"], _r.get("Omega"), _r.get("p_perm"), _r.get("p_floor"), _r.get("warranted_rank_last"),
+            ("  BREACH " + "; ".join(_r["breaches"])) if _r["breach"] else ""))
+    else:
+        draft["es"] = None
+        if draft["es_applicability"]["verdict"] == "indicated":
+            import datetime as _dt1
+            _ep = dict(draft.get("es_pending") or {})
+            _ep = {"since": _ep.get("since") or _dt1.date.today().isoformat(), "reason": _ep.get("reason") or None}
+            _ep["breach"] = _ep["reason"] is None; draft["es_pending"] = _ep
+            print("   ES         screened INDICATED and not coded; " + ("reason stated: " + _ep["reason"] if _ep["reason"] else "BREACH: no reason stated") + ". Seated with es_pending.")
+        else:
+            draft["es_pending"] = None
+            print("   ES         screened %s: %s" % (draft["es_applicability"]["verdict"].upper(), draft["es_applicability"]["reasons"][0]))
     # THE SCALAR IS DERIVED (2026-10-20, ruling: "yes lets correct those 38 and patch intake"). per is the share of per_v's
     # four units lost, never a figure entered beside it: 38 observations seated 2026-10-16 to 10-19 stored a hand-entered
     # scalar that disagreed with their vector. A disagreeing figure is replaced and recorded as per_corrected.
@@ -318,7 +343,7 @@ def seat_flat(draft, registry, schema):
             # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
             # at the mint of #1611; fixed here at intake so it is never missing again (2026-09-15).
             obs["slug"] = draft.get("slug") or f"{e['slug']}-{draft['date'].replace('-', '')}"
-            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_corrected", "per_dim", "per_dim_pending", "availability"):
+            for k in ("surface", "cite_list", "archive_controlled_cites", "reading", "findings", "analysis", "sf", "transcript_class", "transcript_complete", "transcript_read", "per", "per_note", "longitudinal_priors", "per_v", "per_corrected", "per_dim", "per_dim_pending", "availability", "es", "es_applicability", "es_pending"):
                 if draft.get(k) is not None:
                     obs[k] = draft[k]
             # 2026-09-21: an entry seated before observations existed has no `observations` list, and its root

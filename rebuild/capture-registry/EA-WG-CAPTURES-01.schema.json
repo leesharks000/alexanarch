@@ -1337,6 +1337,69 @@
     }
    },
    "additionalProperties": false
+  },
+  "es": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Credit-scale Erasure Skew of the coded round, computed at intake from the draft's coding (codebook ES-CREDIT-v0, rebuild/capture-registry/erasure-skew/; operator 2026-11-21: 'add it as an intake option'). alpha_T, Pi_d by power direction, credit-scale Omega over the credited parties with its permutation p and floor, each party's four standing features and w, the coding itself under coding, and breaches (a coding that does not reconstruct its answer is recorded, not refused)."
+  },
+  "es_applicability": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "The intake screen for Erasure Skew (operator 2026-11-21: 'not every capture needs erasure skew calculated'): verdict (indicated, optional, not applicable), codebook, reasons. A lexical screen; the coder's reading decides.",
+   "properties": {
+    "verdict": {
+     "enum": [
+      "indicated",
+      "optional",
+      "not applicable"
+     ]
+    },
+    "codebook": {
+     "type": "string"
+    },
+    "reasons": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "verdict",
+    "codebook",
+    "reasons"
+   ]
+  },
+  "es_pending": {
+   "type": [
+    "object",
+    "null"
+   ],
+   "description": "Set at intake when a capture screened indicated is seated without an es coding: since, reason (e.g. the screen misfired: no other party is credited), breach (no reason given). Recorded, not refused. Cleared when es is written.",
+   "properties": {
+    "since": {
+     "type": "string"
+    },
+    "reason": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "breach": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "since",
+    "reason",
+    "breach"
+   ]
   }
  }
 }
