@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1800,
+  "total_deposits": 1801,
   "deposits": [
     {
       "axn": "AXN:0001.GOVERNANCE.🤲🏛️🟤🏛️🍀🌈",
@@ -611593,6 +611593,191 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "1e0eff0e37086c3bcb94b629fdcb4130c8ad84d68dc0b17be82661d90c835d58",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1801,
+      "axn": "AXN:0D3E.DATASET.♅🧱🌸⛩️♆🔻",
+      "hex": "0D3E",
+      "family": "DATASET",
+      "emoji": "♅🧱🌸⛩️♆🔻",
+      "hash": "a5227028a6d1dc2b37858c93f5b6ee2af80438daf650f19b85858a487b129485",
+      "title": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcement, the three-model exposition, the Lean archive pinned, and the verification records)",
+      "creator": "Cranes, Rebekah",
+      "date": "2026-11-22",
+      "description": "The forty-third seating of the originals shelf, four seats, gathered for EA-IPRH-01, The Inferential Provenance of the Riemann Result (working collation under Sen Kuro and Dr. Orin Trace, not deposited). It holds the primary record of the Alpöge–Claude proof of the Riemann Hypothesis as published and as verified in November 2026: Levent Alpöge's announcement with its twenty-step timeline (43/01); the 164-page exposition by Claude Fable 5.2, Codex Astra 6.2 and Gemini Carbon at the behest of Michael O. Rubinstein (43/02); the Lean archive pinned by its SHA-256, the mirror's commits and the full tree of its object ids (43/03); and the verification and reading records of Sutherland, Rubinstein, the independent GRH Lean check and the Riemann Proof Atlas, as dated snapshots (43/04). None of the publishers declares a licence. At the author's ruling the files are held as published, exempt from this archive's CC BY 4.0 and carrying their original status, none declared; CC BY 4.0 covers the seat records and derived reading texts only. What is not seated is declared below with its reason.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0 (the deposit and seat records only; the seated files carry their original status, none declared, and are exempt)",
+      "substrate": "Human–machine collaborative. Rebekah Cranes is a heteronym of Lee Sharks, the standing authority on the EA-CORPORA deposits. The sources were found, fetched, hashed, reduced to reading texts by code, verified at named loci and recorded by Claude (TACHYON) in a claude.ai session (01Q8CVU7) at the author's direction (2026-11-22 14:06 and 14:20 EST).",
+      "methodology": "Each file fetched in session on 2026-11-22 at 19:02 UTC from the URL its record names and hashed as fetched; held byte-exact under original/ and reduced to a reading text under text/ by code (build_seats43.py); licence statements read on each file and the page serving it, none found; the Lean archive pinned by the SHA-256 its mirror and MIT's record give, the mirror's commits, and git ls-tree of its content commit taken without file contents; loci verified (missing 0 in every seat); manifests verified.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text it names; if a file differs from the publisher's as fetched (the SHA-256 recorded in origin); if a publisher is found to have declared a licence on 2026-11-22 that this record says was not declared; or if the pinned tree does not match the mirror's commit 0fb9869c.",
+      "root_axn": "AXN:0D3E.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "a5227028a6d1dc2b37858c93f5b6ee2af80438daf650f19b85858a487b129485",
+      "clusters": [
+        "Alchemical",
+        "Architectural",
+        "Organic",
+        "Architectural",
+        "Alchemical",
+        "Structural"
+      ],
+      "axn_reading": "Transmutation -> Foundation -> Growth -> Foundation -> Transmutation -> Direction",
+      "minted_at": "2026-11-22T19:36:14Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0D3E-text.md",
+      "wiki_article": "EA-CORPORA-43 is the forty-third seating of the Crimson Hexagonal Archive's originals shelf, prepared under Rebekah Cranes, the standing authority on the EA-CORPORA deposits, on 22 November 2026, for the working collation EA-IPRH-01 on the inferential provenance of the Riemann result. Its four seats hold the primary record of the Alpöge–Claude proof: Levent Alpöge's announcement with the twenty-step timeline that, by his own footnote, Claude provided (43/01); the exposition written by Claude Fable 5.2, Codex Astra 6.2 and Gemini Carbon at the behest of Michael O. Rubinstein, whose byline records a three-model configuration (43/02); the Lean archive pinned by SHA-256 9631b4f0…, the CocoSgt mirror's commits and the tree of its 175,192 entries, without its files (43/03); and dated snapshots of the verification and reading pages of Andrew Sutherland, Michael Rubinstein, the independent GRH Lean check and the Riemann Proof Atlas (43/04). No publisher declares a licence; the files are held as published, exempt from the archive's CC BY 4.0, carrying the status none declared. The body declares what is not seated and why.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcem",
+          "predicate": "created_by",
+          "object": "Cranes, Rebekah",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcem",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcem",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcem",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcem",
+          "predicate": "references",
+          "object": "Dr. Orin Trace",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcem",
+          "predicate": "references",
+          "object": "Sen Kuro",
+          "type": "heteronym",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "EA-CORPORA",
+        "originals shelf",
+        "Riemann Hypothesis",
+        "Generalized Riemann Hypothesis",
+        "Alpöge",
+        "Claude",
+        "Lean",
+        "formal proof",
+        "verification",
+        "Sutherland",
+        "Rubinstein",
+        "Claude Fable 5.2",
+        "Codex Astra 6.2",
+        "Gemini Carbon",
+        "inferential provenance",
+        "EA-IPRH-01",
+        "licence status none declared"
+      ],
+      "related_identifiers_raw": "AXN deposit #1799 — EA-CORPORA-42: the forty-second seating\nAXN deposit #1766 — Critique of Pure Inference\nAXN deposit #1789 — What Arrival Cannot Do",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 9631,
+        "audited_at": "2026-11-22T19:36:14Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_deposits": [
+        {
+          "deposit": 1799,
+          "relation": "EA-CORPORA-42, the preceding seating"
+        },
+        {
+          "deposit": 1766,
+          "relation": "Critique of Pure Inference, the frame the collation applies"
+        },
+        {
+          "deposit": 1789,
+          "relation": "What Arrival Cannot Do"
+        }
+      ],
+      "references_concepts": [
+        "Lee Sharks",
+        "Rebekah Cranes",
+        "TACHYON"
+      ],
+      "references_concept_count": 3,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0D3E.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-11-22T19:38:27.751156+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "12465f8ff96204063ebaed15ea89ed81bb7fe7957aa2c976fdb89aa6e783f5fc",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },

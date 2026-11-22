@@ -38,6 +38,30 @@ Human–machine collaborative. Rebekah Cranes is a heteronym of Lee Sharks, the 
 
 EA-CORPORA, originals shelf, Riemann Hypothesis, Generalized Riemann Hypothesis, Alpöge, Claude, Lean, formal proof, verification, Sutherland, Rubinstein, Claude Fable 5.2, Codex Astra 6.2, Gemini Carbon, inferential provenance, EA-IPRH-01, licence status none declared
 
+### Related Identifiers
+
+AXN deposit #1799 — EA-CORPORA-42: the forty-second seating
+AXN deposit #1766 — Critique of Pure Inference
+AXN deposit #1789 — What Arrival Cannot Do
+
+### Version
+
+v1.0
+
+### Methodology
+
+Each file fetched in session on 2026-11-22 at 19:02 UTC from the URL its record names and hashed as fetched; held byte-exact under original/ and reduced to a reading text under text/ by code (build_seats43.py); licence statements read on each file and the page serving it, none found; the Lean archive pinned by the SHA-256 its mirror and MIT's record give, the mirror's commits, and git ls-tree of its content commit taken without file contents; loci verified (missing 0 in every seat); manifests verified.
+
+### Falsification Conditions
+
+A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text it names; if a file differs from the publisher's as fetched (the SHA-256 recorded in origin); if a publisher is found to have declared a licence on 2026-11-22 that this record says was not declared; or if the pinned tree does not match the mirror's commit 0fb9869c.
+
+### Body
+
+# EA-CORPORA-43 — The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof
+
+The author asked for the gathering on 2026-11-22. At 14:06: "full copies where non contradicted by licensing or ethics but exemption from cc by and carrying the original licensing status, even if that is none declared; declared records only for everything else." At 14:20: "yup lets seat riemann sources and prep the ea corpora deposit and tll spine and card." At 14:34: "deposit".
+
 ## Seat 43/01: Levent Alpöge, the announcement of the Riemann Hypothesis proof, with the twenty-step timeline (remark.pdf, 4 pp., 20 November 2026)
 
 *The announcement and its timeline*
