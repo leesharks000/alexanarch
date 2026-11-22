@@ -1,0 +1,80 @@
+C03 X ON ratio 1.208 top 110 run 3 | OFF ratio 1.2724 top 109 | exp 92.6 | ON halves 1.2088 1.2071
+C03 Y ON ratio 1.1392 top 92 run 3 | OFF ratio 1.1091 top 77 | exp 92.6 | ON halves 1.1327 1.1457
+C04 X ON ratio 1.2085 top 102 run 3 | OFF ratio 1.1343 top 88 | exp 92.6 | ON halves 1.2119 1.2051
+C04 Y ON ratio 1.1096 top 82 run 2 | OFF ratio 1.1244 top 89 | exp 92.6 | ON halves 1.0585 1.1605
+C05 X ON ratio 1.125 top 105 run 3 | OFF ratio 1.1203 top 87 | exp 92.6 | ON halves 1.1156 1.1343
+C05 Y ON ratio 1.0975 top 87 run 3 | OFF ratio 1.1405 top 91 | exp 92.6 | ON halves 1.1088 1.0862
+C06 X ON ratio 1.1274 top 80 run 2 | OFF ratio 1.1626 top 94 | exp 92.6 | ON halves 1.1428 1.112
+C06 Y ON ratio 1.2157 top 102 run 3 | OFF ratio 1.1868 top 98 | exp 92.6 | ON halves 1.2113 1.2202
+C07 X ON ratio 1.1538 top 94 run 2 | OFF ratio 1.1836 top 91 | exp 92.6 | ON halves 1.1563 1.1514
+C07 Y ON ratio 1.1316 top 95 run 2 | OFF ratio 1.2057 top 86 | exp 92.6 | ON halves 1.1586 1.1047
+C08 X ON ratio 1.2001 top 103 run 2 | OFF ratio 1.0675 top 84 | exp 92.6 | ON halves 1.2512 1.1492
+C08 Y ON ratio 1.199 top 101 run 5 | OFF ratio 1.0576 top 88 | exp 92.6 | ON halves 1.1728 1.2251
+C09 X ON ratio 1.1999 top 125 run 5 | OFF ratio 1.1206 top 109 | exp 119.0 | ON halves 1.1362 1.2635
+C09 Y ON ratio 1.1179 top 111 run 2 | OFF ratio 1.178 top 119 | exp 119.0 | ON halves 1.1513 1.0845
+C10 X ON ratio 1.2913 top 117 run 3 | OFF ratio 1.1385 top 95 | exp 92.6 | ON halves 1.2626 1.32
+C10 Y ON ratio 1.1557 top 102 run 3 | OFF ratio 1.1015 top 86 | exp 92.6 | ON halves 1.1882 1.1232
+C11 X ON ratio 1.2736 top 120 run 3 | OFF ratio 1.1043 top 89 | exp 92.6 | ON halves 1.1742 1.3728
+C11 Y ON ratio 1.1316 top 86 run 2 | OFF ratio 1.1598 top 109 | exp 92.6 | ON halves 1.141 1.1223
+C12 X ON ratio 1.1618 top 108 run 4 | OFF ratio 1.1923 top 95 | exp 92.6 | ON halves 1.1768 1.1469
+C12 Y ON ratio 1.1961 top 97 run 3 | OFF ratio 1.154 top 100 | exp 92.6 | ON halves 1.2583 1.134
+C13 X ON ratio 1.2293 top 116 run 3 | OFF ratio 1.237 top 117 | exp 119.0 | ON halves 1.2774 1.1813
+C13 Y ON ratio 1.2109 top 127 run 4 | OFF ratio 1.2601 top 117 | exp 119.0 | ON halves 1.1386 1.2831
+{
+"0013_X": {
+"C08-C11 pairwise r": [
+0.031,
+0.021,
+0.02,
+0.098,
+0.02,
+0.049
+],
+"mean": 0.04,
+"C03,C05,C12,C13 pairwise r mean": 0.012
+},
+"0013_Y": {
+"C08-C11 pairwise r": [
+-0.064,
+-0.044,
+-0.043,
+0.014,
+-0.05,
+0.014
+],
+"mean": -0.029,
+"C03,C05,C12,C13 pairwise r mean": 0.0
+},
+"0014_X": {
+"C08-C11 pairwise r": [
+0.029,
+0.062,
+-0.012,
+-0.076,
+-0.036,
+0.009
+],
+"mean": -0.004,
+"C03,C05,C12,C13 pairwise r mean": -0.008
+},
+"0014_Y": {
+"C08-C11 pairwise r": [
+0.006,
+-0.022,
+0.008,
+0.003,
+0.024,
+0.024
+],
+"mean": 0.007,
+"C03,C05,C12,C13 pairwise r mean": -0.009
+}
+}
+C08 X ON per-bin rank [0.88, 0.88, 0.0, 0.88, 0.25, 0.5, 0.12, 0.75, 1.0, 0.88, 0.5, 0.88, 0.88, 0.0, 0.38, 0.5, 0.0, 0.25, 0.75, 0.0, 0.75, 0.88, 0.62, 1.0, 0.0, 0.75]
+C08 X OFF per-bin rank [1.0, 0.12, 0.0, 0.12, 0.0, 0.88, 0.12, 0.88, 0.12, 0.25, 0.25, 0.12, 0.5, 0.12, 1.0, 1.0, 0.25, 0.0, 0.25, 0.88, 0.75, 0.62, 0.12, 0.62, 0.62, 0.0]
+C09 X ON per-bin rank [1.0, 0.5, 0.0, 0.33, 0.83, 0.17, 0.17, 0.17, 0.0, 0.33, 0.0, 0.67, 0.33, 0.83, 1.0, 0.83, 0.5, 0.83, 0.83, 1.0, 0.67, 1.0, 1.0, 0.5, 0.0, 0.0]
+C09 X OFF per-bin rank [0.67, 0.33, 0.33, 0.67, 0.5, 0.83, 0.17, 0.0, 0.0, 0.67, 0.0, 0.33, 0.0, 0.17, 0.67, 1.0, 0.17, 0.33, 0.67, 0.5, 0.33, 0.83, 0.67, 0.83, 0.17, 0.17]
+C10 X ON per-bin rank [0.75, 1.0, 0.12, 0.75, 1.0, 1.0, 0.75, 0.5, 1.0, 0.25, 1.0, 0.25, 0.12, 0.75, 0.12, 1.0, 0.62, 1.0, 1.0, 0.38, 1.0, 0.62, 0.12, 0.62, 0.88, 0.88]
+C10 X OFF per-bin rank [0.5, 0.25, 0.5, 0.25, 0.12, 0.5, 0.5, 1.0, 0.62, 0.75, 0.12, 0.25, 0.25, 1.0, 0.25, 0.12, 0.88, 0.5, 0.62, 0.62, 0.12, 0.5, 0.38, 1.0, 0.0, 0.62]
+C11 X ON per-bin rank [0.62, 0.25, 0.75, 0.0, 0.62, 0.25, 0.12, 1.0, 0.88, 1.0, 0.62, 0.25, 1.0, 0.88, 0.88, 0.12, 1.0, 0.38, 0.75, 0.75, 1.0, 0.0, 1.0, 0.88, 1.0, 1.0]
+C11 X OFF per-bin rank [0.75, 0.5, 0.12, 0.12, 0.62, 0.0, 0.25, 0.75, 0.62, 0.75, 0.5, 0.88, 0.62, 0.75, 0.38, 0.12, 0.25, 0.62, 0.0, 1.0, 0.5, 1.0, 0.0, 0.5, 0.25, 0.38]
