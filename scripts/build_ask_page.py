@@ -195,8 +195,8 @@ def build():
         items = [o for o in OUT['items'] if o['slug'] in have]
         orows = ''.join(f'<div class="row"><span class="rl"><a class="t" href="/captures/{E(o["slug"])}/">{E(o["label"])}</a></span><span class="bs"><span class="n">{E(o["shape"])}.</span> '
                         f'<button type="button" class="rb" data-outline="https://www.alexanarch.org/captures/{E(o["slug"])}/">Compose from this outline</button></span></div>' for o in items)
-        books = ''.join(f'<option{" selected" if r == "VIII" else ""}>{r}</option>' for r in ('I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'))
-        sec.append('<section id="outlines"><h2>The distributed epic, from an outline</h2><p class="n">Outlines of the Crimson Hexagon distributed epic, in different shapes, each a composition seated in the Capture Registry. Choose a book and an outline; the prompt sends the composer to the outline&rsquo;s page and the materials around it, and asks for swerves.</p>'
+        books = ''.join(f'<option{" selected" if r == OUT.get("default_book", "II") else ""}>{r}</option>' for r in ('I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI', 'XVII', 'XVIII', 'XIX', 'XX', 'XXI', 'XXII', 'XXIII', 'XXIV'))
+        sec.append('<section id="outlines"><h2>The distributed epic, from an outline</h2><p class="n">Outlines of the Crimson Hexagon distributed epic, in different shapes, each seated in the Capture Registry with the composition that proposed it. Choose a book and an outline; the prompt sends the composer to the outline&rsquo;s page and the materials around it, and asks for swerves.</p>'
                    f'<div class="roll outl" hidden><label class="n">Book <select class="ob">{books}</select></label>{orows}'
                    '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>'
                    f'<script type="application/json" id="outldata">{json.dumps(OUT["template"], ensure_ascii=False).replace("</", "<\\/")}</script></section>')
