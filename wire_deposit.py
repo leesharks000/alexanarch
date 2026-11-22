@@ -1285,6 +1285,46 @@ def _known_names_in(s):
     return seen
 
 
+
+def playback_html(d):
+    """AUDIO PLAYBACK (operator, 2026-11-21 21:54): "the audio gets embedded on the record page ... play button,
+    nothing that changes the axn." 22:00: "somewhere prominent and visually pleasing". Recordings of machine
+    read-alouds of the record (e.g. Chrome's AI playback), held in the registry's `playback` list and served
+    beside the page; presentation only — the canonical file, and so the AXN, is untouched."""
+    esc = lambda x: htmlmod.escape(str(x)) if x else ''
+    pbs = [p for p in (d.get("playback") or []) if isinstance(p, dict) and p.get("file")]
+    if not pbs:
+        return ""
+    def mmss(x):
+        x = int(round(float(x or 0))); return f"{x // 60}:{x % 60:02d}"
+    out = ['<style>.pb{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#0a7c6a 0%,#1a3a5c 100%);color:#fff;'
+           'border-radius:14px;padding:12px 16px;margin:14px 0 16px;box-shadow:0 2px 10px rgba(26,58,92,.18)}'
+           '.pb button{flex:none;width:48px;height:48px;border-radius:50%;border:none;background:#fff;color:#1a3a5c;cursor:pointer;'
+           'display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.2)}'
+           '.pb button:focus-visible{outline:3px solid #ffd27a;outline-offset:2px}.pb .pbm{flex:1;min-width:0}'
+           '.pb .pbt{font-weight:600;font-size:.95em;line-height:1.3}.pb .pbs{font-size:.74em;opacity:.85;line-height:1.4;margin-top:2px}'
+           '.pb .pbr{height:4px;background:rgba(255,255,255,.28);border-radius:2px;margin-top:8px;cursor:pointer;position:relative}'
+           '.pb .pbr i{position:absolute;left:0;top:0;bottom:0;width:0;background:#fff;border-radius:2px}'
+           '.pb .pbc{flex:none;font-family:var(--mono);font-size:.78em;opacity:.9}.pb a{color:#fff;text-decoration:underline}</style>']
+    for i, p in enumerate(pbs):
+        src = esc(p["file"]); lab = esc(p.get("label") or "Listen")
+        sub = " · ".join(f'<span style="white-space:nowrap">{x}</span>' for x in (esc(p.get("source") or ""), esc(p.get("recorded") or "")) if x)
+        out.append(f'<div class="pb" role="group" aria-label="{lab}"><button type="button" aria-label="Play {lab}" data-pb="{i}">'
+                   '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path class="pbi" d="M6 3.5v13l11-6.5z" fill="currentColor"/></svg></button>'
+                   f'<div class="pbm"><div class="pbt">{lab}</div><div class="pbs">{sub} · <a href="{src}" download style="white-space:nowrap">download</a></div>'
+                   f'<div class="pbr" data-pbr="{i}"><i></i></div></div><div class="pbc" data-pbc="{i}">{mmss(p.get("duration_s"))}</div>'
+                   f'<audio preload="none" src="{src}" data-pba="{i}"></audio></div>')
+    out.append('<script>(function(){var P="M6 3.5v13l11-6.5z",Q="M5 3h3.5v14H5zM11.5 3H15v14h-3.5z";'
+               'function f(t){t=Math.floor(t||0);return Math.floor(t/60)+":"+("0"+t%60).slice(-2)}'
+               'document.querySelectorAll(".pb").forEach(function(b){var a=b.querySelector("audio"),k=b.querySelector("button"),ic=b.querySelector(".pbi"),'
+               'r=b.querySelector(".pbr"),bar=r.querySelector("i"),c=b.querySelector(".pbc"),tot=c.textContent;'
+               'k.onclick=function(){document.querySelectorAll(".pb audio").forEach(function(o){if(o!==a)o.pause()});a.paused?a.play():a.pause()};'
+               'a.onplay=function(){ic.setAttribute("d",Q);k.setAttribute("aria-label","Pause")};a.onpause=function(){ic.setAttribute("d",P);k.setAttribute("aria-label","Play")};'
+               'a.ontimeupdate=function(){if(a.duration){bar.style.width=(100*a.currentTime/a.duration)+"%";c.textContent=f(a.currentTime)+" / "+f(a.duration)}};'
+               'a.onended=function(){bar.style.width="0";c.textContent=tot};'
+               'r.onclick=function(e){if(!a.duration){a.play();return}var x=r.getBoundingClientRect();a.currentTime=a.duration*Math.max(0,Math.min(1,(e.clientX-x.left)/x.width))}})})();</script>')
+    return "".join(out)
+
 def regenerate_static_page(d, eidx, registry=None):
     _kernel_html = ''
     """Regenerate the static HTML page for a deposit with full enrichment.
@@ -2493,6 +2533,7 @@ def regenerate_static_page(d, eidx, registry=None):
 {rel_block}
 <h1>{esc(d["title"])}</h1>
 <div style="font-size:.85em;color:#777;margin-bottom:10px">{esc(d["creator"])} · {esc(d["date"])} · {esc(d.get("content_type",""))}{f' · <span style="color:var(--accent);font-weight:500">{esc(version)}</span>' if (version and (version != 'v1.0' or series_id)) else ''}</div>
+{playback_html(d)}
 {_text_ptr[1]}
 {_author_html}
 <a style="display:inline-block;background:var(--teal);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0" href="/data/deposits/AXN-{hex_id}.md" download>↓ Download MD</a> <a style="display:inline-block;background:var(--accent);color:#fff;padding:6px 14px;border-radius:4px;font-size:.82em;text-decoration:none;margin:6px 0 6px 4px" href="/s/records/{dn}/AXN-{hex_id.zfill(4)}.pdf">↓ PDF</a>
