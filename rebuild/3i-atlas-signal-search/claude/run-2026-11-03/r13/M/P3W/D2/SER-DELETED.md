@@ -1,0 +1,1 @@
+2026-11-22 18:05 EST: ser_*.npy (the P3W-D2/D3/D4 series, 3.3 GB, hashed in SER.sha256) deleted to free disk for HM13; P3W-D2–D4 are closed (no lead). Regenerable from the public voltages with lean.py.
