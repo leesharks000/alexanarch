@@ -1,0 +1,192 @@
+GRH Lean Check
+
+An independent check of the Lean proof of RH and GRH
+
+Checking the Lean 4 formalization announced by Levent Alpöge and Claude on 20 November 2026. All checks are complete.
+
+← Michael Rubinstein's page on the Alpöge/Claude proof (paper explaining the proof for the Riemann zeta function, and other verifications) · GitHub repository (scripts, logs and the source of this page)
+
+All checks complete
+
+Where things stand. All 175,187 modules compile with no errors; #print axioms reports only the three standard axioms for all five main theorems; and a replay of every module through the Lean kernel accepted all 175,187 with no rejections. An independent kernel written in Rust (nanoda) then checked the 1,484,729 declarations the five theorems depend on, with no typechecker errors.
+
+At 10:10 UTC (21 Nov): all four checks are complete. nanoda finished at 10:06:58 UTC: 1,484,729 declarations checked, no typechecker errors.
+
+Checklist
+
+Done Source matches the author's release
+
+Downloaded the 14 parts listed in the footnote of remark.pdf twice, on two machines, and checked their SHA-256 hashes ( SHA256SUMS.parts ). The assembled lean.tar.gz (239,275,554 bytes) has SHA-256 9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc .
+
+Done The theorem statements say what they should
+
+Read by hand; see below . The RH statement is Mathlib's own RiemannHypothesis . The GRH statements live in a 16-line file that imports only Mathlib.
+
+Done The dependencies are genuine upstream releases
+
+Lean v4.33.1 (commit 819816b2 ), an official release of 2026-08-21. Mathlib is pinned at 0df444a3 , the upstream commit "chore: bump toolchain to v4.33.1".
+
+Done Static scan for unproved assumptions and kernel bypasses
+
+No axiom , sorry , admit , native_decide , implemented_by , extern , unsafe , opaque , or unchecked declaration-adding calls in 175,187 files ( audit.txt , audit.sh ). The few custom tactics and commands have been read and all go through the kernel; details below . A text scan is only a first filter. The authoritative checks are the next three rows.
+
+Done Full compile of all 175,187 modules
+
+175,187 of 175,187 modules compiled with Lean v4.33.1 against Mathlib's official prebuilt cache; 0 errors. Finished 2026-11-21 01:47:44 UTC, 3 h 18 min after the distributed build started. SHA-256 of the resulting Main.olean : 9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad . Method below .
+
+Done #print axioms for the five main theorems
+
+Each of the five theorems depends only on propext , Classical.choice and Quot.sound . No sorryAx , no Lean.ofReduceBool , nothing else. Full output: axioms.out , produced by Axioms.lean .
+'riemannHypothesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'riemannZeta_eq_zero_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LFunction_ne_zero_of_half_lt_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LFunction_eq_zero_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LFunction_eq_zero_re_of_isPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+Done Kernel replay of every module (Lean's leanchecker routine)
+
+Result: 175,187 of 175,187 modules replayed, 0 rejected by the kernel. Finished 2026-11-21 05:24:21 UTC. Summary: replay_summary.txt . The set of modules with an OK line is identical to the set of compiled modules. 63 chunks were stopped part-way by the servers' out-of-memory daemon and their unfinished modules were run again; none contained a rejection. For each module, load its imports and re-add every declaration the module defines through the Lean kernel. This is independent of how the .olean files were produced. The stock leanchecker binary resolves each module named on its command line by walking all the .olean files, which was impractically slow for 175,187 modules. So we call its replay function replayFromImports , copied verbatim from src/LeanChecker.lean at v4.33.1 (checked by diff), from a 20-line driver that reads an explicit module list: checklist/Main.lean . Work is spread across servers in chunks of 150 modules ( check_worker.py ). Each module is counted as checked only if the driver prints OK for it.
+
+Done Dependency closure of the main theorem
+
+Starting from riemannHypothesis , we collected every declaration its statement and proof refer to, recursively. Result: 1,478,198 declarations. This tells which of the archive's statements the final theorem actually rests on: many statements in the 175,187 files are parallel or earlier formulations that it never uses. Script: DepCheck.lean . Outputs for the names we asked about: run 1 , run 2 , run 3 , run 4 , run 5 . In run 4 we also asked about sorryAx , the constant Lean inserts for an unfinished proof: it is not among the 1,478,198 declarations. Each run takes 26 minutes and 93 GB of memory.
+
+Done Independent kernel: nanoda (Rust)
+
+Export the five main theorems together with everything they depend on, using lean4export v4.33.0, and check the export with nanoda (commit 0da9f98 ). Only propext , Classical.choice and Quot.sound are permitted; an axiom outside this list is not admitted to nanoda's environment, so a declaration that used one could not typecheck. Script and configuration: run_export_nanoda.sh , nanoda_config.json . The export started at 01:49 UTC and finished at 09:17 UTC: 61,571,290,481 bytes, SHA-256 4301ce4828d397c728e87f3e6a1251aa42abe5e12809bb9e0b73cc3d33072e7e . nanoda started at 09:18 UTC. Result: nanoda checked 1,484,729 declarations with no typechecker errors (48 min 25 s on 128 threads, 78 GB peak memory; finished 10:06:58 UTC). The export contains exactly three axioms, which is the size of the permitted list. nanoda also printed one message from its pretty-printer, “Unable to print axioms”: we had not configured an output for printing, and this is not a typechecking message.
+
+What exactly is claimed
+
+Main.lean proves five theorems with no hypotheses:
+
+theorem riemannHypothesis : RiemannHypothesis
+theorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine
+theorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf
+theorem LFunction_eq_zero_re : DirichletLZerosOnLine
+theorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine
+
+RiemannHypothesis is Mathlib's definition ( Mathlib/NumberTheory/LSeries/RiemannZeta.lean , at the pinned commit):
+
+def RiemannHypothesis : Prop :=
+∀ (s : ℂ) (_ : riemannZeta s = 0) (_ : ¬∃ n : ℕ, s = -2 * (n + 1)) (_ : s ≠ 1), s.re = 1 / 2
+
+This says that every zero of ζ other than the trivial zeros −2, −4, … has real part ½. The clause s ≠ 1 only excludes the pole, where Mathlib gives ζ a placeholder value. The other statements are in Statements.lean (SHA-256 79ef7ca7…33b47bf ), which imports nothing but Mathlib:
+
+def DirichletLNonvanishingRightOfHalf : Prop :=
+∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+1 / 2 < s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0
+
+def DirichletLZerosOnLine : Prop :=
+∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+0 < s.re → s.re < 1 → DirichletCharacter.LFunction χ s = 0 → s.re = 1 / 2
+
+In words: for every modulus N, every Dirichlet character χ mod N (primitive or not), and every s with Re s > ½, L(s, χ) ≠ 0, except at the pole s = 1 of the trivial character. That is the Generalized Riemann Hypothesis for Dirichlet L-functions . It is not GRH for Dedekind zeta functions or for automorphic L-functions in general. RH is the case N = 1.
+
+Why "assumed RH" would be detectable: the theorems have nothing to the left of the colon, so there are no hypotheses. Inside the project there are conditional steps such as rh_of_every (h : EveryCharacter) : RiemannHypothesis , but the final term supplies h by a proved theorem ( allChi ). The kernel accepts a closed theorem only if every such hypothesis has been discharged. The one remaining way to "assume" something is an axiom, and #print axioms lists them all.
+
+How the top level fits together
+
+Main.riemannHypothesis
+└ rhOfAll = Formalism.VW.rh_of_every allChi
+└ allChi = UpperTheory.FinalTheorems.everyCharacter (no zeros of L(s,χ) for Re s > ½)
+└ everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter
+└ … 175,187 modules: automorphic forms, theta lifts, Galois representations,
+arithmetic geometry, p-adic Hodge theory, all proved inside the project
+
+The step from "no zeros right of ½" to "zeros on the line" ( Formalism/GammaFactorNonvanishing/CritLine.lean ) is a short, standard argument using the functional equation, applied to χ⁻¹ at 1 − s. We have read it.
+
+Source audit
+
+Files / lines
+175,187 .lean files, 17,374,215 lines (Mathlib itself is about 2 million)
+
+Largest parts
+Development/ 12.2M lines · Formalism/ 3.2M · GroundTheory/ 1.1M · ReciprocityTheory/ 0.56M · CompanionTheory/ 0.19M
+
+Import graph
+Every module is reachable from Main . The longest import chain is 203 modules (about 50k lines). Total lines divided by the longest chain is about 350, a rough measure of how parallel the build can be.
+
+Lakefile options
+maxHeartbeats 4000000 (20× the default), autoImplicit false , --tstack=400000 . None of these affect soundness.
+
+Metaprogramming present (all read by hand):
+
+BuildAid/D1–D5.lean : one run_cmd each, adding a namespace to the library-search deny list. Editor tooling only.
+
+…/CutCptCopy.lean : a command that copies declarations with renamed constants via addDecl . addDecl sends each copy to the kernel.
+
+…/OwnStruct.lean , …/HeckeNonvanishing/Imports.lean : tactics ( kcopy , kexactB ) that assign a goal directly instead of going through the elaborator's unifier. The kernel still checks the resulting proof term when the theorem is added.
+
+None of this is needed for trust. A kernel replay does not run tactics; it re-checks the finished terms.
+
+How we are building it
+
+A plain lake build worked but was slow. With 175k modules, Lake's own dependency bookkeeping used 110–160 cores, kept only 20–30 compiles running at once, and pointed to a finish in roughly 17 hours. Loading Mathlib's 6.4 GB of .olean files over NFS was a further 6–40× penalty per module. So the build now runs as follows:
+
+Each server holds a local copy of the Lean toolchain, Mathlib's official prebuilt cache, and the sources.
+
+A small scheduler ( coord.py , agent.py ) compiles each module with lean directly. It uses the same options Lake passes (package name, lakefile options, the per-library option for GroundTheory.LocalFields/GlobalFields , --tstack ). A module is started on a machine only once every module it imports is present on that machine's disk.
+
+We checked that this invocation gives byte-identical .olean files to Lean run with Lake's own generated setup file for the same module.
+
+Correctness does not depend on the scheduler: the kernel replays below re-check every declaration, however the files were produced.
+
+Hardware
+University compute servers, mostly AMD EPYC 9754 (512-core) and Intel Xeon Gold 6230 machines, shared with other jobs
+
+Toolchain
+Lean 4.33.1 · Mathlib 0df444a3 · lean4export v4.33.0 · nanoda 0da9f98
+
+What a successful check will and won't mean
+
+If the compile succeeds, the axioms are only the standard three, and both kernels accept, then the theorems above are proved. This assumes only that the Lean kernel (checked twice, by independent implementations) is sound and that Mathlib's definitions of ζ and of Dirichlet L-functions mean what they are supposed to. Those definitions are long established and come with the Euler product, the functional equation, ζ(2) = π²/6 and the prime number theorem.
+
+Log
+
+2026-11-21 10:06 UTC nanoda finished: 1,484,729 declarations checked, no typechecker errors. All four checks are now complete.
+
+2026-11-21 09:35 UTC Dependency runs 3 and 4 finished. sorryAx is not in the dependency closure of riemannHypothesis , consistent with the axiom check.
+
+2026-11-21 09:18 UTC Export for nanoda finished (61.6 GB; our earlier 60 GB estimate was close after all). nanoda started.
+
+2026-11-21 09:02 UTC Export for nanoda still running: 60.3 GB written, final size unknown.
+
+2026-11-21 08:59 UTC Second dependency-closure run finished (135 names checked against the 1,478,198 declarations the main theorem depends on).
+
+2026-11-21 08:26 UTC First dependency-closure run recorded: riemannHypothesis depends on 1,478,198 declarations.
+
+2026-11-21 05:24 UTC Kernel replay finished: all 175,187 modules accepted, 0 rejected.
+
+2026-11-21 04:29 UTC Kernel replay: 166,076 modules accepted, 0 rejected by the kernel. The last modules import almost the whole project, and a replay worker running 16 at once grew to about 200 GB; 31 more chunks were stopped part-way by earlyoom (58 in all). We now run 8 at once per worker and fewer workers per server. Every interrupted chunk's unfinished modules were put back in the queue by the sweep; none contains a kernel rejection.
+
+2026-11-21 03:13 UTC Kernel replay: 133,307 modules accepted, 0 rejected by the kernel. Between 02:15 and 02:50 UTC, 27 replay chunks were stopped part-way by the servers' out-of-memory daemon ( earlyoom ): the replay of later modules needs up to about 140 GB per worker, and we had started too many workers. None of these chunks contains a kernel rejection. We reduced the number of workers per server. A module counts as checked only if it has its own OK line; a sweep script ( sweep.py ) puts every module without one back in the queue.
+
+2026-11-21 02:10 UTC Kernel replay: 94,464 modules accepted, 0 rejected. All 175,187 modules are now queued for replay. Export for nanoda in progress (4.6 GB so far).
+
+2026-11-21 01:55 UTC #print axioms : all five theorems depend only on propext , Classical.choice , Quot.sound . Kernel replay: 82,785 modules accepted, 0 rejected. Export for nanoda started.
+
+2026-11-21 01:47 UTC Compile finished: 175,187 of 175,187 modules, 0 errors.
+
+2026-11-21 01:28 UTC 175,170 of 175,187 modules compiled, 0 failures. Kernel replay: 66,781 modules accepted, 0 rejected.
+
+2026-11-21 00:09 UTC 91% compiled, 0 failures. Kernel replay: 23,550 modules accepted, 0 rejected. Replay workers we had added on the two largest servers slowed the compile there, so we removed them until the compile finishes; their unfinished chunks were returned to the queue.
+
+2026-11-20 23:42 UTC 78% compiled, 0 failures. Kernel replay: 12,150 modules accepted, 0 rejected. Three replay chunks on one server were stopped by the operating system under memory pressure, not rejected by the kernel; we reduced the number of workers on that server and are re-running those chunks in full.
+
+2026-11-20 23:13 UTC 53% compiled. Kernel replay running alongside the build on spare cores: 900 modules replayed, 0 rejected.
+
+2026-11-20 23:02 UTC Fixed a bug in our scheduler: a 230-character module name pushed a temporary file name past the 255-byte limit. The compile itself had succeeded. Restarted the coordinator, which resumed from the 82,635 modules already compiled.
+
+2026-11-20 22:47 UTC 47,384 modules compiled (27%), 0 failures. Tested leanchecker on the first compiled modules; it accepts them.
+
+2026-11-20 22:39 UTC 20,146 modules compiled, 0 failures.
+
+2026-11-20 22:29 UTC Distributed build started from a clean output directory. Lake's partial outputs were discarded, so every module is compiled by one documented method.
+
+2026-11-20 21:23 UTC Moved the build to local disk after measuring that loading Mathlib over NFS took 35–220 s per module.
+
+2026-11-20 20:52 UTC First lake build started. Statements.lean builds against Mathlib's official cache.
+
+2026-11-20 20:20 UTC Source downloaded and hashed, statements read, static audit done.
+
+The checks are run by Claude Code (an AI agent) on the account owner's university compute allocation; every result here comes from our own runs. Scripts: scripts/ , dist/ . Source of this page: github.com/mrubinst/grh-lean-verification .

@@ -1,0 +1,91 @@
+{
+ "seat": "EA-CORPORA-43/04",
+ "corpus": "alpoge-claude-verification-records-2026-11",
+ "title": "The verification and reading records of the Alpöge–Claude proof as they stood on 22 November 2026: Sutherland's verification files (MIT), Rubinstein's index and the independent GRH Lean check (Waterloo), and the Riemann Proof Atlas",
+ "edition": "the four pages as served on 2026-11-22 19:02 UTC; each updates in place, so these are dated snapshots",
+ "language": "English",
+ "origin": {
+  "pages": [
+   {
+    "url": "https://math.mit.edu/~drew/grh/",
+    "who": "Andrew Sutherland (MIT); 'checks run with Claude Code'",
+    "sha256_as_fetched": "020ef13ef25ccabe796b4ec7da9bb4242c3e71fb5a5e5d5019526ca3feb4dc78",
+    "file": "original/mit-sutherland-grh.html"
+   },
+   {
+    "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
+    "who": "Michael Rubinstein (Waterloo)",
+    "sha256_as_fetched": "9ef26ce669de2a606c830f92c4cbaf3d912881de9e467840e2d72c03a093ac58",
+    "file": "original/rubinstein-index.html"
+   },
+   {
+    "url": "https://mrubinst.github.io/grh-lean-verification/",
+    "who": "the independent GRH Lean check linked from Rubinstein's page",
+    "sha256_as_fetched": "e0b4716c3db3ca88520c94dc8b670228ddd3fe51dae32a664291cc631ae7a200",
+    "file": "original/mrubinst-grh-lean-check.html"
+   },
+   {
+    "url": "https://rlankenau.github.io/rh/alpoge/",
+    "who": "the Riemann Proof Atlas (rlankenau); 'Source at commit e50d0981'",
+    "sha256_as_fetched": "13e6a5a54af68827171a126d446e774c186b67a6b5974975fa16a252c47549be",
+    "file": "original/rlankenau-atlas.html"
+   }
+  ],
+  "fetched": "2026-11-22T19:02Z"
+ },
+ "works": {
+  "list": [
+   {
+    "title": "Verification files (Sutherland)",
+    "text": "text/mit-sutherland-grh.txt"
+   },
+   {
+    "title": "Alpöge/Claude proof of the GRH (Rubinstein)",
+    "text": "text/rubinstein-index.txt"
+   },
+   {
+    "title": "GRH Lean Check",
+    "text": "text/mrubinst-grh-lean-check.txt"
+   },
+   {
+    "title": "Riemann Proof Atlas",
+    "text": "text/rlankenau-atlas.txt"
+   }
+  ],
+  "count": 4,
+  "units": "texts"
+ },
+ "scope": "the files as published, whole",
+ "lines_total": 959,
+ "why_seated": "THE VERIFICATION LAYER, DATED. Pages that update in place, held as they stood when the collation read them; the verification runs are themselves Claude-mediated ('checks run with Claude Code').",
+ "fetched": "2026-11-22T19:02Z",
+ "license": {
+  "payload": "None declared. The publisher states no licence (checked 2026-11-22 on the file and the page that serves it). Held here as published, byte-exact, exempt from this archive's CC BY 4.0, and carrying the original status: none declared. Rights remain with the author(s).",
+  "record": "CC-BY-4.0 applies to this seat record and its derived text layer only, not to the files under original/."
+ },
+ "research": {
+  "study": "EA-IPRH-01, The Inferential Provenance of the Riemann Result (working collation, Sen Kuro and Dr. Orin Trace, not deposited)",
+  "for": "the primary record of the Alpöge–Claude proof as published and as verified, read by the collation's checks"
+ },
+ "ruling": "Lee Sharks, 2026-11-22 14:06 EST: \"full copies where non contradicted by licensing or ethics but exemption from cc by and carrying the original licensing status, even if that is none declared; declared records only for everything else\"; 14:20 EST: \"yup lets seat riemann sources and prep the ea corpora deposit and tll spine and card\". Rebekah Cranes is the standing authority on the EA-CORPORA deposits (2026-11-22 00:33).",
+ "spine": "EA-CORPORA-43 (assembled 2026-11-22, not deposited)",
+ "seated": "2026-11-22",
+ "verified_loci": [
+  "the archive's hash: '9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc' (text/mit-sutherland-grh.txt)",
+  "the Claude Code line: 'checks run with Claude Code' (text/mit-sutherland-grh.txt)",
+  "the atlas's commit: 'e50d0981' (text/rlankenau-atlas.txt)",
+  "Rubinstein's announcement line: 'found with Anthropic's Claude' (text/rubinstein-index.txt)"
+ ],
+ "loci_not_found": [],
+ "files": {
+  "original/mit-sutherland-grh.html": "as published, byte-exact",
+  "original/rubinstein-index.html": "as published, byte-exact",
+  "original/mrubinst-grh-lean-check.html": "as published, byte-exact",
+  "original/rlankenau-atlas.html": "as published, byte-exact",
+  "text/mit-sutherland-grh.txt": "reading text reduced by code (build_seats43.py)",
+  "text/rubinstein-index.txt": "reading text reduced by code (build_seats43.py)",
+  "text/mrubinst-grh-lean-check.txt": "reading text reduced by code (build_seats43.py)",
+  "text/rlankenau-atlas.txt": "reading text reduced by code (build_seats43.py)"
+ },
+ "normalization": "text/ is derived by code: pdftotext -layout for PDFs; for pages, script and style dropped, block elements to lines, entities decoded. No text was corrected by hand."
+}

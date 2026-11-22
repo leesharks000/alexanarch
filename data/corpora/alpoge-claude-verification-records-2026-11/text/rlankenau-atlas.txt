@@ -1,0 +1,470 @@
+Riemann Proof Atlas
+
+Riemann Proof Atlas
+
+A reader's map of the Alpöge–Claude Lean formalization. Source at commit e50d0981 , read 20 Nov 2026. Both atlases
+
+Overview
+The idea
+Primes as waves
+The proof chain
+Key objects
+Source map
+What is checked
+
+How the claimed proof of the Riemann Hypothesis is put together
+
+On November 20, 2026 Levent Alpöge announced that he and Claude had proved the Riemann Hypothesis, and the generalized version for Dirichlet L-functions, and published only a Lean formalization: 175,187 files and about 1 GB of source with no comments. These pages follow the argument from the final theorem downward.
+
+Nothing here says the proof is correct. No independent kernel check had finished when this was written. These pages describe what the source says and how its parts connect.
+
+The argument in six levels
+
+Each level is proved from the one below it. The top three are short and classical. Almost all of the source sits under the bottom one.
+
+0
+Five theorems, one fact RH and four statements about Dirichlet L-functions all follow from “no L-function vanishes to the right of the line Re s = ½”.
+proof read about 20 lines
+
+1
+Reflect across the line The functional equation turns “no zeros to the right of ½” into “all zeros on ½”.
+proof read about 130 lines
+
+2
+Primitive characters suffice Every character comes from a primitive one, and the extra factors cannot vanish in the region.
+proof read 35 lines
+
+3
+A one-sided bound on a prime sum is enough Landau's criterion: bound the error in a smoothed count of primes from one side only, by x ½+ε , and the zeros are excluded.
+statements read classical analysis
+
+4
+A tied chain gives the bound If a chain of about √x linked lattices exists at scale x, two estimates of one lattice quantity squeeze out the inequality.
+statements read the new mechanism
+
+5
+Such chains exist Built from theta lifts between unitary groups, Galois representations, and about 195 known theorems re-proved in the tree.
+signatures only nearly all of the 1 GB
+
+proof read I read the Lean proof statements read I read what is claimed, not why signatures only I read only the top-level types
+
+Where to go
+
+The idea explains, without Lean, why a one-sided inequality is enough and where one might come from.
+
+Primes as waves draws the classical part from real numbers: the prime staircase, the waves that build it, and what the ceiling rules out.
+
+The proof chain walks the six levels with the actual Lean statements and file paths.
+
+Key objects is a glossary of the names that recur.
+
+Source map shows what the eight libraries hold and how to find things.
+
+What is checked separates what has been verified from what has not.
+
+The idea, without Lean
+
+The proof turns a statement about zeros of a complex function into a single inequality about primes, and then claims to get that inequality from the geometry of lattices.
+
+Primes and zeros
+
+Count primes up to x with a suitable weight and you get a main term plus an error. Each zero ρ of the zeta function adds a wave of size x Re ρ to that error. The Riemann Hypothesis says every such zero has real part ½, which is the same as saying the error is never much bigger than √x.
+
+The formalization uses a smoothed count, called Gz in the source:
+
+Gz(x) = Σ_{n ≤ x} Λ(n)·(x/n − 1) − x·log x + (1+γ)·x
+
+Λ(n) is log p when n is a power of a prime p and zero otherwise, so the sum is a weighted count of primes. The other two terms are what the sum would equal if primes were perfectly regular. Gz is the leftover.
+
+One side is enough
+
+You would expect to need the error small in both directions. A theorem of Landau says you do not. A zero with real part β > ½ makes the error swing above and below by about x β . So if you can show the error stays under a ceiling of x ½+ε , on one side only, no such zero can exist.
+
+Schematic, not computed from data. The solid wave is what the error would look like if a zero lay to the right of the line: it grows like x β and crosses the ceiling. Proving the error stays under the ceiling rules that zero out, with no need to control the lower side. Primes as waves draws the same thing from computed values.
+
+This matters because one-sided inequalities are the kind of thing arithmetic can produce. A nonzero whole number is at least 1 in size. A lattice cannot be more divisible than its volume allows. Facts like these give a bound in one direction and say nothing about the other.
+
+The model: Stepanov's argument
+
+Over finite fields the analog of the Riemann Hypothesis is a theorem. One elementary proof, due to Stepanov, builds an auxiliary polynomial that vanishes to high order at every point being counted. A polynomial cannot have more zeros, counted with multiplicity, than its degree, so there cannot be too many points. That is a one-sided bound.
+
+The obstacle to copying this for ordinary primes is “vanishing to high order”. That needs a derivative, and whole numbers have no derivative. The announcement says this is the gap the new argument fills.
+
+The claimed new step
+
+According to the announcement, a theta lift can play the role of one order of vanishing. A theta lift is a standard way to transfer an automorphic form from one group to another. The proof chains lifts between a sequence of unitary groups of growing size, and each lift in the chain gains one unit of “multiplicity”.
+
+The announcement gives the striking number: to control the prime sum up to X, the chain has about √X lifts. The source agrees. One of its size conditions requires the chain length m to satisfy x ½−ε ≤ m.
+
+From a chain to an inequality
+
+The replacement for “a polynomial has no more zeros than its degree” is a slope inequality for lattices, in the style of Bost. The source records, for each lattice in the chain, numbers called slopes and heights. Two conditions then pin the same quantity from both sides:
+
+Divisibility ( DIV ) bounds it from above. The lifted objects are divisible by many primes, and the logarithms of those primes are where Λ(n) enters.
+
+The slope inequality ( SlopeIneq ) bounds it from below.
+
+Putting the two together leaves an inequality whose main terms cancel against the main terms of the prime sum, and what remains is the one-sided bound on Gz .
+
+U(X₀)
+U(X₁)
+U(X₂)
+U(Xₘ)
+
+theta lift theta lift …
+rank k k + (t+1) k + 2(t+1)
+about √x lifts to control the prime sum up to x; each adds one unit of “multiplicity”
+
+The chain as the announcement describes it. The rank rule k + j(t+1) is from the source's Ranks structure, and the length condition x ½−ε ≤ m from RestSize .
+
+lower bound: SlopeIneq upper bound: DIV muCC
+geometry of the lattices divisibility by primes: log p enters
+lower ≤ muCC ≤ upper, so lower ≤ upper: a one-sided inequality involving the prime sum
+
+The squeeze. Two unrelated estimates of the same slope must be consistent, and that consistency is the inequality on the prime error.
+
+How sure is this section? The first two parts are classical and I read the Lean statements for them. The last three combine the announcement with the names and shapes of statements in the source. I have not read the proofs that connect divisibility and slopes to the prime sum.
+
+Primes as waves, drawn from the numbers
+
+These charts are computed in your browser from the definitions, using the primes up to 20,000 and the first 30 zeros of the zeta function. They show the classical picture the proof starts from. Nothing here depends on the new argument.
+
+The staircase and the waves that build it
+
+The function ψ(x) adds log p each time x passes a power of a prime p. It is a staircase that climbs roughly like x. The explicit formula rebuilds it from the zeros: start with the straight line and subtract one wave for each pair of zeros.
+
+ψ(x) = x − Σ_ρ x^ρ / ρ − log 2π − ½·log(1 − x⁻²)
+
+Pairs of zeros used 8
+
+prime staircase ψ(x) line minus the first waves
+
+Drag the slider from 0 upward. With no waves you get the smooth line. As waves are added the steps appear at the primes, and the curve rings on either side of each jump. This is the overshoot you always get when a sharp step is built from smooth waves, as in a Fourier series.
+
+Smoothing removes the ringing
+
+The proof does not bound the staircase. It bounds Gz , which weights each term by (x/n − 1). That weight is the same as integrating the staircase, so the jumps disappear and the curve is continuous. The waves change too: their sizes now fall off like 1/γ², where γ is the height of the zero, so a handful dominate.
+
+Gz(x) = log 2π − Σ_ρ x^ρ / (ρ(ρ−1)) − (a tiny term)
+
+if every zero has real part ½:
+Gz(x) = log 2π + √x · Σ_{γ>0} 2·cos(γ·log x) / (¼ + γ²)
+
+The chart divides by √x so the waves keep a fixed height. The blue curve is computed directly from the primes. The orange one uses only zeros.
+
+Waves added together 1
+
+(Gz(x) − log 2π) / √x, from the primes sum of the first waves (dashed)
+
+With one wave you see a pure cosine in log x: evenly spaced on this logarithmic axis and running across all of it, not sitting near any particular prime. By about ten waves the two curves are hard to tell apart. There is no ringing because there are no jumps left.
+
+What the ceiling rules out
+
+If every zero is on the line, the heights of all the waves add up to 2 + γ − log 4π ≈ 0.046, so the scaled error can never leave a band of that half-width. Up to 20,000 it stays within 0.019. A zero with real part β above ½ would add a wave that grows like x β−½ on this chart, and sooner or later it leaves any band.
+
+actual, from the primes hypothetical: one zero moved to real part 0.75 (dashed)
+
+The dashed curve is invented for illustration: the actual curve plus one wave of size x 0.75 at the frequency of the first zero. It breaks out above and below. The proof's ceiling of x ½+ε is, on this chart, a line rising as slowly as x ε , so a wave growing like x 0.25 crosses it once ε is below 0.25. Bounding the top side alone is enough to exclude the zero.
+
+What is and is not shown. Vast numbers of zeros are known by computation to lie on the line, so charts like these have always looked this way. They are evidence, and they are the target of the proof, but they prove nothing about what happens further out.
+
+The proof chain, level by level
+
+Each level shows the Lean statement, a plain reading of it, and where it lives. Paths are relative to src/ in the repository.
+
+RH and four L-function theorems
+EveryCharacter: no zeros right of ½
+ZeroFreeAll: primitive characters only
+Gm(x) ≤ x^(½+cε) on windows
+a tied chain exists at every scale
+Green's classification
+VWin: cohomology bound
+about 195 known theorems
+level 1: reflect across the line
+level 2: strip the extra factors
+level 3: Landau's criterion
+level 4: core_gm, the squeeze
+
+level 5
+
+Each arrow reads “gives”. The highlighted box is where the claimed new step sits: the levels above it are classical, and the three inputs below it are the machinery that builds the chains.
+
+0 Five theorems, one fact proof read
+All five headline theorems are one-line consequences of a single statement, EveryCharacter .
+
+def UpperTheory.EveryCharacter : Prop :=
+∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+1 / 2 < s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0
+
+theorem allChi : UpperTheory.EveryCharacter := UpperTheory.FinalTheorems.everyCharacter
+theorem rhOfAll : RiemannHypothesis := Formalism.VW.rh_of_every allChi
+theorem riemannHypothesis : RiemannHypothesis := rhOfAll
+
+In words: for every modulus N and every Dirichlet character χ, the L-function has no zero with real part greater than ½. The one exception is the pole of the trivial character at s = 1. The zeta function is the case N = 1.
+
+Main.lean · Supplements/Kernels/MainTheorems.lean · Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean
+
+1 Reflect across the line proof read
+The completed L-function satisfies a functional equation relating s to 1 − s. A zero to the left of ½ would reflect to a zero to the right, which level 0 forbids. So zeros in the strip 0 < Re s < 1 lie exactly on the line. For zeta the same reflection also accounts for the trivial zeros at −2, −4, ….
+
+This uses Mathlib's existing lemmas for the functional equation and the Gamma factor. It is ordinary, readable Lean.
+
+0 ½ 1 real part of s
+
+a zero here… …would force a zero here, which level 0 forbids
+the critical line
+
+The functional equation mirrors zeros across the line Re s = ½. Clearing the right half of the strip clears the left half too, leaving only the line.
+
+Formalism/GammaFactorNonvanishing/CritLine.lean · Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean
+
+2 Primitive characters suffice proof read
+Every character is induced from a primitive one, and their L-functions differ by finitely many factors of the form 1 − χ(p)p −s . Those factors cannot vanish when Re s > 0. So it is enough to prove ZeroFreeAll , the statement for primitive characters.
+
+def PChar.ZeroFreeAbove (ψ : PChar) (θ : ℝ) : Prop :=
+∀ s : ℂ, θ < s.re → DirichletCharacter.LFunction ψ.χ s ≠ 0
+
+def ZeroFreeAll : Prop := ZeroFreeOn fun _ => True -- every primitive ψ is zero-free above 1/2
+
+Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean · Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean
+
+3 A one-sided bound on a prime sum is enough statements read
+The source defines the smoothed prime error Gz and states Landau's criterion for it. The sign s₀ may be +1 or −1: a bound from either side works.
+
+def Sz (x : ℝ) : ℝ := ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, Λ n * (x / n - 1)
+def Gz (x : ℝ) : ℝ := Sz x - x * Real.log x + (1 + Real.eulerMascheroniConstant) * x
+
+def ZetaLandau : Prop :=
+∀ s₀ : ℝ, (s₀ = 1 ∨ s₀ = -1) → ∀ θ : ℝ, 0 < θ → θ < 1 →
+(∃ C x₀ : ℝ, ∀ x : ℝ, x₀ ≤ x → s₀ * Gz x ≤ C * x ^ θ) →
+∀ s : ℂ, θ < s.re → riemannZeta s ≠ 0
+
+The version the final proof uses works with a set of characters at once. For each primitive ψ it forms a Level , a finite set of characters containing ψ, and a combined error Gm : the zeta error plus weighted character-twisted errors.
+
+def Gm (y : ℝ) : ℝ := Formalism.Gz y + ∑ ψ ∈ Λ.Nt, Λ.wt ψ * (An.gChi ψ.χ y).re
+
+The bound is only needed on “windows”, a sparse set of scales x, as long as consecutive windows are not too far apart. The theorem zeroFreeOn_of_tiedWin_cyc assembles this: a bound Gm x ≤ x^(1/2 + c·ε) on windows, for every small ε, gives a zero-free half-plane for every character in the level.
+
+Formalism/Statement.lean, StatementOC.lean, StatementU.lean, ZetaRealNonvanish.lean · Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean
+
+4 A tied chain gives the bound statements read
+This is the theorem that produces the inequality. Given a package of arithmetic data at scale x satisfying a long list of conditions ( CoreAtH ), the combined error is below the ceiling.
+
+theorem core_gm :
+∀ (Λ : Level) (eD eL K cHH eK C eps : ℝ), 0 < eps → ∃ x1 : ℝ, ∀ x ≥ x1,
+∀ (φ : Frame) (H : HostAx φ) (TT : Finset φ.A),
+EAtH Λ H.toHostRaw TT x eps C → CoreAtH H.toHostRaw TT eD eL K cHH eK eps x →
+Λ.Gm x ≤ x ^ ((1 : ℝ) / 2 + (eD + eL + 7) * eps)
+
+Its proof has two named halves. ch_top turns the chain's conditions into a bound for each component. ch_core turns those bounds into the inequality on Gm .
+
+The conditions include size requirements. This one forces the chain to be about √x long:
+
+def RestSize (ε x : ℝ) (n nT nT2 m : ℕ) (b k aE : ℝ) : Prop :=
+aE ≤ 2 * x * b ∧ x ^ (-(ε / 8)) * n / 2 ≤ nT ∧ x ^ (-ε) ≤ (nT2 : ℝ) / n ∧
+x ^ ((1 : ℝ) / 2 - ε) ≤ m ∧ -- chain length m is at least x^(1/2 − ε)
+k ≤ (n : ℝ) ^ 2 * x ^ ((1 : ℝ) / 2 - ε)
+
+And these two pin one lattice quantity, muCC , from above and from below:
+
+def DIV : Prop := -- divisibility: an upper bound on muCC
+∀ u0 (u : W u0), D.muCC u0 + D.h u0 u - D.Fo u0 ≤
+(∑ t, ((m : ℝ) * (ph (D.aT t) - D.aT t * D.logOm) - D.aT t * Real.log (D.T u0 u))) + …
+
+def SlopeIneq : Prop := -- slope inequality: a lower bound on muCC
+∀ u0, … → D.s u0 - Real.log (Fintype.card (W u0) : ℝ) - (error terms) ≤ D.muCC u0
+
+Here ph(y) = y·log y − y , the same shape as the main term of the prime sum. The data comes from a structure called D7 , described under Key objects .
+
+Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean, CoreAtH.lean, WindowInequalityOfArtinInputs.lean · Formalism/SizeWindowBrackets/SChain.lean · Formalism/RankGapBounds/MeanBoundSecondForm.lean · Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean, ChCore.lean
+
+5 Such chains exist signatures only
+The last step needs a tied chain at every large scale and for every small ε. The top-level theorem takes three inputs.
+
+theorem UpperTheory.Top.every_character_of_green_v_win
+(hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin)
+(h : Nonempty (GlobalTheory.Fc.HypsAlt … DefiniteSideCondition)) : UpperTheory.EveryCharacter
+
+Green is J. A. Green's 1955 classification of the cuspidal characters of GL d over a finite field.
+
+VWin bounds the sizes of certain Galois cohomology groups over number fields in a tower of cyclotomic fields. The announcement calls this “a significant weakening of Vandiver”. It is derived from base change, complex multiplication, and Galois representations.
+
+The hypotheses bundle is filled from about 195 named results from the literature, among them Deligne–Ribet, base change for definite unitary groups, Bhatt–Scholze, the local Langlands correspondence for GL n , and Casselman–Wallach.
+
+The literature results are written as depending on a hypothesis OpenLiteratureStatements with three fields. The final theorem supplies all three from proofs in the tree, so nothing is left assumed. The key one is the existence of Galois representations attached to automorphic forms over CM fields, which the project derives from its own theta lifts:
+
+theorem galoisLocalGlobalStrong_recParameter : UpperTheory.GalStar.Row0b recT :=
+galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK
+
+theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=
+UpperTheory.FinalTheorems.everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter
+
+Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean, ZeroFreeAllOfTopG.lean, ExistsPageN.lean · Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean, EveryCharacterOfLiteratureOfVWin.lean, SiegelEisensteinSecondTermHypotheses.lean · Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean
+
+Key objects
+
+Names that recur in the chain, with a plain description and where each is defined. Many short names are reused in other namespaces, so the path matters.
+
+Analytic side
+
+Gz
+The error in the smoothed count of primes: the weighted sum of Λ(n) minus its expected main terms. Formalism/StatementOC.lean
+
+Gchi, GchiC
+The same error twisted by a Dirichlet character, real and complex versions. Formalism/StatementOC.lean, StatementFL.lean
+
+PChar
+A primitive Dirichlet character packaged with its modulus. Formalism/SharpRestriction/…/TotientGaloisClasses/
+
+Level
+A finite set of primitive characters handled together, with weights. Level.cyc ψ is the level built around one character ψ. …/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean
+
+Gm
+The combined error for a level: Gz plus weighted twisted errors. This is the quantity the proof bounds. same file
+
+ZeroFreeAll
+No primitive Dirichlet L-function has a zero with real part above ½. same file
+
+FormB
+Landau's criterion for a level: a bound on Gm at window scales gives a zero-free region. …/TotientGaloisClasses/Window.lean
+
+The chain
+
+Scale
+The sizes at one step: x, ε below 1/52, and derived quantities such as b = exp(x ε ) and a = x·b. Formalism/LocalRingCardinality/DataParams₂.lean
+
+Ranks
+Three integers k, m, t fixing the sizes of the spaces. The j-th space has rank k + j(t+1), growing by one step per lift. Formalism/LocalRingCardinality/Params.lean
+
+D7
+The full package at one scale: a CM field E over a totally real field, Hermitian spaces and self-dual lattices over E, a column chain with Harish-Chandra parameters, a period map, and divisibility data. Formalism/LocalRingCardinality/RhoDetPrimeEqMuTildeMulChiPow.lean
+
+FamCore, FamP
+A family: for each scale x in a set of windows, a collection of D7 packages. Formalism/SharpRestriction/FamCore.lean, ParConsts.lean
+
+Data
+The numbers extracted from a chain: slopes ( muN , muM , muCC ), heights, sizes, and error terms. Formalism/RankGapBounds/MeanBoundSecondForm.lean
+
+ChainTied
+The statement that a family member's data satisfies every condition the inequality needs: identification with the arithmetic, sizes, slopes, divisibility, error windows. Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean
+
+ChainCore, CoreAtH
+The same conditions with the family stripped away, as consumed by core_gm . Formalism/SizeWindowBrackets/SChain.lean · …/PrimitiveCosets/CoreAtH.lean
+
+Existence inputs
+
+TopG
+For any supply of host fields with the right cohomology bound, a connected class of tied families exists. Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean
+
+VWin
+For each character and each scale, the fields in the tower have small enough Galois cohomology groups ( shaLen ), summed over primes with log weights. Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean
+
+WinPair
+The two auxiliary primes at a scale: q ≡ 3 mod 8 and d ≡ 7 mod 16, with q dividing d + 1 and prescribed sizes. same file
+
+Green
+Green's classification of cuspidal characters of GL d over a finite field. Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean
+
+Row0b
+For a CM field and a suitable automorphic form on GL a , a Galois representation exists with the expected local behavior and weights. Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean
+
+OpenLiteratureStatements
+A three-field hypothesis the literature results are stated against. The final theorem fills it from in-tree proofs. …/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean
+
+Source map
+
+Eight libraries, 175,187 files, 17.4 million lines. Every file is imported, directly or not, by Main.lean .
+
+Library Files Lines What it holds, by its largest parts
+
+Development 141,928 12,232,663 AbelianVarietyTheory (99,187 files), AutomorphicArithmetic (18,431), AutomorphicSpectrum (15,147), WeilBound (7,051), EtaleCohomology, ResolutionOfSingularities. The top of the proof chain is in AutomorphicArithmetic.
+
+Formalism 18,254 3,200,748 The core vocabulary: the prime sums, Landau statements, the chain and its slope conditions. Largest parts are LocalToGlobal, PeriodIntegrals, SharpRestriction, HermitianCurvature.
+
+GroundTheory 8,507 1,119,138 HeightsAndTheta (6,410 files), automorphic forms, profinite cohomology, local and global fields, p-adic Hodge theory.
+
+ReciprocityTheory 3,845 563,016 ReductiveGroups (2,799 files), class field theory, Chebotarev, geometry of numbers.
+
+CompanionTheory 2,027 194,218 SpectralGeometry, AutomorphicTheory, real groups and Harish-Chandra modules.
+
+PositivityTheory 449 55,130 Arithmetic positivity results such as Hilbert–Samuel and Moriwaki bigness.
+
+Lemmata 167 9,232 Small standalone lemmas, one per folder.
+
+Supplements, BuildAid, Main, Statements 10 70 The five final theorems and the three files that assemble them.
+
+File and line counts are from the mirror's verification notes. The largest-part counts are from my own count of the local clone.
+
+Reading conventions
+
+Statements are separate from proofs. A typical file defines def Something : Prop := … , and a theorem elsewhere proves it. The files Formalism/Statement*.lean are the clearest examples.
+
+Folder names do not describe contents. The central D7 structure is in LocalRingCardinality/RhoDetPrimeEqMuTildeMulChiPow.lean . Navigate by declaration name.
+
+Short names repeat. Frame , Scale , Ident , formB and others are each defined several times in different namespaces. Check the open lines at the top of the file you are in.
+
+There are no comments anywhere in the submission.
+
+Finding a declaration
+
+A search over the whole tree takes about two seconds with ripgrep. From src/ :
+
+rg -n -g '*.lean' '(theorem|def|structure) (\S+\.)?core_gm\b' .
+
+The optional prefix matches both styles the source uses: fully qualified names and short names inside a namespace block.
+
+What is checked, and what is not
+
+Three different questions get mixed together: whether Lean accepts the proof, whether independent checkers accept it, and whether anyone understands it.
+
+Machine verification, as of 20 November 2026
+
+Check State Detail
+
+Statements match Mathlib's read by hand The headline theorem is Mathlib's own RiemannHypothesis . The mirror restates all five in a file importing only Mathlib.
+
+Text scan for shortcuts clean No axiom , sorry , native_decide , unsafe or similar. A text scan is not a proof.
+
+Full build on Lean 4.33.1 in progress Estimated 7 to 10 hours on 48 cores with 503 GB of memory.
+
+Judging by Lean 4.36.0 and nanoda not yet run This is the check that counts. Three other checkers cannot read the project for unrelated reasons.
+
+Reasons for care
+
+The pinned Lean version is old. Lean 4.33.1 lacks later runtime fixes that its release notes say could be turned into a proof of a false statement with crafted input. That is why the judging uses a newer kernel and an independent one.
+
+Some proofs bypass the usual front end. The source defines tactics, kexactB and kcopy , that hand a proof term to the goal without the elaborator checking it, used in 67 files. That is sound only because the kernel checks everything, so the kernel replay carries all the weight.
+
+No human-readable proof exists yet. The author says he has not mastered much of the argument and that parts of his own summary “might make zero sense”.
+
+What these pages rest on
+
+Part Basis
+
+Levels 0 to 2 proof read I read the Lean proofs. They are short and use standard Mathlib lemmas.
+
+Level 3 statements read I read the definitions and the assembling theorem. I did not read the proofs of the Landau statements.
+
+Level 4 statements read I read core_gm , its hypotheses and the slope conditions. The account of why they give the bound is my reading of their shapes plus the announcement.
+
+Level 5 signatures only I read the types of the top theorems. I have not looked at how theta lifts, Galois representations or the cohomology bound are proved.
+
+Open questions for a next pass
+
+Inside ch_top and ch_core : exactly how do divisibility and the slope inequality combine, and where does each prime contribute its log p?
+
+What do the 195 literature statements say in full? Are they the real theorems or weaker forms sufficient for this use?
+
+How is VWin proved, and how strong is it compared with Vandiver's conjecture?
+
+What is the “toy setting” the announcement mentions? The single-character statements in Formalism/Statement.lean , using the quadratic characters mod 3, 4 and 7, look like its remains.
+
+Sources
+
+Announcement: alpo.ge/remark.pdf
+
+Mirror and verification notes: github.com/Deicyde/riemann-hypothesis
+
+Declaration-level trace by another reader: issue #3
+
+← Quiz: Part II 20 The smoothed error →

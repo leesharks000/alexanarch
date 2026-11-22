@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="margin:0">
+<title>Riemann Proof Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a fixed contents rail beside one reading column, like a monograph with its table of contents open. */
+:root{
+  --bg:#f5f7fa; --panel:#ffffff; --fg:#17202e; --muted:#586579; --rule:#d5dce6;
+  --accent:#1f4e8c; --accent-soft:#e3ecf8;
+  --ok:#17694a; --ok-soft:#dff2e9; --warn:#8a5a00; --warn-soft:#fbefd2; --open:#8f2f3c; --open-soft:#f9e1e4;
+  --code-bg:#eef1f6;
+  --display:"STIX Two Text","Times New Roman",serif;
+  --body:"IBM Plex Sans",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#10151d; --panel:#18202b; --fg:#e4e9f1; --muted:#9aa7ba; --rule:#2c3747;
+  --accent:#8db8f2; --accent-soft:#1d2c44;
+  --ok:#6fd0a6; --ok-soft:#153427; --warn:#e6b85a; --warn-soft:#3a2d10; --open:#f09aa5; --open-soft:#3d1c22;
+  --code-bg:#0c1118; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#10151d; --panel:#18202b; --fg:#e4e9f1; --muted:#9aa7ba; --rule:#2c3747;
+  --accent:#8db8f2; --accent-soft:#1d2c44;
+  --ok:#6fd0a6; --ok-soft:#153427; --warn:#e6b85a; --warn-soft:#3a2d10; --open:#f09aa5; --open-soft:#3d1c22;
+  --code-bg:#0c1118; color-scheme:dark }
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.shell{display:grid;grid-template-columns:15rem minmax(0,1fr);gap:2.5rem;max-width:72rem;margin:0 auto;padding-block:2rem 4rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+nav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 1.5rem);align-self:start;display:flex;flex-direction:column;gap:.25rem}
+.brand{font-family:var(--display);font-size:1.35rem;font-weight:600;line-height:1.2;margin-bottom:.25rem}
+.sub{color:var(--muted);font-size:.8rem;margin-bottom:1rem}
+nav a{color:var(--fg);text-decoration:none;padding:.4rem .6rem;border-left:2px solid var(--rule);font-size:.95rem}
+nav a:hover{border-left-color:var(--accent)}
+nav a[aria-current="page"]{border-left-color:var(--accent);background:var(--accent-soft);color:var(--accent);font-weight:600}
+nav a:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+main{min-width:0}
+section{display:flex;flex-direction:column;gap:1.1rem;margin-bottom:3rem}
+h1{font-family:var(--display);font-weight:600;font-size:2.1rem;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:600;font-size:1.4rem;margin:1rem 0 0;text-wrap:balance}
+h3{font-size:1rem;font-weight:600;margin:.4rem 0 0}
+p,ul,ol{margin:0;max-width:68ch}
+li{margin-bottom:.35rem}
+.lede{font-size:1.1rem;color:var(--muted);max-width:62ch}
+a{color:var(--accent)}
+code{font-family:var(--mono);font-size:.86em;background:var(--code-bg);padding:.08em .3em;border-radius:3px;overflow-wrap:anywhere}
+pre{font-family:var(--mono);font-size:.8rem;line-height:1.5;background:var(--code-bg);border:1px solid var(--rule);border-radius:4px;padding:.8rem 1rem;margin:0;overflow-x:auto;white-space:pre}
+.path{font-family:var(--mono);font-size:.76rem;color:var(--muted);overflow-wrap:anywhere}
+.chip{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.03em;padding:.1rem .5rem;border-radius:999px;white-space:nowrap}
+.chip.ok{background:var(--ok-soft);color:var(--ok)} .chip.warn{background:var(--warn-soft);color:var(--warn)} .chip.open{background:var(--open-soft);color:var(--open)}
+.ladder{display:flex;flex-direction:column;border:1px solid var(--rule);border-radius:6px;background:var(--panel);overflow:hidden}
+.rung{display:grid;grid-template-columns:2.2rem minmax(0,1fr) auto;gap:.9rem;align-items:start;padding:.85rem 1rem;border-bottom:1px solid var(--rule)}
+.rung:last-child{border-bottom:0}
+.rung .n{font-family:var(--display);font-size:1.5rem;color:var(--accent);line-height:1.1}
+.rung b{display:block}
+.rung span.d{color:var(--muted);font-size:.9rem}
+.rung .meta{text-align:right;display:flex;flex-direction:column;gap:.3rem;align-items:flex-end;font-size:.78rem;color:var(--muted)}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:.7rem 1rem;max-width:68ch}
+.note.warn{border-left-color:var(--warn);background:var(--warn-soft)}
+details{border:1px solid var(--rule);border-radius:6px;background:var(--panel)}
+summary{cursor:pointer;padding:.8rem 1rem;display:flex;gap:.7rem;align-items:baseline;flex-wrap:wrap}
+summary .n{font-family:var(--display);color:var(--accent);font-size:1.2rem}
+summary b{flex:1 1 14rem}
+details .in{padding:0 1rem 1rem;display:flex;flex-direction:column;gap:.8rem;min-width:0}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{text-align:left;padding:.45rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+dl{margin:0;display:grid;grid-template-columns:minmax(8rem,13rem) minmax(0,1fr);gap:.2rem 1.2rem}
+dt{font-family:var(--mono);font-size:.85rem;padding-top:.5rem;border-top:1px solid var(--rule);overflow-wrap:anywhere}
+dd{margin:0;padding-top:.5rem;border-top:1px solid var(--rule)}
+dd .path{display:block;margin-top:.2rem}
+figure{margin:0;background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:.8rem}
+figure .tw svg{display:block;width:100%;min-width:30rem;height:auto}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:.5rem;max-width:68ch}
+.legend{display:flex;gap:1rem;flex-wrap:wrap;font-size:.85rem;color:var(--muted)}
+:root{--s1:#1f6fd1;--s2:#c2560a}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--s1:#3987e5;--s2:#cf7a30} }
+:root[data-theme="dark"]{--s1:#3987e5;--s2:#cf7a30}
+.plot{position:relative;min-width:30rem}
+.plot svg{display:block;width:100%;height:auto}
+.plot .gr{stroke:var(--rule);stroke-width:1}
+.plot .rf{stroke:var(--muted);stroke-width:1;stroke-dasharray:3 4}
+.plot .ch{stroke:var(--muted);stroke-width:1}
+.plot .tk{fill:var(--muted);font-family:var(--body);font-size:11px}
+.tip{position:absolute;top:.4rem;pointer-events:none;background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:.3rem .55rem;font-size:.78rem;display:flex;flex-direction:column;white-space:nowrap}
+.tip[hidden]{display:none}
+.tip i,.lg i{display:inline-block;width:.9rem;height:3px;vertical-align:middle;margin-right:.4rem;border-radius:2px}
+.lg{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.85rem;margin-bottom:.4rem}
+.ctl{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;font-size:.9rem;margin-bottom:.5rem}
+.ctl input{accent-color:var(--accent);width:14rem;max-width:100%}
+.ctl output{font-variant-numeric:tabular-nums;font-weight:600;min-width:1.5rem}
+svg.dg{color:var(--fg)}
+.dg text{fill:currentColor;font-family:var(--body);font-size:12px}
+.dg .mu{fill:var(--muted)}
+.dg .b{fill:var(--bg);stroke:currentColor;stroke-width:1.2}
+.dg .hl{fill:var(--accent-soft);stroke:var(--accent);stroke-width:1.5}
+.dg .ln{stroke:currentColor;stroke-width:1.2;fill:none}
+.dg .ac{stroke:var(--accent);stroke-width:2;fill:none}
+.dg .dot{fill:var(--accent)}
+@media (max-width:820px){
+  .shell{grid-template-columns:minmax(0,1fr);gap:1.2rem}
+  nav{position:static;flex-direction:row;flex-wrap:wrap}
+  .brand,.sub{flex-basis:100%;margin-bottom:0}
+  nav a{border-left:0;border-bottom:2px solid var(--rule)}
+  nav a[aria-current="page"]{border-bottom-color:var(--accent)}
+  .rung{grid-template-columns:1.8rem minmax(0,1fr)} .rung .meta{grid-column:2;text-align:left;align-items:flex-start;flex-direction:row;flex-wrap:wrap}
+  dl{grid-template-columns:minmax(0,1fr)} dd{border-top:0;padding-top:0}
+  h1{font-size:1.7rem}
+}
+</style>
+
+<div class="shell">
+<nav aria-label="Pages">
+  <div class="brand">Riemann Proof Atlas</div>
+  <div class="sub">A reader's map of the Alpöge–Claude Lean formalization. Source at commit <code>e50d0981</code>, read 20 Nov 2026. <a href="https://rlankenau.github.io/rh/">Both atlases</a></div>
+  <a href="#overview">Overview</a>
+  <a href="#idea">The idea</a>
+  <a href="#waves">Primes as waves</a>
+  <a href="#chain">The proof chain</a>
+  <a href="#objects">Key objects</a>
+  <a href="#source">Source map</a>
+  <a href="#status">What is checked</a>
+</nav>
+
+<main>
+
+<section data-view="overview">
+  <h1>How the claimed proof of the Riemann Hypothesis is put together</h1>
+  <p class="lede">On November 20, 2026 Levent Alpöge announced that he and Claude had proved the Riemann Hypothesis, and the generalized version for Dirichlet L-functions, and published only a Lean formalization: 175,187 files and about 1 GB of source with no comments. These pages follow the argument from the final theorem downward.</p>
+  <div class="note warn"><b>Nothing here says the proof is correct.</b> No independent kernel check had finished when this was written. These pages describe what the source says and how its parts connect.</div>
+
+  <h2>The argument in six levels</h2>
+  <p>Each level is proved from the one below it. The top three are short and classical. Almost all of the source sits under the bottom one.</p>
+  <div class="ladder">
+    <div class="rung"><div class="n">0</div><div><b>Five theorems, one fact</b><span class="d">RH and four statements about Dirichlet L-functions all follow from “no L-function vanishes to the right of the line Re s = ½”.</span></div><div class="meta"><span class="chip ok">proof read</span><span>about 20 lines</span></div></div>
+    <div class="rung"><div class="n">1</div><div><b>Reflect across the line</b><span class="d">The functional equation turns “no zeros to the right of ½” into “all zeros on ½”.</span></div><div class="meta"><span class="chip ok">proof read</span><span>about 130 lines</span></div></div>
+    <div class="rung"><div class="n">2</div><div><b>Primitive characters suffice</b><span class="d">Every character comes from a primitive one, and the extra factors cannot vanish in the region.</span></div><div class="meta"><span class="chip ok">proof read</span><span>35 lines</span></div></div>
+    <div class="rung"><div class="n">3</div><div><b>A one-sided bound on a prime sum is enough</b><span class="d">Landau's criterion: bound the error in a smoothed count of primes from one side only, by x<sup>½+ε</sup>, and the zeros are excluded.</span></div><div class="meta"><span class="chip warn">statements read</span><span>classical analysis</span></div></div>
+    <div class="rung"><div class="n">4</div><div><b>A tied chain gives the bound</b><span class="d">If a chain of about √x linked lattices exists at scale x, two estimates of one lattice quantity squeeze out the inequality.</span></div><div class="meta"><span class="chip warn">statements read</span><span>the new mechanism</span></div></div>
+    <div class="rung"><div class="n">5</div><div><b>Such chains exist</b><span class="d">Built from theta lifts between unitary groups, Galois representations, and about 195 known theorems re-proved in the tree.</span></div><div class="meta"><span class="chip open">signatures only</span><span>nearly all of the 1 GB</span></div></div>
+  </div>
+  <div class="legend"><span><span class="chip ok">proof read</span> I read the Lean proof</span><span><span class="chip warn">statements read</span> I read what is claimed, not why</span><span><span class="chip open">signatures only</span> I read only the top-level types</span></div>
+
+  <h2>Where to go</h2>
+  <ul>
+    <li><a href="#idea">The idea</a> explains, without Lean, why a one-sided inequality is enough and where one might come from.</li>
+    <li><a href="#waves">Primes as waves</a> draws the classical part from real numbers: the prime staircase, the waves that build it, and what the ceiling rules out.</li>
+    <li><a href="#chain">The proof chain</a> walks the six levels with the actual Lean statements and file paths.</li>
+    <li><a href="#objects">Key objects</a> is a glossary of the names that recur.</li>
+    <li><a href="#source">Source map</a> shows what the eight libraries hold and how to find things.</li>
+    <li><a href="#status">What is checked</a> separates what has been verified from what has not.</li>
+  </ul>
+</section>
+
+<section data-view="idea">
+  <h1>The idea, without Lean</h1>
+  <p class="lede">The proof turns a statement about zeros of a complex function into a single inequality about primes, and then claims to get that inequality from the geometry of lattices.</p>
+
+  <h2>Primes and zeros</h2>
+  <p>Count primes up to x with a suitable weight and you get a main term plus an error. Each zero ρ of the zeta function adds a wave of size x<sup>Re ρ</sup> to that error. The Riemann Hypothesis says every such zero has real part ½, which is the same as saying the error is never much bigger than √x.</p>
+  <p>The formalization uses a smoothed count, called <code>Gz</code> in the source:</p>
+  <pre>Gz(x) = Σ_{n ≤ x} Λ(n)·(x/n − 1)  −  x·log x  +  (1+γ)·x</pre>
+  <p>Λ(n) is log p when n is a power of a prime p and zero otherwise, so the sum is a weighted count of primes. The other two terms are what the sum would equal if primes were perfectly regular. <code>Gz</code> is the leftover.</p>
+
+  <h2>One side is enough</h2>
+  <p>You would expect to need the error small in both directions. A theorem of Landau says you do not. A zero with real part β &gt; ½ makes the error swing above <em>and</em> below by about x<sup>β</sup>. So if you can show the error stays under a ceiling of x<sup>½+ε</sup>, on one side only, no such zero can exist.</p>
+  <figure>
+    <div class="tw"><svg id="landau" viewBox="0 0 640 250" role="img" aria-label="An oscillating error curve that would break a ceiling if a zero lay off the line"></svg></div>
+    <figcaption>Schematic, not computed from data. The solid wave is what the error would look like if a zero lay to the right of the line: it grows like x<sup>β</sup> and crosses the ceiling. Proving the error stays under the ceiling rules that zero out, with no need to control the lower side. <a href="#waves">Primes as waves</a> draws the same thing from computed values.</figcaption>
+  </figure>
+  <p>This matters because one-sided inequalities are the kind of thing arithmetic can produce. A nonzero whole number is at least 1 in size. A lattice cannot be more divisible than its volume allows. Facts like these give a bound in one direction and say nothing about the other.</p>
+
+  <h2>The model: Stepanov's argument</h2>
+  <p>Over finite fields the analog of the Riemann Hypothesis is a theorem. One elementary proof, due to Stepanov, builds an auxiliary polynomial that vanishes to high order at every point being counted. A polynomial cannot have more zeros, counted with multiplicity, than its degree, so there cannot be too many points. That is a one-sided bound.</p>
+  <p>The obstacle to copying this for ordinary primes is “vanishing to high order”. That needs a derivative, and whole numbers have no derivative. The announcement says this is the gap the new argument fills.</p>
+
+  <h2>The claimed new step</h2>
+  <p>According to the announcement, a <em>theta lift</em> can play the role of one order of vanishing. A theta lift is a standard way to transfer an automorphic form from one group to another. The proof chains lifts between a sequence of unitary groups of growing size, and each lift in the chain gains one unit of “multiplicity”.</p>
+  <p>The announcement gives the striking number: to control the prime sum up to X, the chain has about √X lifts. The source agrees. One of its size conditions requires the chain length m to satisfy x<sup>½−ε</sup> ≤ m.</p>
+
+  <h2>From a chain to an inequality</h2>
+  <p>The replacement for “a polynomial has no more zeros than its degree” is a slope inequality for lattices, in the style of Bost. The source records, for each lattice in the chain, numbers called slopes and heights. Two conditions then pin the same quantity from both sides:</p>
+  <ul>
+    <li><b>Divisibility</b> (<code>DIV</code>) bounds it from above. The lifted objects are divisible by many primes, and the logarithms of those primes are where Λ(n) enters.</li>
+    <li><b>The slope inequality</b> (<code>SlopeIneq</code>) bounds it from below.</li>
+  </ul>
+  <p>Putting the two together leaves an inequality whose main terms cancel against the main terms of the prime sum, and what remains is the one-sided bound on <code>Gz</code>.</p>
+  <figure>
+    <div class="tw"><svg class="dg" viewBox="0 0 640 150" role="img" aria-label="A chain of unitary groups joined by theta lifts, about square root of x lifts long">
+      <defs><marker id="arC" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="currentColor"/></marker></defs>
+      <rect class="b" x="20" y="36" width="100" height="40" rx="3"/><text x="70" y="61" text-anchor="middle">U(X₀)</text>
+      <rect class="b" x="180" y="36" width="100" height="40" rx="3"/><text x="230" y="61" text-anchor="middle">U(X₁)</text>
+      <rect class="b" x="340" y="36" width="100" height="40" rx="3"/><text x="390" y="61" text-anchor="middle">U(X₂)</text>
+      <rect class="b" x="520" y="36" width="100" height="40" rx="3"/><text x="570" y="61" text-anchor="middle">U(Xₘ)</text>
+      <line class="ln" x1="120" y1="56" x2="178" y2="56" marker-end="url(#arC)"/><line class="ln" x1="280" y1="56" x2="338" y2="56" marker-end="url(#arC)"/>
+      <line class="ln" x1="440" y1="56" x2="518" y2="56" stroke-dasharray="3 5" marker-end="url(#arC)"/>
+      <text class="mu" x="149" y="28" text-anchor="middle">theta lift</text><text class="mu" x="309" y="28" text-anchor="middle">theta lift</text><text class="mu" x="479" y="28" text-anchor="middle">…</text>
+      <text class="mu" x="70" y="94" text-anchor="middle">rank k</text><text class="mu" x="230" y="94" text-anchor="middle">k + (t+1)</text><text class="mu" x="390" y="94" text-anchor="middle">k + 2(t+1)</text>
+      <path class="ln" d="M20 112v8h600v-8"/><text x="320" y="140" text-anchor="middle">about √x lifts to control the prime sum up to x; each adds one unit of “multiplicity”</text>
+    </svg></div>
+    <figcaption>The chain as the announcement describes it. The rank rule k + j(t+1) is from the source's <code>Ranks</code> structure, and the length condition x<sup>½−ε</sup> ≤ m from <code>RestSize</code>.</figcaption>
+  </figure>
+  <figure>
+    <div class="tw"><svg class="dg" viewBox="0 0 640 130" role="img" aria-label="One lattice quantity pinned between a lower bound from the slope inequality and an upper bound from divisibility">
+      <line class="ln" x1="40" y1="60" x2="600" y2="60"/>
+      <line class="ln" x1="170" y1="48" x2="170" y2="72"/><line class="ln" x1="470" y1="48" x2="470" y2="72"/>
+      <circle class="dot" cx="320" cy="60" r="6"/>
+      <line class="ac" x1="178" y1="60" x2="308" y2="60"/><line class="ac" x1="462" y1="60" x2="332" y2="60"/>
+      <text x="170" y="36" text-anchor="middle">lower bound: SlopeIneq</text><text x="470" y="36" text-anchor="middle">upper bound: DIV</text><text x="320" y="36" text-anchor="middle">muCC</text>
+      <text class="mu" x="170" y="90" text-anchor="middle">geometry of the lattices</text><text class="mu" x="470" y="90" text-anchor="middle">divisibility by primes: log p enters</text>
+      <text x="320" y="118" text-anchor="middle">lower ≤ muCC ≤ upper, so lower ≤ upper: a one-sided inequality involving the prime sum</text>
+    </svg></div>
+    <figcaption>The squeeze. Two unrelated estimates of the same slope must be consistent, and that consistency is the inequality on the prime error.</figcaption>
+  </figure>
+  <div class="note"><b>How sure is this section?</b> The first two parts are classical and I read the Lean statements for them. The last three combine the announcement with the names and shapes of statements in the source. I have not read the proofs that connect divisibility and slopes to the prime sum.</div>
+</section>
+
+<section data-view="waves">
+  <h1>Primes as waves, drawn from the numbers</h1>
+  <p class="lede">These charts are computed in your browser from the definitions, using the primes up to 20,000 and the first 30 zeros of the zeta function. They show the classical picture the proof starts from. Nothing here depends on the new argument.</p>
+
+  <h2>The staircase and the waves that build it</h2>
+  <p>The function ψ(x) adds log p each time x passes a power of a prime p. It is a staircase that climbs roughly like x. The explicit formula rebuilds it from the zeros: start with the straight line and subtract one wave for each pair of zeros.</p>
+<pre>ψ(x) = x − Σ_ρ x^ρ / ρ − log 2π − ½·log(1 − x⁻²)</pre>
+  <figure>
+    <div class="ctl"><label for="k1">Pairs of zeros used</label><input id="k1" type="range" min="0" max="30" value="8"><output id="k1v">8</output></div>
+    <div class="lg"><span><i style="background:var(--fg)"></i>prime staircase ψ(x)</span><span><i style="background:var(--s1)"></i>line minus the first waves</span></div>
+    <div class="tw"><div class="plot" id="p1"><svg role="img" aria-label="The prime staircase and its reconstruction from zeros of zeta"></svg><div class="tip" hidden></div></div></div>
+    <figcaption>Drag the slider from 0 upward. With no waves you get the smooth line. As waves are added the steps appear at the primes, and the curve rings on either side of each jump. This is the overshoot you always get when a sharp step is built from smooth waves, as in a Fourier series.</figcaption>
+  </figure>
+
+  <h2>Smoothing removes the ringing</h2>
+  <p>The proof does not bound the staircase. It bounds <code>Gz</code>, which weights each term by (x/n − 1). That weight is the same as integrating the staircase, so the jumps disappear and the curve is continuous. The waves change too: their sizes now fall off like 1/γ², where γ is the height of the zero, so a handful dominate.</p>
+<pre>Gz(x) = log 2π − Σ_ρ x^ρ / (ρ(ρ−1)) − (a tiny term)
+
+if every zero has real part ½:
+Gz(x) = log 2π + √x · Σ_{γ&gt;0} 2·cos(γ·log x) / (¼ + γ²)</pre>
+  <p>The chart divides by √x so the waves keep a fixed height. The blue curve is computed directly from the primes. The orange one uses only zeros.</p>
+  <figure>
+    <div class="ctl"><label for="k2">Waves added together</label><input id="k2" type="range" min="1" max="30" value="1"><output id="k2v">1</output></div>
+    <div class="lg"><span><i style="background:var(--s1)"></i>(Gz(x) − log 2π) / √x, from the primes</span><span><i style="background:var(--s2)"></i>sum of the first waves (dashed)</span></div>
+    <div class="tw"><div class="plot" id="p2"><svg role="img" aria-label="The smoothed prime error divided by root x, against sums of waves from the zeros"></svg><div class="tip" hidden></div></div></div>
+    <figcaption>With one wave you see a pure cosine in log x: evenly spaced on this logarithmic axis and running across all of it, not sitting near any particular prime. By about ten waves the two curves are hard to tell apart. There is no ringing because there are no jumps left.</figcaption>
+  </figure>
+
+  <h2>What the ceiling rules out</h2>
+  <p>If every zero is on the line, the heights of all the waves add up to 2 + γ − log 4π ≈ 0.046, so the scaled error can never leave a band of that half-width. Up to 20,000 it stays within 0.019. A zero with real part β above ½ would add a wave that grows like x<sup>β−½</sup> on this chart, and sooner or later it leaves any band.</p>
+  <figure>
+    <div class="lg"><span><i style="background:var(--s1)"></i>actual, from the primes</span><span><i style="background:var(--s2)"></i>hypothetical: one zero moved to real part 0.75 (dashed)</span></div>
+    <div class="tw"><div class="plot" id="p3"><svg role="img" aria-label="The actual scaled error stays in a narrow band while a hypothetical off-line zero breaks out of it"></svg><div class="tip" hidden></div></div></div>
+    <figcaption>The dashed curve is invented for illustration: the actual curve plus one wave of size x<sup>0.75</sup> at the frequency of the first zero. It breaks out above and below. The proof's ceiling of x<sup>½+ε</sup> is, on this chart, a line rising as slowly as x<sup>ε</sup>, so a wave growing like x<sup>0.25</sup> crosses it once ε is below 0.25. Bounding the top side alone is enough to exclude the zero.</figcaption>
+  </figure>
+  <div class="note"><b>What is and is not shown.</b> Vast numbers of zeros are known by computation to lie on the line, so charts like these have always looked this way. They are evidence, and they are the target of the proof, but they prove nothing about what happens further out.</div>
+</section>
+
+<section data-view="chain">
+  <h1>The proof chain, level by level</h1>
+  <p class="lede">Each level shows the Lean statement, a plain reading of it, and where it lives. Paths are relative to <code>src/</code> in the repository.</p>
+  <figure>
+    <div class="tw"><svg class="dg" viewBox="0 0 640 406" role="img" aria-label="What each level of the proof gives to the level above it">
+      <defs><marker id="arA" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="currentColor"/></marker></defs>
+      <rect class="b" x="170" y="10" width="300" height="34" rx="3"/><text x="320" y="32" text-anchor="middle">RH and four L-function theorems</text>
+      <rect class="b" x="170" y="82" width="300" height="34" rx="3"/><text x="320" y="104" text-anchor="middle">EveryCharacter: no zeros right of ½</text>
+      <rect class="b" x="170" y="154" width="300" height="34" rx="3"/><text x="320" y="176" text-anchor="middle">ZeroFreeAll: primitive characters only</text>
+      <rect class="b" x="170" y="226" width="300" height="34" rx="3"/><text x="320" y="248" text-anchor="middle">Gm(x) ≤ x^(½+cε) on windows</text>
+      <rect class="hl" x="170" y="298" width="300" height="34" rx="3"/><text x="320" y="320" text-anchor="middle">a tied chain exists at every scale</text>
+      <rect class="b" x="10" y="368" width="190" height="30" rx="3"/><text x="105" y="388" text-anchor="middle">Green's classification</text>
+      <rect class="b" x="225" y="368" width="190" height="30" rx="3"/><text x="320" y="388" text-anchor="middle">VWin: cohomology bound</text>
+      <rect class="b" x="440" y="368" width="190" height="30" rx="3"/><text x="535" y="388" text-anchor="middle">about 195 known theorems</text>
+      <line class="ln" x1="320" y1="82" x2="320" y2="47" marker-end="url(#arA)"/><text class="mu" x="332" y="68">level 1: reflect across the line</text>
+      <line class="ln" x1="320" y1="154" x2="320" y2="119" marker-end="url(#arA)"/><text class="mu" x="332" y="140">level 2: strip the extra factors</text>
+      <line class="ln" x1="320" y1="226" x2="320" y2="191" marker-end="url(#arA)"/><text class="mu" x="332" y="212">level 3: Landau's criterion</text>
+      <line class="ln" x1="320" y1="298" x2="320" y2="263" marker-end="url(#arA)"/><text class="mu" x="332" y="284">level 4: core_gm, the squeeze</text>
+      <line class="ln" x1="105" y1="368" x2="236" y2="335" marker-end="url(#arA)"/><line class="ln" x1="320" y1="368" x2="320" y2="335" marker-end="url(#arA)"/><line class="ln" x1="535" y1="368" x2="404" y2="335" marker-end="url(#arA)"/>
+      <text class="mu" x="332" y="356">level 5</text>
+    </svg></div>
+    <figcaption>Each arrow reads “gives”. The highlighted box is where the claimed new step sits: the levels above it are classical, and the three inputs below it are the machinery that builds the chains.</figcaption>
+  </figure>
+
+  <details open><summary><span class="n">0</span><b>Five theorems, one fact</b><span class="chip ok">proof read</span></summary><div class="in">
+    <p>All five headline theorems are one-line consequences of a single statement, <code>EveryCharacter</code>.</p>
+<pre>def UpperTheory.EveryCharacter : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+    1 / 2 &lt; s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0
+
+theorem allChi  : UpperTheory.EveryCharacter := UpperTheory.FinalTheorems.everyCharacter
+theorem rhOfAll : RiemannHypothesis := Formalism.VW.rh_of_every allChi
+theorem riemannHypothesis : RiemannHypothesis := rhOfAll</pre>
+    <p>In words: for every modulus N and every Dirichlet character χ, the L-function has no zero with real part greater than ½. The one exception is the pole of the trivial character at s = 1. The zeta function is the case N = 1.</p>
+    <p class="path">Main.lean · Supplements/Kernels/MainTheorems.lean · Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean</p>
+  </div></details>
+
+  <details open><summary><span class="n">1</span><b>Reflect across the line</b><span class="chip ok">proof read</span></summary><div class="in">
+    <p>The completed L-function satisfies a functional equation relating s to 1 − s. A zero to the left of ½ would reflect to a zero to the right, which level 0 forbids. So zeros in the strip 0 &lt; Re s &lt; 1 lie exactly on the line. For zeta the same reflection also accounts for the trivial zeros at −2, −4, ….</p>
+    <p>This uses Mathlib's existing lemmas for the functional equation and the Gamma factor. It is ordinary, readable Lean.</p>
+    <figure>
+      <div class="tw"><svg class="dg" viewBox="0 0 640 200" role="img" aria-label="A zero left of the critical line would reflect to a zero right of it">
+        <defs><marker id="arB" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L8 4L0 8z" fill="currentColor"/></marker></defs>
+        <rect x="200" y="14" width="240" height="150" style="fill:var(--accent-soft)"/>
+        <line class="ln" x1="200" y1="14" x2="200" y2="164"/><line class="ln" x1="440" y1="14" x2="440" y2="164"/><line class="ac" x1="320" y1="14" x2="320" y2="164"/>
+        <line class="ln" x1="40" y1="164" x2="600" y2="164"/>
+        <text x="200" y="182" text-anchor="middle">0</text><text x="320" y="182" text-anchor="middle">½</text><text x="440" y="182" text-anchor="middle">1</text><text class="mu" x="600" y="182" text-anchor="end">real part of s</text>
+        <circle cx="250" cy="80" r="5" class="b"/><circle cx="390" cy="80" r="5" class="b"/>
+        <line class="ln" x1="258" y1="80" x2="382" y2="80" stroke-dasharray="4 4" marker-end="url(#arB)"/>
+        <text x="190" y="84" text-anchor="end">a zero here…</text><text x="450" y="76">…would force a zero here,</text><text x="450" y="92">which level 0 forbids</text>
+        <text class="mu" x="326" y="30">the critical line</text>
+      </svg></div>
+      <figcaption>The functional equation mirrors zeros across the line Re s = ½. Clearing the right half of the strip clears the left half too, leaving only the line.</figcaption>
+    </figure>
+    <p class="path">Formalism/GammaFactorNonvanishing/CritLine.lean · Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean</p>
+  </div></details>
+
+  <details open><summary><span class="n">2</span><b>Primitive characters suffice</b><span class="chip ok">proof read</span></summary><div class="in">
+    <p>Every character is induced from a primitive one, and their L-functions differ by finitely many factors of the form 1 − χ(p)p<sup>−s</sup>. Those factors cannot vanish when Re s &gt; 0. So it is enough to prove <code>ZeroFreeAll</code>, the statement for primitive characters.</p>
+<pre>def PChar.ZeroFreeAbove (ψ : PChar) (θ : ℝ) : Prop :=
+  ∀ s : ℂ, θ &lt; s.re → DirichletCharacter.LFunction ψ.χ s ≠ 0
+
+def ZeroFreeAll : Prop := ZeroFreeOn fun _ => True   -- every primitive ψ is zero-free above 1/2</pre>
+    <p class="path">Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean · Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean</p>
+  </div></details>
+
+  <details open><summary><span class="n">3</span><b>A one-sided bound on a prime sum is enough</b><span class="chip warn">statements read</span></summary><div class="in">
+    <p>The source defines the smoothed prime error <code>Gz</code> and states Landau's criterion for it. The sign s₀ may be +1 or −1: a bound from either side works.</p>
+<pre>def Sz (x : ℝ) : ℝ := ∑ n ∈ Finset.Icc 1 ⌊x⌋₊, Λ n * (x / n - 1)
+def Gz (x : ℝ) : ℝ := Sz x - x * Real.log x + (1 + Real.eulerMascheroniConstant) * x
+
+def ZetaLandau : Prop :=
+  ∀ s₀ : ℝ, (s₀ = 1 ∨ s₀ = -1) → ∀ θ : ℝ, 0 &lt; θ → θ &lt; 1 →
+  (∃ C x₀ : ℝ, ∀ x : ℝ, x₀ ≤ x → s₀ * Gz x ≤ C * x ^ θ) →
+  ∀ s : ℂ, θ &lt; s.re → riemannZeta s ≠ 0</pre>
+    <p>The version the final proof uses works with a set of characters at once. For each primitive ψ it forms a <code>Level</code>, a finite set of characters containing ψ, and a combined error <code>Gm</code>: the zeta error plus weighted character-twisted errors.</p>
+<pre>def Gm (y : ℝ) : ℝ := Formalism.Gz y + ∑ ψ ∈ Λ.Nt, Λ.wt ψ * (An.gChi ψ.χ y).re</pre>
+    <p>The bound is only needed on “windows”, a sparse set of scales x, as long as consecutive windows are not too far apart. The theorem <code>zeroFreeOn_of_tiedWin_cyc</code> assembles this: a bound <code>Gm x ≤ x^(1/2 + c·ε)</code> on windows, for every small ε, gives a zero-free half-plane for every character in the level.</p>
+    <p class="path">Formalism/Statement.lean, StatementOC.lean, StatementU.lean, ZetaRealNonvanish.lean · Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean</p>
+  </div></details>
+
+  <details open><summary><span class="n">4</span><b>A tied chain gives the bound</b><span class="chip warn">statements read</span></summary><div class="in">
+    <p>This is the theorem that produces the inequality. Given a package of arithmetic data at scale x satisfying a long list of conditions (<code>CoreAtH</code>), the combined error is below the ceiling.</p>
+<pre>theorem core_gm :
+  ∀ (Λ : Level) (eD eL K cHH eK C eps : ℝ), 0 &lt; eps → ∃ x1 : ℝ, ∀ x ≥ x1,
+    ∀ (φ : Frame) (H : HostAx φ) (TT : Finset φ.A),
+      EAtH Λ H.toHostRaw TT x eps C → CoreAtH H.toHostRaw TT eD eL K cHH eK eps x →
+        Λ.Gm x ≤ x ^ ((1 : ℝ) / 2 + (eD + eL + 7) * eps)</pre>
+    <p>Its proof has two named halves. <code>ch_top</code> turns the chain's conditions into a bound for each component. <code>ch_core</code> turns those bounds into the inequality on <code>Gm</code>.</p>
+    <p>The conditions include size requirements. This one forces the chain to be about √x long:</p>
+<pre>def RestSize (ε x : ℝ) (n nT nT2 m : ℕ) (b k aE : ℝ) : Prop :=
+  aE ≤ 2 * x * b ∧ x ^ (-(ε / 8)) * n / 2 ≤ nT ∧ x ^ (-ε) ≤ (nT2 : ℝ) / n ∧
+  x ^ ((1 : ℝ) / 2 - ε) ≤ m ∧                       -- chain length m is at least x^(1/2 − ε)
+  k ≤ (n : ℝ) ^ 2 * x ^ ((1 : ℝ) / 2 - ε)</pre>
+    <p>And these two pin one lattice quantity, <code>muCC</code>, from above and from below:</p>
+<pre>def DIV : Prop :=        -- divisibility: an upper bound on muCC
+  ∀ u0 (u : W u0), D.muCC u0 + D.h u0 u - D.Fo u0 ≤
+    (∑ t, ((m : ℝ) * (ph (D.aT t) - D.aT t * D.logOm) - D.aT t * Real.log (D.T u0 u))) + …
+
+def SlopeIneq : Prop :=  -- slope inequality: a lower bound on muCC
+  ∀ u0, … → D.s u0 - Real.log (Fintype.card (W u0) : ℝ) - (error terms) ≤ D.muCC u0</pre>
+    <p>Here <code>ph(y) = y·log y − y</code>, the same shape as the main term of the prime sum. The data comes from a structure called <code>D7</code>, described under <a href="#objects">Key objects</a>.</p>
+    <p class="path">Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean, CoreAtH.lean, WindowInequalityOfArtinInputs.lean · Formalism/SizeWindowBrackets/SChain.lean · Formalism/RankGapBounds/MeanBoundSecondForm.lean · Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean, ChCore.lean</p>
+  </div></details>
+
+  <details open><summary><span class="n">5</span><b>Such chains exist</b><span class="chip open">signatures only</span></summary><div class="in">
+    <p>The last step needs a tied chain at every large scale and for every small ε. The top-level theorem takes three inputs.</p>
+<pre>theorem UpperTheory.Top.every_character_of_green_v_win
+    (hG : GlobalTheory.GLq.Green) (hV : UpperTheory.Top.VWin)
+    (h : Nonempty (GlobalTheory.Fc.HypsAlt … DefiniteSideCondition)) : UpperTheory.EveryCharacter</pre>
+    <ul>
+      <li><b><code>Green</code></b> is J. A. Green's 1955 classification of the cuspidal characters of GL<sub>d</sub> over a finite field.</li>
+      <li><b><code>VWin</code></b> bounds the sizes of certain Galois cohomology groups over number fields in a tower of cyclotomic fields. The announcement calls this “a significant weakening of Vandiver”. It is derived from base change, complex multiplication, and Galois representations.</li>
+      <li><b>The hypotheses bundle</b> is filled from about 195 named results from the literature, among them Deligne–Ribet, base change for definite unitary groups, Bhatt–Scholze, the local Langlands correspondence for GL<sub>n</sub>, and Casselman–Wallach.</li>
+    </ul>
+    <p>The literature results are written as depending on a hypothesis <code>OpenLiteratureStatements</code> with three fields. The final theorem supplies all three from proofs in the tree, so nothing is left assumed. The key one is the existence of Galois representations attached to automorphic forms over CM fields, which the project derives from its own theta lifts:</p>
+<pre>theorem galoisLocalGlobalStrong_recParameter : UpperTheory.GalStar.Row0b recT :=
+  galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK
+
+theorem UpperTheory.FinalTheorems.everyCharacter : UpperTheory.EveryCharacter :=
+  UpperTheory.FinalTheorems.everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter</pre>
+    <p class="path">Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean, ZeroFreeAllOfTopG.lean, ExistsPageN.lean · Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean, EveryCharacterOfLiteratureOfVWin.lean, SiegelEisensteinSecondTermHypotheses.lean · Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean</p>
+  </div></details>
+</section>
+
+<section data-view="objects">
+  <h1>Key objects</h1>
+  <p class="lede">Names that recur in the chain, with a plain description and where each is defined. Many short names are reused in other namespaces, so the path matters.</p>
+
+  <h2>Analytic side</h2>
+  <dl>
+    <dt>Gz</dt><dd>The error in the smoothed count of primes: the weighted sum of Λ(n) minus its expected main terms.<span class="path">Formalism/StatementOC.lean</span></dd>
+    <dt>Gchi, GchiC</dt><dd>The same error twisted by a Dirichlet character, real and complex versions.<span class="path">Formalism/StatementOC.lean, StatementFL.lean</span></dd>
+    <dt>PChar</dt><dd>A primitive Dirichlet character packaged with its modulus.<span class="path">Formalism/SharpRestriction/…/TotientGaloisClasses/</span></dd>
+    <dt>Level</dt><dd>A finite set of primitive characters handled together, with weights. <code>Level.cyc ψ</code> is the level built around one character ψ.<span class="path">…/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean</span></dd>
+    <dt>Gm</dt><dd>The combined error for a level: <code>Gz</code> plus weighted twisted errors. This is the quantity the proof bounds.<span class="path">same file</span></dd>
+    <dt>ZeroFreeAll</dt><dd>No primitive Dirichlet L-function has a zero with real part above ½.<span class="path">same file</span></dd>
+    <dt>FormB</dt><dd>Landau's criterion for a level: a bound on <code>Gm</code> at window scales gives a zero-free region.<span class="path">…/TotientGaloisClasses/Window.lean</span></dd>
+  </dl>
+
+  <h2>The chain</h2>
+  <dl>
+    <dt>Scale</dt><dd>The sizes at one step: x, ε below 1/52, and derived quantities such as b = exp(x<sup>ε</sup>) and a = x·b.<span class="path">Formalism/LocalRingCardinality/DataParams₂.lean</span></dd>
+    <dt>Ranks</dt><dd>Three integers k, m, t fixing the sizes of the spaces. The j-th space has rank k + j(t+1), growing by one step per lift.<span class="path">Formalism/LocalRingCardinality/Params.lean</span></dd>
+    <dt>D7</dt><dd>The full package at one scale: a CM field E over a totally real field, Hermitian spaces and self-dual lattices over E, a column chain with Harish-Chandra parameters, a period map, and divisibility data.<span class="path">Formalism/LocalRingCardinality/RhoDetPrimeEqMuTildeMulChiPow.lean</span></dd>
+    <dt>FamCore, FamP</dt><dd>A family: for each scale x in a set of windows, a collection of <code>D7</code> packages.<span class="path">Formalism/SharpRestriction/FamCore.lean, ParConsts.lean</span></dd>
+    <dt>Data</dt><dd>The numbers extracted from a chain: slopes (<code>muN</code>, <code>muM</code>, <code>muCC</code>), heights, sizes, and error terms.<span class="path">Formalism/RankGapBounds/MeanBoundSecondForm.lean</span></dd>
+    <dt>ChainTied</dt><dd>The statement that a family member's data satisfies every condition the inequality needs: identification with the arithmetic, sizes, slopes, divisibility, error windows.<span class="path">Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean</span></dd>
+    <dt>ChainCore, CoreAtH</dt><dd>The same conditions with the family stripped away, as consumed by <code>core_gm</code>.<span class="path">Formalism/SizeWindowBrackets/SChain.lean · …/PrimitiveCosets/CoreAtH.lean</span></dd>
+  </dl>
+
+  <h2>Existence inputs</h2>
+  <dl>
+    <dt>TopG</dt><dd>For any supply of host fields with the right cohomology bound, a connected class of tied families exists.<span class="path">Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean</span></dd>
+    <dt>VWin</dt><dd>For each character and each scale, the fields in the tower have small enough Galois cohomology groups (<code>shaLen</code>), summed over primes with log weights.<span class="path">Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean</span></dd>
+    <dt>WinPair</dt><dd>The two auxiliary primes at a scale: q ≡ 3 mod 8 and d ≡ 7 mod 16, with q dividing d + 1 and prescribed sizes.<span class="path">same file</span></dd>
+    <dt>Green</dt><dd>Green's classification of cuspidal characters of GL<sub>d</sub> over a finite field.<span class="path">Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean</span></dd>
+    <dt>Row0b</dt><dd>For a CM field and a suitable automorphic form on GL<sub>a</sub>, a Galois representation exists with the expected local behavior and weights.<span class="path">Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean</span></dd>
+    <dt>OpenLiteratureStatements</dt><dd>A three-field hypothesis the literature results are stated against. The final theorem fills it from in-tree proofs.<span class="path">…/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean</span></dd>
+  </dl>
+</section>
+
+<section data-view="source">
+  <h1>Source map</h1>
+  <p class="lede">Eight libraries, 175,187 files, 17.4 million lines. Every file is imported, directly or not, by <code>Main.lean</code>.</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Library</th><th>Files</th><th>Lines</th><th>What it holds, by its largest parts</th></tr></thead>
+    <tbody>
+      <tr><td>Development</td><td class="num">141,928</td><td class="num">12,232,663</td><td>AbelianVarietyTheory (99,187 files), AutomorphicArithmetic (18,431), AutomorphicSpectrum (15,147), WeilBound (7,051), EtaleCohomology, ResolutionOfSingularities. The top of the proof chain is in AutomorphicArithmetic.</td></tr>
+      <tr><td>Formalism</td><td class="num">18,254</td><td class="num">3,200,748</td><td>The core vocabulary: the prime sums, Landau statements, the chain and its slope conditions. Largest parts are LocalToGlobal, PeriodIntegrals, SharpRestriction, HermitianCurvature.</td></tr>
+      <tr><td>GroundTheory</td><td class="num">8,507</td><td class="num">1,119,138</td><td>HeightsAndTheta (6,410 files), automorphic forms, profinite cohomology, local and global fields, p-adic Hodge theory.</td></tr>
+      <tr><td>ReciprocityTheory</td><td class="num">3,845</td><td class="num">563,016</td><td>ReductiveGroups (2,799 files), class field theory, Chebotarev, geometry of numbers.</td></tr>
+      <tr><td>CompanionTheory</td><td class="num">2,027</td><td class="num">194,218</td><td>SpectralGeometry, AutomorphicTheory, real groups and Harish-Chandra modules.</td></tr>
+      <tr><td>PositivityTheory</td><td class="num">449</td><td class="num">55,130</td><td>Arithmetic positivity results such as Hilbert–Samuel and Moriwaki bigness.</td></tr>
+      <tr><td>Lemmata</td><td class="num">167</td><td class="num">9,232</td><td>Small standalone lemmas, one per folder.</td></tr>
+      <tr><td>Supplements, BuildAid, Main, Statements</td><td class="num">10</td><td class="num">70</td><td>The five final theorems and the three files that assemble them.</td></tr>
+    </tbody>
+  </table></div>
+  <p>File and line counts are from the mirror's verification notes. The largest-part counts are from my own count of the local clone.</p>
+
+  <h2>Reading conventions</h2>
+  <ul>
+    <li><b>Statements are separate from proofs.</b> A typical file defines <code>def Something : Prop := …</code>, and a theorem elsewhere proves it. The files <code>Formalism/Statement*.lean</code> are the clearest examples.</li>
+    <li><b>Folder names do not describe contents.</b> The central <code>D7</code> structure is in <code>LocalRingCardinality/RhoDetPrimeEqMuTildeMulChiPow.lean</code>. Navigate by declaration name.</li>
+    <li><b>Short names repeat.</b> <code>Frame</code>, <code>Scale</code>, <code>Ident</code>, <code>formB</code> and others are each defined several times in different namespaces. Check the <code>open</code> lines at the top of the file you are in.</li>
+    <li><b>There are no comments</b> anywhere in the submission.</li>
+  </ul>
+
+  <h2>Finding a declaration</h2>
+  <p>A search over the whole tree takes about two seconds with ripgrep. From <code>src/</code>:</p>
+<pre>rg -n -g '*.lean' '(theorem|def|structure) (\S+\.)?core_gm\b' .</pre>
+  <p>The optional prefix matches both styles the source uses: fully qualified names and short names inside a namespace block.</p>
+</section>
+
+<section data-view="status">
+  <h1>What is checked, and what is not</h1>
+  <p class="lede">Three different questions get mixed together: whether Lean accepts the proof, whether independent checkers accept it, and whether anyone understands it.</p>
+
+  <h2>Machine verification, as of 20 November 2026</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Check</th><th>State</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Statements match Mathlib's</td><td><span class="chip ok">read by hand</span></td><td>The headline theorem is Mathlib's own <code>RiemannHypothesis</code>. The mirror restates all five in a file importing only Mathlib.</td></tr>
+      <tr><td>Text scan for shortcuts</td><td><span class="chip ok">clean</span></td><td>No <code>axiom</code>, <code>sorry</code>, <code>native_decide</code>, <code>unsafe</code> or similar. A text scan is not a proof.</td></tr>
+      <tr><td>Full build on Lean 4.33.1</td><td><span class="chip warn">in progress</span></td><td>Estimated 7 to 10 hours on 48 cores with 503 GB of memory.</td></tr>
+      <tr><td>Judging by Lean 4.36.0 and nanoda</td><td><span class="chip open">not yet run</span></td><td>This is the check that counts. Three other checkers cannot read the project for unrelated reasons.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Reasons for care</h2>
+  <ul>
+    <li><b>The pinned Lean version is old.</b> Lean 4.33.1 lacks later runtime fixes that its release notes say could be turned into a proof of a false statement with crafted input. That is why the judging uses a newer kernel and an independent one.</li>
+    <li><b>Some proofs bypass the usual front end.</b> The source defines tactics, <code>kexactB</code> and <code>kcopy</code>, that hand a proof term to the goal without the elaborator checking it, used in 67 files. That is sound only because the kernel checks everything, so the kernel replay carries all the weight.</li>
+    <li><b>No human-readable proof exists yet.</b> The author says he has not mastered much of the argument and that parts of his own summary “might make zero sense”.</li>
+  </ul>
+
+  <h2>What these pages rest on</h2>
+  <div class="tw"><table>
+    <thead><tr><th>Part</th><th>Basis</th></tr></thead>
+    <tbody>
+      <tr><td>Levels 0 to 2</td><td><span class="chip ok">proof read</span> I read the Lean proofs. They are short and use standard Mathlib lemmas.</td></tr>
+      <tr><td>Level 3</td><td><span class="chip warn">statements read</span> I read the definitions and the assembling theorem. I did not read the proofs of the Landau statements.</td></tr>
+      <tr><td>Level 4</td><td><span class="chip warn">statements read</span> I read <code>core_gm</code>, its hypotheses and the slope conditions. The account of why they give the bound is my reading of their shapes plus the announcement.</td></tr>
+      <tr><td>Level 5</td><td><span class="chip open">signatures only</span> I read the types of the top theorems. I have not looked at how theta lifts, Galois representations or the cohomology bound are proved.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Open questions for a next pass</h2>
+  <ul>
+    <li>Inside <code>ch_top</code> and <code>ch_core</code>: exactly how do divisibility and the slope inequality combine, and where does each prime contribute its log p?</li>
+    <li>What do the 195 literature statements say in full? Are they the real theorems or weaker forms sufficient for this use?</li>
+    <li>How is <code>VWin</code> proved, and how strong is it compared with Vandiver's conjecture?</li>
+    <li>What is the “toy setting” the announcement mentions? The single-character statements in <code>Formalism/Statement.lean</code>, using the quadratic characters mod 3, 4 and 7, look like its remains.</li>
+  </ul>
+
+  <h2>Sources</h2>
+  <ul>
+    <li>Announcement: <a href="https://alpo.ge/remark.pdf">alpo.ge/remark.pdf</a></li>
+    <li>Mirror and verification notes: <a href="https://github.com/Deicyde/riemann-hypothesis">github.com/Deicyde/riemann-hypothesis</a></li>
+    <li>Declaration-level trace by another reader: <a href="https://github.com/Deicyde/riemann-hypothesis/issues/3">issue #3</a></li>
+  </ul>
+</section>
+
+<div role="navigation" style="display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-top:2rem;padding-top:1rem;border-top:1px solid var(--rule);font-size:.95rem" aria-label="Chapter"><a href="../quiz-2/">← Quiz: Part II</a><a href="../a1-smoothed-error/">20 The smoothed error →</a></div>
+</main>
+</div>
+
+<script>
+(function(){
+  // Landau schematic: a growing wave against a ceiling.
+  var svg=document.getElementById('landau'),NS='http://www.w3.org/2000/svg';
+  function el(n,a,t){var e=document.createElementNS(NS,n);for(var k in a){if(k==='fill'||k==='stroke')e.style[k]=a[k];else e.setAttribute(k,a[k])}if(t)e.textContent=t;svg.appendChild(e);return e}
+  var x0=50,x1=610,ym=125,W=x1-x0;
+  function amp(u,p){return 14+86*Math.pow(u,p)}
+  var wave='',ceil='',floor='';
+  for(var i=0;i<=280;i++){var u=i/280,x=x0+u*W;
+    wave+=(i?'L':'M')+x.toFixed(1)+' '+(ym-amp(u,1.5)*Math.sin(u*30)).toFixed(1);
+    ceil+=(i?'L':'M')+x.toFixed(1)+' '+(ym-amp(u,.55)*.62).toFixed(1);
+    floor+=(i?'L':'M')+x.toFixed(1)+' '+(ym+amp(u,1.5)).toFixed(1);}
+  el('line',{x1:x0,y1:ym,x2:x1,y2:ym,stroke:'var(--rule)','stroke-width':1});
+  el('line',{x1:x0,y1:16,x2:x0,y2:234,stroke:'var(--rule)','stroke-width':1});
+  el('path',{d:floor,fill:'none',stroke:'var(--muted)','stroke-width':1,'stroke-dasharray':'4 4'});
+  el('path',{d:ceil,fill:'none',stroke:'var(--ok)','stroke-width':2.5});
+  el('path',{d:wave,fill:'none',stroke:'var(--open)','stroke-width':1.6});
+  var t={fill:'var(--fg)','font-size':12,'font-family':'IBM Plex Sans, sans-serif'};
+  el('text',Object.assign({x:x0+8,y:28},t),'error above the main term');
+  el('text',Object.assign({x:x1,y:ym+16,'text-anchor':'end'},t),'x →');
+  el('text',Object.assign({x:300,y:62},t,{fill:'var(--ok)'}),'ceiling x^(½+ε): what the proof establishes');
+  el('text',Object.assign({x:300,y:228},t,{fill:'var(--muted)'}),'lower side: never needs to be controlled');
+  el('text',Object.assign({x:x0+8,y:ym+62},t,{fill:'var(--open)'}),'wave from a zero with real part β > ½');
+
+  // Computed charts: primes up to NMAX and the first 30 zeta zeros.
+  var ZG=[14.134725,21.022040,25.010858,30.424876,32.935062,37.586178,40.918719,43.327073,48.005151,49.773832,52.970321,56.446248,59.347044,60.831779,65.112544,67.079811,69.546402,72.067158,75.704691,77.144840,79.337375,82.910381,84.735493,87.425275,88.809111,92.491899,94.651344,95.870634,98.831194,101.317851];
+  var NMAX=20000,lam=new Float64Array(NMAX+1),comp=new Uint8Array(NMAX+1),psiP=new Float64Array(NMAX+1),aP=new Float64Array(NMAX+1);
+  for(var p=2;p<=NMAX;p++)if(!comp[p]){for(var q=2*p;q<=NMAX;q+=p)comp[q]=1;for(var pk=p;pk<=NMAX;pk*=p)lam[pk]=Math.log(p)}
+  for(var n=1;n<=NMAX;n++){psiP[n]=psiP[n-1]+lam[n];aP[n]=aP[n-1]+lam[n]/n}
+  var EG=0.5772156649015329,L2P=Math.log(2*Math.PI);
+  function gzs(x){var f=Math.floor(x);return (x*aP[f]-psiP[f]-x*Math.log(x)+(1+EG)*x-L2P)/Math.sqrt(x)}
+  function psiK(x,K){var s=x-L2P-.5*Math.log(1-1/(x*x)),lx=Math.log(x),r=2*Math.sqrt(x);for(var i=0;i<K;i++){var g=ZG[i];s-=r*(.5*Math.cos(g*lx)+g*Math.sin(g*lx))/(.25+g*g)}return s}
+  function waveK(x,K){var s=0,lx=Math.log(x);for(var i=0;i<K;i++){var g=ZG[i];s+=2*Math.cos(g*lx)/(.25+g*g)}return s}
+  function samp(a,b,n,log,f){var o=[];for(var i=0;i<=n;i++){var u=i/n,x=log?a*Math.pow(b/a,u):a+(b-a)*u;o.push([x,f(x)])}return o}
+  function plot(id,o){
+    var box=document.getElementById(id),sv=box.querySelector('svg'),tip=box.querySelector('.tip'),W=640,H=o.h||260,l=50,r=14,t=12,b=34;
+    var fx=o.log?Math.log:function(v){return v},a=fx(o.x[0]),w=fx(o.x[1])-a;
+    function sx(v){return l+(fx(v)-a)/w*(W-l-r)}
+    function sy(v){return Math.max(t,Math.min(H-b,t+(o.y[1]-v)/(o.y[1]-o.y[0])*(H-t-b)))}
+    var s='';
+    o.yt.forEach(function(v){s+='<line class="gr" x1="'+l+'" x2="'+(W-r)+'" y1="'+sy(v)+'" y2="'+sy(v)+'"/><text class="tk" text-anchor="end" x="'+(l-6)+'" y="'+(sy(v)+4)+'">'+v+'</text>'});
+    o.xt.forEach(function(v){s+='<text class="tk" text-anchor="middle" x="'+sx(v)+'" y="'+(H-b+16)+'">'+v.toLocaleString()+'</text>'});
+    s+='<text class="tk" text-anchor="end" x="'+(W-r)+'" y="'+(H-3)+'">'+o.xl+'</text>';
+    (o.refs||[]).forEach(function(f){s+='<line class="rf" x1="'+l+'" x2="'+(W-r)+'" y1="'+sy(f.y)+'" y2="'+sy(f.y)+'"/><text class="tk" x="'+(l+6)+'" y="'+(sy(f.y)+f.dy)+'">'+f.t+'</text>'});
+    o.series.forEach(function(se){var d='';se.pts.forEach(function(p,i){d+=(i?'L':'M')+sx(p[0]).toFixed(1)+' '+sy(p[1]).toFixed(1)});
+      s+='<path d="'+d+'" style="fill:none;stroke:'+se.c+';stroke-width:2;stroke-linejoin:round'+(se.dash?';stroke-dasharray:6 4':'')+'"/>'});
+    s+='<line class="ch" y1="'+t+'" y2="'+(H-b)+'" style="visibility:hidden"/>';
+    sv.setAttribute('viewBox','0 0 '+W+' '+H);sv.innerHTML=s;
+    box._o=o;box._g={l:l,r:r,W:W,a:a,w:w};
+    if(box._h)return;box._h=1;
+    box.addEventListener('pointermove',function(e){
+      var o=box._o,g=box._g,rc=sv.getBoundingClientRect(),px=(e.clientX-rc.left)/rc.width*g.W,ch=sv.querySelector('.ch');
+      if(px<g.l||px>g.W-g.r){tip.hidden=true;ch.style.visibility='hidden';return}
+      var u=g.a+(px-g.l)/(g.W-g.l-g.r)*g.w,x=o.log?Math.exp(u):u;
+      var h='<b>x = '+(o.log?Math.round(x).toLocaleString():x.toFixed(1))+'</b>';
+      o.series.forEach(function(se){var v=se.pts[0][1];for(var i=0;i<se.pts.length&&se.pts[i][0]<=x;i++)v=se.pts[i][1];
+        h+='<span><i style="background:'+se.c+'"></i>'+se.n+': '+v.toFixed(o.dp)+'</span>'});
+      tip.innerHTML=h;tip.hidden=false;
+      var bx=e.clientX-rc.left;
+      if(bx>rc.width/2){tip.style.left='auto';tip.style.right=(rc.width-bx+12)+'px'}else{tip.style.right='auto';tip.style.left=(bx+12)+'px'}
+      ch.setAttribute('x1',px);ch.setAttribute('x2',px);ch.style.visibility='visible'});
+    box.addEventListener('pointerleave',function(){tip.hidden=true;var ch=sv.querySelector('.ch');if(ch)ch.style.visibility='hidden'});
+  }
+  var stair=[[2,0]];for(var m=2;m<=60;m++){stair.push([m,psiP[m-1]]);stair.push([m,psiP[m]])}
+  var act=samp(10,NMAX,800,true,gzs),k1=document.getElementById('k1'),k2=document.getElementById('k2');
+  function d1(){var K=+k1.value;document.getElementById('k1v').textContent=K;
+    plot('p1',{x:[2,60],y:[0,60],xt:[10,20,30,40,50,60],yt:[0,20,40,60],xl:'x',dp:2,series:[{n:'staircase',c:'var(--fg)',pts:stair},{n:'line minus '+K+' waves',c:'var(--s1)',pts:samp(2,60,900,false,function(x){return psiK(x,K)})}]})}
+  function d2(){var K=+k2.value;document.getElementById('k2v').textContent=K;
+    plot('p2',{log:1,x:[10,NMAX],y:[-.04,.04],xt:[10,100,1000,10000],yt:[-.04,-.02,0,.02,.04],xl:'x (log scale)',dp:4,series:[{n:'from the primes',c:'var(--s1)',pts:act},{n:'first '+K+' waves',c:'var(--s2)',dash:1,pts:samp(10,NMAX,800,true,function(x){return waveK(x,K)})}]})}
+  k1.addEventListener('input',d1);k2.addEventListener('input',d2);d1();d2();
+  plot('p3',{log:1,x:[10,NMAX],y:[-.15,.15],xt:[10,100,1000,10000],yt:[-.15,-.1,-.05,0,.05,.1,.15],xl:'x (log scale)',dp:4,
+    refs:[{y:.0462,dy:-5,t:'+0.046: the limit if every zero is on the line'},{y:-.0462,dy:14,t:'−0.046'}],
+    series:[{n:'actual',c:'var(--s1)',pts:act},{n:'hypothetical',c:'var(--s2)',dash:1,pts:act.map(function(p){return [p[0],p[1]+2*Math.pow(p[0],.25)*Math.cos(ZG[0]*Math.log(p[0]))/(.25+ZG[0]*ZG[0])]})}]});
+
+  // Hash routing between the six views.
+  var views=[].slice.call(document.querySelectorAll('section[data-view]')),links=[].slice.call(document.querySelectorAll('nav a'));
+  function show(){var h=(location.hash||'#overview').slice(1);if(!views.some(function(v){return v.dataset.view===h}))h='overview';
+    views.forEach(function(v){v.hidden=v.dataset.view!==h});
+    links.forEach(function(a){if(a.getAttribute('href')==='#'+h)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+    window.scrollTo(0,0)}
+  window.addEventListener('hashchange',show);show();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GRH Lean Check</title>
+<meta name="description" content="An independent, from-scratch check of the Lean 4 formalization of the Riemann Hypothesis and GRH for Dirichlet L-functions announced by Levent Alpöge and Claude (November 2026).">
+<style>
+:root{
+  --bg:#fbfaf7; --fg:#1d1d1f; --muted:#5f6368; --line:#e3e0d8; --card:#ffffff;
+  --accent:#2f5d8a; --ok:#1e7a46; --okbg:#e6f4ec; --wait:#8a5a00; --waitbg:#fdf3dc;
+  --bad:#a12a2a; --badbg:#fbe7e7; --code:#f3f1ec;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#141517; --fg:#e8e6e3; --muted:#a0a4a8; --line:#2c2e33; --card:#1b1c1f;
+  --accent:#8db4dc; --ok:#6fcf97; --okbg:#173326; --wait:#f2c46d; --waitbg:#3a2e14;
+  --bad:#ff9a9a; --badbg:#3b1a1a; --code:#22242a; } }
+:root[data-theme="dark"]{
+  --bg:#141517; --fg:#e8e6e3; --muted:#a0a4a8; --line:#2c2e33; --card:#1b1c1f;
+  --accent:#8db4dc; --ok:#6fcf97; --okbg:#173326; --wait:#f2c46d; --waitbg:#3a2e14;
+  --bad:#ff9a9a; --badbg:#3b1a1a; --code:#22242a; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Georgia,"Iowan Old Style","Palatino Linotype",serif}
+main{max-width:860px;margin:0 auto;padding:40px 16px 80px}
+h1{font-size:1.9rem;line-height:1.25;margin:0 0 .4rem}
+h2{font-size:1.25rem;margin:2.6rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--line)}
+h3{font-size:1.02rem;margin:1.6rem 0 .4rem}
+p,li{max-width:72ch}
+a{color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 1.4rem}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em}
+code{background:var(--code);padding:.1em .3em;border-radius:4px}
+pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;line-height:1.45}
+pre code{background:none;padding:0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:1rem 0}
+.status{display:flex;gap:14px;align-items:flex-start}
+.badge{display:inline-block;font:600 .74rem/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.03em;text-transform:uppercase;padding:.38em .6em;border-radius:999px;white-space:nowrap}
+.ok{background:var(--okbg);color:var(--ok)} .wait{background:var(--waitbg);color:var(--wait)} .bad{background:var(--badbg);color:var(--bad)}
+.steps{width:100%;border-collapse:collapse;font-size:.95rem}
+.steps td{border-top:1px solid var(--line);padding:10px 8px;vertical-align:top}
+.steps td:first-child{width:7.5rem}
+.steps .what{font-weight:600}
+.steps .how{color:var(--muted);font-size:.9rem}
+.bar{height:10px;background:var(--code);border-radius:6px;overflow:hidden;margin:.5rem 0}
+.bar>span{display:block;height:100%;background:var(--accent)}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 16px;font-size:.93rem}
+.kv div:nth-child(odd){color:var(--muted)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.85em;word-break:break-all}
+.log li{margin:.25rem 0}
+.log time{font-family:ui-monospace,Menlo,monospace;font-size:.82em;color:var(--muted);margin-right:.5em}
+footer{margin-top:3rem;color:var(--muted);font-size:.88rem}
+@media (max-width:560px){ .steps td:first-child{width:auto} .kv{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<main>
+
+<h1>An independent check of the Lean proof of RH and GRH</h1>
+<p class="sub">Checking the Lean 4 formalization announced by Levent Alpöge and Claude on 20 November 2026. All checks are complete.</p>
+<p class="sub"><a href="https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/">&larr; Michael Rubinstein's page on the Alp&ouml;ge/Claude proof</a> (paper explaining the proof for the Riemann zeta function, and other verifications) &middot; <a href="https://github.com/mrubinst/grh-lean-verification">GitHub repository</a> (scripts, logs and the source of this page)</p>
+
+<div class="box status">
+  <span class="badge ok">All checks complete</span>
+  <div>
+    <strong>Where things stand.</strong> All 175,187 modules compile with no errors; <code>#print axioms</code> reports only the three standard axioms for all five main theorems; and a replay of every module through the Lean kernel accepted all 175,187 with no rejections. An independent kernel written in Rust (nanoda) then checked the 1,484,729 declarations the five theorems depend on, with no typechecker errors.
+    <div class="bar" aria-label="progress"><span id="pbar" style="width:100%"></span></div>
+    <div id="pnote" style="font-size:.9rem;color:var(--muted)">At 10:10 UTC (21 Nov): all four checks are complete. nanoda finished at 10:06:58 UTC: 1,484,729 declarations checked, no typechecker errors.</div>
+  </div>
+</div>
+
+<h2>Checklist</h2>
+<table class="steps">
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">Source matches the author's release</div>
+<div class="how">Downloaded the 14 parts listed in the footnote of <a href="https://alpo.ge/remark.pdf">remark.pdf</a> twice, on two machines, and checked their SHA-256 hashes (<a href="SHA256SUMS.parts">SHA256SUMS.parts</a>). The assembled <code>lean.tar.gz</code> (239,275,554 bytes) has SHA-256 <span class="mono">9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc</span>.</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">The theorem statements say what they should</div>
+<div class="how">Read by hand; see <a href="#statements">below</a>. The RH statement is Mathlib's own <code>RiemannHypothesis</code>. The GRH statements live in a 16-line file that imports only Mathlib.</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">The dependencies are genuine upstream releases</div>
+<div class="how">Lean <code>v4.33.1</code> (commit <span class="mono">819816b2</span>), an official release of 2026-08-21. Mathlib is pinned at <span class="mono">0df444a3</span>, the upstream commit "chore: bump toolchain to v4.33.1".</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">Static scan for unproved assumptions and kernel bypasses</div>
+<div class="how">No <code>axiom</code>, <code>sorry</code>, <code>admit</code>, <code>native_decide</code>, <code>implemented_by</code>, <code>extern</code>, <code>unsafe</code>, <code>opaque</code>, or unchecked declaration-adding calls in 175,187 files (<a href="audit.txt">audit.txt</a>, <a href="scripts/audit.sh">audit.sh</a>). The few custom tactics and commands have been read and all go through the kernel; details <a href="#audit">below</a>. A text scan is only a first filter. The authoritative checks are the next three rows.</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">Full compile of all 175,187 modules</div>
+<div class="how">175,187 of 175,187 modules compiled with Lean v4.33.1 against Mathlib's official prebuilt cache; 0 errors. Finished 2026-11-21 01:47:44 UTC, 3 h 18 min after the distributed build started. SHA-256 of the resulting <code>Main.olean</code>: <span class="mono">9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad</span>. Method <a href="#build">below</a>.</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what"><code>#print axioms</code> for the five main theorems</div>
+<div class="how">Each of the five theorems depends only on <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>. No <code>sorryAx</code>, no <code>Lean.ofReduceBool</code>, nothing else. Full output: <a href="axioms.out">axioms.out</a>, produced by <a href="scripts/Axioms.lean">Axioms.lean</a>.
+<pre><code>'riemannHypothesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'riemannZeta_eq_zero_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LFunction_ne_zero_of_half_lt_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LFunction_eq_zero_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LFunction_eq_zero_re_of_isPrimitive' depends on axioms: [propext, Classical.choice, Quot.sound]</code></pre></div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">Kernel replay of every module (Lean's <code>leanchecker</code> routine)</div>
+<div class="how"><strong>Result: 175,187 of 175,187 modules replayed, 0 rejected by the kernel.</strong> Finished 2026-11-21 05:24:21 UTC. Summary: <a href="replay_summary.txt">replay_summary.txt</a>. The set of modules with an <code>OK</code> line is identical to the set of compiled modules. 63 chunks were stopped part-way by the servers' out-of-memory daemon and their unfinished modules were run again; none contained a rejection. For each module, load its imports and re-add every declaration the module defines through the Lean kernel. This is independent of how the <code>.olean</code> files were produced. The stock <code>leanchecker</code> binary resolves each module named on its command line by walking all the <code>.olean</code> files, which was impractically slow for 175,187 modules. So we call its replay function <code>replayFromImports</code>, copied verbatim from <code>src/LeanChecker.lean</code> at v4.33.1 (checked by diff), from a 20-line driver that reads an explicit module list: <a href="checklist/Main.lean">checklist/Main.lean</a>. Work is spread across servers in chunks of 150 modules (<a href="dist/check_worker.py">check_worker.py</a>). Each module is counted as checked only if the driver prints <code>OK</code> for it.</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">Dependency closure of the main theorem</div>
+<div class="how">Starting from <code>riemannHypothesis</code>, we collected every declaration its statement and proof refer to, recursively. <strong>Result: 1,478,198 declarations.</strong> This tells which of the archive's statements the final theorem actually rests on: many statements in the 175,187 files are parallel or earlier formulations that it never uses. Script: <a href="scripts/DepCheck.lean">DepCheck.lean</a>. Outputs for the names we asked about: <a href="scripts/depcheck1.out">run 1</a>, <a href="scripts/depcheck2.out">run 2</a>, <a href="scripts/depcheck3.out">run 3</a>, <a href="scripts/depcheck4.out">run 4</a>, <a href="scripts/depcheck5.out">run 5</a>. In run 4 we also asked about <code>sorryAx</code>, the constant Lean inserts for an unfinished proof: it is not among the 1,478,198 declarations. Each run takes 26 minutes and 93 GB of memory.</div></td></tr>
+<tr><td><span class="badge ok">Done</span></td><td><div class="what">Independent kernel: nanoda (Rust)</div>
+<div class="how">Export the five main theorems together with everything they depend on, using <a href="https://github.com/leanprover/lean4export">lean4export</a> v4.33.0, and check the export with <a href="https://github.com/ammkrn/nanoda_lib">nanoda</a> (commit <span class="mono">0da9f98</span>). Only <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code> are permitted; an axiom outside this list is not admitted to nanoda's environment, so a declaration that used one could not typecheck. Script and configuration: <a href="scripts/run_export_nanoda.sh">run_export_nanoda.sh</a>, <a href="scripts/nanoda_config.json">nanoda_config.json</a>. The export started at 01:49 UTC and finished at 09:17 UTC: 61,571,290,481 bytes, SHA-256 <span class="mono">4301ce4828d397c728e87f3e6a1251aa42abe5e12809bb9e0b73cc3d33072e7e</span>. nanoda started at 09:18 UTC. <strong>Result: nanoda checked 1,484,729 declarations with no typechecker errors</strong> (48 min 25 s on 128 threads, 78 GB peak memory; finished 10:06:58 UTC). The export contains exactly three axioms, which is the size of the permitted list. nanoda also printed one message from its pretty-printer, &ldquo;Unable to print axioms&rdquo;: we had not configured an output for printing, and this is not a typechecking message.</div></td></tr>
+</table>
+
+<h2 id="statements">What exactly is claimed</h2>
+<p><code>Main.lean</code> proves five theorems with no hypotheses:</p>
+<pre><code>theorem riemannHypothesis : RiemannHypothesis
+theorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine
+theorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf
+theorem LFunction_eq_zero_re : DirichletLZerosOnLine
+theorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine</code></pre>
+<p><code>RiemannHypothesis</code> is Mathlib's definition (<code>Mathlib/NumberTheory/LSeries/RiemannZeta.lean</code>, at the pinned commit):</p>
+<pre><code>def RiemannHypothesis : Prop :=
+  ∀ (s : ℂ) (_ : riemannZeta s = 0) (_ : ¬∃ n : ℕ, s = -2 * (n + 1)) (_ : s ≠ 1), s.re = 1 / 2</code></pre>
+<p>This says that every zero of ζ other than the trivial zeros −2, −4, … has real part ½. The clause <code>s ≠ 1</code> only excludes the pole, where Mathlib gives ζ a placeholder value. The other statements are in <code>Statements.lean</code> (SHA-256 <span class="mono">79ef7ca7…33b47bf</span>), which imports nothing but Mathlib:</p>
+<pre><code>def DirichletLNonvanishingRightOfHalf : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+    1 / 2 &lt; s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0
+
+def DirichletLZerosOnLine : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+    0 &lt; s.re → s.re &lt; 1 → DirichletCharacter.LFunction χ s = 0 → s.re = 1 / 2</code></pre>
+<p>In words: for every modulus N, every Dirichlet character χ mod N (primitive or not), and every s with Re s &gt; ½, L(s, χ) ≠ 0, except at the pole s = 1 of the trivial character. That is the Generalized Riemann Hypothesis <em>for Dirichlet L-functions</em>. It is not GRH for Dedekind zeta functions or for automorphic L-functions in general. RH is the case N = 1.</p>
+<p>Why "assumed RH" would be detectable: the theorems have nothing to the left of the colon, so there are no hypotheses. Inside the project there are conditional steps such as <code>rh_of_every (h : EveryCharacter) : RiemannHypothesis</code>, but the final term supplies <code>h</code> by a proved theorem (<code>allChi</code>). The kernel accepts a closed theorem only if every such hypothesis has been discharged. The one remaining way to "assume" something is an axiom, and <code>#print axioms</code> lists them all.</p>
+
+<h3>How the top level fits together</h3>
+<pre><code>Main.riemannHypothesis
+ └ rhOfAll        = Formalism.VW.rh_of_every allChi
+    └ allChi      = UpperTheory.FinalTheorems.everyCharacter       (no zeros of L(s,χ) for Re s &gt; ½)
+       └ everyCharacter_of_row UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter
+          └ … 175,187 modules: automorphic forms, theta lifts, Galois representations,
+              arithmetic geometry, p-adic Hodge theory, all proved inside the project</code></pre>
+<p>The step from "no zeros right of ½" to "zeros on the line" (<code>Formalism/GammaFactorNonvanishing/CritLine.lean</code>) is a short, standard argument using the functional equation, applied to χ⁻¹ at 1 − s. We have read it.</p>
+
+<h2 id="audit">Source audit</h2>
+<div class="kv">
+<div>Files / lines</div><div>175,187 <code>.lean</code> files, 17,374,215 lines (Mathlib itself is about 2 million)</div>
+<div>Largest parts</div><div><code>Development/</code> 12.2M lines · <code>Formalism/</code> 3.2M · <code>GroundTheory/</code> 1.1M · <code>ReciprocityTheory/</code> 0.56M · <code>CompanionTheory/</code> 0.19M</div>
+<div>Import graph</div><div>Every module is reachable from <code>Main</code>. The longest import chain is 203 modules (about 50k lines). Total lines divided by the longest chain is about 350, a rough measure of how parallel the build can be.</div>
+<div>Lakefile options</div><div><code>maxHeartbeats 4000000</code> (20× the default), <code>autoImplicit false</code>, <code>--tstack=400000</code>. None of these affect soundness.</div>
+</div>
+<p>Metaprogramming present (all read by hand):</p>
+<ul>
+<li><code>BuildAid/D1–D5.lean</code>: one <code>run_cmd</code> each, adding a namespace to the library-search deny list. Editor tooling only.</li>
+<li><code>…/CutCptCopy.lean</code>: a command that copies declarations with renamed constants via <code>addDecl</code>. <code>addDecl</code> sends each copy to the kernel.</li>
+<li><code>…/OwnStruct.lean</code>, <code>…/HeckeNonvanishing/Imports.lean</code>: tactics (<code>kcopy</code>, <code>kexactB</code>) that assign a goal directly instead of going through the elaborator's unifier. The kernel still checks the resulting proof term when the theorem is added.</li>
+</ul>
+<p>None of this is needed for trust. A kernel replay does not run tactics; it re-checks the finished terms.</p>
+
+<h2 id="build">How we are building it</h2>
+<p>A plain <code>lake build</code> worked but was slow. With 175k modules, Lake's own dependency bookkeeping used 110–160 cores, kept only 20–30 compiles running at once, and pointed to a finish in roughly 17 hours. Loading Mathlib's 6.4 GB of <code>.olean</code> files over NFS was a further 6–40× penalty per module. So the build now runs as follows:</p>
+<ul>
+<li>Each server holds a local copy of the Lean toolchain, Mathlib's official prebuilt cache, and the sources.</li>
+<li>A small scheduler (<a href="dist/coord.py">coord.py</a>, <a href="dist/agent.py">agent.py</a>) compiles each module with <code>lean</code> directly. It uses the same options Lake passes (package name, lakefile options, the per-library option for <code>GroundTheory.LocalFields/GlobalFields</code>, <code>--tstack</code>). A module is started on a machine only once every module it imports is present on that machine's disk.</li>
+<li>We checked that this invocation gives byte-identical <code>.olean</code> files to Lean run with Lake's own generated setup file for the same module.</li>
+<li>Correctness does not depend on the scheduler: the kernel replays below re-check every declaration, however the files were produced.</li>
+</ul>
+<div class="kv">
+<div>Hardware</div><div>University compute servers, mostly AMD EPYC 9754 (512-core) and Intel Xeon Gold 6230 machines, shared with other jobs</div>
+<div>Toolchain</div><div>Lean 4.33.1 · Mathlib <span class="mono">0df444a3</span> · lean4export v4.33.0 · nanoda <span class="mono">0da9f98</span></div>
+</div>
+
+<h2>What a successful check will and won't mean</h2>
+<p>If the compile succeeds, the axioms are only the standard three, and both kernels accept, then the theorems above are proved. This assumes only that the Lean kernel (checked twice, by independent implementations) is sound and that Mathlib's definitions of ζ and of Dirichlet L-functions mean what they are supposed to. Those definitions are long established and come with the Euler product, the functional equation, ζ(2) = π²/6 and the prime number theorem.</p>
+<h2>Log</h2>
+<ul class="log" id="log">
+<li><time>2026-11-21 10:06 UTC</time>nanoda finished: 1,484,729 declarations checked, no typechecker errors. All four checks are now complete.</li>
+<li><time>2026-11-21 09:35 UTC</time>Dependency runs 3 and 4 finished. <code>sorryAx</code> is not in the dependency closure of <code>riemannHypothesis</code>, consistent with the axiom check.</li>
+<li><time>2026-11-21 09:18 UTC</time>Export for nanoda finished (61.6 GB; our earlier 60 GB estimate was close after all). nanoda started.</li>
+<li><time>2026-11-21 09:02 UTC</time>Export for nanoda still running: 60.3 GB written, final size unknown.</li>
+<li><time>2026-11-21 08:59 UTC</time>Second dependency-closure run finished (135 names checked against the 1,478,198 declarations the main theorem depends on).</li>
+<li><time>2026-11-21 08:26 UTC</time>First dependency-closure run recorded: <code>riemannHypothesis</code> depends on 1,478,198 declarations.</li>
+<li><time>2026-11-21 05:24 UTC</time>Kernel replay finished: all 175,187 modules accepted, 0 rejected.</li>
+<li><time>2026-11-21 04:29 UTC</time>Kernel replay: 166,076 modules accepted, 0 rejected by the kernel. The last modules import almost the whole project, and a replay worker running 16 at once grew to about 200 GB; 31 more chunks were stopped part-way by <code>earlyoom</code> (58 in all). We now run 8 at once per worker and fewer workers per server. Every interrupted chunk's unfinished modules were put back in the queue by the sweep; none contains a kernel rejection.</li>
+<li><time>2026-11-21 03:13 UTC</time>Kernel replay: 133,307 modules accepted, 0 rejected by the kernel. Between 02:15 and 02:50 UTC, 27 replay chunks were stopped part-way by the servers' out-of-memory daemon (<code>earlyoom</code>): the replay of later modules needs up to about 140 GB per worker, and we had started too many workers. None of these chunks contains a kernel rejection. We reduced the number of workers per server. A module counts as checked only if it has its own <code>OK</code> line; a sweep script (<a href="dist/sweep.py">sweep.py</a>) puts every module without one back in the queue.</li>
+<li><time>2026-11-21 02:10 UTC</time>Kernel replay: 94,464 modules accepted, 0 rejected. All 175,187 modules are now queued for replay. Export for nanoda in progress (4.6 GB so far).</li>
+<li><time>2026-11-21 01:55 UTC</time><code>#print axioms</code>: all five theorems depend only on <code>propext</code>, <code>Classical.choice</code>, <code>Quot.sound</code>. Kernel replay: 82,785 modules accepted, 0 rejected. Export for nanoda started.</li>
+<li><time>2026-11-21 01:47 UTC</time>Compile finished: 175,187 of 175,187 modules, 0 errors.</li>
+<li><time>2026-11-21 01:28 UTC</time>175,170 of 175,187 modules compiled, 0 failures. Kernel replay: 66,781 modules accepted, 0 rejected.</li>
+<li><time>2026-11-21 00:09 UTC</time>91% compiled, 0 failures. Kernel replay: 23,550 modules accepted, 0 rejected. Replay workers we had added on the two largest servers slowed the compile there, so we removed them until the compile finishes; their unfinished chunks were returned to the queue.</li>
+<li><time>2026-11-20 23:42 UTC</time>78% compiled, 0 failures. Kernel replay: 12,150 modules accepted, 0 rejected. Three replay chunks on one server were stopped by the operating system under memory pressure, not rejected by the kernel; we reduced the number of workers on that server and are re-running those chunks in full.</li>
+<li><time>2026-11-20 23:13 UTC</time>53% compiled. Kernel replay running alongside the build on spare cores: 900 modules replayed, 0 rejected.</li>
+<li><time>2026-11-20 23:02 UTC</time>Fixed a bug in our scheduler: a 230-character module name pushed a temporary file name past the 255-byte limit. The compile itself had succeeded. Restarted the coordinator, which resumed from the 82,635 modules already compiled.</li>
+<li><time>2026-11-20 22:47 UTC</time>47,384 modules compiled (27%), 0 failures. Tested <code>leanchecker</code> on the first compiled modules; it accepts them.</li>
+<li><time>2026-11-20 22:39 UTC</time>20,146 modules compiled, 0 failures.</li>
+<li><time>2026-11-20 22:29 UTC</time>Distributed build started from a clean output directory. Lake's partial outputs were discarded, so every module is compiled by one documented method.</li>
+<li><time>2026-11-20 21:23 UTC</time>Moved the build to local disk after measuring that loading Mathlib over NFS took 35–220 s per module.</li>
+<li><time>2026-11-20 20:52 UTC</time>First <code>lake build</code> started. <code>Statements.lean</code> builds against Mathlib's official cache.</li>
+<li><time>2026-11-20 20:20 UTC</time>Source downloaded and hashed, statements read, static audit done.</li>
+</ul>
+
+<footer>
+The checks are run by Claude Code (an AI agent) on the account owner's university compute allocation; every result here comes from our own runs. Scripts: <a href="scripts/">scripts/</a>, <a href="dist/">dist/</a>. Source of this page: <a href="https://github.com/mrubinst/grh-lean-verification">github.com/mrubinst/grh-lean-verification</a>.
+</footer>
+</main>
+</body>
+</html>

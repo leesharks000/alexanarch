@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-22T05:43:26.242868Z",
- "seats": 316,
- "lines_total": 13014659,
+ "_generated": "2026-11-22T19:27:21.642230Z",
+ "seats": 320,
+ "lines_total": 13025748,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -37301,7 +37301,145 @@
    "scope": "the dialogue whole, the four days with the address to the reader",
    "data": "https://www.alexanarch.org/data/corpora/galileo-dialogo/",
    "axn": "AXN:0D35.ORIGINAL.🚨🌋🔙🤲⛵🕗"
+  },
+  {
+   "seat": "EA-CORPORA-43/01",
+   "corpus": "alpoge-remark-2026",
+   "edition": "https://alpo.ge/remark.pdf as served on 2026-11-22",
+   "license": {
+    "payload": "None declared. The publisher states no licence (checked 2026-11-22 on the file and the page that serves it). Held here as published, byte-exact, exempt from this archive's CC BY 4.0, and carrying the original status: none declared. Rights remain with the author(s).",
+    "record": "CC-BY-4.0 applies to this seat record and its derived text layer only, not to the files under original/."
+   },
+   "origin": {
+    "url": "https://alpo.ge/remark.pdf",
+    "fetched": "2026-11-22T19:02Z",
+    "sha256_as_fetched": "3fc97784b71ddd44ff8aa0a177e99622a1c61b13cfa843a0989ee4a7a0cfeb8d"
+   },
+   "language": "English",
+   "lines": 220,
+   "verified_loci": [
+    "the attributed line: 'Claude’s suggested' (text/remark.txt)",
+    "the timeline's source: 'So here is a rough timeline Claude provided after a thorough search' (text/remark.txt)",
+    "step 8: 'Iterated theta lifts' (text/remark.txt)",
+    "step 14: 'one would stop at 2/3 a priori' (text/remark.txt)"
+   ],
+   "why_seated": "THE ANNOUNCEMENT. The one line credited to Claude ('Claude's suggested length of chain of theta lifts ... was sqrt X'), and the twenty dated steps of a timeline 'Claude provided after a thorough search'.",
+   "scope": "the files as published, whole",
+   "data": "https://www.alexanarch.org/data/corpora/alpoge-remark-2026/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-43/02",
+   "corpus": "alpoge-claude-zeta-exposition-2026",
+   "edition": "zeta-paper.pdf on Michael Rubinstein's Waterloo page, as served on 2026-11-22",
+   "license": {
+    "payload": "None declared. The publisher states no licence (checked 2026-11-22 on the file and the page that serves it). Held here as published, byte-exact, exempt from this archive's CC BY 4.0, and carrying the original status: none declared. Rights remain with the author(s).",
+    "record": "CC-BY-4.0 applies to this seat record and its derived text layer only, not to the files under original/."
+   },
+   "origin": {
+    "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper.pdf",
+    "fetched": "2026-11-22T19:02Z",
+    "sha256_as_fetched": "667d88b3c375adf0466678094f452ca966aef0f4d368f6340d2bd5328b7fb706"
+   },
+   "language": "English (mathematics)",
+   "lines": 9738,
+   "verified_loci": [
+    "the byline: 'at the behest of Michael O. Rubinstein' (text/zeta-paper.txt)",
+    "the dependency set: '1,478,198 declarations' (text/zeta-paper.txt)",
+    "§I.8: 'Why the exponent is one half' (text/zeta-paper.txt)",
+    "§I.9: 'Dictionary with Alpöge’s announcement' (text/zeta-paper.txt)",
+    "the parallel formulations: 'These are parallel or earlier formulations' (text/zeta-paper.txt)"
+   ],
+   "why_seated": "THE THREE-MODEL EXPOSITION. A byline that records a configuration at model grain; the dependency census of the 1,478,198 declarations; the discovery record set against the dependency record (section I.9); why the exponent is one half (section I.8).",
+   "scope": "the files as published, whole",
+   "data": "https://www.alexanarch.org/data/corpora/alpoge-claude-zeta-exposition-2026/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-43/03",
+   "corpus": "alpoge-lean-archive-2026",
+   "edition": "alpo.ge/lean.tar.gz.part01–part14 (20 November 2026); mirror github.com/CocoSgt/riemann-hypothesis-lean at 0fb9869c (content) and 7cbf7a0c (README)",
+   "license": {
+    "payload": "None declared. The publisher states no licence (checked 2026-11-22 on the file and the page that serves it). Held here as published, byte-exact, exempt from this archive's CC BY 4.0, and carrying the original status: none declared. Rights remain with the author(s).",
+    "record": "CC-BY-4.0 applies to this seat record and its derived text layer only, not to the files under original/."
+   },
+   "origin": {
+    "archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+    "archive_bytes": 239275554,
+    "archive_sha256_attested_by": [
+     "the mirror's commit message (0fb9869c)",
+     "Andrew Sutherland's verification record, math.mit.edu/~drew/grh/ (seat 43/04)"
+    ],
+    "mirror": {
+     "repo": "CocoSgt/riemann-hypothesis-lean",
+     "content_commit": "0fb9869c6e6d7b54b67de803af0e0be29d37fc22",
+     "readme_commit": "7cbf7a0c32fca1badf05931879a37c3f8a2b03b4",
+     "co_author_line": "both commits: Co-Authored-By: Claude Opus 5.5"
+    },
+    "fetched": "2026-11-22T19:02Z",
+    "transport": "git over HTTPS, --filter=blob:none: the tree of object ids only, no file contents"
+   },
+   "language": "Lean 4",
+   "lines": 172,
+   "verified_loci": [
+    "the credit line: 'The proof in this repository is the work of' (text/mirror-README.txt)",
+    "the licence statement: 'without a stated license' (text/mirror-README.txt)"
+   ],
+   "why_seated": "THE FORMAL ARTIFACT, PINNED. What the collation's checks read, fixed by hash and by the tree of every file's object id, without carrying 239 MB that declares no licence.",
+   "scope": "Pinned, not carried: the 175,192 files of the archive stay out of this archive. original/GIT-TREE-0fb9869c.txt.gz is git ls-tree -r of the content commit (mode, type, object id, path); the README is the mirror's own (no licence declared; the mirror states that it adds none to an archive published without one).",
+   "data": "https://www.alexanarch.org/data/corpora/alpoge-lean-archive-2026/",
+   "axn": null
+  },
+  {
+   "seat": "EA-CORPORA-43/04",
+   "corpus": "alpoge-claude-verification-records-2026-11",
+   "edition": "the four pages as served on 2026-11-22 19:02 UTC; each updates in place, so these are dated snapshots",
+   "license": {
+    "payload": "None declared. The publisher states no licence (checked 2026-11-22 on the file and the page that serves it). Held here as published, byte-exact, exempt from this archive's CC BY 4.0, and carrying the original status: none declared. Rights remain with the author(s).",
+    "record": "CC-BY-4.0 applies to this seat record and its derived text layer only, not to the files under original/."
+   },
+   "origin": {
+    "pages": [
+     {
+      "url": "https://math.mit.edu/~drew/grh/",
+      "who": "Andrew Sutherland (MIT); 'checks run with Claude Code'",
+      "sha256_as_fetched": "020ef13ef25ccabe796b4ec7da9bb4242c3e71fb5a5e5d5019526ca3feb4dc78",
+      "file": "original/mit-sutherland-grh.html"
+     },
+     {
+      "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
+      "who": "Michael Rubinstein (Waterloo)",
+      "sha256_as_fetched": "9ef26ce669de2a606c830f92c4cbaf3d912881de9e467840e2d72c03a093ac58",
+      "file": "original/rubinstein-index.html"
+     },
+     {
+      "url": "https://mrubinst.github.io/grh-lean-verification/",
+      "who": "the independent GRH Lean check linked from Rubinstein's page",
+      "sha256_as_fetched": "e0b4716c3db3ca88520c94dc8b670228ddd3fe51dae32a664291cc631ae7a200",
+      "file": "original/mrubinst-grh-lean-check.html"
+     },
+     {
+      "url": "https://rlankenau.github.io/rh/alpoge/",
+      "who": "the Riemann Proof Atlas (rlankenau); 'Source at commit e50d0981'",
+      "sha256_as_fetched": "13e6a5a54af68827171a126d446e774c186b67a6b5974975fa16a252c47549be",
+      "file": "original/rlankenau-atlas.html"
+     }
+    ],
+    "fetched": "2026-11-22T19:02Z"
+   },
+   "language": "English",
+   "lines": 959,
+   "verified_loci": [
+    "the archive's hash: '9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc' (text/mit-sutherland-grh.txt)",
+    "the Claude Code line: 'checks run with Claude Code' (text/mit-sutherland-grh.txt)",
+    "the atlas's commit: 'e50d0981' (text/rlankenau-atlas.txt)",
+    "Rubinstein's announcement line: 'found with Anthropic's Claude' (text/rubinstein-index.txt)"
+   ],
+   "why_seated": "THE VERIFICATION LAYER, DATED. Pages that update in place, held as they stood when the collation read them; the verification runs are themselves Claude-mediated ('checks run with Claude Code').",
+   "scope": "the files as published, whole",
+   "data": "https://www.alexanarch.org/data/corpora/alpoge-claude-verification-records-2026-11/",
+   "axn": null
   }
  ],
- "count": 316
+ "count": 320
 }

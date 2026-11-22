@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BBZLP8W7ZG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BBZLP8W7ZG');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alp&ouml;ge/Claude proof of the Generalized Riemann Hypothesis</title>
+<style>
+ body { max-width: 42em; margin: 3em auto; padding: 0 1em; font-family: Georgia, "Times New Roman", serif; line-height: 1.55; color: #222; background: #fff; }
+ h1 { font-size: 1.45em; font-weight: normal; }
+ h2 { font-size: 1.1em; font-weight: normal; margin-top: 2em; }
+ .note { border: 1px solid #999; padding: 0.8em 1em; background: #f7f7f4; }
+ li { margin: 0.6em 0; }
+ a.home { position: absolute; top: 1em; left: 1em; text-decoration: none; font-size: 1.1em; }
+ a.home:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<a class="home" href="../index.html" title="Michael Rubinstein's home page">&larr; Home</a>
+<h1>Alp&ouml;ge/Claude proof of the Generalized Riemann Hypothesis</h1>
+<p class="note">On 20 November 2026 Levent Alp&ouml;ge <a href="https://alpo.ge/remark.pdf">announced</a> a proof,
+found with Anthropic's Claude, of the Riemann Hypothesis and of the Generalized Riemann Hypothesis for
+Dirichlet <i>L</i>-functions. The proof was released as a formal proof in the Lean proof assistant:
+175,187 files, about 17 million lines. This page links to my own check of that Lean proof and to checks made
+by others.<br>&mdash; <a href="../index.html">Michael Rubinstein</a></p>
+
+<h2>The proof explained for the Riemann zeta function</h2>
+<p><a href="zeta-paper.pdf">The Alp&ouml;ge&ndash;Claude proof of the Riemann hypothesis explained for the
+Riemann zeta function</a> (PDF, 164 pages; working draft, 21 November 2026)</p>
+<p>A working guide to the proof, specialised to the Riemann zeta function, written with Claude, Codex and
+Gemini as an aid to studying it. It aims at a human-readable account in the style of classical analytic number
+theory. It deduces the Riemann hypothesis from one inequality between weighted sums over primes, called (M),
+and two estimates for Dirichlet characters, and proves the two estimates from theorems in the literature.
+The inequality (M) is not proved there: its proof is taken from the Lean development. The paper writes up
+parts of that proof and states exactly which inputs it takes from the Lean development. It is a work in
+progress.</p>
+
+<h2>Lean verification</h2>
+<p><a href="https://mrubinst.github.io/grh-lean-verification/">mrubinst.github.io/grh-lean-verification</a></p>
+<p>That page records a check of the Lean proof run with Claude Code on University of Waterloo compute
+servers, starting from the archive Alp&ouml;ge published. It shows the five theorems exactly as they are stated
+in Lean, with an explanation of why they say what RH and GRH for Dirichlet <i>L</i>-functions say, and a scan
+of all the source files for anything that could introduce an unproved assumption. It then reports each
+machine check with its status and output: a full compile of all 175,187 modules, the list of axioms the
+theorems depend on, a replay of every module through Lean's kernel, and a check by a second, independently
+written kernel (nanoda).</p>
+<p><b>Result (21 November 2026).</b> All four checks finished with no errors. All 175,187 modules compile.
+The five theorems depend only on Lean's three standard axioms. A replay of every module through Lean's kernel
+accepted all 175,187. The independent kernel nanoda checked the 1,484,729 declarations that the theorems
+depend on, with no typechecker errors.</p>
+<p>The page also describes how the checks were run, and the repository contains the scripts, so that anyone
+can repeat them. A dated log records each step, including the problems met along the way.</p>
+
+<h2>Verifications by others</h2>
+<ul>
+<li><a href="https://math.mit.edu/~drew/grh/">Andrew Sutherland (MIT): RH Lean proof, verification files</a>.
+His results, logs and the exported proof are on his MIT page.</li>
+<li><a href="https://github.com/Infatoshi/rh-verification-receipts">Elliot Arledge: independent verification receipts</a>.
+An independent rebuild, axiom audit and nanoda check, on GitHub.</li>
+<li><a href="https://github.com/nasqret/riemann-rev">Bartosz Naskr&#281;cki: riemann-rev</a>
+(<a href="https://nasqret.github.io/riemann-rev/">site</a>). A status dashboard recording who has checked
+what, with a guide to the route of the proof.</li>
+<li><a href="https://photos.proofsandreasons.io/wright/alp-replay.json">A full replay of all 175,187 modules through Lean's kernel</a>,
+listed on the riemann-rev dashboard as Simon DeDeo's.</li>
+</ul>
+</body>
+</html>
