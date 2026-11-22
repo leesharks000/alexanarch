@@ -176,6 +176,30 @@ def build():
     f4, t4 = fig_bars(dc, 'Defects recorded on archive-level compositions')
 
     sec = []
+    # YOUR OWN QUESTION (operator, 2026-11-22 12:01): "it needs one where you can simply type a question and /ask will format it to
+    # ground in and adapt to and extend archival materials and send it to an ai. give the example of alice's question, what does the
+    # system pay people for?" The wrapper is data/ask-queries.json under own; the question as typed opens the prompt.
+    OWN = Q.get('own')
+    if OWN:
+        sec.append('<section id="own"><h2>Ask your own question</h2><p class="n">Type a question about anything. The page sets it in an instruction to ground the answer in the archive&rsquo;s documents, take the question as the archive frames it, and extend past what the archive holds, marking what is new. Your question opens the prompt as you typed it, and that full prompt is the address if the answer is seated.</p>'
+                   f'<div class="roll own" hidden><form class="tx owf"><label>Your question<textarea name="oq" rows="2" placeholder="{E(OWN["example"])}"></textarea></label>'
+                   f'<button type="submit">Format it</button> <button type="button" class="rb" data-ex="{E(OWN["example"])}">Use the example: {E(OWN["example"])}</button></form>'
+                   '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>'
+                   f'<script type="application/json" id="owndata">{json.dumps(OWN["template"], ensure_ascii=False).replace("</", "<\\/")}</script></section>')
+    # OUTLINES OF THE DISTRIBUTED EPIC (operator, 2026-11-22 11:59): "collecting outlines like this in different shapes that can then
+    # be filled in later @ /ask... 'based on outline x @ [address] and related materials, compose book y of the crimson hexagon
+    # distributed epic'". Each outline is a seated capture; its address is its capture page. The book number is the reader's.
+    OUT = Q.get('outlines')
+    if OUT:
+        have = {e['slug'] for e in ENTS}
+        items = [o for o in OUT['items'] if o['slug'] in have]
+        orows = ''.join(f'<div class="row"><span class="rl"><a class="t" href="/captures/{E(o["slug"])}/">{E(o["label"])}</a></span><span class="bs"><span class="n">{E(o["shape"])}.</span> '
+                        f'<button type="button" class="rb" data-outline="https://www.alexanarch.org/captures/{E(o["slug"])}/">Compose from this outline</button></span></div>' for o in items)
+        books = ''.join(f'<option{" selected" if r == "VIII" else ""}>{r}</option>' for r in ('I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII', 'XIII', 'XIV', 'XV', 'XVI'))
+        sec.append('<section id="outlines"><h2>The distributed epic, from an outline</h2><p class="n">Outlines of the Crimson Hexagon distributed epic, in different shapes, each a composition seated in the Capture Registry. Choose a book and an outline; the prompt sends the composer to the outline&rsquo;s page and the materials around it, and asks for swerves.</p>'
+                   f'<div class="roll outl" hidden><label class="n">Book <select class="ob">{books}</select></label>{orows}'
+                   '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>'
+                   f'<script type="application/json" id="outldata">{json.dumps(OUT["template"], ensure_ascii=False).replace("</", "<\\/")}</script></section>')
     ts = Q['timescales']
     tq = ''.join(row(lt, [ask_link(fill(t, window=w, date='{date}'), lw) for w, lw in zip(ts['windows'], L['windows'])]) for t, lt in zip(ts['templates'], L['timescale_templates']))
     sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">Read a window of work ending today as one body of thought.</p>{tq}</section>')
@@ -243,7 +267,7 @@ def build():
     PERTURB = ('<div class="roll pert" hidden><button type="button" class="rb" data-roll="perturb">Perturb a query from this section</button>'
                '<p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>')
     for i, x in enumerate(sec):
-        if not x.startswith('<section id="weird"'):
+        if not x.startswith(('<section id="weird"', '<section id="own"', '<section id="outlines"')):
             sec[i] = re.sub(r'(</h2>)', r'\1' + PERTURB, x, count=1)
     asked = sorted(arch, key=lambda e: e['date'], reverse=True)
     def arow(e):
@@ -298,7 +322,7 @@ figure details{{border:none;padding:0;background:none;margin-top:.5em}} table{{b
 ul.asked li{{font-size:.92em}} .m{{font-family:var(--mono);font-size:.75em;color:var(--dim);margin-right:.4em}} a.cap{{font-size:.8em;color:var(--dim)}}
 form.tx label{{display:block;font-size:.85em;color:#52514e;margin:.6em 0}} form.tx textarea,form.tx input,form.tx select{{display:block;width:100%;margin-top:.25em;font:inherit;font-size:.95em;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--fg)}} form.tx textarea{{font-family:var(--mono);font-size:.85em}}
 .tx2{{display:flex;flex-wrap:wrap;gap:0 12px}} .tx2 label{{flex:1 1 180px}} form.tx label.file input{{border:none;padding:4px 0;background:none}}
-form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid var(--accent);border-radius:16px;background:var(--accent);color:#fff;cursor:pointer;margin-top:.4em}} form.tx button:disabled{{opacity:.5}}
+form.tx button{{font:inherit;font-size:.9em;padding:6px 16px;border:1px solid var(--accent);border-radius:16px;background:var(--accent);color:#fff;cursor:pointer;margin-top:.4em}} form.tx button:disabled{{opacity:.5}} form.tx button.rb{{background:var(--surface);color:var(--accent);border:1px dashed #9fb0c3;font-size:.82em;padding:3px 12px}}
 .sw{{margin:.2em 0 .6em;font-size:.82em;color:var(--muted,#667)}} .sw button{{font:inherit;padding:2px 10px;margin-left:4px;border:1px solid #9fb0c3;border-radius:12px;background:var(--surface);color:var(--accent);cursor:pointer}} .sw button[aria-pressed=true]{{background:var(--accent);color:var(--surface)}} .roll{{margin:.3em 0 .7em}} .rb{{font:inherit;font-size:.82em;padding:3px 12px;border:1px dashed #9fb0c3;border-radius:14px;background:var(--surface);color:var(--accent);cursor:pointer}} .rb:hover{{border-style:solid}} .rb.big{{font-size:1em;padding:8px 20px;border:1px solid var(--accent);background:var(--accent);color:#fff;font-weight:500}} .rb.big:hover{{background:#24507d}} .roll.rtop{{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.8em 1em;margin:.8em 0 1em}} .rq{{font-family:var(--mono);font-size:.8em;color:#2b2b2a;margin:.45em 0 .2em;overflow-wrap:anywhere}} .rq:empty{{display:none}} a.ra[hidden],.roll[hidden]{{display:none}}
 ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45em 0}}
 .toc a{{display:inline-block;white-space:nowrap;margin-right:1em;color:var(--accent);font-size:.9em}}
@@ -320,7 +344,7 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 <li>The prompts now set historical and fictional figures among the heteronyms and in the rooms of the Hexagon (Ubu against the Hexagon&rsquo;s ontology of seating, with Rex Fraction and Rev. Ayanna Vox leading the documents), and ask the composer to range across the documents and synthesize them. The dice in the Weird-ass section, and the perturb button in every other section, draw such prompts at random; each roll is a new address.</li>
 </ol>
 </details>
-<p class="toc"><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#weird">Weird-ass prompts</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#own">Your own question</a><a href="#outlines">From an outline</a><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#weird">Weird-ass prompts</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
 <section id="submit"><h2>Submit a transcript</h2>
 <p class="n">Ran one of these, or any query of your own about the archive? Paste the whole exchange here, or load it from a .txt or .md file. It goes to the archive's capture inbox on GitHub, unseated, to be read and seated in the Capture Registry later. The query you typed is the address, so give it exactly as typed. Screenshots can't be sent here yet; paste the text.</p>
@@ -370,6 +394,13 @@ show(box,q)}})}}catch(e){{}}}})();
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;
 var f=q.split("{{date}}").join(t);a.title=f;a.href=window.AXQ?window.AXQ.u(f):"https://chatgpt.com/?q="+encodeURIComponent(f).replace(/%20/g,"+");
 a.querySelectorAll(".d").forEach(function(s){{s.textContent=t}})}})}}catch(e){{}}}})();
+(function(){{function put(box,q){{var p=box.querySelector(".rq"),a=box.querySelector(".ra");p.textContent=q;a.title=q;a.href=window.AXQ?window.AXQ.u(q):"https://chatgpt.com/?q="+encodeURIComponent(q).replace(/%20/g,"+");a.hidden=false}}
+try{{var T=JSON.parse(document.getElementById("owndata").textContent),f=document.querySelector("form.owf"),box=f.closest(".roll");box.hidden=false;
+function go(q){{q=(q||"").trim();if(!q)return;if(!/[.?!]$/.test(q))q+="?";put(box,T.split("{{question}}").join(q))}}
+f.addEventListener("submit",function(ev){{ev.preventDefault();go(f.oq.value)}});
+f.querySelector("button[data-ex]").addEventListener("click",function(ev){{f.oq.value=ev.currentTarget.dataset.ex;go(f.oq.value)}})}}catch(e){{}}
+try{{var O=JSON.parse(document.getElementById("outldata").textContent),ob=document.querySelector(".outl"),sel=ob.querySelector(".ob");ob.hidden=false;
+ob.addEventListener("click",function(ev){{var b=ev.target.closest("button[data-outline]");if(!b)return;put(ob,O.split("{{address}}").join(b.dataset.outline).split("{{book}}").join(sel.value))}})}}catch(e){{}}}})();
 (function(){{var f=document.getElementById("tx");if(!f)return;var st=document.getElementById("txs");
 try{{var n=new Date();f.date.value=n.getFullYear()+"-"+String(n.getMonth()+1).padStart(2,"0")+"-"+String(n.getDate()).padStart(2,"0")}}catch(e){{}}
 f.file.addEventListener("change",function(){{var x=f.file.files[0];if(!x)return;var r=new FileReader();r.onload=function(){{f.transcript.value=r.result}};r.readAsText(x)}});
