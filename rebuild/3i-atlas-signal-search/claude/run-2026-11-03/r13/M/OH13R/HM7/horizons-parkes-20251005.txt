@@ -1,0 +1,231 @@
+API VERSION: 1.2
+API SOURCE: NASA/JPL Horizons API
+
+*******************************************************************************
+JPL/HORIZONS                  ATLAS (C/2025 N1)            2026-Nov-22 10:28:06
+Rec #:90004937 (+COV) Soln.date: 2026-Oct-21_09:51:09    # obs: 117 (2025-2026)
+ 
+IAU76/J2000 helio. ecliptic osc. elements (au, days, deg., period=Julian yrs):
+ 
+  EPOCH=  2461340.5 ! 2026-Oct-27.0000000 (TDB)    RMSW= n.a.
+   EC= 6.123467394525528   QR= 1.351998619400212   TP= 2460977.9417958809
+   OM= 323.0251782090054   W= 128.7969426041922    IN= 175.2403121571192
+   A= -.2638835217034532   MA= 116.1092422599331   ADIST= 9.999999E99
+   PER= 9.999999E99        N= 7.270858064          ANGMOM= .053384513
+   DAN= -3.39507           DDN= 1.9912             L= 194.1315474
+   B= 3.707887             MOID= .36155099         TP= 2025-Oct-29.4417958809
+ 
+Comet physical (GM= km^3/s^2; RAD= km):
+   GM= n.a.                RAD= n.a.
+   M1=  11.8     M2=  n.a.     k1=  7.5    k2= n.a.     PHCOF= n.a.
+Comet non-gravitational force model (AMRAT=m^2/kg;A1-A3=au/d^2;DT=days;R0=au):
+   AMRAT=  0.                                      DT=  28.46531
+   A1= 4.618075847626E-8   A2= -9.559184908867E-9  A3= -8.294590115547E-9
+ Non-standard or simulated/proxy model:
+   ALN=  1.            NK=  0.       NM=  2.       NN=  0.       R0=  1.
+
+COMET comments 
+1: soln ref.= JPL#55, data arc: 2025-10-03 to 2026-10-16
+2: k1=7.5;Temporary solution to support JWST Program 13145
+*******************************************************************************
+
+
+*******************************************************************************
+Ephemeris / API_USER Sun Nov 22 10:28:06 2026 Pasadena, USA      / Horizons    
+*******************************************************************************
+Target body name: ATLAS (C/2025 N1)               {source: JPL#55}
+Center body name: Earth (399)                     {source: DE441}
+Center-site name: (user defined site below)
+*******************************************************************************
+Start time      : A.D. 2025-Oct-05 05:15:00.0000 UT      
+Stop  time      : A.D. 2025-Oct-05 06:10:00.0000 UT      
+Step-size       : 1 minutes
+*******************************************************************************
+Target pole/equ : undefined
+Target radii    : undefined                                                    
+Center geodetic : 148.2635, -32.9984, .415        {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 148.2635,5354.91948,-3454.03584 {E-lon(deg),Dxy(km),Dz(km)}
+Center pole/equ : ITRF93                          {East-longitude positive}
+Center radii    : 6378.137, 6378.137, 6356.752 km {Equator_a, b, pole_c}       
+Target primary  : Sun
+Vis. interferer : MOON (R_eq= 1737.400) km        {source: DE441}
+Rel. light bend : Sun                             {source: DE441}
+Rel. lght bnd GM: 1.3271E+11 km^3/s^2                                          
+Small-body perts: Yes                             {source: SB441-N16}
+Atmos refraction: NO (AIRLESS)
+RA format       : HMS
+Time format     : JD  
+Calendar mode   : Mixed Julian/Gregorian
+EOP file        : eop.261120.p270216                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2026-NOV-20. PREDICTS-> 2027-FEB-15
+Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
+Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
+Table cut-offs 2: Solar elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
+Table cut-offs 3: RA/DEC angular rate (     0.0=NO )                           
+Table format    : Comma Separated Values (spreadsheet)
+*******************************************************************************
+Initial IAU76/J2000 heliocentric ecliptic osculating elements (au, days, deg.):
+  EPOCH=  2461340.5 ! 2026-Oct-27.0000000 (TDB)    RMSW= n.a.                  
+   EC= 6.123467394525528   QR= 1.351998619400212   TP= 2460977.9417958809      
+   OM= 323.0251782090054   W= 128.7969426041922    IN= 175.2403121571192       
+  Equivalent ICRF heliocentric cartesian coordinates (au, au/d):
+   X=-2.651362469624269E+00  Y= 1.166217534550910E+01  Z= 4.301090749178197E+00
+  VX=-2.972676144541149E-03 VY= 3.201598344605247E-02 VZ= 1.157926016126583E-02
+Comet physical (GM= km^3/s^2; RAD= km):                                        
+   GM= n.a.                RAD= n.a.                                           
+   M1=  11.8     M2=  n.a.     k1=  7.5    k2= n.a.     PHCOF= n.a.            
+Comet non-gravitational force model (AMRAT=m^2/kg;A1-A3=au/d^2;DT=days;R0=au): 
+   AMRAT=  0.                                      DT=  28.46531               
+   A1= 4.618075847626E-8   A2= -9.559184908867E-9  A3= -8.294590115547E-9      
+ Non-standard or simulated/proxy model:                                        
+   ALN=  1.            NK=  0.       NM=  2.       NN=  0.       R0=  1.       
+*******************************************************************************
+Date_________JDUT, , ,            delta,     deldot,
+****************************************************
+$$SOE
+2460953.718750000,*, , 2.48312022771840, -7.4354306,
+2460953.719444444,*, , 2.48311724561563, -7.4341633,
+2460953.720138889,*, , 2.48311426402050, -7.4328994,
+2460953.720833333,*, , 2.48311128293167, -7.4316388,
+2460953.721527778,*, , 2.48310830234777, -7.4303816,
+2460953.722222222,*, , 2.48310532226746, -7.4291278,
+2460953.722916667,*, , 2.48310234268937, -7.4278775,
+2460953.723611111,*, , 2.48309936361209, -7.4266306,
+2460953.724305556,*, , 2.48309638503425, -7.4253872,
+2460953.725000000,*, , 2.48309340695443, -7.4241473,
+2460953.725694444,*, , 2.48309042937121, -7.4229110,
+2460953.726388889,*, , 2.48308745228317, -7.4216783,
+2460953.727083333,*, , 2.48308447568887, -7.4204491,
+2460953.727777778,*, , 2.48308149958684, -7.4192236,
+2460953.728472222,*, , 2.48307852397563, -7.4180018,
+2460953.729166667,*, , 2.48307554885376, -7.4167837,
+2460953.729861111,*, , 2.48307257421975, -7.4155692,
+2460953.730555556,*, , 2.48306960007209, -7.4143586,
+2460953.731250000,*, , 2.48306662640929, -7.4131517,
+2460953.731944445,*, , 2.48306365322981, -7.4119486,
+2460953.732638889,*, , 2.48306068053213, -7.4107493,
+2460953.733333333,*, , 2.48305770831470, -7.4095539,
+2460953.734027778,*, , 2.48305473657598, -7.4083624,
+2460953.734722222,*, , 2.48305176531440, -7.4071748,
+2460953.735416667,*, , 2.48304879452838, -7.4059911,
+2460953.736111111,*, , 2.48304582421634, -7.4048114,
+2460953.736805555,*, , 2.48304285437667, -7.4036357,
+2460953.737500000,*, , 2.48303988500778, -7.4024640,
+2460953.738194444,*, , 2.48303691610805, -7.4012964,
+2460953.738888889,*, , 2.48303394767583, -7.4001328,
+2460953.739583333,*, , 2.48303097970950, -7.3989734,
+2460953.740277778,*, , 2.48302801220740, -7.3978181,
+2460953.740972222,*, , 2.48302504516786, -7.3966669,
+2460953.741666667,*, , 2.48302207858923, -7.3955199,
+2460953.742361111,*, , 2.48301911246980, -7.3943772,
+2460953.743055556,*, , 2.48301614680790, -7.3932386,
+2460953.743750000,*, , 2.48301318160180, -7.3921044,
+2460953.744444444,*, , 2.48301021684981, -7.3909744,
+2460953.745138889,*, , 2.48300725255019, -7.3898487,
+2460953.745833333,*, , 2.48300428870120, -7.3887274,
+2460953.746527778,*, , 2.48300132530111, -7.3876105,
+2460953.747222222,*, , 2.48299836234814, -7.3864979,
+2460953.747916667,*, , 2.48299539984054, -7.3853898,
+2460953.748611111,*, , 2.48299243777652, -7.3842861,
+2460953.749305556,*, , 2.48298947615430, -7.3831869,
+2460953.750000000,*, , 2.48298651497208, -7.3820921,
+2460953.750694444,*, , 2.48298355422805, -7.3810020,
+2460953.751388889,*, , 2.48298059392038, -7.3799163,
+2460953.752083333,*, , 2.48297763404726, -7.3788352,
+2460953.752777778,*,m, 2.48297467460683, -7.3777588,
+2460953.753472222,*,m, 2.48297171559725, -7.3766869,
+2460953.754166667,*,m, 2.48296875701666, -7.3756197,
+2460953.754861111,*,m, 2.48296579886319, -7.3745572,
+2460953.755555556,*,m, 2.48296284113496, -7.3734994,
+2460953.756250000,*,m, 2.48295988383008, -7.3724463,
+2460953.756944444,*,m, 2.48295692694665, -7.3713979,
+$$EOE
+*******************************************************************************
+Column meaning:
+ 
+TIME
+
+  Times PRIOR to 1962 are UT1, a mean-solar time closely related to the
+prior but now-deprecated GMT. Times AFTER 1962 are in UTC, the current
+civil or "wall-clock" time-scale. UTC is kept within 0.9 seconds of UT1
+using integer leap-seconds for 1972 and later years.
+
+  Conversion from the internal Barycentric Dynamical Time (TDB) of solar
+system dynamics to the non-uniform civil UT time-scale requested for output
+has not been determined for UTC times after the next July or January 1st.
+Therefore, the last known leap-second is used as a constant over future
+intervals.
+
+  Time tags refer to the UT time-scale conversion from TDB on Earth
+regardless of observer location within the solar system, although clock
+rates may differ due to the local gravity field and no analog to "UT"
+may be defined for that location.
+
+  Any 'b' symbol in the 1st-column denotes a B.C. date. First-column blank
+(" ") denotes an A.D. date.
+ 
+CALENDAR SYSTEM
+
+  Mixed calendar mode was active such that calendar dates after AD 1582-Oct-15
+(if any) are in the modern Gregorian system. Dates prior to 1582-Oct-5 (if any)
+are in the Julian calendar system, which is automatically extended for dates
+prior to its adoption on 45-Jan-1 BC.  The Julian calendar is useful for
+matching historical dates. The Gregorian calendar more accurately corresponds
+to the Earth's orbital motion and seasons. A "Gregorian-only" calendar mode is
+available if such physical events are the primary interest.
+
+  NOTE: "n.a." in output means quantity "not available" at the print-time.
+ 
+SOLAR PRESENCE (OBSERVING SITE)
+  Time tag is followed by a blank, then a solar-presence condition code:
+
+       '*'  Daylight (refracted solar upper-limb on or above apparent horizon)
+       'C'  Civil twilight/dawn
+       'N'  Nautical twilight/dawn
+       'A'  Astronomical twilight/dawn
+       ' '  Night OR geocentric ephemeris
+
+LUNAR PRESENCE WITH TARGET RISE/TRANSIT/SET EVENT MARKER (OBSERVING SITE)
+  The solar-presence code column is immediately followed by another marker:
+
+       'm'  Refracted upper-limb of Moon on or above apparent horizon
+       ' '  Refracted upper-limb of Moon below apparent horizon OR geocentric
+
+  The lunar presence marker (an ongoing state) can be over-ridden by a target
+  event marker if an event has occurred since the last output step:
+
+       'r'  Rise          (target body on or went above cut-off RTS elevation)
+       'e'  Elevation max (target body maximum elevation angle has occurred)
+       't'  Transit       (target body at or passed through observer meridian)
+       's'  Set           (target body on or went below cut-off RTS elevation)
+ 
+RTS MARKERS (TVH)
+  Rise and set are with respect to the reference ellipsoid true visual horizon
+defined by the elevation cut-off angle. Horizon dip and yellow-light refraction
+(Earth only) are considered. Accuracy is < or = to twice the requested search
+step-size.
+ 
+ 'delta,     deldot,' =
+   Apparent range ("delta", light-time aberrated) and range-rate ("delta-dot")
+of the target center relative to the observer. A positive "deldot" means the
+target center is moving away from the observer, negative indicates movement
+toward the observer.  Units: AU and KM/S
+
+Computations by ...
+
+    Solar System Dynamics Group, Horizons On-Line Ephemeris System
+    4800 Oak Grove Drive, Jet Propulsion Laboratory
+    Pasadena, CA  91109   USA
+
+    General site: https://ssd.jpl.nasa.gov/
+    Mailing list: https://ssd.jpl.nasa.gov/email_list.html
+    System news : https://ssd.jpl.nasa.gov/horizons/news.html
+    User Guide  : https://ssd.jpl.nasa.gov/horizons/manual.html
+    Connect     : browser        https://ssd.jpl.nasa.gov/horizons/app.html#/x
+                  API            https://ssd-api.jpl.nasa.gov/doc/horizons.html
+                  command-line   telnet ssd.jpl.nasa.gov 6775
+                  e-mail/batch   https://ssd.jpl.nasa.gov/ftp/ssd/horizons_batch.txt
+                  scripts        https://ssd.jpl.nasa.gov/ftp/ssd/SCRIPTS
+    Inquiries   : Jon.D.Giorgini@jpl.nasa.gov
+
+*******************************************************************************
