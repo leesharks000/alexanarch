@@ -127,7 +127,7 @@ SCRIPTS = REPO_ROOT / "scripts"
 REGISTRY = REPO_ROOT / "data" / "registry.json"
 
 STAGE_ORDER = [
-    "mint", "validate", "pdf", "body-index",
+    "mint", "supersede", "validate", "pdf", "body-index",
     # counts (2026-09-28): stage_counts was defined and registered in STAGES on
     # 2026-08-24 but never entered here, so it never ran on a deposit, and
     # api/counts.json sat at 1,539 while the registry reached 1,647. Every fleet
@@ -308,6 +308,50 @@ def hex_of(d):
 
 # ── stages ───────────────────────────────────────────────────────────────────
 
+SUPERSEDES_RE = re.compile(r"#(\d+)\b[^\n]*?the version this one supersedes", re.I)
+
+
+def supersession_target(entry):
+    """The deposit number a new entry names as the version it supersedes, or None."""
+    m = SUPERSEDES_RE.search(entry.get("related_identifiers_raw") or "")
+    return int(m.group(1)) if m else None
+
+
+def apply_supersession(reg, entry, prev_n):
+    sys.path.insert(0, str(SCRIPTS))
+    from record_modification import touch
+    n = entry["deposit_number"]
+    prev = next((d for d in reg["deposits"] if d["deposit_number"] == prev_n), None)
+    if prev is None:
+        print(f"  supersession: #{prev_n} named but not in the registry — recorded, not applied")
+        return
+    series = prev.get("version_series_id") or ("SERIES-" + re.sub(r"[^A-Z0-9]+", "-", re.sub(r"\s*\(v[\d.]+\)\s*$", "", entry.get("title", "")).split(":")[0].upper()).strip("-"))
+    reason = f"Version {entry.get('version')} deposited as #{n} ({entry.get('date')})."
+    if prev.get("version_series_id") != series:
+        touch(prev, "version_series_id", reason, was=prev.get("version_series_id"), now=series)
+        prev["version_series_id"] = series
+    if prev.get("status") != "SUPERSEDED":
+        touch(prev, "status", reason, was=prev.get("status", "ACTIVE"), now="SUPERSEDED")
+        prev["status"] = "SUPERSEDED"
+    if prev.get("superseded_by_deposit_number") != n:
+        touch(prev, "superseded_by_deposit_number", reason, was=prev.get("superseded_by_deposit_number"), now=n)
+        prev["superseded_by_deposit_number"] = n
+        prev["superseded_reason"] = reason
+    # Terminal pointers (check_supersession_terminal.py: "Point every edition at the terminal"):
+    # every earlier edition that pointed at the predecessor now points at the new deposit.
+    for d in reg["deposits"]:
+        if d is not prev and d.get("superseded_by_deposit_number") == prev_n and d.get("status") == "SUPERSEDED":
+            touch(d, "superseded_by_deposit_number", reason, was=prev_n, now=n)
+            d["superseded_by_deposit_number"] = n
+            d["superseded_reason"] = reason
+            print(f"  supersession: #{d['deposit_number']} re-pointed to the terminal #{n}")
+    if entry.get("version_series_id") != series:
+        touch(entry, "version_series_id", reason, now=series)
+        entry["version_series_id"] = series
+    entry["previous_version"] = {"deposit_number": prev_n, "axn": prev.get("axn"), "version": prev.get("version"), "date": prev.get("date")}
+    print(f"  supersession: #{prev_n} → SUPERSEDED by #{n} ({series})")
+
+
 def stage_mint(args):
     cmd = [sys.executable, SCRIPTS / "mint_deposit.py",
            "--issue-body", args.issue_body,
@@ -341,8 +385,18 @@ def stage_mint(args):
         "audit_version": "mint-time-declaration",
     })
 
-    # mint_deposit inserts the pre-override entry; replace it in place
+    # SUPERSESSION AT MINT (operator, 2026-11-21 19:25: "1.1 is on alexanarch home, not superseded.
+    # could we please make this part of deposit, not something that has to be decided by taste or
+    # chance each time?"). A version deposit names its predecessor in Related Identifiers as
+    # "#N ... the version this one supersedes" (the convention of #1791, #1797, #1798). When it does,
+    # the pipeline, not the session, sets the version relation on both records in the same pass:
+    # previous_version and version_series_id on the new entry; status SUPERSEDED,
+    # superseded_by_deposit_number and superseded_reason on the predecessor, each change recorded
+    # with record_modification.touch. The record stage then re-renders the predecessor's page.
     reg = load_registry()
+    _sup = supersession_target(entry)
+    if _sup:
+        apply_supersession(reg, entry, _sup)
     for i, d in enumerate(reg["deposits"]):
         if d["deposit_number"] == n:
             reg["deposits"][i] = entry
@@ -357,6 +411,19 @@ def stage_mint(args):
         json.dumps(entry, indent=2, ensure_ascii=False))
     args.deposit_number = n
     print(f"  minted + inserted: #{n} · {entry['axn']}")
+
+
+def stage_supersede(args):
+    """Idempotent: apply the version relation the deposit names (see SUPERSESSION AT MINT).
+    Runs after mint, and on any post-mint run, so a version deposit can never stand beside
+    its predecessor as two current records."""
+    reg = load_registry()
+    entry = next(d for d in reg["deposits"] if d["deposit_number"] == args.deposit_number)
+    prev_n = supersession_target(entry)
+    if not prev_n:
+        print("  supersession: none named"); return
+    apply_supersession(reg, entry, prev_n)
+    REGISTRY.write_text(json.dumps(reg, indent=1, ensure_ascii=False), encoding="utf-8")
 
 
 def stage_validate(args):
@@ -382,6 +449,8 @@ def stage_record(args):
         f"eidx = json.load(open('data/entity-index.json'))\n"
         f"d = next(x for x in reg['deposits'] if x['deposit_number'] == {n})\n"
         "wire_deposit.regenerate_static_page(d, eidx, registry=reg)\n"
+        "for p in reg['deposits']:\n"
+        f"    if p.get('superseded_by_deposit_number') == {n}: wire_deposit.regenerate_static_page(p, eidx, registry=reg); print('  predecessor page: s/records/%s/' % p['deposit_number'])\n"
         f"print('  record page: s/records/{n}/')\n"
     )
     sh([sys.executable, "-c", code])
@@ -656,6 +725,7 @@ def stage_synchrony(args):
 
 
 STAGES = {
+    "supersede": stage_supersede,
     "mint": stage_mint, "validate": stage_validate, "record": stage_record,
     "rendered": stage_rendered,
     "completeness": stage_completeness,
