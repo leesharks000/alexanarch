@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""EA-CORPORA-42, step 1 (the TEI reduction of EA-CORPORA-41, unchanged): reduce each staged original to its text layer, by code.
+"""EA-CORPORA-42, step 1: reduce each staged original to its text layer, by code (the reducers of EA-CORPORA-41, with one for HTML pages).
 
     python3 -I prepare_texts42.py <stage-dir>
 
@@ -123,9 +123,32 @@ def sefaria(path):
     return unicodedata.normalize("NFC", head + "\n" + "".join(f"[segment {k}] {x}\n" for k, x in enumerate(flat, 1)))
 
 
+
+
+def webpage(path):
+    """A served HTML page (Wikisource render, Corpus Thomisticum): script, style and the edit links dropped; one line per
+    block element; entities decoded. The page's own markers (Wikisource's [p. N], the Corpus Thomisticum's [N] numbers) stand as text."""
+    t = path.read_bytes().decode("utf-8", errors="replace")
+    t = re.sub(r"(?is)<(script|style|noscript)[^>]*>.*?</\1>", " ", t)
+    t = re.sub(r'(?is)<span class="mw-editsection".*?</span>\s*</span>', " ", t)
+    t = re.sub(r"(?i)<br\s*/?>", "\n", t)
+    t = re.sub(r"(?i)</?(p|div|h[1-6]|li|dd|dt|tr|table|blockquote|center)[^>]*>", "\n", t)
+    t = re.sub(r"<[^>]+>", " ", t)
+    t = html.unescape(t)
+    lines = [re.sub(r"[ \t\u00a0]+", " ", l).strip() for l in t.split("\n")]
+    return unicodedata.normalize("NFC", "\n".join(l for l in lines if re.search(r"\w", l)) + "\n")
+
+
 J = {}
-for f in sorted(ST.glob("*.xml")):
-    J[f.name.rsplit(".", 1)[0]] = tei(f)
+for seat in sorted(p for p in ST.iterdir() if p.is_dir() and not p.name.startswith("_")):
+    for f in sorted(seat.glob("*.xml")):
+        if "__cts__" in f.name or f.name.endswith("_meta.xml"):
+            continue
+        J[f"{seat.name}--{f.name.rsplit('.', 1)[0]}"] = tei(f)
+    for f in sorted(seat.glob("*.html")):
+        J[f"{seat.name}--{f.stem}"] = webpage(f)
+    for f in sorted(seat.glob("*_djvu.txt")):
+        J[f"{seat.name}--{f.stem}"] = asserved(f)
 for k, v in J.items():
     (OUT / f"{k}.txt").write_text(v, encoding="utf-8")
     print(f"{k:60} {v.count(chr(10)):>8} lines")
