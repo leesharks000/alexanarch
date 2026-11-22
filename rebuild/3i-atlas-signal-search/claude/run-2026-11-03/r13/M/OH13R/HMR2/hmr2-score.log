@@ -1,0 +1,16 @@
+reproduction True {'0013': {'d3_max_abs_diff': 8.717179298400879e-07, 'p_max_rel_diff': 9.076722199097276e-05}, '0014': {'d3_max_abs_diff': 1.6186386346817017e-06, 'p_max_rel_diff': 9.700907867227215e-06}}
+READ 0013|Y|C09 {'R1_locked': False, 'R3_sequence': False, 'R4_modulation': True} {'R': 0.0198426004499197, 'z': 0.3279761075973511, 'p': 0.7205367684364319} {'peak_hz': 11.2973, 'peak_over_median': 20.56}
+READ 0017|X|C11 {'R1_locked': False, 'R3_sequence': False, 'R4_modulation': True} {'R': 0.013474220409989357, 'z': 0.15123499929904938, 'p': 0.8597419261932373} {'peak_hz': 41.5675, 'peak_over_median': 21.24}
+base {"0013|X": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 1, "R4_ge_20": 1}, "0013|Y": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 1}, "0014|X": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 1}, "0014|Y": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 0}, "0015|X": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 1}, "0015|Y": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 1, "R4_ge_20": 0}, "0016|X": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 1}, "0016|Y": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 0}, "0017|X": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 4}, "0017|Y": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 3}, "0018|X": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 1}, "0018|Y": {"sidebands": 84, "R1_p_lt": 0, "R3_p_le_0.001": 0, "R4_ge_20": 0}}
+C12 hold-out {'0015': {'q_p': 0.04295704295704296, 'above_every_sideband': True}, '0017': {'q_p': 0.24875124875124874, 'above_every_sideband': True}}
+C03 0013 X R 0.0176 p 0.77 R4 {'peak_hz': 12.9404, 'peak_over_median': 14.82}
+C04 0013 X R 0.043 p 0.21 R4 {'peak_hz': 31.6618, 'peak_over_median': 16.38}
+C05 0013 X R 0.034 p 0.38 R4 {'peak_hz': 9.4898, 'peak_over_median': 12.15}
+C06 0013 X R 0.056 p 0.074 R4 {'peak_hz': 40.9538, 'peak_over_median': 14.67}
+C07 0013 X R 0.024 p 0.62 R4 {'peak_hz': 44.3373, 'peak_over_median': 13.85}
+C08 0013 X R 0.0198 p 0.72 R4 {'peak_hz': 15.8343, 'peak_over_median': 12.42}
+C09 0013 X R 0.0176 p 0.77 R4 {'peak_hz': 17.1991, 'peak_over_median': 17.02}
+C10 0013 X R 0.0906 p 0.0011 R4 {'peak_hz': 31.8664, 'peak_over_median': 13.16}
+C11 0013 X R 0.0091 p 0.93 R4 {'peak_hz': 13.7351, 'peak_over_median': 14.82}
+C12 0013 X R 0.0168 p 0.79 R4 {'peak_hz': 41.4836, 'peak_over_median': 16.0}
+C13 0013 X R 0.0321 p 0.42 R4 {'peak_hz': 23.9157, 'peak_over_median': 16.76}
