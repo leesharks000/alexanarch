@@ -13,7 +13,7 @@
     "Network Preservation",
     "Tombstone Guarantee"
   ],
-  "total_deposits": 1798,
+  "total_deposits": 1799,
   "deposits": [
     {
       "axn": "AXN:0001.GOVERNANCE.🤲🏛️🟤🏛️🍀🌈",
@@ -611008,6 +611008,214 @@
           "layer_3_content_hash": {
             "present": true,
             "canonical_hash": "8c29c7cac93fda9af6827ee10499f3d6e61b4fe5baf4f8c511e79ab010431e3a",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
+    },
+    {
+      "deposit_number": 1799,
+      "axn": "AXN:0D35.DATASET.▶️🏷️🔄🐚⚖️🌓",
+      "hex": "0D35",
+      "family": "DATASET",
+      "emoji": "▶️🏷️🔄🐚⚖️🌓",
+      "hash": "d34c6f7a3602f48c7ea1ead52adfee120d62573deb18e0038d2cacfb9993c3d0",
+      "title": "EA-CORPORA-42 — The Forty-Second Seating: Contra Geocentrism — Plutarch's Platonic Questions, De facie and Numa, the Placita, Cicero's Lucullus, Archimedes's Sand-Reckoner, Simplicius and Aquinas on De caelo, Diels's Doxographi, Copernicus, Bacon and Galileo",
+      "creator": "Cranes, Rebekah",
+      "date": "2026-11-22",
+      "description": "The forty-second seating of the originals shelf, ten seats, gathered for the study Contra Geocentrism (2026-11-22). Plutarch's Platonic Questions, De facie and Numa; the Placita of Pseudo-Plutarch; Cicero's Lucullus; Archimedes's Sand-Reckoner; Simplicius on De caelo; Diels's Doxographi Graeci; Aquinas on De caelo; Copernicus's prefaces and Book I; Bacon's Novum Organum; Galileo's Dialogo. Each in the language it was written in. Pointers to what is not seated, Oresme and Buridan first.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0",
+      "substrate": "Human–machine collaborative. Rebekah Cranes is a heteronym of Lee Sharks, the standing authority on the EA-CORPORA deposits (named by the author on 2026-11-04 and held at his word of 2026-11-05). The sources found, fetched, reduced to reading texts, verified, hashed and indexed, and the records drafted, in session by TACHYON (Claude, Anthropic) under MANUS (Lee Sharks) direction. The gathering, its object and its scope are Lee Sharks's (the study Contra Geocentrism); the editions within each seat were chosen in session and are stated per seat. CC-BY-4.0 applies to this record and the seat records.",
+      "methodology": "Each seat fetched in session from the source its record names (Perseus canonical-greekLit and canonical-latinLit and First1KGreek at GitHub; the Internet Archive; the Corpus Thomisticum; Latin and Italian Wikisource); the TEI held as fetched and reduced to a reading text keeping the edition's own reference markers; licences read in each file's teiHeader or the serving site's statement; loci verified by substring with whitespace collapsed, in the editions' own readings; public-domain status checked against the underlying edition. No text corrected by hand. The builders and this body are under rebuild/corpora/ea-corpora-42/.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text it names; if a work is misattributed or assigned to the wrong edition; if a licence recorded for an item is not the one its source states; if a reading text drops or alters a line of the TEI it is reduced from, beyond the markup; or if the four surfaces (seat, index, deposit, shelf) disagree.",
+      "root_axn": "AXN:0D35.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "d34c6f7a3602f48c7ea1ead52adfee120d62573deb18e0038d2cacfb9993c3d0",
+      "clusters": [
+        "Structural",
+        "Scriptural",
+        "Temporal",
+        "Organic",
+        "Instrumental",
+        "Celestial"
+      ],
+      "axn_reading": "Direction -> Text -> Duration -> Growth -> Method -> Origin",
+      "minted_at": "2026-11-22T05:44:16Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0D35-text.md",
+      "wiki_article": "EA-CORPORA-42 is the forty-second seating of the Crimson Hexagonal Archive's originals shelf, deposited under Rebekah Cranes, the standing authority on the EA-CORPORA deposits, on 22 November 2026. It gathers, in the language each was written in, the texts read by the study Contra Geocentrism: The Socratic–Peripatetic Corpus Against Its Own Conversion (draft, not deposited) that the shelf did not already hold. The ten seats hold Plutarch's Platonic Questions, De facie in orbe lunae and Numa, where Theophrastus reports that Plato in old age repented of giving the earth the middle place, the Pythagorean central fire is called Hestia, and Cleanthes would have Aristarchus indicted for impiety for moving the hearth of the cosmos (42/01); the Placita of Pseudo-Plutarch, whose III 13 on Philolaus, Heraclides and Ecphantus Copernicus copied in Greek (42/02); Cicero's Lucullus, where Hicetas, as Theophrastus says, turns the earth on its axis (42/03); Archimedes's Sand-Reckoner on Aristarchus's hypotheses (42/04); Simplicius on De caelo, with Heraclides of Pontus saving the phenomena by a turning earth (42/05); Diels's Doxographi Graeci of 1879, as the Internet Archive's OCR layer, with Aëtius giving Aristarchus as the hearer of Strato (42/06); Thomas Aquinas on De caelo, the school commentary that concedes the astronomers' suppositions need not be true and keeps the resting earth (42/07); Copernicus's prefaces and first book, with the dedication that names Cicero first and Plutarch after (42/08); Bacon's Novum Organum, which charges Aristotle with corrupting natural philosophy (42/09); and Galileo's Dialogo, in which Salviati holds that Aristotle, alive, would change his opinion (42/10). Each seat is fetched from the Perseus Digital Library or First1KGreek TEI, the Internet Archive, the Corpus Thomisticum, or Latin and Italian Wikisource, held as fetched with a reading text reduced by code, hashed into a manifest, and recorded with its edition, licence and verified loci. The body points to what is not seated: Oresme's Livre du ciel et du monde and Buridan's questions on De caelo, whose editions are not open, the Ross–Fobes Theophrastus, and Russell.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-42 — The Forty-Second Seating: Contra Geocentrism — Plutarch's Platonic Questions, De fac",
+          "predicate": "created_by",
+          "object": "Cranes, Rebekah",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-42 — The Forty-Second Seating: Contra Geocentrism — Plutarch's Platonic Questions, De fac",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-42 — The Forty-Second Seating: Contra Geocentrism — Plutarch's Platonic Questions, De fac",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-42 — The Forty-Second Seating: Contra Geocentrism — Plutarch's Platonic Questions, De fac",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "EA-CORPORA",
+        "originals shelf",
+        "geocentrism",
+        "De caelo",
+        "Aristotle",
+        "Theophrastus",
+        "Plato",
+        "Timaeus",
+        "Plutarch",
+        "Platonic Questions",
+        "De facie",
+        "Numa",
+        "Placita",
+        "Aëtius",
+        "Diels",
+        "Doxographi Graeci",
+        "Cicero",
+        "Lucullus",
+        "Hicetas",
+        "Heraclides of Pontus",
+        "Ecphantus",
+        "Philolaus",
+        "Aristarchus",
+        "Archimedes",
+        "Sand-Reckoner",
+        "Simplicius",
+        "Thomas Aquinas",
+        "Copernicus",
+        "De revolutionibus",
+        "Francis Bacon",
+        "Novum Organum",
+        "Galileo",
+        "Dialogo",
+        "Cleanthes",
+        "impiety",
+        "Perseus Digital Library",
+        "First1KGreek",
+        "Wikisource"
+      ],
+      "related_identifiers_raw": "AXN deposit #1792 — EA-CORPORA-41: the forty-first seating\nAXN deposit #1559 — EA-CORPORA-04: Aristotle undivided\nAXN deposit #1591 — EA-CORPORA-13: the Alexander seam, with Cicero's De finibus and Academica\nAXN deposit #1731 — EA-CORPORA-32: the Wimmer Theophrastus\nAXN deposit #1575 — Many and One\nAXN deposit #1794 — The Thinkery and the Lyceum",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 29431,
+        "audited_at": "2026-11-22T05:44:16Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_deposits": [
+        {
+          "deposit": 1792,
+          "relation": "EA-CORPORA-41, the preceding seating"
+        },
+        {
+          "deposit": 1559,
+          "relation": "EA-CORPORA-04, Aristotle undivided, with De caelo"
+        },
+        {
+          "deposit": 1591,
+          "relation": "EA-CORPORA-13, with Cicero's Academica posteriora"
+        },
+        {
+          "deposit": 1731,
+          "relation": "EA-CORPORA-32, the Wimmer Theophrastus with the Metaphysics"
+        },
+        {
+          "deposit": 1522,
+          "relation": "EA-CORPORA-01/08, Plato, with the Timaeus"
+        },
+        {
+          "deposit": 1575,
+          "relation": "Many and One, Heraclides and the Syracusans"
+        },
+        {
+          "deposit": 1794,
+          "relation": "The Thinkery and the Lyceum, the impiety nexus"
+        }
+      ],
+      "references_concepts": [
+        "Lee Sharks",
+        "Rebekah Cranes",
+        "TACHYON"
+      ],
+      "references_concept_count": 3,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0D35.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-11-22T05:45:46.099442+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "fabd862a5d0bdf4114178a960dfc24bfddbc66f6148bb4f8eec1a85fb3c8a296",
             "hash_in_body": false,
             "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
           },

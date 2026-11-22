@@ -1,0 +1,73 @@
+{
+ "corpus": "plutarch-platonic-questions-de-facie-numa",
+ "seat": "EA-CORPORA-42/01",
+ "title": "Plutarch, Platonicae quaestiones, De facie in orbe lunae, Numa (Perseus canonical-greekLit, perseus-grc2)",
+ "edition": "Platonicae quaestiones, De facie in orbe lunae, Numa (Perseus canonical-greekLit, perseus-grc2)",
+ "language": "grc",
+ "license": {
+  "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+  "record": "CC-BY-4.0 applies to this seat record only."
+ },
+ "origin": {
+  "repo": "PerseusDL/canonical-greekLit",
+  "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+  "paths": [
+   "data/tlg0007/tlg133",
+   "data/tlg0007/tlg126",
+   "data/tlg0007/tlg005"
+  ],
+  "transport": "raw.githubusercontent.com at the pinned commit (the repository's HEAD on the day)"
+ },
+ "works": {
+  "count": 3,
+  "units": "one file per work",
+  "per-work": "text/<edition-stem>.txt",
+  "list": [
+   {
+    "id": "tlg0007.tlg005.perseus-grc2",
+    "title": "Plutarch, Numa",
+    "text": "text/tlg0007.tlg005.perseus-grc2.txt",
+    "lines": 289
+   },
+   {
+    "id": "tlg0007.tlg126.perseus-grc2",
+    "title": "Plutarch, De Facie Quae in orbe Lunae Apparet",
+    "text": "text/tlg0007.tlg126.perseus-grc2.txt",
+    "lines": 62
+   },
+   {
+    "id": "tlg0007.tlg133.perseus-grc2",
+    "title": "Plutarch, Platonicae quaestiones",
+    "text": "text/tlg0007.tlg133.perseus-grc2.txt",
+    "lines": 102
+   }
+  ]
+ },
+ "normalization": "The TEI as fetched under original/. text/ is the <text> reduced by code (rebuild/corpora/ea-corpora-42/prepare_texts42.py, the reducer of EA-CORPORA-41): teiHeader, note, app and bibl dropped; one line per <p>, <l>, <head> or <ab>; each numbered <div> marked [<subtype> <n>]; the edition's page breaks stand as [p. N] and its numbered lines as |N. No text was corrected by hand.",
+ "scope": "whole, as the repository holds it",
+ "why_seated": "THE REPORTS. Platonic Questions 8.1 (1006C): Theophrastus reports that Plato, grown older, repented of giving the earth the middle place, which did not befit it; the same Question reads the Timaeus's winding earth as the earth Aristarchus and Seleucus later showed turning. Numa 11: the Pythagorean central fire called Hestia, the earth not of the most honoured parts, and Plato grown old said to think the same. De facie 6 (923A): Cleanthes held that the Greeks should indict Aristarchus for impiety, as moving the hearth (Hestia) of the cosmos.",
+ "fetched": "2026-11-22",
+ "verified_loci": [
+  "Plat. Q. 8.1, 1006C, Plato's repentance on Theophrastus's word — 'Θεόφραστος δὲ καὶ προσιστορεῖ τῷ Πλάτωνι πρεσβυτέρῳ γενομένῳ μεταμέλειν' (text/tlg0007.tlg133.perseus-grc2.txt)",
+  "Plat. Q. 8.1, Aristarchus and Seleucus — 'Ἀρίσταρχος καὶ Σέλευκος ἀπεδείκνυσαν' (text/tlg0007.tlg133.perseus-grc2.txt)",
+  "Numa 11, the earth not of the most honoured parts — 'οὐ τῶν τιμιωτάτων οὐδὲ τῶν πρώτων τοῦ κόσμου μορίων' (text/tlg0007.tlg005.perseus-grc2.txt)",
+  "De facie 923A, Cleanthes against Aristarchus — 'ὥσπερ Ἀρίσταρχον ᾤετο δεῖν Κλεάνθης τὸν Σάμιον ἀσεβείας προσκαλεῖσθαι τοὺς Ἕλληνας' (text/tlg0007.tlg126.perseus-grc2.txt)"
+ ],
+ "loci_not_found": [],
+ "lines_total": 453,
+ "ruling": "Lee Sharks, 2026-11-22 00:33 EST: \"rebekah cranes gets ea corpora deposits. lets expand the scope there, deposit, and close debts on the contea geocentrism so that were ready to deposit when the ea corpora lands\"; earlier (00:04): \"yup\" to seating the Academica and the Plutarch; the standing rule for originals-library seatings, 2026-10-18: \"original language where available always\".",
+ "research": {
+  "study": "Contra Geocentrism: The Socratic–Peripatetic Corpus Against Its Own Conversion (draft, 2026-11-22, not deposited)",
+  "for": "the reports that carried the case against the resting central earth out of the school (Theophrastus in Plutarch and Cicero, the Placita), the road to Copernicus, the school commentary on De caelo, and the history of blaming the name"
+ },
+ "spine": "EA-CORPORA-42 (#1799)",
+ "axn": "AXN:0D35.ORIGINAL.🎨🔛🚨📎🥁🎭",
+ "axn_basis": {
+  "sha256_of": "MANIFEST.sha256",
+  "sha256": "86f4c0478c840981b76997617a94123d354fa3c9a742866ff04c0670f3334244",
+  "hex_of": "#1799 (AXN:0D35.DATASET.▶️🏷️🔄🐚⚖️🌓)",
+  "family": "ORIGINAL",
+  "glyph_table": "v2.1",
+  "assigned": "2026-11-22"
+ }
+}

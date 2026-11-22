@@ -1,9 +1,9 @@
 {
  "_note": "EA-CORPORA-01 — the seated primary source corpora. Each seat is a directory under data/corpora/ holding as-fetched originals, flat ref-tagged normalized text, a commit-pinned source.json, and a SHA-256 manifest. INDEX COMPLETENESS (2026-08-28): this index had drifted to 17 of 39 seats — the second and third seatings never reached it. It is now complete against data/corpora/ and gated by scripts/seat_corpus_postflight.py, which fails when any of the four surfaces of a seat disagree: the seat directory, this index, a seating deposit, and the rendered card at traininglayerliterature.org/originals/<name>/.",
  "_source": "https://www.alexanarch.org/api/corpora.json",
- "_generated": "2026-11-21T00:05:18.884821Z",
- "seats": 306,
- "lines_total": 12925654,
+ "_generated": "2026-11-22T05:43:26.242868Z",
+ "seats": 316,
+ "lines_total": 13014659,
  "principle": "Originals wherever they exist. Where only a translation is available the seat is not taken; where a licence cannot be verified at the file the seat is not taken. Absences are declared, dated and reasoned.",
  "corpora": [
   {
@@ -37022,7 +37022,286 @@
    "scope": "whole, as the repository holds it",
    "data": "https://www.alexanarch.org/data/corpora/appian-dio-sulla-catiline/",
    "axn": "AXN:0D1A.ORIGINAL.🃏🌖☀️🧱♦️○"
+  },
+  {
+   "seat": "EA-CORPORA-42/01",
+   "corpus": "plutarch-platonic-questions-de-facie-numa",
+   "edition": "Platonicae quaestiones, De facie in orbe lunae, Numa (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0007/tlg133",
+     "data/tlg0007/tlg126",
+     "data/tlg0007/tlg005"
+    ],
+    "transport": "raw.githubusercontent.com at the pinned commit (the repository's HEAD on the day)"
+   },
+   "language": "grc",
+   "lines": 453,
+   "verified_loci": [
+    "Plat. Q. 8.1, 1006C, Plato's repentance on Theophrastus's word — 'Θεόφραστος δὲ καὶ προσιστορεῖ τῷ Πλάτωνι πρεσβυτέρῳ γενομένῳ μεταμέλειν' (text/tlg0007.tlg133.perseus-grc2.txt)",
+    "Plat. Q. 8.1, Aristarchus and Seleucus — 'Ἀρίσταρχος καὶ Σέλευκος ἀπεδείκνυσαν' (text/tlg0007.tlg133.perseus-grc2.txt)",
+    "Numa 11, the earth not of the most honoured parts — 'οὐ τῶν τιμιωτάτων οὐδὲ τῶν πρώτων τοῦ κόσμου μορίων' (text/tlg0007.tlg005.perseus-grc2.txt)",
+    "De facie 923A, Cleanthes against Aristarchus — 'ὥσπερ Ἀρίσταρχον ᾤετο δεῖν Κλεάνθης τὸν Σάμιον ἀσεβείας προσκαλεῖσθαι τοὺς Ἕλληνας' (text/tlg0007.tlg126.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE REPORTS. Platonic Questions 8.1 (1006C): Theophrastus reports that Plato, grown older, repented of giving the earth the middle place, which did not befit it; the same Question reads the Timaeus's winding earth as the earth Aristarchus and Seleucus later showed turning. Numa 11: the Pythagorean central fire called Hestia, the earth not of the most honoured parts, and Plato grown old said to think the same. De facie 6 (923A): Cleanthes held that the Greeks should indict Aristarchus for impiety, as moving the hearth (Hestia) of the cosmos.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/plutarch-platonic-questions-de-facie-numa/",
+   "axn": "AXN:0D35.ORIGINAL.🎨🔛🚨📎🥁🎭"
+  },
+  {
+   "seat": "EA-CORPORA-42/02",
+   "corpus": "pseudo-plutarch-placita",
+   "edition": "Placita philosophorum (Perseus canonical-greekLit, perseus-grc2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-greekLit",
+    "commit": "dacb04909e43dc47738828d33cc3d2b0635bc54c",
+    "paths": [
+     "data/tlg0094/tlg003"
+    ],
+    "transport": "raw.githubusercontent.com at the pinned commit (the repository's HEAD on the day)"
+   },
+   "language": "grc",
+   "lines": 800,
+   "verified_loci": [
+    "III 13, Philolaus — 'Φιλόλαος δʼ ὁ Πυθαγόρειος κύκλῳ περιφέρεσθαι περὶ τὸ πῦρ' (text/tlg0094.tlg003.perseus-grc2.txt)",
+    "III 13, Heraclides and Ecphantus — 'Ἡρακλείδης ὁ Ποντικὸς καὶ Ἔκφαντος ὁ Πυθαγόρειος κινοῦσι μὲν τὴν γῆν' (text/tlg0094.tlg003.perseus-grc2.txt)",
+    "II 24, Aristarchus — 'Ἀρίσταρχος τὸν ἥλιον ἵστησι μετὰ τῶν ἀπλανῶν' (text/tlg0094.tlg003.perseus-grc2.txt)"
+   ],
+   "why_seated": "THE DOXOGRAPHY COPERNICUS QUOTED. Placita III 13: Philolaus's earth carried about the fire, Heraclides and Ecphantus's earth turning in place like a wheel, the passage Copernicus copies into his dedication; II 24: Aristarchus sets the sun with the fixed stars and moves the earth about the solar circle.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/pseudo-plutarch-placita/",
+   "axn": "AXN:0D35.ORIGINAL.🐚🔀♉🌗🗡️📝"
+  },
+  {
+   "seat": "EA-CORPORA-42/03",
+   "corpus": "cicero-lucullus",
+   "edition": "Lucullus (Academica priora II) (Perseus canonical-latinLit, perseus-lat2)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "PerseusDL/canonical-latinLit",
+    "commit": "8cef51623130f2412da410858e32c322eb796c0a",
+    "paths": [
+     "data/phi0474/phi046"
+    ],
+    "transport": "raw.githubusercontent.com at the pinned commit (the repository's HEAD on the day)"
+   },
+   "language": "lat",
+   "lines": 321,
+   "verified_loci": [
+    "Lucullus 123, Hicetas — 'Hicetas Syracosius, ut ait Theophrastus' (text/phi0474.phi046.perseus-lat2.txt)",
+    "Lucullus 123, the appearances alike — 'eadem effici omnia quasi stante terra caelum moveretur' (text/phi0474.phi046.perseus-lat2.txt)"
+   ],
+   "why_seated": "HICETAS, UT AIT THEOPHRASTUS. Lucullus 123: Hicetas of Syracuse, as Theophrastus says, holds that the heaven and all above stand and the earth alone turns about its axis, and that all comes out the same as if the earth stood; the first source Copernicus names. Beside the seated Academica posteriora (EA-CORPORA-13/03).",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/cicero-lucullus/",
+   "axn": "AXN:0D35.ORIGINAL.🏴⚡🎯♻️🌕🔚"
+  },
+  {
+   "seat": "EA-CORPORA-42/04",
+   "corpus": "archimedes-arenarius",
+   "edition": "Arenarius (First1KGreek, 1st1K-grc1; Heiberg)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+    "paths": [
+     "data/tlg0552/tlg006"
+    ],
+    "transport": "raw.githubusercontent.com at the pinned commit (the repository's HEAD on the day)"
+   },
+   "language": "grc",
+   "lines": 12,
+   "verified_loci": [
+    "Aristarchus's hypotheses — 'Ἀρίσταρχος δὲ ὁ Σάμιος ὑποθέσιών τινων ἐξέδωκεν γραφάς' (text/tlg0552.tlg006.1st1K-grc1.txt)"
+   ],
+   "why_seated": "ARISTARCHUS'S HYPOTHESES. The Sand-Reckoner reports that Aristarchus of Samos published writings on certain hypotheses, in which the fixed stars and the sun stay unmoved and the earth is carried about the sun.",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/archimedes-arenarius/",
+   "axn": "AXN:0D35.ORIGINAL.🌕🚨♅🟤💙♾️"
+  },
+  {
+   "seat": "EA-CORPORA-42/05",
+   "corpus": "simplicius-in-de-caelo",
+   "edition": "In Aristotelis De caelo commentaria (First1KGreek, 1st1K-grc1; Heiberg, CAG VII)",
+   "license": {
+    "payload": "CC BY-SA 4.0 (the TEI packaging, as stated in the file's teiHeader); the underlying editions are public domain",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "repo": "OpenGreekAndLatin/First1KGreek",
+    "commit": "ed91552c52530c8f5a3ddf2dd767e899372a804c",
+    "paths": [
+     "data/tlg4013/tlg001"
+    ],
+    "transport": "raw.githubusercontent.com at the pinned commit (the repository's HEAD on the day)"
+   },
+   "language": "grc",
+   "lines": 1160,
+   "verified_loci": [
+    "p. 519, Heraclides saves the phenomena — 'Ἡρακλείδης ὁ Ποντικὸς ὑποθέμενος σώζειν ᾤετο' (text/tlg4013.tlg001.1st1K-grc1.txt)",
+    "p. 541, as Heraclides supposed — 'ὡς Ἡρακλείδης ὁ Ποντικὸς ὑπετίθετο' (text/tlg4013.tlg001.1st1K-grc1.txt)"
+   ],
+   "why_seated": "THE COMMENTARY IN GREEK. Simplicius on De caelo II: Heraclides of Pontus, supposing the earth at the centre moving in a circle and the heaven at rest, thought he saved the phenomena (p. 519); and again, the earth turning about the centre as Heraclides supposed (p. 541). Beside the seated In Physica (EA-CORPORA-41/11).",
+   "scope": "whole, as the repository holds it",
+   "data": "https://www.alexanarch.org/data/corpora/simplicius-in-de-caelo/",
+   "axn": "AXN:0D35.ORIGINAL.🕚🪸▶️⌛🔃❄️"
+  },
+  {
+   "seat": "EA-CORPORA-42/06",
+   "corpus": "diels-doxographi-graeci",
+   "edition": "Hermann Diels, Doxographi Graeci (Berolini: G. Reimer, 1879) — Internet Archive bub_gb_aaMNAAAAIAAJ (Google Books scan), the OCR layer",
+   "license": {
+    "payload": "Diels's Doxographi Graeci (1879) is public domain; the OCR layer is the Internet Archive's, as served.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "source": "Internet Archive",
+    "identifier": "bub_gb_aaMNAAAAIAAJ",
+    "url": "https://archive.org/details/bub_gb_aaMNAAAAIAAJ",
+    "files": [
+     "bub_gb_aaMNAAAAIAAJ_djvu.txt",
+     "bub_gb_aaMNAAAAIAAJ_meta.xml"
+    ]
+   },
+   "language": "mul",
+   "lines": 79300,
+   "verified_loci": [
+    "Aëtius I 15, Aristarchus hearer of Strato (OCR: ἀχηυστὴς) — 'Αρίσταρχος Σάμιος μαϑηματιχὸς \nἀχηυστὴς Στράτωνος' (text/bub_gb_aaMNAAAAIAAJ_djvu.txt)"
+   ],
+   "why_seated": "AËTIUS. The reconstructed Placita in parallel with Stobaeus, with Theophrastus's Physical Opinions; Aëtius I 15 (On colours), in Stobaeus's column, gives Aristarchus of Samos as the hearer of Strato, Theophrastus's successor.",
+   "scope": "whole",
+   "data": "https://www.alexanarch.org/data/corpora/diels-doxographi-graeci/",
+   "axn": "AXN:0D35.ORIGINAL.🍃✨↗️🫶♊♍"
+  },
+  {
+   "seat": "EA-CORPORA-42/07",
+   "corpus": "aquinas-in-de-caelo",
+   "edition": "The Leonine text (Rome, 1886), as recognized by Enrique Alarcón from Roberto Busa's Index Thomisticus, Corpus Thomisticum (corpusthomisticum.org), books I–III",
+   "license": {
+    "payload": "The Leonine text (1886) is public domain; the digital text is the Corpus Thomisticum's (Fundación Tomás de Aquino), as served, under its terms.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "source": "Corpus Thomisticum",
+    "urls": [
+     "https://www.corpusthomisticum.org/ccm1.html",
+     "https://www.corpusthomisticum.org/ccm2.html",
+     "https://www.corpusthomisticum.org/ccm3.html"
+    ]
+   },
+   "language": "lat",
+   "lines": 696,
+   "verified_loci": [
+    "lect. 11 n. 2 — 'Supponit autem Aristoteles ad praesens quod terra quiescat, quod postmodum probabit' (text/aquinas-ccm2.txt)",
+    "lect. 17 n. 2 — 'Illorum tamen suppositiones quas adinvenerunt, non est necessarium esse veras' (text/aquinas-ccm2.txt)",
+    "lect. 21 n. 4 — 'Sed hoc intelligi posset si terra per modicum spatium distaret a medio' (text/aquinas-ccm2.txt)",
+    "lect. 21 n. 5 — 'si vero scribatur per diphthongum, significat prohibitionem' (text/aquinas-ccm2.txt)"
+   ],
+   "why_seated": "THE SCHOOL COMMENTARY. On De caelo II: Aristotle 'supposes for the present that the earth rests, which he will prove later', with Heraclides and Aristarchus reported as moving it daily (lect. 11 n. 2); the astronomers' suppositions need not be true, since the appearances might be saved some other way (lect. 17 n. 2); the indecisive phenomena answered with the lunar eclipse, and the Timaeus's ἰλλομένην read as binding, not motion (lect. 21 nn. 4–5).",
+   "scope": "books I–III, as the site holds them",
+   "data": "https://www.alexanarch.org/data/corpora/aquinas-in-de-caelo/",
+   "axn": "AXN:0D35.ORIGINAL.♆🕚🧬◇🌘🔅"
+  },
+  {
+   "seat": "EA-CORPORA-42/08",
+   "corpus": "copernicus-de-revolutionibus",
+   "edition": "Wikisource (la.wikisource.org), transcribed from the Nuremberg print of 1543",
+   "license": {
+    "payload": "The 1543 text is public domain; the Wikisource transcription is CC BY-SA 4.0.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "source": "Latin Wikisource",
+    "urls": [
+     "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/01",
+     "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/02",
+     "https://la.wikisource.org/wiki/De_revolutionibus_orbium_coelestium/05"
+    ]
+   },
+   "language": "lat",
+   "lines": 1959,
+   "verified_loci": [
+    "the dedication, Cicero first — 'Ac reperi quidem apud Ciceronem primum, Nicetum sensisse terram moveri' (text/copernicus-02.txt)",
+    "the dedication, Plutarch after — 'Postea & apud Plutarchum inveni quosdam alios in ea fuisse opinione' (text/copernicus-02.txt)",
+    "the dedication, the occasion — 'Inde igitur occasionem nactus' (text/copernicus-02.txt)"
+   ],
+   "why_seated": "THE ROAD'S END. The dedication: 'I found first in Cicero that Nicetas held that the earth moved; afterwards in Plutarch', with Placita III 13 copied in Greek, and from that occasion the turn to the earth's mobility.",
+   "scope": "the two prefaces and Book I, the pages the transcription holds at the quality it marks",
+   "data": "https://www.alexanarch.org/data/corpora/copernicus-de-revolutionibus/",
+   "axn": "AXN:0D35.ORIGINAL.♌🪜🍄⛵🕘↙️"
+  },
+  {
+   "seat": "EA-CORPORA-42/09",
+   "corpus": "bacon-novum-organum",
+   "edition": "Wikisource (la.wikisource.org)",
+   "license": {
+    "payload": "The 1620 text is public domain; the Wikisource transcription is CC BY-SA 4.0.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "source": "Latin Wikisource",
+    "urls": [
+     "https://la.wikisource.org/wiki/Novum_Organum/Praefatio_II",
+     "https://la.wikisource.org/wiki/Novum_Organum/Liber_Primus",
+     "https://la.wikisource.org/wiki/Novum_Organum/Liber_Secundus"
+    ]
+   },
+   "language": "lat",
+   "lines": 661,
+   "verified_loci": [
+    "I.63 — 'Primi generis exemplum in Aristotele maxime conspicuum est, qui philosophiam naturalem dialectica sua corrupit' (text/bacon-Liber_Primus.txt)",
+    "I.63, one motion to each body — 'motum singulis corporibus unicum et proprium' (text/bacon-Liber_Primus.txt)"
+   ],
+   "why_seated": "BLAMING THE NAME. I.63: Aristotle the conspicuous case, 'who corrupted natural philosophy by his dialectic', among the charges the single proper motion of each body, the premise of De caelo II 14.",
+   "scope": "the Novum Organum proper (the Instauratio front matter not seated)",
+   "data": "https://www.alexanarch.org/data/corpora/bacon-novum-organum/",
+   "axn": "AXN:0D35.ORIGINAL.🕊️🔖⛳💫🖤🧫"
+  },
+  {
+   "seat": "EA-CORPORA-42/10",
+   "corpus": "galileo-dialogo",
+   "edition": "Wikisource (it.wikisource.org), from Le opere di Galileo Galilei, Edizione Nazionale, vol. VII, ed. Antonio Favaro",
+   "license": {
+    "payload": "The text is public domain; the Wikisource transcription is CC BY-SA 4.0.",
+    "record": "CC-BY-4.0 applies to this seat record only."
+   },
+   "origin": {
+    "source": "Italian Wikisource",
+    "urls": [
+     "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Al_discreto_lettore",
+     "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_prima",
+     "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_seconda",
+     "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_terza",
+     "https://it.wikisource.org/wiki/Dialogo_sopra_i_due_massimi_sistemi_del_mondo_tolemaico_e_copernicano/Giornata_quarta"
+    ]
+   },
+   "language": "ita",
+   "lines": 3643,
+   "verified_loci": [
+    "Day 1, Salviati — 'non dubito punto che se Aristotile fusse all’età nostra' (text/galileo-Giornata_prima.txt)",
+    "Day 1, sense before discourse — 'le sensate esperienze si dovessero anteporre a qualsivoglia discorso fabbricato da ingegno umano' (text/galileo-Giornata_prima.txt)"
+   ],
+   "why_seated": "ARISTOTLE AGAINST THE PERIPATETICS. Day 1: Salviati, 'if Aristotle were in our age he would change his opinion', and the heaven made inalterable by the followers; Simplicio the Peripatetic holding the conclusion as authority.",
+   "scope": "the dialogue whole, the four days with the address to the reader",
+   "data": "https://www.alexanarch.org/data/corpora/galileo-dialogo/",
+   "axn": "AXN:0D35.ORIGINAL.🚨🌋🔙🤲⛵🕗"
   }
  ],
- "count": 306
+ "count": 316
 }
