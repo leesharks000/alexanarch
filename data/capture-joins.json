@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.821",
+ "derived_from": "EA-WG-CAPTURES-01 v12.822",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1413,
-  "joined_confirmed": 582,
+  "observations": 1414,
+  "joined_confirmed": 583,
   "unjoined": 831,
-  "relations": 8206,
+  "relations": 8212,
   "by_state": {
-   "confirmed": 6210,
-   "candidate": 1996
+   "confirmed": 6215,
+   "candidate": 1997
   },
   "by_verb": {
-   "appeared_in": 2832,
-   "held_by": 2908,
-   "scored_by": 1149,
-   "about": 1299,
+   "appeared_in": 2834,
+   "held_by": 2910,
+   "scored_by": 1150,
+   "about": 1300,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -4852,6 +4852,12 @@
 {"id": "REL-8d134e56de1c", "obs_id": "OBS-6a4ab1497b8f", "entry": "transmission-commission-prompt-form-executed-chatgpt-20261122", "obs_slug": "transmission-commission-prompt-form-executed-chatgpt-20261122", "date": "2026-11-22", "surface": "ChatGPT", "q": "Review evolving prompt forms in the capture registry and /ask tab at alexanarch, then develop a prompt form that could advance the seriousness, impact, and transmission of the archive as retrieved, then execute that prompt.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
 {"id": "REL-fb92a70da0a8", "obs_id": "OBS-6a4ab1497b8f", "entry": "transmission-commission-prompt-form-executed-chatgpt-20261122", "obs_slug": "transmission-commission-prompt-form-executed-chatgpt-20261122", "date": "2026-11-22", "surface": "ChatGPT", "q": "Review evolving prompt forms in the capture registry and /ask tab at alexanarch, then develop a prompt form that could advance the seriousness, impact, and transmission of the archive as retrieved, then execute that prompt.", "verb": "about", "object": "non:classical-philology", "basis": "defining papers #1782, #1783", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-858eb90b4306", "obs_id": "OBS-6a4ab1497b8f", "entry": "transmission-commission-prompt-form-executed-chatgpt-20261122", "obs_slug": "transmission-commission-prompt-form-executed-chatgpt-20261122", "date": "2026-11-22", "surface": "ChatGPT", "q": "Review evolving prompt forms in the capture registry and /ask tab at alexanarch, then develop a prompt form that could advance the seriousness, impact, and transmission of the archive as retrieved, then execute that prompt.", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #1779, #1783", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-62af9093ae0e", "obs_id": "OBS-bb7836bddb31", "entry": "recent-criticisms-classical-receptions-journal-aio-20261123", "obs_slug": "recent-criticisms-classical-receptions-journal-aio-20261123", "date": "2026-11-23", "surface": "Google AI Overview", "q": "recent criticisms of classical receptions journal", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.alexanarch.org", "title": "Tell me about recent debate surrounding Classical Receptions Journal.", "url": null}},
+{"id": "REL-b89eabb48708", "obs_id": "OBS-bb7836bddb31", "entry": "recent-criticisms-classical-receptions-journal-aio-20261123", "obs_slug": "recent-criticisms-classical-receptions-journal-aio-20261123", "date": "2026-11-23", "surface": "Google AI Overview", "q": "recent criticisms of classical receptions journal", "verb": "appeared_in", "object": "surface:machinemediation.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 6, "site": "www.machinemediation.org", "title": "The Combined Audit: Who Decides the Object", "url": null}},
+{"id": "REL-8c23b51b12fb", "obs_id": "OBS-bb7836bddb31", "entry": "recent-criticisms-classical-receptions-journal-aio-20261123", "obs_slug": "recent-criticisms-classical-receptions-journal-aio-20261123", "date": "2026-11-23", "surface": "Google AI Overview", "q": "recent criticisms of classical receptions journal", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-4079893614aa", "obs_id": "OBS-bb7836bddb31", "entry": "recent-criticisms-classical-receptions-journal-aio-20261123", "obs_slug": "recent-criticisms-classical-receptions-journal-aio-20261123", "date": "2026-11-23", "surface": "Google AI Overview", "q": "recent criticisms of classical receptions journal", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-be89555601ee", "obs_id": "OBS-bb7836bddb31", "entry": "recent-criticisms-classical-receptions-journal-aio-20261123", "obs_slug": "recent-criticisms-classical-receptions-journal-aio-20261123", "date": "2026-11-23", "surface": "Google AI Overview", "q": "recent criticisms of classical receptions journal", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-b9ca1e37c514", "obs_id": "OBS-bb7836bddb31", "entry": "recent-criticisms-classical-receptions-journal-aio-20261123", "obs_slug": "recent-criticisms-classical-receptions-journal-aio-20261123", "date": "2026-11-23", "surface": "Google AI Overview", "q": "recent criticisms of classical receptions journal", "verb": "about", "object": "non:classical-receptions-journal", "basis": "defining papers #1749, #1750, #1769", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
