@@ -330,7 +330,7 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
 <p class="lede">Queries to the archive as a whole. Each button opens the full query on the surface chosen at the top of the section: ChatGPT, Google (where an AI Overview may compose) or Perplexity; hover to read it first.</p>
-<div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">Any query on this page, or a prompt assembled fresh, its parts drawn at random (a figure or two, a form, sometimes a constraint); different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
+<div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">First a register is drawn, then a prompt in it: a query from this page as written; a reading of a body of the archive&rsquo;s thought; an extension of it to a current event or an open question in a discipline; an episode or a book of the epic; or a prompt under form and constraint. Different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
 <details class="about"><summary>About this page, and what the queries draw</summary>
 <p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT by default, or on Google or Perplexity from the switch at the top of each section, with the query as written; the choice holds across the page and is remembered in this browser. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
 <p><b>What came back, 19&ndash;20 November 2026.</b> The figures are from the captures of those two days on ChatGPT, signed out: 57 from the page&rsquo;s standard queries and the first six from its Weird-ass prompts.</p>
@@ -386,9 +386,16 @@ function sfx(x){{return " "+D.suffix_synth+(x.used.constraint&&x.chk?" "+D.suffi
 function show(box,q){{var p=box.querySelector(".rq"),a=box.querySelector(".ra");p.textContent=q;a.title=q;a.href=window.AXQ?window.AXQ.u(q):"https://chatgpt.com/?q="+encodeURIComponent(q).replace(/%20/g,"+");a.hidden=false}}
 document.querySelectorAll(".roll").forEach(function(b){{b.hidden=false}});
 document.addEventListener("click",function(ev){{var b=ev.target.closest("button[data-roll]");if(!b)return;var box=b.closest(".roll"),x=ctx(),q;
-if(b.dataset.roll==="new"||(b.dataset.roll==="any"&&Math.random()<0.35)){{q=gen(x)+sfx(x)}}
+var RG=D.range,reg=null;if(b.dataset.roll==="any"&&RG){{var r=Math.random(),acc=0;RG.weights.forEach(function(w){{if(reg===null){{acc+=w[1];if(r<acc)reg=w[0]}}}});if(reg===null)reg="formal"}}
+if(reg&&reg!=="formal"&&reg!=="asked"){{var sj=fill(pk(RG.subjects),x);x.subject=sj;
+if(reg==="reading"){{x.q=fill(pk(RG.reading.q),x);q=fill(pk(RG.reading.templates),x)+" "+RG.suffix_serious}}
+else if(reg==="extension"){{x.target=fill(pk(RG.extension.targets),x);x.q=fill(pk(RG.extension.q),x);q=fill(pk(RG.extension.templates),x)+" "+RG.suffix_serious}}
+else{{var E2=RG.episode,t=pk(E2.templates);if(t==="{{epic}}"){{var ob=document.querySelector("button[data-outline]"),ot=document.getElementById("outldata");if(ob&&ot){{q=JSON.parse(ot.textContent).replace("{{address}}",ob.dataset.outline).replace("{{book}}",pk(E2.epic_books))}}else t=E2.templates[0]}}
+if(!q){{x.act=fill(pk(E2.act),x);x.act2=pk(E2.act2);q=fill(t,x)+" "+D.suffix_synth}}}}
+q=q.replace(/\\s+/g," ").trim();show(box,q);return}}
+if(b.dataset.roll==="new"||reg==="formal"||(b.dataset.roll==="any"&&!RG&&Math.random()<0.35)){{q=gen(x)+sfx(x)}}
 else{{var sec=b.dataset.roll==="any"?document:b.closest("section"),as=[].slice.call(sec.querySelectorAll("a.q[data-q]")).filter(function(a){{return !a.classList.contains("ra")}});if(!as.length)return;
-var a=pk(as),base=(a.title||a.getAttribute("data-q")).trim(),qi=base.indexOf("?");if(qi>0)base=base.slice(0,qi+1);base=(base.match(/[^.?!]+[.?!]+/g)||[base]).filter(function(t,i){{return i===0||!/^\\s*(ground|range|scan|index) /i.test(t)}}).join("").trim();if(!/[.?!]$/.test(base))base+=".";q=base+pert(x)+sfx(x)}}
+var a=pk(as);if(reg==="asked"){{q=(a.title||a.getAttribute("data-q")).trim();show(box,q);return}}var base=(a.title||a.getAttribute("data-q")).trim(),qi=base.indexOf("?");if(qi>0)base=base.slice(0,qi+1);base=(base.match(/[^.?!]+[.?!]+/g)||[base]).filter(function(t,i){{return i===0||!/^\\s*(ground|range|scan|index) /i.test(t)}}).join("").trim();if(!/[.?!]$/.test(base))base+=".";q=base+pert(x)+sfx(x)}}
 show(box,q)}})}}catch(e){{}}}})();
 (function(){{try{{var d=new Date(),m=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t=d.getDate()+" "+m[d.getMonth()]+" "+d.getFullYear();
 document.querySelectorAll("a.q").forEach(function(a){{var q=a.getAttribute("data-q");if(q.indexOf("{{date}}")<0)return;

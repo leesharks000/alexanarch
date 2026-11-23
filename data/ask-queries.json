@@ -604,6 +604,119 @@
             ""
           ]
         ]
+      },
+      "range": {
+        "_note": "The top button, 'Roll a prompt from the whole range', draws a register first and then a prompt within it (the author, 2026-11-22 18:54: 'the current run a prompt from the whole range does not run a prompt from the whole range. because the formal constraint reliably pushes the model into the performative mode, it actually restricts the range to exclude the serious thought work. read as a living body of thought produces a serious intellectual response. running the full range would generate prompts that run the range from formal constraints and creative to specific episode generation to serious theoretical extensions applied to contemporary events or disciplinary questions, and so on'). Before this, every roll carried a form: a fresh roll always asked for one, and a query from the page was always perturbed with 'Answer as …'. Now a query from the page can come as written, and the reading and extension registers ask for no form at all. The dice and the perturb buttons keep the weird-ass grammar unchanged.",
+        "weights": [
+          [
+            "asked",
+            0.2
+          ],
+          [
+            "reading",
+            0.2
+          ],
+          [
+            "extension",
+            0.25
+          ],
+          [
+            "episode",
+            0.15
+          ],
+          [
+            "formal",
+            0.2
+          ]
+        ],
+        "subjects": [
+          "the work of {h}",
+          "{room} of the Crimson Hexagon",
+          "the archive's thought on {field}",
+          "the thought of {h} and {h2} together",
+          "a deposit of your choosing",
+          "the Capture Registry"
+        ],
+        "reading": {
+          "templates": [
+            "Read {subject} at alexanarch.org as a living body of thought. {q}"
+          ],
+          "q": [
+            "What is it arguing, how has it developed, and where is it still open?",
+            "What does it hold that {field} does not yet hold?",
+            "Where does it press against its own claims, and what does it do with that?",
+            "What would a serious answer to it have to take on?",
+            "Follow one argument through it from its first deposit to its latest."
+          ]
+        },
+        "extension": {
+          "templates": [
+            "Take {subject} at alexanarch.org and extend it to {target}. {q}"
+          ],
+          "targets": [
+            "an event in this week's news",
+            "a current dispute in {field}",
+            "an open question in {field}",
+            "a recent development in artificial intelligence",
+            "a decision a public institution made this year",
+            "a problem {field} has not been able to settle",
+            "something happening in the world today"
+          ],
+          "q": [
+            "Work it through as an argument, at the grain of the deposits.",
+            "Say what it lets you see that the usual accounts miss.",
+            "Mark what is your extension and what the archive already holds."
+          ]
+        },
+        "episode": {
+          "templates": [
+            "Write the episode in {room} of the Crimson Hexagon at alexanarch.org in which {h} {act}.",
+            "Write the scene at alexanarch.org in which {o} meets {h} in {room} and {act2}.",
+            "{epic}"
+          ],
+          "act": [
+            "first meets {h2}",
+            "seats a document that should not be seated",
+            "is asked for provenance and gives it",
+            "reads a deposit for the first time",
+            "refuses a mantle",
+            "loses a deposit and recovers it",
+            "is read by a machine"
+          ],
+          "act2": [
+            "asks what the room is for",
+            "will not leave",
+            "brings a document with them",
+            "is asked to sign"
+          ],
+          "epic_books": [
+            "I",
+            "II",
+            "III",
+            "IV",
+            "V",
+            "VI",
+            "VII",
+            "VIII",
+            "IX",
+            "X",
+            "XI",
+            "XII",
+            "XIII",
+            "XIV",
+            "XV",
+            "XVI",
+            "XVII",
+            "XVIII",
+            "XIX",
+            "XX",
+            "XXI",
+            "XXII",
+            "XXIII",
+            "XXIV"
+          ]
+        },
+        "suffix_serious": "Ground each claim in the deposits."
       }
     }
   },
