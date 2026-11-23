@@ -606,29 +606,8 @@
         ]
       },
       "range": {
-        "_note": "The top button, 'Roll a prompt from the whole range', draws a register first and then a prompt within it (the author, 2026-11-22 18:54: 'the current run a prompt from the whole range does not run a prompt from the whole range. because the formal constraint reliably pushes the model into the performative mode, it actually restricts the range to exclude the serious thought work. read as a living body of thought produces a serious intellectual response. running the full range would generate prompts that run the range from formal constraints and creative to specific episode generation to serious theoretical extensions applied to contemporary events or disciplinary questions, and so on'). Before this, every roll carried a form: a fresh roll always asked for one, and a query from the page was always perturbed with 'Answer as …'. Now a query from the page can come as written, and the reading and extension registers ask for no form at all. The dice and the perturb buttons keep the weird-ass grammar unchanged.",
-        "weights": [
-          [
-            "asked",
-            0.2
-          ],
-          [
-            "reading",
-            0.2
-          ],
-          [
-            "extension",
-            0.25
-          ],
-          [
-            "episode",
-            0.15
-          ],
-          [
-            "formal",
-            0.2
-          ]
-        ],
+        "_note": "The top button, 'Roll a prompt from the whole range', draws a register first and then a prompt within it (the author, 2026-11-22 18:54: 'the current run a prompt from the whole range does not run a prompt from the whole range. because the formal constraint reliably pushes the model into the performative mode, it actually restricts the range to exclude the serious thought work. read as a living body of thought produces a serious intellectual response. running the full range would generate prompts that run the range from formal constraints and creative to specific episode generation to serious theoretical extensions applied to contemporary events or disciplinary questions, and so on'). Before this, every roll carried a form: a fresh roll always asked for one, and a query from the page was always perturbed with 'Answer as …'. Now a query from the page can come as written, and the reading and extension registers ask for no form at all. The dice and the perturb buttons keep the weird-ass grammar unchanged. Reweighted 2026-11-22 22:34 (the author, 22:31: 'i feel extremely ambivalent about the responses given to the roll a dice question... on the one hand, they tend to offer a more direct way in... on the other, they dissolve the archive into cutesy fragments'; 22:34: 'it is not at present a form that can preserve retrieval and transmission'): asked, reading and extension 0.3 each, episode and form 0.05 each.",
+        "weights": [["asked", 0.3], ["reading", 0.3], ["extension", 0.3], ["episode", 0.05], ["formal", 0.05]],
         "subjects": [
           "the work of {h}",
           "{room} of the Crimson Hexagon",
