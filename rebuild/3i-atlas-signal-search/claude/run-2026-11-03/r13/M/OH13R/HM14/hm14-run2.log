@@ -1,0 +1,26 @@
+20250731 gate True family 0.103 rank 141 C09 rank 107
+20250912 gate True family 0.122 rank 90 C09 rank 42
+20251005 gate True family 0.329 rank 20 C09 rank 85
+{"family_rank": 25, "C09_rank": 24, "sessions_top5_family": 0, "sessions_top5_C09": 0, "family_survives": false, "C09_survives": false}
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/run-2026-11-03/r13/M/OH13R/HM14/hm14.py", line 62, in <module>
+    json.dump(out, open(os.path.join(HERE, "hm14.json"), "w"))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/json/__init__.py", line 181, in dump
+    for chunk in iterable:
+                 ^^^^^^^^
+  File "/usr/local/lib/python3.13/json/encoder.py", line 435, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/local/lib/python3.13/json/encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/lib/python3.13/json/encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  File "/usr/local/lib/python3.13/json/encoder.py", line 409, in _iterencode_dict
+    yield from chunks
+  [Previous line repeated 2 more times]
+  File "/usr/local/lib/python3.13/json/encoder.py", line 442, in _iterencode
+    o = _default(o)
+  File "/usr/local/lib/python3.13/json/encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type float32 is not JSON serializable

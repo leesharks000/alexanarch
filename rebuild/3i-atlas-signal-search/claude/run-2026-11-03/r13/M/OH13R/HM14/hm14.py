@@ -59,4 +59,4 @@ if gate_ok:
     out["combined"] = {"family_rank": rf, "C09_rank": rc, "sessions_top5_family": top, "sessions_top5_C09": topc,
                        "family_survives": bool(top >= 2 and rf <= 4), "C09_survives": bool(topc >= 2 and rc <= 4)}
     print(json.dumps(out["combined"]))
-json.dump(out, open(os.path.join(HERE, "hm14.json"), "w"))
+json.dump(out, open(os.path.join(HERE, "hm14.json"), "w"), default=float)   # amendment 2, after run 2: the write failed on a float32
