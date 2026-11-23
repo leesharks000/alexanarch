@@ -204,6 +204,15 @@ def build():
     tq = ''.join(row(lt, [ask_link(fill(t, window=w, date='{date}'), lw) for w, lw in zip(ts['windows'], L['windows'])]) for t, lt in zip(ts['templates'], L['timescale_templates']))
     sec.append(f'<section id="time"><h2>The archive over time</h2><p class="n">Read a window of work ending today as one body of thought.</p>{tq}</section>')
     sec.append('<section id="whole"><h2>The archive as a whole</h2><div class="bs wrapb">' + ''.join(ask_link(q, lq) for q, lq in zip(Q['whole'], L['whole'])) + '</div></section>')
+    # 2026-11-23 (the author, 14:05): a valuation section across scopes, frames and criteria.
+    sec.append('<section id="valuation"><h2>Valuation</h2><p class="n">The archive and its parts valued under different frames, each with its own criteria. The archive\'s own valuation work is the valuation memorandum and the semantic economy\'s valuation sequence (<a class="t" href="/s/records/1617/">#1617</a>–<a class="t" href="/s/records/1621/">#1621</a>).</p>'
+               + ''.join(row(cap(s_), [ask_link(fill(t_, scope=s_), lt) for t_, lt in zip(Q['valuation_templates'], L['valuation_templates'])]) for s_ in Q['valuation_scopes']) + '</section>')
+    # 2026-11-23 (the author, 14:11): walking through mantle-bearing evaluations, from the Hugging Face dataset.
+    sec.append('<section id="mantles"><h2>Mantle-bearing evaluations</h2><p class="n">The archive\'s mantles and inspectable evaluative frameworks, under one standard: a title means something because what it names is carried and can be read. The evaluations, rounds, determinations and holograms are on Hugging Face at <a class="t" href="https://huggingface.co/datasets/leesharks/mantle-bearing">leesharks/mantle-bearing</a>, governed by <a class="t" href="/s/records/1656/">EA-MANTLE-BEARING-01</a>. Each item names its governing record.</p>'
+               + ''.join(row(cap(m_['name']), [ask_link(fill(tt, name=m_['name']), lt) for tt, lt in zip(Q['mantle_templates'], L['mantle_templates'])] + [f'<a class="t" href="/s/records/{m_["rec"]}/">#{m_["rec"]}</a>']) for m_ in Q['mantle_items']) + '</section>')
+    # 2026-11-23 (the author, 14:07): the archive's protocols, interfaces and methods, and how to use them oneself.
+    sec.append('<section id="tools"><h2>Protocols, interfaces and methods</h2><p class="n">The archive\'s technical protocols, interfaces and methods, asked so that a reader can use or apply them for themselves. Each names its anchor record.</p>'
+               + ''.join(row(cap(t_['name']), [ask_link(fill(tt, name=t_['name']), lt) for tt, lt in zip(Q['tool_templates'], L['tool_templates'])] + [f'<a class="t" href="/s/records/{t_["rec"]}/">#{t_["rec"]}</a>']) for t_ in Q['tools']) + '</section>')
     def hfill(t, h):
         q = fill(t, name=h['name'], focus=h['focus'])
         return q.replace(h['name'] + "'s", h['name'] + "'") if h['name'].endswith('s') else q
@@ -279,7 +288,7 @@ def build():
     sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
                  f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
-    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
+    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['valuation_scopes']) * len(Q['valuation_templates']) + len(Q['tools']) * len(Q['tool_templates']) + len(Q['mantle_items']) * len(Q['mantle_templates']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
     first = min(e['date'] for e in ENTS)
     stats = (f'<div class="stats"><div><b>{n_q:,}</b>queries on this page</div><div><b>{n_addr:,}</b>addresses seated since {first}</div>'
              f'<div><b>{n_obs:,}</b>observations</div><div><b>{len(arch):,}</b>archive-level addresses</div>'
@@ -425,10 +434,12 @@ else{{st.textContent="Not sent: "+(x[1].error||"error")+".";dl(o)}}}}).catch(fun
 
 GROUPS = [('Start here', ['own', 'outlines']),
           ('Read the archive', ['time', 'whole', 'heteronyms', 'rooms']),
+          ('Evaluate', ['valuation', 'mantles']),
           ('By field', ['disciplines', 'programmes', 'themes', 'practices', 'institutions']),
+          ('Use the tools', ['tools']),
           ('Under form and constraint', ['weird']),
           ('The record', ['accrue', 'asked', 'submit'])]
-TOCNAME = {'own': 'Your own question', 'outlines': 'From an outline', 'time': 'Over time', 'whole': 'As a whole', 'heteronyms': 'Heteronyms',
+TOCNAME = {'own': 'Your own question', 'outlines': 'From an outline', 'time': 'Over time', 'whole': 'As a whole', 'valuation': 'Valuation', 'tools': 'Protocols &amp; methods', 'mantles': 'Mantle-bearing', 'heteronyms': 'Heteronyms',
            'rooms': 'The Crimson Hexagon', 'disciplines': 'Disciplines', 'programmes': 'Programmes', 'themes': 'Themes', 'practices': 'Practices',
            'institutions': 'Journals &amp; institutions', 'weird': 'Weird-ass prompts', 'accrue': 'What accrues', 'asked': 'Asked before', 'submit': 'Submit a transcript'}
 UNFOLDED = {'own', 'outlines'}
