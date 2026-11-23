@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-23T03:42:27Z",
+  "regenerated_at": "2026-11-23T04:03:20Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "a022e24c3dcf669f75b81cefac5e87402ca22b6da5a64725474f87120a3b2b5f",
+    "mm-main-capture": "1a9db6b405e91e71a1cd8696c5fb1c4d117c0ed699eaedb7c4cee65c981282bc",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2928,
-  "total_observations": 1524,
+  "total_addresses": 2929,
+  "total_observations": 1525,
   "class_counts": {
     "subjunctive": 1736,
-    "observed_address": 1175,
+    "observed_address": 1176,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2048,
+    "unmatched": 2049,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -32340,6 +32340,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "give a developed reading of three poems a triptych for c.": {
+      "canonical_query": "give a developed reading of three poems a triptych for c.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-22",
+          "status": "THREE POEMS: A TRIPTYCH FOR C., ON GOOGLE AI OVERVIEW — THE DEPOSIT'S FRAMING CARRIED WHOLE AND THE LINES QUOTED RIGHT; THEN A MESSAGE TO C. BUILT FROM A ROOM PAGE'S SYMBOLON AND A CATULLUS THE ROOM DOES NOT HOLD",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "developed-reading-three-poems-triptych-for-c-aio-20261122",
+          "gallery_url": "https://www.alexanarch.org/captures/#developed-reading-three-poems-triptych-for-c-aio-20261122",
+          "record_url": "https://www.alexanarch.org/captures/developed-reading-three-poems-triptych-for-c-aio-20261122/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#developed-reading-three-poems-triptych-for-c-aio-20261122",
+          "details_excerpt": "THREE POEMS: A TRIPTYCH FOR C. (Lee Sharks, New Human 2, #1195, AXN:04BC), ON GOOGLE AI OVERVIEW, SIGNED OUT, 2026-11-22: a developed reading of the triptych as counterfactual past, destructive present and conditional fu"
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks, author of the four poems. Recorded 2026-11-22."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-22",
+      "latest_status": "THREE POEMS: A TRIPTYCH FOR C., ON GOOGLE AI OVERVIEW — THE DEPOSIT'S FRAMING CARRIED WHOLE AND THE LINES QUOTED RIGHT; THEN A MESSAGE TO C. BUILT FROM A ROOM PAGE'S SYMBOLON AND A CATULLUS THE ROOM DOES NOT HOLD"
     },
     "give examples of spxi instruments and spxi-treated entities and surfaces": {
       "canonical_query": "give examples of spxi instruments and spxi-treated entities and surfaces",
