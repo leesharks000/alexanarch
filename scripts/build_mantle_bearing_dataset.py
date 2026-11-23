@@ -127,9 +127,15 @@ def frameworks_section(d):
             claim = "Its current states: " + "; ".join(f"{ax}, {s['state'].replace('_', ' ')} (" + (f"the author's statement of {s['date']} {str(s['record'])[14:16]}:{str(s['record'])[16:18]}" if str(s['record']).startswith("stmt:") else f"#{s['record']}, {s['date']}") + ")" for ax, s in (f.get("current_states") or {}).items()) + ". "
             rival = f"The received reading: {f['rival']['summary']}. "
         by = f" by {f['byline']}" if f.get("byline") else ""
-        L += [f"**{f['name']}** ({f['class']}; {f['author']}; seed [#{sd['deposit']}]({sd['url']}); hologram [#{g['deposit']}]({g['url']}){by}). "
+        hol = f"hologram [#{g['deposit']}]({g['url']}){by}" if g["deposit"] != sd["deposit"] or f["framework"] == "framework::daffodils" else "no hologram yet, read on its governing record"
+        cur = "".join(f"; current text [#{c['deposit']}]({c['url']}) ({c['version']}, {c['date']}), superseding the seed #{c['supersedes']}" for c in f.get("current_texts") or [])
+        lr = f["lines_of_research"]
+        lr = (f"{len(lr)} — " + "; ".join(f"{q['id']}: {q['question']}" for q in lr)) if isinstance(lr, list) else lr
+        L += [f"**{f['name']}** ({f['class']}; {f['author']}; seed [#{sd['deposit']}]({sd['url']}){cur}; {hol}). "
               + claim + f"Evidence bodies: {', '.join(f['evidence_bodies'].values())}. " + rival +
-              f"Lines of research: {f['lines_of_research']}. Status: {f['status']}.", ""]
+              f"Lines of research: {lr}. Status: {f['status']}.", ""]
+        if f.get("works"):   # 1.40: the records a round reads, current versions first
+            L += ["Works a round reads: " + "; ".join(f"[#{w['deposit']}]({w['url']}) {w['role']} ({w.get('version') or 'unversioned'})" for w in f["works"]) + ".", ""]
     L += ["| item | kind | governing record | hologram | reader rounds | status |", "|---|---|---|---|---|---|"]
     for h in ho:
         g = h["governing_record"][0]
@@ -266,7 +272,19 @@ def card(d, counts):
           "6. Return the judgment in the packet's S10 schema.", "",
           "A round after the first tries to break the claim at the weakest link the earlier rounds named (below). "
           "Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to "
-          "decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.", ""]
+          "decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.", "",
+          "### A round of an inspectable evaluative framework", "",
+          "*I Am X, Be Y, Blessed is the Z* is the claimant poem of the literary mantles; a round of a framework does not require it. For a framework "
+          "(table `frameworks`; the section above):", "",
+          "1. Read the framework's works whole, from its list of works a round reads, current versions first. Where a seed has been superseded, read its "
+          "current text: the hologram was cut from the seed, the argument has moved since.",
+          "2. Read the hologram where there is one (map and kernel), and say which version you read.",
+          "3. State the framework and the received reading each at its strength, and ask each the same questions on the same evidence bodies. A burden "
+          "set on one reading and not the other is ONE_SIDED_BURDEN (or the hologram's own flag for it).",
+          "4. Judge at the scope of what you read, and on the whole provisionally, naming the reading that would confirm or disconfirm each inference.",
+          "5. Name the weakest link and the test that could break it. The test must be one the received reading would also have to pass. An evidentiary "
+          "category no reading can inspect (an author's interior intention, say) is not admitted as a test of either.",
+          "6. Return the judgment with its loci; it is coded on the hologram's failure flags as a row of `hologram_evaluations`.", ""]
     rc = d.get("round_constraints")
     if rc:
         L += [f"## {rc['title']}", "",
