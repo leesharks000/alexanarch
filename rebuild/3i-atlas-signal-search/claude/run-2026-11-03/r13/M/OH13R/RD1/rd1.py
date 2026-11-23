@@ -3,6 +3,7 @@ import json, os, sys, zlib
 import numpy as np
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(HERE, ".."))
 from common import *
+RD = os.path.dirname(os.path.abspath(__file__))   # amendment 1: common's HERE overwrote this module's
 
 START = np.arange(0, 17); BODY = np.arange(51, NF); WIN = windows(); NW = len(WIN)
 CANDS = [i for i, w in enumerate(WIN) if w[1] == "cand"]; CTRL = [i for i, w in enumerate(WIN) if w[1] == "ctrl"]
@@ -30,7 +31,7 @@ def lz76(s):
 
 
 def per_scan(s):
-    A = load(s); st = json.load(open(os.path.join(HERE, "..", f"win_{s}.json")))["starts"]
+    A = load(s); st = json.load(open(os.path.join(HERE, f"win_{s}.json")))["starts"]
     R = {}
     for w in range(NW):
         name, kind, f, _ = WIN[w]
@@ -102,9 +103,9 @@ def main():
         ok = [s for s in ON if rep["R1"][n][s]["confined"] and any(rep["R4"][n][s][k]["structure"] for k in ("lzA", "lzP", "flat"))]
         verdict[n] = {"scans_confined_and_structured": ok, "recurs": rep["R3"][n]["recurs"], "pass": len(ok) >= 2 and rep["R3"][n]["recurs"]}
     rep["verdict"] = verdict
-    json.dump(rep, open(os.path.join(HERE, "rd1_report.json"), "w"), indent=1)
+    json.dump(rep, open(os.path.join(RD, "rd1_report.json"), "w"), indent=1)
     json.dump({s: {n: {k: v for k, v in res[s][n].items() if k in ("dyn",)} for n in cn + [names[i] for i in REF]} for s in SCANS},
-              open(os.path.join(HERE, "rd1_dyn.json"), "w"))
+              open(os.path.join(RD, "rd1_dyn.json"), "w"))
     print("written rd1_report.json, rd1_dyn.json")
 
 
