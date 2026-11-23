@@ -88,3 +88,24 @@ d["transcript"] = ("[Google AI Overview, expanded (the paste carries the 'AI Mod
                    "[QUERENT] " + Q + "\n\n[COMPOSER]\n" + r1 + "\n\n[QUERENT] " + Q2 + "\n\n[COMPOSER]\n" + r2)
 d["transcript_raw"] = raw
 (H / "draft-1.json").write_text(json.dumps(d, ensure_ascii=False, indent=1)); print(d["slug"], d["cites"], len(d["transcript"]))
+
+# REVISION, 2026-11-22 23:06, at the operator's reading: 'but they were faithful extensions of the poem in response to the query'.
+d = json.loads((H / "draft-1.json").read_text())
+d["mt"] = ("THREE POEMS: A TRIPTYCH FOR C., ON GOOGLE AI OVERVIEW — THE DEPOSIT'S FRAMING CARRIED WHOLE AND THE LINES QUOTED RIGHT; THEN THE POEM READ AS A "
+           "MESSAGE TO C., EXTENDED FAITHFULLY THROUGH THE ROOMS' SYMBOLON AND THE CATULLAN ADDRESS")
+a = d["analysis"]; k0 = a.index("The second round adds three things"); k1 = a.index("One archival fact is given both ways")
+d["analysis"] = a[:k0] + (
+    "The second round answers the query's own demand, to ground the poem in archival context and explain it as a message, and its readings are faithful "
+    "extensions of the poem in response to it (the operator, 2026-11-22 23:06: 'but they were faithful extensions of the poem in response to the query'). "
+    "The delayed message follows the poem's own grammar: the conditional 'if your heart should ever … turn' and the imperative 'then know' wait on a reception "
+    "that has not yet come. The symbolon is the figure every room page on crimsonhexagonal.org gives of itself ('One half of a symbolon; it completes in "
+    "traversal'), and the Overview extends it from the page and its traversal to the poem and its addressee, in the room where the triptych is seated. The "
+    "Catullan address places the speaker writing across a gap to one who cannot yet receive; the room's documents frame the relation from the receiving side, "
+    "Catullus 51 as 'the first recorded κῆνος activation', 'not imitation but instantiation: Catullus IS κῆνος, the future reader the poem anticipated' "
+    "('orbits', in the Overview's account of the room, is the Overview's word). Read with the room's thesis, C. stands where Catullus stands, as the future "
+    "reader the third panel waits for, which is where the Overview's reading arrives. ") + a[k1:]
+F = d["findings"]
+d["findings"] = [("THE SYMBOLON EXTENDED. 'works in Maybe Space Baby Garden Lanes are described as one half of a symbolon' — the room pages' figure for themselves, extended to the poem and its addressee." if f.startswith("THE SYMBOLON MOVED") else
+                  "THE CATULLAN ADDRESS. 'writing across a gap of silence, rejection, or impossibility, where the poem itself becomes the only viable medium of contact' — beside the room's Catullus, who IS κῆνος, the future reader the poem anticipated." if f.startswith("CATULLUS REVERSED") else f) for f in F]
+d["d"] = d["d"]
+(H / "draft-1.json").write_text(json.dumps(d, ensure_ascii=False, indent=1)); print("revised", d["slug"])
