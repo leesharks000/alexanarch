@@ -18,7 +18,7 @@ out = {"dd": DD.tolist(), "sessions": {}}
 gate_ok = True
 for sname, S in hm7.SESSIONS.items():
     stems = [x for p in S["pairs"] for x in p]
-    F = {st: np.load(os.path.join(H7, f"hm7_{sname}_{st.split('_')[2]}.npz")) for st in stems}
+    F = {st: {k: v for k, v in np.load(os.path.join(H7, f"hm7_{sname}_{st.split('_')[2]}.npz")).items()} for st in stems}   # amendment 1: arrays read once, not re-decompressed per access
     tmid = {st: float(F[st]["t0"]) + (np.arange(F[st]["A"].shape[1]) + 0.5) * float(F[st]["ts"]) / 86400.0 for st in stems}
     tref = np.mean([tmid[st].mean() for st in stems]); foff = abs(float(F[stems[0]]["foff"])) * 1e6
     cand = [i for i, w in enumerate(W) if w[1] == "cand" and not SC["sessions"][sname]["candidates"][w[0]]["flags"]]
