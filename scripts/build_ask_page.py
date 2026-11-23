@@ -329,10 +329,10 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 </style></head><body><div class="wrap">
 <!-- NAV-START -->{nav}<!-- NAV-END -->
 <h1>Ask</h1>
-<p class="lede">Queries to the archive as a whole. Each button opens the full query on the surface chosen at the top of the section: ChatGPT, Google (where an AI Overview may compose) or Perplexity; hover to read it first.</p>
+<p class="lede">Queries to the archive as a whole. Each button opens the full query on the surface chosen in the bar at the top: ChatGPT, Google (where an AI Overview may compose) or Perplexity; hover to read it first.</p>
 <div class="roll rtop" hidden><button type="button" class="rb big" data-roll="any">Roll a prompt from the whole range</button> <span class="n">First a register is drawn, then a prompt in it: a query from this page as written; a reading of a body of the archive&rsquo;s thought; an extension of it to a current event or an open question in a discipline; an episode or a book of the epic; or a prompt under form and constraint. Different each time, and each roll a new address.</span><p class="rq"></p><a class="q b ra" hidden target="_blank" rel="noopener" href="#">Ask ChatGPT</a></div>
 <details class="about"><summary>About this page, and what the queries draw</summary>
-<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT by default, or on Google or Perplexity from the switch at the top of each section, with the query as written; the choice holds across the page and is remembered in this browser. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
+<p>Queries addressed to the archive as a whole: over time, by heteronym, by room of the Crimson Hexagon, by journal and institution, by discipline and subdiscipline, by programme, theme and practice. Each opens on ChatGPT by default, or on Google or Perplexity from the switch at the top of the page, with the query as written; the choice holds across the page and is remembered in this browser. A composition any of them forces can be seated in the <a href="/captures/" style="color:var(--accent)">Capture Registry</a>, where each query string is its own address (<a class="t" href="/s/records/1788/">#1788</a>). Single works are asked from their record pages, which carry their own battery. A transcript of any query can be sent to the capture inbox from <a href="#submit" style="color:var(--accent)">Submit a transcript</a>.</p>
 <p><b>What came back, 19&ndash;20 November 2026.</b> The figures are from the captures of those two days on ChatGPT, signed out: 57 from the page&rsquo;s standard queries and the first six from its Weird-ass prompts.</p>
 <ol class="about">
 <li>The standard queries return readings at the grain of the deposits. Asked for the month&rsquo;s most hostile works, the composer ranked eight and quoted each; every quotation is in its deposit (<a class="t" href="/captures/most-hostile-works-past-month-chatgpt-20261120/">capture</a>). Asked what the archive contributes to apocalyptic, it kept Revelation First apart from Revelation Early and read the framework&rsquo;s defeat conditions as the framework gives them (<a class="t" href="/captures/what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120/">capture</a>).</li>
@@ -369,7 +369,7 @@ try{{var v=localStorage.getItem("ask-surface");if(S[v])cur=v}}catch(e){{}}
 function u(q){{return S[cur][1]+encodeURIComponent(q).replace(/%20/g,"+")}}
 function apply(){{document.querySelectorAll("a.q").forEach(function(a){{var q=a.title||"";if(!q||a.getAttribute("href")==="#")return;a.href=u(q)}});document.querySelectorAll("a.ra").forEach(function(a){{a.textContent="Ask "+S[cur][0]}});document.querySelectorAll(".sw button").forEach(function(b){{b.setAttribute("aria-pressed",b.dataset.sw===cur?"true":"false")}})}}
 window.AXQ={{u:u,apply:apply}};
-document.addEventListener("DOMContentLoaded",function(){{document.querySelectorAll("section").forEach(function(sec){{if(!sec.querySelector("a.q")&&!sec.querySelector(".roll"))return;var h=sec.querySelector("h2");if(!h)return;var d=document.createElement("div");d.className="sw";d.setAttribute("role","group");d.setAttribute("aria-label","Open the queries in");d.appendChild(document.createTextNode("Open in"));Object.keys(S).forEach(function(k){{var b=document.createElement("button");b.type="button";b.dataset.sw=k;b.textContent=S[k][0];d.appendChild(b)}});h.insertAdjacentElement("afterend",d)}});apply()}});
+document.addEventListener("DOMContentLoaded",function(){{[document.getElementById("bar")].forEach(function(sec){{if(!sec)return;var h=sec.querySelector(".bh");if(!h)return;var d=document.createElement("div");d.className="sw";d.setAttribute("role","group");d.setAttribute("aria-label","Open the queries in");d.appendChild(document.createTextNode("Open in"));Object.keys(S).forEach(function(k){{var b=document.createElement("button");b.type="button";b.dataset.sw=k;b.textContent=S[k][0];d.appendChild(b)}});h.insertAdjacentElement("afterend",d)}});apply()}});
 document.addEventListener("click",function(ev){{var b=ev.target.closest(".sw button");if(!b)return;cur=b.dataset.sw;try{{localStorage.setItem("ask-surface",cur)}}catch(e){{}}apply()}});}})();
 (function(){{try{{var el=document.getElementById("rolldata");if(!el)return;var D=JSON.parse(el.textContent);
 function pk(a){{return a[Math.floor(Math.random()*a.length)]}}
@@ -418,8 +418,69 @@ fetch("/api/submit-transcript",{{method:"POST",headers:{{"Content-Type":"applica
 if(x[0]){{st.textContent=(x[1].status==="received"?"Received: ":x[1].status+": ");var a=document.createElement("a");a.href=x[1].url;a.textContent=x[1].path;st.appendChild(a);f.transcript.value="";f.file.value=""}}
 else{{st.textContent="Not sent: "+(x[1].error||"error")+".";dl(o)}}}}).catch(function(){{bt.disabled=false;st.textContent="Not sent: the inbox could not be reached.";dl(o)}})}})}})();
 </script></body></html>'''
+    page = organize(page)
     out = ROOT / 'ask' / 'index.html'; out.parent.mkdir(exist_ok=True); out.write_text(page)
     print(f'ask: {n_q} queries; {len(arch)} archive-level addresses; {len(pts)} living-body compositions; written {out.relative_to(ROOT)}')
+
+
+GROUPS = [('Start here', ['own', 'outlines']),
+          ('Read the archive', ['time', 'whole', 'heteronyms', 'rooms']),
+          ('By field', ['disciplines', 'programmes', 'themes', 'practices', 'institutions']),
+          ('Under form and constraint', ['weird']),
+          ('The record', ['accrue', 'asked', 'submit'])]
+TOCNAME = {'own': 'Your own question', 'outlines': 'From an outline', 'time': 'Over time', 'whole': 'As a whole', 'heteronyms': 'Heteronyms',
+           'rooms': 'The Crimson Hexagon', 'disciplines': 'Disciplines', 'programmes': 'Programmes', 'themes': 'Themes', 'practices': 'Practices',
+           'institutions': 'Journals &amp; institutions', 'weird': 'Weird-ass prompts', 'accrue': 'What accrues', 'asked': 'Asked before', 'submit': 'Submit a transcript'}
+UNFOLDED = {'own', 'outlines'}
+ORG_CSS = ('#bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--border);padding:.35em 0;margin:0 0 .6em;display:flex;align-items:center;justify-content:space-between;gap:.6em;flex-wrap:wrap}'
+           '#bar .sw{margin:0} #bar a.top{font-size:.8em;color:var(--accent);text-decoration:none}'
+           'nav.groups{margin:.4em 0 1.2em} nav.groups p{margin:.25em 0;line-height:1.9} nav.groups p{margin:.5em 0 .2em} nav.groups b{display:block;font-size:.72em;line-height:1.6;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);font-weight:500}'
+           'nav.groups a{display:inline-block;white-space:nowrap;margin-right:.9em;color:var(--accent);font-size:.9em}'
+           'p.grp{margin:2.2em 0 .2em;font-size:.72em;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}'
+           'details.sec{border-top:1px solid var(--border)} details.sec>summary{list-style:none;cursor:pointer;padding:.55em 0} details.sec>summary::-webkit-details-marker{display:none}'
+           'details.sec>summary h2{display:inline;border:none;margin:0;padding:0} details.sec>summary::after{content:"+";float:right;color:var(--accent);font-size:1.2em;line-height:1.6}'
+           'details.sec[open]>summary::after{content:"\\2212"} details.sec>summary .c{font-size:.6em;color:var(--dim);font-weight:400;margin-left:.4em}'
+           'section.fold{margin:0} section.fold h2 .c{font-size:.6em} section{scroll-margin-top:3.6em}')
+
+
+def organize(page):
+    """Visual and navigational organisation (the author, 2026-11-22 20:06: 'lets do a visual and navigational organization pass on /ask, its becoming a but overwhelming').
+    The sections are grouped and ordered; every section after the first group folds, with its count of queries in the heading; one surface switch,
+    in a bar that stays at the top, replaces one per section; the contents list is grouped. Nothing is removed."""
+    import re as _re
+    secs = {}
+    for m in _re.finditer(r'<section id="([^"]+)">(.*?)</section>', page, _re.S):
+        secs[m.group(1)] = (m.start(), m.end(), m.group(2))
+    assert set(secs) == set(TOCNAME), sorted(set(secs) ^ set(TOCNAME))
+    first = min(v[0] for v in secs.values()); last = max(v[1] for v in secs.values())
+    between = page[first:last]
+    for k, (a, b, _) in secs.items():
+        between = between.replace(page[a:b], '', 1)
+    assert between.strip() == '', between.strip()[:200]
+    def fold(k, inner):
+        h = _re.match(r'\s*<h2>(.*?)</h2>', inner, _re.S)
+        title, rest = h.group(1), inner[h.end():]
+        n = len(_re.findall(r'class="q b"', rest)) - len(_re.findall(r'class="q b ra"', rest))
+        if '<span class="c">' not in title and n > 0:
+            title += f' <span class="c">{n}</span>'
+        return f'<section id="{k}" class="fold"><details class="sec"><summary><h2>{title}</h2></summary>{rest}</details></section>'
+    body = []
+    for g, ids in GROUPS:
+        body.append(f'<p class="grp">{g}</p>')
+        for k in ids:
+            inner = secs[k][2]
+            body.append(f'<section id="{k}">{inner}</section>' if k in UNFOLDED else fold(k, inner))
+    page = page[:first] + '\n'.join(body) + page[last:]
+    toc = '<nav class="groups" aria-label="Sections">' + ''.join(
+        f'<p><b>{g}</b>' + ''.join(f'<a href="#{k}">{TOCNAME[k]}</a>' for k in ids) + '</p>' for g, ids in GROUPS) + '</nav>'
+    page, n = _re.subn(r'<p class="toc">.*?</p>', lambda m: toc, page, count=1, flags=_re.S); assert n == 1
+    page = page.replace('<div class="roll rtop"', '<div id="bar"><span class="bh"></span><a class="top" href="#">Top</a></div>\n<div class="roll rtop"', 1)
+    page = page.replace('</style>', ORG_CSS + '</style>', 1)
+    js = ('<script>(function(){function op(h){var s=h&&document.getElementById(h);if(!s)return;var d=s.querySelector("details.sec");if(d)d.open=true;'
+          'var p=s.parentElement&&s.parentElement.closest("details");while(p){p.open=true;p=p.parentElement&&p.parentElement.closest("details")}}'
+          'function go(){op(decodeURIComponent(location.hash.slice(1)))}window.addEventListener("hashchange",go);document.addEventListener("DOMContentLoaded",go);'
+          'document.addEventListener("click",function(e){var a=e.target.closest("a[href^=\'#\']");if(a&&a.getAttribute("href").length>1)op(a.getAttribute("href").slice(1))})})();</script>')
+    return page.replace('</body></html>', js + '</body></html>', 1)
 
 
 if __name__ == '__main__':
