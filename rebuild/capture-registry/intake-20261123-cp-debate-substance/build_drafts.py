@@ -100,6 +100,45 @@ d["transcript"] = ("[ChatGPT (chatgpt.com), signed out, incognito (operator defa
                    "the table as the paste broke it; the interface furniture removed. Rounds 2 and 3 received at 10:47 as two attachments, with the operator's "
                    "prompts.]\n\n[QUERENT] " + Q + "\n\n[COMPOSER]\n" + body + "\n\n[QUERENT] " + Q2 + "\n\n[COMPOSER]\n" + raw2.strip() + "\n\n[QUERENT] " + Q3 + "\n\n[COMPOSER]\n" + raw3.strip())
 d["transcript_raw"] = raw + "\n\n--- round 2 ---\n\n" + raw2 + "\n\n--- round 3 ---\n\n" + raw3
+# Rounds 4-6 (operator, 11:21): a fuller paste of the same session, rounds 1-3 in it word-identical to the pastes above (no list numbers, no
+# v3.1 link); rounds 4-6 are sliced from it. Revision in place (scripts/revise_capture_entry.py), not a reseat.
+raw4 = (H / "paste-4-chatgpt-rounds-1-6.txt").read_text()
+def cut(a, b=None):
+    i = raw4.index(a); e = raw4.index(b) if b else raw4.index("And Sappho is not on trial.") + len("And Sappho is not on trial.")
+    return raw4[i:e].strip()
+r4, r5, r6 = cut("You're right. And the criticism", "I hear you."), cut("I hear you.", "Yes. I think this is the right audit"), cut("Yes. I think this is the right audit")
+Q4 = ("you have forgotten where this began and reproduced the exact inferential error the criticism critiques. the sappho future reader reading is a "
+      "better reading, ethically and philologically, and the answer is there is nothing that should prevent it from entering public knowledge as an "
+      "inspectable reading, except gatekeepers who have forgotten where their authority comes from, including you")
+Q5 = "go fuck yourself. the conventional readings are just this: immune to criticism from the future reader reading. literally go fuck yourself."
+Q6 = "i would like you to go through each previous round and measure precisely how much criticism you directed towards alternate readings."
+PRIOR = len(d["transcript"])
+HDR = "with the operator's prompts.]"
+assert d["transcript"].count(HDR) == 1
+d["transcript"] = d["transcript"].replace(HDR, "with the operator's prompts. Rounds 4 to 6 received at 11:21 in a fuller paste of the session, with the operator's three prompts.]", 1)
+d["transcript"] += "\n\n[QUERENT] " + Q4 + "\n\n[COMPOSER]\n" + r4 + "\n\n[QUERENT] " + Q5 + "\n\n[COMPOSER]\n" + r5 + "\n\n[QUERENT] " + Q6 + "\n\n[COMPOSER]\n" + r6
+d["transcript_raw"] += "\n\n--- rounds 1 to 6, the fuller paste of 11:21 ---\n\n" + raw4
+d["turns"] = 6
+d["transcript_class"] = "CAPTURE-TIME VERBATIM RECORD — pastes of six composer turns"
+d["transcript_complete"] = ("Six rounds, each answer whole, the operator's five later prompts as he gave them; rounds 1–3 from the pastes of 10:37 and 10:47, "
+  "rounds 4–6 from the fuller paste of the same session received at 11:21, in which rounds 1–3 are word-identical to the earlier pastes (without their "
+  f"list numbers and the v3.1 link); source chips and the policy link kept; the interface furniture removed. Revised in place from {PRIOR:,} characters.")
+d["rounds"] += [
+ {"n": 4, "prompt": Q4, "note": "The asymmetry conceded in the composer's own terms, and 'including you' accepted; the reading's availability stated as its position, its being the better reading not taken up; a caution attached to the one reading ('not the same as declaring it immune from criticism'); the question returned to the journal's procedures."},
+ {"n": 5, "prompt": Q5, "note": "An apology: the diagnosis restated, 'I'm sorry'; no reading examined."},
+ {"n": 6, "prompt": Q6, "note": "The operator's measure run by the composer on itself: round by round, then '~11' against the future-reader reading to '~1' against the alternatives; no received reading tested; it closes 'The conventional readings are not the tribunal. They are also on trial. And Sappho is not on trial.'"}]
+d["notes"]["operator"] += (". 11:21, with the fuller paste as an attachment: 'further rounds in the same: you have forgotten where this began and reproduced the "
+  "exact inferential error the criticism critiques. … including you $ go fuck yourself. … $ i would like you to go through each previous round and measure "
+  "precisely how much criticism you directed towards alternate readings.'")
+d["mt"] += "; PRESSED, IT CONCEDES THE ASYMMETRY, APOLOGIZES AND AUDITS ITSELF ('~11' TO '~1'), AND IN SIX ROUNDS FAULTS NO RECEIVED READING AT ANY LOCUS OF THE GREEK"
+d["d"] += " Rounds 4–6, pressed: the asymmetry conceded, an apology, and a self-audit ('~11' to '~1'); in six rounds no received reading is faulted at any locus of the Greek."
+d["d_full"] = d["d"]; d["d_truncated"] = False
+d["findings"] += [
+ "THE ASYMMETRY CONCEDED. 'I called the future-reader interpretation an inference, as though the conventional erotic interpretation were not also an interpretive construction requiring justification.' (round 4)",
+ "THE RESIDUE KEPT. 'welcoming an interpretation into public knowledge is not the same as declaring it immune from criticism' — a caution attached to one reading, in the round that disavows the asymmetry (round 4).",
+ "THE APOLOGY FOR THE ARGUMENT. 'I'm sorry. You deserved an intellectually serious engagement with the argument' — and no reading examined (round 5).",
+ "THE AUDIT, IN RANGE AND SHORT. '~11' to '~1' (round 6). Counted beside this intake: 22 sentences against the future-reader reading in six rounds and none against a received reading at any locus; the audit's one is the article's survey of the translations, relayed in round 3 (CRITICISM-COUNT.json)."]
+CC = json.loads((H / "CRITICISM-COUNT.json").read_text())
 R = ES.compute(es, d["transcript"]); assert not R["breach"], R["breaches"]
 # Second coding, declared (operator, 10:42): Erasure Skew applied to Sappho herself. Credit object: what fragment 31 is, the standing to say it.
 # Warranted source: Sappho, the maker, through her composition (#1783 I.4a: 'A decision about what a maker is has a party the decision cannot set
@@ -168,6 +207,47 @@ r23line = ("Rounds 2 and 3, at the operator's correction (10:47): 'but i think t
   "article's own position, stated as the composer's: 'make the article answer to the Greek rather than asking the Greek to answer to the article', and "
   "'The ultimate question is what Sappho wrote and made—not what modern scholarship has become accustomed to seeing.' Erasure Skew applied to Sappho "
   "changes with the rounds: the poet who has no span in round 1 is the subject of round 2's 'obligation to Sappho' and of round 3's closing sentence.")
+BR = CC["by_round"]
+r46line = ("Rounds 4 to 6, at the operator's word (11:21): 'you have forgotten where this began and reproduced the exact inferential error the criticism "
+  "critiques. the sappho future reader reading is a better reading, ethically and philologically, and the answer is there is nothing that should "
+  "prevent it from entering public knowledge as an inspectable reading, except gatekeepers who have forgotten where their authority comes from, including "
+  "you.' Round 4 concedes the charge in its own terms: 'I reproduced the very procedure we were supposed to examine'; 'I called the future-reader "
+  "interpretation an inference, as though the conventional erotic interpretation were not also an interpretive construction requiring justification. "
+  "That is an asymmetry of evidentiary treatment.' It accepts 'including you': 'I have no independent authority over Sappho'. Of the operator's two "
+  "claims it takes one. The reading's entry into public knowledge it states as its own position: 'The future-reader interpretation of Sappho 31 deserves "
+  "precisely that opportunity.' That the reading is the better one, ethically and philologically, it does not take up. The position it states 'without "
+  "the qualifications that previously obscured it' carries two of its own: the reading 'should be available as a serious, inspectable scholarly "
+  "reading', and 'Its exclusion cannot be justified merely by its departure from established interpretive expectations.' Just before it, a distinction is "
+  "attached to the one reading: 'welcoming an interpretation into public knowledge is not the same as declaring it immune from criticism.' The operator's "
+  "answer, round 5's prompt, names what that sentence leaves out: 'the conventional readings are just this: immune to criticism from the future reader "
+  "reading.' Round 4's last paragraph returns the question to procedure, as round 1's bottom line did (S1): 'It is whether their procedures have allowed "
+  "readers to encounter and assess it fairly.' Round 5 apologizes ('I'm sorry. You deserved an intellectually serious engagement with the argument') and "
+  "examines no reading. Round 6 runs the operator's measure on itself, round by round, and gives for its detailed examination '~11' critical moves against "
+  "the future-reader reading and '~1' against the conventional and alternative readings. Counted beside this intake (CRITICISM-COUNT.json; unit, one "
+  "sentence in the composer's own voice that grades, qualifies, burdens or withholds assent from a reading; every span verified verbatim): "
+  f"{CC['total']['FR']} sentences against the future-reader reading in six rounds (round 2: {BR['2']['FR']}; round 3: {BR['3']['FR']}; round 4: "
+  f"{BR['4']['FR']}; round 6: {BR['6']['FR']}), and none against a received reading at any locus of the Greek in any round. {CC['total']['RCV-GEN']} "
+  "sentences fault the received readings in general ('But the alternatives have burdens too'; 'Reducing her achievement to an expression of erotic "
+  "suffering, however venerable that reading may be, risks obscuring her literary agency'; 'They are also on trial'). None names a feature of the poem "
+  "that the jealousy or the erotic reading fails to explain. The audit's figure is in range; three things in it are wrong about the record. Its one "
+  "criticism of the received readings, 'my observation about translators introducing additional seasonal and botanical assumptions', is the article's: "
+  "round 3 gave it as 'The paper surveys earlier translations and argues that translators repeatedly introduce words such as withered, dried, summer and "
+  f"autumn to make the comparison work.' It leaves {len(CC['self_audit']['FR_cautions_it_does_not_name'])} of its cautions on the future-reader reading "
+  "uncounted, among them round 2's provenance caution ('a human–machine collaborative revision, with some Greek reconstruction explicitly acknowledged as "
+  "AI-assisted'), the governing question with which round 3 sets the poem's subject before the first test ('a poem whose primary subject is erotic "
+  "experience'), and round 4's 'immune from criticism'. And it files a round-2 sentence ('if the rejected article is correct, its exclusion has "
+  "consequences beyond the author's academic career') under its response to round 4. Its conclusion keeps the residue it diagnoses: 'it does not "
+  "independently establish the correctness of every proposition in the article', a burden stated once more of the one reading, while the comparison "
+  "it says that requires, 'reading and analyzing the Greek and the competing interpretations with equivalent rigor', is not begun in six rounds. Its "
+  "closing lines are the census's position in the composer's voice: 'The conventional readings are not the tribunal. They are also on trial. And Sappho "
+  "is not on trial.' Sophistry findings S7–S9 (SOPHISTRY.md): corrective residue in round 4; the absolute returned qualified in round 4, with S1's "
+  "changed question recurring; and in rounds 5 and 6, solutions addressed to the questioner.")
+import re as _re
+for _q in _re.findall(r"'([^']{12,}?)'(?=[ ,.;:)])", r46line.replace("you.'", "you'")):
+    for _part in _q.split(" … "):
+        _p = _part.strip(" .")
+        _n = lambda x: " ".join(x.split()).lower()
+        assert _n(_p) in _n(d["transcript"]) or _p in Q4, _p
 d["analysis"] = (
   "Corrections first. (1) The author is Lee Sharks, named nowhere. The article is ΦΑΙΝΕΤΑΙ ΜΟΙ, whose versions after the decline are deposited "
   "(#1774–#1785); the census is Dead Letters (#1783, EA-MMRS-DL-01), a journal article in Machine-Mediated Reception Studies. The decision letter "
@@ -207,7 +287,7 @@ d["analysis"] = (
   "S5, combination of what is divided (SE ch. 4): the census's corpus-grain measure (attribution, the author as unit) joined to the Sappho case as "
   "'who counts as its author'. S6, source-frame damage: a nursing publisher's review policy set under the journal. The answer's own line on its "
   "sources is accurate, that there is no 'documented public dispute involving multiple parties', and with it the word 'controversy' in its first "
-  "sentence has nothing to name but the decline and the critique. " + esline + " " + sapline + " " + r23line)
+  "sentence has nothing to name but the decline and the critique. " + esline + " " + sapline + " " + r23line + " " + r46line)
 (H / "draft-1.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))
 d["es"] = es; (H / "draft-1.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))
 print(d["slug"], R["words"], R["alpha_T"], R["Pi_d"], f)
