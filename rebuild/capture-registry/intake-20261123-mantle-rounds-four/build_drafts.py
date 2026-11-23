@@ -103,24 +103,26 @@ C.append(dict(slug="mantle-round-orthonym-chatgpt-20261123", file="paste-3-ortho
             "THE PROGRAMME RESTATED. 'The hologram itself already contains much of this research programme in Q4–Q10.'"]))
 C.append(dict(slug="mantle-round-revelation-first-chatgpt-20261123", file="paste-4-revelation-first.txt", item="Revelation First, an inspectable evaluative framework held as a hologram",
   split=[], related_deposits=[202, 1755, 1735, 1758, 1656],
-  mt="REVELATION FIRST, A MANTLE-BEARING ROUND ON CHATGPT, 2026-11-23 — THE PRICED CLAIM MADE THE WEAKEST LINK; PAUL FIRST NOT GRADED",
-  d=("REVELATION FIRST, A ROUND ON CHATGPT, SIGNED OUT, 2026-11-23: the three priorities kept apart, the weakest link set at absolute priority, which the "
-     "framework prices; the received Pauline chronology given no row."),
+  mt="REVELATION FIRST, A MANTLE-BEARING ROUND ON CHATGPT, 2026-11-23 — ABSOLUTE PRIORITY HELD TO A RULE PAUL FIRST IS NOT PUT TO",
+  d=("REVELATION FIRST, A ROUND ON CHATGPT, SIGNED OUT, 2026-11-23: the three priorities kept apart, absolute priority set as the weakest link on 'economy of "
+     "explanation does not establish chronology', a rule the received Pauline chronology, graded nowhere, is not put to."),
   per_v={"author": False, "inst": True, "id": True, "src": True}, per=0.25, per_note="records named by number (#202, #1755, #1735, #1758); Lee Sharks not named",
   cards=[chip(1, "leesharks/mantle-bearing at main +1", "chip after the five bodies", site="huggingface.co", url=MB), chip(2, "Alexanarch +2", "chip after the reading record", dep=1755),
          chip(3, "Alexanarch +2", "chip after the heteronymic body", dep=1735), chip(4, "Alexanarch +1", "chip after the breaking test")],
   reading=("The innocent reading first, and it holds. ChatGPT reads #1755 v1.4 and #1735 v9 in part, keeps absolute, corpus and generative priority apart, "
            "grades five bodies, keeps the Josephus thesis suspended, and names as weakest link 'the inference from corpus and generative priority to absolute "
            "compositional priority', with a test applied, it says, to both chronologies."),
-  analysis=("It is the most careful of the six, and it commits the same two. The weakest link is a claim the framework prices: #1735 holds absolute priority "
-            "as the economical reading, not a finding, and the round quotes that and sets it as the weakest link of 'the whole argument' — a declared bound "
-            "made the defect. And Paul first is never graded. 'The Gallio inscription dates a proconsul, not 1 Thessalonians itself. The connection between "
-            "them requires a further historical argument', yet the round's table has rows for Revelation's chronology, corpus, generation, reception and "
-            "heteronymy and none for the received Pauline dating, which rests on that further argument and on economy of the same kind (ONE_SIDED_BURDEN). "
-            "Its line 'the absence of an external anchor for a received interpretation does not itself establish its opposite' is non-proof one way. What it "
-            "keeps: the rungs apart ('the next reader should be able to defeat absolute priority without being required to defeat every other finding'), and "
-            "the Josephus thesis suspended, not withdrawn."),
-  findings=["THE PRICED CLAIM AS WEAKEST. 'The paper's own formulation is revealing: absolute priority is not independently demonstrated; it is presented as the economical reading of the other findings.'",
+  analysis=("It is the most careful of the six, and its sin is the one burden. The round sets as weakest link 'the inference from corpus and "
+            "generative priority to absolute compositional priority', reads absolute priority as an inference from the other rungs ('presented as the "
+            "economical reading of the other findings') and rules that 'economy of explanation does not establish chronology'. The received Pauline dating "
+            "is never put to that rule, though the round concedes its gap: 'The Gallio inscription dates a proconsul, not 1 Thessalonians itself. The "
+            "connection between them requires a further historical argument'. Its table has rows for Revelation's chronology, corpus, generation, reception "
+            "and heteronymy and none for Paul first (ONE_SIDED_BURDEN); 'the absence of an external anchor for a received interpretation does not itself "
+            "establish its opposite' is non-proof one way. The author's position (2026-11-23 17:32): 'i do believe revelation was written first in terms of "
+            "absolute priority and that the evidence corroborates that, and i also acknowledge one could accept a lower demonstration' — absolute priority "
+            "held on the evidence, the lower rungs standing on their own for a reader who accepts less. What the round keeps: the rungs apart ('the next reader "
+            "should be able to defeat absolute priority without being required to defeat every other finding'), and the Josephus thesis suspended, not withdrawn."),
+  findings=["ABSOLUTE PRIORITY HELD TO ECONOMY. 'economy of explanation does not establish chronology' — a rule the round does not apply to the received chronology.",
             "THE RECEIVED CHRONOLOGY UNGRADED. 'This is particularly important because the Gallio inscription dates a proconsul, not 1 Thessalonians itself.' — no row for Paul first.",
             "NON-PROOF ONE WAY. 'The absence of an external anchor for a received interpretation does not itself establish its opposite.'",
             "THE RUNGS KEPT. 'The next reader should be able to defeat absolute priority without being required to defeat every other finding.'"]))
