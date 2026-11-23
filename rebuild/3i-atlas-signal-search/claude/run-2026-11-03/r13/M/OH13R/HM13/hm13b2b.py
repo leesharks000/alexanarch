@@ -21,7 +21,7 @@ if sys.argv[1] != "read":
         n += 1
         if n % 100 == 0: print(s, n, round(time.time() - T0), flush=True)
     assert n == NF, n
-    np.savez_compressed(os.path.join(HERE, f"b2b_{s}.npz"), W=Wn.astype(np.float16), Pc=Pc, SH=SH, B0=B0, mhz=np.array([x["mhz"] for x in T]), nframes=n)
+    np.savez_compressed(os.path.join(HERE, f"b2b_{s}.npz"), W=Wn, Pc=Pc, SH=SH, B0=B0, mhz=np.array([x["mhz"] for x in T]), nframes=n)
     print(s, "done", n, round(time.time() - T0), flush=True); sys.exit()
 Eph = dm.ephem(); out = []
 for s in ("0013", "0015", "0017"):
