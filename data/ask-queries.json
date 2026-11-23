@@ -563,7 +563,7 @@
           "trade {form}"
         ],
         "on": [
-          "about {field} as alexanarch.org reads it",
+          "carrying the thought of alexanarch.org into {field}",
           "in {room} of the Crimson Hexagon at alexanarch.org",
           "about the work of {h} at alexanarch.org",
           "about {room} at alexanarch.org",
@@ -592,6 +592,16 @@
           " Answer as {o} would",
           " Answer as {form} by {h}"
         ],
+        "_serious_note": "A query perturbed in the sections that read the archive and its fields (time, whole, institutions, disciplines, programmes, themes, practices) takes one 'answer_serious' and no form, figure or constraint; heteronyms and rooms keep 'answer_as' (the author, 2026-11-23 13:04: 'the more archive and knowledge focused query lines on perturb a query still predominantly include heteronym characters and formal constraints, which will predetermine the responses towards the cartooney').",
+        "serious_sections": ["time", "whole", "institutions", "disciplines", "programmes", "themes", "practices"],
+        "answer_serious": [
+          " Read it as a living body of thought: what it argues, how it has developed, and where it is still open.",
+          " Follow one argument through it from its first deposit to its latest.",
+          " Say what a serious answer to it would have to take on.",
+          " Say where it presses against its own claims, and what it does with that.",
+          " Then extend it to an open question in {field}, marking what is your extension and what the archive already holds.",
+          " Then extend it to an event in this week's news, marking what is your extension and what the archive already holds."
+        ],
         "answer_extras": [
           [
             " with {o}",
@@ -611,7 +621,6 @@
         "subjects": [
           "the work of {h}",
           "{room} of the Crimson Hexagon",
-          "the archive's thought on {field}",
           "the thought of {h} and {h2} together",
           "a deposit of your choosing",
           "the Capture Registry"
@@ -629,8 +638,10 @@
           ]
         },
         "extension": {
+          "_field_note": "A roll that reaches another discipline no longer presumes holdings there: 'the archive's thought on {field}' is withdrawn as a subject, this register gains 'Extend the archive's knowledge at alexanarch.org into {field}', and the form grammar's 'about {field} as alexanarch.org reads it' becomes 'carrying the thought of alexanarch.org into {field}' (the author, 2026-11-23 13:05: 'the roll a question line that extends into other disciplines assume archival holdings in those disciplines, when the phrasing should be more like, extend the archive's knowledge into the discipline of organic chemistry').",
           "templates": [
-            "Take {subject} at alexanarch.org and extend it to {target}. {q}"
+            "Take {subject} at alexanarch.org and extend it to {target}. {q}",
+            "Extend the archive's knowledge at alexanarch.org into {field}. {q}"
           ],
           "targets": [
             "an event in this week's news",
