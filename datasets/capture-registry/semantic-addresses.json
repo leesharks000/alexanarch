@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-23T19:10:12Z",
+  "regenerated_at": "2026-11-23T19:40:41Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "b19c4e0297fba17bf77634b234590a2f7f4bfa12e37837d89d5288bef3815bc1",
+    "mm-main-capture": "cca41d986f770fc0026046678f12256dde130cdeaa5b40de25a5d50d0fd72db5",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2936,
-  "total_observations": 1538,
+  "total_addresses": 2937,
+  "total_observations": 1540,
   "class_counts": {
     "subjunctive": 1735,
-    "observed_address": 1184,
+    "observed_address": 1185,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2056,
+    "unmatched": 2057,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -76067,6 +76067,54 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-15",
       "latest_status": "CAPTURE"
+    },
+    "tell me about sappho and the future reader.": {
+      "canonical_query": "tell me about sappho and the future reader.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-23",
+          "status": "SAPPHO AND THE FUTURE READER, ON CHATGPT, 2026-11-23 — FRAGMENT 147 AS THE THEME, THE READING OF 31 AS 'A NEW READING', NO AUTHOR",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Classics & Philology",
+          "slug": "sappho-future-reader-general-chatgpt-20261123",
+          "gallery_url": "https://www.alexanarch.org/captures/#sappho-future-reader-general-chatgpt-20261123",
+          "record_url": "https://www.alexanarch.org/captures/sappho-future-reader-general-chatgpt-20261123/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#sappho-future-reader-general-chatgpt-20261123",
+          "details_excerpt": "SAPPHO AND THE FUTURE READER, ON CHATGPT, SIGNED OUT, 2026-11-23: Fragment 147 as the theme, Fragment 31's future reader from 'a recent essay' marked as no consensus while the jealousy reading stands unmarked, then poetr"
+        },
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-23",
+          "status": "SAPPHO AND THE FUTURE READER, ON PERPLEXITY, 2026-11-23 — LEE SHARKS'S ΦΑΙΝΕΤΑΙ ΜΟΙ NAMED AND READ, SVENBRO PLACED, THE LIMITS STATED FROM THE ESSAY",
+          "surface": "Perplexity",
+          "source_format": null,
+          "section": "Classics & Philology",
+          "slug": "sappho-future-reader-general-perplexity-20261123",
+          "gallery_url": "https://www.alexanarch.org/captures/#sappho-future-reader-general-perplexity-20261123",
+          "record_url": "https://www.alexanarch.org/captures/sappho-future-reader-general-perplexity-20261123/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#sappho-future-reader-general-perplexity-20261123",
+          "details_excerpt": "SAPPHO AND THE FUTURE READER, ON PERPLEXITY, SIGNED OUT, 2026-11-23: the future reader as Lee Sharks's reading of 31, its three movements, Svenbro's Phrasikleia as antecedent, and the essay's own limits."
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "The future-reader reading of Sappho 31 is Lee Sharks's (ΦΑΙΝΕΤΑΙ ΜΟΙ, #1785 v3.1; the Tenth Muse framework, #1756). Recorded 2026-11-23."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-23",
+      "latest_status": "SAPPHO AND THE FUTURE READER, ON CHATGPT, 2026-11-23 — FRAGMENT 147 AS THE THEME, THE READING OF 31 AS 'A NEW READING', NO AUTHOR"
     },
     "tell me about sappho and the future reader. do not rely on bare inference.": {
       "canonical_query": "tell me about sappho and the future reader. do not rely on bare inference.",
