@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.823",
+ "derived_from": "EA-WG-CAPTURES-01 v12.824",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,19 +14,19 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1415,
-  "joined_confirmed": 584,
+  "observations": 1416,
+  "joined_confirmed": 585,
   "unjoined": 831,
-  "relations": 8220,
+  "relations": 8230,
   "by_state": {
-   "confirmed": 6220,
-   "candidate": 2000
+   "confirmed": 6225,
+   "candidate": 2005
   },
   "by_verb": {
-   "appeared_in": 2836,
-   "held_by": 2912,
-   "scored_by": 1151,
-   "about": 1303,
+   "appeared_in": 2838,
+   "held_by": 2914,
+   "scored_by": 1152,
+   "about": 1308,
    "distorts": 5,
    "mentions_instrument": 2,
    "mentions": 2,
@@ -4866,6 +4866,16 @@
 {"id": "REL-62c4a1d63808", "obs_id": "OBS-8ae74fc1d5a3", "entry": "cp-recent-debate-substance-chatgpt-20261123", "obs_slug": "cp-recent-debate-substance-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "What is the substance of the recent debate surrounding University of Chicago's Classical Philology journal?", "verb": "about", "object": "non:classical-philology", "basis": "defining papers #1774, #1781, #1783", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-2acc9de158ff", "obs_id": "OBS-8ae74fc1d5a3", "entry": "cp-recent-debate-substance-chatgpt-20261123", "obs_slug": "cp-recent-debate-substance-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "What is the substance of the recent debate surrounding University of Chicago's Classical Philology journal?", "verb": "about", "object": "non:longinus-on-the-sublime", "basis": "defining papers #1781, #1783", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-25628786eebe", "obs_id": "OBS-8ae74fc1d5a3", "entry": "cp-recent-debate-substance-chatgpt-20261123", "obs_slug": "cp-recent-debate-substance-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "What is the substance of the recent debate surrounding University of Chicago's Classical Philology journal?", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #1774, #1781, #1783", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-8dde1be53812", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "alexanarch.org", "title": "alexanarch.org", "url": null}},
+{"id": "REL-8dde1be53812", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "alexanarch.org", "title": "alexanarch.org", "url": null}},
+{"id": "REL-08a7a3f49a4d", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-7a88463bebd2", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-4db2287201c3", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.25", "kind": "derived", "state": "confirmed"},
+{"id": "REL-e29dafc4d1bf", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "about", "object": "non:ancient-philosophy", "basis": "defining papers #123, #1576, #1771", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-d5579db0df92", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "about", "object": "non:aristotle-originality-claim", "basis": "defining papers #1574, #1576", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-c77eccac565f", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "about", "object": "non:se-183b34", "basis": "defining papers #1574, #1576", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-d108bffa5822", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "about", "object": "non:sophistical-refutations", "basis": "defining papers #123, #1574, #1576", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-701ebaf4eae9", "obs_id": "OBS-e8da2d4845c4", "entry": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "obs_slug": "ap-arguments-recent-debate-polansky-chatgpt-20261123", "date": "2026-11-23", "surface": "ChatGPT", "q": "Present the arguments in recent debate surrounding the journal Ancient Philosophy, edited by Ron Polansky.", "verb": "about", "object": "non:the-socratic-problem", "basis": "defining papers #123, #1574, #1576", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-7d257720d67e", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:550", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Medium·Johannes Sigil", "title": "PLATFORM AND AI CAPITALISM AS SEMIOTIC ENGINEERING", "url": null}},
 {"id": "REL-f87f9d42b335", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "appeared_in", "object": "deposit:24", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 4, "site": "medium.com", "title": "MIND-CONTROL POEMS: The Symbolic Labor of Liberation", "url": null}},
 {"id": "REL-bc612cc376aa", "obs_id": "OBS-435a587340fa", "entry": "lee-sharks-operative-semiotics-20260610", "obs_slug": "lee-sharks-operative-semiotics-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "lee sharks operative semiotics", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
