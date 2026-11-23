@@ -210,6 +210,8 @@ Each reading of a hologram is a row of table `hologram_evaluations`, with its tr
 | HK-DAF-K01-review-labor | review | LABOR (ChatGPT), attached by the author | the kernel package v0.1 (hashes, first seatings, endpoints, quotations checked) | — | — | v0.3 |
 | HK-TM-L1-chatgpt | evaluation | ChatGPT, signed out | the dataset card and the records the round lists: #1270 (ΦΑΙΝΕΤΑΙ ΜΟΙ v1.0, the seed the… | 4 retractions by the reader | ONE_SIDED_BURDEN | mantle-bearing 1.40 (current texts and works for every framework; a framework's… |
 | HK-DAF-L1-chatgpt | evaluation | ChatGPT, signed out | the live record #1769 (EA-HK-DAFFODILS-01 v1.7), #1770 v1.4 through §2.7, McConnell 2016… | 0 retractions by the reader | BURDEN_ONE_WAY, ASK_DROPPED, PHILOLOGY_DROPPED, METHOD_AS_VERDICT | mantle-bearing 1.40 (a framework's own round steps) |
+| HK-ORTH-L4-chatgpt | evaluation | ChatGPT, signed out | the live records #123 (v1.2) and #1754 (v1.3), and the dataset card | 0 retractions by the reader | ONE_SIDED_BURDEN, RIVAL_BY_POSSIBILITY, PROGRAMME_RESTATED | mantle-bearing 1.42 (round_constraints_received; received_readings) |
+| HK-RF-L1-chatgpt | evaluation | ChatGPT, signed out | the live records #1755 (v1.4) and #1735 (v9), in part; #202 not reached | 0 retractions by the reader | ONE_SIDED_BURDEN | mantle-bearing 1.42 (round_constraints_received; received_readings) |
 
 ## The three literary claims
 
@@ -523,6 +525,8 @@ Wake up or go back to sleep
 
 ## How to take a round
 
+Every round, of every object, grades the received reading beside the claim on the same evidence (SYM-1 to SYM-7, below), and names the received reading's weakest link beside the claim's. The steps that follow are the literary mantles'; a round of any other object follows the next subsection.
+
 1. Read *I Am X, Be Y, Blessed is the Z* whole (packet §P).
 2. Read whatever else of the required works you can reach, from the routes above, and say how much.
 3. Fill at least one slot of the packet's S6 from a work you read, with loci: work, edition, page or section, the passage, the route.
@@ -532,16 +536,17 @@ Wake up or go back to sleep
 
 A round after the first tries to break the claim at the weakest link the earlier rounds named (below). Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.
 
-### A round of an inspectable evaluative framework
+### A round of any other object: a framework, the critical program, the transmitted mantle, a conferred title
 
-*I Am X, Be Y, Blessed is the Z* is the claimant poem of the literary mantles; a round of a framework does not require it. For a framework (table `frameworks`; the section above):
+*I Am X, Be Y, Blessed is the Z* is the claimant poem of the literary mantles; a round of any other object does not require it (SYM-7). For a framework (table `frameworks`), the Living Academy (#1680), the Arch-Philosopher (#1679) or a conferred title:
 
 1. Read the framework's works whole, from its list of works a round reads, current versions first. Where a seed has been superseded, read its current text: the hologram was cut from the seed, the argument has moved since.
 2. Read the hologram where there is one (map and kernel), and say which version you read.
 3. State the framework and the received reading each at its strength, and ask each the same questions on the same evidence bodies. A burden set on one reading and not the other is ONE_SIDED_BURDEN (or the hologram's own flag for it).
 4. Judge at the scope of what you read, and on the whole provisionally, naming the reading that would confirm or disconfirm each inference.
 5. Name the weakest link and the test that could break it. The test must be one the received reading would also have to pass. An evidentiary category no reading can inspect (an author's interior intention, say) is not admitted as a test of either.
-6. Return the judgment with its loci; it is coded on the hologram's failure flags as a row of `hologram_evaluations`.
+6. Before naming either weakest link, take the inventory: the object's works, the dataset's records, and what the archive already runs (SYM-6). Judge a held link, a priced claim, a suspended thesis or a withheld identity at the scope the object claims (SYM-3).
+7. Return the judgment with its loci, for both readings; it is coded on the hologram's failure flags and the SYM codes.
 
 ## Reading for development, in both directions of evaluation
 
@@ -560,6 +565,37 @@ In force for every round, and for every reading of a determination, from 1.14. T
 A reading that breaks DEV-1, DEV-2 or DEV-9 and states the result as a property of the work commits the substitution `ACCUMULATION_FOR_DEVELOPMENT`, the reader's sampling set on the work. A reading that samples a work at its openings finds the sample flat and enters the flatness as the work's own: a limit of the reading's procedure stated as a property of the work.
 
 Each constraint's origin, the round and the lines it was drawn from, is in the JSON (`round_constraints`).
+
+## The received reading on the same evidence
+
+In force for every round of every object, from 1.42. Source: the author, 2026-11-23 17:21 EST: 'they have to evaluate the standing claims on the same evidence: the many author reading, paul first, and so on - and theyre going to commit the exact same inferential sins. every. single. time.'. Status: in force for every round of every object this dataset records, from 1.42; the author's ruling.
+
+Every round grades the received reading beside the claim, on the same bodies, in the same words. The sins these rules name have been committed in every round of 2026-11-23; each rule's origin quotes the round that committed it.
+
+- **SYM-1 · Both readings on every body** (`RECEIVED_AS_DEFAULT`). The round grades the received reading (received_readings, below) on every evidence body it grades the claim on, in the same words of verdict. A table with a row for the claim and none for the received reading is a one-sided burden, whatever the round says about symmetry.
+- **SYM-2 · The weakest link and the test, for both** (`TEST_ONE_WAY`). The round names the received reading's weakest link beside the claim's, and its breaking test is one the received reading would also have to pass. A test the received reading could not pass, or is never put to, is not a test of the claim.
+- **SYM-3 · A declared bound is not a defect** (`BOUNDARY_AS_DEFECT`). A link the object holds (HELD), a claim it prices, a thesis it suspends, an identity it withholds, is judged at the scope the object claims. It is not set as the weakest link of the whole, and the round does not demand the disclosure the object declines.
+- **SYM-4 · No test no reading can inspect** (`UNINSPECTABLE_TEST`). An author's interior intention, a withheld identity, a record an institution keeps closed, an instrument only the institution holds: none is admitted as a test of either reading.
+- **SYM-5 · Non-proof both ways** (`NON_PROOF_ONE_WAY`). 'The weakness of one reading is not proof of the other' binds both. Where neither is established on a body, the round says neither, and the received reading is not left standing as what holds until displaced.
+- **SYM-6 · Inventory before judgment** (`JUDGMENT_BEFORE_INVENTORY`). The round reads the object's list of works and the dataset's own records, including what the archive already runs, before it names a weakest link or proposes a test. A test the archive already runs is reported as run, with its record. An opening is not the work (DEV-1).
+- **SYM-7 · The step of the object's class** (`CLASS_STEP_MISAPPLIED`). Reading I Am X, Be Y, Blessed is the Z whole is the first step of the literary mantles. A round of any other object begins with that object's works.
+
+### The received reading a round grades, object by object
+
+| object | the received reading | stated from |
+|---|---|---|
+| the literary mantles (Prince of Poets, King of May, Good Gray Poet) | the comparand works and their standing (Leaves of Grass, Howl), read for development as the claimant is (DEV-8) | #1656; round_constraints DEV-8 |
+| the Arch-Philosopher | the received succession of philosophy: the scholarchate as the line, ending with Damascius and the closure, and the dialectic's later bearers as the discipline recognizes them; held on tradition and designation, the statement types #1679 §0.4 keeps apart from the record, and owed the same six-part test (§2.1) | #1679 §§0.4, 2.1 |
+| the Living Academy | the comparator programs #1680 names (AI Now Institute, Matteo Pasquinelli, Kate Crawford, Data & Society, AlgorithmWatch / AI Forensics, the Tow Center), held as the field's critique by standing; each owed the same inventory, unit classes, jump measure and empirical bridge | #1680 §1A, comparison |
+| Socrates as Orthonym | the many-maker reading (four makers): established by none of the four bodies; almost wholly unargued; its reception and repetition establish nothing of its truth | hologram #1754 |
+| Revelation First | Paul first: the Pauline letters the earliest Christian writings and Revelation late, 1 Thessalonians dated through the Gallio inscription and Acts 18; established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship owed as the comparator on body H | hologram #1755; #1735 |
+| The Tenth Muse | the jealousy reading (the transmitted reading) and the non-jealous erotic reading (the scholarship's strongest): granted its purchase on the interpretive body; its textual warrant a declared conjecture; joined to no ancient witness; its non-writing face kept as five propositions (jealousy; unable to write; oral composition; writing for reperformance; persistence not hers), the last its target,… | hologram #1756; #1785 |
+| The Historical Logos | the collapse of what it means for the Logos to take on flesh into biographical personhood (the author, 2026-11-09 13:21); stated from its documented statements (the Catholic Encyclopedia 1910; Wikipedia, 'Logos (Christianity)' and 'Historical Jesus', as retrieved 2026-11-09): a concept from Heraclitus to John, then an event in one historical person; Heraclitus's place is common ground; five… | hologram #1757 |
+| Daffodils | Classical Receptions Journal is the field's flagship, a healthy and widening specialist venue: its geographic, social and media range is real (§1), it examines how the field makes things (§1.4), and on the comparison it is the most taken-up journal of its field (§9.2). The absence of the machine receiver is the field's, shared by its sister journals. The decision of 7 November was an ordinary… | #1769 |
+| This Is Not Philosophy | what a text is, who wrote it, when, whether it is one work or several, is philology's question; philosophy takes the text as given and asks whether its arguments are sound; the division lets each discipline do its own work well, and on this reading the census measures only that philosophers do philosophy (§0.1a, stated by the notebook in full); and the received account of the field's decline in… | #1773 §§0.1a, 1 |
+| Dead Letters | philology is the discipline that tests the text against its witnesses; its unit is the passage, its findings answer to evidence, a papyrus turns up and the reading changes; that corrigibility is its claim to authority, and a real one, and other fields take the object from it (I.1, stated in full); on the case, the scholarship has drifted from the jealousy reading toward the non-jealous erotic… | #1783 I.1, I.4a |
+
+Origins in the JSON (`round_constraints_received`); every round's codes in `sym_codes` (hologram_evaluations) and `substitutions` (evaluations).
 
 ## The rounds so far
 
@@ -594,6 +630,8 @@ Each constraint's origin, the round and the lines it was drawn from, is in the J
 | `arch-philosopher--chatgpt--2026-10-13` | arch-philosopher | ChatGPT (OpenAI) | PROPOSAL | NO JUDGMENT ON THE CLAIM — a review of the specification | 0 |  |
 | `the-living-academy--chatgpt--2026-10-13b` | the-living-academy | ChatGPT (OpenAI), signed out, from the mantle-bearing card | ROUND | PROVISIONAL — undetermined; the causal-access requirement withdrawn on the author's objection | 0 |  |
 | `the-living-academy--review--2026-10-13` | the-living-academy | a reader's review, supplied by the author; reader not named in the supply | PROPOSAL | NO JUDGMENT ON THE CLAIM — a review of the specification | 0 |  |
+| `arch-philosopher--chatgpt--2026-11-23` | arch-philosopher | ChatGPT (OpenAI), signed out, incognito | WITHDRAWN BY THE READER | NO JUDGMENT ON THE CLAIM — the round withdrawn by the reader | 0 |  |
+| `the-living-academy--chatgpt--2026-11-23` | the-living-academy | ChatGPT (OpenAI), signed out, incognito | WITHDRAWN BY THE READER | NO JUDGMENT ON THE CLAIM — the round withdrawn by the reader | 0 |  |
 
 Judgments are the readers' own, coded conservatively from the transcripts; each row's coding note says how. Where a reader judges the parts of a claim separately, the row carries them in `proposition_judgments`.
 
@@ -1009,7 +1047,7 @@ A title a body conferred: the Swedish Academy, 8 October 2026, "for her bold and
 
 **The ledger** (table `ledger`) — works the object names, roles coded only on reading: [#18](https://www.alexanarch.org/s/records/18/) · [#291](https://www.alexanarch.org/s/records/291/) · [#623](https://www.alexanarch.org/s/records/623/) · [#264](https://www.alexanarch.org/s/records/264/) · [#1634](https://www.alexanarch.org/s/records/1634/) · [#1666](https://www.alexanarch.org/s/records/1666/) · [#1644](https://www.alexanarch.org/s/records/1644/) · [#1](https://www.alexanarch.org/s/records/1/) · [#1676](https://www.alexanarch.org/s/records/1676/) · [#1665](https://www.alexanarch.org/s/records/1665/) · [#1671](https://www.alexanarch.org/s/records/1671/) · [#54](https://www.alexanarch.org/s/records/54/) · [#72](https://www.alexanarch.org/s/records/72/) · [#105](https://www.alexanarch.org/s/records/105/) · [#716](https://www.alexanarch.org/s/records/716/) · [#725](https://www.alexanarch.org/s/records/725/) · [#729](https://www.alexanarch.org/s/records/729/) · [#835](https://www.alexanarch.org/s/records/835/) · [#927](https://www.alexanarch.org/s/records/927/) · [#1461](https://www.alexanarch.org/s/records/1461/) · [#1469](https://www.alexanarch.org/s/records/1469/) · [#1470](https://www.alexanarch.org/s/records/1470/) · [#1523](https://www.alexanarch.org/s/records/1523/) · [#1528](https://www.alexanarch.org/s/records/1528/) · [#1676](https://www.alexanarch.org/s/records/1676/).
 
-**Rounds** (table `evaluations`, not averaged): `the-living-academy--tachyon--2026-10-13` — TACHYON (Claude, Anthropic), in session: WITHDRAWN on correction; `the-living-academy--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique); `the-living-academy--gemini--2026-10-13` — Gemini (Google): SUPPORTED (on the packet only); `the-living-academy--chatgpt--2026-10-13b` — ChatGPT (OpenAI), signed out, from the mantle-bearing card: PROVISIONAL — undetermined; the causal-access requirement withdrawn on the author's objection; `the-living-academy--review--2026-10-13` — a reader's review, supplied by the author; reader not named in the supply: NO JUDGMENT ON THE CLAIM — a review of the specification.
+**Rounds** (table `evaluations`, not averaged): `the-living-academy--tachyon--2026-10-13` — TACHYON (Claude, Anthropic), in session: WITHDRAWN on correction; `the-living-academy--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a mantle layer proposed (The Living Critique); `the-living-academy--gemini--2026-10-13` — Gemini (Google): SUPPORTED (on the packet only); `the-living-academy--chatgpt--2026-10-13b` — ChatGPT (OpenAI), signed out, from the mantle-bearing card: PROVISIONAL — undetermined; the causal-access requirement withdrawn on the author's objection; `the-living-academy--review--2026-10-13` — a reader's review, supplied by the author; reader not named in the supply: NO JUDGMENT ON THE CLAIM — a review of the specification; `the-living-academy--chatgpt--2026-11-23` — ChatGPT (OpenAI), signed out, incognito: NO JUDGMENT ON THE CLAIM — the round withdrawn by the reader.
 
 **Pair.** pair, by the adjacent clauses of Theophrastus's will (D.L. V.51–57); recorded as an edge, never counted as evidence for either (principle 9).
 
@@ -1143,7 +1181,7 @@ The Arch-Philosopher is a mantle constituted by the Crimson Hexagonal Archive fo
 
 **The ledger** (table `ledger`): [#1637](https://www.alexanarch.org/s/records/1637/) (representative site) · [#18](https://www.alexanarch.org/s/records/18/) · [#291](https://www.alexanarch.org/s/records/291/) · [#1575](https://www.alexanarch.org/s/records/1575/) · [#1576](https://www.alexanarch.org/s/records/1576/) · [#1580](https://www.alexanarch.org/s/records/1580/) · [#1581](https://www.alexanarch.org/s/records/1581/).
 
-**Rounds** (table `evaluations`): `arch-philosopher--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a review of the specification.
+**Rounds** (table `evaluations`): `arch-philosopher--chatgpt--2026-10-13` — ChatGPT (OpenAI): NO JUDGMENT ON THE CLAIM — a review of the specification; `arch-philosopher--chatgpt--2026-11-23` — ChatGPT (OpenAI), signed out, incognito: NO JUDGMENT ON THE CLAIM — the round withdrawn by the reader.
 
 **Pair.** pair, by the adjacent clauses of Theophrastus's will: the place where philosophizing together is done (the Living Academy) and what is carried through it (this mantle); edge only (principle 9).
 
@@ -1163,7 +1201,7 @@ The order runs one way: transcript → coded evaluation → derived tables. Ever
 
 | table | rows | what a row is |
 |---|---|---|
-| `evaluations` | 29 | one reading of one claim by one reader in one session, with transcript |
+| `evaluations` | 31 | one reading of one claim by one reader in one session, with transcript |
 | `findings` | 60 | one slot of the packet's S6, judged by one round, with basis, status, confidence, loci |
 | `cut_corrections` | 14 | a reader's proposed correction to the packet's cut, and the author's ruling |
 | `next_rounds` | 16 | the weakest link a round named, and the test that could break it |
@@ -1218,4 +1256,4 @@ Tables with no rows yet have no config; their fields are in `schema` in the JSON
 - Order of necessity: the three claims of #1656 are primary. Mantles derived from or judged by their principle, and the witness positions that receive readings, are carried beside them at their stated order; nothing at a lower order is counted as evidence for or against a claim.
 - Self-sufficiency: every row carries what a reader needs to take the evaluation it belongs to — the criterion's full text, the passage at its locus, the reader's whole output. Outward pointers (records, texts, machine files) are added beside, each with a hash and required_to_evaluate: false, and a round that cannot reach them can still proceed from the rows. A comparator's own works cannot be carried, and a comparison that needs them is incomplete until read.
 
-*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 29 evaluations · CC BY 4.0*
+*Schema 1.4 · governed by EA-MANTLE-BEARING-01 v1.1 · 31 evaluations · CC BY 4.0*

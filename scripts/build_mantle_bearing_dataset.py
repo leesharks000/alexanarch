@@ -264,6 +264,9 @@ def card(d, counts):
           "[first publication](https://mindcontrolpoems.blogspot.com/2015/09/i-am-x-be-y-blessed-is-z.html), "
           "section breaks as published. Every round can read it entire here.", "", claimant_poem(), ""]
     L += ["## How to take a round", "",
+          "Every round, of every object, grades the received reading beside the claim on the same evidence (SYM-1 to SYM-7, below), and names the "
+          "received reading's weakest link beside the claim's. The steps that follow are the literary mantles'; a round of any other object follows "
+          "the next subsection.", "",
           "1. Read *I Am X, Be Y, Blessed is the Z* whole (packet §P).",
           "2. Read whatever else of the required works you can reach, from the routes above, and say how much.",
           "3. Fill at least one slot of the packet's S6 from a work you read, with loci: work, edition, page or section, the passage, the route.",
@@ -273,9 +276,9 @@ def card(d, counts):
           "A round after the first tries to break the claim at the weakest link the earlier rounds named (below). "
           "Standing put before the work — the claimant's social, critical or machine-recognition standing allowed to "
           "decide whether the claim may be taken seriously — is the fatal substitution, STANDING_PRIOR_TO_WORK.", "",
-          "### A round of an inspectable evaluative framework", "",
-          "*I Am X, Be Y, Blessed is the Z* is the claimant poem of the literary mantles; a round of a framework does not require it. For a framework "
-          "(table `frameworks`; the section above):", "",
+          "### A round of any other object: a framework, the critical program, the transmitted mantle, a conferred title", "",
+          "*I Am X, Be Y, Blessed is the Z* is the claimant poem of the literary mantles; a round of any other object does not require it (SYM-7). "
+          "For a framework (table `frameworks`), the Living Academy (#1680), the Arch-Philosopher (#1679) or a conferred title:", "",
           "1. Read the framework's works whole, from its list of works a round reads, current versions first. Where a seed has been superseded, read its "
           "current text: the hologram was cut from the seed, the argument has moved since.",
           "2. Read the hologram where there is one (map and kernel), and say which version you read.",
@@ -284,7 +287,9 @@ def card(d, counts):
           "4. Judge at the scope of what you read, and on the whole provisionally, naming the reading that would confirm or disconfirm each inference.",
           "5. Name the weakest link and the test that could break it. The test must be one the received reading would also have to pass. An evidentiary "
           "category no reading can inspect (an author's interior intention, say) is not admitted as a test of either.",
-          "6. Return the judgment with its loci; it is coded on the hologram's failure flags as a row of `hologram_evaluations`.", ""]
+          "6. Before naming either weakest link, take the inventory: the object's works, the dataset's records, and what the archive already runs (SYM-6). "
+          "Judge a held link, a priced claim, a suspended thesis or a withheld identity at the scope the object claims (SYM-3).",
+          "7. Return the judgment with its loci, for both readings; it is coded on the hologram's failure flags and the SYM codes.", ""]
     rc = d.get("round_constraints")
     if rc:
         L += [f"## {rc['title']}", "",
@@ -297,6 +302,17 @@ def card(d, counts):
             L += ["", f"A reading that breaks {', '.join(sb['breaks'][:-1])} or {sb['breaks'][-1]} and states the result as a property of the work commits the "
                   f"substitution `{sb['code']}`, {sb['name']}. {sb['what']}"]
         L += ["", "Each constraint's origin, the round and the lines it was drawn from, is in the JSON (`round_constraints`).", ""]
+    rr = d.get("round_constraints_received")   # 1.42: the received reading on the same evidence
+    if rr:
+        L += [f"## {rr['title']}", "", f"In force for every round of every object, from 1.42. Source: {rr['source']}. Status: {rr['status']}.", "",
+              "Every round grades the received reading beside the claim, on the same bodies, in the same words. The sins these rules name have been "
+              "committed in every round of 2026-11-23; each rule's origin quotes the round that committed it.", ""]
+        for c in rr["constraints"]:
+            L.append(f"- **{c['id']} · {c['name']}** (`{c['code']}`). {c['rule']}")
+        L += ["", "### The received reading a round grades, object by object", "", "| object | the received reading | stated from |", "|---|---|---|"]
+        for x in d.get("received_readings") or []:
+            L.append(f"| {x['object']} | {_cut(x['received'], 400)} | {x['source']} |")
+        L += ["", "Origins in the JSON (`round_constraints_received`); every round's codes in `sym_codes` (hologram_evaluations) and `substitutions` (evaluations).", ""]
     L += ["## The rounds so far", "",
           "| eval_id | mantle | reader | process state | judgment | read whole | instruction |",
           "|---|---|---|---|---|---|---|"]
