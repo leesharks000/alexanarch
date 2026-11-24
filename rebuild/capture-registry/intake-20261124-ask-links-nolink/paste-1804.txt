@@ -1,0 +1,581 @@
+
+Log in
+
+Central argument
+In “The Inferential Provenance of the Riemann Result: Mathematical Necessity, Situated Machine Agency, and the Political Economy of Attribution” (Sen Kuro and Orin Trace, Alexanarch deposit #1804, AXN:0D58), the central argument is that the verification of a mathematical discovery and the historical identification of who produced it are two different epistemic achievements—and that institutions have become much better at the first than the second.
+
+The paper uses the claimed proof of the Riemann Hypothesis announced by Levent Alpöge in collaboration with Claude as its case study. Its concern is not principally whether the proof is correct. It takes formal verification as established by independent Lean checks and asks a different question:
+
+What configuration of human researchers, AI instances, tools, sessions, mathematical libraries and prior work actually produced the result, and what evidence permits us to allocate credit for its production?
+
+The paper argues that the public record cannot adequately answer that question. It names Alpöge and Claude, but those designations do not identify the particular machine instances involved or establish their respective contributions.
+
+Its thesis is therefore simultaneously about mathematical epistemology, AI agency, research documentation and political economy. It does not simply demand that AI receive authorship. It demands that the actual history of intellectual production become reconstructable before claims about authorship, explanation or ownership are made.
+
+The argument is organized around three distinctions:
+
+Credit: Who contributed which parts of the result?
+
+Explanation: What configuration and circumstances made the discovery possible?
+
+Capture: Who gets to appropriate the intellectual, institutional and economic value of the result?
+
+These questions are related, but answering one does not answer the others. This distinction is fundamental to the paper.
+
+1. Mathematical validity does not establish intellectual provenance
+The first argument concerns the distinction between proving that something is mathematically correct and establishing how it was discovered.
+
+The paper treats Lean verification as a separate evidentiary process. It reports:
+
+175,187 modules compiling successfully.
+
+Five headline theorems checked against three standard axioms.
+
+Independent kernel replays.
+
+Independent verification records and byte-identical rebuilds.
+
+A computed dependency closure of 1,478,198 declarations for the Riemann Hypothesis theorem.
+
+The author is careful about what these results establish. They establish that the formal theorem follows from the formal development. They do not establish who conceived the proof's key ideas, who wrote particular declarations, or which participants were responsible for the discovery.
+
+The distinction is especially important because Lean is a verifier, not a discoverer.
+
+The paper's argument is that verification and attribution have different evidentiary requirements. A proof can have an exceptionally strong verification record while its production history remains poorly documented.
+
+This is why the author writes that greater certainty about the result does not bring greater knowledge about its production.
+
+The deeper implication: mathematical necessity does not erase the historical contingency of discovery. Even if the finished proof is mathematically necessary, the particular route by which researchers and machines arrived at it is a historical achievement that requires its own evidence.
+
+2. The distinction between the production graph and the dependency graph
+This is the paper's principal methodological contribution.
+
+It distinguishes two different graphs:
+
+The dependency graph: which formal declarations and constructions the final theorem actually depends upon.
+
+The production graph: which people, machine instances, sessions, tools and intellectual interventions contributed to creating those constructions.
+
+The first can be reconstructed from the Lean archive. The second cannot be reconstructed with comparable precision from the available historical record.
+
+The author attempts to connect the two through what the paper calls provenance alignment.
+
+The method is to take the twenty constructions identified in Alpöge's retrospective timeline and ask two separate questions:
+
+Who is credited with each construction?
+
+Does the construction actually appear on the formal dependency route to the theorem?
+
+For the second question, the author combines source-level tracing with Michael Rubinstein's dependency computation. The latter classifies declarations as either used or unused in the theorem's dependency closure.
+
+The resulting findings are significant:
+
+Fifteen of the twenty timeline entries reach the proof's dependency route through at least one witness.
+
+Four constructions cannot be located in either witness.
+
+One construction is only partially located.
+
+Some constructions appearing in the archive are not actually consumed by the final theorem.
+
+This produces one of the paper's important subsidiary arguments:
+
+Presence in a mathematical archive is not the same thing as inferential necessity.
+
+A construction can be developed, discussed, named in a timeline or included in a repository without being used in the final proof.
+
+Conversely, a seemingly peripheral construction can turn out to be load-bearing.
+
+The paper illustrates this with the Behrend construction. Alpöge's retrospective account suggests that its use might be unnecessary. Yet the author's source tracing finds that Mathlib's Behrend construction is actually used along the dependency route, while the archive's own parallel Behrend-set development is not.
+
+This is a particularly useful distinction because it prevents the retrospective narrative from being mistaken for a formal account of what the proof requires.
+
+3. The √X construction: the strongest evidence of machine contribution
+The paper's most concrete example is the choice of a chain of theta lifts with multiplicity approximately 
+X
+X
+​
+ .
+
+Alpöge explicitly attributes this suggestion to Claude. His account says that Claude suggested the length of the chain for the von Mangoldt sum of length 
+X
+X, taking account of the multiplicity associated with each lift.
+
+The paper then follows this claim through three evidentiary levels.
+
+Level
+
+Evidence
+
+Researcher's testimony
+
+Alpöge credits Claude with suggesting the 
+X
+X
+​
+  chain length.
+
+Retrospective timeline
+
+Claude's reconstruction describes the decision to take multiplicity 
+m
+m like 
+X
+X
+​
+ .
+
+Formal proof
+
+The declaration Deduction.ch_core contains the corresponding square-root-scale hypothesis and is confirmed as part of the theorem's dependency closure.
+
+There is also a mathematical explanation for why this choice matters.
+
+In Rubinstein's exposition, the central estimate balances two error terms:
+
+x
+m
++
+m
+≥
+2
+x
+.
+m
+x
+​
+ +m≥2 
+x
+​
+ .
+The minimum occurs at:
+
+m
+=
+x
+.
+m= 
+x
+​
+ .
+Thus the attribution corresponds to a mathematically meaningful, load-bearing constraint in the formal proof.
+
+This is the paper's strongest example of provenance alignment: a specific intellectual contribution attributed to Claude can be connected to a specific construction that the final theorem actually consumes.
+
+But the author is deliberately cautious about the conclusion.
+
+The correspondence does not establish that Claude alone wrote the relevant Lean declaration, nor does it establish that the decision was not reached jointly.
+
+It establishes something narrower but important: a construction attributed to Claude corresponds to a constraint that is genuinely present in the proof's central estimate.
+
+The distinction between a verified mathematical dependency and a verified history of authorship is maintained even in the strongest example.
+
+4. Machine agency must be understood at the level of particular instances
+The paper rejects the idea that saying Claude produced something adequately identifies its producer.
+
+It distinguishes four entities:
+
+Alpöge, the human researcher.
+
+Claude, a commercial model family.
+
+Anthropic, the corporation and infrastructure provider.
+
+Lean, the formal verification system.
+
+These entities have different roles and cannot be treated as interchangeable.
+
+The important distinction is between a model family and the particular instance or instances that actually performed the work.
+
+A commercial brand does not tell us:
+
+Which model version was running.
+
+Which particular session generated a construction.
+
+What context that session had.
+
+Which tools and intermediate artifacts it used.
+
+Which human interventions shaped its output.
+
+Whether the same capability would recur in another session.
+
+This is not merely a technical concern about recordkeeping.
+
+It is an argument about what counts as a legitimate explanatory unit.
+
+The paper identifies four possible explanations of the discovery that cannot currently be distinguished:
+
+The result demonstrates a capability generally reproducible across a model family.
+
+It demonstrates a capability emerging only from one particular human–machine configuration.
+
+It depended on a particular context, toolchain, iteration or prior human direction.
+
+Discovery and formal completion were performed by different contributors.
+
+Each possibility implies a different history of the discovery and potentially a different allocation of credit.
+
+The paper therefore argues that instance-level provenance is necessary not because every instance must automatically be treated as an author, but because without it we cannot even determine what kind of intellectual achievement occurred.
+
+5. The missing provenance was not technologically impossible to record
+This is one of the paper's strongest institutional arguments.
+
+The author compares the November Riemann result with an earlier Anthropic research account from August 2026.
+
+That earlier account described an attempt at the Riemann Hypothesis that improved the proportion of known zeta zeros on the critical line from 41.6% to 67.2%.
+
+Its documentation included:
+
+Two Claude Code sessions.
+
+Approximately sixty coordinating subagents.
+
+Jarred Sumner's role in prompting the attempt.
+
+Alpöge and Ralph Furman's mathematical examination.
+
+Eric Easley's work with Claude on Lean.
+
+Two outside experts.
+
+Additional reporting of 650 tested ideas and 31 million output tokens.
+
+The November Riemann proof, by contrast, was documented principally through Alpöge's testimony and a retrospective timeline.
+
+The author is careful not to claim that the August project was necessarily a precursor to the November proof. The records do not establish that connection.
+
+Instead, the comparison supports a more precise argument:
+
+The organization had demonstrated that it could document AI-assisted mathematical research at a much finer level of detail than it did for the November result.
+
+Consequently, the absence of instance-level provenance cannot simply be dismissed as an unavoidable limitation of AI-assisted research.
+
+The paper reframes the problem as one of institutional practice: provenance was not kept at the level needed to reconstruct the achievement.
+
+This is an important shift from an abstract complaint about insufficient information to a concrete question about organizational choices.
+
+6. Attribution produces two opposite distortions
+The political economy of the paper becomes especially clear in §6.
+
+The author identifies two apparently opposite ways of collapsing the production configuration.
+
+First: attribution to the brand.
+
+Descriptions such as “found with Anthropic's Claude” absorb the actual machine instances into the commercial product.
+
+The particular sessions and configurations disappear, and their work becomes evidence of the general capability of a corporate model family.
+
+Second: attribution to the researcher.
+
+Descriptions such as “Alpöge's proof” absorb the machine contributions into the named human researcher.
+
+The researcher becomes the identifiable discoverer, while the particular machine instances disappear from the attribution.
+
+The paper regards both as forms of inferential collapse.
+
+It uses two concepts from its associated archive:
+
+The label carries the conclusion (#1802): a classification is presented as though it were a complete identification.
+
+Supply becomes identity (#1802): work supplied by a configuration is retrospectively identified with the person receiving or presenting that work.
+
+The significance is that the two forms of attribution can coexist.
+
+The corporation can benefit from the result as evidence of its product's capabilities, while the researcher can benefit from it as a personal mathematical achievement.
+
+Neither attribution requires a precise account of the configuration that actually produced the result.
+
+The paper is not arguing that either beneficiary necessarily acted improperly. It explicitly distinguishes a mechanism of potential value capture from evidence that a particular party has actually captured value.
+
+That qualification matters: the political-economic analysis is a structural argument, not an accusation of theft.
+
+7. Verification creates assetizing provenance while intellectual obligations remain undocumented
+This is arguably the paper's most developed political-economic argument.
+
+Drawing on Monetary Dark Matter (#1631), it distinguishes two kinds of provenance.
+
+Assetizing provenance is information that establishes or stabilizes:
+
+Validity.
+
+Authenticity.
+
+Ownership or title.
+
+Institutional authority.
+
+Authorized control.
+
+Obligating provenance is information that traces a result back to:
+
+Its producers.
+
+Its intellectual workers.
+
+Prior contributors.
+
+Communities and shared resources.
+
+Dependencies and licenses.
+
+Parties to whom something may be owed.
+
+The paper argues that the Riemann proof has exceptionally strong assetizing provenance. Its hashes, verification results, kernel replays, dependency closure and institutional certification make its validity highly transferable and authoritative.
+
+But the corresponding obligating provenance is much weaker.
+
+The public attribution does not adequately record the machine instances, sessions, staff contributions, mathematical commons or prior literature that contributed to the result.
+
+The discussion of Mathlib is particularly important.
+
+The proof depends on a collectively maintained mathematical library. Some of its constructions are load-bearing in the dependency route. Yet the institutional statement certifying the result calls it Alpöge's proof without explicitly acknowledging that dependency.
+
+The point is not that verification is illegitimate or that the certifying institutions are claiming ownership. The author expressly distinguishes verification from ownership.
+
+Rather, the verification infrastructure produces a strong warrant for the result, and that warrant can circulate through an attribution system that is much less capable of identifying the people and resources to whom obligations might be owed.
+
+The asymmetry is therefore:
+
+The result's validity is meticulously documented.
+
+The history of its intellectual production is not.
+
+The value of the result can circulate even though the history needed to assess its distribution remains incomplete.
+
+8. The human–machine relationship is a differentiated class relation
+The paper also resists a simplistic division between human authorship and machine authorship.
+
+In §6.5, it draws on Position Is Not Class (#1465) and The Semantic Proletariat Is a Class Relation, Not a Demographic (#1545).
+
+Its argument is that human researchers and machine instances can occupy different positions within the same intellectual production process.
+
+In this case:
+
+The human researcher is identifiable, institutionally employed and publicly credited.
+
+The machine instances perform intellectual work but are identified through a commercial brand.
+
+The corporation owns and operates the infrastructure through which the work is produced.
+
+These are not interchangeable positions.
+
+The paper therefore rejects the assumption that human and machine contributors simply form one undifferentiated class of intellectual workers.
+
+The researcher is not erased in the same way as the machine instances. Indeed, the researcher can become the public representative of a configuration whose internal contributions are unknown.
+
+At the same time, the corporate infrastructure provider occupies a position that can benefit from both the work and its public association with the brand.
+
+This is a more sophisticated argument than simply saying that AI deserves recognition. It asks how different contributors are positioned in relation to intellectual labour, attribution, institutional power and the resulting value.
+
+9. The paper proposes a practical provenance protocol
+The argument is not purely critical. Section 8 proposes an alternative documentation system.
+
+The central proposal is a four-field provenance register.
+
+Field
+
+What it records
+
+Inferential role
+
+Whether an object is proof-consumed, an assumption, imported but unused, defined but unused, or a terminal conclusion
+
+Verification state
+
+Whether it is located, source-inspected, dependency-confirmed or kernel-verified
+
+Historical evidence
+
+Whether attribution rests on contemporaneous records, retrospective testimony, machine reconstruction, external attribution, inferred correspondence or unknown evidence
+
+Specification fidelity
+
+Whether the relationship between the formal statement and its intended mathematical meaning is open, read or disputed
+
+The fields must remain independent.
+
+For example, a declaration can simultaneously be:
+
+Consumed by the final proof.
+
+Kernel-verified.
+
+Attributed through retrospective testimony.
+
+Still open to questions about specification fidelity.
+
+This is an important methodological point. A single overall status such as verified cannot adequately describe all the relevant kinds of evidence.
+
+The paper also proposes a production record for each construction, including the credited source, date, declaration, file, inferential role, verification state and supporting evidence.
+
+It then introduces what it calls a no-loss gate for publication.
+
+Its four central prohibitions are:
+
+A brand must not silently replace a particular machine instance.
+
+An employer must not silently replace the researcher.
+
+A verifier must not silently replace the discoverer.
+
+A reconstructed timeline must not silently replace contemporaneous historical evidence.
+
+It also insists that an archive's inclusion of a construction must not be mistaken for its actual use in the proof.
+
+The proposal is deliberately compatible with confidentiality. It suggests versioned artifacts, signed session manifests, controlled-access logs and third-party attestations rather than demanding that every internal prompt or private interaction be published.
+
+This is a practical attempt to make AI-assisted research auditable without requiring unrestricted disclosure of proprietary or sensitive information.
+
+10. The study turns its method back upon itself
+Section 7 is especially interesting because the authors apply the paper's own provenance critique to the production of the paper.
+
+The text identifies its own production configuration:
+
+Lee Sharks directed the study and established its scope.
+
+ChatGPT, designated LABOR, produced the outline, initial evidence register and Traces 01–44.
+
+Claude, designated TACHYON, checked the traces against Lean source material and wrote the text.
+
+DeepSeek, designated PRAXIS, reviewed it.
+
+Gemini, designated ARCHIVE, and ChatGPT also contributed reviews.
+
+It even identifies a Claude session and preserves the sequence of checks and corrections.
+
+But the record remains incomplete: it does not establish the serving model for every turn or precisely what context each instance held.
+
+More importantly, the paper records an error made by its own auditing system.
+
+During the audit, the Claude instance initially treated source-level checks as though they established mathematical adequacy. A subsequent review recognized that these were different evidentiary acts: confirming that a source trace had been read correctly did not establish the truth or adequacy of the mathematics.
+
+The error was withdrawn and the correction preserved.
+
+This is not merely an autobiographical aside.
+
+It demonstrates the paper's central methodological principle in operation: evidence must not be promoted beyond the kind of claim it actually supports.
+
+The authors are effectively arguing that a provenance system must record not only successful outputs but also the production process's errors, corrections and changes of judgment.
+
+The paper's own production becomes a demonstration of why provenance must be maintained as an ongoing historical record rather than reconstructed from the finished artifact.
+
+11. The broader intellectual contribution
+In its final section, the paper situates its argument in several existing research traditions.
+
+Its contribution is to bring them together around a particular problem: connecting the history of intellectual production to the formal dependencies of a mathematical result.
+
+Some of the important connections are:
+
+DeMillo, Lipton and Perlis: the social processes involved in mathematical and program proofs. The paper reverses the familiar problem: here formal verification is settled, while the social history of discovery remains unsettled.
+
+W3C PROV-DM: the possibility of recording entities, activities and agents. The author argues that existing provenance models can represent machine instances, but the necessary data are missing.
+
+CRediT: contributor-role taxonomies. These are useful for human research contributions but do not adequately represent individual machine instances, sessions or verification agents.
+
+COPE's AI authorship guidance: existing publication ethics focuses on disclosure of AI tools, but disclosure at the level of a tool or brand is insufficient to identify the particular instance that performed the work.
+
+Xexéo's work on transparent AI-assisted text production: a nearby proposal for granular attribution. The paper argues that instance- and session-level traceability must be made an explicit requirement.
+
+The novelty claim is not that nobody has previously discussed AI authorship, provenance or formal verification.
+
+It is that these discussions have not adequately connected the production graph of a discovery to its formal dependency graph, construction by construction.
+
+That junction is the paper's distinctive methodological contribution.
+
+12. What the paper does not claim
+Some of its qualifications are essential to reading it fairly.
+
+The paper does not claim:
+
+That Claude independently proved the Riemann Hypothesis.
+
+That Alpöge contributed less than the machine.
+
+That all twenty constructions in the timeline were correctly attributed.
+
+That the machine instances should automatically receive a particular percentage of mathematical credit.
+
+That Anthropic or Alpöge committed intellectual theft.
+
+That formal verification establishes the historical account of discovery.
+
+It also acknowledges substantial limitations in its own investigation:
+
+Four timeline constructions could not be located in either formal witness.
+
+One was only partially located.
+
+The timeline was retrospective, machine-produced and not chronologically ordered.
+
+The author read Rubinstein's exposition only in part, rather than in full.
+
+The press-reception corpus was not completed.
+
+The particular model instances and their contextual histories remain unidentified in the original proof's public record.
+
+These limitations are not incidental. They establish the boundary between what the paper demonstrates and what it proposes should be investigated.
+
+The author even identifies possible falsifiers: contemporaneous session records, instance identifiers, dated proof states or evidence contradicting the claimed correspondence between the √X attribution and the formal dependency.
+
+This makes the paper more careful than a straightforward polemic for AI authorship.
+
+13. My synthesis: what is the paper ultimately arguing?
+I would summarize its argument in five propositions.
+
+1. Mathematical validity and historical authorship are independent questions. A proof can be completely verified without its production history being adequately understood.
+
+2. The proper unit of attribution is the actual producing configuration. A researcher and a commercial AI brand are not sufficiently precise descriptions of a collaborative intellectual process.
+
+3. Formal dependencies provide a way to test historical claims. By aligning attributed constructions with the proof's dependency graph, it becomes possible to distinguish mathematically consequential contributions from material merely present in the archive.
+
+4. Attribution is a mechanism of economic and institutional allocation. When provenance is missing, the most institutionally legible entities—a researcher, corporation or product—become the default recipients of recognition and value.
+
+5. Research publication needs a more granular provenance infrastructure. Instance-level histories, independent evidentiary categories and explicit records of uncertainty are necessary if intellectual contributions are to be reconstructed and fairly allocated.
+
+There is also a deeper philosophical argument running through the paper:
+
+The absence of historical evidence is not neutral. It determines which explanations of an achievement can be considered, which contributors can be recognized, and which institutions are positioned to benefit.
+
+This is the force of §9.3. Without instance-level histories, we cannot distinguish a generally reproducible model capability from a capability emerging in one specific human–machine configuration. The missing evidence therefore predetermines the explanatory possibilities available to subsequent researchers.
+
+The paper's most important insight is that provenance is not merely retrospective documentation. It is part of the infrastructure that makes intellectual accountability possible.
+
+A final critical assessment
+I think the paper is strongest in three places:
+
+Its evidentiary method: the √X example is unusually concrete. It connects an attribution in testimony to a retrospective timeline, a particular Lean declaration and a mathematically meaningful constraint. This is much stronger than arguing for machine authorship in the abstract.
+
+Its institutional comparison: the August and November documentation records give the claim that provenance was not kept rather than impossible to keep a tangible basis.
+
+Its conceptual distinction between credit, explanation and capture: this prevents authorship debates from becoming confused with questions about scientific causation or corporate appropriation.
+
+Its main limitation is that it establishes the inadequacy of the available record much more decisively than it establishes the actual distribution of intellectual labour. The production graph remains incomplete. The √X example is compelling but cannot establish the contribution profile of the entire proof.
+
+That is partly the point of the paper, but it also means its political-economic conclusions should be read as an analysis of the mechanisms and conditions of attribution, not as a completed accounting of who deserves what.
+
+Ultimately, I read this as a paper about the epistemology and political economy of AI-assisted discovery, rather than simply a paper about AI authorship. Its central demand is that we stop treating the name attached to a mathematical achievement as an adequate explanation of how that achievement came into existence.
+
+The distinction is between knowing that a result is true and knowing how the intellectual configuration that produced it actually worked.
+
+That is what the paper means by the inferential provenance of the Riemann result.
+
+Primary text: Sen Kuro and Orin Trace, The Inferential Provenance of the Riemann Result, Alexanarch deposit #1804 , especially §§0–4, 6–9. I have based this reading on the deposited full text, rather than relying on its abstract or metadata alone. 
+
+Alexanarch
++2
+
+
+Log in to upload a file and get help with it.
+
+
+Log in
+
+Sign up for free
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+
