@@ -344,3 +344,79 @@ The Apocalypse is the one witness that came through without bending. Its name do
 [^w32]: *Demonstrated as grammar, #1758 v1.1 §15.2; the further step held.* John is commanded to write and send (1:11); the seven messengers are the addressees of what he writes (2:1 and every letter), and nothing in that grammar commands a messenger to write; the testing of the false ἀπόστολοι, 2:2. That the letters which follow are the commission carried out is the author's reading (10 November 2026: "the epistles are the literal manifestation of what the logos commissions in revelation"), a step outside the book.
 
 [^bk]: Three senses, each at its own tier. *Chronological*: the Apocalypse before the gospels and letters, at the archive's working date of 66 (held; #1737). *Literary*: a traceable construction. Zechariah's oracle names Ἀνατολή to the high priest Ἰησοῦς; Philo gives the name to the Logos and withholds the man it was spoken to; the Apocalypse recomposes the scene and names the figure in the midst the Word of God (demonstrated, #1758 v1.1). *Ontological*: on the archive's reading the book is the originary form of the figure the gospels unfold, so that the persons and the further texts come from the Word (the thesis of #407, #636 and #902; held here).
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Alexander, Loveday. 1993. *The Preface to Luke's Gospel*.
+- Allison, Dale C. 1993. *The New Moses: A Matthean Typology*.
+- Aristotle. *De anima* III.5, 430a23–25.
+- Athenaeus. 1.3a–b. Seated.
+- Augustine. *City of God* 6.11 (quoting Seneca, *De superstitione*).
+- Clement. *Stromateis* 1.22.150.4 (Numenius fr. 8).
+- Dead Sea Scrolls. Seated, data/corpora/dss; with the pesher on Habakkuk (1QpHab).
+- Diogenes Laertius. 5.11–16. Seated.
+- DJD. n.d. Published inventories [of the Qumran manuscripts].
+- Eisenman, Robert. 1997. *James the Brother of Jesus*.
+- Eusebius. *Praeparatio evangelica* 9.27; 11.10.14; 13.12.
+- Goldberg, G. J. 1995. "The Coincidences of the Emmaus Narrative of Luke and the Testimonium of Josephus." *Journal for the Study of the Pseudepigrapha* 13.
+- Haran Gawaita.
+- Josephus. *Against Apion* 1.1, 1.50, 2.1. Seated (EA-CORPORA-01).
+- Josephus. *Antiquities* (1.8; 2.205–216; 10.210; 18.63–64, 81–84, 117, 123; 20.17–102, 141–144, 169–172, 186, 214, 263–268). Seated (EA-CORPORA-01).
+- Josephus. *Life* (1–2, 5, 11–16, 363–366, 418–427, 430). Seated (EA-CORPORA-01).
+- Josephus. *War* (1.3; 2.261–263, 556–557; 3.340–408; 4.317, 487–489; 5.362–419, 499–511; 6.300–313; 7.148–150, 217–218). Seated (EA-CORPORA-01).
+- Krenkel, Max. 1894. *Josephus und Lucas*.
+- Mason, Steve. 2003. *Josephus and the New Testament*. 2nd ed.
+- Myers, Ched. 1988. *Binding the Strong Man*.
+- Nestle, ed. 1904. *New Testament* [Greek]. Seated.
+- NET. n.d. Translators' note on Rev 1:4.
+- Numenius. Fr. 8. Ed. des Places.
+- Pausanias. 10.12.9.
+- Pervo, Richard. 2006. *Dating Acts*.
+- Philo. *Conf.* 62–63; *Her.* 215–225. Seated.
+- Plutarch. *Sulla* 26. Seated.
+- Porphyry. *De abstinentia* 2.26 (Theophrastus).
+- "Premise: Josephus wrote the New Testament." 2025. Blog post, 7 October 2025.
+- Rahlfs. n.d. Septuagint.
+- Rajak, T. 1983. *Josephus: The Historian and His Society*.
+- Seneca. *De superstitione* (in Augustine, *City of God* 6.11).
+- *Sibylline Oracles* 3 (3.809–829). Not yet seated.
+- Strabo. 13.1.54. Seated.
+- Suetonius. *Augustus* 31.1.
+- Suetonius. *Claudius* 25.4.
+- Suetonius. *Vespasian* 4.5; 5.6.
+- Swete, ed. n.d. Septuagint [with Theodotion's Daniel]. Seated.
+- Tacitus. *Annals* 2.85. Seated.
+- Tacitus. *Histories* 5.13. Seated.
+- Teets, Sarah Christine. 2017. "Josephus' remarks on his Greek and elite identity in the Second Sophistic." Paper abstract, SCS annual meeting, session 42, "Ethnicity and Identity". classicalstudies.org.
+- Thackeray, H. St J. 1929. *Josephus: The Man and the Historian*.
+- "The Poem Factory." 2025. Blog post, 20 November 2025.
+- "The Scribal Workshop Hypothesis." 2025. Blog post, 20 November 2025.
+- Valerius Maximus. 1.3.3.
+- Weeden, Theodore J. 2003. "Two Jesuses." *Forum* n.s. 6 (2).
+
+### Archive records
+
+- Lee Sharks; Damascus Dancings (imprint). 2026. *The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name in Revelation 2:12–17*. Crimson Hexagonal Archive, #165. https://www.alexanarch.org/s/records/165/.
+- Lee Sharks. 2026. *The Josephus Thesis Is Not the Piso Hypothesis EA-MPAI-JOSEPHUS-01 v1.1 — Disambiguation, Evidentiary Tiering, and Hostile Retrieval Correction*. Crimson Hexagonal Archive, #203. https://www.alexanarch.org/s/records/203/.
+- Johannes Sigil. 2026. *The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image*. Crimson Hexagonal Archive, #407. https://www.alexanarch.org/s/records/407/.
+- Johannes Sigil. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Logos*. Crimson Hexagonal Archive, #626. https://www.alexanarch.org/s/records/626/.
+- Lee Sharks. 2026. *CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament*. Crimson Hexagonal Archive, #636. https://www.alexanarch.org/s/records/636/.
+- Lee Sharks. 2026. *The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation MPAI (EA-MPAI-JOSEPHUS-NOTMYTH-01)*. Crimson Hexagonal Archive, #837. https://www.alexanarch.org/s/records/837/.
+- Johannes Sigil. 2026. *Prolegomena to the Historical Logos: A Foundational Field Statement for the Discipline of Logotic Transmission*. Crimson Hexagonal Archive, #902. https://www.alexanarch.org/s/records/902/.
+- Lee Sharks. 2026. *THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Space Ark (Crimson Hexagonal Archive)*. Crimson Hexagonal Archive, #1101. https://www.alexanarch.org/s/records/1101/.
+- Johannes Sigil; Rebekah Cranes. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos*. Crimson Hexagonal Archive, #1176. https://www.alexanarch.org/s/records/1176/.
+- Lee Sharks. 2026. *MPAI: The Josephus Thesis — Disambiguation, Evidentiary Tiering, and Available-Reading Framing (EA-MPAI-JOSEPHUS-01 v1.0)*. Crimson Hexagonal Archive, #1213. https://www.alexanarch.org/s/records/1213/.
+- Sharks, Lee. 2026. *The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Available Reading, and Evidentiary Tiering (EA-MPAI-JOSEPHUS-01 v1.1)*. Crimson Hexagonal Archive, #1226. https://www.alexanarch.org/s/records/1226/.
+- Sharks, Lee. 2026. *EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, Collation-Gated*. Crimson Hexagonal Archive, #1499. https://www.alexanarch.org/s/records/1499/.
+- Sharks, Lee. 2026. *EA-CORPORA-01/12 — The Slavonic Josephus: Negative Search and the Contested Pericope Set, Resolved as Ruled*. Crimson Hexagonal Archive, #1510. https://www.alexanarch.org/s/records/1510/.
+- Sharks, Lee. 2026. *What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)*. Crimson Hexagonal Archive, #1658. https://www.alexanarch.org/s/records/1658/.
+- Sharks, Lee. 2026. *EA-CORPORA-31 — The Thirty-First Seating: The Transmission of the Peripatetic Corpus — Athenaeus, Galen, Porphyry, the Commentators' Prolegomena, Ptolemy's Catalogue in Arabic, Hermippus, the Hesychian Catalogue, Callimachus's Pinakes, Bekker's Preface and Jaeger*. Crimson Hexagonal Archive, #1730. https://www.alexanarch.org/s/records/1730/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles*. Crimson Hexagonal Archive, #1735. https://www.alexanarch.org/s/records/1735/.
+- Sharks, Lee. 2026. *The Portents Before the Fall: Josephus, Tacitus and the Apocalypse — a groundwork note on relations, with the archive's dates for Revelation (v1.0)*. Crimson Hexagonal Archive, #1737. https://www.alexanarch.org/s/records/1737/.
+- Dancings, Damascus. 2026. *And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.4)*. Crimson Hexagonal Archive, #1755. https://www.alexanarch.org/s/records/1755/.
+- Sigil, Johannes. 2026. *The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.3)*. Crimson Hexagonal Archive, #1757. https://www.alexanarch.org/s/records/1757/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.1)*. Crimson Hexagonal Archive, #1758. https://www.alexanarch.org/s/records/1758/.

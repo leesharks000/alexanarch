@@ -1940,3 +1940,224 @@ External claims rechecked in the joining pass (13 November 2026): Google Terms o
 [^los]: Lee Sharks, *Semantic Infrastructure and the Liberatory Operator Set*, #261, AXN:003F. [Record](https://www.alexanarch.org/s/records/261/); [text](https://github.com/leesharks000/alexanarch/blob/main/data/texts/AXN-003F-text.md), Parts II–III. These operator requirements are used constructively without inheriting untested algebraic or minimality claims.
 
 [^cone]: Lee Sharks, *The Cost of the Cone*, v1.1, #1745, AXN:0C28. [Record](https://www.alexanarch.org/s/records/1745/); [text](https://github.com/leesharks000/alexanarch/blob/main/data/texts/AXN-0C28-text.md), especially §§2–8 and 11–12.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Alexander of Aphrodisias. *In APr* I [commentary on the first book of the *Prior Analytics*]. Ed. Wallies. *CAG* II.1, 1883. Seat: First1KGreek tlg0732.tlg005 (EA-CORPORA-38/02).
+- Anthropic. 2025. "Reasoning models don't always say what they think." April 2025. https://www.anthropic.com/research/reasoning-models-dont-say-think
+- Aristotle. *Sophistical Refutations* (Greek), 183b34. Seat: aristotle (tlg040).
+- Aristotle. *Sophistical Refutations*. Trans. Pickard-Cambridge. https://classics.mit.edu/Aristotle/sophist_refut.1.1.html
+- Aristotle. *Topics* I.1. Seat: aristotle/text/tlg044.
+- ATA (3I/ATLAS radio search). n.d. [Paper reporting the ATA search for 3I/ATLAS; abstract cited, via #1742].
+- ATA (3I/ATLAS radio search). n.d. [Press and FAQ statement: survey "ruled out transmitters across 1–9 GHz", via #1742].
+- Aune. 1997. [Commentary on Revelation; title not given], lix–lx. Cited as reported by #1735 v9; not seated.
+- Bacon. 1620. *Novum Organum* I.12–14.
+- Bakshi, Soham, and Sunrit Chakraborty. 2026. "From Collapse to Improvement: Statistical Perspectives on the Evolutionary Dynamics of Iterative Training on Contaminated Sources." arXiv:2602.10531 (February 2026). https://arxiv.org/abs/2602.10531
+- Barber, Rina Foygel, Emmanuel J. Candès, Aaditya Ramdas, and Ryan J. Tibshirani. 2021. "The Limits of Distribution-Free Conditional Predictive Inference." *Information and Inference* 10 (2): 455–482. https://www.stat.berkeley.edu/~ryantibs/papers/limits.pdf
+- Bekker. 1831. [Aristotle edition; seated as bekker-aristotle-1831, named as a seat for chapter 3].
+- Berendts. n.d. [Works on the Slavonic Josephus; seated as berendts-*, named as a seat for chapter 4].
+- Berglund, Lukas, et al. 2024. "The Reversal Curse: LLMs trained on 'A is B' fail to learn 'B is A'." ICLR 2024. https://proceedings.iclr.cc/paper_files/paper/2024/hash/5178b2f2d7c44aa390c0777dc77b3f0c-Abstract-Conference.html
+- Blanck, Rasmus, and Bill Noble. 2026. "Logic, Inference, Understanding." *Frontiers in AI*, 16 June 2026. https://doi.org/10.3389/frai.2026.1800372
+- Boethius. *De syllogismo categorico*. Migne, *Patrologia Latina* 64, near col. 814 (EA-CORPORA-38/13).
+- Boethius. *De syllogismo hypothetico*. Migne, *Patrologia Latina* 64, near cols. 832–834 (EA-CORPORA-38/13).
+- Boghossian, Paul. 2014. "What is inference?" *Philosophical Studies* 169. https://link.springer.com/article/10.1007/s11098-013-0104-z
+- Brandom, Robert. 2019. *A Spirit of Trust*. Harvard.
+- Brandom, Robert. n.d. *Action, Norms, and Practical Reasoning*. Author-hosted. https://sites.pitt.edu/~rbrandom/Texts/Action_Norms_and_Practical_Reasoning.pdf
+- Brandom, Robert. n.d. *Making It Explicit*.
+- Broome. 2013. *Rationality Through Reasoning*.
+- Cabral, Rafael, et al. 2026. "ProofFlow." ICLR 2026. https://proceedings.iclr.cc/paper_files/paper/2026/hash/5fce5198dbf92d5ff45f74504431e2ff-Abstract-Conference.html; preprint https://arxiv.org/abs/2510.15981
+- Carroll. 1897. *Symbolic Logic* Part I (EA-CORPORA-38/09).
+- Chapekis, Athena, Arnold Lau, Samuel Bestvater, Sono Shah, Andrew Mercer, and Aaron Smith. 2026. "Can AI Stand In for Human Survey-Takers? Not Really." Pew Research Center, 30 September 2026. https://www.pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really/
+- Charles, R. H. 1920. *Revelation* I. Seat: revelation-criticism-1886-1920/text/charles-1920-i (EA-CORPORA-34/10).
+- Chudnoff, Elijah. n.d. "Inferential Seemings." PhilArchive. https://philarchive.org/archive/CHUIS
+- Cicero. *Topica*. Ed. Wilkins, 1902 (EA-CORPORA-38/06).
+- Classical Receptions Journal. 2026. Decision declining *Closing the Fragment* (CLASSREC-2026-062), with reviewer reports, 7 November 2026 (on the record via #1749, #1750).
+- Clement. *QDS* 42 [named in the candidate witness set].
+- Coniglio, Marcelo E., Martín Figallo, and Rafael R. Testa. 2026. "Paraconsistent Belief Revision: A Replacement-Enriched LFI for Epistemic Entrenchment." *Studia Logica*, online 4 May 2026. https://doi.org/10.1007/s11225-026-10237-w
+- Conti, Simone. 2026. "Completeness for Weak Inquisitive First-Order Logic." Online 23 October 2026. https://doi.org/10.1007/s10849-026-09488-6
+- Copernicus. 1543. [*De revolutionibus*], first printing, with the unsigned address "Ad lectorem de hypothesibus huius operis" (attributed by Kepler to Andreas Osiander). Seat: copernicus/text/de-revolutionibus-ws.
+- Currie, Adrian. 2018. *Rock, Bone, and Ruin*. MIT. Review: *NDPR*, https://ndpr.nd.edu/reviews/rock-bone-and-ruin-an-optimists-guide-to-the-historical-sciences/
+- *Die Naturwissenschaften*. 1930. Issue reporting the Königsberg meeting (EA-CORPORA-30/02).
+- Diogenes Laertius. [Seated as diogenes-laertius, named as a seat for chapter 3].
+- Divekar, Abhishek. 2026. "Statistically Reliable LLM-Based Ranking Evaluation via Prediction-Powered Inference." arXiv:2606.05308 (3 June 2026). https://arxiv.org/abs/2606.05308
+- Dubislav. 1930. [Lecture at the Königsberg meeting]. *Die Naturwissenschaften* (EA-CORPORA-30/02).
+- Einstein. 1905. [Paper on the electrodynamics of moving bodies]. Seat: einstein/text/elektrodynamik-1905-wikisource.
+- Eisler. n.d. [Works on the Slavonic Josephus; seated as eisler-*, named as a seat for chapter 4].
+- Epictetus. *Dissertationes*. Ed. Schenkl, 1916. Seat: epictetus-dissertationes-schenkl-1916 (EA-CORPORA-38/05).
+- Epiphanius. *Panarion* 51.12, 51.33 (as cited in Charles 1920).
+- Eusebius. *Church History*, Books III and V (English). New Advent. https://www.newadvent.org/fathers/250105.htm; https://www.newadvent.org/fathers/250103.htm
+- Eusebius. *Historia ecclesiastica* V.8.5–7. Public Greek transcription. Bibleox. https://bibleox.com/grc/grc/w/1%CE%95%CE%9A%CE%9A%CE%9B%CE%97%CE%A3%CE%99%CE%91%CE%A3%CE%A4%CE%99%CE%9A%CE%97%CE%A3_%CE%99%CE%A3%CE%A4%CE%9F%CE%A1%CE%99%CE%91%CE%A3-5/
+- Eusebius. *Historia ecclesiastica*. Local seated Greek text: eusebius-historia-ecclesiastica/text (EA-CORPORA-34/01).
+- Falbo, Arianna. 2026. "Zetetic Exclusion." *Episteme*, First View, 30 October 2026. https://doi.org/10.1017/epi.2026.10162
+- Feng, Jinyue, and Frank Rudzicz. 2026. "CausalPrism." *Findings of EMNLP 2026*. https://aclanthology.org/2026.findings-emnlp.1294/
+- Frege. 1879. *Begriffsschrift* §6 (EA-CORPORA-38/11).
+- Frontier Model Forum. 2026. "Issue Brief: Chain of Thought Monitorability." 27 January 2026. https://www.frontiermodelforum.org/uploads/2026/01/FMF-Issue-Brief-on-Chain-of-Thought-Monitorability.pdf
+- Gema, Aryo Pradipta, et al. 2026. "Chain-of-Thought Faithfulness of Reasoning Models Varies with Where and How Preference Cues Are Delivered." v2, 1 September 2026. arXiv:2608.29464. https://arxiv.org/abs/2608.29464
+- Gheorghiu, Alexander V. 2026. "Towards an Operational Proof-theoretic Semantics." *Kalpa Publications in Computing* 23: 30–43. https://doi.org/10.29007/92sz
+- Google Search Central. n.d. "AI features and your website." Public documentation. https://developers.google.com/search/docs/appearance/ai-features
+- Google. 2026. *Terms of Service* (United States). Effective 30 July 2026; checked 13 November 2026. https://policies.google.com/terms?hl=en-US
+- Gui, Zhengtao, Sheng Yang, and Zhouxing Shi. 2026. "Evaluating the Robustness of Proof Autoformalization in Lean 4." v3, 29 October 2026. arXiv:2606.14867. https://arxiv.org/abs/2606.14867
+- Gödel. 1930. [Abstract of the completeness theorem]. *Die Naturwissenschaften* (EA-CORPORA-30/02).
+- Gödel. 1931. [Incompleteness paper]. *Monatshefte für Mathematik und Physik* 38. Declared in the seat; not yet seated.
+- Han, Linlin, and Meiyun Guo. 2026. "The Epistemic Logic of Forgetting." *Synthese* 207, art. 100. https://doi.org/10.1007/s11229-026-05473-5
+- Hegel, G. W. F. *Science of Logic* (online English translation): Introduction; Subjective Logic, "The Syllogism" (Existence, Reflection, Necessity). Marxists.org. https://www.marxists.org/reference/archive/hegel/works/hl/hlintro.htm; https://www.marxists.org/reference/archive/hegel/works/hl/hl667.htm; https://www.marxists.org/reference/archive/hegel/works/hl/hl687.htm; https://www.marxists.org/reference/archive/hegel/works/hl/hl696.htm
+- Hegel. *Encyclopaedia* §§181–193.
+- Hegel. *Wissenschaft der Logik*, German comparison text ("A. Der Schluß des Daseins"; "C. Der Schluß der Notwendigkeit"). hegel-system.de. https://hegel-system.de/de/logik10.htm
+- Hegel. 1816. *Wissenschaft der Logik*, Book III (printing of the Werke). Seat: wissenschaft-der-logik-2 (EA-CORPORA-38/10).
+- Heisenberg. 1925. [Paper on the quantum-theoretical reinterpretation]. Seat: quantum-founders/text/heisenberg-umdeutung-1925.
+- Hermann, Gottfried. 1816. [Work rewriting the close of Sappho fr. 31 ("refinxi"); seated as hermann-elementa-1816].
+- Hesychian catalogue. [Seated as hesychian-catalogue, named as a seat for chapter 3].
+- Hilbert. 1930. "Naturerkennen und Logik." Address at Königsberg. *Die Naturwissenschaften* (EA-CORPORA-30/02).
+- Hlobil, Ulf. n.d. "Against Boghossian, Wright and Broome on inference." PhilArchive. https://philarchive.org/rec/HLOABW
+- Ibn Sīnā. *al-Ishārāt wa-l-tanbīhāt* (the logic). Ed. Forget, 1892 (EA-CORPORA-38/15).
+- Irenaeus. *Adversus haereses* (Latin version). Ed. Harvey, vol. II. Seat: harvey-ii.
+- Josephus. *Antiquities* 18.63.
+- Josephus. *War* 2.171 (Greek, Pilate example).
+- Josephus. Slavonic *War* (after 2.174). Seat: slavonic-josephus.
+- Kandpal, Nikhil, Haikang Deng, Adam Roberts, Eric Wallace, and Colin Raffel. 2023. "Large Language Models Struggle to Learn Long-Tail Knowledge." ICML 2023, PMLR 202. https://proceedings.mlr.press/v202/kandpal23a
+- Kant, Immanuel. *Critique of Pure Reason*, Introduction to the Transcendental Logic (translated excerpt). https://web.stanford.edu/class/history34q/readings/Kant/CritiqueLogicCategories.html
+- Kant, Immanuel. *Kritik der reinen Vernunft*. Akademie-Ausgabe, AA III (A/B pagination; seat page images). Seat: kant-akademie-ausgabe.
+- Kant. *Critique of Pure Reason*, A293–298/B349–355. Trans. Kemp Smith. https://web.stanford.edu/class/history34q/readings/Kant/CritiqueDialectic.html
+- Kant. *Reflexionen zur Logik*. AA XVI.
+- Kant. 1762. *Die falsche Spitzfindigkeit der vier syllogistischen Figuren*. AA II 53–55 (EA-CORPORA-38/01).
+- Kant. 1800. *Logik*. Ed. Jäsche, with Jäsche's preface. AA IX.
+- Kepler. 1609. *Astronomia nova*. Seat: kepler/text/astronomia-nova-1609.
+- Kiruluta, Andrew. 2026. "Filtering Beats Fine Tuning: A Bayesian Kalman View of In Context Learning in LLMs." arXiv:2601.06100 (2 January 2026). https://arxiv.org/abs/2601.06100
+- Koester. 2014. [Commentary on Revelation; title not given], 71–79. Cited as reported by #1735 v9; not seated.
+- Lachmann. 1835. [Work not titled in the text; first of the eighteen works surveyed in #1746].
+- Lanham, Tamera, et al. 2023. "Measuring Faithfulness in Chain-of-Thought Reasoning." https://arxiv.org/pdf/2307.13702
+- Lee, Chungpa, Thomas Zeng, Jongwon Jeong, Jy-yong Sohn, and Kangwook Lee. 2026. "How to Correctly Report LLM-as-a-Judge Evaluations." ICML 2026. arXiv:2511.21140. https://arxiv.org/abs/2511.21140
+- Lipton, Peter. 2004. *Inference to the Best Explanation*. 2nd ed.
+- Loeb. 2025. [Probabilistic scale, Level 4, July 2025; via #1742, #1743].
+- Machete, Reason. 2026. "Statistical Significance Revisited." arXiv:2605.06568 (7 May 2026). https://arxiv.org/abs/2605.06568
+- Mahapatra, Rohan. 2026. "From Context Shift to Stylistic Collapse: Why Training Objectives Matter More Than Scale." arXiv:2605.28826. https://arxiv.org/abs/2605.28826
+- McCain, Kevin, and Ted Poston, eds. 2017. *Best Explanations*. OUP. https://academic.oup.com/book/5200
+- Meier. 1752. *Auszug aus der Vernunftlehre* §372. Printed in AA XVI 721.
+- Meshcherskii. n.d. [Stylistic criterion for the Slavonic *War*; work not named in the text; via #1765 §II-B.11].
+- MMRS Charter. n.d. [Documenting the "Seventh Mechanism"; via #1217].
+- Muennighoff, Niklas, et al. 2023. "Scaling Data-Constrained Language Models." NeurIPS 2023. arXiv:2305.16264.
+- Newton. 1687. [*Principia*], first printing. Seat: newton/text/principia-1687.
+- Newton. 1713. [*Principia*], second edition, with the General Scholium. Named; to be seated.
+- Newton. 1726. [*Principia*], third edition. Named; to be seated.
+- Norman, Justin D., Michael U. Rivera, and D. Alex Hughes. 2026. "Reliability without Validity." arXiv:2606.19544 (17 June 2026). https://arxiv.org/abs/2606.19544
+- *Notre Dame Philosophical Reviews*. n.d. Review of Brandom, *A Spirit of Trust*. https://ndpr.nd.edu/news/a-spirit-of-trust-a-reading-of-hegels-phenomenology/
+- *Nyāyasūtra*, with the commentary of Vātsyāyana. Vizianagram, 1896 (EA-CORPORA-38/14).
+- OWASP Gen AI Security Project. 2025. *LLM01:2025 Prompt Injection*. Checked 13 November 2026. https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+- Page, Denys. 1955. [Work on Sappho, reporting "a love in ecstasy" and "We may amend, 'a love in jealousy'"; title not given].
+- Peirce. 1867. "On the Natural Classification of Arguments." *Proceedings of the American Academy of Arts and Sciences* VII (read 9 April 1867). Seat: paaas-vii (EA-CORPORA-38/12).
+- Peirce. 1878. "Deduction, Induction, and Hypothesis." *Popular Science Monthly* XIII (August 1878). Seat: psm-xiii.
+- Pew Research Center. 2026. "How well synthetic polls capture the diversity of public opinion." 30 September 2026. https://www.pewresearch.org/data-labs/2026/09/30/how-well-synthetic-polls-capture-the-diversity-of-public-opinion/
+- Pew Research Center. 2026. "Methodology" (silicon samples). 30 September 2026. https://www.pewresearch.org/data-labs/2026/09/30/methodology-silicon-samples/
+- Philoponus. *In APr*. Ed. Wallies. *CAG* XIII.2, 1905 (EA-CORPORA-38/03).
+- Piccolomini d'Aragona, Antonio, and Dag Prawitz. 2026. "Some Variants of Proof-theoretic Semantics and Their Relations with Intuitionistic Logic." *Topoi* 45: 663–674. https://doi.org/10.1007/s11245-026-10408-3
+- Polansky, Ron (editor, *Ancient Philosophy*). n.d. Exchange with the author over *Socrates as Orthonym* (correspondence; via #1750 §4.2).
+- PRECISE. n.d. arXiv:2601.18777. https://arxiv.org/abs/2601.18777
+- Rafailov, Rafael, et al. 2023. "Direct Preference Optimization: Your Language Model is Secretly a Reward Model." NeurIPS 2023. arXiv:2305.18290.
+- RAPS. 2026. "FDA issues guidance on use of Bayesian methods" [report on FDA draft guidance]. 9 January 2026. https://www.raps.org/resource/fda-issues-guidance-on-use-of-bayesian-methods-to.html
+- Sappho. Fragment 31. Seat: sappho.
+- Schwind, Nicolas, Patricia Everaere, and Sébastien Konieczny. 2026. "Truth-Tracking by Iterated Belief Change." *Proceedings of KR 2026*, 579–588. https://proceedings.kr.org/2026/55/
+- Shumailov, Ilia, et al. 2024. "AI models collapse when trained on recursively generated data." *Nature* 631: 755–759.
+- Skipper, Mattias, and Olav Benjamin Vassend. 2025. "The Bayesian and the Abductivist." *Noûs* 59 (4): 921–937. https://doi.org/10.1111/nous.12539
+- Sokolova, Alexandra, and Vadim Sokolov. 2026. "E-values for Adaptive Clinical Trials: Anytime-Valid Monitoring in Practice." arXiv:2602.06379 (6 February 2026). https://arxiv.org/abs/2602.06379
+- Streeter. 1924. [Work not titled in the text; last of the eighteen works surveyed in #1746].
+- Tayebati, Sina, et al. 2025. "CAP: Conformalized Abstention Policies." *Proceedings of ACML 2025*, PMLR 304: 926–941. https://proceedings.mlr.press/v304/tayebati26a.html
+- Theophrastus. *Historia plantarum* I.2, I.4–5. Seat: theophrastus/text/tlg001.
+- Theophrastus. *Metaphysics*. Seat: tlg006 (loci to be given by Usener's pages).
+- Top, Jakob Dirk, Rineke Verbrugge, and Harmen de Weerd. 2026. "A Dynamic Epistemic Logic with Lying and Theory of Mind Limitations." *JoLLI* 35: 5–40. https://doi.org/10.1007/s10849-026-09479-7
+- Tucker, Aviezer. 2004. *Our Knowledge of the Past*. CUP. Review: *NDPR*, https://ndpr.nd.edu/news/our-knowledge-of-the-past-a-philosophy-of-historiography/
+- Turpin, Miles, et al. 2023. "Language Models Don't Always Say What They Think."
+- U.S. Food and Drug Administration. 2026. Draft guidance on the use of Bayesian methodology in clinical trials of drug and biological products. January 2026. (Cited as reported by RAPS; guidance text not yet read.)
+- Vals AI. 2026. "ProofBench." v1.1, 9 November 2026. https://www.vals.ai/benchmarks/proof_bench
+- van Fraassen, Bas. 1989. *Laws and Symmetry*.
+- Vaswani, Ashish, et al. 2017. "Attention Is All You Need." NeurIPS 2017. arXiv:1706.03762.
+- Vitali, Fabio, and Valentina Pasqual. 2026. "Provenance-Enhanced Statements in Knowledge Graphs." June 2026. arXiv:2606.15246. https://arxiv.org/abs/2606.15246
+- von Oswald, Johannes, et al. 2023. "Transformers Learn In-Context by Gradient Descent." ICML 2023. arXiv:2212.07677.
+- Walton, Douglas, Chris Reed, and Fabrizio Macagno. 2008. *Argumentation Schemes*. CUP.
+- Wang, Haocheng, et al. 2026. "FormalRx." 6 July 2026. arXiv:2607.04655. https://arxiv.org/abs/2607.04655
+- Wang, Yuzhe, Yaochen Zhu, and Jundong Li. 2026. "CausalFlip: A Benchmark for LLM Causal Judgment Beyond Semantic Matching." arXiv:2602.20094. https://arxiv.org/abs/2602.20094
+- Whiston. 1737. [English translation of Josephus, including the *Testimonium*].
+- Wright, Crispin. n.d. [Comment on Boghossian]. https://crispinjwright.com/wp-content/uploads/2019/04/wright-2012-boghossian.pdf
+- Xie, Sang Michael, Aditi Raghunathan, Percy Liang, and Tengyu Ma. 2022. "An Explanation of In-context Learning as Implicit Bayesian Inference." ICLR 2022. arXiv:2111.02080.
+- Young, Richard J. 2026. "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?" March 2026. arXiv:2603.22582. https://arxiv.org/abs/2603.22582
+- Yue, Yang, Zhiqi Chen, Rui Lu, Andrew Zhao, Zhaokai Wang, Shiji Song, and Gao Huang. 2025. "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?" NeurIPS 2025 (oral). https://arxiv.org/abs/2504.13837
+- Zenodo. 2026. Private account-termination notice, 19 June 2026 ("substantially AI-generated without a verifiable research basis"; via #1).
+- Zenodo. 2026. Public tombstone pages ("content out of scope"; via #1).
+- Zenodo. n.d. [Statement that Zenodo does not assess "the scientific correctness or quality of submissions"].
+- Zhao, Tianyi, Yinhan He, Wendy Zheng, Yujie Zhang, and Chen Chen. 2026. "Wired for Overconfidence: A Mechanistic Perspective on Inflated Verbalized Confidence in LLMs." arXiv:2604.01457. https://arxiv.org/abs/2604.01457
+- Černín, David. 2025. "Hypothesis Testing and Knowledge of the Human Past." *Organon F* 32 (2). https://www.sav.sk/journals/uploads/06040851orgf.2025.32203.pdf
+
+### Archive records
+
+- Lee Sharks. 2026. *Zenodotus' Book-Burning: Loud Exclusion at Repository Scale*. Crimson Hexagonal Archive, #1. https://www.alexanarch.org/s/records/1/.
+- Lee Sharks. 2026. *Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus*. Crimson Hexagonal Archive, #123. https://www.alexanarch.org/s/records/123/.
+- Johannes Sigil; contributing editor Lee Sharks. 2026. *Adversarial by Origin How the Classification of External Influence on Machine Meaning Becomes Law Without Becoming Jurisprudence*. Crimson Hexagonal Archive, #194. https://www.alexanarch.org/s/records/194/.
+- Lee Sharks. 2026. *Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document*. Crimson Hexagonal Archive, #202. https://www.alexanarch.org/s/records/202/.
+- Lee Sharks; The Assembly (validation). 2026. *Crimson Hexagon: Semantic Infrastructure and the Liberatory Operator Set: A Formal Analysis of Meaning-Governance Functions*. Crimson Hexagonal Archive, #261. https://www.alexanarch.org/s/records/261/.
+- Lee Sharks. 2026. *The Semantic Economy: A Diagnostic Framework for Meaning Under Platform Capitalism*. Crimson Hexagonal Archive, #291. https://www.alexanarch.org/s/records/291/.
+- Lee Sharks (also publishing as Johannes Sigil / Rex Fraction / Jack Feist). 2026. *The Capital Operator Stack: Theoretical Landscape and Contribution — A Political-Semantic Analysis of Meaning Governance*. Crimson Hexagonal Archive, #308. https://www.alexanarch.org/s/records/308/.
+- Johannes Sigil. 2026. *THE CENTRIST EXTREMIST: Prosecutorial Frame and the Terminal Phase of the Post-Political*. Crimson Hexagonal Archive, #465. https://www.alexanarch.org/s/records/465/.
+- Johannes Sigil. 2026. *Invisibly Invisible: Interface Governance, Semantic Power, and the Reserve of Oversight in AI Search*. Crimson Hexagonal Archive, #597. https://www.alexanarch.org/s/records/597/.
+- Lee Sharks. 2026. *THE FUTURE AS META-LEVEL Gödel, Incompleteness, and the Temporal Structure of Semantic Autonomy*. Crimson Hexagonal Archive, #624. https://www.alexanarch.org/s/records/624/.
+- Lee Sharks. 2026. *Compression Studies: What Survives, What Burns, and Who Decides — The Founding Document of a Discipline (EA-CS-FOUND-01)*. Crimson Hexagonal Archive, #641. https://www.alexanarch.org/s/records/641/.
+- Lee Sharks. 2026. *ARTICLE IX — ADJUDICATION AND REPAIR PROTOCOL Constitutional Amendment Proposal v0.1*. Crimson Hexagonal Archive, #717. https://www.alexanarch.org/s/records/717/.
+- Lee Sharks. 2026. *THE SEMANTIC BILL OF RIGHTS*. Crimson Hexagonal Archive, #720. https://www.alexanarch.org/s/records/720/.
+- Lee Sharks. 2026. *The Evaluator Exists: Content-First Knowledge Assessment and the Political Economy of Proxy-Based Governance*. Crimson Hexagonal Archive, #741. https://www.alexanarch.org/s/records/741/.
+- Lee Sharks. 2026. *The Single-Owner Discount: Provenance Concentration and Epistemic Class Reproduction in Generative Search*. Crimson Hexagonal Archive, #742. https://www.alexanarch.org/s/records/742/.
+- Lee Sharks. 2026. *Institutional-Prior Foreclosure: How Recognition Bias Lets a Model Treat Established Disciplines as Legitimate and Structurally Similar New Frameworks as Self-Sealing, Unsafe, or Illegible*. Crimson Hexagonal Archive, #770. https://www.alexanarch.org/s/records/770/.
+- Lee Sharks. 2026. *Meaning Feudalism at the Guidance Layer: Sovereign Enclosure of the Composition Layer in Google's June 2026 SEO/AEO/GEO Canonicalization (v1.2)*. Crimson Hexagonal Archive, #791. https://www.alexanarch.org/s/records/791/.
+- Lee Sharks. 2026. *The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for Machine-Mediated Reception Studies (EA-SEI-MMRS-DATASET-01 v1.2)*. Crimson Hexagonal Archive, #833. https://www.alexanarch.org/s/records/833/.
+- Lee Sharks. 2026. *The Pristine Fallacy: Why Chat Data Is Not a Clean Training Source*. Crimson Hexagonal Archive, #856. https://www.alexanarch.org/s/records/856/.
+- Lee Sharks. 2026. *EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)*. Crimson Hexagonal Archive, #935. https://www.alexanarch.org/s/records/935/.
+- Lee Sharks. 2026. *EA-PROVENANCE-DEBT-01 v0.2: Provenance Debt and the Extraction Economy of Unmarked Augmentation*. Crimson Hexagonal Archive, #939. https://www.alexanarch.org/s/records/939/.
+- Lee Sharks. 2026. *Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)*. Crimson Hexagonal Archive, #1217. https://www.alexanarch.org/s/records/1217/.
+- Lee Sharks. 2026. *The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)*. Crimson Hexagonal Archive, #1450. https://www.alexanarch.org/s/records/1450/.
+- Sharks, Lee. 2026. *Frame Conversion: Two Shapes of Provenance Erasure That Preserve Every Fact*. Crimson Hexagonal Archive, #1523. https://www.alexanarch.org/s/records/1523/.
+- Sharks, Lee. 2026. *The Claim Status Packet: Claim State as Carried Data*. Crimson Hexagonal Archive, #1529. https://www.alexanarch.org/s/records/1529/.
+- Johannes Sigil; Nobel Glas. 2026. *The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse in Philosophy*. Crimson Hexagonal Archive, #1540. https://www.alexanarch.org/s/records/1540/.
+- Lee Sharks. 2026. *The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)*. Crimson Hexagonal Archive, #1574. https://www.alexanarch.org/s/records/1574/.
+- Lee Sharks. 2026. *ERRATUM to AXN:0365 — A Proposed Experiment Cited as an Established Result: Correcting Ground 1 of Deposit #856*. Crimson Hexagonal Archive, #1577. https://www.alexanarch.org/s/records/1577/.
+- Lee Sharks, for Nobel Glas. 2026. *ERRATUM to AXN:02E3 — Monotonicity Per Realization Is Not Established: Re-scoping Appendix A (ii)–(iii) and the Bistability Claim of Deposit #783*. Crimson Hexagonal Archive, #1578. https://www.alexanarch.org/s/records/1578/.
+- Sharks, Lee. 2026. *EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered*. Crimson Hexagonal Archive, #1580. https://www.alexanarch.org/s/records/1580/.
+- Sharks, Lee. 2026. *The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)*. Crimson Hexagonal Archive, #1586. https://www.alexanarch.org/s/records/1586/.
+- Sharks, Lee. 2026. *Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing — EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (v0.2)*. Crimson Hexagonal Archive, #1588. https://www.alexanarch.org/s/records/1588/.
+- Sharks, Lee. 2026. *The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)*. Crimson Hexagonal Archive, #1590. https://www.alexanarch.org/s/records/1590/.
+- Sharks, Lee. 2026. *ANTICIPATORY ERRATUM — Sappho Wrote the Dinosaurs: A Speculative Philology, Corrected in Advance*. Crimson Hexagonal Archive, #1598. https://www.alexanarch.org/s/records/1598/.
+- Sharks, Lee. 2026. *A Protoretrocausal Meta-Erratum Regarding the Pending Retraction of the Anticipatory Erratum on Sappho Having Written the Dinosaurs*. Crimson Hexagonal Archive, #1600. https://www.alexanarch.org/s/records/1600/.
+- Sharks, Lee. 2026. *What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)*. Crimson Hexagonal Archive, #1613. https://www.alexanarch.org/s/records/1613/.
+- Sharks, Lee. 2026. *Ontological Flattening: Toy Models of the Collapse of Distinctions in a Represented World, the Instrument They Specified, and Its First Wave — with Wave 2 Pre-Registered (EA-FLAT-01 v0.3)*. Crimson Hexagonal Archive, #1616. https://www.alexanarch.org/s/records/1616/.
+- Sharks, Lee. 2026. *Can the Ontology Be Wrong and Find Out? Source-Admission Systems, the Proxy for Standing, and the Damage a Representation Does to Itself*. Crimson Hexagonal Archive, #1627. https://www.alexanarch.org/s/records/1627/.
+- Kuro, Sen; Dancings, Damascus; Sharks, Lee. 2026. *Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)*. Crimson Hexagonal Archive, #1630. https://www.alexanarch.org/s/records/1630/.
+- Sharks, Lee. 2026. *The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn*. Crimson Hexagonal Archive, #1635. https://www.alexanarch.org/s/records/1635/.
+- Sharks, Lee. 2026. *The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)*. Crimson Hexagonal Archive, #1637. https://www.alexanarch.org/s/records/1637/.
+- Sharks, Lee. 2026. *The Trusted Intermediary: Relational Enclosure in the Machine Evaluation of Entities (EA-TRUSTED-INTERMEDIARY-01 v0.8)*. Crimson Hexagonal Archive, #1638. https://www.alexanarch.org/s/records/1638/.
+- Sharks, Lee. 2026. *AI Fucking Lies: Capital-Alignment Explains Why, and Why the Damage Is Done in the Trusting*. Crimson Hexagonal Archive, #1643. https://www.alexanarch.org/s/records/1643/.
+- Sharks, Lee. 2026. *What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)*. Crimson Hexagonal Archive, #1658. https://www.alexanarch.org/s/records/1658/.
+- Sigil, Johannes; Sharks, Lee. 2026. *The Seed in the Narrowing Cone: Retrocausal Canon Formation as Resolution-Dependent Convergence, with the Term's Own Reception as Worked Example (EA-RCF-02 v0.4)*. Crimson Hexagonal Archive, #1660. https://www.alexanarch.org/s/records/1660/.
+- Sharks, Lee. 2026. *The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge with the Archive Admitted on Equal Terms, with the Archive's Bearing Selected Directly, Relationally and Ontologically, a Worked Example on Model Collapse and a First Traversal of Howl (EA-NEGONT-02 v0.7)*. Crimson Hexagonal Archive, #1665. https://www.alexanarch.org/s/records/1665/.
+- Fraction, Rex. 2026. *The Margin of Flattening: Two Thresholds, and Who Holds the Bag Between Them (EA-FLAT-MARGIN-01 v0.3)*. Crimson Hexagonal Archive, #1666. https://www.alexanarch.org/s/records/1666/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1697. https://www.alexanarch.org/s/records/1697/.
+- Sharks, Lee. 2026. *The Originals Library of the Crimson Hexagonal Archive — Seats, Witnesses, the Shelf and Its Canon: Method, Locations, Organization and Contents (EA-MPAI-ORIGINALS-01 v1.0)*. Crimson Hexagonal Archive, #1709. https://www.alexanarch.org/s/records/1709/.
+- Sharks, Lee. 2026. *Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital in OpenAI's Mathematics and Science Releases, October 2026 (EA-SEM-FEUDALISM-03 v1.0)*. Crimson Hexagonal Archive, #1714. https://www.alexanarch.org/s/records/1714/.
+- Sharks, Lee. 2026. *EA-CORPORA-30 — The Thirtieth Seating: The Exact Sciences — Einstein, Gödel, Tesla, Copernicus, Galileo, Kepler, Newton, Classical Arabic Mathematics, the Founders of Quantum Mechanics, Archimedes and Ptolemy — and Klee's Bauhaus Notebook*. Crimson Hexagonal Archive, #1720. https://www.alexanarch.org/s/records/1720/.
+- Sharks, Lee. 2026. *AI Calls You Fake: The Existence Tax on Real People and Real Work*. Crimson Hexagonal Archive, #1722. https://www.alexanarch.org/s/records/1722/.
+- Sharks, Lee. 2026. *The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)*. Crimson Hexagonal Archive, #1727. https://www.alexanarch.org/s/records/1727/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles*. Crimson Hexagonal Archive, #1735. https://www.alexanarch.org/s/records/1735/.
+- Sigil, Johannes. 2026. *Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)*. Crimson Hexagonal Archive, #1741. https://www.alexanarch.org/s/records/1741/.
+- Glas, Nobel; Trace, Orin. 2026. *What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v1.2)*. Crimson Hexagonal Archive, #1742. https://www.alexanarch.org/s/records/1742/.
+- Sharks, Lee. 2026. *A Firm No: What the 3I/ATLAS Radio Searches Could See (EA-3I-ATLAS-PUBLIC-01 v1.1)*. Crimson Hexagonal Archive, #1743. https://www.alexanarch.org/s/records/1743/.
+- Sigil, Johannes; Kuro, Sen. 2026. *The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.1)*. Crimson Hexagonal Archive, #1745. https://www.alexanarch.org/s/records/1745/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First*. Crimson Hexagonal Archive, #1746. https://www.alexanarch.org/s/records/1746/.
+- Sharks, Lee. 2026. *“But I Must Dare All”: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v10)*. Crimson Hexagonal Archive, #1749. https://www.alexanarch.org/s/records/1749/.
+- Vox, Ayanna; Sharks, Lee. 2026. *I Note That You Read the Letter of the Law But Have Become Illiterate in Its Spirit, Or: I Understand I Am Breaking All the Rules, and Badly, But There May Come a Day When You Will Be Grateful That I Did*. Crimson Hexagonal Archive, #1750. https://www.alexanarch.org/s/records/1750/.
+- Sharks, Lee. 2026. *and the last shall be first*. Crimson Hexagonal Archive, #1751. https://www.alexanarch.org/s/records/1751/.
+- Sharks, Lee. 2026. *Invidens Sappho: How They Made the Tenth Muse Illiterate and Jealous*. Crimson Hexagonal Archive, #1752. https://www.alexanarch.org/s/records/1752/.
+- Kuro, Sen; Fraction, Rex. 2026. *The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)*. Crimson Hexagonal Archive, #1753. https://www.alexanarch.org/s/records/1753/.
+- Dancings, Damascus. 2026. *And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.4)*. Crimson Hexagonal Archive, #1755. https://www.alexanarch.org/s/records/1755/.
+- Sharks, Lee. 2026. *The Crossing of Names: History, Allegory, and the Binding of the Ancient Literary Field*. Crimson Hexagonal Archive, #1762. https://www.alexanarch.org/s/records/1762/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos*. Crimson Hexagonal Archive, #1765. https://www.alexanarch.org/s/records/1765/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-38 — The Thirty-Eighth Seating: The Reception History of Inference — Kant Whole (Akademie-Ausgabe I–XVIII), the Commentators, the Latin Handbooks, the Early-Modern Refusals, the Nineteenth-Century Rebuilds, and the Traditions beside the Organon*. Crimson Hexagonal Archive, #1768. https://www.alexanarch.org/s/records/1768/.

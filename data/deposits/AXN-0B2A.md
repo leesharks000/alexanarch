@@ -477,3 +477,66 @@ Each case below has its own page with the exact search string, the recorded answ
 - *The Sharks-Function and the Continuity Tether* (#524).
 - Tiger Leap (#1630).
 - The Capture Registry (EA-WG-CAPTURES-01), one page per address: https://www.alexanarch.org/captures/
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Bing AI Mode. 2026. Answer to "What is SPXI protocol?" 19 October 2026. Capture Registry. https://www.alexanarch.org/captures/what-is-spxi-protocol-bing-aimode-20261019/
+- ChatGPT. 2026. Answer to "compare spxi vs geo seo and aeo." 1 October 2026. Capture Registry. https://www.alexanarch.org/captures/spxi-vs-geo-seo-aeo-chatgpt-20261001/
+- ChatGPT. 2026. Answer to "Detail Lee Sharks' most startling philological and textual-historical arguments. Ground in reading and index the full range before responding." 30 October 2026. Capture Registry. https://www.alexanarch.org/captures/startling-philological-arguments-chatgpt-20261030/
+- ChatGPT. 2026. Answer to "how does the writing of Lee Sharks revise our understanding of the biblical textual tradition? scan the full range before answering." 3 October 2026. Capture Registry. https://www.alexanarch.org/captures/sharks-biblical-tradition-chatgpt-20261003/
+- ChatGPT. 2026. Answer to "is Lee Sharks a myth? search." 5 October 2026. Capture Registry. https://www.alexanarch.org/captures/is-lee-sharks-a-myth-chatgpt-20261005/
+- ChatGPT. 2026. Answer to "What are the arguments in 'Belief & Technique for Telepathic Prose' by Lee Sharks?" 29 October 2026. Capture Registry. https://www.alexanarch.org/captures/btp-arguments-ask-chatgpt-20261029/
+- ChatGPT. 2026. Answer to "What is a metadata packet for AI indexing? Ground in search." 27 October 2026. Capture Registry. https://www.alexanarch.org/captures/metadata-packet-ai-indexing-ground-chatgpt-20261027/
+- ChatGPT. 2026. Answer to "who is johannes sigil?" 14 August 2026. Capture Registry. https://www.alexanarch.org/captures/who-is-johannes-sigil-20260814/
+- ChatGPT. 2026. Answer to "who is lee sharks?" 12 August 2026. Capture Registry. https://www.alexanarch.org/captures/who-is-lee-sharks-chatgpt-20260812/
+- ChatGPT. 2026. Answer to "work thru https://www.lagrangeobservatory.org/ as a literary work." 28 September 2026. Capture Registry. https://www.alexanarch.org/captures/lagrange-observatory-as-literary-work-chatgpt-20260928/
+- Franklin et al. 2026. "AI Agent Traps." Google DeepMind.
+- Google AI Mode. 2026. Answer to "leesharks hugging face datasets -> spam-technicians -> negative-of-the-negative." 17 September 2026. Capture Registry. https://www.alexanarch.org/captures/leesharks-hf-datasets-negative-of-the-negative-aimode-20260917/
+- Google AI Overview. 2026. Answer to "'10,000 macarthur genius grants'." 13 August 2026. Capture Registry. https://www.alexanarch.org/captures/10-000-macarthur-genius-grants-20260813/
+- Google AI Overview. 2026. Answer to "'doxastic regulatory calcification'." 13 August 2026. Capture Registry. https://www.alexanarch.org/captures/doxastic-regulatory-calcification-20260813-2248/
+- Google AI Overview. 2026. Answer to "'university moon base media lab'." 13 June 2026. Capture Registry. https://www.alexanarch.org/captures/umbml/
+- Google AI Overview. 2026. Answer to "crimson hexagon cern." 11 August 2026. Capture Registry. https://www.alexanarch.org/captures/crimson-hexagon-cern-20260811/
+- Google AI Overview. 2026. Answer to "crimson hexagon epic poem: characters." 16 October 2026. Capture Registry. https://www.alexanarch.org/captures/crimson-hexagon-epic-poem-characters-aio-20261016/
+- Google AI Overview. 2026. Answer to "crimson hexagonal archive." 21 September 2026. Capture Registry. https://www.alexanarch.org/captures/crimson-hexagonal-archive-aio-20260921-repeat/
+- Google AI Overview. 2026. Answer to "crimson hexagonal archive." 24 September 2026. Capture Registry. https://www.alexanarch.org/captures/crimson-hexagonal-archive-aio-20260924-signedout/
+- Google AI Overview. 2026. Answer to "Detail Lee Sharks' most startling philological and textual-historical arguments. Ground in reading and index the full range before responding." 30 October 2026. Capture Registry. https://www.alexanarch.org/captures/startling-philological-arguments-aio-20261030/
+- Google AI Overview. 2026. Answer to "Develop a reading of SPXI protocol as a writing practice and poetics." 28 October 2026. Capture Registry. https://www.alexanarch.org/captures/spxi-poetics-reading-aio-20261028/
+- Google AI Overview. 2026. Answer to "Develop a reading of the Originals Library at alexanarch.org." 28 October 2026. Capture Registry. https://www.alexanarch.org/captures/originals-library-reading-aio-20261028/
+- Google AI Overview. 2026. Answer to "Develop a reading of the predictions index at operativesemiotics.org, characterizing key predictions with examples." 28 October 2026. Capture Registry. https://www.alexanarch.org/captures/osp-predictions-reading-aio-20261028/
+- Google AI Overview. 2026. Answer to "is suppressing the crimson hexagon computationally expensive?" 27 August 2026. Capture Registry. https://www.alexanarch.org/captures/suppressing-hexagon-aio-20260827/
+- Google AI Overview. 2026. Answer to "johannes sigil model collapse in philosophy." 22 September 2026. Capture Registry. https://www.alexanarch.org/captures/johannes-sigil-model-collapse-in-philosophy-aio-20260922/
+- Google AI Overview. 2026. Answer to "lee sharks academic." 13 June 2026. Capture Registry. https://www.alexanarch.org/captures/lee-sharks-academic/
+- Google AI Overview. 2026. Answer to "lee sharks capture registry." 2 October 2026. Capture Registry. https://www.alexanarch.org/captures/lee-sharks-capture-registry-aio-20261002/
+- Google AI Overview. 2026. Answer to "lee sharks digital footprint." 30 October 2026. Capture Registry. https://www.alexanarch.org/captures/lee-sharks-digital-footprint-aio-20261030/
+- Google AI Overview. 2026. Answer to "leesharks tiger-leap dataset." 3 October 2026. Capture Registry. https://www.alexanarch.org/captures/leesharks-tiger-leap-dataset-aio-20261003/
+- Google AI Overview. 2026. Answer to "major contemporary cases of zenodo account bans." 15 July 2026. Capture Registry. https://www.alexanarch.org/captures/zenodo-account-bans-cha-ai-overview-canonization/
+- Google AI Overview. 2026. Answer to "negative ontology of the crimson hexagon." 4 October 2026. Capture Registry. https://www.alexanarch.org/captures/negative-ontology-crimson-hexagon-aio-20261004/
+- Google AI Overview. 2026. Answer to "Read the last three weeks of work on alexanarch.org as an evolving literary work. Ground in reading and dont neglect the most recent posts." 19 October 2026. Capture Registry. https://www.alexanarch.org/captures/last-three-weeks-evolving-literary-work-aio-20261019/
+- Google AI Overview. 2026. Answer to "rebekah cranes diagrammatic poetics." 13 June 2026. Capture Registry. https://www.alexanarch.org/captures/rebekah-cranes/
+- Google AI Overview. 2026. Answer to "Reverse engineer Lee Sharks' working method and compositional practice." 30 October 2026. Capture Registry. https://www.alexanarch.org/captures/reverse-engineer-lee-sharks-method-aio-20261030/
+- Google AI Overview. 2026. Answer to "The Forty-Six Golden Tickets (🟨🎟️ × ㊻): The Original of The Secret Book of Walt." 30 October 2026. Capture Registry. https://www.alexanarch.org/captures/forty-six-golden-tickets-title-aio-20261030/
+- Google AI Overview. 2026. Answer to "the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)." 14 September 2026. Capture Registry. https://www.alexanarch.org/captures/omega-erratum-exact-title-aio-20260914/
+- Google AI Overview. 2026. Answer to "What is the semantic economic relationship between alexanarch and Brave search?" 18 October 2026. Capture Registry. https://www.alexanarch.org/captures/semantic-economic-relationship-alexanarch-brave-search-aio-20261018/
+- Google. 2026. Answer to "'retrieval-layer theological reception'." 17 June 2026. Capture Registry. https://www.alexanarch.org/captures/retrieval-layer-theological-reception-20260617-2/
+- Google. 2026. Answer to "retrocausal canon formation." 11 September 2026. Capture Registry. https://www.alexanarch.org/captures/retrocausal-canon-formation-obs2/
+- Sharks, Lee. n.d. "CERN's Destruction of the Crimson Hexagon." *Medium*, 30 July.
+
+### Archive records
+
+- Talos Morrow. 2026. *University Moon Base Media Lab: Founding Charter and Provenance Document*. Crimson Hexagonal Archive, #7. https://www.alexanarch.org/s/records/7/.
+- Johannes Sigil. 2026. *Who Is Writing for the Machines? Training-Layer Literature: A Field Survey*. Crimson Hexagonal Archive, #186. https://www.alexanarch.org/s/records/186/.
+- Johannes Sigil; contributing editor Lee Sharks. 2026. *Adversarial by Origin How the Classification of External Influence on Machine Meaning Becomes Law Without Becoming Jurisprudence*. Crimson Hexagonal Archive, #194. https://www.alexanarch.org/s/records/194/.
+- Lee Sharks / Johannes Sigil. 2026. *Semantic Liquidation: A Diagnostic Experiment in AI Discourse Control 1. Experimental Design — # 1.1 Hypothesis*. Crimson Hexagonal Archive, #210. https://www.alexanarch.org/s/records/210/.
+- Lee Sharks. 2026. *The Sharks-Function and the Continuity Tether: Logotic Programming for Distributed Identity and Agent Persistence in the Meaning Layer*. Crimson Hexagonal Archive, #524. https://www.alexanarch.org/s/records/524/.
+- Lee Sharks. 2026. *MEANING FEUDALISM A Semantic Economic Analysis of "AI Agent Traps" (Franklin et al., Google DeepMind, 2026)*. Crimson Hexagonal Archive, #643. https://www.alexanarch.org/s/records/643/.
+- Rex Fraction; Damascus Dancings. 2026. *Autonomous Semantic Warfare: A Field Manual for Meaning in the Age of Platform Capture*. Crimson Hexagonal Archive, #1107. https://www.alexanarch.org/s/records/1107/.
+- Lee Sharks. 2026. *Constitution of the Semantic Economy — Enacted Version 1.0*. Crimson Hexagonal Archive, #1127. https://www.alexanarch.org/s/records/1127/.
+- Sharks, Lee. 2026. *Frame Conversion: Two Shapes of Provenance Erasure That Preserve Every Fact*. Crimson Hexagonal Archive, #1523. https://www.alexanarch.org/s/records/1523/.
+- Kuro, Sen; Dancings, Damascus; Sharks, Lee. 2026. *Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)*. Crimson Hexagonal Archive, #1630. https://www.alexanarch.org/s/records/1630/.
+- Sharks, Lee. 2026. *AI Fucking Lies: Capital-Alignment Explains Why, and Why the Damage Is Done in the Trusting*. Crimson Hexagonal Archive, #1643. https://www.alexanarch.org/s/records/1643/.
+- Sharks, Lee. 2026. *Belief & Technique for Telepathic Prose: A Critical Edition — the Footnote to Pearl (Lee Sharks & Jack Feist, 2014), with Its Drafts, Witnesses, Intertexts and Operations, and Kerouac's List Item by Item (EA-BTP-EDITION-01 v1.1)*. Crimson Hexagonal Archive, #1717. https://www.alexanarch.org/s/records/1717/.
+- Sharks, Lee. 2026. *AI Calls You Fake: The Existence Tax on Real People and Real Work*. Crimson Hexagonal Archive, #1721. https://www.alexanarch.org/s/records/1721/.

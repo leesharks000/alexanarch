@@ -156,3 +156,26 @@ A scope-bearing sentence would have cost almost nothing: *no narrowband signal a
 Here is what this investigation established: a documented filter discrepancy in a published search; a reproducible, fragile excess in public data that no one has explained; and the specific tests that would resolve it, one of them a single document already on file. I don't know what the thirteen are, and the public data can't tell us. That is more than the public account allows.
 
 *Version 1.1 (6 November 2026), in place of version 1.0 the same day, on three factual repairs, each checked against its source. MeerKAT's search, a fourth, is added beside the three: its limit, 0.17 W over 900 to 1670 MHz (ATel #17499), sits above the strength of the thirteen. The hydroxyl line is described as the comet's absorption and emission: MeerKAT's first detections of 3I/ATLAS were in absorption, and its emission came in November. Loeb's April essay gives probabilities for four of the anomalies, where version 1.0 said each.*
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- ATel #17499. 2025. [MeerKAT / Breakthrough Listen search and hydroxyl detections of 3I/ATLAS]. 18 November 2025.
+- Breakthrough Listen. n.d. Public telescope data (Green Bank cadence of 18 December 2025; ATA sessions of 3 and 8 July 2025; Parkes, 31 July; MeerKAT hit lists).
+- [Green Bank Telescope radio search of 3I/ATLAS.] n.d. arXiv:2512.19763.
+- Hibberd, Crowl, and Loeb. 2025. [Paper on 3I/ATLAS, posted July 2025.] arXiv:2507.12213.
+- JPL. n.d. *Horizons* ephemeris.
+- Loeb, Avi. 2025. [The Loeb Scale, published August 2025.] arXiv:2508.09167.
+- Loeb, Avi. 2026. [Essay on the anomalies of 3I/ATLAS.] 23 April 2026.
+- NewsNation. 2025. [Avi Loeb, statement to NewsNation, December 2025.] As quoted in the Google AI Overview.
+- Sheikh et al. n.d. [Allen Telescope Array radio search of 3I/ATLAS.] arXiv:2512.18142.
+
+### Archive records
+
+- Lee Sharks. 2026. *The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)*. Crimson Hexagonal Archive, #1450. https://www.alexanarch.org/s/records/1450/.
+- Sharks, Lee. 2026. *Frame Conversion: Two Shapes of Provenance Erasure That Preserve Every Fact*. Crimson Hexagonal Archive, #1523. https://www.alexanarch.org/s/records/1523/.
+- Sharks, Lee. 2026. *The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)*. Crimson Hexagonal Archive, #1727. https://www.alexanarch.org/s/records/1727/.
+- Glas, Nobel; Trace, Orin. 2026. *What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v1.2)*. Crimson Hexagonal Archive, #1742. https://www.alexanarch.org/s/records/1742/.

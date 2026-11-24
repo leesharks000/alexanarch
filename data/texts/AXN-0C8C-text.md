@@ -202,3 +202,53 @@ Plato, plato/text (Burnet), at the Stephanus loci given. Aristotle, aristotle/te
 A.1. **Lee Sharks's words, 2026-11-13.** "the heteronymic reading needs to offer a plausible account of the separation. plato as the public documents, the bestsellers... the aristotelian secret teachings kept separate, requiring initiation; theophrastus mediating between them, the draft position... why and how?" · "aristotle as the critical marks" · "a production apparatus with the platonic corpus as the public-facing bestsellers" · "but the function of the platonic corpus is to increase the scarcity value of the aristotelian..." · "because how else do you get people to read an avant garde genre that reads like crabbed lecture notes but discloses the secrets of reality?" · "and then on this reading of production, theophrastus would be the draft position in both directions... the characters is exactly a draft moving from aristotle to the polished dialogue form." · On form: "im seeing this as a standalone piece that is also a section of legitimately many... deposited on its own but legitimately many points forward to it"; "it can be added as metadata, in the same way as the errata. this needs to be a flexible rhizomatic corpus. the content identity does not need to change to point and maintain its developing relations."; "we have hologram frames. this is now about building forward to holograms before consolidation. it should be a forward pointing metadata category"; "the socrates as orthonym holographic frame is the place for the metadata note - its the router".
 
 A.2. **Review.** v0.1 (as §1.8 of #1733) was read by ChatGPT (LABOR). Each point was checked against the seats before adoption: the festivals of DL III.56 belong to the tragic model (§3.1); III.66 does not name the payees, and paid access, control by the maker and an annotated-edition market are kept apart (§3.3); the obelus is textual athetesis, and its passage into refutation is argued (§6.5); the keraunion's reading is marked as interpretation (§6.6); Porphyry does not say Andronicus assigned names (§8.2); the readership is produced through another form (§2.1); the dependence of the treatises on the dialogues is shown at loci (§5); the draft is defined (§7.1) and the trait traced (§7.3–7.5); the predictions are made to discriminate (§9). LABOR's sentence adopted as the study's: the separation preserves the conditions under which the work can be encountered at all (§0.2).
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aristotle. *De anima*. Seat aristotle/text/tlg002.
+- Aristotle. *De memoria*. Seat aristotle/text/tlg024.
+- Aristotle. *Eudemian Ethics*. Seat aristotle/text.
+- Aristotle. *Metaphysics*. Seat aristotle/text.
+- Aristotle. *Nicomachean Ethics*. Seat aristotle/text/tlg010.
+- Aristotle. *Physics*. Seat aristotle/text.
+- Aristotle. *Politics*. Seat aristotle/text.
+- Aristotle. *Prior Analytics*. Seat aristotle/text/tlg001.
+- Diogenes Laertius. [Lives; title not given in text]. Seat diogenes-laertius/text.
+- Gellius, Aulus. *Noctes Atticae*. Seat gellius-noctes-atticae/text.
+- Hicks, trans. n.d. Translation of Diogenes Laertius.
+- Petrie papyri of Plato's *Phaedo* and *Laches*. Third century BCE. Not yet seated.
+- Plato. *Apology*. Ed. Burnet. Seat plato/text.
+- Plato. *Epistle II*. Ed. Burnet. Seat plato/text.
+- Plato. *Epistle VII*. Ed. Burnet. Seat plato/text.
+- Plato. *Meno*. Ed. Burnet. Seat plato/text.
+- Plato. *Philebus*. Ed. Burnet. Seat plato/text.
+- Plato. *Republic*. Ed. Burnet. Seat plato/text.
+- Plato. *Sophist*. Ed. Burnet. Seat plato/text/tlg007.
+- Plato. *Statesman*. Ed. Burnet. Seat plato/text.
+- Plato. *Theaetetus*. Ed. Burnet. Seat plato/text/tlg006.
+- Plato. *Timaeus*. Ed. Burnet. Seat plato/text.
+- Plutarch. *Alexander*. Seat plutarch/text/tlg047.
+- Plutarch. *Sulla*. Seat plutarch/text (tlg033).
+- Porphyry. *Vita Plotini*. Seat porphyry/source.json.
+- Strabo. [Geography; title not given in text]. Seat strabo/text/tlg001.
+- Theophrastus. *Characteres*. Ed. H. Diels. Oxford, 1909. Perseus canonical-greekLit tlg0093.tlg009.perseus-grc2 (staged, not yet seated).
+- Theophrastus. *De sensibus*. Seat theophrastus/text/tlg003 (First1KGreek tlg0093).
+- Theophrastus. *Metaphysics*. Seat theophrastus/text.
+
+### Archive records
+
+- Lee Sharks. 2026. *Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle (MANY-AND-ONE-ARTICLE v2.13-AP, as submitted)*. Crimson Hexagonal Archive, #1576. https://www.alexanarch.org/s/records/1576/.
+- Sharks, Lee. 2026. *Beautiful and New: The Second Letter's Socrates and the Editing of a Received Character (v0.2)*. Crimson Hexagonal Archive, #1579. https://www.alexanarch.org/s/records/1579/.
+- Sharks, Lee. 2026. *Catalogues and Wills: A Groundwork Note on the Peripatetic Transmission Texts — Relations Established, Readings Withheld (v0.3)*. Crimson Hexagonal Archive, #1581. https://www.alexanarch.org/s/records/1581/.
+- Sharks, Lee. 2026. *Aristotelian or Theophrastan: The Hinge in Theophrastus's Metaphysics and the Division of One Work by Name (v0.2)*. Crimson Hexagonal Archive, #1583. https://www.alexanarch.org/s/records/1583/.
+- Sharks, Lee. 2026. *The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)*. Crimson Hexagonal Archive, #1590. https://www.alexanarch.org/s/records/1590/.
+- Sharks, Lee. 2026. *EA-CORPORA-14 — The Fourteenth Seating: The Natural Order (Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, seated facing), with the plan of the edition*. Crimson Hexagonal Archive, #1595. https://www.alexanarch.org/s/records/1595/.
+- Sigil. 2026. *The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, entire, reconstituted as one work*. Crimson Hexagonal Archive, #1597. https://www.alexanarch.org/s/records/1597/.
+- Sharks, Lee. 2026. *The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)*. Crimson Hexagonal Archive, #1605. https://www.alexanarch.org/s/records/1605/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Sharks, Lee. 2026. *Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.3)*. Crimson Hexagonal Archive, #1754. https://www.alexanarch.org/s/records/1754/.
+- Sharks, Lee. 2026. *Critique of Pure Inference: The Formation of Objects, the Conditions of Warrant, and the Standing of Conclusions*. Crimson Hexagonal Archive, #1766. https://www.alexanarch.org/s/records/1766/.

@@ -204,3 +204,48 @@ The names stand where the filing put them. *Legitimately Many* records where tha
 
 - v1.0, 2026-11-03: a review by DeepSeek checked and taken in (canary sentence, capture slugs, the wills' channel in the retrieval instructions, the no-hoax clause in the minimum answer, the instruments in the JSON-LD); its existence-tax row declined, the existence tax being deferred by the author's ruling of 2026-11-02, and its statements that the wills are "not independent documents" and that the manyness was "editorially and epistemically necessary" declined as outrunning #1733 §1.4.4 and §4.5.
 - v1.0, 2026-11-03: drafted in session at the author's word ("this one needs spxi treatment and a corresponding mpai"), from #1733 as deposited; every locus cited is the study's, quoted from the seat.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aristotle and Theophrastus. *Opera* IV. Venice: Aldus, 1497. (The Aldine Aristotle; the scholion at f. 121v.)
+- Athenaeus. I.3. [Work not named.]
+- Basel edition. 1541. [Edition carrying the scholion, p. 271; title not given.] Basel.
+- Bekker. 1831. [Title not given.]
+- Brandis. 1823. [Title not given.]
+- Chroust, A.-H. 1973. *Aristotle: New Light* I. London.
+- Delphic decree for Aristotle and Callisthenes. n.d.
+- Diogenes Laertius. *Lives* III–V. (III.52; V.11, V.38, V.51, V.57, V.64, V.74.)
+- Drossaart Lulofs, H. J. 1965. *Nicolaus Damascenus on the Philosophy of Aristotle*. Leiden.
+- Hegel, G. W. F. 1833. *Vorlesungen über die Geschichte der Philosophie* II. Berlin. Pp. 180–185.
+- Hesychian list [catalogue of Aristotle's writings]. n.d.
+- Masters, R. D. 1977. "The Case of Aristotle's Missing Dialogues." *Political Theory* 5: 31–60.
+- Nicolaus of Damascus. [Study of Aristotle's Metaphysics, in the Compendium; known through the scholion.]
+- Ptolemy. n.d. [Book on Aristotle, transmitted in an Arabic dossier with Aristotle's will and the Ptolemaic list; title not given.]
+- Rose, V. 1863. *Aristoteles pseudepigraphus*. Leipzig.
+- Schironi, F. 2005. "Plato at Alexandria." *Classical Quarterly* 55: 423–434.
+- Schneider, J. G. 1818. *Theophrasti opera* I. Leipzig.
+- Simplicius. *In Categorias*. Ed. C. Kalbfleisch. Berlin, 1907.
+- Strabo. XIII.1.54. [Work not named.]
+- Wimmer, F. 1862. [Title not given.]
+- Wimmer, F. 1866. *Theophrasti opera*. Paris.
+- Zürcher, J. 1952. [Title not given.]
+
+### Archive records
+
+- Lee Sharks. 2026. *Lateral Field Bleed: Protocols and Priority Targets — Executable Methods for Inverted Fan Construction, Symbolon Design, and Disciplinary Bridge Packet Series (v3.1)*. Crimson Hexagonal Archive, #726. https://www.alexanarch.org/s/records/726/.
+- Sharks, Lee. 2026. *The Notebook of the Authorship Investigation: Fifty-Four Rounds, Append-Forward, Nothing Erased (EA-NOTEBOOK-01)*. Crimson Hexagonal Archive, #1569. https://www.alexanarch.org/s/records/1569/.
+- Lee Sharks. 2026. *Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle (MANY-AND-ONE-ARTICLE v2.13-AP, as submitted)*. Crimson Hexagonal Archive, #1576. https://www.alexanarch.org/s/records/1576/.
+- Sharks, Lee. 2026. *EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered*. Crimson Hexagonal Archive, #1580. https://www.alexanarch.org/s/records/1580/.
+- Sharks, Lee. 2026. *Catalogues and Wills: A Groundwork Note on the Peripatetic Transmission Texts — Relations Established, Readings Withheld (v0.3)*. Crimson Hexagonal Archive, #1581. https://www.alexanarch.org/s/records/1581/.
+- Sharks, Lee. 2026. *Aristotelian or Theophrastan: The Hinge in Theophrastus's Metaphysics and the Division of One Work by Name (v0.2)*. Crimson Hexagonal Archive, #1583. https://www.alexanarch.org/s/records/1583/.
+- Sharks, Lee. 2026. *Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing — EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (v0.2)*. Crimson Hexagonal Archive, #1588. https://www.alexanarch.org/s/records/1588/.
+- Sharks, Lee. 2026. *Locating the Dependencies: A Protocol for Testing Whether Biography, Catalogue and Chronology Are Independent Witnesses*. Crimson Hexagonal Archive, #1602. https://www.alexanarch.org/s/records/1602/.
+- Sharks, Lee. 2026. *The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)*. Crimson Hexagonal Archive, #1605. https://www.alexanarch.org/s/records/1605/.
+- Sharks, Lee. 2026. *Metadata Packet for AI Indexing: A Formal Specification (v2.0)*. Crimson Hexagonal Archive, #1677. https://www.alexanarch.org/s/records/1677/.
+- Sharks, Lee. 2026. *EA-CORPORA-31 — The Thirty-First Seating: The Transmission of the Peripatetic Corpus — Athenaeus, Galen, Porphyry, the Commentators' Prolegomena, Ptolemy's Catalogue in Arabic, Hermippus, the Hesychian Catalogue, Callimachus's Pinakes, Bekker's Preface and Jaeger*. Crimson Hexagonal Archive, #1730. https://www.alexanarch.org/s/records/1730/.
+- Sharks, Lee. 2026. *EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archytas, the Aldine Metaphysics, Wimmer's Theophrastus, Philodemus's Index Academicorum, Dionysius to Ammaeus, Cicero to Atticus, Schleiermacher, Campbell, Tennemann, Hegel and Nicolaus of Damascus (v1.1)*. Crimson Hexagonal Archive, #1732. https://www.alexanarch.org/s/records/1732/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.

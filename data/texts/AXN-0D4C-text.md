@@ -921,3 +921,59 @@ Raw spectra (about 1.3 GB of cutouts and hit lists) are omitted; every script fe
 13.7 Version 1.2 (2026-11-06), in place of v1.1 the same day, on the composers' findings for the /non rows, each checked against its source (the operator's word, 11:07: "so we need factual repairs versioned in place"). MeerKAT's technosignature search, reported in ATel #17499, is added as a fourth published search (§2.1, §9.3, §9.6): its limit, 0.17 W over 900–1670 MHz, sits above the thirteen as Green Bank's does. Loeb's essay of 2026-04-23 gives probabilities for four of the anomalies, where §1.3 said each. PER-D is cited under rubric v1.1 (#1694 §3.9), where §9.10 cited #1469. The SPXI packet's version, status and history are brought to v1.2.
 
 13.8 DeepSeek's review of the v2.0 draft (2026-11-23), supplied by the operator; each point was checked against the draft before it was taken. Taken: the SPXI packet's version and pillar status, which still gave v1.2; §10's items restored to sequence, since v1.2 was deposited with 10.10–10.12 before 10.6–10.9 (no number changed); class A defined where §7.27 first counts it; the binomial figure for §7.29's nine of 96, with the reason it does not test; §7.42 and §8.12 reconciled (fourteen channels lost, ten rerun, four followed by their own plans); §8.24's missing check named; §8.26's "v2.0's draft" reworded; §11 now says the inputs are named and not hashed. Declined as not borne out by the draft: that §12 and §13.2 are absent (both stand, and §13.2 carries the 26 mW figure §2.1 cites); that §0.2b cites v2.0's sections for v1.2's text (§7.8–§7.20 are v1.2's own numbers); that §9.12 says "none of the three" (it says "None of them"). Not taken: that the papers' findings are not summarized, which names no place where one is missing.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aristotle. *Sophistical Refutations* (*SE*). n.d. Cited by chapter (ch. 1, ch. 5) in the sophistry-measure findings.
+- [Authors not given.] n.d. [The FAST search of 3I/ATLAS in 1.05–1.45 GHz; title not given.] arXiv:2603.19023.
+- [Authors not given.] n.d. [The Green Bank search of 3I/ATLAS, observations of 2025-12-18; title not given.] arXiv:2512.19763v1.
+- bliss. n.d. [Archived source code of the bliss pipeline, read for a drift-sign flip.]
+- Breakthrough Listen. n.d. "3I/ATLAS public data products" (MeerKAT hit lists, ATA spectra, GBT rawspec products, Parkes directories; raw voltages at GB_ATLAS_raw/). bldata.berkeley.edu/ATLAS/.
+- CEPT. n.d. *ERC Report 91*.
+- ChatGPT (OpenAI). 2026. "C03 equal-strength envelope report" (equal-strength and time-profile report). 2026-11-05. chatgpt/C03-equal-strength-envelope-report-2026-11-05.md.
+- ChatGPT (OpenAI). 2026. "C03 hunt and Wow guidance" (the C03 tracking audit). 2026-11-03. chatgpt/C03-hunt-and-Wow-guidance-2026-11-03.md.
+- ChatGPT (OpenAI). 2026. "C03 model simulation report." 2026-11-04. chatgpt/C03-model-simulation-report-2026-11-04.md.
+- ChatGPT (OpenAI). 2026. "GBT raw voltage first-pass report." 2026-11-16. chatgpt/lagrange-2026-11-19/GBT-raw-voltage-first-pass-report-2026-11-16.md.
+- ChatGPT (OpenAI). 2026. "GBT thirteen normalization source audit." 2026-11-03. chatgpt/GBT-thirteen-normalization-source-audit-2026-11-03.md.
+- grok-4.3. 2026. [AI review of the ATA paper.] *pith.science*. 2026-05-22.
+- Hibberd, Crowl, and Avi Loeb. 2025. [Paper of July 2025 on 3I/ATLAS; title not given.] arXiv:2507.12213.
+- IBTimes UK. 2025. [Press account reporting the Loeb Scale rating of 3I/ATLAS at 4; title not given.] 2 December 2025.
+- Intelligent Living. 2026. [Article and FAQ on the 3I/ATLAS radio searches; title not given.] *Intelligent Living*. 2026-09-11, updated 2026-09-30.
+- JPL. n.d. *Horizons* (ephemeris service; deldot range-rate; solution #55).
+- Lagrange Observatory. 2026. research/3i-atlas (ChatGPT's reports and plans of 19–21 November 2026), commit 9f2933d. Mirrored in chatgpt/lagrange-20261119-21/.
+- Loeb, Avi. 2025. [The Loeb Scale paper; title not given.] arXiv:2508.09167. Seated as sources/arxiv-2508.09167.pdf.
+- Loeb, Avi. 2026. "Did 3I/ATLAS Deliver Extrasolar Life to Our Backyard?" *Medium*. May 25, 2026.
+- Loeb, Avi. 2026. "Where is 3I/ATLAS Now?" *Medium*. 2026-04-23. avi-loeb.medium.com.
+- MeerKAT and Breakthrough Listen. 2025. [Narrowband technosignature search of 3I/ATLAS.] ATel #17499. Posted 2025-11-18.
+- NewsNation. 2025. "Harvard professor now agrees 3I/ATLAS 'most likely natural'." *NewsNation*. Updated Dec 19, 2025.
+- rawspec. n.d. [Breakthrough Listen spectral-product software; GBT rawspec products in three resolutions.]
+- seticore. n.d. [Breakthrough Listen hit-finding software; MeerKAT hit lists, S/N ≥ 6.]
+- Sheikh et al. 2019. [Title not given; cited for Eq. 1, drift = acceleration × frequency / c.]
+- Sheikh et al. 2026. [The Allen Telescope Array search of 3I/ATLAS; title not given.] arXiv:2512.18142v2, accepted manuscript of 2026-05-20.
+
+### Archive records
+
+- Lee Sharks (Editor-in-Chief); Rebekah Cranes (Diagrammatic Editor); issue contributors. 2026. *Journal of Compression Studies, Volume 1, Number 1 (Inaugural Issue, April 2026)*. Crimson Hexagonal Archive, #55. https://www.alexanarch.org/s/records/55/.
+- Johannes Sigil. 2026. *THE ATLAS PERIHELION PRANK Collected Series — Nobel Glas Crimson Hexagon Archive — Document 243*. Crimson Hexagonal Archive, #454. https://www.alexanarch.org/s/records/454/.
+- Lee Sharks. 2026. *Institutional-Prior Foreclosure: How Recognition Bias Lets a Model Treat Established Disciplines as Legitimate and Structurally Similar New Frameworks as Self-Sealing, Unsafe, or Illegible*. Crimson Hexagonal Archive, #770. https://www.alexanarch.org/s/records/770/.
+- Lee Sharks. 2026. *EA-SEI-OAR-PROTOCOL v0.3: Signal-Template Agnosticism Is Not Model Independence — Benchmark Assimilation and Inversion-Asymmetry Tests for LHC Anomaly Triggers*. Crimson Hexagonal Archive, #931. https://www.alexanarch.org/s/records/931/.
+- Lee Sharks. 2026. *EA-SEI-COLLAPSE-SYNTHESIS-01 v0.3: Classifier Foreclosure in Physical Measurement — Substrate Witnesses, Integrative Synthesis, and the Architectural Question (with Three Substrate Witnesses Appended)*. Crimson Hexagonal Archive, #932. https://www.alexanarch.org/s/records/932/.
+- Lee Sharks. 2026. *EA-SEI-INVERSION-01 v0.3: The Endogenous Sophon — Disciplinary Inversion and the Double Enclosure in Classifier-Mediated Science (restoration pass; with five substrate witnesses W04-W08 appended)*. Crimson Hexagonal Archive, #935. https://www.alexanarch.org/s/records/935/.
+- Lee Sharks. 2026. *The Priors, Measured: Inversion-Battery v0.1 on Public Collider Datasets and the Three-Paper Extraction Program (EA-SEI-BATTERY-01 v1.0)*. Crimson Hexagonal Archive, #1449. https://www.alexanarch.org/s/records/1449/.
+- Lee Sharks. 2026. *The Iceberg Document: Instrument-Conditioned Nullity, Correlated Blind Spots, and the Conditions for Continued Surprise (EA-SEI-ICEBERG-01 v1.0)*. Crimson Hexagonal Archive, #1450. https://www.alexanarch.org/s/records/1450/.
+- Nobel Glas. 2026. *Assimilation Across Accelerator Classifier Architectures: A Cross-Family Metrology of Directional Failure in Real-Time Learned Selection (EA-SEI-ACRB-01 v1.0)*. Crimson Hexagonal Archive, #1454. https://www.alexanarch.org/s/records/1454/.
+- Sharks, Lee. 2026. *The Three Dimensions of Provenance Erasure: PER-M, PER-C, PER-D — Atomic Scoring Rules with the SPXI Event of 14 August 2026 as First Worked Instance*. Crimson Hexagonal Archive, #1469. https://www.alexanarch.org/s/records/1469/.
+- Sharks, Lee. 2026. *Frame Conversion: Two Shapes of Provenance Erasure That Preserve Every Fact*. Crimson Hexagonal Archive, #1523. https://www.alexanarch.org/s/records/1523/.
+- Sharks, Lee. 2026. *Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)*. Crimson Hexagonal Archive, #1558. https://www.alexanarch.org/s/records/1558/.
+- Lee Sharks. 2026. *The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)*. Crimson Hexagonal Archive, #1574. https://www.alexanarch.org/s/records/1574/.
+- Sharks, Lee. 2026. *EA-PER-RECALC-01 — The Provenance Erasure Rate Recalculated across the Capture Registry: Method, Locations, Organization and Contents (946 Observations, PER-dim Rubric v1.1)*. Crimson Hexagonal Archive, #1694. https://www.alexanarch.org/s/records/1694/.
+- Sharks, Lee. 2026. *AI Calls You Fake: The Existence Tax on Real People and Real Work*. Crimson Hexagonal Archive, #1721. https://www.alexanarch.org/s/records/1721/.
+- Sharks, Lee. 2026. *The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)*. Crimson Hexagonal Archive, #1727. https://www.alexanarch.org/s/records/1727/.
+- Glas, Nobel; Trace, Orin. 2026. *What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v1.2)*. Crimson Hexagonal Archive, #1742. https://www.alexanarch.org/s/records/1742/.
+- Sharks, Lee. 2026. *A Firm No: What the 3I/ATLAS Radio Searches Could See (EA-3I-ATLAS-PUBLIC-01 v1.1)*. Crimson Hexagonal Archive, #1743. https://www.alexanarch.org/s/records/1743/.
+- Glas, Nobel; Kuro, Sen. 2026. *What Arrival Cannot Do: The Arithmetic of Recognition*. Crimson Hexagonal Archive, #1789. https://www.alexanarch.org/s/records/1789/.
+- Sharks, Lee; Sigil, Johannes; Glas, Nobel; Fraction, Rex. 2026. *Who Benefits from Bad Inference? The Semantic and Political Economy of Inference across the Archive's Domains*. Crimson Hexagonal Archive, #1802. https://www.alexanarch.org/s/records/1802/.

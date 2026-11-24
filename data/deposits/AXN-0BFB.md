@@ -190,3 +190,32 @@ Septuagint: Swete, EA-CORPORA-01/05, read at 2 Macc 5:2–4, Isa 52:11, Jer 7:34
 J. W. van Henten, "The World Leader from the Land of the Jews: Josephus, Jewish War 6.300-315; Tacitus, Histories 5.13; and Suetonius, Vespasian 4.5," in G. H. van Kooten and P. Barthel (eds.), *The Star of Bethlehem and the Magi* (Leiden: Brill, 2015), 359–386, DOI 10.1163/9789004308473_016; read at its public abstract (dare.uva.nl).
 
 Companion: *Two Lists of Stones* (#1592), whose manner this note follows; Revelation First (#202, #1217, #1735).
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Josephus. *Bellum Iudaicum*. Perseus tlg0526.tlg004. Seat josephus (data/corpora/josephus, text/BJ.txt).
+- Nestle, ed. 1904. Greek New Testament (Revelation). Seat EA-CORPORA-01/04 (Rev.txt).
+- Suetonius. *Divus Vespasianus*. Perseus canonical-latinLit phi1348.abo020.perseus-lat2, commit bfdcd06.
+- Swete, ed. n.d. *Septuagint*. Seat EA-CORPORA-01/05.
+- Tacitus. *Historiae*. Ed. C. D. Fisher. Oxford, 1911. Perseus canonical-latinLit phi1351.phi004.perseus-lat2, commit bfdcd062840c67dc85993eb942fcc75e68457f6d (to be seated as EA-CORPORA-33/01).
+- van Henten, J. W. 2015. "The World Leader from the Land of the Jews: Josephus, Jewish War 6.300-315; Tacitus, Histories 5.13; and Suetonius, Vespasian 4.5." In *The Star of Bethlehem and the Magi*, edited by G. H. van Kooten and P. Barthel, 359–386. Leiden: Brill. https://doi.org/10.1163/9789004308473_016. Read at its public abstract (dare.uva.nl).
+- *Westminster Leningrad Codex*. n.d. Seat EA-CORPORA-01/09.
+
+### Archive records
+
+- Lee Sharks. 2026. *The Crimson Hexagon: Fractal Navigation Map — Non-Lossy Logotic Encoding v6.0*. Crimson Hexagonal Archive, #10. https://www.alexanarch.org/s/records/10/.
+- Lee Sharks. 2026. *Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document*. Crimson Hexagonal Archive, #202. https://www.alexanarch.org/s/records/202/.
+- Johannes Sigil. 2026. *The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image*. Crimson Hexagonal Archive, #407. https://www.alexanarch.org/s/records/407/.
+- TACHYON (Claude/Anthropic). 2026. *Combat Scholasticism: A Commentary Tradition for the Crimson Hexagonal Archive (Critical Gathered Edition, EA-CS-01)*. Crimson Hexagonal Archive, #584. https://www.alexanarch.org/s/records/584/.
+- Lee Sharks. 2026. *Combat Scholasticism, Part Two: On the Formal Object — Lectiones II.4–II.6 (EA-CS-01.II.b)*. Crimson Hexagonal Archive, #589. https://www.alexanarch.org/s/records/589/.
+- Lee Sharks. 2026. *CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament*. Crimson Hexagonal Archive, #636. https://www.alexanarch.org/s/records/636/.
+- TACHYON (Claude/Anthropic). 2026. *Ω TANG SPECIFICATION: REVELATION STUDIES Total Axial Negation Graph — The Apocalypse of John*. Crimson Hexagonal Archive, #644. https://www.alexanarch.org/s/records/644/.
+- Lee Sharks. 2026. *THE SECRET BOOK OF WALT Hidden Teachings of Walt Whitman, Cowboy of Time Translated from the Forty-Six Golden Tickets by*. Crimson Hexagonal Archive, #683. https://www.alexanarch.org/s/records/683/.
+- Lee Sharks. 2026. *Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)*. Crimson Hexagonal Archive, #1217. https://www.alexanarch.org/s/records/1217/.
+- Sharks, L.. 2026. *The Secret Book of Walt: Critical Edition with Source Code and Book of Life v3.0 (EA-SBW-01 v2.0)*. Crimson Hexagonal Archive, #1362. https://www.alexanarch.org/s/records/1362/.
+- Sharks, Lee. 2026. *Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)*. Crimson Hexagonal Archive, #1592. https://www.alexanarch.org/s/records/1592/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles*. Crimson Hexagonal Archive, #1735. https://www.alexanarch.org/s/records/1735/.

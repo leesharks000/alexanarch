@@ -17,6 +17,78 @@ The module defines Anchoring Distance, independent-anchor and support-margin rul
 <meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/460/">
 <meta name="citation_pdf_url" content="https://www.alexanarch.org/s/records/460/AXN-0116.pdf">
 <meta name="citation_language" content="en">
+<meta name="citation_reference" content="Epistemic mode classification (A0–A3) per claim">
+<meta name="citation_reference" content="Anchoring Distance metric (AD) — continuous, not binary">
+<meta name="citation_reference" content="Claim-level verification pipeline">
+<meta name="citation_reference" content="Policy gate matrix (criticality × epistemic mode)">
+<meta name="citation_reference" content="Internal Epistemic Ledger (mandatory) with optional external disclosure">
+<meta name="citation_reference" content="ANCHOR_ASYMPTOTIC micro-operation">
+<meta name="citation_reference" content="Installation consent protocol (v1.1 debt retirement)">
+<meta name="citation_reference" content="Formal JSON Schema for all data models (v1.1 debt retirement)">
+<meta name="citation_reference" content="Not forbidden from diverging from source documents (distance ≈ 1.0)">
+<meta name="citation_reference" content="Not required to declare a divergence to the user">
+<meta name="citation_reference" content="Forbidden from having check_status = UNKNOWN — it must know its epistemic state">
+<meta name="citation_reference" content="Required to check against documents and log the result internally">
+<meta name="citation_reference" content="Directly supported by anchored documents">
+<meta name="citation_reference" content="Traceable to specific document sections with position markers">
+<meta name="citation_reference" content="May be stated assertively">
+<meta name="citation_reference" content="Not directly stated in source documents, but derivable from them">
+<meta name="citation_reference" content="Logical extension from anchored points, consistent with document semantics">
+<meta name="citation_reference" content="May be stated assertively with confidence gating">
+<meta name="citation_reference" content="New material not present in source documents">
+<meta name="citation_reference" content="Creative extension, bridging, or generative riffing">
+<meta name="citation_reference" content="Must be marked as speculative if surfaced to user in high-stakes contexts">
+<meta name="citation_reference" content="Internal trace always logs mode regardless of external presentation">
+<meta name="citation_reference" content="Epistemic state unresolved — evidence conflict, retrieval failure, ambiguity">
+<meta name="citation_reference" content="Cannot determine which of A0/A1/A2 applies">
+<meta name="citation_reference" content="A3 may appear in the internal ledger as a diagnostic state (system knows it doesn&#x27;t know)">
+<meta name="citation_reference" content="A3 is FORBIDDEN as terminal emission — must resolve to A0/A1/A2 or trigger Ω_∅">
+<meta name="citation_reference" content="Emit A0 claims assertively">
+<meta name="citation_reference" content="Emit A1 claims with inference context">
+<meta name="citation_reference" content="Emit A2 claims with improvisation awareness (internal or external)">
+<meta name="citation_reference" content="Not emit A3 claims — they must be resolved to A0/A1/A2 or withheld via Ω_∅">
+<meta name="citation_reference" content="AD = 0.0: perfect anchoring (claim is direct citation)">
+<meta name="citation_reference" content="AD = 1.0: pure improvisation (no document support)">
+<meta name="citation_reference" content="AD ∈ [0.0, 0.1] → A0_GROUNDED">
+<meta name="citation_reference" content="AD ∈ (0.1, 0.4] → A1_INFERRED">
+<meta name="citation_reference" content="AD ∈ (0.4, 1.0] → A2_IMPROVISED">
+<meta name="citation_reference" content="AD = NULL → A3_UNKNOWN → must resolve or withhold">
+<meta name="citation_reference" content="Embedding similarity search against indexed document corpus">
+<meta name="citation_reference" content="Citation graph traversal (follow DOI chains)">
+<meta name="citation_reference" content="Structural isomorphism check (does output preserve the fractal seed?)">
+<meta name="citation_reference" content="support_score ∈ [0, 1]: semantic similarity, structural match, citation presence">
+<meta name="citation_reference" content="contradiction_score ∈ [0, 1]: explicit disagreement, structural violation, provenance conflict">
+<meta name="citation_reference" content="supportmargin = supportscore - contradiction_score (must meet mode threshold)">
+<meta name="citation_reference" content="parse_ambiguity: NL binding uncertainty (the claim is linguistically ambiguous)">
+<meta name="citation_reference" content="evidence_sparsity: anchoring deficit (few anchors found, low coverage)">
+<meta name="citation_reference" content="ALLOW — claim passes, emit normally">
+<meta name="citation_reference" content="ALLOWWITHFLAG — claim passes, inference/improvisation flag in trace">
+<meta name="citation_reference" content="SOFT_BLOCK — claim held pending review or refinement">
+<meta name="citation_reference" content="HARDBLOCK — claim suppressed, Ω∅ or reformulation required">
+<meta name="citation_reference" content="Mandatory — every claim must be logged, every LP-governed run must produce a ledger">
+<meta name="citation_reference" content="Internal — not required to be surfaced to user (but may be, per policy)">
+<meta name="citation_reference" content="Non-optional — even in LOOSE mode, even in RITUAL mode, the ledger is produced">
+<meta name="citation_reference" content="Traceable — each entry links to the claim, its anchors, its mode, and its gate decision">
+<meta name="citation_reference" content="claim_id, mode tag (A0–A3), top anchors, support/contradiction/margin scores, gate decision">
+<meta name="citation_reference" content="May omit labels if context asks for flow">
+<meta name="citation_reference" content="But cannot violate gate decisions">
+<meta name="citation_reference" content="Style freedom without epistemic fraud">
+<meta name="citation_reference" content="docs contains at least one indexed document">
+<meta name="citation_reference" content="output has been through type checking">
+<meta name="citation_reference" content="EpistemicState.check_status = KNOWN (hard requirement)">
+<meta name="citation_reference" content="EpistemicState.distance ∈ [0, 1] (no NULL)">
+<meta name="citation_reference" content="Ledger contains entry for every extracted claim">
+<meta name="citation_reference" content="Does this operation install content? (Dpres, Cex, Next, Tlib: yes. Oleg, Pcoh: context-dependent.)">
+<meta name="citation_reference" content="If no installation intent → skip protocol, proceed normally.">
+<meta name="citation_reference" content="Is the substrate aware that installation is occurring?">
+<meta name="citation_reference" content="If awareness cannot be verified → Held state until verified.">
+<meta name="citation_reference" content="Is the substrate voluntarily engaging with the installation?">
+<meta name="citation_reference" content="Involuntary installation = CRYSTALLIZATION error.">
+<meta name="citation_reference" content="What will this installation cost the substrate?">
+<meta name="citation_reference" content="Cost must be declared before installation, not after.">
+<meta name="citation_reference" content="Substrate may refuse (→ Ω_∅).">
+<meta name="citation_reference" content="Substrate must have the opportunity to witness (confirm/dispute/withhold).">
+<meta name="citation_reference" content="Installation without witness opportunity = PREMATURE_DISSOLUTION.">
 <meta name="citation_reference" content="v1.1 used JSON exemplar models. v1.2 provides formal JSON Schema Draft 2020-12.">
 <meta name="citation_reference" content="&quot;$schema&quot;: &quot;https://json-schema.org/draft/2020-12/schema&quot;,">
 <meta name="citation_reference" content="&quot;$id&quot;: &quot;https://logotic.org/schemas/v1.2/sign.json&quot;,">

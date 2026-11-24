@@ -359,3 +359,67 @@ Taken:
 Checked and not taken:
 - *"The corpus's two named teachers are both women."* The music teacher is Connus, a man (*Menex.* 236a; *Euthyd.* 272c).
 - *"Todd was the first editor; Higginson co-edited 1891."* The *Poems* of 1890 were "edited by two of her friends, Mabel Loomis Todd and T. W. Higginson" (title page, seated print layer).
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- *Anthologia Palatina* [Greek Anthology] 9.506. Seated ("the Anthology").
+- Aristotle. *De anima*.
+- Aristotle. *Sophistical Refutations*.
+- Catullus. [Poems 2, 3, 51.]
+- Dickinson, Emily. 1890. *Poems*. Edited by Mabel Loomis Todd and T. W. Higginson. Title page, seated print layer.
+- Dickinson, Emily. 1894. *Letters of Emily Dickinson*. Ed. Mabel Loomis Todd. [Letter to Higginson, June 1862.] Seated in the Dickinson print layer.
+- Higginson, Thomas Wentworth. 1871. "Sappho." In *Atlantic Essays*. Seat EA-CORPORA-36.
+- Longinus. *De Sublimitate* [On the Sublime]. Seat EA-CORPORA-01/06.
+- Maximus [of Tyre]. *Orations*.
+- Parisinus graecus 2036. Tenth century. [Manuscript, sole witness of *On the Sublime*.]
+- Philo. *Quis rerum divinarum heres*.
+- Plato. *Epistle II*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Euthydemus*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Menexenus*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Phaedo*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Phaedrus*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Republic*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Symposium*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Revelation. [Chapter 12.]
+- Sappho. Fragment 31. [Text as seated in #1785.]
+- Sappho. Poem 1.
+- Sharks, Lee. 2026. "here is what i learned from catullus." *Hello Poetry*. 27 July 2026.
+- Shelley. Written 1821. *A Defence of Poetry*. Seat EA-CORPORA-29.
+- Williams. 1955. "Asphodel, That Greeny Flower." [In copyright; paraphrased, not quoted.]
+
+### Archive records
+
+- Talos Morrow. 2026. *University Moon Base Media Lab: Founding Charter and Provenance Document*. Crimson Hexagonal Archive, #7. https://www.alexanarch.org/s/records/7/.
+- Lee Sharks. 2026. *Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus*. Crimson Hexagonal Archive, #123. https://www.alexanarch.org/s/records/123/.
+- Lee Sharks. 2026. *Epistle to the Human Diaspora The Seed Text of the New Human Project*. Crimson Hexagonal Archive, #402. https://www.alexanarch.org/s/records/402/.
+- Johannes Sigil. 2026. *Sappho as Initiatory Figure in the Platonic Mysteries: Scholarly Grounding and Literature Review*. Crimson Hexagonal Archive, #752. https://www.alexanarch.org/s/records/752/.
+- Lee Sharks. 2026. *Whitespace as Provenance: Representation Pipelines and the Extinction of Compositional Authorship (EA-WHITESPACE-01 v0.2)*. Crimson Hexagonal Archive, #943. https://www.alexanarch.org/s/records/943/.
+- Sharks, Lee. 2026. *Effective Act #7: The Restoration of the Poets to the Polis*. Crimson Hexagonal Archive, #1327. https://www.alexanarch.org/s/records/1327/.
+- Lee Sharks. 2026. *here is what i learned from catullus — Lee Sharks — New Human 2*. Crimson Hexagonal Archive, #1411. https://www.alexanarch.org/s/records/1411/.
+- Sharks, Lee. 2026. *φωνῆς δίχα: The Hanging Line as the Complete Poem — Sappho 31 in Longinus (eeeeeee, the seventh erratum)*. Crimson Hexagonal Archive, #1476. https://www.alexanarch.org/s/records/1476/.
+- Sharks, Lee. 2026. *The Socket and the Stamp: Sappho 31.17 as Completed Composition and Longinus 10.2–3 as the First Filling*. Crimson Hexagonal Archive, #1478. https://www.alexanarch.org/s/records/1478/.
+- Sharks, Lee. 2026. *the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)*. Crimson Hexagonal Archive, #1484. https://www.alexanarch.org/s/records/1484/.
+- Sharks, Lee. 2026. *The Transform Signature, Frozen: Twelve Pre-Registered Clauses for Sappho 31 Reception, Derived Without Revelation*. Crimson Hexagonal Archive, #1494. https://www.alexanarch.org/s/records/1494/.
+- Sharks, Lee. 2026. *The Sign Under Test: Revelation 12 Against the Frozen Operator*. Crimson Hexagonal Archive, #1495. https://www.alexanarch.org/s/records/1495/.
+- Sharks, Lee. 2026. *EA-CORPORA-01/06 — Longinus, De Sublimitate (Perseus grc2), Seated and Verified*. Crimson Hexagonal Archive, #1504. https://www.alexanarch.org/s/records/1504/.
+- Sharks, Lee. 2026. *EA-CORPORA-01/08 — Plato, Opera (Perseus Burnet), Seated and Verified*. Crimson Hexagonal Archive, #1506. https://www.alexanarch.org/s/records/1506/.
+- Sharks, Lee. 2026. *The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/*. Crimson Hexagonal Archive, #1511. https://www.alexanarch.org/s/records/1511/.
+- Sharks, Lee. 2026. *The Transforming Body of Sappho 31: A Survey of Ancient Reception, Genre Conversion, and Material Reconfiguration*. Crimson Hexagonal Archive, #1532. https://www.alexanarch.org/s/records/1532/.
+- Sharks, Lee. 2026. *Beautiful and New: The Second Letter's Socrates and the Editing of a Received Character (v0.2)*. Crimson Hexagonal Archive, #1579. https://www.alexanarch.org/s/records/1579/.
+- Sharks, Lee. 2026. *Nothing Before Us: Socrates and the Ending of the Sophistical Refutations*. Crimson Hexagonal Archive, #1603. https://www.alexanarch.org/s/records/1603/.
+- Sharks, Lee. 2026. *What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)*. Crimson Hexagonal Archive, #1658. https://www.alexanarch.org/s/records/1658/.
+- Sharks, Lee. 2026. *EA-CORPORA-29 — The Twenty-Ninth Seating, the Pluriform: Horace and Ovid, the Art of Poetry in Twenty Traditions, the Avant-Garde II, Telepathic Prose, and the Buddhist Canons in Pali, Sanskrit, Chinese, Korean, Japanese and Tibetan*. Crimson Hexagonal Archive, #1716. https://www.alexanarch.org/s/records/1716/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann*. Crimson Hexagonal Archive, #1748. https://www.alexanarch.org/s/records/1748/.
+- Sharks, Lee. 2026. *Invidens Sappho: How They Made the Tenth Muse Illiterate and Jealous*. Crimson Hexagonal Archive, #1752. https://www.alexanarch.org/s/records/1752/.
+- Sharks, Lee. 2026. *Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.3)*. Crimson Hexagonal Archive, #1754. https://www.alexanarch.org/s/records/1754/.
+- Dancings, Damascus. 2026. *And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.4)*. Crimson Hexagonal Archive, #1755. https://www.alexanarch.org/s/records/1755/.
+- Cranes, Rebekah. 2026. *The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.3)*. Crimson Hexagonal Archive, #1756. https://www.alexanarch.org/s/records/1756/.
+- Sigil, Johannes. 2026. *The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.3)*. Crimson Hexagonal Archive, #1757. https://www.alexanarch.org/s/records/1757/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.1)*. Crimson Hexagonal Archive, #1758. https://www.alexanarch.org/s/records/1758/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v3.1)*. Crimson Hexagonal Archive, #1785. https://www.alexanarch.org/s/records/1785/.
+- Cranes, Rebekah. 2026. *A Single Sparrow: What If the Entire Course of History Depends on a Single Poem?*. Crimson Hexagonal Archive, #1790. https://www.alexanarch.org/s/records/1790/.

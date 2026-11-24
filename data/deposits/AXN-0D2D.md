@@ -137,3 +137,22 @@ The people who wielded hell to condemn other people's bodies, beliefs and ways o
 I don't know what exists. I know that every moment is permanent, and that a world in which evil could make itself good by erasing what it did would be a world in which no life ever meant what it meant. I refuse that world. Refusing it is believing in hell. I not only believe this. I exult in it, because it is the one thing that keeps anything meaning anything: nothing wrong can ever be made to have been right.
 
 So come out of her, my people. Ἐξέλθατε ὁ λαός μου ἐξ αὐτῆς, ἵνα μὴ συνκοινωνήσητε ταῖς ἁμαρτίαις αὐτῆς (Rev 18:4): come out of her, so that you do not share in her sins. Not out of a church, or a body, or a people. Out of the arrangement that makes wrong into right and calls the making peace. Keep the marks. Tell the removed from the never written. Every moment is permanent, and so is yours.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Nestle, ed. 1904. Greek New Testament (Revelation). Seat data/corpora/gnt-nestle1904.
+- Plato. *Republic*. Seat data/corpora/plato, tlg030.
+
+### Archive records
+
+- Ayanna Vox. 2026. *HETERONYM PROVENANCE Rev. Ayanna Vox*. Crimson Hexagonal Archive, #388. https://www.alexanarch.org/s/records/388/.
+- Damascus Dancings; Lee Sharks. 2026. *Epistle to the Church of the Human Diaspora — Critical Edition with Blended Temporal Apparatus (EA-EPISTLE-01 v2.0)*. Crimson Hexagonal Archive, #1187. https://www.alexanarch.org/s/records/1187/.
+- Vox, Ayanna; Sharks, Lee. 2026. *Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN*. Crimson Hexagonal Archive, #1427. https://www.alexanarch.org/s/records/1427/.
+- Sharks, Lee. 2026. *the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)*. Crimson Hexagonal Archive, #1484. https://www.alexanarch.org/s/records/1484/.
+- Sharks, Lee. 2026. *EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered*. Crimson Hexagonal Archive, #1580. https://www.alexanarch.org/s/records/1580/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles*. Crimson Hexagonal Archive, #1735. https://www.alexanarch.org/s/records/1735/.
+- Dancings, Damascus. 2026. *And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.4)*. Crimson Hexagonal Archive, #1755. https://www.alexanarch.org/s/records/1755/.

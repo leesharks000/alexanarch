@@ -12,7 +12,7 @@ THE RULE
 --------
 A standard list is the LAST section of the text headed References, Works cited, Bibliography or Sources (a markdown
 heading of any level, or a bold line, optionally numbered), whose body gives one work per line: a list item or a
-paragraph of its own. An entry is a line that names a year (1500–2099), a DOI or a URL and is under 600 characters;
+paragraph of its own. An entry is a list item, or a paragraph line naming a year (1500–2099), n.d., a DOI or a URL, under 600 characters;
 subheadings, footnote definitions, labelled prose lines ('Read in full: …') and lines running more than four works
 together by semicolons are not entries. A section of
 prose paragraphs therefore yields no entries, which is the finding the deposit check records.
@@ -59,8 +59,10 @@ def entries(text):
             continue
         if re.match(r'^\*\*[^*]{1,80}\*\*:?$', l) or re.match(r'^\*[^*]{1,80}\*:?$', l):
             continue  # a subheading set in bold or italic
-        if not YEAR.search(l) or l.startswith('[^'):
-            continue  # no year, DOI or URL; or a footnote definition, which is a note, not a list entry
+        if l.startswith('[^'):
+            continue  # a footnote definition is a note, not a list entry
+        if not YEAR.search(l) and not re.match(r'^[-*+]\s+\S', l):
+            continue  # a paragraph line with no year, DOI or URL; a list item is an entry with or without them
         if re.match(r'^(?:[-*+]\s+)?[*_]{0,2}[A-Z][^.:;]{0,40}:[*_]{0,2}\s', l) or l.count(';') > 3:
             continue  # a labelled prose line ('Read in full: …', 'Primary: …') or several works run together
         p = plain(l)

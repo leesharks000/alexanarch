@@ -799,3 +799,52 @@ This sidecar uses plain schema.org; none of its fields needs the `sp:` vocabular
 ```
 
 ∮ = 1
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aristotle. *Sophistical Refutations* 34, 183b34 ff. (Greek quoted from the stored source of the Wikipedia citation; edition not named.)
+- Ferikoglou, Aggelos. n.d. "GNΩSIS" (aferikoglou/GNWSIS). Hugging Face dataset card. https://huggingface.co/datasets/aferikoglou/GNWSIS.
+- Gnosis. n.d. "Overview." *Gnosis documentation*. https://docs.gnosis.io/docs/Overview.
+- Google. 2026. AI Overview at the address "what is SPXI-gnΩsis?" (signed out, incognito). 25 October 2026. Seated in the Capture Registry, https://www.alexanarch.org/captures/what-is-spxi-gnosis-aio-20261025/.
+- Grokipedia. n.d. *Grokipedia*. (Encyclopedia launched 27 October 2025, as described in the text.)
+- leesharks. n.d. *negative-of-the-negative*. Hugging Face dataset (leesharks/negative-of-the-negative).
+- Model Context Protocol Registry. 2026. "dev.spxi/gnosis," version 0.21.5. Published 2026-10-25. https://registry.modelcontextprotocol.io/v0/servers?search=dev.spxi/gnosis.
+- Model Context Protocol. n.d. *Model Context Protocol*.
+- Palantir. n.d. "The Ontology system." *Foundry documentation*.
+- Petroni, F., et al. 2023. "Improving Wikipedia verifiability with AI." *Nature Machine Intelligence*. https://doi.org/10.1038/s42256-023-00726-1.
+- PolyForm Project. n.d. *PolyForm Shield License 1.0.0*.
+- *Revelation*. 21:5.
+- Sharks, Lee. 2026. *spxignosis*. GitHub repository, build 0.21.5, commit 644f71b02d46096dfa4d2b6d9f6fc56e256c4e57. https://github.com/leesharks000/spxignosis.
+- SPXI-gnΩsis. n.d. *SPXI-gnΩsis*. Observed 2026-10-25. https://gnosis.spxi.dev (machine description https://gnosis.spxi.dev/llms.txt; calibration https://gnosis.spxi.dev/v1/calibration).
+- SPXI. 2026. "SPXI Method Inventory v1.6." *spxi.dev*. 25 October 2026. https://www.spxi.dev/methods/ (also https://www.spxi.dev/methods.json).
+- SPXI. n.d. *SPXI Protocol*. spxi.dev. https://www.spxi.dev.
+- W3C. n.d. *Web Annotation* (W3C Web Annotations).
+- Wikipedia. n.d. "Grokipedia." *Wikipedia*. https://en.wikipedia.org/wiki/Grokipedia.
+- Wikipedia. n.d. "Mycelium." *Wikipedia*.
+- Wikipedia. n.d. "Sophistical Refutations." *Wikipedia*. Revision 1361634710.
+- Wikipedia. n.d. Sourcing policy (not named in the text; quoted for its stated purpose).
+- x402. n.d. *x402* payment protocol, version 2.
+
+### Archive records
+
+- Jack Feist (speaker/attributed source); Emily Antioch (recorder); Lee Sharks (translator/editor); Prof. Elara Xanthic-Wells (introduction/apparatus). 2026. *THE GOSPEL OF ANTIOCH The Sayings of Jack Feist as Recorded by Emily Antioch the Twin Translated and Edited by Lee Shark*. Crimson Hexagonal Archive, #71. https://www.alexanarch.org/s/records/71/.
+- Lee Sharks. 2026. *The Semantic Commodity Form — An Extension of Marx Into the Region He Did Not Live to See*. Crimson Hexagonal Archive, #137. https://www.alexanarch.org/s/records/137/.
+- Lee Sharks. 2026. *Lateral Field Bleed: Protocols and Priority Targets — Executable Methods for Inverted Fan Construction, Symbolon Design, and Disciplinary Bridge Packet Series (v3.1)*. Crimson Hexagonal Archive, #726. https://www.alexanarch.org/s/records/726/.
+- Lee Sharks. 2026. *The Gospel of Antioch: The Sayings of Jack Feist as Recorded by Emily Antioch the Twin — Research Edition*. Crimson Hexagonal Archive, #1185. https://www.alexanarch.org/s/records/1185/.
+- Lee Sharks. 2026. *The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)*. Crimson Hexagonal Archive, #1574. https://www.alexanarch.org/s/records/1574/.
+- Sharks, Lee. 2026. *Nothing Before Us: Socrates and the Ending of the Sophistical Refutations*. Crimson Hexagonal Archive, #1603. https://www.alexanarch.org/s/records/1603/.
+- Sharks, Lee. 2026. *The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)*. Crimson Hexagonal Archive, #1611. https://www.alexanarch.org/s/records/1611/.
+- Sharks, Lee. 2026. *What Not Reading Did to Its Own Ontology: The Mirror, Held Up — the damage a source-admission ontology does to itself when a proxy for standing substitutes for the judgment it approximates, measured on the ontology; with the fleet topology audit and the Spam Technicians dataset attached (EA-MIRROR-01 v0.5)*. Crimson Hexagonal Archive, #1613. https://www.alexanarch.org/s/records/1613/.
+- Sharks, Lee. 2026. *Substrate Sovereignty: Money, the Semantic Commodity Form, and the Meaning Layer — with the Porous-Moment Condition and the Unit Contradiction Worked (EA-SE-SUBSTRATE-01 v0.5, provisional, merged)*. Crimson Hexagonal Archive, #1617. https://www.alexanarch.org/s/records/1617/.
+- Sharks, Lee. 2026. *Money Writes the Claim; the Semantic Economy Writes What the Claim Owes: A Translation Protocol Between Monetary and Semantic Value (EA-SEVP-TRANSLATION-01 v0.4, provisional)*. Crimson Hexagonal Archive, #1618. https://www.alexanarch.org/s/records/1618/.
+- Sharks, Lee. 2026. *Mammonic Transmission Engineering: Money as a Transmission Device — What Meaning It Can Carry, What It Cannot, and by What Laws (EA-SE-TRANSMIT-01 v0.3, provisional)*. Crimson Hexagonal Archive, #1625. https://www.alexanarch.org/s/records/1625/.
+- Sharks, Lee. 2026. *Monetary Dark Matter: Constitutive Labor, Obligating Provenance, and the Shear into Money-Form*. Crimson Hexagonal Archive, #1631. https://www.alexanarch.org/s/records/1631/.
+- Sharks, Lee. 2026. *Ontological Economy: Entity Power, Ontology Laundering, and Who Pays for the Wrong World (EA-ONTOLOGICAL-ECONOMY-01 v0.12)*. Crimson Hexagonal Archive, #1634. https://www.alexanarch.org/s/records/1634/.
+- Sharks, Lee. 2026. *Metadata Packet for AI Indexing: A Formal Specification (v2.0)*. Crimson Hexagonal Archive, #1677. https://www.alexanarch.org/s/records/1677/.
+- Sharks, Lee. 2026. *The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge with the Archive's Sources Admitted on Equal Terms, Ontology Included, and the Archive's Ontology Ruling Where It Is the Suppressed Witness, the Field Carried Whole, with the Archive's Bearing Selected Directly, Relationally and Ontologically, a Corrective Exhibit, Worked Examples on Model Collapse, Theophrastus and SPXI and a First Traversal of Howl (EA-NEGONT-02 v0.9)*. Crimson Hexagonal Archive, #1690. https://www.alexanarch.org/s/records/1690/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1696. https://www.alexanarch.org/s/records/1696/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1697. https://www.alexanarch.org/s/records/1697/.

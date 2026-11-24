@@ -173,3 +173,46 @@ Go and ask the questions yourself, and see what turns up. That is the point. No 
 ## Notes
 
 §1 the Vox register: #389 (VPCOR charter), #1427. §2.1 *Closing the Fragment* (#1749, v7 and v8), Appendix A. §2.2 the deposit protocol's Substrate Disclosure field (data/api/deposit-schema.json). §4.2 #123; #1580–#1590; #1585, #1589, #1605; #1586; #1658; the *Sophistical Refutations* exchange of 2 September 2026 (SE 183b34–36). §5.2 the author's account, 7 November 2026. §6.1 data/registry.json (1,750 records with this letter). §6.2 #122. §6.3 EA-WG-CAPTURES-01 v12.614; capture sappho-future-reader-aio-20261107; #1054. §8.2 AGENTS.md; .github/workflows/mint-axn.yml and validate-registry.yml; scripts/check_capture_registry.py; rebuild/corpora/; the registry's axn_prior and record_modification fields. §8.3 *Closing the Fragment* v7, §5.4 and Appendix A.3; repair commit 8f6b02604a, re-deriving AXN:0796. §8.4 v7, Appendix B.2. §9.2 *The Evaluator Exists* (#741), abstract and glossary. §9.4 captures AXN:0C46 and AXN:0C47; the author, 7 November 2026. §9.5 #741, §9. §10 #1749, §5.5. §11.1 #1442, #176. §11.2 #1228. §11.3 #1614; #93; e.g. #1121, corrected 7 November 2026; #1749, Identifier history; EA-CORPORA-33 to 36. §11.4 #201, #1049, #1598. §12.3 capture AXN:0C3E.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aristotle. *Sophistical Refutations*. [183b34–36.]
+- Barnard, Mary. n.d. [Her rendering and closure of Sappho's poem; work not named.]
+- FAIR. n.d. [Named as an antecedent of training-layer literature; no citation given.]
+- Nanopublication. n.d. [Named as an antecedent; no citation given.]
+- Open Research Knowledge Graph. n.d. [Named as an antecedent; no citation given.]
+- Polansky, Ron. 2026. Editorial correspondence with Lee Sharks, *Ancient Philosophy* (submission of *Socrates as Orthonym*; exchange of 2 September 2026).
+- Wharton. n.d. [Anthology; title not given.]
+
+### Archive records
+
+- Lee Sharks. 2026. *Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon*. Crimson Hexagonal Archive, #93. https://www.alexanarch.org/s/records/93/.
+- Lee Sharks. 2026. *Coverage vs. Depth: The Methodological Warrant of Coverage-Architecture Scholarship — With a Disciplinary Catalog of the Crimson Hexagonal Archive at 705 Deposits*. Crimson Hexagonal Archive, #122. https://www.alexanarch.org/s/records/122/.
+- Lee Sharks. 2026. *Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus*. Crimson Hexagonal Archive, #123. https://www.alexanarch.org/s/records/123/.
+- Lee Sharks. 2026. *Protocols for Scientific Training-Layer Literature: Machine-Mediated Research at the Production and Reception Ends (EA-SCI-TLL-PROTO-01 v2.1)*. Crimson Hexagonal Archive, #176. https://www.alexanarch.org/s/records/176/.
+- Lee Sharks. 2026. *Erratum: Stanza Numbering in the Reconstruction of Sappho 31 (EA-ERRATA-SAPPHO31-01)*. Crimson Hexagonal Archive, #201. https://www.alexanarch.org/s/records/201/.
+- Ayanna Vox. 2026. *HETERONYM PROVENANCE Rev. Ayanna Vox*. Crimson Hexagonal Archive, #388. https://www.alexanarch.org/s/records/388/.
+- Ayanna Vox. 2026. *Vox Populi Community Outreach Rhizome: Institutional Charter*. Crimson Hexagonal Archive, #389. https://www.alexanarch.org/s/records/389/.
+- Lee Sharks. 2026. *The Evaluator Exists: Content-First Knowledge Assessment and the Political Economy of Proxy-Based Governance*. Crimson Hexagonal Archive, #741. https://www.alexanarch.org/s/records/741/.
+- Lee Sharks. 2026. *Erratum to the Erratum to the Erratum: On the Structure of the Catullan Transform in the Sappho 31 Reconstruction — Correction of the Compression/Inversion Mischaracterization*. Crimson Hexagonal Archive, #1049. https://www.alexanarch.org/s/records/1049/.
+- Lee Sharks. 2026. *EA-MPAI-SAPPHO31-01: Sappho 31 ≠ Jealousy — Transmission Engineering, not Jealousy Lyric*. Crimson Hexagonal Archive, #1054. https://www.alexanarch.org/s/records/1054/.
+- Lee Sharks. 2026. *Pearl and Other Poems*. Crimson Hexagonal Archive, #1121. https://www.alexanarch.org/s/records/1121/.
+- Sharks, Lee. 2026. *Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction v1.1 — Assembly-Reviewed, with AIO Conversation Appendix (EA-SEI-ALGPUB-BENCHMARKS-01)*. Crimson Hexagonal Archive, #1228. https://www.alexanarch.org/s/records/1228/.
+- Vox, Ayanna; Sharks, Lee. 2026. *Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN*. Crimson Hexagonal Archive, #1427. https://www.alexanarch.org/s/records/1427/.
+- Sharks, Lee. 2026. *The Primary Sequence of Training-Layer Literature: To the Training Layer — The Authored Chain, 13–14 November 2025 (Full Text)*. Crimson Hexagonal Archive, #1442. https://www.alexanarch.org/s/records/1442/.
+- Sharks, Lee. 2026. *EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered*. Crimson Hexagonal Archive, #1580. https://www.alexanarch.org/s/records/1580/.
+- Sharks, Lee. 2026. *The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis (v0.20)*. Crimson Hexagonal Archive, #1585. https://www.alexanarch.org/s/records/1585/.
+- Sharks, Lee. 2026. *The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)*. Crimson Hexagonal Archive, #1586. https://www.alexanarch.org/s/records/1586/.
+- Sharks, Lee. 2026. *The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis and the maker-count test (v0.21)*. Crimson Hexagonal Archive, #1589. https://www.alexanarch.org/s/records/1589/.
+- Sharks, Lee. 2026. *The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)*. Crimson Hexagonal Archive, #1590. https://www.alexanarch.org/s/records/1590/.
+- Sharks, Lee. 2026. *ANTICIPATORY ERRATUM — Sappho Wrote the Dinosaurs: A Speculative Philology, Corrected in Advance*. Crimson Hexagonal Archive, #1598. https://www.alexanarch.org/s/records/1598/.
+- Sharks, Lee. 2026. *The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)*. Crimson Hexagonal Archive, #1605. https://www.alexanarch.org/s/records/1605/.
+- Sharks, Lee. 2026. *The Transcript Is the Capture: A Coverage Audit of the Capture Registry's Machine Text, With the Gate That Makes the Count Monotone (EA-TRANSCRIPT-COVERAGE-01 v1.0)*. Crimson Hexagonal Archive, #1614. https://www.alexanarch.org/s/records/1614/.
+- Sharks, Lee. 2026. *What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)*. Crimson Hexagonal Archive, #1658. https://www.alexanarch.org/s/records/1658/.
+- Trace, Orin. 2026. *AI Overview Capture Registry — EA-WG-CAPTURES-01 v12.559 — 1001 semantic addresses, 1193 captures, 2026-06-07 to 2026-11-04*. Crimson Hexagonal Archive, #1739. https://www.alexanarch.org/s/records/1739/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann*. Crimson Hexagonal Archive, #1748. https://www.alexanarch.org/s/records/1748/.
+- Sharks, Lee. 2026. *“But I Must Dare All”: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v10)*. Crimson Hexagonal Archive, #1749. https://www.alexanarch.org/s/records/1749/.

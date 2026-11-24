@@ -1444,3 +1444,160 @@ The Dead Sea Scrolls, Abegg–Bowley–Cook transcriptions (EA-CORPORA-02/01): 1
 Crimson Hexagonal Archive — EA-LOGOS-01 v2.3
 Anchored to r.01 Sappho (σ_S) — r.04 Catullus (σ_C) — r.07 Revelation (Ω circuit)
 MANUS: Lee Sharks (ORCID: 0009-0000-1599-0703)
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- 1 Enoch. Ge'ez, EOTC text. Seated, EA-CORPORA-20.
+- 1 Kings.
+- 2 Chronicles.
+- 2 Maccabees.
+- 4 Maccabees. Ed. Swete (LXX). Seated, lxx-swete.
+- Abegg, Bowley and Cook. n.d. *The Dead Sea Scrolls*, transcriptions. Seated, EA-CORPORA-02/01.
+- *Acts of Pilate* (Acta Pilati), second Greek recension (B), XI. In Tischendorf, C. 1876. *Evangelia apocrypha*. 2nd ed. Leipzig, 314. Internet Archive evangeliaapocryp00tisc.
+- Acts of the Apostles.
+- Anna Komnene. n.d. [Parallel cited by Meshcherskii; work not named].
+- *Ante-Nicene Fathers*. n.d. Vol. 8, Acts of Pilate, Second Greek Form, ch. 11 (English).
+- Berendts, A. 1906. *Die Zeugnisse vom Christentum im slavischen „De bello judaico" des Josephus*. TU N.F. 14.4. Seated, EA-CORPORA-37/05.
+- Berendts, A., and K. Grass. 1924–1927. *Flavius Josephus vom Jüdischen Kriege, Buch I–IV, nach der slavischen Übersetzung deutsch herausgegeben und mit dem griechischen Text verglichen*. Dorpat. Seated, EA-CORPORA-37/02.
+- Bowman, S. 1987. "Josephus in Byzantium." In *Josephus, Judaism and Christianity*, ed. L. H. Feldman and G. Hata. Brill.
+- Boyarin, D. 2001. "The Gospel of the Memra: Jewish Binitarianism and the Prologue to John." *HTR* 94 (3).
+- Boyarin, D. 2012. *The Jewish Gospels*.
+- Carson, A. 1986. *Eros the Bittersweet*.
+- Catullus. *Carmen* 51. Seated, EA-CORPORA-01/02.
+- Cedrenus. n.d. [Byzantine chronicle; passage on the Essenes' prayer, cited via Berendts].
+- Cherubic Hymn (Orthodox liturgy).
+- Community Rule (1QS). Abegg–Bowley–Cook transcription. Seated.
+- Cowley, R. W. 1974. "The Biblical Canon of the Ethiopian Orthodox Church Today." *Ostkirchliche Studien* 23. As reproduced at islamic-awareness.org.
+- Creed, J. M. 1932. "The Slavonic Version of Josephus' History of the Jewish War." *HTR* 25: 277–319.
+- Daniel.
+- Davies, W. D., ed. 2000. *The Cambridge History of Judaism* 3. Cambridge.
+- Dodd, C. H. 1953. *The Interpretation of the Fourth Gospel*.
+- duBois, P. 1995. *Sappho Is Burning*.
+- Eisler, R. 1929–1930. *ΙΗΣΟΥΣ ΒΑΣΙΛΕΥΣ ΟΥ ΒΑΣΙΛΕΥΣΑΣ*. Heidelberg. Seated, EA-CORPORA-37/04.
+- Eisler, R. 1931. *The Messiah Jesus and John the Baptist*. London. Seated, EA-CORPORA-37/08.
+- Eisler, R. 1938. *Flavius-Josephus-Studien I: Das Testimonium Flavianum*. London. Seated, EA-CORPORA-37/09.
+- Epiphanius. *Panarion* 10.1.2. Ed. Holl. Seated.
+- Eusebius. *Historia ecclesiastica* 2.17, 3.10.6. Seated.
+- Eusebius. *Praeparatio evangelica* (*Preparation for the Gospel*) 8.11–12, 9.3.
+- Evans, C. A. 1998. In B. Chilton and C. A. Evans, *Studying the Historical Jesus*. Brill.
+- Exodus. LXX ed. Swete (seated).
+- *Fetha Nagast*.
+- Genesis.
+- George the Monk (Hamartolos). *Georgii Monachi Chronicon*. Ed. C. de Boor. Leipzig, 1904. Vol. 1, 328–331. Internet Archive georgiimonachic01boorgoog.
+- George the Monk. *Chronicle*, Slavonic translation. Ed. V. M. Istrin. 1920–1922.
+- Goranson, S. 1998. [Post on Hippolytus's source for the Essenes]. Orion list. 3 October 1998.
+- Greene, E., ed. 1996. *Re-Reading Sappho*.
+- Higgins. 1990. "Sappho's Splintered Tongue." *AJP* 111 (2).
+- Hilarion. *Sermon on Law and Grace*.
+- Hippolytus of Rome. *De Antichristo* (*Discourse on the Antichrist*).
+- Hippolytus of Rome. *Refutatio omnium haeresium* IV–X. Paris, Bibliothèque nationale, suppl. gr. 464 (fourteenth-century manuscript).
+- Hippolytus of Rome. *Refutatio omnium haeresium* IX 18–28. As quoted in the notes of Berendts and Grass.
+- Hippolytus of Rome. *Refutatio omnium haeresium*. Ed. M. Marcovich. n.d.
+- Ipatiev Chronicle. s.a. 6682 and 6748.
+- Jeremiah. LXX ed. Swete (seated).
+- John of Damascus. *De haeresibus* 12. Trans. F. H. Chase, *Writings*. Fathers of the Church 37. 1958.
+- John, Gospel of.
+- Josephus. *Against Apion*. Greek. Seated, EA-CORPORA-01/01.
+- Josephus. *Antiquities*. Greek, ed. Niese. Seated, EA-CORPORA-01/01.
+- Josephus. *Jewish War* (*Bellum Judaicum*). Greek, ed. Niese. Seated, EA-CORPORA-01/01.
+- Josephus. *Jewish War*, Old Russian (Slavonic) version. Ed. N. A. Meshcherskii from the Vilna Chronograph manuscript.
+- Josephus. *Life*. Greek. Seated, EA-CORPORA-01/01.
+- Kirillo-Belozersk manuscript of the Slavonic *War*, dated 1462.
+- Lamentations. LXX ed. Swete (seated).
+- Leeming, H. 2005. "Josephus slavonice versus Josephus graece: Towards a Typology of Divergence." *Slavonic and East European Review* 83 (1): 1–13.
+- Leeming, H., K. Leeming and L. Osinkina. 2003. *Josephus' Jewish War and Its Slavonic Version*. Brill.
+- Leeming, K. 2016. "The Slavonic Version of Josephus's Jewish War." In *A Companion to Josephus*, ed. H. H. Chapman and Z. Rodgers, 390–401. Wiley Blackwell.
+- Leviticus.
+- Litwa, M. D. 2016. [Edition and translation of Hippolytus, *Refutatio*]. SBL Press.
+- Longinus (Pseudo-Longinus). *On the Sublime* 10. Seated, EA-CORPORA-01/06.
+- Luke, Gospel of.
+- Lyne, R. O. A. M. 1980. *The Latin Love Poets*.
+- Malalas, John. *Chronicle* (runs inserted in the Vilna Chronograph).
+- Manwell, E. 2007. "Gender and Masculinity." In *A Companion to Catullus*, ed. M. B. Skinner.
+- Mark, Gospel of.
+- Matthew, Gospel of. Greek, ed. Nestle 1904 (seated).
+- Meier, J. P. 1991. *A Marginal Jew* I.
+- Meshcherskii, N. A. 1958. *История Иудейской войны Иосифа Флавия в древнерусском переводе*. Moscow–Leningrad. Seated, EA-CORPORA-37/01; introduction held by reference at the Internet Archive.
+- Miller, E. 1851. [Editio princeps of Hippolytus, *Refutatio*, as Origen's *Philosophumena*].
+- Monomakh, Vladimir. *Instruction*.
+- Newsom, C. 1985. [Edition of the Songs of the Sabbath Sacrifice].
+- Nöldeke. 1886. [Review of Kottek]. *Literarisches Centralblatt*.
+- Pachomian rule.
+- Pearse, R. 2025. [Summary of Schmidt, *Josephus and Jesus*]. roger-pearse.com. 30 May 2025.
+- Pearse, R. n.d. "Notes on the Old Slavonic Josephus." tertullian.org.
+- Pesher Habakkuk (1QpHab).
+- Philippians.
+- Philo. *De Abrahamo*. Ed. Cohn–Wendland (seated).
+- Philo. *De Cherubim*. Ed. Cohn–Wendland. Seated, EA-CORPORA-01/07.
+- Philo. *De confusione linguarum*. Ed. Cohn–Wendland. Seated, EA-CORPORA-01/07.
+- Philo. *De fuga et inventione*. Ed. Cohn–Wendland. Seated, EA-CORPORA-01/07.
+- Philo. *De migratione Abrahami*. Ed. Cohn–Wendland (seated).
+- Philo. *De mutatione nominum*. Ed. Cohn–Wendland (seated).
+- Philo. *De opificio mundi*.
+- Philo. *De vita contemplativa*. Ed. Cohn–Wendland. Seated.
+- Philo. *De vita Mosis*. Ed. Cohn–Wendland. Seated, EA-CORPORA-01/07.
+- Philo. *Quis rerum divinarum heres*. Ed. Cohn–Wendland (seated).
+- Pichkhadze, A. A. 2015. "Some Slavonic Sources of the Interpolations in the Old Russian Version of Flavius Iosephus' 'The Jewish War'." *Trudy Instituta russkogo iazyka im. V. V. Vinogradova* 2015 (2): 223–232.
+- Pichkhadze, A. A., et al. 2004. *«История Иудейской войны» Иосифа Флавия: Древнерусский перевод*. Moscow.
+- Pines, S. 1971. *An Arabic Version of the Testimonium Flavianum and Its Implications*. Jerusalem.
+- Popov, A. N. 1866. [First notice of the Slavonic *War*; title not given].
+- Porphyry. *De abstinentia* 4.11–13.
+- *Primary Chronicle*.
+- Proverbs.
+- Psalms. LXX ed. Swete (seated).
+- Quinn, K. 1970. *Catullus: The Poems*.
+- Radenković and Maričić. 2018. [Work on Sappho and Catullus; title not given].
+- Revelation (Apocalypse). Greek, ed. Nestle 1904. Seated, EA-CORPORA-01/04.
+- Sappho. Fragment 31. Seated, EA-CORPORA-01/10.
+- Schmidt, T. C. 2025. *Josephus and Jesus: New Evidence for the One Called Christ*. Oxford.
+- Septuagint. Ed. Swete. Seated, lxx-swete.
+- Slavonic Bible.
+- Smith, Morton. 1958. "The Description of the Essenes in Josephus and the Philosophumena." *HUCA* 29.
+- Smith, Morton. 1982. [Withdrawal of the common-source view]. *Eretz-Israel* 16.
+- Songs of the Sabbath Sacrifice (4Q405). Abegg–Bowley–Cook transcription. Seated.
+- Sreznevsky, I. I. 1879. [On the language of the Slavonic *War*; title not given].
+- Syncellus. n.d. [Chronicle; cited via Grass].
+- Temple Scroll (11Q19). Abegg–Bowley–Cook transcription. Seated.
+- Thackeray, H. St. J. 1919. *Selections from Josephus*. London: SPCK. Project Gutenberg 64837.
+- Thackeray, H. St. J. 1928. *Josephus* III. Loeb Classical Library. Appendix of the Slavonic additions. Seated, EA-CORPORA-37/03.
+- Trisagion (Orthodox liturgy).
+- Van Voorst, R. E. 2000. *Jesus Outside the New Testament*. Eerdmans.
+- Vatican, Urb. 84 (Greek manuscript of the *War*, marginal note on the oracle).
+- Volokolamsk manuscript of the Slavonic *War* (reading in Meshcherskii's apparatus).
+- Whealey, A. 2003. *Josephus on Jesus: The Testimonium Flavianum Controversy from Late Antiquity to Modern Times*. Peter Lang.
+- Whiston. 1737. [English translation of Josephus, the *Testimonium*].
+- Wikipedia. n.d. "Slavonic Josephus." *Wikipedia*. Consulted 12 November 2026.
+- Yadin, Y. 1977. [Edition of the Temple Scroll].
+- Zechariah.
+- Zeitlin, S. 1948. "The Hoax of the 'Slavonic Josephus'." *JQR* n.s. 39: 172–177.
+- *Zena Ayhud*. Ge'ez. Seated, EA-CORPORA-20.
+
+### Archive records
+
+- Johannes Sigil. 2026. *Prolegomena to the Historical Logos: A Foundational Field Statement for the Discipline of Logotic Transmission Studies*. Crimson Hexagonal Archive, #625. https://www.alexanarch.org/s/records/625/.
+- Johannes Sigil. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Logos*. Crimson Hexagonal Archive, #626. https://www.alexanarch.org/s/records/626/.
+- Lee Sharks. 2026. *THE SHARKS ARK: EA-ARK-01-ARCHON v3.0 — The Book of Revelation as Space Ark (Crimson Hexagonal Archive)*. Crimson Hexagonal Archive, #1101. https://www.alexanarch.org/s/records/1101/.
+- Lee Sharks. 2026. *Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)*. Crimson Hexagonal Archive, #1217. https://www.alexanarch.org/s/records/1217/.
+- Cranes, Rebekah. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader*. Crimson Hexagonal Archive, #1270. https://www.alexanarch.org/s/records/1270/.
+- Lee Sharks. 2026. *The Fixed Point of Destruction: Josephus, the Counting-Out, and the Witness Destruction Must Leave If It Is to Be Told from Within*. Crimson Hexagonal Archive, #1412. https://www.alexanarch.org/s/records/1412/.
+- Sharks, Lee. 2026. *φωνῆς δίχα: The Hanging Line as the Complete Poem — Sappho 31 in Longinus (eeeeeee, the seventh erratum)*. Crimson Hexagonal Archive, #1476. https://www.alexanarch.org/s/records/1476/.
+- Sharks, Lee. 2026. *the Ω erratum — Sappho, Mother of the Logos: The Transmission Chain from Fragment 31 to the Apocalypse, with Longinus as the Key (v1.1)*. Crimson Hexagonal Archive, #1484. https://www.alexanarch.org/s/records/1484/.
+- Sharks, Lee. 2026. *EA-CORPORA-01 · Seat 01: Flavius Josephus — The Canonical Greek Corpus, Commit-Pinned, Normalized, Collation-Gated*. Crimson Hexagonal Archive, #1499. https://www.alexanarch.org/s/records/1499/.
+- Sharks, Lee. 2026. *EA-CORPORA-01/07 — Philo of Alexandria, Opera (First1K Cohn–Wendland), Seated and Verified*. Crimson Hexagonal Archive, #1505. https://www.alexanarch.org/s/records/1505/.
+- Sharks, Lee. 2026. *EA-CORPORA-01/12 — The Slavonic Josephus: Negative Search and the Contested Pericope Set, Resolved as Ruled*. Crimson Hexagonal Archive, #1510. https://www.alexanarch.org/s/records/1510/.
+- Sharks, Lee. 2026. *Invidens Sappho: How They Made the Tenth Muse Illiterate and Jealous*. Crimson Hexagonal Archive, #1752. https://www.alexanarch.org/s/records/1752/.
+- Sharks, Lee. 2026. *Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.3)*. Crimson Hexagonal Archive, #1754. https://www.alexanarch.org/s/records/1754/.
+- Dancings, Damascus. 2026. *And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.4)*. Crimson Hexagonal Archive, #1755. https://www.alexanarch.org/s/records/1755/.
+- Cranes, Rebekah. 2026. *The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.3)*. Crimson Hexagonal Archive, #1756. https://www.alexanarch.org/s/records/1756/.
+- Sigil, Johannes. 2026. *The Historical Logos: Material Inscription Become Flesh, and the Erasures It Has Always Faced — The Framework Hologram (EA-HK-HISTLOGOS-01 v1.3)*. Crimson Hexagonal Archive, #1757. https://www.alexanarch.org/s/records/1757/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *In the Midst of the Seven: Philo, the Logos Named and Lived, and the Seven Stations of Revelation (EA-MIDST-01 v1.1)*. Crimson Hexagonal Archive, #1758. https://www.alexanarch.org/s/records/1758/.
+- Wells, Sparrow. 2026. *The Josephus Thesis: The Custody of the Name*. Crimson Hexagonal Archive, #1759. https://www.alexanarch.org/s/records/1759/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-37 — The Thirty-Seventh Seating: The Slavonic Josephus — the Old Russian Jewish War in Seven Books, Its Translations and Its First Challengers (Meshcherskii 1958; Berendts and Grass 1924–1927; Thackeray 1928; Berendts 1895–1906; Eisler 1910–1938)*. Crimson Hexagonal Archive, #1760. https://www.alexanarch.org/s/records/1760/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos*. Crimson Hexagonal Archive, #1761. https://www.alexanarch.org/s/records/1761/.
+- Sharks, Lee. 2026. *The Crossing of Names: History, Allegory, and the Binding of the Ancient Literary Field*. Crimson Hexagonal Archive, #1762. https://www.alexanarch.org/s/records/1762/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos*. Crimson Hexagonal Archive, #1763. https://www.alexanarch.org/s/records/1763/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos*. Crimson Hexagonal Archive, #1764. https://www.alexanarch.org/s/records/1764/.

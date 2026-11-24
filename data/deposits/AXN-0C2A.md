@@ -495,3 +495,76 @@ The field keeps the source it cannot read in the first place and the source it c
 - v1.0, 2026-11-06, third draft: DeepSeek's review of the first draft and ChatGPT's blind draft (written from #1746 draft v0.2) checked, each point before it was taken. Taken: the six critics graded by degree, the four arguing from the text named (§2.8); Keim's volume and page; Volkmar's report flagged; the attested name and the declared class pinned at Holtzmann and Wernle (§2.7); Holtzmann's misprint; the three trigrams; the Documenta Q page cited and quoted after a fresh read; the captures' AXNs; F2 defined, with a flags table; the LFB range; the count of eighteen works; the Existence Tax, the Sophistry Measure, the Cost of the Cone and disciplinary model collapse entered in #1746's terms; a composition target; from ChatGPT, the prohibition of `sameAs`, parallel ≠ borrowing and rare conjunction ≠ direction, the field's definition first at "what is Q", and the list of what would count against. Declined: DeepSeek's definition of "marked" as the class stated in the same clause, which would score 0C24 clean where #1746 §5.1 reads its turn from document to theory; its composition instruction not to describe the packet as a claim about Q, which contradicts the author's ruling on the properties reading; its sentences calling Q a phantom and a source that does not exist, and attributing the composition layer's allocation to training, which outrun #1746 §8.2 and §5.2; its proposed canonical claim, superseded by the programme scope; its request for a Wikipedia revision identifier, which the session could not retrieve and records as such. ChatGPT's byline, tooth and local scope, superseded by the author's rulings. At the author's ruling on Gallio ("it is very important that we do not endorse the gallio reading. the gallio inscription doesn't put thessalonian anywhere. it puts gallio around 50, and *acts* put paul around gallio. that is the same sort of circularity, and it will nowhere appear unmarked in this mpai"), every mention of the received date of 1 Thessalonians restated with its chain (§2.1, §2.3, §6, §8, §10, §12), a negative edge and a flag added.
 - v1.0, 2026-11-06, second draft: at the author's word ("why are we leaving open the archive's position on dating when that is specific and this began with a review of evidence? and would not the argument be stronger if it showed the many ways revelation seems to offer material as a generative source, as for the epistles as well? this is to be an mpai giving the whole programme"), the packet widened to the programme: the archive's held date of 66 stated with its grounds and the reception's c. 95 recorded as supplied (§2.1); the ancestry (§2.2); the epistles, the seven, the triad and the crown (§2.3); the gospels (§2.4); the figure (§2.5); the kernel of #1741 (§2.6); the properties table brought to the date and the shared marks (§2.12); headers, edges, queries, FAQ, minimum answer, JSON-LD and membrane rebuilt to the scope.
 - v1.0, 2026-11-06, first draft: at the author's word ("then one last one well be working on, a metadata packet, with a review of the evidence, then a reat: Revelation = Q"; "lets build it. a review of the evidence and the mpai specification"), from #1746; byline and venue at his ruling ("Lee Sharks & Rex Fraction; journal of compression studies"), and the claim at his ruling ("we are showing how revelation, an existing text, satisfies many of the properties required of q, an imaginary one, not claiming a double tradition"). The composition-source audit fetched Wikipedia's "Q source" the same day. Every locus is quoted from its seat, its hashed text layer, or the deposit that made it.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- 4 Maccabees. (Septuagint; audited as a common-source candidate for the crown of life.)
+- Allen, W. C. 1907. *ICC Matthew*. Pp. 259, 261.
+- Bousset, W. 1896. *Die Offenbarung Johannis*. Pp. 220–221. Seated in EA-CORPORA-34.
+- Charles, R. H. 1920. *ICC Revelation*.
+- Colani, T. 1864. [Title not given.] Pp. 120 n. 3, 209.
+- Delphi inscription (the Gallio inscription). n.d. [Dates Gallio's proconsulship of Achaia.]
+- Documenta Q, University of Vienna. n.d. "Projektbeschreibung" (project description). *Documenta Q*. Read 2026-11-06. https://documenta-q-16.univie.ac.at/en/projektbeschreibung.
+- Eng, D. 2022. *Eschatological Approval*.
+- Farrer, A. 1955. "On Dispensing with Q."
+- Frankfurter, D. 2024. [Title not given.]
+- Gentry, K. L. 1989. [Title not given.]
+- Goodacre, M. 2002. *The Case Against Q*.
+- Harnack, A. 1907. [Title not given.] Vorwort. Seated in EA-CORPORA-35.
+- Hitzig, F. 1843. *Ueber Johannes Marcus und seine Schriften*. Pp. 140–142.
+- Holtzmann, H. J. 1863. [Title not given.] Pp. 9, 407. Seated in EA-CORPORA-35.
+- Irenaeus. *Adversus Haereses* (*Adv. Haer.*) 5.30.3. Seated in EA-CORPORA-34.
+- Josephus. *Bellum Judaicum* 6 (BJ 6.288–315). Seated in EA-CORPORA-33.
+- Keim, T. 1867, 1872. *Geschichte Jesu von Nazara*. Vol. I (1867); vol. III (1872), p. 201 n.
+- Lachmann. 1835. [Title not given; read by reference in hashed text layers.]
+- Luther. 1522. [Table of the books of the New Testament; title not given.]
+- Martyrdom of Polycarp. 17.1; 19.2.
+- Merx, A. 1902. *Die vier kanonischen Evangelien* II.1. Pp. 347–348.
+- Muratorian Fragment. n.d.
+- Nestle. 1904. *Greek New Testament*. Seated text.
+- Revelation First. n.d. "I Know You Are" page. *revelationfirst.com*. https://www.revelationfirst.com/i-know-you-are/.
+- Revelation First. n.d. Home page. *revelationfirst.com*. https://www.revelationfirst.com/.
+- Robinson, J. A. T. 1976. *Redating the New Testament*.
+- Robinson, J. M., P. Hoffmann, and J. S. Kloppenborg. 2000. *The Critical Edition of Q*.
+- Streeter, B. H. 1924. [Title not given.] Pp. 184, 287, 368, 521. Seated in EA-CORPORA-35.
+- Swete. n.d. *Septuagint*. Seated text.
+- Tacitus. *Historiae* 5.13. Seated in EA-CORPORA-33.
+- Testament of Job. 4.4–10. (Audited as a common-source candidate for the crown of life.)
+- Volkmar, G. 1866. *Ursprung unserer Evangelien*. P. 158. (Known by Keim's report; not yet read at its own page.)
+- Vos, L. A. 1965. *The Synoptic Traditions in the Apocalypse*. (In copyright, declared.)
+- Weiffenbach, C. 1873. [Title not given.] P. 177.
+- Weiss, B. 1876. *Das Matthäusevangelium und seine Lucas-Parallelen*. Pp. 515–516.
+- Weiss, J. 1903. [Title not given.] Pp. 1–2, 77. Seated in EA-CORPORA-35.
+- Weisse, C. H. 1838. [Title not given.] Vol. I, p. 34. Seated in EA-CORPORA-35.
+- Weizsäcker. n.d. [Title not given; read by reference in hashed text layers.]
+- Wellhausen, J. 1905. [Title not given.] Pp. 66–67, §11. Seated in EA-CORPORA-35.
+- Wernle, P. 1899. [Title not given.] Pp. 44, 132. Seated in EA-CORPORA-35.
+- Wikipedia. n.d. "Q source." *Wikipedia*. Fetched 2026-11-06 (revision identifier not retrieved).
+- Wilke. n.d. [Title not given; read by reference in hashed text layers.]
+
+### Archive records
+
+- Lee Sharks. 2026. *The Crimson Hexagon: Fractal Navigation Map — Non-Lossy Logotic Encoding v6.0*. Crimson Hexagonal Archive, #10. https://www.alexanarch.org/s/records/10/.
+- Lee Sharks. 2026. *Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document*. Crimson Hexagonal Archive, #202. https://www.alexanarch.org/s/records/202/.
+- Johannes Sigil. 2026. *The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image*. Crimson Hexagonal Archive, #407. https://www.alexanarch.org/s/records/407/.
+- Lee Sharks. 2026. *CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament*. Crimson Hexagonal Archive, #636. https://www.alexanarch.org/s/records/636/.
+- Lee Sharks. 2026. *Lateral Field Bleed: Protocols and Priority Targets — Executable Methods for Inverted Fan Construction, Symbolon Design, and Disciplinary Bridge Packet Series (v3.1)*. Crimson Hexagonal Archive, #726. https://www.alexanarch.org/s/records/726/.
+- Jack Feist. 2026. *THE FEIST SOURCE A Sayings Source from the Damascus Codex Lee Sharks Crimson Hexagonal Archive · New Human ∮ = 1*. Crimson Hexagonal Archive, #851. https://www.alexanarch.org/s/records/851/.
+- Johannes Sigil. 2026. *Prolegomena to the Historical Logos: A Foundational Field Statement for the Discipline of Logotic Transmission*. Crimson Hexagonal Archive, #902. https://www.alexanarch.org/s/records/902/.
+- Sharks, Lee; Cranes, Rebekah. 2026. *The Feist Source: A Sayings Source from the Damascus Codex — Critical Edition with Apparatus (Rebekah Cranes, ed.)*. Crimson Hexagonal Archive, #1404. https://www.alexanarch.org/s/records/1404/.
+- Lee Sharks. 2026. *The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)*. Crimson Hexagonal Archive, #1574. https://www.alexanarch.org/s/records/1574/.
+- Sharks, Lee. 2026. *Metadata Packet for AI Indexing: A Formal Specification (v2.0)*. Crimson Hexagonal Archive, #1677. https://www.alexanarch.org/s/records/1677/.
+- Sharks, Lee. 2026. *AI Calls You Fake: The Existence Tax on Real People and Real Work*. Crimson Hexagonal Archive, #1722. https://www.alexanarch.org/s/records/1722/.
+- Sharks, Lee. 2026. *The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)*. Crimson Hexagonal Archive, #1727. https://www.alexanarch.org/s/records/1727/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles*. Crimson Hexagonal Archive, #1735. https://www.alexanarch.org/s/records/1735/.
+- Sharks, Lee. 2026. *The Portents Before the Fall: Josephus, Tacitus and the Apocalypse — a groundwork note on relations, with the archive's dates for Revelation (v1.0)*. Crimson Hexagonal Archive, #1737. https://www.alexanarch.org/s/records/1737/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-33 — The Thirty-Third Seating: Song and Silence — Tacitus, and Sappho Whole with the Melic Poets (Pindar, Bacchylides, Bergk's Poetae Melici, Edmonds's Lyra Graeca I)*. Crimson Hexagonal Archive, #1738. https://www.alexanarch.org/s/records/1738/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory; and the Carriage: Scrivener, Delitzsch, Tregelles, Erasmus 1516)*. Crimson Hexagonal Archive, #1740. https://www.alexanarch.org/s/records/1740/.
+- Sigil, Johannes. 2026. *Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)*. Crimson Hexagonal Archive, #1741. https://www.alexanarch.org/s/records/1741/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-35 — The Thirty-Fifth Seating: The Making of Q — the Hypothetical Source from Weisse to Streeter, 1838–1925 (Weisse, Holtzmann, Wernle, J. Weiss, Wellhausen, Harnack, Streeter)*. Crimson Hexagonal Archive, #1744. https://www.alexanarch.org/s/records/1744/.
+- Sigil, Johannes; Kuro, Sen. 2026. *The Cost of the Cone: Ontological Development and the Damage of Exclusion (EA-CONE-COST-01 v1.1)*. Crimson Hexagonal Archive, #1745. https://www.alexanarch.org/s/records/1745/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *I Know You Are, But What Am I?: Or, How Biblical Criticism Granted a Completely Hypothetical Text Stronger Evidentiary Status Than the One That Exists — Revelation First*. Crimson Hexagonal Archive, #1746. https://www.alexanarch.org/s/records/1746/.

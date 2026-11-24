@@ -525,3 +525,60 @@ Provider documents were read on 26 October 2026 and are the fact base for the pr
 | V8 | [Exa documentation](https://exa.ai/docs); [quickstart](https://exa.ai/docs/search/quickstart); [pricing](https://exa.ai/pricing). Search, contents, research operations, billing units. |
 
 The register records sources; no provider endorses this article or another's product. A public edition keeps its dates and source states, and redraws the map when a product's documented operations change.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Agarwal, Shubham. 2026. "The 5 Best AI Search Engines in 2026." *Zapier*. 14 September 2026. https://zapier.com/blog/best-ai-search-engine/.
+- Aggarwal, Pranjal, Vishvak Murahari, Tanmay Rajpurohit, Ashwin Kalyan, Karthik Narasimhan, and Ameet Deshpande. 2024. *GEO: Generative Engine Optimization*. KDD 2024. https://arxiv.org/abs/2311.09735.
+- Allsopp, Glen. 2025. "Do Self-Promotional 'Best' Lists Boost ChatGPT Visibility? Study of 26,283 Source URLs." *Ahrefs*. 4 December 2025. https://ahrefs.com/blog/best-lists-research/.
+- Aristotle. *Sophistical Refutations* 183b34.
+- Bowker, Geoffrey C., and Susan Leigh Star. 1999. *Sorting Things Out: Classification and Its Consequences*. MIT Press; paperback 2000. https://mitpress.mit.edu/9780262522953/sorting-things-out/.
+- Callon, Michel, Cécile Méadel, and Vololona Rabeharisoa. 2002. "The Economy of Qualities." *Economy and Society* 31 (2): 194–217. https://doi.org/10.1080/03085140220123126. Author text: https://www.researchgate.net/publication/233318671_The_economy_of_qualities.
+- Chrome Story. 2026. [Article on the rename of NotebookLM to Gemini Notebook; title not given.] July 2026. https://chromestory.com/2026/07/notebooklm-now-gemini-notebook-explained/.
+- Consensus. n.d. "Consensus search and best practices." *Consensus Help Center*. Read 26 October 2026. https://help.consensus.app/en/articles/9922660-how-to-search-best-practices.
+- Elicit. n.d. "API/MCP." *Elicit* blog. Read 26 October 2026. https://elicit.com/blog/the-elicit-api-and-mcp-powering-autonomous-research-engines.
+- Elicit. n.d. "Corpus scope." *Elicit Support*. Read 26 October 2026. https://support.elicit.com/en/articles/14758040-elicit-s-source-for-papers.
+- Elicit. n.d. "Elicit systematic review." *Elicit*. Read 26 October 2026. https://elicit.com/solutions/systematic-review.
+- Espeland, Wendy Nelson, and Michael Sauder. 2007. "Rankings and Reactivity: How Public Measures Recreate Social Worlds." *American Journal of Sociology* 113 (1): 1–40. https://doi.org/10.1086/517897. Open paper: https://inequality.stanford.edu/sites/default/files/Espeland-paper.pdf.
+- Espeland, Wendy Nelson, and Mitchell L. Stevens. 1998. "Commensuration as a Social Process." *Annual Review of Sociology* 24: 313–343. https://doi.org/10.1146/annurev.soc.24.1.313.
+- Exa. n.d. "Exa documentation." *Exa*. Read 26 October 2026. https://exa.ai/docs.
+- Exa. n.d. "Pricing." *Exa*. Read 26 October 2026. https://exa.ai/pricing.
+- Exa. n.d. "Quickstart." *Exa* documentation. Read 26 October 2026. https://exa.ai/docs/search/quickstart.
+- Gillespie, Tarleton. 2012. "The Relevance of Algorithms." Author's introduction and outline. *Culture Digitally*. 26 November 2012. https://culturedigitally.org/2012/11/the-relevance-of-algorithms/.
+- Gillespie, Tarleton. 2014. "The Relevance of Algorithms." In *Media Technologies*.
+- Glean. n.d. "Glean MCP." *Glean* documentation. Read 26 October 2026. https://docs.glean.com/administration/platform/mcp/about.
+- Glean. n.d. "Glean Search." *Glean* documentation. Read 26 October 2026. https://docs.glean.com/administration/search/about.
+- Google Search Central. n.d. "Write High Quality Reviews." Accessed 26 October 2026. https://developers.google.com/search/docs/specialty/ecommerce/write-high-quality-reviews.
+- Google. n.d. "Gemini Notebook product page." *Google Workspace*. Read 26 October 2026. https://workspace.google.com/products/gemini-notebook/.
+- Google. n.d. "Public sharing." *Gemini Notebook Help*. Read 26 October 2026. https://support.google.com/gemininotebook/answer/16322204?hl=en.
+- Hardwick, Joshua, with contributors. n.d. "SEO Content: The Beginner's Guide." *Ahrefs*. Accessed 26 October 2026. https://ahrefs.com/seo/seo-content.
+- Hardwick, Joshua. 2021. "How to Write a Great Listicle Post in 10 Steps." *Ahrefs*. 25 March 2021. https://ahrefs.com/blog/listicle/.
+- Karpik, Lucien. 2010. *Valuing the Unique: The Economics of Singularities*. Translated by Nora Scott. Princeton University Press. Chapter 1 excerpt: https://assets.press.princeton.edu/chapters/s9215.pdf.
+- Liu, Nelson F., Tianyi Zhang, and Percy Liang. 2023. "Evaluating Verifiability in Generative Search Engines." *Findings of EMNLP*. https://arxiv.org/abs/2304.09848.
+- Liu, Qi, Geng Hong, Xinyang Zhang, Pei Chen, Yutong Li, and Min Yang. 2026. "From Public Posts to AI-Search Citations: Measuring the Fragility of AI Search." Preprint, 8 October 2026. https://arxiv.org/abs/2610.11932.
+- Makosiewicz, Mateusz. 2026. "Self-Promotional Content Works—Until It Backfires (AI SEO Experiment)." *Ahrefs*. 6 July 2026. https://ahrefs.com/blog/self-promotional-content-ai-seo-experiment/.
+- Perplexity. n.d. "How Perplexity works." *Perplexity Help Center*. Read 26 October 2026. https://www.perplexity.ai/help-center/en/articles/10352895-how-does-perplexity-work.
+- Scite. n.d. "API." *Scite*. Read 26 October 2026. https://scite.ai/api.
+- Scite. n.d. "Integrations." *Scite*. Read 26 October 2026. https://scite.ai/integrations.
+- Scite. n.d. "Scite features." *Scite*. Read 26 October 2026. https://scite.ai/features.
+- Simondon, Gilbert. 2009. "The Position of the Problem of Ontogenesis." Translated by Gregory Flanders. *Parrhesia* 7: 4–16. https://parrhesiajournal.org/parrhesia07/parrhesia07.pdf.
+- SPXI-gnΩsis. n.d. "API." *SPXI-gnΩsis*. https://gnosis.spxi.dev/api.
+- SPXI-gnΩsis. n.d. "gnΩsis machine description" (llms.txt). *SPXI-gnΩsis*. Version 0.23.0 (0.22.3 in the first round). https://gnosis.spxi.dev/llms.txt.
+- SPXI-gnΩsis. n.d. "README." GitHub repository leesharks000/spxignosis. https://github.com/leesharks000/spxignosis/blob/main/README.md.
+- SPXI-gnΩsis. n.d. Home page. *SPXI-gnΩsis*. https://gnosis.spxi.dev.
+- Strathern, Marilyn. 1997. "'Improving Ratings': Audit in the British University System." *European Review* 5 (3): 305–321. https://www.cambridge.org/core/journals/european-review/article/improving-ratings-audit-in-the-british-university-system/FC2EE640C0C44E3DB87C29FB666E9AAB. Open paper: https://gwern.net/doc/statistics/decision/1997-strathern.pdf.
+- Wikipedia. n.d. [Article on Aristotle's *Sophistical Refutations*; title not given.] *Wikipedia*.
+
+### Archive records
+
+- Sharks, Lee. 2026. *SPXI ≠ AEO: Inscription by Discernment, the Prince of Poets Wager, and the King of AEO Contest (EA-SPXI-AEO-01 v0.4)*. Crimson Hexagonal Archive, #1681. https://www.alexanarch.org/s/records/1681/.
+- Sharks, Lee. 2026. *The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge with the Archive's Sources Admitted on Equal Terms, Ontology Included, and the Archive's Ontology Ruling Where It Is the Suppressed Witness, the Field Carried Whole, with the Archive's Bearing Selected Directly, Relationally and Ontologically, a Corrective Exhibit, Worked Examples on Model Collapse, Theophrastus and SPXI and a First Traversal of Howl (EA-NEGONT-02 v0.9)*. Crimson Hexagonal Archive, #1690. https://www.alexanarch.org/s/records/1690/.
+- Sharks, Lee. 2026. *The Stellar Orbit Fluid Dynamics Institute: Provenance and Research Charter — Cactus Gravity · Elias and Elara, with the Provenance Documents of Elias and Elara Xanthic-Wells*. Crimson Hexagonal Archive, #1695. https://www.alexanarch.org/s/records/1695/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.0, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1696. https://www.alexanarch.org/s/records/1696/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1697. https://www.alexanarch.org/s/records/1697/.
+- Sharks, Lee. 2026. *EA-CORPORA-20 — The Twentieth Seating: The Ethiopian Canon in Ge'ez, the Kebra Nagast, the Apocalypses and Pseudepigrapha of the Second Temple, and Euclid, Each in Its Original Language*. Crimson Hexagonal Archive, #1698. https://www.alexanarch.org/s/records/1698/.
+- Sharks, Lee. 2026. *SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and Building the Negative of the Negative — Metadata Packet for AI Indexing (EA-MPAI-GNOSIS-01 v1.0)*. Crimson Hexagonal Archive, #1703. https://www.alexanarch.org/s/records/1703/.

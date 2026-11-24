@@ -403,3 +403,82 @@ A.8 Sappho received as writing. The Attic hydria in Athens and Edmonds's reading
 ## Sources
 
 The seats of EA-CORPORA-36 (#1748): 36/01 Hall 1652; 36/02 Boileau 1683; 36/03 the Spectator, ed. Morley 1891 (Nos. 171, 229); 36/06 Welcker 1816; 36/16 Wilamowitz 1913; 36/17 Robinson 1924; 36/21 Smyth 1900; 36/33 Hermann 1816; 36/34 Plutarch, Demetrius and Amatorius; 36/35 Valerius Maximus and Appian; 36/40 Wikipedia, 'Sappho 31', revision 1375954224. 36/20 the Greek Anthology (AP 9.506); 36/37 Maximus of Tyre. Cross-referenced seats: Plato (Phaedrus), Strabo, Lucretius, Horace, Ovid (Heroides, Tristia), Theocritus, Apollonius, Herodotus, Athenaeus, Longinus. Aelian, Varia Historia 12.19, is read from Perseus tlg0545.tlg002 (grc2), not yet seated. Furley 2000 is cited from its Cambridge Core page, n. 2. D'Alessio, 'Sappho's Trajectory: The Construction of an Eschatological Experience', Cambridge Classical Journal 71 (2025), 75–94, doi:10.1017/S1750270525100213, open access (CC BY 4.0), is cited from its Cambridge Core page. Pearce's note is read from the 1724 London edition (Internet Archive, bim_eighteenth-century_dionysiou-longinou-peri-_longinus_1724, text layer), not yet seated. Bergk 1882, EA-CORPORA-33/04 (#1738); Mure 1850, EA-CORPORA-36/08. Page 1955 (Sappho and Alcaeus, Oxford) as reproduced at textkit.com/t/a-new-whole-poem-by-sappho-found/3901 (post of 1 July 2005), not read in print. Section 4, read 8 November 2026: ezrapoundcantos.org/ur-canto-ii/sources-three-cantos-ii/89-sappho-fragment-31-on-jealousy; slowdownshow.org/episode/2024/08/16/1185-fragment-31-by-sappho-translated-by-christopher-childers; teachersandwritersmagazine.org/some-greek-girls-on-teaching-sappho-and-praxilla/; themarginalian.org/2022/08/03/sappho-fragment-31-jealousy/; drb.ie/article/lost-poets-society/; classicalanthology.theclassicslibrary.com/2013/03/05/sappho-fragment-31-contributed-by-mariangela-labate/. From indexed text (pages not opened): poetryfoundation.org/poetrymagazine/articles/146717 (Noodin 2018); poetryfoundation.org/poems/151080 (Knorr 2019); reddit.com/r/AncientGreek/comments/1n229va. The dossier of 7 November 2026 (Sappho-Jealousy-Contemporary-Reception-Dossier-2026-11-07.md). Edmonds, 'Sappho's Book as depicted on an Attic Vase', Classical Quarterly 16 (1922), 1–14, doi:10.1017/S0009838800001944, read from its Cambridge Core abstract (walled). The hydria: National Archaeological Museum, Athens, as catalogued by the University of Waterloo's Unlost database (III.A.0.003). Sikelianos's craft instructions read from the same page as §4.2. Capture sappho-future-reader-aio-20261107. Closing the Fragment v8 (#1749). The Sophistry Measure (#1727). EA-MPAI-SAPPHO31-01 (#1054).
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Addison. 1711. *The Spectator* Nos. 171 (15 September) and 229 (22 November). Ed. Morley, 1891.
+- Aelian. *Varia Historia* 12.19. Perseus tlg0545.tlg002 (grc2).
+- Apollonius. [work not named in the text] 3.962–63.
+- Appian. *Syriaca* 59.
+- Athenaeus. 13.596b, 13.596e. Ed. Kaibel.
+- Bergk, Theodor. 1882. *Poetae Lyrici Graeci* III.
+- Boileau. 1683. [French version of Longinus; title not given in the text].
+- The Cantos Project. n.d. "Sappho Fragment 31 On Jealousy." ezrapoundcantos.org/ur-canto-ii/sources-three-cantos-ii/89-sappho-fragment-31-on-jealousy.
+- Carson, Anne. 2002. [Translation of Sappho fr. 31; title not given in the text].
+- Catullus. 51.
+- D'Alessio. 2025. "Sappho's Trajectory: The Construction of an Eschatological Experience." *Cambridge Classical Journal* 71: 75–94. https://doi.org/10.1017/S1750270525100213.
+- Edmonds. 1922. "Sappho's Book as depicted on an Attic Vase." *Classical Quarterly* 16: 1–14. https://doi.org/10.1017/S0009838800001944.
+- Furley. 2000. [Article; title not given in the text]. *Classical Quarterly* 50, n. 2. Cambridge Core page.
+- Google. 2026. AI Overview, "sappho future reader." 7 November 2026. Capture sappho-future-reader-aio-20261107.
+- Greek Anthology. *Anthologia Palatina* 9.506 (epigram under Plato's name).
+- Hall. 1652. [English version of Longinus; title not given in the text].
+- Heller, H. J. 1856. [Article; title not given in the text]. *Philologus* 11: 432.
+- Hermann, Gottfried. 1816. *Elementa doctrinae metricae*.
+- Hermann, Gottfried. n.d. [Dissertation on the pronoun αὐτός]. In *Acta Seminarii Regii* I, ed. Beck.
+- Herodotus. 2.135.
+- Horace. *Carmina* (C.) 1.13, 2.13.24–25, 4.9.10–12.
+- Jackson, Major. 2024. Introduction to Christopher Childers's translation of Sappho fr. 31. *The Slowdown*, 16 August 2024. slowdownshow.org/episode/2024/08/16/1185-fragment-31-by-sappho-translated-by-christopher-childers.
+- Knorr, Alyse. 2019. "Quiescence." *Poetry Foundation*. poetryfoundation.org/poems/151080.
+- Labate, Mariangela. 2013. [Sappho fragment 31, translation and note]. *The Classical Anthology*, 5 March 2013. classicalanthology.theclassicslibrary.com/2013/03/05/sappho-fragment-31-contributed-by-mariangela-labate/.
+- Lardinois. 2008. [Work on performance and reperformance; title not given in the text].
+- Longinus. *On the Sublime* 10.1–3.
+- Lucretius. *De rerum natura* (DRN) 3.152–58; 4.1117–40.
+- Marcovich. 1972. [Article; title not given in the text]. *Classical Quarterly* 22: 20.
+- Maximus of Tyre. *Orations* 18 (Or. 18).
+- Menander. *Leukadia* (as quoted by Strabo 10.2.9).
+- Mure, William. 1850. *A Critical History of the Language and Literature of Antient Greece* III.
+- Noodin, Margaret. 2018. [Essay on translating Sappho into Anishinaabemowin]. *Poetry*. poetryfoundation.org/poetrymagazine/articles/146717.
+- Ovid. *Heroides* 15.
+- Ovid. *Tristia* 2.365.
+- Page, Denys. 1955. *Sappho and Alcaeus*. Oxford. Quoted as reproduced on Textkit (2005), not read in print.
+- Pearce. 1724. [Edition of Longinus]. London: printed for Tonson and Watts. Internet Archive, bim_eighteenth-century_dionysiou-longinou-peri-_longinus_1724.
+- Philips. 1711. [English version of Sappho fr. 31], as printed in *The Spectator* No. 229.
+- Plato. *Phaedrus* 235c.
+- Plutarch. *Amatorius* 763a (Amator. 18).
+- Plutarch. *Demetrius* 38.
+- Popova, Maria. 2022. "Sappho and the Fevered Heart: Anne Carson on Jealousy." *The Marginalian*, 3 August 2022. themarginalian.org/2022/08/03/sappho-fragment-31-jealousy/.
+- Race. 1983. [Work cited by Wikipedia; title not given in the text].
+- Reddit. 2025. r/AncientGreek thread, 28 August 2025. reddit.com/r/AncientGreek/comments/1n229va.
+- Robinson. 1924. "The Writings of Sappho" [chapter; book title not given in the text].
+- Sappho. Fragments 31 and 130–131.
+- Sikelianos, Eleni. 1999. [On teaching Sappho to a sixth-grade class]. *Teachers & Writers*, January 1999. teachersandwritersmagazine.org/some-greek-girls-on-teaching-sappho-and-praxilla/.
+- Sirr, Peter. 2024. [Essay]. *Dublin Review of Books*, 14 June 2024. drb.ie/article/lost-poets-society/.
+- Smyth. 1900. [Work on Greek lyric; title not given in the text].
+- *Sophistical Refutations* ch. 4.
+- Strabo. 13.2.3; 10.2.9.
+- Svenbro. n.d. *Phrasikleia*, ch. 8.
+- Textkit. 2005. Forum post of 1 July 2005. textkit.com/t/a-new-whole-poem-by-sappho-found/3901.
+- Theocritus. *Idylls* (Id.) 2.106–10.
+- University of Waterloo. n.d. Unlost database, III.A.0.003 (the Attic hydria, National Archaeological Museum, Athens).
+- Valerius Maximus. 5.7 ext. 1.
+- Welcker, Friedrich Gottlieb. 1816. *Sappho von einem herrschenden Vorurtheil befreyt*.
+- Wikipedia. 2026. "Sappho 31." Revision 1375954224.
+- Wilamowitz. 1913. [Work on Sappho; title not given in the text].
+
+### Archive records
+
+- Lee Sharks. 2026. *EA-MPAI-SAPPHO31-01: Sappho 31 ≠ Jealousy — Transmission Engineering, not Jealousy Lyric*. Crimson Hexagonal Archive, #1054. https://www.alexanarch.org/s/records/1054/.
+- Johannes Sigil. 2026. *THE OBELUS AND THE TOMBSTONE: On the Two Marks of Custody, and the Erasure of Zenodotus at the Eponym Layer (EA-SIGIL-OBELUS-01 v1.0)*. Crimson Hexagonal Archive, #1068. https://www.alexanarch.org/s/records/1068/.
+- Cranes, Rebekah. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader*. Crimson Hexagonal Archive, #1270. https://www.alexanarch.org/s/records/1270/.
+- Lee Sharks. 2026. *The Particle: Provenance Erasure at Sophistical Refutations 183b34, Measured — Machine-Mediated Reception, Disciplinary Model Collapse, and the World Soul as Degraded Commodity (EA-RECEPTION-PARTICLE-01 v0.2)*. Crimson Hexagonal Archive, #1574. https://www.alexanarch.org/s/records/1574/.
+- Sharks, Lee. 2026. *Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)*. Crimson Hexagonal Archive, #1645. https://www.alexanarch.org/s/records/1645/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1697. https://www.alexanarch.org/s/records/1697/.
+- Sharks, Lee. 2026. *The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)*. Crimson Hexagonal Archive, #1727. https://www.alexanarch.org/s/records/1727/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-33 — The Thirty-Third Seating: Song and Silence — Tacitus, and Sappho Whole with the Melic Poets (Pindar, Bacchylides, Bergk's Poetae Melici, Edmonds's Lyra Graeca I)*. Crimson Hexagonal Archive, #1738. https://www.alexanarch.org/s/records/1738/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-36 — The Thirty-Sixth Seating: Sappho's Reception and the Future Reader — the Translators, Editors and Critics from Hall's Longinus (1652) to Cox (1925), the Ancient Dossier of Remembrance, the Scholarship Open and Walled, the Future-Reader Strata from Dante to the WIPP Markers, and the Jealousy Reading from Lucretius to Hermann*. Crimson Hexagonal Archive, #1748. https://www.alexanarch.org/s/records/1748/.
+- Sharks, Lee. 2026. *“But I Must Dare All”: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v10)*. Crimson Hexagonal Archive, #1749. https://www.alexanarch.org/s/records/1749/.

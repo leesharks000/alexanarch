@@ -257,3 +257,54 @@ Companions: *Beautiful and New* (#1579), on Plato's Second Letter and Socrates a
 *Version 1.1 (2026-11-20), at the author's word ("yup, thinkery to 1.1"): the hen and the kneading-trough added to 2.6, and the *Phaedo* to 2.7; the path column added to the table; §4, the education of a king, added from the evening's readings of Athenaeus, the *Cyropaedia*, the *Alcibiades I*, Plutarch and Arrian; the rule on posited sources stated in §5. Version 1.0 is #1793.*
 
 *Substrate: drafted by Claude (Anthropic) in session on 20 November 2026 at the author's request ("lets do one like the wills or two lists of stones or josephus tacitus and revelation merely establishing relations"), from the comparisons worked through with him that evening. Every Greek locus quoted is from the seated texts named.*
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aelian. n.d. [Report of Aristotle's departure from Athens; work not named]. Seat EA-CORPORA-41/06.
+- Aristophanes. *Clouds*. Perseus tlg0019.tlg003. Seat EA-CORPORA-06/02.
+- Aristotle. *Constitution of the Athenians*. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *De caelo*. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *GA* [as abbreviated in text]. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *Historia animalium*. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *IA* [as abbreviated in text]. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *Meteorologica*. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *PA* [as abbreviated in text]. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *Politics*. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *Rhetoric*. Seated Perseus text, EA-CORPORA-04/01.
+- Aristotle. *Sophistical Refutations*. Seated Perseus text, EA-CORPORA-04/01.
+- Arrian. *Anabasis*. Seat EA-CORPORA-13/02.
+- Athenaeus. Ed. Kaibel. Seat EA-CORPORA-31/01.
+- Diogenes Laertius. Seat EA-CORPORA-12/01.
+- Plato. *Alcibiades I*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Apology*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Crito*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Euthyphro*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Phaedo*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Statesman*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plato. *Symposium*. Ed. Burnet (via Perseus). Seat EA-CORPORA-01/08.
+- Plutarch. *Alexander*. Seat EA-CORPORA-13/01.
+- Simplicius. *In Physica*. Seat EA-CORPORA-41/11.
+- Theophrastus. *Characteres*. Ed. Diels. 1909.
+- Theophrastus. *De sensibus*. First1KGreek tlg0093.tlg003. Seat EA-CORPORA-09/01.
+- Theophrastus. *Pros Kasandron peri basileias* [On Kingship, to Cassander]. Fragment quoted in Athenaeus IV, Kaibel ch. 25.
+- Xenophon. *Agesilaus*. Seat EA-CORPORA-06/01.
+- Xenophon. *Cyropaedia*. Seat EA-CORPORA-06/01.
+- Xenophon. *Hiero*. Seat EA-CORPORA-06/01.
+- Xenophon. *Memorabilia*. Seat EA-CORPORA-06/01.
+
+### Archive records
+
+- Sharks, Lee. 2026. *EA-CORPORA-01/08 — Plato, Opera (Perseus Burnet), Seated and Verified*. Crimson Hexagonal Archive, #1506. https://www.alexanarch.org/s/records/1506/.
+- Sharks, Lee. 2026. *EA-CORPORA-04 — The Fourth Seating: Aristotle Undivided, Plotinus as Comparandum, and the Repair of the Seating Chain*. Crimson Hexagonal Archive, #1559. https://www.alexanarch.org/s/records/1559/.
+- Sharks, Lee. 2026. *EA-CORPORA-06 — The Sixth Seating: Kierkegaard as Second Calibration, and Xenophon and Aristophanes Held Apart*. Crimson Hexagonal Archive, #1562. https://www.alexanarch.org/s/records/1562/.
+- Sharks, Lee. 2026. *Beautiful and New: The Second Letter's Socrates and the Editing of a Received Character (v0.2)*. Crimson Hexagonal Archive, #1579. https://www.alexanarch.org/s/records/1579/.
+- Sharks, Lee. 2026. *EA-CORPORA-12 — The Twelfth Seating: The Transmission Texts — Diogenes Laertius and Strabo Seated Whole, the Peripatetic Wills and Catalogues Cut, and the Rule That Seatings Are Periodically Gathered*. Crimson Hexagonal Archive, #1580. https://www.alexanarch.org/s/records/1580/.
+- Sharks, Lee. 2026. *Catalogues and Wills: A Groundwork Note on the Peripatetic Transmission Texts — Relations Established, Readings Withheld (v0.3)*. Crimson Hexagonal Archive, #1581. https://www.alexanarch.org/s/records/1581/.
+- Sharks, Lee. 2026. *Two Lists of Stones: De lapidibus and the Apocalypse — a groundwork note on relations, withholding readings (v0.1)*. Crimson Hexagonal Archive, #1592. https://www.alexanarch.org/s/records/1592/.
+- Sharks, Lee. 2026. *The Portents Before the Fall: Josephus, Tacitus and the Apocalypse — a groundwork note on relations, with the archive's dates for Revelation (v1.0)*. Crimson Hexagonal Archive, #1737. https://www.alexanarch.org/s/records/1737/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-41 — The Forty-First Seating: Alexander, Antipater and Athens — the Tragedians Whole, Diodorus, Plutarch's Phocion, Aelian's Two Sins, Curtius, Porphyry's Theophrastus on the Jews, Simplicius's Diogenes of Apollonia, the Rabbinic Alexander at Jerusalem, and the Catilinarian Conspiracy with Appian and Dio*. Crimson Hexagonal Archive, #1792. https://www.alexanarch.org/s/records/1792/.
+- Sharks, Lee. 2026. *The Thinkery and the Lyceum: the Clouds and the Peripatetic corpus — a groundwork note on relations, withholding readings (v1.0)*. Crimson Hexagonal Archive, #1793. https://www.alexanarch.org/s/records/1793/.

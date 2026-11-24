@@ -101,3 +101,14 @@ A significant null is seated at the last state without passing through the third
 
 20. The archive is read by machines whether it asks them to or not, and the reading is composed at the surface where most readers now meet it: the summarizer as a horizon of reception (#1421), recorded by the Capture Registry (#1423). /ask/ makes the reading an act anyone can take: it puts the question in the reader's hand, sends it to the engine, and gives the answer a place to return to.
 21. Every query is also a measurement, taken at a fixed address, on a dated surface, with its sources visible. The page and the registry together make the archive's reception a record that accrues, read by its own observations rather than asserted.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Archive records
+
+- Johannes Sigil. 2026. *Prolegomena to the Historical Logos: A Foundational Field Statement for the Discipline of Logotic Transmission*. Crimson Hexagonal Archive, #902. https://www.alexanarch.org/s/records/902/.
+- Sharks, Lee. 2026. *The Summarizer as Horizon of Reception: Machine Composition and the Jaussian Frame*. Crimson Hexagonal Archive, #1421. https://www.alexanarch.org/s/records/1421/.
+- Sharks, Lee. 2026. *The Capture Registry: Reception, Erasure, and Supply in the Machine Composition Layer*. Crimson Hexagonal Archive, #1423. https://www.alexanarch.org/s/records/1423/.
+- Sharks, Lee. 2026. *Dead Letters: The University of Chicago's Classical Philology Journal, the Atom of Evidence, and Who Decides What Sappho Is (EA-MMRS-DL-01)*. Crimson Hexagonal Archive, #1783. https://www.alexanarch.org/s/records/1783/.

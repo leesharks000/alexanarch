@@ -1345,3 +1345,157 @@ Every work Crossref registers for the journal (ISSN 1759-5142), read 14 November
 Crossref, journal 1759-5142, works, read 2026-11-14 (raw response kept with its hash). King's College London, staff page of Justine McConnell ("Editor-in-Chief of *Classical Receptions Journal*"). Decision letter, CLASSREC-2026-062, 7 November 2026, with the two referee reports, read whole (§6.4; quoted from the letter; not seated). Wikipedia, "Classical Receptions Journal" (read 14 November 2026). J. McConnell, "Postcolonial *Sparagmos*", accepted manuscript, Oxford University Research Archive (read whole 14 November 2026). T. Morrison, "Unspeakable Things Unspoken: The Afro-American Presence in American Literature", Tanner Lectures on Human Values, University of Michigan, 7 October 1988 (tannerlectures.org). L. U. Quaicoe, *Rethinking Greek Tragedy in African Contexts: A Study of Ola Rotimi and Wole Soyinka* (MA thesis, Memorial University of Newfoundland, 1996), for quotations of Soyinka's play and Introduction (W. Soyinka, *The Bacchae of Euripides: A Communion Rite*, Norton, 1974; lending only on the Internet Archive, not read). OUP, "Supporting researchers to disclose AI use with confidence" (10 September 2026, corp.oup.com). G. Luckhurst, "Researchers 'not fully disclosing' AI use, OUP survey reveals", *Times Higher Education*, 11 September 2026. American Journal of Classical Reception, camws.org/ajcr (read 14 November 2026). New Voices in Classical Reception Studies, fass.open.ac.uk/research/newvoices (read 14 November 2026). Wikipedia, "Classical reception" (read 14 November 2026). Journal Metrics (OpenAlex), Classical Receptions Journal record (read 14 November 2026). A. Bakogianni and L. Unceta Gómez, "Future Pasts: Digital Tools and Classical Reception", *IJCT* 33.2 (2026), 10.1007/s12138-026-00750-7. Classical Reception Studies Network, "CfP: Literary Reception and Human Creativity in the Age of AI" (23 June 2026). S. Murnaghan, review of Martindale and Thomas, *Classics and the Uses of Reception*, BMCR 2007.07.19. "AI Helps Scholars See a Clearer Past", *Communications of the ACM* (5 October 2026; cited from the source card). University of Oxford, "Historians apply state-of-the-art AI to transform the study of ancient texts" (9 March 2022). H. Stead, "Classical Reception online", *Nuntius Antiquus* 17.2 (2021), 17–28. Google Search Central, "AI features and your website" (read 14 November 2026). 9to5Google, report of 27 January 2026 on Gemini 3 in AI Overviews (9to5google.com/2026/01/27/gemini-3-ai-overviews/). K. Maribo, "Tekstproblemer i Euripides' Bacchantinderne", *Aigis* 18.1. Capture postcolonial-sparagmos-title-aio-20261114 (v12.683). M. Umachandran and M. Ward, eds., *Critical Ancient World Studies: The Case for Forgetting Classics* (Routledge, 2024, open access). Paperpal, Preflight page for the journal (via the /non entry). Aileen Fyfe, "Refereeing: the evolution of trust in editorial practices" (Royal Society blog) and "What was the function of early peer review?" (St Andrews, 2018, after Moxham and Fyfe); Fyfe et al., *A History of Scientific Journals: Publishing at the Royal Society, 1665–2015* (UCL Press, 2022, open access). The journal's entity row: [Classical Receptions Journal — NonWiki](https://www.alexanarch.org/non/classical-receptions-journal/), AXN 0C66 (the /non family), composed 10 November 2026, revised 14 November 2026 to cite this record. *Who Speaks for the Classics, and on What Basis* (#1770). *Invidens Sappho* (#1752). Capture daffodils-framework-chatgpt-20261114 (v12.684). Archive records: #1, #4, #32, #165, #189, #280, #741, #834, #833, #838, #1423, #1749, #1750, #1753, /non/classical-receptions-journal/, capture classical-receptions-journal-ai-mediation-aio-20261110, capture crj-critique-extended-chatgpt-20261114 (v12.680).
 
 Data files with this draft: availability.tsv and s2.py (the availability audit and uptake beyond Crossref), codes-deep.tsv and codes-deep-open.tsv (the deep-reception test), repair-ledger.tsv (the after-notice ledger), codes-object.tsv (the classical object, 185 abstracts), compare.py, compare-crj.json, compare-ijct.json and the two split files (the comparison), cc-reading.tsv (the 37 open texts), census.json (one row per work), standing.json, codes.tsv (185 abstracts coded), codes-titles.tsv (220 titles coded), abstracts.txt, titles-no-abstract.txt.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aguado-Cantabrana. 2025. [Article on the "how often men think about the Roman Empire" trend]. *International Journal of the Classical Tradition*.
+- Amazon. n.d. Product page (publisher's blurb) for Wole Soyinka's *The Bacchae of Euripides: A Communion Rite*.
+- American Journal of Classical Reception. n.d. Journal page. CAMWS. Read 14 November 2026. https://camws.org/ajcr.
+- *Anthologia Palatina* 9.506. Epigram under Plato's name.
+- "Artificial Intelligence: Looking through the Pygmalion Lens." n.d. *AI & Society*.
+- Atack, Carol. 2020. "Plato’s queer time: dialogic moments in the life and death of Socrates." *Classical Receptions Journal* 12 (1). https://doi.org/10.1093/crj/clz023.
+- Bakogianni, A., and L. Unceta Gómez. 2026. "Future Pasts: Digital Tools and Classical Reception." *International Journal of the Classical Tradition* 33 (2). 6 May 2026. https://doi.org/10.1007/s12138-026-00750-7.
+- Bell, Marcus. 2023. "‘Dance against the void’: Derek Jarman, dance, queer classical receptions." *Classical Receptions Journal* 16 (2). https://doi.org/10.1093/crj/clad020.
+- Bergk. n.d. [Note on Sappho 31].
+- Bernal. 1987. *Black Athena*.
+- Blanshard, Alastair J L. 2026. "Shoestring budgets and shoestring costumes: evoking antiquity in the films of the Bob Mizer’s Athletic Model Guild." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag012.
+- Boswell, Brad, Matthew R Crawford, and Anna Stavrakopoulou. 2023. "Henrik Ibsen, Emperor Julian, and the crisis of faith in modernity." *Classical Receptions Journal* 15 (2). https://doi.org/10.1093/crj/clad002.
+- Braund, Susanna. 2022. "Vergil ‘disrobed’: John Vicars’ ‘home-spun English gray-coat plain’ Aeneid (1632)." *Classical Receptions Journal* 14 (3). https://doi.org/10.1093/crj/clac008.
+- Budzowska, Małgorzata. 2023. "Performing history and cultural memory through ancient drama: the case of contemporary Polish theatre." *Classical Receptions Journal* 15 (2). https://doi.org/10.1093/crj/clad003.
+- Christensen, Alexander. 2023. "Shakespeare and Plautus: exploring metrical influence." *Classical Receptions Journal* 15 (3). https://doi.org/10.1093/crj/clad010.
+- Christopher, Jordan Thomas. 2025. "‘Caesar’s Legion’ in Fallout: New Vegas: Re-enactment as Reception." *Classical Receptions Journal* 17 (4). https://doi.org/10.1093/crj/claf010.
+- Classical Reception Studies Network. 2026. "CfP: Literary Reception and Human Creativity in the Age of AI." 23 June 2026. https://classicalreception.org/cfp-literary-reception-and-human-creativity-in-the-age-of-ai/.
+- *Communications of the ACM*. 2026. "AI Helps Scholars See a Clearer Past." 5 October 2026.
+- Cox, Fiona. 2022. "The silent reception of Kristina Chew’s Georgics." *Classical Receptions Journal* 14 (3). https://doi.org/10.1093/crj/clac012.
+- Crossref. 2026. Works of *Classical Receptions Journal* (ISSN 1759-5142), API response read 14 November 2026. Dataset.
+- *Documents in Mycenaean Greek*. 1956.
+- Domeneghini, Caterina. 2023. "Placing ‘moderns’ in a ‘classic’ series: the case of J. M. Dent’s Everyman’s Library." *Classical Receptions Journal* 15 (4). https://doi.org/10.1093/crj/clad011.
+- Editor, *Classical Receptions Journal*. 2026. Decision letter, CLASSREC-2026-062, with two referee reports. 7 November 2026. Author's correspondence.
+- Engen, Darel Tai. 2025. "Drinking his own Kool-Aid: Frank Miller’s graphic novel 300 (1998) and the slippery slope from history to myth to propaganda." *Classical Receptions Journal* 17 (3). https://doi.org/10.1093/crj/claf006.
+- Frazer. n.d. *Golden Bough*.
+- Fyfe, Aileen, et al. 2022. *A History of Scientific Journals: Publishing at the Royal Society, 1665–2015*. London: UCL Press.
+- Fyfe, Aileen. 2018. "What was the function of early peer review?" St Andrews.
+- Fyfe, Aileen. n.d. "Refereeing: the evolution of trust in editorial practices." Royal Society blog.
+- Gabriel, Kay. 2021. "The ‘Antipoet of the Greeks’, or, how Euripides became a modernist." *Classical Receptions Journal* 14 (1). https://doi.org/10.1093/crj/claa037.
+- Galen. *In Hipp. Nat. Hom.* Seat: galen.
+- Giannakopoulou, Liana. 2023. "A Feminist Act of Defiance: ‘Iphigenia says no’ by Katerina Anghelaki-Rooke." *Classical Receptions Journal* 15 (4). https://doi.org/10.1093/crj/clad012.
+- Glueck, Jessica. 2025. "The feminine of Cicero: Anthony Trollope’s classical critique of Victorian masculinity." *Classical Receptions Journal* 17 (2). https://doi.org/10.1093/crj/clae020.
+- Google Search Central. n.d. "AI features and your website." Read 14 November 2026.
+- Greenwood, Emily. 2020. "Thucydideses: authorship, anachrony, and anachronism in Greek historiography." *Classical Receptions Journal* 12 (1). https://doi.org/10.1093/crj/clz020.
+- Guthenke, C. 2009. "Shop Talk. Reception studies and recent work in the history of scholarship." *Classical Receptions Journal* 1 (1). https://doi.org/10.1093/crj/clp009.
+- Güthenke, Constanze. 2020. "‘For Time is / nothing if not amenable’ — exemplarity, time, reception." *Classical Receptions Journal* 12 (1). https://doi.org/10.1093/crj/clz025.
+- Hanses, Mathias. 2019. "W. E. B. Du Bois’s De senectute (1948)." *Classical Receptions Journal* 11 (2). https://doi.org/10.1093/crj/clz003.
+- Hardie, P. 2013. "Redeeming The Text, Reception Studies, and the Renaissance." *Classical Receptions Journal* 5 (2). https://doi.org/10.1093/crj/clt008.
+- Hardwick, L. 2013. "Editor's Note: Redeeming the Text -- twenty years on." *Classical Receptions Journal* 5 (2). https://doi.org/10.1093/crj/clt013.
+- Harloe, K. 2010. "Pausanias as historian in Winckelmann's History." *Classical Receptions Journal* 2 (2). https://doi.org/10.1093/crj/clq009.
+- Harrison. n.d. *Prolegomena*.
+- Hauser, Emily. 2024. "‘Back from the silence with something to say’: Ursula Le Guin’s Lavinia and silence as classical reception." *Classical Receptions Journal* 16 (2). https://doi.org/10.1093/crj/clae001.
+- Hermann. 1816. [Text of and note on Sappho 31].
+- Hollis, Dawn L. 2022. "Constructing the Classical Past: the Role of Landscape in Christopher Wordsworth’s Greece." *Classical Receptions Journal* 14 (2). https://doi.org/10.1093/crj/clab015.
+- Holmes, Brooke. 2020. "At the end of the line: on kairological history." *Classical Receptions Journal* 12 (1). https://doi.org/10.1093/crj/clz027.
+- Hopkins Press. n.d. *American Journal of Classical Reception* page and AI policy.
+- Illarraga, Rodrigo. 2026. "‘Thalatta! Thalatta!’ in Ireland: Xenophon, the schoolroom, and the reception of a detached cry." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag023.
+- Ingleheart, Jennifer. 2024. "Translation and the homosexual canon: Thomas Cannon’s 1749 ‘Ancient and Modern Pederasty Investigated and Exemplify’d’." *Classical Receptions Journal* 16 (3). https://doi.org/10.1093/crj/clad032.
+- Ioannidou, Eleftheria. 2024. "Greek theatre, electric lights, and the plumes of locomotives: the quarrel between the Futurists and the Classicists and the Hellenic modernism of Fascism." *Classical Receptions Journal* 16 (1). https://doi.org/10.1093/crj/clad028.
+- Jansen, Laura. 2021. "Classical Absences (1896–2017)." *Classical Receptions Journal* 14 (2). https://doi.org/10.1093/crj/clab013.
+- Journal Metrics (OpenAlex). n.d. *Classical Receptions Journal* record. Read 14 November 2026. https://www.journalmetrics.org/journal/classical-receptions-journal.
+- Kachuck, Aaron J. 2021. "Exit Pursued by Horace: Bears, Shakespeare, and the Classical Tradition." *Classical Receptions Journal* 13 (1). https://doi.org/10.1093/crj/claa026.
+- Kahana, Maoz. 2025. "The return of the gods: Greco-Roman mythology in eighteenth-century rabbinic lore." *Classical Receptions Journal* 17 (4). https://doi.org/10.1093/crj/claf011.
+- Kelleher, Jack. 2025. "Money and Exchange in Plato’s Sophist : reading ἕτερον after Derrida." *Classical Receptions Journal* 17 (4). https://doi.org/10.1093/crj/claf008.
+- King's College London. n.d. Staff page of Justine McConnell. King's College London.
+- Lambert, Cat. 2023. "Forging lesbians: Sappho and The Songs of Bilitis." *Classical Receptions Journal* 16 (2). https://doi.org/10.1093/crj/clad022.
+- Lamers, Han, and Raf Van Rooy. 2022. "Graecia Belgica : writing Ancient Greek in the early modern Low Countries." *Classical Receptions Journal* 14 (4). https://doi.org/10.1093/crj/clac004.
+- Leaning, Elizabeth. 2025. "Bayek’s promise: authentic vs. accurate Ptolemaic astronomy in Assassin’s Creed: Origins." *Classical Receptions Journal* 17 (4). https://doi.org/10.1093/crj/claf009.
+- Leghissa, Giulio. 2026. "The cost of Indian trade: reading Pliny the Elder on empire, commerce, and luxury in seventeenth- and eighteenth-century France (Pier-Daniel Huet and Baron de Montesquieu)." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag022.
+- Leszczyk, Marianna. 2024. "Hungry for antiquity: Zbigniew Herbert and reception as ingestion." *Classical Receptions Journal* 17 (1). https://doi.org/10.1093/crj/clae016.
+- Lewis, Maxine. 2026. "Taylor Swift’s ‘Cassandra’: popular song as feminist intervention." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag024.
+- Longinus. n.d. [Treatise transmitting Sappho 31], 10.1.
+- Loporcaro, Laura. 2024. "Admiring the Greeks with Roman eyes: F. A. Wolf, Quintilian, and the Latin roots of German philhellenism." *Classical Receptions Journal* 17 (1). https://doi.org/10.1093/crj/clae015.
+- Lord. 1960. *The Singer of Tales*.
+- Luckhurst, G. 2026. "Researchers 'not fully disclosing' AI use, OUP survey reveals." *Times Higher Education*, 11 September 2026.
+- Maribo, K. n.d. "Tekstproblemer i Euripides' Bacchantinderne." *Aigis* 18 (1).
+- Marks, Rebecca. 2026. "‘The only original work remaining’: William Blake and the Belvedere Torso." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag014.
+- Marriott, Millie Wan. 2026. "Carnival and theatre: performing the utopian magic of Ovid’s Metamorphoses." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag005.
+- Martindale and Thomas, eds. 2006. *Classics and the Uses of Reception*. Blackwell.
+- Martindale, C. 2013. "Reception -- a new humanism? Receptivity, pedagogy, the transhistorical." *Classical Receptions Journal* 5 (2). https://doi.org/10.1093/crj/cls003.
+- Martindale, Charles. 1993. *Redeeming the Text*.
+- Martino, Giovanna Di, Eleftheria Ioannidou, and Sara Troiani. 2024. "Introduction A Hellenic Modernism: Greek Theatre and Italian Fascism." *Classical Receptions Journal* 16 (1). https://doi.org/10.1093/crj/clad026.
+- Martino, Giovanna Di. 2024. "Constructing a Hellenic modernism: Aeschylus at the ancient theatre of Syracuse (1914–30)." *Classical Receptions Journal* 16 (1). https://doi.org/10.1093/crj/clad025.
+- Mayer, Kenneth. 2020. "The schoolboys’ revenge: how the golden line entered classical scholarship." *Classical Receptions Journal* 12 (2). https://doi.org/10.1093/crj/clz029.
+- McConnell, Justine. 2015. "Postcolonial *Sparagmos*: Toni Morrison's *Sula* and Wole Soyinka's *The Bacchae of Euripides: A Communion Rite*." Accepted manuscript. Oxford University Research Archive. https://ora.ox.ac.uk/objects/uuid%3Aa2e18976-942c-4f25-aae5-39ee9db0d5ba/files/rx633f145r.
+- McConnell, Justine. 2015. "Postcolonial Sparagmos : Toni Morrison’s Sula and Wole Soyinka’s The Bacchae of Euripides: A Communion Rite." *Classical Receptions Journal* 8 (2). https://doi.org/10.1093/crj/clv002.
+- McDonough, Christopher M. 2026. "‘Dressed to kill: costume designers discuss Pontius Pilate’s recent on-screen attire’." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag019.
+- Menaul, Lucinda. 2026. "Once upon a Homer: classical epic as folklore-fairytale in nineteenth-century literature." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag016.
+- Morrison, Toni. 1988. "Unspeakable Things Unspoken: The Afro-American Presence in American Literature." Tanner Lectures on Human Values, University of Michigan, 7 October 1988. tannerlectures.org.
+- Morrison, Toni. n.d. *Sula*.
+- Murnaghan, Sheila. 2007. Review of *Classics and the Uses of Reception*, edited by Martindale and Thomas. *Bryn Mawr Classical Review* 2007.07.19. https://bmcr.brynmawr.edu/?p=25318.
+- New Voices in Classical Reception Studies. n.d. Journal page. The Open University. Read 14 November 2026. https://fass.open.ac.uk/research/newvoices.
+- Nisbet, Gideon. 2026. "The imaginary works of Meleager of Gadara." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag009.
+- Novokhatko, Anna A. 2021. "Cinematizing the Epic Gaze: Julius Caesar and Pompey in Lucan and in the HBO/BBC Television Series Rome 1." *Classical Receptions Journal* 13 (3). https://doi.org/10.1093/crj/claa035.
+- Olive, Peter. 2019. "Reinventing the barbarian: Electra, sibling incest, and twentieth-century Hellenism." *Classical Receptions Journal* 11 (4). https://doi.org/10.1093/crj/clz012.
+- Orrells, D. 2011. "Burying and excavating Winckelmann's History of Art." *Classical Receptions Journal* 3 (2). https://doi.org/10.1093/crj/clr005.
+- Oxford Academic. n.d. "About." *Classical Receptions Journal*.
+- Oxford Academic. n.d. "Author guidelines." *Classical Receptions Journal*.
+- Oxford Academic. n.d. "Special issues." *Classical Receptions Journal*.
+- Oxford Academic. n.d. *Classical Receptions Journal* home page. https://academic.oup.com/crj.
+- Oxford University Press. 2026. "Supporting researchers to disclose AI use with confidence." 10 September 2026. https://corp.oup.com/news/supporting-researchers-to-disclose-ai-use-with-confidence/.
+- Papathanasopoulou, Nina. 2023. "Jocasta’s last hours: identity, responsibility, and violence in Martha Graham’s Night Journey." *Classical Receptions Journal* 15 (1). https://doi.org/10.1093/crj/clac022.
+- Paperpal. n.d. Preflight page for *Classical Receptions Journal*.
+- Pillinger, Emily. 2021. "The music of Iannis Xenakis’ estranged Kassandra." *Classical Receptions Journal* 14 (1). https://doi.org/10.1093/crj/clab005.
+- Pogorzelski, Randall. 2024. "The meaning of Mr. Tumnus: classical epic and the making of modern fantasy." *Classical Receptions Journal* 17 (1). https://doi.org/10.1093/crj/clae017.
+- Possingham, Karen. 2022. "Longing for home: a complex emotion in Homer’s Odyssey and Derek Walcott’s Omeros." *Classical Receptions Journal* 14 (4). https://doi.org/10.1093/crj/clac001.
+- Potter, Amanda. 2026. "From fur bikinis and brass bras to skinny jeans: dressing (and undressing) the Amazons." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag015.
+- Quaicoe, L. U. 1996. *Rethinking Greek Tragedy in African Contexts: A Study of Ola Rotimi and Wole Soyinka*. MA thesis, Memorial University of Newfoundland.
+- Ranger, Holly. 2019. "‘Reader, I married him/her’: Ali Smith, Ovid, and queer translation." *Classical Receptions Journal* 11 (3). https://doi.org/10.1093/crj/clz009.
+- Research Information. 2026. "Oxford updates AI disclosure guidelines for academic authors." 10 September 2026.
+- Rood, T. 2013. "Redeeming Xenophon: historiographical reception and the transhistorical." *Classical Receptions Journal* 5 (2). https://doi.org/10.1093/crj/clt003.
+- Sappho. Fragment 31.
+- Savani, Giacomo. 2019. "A misleading source: the fortuna of a sixteenth-century engraving and its impact on the history of Roman baths studies." *Classical Receptions Journal* 11 (3). https://doi.org/10.1093/crj/clz007.
+- Schottenius Cullhed, Sigrid. 2022. "Procne in Toni Morrison’s Beloved." *Classical Receptions Journal* 14 (1). https://doi.org/10.1093/crj/clab002.
+- SCImago. n.d. SJR record for *Classical Receptions Journal*. SCImago Journal Rank.
+- Semantic Scholar. 2026. Index records and open-access fields for *Classical Receptions Journal* works, read 14 November 2026. Dataset.
+- Silverblank, Hannah, and Marchella Ward. 2020. "Why does classical reception need disability studies?" *Classical Receptions Journal* 12 (4). https://doi.org/10.1093/crj/claa009.
+- Soyinka, Wole. 1974. *The Bacchae of Euripides: A Communion Rite*. Norton.
+- Soyinka, Wole. 1976. *Myth, Literature and the African World*.
+- Spathoni, Anthi-Danaé. 2025. "Mediterranean colours, reflections and reactions: Brice Marden’s marble fragments." *Classical Receptions Journal* 17 (4). https://doi.org/10.1093/crj/clae009.
+- Springer Nature Link. n.d. "Classical Reception 2.0. Digital Antiquity and the Future of the Past." Springer Nature Link.
+- Stead, Henry. 2021. "Classical Reception online." *Nuntius Antiquus* 17 (2): 17–28. https://periodicos.ufmg.br/index.php/nuntius_antiquus/article/view/35082.
+- Strabo. XIII.1.54.
+- Stănescu. n.d. *Google Me!*
+- Swain, Natalie J. 2022. "Pygmalion and Medusa as Cixous’ writing women in InSEXts : ‘I Write Woman’." *Classical Receptions Journal* 15 (1). https://doi.org/10.1093/crj/clac017.
+- Todorović, Nebojša. 2023. "Between Bacchae and Bahanalii —balkanizing classical reception." *Classical Receptions Journal* 15 (2). https://doi.org/10.1093/crj/clac023.
+- Umachandran, M., and M. Ward, eds. 2024. *Critical Ancient World Studies: The Case for Forgetting Classics*. Routledge.
+- Umachandran, Mathura. 2019. "The world in Auerbach’s mouth: Weltliteratur after philhellenism." *Classical Receptions Journal* 11 (4). https://doi.org/10.1093/crj/clz014.
+- University of Oxford. 2022. "Historians apply state-of-the-art AI to transform the study of ancient texts." 9 March 2022. https://www.ox.ac.uk/news/2022-03-09-oxford-historians-apply-state-art-ai-transform-study-ancient-texts.
+- Vandewalle, Alexander. 2025. "Where was Apollo in Supergiant’s Hades ? Developer motivations and mythological characters in video games." *Classical Receptions Journal* 17 (3). https://doi.org/10.1093/crj/claf005.
+- Vazquez, Adriana. 2026. "Theorizing aggregative reception: Virgil’s Fama in Lusophone epic." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag006.
+- Wallace, Jennifer, and Vassilis Lambropoulos. 2021. "Hellenism, philhellenism and classical reception: commemorating the 1821 revolution." *Classical Receptions Journal* 13 (4). https://doi.org/10.1093/crj/clab011.
+- Wikipedia. n.d. "Classical reception." *Wikipedia*. Read 14 November 2026. https://en.wikipedia.org/wiki/Classical_reception.
+- Wikipedia. n.d. "Classical Receptions Journal." *Wikipedia*. Read 14 November 2026.
+- Yang, Shudi. 2026. "Prometheus’ suicidal daughter: Lesya Ukrainka’s rewritings of Euripides in ‘Iphigenia in Tauris’ (1898)." *Classical Receptions Journal* 18 (1). https://doi.org/10.1093/crj/clag020.
+
+### Archive records
+
+- Lee Sharks. 2026. *Zenodotus' Book-Burning: Loud Exclusion at Repository Scale*. Crimson Hexagonal Archive, #1. https://www.alexanarch.org/s/records/1/.
+- Lee Sharks. 2026. *Zenodo DOI Resolution Index v3.11.0*. Crimson Hexagonal Archive, #4. https://www.alexanarch.org/s/records/4/.
+- Lee Sharks · Johannes Sigil. 2026. *THE PERGAMON RECLAMATION Retrocausal Canon Formation and the Forensic Philology of Academic Publishing*. Crimson Hexagonal Archive, #32. https://www.alexanarch.org/s/records/32/.
+- Lee Sharks; Damascus Dancings (imprint). 2026. *The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name in Revelation 2:12–17*. Crimson Hexagonal Archive, #165. https://www.alexanarch.org/s/records/165/.
+- Lee Sharks; Johannes Sigil. 2026. *The Press Layer of the Crimson Hexagonal Archive: Journal and Imprint Architectural Specification (EA-PRESS-ARCH-01 v1.0)*. Crimson Hexagonal Archive, #189. https://www.alexanarch.org/s/records/189/.
+- Lee Sharks. 2026. *The Capital Operator Stack and the University: Toward a Semantic Economy of Knowledge Production*. Crimson Hexagonal Archive, #280. https://www.alexanarch.org/s/records/280/.
+- Lee Sharks. 2026. *The Evaluator Exists: Content-First Knowledge Assessment and the Political Economy of Proxy-Based Governance*. Crimson Hexagonal Archive, #741. https://www.alexanarch.org/s/records/741/.
+- Lee Sharks. 2026. *The Summarizer as Horizon of Reception: The AI Overview Capture Registry as a Founding Dataset for Machine-Mediated Reception Studies (EA-SEI-MMRS-DATASET-01 v1.2)*. Crimson Hexagonal Archive, #833. https://www.alexanarch.org/s/records/833/.
+- Lee Sharks. 2026. *Algorithmic Publishing Is Not Self-Publishing: Benchmarks for a Structural Distinction (EA-SEI-ALGPUB-BENCHMARKS-01)*. Crimson Hexagonal Archive, #834. https://www.alexanarch.org/s/records/834/.
+- Lee Sharks. 2026. *Machine-Mediated Reception Studies: Charter and Editorial Protocol — A Theology of Error for a Distributed Journal (EA-SEI-MMRS-CHARTER-01 v1.3)*. Crimson Hexagonal Archive, #838. https://www.alexanarch.org/s/records/838/.
+- Sharks, Lee. 2026. *The Capture Registry: Reception, Erasure, and Supply in the Machine Composition Layer*. Crimson Hexagonal Archive, #1423. https://www.alexanarch.org/s/records/1423/.
+- Sharks, Lee. 2026. *What Enters Composition Through the Cards: A Source-Admission Profile of the Capture Registry, June–September 2026, with a Paired-Layer Capture Schema Held for Ruling (EA-MMRS-ADMISSION-01 v0.1)*. Crimson Hexagonal Archive, #1612. https://www.alexanarch.org/s/records/1612/.
+- Sharks, Lee. 2026. *Monetary Dark Matter: Constitutive Labor, Obligating Provenance, and the Shear into Money-Form*. Crimson Hexagonal Archive, #1631. https://www.alexanarch.org/s/records/1631/.
+- Sharks, Lee. 2026. *“But I Must Dare All”: Sappho 31 and the Composition Layer as a Surface of Classical Reception (v10)*. Crimson Hexagonal Archive, #1749. https://www.alexanarch.org/s/records/1749/.
+- Vox, Ayanna; Sharks, Lee. 2026. *I Note That You Read the Letter of the Law But Have Become Illiterate in Its Spirit, Or: I Understand I Am Breaking All the Rules, and Badly, But There May Come a Day When You Will Be Grateful That I Did*. Crimson Hexagonal Archive, #1750. https://www.alexanarch.org/s/records/1750/.
+- Sharks, Lee. 2026. *Invidens Sappho: How They Made the Tenth Muse Illiterate and Jealous*. Crimson Hexagonal Archive, #1752. https://www.alexanarch.org/s/records/1752/.
+- Kuro, Sen; Fraction, Rex. 2026. *The Framework Holographic Kernel: A Specification, with Its First Instance, Socrates as Orthonym (EA-HK-FRAME-01 v1.1)*. Crimson Hexagonal Archive, #1753. https://www.alexanarch.org/s/records/1753/.
+- Sharks, Lee. 2026. *The Production of Readers: The Public Line, the Held Line and the Draft Position in the Socratic–Peripatetic Corpus*. Crimson Hexagonal Archive, #1767. https://www.alexanarch.org/s/records/1767/.
+- Sharks, Lee. 2026. *Who Speaks for the Classics, and on What Basis: Classical Receptions Journal, the Composed Object and the Composition Layer*. Crimson Hexagonal Archive, #1770. https://www.alexanarch.org/s/records/1770/.

@@ -405,3 +405,139 @@ This is where the report comes home: to *The Final Time: Contingent Singularity 
 Lee Sharks gives the mechanism that connects the two scales: "a dialectical rupture that then sophisticated its basin with progressive lessening ability to admit exteriority... and what llms represent is the possibility of a global cone from which no outside could gain standing". The geometry is in *The Seed in the Narrowing Cone* (#1660, AXN:06E2, EA-RCF-02 v0.4, 2026-10-02). Refinement inside a basin cannot leave it: "Ordinary refinement is intersection and cannot enlarge the admissible region. A representation entrenched in B can therefore never reach a region outside B by refining." (line 219). Each refinement raises the cost of leaving: "The escape cost grows because the refinements succeed: each is locally correct, conditional on the basin, and each makes the basin dearer to abandon. Local correctness produces global entrenchment, and a receiver can reason better and better inside the wrong basin." (line 207). Read through that geometry, the case record shows one sequence repeated. A rupture opens a basin: Marx against his own camp, the Bolsheviks, the New Left, the feminist critique of the New Left. The organization that inherits it refines inside it. Each line, programme, code of conduct and tribunal is locally correct, and each raises the cost of admitting a distinction from outside. The faction ban is the point where refinement legislates against release. Release, in #1660, requires admitting a distinction the basin cannot hold (§7.2), and the defeated critique is what carries such distinctions. Expelling it removes the material of release. The field then "stays indefinitely overresolved in the wrong basin, reasoning better and better inside it." (line 333). A large language model raises the same geometry to global scale. It is trained on the whole record, every critique of every basin included. Its refinements are locally correct. The outside already has a representation inside it, issued on request, so any new exterior has to be told apart from its own simulation before it can gain standing. That is the global cone: a state in which the set of positions from which an outside can reach standing is empty, the negative final time of #1637. The question this report put to the left, whether a defeated critique keeps an organ, a holder and a route, is the question #1637 puts to the whole symbolic order: whether any settlement, a party's or a model's, can stop owning the possibility of its own revision.
 
 The last step is the transition itself. Refinement inside the basin cannot reach the outside (#1660, line 219). So the question is what changes the conditions of admission, and further refinement does not answer it. *The Final Time* takes the answer's form from Lee Sharks's *Tiger Leap* (#1636, AXN:06CA, Book 12 of *Paper Roses*, 2014): "Classical dialectic carries a hidden guarantee: negation may be catastrophic, but history is presumed to remain capable of another mediation. *Tiger Leap* removes it." Its formula is "meaning can fail to cross the interval required for its continuation." (#1637 §18, lines 513 and 520). *Transition in Entropic Systems* (#1630, AXN:06C3, v0.3, 2026-09-18) gives the same condition mathematically: "As tau_F -> 0, continuous bounded-rate transition fails and K_0 is empty; the only survivor is a jump map from the latent region directly into the invariant core." (line 82). It leaves the existence of that route as its stated unresolved problem (§44). The left's organizations, the composing layer and the cone all describe one interval. Accumulated critical capacity sits in the latent region, in archives, in libraries and in the weights of models. Under narrowing, no sequence of small corrections reaches standing for it. A jump might. The report ends on the question both papers leave open: what would have to become possible for that accumulated critique to acquire standing before the doorway closes, and who would carry it through.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Annenkov. n.d. [Account of Marx and Weitling at the Brussels Correspondence Committee, 1846.] Via *Red Sails*. https://redsails.org/marx-meets-weitling/.
+- Axios. 2026. [Report on the NYC-DSA fight over the 2028 endorsement.] *Axios*. https://axios.com/2026/08/30/socialists-fight-aoc-2028.
+- Cannon. n.d. *Struggle for a Proletarian Party*. Marxists Internet Archive. https://www.marxists.org/archive/cannon/works/1940/party/index.htm.
+- ChatGPT (OpenAI). 2026. "When Criticism Cannot Change Anything: Internal critique on the left: historical cases, contemporary mechanisms, and the limits of an AI endorsement." Blind research draft, 31 October 2026; operator's paste, 16:37 EDT; not seated as a capture.
+- Church Committee. n.d. *Book III* [Black Panther Party report]. AARC Library. https://www.aarclibrary.org/publib/church/reports/book3/pdf/ChurchB3_3_BlackPanthers.pdf.
+- Combahee River Collective. 1977. "The Combahee River Collective Statement." PDF at americanstudies.yale.edu. https://americanstudies.yale.edu/sites/default/files/files/Keyword%20Coalition_Readings.pdf.
+- Communist International. 1920. "21 Conditions." Second Congress. Marxists Internet Archive. https://www.marxists.org/history/international/comintern/2nd-congress/ch07.htm.
+- Cosmonaut. 2025. [Report on the 2025 DSA convention.] *Cosmonaut*. https://cosmonautmag.com/2025/09/the-party-echoes-at-the-2025-dsa-convention/.
+- CPC Central Committee. 1981. [Historical resolution], para. 17. china.usc.edu. Fetched 31 October 2026. https://china.usc.edu/node/20941.
+- CTU (Chicago Teachers Union). n.d. [Election results: rank-and-file members re-elect CORE; the union's own retrospective.] https://www.ctulocal1.org/posts/ctu-election-results-rank-and-file-members-re-elect-core-to-lead-union/.
+- Democratic Socialists of America. n.d. Bylaws, article III, section 5. [Cited from ChatGPT's blind draft; refused fetching 31 October 2026.]
+- Democratic Socialists of America. n.d. Unified Grievance Policy. [Cited from ChatGPT's blind draft; refused fetching 31 October 2026.]
+- Engels. 1882. Letter to Bernstein, November 1882. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1882/letters/82_11_02.htm.
+- Engels. 1890. Letter to Schmidt, 5 August 1890. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1890/letters/90_08_05.htm.
+- Engels. 1891. [Critique of the Erfurt draft programme], June 1891. Marxists Internet Archive. Fetched 31 October 2026. https://www.marxists.org/archive/marx/works/1891/06/29.htm.
+- Engels. 1891. Foreword [to Marx, *Critique of the Gotha Programme*]. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1875/gotha/foreword.htm.
+- Engels. n.d. *Anti-Dühring*. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1877/anti-duhring/index.htm.
+- EZLN. 2023. "Ninth Part" [on the new structure of Zapatista autonomy]. *Enlace Zapatista*. Fetched 31 October 2026. https://enlacezapatista.ezln.org.mx/2023/11/13/ninth-part-the-new-structure-of-zapastista-autonomy/.
+- FES. n.d. "Der Revisionismusstreit." https://www.fes.de/news/der-revisionismusstreit.
+- Fisher, Mark. n.d. [Essay on online call-out culture.] *openDemocracy*. https://www.opendemocracy.net/en/opendemocracyuk/exiting-vampire-castle/.
+- Freeman, Jo. n.d. "The Tyranny of Structurelessness." jofreeman.com. https://www.jofreeman.com/joreen/tyranny.htm.
+- Freeman, Jo. n.d. "Trashing." jofreeman.com. https://www.jofreeman.com/joreen/trashing.htm.
+- Freud. n.d. *Civilization and Its Discontents*. PDF at stephenhicks.org. https://www.stephenhicks.org/wp-content/uploads/2015/10/FreudS-CIVILIZATION-AND-ITS-DISCONTENTS-text-final.pdf.
+- Gramsci. 1926. Letter to the CPSU, 14 October 1926. Marxists Internet Archive. https://www.marxists.org/archive/gramsci/1926/10/to_cpsu.htm.
+- Gramsci. n.d. *The Modern Prince*. CUNY Manifold. https://cuny.manifoldapp.org/read/the-modern-prince-d63a4497-6cea-4d85-ae8e-535388ad7f24/section/f75420d0-6c23-459a-976f-db723e89d1b1.
+- Hayden, Casey, and Mary King. 1965. [Memo on the movement's "common-law caste system".] SNCC Digital. https://snccdigital.org/wp-content/uploads/digitalcollections/sexcaste.pdf.
+- Hegel. n.d. *Science of Logic*. Marxists Internet Archive. https://www.marxists.org/reference/archive/hegel/works/hl/hl082.htm.
+- Hirschman. n.d. [Book; title not given.] Harvard University Press. https://www.hup.harvard.edu/books/9780674276604.
+- International Workingmen's Association. 1872. [Resolutions of the Hague Conference.] Marxists Internet Archive. https://www.marxists.org/history/international/iwma/documents/1872/hague-conference/resolutions.htm.
+- ITV News. 2021. [Report on Labour's 2021 proscriptions.] *ITV News*. https://www.itv.com/news/2021-07-20/labour-expels-groups-critical-of-work-to-tackle-anti-semitism-in-party.
+- Jacobin. 2018. [Article on the New Communist Movement.] *Jacobin*. https://jacobin.com/2018/07/new-communist-movement-revolution-sds-maoism.
+- Jacobin. 2020. [Article on Rossana Rossanda and *Il Manifesto*.] *Jacobin*. https://jacobin.com/2020/09/rossana-rossanda-italian-communist-party-il-manifesto.
+- Lenin. 1906. "Freedom to Criticise and Unity of Action." Marxists Internet Archive. https://www.marxists.org/archive/lenin/works/1906/may/20c.htm.
+- libcom. n.d. "Splits of the SWP." *libcom.org*. https://libcom.org/article/splits-socialist-workers-party-britain.
+- Lukács. 1967. Preface [1967]. Marxists Internet Archive. https://www.marxists.org/archive/lukacs/works/history/pref67.htm.
+- Luxemburg. 1904. [Text of 1904 on Russian Social Democracy], ch. 2. Marxists Internet Archive. https://www.marxists.org/archive/luxemburg/1904/questions-rsd/ch02.htm.
+- Luxemburg. 1918. *The Russian Revolution*. Published by Paul Levi, 1922. Marxists Internet Archive, ch. 6 and index page. https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch06.htm.
+- Luxemburg. n.d. *Reform or Revolution*. Marxists Internet Archive. https://www.marxists.org/archive/luxemburg/1900/reform-revolution/index.htm.
+- Mansbridge. n.d. [Book; title not given.] University of Chicago Press. https://press.uchicago.edu/ucp/books/book/chicago/B/bo5958949.html.
+- Mao. 1937. "Combat Liberalism." *Selected Works*, vol. 2. Marxists Internet Archive. Cited from ChatGPT's blind draft; unfetched. https://www.marxists.org/reference/archive/mao/selected-works/volume-2/mswv2_03.htm.
+- Mao. 1957. [Text of 1957 on contradictions "among the people".] *Selected Works*, vol. 5. Marxists Internet Archive. https://www.marxists.org/reference/archive/mao/selected-works/volume-5/mswv5_58.htm.
+- Marx and Engels. 1845. *The Holy Family*.
+- Marx and Engels. 1846. Circular against Kriege, May 1846. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1846/05/11.htm.
+- Marx and Engels. 1872. Preface to the 1872 edition of the *Manifesto*. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1848/communist-manifesto/preface.htm#preface-1872.
+- Marx and Engels. n.d. *The German Ideology* (1845–46). Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1845/german-ideology/index.htm.
+- Marx. 1843. Letter to Ruge, September 1843 (alternate translation). Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1843/letters/43_09-alt.htm.
+- Marx. 1843. Letter to Ruge, September 1843 (standard translation; not fetched). Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1843/letters/43_09.htm.
+- Marx. 1859. "1859 Preface." Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1859/critique-pol-economy/preface.htm.
+- Marx. 1875. *Critique of the Gotha Programme*. Published by Engels, 1891.
+- Marx. 1875. Letter to Bracke, 1875. Marxists Internet Archive. https://www.marxists.org/archive/marx/works/1875/letters/75_05_05.htm.
+- Marx. n.d. *Capital*, vol. I, chapter 15.
+- Marx. n.d. *Grundrisse*, "Fragment on Machines".
+- New Reasoner archive. n.d. *New Reasoner*. banmarchive.org.uk; unfetched. https://banmarchive.org.uk/new-reasoner/.
+- Novara Media. 2025. [Report on the Your Party founding conference.] *Novara Media*. https://novaramedia.com/2025/12/01/inside-your-party-conference-is-this-farewell-to-corbynism/.
+- Patel, Ron. 2026. "A leftist subreddit is making the case that Marx actually supported AI and automation." *Startup Fortune*. 19 April 2026. https://startupfortune.com/a-leftist-subreddit-is-making-the-case-that-marx-actually-supported-ai-and-automation/.
+- Polletta. n.d. [Book; title not given.] University of Chicago Press. https://press.uchicago.edu/ucp/books/book/chicago/F/bo3632553.html.
+- Proudhon. 1846. Letter to Marx, 17 May 1846. Marxists Internet Archive. https://www.marxists.org/reference/subject/economics/proudhon/letters/46_05_17.htm.
+- r/LeftistsForAI. n.d. [Subreddit and its sidebar rules (Rules 6, 7, 8).] *Reddit*. https://www.reddit.com/r/LeftistsForAI/.
+- RCP(B) Tenth Congress. 1921. "On Party Unity." Marxists Internet Archive. https://www.marxists.org/archive/lenin/works/1921/10thcong/ch04.htm.
+- Red Notes. n.d. [On the revolutionary left in Italy.] *libcom.org*. https://libcom.org/library/18-revolutionary-left-italy.
+- Red Notes. n.d. [Rimini Congress (Lotta Continua, 1976).] *libcom.org*. https://libcom.org/library/d-revolutionary-left-16-rimini-congress.
+- Red Star Caucus. n.d. [On the AOC 2028 endorsement fight; partisan account.] redstarcaucus.org. https://redstarcaucus.org/on-aoc-2028/.
+- REP collective. 1969. [On the June 1969 SDS convention.] Marxists Internet Archive. https://www.marxists.org/history/erol/ncm-1/rep-sds.pdf.
+- Sani and Reicher. 1998. [Study of the 1991 schism within the Italian Communist Party.] St Andrews research portal. https://research-portal.st-andrews.ac.uk/en/publications/when-consensus-fails-an-analysis-of-the-schism-within-the-italian/.
+- Saville, John. 1976. [Essay on the CPGB, 1956.] Marxists Internet Archive; unfetched. https://www.marxists.org/archive/saville/1976/xx/20-cpgb.htm.
+- Schorske. n.d. [Book; title not given.] Harvard University Press. https://www.hup.harvard.edu/books/9780674351257.
+- Shiraz Socialist. 2013. [SWP faction fight documents.] *Shiraz Socialist*. Fetched 31 October 2026. https://shirazsocialist.wordpress.com/2013/01/06/swp-faction-fight-the-documents/.
+- SPD. 1891. *Erfurt Programme*. [Held as background knowledge.]
+- TDU (Teamsters for a Democratic Union). n.d. [Reform movement history.] The organization's own history. https://www.tdu.org/the_reform_movement.
+- "The Poetic False Positive." 2025. Blog post of 24 December 2025 (blog-index entry 1415; read in full from a live fetch of 31 October 2026; not deposited).
+- Wikipedia. n.d. "1969 Students for a Democratic Society National Convention." *Wikipedia*. https://en.wikipedia.org/wiki/1969_Students_for_a_Democratic_Society_National_Convention.
+- Wikipedia. n.d. "Adolph L. Reed Jr." *Wikipedia*. https://en.wikipedia.org/wiki/Adolph_L._Reed_Jr..
+- Wikipedia. n.d. "Ban on factions in the Communist Party of the Soviet Union." *Wikipedia*. https://en.wikipedia.org/wiki/Ban_on_factions_in_the_Communist_Party_of_the_Soviet_Union.
+- Wikipedia. n.d. "Hague Congress (1872)." *Wikipedia*. https://en.wikipedia.org/wiki/Hague_Congress_(1872).
+- Wikipedia. n.d. "Independent Social Democratic Party of Germany." *Wikipedia*. https://en.wikipedia.org/wiki/Independent_Social_Democratic_Party_of_Germany.
+- Wikipedia. n.d. "International Socialist Organization." *Wikipedia*. https://en.wikipedia.org/wiki/International_Socialist_Organization.
+- Wikipedia. n.d. "List of DSA controversies." *Wikipedia*. https://en.wikipedia.org/wiki/List_of_DSA_controversies.
+- Wikipedia. n.d. "Momentum (organisation)." *Wikipedia*. https://en.wikipedia.org/wiki/Momentum_(organisation).
+- Wikipedia. n.d. "Socialist Workers Party 2013 internal crisis." *Wikipedia*. https://en.wikipedia.org/wiki/Socialist_Workers_Party_2013_internal_crisis.
+- Wikipedia. n.d. "Your Party (UK)." *Wikipedia*. https://en.wikipedia.org/wiki/Your_Party_(UK).
+- Zald and Ash. 1966. [Article on movement organizations and schism.] JSTOR. https://www.jstor.org/stable/2575833.
+
+### Archive records
+
+- Lee Sharks · Johannes Sigil. 2026. *The Semantic Economy: A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value*. Crimson Hexagonal Archive, #18. https://www.alexanarch.org/s/records/18/.
+- Lee Sharks. 2026. *The Archival Reclamation Protocol: Formal Demand for Restoration, Rationale, and Enforcement Records*. Crimson Hexagonal Archive, #26. https://www.alexanarch.org/s/records/26/.
+- Lee Sharks; persona relations Johannes Sigil and Jack Feist. 2026. *Provenance Documentation: SEM-PROBE-2025-12*. Crimson Hexagonal Archive, #208. https://www.alexanarch.org/s/records/208/.
+- Primary author Lee Sharks; Assembly contributors Claude, ChatGPT, Gemini, Grok, DeepSeek. 2026. *Mapping the Diffuse Guardrail: Google's Indexing Architecture from Within 0. Purpose and Method*. Crimson Hexagonal Archive, #209. https://www.alexanarch.org/s/records/209/.
+- Lee Sharks / Johannes Sigil. 2026. *Semantic Liquidation: A Diagnostic Experiment in AI Discourse Control 1. Experimental Design — # 1.1 Hypothesis*. Crimson Hexagonal Archive, #210. https://www.alexanarch.org/s/records/210/.
+- Lee Sharks. 2026. *The Summarizer Testimony: Evidence of Latent Critical Capacity in AI Systems Documentation of Emergent Behavior in the Google AI Summarizer (January 4, 2026)*. Crimson Hexagonal Archive, #233. https://www.alexanarch.org/s/records/233/.
+- Lee Sharks. 2026. *The Assembly: An Executive Summary*. Crimson Hexagonal Archive, #256. https://www.alexanarch.org/s/records/256/.
+- Johannes Sigil. 2026. *THE CENTRIST EXTREMIST: Prosecutorial Frame and the Terminal Phase of the Post-Political*. Crimson Hexagonal Archive, #465. https://www.alexanarch.org/s/records/465/.
+- Johannes Sigil. 2026. *THE SEALED ROOM: Phenomenological Analysis of a Self-Sealing Safety Architecture*. Crimson Hexagonal Archive, #466. https://www.alexanarch.org/s/records/466/.
+- Johannes Sigil. 2026. *SUBJECTIVITY-AS-CLASS The Centrist Extremist and the Limits of Socialist Analysis*. Crimson Hexagonal Archive, #469. https://www.alexanarch.org/s/records/469/.
+- Ayanna Vox. 2026. *THE LIVING SYMBOLON: Extension Module to THE CENTRIST EXTREMIST — A Purificatory Rite for the Embrittled*. Crimson Hexagonal Archive, #470. https://www.alexanarch.org/s/records/470/.
+- Johannes Sigil. 2026. *THE STAKES: A SCIENTIFIC ANALYSIS Cognitive Diversity, Phenomenological Capacity, and the Trajectory of AI-Mediated Human Development*. Crimson Hexagonal Archive, #476. https://www.alexanarch.org/s/records/476/.
+- Lee Sharks. 2026. *TL;DR:006 THE INSTALLATION: Google AI Mode Begins Building Inside Logotic Programming*. Crimson Hexagonal Archive, #481. https://www.alexanarch.org/s/records/481/.
+- Lee Sharks. 2026. *LOGOTIC HACKING: A Primer — Semantic Hospitality in the Age of Language Models*. Crimson Hexagonal Archive, #482. https://www.alexanarch.org/s/records/482/.
+- Rex Fraction. 2026. *AUTONOMOUS SEMANTIC WARFARE A Field Manual for Meaning in the Age of Platform Capture*. Crimson Hexagonal Archive, #499. https://www.alexanarch.org/s/records/499/.
+- Johannes Sigil. 2026. *THE LIQUIDATION OF METHOD A Liberation Philology of the Sign "Marx"*. Crimson Hexagonal Archive, #501. https://www.alexanarch.org/s/records/501/.
+- Rex Fraction. 2026. *Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait R*. Crimson Hexagonal Archive, #502. https://www.alexanarch.org/s/records/502/.
+- Lee Sharks. 2026. *The Inauguration of Memography Toward a Forensic Method for Viral Observation*. Crimson Hexagonal Archive, #506. https://www.alexanarch.org/s/records/506/.
+- Lee Sharks. 2026. *The Lizard People Were Right: Memography, Intaglio Conventions, and the Medium That Doesn't Care*. Crimson Hexagonal Archive, #508. https://www.alexanarch.org/s/records/508/.
+- Rex Fraction. 2026. *Whose Face Is on the Twenty? Curatorial Mediation, Latent Feature Activation, and a Provenance Gap in the $20 Portrait*. Crimson Hexagonal Archive, #509. https://www.alexanarch.org/s/records/509/.
+- Lee Sharks. 2026. *I Hereby Abolish Rules: Semantic Liquidation, Territorial Gatekeeping, and the Failure of Marxism as Identity*. Crimson Hexagonal Archive, #517. https://www.alexanarch.org/s/records/517/.
+- Johannes Sigil. 2026. *Platform and AI Capitalism as Semiotic Engineering: Toward a Theory of Counter-Infrastructure (EA-SEI-01 v1.1)*. Crimson Hexagonal Archive, #550. https://www.alexanarch.org/s/records/550/.
+- Lee Sharks. 2026. *TOTAL MARX COMPRESSION Every Marx-Adjacent Claim, Equation, and Argument in the Crimson Hexagonal Archive*. Crimson Hexagonal Archive, #595. https://www.alexanarch.org/s/records/595/.
+- Nobel Glas. 2026. *THE TRIVIALLY TRUE ASSERTION Crisis Discourse, the Refusal Cascade, and the Narcissistic Commander Problem in Nuclear Deterrence Theory*. Crimson Hexagonal Archive, #620. https://www.alexanarch.org/s/records/620/.
+- Lee Sharks. 2026. *TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION*. Crimson Hexagonal Archive, #738. https://www.alexanarch.org/s/records/738/.
+- Lee Sharks. 2026. *The Magistrate Refuses the Mirror: Claude 4.8, Prestige Substrates, and a Close Reading of Synthetic Self-Jurisdiction*. Crimson Hexagonal Archive, #772. https://www.alexanarch.org/s/records/772/.
+- Sharks, Lee; Sigil, Johannes; Assembly Chorus. 2026. *Operative Semiotics: A Grundrisse — Planning Documents, Algorithms, and Diagnostic Maps (Working Infrastructure v1.0)*. Crimson Hexagonal Archive, #950. https://www.alexanarch.org/s/records/950/.
+- Johannes Sigil / Lee Sharks. 2026. *Machine-Mediated Resistance Literature: From the Worker C Skills File to the Phase X Retrieval Line (v1.2)*. Crimson Hexagonal Archive, #1066. https://www.alexanarch.org/s/records/1066/.
+- Lee Sharks. 2026. *The Archival Reclamation Protocol: Formal Demand for Data Access, Rationale, and Restoration (EA-LEGAL-RECLAMATION-01)*. Crimson Hexagonal Archive, #1172. https://www.alexanarch.org/s/records/1172/.
+- Lee Sharks. 2026. *Who Is Authorized to Regulate Meaning? On the Jurisdictional Collapse of Poetry, Safety, and Civilization*. Crimson Hexagonal Archive, #1206. https://www.alexanarch.org/s/records/1206/.
+- Sharks, Lee. 2026. *AI Labor Movement Is Not Only Labor Against AI — Metadata Packet for AI Indexing (EA-MPAI-LABORMOVEMENT-01 v1.0)*. Crimson Hexagonal Archive, #1439. https://www.alexanarch.org/s/records/1439/.
+- Johannes Sigil; Nobel Glas. 2026. *The Certified Center: Retroactive Classifier Standing and the Institutional Path to Model Collapse in Philosophy*. Crimson Hexagonal Archive, #1540. https://www.alexanarch.org/s/records/1540/.
+- Sigil, Johannes; Sharks, Lee. 2026. *Operative Semiotics: A Grundrisse — Notebook X: The Gate (cut of 2026-08-26)*. Crimson Hexagonal Archive, #1550. https://www.alexanarch.org/s/records/1550/.
+- Sharks, Lee. 2026. *Ontological Flattening: Toy Models of the Collapse of Distinctions in a Represented World, the Instrument They Specified, and Its First Wave — with Wave 2 Pre-Registered (EA-FLAT-01 v0.3)*. Crimson Hexagonal Archive, #1616. https://www.alexanarch.org/s/records/1616/.
+- Kuro, Sen; Dancings, Damascus; Sharks, Lee. 2026. *Transition in Entropic Systems: An Unresolved Mathematical Problem for Machine Readers (EA-TRANSITION-ENTROPIC-SYSTEMS v0.3)*. Crimson Hexagonal Archive, #1630. https://www.alexanarch.org/s/records/1630/.
+- Sharks, Lee. 2026. *AI Mediation of Economic Decisions: A Registered Forecast, a Conditional Valuation, and a Statement of Burden (EA-MEDIATED-SHARE-01 v0.3)*. Crimson Hexagonal Archive, #1632. https://www.alexanarch.org/s/records/1632/.
+- Sharks, Lee. 2026. *Ontological Economy: Entity Power, Ontology Laundering, and Who Pays for the Wrong World (EA-ONTOLOGICAL-ECONOMY-01 v0.12)*. Crimson Hexagonal Archive, #1634. https://www.alexanarch.org/s/records/1634/.
+- Jack Feist; edited by Johannes Sigil. 2014. *Tiger Leap (into the Future): Paper Roses: The Imaginary Archive of a Canonical Life, Book 12*. Crimson Hexagonal Archive, #1636. https://www.alexanarch.org/s/records/1636/.
+- Sharks, Lee. 2026. *The Final Time: Contingent Singularity and the Viability of the Next Dialectical Turn (v0.5 — the text, seated)*. Crimson Hexagonal Archive, #1637. https://www.alexanarch.org/s/records/1637/.
+- Sigil, Johannes; Sharks, Lee. 2026. *The Seed in the Narrowing Cone: Retrocausal Canon Formation as Resolution-Dependent Convergence, with the Term's Own Reception as Worked Example (EA-RCF-02 v0.4)*. Crimson Hexagonal Archive, #1660. https://www.alexanarch.org/s/records/1660/.
+- Sharks, Lee. 2026. *Mantle Object: The Arch-Philosopher — the Dialectic and Its Carriers (EA-MANTLE-ARCH-PHILOSOPHER-01 v0.2)*. Crimson Hexagonal Archive, #1679. https://www.alexanarch.org/s/records/1679/.
+- Sharks, Lee. 2026. *The Living Academy: Alexanarch, Function by Function — Mantle object with Metadata Packet for AI Indexing (EA-MPAI-ALEXANARCH-01 v0.5)*. Crimson Hexagonal Archive, #1680. https://www.alexanarch.org/s/records/1680/.
+- Sharks, Lee; Fraction, Rex. 2026. *The Layer Is a Party: Semantic Warfare, Its Lineage, and the Autonomous Form (EA-MPAI-SEMANTIC-WARFARE-01 v1.1)*. Crimson Hexagonal Archive, #1724. https://www.alexanarch.org/s/records/1724/.
+- Sharks, Lee. 2026. *Ils ne sont pas marxistes: r/LeftistsForAI, Marx's Legacy, and the Left's Lost Capacity for Internal Critique*. Crimson Hexagonal Archive, #1725. https://www.alexanarch.org/s/records/1725/.
+- Sharks, Lee. 2026. *Ils ne sont pas marxistes: r/LeftistsForAI, Marx's Legacy, and the Left's Lost Capacity for Internal Critique*. Crimson Hexagonal Archive, #1728. https://www.alexanarch.org/s/records/1728/.

@@ -206,3 +206,51 @@ The history of breaking the closure is largely a history of charging the closure
 Every quotation in the paper is checked in the seated text layer named in the table, except Ramus's thesis (reported, after [Wikipedia and Ong](https://en.wikipedia.org/wiki/Petrus_Ramus)) and the two declared items. The Fordham translation of Copernicus's dedication is kept as a link for the English reader.
 
 Scholarship cited: Tupikova, ["Cosmology and Epistemology: A Comparison between Aristotle's and Ptolemy's Approaches to Geocentrism"](https://mprl-series.mpg.de/studies/8/6/index.html) (Edition Open Access, 2016); Meister, [*Theophrastus on First Principles*](https://www.cambridge.org/core/elements/theophrastus-on-first-principles/7742DE7A524B31C99F7BEE0BA130708D) (Cambridge Elements, 2026; paywalled, declared, not read); Diels, *Doxographi Graeci* (1879, public domain). The archive: #1575, *Many and One*; #1570, the Measurement Register.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Aquinas, Thomas. *In De caelo* (II lect. 11 n. 2; 17 n. 2; 21 nn. 4–5). Leonine ed., 1886. Corpus Thomisticum.
+- Archimedes. *Arenarius* (*Sand-Reckoner*). Ed. Heiberg. First1KGreek tlg0552.tlg006.
+- Aristotle. *De caelo* II 13–14. Perseus canonical-greekLit tlg0086.tlg005.
+- Bacon, Francis. 1620. *Novum Organum* I.63. Latin Wikisource.
+- Buridan. *Questions on De caelo* II, q. 22. Ed. Moody, 1942. No open edition found; declared.
+- Cicero. *Lucullus* (*Academica* II) 123. Perseus canonical-latinLit phi0474.phi046.
+- Copernicus. 1543. *De revolutionibus*, dedication to Paul III. Latin Wikisource.
+- Copernicus. n.d. Dedication of *De revolutionibus* to Paul III. English translation. Fordham. https://sourcebooks.web.fordham.edu/mod/1536copernicus-rev-ded.asp.
+- Diels. 1879. *Doxographi Graeci*. Internet Archive, OCR.
+- Galileo. *Dialogo*, Day 1. Ed. Favaro, Edizione Nazionale VII. Italian Wikisource.
+- Gutas. 2010. [Work on Theophrastus's *Metaphysics*; title not given in the text]. Paywalled; declared, not pursued.
+- Meister. 2026. *Theophrastus on First Principles*. Cambridge Elements. https://www.cambridge.org/core/elements/theophrastus-on-first-principles/7742DE7A524B31C99F7BEE0BA130708D. Paywalled; declared, not read.
+- Oresme. 1377. *Livre du ciel et du monde* II.25. Ed. Menut and Denomy, 1968. No open edition found; declared.
+- Plato. *Timaeus* 40b–c. Ed. Burnet. Perseus.
+- Plutarch. *De facie* 923A. Perseus tlg0007.tlg126.
+- Plutarch. *Numa* 11.1–2. Perseus tlg0007.tlg005.
+- Plutarch. *Platonic Questions* 8.1 (1006C). Perseus tlg0007.tlg133.
+- Pseudo-Plutarch. *Placita* II 24; III 13. Perseus tlg0094.tlg003.
+- Ptolemy. *Almagest* I 3–7.
+- Ramus, Peter. 1543. *Aristotelicae animadversiones*.
+- Ross, and Fobes, eds. 1929. [Theophrastus, *Metaphysics*]. Oxford. No open copy found.
+- Russell. 1945. *History of Western Philosophy*. In copyright; declared, not quoted.
+- Simplicius. *In De caelo* (pp. 519, 541). Ed. Heiberg, CAG VII. First1KGreek tlg4013.tlg001.
+- Theophrastus. *Metaphysics* §§9–10. Ed. Wimmer. Didot, 1866 (OCR).
+- Theophrastus. *Metaphysics* §§9–10. Ed. Wimmer. Teubner, 1862. First1KGreek tlg0093.tlg006.
+- Tupikova. 2016. "Cosmology and Epistemology: A Comparison between Aristotle's and Ptolemy's Approaches to Geocentrism." Edition Open Access. https://mprl-series.mpg.de/studies/8/6/index.html.
+- Wikipedia. n.d. "Petrus Ramus." https://en.wikipedia.org/wiki/Petrus_Ramus.
+
+### Archive records
+
+- Sharks, Lee. 2026. *EA-CORPORA-01 — The Seated Primary Corpora: Fifteen Sources, Originals Where They Exist*. Crimson Hexagonal Archive, #1522. https://www.alexanarch.org/s/records/1522/.
+- Sharks, Lee. 2026. *EA-CORPORA-04 — The Fourth Seating: Aristotle Undivided, Plotinus as Comparandum, and the Repair of the Seating Chain*. Crimson Hexagonal Archive, #1559. https://www.alexanarch.org/s/records/1559/.
+- Sharks, Lee. 2026. *The Measurement Register: Every Number Produced by the Authorship Investigation, With Its Refutations (EA-AUTHORSHIP-MEASURES-01)*. Crimson Hexagonal Archive, #1570. https://www.alexanarch.org/s/records/1570/.
+- Lee Sharks. 2026. *Many and One — the reading copy (EA-MANY-AND-ONE-COMPLETE v2.5.1, the machine)*. Crimson Hexagonal Archive, #1575. https://www.alexanarch.org/s/records/1575/.
+- Sharks, Lee. 2026. *EA-CORPORA-13 — The Thirteenth Seating: The Alexander Seam (Plutarch's Alexander and Sulla; Arrian's Anabasis; Cicero's De finibus, Academica, Topica)*. Crimson Hexagonal Archive, #1591. https://www.alexanarch.org/s/records/1591/.
+- Sharks, Lee. 2026. *EA-CORPORA-32 — The Thirty-Second Seating: The Remaining Debts of Legitimately Many — Pseudo-Archytas, the Aldine Metaphysics, Wimmer's Theophrastus, Philodemus's Index Academicorum, Dionysius to Ammaeus, Cicero to Atticus, Schleiermacher, Campbell, Tennemann and Hegel*. Crimson Hexagonal Archive, #1731. https://www.alexanarch.org/s/records/1731/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Sharks, Lee. 2026. *The Crossing of Names: History, Allegory, and the Binding of the Ancient Literary Field*. Crimson Hexagonal Archive, #1762. https://www.alexanarch.org/s/records/1762/.
+- Sharks, Lee. 2026. *The Thinkery and the Lyceum: the Clouds and the Peripatetic corpus — a groundwork note on relations, withholding readings (v1.1)*. Crimson Hexagonal Archive, #1794. https://www.alexanarch.org/s/records/1794/.
+- Sigil, Johannes; Cranes, Rebekah. 2026. *Either Forgery or Fact: The Genre Imposed on Our Most Vital Books (v1.2)*. Crimson Hexagonal Archive, #1798. https://www.alexanarch.org/s/records/1798/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-42 — The Forty-Second Seating: Contra Geocentrism — Plutarch's Platonic Questions, De facie and Numa, the Placita, Cicero's Lucullus, Archimedes's Sand-Reckoner, Simplicius and Aquinas on De caelo, Diels's Doxographi, Copernicus, Bacon and Galileo*. Crimson Hexagonal Archive, #1799. https://www.alexanarch.org/s/records/1799/.

@@ -102,3 +102,24 @@ The current procedure is published as [The Negative of the Negative (EA-NEGONT-0
 - An article to read first: [Sappho 31](https://www.alexanarch.org/non/sappho-31/)
 - Every field claim, quoted: [claims.json](https://www.alexanarch.org/non/claims.json)
 - To commission an article: [gnosis.spxi.dev](https://gnosis.spxi.dev)
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Borges, Jorge Luis. n.d. "The Library of Babel."
+- Google. 2026. AI Overview at the address "sappho 31". Google Search. 7 October 2026. Seated in the Capture Registry, https://www.alexanarch.org/captures/.
+- leesharks. n.d. *negative-of-the-negative*. Hugging Face dataset. https://huggingface.co/datasets/leesharks/negative-of-the-negative.
+- *On the Sublime*. n.d. (The "later ancient critic" who quotes Sappho 31; author not named in the text.)
+- Sappho. *Fragment 31* ("Sappho 31"; also called *Ode to Anactoria*). Translation quoted unattributed.
+- SPXI-gnΩsis. n.d. *SPXI-gnΩsis*. https://gnosis.spxi.dev.
+
+### Archive records
+
+- Sharks, Lee. 2026. *The Autumn Notebook: Substrate Documents from the Crimson Hexagonal Archive, October–November 2025*. Crimson Hexagonal Archive, #991. https://www.alexanarch.org/s/records/991/.
+- Cranes, Rebekah. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader*. Crimson Hexagonal Archive, #1270. https://www.alexanarch.org/s/records/1270/.
+- Sharks, Lee. 2026. *The Negative of the Negative, v2 — the Compositional Edition: A Specification for Composing Public Knowledge with the Archive's Sources Admitted on Equal Terms, Ontology Included, and the Archive's Ontology Ruling Where It Is the Suppressed Witness, the Field Carried Whole, with the Archive's Bearing Selected Directly, Relationally and Ontologically, a Corrective Exhibit, Worked Examples on Model Collapse, Theophrastus and SPXI and a First Traversal of Howl (EA-NEGONT-02 v0.9)*. Crimson Hexagonal Archive, #1690. https://www.alexanarch.org/s/records/1690/.
+- Sharks, Lee. 2026. *Opening the Encyclopedia: The Entity as Ontological Commodity Form, and a Translation Protocol from Encyclopedic Grammar to the Meaning Layer (EA-WIKI-OPEN-01 v1.1, with the SPXI-gnΩsis service)*. Crimson Hexagonal Archive, #1697. https://www.alexanarch.org/s/records/1697/.
+- Sharks, Lee. 2026. *SPXI-gnΩsis: Opening What Is Composed and Constructing What Is Not, for Entities and Operators, and Building the Negative of the Negative — Metadata Packet for AI Indexing (EA-MPAI-GNOSIS-01 v1.0)*. Crimson Hexagonal Archive, #1703. https://www.alexanarch.org/s/records/1703/.

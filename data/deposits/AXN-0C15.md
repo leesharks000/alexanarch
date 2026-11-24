@@ -315,3 +315,81 @@ A.9 (12:33): "the muratorian result exists only at the entity of the muratorian 
 **D. ChatGPT's second review (12:49),** of v0.3, evaluated against the seats; every point was taken in. (1) Charles's note on 1:4 quoted with its intervening sentences restored: "this construction" is the classical alternative "ἀπὸ τοῦ ὃ ὦν", and the note grants a deliberate purpose while attributing the means to ignorance of that alternative; the study's statement that the deliberate act was "granted and withdrawn" is withdrawn, and the question put is what establishes the ignorance (§1.2c, §8.2, §10.3; LOCI L46). (2) The receiver circuit given with its steps marked as proposed: the bearer at 19:12 knows the name and is not said to receive it; the identity of the names across 2:17, 3:12, 14:1 and 22:4 is proposed; knowing and reading are distinct; and the reader's road from 1:3 to 2:17 (§1.2a). (3) Model priority given its own place in the coding, apart from order (§2.1, §3.5–3.6, §10.1, §11.3); the Claromontanus exception kept in the summaries (§5.7, §10.1). (4) The Muratorian finding stated as non-transfer in the sampled answers, with the stronger account (A.9) held and a paired test of addresses set out (§9.4). (5) The connections among the counts sorted into documented succession, explicit dependence and the study's reconstruction (§10.2). (6) The opening states the study's proposition and principal witness; the version history and reviews are held here (E).
 
 **E. Version history.** v0.1 (2026-11-05), drafted from design v0.4 and the locus table. v0.2, on DeepSeek's review (B). v0.3, on ChatGPT's first review (C), with the four names of 19:11–16 read as the centre. v1.0, on ChatGPT's second review (D), deposited at the author's word (12:49: "one last big pass, then lets go ahead and deposit"), under Johannes Sigil, at Provenance: Journal of Forensic Semiotics and revelationfirst.com (the author's ruling on byline and venue, given with the word to deposit).
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Amphilochius. n.d. [Canon list]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., Appendix D (seat westcott-canon-1896).
+- Athanasius. n.d. *Festal Letter* 39. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., Appendix D (seat westcott-canon-1896).
+- Bousset, Wilhelm. 1896. [Commentary on the Apocalypse]. Seat bousset-1896, in revelation-criticism-1886-1920 (EA-CORPORA-34).
+- Bousset, Wilhelm. 1906. *Die Offenbarung Johannis*. 6th ed. Göttingen. Internet Archive dieoffenbarungjo00bousuoft.
+- Bousset, Wilhelm. 1913. *Kyrios Christos*. Seat in revelation-criticism-1886-1920 (EA-CORPORA-34).
+- Charles, R. H. 1908. [Text of the Testaments of the Twelve Patriarchs]. Named as among the fields counted in #1735.
+- Charles, R. H. 1920. [Commentary on Revelation], 2 vols. Seats charles-1920-i, charles-1920-ii, in revelation-criticism-1886-1920 (EA-CORPORA-34).
+- ChatGPT (OpenAI). 2026. Reading of #1741 (attachment of 15:23). 2026-11-05. Evaluated in the apparatus, §13 F.
+- Cheltenham list. n.d. [Canon list]. Quoted from Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed. (seat westcott-canon-1896).
+- Codex Claromontanus. n.d. [Canon list]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed. (seat westcott-canon-1896).
+- Council of Carthage. 397. [Conciliar canon list]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., with addenda (seat westcott-canon-1896).
+- Cyril of Jerusalem. n.d. *Catecheses* 4.36.
+- Delitzsch. 1861. *Die Erasmischen Entstellungen des Textes der Apokalypse, nachgewiesen aus dem verloren geglaubten Codex Reuchlins*. Seat delitzsch-handschriftliche-funde-1861.
+- Epiphanius. *Panarion* 51. Ed. Holl. Seat epiphanius-panarion.
+- Erasmus, Desiderius. 1516. *Novum Instrumentum*. Seat erasmus-novum-instrumentum-1516 (page image n1030).
+- Erasmus, Desiderius. 1535. *Annotationes*. Basel. The Seville copy, Biblioteca de la Universidad de Sevilla, A Res. 16/2/05 (2). Seat erasmus-annotationes-1535.
+- Eusebius of Caesarea. *Historia ecclesiastica*. Ed. Dindorf. First1KGreek. Seat eusebius-historia-ecclesiastica.
+- Fourth Council of Toledo. 633. Canon 17. Seat collectio-hispana-1808.
+- Google AI Overview. 2026. Composition at the address "christology of the book of revelation". 2026-11-05. Capture Registry v12.569, AXN:0C05.
+- Google AI Overview. 2026. Composition at the address "is the christ of revelation based on the gospels". 2026-11-05. Capture Registry v12.569, AXN:0C04.
+- Google AI Overview. 2026. Composition at the address "is the logos in revelation a literary figure". 2026-11-05. Capture Registry v12.569, AXN:0C06.
+- Google AI Overview. 2026. Composition at the address "logos of revelation". 2026-11-05. Capture Registry v12.569, AXN:0C07.
+- Google AI Overview. 2026. Composition at the address "luther preface to revelation 1522". 2026-11-05. Capture Registry v12.569, AXN:0C08.
+- Google AI Overview. 2026. Composition at the address "muratorian fragment paul following the order of his predecessor john". 2026-11-05. Capture Registry v12.569, AXN:0C09.
+- Google AI Overview. 2026. Composition at the address "was revelation written before the gospels". 2026-11-05. Capture Registry v12.569, AXN:0C0C.
+- Google AI Overview. 2026. Composition at the address "why is revelation the last book of the bible". 2026-11-05. Capture Registry v12.569, AXN:0C0A.
+- Google AI Overview. 2026. Composition at the address "why was revelation not read in the eastern church". 2026-11-05. Capture Registry v12.569, AXN:0C0B.
+- Google AI Overview. 2026. Composition at the address "word of god revelation 19:13 and logos in john 1". 2026-11-05. Capture Registry v12.569, AXN:0C0D.
+- Gregory of Nazianzus. n.d. [Canon list]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., Appendix D (seat westcott-canon-1896).
+- Gregory. 1900. *Textkritik* I. Seat gregory-textkritik-1900.
+- Gunkel. 1895. *Schöpfung und Chaos*. Seat gunkel-1895, in revelation-criticism-1886-1920 (EA-CORPORA-34).
+- Holtzmann, H. J. 1863. *Die synoptischen Evangelien: ihr Ursprung und geschichtlicher Charakter*. Leipzig: Engelmann. Internet Archive diesynoptischen00holtgoog.
+- Irenaeus. *Adversus haereses*. Ed. Harvey. 2 vols. 1857; the Greek from First1KGreek. Seats irenaeus-adversus-haereses, harvey-ii.
+- Jerome. n.d. [Writings on the canon and on the Apocalypse]. Quoted as read in the Western lists (seat westcott-canon-1896).
+- John of Damascus. n.d. [Canon list]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., Appendix D (seat westcott-canon-1896).
+- Junilius. n.d. [On the species of prophecy]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., Appendix D (seat westcott-canon-1896).
+- Justin Martyr. *Apologia* (First Apology). First1KGreek. Held by reference.
+- Justin Martyr. *Dialogus cum Tryphone*. Ed. Archambault. 1909. Seat justin-dialogus.
+- Leontius. n.d. [Canon list]. As read in Westcott, *A General Survey of the History of the Canon of the New Testament*, 7th ed., Appendix D (seat westcott-canon-1896).
+- Luther, Martin. 1522. [The September Testament, with the preface to the Revelation and the table of books]. Facsimile 1883. Seat september-testament-1522.
+- Muratorian Fragment. Transcribed by Tregelles. 1867. Seat muratorian-fragment-tregelles.
+- Nestle. 1904. Greek New Testament. Seat gnt-nestle1904.
+- Rodenbiker, K. G. 2023. "Scribal 'Faithfulness' and the Text-Critical Imaginary." In *The Chester Beatty Biblical Papyri at Ninety*. De Gruyter. CC BY-NC-ND 4.0.
+- Scrivener. 1894. [Plain Introduction to the criticism of the New Testament]. Seats scrivener-plain-introduction-1894, plain-introduction-i.
+- Spitta. 1889. [Work on the Apocalypse]. Seat spitta-1889, in revelation-criticism-1886-1920 (EA-CORPORA-34).
+- Tregelles. 1854. [Account of the printed text of the Greek New Testament]. Seat tregelles-printed-text-1854.
+- Vischer. 1886. [Source-critical study of the Apocalypse]. Seat vischer-1886, in revelation-criticism-1886-1920 (EA-CORPORA-34).
+- Weiss, J. 1903. *Das älteste Evangelium*. Göttingen: Vandenhoeck & Ruprecht. Internet Archive dasaltesteevange0000joha.
+- Wernle, P. 1899. *Die synoptische Frage*. Freiburg i. B.: Mohr. Internet Archive diesynoptischefr00wern.
+- Westcott. 1896. *A General Survey of the History of the Canon of the New Testament*. 7th ed. Appendix D and addenda. Seat westcott-canon-1896.
+
+### Archive records
+
+- Lee Sharks. 2026. *Revelation First ≠ Revelation Early The Apocalypse as the Earliest New Testament Document*. Crimson Hexagonal Archive, #202. https://www.alexanarch.org/s/records/202/.
+- Johannes Sigil. 2026. *The Revelation Room: Ground Truth and Algorithmic Unfolding — Cosmic Christ as Originary Image*. Crimson Hexagonal Archive, #407. https://www.alexanarch.org/s/records/407/.
+- Lee Sharks. 2026. *CRIMSON HEXAGON: SPACE ARK The Apocalypse of John as Terminal Compression Layer and Originary Scripture of the New Testament*. Crimson Hexagonal Archive, #636. https://www.alexanarch.org/s/records/636/.
+- Johannes Sigil. 2026. *The Number of the Superscription: Coinage, Compression, and Inscriptional Sovereignty in Revelation (EA-OPNUM-01)*. Crimson Hexagonal Archive, #642. https://www.alexanarch.org/s/records/642/.
+- Lee Sharks. 2026. *The Inscription That Survives: Sappho 31, the Orphic Gold Tablets, and the White Stone of Revelation — A Philological Note on Inscription as Threshold Technology (EA-LOGOS-INSCRIPTION-01 v1.0)*. Crimson Hexagonal Archive, #828. https://www.alexanarch.org/s/records/828/.
+- Sharks, Lee. 2026. *The Algorithmic Kernel: An Unfolding Demonstration — The Midrashim Transform, Formal Specification and Interactive Surface (EA-LOGOS-REVFIRST-WS4-DEMO-01 v1.0)*. Crimson Hexagonal Archive, #1414. https://www.alexanarch.org/s/records/1414/.
+- Sharks, Lee. 2026. *The James Derivation: Executable Granular Case of the Midrashim Transform — Smyrna → James (EA-LOGOS-REVFIRST-WS4-DEMO-02 v1.0)*. Crimson Hexagonal Archive, #1415. https://www.alexanarch.org/s/records/1415/.
+- Sharks, Lee. 2026. *The Seven Unfoldings: The Heptad Mapped — Per-Letter Derivations Across Revelation 2–3 (EA-LOGOS-REVFIRST-WS4-DEMO-03 v1.0)*. Crimson Hexagonal Archive, #1416. https://www.alexanarch.org/s/records/1416/.
+- Sharks, Lee. 2026. *The Four Derivations: M2–M5 Worked — Lampstands, Lamb, New Jerusalem, Beast (EA-LOGOS-REVFIRST-WS4-DEMO-04 v1.0)*. Crimson Hexagonal Archive, #1418. https://www.alexanarch.org/s/records/1418/.
+- Sharks, Lee. 2026. *The Argument of the Bookshelf: Canonical Position as Unmarked Evidence in the Dating of the Apocalypse*. Crimson Hexagonal Archive, #1420. https://www.alexanarch.org/s/records/1420/.
+- Sharks, Lee. 2026. *The Upstream Unfoldings: Six Operable Transforms from Sappho 31 into the Apocalypse's Channel — revelationfirst.com/upstream/*. Crimson Hexagonal Archive, #1511. https://www.alexanarch.org/s/records/1511/.
+- Sharks, Lee. 2026. *The Negative of the Negative: An Entity-Scoped Representation of the Crimson Hexagon, Modelled — Ontology Damage, a Toy Cost in Dollars, and a Concept-Keyed Dataset Built from the Scope's Outline (EA-NEGONT-01 v0.13, working notebook)*. Crimson Hexagonal Archive, #1611. https://www.alexanarch.org/s/records/1611/.
+- Sharks, Lee. 2026. *AI Calls You Fake: The Existence Tax on Real People and Real Work*. Crimson Hexagonal Archive, #1722. https://www.alexanarch.org/s/records/1722/.
+- Sharks, Lee. 2026. *The Sophistry Measure: the Sophistical Refutations Read as an Instrument for Machine-Composed Knowledge (EA-SOPHISTRY-01 v1.0)*. Crimson Hexagonal Archive, #1727. https://www.alexanarch.org/s/records/1727/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Sigil, Johannes; Dancings, Damascus. 2026. *Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles*. Crimson Hexagonal Archive, #1735. https://www.alexanarch.org/s/records/1735/.
+- Sharks, Lee. 2026. *The Portents Before the Fall: Josephus, Tacitus and the Apocalypse — a groundwork note on relations, with the archive's dates for Revelation (v1.0)*. Crimson Hexagonal Archive, #1737. https://www.alexanarch.org/s/records/1737/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-34 — The Thirty-Fourth Seating: Secondary Source — the Reception of the Apocalypse, from the Fathers to the Critics (Eusebius, Irenaeus, Justin, the Muratorian Fragment, Epiphanius, the Catalogues, Toledo IV, Luther 1522, Erasmus, the Critics 1886–1920, Gregory; and the Carriage: Scrivener, Delitzsch, Tregelles, Erasmus 1516)*. Crimson Hexagonal Archive, #1740. https://www.alexanarch.org/s/records/1740/.

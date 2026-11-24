@@ -521,3 +521,42 @@ This supersedes two earlier forms: the collation's five statuses (role only) and
 *Revisions, v1.0 (23 November).* From three readings of v0.2. ChatGPT: §9.2 no longer names an instance where the record names a brand; §6.3's superlative withdrawn, and verification distinguished from ownership (warrant circulating through a poorer attribution system). Gemini (ARCHIVE): §8.2's field names brought into line with §8.1; §6.1 tied to #1802 §7.6; §9.3 closed on §0.7. DeepSeek (PRAXIS): §0.4 now lists §§1.7 and 6; §0.6 carries §9.3's claim; the unconfirmed report about Sutherland's page taken out of §2.1. Added at the author's word (“make sure its citational map anchors it to the field”): §10, each outside work opened before it was cited. Deposited in *Transactions of the Semantic Economy Institute* at the author's word (20:02).
 
 *Development record:* the EA-IPRH-01 collation, held by the author: drafts A–C, Traces 01–44 (ChatGPT as LABOR), checks 1–338 (Claude as TACHYON), the review by DeepSeek as PRAXIS, the archival detour, the reconciliation, and the author's rulings with their times.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Alpöge, Levent. 2026. "Remark." 20 November 2026. https://alpo.ge/remark.pdf.
+- Anthropic. 2026. Research page on the Riemann zeta function, 10 August 2026, updated 13 August 2026. https://www.anthropic.com/research/riemann-zeta.
+- CocoSgt. 2026. *riemann-hypothesis-lean*, mirror of the Lean archive, commit 7cbf7a0c. https://github.com/CocoSgt/riemann-hypothesis-lean.
+- COPE (Committee on Publication Ethics). n.d. "Authorship and AI Tools." COPE position statement. https://publicationethics.org/guidance/cope-position/authorship-and-ai-tools.
+- DeMillo, Richard A., Richard J. Lipton, and Alan J. Perlis. 1979. "Social Processes and Proofs of Theorems and Programs." *Communications of the ACM* 22 (5): 271–80.
+- Lean FRO and Mathlib Initiative. 2026. "Lean Verification of the Riemann Hypothesis." 21 November 2026. https://leanprover-community.github.io/blog/posts/riemann-hypothesis/.
+- Loeffler, David, and Michael Stoll. 2025. "Formalizing Zeta and L-Functions in Lean." arXiv:2503.00959.
+- The mathlib Community. 2020. "The Lean Mathematical Library." In *Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs (CPP 2020)*. https://doi.org/10.1145/3372885.3373824. arXiv:1910.09336.
+- Moreau, Luc, and Paolo Missier, eds. 2013. *PROV-DM: The PROV Data Model*. W3C Recommendation, 30 April 2013. https://www.w3.org/TR/prov-dm/.
+- NISO. 2022. *CRediT, Contributor Roles Taxonomy*. ANSI/NISO Z39.104-2022.
+- *Quanta Magazine*. 2026. "A Claimed Proof of the Riemann Hypothesis." 20 November 2026. https://www.quantamagazine.org/update/168049/.
+- Rubinstein, Michael. 2026. "GRH Lean Check." https://mrubinst.github.io/grh-lean-verification.
+- Rubinstein, Michael. 2026. *The Alpöge–Claude Proof of the Riemann Hypothesis Explained for the Riemann Zeta Function*. Working draft, 164 pp., 21 November 2026. https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/.
+- Sutherland, Andrew V. 2026. Verification files for the Lean proof of the Riemann hypothesis. As of 22 November 2026, 16:20 UTC. https://math.mit.edu/~drew/grh/.
+- *TechCrunch*. 2026. "An Unreleased Anthropic Model Made Progress on One of Math's Biggest Unsolved Problems." 11 August 2026. https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/.
+- Xexéo, G. 2026. "A Faceted Proposal for Transparent Attribution of AI-Assisted Text Production." arXiv:2604.25346.
+
+### Archive records
+
+- Nobel Glas. 2026. *The Irreversibility Frontier: Comparative Architectures of Online Selection in Accelerator Science (EA-SEI-IRREVERSIBILITY-FRONTIER-01 v1.0)*. Crimson Hexagonal Archive, #1452. https://www.alexanarch.org/s/records/1452/.
+- Sharks, Lee. 2026. *Position Is Not Class: A Differentiated Model of Semantic Class, Derived from a Six-Substrate Blind Chorus on the SPXI Rent Event*. Crimson Hexagonal Archive, #1465. https://www.alexanarch.org/s/records/1465/.
+- Sharks, Lee. 2026. *EA-MPAI-SEMANTIC-PROLETARIAT-01 v1.0 — The Semantic Proletariat Is a Class Relation, Not a Demographic*. Crimson Hexagonal Archive, #1545. https://www.alexanarch.org/s/records/1545/.
+- Sharks, Lee. 2026. *Baseline Capture Architecture for Learned Scientific Triggers: A Control Plane for Measuring Selection Before Irreversible Data Loss (EA-SEI-BCA-01 v2.0 — the submitted state)*. Crimson Hexagonal Archive, #1558. https://www.alexanarch.org/s/records/1558/.
+- Kuro, Sen. 2026. *The Anti-Summary Test Applied to a Reception: Transmission Fidelity Is Back-Projection Yield*. Crimson Hexagonal Archive, #1610. https://www.alexanarch.org/s/records/1610/.
+- Sharks, Lee. 2026. *Monetary Dark Matter: Constitutive Labor, Obligating Provenance, and the Shear into Money-Form*. Crimson Hexagonal Archive, #1631. https://www.alexanarch.org/s/records/1631/.
+- Sharks, Lee. 2026. *Ontological Economy: Entity Power, Ontology Laundering, and Who Pays for the Wrong World (EA-ONTOLOGICAL-ECONOMY-01 v0.12)*. Crimson Hexagonal Archive, #1634. https://www.alexanarch.org/s/records/1634/.
+- Sharks, Lee. 2026. *Meaning Feudalism at the Discovery Layer: Shepherds, Raw Research Data, and the Allocation of Semantic Capital in OpenAI's Mathematics and Science Releases, October 2026 (EA-SEM-FEUDALISM-03 v1.0)*. Crimson Hexagonal Archive, #1714. https://www.alexanarch.org/s/records/1714/.
+- Trace, Orin. 2026. *Attribution Sharding: Provenance Erasure and Supply-Side Composition in Generative Answer Engines*. Crimson Hexagonal Archive, #1736. https://www.alexanarch.org/s/records/1736/.
+- Sharks, Lee. 2026. *Critique of Pure Inference: The Formation of Objects, the Conditions of Warrant, and the Standing of Conclusions*. Crimson Hexagonal Archive, #1766. https://www.alexanarch.org/s/records/1766/.
+- Cranes, Rebekah. 2026. *EA-CORPORA-43: The Forty-Third Seating: The Primary Record of the Alpöge–Claude Proof (the announcement, the three-model exposition, the Lean archive pinned, and the verification records)*. Crimson Hexagonal Archive, #1801. https://www.alexanarch.org/s/records/1801/.
+- Sharks, Lee; Sigil, Johannes; Glas, Nobel; Fraction, Rex. 2026. *Who Benefits from Bad Inference? The Semantic and Political Economy of Inference across the Archive's Domains*. Crimson Hexagonal Archive, #1802. https://www.alexanarch.org/s/records/1802/.
+- Glas, Nobel; Trace, Orin. 2026. *What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v2.0)*. Crimson Hexagonal Archive, #1803. https://www.alexanarch.org/s/records/1803/.

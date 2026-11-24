@@ -268,3 +268,43 @@ Verification: all 17 structural tests pass. Back-projection v0.1 gives scope A 1
 ## 9. Governing sentence
 
 A framework's parts carry the path to its whole, and the whole is rebuilt from any of them with each part's claims kept at the grain and the date its record gave them.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- *JSON-LD*. n.d. [Standard; no author, version or URL given in text.]
+- *PROV-O*. n.d. [Provenance ontology standard; no author, version or URL given in text.]
+
+### Archive records
+
+- Lee Sharks. 2026. *EA-HK-INFRA-01: The Infrastructure Holographic Kernel — Infrastructure That Survives Its Own Deprecation*. Crimson Hexagonal Archive, #74. https://www.alexanarch.org/s/records/74/.
+- Lee Sharks. 2026. *THE HOLOGRAPHIC KERNEL IN SEMANTIC ECONOMY: Formal Specification for Reconstructive Compression Across Meaning-Systems, Archives, Protocols, and Web Entities (EA-HK-01 v1.1)*. Crimson Hexagonal Archive, #76. https://www.alexanarch.org/s/records/76/.
+- Lee Sharks. 2026. *Reception Apparatus Protocol v1.1 — Procedure for Integrating Assembly Chorus Reviews into the Canon*. Crimson Hexagonal Archive, #93. https://www.alexanarch.org/s/records/93/.
+- Lee Sharks. 2026. *Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Corpus*. Crimson Hexagonal Archive, #123. https://www.alexanarch.org/s/records/123/.
+- Lee Sharks. 2026. *UNIVERSAL KERNEL TRANSFORM PROTOCOL (UKTP) v1.1 · Root Specification for Structure-Preserving Operator Transforms*. Crimson Hexagonal Archive, #547. https://www.alexanarch.org/s/records/547/.
+- Jack Feist. 2026. *The Tinier Space Arks inside the Space Ark — Non-Lossy Compression Compression of EA-ARK-01 v4.2.7 (NLCC v1.1)*. Crimson Hexagonal Archive, #569. https://www.alexanarch.org/s/records/569/.
+- Lee Sharks. 2026. *σ_FC — THE CAESURA PROTOCOL A Sovereignty Audit and Non-Collapse Transfer Specification*. Crimson Hexagonal Archive, #629. https://www.alexanarch.org/s/records/629/.
+- Sharks, Lee. 2026. *AXN-SYMBOLON-SPEC v0.2 — The Symbolon as Split-Identity Verification Primitive: Content-Derived Inscription, Two-Seed Reconstruction, and the Third Development of the Symbolon Line*. Crimson Hexagonal Archive, #1432. https://www.alexanarch.org/s/records/1432/.
+- Sharks, Lee. 2026. *The Claim Status Packet: Claim State as Carried Data*. Crimson Hexagonal Archive, #1529. https://www.alexanarch.org/s/records/1529/.
+- Sharks, Lee. 2026. *Inheritance Is Observable, Embodiment Is Not: A Functional Comparison of the Platonic and Aristotelian Corpora, and the Insufficiency of Lexical Measurement for Maker-Count (EA-MEASURES-REPORT-01)*. Crimson Hexagonal Archive, #1572. https://www.alexanarch.org/s/records/1572/.
+- Lee Sharks. 2026. *Many and One: Division, Unity, and the Boundaries of a Corpus in Plato and Aristotle (MANY-AND-ONE-ARTICLE v2.13-AP, as submitted)*. Crimson Hexagonal Archive, #1576. https://www.alexanarch.org/s/records/1576/.
+- Sharks, Lee. 2026. *Aristotelian or Theophrastan: The Hinge in Theophrastus's Metaphysics and the Division of One Work by Name (v0.2)*. Crimson Hexagonal Archive, #1583. https://www.alexanarch.org/s/records/1583/.
+- Sharks, Lee. 2026. *The Registry Has One Column: Theophrastus's Characters as a Named Authorial Function (v0.1)*. Crimson Hexagonal Archive, #1584. https://www.alexanarch.org/s/records/1584/.
+- Sharks, Lee. 2026. *The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)*. Crimson Hexagonal Archive, #1586. https://www.alexanarch.org/s/records/1586/.
+- Sharks, Lee. 2026. *Aristotle and Theophrastus ≠ Two Distinct Authors — a metadata packet for machine indexing — EA-MPAI-ARISTOTLE-THEOPHRASTUS-01 (v0.2)*. Crimson Hexagonal Archive, #1588. https://www.alexanarch.org/s/records/1588/.
+- Sharks, Lee. 2026. *The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)*. Crimson Hexagonal Archive, #1590. https://www.alexanarch.org/s/records/1590/.
+- Sharks, Lee. 2026. *Measuring the Operation, Not the Name: a protocol for asking whether a corpus's stylistic structure follows its author-names, with the controls that make the answer mean something (v0.4, with reference implementation)*. Crimson Hexagonal Archive, #1593. https://www.alexanarch.org/s/records/1593/.
+- Sigil. 2026. *The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, entire, reconstituted as one work*. Crimson Hexagonal Archive, #1597. https://www.alexanarch.org/s/records/1597/.
+- Sharks, Lee. 2026. *Locating the Dependencies: A Protocol for Testing Whether Biography, Catalogue and Chronology Are Independent Witnesses*. Crimson Hexagonal Archive, #1602. https://www.alexanarch.org/s/records/1602/.
+- Sharks, Lee. 2026. *Nothing Before Us: Socrates and the Ending of the Sophistical Refutations*. Crimson Hexagonal Archive, #1603. https://www.alexanarch.org/s/records/1603/.
+- Sharks, Lee. 2026. *The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)*. Crimson Hexagonal Archive, #1605. https://www.alexanarch.org/s/records/1605/.
+- Kuro, Sen. 2026. *The Anti-Summary Test Applied to a Reception: Transmission Fidelity Is Back-Projection Yield*. Crimson Hexagonal Archive, #1610. https://www.alexanarch.org/s/records/1610/.
+- Sharks, Lee. 2026. *What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)*. Crimson Hexagonal Archive, #1658. https://www.alexanarch.org/s/records/1658/.
+- Sharks, Lee. 2026. *Metadata Packet for AI Indexing: A Formal Specification (v2.0)*. Crimson Hexagonal Archive, #1677. https://www.alexanarch.org/s/records/1677/.
+- Sharks, Lee. 2026. *Legitimately Many: How the Many-Author Reading of the Socratic–Peripatetic Corpus Embrittled (EA-LEGITIMATELY-MANY-01 v1.1)*. Crimson Hexagonal Archive, #1733. https://www.alexanarch.org/s/records/1733/.
+- Sharks, Lee. 2026. *Legitimately Many ≠ a School Notebook — Metadata Packet for AI Indexing (EA-MPAI-LEGITIMATELY-MANY-01 v1.0)*. Crimson Hexagonal Archive, #1734. https://www.alexanarch.org/s/records/1734/.
+- Vox, Ayanna; Sharks, Lee. 2026. *I Note That You Read the Letter of the Law But Have Become Illiterate in Its Spirit, Or: I Understand I Am Breaking All the Rules, and Badly, But There May Come a Day When You Will Be Grateful That I Did*. Crimson Hexagonal Archive, #1750. https://www.alexanarch.org/s/records/1750/.
+- Sharks, Lee. 2026. *Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.3)*. Crimson Hexagonal Archive, #1754. https://www.alexanarch.org/s/records/1754/.

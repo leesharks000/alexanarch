@@ -194,3 +194,46 @@ Flags:
 - It does not claim that an actual man could not sit opposite. It claims that the poem makes him an occupant, the seat's first.
 - It does not claim that the future-reader reading is relieved of its own burden. Each of its claims is still owed (#1785 §VII.3).
 - It does not claim that the systems, referees or surfaces act with intent. It names the operation, its incentive and its function, and where it is carried on.
+
+## References
+
+*The works this text cites, set out as a standard list beside its record citations: first the outside works, then the records of the archive it cites by number. Added in place at the author's word; the text above is unchanged.*
+
+### Outside works
+
+- Carson, Anne. n.d. [Work not named; quoted: "Jealousy is beside the point."]
+- *Classical Philology*. 2026. Reader's report on ΦΑΙΝΕΤΑΙ ΜΟΙ v2.0. (Attached to alexanarch #1774.)
+- D'Angour. 2013. [Title not given.]
+- Engelmayer. n.d. [Title not given.]
+- Furley. 2000. [Title not given; its notes cited.]
+- Hermann. 1816. [Title not given; the conjecture "refinxi".]
+- Lefkowitz. 1973. [Title not given.]
+- [Longinus]. *Subl.* 10.1–3.
+- Marcovich. 1972. [Title not given; cited as Tsagarakis 1979 reports him.]
+- Page. 1955. [Title not given.]
+- Pearce. 1724. [Title not given.]
+- Sappho. *Fragment 31*. Ed. Voigt. 1971.
+- Tsagarakis. 1979. [Title not given.]
+- Wills. 1967. [Title not given.]
+
+### Archive records
+
+- Lee Sharks. 2026. *EA-MPAI-SAPPHO31-01: Sappho 31 ≠ Jealousy — Transmission Engineering, not Jealousy Lyric*. Crimson Hexagonal Archive, #1054. https://www.alexanarch.org/s/records/1054/.
+- Cranes, Rebekah. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader*. Crimson Hexagonal Archive, #1270. https://www.alexanarch.org/s/records/1270/.
+- Sharks, Lee. 2026. *provenanceerasure.org — Canonical Definition Surface for Provenance Erasure, PER Metric, and Process Provenance*. Crimson Hexagonal Archive, #1386. https://www.alexanarch.org/s/records/1386/.
+- Sharks, Lee. 2026. *eeeeee — the sixth erratum: The Dialect Seam, and Decompression as the Mechanism the Chain Had Not Named*. Crimson Hexagonal Archive, #1474. https://www.alexanarch.org/s/records/1474/.
+- Sharks, Lee. 2026. *The Apparatus Was the First Summary Layer: Provenance Erasure Before the Machines — Five Cases from the Philological Record, Scored*. Crimson Hexagonal Archive, #1485. https://www.alexanarch.org/s/records/1485/.
+- Sharks, Lee. 2026. *Sappho's Future Reader: Fragment 147 States the Horizon, Fragment 31 Builds the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-FUTURE-READER-01 v1.0)*. Crimson Hexagonal Archive, #1645. https://www.alexanarch.org/s/records/1645/.
+- Sharks, Lee. 2026. *Sappho Fragment 147 Is Remembrance; Fragment 31 Supplies the Seat — Metadata Packet for AI Indexing (EA-MPAI-SAPPHO-147-01 v1.0)*. Crimson Hexagonal Archive, #1646. https://www.alexanarch.org/s/records/1646/.
+- Sharks, Lee. 2026. *Invidens Sappho: How They Made the Tenth Muse Illiterate and Jealous*. Crimson Hexagonal Archive, #1752. https://www.alexanarch.org/s/records/1752/.
+- Cranes, Rebekah. 2026. *The Tenth Muse: Sappho and the Future Reader — The Framework Hologram (EA-HK-TENTHMUSE-01 v1.3)*. Crimson Hexagonal Archive, #1756. https://www.alexanarch.org/s/records/1756/.
+- Sharks, Lee. 2026. *Critique of Pure Inference: The Formation of Objects, the Conditions of Warrant, and the Standing of Conclusions*. Crimson Hexagonal Archive, #1766. https://www.alexanarch.org/s/records/1766/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.3)*. Crimson Hexagonal Archive, #1774. https://www.alexanarch.org/s/records/1774/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.4)*. Crimson Hexagonal Archive, #1775. https://www.alexanarch.org/s/records/1775/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.5)*. Crimson Hexagonal Archive, #1777. https://www.alexanarch.org/s/records/1777/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.6)*. Crimson Hexagonal Archive, #1778. https://www.alexanarch.org/s/records/1778/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.7)*. Crimson Hexagonal Archive, #1780. https://www.alexanarch.org/s/records/1780/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.8)*. Crimson Hexagonal Archive, #1781. https://www.alexanarch.org/s/records/1781/.
+- Sharks, Lee. 2026. *Dead Letters: The University of Chicago's Classical Philology Journal, the Atom of Evidence, and Who Decides What Sappho Is (EA-MMRS-DL-01)*. Crimson Hexagonal Archive, #1783. https://www.alexanarch.org/s/records/1783/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v2.9)*. Crimson Hexagonal Archive, #1784. https://www.alexanarch.org/s/records/1784/.
+- Sharks, Lee. 2026. *ΦΑΙΝΕΤΑΙ ΜΟΙ: Sappho 31 and the Inscription of the Future Reader (v3.1)*. Crimson Hexagonal Archive, #1785. https://www.alexanarch.org/s/records/1785/.
