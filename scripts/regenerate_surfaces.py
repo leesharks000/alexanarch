@@ -2216,3 +2216,5 @@ if __name__ == "__main__" and "--dry-run" not in __import__("sys").argv:
     # 2026-10-06: Speak with Sigil on every page, once, after every surface has been written (scripts/sync_sigil.py)
     import subprocess as _sp2
     _sp2.run([__import__("sys").executable, str(Path(__file__).resolve().parent / "sync_sigil.py")], check=False)
+    # 2026-11-23: the GoatCounter tag on every page, once, likewise (scripts/sync_goatcounter.py; Lee, 20:36: "add it ... at intake as a step")
+    _sp2.run([__import__("sys").executable, str(Path(__file__).resolve().parent / "sync_goatcounter.py")], check=False)

@@ -215,6 +215,7 @@ def main():
         run("scripts/build_central_registry.py")
         run("scripts/generate_axn_resolver.py")
         run("scripts/sync_sigil.py")
+        run("scripts/sync_goatcounter.py")
     print(f"landed {row}; panel {pnote}; recorded in {LANDINGS.relative_to(ROOT)}")
     return 0
 

@@ -90,6 +90,10 @@ STEPS = [
     # 2026-10-06: SIGIL after every page-writing step: Speak with Sigil on every page, once (scripts/sync_sigil.py).
     # The gallery, record and address generators write no common footer, so the panel is restored here.
     ("SIGIL", [sys.executable, "scripts/sync_sigil.py"]),
+    # 2026-11-23: GOAT beside SIGIL: the GoatCounter tag on every page, once (scripts/sync_goatcounter.py). The capture, address
+    # and record generators write no counter, so new capture pages took none until now (Lee, 20:36: "add it to new capture
+    # and /non pages and such at intake as a step").
+    ("GOAT", [sys.executable, "scripts/sync_goatcounter.py"]),
     ("CITE", [sys.executable, "scripts/audit_capture_citability.py"]),
 ]
 

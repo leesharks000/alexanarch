@@ -133,7 +133,7 @@ def main():
 
     if landed:
         subprocess.run([sys.executable, "scripts/release_axn.py", "--apply", "--only", "negative-of-the-negative"], cwd=ROOT, check=True)
-        for s in ("scripts/build_central_registry.py", "scripts/generate_axn_resolver.py", "scripts/sync_sigil.py"):
+        for s in ("scripts/build_central_registry.py", "scripts/generate_axn_resolver.py", "scripts/sync_sigil.py", "scripts/sync_goatcounter.py"):
             subprocess.run([sys.executable, s], cwd=ROOT, check=True)
     print("landed: " + (", ".join(landed) if landed else "none"))
     return 0
