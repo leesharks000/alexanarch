@@ -278,7 +278,7 @@ def build():
         subs = ''.join(row(s_, [ask_link(fill(t, field=s_), lt) for t, lt in zip(Q['subdiscipline_templates'], L['subdiscipline_templates'])], sub=True) for s_ in dsc['subs'])
         disc += f'<details><summary>{E(cap(dsc["name"]))} <span class="c">{len(dsc["subs"])} subfield{"s" if len(dsc["subs"]) != 1 else ""}</span></summary>{top}{subs}</details>'
     sec.append(f'<section id="disciplines"><h2>By discipline and subdiscipline</h2>{disc}</section>')
-    for key, title in (('programmes', 'By programme'), ('themes', 'By theme'), ('practices', 'By practice')):
+    for key, title in (('works', 'By core work'), ('programmes', 'By programme'), ('themes', 'By theme'), ('practices', 'By practice')):
         tk = key[:-1] + '_templates'
         body = ''.join(row(cap(n), [ask_link(fill(t, name=n), lt) for t, lt in zip(Q[tk], L[tk])]) for n in Q[key])
         sec.append(f'<section id="{key}"><h2>{title}</h2>{body}</section>')
@@ -297,7 +297,7 @@ def build():
     sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
                  f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
-    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['valuation_scopes']) * len(Q['valuation_templates']) + len(Q['tools']) * len(Q['tool_templates']) + sum(len(g['items']) for g in Q.get('literary_groups', [])) * len(Q.get('literary_templates', [])) + len(Q['mantle_items']) * len(Q['mantle_templates']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
+    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['valuation_scopes']) * len(Q['valuation_templates']) + len(Q['tools']) * len(Q['tool_templates']) + sum(len(g['items']) for g in Q.get('literary_groups', [])) * len(Q.get('literary_templates', [])) + len(Q['mantle_items']) * len(Q['mantle_templates']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('works', 'programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
     first = min(e['date'] for e in ENTS)
     stats = (f'<div class="stats"><div><b>{n_q:,}</b>queries on this page</div><div><b>{n_addr:,}</b>addresses seated since {first}</div>'
              f'<div><b>{n_obs:,}</b>observations</div><div><b>{len(arch):,}</b>archive-level addresses</div>'
@@ -362,7 +362,7 @@ ol.about{{margin:.4em 0 .4em 1.3em;list-style:decimal}} ol.about li{{margin:.45e
 <li>The prompts now set historical and fictional figures among the heteronyms and in the rooms of the Hexagon (Ubu against the Hexagon&rsquo;s ontology of seating, with Rex Fraction and Rev. Ayanna Vox leading the documents), and ask the composer to range across the documents and synthesize them. The dice in the Weird-ass section, and the perturb button in every other section, draw such prompts at random; each roll is a new address.</li>
 </ol>
 </details>
-<p class="toc"><a href="#own">Your own question</a><a href="#outlines">From an outline</a><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#weird">Weird-ass prompts</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
+<p class="toc"><a href="#own">Your own question</a><a href="#outlines">From an outline</a><a href="#time">Over time</a><a href="#whole">As a whole</a><a href="#works">Core works</a><a href="#heteronyms">Heteronyms</a><a href="#rooms">Rooms</a><a href="#weird">Weird-ass prompts</a><a href="#institutions">Journals &amp; institutions</a><a href="#disciplines">Disciplines</a><a href="#programmes">Programmes</a><a href="#themes">Themes</a><a href="#practices">Practices</a><a href="#submit">Submit a transcript</a><a href="#accrue">What accrues</a><a href="#asked">Asked before</a></p>
 {''.join(sec)}
 <section id="submit"><h2>Submit a transcript</h2>
 <p class="n">Ran one of these, or any query of your own about the archive? Paste the whole exchange here, or load it from a .txt or .md file. It goes to the archive's capture inbox on GitHub, unseated, to be read and seated in the Capture Registry later. The query you typed is the address, so give it exactly as typed. Screenshots can't be sent here yet; paste the text.</p>
@@ -442,14 +442,14 @@ else{{st.textContent="Not sent: "+(x[1].error||"error")+".";dl(o)}}}}).catch(fun
 
 
 GROUPS = [('Start here', ['own', 'outlines']),
-          ('Read the archive', ['time', 'whole', 'literary', 'heteronyms', 'rooms']),
+          ('Read the archive', ['time', 'whole', 'works', 'literary', 'heteronyms', 'rooms']),
           ('Evaluate', ['valuation', 'mantles']),
           ('By field', ['disciplines', 'programmes', 'themes', 'practices', 'institutions']),
           ('Use the tools', ['tools']),
           ('Under form and constraint', ['weird']),
           ('The record', ['accrue', 'asked', 'submit'])]
 TOCNAME = {'own': 'Your own question', 'outlines': 'From an outline', 'time': 'Over time', 'whole': 'As a whole', 'valuation': 'Valuation', 'tools': 'Protocols &amp; methods', 'literary': 'Sites as literary works', 'mantles': 'Mantle-bearing', 'heteronyms': 'Heteronyms',
-           'rooms': 'The Crimson Hexagon', 'disciplines': 'Disciplines', 'programmes': 'Programmes', 'themes': 'Themes', 'practices': 'Practices',
+           'rooms': 'The Crimson Hexagon', 'disciplines': 'Disciplines', 'works': 'Core works', 'programmes': 'Programmes', 'themes': 'Themes', 'practices': 'Practices',
            'institutions': 'Journals &amp; institutions', 'weird': 'Weird-ass prompts', 'accrue': 'What accrues', 'asked': 'Asked before', 'submit': 'Submit a transcript'}
 UNFOLDED = {'own', 'outlines'}
 ORG_CSS = ('#bar{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--border);padding:.35em 0;margin:0 0 .6em;display:flex;align-items:center;justify-content:space-between;gap:.6em;flex-wrap:wrap}'
