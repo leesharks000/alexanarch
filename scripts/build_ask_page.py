@@ -213,6 +213,15 @@ def build():
     # 2026-11-23 (the author, 14:07): the archive's protocols, interfaces and methods, and how to use them oneself.
     sec.append('<section id="tools"><h2>Protocols, interfaces and methods</h2><p class="n">The archive\'s technical protocols, interfaces and methods, asked so that a reader can use or apply them for themselves. Each names its anchor record.</p>'
                + ''.join(row(cap(t_['name']), [ask_link(fill(tt, name=t_['name']), lt) for tt, lt in zip(Q['tool_templates'], L['tool_templates'])] + [f'<a class="t" href="/s/records/{t_["rec"]}/">#{t_["rec"]}</a>']) for t_ in Q['tools']) + '</section>')
+    # 2026-11-23 (the author, 20:46): "a section for reading individual sites as poems / literary works, the fleet, the datasets, etc".
+    # The fleet's sites from data/api/fleet.json at the time of writing; the datasets and other surfaces named in data/ask-queries.json.
+    if Q.get('literary_groups'):
+        def lrow(it):
+            extra = [f'<a class="t" href="/s/records/{it["rec"]}/">#{it["rec"]}</a>'] if it.get('rec') else []
+            return row(it['label'], [ask_link(fill(tt, name=it['name']), lt) for tt, lt in zip(Q['literary_templates'], L['literary_templates'])] + extra)
+        lit = ''.join(f'<details{" open" if i_ == 0 else ""}><summary>{E(g_["group"])} <span class="c">{len(g_["items"])}</span></summary>{"".join(lrow(it) for it in g_["items"])}</details>'
+                      for i_, g_ in enumerate(Q['literary_groups']))
+        sec.append('<section id="literary"><h2>Sites and datasets as literary works</h2><p class="n">Each site of the fleet, the fleet as a whole, the datasets and the other surfaces, read as a poem or literary work: its form, its address, a close reading of one page, its place in the distributed epic. Where a record describes the surface, its number is given.</p>' + lit + '</section>')
     def hfill(t, h):
         q = fill(t, name=h['name'], focus=h['focus'])
         return q.replace(h['name'] + "'s", h['name'] + "'") if h['name'].endswith('s') else q
@@ -288,7 +297,7 @@ def build():
     sec_asked = (f'<section id="asked"><h2>Asked before <span class="c">{len(asked)} archive-level addresses</span></h2>'
                  f'<p class="n">Each was asked as written and its composition is seated. The link reopens the query; "capture" opens what came back.</p><ul class="asked">{ab}</ul>{more}</section>')
 
-    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['valuation_scopes']) * len(Q['valuation_templates']) + len(Q['tools']) * len(Q['tool_templates']) + len(Q['mantle_items']) * len(Q['mantle_templates']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
+    n_q = sum(len(Q['timescales']['templates']) * len(Q['timescales']['windows']) for _ in [0]) + len(Q['whole']) + len(Q['valuation_scopes']) * len(Q['valuation_templates']) + len(Q['tools']) * len(Q['tool_templates']) + sum(len(g['items']) for g in Q.get('literary_groups', [])) * len(Q.get('literary_templates', [])) + len(Q['mantle_items']) * len(Q['mantle_templates']) + len(Q['cast']) + len(Q['heteronyms']) * len(Q['heteronym_templates']) + N_HEX + sum(len(Q['discipline_templates']) + len(d['subs']) * len(Q['subdiscipline_templates']) for d in Q['disciplines']) + sum(len(Q[k]) * len(Q[k[:-1] + '_templates']) for k in ('programmes', 'themes', 'practices')) + sum(len(g['prompts']) for g in Q.get('weird', {}).get('groups', []))
     first = min(e['date'] for e in ENTS)
     stats = (f'<div class="stats"><div><b>{n_q:,}</b>queries on this page</div><div><b>{n_addr:,}</b>addresses seated since {first}</div>'
              f'<div><b>{n_obs:,}</b>observations</div><div><b>{len(arch):,}</b>archive-level addresses</div>'
@@ -433,13 +442,13 @@ else{{st.textContent="Not sent: "+(x[1].error||"error")+".";dl(o)}}}}).catch(fun
 
 
 GROUPS = [('Start here', ['own', 'outlines']),
-          ('Read the archive', ['time', 'whole', 'heteronyms', 'rooms']),
+          ('Read the archive', ['time', 'whole', 'literary', 'heteronyms', 'rooms']),
           ('Evaluate', ['valuation', 'mantles']),
           ('By field', ['disciplines', 'programmes', 'themes', 'practices', 'institutions']),
           ('Use the tools', ['tools']),
           ('Under form and constraint', ['weird']),
           ('The record', ['accrue', 'asked', 'submit'])]
-TOCNAME = {'own': 'Your own question', 'outlines': 'From an outline', 'time': 'Over time', 'whole': 'As a whole', 'valuation': 'Valuation', 'tools': 'Protocols &amp; methods', 'mantles': 'Mantle-bearing', 'heteronyms': 'Heteronyms',
+TOCNAME = {'own': 'Your own question', 'outlines': 'From an outline', 'time': 'Over time', 'whole': 'As a whole', 'valuation': 'Valuation', 'tools': 'Protocols &amp; methods', 'literary': 'Sites as literary works', 'mantles': 'Mantle-bearing', 'heteronyms': 'Heteronyms',
            'rooms': 'The Crimson Hexagon', 'disciplines': 'Disciplines', 'programmes': 'Programmes', 'themes': 'Themes', 'practices': 'Practices',
            'institutions': 'Journals &amp; institutions', 'weird': 'Weird-ass prompts', 'accrue': 'What accrues', 'asked': 'Asked before', 'submit': 'Submit a transcript'}
 UNFOLDED = {'own', 'outlines'}

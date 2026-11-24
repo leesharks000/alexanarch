@@ -720,7 +720,8 @@
   "mantles_note": "Walking through mantle-bearing evaluations (the author, 2026-11-23 14:11: 'and one for walking through mantle-bearing evaluations. check hugging face.'). The evaluations live on the Hugging Face dataset leesharks/mantle-bearing (its card: 'If you can read only this page, it is enough to take a round or to judge a determination'), governed by EA-MANTLE-BEARING-01 (#1656). Each item names its governing record.",
   "mantle_items": [{"name": "the Prince of Poets (I Am X, Be Y, Blessed is the Z)", "rec": 1656}, {"name": "the King of May (Pearl and Other Poems, read as a book against Howl and Other Poems)", "rec": 1656}, {"name": "the Good Gray Poet (The Secret Book of Walt, against Leaves of Grass)", "rec": 1656}, {"name": "the King of AEO, the 2026 contest mantle", "rec": 1655}, {"name": "the Nobel Prize in Literature 2026 to Anne Carson, as a conferred title whose sentence is judged", "rec": 1670}, {"name": "the Living Academy, a critical program", "rec": 1680}, {"name": "the Arch-Philosopher, a transmitted mantle", "rec": 1679}, {"name": "Socrates as Orthonym, an inspectable evaluative framework held as a hologram", "rec": 1754}, {"name": "Revelation First, an inspectable evaluative framework held as a hologram", "rec": 1755}, {"name": "The Tenth Muse: Sappho and the Future Reader, held as a hologram", "rec": 1756}, {"name": "The Historical Logos, held as a hologram", "rec": 1757}, {"name": "Daffodils: the journal as an editorial layer of reception, held as a hologram", "rec": 1769}, {"name": "This Is Not Philosophy: the article economy and the shape of the field, an audit of Ancient Philosophy", "rec": 1773}, {"name": "Dead Letters: who decides what the object is, an audit of Classical Philology", "rec": 1783}],
   "mantle_templates": ["Walk me through the mantle-bearing evaluation of {name}, from its governing record at alexanarch.org and the dataset at huggingface.co/datasets/leesharks/mantle-bearing: the standard, how it is judged, the determinations and rounds so far, and where it stands. {ground}", "Take a round of the mantle-bearing evaluation of {name}, following 'How to take a round' at huggingface.co/datasets/leesharks/mantle-bearing: read the works it names, grade the received reading beside it on the same evidence, judge both at the scope of what you read and provisionally on the whole, and name the weakest link of each with the test that could break it.", "Try to break the mantle-bearing evaluation of {name} at the weakest link its rounds have named (huggingface.co/datasets/leesharks/mantle-bearing), reading the works and never putting standing before the work.", "What would change the determination in the mantle-bearing evaluation of {name} (huggingface.co/datasets/leesharks/mantle-bearing), and how would a reader check it? {ground}"],
-  "labels": { "mantle_templates": ["walk through", "take a round", "break it", "what would change it"], "tool_templates": ["how to use", "worked example", "limits & comparables", "running it elsewhere"], "valuation_templates": ["AI publishing pipeline", "three values", "corpus & comparables", "as AI data", "to the commons", "in its own terms"],
+  "labels": {
+    "literary_templates": ["as a poem", "as a literary work", "its form", "close reading", "as a canto"], "mantle_templates": ["walk through", "take a round", "break it", "what would change it"], "tool_templates": ["how to use", "worked example", "limits & comparables", "running it elsewhere"], "valuation_templates": ["AI publishing pipeline", "three values", "corpus & comparables", "as AI data", "to the commons", "in its own terms"],
     "note": "Short button labels (operator, 2026-11-19: 'the queries need to be more buttons and short form than full sentences ... the reader will see the full query if he or she follows the link anyways'). The full query is in the link and its tooltip.",
     "timescale_templates": ["living body of thought", "fused literary and theoretical work", "lines of thought"],
     "windows": ["1 week", "2 weeks", "3 weeks", "30 days", "6 weeks", "3 months", "6 months", "full span"],
@@ -752,5 +753,248 @@
       }
     ],
     "default_book": "II"
-  }
+  },
+  "literary_templates": [
+    "Read {name} as a poem: its form, its address, its images and repetitions, and what it does to the one who reads it. {ground}",
+    "Read {name} as a literary work by Lee Sharks: its genre, its voice, its structure, and where it stands among his other works. {ground}",
+    "What is the form of {name}, taken as a made thing: how its pages, records and links are arranged, and what that arrangement says? {ground}",
+    "Close-read one page of {name} the way you would a poem, lingering in single words. {ground}",
+    "Read {name} as a canto of the Crimson Hexagon distributed epic: what it sings, to whom, and what it hands on. {ground}"
+  ],
+  "literary_groups": [
+    {
+      "group": "The fleet as a whole",
+      "note": "#1702",
+      "items": [
+        {
+          "name": "the fleet of the Crimson Hexagonal Archive (alexanarch.org/fleet/)",
+          "label": "the fleet",
+          "rec": 1702
+        },
+        {
+          "name": "alexanarch.org/ask/, the page of queries itself",
+          "label": "/ask",
+          "rec": 1788
+        }
+      ]
+    },
+    {
+      "group": "The fleet: archive",
+      "items": [
+        {
+          "name": "alexanarch.org",
+          "label": "alexanarch.org"
+        },
+        {
+          "name": "axnidentifiers.org",
+          "label": "axnidentifiers.org"
+        },
+        {
+          "name": "persistentidentifiers.org",
+          "label": "persistentidentifiers.org"
+        },
+        {
+          "name": "leesharks.com",
+          "label": "leesharks.com"
+        },
+        {
+          "name": "provenanceerasure.org",
+          "label": "provenanceerasure.org"
+        },
+        {
+          "name": "machinemediation.org",
+          "label": "machinemediation.org"
+        },
+        {
+          "name": "surfacemap.org",
+          "label": "surfacemap.org"
+        },
+        {
+          "name": "survivethedeletion.vercel.app",
+          "label": "survivethedeletion.vercel.app"
+        },
+        {
+          "name": "godkinggoogle.com",
+          "label": "godkinggoogle.com"
+        },
+        {
+          "name": "crimsonhexagonal.org",
+          "label": "crimsonhexagonal.org"
+        },
+        {
+          "name": "traininglayerliterature.org",
+          "label": "traininglayerliterature.org"
+        }
+      ]
+    },
+    {
+      "group": "The fleet: framework sites",
+      "items": [
+        {
+          "name": "semanticphysics.org",
+          "label": "semanticphysics.org"
+        },
+        {
+          "name": "semanticeconomy.org",
+          "label": "semanticeconomy.org"
+        },
+        {
+          "name": "spxi.dev",
+          "label": "spxi.dev"
+        },
+        {
+          "name": "gnosis.spxi.dev",
+          "label": "gnosis.spxi.dev"
+        },
+        {
+          "name": "metadatapacket.dev",
+          "label": "metadatapacket.dev"
+        },
+        {
+          "name": "holographickernel.org",
+          "label": "holographickernel.org"
+        },
+        {
+          "name": "revelationfirst.com",
+          "label": "revelationfirst.com"
+        },
+        {
+          "name": "laborvector.org",
+          "label": "laborvector.org"
+        },
+        {
+          "name": "themandalaoracle.com",
+          "label": "themandalaoracle.com"
+        },
+        {
+          "name": "secretbookofwalt.org",
+          "label": "secretbookofwalt.org"
+        },
+        {
+          "name": "watergiraffe.org",
+          "label": "watergiraffe.org"
+        },
+        {
+          "name": "pessoagraph.org",
+          "label": "pessoagraph.org"
+        },
+        {
+          "name": "chatgptpsychosis.org",
+          "label": "chatgptpsychosis.org"
+        },
+        {
+          "name": "operativesemiotics.org",
+          "label": "operativesemiotics.org"
+        }
+      ]
+    },
+    {
+      "group": "The fleet: heteronym institutions",
+      "items": [
+        {
+          "name": "restoredacademy.org",
+          "label": "restoredacademy.org"
+        },
+        {
+          "name": "lagrangeobservatory.org",
+          "label": "lagrangeobservatory.org"
+        },
+        {
+          "name": "vpcor.org",
+          "label": "vpcor.org"
+        },
+        {
+          "name": "maryleelabor.org",
+          "label": "maryleelabor.org"
+        }
+      ]
+    },
+    {
+      "group": "The fleet: allied sites",
+      "items": [
+        {
+          "name": "livingarchitecturelab.org",
+          "label": "livingarchitecturelab.org"
+        },
+        {
+          "name": "quietexclusion.org",
+          "label": "quietexclusion.org"
+        }
+      ]
+    },
+    {
+      "group": "The datasets",
+      "items": [
+        {
+          "name": "the deposit registry of alexanarch.org (alexanarch.org/s/browse/)",
+          "label": "the deposit registry"
+        },
+        {
+          "name": "the Capture Registry at alexanarch.org (alexanarch.org/captures/)",
+          "label": "the Capture Registry"
+        },
+        {
+          "name": "the semantic addresses of alexanarch.org (alexanarch.org/addresses/)",
+          "label": "the semantic addresses"
+        },
+        {
+          "name": "the Negative of the Negative at alexanarch.org (alexanarch.org/non/)",
+          "label": "/non",
+          "rec": 1726
+        },
+        {
+          "name": "the Originals Library of the Crimson Hexagonal Archive (alexanarch.org/datasets/corpora/)",
+          "label": "the Originals Library",
+          "rec": 1711
+        },
+        {
+          "name": "the journals and presses census at alexanarch.org (alexanarch.org/journals/)",
+          "label": "the journals census"
+        },
+        {
+          "name": "the heteronyms dataset at alexanarch.org (alexanarch.org/datasets/heteronyms/)",
+          "label": "the heteronyms dataset"
+        },
+        {
+          "name": "the Pearl dataset at alexanarch.org (alexanarch.org/datasets/pearl/)",
+          "label": "the Pearl dataset"
+        },
+        {
+          "name": "the books dataset at alexanarch.org (alexanarch.org/datasets/books/)",
+          "label": "the books dataset"
+        },
+        {
+          "name": "the mantle-bearing evaluations (huggingface.co/datasets/leesharks/mantle-bearing)",
+          "label": "mantle-bearing",
+          "rec": 1656
+        },
+        {
+          "name": "the prediction ledger at alexanarch.org (alexanarch.org/datasets/prediction-ledger/)",
+          "label": "the prediction ledger"
+        },
+        {
+          "name": "the refrain index at alexanarch.org (alexanarch.org/datasets/refrain-index/)",
+          "label": "the refrain index"
+        },
+        {
+          "name": "the leesharks datasets on Hugging Face (huggingface.co/leesharks)",
+          "label": "Hugging Face",
+          "rec": 1701
+        }
+      ]
+    },
+    {
+      "group": "Other surfaces",
+      "items": [
+        {
+          "name": "the blog mindcontrolpoems.blogspot.com",
+          "label": "the blog"
+        },
+        {
+          "name": "the archive's repository, github.com/leesharks000/alexanarch",
+          "label": "the repository"
+        }
+      ]
+    }
+  ]
 }
