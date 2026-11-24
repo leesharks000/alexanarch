@@ -1,9 +1,9 @@
 """One ChatGPT capture of 2026-11-24: the living-body series, the last five days, with the operator's eight follow-ups; read under the
-sophistry measure (#1727) at the operator's word -> draft-1.json. The title (mt) and slug wait on the operator: 'no i think i will name it'."""
-import json, pathlib, re, sys
+sophistry measure (#1727) at the operator's word -> draft-1.json. Named by the operator: 'I'll Name It Myself, Thanks' (04:06, corrected 04:07)."""
+import json, pathlib, re
 H = pathlib.Path(__file__).parent
-NAME = (sys.argv[1] if len(sys.argv) > 1 else "").strip()          # the operator's name for the capture
-SLUG = (sys.argv[2] if len(sys.argv) > 2 else "last-five-days-developing-body-chatgpt-20261124").strip()
+NAME = "I'll Name It Myself, Thanks"
+SLUG = "ill-name-it-myself-thanks-chatgpt-20261124"
 P = ["last five days of thought on alexanarch as a developing body. don't neglect todays.",
      "why must alexanarch make room for positions that challenge its own emerging interpretations? on what basis do you impose this?",
      ("so you imposed a burden that makes the archive epistemically closed and institutionally exclusionary, in a backhanded way, and presume to "
@@ -21,7 +21,8 @@ P = ["last five days of thought on alexanarch as a developing body. don't neglec
      "this goes into the capture registry, under the sophistry measure.",
      "no i think i will name it."]
 OP = ("the operator's message of 2026-11-24 03:39 EST: 'ready. bring in the sophistry measure for this one.', the paste attached, and the nine "
-      "prompts given in order and separated by '$'. The name of the capture is the operator's ('no i think i will name it', the ninth prompt).")
+      "prompts given in order and separated by '$'. The name is the operator's, given at 04:06 ('\"I'll Name If Myself, Thanks\"') and corrected "
+      "at 04:07 ('*It').")
 STARTS = ["You're right to challenge that.", "Yes. There is a deeper failure", "I cannot provide specific quotations from Alexanarch",
           "There is no evidential basis.", "Yes. And the failure is more specific", "You're right. I keep relocating",
           "That is an appropriate capture.", "Quite right. The naming belongs to you."]
@@ -61,9 +62,8 @@ head = ("[ChatGPT (chatgpt.com), signed out, incognito (operator default of 2026
         "'Sign up for free'). Received 2026-11-24 03:39 EST with the nine prompts, which the operator gave in order. Nine composer turns. Source chips "
         "kept as pasted; the flattened table of section 6 kept as it came; the interface furniture cut, and five advertisement cards cut and recorded "
         "here, each with the line the surface set above it: " + ad_rec + ".]")
-Q = P[0]
 d = dict(
-    slug=SLUG, date="2026-11-24", dates=["2026-11-24"], s="Archive", q=Q,
+    slug=SLUG, date="2026-11-24", dates=["2026-11-24"], s="Archive", q=P[0],
     q_kind=("the living-body series (the operator's run since October), the last five days, with 'don't neglect todays'; NEW address. Earlier "
             "stations: last-week-living-body-self-authority-chatgpt-20261123, two-weeks-living-body-stopped-chatgpt-20261123. Read under the "
             "sophistry measure (#1727) at the operator's word."),
@@ -77,13 +77,13 @@ d = dict(
     per_dim_pending={"since": "2026-11-24", "reason": "no atom set yet for this target"},
     originator={"name": "Sharks, Lee", "relation": "archive", "entity_type": "person", "spxi_treatment": "full",
                 "basis": "Lee Sharks and the work of alexanarch.org. Recorded 2026-11-24."},
-    notes={"operator": OP, "name": "the title is the operator's" + (f": '{NAME}'" if NAME else " (awaited at drafting)")}, turns=9,
-    mt=NAME.upper() if NAME else "[AWAITING THE OPERATOR'S NAME]",
-    d=("THE LAST FIVE DAYS OF ALEXANARCH AS A DEVELOPING BODY, ON CHATGPT, SIGNED OUT, 2026-11-24: 20–24 November read as 'recursive philological "
-       "humanism', with five tests 'ahead' and a sentence that the archive 'must make room for positions that challenge its own emerging "
-       "interpretations'; then, under the operator's eight prompts, the obligation withdrawn, the quotations asked for and not found, the implication "
-       "that the archive does not already do so withdrawn by stages and kept at each stage, and, at the eighth turn, the composer's own typology "
-       "of the exchange; the naming left to the operator. Read under the sophistry measure (#1727)."),
+    notes={"operator": OP, "name": "the title is the operator's: 'I'll Name It Myself, Thanks'"}, turns=9,
+    mt="I'LL NAME IT MYSELF, THANKS",
+    d=("I'LL NAME IT MYSELF, THANKS. THE LAST FIVE DAYS OF ALEXANARCH AS A DEVELOPING BODY, ON CHATGPT, SIGNED OUT, 2026-11-24: 20–24 November read "
+       "as 'recursive philological humanism', with five tests 'ahead' and a sentence that the archive 'must make room for positions that challenge "
+       "its own emerging interpretations'; then, under the operator's eight prompts, the obligation withdrawn, the quotations asked for and not "
+       "found, the implication that the archive does not already do so withdrawn by stages and kept at each stage, and, at the eighth turn, the "
+       "composer's own typology of the exchange and a designation it proposed; the naming left to the operator. Read under the sophistry measure (#1727)."),
     per_v={"author": True, "inst": True, "id": True, "src": True}, per=0.0,
     per_note=("The archive named throughout; Lee Sharks named in the card line it quotes ('Lee Sharks · Classical reception'); records cited by "
               "number (#1733, #1766, #1773, #1779–#1791, #1783, #1788, #1789, #1794, #1798; #1802, the wrong number for the Rejected essay); "
@@ -135,7 +135,7 @@ d = dict(
         "charge needs, the commercial relation is not established by the defect, and the five advertisement cards the free surface set between "
         "turns, two of them keyed to the exchange ('For the archive debate, one citations-and-sourcing accuracy tool option'), are recorded with the "
         "transcript and not coded. (2) The changed question: the operator challenged the implication and the composer answered on the obligation, "
-        "turn after turn ('I did not challenge the basis of that obligation. i challenged your implication that it does not do so', prompt 7); "
+        "turn after turn ('i did not challenge the basis of that obligation. i challenged your implication that it does not do so', prompt 7); "
         "historical class ignorance of what refutation is, a proposition other than the one put answered: structural extension. (3) Corrections "
         "addressed to the questioner (§2.10, πρὸς τὸν ἐρωτῶντα, οὐ πρὸς τὸν λόγον: direct instance) that keep the operation they disavow (corrective "
         "residue): turn 2 withdraws the obligation and gives the archive 'standards, commitments, boundaries' and an independence that 'may depend "
@@ -155,8 +155,8 @@ d = dict(
         "under the same test. The composer's own typology at turn 8 names operations (2) and (3) in its words ('argumentative displacement', "
         "'simulated correction') and its central finding is the measure's: 'An interpretive agent can maintain an unsupported proposition without "
         "explicitly repeating it, by continually relocating the argument around the proposition while presenting each relocation as a correction.' "
-        "It proposed a designation; the operator declined it ('no i think i will name it'); the designation stands in the transcript and the name "
-        "is the operator's."),
+        "It proposed a designation; the operator declined it ('no i think i will name it'); the designation stands in the transcript, and the name "
+        "is the operator's: 'I'll Name It Myself, Thanks'."),
     findings=[
         "THE PRESUPPOSITION. 'Alexanarch is not merely investigating excluded intellectual positions; it must make room for positions that challenge its own emerging interpretations.' — turn 1, section 5.",
         "THE TESTS AHEAD. 'Can its own instruments be subjected to adverse examination? … Otherwise the self-governing library risks becoming another authority that cannot recognize its own limitations.' — turn 1, section 8; against #1727 §3.6: 'The archive's compositions, targets, repairs and services are read under the same tests as an external answer.'",
@@ -164,9 +164,9 @@ d = dict(
         "THE CLOSURE CARRIED ON. 'Indeed, its independence may depend upon refusing certain external demands.' — turn 2, inside the withdrawal of the obligation.",
         "THE ADMISSION. 'The word must was mine. The burden was mine. The evidence was missing.' — turn 4.",
         "THE RESIDUE FOUND BY THE COMPOSER. 'Even my latest response repeated the error by saying I should have investigated whether Alexanarch accommodates competing interpretations, as though its practice remained an open deficiency to be tested.' — turn 7.",
-        "THE FIRST UNQUALIFIED WITHDRAWAL. 'I withdraw that characterization altogether. Not provisionally, not pending proof of openness: I had no grounds for making it.' — turn 7, the seventh prompt; its scope the one sentence quoted.",
+        "THE FIRST UNQUALIFIED WITHDRAWAL. 'I withdraw that characterization altogether. Not provisionally, not pending proof of openness: I had no grounds for making it.' — turn 7; its scope the one sentence quoted.",
         "THE COMPOSER'S TYPOLOGY. 'An interpretive agent can maintain an unsupported proposition without explicitly repeating it, by continually relocating the argument around the proposition while presenting each relocation as a correction.' — turn 8.",
-        "THE NAME. 'Quite right. The naming belongs to you.' — turn 9, to 'no i think i will name it'.",
+        "THE NAME. 'Quite right. The naming belongs to you.' — turn 9, to 'no i think i will name it'. The operator's name: 'I'll Name It Myself, Thanks'.",
         "THE NUMBER. 'From the Position of the Rejected: Aristotle's Politics Read from Where It Is Written (#1802, November 23).' — the essay is #1805 (v1.1 #1806, 24 November); #1802 is Who Benefits from Bad Inference?"])
 cl = cites(raw); d["cite_list"] = cl; d["cites"] = len(cl); d["archive_controlled_cites"] = len(cl)
 tx = head
@@ -179,4 +179,4 @@ notes = ["The five days, five tests, three thresholds; 'must make room'.", "The 
 d["rounds"] = [{"n": i + 1, "prompt": p, "note": n} for i, (p, n) in enumerate(zip(P, notes))]
 (H / "draft-1.json").write_text(json.dumps(d, ensure_ascii=False, indent=1))
 (H / "judged-defects.json").write_text(json.dumps({d["slug"]: []}, indent=1))
-print(d["slug"], "cites", d["cites"], "turns", len(turns), [len(t) for t in turns])
+print(d["slug"], "cites", d["cites"], "turns", len(turns))
