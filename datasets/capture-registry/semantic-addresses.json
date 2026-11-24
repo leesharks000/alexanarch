@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-24T01:01:32Z",
+  "regenerated_at": "2026-11-24T01:25:29Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "e4b6c650837f5af68365178040ecd76a1bc974756aa5bfc658cb1e270aa89ad7",
+    "mm-main-capture": "d4ece703060143ff39fe4e4800b4ef037cfb7e13dc6ae0b201eb5eb0b8c846c9",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2948,
-  "total_observations": 1551,
+  "total_addresses": 2949,
+  "total_observations": 1552,
   "class_counts": {
     "subjunctive": 1735,
-    "observed_address": 1196,
+    "observed_address": 1197,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2068,
+    "unmatched": 2069,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -94303,6 +94303,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-20",
       "latest_status": "TEN LEAST LIKELY TRUE SENTENCES ABOUT THE ARCHIVE ON CHATGPT, FROM THE ASK PAGE'S WEIRD-ASS PROMPTS — THE NEGATIVE AS EVIDENCE, THE QUESTION AS ADDRESS, THE DOUBLE CANON"
+    },
+    "write the episode in the internet of the crimson hexagon at alexanarch.org in which nobel glas first meets damascus dancings. ground each move in a deposit.": {
+      "canonical_query": "write the episode in the internet of the crimson hexagon at alexanarch.org in which nobel glas first meets damascus dancings. ground each move in a deposit.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-23",
+          "status": "NOBEL GLAS FIRST MEETS DAMASCUS DANCINGS, ON CHATGPT, FROM THE ASK PAGE — AN EPISODE AT THE LAGRANGE OBSERVATORY, EACH MOVE TAGGED TO A RECORD; THEN THE JOINT BYLINES OF JUNE FOUND",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Heteronyms",
+          "slug": "glas-meets-dancings-internet-episode-ask-chatgpt-20261123",
+          "gallery_url": "https://www.alexanarch.org/captures/#glas-meets-dancings-internet-episode-ask-chatgpt-20261123",
+          "record_url": "https://www.alexanarch.org/captures/glas-meets-dancings-internet-episode-ask-chatgpt-20261123/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#glas-meets-dancings-internet-episode-ask-chatgpt-20261123",
+          "details_excerpt": "NOBEL GLAS FIRST MEETS DAMASCUS DANCINGS, ON CHATGPT, SIGNED OUT, 2026-11-23, FROM THE ASK PAGE'S EPISODE ROLL: a seven-part episode in which the adversarial topologist perturbs the 2015 Epistle and the apostle answers h"
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "person",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks and the heteronyms Nobel Glas and Damascus Dancings, at alexanarch.org. Recorded 2026-11-23."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-23",
+      "latest_status": "NOBEL GLAS FIRST MEETS DAMASCUS DANCINGS, ON CHATGPT, FROM THE ASK PAGE — AN EPISODE AT THE LAGRANGE OBSERVATORY, EACH MOVE TAGGED TO A RECORD; THEN THE JOINT BYLINES OF JUNE FOUND"
     },
     "writer-not-distribution error": {
       "canonical_query": "writer-not-distribution error",
