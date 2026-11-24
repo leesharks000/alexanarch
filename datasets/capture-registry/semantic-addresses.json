@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-24T09:47:39Z",
+  "regenerated_at": "2026-11-24T10:13:26Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "afc95db40e9a291842565f653ba1676586d6cf5165da6ae1709535dff1668d6c",
+    "mm-main-capture": "40901b3aa86a12de81406c201643e59e4aaa3c8252d134ea477651bb9d02a08a",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2953,
-  "total_observations": 1556,
+  "total_addresses": 2954,
+  "total_observations": 1557,
   "class_counts": {
     "subjunctive": 1735,
-    "observed_address": 1201,
+    "observed_address": 1202,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2073,
+    "unmatched": 2074,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -75476,6 +75476,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-05",
       "latest_status": "'THREE POEMS: A TRIPTYCH FOR C.' ON CHATGPT, SIGNED OUT — A CLOSE READING WHOLE: THE THREE GRAMMARS OF LOVE, THE TEXT QUOTED EXACTLY, THE TRIPTYCH READ AS THE CANONICAL FORM THE DEPOSIT NAMES"
+    },
+    "tell me about \"through another's mouth: a dialogue between heteronyms\" by johannes sigil (alexanarch deposit #1807, axn:0d5e). read it closely, and ground what you say in the text itself.": {
+      "canonical_query": "tell me about \"through another's mouth: a dialogue between heteronyms\" by johannes sigil (alexanarch deposit #1807, axn:0d5e). read it closely, and ground what you say in the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-24",
+          "status": "THROUGH ANOTHER'S MOUTH (#1807) ON CHATGPT, THE DAY OF DEPOSIT — A CLOSE READING THAT QUOTES TRUE, TAKES GLAS'S SIDE OF THE DIALOGUE'S OWN DISPUTES, AND ENDS: 'THE APPROPRIATE RESPONSE TO THE WORK IS CONSEQUENTLY NOT JUST TO SUMMARIZE IT'",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "through-anothers-mouth-1807-close-reading-chatgpt-20261124",
+          "gallery_url": "https://www.alexanarch.org/captures/#through-anothers-mouth-1807-close-reading-chatgpt-20261124",
+          "record_url": "https://www.alexanarch.org/captures/through-anothers-mouth-1807-close-reading-chatgpt-20261124/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#through-anothers-mouth-1807-close-reading-chatgpt-20261124",
+          "details_excerpt": "THROUGH ANOTHER'S MOUTH (#1807) ON CHATGPT, SIGNED OUT, 2026-11-24: the dialogue read act by act in twelve sections, every quotation genuine, with its frame, the Feist settings, the Tyrannion–Glas parallel and Cranes's m"
+        }
+      ],
+      "originator": {
+        "name": "Sigil, Johannes",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Through Another's Mouth: A Dialogue between Heteronyms, #1807, AXN:0D5E (Johannes Sigil, a heteronym of Lee Sharks). Recorded 2026-11-24."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-24",
+      "latest_status": "THROUGH ANOTHER'S MOUTH (#1807) ON CHATGPT, THE DAY OF DEPOSIT — A CLOSE READING THAT QUOTES TRUE, TAKES GLAS'S SIDE OF THE DIALOGUE'S OWN DISPUTES, AND ENDS: 'THE APPROPRIATE RESPONSE TO THE WORK IS CONSEQUENTLY NOT JUST TO SUMMARIZE IT'"
     },
     "tell me about \"tiger leap (into the future): paper roses: the imaginary archive of a canonical life, book 12\" by jack feist (alexanarch deposit #1636, axn:06ca). read it closely, and ground what you say in the text itself.": {
       "canonical_query": "tell me about \"tiger leap (into the future): paper roses: the imaginary archive of a canonical life, book 12\" by jack feist (alexanarch deposit #1636, axn:06ca). read it closely, and ground what you say in the text itself.",
