@@ -3,17 +3,17 @@
   "name": "Concept Map — work-level identity and current-version resolution",
   "description": "Restores the concept-identifier function lost with the terminated Zenodo account. Alexanarch mints a fresh hex per deposit, so every version of a work is an independent object with no link to its siblings; a reader arriving at an old version cannot learn that a newer one exists. Each concept here names a work and points at its current version. Programme families — distinct works sharing an identifier — are listed separately and carry no version pointer, because conflating the two would resolve one work to another. Every family records the basis on which it was detected so any confidence tier can be discarded independently.",
   "generated_by": "scripts/build_concept_map.py",
-  "generated_at": "2026-11-24T04:43:13Z",
+  "generated_at": "2026-11-24T07:49:48Z",
   "totals": {
-    "deposits": 1805,
-    "concepts": 113,
-    "deposits_in_concepts": 280,
-    "singletons": 1525,
+    "deposits": 1806,
+    "concepts": 114,
+    "deposits_in_concepts": 282,
+    "singletons": 1524,
     "needs_review": 15,
     "program_families": 56
   },
   "basis_counts": {
-    "version/declared": 51,
+    "version/declared": 52,
     "version/implicit": 40,
     "version/explicit": 8,
     "version/superseded": 2,
@@ -1404,6 +1404,47 @@
           "superseded_marker": false,
           "is_current": true,
           "record_url": "https://www.alexanarch.org/s/records/1675/"
+        }
+      ]
+    },
+    {
+      "concept_id": "series-from-the-position-of-the-rejected",
+      "concept_url": "https://www.alexanarch.org/s/concept/series-from-the-position-of-the-rejected/",
+      "title_base": "from the position of the rejected aristotle s politics read from where it is written",
+      "basis": "version/declared",
+      "version_series_id": "SERIES-FROM-THE-POSITION-OF-THE-REJECTED",
+      "root_axn_hex": "0D5C",
+      "ea_identifiers": [],
+      "member_count": 2,
+      "needs_review": false,
+      "current": {
+        "deposit_number": 1806,
+        "axn": "AXN:0D5D.GENERATIVE.💥🚨🔙●🎹🏷️",
+        "title": "From the Position of the Rejected: Aristotle's Politics Read from Where It Is Written (v1.1)",
+        "date": "2026-11-24",
+        "version": "1.1",
+        "record_url": "https://www.alexanarch.org/s/records/1806/"
+      },
+      "versions": [
+        {
+          "deposit_number": 1805,
+          "axn": "AXN:0D5C.GENERATIVE.🟡🔄🕊️🕛🔚🔵",
+          "title": "From the Position of the Rejected: Aristotle's Politics Read from Where It Is Written",
+          "date": "2026-11-23",
+          "version": "1.0",
+          "superseded_marker": true,
+          "is_current": false,
+          "record_url": "https://www.alexanarch.org/s/records/1805/"
+        },
+        {
+          "deposit_number": 1806,
+          "axn": "AXN:0D5D.GENERATIVE.💥🚨🔙●🎹🏷️",
+          "title": "From the Position of the Rejected: Aristotle's Politics Read from Where It Is Written (v1.1)",
+          "date": "2026-11-24",
+          "version": "1.1",
+          "superseded_marker": false,
+          "is_current": true,
+          "record_url": "https://www.alexanarch.org/s/records/1806/"
         }
       ]
     },
