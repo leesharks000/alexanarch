@@ -1191,6 +1191,24 @@ def plain_text_path(d):
     return path
 
 
+def citation_reference_tags(d):
+    """One citation_reference tag per entry of the record's standard works-cited list (2026-11-23). The author, 20:40:
+    "aggregators read citations as authority. full stop. google scholar wont index without it." The list is read by
+    scripts/references_lib.py (the last References / Works cited / Bibliography / Sources section, one work per line);
+    no list, no tags."""
+    path = plain_text_path(d)
+    if not path:
+        return ''
+    try:
+        import sys as _s, os as _o
+        _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), 'scripts'))
+        import references_lib as _rl
+        ents = _rl.entries(open(path, encoding='utf-8').read())
+    except Exception:
+        return ''
+    return ''.join(f'<meta name="citation_reference" content="{htmlmod.escape(e, quote=True)}">\n' for e in ents)
+
+
 def text_pointer_html(d):
     """Head link and first-screen line pointing machine readers to the plain text (2026-10-22). A record page
     can run to hundreds of kilobytes with the Full Text after the description, wiki article and concepts;
@@ -2514,7 +2532,7 @@ def regenerate_static_page(d, eidx, registry=None):
 <meta name="citation_fulltext_html_url" content="https://www.alexanarch.org/s/records/{dn}/">
 <meta name="citation_pdf_url" content="https://www.alexanarch.org/s/records/{dn}/AXN-{hex_id.zfill(4)}.pdf">
 <meta name="citation_language" content="en">
-<meta name="DC.title" content="{esc(d["title"])}">
+{citation_reference_tags(d)}<meta name="DC.title" content="{esc(d["title"])}">
 <meta name="DC.creator" content="{esc(d["creator"])}">
 <meta name="DC.date" content="{esc(d["date"])}" scheme="DCTERMS.W3CDTF">
 <meta name="DC.identifier" content="https://www.alexanarch.org/s/axn/{hex_id}/" scheme="DCTERMS.URI">

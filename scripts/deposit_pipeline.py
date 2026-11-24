@@ -688,6 +688,10 @@ def stage_rendered(args):
 def stage_completeness(args):
     sh([sys.executable, SCRIPTS / "deposit_completeness.py",
         "--deposit-number", str(args.deposit_number)], check=True)
+    # 2026-11-23 (the author, 20:40 and 20:48): whether the record carries a standard works-cited list, recorded in
+    # data/works-cited-ledger.json. Laws record, they do not prevent: the finding is printed and the deposit goes on.
+    sh([sys.executable, SCRIPTS / "check_works_cited.py",
+        "--deposit-number", str(args.deposit_number)], check=False)
 
 
 def stage_release(args):
