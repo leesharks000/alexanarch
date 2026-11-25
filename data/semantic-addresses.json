@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-25T19:21:19Z",
+  "regenerated_at": "2026-11-25T20:33:06Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "046c26eeb5b57013aac4c8f6937c34425bd4aa1d3725820e710c53a621babb9a",
+    "mm-main-capture": "f5ddebefad247a48510f54c822af1aa8f1b63cef6f93e9704044027a5bcba69c",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2978,
-  "total_observations": 1586,
+  "total_addresses": 2979,
+  "total_observations": 1587,
   "class_counts": {
     "subjunctive": 1735,
-    "observed_address": 1226,
+    "observed_address": 1227,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2098,
+    "unmatched": 2099,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -80450,6 +80450,41 @@
       "observation_class": "subjunctive",
       "latest_observation_date": null,
       "latest_status": null
+    },
+    "through another's mouth: a dialogue between heteronyms": {
+      "canonical_query": "through another's mouth: a dialogue between heteronyms",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-25",
+          "status": "'THROUGH ANOTHER'S MOUTH: A DIALOGUE BETWEEN HETERONYMS', UNQUOTED, ONE DAY AFTER DEPOSIT — THE DIALOGUE COMPOSED BY TITLE, HETERONYM, DATE, COMPANION AND FRAME FROM ITS OWN MEDIUM SURFACE; THE CLAUSE THE DIALOGUE TURNS ON GIVEN AS 'BY NATURE OR BY CHANCE'; NO DEPOSIT NUMBER",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "through-anothers-mouth-dialogue-heteronyms-aio-20261125",
+          "gallery_url": "https://www.alexanarch.org/captures/#through-anothers-mouth-dialogue-heteronyms-aio-20261125",
+          "record_url": "https://www.alexanarch.org/captures/through-anothers-mouth-dialogue-heteronyms-aio-20261125/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#through-anothers-mouth-dialogue-heteronyms-aio-20261125",
+          "details_excerpt": "'THROUGH ANOTHER'S MOUTH: A DIALOGUE BETWEEN HETERONYMS', UNQUOTED, ON GOOGLE AI OVERVIEW, SIGNED OUT, INCOGNITO, 2026-11-25: the dialogue by Johannes Sigil, 'one of the twelve declared literary heteronyms (the Dodecad) "
+        }
+      ],
+      "originator": {
+        "name": "Sigil, Johannes",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Through Another's Mouth: A Dialogue between Heteronyms, #1807, AXN:0D5E (Johannes Sigil, a heteronym of Lee Sharks). Recorded 2026-11-25."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-25",
+      "latest_status": "'THROUGH ANOTHER'S MOUTH: A DIALOGUE BETWEEN HETERONYMS', UNQUOTED, ONE DAY AFTER DEPOSIT — THE DIALOGUE COMPOSED BY TITLE, HETERONYM, DATE, COMPANION AND FRAME FROM ITS OWN MEDIUM SURFACE; THE CLAUSE THE DIALOGUE TURNS ON GIVEN AS 'BY NATURE OR BY CHANCE'; NO DEPOSIT NUMBER"
     },
     "thunder function": {
       "canonical_query": "thunder function",
