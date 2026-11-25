@@ -338,6 +338,24 @@ def seat_flat(draft, registry, schema):
     for e in registry["entries"]:
         if e.get("q") == draft["q"] and e.get("surface") == draft["surface"]:
             obs = {"date": draft["date"], "auth": draft["auth"], "ev": draft["ev"], "transcript": draft["transcript"], "imgs": draft.get("imgs") or [], "img_urls": draft.get("img_urls") or [], "d": draft["d"], "cites": draft.get("cites"), "obs_id": "OBS-" + hashlib.sha256((draft["q"] + draft["date"] + draft["surface"]).encode()).hexdigest()[:12]}
+            # SAME-DAY RECOMPOSITION (2026-11-25). obs_id hashes (string, date, surface), so a second composition at one address on
+            # one day took the id of the first. Met on the Alexanarch valuation pair of 2026-11-25: one query, one open results
+            # page, and the Overview recomposed itself a few minutes later with different text and different figures (the staging
+            # note: "Treat the replacement as a measured property of the ephemeral Google surface"). Two compositions are two
+            # observations and need two ids. The first keeps the id it has, so nothing seated moves; a later one whose id is
+            # already held on the entry is hashed with its transcript as well. The same transcript on the same day is the same
+            # observation and is refused. First drafted as an in-run patch inside .github/workflows/capture-seat-20261125.yml;
+            # placed here, in the seat path itself, so the script that seats is the script in the repository.
+            _held = list(e.get("observations") or []) or [e]
+            _root_id = e.get("obs_id") or "OBS-" + hashlib.sha256((e["q"] + str((e.get("dates") or [e.get("date")])[0]) + str(e["surface"])).encode()).hexdigest()[:12]
+            _ids = {x.get("obs_id") for x in _held} | {_root_id}
+            if obs["obs_id"] in _ids:
+                if any(x.get("date") == obs["date"] and x.get("transcript") == obs["transcript"] for x in _held):
+                    raise Refused("same address, same day, same transcript: this observation is already seated; nothing admitted.")
+                obs["obs_id"] = "OBS-" + hashlib.sha256((draft["q"] + draft["date"] + draft["surface"] + "\n" + draft["transcript"]).encode()).hexdigest()[:12]
+                if obs["obs_id"] in _ids:
+                    raise Refused("observation id collision after hashing with the transcript: " + obs["obs_id"])
+                print("   OBS-ID     same address and day as a held observation; id taken from string, date, surface and transcript: " + obs["obs_id"])
             # A longitudinal observation is a citable unit (2026-08-27) and a measurable one: it carries
             # its own slug (so build_capture_links derives its canonical citation instead of skipping it),
             # its presented set, and its reading. Found missing on the 11 Sept seatings and repaired by hand
