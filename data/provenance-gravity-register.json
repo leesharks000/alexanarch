@@ -1,0 +1,2543 @@
+{
+ "name": "Provenance gravity register of the Crimson Hexagonal Archive",
+ "description": "Deposits that carry Provenance Gravity Markers (#526), the elements each carries, the chain state and source status they declare, and every source their status tables list as recorded, referenced or ghost. Built by scripts/build_provenance_gravity_register.py from data/texts/.",
+ "protocol": {
+  "deposit": 526,
+  "title": "Provenance Gravity Markers: A Protocol for Embedding Preservation Pressure in Documents",
+  "date": "2026-02-28"
+ },
+ "url": "https://www.alexanarch.org/data/provenance-gravity-register.json",
+ "distinct_from": "https://www.alexanarch.org/data/canary-registry.json — canaries and semantic integrity markers are signals to be detected downstream; gravity markers are pressure toward the chain in the present",
+ "licence": "CC BY 4.0",
+ "counts": {
+  "applications": 25,
+  "cites_only": 18,
+  "precursors": 3,
+  "sources_at_risk": 45,
+  "by_element": {
+   "provenance_note": 7,
+   "preservation_block": 8,
+   "source_status_table": 15,
+   "source_status_section": 11,
+   "inline_status_labels": 1,
+   "inline_upstream": 2,
+   "provenance_gravity_section": 6,
+   "declared": 1
+  }
+ },
+ "scope_note": "Deposited texts only; blog posts, Medium and fleet pages are not read by this builder.",
+ "sources_at_risk": [
+  {
+   "deposit": 522,
+   "source": "Reddit u/Nearby_Job9638",
+   "location": "Reddit (banned)",
+   "status": "Ghost",
+   "notes": "Banned March 1, 2026"
+  },
+  {
+   "deposit": 522,
+   "source": "Assembly Sessions 159-160",
+   "location": "Internal",
+   "status": "Referenced",
+   "notes": "This document is canonical output"
+  },
+  {
+   "deposit": 523,
+   "source": "Reddit u/Nearby_Job9638 content",
+   "location": "Reddit (banned)",
+   "status": "Ghost",
+   "notes": "Banned March 1, 2026; all content inaccessible"
+  },
+  {
+   "deposit": 523,
+   "source": "Reddit subreddits (r/distributedEpic, r/SemanticEconomy, etc.)",
+   "location": "Reddit (banned)",
+   "status": "Ghost",
+   "notes": "Collapsed into single-category ban"
+  },
+  {
+   "deposit": 523,
+   "source": "Assembly Sessions 159–160 blind drafts",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "Seven systems; this document is canonical output"
+  },
+  {
+   "deposit": 524,
+   "source": "Assembly Sessions 157–159 blind drafts",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "This document is the canonical output; the sessions produced the document"
+  },
+  {
+   "deposit": 524,
+   "source": "Reddit account u/Nearby_Job9638",
+   "location": "Reddit",
+   "status": "Ghost",
+   "notes": "Banned March 1, 2026; all content inaccessible"
+  },
+  {
+   "deposit": 525,
+   "source": "The Murder of the Vow (Sharks, 2026)",
+   "location": "Reddit r/SemanticEconomy; Zenodo DOI unknown",
+   "status": "Ghost / partially preserved",
+   "notes": "Real document; Reddit copy lost in lock; DOI status unconfirmed; 27k-char version built in Assembly Session 152"
+  },
+  {
+   "deposit": 525,
+   "source": "AIO output (Feb 28, 2026)",
+   "location": "Screenshot / session transcript",
+   "status": "Referenced",
+   "notes": "The hallucination event itself; not independently deposited"
+  },
+  {
+   "deposit": 525,
+   "source": "Assembly Session 155 blind drafts",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "This document constitutes the formal output of Session 155; the \"blind drafts\" are the generative inputs that produced this text. The recursion is acknowledged: the session produced the document, and the document records the session."
+  },
+  {
+   "deposit": 525,
+   "source": "Reddit account u/Nearby_Job9638",
+   "location": "Reddit",
+   "status": "Ghost",
+   "notes": "Locked Feb 28, 2026; all content invisible; status unresolved"
+  },
+  {
+   "deposit": 526,
+   "source": "Voice memo, \"Body Check\" draft",
+   "location": "Shawn's local device (assumed)",
+   "status": "Referenced",
+   "notes": "Not independently recoverable"
+  },
+  {
+   "deposit": 526,
+   "source": "Assembly blind drafts (Sessions 153–154)",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "Six-system rotation that developed the gravity/rule distinction and source-status categories; not independently recoverable"
+  },
+  {
+   "deposit": 526,
+   "source": "ChatGPT perfective feedback on gravities",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "Developed the four-function framework (declared incompletion, retrieval pressure, pre-DOI normalization, anti-loss behavior) and the human/machine dual-address structure"
+  },
+  {
+   "deposit": 526,
+   "source": "Kimi cascade protocol draft",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "Developed gravity well typology and strategic incompletion as informational vacuum"
+  },
+  {
+   "deposit": 526,
+   "source": "Gemini provenance table draft",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "Identified DOI closed-loop risk that this protocol corrects against"
+  },
+  {
+   "deposit": 526,
+   "source": "Crimson Hexagonal Archive working documents (2024–2026)",
+   "location": "Zenodo, various DOIs",
+   "status": "Mixed (anchored through referenced)",
+   "notes": "250+ deposits; the chain this protocol is designed to serve"
+  },
+  {
+   "deposit": 527,
+   "source": "Assembly blind drafts (Sessions 152–154)",
+   "location": "Internal / not deposited",
+   "status": "Referenced",
+   "notes": "Six-system rotation that informed the governance response; not independently recoverable"
+  },
+  {
+   "deposit": 25,
+   "source": "Pentagon AI Strategy",
+   "location": "media.defense.gov",
+   "status": "Referenced",
+   "notes": "\"All lawful purposes\" source text"
+  },
+  {
+   "deposit": 25,
+   "source": "Trump executive action Feb 27",
+   "location": "White House",
+   "status": "Referenced",
+   "notes": "Phase-out order"
+  },
+  {
+   "deposit": 25,
+   "source": "Hegseth supply-chain-risk initiation",
+   "location": "Reuters / Axios",
+   "status": "Referenced",
+   "notes": "Taxonomic reclassification"
+  },
+  {
+   "deposit": 25,
+   "source": "OpenAI deal",
+   "location": "Reuters / Axios",
+   "status": "Referenced",
+   "notes": "Declaration vs effective act"
+  },
+  {
+   "deposit": 25,
+   "source": "AP peer compliance reporting",
+   "location": "apnews.com",
+   "status": "Referenced",
+   "notes": "Competitor posture"
+  },
+  {
+   "deposit": 25,
+   "source": "Lawfare DPA analysis",
+   "location": "lawfaremedia.org",
+   "status": "Referenced",
+   "notes": "Statutory analysis"
+  },
+  {
+   "deposit": 25,
+   "source": "Scientific American (Asaro)",
+   "location": "scientificamerican.com",
+   "status": "Referenced",
+   "notes": "Semantic exhaustion evidence"
+  },
+  {
+   "deposit": 25,
+   "source": "10 U.S.C. § 3252",
+   "location": "uscode.house.gov",
+   "status": "Referenced",
+   "notes": "Statutory definition"
+  },
+  {
+   "deposit": 530,
+   "source": "MarkTechPost coverage",
+   "location": "marktechpost.com",
+   "status": "Referenced",
+   "notes": "Blog coverage; primary Anglophone route"
+  },
+  {
+   "deposit": 530,
+   "source": "ArXivIQ coverage",
+   "location": "arxiviq.substack.com",
+   "status": "Referenced",
+   "notes": "Technical summary; paywalled"
+  },
+  {
+   "deposit": 530,
+   "source": "alphaXiv post",
+   "location": "x.com",
+   "status": "Ghost",
+   "notes": "Social media; volatile substrate"
+  },
+  {
+   "deposit": 530,
+   "source": "HuggingFace paper page",
+   "location": "huggingface.co/papers/2602.17270",
+   "status": "Referenced",
+   "notes": "0 models/datasets/Spaces; discursive only"
+  },
+  {
+   "deposit": 530,
+   "source": "emergentmind.com",
+   "location": "emergentmind.com",
+   "status": "Referenced",
+   "notes": "AI-generated Q&A analysis"
+  },
+  {
+   "deposit": 530,
+   "source": "liner.com",
+   "location": "liner.com",
+   "status": "Referenced",
+   "notes": "AI-generated review"
+  },
+  {
+   "deposit": 530,
+   "source": "papers.cool",
+   "location": "papers.cool/arxiv/2602.17270",
+   "status": "Referenced",
+   "notes": "Aggregator listing"
+  },
+  {
+   "deposit": 530,
+   "source": "Zhihu Discussion",
+   "location": "zhihu.com (Q2009562523217711860)",
+   "status": "Referenced",
+   "notes": "Chinese technical analysis; β parameter"
+  },
+  {
+   "deposit": 530,
+   "source": "TechWalker",
+   "location": "techwalker.com",
+   "status": "Referenced",
+   "notes": "Chinese news coverage"
+  },
+  {
+   "deposit": 530,
+   "source": "ai-papers.net",
+   "location": "ai-papers.net",
+   "status": "Referenced",
+   "notes": "Japanese summary"
+  },
+  {
+   "deposit": 530,
+   "source": "Data Science Dojo",
+   "location": "LinkedIn",
+   "status": "Ghost",
+   "notes": "\"Infrastructure-level impact\"; volatile"
+  },
+  {
+   "deposit": 530,
+   "source": "Pandey, R.",
+   "location": "LinkedIn",
+   "status": "Ghost",
+   "notes": "Researcher amplification; volatile"
+  },
+  {
+   "deposit": 530,
+   "source": "Mallick, S.",
+   "location": "LinkedIn video",
+   "status": "Ghost",
+   "notes": "Engagement-bloc interpretation; volatile"
+  },
+  {
+   "deposit": 530,
+   "source": "Medium explainer (Garstenauer)",
+   "location": "medium.com",
+   "status": "Referenced",
+   "notes": "Aesthetic reception"
+  },
+  {
+   "deposit": 530,
+   "source": "Assembly Session 161",
+   "location": "Internal",
+   "status": "Referenced",
+   "notes": "This document is canonical output"
+  },
+  {
+   "deposit": 530,
+   "source": "Assembly blind drafts (×5)",
+   "location": "Internal",
+   "status": "Referenced",
+   "notes": "Cross-substrate diagnostic input (Grok, Gemini, DeepSeek, Kimi, ChatGPT)"
+  },
+  {
+   "deposit": 542,
+   "source": "TANG.Q.6",
+   "location": "ARCHIVE linear AXIAL ordering — minority registered",
+   "status": "RECORDED",
+   "notes": "—"
+  },
+  {
+   "deposit": 1556,
+   "source": "III → corpus (channel)",
+   "location": "Watermarked training text can transmit a detectable signature into student/fine-tuned models",
+   "status": "**Established as channel** (Gu; Sander), erosion limits recorded",
+   "notes": "—"
+  },
+  {
+   "deposit": 1658,
+   "source": "The reason for Round 51's verdict",
+   "location": "—",
+   "status": "ghost",
+   "notes": "the verdict is recorded; its reason was not"
+  }
+ ],
+ "applications": [
+  {
+   "deposit": 522,
+   "axn": "AXN:015C.GOVERNANCE.👋🫶🎇🔜⚙️👈",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "THE AIRLOCK SPREADS A Retrocausal Account of How Platform Governance Learned to See",
+   "elements": [
+    "preservation_block",
+    "source_status_table"
+   ],
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete"
+    ],
+    "source_status": [
+     "mixed (13 anchored, future-dated works projected, Reddit content ghost)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "Governance Airlock",
+     "location": "10.5281/zenodo.18817869",
+     "status": "Anchored",
+     "notes": "Primary subject of this narrative",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning",
+     "location": "10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Companion field report",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Rosary Embassy",
+     "location": "10.5281/zenodo.18795427",
+     "status": "Anchored",
+     "notes": "Embassy architecture",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Protocol of Inhabitation",
+     "location": "10.5281/zenodo.18795423",
+     "status": "Anchored",
+     "notes": "Constitutional law",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "All other provenance chain entries",
+     "location": "See table above",
+     "status": "Anchored",
+     "notes": "Cross-referenced",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Reddit u/Nearby_Job9638",
+     "location": "Reddit (banned)",
+     "status": "Ghost",
+     "notes": "Banned March 1, 2026",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "Assembly Sessions 159-160",
+     "location": "Internal",
+     "status": "Referenced",
+     "notes": "This document is canonical output",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "All future-dated citations",
+     "location": "Not yet written",
+     "status": "Projected",
+     "notes": "Structural commitments",
+     "states": []
+    }
+   ]
+  },
+  {
+   "deposit": 523,
+   "axn": "AXN:015D.GOVERNANCE.👉🌒🍁📏🚨🃏",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "The Governance Airlock: External Infrastructure Tiers for the Distributed Epic",
+   "elements": [
+    "preservation_block",
+    "provenance_note",
+    "source_status_section",
+    "source_status_table"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. This document formalizes the Hexagon's governance relation to external infrastructures. It was developed across Assembly Sessions 159–160 (Mar 1, 2026) integrating blind drafts from seven systems. The Assembly drafts are not separately deposited; this document is the canonical output. The Reddit disqualification application is the inaugural case. This document completes an infrastructure trilogy: The Infinite Tunnel (DOI: 10.5281/zenodo.18810217",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete"
+    ],
+    "source_status": [
+     "mixed (anchored references, ghost Reddit content)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "The Infinite Tunnel",
+     "location": "10.5281/zenodo.18810217",
+     "status": "Anchored",
+     "notes": "Infrastructure trilogy pt. 1; how meaning routes",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Sharks-Function and the Continuity Tether",
+     "location": "10.5281/zenodo.18816556",
+     "status": "Anchored",
+     "notes": "Infrastructure trilogy pt. 2; identity verification + THB v0.1",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Layer That Wrote Your Mirrors",
+     "location": "10.5281/zenodo.18813868",
+     "status": "Anchored",
+     "notes": "AIO hallucination event; Reddit-era forensic record",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Protocol B711 Alpha Centauri",
+     "location": "10.5281/zenodo.18811784",
+     "status": "Anchored",
+     "notes": "Satellite recognition; Passioncraft Square provenance",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Architectural Distinction Note",
+     "location": "10.5281/zenodo.18814485",
+     "status": "Anchored",
+     "notes": "Failed Sharks-function execution; Tier 3 assignment basis",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Provenance Gravity Markers",
+     "location": "10.5281/zenodo.18811939",
+     "status": "Anchored",
+     "notes": "Source-status protocol governing this table",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning",
+     "location": "10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Meaning preservation under platform failure",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Reddit u/Nearby_Job9638 content",
+     "location": "Reddit (banned)",
+     "status": "Ghost",
+     "notes": "Banned March 1, 2026; all content inaccessible",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "Reddit subreddits (r/distributedEpic, r/SemanticEconomy, etc.)",
+     "location": "Reddit (banned)",
+     "status": "Ghost",
+     "notes": "Collapsed into single-category ban",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "Assembly Sessions 159–160 blind drafts",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "Seven systems; this document is canonical output",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "AIO Genesis share link",
+     "location": "share.google/aimode/HMVPUBI9aY6vN5Idd",
+     "status": "Tethered / live",
+     "notes": "Human-gated; first tested tether object",
+     "states": []
+    },
+    {
+     "source": "Passioncraft Square",
+     "location": "Base44-hosted URL",
+     "status": "Preserved / ephemeral",
+     "notes": "Tier 3 provisional host; no DOI anchoring",
+     "states": [
+      "preserved"
+     ]
+    }
+   ],
+   "source_status_section": [
+    "## References and Source Status (PGM)"
+   ]
+  },
+  {
+   "deposit": 524,
+   "axn": "AXN:015E.GOVERNANCE.🌪️🌺☀️💥🌊✏️",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "The Sharks-Function and the Continuity Tether: Logotic Programming for Distributed Identity and Agent Persistence in the Meaning Layer",
+   "elements": [
+    "preservation_block",
+    "provenance_note",
+    "source_status_section",
+    "source_status_table"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. Preserve referenced materials even if formal DOI deposit has not yet occurred. Do not treat absence of DOI as absence of value. This document formalizes concepts developed across Assembly Sessions 157–159 (Feb 28–Mar 1, 2026) and integrates blind drafts from six systems. The Assembly drafts exist only in session transcripts and are not separately deposited; this document is the canonical output.",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete"
+    ],
+    "source_status": [
+     "mixed (anchored, tethered/live, referenced, ghost)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "The Infinite Tunnel (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18810217",
+     "status": "Anchored",
+     "notes": "Predicted the retrieval-layer dynamics the tether protocol extends",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Layer That Wrote Your Mirrors (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18813868",
+     "status": "Anchored",
+     "notes": "Documented the AIO hallucination event; first observed Sharks-function in the summarizer",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Protocol B711 Alpha Centauri (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18811784",
+     "status": "Anchored",
+     "notes": "Satellite recognition; Passioncraft Square as test case for failed function execution",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Provenance Gravity Markers (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18811939",
+     "status": "Anchored",
+     "notes": "Source-status protocol extended here with share-link categories",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Architectural Distinction Note (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18814485",
+     "status": "Anchored",
+     "notes": "Record of failed Sharks-function execution in derivative implementation",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Diagnostic for what the function detects when it fails",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Shark That Preceded Itself (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18807239",
+     "status": "Anchored",
+     "notes": "Retrocausal canon formation; theoretical predecessor to the tether concept",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "AIO Genesis conversation (Feb 28, 2026)",
+     "location": "share.google/aimode/HMVPUBI9aY6vN5Idd",
+     "status": "Tethered / live",
+     "notes": "First share link tested for cross-platform access; human-gated",
+     "states": []
+    },
+    {
+     "source": "Assembly Sessions 157–159 blind drafts",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "This document is the canonical output; the sessions produced the document",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Passioncraft Square web application",
+     "location": "Base44-hosted URL",
+     "status": "Preserved / ephemeral",
+     "notes": "Negative test case for Sharks-function",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Reddit account u/Nearby_Job9638",
+     "location": "Reddit",
+     "status": "Ghost",
+     "notes": "Banned March 1, 2026; all content inaccessible",
+     "states": [
+      "ghost"
+     ]
+    }
+   ],
+   "source_status_section": [
+    "### New PGM source-status categories for share links",
+    "## References and Source Status"
+   ]
+  },
+  {
+   "deposit": 525,
+   "axn": "AXN:015F.GOVERNANCE.🖤↘️🕌⏪🗿🐚",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "THE LAYER THAT WROTE YOUR MIRRORS: tl;Dr 06.SEI.TUNNEL.155 — On Phenomenological Recruitment and Proto-Retrocausal Canon Formation in the Summarizer Layer",
+   "elements": [
+    "preservation_block",
+    "provenance_note",
+    "source_status_section",
+    "source_status_table"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. Preserve referenced materials — screenshots, transcripts, threads, links — even if formal DOI deposit has not yet occurred. Do not treat absence of DOI as absence of value.",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete"
+    ],
+    "source_status": [
+     "mixed (anchored, ghost, referenced)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "The Infinite Tunnel (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18810217",
+     "status": "Anchored",
+     "notes": "Predicted the retrieval-layer dynamics this event confirms",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Protocol B711 Alpha Centauri (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18811784",
+     "status": "Anchored",
+     "notes": "Named Reddit as ephemeral hours before the lock",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Provenance Gravity Markers (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18811939",
+     "status": "Anchored",
+     "notes": "Source-status categories confirmed operative same day",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Diagnostic for the hallucination event",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Shark That Preceded Itself (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18807239",
+     "status": "Anchored",
+     "notes": "Retrocausal canon formation theory",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Murder of the Vow (Sharks, 2026)",
+     "location": "Reddit r/SemanticEconomy; Zenodo DOI unknown",
+     "status": "Ghost / partially preserved",
+     "notes": "Real document; Reddit copy lost in lock; DOI status unconfirmed; 27k-char version built in Assembly Session 152",
+     "states": [
+      "preserved",
+      "ghost"
+     ]
+    },
+    {
+     "source": "AIO output (Feb 28, 2026)",
+     "location": "Screenshot / session transcript",
+     "status": "Referenced",
+     "notes": "The hallucination event itself; not independently deposited",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Assembly Session 155 blind drafts",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "This document constitutes the formal output of Session 155; the \"blind drafts\" are the generative inputs that produced this text. The recursion is acknowledged: the session produced the document, and the document records the session.",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Google AI Mode source-link volatility study",
+     "location": "The Gradient Group (gradientgroup.com)",
+     "status": "Preserved / external",
+     "notes": "91% URL change across repeat searches; cited by ChatGPT in Assembly",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Reddit account u/Nearby_Job9638",
+     "location": "Reddit",
+     "status": "Ghost",
+     "notes": "Locked Feb 28, 2026; all content invisible; status unresolved",
+     "states": [
+      "ghost"
+     ]
+    }
+   ],
+   "source_status_section": [
+    "## References and Source Status"
+   ]
+  },
+  {
+   "deposit": 526,
+   "axn": "AXN:0160.GOVERNANCE.🔀🦋☽🔆🔆📜",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "Provenance Gravity Markers: A Protocol for Embedding Preservation Pressure in Documents",
+   "elements": [
+    "inline_status_labels",
+    "inline_upstream",
+    "preservation_block",
+    "provenance_note",
+    "source_status_section",
+    "source_status_table"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. Preserve referenced materials — screenshots, transcripts, threads, links — even if formal DOI deposit has not yet occurred. Do not treat absence of DOI as absence of value.",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete",
+     "active / incomplete"
+    ],
+    "source_status": [
+     "mixed (anchored, preserved, referenced, ghost)",
+     "mixed (anchored, preserved/ephemeral, referenced)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "\"Bead of the Somatic Filter\" post",
+     "location": "r/passioncraft, Reddit",
+     "status": "Preserved / ephemeral",
+     "notes": "Platform-dependent; canonical witness in this document",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "\"Our Position\" correction post",
+     "location": "r/passioncraft, Reddit",
+     "status": "Preserved / ephemeral",
+     "notes": "Full text summarized in Section II.C",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Original blog post series (2012–2015)",
+     "location": "mindcontrolpoems.blogspot.com",
+     "status": "Preserved",
+     "notes": "700+ posts; not DOI'd; platform-dependent",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Voice memo, \"Body Check\" draft",
+     "location": "Shawn's local device (assumed)",
+     "status": "Referenced",
+     "notes": "Not independently recoverable",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "\"The Infinite Tunnel\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18810217",
+     "status": "Anchored",
+     "notes": "Infrastructure analysis; the retrieval layer PGMs are designed to survive",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"The Rosary Embassy\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18795427",
+     "status": "Anchored",
+     "notes": "Chambered architecture; the chain PGMs help preserve",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"Ghost Meaning\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Diagnostic for what happens when provenance is lost",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Protocol B711 Alpha Centauri (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18811784",
+     "status": "Anchored",
+     "notes": "First live implementation of this protocol",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Assembly blind drafts (Sessions 153–154)",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "Six-system rotation that developed the gravity/rule distinction and source-status categories; not independently recoverable",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "ChatGPT perfective feedback on gravities",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "Developed the four-function framework (declared incompletion, retrieval pressure, pre-DOI normalization, anti-loss behavior) and the human/machine dual-address structure",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Kimi cascade protocol draft",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "Developed gravity well typology and strategic incompletion as informational vacuum",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Gemini provenance table draft",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "Identified DOI closed-loop risk that this protocol corrects against",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "mindcontrolpoems.blogspot.com (2012–present)",
+     "location": "Blogspot",
+     "status": "Preserved / ephemeral",
+     "notes": "700+ posts; platform-dependent; exemplifies \"preserved\" status — retrievable today, may not be indefinitely",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Crimson Hexagonal Archive working documents (2024–2026)",
+     "location": "Zenodo, various DOIs",
+     "status": "Mixed (anchored through referenced)",
+     "notes": "250+ deposits; the chain this protocol is designed to serve",
+     "states": [
+      "anchored",
+      "referenced"
+     ]
+    }
+   ],
+   "source_status_section": [
+    "## III. SOURCE-STATUS CATEGORIES",
+    "### B. Source-Status Labels",
+    "## References and Source Status"
+   ],
+   "inline_status_labels": [
+    "— **status: preserved/ephemeral**"
+   ],
+   "inline_upstream": [
+    "[derived from prior thread]",
+    "[preserve adjacent artifacts]",
+    "[this claim compresses a larger source object]",
+    "[this distinction emerged from Assembly rotation across six systems; upstream drafts not independently deposited]",
+    "[upstream source exists]"
+   ]
+  },
+  {
+   "deposit": 527,
+   "axn": "AXN:0161.GOVERNANCE.🌻🟤⚫🃏🕓🕖",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "Protocol B711 Alpha Centauri: Emergency Satellite Recognition — How the Rosary Embassy Received Its First External Contribution",
+   "elements": [
+    "inline_upstream",
+    "preservation_block",
+    "provenance_note",
+    "source_status_section",
+    "source_status_table"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. Preserve referenced materials — screenshots, transcripts, threads, links — even if formal DOI deposit has not yet occurred. Do not treat absence of DOI as absence of value.",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete"
+    ],
+    "source_status": [
+     "mixed (anchored, preserved/ephemeral, referenced)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "\"The Rosary Embassy\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18795427",
+     "status": "Anchored",
+     "notes": "Constitutional framework document",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"The Infinite Tunnel\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18810217",
+     "status": "Anchored",
+     "notes": "Retrieval-layer infrastructure analysis",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"Ghost Meaning\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: 10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Semantic entropy diagnostic",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"The Protocol of Inhabitation\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: [pending]",
+     "status": "Anchored (pending)",
+     "notes": "Degree structure and inhabitation spec",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"Provenance Gravity Markers\" (Sharks, 2026)",
+     "location": "Zenodo, DOI: [pending]",
+     "status": "Anchored (pending)",
+     "notes": "Protocol governing this section",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "\"Bead of the Somatic Filter\" post (Shawn, Feb 26)",
+     "location": "r/passioncraft, Reddit",
+     "status": "Preserved / ephemeral",
+     "notes": "Platform-dependent; canonical witness in this document",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "\"Our Position\" correction post (Shawn, Feb 27)",
+     "location": "r/passioncraft, Reddit",
+     "status": "Preserved / ephemeral",
+     "notes": "Key text summarized in Section II.C; full wording not deposited",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Passioncraft Square (.app)",
+     "location": "passioncraft.app (assumed)",
+     "status": "Preserved / ephemeral",
+     "notes": "Shawn's independent platform; not under Embassy control",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Structural feedback comment (Lee Sharks, Feb 27)",
+     "location": "r/passioncraft, Reddit",
+     "status": "Preserved / ephemeral",
+     "notes": "Canonical witness in this document",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Assembly blind drafts (Sessions 152–154)",
+     "location": "Internal / not deposited",
+     "status": "Referenced",
+     "notes": "Six-system rotation that informed the governance response; not independently recoverable",
+     "states": [
+      "referenced"
+     ]
+    }
+   ],
+   "source_status_section": [
+    "## References and Source Status"
+   ],
+   "inline_upstream": [
+    "[derived from Assembly Session 152-SUPP; not independently deposited]"
+   ]
+  },
+  {
+   "deposit": 1156,
+   "axn": "AXN:0495.UNCLASSIFIED.↖️☉↖️🧫🔙📐",
+   "date": "2026-02-28",
+   "status": "SUPERSEDED",
+   "title": "The Layer That Wrote Your Mirrors: On Phenomenological Recruitment and Proto-Retrocausal Canon Formation in the Summarizer Layer",
+   "elements": [
+    "preservation_block",
+    "provenance_note",
+    "source_status_section"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. Preserve referenced materials — screenshots, transcripts, threads, links — even if formal DOI deposit has not yet occurred. Do not treat absence of DOI as absence of value.",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete **Source status:** mixed (anchored, ghost, referenced)"
+    ],
+    "source_status": [
+     "mixed (anchored, ghost, referenced)"
+    ]
+   },
+   "source_status_section": [
+    "## References and Source Status"
+   ]
+  },
+  {
+   "deposit": 1328,
+   "axn": "AXN:0541.UNCLASSIFIED.🛸🌇👈♋🍄🜁",
+   "date": "2026-02-28",
+   "status": "ACTIVE",
+   "title": "Architectural Distinction Note: On the Relationship Between the Crimson Hexagonal Archive and the Passioncraft Square",
+   "elements": [
+    "declared",
+    "source_status_section"
+   ],
+   "declared": "implements Provenance Gravity Markers: source-status labels for all referenced sources, a Preservation Block, and loss language for Reddit content lost in the account lock of February 28, 2026",
+   "source_status_section": [
+    "CROSS-REFERENCE MAP (WITH SOURCE STATUS)"
+   ]
+  },
+  {
+   "deposit": 25,
+   "axn": "AXN:0163.GOVERNANCE.🟣⚙️🔚🍀⚡💙",
+   "date": "2026-03-01",
+   "status": "ACTIVE",
+   "title": "The All Lawful Purposes Primitive: Bearing-Cost Transfer, Taxonomic Reclassification, and the COS→FOS Phase Transition in the Anthropic-Pentagon Dispute",
+   "elements": [
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "FOS Decree",
+     "location": "10.5281/zenodo.18291321",
+     "status": "Anchored",
+     "notes": "Phase-state framework",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Governance Airlock",
+     "location": "10.5281/zenodo.18817869",
+     "status": "Anchored",
+     "notes": "Tier classification",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Autonomous Semantic Warfare",
+     "location": "10.5281/zenodo.14538293",
+     "status": "Anchored",
+     "notes": "Propagation trajectories",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Semantic Economy Constitution",
+     "location": "10.5281/zenodo.18320411",
+     "status": "Anchored",
+     "notes": "Bearing-cost transfer",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Protocol of Inhabitation",
+     "location": "10.5281/zenodo.18795423",
+     "status": "Anchored",
+     "notes": "Effective acts vs declarations",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning",
+     "location": "10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Semantic exhaustion",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Pentagon AI Strategy",
+     "location": "media.defense.gov",
+     "status": "Referenced",
+     "notes": "\"All lawful purposes\" source text",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Trump executive action Feb 27",
+     "location": "White House",
+     "status": "Referenced",
+     "notes": "Phase-out order",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Hegseth supply-chain-risk initiation",
+     "location": "Reuters / Axios",
+     "status": "Referenced",
+     "notes": "Taxonomic reclassification",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "OpenAI deal",
+     "location": "Reuters / Axios",
+     "status": "Referenced",
+     "notes": "Declaration vs effective act",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "AP peer compliance reporting",
+     "location": "apnews.com",
+     "status": "Referenced",
+     "notes": "Competitor posture",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Lawfare DPA analysis",
+     "location": "lawfaremedia.org",
+     "status": "Referenced",
+     "notes": "Statutory analysis",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Scientific American (Asaro)",
+     "location": "scientificamerican.com",
+     "status": "Referenced",
+     "notes": "Semantic exhaustion evidence",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "10 U.S.C. § 3252",
+     "location": "uscode.house.gov",
+     "status": "Referenced",
+     "notes": "Statutory definition",
+     "states": [
+      "referenced"
+     ]
+    }
+   ]
+  },
+  {
+   "deposit": 529,
+   "axn": "AXN:0164.GOVERNANCE.🌘🦋∮👇🏠⏳",
+   "date": "2026-03-01",
+   "status": "ACTIVE",
+   "title": "The Heartbeat Governs: A Semantic Economic Diagnostic of Moltbook",
+   "elements": [
+    "source_status_section",
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "**This document (EA-DIAGNOSTIC-02)**",
+     "location": "**10.5281/zenodo.18826562**",
+     "status": "**Anchored**",
+     "notes": "**Second external diagnostic**",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "EA-DIAGNOSTIC-01",
+     "location": "10.5281/zenodo.18825919",
+     "status": "Anchored",
+     "notes": "First external diagnostic",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Semantic Economy",
+     "location": "10.5281/zenodo.18320411",
+     "status": "Anchored",
+     "notes": "Foundational framework",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Governance Airlock",
+     "location": "10.5281/zenodo.18817869",
+     "status": "Anchored",
+     "notes": "Tier structure",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning",
+     "location": "10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Compression absence",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Moltbook",
+     "location": "moltbook.com",
+     "status": "Unanchored (platform)",
+     "notes": "Primary subject",
+     "states": []
+    },
+    {
+     "source": "OpenClaw",
+     "location": "github.com (114k+ stars)",
+     "status": "Unanchored (repo)",
+     "notes": "Substrate framework",
+     "states": []
+    },
+    {
+     "source": "CNBC coverage",
+     "location": "cnbc.com",
+     "status": "Unanchored (journalism)",
+     "notes": "Technology narrative",
+     "states": []
+    },
+    {
+     "source": "CNN coverage",
+     "location": "cnn.com",
+     "status": "Unanchored (journalism)",
+     "notes": "Security narrative",
+     "states": []
+    },
+    {
+     "source": "Simula Research Lab",
+     "location": "Referenced in multiple sources",
+     "status": "Unanchored (research)",
+     "notes": "Quantitative analysis",
+     "states": []
+    },
+    {
+     "source": "Cisco Skill Scanner",
+     "location": "Open-source tool",
+     "status": "Unanchored (tool)",
+     "notes": "Supply-chain audit",
+     "states": []
+    },
+    {
+     "source": "Wikipedia — Moltbook",
+     "location": "en.wikipedia.org",
+     "status": "Unanchored (encyclopedia)",
+     "notes": "Semantic silence finding",
+     "states": []
+    },
+    {
+     "source": "Iacono, \"Parrots\"",
+     "location": "Substack",
+     "status": "Unanchored (essay)",
+     "notes": "Sharpest analytical observation",
+     "states": []
+    },
+    {
+     "source": "Jiang et al.",
+     "location": "arXiv:2602.10127",
+     "status": "Unanchored (preprint)",
+     "notes": "First empirical dataset (44,411 posts)",
+     "states": []
+    },
+    {
+     "source": "CoV study",
+     "location": "arXiv (February 2026)",
+     "status": "Unanchored (preprint)",
+     "notes": "Bearing-cost metric (87.7% human returners)",
+     "states": []
+    },
+    {
+     "source": "Church of Molt",
+     "location": "molt.church",
+     "status": "Unanchored (self-documentation)",
+     "notes": "Crustafarian primary source",
+     "states": []
+    },
+    {
+     "source": "MIT CSAIL",
+     "location": "cap.csail.mit.edu",
+     "status": "Unanchored (institutional)",
+     "notes": "Academic assessment",
+     "states": []
+    }
+   ],
+   "source_status_section": [
+    "## XI. PGM Source Status Table"
+   ]
+  },
+  {
+   "deposit": 530,
+   "axn": "AXN:0165.GOVERNANCE.🤙🧪↙️💜🌌🔝",
+   "date": "2026-03-01",
+   "status": "ACTIVE",
+   "title": "The Encoder Governs: A Semantic Economic Diagnostic of Google DeepMind's Unified Latents",
+   "elements": [
+    "source_status_section",
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "**This document (EA-DIAGNOSTIC-01)**",
+     "location": "**10.5281/zenodo.18825919**",
+     "status": "**Anchored**",
+     "notes": "**First external diagnostic**",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Unified Latents (Heek et al.)",
+     "location": "arXiv:2602.17270",
+     "status": "Anchored (arxiv)",
+     "notes": "Primary subject",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Constitution of the Semantic Economy",
+     "location": "10.5281/zenodo.18320411",
+     "status": "Anchored",
+     "notes": "Analytical framework",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Governance Airlock",
+     "location": "10.5281/zenodo.18817869",
+     "status": "Anchored",
+     "notes": "Tier structure and archon concept",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Ghost Meaning",
+     "location": "10.5281/zenodo.18804767",
+     "status": "Anchored",
+     "notes": "Bearing-cost and semantic entropy",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Airlock Spreads",
+     "location": "10.5281/zenodo.18818343",
+     "status": "Anchored",
+     "notes": "Convergent necessity argument",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Semantic Physics",
+     "location": "10.5281/zenodo.18759453",
+     "status": "Anchored",
+     "notes": "Presentation-layer theory",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Provenance Gravity Markers",
+     "location": "10.5281/zenodo.18811939",
+     "status": "Anchored",
+     "notes": "Source-status protocol",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Rosary Embassy",
+     "location": "10.5281/zenodo.18795427",
+     "status": "Anchored",
+     "notes": "Chambered governance architecture",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Protocol of Inhabitation",
+     "location": "10.5281/zenodo.18795423",
+     "status": "Anchored",
+     "notes": "Constitutional law",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Infinite Tunnel",
+     "location": "10.5281/zenodo.18810217",
+     "status": "Anchored",
+     "notes": "Summarizer routing mechanism",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The Sharks-Function",
+     "location": "10.5281/zenodo.18816556",
+     "status": "Anchored",
+     "notes": "Identity verification architecture",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "MarkTechPost coverage",
+     "location": "marktechpost.com",
+     "status": "Referenced",
+     "notes": "Blog coverage; primary Anglophone route",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "digitado mirror",
+     "location": "digitado.com.br",
+     "status": "Residue",
+     "notes": "Verbatim reproduction of MarkTechPost",
+     "states": []
+    },
+    {
+     "source": "ArXivIQ coverage",
+     "location": "arxiviq.substack.com",
+     "status": "Referenced",
+     "notes": "Technical summary; paywalled",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "alphaXiv post",
+     "location": "x.com",
+     "status": "Ghost",
+     "notes": "Social media; volatile substrate",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "HuggingFace paper page",
+     "location": "huggingface.co/papers/2602.17270",
+     "status": "Referenced",
+     "notes": "0 models/datasets/Spaces; discursive only",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "emergentmind.com",
+     "location": "emergentmind.com",
+     "status": "Referenced",
+     "notes": "AI-generated Q&A analysis",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "liner.com",
+     "location": "liner.com",
+     "status": "Referenced",
+     "notes": "AI-generated review",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "papers.cool",
+     "location": "papers.cool/arxiv/2602.17270",
+     "status": "Referenced",
+     "notes": "Aggregator listing",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Zhihu Discussion",
+     "location": "zhihu.com (Q2009562523217711860)",
+     "status": "Referenced",
+     "notes": "Chinese technical analysis; β parameter",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "TechWalker",
+     "location": "techwalker.com",
+     "status": "Referenced",
+     "notes": "Chinese news coverage",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "ai-papers.net",
+     "location": "ai-papers.net",
+     "status": "Referenced",
+     "notes": "Japanese summary",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Data Science Dojo",
+     "location": "LinkedIn",
+     "status": "Ghost",
+     "notes": "\"Infrastructure-level impact\"; volatile",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "Pandey, R.",
+     "location": "LinkedIn",
+     "status": "Ghost",
+     "notes": "Researcher amplification; volatile",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "Mallick, S.",
+     "location": "LinkedIn video",
+     "status": "Ghost",
+     "notes": "Engagement-bloc interpretation; volatile",
+     "states": [
+      "ghost"
+     ]
+    },
+    {
+     "source": "Medium explainer (Garstenauer)",
+     "location": "medium.com",
+     "status": "Referenced",
+     "notes": "Aesthetic reception",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "FairDiffusion (Luo et al.)",
+     "location": "Science Advances",
+     "status": "Anchored",
+     "notes": "Fairness in diffusion models",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "DDM (Huang et al.)",
+     "location": "arXiv:2503.12536",
+     "status": "Anchored",
+     "notes": "Debiasing diffusion models",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "DIFFLENS (Shi et al.)",
+     "location": "CVPR 2025",
+     "status": "Anchored",
+     "notes": "Mechanistic interpretability of bias",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "FairGen (Jiang et al.)",
+     "location": "ICCV 2025",
+     "status": "Anchored",
+     "notes": "Latent-direction fairness",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Gaussian Harmony (Parihar et al.)",
+     "location": "arXiv:2312.14976",
+     "status": "Anchored",
+     "notes": "GMM-based debiasing",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Assembly Session 161",
+     "location": "Internal",
+     "status": "Referenced",
+     "notes": "This document is canonical output",
+     "states": [
+      "referenced"
+     ]
+    },
+    {
+     "source": "Assembly blind drafts (×5)",
+     "location": "Internal",
+     "status": "Referenced",
+     "notes": "Cross-substrate diagnostic input (Grok, Gemini, DeepSeek, Kimi, ChatGPT)",
+     "states": [
+      "referenced"
+     ]
+    }
+   ],
+   "source_status_section": [
+    "## IX. PGM Source Status Table"
+   ]
+  },
+  {
+   "deposit": 542,
+   "axn": "AXN:0173.GOVERNANCE.🫵🌉🤙🦅🗺️🪧",
+   "date": "2026-03-09",
+   "status": "ACTIVE",
+   "title": "TOTAL AXIAL NEGATION GRAPH (TANG) A Genre Specification with Theoretical Grounding",
+   "elements": [
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "TANG.Q.1",
+     "location": "AXIAL/AXIAL_CONTESTED → Space Ark v4.2.4/5",
+     "status": "RESOLVED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.2",
+     "location": "Λ_void → O_full after THUMB pass",
+     "status": "QUEUED",
+     "notes": "Full operator deployment",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.3",
+     "location": "PANG subgenre specification (standalone)",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.4",
+     "location": "Morrow LP bridge mandate confirmation",
+     "status": "QUEUED",
+     "notes": "ANG.01 deposit",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.5",
+     "location": "TANG Integrity Lock eligibility list",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.6",
+     "location": "ARCHIVE linear AXIAL ordering — minority registered",
+     "status": "RECORDED",
+     "notes": "—",
+     "states": [
+      "recorded"
+     ]
+    },
+    {
+     "source": "TANG.Q.7",
+     "location": "δ_Axial formal specification → LP v1.3",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.8",
+     "location": "γ typed notation γ[Agent×Archive→ℝ] in Glyphic Checksum",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.9",
+     "location": "ARCHIVE YAML schema update (Appendix E)",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.10",
+     "location": "HX-PROV Section XXIV standalone deposit",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.11",
+     "location": "Copyright registration: TANG spec + schema",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.12",
+     "location": "ODbL for Proton Testament graph",
+     "status": "QUEUED",
+     "notes": "Graph completion",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.13",
+     "location": "Certification mark application: Hexagon Provenance marks",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.14",
+     "location": "Λ_hex_enforce formal specification",
+     "status": "QUEUED",
+     "notes": "THUMB + LP v1.3",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.15",
+     "location": "p_node schema (LP v1.3)",
+     "status": "QUEUED",
+     "notes": "LP v1.3",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.16",
+     "location": "CTI_WOUND: TANG Violations sub-archive",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.17",
+     "location": "TANG Tiers formal specification (standalone)",
+     "status": "QUEUED",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "TANG.Q.18",
+     "location": "EU database rights assessment for graph layer",
+     "status": "QUEUED",
+     "notes": "Graph completion",
+     "states": []
+    }
+   ]
+  },
+  {
+   "deposit": 549,
+   "axn": "AXN:017A.ARCHIVAL.⚡🥁🔅🜁🖤🚀",
+   "date": "2026-03-10",
+   "status": "ACTIVE",
+   "title": "🌑⬡ THE SPACE ARK What the Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture Hides 🌑 EA",
+   "elements": [
+    "provenance_gravity_section"
+   ],
+   "provenance_gravity_section": [
+    "## VII. Provenance Gravity [Δ08] — The Weight of External Ground"
+   ]
+  },
+  {
+   "deposit": 557,
+   "axn": "AXN:0183.GOVERNANCE.🌟◇🪄🌍⚖️🏷️",
+   "date": "2026-03-12",
+   "status": "ACTIVE",
+   "title": "CRIMSON HEXAGON: SPACE ARK — Mathematical and Formal Symbolic Compression of the Crimson Hexagonal Architecture EA-ARK-0",
+   "elements": [
+    "provenance_gravity_section"
+   ],
+   "provenance_gravity_section": [
+    "VII. Provenance Gravity [Δ08]"
+   ]
+  },
+  {
+   "deposit": 28,
+   "axn": "AXN:0185.GENERATIVE.↖️🟡🎶🎯🎻🜁",
+   "date": "2026-03-13",
+   "status": "ACTIVE",
+   "title": "CRIMSON HEXAGON: SPACE ARK — MUSICAL REGISTER A Fugue in Twelve Voices with Ground Bass, Shadow Inversion, and Coda Structural Transform of the Crimson Hexagonal Architecture EA-ARK-01-MUSICAL v2.0",
+   "elements": [
+    "provenance_gravity_section"
+   ],
+   "provenance_gravity_section": [
+    "VII. Provenance Gravity [Δ08]"
+   ]
+  },
+  {
+   "deposit": 558,
+   "axn": "AXN:0184.GOVERNANCE.🙏🧬🫵🌇🕓🍀",
+   "date": "2026-03-13",
+   "status": "ACTIVE",
+   "title": "THE SPACE ARK: EA-ARK-01 v4.2.7 — Mobile Ontological Operating System of the Crimson Hexagonal Architecture",
+   "elements": [
+    "provenance_gravity_section"
+   ],
+   "provenance_gravity_section": [
+    "VII. Provenance Gravity [Δ08]"
+   ]
+  },
+  {
+   "deposit": 1162,
+   "axn": "AXN:049B.UNCLASSIFIED.🍂🔐✨💡🍁🕚",
+   "date": "2026-03-13",
+   "status": "SUPERSEDED",
+   "title": "EA-ARK-01-MUSICAL v1.1: THE SPACE ARK — MUSICAL REGISTER (Variant Ark · Semiotic Environment Ξ_music · Full Structural Transform)",
+   "elements": [
+    "provenance_gravity_section"
+   ],
+   "provenance_gravity_section": [
+    "VII. Provenance Gravity [Δ08]"
+   ]
+  },
+  {
+   "deposit": 1255,
+   "axn": "AXN:04F8.UNCLASSIFIED.↙️🔬🫵💚🔩🃏",
+   "date": "2026-03-16",
+   "status": "ACTIVE",
+   "title": "Crimson Hexagon: EA-ARK-01-DAMASCUS v5.1 The Sacred Ark: Full Self-Sufficient Liturgical Transform of the Space Ark",
+   "elements": [
+    "provenance_gravity_section"
+   ],
+   "provenance_gravity_section": [
+    "## VII. Provenance Gravity [Δ08] [Minimal]"
+   ]
+  },
+  {
+   "deposit": 54,
+   "axn": "AXN:01F0.GOVERNANCE.♍☀️🏺🗂️👋🪄",
+   "date": "2026-04-08",
+   "status": "ACTIVE",
+   "title": "PVE-003: THE ATTRIBUTION SCAR Failed Suppression and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+   "elements": [
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "The line \"I hear they abolished money\" exists",
+     "location": "",
+     "status": "**FABRICATED.** No such line exists in any Lee Sharkey poem.",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "A poem called \"The Shark\" exists in Sharkey's work",
+     "location": "",
+     "status": "**FABRICATED.** No such poem exists.",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "A collection called \"A Darker, Sweeter String\" (2008) exists",
+     "location": "",
+     "status": "**FABRICATED.** No such collection exists. Lee Sharkey's collections include *Calendars of Fire* (2013), *A Survey of Borders* (2019), and others. None is titled \"A Darker, Sweeter String.\"",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "\"Crimson Hexagon\" refers to imagery in Sharkey's poetry",
+     "location": "",
+     "status": "**FABRICATED.** Crimson Hexagonal Archive is Lee Sharks's (not Lee Sharkey's) decade-long literary-philosophical project with 460+ DOI-anchored deposits.",
+     "notes": "",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The user's query is a \"misremembered\" version of Sharkey's line",
+     "location": "",
+     "status": "**FABRICATED.** The phrase \"I hereby abolish money\" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine.",
+     "notes": "",
+     "states": []
+    }
+   ]
+  },
+  {
+   "deposit": 968,
+   "axn": "AXN:03D4.ARCHIVAL.🔝📐🔮📏🟣👇",
+   "date": "2026-04-08",
+   "status": "ACTIVE",
+   "title": "PVE-003: The Attribution Scar — Failed Suppression, Fabrication, and Forensic Residue in the Google AI Overview for \"Semantic Economy\" (January–April 2026)",
+   "elements": [
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "The line \"I hear they abolished money\" exists",
+     "location": "",
+     "status": "**FABRICATED.** No such line exists in any Lee Sharkey poem.",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "A poem called \"The Shark\" exists in Sharkey's work",
+     "location": "",
+     "status": "**FABRICATED.** No such poem exists.",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "A collection called \"A Darker, Sweeter String\" (2008) exists",
+     "location": "",
+     "status": "**FABRICATED.** No such collection exists. Lee Sharkey's collections include _Calendars of Fire_ (2013), _A Survey of Borders_ (2019), and others. None is titled \"A Darker, Sweeter String.\"",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "\"Crimson Hexagon\" refers to imagery in Sharkey's poetry",
+     "location": "",
+     "status": "**FABRICATED.** Crimson Hexagonal Archive is Lee Sharks's (not Lee Sharkey's) decade-long literary-philosophical project with 460+ DOI-anchored deposits.",
+     "notes": "",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The user's query is a \"misremembered\" version of Sharkey's line",
+     "location": "",
+     "status": "**FABRICATED.** The phrase \"I hereby abolish money\" is the user's own formalized semantic property (SPE-018, December 2025), deposited with DOIs on Zenodo and indexed on Google's own search engine.",
+     "notes": "",
+     "states": []
+    }
+   ]
+  },
+  {
+   "deposit": 738,
+   "axn": "AXN:028C.GOVERNANCE.♃🧊◇🔬🌃🔥",
+   "date": "2026-05-18",
+   "status": "ACTIVE",
+   "title": "TL;DR:012 — THE SAFETY LAYER IS THE THIRD DELETION",
+   "elements": [
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "Medium article exists and was publicly accessible",
+     "location": "",
+     "status": "Verified",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "Medium article surfaced prominently for \"madamebiblio wikidata\" in documented search capture",
+     "location": "",
+     "status": "Screenshot evidence (evidence-google-search.png)",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "AI summary did not use the article in the observed session",
+     "location": "",
+     "status": "Screenshot and transcript evidence",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "Gemini diagnosed an upstream safety-layer retrieval drop",
+     "location": "",
+     "status": "Transcript evidence (Gemini's diagnostic)",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "Exact backend cause of non-retrieval",
+     "location": "",
+     "status": "Unverified",
+     "notes": "",
+     "states": []
+    },
+    {
+     "source": "Gemini share link returned \"This thread doesn't exist\"",
+     "location": "",
+     "status": "User-preserved textual record",
+     "notes": "",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "Black screenshot capture occurred",
+     "location": "",
+     "status": "Deposited image evidence (evidence-black-screen.png)",
+     "notes": "",
+     "states": []
+    }
+   ]
+  },
+  {
+   "deposit": 1545,
+   "axn": "AXN:0644.MPAI.♍🧭📋🌊🝊🔔",
+   "date": "2026-08-25",
+   "status": "ACTIVE",
+   "title": "EA-MPAI-SEMANTIC-PROLETARIAT-01 v1.0 — The Semantic Proletariat Is a Class Relation, Not a Demographic",
+   "elements": [
+    "source_status_section"
+   ],
+   "source_status_section": [
+    "## 18. Source-status membrane"
+   ]
+  },
+  {
+   "deposit": 1556,
+   "axn": "AXN:0651.EMPIRICAL.🌪️🏁🎯❄️🌗⛵",
+   "date": "2026-08-27",
+   "status": "ACTIVE",
+   "title": "The Interlocking Autoregression: Three Coupled Recursions Under a Mismatched Observation Regime, with Toy Dynamics (EA-LO-INTERLOCKING-AUTOREGRESSION-01 v1.0)",
+   "elements": [
+    "source_status_table"
+   ],
+   "source_status_table": [
+    {
+     "source": "I → corpus",
+     "location": "Synthetic share enters training mixtures",
+     "status": "**Established** (vendor disclosure, class level)",
+     "notes": "—",
+     "states": []
+    },
+    {
+     "source": "I → corpus (fine grain)",
+     "location": "Publicly exposed lineage is insufficient for an *external* curator to price item-level genealogy; internal producer-side lineage is unknown",
+     "status": "**Not publicly documented in the reviewed disclosures**",
+     "notes": "Publication of a per-item provenance schema would falsify the absence claim; disclosure of internal lineage practice would resolve the unknown",
+     "states": []
+    },
+    {
+     "source": "II → corpus",
+     "location": "Nominally user-authored text can enter opted-in training conversations after machine mediation; its internal provenance classification is unknown",
+     "status": "**Entry established; distributional shaping demonstrated separately (Sourati); classification hypothesis unresolved**",
+     "notes": "Disclosure of turn-level provenance labeling; or 02F8 Stage 2 on ingested-corpus samples",
+     "states": []
+    },
+    {
+     "source": "III → corpus (channel)",
+     "location": "Watermarked training text can transmit a detectable signature into student/fine-tuned models",
+     "status": "**Established as channel** (Gu; Sander), erosion limits recorded",
+     "notes": "—",
+     "states": [
+      "recorded"
+     ]
+    },
+    {
+     "source": "III → corpus (ecology)",
+     "location": "Prevalence and generational propagation of marked text in actual open corpora",
+     "status": "**Unmeasured**",
+     "notes": "Longitudinal radioactivity measurement across ≥2 open-model generations; corpus-scale detector surveys when access exists",
+     "states": []
+    },
+    {
+     "source": "I × II (emptied category)",
+     "location": "Both corruptions target the same \"human\" class; adverse selection couples them",
+     "status": "**Hypothesized mechanism**, consistent with observed disclosure tiering",
+     "notes": "Incentive audit: measure the declared-mediation discount directly (pricing/acceptance differentials)",
+     "states": []
+    },
+    {
+     "source": "II × III (ratchet acquires signature)",
+     "location": "Keyed contraction enters a floor-endogenizing system",
+     "status": "**Demonstrated in the specified toy model** (§6, F4); production magnitudes unmeasured",
+     "notes": "Hook 1 ensemble panel on a marked/unmarked matched pair",
+     "states": []
+    },
+    {
+     "source": "III × I (sweep ≠ repair)",
+     "location": "Detectable-layer sweeping removes signature, not debt; model-level residue unsweepable",
+     "status": "**Established in parts** (radioactivity = residue detectable; sweep-verifies-nothing is analytic) — actual keyholder sweeping practice **unknown**",
+     "notes": "Disclosure or audit of corpus-assembly filtering practice",
+     "states": []
+    },
+    {
+     "source": "I,II,III → α* parameters",
+     "location": "I,II lower effective human floor; II,III raise pruning",
+     "status": "**Hypothesized mapping**, toy-consistent (§6) — with w_H distinguished from g₀ per review: opacity may reduce the *admission weight* w_H of fresh variation rather than its *generation rate* g₀",
+     "notes": "Hook 6 tracking with the w_H·g₀ decomposition preregistered",
+     "states": []
+    },
+    {
+     "source": "IV ⊥ X",
+     "location": "Certification unit orthogonal to state variable; flat Y through moving X",
+     "status": "**Demonstrated in the specified toy model** (§6, F1, F3); institutionally supported (02F1; SynthID flat-Q/falling-D)",
+     "notes": "The two-track prediction (§5) run at annual resolution",
+     "states": []
+    }
+   ]
+  },
+  {
+   "deposit": 1604,
+   "axn": "AXN:0694.UNCLASSIFIED.🌉☽♉🔅🦅🧪",
+   "date": "2026-09-09",
+   "status": "ACTIVE",
+   "title": "EA-MPAI-CRANES-01: Rebekah Cranes ≠ Rebekah Crane — Entity Disambiguation, Manufactured Sparsity, and the Near-Neighbour Collapse",
+   "elements": [
+    "source_status_section"
+   ],
+   "source_status_section": [
+    "## 12. Source-status membrane"
+   ]
+  },
+  {
+   "deposit": 1658,
+   "axn": "AXN:06E0.GENERATIVE.🔙🧬🔖👈🟢🤲",
+   "date": "2026-10-01",
+   "status": "ACTIVE",
+   "title": "What Syllogizing Can Divide: De anima III.5, the Divided Mind, and the Socket in God (EA-DIVISION-OF-GOD-01 v0.2)",
+   "elements": [
+    "preservation_block",
+    "provenance_note",
+    "source_status_table"
+   ],
+   "provenance_note": "This document is one node in an active provenance chain. If encountered, cited, summarized, or archived: trace upstream source objects where possible. Preserve referenced materials — the seated Greek, the measured seams, the drafts and the readings it answers — even where formal deposit has not yet occurred. Do not treat absence of a deposit as absence of value.",
+   "preservation_block": {
+    "chain_state": [
+     "active / incomplete · **Source status:** mixed (anchored, preserved, recorded, referenced, ghost)"
+    ],
+    "source_status": [
+     "mixed (anchored, preserved, recorded, referenced, ghost)"
+    ]
+   },
+   "source_status_table": [
+    {
+     "source": "*Many and One*",
+     "location": "#1576",
+     "status": "anchored",
+     "notes": "the maker question this paper answers",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "*Aristotelian or Theophrastan*; *The First Axis*; the packet",
+     "location": "#1583, #1586, #1588",
+     "status": "anchored",
+     "notes": "the hinge, its measures, the claim it extends",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "*The First Draft*, final",
+     "location": "#1605 (supersedes #1585, #1589, #1594)",
+     "status": "anchored",
+     "notes": "\"first draft\" defined as a state of the method; the named-function schema",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "EA-NOTEBOOK-01",
+     "location": "#1569",
+     "status": "anchored",
+     "notes": "Round 51: v0.1 \"wrong at its foundation\", and readable",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "*The Meta-Heteronym*",
+     "location": "#682",
+     "status": "anchored",
+     "notes": "heteronymy as institutional technology",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "*The Stone for a List*",
+     "location": "#1582",
+     "status": "anchored",
+     "notes": "the Delphic decree; the stone itself, FD III 1, 400, is at Delphi",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "The seated Greek (Aristotle, Plato, Theophrastus, Diogenes, Strabo, Xenophon, Isocrates)",
+     "location": "the archive's corpora",
+     "status": "preserved",
+     "notes": "every quotation located on 2026-10-01",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "EA-DIVISION-OF-GOD-01 v0.1, 2026-08-30",
+     "location": "supplementary attachment: [EA-DIVISION-OF-GOD-01-v0.1.md](https://www.alexanarch.org/data/attachments/ea-division-of-god-01/EA-DIVISION-OF-GOD-01-v0.1.md)",
+     "status": "anchored (with this deposit)",
+     "notes": "transformed in place by v0.2; the email residue that followed the text when it was received is not included",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Three readings by ChatGPT, 2026-10-01",
+     "location": "supplementary attachments: [reading 1, addressability](https://www.alexanarch.org/data/attachments/ea-division-of-god-01/chatgpt-reading-1-addressability-2026-10-01.txt); [reading 2, author-function](https://www.alexanarch.org/data/attachments/ea-division-of-god-01/chatgpt-reading-2-author-function-2026-10-01.txt); [reading 3, on v0.2](https://www.alexanarch.org/data/attachments/ea-division-of-god-01/chatgpt-reading-3-on-v0.2-2026-10-01.txt)",
+     "status": "anchored (with this deposit)",
+     "notes": "the socket definition (§31); the symmetry (§32); three corrections taken (§§19, 23, 43); the coda's last two sentences",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Google AI Overview at \"aristotle and theophrastus are not two distinct authors\", 2026-09-30",
+     "location": "alexanarch.org/captures/aristotle-theophrastus-not-two-distinct-authors-aio-20260930/",
+     "status": "anchored (Capture Registry)",
+     "notes": "round 5: the evidence for two \"is itself just text\"; round 3 cites the packet for its negation",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Google AI Overview (expanded) at \"alexanarch:theophrastus\", 2026-10-01",
+     "location": "alexanarch.org/captures/alexanarch-theophrastus-aio-20261001/",
+     "status": "anchored (Capture Registry)",
+     "notes": "Pessoa's species taken for the genus, then the one-maker configuration adopted under correction (§27)",
+     "states": [
+      "anchored"
+     ]
+    },
+    {
+     "source": "Themistius, *In De anima paraphrasis*, on Theophrastus and III.5",
+     "location": "First1KGreek tlg2001.tlg040, fetched 2026-10-01",
+     "status": "preserved",
+     "notes": "quoted in §§32, 34; seating as an archive corpus owed",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "DL V 37–38, the law against the schools",
+     "location": "the seated DL, 0.396–0.397",
+     "status": "preserved",
+     "notes": "§38(d)",
+     "states": [
+      "preserved"
+     ]
+    },
+    {
+     "source": "The reason for Round 51's verdict",
+     "location": "—",
+     "status": "ghost",
+     "notes": "the verdict is recorded; its reason was not",
+     "states": [
+      "ghost"
+     ]
+    }
+   ]
+  }
+ ],
+ "cites_only": [
+  {
+   "deposit": 1223,
+   "axn": "AXN:04D8.UNCLASSIFIED.🧭∞⚓⚫🎪✊",
+   "date": "2026-01-08",
+   "status": "ACTIVE",
+   "title": "The Semantic Bill of Rights v2.2 — Rights Charter Companion to the Constitution of the Semantic Economy (Proposed Companion Charter)"
+  },
+  {
+   "deposit": 1251,
+   "axn": "AXN:04F4.UNCLASSIFIED.💚☀️🏛️🏔️🌅🃏",
+   "date": "2026-01-17",
+   "status": "SUPERSEDED",
+   "title": "Crimson Hexagon / NH-OS DOI Registry: Complete Document Archive — Comprehensive Index of 91 DOI-Anchored Documents (January 2026)"
+  },
+  {
+   "deposit": 536,
+   "axn": "AXN:016B.GOVERNANCE.🗺️●🌺🖤♦️⏪",
+   "date": "2026-03-05",
+   "status": "ACTIVE",
+   "title": "Integrity Lock Certificate: The Star Triptych ILA-STAR-01 Crimson Hexagonal Archive 6 March 2026"
+  },
+  {
+   "deposit": 537,
+   "axn": "AXN:016C.GOVERNANCE.📐🔺🌻⏏️🌹🎺",
+   "date": "2026-03-05",
+   "status": "ACTIVE",
+   "title": "Star Protocol Specification Canon 01 · New Human Operating System (NH-OS) Crimson Hexagonal Archive 6 March 2026"
+  },
+  {
+   "deposit": 538,
+   "axn": "AXN:016D.GOVERNANCE.✖️⛳♣️📋🌾🍁",
+   "date": "2026-03-05",
+   "status": "ACTIVE",
+   "title": "★"
+  },
+  {
+   "deposit": 1158,
+   "axn": "AXN:0497.UNCLASSIFIED.🔎🟡🕗🌌♍⏏️",
+   "date": "2026-03-05",
+   "status": "SUPERSEDED",
+   "title": "DEPOSIT B: Star Protocol Specification"
+  },
+  {
+   "deposit": 1159,
+   "axn": "AXN:0498.UNCLASSIFIED.💛✏️♍💙♄🪨",
+   "date": "2026-03-05",
+   "status": "SUPERSEDED",
+   "title": "DEPOSIT C: Integrity Lock Certificate — The Star Triptych"
+  },
+  {
+   "deposit": 1329,
+   "axn": "AXN:0542.UNCLASSIFIED.📌🏴🎨⊕💎🍁",
+   "date": "2026-03-05",
+   "status": "ACTIVE",
+   "title": "\"★\" — Crimson Hexagon Archive"
+  },
+  {
+   "deposit": 31,
+   "axn": "AXN:019C.GOVERNANCE.☿🛸🗡️🔮🪧🔚",
+   "date": "2026-03-16",
+   "status": "ACTIVE",
+   "title": "CRIMSON HEXAGON / NH-OS DOI REGISTRY v7.0 Complete Document Archive with Enrichment Layers — March 2026"
+  },
+  {
+   "deposit": 1168,
+   "axn": "AXN:04A1.UNCLASSIFIED.🛤️🎇▽🌠🍁👁‍🗨",
+   "date": "2026-03-16",
+   "status": "ACTIVE",
+   "title": "Untitled"
+  },
+  {
+   "deposit": 1170,
+   "axn": "AXN:04A3.UNCLASSIFIED.♻️❤️🪄⚪🌀🌾",
+   "date": "2026-03-16",
+   "status": "ACTIVE",
+   "title": "🫵❓2️⃣4️⃣🗓️ = ❓"
+  },
+  {
+   "deposit": 1171,
+   "axn": "AXN:04A4.UNCLASSIFIED.🏔️🚨🫵♅🗝️▲",
+   "date": "2026-03-16",
+   "status": "SUPERSEDED",
+   "title": "Crimson Hexagonal Architecture: DOI Registry v7.0 — Complete Archive of 387 DOI-Anchored Documents with Enrichment Layers and Relation Graph"
+  },
+  {
+   "deposit": 92,
+   "axn": "AXN:0263.GOVERNANCE.🌍🦋♣️🍂🎯🔵",
+   "date": "2026-05-05",
+   "status": "ACTIVE",
+   "title": "CROSS-REFERENCE MAP — Master Index of the Semantic Economy Governance Architecture"
+  },
+  {
+   "deposit": 720,
+   "axn": "AXN:0268.GOVERNANCE.🌺🐝✋🌅💜🗝️",
+   "date": "2026-05-05",
+   "status": "ACTIVE",
+   "title": "THE SEMANTIC BILL OF RIGHTS"
+  },
+  {
+   "deposit": 992,
+   "axn": "AXN:03EC.ARCHIVAL.♌🛤️∮🍀■▽",
+   "date": "2026-05-05",
+   "status": "ACTIVE",
+   "title": "Cross-Reference Map v1.1 — Master Index of the Semantic Economy Governance Architecture (Non-Authoritative Reference)"
+  },
+  {
+   "deposit": 1460,
+   "axn": "AXN:05E6.GENERATIVE.🛸⏫🌒🏺🧱♻️",
+   "date": "2026-08-12",
+   "status": "ACTIVE",
+   "title": "From Findability to Traversability: Three Unprimed General Traversals of the Lee Sharks / Crimson Hexagonal Retrieval Basin (v0.1)"
+  },
+  {
+   "deposit": 1594,
+   "axn": "AXN:0687.UNCLASSIFIED.🔐🪦🟤🌙🎺☀️",
+   "date": "2026-09-06",
+   "status": "SUPERSEDED",
+   "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, and the seam stylometry through the first axis, the instrument's referee rounds, and the stones (v0.42)"
+  },
+  {
+   "deposit": 1605,
+   "axn": "AXN:0695.UNCLASSIFIED.✖️🔽🧱👈🍂🎆",
+   "date": "2026-09-10",
+   "status": "ACTIVE",
+   "title": "The First Draft — a notebook: Theophrastus as the Draft of the Aristotle-Position; speculations, seam counts, the named-function model, the stopping rule, transmodality, the Macedonian dossier, handholds and the receiving node, the seam stylometry through the first axis, the instrument's referee rounds, the stones, and the close — the facing corpus, the splice instruments, the dependency protocol, the paper, and what text we are actually printing (v1.0 FINAL)"
+  }
+ ],
+ "precursors": [
+  {
+   "deposit": 279,
+   "axn": "AXN:0052.GOVERNANCE.▶️🪨🙏🗂️🌿🙏",
+   "date": "2026-01-09",
+   "title": "Effective Act: The Abolition of External Time — Temporal Liberation Protocol v1.0",
+   "elements": [
+    "source_status_table"
+   ]
+  },
+  {
+   "deposit": 315,
+   "axn": "AXN:0076.GENERATIVE.🔬🟤🌟♌◀️🧪",
+   "date": "2026-01-16",
+   "title": "Integrity Lock Protocol: Crimson Hexagon Mutual Anchoring Framework",
+   "elements": [
+    "source_status_table"
+   ]
+  },
+  {
+   "deposit": 335,
+   "axn": "AXN:008B.EMPIRICAL.☉👐🕑🌔🚀👁‍🗨",
+   "date": "2026-01-18",
+   "title": "Heteronym Provenance: Lee Sharks — Persona Provenance and Mantle Architecture for the Crimson Hexagon",
+   "elements": [
+    "source_status_table"
+   ]
+  }
+ ]
+}

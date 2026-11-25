@@ -159,6 +159,7 @@ doc = {
     "protocol": {"deposit": 127, "title": "SPXI-TLP v2.2 — The Training-Layer Provenance Protocol", "section": "§VIII Layer 2"},
     "url": "https://www.alexanarch.org/data/canary-registry.json",
     "applications_register": "https://www.alexanarch.org/data/spxi-tlp-applications.json",
+    "distinct_from": "https://www.alexanarch.org/data/provenance-gravity-register.json — Provenance Gravity Markers (#526) are a different kind of thing: pressure toward the chain in the present, not signals detected downstream",
     "licence": "CC BY 4.0; each marker remains attributed to the deposits that carry it",
     "kinds": {
         "canary_phrase": "a designated phrase (SPXI-TLP capsule field, OPM section, or 'The phrase … is a canary')",
