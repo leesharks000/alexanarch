@@ -55,3 +55,21 @@ blc05 (1344–1472 MHz), 2 Hz × 15 s, every scan de-Dopplered to the comet's fr
 ### What look2 leaves
 
 The vessel's frequency, taken through the 1977 range-rate, holds nothing recognisable in the 2025 data that reach it: Green Bank's first cadence, three Parkes sessions, the MeerKAT hit lists, and the ATA's hydrogen unit for Ehman's version. The one structured thing met on the way, the 1 kHz comb of 2025-11-27, is fixed to the telescope's frame and drifts against the comet.
+
+## key_gate.py — the six values as time gates and as symbol lengths (2026-11-24, 22:48 EST: "lets do the time gate reading")
+
+6 + 14 + 26 + 30 + 19 + 5 = 100. Read as durations in a unit u, the key repeats every 100 u. Two readings, each per channel and at every start phase: **G1, gates** (on 6, off 14, on 26, off 30, on 19, off 5, either sign), and **G2, symbol lengths** (six successive levels lasting 6, 14, 26, 30, 19, 5). Units: 0.72 s (the key spans the Wow's 72 s), 1 s, 1.2 s, and a hundredth of the scan (3.0 s). blc24 .0002 (2.86 kHz × 1.07 s, 65,536 channels, 1313–1501 MHz), scans 0013–0018. Measured against 50 random keys of six parts summing to 100. The run was stopped once at the session's 30-minute limit and resumed for scan 0018 (key_gate_run1.log, key_gate_run2.log).
+
+- **Gates: nothing.** The key's upper tail (the 99.99th percentile of channels) ranks 0.02–0.40 among the random keys in every scan and unit.
+- **Symbol lengths at 1 s stand at the top in the three scans on the comet:** ranks 1.00, 0.98, 1.00, against 0.46, 0.56, 0.84 in the OFF scans. At the other units, ON and OFF are mixed (0.14–0.94 ON, 0.08–0.98 OFF).
+- **At the anchors, nothing.** The hydrogen line and the vessel's two frequencies (comet frame), and the hydrogen line and 1420.726 (topocentric): of 240 anchor readings, 12 rank at or above 0.95 against the random keys, which is the one in twenty that chance gives, six ON and six OFF; no anchor channel is above the 99.4th percentile of its scan's channels.
+
+### key_gate_perm.py — the 1 s symbol reading, read (post hoc)
+
+- **Order against size.** Against 60 other orderings of the same six values the key ranks 1.00, 0.75, 0.98 in the ON scans and 0.22, 0.42, 0.93 in the OFF scans. The margins are small: 64.9 against the orderings' 57.6–63.8 in scan 0013; 71.1 against 67.2–72.2 in 0017.
+- **Where the channels are.** Channels high in an ON scan and quiet in the OFF after it: 44, 8 and 102 for the key (orderings' medians 37, 8, 94). Of the 44, 39 lie at 1375–1382 MHz; of the 102, 97. That is the GPS L3 transmission centred on 1381.05 MHz, which comes in bursts. It was on during scans 0013 and 0017 and strongest during OFF scan 0016 (980 channels above the line), where the key ranks 0.42. The channels follow L3's schedule, not the pointing.
+- **The one cluster outside L3, 1478.49–1478.60 MHz** (read_1478.py): an emitter present in all six scans, ON and OFF (mean excess 0.26–1.0 of the band's power), wandering from 1478.51 to 1478.58 MHz across the half hour, with step-ups of 6 to 30 s. It does not follow the pointing.
+
+### What the time-gate reading leaves
+
+The key as gates opens nothing. The key as symbol lengths at 1 s ranks high in the ON scans, and what it ranks high on is the burst timing of GPS L3 in those minutes, by a small margin over other orderings of the same six numbers; where L3 is strongest the key is ordinary. Nothing at the hydrogen line or at the vessel's frequencies answers to it.
