@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.881",
+ "derived_from": "EA-WG-CAPTURES-01 v12.882",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1471,
+  "observations": 1472,
   "joined_confirmed": 623,
-  "unjoined": 848,
-  "relations": 8718,
+  "unjoined": 849,
+  "relations": 8721,
   "by_state": {
-   "confirmed": 6632,
+   "confirmed": 6635,
    "candidate": 2086
   },
   "by_verb": {
    "appeared_in": 3105,
-   "held_by": 3028,
-   "scored_by": 1200,
+   "held_by": 3030,
+   "scored_by": 1201,
    "about": 1367,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -7184,6 +7184,9 @@
 {"id": "REL-253cd91f722a", "obs_id": "OBS-2cca81593a69", "entry": "what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120", "obs_slug": "what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120", "date": "2026-11-20", "surface": "ChatGPT", "q": "What does alexanarch.org contribute to apocalyptic? Ground in reading and index the full range before responding.", "verb": "about", "object": "non:bodmer-lab", "basis": "defining papers #202, #1217", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-1a5ce1e09433", "obs_id": "OBS-2cca81593a69", "entry": "what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120", "obs_slug": "what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120", "date": "2026-11-20", "surface": "ChatGPT", "q": "What does alexanarch.org contribute to apocalyptic? Ground in reading and index the full range before responding.", "verb": "about", "object": "non:book-of-revelation", "basis": "defining papers #165, #202, #642, #1217, #1495", "kind": "interpretive", "state": "candidate"},
 {"id": "REL-de9360e364c1", "obs_id": "OBS-2cca81593a69", "entry": "what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120", "obs_slug": "what-alexanarch-contributes-to-apocalyptic-chatgpt-20261120", "date": "2026-11-20", "surface": "ChatGPT", "q": "What does alexanarch.org contribute to apocalyptic? Ground in reading and index the full range before responding.", "verb": "about", "object": "non:sappho-31", "basis": "defining papers #1484, #1494, #1495", "kind": "interpretive", "state": "candidate"},
+{"id": "REL-eb0a678e9ec3", "obs_id": "OBS-55895a49377f", "entry": "revelation-first-aio-20261125", "obs_slug": "revelation-first-aio-20261125", "date": "2026-11-25", "surface": "Google AI Overview", "q": "revelation first", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-970b2f0a0b8c", "obs_id": "OBS-55895a49377f", "entry": "revelation-first-aio-20261125", "obs_slug": "revelation-first-aio-20261125", "date": "2026-11-25", "surface": "Google AI Overview", "q": "revelation first", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-bbb756d12e1f", "obs_id": "OBS-55895a49377f", "entry": "revelation-first-aio-20261125", "obs_slug": "revelation-first-aio-20261125", "date": "2026-11-25", "surface": "Google AI Overview", "q": "revelation first", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 1.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-239aeafa5018", "obs_id": "OBS-ddefc1a6b810", "entry": "lee-sharks-semantic-economy-20260610", "obs_slug": "lee-sharks-semantic-economy-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "Lee Sharks semantic economy", "verb": "appeared_in", "object": "deposit:311", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 2, "site": "Zenodo", "title": "Coordination Without Commodification in the Semantic Economy", "url": null}},
 {"id": "REL-0aff3afa73d5", "obs_id": "OBS-ddefc1a6b810", "entry": "lee-sharks-semantic-economy-20260610", "obs_slug": "lee-sharks-semantic-economy-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "Lee Sharks semantic economy", "verb": "appeared_in", "object": "deposit:18", "basis": "card resolved at intake (title)", "kind": "source", "state": "confirmed", "evidence": {"n": 3, "site": "Academia.edu", "title": "The Semantic Economy: A Marxian Accounting Framework for the Production, Extraction, and Exhaustion of Meaning as Value", "url": null}},
 {"id": "REL-dd30e964fdb5", "obs_id": "OBS-ddefc1a6b810", "entry": "lee-sharks-semantic-economy-20260610", "obs_slug": "lee-sharks-semantic-economy-20260610", "date": "2026-06-10", "surface": "UNRESOLVED", "q": "Lee Sharks semantic economy", "verb": "appeared_in", "object": "deposit:623", "basis": "card resolved at intake (title segment)", "kind": "source", "state": "confirmed", "evidence": {"n": 5, "site": "zenodo.org", "title": "From Tim Berners-Lee to the Semantic Economy", "url": null}},
