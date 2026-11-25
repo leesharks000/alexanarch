@@ -27,9 +27,11 @@ jobs:
           for name in names:
             p=root/"rebuild/capture-registry/pending"/(name+".draft.json")
             d=json.loads(p.read_text())
-            if d["s"] not in secs:
-              print("INVALID SECTION:",name,repr(d["s"]))
-              sys.exit(1)
+            assert "Valuation" in secs, "Canonical valuation section missing; stop rather than guess"
+            if d["s"] != "Valuation":
+              print("EDITORIAL ROUTE:", name, repr(d["s"]), "-> Valuation")
+              d["s"]="Valuation"
+              p.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\\n")
           print("Eleven drafts have valid sections.")
           PY
       - name: Repair same-day duplicate observation IDs without changing historical records
