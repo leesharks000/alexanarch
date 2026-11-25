@@ -1,0 +1,3 @@
+# PLAN-WOW3, amendment 1 (2026-11-25 ~02:25 UTC)
+
+R2's run stopped at its third coarse channel with an indexing error, after the 1720 and 1612 groups had been read. The target OH 1665 at 10.51 km/s (1665.460 MHz) sits 67 kHz below the top edge of blc23 coarse channel 55, and its ±60 kHz peak-reading window, tracked in the comet frame, runs off the channel. Change: the peak-reading window is clipped to what the coarse channel holds on both sides of the target (the ±5 kHz band and the ON/OFF contrast are unchanged). Nothing else changes: same targets, same controls, same seeds per group. The two groups already read stand as read. Code: r2_r6_lines_a1.py, which reads the remaining groups (channels 55 and 56) and R6.

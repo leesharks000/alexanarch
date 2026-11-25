@@ -1,0 +1,40 @@
+blc22 1720.918 0013 (49, 1048576) 28s
+blc22 1720.918 0014 (49, 1048576) 27s
+blc22 1720.918 0015 (49, 1048576) 31s
+blc22 1720.918 0016 (49, 1048576) 35s
+blc22 1720.918 0017 (49, 1048576) 29s
+blc22 1720.918 0018 (49, 1048576) 41s
+OH1720_v67.54 1720.91761 contrast 0.0375 rank 0.655 {'0013': 1.2, '0014': 1.0, '0015': 1.0, '0016': 1.1, '0017': 1.0, '0018': 1.1}
+OH1720_v10.51 1720.59032 contrast 0.0373 rank 0.495 {'0013': 3.2, '0014': 3.6, '0015': 3.9, '0016': 3.5, '0017': 3.8, '0018': 3.7}
+blc23 1612.594 0013 (49, 1048576) 43s
+blc23 1612.594 0014 (49, 1048576) 30s
+blc23 1612.594 0015 (49, 1048576) 35s
+blc23 1612.594 0016 (49, 1048576) 30s
+blc23 1612.594 0017 (49, 1048576) 37s
+blc23 1612.594 0018 (49, 1048576) 40s
+OH1612_v67.54 1612.59422 contrast 0.0366 rank 0.980 {'0013': 0.8, '0014': 0.7, '0015': 0.6, '0016': 0.8, '0017': 0.7, '0018': 0.6}
+OH1612_v10.51 1612.28753 contrast 0.0351 rank 0.200 {'0013': 3.6, '0014': 3.8, '0015': 4.1, '0016': 3.4, '0017': 3.8, '0018': 4.0}
+blc23 1665.460 0013 (49, 1048576) 46s
+blc23 1665.460 0014 (49, 1048576) 47s
+blc23 1665.460 0015 (49, 1048576) 55s
+blc23 1665.460 0016 (49, 1048576) 47s
+blc23 1665.460 0017 (49, 1048576) 40s
+blc23 1665.460 0018 (49, 1048576) 46s
+Traceback (most recent call last):
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/wow3/r2_r6_lines.py", line 115, in <module>
+    main()
+    ~~~~^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/wow3/r2_r6_lines.py", line 104, in main
+    R2.append(run(node, f0, tg, VCOM, list(T.values()) + list(OH.values()), 16122310 + i, lambda f: 5e-3 * f / H))
+              ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/wow3/r2_r6_lines.py", line 83, in run
+    for k, f in targets.items(): res[k] = one(f, True)
+                                          ~~~^^^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/wow3/r2_r6_lines.py", line 71, in one
+    for sc, (_, x, fq, t) in data.items(): P[sc], A[sc], nb = tracked(x, fq, t, f, vel, half)
+                                                              ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/alexanarch/rebuild/3i-atlas-signal-search/claude/wow3/r2_r6_lines.py", line 54, in tracked
+    c = int(round((f_rest * (1 - vel(t[k]) / C) - freqs[0]) / foff)); acc += x[k, c - nw:c + nw + 1]
+                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: operands could not be broadcast together with shapes (42951,) (0,) (42951,) 
+DONE
