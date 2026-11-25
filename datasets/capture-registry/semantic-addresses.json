@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-25T23:44:53Z",
+  "regenerated_at": "2026-11-25T23:55:11Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "b9e0bf618779f2bac0e240b5181a1c0629894d9c26ca46a10f07df960152d5ae",
+    "mm-main-capture": "b354586997c49985cca5141216f6d7f913e386e29b63cddb5c4b3179613306fa",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2981,
-  "total_observations": 1590,
+  "total_addresses": 2982,
+  "total_observations": 1591,
   "class_counts": {
     "subjunctive": 1735,
-    "observed_address": 1229,
+    "observed_address": 1230,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2101,
+    "unmatched": 2102,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -59597,6 +59597,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-11-06",
       "latest_status": "'Q SOURCE EVIDENCE' ON THE OVERVIEW — THE CIRCLE STATED BY THE COMPOSITION ITSELF: 'EVERY WORD OF Q IS A MODERN SCHOLARLY RECONSTRUCTION'; THE EVIDENCE FOR Q THE RELATIONS OF EXTANT GOSPELS"
+    },
+    "q-sharks reconstructed source": {
+      "canonical_query": "q-sharks reconstructed source",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-25",
+          "status": "Q-SHARKS RECONSTRUCTED SOURCE ON GOOGLE AI OVERVIEW — THE REDUCTIO'S LOST SOURCE COMPOSED AS A REDUCTIO, FROM THE DEPOSIT ITSELF; THE TESTIMONIUM SHARKIANUM BY NAME; THE SOURCE DATED BY THE COMPILATION IT EXPLAINS; THE ESSAY WITHOUT ITS AUTHOR",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Classics & Philology",
+          "slug": "q-sharks-reconstructed-source-aio-20261125",
+          "gallery_url": "https://www.alexanarch.org/captures/#q-sharks-reconstructed-source-aio-20261125",
+          "record_url": "https://www.alexanarch.org/captures/q-sharks-reconstructed-source-aio-20261125/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#q-sharks-reconstructed-source-aio-20261125",
+          "details_excerpt": "Q-SHARKS RECONSTRUCTED SOURCE, UNQUOTED, ON GOOGLE AI OVERVIEW (EXPANDED), SIGNED OUT, INCOGNITO, 2026-11-25 18:52 EST: 'a conceptual, hypothesized textual or historical source posited by scholars in a piece of literary "
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Q-Sharks, the reconstructed source of §5 of Either Forgery or Fact (#1797, v1.1; #1798, v1.2, current), the reductio 'the search for the historical Lee Sharks'; Lee Sharks. Recorded 2026-11-25."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-25",
+      "latest_status": "Q-SHARKS RECONSTRUCTED SOURCE ON GOOGLE AI OVERVIEW — THE REDUCTIO'S LOST SOURCE COMPOSED AS A REDUCTIO, FROM THE DEPOSIT ITSELF; THE TESTIMONIUM SHARKIANUM BY NAME; THE SOURCE DATED BY THE COMPILATION IT EXPLAINS; THE ESSAY WITHOUT ITS AUTHOR"
     },
     "query fan-out": {
       "canonical_query": "query fan-out",
