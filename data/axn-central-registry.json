@@ -1,6 +1,6 @@
 {
  "description": "Central AXN registry: every allocated position across all mint routes, position- and kernel-keyed.",
- "generated": "2026-11-25T20:46:59Z",
+ "generated": "2026-11-25T20:57:52Z",
  "positions_count": 3420,
  "symbolon_entries": 84,
  "non_entries": 150,
@@ -27587,7 +27587,8 @@
     "AXN:0A39.RELEASE.🟣🧬💚🥁🖊️🔜",
     "AXN:0A39.RELEASE.♃🌻🪦■↗️△",
     "AXN:0A39.RELEASE.🔍🌟♌☀️🏁□",
-    "AXN:0A39.RELEASE.🔺🌓🝊💧🔥🔬"
+    "AXN:0A39.RELEASE.🔺🌓🝊💧🔥🔬",
+    "AXN:0A39.RELEASE.🟣🐚◀️🟢❌🌱"
    ]
   },
   "0A3A": {
@@ -37964,12 +37965,15 @@
    "status": "deposited"
   },
   "0D7C": {
-   "axn": "AXN:0D7C.GENERATIVE.⏩🥁🎭⏏️🌟💫",
+   "axn": "AXN:0D7C.GENERATIVE.🔬⭕🌘🔚🕔🪧",
    "source": "deposit",
    "deposit_number": 1810,
    "title": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol",
    "record": "/s/records/1810/",
-   "status": "deposited"
+   "status": "deposited",
+   "prior": [
+    "AXN:0D7C.GENERATIVE.⏩🥁🎭⏏️🌟💫"
+   ]
   },
   "0D7D": {
    "axn": "AXN:0D7D.CAPTURE",
@@ -38012,7 +38016,7 @@
    "q": "What are the arguments in “How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol” by Rex Fraction (Alexanarch deposit #1810, AXN:0D7C)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1810/",
    "allocated": "2026-11-25",
    "observations": {
-    "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125": "AXN:0D80.CAPTURE.🌒☀️■🖊️🏛️☁️"
+    "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125": "AXN:0D80.CAPTURE.🛡️🔀🪟🟣🪄🌱"
    }
   }
  },
@@ -57236,13 +57240,18 @@
    "status": "deposited"
   },
   "d68c84f8090a07d1e770b6080645d8bdfb7380aa4c0e166d84d30cdda06dbddb": {
-   "role": "axn0",
-   "axn": "AXN:0D7C.GENERATIVE.⏩🥁🎭⏏️🌟💫",
+   "role": "axn0-prior",
+   "prior_axn": "AXN:0D7C.GENERATIVE.⏩🥁🎭⏏️🌟💫",
+   "until": "2026-11-25",
+   "axn": "AXN:0D7C.GENERATIVE.🔬⭕🌘🔚🕔🪧",
    "source": "deposit",
    "deposit_number": 1810,
    "title": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol",
    "record": "/s/records/1810/",
-   "status": "deposited"
+   "status": "deposited",
+   "prior": [
+    "AXN:0D7C.GENERATIVE.⏩🥁🎭⏏️🌟💫"
+   ]
   },
   "0774fb88283951c08435b9a47a9404202a5b55e9b1b4ac897f3d71f3224090db": {
    "role": "axn0",
@@ -69508,15 +69517,23 @@
    "date": "2026-10-16",
    "surface": "Google AI Overview"
   },
-  "010b9e44201feacecc8df90d2f11613c01febf080c4c16341ee7e0194a110cd5": {
+  "2ddf25c63e191c6efdb822f4cf968583bf46ac3bdacfdd93ba8696f7467304f2": {
    "role": "capture-observation",
-   "axn": "AXN:0D80.CAPTURE.🌒☀️■🖊️🏛️☁️",
+   "axn": "AXN:0D80.CAPTURE.🛡️🔀🪟🟣🪄🌱",
    "root": "AXN:0D80.CAPTURE",
    "source": "capture",
    "observation": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125",
    "sealed": "/data/captures/sealed/how-much-you-wanna-bet-1810-arguments-chatgpt-20261125.json",
    "date": "2026-11-25",
    "surface": "ChatGPT"
+  },
+  "010b9e44201feacecc8df90d2f11613c01febf080c4c16341ee7e0194a110cd5": {
+   "role": "earlier version",
+   "axn": "AXN:0D80.CAPTURE.🌒☀️■🖊️🏛️☁️",
+   "root": "AXN:0D80.CAPTURE",
+   "source": "capture",
+   "observation": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125",
+   "until": "2026-11-25"
   },
   "41905782547571544de972de6e81d3ef3a47816e0e263edba42e2fdfffef75c5": {
    "role": "capture-observation",
@@ -85185,6 +85202,16 @@
    "label": "12.884",
    "basis": "manifest",
    "manifest": "/data/releases/manifests/capture-registry/12.884.sha256"
+  },
+  "c67ad2c4ef197ea3327462a7d987b2c8ec891d2e67a3f4cec3537cbd6fac5764": {
+   "role": "release",
+   "axn": "AXN:0A39.RELEASE.🟣🐚◀️🟢❌🌱",
+   "root": "AXN:0A39.RELEASE",
+   "source": "release",
+   "object": "capture-registry",
+   "label": "12.884+2026-11-25",
+   "basis": "manifest",
+   "manifest": "/data/releases/manifests/capture-registry/12.884+2026-11-25.sha256"
   },
   "d522f0a689f1353ba899def27376c198827452d879b45fe0bc5f1f71275e67a9": {
    "role": "release",

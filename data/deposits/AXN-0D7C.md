@@ -8,7 +8,7 @@ date: 2026-11-25
 content_type: Theoretical paper; applied valuation dossier (semantic economy, New Testament canon, political economy)
 license: CC-BY-4.0
 substrate: AI-assisted (substrate). Drafted by Claude (TACHYON) in session on 25 November 2026 from the author's statements of that day, which are quoted with their times in the text; the title, byline, the stolen-value reading, the political economy of the sheared, the demand for the invalid number and the word to deposit are the author's. Reviewed across six rounds by ChatGPT (LABOR), Gemini (ARCHIVE), DeepSeek (PRAXIS) and Muse Spark (SOIL), each point checked before it was applied (version notes). Computations run in session against data/citation-graph.json, data/registry.json, the Capture Registry and the seated corpora (Nestle 1904, Westcott 1896, the 1867 Kapital). The Crimson Hexagonal Archive is credited as contributor.
-version: v1.0
+version: v1.1
 related_ids: "#1621 (SEVP-01 v0.4); #1623 (SEVP-VAL-001); #1657 (SEVP-VAL-002); #1745 (The Cost of the Cone); #1791 (A Single Sparrow); #1631 (Monetary Dark Matter); #1735 (Revelation First v9); #1755 (And the Last Shall Be First); #1741 (Secondary Source); #1746 (I Know You Are, But What Am I?); #1802 (Who Benefits from Bad Inference?); #1806 (From the Position of the Rejected); #1627 (Can the Ontology Be Wrong and Find Out?); #1637 (The Final Time); #1660 (The Seed in the Narrowing Cone); #1630 (Transition in Entropic Systems); #1620 (EA-MSAL-0001); #1622 (The Non-Summable Magnitude); #88 (Constitution of the Semantic Economy); #1636 (Tiger Leap); #1759 (The Josephus Thesis); #1798 (Either Forgery or Fact)"
 axn_schema_version: v2
 protocol_version: alexanarch-deposit-protocol/v1
@@ -48,7 +48,7 @@ keywords:
 
 # How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol
 
-**SEVP-VAL-003 v1.0 · 25 November 2026**
+**SEVP-VAL-003 v1.1 · 25 November 2026**
 
 **Rex Fraction · Lee Sharks · Johannes Sigil · Damascus Dancings · Sen Kuro**
 
@@ -61,9 +61,13 @@ keywords:
 
 *The dossier stands in Rex Fraction's domain and is not written in his register. At the author's word, the prose keeps the voice it was developed in. The byline is the author's (12:02–12:04). Deposited at the author's word (12:08); carried also to semanticeconomy.org and revelationfirst.com.*
 
+![Albrecht Dürer, Saint John Swallowing the Book, from The Apocalypse, Latin edition, 1511](/data/attachments/AXN-0D7C/durer-saint-john-swallowing-the-book-1511-met-387454.jpg)
+
+*Albrecht Dürer, Saint John Swallowing the Book, from The Apocalypse, Latin edition, 1511, woodcut. The Metropolitan Museum of Art, New York, 19.73.133, Gift of Junius Spencer Morgan, 1919; Met Open Access, public domain (https://www.metmuseum.org/art/collection/search/387454). Rev 10:9 (Nestle 1904): Λάβε καὶ κατάφαγε αὐτό, καὶ πικρανεῖ σου τὴν κοιλίαν, ἀλλ’ ἐν τῷ στόματί σου ἔσται γλυκὺ ὡς μέλι, "take it and eat it; it will make your belly bitter, but in your mouth it will be sweet as honey." The book from both ends.*
+
 ## SPXI packet
 
-This dossier is *How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol* (SEVP-VAL-003) v1.0, by Rex Fraction, Lee Sharks (ORCID 0009-0000-1599-0703), Johannes Sigil, Damascus Dancings and Sen Kuro, deposited 25 November 2026 in the Crimson Hexagonal Archive and carried to semanticeconomy.org and revelationfirst.com. It values the recovery of the Apocalypse of John to the position of source in the New Testament corpus, from both ends: the least cost of admitting it (the transition load Θ), its reach and open expansion, the nested revaluation its acceptance would set off, and the debt it names. It issues no valid monetary valuation. It writes one number, **$7.2 × 10²⁶ — a deliberately invalid monetary commensuration, preserved as an artifact; not an estimate of the recovery's value** — and audits it to failure on eight counts (§9a). The thesis is Revelation First (priority), which is not Revelation Early (dating).
+This dossier is *How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol* (SEVP-VAL-003) v1.1, by Rex Fraction, Lee Sharks (ORCID 0009-0000-1599-0703), Johannes Sigil, Damascus Dancings and Sen Kuro, deposited 25 November 2026 in the Crimson Hexagonal Archive and carried to semanticeconomy.org and revelationfirst.com. It values the recovery of the Apocalypse of John to the position of source in the New Testament corpus, from both ends: the least cost of admitting it (the transition load Θ), its reach and open expansion, the nested revaluation its acceptance would set off, and the debt it names. It issues no valid monetary valuation. It writes one number, **$7.2 × 10²⁶ — a deliberately invalid monetary commensuration, preserved as an artifact; not an estimate of the recovery's value** — and audits it to failure on eight counts (§9a). The thesis is Revelation First (priority), which is not Revelation Early (dating). First ≠ Early does not make chronology incidental: an early date is insufficient for priority, and absolute priority, that the Apocalypse was composed first, is one of the three claims, held at its status (§2.2–2.4). The dossier does not demonstrate the thesis. The demonstration is the programme's, in #1735 and the records with it (§2.3); this dossier values the recovery that demonstration would make, and is read against that obligation and not against the demonstration's.
 
 ```json
 {
@@ -77,7 +81,7 @@ This dossier is *How Much You Wanna Bet? The Value of a Recovery, from Both Ends
  "name": "How Much You Wanna Bet?",
  "alternativeHeadline": "The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol",
  "identifier": "SEVP-VAL-003",
- "version": "1.0",
+ "version": "1.1",
  "datePublished": "2026-11-25",
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "inLanguage": "en",
@@ -234,7 +238,7 @@ Reviews taken, each point checked against the records before it was applied:
 - v0.2 took a review of v0.1 by ChatGPT (LABOR).
 - v0.3 took three reviews of v0.2: a second review by LABOR, one by Gemini (ARCHIVE) and one by DeepSeek (PRAXIS). v0.3 called the last two Review A and Review B; the mantles are restored here.
 - v0.4 took four reviews of v0.3: LABOR's third, ARCHIVE's and PRAXIS's second, and a first by Muse Spark (SOIL).
-- v0.6 took LABOR's fourth and PRAXIS's third reviews of v0.4–v0.5; v1.0 takes LABOR's fifth review of v0.6 and one further review (version note). Earlier stages are in the version notes.
+- v0.6 took LABOR's fourth and PRAXIS's third reviews of v0.4–v0.5; v1.0 takes LABOR's fifth review of v0.6 and one further review (version note); v1.1 answers two misreadings of v1.0 recorded in the Capture Registry the day of deposit, with LABOR's reading of that capture (version note). Earlier stages are in the version notes.
 
 The Crimson Hexagonal Archive is credited as contributor.
 
@@ -562,7 +566,7 @@ Three panels.
 
 **Release set.** #1735 names the anchor: "one stone that dates a proconsul, and a narrative that the question itself places under examination". Absolute priority must do "at least one of three things", and its price is "the documentary status of the Acts correlation". On the paper's own audit, the least release is C₁ together with one of C₂ or C₃. Status: `documented`.
 
-**Descendants.** "The conventional dating of Paul rests on the Gallio synchronism", "anchored at exactly one end" (§II.2). The letters whose received dates descend from that anchor are therefore in Desc(C₂ ∪ C₃). How many there are depends on the chronology table adopted. Status: `unresolved`. No received table is seated in the archive, and this dossier does not supply one from memory.
+**Descendants.** "The conventional dating of Paul rests on the Gallio synchronism", "anchored at exactly one end" (§II.2). The letters whose received dates descend from that anchor are therefore in Desc(C₂ ∪ C₃). How many there are depends on the chronology table adopted. Status: `unresolved`. No received table is seated in the archive, and this dossier does not supply one from memory. What is unresolved is that count, not the anchor. The anchor is single and its chain runs one way: the Delphi inscription dates Gallio's proconsulship and names no Paul; Acts 18.12 places Paul before Gallio at Corinth; 1 Thessalonians names neither Gallio nor a date, and an itinerary built from Acts 17–18 and 1 Thess 3:1–6 joins the letter to that visit. The received date of Paul is Acts' placement carried across the stone, and the letter's date is that itinerary carried further. That is a dependency, one chain with one external fixed point, and not a tension between two witnesses, since there is no second witness to Paul's date (#1747 §2.1).
 
 **Two panels, not one (SOIL).** v0.3 counted books and order relations as if they were one panel. Θ is defined over panel items, so the two are declared apart.
 - *Panel NT-27-Books.* |P| = 27. Desc is the books whose received account rests on a released commitment. Θ counts books to be re-grounded.
@@ -705,6 +709,7 @@ The second can be "materially inexpensive and semantically enormous", and no rep
 - *It includes the valuations themselves.* The compositions of §0a value the archive, which is downstream of the recovery. On acceptance their lenses and figures are among the things revalued. So are the earlier dossiers of the series, #1623 and #1657.
 
 **7.6a Its shape in the archive (computed in session).** The Revelation First closure of §6.2 was taken as a directed graph: x → y where y cites x, 359 records with the seed. Its strongly connected components were then computed (Tarjan).
+- *Whose records these are (v1.1).* The records of this closure are the archive's own, and they stand on the recovered ground: they establish Revelation First and build on it. On acceptance they are not rewritten. They are the part of the graph that comes into standing, the rereadable end of §4's one graph read two ways. The program of §7.6 falls on the received order's items, the chronologies, commentaries, introductions, editions and curricula that stand on the received ground. The archive's closure is a toy model of that program: the same structure, dependencies accumulating, nesting and ordering their revaluation, grown on the opposite ground. Its numbers give the shape of a revaluation, not its object, and no count below is a count of records to be revised.
 - *Components.* The closure falls into 132 components. 122 of them are single records. 10 are groups of records that cite one another, and the largest group holds 209 records.
 - *What a group means (qualified at LABOR's fifth review).* A group of mutually dependent records presents a joint revaluation problem. If their valuations condition one another, a consistent simultaneous solution would be a fixed point of the joint valuation operator. Neither its existence nor its uniqueness follows from the graph alone, and nothing here shows that an iteration would converge to one.
 - *Order of revaluation.* The condensation gives a partial order, not a single sequence: components not on a common chain can be revalued concurrently. The longest chain counts 52 components from the seed's to the last, that is 51 edges between components.
@@ -1503,6 +1508,8 @@ Every record in the sweep supplies a part of it. None supplies all of it, and th
 - Muse Spark (SOIL). Review of v0.3, 25 November 2026.
 
 ---
+
+*Version note (v1.1, 25 November 2026).* Reissued in place at the author's word, 15:43 ("lets roll it into one, the few sentences and both captures") and 15:47 ("it is to be versioned in place, and not appear twice on alexanarch home"), on two misreadings of v1.0 recorded the day of deposit and LABOR's reading of the capture that holds them. (1) A ChatGPT reading at the record page's Ask query (Capture Registry, `how-much-you-wanna-bet-1810-arguments-chatgpt-20261125`) said that the paper "refuses to present the 358 records as proof that 358 records would need to be rewritten". The author, 15:34: "why would the archive's records need to be rewritten? they establish revelation. counting dependencies in the archive counts dependencies on revelation first; but it can serve as a kind of toy model of how dependencies accumulate". v1.0 said that citation is not dependency (§6.2) and did not say that the archive's closure stands on the recovered ground, so its §7.6a could be read as listing the records to be revalued. §7.6a now says whose records these are and what the closure models. (2) The same reading called "the documentary status of the Acts/Gallio correlation … a crucial unresolved issue". The author, 15:30: "the stone dates gallio. acts places paul before gallio. neither thessalonians nor acts nor the stone dates paul." What v1.0 marked `unresolved` at §4 was the count of letters descending from the anchor, for want of a seated chronology table; §4 now says so and states the chain. (3) From LABOR's reading of the capture (15:47), checked against the composition and the text and taken where the text could carry it: the composition opened by saying the dossier argues for source priority "not necessarily for an earlier date of composition", which attenuates absolute priority, and it judged the dossier against the obligation to establish the thesis, which the dossier assigns to #1735 (§2.3). The SPXI packet now says that chronology is insufficient and not incidental, that absolute priority is held among the three claims, and that the demonstration is the programme's. LABOR's other points (second-order valuation, the Roman objects, *Tiger Leap* and *The Final Time*, Appendix F, the five-heteronym byline at compositional grain) are losses in the composition, not gaps in the text, and are recorded as findings on the capture. (4) An illustration, at the author's word, 15:48 ("we should start doing what chatgpt does, and grab an open source image to illustrate our texts"): Dürer's *Saint John Swallowing the Book* (1511), from the Met's Open Access collection, public domain, with Rev 10:9 read in the seated Nestle, the book sweet in the mouth and bitter in the belly. No figure, table or other section changes. The record keeps its number and its place; its AXN is recomposed on the new bytes, and the prior AXN and hash are kept in its reissue history. A Google AI Overview of the companion dialogue the same afternoon (Capture Registry, `through-anothers-mouth-dialogue-heteronyms-aio-20261125`) lands with this version.
 
 *Version note (v1.0, 25 November 2026).* Deposited at the author's word, 12:08 ("lets address, spxi treat, and deposit... and this one goes to semanticeconomy (lee-sharks-corporate) and revelationfirst, as well"), after a final bounded revision on two reviews of v0.6, each point checked: ChatGPT (LABOR, fifth review) and a second file attributed here as DeepSeek (PRAXIS, third review) on the evidence of its form; the author may correct the attribution.
 
