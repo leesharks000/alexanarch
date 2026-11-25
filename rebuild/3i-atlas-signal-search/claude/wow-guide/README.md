@@ -73,3 +73,22 @@ The vessel's frequency, taken through the 1977 range-rate, holds nothing recogni
 ### What the time-gate reading leaves
 
 The key as gates opens nothing. The key as symbol lengths at 1 s ranks high in the ON scans, and what it ranks high on is the burst timing of GPS L3 in those minutes, by a small margin over other orderings of the same six numbers; where L3 is strongest the key is ordinary. Nothing at the hydrogen line or at the vessel's frequencies answers to it.
+
+## key_perm.py — the six values as a permutation (2026-11-24, 23:42 EST: "yup, lets run the permutation reading")
+
+6, 14, 26, 30, 19, 5 ranked by size are 2, 3, 5, 6, 4, 1: an order for six things. Read as a transposition key, the stream was scrambled in blocks of six and the key puts each block back. Both conventions are read: **S** = (2, 3, 5, 6, 4, 1), take the block's slots in that order, and its inverse **S⁻¹** = (6, 1, 2, 5, 3, 4). **P1, in time:** blocks of six successive steps of each channel (steps of 1.07 s, 6.4 s, and 11.8 s, Big Ear's step). **P2, in frequency:** blocks of six adjacent channels of each scan's mean spectrum. A right key would make the stream more orderly than it is as recorded; order is the correlation of each sample with the next after re-ordering, at every block alignment. The measure is exhaustive: all 720 orders of six, the recorded order among them. Data: blc24 .0002 (65,536 channels), scans 0013–0018, and look1's fine-resolution windows at the vessel's two frequencies.
+
+- **No channel is put in order by the key.** Channels made orderly (z ≥ 5) under S and S⁻¹ number what any order gives (scan 0013 at 1.07 s: 198 and 204, the 720 orders' median 198, the recorded order 187); ranks 0.42–0.83, in ON and OFF alike, with one 0.06.
+- **No channel is lifted above its recorded order in all three ON scans,** under either key, at any step. Scan 0017 has 12 lifted under S, which is the median of all orders there; eleven are one emitter at 1373.87–1373.90 MHz that any re-ordering lifts.
+- **In frequency the recorded order is the most orderly of all 720 in every scan** (z 190–200; S 183–192, S⁻¹ 181–189, ranks 0.60–0.68 and 0.23–0.33). The spectrum is not scrambled in sixes.
+- **At the anchors, nothing.** P1: 10 of 180 readings rank at or above 0.95 where chance gives 9, the largest z 3.5, none at the same anchor in two ON scans. P2: no anchor window ranks above 0.76.
+- **At fine resolution (2.79 Hz, the vessel's frequencies):** no column made orderly by any order; along frequency S ranks 0.27–0.88 and S⁻¹ 0.01–0.99, the two highest (0.99, 0.96) at Ehman's frequency in OFF 0014 and ON 0015.
+- **A property of the key itself:** averaged over the whole band S ranks about 0.75 and S⁻¹ about 0.87 in every scan, ON and OFF, coarse and fine. S keeps slots 2–3 and 5–6 side by side, as the recorded order has them, and the receiver's noise has a slight correlation from one step to the next; any order that keeps neighbours together inherits it.
+
+### What the permutation reading leaves
+
+The key as a transposition restores nothing: the data are most orderly as recorded.
+
+## Where the key readings stand
+
+Hop sequence, time gates, symbol lengths, transposition: each run over the 1420 MHz node with its random or exhaustive measure, none opening anything at the hydrogen line or at the vessel's frequencies. Not run: the six values as a spreading code, which needs voltages at 1420 MHz (public raw voltages cover blc23 only, 1501–1688 MHz).
