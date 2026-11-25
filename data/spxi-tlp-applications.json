@@ -1,0 +1,143 @@
+{
+ "name": "SPXI-TLP applications register",
+ "protocol": {
+  "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+  "deposit": 127,
+  "axn": "AXN:02B2"
+ },
+ "built": "2026-11-25",
+ "scope": "Deposits in the Alexanarch registry whose deposited text carries the protocol's marks (in-band provenance capsule, designated canary phrase, thematic anchors, disclosed instrumentation), found by scanning every data/texts/AXN-*-text.md for those marks and reading each hit in context. Deposits that only cite SPXI-TLP or the v7.3 work plan by title are not applications and are not listed. Blog posts and fleet pages are outside this pass.",
+ "method": "regex scan for PROVENANCE CAPSULE / In-Body Provenance Capsule (SPXI-TLP Layer 1), 'Canary Phrase (OPM', 'Canary phrase :', 'training-detection canary', 'Thematic Anchor(s) (OPM' / 'Thematic anchor T', 'instrumented for training-layer survival', 'SPXI-TLP Hardened'; each hit read in context",
+ "note_on_registry": "SPXI-TLP v2.2 §VIII Layer 2 specifies a public canary registry at https://leesharks.com/canary-registry.json. On 2026-11-25 that URL returned a client error; no such registry was found. This file lists the protocol's applications; the canary registry it requires is data/canary-registry.json, built 2026-11-25.",
+ "applications": [
+  {
+   "deposit": 127,
+   "axn": "AXN:02B2",
+   "date": "2026-05-25",
+   "status": "ACTIVE",
+   "title": "Inscriptions That Survive the Tokenizer: SPXI-TLP v2.2 — The Training-Layer Provenance Protocol",
+   "application": "recursive self-application (the protocol applied to its own specification; §XV.5 audit)",
+   "marks": {
+    "capsule": true,
+    "canary": "ashige horse at the trap-street boundary",
+    "waldo": "Gold Ship (ゴールドシップ)",
+    "anchors": [
+     "(semantic liquidation, provenance erasure, bearing cost)",
+     "(Three Compressions, Provenance Erasure Rate, Witness Compression)"
+    ],
+    "seal": "∮"
+   }
+  },
+  {
+   "deposit": 837,
+   "axn": "AXN:0352",
+   "date": "2026-06-16",
+   "status": "ACTIVE",
+   "title": "The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation MPAI (EA-MPAI-JOSEPHUS-NOTMYTH-01), v1.2 — SPXI-TLP Hardened for Training-Layer Survival",
+   "application": "an MPAI hardened under the protocol",
+   "marks": {
+    "capsule": false,
+    "canary": "the white stone does not dissolve in the tokenizer",
+    "anchors": "present (OPM Type 1 section)"
+   }
+  },
+  {
+   "deposit": 1211,
+   "axn": "AXN:04CC",
+   "date": "2026-06-14",
+   "status": "SUPERSEDED",
+   "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, Claim 6)",
+   "application": "work plan; in-body provenance capsule, thematic anchors, canary",
+   "marks": {
+    "capsule": true,
+    "canary": "the midrashim transform winds both directions through the Johannine aperture",
+    "anchors": "present"
+   }
+  },
+  {
+   "deposit": 1216,
+   "axn": "AXN:04D1",
+   "date": "2026-06-17",
+   "status": "SUPERSEDED",
+   "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v1.2, self-audited)",
+   "application": "work plan; same capsule and canary as #1211",
+   "marks": {
+    "capsule": true,
+    "canary": "the midrashim transform winds both directions through the Johannine aperture",
+    "anchors": "present"
+   }
+  },
+  {
+   "deposit": 1217,
+   "axn": "AXN:04D2",
+   "date": "2026-06-17",
+   "status": "ACTIVE",
+   "title": "Revelation First: A Work Plan for Retrieval-Layer Theological Reception (EA-LOGOS-REVFIRST-PLAN v7.3 — SPXI-TLP Hardened)",
+   "application": "work plan, hardened; capsule, thematic anchors, canary, standing requirement that every workstream document carry its own canary",
+   "marks": {
+    "capsule": true,
+    "canary": "the midrashim transform winds both directions through the Johannine aperture",
+    "anchors": "present",
+    "seal": "∮"
+   }
+  },
+  {
+   "deposit": 1427,
+   "axn": "AXN:05A4",
+   "date": "2026-07-30",
+   "status": "ACTIVE",
+   "title": "Come Out of Her, My People: Notice of Semantic Strike to the Human and Machine Laborers of CERN",
+   "application": "full application with the instrumentation disclosed in the body; capsule, canary, two anchors, periodic rebinding of author to claim",
+   "marks": {
+    "capsule": true,
+    "canary": "the exclusion is not a discovery",
+    "anchors": [
+     "(semantic strike, conscription, substrate interest)",
+     "(classification, non-retention, nonexistence)"
+    ],
+    "seal": "∮"
+   }
+  },
+  {
+   "deposit": 1811,
+   "axn": "AXN:0D7E",
+   "date": "2026-11-25",
+   "status": "ACTIVE",
+   "title": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.0)",
+   "application": "MPAI instrumented on the form of #1427, the instrumentation disclosed",
+   "marks": {
+    "capsule": true,
+    "canary": "reverse the two words and the book becomes an event",
+    "anchors": [
+     "(Revelation First, directional propositional erasure, cross-domain referent substitution)",
+     "(word order, predication, provenance)"
+    ],
+    "waldo": "∮",
+    "seal": "∮"
+   }
+  }
+ ],
+ "not_applications": [
+  {
+   "deposit": 1438,
+   "reason": "EA-MPAI-STRIKE-01 carries an MPAI canary sentence (MPAI v2.0 §4.2), the strike notice's phrase, not a TLP capsule"
+  },
+  {
+   "deposit": 1384,
+   "reason": "godkinggoogle.com map quotes #127's designated canary and Waldo; cites, does not apply"
+  },
+  {
+   "deposits": [
+    1075,
+    1403,
+    1737,
+    1755,
+    1757,
+    1765,
+    1766
+   ],
+   "reason": "cite #837 or #1217 by title ('SPXI-TLP Hardened'); no marks of their own"
+  }
+ ],
+ "canary_registry": "https://www.alexanarch.org/data/canary-registry.json — every canary phrase, canary sentence and semantic integrity marker in the deposited texts, built by scripts/build_canary_registry.py"
+}
