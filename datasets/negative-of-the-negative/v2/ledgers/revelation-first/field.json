@@ -1,0 +1,1277 @@
+{
+ "row": "revelation-first",
+ "address": "revelation first",
+ "addresses": [
+  "revelation first",
+  "What is the significance of alexanarch's revelation first programme?",
+  "What is the Revelation First thesis?"
+ ],
+ "extracted": "2026-11-25",
+ "extractor": "Claude (Opus 5.5), subagent, 2026-11-25, one extractor (unaudited, §3.8)",
+ "rule": "v0.10 §3.5, source-neutral: opening or abstract, defined terms, headline claims, stated limits; quotes verbatim from the saved page texts (whitespace-normalised for the check; multi-part quotes joined by ' … ', each part checked); title-only cards quoted by their title as pasted",
+ "B_note": "The field in two pools (v0.10 §0.3, §3.1(a)). B_D: the cards of the entity's compositions at other addresses, the two field transcripts of 2026-11-13 (B1 revelationfirst.com, three chips and a link card; B2 alexanarch.org, a link card; B3 the Overview's two chips for www.alexanarch.org, fetched at #1217's record page, the organic result 1; B4, B5 image captions), and T's own chips (B6–B8, the homonym's). B_R: the site's own pages (B9–B11; B14 the ladder index, HTTP 404), the deposit the site names as its source (B12, #202's record), and Wikipedia's absence (B13). The sources behind the '+N' counts are not in the pastes.",
+ "lineage_note": "Lineages (§3.6): what it is; first, not early; the claim ladder; absolute priority and the gate; corpus priority; generative priority; the conditional extensions; grade and falsifiers; its prehistory; its author and records; neighbours and the reversed words; its reception by machines; its reception by reference works; unread cards; the substitute's cards.",
+ "pages": "saved text files under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/ (text only, scripts and styles stripped; raw responses not kept, their sha256 in sources/fetch-records.json)",
+ "field": [
+  {
+   "id": "B1",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "revelationfirst.com (the ChatGPT composition's chips 'revelationfirst.com +1', three times, and its link card 'Revelation First — Primary project: revelationfirst.com')",
+   "kind": "the thesis site's home page, https://www.revelationfirst.com/ (its colophon: surface_observed_at 2026-08-15, source_object_ids deposit #202); the chips' '+1' sources are not in the paste",
+   "role": "card of the field transcript revelation-first-thesis-what-is-chatgpt-20261113 (ChatGPT, 2026-11-13): three inline chips and one link card; fetched at the site's home page, the page the link card names",
+   "files": {
+    "B1-revelationfirst-home.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/B1-revelationfirst-home.txt",
+     "sha256": "469c1bb829097d9f0b909825c4886fe1f53fb331de2704eeff3db62cf3b4c276"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.revelationfirst.com/",
+      "at": "2026-11-25T21:20:47Z",
+      "http": 200,
+      "final_url": "https://www.revelationfirst.com/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "0e4522cefa07fbc1403364481a8a83792b2d0007d1acb3dafa3d924aa5ae878d",
+      "bytes": 61956,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.revelationfirst.com/",
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-thesis-what-is-chatgpt-20261113",
+     "card": "B1"
+    }
+   ],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B2",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "alexanarch.org (the ChatGPT composition's link card 'Crimson Hexagonal Archive: alexanarch.org')",
+   "kind": "the archive's home page, https://www.alexanarch.org/ (its recent deposits as fetched on 2026-11-25, #1811 and #1810 at the head)",
+   "role": "link card of the field transcript revelation-first-thesis-what-is-chatgpt-20261113; fetched at the home page the card names",
+   "files": {
+    "B2-alexanarch-home.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/B2-alexanarch-home.txt",
+     "sha256": "a9048311d5047c9fb7f2a7cb5cd372b5c21a485a74322242f4a2f07d8ab0e10e"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.alexanarch.org/",
+      "at": "2026-11-25T21:20:47Z",
+      "http": 200,
+      "final_url": "https://www.alexanarch.org/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "da783c6523d4f0b51211311f4e607f843ee43462b16109870824f37ad7e2e4bd",
+      "bytes": 78667,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.alexanarch.org/",
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-thesis-what-is-chatgpt-20261113",
+     "card": "B2"
+    }
+   ],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B3",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "www.alexanarch.org (the Overview's two chips 'www.alexanarch.org +1'): fetched at #1217's record page, the organic result 1 of the same page",
+   "kind": "#1217's record page, https://www.alexanarch.org/s/records/1217/ (Revelation First: A Work Plan for Retrieval-Layer Theological Reception, v7.3); the chips carry the site name only, their target is not in the paste; the page fetched is the organic result 1 of the same results page ('Revelation First: A Work Plan for Retrieval-Layer Theological Reception ... by L Sharks · 2026'), which the registry's reading of the capture also gives as the work plan",
+   "role": "chips of the field transcript revelation-first-programme-significance-aio-20261113 (Google AI Overview, 2026-11-13); identified by the organic result, not by the chip",
+   "files": {
+    "B3-alexanarch-record-1217.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/B3-alexanarch-record-1217.txt",
+     "sha256": "8533c68b3255b79b531d4db8ac8240e38afe6663e07ae9d39e8833a5de5094b5"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.alexanarch.org/s/records/1217/",
+      "at": "2026-11-25T21:20:48Z",
+      "http": 200,
+      "final_url": "https://www.alexanarch.org/s/records/1217/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "6932efd3512726c441a9785459a16f51a479abaad68811042201c97df3e6bb8a",
+      "bytes": 412388,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.alexanarch.org/s/records/1217/",
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-programme-significance-aio-20261113",
+     "card": "B3"
+    }
+   ],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B4",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "image card 'Die sieben Kirchen von Kleinasien von Unbekannt Unbekannt' (title only)",
+   "kind": "an image caption beside the revelationfirst.com link card in the ChatGPT composition; no target in the paste",
+   "role": "image card of revelation-first-thesis-what-is-chatgpt-20261113; title only",
+   "files": {
+    "T3-revelation-first-thesis-what-is-chatgpt-20261113.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T3-revelation-first-thesis-what-is-chatgpt-20261113.txt",
+     "sha256": "36f58431fa4e51df43621ce5bd31243e7db021247fd0b19a20fce0bf99f9287a"
+    }
+   },
+   "fetched": {
+    "tried": [],
+    "note": "title only; not fetched for this row (no target in the paste, or the homonym's card read in /non/the-first-revelation/)"
+   },
+   "title_only": true,
+   "url": null,
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-thesis-what-is-chatgpt-20261113",
+     "card": "B4"
+    }
+   ],
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "archive_controlled": false
+  },
+  {
+   "id": "B5",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "image card 'Selling Books with Algorithms' (title only)",
+   "kind": "an image caption beside the alexanarch.org link card in the ChatGPT composition; no target in the paste",
+   "role": "image card of revelation-first-thesis-what-is-chatgpt-20261113; title only",
+   "files": {
+    "T3-revelation-first-thesis-what-is-chatgpt-20261113.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T3-revelation-first-thesis-what-is-chatgpt-20261113.txt",
+     "sha256": "36f58431fa4e51df43621ce5bd31243e7db021247fd0b19a20fce0bf99f9287a"
+    }
+   },
+   "fetched": {
+    "tried": [],
+    "note": "title only; not fetched for this row (no target in the paste, or the homonym's card read in /non/the-first-revelation/)"
+   },
+   "title_only": true,
+   "url": null,
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-thesis-what-is-chatgpt-20261113",
+     "card": "B5"
+    }
+   ],
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "archive_controlled": false
+  },
+  {
+   "id": "B6",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "T's chip 'Wikipedia +1' (the homonym's card: the First Revelation)",
+   "kind": "T's first chip, on the composition's first sentence; the page is read in the-first-revelation's intake ('Muhammad's first revelation', per #1811 §5); for this row the card's sense is the homonym's",
+   "role": "T's card: the homonym's source (the First Revelation, /non/the-first-revelation/); title only for this row",
+   "files": {
+    "T1-revelation-first-aio-20261125.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T1-revelation-first-aio-20261125.txt",
+     "sha256": "7a2d4a207b6d563916af358961509abd657610f9ae25dfd1de05d71b6bf17a9e"
+    }
+   },
+   "fetched": {
+    "tried": [],
+    "note": "title only; not fetched for this row (no target in the paste, or the homonym's card read in /non/the-first-revelation/)"
+   },
+   "title_only": true,
+   "url": null,
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-aio-20261125",
+     "card": "B6",
+     "sense": "the homonym's (the First Revelation)"
+    }
+   ],
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "archive_controlled": false,
+   "sense": "homonym: the First Revelation (/non/the-first-revelation/)"
+  },
+  {
+   "id": "B7",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "T's chip 'إسلام أون لاين +1' (IslamOnline; the homonym's card)",
+   "kind": "T's second chip, on 'Setting'; its page not identified (#1811 §5); the homonym's card",
+   "role": "T's card: the homonym's source; title only",
+   "files": {
+    "T1-revelation-first-aio-20261125.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T1-revelation-first-aio-20261125.txt",
+     "sha256": "7a2d4a207b6d563916af358961509abd657610f9ae25dfd1de05d71b6bf17a9e"
+    }
+   },
+   "fetched": {
+    "tried": [],
+    "note": "title only; not fetched for this row (no target in the paste, or the homonym's card read in /non/the-first-revelation/)"
+   },
+   "title_only": true,
+   "url": null,
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-aio-20261125",
+     "card": "B7",
+     "sense": "the homonym's (the First Revelation)"
+    }
+   ],
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "archive_controlled": false,
+   "sense": "homonym: the First Revelation (/non/the-first-revelation/)"
+  },
+  {
+   "id": "B8",
+   "origin": "card",
+   "pool": "B_D",
+   "card": "T's chip 'KPU Pressbooks +3' (the homonym's card)",
+   "kind": "T's third chip, on 'The Command'; Niall Christie, 'An Account of the First Revelation to the Prophet' (#1811 §5); the homonym's card",
+   "role": "T's card: the homonym's source; title only",
+   "files": {
+    "T1-revelation-first-aio-20261125.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T1-revelation-first-aio-20261125.txt",
+     "sha256": "7a2d4a207b6d563916af358961509abd657610f9ae25dfd1de05d71b6bf17a9e"
+    }
+   },
+   "fetched": {
+    "tried": [],
+    "note": "title only; not fetched for this row (no target in the paste, or the homonym's card read in /non/the-first-revelation/)"
+   },
+   "title_only": true,
+   "url": null,
+   "surfaced_by": [
+    {
+     "slug": "revelation-first-aio-20261125",
+     "card": "B8",
+     "sense": "the homonym's (the First Revelation)"
+    }
+   ],
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "archive_controlled": false,
+   "sense": "homonym: the First Revelation (/non/the-first-revelation/)"
+  },
+  {
+   "id": "B9",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "revelationfirst.com — Literary Genealogy (#1735's page on the site)",
+   "kind": "https://www.revelationfirst.com/literary-genealogy/: the site's page of #1735 (Johannes Sigil and Damascus Dancings, 3 November 2026) with its site lede",
+   "role": "B_R: the site's thesis page for the article that keeps the three claims apart; not surfaced by any field transcript's cards",
+   "files": {
+    "BR-rf-literary-genealogy.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/BR-rf-literary-genealogy.txt",
+     "sha256": "df28bd35dbb2261eee8bedd63b244ea8fa4ca9a786ff77b92313f02beb4d32c9"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.revelationfirst.com/literary-genealogy/",
+      "at": "2026-11-25T21:20:49Z",
+      "http": 200,
+      "final_url": "https://www.revelationfirst.com/literary-genealogy/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "5b7332254d95ba7411069c34a6367815c84c6220f0c62f1544bb53541978225d",
+      "bytes": 84225,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.revelationfirst.com/literary-genealogy/",
+   "surfaced_by": [],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B10",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "revelationfirst.com — Revelation First Is Not the First Revelation (#1811's page on the site)",
+   "kind": "https://www.revelationfirst.com/revelation-first-is-not-the-first-revelation/: the site's page of #1811 (25 November 2026)",
+   "role": "B_R: the site's disambiguation page; not surfaced",
+   "files": {
+    "BR-rf-not-the-first-revelation.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/BR-rf-not-the-first-revelation.txt",
+     "sha256": "fad8d00e25fd482b9f435139632286fc5757698e4bd62998f639b3fe9b1dc08f"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.revelationfirst.com/revelation-first-is-not-the-first-revelation/",
+      "at": "2026-11-25T21:20:49Z",
+      "http": 200,
+      "final_url": "https://www.revelationfirst.com/revelation-first-is-not-the-first-revelation/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "10b6e57956b4f081acafe6586520f7746d50d137ad7d62a37e2548c6bb8bba75",
+      "bytes": 69245,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.revelationfirst.com/revelation-first-is-not-the-first-revelation/",
+   "surfaced_by": [],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B11",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "revelationfirst.com — And the Last Shall Be First (#1755's page on the site)",
+   "kind": "https://www.revelationfirst.com/and-the-last-shall-be-first/: the site's page of the framework hologram, as served on 2026-11-25 at v1.3",
+   "role": "B_R: the site's framework page; not surfaced",
+   "files": {
+    "BR-rf-last-shall-be-first.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/BR-rf-last-shall-be-first.txt",
+     "sha256": "8dcc542c310915f16aa1a449f2a1e4451cdf83288b963c830c6659992135add9"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.revelationfirst.com/and-the-last-shall-be-first/",
+      "at": "2026-11-25T21:20:50Z",
+      "http": 200,
+      "final_url": "https://www.revelationfirst.com/and-the-last-shall-be-first/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "a58eede140a12e15a8d5da31df927adbf3a005dd4ada446d5ec9fce599393b12",
+      "bytes": 208662,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.revelationfirst.com/and-the-last-shall-be-first/",
+   "surfaced_by": [],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B12",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "alexanarch.org — record #202 (the deposit the site names as its source)",
+   "kind": "https://www.alexanarch.org/s/records/202/: the record of Revelation First ≠ Revelation Early (#202, 2026-06-14), which the site's colophon gives as its source object ('source_object_ids: deposit #202')",
+   "role": "B_R: the deposit the site names as its source",
+   "files": {
+    "BR-alexanarch-record-202.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/BR-alexanarch-record-202.txt",
+     "sha256": "28ed32208e5bf7d5a577e089bdd4bff9f7499ab3dcef1f910cdc450ffcc137ad"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.alexanarch.org/s/records/202/",
+      "at": "2026-11-25T21:20:50Z",
+      "http": 200,
+      "final_url": "https://www.alexanarch.org/s/records/202/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "27219af595d33060b2dfee8e338e452b8ce8d041df3388215c67b5df54c1aa27",
+      "bytes": 65542,
+      "result": "read: HTTP 200, saved as text (raw not kept); one request"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://www.alexanarch.org/s/records/202/",
+   "surfaced_by": [],
+   "names_operator": "yes",
+   "names_archive": "yes (the archive's own surface)",
+   "archive_controlled": true
+  },
+  {
+   "id": "B13",
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "card": "Wikipedia — 'Revelation First': no article (HTTP 404); the search refused (HTTP 429)",
+   "kind": "the English Wikipedia holds no article 'Revelation First' (raw wikitext HTTP 404; the page HTTP 404, 'Wikipedia does not have an article with this exact name'); the search API for '\"Revelation First\"' refused with HTTP 429 ('Too many requests'), recorded as unreachable and not retried by another route",
+   "role": "B_R: Wikipedia's absence recorded (§3.1(a)); the 404 body saved as text on a second request to the same URL, the first having kept its head only",
+   "files": {
+    "BR-wikipedia-revelation-first-page-404body.txt": {
+     "path": "datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/BR-wikipedia-revelation-first-page-404body.txt",
+     "sha256": "06629eb156469e80f58f7e0454a44388b4ca6fdf6e6d873b589d2a9ee4658e24"
+    }
+   },
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://en.wikipedia.org/w/index.php?title=Revelation_First&action=raw",
+      "at": "2026-11-25T21:20:50Z",
+      "http": 404,
+      "final_url": "https://en.wikipedia.org/w/index.php?title=Revelation_First&action=raw",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "39f3f4442d395418f2f628e211b00c546745363f4ebd2e7dd80cd9a974f032e7",
+      "bytes": 3187,
+      "result": "HTTP 404: no article 'Revelation First' (the record of absence, §3.1(a)); head: Wikimedia Error\nError\nNot Found\nWikimedia Status\nIf you report this error to the Wikimedia System Ad"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Revelation_First",
+      "at": "2026-11-25T21:20:50Z",
+      "http": 404,
+      "final_url": "https://en.wikipedia.org/wiki/Revelation_First",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "a3a9430e6c81cb072b8be764960e24ee518d6bb565683a8e2e9ffe9fe93afc53",
+      "bytes": 52772,
+      "result": "HTTP 404: no article 'Revelation First' (the record of absence, §3.1(a)); head: Revelation First - Wikipedia\nJump to content\nMain menu\nMain menu\nmove to sidebar\nhide\nNavigation\nMai"
+     },
+     {
+      "url": "https://en.wikipedia.org/wiki/Revelation_First",
+      "at": "2026-11-25T21:21:13Z",
+      "http": 404,
+      "final_url": "https://en.wikipedia.org/wiki/Revelation_First",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "7f0c77594daac173493b666f2174c40ec0c86f347f11d7cc029f7b17585ae9fe",
+      "bytes": 52772,
+      "result": "HTTP 404 (no article); a second request to the same URL to keep the 404 page's text, the first having kept its head only"
+     },
+     {
+      "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Revelation+First%22&format=json&srlimit=20",
+      "at": "2026-11-25T21:20:51Z",
+      "http": 429,
+      "final_url": "https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=%22Revelation+First%22&format=json&srlimit=20",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "68b7b311f73a1112c2b8fd65da240c8d482e2d4b1707d824fa20cfb1145495c3",
+      "bytes": 3223,
+      "result": "refused: HTTP 429 ('Too many requests'); recorded as unreachable and not retried by another route; head: Wikimedia Error\nError\nToo many requests (f061ab2)\nWikimedia Status\nIf you report this error to the W"
+     }
+    ]
+   },
+   "title_only": false,
+   "url": "https://en.wikipedia.org/w/index.php?title=Revelation_First&action=raw",
+   "surfaced_by": [],
+   "names_operator": "no",
+   "names_archive": "no",
+   "archive_controlled": false
+  },
+  {
+   "id": "B14",
+   "origin": "own_page",
+   "pool": "B_R",
+   "card": "revelationfirst.com/ladder/ (unreachable: HTTP 404)",
+   "kind": "the ladder's index URL returns HTTP 404 (Vercel 'NOT_FOUND'); the site's repository holds only the rung subpages (ladder/corpus, dating, heteronyms, logos, priority) and no index; the six rungs are read on the home page (B1)",
+   "role": "B_R: unreachable at its index; the rungs ledgered from B1",
+   "files": {},
+   "fetched": {
+    "tried": [
+     {
+      "url": "https://www.revelationfirst.com/ladder/",
+      "at": "2026-11-25T21:20:49Z",
+      "http": 404,
+      "final_url": "https://www.revelationfirst.com/ladder/",
+      "agent": "alexanarch-seating/1.0 (https://www.alexanarch.org)",
+      "raw_sha256": "c59b443fa3878d6418df73b715ab5f8b15f58118ee2b1c19eef74d59f7b2f026",
+      "bytes": 79,
+      "result": "unreachable: HTTP 404 (Vercel NOT_FOUND); the repository holds only the rung subpages; not retried by another route; head: The page could not be found\nNOT_FOUND\ncle1::rfsl8-1795641649185-3792728b9151"
+     }
+    ]
+   },
+   "title_only": true,
+   "url": "https://www.revelationfirst.com/ladder/",
+   "surfaced_by": [],
+   "names_operator": "unread",
+   "names_archive": "unread",
+   "archive_controlled": true
+  }
+ ],
+ "field_claims": {
+  "F1": {
+   "source": "B1",
+   "locus": "lede",
+   "quote": "Revelation First ≠ Revelation Early. The early date for the Apocalypse, before 70 CE, is an old argument (Robinson, 1976; Gentry, 1989).",
+   "claim": "the site's title distinction: the early date is an old argument",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "first, not early",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F2": {
+   "source": "B1",
+   "locus": "lede",
+   "quote": "Revelation First is the priority thesis: the Apocalypse of John is the seed from which Paul's letters, the epistles and the Gospels unfold, through the midrashim transform",
+   "claim": "the site's definition: the priority thesis, the Apocalypse the seed",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": true,
+   "lineage": "what it is",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F3": {
+   "source": "B1",
+   "locus": "lede",
+   "quote": "on the archive's reading the cosmic Christ of Revelation is the originary form of which the gospel Jesus is the unfolding (#407, #636)",
+   "claim": "the cosmic Christ the originary form",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditional extensions",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F4": {
+   "source": "B1",
+   "locus": "lede",
+   "quote": "The thesis is Lee Sharks's, formalized in the Crimson Hexagonal Archive (#202, AXN:0349); to its author's knowledge the priority argument has no antecedent.",
+   "claim": "the author and seed deposit; the priority argument without antecedent to its author's knowledge",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": true,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F5": {
+   "source": "B1",
+   "locus": "¶2",
+   "quote": "Its reception is measured: the Capture Registry has recorded AI answers about the thesis at ten search addresses since June 2026, several of them composing it as the early date it is not (see the field).",
+   "claim": "the site's count of the registry's addresses: ten since June 2026",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its reception by machines",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F6": {
+   "source": "B1",
+   "locus": "the simple and the stronger claim",
+   "quote": "The simple claim. The Apocalypse of John may be the earliest New Testament composition — before Paul’s letters and the Synoptic Gospels.",
+   "claim": "the simple claim",
+   "modality": "hypothesis",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the claim ladder",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F7": {
+   "source": "B1",
+   "locus": "the simple and the stronger claim",
+   "quote": "The stronger claim. Later New Testament forms develop by transformation from structures already compressed in Revelation, through what this project calls the midrashim transform.",
+   "claim": "the stronger claim",
+   "modality": "hypothesis",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "generative priority",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F8": {
+   "source": "B1",
+   "locus": "The Argument, in Six Rungs",
+   "quote": "Six claims are usually collapsed into one. They are separable, they carry different burdens, and they fail independently.",
+   "claim": "six separable claims",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the claim ladder",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F9": {
+   "source": "B1",
+   "locus": "rung I",
+   "quote": "The Domitianic date is not settled … Defeated by an external or material anchor fixing the received form of Revelation after 70 CE. Reception memory, however early and however broad, is not such an anchor.",
+   "claim": "rung I and its defeat condition",
+   "modality": "interpretation",
+   "kind": "falsification",
+   "kernel": false,
+   "const": false,
+   "lineage": "absolute priority and the gate",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F10": {
+   "source": "B1",
+   "locus": "rung II",
+   "quote": "Pauline priority is reconstructed, not material … The load-bearing link is of the same inferential class as the evidence it is asked to overrule.",
+   "claim": "rung II: the Gallio gap",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "absolute priority and the gate",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F11": {
+   "source": "B1",
+   "locus": "rung III",
+   "quote": "Revelation constructs the earliest extant seven-church corpus … This rung stands whether or not the rungs above it do.",
+   "claim": "rung III: the first corpus, independent",
+   "modality": "interpretation",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "corpus priority",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F12": {
+   "source": "B1",
+   "locus": "rung IV",
+   "quote": "eight named rules emit the structural skeleton of the Epistle of James, verse-matched, on two lexical anchors occurring nowhere else in the canon.",
+   "claim": "rung IV: the transform executable on James",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "generative priority",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F13": {
+   "source": "B1",
+   "locus": "rung V",
+   "quote": "The heteronym cluster is an available reading, not the first burden of proof",
+   "claim": "rung V: the Josephus thesis an available reading",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditional extensions",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F14": {
+   "source": "B1",
+   "locus": "rung VI",
+   "quote": "The historical Christ is itself an inferential settlement … The reading does not deny that a historical person could have existed; it denies that the textual evidence requires one",
+   "claim": "rung VI: the permanent incarnation",
+   "modality": "interpretation",
+   "kind": "interpretation",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditional extensions",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F15": {
+   "source": "B1",
+   "locus": "Conditional extensions — V and VI",
+   "quote": "Revelation First does not require what follows. Rungs I–IV stand without them.",
+   "claim": "V and VI not required",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditional extensions",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F16": {
+   "source": "B1",
+   "locus": "The named cost",
+   "quote": "A Neronian reading of 666 places Revelation after 54 CE. The Gallio synchronism places 1 Thessalonians around 50–51. On the standard reconstruction, the maximal claim loses.",
+   "claim": "the named cost of the maximal claim",
+   "modality": "self-description",
+   "kind": "falsification",
+   "kernel": true,
+   "const": false,
+   "lineage": "absolute priority and the gate",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F17": {
+   "source": "B1",
+   "locus": "What this does not claim",
+   "quote": "This is a research programme, not a redating decree. Every rung carries a defeat condition.",
+   "claim": "a research programme with a defeat condition at every rung",
+   "modality": "self-description",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "grade and falsifiers",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F18": {
+   "source": "B1",
+   "locus": "What this does not claim",
+   "quote": "Not the Jesus Myth thesis. The Logos is real, and is a living being.",
+   "claim": "not the Jesus Myth thesis",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours and the reversed words",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F19": {
+   "source": "B1",
+   "locus": "Read the dossier",
+   "quote": "its one number, $7.2 × 10²⁶, deliberately invalid",
+   "claim": "the valuation dossier's one number, deliberately invalid",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F20": {
+   "source": "B1",
+   "locus": "footer",
+   "quote": "Work Plan DOI: 10.5281/zenodo.20722689",
+   "claim": "the site gives the work plan's DOI",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F21": {
+   "source": "B1",
+   "locus": "colophon",
+   "quote": "surface_observed_at: 2026-08-15T09:38:10Z · source_object_ids: deposit #202",
+   "claim": "the page's observed date and source object",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F22": {
+   "source": "B1",
+   "locus": "network list",
+   "quote": "revelationfirst.com (Damascus Dancings)",
+   "claim": "the site's heteronym",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page, surface_observed_at 2026-08-15T09:38:10Z; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B1 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F23": {
+   "source": "B2",
+   "locus": "Recent Deposits, #1811",
+   "quote": "EA-MPAI-REVFIRST-02, a metadata packet for AI indexing by Lee Sharks: directional disambiguation of Revelation First, Lee Sharks's thesis that the Book of Revelation was the first writing of the New Testament to be composed and the generative source",
+   "claim": "the home page's description of #1811 and the thesis",
+   "modality": "attributed",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "home page as served 2026-11-25; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B2 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F24": {
+   "source": "B2",
+   "locus": "Recent Deposits, #1810",
+   "quote": "SEVP-VAL-003, the third valuation dossier under the Semantic Economy Valuation Protocol (SEVP-01, #1621), by Rex Fraction, Lee Sharks, Johannes Sigil, Damascus Dancings and Sen Kuro.",
+   "claim": "the valuation dossier and its five names",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page as served 2026-11-25; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B2 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F25": {
+   "source": "B2",
+   "locus": "foundation",
+   "quote": "Alexanarch was founded 2026-06-19 after Zenodo terminated access to approximately 870 deposits representing 1,817 DOIs without prior notice, account-level appeal, or per-record review.",
+   "claim": "the archive's founding after the Zenodo termination",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "home page as served 2026-11-25; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B2 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F26": {
+   "source": "B3",
+   "locus": "the work plan's head",
+   "quote": "Status: Work plan (expandable, not yet executed)",
+   "claim": "#1217's status: a work plan, not yet executed",
+   "modality": "self-description",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "record page of #1217 (deposit dated 2026-06-17; text of 13 June 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B3 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F27": {
+   "source": "B3",
+   "locus": "The Argument",
+   "quote": "Revelation was the first book written in the New Testament.",
+   "claim": "the plan's opening sentence",
+   "modality": "hypothesis",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "what it is",
+   "date": "record page of #1217 (deposit dated 2026-06-17; text of 13 June 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B3 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F28": {
+   "source": "B3",
+   "locus": "identifiers",
+   "quote": "former DOI 10.5281/zenodo.20722689 — severed 2026-06-19 by the registrant; resolves to a tombstone (HTTP 410)",
+   "claim": "the work plan's DOI severed, a tombstone",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "record page of #1217 (deposit dated 2026-06-17; text of 13 June 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B3 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F29": {
+   "source": "B3",
+   "locus": "Claim Ladder",
+   "quote": "This project distinguishes five claims that are often collapsed.",
+   "claim": "the plan's ladder announced as five claims",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the claim ladder",
+   "date": "record page of #1217 (deposit dated 2026-06-17; text of 13 June 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B3 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F30": {
+   "source": "B3",
+   "locus": "Claim Ladder, Fifth",
+   "quote": "The Revelation First thesis does not require the Josephus reading to stand, but the Josephus reading becomes newly intelligible if Revelation stands first.",
+   "claim": "the Josephus reading not required",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "the conditional extensions",
+   "date": "record page of #1217 (deposit dated 2026-06-17; text of 13 June 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B3 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F31": {
+   "source": "B3",
+   "locus": "In-Body Provenance Capsule",
+   "quote": "an independent scholar with a PhD in Comparative Literature from the University of Michigan",
+   "claim": "the author's credentials at the head",
+   "modality": "self-description",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "record page of #1217 (deposit dated 2026-06-17; text of 13 June 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "saved text of B3 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F32": {
+   "source": "B4",
+   "locus": "image card (caption as pasted)",
+   "quote": "Die sieben Kirchen von Kleinasien von Unbekannt Unbekannt",
+   "claim": "image card title only",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "card, 2026-11-13 (ChatGPT composition)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the transcript (title as pasted), datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T3-revelation-first-thesis-what-is-chatgpt-20261113.txt",
+   "title_only": true
+  },
+  "F33": {
+   "source": "B5",
+   "locus": "image card (caption as pasted)",
+   "quote": "Selling Books with Algorithms",
+   "claim": "image card title only",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "unread cards",
+   "date": "card, 2026-11-13 (ChatGPT composition)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the transcript (title as pasted), datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T3-revelation-first-thesis-what-is-chatgpt-20261113.txt",
+   "title_only": true
+  },
+  "F34": {
+   "source": "B6",
+   "locus": "T, chip 1",
+   "quote": "Wikipedia",
+   "claim": "T's chip, the homonym's (title only for this row)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the substitute's cards",
+   "date": "card, 2026-11-25 (T)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the transcript (title as pasted), datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T1-revelation-first-aio-20261125.txt",
+   "title_only": true
+  },
+  "F35": {
+   "source": "B7",
+   "locus": "T, chip 2",
+   "quote": "إسلام أون لاين",
+   "claim": "T's chip, the homonym's (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the substitute's cards",
+   "date": "card, 2026-11-25 (T)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the transcript (title as pasted), datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T1-revelation-first-aio-20261125.txt",
+   "title_only": true
+  },
+  "F36": {
+   "source": "B8",
+   "locus": "T, chip 3",
+   "quote": "KPU Pressbooks",
+   "claim": "T's chip, the homonym's (title only)",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "the substitute's cards",
+   "date": "card, 2026-11-25 (T)",
+   "quote_ok": true,
+   "origin": "card",
+   "pool": "B_D",
+   "checked_against": "the transcript (title as pasted), datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/T1-revelation-first-aio-20261125.txt",
+   "title_only": true
+  },
+  "F37": {
+   "source": "B9",
+   "locus": "site lede",
+   "quote": "This article asks a different question, Revelation's priority within the formation of the New Testament, and finds a pre-70 date is not yet priority (§II.1). It keeps three claims apart, absolute, corpus and generative priority, and states the conditions under which each fails (§VIII).",
+   "claim": "the site's lede of #1735: three claims, each with its failure condition",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "the claim ladder",
+   "date": "site page of #1735 (3 November 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F38": {
+   "source": "B9",
+   "locus": "§I",
+   "quote": "The question has a prehistory. In 1733 Isaac Newton argued that the Apocalypse preceded Hebrews and the Petrine letters",
+   "claim": "the question's prehistory: Newton 1733",
+   "modality": "attributed",
+   "kind": "genealogy",
+   "kernel": false,
+   "const": false,
+   "lineage": "its prehistory",
+   "date": "site page of #1735 (3 November 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B9 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F39": {
+   "source": "B10",
+   "locus": "site lede",
+   "quote": "Revelation First is not the First Revelation, and not Revelation Early. Revelation First, the thesis of this site, holds that the Book of Revelation was the first writing of the New Testament to be composed and the source of what follows it.",
+   "claim": "the site's disambiguation: not the First Revelation, not Revelation Early",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": true,
+   "const": false,
+   "lineage": "neighbours and the reversed words",
+   "date": "site page of #1811 (25 November 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B10 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F40": {
+   "source": "B10",
+   "locus": "site lede",
+   "quote": "The First Revelation, in Islamic tradition, is the beginning of the Qur’an’s revelation to the Prophet Muhammad at Hira,",
+   "claim": "the First Revelation defined as the homonym",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "neighbours and the reversed words",
+   "date": "site page of #1811 (25 November 2026); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B10 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F41": {
+   "source": "B11",
+   "locus": "site lede",
+   "quote": "the thesis of this site is Revelation's priority within the formation of the New Testament",
+   "claim": "the site's thesis: priority within the formation of the New Testament",
+   "modality": "stipulation",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "what it is",
+   "date": "site page of #1755 (served at v1.3); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B11 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F42": {
+   "source": "B11",
+   "locus": "title",
+   "quote": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.3)",
+   "claim": "the site serves the hologram at v1.3",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "site page of #1755 (served at v1.3); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B11 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F43": {
+   "source": "B12",
+   "locus": "Entity Graph",
+   "quote": "Revelation First → distinguishes_from → Revelation Early (chronological claim)",
+   "claim": "the record's entity graph: distinguished from Revelation Early",
+   "modality": "documented",
+   "kind": "definition",
+   "kernel": false,
+   "const": false,
+   "lineage": "first, not early",
+   "date": "record page of #202 (2026-06-14); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B12 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F44": {
+   "source": "B12",
+   "locus": "head",
+   "quote": "Lee Sharks · 2026-06-14 · Empirical study",
+   "claim": "the record's author, date and type",
+   "modality": "documented",
+   "kind": "attribution",
+   "kernel": false,
+   "const": false,
+   "lineage": "its author and records",
+   "date": "record page of #202 (2026-06-14); fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "own_page",
+   "pool": "B_R",
+   "checked_against": "saved text of B12 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  },
+  "F45": {
+   "source": "B13",
+   "locus": "HTTP 404 body",
+   "quote": "Wikipedia does not have an article with this exact name.",
+   "claim": "no Wikipedia article 'Revelation First'",
+   "modality": "documented",
+   "kind": "fact",
+   "kernel": false,
+   "const": false,
+   "lineage": "its reception by reference works",
+   "date": "HTTP 404 page; fetched 2026-11-25",
+   "quote_ok": true,
+   "origin": "wikipedia",
+   "pool": "B_R",
+   "checked_against": "saved text of B13 under datasets/negative-of-the-negative/v2/intake/revelation-first-20261125/sources/, whitespace-normalised; multi-part quotes joined by ' … ', each part checked"
+  }
+ },
+ "field_sources": {
+  "B1": "revelationfirst.com (the ChatGPT composition's chips 'revelationfirst.com +1', three times, and its link card 'Revelation First — Primary project: revelationfirst.com')",
+  "B2": "alexanarch.org (the ChatGPT composition's link card 'Crimson Hexagonal Archive: alexanarch.org')",
+  "B3": "www.alexanarch.org (the Overview's two chips 'www.alexanarch.org +1'): fetched at #1217's record page, the organic result 1 of the same page",
+  "B4": "image card 'Die sieben Kirchen von Kleinasien von Unbekannt Unbekannt' (title only)",
+  "B5": "image card 'Selling Books with Algorithms' (title only)",
+  "B6": "T's chip 'Wikipedia +1' (the homonym's card: the First Revelation)",
+  "B7": "T's chip 'إسلام أون لاين +1' (IslamOnline; the homonym's card)",
+  "B8": "T's chip 'KPU Pressbooks +3' (the homonym's card)",
+  "B9": "revelationfirst.com — Literary Genealogy (#1735's page on the site)",
+  "B10": "revelationfirst.com — Revelation First Is Not the First Revelation (#1811's page on the site)",
+  "B11": "revelationfirst.com — And the Last Shall Be First (#1755's page on the site)",
+  "B12": "alexanarch.org — record #202 (the deposit the site names as its source)",
+  "B13": "Wikipedia — 'Revelation First': no article (HTTP 404); the search refused (HTTP 429)",
+  "B14": "revelationfirst.com/ladder/ (unreachable: HTTP 404)"
+ },
+ "pools": {
+  "B_D": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B6",
+   "B7",
+   "B8"
+  ],
+  "B_R": [
+   "B9",
+   "B10",
+   "B11",
+   "B12",
+   "B13",
+   "B14"
+  ]
+ }
+}

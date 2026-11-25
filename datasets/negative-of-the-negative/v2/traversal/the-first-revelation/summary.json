@@ -1,0 +1,160 @@
+{
+ "row": "the-first-revelation",
+ "address": "the first revelation",
+ "entity": "The First Revelation: in Islamic tradition the beginning of the revelation of the Qur'an to Muhammad in the cave of Hira, Q 96:1–5, c. 610",
+ "procedure": "EA-NEGONT-02 v0.7 §3.4 (D/R/O), working; not frozen",
+ "config": {
+  "row": "the-first-revelation",
+  "address": "the first revelation",
+  "entity": "The First Revelation: in Islamic tradition the beginning of the revelation of the Qur'an to Muhammad in the cave of Hira, Q 96:1–5, c. 610",
+  "row_type": "C (a public entity: an event of a tradition and its texts)",
+  "aliases": [
+   {
+    "pattern": "\\bfirst revelation\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bHira\\b",
+    "flags": ""
+   },
+   {
+    "pattern": "Ḥirāʾ|Ḥirā'|Hira'|Hirā",
+    "flags": ""
+   },
+   {
+    "pattern": "\\biqra(ʾ|'|’)?(?![a-z])",
+    "flags": "i"
+   },
+   {
+    "pattern": "al-(ʿ|'|‘)?Alaq",
+    "flags": "i"
+   },
+   {
+    "pattern": "Laylat al-Qadr",
+    "flags": "i"
+   },
+   {
+    "pattern": "Mab(ʿ|'|’)?ath",
+    "flags": "i"
+   },
+   {
+    "pattern": "\\bwa(ḥ|h)y\\b",
+    "flags": "i"
+   },
+   {
+    "pattern": "bad(ʾ|'|’)? al-wa(ḥ|h)y",
+    "flags": "i"
+   },
+   {
+    "pattern": "حراء",
+    "flags": ""
+   },
+   {
+    "pattern": "بدء الوحي|بدئ به",
+    "flags": ""
+   }
+  ],
+  "classes": [],
+  "classes_note": "No class is configured: the field sources the entity as an event of Islamic tradition (B1 Wikipedia lead; B4 Quran.com) and no archive category is applied in the field to that class; O enters as O-direct only, where an archive sentence that names the event applies an archive category to it. The brief's strings are the aliases, with two Arabic forms added (حراء; بدء الوحي / بدئ به) because the archive quotes Bukhari's opening in Arabic; 'first revelation' also matches the reversed thesis name only where the words stand in that order, and 'Revelation First' does not match it.",
+  "exclude_deposits": [],
+  "notes": "config written 2026-11-25 by the composer under BRIEF-NEW-ROWS-FIRST-REVELATION.md (Row 1); kept in the traversal folder (the brief names traversal/the-first-revelation/ and no panel/configs path); second pass 2026-11-25: hop_from the one deposit admitted by reading (#1811)",
+  "hop_from": [
+   1811
+  ]
+ },
+ "texts_scanned": 1805,
+ "counts": {
+  "D_sentences": 86,
+  "D_deposits": 6,
+  "R_sentences": 26,
+  "R_deposits": 6,
+  "O_direct": 34,
+  "O_class": 0,
+  "O_deposits": 1,
+  "H_candidates": 25
+ },
+ "per_deposit": {
+  "D": {
+   "832": 1,
+   "1211": 1,
+   "1216": 1,
+   "1217": 1,
+   "1400": 1,
+   "1811": 81
+  },
+  "R": {
+   "832": 1,
+   "1211": 1,
+   "1216": 1,
+   "1217": 1,
+   "1400": 1,
+   "1811": 21
+  },
+  "O": {
+   "1811": 34
+  }
+ },
+ "registry_entity_triples": [
+  {
+   "dep": 1811,
+   "triple": {
+    "subject": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.0)",
+    "predicate": "created_by",
+    "object": "Sharks, Lee",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1811,
+   "triple": {
+    "subject": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.0)",
+    "predicate": "is_type",
+    "object": "Metadata packet; disambiguation (directional), forensic and provenance (MPAI v2.0, #1677 §2)",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1811,
+   "triple": {
+    "subject": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.0)",
+    "predicate": "belongs_to_family",
+    "object": "MPAI",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1811,
+   "triple": {
+    "subject": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.0)",
+    "predicate": "is_part_of",
+    "object": "Crimson Hexagonal Archive",
+    "type": "work",
+    "evidence_status": "observed"
+   }
+  },
+  {
+   "dep": 1811,
+   "triple": {
+    "subject": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.0)",
+    "predicate": "references",
+    "object": "Lee Sharks",
+    "type": "heteronym",
+    "evidence_status": "observed"
+   }
+  }
+ ],
+ "integrity_S5": [],
+ "sha256": {
+  "candidates-D.jsonl": "cf77161a7c3b31b86b18eb92395d7c4523c4d30f9c5f9e36e6b1ccb688f44369",
+  "candidates-R.jsonl": "3384908f7cfbe9395660367a00f7866fa98e4fd52d7c7ca56c0b64d0e0afa194",
+  "candidates-O.jsonl": "e85ac606e6faa29a5cbf0bf5bb1c829fc23f5de0317b2b64df174283531a6e85",
+  "candidates-H.jsonl": "2ed074df3df31b33fce5a8002f9fad76d6aa360bba5c296bd31f583a820c8528"
+ },
+ "category_vocabulary": {
+  "defines_concepts_and_lexical_mints": 11100
+ },
+ "note": "Candidates by string only. Admission by reading, recorded in the row's reading file; nothing here is admitted."
+}
