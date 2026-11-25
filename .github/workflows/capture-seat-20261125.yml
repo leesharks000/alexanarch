@@ -1,0 +1,71 @@
+name: Seat 2026-11-25 AIO capture cohort
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  seat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: intake/pending-aio-valuation-pair-20261125
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install jsonschema
+      - name: Validate taxonomy and preview intake
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+          root=pathlib.Path(".")
+          reg=json.loads((root/"data/EA-WG-CAPTURES-01.json").read_text())
+          secs=(reg.get("_section_taxonomy") or {}).get("sections") or {}
+          print("CANONICAL SECTIONS:",json.dumps(secs,indent=2,ensure_ascii=False))
+          names=["aio-valuation-20261125-a","aio-valuation-20261125-b","anne-carson-corpus-valuation-aio-20261125","ubuweb-valuation-aio-20261125","getty-research-institute-valuation-aio-20261125","pennsound-valuation-aio-20261125","poetry-foundation-valuation-aio-20261125","zinewiki-valuation-aio-20261125","librivox-valuation-aio-20261125","internet-archive-valuation-aio-20261125","electronic-literature-organization-valuation-aio-20261125"]
+          for name in names:
+            p=root/"rebuild/capture-registry/pending"/(name+".draft.json")
+            d=json.loads(p.read_text())
+            if d["s"] not in secs:
+              print("INVALID SECTION:",name,repr(d["s"]))
+              sys.exit(1)
+          print("Eleven drafts have valid sections.")
+          PY
+      - name: Repair same-day duplicate observation IDs without changing historical records
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path("scripts/capture_intake.py")
+          s=p.read_text()
+          needle='obs["slug"] = draft.get("slug") or f"{e[\'slug\']}-{draft[\'date\'].replace(\'-\', \'\')}"'
+          if "# SAME-DAY RECOMPOSITION GUARD (2026-11-25):" not in s:
+            assert needle in s,"Intake anchor changed; stop rather than silently write."
+            injection='''# SAME-DAY RECOMPOSITION GUARD (2026-11-25): distinct compositions
+            # from the same query, surface, and calendar day need distinct IDs.
+            _prior_obs = list(e.get("observations") or []) or [e]
+            _used_ids = {x.get("obs_id") for x in _prior_obs}
+            if obs["obs_id"] in _used_ids:
+                if any(x.get("transcript") == obs["transcript"] and x.get("date") == obs["date"] for x in _prior_obs):
+                    raise Refused("Duplicate same-day transcript; no second observation admitted.")
+                _new_id = "OBS-" + hashlib.sha256((draft["q"]+draft["date"]+draft["surface"]+"\\n"+draft["transcript"]).encode()).hexdigest()[:12]
+                if _new_id in _used_ids: raise Refused("Observation hash collision")
+                obs["obs_id"] = _new_id
+            '''
+            p.write_text(s.replace(needle,injection+needle,1))
+          PY
+      - name: Canonical intake of eleven captures
+        run: |
+          set -euo pipefail
+          for name in aio-valuation-20261125-a aio-valuation-20261125-b anne-carson-corpus-valuation-aio-20261125 ubuweb-valuation-aio-20261125 getty-research-institute-valuation-aio-20261125 pennsound-valuation-aio-20261125 poetry-foundation-valuation-aio-20261125 zinewiki-valuation-aio-20261125 librivox-valuation-aio-20261125 internet-archive-valuation-aio-20261125 electronic-literature-organization-valuation-aio-20261125; do
+            python scripts/capture_intake.py "rebuild/capture-registry/pending/${name}.draft.json" --seat
+          done
+      - name: Canonical postflight (all gates must pass)
+        run: python scripts/seat_capture_postflight.py
+      - name: Commit and push validated seat to the draft PR branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Seat eleven November 25 AI Overview valuation observations" || exit 0
+          git push origin HEAD:intake/pending-aio-valuation-pair-20261125
