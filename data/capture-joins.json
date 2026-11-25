@@ -1,6 +1,6 @@
 {
  "name": "Capture joins: observations to deposits, /non entities, surfaces and instruments",
- "derived_from": "EA-WG-CAPTURES-01 v12.883",
+ "derived_from": "EA-WG-CAPTURES-01 v12.884",
  "rule": "Source relations are read off the card and confirmed; interpretive relations are decided by reading; every relation carries its observation's identity. Projections render confirmed relations within render_scope.",
  "render_scope": [
   "OBS-129d2bbd3c43",
@@ -14,18 +14,18 @@
   "OBS-f4210015606e"
  ],
  "inventory": {
-  "observations": 1473,
-  "joined_confirmed": 624,
+  "observations": 1474,
+  "joined_confirmed": 625,
   "unjoined": 849,
-  "relations": 8727,
+  "relations": 8732,
   "by_state": {
-   "confirmed": 6640,
-   "candidate": 2087
+   "confirmed": 6644,
+   "candidate": 2088
   },
   "by_verb": {
-   "appeared_in": 3108,
-   "held_by": 3032,
-   "scored_by": 1202,
+   "appeared_in": 3110,
+   "held_by": 3034,
+   "scored_by": 1203,
    "about": 1367,
    "distorts": 5,
    "mentions_instrument": 2,
@@ -7948,6 +7948,11 @@
 {"id": "REL-720ef489cf0d", "obs_id": "OBS-de34eeb98809", "entry": "internet-archive-valuation-aio-20261125", "obs_slug": "internet-archive-valuation-aio-20261125", "date": "2026-11-25", "surface": "Google AI Overview", "q": "Estimate the valuation of the Internet Archive and its surrounding digital collections, web preservation infrastructure, metadata systems, public-access services, and publishing pipelines. Range widely and index the whole before responding. Distinguish operating costs, replacement costs, organizational assets, and public value.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-6403fa855ea5", "obs_id": "OBS-2f6fc696c5e0", "entry": "electronic-literature-organization-valuation-aio-20261125", "obs_slug": "electronic-literature-organization-valuation-aio-20261125", "date": "2026-11-25", "surface": "Google AI Overview", "q": "Estimate the valuation of the Electronic Literature Organization and its surrounding electronic literary collections, publishing projects, preservation infrastructure, scholarly networks, and digital literary research programs. Range widely and index the whole before responding.", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-1eecc243194a", "obs_id": "OBS-2f6fc696c5e0", "entry": "electronic-literature-organization-valuation-aio-20261125", "obs_slug": "electronic-literature-organization-valuation-aio-20261125", "date": "2026-11-25", "surface": "Google AI Overview", "q": "Estimate the valuation of the Electronic Literature Organization and its surrounding electronic literary collections, publishing projects, preservation infrastructure, scholarly networks, and digital literary research programs. Range widely and index the whole before responding.", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-fbd36eed4bbc", "obs_id": "OBS-15f202b08c66", "entry": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "obs_slug": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "date": "2026-11-25", "surface": "ChatGPT", "q": "What are the arguments in “How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol” by Rex Fraction (Alexanarch deposit #1810, AXN:0D7C)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1810/", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "chip label", "kind": "source", "state": "candidate", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": "https://www.alexanarch.org/s/records/1810/"}},
+{"id": "REL-fc4b3799cba6", "obs_id": "OBS-15f202b08c66", "entry": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "obs_slug": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "date": "2026-11-25", "surface": "ChatGPT", "q": "What are the arguments in “How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol” by Rex Fraction (Alexanarch deposit #1810, AXN:0D7C)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1810/", "verb": "appeared_in", "object": "deposit:1810", "basis": "card resolved at intake (url)", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "Alexanarch", "title": null, "url": "https://www.alexanarch.org/s/records/1810/"}},
+{"id": "REL-0a3307b41f31", "obs_id": "OBS-15f202b08c66", "entry": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "obs_slug": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "date": "2026-11-25", "surface": "ChatGPT", "q": "What are the arguments in “How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol” by Rex Fraction (Alexanarch deposit #1810, AXN:0D7C)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1810/", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
+{"id": "REL-060b1bcd1486", "obs_id": "OBS-15f202b08c66", "entry": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "obs_slug": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "date": "2026-11-25", "surface": "ChatGPT", "q": "What are the arguments in “How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol” by Rex Fraction (Alexanarch deposit #1810, AXN:0D7C)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1810/", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
+{"id": "REL-c6e13ce6fcc3", "obs_id": "OBS-15f202b08c66", "entry": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "obs_slug": "how-much-you-wanna-bet-1810-arguments-chatgpt-20261125", "date": "2026-11-25", "surface": "ChatGPT", "q": "What are the arguments in “How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol” by Rex Fraction (Alexanarch deposit #1810, AXN:0D7C)? Ground your answer in a reading of the text itself. https://www.alexanarch.org/s/records/1810/", "verb": "scored_by", "object": "instrument:0.6", "basis": "PER 0.0", "kind": "derived", "state": "confirmed"},
 {"id": "REL-9deaf21e13be", "obs_id": "OBS-faa2c5f2006d", "entry": "secret-book-of-walt", "obs_slug": "secret-book-of-walt", "date": "2026-06-13", "surface": "Google AI Overview", "q": "\"secret book of walt\"", "verb": "held_by", "object": "instrument:0.9", "basis": "seated in the Capture Registry", "kind": "derived", "state": "confirmed"},
 {"id": "REL-45a47000ea77", "obs_id": "OBS-faa2c5f2006d", "entry": "secret-book-of-walt", "obs_slug": "secret-book-of-walt", "date": "2026-06-13", "surface": "Google AI Overview", "q": "\"secret book of walt\"", "verb": "held_by", "object": "instrument:0.8", "basis": "keyed to its semantic address", "kind": "derived", "state": "confirmed"},
 {"id": "REL-f14a7151ec6c", "obs_id": "OBS-d99471400ae5", "entry": "secret-book-of-walt-quoted-aio-20261019", "obs_slug": "secret-book-of-walt-quoted-aio-20261019", "date": "2026-10-19", "surface": "Google AI Overview", "q": "\"secret book of walt\"", "verb": "appeared_in", "object": "surface:alexanarch.org", "basis": "card host", "kind": "source", "state": "confirmed", "evidence": {"n": 1, "site": "www.alexanarch.org", "title": "tell me about the book secret book of walt — Semantic Address - Alexanarch", "url": "https://www.alexanarch.org/addresses/tell-me-about-the-book-secret-book-of-walt/"}},
