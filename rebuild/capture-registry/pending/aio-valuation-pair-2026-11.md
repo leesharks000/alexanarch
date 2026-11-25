@@ -1,14 +1,13 @@
 # Pending intake: two signed-out incognito Google AI Overview valuation compositions
 
 **Canonical destination:** Alexanarch Capture Registry (EA-WG-CAPTURES-01).  
-**Status:** RAW EVIDENCE STAGED ONLY — NOT SEATED. Do not merge as a seated capture. Run the canonical `scripts/capture_intake.py --seat` process separately for each observation and then `scripts/seat_capture_postflight.py`; verify gates and rendered pages.  
+**Status:** EDITORIAL TRANSCRIPTION STAGED ONLY — NOT SEATED. Do not merge as a seated capture. Run the canonical `scripts/capture_intake.py --seat` process separately for each observation and then `scripts/seat_capture_postflight.py`; verify gates and rendered pages.  
 **Editorial authority:** Alexanarch repository operator, not the Google interface or the public readership of the dataset.  
 **Authentication (both, operator-confirmed):** signed out, incognito.  
-**Date (both):** not explicitly supplied as capture timestamps; do not substitute the date of this GitHub commit.  
+**Date (both, operator-confirmed):** 2026-11-25, local capture date; exact clock times not provided.  
 **AIO surface (both):** Google Search, AI Overview popup.  
-**Transcript boundaries:** AIO compositions reproduced below exactly as furnished in conversation, as opposed to unverified citation-card content. Observation B's original captured search-results page was also supplied as an attachment and includes organic and sponsored search results; this staging file contains its AI Overview content only. **Preserve the original supplied attachment at canonical seating.**  
-**Prompt A:** exact issued string not supplied. No reconstruction from answer text.  
-**Prompt B (as shown):** "Estimate the valuation of Alexanarch and its surrounding ecosystem, protocols, and publishing ai-native pipelines as emerging semantic infrastructure. Range widely and index the whole before responding."
+**Transcript boundaries:** AIO compositions transcribed below from supplied conversation evidence, with Markdown-normalized headings and tables; this is NOT a byte-exact copy of the popup. Observation B's original captured search-results page was also supplied as an attachment and includes organic and sponsored search results; this staging file contains its AI Overview content only. **Preserve the original supplied attachment at canonical seating.**  
+**Prompt A and B (same exact issued string, operator-confirmed):** "Estimate the valuation of Alexanarch and its surrounding ecosystem, protocols, and publishing ai-native pipelines as emerging semantic infrastructure. Range widely and index the whole before responding."
 
 ## Capture A — raw AIO text as supplied
 
@@ -112,4 +111,4 @@ Because the ecosystem generates no publicly disclosed recurring revenue and inte
 4. **Speculative valuation:** Capture B's $37.5M–$800M option case depends on assumed enterprise clients and revenue, not observed contracts. Capture A's headline $0–$500K differs from its $0–$250K traditional section.
 5. **Political-economy conversion:** Capture B turns an anti-commodification orientation into a commercial-acquisition discount. The editorial finding records that conversion without adopting it as the archive's own value judgment.
 6. **Prospective editorial action:** Reprioritize controlled training-layer survivability tests; subsequent AIO retrievals should distinguish experimentally specified capacities from demonstrated capacities and retrieval exposure from training-mediated retention.
-7. **Evidence preservation:** Original compositions immutable; editorial notes attach as editorial records. Source-card lists, original popup captures, exact first query, and actual acquisition dates remain to be supplied/verified before canonical seating.
+7. **Evidence preservation:** Original compositions immutable; editorial notes attach as editorial records. Source-card lists, original popup capture files, and exact clock times remain to be supplied/verified before canonical seating. The operator has confirmed the exact matching query and local date (2026-11-25) for both.
