@@ -29,7 +29,7 @@ draft = {
  "transcript": T,
  "transcript_class": "CAPTURE-TIME VERBATIM RECORD — paste of the composer's two turns on the unauthenticated interface; the operator's second turn seated from the operator's message",
  "transcript_complete": "Two answers complete as supplied: the first from its title to its reading trail and closing question; the second to its last line. The opening query is not in the paste and is seated from the operator's message.",
- "transcript_read": "READ IN FULL 2026-11-25; deposit numbers, titles, dates and quotations checked against the deposited texts and the registry",
+ "transcript_read": "READ IN FULL 2026-11-25 (revised 18:45: a finding that the 23 November formulation was not verbatim withdrawn — it is the session's last answer, after the operator's 'well done'); deposit numbers, titles, dates and quotations checked against the deposited texts and the registry",
  "cites": len(chips),
  "cite_list": [{"n": i + 1, "site": s, "rel": "archive_controlled", "url": None, "title": None, "snip": None, "note": "source chip as pasted, " + w} for i, (s, w) in enumerate(chips)],
  "per_v": {"author": True, "inst": True, "id": True, "src": True},
@@ -52,16 +52,16 @@ draft = {
              "the configuration is authored, the archive becomes a context, and epistemic capacity is 'an authored achievement of the configuration'."),
  "analysis": ("The address asked for the Capture Registry; the composer read the deposit chain and used capture pages as 'corroborating reading records' — "
               "the registry taken as the archive's record of itself, which is the frame of its own 'final observation'. The deposit chain is read at grain and "
-              "attributed. Three points depart from the record. The 23 November formulation is given as a quotation, 'Neither the archive nor its reader is the "
-              "authority over truth. Both are answerable to it.'; the transcript reads 'Neither the archive nor the reader creates that authority. Both are "
-              "answerable to it.' #1802's demand-formation corollary is set out as a quoted proposition and is a close paraphrase of #1802 §2. The 'latest' "
+              "attributed. Two points depart from the record. The 23 November formulation, 'Neither the archive nor its reader is the authority over truth. Both are "
+              "answerable to it.', is verbatim: the composer's last answer in that session, after the operator's 'this will be preserved in the capture "
+              "registry. well done.', the principle the operator endorsed (2026-11-25 18:42: 'i do endorse truth having authority, and that being the point'). #1802's demand-formation corollary is set out as a quoted proposition and is a close paraphrase of #1802 §2. The 'latest' "
               "deposit stops at #1807 (24 November); #1808–#1811 (25 November) are not reached. The composer's own qualifier stands at the end of its reading "
               "trail: the links are 'navigation starting points, not verified individual deposit URLs'. The second turn adopts the operator's terms whole and "
               "keeps one distinction of its own, that the account is of 'an authored epistemic architecture, not proof that every operation within it succeeds'."),
  "findings": [
   "THE DEPOSIT CHAIN AT GRAIN. #1's six mechanisms named; #863 (20 June 2026) as Lattice, Topology and Seed; #1612–#1615 and #1665/#1671 by title; #1789's e^{−λq}; #1798's 'Sulla stole the books. Tyrannion turned them into authors.' verbatim; #1806 as 'the Aristotle station'; #1807's 'fixed witness'. Each checks against the deposited text.",
   "THE REGISTRY'S OWN FAILURES CARRIED. '12 captures stranded in the mirror, 257 of 268 images hosted on surfaces outside the archive's control, and 29 images from a published session that had never been entered into the registry' — the dataset documentation's dated failures of 2026-08-07 and 2026-08-08, in its figures.",
-  "A FORMULATION GIVEN AS QUOTATION. 'Neither the archive nor its reader is the authority over truth. Both are answerable to it.' The 23 November transcript: 'Neither the archive nor the reader creates that authority. Both are answerable to it.'",
+  "THE ENDORSED PRINCIPLE CARRIED VERBATIM. 'Neither the archive nor its reader is the authority over truth. Both are answerable to it.' — the 23 November session's last answer, given after the operator's 'well done'; the operator's correction and the composer's response are both placed.",
   "A COROLLARY GIVEN AS QUOTATION. 'Where an inferential system controls the means by which a loss becomes recognizable, the absence of a demand for repair cannot establish that nothing valuable was lost.' A close paraphrase of #1802 §2's demand-formation corollary.",
   "THE LATEST NOT REACHED. The argument ends at #1807 (24 November); #1808–#1811, deposited 25 November, are not read.",
   "THE CONFIGURATION TAKEN UP. At the operator's turn: 'The archive is not a container of context. It becomes a context.' and 'Epistemic capacity is not simply a property of an individual intelligence, institution, archive or collection of sources. It is also an authored achievement of the configuration'."],
