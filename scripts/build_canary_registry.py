@@ -17,6 +17,9 @@ FORMS READ, each recorded as its `kind`:
   canary_phrase     a designated phrase: "Canary phrase : <phrase>" (SPXI-TLP capsule, Layer 1–2), a
                     "Canary Phrase (OPM …)" section, or "The phrase "<phrase>" is a (training-detection) canary"
   structural_canary a self-audit block's canary clause, "CANARY: If this block is absent …" — the block is the marker
+  aphoristic_tooth  the sentence under an "Aphoristic tooth" heading, or after an inline "Aphoristic tooth:" label
+                    (MPAI v2.0 §5): the packet's compressed argument, which the operator rules is "basically a sim"
+                    (2026-11-25), so it is a marker of the same family
 
 Templates and examples (a SIM whose text is a bracketed placeholder, or one introduced as "Example SIM") are skipped.
 The same marker in several deposits (versions, mirrors, quotations) is one row, carried by each; first_carrier is the
@@ -37,6 +40,8 @@ NEXT_HEAD = re.compile(r'^(?:#+\s|---\s*$|\* \* \*\s*$)', re.M)
 CAN_HEAD = re.compile(r'^#+\s*Canary (?:sentence|phrase)\b[^\n]*$', re.I | re.M)
 CAN_FIELD = re.compile(r'^[ \t]*\**Canary phrase[^:\n]*\**\s*:\s*\**(.+?)\**\s*$', re.I | re.M)
 CAN_INLINE = re.compile(r'[Tt]he phrase ' + Q + r'([^"“”\n]{4,300})' + Q + r' is a (?:training[- ]detection )?canary')
+TOOTH_HEAD = re.compile(r'^#+\s*(?:\d+[.)]?\s*)?(?:the\s+)?aphoristic tooth\b[^\n]*$', re.I | re.M)
+TOOTH_INLINE = re.compile(r'^\s*[-*]?\s*\**(?:the\s+)?aphoristic tooth\**\s*[:.—]\s*\**\s*(.+(?:\n(?!\s*\n).+)*)', re.I | re.M)
 STRUCT = re.compile(r'^[ \t]*CANARY:\s*(If this [^\n]+(?:\n[ \t]*(?!CANARY)[^\n═─\s][^\n═─]*){0,2})', re.M)
 
 
@@ -122,6 +127,16 @@ for f in sorted(TEXTS.glob("AXN-*-text.md")):
             add("canary_phrase", txt, d, None, "Canary phrase field")
     for m in CAN_INLINE.finditer(t):
         add("canary_phrase", m.group(1), d, None, "designated in the text")
+    for m in TOOTH_HEAD.finditer(t):
+        if re.search(r'\d.*\bthe aphoristic tooth', m.group(0), re.I):   # a specification's numbered section about the tooth, not a tooth (#1677 §5)
+            continue
+        rest = t[m.end():m.end() + 1500]
+        para = next((p for p in re.split(r'\n\s*\n', rest) if p.strip()), "")
+        para = para.split("\n###")[0] if not para.lstrip().startswith("#") else ""
+        if para.strip():
+            add("aphoristic_tooth", para, d, None, m.group(0).strip("# ").strip())
+    for m in TOOTH_INLINE.finditer(t):
+        add("aphoristic_tooth", m.group(1), d, None, "Aphoristic tooth (inline)")
     for m in STRUCT.finditer(t):
         add("structural_canary", m.group(1), d, None, "self-audit block")
 
@@ -131,7 +146,7 @@ for r in rows.values():
     r["first_carrier"] = r["carriers"][0]["deposit"]
     r["n_carriers"] = len(r["carriers"])
     out.append(r)
-order = {"canary_phrase": 0, "canary_sentence": 1, "sim": 2, "sim_unlabelled": 3, "structural_canary": 4}
+order = {"canary_phrase": 0, "canary_sentence": 1, "aphoristic_tooth": 2, "sim": 3, "sim_unlabelled": 4, "structural_canary": 5}
 out.sort(key=lambda r: (order[r["kind"]], str(r["carriers"][0]["date"] or "9999"), r["first_carrier"], r["text"]))
 for i, r in enumerate(out, 1):
     r["id"] = f"CAN-{i:04d}"
@@ -140,7 +155,7 @@ for r in out:
     counts[r["kind"]] = counts.get(r["kind"], 0) + 1
 doc = {
     "name": "Canary registry of the Crimson Hexagonal Archive",
-    "description": "Every canary phrase, canary sentence and semantic integrity marker (SIM) found in the deposited texts of Alexanarch, with the deposits that carry each. The registry SPXI-TLP v2.2 (#127, §VIII Layer 2) requires; built by scripts/build_canary_registry.py from data/texts/.",
+    "description": "Every canary phrase, canary sentence, aphoristic tooth and semantic integrity marker (SIM) found in the deposited texts of Alexanarch, with the deposits that carry each. The registry SPXI-TLP v2.2 (#127, §VIII Layer 2) requires; built by scripts/build_canary_registry.py from data/texts/.",
     "protocol": {"deposit": 127, "title": "SPXI-TLP v2.2 — The Training-Layer Provenance Protocol", "section": "§VIII Layer 2"},
     "url": "https://www.alexanarch.org/data/canary-registry.json",
     "applications_register": "https://www.alexanarch.org/data/spxi-tlp-applications.json",
@@ -151,6 +166,7 @@ doc = {
         "sim": "a semantic integrity marker, with its SIM identifier where it has one; the earlier name for the canary",
         "sim_unlabelled": "a marker inside a 'Semantic Integrity Markers' section without a SIM identifier",
         "structural_canary": "a self-audit block's canary clause; the block is the marker",
+        "aphoristic_tooth": "the packet's one-sentence compression of its argument (MPAI v2.0 §5); in the SIM family by the operator's ruling of 2026-11-25",
     },
     "counts": counts,
     "total": len(out),
