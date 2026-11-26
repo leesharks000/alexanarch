@@ -94,5 +94,66 @@ d(id="philo.mos2.114→rev19.12", family="Philo → Revelation", title="The name
            m("diadems", "diadems", "διαδήματα", r"διαδηματα", False), m("written", "written", "γεγραμμένον", r"γεγραμμεν", False), m("noone", "no one knows but himself", "οὐδεὶς οἶδεν", r"ουδεισ οιδεν", False)],
   steps=[{"op": "SUBSTITUTE", "old": "crown", "new": "diadems"}, {"op": "SUBSTITUTE", "old": "engraved", "new": "written"}, {"op": "SUBSTITUTE", "old": "noother", "new": "noone"}, {"op": "REORDER", "order": ["diadems", "name", "written", "noone"]}],
   target="gnt:Rev 19:12", controls=[{"loc": "gnt:Rev 2:17", "label": "Rev 2:17, the new name"}, {"loc": "lxx:Εξοδος 28:32", "label": "Septuagint, Exod 28:32 (36)"}], records=[1758], note="#1758 §7b.3. Philo: 'four engravings of a name'. Rev 19:11–16 gives the rider four names.")
+
+# ── the four Gospels, from the profile of 2026-11-26 13:45 (law.py): each Gospel's own links, read, then stated in the operators
+d(id="rev1.17→matt28.4-5", family="Matthew", title="As dead; fear not", seed="gnt:Rev 1:17",
+  members=[m("fell", "I fell at his feet", "ἔπεσα", r"επεσα"), m("asdead", "as dead", "ὡς νεκρός", r"ωσ νεκρο"), m("fearnot", "fear not", "Μὴ φοβοῦ", r"μη φοβ")],
+  steps=[{"op": "PARTITION", "keep": ["asdead", "fearnot"]}, {"op": "EVENT"}], target="gnt:Matt 28:4-5",
+  controls=[{"loc": "gnt:Mark 16:5-6", "label": "Mark's tomb"}, {"loc": "gnt:Luke 24:4-5", "label": "Luke's tomb"}], note="With the earthquake and 'white as snow' (above), Matt 28:2–5 holds Rev 1:14, 1:17 and 16:18.")
+d(id="rev19.9+19.21+17.14→matt22.3-14", family="Matthew", title="The wedding parable, gathered", seed="gnt:Rev 19:9 + Rev 19:21 + Rev 17:14",
+  members=[m("supper", "the supper", "τὸ δεῖπνον", r"δειπν"), m("wedding", "of the wedding", "τοῦ γάμου", r"γαμ"), m("called", "those called", "κεκλημένοι", r"κεκλημεν"), m("rest", "the rest", "οἱ λοιποί", r"\bλοιποι"),
+           m("killed", "were killed", "ἀπεκτάνθησαν", r"απεκτ(ανθησαν|ειναν)"), m("kletoi", "called", "κλητοί", r"\bκλητοι"), m("chosen", "chosen", "ἐκλεκτοί", r"εκλεκτοι")],
+  steps=[{"op": "PARTITION", "keep": ["wedding", "called", "rest", "killed", "kletoi", "chosen"]}, {"op": "REORDER", "order": ["called", "wedding", "rest", "killed", "kletoi", "chosen"]}], target="gnt:Matt 22:3-14",
+  controls=[{"loc": "gnt:Luke 14:16-24", "label": "Luke's supper"}], note="Matthew's parable has what Luke's lacks: the wedding, the rest who kill and are destroyed by the king's armies (στρατεύματα: in the Gospels only here and Luke 23:11; Rev 19:14, 19), the garment, 'many called, few chosen'.")
+d(id="rev14.19→matt21.33", family="Matthew", title="The winepress", seed="gnt:Rev 14:19",
+  members=[m("vine", "the vine", "τὴν ἄμπελον", r"αμπελ"), m("press", "the winepress", "τὴν ληνόν", r"\bληνο")], steps=[{"op": "EVENT"}], target="gnt:Matt 21:33",
+  controls=[{"loc": "gnt:Mark 12:1", "label": "Mark: ὑπολήνιον"}, {"loc": "lxx:Ησαιας 5:2", "label": "Septuagint, Isa 5:2: προλήνιον"}])
+d(id="rev2.10→matt17.12", family="Matthew", title="About to suffer", seed="gnt:Rev 2:10",
+  members=[m("you", "you are about", "μέλλεις", r"μελλεισ"), m("suffer", "to suffer", "πάσχειν", r"πασχειν"), m("he", "is about", "μέλλει", r"μελλει\b", False)],
+  steps=[{"op": "PARTITION", "keep": ["you", "suffer"]}, {"op": "TRANSFER-ATTRIBUTE", "old": "you", "new": "he"}], target="gnt:Matt 17:12", controls=[{"loc": "gnt:Mark 9:12", "label": "Mark's parallel"}])
+d(id="rev1.3→matt26.18", family="Matthew", title="The time is near", seed="gnt:Rev 1:3",
+  members=[m("time", "the time", "ὁ καιρός", r"καιροσ"), m("near", "near", "ἐγγύς", r"εγγυσ")], steps=[{"op": "PARTITION", "keep": ["time", "near"]}, {"op": "EVENT"}], target="gnt:Matt 26:18",
+  controls=[{"loc": "gnt:Mark 14:14", "label": "Mark's parallel"}, {"loc": "gnt:Luke 21:8", "label": "Luke: ὁ καιρὸς ἤγγικεν"}])
+d(id="rev7.9→mark16.5", family="Mark", title="The white robe", seed="gnt:Rev 7:9",
+  members=[m("clothed", "clothed in", "περιβεβλημένους", r"περιβεβλημεν"), m("robe", "robes", "στολάς", r"στολ"), m("white", "white", "λευκάς", r"λευκ")],
+  steps=[{"op": "PARTITION", "keep": ["clothed", "robe", "white"]}, {"op": "EVENT"}], target="gnt:Mark 16:5",
+  controls=[{"loc": "gnt:Matt 28:3", "label": "Matthew's tomb"}, {"loc": "gnt:Luke 24:4", "label": "Luke's tomb"}, {"loc": "gnt:John 20:12", "label": "John's tomb"}],
+  note="Four tombs, four whites, each with its own place in the Apocalypse: Mark's στολὴν λευκήν (7:9), Matthew's λευκὸν ὡς χιών (1:14), John's ἐν λευκοῖς (3:4), Luke's ἀστραπτούσῃ.")
+d(id="rev6.15+19.17→mark6.21", family="Mark", title="Herod's supper", seed="gnt:Rev 6:15 + Rev 19:17",
+  members=[m("magnates", "the great ones", "οἱ μεγιστᾶνες", r"μεγιστα"), m("chiliarchs", "the commanders of thousands", "οἱ χιλίαρχοι", r"χιλιαρχ"), m("supper", "the supper", "τὸ δεῖπνον", r"δειπνον"),
+           m("god", "of God", "τοῦ Θεοῦ", r"του θεου"), m("herod", "Herod", "Ἡρῴδης", r"ηρωδησ", False)],
+  steps=[{"op": "PARTITION", "keep": ["magnates", "chiliarchs", "supper", "god"]}, {"op": "REVERSE-DOER", "old": "god", "new": "herod"}, {"op": "REORDER", "order": ["herod", "supper", "magnates", "chiliarchs"]}], target="gnt:Mark 6:21",
+  controls=[{"loc": "gnt:Matt 14:6", "label": "Matthew's parallel"}, {"loc": "gnt:Luke 14:16", "label": "Luke's great supper"}],
+  note="μεγιστᾶνες: Mark 6:21, Rev 6:15 and 18:23, and nowhere else in the New Testament. The supper where the Baptist's head is served has the guests of the supper of God.")
+d(id="rev9.3-4→luke10.19", family="Luke", title="Authority, scorpions, harm", seed="gnt:Rev 9:3-4",
+  members=[m("given", "was given to them", "ἐδόθη αὐταῖς", r"εδοθη αυτ"), m("authority", "authority", "ἐξουσία", r"εξουσια"), m("scorpions", "scorpions", "οἱ σκορπίοι", r"σκορπι"), m("hurt", "hurt", "ἀδικήσουσιν", r"αδικησ"),
+           m("givenyou", "I have given you", "δέδωκα ὑμῖν", r"δεδωκα υμιν", False)],
+  steps=[{"op": "PARTITION", "keep": ["given", "authority", "scorpions", "hurt"]}, {"op": "REVERSE-DOER", "old": "given", "new": "givenyou"}, {"op": "NEGATE", "negation": r"ου μη αδικησ"}], target="gnt:Luke 10:19",
+  controls=[{"loc": "gnt:Mark 16:18", "label": "Mark 16:18"}, {"loc": "lxx:Ψαλμοι 90:13", "label": "Septuagint, Ps 90:13"}], note="With Luke 10:18 (Satan fallen from heaven; Rev 12:9, 9:1) and 10:20 (names written in heaven; Rev 13:8, 21:27).")
+d(id="rev5.4→luke4.17", family="Luke", title="The book opened", seed="gnt:Rev 5:4",
+  members=[m("found", "was found", "εὑρέθη", r"ευρ(εθη|εν)\b"), m("open", "to open", "ἀνοῖξαι", r"ανοιξ"), m("book", "the book", "τὸ βιβλίον", r"βιβλιον")],
+  steps=[{"op": "UNDO", "negation": r"ουδεισ"}, {"op": "REORDER", "order": ["open", "book", "found"]}], target="gnt:Luke 4:17", controls=[{"loc": "gnt:Mark 6:2", "label": "Mark's Nazareth"}, {"loc": "gnt:Matt 13:54", "label": "Matthew's Nazareth"}])
+d(id="rev19.8+19.14→luke23.11", family="Luke", title="Herod's armies, the bright clothing", seed="gnt:Rev 19:8 + Rev 19:14",
+  members=[m("clothed", "to be clothed", "περιβάληται", r"περιβαλ"), m("bright", "bright", "λαμπρόν", r"λαμπρ"), m("armies", "the armies", "τὰ στρατεύματα", r"στρατευμα"), m("heaven", "in heaven", "ἐν τῷ οὐρανῷ", r"ουρανω"), m("herod", "Herod", "ὁ Ἡρῴδης", r"ηρωδησ", False)],
+  steps=[{"op": "PARTITION", "keep": ["clothed", "bright", "armies", "heaven"]}, {"op": "REVERSE-DOER", "old": "heaven", "new": "herod"}, {"op": "REORDER", "order": ["herod", "armies", "clothed", "bright"]}], target="gnt:Luke 23:11",
+  controls=[{"loc": "gnt:Mark 15:17", "label": "Mark: the purple"}, {"loc": "gnt:Matt 27:28", "label": "Matthew: the scarlet"}])
+R1616 = [m("place", "the place", "τὸν τόπον", r"τοπον"), m("called", "called", "τὸν καλούμενον", r"καλουμενον"), m("hebrew", "in Hebrew", "Ἑβραϊστί", r"εβραιστι"), m("said", "said", "λεγόμενον", r"λεγομενον|λεγεται", False)]
+d(id="rev16.16→luke23.33", family="Luke", title="The place called", seed="gnt:Rev 16:16", members=R1616, steps=[{"op": "PARTITION", "keep": ["place", "called"]}], target="gnt:Luke 23:33",
+  controls=[{"loc": "gnt:John 19:17", "label": "John's half"}, {"loc": "gnt:Mark 15:22", "label": "Mark's parallel"}, {"loc": "gnt:Matt 27:33", "label": "Matthew's parallel"}])
+d(id="rev16.16→john19.17", family="John", title="The place, in Hebrew", seed="gnt:Rev 16:16", members=R1616, steps=[{"op": "SUBSTITUTE", "old": "called", "new": "said"}, {"op": "REORDER", "order": ["said", "place", "hebrew"]}], target="gnt:John 19:17",
+  controls=[{"loc": "gnt:Luke 23:33", "label": "Luke's half"}, {"loc": "gnt:Mark 15:22", "label": "Mark's parallel"}], note="Ἑβραϊστί: five times in John, twice in Revelation (9:11; 16:16), nowhere else in the New Testament.")
+d(id="rev11.8→john19.20", family="John", title="The city where he was crucified", seed="gnt:Rev 11:8",
+  members=[m("city", "of the city", "τῆς πόλεως", r"πολεωσ"), m("where", "where", "ὅπου", r"οπου"), m("lord", "their Lord", "ὁ Κύριος αὐτῶν", r"κυριοσ αυτων"), m("crucified", "was crucified", "ἐσταυρώθη", r"εσταυρωθη"), m("jesus", "Jesus", "ὁ Ἰησοῦς", r"ιησουσ", False)],
+  steps=[{"op": "PARTITION", "keep": ["city", "where", "lord", "crucified"]}, {"op": "SUBSTITUTE", "old": "lord", "new": "jesus"}, {"op": "REORDER", "order": ["city", "where", "crucified", "jesus"]}], target="gnt:John 19:20",
+  controls=[{"loc": "gnt:Luke 23:33", "label": "Luke"}, {"loc": "gnt:Heb 13:12", "label": "Hebrews 13:12"}])
+d(id="rev2.10→john20.27", family="John", title="Be faithful", seed="gnt:Rev 2:10",
+  members=[m("be", "be", "γίνου", r"γινου"), m("faithful", "faithful", "πιστός", r"\bπιστοσ"), m("unfaithful", "not unfaithful", "μὴ … ἄπιστος", r"απιστοσ", False)],
+  steps=[{"op": "PARTITION", "keep": ["be", "faithful"]}, {"op": "ADD", "new": "unfaithful", "at": 1}], target="gnt:John 20:27", controls=[{"loc": "gnt:Luke 16:10", "label": "Luke 16:10"}, {"loc": "gnt:Matt 25:21", "label": "Matthew 25:21"}])
+d(id="rev3.10→john17.15", family="John", title="Keep them out of", seed="gnt:Rev 3:10",
+  members=[m("kept", "you kept", "ἐτήρησας", r"ετηρησασ"), m("keep", "I will keep", "τηρήσω", r"\bτηρησ(ω|ησ)\b"), m("outof", "out of", "ἐκ", r"\bεκ τ"), m("hour", "the hour of trial", "τῆς ὥρας τοῦ πειρασμοῦ", r"ωρασ του πειρασμου"), m("evil", "the evil one", "τοῦ πονηροῦ", r"του πονηρου", False)],
+  steps=[{"op": "PARTITION", "keep": ["keep", "outof", "hour"]}, {"op": "SUBSTITUTE-OBJECT", "old": "hour", "new": "evil"}], target="gnt:John 17:15", controls=[{"loc": "gnt:Matt 6:13", "label": "Matthew 6:13"}, {"loc": "gnt:John 17:6", "label": "John 17:6, the other half: they have kept your word"}])
+d(id="rev9.11→john19.20", family="John", title="In Hebrew, and in Greek", seed="gnt:Rev 9:11",
+  members=[m("name", "his name", "ὄνομα αὐτῷ", r"ονομα"), m("hebrew", "in Hebrew", "Ἑβραϊστί", r"εβραιστι"), m("greek", "in Greek", "ἐν τῇ Ἑλληνικῇ", r"ελληνι"), m("written", "written", "γεγραμμένον", r"γεγραμμενον", False), m("roman", "in Latin", "Ῥωμαϊστί", r"ρωμαιστι", False)],
+  steps=[{"op": "PARTITION", "keep": ["name", "hebrew", "greek"]}, {"op": "SUBSTITUTE", "old": "name", "new": "written"}, {"op": "ADD", "new": "roman", "at": 2}], target="gnt:John 19:20", controls=[{"loc": "gnt:Luke 23:38", "label": "Luke's title"}, {"loc": "gnt:Acts 21:40", "label": "Acts 21:40"}])
 src = json.dumps(D, ensure_ascii=False, sort_keys=True)
 print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))

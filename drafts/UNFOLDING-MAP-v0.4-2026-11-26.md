@@ -1,6 +1,6 @@
-# The Unfolding Map — working file v0.3
+# The Unfolding Map — working file v0.4
 
-26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
+26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine now runs forty derivations in thirteen operators (2B.3). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
 
 The programme, in the author's words (12:35): "we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a seven within seven structure: the seven church pauline formation transformed from rev's seven churches, but then also paul as one of seven and the other named epistolary positions mapped to rev's seven." And (12:42, 12:45): Philo as guide, with other suppressed witnesses like Newton; the transform map opened to Philo's texts as a possible supplementary source.
 
@@ -109,9 +109,9 @@ Three of the eight come from three consecutive verses, Rev 18:21–23, the dirge
 
 ## 2B. The engine
 
-2B.1. What it is. `midrash.py`: a seed is read from the seat; its MEMBERS are named pieces of its wording; OPERATORS change the list of members in a declared order; the result is an EMISSION, a prediction of what the later text keeps, in what order, what it drops, what it substitutes, what it marks. The emission is scored against the seated target, against controls (the Septuagint source, the Synoptic parallel, the other half), and then against every verse of the seated New Testament (7,942) and Septuagint (28,933). Derivations are data (`derivations.py`), frozen by hash before the run. The page *Midrashim Transform Bench* runs the same derivations in the browser by a port of the engine; its scores agree with the Python run on all 24; an operator can be switched off there and the target watched to fail.
+2B.1. What it is. `midrash.py`: a seed is read from the seat; its MEMBERS are named pieces of its wording; OPERATORS change the list of members in a declared order; the result is an EMISSION, a prediction of what the later text keeps, in what order, what it drops, what it substitutes, what it marks. The emission is scored against the seated target, against controls (the Septuagint source, the Synoptic parallel, the other half), and then against every verse of the seated New Testament (7,942) and Septuagint (28,933). Derivations are data (`derivations.py`), frozen by hash before the run. The page *Midrashim Transform Bench* runs the same derivations in the browser by a port of the engine; its scores agree with the Python run on all forty; an operator can be switched off there and the target watched to fail.
 
-2B.2. Twelve operators, declared: PARTITION, REORDER, SUBSTITUTE, SUBSTITUTE-OBJECT, TRANSFER-ATTRIBUTE, EVENT, CITE-AS-SCRIPTURE, REVERSE-DOER, UNDO, STATION, HIDE, ADD (unused so far). The first eight came from Matthew and the partitions; REVERSE-DOER and UNDO from John; STATION and HIDE from what Revelation does to Philo (#1758).
+2B.2. Thirteen operators, declared: PARTITION, REORDER, SUBSTITUTE, SUBSTITUTE-OBJECT, TRANSFER-ATTRIBUTE, EVENT, CITE-AS-SCRIPTURE, REVERSE-DOER, UNDO, STATION, HIDE, ADD, NEGATE. (Twelve change members; EVENT changes place only.) The first eight came from Matthew and the partitions; REVERSE-DOER and UNDO from John; STATION and HIDE from what Revelation does to Philo (#1758).
 
 2B.3. The run.
 
@@ -141,8 +141,24 @@ Three of the eight come from three consecutive verses, Rev 18:21–23, the dirge
 | `philo.leg3.174-175→rev2.17` | The manna | PARTITION → HIDE | 1.00 | 0.40 | 1 | 0 |
 | `rev2.17→heb9.4` | The hidden manna, in the ark | SUBSTITUTE → REORDER | 1.00 | 0.50 | 1 | 1 |
 | `philo.mos2.114→rev19.12` | The name on the head | SUBSTITUTE → SUBSTITUTE → SUBSTITUTE → REORDER | 1.00 | 0.75 | 1 | 0 |
+| `rev1.17→matt28.4-5` | As dead; fear not | PARTITION → EVENT | 1.00 | 0.25 | 1 | 0 |
+| `rev19.9+19.21+17.14→matt22.3-14` | The wedding parable, gathered | PARTITION → REORDER | 1.00 | 0.12 | 2 | 0 |
+| `rev14.19→matt21.33` | The winepress | EVENT | 1.00 | 0.33 | 1 | 0 |
+| `rev2.10→matt17.12` | About to suffer | PARTITION → TRANSFER-ATTRIBUTE | 1.00 | 0.25 | 1 | 0 |
+| `rev1.3→matt26.18` | The time is near | PARTITION → EVENT | 1.00 | 0.33 | 2 | 0 |
+| `rev7.9→mark16.5` | The white robe | PARTITION → EVENT | 1.00 | 0.25 | 2 | 0 |
+| `rev6.15+19.17→mark6.21` | Herod's supper | PARTITION → REVERSE-DOER → REORDER | 1.00 | 0.33 | 1 | 0 |
+| `rev9.3-4→luke10.19` | Authority, scorpions, harm | PARTITION → REVERSE-DOER → NEGATE | 1.00 | 0.14 | 1 | 0 |
+| `rev5.4→luke4.17` | The book opened | UNDO → REORDER | 1.00 | 0.20 | 1 | 0 |
+| `rev19.8+19.14→luke23.11` | Herod's armies, the bright clothing | PARTITION → REVERSE-DOER → REORDER | 1.00 | 0.17 | 1 | 0 |
+| `rev16.16→luke23.33` | The place called | PARTITION | 1.00 | 0.50 | 2 | 0 |
+| `rev16.16→john19.17` | The place, in Hebrew | SUBSTITUTE → REORDER | 1.00 | 0.40 | 1 | 0 |
+| `rev11.8→john19.20` | The city where he was crucified | PARTITION → SUBSTITUTE → REORDER | 1.00 | 0.33 | 1 | 0 |
+| `rev2.10→john20.27` | Be faithful | PARTITION → ADD | 1.00 | 0.25 | 1 | 0 |
+| `rev3.10→john17.15` | Keep them out of | PARTITION → SUBSTITUTE-OBJECT | 1.00 | 0.50 | 1 | 0 |
+| `rev9.11→john19.20` | In Hebrew, and in Greek | PARTITION → SUBSTITUTE → ADD | 1.00 | 0.17 | 1 | 0 |
 
-2B.4. What the run shows. Every target fits its emission. No control fits: the best is 0.75 (the new name of Rev 2:17 against the emission for Rev 19:12), and the Septuagint sources score 0.14 to 0.60. In 22 of 24 derivations the emission fits exactly one verse of the New Testament, the target. The two exceptions are the wedding (Matt 22:3 and 22:4, one pericope) and the storm (Matt 8:24, and Rev 16:18, the Apocalypse's own second earthquake).
+2B.4. What the run shows. Every one of the 40 targets fits its emission, and no control does: the best is 0.75 (the new name of Rev 2:17 against the emission for Rev 19:12). In 34 of 40 the emission fits exactly one verse of the New Testament, the target. Of the six that fit two, three find the Apocalypse's own repetition (Rev 16:18; 22:10; 7:13), two are the wedding parable's adjacent verses, and one is a true second: "a place called", Acts 27:8, which is Luke's own idiom and weakens that derivation (`rev16.16→luke23.33`).
 
 2B.5. What it does not show. The derivations were written with the targets in view. A pass means the change from seed to target can be stated in twelve operators; it is the controls and the search that carry weight, and they say the statement is narrow. It is not a blind prediction. The blind form is the next operation: freeze the operators, take seeds not yet read against anything, enumerate the emissions the operators allow, and search; the hit rate against a shuffled seed is the measure.
 
@@ -155,6 +171,93 @@ Three of the eight come from three consecutive verses, Rev 18:21–23, the dirge
 - John 6:31 and 6:49 have "the fathers ate the manna": the fathers are Deuteronomy's and Philo's member (Leg. 3.174–175), which Rev 2:17 dropped. Hebrews 9:4 fits the emission from Rev 2:17 (the manna, covered on every side, inside the ark).
 
 So Rev 2:17, the promise to Pergamum, is itself a partition seed with Philo upstream: manna, vote and name. Hebrews takes the manna in Revelation's form; John takes it with a member Revelation does not have; Acts takes the vote in Philo's form. The two-column test of 5.2 works, and it cuts both ways.
+
+## 2C. The four laws
+
+2C.1. Method. No verse was chosen. `law.py` takes every pair of a Revelation verse and a Gospel verse sharing two or more rare stems (295 links), sets aside those the Septuagint could supply in one verse, and describes each remaining link by what can be computed from the two verses. Then I read every link in the lists, verified each wording across the whole New Testament (`verify.py`), and stated what each Gospel does in the engine's operators. The counts are small (15 to 42 links a Gospel) and are a finder; the laws rest on the verified loci and the engine's run.
+
+| | Matthew | Mark | Luke | John |
+|---|---|---|---|---|
+| links the Septuagint cannot supply | 34 | 15 | 42 | 27 |
+| per 100 verses of the Gospel | 3.2 | 2.2 | 3.7 | 3.1 |
+| in this Gospel alone of the four, % | 74 | 73 | 83 | 100 |
+| shared words keeping their exact form (0–1) | 0.62 | 0.5 | 0.5 | 0.61 |
+| order of the shared words kept, % | 35 | 53 | 48 | 63 |
+| shared words set further apart than in the seed, % | 38 | 47 | 40 | 37 |
+| seed's first person still a first person, % | 50 | 60 | 38 | 44 |
+| seed's negation gone, % | 18 | 20 | 12 | 15 |
+| a negation come, % | 21 | 20 | 36 | 26 |
+| marked as written or prophesied, % | 3 | 0 | 19 | 4 |
+
+| Seed region (links per 100 verses of the region) | Matthew | Mark | Luke | John |
+|---|---|---|---|---|
+| Rev 1 the vision | 15.0 | 0.0 | 5.0 | 0.0 |
+| Rev 2–3 the letters | 19.6 | 9.8 | 13.7 | 17.6 |
+| Rev 4–5 the throne and the Lamb | 8.0 | 4.0 | 28.0 | 4.0 |
+| Rev 6–7 the seals | 2.9 | 5.9 | 0.0 | 2.9 |
+| Rev 8–11 the trumpets | 9.4 | 1.6 | 12.5 | 1.6 |
+| Rev 12–14 the woman, the beasts | 3.6 | 3.6 | 3.6 | 8.9 |
+| Rev 15–16 the plagues | 6.9 | 3.4 | 6.9 | 10.3 |
+| Rev 17–18 Babylon | 9.5 | 0.0 | 4.8 | 4.8 |
+| Rev 19–20 the rider, the judgment | 8.3 | 5.6 | 30.6 | 2.8 |
+| Rev 21–22 the city | 2.1 | 2.1 | 4.2 | 8.3 |
+
+2C.2. **A test with nothing read: whose special vocabulary is Revelation's.** Take the stems found in one Gospel alone of the four (Matthew 451, Mark 242, Luke 861, John 388) and ask what share stands in a comparison book.
+
+| Special stems of | in Revelation | in Acts | in Romans | in 1 Corinthians | in Hebrews |
+|---|---|---|---|---|---|
+| Matthew | 12.2% | 18.4% | 8.9% | 7.5% | 6.7% |
+| Mark | 6.2% | 19.0% | 8.3% | 5.0% | 8.3% |
+| Luke | 8.5% | 29.6% | 10.3% | 9.3% | 9.5% |
+| John | 8.8% | 20.6% | 10.1% | 9.5% | 8.8% |
+
+Matthew's own words are Revelation's words at twice Mark's rate and half again Luke's and John's, and Matthew is not raised against any other book (in Hebrews he is lowest). Luke's lean to Acts is the expected control and shows the measure sees real kinship. Not yet controlled for the Septuagint.
+
+2C.3. **Matthew: the sign set down as an event, in Revelation's own word.** Where Matthew departs from Mark, or has what Luke's parallel lacks, the word he lands on is the Apocalypse's, and it is a thing that happens or a thing in a parable. Each wording below is, in the Gospels, Matthew's alone:
+
+- σεισμός as an event, three times (8:24; 27:54; 28:2), twice σεισμὸς μέγας: Rev 6:12; 16:18. Mark's storm is λαῖλαψ.
+- The tomb, 28:2–5, gathers Rev 1:14–17 and 16:18: the earthquake; λευκὸν ὡς χιών; ὡς νεκροί; μὴ φοβεῖσθε. In Revelation the seer falls as dead before the one white as snow and is told not to fear; in Matthew the guards become as dead before the angel white as snow and the women are told not to fear.
+- The wedding parable, 22:1–14, gathers Rev 19:7–21 and 17:14: γάμος, κεκλημένοι, οἱ λοιποί who kill and are killed, the king's στρατεύματα, the garment, κλητοί and ἐκλεκτοί (the pair stands at Matt 22:14 and Rev 17:14 and nowhere else). Luke's supper has none of these.
+- ληνός, 21:33: Rev 14:19–20; 19:15. Mark has ὑπολήνιον; Isaiah has προλήνιον.
+- σάλπιγξ at the gathering from the four winds, 24:31: the trumpets; Rev 7:1. Mark 13:27 has no trumpet.
+- μέλλει πάσχειν, 17:12: Rev 2:10, μέλλεις πάσχειν. ὁ καιρός μου ἐγγύς, 26:18: Rev 1:3; 22:10.
+- κόψονται πᾶσαι αἱ φυλαὶ τῆς γῆς, 24:30: Rev 1:7.
+
+Law, stated for scoring: *Matthew = EVENT + PARTITION + REORDER on the vision and its judgment scenes, the seed's word kept in its exact form.* The profile agrees: highest exact-form retention, lowest order kept (35%), seed densest in Rev 1 and the letters. Three knots: the tomb, the wedding, the coming (24:29–31).
+
+2C.4. **Mark: the scene of the adversary.** Mark's own links are few and they collect in chapter 6. Herod makes a supper "for his great ones and the commanders of thousands" (6:21): μεγιστᾶνες stands in the New Testament at Mark 6:21, Rev 6:15 and 18:23 and nowhere else; the great ones and the chiliarchs are side by side at Rev 6:15, and the chiliarchs are on the table at the supper of God (19:17–18). Herod seizes and binds the Baptist (6:17, ἐκράτησεν … ἔδησεν): Rev 20:2, the dragon seized and bound, the same two verbs in the same order. The disciples are "tormented" on the sea in the night (6:48, βασανιζομένους; Matthew has the word of the boat): Rev 14:11; 20:10. And at the tomb the young man is περιβεβλημένον στολὴν λευκήν (16:5), the phrase of the great multitude (Rev 7:9 and 7:13, and nowhere else).
+
+Law: *Mark = REVERSE-DOER on the judgment scenes: what God or the angel does to the adversary in the seed, the adversary's court does to the prophet in the Gospel; the words are kept loosely and no member is marked as written.* The profile: lowest exact-form retention with Luke, words set further apart than in the seed (47%; 64% in his own links), zero citations. This is #639's "narrative inversion" with loci. It is the thinnest of the four and rests on one chapter.
+
+2C.5. **Luke: authority handed down, and the throne room made a room.** Luke's own links cluster on Rev 4–5 and 19–20 (28 and 31 per 100 seed verses, against 4 to 8 for the others).
+
+- The book. Rev 5:4, no one was found worthy to open the book. Luke 4:17: he opened the book and found the place. Outside Revelation, a book is opened in the New Testament at Luke 4:17 alone. The throne room is the synagogue at Nazareth.
+- Authority. In Revelation authority is given to the locusts as scorpions have it, to hurt (9:3–4, 10). Luke 10:19: "I have given you authority to tread on serpents and scorpions … and nothing shall hurt you." The verb stands in the Gospels here and at Matt 20:13. With it: Satan fallen from heaven (10:18; Rev 12:9), names written in heaven (10:20). ἐξουσίαν ἐπί in the accusative, authority over: Luke 9:1 and Rev 2:26, 14:18, 16:9. The pounds: "be over ten cities" (19:17) beside Thyatira's "authority over the nations".
+- Herod "with his armies" clothes Jesus in bright apparel (23:11): Rev 19:8 and 19:14, the bright linen and the armies of heaven, in one verse, of a scene only Luke has.
+- The supper, δεῖπνον μέγα (14:16): Rev 19:17, τὸ δεῖπνον τὸ μέγα, and nowhere else.
+
+Law: *Luke = REVERSE-DOER on the recipient + NEGATE: the power the seed gives to the plague is given to the disciples and the harm is denied; the heavenly scene is set in a named earthly room; the member is marked as written.* The profile: negation added in 36% (highest), marked as written 19% (the others 0 to 4).
+
+2C.6. **John: the speaker goes on speaking, and the judgment is undone.** All 27 of John's links are his alone of the four.
+
+- The promises to the churches come back as his own imperatives and prayers: γίνου πιστός (Rev 2:10) is "μὴ γίνου ἄπιστος ἀλλὰ πιστός" to Thomas (20:27), the two only places; "because you kept my word I will keep you out of the hour" (Rev 3:10) is "keep them out of the evil one" (17:15), τηρέω ἐκ in those two places only, and "they have kept your word" (17:6).
+- The passion is laid on Revelation's place-names. Ἑβραϊστί: five times in John, twice in Revelation, nowhere else. "The place called in Hebrew Harmagedon" (16:16) / "the place … which is said in Hebrew Golgotha" (19:17). "The great city … where their Lord was crucified" (11:8) / "the place of the city where Jesus was crucified" (19:20). "His name in Hebrew … and in Greek" (9:11) / "written in Hebrew, in Latin, in Greek" (19:20). "They pierced" (1:7 / 19:37). John 19:13–37 is a knot of four seeds.
+- The dirge undone (2A.3): bridegroom, lamp, stone.
+
+Law: *John = the first person kept + UNDO + SUBSTITUTE-OBJECT: the one who speaks in the seed speaks in the Gospel; a "no more" becomes a presence; the judgment's place becomes the cross's place.* The profile: order kept most often (63%); first person kept in 67% of all his links against 30 to 38 for the others.
+
+2C.7. **One scene, four seeds: the white at the tomb.** Each Gospel dresses the figure at the tomb in white, in four different wordings, and three of the four are a wording found in that Gospel and in Revelation and nowhere else:
+
+| | Wording | Revelation | Whose white |
+|---|---|---|---|
+| Matthew 28:3 | λευκὸν ὡς χιών | 1:14 | the one in the midst |
+| Mark 16:5 | περιβεβλημένον στολὴν λευκήν | 7:9, 13 | the great multitude |
+| John 20:12 | ἐν λευκοῖς | 3:4 | those of Sardis who walk with him |
+| Luke 24:4 | ἐν ἐσθῆτι ἀστραπτούσῃ | (4:5; 8:5: ἀστραπαί) | the lightning of the throne; not exclusive |
+
+This is the fourfold in one verse apiece, and it is the first datum for 3.4: the four take four different figures of the Apocalypse for the same place in the story.
+
+2C.8. What is and is not shown. The four statements are laws in the sense of 2B: each is written in declared operators, each locus under it runs in the engine against controls and the whole corpus, and the profile was computed before the reading. They were found by reading the lists, so they are hypotheses with a test attached, and the test is the blind run: the law for a Gospel predicts which operators its *next* links will need. Mark's rests on one chapter. Luke's "place called" is his own idiom (Acts 27:8). The special-vocabulary test (2C.2) is the one result here with nothing read.
 
 ## 3. The fourfold
 
@@ -220,7 +323,7 @@ Not established there, and kept so here: the route (Philo's text or a tradition 
 
 ## 6. Next operations, in order
 
-0. The blind run of 2B.5.
+0. The blind run of 2B.5, now with a prediction per Gospel (2C.8): hold out half of each Gospel's links, fit the law on the rest, score the held-out half.
 1. Freeze the operators (2.6, 2.9, 2A.5), then count Matthew's departures from Mark: how many land on Revelation's wording, how many on the Septuagint's.
 2. The double tradition whole against Rev 1–3, 16:15, 19:9 and 22: three sayings now partition; #1747 asked for the census.
 3. The dirge (Rev 18) and the plagues (15–16) against John entire, by sense, with the pairing declared before it is scored.

@@ -22,6 +22,7 @@ OPS = {
  "STATION":            "make one into several, each answerable for itself (one lampstand of seven lamps into seven lampstands)",
  "HIDE":               "what the source says is not known, the borrower says is hidden and promised",
  "ADD":                "add a member the seed does not have (recorded, so that an addition is never silent)",
+ "NEGATE":             "deny for the borrower's own what the seed inflicts: the harm stays in the words and a 'not' is set on it",
 }
 def norm(s):
     s = unicodedata.normalize("NFD", s); s = "".join(c for c in s if not unicodedata.combining(c)).lower().replace("ς", "σ")
@@ -59,7 +60,7 @@ def run(D, S):
     seed_text = S.get(D["seed"]); ns = norm(seed_text); M = {m["id"]: m for m in D["members"]}
     seed_check = {k: bool(re.search(m["rx"], ns)) for k, m in M.items() if m.get("in_seed", True)}
     state = [k for k, m in M.items() if m.get("in_seed", True)]; state.sort(key=lambda k: re.search(M[k]["rx"], ns).start() if re.search(M[k]["rx"], ns) else 10**6)
-    dropped, marker, absent_rx, trace = [], None, [], [{"op": "SEED", "state": list(state)}]
+    dropped, marker, absent_rx, required, trace = [], None, [], [], [{"op": "SEED", "state": list(state)}]
     for st in D["steps"]:
         op = st["op"]; assert op in OPS, op
         if op == "PARTITION": dropped += [k for k in state if k not in st["keep"]]; state = [k for k in state if k in st["keep"]]
@@ -68,6 +69,7 @@ def run(D, S):
             i = state.index(st["old"]); state[i] = st["new"]; dropped.append(st["old"])
         elif op == "ADD": state.insert(st.get("at", len(state)), st["new"])
         elif op == "CITE-AS-SCRIPTURE": marker = st["marker"]
+        elif op == "NEGATE": required.append(st["negation"])
         elif op == "UNDO": absent_rx.append(st["negation"]); assert re.search(st["negation"], ns), (D["id"], "the seed has no such negation")
         trace.append({"op": op, "does": OPS[op], **{k: v for k, v in st.items() if k != "op"}, "state": list(state)})
     def score(loc):
@@ -81,22 +83,23 @@ def run(D, S):
                   "in the emitted order": (int(ordered), 1) if len(state) > 1 else None,
                   "dropped members absent": (sum(1 for k in dropped if not re.search(M[k]["rx"], nt)), len(dropped)) if dropped else None,
                   "marker present": (int(bool(re.search(marker, nt))), 1) if marker else None,
-                  "negation absent": (sum(1 for r in absent_rx if not re.search(r, nt)), len(absent_rx)) if absent_rx else None}
+                  "negation absent": (sum(1 for r in absent_rx if not re.search(r, nt)), len(absent_rx)) if absent_rx else None,
+                  "the borrower's 'not' present": (sum(1 for r in required if re.search(r, nt)), len(required)) if required else None}
         checks = {k: v for k, v in checks.items() if v}
         got, of = sum(v[0] for v in checks.values()), sum(v[1] for v in checks.values())
         return {"loc": loc if isinstance(loc, str) else loc[0], "text": t, "checks": checks, "score": round(got / of, 2), "passes": got == of, "missing": [k for k in state if pos[k] is None],
                 "kept_but_should_be_dropped": [k for k in dropped if re.search(M[k]["rx"], nt)]}
     out = {"id": D["id"], "title": D["title"], "family": D["family"], "seed": {"loc": D["seed"], "text": seed_text, "members_found": seed_check},
-           "members": {k: {"gloss": m["gloss"], "greek": m["greek"]} for k, m in M.items()}, "trace": trace, "emission": {"members": state, "dropped": dropped, "marker": marker, "negation_removed": bool(absent_rx)},
+           "members": {k: {"gloss": m["gloss"], "greek": m["greek"]} for k, m in M.items()}, "trace": trace, "emission": {"members": state, "dropped": dropped, "marker": marker, "negation_removed": bool(absent_rx), "negation_set": bool(required)},
            "target": score(D["target"]), "controls": [dict(score(c["loc"]), label=c["label"]) for c in D.get("controls", [])], "note": D.get("note"), "records": D.get("records", [])}
     # the search: every verse of the seated New Testament outside Revelation, and every verse of the seated Septuagint, scored against the same emission
-    tv = len(re.findall(r"\d+-\d+$", D["target"])) and 2 or 1; hits = {}
+    mr = re.search(r"(\d+)-(\d+)$", D["target"]); tv = (int(mr.group(2)) - int(mr.group(1)) + 1) if mr else 1; hits = {}
     for corpus, name in (("gnt-nestle1904", "new_testament"), ("lxx-swete", "septuagint")):
         seedrefs = set(re.findall(r"[A-Za-z0-9]+ \d+:\d+", D["seed"]))
         L = [(r, t) for r, t in S._orig(corpus).items() if r not in seedrefs]
         L = list(dict(L).items()); found = []
         for i, (r, t) in enumerate(L):
-            txt = t if tv == 1 or i + 1 >= len(L) else t + " " + L[i + 1][1]
+            txt = t if tv == 1 else " ".join(x[1] for x in L[i:i + tv])
             if score((r, txt))["passes"]: found.append(r)
         hits[name] = {"verses_searched": len(L), "passing": len(found), "refs": found[:12]}
     out["search"] = hits
