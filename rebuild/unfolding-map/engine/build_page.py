@@ -75,20 +75,21 @@ function normMap(s){let out="",map=[];for(let i=0;i<s.length;i++){const d=s[i].n
 const rx=(p,f)=>new RegExp(p,f||"");
 function emit(d,on){const M=Object.fromEntries(d.members.map(m=>[m.id,m]));const ns=normMap(d.seed.text).n;
   let state=d.members.filter(m=>m.in_seed!==false).map(m=>m.id);const at=k=>{const m=rx(M[k].rx).exec(ns);return m?m.index:1e6};state.sort((a,b)=>at(a)-at(b));
-  let dropped=[],marker=null,neg=[],req=[],trace=[state.slice()];
+  let dropped=[],marker=null,neg=[],req=[],rep={},trace=[state.slice()];
   d.steps.forEach((st,i)=>{if(on[i]){const op=st.op;
     if(op==="PARTITION"){dropped=dropped.concat(state.filter(k=>!st.keep.includes(k)));state=state.filter(k=>st.keep.includes(k));}
     else if(op==="REORDER"){const o=st.order.filter(k=>state.includes(k));state=o.concat(state.filter(k=>!o.includes(k)));}
     else if(["SUBSTITUTE","SUBSTITUTE-OBJECT","TRANSFER-ATTRIBUTE","REVERSE-DOER","STATION","HIDE"].includes(op)){const j=state.indexOf(st.old);if(j>=0){state[j]=st.new;dropped.push(st.old);}}
-    else if(op==="ADD"){state.splice(st.at===undefined?state.length:st.at,0,st.new);}else if(op==="NEGATE")req.push(st.negation);
+    else if(op==="ADD"){state.splice(st.at===undefined?state.length:st.at,0,st.new);}else if(op==="STAGE"){state.push(st.new);}else if(op==="EXPAND"){Object.assign(rep,st.repeat);}else if(op==="NEGATE")req.push(st.negation);
     else if(op==="CITE-AS-SCRIPTURE"||op==="CITE-AS-PROMISE")marker=st.marker;else if(op==="UNDO")neg.push(st.negation);}
     trace.push(state.slice());});
-  return {M,state,dropped,marker,neg,req,trace,unordered:!!d.unordered};}
+  return {M,state,dropped,marker,neg,req,rep,trace,unordered:!!d.unordered};}
 function score(e,text){const {n}=normMap(text);const has=k=>rx(e.M[k].rx).test(n);const present=e.state.filter(has);let at=0,ord=true;
   for(const k of e.state){const r=rx(e.M[k].rx,"g");r.lastIndex=at;const m=r.exec(n);if(!m){ord=false;break;}at=m.index+1;}
   const c=[["kept members present",present.length,e.state.length]];if(e.state.length>1&&!e.unordered)c.push(["in the emitted order",ord?1:0,1]);
   if(e.dropped.length)c.push(["dropped members absent",e.dropped.filter(k=>!has(k)).length,e.dropped.length]);
   if(e.marker)c.push(["marker present",rx(e.marker).test(n)?1:0,1]);if(e.neg.length)c.push(["the seed's ‘no more’ absent",e.neg.filter(r=>!rx(r).test(n)).length,e.neg.length]);if(e.req.length)c.push(["the borrower's ‘not’ present",e.req.filter(r=>rx(r).test(n)).length,e.req.length]);
+  const rk=Object.keys(e.rep||{});if(rk.length)c.push(["members said again",rk.filter(k=>(n.match(rx(e.M[k].rx,"g"))||[]).length>=e.rep[k]).length,rk.length]);
   const got=c.reduce((a,x)=>a+x[1],0),of=c.reduce((a,x)=>a+x[2],0);return {checks:c,score:got/of,pass:got===of};}
 const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 function hl(text,e,ids,d){const {n,map}=normMap(text);let spans=[];ids.forEach(k=>{const m=rx(e.M[k].rx).exec(n);if(m&&m[0].length){spans.push([map[m.index],map[m.index+m[0].length-1]+1,d.members.findIndex(x=>x.id===k)%7,e.M[k].gloss]);}});

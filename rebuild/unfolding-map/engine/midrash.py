@@ -24,6 +24,8 @@ OPS = {
  "HIDE":               "what the source says is not known, the borrower says is hidden and promised",
  "ADD":                "add a member the seed does not have (recorded, so that an addition is never silent)",
  "NEGATE":             "deny for the borrower's own what the seed inflicts: the harm stays in the words and a 'not' is set on it",
+ "EXPAND":             "say the seed's members again: each named member stands in the borrower at least the stated number of times (a short seed worked into a long stretch)",
+ "STAGE":              "give the seed's sentence a person and a place: a figure the seed does not have, who takes the part the seed leaves unnamed",
 }
 def norm(s):
     s = unicodedata.normalize("NFD", s); s = "".join(c for c in s if not unicodedata.combining(c)).lower().replace("ς", "σ")
@@ -61,7 +63,7 @@ def run(D, S):
     seed_text = S.get(D["seed"]); ns = norm(seed_text); M = {m["id"]: m for m in D["members"]}
     seed_check = {k: bool(re.search(m["rx"], ns)) for k, m in M.items() if m.get("in_seed", True)}
     state = [k for k, m in M.items() if m.get("in_seed", True)]; state.sort(key=lambda k: re.search(M[k]["rx"], ns).start() if re.search(M[k]["rx"], ns) else 10**6)
-    dropped, marker, absent_rx, required, trace = [], None, [], [], [{"op": "SEED", "state": list(state)}]
+    dropped, marker, absent_rx, required, trace = [], None, [], [], [{"op": "SEED", "state": list(state)}]; repeat = {}
     for st in D["steps"]:
         op = st["op"]; assert op in OPS, op
         if op == "PARTITION": dropped += [k for k in state if k not in st["keep"]]; state = [k for k in state if k in st["keep"]]
@@ -69,6 +71,8 @@ def run(D, S):
         elif op in ("SUBSTITUTE", "SUBSTITUTE-OBJECT", "TRANSFER-ATTRIBUTE", "REVERSE-DOER", "STATION", "HIDE"):
             i = state.index(st["old"]); state[i] = st["new"]; dropped.append(st["old"])
         elif op == "ADD": state.insert(st.get("at", len(state)), st["new"])
+        elif op == "STAGE": state.append(st["new"])
+        elif op == "EXPAND": repeat.update(st["repeat"])
         elif op in ("CITE-AS-SCRIPTURE", "CITE-AS-PROMISE"): marker = st["marker"]
         elif op == "NEGATE": required.append(st["negation"])
         elif op == "UNDO": absent_rx.append(st["negation"]); assert re.search(st["negation"], ns), (D["id"], "the seed has no such negation")
@@ -85,7 +89,8 @@ def run(D, S):
                   "dropped members absent": (sum(1 for k in dropped if not re.search(M[k]["rx"], nt)), len(dropped)) if dropped else None,
                   "marker present": (int(bool(re.search(marker, nt))), 1) if marker else None,
                   "negation absent": (sum(1 for r in absent_rx if not re.search(r, nt)), len(absent_rx)) if absent_rx else None,
-                  "the borrower's 'not' present": (sum(1 for r in required if re.search(r, nt)), len(required)) if required else None}
+                  "the borrower's 'not' present": (sum(1 for r in required if re.search(r, nt)), len(required)) if required else None,
+                  "members said again": (sum(1 for k, n in repeat.items() if len(re.findall(M[k]["rx"], nt)) >= n), len(repeat)) if repeat else None}
         checks = {k: v for k, v in checks.items() if v}
         got, of = sum(v[0] for v in checks.values()), sum(v[1] for v in checks.values())
         return {"loc": loc if isinstance(loc, str) else loc[0], "text": t, "checks": checks, "score": round(got / of, 2), "passes": got == of, "missing": [k for k in state if pos[k] is None],

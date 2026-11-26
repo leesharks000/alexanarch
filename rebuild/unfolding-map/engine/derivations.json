@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "0a3fe89ee999f432459933873eb06ca24f58588f662abc8dd65df3a5d9ae9e2f",
+  "sha256_of_derivations": "3c63c188e8de376fd7d3ee0e43a8ecc62008d4fa12029fab2415f818e86d26f6",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -4029,6 +4029,458 @@
      "label": "John: the sword at the arrest"
     }
    ]
+  },
+  {
+   "id": "rev21.6+14.7→john4.6-24",
+   "family": "Expansions",
+   "title": "The water given to the thirsty; the hour of worship",
+   "seed": "gnt:Rev 21:6 + Rev 14:7",
+   "members": [
+    {
+     "id": "alpha",
+     "gloss": "the Alpha and the Omega",
+     "greek": "τὸ Ἄλφα καὶ τὸ Ὦ",
+     "rx": "αλφα",
+     "in_seed": true
+    },
+    {
+     "id": "thirst",
+     "gloss": "to the thirsty",
+     "greek": "τῷ διψῶντι",
+     "rx": "διψ",
+     "in_seed": true
+    },
+    {
+     "id": "give",
+     "gloss": "I will give",
+     "greek": "δώσω",
+     "rx": "\\bδωσω\\b",
+     "in_seed": true
+    },
+    {
+     "id": "spring",
+     "gloss": "the spring",
+     "greek": "τῆς πηγῆς",
+     "rx": "πηγ",
+     "in_seed": true
+    },
+    {
+     "id": "water",
+     "gloss": "of the water",
+     "greek": "τοῦ ὕδατος",
+     "rx": "υδατ|υδωρ",
+     "in_seed": true
+    },
+    {
+     "id": "life",
+     "gloss": "of life",
+     "greek": "τῆς ζωῆς",
+     "rx": "\\bζω(η|ησ|ην)\\b",
+     "in_seed": true
+    },
+    {
+     "id": "gift",
+     "gloss": "as a gift",
+     "greek": "δωρεάν",
+     "rx": "δωρεα",
+     "in_seed": true
+    },
+    {
+     "id": "fear",
+     "gloss": "fear God",
+     "greek": "φοβήθητε",
+     "rx": "φοβηθητε",
+     "in_seed": true
+    },
+    {
+     "id": "judgment",
+     "gloss": "of his judgment",
+     "greek": "τῆς κρίσεως",
+     "rx": "κρισεωσ",
+     "in_seed": true
+    },
+    {
+     "id": "hour",
+     "gloss": "the hour",
+     "greek": "ἡ ὥρα",
+     "rx": "\\bωρα\\b",
+     "in_seed": true
+    },
+    {
+     "id": "worship",
+     "gloss": "worship",
+     "greek": "προσκυνήσατε",
+     "rx": "προσκυν",
+     "in_seed": true
+    },
+    {
+     "id": "sea",
+     "gloss": "and sea",
+     "greek": "θάλασσαν",
+     "rx": "θαλασσ",
+     "in_seed": true
+    },
+    {
+     "id": "woman",
+     "gloss": "a woman",
+     "greek": "γυνή",
+     "rx": "\\bγυν",
+     "in_seed": false
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:John 4:6-24",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "thirst",
+      "give",
+      "spring",
+      "water",
+      "life",
+      "gift",
+      "hour",
+      "worship"
+     ]
+    },
+    {
+     "op": "EXPAND",
+     "repeat": {
+      "water": 5,
+      "worship": 5,
+      "give": 2,
+      "thirst": 2,
+      "spring": 2,
+      "hour": 2
+     }
+    },
+    {
+     "op": "STAGE",
+     "new": "woman"
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:John 7:37-39",
+     "label": "John 7: if anyone thirst"
+    },
+    {
+     "loc": "gnt:John 6:30-40",
+     "label": "John 6: never hunger, never thirst"
+    },
+    {
+     "loc": "lxx:Γενεσις 24:11-20",
+     "label": "Septuagint, Gen 24: the woman at the well"
+    },
+    {
+     "loc": "lxx:Ησαιας 55:1",
+     "label": "Septuagint, Isa 55:1: you who thirst, come to the water"
+    },
+    {
+     "loc": "lxx:Ιερεμιας 2:13",
+     "label": "Septuagint, Jer 2:13: the spring of the water of life"
+    }
+   ],
+   "note": "Two verses of Revelation eight chapters apart, joined at the phrase they share, springs of waters. Found blind by expand.py; the named stretch is the best of some 3,700 for Rev 21:6. First entered with the target from 4:7 and failed one repetition (the spring said once): the well is called πηγή twice at 4:6, where the scene is set. This is the derivation with the scene from its first verse."
+  },
+  {
+   "id": "rev22.12-13→matt20.1-16",
+   "family": "Expansions",
+   "title": "The wage paid; the first and the last",
+   "seed": "gnt:Rev 22:12-13",
+   "members": [
+    {
+     "id": "quickly",
+     "gloss": "I come quickly",
+     "greek": "ἔρχομαι ταχύ",
+     "rx": "ταχυ",
+     "in_seed": true
+    },
+    {
+     "id": "wage",
+     "gloss": "my wage",
+     "greek": "ὁ μισθός μου",
+     "rx": "μισθ",
+     "in_seed": true
+    },
+    {
+     "id": "pay",
+     "gloss": "to pay",
+     "greek": "ἀποδοῦναι",
+     "rx": "αποδ(ουναι|οσ|ωσ)",
+     "in_seed": true
+    },
+    {
+     "id": "each",
+     "gloss": "to each",
+     "greek": "ἑκάστῳ",
+     "rx": "εκαστ",
+     "in_seed": true
+    },
+    {
+     "id": "work",
+     "gloss": "his work",
+     "greek": "τὸ ἔργον",
+     "rx": "\\bεργ(ον|ατ)",
+     "in_seed": true
+    },
+    {
+     "id": "alpha",
+     "gloss": "the Alpha and the Omega",
+     "greek": "τὸ Ἄλφα καὶ τὸ Ὦ",
+     "rx": "αλφα",
+     "in_seed": true
+    },
+    {
+     "id": "first",
+     "gloss": "the first",
+     "greek": "ὁ πρῶτος",
+     "rx": "πρωτ",
+     "in_seed": true
+    },
+    {
+     "id": "last",
+     "gloss": "the last",
+     "greek": "ὁ ἔσχατος",
+     "rx": "εσχατ",
+     "in_seed": true
+    },
+    {
+     "id": "beginning",
+     "gloss": "the beginning",
+     "greek": "ἡ ἀρχή",
+     "rx": "\\bαρ(χη|ξαμεν)",
+     "in_seed": true
+    },
+    {
+     "id": "end",
+     "gloss": "the end",
+     "greek": "τὸ τέλος",
+     "rx": "τελοσ",
+     "in_seed": true
+    },
+    {
+     "id": "householder",
+     "gloss": "a householder",
+     "greek": "οἰκοδεσπότης",
+     "rx": "οικοδεσποτ",
+     "in_seed": false
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Matt 20:1-16",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "wage",
+      "pay",
+      "work",
+      "first",
+      "last",
+      "beginning"
+     ]
+    },
+    {
+     "op": "EXPAND",
+     "repeat": {
+      "last": 3,
+      "first": 3,
+      "work": 2,
+      "wage": 2
+     }
+    },
+    {
+     "op": "STAGE",
+     "new": "householder"
+    }
+   ],
+   "controls": [
+    {
+     "loc": "lxx:Δευτερονομιον 24:14-15",
+     "label": "Septuagint, Deut 24:14–15: pay the hired worker his wage the same day"
+    },
+    {
+     "loc": "gnt:Matt 19:27-30",
+     "label": "Matt 19:27–30: the first last"
+    },
+    {
+     "loc": "gnt:Mark 10:28-31",
+     "label": "Mark 10:28–31"
+    },
+    {
+     "loc": "gnt:Matt 21:28-41",
+     "label": "Matt 21: the two sons and the vineyard"
+    },
+    {
+     "loc": "gnt:Luke 13:22-30",
+     "label": "Luke 13:30"
+    }
+   ],
+   "note": "Matthew's alone. A name of the one who pays, the first and the last, becomes the order of the paying and the moral. First run failed on a mistyped pattern for ἀρξάμενος (2U.1)."
+  },
+  {
+   "id": "rev17.14-20.3→matt22.1-14",
+   "family": "Expansions",
+   "title": "The wedding, as a stretch followed",
+   "seed": "gnt:Rev 17:14 + Rev 18:8 + Rev 19:7-9 + Rev 19:14 + Rev 19:21 + Rev 20:2-3",
+   "members": [
+    {
+     "id": "called",
+     "gloss": "called",
+     "greek": "κλητοί / κεκλημένοι",
+     "rx": "κεκλημεν|κλητο",
+     "in_seed": true
+    },
+    {
+     "id": "chosen",
+     "gloss": "chosen",
+     "greek": "ἐκλεκτοί",
+     "rx": "εκλεκτ",
+     "in_seed": true
+    },
+    {
+     "id": "burned",
+     "gloss": "burned with fire",
+     "greek": "κατακαυθήσεται",
+     "rx": "κατακαυθησεται|ενεπρησεν",
+     "in_seed": true
+    },
+    {
+     "id": "wedding",
+     "gloss": "the wedding",
+     "greek": "ὁ γάμος",
+     "rx": "γαμ",
+     "in_seed": true
+    },
+    {
+     "id": "lamb",
+     "gloss": "of the Lamb",
+     "greek": "τοῦ Ἀρνίου",
+     "rx": "αρνι",
+     "in_seed": true
+    },
+    {
+     "id": "garment",
+     "gloss": "given to be clothed",
+     "greek": "περιβάληται βύσσινον",
+     "rx": "περιβαληται βυσσινον|ενδυμα",
+     "in_seed": true
+    },
+    {
+     "id": "supper",
+     "gloss": "the supper",
+     "greek": "τὸ δεῖπνον",
+     "rx": "δειπν",
+     "in_seed": true
+    },
+    {
+     "id": "armies",
+     "gloss": "the armies",
+     "greek": "τὰ στρατεύματα",
+     "rx": "στρατευμα",
+     "in_seed": true
+    },
+    {
+     "id": "rest",
+     "gloss": "the rest",
+     "greek": "οἱ λοιποί",
+     "rx": "λοιπο",
+     "in_seed": true
+    },
+    {
+     "id": "killed",
+     "gloss": "killed",
+     "greek": "ἀπεκτάνθησαν",
+     "rx": "απεκτ",
+     "in_seed": true
+    },
+    {
+     "id": "bound",
+     "gloss": "bound",
+     "greek": "ἔδησεν",
+     "rx": "\\bεδησεν|δησαντεσ",
+     "in_seed": true
+    },
+    {
+     "id": "thousand",
+     "gloss": "a thousand years",
+     "greek": "χίλια ἔτη",
+     "rx": "χιλια",
+     "in_seed": true
+    },
+    {
+     "id": "cast",
+     "gloss": "cast him into",
+     "greek": "ἔβαλεν αὐτὸν εἰς",
+     "rx": "βαλ\\w+ αυτον εισ",
+     "in_seed": true
+    },
+    {
+     "id": "sealed",
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν",
+     "rx": "σφραγισ",
+     "in_seed": true
+    },
+    {
+     "id": "king",
+     "gloss": "a king",
+     "greek": "βασιλεύς",
+     "rx": "βασιλευσ\\b",
+     "in_seed": false
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Matt 22:1-14",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "called",
+      "chosen",
+      "burned",
+      "wedding",
+      "garment",
+      "armies",
+      "rest",
+      "killed",
+      "bound",
+      "cast"
+     ]
+    },
+    {
+     "op": "EXPAND",
+     "repeat": {
+      "wedding": 5,
+      "called": 3
+     }
+    },
+    {
+     "op": "STAGE",
+     "new": "king"
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Luke 14:16-24",
+     "label": "Luke's form of the parable"
+    },
+    {
+     "loc": "gnt:Matt 25:1-13",
+     "label": "Matt 25: the virgins and the wedding"
+    },
+    {
+     "loc": "lxx:Παροιμιαι 9:1-6",
+     "label": "Septuagint, Prov 9:1–6: Wisdom's feast"
+    },
+    {
+     "loc": "gnt:Matt 21:33-46",
+     "label": "Matt 21: the tenants"
+    }
+   ],
+   "note": "2S.4. The seed is six places in four consecutive chapters; the burning is by sense (two verbs). Luke's form has the supper and the called and nothing else of this."
   }
  ]
 }
