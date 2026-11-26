@@ -209,5 +209,32 @@ d(id="rev20.1-5→matt27.63-28.9", family="Matthew", title="The seal on the dece
   controls=[{"loc": DAN6, "label": "Septuagint, Dan 6:17 (Theodotion): the stone and the king's seal"}, {"loc": "lxx:Δανιηλ_(translatio_Graeca) 6:17", "label": "Septuagint, Dan 6:17 (Old Greek)"},
             {"loc": "gnt:Mark 15:46-47 + Mark 16:1-8", "label": "Mark's tomb"}, {"loc": "gnt:Luke 23:53-56 + Luke 24:1-9", "label": "Luke's tomb"}, {"loc": "gnt:John 20:1-17", "label": "John's tomb"}],
   note="Matthew's guard and seal, which no other Gospel has. The engine states the wording kept. Who seals and who is sealed are changed, and the seal is undone: those are differences of relation and are computed in relations/guard.py, not here.")
+# ── Five loci pointed to by the pair scan (pairs/pairs.py, v0.17), then read in the seat, then entered.
+B20 = [m("dragon", "the dragon", "τὸν δράκοντα", r"δρακοντα"), m("satan", "Satan", "ὁ Σατανᾶς", r"σαταν"), m("bound", "bound", "ἔδησεν", r"εδησεν"), m("thousand", "a thousand", "χίλια", r"χιλια"), m("years", "years", "ἔτη", r"\bετη\b"),
+       m("abyss", "the abyss", "τὴν ἄβυσσον", r"αβυσσ"), m("sealed", "sealed", "ἐσφράγισεν", r"εσφραγ"), m("deceive", "deceive", "πλανήσῃ", r"\bπλαν"), m("loosed", "must be loosed", "δεῖ λυθῆναι", r"δει λυθηναι")]
+d(id="rev20.2-3→luke13.16", family="Luke", title="Bound by Satan, to be loosed", seed="gnt:Rev 20:2-3", members=B20, target="gnt:Luke 13:16",
+  steps=[{"op": "PARTITION", "keep": ["satan", "bound", "years", "loosed"]}, {"op": "REORDER", "order": ["bound", "satan", "years", "loosed"]}],
+  controls=[{"loc": "gnt:Mark 3:27", "label": "Mark: binding the strong man"}, {"loc": "gnt:Matt 12:29", "label": "Matthew: binding the strong man"}, {"loc": "gnt:Luke 11:21-22", "label": "Luke: the strong man"},
+            {"loc": "lxx:Τωβιτ 8:3", "label": "Septuagint, Tobit 8:3: the angel bound the demon"}, {"loc": "gnt:Luke 8:29-31", "label": "Luke: the Gerasene"}],
+  note="In Revelation Satan is bound for years and must be loosed. In Luke Satan has bound her for years and she must be loosed. The wording is kept; who binds and who is bound are exchanged (relations/pairs_rel.py).")
+C20 = [m("chain", "a chain", "ἅλυσιν", r"αλυσ"), m("seized", "seized", "ἐκράτησεν", r"εκρατησ"), m("bound", "bound", "ἔδησεν", r"\bεδησεν|δησαι|δεδεσθαι|εδεσμευ"), m("thousand", "a thousand years", "χίλια ἔτη", r"χιλια ετη"), m("abyss", "the abyss", "τὴν ἄβυσσον", r"αβυσσ"), m("sealed", "sealed", "ἐσφράγισεν", r"εσφραγ")]
+d(id="rev20.1-3→luke8.29-31", family="Luke", title="The chain and the abyss", seed="gnt:Rev 20:1-3", members=C20, unordered=True, target="gnt:Luke 8:29-31",
+  steps=[{"op": "PARTITION", "keep": ["chain", "bound", "abyss"]}], controls=[{"loc": "gnt:Mark 5:3-13", "label": "Mark's Gerasene"}, {"loc": "gnt:Matt 8:28-32", "label": "Matthew's Gadarenes"}, {"loc": "gnt:Rom 10:7", "label": "Romans 10:7, the abyss"}],
+  note="Mark has the chains and the binding and sends the demons 'out of the country'. Luke has them beg not to be sent 'into the abyss'.")
+K17 = [m("horns", "the ten horns", "τὰ δέκα κέρατα", r"κερατα"), m("ten", "ten", "δέκα", r"δεκα"), m("kingdom", "received a kingdom", "βασιλείαν … ἔλαβον", r"βασιλειαν( \w+)? ελαβον|λαβ\w+ (εαυτω |την )?βασιλειαν"),
+       m("authority", "authority", "ἐξουσίαν", r"εξουσιαν"), m("hour", "one hour", "μίαν ὥραν", r"μιαν ωραν"), m("beast", "with the beast", "μετὰ τοῦ θηρίου", r"θηριου")]
+d(id="rev17.12→luke19.12-17", family="Luke", title="A kingdom received, authority over ten", seed="gnt:Rev 17:12", members=K17, unordered=True, target="gnt:Luke 19:12-17",
+  steps=[{"op": "PARTITION", "keep": ["ten", "kingdom", "authority"]}], controls=[{"loc": "gnt:Matt 25:14-30", "label": "Matthew's talents"}, {"loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:24", "label": "Septuagint, Dan 7:24: ten horns, ten kings"}, {"loc": "gnt:Mark 13:34", "label": "Mark: authority given to the slaves"}])
+S14 = [m("cloud", "a cloud", "νεφέλην", r"νεφελ"), m("white", "white", "λευκή", r"λευκ"), m("seated", "one seated", "καθήμενον", r"καθημεν"), m("son", "a son of man", "υἱὸν ἀνθρώπου", r"υιον (του )?ανθρωπου"),
+       m("crown", "a golden crown", "στέφανον χρυσοῦν", r"στεφανον"), m("sickle", "a sharp sickle", "δρέπανον ὀξύ", r"δρεπανον")]
+d(id="rev14.14→mark14.62", family="Mark", title="The son of man seated, and the cloud", seed="gnt:Rev 14:14", members=S14, target="gnt:Mark 14:62",
+  steps=[{"op": "PARTITION", "keep": ["cloud", "seated", "son"]}, {"op": "REORDER", "order": ["son", "seated", "cloud"]}],
+  controls=[{"loc": "gnt:Luke 22:69", "label": "Luke's parallel"}, {"loc": "gnt:Mark 13:26", "label": "Mark 13:26"}, {"loc": DAN, "label": "Septuagint, Dan 7:13 (Theodotion)"}, {"loc": "lxx:Ψαλμοι 109:1", "label": "Septuagint, Ps 109:1"}],
+  note="Matt 26:64 is Mark's verse again and fits as Mark's does; it is not set as a control.")
+X13 = [m("captivity", "into captivity", "εἰς αἰχμαλωσίαν", r"αιχμαλωσ"), m("sword", "the sword", "μαχαίρῃ", r"μαχαιρ"), m("killed", "must be killed", "ἀποκτανθῆναι", r"αποκτανθηναι"), m("here", "here", "ὧδε", r"\bωδε\b"),
+       m("endurance", "the endurance", "ἡ ὑπομονή", r"υπομονη"), m("buy", "to buy", "ἀγοράσαι", r"αγορασ"), m("sell", "to sell", "πωλῆσαι", r"πωλησ"), m("having", "the one having", "ὁ ἔχων", r"ο (μη )?εχων"), m("mark", "the mark", "τὸ χάραγμα", r"χαραγμα")]
+d(id="rev13.10+13.17→luke22.36-38", family="Luke", title="Buy, sell, the one who has, the sword, here", seed="gnt:Rev 13:10 + Rev 13:17", members=X13, unordered=True, target="gnt:Luke 22:36-38",
+  steps=[{"op": "PARTITION", "keep": ["sword", "here", "buy", "sell", "having"]}], controls=[{"loc": "gnt:Matt 26:51-52", "label": "Matthew: the sword at the arrest"}, {"loc": "gnt:Mark 14:47-48", "label": "Mark: the sword at the arrest"},
+            {"loc": "gnt:Luke 22:49-51", "label": "Luke: the sword at the arrest"}, {"loc": "gnt:John 18:10-11", "label": "John: the sword at the arrest"}])
 src = json.dumps(D, ensure_ascii=False, sort_keys=True)
 print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))

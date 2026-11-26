@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "8a612be3b7c7c56b02cf989a9e85aadde087ecebfdb1b45f505c63d1bd8dc1f5",
+  "sha256_of_derivations": "0a3fe89ee999f432459933873eb06ca24f58588f662abc8dd65df3a5d9ae9e2f",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -3570,6 +3570,465 @@
     }
    ],
    "note": "Matthew's guard and seal, which no other Gospel has. The engine states the wording kept. Who seals and who is sealed are changed, and the seal is undone: those are differences of relation and are computed in relations/guard.py, not here."
+  },
+  {
+   "id": "rev20.2-3→luke13.16",
+   "family": "Luke",
+   "title": "Bound by Satan, to be loosed",
+   "seed": "gnt:Rev 20:2-3",
+   "members": [
+    {
+     "id": "dragon",
+     "gloss": "the dragon",
+     "greek": "τὸν δράκοντα",
+     "rx": "δρακοντα",
+     "in_seed": true
+    },
+    {
+     "id": "satan",
+     "gloss": "Satan",
+     "greek": "ὁ Σατανᾶς",
+     "rx": "σαταν",
+     "in_seed": true
+    },
+    {
+     "id": "bound",
+     "gloss": "bound",
+     "greek": "ἔδησεν",
+     "rx": "εδησεν",
+     "in_seed": true
+    },
+    {
+     "id": "thousand",
+     "gloss": "a thousand",
+     "greek": "χίλια",
+     "rx": "χιλια",
+     "in_seed": true
+    },
+    {
+     "id": "years",
+     "gloss": "years",
+     "greek": "ἔτη",
+     "rx": "\\bετη\\b",
+     "in_seed": true
+    },
+    {
+     "id": "abyss",
+     "gloss": "the abyss",
+     "greek": "τὴν ἄβυσσον",
+     "rx": "αβυσσ",
+     "in_seed": true
+    },
+    {
+     "id": "sealed",
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν",
+     "rx": "εσφραγ",
+     "in_seed": true
+    },
+    {
+     "id": "deceive",
+     "gloss": "deceive",
+     "greek": "πλανήσῃ",
+     "rx": "\\bπλαν",
+     "in_seed": true
+    },
+    {
+     "id": "loosed",
+     "gloss": "must be loosed",
+     "greek": "δεῖ λυθῆναι",
+     "rx": "δει λυθηναι",
+     "in_seed": true
+    }
+   ],
+   "target": "gnt:Luke 13:16",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "satan",
+      "bound",
+      "years",
+      "loosed"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "order": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Mark 3:27",
+     "label": "Mark: binding the strong man"
+    },
+    {
+     "loc": "gnt:Matt 12:29",
+     "label": "Matthew: binding the strong man"
+    },
+    {
+     "loc": "gnt:Luke 11:21-22",
+     "label": "Luke: the strong man"
+    },
+    {
+     "loc": "lxx:Τωβιτ 8:3",
+     "label": "Septuagint, Tobit 8:3: the angel bound the demon"
+    },
+    {
+     "loc": "gnt:Luke 8:29-31",
+     "label": "Luke: the Gerasene"
+    }
+   ],
+   "note": "In Revelation Satan is bound for years and must be loosed. In Luke Satan has bound her for years and she must be loosed. The wording is kept; who binds and who is bound are exchanged (relations/pairs_rel.py)."
+  },
+  {
+   "id": "rev20.1-3→luke8.29-31",
+   "family": "Luke",
+   "title": "The chain and the abyss",
+   "seed": "gnt:Rev 20:1-3",
+   "members": [
+    {
+     "id": "chain",
+     "gloss": "a chain",
+     "greek": "ἅλυσιν",
+     "rx": "αλυσ",
+     "in_seed": true
+    },
+    {
+     "id": "seized",
+     "gloss": "seized",
+     "greek": "ἐκράτησεν",
+     "rx": "εκρατησ",
+     "in_seed": true
+    },
+    {
+     "id": "bound",
+     "gloss": "bound",
+     "greek": "ἔδησεν",
+     "rx": "\\bεδησεν|δησαι|δεδεσθαι|εδεσμευ",
+     "in_seed": true
+    },
+    {
+     "id": "thousand",
+     "gloss": "a thousand years",
+     "greek": "χίλια ἔτη",
+     "rx": "χιλια ετη",
+     "in_seed": true
+    },
+    {
+     "id": "abyss",
+     "gloss": "the abyss",
+     "greek": "τὴν ἄβυσσον",
+     "rx": "αβυσσ",
+     "in_seed": true
+    },
+    {
+     "id": "sealed",
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν",
+     "rx": "εσφραγ",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Luke 8:29-31",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "chain",
+      "bound",
+      "abyss"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Mark 5:3-13",
+     "label": "Mark's Gerasene"
+    },
+    {
+     "loc": "gnt:Matt 8:28-32",
+     "label": "Matthew's Gadarenes"
+    },
+    {
+     "loc": "gnt:Rom 10:7",
+     "label": "Romans 10:7, the abyss"
+    }
+   ],
+   "note": "Mark has the chains and the binding and sends the demons 'out of the country'. Luke has them beg not to be sent 'into the abyss'."
+  },
+  {
+   "id": "rev17.12→luke19.12-17",
+   "family": "Luke",
+   "title": "A kingdom received, authority over ten",
+   "seed": "gnt:Rev 17:12",
+   "members": [
+    {
+     "id": "horns",
+     "gloss": "the ten horns",
+     "greek": "τὰ δέκα κέρατα",
+     "rx": "κερατα",
+     "in_seed": true
+    },
+    {
+     "id": "ten",
+     "gloss": "ten",
+     "greek": "δέκα",
+     "rx": "δεκα",
+     "in_seed": true
+    },
+    {
+     "id": "kingdom",
+     "gloss": "received a kingdom",
+     "greek": "βασιλείαν … ἔλαβον",
+     "rx": "βασιλειαν( \\w+)? ελαβον|λαβ\\w+ (εαυτω |την )?βασιλειαν",
+     "in_seed": true
+    },
+    {
+     "id": "authority",
+     "gloss": "authority",
+     "greek": "ἐξουσίαν",
+     "rx": "εξουσιαν",
+     "in_seed": true
+    },
+    {
+     "id": "hour",
+     "gloss": "one hour",
+     "greek": "μίαν ὥραν",
+     "rx": "μιαν ωραν",
+     "in_seed": true
+    },
+    {
+     "id": "beast",
+     "gloss": "with the beast",
+     "greek": "μετὰ τοῦ θηρίου",
+     "rx": "θηριου",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Luke 19:12-17",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "ten",
+      "kingdom",
+      "authority"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Matt 25:14-30",
+     "label": "Matthew's talents"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:24",
+     "label": "Septuagint, Dan 7:24: ten horns, ten kings"
+    },
+    {
+     "loc": "gnt:Mark 13:34",
+     "label": "Mark: authority given to the slaves"
+    }
+   ]
+  },
+  {
+   "id": "rev14.14→mark14.62",
+   "family": "Mark",
+   "title": "The son of man seated, and the cloud",
+   "seed": "gnt:Rev 14:14",
+   "members": [
+    {
+     "id": "cloud",
+     "gloss": "a cloud",
+     "greek": "νεφέλην",
+     "rx": "νεφελ",
+     "in_seed": true
+    },
+    {
+     "id": "white",
+     "gloss": "white",
+     "greek": "λευκή",
+     "rx": "λευκ",
+     "in_seed": true
+    },
+    {
+     "id": "seated",
+     "gloss": "one seated",
+     "greek": "καθήμενον",
+     "rx": "καθημεν",
+     "in_seed": true
+    },
+    {
+     "id": "son",
+     "gloss": "a son of man",
+     "greek": "υἱὸν ἀνθρώπου",
+     "rx": "υιον (του )?ανθρωπου",
+     "in_seed": true
+    },
+    {
+     "id": "crown",
+     "gloss": "a golden crown",
+     "greek": "στέφανον χρυσοῦν",
+     "rx": "στεφανον",
+     "in_seed": true
+    },
+    {
+     "id": "sickle",
+     "gloss": "a sharp sickle",
+     "greek": "δρέπανον ὀξύ",
+     "rx": "δρεπανον",
+     "in_seed": true
+    }
+   ],
+   "target": "gnt:Mark 14:62",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "cloud",
+      "seated",
+      "son"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "order": [
+      "son",
+      "seated",
+      "cloud"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Luke 22:69",
+     "label": "Luke's parallel"
+    },
+    {
+     "loc": "gnt:Mark 13:26",
+     "label": "Mark 13:26"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:13",
+     "label": "Septuagint, Dan 7:13 (Theodotion)"
+    },
+    {
+     "loc": "lxx:Ψαλμοι 109:1",
+     "label": "Septuagint, Ps 109:1"
+    }
+   ],
+   "note": "Matt 26:64 is Mark's verse again and fits as Mark's does; it is not set as a control."
+  },
+  {
+   "id": "rev13.10+13.17→luke22.36-38",
+   "family": "Luke",
+   "title": "Buy, sell, the one who has, the sword, here",
+   "seed": "gnt:Rev 13:10 + Rev 13:17",
+   "members": [
+    {
+     "id": "captivity",
+     "gloss": "into captivity",
+     "greek": "εἰς αἰχμαλωσίαν",
+     "rx": "αιχμαλωσ",
+     "in_seed": true
+    },
+    {
+     "id": "sword",
+     "gloss": "the sword",
+     "greek": "μαχαίρῃ",
+     "rx": "μαχαιρ",
+     "in_seed": true
+    },
+    {
+     "id": "killed",
+     "gloss": "must be killed",
+     "greek": "ἀποκτανθῆναι",
+     "rx": "αποκτανθηναι",
+     "in_seed": true
+    },
+    {
+     "id": "here",
+     "gloss": "here",
+     "greek": "ὧδε",
+     "rx": "\\bωδε\\b",
+     "in_seed": true
+    },
+    {
+     "id": "endurance",
+     "gloss": "the endurance",
+     "greek": "ἡ ὑπομονή",
+     "rx": "υπομονη",
+     "in_seed": true
+    },
+    {
+     "id": "buy",
+     "gloss": "to buy",
+     "greek": "ἀγοράσαι",
+     "rx": "αγορασ",
+     "in_seed": true
+    },
+    {
+     "id": "sell",
+     "gloss": "to sell",
+     "greek": "πωλῆσαι",
+     "rx": "πωλησ",
+     "in_seed": true
+    },
+    {
+     "id": "having",
+     "gloss": "the one having",
+     "greek": "ὁ ἔχων",
+     "rx": "ο (μη )?εχων",
+     "in_seed": true
+    },
+    {
+     "id": "mark",
+     "gloss": "the mark",
+     "greek": "τὸ χάραγμα",
+     "rx": "χαραγμα",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Luke 22:36-38",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "sword",
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Matt 26:51-52",
+     "label": "Matthew: the sword at the arrest"
+    },
+    {
+     "loc": "gnt:Mark 14:47-48",
+     "label": "Mark: the sword at the arrest"
+    },
+    {
+     "loc": "gnt:Luke 22:49-51",
+     "label": "Luke: the sword at the arrest"
+    },
+    {
+     "loc": "gnt:John 18:10-11",
+     "label": "John: the sword at the arrest"
+    }
+   ]
   }
  ]
 }

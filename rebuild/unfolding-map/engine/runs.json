@@ -18,7 +18,7 @@
  },
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "8a612be3b7c7c56b02cf989a9e85aadde087ecebfdb1b45f505c63d1bd8dc1f5",
+  "sha256_of_derivations": "0a3fe89ee999f432459933873eb06ca24f58588f662abc8dd65df3a5d9ae9e2f",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "runs": [
@@ -9430,6 +9430,1193 @@
    },
    "seed_ok": true,
    "verdict": "passes; no control passes (best control 0.55)"
+  },
+  {
+   "id": "rev20.2-3→luke13.16",
+   "title": "Bound by Satan, to be loosed",
+   "family": "Luke",
+   "seed": {
+    "loc": "gnt:Rev 20:2-3",
+    "text": "καὶ ἐκράτησεν τὸν δράκοντα, ὁ ὄφις ὁ ἀρχαῖος, ὅς ἐστιν Διάβολος καὶ Ὁ Σατανᾶς, καὶ ἔδησεν αὐτὸν χίλια ἔτη, καὶ ἔβαλεν αὐτὸν εἰς τὴν ἄβυσσον, καὶ ἔκλεισεν καὶ ἐσφράγισεν ἐπάνω αὐτοῦ, ἵνα μὴ πλανήσῃ ἔτι τὰ ἔθνη, ἄχρι τελεσθῇ τὰ χίλια ἔτη· μετὰ ταῦτα δεῖ λυθῆναι αὐτὸν μικρὸν χρόνον.",
+    "members_found": {
+     "dragon": true,
+     "satan": true,
+     "bound": true,
+     "thousand": true,
+     "years": true,
+     "abyss": true,
+     "sealed": true,
+     "deceive": true,
+     "loosed": true
+    }
+   },
+   "members": {
+    "dragon": {
+     "gloss": "the dragon",
+     "greek": "τὸν δράκοντα"
+    },
+    "satan": {
+     "gloss": "Satan",
+     "greek": "ὁ Σατανᾶς"
+    },
+    "bound": {
+     "gloss": "bound",
+     "greek": "ἔδησεν"
+    },
+    "thousand": {
+     "gloss": "a thousand",
+     "greek": "χίλια"
+    },
+    "years": {
+     "gloss": "years",
+     "greek": "ἔτη"
+    },
+    "abyss": {
+     "gloss": "the abyss",
+     "greek": "τὴν ἄβυσσον"
+    },
+    "sealed": {
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν"
+    },
+    "deceive": {
+     "gloss": "deceive",
+     "greek": "πλανήσῃ"
+    },
+    "loosed": {
+     "gloss": "must be loosed",
+     "greek": "δεῖ λυθῆναι"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "dragon",
+      "satan",
+      "bound",
+      "thousand",
+      "years",
+      "abyss",
+      "sealed",
+      "deceive",
+      "loosed"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "satan",
+      "bound",
+      "years",
+      "loosed"
+     ],
+     "state": [
+      "satan",
+      "bound",
+      "years",
+      "loosed"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ],
+     "state": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "bound",
+     "satan",
+     "years",
+     "loosed"
+    ],
+    "dropped": [
+     "dragon",
+     "thousand",
+     "abyss",
+     "sealed",
+     "deceive"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Luke 13:16",
+    "text": "ταύτην δὲ θυγατέρα Ἀβραὰμ οὖσαν, ἣν ἔδησεν ὁ Σατανᾶς ἰδοὺ δέκα καὶ ὀκτὼ ἔτη, οὐκ ἔδει λυθῆναι ἀπὸ τοῦ δεσμοῦ τούτου τῇ ἡμέρᾳ τοῦ σαββάτου;",
+    "checks": {
+     "kept members present": [
+      4,
+      4
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      5,
+      5
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 3:27",
+     "text": "ἀλλ’ οὐ δύναται οὐδεὶς εἰς τὴν οἰκίαν τοῦ ἰσχυροῦ εἰσελθὼν τὰ σκεύη αὐτοῦ διαρπάσαι, ἐὰν μὴ πρῶτον τὸν ἰσχυρὸν δήσῃ, καὶ τότε τὴν οἰκίαν αὐτοῦ διαρπάσει.",
+     "checks": {
+      "kept members present": [
+       0,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark: binding the strong man"
+    },
+    {
+     "loc": "gnt:Matt 12:29",
+     "text": "ἢ πῶς δύναταί τις εἰσελθεῖν εἰς τὴν οἰκίαν τοῦ ἰσχυροῦ καὶ τὰ σκεύη αὐτοῦ ἁρπάσαι, ἐὰν μὴ πρῶτον δήσῃ τὸν ἰσχυρόν, καὶ τότε τὴν οἰκίαν αὐτοῦ διαρπάσει;",
+     "checks": {
+      "kept members present": [
+       0,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew: binding the strong man"
+    },
+    {
+     "loc": "gnt:Luke 11:21-22",
+     "text": "ὅταν ὁ ἰσχυρὸς καθωπλισμένος φυλάσσῃ τὴν ἑαυτοῦ αὐλήν, ἐν εἰρήνῃ ἐστὶν τὰ ὑπάρχοντα αὐτοῦ· ἐπὰν δὲ ἰσχυρότερος αὐτοῦ ἐπελθὼν νικήσῃ αὐτόν, τὴν πανοπλίαν αὐτοῦ αἴρει ἐφ’ ᾗ ἐπεποίθει, καὶ τὰ σκῦλα αὐτοῦ διαδίδωσιν.",
+     "checks": {
+      "kept members present": [
+       0,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke: the strong man"
+    },
+    {
+     "loc": "lxx:Τωβιτ 8:3",
+     "text": "ὅτε δὲ ὠσφράνθη τὸ δαιμόνιον τῆς ὀσμῆς, ἔφυγεν 11 υμιν] ημιν A (υμ. Aa) 12 Σαρρα A | Γωβεια] τω ωβια A | ηυ A | λογησεν A 13 συγγραφην Bᵃᵇ | εσφραγισατο A 14 ηρξατο Bᵃᵇ 15 om Ραγουηλ A | ταμιον B*U+05D0Α (ταμειον Bᵃ) | εισαγε] εισαγαγε A | 16 εισηγαγον A 17 δω A (δωῃ Aᵃ?) V III 1 το φαγειν U+05D0*] του φ. | U+05D0c.a |Τωβιαν BᵃA | ταμιον U+05D0 2 om και 4⁰ A B εἰς τὰ ἀνώτατα Αἰγύπτου, καὶ ἔδησεν αὐτὸ ὁ ἄγγελος.",
+     "checks": {
+      "kept members present": [
+       1,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       5
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "satan",
+      "years",
+      "loosed"
+     ],
+     "kept_but_should_be_dropped": [
+      "sealed"
+     ],
+     "label": "Septuagint, Tobit 8:3: the angel bound the demon"
+    },
+    {
+     "loc": "gnt:Luke 8:29-31",
+     "text": "παρήγγελλεν γὰρ τῷ πνεύματι τῷ ἀκαθάρτῳ ἐξελθεῖν ἀπὸ τοῦ ἀνθρώπου. πολλοῖς γὰρ χρόνοις συνηρπάκει αὐτόν, καὶ ἐδεσμεύετο ἁλύσεσιν καὶ πέδαις φυλασσόμενος, καὶ διαρήσσων τὰ δεσμὰ ἠλαύνετο ἀπὸ τοῦ δαιμονίου εἰς τὰς ἐρήμους. ἐπηρώτησεν δὲ αὐτὸν ὁ Ἰησοῦς Τί σοι ὄνομά ἐστιν; ὁ δὲ εἶπεν Λεγιών, ὅτι εἰσῆλθεν δαιμόνια πολλὰ εἰς αὐτόν. καὶ παρεκάλουν αὐτὸν ἵνα μὴ ἐπιτάξῃ αὐτοῖς εἰς τὴν ἄβυσσον ἀπελθεῖν.",
+     "checks": {
+      "kept members present": [
+       0,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       5
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "bound",
+      "satan",
+      "years",
+      "loosed"
+     ],
+     "kept_but_should_be_dropped": [
+      "abyss"
+     ],
+     "label": "Luke: the Gerasene"
+    }
+   ],
+   "note": "In Revelation Satan is bound for years and must be loosed. In Luke Satan has bound her for years and she must be loosed. The wording is kept; who binds and who is bound are exchanged (relations/pairs_rel.py).",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Luke 13:16"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev20.1-3→luke8.29-31",
+   "title": "The chain and the abyss",
+   "family": "Luke",
+   "seed": {
+    "loc": "gnt:Rev 20:1-3",
+    "text": "Καὶ εἶδον ἄγγελον καταβαίνοντα ἐκ τοῦ οὐρανοῦ, ἔχοντα τὴν κλεῖν τῆς ἀβύσσου καὶ ἅλυσιν μεγάλην ἐπὶ τὴν χεῖρα αὐτοῦ. καὶ ἐκράτησεν τὸν δράκοντα, ὁ ὄφις ὁ ἀρχαῖος, ὅς ἐστιν Διάβολος καὶ Ὁ Σατανᾶς, καὶ ἔδησεν αὐτὸν χίλια ἔτη, καὶ ἔβαλεν αὐτὸν εἰς τὴν ἄβυσσον, καὶ ἔκλεισεν καὶ ἐσφράγισεν ἐπάνω αὐτοῦ, ἵνα μὴ πλανήσῃ ἔτι τὰ ἔθνη, ἄχρι τελεσθῇ τὰ χίλια ἔτη· μετὰ ταῦτα δεῖ λυθῆναι αὐτὸν μικρὸν χρόνον.",
+    "members_found": {
+     "chain": true,
+     "seized": true,
+     "bound": true,
+     "thousand": true,
+     "abyss": true,
+     "sealed": true
+    }
+   },
+   "members": {
+    "chain": {
+     "gloss": "a chain",
+     "greek": "ἅλυσιν"
+    },
+    "seized": {
+     "gloss": "seized",
+     "greek": "ἐκράτησεν"
+    },
+    "bound": {
+     "gloss": "bound",
+     "greek": "ἔδησεν"
+    },
+    "thousand": {
+     "gloss": "a thousand years",
+     "greek": "χίλια ἔτη"
+    },
+    "abyss": {
+     "gloss": "the abyss",
+     "greek": "τὴν ἄβυσσον"
+    },
+    "sealed": {
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "abyss",
+      "chain",
+      "seized",
+      "bound",
+      "thousand",
+      "sealed"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "chain",
+      "bound",
+      "abyss"
+     ],
+     "state": [
+      "abyss",
+      "chain",
+      "bound"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "abyss",
+     "chain",
+     "bound"
+    ],
+    "dropped": [
+     "seized",
+     "thousand",
+     "sealed"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Luke 8:29-31",
+    "text": "παρήγγελλεν γὰρ τῷ πνεύματι τῷ ἀκαθάρτῳ ἐξελθεῖν ἀπὸ τοῦ ἀνθρώπου. πολλοῖς γὰρ χρόνοις συνηρπάκει αὐτόν, καὶ ἐδεσμεύετο ἁλύσεσιν καὶ πέδαις φυλασσόμενος, καὶ διαρήσσων τὰ δεσμὰ ἠλαύνετο ἀπὸ τοῦ δαιμονίου εἰς τὰς ἐρήμους. ἐπηρώτησεν δὲ αὐτὸν ὁ Ἰησοῦς Τί σοι ὄνομά ἐστιν; ὁ δὲ εἶπεν Λεγιών, ὅτι εἰσῆλθεν δαιμόνια πολλὰ εἰς αὐτόν. καὶ παρεκάλουν αὐτὸν ἵνα μὴ ἐπιτάξῃ αὐτοῖς εἰς τὴν ἄβυσσον ἀπελθεῖν.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 5:3-13",
+     "text": "ὃς τὴν κατοίκησιν εἶχεν ἐν τοῖς μνήμασιν, καὶ οὐδὲ ἁλύσει οὐκέτι οὐδεὶς ἐδύνατο αὐτὸν δῆσαι διὰ τὸ αὐτὸν πολλάκις πέδαις καὶ ἁλύσεσιν δεδέσθαι, καὶ διεσπάσθαι ὑπ’ αὐτοῦ τὰς ἁλύσεις καὶ τὰς πέδας συντετρῖφθαι, καὶ οὐδεὶς ἴσχυεν αὐτὸν δαμάσαι· καὶ διὰ παντὸς νυκτὸς καὶ ἡμέρας ἐν τοῖς μνήμασιν καὶ ἐν τοῖς ὄρεσιν ἦν κράζων καὶ κατακόπτων ἑαυτὸν λίθοις. καὶ ἰδὼν τὸν Ἰησοῦν ἀπὸ μακρόθεν ἔδραμεν καὶ προσεκύνησεν αὐτόν, καὶ κράξας φωνῇ μεγάλῃ λέγει Τί ἐμοὶ καὶ σοί, Ἰησοῦ Υἱὲ τοῦ Θεοῦ τοῦ Ὑψίστου; ὁρκίζω σε τὸν Θεόν, μή με βασανίσῃς. ἔλεγεν γὰρ αὐτῷ Ἔξελθε τὸ πνεῦμα τὸ ἀκάθαρτον ἐκ τοῦ ἀνθρώπου. καὶ ἐπηρώτα αὐτόν Τί ὄνομά σοι; καὶ λέγει αὐτῷ Λεγιὼν ὄνομά μοι, ὅτι πολλοί ἐσμεν. καὶ παρεκάλει αὐτὸν πολλὰ ἵνα μὴ αὐτὰ ἀποστείλῃ ἔξω τῆς χώρας. ἦν δὲ ἐκεῖ πρὸς τῷ ὄρει ἀγέλη χοίρων μεγάλη βοσκομένη· καὶ παρεκάλεσαν αὐτὸν λέγοντες Πέμψον ἡμᾶς εἰς τοὺς χοίρους, ἵνα εἰς αὐτοὺς εἰσέλθωμεν. καὶ ἐπέτρεψεν αὐτοῖς. καὶ ἐξελθόντα τὰ πνεύματα τὰ ἀκάθαρτα εἰσῆλθον εἰς τοὺς χοίρους, καὶ ὥρμησεν ἡ ἀγέλη κατὰ τοῦ κρημνοῦ εἰς τὴν θάλασσαν, ὡς δισχίλιοι, καὶ ἐπνίγοντο ἐν τῇ θαλάσσῃ.",
+     "checks": {
+      "kept members present": [
+       2,
+       3
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.83,
+     "passes": false,
+     "missing": [
+      "abyss"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark's Gerasene"
+    },
+    {
+     "loc": "gnt:Matt 8:28-32",
+     "text": "Καὶ ἐλθόντος αὐτοῦ εἰς τὸ πέραν εἰς τὴν χώραν τῶν Γαδαρηνῶν ὑπήντησαν αὐτῷ δύο δαιμονιζόμενοι ἐκ τῶν μνημείων ἐξερχόμενοι, χαλεποὶ λίαν ὥστε μὴ ἰσχύειν τινὰ παρελθεῖν διὰ τῆς ὁδοῦ ἐκείνης. καὶ ἰδοὺ ἔκραξαν λέγοντες Τί ἡμῖν καὶ σοί, Υἱὲ τοῦ Θεοῦ; ἦλθες ὧδε πρὸ καιροῦ βασανίσαι ἡμᾶς; ἦν δὲ μακρὰν ἀπ’ αὐτῶν ἀγέλη χοίρων πολλῶν βοσκομένη. οἱ δὲ δαίμονες παρεκάλουν αὐτὸν λέγοντες Εἰ ἐκβάλλεις ἡμᾶς, ἀπόστειλον ἡμᾶς εἰς τὴν ἀγέλην τῶν χοίρων. καὶ εἶπεν αὐτοῖς Ὑπάγετε. οἱ δὲ ἐξελθόντες ἀπῆλθον εἰς τοὺς χοίρους· καὶ ἰδοὺ ὥρμησεν πᾶσα ἡ ἀγέλη κατὰ τοῦ κρημνοῦ εἰς τὴν θάλασσαν, καὶ ἀπέθανον ἐν τοῖς ὕδασιν.",
+     "checks": {
+      "kept members present": [
+       0,
+       3
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "abyss",
+      "chain",
+      "bound"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew's Gadarenes"
+    },
+    {
+     "loc": "gnt:Rom 10:7",
+     "text": "ἤ Τίς καταβήσεται εἰς τὴν ἄβυσσον; τοῦτ’ ἔστιν Χριστὸν ἐκ νεκρῶν ἀναγαγεῖν.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.67,
+     "passes": false,
+     "missing": [
+      "chain",
+      "bound"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Romans 10:7, the abyss"
+    }
+   ],
+   "note": "Mark has the chains and the binding and sends the demons 'out of the country'. Luke has them beg not to be sent 'into the abyss'.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Luke 8:29"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.83)"
+  },
+  {
+   "id": "rev17.12→luke19.12-17",
+   "title": "A kingdom received, authority over ten",
+   "family": "Luke",
+   "seed": {
+    "loc": "gnt:Rev 17:12",
+    "text": "καὶ τὰ δέκα κέρατα ἃ εἶδες δέκα βασιλεῖς εἰσιν, οἵτινες βασιλείαν οὔπω ἔλαβον, ἀλλὰ ἐξουσίαν ὡς βασιλεῖς μίαν ὥραν λαμβάνουσιν μετὰ τοῦ θηρίου.",
+    "members_found": {
+     "horns": true,
+     "ten": true,
+     "kingdom": true,
+     "authority": true,
+     "hour": true,
+     "beast": true
+    }
+   },
+   "members": {
+    "horns": {
+     "gloss": "the ten horns",
+     "greek": "τὰ δέκα κέρατα"
+    },
+    "ten": {
+     "gloss": "ten",
+     "greek": "δέκα"
+    },
+    "kingdom": {
+     "gloss": "received a kingdom",
+     "greek": "βασιλείαν … ἔλαβον"
+    },
+    "authority": {
+     "gloss": "authority",
+     "greek": "ἐξουσίαν"
+    },
+    "hour": {
+     "gloss": "one hour",
+     "greek": "μίαν ὥραν"
+    },
+    "beast": {
+     "gloss": "with the beast",
+     "greek": "μετὰ τοῦ θηρίου"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "ten",
+      "horns",
+      "kingdom",
+      "authority",
+      "hour",
+      "beast"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "ten",
+      "kingdom",
+      "authority"
+     ],
+     "state": [
+      "ten",
+      "kingdom",
+      "authority"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "ten",
+     "kingdom",
+     "authority"
+    ],
+    "dropped": [
+     "horns",
+     "hour",
+     "beast"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Luke 19:12-17",
+    "text": "εἶπεν οὖν Ἄνθρωπός τις εὐγενὴς ἐπορεύθη εἰς χώραν μακρὰν λαβεῖν ἑαυτῷ βασιλείαν καὶ ὑποστρέψαι. καλέσας δὲ δέκα δούλους ἑαυτοῦ ἔδωκεν αὐτοῖς δέκα μνᾶς, καὶ εἶπεν πρὸς αὐτούς Πραγματεύσασθε ἐν ᾧ ἔρχομαι. οἱ δὲ πολῖται αὐτοῦ ἐμίσουν αὐτόν, καὶ ἀπέστειλαν πρεσβείαν ὀπίσω αὐτοῦ λέγοντες Οὐ θέλομεν τοῦτον βασιλεῦσαι ἐφ’ ἡμᾶς. καὶ ἐγένετο ἐν τῷ ἐπανελθεῖν αὐτὸν λαβόντα τὴν βασιλείαν καὶ εἶπεν φωνηθῆναι αὐτῷ τοὺς δούλους τούτους οἷς δεδώκει τὸ ἀργύριον, ἵνα γνοῖ τίς τί διεπραγματεύσατο. παρεγένετο δὲ ὁ πρῶτος λέγων Κύριε, ἡ μνᾶ σου δέκα προσηργάσατο μνᾶς. καὶ εἶπεν αὐτῷ Εὖγε, ἀγαθὲ δοῦλε, ὅτι ἐν ἐλαχίστῳ πιστὸς ἐγένου, ἴσθι ἐξουσίαν ἔχων ἐπάνω δέκα πόλεων.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Matt 25:14-30",
+     "text": "Ὥσπερ γὰρ ἄνθρωπος ἀποδημῶν ἐκάλεσεν τοὺς ἰδίους δούλους καὶ παρέδωκεν αὐτοῖς τὰ ὑπάρχοντα αὐτοῦ, καὶ ᾧ μὲν ἔδωκεν πέντε τάλαντα, ᾧ δὲ δύο, ᾧ δὲ ἕν, ἑκάστῳ κατὰ τὴν ἰδίαν δύναμιν, καὶ ἀπεδήμησεν. Εὐθέως πορευθεὶς ὁ τὰ πέντε τάλαντα λαβὼν ἠργάσατο ἐν αὐτοῖς καὶ ἐκέρδησεν ἄλλα πέντε· ὡσαύτως ὁ τὰ δύο ἐκέρδησεν ἄλλα δύο. ὁ δὲ τὸ ἓν λαβὼν ἀπελθὼν ὤρυξεν γῆν καὶ ἔκρυψεν τὸ ἀργύριον τοῦ κυρίου αὐτοῦ. μετὰ δὲ πολὺν χρόνον ἔρχεται ὁ κύριος τῶν δούλων ἐκείνων καὶ συναίρει λόγον μετ’ αὐτῶν. καὶ προσελθὼν ὁ τὰ πέντε τάλαντα λαβὼν προσήνεγκεν ἄλλα πέντε τάλαντα λέγων Κύριε, πέντε τάλαντά μοι παρέδωκας· ἴδε ἄλλα πέντε τάλαντα ἐκέρδησα. ἔφη αὐτῷ ὁ κύριος αὐτοῦ Εὖ, δοῦλε ἀγαθὲ καὶ πιστέ, ἐπὶ ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε καταστήσω· εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου σου. προσελθὼν καὶ ὁ τὰ δύο τάλαντα εἶπεν Κύριε, δύο τάλαντά μοι παρέδωκας· ἴδε ἄλλα δύο τάλαντα ἐκέρδησα. ἔφη αὐτῷ ὁ κύριος αὐτοῦ Εὖ, δοῦλε ἀγαθὲ καὶ πιστέ, ἐπὶ ὀλίγα ἦς πιστός, ἐπὶ πολλῶν σε καταστήσω· εἴσελθε εἰς τὴν χαρὰν τοῦ κυρίου σου. προσελθὼν δὲ καὶ ὁ τὸ ἓν τάλαντον εἰληφὼς εἶπεν Κύριε, ἔγνων σε ὅτι σκληρὸς εἶ ἄνθρωπος, θερίζων ὅπου οὐκ ἔσπειρας, καὶ συνάγων ὅθεν οὐ διεσκόρπισας· καὶ φοβηθεὶς ἀπελθὼν ἔκρυψα τὸ τάλαντόν σου ἐν τῇ γῇ· ἴδε ἔχεις τὸ σόν. ἀποκριθεὶς δὲ ὁ κύριος αὐτοῦ εἶπεν αὐτῷ Πονηρὲ δοῦλε καὶ ὀκνηρέ, ᾔδεις ὅτι θερίζω ὅπου οὐκ ἔσπειρα, καὶ συνάγω ὅθεν οὐ διεσκόρπισα; ἔδει σε οὖν βαλεῖν τὰ ἀργύριά μου τοῖς τραπεζείταις, καὶ ἐλθὼν ἐγὼ ἐκομισάμην ἂν τὸ ἐμὸν σὺν τόκῳ. ἄρατε οὖν ἀπ’ αὐτοῦ τὸ τάλαντον καὶ δότε τῷ ἔχοντι τὰ δέκα τάλαντα· τῷ γὰρ ἔχοντι παντὶ δοθήσεται καὶ περισσευθήσεται· τοῦ δὲ μὴ ἔχοντος καὶ ὃ ἔχει ἀρθήσεται ἀπ’ αὐτοῦ. καὶ τὸν ἀχρεῖον δοῦλον ἐκβάλετε εἰς τὸ σκότος τὸ ἐξώτερον· ἐκεῖ ἔσται ὁ κλαυθμὸς καὶ ὁ βρυγμὸς τῶν ὀδόντων.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.67,
+     "passes": false,
+     "missing": [
+      "kingdom",
+      "authority"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew's talents"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:24",
+     "text": "καὶ τὰ δέκα κέρατα αὐτοῦ, δέκα βατῆς 12 καιρου 1⁰] χρονου Q 13 μετα] επι Q ερχομενος] + ην A και ΑQΓ προσηχθη αυτω] ενωπιον αυτου προσηγαγον αυτον A και προσηχθη (Q* προσ- ηνεχθη Qᵃ) αυτω Q [ε]νωπιον αυτο[υ προση]χθη Γᵛiᵈ 14 om και 5⁰ AQΓ δουλευουσιν αυτω] αυτω δουλευουσιν A δουλευσουσιν (-λευουσ. Qᵃ) αυτω Q αυτ. δουλευσουσιν και [υπ]ακουσοντ[αι] Γ 15 [ε] γω Δα[νιηλ εν τηl εξει μου Γ εταρασσον] σ[υ]νεταρασσον Γ 16 ακριβιαν B*A (-βειαν BᵃᵇQΓ) bis om παρ αυτου Γ αυτου] + μαθειν BᵃᵇA συγκρισιν BᵃᵇQΓ εγνωρισε Γ 17 θηρια] + τα μεγαλα AΓ τεσσερες Γ improb vid αι Q? 18 παρα- ληψονται BbQᵃΓ κατε[ξουσι]ν Γ εως] + αιωνος και εως Q 19 διαφορον A θηριον] + και Q χαλκοι] + οι B 20 κεφαλην A* (-λη Aᵃ?) πρώτων] προτερων AQΓᵛⁱᵈ+ τρια· κερας εκεινο AΙ fort+τρια Q ω] ου Q στομα] pr το Q μειζω AQ 21 ισχυεν A 22 om ου A ημερων] pr των AQΓ 23 συμπατησει BᵇQΓ σιλεῖς ἀναστήσονται· καὶ ἀπίσω αὐτῶν ἀναστήσεται ἄς ὑπεροίσει B κακοῖς πάντας τοὺς ἔμπροσθεν, καὶ τρεῖς βασιλεῖς ταπεινώσει,",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "dropped members absent": [
+       2,
+       3
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "kingdom",
+      "authority"
+     ],
+     "kept_but_should_be_dropped": [
+      "horns"
+     ],
+     "label": "Septuagint, Dan 7:24: ten horns, ten kings"
+    },
+    {
+     "loc": "gnt:Mark 13:34",
+     "text": "ὡς ἄνθρωπος ἀπόδημος ἀφεὶς τὴν οἰκίαν αὐτοῦ καὶ δοὺς τοῖς δούλοις αὐτοῦ τὴν ἐξουσίαν, ἑκάστῳ τὸ ἔργον αὐτοῦ, καὶ τῷ θυρωρῷ ἐνετείλατο ἵνα γρηγορῇ.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.67,
+     "passes": false,
+     "missing": [
+      "ten",
+      "kingdom"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark: authority given to the slaves"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 4,
+     "refs": [
+      "Luke 19:12",
+      "Luke 19:13",
+      "Luke 19:14",
+      "Luke 19:15"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 4,
+     "refs": [
+      "Μακκαβαίων_Βʹ 10:8",
+      "Μακκαβαίων_Βʹ 10:9",
+      "Μακκαβαίων_Βʹ 10:10",
+      "Μακκαβαίων_Βʹ 10:11"
+     ]
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.67)"
+  },
+  {
+   "id": "rev14.14→mark14.62",
+   "title": "The son of man seated, and the cloud",
+   "family": "Mark",
+   "seed": {
+    "loc": "gnt:Rev 14:14",
+    "text": "Καὶ εἶδον, καὶ ἰδοὺ νεφέλη λευκή, καὶ ἐπὶ τὴν νεφέλην καθήμενον ὅμοιον υἱὸν ἀνθρώπου, ἔχων ἐπὶ τῆς κεφαλῆς αὐτοῦ στέφανον χρυσοῦν καὶ ἐν τῇ χειρὶ αὐτοῦ δρέπανον ὀξύ.",
+    "members_found": {
+     "cloud": true,
+     "white": true,
+     "seated": true,
+     "son": true,
+     "crown": true,
+     "sickle": true
+    }
+   },
+   "members": {
+    "cloud": {
+     "gloss": "a cloud",
+     "greek": "νεφέλην"
+    },
+    "white": {
+     "gloss": "white",
+     "greek": "λευκή"
+    },
+    "seated": {
+     "gloss": "one seated",
+     "greek": "καθήμενον"
+    },
+    "son": {
+     "gloss": "a son of man",
+     "greek": "υἱὸν ἀνθρώπου"
+    },
+    "crown": {
+     "gloss": "a golden crown",
+     "greek": "στέφανον χρυσοῦν"
+    },
+    "sickle": {
+     "gloss": "a sharp sickle",
+     "greek": "δρέπανον ὀξύ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "cloud",
+      "white",
+      "seated",
+      "son",
+      "crown",
+      "sickle"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "cloud",
+      "seated",
+      "son"
+     ],
+     "state": [
+      "cloud",
+      "seated",
+      "son"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "son",
+      "seated",
+      "cloud"
+     ],
+     "state": [
+      "son",
+      "seated",
+      "cloud"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "son",
+     "seated",
+     "cloud"
+    ],
+    "dropped": [
+     "white",
+     "crown",
+     "sickle"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Mark 14:62",
+    "text": "ὁ δὲ Ἰησοῦς εἶπεν Ἐγώ εἰμι, καὶ ὄψεσθε τὸν Υἱὸν τοῦ ἀνθρώπου ἐκ δεξιῶν καθήμενον τῆς δυνάμεως καὶ ἐρχόμενον μετὰ τῶν νεφελῶν τοῦ οὐρανοῦ.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Luke 22:69",
+     "text": "ἀπὸ τοῦ νῦν δὲ ἔσται ὁ Υἱὸς τοῦ ἀνθρώπου καθήμενος ἐκ δεξιῶν τῆς δυνάμεως τοῦ Θεοῦ.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.57,
+     "passes": false,
+     "missing": [
+      "son",
+      "cloud"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke's parallel"
+    },
+    {
+     "loc": "gnt:Mark 13:26",
+     "text": "καὶ τότε ὄψονται τὸν Υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἐν νεφέλαις μετὰ δυνάμεως πολλῆς καὶ δόξης.",
+     "checks": {
+      "kept members present": [
+       2,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.71,
+     "passes": false,
+     "missing": [
+      "seated"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark 13:26"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:13",
+     "text": "ἐθεώρουν ἐν ὁράματι τῆς νυκτός, καὶ ἰδοὺ μετὰ τῶν νεφελῶν τοῦ οὐρανοῦ ὡς υἱὸς ἀνθρώπου ἐρχόμενος, καὶ ἕως τοῦ παλαιοῦ τῶν ἡμερῶν ἔφθασεν· καὶ προσήχθη αὐτῷ.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.57,
+     "passes": false,
+     "missing": [
+      "son",
+      "seated"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Dan 7:13 (Theodotion)"
+    },
+    {
+     "loc": "lxx:Ψαλμοι 109:1",
+     "text": "Εἶπεν ὁ κύριος τῷ κυρίῳ μου Κάθου ἐκ δεξιῶν μου ἕως ἂν θῶ τοὺς ἐχθρούς σου ὑποπόδιον τῶν ποδῶν σου.",
+     "checks": {
+      "kept members present": [
+       0,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.43,
+     "passes": false,
+     "missing": [
+      "son",
+      "seated",
+      "cloud"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Ps 109:1"
+    }
+   ],
+   "note": "Matt 26:64 is Mark's verse again and fits as Mark's does; it is not set as a control.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 2,
+     "refs": [
+      "Mark 14:62",
+      "Matt 26:64"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.71)"
+  },
+  {
+   "id": "rev13.10+13.17→luke22.36-38",
+   "title": "Buy, sell, the one who has, the sword, here",
+   "family": "Luke",
+   "seed": {
+    "loc": "gnt:Rev 13:10 + Rev 13:17",
+    "text": "εἴ τις εἰς αἰχμαλωσίαν, εἰς αἰχμαλωσίαν ὑπάγει· εἴ τις ἐν μαχαίρῃ ἀποκτενεῖ, δεῖ αὐτὸν ἐν μαχαίρῃ ἀποκτανθῆναι. Ὧδέ ἐστιν ἡ ὑπομονὴ καὶ ἡ πίστις τῶν ἁγίων. καὶ ἵνα μή τις δύνηται ἀγοράσαι ἢ πωλῆσαι εἰ μὴ ὁ ἔχων τὸ χάραγμα τὸ ὄνομα τοῦ θηρίου ἢ τὸν ἀριθμὸν τοῦ ὀνόματος αὐτοῦ.",
+    "members_found": {
+     "captivity": true,
+     "sword": true,
+     "killed": true,
+     "here": true,
+     "endurance": true,
+     "buy": true,
+     "sell": true,
+     "having": true,
+     "mark": true
+    }
+   },
+   "members": {
+    "captivity": {
+     "gloss": "into captivity",
+     "greek": "εἰς αἰχμαλωσίαν"
+    },
+    "sword": {
+     "gloss": "the sword",
+     "greek": "μαχαίρῃ"
+    },
+    "killed": {
+     "gloss": "must be killed",
+     "greek": "ἀποκτανθῆναι"
+    },
+    "here": {
+     "gloss": "here",
+     "greek": "ὧδε"
+    },
+    "endurance": {
+     "gloss": "the endurance",
+     "greek": "ἡ ὑπομονή"
+    },
+    "buy": {
+     "gloss": "to buy",
+     "greek": "ἀγοράσαι"
+    },
+    "sell": {
+     "gloss": "to sell",
+     "greek": "πωλῆσαι"
+    },
+    "having": {
+     "gloss": "the one having",
+     "greek": "ὁ ἔχων"
+    },
+    "mark": {
+     "gloss": "the mark",
+     "greek": "τὸ χάραγμα"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "captivity",
+      "sword",
+      "killed",
+      "here",
+      "endurance",
+      "buy",
+      "sell",
+      "having",
+      "mark"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "sword",
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ],
+     "state": [
+      "sword",
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "sword",
+     "here",
+     "buy",
+     "sell",
+     "having"
+    ],
+    "dropped": [
+     "captivity",
+     "killed",
+     "endurance",
+     "mark"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Luke 22:36-38",
+    "text": "εἶπεν δὲ αὐτοῖς Ἀλλὰ νῦν ὁ ἔχων βαλλάντιον ἀράτω, ὁμοίως καὶ πήραν, καὶ ὁ μὴ ἔχων πωλησάτω τὸ ἱμάτιον αὐτοῦ καὶ ἀγορασάτω μάχαιραν. λέγω γὰρ ὑμῖν ὅτι τοῦτο τὸ γεγραμμένον δεῖ τελεσθῆναι ἐν ἐμοί, τό Καὶ μετὰ ἀνόμων ἐλογίσθη· καὶ γὰρ τὸ περὶ ἐμοῦ τέλος ἔχει. οἱ δὲ εἶπαν Κύριε, ἰδοὺ μάχαιραι ὧδε δύο. ὁ δὲ εἶπεν αὐτοῖς Ἱκανόν ἐστιν.",
+    "checks": {
+     "kept members present": [
+      5,
+      5
+     ],
+     "dropped members absent": [
+      4,
+      4
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Matt 26:51-52",
+     "text": "καὶ ἰδοὺ εἷς τῶν μετὰ Ἰησοῦ ἐκτείνας τὴν χεῖρα ἀπέσπασεν τὴν μάχαιραν αὐτοῦ, καὶ πατάξας τὸν δοῦλον τοῦ ἀρχιερέως ἀφεῖλεν αὐτοῦ τὸ ὠτίον. τότε λέγει αὐτῷ ὁ Ἰησοῦς Ἀπόστρεψον τὴν μάχαιράν σου εἰς τὸν τόπον αὐτῆς· πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρῃ ἀπολοῦνται.",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.56,
+     "passes": false,
+     "missing": [
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew: the sword at the arrest"
+    },
+    {
+     "loc": "gnt:Mark 14:47-48",
+     "text": "εἷς δέ τις τῶν παρεστηκότων σπασάμενος τὴν μάχαιραν ἔπαισεν τὸν δοῦλον τοῦ ἀρχιερέως καὶ ἀφεῖλεν αὐτοῦ τὸ ὠτάριον. καὶ ἀποκριθεὶς ὁ Ἰησοῦς εἶπεν αὐτοῖς Ὡς ἐπὶ λῃστὴν ἐξήλθατε μετὰ μαχαιρῶν καὶ ξύλων συλλαβεῖν με·",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.56,
+     "passes": false,
+     "missing": [
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark: the sword at the arrest"
+    },
+    {
+     "loc": "gnt:Luke 22:49-51",
+     "text": "ἰδόντες δὲ οἱ περὶ αὐτὸν τὸ ἐσόμενον εἶπαν Κύριε, εἰ πατάξομεν ἐν μαχαίρῃ; καὶ ἐπάταξεν εἷς τις ἐξ αὐτῶν τοῦ ἀρχιερέως τὸν δοῦλον καὶ ἀφεῖλεν τὸ οὖς αὐτοῦ τὸ δεξιόν. ἀποκριθεὶς δὲ ὁ Ἰησοῦς εἶπεν Ἐᾶτε ἕως τούτου· καὶ ἁψάμενος τοῦ ὠτίου ἰάσατο αὐτόν.",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.56,
+     "passes": false,
+     "missing": [
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke: the sword at the arrest"
+    },
+    {
+     "loc": "gnt:John 18:10-11",
+     "text": "Σίμων οὖν Πέτρος ἔχων μάχαιραν εἵλκυσεν αὐτὴν καὶ ἔπαισεν τὸν τοῦ ἀρχιερέως δοῦλον καὶ ἀπέκοψεν αὐτοῦ τὸ ὠτάριον τὸ δεξιόν. ἦν δὲ ὄνομα τῷ δούλῳ Μάλχος. εἶπεν οὖν ὁ Ἰησοῦς τῷ Πέτρῳ Βάλε τὴν μάχαιραν εἰς τὴν θήκην· τὸ ποτήριον ὃ δέδωκέν μοι ὁ Πατήρ, οὐ μὴ πίω αὐτό;",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.56,
+     "passes": false,
+     "missing": [
+      "here",
+      "buy",
+      "sell",
+      "having"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "John: the sword at the arrest"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7941,
+     "passing": 1,
+     "refs": [
+      "Luke 22:36"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.56)"
   }
  ]
 }

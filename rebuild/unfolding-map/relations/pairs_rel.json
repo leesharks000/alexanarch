@@ -1,0 +1,99 @@
+{
+ "rows": [
+  {
+   "name": "bound by Satan / Luke 13",
+   "seed": "gnt:Rev 20:2",
+   "target": "gnt:Luke 13:16",
+   "features": [
+    "agent changed, side reversed",
+    "mode changed",
+    "object changed",
+    "object's party changed"
+   ],
+   "operators": [
+    "REVERSE-DOER",
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "name": "must be loosed / Luke 13",
+   "seed": "gnt:Rev 20:3",
+   "target": "gnt:Luke 13:16",
+   "features": [
+    "mode changed",
+    "object's party changed"
+   ],
+   "operators": []
+  },
+  {
+   "name": "into the abyss / Luke 8",
+   "seed": "gnt:Rev 20:3",
+   "target": "gnt:Luke 8:31",
+   "features": [
+    "action changed",
+    "agent changed, side kept",
+    "negative set"
+   ],
+   "operators": [
+    "NEGATE",
+    "SUBSTITUTE"
+   ]
+  },
+  {
+   "name": "authority received / Luke 19",
+   "seed": "gnt:Rev 17:12",
+   "target": "gnt:Luke 19:17",
+   "features": [
+    "action changed",
+    "agent changed, side reversed",
+    "mode changed"
+   ],
+   "operators": [
+    "SUBSTITUTE"
+   ]
+  },
+  {
+   "name": "seated / Mark 14",
+   "seed": "gnt:Rev 14:14",
+   "target": "gnt:Mark 14:62",
+   "features": [
+    "mode changed",
+    "object changed"
+   ],
+   "operators": [
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "name": "to buy / Luke 22",
+   "seed": "gnt:Rev 13:17",
+   "target": "gnt:Luke 22:36",
+   "features": [
+    "agent changed, side kept",
+    "mode changed",
+    "negative removed",
+    "object supplied"
+   ],
+   "operators": [
+    "TRANSFER-ATTRIBUTE",
+    "UNDO"
+   ]
+  },
+  {
+   "name": "what the angel does at the closure / Matthew 28",
+   "seed": "gnt:Rev 20:3",
+   "target": "gnt:Matt 28:2",
+   "features": [
+    "action changed"
+   ],
+   "operators": [
+    "OPPOSE"
+   ]
+  }
+ ],
+ "bad": [],
+ "oppose": {
+  "two_j": 0,
+  "two_m": 0
+ }
+}
