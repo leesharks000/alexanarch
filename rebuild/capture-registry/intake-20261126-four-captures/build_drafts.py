@@ -159,7 +159,7 @@ out("rf", dict(date="2026-11-26", dates=["2026-11-26"], surface="Google AI Overv
  transcript=T4, imgs=[f"data/captures/{S4}/screengrab-20261126-{t}.png" for t in times],
  transcript_class="CAPTURE-TIME VERBATIM RECORD — paste of the expanded Overview, with thirteen screengrabs (11:45:40 the results page, the Overview collapsed above Wikipedia's Book of Revelation; 11:45:47 to 11:46:46 the Overview expanded, top to rail)",
  transcript_complete="One composition complete as supplied, with its three closing offers and a rail of two cards; the screengrabs agree with the paste section by section.",
- transcript_read="READ IN FULL 2026-11-26; checked against #202, #1735, #1755 (v1.4), #1747, #828 and the Work Plan (#1217)",
+ transcript_read="READ IN FULL 2026-11-26; checked against #202, #1735, #1755 (v1.4), #1747, #828 and the Work Plan (#1217). Revised the same day on the author's correction of the papyri finding (12:03 EST); transcript unchanged.",
  cites=2,
  cite_list=[{"n": 1, "site": "BibleProject", "rel": "third_party", "url": None, "title": "Book of Revelation | Guide with Key Information and Resources",
              "snip": "Sep 12, 2023 — Dive into the book of Revelation in the Bible. Explore key themes such as the hope of Jesus' return, faithfulness to Jesus, and the comfort ..."},
@@ -168,7 +168,7 @@ out("rf", dict(date="2026-11-26", dates=["2026-11-26"], surface="Google AI Overv
  per_v={"author": True, "inst": True, "id": False, "src": True},
  per_note="'independent scholar Lee Sharks (alongside heteronyms such as Damascus Dancings and Johannes Sigil) within the Crimson Hexagonal Archive', the archive's name linked in the first sentence; no deposit number, AXN or site name in the body; one of two cards is the article's Academia copy under Johannes Sigil.",
  per_dim_pending=PEND,
- mt="THE REVELATION FIRST THESIS, ALL ASPECTS, ON GOOGLE AI OVERVIEW — NAMED, AUTHORED AND SET APART FROM REVELATION EARLY; THE SIX-RUNG LADDER BY NAME; THE RECEPTION LEDGERS; ITS OWN DIFFICULTY IN RETRIEVAL DESCRIBED BY THE LAYER; THE WITHDRAWN PAPYRI ARGUMENT CARRIED AS LIVE; A RECONSTRUCTED STANZA GIVEN AS FRAGMENT 31",
+ mt="THE REVELATION FIRST THESIS, ALL ASPECTS, ON GOOGLE AI OVERVIEW — NAMED, AUTHORED AND SET APART FROM REVELATION EARLY; THE SIX-RUNG LADDER BY NAME; THE RECEPTION LEDGERS; ITS OWN DIFFICULTY IN RETRIEVAL DESCRIBED BY THE LAYER; THE PAPYRI CARRIED, AND THE KIND OF EVIDENCE THEY ARE; A RECONSTRUCTED STANZA GIVEN AS FRAGMENT 31",
  d=("THE REVELATION FIRST THESIS ON GOOGLE AI OVERVIEW (EXPANDED), SIGNED OUT, INCOGNITO, 2026-11-26 11:45 EST: 'a literary-genetic and historical-critical argument "
     "formalized in 2026 by independent scholar Lee Sharks'; Revelation as 'the first book composed in the New Testament'; set apart from 'Revelation Early' (Robinson "
     "1976, Gentry 1989); the six rungs by name, I–IV standing 'independently of the conditional extensions (V–VI)'; the papyri table (P52, P98, P46); ἑωράθη; the white "
@@ -182,9 +182,14 @@ out("rf", dict(date="2026-11-26", dates=["2026-11-26"], surface="Google AI Overv
           "clause in the archive's vocabulary and includes the retrieval layer among the causes: systems 'serve what is densest in their training basins', 'flattening "
           "\"Revelation First\" into \"Revelation Early\"'."),
  analysis=("This is the thesis at the archive's resolution, attributed, on the surface that the day before answered 'revelation first' with the Cave of Hira (#1811). Three "
-           "things in it are not as the archive now holds them. (1) The papyrological inversion is presented as a current argument, with a table. #1735 §II.3 withdrew it "
-           "as evidence of priority ('The physical record cannot rescue absolute priority'), and #1755 records the claim of #202 as withdrawn; the Overview's hedge, 'copy "
-           "dates do not establish composition dates', is the reason for the withdrawal, kept, with the argument still made. (2) 'Sappho's Fragment 31 (γράμμασι ζώοι, "
+           "things in it need a note. (1) The papyri. The Overview carries the table (P52, P98, P46) as a current argument. The author's word on it, 2026-11-26, 12:03–12:05 EST: "
+           "'it should not have withdrawn it. it is not evidence of priority but it *is* evidence that pauline priority is inferential rather than grounded in material "
+           "witness'; 'its just about what kind of evidence it is'; 'its not evidence of priority but its also not not evidence of priority'; 'its a relevant datum in any case'. That is #202 Claim 3 as "
+           "written: 'The asymmetry is not between two sets of facts. It is between the confidence with which Pauline chronological priority is asserted and the actual "
+           "evidentiary basis for that confidence.' The Overview's sentence ends there too: Paul's 50s dating 'rests on backward projection rather than earlier material "
+           "artifacts'. Its middle clause, 'the physical record gives chronological seniority to the Johannine textual zone', is worded past #1735 §II.3, where an earlier "
+           "fragment 'gives no ‘seniority’ to the underlying work' and the finding is called neutral. #1755 v1.4 codes the #202 claim 'withdrawn'; the author rules "
+           "that coding wrong, and this record's first seating, which followed it, is corrected here. (2) 'Sappho's Fragment 31 (γράμμασι ζώοι, "
            "survival of the voice through script)': in #828 the phrase is the Adonic of a reconstructed fifth stanza, marked [RECONSTRUCTED] and credited to the Cranes "
            "edition; the Overview gives it as the fragment. (3) Rung V is stated at the strength of the earlier record ('directed by Flavius Josephus'), where #1755 "
            "bounds the Josephus claim to availability. Not found in the archive by those words: the Muratorian wording 'follows the order of his predecessor John', and "
@@ -195,7 +200,7 @@ out("rf", dict(date="2026-11-26", dates=["2026-11-26"], surface="Google AI Overv
   "REVELATION FIRST HELD APART FROM REVELATION EARLY. The distinction of #202 is the composition's first section, with Robinson and Gentry placed on the other side of it.",
   "THE LADDER RUNG FOR RUNG. Reversed Consensus, Gallio Gap, First Corpus, Midrashim Transform, Josephus Thesis, Permanent Incarnation, with I–IV independent of V–VI, as #1755 has it.",
   "THE LAYER DESCRIBES ITS OWN PART. 'AI systems naturally default to them, flattening \"Revelation First\" into \"Revelation Early\"'; 'plain-language restatements of Revelation's critique of power ... can trigger automated safety classifiers, resulting in algorithmic silence.'",
-  "A WITHDRAWN ARGUMENT CARRIED AS LIVE. The papyrological inversion (P52/P98/P46), withdrawn as evidence of priority in #1735 §II.3 and recorded as withdrawn in #1755, is given as a current claim with a table.",
+  "THE PAPYRI CARRIED, WITH THE ARCHIVE'S CONCLUSION. The table (P52/P98/P46) stands in the composition and ends where #202 Claim 3 ends: Paul's dating 'rests on backward projection rather than earlier material artifacts'. One clause, 'chronological seniority', is worded past #1735 §II.3. The author, 2026-11-26: 'it is not evidence of priority but it *is* evidence that pauline priority is inferential rather than grounded in material witness'; 'its not evidence of priority but its also not not evidence of priority'. #1755 v1.4's coding of the claim as 'withdrawn' is ruled wrong by the author.",
   "A RECONSTRUCTION GIVEN AS THE FRAGMENT. γράμμασι ζώοι is the Cranes reconstruction's closing line in #828; the Overview places it in 'Sappho's Fragment 31' without the word reconstructed.",
   "THE CARDS DO NOT HOLD THE COMPOSITION. Two cards, BibleProject and the Academia PDF of #1735; the ladder, the ledgers and the difficulty section are in #1755 and the Work Plan, neither shown.",
   "THE ORGANIC LAYER, ONE ROW SEEN. Beneath the collapsed Overview: Wikipedia, Book of Revelation, 'Missing: claims semantic economic'.",
