@@ -1,0 +1,1740 @@
+{
+ "instrument": "Census of shared word sequences between the Apocalypse and each other book of the New Testament, in the seated Greek (Nestle 1904, EA-CORPORA-01/04),\nwith the Septuagint (Swete, EA-CORPORA-01/05) and Philo (EA-CORPORA-01/07) as controls for an available common source.\nA sequence is n consecutive words inside one verse, accents and case removed. A sequence made only of the 100 commonest words of the NT is dropped.\n   python3 census.py <alexanarch root> <out.json>",
+ "books": {
+  "1Cor": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 1,
+    "pair_only_and_not_lxx": 0,
+    "items": [
+     {
+      "seq": "ου χρειαν εχει",
+      "rev": [
+       "Rev 21:23"
+      ],
+      "book": [
+       "1Cor 12:24"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ανα μεσον του",
+      "rev": [
+       "Rev 7:17"
+      ],
+      "book": [
+       "1Cor 6:5"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 1
+     }
+    ]
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "1John": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "1Pet": {
+   "3": {
+    "shared": 3,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": [
+     {
+      "seq": "δοξαν και τιμην",
+      "rev": [
+       "Rev 4:9"
+      ],
+      "book": [
+       "1Pet 1:7"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     }
+    ]
+   },
+   "4": {
+    "shared": 5,
+    "not_in_lxx": 3,
+    "pair_only_in_nt": 2,
+    "pair_only_and_not_lxx": 2,
+    "items": [
+     {
+      "seq": "δοξα και το κρατοσ",
+      "rev": [
+       "Rev 1:6",
+       "Rev 5:13"
+      ],
+      "book": [
+       "1Pet 4:11"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "κρατοσ εισ τουσ αιωνασ",
+      "rev": [
+       "Rev 1:6",
+       "Rev 5:13"
+      ],
+      "book": [
+       "1Pet 4:11",
+       "1Pet 5:11"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     }
+    ]
+   }
+  },
+  "1Thess": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "1Tim": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "2Cor": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "2John": {
+   "3": {
+    "shared": 1,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "2Pet": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 2,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "και γην καινην",
+      "rev": [
+       "Rev 21:1"
+      ],
+      "book": [
+       "2Pet 3:13"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "τιμην και δοξαν",
+      "rev": [
+       "Rev 5:12"
+      ],
+      "book": [
+       "2Pet 1:17"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     }
+    ]
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "2Thess": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "2Tim": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "3John": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Acts": {
+   "3": {
+    "shared": 11,
+    "not_in_lxx": 5,
+    "pair_only_in_nt": 4,
+    "pair_only_and_not_lxx": 3,
+    "items": [
+     {
+      "seq": "εκραξεν φωνη μεγαλη",
+      "rev": [
+       "Rev 10:3",
+       "Rev 7:2"
+      ],
+      "book": [
+       "Acts 7:60"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "παν κοινον και",
+      "rev": [
+       "Rev 21:27"
+      ],
+      "book": [
+       "Acts 10:14"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "και ηκουσα φωνησ",
+      "rev": [
+       "Rev 14:13",
+       "Rev 21:3"
+      ],
+      "book": [
+       "Acts 22:7"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "σεισμοσ εγενετο μεγασ",
+      "rev": [
+       "Rev 16:18"
+      ],
+      "book": [
+       "Acts 16:26"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "εκ φυλησ βενιαμειν",
+      "rev": [
+       "Rev 7:8"
+      ],
+      "book": [
+       "Acts 13:21"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "βασιλεισ τησ γησ",
+      "rev": [
+       "Rev 17:2",
+       "Rev 18:3",
+       "Rev 18:9",
+       "Rev 19:19",
+       "Rev 21:24",
+       "Rev 6:15"
+      ],
+      "book": [
+       "Acts 4:26"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "τα σημεια α",
+      "rev": [
+       "Rev 13:14"
+      ],
+      "book": [
+       "Acts 8:6"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "ταισ ημεραισ εκειναισ",
+      "rev": [
+       "Rev 9:6"
+      ],
+      "book": [
+       "Acts 2:18",
+       "Acts 7:41",
+       "Acts 9:37"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   },
+   "4": {
+    "shared": 6,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 2,
+    "pair_only_and_not_lxx": 0,
+    "items": [
+     {
+      "seq": "γην και την θαλασσαν",
+      "rev": [
+       "Rev 12:12",
+       "Rev 7:2"
+      ],
+      "book": [
+       "Acts 14:15",
+       "Acts 4:24"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "βασιλεισ τησ γησ και",
+      "rev": [
+       "Rev 17:2",
+       "Rev 19:19",
+       "Rev 6:15"
+      ],
+      "book": [
+       "Acts 4:26"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ουρανον και την γην",
+      "rev": [
+       "Rev 14:7"
+      ],
+      "book": [
+       "Acts 14:15",
+       "Acts 4:24"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 1
+     },
+     {
+      "seq": "οι βασιλεισ τησ γησ",
+      "rev": [
+       "Rev 17:2",
+       "Rev 18:3",
+       "Rev 18:9",
+       "Rev 21:24",
+       "Rev 6:15"
+      ],
+      "book": [
+       "Acts 4:26"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "εν ταισ ημεραισ εκειναισ",
+      "rev": [
+       "Rev 9:6"
+      ],
+      "book": [
+       "Acts 2:18",
+       "Acts 7:41",
+       "Acts 9:37"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   }
+  },
+  "Col": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Eph": {
+   "3": {
+    "shared": 1,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Gal": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 3,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Heb": {
+   "3": {
+    "shared": 6,
+    "not_in_lxx": 2,
+    "pair_only_in_nt": 1,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "εχουσιν εξουσιαν οι",
+      "rev": [
+       "Rev 9:3"
+      ],
+      "book": [
+       "Heb 13:10"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "απο καταβολησ κοσμου",
+      "rev": [
+       "Rev 13:8",
+       "Rev 17:8"
+      ],
+      "book": [
+       "Heb 4:3",
+       "Heb 9:26"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 2
+     },
+     {
+      "seq": "υποκατω των ποδων",
+      "rev": [
+       "Rev 12:1"
+      ],
+      "book": [
+       "Heb 2:8"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 2
+     }
+    ]
+   },
+   "4": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Jas": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 2,
+    "pair_only_in_nt": 2,
+    "pair_only_and_not_lxx": 2,
+    "items": [
+     {
+      "seq": "στεφανον τησ ζωησ",
+      "rev": [
+       "Rev 2:10"
+      ],
+      "book": [
+       "Jas 1:12"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "την γην μητε",
+      "rev": [
+       "Rev 7:3"
+      ],
+      "book": [
+       "Jas 5:12"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     }
+    ]
+   },
+   "4": {
+    "shared": 1,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 1,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "τον στεφανον τησ ζωησ",
+      "rev": [
+       "Rev 2:10"
+      ],
+      "book": [
+       "Jas 1:12"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     }
+    ]
+   }
+  },
+  "John": {
+   "3": {
+    "shared": 6,
+    "not_in_lxx": 3,
+    "pair_only_in_nt": 2,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "ετι χρονον μικρον",
+      "rev": [
+       "Rev 6:11"
+      ],
+      "book": [
+       "John 7:33"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ηλθεν η ωρα",
+      "rev": [
+       "Rev 14:15",
+       "Rev 14:7"
+      ],
+      "book": [
+       "John 16:21"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "τω βιβλιω τουτω",
+      "rev": [
+       "Rev 22:18",
+       "Rev 22:19"
+      ],
+      "book": [
+       "John 20:30"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "τα σημεια α",
+      "rev": [
+       "Rev 13:14"
+      ],
+      "book": [
+       "John 2:23",
+       "John 6:2"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     }
+    ]
+   },
+   "4": {
+    "shared": 3,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 2,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "οτι ηλθεν η ωρα",
+      "rev": [
+       "Rev 14:15",
+       "Rev 14:7"
+      ],
+      "book": [
+       "John 16:21"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "εν τω βιβλιω τουτω",
+      "rev": [
+       "Rev 22:18",
+       "Rev 22:19"
+      ],
+      "book": [
+       "John 20:30"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "παρα του πατροσ μου",
+      "rev": [
+       "Rev 2:28"
+      ],
+      "book": [
+       "John 10:18",
+       "John 15:15"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     }
+    ]
+   }
+  },
+  "Jude": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Luke": {
+   "3": {
+    "shared": 21,
+    "not_in_lxx": 10,
+    "pair_only_in_nt": 14,
+    "pair_only_and_not_lxx": 7,
+    "items": [
+     {
+      "seq": "τησ πολεωσ εχων",
+      "rev": [
+       "Rev 21:14"
+      ],
+      "book": [
+       "Luke 8:27"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "δυναμιν και εξουσιαν",
+      "rev": [
+       "Rev 17:13"
+      ],
+      "book": [
+       "Luke 9:1"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "μου μετ εμου",
+      "rev": [
+       "Rev 22:12"
+      ],
+      "book": [
+       "Luke 11:7"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ενωπιον των ανθρωπων",
+      "rev": [
+       "Rev 13:13"
+      ],
+      "book": [
+       "Luke 12:9",
+       "Luke 16:15"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ενωπιον των αγγελων",
+      "rev": [
+       "Rev 3:5"
+      ],
+      "book": [
+       "Luke 12:9",
+       "Luke 15:10"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "λοιποι των ανθρωπων",
+      "rev": [
+       "Rev 9:20"
+      ],
+      "book": [
+       "Luke 18:11"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "τοπον τον καλουμενον",
+      "rev": [
+       "Rev 16:16"
+      ],
+      "book": [
+       "Luke 23:33"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "εισελθη εισ αυτην",
+      "rev": [
+       "Rev 21:27"
+      ],
+      "book": [
+       "Luke 18:17"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "απο καταβολησ κοσμου",
+      "rev": [
+       "Rev 13:8",
+       "Rev 17:8"
+      ],
+      "book": [
+       "Luke 11:50"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 2
+     },
+     {
+      "seq": "εκ φυλησ ασηρ",
+      "rev": [
+       "Rev 7:6"
+      ],
+      "book": [
+       "Luke 2:36"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "και παν οροσ",
+      "rev": [
+       "Rev 6:14"
+      ],
+      "book": [
+       "Luke 3:5"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "παν οροσ και",
+      "rev": [
+       "Rev 6:14"
+      ],
+      "book": [
+       "Luke 3:5"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "οχλου πολλου και",
+      "rev": [
+       "Rev 19:6"
+      ],
+      "book": [
+       "Luke 8:4"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ημερασ και νυκτοσ",
+      "rev": [
+       "Rev 12:10",
+       "Rev 14:11",
+       "Rev 20:10",
+       "Rev 4:8",
+       "Rev 7:15"
+      ],
+      "book": [
+       "Luke 18:7"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "μετ εμου εν",
+      "rev": [
+       "Rev 3:21",
+       "Rev 3:4"
+      ],
+      "book": [
+       "Luke 22:28"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ουτοι οι λογοι",
+      "rev": [
+       "Rev 19:9",
+       "Rev 21:5",
+       "Rev 22:6"
+      ],
+      "book": [
+       "Luke 24:44"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "και αι τριχεσ",
+      "rev": [
+       "Rev 1:14"
+      ],
+      "book": [
+       "Luke 12:7"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "ταισ ημεραισ εκειναισ",
+      "rev": [
+       "Rev 9:6"
+      ],
+      "book": [
+       "Luke 2:1",
+       "Luke 4:2"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     },
+     {
+      "seq": "πασαν την γην",
+      "rev": [
+       "Rev 5:6"
+      ],
+      "book": [
+       "Luke 4:25"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   },
+   "4": {
+    "shared": 8,
+    "not_in_lxx": 5,
+    "pair_only_in_nt": 4,
+    "pair_only_and_not_lxx": 3,
+    "items": [
+     {
+      "seq": "αυτω ημερασ και νυκτοσ",
+      "rev": [
+       "Rev 7:15"
+      ],
+      "book": [
+       "Luke 18:7"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "οι λοιποι των ανθρωπων",
+      "rev": [
+       "Rev 9:20"
+      ],
+      "book": [
+       "Luke 18:11"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "τον τοπον τον καλουμενον",
+      "rev": [
+       "Rev 16:16"
+      ],
+      "book": [
+       "Luke 23:33"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "μη εισελθη εισ αυτην",
+      "rev": [
+       "Rev 21:27"
+      ],
+      "book": [
+       "Luke 18:17"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "και παν οροσ και",
+      "rev": [
+       "Rev 6:14"
+      ],
+      "book": [
+       "Luke 3:5"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ουρανον και την γην",
+      "rev": [
+       "Rev 14:7"
+      ],
+      "book": [
+       "Luke 16:17"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 1
+     },
+     {
+      "seq": "εν ταισ ημεραισ εκειναισ",
+      "rev": [
+       "Rev 9:6"
+      ],
+      "book": [
+       "Luke 2:1",
+       "Luke 4:2"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   }
+  },
+  "Mark": {
+   "3": {
+    "shared": 5,
+    "not_in_lxx": 4,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": [
+     {
+      "seq": "εισελθη εισ αυτην",
+      "rev": [
+       "Rev 21:27"
+      ],
+      "book": [
+       "Mark 10:15"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "εδωκεν την εξουσιαν",
+      "rev": [
+       "Rev 13:4"
+      ],
+      "book": [
+       "Mark 11:28"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "ηλθεν η ωρα",
+      "rev": [
+       "Rev 14:15",
+       "Rev 14:7"
+      ],
+      "book": [
+       "Mark 14:41"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "υποκατω των ποδων",
+      "rev": [
+       "Rev 12:1"
+      ],
+      "book": [
+       "Mark 12:36",
+       "Mark 6:11"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 2
+     }
+    ]
+   },
+   "4": {
+    "shared": 2,
+    "not_in_lxx": 2,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": [
+     {
+      "seq": "μη εισελθη εισ αυτην",
+      "rev": [
+       "Rev 21:27"
+      ],
+      "book": [
+       "Mark 10:15"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     }
+    ]
+   }
+  },
+  "Matt": {
+   "3": {
+    "shared": 23,
+    "not_in_lxx": 8,
+    "pair_only_in_nt": 12,
+    "pair_only_and_not_lxx": 4,
+    "items": [
+     {
+      "seq": "σεισμοσ μεγασ εγενετο",
+      "rev": [
+       "Rev 6:12"
+      ],
+      "book": [
+       "Matt 8:24"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ιωανησ ο αδελφοσ",
+      "rev": [
+       "Rev 1:9"
+      ],
+      "book": [
+       "Matt 10:2"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "και ουδεισ εδυνατο",
+      "rev": [
+       "Rev 14:3",
+       "Rev 15:8",
+       "Rev 5:3"
+      ],
+      "book": [
+       "Matt 22:46"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "λευκον ωσ χιων",
+      "rev": [
+       "Rev 1:14"
+      ],
+      "book": [
+       "Matt 28:3"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "εδωκεν την εξουσιαν",
+      "rev": [
+       "Rev 13:4"
+      ],
+      "book": [
+       "Matt 21:23"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "σεισμοσ εγενετο μεγασ",
+      "rev": [
+       "Rev 16:18"
+      ],
+      "book": [
+       "Matt 28:2"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "απο καταβολησ κοσμου",
+      "rev": [
+       "Rev 13:8",
+       "Rev 17:8"
+      ],
+      "book": [
+       "Matt 25:34"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 2
+     },
+     {
+      "seq": "εν γαστρι εχουσα",
+      "rev": [
+       "Rev 12:2"
+      ],
+      "book": [
+       "Matt 1:18"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "τρεισ ημερασ και",
+      "rev": [
+       "Rev 11:11"
+      ],
+      "book": [
+       "Matt 12:40"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ουτοι οι δυο",
+      "rev": [
+       "Rev 11:10"
+      ],
+      "book": [
+       "Matt 20:21"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "πασαι αι φυλαι",
+      "rev": [
+       "Rev 1:7"
+      ],
+      "book": [
+       "Matt 24:30"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "αι φυλαι τησ",
+      "rev": [
+       "Rev 1:7"
+      ],
+      "book": [
+       "Matt 24:30"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "φυλαι τησ γησ",
+      "rev": [
+       "Rev 1:7"
+      ],
+      "book": [
+       "Matt 24:30"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "φωνη μεγαλη λεγων",
+      "rev": [
+       "Rev 19:17"
+      ],
+      "book": [
+       "Matt 27:46"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "ονομα του πατροσ",
+      "rev": [
+       "Rev 14:1"
+      ],
+      "book": [
+       "Matt 28:19"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "και αι τριχεσ",
+      "rev": [
+       "Rev 1:14"
+      ],
+      "book": [
+       "Matt 10:30"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "ανα μεσον του",
+      "rev": [
+       "Rev 7:17"
+      ],
+      "book": [
+       "Matt 13:25"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 1
+     },
+     {
+      "seq": "βασιλεισ τησ γησ",
+      "rev": [
+       "Rev 17:2",
+       "Rev 18:3",
+       "Rev 18:9",
+       "Rev 19:19",
+       "Rev 21:24",
+       "Rev 6:15"
+      ],
+      "book": [
+       "Matt 17:25"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "ταισ ημεραισ εκειναισ",
+      "rev": [
+       "Rev 9:6"
+      ],
+      "book": [
+       "Matt 24:38",
+       "Matt 3:1"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     },
+     {
+      "seq": "υποκατω των ποδων",
+      "rev": [
+       "Rev 12:1"
+      ],
+      "book": [
+       "Matt 22:44"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 2
+     },
+     {
+      "seq": "πασαν την γην",
+      "rev": [
+       "Rev 5:6"
+      ],
+      "book": [
+       "Matt 27:45"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   },
+   "4": {
+    "shared": 7,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 3,
+    "pair_only_and_not_lxx": 0,
+    "items": [
+     {
+      "seq": "πασαι αι φυλαι τησ",
+      "rev": [
+       "Rev 1:7"
+      ],
+      "book": [
+       "Matt 24:30"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "αι φυλαι τησ γησ",
+      "rev": [
+       "Rev 1:7"
+      ],
+      "book": [
+       "Matt 24:30"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 0
+     },
+     {
+      "seq": "το ονομα του πατροσ",
+      "rev": [
+       "Rev 14:1"
+      ],
+      "book": [
+       "Matt 28:19"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "οι βασιλεισ τησ γησ",
+      "rev": [
+       "Rev 17:2",
+       "Rev 18:3",
+       "Rev 18:9",
+       "Rev 21:24",
+       "Rev 6:15"
+      ],
+      "book": [
+       "Matt 17:25"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "παρα του πατροσ μου",
+      "rev": [
+       "Rev 2:28"
+      ],
+      "book": [
+       "Matt 18:19"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "εν ταισ ημεραισ εκειναισ",
+      "rev": [
+       "Rev 9:6"
+      ],
+      "book": [
+       "Matt 24:38"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   }
+  },
+  "Phil": {
+   "3": {
+    "shared": 2,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 3,
+    "not_in_lxx": 1,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  },
+  "Phlm": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 2,
+    "not_in_lxx": 2,
+    "pair_only_in_nt": 1,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "αγαπην και την πιστιν",
+      "rev": [
+       "Rev 2:19"
+      ],
+      "book": [
+       "Phlm 1:5"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     }
+    ]
+   }
+  },
+  "Rom": {
+   "3": {
+    "shared": 8,
+    "not_in_lxx": 2,
+    "pair_only_in_nt": 3,
+    "pair_only_and_not_lxx": 2,
+    "items": [
+     {
+      "seq": "ουκ εχει εξουσιαν",
+      "rev": [
+       "Rev 20:6"
+      ],
+      "book": [
+       "Rom 9:21"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "πασαι αι εκκλησιαι",
+      "rev": [
+       "Rev 2:23"
+      ],
+      "book": [
+       "Rom 16:4"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "αμμοσ τησ θαλασσησ",
+      "rev": [
+       "Rev 20:8"
+      ],
+      "book": [
+       "Rom 9:27"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "δοξαν και τιμην",
+      "rev": [
+       "Rev 4:9"
+      ],
+      "book": [
+       "Rom 2:7"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 1
+     },
+     {
+      "seq": "πασαν την γην",
+      "rev": [
+       "Rev 5:6"
+      ],
+      "book": [
+       "Rom 10:18"
+      ],
+      "lxx": true,
+      "philo": true,
+      "other_nt": 2
+     }
+    ]
+   },
+   "4": {
+    "shared": 7,
+    "not_in_lxx": 2,
+    "pair_only_in_nt": 4,
+    "pair_only_and_not_lxx": 1,
+    "items": [
+     {
+      "seq": "δοξαν και τιμην και",
+      "rev": [
+       "Rev 4:9"
+      ],
+      "book": [
+       "Rom 2:7"
+      ],
+      "lxx": false,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "εκαστω κατα τα εργα",
+      "rev": [
+       "Rev 2:23"
+      ],
+      "book": [
+       "Rom 2:6"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "η αμμοσ τησ θαλασσησ",
+      "rev": [
+       "Rev 20:8"
+      ],
+      "book": [
+       "Rom 9:27"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     },
+     {
+      "seq": "εισ πασαν την γην",
+      "rev": [
+       "Rev 5:6"
+      ],
+      "book": [
+       "Rom 10:18"
+      ],
+      "lxx": true,
+      "philo": false,
+      "other_nt": 0
+     }
+    ]
+   }
+  },
+  "Titus": {
+   "3": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   },
+   "4": {
+    "shared": 0,
+    "not_in_lxx": 0,
+    "pair_only_in_nt": 0,
+    "pair_only_and_not_lxx": 0,
+    "items": []
+   }
+  }
+ },
+ "tokens": {
+  "1Cor": 6820,
+  "1John": 2136,
+  "1Pet": 1676,
+  "1Thess": 1473,
+  "1Tim": 1588,
+  "2Cor": 4469,
+  "2John": 245,
+  "2Pet": 1098,
+  "2Thess": 822,
+  "2Tim": 1237,
+  "3John": 219,
+  "Acts": 18393,
+  "Col": 1575,
+  "Eph": 2419,
+  "Gal": 2228,
+  "Heb": 4955,
+  "Jas": 1739,
+  "John": 15643,
+  "Jude": 457,
+  "Luke": 19456,
+  "Mark": 11277,
+  "Matt": 18299,
+  "Phil": 1630,
+  "Phlm": 335,
+  "Rev": 9832,
+  "Rom": 7100,
+  "Titus": 658
+ }
+}
