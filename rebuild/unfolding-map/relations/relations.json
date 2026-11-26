@@ -1,0 +1,931 @@
+{
+ "rows": [
+  {
+   "id": "rev1.7→matt24.30",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [
+    "object dropped"
+   ],
+   "modes": [
+    "seed is PROPHECY",
+    "target is PROPHECY"
+   ],
+   "derived": [],
+   "hand": [
+    "PARTITION",
+    "REORDER"
+   ]
+  },
+  {
+   "id": "rev1.7→john19.37",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "mode changed"
+   ],
+   "modes": [
+    "seed is PROPHECY",
+    "target is CITATION"
+   ],
+   "derived": [
+    "CITE-AS-SCRIPTURE"
+   ],
+   "hand": [
+    "CITE-AS-SCRIPTURE",
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev3.5→matt10.32",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [
+    "recipient narrowed"
+   ],
+   "modes": [
+    "seed is PROMISE",
+    "target is PROMISE"
+   ],
+   "derived": [],
+   "hand": [
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev3.5→luke12.8",
+   "gospel": "Luke",
+   "relations": 1,
+   "features": [
+    "recipient narrowed"
+   ],
+   "modes": [
+    "seed is PROMISE",
+    "target is PROMISE"
+   ],
+   "derived": [],
+   "hand": [
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev19.9→matt22.3",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [
+    "mode changed",
+    "recipient changed, side reversed"
+   ],
+   "modes": [
+    "seed is BEATITUDE",
+    "target is PARABLE"
+   ],
+   "derived": [
+    "REVERSE-RECIPIENT"
+   ],
+   "hand": [
+    "PARTITION",
+    "REORDER"
+   ]
+  },
+  {
+   "id": "rev19.9→luke14.17",
+   "gospel": "Luke",
+   "relations": 1,
+   "features": [
+    "mode changed",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is BEATITUDE",
+    "target is PARABLE"
+   ],
+   "derived": [],
+   "hand": [
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev5.2→mark1.7",
+   "gospel": "Mark",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept",
+    "mode changed",
+    "negative set",
+    "object changed"
+   ],
+   "modes": [
+    "seed is QUESTION",
+    "target is STATEMENT"
+   ],
+   "derived": [
+    "NEGATE",
+    "SUBSTITUTE-OBJECT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "REORDER",
+    "SUBSTITUTE",
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "id": "rev5.2→john1.27",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept",
+    "mode changed",
+    "negative set",
+    "object changed"
+   ],
+   "modes": [
+    "seed is QUESTION",
+    "target is STATEMENT"
+   ],
+   "derived": [
+    "NEGATE",
+    "SUBSTITUTE-OBJECT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "id": "rev3.3→matt24.43",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [
+    "action changed",
+    "agent changed, side kept",
+    "mode changed",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is THREAT",
+    "target is PARABLE"
+   ],
+   "derived": [
+    "SUBSTITUTE"
+   ],
+   "hand": [
+    "REORDER",
+    "SUBSTITUTE"
+   ]
+  },
+  {
+   "id": "rev3.3→luke12.39",
+   "gospel": "Luke",
+   "relations": 1,
+   "features": [
+    "action changed",
+    "agent changed, side kept",
+    "mode changed",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is THREAT",
+    "target is PARABLE"
+   ],
+   "derived": [
+    "SUBSTITUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "REORDER"
+   ]
+  },
+  {
+   "id": "rev16.18+1.14→matt28.2-3",
+   "gospel": "Matt",
+   "relations": 2,
+   "features": [
+    "agent changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "EVENT",
+    "PARTITION",
+    "TRANSFER-ATTRIBUTE"
+   ]
+  },
+  {
+   "id": "rev6.12→matt8.24",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT"
+   ],
+   "hand": [
+    "EVENT"
+   ]
+  },
+  {
+   "id": "rev13.13-14→john2.11",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent changed, side reversed",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "REVERSE-DOER"
+   ],
+   "hand": [
+    "REVERSE-DOER"
+   ]
+  },
+  {
+   "id": "rev18.23→john3.29",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent supplied",
+    "mode changed",
+    "negative removed"
+   ],
+   "modes": [
+    "seed is DOOM",
+    "target is STATEMENT"
+   ],
+   "derived": [
+    "UNDO"
+   ],
+   "hand": [
+    "REORDER",
+    "UNDO"
+   ]
+  },
+  {
+   "id": "rev18.23→john5.35",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent supplied",
+    "mode changed",
+    "negative removed"
+   ],
+   "modes": [
+    "seed is DOOM",
+    "target is STATEMENT"
+   ],
+   "derived": [
+    "UNDO"
+   ],
+   "hand": [
+    "REORDER",
+    "UNDO"
+   ]
+  },
+  {
+   "id": "rev18.21→john11.41",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "UNDO"
+   ]
+  },
+  {
+   "id": "rev19.18→john6.53",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept",
+    "mode changed",
+    "object's party changed"
+   ],
+   "modes": [
+    "seed is COMMAND",
+    "target is CONDITION"
+   ],
+   "derived": [
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "id": "rev16.4→john2.9",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "object changed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "SUBSTITUTE-OBJECT"
+   ],
+   "hand": [
+    "REORDER",
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "id": "rev1.17→matt28.4-5",
+   "gospel": "Matt",
+   "relations": 2,
+   "features": [
+    "action changed",
+    "agent changed, side kept",
+    "agent changed, side reversed",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "SUBSTITUTE",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "EVENT",
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev19.9+19.21+17.14→matt22.3-14",
+   "gospel": "Matt",
+   "relations": 3,
+   "features": [
+    "agent changed, side kept",
+    "agent changed, side reversed",
+    "mode changed",
+    "object changed",
+    "object's party changed",
+    "recipient changed, side reversed"
+   ],
+   "modes": [
+    "seed is BEATITUDE",
+    "seed is STATEMENT",
+    "seed is VISION-EVENT",
+    "target is PARABLE",
+    "target is STATEMENT"
+   ],
+   "derived": [
+    "REVERSE-DOER",
+    "REVERSE-RECIPIENT",
+    "SUBSTITUTE-OBJECT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "REORDER"
+   ]
+  },
+  {
+   "id": "rev14.19→matt21.33",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [
+    "action changed",
+    "agent changed, side kept",
+    "mode changed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is PARABLE"
+   ],
+   "derived": [
+    "SUBSTITUTE"
+   ],
+   "hand": [
+    "EVENT"
+   ]
+  },
+  {
+   "id": "rev2.10→matt17.12",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept",
+    "mode changed"
+   ],
+   "modes": [
+    "seed is COMMAND",
+    "target is PROPHECY"
+   ],
+   "derived": [
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "TRANSFER-ATTRIBUTE"
+   ]
+  },
+  {
+   "id": "rev1.3→matt26.18",
+   "gospel": "Matt",
+   "relations": 1,
+   "features": [],
+   "modes": [
+    "seed is STATEMENT",
+    "target is STATEMENT"
+   ],
+   "derived": [],
+   "hand": [
+    "EVENT",
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev7.9→mark16.5",
+   "gospel": "Mark",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "EVENT",
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev6.15+19.17→mark6.21",
+   "gospel": "Mark",
+   "relations": 1,
+   "features": [
+    "agent changed, side reversed",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "REVERSE-DOER"
+   ],
+   "hand": [
+    "PARTITION",
+    "REORDER",
+    "REVERSE-DOER"
+   ]
+  },
+  {
+   "id": "rev9.3-4→luke10.19",
+   "gospel": "Luke",
+   "relations": 2,
+   "features": [
+    "agent changed, side kept",
+    "agent supplied",
+    "mode changed",
+    "negative set",
+    "object changed",
+    "object's party changed",
+    "recipient changed, side reversed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is STATEMENT"
+   ],
+   "derived": [
+    "NEGATE",
+    "REVERSE-RECIPIENT",
+    "SUBSTITUTE-OBJECT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "NEGATE",
+    "PARTITION",
+    "REVERSE-DOER"
+   ]
+  },
+  {
+   "id": "rev5.4→luke4.17",
+   "gospel": "Luke",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept",
+    "negative removed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "TRANSFER-ATTRIBUTE",
+    "UNDO"
+   ],
+   "hand": [
+    "REORDER",
+    "UNDO"
+   ]
+  },
+  {
+   "id": "rev19.8+19.14→luke23.11",
+   "gospel": "Luke",
+   "relations": 2,
+   "features": [
+    "action changed",
+    "agent changed, side reversed",
+    "agent supplied",
+    "recipient changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "SUBSTITUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "REORDER",
+    "REVERSE-DOER"
+   ]
+  },
+  {
+   "id": "rev16.16→luke23.33",
+   "gospel": "Luke",
+   "relations": 1,
+   "features": [
+    "object changed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "SUBSTITUTE-OBJECT"
+   ],
+   "hand": [
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev16.16→john19.17",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "action changed",
+    "object changed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [],
+   "hand": [
+    "REORDER",
+    "SUBSTITUTE"
+   ]
+  },
+  {
+   "id": "rev11.8→john19.20",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "object changed"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "EVENT",
+    "SUBSTITUTE-OBJECT"
+   ],
+   "hand": [
+    "PARTITION",
+    "REORDER",
+    "SUBSTITUTE"
+   ]
+  },
+  {
+   "id": "rev2.10→john20.27",
+   "gospel": "John",
+   "relations": 1,
+   "features": [],
+   "modes": [
+    "seed is COMMAND",
+    "target is COMMAND"
+   ],
+   "derived": [],
+   "hand": [
+    "ADD",
+    "PARTITION"
+   ]
+  },
+  {
+   "id": "rev3.10→john17.15",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "agent changed, side kept",
+    "mode changed",
+    "object changed"
+   ],
+   "modes": [
+    "seed is PROMISE",
+    "target is PRAYER"
+   ],
+   "derived": [
+    "SUBSTITUTE-OBJECT",
+    "TRANSFER-ATTRIBUTE"
+   ],
+   "hand": [
+    "PARTITION",
+    "SUBSTITUTE-OBJECT"
+   ]
+  },
+  {
+   "id": "rev9.11→john19.20",
+   "gospel": "John",
+   "relations": 1,
+   "features": [
+    "action changed",
+    "agent changed, side kept"
+   ],
+   "modes": [
+    "seed is VISION-EVENT",
+    "target is NARRATIVE-EVENT"
+   ],
+   "derived": [
+    "SUBSTITUTE"
+   ],
+   "hand": [
+    "ADD",
+    "PARTITION",
+    "SUBSTITUTE"
+   ]
+  }
+ ],
+ "agreement": {
+  "EVENT": [
+   4,
+   5,
+   2
+  ],
+  "REVERSE-DOER": [
+   2,
+   1,
+   2
+  ],
+  "UNDO": [
+   3,
+   0,
+   1
+  ],
+  "NEGATE": [
+   1,
+   2,
+   0
+  ],
+  "SUBSTITUTE-OBJECT": [
+   4,
+   4,
+   1
+  ],
+  "SUBSTITUTE": [
+   2,
+   4,
+   3
+  ],
+  "TRANSFER-ATTRIBUTE": [
+   2,
+   10,
+   0
+  ],
+  "CITE-AS-SCRIPTURE": [
+   1,
+   0,
+   0
+  ]
+ },
+ "naming": {
+  "differences of slots": {
+   "accuracy": 0.324,
+   "commonest": 0.382,
+   "shuffled_mean": 0.29,
+   "shuffled_95": 0.441,
+   "p": 0.4182,
+   "recall": {
+    "Matt": "2/11",
+    "Mark": "0/3",
+    "Luke": "0/7",
+    "John": "9/13"
+   }
+  },
+  "differences and modes": {
+   "accuracy": 0.294,
+   "commonest": 0.382,
+   "shuffled_mean": 0.292,
+   "shuffled_95": 0.471,
+   "p": 0.5362,
+   "recall": {
+    "Matt": "2/11",
+    "Mark": "0/3",
+    "Luke": "0/7",
+    "John": "8/13"
+   }
+  },
+  "operators computed": {
+   "accuracy": 0.265,
+   "commonest": 0.382,
+   "shuffled_mean": 0.293,
+   "shuffled_95": 0.471,
+   "p": 0.6612,
+   "recall": {
+    "Matt": "4/11",
+    "Mark": "0/3",
+    "Luke": "0/7",
+    "John": "5/13"
+   }
+  },
+  "operators assigned (same 34)": {
+   "accuracy": 0.529,
+   "commonest": 0.382,
+   "shuffled_mean": 0.294,
+   "shuffled_95": 0.471,
+   "p": 0.0128,
+   "recall": {
+    "Matt": "6/11",
+    "Mark": "0/3",
+    "Luke": "2/7",
+    "John": "10/13"
+   }
+  }
+ },
+ "use": {
+  "CITE-AS-SCRIPTURE": {
+   "Matt": 0,
+   "Mark": 0,
+   "Luke": 0,
+   "John": 1
+  },
+  "EVENT": {
+   "Matt": 3,
+   "Mark": 1,
+   "Luke": 2,
+   "John": 3
+  },
+  "NEGATE": {
+   "Matt": 0,
+   "Mark": 1,
+   "Luke": 1,
+   "John": 1
+  },
+  "REVERSE-DOER": {
+   "Matt": 1,
+   "Mark": 1,
+   "Luke": 0,
+   "John": 1
+  },
+  "REVERSE-RECIPIENT": {
+   "Matt": 2,
+   "Mark": 0,
+   "Luke": 1,
+   "John": 0
+  },
+  "SUBSTITUTE": {
+   "Matt": 3,
+   "Mark": 0,
+   "Luke": 2,
+   "John": 1
+  },
+  "SUBSTITUTE-OBJECT": {
+   "Matt": 1,
+   "Mark": 1,
+   "Luke": 2,
+   "John": 4
+  },
+  "TRANSFER-ATTRIBUTE": {
+   "Matt": 4,
+   "Mark": 2,
+   "Luke": 2,
+   "John": 4
+  },
+  "UNDO": {
+   "Matt": 0,
+   "Mark": 0,
+   "Luke": 1,
+   "John": 2
+  },
+  "action changed": {
+   "Matt": 3,
+   "Mark": 0,
+   "Luke": 2,
+   "John": 2
+  },
+  "agent changed, side kept": {
+   "Matt": 6,
+   "Mark": 2,
+   "Luke": 3,
+   "John": 5
+  },
+  "agent changed, side reversed": {
+   "Matt": 2,
+   "Mark": 1,
+   "Luke": 1,
+   "John": 1
+  },
+  "agent supplied": {
+   "Matt": 0,
+   "Mark": 0,
+   "Luke": 2,
+   "John": 2
+  },
+  "mode changed": {
+   "Matt": 5,
+   "Mark": 1,
+   "Luke": 3,
+   "John": 6
+  },
+  "negative removed": {
+   "Matt": 0,
+   "Mark": 0,
+   "Luke": 1,
+   "John": 2
+  },
+  "negative set": {
+   "Matt": 0,
+   "Mark": 1,
+   "Luke": 1,
+   "John": 1
+  },
+  "object changed": {
+   "Matt": 1,
+   "Mark": 1,
+   "Luke": 2,
+   "John": 5
+  },
+  "object dropped": {
+   "Matt": 1,
+   "Mark": 0,
+   "Luke": 0,
+   "John": 0
+  },
+  "object's party changed": {
+   "Matt": 1,
+   "Mark": 0,
+   "Luke": 1,
+   "John": 1
+  },
+  "recipient changed, side kept": {
+   "Matt": 2,
+   "Mark": 1,
+   "Luke": 3,
+   "John": 1
+  },
+  "recipient changed, side reversed": {
+   "Matt": 2,
+   "Mark": 0,
+   "Luke": 1,
+   "John": 0
+  },
+  "recipient narrowed": {
+   "Matt": 1,
+   "Mark": 0,
+   "Luke": 1,
+   "John": 0
+  }
+ },
+ "bad": []
+}
