@@ -16,7 +16,8 @@ OPS = {
  "SUBSTITUTE-OBJECT":  "keep the verb and its frame and change the object it acts on",
  "TRANSFER-ATTRIBUTE": "move an attribute from the figure of the vision to a figure of the narrative",
  "EVENT":              "set a sign of the vision as an event at a hinge of the narrative (no change of wording; the change is of place)",
- "CITE-AS-SCRIPTURE":  "mark the member as written or promised: the borrower reports what the seed performs",
+ "CITE-AS-SCRIPTURE":  "mark the member as written: the borrower reports as scripture what the seed says",
+ "CITE-AS-PROMISE":    "change of who speaks: what the seed says in the first person as a promise, the borrower refers to as a promise already given",
  "REVERSE-DOER":       "keep the deed and its object and change who does it, from the adversary to the Christ or back",
  "UNDO":               "remove the seed's 'no more': what a judgment takes away is present in the borrower",
  "STATION":            "make one into several, each answerable for itself (one lampstand of seven lamps into seven lampstands)",
@@ -68,7 +69,7 @@ def run(D, S):
         elif op in ("SUBSTITUTE", "SUBSTITUTE-OBJECT", "TRANSFER-ATTRIBUTE", "REVERSE-DOER", "STATION", "HIDE"):
             i = state.index(st["old"]); state[i] = st["new"]; dropped.append(st["old"])
         elif op == "ADD": state.insert(st.get("at", len(state)), st["new"])
-        elif op == "CITE-AS-SCRIPTURE": marker = st["marker"]
+        elif op in ("CITE-AS-SCRIPTURE", "CITE-AS-PROMISE"): marker = st["marker"]
         elif op == "NEGATE": required.append(st["negation"])
         elif op == "UNDO": absent_rx.append(st["negation"]); assert re.search(st["negation"], ns), (D["id"], "the seed has no such negation")
         trace.append({"op": op, "does": OPS[op], **{k: v for k, v in st.items() if k != "op"}, "state": list(state)})

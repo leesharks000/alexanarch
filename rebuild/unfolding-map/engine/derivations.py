@@ -84,11 +84,11 @@ d(id="philo.leg3.174-175→rev2.17", family="Philo → Revelation", title="The m
   members=[m("manna", "the manna", "τὸ μάννα", r"μαννα"), m("unknown", "did not know", "οὐκ ᾔδεισαν", r"ουκ ηδεισαν"), m("fathers", "the fathers", "οἱ πατέρες", r"πατερεσ"), m("hidden", "hidden", "κεκρυμμένου", r"κεκρυμμεν", False)],
   steps=[{"op": "PARTITION", "keep": ["manna", "unknown"]}, {"op": "HIDE", "old": "unknown", "new": "hidden"}], target="gnt:Rev 2:17",
   controls=[{"loc": "lxx:Δευτερονομιον 8:3", "label": "Septuagint, Deut 8:3"}, {"loc": "gnt:John 6:31", "label": "John 6:31"}], records=[1758], note="#1758 §7b.5.")
-d(id="rev2.17→heb9.4", family="Philo → Revelation → downstream: which form", title="The hidden manna, in the ark", seed="gnt:Rev 2:17",
-  members=[m("manna", "the manna", "τοῦ μάννα", r"μαννα"), m("hidden", "hidden", "κεκρυμμένου", r"κεκρυμμεν"), m("covered", "covered on every side", "περικεκαλυμμένην", r"περικεκαλυμμεν", False)],
-  steps=[{"op": "SUBSTITUTE", "old": "hidden", "new": "covered"}, {"op": "REORDER", "order": ["covered", "manna"]}], target="gnt:Heb 9:4",
+d(id="rev2.17→heb9.4", family="Philo → Revelation → downstream: which form", title="The manna in the ark (corrected: no derived state)", seed="gnt:Rev 2:17",
+  members=[m("manna", "the manna", "τοῦ μάννα", r"μαννα"), m("hidden", "hidden", "κεκρυμμένου", r"κεκρυμμεν")],
+  steps=[{"op": "PARTITION", "keep": ["manna"]}], target="gnt:Heb 9:4",
   controls=[{"loc": "gnt:John 6:49", "label": "John 6:49"}, {"loc": "lxx:Εξοδος 16:33", "label": "Septuagint, Exod 16:33"}],
-  note="Hebrews has the manna inside a jar inside the ark, which is 'covered on every side'. The fathers of John 6:31 and 6:49 are Deuteronomy's and Philo's member, which Revelation dropped.")
+  note="Corrected at v0.8. v0.3 read Hebrews' περικεκαλυμμένην as the manna 'covered', a state derived from Revelation's 'hidden'. In the seat the participle is the ark's: 'the ark of the covenant covered on every side with gold', and the manna is in a golden jar, as at Exod 16:33. Hebrews has the manna and not Revelation's hiddenness; the Septuagint supplies it. A control fits.")
 d(id="philo.mos2.114→rev19.12", family="Philo → Revelation", title="The name on the head", seed="philo:De_vita_Mosis_lib_i_ii_ 114#2",
   members=[m("crown", "like a crown", "ὡσανεὶ στέφανος", r"στεφανοσ"), m("name", "of a name", "ὀνόματος", r"ονομα"), m("engraved", "engravings", "γλυφάς", r"γλυφασ"), m("noother", "no other at all", "ἄλλῳ δ’ οὐδενί", r"ουδενι"),
            m("diadems", "diadems", "διαδήματα", r"διαδηματα", False), m("written", "written", "γεγραμμένον", r"γεγραμμεν", False), m("noone", "no one knows but himself", "οὐδεὶς οἶδεν", r"ουδεισ οιδεν", False)],
@@ -160,7 +160,7 @@ d(id="rev9.11→john19.20", family="John", title="In Hebrew, and in Greek", seed
 LATE = "Letters the received chronology dates after Revelation"
 d(id="rev21.1→2pet3.13", family=LATE, title="New heavens and a new earth, as promised", seed="gnt:Rev 21:1",
   members=[m("saw", "I saw", "εἶδον", r"\bειδον"), m("heaven", "a new heaven", "οὐρανὸν καινόν", r"ουραν"), m("earth", "and a new earth", "γῆν καινήν", r"γην καινην")],
-  steps=[{"op": "PARTITION", "keep": ["heaven", "earth"]}, {"op": "CITE-AS-SCRIPTURE", "marker": r"επαγγελμα|γεγραπται"}], target="gnt:2Pet 3:13",
+  steps=[{"op": "PARTITION", "keep": ["heaven", "earth"]}, {"op": "CITE-AS-PROMISE", "marker": r"επαγγελμα"}], target="gnt:2Pet 3:13",
   controls=[{"loc": "lxx:Ησαιας 65:17", "label": "Septuagint, Isa 65:17"}, {"loc": "lxx:Ησαιας 66:22", "label": "Septuagint, Isa 66:22"}], records=[1418])
 d(id="rev3.3→2pet3.10", family=LATE, title="Will come as a thief", seed="gnt:Rev 3:3", members=[m("watch", "watch", "γρηγορήσῃς", r"γρηγορ"), m("come", "I will come", "ἥξω", r"\bηξ(ω|ει)\b"), m("thief", "as a thief", "ὡς κλέπτης", r"ωσ κλεπτησ"), m("hour", "what hour", "ποίαν ὥραν", r"ποια\w? ωρα")],
   steps=[{"op": "PARTITION", "keep": ["come", "thief"]}], target="gnt:2Pet 3:10", controls=[{"loc": "gnt:1Thess 5:2", "label": "1 Thessalonians 5:2 (ἔρχεται)"}, {"loc": "gnt:Matt 24:43", "label": "Matthew's half"}])
@@ -181,5 +181,10 @@ d(id="rev2.10→2tim4.8", family=LATE, title="The crown, given", seed="gnt:Rev 2
 d(id="rev19.16→1tim6.15", family=LATE, title="King of kings and Lord of lords", seed="gnt:Rev 19:16",
   members=[m("king", "King of kings", "ΒΑΣΙΛΕΥΣ ΒΑΣΙΛΕΩΝ", r"βασιλευσ (των )?βασιλε"), m("lord", "Lord of lords", "ΚΥΡΙΟΣ ΚΥΡΙΩΝ", r"κυριοσ (των )?κυρι")], steps=[{"op": "EVENT"}], target="gnt:1Tim 6:15",
   controls=[{"loc": "lxx:Δευτερονομιον 10:17", "label": "Septuagint, Deut 10:17"}])
+
+d(id="rev2.10→jas1.12", family="The letters: the run case", title="The crown of life, promised", seed="gnt:Rev 2:10",
+  members=[m("give", "I will give", "δώσω", r"\bδωσω\b"), m("crown", "the crown of life", "τὸν στέφανον τῆς ζωῆς", r"στεφανον τησ ζωησ"), m("receive", "will receive", "λήμψεται", r"λημψεται", False)],
+  steps=[{"op": "PARTITION", "keep": ["give", "crown"]}, {"op": "SUBSTITUTE", "old": "give", "new": "receive"}, {"op": "CITE-AS-PROMISE", "marker": r"επηγγειλατο"}], target="gnt:Jas 1:12",
+  controls=[{"loc": "gnt:2Tim 4:8", "label": "2 Timothy 4:8"}, {"loc": "gnt:1Pet 5:4", "label": "1 Peter 5:4"}], records=[1415, 1735], note="The case run to completion in #1415 and #1735 §VII, entered here in the engine's operators: the giver's 'I will give' becomes the receiver's 'will receive … which he promised'.")
 src = json.dumps(D, ensure_ascii=False, sort_keys=True)
 print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))

@@ -81,7 +81,7 @@ function emit(d,on){const M=Object.fromEntries(d.members.map(m=>[m.id,m]));const
     else if(op==="REORDER"){const o=st.order.filter(k=>state.includes(k));state=o.concat(state.filter(k=>!o.includes(k)));}
     else if(["SUBSTITUTE","SUBSTITUTE-OBJECT","TRANSFER-ATTRIBUTE","REVERSE-DOER","STATION","HIDE"].includes(op)){const j=state.indexOf(st.old);if(j>=0){state[j]=st.new;dropped.push(st.old);}}
     else if(op==="ADD"){state.splice(st.at===undefined?state.length:st.at,0,st.new);}else if(op==="NEGATE")req.push(st.negation);
-    else if(op==="CITE-AS-SCRIPTURE")marker=st.marker;else if(op==="UNDO")neg.push(st.negation);}
+    else if(op==="CITE-AS-SCRIPTURE"||op==="CITE-AS-PROMISE")marker=st.marker;else if(op==="UNDO")neg.push(st.negation);}
     trace.push(state.slice());});
   return {M,state,dropped,marker,neg,req,trace};}
 function score(e,text){const {n}=normMap(text);const has=k=>rx(e.M[k].rx).test(n);const present=e.state.filter(has);let at=0,ord=true;
@@ -102,7 +102,7 @@ function card(d){const on=state[d.id]||(state[d.id]=d.steps.map(()=>true));const
   return `<article class="card" id="c-${d.id.replace(/[^a-z0-9]+/gi,"-")}"><div class="head"><div><div class="id">${esc(d.family)} · ${esc(d.id)}</div><h2>${esc(d.title)}</h2></div><span class="pill ${verdict[0]}">${verdict[1]} · ${t.score.toFixed(2)}</span></div>
   <div><div class="lab">Seed · ${esc(nice(d.seed.loc))}</div><div class="gk">${hl(d.seed.text,e,seedIds,d)}</div></div>
   <div><div class="lab">Operators</div><ol class="steps">${d.steps.map((st,i)=>`<li class="${on[i]?"":"off"}"><input type="checkbox" id="s-${d.id}-${i}" data-d="${esc(d.id)}" data-i="${i}" ${on[i]?"checked":""} aria-label="apply ${st.op}"><label for="s-${d.id}-${i}"><span class="op">${st.op}</span> <span class="does">${esc(OPS[st.op])}</span></label><div class="chips">${e.trace[i+1].map(k=>chip(e,d,k)).join("")}</div></li>`).join("")}</ol></div>
-  <div><div class="lab">Emission</div><div class="chips">${e.state.map(k=>chip(e,d,k)).join("")}${e.dropped.map(k=>chip(e,d,k,true)).join("")}${e.marker?'<span class="chip" style="border:1px dashed var(--line)">+ marked as written</span>':""}${e.neg.length?'<span class="chip" style="border:1px dashed var(--line)">− οὐ μὴ … ἔτι</span>':""}</div></div>
+  <div><div class="lab">Emission</div><div class="chips">${e.state.map(k=>chip(e,d,k)).join("")}${e.dropped.map(k=>chip(e,d,k,true)).join("")}${e.marker?'<span class="chip" style="border:1px dashed var(--line)">+ marked as written or promised</span>':""}${e.neg.length?'<span class="chip" style="border:1px dashed var(--line)">− οὐ μὴ … ἔτι</span>':""}</div></div>
   <div><div class="lab">Target · ${esc(nice(d.target.loc))}</div><div class="gk">${hl(d.target.text,e,e.state.concat(e.dropped),d)}</div>
   <table><tbody>${t.checks.map(c=>`<tr><td>${c[0]}</td><td class="n ${c[1]===c[2]?"pass":"fail"}">${c[1]} of ${c[2]}</td></tr>`).join("")}</tbody></table></div>
   ${cs.length?`<details ${cs.some(c=>c.pass)?"open":""}><summary>Controls: ${cs.map(c=>`${esc(c.label)} ${c.score.toFixed(2)}`).join(" · ")}</summary>${cs.map(c=>`<div style="margin-top:8px"><div class="lab">${esc(c.label)} · ${esc(nice(c.loc))} · <span class="${c.pass?"tie":""}">${c.score.toFixed(2)}</span></div><div class="gk">${hl(c.text,e,e.state.concat(e.dropped),d)}</div></div>`).join("")}</details>`:""}

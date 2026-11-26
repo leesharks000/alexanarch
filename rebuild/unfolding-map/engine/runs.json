@@ -7,7 +7,8 @@
   "SUBSTITUTE-OBJECT": "keep the verb and its frame and change the object it acts on",
   "TRANSFER-ATTRIBUTE": "move an attribute from the figure of the vision to a figure of the narrative",
   "EVENT": "set a sign of the vision as an event at a hinge of the narrative (no change of wording; the change is of place)",
-  "CITE-AS-SCRIPTURE": "mark the member as written or promised: the borrower reports what the seed performs",
+  "CITE-AS-SCRIPTURE": "mark the member as written: the borrower reports as scripture what the seed says",
+  "CITE-AS-PROMISE": "change of who speaks: what the seed says in the first person as a promise, the borrower refers to as a promise already given",
   "REVERSE-DOER": "keep the deed and its object and change who does it, from the adversary to the Christ or back",
   "UNDO": "remove the seed's 'no more': what a judgment takes away is present in the borrower",
   "STATION": "make one into several, each answerable for itself (one lampstand of seven lamps into seven lampstands)",
@@ -17,7 +18,7 @@
  },
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "cbd282f40a8e62c5febdbd04ec5868aa6826e40621aed90d3b879496d3dc128b",
+  "sha256_of_derivations": "8e16ef382a9bba471f71eed17edd62db3adab73f806ad90f622ae88aad5ec35e",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "runs": [
@@ -304,7 +305,7 @@
     },
     {
      "op": "CITE-AS-SCRIPTURE",
-     "does": "mark the member as written or promised: the borrower reports what the seed performs",
+     "does": "mark the member as written: the borrower reports as scripture what the seed says",
      "marker": "γραφη|γεγραπται",
      "state": [
       "see",
@@ -3670,7 +3671,7 @@
   },
   {
    "id": "rev2.17→heb9.4",
-   "title": "The hidden manna, in the ark",
+   "title": "The manna in the ark (corrected: no derived state)",
    "family": "Philo → Revelation → downstream: which form",
    "seed": {
     "loc": "gnt:Rev 2:17",
@@ -3688,10 +3689,6 @@
     "hidden": {
      "gloss": "hidden",
      "greek": "κεκρυμμένου"
-    },
-    "covered": {
-     "gloss": "covered on every side",
-     "greek": "περικεκαλυμμένην"
     }
    },
    "trace": [
@@ -3703,31 +3700,18 @@
      ]
     },
     {
-     "op": "SUBSTITUTE",
-     "does": "replace one member by another of the same function (a word for a word)",
-     "old": "hidden",
-     "new": "covered",
-     "state": [
-      "manna",
-      "covered"
-     ]
-    },
-    {
-     "op": "REORDER",
-     "does": "set the kept members in a new order",
-     "order": [
-      "covered",
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
       "manna"
      ],
      "state": [
-      "covered",
       "manna"
      ]
     }
    ],
    "emission": {
     "members": [
-     "covered",
      "manna"
     ],
     "dropped": [
@@ -3742,10 +3726,6 @@
     "text": "χρυσοῦν ἔχουσα θυμιατήριον καὶ τὴν κιβωτὸν τῆς διαθήκης περικεκαλυμμένην πάντοθεν χρυσίῳ, ἐν ᾗ στάμνος χρυσῆ ἔχουσα τὸ μάννα καὶ ἡ ῥάβδος Ἀαρὼν ἡ βλαστήσασα καὶ αἱ πλάκες τῆς διαθήκης,",
     "checks": {
      "kept members present": [
-      2,
-      2
-     ],
-     "in the emitted order": [
       1,
       1
      ],
@@ -3766,9 +3746,24 @@
      "checks": {
       "kept members present": [
        1,
-       2
+       1
       ],
-      "in the emitted order": [
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 1.0,
+     "passes": true,
+     "missing": [],
+     "kept_but_should_be_dropped": [],
+     "label": "John 6:49"
+    },
+    {
+     "loc": "lxx:Εξοδος 16:33",
+     "text": "καὶ εἰπεν Μωσῆς πρὸς Λάβε Λάβε στάμνον χρυσοῦν ἕνα καὶ ἐμβάλετε εἰς αὐτὸν πλῆρες τὸ γόμορ μάν, καὶ ἀποθήσεις αὐτὸ ἐναντίον τοῦ θεοῦ εἰς διατήρησιν εἰς τὰς γενεὰς ὑμῶν,",
+     "checks": {
+      "kept members present": [
        0,
        1
       ],
@@ -3780,58 +3775,45 @@
      "score": 0.5,
      "passes": false,
      "missing": [
-      "covered"
-     ],
-     "kept_but_should_be_dropped": [],
-     "label": "John 6:49"
-    },
-    {
-     "loc": "lxx:Εξοδος 16:33",
-     "text": "καὶ εἰπεν Μωσῆς πρὸς Λάβε Λάβε στάμνον χρυσοῦν ἕνα καὶ ἐμβάλετε εἰς αὐτὸν πλῆρες τὸ γόμορ μάν, καὶ ἀποθήσεις αὐτὸ ἐναντίον τοῦ θεοῦ εἰς διατήρησιν εἰς τὰς γενεὰς ὑμῶν,",
-     "checks": {
-      "kept members present": [
-       0,
-       2
-      ],
-      "in the emitted order": [
-       0,
-       1
-      ],
-      "dropped members absent": [
-       1,
-       1
-      ]
-     },
-     "score": 0.25,
-     "passes": false,
-     "missing": [
-      "covered",
       "manna"
      ],
      "kept_but_should_be_dropped": [],
      "label": "Septuagint, Exod 16:33"
     }
    ],
-   "note": "Hebrews has the manna inside a jar inside the ark, which is 'covered on every side'. The fathers of John 6:31 and 6:49 are Deuteronomy's and Philo's member, which Revelation dropped.",
+   "note": "Corrected at v0.8. v0.3 read Hebrews' περικεκαλυμμένην as the manna 'covered', a state derived from Revelation's 'hidden'. In the seat the participle is the ark's: 'the ark of the covenant covered on every side with gold', and the manna is in a golden jar, as at Exod 16:33. Hebrews has the manna and not Revelation's hiddenness; the Septuagint supplies it. A control fits.",
    "records": [],
    "search": {
     "new_testament": {
      "verses_searched": 7942,
-     "passing": 1,
+     "passing": 3,
      "refs": [
-      "Heb 9:4"
+      "Heb 9:4",
+      "John 6:31",
+      "John 6:49"
      ]
     },
     "septuagint": {
      "verses_searched": 28933,
-     "passing": 1,
+     "passing": 51,
      "refs": [
-      "Ἀριθμοί 32:40"
+      "Γένεσις 36:23",
+      "Γένεσις 41:51",
+      "Γένεσις 46:20",
+      "Γένεσις 48:3",
+      "Γένεσις 48:16",
+      "Γένεσις 49:6",
+      "Ἔξοδος 17:12",
+      "Ἀριθμοί 1:17",
+      "Ἀριθμοί 1:42",
+      "Ἀριθμοί 2:34",
+      "Ἀριθμοί 7:70",
+      "Ἀριθμοί 10:25"
      ]
     }
    },
    "seed_ok": true,
-   "verdict": "passes; no control passes (best control 0.5)"
+   "verdict": "passes; a control passes as well"
   },
   {
    "id": "philo.mos2.114→rev19.12",
@@ -6929,9 +6911,9 @@
      ]
     },
     {
-     "op": "CITE-AS-SCRIPTURE",
-     "does": "mark the member as written or promised: the borrower reports what the seed performs",
-     "marker": "επαγγελμα|γεγραπται",
+     "op": "CITE-AS-PROMISE",
+     "does": "change of who speaks: what the seed says in the first person as a promise, the borrower refers to as a promise already given",
+     "marker": "επαγγελμα",
      "state": [
       "heaven",
       "earth"
@@ -6946,7 +6928,7 @@
     "dropped": [
      "saw"
     ],
-    "marker": "επαγγελμα|γεγραπται",
+    "marker": "επαγγελμα",
     "negation_removed": false,
     "negation_set": false
    },
@@ -8047,6 +8029,194 @@
    },
    "seed_ok": true,
    "verdict": "passes; no control passes (best control 0.33)"
+  },
+  {
+   "id": "rev2.10→jas1.12",
+   "title": "The crown of life, promised",
+   "family": "The letters: the run case",
+   "seed": {
+    "loc": "gnt:Rev 2:10",
+    "text": "μὴ φοβοῦ ἃ μέλλεις πάσχειν. ἰδοὺ μέλλει βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς.",
+    "members_found": {
+     "give": true,
+     "crown": true
+    }
+   },
+   "members": {
+    "give": {
+     "gloss": "I will give",
+     "greek": "δώσω"
+    },
+    "crown": {
+     "gloss": "the crown of life",
+     "greek": "τὸν στέφανον τῆς ζωῆς"
+    },
+    "receive": {
+     "gloss": "will receive",
+     "greek": "λήμψεται"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "give",
+      "crown"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "give",
+      "crown"
+     ],
+     "state": [
+      "give",
+      "crown"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "give",
+     "new": "receive",
+     "state": [
+      "receive",
+      "crown"
+     ]
+    },
+    {
+     "op": "CITE-AS-PROMISE",
+     "does": "change of who speaks: what the seed says in the first person as a promise, the borrower refers to as a promise already given",
+     "marker": "επηγγειλατο",
+     "state": [
+      "receive",
+      "crown"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "receive",
+     "crown"
+    ],
+    "dropped": [
+     "give"
+    ],
+    "marker": "επηγγειλατο",
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Jas 1:12",
+    "text": "Μακάριος ἀνὴρ ὃς ὑπομένει πειρασμόν, ὅτι δόκιμος γενόμενος λήμψεται τὸν στέφανον τῆς ζωῆς, ὃν ἐπηγγείλατο τοῖς ἀγαπῶσιν αὐτόν.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ],
+     "marker present": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:2Tim 4:8",
+     "text": "λοιπὸν ἀπόκειταί μοι ὁ τῆς δικαιοσύνης στέφανος, ὃν ἀποδώσει μοι ὁ κύριος ἐν ἐκείνῃ τῇ ἡμέρᾳ, ὁ δίκαιος κριτής, οὐ μόνον δὲ ἐμοὶ ἀλλὰ καὶ πᾶσι τοῖς ἠγαπηκόσι τὴν ἐπιφάνειαν αὐτοῦ.",
+     "checks": {
+      "kept members present": [
+       0,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ],
+      "marker present": [
+       0,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "receive",
+      "crown"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "2 Timothy 4:8"
+    },
+    {
+     "loc": "gnt:1Pet 5:4",
+     "text": "καὶ φανερωθέντος τοῦ Ἀρχιποίμενος κομιεῖσθε τὸν ἀμαράντινον τῆς δόξης στέφανον.",
+     "checks": {
+      "kept members present": [
+       0,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ],
+      "marker present": [
+       0,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "receive",
+      "crown"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "1 Peter 5:4"
+    }
+   ],
+   "note": "The case run to completion in #1415 and #1735 §VII, entered here in the engine's operators: the giver's 'I will give' becomes the receiver's 'will receive … which he promised'.",
+   "records": [
+    1415,
+    1735
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Jas 1:12"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.2)"
   }
  ]
 }
