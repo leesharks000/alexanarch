@@ -1,0 +1,4033 @@
+{
+ "engine": "The midrashim transform as an executable: a seed read from a seated text, operators applied to it in a declared order, an emission predicted,\nand the emission checked against the seated target and against controls. Nothing is asserted that the run does not show.\n\nA seed is one or more verses with MEMBERS, each a named piece of wording given as a pattern over the Greek with accents and case removed.\nAn operator changes the list of members. The emission is the list after the last operator: which members are kept and in what order, which are\ndropped, which are replaced, what marker is added. The target passes a check when the seated verse shows that. Controls are other verses (the\nSeptuagint source, the Synoptic parallel, the upstream text) scored against the same emission: a control that scores as well as the target is an\nequally good source or an equally good borrower, and the run says so.\n    python3 midrash.py <alexanarch root> <derivations.json> <out.json>",
+ "operators": {
+  "PARTITION": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+  "REORDER": "set the kept members in a new order",
+  "SUBSTITUTE": "replace one member by another of the same function (a word for a word)",
+  "SUBSTITUTE-OBJECT": "keep the verb and its frame and change the object it acts on",
+  "TRANSFER-ATTRIBUTE": "move an attribute from the figure of the vision to a figure of the narrative",
+  "EVENT": "set a sign of the vision as an event at a hinge of the narrative (no change of wording; the change is of place)",
+  "CITE-AS-SCRIPTURE": "mark the member as written or promised: the borrower reports what the seed performs",
+  "REVERSE-DOER": "keep the deed and its object and change who does it, from the adversary to the Christ or back",
+  "UNDO": "remove the seed's 'no more': what a judgment takes away is present in the borrower",
+  "STATION": "make one into several, each answerable for itself (one lampstand of seven lamps into seven lampstands)",
+  "HIDE": "what the source says is not known, the borrower says is hidden and promised",
+  "ADD": "add a member the seed does not have (recorded, so that an addition is never silent)"
+ },
+ "frozen": {
+  "date": "2026-11-26",
+  "sha256_of_derivations": "b7b3c72c23dd20ef284dcbb7294202526c2ed03bbb4b46ff22c8288c68146f60",
+  "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
+ },
+ "runs": [
+  {
+   "id": "rev1.7→matt24.30",
+   "title": "The mourning tribes",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 1:7",
+    "text": "Ἰδοὺ ἔρχεται μετὰ τῶν νεφελῶν, καὶ ὄψεται αὐτὸν πᾶς ὀφθαλμὸς καὶ οἵτινες αὐτὸν ἐξεκέντησαν, καὶ κόψονται ἐπ’ αὐτὸν πᾶσαι αἱ φυλαὶ τῆς γῆς. ναί, ἀμήν.",
+    "members_found": {
+     "clouds": true,
+     "see": true,
+     "pierced": true,
+     "mourn": true,
+     "tribes": true
+    }
+   },
+   "members": {
+    "clouds": {
+     "gloss": "with the clouds",
+     "greek": "μετὰ τῶν νεφελῶν"
+    },
+    "see": {
+     "gloss": "will see",
+     "greek": "ὄψεται"
+    },
+    "pierced": {
+     "gloss": "they pierced",
+     "greek": "ἐξεκέντησαν"
+    },
+    "mourn": {
+     "gloss": "will mourn",
+     "greek": "κόψονται"
+    },
+    "tribes": {
+     "gloss": "all the tribes of the earth",
+     "greek": "πᾶσαι αἱ φυλαὶ τῆς γῆς"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "clouds",
+      "see",
+      "pierced",
+      "mourn",
+      "tribes"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "clouds",
+      "see",
+      "mourn",
+      "tribes"
+     ],
+     "state": [
+      "clouds",
+      "see",
+      "mourn",
+      "tribes"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "mourn",
+      "tribes",
+      "see",
+      "clouds"
+     ],
+     "state": [
+      "mourn",
+      "tribes",
+      "see",
+      "clouds"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "mourn",
+     "tribes",
+     "see",
+     "clouds"
+    ],
+    "dropped": [
+     "pierced"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Matt 24:30",
+    "text": "καὶ τότε φανήσεται τὸ σημεῖον τοῦ Υἱοῦ τοῦ ἀνθρώπου ἐν οὐρανῷ, καὶ τότε κόψονται πᾶσαι αἱ φυλαὶ τῆς γῆς καὶ ὄψονται τὸν Υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ μετὰ δυνάμεως καὶ δόξης πολλῆς·",
+    "checks": {
+     "kept members present": [
+      4,
+      4
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 13:26",
+     "text": "καὶ τότε ὄψονται τὸν Υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἐν νεφέλαις μετὰ δυνάμεως πολλῆς καὶ δόξης.",
+     "checks": {
+      "kept members present": [
+       2,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "mourn",
+      "tribes"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark's parallel"
+    },
+    {
+     "loc": "lxx:Ζαχαριας 12:10",
+     "text": "καὶ ἐκχεῶ ἐπὶ τὸν οἶκον Δαυεὶδ καὶ ἐπὶ τοὺς κατοικοῦντας Ἰερουσαλὴμ πνεῖμα χάριτος καὶ οἰκτιρμοῦ· καὶ ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν καταορχήσαντο, καὶ κόψονται ἐπʼ αὐτὸν κοπετὸν ὡς ἐπʼ ἀγαπητῷ, καὶ ὀδυνηθήσονται ὀδύνην ὡς ἐπὶ τῷ πρωτοτόκῳ.",
+     "checks": {
+      "kept members present": [
+       1,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "tribes",
+      "see",
+      "clouds"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Zech 12:10"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:13",
+     "text": "ἐθεώρουν ἐν ὁράματι τῆς νυκτός, καὶ ἰδοὺ μετὰ τῶν νεφελῶν τοῦ οὐρανοῦ ὡς υἱὸς ἀνθρώπου ἐρχόμενος, καὶ ἕως τοῦ παλαιοῦ τῶν ἡμερῶν ἔφθασεν· καὶ προσήχθη αὐτῷ.",
+     "checks": {
+      "kept members present": [
+       1,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "mourn",
+      "tribes",
+      "see"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Dan 7:13 (Theodotion)"
+    }
+   ],
+   "note": null,
+   "records": [
+    1746,
+    1747
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Matt 24:30"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev1.7→john19.37",
+   "title": "They pierced",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 1:7",
+    "text": "Ἰδοὺ ἔρχεται μετὰ τῶν νεφελῶν, καὶ ὄψεται αὐτὸν πᾶς ὀφθαλμὸς καὶ οἵτινες αὐτὸν ἐξεκέντησαν, καὶ κόψονται ἐπ’ αὐτὸν πᾶσαι αἱ φυλαὶ τῆς γῆς. ναί, ἀμήν.",
+    "members_found": {
+     "clouds": true,
+     "see": true,
+     "pierced": true,
+     "mourn": true,
+     "tribes": true
+    }
+   },
+   "members": {
+    "clouds": {
+     "gloss": "with the clouds",
+     "greek": "μετὰ τῶν νεφελῶν"
+    },
+    "see": {
+     "gloss": "will see",
+     "greek": "ὄψεται"
+    },
+    "pierced": {
+     "gloss": "they pierced",
+     "greek": "ἐξεκέντησαν"
+    },
+    "mourn": {
+     "gloss": "will mourn",
+     "greek": "κόψονται"
+    },
+    "tribes": {
+     "gloss": "all the tribes of the earth",
+     "greek": "πᾶσαι αἱ φυλαὶ τῆς γῆς"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "clouds",
+      "see",
+      "pierced",
+      "mourn",
+      "tribes"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "see",
+      "pierced"
+     ],
+     "state": [
+      "see",
+      "pierced"
+     ]
+    },
+    {
+     "op": "CITE-AS-SCRIPTURE",
+     "does": "mark the member as written or promised: the borrower reports what the seed performs",
+     "marker": "γραφη|γεγραπται",
+     "state": [
+      "see",
+      "pierced"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "see",
+     "pierced"
+    ],
+    "dropped": [
+     "clouds",
+     "mourn",
+     "tribes"
+    ],
+    "marker": "γραφη|γεγραπται",
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:John 19:37",
+    "text": "καὶ πάλιν ἑτέρα γραφὴ λέγει Ὄψονται εἰς ὃν ἐξεκέντησαν.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ],
+     "marker present": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ζαχαριας 12:10",
+     "text": "καὶ ἐκχεῶ ἐπὶ τὸν οἶκον Δαυεὶδ καὶ ἐπὶ τοὺς κατοικοῦντας Ἰερουσαλὴμ πνεῖμα χάριτος καὶ οἰκτιρμοῦ· καὶ ἐπιβλέψονται πρὸς μέ ἀνθʼ ὧν καταορχήσαντο, καὶ κόψονται ἐπʼ αὐτὸν κοπετὸν ὡς ἐπʼ ἀγαπητῷ, καὶ ὀδυνηθήσονται ὀδύνην ὡς ἐπὶ τῷ πρωτοτόκῳ.",
+     "checks": {
+      "kept members present": [
+       0,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       2,
+       3
+      ],
+      "marker present": [
+       0,
+       1
+      ]
+     },
+     "score": 0.29,
+     "passes": false,
+     "missing": [
+      "see",
+      "pierced"
+     ],
+     "kept_but_should_be_dropped": [
+      "mourn"
+     ],
+     "label": "Septuagint, Zech 12:10"
+    },
+    {
+     "loc": "gnt:Matt 24:30",
+     "text": "καὶ τότε φανήσεται τὸ σημεῖον τοῦ Υἱοῦ τοῦ ἀνθρώπου ἐν οὐρανῷ, καὶ τότε κόψονται πᾶσαι αἱ φυλαὶ τῆς γῆς καὶ ὄψονται τὸν Υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἐπὶ τῶν νεφελῶν τοῦ οὐρανοῦ μετὰ δυνάμεως καὶ δόξης πολλῆς·",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       3
+      ],
+      "marker present": [
+       0,
+       1
+      ]
+     },
+     "score": 0.14,
+     "passes": false,
+     "missing": [
+      "pierced"
+     ],
+     "kept_but_should_be_dropped": [
+      "clouds",
+      "mourn",
+      "tribes"
+     ],
+     "label": "Matthew's half"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 19:37"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.29)"
+  },
+  {
+   "id": "rev3.5→matt10.32",
+   "title": "The confession, Matthew's half",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 3:5",
+    "text": "Ὁ νικῶν οὕτως περιβαλεῖται ἐν ἱματίοις λευκοῖς, καὶ οὐ μὴ ἐξαλείψω τὸ ὄνομα αὐτοῦ ἐκ τῆς βίβλου τῆς ζωῆς, καὶ ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ Πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ.",
+    "members_found": {
+     "confess": true,
+     "father": true,
+     "angels": true
+    }
+   },
+   "members": {
+    "confess": {
+     "gloss": "I will confess",
+     "greek": "ὁμολογήσω"
+    },
+    "father": {
+     "gloss": "before my Father",
+     "greek": "τοῦ Πατρός μου"
+    },
+    "angels": {
+     "gloss": "before the angels",
+     "greek": "τῶν ἀγγέλων"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "confess",
+      "father",
+      "angels"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "confess",
+      "father"
+     ],
+     "state": [
+      "confess",
+      "father"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "confess",
+     "father"
+    ],
+    "dropped": [
+     "angels"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Matt 10:32",
+    "text": "Πᾶς οὖν ὅστις ὁμολογήσει ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων, ὁμολογήσω κἀγὼ ἐν αὐτῷ ἔμπροσθεν τοῦ Πατρός μου τοῦ ἐν τοῖς οὐρανοῖς·",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Luke 12:8",
+     "text": "λέγω δὲ ὑμῖν, πᾶς ὃς ἂν ὁμολογήσῃ ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων, καὶ ὁ Υἱὸς τοῦ ἀνθρώπου ὁμολογήσει ἐν αὐτῷ ἔμπροσθεν τῶν ἀγγέλων τοῦ Θεοῦ·",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "father"
+     ],
+     "kept_but_should_be_dropped": [
+      "angels"
+     ],
+     "label": "Luke's half"
+    }
+   ],
+   "note": null,
+   "records": [
+    1747
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Matt 10:32"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.25)"
+  },
+  {
+   "id": "rev3.5→luke12.8",
+   "title": "The confession, Luke's half",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 3:5",
+    "text": "Ὁ νικῶν οὕτως περιβαλεῖται ἐν ἱματίοις λευκοῖς, καὶ οὐ μὴ ἐξαλείψω τὸ ὄνομα αὐτοῦ ἐκ τῆς βίβλου τῆς ζωῆς, καὶ ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ Πατρός μου καὶ ἐνώπιον τῶν ἀγγέλων αὐτοῦ.",
+    "members_found": {
+     "confess": true,
+     "father": true,
+     "angels": true
+    }
+   },
+   "members": {
+    "confess": {
+     "gloss": "I will confess",
+     "greek": "ὁμολογήσω"
+    },
+    "father": {
+     "gloss": "before my Father",
+     "greek": "τοῦ Πατρός μου"
+    },
+    "angels": {
+     "gloss": "before the angels",
+     "greek": "τῶν ἀγγέλων"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "confess",
+      "father",
+      "angels"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "confess",
+      "angels"
+     ],
+     "state": [
+      "confess",
+      "angels"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "confess",
+     "angels"
+    ],
+    "dropped": [
+     "father"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Luke 12:8",
+    "text": "λέγω δὲ ὑμῖν, πᾶς ὃς ἂν ὁμολογήσῃ ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων, καὶ ὁ Υἱὸς τοῦ ἀνθρώπου ὁμολογήσει ἐν αὐτῷ ἔμπροσθεν τῶν ἀγγέλων τοῦ Θεοῦ·",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Matt 10:32",
+     "text": "Πᾶς οὖν ὅστις ὁμολογήσει ἐν ἐμοὶ ἔμπροσθεν τῶν ἀνθρώπων, ὁμολογήσω κἀγὼ ἐν αὐτῷ ἔμπροσθεν τοῦ Πατρός μου τοῦ ἐν τοῖς οὐρανοῖς·",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "angels"
+     ],
+     "kept_but_should_be_dropped": [
+      "father"
+     ],
+     "label": "Matthew's half"
+    }
+   ],
+   "note": null,
+   "records": [
+    1747
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Luke 12:8"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 1,
+     "refs": [
+      "Ψαλμοί 137:1"
+     ]
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.25)"
+  },
+  {
+   "id": "rev19.9→matt22.3",
+   "title": "The wedding",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 19:9",
+    "text": "Καὶ λέγει μοι Γράψον Μακάριοι οἱ εἰς τὸ δεῖπνον τοῦ γάμου τοῦ Ἀρνίου κεκλημένοι. καὶ λέγει μοι Οὗτοι οἱ λόγοι ἀληθινοὶ τοῦ Θεοῦ εἰσιν.",
+    "members_found": {
+     "supper": true,
+     "wedding": true,
+     "called": true
+    }
+   },
+   "members": {
+    "supper": {
+     "gloss": "the supper",
+     "greek": "τὸ δεῖπνον"
+    },
+    "wedding": {
+     "gloss": "of the wedding",
+     "greek": "τοῦ γάμου"
+    },
+    "called": {
+     "gloss": "those called",
+     "greek": "κεκλημένοι"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "supper",
+      "wedding",
+      "called"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "wedding",
+      "called"
+     ],
+     "state": [
+      "wedding",
+      "called"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "called",
+      "wedding"
+     ],
+     "state": [
+      "called",
+      "wedding"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "called",
+     "wedding"
+    ],
+    "dropped": [
+     "supper"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Matt 22:3",
+    "text": "καὶ ἀπέστειλεν τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Luke 14:17",
+     "text": "καὶ ἀπέστειλεν τὸν δοῦλον αὐτοῦ τῇ ὥρᾳ τοῦ δείπνου εἰπεῖν τοῖς κεκλημένοις Ἔρχεσθε, ὅτι ἤδη ἕτοιμά ἐστιν.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "wedding"
+     ],
+     "kept_but_should_be_dropped": [
+      "supper"
+     ],
+     "label": "Luke's half"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 2,
+     "refs": [
+      "Matt 22:3",
+      "Matt 22:4"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.25)"
+  },
+  {
+   "id": "rev19.9→luke14.17",
+   "title": "The supper",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 19:9",
+    "text": "Καὶ λέγει μοι Γράψον Μακάριοι οἱ εἰς τὸ δεῖπνον τοῦ γάμου τοῦ Ἀρνίου κεκλημένοι. καὶ λέγει μοι Οὗτοι οἱ λόγοι ἀληθινοὶ τοῦ Θεοῦ εἰσιν.",
+    "members_found": {
+     "supper": true,
+     "wedding": true,
+     "called": true
+    }
+   },
+   "members": {
+    "supper": {
+     "gloss": "the supper",
+     "greek": "τὸ δεῖπνον"
+    },
+    "wedding": {
+     "gloss": "of the wedding",
+     "greek": "τοῦ γάμου"
+    },
+    "called": {
+     "gloss": "those called",
+     "greek": "κεκλημένοι"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "supper",
+      "wedding",
+      "called"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "supper",
+      "called"
+     ],
+     "state": [
+      "supper",
+      "called"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "supper",
+     "called"
+    ],
+    "dropped": [
+     "wedding"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Luke 14:17",
+    "text": "καὶ ἀπέστειλεν τὸν δοῦλον αὐτοῦ τῇ ὥρᾳ τοῦ δείπνου εἰπεῖν τοῖς κεκλημένοις Ἔρχεσθε, ὅτι ἤδη ἕτοιμά ἐστιν.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Matt 22:3",
+     "text": "καὶ ἀπέστειλεν τοὺς δούλους αὐτοῦ καλέσαι τοὺς κεκλημένους εἰς τοὺς γάμους, καὶ οὐκ ἤθελον ἐλθεῖν.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "supper"
+     ],
+     "kept_but_should_be_dropped": [
+      "wedding"
+     ],
+     "label": "Matthew's half"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Luke 14:17"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.25)"
+  },
+  {
+   "id": "rev5.2→mark1.7",
+   "title": "Who is worthy to loose: the stronger one",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 5:2",
+    "text": "καὶ εἶδον ἄγγελον ἰσχυρὸν κηρύσσοντα ἐν φωνῇ μεγάλῃ Τίς ἄξιος ἀνοῖξαι τὸ βιβλίον καὶ λῦσαι τὰς σφραγῖδας αὐτοῦ;",
+    "members_found": {
+     "strong": true,
+     "proclaim": true,
+     "worthy": true,
+     "loose": true,
+     "seals": true
+    }
+   },
+   "members": {
+    "strong": {
+     "gloss": "strong",
+     "greek": "ἰσχυρόν"
+    },
+    "proclaim": {
+     "gloss": "proclaiming",
+     "greek": "κηρύσσοντα"
+    },
+    "worthy": {
+     "gloss": "worthy",
+     "greek": "ἄξιος"
+    },
+    "loose": {
+     "gloss": "to loose",
+     "greek": "λῦσαι"
+    },
+    "seals": {
+     "gloss": "its seals",
+     "greek": "τὰς σφραγῖδας"
+    },
+    "fit": {
+     "gloss": "fit",
+     "greek": "ἱκανός"
+    },
+    "strap": {
+     "gloss": "the strap of his sandal",
+     "greek": "τὸν ἱμάντα"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "strong",
+      "proclaim",
+      "worthy",
+      "loose",
+      "seals"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "worthy",
+     "new": "fit",
+     "state": [
+      "strong",
+      "proclaim",
+      "fit",
+      "loose",
+      "seals"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE-OBJECT",
+     "does": "keep the verb and its frame and change the object it acts on",
+     "old": "seals",
+     "new": "strap",
+     "state": [
+      "strong",
+      "proclaim",
+      "fit",
+      "loose",
+      "strap"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "proclaim",
+      "strong",
+      "fit",
+      "loose",
+      "strap"
+     ],
+     "state": [
+      "proclaim",
+      "strong",
+      "fit",
+      "loose",
+      "strap"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "proclaim",
+     "strong",
+     "fit",
+     "loose",
+     "strap"
+    ],
+    "dropped": [
+     "worthy",
+     "seals"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Mark 1:7",
+    "text": "καὶ ἐκήρυσσεν λέγων Ἔρχεται ὁ ἰσχυρότερός μου ὀπίσω μου, οὗ οὐκ εἰμὶ ἱκανὸς κύψας λῦσαι τὸν ἱμάντα τῶν ὑποδημάτων αὐτοῦ.",
+    "checks": {
+     "kept members present": [
+      5,
+      5
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      2,
+      2
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:John 1:27",
+     "text": "ὁ ὀπίσω μου ἐρχόμενος, οὗ οὐκ εἰμὶ ἐγὼ ἄξιος ἵνα λύσω αὐτοῦ τὸν ἱμάντα τοῦ ὑποδήματος.",
+     "checks": {
+      "kept members present": [
+       2,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.38,
+     "passes": false,
+     "missing": [
+      "proclaim",
+      "strong",
+      "fit"
+     ],
+     "kept_but_should_be_dropped": [
+      "worthy"
+     ],
+     "label": "John's half"
+    },
+    {
+     "loc": "gnt:Matt 3:11",
+     "text": "ἐγὼ μὲν ὑμᾶς βαπτίζω ἐν ὕδατι εἰς μετάνοιαν· ὁ δὲ ὀπίσω μου ἐρχόμενος ἰσχυρότερός μού ἐστιν, οὗ οὐκ εἰμὶ ἱκανὸς τὰ ὑποδήματα βαστάσαι· αὐτὸς ὑμᾶς βαπτίσει ἐν Πνεύματι Ἁγίῳ καὶ πυρί·",
+     "checks": {
+      "kept members present": [
+       2,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       2,
+       2
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "proclaim",
+      "loose",
+      "strap"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew's parallel"
+    }
+   ],
+   "note": null,
+   "records": [
+    639
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Mark 1:7"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev5.2→john1.27",
+   "title": "Who is worthy to loose: worthy",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 5:2",
+    "text": "καὶ εἶδον ἄγγελον ἰσχυρὸν κηρύσσοντα ἐν φωνῇ μεγάλῃ Τίς ἄξιος ἀνοῖξαι τὸ βιβλίον καὶ λῦσαι τὰς σφραγῖδας αὐτοῦ;",
+    "members_found": {
+     "strong": true,
+     "proclaim": true,
+     "worthy": true,
+     "loose": true,
+     "seals": true
+    }
+   },
+   "members": {
+    "strong": {
+     "gloss": "strong",
+     "greek": "ἰσχυρόν"
+    },
+    "proclaim": {
+     "gloss": "proclaiming",
+     "greek": "κηρύσσοντα"
+    },
+    "worthy": {
+     "gloss": "worthy",
+     "greek": "ἄξιος"
+    },
+    "loose": {
+     "gloss": "to loose",
+     "greek": "λῦσαι"
+    },
+    "seals": {
+     "gloss": "its seals",
+     "greek": "τὰς σφραγῖδας"
+    },
+    "fit": {
+     "gloss": "fit",
+     "greek": "ἱκανός"
+    },
+    "strap": {
+     "gloss": "the strap of his sandal",
+     "greek": "τὸν ἱμάντα"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "strong",
+      "proclaim",
+      "worthy",
+      "loose",
+      "seals"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "worthy",
+      "loose",
+      "seals"
+     ],
+     "state": [
+      "worthy",
+      "loose",
+      "seals"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE-OBJECT",
+     "does": "keep the verb and its frame and change the object it acts on",
+     "old": "seals",
+     "new": "strap",
+     "state": [
+      "worthy",
+      "loose",
+      "strap"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "worthy",
+     "loose",
+     "strap"
+    ],
+    "dropped": [
+     "strong",
+     "proclaim",
+     "seals"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:John 1:27",
+    "text": "ὁ ὀπίσω μου ἐρχόμενος, οὗ οὐκ εἰμὶ ἐγὼ ἄξιος ἵνα λύσω αὐτοῦ τὸν ἱμάντα τοῦ ὑποδήματος.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 1:7",
+     "text": "καὶ ἐκήρυσσεν λέγων Ἔρχεται ὁ ἰσχυρότερός μου ὀπίσω μου, οὗ οὐκ εἰμὶ ἱκανὸς κύψας λῦσαι τὸν ἱμάντα τῶν ὑποδημάτων αὐτοῦ.",
+     "checks": {
+      "kept members present": [
+       2,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       3
+      ]
+     },
+     "score": 0.43,
+     "passes": false,
+     "missing": [
+      "worthy"
+     ],
+     "kept_but_should_be_dropped": [
+      "strong",
+      "proclaim"
+     ],
+     "label": "Mark's half"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 1:27"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.43)"
+  },
+  {
+   "id": "rev3.3→matt24.43",
+   "title": "The thief, Matthew's half",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 3:3",
+    "text": "μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας, καὶ τήρει καὶ μετανόησον. ἐὰν οὖν μὴ γρηγορήσῃς, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ.",
+    "members_found": {
+     "watch": true,
+     "thief": true,
+     "hour": true
+    }
+   },
+   "members": {
+    "watch": {
+     "gloss": "watch",
+     "greek": "γρηγορήσῃς"
+    },
+    "thief": {
+     "gloss": "as a thief",
+     "greek": "ὡς κλέπτης"
+    },
+    "hour": {
+     "gloss": "what hour",
+     "greek": "ποίαν ὥραν"
+    },
+    "nightwatch": {
+     "gloss": "in what watch of the night",
+     "greek": "ποίᾳ φυλακῇ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "watch",
+      "thief",
+      "hour"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "hour",
+     "new": "nightwatch",
+     "state": [
+      "watch",
+      "thief",
+      "nightwatch"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "nightwatch",
+      "thief",
+      "watch"
+     ],
+     "state": [
+      "nightwatch",
+      "thief",
+      "watch"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "nightwatch",
+     "thief",
+     "watch"
+    ],
+    "dropped": [
+     "hour"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Matt 24:43",
+    "text": "ἐκεῖνο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασεν διορυχθῆναι τὴν οἰκίαν αὐτοῦ.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Luke 12:39",
+     "text": "τοῦτο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ ὥρᾳ ὁ κλέπτης ἔρχεται, οὐκ ἂν ἀφῆκεν διορυχθῆναι τὸν οἶκον αὐτοῦ.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "nightwatch",
+      "watch"
+     ],
+     "kept_but_should_be_dropped": [
+      "hour"
+     ],
+     "label": "Luke's half"
+    }
+   ],
+   "note": null,
+   "records": [
+    1747
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Matt 24:43"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.2)"
+  },
+  {
+   "id": "rev3.3→luke12.39",
+   "title": "The thief, Luke's half",
+   "family": "Gospels: partition",
+   "seed": {
+    "loc": "gnt:Rev 3:3",
+    "text": "μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας, καὶ τήρει καὶ μετανόησον. ἐὰν οὖν μὴ γρηγορήσῃς, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ.",
+    "members_found": {
+     "watch": true,
+     "thief": true,
+     "hour": true
+    }
+   },
+   "members": {
+    "watch": {
+     "gloss": "watch",
+     "greek": "γρηγορήσῃς"
+    },
+    "thief": {
+     "gloss": "as a thief",
+     "greek": "ὡς κλέπτης"
+    },
+    "hour": {
+     "gloss": "what hour",
+     "greek": "ποίαν ὥραν"
+    },
+    "nightwatch": {
+     "gloss": "in what watch of the night",
+     "greek": "ποίᾳ φυλακῇ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "watch",
+      "thief",
+      "hour"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "thief",
+      "hour"
+     ],
+     "state": [
+      "thief",
+      "hour"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "hour",
+      "thief"
+     ],
+     "state": [
+      "hour",
+      "thief"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "hour",
+     "thief"
+    ],
+    "dropped": [
+     "watch"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Luke 12:39",
+    "text": "τοῦτο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ ὥρᾳ ὁ κλέπτης ἔρχεται, οὐκ ἂν ἀφῆκεν διορυχθῆναι τὸν οἶκον αὐτοῦ.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Matt 24:43",
+     "text": "ἐκεῖνο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασεν διορυχθῆναι τὴν οἰκίαν αὐτοῦ.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "hour"
+     ],
+     "kept_but_should_be_dropped": [
+      "watch"
+     ],
+     "label": "Matthew's half"
+    }
+   ],
+   "note": null,
+   "records": [
+    1747
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Luke 12:39"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.25)"
+  },
+  {
+   "id": "rev16.18+1.14→matt28.2-3",
+   "title": "The tomb",
+   "family": "Gospels: Matthew against Mark",
+   "seed": {
+    "loc": "gnt:Rev 16:18 + Rev 1:14",
+    "text": "καὶ ἐγένοντο ἀστραπαὶ καὶ φωναὶ καὶ βρονταί, καὶ σεισμὸς ἐγένετο μέγας, οἷος οὐκ ἐγένετο ἀφ’ οὗ ἄνθρωπος ἐγένετο ἐπὶ τῆς γῆς, τηλικοῦτος σεισμὸς οὕτω μέγας. ἡ δὲ κεφαλὴ αὐτοῦ καὶ αἱ τρίχες λευκαὶ ὡς ἔριον λευκόν ὡς χιών, καὶ οἱ ὀφθαλμοὶ αὐτοῦ ὡς φλὸξ πυρός,",
+    "members_found": {
+     "quake": true,
+     "happened": true,
+     "great": true,
+     "hair": true,
+     "snow": true
+    }
+   },
+   "members": {
+    "quake": {
+     "gloss": "an earthquake",
+     "greek": "σεισμός"
+    },
+    "happened": {
+     "gloss": "there was",
+     "greek": "ἐγένετο"
+    },
+    "great": {
+     "gloss": "great",
+     "greek": "μέγας"
+    },
+    "hair": {
+     "gloss": "his hair",
+     "greek": "αἱ τρίχες"
+    },
+    "snow": {
+     "gloss": "white as snow",
+     "greek": "λευκὸν ὡς χιών"
+    },
+    "clothing": {
+     "gloss": "his clothing",
+     "greek": "τὸ ἔνδυμα"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "quake",
+      "happened",
+      "great",
+      "hair",
+      "snow"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "quake",
+      "happened",
+      "great",
+      "hair",
+      "snow"
+     ],
+     "state": [
+      "quake",
+      "happened",
+      "great",
+      "hair",
+      "snow"
+     ]
+    },
+    {
+     "op": "EVENT",
+     "does": "set a sign of the vision as an event at a hinge of the narrative (no change of wording; the change is of place)",
+     "state": [
+      "quake",
+      "happened",
+      "great",
+      "hair",
+      "snow"
+     ]
+    },
+    {
+     "op": "TRANSFER-ATTRIBUTE",
+     "does": "move an attribute from the figure of the vision to a figure of the narrative",
+     "old": "hair",
+     "new": "clothing",
+     "state": [
+      "quake",
+      "happened",
+      "great",
+      "clothing",
+      "snow"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "quake",
+     "happened",
+     "great",
+     "clothing",
+     "snow"
+    ],
+    "dropped": [
+     "hair"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Matt 28:2-3",
+    "text": "καὶ ἰδοὺ σεισμὸς ἐγένετο μέγας· ἄγγελος γὰρ Κυρίου καταβὰς ἐξ οὐρανοῦ καὶ προσελθὼν ἀπεκύλισεν τὸν λίθον καὶ ἐκάθητο ἐπάνω αὐτοῦ. ἦν δὲ ἡ εἰδέα αὐτοῦ ὡς ἀστραπὴ, καὶ τὸ ἔνδυμα αὐτοῦ λευκὸν ὡς χιών.",
+    "checks": {
+     "kept members present": [
+      5,
+      5
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 16:4-5",
+     "text": "καὶ ἀναβλέψασαι θεωροῦσιν ὅτι ἀνακεκύλισται ὁ λίθος· ἦν γὰρ μέγας σφόδρα. καὶ εἰσελθοῦσαι εἰς τὸ μνημεῖον εἶδον νεανίσκον καθήμενον ἐν τοῖς δεξιοῖς περιβεβλημένον στολὴν λευκήν, καὶ ἐξεθαμβήθησαν.",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.29,
+     "passes": false,
+     "missing": [
+      "quake",
+      "happened",
+      "clothing",
+      "snow"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark's tomb"
+    },
+    {
+     "loc": "gnt:Luke 24:2-4",
+     "text": "εὗρον δὲ τὸν λίθον ἀποκεκυλισμένον ἀπὸ τοῦ μνημείου, εἰσελθοῦσαι δὲ οὐχ εὗρον τὸ σῶμα τοῦ Κυρίου Ἰησοῦ. καὶ ἐγένετο ἐν τῷ ἀπορεῖσθαι αὐτὰς περὶ τούτου καὶ ἰδοὺ ἄνδρες δύο ἐπέστησαν αὐταῖς ἐν ἐσθῆτι ἀστραπτούσῃ·",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.29,
+     "passes": false,
+     "missing": [
+      "quake",
+      "great",
+      "clothing",
+      "snow"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke's tomb"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 7:9",
+     "text": "ἐθεώρουν ἕως ὅτου θρόνοι ἐτέθησαν, καὶ παλαιὸς ἡμερῶν ἐκάθητο, καὶ τὸ ἔνδυμα αὐτοῦ ὡσεὶ χιὼν λευκόν, § καὶ ἡ θρὶξ τῆς κεφαλῆς § Q αὐτοῦ ὡσεὶ ἔριον καθαρόν· ὁ θρόνος αὐτοῦ φλὸξ πυρός, οἱ τροχοὶ αὐτοῦ πῦρ φλέγον.",
+     "checks": {
+      "kept members present": [
+       1,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.29,
+     "passes": false,
+     "missing": [
+      "quake",
+      "happened",
+      "great",
+      "snow"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Dan 7:9"
+    }
+   ],
+   "note": "The seed is two verses from two places of the Apocalypse; Matthew has them in two consecutive verses. Rev 16:18 has other words between the three kept here.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7941,
+     "passing": 1,
+     "refs": [
+      "Matt 28:2"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.29)"
+  },
+  {
+   "id": "rev6.12→matt8.24",
+   "title": "The storm",
+   "family": "Gospels: Matthew against Mark",
+   "seed": {
+    "loc": "gnt:Rev 6:12",
+    "text": "Καὶ εἶδον ὅτε ἤνοιξεν τὴν σφραγῖδα τὴν ἕκτην, καὶ σεισμὸς μέγας ἐγένετο, καὶ ὁ ἥλιος ἐγένετο μέλας ὡς σάκκος τρίχινος, καὶ ἡ σελήνη ὅλη ἐγένετο ὡς αἷμα,",
+    "members_found": {
+     "quake": true,
+     "great": true,
+     "happened": true
+    }
+   },
+   "members": {
+    "quake": {
+     "gloss": "an earthquake",
+     "greek": "σεισμός"
+    },
+    "great": {
+     "gloss": "great",
+     "greek": "μέγας"
+    },
+    "happened": {
+     "gloss": "there was",
+     "greek": "ἐγένετο"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "quake",
+      "great",
+      "happened"
+     ]
+    },
+    {
+     "op": "EVENT",
+     "does": "set a sign of the vision as an event at a hinge of the narrative (no change of wording; the change is of place)",
+     "state": [
+      "quake",
+      "great",
+      "happened"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "quake",
+     "great",
+     "happened"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Matt 8:24",
+    "text": "καὶ ἰδοὺ σεισμὸς μέγας ἐγένετο ἐν τῇ θαλάσσῃ, ὥστε τὸ πλοῖον καλύπτεσθαι ὑπὸ τῶν κυμάτων· αὐτὸς δὲ ἐκάθευδεν.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 4:37",
+     "text": "καὶ γίνεται λαῖλαψ μεγάλη ἀνέμου, καὶ τὰ κύματα ἐπέβαλλεν εἰς τὸ πλοῖον, ὥστε ἤδη γεμίζεσθαι τὸ πλοῖον.",
+     "checks": {
+      "kept members present": [
+       0,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ]
+     },
+     "score": 0.0,
+     "passes": false,
+     "missing": [
+      "quake",
+      "great",
+      "happened"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark's storm"
+    },
+    {
+     "loc": "gnt:Luke 8:23",
+     "text": "πλεόντων δὲ αὐτῶν ἀφύπνωσεν. καὶ κατέβη λαῖλαψ ἀνέμου εἰς τὴν λίμνην, καὶ συνεπληροῦντο καὶ ἐκινδύνευον.",
+     "checks": {
+      "kept members present": [
+       0,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ]
+     },
+     "score": 0.0,
+     "passes": false,
+     "missing": [
+      "quake",
+      "great",
+      "happened"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke's storm"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 2,
+     "refs": [
+      "Matt 8:24",
+      "Rev 16:18"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.0)"
+  },
+  {
+   "id": "rev13.13-14→john2.11",
+   "title": "Who does the signs",
+   "family": "John: the signs reversed",
+   "seed": {
+    "loc": "gnt:Rev 13:13-14",
+    "text": "καὶ ποιεῖ σημεῖα μεγάλα, ἵνα καὶ πῦρ ποιῇ ἐκ τοῦ οὐρανοῦ καταβαίνειν εἰς τὴν γῆν ἐνώπιον τῶν ἀνθρώπων. καὶ πλανᾷ τοὺς κατοικοῦντας ἐπὶ τῆς γῆς διὰ τὰ σημεῖα ἃ ἐδόθη αὐτῷ ποιῆσαι ἐνώπιον τοῦ θηρίου, λέγων τοῖς κατοικοῦσιν ἐπὶ τῆς γῆς ποιῆσαι εἰκόνα τῷ θηρίῳ, ὃς ἔχει τὴν πληγὴν τῆς μαχαίρης καὶ ἔζησεν.",
+    "members_found": {
+     "does": true,
+     "signs": true,
+     "beast": true
+    }
+   },
+   "members": {
+    "does": {
+     "gloss": "does",
+     "greek": "ποιεῖ"
+    },
+    "signs": {
+     "gloss": "signs",
+     "greek": "σημεῖα"
+    },
+    "beast": {
+     "gloss": "before the beast",
+     "greek": "τοῦ θηρίου"
+    },
+    "jesus": {
+     "gloss": "Jesus",
+     "greek": "ὁ Ἰησοῦς"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "does",
+      "signs",
+      "beast"
+     ]
+    },
+    {
+     "op": "REVERSE-DOER",
+     "does": "keep the deed and its object and change who does it, from the adversary to the Christ or back",
+     "old": "beast",
+     "new": "jesus",
+     "state": [
+      "does",
+      "signs",
+      "jesus"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "does",
+     "signs",
+     "jesus"
+    ],
+    "dropped": [
+     "beast"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:John 2:11",
+    "text": "Ταύτην ἐποίησεν ἀρχὴν τῶν σημείων ὁ Ἰησοῦς ἐν Κανὰ τῆς Γαλιλαίας καὶ ἐφανέρωσεν τὴν δόξαν αὐτοῦ, καὶ ἐπίστευσαν εἰς αὐτὸν οἱ μαθηταὶ αὐτοῦ.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 13:22",
+     "text": "ἐγερθήσονται δὲ ψευδόχριστοι καὶ ψευδοπροφῆται καὶ ποιήσουσιν σημεῖα καὶ τέρατα πρὸς τὸ ἀποπλανᾶν εἰ δυνατὸν τοὺς ἐκλεκτούς·",
+     "checks": {
+      "kept members present": [
+       2,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.6,
+     "passes": false,
+     "missing": [
+      "does"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark: false prophets will give signs"
+    }
+   ],
+   "note": "In Revelation every sign that is done is the adversary's (13:13, 13:14, 16:14, 19:20); the seven plagues are a sign seen (15:1).",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 2:11"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.6)"
+  },
+  {
+   "id": "rev18.23→john3.29",
+   "title": "The bridegroom's voice",
+   "family": "John: the signs reversed",
+   "seed": {
+    "loc": "gnt:Rev 18:23",
+    "text": "καὶ φῶς λύχνου οὐ μὴ φάνῃ ἐν σοὶ ἔτι, καὶ φωνὴ νυμφίου καὶ νύμφης οὐ μὴ ἀκουσθῇ ἐν σοὶ ἔτι· ὅτι οἱ ἔμποροί σου ἦσαν οἱ μεγιστᾶνες τῆς γῆς, ὅτι ἐν τῇ φαρμακίᾳ σου ἐπλανήθησαν πάντα τὰ ἔθνη,",
+    "members_found": {
+     "voice": true,
+     "groom": true,
+     "heard": true
+    }
+   },
+   "members": {
+    "voice": {
+     "gloss": "the voice",
+     "greek": "φωνή"
+    },
+    "groom": {
+     "gloss": "of the bridegroom",
+     "greek": "νυμφίου"
+    },
+    "heard": {
+     "gloss": "heard",
+     "greek": "ἀκουσθῇ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "voice",
+      "groom",
+      "heard"
+     ]
+    },
+    {
+     "op": "UNDO",
+     "does": "remove the seed's 'no more': what a judgment takes away is present in the borrower",
+     "negation": "ου μη ακουσθη",
+     "state": [
+      "voice",
+      "groom",
+      "heard"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "heard",
+      "voice",
+      "groom"
+     ],
+     "state": [
+      "heard",
+      "voice",
+      "groom"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "heard",
+     "voice",
+     "groom"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": true
+   },
+   "target": {
+    "loc": "gnt:John 3:29",
+    "text": "Ὁ ἔχων τὴν νύμφην νυμφίος ἐστίν· ὁ δὲ φίλος τοῦ νυμφίου ὁ ἑστηκὼς καὶ ἀκούων αὐτοῦ, χαρᾷ χαίρει διὰ τὴν φωνὴν τοῦ νυμφίου. αὕτη οὖν ἡ χαρὰ ἡ ἐμὴ πεπλήρωται.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "negation absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ιερεμιας 25:10",
+     "text": "καὶ ἀπολῶ ἀπʼ αὐτῶν φωνὴν χαρᾶς καὶ φωνὴν εὐφροσύνης, φωνὴν νυμφίου καὶ φωνὴν νύμφης, ὀσμὴν μύρου καὶ φῶς λύχνου.",
+     "checks": {
+      "kept members present": [
+       2,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "negation absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.6,
+     "passes": false,
+     "missing": [
+      "heard"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Jer 25:10"
+    },
+    {
+     "loc": "gnt:Matt 9:15",
+     "text": "καὶ εἶπεν αὐτοῖς ὁ Ἰησοῦς Μὴ δύνανται οἱ υἱοὶ τοῦ νυμφῶνος πενθεῖν ἐφ’ ὅσον μετ’ αὐτῶν ἐστιν ὁ νυμφίος; ἐλεύσονται δὲ ἡμέραι ὅταν ἀπαρθῇ ἀπ’ αὐτῶν ὁ νυμφίος, καὶ τότε νηστεύσουσιν.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "negation absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "heard",
+      "groom"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew: the bridegroom taken away"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 3:29"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.6)"
+  },
+  {
+   "id": "rev18.23→john5.35",
+   "title": "The lamp",
+   "family": "John: the signs reversed",
+   "seed": {
+    "loc": "gnt:Rev 18:23",
+    "text": "καὶ φῶς λύχνου οὐ μὴ φάνῃ ἐν σοὶ ἔτι, καὶ φωνὴ νυμφίου καὶ νύμφης οὐ μὴ ἀκουσθῇ ἐν σοὶ ἔτι· ὅτι οἱ ἔμποροί σου ἦσαν οἱ μεγιστᾶνες τῆς γῆς, ὅτι ἐν τῇ φαρμακίᾳ σου ἐπλανήθησαν πάντα τὰ ἔθνη,",
+    "members_found": {
+     "light": true,
+     "lamp": true,
+     "shine": true
+    }
+   },
+   "members": {
+    "light": {
+     "gloss": "light",
+     "greek": "φῶς"
+    },
+    "lamp": {
+     "gloss": "of a lamp",
+     "greek": "λύχνου"
+    },
+    "shine": {
+     "gloss": "shine",
+     "greek": "φάνῃ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "light",
+      "lamp",
+      "shine"
+     ]
+    },
+    {
+     "op": "UNDO",
+     "does": "remove the seed's 'no more': what a judgment takes away is present in the borrower",
+     "negation": "ου μη φανη",
+     "state": [
+      "light",
+      "lamp",
+      "shine"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "lamp",
+      "shine",
+      "light"
+     ],
+     "state": [
+      "lamp",
+      "shine",
+      "light"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "lamp",
+     "shine",
+     "light"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": true
+   },
+   "target": {
+    "loc": "gnt:John 5:35",
+    "text": "ἐκεῖνος ἦν ὁ λύχνος ὁ καιόμενος καὶ φαίνων, ὑμεῖς δὲ ἠθελήσατε ἀγαλλιαθῆναι πρὸς ὥραν ἐν τῷ φωτὶ αὐτοῦ.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "negation absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ιερεμιας 25:10",
+     "text": "καὶ ἀπολῶ ἀπʼ αὐτῶν φωνὴν χαρᾶς καὶ φωνὴν εὐφροσύνης, φωνὴν νυμφίου καὶ φωνὴν νύμφης, ὀσμὴν μύρου καὶ φῶς λύχνου.",
+     "checks": {
+      "kept members present": [
+       2,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "negation absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.6,
+     "passes": false,
+     "missing": [
+      "shine"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Jer 25:10"
+    },
+    {
+     "loc": "gnt:Matt 5:15",
+     "text": "οὐδὲ καίουσιν λύχνον καὶ τιθέασιν αὐτὸν ὑπὸ τὸν μόδιον, ἀλλ’ ἐπὶ τὴν λυχνίαν, καὶ λάμπει πᾶσιν τοῖς ἐν τῇ οἰκίᾳ.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "negation absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "shine",
+      "light"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew: the lamp on the stand"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 5:35"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.6)"
+  },
+  {
+   "id": "rev18.21→john11.41",
+   "title": "The stone",
+   "family": "John: the signs reversed",
+   "seed": {
+    "loc": "gnt:Rev 18:21",
+    "text": "Καὶ ἦρεν εἷς ἄγγελος ἰσχυρὸς λίθον ὡς μύλινον μέγαν, καὶ ἔβαλεν εἰς τὴν θάλασσαν λέγων Οὕτως ὁρμήματι βληθήσεται Βαβυλὼν ἡ μεγάλη πόλις, καὶ οὐ μὴ εὑρεθῇ ἔτι.",
+    "members_found": {
+     "took": true,
+     "stone": true
+    }
+   },
+   "members": {
+    "took": {
+     "gloss": "took up",
+     "greek": "ἦρεν"
+    },
+    "stone": {
+     "gloss": "a stone",
+     "greek": "λίθον"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "took",
+      "stone"
+     ]
+    },
+    {
+     "op": "UNDO",
+     "does": "remove the seed's 'no more': what a judgment takes away is present in the borrower",
+     "negation": "ου μη ευρεθη ετι",
+     "state": [
+      "took",
+      "stone"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "took",
+     "stone"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": true
+   },
+   "target": {
+    "loc": "gnt:John 11:41",
+    "text": "ἦραν οὖν τὸν λίθον. ὁ δὲ Ἰησοῦς ἦρεν τοὺς ὀφθαλμοὺς ἄνω καὶ εἶπεν Πάτερ, εὐχαριστῶ σοι ὅτι ἤκουσάς μου.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "negation absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Mark 16:4",
+     "text": "καὶ ἀναβλέψασαι θεωροῦσιν ὅτι ἀνακεκύλισται ὁ λίθος· ἦν γὰρ μέγας σφόδρα.",
+     "checks": {
+      "kept members present": [
+       0,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "negation absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "took",
+      "stone"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark: the stone rolled back"
+    },
+    {
+     "loc": "lxx:Ιερεμιας 28:63",
+     "text": "καὶ ἔσται ὅταν παύσῃ τοῦ ἀναγινώσκειν τὸ βιβλίον τοῦτο, καὶ ἐπιδήσεις ἐπʼ αὐτὸ λίθον καὶ ῥίψεις αὐτὸ εἰς μέσον τοῦ Εὐφράτου,",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "negation absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "took"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Jer 28:63 (51:63)"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 11:41"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 1,
+     "refs": [
+      "The_Old_Testament_in_Greek 4:5"
+     ]
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev19.18→john6.53",
+   "title": "Eat the flesh",
+   "family": "John: the signs reversed",
+   "seed": {
+    "loc": "gnt:Rev 19:18",
+    "text": "ἵνα φάγητε σάρκας βασιλέων καὶ σάρκας χιλιάρχων καὶ σάρκας ἰσχυρῶν καὶ σάρκας ἵππων καὶ τῶν καθημένων ἐπ’ αὐτῶν, καὶ σάρκας πάντων ἐλευθέρων τε καὶ δούλων καὶ μικρῶν καὶ μεγάλων.",
+    "members_found": {
+     "eat": true,
+     "flesh": true,
+     "kings": true
+    }
+   },
+   "members": {
+    "eat": {
+     "gloss": "that you may eat",
+     "greek": "φάγητε"
+    },
+    "flesh": {
+     "gloss": "the flesh",
+     "greek": "σάρκας"
+    },
+    "kings": {
+     "gloss": "of kings",
+     "greek": "βασιλέων"
+    },
+    "sonofman": {
+     "gloss": "of the Son of Man",
+     "greek": "τοῦ Υἱοῦ τοῦ ἀνθρώπου"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "eat",
+      "flesh",
+      "kings"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "eat",
+      "flesh",
+      "kings"
+     ],
+     "state": [
+      "eat",
+      "flesh",
+      "kings"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE-OBJECT",
+     "does": "keep the verb and its frame and change the object it acts on",
+     "old": "kings",
+     "new": "sonofman",
+     "state": [
+      "eat",
+      "flesh",
+      "sonofman"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "eat",
+     "flesh",
+     "sonofman"
+    ],
+    "dropped": [
+     "kings"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:John 6:53",
+    "text": "εἶπεν οὖν αὐτοῖς ὁ Ἰησοῦς Ἀμὴν ἀμὴν λέγω ὑμῖν, ἐὰν μὴ φάγητε τὴν σάρκα τοῦ Υἱοῦ τοῦ ἀνθρώπου καὶ πίητε αὐτοῦ τὸ αἷμα, οὐκ ἔχετε ζωὴν ἐν ἑαυτοῖς.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ιεζεκιηλ 39:18",
+     "text": "κρέα γιγάντων φάγεσθε, καὶ αἶμα ἀρχόντων τῆς γῆς πίεσθε, κριοὺς καὶ μόσχους καὶ τράγους, καὶ οἱ μόσχοι ἐστεατωμένοι πάντες.",
+     "checks": {
+      "kept members present": [
+       0,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "eat",
+      "flesh",
+      "sonofman"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Ezek 39:18"
+    },
+    {
+     "loc": "gnt:Mark 14:22",
+     "text": "Καὶ ἐσθιόντων αὐτῶν λαβὼν ἄρτον εὐλογήσας ἔκλασεν καὶ ἔδωκεν αὐτοῖς καὶ εἶπεν Λάβετε· τοῦτό ἐστιν τὸ σῶμά μου.",
+     "checks": {
+      "kept members present": [
+       0,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "eat",
+      "flesh",
+      "sonofman"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark: take, this is my body"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 6:53"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.2)"
+  },
+  {
+   "id": "rev16.4→john2.9",
+   "title": "Water become",
+   "family": "John: the signs reversed",
+   "seed": {
+    "loc": "gnt:Rev 16:4",
+    "text": "Καὶ ὁ τρίτος ἐξέχεεν τὴν φιάλην αὐτοῦ εἰς τοὺς ποταμοὺς καὶ τὰς πηγὰς τῶν ὑδάτων· καὶ ἐγένετο αἷμα.",
+    "members_found": {
+     "water": true,
+     "became": true,
+     "blood": true
+    }
+   },
+   "members": {
+    "water": {
+     "gloss": "the waters",
+     "greek": "τῶν ὑδάτων"
+    },
+    "became": {
+     "gloss": "became",
+     "greek": "ἐγένετο"
+    },
+    "blood": {
+     "gloss": "blood",
+     "greek": "αἷμα"
+    },
+    "wine": {
+     "gloss": "wine",
+     "greek": "οἶνον"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "water",
+      "became",
+      "blood"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE-OBJECT",
+     "does": "keep the verb and its frame and change the object it acts on",
+     "old": "blood",
+     "new": "wine",
+     "state": [
+      "water",
+      "became",
+      "wine"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "water",
+      "wine",
+      "became"
+     ],
+     "state": [
+      "water",
+      "wine",
+      "became"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "water",
+     "wine",
+     "became"
+    ],
+    "dropped": [
+     "blood"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:John 2:9",
+    "text": "ὡς δὲ ἐγεύσατο ὁ ἀρχιτρίκλινος τὸ ὕδωρ οἶνον γεγενημένον, καὶ οὐκ ᾔδει πόθεν ἐστίν, οἱ δὲ διάκονοι ᾔδεισαν οἱ ἠντληκότες τὸ ὕδωρ, φωνεῖ τὸν νυμφίον ὁ ἀρχιτρίκλινος",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Εξοδος 7:20",
+     "text": "καὶ ἐποίησαν οὕτως Μωυσῆς καὶ Ἀαρὼν καθάπερ ἐνετείλατο.ο αὐτοῖς Κύριος· καὶ ἐπάρας τῇ ῥάβδῳ αὐτοῦ ἐπάταξεν τὸ ὕδωρ τὸ ἐν AF Ο om καὶ τῶν θερ. αὐτοῦ F | ἔρριψεν AF | τῆ F 11 om Αἰγύπτου F Ι om καὶ 3° F AF 13 ἐνετείλατο] ἐλάλησεν AF | om αὐτοῖς F 14 εἶπεν δε] κα εἶπεν Α | βεβάρυνται F 15 ἔση] στήσῃ AF 16 μοι λατρευση] λατρευσωσιν μοι F 17 μεταβαλει] μεταβασ|λει Α 18 ὰπο] ἐκ F AF 10 om τὼ ἀδελφὼ σου F | om ἐν τῆ χειρὶ σου AF 1 (hab F*) Ι om καὶ ἐκ τὴν χεῖρα σου F* (hab F 1) | om σου ° Α | Αιγυπτου Ι°] του ποταμοῦ Α | πτου 2°] Αιγυπτω AF Ο κύριος αὐτοῖς F Ι ἐπάρας] + λάρων ῥάβδωι τὴν ῥάβδον Α ἐναντίον Φαραὼ καὶ ἐναντίον τῶν θεραπόντων αὐτοῦ, καὶ μετέβαλεν B πᾶν τὸ ὕδωρ τὸ ἐν τῷ ποταμῷ εἰς αἷμα.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "wine",
+      "became"
+     ],
+     "kept_but_should_be_dropped": [
+      "blood"
+     ],
+     "label": "Septuagint, Exod 7:20"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "John 2:9"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.2)"
+  },
+  {
+   "id": "philo.her219→rev1.12-13",
+   "title": "The lampstand and the one in the midst",
+   "family": "Philo → Revelation",
+   "seed": {
+    "loc": "philo:Quis_rerum_divinarum_heres_sit 219",
+    "text": "ὥστε διὰ πολλῶν ἤδη κατασκευάζεσθαι, ὅτι ἑξὰς εἰς δύο τριάδας ὑπὸ μέσου τοῦ ἑβδόμου λόγου διῄρηται, καθάπερ ἔχει νυνί· πᾶσα γὰρ ἡ λυχνία σὺν τοῖς ὁλοσχερεστάτοις μέρεσιν αὐτῆς, ἃ ἕξ ἐστιν, ἐπάγη, λαμπαδίων ἑπτά, ἀνθεμίων ἑπτά, λύχνων ἑπτά.",
+    "members_found": {
+     "middle": true,
+     "seventh": true,
+     "logos": true,
+     "lampstand": true
+    }
+   },
+   "members": {
+    "middle": {
+     "gloss": "the middle",
+     "greek": "ὑπὸ μέσου"
+    },
+    "seventh": {
+     "gloss": "the seventh",
+     "greek": "τοῦ ἑβδόμου"
+    },
+    "logos": {
+     "gloss": "the Logos",
+     "greek": "λόγου"
+    },
+    "lampstand": {
+     "gloss": "the lampstand",
+     "greek": "ἡ λυχνία"
+    },
+    "seven": {
+     "gloss": "seven",
+     "greek": "ἑπτά"
+    },
+    "lampstands": {
+     "gloss": "lampstands",
+     "greek": "λυχνίας, λυχνιῶν"
+    },
+    "sonofman": {
+     "gloss": "one like a son of man",
+     "greek": "ὅμοιον υἱὸν ἀνθρώπου"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "middle",
+      "seventh",
+      "logos",
+      "lampstand"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "seventh",
+     "new": "seven",
+     "state": [
+      "middle",
+      "seven",
+      "logos",
+      "lampstand"
+     ]
+    },
+    {
+     "op": "STATION",
+     "does": "make one into several, each answerable for itself (one lampstand of seven lamps into seven lampstands)",
+     "old": "lampstand",
+     "new": "lampstands",
+     "state": [
+      "middle",
+      "seven",
+      "logos",
+      "lampstands"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "logos",
+     "new": "sonofman",
+     "state": [
+      "middle",
+      "seven",
+      "sonofman",
+      "lampstands"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "seven",
+      "lampstands",
+      "middle",
+      "sonofman"
+     ],
+     "state": [
+      "seven",
+      "lampstands",
+      "middle",
+      "sonofman"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "seven",
+     "lampstands",
+     "middle",
+     "sonofman"
+    ],
+    "dropped": [
+     "seventh",
+     "lampstand",
+     "logos"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Rev 1:12-13",
+    "text": "Καὶ ἐπέστρεψα βλέπειν τὴν φωνὴν ἥτις ἐλάλει μετ’ ἐμοῦ· καὶ ἐπιστρέψας εἶδον ἑπτὰ λυχνίας χρυσᾶς, καὶ ἐν μέσῳ τῶν λυχνιῶν ὅμοιον υἱὸν ἀνθρώπου, ἐνδεδυμένον ποδήρη καὶ περιεζωσμένον πρὸς τοῖς μαστοῖς ζώνην χρυσᾶν·",
+    "checks": {
+     "kept members present": [
+      4,
+      4
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ζαχαριας 4:2",
+     "text": "καὶ εἶπεν πρὸς μέ Τί σὺ βλέπεις; καὶ εἶπα Ἑόρακα, καὶ ἰδοὺ λυχνία χρυσῆ ὅλη, καὶ τὸ λαμπάδιον ἐπάνω αὐτῆς, καὶ ἑπτὰ λύχνοι ἐπάνω αὐτῆς, καὶ ἑπτὰ ἐπαρυστρίδες τοῖς λύχνοις τοῖς ἐπάνω αὐτῆς,",
+     "checks": {
+      "kept members present": [
+       1,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       2,
+       3
+      ]
+     },
+     "score": 0.38,
+     "passes": false,
+     "missing": [
+      "lampstands",
+      "middle",
+      "sonofman"
+     ],
+     "kept_but_should_be_dropped": [
+      "lampstand"
+     ],
+     "label": "Septuagint, Zech 4:2"
+    },
+    {
+     "loc": "gnt:Heb 9:2",
+     "text": "σκηνὴ γὰρ κατεσκευάσθη ἡ πρώτη, ἐν ᾗ ἥ τε λυχνία καὶ ἡ τράπεζα καὶ ἡ πρόθεσις τῶν ἄρτων, ἥτις λέγεται Ἅγια·",
+     "checks": {
+      "kept members present": [
+       0,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       2,
+       3
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "seven",
+      "lampstands",
+      "middle",
+      "sonofman"
+     ],
+     "kept_but_should_be_dropped": [
+      "lampstand"
+     ],
+     "label": "Hebrews 9:2"
+    }
+   ],
+   "note": "#1758 §9, §11.1b; 17.1(i), (k). The Septuagint's lampstand and Hebrews' are one; the seven lampstands are the Apocalypse's.",
+   "records": [
+    1758
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7943,
+     "passing": 1,
+     "refs": [
+      "Rev 1:12"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.38)"
+  },
+  {
+   "id": "philo.deus75→rev2.17",
+   "title": "The vote",
+   "family": "Philo → Revelation",
+   "seed": {
+    "loc": "philo:Quod_deus_sit_immutabilis 75",
+    "text": "εἰ γὰρ βουληθείη ὁ θεὸς δικάσαι τῷ θνητῷ γένει χωρὶς ἐλέου, τὴν καταδικάζουσαν ψῆφον οἴσει μηδενὸς ἀνθρώπων τὸν ἀπὸ γενέσεως ἄχρι τελευτῆς βίον ἄπταιστον ἐξ ἑαυτοῦ δραμόντος, ἀλλὰ τὸ μὲν ἑκουσίοις, τὸ δὲ ἀκουσίοις χρησαμένου τοῖς ἐν ποσὶν ὀλισθήμασιν.",
+    "members_found": {
+     "condemning": true,
+     "vote": true,
+     "bring": true
+    }
+   },
+   "members": {
+    "condemning": {
+     "gloss": "condemning",
+     "greek": "καταδικάζουσαν"
+    },
+    "vote": {
+     "gloss": "vote",
+     "greek": "ψῆφον"
+    },
+    "bring": {
+     "gloss": "will bring",
+     "greek": "οἴσει"
+    },
+    "white": {
+     "gloss": "white",
+     "greek": "λευκήν"
+    },
+    "give": {
+     "gloss": "I will give",
+     "greek": "δώσω"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "condemning",
+      "vote",
+      "bring"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "condemning",
+     "new": "white",
+     "state": [
+      "white",
+      "vote",
+      "bring"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "bring",
+     "new": "give",
+     "state": [
+      "white",
+      "vote",
+      "give"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "give",
+      "vote",
+      "white"
+     ],
+     "state": [
+      "give",
+      "vote",
+      "white"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "give",
+     "vote",
+     "white"
+    ],
+    "dropped": [
+     "condemning",
+     "bring"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Rev 2:17",
+    "text": "Ὁ ἔχων οὖς ἀκουσάτω τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις. Τῷ νικῶντι δώσω αὐτῷ τοῦ μάννα τοῦ κεκρυμμένου, καὶ δώσω αὐτῷ ψῆφον λευκήν, καὶ ἐπὶ τὴν ψῆφον ὄνομα καινὸν γεγραμμένον, ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      2,
+      2
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Acts 26:10",
+     "text": "ὃ καὶ ἐποίησα ἐν Ἱεροσολύμοις, καὶ πολλούς τε τῶν ἁγίων ἐγὼ ἐν φυλακαῖς κατέκλεισα τὴν παρὰ τῶν ἀρχιερέων ἐξουσίαν λαβών, ἀναιρουμένων τε αὐτῶν κατήνεγκα ψῆφον,",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "give",
+      "white"
+     ],
+     "kept_but_should_be_dropped": [
+      "bring"
+     ],
+     "label": "Acts 26:10, the other ψῆφος of the New Testament"
+    }
+   ],
+   "note": "#1758 §7b.1, 7b.9; 17.1(q).",
+   "records": [
+    1758
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7943,
+     "passing": 1,
+     "refs": [
+      "Rev 2:17"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.33)"
+  },
+  {
+   "id": "philo.deus75→acts26.10",
+   "title": "The vote in Acts: Philo's form or Revelation's",
+   "family": "Philo → Revelation → downstream: which form",
+   "seed": {
+    "loc": "philo:Quod_deus_sit_immutabilis 75",
+    "text": "εἰ γὰρ βουληθείη ὁ θεὸς δικάσαι τῷ θνητῷ γένει χωρὶς ἐλέου, τὴν καταδικάζουσαν ψῆφον οἴσει μηδενὸς ἀνθρώπων τὸν ἀπὸ γενέσεως ἄχρι τελευτῆς βίον ἄπταιστον ἐξ ἑαυτοῦ δραμόντος, ἀλλὰ τὸ μὲν ἑκουσίοις, τὸ δὲ ἀκουσίοις χρησαμένου τοῖς ἐν ποσὶν ὀλισθήμασιν.",
+    "members_found": {
+     "vote": true,
+     "bring": true
+    }
+   },
+   "members": {
+    "vote": {
+     "gloss": "vote",
+     "greek": "ψῆφον"
+    },
+    "bring": {
+     "gloss": "bring (φέρω)",
+     "greek": "οἴσει"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "vote",
+      "bring"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "bring",
+      "vote"
+     ],
+     "state": [
+      "bring",
+      "vote"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "bring",
+     "vote"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Acts 26:10",
+    "text": "ὃ καὶ ἐποίησα ἐν Ἱεροσολύμοις, καὶ πολλούς τε τῶν ἁγίων ἐγὼ ἐν φυλακαῖς κατέκλεισα τὴν παρὰ τῶν ἀρχιερέων ἐξουσίαν λαβών, ἀναιρουμένων τε αὐτῶν κατήνεγκα ψῆφον,",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Rev 2:17",
+     "text": "Ὁ ἔχων οὖς ἀκουσάτω τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις. Τῷ νικῶντι δώσω αὐτῷ τοῦ μάννα τοῦ κεκρυμμένου, καὶ δώσω αὐτῷ ψῆφον λευκήν, καὶ ἐπὶ τὴν ψῆφον ὄνομα καινὸν γεγραμμένον, ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "bring"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Revelation's form (a white vote, given)"
+    }
+   ],
+   "note": "The test of 5.2: Acts has the vote in Philo's form, brought against, a vote of condemnation. It does not have Revelation's white vote. At this locus the arrow does not run through Revelation.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7943,
+     "passing": 1,
+     "refs": [
+      "Acts 26:10"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.33)"
+  },
+  {
+   "id": "philo.leg3.174-175→rev2.17",
+   "title": "The manna",
+   "family": "Philo → Revelation",
+   "seed": {
+    "loc": "philo:Legum_allegoriarum_libri_i_iii 174-175",
+    "text": "λέγει δὲ καὶ ἐν Δευτερονομίῳ· \"καὶ ἐκάκωσέ σε καὶ ἐλιμαγχόνησέ σε, καὶ ἐψώμισέ σε τὸ μάννα, ὃ οὐκ ᾔδεισαν οἱ πατέρες σου, ἵνα ἀναγγείλῃ σοι, ὅτι οὐκ ἐπ’ ἄρτῳ μόνῳ ζήσεται ἄνθρωπος, ἀλλ’ ἐπὶ παντὶ ῥήματι τῷ ἐκπορευομένῳ διὰ στόματος θεοῦ\" (Deut. 8, 3). ἡ κάκωσις αὕτη ἱλασμός ἐστι· καὶ γὰρ τῇ δεκάτῃ κακῶν ἡμῶν τὰς ψυχὰς ἱλάσκεται (Lev. 16, 30)· ὅταν γὰρ τὰ ἡδέα περισυλᾶται, δοκοῦμεν κακοῦσθαι, τὸ δ’ ἐστὶ πρὸς ἀλήθειαν ἵλεων τὸν θεὸν ἔχειν. περιποιεῖ δ’ ἡμῖν καὶ λιμόν, οὐκ ἀρετῆς, ἀλλὰ τὸν ἐκ πάθους καὶ κακίας συνιστάμενον· τεκμήριον δέ, διατρέφει γὰρ ἡμᾶς τῷ γενικωτάτῳ αὑτοῦ λόγῳ· τὸ γὰρ μάννα ἑρμηνεύεται „τί“, τοῦτό ἐστι τὸ γενικώτατον τῶν ὄντων· καὶ ὁ λόγος δὲ τοῦ θεοῦ ὑπεράνω παντός ἐστι τοῦ κόσμου καὶ πρεσβύτατος καὶ γενικώτατος τῶν ὅσα γέγονε. τοῦτον τὸν λόγον οὐκ ᾔδεισαν οἱ πατέρες, οὐχ οἱ πρὸς ἀλήθειαν, ἀλλ’ οἱ χρόνῳ πολιοὶ οἱ λέγοντες· \"δῶμεν ἀρχηγὸν καὶ ἀποστρέψωμεν εἰς“ 1 ante ᾦ lacunam indicavi 8 πήγνυται codd: πήγνυνται Mang. 16 Μώσεως codd. 17 δέδωκεν codd.: ἔδωκεν v 20 ἐλιμαγχώγνησε Η 21 ἀναγγείλῃ Mang.: ἀναγγείλωσι codd. 22 ἐπὶ] ἐν L τῶ addidi, cf. § 176 25 τὸ δ’ ἐστὶ scripsi: τόδ’ ἔστι codd. ἱέω codd. 28 αὑτοῦ codd. τὸ πάθος \"Αἴγυπτον\" (Num. 14, 4).",
+    "members_found": {
+     "manna": true,
+     "unknown": true,
+     "fathers": true
+    }
+   },
+   "members": {
+    "manna": {
+     "gloss": "the manna",
+     "greek": "τὸ μάννα"
+    },
+    "unknown": {
+     "gloss": "did not know",
+     "greek": "οὐκ ᾔδεισαν"
+    },
+    "fathers": {
+     "gloss": "the fathers",
+     "greek": "οἱ πατέρες"
+    },
+    "hidden": {
+     "gloss": "hidden",
+     "greek": "κεκρυμμένου"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "manna",
+      "unknown",
+      "fathers"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "manna",
+      "unknown"
+     ],
+     "state": [
+      "manna",
+      "unknown"
+     ]
+    },
+    {
+     "op": "HIDE",
+     "does": "what the source says is not known, the borrower says is hidden and promised",
+     "old": "unknown",
+     "new": "hidden",
+     "state": [
+      "manna",
+      "hidden"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "manna",
+     "hidden"
+    ],
+    "dropped": [
+     "fathers",
+     "unknown"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Rev 2:17",
+    "text": "Ὁ ἔχων οὖς ἀκουσάτω τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις. Τῷ νικῶντι δώσω αὐτῷ τοῦ μάννα τοῦ κεκρυμμένου, καὶ δώσω αὐτῷ ψῆφον λευκήν, καὶ ἐπὶ τὴν ψῆφον ὄνομα καινὸν γεγραμμένον, ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      2,
+      2
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Δευτερονομιον 8:3",
+     "text": "καὶ ἐκάκωσέν σε καὶ ἐλιμαγχόνησέν σε, καὶ ἐψώμισέν σε τὸ μάννα ὃ οὐκ εἴδησαν οἱ πατέρες σου· ἵνα ἀναγγείλῃ σοι ὅτι οὐκ ἐπ’ ἄρτῳ μόνῳ ζήσεται ὁ ἄνθρωπος, ἀλλ’ ἐπὶ παντὶ ῥήματι τῷ ἐκπορευομένῳ διὰ στόματος θεοῦ ζήσεται ὁ ἄνθρωπος.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "hidden"
+     ],
+     "kept_but_should_be_dropped": [
+      "fathers"
+     ],
+     "label": "Septuagint, Deut 8:3"
+    },
+    {
+     "loc": "gnt:John 6:31",
+     "text": "οἱ πατέρες ἡμῶν τὸ μάννα ἔφαγον ἐν τῇ ἐρήμῳ, καθώς ἐστιν γεγραμμένον Ἄρτον ἐκ τοῦ οὐρανοῦ ἔδωκεν αὐτοῖς φαγεῖν.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "hidden"
+     ],
+     "kept_but_should_be_dropped": [
+      "fathers"
+     ],
+     "label": "John 6:31"
+    }
+   ],
+   "note": "#1758 §7b.5.",
+   "records": [
+    1758
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7943,
+     "passing": 1,
+     "refs": [
+      "Rev 2:17"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.4)"
+  },
+  {
+   "id": "rev2.17→heb9.4",
+   "title": "The hidden manna, in the ark",
+   "family": "Philo → Revelation → downstream: which form",
+   "seed": {
+    "loc": "gnt:Rev 2:17",
+    "text": "Ὁ ἔχων οὖς ἀκουσάτω τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις. Τῷ νικῶντι δώσω αὐτῷ τοῦ μάννα τοῦ κεκρυμμένου, καὶ δώσω αὐτῷ ψῆφον λευκήν, καὶ ἐπὶ τὴν ψῆφον ὄνομα καινὸν γεγραμμένον, ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων.",
+    "members_found": {
+     "manna": true,
+     "hidden": true
+    }
+   },
+   "members": {
+    "manna": {
+     "gloss": "the manna",
+     "greek": "τοῦ μάννα"
+    },
+    "hidden": {
+     "gloss": "hidden",
+     "greek": "κεκρυμμένου"
+    },
+    "covered": {
+     "gloss": "covered on every side",
+     "greek": "περικεκαλυμμένην"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "manna",
+      "hidden"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "hidden",
+     "new": "covered",
+     "state": [
+      "manna",
+      "covered"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "covered",
+      "manna"
+     ],
+     "state": [
+      "covered",
+      "manna"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "covered",
+     "manna"
+    ],
+    "dropped": [
+     "hidden"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Heb 9:4",
+    "text": "χρυσοῦν ἔχουσα θυμιατήριον καὶ τὴν κιβωτὸν τῆς διαθήκης περικεκαλυμμένην πάντοθεν χρυσίῳ, ἐν ᾗ στάμνος χρυσῆ ἔχουσα τὸ μάννα καὶ ἡ ῥάβδος Ἀαρὼν ἡ βλαστήσασα καὶ αἱ πλάκες τῆς διαθήκης,",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:John 6:49",
+     "text": "οἱ πατέρες ὑμῶν ἔφαγον ἐν τῇ ἐρήμῳ τὸ μάννα καὶ ἀπέθανον·",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "covered"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "John 6:49"
+    },
+    {
+     "loc": "lxx:Εξοδος 16:33",
+     "text": "καὶ εἰπεν Μωσῆς πρὸς Λάβε Λάβε στάμνον χρυσοῦν ἕνα καὶ ἐμβάλετε εἰς αὐτὸν πλῆρες τὸ γόμορ μάν, καὶ ἀποθήσεις αὐτὸ ἐναντίον τοῦ θεοῦ εἰς διατήρησιν εἰς τὰς γενεὰς ὑμῶν,",
+     "checks": {
+      "kept members present": [
+       0,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.25,
+     "passes": false,
+     "missing": [
+      "covered",
+      "manna"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Exod 16:33"
+    }
+   ],
+   "note": "Hebrews has the manna inside a jar inside the ark, which is 'covered on every side'. The fathers of John 6:31 and 6:49 are Deuteronomy's and Philo's member, which Revelation dropped.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Heb 9:4"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 1,
+     "refs": [
+      "Ἀριθμοί 32:40"
+     ]
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "philo.mos2.114→rev19.12",
+   "title": "The name on the head",
+   "family": "Philo → Revelation",
+   "seed": {
+    "loc": "philo:De_vita_Mosis_lib_i_ii_ 114#2",
+    "text": "χρυσοῦν δὲ πέταλον ὡσανεὶ στέφανος ἐδημιουργεῖτο τέτταρας ἔχον γλυφὰς ὀνόματος, ὃ μόνοις τοῖς ὦτα καὶ γλῶτταν σοφίᾳ κεκαθαρμένοις θέμις ἀκούειν καὶ λέγειν ἐν ἁγίοις, ἄλλῳ δ’ οὐδενὶ τὸ παράπαν οὐδαμοῦ.",
+    "members_found": {
+     "crown": true,
+     "name": true,
+     "engraved": true,
+     "noother": true
+    }
+   },
+   "members": {
+    "crown": {
+     "gloss": "like a crown",
+     "greek": "ὡσανεὶ στέφανος"
+    },
+    "name": {
+     "gloss": "of a name",
+     "greek": "ὀνόματος"
+    },
+    "engraved": {
+     "gloss": "engravings",
+     "greek": "γλυφάς"
+    },
+    "noother": {
+     "gloss": "no other at all",
+     "greek": "ἄλλῳ δ’ οὐδενί"
+    },
+    "diadems": {
+     "gloss": "diadems",
+     "greek": "διαδήματα"
+    },
+    "written": {
+     "gloss": "written",
+     "greek": "γεγραμμένον"
+    },
+    "noone": {
+     "gloss": "no one knows but himself",
+     "greek": "οὐδεὶς οἶδεν"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "crown",
+      "engraved",
+      "name",
+      "noother"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "crown",
+     "new": "diadems",
+     "state": [
+      "diadems",
+      "engraved",
+      "name",
+      "noother"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "engraved",
+     "new": "written",
+     "state": [
+      "diadems",
+      "written",
+      "name",
+      "noother"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "noother",
+     "new": "noone",
+     "state": [
+      "diadems",
+      "written",
+      "name",
+      "noone"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "diadems",
+      "name",
+      "written",
+      "noone"
+     ],
+     "state": [
+      "diadems",
+      "name",
+      "written",
+      "noone"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "diadems",
+     "name",
+     "written",
+     "noone"
+    ],
+    "dropped": [
+     "crown",
+     "engraved",
+     "noother"
+    ],
+    "marker": null,
+    "negation_removed": false
+   },
+   "target": {
+    "loc": "gnt:Rev 19:12",
+    "text": "οἱ δὲ ὀφθαλμοὶ αὐτοῦ φλὸξ πυρός, καὶ ἐπὶ τὴν κεφαλὴν αὐτοῦ διαδήματα πολλά, ἔχων ὄνομα γεγραμμένον ὃ οὐδεὶς οἶδεν εἰ μὴ αὐτός,",
+    "checks": {
+     "kept members present": [
+      4,
+      4
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Rev 2:17",
+     "text": "Ὁ ἔχων οὖς ἀκουσάτω τί τὸ Πνεῦμα λέγει ταῖς ἐκκλησίαις. Τῷ νικῶντι δώσω αὐτῷ τοῦ μάννα τοῦ κεκρυμμένου, καὶ δώσω αὐτῷ ψῆφον λευκήν, καὶ ἐπὶ τὴν ψῆφον ὄνομα καινὸν γεγραμμένον, ὃ οὐδεὶς οἶδεν εἰ μὴ ὁ λαμβάνων.",
+     "checks": {
+      "kept members present": [
+       3,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.75,
+     "passes": false,
+     "missing": [
+      "diadems"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Rev 2:17, the new name"
+    },
+    {
+     "loc": "lxx:Εξοδος 28:32",
+     "text": "Καὶ ποιήσεις πέταλον χρυσοῦν καθαρόν, σφραγῖδος, ἁγίασμα κυρίου. καὶ ἐκτυπώσεις ἐν αὐτῷ ἐκτύπωμα σφραγῖδος, ἁγίασμα Κυρίου.",
+     "checks": {
+      "kept members present": [
+       0,
+       4
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       3,
+       3
+      ]
+     },
+     "score": 0.38,
+     "passes": false,
+     "missing": [
+      "diadems",
+      "name",
+      "written",
+      "noone"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Exod 28:32 (36)"
+    }
+   ],
+   "note": "#1758 §7b.3. Philo: 'four engravings of a name'. Rev 19:11–16 gives the rider four names.",
+   "records": [
+    1758
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7943,
+     "passing": 1,
+     "refs": [
+      "Rev 19:12"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.75)"
+  }
+ ]
+}

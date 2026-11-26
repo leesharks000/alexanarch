@@ -1,6 +1,6 @@
-# The Unfolding Map — working file v0.2
+# The Unfolding Map — working file v0.3
 
-26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
+26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
 
 The programme, in the author's words (12:35): "we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a seven within seven structure: the seven church pauline formation transformed from rev's seven churches, but then also paul as one of seven and the other named epistolary positions mapped to rev's seven." And (12:42, 12:45): Philo as guide, with other suppressed witnesses like Newton; the transform map opened to Philo's texts as a possible supplementary source.
 
@@ -107,6 +107,55 @@ Three of the eight come from three consecutive verses, Rev 18:21–23, the dirge
 
 2A.5. New operators from John, declared: REVERSE-DOER (the adversary's deed becomes the Christ's); UNDO (a judgment's "no more" becomes a presence); CITE-AS-SCRIPTURE (2.6).
 
+## 2B. The engine
+
+2B.1. What it is. `midrash.py`: a seed is read from the seat; its MEMBERS are named pieces of its wording; OPERATORS change the list of members in a declared order; the result is an EMISSION, a prediction of what the later text keeps, in what order, what it drops, what it substitutes, what it marks. The emission is scored against the seated target, against controls (the Septuagint source, the Synoptic parallel, the other half), and then against every verse of the seated New Testament (7,942) and Septuagint (28,933). Derivations are data (`derivations.py`), frozen by hash before the run. The page *Midrashim Transform Bench* runs the same derivations in the browser by a port of the engine; its scores agree with the Python run on all 24; an operator can be switched off there and the target watched to fail.
+
+2B.2. Twelve operators, declared: PARTITION, REORDER, SUBSTITUTE, SUBSTITUTE-OBJECT, TRANSFER-ATTRIBUTE, EVENT, CITE-AS-SCRIPTURE, REVERSE-DOER, UNDO, STATION, HIDE, ADD (unused so far). The first eight came from Matthew and the partitions; REVERSE-DOER and UNDO from John; STATION and HIDE from what Revelation does to Philo (#1758).
+
+2B.3. The run.
+
+| Derivation | | Operators | Target | Best control | NT verses that fit | LXX verses that fit |
+|---|---|---|---|---|---|---|
+| `rev1.7→matt24.30` | The mourning tribes | PARTITION → REORDER | 1.00 | 0.50 | 1 | 0 |
+| `rev1.7→john19.37` | They pierced | PARTITION → CITE-AS-SCRIPTURE | 1.00 | 0.29 | 1 | 0 |
+| `rev3.5→matt10.32` | The confession, Matthew's half | PARTITION | 1.00 | 0.25 | 1 | 0 |
+| `rev3.5→luke12.8` | The confession, Luke's half | PARTITION | 1.00 | 0.25 | 1 | 1 |
+| `rev19.9→matt22.3` | The wedding | PARTITION → REORDER | 1.00 | 0.25 | 2 | 0 |
+| `rev19.9→luke14.17` | The supper | PARTITION | 1.00 | 0.25 | 1 | 0 |
+| `rev5.2→mark1.7` | Who is worthy to loose: the stronger one | SUBSTITUTE → SUBSTITUTE-OBJECT → REORDER | 1.00 | 0.50 | 1 | 0 |
+| `rev5.2→john1.27` | Who is worthy to loose: worthy | PARTITION → SUBSTITUTE-OBJECT | 1.00 | 0.43 | 1 | 0 |
+| `rev3.3→matt24.43` | The thief, Matthew's half | SUBSTITUTE → REORDER | 1.00 | 0.20 | 1 | 0 |
+| `rev3.3→luke12.39` | The thief, Luke's half | PARTITION → REORDER | 1.00 | 0.25 | 1 | 0 |
+| `rev16.18+1.14→matt28.2-3` | The tomb | PARTITION → EVENT → TRANSFER-ATTRIBUTE | 1.00 | 0.29 | 1 | 0 |
+| `rev6.12→matt8.24` | The storm | EVENT | 1.00 | 0.00 | 2 | 0 |
+| `rev13.13-14→john2.11` | Who does the signs | REVERSE-DOER | 1.00 | 0.60 | 1 | 0 |
+| `rev18.23→john3.29` | The bridegroom's voice | UNDO → REORDER | 1.00 | 0.60 | 1 | 0 |
+| `rev18.23→john5.35` | The lamp | UNDO → REORDER | 1.00 | 0.60 | 1 | 0 |
+| `rev18.21→john11.41` | The stone | UNDO | 1.00 | 0.50 | 1 | 1 |
+| `rev19.18→john6.53` | Eat the flesh | PARTITION → SUBSTITUTE-OBJECT | 1.00 | 0.20 | 1 | 0 |
+| `rev16.4→john2.9` | Water become | SUBSTITUTE-OBJECT → REORDER | 1.00 | 0.20 | 1 | 0 |
+| `philo.her219→rev1.12-13` | The lampstand and the one in the midst | SUBSTITUTE → STATION → SUBSTITUTE → REORDER | 1.00 | 0.38 | 1 | 0 |
+| `philo.deus75→rev2.17` | The vote | SUBSTITUTE → SUBSTITUTE → REORDER | 1.00 | 0.33 | 1 | 0 |
+| `philo.deus75→acts26.10` | The vote in Acts: Philo's form or Revelation's | REORDER | 1.00 | 0.33 | 1 | 0 |
+| `philo.leg3.174-175→rev2.17` | The manna | PARTITION → HIDE | 1.00 | 0.40 | 1 | 0 |
+| `rev2.17→heb9.4` | The hidden manna, in the ark | SUBSTITUTE → REORDER | 1.00 | 0.50 | 1 | 1 |
+| `philo.mos2.114→rev19.12` | The name on the head | SUBSTITUTE → SUBSTITUTE → SUBSTITUTE → REORDER | 1.00 | 0.75 | 1 | 0 |
+
+2B.4. What the run shows. Every target fits its emission. No control fits: the best is 0.75 (the new name of Rev 2:17 against the emission for Rev 19:12), and the Septuagint sources score 0.14 to 0.60. In 22 of 24 derivations the emission fits exactly one verse of the New Testament, the target. The two exceptions are the wedding (Matt 22:3 and 22:4, one pericope) and the storm (Matt 8:24, and Rev 16:18, the Apocalypse's own second earthquake).
+
+2B.5. What it does not show. The derivations were written with the targets in view. A pass means the change from seed to target can be stated in twelve operators; it is the controls and the search that carry weight, and they say the statement is narrow. It is not a blind prediction. The blind form is the next operation: freeze the operators, take seeds not yet read against anything, enumerate the emissions the operators allow, and search; the hit rate against a shuffled seed is the measure.
+
+2B.6. Three Septuagint hits, read. Ps 137:1 fits Luke's half of the confession: ἐξομολογήσομαι … ἐναντίον ἀγγέλων. That is a real rival for the angels of Luke 12:8 and is recorded as one. The other two are seat noise: the Swete seat carries apparatus text inside some lines (Num 32:40), and one file has a mislabelled section. Both are defects of the seat to be repaired apart from this.
+
+2B.7. **Where Philo decides, and against the arrow.** Three loci where the downstream text has Philo's or the Septuagint's form and not Revelation's, found by running both:
+
+- ψῆφος stands twice in the New Testament. Rev 2:17 gives a white one. Acts 26:10 has κατήνεγκα ψῆφον, the vote brought against, Philo's verb and Philo's sense (Deus 75, τὴν καταδικάζουσαν ψῆφον οἴσει). Acts does not get its vote from Revelation.
+- The lampstand of Heb 9:2 is one. The seven lampstands are the Apocalypse's alone; the emission from Philo, Her. 219, through STATION fits Rev 1:12 and no other verse.
+- John 6:31 and 6:49 have "the fathers ate the manna": the fathers are Deuteronomy's and Philo's member (Leg. 3.174–175), which Rev 2:17 dropped. Hebrews 9:4 fits the emission from Rev 2:17 (the manna, covered on every side, inside the ark).
+
+So Rev 2:17, the promise to Pergamum, is itself a partition seed with Philo upstream: manna, vote and name. Hebrews takes the manna in Revelation's form; John takes it with a member Revelation does not have; Acts takes the vote in Philo's form. The two-column test of 5.2 works, and it cuts both ways.
+
 ## 3. The fourfold
 
 3.1. What the text fixes. The four creatures have an order (Rev 4:7): first like a lion, second like a calf, third with a face as of a human, fourth like an eagle flying. The four riders are called one by one by the four creatures (6:1–8): the second, third and fourth creature are numbered at the second, third and fourth seal; the first seal has "one of the four". So the pairing of creature and rider is given by the book, if "one of the four" is the first:
@@ -167,8 +216,11 @@ Not established there, and kept so here: the route (Philo's text or a tradition 
 
 5.5. **Melchizedek** (the author: "ive always thought the nag hammadi melchizedek epistle was older than its accounted"). NHC IX,1 is seated in Coptic (EA-CORPORA-02/15, `nhc-ix-melchizedek.txt`, 516 lines). It is not read here. It belongs on the map beside Hebrews 7 and Philo's Melchizedek (Leg. 3.79–82, from memory), as a third text holding a priest who is the Logos or stands for him, and it is a revelation delivered to its speaker. Operation owed: read it in the seat, and set its Melchizedek against Hebrews' and against the one in the midst of Rev 1.
 
+5.6. The engine runs Philo → Revelation in the same operators as Revelation → the Gospels (2B.3, the last six rows). Four chains are in: the lampstand and the one in the midst (Her. 219 → Rev 1:12–13); the vote (Deus 75 → Rev 2:17); the manna (Leg. 3.174–175 → Rev 2:17); the name on the head (Mos. 2.114 → Rev 19:12, where Philo's plate has "four engravings of a name" and the rider has four names). OFFICE (Her. 259 → Τάδε λέγει, γράψον) is not in: it has no shared wording for a member to hold, and the engine is an engine of wording.
+
 ## 6. Next operations, in order
 
+0. The blind run of 2B.5.
 1. Freeze the operators (2.6, 2.9, 2A.5), then count Matthew's departures from Mark: how many land on Revelation's wording, how many on the Septuagint's.
 2. The double tradition whole against Rev 1–3, 16:15, 19:9 and 22: three sayings now partition; #1747 asked for the census.
 3. The dirge (Rev 18) and the plagues (15–16) against John entire, by sense, with the pairing declared before it is scored.

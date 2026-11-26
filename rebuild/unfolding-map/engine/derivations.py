@@ -1,0 +1,98 @@
+"""The derivations, as data. Operators and members are declared here before the run; the file is frozen by its hash in the run's output.
+   python3 derivations.py > derivations.json"""
+import json, hashlib, pathlib
+def m(i, gloss, greek, rx, in_seed=True): return {"id": i, "gloss": gloss, "greek": greek, "rx": rx, "in_seed": in_seed}
+D = []
+def d(**k): D.append(k)
+ZECH, DAN = "lxx:Ζαχαριας 12:10", "lxx:Δανιηλ_(Theodotionis_versio) 7:13"
+R17 = [m("clouds", "with the clouds", "μετὰ τῶν νεφελῶν", r"νεφελ"), m("see", "will see", "ὄψεται", r"\bοψ(ε|ο)"), m("pierced", "they pierced", "ἐξεκέντησαν", r"εξεκεντ"),
+       m("mourn", "will mourn", "κόψονται", r"κοψ"), m("tribes", "all the tribes of the earth", "πᾶσαι αἱ φυλαὶ τῆς γῆς", r"φυλαι τησ γησ")]
+d(id="rev1.7→matt24.30", family="Gospels: partition", title="The mourning tribes", seed="gnt:Rev 1:7", members=R17, target="gnt:Matt 24:30",
+  steps=[{"op": "PARTITION", "keep": ["clouds", "see", "mourn", "tribes"]}, {"op": "REORDER", "order": ["mourn", "tribes", "see", "clouds"]}],
+  controls=[{"loc": "gnt:Mark 13:26", "label": "Mark's parallel"}, {"loc": ZECH, "label": "Septuagint, Zech 12:10"}, {"loc": DAN, "label": "Septuagint, Dan 7:13 (Theodotion)"}], records=[1746, 1747])
+d(id="rev1.7→john19.37", family="Gospels: partition", title="They pierced", seed="gnt:Rev 1:7", members=R17, target="gnt:John 19:37",
+  steps=[{"op": "PARTITION", "keep": ["see", "pierced"]}, {"op": "CITE-AS-SCRIPTURE", "marker": r"γραφη|γεγραπται"}],
+  controls=[{"loc": ZECH, "label": "Septuagint, Zech 12:10"}, {"loc": "gnt:Matt 24:30", "label": "Matthew's half"}])
+R35 = [m("confess", "I will confess", "ὁμολογήσω", r"ομολογησ"), m("father", "before my Father", "τοῦ Πατρός μου", r"πατροσ μου"), m("angels", "before the angels", "τῶν ἀγγέλων", r"αγγελων")]
+d(id="rev3.5→matt10.32", family="Gospels: partition", title="The confession, Matthew's half", seed="gnt:Rev 3:5", members=R35, target="gnt:Matt 10:32",
+  steps=[{"op": "PARTITION", "keep": ["confess", "father"]}], controls=[{"loc": "gnt:Luke 12:8", "label": "Luke's half"}], records=[1747])
+d(id="rev3.5→luke12.8", family="Gospels: partition", title="The confession, Luke's half", seed="gnt:Rev 3:5", members=R35, target="gnt:Luke 12:8",
+  steps=[{"op": "PARTITION", "keep": ["confess", "angels"]}], controls=[{"loc": "gnt:Matt 10:32", "label": "Matthew's half"}], records=[1747])
+R199 = [m("supper", "the supper", "τὸ δεῖπνον", r"δειπν"), m("wedding", "of the wedding", "τοῦ γάμου", r"γαμ"), m("called", "those called", "κεκλημένοι", r"κεκλημεν")]
+d(id="rev19.9→matt22.3", family="Gospels: partition", title="The wedding", seed="gnt:Rev 19:9", members=R199, target="gnt:Matt 22:3",
+  steps=[{"op": "PARTITION", "keep": ["wedding", "called"]}, {"op": "REORDER", "order": ["called", "wedding"]}], controls=[{"loc": "gnt:Luke 14:17", "label": "Luke's half"}])
+d(id="rev19.9→luke14.17", family="Gospels: partition", title="The supper", seed="gnt:Rev 19:9", members=R199, target="gnt:Luke 14:17",
+  steps=[{"op": "PARTITION", "keep": ["supper", "called"]}], controls=[{"loc": "gnt:Matt 22:3", "label": "Matthew's half"}])
+R52 = [m("strong", "strong", "ἰσχυρόν", r"ισχυρ"), m("proclaim", "proclaiming", "κηρύσσοντα", r"κηρυσσ"), m("worthy", "worthy", "ἄξιος", r"αξιοσ"), m("loose", "to loose", "λῦσαι", r"\bλυσ(αι|ω)"),
+       m("seals", "its seals", "τὰς σφραγῖδας", r"σφραγιδ"), m("fit", "fit", "ἱκανός", r"ικανοσ", False), m("strap", "the strap of his sandal", "τὸν ἱμάντα", r"ιμαντα", False)]
+d(id="rev5.2→mark1.7", family="Gospels: partition", title="Who is worthy to loose: the stronger one", seed="gnt:Rev 5:2", members=R52, target="gnt:Mark 1:7",
+  steps=[{"op": "SUBSTITUTE", "old": "worthy", "new": "fit"}, {"op": "SUBSTITUTE-OBJECT", "old": "seals", "new": "strap"}, {"op": "REORDER", "order": ["proclaim", "strong", "fit", "loose", "strap"]}],
+  controls=[{"loc": "gnt:John 1:27", "label": "John's half"}, {"loc": "gnt:Matt 3:11", "label": "Matthew's parallel"}], records=[639])
+d(id="rev5.2→john1.27", family="Gospels: partition", title="Who is worthy to loose: worthy", seed="gnt:Rev 5:2", members=R52, target="gnt:John 1:27",
+  steps=[{"op": "PARTITION", "keep": ["worthy", "loose", "seals"]}, {"op": "SUBSTITUTE-OBJECT", "old": "seals", "new": "strap"}], controls=[{"loc": "gnt:Mark 1:7", "label": "Mark's half"}])
+R33 = [m("watch", "watch", "γρηγορήσῃς", r"γρηγορ"), m("thief", "as a thief", "ὡς κλέπτης", r"κλεπτ"), m("hour", "what hour", "ποίαν ὥραν", r"ποια\w? ωρα"), m("nightwatch", "in what watch of the night", "ποίᾳ φυλακῇ", r"ποια φυλακη", False)]
+d(id="rev3.3→matt24.43", family="Gospels: partition", title="The thief, Matthew's half", seed="gnt:Rev 3:3", members=R33, target="gnt:Matt 24:43",
+  steps=[{"op": "SUBSTITUTE", "old": "hour", "new": "nightwatch"}, {"op": "REORDER", "order": ["nightwatch", "thief", "watch"]}], controls=[{"loc": "gnt:Luke 12:39", "label": "Luke's half"}], records=[1747])
+d(id="rev3.3→luke12.39", family="Gospels: partition", title="The thief, Luke's half", seed="gnt:Rev 3:3", members=R33, target="gnt:Luke 12:39",
+  steps=[{"op": "PARTITION", "keep": ["thief", "hour"]}, {"op": "REORDER", "order": ["hour", "thief"]}], controls=[{"loc": "gnt:Matt 24:43", "label": "Matthew's half"}], records=[1747])
+d(id="rev16.18+1.14→matt28.2-3", family="Gospels: Matthew against Mark", title="The tomb", seed="gnt:Rev 16:18 + Rev 1:14",
+  members=[m("quake", "an earthquake", "σεισμός", r"σεισμοσ"), m("happened", "there was", "ἐγένετο", r"εγενετο"), m("great", "great", "μέγας", r"μεγασ"), m("hair", "his hair", "αἱ τρίχες", r"τριχεσ"),
+           m("snow", "white as snow", "λευκὸν ὡς χιών", r"λευκον ωσ χιων"), m("clothing", "his clothing", "τὸ ἔνδυμα", r"ενδυμα", False)],
+  steps=[{"op": "PARTITION", "keep": ["quake", "happened", "great", "hair", "snow"]}, {"op": "EVENT"}, {"op": "TRANSFER-ATTRIBUTE", "old": "hair", "new": "clothing"}], target="gnt:Matt 28:2-3",
+  controls=[{"loc": "gnt:Mark 16:4-5", "label": "Mark's tomb"}, {"loc": "gnt:Luke 24:2-4", "label": "Luke's tomb"}, {"loc": DAN.replace("7:13", "7:9"), "label": "Septuagint, Dan 7:9"}],
+  note="The seed is two verses from two places of the Apocalypse; Matthew has them in two consecutive verses. Rev 16:18 has other words between the three kept here.")
+d(id="rev6.12→matt8.24", family="Gospels: Matthew against Mark", title="The storm", seed="gnt:Rev 6:12",
+  members=[m("quake", "an earthquake", "σεισμός", r"σεισμοσ"), m("great", "great", "μέγας", r"μεγασ"), m("happened", "there was", "ἐγένετο", r"εγενετο")],
+  steps=[{"op": "EVENT"}], target="gnt:Matt 8:24", controls=[{"loc": "gnt:Mark 4:37", "label": "Mark's storm"}, {"loc": "gnt:Luke 8:23", "label": "Luke's storm"}])
+d(id="rev13.13-14→john2.11", family="John: the signs reversed", title="Who does the signs", seed="gnt:Rev 13:13-14",
+  members=[m("does", "does", "ποιεῖ", r"\bποιει\b|εποιησεν"), m("signs", "signs", "σημεῖα", r"σημει"), m("beast", "before the beast", "τοῦ θηρίου", r"θηρι"), m("jesus", "Jesus", "ὁ Ἰησοῦς", r"ιησουσ", False)],
+  steps=[{"op": "REVERSE-DOER", "old": "beast", "new": "jesus"}], target="gnt:John 2:11", controls=[{"loc": "gnt:Mark 13:22", "label": "Mark: false prophets will give signs"}],
+  note="In Revelation every sign that is done is the adversary's (13:13, 13:14, 16:14, 19:20); the seven plagues are a sign seen (15:1).")
+JER = "lxx:Ιερεμιας 25:10"
+d(id="rev18.23→john3.29", family="John: the signs reversed", title="The bridegroom's voice", seed="gnt:Rev 18:23",
+  members=[m("voice", "the voice", "φωνή", r"φων"), m("groom", "of the bridegroom", "νυμφίου", r"νυμφιου"), m("heard", "heard", "ἀκουσθῇ", r"ακου")],
+  steps=[{"op": "UNDO", "negation": r"ου μη ακουσθη"}, {"op": "REORDER", "order": ["heard", "voice", "groom"]}], target="gnt:John 3:29", controls=[{"loc": JER, "label": "Septuagint, Jer 25:10"}, {"loc": "gnt:Matt 9:15", "label": "Matthew: the bridegroom taken away"}])
+d(id="rev18.23→john5.35", family="John: the signs reversed", title="The lamp", seed="gnt:Rev 18:23",
+  members=[m("light", "light", "φῶς", r"\bφω(σ|τι)\b"), m("lamp", "of a lamp", "λύχνου", r"λυχν"), m("shine", "shine", "φάνῃ", r"\bφα(νη|ινων|ινει)")],
+  steps=[{"op": "UNDO", "negation": r"ου μη φανη"}, {"op": "REORDER", "order": ["lamp", "shine", "light"]}], target="gnt:John 5:35", controls=[{"loc": JER, "label": "Septuagint, Jer 25:10"}, {"loc": "gnt:Matt 5:15", "label": "Matthew: the lamp on the stand"}])
+d(id="rev18.21→john11.41", family="John: the signs reversed", title="The stone", seed="gnt:Rev 18:21",
+  members=[m("took", "took up", "ἦρεν", r"\bηρ(ε|α)ν\b"), m("stone", "a stone", "λίθον", r"λιθον")],
+  steps=[{"op": "UNDO", "negation": r"ου μη ευρεθη ετι"}], target="gnt:John 11:41", controls=[{"loc": "gnt:Mark 16:4", "label": "Mark: the stone rolled back"}, {"loc": "lxx:Ιερεμιας 28:63", "label": "Septuagint, Jer 28:63 (51:63)"}])
+d(id="rev19.18→john6.53", family="John: the signs reversed", title="Eat the flesh", seed="gnt:Rev 19:18",
+  members=[m("eat", "that you may eat", "φάγητε", r"φαγητε"), m("flesh", "the flesh", "σάρκας", r"σαρκα"), m("kings", "of kings", "βασιλέων", r"βασιλεων"), m("sonofman", "of the Son of Man", "τοῦ Υἱοῦ τοῦ ἀνθρώπου", r"υιου του ανθρωπου", False)],
+  steps=[{"op": "PARTITION", "keep": ["eat", "flesh", "kings"]}, {"op": "SUBSTITUTE-OBJECT", "old": "kings", "new": "sonofman"}], target="gnt:John 6:53",
+  controls=[{"loc": "lxx:Ιεζεκιηλ 39:18", "label": "Septuagint, Ezek 39:18"}, {"loc": "gnt:Mark 14:22", "label": "Mark: take, this is my body"}])
+d(id="rev16.4→john2.9", family="John: the signs reversed", title="Water become", seed="gnt:Rev 16:4",
+  members=[m("water", "the waters", "τῶν ὑδάτων", r"υδ(ατ|ωρ)"), m("became", "became", "ἐγένετο", r"εγενετο|γεγενημεν"), m("blood", "blood", "αἷμα", r"\bαιμα"), m("wine", "wine", "οἶνον", r"οινον", False)],
+  steps=[{"op": "SUBSTITUTE-OBJECT", "old": "blood", "new": "wine"}, {"op": "REORDER", "order": ["water", "wine", "became"]}], target="gnt:John 2:9", controls=[{"loc": "lxx:Εξοδος 7:20", "label": "Septuagint, Exod 7:20"}])
+# Philo upstream, and through Revelation
+d(id="philo.her219→rev1.12-13", family="Philo → Revelation", title="The lampstand and the one in the midst", seed="philo:Quis_rerum_divinarum_heres_sit 219",
+  members=[m("middle", "the middle", "ὑπὸ μέσου", r"\bμεσ(ου|ω)\b"), m("seventh", "the seventh", "τοῦ ἑβδόμου", r"εβδομ"), m("logos", "the Logos", "λόγου", r"\bλογου"), m("lampstand", "the lampstand", "ἡ λυχνία", r"\bλυχνια\b"),
+           m("seven", "seven", "ἑπτά", r"\bεπτα\b", False), m("lampstands", "lampstands", "λυχνίας, λυχνιῶν", r"λυχνι(ασ|ων)\b", False), m("sonofman", "one like a son of man", "ὅμοιον υἱὸν ἀνθρώπου", r"υιον ανθρωπου", False)],
+  steps=[{"op": "SUBSTITUTE", "old": "seventh", "new": "seven"}, {"op": "STATION", "old": "lampstand", "new": "lampstands"}, {"op": "SUBSTITUTE", "old": "logos", "new": "sonofman"}, {"op": "REORDER", "order": ["seven", "lampstands", "middle", "sonofman"]}],
+  target="gnt:Rev 1:12-13", controls=[{"loc": "lxx:Ζαχαριας 4:2", "label": "Septuagint, Zech 4:2"}, {"loc": "gnt:Heb 9:2", "label": "Hebrews 9:2"}], records=[1758],
+  note="#1758 §9, §11.1b; 17.1(i), (k). The Septuagint's lampstand and Hebrews' are one; the seven lampstands are the Apocalypse's.")
+d(id="philo.deus75→rev2.17", family="Philo → Revelation", title="The vote", seed="philo:Quod_deus_sit_immutabilis 75",
+  members=[m("condemning", "condemning", "καταδικάζουσαν", r"καταδικαζ"), m("vote", "vote", "ψῆφον", r"ψηφον"), m("bring", "will bring", "οἴσει", r"\bοισει\b|ηνεγκ"), m("white", "white", "λευκήν", r"λευκην", False), m("give", "I will give", "δώσω", r"δωσω", False)],
+  steps=[{"op": "SUBSTITUTE", "old": "condemning", "new": "white"}, {"op": "SUBSTITUTE", "old": "bring", "new": "give"}, {"op": "REORDER", "order": ["give", "vote", "white"]}],
+  target="gnt:Rev 2:17", controls=[{"loc": "gnt:Acts 26:10", "label": "Acts 26:10, the other ψῆφος of the New Testament"}], records=[1758], note="#1758 §7b.1, 7b.9; 17.1(q).")
+d(id="philo.deus75→acts26.10", family="Philo → Revelation → downstream: which form", title="The vote in Acts: Philo's form or Revelation's", seed="philo:Quod_deus_sit_immutabilis 75",
+  members=[m("vote", "vote", "ψῆφον", r"ψηφον"), m("bring", "bring (φέρω)", "οἴσει", r"\bοισει\b|ηνεγκ")], steps=[{"op": "REORDER", "order": ["bring", "vote"]}],
+  target="gnt:Acts 26:10", controls=[{"loc": "gnt:Rev 2:17", "label": "Revelation's form (a white vote, given)"}],
+  note="The test of 5.2: Acts has the vote in Philo's form, brought against, a vote of condemnation. It does not have Revelation's white vote. At this locus the arrow does not run through Revelation.")
+d(id="philo.leg3.174-175→rev2.17", family="Philo → Revelation", title="The manna", seed="philo:Legum_allegoriarum_libri_i_iii 174-175",
+  members=[m("manna", "the manna", "τὸ μάννα", r"μαννα"), m("unknown", "did not know", "οὐκ ᾔδεισαν", r"ουκ ηδεισαν"), m("fathers", "the fathers", "οἱ πατέρες", r"πατερεσ"), m("hidden", "hidden", "κεκρυμμένου", r"κεκρυμμεν", False)],
+  steps=[{"op": "PARTITION", "keep": ["manna", "unknown"]}, {"op": "HIDE", "old": "unknown", "new": "hidden"}], target="gnt:Rev 2:17",
+  controls=[{"loc": "lxx:Δευτερονομιον 8:3", "label": "Septuagint, Deut 8:3"}, {"loc": "gnt:John 6:31", "label": "John 6:31"}], records=[1758], note="#1758 §7b.5.")
+d(id="rev2.17→heb9.4", family="Philo → Revelation → downstream: which form", title="The hidden manna, in the ark", seed="gnt:Rev 2:17",
+  members=[m("manna", "the manna", "τοῦ μάννα", r"μαννα"), m("hidden", "hidden", "κεκρυμμένου", r"κεκρυμμεν"), m("covered", "covered on every side", "περικεκαλυμμένην", r"περικεκαλυμμεν", False)],
+  steps=[{"op": "SUBSTITUTE", "old": "hidden", "new": "covered"}, {"op": "REORDER", "order": ["covered", "manna"]}], target="gnt:Heb 9:4",
+  controls=[{"loc": "gnt:John 6:49", "label": "John 6:49"}, {"loc": "lxx:Εξοδος 16:33", "label": "Septuagint, Exod 16:33"}],
+  note="Hebrews has the manna inside a jar inside the ark, which is 'covered on every side'. The fathers of John 6:31 and 6:49 are Deuteronomy's and Philo's member, which Revelation dropped.")
+d(id="philo.mos2.114→rev19.12", family="Philo → Revelation", title="The name on the head", seed="philo:De_vita_Mosis_lib_i_ii_ 114#2",
+  members=[m("crown", "like a crown", "ὡσανεὶ στέφανος", r"στεφανοσ"), m("name", "of a name", "ὀνόματος", r"ονομα"), m("engraved", "engravings", "γλυφάς", r"γλυφασ"), m("noother", "no other at all", "ἄλλῳ δ’ οὐδενί", r"ουδενι"),
+           m("diadems", "diadems", "διαδήματα", r"διαδηματα", False), m("written", "written", "γεγραμμένον", r"γεγραμμεν", False), m("noone", "no one knows but himself", "οὐδεὶς οἶδεν", r"ουδεισ οιδεν", False)],
+  steps=[{"op": "SUBSTITUTE", "old": "crown", "new": "diadems"}, {"op": "SUBSTITUTE", "old": "engraved", "new": "written"}, {"op": "SUBSTITUTE", "old": "noother", "new": "noone"}, {"op": "REORDER", "order": ["diadems", "name", "written", "noone"]}],
+  target="gnt:Rev 19:12", controls=[{"loc": "gnt:Rev 2:17", "label": "Rev 2:17, the new name"}, {"loc": "lxx:Εξοδος 28:32", "label": "Septuagint, Exod 28:32 (36)"}], records=[1758], note="#1758 §7b.3. Philo: 'four engravings of a name'. Rev 19:11–16 gives the rider four names.")
+src = json.dumps(D, ensure_ascii=False, sort_keys=True)
+print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))
