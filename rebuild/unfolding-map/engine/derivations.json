@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "0287441240eaad9344a6b1d39f42a525c4d7e639ee82768290288f599f9208bc",
+  "sha256_of_derivations": "cbd282f40a8e62c5febdbd04ec5868aa6826e40621aed90d3b879496d3dc128b",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -2537,6 +2537,438 @@
     {
      "loc": "gnt:Acts 21:40",
      "label": "Acts 21:40"
+    }
+   ]
+  },
+  {
+   "id": "rev21.1→2pet3.13",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "New heavens and a new earth, as promised",
+   "seed": "gnt:Rev 21:1",
+   "members": [
+    {
+     "id": "saw",
+     "gloss": "I saw",
+     "greek": "εἶδον",
+     "rx": "\\bειδον",
+     "in_seed": true
+    },
+    {
+     "id": "heaven",
+     "gloss": "a new heaven",
+     "greek": "οὐρανὸν καινόν",
+     "rx": "ουραν",
+     "in_seed": true
+    },
+    {
+     "id": "earth",
+     "gloss": "and a new earth",
+     "greek": "γῆν καινήν",
+     "rx": "γην καινην",
+     "in_seed": true
+    }
+   ],
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "heaven",
+      "earth"
+     ]
+    },
+    {
+     "op": "CITE-AS-SCRIPTURE",
+     "marker": "επαγγελμα|γεγραπται"
+    }
+   ],
+   "target": "gnt:2Pet 3:13",
+   "controls": [
+    {
+     "loc": "lxx:Ησαιας 65:17",
+     "label": "Septuagint, Isa 65:17"
+    },
+    {
+     "loc": "lxx:Ησαιας 66:22",
+     "label": "Septuagint, Isa 66:22"
+    }
+   ],
+   "records": [
+    1418
+   ]
+  },
+  {
+   "id": "rev3.3→2pet3.10",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "Will come as a thief",
+   "seed": "gnt:Rev 3:3",
+   "members": [
+    {
+     "id": "watch",
+     "gloss": "watch",
+     "greek": "γρηγορήσῃς",
+     "rx": "γρηγορ",
+     "in_seed": true
+    },
+    {
+     "id": "come",
+     "gloss": "I will come",
+     "greek": "ἥξω",
+     "rx": "\\bηξ(ω|ει)\\b",
+     "in_seed": true
+    },
+    {
+     "id": "thief",
+     "gloss": "as a thief",
+     "greek": "ὡς κλέπτης",
+     "rx": "ωσ κλεπτησ",
+     "in_seed": true
+    },
+    {
+     "id": "hour",
+     "gloss": "what hour",
+     "greek": "ποίαν ὥραν",
+     "rx": "ποια\\w? ωρα",
+     "in_seed": true
+    }
+   ],
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "come",
+      "thief"
+     ]
+    }
+   ],
+   "target": "gnt:2Pet 3:10",
+   "controls": [
+    {
+     "loc": "gnt:1Thess 5:2",
+     "label": "1 Thessalonians 5:2 (ἔρχεται)"
+    },
+    {
+     "loc": "gnt:Matt 24:43",
+     "label": "Matthew's half"
+    }
+   ]
+  },
+  {
+   "id": "rev5.13→1tim6.16",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "Honour and might",
+   "seed": "gnt:Rev 5:13",
+   "members": [
+    {
+     "id": "blessing",
+     "gloss": "blessing",
+     "greek": "ἡ εὐλογία",
+     "rx": "ευλογια",
+     "in_seed": true
+    },
+    {
+     "id": "honour",
+     "gloss": "honour",
+     "greek": "ἡ τιμή",
+     "rx": "\\bτιμη\\b",
+     "in_seed": true
+    },
+    {
+     "id": "glory",
+     "gloss": "glory",
+     "greek": "ἡ δόξα",
+     "rx": "\\bδοξα\\b",
+     "in_seed": true
+    },
+    {
+     "id": "might",
+     "gloss": "might",
+     "greek": "τὸ κράτος",
+     "rx": "κρατοσ",
+     "in_seed": true
+    },
+    {
+     "id": "ages",
+     "gloss": "to the ages",
+     "greek": "εἰς τοὺς αἰῶνας",
+     "rx": "αιων",
+     "in_seed": true
+    }
+   ],
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "honour",
+      "might",
+      "ages"
+     ]
+    }
+   ],
+   "target": "gnt:1Tim 6:16",
+   "controls": [
+    {
+     "loc": "gnt:Rom 16:27",
+     "label": "Romans 16:27"
+    },
+    {
+     "loc": "gnt:Gal 1:5",
+     "label": "Galatians 1:5"
+    }
+   ]
+  },
+  {
+   "id": "rev1.6→jude25",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "Glory and might, to the ages, amen",
+   "seed": "gnt:Rev 1:6",
+   "members": [
+    {
+     "id": "glory",
+     "gloss": "glory",
+     "greek": "ἡ δόξα",
+     "rx": "\\bδοξα\\b",
+     "in_seed": true
+    },
+    {
+     "id": "might",
+     "gloss": "might",
+     "greek": "τὸ κράτος",
+     "rx": "κρατοσ",
+     "in_seed": true
+    },
+    {
+     "id": "ages",
+     "gloss": "to the ages",
+     "greek": "εἰς τοὺς αἰῶνας",
+     "rx": "αιωνασ",
+     "in_seed": true
+    },
+    {
+     "id": "amen",
+     "gloss": "amen",
+     "greek": "ἀμήν",
+     "rx": "αμην",
+     "in_seed": true
+    },
+    {
+     "id": "majesty",
+     "gloss": "majesty",
+     "greek": "μεγαλωσύνη",
+     "rx": "μεγαλωσυνη",
+     "in_seed": false
+    }
+   ],
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "glory",
+      "might",
+      "ages",
+      "amen"
+     ]
+    },
+    {
+     "op": "ADD",
+     "new": "majesty",
+     "at": 1
+    }
+   ],
+   "target": "gnt:Jude 1:25",
+   "controls": [
+    {
+     "loc": "gnt:Rom 11:36",
+     "label": "Romans 11:36"
+    },
+    {
+     "loc": "gnt:Phil 4:20",
+     "label": "Philippians 4:20"
+    }
+   ]
+  },
+  {
+   "id": "rev12.7→jude9",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "Michael and the adversary",
+   "seed": "gnt:Rev 12:7",
+   "members": [
+    {
+     "id": "war",
+     "gloss": "war",
+     "greek": "πόλεμος",
+     "rx": "πολεμ",
+     "in_seed": true
+    },
+    {
+     "id": "michael",
+     "gloss": "Michael",
+     "greek": "ὁ Μιχαήλ",
+     "rx": "μιχαηλ",
+     "in_seed": true
+    },
+    {
+     "id": "dragon",
+     "gloss": "the dragon",
+     "greek": "τοῦ δράκοντος",
+     "rx": "δρακ",
+     "in_seed": true
+    },
+    {
+     "id": "devil",
+     "gloss": "the devil",
+     "greek": "τῷ διαβόλῳ",
+     "rx": "διαβολ",
+     "in_seed": false
+    },
+    {
+     "id": "dispute",
+     "gloss": "disputing",
+     "greek": "διακρινόμενος",
+     "rx": "διακρινομεν",
+     "in_seed": false
+    }
+   ],
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "war",
+      "michael",
+      "dragon"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "old": "dragon",
+     "new": "devil"
+    },
+    {
+     "op": "SUBSTITUTE",
+     "old": "war",
+     "new": "dispute"
+    },
+    {
+     "op": "REORDER",
+     "order": [
+      "michael",
+      "devil",
+      "dispute"
+     ]
+    }
+   ],
+   "target": "gnt:Jude 1:9",
+   "controls": [
+    {
+     "loc": "lxx:Ζαχαριας 3:2",
+     "label": "Septuagint, Zech 3:2"
+    }
+   ],
+   "note": "Rev 12:9 names the dragon: 'who is called the devil'. Michael is named in the New Testament here and at Rev 12:7 only."
+  },
+  {
+   "id": "rev2.10→2tim4.8",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "The crown, given",
+   "seed": "gnt:Rev 2:10",
+   "members": [
+    {
+     "id": "give",
+     "gloss": "I will give",
+     "greek": "δώσω",
+     "rx": "δωσ",
+     "in_seed": true
+    },
+    {
+     "id": "crown",
+     "gloss": "the crown",
+     "greek": "τὸν στέφανον",
+     "rx": "στεφαν",
+     "in_seed": true
+    },
+    {
+     "id": "life",
+     "gloss": "of life",
+     "greek": "τῆς ζωῆς",
+     "rx": "τησ ζωησ",
+     "in_seed": true
+    },
+    {
+     "id": "right",
+     "gloss": "of righteousness",
+     "greek": "τῆς δικαιοσύνης",
+     "rx": "τησ δικαιοσυνησ",
+     "in_seed": false
+    }
+   ],
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "give",
+      "crown",
+      "life"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE-OBJECT",
+     "old": "life",
+     "new": "right"
+    },
+    {
+     "op": "REORDER",
+     "order": [
+      "right",
+      "crown",
+      "give"
+     ]
+    }
+   ],
+   "target": "gnt:2Tim 4:8",
+   "controls": [
+    {
+     "loc": "gnt:Jas 1:12",
+     "label": "James 1:12 (the crown of life, kept)"
+    },
+    {
+     "loc": "gnt:1Cor 9:25",
+     "label": "1 Corinthians 9:25"
+    }
+   ],
+   "records": [
+    1414
+   ]
+  },
+  {
+   "id": "rev19.16→1tim6.15",
+   "family": "Letters the received chronology dates after Revelation",
+   "title": "King of kings and Lord of lords",
+   "seed": "gnt:Rev 19:16",
+   "members": [
+    {
+     "id": "king",
+     "gloss": "King of kings",
+     "greek": "ΒΑΣΙΛΕΥΣ ΒΑΣΙΛΕΩΝ",
+     "rx": "βασιλευσ (των )?βασιλε",
+     "in_seed": true
+    },
+    {
+     "id": "lord",
+     "gloss": "Lord of lords",
+     "greek": "ΚΥΡΙΟΣ ΚΥΡΙΩΝ",
+     "rx": "κυριοσ (των )?κυρι",
+     "in_seed": true
+    }
+   ],
+   "steps": [
+    {
+     "op": "EVENT"
+    }
+   ],
+   "target": "gnt:1Tim 6:15",
+   "controls": [
+    {
+     "loc": "lxx:Δευτερονομιον 10:17",
+     "label": "Septuagint, Deut 10:17"
     }
    ]
   }

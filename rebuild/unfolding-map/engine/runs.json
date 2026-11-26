@@ -17,7 +17,7 @@
  },
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "0287441240eaad9344a6b1d39f42a525c4d7e639ee82768290288f599f9208bc",
+  "sha256_of_derivations": "cbd282f40a8e62c5febdbd04ec5868aa6826e40621aed90d3b879496d3dc128b",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "runs": [
@@ -6879,6 +6879,1174 @@
    },
    "seed_ok": true,
    "verdict": "passes; no control passes (best control 0.17)"
+  },
+  {
+   "id": "rev21.1→2pet3.13",
+   "title": "New heavens and a new earth, as promised",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 21:1",
+    "text": "Καὶ εἶδον οὐρανὸν καινὸν καὶ γῆν καινήν· ὁ γὰρ πρῶτος οὐρανὸς καὶ ἡ πρώτη γῆ ἀπῆλθαν, καὶ ἡ θάλασσα οὐκ ἔστιν ἔτι.",
+    "members_found": {
+     "saw": true,
+     "heaven": true,
+     "earth": true
+    }
+   },
+   "members": {
+    "saw": {
+     "gloss": "I saw",
+     "greek": "εἶδον"
+    },
+    "heaven": {
+     "gloss": "a new heaven",
+     "greek": "οὐρανὸν καινόν"
+    },
+    "earth": {
+     "gloss": "and a new earth",
+     "greek": "γῆν καινήν"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "saw",
+      "heaven",
+      "earth"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "heaven",
+      "earth"
+     ],
+     "state": [
+      "heaven",
+      "earth"
+     ]
+    },
+    {
+     "op": "CITE-AS-SCRIPTURE",
+     "does": "mark the member as written or promised: the borrower reports what the seed performs",
+     "marker": "επαγγελμα|γεγραπται",
+     "state": [
+      "heaven",
+      "earth"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "heaven",
+     "earth"
+    ],
+    "dropped": [
+     "saw"
+    ],
+    "marker": "επαγγελμα|γεγραπται",
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:2Pet 3:13",
+    "text": "καινοὺς δὲ οὐρανοὺς καὶ γῆν καινὴν κατὰ τὸ ἐπάγγελμα αὐτοῦ προσδοκῶμεν, ἐν οἷς δικαιοσύνη κατοικεῖ.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ],
+     "marker present": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ησαιας 65:17",
+     "text": "Ἔσται γὰρ ὁ οὐρανὸς καινὸς καὶ ἡ γῆ καινή, καὶ οὐ μὴ μνησθῶσιν τῶν προτέρων οὐδ᾿ οὐ μὴ ἐπέλθῃ αὐτῶν ἐπὶ τὴν καρδίαν,",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ],
+      "marker present": [
+       0,
+       1
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Isa 65:17"
+    },
+    {
+     "loc": "lxx:Ησαιας 66:22",
+     "text": "ὃν τρόπον γὰρ ὁ οὐρανὸς καινὸς καὶ ἡ γῆ καινὴ ἃ ἐγὼ ποιῶ μένει ἐνώπιον ἐμοῦ, λέγει Κύριος, οὕτως στήσεται τὸ σπέρμα ὑμῶν καὶ τὸ ὄνομα ὑμῶν.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ],
+      "marker present": [
+       0,
+       1
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Isa 66:22"
+    }
+   ],
+   "note": null,
+   "records": [
+    1418
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "2Pet 3:13"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.4)"
+  },
+  {
+   "id": "rev3.3→2pet3.10",
+   "title": "Will come as a thief",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 3:3",
+    "text": "μνημόνευε οὖν πῶς εἴληφας καὶ ἤκουσας, καὶ τήρει καὶ μετανόησον. ἐὰν οὖν μὴ γρηγορήσῃς, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ.",
+    "members_found": {
+     "watch": true,
+     "come": true,
+     "thief": true,
+     "hour": true
+    }
+   },
+   "members": {
+    "watch": {
+     "gloss": "watch",
+     "greek": "γρηγορήσῃς"
+    },
+    "come": {
+     "gloss": "I will come",
+     "greek": "ἥξω"
+    },
+    "thief": {
+     "gloss": "as a thief",
+     "greek": "ὡς κλέπτης"
+    },
+    "hour": {
+     "gloss": "what hour",
+     "greek": "ποίαν ὥραν"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "watch",
+      "come",
+      "thief",
+      "hour"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "come",
+      "thief"
+     ],
+     "state": [
+      "come",
+      "thief"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "come",
+     "thief"
+    ],
+    "dropped": [
+     "watch",
+     "hour"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:2Pet 3:10",
+    "text": "Ἥξει δὲ ἡμέρα Κυρίου ὡς κλέπτης, ἐν ᾗ οἱ οὐρανοὶ ῥοιζηδὸν παρελεύσονται, στοιχεῖα δὲ καυσούμενα λυθήσεται, καὶ γῆ καὶ τὰ ἐν αὐτῇ ἔργα εὑρεθήσεται.",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      2,
+      2
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:1Thess 5:2",
+     "text": "αὐτοὶ γὰρ ἀκριβῶς οἴδατε ὅτι ἡμέρα Κυρίου ὡς κλέπτης ἐν νυκτὶ οὕτως ἔρχεται.",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       2,
+       2
+      ]
+     },
+     "score": 0.6,
+     "passes": false,
+     "missing": [
+      "come"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "1 Thessalonians 5:2 (ἔρχεται)"
+    },
+    {
+     "loc": "gnt:Matt 24:43",
+     "text": "ἐκεῖνο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν καὶ οὐκ ἂν εἴασεν διορυχθῆναι τὴν οἰκίαν αὐτοῦ.",
+     "checks": {
+      "kept members present": [
+       0,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "come",
+      "thief"
+     ],
+     "kept_but_should_be_dropped": [
+      "watch"
+     ],
+     "label": "Matthew's half"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "2Pet 3:10"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.6)"
+  },
+  {
+   "id": "rev5.13→1tim6.16",
+   "title": "Honour and might",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 5:13",
+    "text": "καὶ πᾶν κτίσμα ὃ ἐν τῷ οὐρανῷ καὶ ἐπὶ τῆς γῆς καὶ ὑποκάτω τῆς γῆς καὶ ἐπὶ τῆς θαλάσσης ἐστίν, καὶ τὰ ἐν αὐτοῖς πάντα, ἤκουσα λέγοντας Τῷ καθημένῳ ἐπὶ τῷ θρόνῳ καὶ τῷ Ἀρνίῳ ἡ εὐλογία καὶ ἡ τιμὴ καὶ ἡ δόξα καὶ τὸ κράτος εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+    "members_found": {
+     "blessing": true,
+     "honour": true,
+     "glory": true,
+     "might": true,
+     "ages": true
+    }
+   },
+   "members": {
+    "blessing": {
+     "gloss": "blessing",
+     "greek": "ἡ εὐλογία"
+    },
+    "honour": {
+     "gloss": "honour",
+     "greek": "ἡ τιμή"
+    },
+    "glory": {
+     "gloss": "glory",
+     "greek": "ἡ δόξα"
+    },
+    "might": {
+     "gloss": "might",
+     "greek": "τὸ κράτος"
+    },
+    "ages": {
+     "gloss": "to the ages",
+     "greek": "εἰς τοὺς αἰῶνας"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "blessing",
+      "honour",
+      "glory",
+      "might",
+      "ages"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "honour",
+      "might",
+      "ages"
+     ],
+     "state": [
+      "honour",
+      "might",
+      "ages"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "honour",
+     "might",
+     "ages"
+    ],
+    "dropped": [
+     "blessing",
+     "glory"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:1Tim 6:16",
+    "text": "ὁ μόνος ἔχων ἀθανασίαν, φῶς οἰκῶν ἀπρόσιτον, ὃν εἶδεν οὐδεὶς ἀνθρώπων οὐδὲ ἰδεῖν δύναται· ᾧ τιμὴ καὶ κράτος αἰώνιον· ἀμήν.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      2,
+      2
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Rom 16:27",
+     "text": "μόνῳ σοφῷ Θεῷ, διὰ Ἰησοῦ Χριστοῦ, ᾧ ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων· ἀμήν.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "honour",
+      "might"
+     ],
+     "kept_but_should_be_dropped": [
+      "glory"
+     ],
+     "label": "Romans 16:27"
+    },
+    {
+     "loc": "gnt:Gal 1:5",
+     "text": "ᾧ ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων· ἀμήν.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       2
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "honour",
+      "might"
+     ],
+     "kept_but_should_be_dropped": [
+      "glory"
+     ],
+     "label": "Galatians 1:5"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "1Tim 6:16"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.33)"
+  },
+  {
+   "id": "rev1.6→jude25",
+   "title": "Glory and might, to the ages, amen",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 1:6",
+    "text": "καὶ ἐποίησεν ἡμᾶς βασιλείαν, ἱερεῖς τῷ Θεῷ καὶ Πατρὶ αὐτοῦ, αὐτῷ ἡ δόξα καὶ τὸ κράτος εἰς τοὺς αἰῶνας τῶν αἰώνων· ἀμήν.",
+    "members_found": {
+     "glory": true,
+     "might": true,
+     "ages": true,
+     "amen": true
+    }
+   },
+   "members": {
+    "glory": {
+     "gloss": "glory",
+     "greek": "ἡ δόξα"
+    },
+    "might": {
+     "gloss": "might",
+     "greek": "τὸ κράτος"
+    },
+    "ages": {
+     "gloss": "to the ages",
+     "greek": "εἰς τοὺς αἰῶνας"
+    },
+    "amen": {
+     "gloss": "amen",
+     "greek": "ἀμήν"
+    },
+    "majesty": {
+     "gloss": "majesty",
+     "greek": "μεγαλωσύνη"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "glory",
+      "might",
+      "ages",
+      "amen"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "glory",
+      "might",
+      "ages",
+      "amen"
+     ],
+     "state": [
+      "glory",
+      "might",
+      "ages",
+      "amen"
+     ]
+    },
+    {
+     "op": "ADD",
+     "does": "add a member the seed does not have (recorded, so that an addition is never silent)",
+     "new": "majesty",
+     "at": 1,
+     "state": [
+      "glory",
+      "majesty",
+      "might",
+      "ages",
+      "amen"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "glory",
+     "majesty",
+     "might",
+     "ages",
+     "amen"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Jude 1:25",
+    "text": "μόνῳ Θεῷ Σωτῆρι ἡμῶν διὰ Ἰησοῦ Χριστοῦ τοῦ Κυρίου ἡμῶν δόξα μεγαλωσύνη κράτος καὶ ἐξουσία πρὸ παντὸς τοῦ αἰῶνος καὶ νῦν καὶ εἰς πάντας τοὺς αἰῶνας· ἀμήν.",
+    "checks": {
+     "kept members present": [
+      5,
+      5
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Rom 11:36",
+     "text": "ὅτι ἐξ αὐτοῦ καὶ δι’ αὐτοῦ καὶ εἰς αὐτὸν τὰ πάντα· αὐτῷ ἡ δόξα εἰς τοὺς αἰῶνας· ἀμήν.",
+     "checks": {
+      "kept members present": [
+       3,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "majesty",
+      "might"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Romans 11:36"
+    },
+    {
+     "loc": "gnt:Phil 4:20",
+     "text": "τῷ δὲ Θεῷ καὶ Πατρὶ ἡμῶν ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων· ἀμήν.",
+     "checks": {
+      "kept members present": [
+       3,
+       5
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "majesty",
+      "might"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Philippians 4:20"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Jude 1:25"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev12.7→jude9",
+   "title": "Michael and the adversary",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 12:7",
+    "text": "Καὶ ἐγένετο πόλεμος ἐν τῷ οὐρανῷ, ὁ Μιχαὴλ καὶ οἱ ἄγγελοι αὐτοῦ τοῦ πολεμῆσαι μετὰ τοῦ δράκοντος. καὶ ὁ δράκων ἐπολέμησεν καὶ οἱ ἄγγελοι αὐτοῦ,",
+    "members_found": {
+     "war": true,
+     "michael": true,
+     "dragon": true
+    }
+   },
+   "members": {
+    "war": {
+     "gloss": "war",
+     "greek": "πόλεμος"
+    },
+    "michael": {
+     "gloss": "Michael",
+     "greek": "ὁ Μιχαήλ"
+    },
+    "dragon": {
+     "gloss": "the dragon",
+     "greek": "τοῦ δράκοντος"
+    },
+    "devil": {
+     "gloss": "the devil",
+     "greek": "τῷ διαβόλῳ"
+    },
+    "dispute": {
+     "gloss": "disputing",
+     "greek": "διακρινόμενος"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "war",
+      "michael",
+      "dragon"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "war",
+      "michael",
+      "dragon"
+     ],
+     "state": [
+      "war",
+      "michael",
+      "dragon"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "dragon",
+     "new": "devil",
+     "state": [
+      "war",
+      "michael",
+      "devil"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "war",
+     "new": "dispute",
+     "state": [
+      "dispute",
+      "michael",
+      "devil"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "michael",
+      "devil",
+      "dispute"
+     ],
+     "state": [
+      "michael",
+      "devil",
+      "dispute"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "michael",
+     "devil",
+     "dispute"
+    ],
+    "dropped": [
+     "dragon",
+     "war"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Jude 1:9",
+    "text": "ὁ δὲ Μιχαὴλ ὁ ἀρχάγγελος, ὅτε τῷ διαβόλῳ διακρινόμενος διελέγετο περὶ τοῦ Μωϋσέως σώματος, οὐκ ἐτόλμησεν κρίσιν ἐπενεγκεῖν βλασφημίας, ἀλλὰ εἶπεν Ἐπιτιμήσαι σοι Κύριος.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      2,
+      2
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Ζαχαριας 3:2",
+     "text": "καὶ εἶπεν Κύριος πρὸς τὸν διάβολον Ἐπιτιμήσαι Κύριος ἐν σοί, διάβολε, καὶ ἐπιτιμήσαι Κύριος ἐν σοὶ ὁ ἐκλεξάμενος τὴν Ἰερουσαλήμ· οὐκ ἰδοὺ τοῦτο ὡς δαλὸς ἐξέσπασμένος ἐκ πυρός;",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       2,
+       2
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "michael",
+      "dispute"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Zech 3:2"
+    }
+   ],
+   "note": "Rev 12:9 names the dragon: 'who is called the devil'. Michael is named in the New Testament here and at Rev 12:7 only.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "Jude 1:9"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev2.10→2tim4.8",
+   "title": "The crown, given",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 2:10",
+    "text": "μὴ φοβοῦ ἃ μέλλεις πάσχειν. ἰδοὺ μέλλει βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς.",
+    "members_found": {
+     "give": true,
+     "crown": true,
+     "life": true
+    }
+   },
+   "members": {
+    "give": {
+     "gloss": "I will give",
+     "greek": "δώσω"
+    },
+    "crown": {
+     "gloss": "the crown",
+     "greek": "τὸν στέφανον"
+    },
+    "life": {
+     "gloss": "of life",
+     "greek": "τῆς ζωῆς"
+    },
+    "right": {
+     "gloss": "of righteousness",
+     "greek": "τῆς δικαιοσύνης"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "give",
+      "crown",
+      "life"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "give",
+      "crown",
+      "life"
+     ],
+     "state": [
+      "give",
+      "crown",
+      "life"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE-OBJECT",
+     "does": "keep the verb and its frame and change the object it acts on",
+     "old": "life",
+     "new": "right",
+     "state": [
+      "give",
+      "crown",
+      "right"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "does": "set the kept members in a new order",
+     "order": [
+      "right",
+      "crown",
+      "give"
+     ],
+     "state": [
+      "right",
+      "crown",
+      "give"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "right",
+     "crown",
+     "give"
+    ],
+    "dropped": [
+     "life"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:2Tim 4:8",
+    "text": "λοιπὸν ἀπόκειταί μοι ὁ τῆς δικαιοσύνης στέφανος, ὃν ἀποδώσει μοι ὁ κύριος ἐν ἐκείνῃ τῇ ἡμέρᾳ, ὁ δίκαιος κριτής, οὐ μόνον δὲ ἐμοὶ ἀλλὰ καὶ πᾶσι τοῖς ἠγαπηκόσι τὴν ἐπιφάνειαν αὐτοῦ.",
+    "checks": {
+     "kept members present": [
+      3,
+      3
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Jas 1:12",
+     "text": "Μακάριος ἀνὴρ ὃς ὑπομένει πειρασμόν, ὅτι δόκιμος γενόμενος λήμψεται τὸν στέφανον τῆς ζωῆς, ὃν ἐπηγγείλατο τοῖς ἀγαπῶσιν αὐτόν.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       0,
+       1
+      ]
+     },
+     "score": 0.2,
+     "passes": false,
+     "missing": [
+      "right",
+      "give"
+     ],
+     "kept_but_should_be_dropped": [
+      "life"
+     ],
+     "label": "James 1:12 (the crown of life, kept)"
+    },
+    {
+     "loc": "gnt:1Cor 9:25",
+     "text": "πᾶς δὲ ὁ ἀγωνιζόμενος πάντα ἐγκρατεύεται, ἐκεῖνοι μὲν οὖν ἵνα φθαρτὸν στέφανον λάβωσιν, ἡμεῖς δὲ ἄφθαρτον.",
+     "checks": {
+      "kept members present": [
+       1,
+       3
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       1,
+       1
+      ]
+     },
+     "score": 0.4,
+     "passes": false,
+     "missing": [
+      "right",
+      "give"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "1 Corinthians 9:25"
+    }
+   ],
+   "note": null,
+   "records": [
+    1414
+   ],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "2Tim 4:8"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.4)"
+  },
+  {
+   "id": "rev19.16→1tim6.15",
+   "title": "King of kings and Lord of lords",
+   "family": "Letters the received chronology dates after Revelation",
+   "seed": {
+    "loc": "gnt:Rev 19:16",
+    "text": "καὶ ἔχει ἐπὶ τὸ ἱμάτιον καὶ ἐπὶ τὸν μηρὸν αὐτοῦ ὄνομα γεγραμμένον ΒΑΣΙΛΕΥΣ ΒΑΣΙΛΕΩΝ ΚΑΙ ΚΥΡΙΟΣ ΚΥΡΙΩΝ.",
+    "members_found": {
+     "king": true,
+     "lord": true
+    }
+   },
+   "members": {
+    "king": {
+     "gloss": "King of kings",
+     "greek": "ΒΑΣΙΛΕΥΣ ΒΑΣΙΛΕΩΝ"
+    },
+    "lord": {
+     "gloss": "Lord of lords",
+     "greek": "ΚΥΡΙΟΣ ΚΥΡΙΩΝ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "king",
+      "lord"
+     ]
+    },
+    {
+     "op": "EVENT",
+     "does": "set a sign of the vision as an event at a hinge of the narrative (no change of wording; the change is of place)",
+     "state": [
+      "king",
+      "lord"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "king",
+     "lord"
+    ],
+    "dropped": [],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:1Tim 6:15",
+    "text": "ἣν καιροῖς ἰδίοις δείξει ὁ μακάριος καὶ μόνος Δυνάστης, ὁ Βασιλεὺς τῶν βασιλευόντων καὶ Κύριος τῶν κυριευόντων,",
+    "checks": {
+     "kept members present": [
+      2,
+      2
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Δευτερονομιον 10:17",
+     "text": "ὁ γὰρ κύριος ὁ θεὸς ὑμῶν, οὗτος θεὸς τῶν θεῶν καὶ κύριος τῶν κυρίων, ὁ θεὸς ὁ μέγας καὶ ἰσχυρὸς καὶ ὁ φοβερός, ὅστις οὐ θαυμάζει πρόσωπον οὐδ’ οὐ μὴ λάβῃ δῶρον·",
+     "checks": {
+      "kept members present": [
+       1,
+       2
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "king"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Deut 10:17"
+    }
+   ],
+   "note": null,
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7942,
+     "passing": 1,
+     "refs": [
+      "1Tim 6:15"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.33)"
   }
  ]
 }

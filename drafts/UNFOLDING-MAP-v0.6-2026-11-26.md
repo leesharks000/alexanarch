@@ -1,6 +1,6 @@
-# The Unfolding Map — working file v0.5
+# The Unfolding Map — working file v0.6
 
-26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.5, 13:55: a review of v0.3 by ChatGPT, pasted by the author; each point verified and worked in (section 2D; repairs in place at 0.2, 1.2, 1.6, 2.3, 2.9, 2A.4, 2B.4, 2B.7, 4.2, 5.2), with three new runs: the delta census, the null pairs, and the cost of each derivation under three genealogies. v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine now runs forty derivations in thirteen operators (2B.3). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
+26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.6, 14:03–14:06: the author on direction (section 2E), with seven derivations for the letters the received chronology already sets after Revelation; the engine at forty-seven. v0.5, 13:55: a review of v0.3 by ChatGPT, pasted by the author; each point verified and worked in (section 2D; repairs in place at 0.2, 1.2, 1.6, 2.3, 2.9, 2A.4, 2B.4, 2B.7, 4.2, 5.2), with three new runs: the delta census, the null pairs, and the cost of each derivation under three genealogies. v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine then ran forty derivations in thirteen operators (2B.3; forty-seven at v0.6, the seven added at 2E.4). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
 
 The programme, in the author's words (12:35): "we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a seven within seven structure: the seven church pauline formation transformed from rev's seven churches, but then also paul as one of seven and the other named epistolary positions mapped to rev's seven." And (12:42, 12:45): Philo as guide, with other suppressed witnesses like Newton; the transform map opened to Philo's texts as a possible supplementary source.
 
@@ -330,6 +330,61 @@ A limit of the Septuagint column: it allows one verse. The received account of R
 2D.7. Owed to the engine's representation (the review, §9). A member is now a piece of wording. The reversals act on a relation: in Rev 18:23 the hearing of the bridegroom's voice is denied, in John 3:29 it is affirmed and given a hearer. Members as relations (agent, action, object, recipient, polarity, mode) would let an operator change one slot and hold the rest, would make EVENT a change of mode with a test, and would give the review's REVERSE-VALENCE (judgment to restoration) a definition beside REVERSE-DOER and UNDO.
 
 2D.8. The seven within seven (the review, §10): positions, formula distributions, seed regions and operator profiles first; named authorship enters afterward as a variable. This agrees with the author's ruling to leave Pauline and non-Pauline open, and 4.6 is the first datum of that kind.
+
+## 2E. Direction
+
+2E.1. The author, 14:03, on the result of 2D.5: "yes... but what will come down as directionally decisive is the number and mechanisms of gospel and epistle borrowings from revelation, holistically. to assume the reverse assume that precise canon as a compression artifact for revelation's sources. far more plausible, is that a number of later texts shared a source. and philo will also be decisive - to argue the reverse is to argue revelation went back to philo and mediated the gospels and epistles through it systematically in compression - nope." And 14:06: "and i understand the transforms cant show this, but the main thing: if you put revelation first you can show exactly jow the figure of jesus developed from septuagint, philo, and slavonic josephus to revelation, and from revelation to Epistles and gospels. you simply cannot do that in the reverse order without making up internediaries".
+
+2E.2. What this corrects in 2D.5. The cost run priced edges, one sentence at a time, and at that grain a conflation is as cheap as a partition. Direction is a property of the whole graph. Four forms of the argument, each with what can be counted.
+
+2E.3. **The shape of the graph.** The hologram (#1755 v1.5) and this file together draw an arrow between Revelation and 22 of the other 26 books. Read forward, that is one book used by many writers, each needing one book. Read in reverse, it is one writer holding 22 books and taking a clause from each, and the 22 are a collection that did not yet exist as one: the canon as the seer's library. The tariff of 2D.5 does not price this, because it charges a verse chosen from Matthew the same whether or not the chooser also holds Jude. A tariff that prices the *set* of sources a writer must hold, against the chance that one writer held them all at once, is owed; it is where this argument becomes a number. A control that bears on it now: writings of the same decades outside the canon. If Revelation were a digest of the Christian literature of its time, its links should not stop at the canon's edge. The Apostolic Fathers are not seated; seating the Didache, 1 Clement and Hermas and running the link instrument on them is the test.
+
+2E.4. **The conceded cases.** The received chronology itself dates some letters after the received date of Revelation (from memory, and to be seated from the handbooks: 2 Peter in the early second century; the Pastorals and Jude at or after the turn of the century on the common critical view). For these the received account already has the arrow running from Revelation, or has no objection to it. Seven derivations, run:
+
+| Derivation | | Operators | Best control | NT verses that fit | LXX verses that fit |
+|---|---|---|---|---|---|
+| `rev21.1→2pet3.13` | New heavens and a new earth, as promised | PARTITION → CITE-AS-SCRIPTURE | 0.40 | 1 | 0 |
+| `rev3.3→2pet3.10` | Will come as a thief | PARTITION | 0.60 | 1 | 0 |
+| `rev5.13→1tim6.16` | Honour and might | PARTITION | 0.33 | 1 | 0 |
+| `rev1.6→jude25` | Glory and might, to the ages, amen | PARTITION → ADD | 0.50 | 1 | 0 |
+| `rev12.7→jude9` | Michael and the adversary | PARTITION → SUBSTITUTE → SUBSTITUTE → REORDER | 0.50 | 1 | 0 |
+| `rev2.10→2tim4.8` | The crown, given | PARTITION → SUBSTITUTE-OBJECT → REORDER | 0.40 | 1 | 0 |
+| `rev19.16→1tim6.15` | King of kings and Lord of lords | EVENT | 0.33 | 1 | 0 |
+
+Each fits, no control fits, each emission fits one verse of the New Testament and none of the Septuagint. Two things follow. First, 2 Pet 3:13 marks its member as promised (κατὰ τὸ ἐπάγγελμα), which is what Jas 1:12 does with the crown (ἐπηγγείλατο): two letters citing as a promise what Revelation says in the first person (21:5; 2:10), and one of the two is a letter the received account itself puts later. Second, the operators:
+
+| Operator | share of the 34 Gospel derivations | share of the 7 late-letter derivations |
+|---|---|---|
+| ADD | 6% | 14% |
+| CITE-AS-SCRIPTURE | 3% | 14% |
+| EVENT | 18% | 14% |
+| NEGATE | 3% | 0% |
+| PARTITION | 68% | 86% |
+| REORDER | 41% | 29% |
+| REVERSE-DOER | 12% | 0% |
+| SUBSTITUTE | 15% | 14% |
+| SUBSTITUTE-OBJECT | 15% | 14% |
+| TRANSFER-ATTRIBUTE | 6% | 0% |
+| UNDO | 12% | 0% |
+
+The core is the same: PARTITION, REORDER, SUBSTITUTE, SUBSTITUTE-OBJECT, with ADD and the citation mark. The Gospels add the operators of narrative (REVERSE-DOER, UNDO, TRANSFER-ATTRIBUTE, NEGATE), which a doxology has no use for. So the mechanism claimed for the Gospels is the mechanism at work where the direction is not in dispute. The reverse account then needs two mechanisms for one pattern: the seer merges the Gospels and Paul, and is afterwards partitioned by 2 Peter, Jude and the Pastorals in the same operators. Seven cases; the count should grow before it is leaned on.
+
+2E.5. **Philo.** Philo is dated and is earlier than every candidate, so a chain through him has a fixed end. Where a later text has Revelation's state of a Philonic unit (2B.7), the forward reading is a chain, Philo to Revelation to the letter. The reverse reading has to say that the letter's wording came first and that the seer then set it into a frame taken from Philo, so that the letter's member turns out to be the regular transform of Philo's by coincidence: Hebrews' manna "covered on every side" in the ark, and Philo's manna that the fathers "did not know", with Revelation's "hidden" between. One such case is in the engine. This becomes decisive as a count of cases under one operator, which is the next thing to gather from #1758: the ποδήρης and the high priest (Rev 1:13; Heb 4:14), the two-edged word (Rev 1:16; Heb 4:12, Newton's first), the name.
+
+2E.6. **The figure, and the intermediaries.** This is the argument the transforms cannot make, and it can still be laid out as an inventory. Forward, every station of the figure is a text that exists and is seated:
+
+| Station | State of the figure | Seat or record |
+|---|---|---|
+| Septuagint | Ἰησοῦς the high priest, crowned, addressed as Ἀνατολή (Zech 3:8; 6:11–12); the man in the ποδήρης (Ezek 9:2; Zech 3:4); one like a son of man with the clouds (Dan 7:13) | EA-CORPORA-01/05 |
+| Philo | the Logos as high priest, named Ἀνατολή, the addressee's name cut; the seventh in the midst of the lampstand; the sealed name; the manna as Logos | EA-CORPORA-01/07; #1758 |
+| The Slavonic Josephus | held under rung V, a carrier under test | #1760, #1765 |
+| Revelation | one like a son of man in the midst of seven lampstands, in the ποδήρης, named Ἰησοῦς; the Lamb slain; the rider named the Word of God | EA-CORPORA-01/04 |
+| The letters | the great high priest Jesus (Heb 4:14); the lamb without blemish (1 Pet 1:19); bought at a price (1 Cor 6:20) | the same; #1418 |
+| The Gospels | the Word made flesh; the Lamb of God; the white at the tomb | the same; 2C |
+
+In the reverse order the figure has to reach the Gospels from the Septuagint without Revelation, and the received account fills that distance with sources none of which is extant (the standard hypotheses, from memory): Q; the Signs Source; M and L; a testimony book; a pre-Markan passion narrative; an apocalypse beneath Mark 13; oral tradition. #1746 audited the standing those reconstructions are given. As a count: forward, six stations, six extant; reverse, the same span crossed by seven or more intermediaries, none extant. That is the author's sentence as a table. It is an argument from economy and does not turn into a transform.
+
+2E.7. Where this leaves direction. No single count here decides it. 2D.5 shows the edges do not; 2E.3 to 2E.6 are four arguments from the whole, of which one has a test waiting (the canon's edge), one has seven cases (the conceded letters), one has one case (the derived state), and one is an inventory. The file records them at those strengths.
 
 ## 3. The fourfold
 

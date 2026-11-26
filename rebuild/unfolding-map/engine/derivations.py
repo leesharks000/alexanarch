@@ -155,5 +155,31 @@ d(id="rev3.10→john17.15", family="John", title="Keep them out of", seed="gnt:R
 d(id="rev9.11→john19.20", family="John", title="In Hebrew, and in Greek", seed="gnt:Rev 9:11",
   members=[m("name", "his name", "ὄνομα αὐτῷ", r"ονομα"), m("hebrew", "in Hebrew", "Ἑβραϊστί", r"εβραιστι"), m("greek", "in Greek", "ἐν τῇ Ἑλληνικῇ", r"ελληνι"), m("written", "written", "γεγραμμένον", r"γεγραμμενον", False), m("roman", "in Latin", "Ῥωμαϊστί", r"ρωμαιστι", False)],
   steps=[{"op": "PARTITION", "keep": ["name", "hebrew", "greek"]}, {"op": "SUBSTITUTE", "old": "name", "new": "written"}, {"op": "ADD", "new": "roman", "at": 2}], target="gnt:John 19:20", controls=[{"loc": "gnt:Luke 23:38", "label": "Luke's title"}, {"loc": "gnt:Acts 21:40", "label": "Acts 21:40"}])
+
+# ── the conceded cases (the author, 2026-11-26 14:03): letters that the received chronology itself sets after the received date of Revelation
+LATE = "Letters the received chronology dates after Revelation"
+d(id="rev21.1→2pet3.13", family=LATE, title="New heavens and a new earth, as promised", seed="gnt:Rev 21:1",
+  members=[m("saw", "I saw", "εἶδον", r"\bειδον"), m("heaven", "a new heaven", "οὐρανὸν καινόν", r"ουραν"), m("earth", "and a new earth", "γῆν καινήν", r"γην καινην")],
+  steps=[{"op": "PARTITION", "keep": ["heaven", "earth"]}, {"op": "CITE-AS-SCRIPTURE", "marker": r"επαγγελμα|γεγραπται"}], target="gnt:2Pet 3:13",
+  controls=[{"loc": "lxx:Ησαιας 65:17", "label": "Septuagint, Isa 65:17"}, {"loc": "lxx:Ησαιας 66:22", "label": "Septuagint, Isa 66:22"}], records=[1418])
+d(id="rev3.3→2pet3.10", family=LATE, title="Will come as a thief", seed="gnt:Rev 3:3", members=[m("watch", "watch", "γρηγορήσῃς", r"γρηγορ"), m("come", "I will come", "ἥξω", r"\bηξ(ω|ει)\b"), m("thief", "as a thief", "ὡς κλέπτης", r"ωσ κλεπτησ"), m("hour", "what hour", "ποίαν ὥραν", r"ποια\w? ωρα")],
+  steps=[{"op": "PARTITION", "keep": ["come", "thief"]}], target="gnt:2Pet 3:10", controls=[{"loc": "gnt:1Thess 5:2", "label": "1 Thessalonians 5:2 (ἔρχεται)"}, {"loc": "gnt:Matt 24:43", "label": "Matthew's half"}])
+d(id="rev5.13→1tim6.16", family=LATE, title="Honour and might", seed="gnt:Rev 5:13",
+  members=[m("blessing", "blessing", "ἡ εὐλογία", r"ευλογια"), m("honour", "honour", "ἡ τιμή", r"\bτιμη\b"), m("glory", "glory", "ἡ δόξα", r"\bδοξα\b"), m("might", "might", "τὸ κράτος", r"κρατοσ"), m("ages", "to the ages", "εἰς τοὺς αἰῶνας", r"αιων")],
+  steps=[{"op": "PARTITION", "keep": ["honour", "might", "ages"]}], target="gnt:1Tim 6:16", controls=[{"loc": "gnt:Rom 16:27", "label": "Romans 16:27"}, {"loc": "gnt:Gal 1:5", "label": "Galatians 1:5"}])
+d(id="rev1.6→jude25", family=LATE, title="Glory and might, to the ages, amen", seed="gnt:Rev 1:6",
+  members=[m("glory", "glory", "ἡ δόξα", r"\bδοξα\b"), m("might", "might", "τὸ κράτος", r"κρατοσ"), m("ages", "to the ages", "εἰς τοὺς αἰῶνας", r"αιωνασ"), m("amen", "amen", "ἀμήν", r"αμην"), m("majesty", "majesty", "μεγαλωσύνη", r"μεγαλωσυνη", False)],
+  steps=[{"op": "PARTITION", "keep": ["glory", "might", "ages", "amen"]}, {"op": "ADD", "new": "majesty", "at": 1}], target="gnt:Jude 1:25", controls=[{"loc": "gnt:Rom 11:36", "label": "Romans 11:36"}, {"loc": "gnt:Phil 4:20", "label": "Philippians 4:20"}])
+d(id="rev12.7→jude9", family=LATE, title="Michael and the adversary", seed="gnt:Rev 12:7",
+  members=[m("war", "war", "πόλεμος", r"πολεμ"), m("michael", "Michael", "ὁ Μιχαήλ", r"μιχαηλ"), m("dragon", "the dragon", "τοῦ δράκοντος", r"δρακ"), m("devil", "the devil", "τῷ διαβόλῳ", r"διαβολ", False), m("dispute", "disputing", "διακρινόμενος", r"διακρινομεν", False)],
+  steps=[{"op": "PARTITION", "keep": ["war", "michael", "dragon"]}, {"op": "SUBSTITUTE", "old": "dragon", "new": "devil"}, {"op": "SUBSTITUTE", "old": "war", "new": "dispute"}, {"op": "REORDER", "order": ["michael", "devil", "dispute"]}], target="gnt:Jude 1:9",
+  controls=[{"loc": "lxx:Ζαχαριας 3:2", "label": "Septuagint, Zech 3:2"}], note="Rev 12:9 names the dragon: 'who is called the devil'. Michael is named in the New Testament here and at Rev 12:7 only.")
+d(id="rev2.10→2tim4.8", family=LATE, title="The crown, given", seed="gnt:Rev 2:10",
+  members=[m("give", "I will give", "δώσω", r"δωσ"), m("crown", "the crown", "τὸν στέφανον", r"στεφαν"), m("life", "of life", "τῆς ζωῆς", r"τησ ζωησ"), m("right", "of righteousness", "τῆς δικαιοσύνης", r"τησ δικαιοσυνησ", False)],
+  steps=[{"op": "PARTITION", "keep": ["give", "crown", "life"]}, {"op": "SUBSTITUTE-OBJECT", "old": "life", "new": "right"}, {"op": "REORDER", "order": ["right", "crown", "give"]}], target="gnt:2Tim 4:8",
+  controls=[{"loc": "gnt:Jas 1:12", "label": "James 1:12 (the crown of life, kept)"}, {"loc": "gnt:1Cor 9:25", "label": "1 Corinthians 9:25"}], records=[1414])
+d(id="rev19.16→1tim6.15", family=LATE, title="King of kings and Lord of lords", seed="gnt:Rev 19:16",
+  members=[m("king", "King of kings", "ΒΑΣΙΛΕΥΣ ΒΑΣΙΛΕΩΝ", r"βασιλευσ (των )?βασιλε"), m("lord", "Lord of lords", "ΚΥΡΙΟΣ ΚΥΡΙΩΝ", r"κυριοσ (των )?κυρι")], steps=[{"op": "EVENT"}], target="gnt:1Tim 6:15",
+  controls=[{"loc": "lxx:Δευτερονομιον 10:17", "label": "Septuagint, Deut 10:17"}])
 src = json.dumps(D, ensure_ascii=False, sort_keys=True)
 print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))
