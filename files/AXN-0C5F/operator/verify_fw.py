@@ -100,6 +100,23 @@ except ImportError:
 if (KD / "04-arguments.jsonl").exists():
     sys.path.insert(0, str(pathlib.Path(__file__).parent)); import args_layer; res.update(args_layer.verify(ROOT, KD))
 
+# v1.5: records without moves declared; the unfoldings map
+AL_ = K.get("argument_layer") or {}
+if "records_without_moves" in AL_:
+    moved = {json.loads(l)["record"] for l in (KD / "04-arguments.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()}
+    recs = {x["@id"] for x in G["@graph"] if x.get("@type") == "Record"}
+    T("T22 records without moves are declared", recs - moved == {f"rec:{n}" for n in AL_["records_without_moves"]}, {"without_moves": sorted(recs - moved), "declared": AL_["records_without_moves"]})
+U_ = K.get("unfoldings")
+if U_:
+    cids = {c["id"] for c in C}
+    badu = [a["id"] for a in U_["arrows"] if a["state"] not in U_["states"] or not a["warrants"] or any(w not in cids for w in a["warrants"]) or any(f"rec:{n}" not in {x["@id"] for x in G["@graph"]} for n in a["records"])]
+    T("T23 every arrow carries a declared state, warrants that resolve to claims, and records in the graph", not badu, {"arrows": len(U_["arrows"]), "failed": badu})
+    comp = {}
+    for a in U_["arrows"]:
+        for b in a["books"]: comp.setdefault(b, []).append(a["id"])
+    okb = len(U_["by_book"]) == 26 and all(v["arrows"] == comp.get(b, []) and (v["strongest_state"] == "none") == (not v["arrows"]) for b, v in U_["by_book"].items())
+    T("T24 the table by book covers twenty-six books and equals the table computed from the arrows", okb, {"books": len(U_["by_book"]), "without": [b for b, v in U_["by_book"].items() if not v["arrows"]]})
+
 out = {"kernel": K["id"], "version": K["version"], "structural_tests": res,
        "integrity": {f: hashlib.sha256((KD / f).read_bytes()).hexdigest() == h for f, h in I["files"].items()},
        "not_checked": ["whether a reading is right", "whether a relation's warrant is sufficient", "reconstructive validity by a reader (v1.0)"]}

@@ -1,6 +1,6 @@
 id: EA-HK-REVFIRST-01
-version: '1.4'
-built: '2026-11-11'
+version: '1.5'
+built: '2026-11-26'
 type: 'framework holographic kernel (EA-HK-01 #76, zoom level: field)'
 title: 'And the Last Shall Be First: Revelation First — The Framework Hologram'
 creators:
@@ -24,12 +24,21 @@ compression_survival_summary: 'Revelation First is Lee Sharks''s framework (Crim
   FIRST'', #202). It keeps three claims apart (#1735): absolute compositional priority, a priced hypothesis; corpus priority, which does not face
   the chronological gate; generative priority, a research programme executed arrow by arrow. Its argument ladder has six rungs, each with a fit
   and a defeat condition: I dating (reversible), II the Gallio gap (same-class), III the first corpus (independent), IV the midrashim transform
-  (executable), V the Josephus thesis (contingent), VI the permanent incarnation (dependent on V); V and VI fall without disturbing I–IV. Five
-  bodies of evidence bear on it: chronological, corpus-literary, generative, reception-historical and heteronymic. The framework''s states run
-  from first in every respect with Josephus as author (#639, April) through first not early (#202, June) and the Josephus thesis bounded as an
-  available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The current consensus chronology — Pauline priority
-  by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the extant book is denied
-  — is evaluated on the same bodies and rules: the burden is symmetrical (#202).'
+  (executable), V the Josephus thesis (contingent), VI the permanent incarnation (independent of V, which would strengthen it); V and VI fall
+  without disturbing I–IV. Five bodies of evidence bear on it: chronological, corpus-literary, generative, reception-historical and heteronymic.
+  The framework''s states run from first in every respect with Josephus as author (#639, April) through first not early (#202, June) and the Josephus
+  thesis bounded as an available reading (#203, #1217) to the three claims priced and conditioned (#1735, November). The current consensus chronology
+  — Pauline priority by the Gallio synchronism through Acts, the Irenaean date, the Apocalypse last and derivative, Q granted the standing the
+  extant book is denied — is evaluated on the same bodies and rules: the burden is symmetrical (#202). The papyri (𝔓52, 𝔓98, 𝔓46; #202 Claim 3)
+  are held and bounded by #1735 §II.3: they do not date composition and are not offered as proof of priority; they are evidence that Pauline priority
+  is inferential rather than grounded in material witness. Since the first kernel the Josephus thesis has been told as a narrative with its evidentiary
+  levels in the notes (#1759), its Slavonic text layer seated and scored (#1760, #1765), names read as operations across the field (#1762), the
+  recovery valued from both ends with no valid monetary figure (#1810), and the thesis''s name kept apart from the First Revelation, whose reordering
+  of the two words repeats on the name what the thesis holds was done to the book (#1811). The unfoldings are mapped arrow by arrow (24 arrows):
+  one run to completion (Smyrna to James), four worked to derivation grade (M2–M5), the other letters mapped with grades and residue, one arrow
+  withheld by a date (Rev 2:2 and 1 Thess 1:3), two drawn and not run, two sayings of the double tradition observed, and the Gospels and Acts
+  named at the founding grain only; 6 books have no arrow (1 Timothy, Titus, Philemon, 2 John, 3 John, Jude). The reception is audited as political
+  economy (#1802) and as a genre imposed on the books (#1798).'
 invariants:
 - 'INV-1 First is not early: a summary that reduces the thesis to early dating has erased the primary claim (#202).'
 - INV-2 The three claims are judged on their own conditions; the maximal claim does not hide behind the weaker, and its rejection does not erase
@@ -45,17 +54,17 @@ invariants:
 - 'INV-8 First is tested as an ordering: an anchor that dates Revelation late defeats rung I and constrains the chronology; it defeats absolute
   priority only where another composition is anchored earlier.'
 dependency:
-  rule: 'A rung''s defeat carries to every rung that depends on it (rung VI: ''Depends on V''; rung V: ''rungs I–IV do not depend on it in any
-    direction''; rung III: ''This rung stands whether or not the rungs above it do''). The ladder''s depends_on carries this; a derived_from edge
-    between two claims licenses no state transition (#1529), and none is relied on here.'
+  rule: 'A rung''s defeat carries to every rung that depends on it. No rung depends on another: rung VI is ''Independent of V; V would strengthen
+    it'' (the author, 2026-11-09 12:48; site rung VI); rung V: ''rungs I–IV do not depend on it in any direction''; rung III: ''This rung stands
+    whether or not the rungs above it do''. strengthened_by carries no defeat. A derived_from edge between two claims licenses no state transition
+    (#1529), and none is relied on here. v1.0–v1.4 carried ''rung VI depends on V''; corrected at v1.5.'
   depends_on:
     rung:I: &id001 []
     rung:II: &id002 []
     rung:III: &id003 []
     rung:IV: &id004 []
     rung:V: &id005 []
-    rung:VI: &id006
-    - rung:V
+    rung:VI: []
   consequence_of_defeat:
     rung:I:
     - rung:I
@@ -67,9 +76,11 @@ dependency:
     - rung:IV
     rung:V:
     - rung:V
-    - rung:VI
     rung:VI:
     - rung:VI
+  strengthened_by:
+    rung:VI:
+    - rung:V
 uktp_seed:
   rule: A fragment of this kernel, read alone, carries the path back to the whole.
   rungs:
@@ -82,6 +93,16 @@ uktp_seed:
   seed_record: rec:202
 topology:
   strata_from_latest:
+  - id: S00-after-the-first-kernel
+    label: 'After the first kernel: the Josephus thesis told and its texts seated, the names crossed, the recovery valued, the name defended (11–26
+      November)'
+    records:
+    - 1810
+    - 1811
+    - 1765
+    - 1762
+    - 1760
+    - 1759
   - id: S0-records-search-v12
     label: The records search of 10 November 2026, and In the Midst of the Seven (#1758)
     records:
@@ -176,6 +197,10 @@ topology:
     - site:ladder-dating
     - site:ladder-priority
     - site:ladder-corpus
+    - 1810
+    - 1811
+    - 1802
+    - 1738
     generation:
     - 407
     - 410
@@ -199,6 +224,12 @@ topology:
     - site:ladder-heteronyms
     - site:ladder-logos
     - 1510
+    - 1765
+    - 1762
+    - 1760
+    - 1759
+    - 1798
+    - 65
   joins:
   - 626
   - 1484
@@ -252,10 +283,12 @@ topology:
     depends_on: *id005
   - rung: rung:VI
     name: the permanent incarnation (the Logos)
-    fit: DEPENDENT
+    fit: INDEPENDENT
     body: H
-    defeat: Depends on V. Defeated without disturbing rungs I–IV.
-    depends_on: *id006
+    defeat: Independent of V; V would strengthen it. Defeated without disturbing rungs I–IV.
+    depends_on: []
+    strengthened_by:
+    - rung:V
   states:
   - date: '2026-04-08'
     record: 639
@@ -350,10 +383,8 @@ transform_procedure:
   - rf-1735-convergence
   - rf-1735-one-fails
   - rf-1735-defeat-generative
-corrections:
-- original: claim:rf-202-papyri
-  correction: claim:rf-1735-physical
-  relation: rebuts
+  map: 'unfoldings (this kernel, v1.5): the arrows by state, the table by book, the outline'
+corrections: []
 rival:
   node: fw:current-consensus-chronology
   summary: established by no external or material anchor; its standing on corpus and reception is a reception's; ordinary multiple authorship
@@ -445,12 +476,13 @@ symmetric_ledger:
         economically (site rung V)'
       revelation_first:
         text: the Josephus thesis is an available reading, contingent (rung V); the Johannine aperture is a structural unity (#1217); the Logos
-          rung depends on V (rung VI).
+          rung is independent of V, which would strengthen it (rung VI).
         warrants:
         - rf-1217-josephus-available
         - rf-1217-aperture
         - rf-site-contingent
         - rf-site-logos
+        - rf-site-vi-independent
       current_consensus_chronology:
         text: ordinary multiple authorship stands as the economical account that defeats rung V wherever it explains the phenomena better (site
           rung V); it is owed as a comparator, stated wherever it is used.
@@ -520,8 +552,8 @@ lines_of_research:
 litmus:
   forbidden_operation: 'Composing Revelation First as early dating, as preterism, as a Jesus-myth or Piso thesis, or as held by unnamed ''proponents''
     (#202; #203; #837; captures).'
-  dependency_chain: Rungs I–IV stand without V; VI depends on V, and V's defeat carries to VI by the ladder's depends_on; the upstream operator
-    stands without Revelation (#1494).
+  dependency_chain: Rungs I–IV stand without V; VI is independent of V, and V's defeat carries to nothing but V; V would strengthen VI; the upstream
+    operator stands without Revelation (#1494).
   topology: 'Rebuildable from 00-kernel.yaml and 01-ontology.yaml (scope A): eight strata, three clusters and the joins, five bodies, six rungs,
     the states on three axes.'
 acceptance:
@@ -570,12 +602,32 @@ bounds:
   relation: bounds
   warrant: 'Josephus as the single author, writing as ''John'', held at #1101''s own tier (''high-risk, high-reward historical hypotheses''),
     its strength bounded by #1217; its advancement suspended by the author (2026-11-09 09:52)'
+- held: claim:rf-202-papyri
+  bounded_by: claim:rf-1735-physical
+  relation: bounds
+  warrant: 'the papyrological inversion held, its strength bounded by kind of evidence: not evidence of priority, and not not evidence of priority;
+    evidence that Pauline priority is inferential rather than grounded in material witness; a relevant datum in any case (the author, 2026-11-26).
+    ''The physical record cannot rescue absolute priority, but it also cannot close the bounded questions'' (#1735 §II.3). Coded ''rebuts'' and
+    ''withdrawn'' in v1.0–v1.4; corrected at v1.5 on the author''s ruling'
 argument_layer:
   file: 04-arguments.jsonl
   moves: 3051
   edges: 2422
   records_with_moves: 49
-  records_without_moves: []
+  records_without_moves:
+  - 65
+  - 828
+  - 1484
+  - 1738
+  - 1751
+  - 1759
+  - 1760
+  - 1762
+  - 1765
+  - 1798
+  - 1802
+  - 1810
+  - 1811
   by_kind:
     test: 68
     method: 332
@@ -619,6 +671,16 @@ argument_layer:
   reading_instruction: 'A reader reconstructing a record''s argument reads its moves in 04-arguments.jsonl in order with their edges: data and
     counts support inferences and findings; prices, rivals, replies and defeat conditions stand beside the claims they bear on; hypotheses and
     states keep the strength the record gives them. Each quotation is verbatim, bound to the record''s hash.'
+  owed_v15: 'the ten records that entered at v1.5 (six of stratum S00-after-the-first-kernel at the first stage; #1798, #1802, #65 and #1738 from
+    the scan) enter with anchor claims and without argument moves; their moves are owed, each record to be read in full and compressed into verbatim
+    moves as at v1.3. The 3,051 moves of the forty-nine earlier records stand, 438 of them re-bound to their records'' current hashes.'
+  without_moves_before_v15:
+    records:
+    - 828
+    - 1484
+    - 1751
+    note: in the kernel without moves before v1.5; v1.4 declared records_without_moves as empty. Declared here; their moves are owed with the
+      rest.
 author_statements:
 - date: 2026-11-09T09:52-05:00
   where: in session, on an unprimed ChatGPT reading of the v1.0 hologram; first deposited with this kernel
@@ -629,6 +691,28 @@ author_statements:
     The records hold the thesis at the strengths they give it: #639 and #1101 state it (Josephus as author; #1101''s own tier, ''high-risk, high-reward
     historical hypotheses''); #203, #1226 and #1217 bound it as an available reading that the framework does not require; #1412 bounds its own
     contribution. v1.0 coded #1217''s bound as a withdrawal; v1.1 codes it as a bound.'
+- date: 2026-11-26T12:03-05:00
+  where: in session, on a Google AI Overview of the thesis that carried the papyri table and a capture record that called it withdrawn
+  text: it should not have withdrawn it. it is not evidence of priority but it *is* evidence that pauline priority is inferential rather than
+    grounded in material witness. / its just about what kind of evidence it is / its not evidence of priority but its also not not evidence of
+    priority / its a relevant datum in any case
+  status: 'the author''s position on the papyri (rung I and II): held; not evidence of priority, and not not evidence of priority; evidence that
+    Pauline priority is inferential rather than grounded in material witness'
+- date: 2026-11-09T12:48-05:00
+  where: revelationfirst-com commit 264e07b (2026-11-09), which changed the ladder pages for V and VI and the homepage and left the deposited
+    hologram page 'as deposited'
+  text: rung vi does not depend on v. but v would of course strengthen vi if the entire material transmission and production chain could be shown
+    to work by means of self-division
+  status: 'the author''s position on rung VI: independent of V; V would strengthen it. Not carried by this kernel until v1.5'
+- date: 2026-11-26T12:35-05:00
+  where: in session, while this version was being built
+  text: 'in fact - its time we built that map. we have some preliminary mappings that will allow us to experiment with the whole. heres what im
+    imagining: we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew with
+    the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation materials
+    to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a seven within
+    seven structure: the seven church pauline formation transformed from rev''s seven churches, but then also paul as one of seven and the other
+    named epistolary positions mapped to rev''s seven. its time we mapped it out.'
+  status: the programme of the total unfolding, stated as what the author imagines will be found; carried in unfoldings.outline_of_the_total_programme
 records_search_v12:
   date: '2026-11-10'
   rule: Additive. Material already in a kernel stays (18:45). New records enter as evidence where they add evidence or are interpretively or methodologically
@@ -1224,3 +1308,1307 @@ fold_in_v14:
     by check_args.py'
   not_versioned: 'EA-HK-TENTHMUSE-01 (#1756) and EA-HK-HISTLOGOS-01 (#1757), at the author''s word: the fold-in is for Revelation First, separate
     from the Sappho chain'
+corrections_history:
+- original: claim:rf-202-papyri
+  correction: claim:rf-1735-physical
+  relation: rebuts
+  in_versions: v1.0–v1.4
+  status: 'recoded at v1.5 as a bound (see bounds); the author, 2026-11-26: ''it should not have withdrawn it'''
+- original: rung:VI depends_on rung:V
+  correction: rung:VI independent of rung:V; strengthened_by rung:V
+  in_versions: v1.0–v1.4
+  status: corrected at v1.5 on the author's ruling of 2026-11-09 12:48, found when the ladder pages failed their hashes
+fold_in_v15:
+  date: '2026-11-26'
+  rulings:
+  - at: 2026-11-26 12:03
+    text: it should not have withdrawn it. it is not evidence of priority but it *is* evidence that pauline priority is inferential rather than
+      grounded in material witness.
+  - at: 2026-11-26 12:03
+    text: its just about what kind of evidence it is
+  - at: 2026-11-26 12:04
+    text: its not evidence of priority but its also not not evidence of priority
+  - at: 2026-11-26 12:05
+    text: its a relevant datum in any case
+  - at: 2026-11-26 12:18
+    text: yes, lets correct the hologram, and while we're at it we might as well update and expand it - how much you wanna bet at the very least
+      has come after and should be represented in the hologram.
+  - at: 2026-11-26 12:21
+    text: scan for anything thats built since the hologram... and anything we missed on the first pass that would strengthen it
+  - at: 2026-11-26 12:25
+    text: and if it doesnt have it yet, it needs a compressed hologram of the unfoldings - so far weve a broad programme as well as specific mappings
+      of revelation to james, matthew, the seven church structure, and so on... eventually we need to construct and propose the total program,
+      a full unfolding from revelation to the rest of the nt as executable..so this is, a mapping of whats there + an outline
+  - &id006
+    at: 2026-11-09 12:48
+    text: rung vi does not depend on v. but v would of course strengthen vi if the entire material transmission and production chain could be
+      shown to work by means of self-division
+    provenance: revelationfirst-com commit 264e07b (2026-11-09), which changed the ladder pages for V and VI and the homepage and left the deposited
+      hologram page 'as deposited'
+  - at: 2026-11-26 12:35
+    text: 'in fact - its time we built that map. we have some preliminary mappings that will allow us to experiment with the whole. heres what
+      im imagining: we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew
+      with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation
+      materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a
+      seven within seven structure: the seven church pauline formation transformed from rev''s seven churches, but then also paul as one of seven
+      and the other named epistolary positions mapped to rev''s seven. its time we mapped it out.'
+  correction:
+    claim: claim:rf-202-papyri
+    state_before:
+      assertion: withdrawn
+      retained_as: historical object
+      rung: I
+    state:
+      assertion: held
+      bounded_by: claim:rf-1735-physical
+      bound: kind of evidence
+      rung: I
+      ruling: 'the author, 2026-11-26 12:03: not evidence of priority; evidence that Pauline priority is inferential rather than grounded in material
+        witness'
+    edge_before:
+      relation: rebuts
+      licensed_dimension: establishment
+    edge:
+      relation: bounds
+      licensed_dimension: strength
+    corrections_before:
+    - original: claim:rf-202-papyri
+      correction: claim:rf-1735-physical
+      relation: rebuts
+    found_by: a capture of 2026-11-26 (revelation-first-thesis-all-aspects-aio-20261126) whose first seating followed this kernel's coding and
+      called the papyri table 'a withdrawn argument carried as live'
+    claims_added:
+    - claim:rf-202-inferential
+    - claim:rf-202-asymmetry
+    - claim:rf-202-unsettle
+    - claim:rf-1735-masquerade
+    - claim:rf-1735-chain-each-side
+    - claim:rf-1735-neutral
+  rebound:
+  - record: rec:1737
+    deposit: 1737
+    axn_before: AXN:0BFB.GENERATIVE.🏗️🎯⚡🌔🌇🕗
+    axn: AXN:0BFB.GENERATIVE.🔄◀️🔆🪟∮👉
+    sha256_before: 21551303e46966e0fe303014a9c970d305f975d379a384a25a59af7914617624
+    sha256: 6fd2ec2595b98d5b3da9374dd956db87b5d34559abeefa7a40ff40482cd3d290
+    change: '2026-11-23: standard References list added in place'
+  - record: rec:1741
+    deposit: 1741
+    axn_before: AXN:0C15.GENERATIVE.🧪🎨📖🕑⛳🌠
+    axn: AXN:0C15.GENERATIVE.⚙️🏁∮🗡️🌈🫶
+    sha256_before: 3986416354ea226898935977a1b93031e74332f4707f50626e9c5966f2718b1f
+    sha256: 32f0955a1ebd2debda3610bef6e6a45c2939cd2126f587017f6c97d3280d4127
+    change: '2026-11-23: standard References list added in place'
+  - record: rec:1747
+    deposit: 1747
+    axn_before: AXN:0C2A.MPAI.🧱🧊➕⛵🦅🧪
+    axn: AXN:0C2A.MPAI.🫶♠️△🎬📎🟡
+    sha256_before: 221d905c7f391e83ff476ab591938d32de77481bcf577b4c15963a44eca84dbf
+    sha256: bd8098f147c30393027c04fc19b3a1631127e2c0b3cb695f713128eca9965fc9
+    change: '2026-11-23: standard References list added in place'
+  moves_rebound: 438
+  stratum:
+    id: S00-after-the-first-kernel
+    label: 'After the first kernel: the Josephus thesis told and its texts seated, the names crossed, the recovery valued, the name defended (11–26
+      November)'
+  records:
+  - record: rec:1810
+    deposit: 1810
+    version: v1.1
+    axn: AXN:0D7C.GENERATIVE.🔬⭕🌘🔚🕔🪧
+    sha256: 37ee07f2664d451f2b4af5d598258219338aed9d02b6c8f3d07d262c05f415ed
+    body: R
+    body_secondary:
+    - D
+    - C
+    - G
+  - record: rec:1811
+    deposit: 1811
+    version: v1.1 (supersedes v1.0 in place, 2026-11-26)
+    axn: AXN:0D7E.MPAI.🪄🔴♎🔜▶️🐝
+    sha256: 3ec1aff6d37dfe5ca01fc19a80622b8bde5cc161ece5f31d57381e2902df1fa9
+    body: R
+    body_secondary: []
+  - record: rec:1765
+    deposit: 1765
+    version: v2.3
+    axn: AXN:0C78.GENERATIVE.🔔📏🎬👆🕔🚨
+    sha256: 2e4ff1b666c0862791408affbd32827b6b90c60d1b6e4452fc1d3b0c788e848f
+    body: H
+    body_secondary:
+    - R
+  - record: rec:1762
+    deposit: 1762
+    version: v1.0
+    axn: AXN:0C74.GENERATIVE.□🔧↗️🕑🪐⚡
+    sha256: 9d30da630d13fcc5db3eff988125ecef969d13ed4085b21f731994f2073c76a4
+    body: H
+    body_secondary:
+    - C
+  - record: rec:1760
+    deposit: 1760
+    version: v1.0
+    axn: AXN:0C72.DATASET.👁‍🗨🜁🎆🐝🌃📖
+    sha256: b0a0e77de2410c5346f1f93314ff8433ca93c5a1daff339921694d29701e6b04
+    body: H
+    body_secondary: []
+  - record: rec:1759
+    deposit: 1759
+    version: v1.0
+    axn: AXN:0C71.GENERATIVE.🔐🔗📜🗼📏⏪
+    sha256: fb33402a4fd7fcb4713b19c5de93fe63408e76dc5627241eed7fd6625384aaef
+    body: H
+    body_secondary:
+    - R
+  claims_added:
+  - claim:rf-202-inferential
+  - claim:rf-202-asymmetry
+  - claim:rf-202-unsettle
+  - claim:rf-1735-masquerade
+  - claim:rf-1735-chain-each-side
+  - claim:rf-1735-neutral
+  - claim:rf-1810-not-demonstrate
+  - claim:rf-1810-conditional
+  - claim:rf-1810-early-insufficient
+  - claim:rf-1810-load
+  - claim:rf-1810-no-valuation
+  - claim:rf-1810-invalid-figure
+  - claim:rf-1810-excludes-v-vi
+  - claim:rf-1811-two-names
+  - claim:rf-1811-erasure
+  - claim:rf-1811-liquidation
+  - claim:rf-1811-homology
+  - claim:rf-1811-homology-limit
+  - claim:rf-1759-levels
+  - claim:rf-1759-one-intelligence
+  - claim:rf-1759-unresolved
+  - claim:rf-1760-text-layer
+  - claim:rf-1762-operation
+  - claim:rf-1762-inventories
+  - claim:rf-1765-standing
+  - claim:rf-1765-census
+  - claim:rf-site-vi-independent
+  - claim:rv-1802-order
+  - claim:rv-1802-existence-tax
+  - claim:rv-1802-filing
+  - claim:rf-1802-pin
+  - claim:rf-1798-governs
+  - claim:rf-1798-neither-proves
+  - claim:rf-1798-observers
+  - claim:rf-1798-not-nothing
+  - claim:rf-65-matrix
+  - claim:rf-65-forward-library
+  - claim:rf-65-fourfold
+  - claim:rf-1738-seat
+  - claim:rf-407-sequence
+  - claim:rf-407-runs
+  - claim:rf-639-operators
+  - claim:rf-1217-seed
+  - claim:rf-1217-john-transform
+  - claim:rf-1414-five
+  - claim:rf-1415-morphological
+  - claim:rf-1415-residue
+  - claim:rf-1416-classes
+  - claim:rf-1416-proportional
+  - claim:rf-1418-mbar
+  - claim:rf-1418-shared-source
+  - claim:rf-1735-triad-withheld
+  - claim:rf-1735-crown-run
+  - claim:rf-1747-thief
+  - claim:rf-1747-confession
+  - claim:rf-1747-census-owed
+  - claim:rf-1747-no-direction
+  - claim:rf-1746-hitzig
+  not_joined: '#1765 is the Josephus station of the Historical Logos (#1757) and is not added to this kernel''s joins on this pass; #1757 and
+    #1756 are not versioned'
+  not_folded: 'left as related work: #1795 (Why I Believe in Hell)'
+  moves: 'none written at v1.5; owed for #65, #828, #1484, #1738, #1751, #1759, #1760, #1762, #1765, #1798, #1802, #1810, #1811'
+  method: applied to the built v1.4 kernel by operator/v15_patch.py; the v1.4 builder was not re-run; second stage by operator/v15_patch_b.py
+  correction_rung_VI:
+    before:
+      depends_on:
+      - rung:V
+      consequence_of_defeat:
+      - rung:V
+      - rung:VI
+    after:
+      depends_on: []
+      strengthened_by:
+      - rung:V
+      consequence_of_defeat:
+      - rung:V
+    ruling: *id006
+    found_by: 'verify_fw.py T1 at v1.5: the two ladder pages no longer matched the hashes taken on 2026-11-08'
+    pages_rebound:
+    - page: site:ladder-heteronyms
+      sha256_before: 3eeb999bc8a0ace393c805a0ef194731c4986b324302cde805435e4bb7e1d890
+      sha256: a79accf5526c86d6cec67ceb1cae0de5fe01f88a242414fff5bc70925848929b
+      changes: '264e07b: rung VI independent of V; 882278a: rung V joined to the Josephus Thesis narrative (#1759)'
+    - page: site:ladder-logos
+      sha256_before: f7af2a32433f1fe4ae5a660f07eb26ecc288c7896665cd9eb6020f6187725f96
+      sha256: 356e0d544fdcf6360428143985ce10426a21d4343e29bd667fde7747542d8b68
+      changes: '264e07b: rung VI independent of V; 882278a: rung V joined to the Josephus Thesis narrative (#1759)'
+    claim_added: claim:rf-site-vi-independent
+  scan:
+    since_the_first_kernel:
+    - 1798
+    - 1802
+    missed_on_the_first_pass:
+    - 65
+    - 1738
+    records:
+    - record: rec:1802
+      deposit: 1802
+      version: v1.0
+      axn: AXN:0D45.GENERATIVE.🟠🪧🚨📖↙️∞
+      sha256: c24dc041dcff1379fbccf18adf21746fc2b65f6c1874b900740ca06cd66612b4
+      body: R
+      body_secondary:
+      - D
+      - G
+      stratum: S00-after-the-first-kernel
+    - record: rec:1798
+      deposit: 1798
+      version: v1.2
+      axn: AXN:0D33.GENERATIVE.🕛🌒🏗️🏺🔩∮
+      sha256: 6d01212f3195d4621af5579539e5f523e1344571233c131d20843c4aef1212fa
+      body: H
+      body_secondary:
+      - R
+      stratum: S00-after-the-first-kernel
+    - record: rec:65
+      deposit: 65
+      version: v1.0
+      axn: AXN:021E.EMPIRICAL.🌋🜁🧬🔩✨🍄
+      sha256: 15a03b31e979c7c14c93b0d928c069bb24661ef900c66372e0dcfe4f10631678
+      body: H
+      body_secondary:
+      - G
+      stratum: S6-space-ark
+    - record: rec:1738
+      deposit: 1738
+      version: v1.0
+      axn: AXN:0BFC.DATASET.🕛💙🎭🟣🐝🏙️
+      sha256: 6dcb84c67de5717405f086e8c6bbcc18d92baa215edf7dfc04e19e4dcb863a67
+      body: D
+      body_secondary: []
+      stratum: S1-standing-audited
+    read_and_left_out:
+      '1795': 'Why I Believe in Hell: does not bear on the framework'
+      '1458': 'The Echo and the Stamp: names Revelation First as a keyword only'
+      1496, 1512, 1513, 1533: 'the Ω programme''s loss model, reception edges and Qurʾanic protocol: the Sappho line''s instruments, joined through
+        #1493–#1495 and #1511'
+      1498, 1514, 1522: 'the build programme and the seated corpora: infrastructure; the papyri panel is held at #1510'
+    method: 'registry scan by keyword and by reference to #202, #1217, #1735 and the site, then each candidate read at its passages on Revelation'
+  unfoldings:
+    arrows: 24
+    claims_added_as_warrants:
+    - claim:rf-407-sequence
+    - claim:rf-407-runs
+    - claim:rf-639-operators
+    - claim:rf-1217-seed
+    - claim:rf-1217-john-transform
+    - claim:rf-1414-five
+    - claim:rf-1415-morphological
+    - claim:rf-1415-residue
+    - claim:rf-1416-classes
+    - claim:rf-1416-proportional
+    - claim:rf-1418-mbar
+    - claim:rf-1418-shared-source
+    - claim:rf-1735-triad-withheld
+    - claim:rf-1735-crown-run
+    - claim:rf-1747-thief
+    - claim:rf-1747-confession
+    - claim:rf-1747-census-owed
+    - claim:rf-1747-no-direction
+    - claim:rf-1746-hitzig
+    transform_procedure_sources_before:
+      transforms.json: 1ca0030627393e33349bb6242fd99524bde08b07d8b0fb802032275dd2dd026e
+      james/derivation.json: e9f9b60d5a3ce79634b04344935366a5db5df4a255b2fbe35140d3272c8c8a18
+    outline: proposed, for ruling
+unfoldings:
+  rule: 'A compressed map of every arrow the records draw from Revelation to another book of the New Testament, each at its own grain and state,
+    and an outline of the total programme. A map is not a derivation: an arrow counts for what its state says and no more, and ''The comparison
+    is between inferences. The burden is symmetrical.'' (site /unfolding/). Grades are ''the evaluation''s, offered for ruling, not settled canon''
+    (the slate of 2026-07-28).'
+  direction: 'outward, Revelation to the later books (rung IV). The foldings in, Sappho 31 and Philo into the Apocalypse''s channel (#1493–#1495,
+    #1511, #1758), are the kernel''s joins and are not repeated here.'
+  states:
+    run: 'an executable derivation: typed seed elements, declared rules, emissions matched verse by verse, coverage counted, residue displayed'
+    worked: 'derivation grade: seed, rules, emissions and an honesty panel stating the shared-source alternative'
+    mapped: a letter mapped to an epistle with a grade, its class and its residue stated; granularity proportional to evidence
+    drawn: an arrow drawn and not run; direction open
+    withheld: markedness found; the arrow withheld by a date held under the chronology under examination
+    observed: a lexical observation awaiting a census; no derivation claimed
+    named: 'stated at the founding grain (#407, #639, #65, #1217); no seed inventory, no rules, no residue'
+    unresolved: split between targets and left split
+  classes:
+    M: elaborative unfolding — the seed's structure expanded, its terms retained, its ruling kept
+    M̄: adversarial unfolding — the seed's terms retained, its ruling negotiated or inverted; the epistle argues with its seed
+    X: canonical mechanism — the exchange or carriage of the letter recorded in the canon itself
+  falsification: Identify NT passages that cannot be derived from Revelation through any plausible transform — these are the counterevidence.
+    The transform graph is the object to be broken, not merely admired.
+  procedure: 'transform_procedure (this kernel): steps, evidence kinds, failure rule, the frozen-operator precedent'
+  arrows:
+  - id: letter:ephesus
+    seed: Rev 2:1–7
+    targets:
+    - 1 Jn 3:11
+    - 1 Jn 2:7
+    - 1 Jn 4:1
+    - 1 Jn 2:19
+    books:
+    - 1 John
+    state: mapped
+    epistle: 1 John
+    position: John
+    grade: B+
+    cls: M
+    operations:
+    - RESTORE
+    - FORENSICIZE
+    stated_limit: 'The tree-of-life promise reaches 1 John only as the zōē aiōnios theme (5:11–13) — thematic, not lexical. Residue: Cain (3:12),
+      water-blood-Spirit (5:6–8), the idols closing (5:21). Curiosity cutting against the nominal alternative: ''in Ephesus'' is absent from the
+      earliest witnesses of Ephesians (P46, ℵ*, B*).'
+    records:
+    - 1416
+    warrants:
+    - rf-1416-proportional
+  - id: letter:smyrna
+    seed: Rev 2:8–11
+    targets:
+    - Jas 1:1
+    - Jas 1:12
+    - Jas 1:13–14
+    - Jas 1:15
+    - Jas 1:19, 1:25
+    - Jas 1:22
+    - Jas 1:26
+    - Jas 1:2–4
+    - Jas 1:4
+    - Jas 1:9–11
+    - Jas 2:14
+    - Jas 2:2
+    - Jas 2:5
+    - Jas 2:6–7
+    - Jas 5:10–11
+    - Jas 5:1–3
+    - Jas 5:20
+    - Jas 5:7–8
+    books:
+    - James
+    state: run
+    epistle: James
+    position: James
+    grade: A
+    cls: M
+    operations:
+    - R1 EPISTOLARIZE
+    - R2 THEOLOGIZE
+    - R3 CITE-PROMISE
+    - R4 SOCIALIZE
+    - R5 POSSESS
+    - R6 NARRATIVIZE
+    - R7 ECONOMIZE
+    - R8 IMPERATIVIZE
+    - R9 ADJUDICATE
+    stated_limit: The granular executable case — eleven elements, nine rules, two unique-in-canon anchors, the dōsō→epēngeilato arrow, residue
+      displayed. Run it at the link.
+    anchors:
+    - 'ton stephanon tēs zōēs: Rev 2:10 ↔ Jas 1:12 (unique pair in canon)'
+    - 'synagōgē for the believing assembly: Rev 2:9 (contested) ↔ Jas 2:2 (possessed) (unique among the epistles)'
+    - 'ptōchos/plousios inversion: Rev 2:9 ↔ Jas 2:5, 1:9–11 (shared terms, inverted in both)'
+    - 'peirazō → dokimos sequence: Rev 2:10 ↔ Jas 1:12, 1:2–3 (shared trial-approval architecture)'
+    - 'blasphēm-: Rev 2:9 (blasphēmian) ↔ Jas 2:7 (blasphēmousin) (sole occurrence in James)'
+    - 'ginou → ginesthe: Rev 2:10 (ginou pistos) ↔ Jas 1:22 (ginesthe poiētai) (same imperative verb, singular → plural)'
+    - 'legō + einai/echein … not: Rev 2:9 ↔ Jas 2:14, 1:26 (shared claim formula)'
+    coverage: 13 derived pericopes; residue 6 pericopes
+    uniformity: '6 of 9 rules are one operation (family: expand); 2 carry direction (anchor); 1 frames'
+    residue:
+    - 'Jas 3:1–12 (the tongue): open residue'
+    - 'Jas 2:14–26 (faith and works): partly derived'
+    - 'Jas 3:13–18 (wisdom from above): open residue'
+    - 'Jas 5:12 (oaths): other-tradition candidate'
+    - 'Jas 5:14–15 (anointing the sick): open residue'
+    - 'Jas 4:13–17 (the merchants): open residue'
+    ordering: 'open. The seed opens on S1 and closes on S9 (the second death); James opens on 1:1 and closes on 5:19–20 (a soul saved from death).
+      The interior order is not kept: the 2:2–7 knot gathers 2:9–2:11 out of sequence. Not yet measured.'
+    surface: working surface past the deposited v1.0 since 2026-09-27; the deposit stays as frozen
+    records:
+    - 1416
+    - 1415
+    - 1735
+    warrants:
+    - rf-1416-smyrna
+    - rf-1415-morphological
+    - rf-1415-residue
+    - rf-1735-crown-run
+  - id: letter:pergamum
+    seed: Rev 2:12–17
+    targets:
+    - 1 Cor 8:1, 8
+    - 1 Cor 10:8
+    - 1 Cor 10:3
+    - 1 Cor 8:9
+    books:
+    - 1 Corinthians
+    state: mapped
+    epistle: 1 Corinthians 8–10
+    position: Paul
+    grade: A−
+    cls: M̄
+    operations:
+    - PERMIT⁻
+    - COUNTER-EXEMPLIFY
+    - TYPOLOGIZE
+    - GUARD
+    stated_limit: 'Four seed elements land in one Corinthian pericope — the densest knot in the space. But the class is M̄: the epistle NEGOTIATES
+      its seed, retaining every term while inverting the ruling; under Revelation-first the seed already knows the unfolding it must resist. Suggestive,
+      not probative: the white stone''s new name against the renamed apostle (the Saul→Paul mediation runs through Acts 13:9). Residue: Antipas
+      has no Corinthian unfold (his apparatus is held at deposit #165, the Pergamon Counter-Archive); Satan''s throne is frame, not lexical match.'
+    records:
+    - 1416
+    - 165
+    warrants:
+    - rf-1416-classes
+    - rf-1416-proportional
+  - id: letter:thyatira
+    seed: Rev 2:18–29
+    targets:
+    - Phil 1:9
+    - Phil 2:15–16
+    - Phil 4:1
+    books:
+    - Philippians
+    state: mapped
+    epistle: Philippians
+    position: the Lydia line
+    grade: B−
+    cls: M
+    operations:
+    - AMPLIFY
+    - LUMINATE
+    stated_limit: 'The route runs through a person: Lydia of Thyatira, seller of purple, is the one named Thyatiran in the NT — and she founds
+      the Philippian assembly (Acts 16:14). The letter reaches its epistle by carriage. Mediated through Acts, therefore B−. Jezebel is residue:
+      no Philippian unfold.'
+    mediated_by: Acts 16:14 (Lydia of Thyatira)
+    records:
+    - 1416
+    warrants:
+    - rf-1416-proportional
+  - id: letter:sardis
+    seed: Rev 3:1–6
+    targets:
+    - 1 Thess 5:2
+    - 1 Thess 5:6
+    - 1 Thess 5:10
+    books:
+    - 1 Thessalonians
+    state: mapped
+    epistle: 1 Thessalonians
+    position: the watchful hand
+    grade: B
+    cls: M
+    operations:
+    - ESCHATOLOGIZE
+    - WAKE
+    stated_limit: 'Two shared collocations, neither unique: the thief also at 2 Pet 3:10 and in the Jesus-tradition. The white-raiment element
+      finds no Thessalonian unfold. Grade held at B.'
+    records:
+    - 1416
+    warrants:
+    - rf-1416-proportional
+  - id: letter:philadelphia
+    seed: Rev 3:7–13
+    targets:
+    - 1 Thess 4:9
+    - Heb 13:1
+    books:
+    - 1 Thessalonians
+    - Hebrews
+    state: unresolved
+    epistle: 1 Thess 4:9 / Hebrews 13:1 — unresolved
+    position: unresolved
+    grade: C+
+    cls: M
+    operations:
+    - DECLINE
+    stated_limit: 'Split, and left split. The open door is Pauline mission idiom (1 Cor 16:9; 2 Cor 2:12; Col 4:3) — distributed, not concentrated.
+      Possible reading: Philadelphia, the letter with no rebuke, is the seed whose unfolding is distributed rather than gathered — kept, continued,
+      never argued. Grade C+ held; heteronym unresolved.'
+    records:
+    - 1416
+    warrants:
+    - rf-1416-proportional
+  - id: letter:laodicea
+    seed: Rev 3:14–22
+    targets:
+    - Col 1:15, 18
+    - Col 2:1–3
+    - Col 3:9–12
+    - Col 4:16
+    books:
+    - Colossians
+    state: mapped
+    epistle: Colossians
+    position: Epaphras (the deutero-Pauline hand)
+    grade: A
+    cls: X
+    operations:
+    - TITLE-TRANSFER
+    - ANSWER-BY-NAME
+    - RECLOTHE
+    - EXCHANGE
+    stated_limit: 'The strongest canonical-mechanism case, with one near-unique lexical anchor. Residue stated: the lukewarm/spew figure, the
+      fire-tried gold, the door-knock-and-sup, and the throne promise find no Colossian unfolds — their elaborations, where they exist, are elsewhere.
+      The eyesalve reaches Colossians only as the knowledge-and-understanding prayer (1:9; 2:2) — thematic. Heteronym: the letter names its own
+      minister for the Lycus valley — Epaphras, ''one of you,'' laboring ''for them in Laodicea'' (4:12–13).'
+    records:
+    - 1416
+    warrants:
+    - rf-1416-classes
+    - rf-1416-proportional
+  - id: transform:M1
+    seed: Revelation 2–3
+    targets:
+    - Gal 1:2
+    - 1 Thess 1:2
+    - Gal 3:1
+    - 2 Tim 4:8
+    books:
+    - Galatians
+    - 1 Thessalonians
+    - 2 Timothy
+    state: mapped
+    name: Letters → Epistles
+    grade: A
+    cls: M
+    operations:
+    - EXTRACT
+    - EXPAND
+    - SPECIFY
+    - RETAIN
+    granular_case: letter:smyrna
+    records:
+    - 1414
+    - 1415
+    warrants:
+    - rf-1414-five
+    - rf-1217-seed
+  - id: transform:M2
+    seed: Rev 1:20; Rev 1:13; Rev 2:1
+    targets:
+    - Eph 5:32
+    - Eph 3:9–10
+    - 1 Cor 12:12
+    - Col 1:18
+    - 2 Cor 6:16
+    books:
+    - 1 Corinthians
+    - 2 Corinthians
+    - Ephesians
+    - Colossians
+    state: worked
+    name: Lampstands → Ecclesiology
+    grade: B+
+    cls: M
+    operations:
+    - MYSTERIZE
+    - EMBODY
+    - INDWELL
+    stated_limit: 'The walking-among is Leviticus 26:12''s in origin — 2 Cor 6:16 cites it as scripture, and the shared-source reading (both texts
+      drawing the same well) stands as the standing alternative. The angels of the churches find no epistolary unfold; the episkopos suggestion
+      is speculation and stays out. Grade B+: the mystērion-ekklēsia collocation is the anchor; the rest is architecture.'
+    records:
+    - 1414
+    - 1418
+    warrants:
+    - rf-1414-five
+    - rf-1418-shared-source
+  - id: transform:M3
+    seed: Rev 5:6; Rev 5:9; Rev 1:5; 7:14
+    targets:
+    - 1 Cor 6:20
+    - 1 Pet 1:18–19
+    - Heb 9:12
+    books:
+    - 1 Corinthians
+    - Hebrews
+    - 1 Peter
+    state: worked
+    name: Lamb → Atonement
+    grade: A−
+    cls: M
+    operations:
+    - PRICE
+    - SPOTLESS
+    - PERPETUATE
+    stated_limit: Revelation says arnion (28 times); the epistles say amnos (1 Pet 1:19; cf. Jn 1:29, Acts 8:32). The anchor is figure-plus-function
+      and the held purchase-verb, not the noun — and Isaiah 53 stands behind the epistolary lamb as the shared prophetic source. Grade A−.
+    records:
+    - 1414
+    - 1418
+    warrants:
+    - rf-1414-five
+    - rf-1418-shared-source
+  - id: transform:M4
+    seed: Rev 21:1; Rev 21:2; Rev 21:5; Rev 21:14
+    targets:
+    - 2 Pet 3:13
+    - Gal 4:26
+    - Heb 12:22
+    - Heb 11:10
+    - Heb 13:14
+    books:
+    - Galatians
+    - Hebrews
+    - 2 Peter
+    state: worked
+    name: New Jerusalem → Eschatology
+    grade: A
+    cls: M
+    operations:
+    - CITE-PROMISE
+    - MOTHER
+    - APPROACH
+    stated_limit: Isaiah 65:17 and 66:22 are the prophetic source of new-heavens-new-earth, and the shared-source reading of 2 Pet 3:13 stands
+      as the standing alternative; the claim rides the citation-grammar (epangelma — whose direct-speech promising, within the canon, is the throne's)
+      plus the foundations collocation. Grade A.
+    records:
+    - 1414
+    - 1418
+    warrants:
+    - rf-1414-five
+    - rf-1418-shared-source
+  - id: transform:M5
+    seed: Rev 13:2; Rev 13:13–14; Rev 13:8, 15; Rev 13:16–17
+    targets:
+    - 1 Jn 2:18
+    - 2 Thess 2:3–4
+    - 2 Thess 2:9
+    - Rom 13:1
+    - 1 Pet 2:13, 17
+    books:
+    - Romans
+    - 2 Thessalonians
+    - 1 Peter
+    - 1 John
+    state: worked
+    name: Beast → Political Theology
+    grade: A−
+    cls: M+M̄
+    operations:
+    - CITE-TEACHING
+    - PERSONALIZE
+    - INVERT⁻
+    stated_limit: 'Daniel 7 is the beast''s iconographic source, and the shared-apocalyptic reading stands. The 2 Thessalonians relation is argued
+      in both directions in the scholarship, and the claim-discipline governs: priority here is a competing inference, not asserted fact. The
+      M̄ class is the finding: whichever direction one runs the dependency, Rev 13 and Rom 13 rule the same exousia oppositely, and only one order
+      makes the polemic prophetic rather than corrective. Grade A−.'
+    records:
+    - 1414
+    - 1418
+    warrants:
+    - rf-1414-five
+    - rf-1418-shared-source
+    - rf-1418-mbar
+  - id: article:triad
+    seed: Rev 2:2 (ἔργον, κόπος, ὑπομονή)
+    targets:
+    - 1 Thess 1:3
+    books:
+    - 1 Thessalonians
+    state: withheld
+    stated_limit: '1 Thessalonians is held to its received date by the chain of #1735 §II; the probative unit is the ordered cluster, not any
+      one noun'
+    records:
+    - 1735
+    - 1802
+    warrants:
+    - rf-1735-triad-withheld
+    - rf-1802-pin
+  - id: article:hebrews-4
+    seed: Rev 1:12–20 (the opening scene)
+    targets:
+    - Heb 4:8–14
+    books:
+    - Hebrews
+    state: drawn
+    stated_limit: gathers the two Joshuas, the dividing word and the great high priest named Jesus; 'The direction is not run here.'
+    records:
+    - 1735
+    - 1758
+    warrants:
+    - rf-1735-v9-hebrews
+    - rf-1735-v9-hebrews-open
+  - id: q:thief
+    seed: Rev 3:3; 16:15
+    targets:
+    - Matt 24:43
+    - Luke 12:39
+    books:
+    - Matthew
+    - Luke
+    state: observed
+    records:
+    - 1747
+    warrants:
+    - rf-1747-thief
+    - rf-1747-census-owed
+  - id: q:confession
+    seed: Rev 3:5
+    targets:
+    - Matt 10:32
+    - Luke 12:8
+    books:
+    - Matthew
+    - Luke
+    state: observed
+    records:
+    - 1747
+    warrants:
+    - rf-1747-confession
+    - rf-1747-census-owed
+  - id: q:matt-24-30
+    seed: Rev 1:7
+    targets:
+    - Matt 24:30
+    books:
+    - Matthew
+    state: drawn
+    stated_limit: drawn by six critics, Hitzig (1843) to Merx (1902); the elements have extant sources in Dan 7:13, Zech 12:10–12 and Gen 12:3
+    records:
+    - 1746
+    - 1747
+    warrants:
+    - rf-1746-hitzig
+    - rf-1747-no-direction
+  - id: founding:rev1-attributes
+    seed: Rev 1:14–16
+    targets:
+    - Matt 17:2
+    - Mark 10:21
+    - Matt 7:29
+    - Matt 28:18
+    - Matt 10:34
+    books:
+    - Matthew
+    - Mark
+    state: named
+    records:
+    - 407
+    - 639
+    warrants:
+    - rf-407-runs
+  - id: founding:mark
+    seed: Rev 5 (the scroll, the Lamb)
+    targets:
+    - Mark 1:9
+    books:
+    - Mark
+    state: named
+    operations:
+    - ALGO_MIN (#407)
+    - narrative inversion (#639)
+    stated_limit: '#639 names ''Rev 5 → Mark 1: the scroll becomes the baptism'' at chapter grain; the verse is this map''s locus for the baptism'
+    records:
+    - 407
+    - 639
+    warrants:
+    - rf-407-runs
+    - rf-639-operators
+  - id: founding:matthew
+    seed: Revelation whole
+    targets:
+    - Matt 5:1
+    books:
+    - Matthew
+    state: named
+    operations:
+    - ALGO_JEWISH (#407)
+    - Torah fractal (#639)
+    stated_limit: no seed and no locus given beyond the Sermon as new Torah and five discourse blocks; the verse marks the Sermon
+    records:
+    - 407
+    - 639
+    warrants:
+    - rf-407-runs
+    - rf-639-operators
+  - id: founding:luke
+    seed: Revelation whole
+    targets:
+    - Luke 1:1
+    books:
+    - Luke
+    state: named
+    operations:
+    - ALGO_GENTILE (#407)
+    - historiographical veil (#639)
+    stated_limit: no seed and no locus given; the verse marks the historiographic preface
+    records:
+    - 407
+    - 639
+    warrants:
+    - rf-407-runs
+    - rf-639-operators
+  - id: founding:john
+    seed: Rev 19:13; 1:13; 5:6; 12; 19:11–16; 21
+    targets:
+    - John 1:1
+    - John 1:14
+    - John 1:29
+    - John 2:4
+    - John 19:2
+    - John 20:1
+    books:
+    - John
+    state: named
+    operations:
+    - ALGO_REFLEXIVE (#407)
+    - midrashic interiorization (#639)
+    records:
+    - 407
+    - 639
+    - 1217
+    warrants:
+    - rf-407-runs
+    - rf-639-operators
+    - rf-1217-john-transform
+  - id: founding:fourfold
+    seed: Rev 4:6–8 (the four living creatures)
+    targets:
+    - Matt 1:1
+    - Mark 1:1
+    - Luke 1:1
+    - John 1:1
+    books:
+    - Matthew
+    - Mark
+    - Luke
+    - John
+    state: named
+    stated_limit: the fourfold form of the gospel tradition, stated on the Josephus Thesis reading; the four incipits stand for the four books
+    records:
+    - 65
+    warrants:
+    - rf-65-fourfold
+  - id: founding:acts
+    seed: Revelation whole
+    targets:
+    - Acts 1:1
+    books:
+    - Acts
+    state: named
+    operations:
+    - historical framework (#407)
+    stated_limit: 'Acts is also the carrier in two mapped letters: Lydia (16:14) for Thyatira, Saul→Paul (13:9) for Pergamum'
+    records:
+    - 407
+    warrants:
+    - rf-407-sequence
+  by_book:
+    Matthew:
+      arrows:
+      - q:thief
+      - q:confession
+      - q:matt-24-30
+      - founding:rev1-attributes
+      - founding:matthew
+      - founding:fourfold
+      strongest_state: drawn
+      loci:
+      - Matt 10:32
+      - Matt 10:34
+      - Matt 17:2
+      - Matt 1:1
+      - Matt 24:30
+      - Matt 24:43
+      - Matt 28:18
+      - Matt 5:1
+      - Matt 7:29
+    Mark:
+      arrows:
+      - founding:rev1-attributes
+      - founding:mark
+      - founding:fourfold
+      strongest_state: named
+      loci:
+      - Mark 10:21
+      - Mark 1:1
+      - Mark 1:9
+    Luke:
+      arrows:
+      - q:thief
+      - q:confession
+      - founding:luke
+      - founding:fourfold
+      strongest_state: observed
+      loci:
+      - Luke 12:39
+      - Luke 12:8
+      - Luke 1:1
+    John:
+      arrows:
+      - founding:john
+      - founding:fourfold
+      strongest_state: named
+      loci:
+      - John 19:2
+      - John 1:1
+      - John 1:14
+      - John 1:29
+      - John 20:1
+      - John 2:4
+    Acts:
+      arrows:
+      - founding:acts
+      strongest_state: named
+      loci:
+      - Acts 1:1
+    Romans:
+      arrows:
+      - transform:M5
+      strongest_state: worked
+      loci:
+      - Rom 13:1
+    1 Corinthians:
+      arrows:
+      - letter:pergamum
+      - transform:M2
+      - transform:M3
+      strongest_state: worked
+      loci:
+      - 1 Cor 10:3
+      - 1 Cor 10:8
+      - 1 Cor 12:12
+      - 1 Cor 6:20
+      - 1 Cor 8:1, 8
+      - 1 Cor 8:9
+    2 Corinthians:
+      arrows:
+      - transform:M2
+      strongest_state: worked
+      loci:
+      - 2 Cor 6:16
+    Galatians:
+      arrows:
+      - transform:M1
+      - transform:M4
+      strongest_state: worked
+      loci:
+      - Gal 1:2
+      - Gal 3:1
+      - Gal 4:26
+    Ephesians:
+      arrows:
+      - transform:M2
+      strongest_state: worked
+      loci:
+      - Eph 3:9–10
+      - Eph 5:32
+    Philippians:
+      arrows:
+      - letter:thyatira
+      strongest_state: mapped
+      loci:
+      - Phil 1:9
+      - Phil 2:15–16
+      - Phil 4:1
+    Colossians:
+      arrows:
+      - letter:laodicea
+      - transform:M2
+      strongest_state: worked
+      loci:
+      - Col 1:15, 18
+      - Col 1:18
+      - Col 2:1–3
+      - Col 3:9–12
+      - Col 4:16
+    1 Thessalonians:
+      arrows:
+      - letter:sardis
+      - letter:philadelphia
+      - transform:M1
+      - article:triad
+      strongest_state: mapped
+      loci:
+      - 1 Thess 1:2
+      - 1 Thess 1:3
+      - 1 Thess 4:9
+      - 1 Thess 5:10
+      - 1 Thess 5:2
+      - 1 Thess 5:6
+    2 Thessalonians:
+      arrows:
+      - transform:M5
+      strongest_state: worked
+      loci:
+      - 2 Thess 2:3–4
+      - 2 Thess 2:9
+    1 Timothy:
+      arrows: []
+      strongest_state: none
+      loci: []
+    2 Timothy:
+      arrows:
+      - transform:M1
+      strongest_state: mapped
+      loci:
+      - 2 Tim 4:8
+    Titus:
+      arrows: []
+      strongest_state: none
+      loci: []
+    Philemon:
+      arrows: []
+      strongest_state: none
+      loci: []
+    Hebrews:
+      arrows:
+      - letter:philadelphia
+      - transform:M3
+      - transform:M4
+      - article:hebrews-4
+      strongest_state: worked
+      loci:
+      - Heb 11:10
+      - Heb 12:22
+      - Heb 13:1
+      - Heb 13:14
+      - Heb 4:8–14
+      - Heb 9:12
+    James:
+      arrows:
+      - letter:smyrna
+      strongest_state: run
+      loci:
+      - Jas 1:1
+      - Jas 1:12
+      - Jas 1:13–14
+      - Jas 1:15
+      - Jas 1:19, 1:25
+      - Jas 1:22
+      - Jas 1:26
+      - Jas 1:2–4
+      - Jas 1:4
+      - Jas 1:9–11
+      - Jas 2:14
+      - Jas 2:2
+      - Jas 2:5
+      - Jas 2:6–7
+      - Jas 5:10–11
+      - Jas 5:1–3
+      - Jas 5:20
+      - Jas 5:7–8
+    1 Peter:
+      arrows:
+      - transform:M3
+      - transform:M5
+      strongest_state: worked
+      loci:
+      - 1 Pet 1:18–19
+      - 1 Pet 2:13, 17
+    2 Peter:
+      arrows:
+      - transform:M4
+      strongest_state: worked
+      loci:
+      - 2 Pet 3:13
+    1 John:
+      arrows:
+      - letter:ephesus
+      - transform:M5
+      strongest_state: worked
+      loci:
+      - 1 Jn 2:18
+      - 1 Jn 2:19
+      - 1 Jn 2:7
+      - 1 Jn 3:11
+      - 1 Jn 4:1
+    2 John:
+      arrows: []
+      strongest_state: none
+      loci: []
+    3 John:
+      arrows: []
+      strongest_state: none
+      loci: []
+    Jude:
+      arrows: []
+      strongest_state: none
+      loci: []
+  counts:
+    arrows: 24
+    run: 1
+    worked: 4
+    mapped: 6
+    withheld: 1
+    drawn: 2
+    observed: 2
+    unresolved: 1
+    named: 7
+    books_with_an_arrow: 20
+    books_without:
+    - 1 Timothy
+    - Titus
+    - Philemon
+    - 2 John
+    - 3 John
+    - Jude
+    books_reached_above_the_founding_grain:
+    - Matthew
+    - Luke
+    - Romans
+    - 1 Corinthians
+    - 2 Corinthians
+    - Galatians
+    - Ephesians
+    - Philippians
+    - Colossians
+    - 1 Thessalonians
+    - 2 Thessalonians
+    - 2 Timothy
+    - Hebrews
+    - James
+    - 1 Peter
+    - 2 Peter
+    - 1 John
+    most_arrows:
+      Matthew: 6
+      Luke: 4
+      1 Thessalonians: 4
+      Hebrews: 4
+      Mark: 3
+      1 Corinthians: 3
+    operations_declared:
+    - ADJUDICATE
+    - AMPLIFY
+    - ANSWER-BY-NAME
+    - APPROACH
+    - CITE-PROMISE
+    - CITE-TEACHING
+    - COUNTER-EXEMPLIFY
+    - DECLINE
+    - ECONOMIZE
+    - EMBODY
+    - EPISTOLARIZE
+    - ESCHATOLOGIZE
+    - EXCHANGE
+    - EXPAND
+    - EXTRACT
+    - FORENSICIZE
+    - GUARD
+    - IMPERATIVIZE
+    - INDWELL
+    - INVERT⁻
+    - LUMINATE
+    - MOTHER
+    - MYSTERIZE
+    - NARRATIVIZE
+    - PERMIT⁻
+    - PERPETUATE
+    - PERSONALIZE
+    - POSSESS
+    - PRICE
+    - RECLOTHE
+    - RESTORE
+    - RETAIN
+    - SOCIALIZE
+    - SPECIFY
+    - SPOTLESS
+    - THEOLOGIZE
+    - TITLE-TRANSFER
+    - TYPOLOGIZE
+    - WAKE
+  not_claimed:
+  - 'The shared order of Matthew and Luke: ''not met; not claimed'' (#1747).'
+  - 'A derivation of the double tradition as a whole: two sayings are ''an observation awaiting a census'' (#1747).'
+  - 'The order of James against the order of the Smyrna letter: ''open… Not yet measured'' (the James working surface).'
+  - 'Any Gospel derived: the four Gospels and Acts stand at the founding grain, named and not run, apart from three Matthean and two Lukan loci
+    observed or drawn in #1746–#1747.'
+  - 'Seed inventory beyond Rev 1–3, 5, 13 and 21: the seals, trumpets and bowls, the two witnesses, chapters 12 and 17–20 and the close of the
+    book have no typed seed elements.'
+  outline_of_the_total_programme:
+    status: an outline proposed at v1.5 from the map above, for the author's ruling; it is no record's claim and nothing in it is asserted of
+      the texts
+    author_programme:
+      at: 2026-11-26 12:35
+      text: 'in fact - its time we built that map. we have some preliminary mappings that will allow us to experiment with the whole. heres what
+        im imagining: we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew
+        with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation
+        materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is
+        a seven within seven structure: the seven church pauline formation transformed from rev''s seven churches, but then also paul as one of
+        seven and the other named epistolary positions mapped to rev''s seven. its time we mapped it out.'
+      status: the author's statement of the map to be built; hypotheses, not findings. Carried here as the head of the outline; the mapping is
+        opened as a working file and is not part of this kernel
+      hypotheses:
+      - 'a fourfold: the four riders, the four creatures, the four names and the four Gospels'
+      - 'Matthew first, pressed from the mourning tribes (Matt 24:30 and Rev 1:7): a transform algorithm defined on Matthew, then used to work
+        out the other three'
+      - the epistles from James, the one run case
+      - 'a seven within seven: the Pauline seven-church formation transformed from Revelation''s seven churches, and Paul as one of seven named
+        epistolary positions mapped to Revelation''s seven'
+    object: 'Revelation unfolded to each of the twenty-six other books as an executable derivation, with the residue of every book displayed:
+      ''The transform graph is the object to be broken, not merely admired.'''
+    stages:
+    - n: 1
+      name: seed inventory
+      what: Revelation whole, segmented into typed seed elements in Greek, in one file
+      have: Smyrna, eleven elements (working surface); the other six letters, two to six each; M2–M5, three or four each
+      owed: Rev 4, 6–12, 14–20, 22
+    - n: 2
+      name: operator vocabulary, frozen
+      what: 'the declared operations gathered into one vocabulary with families (expand, anchor, frame) and classes (M, M̄, X), fixed before each
+        new test as #1494 fixed T'
+      have: 39 operation names across the run, worked and mapped arrows; families declared for James only
+      owed: families for the rest; a rule that an operation coined after scoring does not count
+    - n: 3
+      name: target census, book by book
+      what: every pericope of the target book classed derived, partly derived, residue or other-tradition, as James is
+      have: 'James: 13 derived pericopes; residue 6 pericopes'
+      owed: twenty-five books; first the mapped epistles (Colossians, 1 Corinthians 8–10, 1 John, 1 Thessalonians, Philippians)
+    - n: 4
+      name: antecedent map
+      what: for each arrow, the tradition available to both texts, stated before the direction is argued (#1735 §VI.3, step two)
+      have: Lev 26:12, Isa 53, Isa 65:17 and 66:22, Dan 7 (M2–M5); Dan 7:13, Zech 12:10–12, Gen 12:3 (Matt 24:30)
+      owed: the seven letters, per element
+    - n: 5
+      name: direction
+      what: 'the anchor rules, which alone carry direction: a word or form carried across and changed in grammar or standing, with the evidence
+        that would reverse the arrow stated first'
+      have: δώσω → ἐπηγγείλατο (Rev 2:10 → Jas 1:12); ἐπάγγελμα (2 Pet 3:13); Col 4:16, the exchange recorded in the canon
+      owed: one anchor rule per mapped arrow, or the arrow stays a map
+    - n: 6
+      name: order
+      what: whether the borrower keeps, gathers or scatters the order of the seed
+      have: 'the Jas 2:2–7 knot: ''The order is not kept; the gathering is.'''
+      owed: a measure; the shared order of Matthew and Luke, not claimed
+    - n: 7
+      name: the Gospels
+      what: the census of the double tradition against Rev 1–3, 16:15 and 22:7–20, then Matthew, where six critics already drew the arrow at 24:30
+      have: the thief, the confession, Matt 24:30; four parameter sets named at the founding grain
+      owed: everything else; the Gospels are the least mapped part of the programme and the largest
+    - n: 8
+      name: the residue ledger
+      what: 'one ledger of what does not derive, across the New Testament: the falsification surface of rung IV'
+      have: James, six pericopes; per-letter residue in prose
+      owed: the ledger
+    - n: 9
+      name: scoring by other hands
+      what: clauses and scoring rule handed to independent substrates with the target unnamed (lines_of_research)
+      have: 'the precedent, #1495: one adjudicator, one pass, replication invited'
+      owed: a run
+    order_of_work:
+    - version the James working surface, which has moved past the frozen v1.0
+    - 'Colossians and 1 Corinthians 8–10 to executable grade: the highest-graded mapped arrows, one of class X and one of class M̄'
+    - Hebrews, where 4 arrows already land from separate seeds
+    - the double-tradition census, then Matthew
+    - 'the books with no arrow: 1 Timothy, Titus, Philemon, 2 John, 3 John, Jude'
+    what_would_count_against: Identify NT passages that cannot be derived from Revelation through any plausible transform — these are the counterevidence.
+      The transform graph is the object to be broken, not merely admired.
+  sources:
+    unfolding/transforms.json: 1ca0030627393e33349bb6242fd99524bde08b07d8b0fb802032275dd2dd026e
+    unfolding/letters/letters.json: 5f26a961bb0ae2caf93d9a16a165dd80dd2e2f56199b9cc639cf0f250bcf2785
+    unfolding/james/derivation.json: e9f9b60d5a3ce79634b04344935366a5db5df4a255b2fbe35140d3272c8c8a18
+  site_commit: 21fe384

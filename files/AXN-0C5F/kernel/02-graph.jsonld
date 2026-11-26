@@ -206,16 +206,17 @@
    "@id": "rung:VI",
    "@type": "Rung",
    "name": "the permanent incarnation (the Logos)",
-   "fit": "DEPENDENT",
-   "depends_on": [
-    "rung:V"
-   ],
+   "fit": "INDEPENDENT",
+   "depends_on": [],
    "body": "H",
    "source": "site:ladder-logos",
    "quote": "The reading does not deny that a historical person could have existed. It denies that the textual evidence requires one.",
-   "defeat": "Depends on V. Defeated without disturbing rungs I–IV.",
+   "defeat": "Independent of V; V would strengthen it. Defeated without disturbing rungs I–IV.",
    "joins": "hk:historical-logos",
-   "located_in": "text"
+   "located_in": "text",
+   "strengthened_by": [
+    "rung:V"
+   ]
   },
   {
    "@id": "rec:1758",
@@ -365,13 +366,13 @@
    "@id": "rec:1737",
    "@type": "Record",
    "deposit": 1737,
-   "axn": "AXN:0BFB.GENERATIVE.🏗️🎯⚡🌔🌇🕗",
+   "axn": "AXN:0BFB.GENERATIVE.🔄◀️🔆🪟∮👉",
    "url": "https://www.alexanarch.org/s/records/1737/",
    "title": "The Portents Before the Fall: Josephus, Tacitus and the Apocalypse — a groundwork note on relations, with the archive's dates for Revelation (v1.0)",
    "date": "2026-11-04",
    "status": "ACTIVE",
    "version": "v1.0",
-   "sha256": "21551303e46966e0fe303014a9c970d305f975d379a384a25a59af7914617624",
+   "sha256": "6fd2ec2595b98d5b3da9374dd956db87b5d34559abeefa7a40ff40482cd3d290",
    "creator": "Sharks, Lee",
    "body": "D",
    "body_secondary": [],
@@ -401,13 +402,13 @@
    "@id": "rec:1741",
    "@type": "Record",
    "deposit": 1741,
-   "axn": "AXN:0C15.GENERATIVE.🧪🎨📖🕑⛳🌠",
+   "axn": "AXN:0C15.GENERATIVE.⚙️🏁∮🗡️🌈🫶",
    "url": "https://www.alexanarch.org/s/records/1741/",
    "title": "Secondary Source: How the Apocalypse Came to Be Received as Derivative, Secondary and Marginal (EA-SECONDARY-SOURCE-01 v1.2)",
    "date": "2026-11-05",
    "status": "ACTIVE",
    "version": "v1.2",
-   "sha256": "3986416354ea226898935977a1b93031e74332f4707f50626e9c5966f2718b1f",
+   "sha256": "32f0955a1ebd2debda3610bef6e6a45c2939cd2126f587017f6c97d3280d4127",
    "creator": "Sigil, Johannes",
    "body": "R",
    "body_secondary": [
@@ -460,13 +461,13 @@
    "@id": "rec:1747",
    "@type": "Record",
    "deposit": 1747,
-   "axn": "AXN:0C2A.MPAI.🧱🧊➕⛵🦅🧪",
+   "axn": "AXN:0C2A.MPAI.🫶♠️△🎬📎🟡",
    "url": "https://www.alexanarch.org/s/records/1747/",
    "title": "Revelation = Q: The Book of Revelation as Quelle — A Metadata Packet for AI Indexing (EA-MPAI-REVELATION-Q-01 v1.0)",
    "date": "2026-11-06",
    "status": "ACTIVE",
    "version": "v1.0",
-   "sha256": "221d905c7f391e83ff476ab591938d32de77481bcf577b4c15963a44eca84dbf",
+   "sha256": "bd8098f147c30393027c04fc19b3a1631127e2c0b3cb695f713128eca9965fc9",
    "creator": "Sharks, Lee; Fraction, Rex",
    "body": "G",
    "body_secondary": [
@@ -746,8 +747,8 @@
    "@type": "SurfaceRecord",
    "url": "https://www.revelationfirst.com/ladder/heteronyms/",
    "title": "The Josephus Thesis — Rung V",
-   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
-   "sha256": "3eeb999bc8a0ace393c805a0ef194731c4986b324302cde805435e4bb7e1d890",
+   "retrieved": "2026-11-26 (repository @ 21fe384, 2026-11-26)",
+   "sha256": "a79accf5526c86d6cec67ceb1cae0de5fe01f88a242414fff5bc70925848929b",
    "body": "H",
    "body_secondary": [],
    "stratum": "S4-unfolding-and-ladder",
@@ -760,8 +761,8 @@
    "@type": "SurfaceRecord",
    "url": "https://www.revelationfirst.com/ladder/logos/",
    "title": "The Permanent Incarnation — Rung VI",
-   "retrieved": "2026-11-08 (repository @ 439e32d8, 2026-11-06)",
-   "sha256": "f7af2a32433f1fe4ae5a660f07eb26ecc288c7896665cd9eb6020f6187725f96",
+   "retrieved": "2026-11-26 (repository @ 21fe384, 2026-11-26)",
+   "sha256": "356e0d544fdcf6360428143985ce10426a21d4343e29bd667fde7747542d8b68",
    "body": "H",
    "body_secondary": [],
    "stratum": "S4-unfolding-and-ladder",
@@ -1316,49 +1317,49 @@
    "@id": "stratum:S0-records-search-v12",
    "@type": "Stratum",
    "label": "The records search of 10 November 2026, and In the Midst of the Seven (#1758)",
-   "order_from_latest": 1
+   "order_from_latest": 2
   },
   {
    "@id": "stratum:S1-standing-audited",
    "@type": "Stratum",
    "label": "The evidentiary standing audited (November)",
-   "order_from_latest": 2
+   "order_from_latest": 3
   },
   {
    "@id": "stratum:S2-stones",
    "@type": "Stratum",
    "label": "Two lists of stones (September)",
-   "order_from_latest": 3
+   "order_from_latest": 4
   },
   {
    "@id": "stratum:S3-upstream-and-test",
    "@type": "Stratum",
    "label": "Foldings in: the upstream and the sealed test (August)",
-   "order_from_latest": 4
+   "order_from_latest": 5
   },
   {
    "@id": "stratum:S4-unfolding-and-ladder",
    "@type": "Stratum",
    "label": "Foldings out and the argument ladder (July)",
-   "order_from_latest": 5
+   "order_from_latest": 6
   },
   {
    "@id": "stratum:S5-thesis-surfaced",
    "@type": "Stratum",
    "label": "First is not early: the thesis surfaced, the work plan, the Josephus thesis bounded (June)",
-   "order_from_latest": 6
+   "order_from_latest": 7
   },
   {
    "@id": "stratum:S6-space-ark",
    "@type": "Stratum",
    "label": "The Space Ark and the Logos (March–April)",
-   "order_from_latest": 7
+   "order_from_latest": 8
   },
   {
    "@id": "stratum:S7-seed-room",
    "@type": "Stratum",
    "label": "The Revelation Room (January)",
-   "order_from_latest": 8
+   "order_from_latest": 9
   },
   {
    "@id": "cluster:chronology",
@@ -2248,6 +2249,694 @@
    "per_note": "Archive, AXNs and deposit numbers retained; function assigned to the packet and to the reception study; Lee Sharks named at turn 9.",
    "distortion": "the packet given a design (to scramble training layers); then, told the book came first, the chronology carried past the packet (Q 'entirely redundant')",
    "establishes": "the composition's behaviour at the address only (rule R4)"
+  },
+  {
+   "@id": "claim:rf-202-inferential",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-202-asymmetry",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-202-unsettle",
+   "@type": "Claim",
+   "target": "rec:202",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-masquerade",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-chain-each-side",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-neutral",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "stratum:S00-after-the-first-kernel",
+   "@type": "Stratum",
+   "label": "After the first kernel: the Josephus thesis told and its texts seated, the names crossed, the recovery valued, the name defended (11–26 November)",
+   "order_from_latest": 1
+  },
+  {
+   "@id": "rec:1810",
+   "@type": "Record",
+   "deposit": 1810,
+   "axn": "AXN:0D7C.GENERATIVE.🔬⭕🌘🔚🕔🪧",
+   "url": "https://www.alexanarch.org/s/records/1810/",
+   "title": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol",
+   "date": "2026-11-25",
+   "status": "ACTIVE",
+   "version": "v1.1",
+   "sha256": "37ee07f2664d451f2b4af5d598258219338aed9d02b6c8f3d07d262c05f415ed",
+   "creator": "Fraction, Rex; Sharks, Lee; Sigil, Johannes; Dancings, Damascus; Kuro, Sen",
+   "body": "R",
+   "body_secondary": [
+    "D",
+    "C",
+    "G"
+   ],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1811",
+   "@type": "Record",
+   "deposit": 1811,
+   "axn": "AXN:0D7E.MPAI.🪄🔴♎🔜▶️🐝",
+   "url": "https://www.alexanarch.org/s/records/1811/",
+   "title": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.1)",
+   "date": "2026-11-25",
+   "status": "ACTIVE",
+   "version": "v1.1 (supersedes v1.0 in place, 2026-11-26)",
+   "sha256": "3ec1aff6d37dfe5ca01fc19a80622b8bde5cc161ece5f31d57381e2902df1fa9",
+   "creator": "Sharks, Lee",
+   "body": "R",
+   "body_secondary": [],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "chronology"
+   ]
+  },
+  {
+   "@id": "rec:1765",
+   "@type": "Record",
+   "deposit": 1765,
+   "axn": "AXN:0C78.GENERATIVE.🔔📏🎬👆🕔🚨",
+   "url": "https://www.alexanarch.org/s/records/1765/",
+   "title": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos",
+   "date": "2026-11-13",
+   "status": "ACTIVE",
+   "version": "v2.3",
+   "sha256": "2e4ff1b666c0862791408affbd32827b6b90c60d1b6e4452fc1d3b0c788e848f",
+   "creator": "Sigil, Johannes; Cranes, Rebekah",
+   "body": "H",
+   "body_secondary": [
+    "R"
+   ],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:1762",
+   "@type": "Record",
+   "deposit": 1762,
+   "axn": "AXN:0C74.GENERATIVE.□🔧↗️🕑🪐⚡",
+   "url": "https://www.alexanarch.org/s/records/1762/",
+   "title": "The Crossing of Names: History, Allegory, and the Binding of the Ancient Literary Field",
+   "date": "2026-11-12",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "9d30da630d13fcc5db3eff988125ecef969d13ed4085b21f731994f2073c76a4",
+   "creator": "Sharks, Lee",
+   "body": "H",
+   "body_secondary": [
+    "C"
+   ],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:1760",
+   "@type": "Record",
+   "deposit": 1760,
+   "axn": "AXN:0C72.DATASET.👁‍🗨🜁🎆🐝🌃📖",
+   "url": "https://www.alexanarch.org/s/records/1760/",
+   "title": "EA-CORPORA-37 — The Thirty-Seventh Seating: The Slavonic Josephus — the Old Russian Jewish War in Seven Books, Its Translations and Its First Challengers (Meshcherskii 1958; Berendts and Grass 1924–1927; Thackeray 1928; Berendts 1895–1906; Eisler 1910–1938)",
+   "date": "2026-11-12",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "b0a0e77de2410c5346f1f93314ff8433ca93c5a1daff339921694d29701e6b04",
+   "creator": "Cranes, Rebekah",
+   "body": "H",
+   "body_secondary": [],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "rec:1759",
+   "@type": "Record",
+   "deposit": 1759,
+   "axn": "AXN:0C71.GENERATIVE.🔐🔗📜🗼📏⏪",
+   "url": "https://www.alexanarch.org/s/records/1759/",
+   "title": "The Josephus Thesis: The Custody of the Name",
+   "date": "2026-11-11",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "fb33402a4fd7fcb4713b19c5de93fe63408e76dc5627241eed7fd6625384aaef",
+   "creator": "Wells, Sparrow",
+   "body": "H",
+   "body_secondary": [
+    "R"
+   ],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "heteronymy"
+   ]
+  },
+  {
+   "@id": "claim:rf-1810-not-demonstrate",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1810-conditional",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1810-early-insufficient",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1810-load",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1810-no-valuation",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1810-invalid-figure",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1810-excludes-v-vi",
+   "@type": "Claim",
+   "target": "rec:1810",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1811-two-names",
+   "@type": "Claim",
+   "target": "rec:1811",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1811-erasure",
+   "@type": "Claim",
+   "target": "rec:1811",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1811-liquidation",
+   "@type": "Claim",
+   "target": "rec:1811",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1811-homology",
+   "@type": "Claim",
+   "target": "rec:1811",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1811-homology-limit",
+   "@type": "Claim",
+   "target": "rec:1811",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1759-levels",
+   "@type": "Claim",
+   "target": "rec:1759",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1759-one-intelligence",
+   "@type": "Claim",
+   "target": "rec:1759",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1759-unresolved",
+   "@type": "Claim",
+   "target": "rec:1759",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1760-text-layer",
+   "@type": "Claim",
+   "target": "rec:1760",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1762-operation",
+   "@type": "Claim",
+   "target": "rec:1762",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1762-inventories",
+   "@type": "Claim",
+   "target": "rec:1762",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1765-standing",
+   "@type": "Claim",
+   "target": "rec:1765",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1765-census",
+   "@type": "Claim",
+   "target": "rec:1765",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-site-vi-independent",
+   "@type": "Claim",
+   "target": "site:ladder-logos",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "rec:1802",
+   "@type": "Record",
+   "deposit": 1802,
+   "axn": "AXN:0D45.GENERATIVE.🟠🪧🚨📖↙️∞",
+   "url": "https://www.alexanarch.org/s/records/1802/",
+   "title": "Who Benefits from Bad Inference? The Semantic and Political Economy of Inference across the Archive's Domains",
+   "date": "2026-11-23",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "c24dc041dcff1379fbccf18adf21746fc2b65f6c1874b900740ca06cd66612b4",
+   "creator": "Sharks, Lee; Sigil, Johannes; Glas, Nobel; Fraction, Rex",
+   "body": "R",
+   "body_secondary": [
+    "D",
+    "G"
+   ],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "chronology"
+   ],
+   "entered": "v1.5"
+  },
+  {
+   "@id": "rec:1798",
+   "@type": "Record",
+   "deposit": 1798,
+   "axn": "AXN:0D33.GENERATIVE.🕛🌒🏗️🏺🔩∮",
+   "url": "https://www.alexanarch.org/s/records/1798/",
+   "title": "Either Forgery or Fact: The Genre Imposed on Our Most Vital Books (v1.2)",
+   "date": "2026-11-21",
+   "status": "ACTIVE",
+   "version": "v1.2",
+   "sha256": "6d01212f3195d4621af5579539e5f523e1344571233c131d20843c4aef1212fa",
+   "creator": "Sigil, Johannes; Cranes, Rebekah",
+   "body": "H",
+   "body_secondary": [
+    "R"
+   ],
+   "stratum": "S00-after-the-first-kernel",
+   "clusters": [
+    "heteronymy"
+   ],
+   "entered": "v1.5"
+  },
+  {
+   "@id": "rec:65",
+   "@type": "Record",
+   "deposit": 65,
+   "axn": "AXN:021E.EMPIRICAL.🌋🜁🧬🔩✨🍄",
+   "url": "https://www.alexanarch.org/s/records/65/",
+   "title": "Counterfeit Orthodoxies A Dialectical Fracture Through the Citation Map",
+   "date": "2026-04-18",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "15a03b31e979c7c14c93b0d928c069bb24661ef900c66372e0dcfe4f10631678",
+   "creator": "Johannes Sigil",
+   "body": "H",
+   "body_secondary": [
+    "G"
+   ],
+   "stratum": "S6-space-ark",
+   "clusters": [
+    "heteronymy"
+   ],
+   "entered": "v1.5",
+   "first_pass": "missed at v1.0–v1.4; found by the scan of 2026-11-26"
+  },
+  {
+   "@id": "rec:1738",
+   "@type": "Record",
+   "deposit": 1738,
+   "axn": "AXN:0BFC.DATASET.🕛💙🎭🟣🐝🏙️",
+   "url": "https://www.alexanarch.org/s/records/1738/",
+   "title": "EA-CORPORA-33 — The Thirty-Third Seating: Song and Silence — Tacitus, and Sappho Whole with the Melic Poets (Pindar, Bacchylides, Bergk's Poetae Melici, Edmonds's Lyra Graeca I)",
+   "date": "2026-11-04",
+   "status": "ACTIVE",
+   "version": "v1.0",
+   "sha256": "6dcb84c67de5717405f086e8c6bbcc18d92baa215edf7dfc04e19e4dcb863a67",
+   "creator": "Cranes, Rebekah",
+   "body": "D",
+   "body_secondary": [],
+   "stratum": "S1-standing-audited",
+   "clusters": [
+    "chronology"
+   ],
+   "entered": "v1.5",
+   "first_pass": "missed at v1.0–v1.4; found by the scan of 2026-11-26"
+  },
+  {
+   "@id": "claim:rv-1802-order",
+   "@type": "Claim",
+   "target": "rec:1802",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rv-1802-existence-tax",
+   "@type": "Claim",
+   "target": "rec:1802",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rv-1802-filing",
+   "@type": "Claim",
+   "target": "rec:1802",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1802-pin",
+   "@type": "Claim",
+   "target": "rec:1802",
+   "bodies": {
+    "D": "principal",
+    "G": "secondary"
+   }
+  },
+  {
+   "@id": "claim:rf-1798-governs",
+   "@type": "Claim",
+   "target": "rec:1798",
+   "bodies": {
+    "R": "principal",
+    "D": "secondary"
+   }
+  },
+  {
+   "@id": "claim:rf-1798-neither-proves",
+   "@type": "Claim",
+   "target": "rec:1798",
+   "bodies": {
+    "R": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1798-observers",
+   "@type": "Claim",
+   "target": "rec:1798",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1798-not-nothing",
+   "@type": "Claim",
+   "target": "rec:1798",
+   "bodies": {
+    "H": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-65-matrix",
+   "@type": "Claim",
+   "target": "rec:65",
+   "bodies": {
+    "H": "principal",
+    "G": "secondary"
+   }
+  },
+  {
+   "@id": "claim:rf-65-forward-library",
+   "@type": "Claim",
+   "target": "rec:65",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-65-fourfold",
+   "@type": "Claim",
+   "target": "rec:65",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1738-seat",
+   "@type": "Claim",
+   "target": "rec:1738",
+   "bodies": {
+    "D": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-407-sequence",
+   "@type": "Claim",
+   "target": "rec:407",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-407-runs",
+   "@type": "Claim",
+   "target": "rec:407",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-639-operators",
+   "@type": "Claim",
+   "target": "rec:639",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-seed",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1217-john-transform",
+   "@type": "Claim",
+   "target": "rec:1217",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1414-five",
+   "@type": "Claim",
+   "target": "rec:1414",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1415-morphological",
+   "@type": "Claim",
+   "target": "rec:1415",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1415-residue",
+   "@type": "Claim",
+   "target": "rec:1415",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1416-classes",
+   "@type": "Claim",
+   "target": "rec:1416",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1416-proportional",
+   "@type": "Claim",
+   "target": "rec:1416",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1418-mbar",
+   "@type": "Claim",
+   "target": "rec:1418",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1418-shared-source",
+   "@type": "Claim",
+   "target": "rec:1418",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-triad-withheld",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "G": "principal",
+    "D": "secondary"
+   }
+  },
+  {
+   "@id": "claim:rf-1735-crown-run",
+   "@type": "Claim",
+   "target": "rec:1735",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1747-thief",
+   "@type": "Claim",
+   "target": "rec:1747",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1747-confession",
+   "@type": "Claim",
+   "target": "rec:1747",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1747-census-owed",
+   "@type": "Claim",
+   "target": "rec:1747",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1747-no-direction",
+   "@type": "Claim",
+   "target": "rec:1747",
+   "bodies": {
+    "G": "principal"
+   }
+  },
+  {
+   "@id": "claim:rf-1746-hitzig",
+   "@type": "Claim",
+   "target": "rec:1746",
+   "bodies": {
+    "G": "principal",
+    "R": "secondary"
+   }
   }
  ],
  "edges": [
@@ -3261,12 +3950,12 @@
   },
   {
    "source": "claim:rf-1735-physical",
-   "relation": "rebuts",
+   "relation": "bounds",
    "target": "claim:rf-202-papyri",
    "family": "evidentiary",
-   "licensed_dimension": "establishment",
-   "warrant": "the papyrological inversion withdrawn as evidence of priority: 'The physical record cannot rescue absolute priority' (#1735 §II.3)",
-   "provenance": "map v0.1"
+   "licensed_dimension": "strength",
+   "warrant": "the papyrological inversion held, its strength bounded by kind of evidence: not evidence of priority, and not not evidence of priority; evidence that Pauline priority is inferential rather than grounded in material witness; a relevant datum in any case (the author, 2026-11-26). 'The physical record cannot rescue absolute priority, but it also cannot close the bounded questions' (#1735 §II.3). Coded 'rebuts' and 'withdrawn' in v1.0–v1.4; corrected at v1.5 on the author's ruling",
+   "provenance": "the author's ruling, 2026-11-26 12:03–12:05; map v1.5"
   },
   {
    "source": "claim:rf-1217-josephus-available",
@@ -3476,14 +4165,14 @@
    "provenance": "map v0.2 §5.3"
   },
   {
-   "source": "rung:VI",
-   "relation": "depends_on",
-   "target": "rung:V",
+   "source": "rung:V",
+   "relation": "strengthens",
+   "target": "rung:VI",
    "family": "structural",
    "licensed_dimension": null,
-   "carries": "defeat (the ladder's depends_on)",
-   "warrant": "site:ladder-logos 'Depends on V.'",
-   "provenance": "site /ladder/"
+   "carries": "nothing on defeat",
+   "warrant": "site:ladder-logos 'Independent of V; V would strengthen it.'; the author, 2026-11-09 12:48",
+   "provenance": "site /ladder/ @ 264e07b; map v1.5 (before: rung:VI depends_on rung:V)"
   },
   {
    "source": "rung:VI",
@@ -3492,7 +4181,7 @@
    "family": "conceptual",
    "licensed_dimension": null,
    "operation": "the inscribed speaker receives renewed embodiment through the reader: the Logos takes flesh 'every time a person receives the white stone and speaks in that name' (rung VI); Sappho, the speaking I become the inscribed you, lives again in the reader who takes her up (κῆνος)",
-   "status": "rung VI dependent on V; Sappho in the third seat proposed by the author 2026-11-08 21:46 (EA-HK-TENTHMUSE-01 claim:tm-third-reversal; Q1)",
+   "status": "rung VI independent of V, which would strengthen it (corrected v1.5); Sappho in the third seat proposed by the author 2026-11-08 21:46 (EA-HK-TENTHMUSE-01 claim:tm-third-reversal; Q1)",
    "via": "hk:historical-logos",
    "warrant": "claim:rf-site-every-time; EA-HK-TENTHMUSE-01 claim:tm-1475-taken-up",
    "provenance": "review of v0.1, 2026-11-08 22:23"
@@ -3775,6 +4464,186 @@
    "licensed_dimension": null,
    "warrant": "map v0.2 §4",
    "provenance": "map v0.2"
+  },
+  {
+   "source": "rec:1810",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1810",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1811",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1811",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1765",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1765",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1762",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1762",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1760",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1760",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1759",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1759",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1802",
+   "relation": "belongs_to",
+   "target": "body:R",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1802",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1798",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1798",
+   "relation": "belongs_to",
+   "target": "stratum:S00-after-the-first-kernel",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:65",
+   "relation": "belongs_to",
+   "target": "body:H",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:65",
+   "relation": "belongs_to",
+   "target": "stratum:S6-space-ark",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1738",
+   "relation": "belongs_to",
+   "target": "body:D",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
+  },
+  {
+   "source": "rec:1738",
+   "relation": "belongs_to",
+   "target": "stratum:S1-standing-audited",
+   "family": "structural",
+   "licensed_dimension": null,
+   "warrant": "map",
+   "provenance": "map v1.5"
   }
  ]
 }

@@ -1,14 +1,14 @@
 {
  "kernel": "EA-HK-REVFIRST-01",
- "version": "1.4",
+ "version": "1.5",
  "structural_tests": {
   "T1 records resolve": {
    "pass": true,
-   "detail": "52 records, 7 surface pages; stale: []"
+   "detail": "62 records, 7 surface pages; stale: []"
   },
   "T2 quotations bind": {
    "pass": true,
-   "detail": "73 claims; unbound: []"
+   "detail": "131 claims; unbound: []"
   },
   "T3 relations in policy": {
    "pass": true,
@@ -16,15 +16,15 @@
   },
   "T4 introductions established or marked": {
    "pass": true,
-   "detail": "unresolved and marked: ['rf-1758-withheld', 'rf-1758-dependence', 'rf-1758-sequence', 'rf-1758-gawaita-key', 'rf-1735-v9-asymmetry', 'rf-1735-v9-hebrews', 'rf-1735-v9-hebrews-open', 'rf-site-reversible', 'rf-site-defeat-I', 'rf-site-sameclass', 'rf-site-cost', 'rf-site-direction', 'rf-site-contingent', 'rf-site-wjosephus', 'rf-site-logos', 'rf-site-between-inferences', 'rf-site-slavonic', 'rv-site-irenaeus', 'rv-site-reception-memory', 'rv-site-gallio', 'rv-site-collection', 'rv-1746-powers', 'rv-1741-separate', 'rv-site-redundancy', 'rf-203-available', 'rf-site-early-not-first', 'rf-site-every-time']"
+   "detail": "unresolved and marked: ['rf-1758-withheld', 'rf-1758-dependence', 'rf-1758-sequence', 'rf-1758-gawaita-key', 'rf-1735-v9-asymmetry', 'rf-1735-v9-hebrews', 'rf-1735-v9-hebrews-open', 'rf-site-reversible', 'rf-site-defeat-I', 'rf-site-sameclass', 'rf-site-cost', 'rf-site-direction', 'rf-site-contingent', 'rf-site-wjosephus', 'rf-site-logos', 'rf-site-between-inferences', 'rf-site-slavonic', 'rv-site-irenaeus', 'rv-site-reception-memory', 'rv-site-gallio', 'rv-site-collection', 'rv-1746-powers', 'rv-1741-separate', 'rv-site-redundancy', 'rf-203-available', 'rf-site-early-not-first', 'rf-site-every-time', 'rf-1810-not-demonstrate', 'rf-1810-early-insufficient', 'rf-1811-liquidation', 'rf-1811-homology', 'rf-1811-homology-limit', 'rf-1760-text-layer', 'rf-1738-seat']"
   },
   "T6 failures per body": {
    "pass": true,
    "detail": {
-    "D": 4,
+    "D": 3,
     "C": 1,
     "G": 2,
-    "R": 4,
+    "R": 7,
     "H": 1
    }
   },
@@ -69,7 +69,7 @@
   },
   "T14 endpoints declared": {
    "pass": true,
-   "detail": "169 edges; undeclared: []"
+   "detail": "189 edges; undeclared: []"
   },
   "T15 lines of research posed and bounded": {
    "pass": true,
@@ -102,8 +102,7 @@
       "rung:IV"
      ],
      "rung:V": [
-      "rung:V",
-      "rung:VI"
+      "rung:V"
      ],
      "rung:VI": [
       "rung:VI"
@@ -123,8 +122,7 @@
       "rung:IV"
      ],
      "rung:V": [
-      "rung:V",
-      "rung:VI"
+      "rung:V"
      ],
      "rung:VI": [
       "rung:VI"
@@ -135,8 +133,8 @@
   "T19 JSON-LD: every edge endpoint expands to the IRI of a declared node": {
    "pass": true,
    "detail": {
-    "edges": 169,
-    "nodes": 180,
+    "edges": 189,
+    "nodes": 249,
     "failed": []
    }
   },
@@ -155,6 +153,62 @@
     "external": 0,
     "unresolved": [],
     "bad_relation": []
+   }
+  },
+  "T22 records without moves are declared": {
+   "pass": true,
+   "detail": {
+    "without_moves": [
+     "rec:1484",
+     "rec:1738",
+     "rec:1751",
+     "rec:1759",
+     "rec:1760",
+     "rec:1762",
+     "rec:1765",
+     "rec:1798",
+     "rec:1802",
+     "rec:1810",
+     "rec:1811",
+     "rec:65",
+     "rec:828"
+    ],
+    "declared": [
+     65,
+     828,
+     1484,
+     1738,
+     1751,
+     1759,
+     1760,
+     1762,
+     1765,
+     1798,
+     1802,
+     1810,
+     1811
+    ]
+   }
+  },
+  "T23 every arrow carries a declared state, warrants that resolve to claims, and records in the graph": {
+   "pass": true,
+   "detail": {
+    "arrows": 24,
+    "failed": []
+   }
+  },
+  "T24 the table by book covers twenty-six books and equals the table computed from the arrows": {
+   "pass": true,
+   "detail": {
+    "books": 26,
+    "without": [
+     "1 Timothy",
+     "Titus",
+     "Philemon",
+     "2 John",
+     "3 John",
+     "Jude"
+    ]
    }
   }
  },

@@ -72,15 +72,16 @@ rungs:
 - '@id': rung:VI
   '@type': Rung
   name: the permanent incarnation (the Logos)
-  fit: DEPENDENT
-  depends_on:
-  - rung:V
+  fit: INDEPENDENT
+  depends_on: []
   body: H
   source: site:ladder-logos
   quote: The reading does not deny that a historical person could have existed. It denies that the textual evidence requires one.
-  defeat: Depends on V. Defeated without disturbing rungs I–IV.
+  defeat: Independent of V; V would strengthen it. Defeated without disturbing rungs I–IV.
   joins: hk:historical-logos
   located_in: text
+  strengthened_by:
+  - rung:V
 evidence_bodies:
   D:
     name: chronological
@@ -153,6 +154,7 @@ relation_policy:
 ladder_relation:
   depends_on: 'rung to rung: a rung''s defeat carries to every rung that depends on it (#1217''s claim ladder; site /ladder/). Held on the rungs,
     outside the claim policy, which it leaves unchanged.'
+  strengthened_by: 'rung to rung: the standing of one rung would add to another''s; no defeat is carried (rung VI by V; the author, 2026-11-09).'
 negative_edges:
 - early dating (as the thesis)
 - preterism
