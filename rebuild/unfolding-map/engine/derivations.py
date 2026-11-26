@@ -186,5 +186,18 @@ d(id="rev2.10→jas1.12", family="The letters: the run case", title="The crown o
   members=[m("give", "I will give", "δώσω", r"\bδωσω\b"), m("crown", "the crown of life", "τὸν στέφανον τῆς ζωῆς", r"στεφανον τησ ζωησ"), m("receive", "will receive", "λήμψεται", r"λημψεται", False)],
   steps=[{"op": "PARTITION", "keep": ["give", "crown"]}, {"op": "SUBSTITUTE", "old": "give", "new": "receive"}, {"op": "CITE-AS-PROMISE", "marker": r"επηγγειλατο"}], target="gnt:Jas 1:12",
   controls=[{"loc": "gnt:2Tim 4:8", "label": "2 Timothy 4:8"}, {"loc": "gnt:1Pet 5:4", "label": "1 Peter 5:4"}], records=[1415, 1735], note="The case run to completion in #1415 and #1735 §VII, entered here in the engine's operators: the giver's 'I will give' becomes the receiver's 'will receive … which he promised'.")
+
+# ── Revelation 11, the two witnesses: one seed region, four targets (v0.10). Unordered: a scene's members are spread over a narrative.
+W = [m("city", "the great city … where their Lord was crucified", "τῆς πόλεως … ὅπου … ἐσταυρώθη", r"πολεωσ.{0,90}οπου.{0,40}εσταυρωθη|πολεωσ οπου εσταυρωθη"),
+     m("holy", "the holy city", "τὴν πόλιν τὴν ἁγίαν", r"πολιν την αγιαν|αγιαν πολιν"), m("tomb", "a tomb (μνῆμα)", "μνῆμα", r"\bμνημα(τι)?\b"), m("three", "three days", "ἡμέρας τρεῖς", r"ημερασ τρεισ|τρεισ ημερασ|τρισιν ημεραισ"),
+     m("watch", "those who watch", "τοὺς θεωροῦντας", r"θεωρ"), m("fear", "great fear", "φόβος μέγας", r"φοβοσ μεγασ|εφοβηθησαν σφοδρα"), m("voice", "a great voice", "φωνῆς μεγάλης", r"φων\w+ μεγαλ"),
+     m("quake", "a great earthquake", "σεισμὸς μέγας", r"σεισμοσ (εγενετο )?μεγασ"), m("afraid", "afraid (ἔμφοβοι)", "ἔμφοβοι", r"εμφοβ"), m("glory", "gave glory to God", "ἔδωκαν δόξαν τῷ Θεῷ", r"εδωκαν δοξαν τω θεω|εδοξαζεν τον θεον")]
+SEEDW = "gnt:Rev 11:2 + Rev 11:8-13"
+TG = {"Matt": "gnt:Matt 27:50-55 + Matt 27:63 + Matt 28:2", "Mark": "gnt:Mark 15:29-47", "Luke": "gnt:Luke 23:35-53 + Luke 24:5", "John": "gnt:John 19:20 + John 20:6"}
+KEEP = {"Matt": ["holy", "three", "watch", "fear", "voice", "quake"], "Mark": ["tomb", "three", "watch", "voice"], "Luke": ["tomb", "watch", "voice", "afraid", "glory"], "John": ["city", "watch"]}
+for g in TG:
+    d(id=f"rev11→{g.lower()}.cross-tomb", family="Revelation 11: the two witnesses, divided", title=f"The witnesses' death and rising, {dict(Matt='Matthew', Mark='Mark', Luke='Luke', John='John')[g]}'s part", seed=SEEDW, members=W, unordered=True,
+      steps=[{"op": "PARTITION", "keep": KEEP[g]}], target=TG[g], controls=[{"loc": TG[h], "label": f"{h}'s cross and tomb"} for h in TG if h != g],
+      note="Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2).")
 src = json.dumps(D, ensure_ascii=False, sort_keys=True)
 print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))

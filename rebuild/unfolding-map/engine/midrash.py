@@ -81,7 +81,7 @@ def run(D, S):
             if not mm: ordered = False; break
             at = mm.start() + 1
         checks = {"kept members present": (len(present), len(state)),
-                  "in the emitted order": (int(ordered), 1) if len(state) > 1 else None,
+                  "in the emitted order": (int(ordered), 1) if len(state) > 1 and not D.get("unordered") else None,
                   "dropped members absent": (sum(1 for k in dropped if not re.search(M[k]["rx"], nt)), len(dropped)) if dropped else None,
                   "marker present": (int(bool(re.search(marker, nt))), 1) if marker else None,
                   "negation absent": (sum(1 for r in absent_rx if not re.search(r, nt)), len(absent_rx)) if absent_rx else None,

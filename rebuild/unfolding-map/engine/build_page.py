@@ -9,7 +9,7 @@ js_rx = lambda rx: rx.replace(r"\b", WB).replace(r"\w", "[α-ω]")
 data = []
 for d in DS["derivations"]:
     r = R[d["id"]]
-    data.append({"id": d["id"], "title": d["title"], "family": d["family"], "note": d.get("note"), "records": d.get("records", []),
+    data.append({"id": d["id"], "title": d["title"], "family": d["family"], "note": d.get("note"), "unordered": d.get("unordered", False), "records": d.get("records", []),
                  "members": [{**m, "rx": js_rx(m["rx"])} for m in d["members"]],
                  "steps": [{**s, **({"marker": js_rx(s["marker"])} if "marker" in s else {}), **({"negation": js_rx(s["negation"])} if "negation" in s else {})} for s in d["steps"]],
                  "seed": {"loc": d["seed"], "text": r["seed"]["text"]}, "target": {"loc": d["target"], "text": r["target"]["text"]},
@@ -83,10 +83,10 @@ function emit(d,on){const M=Object.fromEntries(d.members.map(m=>[m.id,m]));const
     else if(op==="ADD"){state.splice(st.at===undefined?state.length:st.at,0,st.new);}else if(op==="NEGATE")req.push(st.negation);
     else if(op==="CITE-AS-SCRIPTURE"||op==="CITE-AS-PROMISE")marker=st.marker;else if(op==="UNDO")neg.push(st.negation);}
     trace.push(state.slice());});
-  return {M,state,dropped,marker,neg,req,trace};}
+  return {M,state,dropped,marker,neg,req,trace,unordered:!!d.unordered};}
 function score(e,text){const {n}=normMap(text);const has=k=>rx(e.M[k].rx).test(n);const present=e.state.filter(has);let at=0,ord=true;
   for(const k of e.state){const r=rx(e.M[k].rx,"g");r.lastIndex=at;const m=r.exec(n);if(!m){ord=false;break;}at=m.index+1;}
-  const c=[["kept members present",present.length,e.state.length]];if(e.state.length>1)c.push(["in the emitted order",ord?1:0,1]);
+  const c=[["kept members present",present.length,e.state.length]];if(e.state.length>1&&!e.unordered)c.push(["in the emitted order",ord?1:0,1]);
   if(e.dropped.length)c.push(["dropped members absent",e.dropped.filter(k=>!has(k)).length,e.dropped.length]);
   if(e.marker)c.push(["marker present",rx(e.marker).test(n)?1:0,1]);if(e.neg.length)c.push(["the seed's ‘no more’ absent",e.neg.filter(r=>!rx(r).test(n)).length,e.neg.length]);if(e.req.length)c.push(["the borrower's ‘not’ present",e.req.filter(r=>rx(r).test(n)).length,e.req.length]);
   const got=c.reduce((a,x)=>a+x[1],0),of=c.reduce((a,x)=>a+x[2],0);return {checks:c,score:got/of,pass:got===of};}

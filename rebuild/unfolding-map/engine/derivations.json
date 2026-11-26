@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "8e16ef382a9bba471f71eed17edd62db3adab73f806ad90f622ae88aad5ec35e",
+  "sha256_of_derivations": "d2186991271e0b78e2028384dfae60cceaa450cacce560b26829979081350799",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -3021,6 +3021,431 @@
     1735
    ],
    "note": "The case run to completion in #1415 and #1735 §VII, entered here in the engine's operators: the giver's 'I will give' becomes the receiver's 'will receive … which he promised'."
+  },
+  {
+   "id": "rev11→matt.cross-tomb",
+   "family": "Revelation 11: the two witnesses, divided",
+   "title": "The witnesses' death and rising, Matthew's part",
+   "seed": "gnt:Rev 11:2 + Rev 11:8-13",
+   "members": [
+    {
+     "id": "city",
+     "gloss": "the great city … where their Lord was crucified",
+     "greek": "τῆς πόλεως … ὅπου … ἐσταυρώθη",
+     "rx": "πολεωσ.{0,90}οπου.{0,40}εσταυρωθη|πολεωσ οπου εσταυρωθη",
+     "in_seed": true
+    },
+    {
+     "id": "holy",
+     "gloss": "the holy city",
+     "greek": "τὴν πόλιν τὴν ἁγίαν",
+     "rx": "πολιν την αγιαν|αγιαν πολιν",
+     "in_seed": true
+    },
+    {
+     "id": "tomb",
+     "gloss": "a tomb (μνῆμα)",
+     "greek": "μνῆμα",
+     "rx": "\\bμνημα(τι)?\\b",
+     "in_seed": true
+    },
+    {
+     "id": "three",
+     "gloss": "three days",
+     "greek": "ἡμέρας τρεῖς",
+     "rx": "ημερασ τρεισ|τρεισ ημερασ|τρισιν ημεραισ",
+     "in_seed": true
+    },
+    {
+     "id": "watch",
+     "gloss": "those who watch",
+     "greek": "τοὺς θεωροῦντας",
+     "rx": "θεωρ",
+     "in_seed": true
+    },
+    {
+     "id": "fear",
+     "gloss": "great fear",
+     "greek": "φόβος μέγας",
+     "rx": "φοβοσ μεγασ|εφοβηθησαν σφοδρα",
+     "in_seed": true
+    },
+    {
+     "id": "voice",
+     "gloss": "a great voice",
+     "greek": "φωνῆς μεγάλης",
+     "rx": "φων\\w+ μεγαλ",
+     "in_seed": true
+    },
+    {
+     "id": "quake",
+     "gloss": "a great earthquake",
+     "greek": "σεισμὸς μέγας",
+     "rx": "σεισμοσ (εγενετο )?μεγασ",
+     "in_seed": true
+    },
+    {
+     "id": "afraid",
+     "gloss": "afraid (ἔμφοβοι)",
+     "greek": "ἔμφοβοι",
+     "rx": "εμφοβ",
+     "in_seed": true
+    },
+    {
+     "id": "glory",
+     "gloss": "gave glory to God",
+     "greek": "ἔδωκαν δόξαν τῷ Θεῷ",
+     "rx": "εδωκαν δοξαν τω θεω|εδοξαζεν τον θεον",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "holy",
+      "three",
+      "watch",
+      "fear",
+      "voice",
+      "quake"
+     ]
+    }
+   ],
+   "target": "gnt:Matt 27:50-55 + Matt 27:63 + Matt 28:2",
+   "controls": [
+    {
+     "loc": "gnt:Mark 15:29-47",
+     "label": "Mark's cross and tomb"
+    },
+    {
+     "loc": "gnt:Luke 23:35-53 + Luke 24:5",
+     "label": "Luke's cross and tomb"
+    },
+    {
+     "loc": "gnt:John 19:20 + John 20:6",
+     "label": "John's cross and tomb"
+    }
+   ],
+   "note": "Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2)."
+  },
+  {
+   "id": "rev11→mark.cross-tomb",
+   "family": "Revelation 11: the two witnesses, divided",
+   "title": "The witnesses' death and rising, Mark's part",
+   "seed": "gnt:Rev 11:2 + Rev 11:8-13",
+   "members": [
+    {
+     "id": "city",
+     "gloss": "the great city … where their Lord was crucified",
+     "greek": "τῆς πόλεως … ὅπου … ἐσταυρώθη",
+     "rx": "πολεωσ.{0,90}οπου.{0,40}εσταυρωθη|πολεωσ οπου εσταυρωθη",
+     "in_seed": true
+    },
+    {
+     "id": "holy",
+     "gloss": "the holy city",
+     "greek": "τὴν πόλιν τὴν ἁγίαν",
+     "rx": "πολιν την αγιαν|αγιαν πολιν",
+     "in_seed": true
+    },
+    {
+     "id": "tomb",
+     "gloss": "a tomb (μνῆμα)",
+     "greek": "μνῆμα",
+     "rx": "\\bμνημα(τι)?\\b",
+     "in_seed": true
+    },
+    {
+     "id": "three",
+     "gloss": "three days",
+     "greek": "ἡμέρας τρεῖς",
+     "rx": "ημερασ τρεισ|τρεισ ημερασ|τρισιν ημεραισ",
+     "in_seed": true
+    },
+    {
+     "id": "watch",
+     "gloss": "those who watch",
+     "greek": "τοὺς θεωροῦντας",
+     "rx": "θεωρ",
+     "in_seed": true
+    },
+    {
+     "id": "fear",
+     "gloss": "great fear",
+     "greek": "φόβος μέγας",
+     "rx": "φοβοσ μεγασ|εφοβηθησαν σφοδρα",
+     "in_seed": true
+    },
+    {
+     "id": "voice",
+     "gloss": "a great voice",
+     "greek": "φωνῆς μεγάλης",
+     "rx": "φων\\w+ μεγαλ",
+     "in_seed": true
+    },
+    {
+     "id": "quake",
+     "gloss": "a great earthquake",
+     "greek": "σεισμὸς μέγας",
+     "rx": "σεισμοσ (εγενετο )?μεγασ",
+     "in_seed": true
+    },
+    {
+     "id": "afraid",
+     "gloss": "afraid (ἔμφοβοι)",
+     "greek": "ἔμφοβοι",
+     "rx": "εμφοβ",
+     "in_seed": true
+    },
+    {
+     "id": "glory",
+     "gloss": "gave glory to God",
+     "greek": "ἔδωκαν δόξαν τῷ Θεῷ",
+     "rx": "εδωκαν δοξαν τω θεω|εδοξαζεν τον θεον",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "tomb",
+      "three",
+      "watch",
+      "voice"
+     ]
+    }
+   ],
+   "target": "gnt:Mark 15:29-47",
+   "controls": [
+    {
+     "loc": "gnt:Matt 27:50-55 + Matt 27:63 + Matt 28:2",
+     "label": "Matt's cross and tomb"
+    },
+    {
+     "loc": "gnt:Luke 23:35-53 + Luke 24:5",
+     "label": "Luke's cross and tomb"
+    },
+    {
+     "loc": "gnt:John 19:20 + John 20:6",
+     "label": "John's cross and tomb"
+    }
+   ],
+   "note": "Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2)."
+  },
+  {
+   "id": "rev11→luke.cross-tomb",
+   "family": "Revelation 11: the two witnesses, divided",
+   "title": "The witnesses' death and rising, Luke's part",
+   "seed": "gnt:Rev 11:2 + Rev 11:8-13",
+   "members": [
+    {
+     "id": "city",
+     "gloss": "the great city … where their Lord was crucified",
+     "greek": "τῆς πόλεως … ὅπου … ἐσταυρώθη",
+     "rx": "πολεωσ.{0,90}οπου.{0,40}εσταυρωθη|πολεωσ οπου εσταυρωθη",
+     "in_seed": true
+    },
+    {
+     "id": "holy",
+     "gloss": "the holy city",
+     "greek": "τὴν πόλιν τὴν ἁγίαν",
+     "rx": "πολιν την αγιαν|αγιαν πολιν",
+     "in_seed": true
+    },
+    {
+     "id": "tomb",
+     "gloss": "a tomb (μνῆμα)",
+     "greek": "μνῆμα",
+     "rx": "\\bμνημα(τι)?\\b",
+     "in_seed": true
+    },
+    {
+     "id": "three",
+     "gloss": "three days",
+     "greek": "ἡμέρας τρεῖς",
+     "rx": "ημερασ τρεισ|τρεισ ημερασ|τρισιν ημεραισ",
+     "in_seed": true
+    },
+    {
+     "id": "watch",
+     "gloss": "those who watch",
+     "greek": "τοὺς θεωροῦντας",
+     "rx": "θεωρ",
+     "in_seed": true
+    },
+    {
+     "id": "fear",
+     "gloss": "great fear",
+     "greek": "φόβος μέγας",
+     "rx": "φοβοσ μεγασ|εφοβηθησαν σφοδρα",
+     "in_seed": true
+    },
+    {
+     "id": "voice",
+     "gloss": "a great voice",
+     "greek": "φωνῆς μεγάλης",
+     "rx": "φων\\w+ μεγαλ",
+     "in_seed": true
+    },
+    {
+     "id": "quake",
+     "gloss": "a great earthquake",
+     "greek": "σεισμὸς μέγας",
+     "rx": "σεισμοσ (εγενετο )?μεγασ",
+     "in_seed": true
+    },
+    {
+     "id": "afraid",
+     "gloss": "afraid (ἔμφοβοι)",
+     "greek": "ἔμφοβοι",
+     "rx": "εμφοβ",
+     "in_seed": true
+    },
+    {
+     "id": "glory",
+     "gloss": "gave glory to God",
+     "greek": "ἔδωκαν δόξαν τῷ Θεῷ",
+     "rx": "εδωκαν δοξαν τω θεω|εδοξαζεν τον θεον",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "tomb",
+      "watch",
+      "voice",
+      "afraid",
+      "glory"
+     ]
+    }
+   ],
+   "target": "gnt:Luke 23:35-53 + Luke 24:5",
+   "controls": [
+    {
+     "loc": "gnt:Matt 27:50-55 + Matt 27:63 + Matt 28:2",
+     "label": "Matt's cross and tomb"
+    },
+    {
+     "loc": "gnt:Mark 15:29-47",
+     "label": "Mark's cross and tomb"
+    },
+    {
+     "loc": "gnt:John 19:20 + John 20:6",
+     "label": "John's cross and tomb"
+    }
+   ],
+   "note": "Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2)."
+  },
+  {
+   "id": "rev11→john.cross-tomb",
+   "family": "Revelation 11: the two witnesses, divided",
+   "title": "The witnesses' death and rising, John's part",
+   "seed": "gnt:Rev 11:2 + Rev 11:8-13",
+   "members": [
+    {
+     "id": "city",
+     "gloss": "the great city … where their Lord was crucified",
+     "greek": "τῆς πόλεως … ὅπου … ἐσταυρώθη",
+     "rx": "πολεωσ.{0,90}οπου.{0,40}εσταυρωθη|πολεωσ οπου εσταυρωθη",
+     "in_seed": true
+    },
+    {
+     "id": "holy",
+     "gloss": "the holy city",
+     "greek": "τὴν πόλιν τὴν ἁγίαν",
+     "rx": "πολιν την αγιαν|αγιαν πολιν",
+     "in_seed": true
+    },
+    {
+     "id": "tomb",
+     "gloss": "a tomb (μνῆμα)",
+     "greek": "μνῆμα",
+     "rx": "\\bμνημα(τι)?\\b",
+     "in_seed": true
+    },
+    {
+     "id": "three",
+     "gloss": "three days",
+     "greek": "ἡμέρας τρεῖς",
+     "rx": "ημερασ τρεισ|τρεισ ημερασ|τρισιν ημεραισ",
+     "in_seed": true
+    },
+    {
+     "id": "watch",
+     "gloss": "those who watch",
+     "greek": "τοὺς θεωροῦντας",
+     "rx": "θεωρ",
+     "in_seed": true
+    },
+    {
+     "id": "fear",
+     "gloss": "great fear",
+     "greek": "φόβος μέγας",
+     "rx": "φοβοσ μεγασ|εφοβηθησαν σφοδρα",
+     "in_seed": true
+    },
+    {
+     "id": "voice",
+     "gloss": "a great voice",
+     "greek": "φωνῆς μεγάλης",
+     "rx": "φων\\w+ μεγαλ",
+     "in_seed": true
+    },
+    {
+     "id": "quake",
+     "gloss": "a great earthquake",
+     "greek": "σεισμὸς μέγας",
+     "rx": "σεισμοσ (εγενετο )?μεγασ",
+     "in_seed": true
+    },
+    {
+     "id": "afraid",
+     "gloss": "afraid (ἔμφοβοι)",
+     "greek": "ἔμφοβοι",
+     "rx": "εμφοβ",
+     "in_seed": true
+    },
+    {
+     "id": "glory",
+     "gloss": "gave glory to God",
+     "greek": "ἔδωκαν δόξαν τῷ Θεῷ",
+     "rx": "εδωκαν δοξαν τω θεω|εδοξαζεν τον θεον",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "city",
+      "watch"
+     ]
+    }
+   ],
+   "target": "gnt:John 19:20 + John 20:6",
+   "controls": [
+    {
+     "loc": "gnt:Matt 27:50-55 + Matt 27:63 + Matt 28:2",
+     "label": "Matt's cross and tomb"
+    },
+    {
+     "loc": "gnt:Mark 15:29-47",
+     "label": "Mark's cross and tomb"
+    },
+    {
+     "loc": "gnt:Luke 23:35-53 + Luke 24:5",
+     "label": "Luke's cross and tomb"
+    }
+   ],
+   "note": "Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2)."
   }
  ]
 }
