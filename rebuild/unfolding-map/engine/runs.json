@@ -20,7 +20,7 @@
  },
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "3c63c188e8de376fd7d3ee0e43a8ecc62008d4fa12029fab2415f818e86d26f6",
+  "sha256_of_derivations": "e4b0ce3b99e3fa4c2e10caeda73d90d80c9d11e7c9ab9383ccd53969e6ef5728",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "runs": [
@@ -11726,6 +11726,1207 @@
    },
    "seed_ok": true,
    "verdict": "passes; no control passes (best control 0.29)"
+  },
+  {
+   "id": "rev9.1-4→luke10.17-20",
+   "title": "The fall from heaven; authority, scorpions, not to hurt; the marked",
+   "family": "Conjunctions",
+   "seed": {
+    "loc": "gnt:Rev 9:1 + Rev 9:3-4",
+    "text": "Καὶ ὁ πέμπτος ἄγγελος ἐσάλπισεν· καὶ εἶδον ἀστέρα ἐκ τοῦ οὐρανοῦ πεπτωκότα εἰς τὴν γῆν, καὶ ἐδόθη αὐτῷ ἡ κλεὶς τοῦ φρέατος τῆς ἀβύσσου. καὶ ἐκ τοῦ καπνοῦ ἐξῆλθον ἀκρίδες εἰς τὴν γῆν, καὶ ἐδόθη αὐτοῖς ἐξουσία ὡς ἔχουσιν ἐξουσίαν οἱ σκορπίοι τῆς γῆς. καὶ ἐρρέθη αὐτοῖς ἵνα μὴ ἀδικήσουσιν τὸν χόρτον τῆς γῆς οὐδὲ πᾶν χλωρὸν οὐδὲ πᾶν δένδρον, εἰ μὴ τοὺς ἀνθρώπους οἵτινες οὐκ ἔχουσιν τὴν σφραγῖδα τοῦ Θεοῦ ἐπὶ τῶν μετώπων.",
+    "members_found": {
+     "star": true,
+     "fallen": true,
+     "given": true,
+     "key": true,
+     "locusts": true,
+     "authority": true,
+     "scorpion": true,
+     "nothurt": true,
+     "seal": true
+    }
+   },
+   "members": {
+    "star": {
+     "gloss": "a star",
+     "greek": "ἀστέρα"
+    },
+    "fallen": {
+     "gloss": "fallen from heaven",
+     "greek": "ἐκ τοῦ οὐρανοῦ πεπτωκότα"
+    },
+    "given": {
+     "gloss": "was given / I have given",
+     "greek": "ἐδόθη"
+    },
+    "key": {
+     "gloss": "the key",
+     "greek": "ἡ κλείς"
+    },
+    "locusts": {
+     "gloss": "locusts",
+     "greek": "ἀκρίδες"
+    },
+    "authority": {
+     "gloss": "authority",
+     "greek": "ἐξουσία"
+    },
+    "scorpion": {
+     "gloss": "scorpions",
+     "greek": "οἱ σκορπίοι"
+    },
+    "nothurt": {
+     "gloss": "not to hurt",
+     "greek": "ἵνα μὴ ἀδικήσουσιν"
+    },
+    "seal": {
+     "gloss": "the seal of God",
+     "greek": "τὴν σφραγῖδα τοῦ θεοῦ"
+    },
+    "satan": {
+     "gloss": "the Satan",
+     "greek": "τὸν Σατανᾶν"
+    },
+    "written": {
+     "gloss": "names written in the heavens",
+     "greek": "ἐνγέγραπται"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "star",
+      "fallen",
+      "given",
+      "key",
+      "locusts",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "seal"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "star",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "seal"
+     ],
+     "state": [
+      "star",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "seal"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "star",
+     "new": "satan",
+     "state": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "seal"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "does": "replace one member by another of the same function (a word for a word)",
+     "old": "seal",
+     "new": "written",
+     "state": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "satan",
+     "fallen",
+     "given",
+     "authority",
+     "scorpion",
+     "nothurt",
+     "written"
+    ],
+    "dropped": [
+     "key",
+     "locusts",
+     "star",
+     "seal"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Luke 10:17-20",
+    "text": "Ὑπέστρεψαν δὲ οἱ ἑβδομήκοντα μετὰ χαρᾶς λέγοντες Κύριε, καὶ τὰ δαιμόνια ὑποτάσσεται ἡμῖν ἐν τῷ ὀνόματί σου. εἶπεν δὲ αὐτοῖς Ἐθεώρουν τὸν Σατανᾶν ὡς ἀστραπὴν ἐκ τοῦ οὐρανοῦ πεσόντα. ἰδοὺ δέδωκα ὑμῖν τὴν ἐξουσίαν τοῦ πατεῖν ἐπάνω ὄφεων καὶ σκορπίων, καὶ ἐπὶ πᾶσαν τὴν δύναμιν τοῦ ἐχθροῦ, καὶ οὐδὲν ὑμᾶς οὐ μὴ ἀδικήσει. πλὴν ἐν τούτῳ μὴ χαίρετε ὅτι τὰ πνεύματα ὑμῖν ὑποτάσσεται, χαίρετε δὲ ὅτι τὰ ὀνόματα ὑμῶν ἐνγέγραπται ἐν τοῖς οὐρανοῖς.",
+    "checks": {
+     "kept members present": [
+      7,
+      7
+     ],
+     "in the emitted order": [
+      1,
+      1
+     ],
+     "dropped members absent": [
+      4,
+      4
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "lxx:Δευτερονομιον 8:15",
+     "text": "τοῦ ἀγαγόντος σε διὰ τῆς ἐρήμου τῆς καὶ τῆς φοβερᾶς ἐκείνης, οὗ ὄφις δάκνων καὶ σκορπίος καὶ , οὗ οὐκ ἢν ὕδωρ·· τοῦ ἐξαγαγόντος σοι ἐκ πέτρας ἀκροτόμου πηγὴν ὕδατος·",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Deut 8:15: the biting serpent and the scorpion"
+    },
+    {
+     "loc": "lxx:Ψαλμοι 90:13",
+     "text": "ἐπ᾿ ἀσπίδα καὶ βασιλίσκον ἐπιβήσῃ, καὶ καταπατήσεις λέοντα καὶ δράκοντα.",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Ps 90:13: you will tread on asp and basilisk"
+    },
+    {
+     "loc": "lxx:Ησαιας 14:12-15",
+     "text": "πῶς ἐξέπεσεν ἐκ τοῦ οὐρανοῦ ὁ ἑωσφόρος ὁ πρωὶ ἀνατέλλων; συνετρίβη εἰς τὴν γῆν ὁ ἀποστέλλων πρὸς πάντα τὰ ἔθνη, σὺ δὲ εἶπας τῇ διανοίᾳ σου Εἰς τὸν οὐρανὸν ἀναβήσομαι, ἐπάνω τῶν ἀστέρων τοῦ οὐρανοῦ θήσω τὸν θρόνον μου, καθιῶ ἐν ὄρει ὑψηλῷ ἐπὶ τὰ ὄρη τὰ ὑψηλὰ τὰ πρὸς βορρᾶν, ἀναβήσομαι ἐπάνω τῶν νεφῶν, ἔσομαι ὅμοιος τῷ ὑψίστῳ. νῦν δὲ εἰς ᾅδην καταβήσῃ καὶ εἰς τὰ θεμέλια τῆς γῆς.",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Isa 14:12–15: fallen from heaven"
+    },
+    {
+     "loc": "gnt:Mark 16:17-18",
+     "text": "σημεῖα δὲ τοῖς πιστεύσασιν ταῦτα παρακολουθήσει, ἐν τῷ ὀνόματί μου δαιμόνια ἐκβαλοῦσιν, γλώσσαις λαλήσουσιν καιναῖς, ὄφεις ἀροῦσιν κἂν θανάσιμόν τι πίωσιν οὐ μὴ αὐτοὺς βλάψῃ, ἐπὶ ἀρρώστους χεῖρας ἐπιθήσουσιν καὶ καλῶς ἕξουσιν.",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark 16:17–18: serpents, and it will not harm them"
+    },
+    {
+     "loc": "gnt:Luke 11:11-13",
+     "text": "τίνα δὲ ἐξ ὑμῶν τὸν πατέρα αἰτήσει ὁ υἱὸς ἰχθύν, μὴ ἀντὶ ἰχθύος ὄφιν αὐτῷ ἐπιδώσει; ἢ καὶ αἰτήσει ᾠόν, ἐπιδώσει αὐτῷ σκορπίον; εἰ οὖν ὑμεῖς πονηροὶ ὑπάρχοντες οἴδατε δόματα ἀγαθὰ διδόναι τοῖς τέκνοις ὑμῶν, πόσῳ μᾶλλον ὁ Πατὴρ ὁ ἐξ οὐρανοῦ δώσει Πνεῦμα Ἅγιον τοῖς αἰτοῦσιν αὐτόν.",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke 11: a serpent, a scorpion, given"
+    },
+    {
+     "loc": "gnt:Acts 28:3-6",
+     "text": "συστρέψαντος δὲ τοῦ Παύλου φρυγάνων τι πλῆθος καὶ ἐπιθέντος ἐπὶ τὴν πυράν, ἔχιδνα ἀπὸ τῆς θέρμης ἐξελθοῦσα καθῆψεν τῆς χειρὸς αὐτοῦ. ὡς δὲ εἶδον οἱ βάρβαροι κρεμάμενον τὸ θηρίον ἐκ τῆς χειρὸς αὐτοῦ, πρὸς ἀλλήλους ἔλεγον Πάντως φονεύς ἐστιν ὁ ἄνθρωπος οὗτος, ὃν διασωθέντα ἐκ τῆς θαλάσσης ἡ Δίκη ζῆν οὐκ εἴασεν. ὁ μὲν οὖν ἀποτινάξας τὸ θηρίον εἰς τὸ πῦρ ἔπαθεν οὐδὲν κακόν· οἱ δὲ προσεδόκων αὐτὸν μέλλειν πίμπρασθαι ἢ καταπίπτειν ἄφνω νεκρόν. ἐπὶ πολὺ δὲ αὐτῶν προσδοκώντων καὶ θεωρούντων μηδὲν ἄτοπον εἰς αὐτὸν γινόμενον, μεταβαλόμενοι ἔλεγον αὐτὸν εἶναι θεόν.",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Acts 28: the viper"
+    },
+    {
+     "loc": "gnt:John 12:31-32",
+     "text": "νῦν κρίσις ἐστὶν τοῦ κόσμου τούτου· νῦν ὁ ἄρχων τοῦ κόσμου τούτου ἐκβληθήσεται ἔξω· κἀγὼ ἐὰν ὑψωθῶ ἐκ τῆς γῆς, πάντας ἑλκύσω πρὸς ἐμαυτόν.",
+     "checks": {
+      "kept members present": [
+       0,
+       7
+      ],
+      "in the emitted order": [
+       0,
+       1
+      ],
+      "dropped members absent": [
+       4,
+       4
+      ]
+     },
+     "score": 0.33,
+     "passes": false,
+     "missing": [
+      "satan",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "written"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "John 12:31: the ruler of this world cast out"
+    }
+   ],
+   "note": "Found blind by conj.py, first of 1,245 passages. Emitted in the seed's order. The side is exchanged and no operator states it: in the seed the authority is given to the scorpions; in Luke over them.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7941,
+     "passing": 2,
+     "refs": [
+      "Luke 10:17",
+      "Luke 10:18"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.33)"
+  },
+  {
+   "id": "rev2.9-3.21→luke22.28-32",
+   "title": "The saying at the supper, from five of the seven letters",
+   "family": "Conjunctions",
+   "seed": {
+    "loc": "gnt:Rev 2:9-10 + Rev 2:28 + Rev 3:2 + Rev 3:10 + Rev 3:20-21",
+    "text": "Οἶδά σου τὴν θλῖψιν καὶ τὴν πτωχείαν, ἀλλὰ πλούσιος εἶ, καὶ τὴν βλασφημίαν ἐκ τῶν λεγόντων Ἰουδαίους εἶναι ἑαυτούς, καὶ οὐκ εἰσίν ἀλλὰ συναγωγὴ τοῦ Σατανᾶ. μὴ φοβοῦ ἃ μέλλεις πάσχειν. ἰδοὺ μέλλει βάλλειν ὁ διάβολος ἐξ ὑμῶν εἰς φυλακὴν ἵνα πειρασθῆτε, καὶ ἕξετε θλῖψιν ἡμερῶν δέκα. γίνου πιστὸς ἄχρι θανάτου, καὶ δώσω σοι τὸν στέφανον τῆς ζωῆς. ὡς κἀγὼ εἴληφα παρὰ τοῦ Πατρός μου, καὶ δώσω αὐτῷ τὸν ἀστέρα τὸν πρωϊνόν. γίνου γρηγορῶν, καὶ στήρισον τὰ λοιπὰ ἃ ἔμελλον ἀποθανεῖν· οὐ γὰρ εὕρηκά σου ἔργα πεπληρωμένα ἐνώπιον τοῦ Θεοῦ μου· ὅτι ἐτήρησας τὸν λόγον τῆς ὑπομονῆς μου, κἀγώ σε τηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ τῆς μελλούσης ἔρχεσθαι ἐπὶ τῆς οἰκουμένης ὅλης, πειράσαι τοὺς κατοικοῦντας ἐπὶ τῆς γῆς. Ἰδοὺ ἕστηκα ἐπὶ τὴν θύραν καὶ κρούω· ἐάν τις ἀκούσῃ τῆς φωνῆς μου καὶ ἀνοίξῃ τὴν θύραν, εἰσελεύσομαι πρὸς αὐτὸν καὶ δειπνήσω μετ’ αὐτοῦ καὶ αὐτὸς μετ’ ἐμοῦ. Ὁ νικῶν δώσω αὐτῷ καθίσαι μετ’ ἐμοῦ ἐν τῷ θρόνῳ μου, ὡς κἀγὼ ἐνίκησα καὶ ἐκάθισα μετὰ τοῦ Πατρός μου ἐν τῷ θρόνῳ αὐτοῦ.",
+    "members_found": {
+     "satan": true,
+     "tempt": true,
+     "faithful": true,
+     "crown": true,
+     "kago": true,
+     "father": true,
+     "star": true,
+     "watch": true,
+     "strengthen": true,
+     "hour": true,
+     "door": true,
+     "sup": true,
+     "sit": true,
+     "throne": true
+    }
+   },
+   "members": {
+    "satan": {
+     "gloss": "of the Satan",
+     "greek": "τοῦ Σατανᾶ"
+    },
+    "tempt": {
+     "gloss": "that you be tempted / the temptation",
+     "greek": "ἵνα πειρασθῆτε"
+    },
+    "faithful": {
+     "gloss": "faithful / faith",
+     "greek": "πιστός"
+    },
+    "crown": {
+     "gloss": "the crown",
+     "greek": "τὸν στέφανον"
+    },
+    "kago": {
+     "gloss": "I also",
+     "greek": "κἀγώ"
+    },
+    "father": {
+     "gloss": "my Father",
+     "greek": "τοῦ πατρός μου"
+    },
+    "star": {
+     "gloss": "the morning star",
+     "greek": "τὸν ἀστέρα"
+    },
+    "watch": {
+     "gloss": "be watching",
+     "greek": "γρηγορῶν"
+    },
+    "strengthen": {
+     "gloss": "strengthen",
+     "greek": "στήρισον"
+    },
+    "hour": {
+     "gloss": "the hour",
+     "greek": "τῆς ὥρας"
+    },
+    "door": {
+     "gloss": "the door",
+     "greek": "τὴν θύραν"
+    },
+    "sup": {
+     "gloss": "I will sup with him",
+     "greek": "δειπνήσω μετ' αὐτοῦ"
+    },
+    "sit": {
+     "gloss": "to sit",
+     "greek": "καθίσαι"
+    },
+    "throne": {
+     "gloss": "the throne",
+     "greek": "τῷ θρόνῳ"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "satan",
+      "tempt",
+      "faithful",
+      "crown",
+      "kago",
+      "father",
+      "star",
+      "watch",
+      "strengthen",
+      "hour",
+      "door",
+      "sup",
+      "sit",
+      "throne"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ],
+     "state": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "satan",
+     "tempt",
+     "faithful",
+     "kago",
+     "father",
+     "strengthen",
+     "sup",
+     "sit",
+     "throne"
+    ],
+    "dropped": [
+     "crown",
+     "star",
+     "watch",
+     "hour",
+     "door"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Luke 22:28-32",
+    "text": "ὑμεῖς δέ ἐστε οἱ διαμεμενηκότες μετ’ ἐμοῦ ἐν τοῖς πειρασμοῖς μου· κἀγὼ διατίθεμαι ὑμῖν, καθὼς διέθετό μοι ὁ Πατήρ μου βασιλείαν, ἵνα ἔσθητε καὶ πίνητε ἐπὶ τῆς τραπέζης μου ἐν τῇ βασιλείᾳ μου, καὶ καθήσεσθε ἐπὶ θρόνων τὰς δώδεκα φυλὰς κρίνοντες τοῦ Ἰσραήλ. Σίμων Σίμων, ἰδοὺ ὁ Σατανᾶς ἐξῃτήσατο ὑμᾶς τοῦ σινιάσαι ὡς τὸν σῖτον· ἐγὼ δὲ ἐδεήθην περὶ σοῦ ἵνα μὴ ἐκλίπῃ ἡ πίστις σου· καὶ σύ ποτε ἐπιστρέψας στήρισον τοὺς ἀδελφούς σου.",
+    "checks": {
+     "kept members present": [
+      9,
+      9
+     ],
+     "dropped members absent": [
+      5,
+      5
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Matt 19:27-30",
+     "text": "Τότε ἀποκριθεὶς ὁ Πέτρος εἶπεν αὐτῷ Ἰδοὺ ἡμεῖς ἀφήκαμεν πάντα καὶ ἠκολουθήσαμέν σοι· τί ἄρα ἔσται ἡμῖν; ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς Ἀμὴν λέγω ὑμῖν ὅτι ὑμεῖς οἱ ἀκολουθήσαντές μοι, ἐν τῇ παλινγενεσίᾳ, ὅταν καθίσῃ ὁ Υἱὸς τοῦ ἀνθρώπου ἐπὶ θρόνου δόξης αὐτοῦ, καθήσεσθε καὶ αὐτοὶ ἐπὶ δώδεκα θρόνους κρίνοντες τὰς δώδεκα φυλὰς τοῦ Ἰσραήλ. καὶ πᾶς ὅστις ἀφῆκεν οἰκίας ἢ ἀδελφοὺς ἢ ἀδελφὰς ἢ πατέρα ἢ μητέρα ἢ τέκνα ἢ ἀγροὺς ἕνεκεν τοῦ ἐμοῦ ὀνόματός, πολλαπλασίονα λήμψεται καὶ ζωὴν αἰώνιον κληρονομήσει. Πολλοὶ δὲ ἔσονται πρῶτοι ἔσχατοι καὶ ἔσχατοι πρῶτοι.",
+     "checks": {
+      "kept members present": [
+       2,
+       9
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew's form of the saying"
+    },
+    {
+     "loc": "gnt:Mark 10:35-45",
+     "text": "Καὶ προσπορεύονται αὐτῷ Ἰάκωβος καὶ Ἰωάνης οἱ υἱοὶ Ζεβεδαίου λέγοντες αὐτῷ Διδάσκαλε, θέλομεν ἵνα ὃ ἐὰν αἰτήσωμέν σε ποιήσῃς ἡμῖν. ὁ δὲ εἶπεν αὐτοῖς Τί θέλετε με ποιήσω ὑμῖν; οἱ δὲ εἶπαν αὐτῷ Δὸς ἡμῖν ἵνα εἷς σου ἐκ δεξιῶν καὶ εἷς ἐξ ἀριστερῶν καθίσωμεν ἐν τῇ δόξῃ σου. ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς Οὐκ οἴδατε τί αἰτεῖσθε. δύνασθε πιεῖν τὸ ποτήριον ὃ ἐγὼ πίνω, ἢ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθῆναι; οἱ δὲ εἶπαν αὐτῷ Δυνάμεθα. ὁ δὲ Ἰησοῦς εἶπεν αὐτοῖς Τὸ ποτήριον ὃ ἐγὼ πίνω πίεσθε, καὶ τὸ βάπτισμα ὃ ἐγὼ βαπτίζομαι βαπτισθήσεσθε· τὸ δὲ καθίσαι ἐκ δεξιῶν μου ἢ ἐξ εὐωνύμων οὐκ ἔστιν ἐμὸν δοῦναι, ἀλλ’ οἷς ἡτοίμασται. Καὶ ἀκούσαντες οἱ δέκα ἤρξαντο ἀγανακτεῖν περὶ Ἰακώβου καὶ Ἰωάνου. καὶ προσκαλεσάμενος αὐτοὺς ὁ Ἰησοῦς λέγει αὐτοῖς Οἴδατε ὅτι οἱ δοκοῦντες ἄρχειν τῶν ἐθνῶν κατακυριεύουσιν αὐτῶν καὶ οἱ μεγάλοι αὐτῶν κατεξουσιάζουσιν αὐτῶν. οὐχ οὕτως δέ ἐστιν ἐν ὑμῖν· ἀλλ’ ὃς ἂν θέλῃ μέγας γενέσθαι ἐν ὑμῖν, ἔσται ὑμῶν διάκονος, καὶ ὃς ἂν θέλῃ ἐν ὑμῖν εἶναι πρῶτος, ἔσται πάντων δοῦλος· καὶ γὰρ ὁ Υἱὸς τοῦ ἀνθρώπου οὐκ ἦλθεν διακονηθῆναι ἀλλὰ διακονῆσαι καὶ δοῦναι τὴν ψυχὴν αὐτοῦ λύτρον ἀντὶ πολλῶν.",
+     "checks": {
+      "kept members present": [
+       1,
+       9
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.43,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "throne"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark 10: to sit at my right"
+    },
+    {
+     "loc": "gnt:Luke 12:35-40",
+     "text": "Ἔστωσαν ὑμῶν αἱ ὀσφύες περιεζωσμέναι καὶ οἱ λύχνοι καιόμενοι· καὶ ὑμεῖς ὅμοιοι ἀνθρώποις προσδεχομένοις τὸν κύριον ἑαυτῶν πότε ἀναλύσῃ ἐκ τῶν γάμων, ἵνα ἐλθόντος καὶ κρούσαντος εὐθέως ἀνοίξωσιν αὐτῷ. μακάριοι οἱ δοῦλοι ἐκεῖνοι, οὓς ἐλθὼν ὁ κύριος εὑρήσει γρηγοροῦντας· ἀμὴν λέγω ὑμῖν ὅτι περιζώσεται καὶ ἀνακλινεῖ αὐτοὺς καὶ παρελθὼν διακονήσει αὐτοῖς. κἂν ἐν τῇ δευτέρᾳ κἂν ἐν τῇ τρίτῃ φυλακῇ ἔλθῃ καὶ εὕρῃ οὕτως, μακάριοί εἰσιν ἐκεῖνοι. τοῦτο δὲ γινώσκετε ὅτι εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ ὥρᾳ ὁ κλέπτης ἔρχεται, οὐκ ἂν ἀφῆκεν διορυχθῆναι τὸν οἶκον αὐτοῦ. καὶ ὑμεῖς γίνεσθε ἕτοιμοι, ὅτι ᾗ ὥρᾳ οὐ δοκεῖτε ὁ Υἱὸς τοῦ ἀνθρώπου ἔρχεται.",
+     "checks": {
+      "kept members present": [
+       0,
+       9
+      ],
+      "dropped members absent": [
+       4,
+       5
+      ]
+     },
+     "score": 0.29,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ],
+     "kept_but_should_be_dropped": [
+      "watch"
+     ],
+     "label": "Luke 12: he will make them recline"
+    },
+    {
+     "loc": "gnt:Matt 26:26-35",
+     "text": "Ἐσθιόντων δὲ αὐτῶν λαβὼν ὁ Ἰησοῦς ἄρτον καὶ εὐλογήσας ἔκλασεν καὶ δοὺς τοῖς μαθηταῖς εἶπεν Λάβετε φάγετε· τοῦτό ἐστιν τὸ σῶμά μου. καὶ λαβὼν ποτήριον καὶ εὐχαριστήσας ἔδωκεν αὐτοῖς λέγων Πίετε ἐξ αὐτοῦ πάντες· τοῦτο γάρ ἐστιν τὸ αἷμά μου τῆς διαθήκης τὸ περὶ πολλῶν ἐκχυννόμενον εἰς ἄφεσιν ἁμαρτιῶν. λέγω δὲ ὑμῖν, οὐ μὴ πίω ἀπ’ ἄρτι ἐκ τούτου τοῦ γενήματος τῆς ἀμπέλου ἕως τῆς ἡμέρας ἐκείνης ὅταν αὐτὸ πίνω μεθ’ ὑμῶν καινὸν ἐν τῇ βασιλείᾳ τοῦ Πατρός μου. Καὶ ὑμνήσαντες ἐξῆλθον εἰς τὸ ὄρος τῶν Ἐλαιῶν. Τότε λέγει αὐτοῖς ὁ Ἰησοῦς Πάντες ὑμεῖς σκανδαλισθήσεσθε ἐν ἐμοὶ ἐν τῇ νυκτὶ ταύτῃ· γέγραπται γάρ Πατάξω τὸν ποιμένα, καὶ διασκορπισθήσονται τὰ πρόβατα τῆς ποίμνης· μετὰ δὲ τὸ ἐγερθῆναί με προάξω ὑμᾶς εἰς τὴν Γαλιλαίαν. ἀποκριθεὶς δὲ ὁ Πέτρος εἶπεν αὐτῷ Εἰ πάντες σκανδαλισθήσονται ἐν σοί, ἐγὼ οὐδέποτε σκανδαλισθήσομαι. ἔφη αὐτῷ ὁ Ἰησοῦς Ἀμὴν λέγω σοι ὅτι ἐν ταύτῃ τῇ νυκτὶ πρὶν ἀλέκτορα φωνῆσαι τρὶς ἀπαρνήσῃ με. λέγει αὐτῷ ὁ Πέτρος Κἂν δέῃ με σὺν σοὶ ἀποθανεῖν, οὐ μή σε ἀπαρνήσομαι. ὁμοίως καὶ πάντες οἱ μαθηταὶ εἶπαν.",
+     "checks": {
+      "kept members present": [
+       1,
+       9
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.43,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Matthew's supper"
+    },
+    {
+     "loc": "lxx:Ψαλμοι 121:1-5",
+     "text": "ὐφράνθην ἐπὶ τοῖς εἰρηκόσιν μοι Εἰς οἶκον Κυρίου πορευσόμεθα· ἑστῶτες ἦσαν οἱ πόδες ἡμῶν ἐν ταῖς αὐλαῖς Ἰερουσαλήμ. Ἰερουσαλὴμ οἰκοδομουμένη ὡς πόλις ἧς ἡ μετοχὴ αὐτῆς ἐπὶ τὸ αὐτό. ἐκεῖ γὰρ ἀνέβησαν αἱ φυλαὶ Κυρίου, μαρτύριον τοῦ Ἰσραήλ, τοῦ ἐξομολογήσασθαι τῷ ὀνόματι Κυρίου· ART 5 οιμμοι U+05D0AT | εμακρυνθη] seq ras 2 vel 3 litt in A 6 την ειρηνην] om την A Stich 9 U+05D0 11 A 10 RT CXX 2 τον συραν rescr A¹ 2 δωης U+05D0c.aAR | νυσταξη T (item 4) | φυλαξων R 4 εξυπνωσει] υπνωσει AR T (-ση) 5 φυλαξη T | δεξιαν U+05D0A*vidT δεξιας AᵃR 6 ουκ εκκαυσει] ου συνκαυσει U+05D0c.aRT (-ση) | και] ουδε U+05D0c.aART 7 φυλαξαι] φυλαξει ART | σου] + ο κς U+05D0c.aRT + κς T U+05D0 om Κυριος | R | φυλαξεις U+05D0* (φυλαξει U+05D0c.a) Stich 8 U+05D0 13 AR Τ CXXI 1 om τω Δαυειδ ART | πορευσωμεθα A(? R) 2 αυλαις] + σου U+05D0c.aART 3 οικοδομουμενη] κ rescr A? pr η R* ωκοδομουμ. Τ | η μετοχη] οι μετοχοι A 4 φυλαι] + φυλαι U+05D0c.aT+ αι φυλαι AR | κυ μαρτυριον sup ras A | του Ισρ.] τω Ισρ. ART ὅτι ἐκεῖ ἐκάθισαν θρόνοι εἰς κρίσιν, θρόνοι ἐπὶ οἶκον Δαυείδ, U+05D0",
+     "checks": {
+      "kept members present": [
+       1,
+       9
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.43,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "sit"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Ps 121: thrones for judgment"
+    },
+    {
+     "loc": "lxx:Ιωβ 1:6-12",
+     "text": "Καὶ ὡς ἐγένετο ἡ ἡμέρα αὕτη, καὶ ἰδοὺ ἦλθον οἱ ἄγγελοι τοῦ θεοῦ παραστῆναι ἐνώπιον τοῦ κυρίου, καὶ ὁ διάβολος ἦλθεν μετʼ αὐτῶν. καὶ εἶπεν ὁ κύριος τῷ διαβόλῳ Πόθεν παραγέγονας ; καὶ ἀποκριθεὶς ὁ διάβολος τῷ κυρίῳ εἶπεν Περιελθὼν τὴν γῆν καὶ ἐμπεριπατήσας τὴν ὑπʼ οὐρανὸν πάρεμι. καὶ εἶπεν αὐτῷ ὁ κύριος Προσέσχες τῇ δανοίᾳ σου κατὰ τοῦ παιδός μου Ἰὼβ; ὅτι οὐκ ἔστιν κατʼ αὐτὸν τῶν ἐπὶ τῆς γῆς, ἄνθρωπος ἄμεμπτος, ἀληθινός, θεοσεβής, ἀπεχόμενος ἀπὸ παντὸς πονηροῦ πράγματος. ἀπεκρίθη δὲ ὁ διάβολος καὶ εἶπεν ἐναντίον τοῦ κυρίρυ Μὴ δωρεὰν σέβεται Ἰὼβ τὸν κύριον; οὐ σὺ περιἐφραξας τὰ ἔξω αὐτοῦ καὶ τὰ ἕσαν τῆς οἰκἰας αὐτοῦ καὶ τὰ ἔξω πάντων τῶν ὄντων αὐτῷ κύκλῳ; τὰ ἔργα τῶν χειρῶν αὐτοῦ εὐλόγησας, καὶ τὰ κτήνη αὐτοῦ πολλὰ ἐποίησας ἐπὶ τῆς γῆς. ἀλλὰ ἀπόστειλον τὴν χεῖρά σου καὶ ἅψαι πάνταον ὧυ ἔχει· εἰ μὴν εἰς πρόσωπόν σε εὐλογήσει. τότε εἶπεν ὁ κύρωως τῷ διαβόλῳ Ἰδοὺ πάντα ὅσα ἐστὶν αὐτῷ δίδαυμι ἐν τῇ χειρί σου, ἀλλὰ αὐτοῦ μὴ ἅψῃ. καὶ ἐξῆλθεν ὁ διάβολος παρὰ τοῦ κυρίου. U+05D0A 5 διανοια] καρδια A | θεον] pr τον AU+05D0 | om ουν A | om Ιωβ 3⁰ A | ημε· ρας] +αυτων A 6 εγενετο ως A | om ιδου A | κυριου] θυ U+05D0* (κυ U+05D0c.a) | οyτων] +περιελθων την γην και εμπεριπατησας την υπ ουρανο] A 7 τω διαβολω] προς τον διαβολον A | ενπεριπατησας U+05D0 8 κυριος] θς A | παιδος] θεραποντος A | κατ αυτον] ανας ομοιος αστω A | της γης] om της U+05D0 | αμεμπτος] + δiκαιος U+05D0c.a)⁽ᵛⁱᵈ⁾ A 9 om και ειπεν A | εναντιον] ενοντι U+05D0 | του κυριου] om του A | Ιωβ σεβεται A | κυριον] θν A 10 αυτοσ τα | εξω A | εξω 2⁰] εξωθεν A | αυτω] αυτου U+05D0 | κυκλω] κυκλοθεν· A | τα εργα] τα ¹ δε ε. A | αυτου 3⁰] ου rescr A¹ (ουτων A*ᵛⁱᵈ) 11 σπ] σου 2 (σε U+05D0c.a) 12 τοτε] και A | αυτω] αυτου U+05D0* (-τω U+05D0c.a) | om διδωμι A | σου] + δεδωκα A | αλλα] αλλ U+05D0 | παρα του κυριου] απο προσωπου κυ A",
+     "checks": {
+      "kept members present": [
+       0,
+       9
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.36,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Job 1: the adversary asks"
+    },
+    {
+     "loc": "gnt:John 15:9-15",
+     "text": "καθὼς ἠγάπησέν με ὁ Πατήρ, κἀγὼ ὑμᾶς ἠγάπησα· μείνατε ἐν τῇ ἀγάπῃ τῇ ἐμῇ. ἐὰν τὰς ἐντολάς μου τηρήσητε, μενεῖτε ἐν τῇ ἀγάπῃ μου, καθὼς ἐγὼ τοῦ Πατρός μου τὰς ἐντολὰς τετήρηκα καὶ μένω αὐτοῦ ἐν τῇ ἀγάπῃ. Ταῦτα λελάληκα ὑμῖν ἵνα ἡ χαρὰ ἡ ἐμὴ ἐν ὑμῖν ᾖ καὶ ἡ χαρὰ ὑμῶν πληρωθῇ. αὕτη ἐστὶν ἡ ἐντολὴ ἡ ἐμὴ, ἵνα ἀγαπᾶτε ἀλλήλους καθὼς ἠγάπησα ὑμᾶς. μείζονα ταύτης ἀγάπην οὐδεὶς ἔχει, ἵνα τις τὴν ψυχὴν αὐτοῦ θῇ ὑπὲρ τῶν φίλων αὐτοῦ. ὑμεῖς φίλοι μού ἐστε, ἐὰν ποιῆτε ὃ ἐγὼ ἐντέλλομαι ὑμῖν. οὐκέτι λέγω ὑμᾶς δούλους, ὅτι ὁ δοῦλος οὐκ οἶδεν τί ποιεῖ αὐτοῦ ὁ κύριος· ὑμᾶς δὲ εἴρηκα φίλους, ὅτι πάντα ἃ ἤκουσα παρὰ τοῦ Πατρός μου ἐγνώρισα ὑμῖν.",
+     "checks": {
+      "kept members present": [
+       2,
+       9
+      ],
+      "dropped members absent": [
+       5,
+       5
+      ]
+     },
+     "score": 0.5,
+     "passes": false,
+     "missing": [
+      "satan",
+      "tempt",
+      "faithful",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "John 15: as the Father, I also"
+    }
+   ],
+   "note": "Found blind by conj.py. A JOIN: seven places in two chapters, one saying. The supping is by sense (two verbs).",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7938,
+     "passing": 1,
+     "refs": [
+      "Luke 22:28"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.5)"
+  },
+  {
+   "id": "rev17.4-6+18.24→matt23.25-35",
+   "title": "Babylon's cup and the blood on the earth: the woes",
+   "family": "Conjunctions",
+   "seed": {
+    "loc": "gnt:Rev 17:4 + Rev 17:6 + Rev 18:24",
+    "text": "καὶ ἡ γυνὴ ἦν περιβεβλημένη πορφυροῦν καὶ κόκκινον, καὶ κεχρυσωμένη χρυσίῳ καὶ λίθῳ τιμίῳ καὶ μαργαρίταις, ἔχουσα ποτήριον χρυσοῦν ἐν τῇ χειρὶ αὐτῆς γέμον βδελυγμάτων καὶ τὰ ἀκάθαρτα τῆς πορνείας αὐτῆς, καὶ εἶδον τὴν γυναῖκα μεθύουσαν ἐκ τοῦ αἵματος τῶν ἁγίων καὶ ἐκ τοῦ αἵματος τῶν μαρτύρων Ἰησοῦ. Καὶ ἐθαύμασα ἰδὼν αὐτὴν θαῦμα μέγα. καὶ ἐν αὐτῇ αἷμα προφητῶν καὶ ἁγίων εὑρέθη καὶ πάντων τῶν ἐσφαγμένων ἐπὶ τῆς γῆς.",
+    "members_found": {
+     "woman": true,
+     "purple": true,
+     "scarlet": true,
+     "gold": true,
+     "cup": true,
+     "full": true,
+     "abominations": true,
+     "unclean": true,
+     "drunk": true,
+     "blood": true,
+     "saints": true,
+     "prophets": true,
+     "earth": true
+    }
+   },
+   "members": {
+    "woman": {
+     "gloss": "the woman",
+     "greek": "ἡ γυνή"
+    },
+    "purple": {
+     "gloss": "purple",
+     "greek": "πορφυροῦν"
+    },
+    "scarlet": {
+     "gloss": "scarlet",
+     "greek": "κόκκινον"
+    },
+    "gold": {
+     "gloss": "gold",
+     "greek": "χρυσίῳ"
+    },
+    "cup": {
+     "gloss": "a cup",
+     "greek": "ποτήριον"
+    },
+    "full": {
+     "gloss": "full",
+     "greek": "γέμον"
+    },
+    "abominations": {
+     "gloss": "of abominations",
+     "greek": "βδελυγμάτων"
+    },
+    "unclean": {
+     "gloss": "the unclean things",
+     "greek": "τὰ ἀκάθαρτα"
+    },
+    "drunk": {
+     "gloss": "drunk",
+     "greek": "μεθύουσαν"
+    },
+    "blood": {
+     "gloss": "blood",
+     "greek": "αἷμα"
+    },
+    "saints": {
+     "gloss": "of saints",
+     "greek": "ἁγίων"
+    },
+    "prophets": {
+     "gloss": "of prophets",
+     "greek": "προφητῶν"
+    },
+    "earth": {
+     "gloss": "on the earth",
+     "greek": "ἐπὶ τῆς γῆς"
+    },
+    "righteous": {
+     "gloss": "righteous",
+     "greek": "δίκαιον"
+    }
+   },
+   "trace": [
+    {
+     "op": "SEED",
+     "state": [
+      "woman",
+      "purple",
+      "scarlet",
+      "gold",
+      "cup",
+      "full",
+      "abominations",
+      "unclean",
+      "drunk",
+      "blood",
+      "saints",
+      "prophets",
+      "earth"
+     ]
+    },
+    {
+     "op": "PARTITION",
+     "does": "keep some members of the seed's sentence and drop the others; another borrower may keep what this one drops",
+     "keep": [
+      "cup",
+      "full",
+      "unclean",
+      "blood",
+      "saints",
+      "prophets",
+      "earth"
+     ],
+     "state": [
+      "cup",
+      "full",
+      "unclean",
+      "blood",
+      "saints",
+      "prophets",
+      "earth"
+     ]
+    },
+    {
+     "op": "TRANSFER-ATTRIBUTE",
+     "does": "move an attribute from the figure of the vision to a figure of the narrative",
+     "old": "saints",
+     "new": "righteous",
+     "state": [
+      "cup",
+      "full",
+      "unclean",
+      "blood",
+      "righteous",
+      "prophets",
+      "earth"
+     ]
+    },
+    {
+     "op": "EXPAND",
+     "does": "say the seed's members again: each named member stands in the borrower at least the stated number of times (a short seed worked into a long stretch)",
+     "repeat": {
+      "blood": 3,
+      "full": 2,
+      "cup": 2
+     },
+     "state": [
+      "cup",
+      "full",
+      "unclean",
+      "blood",
+      "righteous",
+      "prophets",
+      "earth"
+     ]
+    }
+   ],
+   "emission": {
+    "members": [
+     "cup",
+     "full",
+     "unclean",
+     "blood",
+     "righteous",
+     "prophets",
+     "earth"
+    ],
+    "dropped": [
+     "woman",
+     "purple",
+     "scarlet",
+     "gold",
+     "abominations",
+     "drunk",
+     "saints"
+    ],
+    "marker": null,
+    "negation_removed": false,
+    "negation_set": false
+   },
+   "target": {
+    "loc": "gnt:Matt 23:25-35",
+    "text": "Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι καθαρίζετε τὸ ἔξωθεν τοῦ ποτηρίου καὶ τῆς παροψίδος, ἔσωθεν δὲ γέμουσιν ἐξ ἁρπαγῆς καὶ ἀκρασίας. Φαρισαῖε τυφλέ, καθάρισον πρῶτον τὸ ἐντὸς τοῦ ποτηρίου ἵνα γένηται καὶ τὸ ἐκτὸς αὐτοῦ καθαρόν. Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι παρομοιάζετε τάφοις κεκονιαμένοις, οἵτινες ἔξωθεν μὲν φαίνονται ὡραῖοι, ἔσωθεν δὲ γέμουσιν ὀστέων νεκρῶν καὶ πάσης ἀκαθαρσίας. οὕτως καὶ ὑμεῖς ἔξωθεν μὲν φαίνεσθε τοῖς ἀνθρώποις δίκαιοι, ἔσωθεν δέ ἐστε μεστοὶ ὑποκρίσεως καὶ ἀνομίας. Οὐαὶ ὑμῖν, γραμματεῖς καὶ Φαρισαῖοι ὑποκριταί, ὅτι οἰκοδομεῖτε τοὺς τάφους τῶν προφητῶν καὶ κοσμεῖτε τὰ μνημεῖα τῶν δικαίων, καὶ λέγετε Εἰ ἤμεθα ἐν ταῖς ἡμέραις τῶν πατέρων ἡμῶν, οὐκ ἂν ἤμεθα αὐτῶν κοινωνοὶ ἐν τῷ αἵματι τῶν προφητῶν. ὥστε μαρτυρεῖτε ἑαυτοῖς ὅτι υἱοί ἐστε τῶν φονευσάντων τοὺς προφήτας. καὶ ὑμεῖς πληρώσατε τὸ μέτρον τῶν πατέρων ὑμῶν. ὄφεις, γεννήματα ἐχιδνῶν, πῶς φύγητε ἀπὸ τῆς κρίσεως τῆς γεέννης; διὰ τοῦτο ἰδοὺ ἐγὼ ἀποστέλλω πρὸς ὑμᾶς προφήτας καὶ σοφοὺς καὶ γραμματεῖς· ἐξ αὐτῶν ἀποκτενεῖτε καὶ σταυρώσετε, καὶ ἐξ αὐτῶν μαστιγώσετε ἐν ταῖς συναγωγαῖς ὑμῶν καὶ διώξετε ἀπὸ πόλεως εἰς πόλιν· ὅπως ἔλθῃ ἐφ’ ὑμᾶς πᾶν αἷμα δίκαιον ἐκχυννόμενον ἐπὶ τῆς γῆς ἀπὸ τοῦ αἵματος Ἅβελ τοῦ δικαίου ἕως τοῦ αἵματος Ζαχαρίου υἱοῦ Βαραχίου, ὃν ἐφονεύσατε μεταξὺ τοῦ ναοῦ καὶ τοῦ θυσιαστηρίου.",
+    "checks": {
+     "kept members present": [
+      7,
+      7
+     ],
+     "dropped members absent": [
+      7,
+      7
+     ],
+     "members said again": [
+      3,
+      3
+     ]
+    },
+    "score": 1.0,
+    "passes": true,
+    "missing": [],
+    "kept_but_should_be_dropped": []
+   },
+   "controls": [
+    {
+     "loc": "gnt:Luke 11:39-51",
+     "text": "εἶπεν δὲ ὁ Κύριος πρὸς αὐτόν Νῦν ὑμεῖς οἱ Φαρισαῖοι τὸ ἔξωθεν τοῦ ποτηρίου καὶ τοῦ πίνακος καθαρίζετε, τὸ δὲ ἔσωθεν ὑμῶν γέμει ἁρπαγῆς καὶ πονηρίας. ἄφρονες, οὐχ ὁ ποιήσας τὸ ἔξωθεν καὶ τὸ ἔσωθεν ἐποίησεν; πλὴν τὰ ἐνόντα δότε ἐλεημοσύνην, καὶ ἰδοὺ πάντα καθαρὰ ὑμῖν ἐστιν. ἀλλὰ οὐαὶ ὑμῖν τοῖς Φαρισαίοις, ὅτι ἀποδεκατοῦτε τὸ ἡδύοσμον καὶ τὸ πήγανον καὶ πᾶν λάχανον, καὶ παρέρχεσθε τὴν κρίσιν καὶ τὴν ἀγάπην τοῦ Θεοῦ· ταῦτα δὲ ἔδει ποιῆσαι κἀκεῖνα μὴ παρεῖναι. οὐαὶ ὑμῖν τοῖς Φαρισαίοις, ὅτι ἀγαπᾶτε τὴν πρωτοκαθεδρίαν ἐν ταῖς συναγωγαῖς καὶ τοὺς ἀσπασμοὺς ἐν ταῖς ἀγοραῖς. οὐαὶ ὑμῖν, ὅτι ἐστὲ ὡς τὰ μνημεῖα τὰ ἄδηλα, καὶ οἱ ἄνθρωποι οἱ περιπατοῦντες ἐπάνω οὐκ οἴδασιν. Ἀποκριθεὶς δέ τις τῶν νομικῶν λέγει αὐτῷ Διδάσκαλε, ταῦτα λέγων καὶ ἡμᾶς ὑβρίζεις. ὁ δὲ εἶπεν Καὶ ὑμῖν τοῖς νομικοῖς οὐαί, ὅτι φορτίζετε τοὺς ἀνθρώπους φορτία δυσβάστακτα, καὶ αὐτοὶ ἑνὶ τῶν δακτύλων ὑμῶν οὐ προσψαύετε τοῖς φορτίοις. οὐαὶ ὑμῖν, ὅτι οἰκοδομεῖτε τὰ μνημεῖα τῶν προφητῶν, οἱ δὲ πατέρες ὑμῶν ἀπέκτειναν αὐτούς. ἄρα μάρτυρές ἐστε καὶ συνευδοκεῖτε τοῖς ἔργοις τῶν πατέρων ὑμῶν, ὅτι αὐτοὶ μὲν ἀπέκτειναν αὐτοὺς, ὑμεῖς δὲ οἰκοδομεῖτε. διὰ τοῦτο καὶ ἡ σοφία τοῦ Θεοῦ εἶπεν Ἀποστελῶ εἰς αὐτοὺς προφήτας καὶ ἀποστόλους, καὶ ἐξ αὐτῶν ἀποκτενοῦσιν καὶ διώξουσιν, ἵνα ἐκζητηθῇ τὸ αἷμα πάντων τῶν προφητῶν τὸ ἐκκεχυμένον ἀπὸ καταβολῆς κόσμου ἀπὸ τῆς γενεᾶς ταύτης, ἀπὸ αἵματος Ἄβελ ἕως αἵματος Ζαχαρίου τοῦ ἀπολομένου μεταξὺ τοῦ θυσιαστηρίου καὶ τοῦ οἴκου· ναί, λέγω ὑμῖν, ἐκζητηθήσεται ἀπὸ τῆς γενεᾶς ταύτης.",
+     "checks": {
+      "kept members present": [
+       4,
+       7
+      ],
+      "dropped members absent": [
+       7,
+       7
+      ],
+      "members said again": [
+       1,
+       3
+      ]
+     },
+     "score": 0.71,
+     "passes": false,
+     "missing": [
+      "unclean",
+      "righteous",
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Luke's form of the woes"
+    },
+    {
+     "loc": "lxx:Ιερεμιας 28:7",
+     "text": "ποτήριον χρυσοῦν Βαβυλὼν ἐν χειρὶ Κυρίου, μεθύσκον πᾶσαν τὴν γῆν· ἀπὸ τοῦ οἴνου αὐτῆς ἐπίοσαν ἔθνη, διὰ τοῦτο ἐσαλεύθησαν·",
+     "checks": {
+      "kept members present": [
+       1,
+       7
+      ],
+      "dropped members absent": [
+       5,
+       7
+      ],
+      "members said again": [
+       0,
+       3
+      ]
+     },
+     "score": 0.35,
+     "passes": false,
+     "missing": [
+      "full",
+      "unclean",
+      "blood",
+      "righteous",
+      "prophets",
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [
+      "gold",
+      "drunk"
+     ],
+     "label": "Septuagint, Jer 28:7: Babylon a golden cup"
+    },
+    {
+     "loc": "lxx:Θρηνοι 4:13-14",
+     "text": "Μήμ. Ἐξ ἁμαρτιῶν προφητῶν αὐτῆς, ἀδικιῶν ἱερέων αὐτῆς, τῶν εκχεοντων αἶμα δίκαιον ἐν μέσῳ αὐτῆς. Nούν. Ἐσαλεύθησαν ἐγρήγοροι αὐτῆς ἐν ταῖς ἐξόδοις, ἐμολύνθησαν ἐν αἵματι ἐν τῷ μὴ δύνασθαι αὐτούς, ἥψαντο ἐνδυμάτων αὐτῶν.",
+     "checks": {
+      "kept members present": [
+       3,
+       7
+      ],
+      "dropped members absent": [
+       7,
+       7
+      ],
+      "members said again": [
+       0,
+       3
+      ]
+     },
+     "score": 0.59,
+     "passes": false,
+     "missing": [
+      "cup",
+      "full",
+      "unclean",
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Lam 4:13: righteous blood shed in her midst"
+    },
+    {
+     "loc": "lxx:Ιεζεκιηλ 24:6-9",
+     "text": "Διὰ τοῦτο τάδε λέγει Κύριος Ὦ πόλις αἱμάτων λέβης, ἐν ᾧ ἐστιν ἰὸς ἐν αὐτῷ καὶ ὁ ἰὸς οὐκ ἐξῆλθεν ἐξ αὐτῆς, κατὰ μέλος αὐτῆς ἐξήνεγκεν. οὐκ ἐπέπεσεν ἐπʼ αὐτὴν κλῆρος. ὅτι αἵματα αὐτῆς ἐν μέσῳ αὐτῆς ἐστιν, ἐπὶ λεωπετρίαν τέταχα αὐτό· οὐκ ἐκκέχυκα αὐτὸ ἐπὶ γῆν τοῦ καλύψαι ἐπʼ αὐτὸ γῆν, τοῦ ἀναβῆναι θυμὸν εἰς ἐκδίκησιν ἐκδικηθῆναι· δέδωκα τὸ αἷμα αὐτῆς ἐπὶ λεωπετρίαν τοῦ μὴ καλύψαι αὐτό. διὰ τοῦτο τάδε λέγει Κύριος Κἀγὼ μεγαλυνῶ τὸν λαόν,",
+     "checks": {
+      "kept members present": [
+       1,
+       7
+      ],
+      "dropped members absent": [
+       7,
+       7
+      ],
+      "members said again": [
+       1,
+       3
+      ]
+     },
+     "score": 0.53,
+     "passes": false,
+     "missing": [
+      "cup",
+      "full",
+      "unclean",
+      "righteous",
+      "prophets",
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Ezek 24: the city of bloods"
+    },
+    {
+     "loc": "lxx:Γενεσις 4:10-11",
+     "text": "καὶ εἶπεν ὁ θεός Τί ἐποίησας; φωνή αἵματος τοῦ ἀδελφοῦ σου βοᾷ πρὸς μὲ ἐκ τῆς γῆς. καὶ νῦν ἐπικατάρατος σὺ ἐπὶ τῆς γῆς, ἢ ἔχανεν τὸ στόμα αὐτῆς δέξασθαι τὸ αἷμα τοῦ ἀδελφοῦ σου ἐκ τῆς χειρός σου.",
+     "checks": {
+      "kept members present": [
+       2,
+       7
+      ],
+      "dropped members absent": [
+       7,
+       7
+      ],
+      "members said again": [
+       0,
+       3
+      ]
+     },
+     "score": 0.53,
+     "passes": false,
+     "missing": [
+      "cup",
+      "full",
+      "unclean",
+      "righteous",
+      "prophets"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Septuagint, Gen 4: Abel's blood from the earth"
+    },
+    {
+     "loc": "gnt:Mark 7:1-8",
+     "text": "Καὶ συνάγονται πρὸς αὐτὸν οἱ Φαρισαῖοι καί τινες τῶν γραμματέων ἐλθόντες ἀπὸ Ἱεροσολύμων. καὶ ἰδόντες τινὰς τῶν μαθητῶν αὐτοῦ ὅτι κοιναῖς χερσίν, τοῦτ’ ἔστιν ἀνίπτοις, ἐσθίουσιν τοὺς ἄρτους,— οἱ γὰρ Φαρισαῖοι καὶ πάντες οἱ Ἰουδαῖοι ἐὰν μὴ πυγμῇ νίψωνται τὰς χεῖρας οὐκ ἐσθίουσιν, κρατοῦντες τὴν παράδοσιν τῶν πρεσβυτέρων, καὶ ἀπ’ ἀγορᾶς ἐὰν μὴ ῥαντίσωνται οὐκ ἐσθίουσιν, καὶ ἄλλα πολλά ἐστιν ἃ παρέλαβον κρατεῖν, βαπτισμοὺς ποτηρίων καὶ ξεστῶν καὶ χαλκίων,— καὶ ἐπερωτῶσιν αὐτὸν οἱ Φαρισαῖοι καὶ οἱ γραμματεῖς Διὰ τί οὐ περιπατοῦσιν οἱ μαθηταί σου κατὰ τὴν παράδοσιν τῶν πρεσβυτέρων, ἀλλὰ κοιναῖς χερσὶν ἐσθίουσιν τὸν ἄρτον; ὁ δὲ εἶπεν αὐτοῖς Καλῶς ἐπροφήτευσεν Ἡσαΐας περὶ ὑμῶν τῶν ὑποκριτῶν, ὡς γέγραπται ὅτι Οὗτος ὁ λαὸς τοῖς χείλεσίν με τιμᾷ, ἡ δὲ καρδία αὐτῶν πόρρω ἀπέχει ἀπ’ ἐμοῦ· μάτην δὲ σέβονταί με, διδάσκοντες διδασκαλίας ἐντάλματα ἀνθρώπων· ἀφέντες τὴν ἐντολὴν τοῦ Θεοῦ κρατεῖτε τὴν παράδοσιν τῶν ἀνθρώπων.",
+     "checks": {
+      "kept members present": [
+       2,
+       7
+      ],
+      "dropped members absent": [
+       7,
+       7
+      ],
+      "members said again": [
+       0,
+       3
+      ]
+     },
+     "score": 0.53,
+     "passes": false,
+     "missing": [
+      "full",
+      "unclean",
+      "blood",
+      "righteous",
+      "earth"
+     ],
+     "kept_but_should_be_dropped": [],
+     "label": "Mark 7: the washing of cups"
+    }
+   ],
+   "note": "Found blind by conj.py. The woman's marks laid on the scribes and Pharisees. Luke's form is the same tradition and is set as a control to see what it lacks.",
+   "records": [],
+   "search": {
+    "new_testament": {
+     "verses_searched": 7940,
+     "passing": 1,
+     "refs": [
+      "Matt 23:25"
+     ]
+    },
+    "septuagint": {
+     "verses_searched": 28933,
+     "passing": 0,
+     "refs": []
+    }
+   },
+   "seed_ok": true,
+   "verdict": "passes; no control passes (best control 0.71)"
   }
  ]
 }

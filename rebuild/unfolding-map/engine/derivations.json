@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "3c63c188e8de376fd7d3ee0e43a8ecc62008d4fa12029fab2415f818e86d26f6",
+  "sha256_of_derivations": "e4b0ce3b99e3fa4c2e10caeda73d90d80c9d11e7c9ab9383ccd53969e6ef5728",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -4481,6 +4481,464 @@
     }
    ],
    "note": "2S.4. The seed is six places in four consecutive chapters; the burning is by sense (two verbs). Luke's form has the supper and the called and nothing else of this."
+  },
+  {
+   "id": "rev9.1-4→luke10.17-20",
+   "family": "Conjunctions",
+   "title": "The fall from heaven; authority, scorpions, not to hurt; the marked",
+   "seed": "gnt:Rev 9:1 + Rev 9:3-4",
+   "members": [
+    {
+     "id": "star",
+     "gloss": "a star",
+     "greek": "ἀστέρα",
+     "rx": "αστερα",
+     "in_seed": true
+    },
+    {
+     "id": "fallen",
+     "gloss": "fallen from heaven",
+     "greek": "ἐκ τοῦ οὐρανοῦ πεπτωκότα",
+     "rx": "εκ του ουρανου πε(πτωκοτα|σοντα)",
+     "in_seed": true
+    },
+    {
+     "id": "given",
+     "gloss": "was given / I have given",
+     "greek": "ἐδόθη",
+     "rx": "εδοθη|δεδωκα",
+     "in_seed": true
+    },
+    {
+     "id": "key",
+     "gloss": "the key",
+     "greek": "ἡ κλείς",
+     "rx": "κλεισ",
+     "in_seed": true
+    },
+    {
+     "id": "locusts",
+     "gloss": "locusts",
+     "greek": "ἀκρίδες",
+     "rx": "ακριδ",
+     "in_seed": true
+    },
+    {
+     "id": "authority",
+     "gloss": "authority",
+     "greek": "ἐξουσία",
+     "rx": "εξουσια",
+     "in_seed": true
+    },
+    {
+     "id": "scorpion",
+     "gloss": "scorpions",
+     "greek": "οἱ σκορπίοι",
+     "rx": "σκορπιο[ιυ]|σκορπιων",
+     "in_seed": true
+    },
+    {
+     "id": "nothurt",
+     "gloss": "not to hurt",
+     "greek": "ἵνα μὴ ἀδικήσουσιν",
+     "rx": "μη αδικησ",
+     "in_seed": true
+    },
+    {
+     "id": "seal",
+     "gloss": "the seal of God",
+     "greek": "τὴν σφραγῖδα τοῦ θεοῦ",
+     "rx": "σφραγιδα",
+     "in_seed": true
+    },
+    {
+     "id": "satan",
+     "gloss": "the Satan",
+     "greek": "τὸν Σατανᾶν",
+     "rx": "σαταν",
+     "in_seed": false
+    },
+    {
+     "id": "written",
+     "gloss": "names written in the heavens",
+     "greek": "ἐνγέγραπται",
+     "rx": "ενγεγραπται",
+     "in_seed": false
+    }
+   ],
+   "target": "gnt:Luke 10:17-20",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "star",
+      "fallen",
+      "given",
+      "authority",
+      "scorpion",
+      "nothurt",
+      "seal"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "old": "star",
+     "new": "satan"
+    },
+    {
+     "op": "SUBSTITUTE",
+     "old": "seal",
+     "new": "written"
+    }
+   ],
+   "controls": [
+    {
+     "loc": "lxx:Δευτερονομιον 8:15",
+     "label": "Septuagint, Deut 8:15: the biting serpent and the scorpion"
+    },
+    {
+     "loc": "lxx:Ψαλμοι 90:13",
+     "label": "Septuagint, Ps 90:13: you will tread on asp and basilisk"
+    },
+    {
+     "loc": "lxx:Ησαιας 14:12-15",
+     "label": "Septuagint, Isa 14:12–15: fallen from heaven"
+    },
+    {
+     "loc": "gnt:Mark 16:17-18",
+     "label": "Mark 16:17–18: serpents, and it will not harm them"
+    },
+    {
+     "loc": "gnt:Luke 11:11-13",
+     "label": "Luke 11: a serpent, a scorpion, given"
+    },
+    {
+     "loc": "gnt:Acts 28:3-6",
+     "label": "Acts 28: the viper"
+    },
+    {
+     "loc": "gnt:John 12:31-32",
+     "label": "John 12:31: the ruler of this world cast out"
+    }
+   ],
+   "note": "Found blind by conj.py, first of 1,245 passages. Emitted in the seed's order. The side is exchanged and no operator states it: in the seed the authority is given to the scorpions; in Luke over them."
+  },
+  {
+   "id": "rev2.9-3.21→luke22.28-32",
+   "family": "Conjunctions",
+   "title": "The saying at the supper, from five of the seven letters",
+   "seed": "gnt:Rev 2:9-10 + Rev 2:28 + Rev 3:2 + Rev 3:10 + Rev 3:20-21",
+   "members": [
+    {
+     "id": "satan",
+     "gloss": "of the Satan",
+     "greek": "τοῦ Σατανᾶ",
+     "rx": "σαταν",
+     "in_seed": true
+    },
+    {
+     "id": "tempt",
+     "gloss": "that you be tempted / the temptation",
+     "greek": "ἵνα πειρασθῆτε",
+     "rx": "πειρασ",
+     "in_seed": true
+    },
+    {
+     "id": "faithful",
+     "gloss": "faithful / faith",
+     "greek": "πιστός",
+     "rx": "πιστ",
+     "in_seed": true
+    },
+    {
+     "id": "crown",
+     "gloss": "the crown",
+     "greek": "τὸν στέφανον",
+     "rx": "στεφαν",
+     "in_seed": true
+    },
+    {
+     "id": "kago",
+     "gloss": "I also",
+     "greek": "κἀγώ",
+     "rx": "\\bκαγω\\b",
+     "in_seed": true
+    },
+    {
+     "id": "father",
+     "gloss": "my Father",
+     "greek": "τοῦ πατρός μου",
+     "rx": "πατ(ηρ|ροσ) μου",
+     "in_seed": true
+    },
+    {
+     "id": "star",
+     "gloss": "the morning star",
+     "greek": "τὸν ἀστέρα",
+     "rx": "αστερα",
+     "in_seed": true
+    },
+    {
+     "id": "watch",
+     "gloss": "be watching",
+     "greek": "γρηγορῶν",
+     "rx": "γρηγορ",
+     "in_seed": true
+    },
+    {
+     "id": "strengthen",
+     "gloss": "strengthen",
+     "greek": "στήρισον",
+     "rx": "στηρισον",
+     "in_seed": true
+    },
+    {
+     "id": "hour",
+     "gloss": "the hour",
+     "greek": "τῆς ὥρας",
+     "rx": "\\bωρασ\\b",
+     "in_seed": true
+    },
+    {
+     "id": "door",
+     "gloss": "the door",
+     "greek": "τὴν θύραν",
+     "rx": "θυρα",
+     "in_seed": true
+    },
+    {
+     "id": "sup",
+     "gloss": "I will sup with him",
+     "greek": "δειπνήσω μετ' αὐτοῦ",
+     "rx": "δειπνησω|εσθητε",
+     "in_seed": true
+    },
+    {
+     "id": "sit",
+     "gloss": "to sit",
+     "greek": "καθίσαι",
+     "rx": "καθισαι|καθησεσθε",
+     "in_seed": true
+    },
+    {
+     "id": "throne",
+     "gloss": "the throne",
+     "greek": "τῷ θρόνῳ",
+     "rx": "θρον",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Luke 22:28-32",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "satan",
+      "tempt",
+      "faithful",
+      "kago",
+      "father",
+      "strengthen",
+      "sup",
+      "sit",
+      "throne"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Matt 19:27-30",
+     "label": "Matthew's form of the saying"
+    },
+    {
+     "loc": "gnt:Mark 10:35-45",
+     "label": "Mark 10: to sit at my right"
+    },
+    {
+     "loc": "gnt:Luke 12:35-40",
+     "label": "Luke 12: he will make them recline"
+    },
+    {
+     "loc": "gnt:Matt 26:26-35",
+     "label": "Matthew's supper"
+    },
+    {
+     "loc": "lxx:Ψαλμοι 121:1-5",
+     "label": "Septuagint, Ps 121: thrones for judgment"
+    },
+    {
+     "loc": "lxx:Ιωβ 1:6-12",
+     "label": "Septuagint, Job 1: the adversary asks"
+    },
+    {
+     "loc": "gnt:John 15:9-15",
+     "label": "John 15: as the Father, I also"
+    }
+   ],
+   "note": "Found blind by conj.py. A JOIN: seven places in two chapters, one saying. The supping is by sense (two verbs)."
+  },
+  {
+   "id": "rev17.4-6+18.24→matt23.25-35",
+   "family": "Conjunctions",
+   "title": "Babylon's cup and the blood on the earth: the woes",
+   "seed": "gnt:Rev 17:4 + Rev 17:6 + Rev 18:24",
+   "members": [
+    {
+     "id": "woman",
+     "gloss": "the woman",
+     "greek": "ἡ γυνή",
+     "rx": "\\bγυν",
+     "in_seed": true
+    },
+    {
+     "id": "purple",
+     "gloss": "purple",
+     "greek": "πορφυροῦν",
+     "rx": "πορφυρ",
+     "in_seed": true
+    },
+    {
+     "id": "scarlet",
+     "gloss": "scarlet",
+     "greek": "κόκκινον",
+     "rx": "κοκκιν",
+     "in_seed": true
+    },
+    {
+     "id": "gold",
+     "gloss": "gold",
+     "greek": "χρυσίῳ",
+     "rx": "χρυσ",
+     "in_seed": true
+    },
+    {
+     "id": "cup",
+     "gloss": "a cup",
+     "greek": "ποτήριον",
+     "rx": "ποτηρι",
+     "in_seed": true
+    },
+    {
+     "id": "full",
+     "gloss": "full",
+     "greek": "γέμον",
+     "rx": "\\bγεμ",
+     "in_seed": true
+    },
+    {
+     "id": "abominations",
+     "gloss": "of abominations",
+     "greek": "βδελυγμάτων",
+     "rx": "βδελυγ",
+     "in_seed": true
+    },
+    {
+     "id": "unclean",
+     "gloss": "the unclean things",
+     "greek": "τὰ ἀκάθαρτα",
+     "rx": "ακαθαρ",
+     "in_seed": true
+    },
+    {
+     "id": "drunk",
+     "gloss": "drunk",
+     "greek": "μεθύουσαν",
+     "rx": "μεθυ",
+     "in_seed": true
+    },
+    {
+     "id": "blood",
+     "gloss": "blood",
+     "greek": "αἷμα",
+     "rx": "αιμα",
+     "in_seed": true
+    },
+    {
+     "id": "saints",
+     "gloss": "of saints",
+     "greek": "ἁγίων",
+     "rx": "αγιων",
+     "in_seed": true
+    },
+    {
+     "id": "prophets",
+     "gloss": "of prophets",
+     "greek": "προφητῶν",
+     "rx": "προφητ",
+     "in_seed": true
+    },
+    {
+     "id": "earth",
+     "gloss": "on the earth",
+     "greek": "ἐπὶ τῆς γῆς",
+     "rx": "επι τησ γησ",
+     "in_seed": true
+    },
+    {
+     "id": "righteous",
+     "gloss": "righteous",
+     "greek": "δίκαιον",
+     "rx": "δικαιο",
+     "in_seed": false
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Matt 23:25-35",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "cup",
+      "full",
+      "unclean",
+      "blood",
+      "saints",
+      "prophets",
+      "earth"
+     ]
+    },
+    {
+     "op": "TRANSFER-ATTRIBUTE",
+     "old": "saints",
+     "new": "righteous"
+    },
+    {
+     "op": "EXPAND",
+     "repeat": {
+      "blood": 3,
+      "full": 2,
+      "cup": 2
+     }
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Luke 11:39-51",
+     "label": "Luke's form of the woes"
+    },
+    {
+     "loc": "lxx:Ιερεμιας 28:7",
+     "label": "Septuagint, Jer 28:7: Babylon a golden cup"
+    },
+    {
+     "loc": "lxx:Θρηνοι 4:13-14",
+     "label": "Septuagint, Lam 4:13: righteous blood shed in her midst"
+    },
+    {
+     "loc": "lxx:Ιεζεκιηλ 24:6-9",
+     "label": "Septuagint, Ezek 24: the city of bloods"
+    },
+    {
+     "loc": "lxx:Γενεσις 4:10-11",
+     "label": "Septuagint, Gen 4: Abel's blood from the earth"
+    },
+    {
+     "loc": "gnt:Mark 7:1-8",
+     "label": "Mark 7: the washing of cups"
+    }
+   ],
+   "note": "Found blind by conj.py. The woman's marks laid on the scribes and Pharisees. Luke's form is the same tradition and is set as a control to see what it lacks."
   }
  ]
 }
