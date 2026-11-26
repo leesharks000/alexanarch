@@ -199,5 +199,15 @@ for g in TG:
     d(id=f"rev11→{g.lower()}.cross-tomb", family="Revelation 11: the two witnesses, divided", title=f"The witnesses' death and rising, {dict(Matt='Matthew', Mark='Mark', Luke='Luke', John='John')[g]}'s part", seed=SEEDW, members=W, unordered=True,
       steps=[{"op": "PARTITION", "keep": KEEP[g]}], target=TG[g], controls=[{"loc": TG[h], "label": f"{h}'s cross and tomb"} for h in TG if h != g],
       note="Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2).")
+# ── The guard at the tomb (v0.16). Found by the machine search of 2N.4, then read; entered after.
+G20 = [m("angel", "an angel coming down from heaven", "ἄγγελον καταβαίνοντα ἐκ τοῦ οὐρανοῦ", r"αγγελ\w+ (\w+ ){0,2}καταβ\w+ (εκ του|εξ) ουρανου"), m("key", "the key of the abyss", "τὴν κλεῖν τῆς ἀβύσσου", r"κλειν τησ αβυσσου"),
+       m("chain", "a great chain", "ἅλυσιν μεγάλην", r"αλυσιν"), m("seized", "he seized", "ἐκράτησεν", r"εκρατησ"), m("bound", "bound him", "ἔδησεν", r"εδησεν"), m("thousand", "a thousand years", "χίλια ἔτη", r"χιλια ετη"),
+       m("sealed", "sealed", "ἐσφράγισεν", r"σφραγισ"), m("upon", "over him", "ἐπάνω αὐτοῦ", r"επανω αυτου"), m("deceive", "that he deceive no more", "ἵνα μὴ πλανήσῃ ἔτι", r"\bπλαν"), m("dead", "the dead", "τῶν νεκρῶν", r"νεκρ"), m("first", "the first", "ἡ πρώτη", r"πρωτ")]
+DAN6 = "lxx:Δανιηλ_(Theodotionis_versio) 6:17"
+d(id="rev20.1-5→matt27.63-28.9", family="Matthew", title="The seal on the deceiver", seed="gnt:Rev 20:1-3 + Rev 20:5", members=G20, unordered=True,
+  steps=[{"op": "PARTITION", "keep": ["angel", "seized", "sealed", "upon", "deceive", "dead", "first"]}], target="gnt:Matt 27:63-66 + Matt 28:2 + Matt 28:9",
+  controls=[{"loc": DAN6, "label": "Septuagint, Dan 6:17 (Theodotion): the stone and the king's seal"}, {"loc": "lxx:Δανιηλ_(translatio_Graeca) 6:17", "label": "Septuagint, Dan 6:17 (Old Greek)"},
+            {"loc": "gnt:Mark 15:46-47 + Mark 16:1-8", "label": "Mark's tomb"}, {"loc": "gnt:Luke 23:53-56 + Luke 24:1-9", "label": "Luke's tomb"}, {"loc": "gnt:John 20:1-17", "label": "John's tomb"}],
+  note="Matthew's guard and seal, which no other Gospel has. The engine states the wording kept. Who seals and who is sealed are changed, and the seal is undone: those are differences of relation and are computed in relations/guard.py, not here.")
 src = json.dumps(D, ensure_ascii=False, sort_keys=True)
 print(json.dumps({"frozen": {"date": "2026-11-26", "sha256_of_derivations": hashlib.sha256(src.encode()).hexdigest(), "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"}, "derivations": D}, ensure_ascii=False, indent=1))

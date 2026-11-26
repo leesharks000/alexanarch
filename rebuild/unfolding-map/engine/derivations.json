@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "d2186991271e0b78e2028384dfae60cceaa450cacce560b26829979081350799",
+  "sha256_of_derivations": "8a612be3b7c7c56b02cf989a9e85aadde087ecebfdb1b45f505c63d1bd8dc1f5",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -3446,6 +3446,130 @@
     }
    ],
    "note": "Each Gospel's part is what it keeps of Rev 11:2–13 in its cross and tomb; the test is whether another Gospel's telling keeps the same part and lacks the same rest. Bounds chosen by reading (2H.2)."
+  },
+  {
+   "id": "rev20.1-5→matt27.63-28.9",
+   "family": "Matthew",
+   "title": "The seal on the deceiver",
+   "seed": "gnt:Rev 20:1-3 + Rev 20:5",
+   "members": [
+    {
+     "id": "angel",
+     "gloss": "an angel coming down from heaven",
+     "greek": "ἄγγελον καταβαίνοντα ἐκ τοῦ οὐρανοῦ",
+     "rx": "αγγελ\\w+ (\\w+ ){0,2}καταβ\\w+ (εκ του|εξ) ουρανου",
+     "in_seed": true
+    },
+    {
+     "id": "key",
+     "gloss": "the key of the abyss",
+     "greek": "τὴν κλεῖν τῆς ἀβύσσου",
+     "rx": "κλειν τησ αβυσσου",
+     "in_seed": true
+    },
+    {
+     "id": "chain",
+     "gloss": "a great chain",
+     "greek": "ἅλυσιν μεγάλην",
+     "rx": "αλυσιν",
+     "in_seed": true
+    },
+    {
+     "id": "seized",
+     "gloss": "he seized",
+     "greek": "ἐκράτησεν",
+     "rx": "εκρατησ",
+     "in_seed": true
+    },
+    {
+     "id": "bound",
+     "gloss": "bound him",
+     "greek": "ἔδησεν",
+     "rx": "εδησεν",
+     "in_seed": true
+    },
+    {
+     "id": "thousand",
+     "gloss": "a thousand years",
+     "greek": "χίλια ἔτη",
+     "rx": "χιλια ετη",
+     "in_seed": true
+    },
+    {
+     "id": "sealed",
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν",
+     "rx": "σφραγισ",
+     "in_seed": true
+    },
+    {
+     "id": "upon",
+     "gloss": "over him",
+     "greek": "ἐπάνω αὐτοῦ",
+     "rx": "επανω αυτου",
+     "in_seed": true
+    },
+    {
+     "id": "deceive",
+     "gloss": "that he deceive no more",
+     "greek": "ἵνα μὴ πλανήσῃ ἔτι",
+     "rx": "\\bπλαν",
+     "in_seed": true
+    },
+    {
+     "id": "dead",
+     "gloss": "the dead",
+     "greek": "τῶν νεκρῶν",
+     "rx": "νεκρ",
+     "in_seed": true
+    },
+    {
+     "id": "first",
+     "gloss": "the first",
+     "greek": "ἡ πρώτη",
+     "rx": "πρωτ",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "angel",
+      "seized",
+      "sealed",
+      "upon",
+      "deceive",
+      "dead",
+      "first"
+     ]
+    }
+   ],
+   "target": "gnt:Matt 27:63-66 + Matt 28:2 + Matt 28:9",
+   "controls": [
+    {
+     "loc": "lxx:Δανιηλ_(Theodotionis_versio) 6:17",
+     "label": "Septuagint, Dan 6:17 (Theodotion): the stone and the king's seal"
+    },
+    {
+     "loc": "lxx:Δανιηλ_(translatio_Graeca) 6:17",
+     "label": "Septuagint, Dan 6:17 (Old Greek)"
+    },
+    {
+     "loc": "gnt:Mark 15:46-47 + Mark 16:1-8",
+     "label": "Mark's tomb"
+    },
+    {
+     "loc": "gnt:Luke 23:53-56 + Luke 24:1-9",
+     "label": "Luke's tomb"
+    },
+    {
+     "loc": "gnt:John 20:1-17",
+     "label": "John's tomb"
+    }
+   ],
+   "note": "Matthew's guard and seal, which no other Gospel has. The engine states the wording kept. Who seals and who is sealed are changed, and the seal is undone: those are differences of relation and are computed in relations/guard.py, not here."
   }
  ]
 }
