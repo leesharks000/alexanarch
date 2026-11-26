@@ -1,6 +1,6 @@
-# The Unfolding Map — working file v0.4
+# The Unfolding Map — working file v0.5
 
-26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine now runs forty derivations in thirteen operators (2B.3). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
+26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.5, 13:55: a review of v0.3 by ChatGPT, pasted by the author; each point verified and worked in (section 2D; repairs in place at 0.2, 1.2, 1.6, 2.3, 2.9, 2A.4, 2B.4, 2B.7, 4.2, 5.2), with three new runs: the delta census, the null pairs, and the cost of each derivation under three genealogies. v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine now runs forty derivations in thirteen operators (2B.3). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
 
 The programme, in the author's words (12:35): "we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a seven within seven structure: the seven church pauline formation transformed from rev's seven churches, but then also paul as one of seven and the other named epistolary positions mapped to rev's seven." And (12:42, 12:45): Philo as guide, with other suppressed witnesses like Newton; the transform map opened to Philo's texts as a possible supplementary source.
 
@@ -8,13 +8,13 @@ The programme, in the author's words (12:35): "we have the four riders, the four
 
 0.1. The Apocalypse is last and late. Where it agrees with a Gospel or an epistle it received from them, or both drew on the Septuagint. Matt 24:30 and Rev 1:7 both combine Dan 7:13 with Zech 12:10; the usual account is a shared testimonium. The crown of life in James and Revelation is common paraenetic stock. On this reading there is nothing to map.
 
-0.2. That reading is a competing inference and it makes predictions. If the agreements are Septuagintal, the shared wording should be in the Septuagint. If they are common stock, they should be spread across the New Testament. Section 1 counts both.
+0.2. That reading is a competing inference and it makes predictions. If the agreements come from the Septuagint, the shared wording should be there to come from. If they are common stock, they should be spread across the New Testament. Section 1 counts both. A limit, from the review: a shared Septuagint source need not yield the same exact sequence in two borrowers, since each may rework it; so a sequence absent from the Septuagint rules out copying from it and does not rule out two independent reworkings of it. The engine's Septuagint column (2D.5) prices that alternative.
 
 ## 1. The instrument: a census of shared sequences
 
 1.1. Operation. Every run of three or four consecutive words inside a verse, accents and case removed; Revelation against each of the other twenty-six books. A sequence built only from the hundred commonest words is dropped. Each shared sequence is then checked three ways: is it in the Septuagint (a common source is available); is it in Philo; how many other New Testament books have it. Script and output: `census.py`, `census.json`.
 
-1.2. Result. Shared three-word sequences that occur in Revelation and one other book only, and are absent from the Septuagint, per 10,000 words of the book:
+1.2. Result. Shared three-word sequences that occur in Revelation and one other book only, and are absent from the Septuagint, per 10,000 words of the book: The counts are small and are printed first: James's rank rests on two sequences, 2 Peter's on one, Jude's (1.6) on five links. One hit more or less moves any of these ranks.
 
 | Book | words | shared | not in LXX | this pair only | pair only, not LXX | per 10k |
 |---|---|---|---|---|---|---|
@@ -55,6 +55,17 @@ The other seventeen books score zero on this measure. 1 Peter scores on four-wor
 | Rev 5:2 | a strong angel proclaiming: who is worthy to open the book and loose its seals | Mark 1:7, Luke 3:16: ἐκήρυσσεν; ὁ ἰσχυρότερος; ἱκανὸς … λῦσαι | John 1:27: ἄξιος ἵνα λύσω | — |
 | Rev 21:13 | gates east, north, south, west | Matt 8:11: east and west | Luke 13:29: east, west, north, south | has east and west |
 
+The six are not equal, and are scored one by one on what the review calls complementary inheritance: (a) the seed is one integrated sentence; (b) each borrower keeps a member the other lacks; (c) a member is kept by both; (d) no single Septuagint verse holds the seed's members.
+
+| Seed | (a) | (b) | (c) | (d) | |
+|---|---|---|---|---|---|
+| Rev 3:5, the confession | yes | yes | yes | Ps 137:1 has Luke's two | 4 of 4 but for Luke's half |
+| Rev 19:9, the supper of the wedding | yes | yes | yes | yes | 4 of 4 |
+| Rev 3:3, the thief | yes | yes; Matthew's "hour" is a watch of the night | yes | yes | 4 of 4, one substitution |
+| Rev 1:7, the tribes and the pierced | yes | yes | yes | the tribes are Septuagintal | 3 of 4 |
+| Rev 5:2, worthy to loose | yes | yes | yes | yes | 4 of 4, two substitutions, and a change of object |
+| Rev 21:13, the four winds | yes | no: Matthew's two are inside Luke's four | yes | east and west are Septuagintal | 2 of 4; a shortening, not a complement |
+
 Rev 19:9 is new and is a third saying of the double tradition: the banquet. Matthew's parable is a wedding, Luke's is a supper, and the Apocalypse has "the supper of the wedding" in one phrase with the participle both keep. Rev 5:2 is new and gives #639's sentence its first words: "Rev 5 → Mark 1: the scroll becomes the baptism". Mark keeps the proclaiming, the strong one and the loosing, and changes worthy to ἱκανός; John keeps worthy and the loosing. What is loosed changes from the seals of a book to the strap of a sandal.
 
 The Matthew–John split itself: I searched every verse of Revelation for a rare stem found in Matthew alone of the Gospels beside another found in John alone. Fourteen verses answer; read, one is a split, Rev 1:7. So Matthew and John divide the seed once at this grain, at the mourning tribes, and the fuller transform comes from the other pairs: Matthew–Luke three times, Mark–John once.
@@ -80,7 +91,7 @@ Both are Matthew's alone against Mark. Mark's tomb has a young man in a white ro
 
 2.8. **Luke, from the census, unscored**: ἐνώπιον τῶν ἀγγέλων (3:5 / 12:9); δύναμιν καὶ ἐξουσίαν (Rev 17:13, given by the kings to the beast; Luke 9:1, given by Jesus to the twelve; this pair only, and the ruling is inverted, the M̄ shape); τὸν τόπον τὸν καλούμενον (Rev 16:16 Harmagedon; Luke 23:33 the Skull; this pair only); αὐτῷ ἡμέρας καὶ νυκτός (Rev 7:15; Luke 18:7, beside Rev 6:10's ἐκδικεῖς and Luke's ἐκδίκησιν). **John**: ἐξεκέντησαν; ἐν τῷ βιβλίῳ τούτῳ (Rev 22:18–19; John 20:30, each a book's closing formula; in LXX); ὅτι ἦλθεν ἡ ὥρα (Rev 14:7, 15; John 16:21).
 
-2.9. **The operators after v0.2.** PARTITION now rests on six seeds. Two additions, declared before scoring: SUBSTITUTE-OBJECT (the seals of the book become the strap of the sandal; the hair becomes the clothing); SHORTEN (four winds become two). An observation that will matter for the fourfold: in the six partitions the Apocalypse's first-person or performative member goes to Matthew three times (I will confess; before *my* Father; the wedding the king *made*), and the reported or attendant member to Luke.
+2.9. **The operators after v0.2.** PARTITION now rests on six seeds. Two additions, declared before scoring: SUBSTITUTE-OBJECT (the seals of the book become the strap of the sandal; the hair becomes the clothing); SHORTEN (four winds become two). An observation that will matter for the fourfold: in the six partitions the Apocalypse's first-person or performative member goes to Matthew three times (I will confess; before *my* Father; the wedding the king *made*), and the reported or attendant member to Luke. Reconciled with the engine at v0.5: SHORTEN is PARTITION under another name and is retired; ADD entered with the engine. Primitive operators: PARTITION, REORDER, SUBSTITUTE, ADD, and the three marks CITE-AS-SCRIPTURE, UNDO, NEGATE. Composites, each a SUBSTITUTE on a named slot: SUBSTITUTE-OBJECT (the object), REVERSE-DOER (the agent or recipient), TRANSFER-ATTRIBUTE (the bearer), STATION (number), HIDE (knowledge to concealment). EVENT changes no member and records a change of mode, vision to narrative; it has no test in the engine yet.
 
 ## 2A. John: the seven plagues and the seven signs
 
@@ -103,7 +114,7 @@ Both are Matthew's alone against Mark. Mark's tomb has a young man in a white ro
 
 Three of the eight come from three consecutive verses, Rev 18:21–23, the dirge over Babylon: stone, lamp, bridegroom. That is a knot, as Jas 2:2–7 is for Smyrna.
 
-2A.4. **Seven to seven is not yet found.** Set bowl against sign by shared stems and the grid is nearly empty: a reversal changes the words, which is why an instrument of shared words cannot see it. What the words do give is that the reversals draw on the bowls *and* the dirge *and* the trumpets, and land on Cana, the bread, the lamp, Lazarus. A seven-by-seven assignment by sense, for scoring later and not asserted: sores on those who bear the mark / the sick healed (4:46–5:9); sea and rivers to blood / water to wine; the sun given to scorch / the bread and no hunger or thirst; the kingdom darkened / the blind man and "I am the light of the world"; the river dried to make a way / walking on the sea; the great voice, It is done / Lazarus called out with a great voice. That is six pairs from seven bowls; two bowls share one sign and one sign (the second, the official's son) has only a weak partner. Something would have to be moved to make it seven, and the criterion says to report that.
+2A.4. **Seven to seven is not yet found.** Set bowl against sign by shared stems and the grid is nearly empty: a reversal changes the words, which is why an instrument of shared words cannot see it. What the words do give is that the reversals draw on the bowls *and* the dirge *and* the trumpets, and land on Cana, the bread, the lamp, Lazarus. A seven-by-seven assignment by sense, for scoring later and not asserted: sores on those who bear the mark / the sick healed (4:46–5:9); sea and rivers to blood / water to wine; the sun given to scorch / the bread and no hunger or thirst; the kingdom darkened / the blind man and "I am the light of the world"; the river dried to make a way / walking on the sea; the great voice, It is done / Lazarus called out with a great voice. That is six pairs from seven bowls; two bowls share one sign and one sign (the second, the official's son) has only a weak partner. Something would have to be moved to make it seven, and the criterion says to report that. From the review: an empty grid of shared stems shows that the instrument sees nothing there; it does not show that what is there is inversion. That needs its own test, a pairing by relation (who does what to what, affirmed or denied) declared before it is scored. The review's five hypotheses are adopted as the frame: numerical inheritance (the seven kept), sequential (the order kept), distributed (source units spread through the target), transformational (one operation governs the reuse), bijective (one to one). What 2A.2–2A.3 support so far is the fourth, with the third: a region of the source, the dirge of Rev 18:21–23, inverted and distributed. The fifth is not supported and is not needed.
 
 2A.5. New operators from John, declared: REVERSE-DOER (the adversary's deed becomes the Christ's); UNDO (a judgment's "no more" becomes a presence); CITE-AS-SCRIPTURE (2.6).
 
@@ -160,17 +171,19 @@ Three of the eight come from three consecutive verses, Rev 18:21–23, the dirge
 
 2B.4. What the run shows. Every one of the 40 targets fits its emission, and no control does: the best is 0.75 (the new name of Rev 2:17 against the emission for Rev 19:12). In 34 of 40 the emission fits exactly one verse of the New Testament, the target. Of the six that fit two, three find the Apocalypse's own repetition (Rev 16:18; 22:10; 7:13), two are the wedding parable's adjacent verses, and one is a true second: "a place called", Acts 27:8, which is Luke's own idiom and weakens that derivation (`rev16.16→luke23.33`).
 
+2B.4a. Three different questions, kept apart (the review). Target fit: can the change be stated in the operators? (Yes, by construction.) Control fit: do the named rivals satisfy the same statement? (None does.) Corpus hits: how many verses anywhere satisfy it? (One, in 34 of 40.) Only the second and third bear on the relation, and neither bears on its direction (2D.5).
+
 2B.5. What it does not show. The derivations were written with the targets in view. A pass means the change from seed to target can be stated in twelve operators; it is the controls and the search that carry weight, and they say the statement is narrow. It is not a blind prediction. The blind form is the next operation: freeze the operators, take seeds not yet read against anything, enumerate the emissions the operators allow, and search; the hit rate against a shuffled seed is the measure.
 
 2B.6. Three Septuagint hits, read. Ps 137:1 fits Luke's half of the confession: ἐξομολογήσομαι … ἐναντίον ἀγγέλων. That is a real rival for the angels of Luke 12:8 and is recorded as one. The other two are seat noise: the Swete seat carries apparatus text inside some lines (Num 32:40), and one file has a mislabelled section. Both are defects of the seat to be repaired apart from this.
 
 2B.7. **Where Philo decides, and against the arrow.** Three loci where the downstream text has Philo's or the Septuagint's form and not Revelation's, found by running both:
 
-- ψῆφος stands twice in the New Testament. Rev 2:17 gives a white one. Acts 26:10 has κατήνεγκα ψῆφον, the vote brought against, Philo's verb and Philo's sense (Deus 75, τὴν καταδικάζουσαν ψῆφον οἴσει). Acts does not get its vote from Revelation.
+- ψῆφος stands twice in the New Testament. Rev 2:17 gives a white one. Acts 26:10 has κατήνεγκα ψῆφον, the vote brought against, Philo's verb and Philo's sense (Deus 75, τὴν καταδικάζουσαν ψῆφον οἴσει). Acts does not have Revelation's form of the vote. That weakens an arrow from Revelation to Acts at this word; it does not establish that Acts read Philo, since the vote brought against is ordinary Greek for a juror.
 - The lampstand of Heb 9:2 is one. The seven lampstands are the Apocalypse's alone; the emission from Philo, Her. 219, through STATION fits Rev 1:12 and no other verse.
 - John 6:31 and 6:49 have "the fathers ate the manna": the fathers are Deuteronomy's and Philo's member (Leg. 3.174–175), which Rev 2:17 dropped. Hebrews 9:4 fits the emission from Rev 2:17 (the manna, covered on every side, inside the ark).
 
-So Rev 2:17, the promise to Pergamum, is itself a partition seed with Philo upstream: manna, vote and name. Hebrews takes the manna in Revelation's form; John takes it with a member Revelation does not have; Acts takes the vote in Philo's form. The two-column test of 5.2 works, and it cuts both ways.
+So Rev 2:17, the promise to Pergamum, is itself a partition seed with Philo upstream: manna, vote and name. Hebrews takes the manna in Revelation's form; John takes it with a member Revelation does not have; Acts takes the vote in Philo's form. The two-column test of 5.2 works, and it cuts both ways. What it tests is which *state* of the material a later text has: the state Revelation gave it, or the state before. A text with Revelation's state got it through Revelation or through a tradition carrying that state; the test does not tell those two apart.
 
 ## 2C. The four laws
 
@@ -259,6 +272,65 @@ This is the fourfold in one verse apiece, and it is the first datum for 3.4: the
 
 2C.8. What is and is not shown. The four statements are laws in the sense of 2B: each is written in declared operators, each locus under it runs in the engine against controls and the whole corpus, and the profile was computed before the reading. They were found by reading the lists, so they are hypotheses with a test attached, and the test is the blind run: the law for a Gospel predicts which operators its *next* links will need. Mark's rests on one chapter. Luke's "place called" is his own idiom (Acts 27:8). The special-vocabulary test (2C.2) is the one result here with nothing read.
 
+## 2D. The review of v0.3, verified and worked in
+
+2D.1. A review of v0.3 by ChatGPT, pasted 13:55. It did not run the engine or read the seats, and says so. Its ten local repairs were each checked against the file; all ten stand and are made in place (0.2, 1.2, 2.3, 2.9, 2A.4, 2B.4a, 2B.7, 4.2, 5.2). One is not done: the two defects in the Septuagint seat (2B.6) are a repair to a seated corpus, a separate act; until then the Septuagint counts carry two known false hits. Its larger demands were three runs, done below, and a design for the blind run.
+
+2D.2. Terms taken from it. *Complementary inheritance*: two targets keeping different members of one integrated source unit, with a member in common (scored per case at 2.3). *Derived state*: the stemmatic question put to Philo, which state of the material the later text has (2B.7). *Distributed inversion of a source region*: John and the dirge (2A.4). *Parallel, transform, grammar*: two passages share distinctive material; a specified set of operations converts one into the other; the same operations with independently constrained parameters generate the features of a whole book. The engine is at the second. 2C is a first attempt at the third and has not passed a held-out test.
+
+2D.3. **The delta census** (`delta.py`; the review's first priority, and operation 1 of this file). Each verse of Mark is aligned to its best verse in Matthew and in Luke (four or more shared stems, one to one): 348 pairs for Matthew, 239 for Luke. The delta is what the borrower's verse has that Mark's lacks; of that, the stems Mark never uses anywhere are the borrower's own additions to Mark's story (Matthew 223, Luke 274). Where does that vocabulary stand?
+
+| Additions to Mark by | in Revelation | in Acts | in Romans | in 1 Corinthians | in Hebrews | in the Septuagint |
+|---|---|---|---|---|---|---|
+| Matthew | 21.1% | 39.0% | 15.2% | 17.5% | 19.7% | 88.8% |
+| Luke | 15.3% | 44.2% | 18.2% | 17.5% | 21.2% | 92.7% |
+
+Matthew's additions lean to Revelation (21.1 against Luke's 15.3) and to no other book: against Acts, Romans and Hebrews he is below Luke. That is the result of 2C.2 again, now at the site of the change. And the limit is plain in the last column: nine in ten of these stems are in the Septuagint, and only two of Matthew's that are in Revelation are not (πάσχειν; ἑστός). So the census shows that Matthew, where he leaves Mark, moves toward the vocabulary Revelation uses. It does not show he took it from Revelation, since both may be drawing on the same prophetic Greek. What can separate those is the sequence and the scene, which is where 2C.3 stands: σεισμὸς μέγας on a sea, white as snow on an angel, a winepress where Isaiah and Mark have another word.
+
+2D.4. **The null pairs** (the review, §8: run the instrument where no relation is proposed). The link instrument with other books in Revelation's place; links the Septuagint cannot supply, per 100 verses of the seed book:
+
+| Seed | Matthew | Mark | Luke | John | all four |
+|---|---|---|---|---|---|
+| Rev | 8.4 | 3.7 | 10.4 | 6.7 | 29.1 |
+| Heb | 3.3 | 0.7 | 4.6 | 2.6 | 11.2 |
+| Rom | 3.5 | 1.6 | 2.5 | 1.9 | 9.5 |
+| 1Cor | 2.5 | 2.5 | 4.8 | 3.0 | 12.8 |
+| 2Cor | 1.6 | 0.8 | 2.3 | 1.6 | 6.2 |
+| Acts | 6.8 | 4.7 | 12.6 | 5.3 | 29.3 |
+| Jas | 12.0 | 6.5 | 9.3 | 3.7 | 31.5 |
+| 1Pet | 1.9 | 1.9 | 2.9 | 1.9 | 8.6 |
+| Eph | 1.9 | 1.3 | 2.6 | 1.9 | 7.7 |
+
+The floor is 6 to 13 (the Pauline letters, Hebrews, 1 Peter). Revelation stands at 29, with two books whose kinship to the Gospels nobody disputes: Acts, which shares an author with Luke, and James, whose closeness to Matthew's sayings is a commonplace. So the instrument does not find a relation everywhere, and it puts Revelation among the known relatives. It also means a link by itself is weak evidence: a tenth of the verses of Romans produce one.
+
+2D.5. **The cost of each derivation under three genealogies** (`cost.py`; the review's §6 and §7). One tariff: choosing a verse costs log2 of the number it is chosen from; naming an operator, 3.8 bits; PARTITION, a bit a member; REORDER, log2(k!); each member the source lacks and must be supplied, 12.7 bits. Forward is the seed to the target as declared. Reverse is the target to the seed by the same operators inverted, and for a seed with two targets, both targets merged into the seed. Septuagint is the best single verse of the seated Septuagint to the target's emission.
+
+Over the 35 derivations seeded in Revelation: forward 1018 bits; reverse 1105; Septuagint 1577. Forward is cheaper than the Septuagint in 34 of 35; the exception is the manna of Heb 9:4, where the hit is the apparatus noise of 2B.6.
+
+For the seeds with two targets:
+
+| Seed and its two targets | forward, both | the two merged into the seed | the Septuagint, to each |
+|---|---|---|---|
+| Rev 1:7 → Matt 24:30, John 19:37 | 38.5 | 30.6 | 76.0 |
+| Rev 3:5 → Matt 10:32, Luke 12:8 | 22.3 | 26.6 | 55.8 |
+| Rev 19:9 → Matt 22:3, Luke 14:17 | 27.1 | 26.6 | 72.4 |
+| Rev 5:2 → Mark 1:7, John 1:27 | 84.0 | 46.4 | 129.5 |
+| Rev 3:3 → Matt 24:43, Luke 12:39 | 44.8 | 26.6 | 90.5 |
+| Rev 18:23 → John 3:29, John 5:35 | 29.1 | 26.0 | 75.6 |
+| Rev 2:10 → Matt 17:12, John 20:27 | 54.3 | 41.2 | 90.5 |
+| Rev 16:16 → Luke 23:33, John 19:17 | 40.0 | 26.3 | 74.0 |
+| sum | 340 | 250 | 664 |
+
+Read plainly. (1) Independent derivation from single Septuagint verses is far the dearest account, by half again overall and by two to one on the paired seeds: the Septuagint does not hold these sentences. (2) **The measure does not decide direction.** Singly, forward and reverse are within a tenth of each other, and that tenth is the bias of any such measure (dropping is cheap, supplying is dear). On the paired seeds the reverse is *cheaper*: a writer who had both Gospels and combined the halves needs only to pick two verses and order them, while the forward account pays for each Gospel's substitutions. So complementary inheritance, counted this way, is as well described as conflation. The partitions show that Revelation and the Gospels are related at these sentences and that the Septuagint is not the relation; they do not show which way it runs. (3) What can show direction is elsewhere in this file: the derived state (2B.7), which is directional by construction; Matthew's departures from Mark landing on Revelation's sequences (2C.3), which a conflation account must read as Revelation choosing, of Matthew's words, the ones Mark lacks; and the count of sources, which this tariff does not price: the forward account gives each evangelist one book, the reverse gives the seer four.
+
+A limit of the Septuagint column: it allows one verse. The received account of Rev 1:7 and Matt 24:30 is two, Dan 7:13 joined to Zech 12:10. A two-verse Septuagint model is owed; it will be cheaper for that seed and should be run for all.
+
+2D.6. The blind run, designed with the review's five conditions. (i) Frozen: the operator names, and for each the inputs it may take and the range of its parameters; a substitution may draw its new member only from a list fixed beforehand. (ii) Held out by region of the seed, whole chapters, so that neighbouring verses do not leak. (iii) Controls that keep what matters: a seed of the same length, register and vocabulary frequencies (other apocalyptic and prophetic Greek from the Septuagint; Hebrews; Acts), beside the shuffled one. (iv) The same procedure on book pairs with no proposed relation (2D.4 is its first form). (v) Every failed emission kept and counted. Reported apart from the forty, which are the development set: emission fidelity, search specificity, generative cost, held-out recovery.
+
+2D.7. Owed to the engine's representation (the review, §9). A member is now a piece of wording. The reversals act on a relation: in Rev 18:23 the hearing of the bridegroom's voice is denied, in John 3:29 it is affirmed and given a hearer. Members as relations (agent, action, object, recipient, polarity, mode) would let an operator change one slot and hold the rest, would make EVENT a change of mode with a test, and would give the review's REVERSE-VALENCE (judgment to restoration) a definition beside REVERSE-DOER and UNDO.
+
+2D.8. The seven within seven (the review, §10): positions, formula distributions, seed regions and operator profiles first; named authorship enters afterward as a variable. This agrees with the author's ruling to leave Pauline and non-Pauline open, and 4.6 is the first datum of that kind.
+
 ## 3. The fourfold
 
 3.1. What the text fixes. The four creatures have an order (Rev 4:7): first like a lion, second like a calf, third with a face as of a human, fourth like an eagle flying. The four riders are called one by one by the four creatures (6:1–8): the second, third and fourth creature are numbered at the second, third and fourth seal; the first seal has "one of the four". So the pairing of creature and rider is given by the book, if "one of the four" is the first:
@@ -282,7 +354,7 @@ This is the fourfold in one verse apiece, and it is the first datum for 3.4: the
 
 4.2. What the census adds, each a pair found nowhere else in the New Testament and absent from the Septuagint:
 
-- **1 Peter.** ἡ δόξα καὶ τὸ κράτος εἰς τοὺς αἰῶνας: Rev 1:6, 5:13; 1 Pet 4:11, 5:11. The Apocalypse's opening doxology is 1 Peter's closing one, twice. No record has this. Peter has no letter on the slate.
+- **1 Peter.** ἡ δόξα καὶ τὸ κράτος εἰς τοὺς αἰῶνας: Rev 1:6, 5:13; 1 Pet 4:11, 5:11. The Apocalypse's opening doxology is 1 Peter's closing one, twice. No record has this. Peter has no letter on the slate. Two different measures are in play and are kept apart: the exact four-word sequence is in Revelation and 1 Peter only; the formula family, a doxology ascribing κράτος, is wider (4.6: Jude, 1 Timothy).
 - **Romans, from Thyatira.** πᾶσαι αἱ ἐκκλησίαι: Rev 2:23 ("all the churches shall know"), Rom 16:4 ("all the churches of the nations"). And from the same verse, ἑκάστῳ κατὰ τὰ ἔργα: Rev 2:23, Rom 2:6 (in LXX). Two Roman loci from one verse of the Thyatira letter. The slate sends Thyatira to Philippians at B−, through Lydia. Romans is a rival target with lexical anchors.
 - **James 5:12**, the oath: μήτε τὸν οὐρανὸν μήτε τὴν γῆν μήτε…; Rev 7:3, μὴ ἀδικήσητε τὴν γῆν μήτε τὴν θάλασσαν μήτε… The James derivation lists 5:12 as residue, "other-tradition candidate". The census gives it a seed outside the Smyrna letter. If it holds, James draws on more of Revelation than Smyrna, and the residue ledger shrinks from a different chapter.
 
@@ -311,7 +383,7 @@ This is the fourfold in one verse apiece, and it is the first datum for 3.4: the
 
 Not established there, and kept so here: the route (Philo's text or a tradition carrying it), and direction in any single case (17.2).
 
-5.2. How this opens the map. Two sources stand behind a New Testament passage on the received account: the Septuagint and common tradition. The map adds two columns per arrow: is the unit in Philo; is it in Revelation's transformed form or Philo's. Where an epistle has the unit in the form Revelation gave it (seven lampstands, a white vote, a named one in the midst), Philo cannot be the direct source and the arrow runs through Revelation. Where it has Philo's form, Philo is a rival source and the arrow is in doubt. Hebrews is the first place to look: #1802 §13.6 records that dependence on Philo "is heard for Hebrews and filed for the Apocalypse", and the hologram counts four arrows landing on Hebrews. The census already carries the Philo flag on every shared sequence.
+5.2. How this opens the map. Two sources stand behind a New Testament passage on the received account: the Septuagint and common tradition. The map adds two columns per arrow: is the unit in Philo; is it in Revelation's transformed form or Philo's. Where an epistle has the unit in the form Revelation gave it (seven lampstands, a white vote, a named one in the midst), Philo cannot be the direct source and the arrow runs through Revelation. Where it has Philo's form, Philo is a rival source and the arrow is in doubt. Hebrews is the first place to look: #1802 §13.6 records that dependence on Philo "is heard for Hebrews and filed for the Apocalypse", and the hologram counts four arrows landing on Hebrews. The census already carries the Philo flag on every shared sequence. Stated with the review's care: inheriting a derived form supports passage through Revelation or through a tradition that carried Revelation's form; it does not by itself establish that the later writer had the book.
 
 5.3. The chain this gives, for the working model only: Septuagint and Philo → Revelation (operations of 5.1; upstream, #1758, #1511) → Gospels and epistles (operations of 2.6 and of the James rules). An operator vocabulary that describes both halves in the same terms would be the strongest form of the programme: Revelation doing to Philo what Matthew does to Revelation. Two already rhyme: INVERT-THE-VOTE with the adversarial class M̄; OFFICE with CITE-AS-SCRIPTURE and CITE-PROMISE.
 
@@ -323,7 +395,8 @@ Not established there, and kept so here: the route (Philo's text or a tradition 
 
 ## 6. Next operations, in order
 
-0. The blind run of 2B.5, now with a prediction per Gospel (2C.8): hold out half of each Gospel's links, fit the law on the rest, score the held-out half.
+0. The blind run, as designed at 2D.6, with a prediction per Gospel (2C.8).
+0a. A two-verse Septuagint model in the cost run (2D.5); members as relations (2D.7); the Septuagint seat's two defects repaired and the counts rerun.
 1. Freeze the operators (2.6, 2.9, 2A.5), then count Matthew's departures from Mark: how many land on Revelation's wording, how many on the Septuagint's.
 2. The double tradition whole against Rev 1–3, 16:15, 19:9 and 22: three sayings now partition; #1747 asked for the census.
 3. The dirge (Rev 18) and the plagues (15–16) against John entire, by sense, with the pairing declared before it is scored.
