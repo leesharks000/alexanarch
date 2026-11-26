@@ -1,8 +1,8 @@
-# The Unfolding Map — working file v0.13
+# The Unfolding Map — working file v0.14
 
-26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.13, 14:55 ("agreed. lets run 11-12"): Revelation 11–12 entered whole, 123 members, the residue with the rest; where each part lands in the Septuagint and the New Testament; the architecture; 11:8; the joint; both genealogies row by row (section 2L). v0.12, 14:53: two reviews of v0.10 pasted by the author, each claim checked against the file and the seat, repairs made in place (section 2K). Both were written before 2J and one rests on the result 2J withdrew. v0.11, 14:42 ("lets run it"): the members restated as relations and the operators computed from them. Computed, they do not name the Gospel; the naming of 2I.2 was in the operators as the reader assigned them (section 2J). v0.10, 14:28 ("lets do so. thats where we ran the frozen sappho 31 operators and found 8/9"): Revelation 11 entered in the engine as one seed with four targets; the Gospel named from the operators alone, on the read loci, above chance for Matthew and John (section 2I). The sealed test of #1495 was on Revelation 12, the chapter that follows the witnesses. v0.9, 14:23 ("adopted. lets proceed"): the shared scenes run (section 2H): two of five scenes carry anything, the cross and the tomb, and there the death and rising of the two witnesses (Rev 11) is found divided among the four Gospels; the genealogy of the figure begun as a table. v0.8, 14:16: two reviews of v0.6 pasted by the author (ChatGPT; one unsigned), written before v0.7; each point verified and worked in (section 2G; the state of the file set first; repairs at 1.5, 2B.7, 2C.6, 2D.3, 2D.4, 2E.3–2E.6, 6). One of them caught an error of mine: the manna of Heb 9:4. v0.7, 14:12 ("lets proceed"): three tests run and reported as they came out (section 2F): the held-out test of the four laws, which they do not pass; the canon's edge, where there is no edge; Philo and Hebrews, where Hebrews has Philo's state apart from Revelation. Notes added in place at 2C.1, 2C.8, 2E.3, 2E.5. v0.6, 14:03–14:06: the author on direction (section 2E), with seven derivations for the letters the received chronology already sets after Revelation; the engine at forty-seven. v0.5, 13:55: a review of v0.3 by ChatGPT, pasted by the author; each point verified and worked in (section 2D; repairs in place at 0.2, 1.2, 1.6, 2.3, 2.9, 2A.4, 2B.4, 2B.7, 4.2, 5.2), with three new runs: the delta census, the null pairs, and the cost of each derivation under three genealogies. v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine then ran forty derivations in thirteen operators (2B.3; forty-seven at v0.6, the seven added at 2E.4). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
+26 November 2026; v0.2 the same afternoon (13:09: "hebrews counts. how about jude, have we counted jude? but yes lets leave it open for paul and supposedly non pauline until were further into the mapping. also, ive always thought the nag hammadi melchizedek epistle was older than its accounted. lets track down the matthew john split first, see if we can get a fuller transform. in john the seven curses reverse into the miracles"; "they wanted a miracles source text - they already had one"). v0.14, 15:09 ("lets run it the other way, build as relations, and ordered run"): Mark's cross and tomb entered whole and read against Revelation; the shared members of chapters 11–12 as relations; the order tested (section 2M). v0.13, 14:55 ("agreed. lets run 11-12"): Revelation 11–12 entered whole, 123 members, the residue with the rest; where each part lands in the Septuagint and the New Testament; the architecture; 11:8; the joint; both genealogies row by row (section 2L). v0.12, 14:53: two reviews of v0.10 pasted by the author, each claim checked against the file and the seat, repairs made in place (section 2K). Both were written before 2J and one rests on the result 2J withdrew. v0.11, 14:42 ("lets run it"): the members restated as relations and the operators computed from them. Computed, they do not name the Gospel; the naming of 2I.2 was in the operators as the reader assigned them (section 2J). v0.10, 14:28 ("lets do so. thats where we ran the frozen sappho 31 operators and found 8/9"): Revelation 11 entered in the engine as one seed with four targets; the Gospel named from the operators alone, on the read loci, above chance for Matthew and John (section 2I). The sealed test of #1495 was on Revelation 12, the chapter that follows the witnesses. v0.9, 14:23 ("adopted. lets proceed"): the shared scenes run (section 2H): two of five scenes carry anything, the cross and the tomb, and there the death and rising of the two witnesses (Rev 11) is found divided among the four Gospels; the genealogy of the figure begun as a table. v0.8, 14:16: two reviews of v0.6 pasted by the author (ChatGPT; one unsigned), written before v0.7; each point verified and worked in (section 2G; the state of the file set first; repairs at 1.5, 2B.7, 2C.6, 2D.3, 2D.4, 2E.3–2E.6, 6). One of them caught an error of mine: the manna of Heb 9:4. v0.7, 14:12 ("lets proceed"): three tests run and reported as they came out (section 2F): the held-out test of the four laws, which they do not pass; the canon's edge, where there is no edge; Philo and Hebrews, where Hebrews has Philo's state apart from Revelation. Notes added in place at 2C.1, 2C.8, 2E.3, 2E.5. v0.6, 14:03–14:06: the author on direction (section 2E), with seven derivations for the letters the received chronology already sets after Revelation; the engine at forty-seven. v0.5, 13:55: a review of v0.3 by ChatGPT, pasted by the author; each point verified and worked in (section 2D; repairs in place at 0.2, 1.2, 1.6, 2.3, 2.9, 2A.4, 2B.4, 2B.7, 4.2, 5.2), with three new runs: the delta census, the null pairs, and the cost of each derivation under three genealogies. v0.4, 13:45 ("lets see if we can discover the transform law for each of the gospels"): section 2C, the four laws; the engine then ran forty derivations in thirteen operators (2B.3; forty-seven at v0.6, the seven added at 2E.4). v0.3, 13:28 ("lets press further... ideal would be to begin building the transform algorithms, an executable demonstration that shows how a midrashim transform could move from revelation to its downstream text as literary transform... i do think philo will be helpful here"): section 2B, the engine, and 5.6. New in v0.2: 1.5–1.6, 2.3 rewritten, 2.9, section 2A, 4.2–4.6, 5.5; two items of v0.1 that came from memory are now read from seats. A working file, apart from the hologram (#1755 v1.5), which holds the map of what the records already draw. This file is where the total map gets built. Nothing here is deposited. Every Greek locus below was read from the seated texts (Nestle 1904, EA-CORPORA-01/04; Swete, 01/05; Philo, 01/07). Items from memory are marked.
 
-**State of the file at v0.13, before anything else** (placed first at a reviewer's word: the method is the stronger thing and should not come after the claims).
+**State of the file at v0.14, before anything else** (placed first at a reviewer's word: the method is the stronger thing and should not come after the claims).
 
 | | Standing | Tested how |
 |---|---|---|
@@ -18,6 +18,7 @@
 | Matthew's own vocabulary leans to Revelation | measured twice; nine-tenths of it is also Septuagintal | 2C.2; 2D.3 |
 | The shared scenes | the Baptist, the feeding and the entry give nothing; the cross and the tomb give a region of Revelation, ch. 11, divided four ways | 2H |
 | Revelation 11–12, whole | 123 members. The witnesses' passage is nearer the passion of Mark and Matthew than any stretch of the Septuagint (5 members together against 3 or 4); its frame is wholly Septuagintal; the sign touches no cross and lies along Matt 1–2, Matt 24, John 12–16; the two chapters are a seam. What each genealogy must suppose is of the same size | 2L |
+| The same, from Mark's end | 81 members of Mark's cross and tomb; 73 nowhere in Revelation; the rest stand at 11:1–13 and at no second place; Revelation 11 holds as many of them as Psalm 21 does. As relations, the deed is kept and the doer changes. **No order is kept** | 2M |
 | The seven within seven | one datum (the doxology with κράτος) | 4.6 |
 
 The programme, in the author's words (12:35): "we have the four riders, the four creatures, the four names, and the four gospels. and we have a specific mapping to matthew with the mourning tribes. we can press into the matthew mapping, define a transform algorithm that describes the transformation of revelation materials to matthew, then use that to work out the other three. same with the epistles. we have james. what im imagining well find is a seven within seven structure: the seven church pauline formation transformed from rev's seven churches, but then also paul as one of seven and the other named epistolary positions mapped to rev's seven." And (12:42, 12:45): Philo as guide, with other suppressed witnesses like Newton; the transform map opened to Philo's texts as a possible supplementary source.
@@ -730,6 +731,100 @@ Neither column supposes much. The right column supposes one thing the left does 
 
 Seat defects met and not repaired here: Ezek 37:5 reads πνεῖμα for πνεῦμα; Ezek 37:10, Mal 4:5 and Esth 9:19 carry apparatus inside the line. They are added to the list at 2B.6.
 
+## 2M. The other way; the shared members as relations; the order
+
+2M.0. The author, 15:09: "lets run it the other way, build as relations, and ordered run". The three operations owed from 2L. Scripts: `rev1112/mark_members.py`, `other_way.py`, `rel1112.py`, `ordered.py`.
+
+2M.1. **The passion read the other way.** Every member of Mark 15:21–16:8, entered verse by verse from Mark: 81, each found in its own verse. Each searched in Revelation and in the Septuagint, by its own form and apart by a loosened one.
+
+| By its own form, Mark's member is found | |
+|---|---|
+| in Revelation and in the Septuagint | 7 |
+| in Revelation, not in the Septuagint | 1 (clothed in a white robe: Mark 16:5; Rev 7:9) |
+| in the Septuagint, not in Revelation | 27 |
+| in neither | 46 |
+
+So 73 of Mark's 81 members are nowhere in Revelation. Simon, Golgotha, the garments and the lot, the robbers, the mockery, the hours, "my God, my God", the sponge and vinegar, the veil, the centurion, Joseph, Pilate, the linen, the stone, the young man, ἠγέρθη, Galilee: none. Set beside 2L.2: 34 of the 55 members of Rev 11:1–13 are in no Gospel. The residue is large from both ends, and larger from Mark's.
+
+The eight that are in Revelation: a great voice (nineteen verses; 11:12), the reed (11:1), from afar (18:10, 15, 17), watching (11:11, 12, and nowhere else in the book), πτῶμα (11:8, 9, and nowhere else), μνῆμα (11:9, and nowhere else), the white robe (7:9), and πετρ-, which is rocks. Five of the eight are in 11:1–13, and three of those five are words Revelation uses there only.
+
+Where Mark's members stand together in Revelation, by a window of thirteen verses, the length of 11:1–13:
+
+| forms | 11:1–13 holds | next best stretch of Revelation | windows of 393 holding as many |
+|---|---|---|---|
+| own | 4 (corpse, μνῆμα, reed, watching) | 2 (6:14–7:9) | 3, all overlapping it |
+| own and loosened | 7 (those, and crucified, three days, laid in a tomb) | 2 | 3, all overlapping it |
+
+And against the Septuagint, forty verses each:
+
+| forms | best in Revelation | best in the Septuagint |
+|---|---|---|
+| own | 4 (9:4–11:11) | 4 (Judith 13:12–15:12: corpse, Galilee, a great voice, trembling); then 3 |
+| own and loosened | 8 (9:18–12:6) | 5 (Exod 14:7–15:15, by common words); 4 at **Ps 19:4–21:19: the lot, the garments divided, forsaken, the heads wagged**; 4 at four other places |
+
+Read. From Mark's end the answer is the same as from Revelation's (2L.3) and sharper. Mark's cross and tomb have one place in Revelation, the witnesses, and no second. And Revelation 11 holds as many of Mark's members as any stretch of the Septuagint, Psalm 21 included, which is the passion's acknowledged scripture: four against four by Mark's own forms, eight against four or five with the loosened. So each is the other's nearest neighbour in the seated literature. A limit on the eight: two of the loosened forms, "laid in a tomb" and "three days", were written with Rev 11 in view; without them it is six.
+
+One thing from Mark's residue, to be read. Mark 15:35–36: "he calls Elijah" … a sponge on a reed … "let us see if Elijah comes to take him down." Elijah's name is in no verse of Revelation. Rev 11 has the reed (11:1) and Elijah's works (the fire, the shut heaven, the ascent, the seven thousand) and not his name; Mark has the reed and his name and, at the cross, none of his works. He is expected at Mark's cross and does not come. In Revelation 11 the ones with his powers are the ones who die.
+
+2M.2. **The shared members as relations.** The form and the rules of 2J, unchanged; 37 pairs, Revelation's clause and the clause of the Gospel that holds the member (two are from Acts and 1 Thessalonians). Every form found in the seat. The differences computed:
+
+| Difference | these 37 | the 34 loci of 2J |
+|---|---|---|
+| agent changed, side kept | 0.51 | 0.47 |
+| agent changed, side reversed | 0.11 | 0.15 |
+| action changed | 0.38 | 0.21 |
+| object changed | 0.22 | 0.26 |
+| object's party changed | 0.14 | 0.09 |
+| recipient changed | 0.16 | 0.35 |
+| negative removed | 0.08 | 0.09 |
+| negative set | 0.00 | 0.09 |
+| mode changed | 0.49 | 0.44 |
+
+The two sets were entered apart, the second after the first had been run, and their profiles lie close: the agent changes in about three pairs of five, the side is reversed in about one of eight, the negative is removed in about one of twelve. That is one reader twice, so it shows a steady hand at least; whether it shows a steady grammar needs the second reader of 2K.2.
+
+What the pairs say, read:
+
+a. *The witnesses' deeds become Jesus's, one for one.* They stand after the three days and a half; "after three days I am raised" (Matt 27:63). They go up into heaven in the cloud; he is lifted and a cloud takes him (Acts 1:9). Their πτῶμα is refused a μνῆμα; his πτῶμα is laid in a μνῆμα (Mark 15:45–46). In each the action or its object is kept and the agent passes from the two to the one. Computed: agent changed within a side, in eleven of the scene's nineteen pairs.
+
+b. *The tomb is an undoing.* οὐκ ἀφίουσιν τεθῆναι εἰς μνῆμα against κατέθηκεν αὐτὸν ἐν μνήματι: same verb, same noun, the negative removed, and the one who acts changes from the peoples to a friend. Mark and Luke both; computed UNDO in both. This is the operator John was found to use on the plagues (2A), here in Mark.
+
+c. *The watchers change sides.* ἐθεώρησαν αὐτοὺς οἱ ἐχθροὶ αὐτῶν; in Mark and Matthew γυναῖκες … θεωροῦσαι, in John Peter θεωρεῖ. Same verb; enemies become the women and the disciple. Computed REVERSE-DOER in Mark, Matthew and John. Luke alone keeps a neutral watcher (ὁ λαὸς θεωρῶν, 23:35).
+
+d. *The holy city.* The nations will trample it (Rev 11:2); the holy ones, raised, enter it (Matt 27:53). The object is kept and both agent and deed are turned.
+
+e. *What the hostile or the neutral do in the vision, the centurion does.* Great fear falls on the watchers; the centurion and those with him fear greatly (Matt 27:54). The rest give glory to God; the centurion glorified God (Luke 23:47). A figure Revelation does not have receives two of its members in two Gospels.
+
+f. *The voice turns round.* A great voice out of heaven speaks to them; Jesus cries with a great voice to God (Mark 15:34; Luke 23:46). Speaker and addressee both change, and the direction is from below.
+
+g. *The sign's members change mode.* Of the fifteen pairs from chapter 12, twelve change mode: what is seen in the vision is foretold (Matt 24), commanded (Matt 2:13; 24:16), promised (John 14:2), made a likeness (John 16:21) or cited (Matt 2:6). Matt 1:18 and 1:25 alone tell it as an event.
+
+2M.3. **The order.** Every member of a stretch of Revelation that has a hit in a stretch of a Gospel, placed at its first verse there; Kendall's tau between Revelation's order and the Gospel's; the orders shuffled 20,000 times. No member chosen by hand.
+
+| Revelation | Gospel | forms | placed | tau | p |
+|---|---|---|---|---|---|
+| 11:1–13 | Matthew's cross and tomb | own | 6 | +0.33 | 0.46 |
+| 11:1–13 | Mark's cross and tomb | own | 6 | −0.07 | 1.00 |
+| 11:1–13 | Luke's cross and tomb | own | 4 | +0.33 | 0.75 |
+| 11:1–13 | each, with loosened | | 8, 7, 6 | +0.36, 0.00, 0.00 | 0.28, 1.00, 1.00 |
+| 11:14–12:17 | Matthew 24 | own and loosened | 6 | −0.60 | 0.14 |
+| 11:14–12:17 | Mark 13 | own and loosened | 4 | −0.67 | 0.34 |
+| 11:10–12:17 | John 12:20–16:33 | own and loosened | 7 | −0.40 | 0.30 |
+| 12 | Matthew 1–2 | own and loosened | 4 | +1.00 | 0.08 |
+| 11:1–12:17 | the whole of Matthew | own | 24 | −0.03 | 0.84 |
+
+By their own forms alone the stretches outside the passion place too few members to test (two each).
+
+Read. No order is kept and none is shown reversed. At the cross and tomb the Gospels have the witnesses' members and not their sequence: Revelation goes city, body, three days, tomb, breath, fear, watchers, voice, earthquake; Mark goes three days, voice, reed, watchers, body, tomb. So the scene was not followed; its members were used. Across the whole of Matthew there is no order at all, so the remark at 2L.9 that the two chapters fall at Matthew's two ends describes four birth-members and the passion, and is not an arrangement of the book.
+
+Matthew 24 is the one place that leans, and it leans backwards: Revelation has trumpet, great power, with child, pangs, stars, flight; Matthew has pangs (24:8), flight (24:16), with child (24:19), stars (24:29), great power (24:30), trumpet (24:31). As run, tau −0.60, p = 0.14, which is not a result. The sign in heaven of Matt 24:30, noted at 2L.9 before this run, was missed by the pattern as written (it allowed 24 letters between the two words and the verse has 27). With it, seven members, tau −0.70, p = 0.04. That figure comes from a pattern widened after the run and is entered as such: a lean to be tested on a stretch not yet read, and not a finding. Mark 13 has four of the seven and the same lean. The three Matthew has beyond Mark here, the sign in heaven, the mourning tribes and the trumpet, are Rev 12:1, 1:7 and 11:15; that agrees with 2D.3 and the Septuagint has the trumpet too (Isa 27:13, from memory; not checked in the seat).
+
+2M.4. **Where this leaves the passage.**
+
+1. Revelation 11:1–13 and the passion are each other's nearest neighbour, measured from both ends, and nearer than Psalm 21 is to Mark by the same count. Standing on either account.
+2. The residue is most of both: 34 of 55 from Revelation's side, 73 of 81 from Mark's. Whichever was written second took little and left nearly everything, so the relation is of a few members used, not of a text followed; the order confirms it.
+3. Read as relations, the shared members differ in a regular way: the deed or its object is kept and the doer changes. The two become the one; the enemies become the friends; the refusal becomes the gift. That is a description of the difference and holds whichever way it ran. Run forward, it is a vision's figures given to a life. Run backward, it is a life's last scene given to two figures and turned against the watchers.
+4. The order test is null. Nothing here decides direction, and 2L.10 stands as written.
+
 ## 3. The fourfold
 
 3.1. What the text fixes. The four creatures have an order (Rev 4:7): first like a lion, second like a calf, third with a face as of a human, fourth like an eagle flying. The four riders are called one by one by the four creatures (6:1–8): the second, third and fourth creature are numbered at the second, third and fourth seal; the first seal has "one of the four". So the pairing of creature and rider is given by the book, if "one of the four" is the first:
@@ -797,7 +892,7 @@ Not established there, and kept so here: the route (Philo's text or a tradition 
 Done since this list was first written: the count of Matthew's departures from Mark (2D.3, by machine alignment); the null pairs (2D.4); the cost of three genealogies (2D.5) and the two-verse Septuagint (2G.2); the held-out test of the laws (2F.1); the canon's edge (2F.2); Philo's columns for Hebrews (2F.3).
 
 1. Members as relations (2D.7), so that the operators can be features; then the Gospel named from the transform alone, on read loci.
-2. (Done at 2L: Revelation 11–12 whole.) Owed from it: the same inventory for the passion narratives read the other way, every member of Mark 15:21–16:8 against Revelation, so the residue is counted from both ends; the members of 2L entered as relations (2J), since three of its findings are reversals of side; Matt 24 with Rev 11:15–12:6 as a run, in order; John 12:25–32 and 16:20–21 in the engine. 2a. The relations entered by a second reader blind to the Gospel, agreement measured first, and whole seed regions held out (2K.2), and the rules of 2J.2 refined (TRANSFER-ATTRIBUTE divided); the same relations entered for the Septuagint source of each locus, so the differences Revelation → Gospel can be set beside Septuagint → Gospel; the shared scenes rerun with a looser instrument that keeps what two Gospels share.
+2. (Done at 2L and 2M: Revelation 11–12 whole, from both ends, as relations, and in order.) Owed from it: the backward lean of Matthew 24 tested on a stretch not yet read, patterns frozen first (the next discourse with a parallel in Revelation: Matt 25:31–46 against Rev 20:11–15); Matthew's and Luke's cross and tomb entered whole as Mark's was, so the three residues can be compared; John 12:25–32 and 16:20–21 in the engine. 2a. The relations entered by a second reader blind to the Gospel, agreement measured first, and whole seed regions held out (2K.2), and the rules of 2J.2 refined (TRANSFER-ATTRIBUTE divided); the same relations entered for the Septuagint source of each locus, so the differences Revelation → Gospel can be set beside Septuagint → Gospel; the shared scenes rerun with a looser instrument that keeps what two Gospels share.
 3. The census of promises (2G.5); the last column of the genealogy of the figure (2H.4).
 4. The double tradition whole against Rev 1–3, 16:15, 19:9 and 22.
 5. The library priced (2E.3; 2G.4).
