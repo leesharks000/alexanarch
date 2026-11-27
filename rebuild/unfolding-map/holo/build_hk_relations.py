@@ -29,7 +29,7 @@ LEDGER = json.load(open(LEDGER_P))['rows']
 paper = open(PAPER, encoding='utf-8').read()
 paras = [p for p in re.split(r'\n\s*\n', paper)]
 
-VERSION = '0.2-draft'
+VERSION = '1.0'
 TODAY = datetime.date.today().isoformat()
 
 # ---- standings: the author's and the map's --------------------------------------------
@@ -126,6 +126,8 @@ def find_in_paper(rev, matt):
     return ', '.join(secs[:4]) if secs else None
 
 paper_sha = sha(PAPER)
+PAPER_REC = rec(1812)
+assert PAPER_REC['record_sha256'] == paper_sha, 'the paper text is not the record at its registered hash'
 for i, r in enumerate(LEDGER, 1):
     sec = find_in_paper(r['rev'], r['matt'])
     REL.append(dict(id=f'rel:mt-{i:02d}', family='matthew', source='Rev ' + str(r['rev']), targets=['Matt ' + str(r['matt'])],
@@ -134,10 +136,8 @@ for i, r in enumerate(LEDGER, 1):
         lemmas=r.get('lemmas', []), standing=ledger_standing(r['standing']), standing_as_recorded=r['standing'],
         pointer=dict(kind='data file', file='rebuild/unfolding-map/map/rev-matthew-ledger.json', row=i,
                      file_sha256=sha(LEDGER_P), checked=r.get('source'),
-                     paper=dict(work='How to Write Matthew from Revelation', state='draft v0.7, not a record',
-                                section=sec, file_sha256=paper_sha) if sec else
-                           dict(work='How to Write Matthew from Revelation', section=None,
-                                note='in the ledger; not stated in the paper'))))
+                     paper=dict(PAPER_REC, section=sec) if sec else
+                           dict(record=PAPER_REC['record'], section=None, note='in the ledger; not located in the paper by the places it quotes'))))
 
 # ---- layers (P3): the places where Philo or scripture stands under a place of Revelation
 LAYERS = [
@@ -160,7 +160,7 @@ for k, (rv, ly, what, mt, st, lab) in enumerate(LAYERS, 1):
     REL.append(dict(id=f'rel:layer-{k:02d}', family='layer', source=ly, via=rv, targets=mt, books=['Matthew'] if mt else [],
         operation=['P3: the layer under the place stands open; a compressed member may be restored'], what=what,
         standing=st, label=lab,
-        pointer=dict(kind='record+working file', records=[midst], notebook_sections='2AV, 2AW, 2AX',
+        pointer=dict(kind='record+working file', records=[midst, PAPER_REC], notebook_sections='2AV, 2AW, 2AX',
                      paper_sections='III.7, V.3a, V.5a-d, VI.6a-b, VII.3, VII.10, XIII.1a, XIV.5a')))
 
 PLANNED = [
@@ -230,8 +230,8 @@ SUMMARY = ("Revelation First (Lee Sharks, #202) holds that the Apocalypse is the
 
 kernel = dict(id='EA-HK-REVFIRST-02', version=VERSION, built=TODAY, type='relations hologram, built to EA-HK-FRAME-01 (#1753) at the grain of the relation',
   title='Revelation to the New Testament: The Relations Hologram',
-  state='draft; not deposited; identifiers of this record are assigned at deposit',
-  creators=['Dancings, Damascus (proposed, after #1755: kernels to their primaries; for the author\'s ruling)'],
+  state='deposited; the record number and AXN of this hologram are assigned at mint and are not written inside it',
+  creators=['Dancings, Damascus'],
   contributors=['Crimson Hexagonal Archive', 'Claude (TACHYON; Anthropic)'],
   framework=dict(name='Revelation First', seed=rec(202), hologram=fw_rec, specification=rec(1753)),
   grain='the relation: a place of Revelation, a place of another book, an operation, a standing, a pointer',
@@ -243,7 +243,7 @@ kernel = dict(id='EA-HK-REVFIRST-02', version=VERSION, built=TODAY, type='relati
    'REL-4 No relation decides the order of composition. Direction is the framework\'s question (#1735, #1755 rung IV).',
    'REL-5 A layer (Philo, scripture) enters only through a place Revelation holds.',
    'REL-6 FRAGMENT ≠ WHOLE: a relation, a book\'s table or a standing keeps its path to the framework and states what it has not reconstructed.',
-   'REL-7 The sealed key is not in the kernel. Blind runs are cited by the hash commitment printed in the paper (VII.9).'],
+   'REL-7 The sealed key is not in the kernel. Blind runs are cited by the hash commitment printed in the paper (#1812, VII.9).'],
   uktp_seed=dict(agents=['a speaker in Revelation', 'seven messengers', 'a writer holding Revelation whole', 'the reader given a rule and a place'],
     operations=['commission', 'unfold a letter as an epistle', 'keep', 'exchange', 'reassign', 'stage', 'enact', 'liken', 'foretell', 'restore from the layer'],
     dependencies=['a relation depends on its two places and its operation', 'a layer depends on the place of Revelation it stands under',
@@ -252,7 +252,7 @@ kernel = dict(id='EA-HK-REVFIRST-02', version=VERSION, built=TODAY, type='relati
     topology='a fan from one book to twenty-six, each ray a set of relations; under the centre, a second fan from Revelation back to its layers'),
   transform=TRANSFORM, counts=counts, by_book=by_book,
   notebook=dict(name='The Unfolding Map', role='the working notebook of the programme\'s unfoldings; the research record of every relation here',
-    hosting='hosted beside this record and replaced as it grows; not ingested into the record\'s canonical text; each replaced copy kept by date',
+    hosting='hosted beside this record at /files/EA-HK-REVFIRST-02/notebook/ and replaced as it grows; not ingested into the record\'s canonical text; each replaced copy kept by date',
     current=dict(file=os.path.basename(NOTEBOOK), sha256=sha(NOTEBOOK), words=len(open(NOTEBOOK, encoding='utf-8').read().split()))),
   rival=dict(name='the received account of the relations',
     statement='Where Revelation and another book of the New Testament agree, the other book or the tradition behind it is the source, or both draw on scripture and a common stock.',
@@ -269,7 +269,7 @@ kernel = dict(id='EA-HK-REVFIRST-02', version=VERSION, built=TODAY, type='relati
   acceptance=dict(threshold=0.85, scope_A=['00-kernel.yaml', '01-ontology.yaml'], scope_B_adds=['02-graph.jsonld'],
                   back_projection_v1_0='not run'),
   sources={'framework kernel 00-kernel.yaml': sha(f'{REPO}/files/AXN-0C5F/kernel/00-kernel.yaml'),
-           'rev-matthew-ledger.json': sha(LEDGER_P), 'paper (draft v0.7)': paper_sha, 'notebook': sha(NOTEBOOK)})
+           'rev-matthew-ledger.json': sha(LEDGER_P), 'paper (#1812)': paper_sha, 'notebook': sha(NOTEBOOK)})
 
 ontology = dict(id='EA-HK-REVFIRST-02/ontology',
   classes=dict(Book='a book of the New Testament', Place='a locus in a book, by chapter and verse',
@@ -291,10 +291,10 @@ ontology = dict(id='EA-HK-REVFIRST-02/ontology',
 # ---- graph --------------------------------------------------------------------------------
 nodes = [{'@id': 'fw:revelation-first', '@type': 'Framework', 'seed': 'rec:202', 'hologram': 'rec:1755'},
          {'@id': 'book:Revelation', '@type': 'Book'}] + [{'@id': 'book:' + b.replace(' ', '-'), '@type': 'Book'} for b in BOOKS]
-recs_used = sorted({int(x['record'][4:]) for r in REL for x in r['pointer'].get('records', [])} | {202, 1753, 1755, 1735, 1415, 1486, 1494, 1758})
+recs_used = sorted({int(x['record'][4:]) for r in REL for x in r['pointer'].get('records', [])} | {202, 1753, 1755, 1735, 1415, 1486, 1494, 1758, 1812})
 nodes += [{'@id': f'rec:{n}', '@type': 'Record', 'axn': dep[str(n)]['axn'], 'sha256': dep[str(n)]['sha256'], 'title': dep[str(n)]['title']} for n in recs_used if str(n) in dep]
 nodes += [{'@id': 'file:ledger', '@type': 'WorkingFile', 'sha256': sha(LEDGER_P)}, {'@id': 'file:notebook', '@type': 'WorkingFile', 'sha256': sha(NOTEBOOK)},
-          {'@id': 'file:paper', '@type': 'WorkingFile', 'sha256': paper_sha, 'note': 'becomes a record at deposit; the builder then rebinds'}]
+          ]
 edges = []
 for r in REL:
     nodes.append({'@id': r['id'], '@type': 'Relation', 'family': r['family'], 'standing': r['standing'], 'source': r['source']})
@@ -304,7 +304,7 @@ for r in REL:
         edges.append(dict(source=r['id'], relation='held_in', target=x['record']))
     if r['family'] == 'matthew':
         edges.append(dict(source=r['id'], relation='held_in', target='file:ledger'))
-        if r['pointer']['paper'].get('section'): edges.append(dict(source=r['id'], relation='held_in', target='file:paper', section=r['pointer']['paper']['section']))
+        if r['pointer']['paper'].get('section'): edges.append(dict(source=r['id'], relation='held_in', target='rec:1812', section=r['pointer']['paper']['section']))
     if r['family'] in ('layer', 'planned-or-failed'):
         edges.append(dict(source=r['id'], relation='held_in', target='file:notebook'))
     if r['family'] == 'layer':

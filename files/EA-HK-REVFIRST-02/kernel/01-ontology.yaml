@@ -1,0 +1,96 @@
+id: EA-HK-REVFIRST-02/ontology
+classes:
+  Book: a book of the New Testament
+  Place: a locus in a book, by chapter and verse
+  Relation: 'a pointer: source place, target place, operation, standing, where it is held'
+  Rule: an operation of a transform
+  Layer: a text Revelation was made from, standing under one of its places
+  Record: an archive deposit, by AXN and hash
+  WorkingFile: a hashed file that is not a record
+  Standing: what has been done to a relation, with what that licenses and withholds
+standings:
+- id: produced-blind
+  name: produced blind under a sealed key
+  licenses: that the rule and the place are jointly sufficient for the passage, for these readers and this pack
+  withholds: the order of the two books; sufficiency for readers who do not know the target
+- id: run
+  name: 'run: an executable derivation'
+  licenses: typed seed elements, declared rules, emissions matched verse by verse, coverage counted, residue displayed
+  withholds: direction, without a census of the alternatives
+- id: sealed-held
+  name: written down before counting, and held
+  licenses: that the pairing was not found by looking for it
+  withholds: that the pairing is unique to the two books, unless counted so
+- id: sealed-failed
+  name: written down before counting, and failed as written
+  licenses: nothing for the relation as written; the count that replaced it stands at its own standing
+  withholds: everything the written line claimed
+- id: counted
+  name: counted over the whole New Testament
+  licenses: the distribution stated
+  withholds: a mechanism
+- id: engine
+  name: derived by the engine and passing its controls
+  licenses: that a declared operator reaches the target from the source and no control source does as well
+  withholds: that the operator is the one a writer used
+- id: worked
+  name: worked to derivation grade
+  licenses: seed, rules and emissions, with the shared-source alternative stated
+  withholds: coverage
+- id: mapped
+  name: mapped with a grade
+  licenses: a letter set against an epistle with its class and residue
+  withholds: a derivation
+- id: read
+  name: read, and checked for shared lemmas in a tagged text
+  licenses: that the two places hold the lemmas stated
+  withholds: 'selection effects: the row was found by reading'
+- id: drawn
+  name: drawn and not run
+  licenses: an arrow to be tested
+  withholds: everything else
+- id: observed
+  name: observed, awaiting a census
+  licenses: a lexical observation
+  withholds: a derivation
+- id: withheld
+  name: withheld by a date held under the chronology under examination
+  licenses: markedness
+  withholds: the arrow
+- id: named
+  name: named at the founding grain
+  licenses: that the programme names the arrow
+  withholds: any seed inventory
+- id: unresolved
+  name: unresolved
+  licenses: nothing
+  withholds: everything
+- id: planned
+  name: planned
+  licenses: nothing; a line of research
+  withholds: everything
+- id: failed
+  name: tested and failed
+  licenses: that the stated mapping does not hold as stated
+  withholds: the mapping
+families:
+  epistle: letters and doctrinal transforms to the epistles
+  matthew: the ledger of T_Μ
+  layer: Philo or scripture under a place of Revelation, with the place Matthew opens
+  founding-or-saying: arrows named at the founding grain, and sayings observed
+  planned-or-failed: what is to be tested and what was tested and failed
+relation_policy:
+  unfolds_to: licenses nothing about order
+  stands_under: a layer under a place of Revelation; licenses P3 at that place only
+  restored_in: a member the source dropped, present in the target
+  instantiates: a relation instantiates a rule
+  held_in: a relation is held in a record or a working file
+  bounds: a failure bounds a mapping on strength
+negative_edges:
+- 'a relation ≠ a parallel: it carries an operation'
+- reach ≠ priority
+- read ≠ counted ≠ derived ≠ produced
+- Philo under Revelation ≠ Philo as a source of Matthew
+- the notebook ≠ a record
+- first ≠ early (#202)
+fragment_term: 'FRAGMENT ≠ WHOLE: any relation resolves to fw:revelation-first through rel -> book table -> kernel -> #1755 -> #202'
