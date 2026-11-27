@@ -98,4 +98,6 @@ document.getElementById("facts").innerHTML=[[DATA.length,"derivations, run again
 document.addEventListener("click",ev=>{const b=ev.target.closest("button[data-f]");if(b){fam=b.dataset.f;draw();}});
 document.addEventListener("change",ev=>{const i=ev.target.closest("input[data-d]");if(i){state[i.dataset.d][+i.dataset.i]=i.checked;const d=DATA.find(x=>x.id===i.dataset.d);const el=document.getElementById("c-"+d.id.replace(/[^a-z0-9]+/gi,"-"));el.outerHTML=card(d);}});
 draw();
-</script></body></html>
+</script><script src="https://www.themandalaoracle.com/embed/sigil.js" defer></script>
+<script data-goatcounter="https://alexanarch.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>
