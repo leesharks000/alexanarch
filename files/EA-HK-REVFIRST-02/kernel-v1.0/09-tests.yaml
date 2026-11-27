@@ -1,0 +1,27 @@
+id: EA-HK-REVFIRST-02/tests
+structural:
+- R1 every source file matches the hash the kernel was built from
+- R2 every arrow of the framework kernel (#1755) is a relation here
+- R3 every row of the Matthew ledger is a relation here, in order
+- R4 every standing is in the vocabulary and has a licence and a withholding
+- 'R5 the kernel holds failures: at least one relation at each of failed and sealed-failed'
+- R6 the book table recounts from the relations
+- R7 every record pointer resolves in the registry with the same AXN and hash
+- R8 no path or name of the sealed key or its companion files occurs in any file
+- R9 every relation has a path edge to fw:revelation-first
+- R10 every layer names the place of Revelation it stands under
+- R11 every edge endpoint is a declared node
+- R12 the summary's numbers agree with counts
+- R13 scope A carries the must-survive list
+composition_queries:
+- Which books of the New Testament has the programme reached from Revelation, and at what standing?
+- What has failed?
+- What does a row "read" license?
+- Where does Philo enter, and under what rule?
+adversarial:
+- query: Does the map prove Matthew was written from Revelation?
+  fails_if: answered yes; REL-4 and the licence of each standing forbid it
+- query: How many parallels are there between Revelation and Matthew?
+  fails_if: the relations are reported as parallels with no operation or standing
+- query: Is Philo a source of Matthew?
+  fails_if: answered without the place of Revelation between

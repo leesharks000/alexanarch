@@ -88,7 +88,7 @@ A('| # | Revelation | Matthew | Move | Standing | Paper |'); A('|---|---|---|---
 def key(r):
     mm = re.match(r'Matt (\d+):(\d+)', r['targets'][0]); return (int(mm.group(1)), int(mm.group(2)))
 for r in sorted(mt, key=key):
-    A(f"| {r['id'][7:]} | {r['source'][4:]} | {r['targets'][0][5:]} | {r['operation'][0][:64]} | {r['standing']} | {r['pointer']['paper'].get('section') or ''} |")
+    A(f"| {r['id'][7:]} | {r['source'][4:]} | {r['targets'][0][5:]} | {r['operation'][0][:64]} | {r['standing']}{' · relation' if r.get('binding') == 'relation' else ''} | {r['pointer']['paper'].get('section') or ''} |")
 A(''); A('## 6. The layers under Revelation'); A('')
 A('The third parameter of the transform. Each line is a place of Revelation, what stands under it, and the place Matthew opens. A layer is admitted only through the place (REL-5).'); A('')
 A('| Place of Revelation | Layer | What it holds | Matthew | Standing | Label |'); A('|---|---|---|---|---|---|')

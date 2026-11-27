@@ -1,5 +1,5 @@
 id: EA-HK-REVFIRST-02
-version: '1.0'
+version: '1.1'
 built: '2026-11-27'
 type: relations hologram, built to EA-HK-FRAME-01 (#1753) at the grain of the relation
 title: 'Revelation to the New Testament: The Relations Hologram'
@@ -35,16 +35,20 @@ framework:
 grain: 'the relation: a place of Revelation, a place of another book, an operation, a standing, a pointer'
 compression_survival_summary: 'Revelation First (Lee Sharks, #202) holds that the Apocalypse is the generative source of the rest of the New Testament.
   This kernel holds every relation the programme has drawn from Revelation to another book, each at its own standing, and the relations it has
-  planned or seen fail. It holds 133 relations. For the epistles: the letters to the seven assemblies set against seven epistles, one of them
+  planned or seen fail. It holds 210 relations. For the epistles: the letters to the seven assemblies set against seven epistles, one of them
   run to an executable derivation (Smyrna to James, nine rules), four doctrinal transforms worked to derivation grade, the rest mapped with grades
-  and residue. For Matthew: 86 relations reaching 178 of 1,067 verses under a stated transform (T_Μ v0.4), one passage produced blind from the
-  rule and two verses, 16 pairings written down before they were counted and held, 3 that failed as written, 7 counted, 18 derived by an engine,
-  41 read. Under Revelation, at 13 places, a layer of Philo or scripture is recorded: the third parameter of the transform admits it only through
-  a place Revelation holds. 17 of the 26 other books are reached above the founding grain; 5 have no relation (1 Timothy, Titus, Philemon, 2 John,
-  3 John). Luke, Mark, John, Acts and the Pauline seven are planned. Four mappings were tested and failed and are kept: the four creatures to
-  the four Gospels, the source''s order in a Gospel''s order, one seat-map over a whole Gospel, and Philo taken straight to Matthew. A standing
-  licenses what it names and nothing above it: a relation read is not a relation counted, and a relation counted is not a derivation. No relation
-  here decides the order in which the books were written; the argument for order is the framework''s (#1735, #1755). The received account is carried
+  and residue. For Matthew: 158 relations reaching 305 of 1,067 verses under a stated transform (T_Μ v0.4; 86 relations and 178 verses at v1.0
+  of this kernel), one passage produced blind from the rule and two verses, 43 pairings written down before they were counted and held, 7 that
+  failed as written, 34 counted, 18 derived by an engine, 55 read. Under Revelation, at 13 places, a layer of Philo or scripture is recorded:
+  the third parameter of the transform admits it only through a place Revelation holds. 17 of the 26 other books are reached above the founding
+  grain; 5 have no relation (1 Timothy, Titus, Philemon, 2 John, 3 John). Luke, Mark, John, Acts and the Pauline seven are planned. Six mappings
+  were tested and failed and are kept: the four creatures to the four Gospels, the source''s order in a Gospel''s order, one seat-map over a whole
+  Gospel, Philo taken straight to Matthew, strands walked in their own order, and a count on direction. 17 of Matthew''s relations are entered
+  for the relation, with few shared words or none, under a check fixed beforehand, and are marked. Matthew handles Revelation as it handles the
+  scripture it does not name: it keeps no order of the source, as it keeps none of Isaiah or the Psalms, with one walk (Revelation 12:1-6 through
+  Matthew 2); the counts behind this are first ones, on lists made from memory. A count meant to decide direction did not. A standing licenses
+  what it names and nothing above it: a relation read is not a relation counted, and a relation counted is not a derivation. No relation here
+  decides the order in which the books were written; the argument for order is the framework''s (#1735, #1755). The received account is carried
   as the rival on the same terms: the Synoptic tradition as the source of Revelation''s sayings (Vos 1965; Bauckham 1977), Mark, a sayings source
   and special material as the sources of Matthew. Its inverse procedures have not been built and that is its status here.'
 invariants:
@@ -126,41 +130,43 @@ transform:
     - reworked and passed on
     - dropped by the source and restored in the target (ancestral reactivation)
 counts:
-  relations: 133
+  relations: 210
   by_family:
     epistle: 14
     founding-or-saying: 10
-    matthew: 86
+    matthew: 158
     layer: 13
-    planned-or-failed: 10
+    planned-or-failed: 15
   by_standing:
     produced-blind: 2
     run: 1
-    sealed-held: 26
-    sealed-failed: 5
-    counted: 7
+    sealed-held: 53
+    sealed-failed: 9
+    counted: 36
     engine: 18
     worked: 5
     mapped: 6
-    read: 41
+    read: 55
     drawn: 2
     observed: 2
     withheld: 1
     named: 7
     unresolved: 1
-    planned: 5
-    failed: 4
-  matthew_rows: 86
-  matthew_rows_stated_in_paper: 62
+    planned: 6
+    failed: 6
+  matthew_rows: 158
+  matthew_rows_stated_in_paper: 84
   matthew_by_standing:
     produced-blind: 1
-    sealed-held: 16
-    sealed-failed: 3
-    counted: 7
+    sealed-held: 43
+    sealed-failed: 7
+    counted: 34
     engine: 18
-    read: 41
+    read: 55
   layers: 13
-  matthew_verses_reached: 178 of 1,067
+  matthew_verses_reached: 305 of 1,067
+  matthew_verses_reached_without_relational_rows: 265 of 1,067
+  matthew_rows_entered_for_relation: 17
   books_reached_above_named:
   - Matthew
   - Luke
@@ -192,18 +198,19 @@ counts:
   - 3 John
 by_book:
   Matthew:
-    relations: 108
+    relations: 185
     by_standing:
       observed: 2
       drawn: 1
       named: 3
       produced-blind: 2
-      read: 41
-      sealed-held: 26
-      counted: 7
-      sealed-failed: 4
+      read: 55
+      sealed-held: 53
+      counted: 36
+      sealed-failed: 8
       engine: 18
-      failed: 4
+      failed: 6
+      planned: 1
     strongest: produced-blind
   Mark:
     relations: 6
@@ -357,9 +364,9 @@ notebook:
   hosting: hosted beside this record at /files/EA-HK-REVFIRST-02/notebook/ and replaced as it grows; not ingested into the record's canonical
     text; each replaced copy kept by date
   current:
-    file: UNFOLDING-MAP-v0.52-2026-11-27.md
-    sha256: d68ea3a1ca9350bfcd2022e445dd7e445561aad7f9eb44c5d1e7af543c001f2f
-    words: 100700
+    file: UNFOLDING-MAP-current.md
+    sha256: bf67951a535c3ada4cc5741b7959027d955995eb883839796c4f4e06cb48d5d2
+    words: 115341
 rival:
   name: the received account of the relations
   statement: Where Revelation and another book of the New Testament agree, the other book or the tradition behind it is the source, or both draw
@@ -389,6 +396,6 @@ acceptance:
   back_projection_v1_0: not run
 sources:
   framework kernel 00-kernel.yaml: c1fb5928f980cfa6636caf413722d0fff5168428016837105af0fe17dd399ca1
-  rev-matthew-ledger.json: 43d3c53646d284544f01c10b8748a32ff568f7ed71828384ead5ae8d95d5e3ef
-  paper (#1812): 2453afa41cfc913c59fa9cdbad66253219316b7de5b2b793ed6187d6b328c79f
-  notebook: d68ea3a1ca9350bfcd2022e445dd7e445561aad7f9eb44c5d1e7af543c001f2f
+  rev-matthew-ledger.json: df537c2dff25fba2f8bd1d08d7e7184f25c966d89133dc76e6ba5669935c29de
+  paper (#1812): 77700efbd8eaf7bd914053497ef797a56baa1d2f13970ccb9fce81a8a73777f4
+  notebook: bf67951a535c3ada4cc5741b7959027d955995eb883839796c4f4e06cb48d5d2

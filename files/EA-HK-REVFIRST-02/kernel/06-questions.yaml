@@ -19,7 +19,7 @@ questions:
   instrument: T_Μ with the source swapped (1 Enoch; Daniel with Ezekiel 40-48)
   read_first:
   - the paper XIV.1
-  advances: reach well below 178 verses
+  advances: reach well below 305 verses
   retreats: like reach
 - id: Q3-clustering
   question: Do Philo's places cluster by treatise more than chance?
@@ -68,7 +68,36 @@ questions:
   read_first:
   - the paper XIV.1a
   advances: a rule for the sea stories and the passion shared
-  retreats: reach stays at 51
+  retreats: reach stays at 100
+- id: Q9-scripture-index
+  question: Do the scripture counts hold on a published index of quotations and allusions and a lemmatized Septuagint?
+  bears_on:
+  - rel:scripture
+  instrument: the counts of the notebook 2BG-2BI rerun on lists not made from memory
+  read_first:
+  - the paper S.7, XIV.5e
+  advances: the enrichment at tacit scripture holds; the order nulls hold
+  retreats: the enrichment falls to the base rate
+- id: Q10-sense-blind
+  question: Read in each direction, does a row keep the source's judgment, and what does the receiving passage do with it?
+  bears_on:
+  - rel:fail-direction-count
+  - rel:mt-*
+  instrument: each row coded for event, judgment and function in both directions by a reader who does not know the thesis
+  read_first:
+  - the paper S.3, S.8, XIV.7
+  - the notebook 2BI.3
+  advances: an asymmetry the blind coder finds
+  retreats: none found
+- id: Q11-heldout
+  question: Does a frozen grammar, with a stated law, reach the unsearched verses of Matthew 11-12?
+  bears_on:
+  - rel:plan-heldout
+  instrument: T_Μ frozen and run on the block; the two fixed measures of the notebook 2BB rerun
+  read_first:
+  - the notebook 2BB.4, 2BF
+  advances: reach in the block like the reach elsewhere
+  retreats: the block stays near its present 20 of 80
 - id: Q8-reading
   question: What do Vos (1965) and Bauckham (1977, 1983) say in full of each saying the ledger keeps?
   bears_on:

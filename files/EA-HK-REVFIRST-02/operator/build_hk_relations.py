@@ -29,7 +29,7 @@ LEDGER = json.load(open(LEDGER_P))['rows']
 paper = open(PAPER, encoding='utf-8').read()
 paras = [p for p in re.split(r'\n\s*\n', paper)]
 
-VERSION = '1.0'
+VERSION = '1.1'
 TODAY = datetime.date.today().isoformat()
 
 # ---- standings: the author's and the map's --------------------------------------------
@@ -71,8 +71,9 @@ ORDER = list(STANDINGS)
 def ledger_standing(st):
     st = str(st)
     if 'held under seal' in st: return 'produced-blind'
+    if st.startswith('read'): return 'read'
     if re.search(r'failed as written|J\d+ failed', st): return 'sealed-failed'
-    if re.search(r'\b[JKN]\d+[a-z]? held|sealed N\d|S\d held|K1 held', st): return 'sealed-held'
+    if re.search(r'\b[JKNPQRT]\d+[a-z]? held|sealed [NVW]\d+[a-z]? held|sealed N\d|S\d held|K1 held', st): return 'sealed-held'
     if st.startswith('engine'): return 'engine'
     if st.startswith('counted') or 'counted:' in st: return 'counted'
     return 'read'
@@ -134,6 +135,7 @@ for i, r in enumerate(LEDGER, 1):
         books=['Matthew'], operation=[str(r['move'])], strand=r.get('strand'),
         rev_relation=r.get('rev_relation'), matt_relation=r.get('matt_relation'),
         lemmas=r.get('lemmas', []), standing=ledger_standing(r['standing']), standing_as_recorded=r['standing'],
+        binding='relation' if 'relational' in str(r['standing']) else 'lexical',
         pointer=dict(kind='data file', file='rebuild/unfolding-map/map/rev-matthew-ledger.json', row=i,
                      file_sha256=sha(LEDGER_P), checked=r.get('source'),
                      paper=dict(PAPER_REC, section=sec) if sec else
@@ -164,14 +166,19 @@ for k, (rv, ly, what, mt, st, lab) in enumerate(LAYERS, 1):
                      paper_sections='III.7, V.3a, V.5a-d, VI.6a-b, VII.3, VII.10, XIII.1a, XIV.5a')))
 
 PLANNED = [
- ('rel:plan-luke', 'Revelation', ['Luke'], 'no procedure yet; rows shared with Matthew reach 40 of 184 verses of the double tradition', 'planned'),
- ('rel:plan-mark', 'Revelation', ['Mark'], 'no procedure; the procedure leaves Mark in place, and reaches 51 of the 458 verses Matthew shares with it', 'planned'),
+ ('rel:plan-luke', 'Revelation', ['Luke'], 'no procedure yet; rows shared with Matthew reach 70 of 184 verses of the double tradition', 'planned'),
+ ('rel:plan-mark', 'Revelation', ['Mark'], 'no procedure; the procedure leaves Mark in place, and reaches 100 of the 458 verses Matthew shares with it', 'planned'),
  ('rel:plan-john', 'Revelation', ['John'], 'order not found; the seven plagues reversed into the signs, untested as a pack', 'planned'),
  ('rel:plan-acts', 'Revelation', ['Acts'], 'a control so far: Acts 12 holds more of the dragon\'s custody than any Gospel passage', 'planned'),
  ('rel:plan-seven-in-seven', 'Rev 1-3', ['Hebrews', 'Jude', 'Romans', '1 Corinthians', '2 Corinthians', 'Galatians', 'Ephesians', 'Philippians', 'Colossians', '1 Thessalonians', '2 Thessalonians'],
   'seven within seven: the Pauline seven-church formation, and Paul as one of seven epistolary positions', 'planned'),
  ('rel:fail-four', 'Rev 4:6-8; 6:1-8', ['Matthew', 'Mark', 'Luke', 'John'], 'the four creatures and four riders assigned to the four Gospels: within chance', 'failed'),
- ('rel:fail-order', 'Revelation, in its order', ['Matthew', 'Mark', 'Luke', 'John'], 'the source\'s sequence in a Gospel\'s sequence: not found, three ways', 'failed'),
+ ('rel:fail-order', 'Revelation, in its order', ['Matthew', 'Mark', 'Luke', 'John'], 'the source\'s sequence in a Gospel\'s sequence: not found; for Matthew by block, neighbourhood, chain, rank, rotation, strand, and letter or chapter (the notebook 2BB, 2BD, 2BE)', 'failed'),
+ ('rel:walk-rev12', 'Rev 12:1-6', ['Matthew'], 'walked in order through Matthew 2:1-3:3, the one unit of 22 that keeps its order (51 pairs to 12; p 0.003, about 0.13 corrected); the order named Matt 2:9 before it was read (the paper II.6a, S.4)', 'counted'),
+ ('rel:scripture', 'the Septuagint, beside Revelation', ['Matthew'], 'Matthew handles Revelation as it handles the scripture it does not name: no order kept (Isaiah -0.14, Psalms +0.01, Revelation -0.09); verses using scripture tacitly reached from Revelation at 55 per cent against 28.6; the scripture lists from memory, checked in the seated Septuagint (the paper 0.6, S; the notebook 2BG-2BI)', 'counted'),
+ ('rel:fail-direction-count', 'Revelation and Matthew, read from Matthew to Revelation', ['Matthew'], 'a count meant to separate use from compression: Revelation\'s own scripture keeps a median of two stems a row, as Matthew\'s does; it did not decide (the notebook 2BH)', 'failed'),
+ ('rel:fail-strands', 'Rev 3:14-22; Rev 20:1-3; strands by label', ['Matthew'], 'strands walked in their own order: by the ledger\'s labels 47 per cent, Laodicea 23 pairs to 22 (the notebook 2BE)', 'failed'),
+ ('rel:plan-heldout', 'Revelation', ['Matthew'], 'Matthew 11-12: ten lines registered from the author\'s reading and run once, five held; the remaining verses held out for a frozen grammar (the paper I.5a; the notebook 2BF)', 'planned'),
  ('rel:fail-seatmap', 'Revelation', ['Matthew'], 'one seat-map over a whole Gospel: five predictions failed', 'failed'),
  ('rel:fail-plagues', 'Rev 8-9; 16', ['Matthew'], 'the plagues opposed in Matthew\'s miracles (sealed S1): a tie with Mark\'s material', 'sealed-failed'),
  ('rel:fail-philo-free', 'Philo, with no place of Revelation between', ['Matthew'], 'cannot tell Matthew from Mark (ratio 1.30 against 1.22); kept as the control for P3', 'failed'),
@@ -199,7 +206,7 @@ counts = dict(relations=len(REL), by_family=dict(collections.Counter(r['family']
               by_standing={s: sum(1 for r in REL if r['standing'] == s) for s in ORDER if any(r['standing'] == s for r in REL)},
               matthew_rows=len(LEDGER), matthew_rows_stated_in_paper=sum(1 for r in REL if r['family'] == 'matthew' and r['pointer']['paper'].get('section')),
               matthew_by_standing={s: mt_n(s) for s in ORDER if mt_n(s)}, layers=sum(1 for r in REL if r['family'] == 'layer'),
-              matthew_verses_reached='178 of 1,067', books_reached_above_named=reached, books_named_or_planned_only=only_named_or_planned, books_without=no_arrow)
+              matthew_verses_reached='305 of 1,067', matthew_verses_reached_without_relational_rows='265 of 1,067', matthew_rows_entered_for_relation=sum(1 for r in REL if r.get('binding') == 'relation'), books_reached_above_named=reached, books_named_or_planned_only=only_named_or_planned, books_without=no_arrow)
 
 # ---- the transform, compressed ---------------------------------------------------------------
 TRANSFORM = dict(
@@ -218,11 +225,14 @@ SUMMARY = ("Revelation First (Lee Sharks, #202) holds that the Apocalypse is the
  "This kernel holds every relation the programme has drawn from Revelation to another book, each at its own standing, and the relations it has planned or seen fail. "
  f"It holds {len(REL)} relations. For the epistles: the letters to the seven assemblies set against seven epistles, one of them run to an executable derivation "
  "(Smyrna to James, nine rules), four doctrinal transforms worked to derivation grade, the rest mapped with grades and residue. "
- f"For Matthew: {len(LEDGER)} relations reaching 178 of 1,067 verses under a stated transform (T_Μ v0.4), one passage produced blind from the rule and two verses, "
+ f"For Matthew: {len(LEDGER)} relations reaching 305 of 1,067 verses under a stated transform (T_Μ v0.4; 86 relations and 178 verses at v1.0 of this kernel), one passage produced blind from the rule and two verses, "
  f"{mt_n('sealed-held')} pairings written down before they were counted and held, {mt_n('sealed-failed')} that failed as written, {mt_n('counted')} counted, {mt_n('engine')} derived by an engine, {mt_n('read')} read. "
  f"Under Revelation, at {len(LAYERS)} places, a layer of Philo or scripture is recorded: the third parameter of the transform admits it only through a place Revelation holds. "
- f"{len(reached)} of the 26 other books are reached above the founding grain; {len(no_arrow)} have no relation ({', '.join(no_arrow)}). Luke, Mark, John, Acts and the Pauline seven are planned. Four mappings were tested and failed and are kept: the four creatures to the four Gospels, "
- "the source's order in a Gospel's order, one seat-map over a whole Gospel, and Philo taken straight to Matthew. "
+ f"{len(reached)} of the 26 other books are reached above the founding grain; {len(no_arrow)} have no relation ({', '.join(no_arrow)}). Luke, Mark, John, Acts and the Pauline seven are planned. Six mappings were tested and failed and are kept: the four creatures to the four Gospels, "
+ "the source's order in a Gospel's order, one seat-map over a whole Gospel, Philo taken straight to Matthew, strands walked in their own order, and a count on direction. "
+ f"{sum(1 for r in REL if r.get('binding') == 'relation')} of Matthew's relations are entered for the relation, with few shared words or none, under a check fixed beforehand, and are marked. "
+ "Matthew handles Revelation as it handles the scripture it does not name: it keeps no order of the source, as it keeps none of Isaiah or the Psalms, with one walk (Revelation 12:1-6 through Matthew 2); the counts behind this are first ones, on lists made from memory. "
+ "A count meant to decide direction did not. "
  "A standing licenses what it names and nothing above it: a relation read is not a relation counted, and a relation counted is not a derivation. "
  "No relation here decides the order in which the books were written; the argument for order is the framework's (#1735, #1755). "
  "The received account is carried as the rival on the same terms: the Synoptic tradition as the source of Revelation's sayings (Vos 1965; Bauckham 1977), "
@@ -321,7 +331,7 @@ QUESTIONS = dict(id='EA-HK-REVFIRST-02/questions', rule='each line of research n
        instrument='a pack on the model of the labourers pack, direction reversed', read_first=['the paper I.6, VII', 1735],
        advances='the inverse fails to place the sayings in the letters, each fitted to its assembly', retreats='the inverse yields the sayings where they stand'),
   dict(id='Q2-control-source', question='Does the same procedure, run from another source of like length, reach as much of Matthew?', bears_on=['rel:mt-*'],
-       instrument='T_Μ with the source swapped (1 Enoch; Daniel with Ezekiel 40-48)', read_first=['the paper XIV.1'], advances='reach well below 178 verses', retreats='like reach'),
+       instrument='T_Μ with the source swapped (1 Enoch; Daniel with Ezekiel 40-48)', read_first=['the paper XIV.1'], advances='reach well below 305 verses', retreats='like reach'),
   dict(id='Q3-clustering', question='Do Philo\'s places cluster by treatise more than chance?', bears_on=['rel:layer-*'], instrument='a permutation control over Philo\'s sections',
        read_first=[1758, 'the paper XIV.5c'], advances='clustering beyond the control', retreats='no clustering'),
   dict(id='Q4-luke', question='What transform takes Revelation to Luke, and does Matthew\'s carry over?', bears_on=['rel:plan-luke'], instrument='T_Μ applied to Luke; the ledger rebuilt',
@@ -331,7 +341,13 @@ QUESTIONS = dict(id='EA-HK-REVFIRST-02/questions', rule='each line of research n
   dict(id='Q6-seven-in-seven', question='Does the Pauline seven-church formation transform Revelation\'s seven, and do the named epistolary positions map to it?', bears_on=['rel:plan-seven-in-seven', 'rel:letter-*'],
        instrument='the letters slate extended; the Muratorian order as testimony', read_first=[1735, 1415], advances='a mapping with stated residue for each position', retreats='positions that fit no letter'),
   dict(id='Q7-mark', question='What of the 458 verses Matthew shares with Mark does Revelation reach, and by what rule?', bears_on=['rel:plan-mark'], instrument='the ledger restricted to shared verses; a synopsis in seat',
-       read_first=['the paper XIV.1a'], advances='a rule for the sea stories and the passion shared', retreats='reach stays at 51'),
+       read_first=['the paper XIV.1a'], advances='a rule for the sea stories and the passion shared', retreats='reach stays at 100'),
+  dict(id='Q9-scripture-index', question='Do the scripture counts hold on a published index of quotations and allusions and a lemmatized Septuagint?', bears_on=['rel:scripture'],
+       instrument='the counts of the notebook 2BG-2BI rerun on lists not made from memory', read_first=['the paper S.7, XIV.5e'], advances='the enrichment at tacit scripture holds; the order nulls hold', retreats='the enrichment falls to the base rate'),
+  dict(id='Q10-sense-blind', question='Read in each direction, does a row keep the source\'s judgment, and what does the receiving passage do with it?', bears_on=['rel:fail-direction-count', 'rel:mt-*'],
+       instrument='each row coded for event, judgment and function in both directions by a reader who does not know the thesis', read_first=['the paper S.3, S.8, XIV.7', 'the notebook 2BI.3'], advances='an asymmetry the blind coder finds', retreats='none found'),
+  dict(id='Q11-heldout', question='Does a frozen grammar, with a stated law, reach the unsearched verses of Matthew 11-12?', bears_on=['rel:plan-heldout'],
+       instrument='T_Μ frozen and run on the block; the two fixed measures of the notebook 2BB rerun', read_first=['the notebook 2BB.4, 2BF'], advances='reach in the block like the reach elsewhere', retreats='the block stays near its present 20 of 80'),
   dict(id='Q8-reading', question='What do Vos (1965) and Bauckham (1977, 1983) say in full of each saying the ledger keeps?', bears_on=['rel:q-thief', 'rel:q-confession'],
        instrument='the works themselves', read_first=['the paper I.6 and Works cited'], advances='their lists contain the rows kept under M1', retreats='their lists show sayings the ledger cannot place'),
  ])
