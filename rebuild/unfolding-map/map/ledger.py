@@ -149,6 +149,10 @@ H=[
 ('2:10; 2:13; 3:8','26:35; 26:69-75',['ἀρνέομαι'],['θάνατος','πιστός'],['ἀποθνήσκω','ἀπαρνέομαι'],'be faithful to death; you did not deny my faith; you did not deny my name','though I must die with you I will not deny you; and he denied','F2 ENACT as failure: what the letters praise is staged and not done','positions','sealed R4 held; relational; shared with Mark'),
 ('14:4','26:56',[],['ἀκολουθέω'],['φεύγω'],'they follow the Lamb wherever he goes','all the disciples left him and fled','F2 ENACT as failure','positions','read; relational (R4)'),
 ('3:17-18','11:5',['τυφλός','πτωχός'],['βλέπω'],['ἀναβλέπω'],'you are poor and blind; salve, that you may see','the blind see; the poor have good news','F5 HAPPEN: the assembly\'s figure of speech made persons','healing','sealed R5 held less one verse; a three-way row with Isaiah; shared with Luke'),
+# --- from the fourth review of 03:23 (2BC). T-lines sealed before counting. Matthew 11-12 is held out: no row there.
+('3:10','26:41',['πειρασμός'],['ὥρα'],[],'I will keep you from the hour of trial','watch and pray, that you enter not into trial','F2 ENACT as failure: the keeping promised to Philadelphia is prayed for and not had','positions','sealed T2 held: ὥρα within a verse of πειρασμός only at Matt 26:41, Mark 14:38, Rev 3:10; shared with Mark'),
+('2:5; 3:3','26:75',[],['μνημονεύω','μετανοέω'],['μιμνήσκω','κλαίω'],'remember from where you have fallen, and repent; remember how you received','Peter remembered the word, and went out and wept bitterly','F2 ENACT: the remedy the letters give after a fall','positions','sealed T3 held; relational: remembering within a verse of repenting or weeping at five places (Matt 26:75, Mark 14:72, John 16:21, Rev 2:5, 3:3); shared with Mark'),
+('6:15; 19:18-19','17:25-26',['βασιλεύς','γῆ','ἐλεύθερος'],[],[],'the kings of the earth, and every slave and free','from whom do the kings of the earth take toll; then the sons are free','M5 OPPOSE, keeping the terms: the roll of the judged made a question about tribute','sovereignty','sealed T4 held: the kings of the earth in the Gospels only at Matt 17:25; with ἐλεύθερος within a verse only at Matt 17:25-26, Rev 6:15, Rev 19:18-19'),
 ]
 rows=[]; bad=[]
 for rv,mt,both,ro,mo,rr,mr,move,strand,stand in H:
@@ -172,4 +176,11 @@ def near(A,B,w):
     return out
 chk={'ᾅδης within one verse of κλείς':near(['ᾅδης'],['κλείς'],1),'εἰρήνη with μάχαιρα in one verse':near(['εἰρήνη'],['μάχαιρα'],0),'διάβολος with ἄγγελος in one verse':near(['διάβολος'],['ἄγγελος'],0),'δώδεκα, ἀπόστολος with ὄνομα in one verse':[x for x in near(['ἀπόστολος'],['ὄνομα'],0) if x in near(['ἀπόστολος'],['δώδεκα'],0)],'ποιμαίνω':near(['ποιμαίνω'],['ποιμαίνω'],0),'πεινάω with διψάω':near(['πεινάω'],['διψάω'],0),'θερισμός with ἄγγελος':near(['θερισμός'],['ἄγγελος'],0),'ἀποδίδωμι with ἕκαστος':near(['ἀποδίδωμι'],['ἕκαστος'],0),'μάχαιρα twice in a verse':[f'{b} {k[0]}:{k[1]}' for b in books for k,t in NT[b].items() if sum(1 for l,_,_ in t if l==nf('μάχαιρα'))>=2],'στέφανος':near(['στέφανος'],['στέφανος'],0),'μύλος family with θάλασσα':near(['μύλος','μύλινος','μυλικός'],['θάλασσα'],0)}
 for k,v in chk.items(): print(' ',k,':',v)
+# what a row changes in the told world, and what it needs first (2BC.5): entered for one dense stretch only, as a trial of the field
+EFFECT={('20:1-3','16:19'):('nothing','a follower holds the keys'),('1:1; 11:5','16:21'):('nothing','the death that must be is announced'),('2:13-14','16:23'):('the announcement of 16:21','a follower stands against it and is named for it'),
+('2:10; 2:13; 3:8','26:35; 26:69-75'):('a denial foretold (26:34)','an obligation taken, then broken'),('3:2-3','26:40-41'):('a command to watch (26:38)','the watch is failed'),('3:10','26:41'):('the watch failed once','trial is entered'),
+('14:4','26:56'):('the seizing (26:50)','the followers are gone'),('2:5; 3:3','26:75'):('the denial, and the word of 26:34','the fallen one remembers')}
+for r in rows:
+    e=EFFECT.get((r['rev'],r['matt']))
+    if e: r['needs'],r['establishes']=e
 json.dump(dict(rows=rows,checks=chk,bad=bad),open('rev-matthew-ledger.json','w'),ensure_ascii=False,indent=1)
