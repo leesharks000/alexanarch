@@ -4,15 +4,29 @@
 
 Lee Sharks
 
-*Draft v0.2, 27 November 2026. Not deposited. The research record behind every claim is The Unfolding Map, v0.47; its ledger of relations (78 rows, each checked in a tagged text) is this paper's evidence. Greek is quoted from Nestle 1904 as seated in the archive and every quotation here was verified against that seat by machine.*
+*Draft v0.3, 27 November 2026. Not deposited. The research record behind every claim is The Unfolding Map, v0.48; its ledger of relations (80 rows, each checked in a tagged text) is this paper's evidence. Greek is quoted from Nestle 1904 as seated in the archive, and the Septuagint from Swete as seated; every quotation here was verified against those seats by machine.*
+
+---
+
+## 0. The question
+
+0.1. The received account, in full. Matthew is a life of Jesus written in Greek late in the first century by an author who had Mark before him and reworked it. What Matthew has beyond Mark came from a sayings collection shared with Luke, or from Luke's use of Matthew, and from material of Matthew's own, written or oral, shaped by scripture. Revelation is another kind of book, a prophecy sent to seven assemblies in Asia, and where the two agree in wording they draw on a common stock: the Septuagint, the sayings of Jesus in circulation, the diction of early Christian prophecy. On this account nothing passes from Revelation to Matthew. Where anything passes between them it passes the other way, from the tradition of the sayings into the prophet's book.
+
+0.2. This paper asks a different question and does not begin by disputing that account. Suppose a writer has Revelation, whole, and wants a Gospel. What must that writer do? Which operations, applied to which places, give which parts of Matthew? The question is answered by doing it. Each section takes a place or several places of Revelation, states an operation, performs it, and sets the result beside Matthew's Greek.
+
+0.3. Three things are meant by "write" and they are kept apart. (a) A relation in Revelation and a relation in Matthew are the same relation with a stated change: this is shown by quotation and by counts over the whole New Testament. (b) The change is one of a small set of moves that recur: this is shown by the ledger. (c) A move, given to a reader who is shown only the place in Revelation and the rule, produces Matthew's passage: this has been done once, under seal, and is reported in section VII. Most of what follows is (a) and (b). Only section VII is (c). A fourth kind of support appears from section II on: a line written down before it was counted. Where a pairing was so written, the text says so, and section XIV gives the tally with the failures.
+
+0.4. The demonstration does not, taken alone, say who wrote first. Every pairing below can be read from right to left as the work of a seer who had Matthew and compressed it. What the demonstration gives is a procedure that another reader can run, alter, reverse or break, and a measure of how much of Matthew the procedure reaches. The argument for the order of the two books is made elsewhere in the archive and stands or falls on other grounds. Here the book is taken as a source and worked with.
+
+0.5. The source is held open (Figure 2, at XIII.5). A writer who knows a book does not move through it in order. Any place may be drawn on at any point of the new work, several at once, and the same place twice. Tests that looked for Revelation's sequence in Matthew's sequence did not find it, three ways (section XIV). A source held open is offered as an account of that result; the tests do not establish it. The unit is the relation: who does what to whom, in what mode.
 
 ---
 
 ## P. The programme this belongs to
 
-P.1. Revelation First is the thesis that the Apocalypse is the generative source of the rest of the New Testament: that the epistles and then the Gospels were unfolded from it. It is distinct from the argument that Revelation was written early. The early date is old (Robinson 1976; Gentry 1989) and says nothing about what came from what. The priority thesis has, to the author's knowledge, no antecedent. It can be held at three strengths: that Revelation can generate the later books by stated procedures; that the New Testament reads as one corpus with Revelation at its head; that Revelation was written first. The author holds the third and grants that a reader may accept the first alone. This paper works only at the first.
+P.1. Revelation First is the thesis that the Apocalypse is the generative source of the rest of the New Testament: that the epistles and then the Gospels were unfolded from it. It is distinct from the argument that Revelation was written early. The early date is old (Robinson 1976; Gentry 1989) and says nothing about what came from what. That the whole corpus unfolds from the Apocalypse has, to the author's knowledge, no antecedent. Arguments that one New Testament book precedes another are many, and they are a different kind of claim. It can be held at three strengths: that Revelation can generate the later books by stated procedures; that the New Testament reads as one corpus with Revelation at its head; that Revelation was written first. The author holds the third and grants that a reader may accept the first alone. This paper works only at the first.
 
-P.2. The epistles are the easier case, for three reasons that are on the surface. The book contains seven letters, so the form is there to be expanded. Ancient testimony says so in as many words: the Muratorian fragment has Paul writing to seven assemblies by name *sequens prodecessoris sui Johannis ordinem*, following the order of his predecessor John (seated: Tregelles 1867). And the letter of an apostle to an assembly has no surviving literary ancestor between the Septuagint and Paul, except this one, which fills the place exactly (argued in "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles").
+P.2. The epistles are the easier case, for three reasons that are on the surface. The book contains seven letters, so the form is there to be expanded. Ancient testimony says so in as many words: the Muratorian fragment has Paul writing to seven assemblies by name *sequens prodecessoris sui Johannis ordinem*, following the order of his predecessor John (seated: Tregelles 1867). And there is the matter of ancestry. Letters are everywhere in the Jewish and Greek worlds, and the claim is not about letters as such. It is about one form: a letter from one who speaks for the risen figure to an assembly, with address, commendation, correction and promise. For that form the one surviving ancestor between the Septuagint and Paul is this (argued in "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles").
 
 P.3. What the programme has demonstrated for the epistles, with the programme's own grades (offered for ruling, as its table says):
 
@@ -33,25 +47,11 @@ P.5. The Gospels are the harder case, and this paper takes the harder case. A le
 
 P.6. Why it matters. First, the materials for which the study of the Gospels posits lost documents (a sayings source, a special Matthean source) are here set against a book that exists and can be inspected, doing some of the same work. The comparison is between inferences, and the burden is symmetrical. Second, if the figure of the Gospels can be produced from the figure of the Apocalypse, then that figure is a work of literature before it is a biography, and the search for the person behind the Gospels has a text in front of it that it has not been reading as a source. Third, the book that the canon puts last and the commentaries treat as derivative would stand at the head.
 
-P.7. Why this will be resisted, stated as costs and not as motives. (a) Every standing solution to the Synoptic problem is a relation among three Gospels and one or two hypothetical documents; none has a place for an extant fourth source of another genre, and admitting one reopens each. (b) The received chronology, with Revelation near 95 and Paul near 50, is built into every introduction, commentary and syllabus; a result that needs another order has nowhere to be filed. (c) Apocalypse and Gospel belong to different specialisms with different journals; work across the line is reviewed by neither. (d) Historical study of Jesus has a person as its object, and confession has a person as its Lord; a book in that place removes the one and renames the other. (e) A reader, human or machine, formed on the field's literature will answer that this "needs to be shown." It does, and the answer is given here in the only way available: by showing it where it can be shown, saying where it cannot, and publishing the data and scripts so that the reader can run them. The same reader does not ask that the sayings source be shown.
+P.7. Why this will be resisted, stated as costs and not as motives. Items (a) to (c) describe how the field is arranged and can be checked against its handbooks. Items (d) and (e) are predictions of reception and are offered as predictions. (a) Every standing solution to the Synoptic problem is a relation among three Gospels and one or two hypothetical documents; none has a place for an extant fourth source of another genre, and admitting one reopens each. (b) The received chronology, with Revelation near 95 and Paul near 50, is built into every introduction, commentary and syllabus; a result that needs another order has nowhere to be filed. (c) Apocalypse and Gospel belong to different specialisms with different journals; work across the line is reviewed by neither. (d) Historical study of Jesus has a person as its object, and confession has a person as its Lord; a book in that place removes the one and renames the other. (e) A reader, human or machine, formed on the field's literature will answer that this "needs to be shown." It does, and the answer is given here in the only way available: by showing it where it can be shown, saying where it cannot, and publishing the data and scripts so that the reader can run them. The same reader does not ask that the sayings source be shown.
 
-P.8. Two figures accompany this draft. Figure 1 (REV-TO-MATTHEW-BEARERS) shows who bears each relation in Revelation and who bears it in Matthew, with one checked example on each line. Figure 2 (REV-TO-MATTHEW-MAP) draws every row of the ledger from its place in Revelation to its place in Matthew.
+P.8. Two figures accompany this draft. Figure 1 stands here: who bears each relation in Revelation and who bears it in Matthew, with one checked example on each line. Figure 2 stands at XIII.5: every row of the ledger drawn from its place in Revelation to its place in Matthew.
 
 ![Figure 1. How the Apocalypse produces the Gospel: who bears each relation.](REV-TO-MATTHEW-BEARERS.svg)
-
----
-
-## 0. The question
-
-0.1. The received account, in full. Matthew is a life of Jesus written in Greek late in the first century by an author who had Mark before him and reworked it. What Matthew has beyond Mark came from a sayings collection shared with Luke, or from Luke's use of Matthew, and from material of Matthew's own, written or oral, shaped by scripture. Revelation is another kind of book, a prophecy sent to seven assemblies in Asia, and where the two agree in wording they draw on a common stock: the Septuagint, the sayings of Jesus in circulation, the diction of early Christian prophecy. On this account nothing passes from Revelation to Matthew. Where anything passes between them it passes the other way, from the tradition of the sayings into the prophet's book.
-
-0.2. This paper asks a different question and does not begin by disputing that account. Suppose a writer has Revelation, whole, and wants a Gospel. What must that writer do? Which operations, applied to which places, give which parts of Matthew? The question is answered by doing it. Each section takes a place or several places of Revelation, states an operation, performs it, and sets the result beside Matthew's Greek.
-
-0.3. Three things are meant by "write" and they are kept apart. (a) A relation in Revelation and a relation in Matthew are the same relation with a stated change: this is shown by quotation and by counts over the whole New Testament. (b) The change is one of a small set of moves that recur: this is shown by the ledger. (c) A move, given to a reader who is shown only the place in Revelation and the rule, produces Matthew's passage: this has been done once, under seal, and is reported in section VII. Most of what follows is (a) and (b). Only section VII is (c). A fourth kind of support appears from section II on: a line written down before it was counted. Where a pairing was so written, the text says so, and section XIV gives the tally with the failures.
-
-0.4. The demonstration does not, taken alone, say who wrote first. Every pairing below can be read from right to left as the work of a seer who had Matthew and compressed it. What the demonstration gives is a procedure that another reader can run, alter, reverse or break, and a measure of how much of Matthew the procedure reaches. The argument for the order of the two books is made elsewhere in the archive and stands or falls on other grounds. Here the book is taken as a source and worked with.
-
-0.5. The source is held open (Figure 2, at XIII.3). A writer who knows a book does not move through it in order. Any place may be drawn on at any point of the new work, several at once, and the same place twice. Tests that looked for Revelation's sequence in Matthew's sequence failed three ways (section XIV), and they failed because composition does not work like that. The unit is the relation: who does what to whom, in what mode.
 
 ---
 
@@ -65,7 +65,7 @@ I.2. The thief.
 |---|---|
 | Revelation 3:3 | ⟦Rev 3:3|ἐὰν οὖν μὴ γρηγορήσῃς, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ⟧ |
 | Matthew 24:43 | ⟦Matt 24:43|εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν⟧ |
-| Move | KEEP. The watching, the thief and the unknown hour cross. The first person becomes a householder in a likeness |
+| Move | KEEP. The watching, the thief and the unknown hour cross. The first person becomes the thief of a likeness, and the one addressed becomes a householder |
 
 I.3. The confession.
 
@@ -91,7 +91,7 @@ I.5. The sword.
 | Matthew 26:52 | ⟦Matt 26:52|πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρῃ ἀπολοῦνται⟧ |
 | Move | KEEP, as a saying at the arrest. These are the only two verses of the New Testament in which the sword stands twice |
 
-I.6. The other account of the same thing. Vos (1965) is the one systematic study of Revelation's relation to the Synoptic tradition, and it runs in the received direction, as its title says: the Synoptic traditions in the Apocalypse. Bauckham (1977; again 1983) set the thief of Revelation 3:3 and 16:15 and the knocking of 3:20 beside the Synoptic parables of the parousia and read the direction as the received account does: parables of Jesus, used in early exhortation until the story fell away and the saying remained. His word for it is deparabolization. The observation is the same as I.2. The operation is the inverse. Section VII returns to this, because there the story can be shown arising from the saying under a stated rule, and the falling away cannot be shown in the same manner.
+I.6. The other account of the same thing. Vos (1965) is the one systematic study of Revelation's relation to the Synoptic tradition, and it runs in the received direction, as its title says: the Synoptic traditions in the Apocalypse. Bauckham (1977; again 1983) set the thief of Revelation 3:3 and 16:15 and the knocking of 3:20 beside the Synoptic parables of the parousia and read the direction as the received account does: parables of Jesus, used in early exhortation until the story fell away and the saying remained. His word for it is deparabolization. The observation is the same as I.2. The operation is the inverse. So there is agreement on the textual relation and disagreement on the operation that produced it. Section VII returns to this, because there the story is shown arising from the saying under a stated rule. The inverse can be built the same way: a rule that takes the parable and yields the saying, written down, run under seal, with cuts. It has not been built, and it is invited. Its test would be whether what it yields accounts for where these sayings stand in Revelation: in the letters, each fitted to its assembly. Vos and both of Bauckham's articles have to be read in full before this paragraph is final; they have not been (see Works cited).
 
 I.7. Rule M1. A saying of the speaker in the first person, a promise, a warning or a formula, is kept as a saying of the teacher. Twenty rows of the ledger keep.
 
@@ -128,6 +128,18 @@ The sign seen in heaven at the birth is a star seen (HAPPEN). The kings whose wa
 
 II.6. Three of these four lines were written down before they were counted, and held. A fourth was written down and failed: that "her children" killed (⟦Rev 2:23|τὰ τέκνα αὐτῆς ἀποκτενῶ ἐν θανάτῳ⟧) would be found at the slaughter in Bethlehem. The count put it at Matthew 23:37 instead, the city that kills and whose children the teacher would have gathered. It is used there (VIII.5).
 
+II.7. The scriptures behind the same chapter, read in the seated Septuagint. A reviewer of the second draft named them, and they change the standing of II.5.
+
+| Matthew 2 | Revelation | Scripture | Which is nearer |
+|---|---|---|---|
+| the child sought, to be destroyed; the withdrawal | 12:4–6 | Exodus 2:15, ⟦Exod 2:15|ἐζήτει ἀνελεῖν Μωυσῆν· ἀνεχώρησεν δὲ Μωυσῆς⟧; Exodus 4:19, ⟦Exod 4:19|τεθνήκασιν γὰρ πάντες οἱ ζητοῦντές σου τὴν ψυχήν⟧ | Exodus for the wording: ⟦Matt 2:20|τεθνήκασιν γὰρ οἱ ζητοῦντες τὴν ψυχὴν τοῦ παιδίου⟧ is Exodus 4:19 with one word dropped and one changed. Revelation for the scene: a newborn, at the birth, with the mother, the adversary standing ready |
+| the star at its rising | 12:1 | Numbers 24:17, ⟦Num 24:17|ἀνατελεῖ ἄστρον ἐξ Ἰακώβ⟧ | Numbers for the rising (ἀνατελεῖ, ἐν τῇ ἀνατολῇ). Numbers has ἄστρον; Matthew and Revelation have ἀστήρ |
+| those who come; gold and frankincense | 16:12; 18:12–13 | Isaiah 60:3, ⟦Isa 60:3|πορεύσονται βασιλεῖς τῷ φωτί σου⟧; Isaiah 60:6, ⟦Isa 60:6|ἥξουσιν φέροντες χρυσίον, καὶ λίβανον οἴσουσιν⟧ | Isaiah, plainly. There gold and frankincense are brought by those who come to a light. In Revelation they lie in a list of cargo |
+| Egypt | 11:8 | Hosea 11:1, cited by Matthew; Exodus | Scripture. Matthew cites it. (The Septuagint of Hosea has "his children"; Matthew's "my son" is another form of the text) |
+| the one who will shepherd | 12:5 | Micah 5:2–4, cited by Matthew; Psalm 2:9, ⟦Ps 2:9|ποιμανεῖς αὐτοὺς ἐν ῥάβδῳ σιδηρᾷ⟧, used by Revelation | Each book has its own scripture for the one verb |
+
+II.8. What is left to Revelation in the infancy, then. The counts of II.5 are true of the New Testament and say nothing against the Septuagint. Isaiah 60 is the nearer source for the gifts, and the row for the cargo is kept in the ledger with that written on it. Exodus is the nearer source for the wording of the pursuit. What scripture does not have in one place, and Revelation 12:1–6 does, is the configuration: a sign in heaven, a birth, a ruler-to-be who is hunted at the moment of birth, a flight to a place prepared. Revelation has already put Psalm 2, the pattern of Exodus and a sign in the sky into one scene. Whether Matthew worked from that scene or made the same combination independently from the same scriptures is the open question of this section, and it is the reviewer's question: is Revelation a station between the scriptures and Matthew? The row that bears on it is the adversary named from the land. It is read, and it is not tested.
+
 ---
 
 ## III. Give the life a land
@@ -147,6 +159,8 @@ III.3. The same city is the Sermon's: ⟦Matt 5:14|οὐ δύναται πόλι
 III.4. The wilderness as a place of feeding: ⟦Rev 12:6|ὅπου ἔχει ἐκεῖ τόπον⟧, ⟦Rev 12:6|ἵνα ἐκεῖ τρέφωσιν αὐτὴν⟧; in Matthew 14:13–21 a desert place, and ⟦Matt 14:16|δότε αὐτοῖς ὑμεῖς φαγεῖν⟧. This one Matthew shares with Mark, and it says nothing of Matthew in particular.
 
 III.5. What the source does not give. Galilee, Capernaum, Nazareth, the lake's towns, the Jordan. The source has a wilderness, a mountain, a holy city, a great city called Egypt, a sea. The towns are the host's, or Mark's.
+
+III.6. The control from scripture. ⟦Ezek 40:2|ἔθηκέν με ἐπʼ ὄρος ὑψηλὸν σφόδρα⟧, with a city on it, and at 40:4 ⟦Ezek 40:4|πάντα ὅσα ἐγὼ δεικνύω σοι⟧. Revelation 21:10 is this verse of Ezekiel reworked. And Moses on the mountain: ⟦Deut 34:1|πᾶσαν τὴν γῆν⟧ shown to him. So a very high mountain and a showing of lands were available to Matthew from Ezekiel and Deuteronomy without Revelation, and "the holy city" from Isaiah 48:2 and 52:1. The count of III.1 holds for the New Testament only. What the source adds is the joining: a trial by the devil (2:10), the holy city, and the high mountain of showing, as three stations of one stretch. That joining is read and is not tested.
 
 ---
 
@@ -189,7 +203,7 @@ IV.5. Gurtner (2012) asks how apocalyptic symbols are to be read once they stand
 
 ## V. Give the teacher a teaching
 
-V.1. The first move kept single sayings. The Sermon is built otherwise. Its opening and its close draw on the last three chapters of the source: what the conquerors are promised, what the city is like, who may enter.
+V.1. The first move kept single sayings. The Sermon is built otherwise. Its opening and its close draw most on the last chapters of the source (what the conquerors are promised, what the city is like, who may enter), and on five places elsewhere (1:20; 3:10; 7:16; 10:6; 13:11).
 
 V.2. The blessings. Revelation has the form (seven times μακάριος) and has the content elsewhere, as what will be.
 
@@ -210,6 +224,8 @@ V.3. The city, the lamp, the oath, the passing of heaven and earth.
 
 "Swear" with "heaven" stands at Matthew 5:34 and 23:22, James 5:12 and Revelation 10:6, and nowhere else.
 
+V.3a. A second source at the same place. Revelation gives the oath by heaven and nothing of what Matthew puts in its stead. Philo does. On the third commandment: ⟦Philo Spec|ὁ γὰρ τοῦ σπουδαίου, φησί, λόγος ὅρκος ἔστω⟧, let the word of the good be an oath; and if one must add something, not the highest cause at once, ⟦Philo Spec|ἀλλὰ γῆν, ἥλιον, ἀστέρας, οὐρανόν⟧ (De specialibus legibus 2.2 and 2.5). And: ⟦Philo Decal|κάλλιστον δὴ καὶ βιωφελέστατον καὶ ἁρμόττον λογικῇ φύσει τὸ ἀνώμοτον⟧ (De decalogo 84). Matthew: ⟦Matt 5:37|ἔστω δὲ ὁ λόγος ὑμῶν ναὶ ναί, οὒ οὔ⟧, and no oath by heaven, none by earth. "Word" as the subject of "let it be", in a passage on oaths: in Philo here, and again in a fragment under Philo's name that the edition prints in its apparatus at De decalogo 83 (ἔστω οὖν ὁ λόγος ἰσότιμος ὅρκῳ); never in Josephus, never in the Septuagint, and in the New Testament at Matthew 5:37 only. So Matthew keeps Philo's sentence and opposes Philo's allowance, by the two moves already in the table, at the place where the row from Revelation had left the positive half unsupplied. This was looked for on the author's word that Philo might close gaps, and it was named before the search. It is one place. The general test did not single Matthew out (XIV.5a).
+
 V.4. The petition. ⟦Rev 3:10|κἀγώ σε τηρήσω ἐκ τῆς ὥρας τοῦ πειρασμοῦ⟧. In the prayer: ⟦Matt 6:13|μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ πονηροῦ⟧. What the speaker promises an assembly, the followers are taught to ask. The speaker is exchanged and the sentence turns from promise to petition. Luke 11:4 has the first half.
 
 V.5. The knot of the gates. This is the strongest thing in the section.
@@ -221,6 +237,10 @@ V.5. The knot of the gates. This is the strongest thing in the section.
 | ⟦Rev 22:15|ἔξω οἱ κύνες⟧ | (7:6, the dogs) |
 
 The holy, the dogs, the pearls, entering, the gate: five members inside eight verses of Matthew. In the New Testament all five stand within thirty verses of each other at two places, this one and the end of Revelation, where the gates are pearls, the city is holy, the washed enter by the gates and the dogs are outside. Dogs are in five verses of the New Testament and pearls in eight. The city's order is said as two commands. This line was written before it was counted.
+
+V.5a. What changes here is the mode. In Revelation these are parts of a place: its gates, what they are made of, who is inside, who is outside. In Matthew they are things to do and not to do. The city becomes an ethics. It also accounts for a sentence that has always sat oddly in the Sermon: why the holy, dogs and pearls should come together in one saying. In the city they are together already.
+
+V.5b. Looked for further, at a reviewer's suggestion, with each line written down before counting. One more held: ⟦Rev 22:4|ὄψονται τὸ πρόσωπον αὐτοῦ⟧ and ⟦Matt 5:8|ὅτι αὐτοὶ τὸν Θεὸν ὄψονται⟧. "They shall see", with God or the face as what is seen, stands at these two verses only. What the city's people do, the pure in heart are promised. One is weaker: mourning ended (⟦Rev 21:4|οὔτε πένθος⟧; ⟦Matt 5:4|μακάριοι οἱ πενθοῦντες, ὅτι αὐτοὶ παρακληθήσονται⟧), where Isaiah 61:2 is nearer, ⟦Isa 61:2|παρακαλέσαι πάντας τοὺς πενθοῦντας⟧. Two did not hold. The excluded of the city (murderers, fornicators, liars: 21:8; 22:15) against the first antitheses (murder, adultery, oaths): the same three stand together in five other places (Matthew 15 and 19, Mark 10, Luke 18, 1 Timothy 1) and the commandments are behind them all. And the Sermon does not share more of the vocabulary of Revelation 21–22 than Matthew 10, 23 or 24–25 do; it shares less. So the relation of the city to the Sermon is at particular places, the blessings and the close, and is not a general colouring.
 
 V.6. The close. ⟦Matt 7:15|Προσέχετε ἀπὸ τῶν ψευδοπροφητῶν, οἵτινες ἔρχονται πρὸς ὑμᾶς ἐν ἐνδύμασιν προβάτων ἔσωθεν δέ εἰσιν λύκοι ἅρπαγες⟧. Revelation's false prophet is the second beast, which has two horns like a lamb and speaks as a dragon (13:11; 16:13). Lamb without, dragon within, becomes sheep without, wolves within. Then the tree thrown into the fire (section IX).
 
@@ -273,6 +293,8 @@ VI.5. The adversary's.
 
 VI.6. One stretch of Matthew, 19:16–20:28, now has four places of the source in it: the rich one who must trade (Revelation 3:17–18); the seat given, ⟦Rev 3:21|δώσω αὐτῷ καθίσαι μετ’ ἐμοῦ ἐν τῷ θρόνῳ μου⟧, kept at ⟦Matt 19:28|ἐπὶ δώδεκα θρόνους⟧ and turned at ⟦Matt 20:23|τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων οὐκ ἔστιν ἐμὸν τοῦτο δοῦναι⟧, the only other place where "give" governs "to sit"; the rider's coin; and, between them, the story of the next section. A writer with the source open draws on all the places that hold the relation in hand.
 
+VI.7. What kind of economy this makes. The teacher does not leave the market; every term of Revelation's commerce is kept. What changes is what each term is for. What may be bought: the one pearl, where the merchants' pearls go unsold. What counts as wealth: treasure in heaven, by selling, where Laodicea was told to buy. What blood buys: in the Lamb's hand a people, in the priests' hands a graveyard. Who may trade: the beast licenses buyers and sellers, and the teacher clears them out. Whose the coin is: the image is given back to the one it shows. What a day is worth: the rider's price for a measure of wheat is a worker's wage. One question is left over, and it is the one the source itself poses in its last chapter: what is owed to work. The next section is the answer, and it is the end of this one.
+
 ---
 
 ## VII. Turn the name into a story
@@ -284,9 +306,9 @@ VII.2. The seed is two verses.
 > ⟦Rev 22:12|Ἰδοὺ ἔρχομαι ταχύ, καὶ ὁ μισθός μου μετ’ ἐμοῦ, ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ⟧.
 > ⟦Rev 22:13|ἐγὼ τὸ Ἄλφα καὶ τὸ Ὦ, ὁ πρῶτος καὶ ὁ ἔσχατος, ἡ ἀρχὴ καὶ τὸ τέλος⟧.
 
-VII.3. Under P1 and P2 the speaker cannot say this of himself in a told life. A master in a likeness must do it. Then two things the vision says side by side collide. The wage is to each as his work is. And the first and the last are one. In a vision they never meet. Told as an economy they cannot both hold: if the ends are one, the pay cannot differ by the work. The conserving solution is to stage the collision (STAGE): workers who differ as much as possible in what they did, the same paid to all, and the paying so ordered that those who did most see it. The title, which no master can bear, becomes the order of the act (ENACT).
+VII.3. Under P1 and P2 the speaker cannot say this of himself in a told life. A master in a likeness must do it. Then two things the vision says side by side collide. The wage is to each as his work is. And the first and the last are one. In a vision they never meet. Told as an economy they can be made to collide, and here a line has to be drawn between what the source constrains and what the composer decides. The source gives two sayings. It does not say that "the first and the last" is a statement about workers, or about pay. Reading the title as a claim that the ends are alike in what they receive is a decision, and an inventive one. Once it is taken, the pay cannot differ by the work, and the two sayings contradict. The conserving solution is then to stage the collision (STAGE): workers who differ as much as possible in what they did, the same paid to all, and the paying so ordered that those who did most see it. The title, which no master can bear, becomes the order of the act (ENACT).
 
-VII.4. The rule was written as a pack: the two verses, the two parameters, six forced consequences each with the grammar that enacts it, three searches into the Septuagint. No word of the target was in it. A key of twelve points on the Greek surface was sealed before any run. Fresh readers, three language models from one maker, each in a separate context, were given the pack and nothing else.
+VII.4. The rule was written as a pack: the two verses, the two parameters, six forced consequences each with the grammar that enacts it, three searches into the Septuagint. No word of the target was in it. That is a weaker thing than it sounds. The pack was written with the target known, and what it forces may carry the target's shape without the target's words. A key of twelve points on the Greek surface was sealed before any run. Fresh readers, three language models from one maker, each in a separate context, were given the pack and nothing else.
 
 VII.5. What they wrote, and what Matthew has.
 
@@ -313,9 +335,11 @@ VII.6. That alone shows little, since each reader knows Matthew and four of the 
 
 Neither half of the seed holds the story. The title alone gives identity: the ends are alike. The rule of the wage alone gives arithmetic. The equal pay against unequal work, the order turned, the complaint and the reversal appear only when the two stand together and the consequence is drawn. One reader, given "to each" alone, recorded that it knew the missing title "from the next verse of the same book", declined to supply it, and wrote wages by the row.
 
-VII.7. What the pack could not produce was declared beforehand and held as declared: the denarius, the marketplace, the burden and the heat. The denarius has a seed, as VI.4 showed, in another place of the source. One forced consequence was found by a reader and not by the pack: the first group must have an agreed wage, or equal pay is a fraud and not a collision.
+VII.7. What the pack could not produce was declared beforehand: an agreement with the first group, "whatever is right", the idle in the marketplace, a steward, the burden and the heat, the denarius. It did not hold as declared. Every one of the six runs wrote at least one of these: a steward in five, the burden or the heat in four, an agreement in four, the marketplace in two. That is the readers' memory of Matthew arriving by a door the pack did not open, and it is reported as that. Only the denarius came in no run (a drachma, a day's wage, a measure of grain), and the denarius has its seed in another place of the source (VI.4). One item was wrongly declared: a reader derived, in its log, that the first group must have an agreed wage, or equal pay is a fraud and no collision. That is a consequence the pack should have forced and did not name.
 
-VII.8. Set this beside I.6. Bauckham's account takes the story to be first and the saying its residue. Here the saying is given, a rule is stated, and the story comes, and it comes only from the conjunction. That does not prove the order of the two books. It does show that the first verse of the pair and the second, which Revelation sets in consecutive clauses, are sufficient and jointly necessary for the plot of Matthew 20:1–16 under a rule written in advance.
+VII.8. Set this beside I.6. Bauckham's account takes the story to be first and the saying its residue. Here the saying is given, a rule is stated, and the story comes, and it comes only from the conjunction. That does not prove the order of the two books. What it shows is bounded on three sides. Within this pack, with these readers, the two verses together yield the plot of Matthew 20:1–16 and neither yields it alone. The readers knew Matthew. The pack was written by one who knew the target. "Sufficient and jointly necessary" is claimed of the tested procedure and of nothing wider.
+
+VII.9. The reader need not take the scores on trust. Appendix A prints one full-pack passage exactly as produced, one from each cut, and Matthew 20:1–16. The pack and all fourteen outputs are in the repository. The scoring key is not printed and is not in the repository, for a reason of method: a key that a model can read cannot be used to score that model blind, and the pack has runs still owed. It can be released when the pack is retired.
 
 ---
 
@@ -355,6 +379,8 @@ VIII.5. And the children. ⟦Rev 2:23|τὰ τέκνα αὐτῆς ἀποκτ�
 VIII.6. The kingdom divided. ⟦Rev 17:16|οὗτοι μισήσουσιν τὴν πόρνην, καὶ ἠρημωμένην ποιήσουσιν αὐτὴν⟧: the beast and its horns turn on the city that rides them. ⟦Matt 12:25|Πᾶσα βασιλεία μερισθεῖσα καθ’ ἑαυτῆς ἐρημοῦται⟧, and ⟦Matt 12:26|εἰ ὁ Σατανᾶς τὸν Σατανᾶν ἐκβάλλει⟧ beside ⟦Rev 12:9|ἐβλήθη εἰς τὴν γῆν⟧. "Made desolate" stands at Matthew 12:25, Luke 11:17 and in Revelation 17–18, and nowhere else. What Revelation shows as an event in the adversary's house, the teacher says as a rule about it.
 
 VIII.7. Shared. The charge of blood and the kingdom divided are in Luke also, so they belong to whatever Matthew and Luke have in common, and on the received account that is the sayings source. What is Matthew's alone here is "they say and do not", the tomb, the blind Pharisee, and the holy city. The observation that goes with P.6: the double tradition at these two places is material that an existing book holds.
+
+VIII.8. This deserves to be said slowly. The sayings source is inferred from what Matthew and Luke share and Mark lacks. It is not extant. At the charge of blood and at the kingdom divided, what Matthew and Luke share and Mark lacks is on the surface of Revelation, in Greek, with the rare word. And it is not only there. Of the sixty-two rows entered by hand, the words a row requires stand together in some verse of Luke for thirty-two. By a machine sorting of Matthew's verses (XIV.1), the ledger reaches 18.5 per cent of the verses Matthew shares with Luke and not Mark, against 10.9 per cent of those it shares with Mark. So the procedure does not only reach Matthew's own material. It reaches into the material for which the lost source was posited. That does not remove the source. It puts an existing book beside it, to be tested for the same work.
 
 ---
 
@@ -464,6 +490,8 @@ XII.4. So the miracles stay mostly unreached. The procedure has four rows in cha
 
 ## XIII. The procedure
 
+XIII.0. The labels. The research record and the ledger name the rules by letter; this paper has mostly used the verbs. P = the two parameters (P1 the speaker given a past; P2 the life told in a named land). M = the moves on who bears a relation: M1 KEEP; M2 EXCHANGE the patient, the adversary's treatment falling on the teacher or on hearers; M3 the costly act of the speaker or the Lamb done by the adversary, or refused; M4 the rider's charge taken by the teacher; M5 OPPOSE commerce, image, wealth; M6 the faithful's trial to the teacher and the seer's part to followers; M7, new in this draft, the speaker's reproofs and exposures said of the adversaries in the land. F = the forms: F1 STAGE, F2 ENACT, F3 LIKEN, F4 FORETELL, F5 HAPPEN. C = composition: the frame; one stretch from many places; one place divided; the furniture let go.
+
 XIII.1. In order.
 
 1. Hold Revelation open. Its unit is the relation, with the bearer it has at that place.
@@ -481,13 +509,31 @@ XIII.1. In order.
 | a rider's charge, given in the passive | the teacher says it of himself, or it is turned on him |
 | commerce, an image, wealth trusted in | the teacher opposes it, keeping its terms |
 | the faithful's part | the trial goes to the teacher; the seeing and falling to followers |
+| the speaker's reproof of an assembly, or exposure of a false claimant | the teacher says it of the adversaries in the land |
 
 7. Give it a form: stage two colliding sayings as a likeness; enact a title as an act or a list; liken a scene of the end to the kingdom; foretell a sign; or let it happen.
 8. Let the vision's furniture go (horses, bowls, trumpets, living creatures, counted thirds) and keep the rare word.
 
-XIII.2. Three of the six moves are one consequence of P1. The adversary's sufferings, the Lamb's costly acts and the faithful's trial all need somewhere to land once there is a person with a past, and they land on that person.
+XIII.2. Three of the seven moves are one consequence of P1. The adversary's sufferings, the Lamb's costly acts and the faithful's trial all need somewhere to land once there is a person with a past, and they land on that person.
 
-XIII.3. The whole ledger, drawn. Each line is a row: its place in Revelation above, its place in Matthew below, coloured by the kind of move. Nothing in it runs in order.
+XIII.3. Why the frame is where it is. The birth and the tomb are the two densest regions of the map, and there is a reason beyond density. A speaker who is and is to come has no beginning and no end. A person with a past has both. P1 cannot be carried out without a birth and a death, and those are the two things a vision of a living speaker has least reason to tell of that speaker. The source tells them of others: a child born in chapter 12, witnesses killed and raised in 11, an adversary shut in and loosed in 20. The frame is what P1 requires, taken from where the source has it.
+
+XIII.4. What the moves change is the kind of thing the material is.
+
+| In Revelation | In Matthew |
+|---|---|
+| the speaker's utterance | the teacher's saying |
+| the assembly's trial | the teacher's experience |
+| the seer's encounter | the followers' experience |
+| the city's architecture | instruction |
+| a rider's charge | something the teacher says of himself or suffers |
+| the divine name | the order of a story |
+| the adversary's judgment | the teacher's passion |
+| a scene of the end | a parable |
+
+What a reader of Matthew sorts into biography, ethics, teaching about the end, parable and passion are, on this procedure, different realizations of material that Revelation holds in one vision. This also bears on the failed tests. A city turned into commands and a custody turned into a burial have no reason to leave the same kind of trace, and a search for one uniform kind of dependence across the book found none.
+
+XIII.5. The whole ledger, drawn. Each line is a row: its place in Revelation above, its place in Matthew below, coloured by the kind of move. Nothing in it runs in order.
 
 ![Figure 2. From Revelation to Matthew: every row of the ledger.](REV-TO-MATTHEW-MAP.svg)
 
@@ -495,17 +541,21 @@ XIII.3. The whole ledger, drawn. Each line is a row: its place in Revelation abo
 
 ## XIV. What is not written, and what failed
 
-XIV.1. Reach. The ledger has 78 rows. They reach 166 of Matthew's 1,067 verses, 15.6 per cent (52 rows and 11 per cent at the first draft). A count made with no reader (pairings that Revelation and Matthew share and no book outside the Gospels has: 287 of them) adds further verses; with it the first draft stood at 21 per cent, and the union has not been recounted for this one. A verse reached is a verse with a relation in it. It is not a verse whose wording the procedure produces.
+XIV.1. Reach. The ledger has 80 rows. They reach 168 of Matthew's 1,067 verses, 15.7 per cent (52 rows and 11 per cent at the first draft). A count made with no reader (pairings that Revelation and Matthew share and no book outside the Gospels has: 287 of them) adds further verses; with it the first draft stood at 21 per cent, and the union has not been recounted for this one. A verse reached is a verse with a relation in it. It is not a verse whose wording the procedure produces.
+
+XIV.1a. Reach by kind of material. All of Matthew is the wrong denominator for a procedure that leaves Mark in place. Matthew's verses were sorted by machine, and the sorting is a proxy and not a synopsis: a verse counts as Mark's if it shares three content words (or half its content words, at least two) with some verse of Mark; failing that, as shared with Luke on the same test; failing that, as Matthew's own. That gives 458, 184 and 425 verses. The ledger reaches 10.9 per cent of the first, 18.5 per cent of the second and 19.8 per cent of the third. The order was predicted before the count. Two denominators a reviewer asked for are not yet built: Matthew's changes inside passages shared with Mark, and the scenes that carry the book's structure. Both need a synopsis in the seat.
 
 XIV.2. Unreached. Chapters 1 and 15 have no row. Chapters 3, 6, 9, 11 and 18 have one, and 7, 8, 12, 14, 16, 17 and 21 have two. The genealogy, the body of the Sermon, the healings, the sabbath controversies and most of the narrative shared with Mark are outside. The procedure says "for each stretch of the life" and does not say what the stretches are or their order, beyond the frame. The narrative Matthew shares with Mark is outside it. Whatever account is given of Matthew, Mark is in it.
 
 XIV.3. Unexplained within reach. Where a relation fits two conditions, the procedure does not say which governs. The seat is kept at 19:28 and refused at 20:23.
 
-XIV.4. Written down before counting, for this draft. Eighteen lines for the land, the childhood, the teaching and the adversaries. Thirteen held as written. Three failed as written: the children killed (placed at Matthew 2, found at 23:37); blood poured out on the earth (the Revelation verse and an Acts verse were not as stated); Satan cast out (said to be absent from Luke, and it is there). One was too loose to fail and one could not be counted. Ten of the eighteen were expected to be Matthew's alone among the Gospels; seven are, and three are shared with John or Luke. The prediction on the miracles failed (XII.2).
+XIV.4. Written down before counting, for this draft. Eighteen lines for the land, the childhood, the teaching and the adversaries. Thirteen held as written. Three failed as written: the children killed (placed at Matthew 2, found at 23:37); blood poured out on the earth (the Revelation verse and an Acts verse were not as stated); Satan cast out (said to be absent from Luke, and it is there). One was too loose to fail and one could not be counted. Ten of the eighteen were expected to be Matthew's alone among the Gospels; seven are, and three are shared with John or Luke. The prediction on the miracles failed (XII.2). For the third draft, eight more: three held (seeing God; mourning ended, with Isaiah nearer; reach highest in Matthew's own material), one failed (the Sermon was predicted to share more of the vocabulary of Revelation 21–22 than four other stretches of Matthew, and ranks fourth of the five), one was predicted to be common stock and is, and three were expectations about the Septuagint, each confirmed against the rows of II.5 and III.1.
+
+XIV.5a. Philo as a second source: the first test. An instrument was declared and sealed before it was built: pairs of rare words in a verse of Matthew that stand together in one section of Philo and in no verse of the Septuagint, with Josephus as the control. Three predictions. That Philo's excess over Josephus would be greater in Matthew's own and shared-with-Luke material than in its Markan material: failed (37 and 29 per cent against 35). That Mark would not show the same excess: failed; Mark shows it (ratio 1.30, against 1.22 for Matthew and 1.49 for Luke). By the terms of the seal that empties the rest: the instrument measures how far Philo's Greek overlaps any Gospel's, and says nothing of Matthew. Five places were also named from memory. Found as named: the oath (V.3a); "the one who sees God", Philo's standing gloss of Israel, in 54 sections and in no verse of the Septuagint, beside Matthew 5:8; εἰρηνοποιός, said of God once in Philo (Spec. 2.192), beside "the peacemakers shall be called sons of God", the noun's one place in the New Testament. Not as named: treasure with heaven is the Septuagint's (Deut 28:12); desire with adultery is in Philo six times and is a looser thing than Matthew 5:28. So Philo closes one gap by a shared construction and stands beside two blessings. The unreached Sermon is otherwise where it was.
 
 XIV.5. Failed earlier, under predictions sealed beforehand. Revelation's order as Matthew's order: three ways (by section, by rotation at the centre, by runs in either direction). One mapping of seats over the whole book: the seats kept; the three seats that live in "I" and "you"; a general extraction of every relation, five predictions of five. A law for each Gospel by the frequency of its operations. The assignment of the four riders' strands to the four Gospels as first counted (it came within chance, and came out as Irenaeus has it only under a rule made afterwards). These are in the research record with their numbers.
 
-XIV.6. Other accounts. The two-source hypothesis, the Farrer–Goulder hypothesis and the two-Gospel hypothesis each say how Matthew stands to Mark and Luke. None places Revelation among Matthew's sources, and this paper does not displace any of them on the ground they cover. It adds a relation they do not consider and shows it is workable as a procedure. Sim (1996) shows that Matthew holds the outlook of apocalyptic eschatology throughout, and compares it with Revelation among others; that is a shared outlook and makes no claim of source. Goulder is the nearest in kind: a writer with one source, expanding it by stated habits of composition. His source was Mark and his habits were midrash and the lectionary. The procedure here has a different source and reaches different parts of the book; the two could both be true of one author.
+XIV.6. Other accounts. The two-source hypothesis, the Farrer–Goulder hypothesis and the two-Gospel hypothesis each say how Matthew stands to Mark and Luke. None places Revelation among Matthew's sources, and this paper does not displace any of them on the ground they cover. It adds a relation they do not consider and shows it is workable as a procedure. Sim (1996) shows that Matthew holds the outlook of apocalyptic eschatology throughout, and compares it with Revelation among others; that is a shared outlook and makes no claim of source. Goulder is the nearest in kind: a writer with one source, expanding it by stated habits of composition. His source was Mark and his habits were midrash and the lectionary. The procedure here has a different source and reaches different parts of the book. Whether the two can be run together on one text, and what each then has left to do, has not been tried and is a question of substance.
 
 XIV.7. Direction. Stated once more and left. The rows are relations between two texts. Section VII shows that a stated rule produces Matthew's parable from Revelation's two verses and from nothing less. No row shows that the rule was run in the first century, or in which direction.
 
@@ -520,7 +570,7 @@ Verified for this draft by bibliographic record:
 - Goulder, M. D. *Midrash and Lection in Matthew.* London: SPCK, 1974.
 - Gurtner, Daniel M. "Interpreting Apocalyptic Symbolism in the Gospel of Matthew." *Bulletin for Biblical Research* 22.4 (2012): 525–546.
 - Mathewson, David. "The Apocalyptic Vision of Jesus According to the Gospel of Matthew: Reading Matthew 3:16–4:11 Intertextually." *Tyndale Bulletin* 62.1 (2011): 89–108.
-- Vos, Louis A. *The Synoptic Traditions in the Apocalypse.* Kampen: Kok, 1965. (Known here through Bauckham 1977, who calls it the only systematic treatment; not read.)
+- Vos, Louis A. *The Synoptic Traditions in the Apocalypse.* Kampen: Kok, 1965. A dissertation of the Vrije Universiteit, Amsterdam, 245 pages. (Known here through Bauckham 1977, who calls it the only systematic treatment. No open copy was found; not read.)
 - Wenkel, David H. "The Gospel of Matthew and Apocalyptic Discourse." *The Expository Times* 132 (2020): 259–270.
 
 - Gundry, Robert H. *Matthew: A Commentary on His Literary and Theological Art.* Grand Rapids: Eerdmans, 1982. (Consulted through reviews: France; Carson; Moo.)
@@ -530,4 +580,6 @@ The programme's own: "Revelation First: Literary Genealogy and the Missing Ances
 
 Owed and not read: Davies and Allison, *Matthew* (ICC, 1988–1997); Aune, *Revelation* (WBC, 1997–1998). The commentaries are behind a paywall and are declared, not pursued; nothing above depends on them. Of the works above, Bauckham 1977 and 1983, Gurtner and Wenkel were consulted by abstract and first page only; Goulder by reviews and the publisher's description; Mathewson's article is open and was consulted by abstract.
 
-Data: The Unfolding Map v0.47, sections 2AG–2AS; `rebuild/unfolding-map/map/rev-matthew-ledger.json` (the ledger and its checking script); `rebuild/unfolding-map/tm/` (the pack and all run outputs, verbatim).
+The three works this paper most needs in full are Vos and Bauckham's two articles. None has been read in full. Section I.6 and VII.8 are provisional until they are.
+
+Data: The Unfolding Map v0.48, sections 2AG–2AT; `rebuild/unfolding-map/map/rev-matthew-ledger.json` (the ledger and its checking script); `rebuild/unfolding-map/tm/` (the pack and all run outputs, verbatim).
