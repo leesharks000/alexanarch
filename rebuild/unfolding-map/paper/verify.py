@@ -44,5 +44,5 @@ if '--render' in sys.argv and not bad:
     app=app.replace('{{A}}',passage('round1/a-sonnet.md','PART 2. THE PASSAGE')).replace('{{F}}',passage('round2/f-sonnet.md','# PART 2 — THE PASSAGE')).replace('{{G}}',passage('round2/g-opus.md','# PASSAGE')).replace('{{M}}',m20)
     i=out.index('## Works cited'); out=out[:i]+app+'\n---\n\n'+out[i:]
     assert '⟦' not in out and '⟧' not in out
-    open('/mnt/user-data/outputs/HOW-TO-WRITE-MATTHEW-FROM-REVELATION-draft-v0.6.md','w',encoding='utf-8').write(out)
+    open('/mnt/user-data/outputs/HOW-TO-WRITE-MATTHEW-FROM-REVELATION-draft-v0.7.md','w',encoding='utf-8').write(out)
     print('rendered',len(out.split()),'words')
