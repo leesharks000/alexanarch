@@ -6,7 +6,7 @@ for r in Lr:
     if 'relational' not in r.get('standing',''): nonrel|=mk
 print('rows',len(Lr),'reach',len(allv),'of',len(MT),round(100*len(allv)/len(MT),1),'| without relational rows',len(nonrel),'| ch11-12',len([k for k in allv if k[0] in(11,12)]))
 print(collections.Counter(P.get('%d:%d'%k) for k in allv))
-for u in list(U): U[u]=[x for x in U[u] if x[3] not in ('2:9','26:58','20:25-28')]
+for u in list(U): U[u]=[x for x in U[u] if x[3] not in ('2:9','26:58','20:25-28','11:2-3','11:15','11:27','11:28-29','12:29','11:20-21')]
 import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
 ink='#1f2530'; mut='#5b6470'; blue='#257de0'; grey='#9aa3ad'
 fig,(a,b)=plt.subplots(1,2,figsize=(12.5,6.8),dpi=150,gridspec_kw={'width_ratios':[1.05,1]}); fig.patch.set_facecolor('white')
