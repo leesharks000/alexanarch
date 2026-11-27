@@ -80,6 +80,12 @@ H=[
 ("21:4","5:5",[],["πένθος"],["πενθέω"],"mourning shall be no more; every tear wiped away","those who mourn shall be comforted","KEEP, as a beatitude","teaching","read; Isaiah 61:2 is nearer (K3). Verse 5:5 in Tischendorf's numbering, 5:4 in Nestle's"),
 # --- added 27 November 2026 (2AV): located through Philo
 ("3:17-18","6:19-23",["ὀφθαλμός"],["πλούσιος","τυφλός"],["θησαυρός"],"you say, I am rich; you are poor and blind; buy from me, to be rich, and salve for your eyes, to see","store treasure in heaven; the lamp of the body is the eye, sound or bad","KEEP the join of wealth and sight, as two sayings set together","teaching","read; the join is Philo's blind wealth and seeing wealth (17 sections; Rev 3:17 its one New Testament place); in Luke the two sayings stand a chapter apart (2AV)"),
+# --- added 27 November 2026 (2AW): the third parameter, P3, at the places #1758 fixed. Sealed section N.
+("19:12-13","1:21",["ὄνομα","καλέω"],[],["σώζω"],"a name written that no one knows but himself; his name is called the Logos of God","you shall call his name Jesus, for he shall save","P3: the name the source withholds or writes is given with its gloss","frame","sealed N5 held: Philo, Mut. 121, Ἰησοῦς δὲ σωτηρία κυρίου; three-way with Sirach 46:1"),
+("21:3","1:23",["θεός","μετά"],[],[],"God himself shall be with them","they shall call his name Emmanuel: with us, God","KEEP, as a name interpreted","frame","sealed N6: found; the wording is Isaiah's (7:14; 8:8); Philo, Mut. 265, has 'the Lord in us' (Num 14:9)"),
+("21:3","28:20",["μετά","εἰμί"],[],[],"God himself shall be with them","I am with you all the days","KEEP, in the first person","frame","read; closes the frame opened at 1:23"),
+("2:17","4:4",[],["μάννα"],["ἄρτος","ῥῆμα"],"to the conqueror I will give of the hidden manna","not by bread alone, but by every word that goes out through the mouth of God","P3: the manna told by the verse Philo reads it with, at the trial","land","sealed N1 held, three-way: Philo, Leg. 3.174-176, reads the manna by Deut 8:3 in full; Luke 4:4 as seated has the first half only"),
+("1:16; 2:12","10:35",[],["ῥομφαία","δίστομος"],["διχάζω"],"the sharp two-edged sword from the mouth","I came to divide in two a person against his father","P3: the sword told by what Philo's cutter does","adversaries","sealed N2 held: διχάζω in the New Testament here only; Philo, Her. 225, the soul threefold, each part cut in two (δίχα); the three pairs are Micah 7:6"),
 ]
 rows=[]; bad=[]
 for rv,mt,both,ro,mo,rr,mr,move,strand,stand in H:

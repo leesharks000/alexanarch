@@ -13,7 +13,7 @@ for ab,fn,pre in (('Exod','tlg002-Ἔξοδος','Ἔξοδος'),('Num','tlg004
 PHD='/home/claude/repos/alexanarch/data/corpora/philo/text/'
 V['Philo Spec']=open(PHD+'tlg024-De_specialibus_legibus_lib_i_iv_.txt',encoding='utf-8').read()
 V['Philo Decal']=open(PHD+'tlg023-De_decalogo.txt',encoding='utf-8').read()
-for ab,fn in (('Somn','tlg019-De_somniis_lib_i_ii_'),('Fug','tlg017-De_fuga_et_inventione'),('Cher','tlg003-De_Cherubim'),('Plant','tlg010-De_plantatione'),('Her','tlg015-Quis_rerum_divinarum_heres_sit'),('Leg','tlg002-Legum_allegoriarum_libri_i_iii'),('Agr','tlg009-De_agricultura')):
+for ab,fn in (('Somn','tlg019-De_somniis_lib_i_ii_'),('Fug','tlg017-De_fuga_et_inventione'),('Cher','tlg003-De_Cherubim'),('Plant','tlg010-De_plantatione'),('Her','tlg015-Quis_rerum_divinarum_heres_sit'),('Leg','tlg002-Legum_allegoriarum_libri_i_iii'),('Agr','tlg009-De_agricultura'),('Mut','tlg018-De_mutatione_nominum'),('Conf','tlg013-De_confusione_linguarum')):
     V['Philo '+ab]=open(PHD+fn+'.txt',encoding='utf-8').read()
 def norm(s,loose=False):
     s=U.normalize('NFD',s)
@@ -44,5 +44,5 @@ if '--render' in sys.argv and not bad:
     app=app.replace('{{A}}',passage('round1/a-sonnet.md','PART 2. THE PASSAGE')).replace('{{F}}',passage('round2/f-sonnet.md','# PART 2 — THE PASSAGE')).replace('{{G}}',passage('round2/g-opus.md','# PASSAGE')).replace('{{M}}',m20)
     i=out.index('## Works cited'); out=out[:i]+app+'\n---\n\n'+out[i:]
     assert '⟦' not in out and '⟧' not in out
-    open('/mnt/user-data/outputs/HOW-TO-WRITE-MATTHEW-FROM-REVELATION-draft-v0.4.md','w',encoding='utf-8').write(out)
+    open('/mnt/user-data/outputs/HOW-TO-WRITE-MATTHEW-FROM-REVELATION-draft-v0.5.md','w',encoding='utf-8').write(out)
     print('rendered',len(out.split()),'words')
