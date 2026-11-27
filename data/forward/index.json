@@ -2,8 +2,8 @@
  "name": "Alexanarch forward pointers",
  "scope": "developing relations carried as metadata: a piece that stands as a section of a record, develops it, or is to be consolidated into a framework hologram's next build; the deposited bytes and AXN are unchanged",
  "rule": "every deposit has a sidecar at /data/forward/<deposit_number>.json; this index lists those holding entries and every routed pair; a framework hologram is the router for its line",
- "deposits_with_entries": 1,
- "entries": 1,
+ "deposits_with_entries": 2,
+ "entries": 2,
  "deposits": [
   {
    "deposit_number": 1754,
@@ -11,6 +11,13 @@
    "title": "Socrates as Orthonym — The Framework Hologram: the Map and the Holographic Kernel (EA-HK-ORTHONYM-01 v1.3)",
    "count": 1,
    "sidecar": "https://www.alexanarch.org/data/forward/1754.json"
+  },
+  {
+   "deposit_number": 1755,
+   "axn": "AXN:0C5F.MPAI.🔅🪸🪐🤲🪄💙",
+   "title": "And the Last Shall Be First: Revelation First — The Framework Hologram (EA-HK-REVFIRST-01 v1.5)",
+   "count": 1,
+   "sidecar": "https://www.alexanarch.org/data/forward/1755.json"
   }
  ],
  "routes": [
@@ -22,6 +29,15 @@
    "to_pending": null,
    "to_title": "The Production of Readers: The Public Line, the Held Line and the Draft Position in the Socratic–Peripatetic Corpus",
    "kind": "stands as a section"
+  },
+  {
+   "router": 1755,
+   "from_deposit": 1755,
+   "from_locus": "map §7.17, the unfoldings; unfoldings in 00-kernel.yaml",
+   "to_deposit": 1813,
+   "to_pending": null,
+   "to_title": "Revelation to the New Testament: The Relations Hologram (EA-HK-REVFIRST-02)",
+   "kind": "companion hologram"
   }
  ]
 }
