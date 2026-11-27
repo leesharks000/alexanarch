@@ -78,6 +78,8 @@ H=[
 # --- added 27 November 2026 (2AT)
 ("22:4","5:8",["ὁράω"],["πρόσωπον"],["θεός"],"they shall see his face","the pure in heart shall see God","KEEP, as a beatitude: what the city's people do is promised","teaching","counted: ὁράω future third plural with God or the face in the verse at Matt 5:8 and Rev 22:4 only (K1 held; Acts 2:17 a false hit)"),
 ("21:4","5:5",[],["πένθος"],["πενθέω"],"mourning shall be no more; every tear wiped away","those who mourn shall be comforted","KEEP, as a beatitude","teaching","read; Isaiah 61:2 is nearer (K3). Verse 5:5 in Tischendorf's numbering, 5:4 in Nestle's"),
+# --- added 27 November 2026 (2AV): located through Philo
+("3:17-18","6:19-23",["ὀφθαλμός"],["πλούσιος","τυφλός"],["θησαυρός"],"you say, I am rich; you are poor and blind; buy from me, to be rich, and salve for your eyes, to see","store treasure in heaven; the lamp of the body is the eye, sound or bad","KEEP the join of wealth and sight, as two sayings set together","teaching","read; the join is Philo's blind wealth and seeing wealth (17 sections; Rev 3:17 its one New Testament place); in Luke the two sayings stand a chapter apart (2AV)"),
 ]
 rows=[]; bad=[]
 for rv,mt,both,ro,mo,rr,mr,move,strand,stand in H:
