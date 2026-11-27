@@ -24,5 +24,5 @@ print(n,'quotations;',bad,'not exact')
 if '--render' in sys.argv and not bad:
     out=re.sub(r'⟦[^|⟧]+\|([^⟧]+)⟧',r'\1',src)
     assert '⟦' not in out and '⟧' not in out
-    open('/mnt/user-data/outputs/HOW-TO-WRITE-MATTHEW-FROM-REVELATION-draft-v0.1.md','w',encoding='utf-8').write(out)
+    open('/mnt/user-data/outputs/HOW-TO-WRITE-MATTHEW-FROM-REVELATION-draft-v0.2.md','w',encoding='utf-8').write(out)
     print('rendered',len(out.split()),'words')

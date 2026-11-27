@@ -30,32 +30,32 @@ I.2. The thief.
 
 | | |
 |---|---|
-| Revelation 3:3 | ἐὰν οὖν μὴ γρηγορήσῃς, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ |
-| Matthew 24:43 | εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν |
+| Revelation 3:3 | ⟦Rev 3:3|ἐὰν οὖν μὴ γρηγορήσῃς, ἥξω ὡς κλέπτης, καὶ οὐ μὴ γνῷς ποίαν ὥραν ἥξω ἐπὶ σέ⟧ |
+| Matthew 24:43 | ⟦Matt 24:43|εἰ ᾔδει ὁ οἰκοδεσπότης ποίᾳ φυλακῇ ὁ κλέπτης ἔρχεται, ἐγρηγόρησεν ἂν⟧ |
 | Move | KEEP. The watching, the thief and the unknown hour cross. The first person becomes a householder in a likeness |
 
 I.3. The confession.
 
 | | |
 |---|---|
-| Revelation 3:5 | ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ Πατρός μου |
-| Matthew 10:32 | ὁμολογήσω κἀγὼ ἐν αὐτῷ ἔμπροσθεν τοῦ Πατρός μου |
+| Revelation 3:5 | ⟦Rev 3:5|ὁμολογήσω τὸ ὄνομα αὐτοῦ ἐνώπιον τοῦ Πατρός μου⟧ |
+| Matthew 10:32 | ⟦Matt 10:32|ὁμολογήσω κἀγὼ ἐν αὐτῷ ἔμπροσθεν τοῦ Πατρός μου⟧ |
 | Move | KEEP. The same verb in the same person before the same Father. The condition changes from conquering to confessing |
 
 I.4. The recompense.
 
 | | |
 |---|---|
-| Revelation 22:12 | ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ |
-| Matthew 16:27 | ἀποδώσει ἑκάστῳ κατὰ τὴν πρᾶξιν αὐτοῦ |
+| Revelation 22:12 | ⟦Rev 22:12|ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ⟧ |
+| Matthew 16:27 | ⟦Matt 16:27|ἀποδώσει ἑκάστῳ κατὰ τὴν πρᾶξιν αὐτοῦ⟧ |
 | Move | KEEP, the first person retold as the Son of Man's coming. Both stand on Psalm 61:13 in the Septuagint, as Romans 2:6 does |
 
 I.5. The sword.
 
 | | |
 |---|---|
-| Revelation 13:10 | εἴ τις ἐν μαχαίρῃ ἀποκτενεῖ, δεῖ αὐτὸν ἐν μαχαίρῃ ἀποκτανθῆναι |
-| Matthew 26:52 | πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρῃ ἀπολοῦνται |
+| Revelation 13:10 | ⟦Rev 13:10|εἴ τις ἐν μαχαίρῃ ἀποκτενεῖ, δεῖ αὐτὸν ἐν μαχαίρῃ ἀποκτανθῆναι⟧ |
+| Matthew 26:52 | ⟦Matt 26:52|πάντες γὰρ οἱ λαβόντες μάχαιραν ἐν μαχαίρῃ ἀπολοῦνται⟧ |
 | Move | KEEP, as a saying at the arrest. These are the only two verses of the New Testament in which the sword stands twice |
 
 I.6. The other account of the same thing. Bauckham (1977; again 1983) set the thief of Revelation 3:3 and 16:15 and the knocking of 3:20 beside the Synoptic parables of the parousia and read the direction as the received account does: parables of Jesus, used in early exhortation until the story fell away and the saying remained. His word for it is deparabolization. The observation is the same as I.2. The operation is the inverse. Section V returns to this, because there the story can be shown arising from the saying under a stated rule, and the falling away cannot be shown in the same manner.
@@ -70,11 +70,11 @@ II.1. A life needs a birth. Revelation has one, at its centre.
 
 | | |
 |---|---|
-| Revelation 12:4 | ὁ δράκων ἕστηκεν ἐνώπιον τῆς γυναικὸς τῆς μελλούσης τεκεῖν, ἵνα ὅταν τέκῃ τὸ τέκνον αὐτῆς καταφάγῃ |
-| Revelation 12:5 | ὃς μέλλει ποιμαίνειν πάντα τὰ ἔθνη |
-| Revelation 12:6 | ἡ γυνὴ ἔφυγεν εἰς τὴν ἔρημον |
-| Matthew 2:13 | φεῦγε εἰς Αἴγυπτον … μέλλει γὰρ Ἡρῴδης ζητεῖν τὸ παιδίον τοῦ ἀπολέσαι αὐτό |
-| Matthew 2:6 | ἡγούμενος, ὅστις ποιμανεῖ τὸν λαόν μου τὸν Ἰσραήλ |
+| Revelation 12:4 | ⟦Rev 12:4|ὁ δράκων ἕστηκεν ἐνώπιον τῆς γυναικὸς τῆς μελλούσης τεκεῖν, ἵνα ὅταν τέκῃ τὸ τέκνον αὐτῆς καταφάγῃ⟧ |
+| Revelation 12:5 | ⟦Rev 12:5|ὃς μέλλει ποιμαίνειν πάντα τὰ ἔθνη⟧ |
+| Revelation 12:6 | ⟦Rev 12:6|ἡ γυνὴ ἔφυγεν εἰς τὴν ἔρημον⟧ |
+| Matthew 2:13 | ⟦Matt 2:13|φεῦγε εἰς Αἴγυπτον⟧ … ⟦Matt 2:13|μέλλει γὰρ Ἡρῴδης ζητεῖν τὸ παιδίον τοῦ ἀπολέσαι αὐτό⟧ |
+| Matthew 2:6 | ⟦Matt 2:6|ἡγούμενος, ὅστις ποιμανεῖ τὸν λαόν μου τὸν Ἰσραήλ⟧ |
 
 II.2. The second operation, P2: the host is a told life in a named land, anchored to scripture. Three things happen under it here. The adversary is named from the land: the one who stands waiting to destroy the child at its birth is a king, Herod. The flight keeps its verb and gets a place on the map. And the child "who is to shepherd" is said in scripture's words and cited as written, since the phrase was scripture's before it was Revelation's.
 
@@ -92,10 +92,10 @@ III.2. The face, the falling, the hand, the word.
 
 | Revelation 1:16–17 | Matthew 17:2, 6–7 |
 |---|---|
-| ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει | ἔλαμψεν τὸ πρόσωπον αὐτοῦ ὡς ὁ ἥλιος |
-| ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός | ἔπεσαν ἐπὶ πρόσωπον αὐτῶν καὶ ἐφοβήθησαν σφόδρα |
-| ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ’ ἐμὲ | ἁψάμενος αὐτῶν |
-| Μὴ φοβοῦ | μὴ φοβεῖσθε |
+| ⟦Rev 1:16|ἡ ὄψις αὐτοῦ ὡς ὁ ἥλιος φαίνει⟧ | ⟦Matt 17:2|ἔλαμψεν τὸ πρόσωπον αὐτοῦ ὡς ὁ ἥλιος⟧ |
+| ⟦Rev 1:17|ἔπεσα πρὸς τοὺς πόδας αὐτοῦ ὡς νεκρός⟧ | ⟦Matt 17:6|ἔπεσαν ἐπὶ πρόσωπον αὐτῶν καὶ ἐφοβήθησαν σφόδρα⟧ |
+| ⟦Rev 1:17|ἔθηκεν τὴν δεξιὰν αὐτοῦ ἐπ’ ἐμὲ⟧ | ⟦Matt 17:7|ἁψάμενος αὐτῶν⟧ |
+| ⟦Rev 1:17|Μὴ φοβοῦ⟧ | ⟦Matt 17:7|μὴ φοβεῖσθε⟧ |
 
 Four relations in one order. The seer's part is given to three followers: "I fell" becomes "they fell", the hand laid on one becomes a touch on several, the singular imperative becomes plural. The falling, the touch and the word are Matthew's; Mark's transfiguration has none of the three.
 
@@ -103,9 +103,9 @@ III.3. The same four are used again at the tomb, divided.
 
 | Revelation | Matthew 28 |
 |---|---|
-| σεισμὸς ἐγένετο μέγας | σεισμὸς ἐγένετο μέγας |
-| ὡς νεκρός | ἐγενήθησαν ὡς νεκροί |
-| Μὴ φοβοῦ | Μὴ φοβεῖσθε ὑμεῖς |
+| ⟦Rev 16:18|σεισμὸς ἐγένετο μέγας⟧ | ⟦Matt 28:2|σεισμὸς ἐγένετο μέγας⟧ |
+| ⟦Rev 1:17|ὡς νεκρός⟧ | ⟦Matt 28:4|ἐγενήθησαν ὡς νεκροί⟧ |
+| ⟦Rev 1:17|Μὴ φοβοῦ⟧ | ⟦Matt 28:5|Μὴ φοβεῖσθε ὑμεῖς⟧ |
 
 The earthquake of the seventh bowl happens at a tomb in the same three words. The seer's falling "as dead" goes to the guards, and "fear not" to the women. One place of the source, Revelation 1:17, is drawn on twice in Matthew, for a mountain and for a tomb, and at the tomb its two halves go to opposite parties.
 
@@ -113,8 +113,8 @@ III.4. Foretold.
 
 | | |
 |---|---|
-| Revelation 6:12–13 | ὁ ἥλιος ἐγένετο μέλας … ἡ σελήνη ὅλη ἐγένετο ὡς αἷμα … οἱ ἀστέρες τοῦ οὐρανοῦ ἔπεσαν εἰς τὴν γῆν |
-| Matthew 24:29 | ὁ ἥλιος σκοτισθήσεται, καὶ ἡ σελήνη οὐ δώσει τὸ φέγγος αὐτῆς, καὶ οἱ ἀστέρες πεσοῦνται ἀπὸ τοῦ οὐρανοῦ |
+| Revelation 6:12–13 | ⟦Rev 6:12|ὁ ἥλιος ἐγένετο μέλας⟧ … ⟦Rev 6:12|ἡ σελήνη ὅλη ἐγένετο ὡς αἷμα⟧ … ⟦Rev 6:13|οἱ ἀστέρες τοῦ οὐρανοῦ ἔπεσαν εἰς τὴν γῆν⟧ |
+| Matthew 24:29 | ⟦Matt 24:29|ὁ ἥλιος σκοτισθήσεται, καὶ ἡ σελήνη οὐ δώσει τὸ φέγγος αὐτῆς, καὶ οἱ ἀστέρες πεσοῦνται ἀπὸ τοῦ οὐρανοῦ⟧ |
 | Move | FORETELL: the seer's aorists become the teacher's futures. Both stand on Isaiah 13:10 and 34:4, and Mark 13:24–25 has the saying |
 
 III.5. Gurtner (2012) asks how apocalyptic symbols are to be read once they stand in a *bios* and not in an apocalypse. P2 is that question put as an instruction. Mathewson (2011) reads Matthew 3:16–4:11 as a seer's visionary experience told in the third person. The ledger has two rows there from the letters (the trial by the devil; who bows to whom), and his reading and these rows describe the same stretch from two sides.
@@ -129,25 +129,25 @@ IV.2. The speaker's.
 
 | | |
 |---|---|
-| Revelation 3:17–18 | Πλούσιός εἰμι καὶ πεπλούτηκα … πτωχὸς … συμβουλεύω σοι ἀγοράσαι παρ’ ἐμοῦ χρυσίον πεπυρωμένον ἐκ πυρὸς ἵνα πλουτήσῃς |
-| Matthew 19:21 | πώλησόν σου τὰ ὑπάρχοντα καὶ δὸς πτωχοῖς, καὶ ἕξεις θησαυρὸν ἐν οὐρανοῖς |
+| Revelation 3:17–18 | ⟦Rev 3:17|Πλούσιός εἰμι καὶ πεπλούτηκα⟧ … ⟦Rev 3:17|πτωχὸς⟧ … ⟦Rev 3:18|συμβουλεύω σοι ἀγοράσαι παρ’ ἐμοῦ χρυσίον πεπυρωμένον ἐκ πυρὸς ἵνα πλουτήσῃς⟧ |
+| Matthew 19:21 | ⟦Matt 19:21|πώλησόν σου τὰ ὑπάρχοντα καὶ δὸς πτωχοῖς, καὶ ἕξεις θησαυρὸν ἐν οὐρανοῖς⟧ |
 | Move | OPPOSE the act: buy becomes sell. The end is kept: to be rich in what the speaker has |
 
 IV.3. The Lamb's.
 
 | | |
 |---|---|
-| Revelation 5:9 | ἐσφάγης καὶ ἠγόρασας τῷ Θεῷ ἐν τῷ αἵματί σου |
-| Matthew 27:6–7 | τιμὴ αἵματός ἐστιν … ἠγόρασαν ἐξ αὐτῶν τὸν ἀγρὸν τοῦ κεραμέως εἰς ταφὴν τοῖς ξένοις |
+| Revelation 5:9 | ⟦Rev 5:9|ἐσφάγης καὶ ἠγόρασας τῷ Θεῷ ἐν τῷ αἵματί σου⟧ |
+| Matthew 27:6–7 | ⟦Matt 27:6|τιμὴ αἵματός ἐστιν⟧ … ⟦Matt 27:7|ἠγόρασαν ἐξ αὐτῶν τὸν ἀγρὸν τοῦ κεραμέως εἰς ταφὴν τοῖς ξένοις⟧ |
 | Move | EXCHANGE the buyer across the sides. By the same blood the Lamb buys people of every tribe for God, and the chief priests buy a field for the burial of strangers. "Buy" stands within a verse of "blood" at these two places in the New Testament and at no other. The story is Matthew's alone |
 
 IV.4. The rider's.
 
 | | |
 |---|---|
-| Revelation 6:5–6 | ἔχων ζυγὸν ἐν τῇ χειρὶ αὐτοῦ … Χοῖνιξ σίτου δηναρίου |
-| Matthew 11:29–30 | ἄρατε τὸν ζυγόν μου ἐφ’ ὑμᾶς … ὁ γὰρ ζυγός μου χρηστὸς |
-| Matthew 20:2 | ἐκ δηναρίου τὴν ἡμέραν |
+| Revelation 6:5–6 | ⟦Rev 6:5|ἔχων ζυγὸν ἐν τῇ χειρὶ αὐτοῦ⟧ … ⟦Rev 6:6|Χοῖνιξ σίτου δηναρίου⟧ |
+| Matthew 11:29–30 | ⟦Matt 11:29|ἄρατε τὸν ζυγόν μου ἐφ’ ὑμᾶς⟧ … ⟦Matt 11:30|ὁ γὰρ ζυγός μου χρηστὸς⟧ |
+| Matthew 20:2 | ⟦Matt 20:2|ἐκ δηναρίου τὴν ἡμέραν⟧ |
 | Move | The teacher takes the rider's seat. What the rider holds, the teacher offers as his own, and the dearth becomes rest. The price of a day's grain becomes a day's wage, in the same genitive of price. ζυγός is in no other Gospel |
 
 The rider's one verse is also divided among the Gospels. The oil and the wine stand together at Revelation 6:6, 18:13 and Luke 10:34, with two denarii in the next verse, and nowhere else. Barley stands near a denarius at Revelation 6:6 and John 6:7–9, and barley is in no other book. Matthew has the coin for the day.
@@ -156,15 +156,15 @@ IV.5. The adversary's.
 
 | | |
 |---|---|
-| Revelation 13:17 | ἵνα μή τις δύνηται ἀγοράσαι ἢ πωλῆσαι εἰ μὴ ὁ ἔχων τὸ χάραγμα |
-| Matthew 21:12 | ἐξέβαλεν πάντας τοὺς πωλοῦντας καὶ ἀγοράζοντας ἐν τῷ ἱερῷ |
-| Revelation 13:15 | ὅσοι ἐὰν μὴ προσκυνήσωσιν τῇ εἰκόνι τοῦ θηρίου |
-| Matthew 22:20 | Τίνος ἡ εἰκὼν αὕτη καὶ ἡ ἐπιγραφή |
-| Revelation 18:11–12 | οἱ ἔμποροι τῆς γῆς κλαίουσιν καὶ πενθοῦσιν ἐπ’ αὐτήν, ὅτι τὸν γόμον αὐτῶν οὐδεὶς ἀγοράζει οὐκέτι … μαργαριτῶν |
-| Matthew 13:45–46 | ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας … πέπρακεν πάντα ὅσα εἶχεν καὶ ἠγόρασεν αὐτόν |
+| Revelation 13:17 | ⟦Rev 13:17|ἵνα μή τις δύνηται ἀγοράσαι ἢ πωλῆσαι εἰ μὴ ὁ ἔχων τὸ χάραγμα⟧ |
+| Matthew 21:12 | ⟦Matt 21:12|ἐξέβαλεν πάντας τοὺς πωλοῦντας καὶ ἀγοράζοντας ἐν τῷ ἱερῷ⟧ |
+| Revelation 13:15 | ⟦Rev 13:15|ὅσοι ἐὰν μὴ προσκυνήσωσιν τῇ εἰκόνι τοῦ θηρίου⟧ |
+| Matthew 22:20 | ⟦Matt 22:20|Τίνος ἡ εἰκὼν αὕτη καὶ ἡ ἐπιγραφή⟧ |
+| Revelation 18:11–12 | ⟦Rev 18:11|οἱ ἔμποροι τῆς γῆς κλαίουσιν καὶ πενθοῦσιν ἐπ’ αὐτήν, ὅτι τὸν γόμον αὐτῶν οὐδεὶς ἀγοράζει οὐκέτι⟧ … ⟦Rev 18:12|μαργαριτῶν⟧ |
+| Matthew 13:45–46 | ⟦Matt 13:45|ἐμπόρῳ ζητοῦντι καλοὺς μαργαρίτας⟧ … ⟦Matt 13:46|πέπρακεν πάντα ὅσα εἶχεν καὶ ἠγόρασεν αὐτόν⟧ |
 | Move | OPPOSE. The beast shuts out of the market all but its own; the teacher shuts the market out of the temple. The image that must be bowed to, with a mark for buying, becomes the image on a coin, and the claim is divided. The merchants weep that no one buys their pearls; a merchant sells everything and buys one. ἔμπορος stands within a verse of a pearl at these places only |
 
-IV.6. One stretch of Matthew, 19:16–20:28, now has four places of the source in it: the rich one who must trade (Revelation 3:17–18); the seat given, δώσω αὐτῷ καθίσαι μετ’ ἐμοῦ ἐν τῷ θρόνῳ μου, kept at ἐπὶ δώδεκα θρόνους and turned at τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων οὐκ ἔστιν ἐμὸν τοῦτο δοῦναι, the only other place where "give" governs "to sit"; the rider's coin; and, between them, the story of the next section. A writer with the source open draws on all the places that hold the relation in hand.
+IV.6. One stretch of Matthew, 19:16–20:28, now has four places of the source in it: the rich one who must trade (Revelation 3:17–18); the seat given, ⟦Rev 3:21|δώσω αὐτῷ καθίσαι μετ’ ἐμοῦ ἐν τῷ θρόνῳ μου⟧, kept at ⟦Matt 19:28|ἐπὶ δώδεκα θρόνους⟧ and turned at ⟦Matt 20:23|τὸ δὲ καθίσαι ἐκ δεξιῶν μου καὶ ἐξ εὐωνύμων οὐκ ἔστιν ἐμὸν τοῦτο δοῦναι⟧, the only other place where "give" governs "to sit"; the rider's coin; and, between them, the story of the next section. A writer with the source open draws on all the places that hold the relation in hand.
 
 ---
 
@@ -174,8 +174,8 @@ V.1. This is the one place where the procedure has been run forward and not only
 
 V.2. The seed is two verses.
 
-> Ἰδοὺ ἔρχομαι ταχύ, καὶ ὁ μισθός μου μετ’ ἐμοῦ, ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ.
-> ἐγὼ τὸ Ἄλφα καὶ τὸ Ὦ, ὁ πρῶτος καὶ ὁ ἔσχατος, ἡ ἀρχὴ καὶ τὸ τέλος.
+> ⟦Rev 22:12|Ἰδοὺ ἔρχομαι ταχύ, καὶ ὁ μισθός μου μετ’ ἐμοῦ, ἀποδοῦναι ἑκάστῳ ὡς τὸ ἔργον ἐστὶν αὐτοῦ⟧.
+> ⟦Rev 22:13|ἐγὼ τὸ Ἄλφα καὶ τὸ Ὦ, ὁ πρῶτος καὶ ὁ ἔσχατος, ἡ ἀρχὴ καὶ τὸ τέλος⟧.
 
 V.3. Under P1 and P2 the speaker cannot say this of himself in a told life. A master in a likeness must do it. Then two things the vision says side by side collide. The wage is to each as his work is. And the first and the last are one. In a vision they never meet. Told as an economy they cannot both hold: if the ends are one, the pay cannot differ by the work. The conserving solution is to stage the collision (STAGE): workers who differ as much as possible in what they did, the same paid to all, and the paying so ordered that those who did most see it. The title, which no master can bear, becomes the order of the act (ENACT).
 
@@ -185,12 +185,12 @@ V.5. What they wrote, and what Matthew has.
 
 | Forced by the pack | Matthew 20 |
 |---|---|
-| the reckoning dated at day's end, from the statute on the hireling's wage (Deut 24:15) | ὀψίας δὲ γενομένης |
-| a command to an underling to pay | Κάλεσον τοὺς ἐργάτας καὶ ἀπόδος τὸν μισθόν |
-| the title as the order of the act | ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων |
-| the objection of those who did most | Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους αὐτοὺς ἡμῖν ἐποίησας |
-| "my own", and the begrudging eye (Deut 15:9) | ἐν τοῖς ἐμοῖς; ἢ ὁ ὀφθαλμός σου πονηρός ἐστιν |
-| the closing line, chiastic, future | Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι καὶ οἱ πρῶτοι ἔσχατοι |
+| the reckoning dated at day's end, from the statute on the hireling's wage (Deut 24:15) | ⟦Matt 20:8|ὀψίας δὲ γενομένης⟧ |
+| a command to an underling to pay | ⟦Matt 20:8|Κάλεσον τοὺς ἐργάτας καὶ ἀπόδος τὸν μισθόν⟧ |
+| the title as the order of the act | ⟦Matt 20:8|ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων⟧ |
+| the objection of those who did most | ⟦Matt 20:12|Οὗτοι οἱ ἔσχατοι μίαν ὥραν ἐποίησαν, καὶ ἴσους αὐτοὺς ἡμῖν ἐποίησας⟧ |
+| "my own", and the begrudging eye (Deut 15:9) | ⟦Matt 20:15|ἐν τοῖς ἐμοῖς; ἢ ὁ ὀφθαλμός σου πονηρός ἐστιν⟧ |
+| the closing line, chiastic, future | ⟦Matt 20:16|Οὕτως ἔσονται οἱ ἔσχατοι πρῶτοι καὶ οἱ πρῶτοι ἔσχατοι⟧ |
 
 Six runs with the full pack scored thirteen of thirteen on the sealed key. In three of the six the title's second pair had been exchanged in the source, as a control; it changed nothing, because the staged collision fixes the order whatever the title's order is, and the control is recorded as having failed to discriminate. All six wrote, word for word, ἀρξάμενος ἀπὸ τῶν ἐσχάτων ἕως τῶν πρώτων. None touched any of six near neighbours (the talents, the minas, the two sons, the tenants, the unprofitable servants, the unforgiving servant).
 
@@ -220,8 +220,8 @@ VI.2. The harvest.
 
 | | |
 |---|---|
-| Revelation 14:15 | ἄλλος ἄγγελος ἐξῆλθεν … ἐξηράνθη ὁ θερισμὸς τῆς γῆς |
-| Matthew 13:39 | ὁ δὲ θερισμὸς συντέλεια αἰῶνός ἐστιν, οἱ δὲ θερισταὶ ἄγγελοί εἰσιν |
+| Revelation 14:15 | ⟦Rev 14:15|ἄλλος ἄγγελος ἐξῆλθεν⟧ … ⟦Rev 14:15|ἐξηράνθη ὁ θερισμὸς τῆς γῆς⟧ |
+| Matthew 13:39 | ⟦Matt 13:39|ὁ δὲ θερισμὸς συντέλεια αἰῶνός ἐστιν, οἱ δὲ θερισταὶ ἄγγελοί εἰσιν⟧ |
 
 "Harvest" stands in a verse with "angel" at these two places only. Matthew has the vision as a likeness and then explains the likeness by the vision's own terms.
 
@@ -229,12 +229,12 @@ VI.3. The fire.
 
 | | |
 |---|---|
-| Revelation 20:15 | ἐβλήθη εἰς τὴν λίμνην τοῦ πυρός |
-| Matthew 13:42 | βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός |
+| Revelation 20:15 | ⟦Rev 20:15|ἐβλήθη εἰς τὴν λίμνην τοῦ πυρός⟧ |
+| Matthew 13:42 | ⟦Matt 13:42|βαλοῦσιν αὐτοὺς εἰς τὴν κάμινον τοῦ πυρός⟧ |
 
 "Thrown" with "fire" in one verse is in Revelation (seven verses) and the Gospels (ten, six of them Matthew's) and in no other book. In Revelation those thrown are the beast, the devil, death and Hades, and whoever is not written. In Matthew they are the fruitless tree, the lawless within the kingdom, and "you". The patient is exchanged from the adversary to the hearers.
 
-VI.4. The wedding. ἦλθεν ὁ γάμος τοῦ Ἀρνίου; Μακάριοι οἱ εἰς τὸ δεῖπνον τοῦ γάμου τοῦ Ἀρνίου κεκλημένοι. Matthew 22:1–14 is a king's wedding for his son, with those called. It also has what a wedding does not need: armies sent, murderers destroyed, τὴν πόλιν αὐτῶν ἐνέπρησεν, a guest examined for his garment, bound and thrown out. Each has its place in the stretch of Revelation that runs from the war of the kings through the burning of the city to the wedding and the binding (17:14; 18:8; 19:7–9; 19:14; 19:21; 20:2–3). Six places gathered into one likeness. Luke's supper (14:16–24) has the calling and none of the war.
+VI.4. The wedding. ⟦Rev 19:7|ἦλθεν ὁ γάμος τοῦ Ἀρνίου⟧; ⟦Rev 19:9|Μακάριοι οἱ εἰς τὸ δεῖπνον τοῦ γάμου τοῦ Ἀρνίου κεκλημένοι⟧. Matthew 22:1–14 is a king's wedding for his son, with those called. It also has what a wedding does not need: armies sent, murderers destroyed, ⟦Matt 22:7|τὴν πόλιν αὐτῶν ἐνέπρησεν⟧, a guest examined for his garment, bound and thrown out. Each has its place in the stretch of Revelation that runs from the war of the kings through the burning of the city to the wedding and the binding (17:14; 18:8; 19:7–9; 19:14; 19:21; 20:2–3). Six places gathered into one likeness. Luke's supper (14:16–24) has the calling and none of the war.
 
 VI.5. Rule F3, and the composition rule with it: a stretch of the output gathers every place of the source that holds its relation, whatever their distance.
 
@@ -248,8 +248,8 @@ VII.2. The speaker's love, in the adversary's mouth.
 
 | | |
 |---|---|
-| Revelation 3:19 | ἐγὼ ὅσους ἐὰν φιλῶ ἐλέγχω καὶ παιδεύω |
-| Matthew 26:48 | Ὃν ἂν φιλήσω αὐτός ἐστιν· κρατήσατε αὐτόν |
+| Revelation 3:19 | ⟦Rev 3:19|ἐγὼ ὅσους ἐὰν φιλῶ ἐλέγχω καὶ παιδεύω⟧ |
+| Matthew 26:48 | ⟦Matt 26:48|Ὃν ἂν φιλήσω αὐτός ἐστιν· κρατήσατε αὐτόν⟧ |
 
 φιλέω in the first person under ἐάν or ἄν stands at Revelation 3:19, here, and at Mark's parallel, and nowhere else. The speaker's sentence is spoken by the betrayer; its object is the teacher; and what follows the loving is seizure.
 
@@ -257,15 +257,15 @@ VII.3. The dragon's custody.
 
 | Revelation 20:2 | Matthew |
 |---|---|
-| ἐκράτησεν τὸν δράκοντα | ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν καὶ ἐκράτησαν αὐτόν |
-| ἔδησεν αὐτὸν | δήσαντες αὐτὸν ἀπήγαγον |
+| ⟦Rev 20:2|ἐκράτησεν τὸν δράκοντα⟧ | ⟦Matt 26:50|ἐπέβαλον τὰς χεῖρας ἐπὶ τὸν Ἰησοῦν καὶ ἐκράτησαν αὐτόν⟧ |
+| ⟦Rev 20:2|ἔδησεν αὐτὸν⟧ | ⟦Matt 27:2|δήσαντες αὐτὸν ἀπήγαγον⟧ |
 
 VII.4. The rider's crown.
 
 | | |
 |---|---|
-| Revelation 6:2 | ἐδόθη αὐτῷ στέφανος, καὶ ἐξῆλθεν νικῶν |
-| Matthew 27:29 | πλέξαντες στέφανον ἐξ ἀκανθῶν ἐπέθηκαν ἐπὶ τῆς κεφαλῆς αὐτοῦ |
+| Revelation 6:2 | ⟦Rev 6:2|ἐδόθη αὐτῷ στέφανος, καὶ ἐξῆλθεν νικῶν⟧ |
+| Matthew 27:29 | ⟦Matt 27:29|πλέξαντες στέφανον ἐξ ἀκανθῶν ἐπέθηκαν ἐπὶ τῆς κεφαλῆς αὐτοῦ⟧ |
 
 VII.5. With IV.3 (the Lamb's purchase done by the priests) and I.5 (the beast's law of the sword said by the teacher), chapters 26 and 27 hold: a line of the speaker's, a deed of the Lamb's, a gift of a rider's, a law spoken over the beast, and the seizing and binding of the dragon. Five bearers in the source. One person in the output, and every one of the five is done to him or said by him as he is taken.
 
@@ -281,11 +281,11 @@ VIII.1. The custody of Revelation 20 has a second half, and Matthew alone has it
 
 | Revelation 20:1–3 | Matthew 27:63–28:2 |
 |---|---|
-| ἵνα μὴ πλανήσῃ ἔτι τὰ ἔθνη | ἐκεῖνος ὁ πλάνος |
-| ἔκλεισεν καὶ ἐσφράγισεν ἐπάνω αὐτοῦ | σφραγίσαντες τὸν λίθον |
-| ἄγγελον καταβαίνοντα ἐκ τοῦ οὐρανοῦ | ἄγγελος γὰρ Κυρίου καταβὰς ἐξ οὐρανοῦ |
-| ἐπάνω αὐτοῦ | ἀπεκύλισεν τὸν λίθον καὶ ἐκάθητο ἐπάνω αὐτοῦ |
-| μετὰ ταῦτα δεῖ λυθῆναι αὐτὸν | the tomb is empty |
+| ⟦Rev 20:3|ἵνα μὴ πλανήσῃ ἔτι τὰ ἔθνη⟧ | ⟦Matt 27:63|ἐκεῖνος ὁ πλάνος⟧ |
+| ⟦Rev 20:3|ἔκλεισεν καὶ ἐσφράγισεν ἐπάνω αὐτοῦ⟧ | ⟦Matt 27:66|σφραγίσαντες τὸν λίθον⟧ |
+| ⟦Rev 20:1|ἄγγελον καταβαίνοντα ἐκ τοῦ οὐρανοῦ⟧ | ⟦Matt 28:2|ἄγγελος γὰρ Κυρίου καταβὰς ἐξ οὐρανοῦ⟧ |
+| ⟦Rev 20:3|ἐπάνω αὐτοῦ⟧ | ⟦Matt 28:2|ἀπεκύλισεν τὸν λίθον καὶ ἐκάθητο ἐπάνω αὐτοῦ⟧ |
+| ⟦Rev 20:3|μετὰ ταῦτα δεῖ λυθῆναι αὐτὸν⟧ | the tomb is empty |
 
 VIII.2. In Revelation an angel comes down, the deceiver is shut in and sealed over, so that he deceive no more, and he must afterwards be loosed. In Matthew the chief priests call Jesus "that deceiver", seal the stone so that the last deception not be worse than the first, and an angel comes down from heaven, rolls the stone away and sits over it. The patient is exchanged (M2). The helper's act is opposed: the angel who shuts becomes the angel who opens.
 
