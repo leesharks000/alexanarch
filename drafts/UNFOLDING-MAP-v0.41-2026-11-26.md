@@ -2683,7 +2683,7 @@ Map H: patients ADVERSARY → CHRIST and FAITHFUL → CHRIST; agents ANGEL → A
 3. So 2AI.3 stands as a result on one kind of instrument and has failed to come again on another. It is a lead with a count behind it. The state table above says "held under seal"; it should now be read with this row beside it.
 4. The lists behind the cells, with rare verbs only, are the plainest thing the build gives. What is done to the adversary in Revelation and to Jesus in John: βάλλω, βαστάζω, βλέπω, δέω, δεῖ, ζάω, καλέω, κλείω, λύω, μιμνήσκω, πειράζω, πιάζω (23 of 42). In Matthew: βάλλω, δέω, δεῖ, κάθημαι, καλέω, κρατέω, πειράζω, προσκυνέω (18). To Acts' faithful: δέω, δεῖ, ζάω, κατοικέω, κλαίω, κρίνω, κρατέω, λύω, πάρειμι, πειράζω, προσκυνέω and more (20). The custody is in all three. Counted as verbs against a book's whole vocabulary, it is too small a part of anything to move a z.
 
-### 2AM.4 Where the build stands at 23:05
+### 2AM.4 Where the build stands at 22:50
 
 1. Four attempts tonight at a mapping of seats over the whole have failed under seal: the seats kept (2AI.4), the persons (2AJ), the turning as a mark (2AL.2, held and emptied), and this. One held and has now not repeated (2AI.3). Order failed three ways before them.
 2. What has held, and held with controls that could have broken it, is of another kind: a seed of two clauses, a transform stated as forced consequences, and a narrative generated from it by substrates that were shown to need both clauses (2AG, 2AH). That is the method of #1486 and #1494. It is a program for one place.
