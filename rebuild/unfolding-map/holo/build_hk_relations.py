@@ -72,7 +72,7 @@ def ledger_standing(st):
     st = str(st)
     if 'held under seal' in st: return 'produced-blind'
     if re.search(r'failed as written|J\d+ failed', st): return 'sealed-failed'
-    if re.search(r'\b[JKN]\d+[a-z]? held|sealed N\d|S\d held|K1 held', st): return 'sealed-held'
+    if re.search(r'\b[JKNP]\d+[a-z]? held|sealed N\d|S\d held|K1 held', st): return 'sealed-held'
     if st.startswith('engine'): return 'engine'
     if st.startswith('counted') or 'counted:' in st: return 'counted'
     return 'read'
