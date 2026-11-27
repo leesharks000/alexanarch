@@ -1,7 +1,7 @@
 {
  "frozen": {
   "date": "2026-11-26",
-  "sha256_of_derivations": "05a441991acefe4b866d24c3a79257afaa2905d1333d0c84defab78d8e2f9aee",
+  "sha256_of_derivations": "e1801fc2d873d06053c02e82520b85a056e6b7d22eeb4580b91ca916bae71e31",
   "rule": "operators and members declared before the run (#1494's rule); a derivation changed after a run is a new derivation"
  },
  "derivations": [
@@ -5579,6 +5579,684 @@
     }
    ],
    "note": "2Y.4 c. Declared unordered: the file said 'in Revelation's order' and the members do not keep it strictly (the inheriting and the tribes are exchanged, and the first-and-last comes before the wage)."
+  },
+  {
+   "id": "rev11.8+12.14+19.17→matt24.28",
+   "family": "Conjunctions",
+   "title": "Where the corpse is, there the eagles will be gathered",
+   "seed": "gnt:Rev 11:8 + Rev 12:14 + Rev 19:17",
+   "members": [
+    {
+     "id": "corpse",
+     "gloss": "the corpse",
+     "greek": "τὸ πτῶμα",
+     "rx": "\\bπτωμα",
+     "in_seed": true
+    },
+    {
+     "id": "city",
+     "gloss": "of the city",
+     "greek": "τῆς πόλεως",
+     "rx": "πολεωσ",
+     "in_seed": true
+    },
+    {
+     "id": "sodom",
+     "gloss": "Sodom",
+     "greek": "Σόδομα",
+     "rx": "σοδομ",
+     "in_seed": true
+    },
+    {
+     "id": "where",
+     "gloss": "where",
+     "greek": "ὅπου",
+     "rx": "\\bοπου\\b",
+     "in_seed": true
+    },
+    {
+     "id": "crucified",
+     "gloss": "was crucified",
+     "greek": "ἐσταυρώθη",
+     "rx": "εσταυρ",
+     "in_seed": true
+    },
+    {
+     "id": "woman",
+     "gloss": "to the woman",
+     "greek": "τῇ γυναικί",
+     "rx": "γυναικ",
+     "in_seed": true
+    },
+    {
+     "id": "wings",
+     "gloss": "wings",
+     "greek": "πτέρυγες",
+     "rx": "πτερυγ",
+     "in_seed": true
+    },
+    {
+     "id": "eagle",
+     "gloss": "of the eagle",
+     "greek": "τοῦ ἀετοῦ",
+     "rx": "\\bαετο",
+     "in_seed": true
+    },
+    {
+     "id": "wilderness",
+     "gloss": "the wilderness",
+     "greek": "τὴν ἔρημον",
+     "rx": "ερημ",
+     "in_seed": true
+    },
+    {
+     "id": "there",
+     "gloss": "there",
+     "greek": "ἐκεῖ",
+     "rx": "\\bεκει\\b",
+     "in_seed": true
+    },
+    {
+     "id": "birds",
+     "gloss": "the birds",
+     "greek": "τοῖς ὀρνέοις",
+     "rx": "ορνε",
+     "in_seed": true
+    },
+    {
+     "id": "gathered",
+     "gloss": "be gathered",
+     "greek": "συνάχθητε",
+     "rx": "συναχθη",
+     "in_seed": true
+    },
+    {
+     "id": "supper",
+     "gloss": "the supper",
+     "greek": "τὸ δεῖπνον",
+     "rx": "δειπν",
+     "in_seed": true
+    }
+   ],
+   "target": "gnt:Matt 24:28",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "corpse",
+      "where",
+      "eagle",
+      "there",
+      "gathered"
+     ]
+    },
+    {
+     "op": "REORDER",
+     "order": [
+      "where",
+      "corpse",
+      "there",
+      "gathered",
+      "eagle"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Luke 17:37",
+     "label": "Luke's form: the body"
+    },
+    {
+     "loc": "lxx:Ιωβ 39:27-30",
+     "label": "Septuagint, Job 39: the eagle, and where the slain are"
+    },
+    {
+     "loc": "lxx:Ιεζεκιηλ 39:17-20",
+     "label": "Septuagint, Ezek 39: the birds gathered to the sacrifice"
+    },
+    {
+     "loc": "gnt:Matt 24:29-31",
+     "label": "Matt 24:29–31"
+    }
+   ],
+   "note": "2AA.3 a. One saying; three places of Revelation. Found by excl2.py at two of the three."
+  },
+  {
+   "id": "rev16.15+21.8→luke12.37-46",
+   "family": "Conjunctions",
+   "title": "Blessed the watching; the thief; a portion with the unfaithful",
+   "seed": "gnt:Rev 16:15 + Rev 21:8",
+   "members": [
+    {
+     "id": "come",
+     "gloss": "I come",
+     "greek": "ἔρχομαι",
+     "rx": "ερχ(ομαι|εται)",
+     "in_seed": true
+    },
+    {
+     "id": "thief",
+     "gloss": "as a thief",
+     "greek": "ὡς κλέπτης",
+     "rx": "κλεπτ",
+     "in_seed": true
+    },
+    {
+     "id": "blessed",
+     "gloss": "blessed",
+     "greek": "μακάριος",
+     "rx": "μακαρι",
+     "in_seed": true
+    },
+    {
+     "id": "watch",
+     "gloss": "who watches",
+     "greek": "ὁ γρηγορῶν",
+     "rx": "γρηγορ",
+     "in_seed": true
+    },
+    {
+     "id": "garments",
+     "gloss": "his garments",
+     "greek": "τὰ ἱμάτια",
+     "rx": "ιματι",
+     "in_seed": true
+    },
+    {
+     "id": "naked",
+     "gloss": "naked",
+     "greek": "γυμνός",
+     "rx": "γυμν",
+     "in_seed": true
+    },
+    {
+     "id": "cowardly",
+     "gloss": "the cowardly",
+     "greek": "τοῖς δειλοῖς",
+     "rx": "δειλ",
+     "in_seed": true
+    },
+    {
+     "id": "unfaithful",
+     "gloss": "the unfaithful",
+     "greek": "ἀπίστοις",
+     "rx": "απιστ",
+     "in_seed": true
+    },
+    {
+     "id": "murderers",
+     "gloss": "murderers",
+     "greek": "φονεῦσιν",
+     "rx": "φονευ",
+     "in_seed": true
+    },
+    {
+     "id": "portion",
+     "gloss": "their portion",
+     "greek": "τὸ μέρος αὐτῶν",
+     "rx": "\\bμεροσ",
+     "in_seed": true
+    },
+    {
+     "id": "lake",
+     "gloss": "the lake",
+     "greek": "τῇ λίμνῃ",
+     "rx": "λιμν",
+     "in_seed": true
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Luke 12:37-46",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "come",
+      "thief",
+      "blessed",
+      "watch",
+      "unfaithful",
+      "portion"
+     ]
+    },
+    {
+     "op": "EXPAND",
+     "repeat": {
+      "blessed": 3
+     }
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Matt 24:42-51",
+     "label": "Matthew's form of the same"
+    },
+    {
+     "loc": "gnt:1Thess 5:2-6",
+     "label": "1 Thess 5: as a thief; let us watch"
+    },
+    {
+     "loc": "gnt:Mark 13:33-37",
+     "label": "Mark 13: watch"
+    },
+    {
+     "loc": "gnt:2Pet 3:10",
+     "label": "2 Pet 3:10: as a thief"
+    }
+   ],
+   "note": "2AA.3 b. Matthew's form is set as a control to see what it lacks: by the reading, one word."
+  },
+  {
+   "id": "rev20.1-3+20.7→mark6.17",
+   "family": "Conjunctions",
+   "title": "Seized, bound, in prison: the Baptist",
+   "seed": "gnt:Rev 20:1-3 + Rev 20:7",
+   "members": [
+    {
+     "id": "angel",
+     "gloss": "an angel",
+     "greek": "ἄγγελον",
+     "rx": "αγγελον",
+     "in_seed": true
+    },
+    {
+     "id": "key",
+     "gloss": "the key",
+     "greek": "τὴν κλεῖν",
+     "rx": "κλει",
+     "in_seed": true
+    },
+    {
+     "id": "chain",
+     "gloss": "a chain",
+     "greek": "ἅλυσιν",
+     "rx": "\\bαλυσ",
+     "in_seed": true
+    },
+    {
+     "id": "seized",
+     "gloss": "he seized",
+     "greek": "ἐκράτησεν",
+     "rx": "κρατησ",
+     "in_seed": true
+    },
+    {
+     "id": "dragon",
+     "gloss": "the dragon",
+     "greek": "τὸν δράκοντα",
+     "rx": "δρακοντ",
+     "in_seed": true
+    },
+    {
+     "id": "satan",
+     "gloss": "the Satan",
+     "greek": "ὁ Σατανᾶς",
+     "rx": "σαταν",
+     "in_seed": true
+    },
+    {
+     "id": "bound",
+     "gloss": "and bound him",
+     "greek": "καὶ ἔδησεν αὐτόν",
+     "rx": "εδησεν αυτον",
+     "in_seed": true
+    },
+    {
+     "id": "thousand",
+     "gloss": "a thousand years",
+     "greek": "χίλια ἔτη",
+     "rx": "χιλια",
+     "in_seed": true
+    },
+    {
+     "id": "abyss",
+     "gloss": "the abyss",
+     "greek": "τὴν ἄβυσσον",
+     "rx": "αβυσσ",
+     "in_seed": true
+    },
+    {
+     "id": "sealed",
+     "gloss": "sealed",
+     "greek": "ἐσφράγισεν",
+     "rx": "εσφραγισ",
+     "in_seed": true
+    },
+    {
+     "id": "prison",
+     "gloss": "his prison",
+     "greek": "τῆς φυλακῆς",
+     "rx": "φυλακ",
+     "in_seed": true
+    }
+   ],
+   "target": "gnt:Mark 6:17",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "seized",
+      "bound",
+      "prison"
+     ]
+    }
+   ],
+   "controls": [
+    {
+     "loc": "gnt:Luke 3:19-20",
+     "label": "Luke's form: shut up in prison"
+    },
+    {
+     "loc": "gnt:Acts 12:3-6",
+     "label": "Acts 12: Peter taken, in prison, bound"
+    },
+    {
+     "loc": "gnt:Acts 21:33",
+     "label": "Acts 21:33: laid hold, to be bound"
+    },
+    {
+     "loc": "gnt:John 18:12",
+     "label": "John 18:12: they took Jesus and bound him"
+    },
+    {
+     "loc": "gnt:Matt 27:1-2",
+     "label": "Matt 27:2: having bound him"
+    }
+   ],
+   "note": "2AA.3 d. Matt 14:3 is the same sentence and should pass in the search; it is a second target and not a control."
+  },
+  {
+   "id": "rev18.7-16→luke16.19-25",
+   "family": "Conjunctions",
+   "title": "Purple and fine linen; torment seen from afar",
+   "seed": "gnt:Rev 18:7 + Rev 18:10 + Rev 18:12 + Rev 18:16",
+   "members": [
+    {
+     "id": "luxury",
+     "gloss": "lived in luxury",
+     "greek": "ἐστρηνίασεν",
+     "rx": "εστρηνι",
+     "in_seed": true
+    },
+    {
+     "id": "torment",
+     "gloss": "torment",
+     "greek": "βασανισμόν",
+     "rx": "βασαν",
+     "in_seed": true
+    },
+    {
+     "id": "mourning",
+     "gloss": "mourning",
+     "greek": "πένθος",
+     "rx": "πενθ",
+     "in_seed": true
+    },
+    {
+     "id": "queen",
+     "gloss": "a queen",
+     "greek": "βασίλισσα",
+     "rx": "βασιλισσ",
+     "in_seed": true
+    },
+    {
+     "id": "afar",
+     "gloss": "from afar",
+     "greek": "ἀπὸ μακρόθεν",
+     "rx": "απο μακροθεν",
+     "in_seed": true
+    },
+    {
+     "id": "woe",
+     "gloss": "woe",
+     "greek": "οὐαί",
+     "rx": "\\bουαι\\b",
+     "in_seed": true
+    },
+    {
+     "id": "gold",
+     "gloss": "gold",
+     "greek": "χρυσοῦ",
+     "rx": "χρυσ",
+     "in_seed": true
+    },
+    {
+     "id": "linen",
+     "gloss": "fine linen",
+     "greek": "βυσσίνου",
+     "rx": "βυσσ",
+     "in_seed": true
+    },
+    {
+     "id": "purple",
+     "gloss": "purple",
+     "greek": "πορφύρας",
+     "rx": "πορφυρ",
+     "in_seed": true
+    },
+    {
+     "id": "clothed",
+     "gloss": "clothed",
+     "greek": "περιβεβλημένη",
+     "rx": "περιβεβλημεν",
+     "in_seed": true
+    },
+    {
+     "id": "wore",
+     "gloss": "used to wear",
+     "greek": "ἐνεδιδύσκετο",
+     "rx": "ενεδιδυσκ",
+     "in_seed": false
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:Luke 16:19-25",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "torment",
+      "afar",
+      "linen",
+      "purple",
+      "clothed"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "old": "clothed",
+     "new": "wore"
+    }
+   ],
+   "controls": [
+    {
+     "loc": "lxx:Εσθηρ 8:15",
+     "label": "Septuagint, Esth 8:15: Mordecai in fine linen and purple"
+    },
+    {
+     "loc": "gnt:Mark 15:16-20",
+     "label": "Mark 15: the purple"
+    },
+    {
+     "loc": "gnt:Luke 23:48-49",
+     "label": "Luke 23:49: stood afar"
+    },
+    {
+     "loc": "gnt:Jas 5:1-5",
+     "label": "James 5: the rich in luxury"
+    }
+   ],
+   "note": "2Z.3. The one who looks is exchanged and no operator states it."
+  },
+  {
+   "id": "rev3.17-18→john9.1-41",
+   "family": "Conjunctions",
+   "title": "You say, and are blind; the eyes anointed to see",
+   "seed": "gnt:Rev 3:17-18",
+   "members": [
+    {
+     "id": "yousay",
+     "gloss": "you say that",
+     "greek": "λέγεις ὅτι",
+     "rx": "λεγε(ισ|τε) οτι",
+     "in_seed": true
+    },
+    {
+     "id": "rich",
+     "gloss": "rich",
+     "greek": "πλούσιος",
+     "rx": "πλουσι|πεπλουτ",
+     "in_seed": true
+    },
+    {
+     "id": "need",
+     "gloss": "need",
+     "greek": "χρείαν",
+     "rx": "χρεια",
+     "in_seed": true
+    },
+    {
+     "id": "notknow",
+     "gloss": "you do not know",
+     "greek": "οὐκ οἶδας",
+     "rx": "ουκ οιδα",
+     "in_seed": true
+    },
+    {
+     "id": "poor",
+     "gloss": "poor",
+     "greek": "πτωχός",
+     "rx": "πτωχ",
+     "in_seed": true
+    },
+    {
+     "id": "blind",
+     "gloss": "blind",
+     "greek": "τυφλός",
+     "rx": "τυφλ",
+     "in_seed": true
+    },
+    {
+     "id": "naked",
+     "gloss": "naked",
+     "greek": "γυμνός",
+     "rx": "γυμν",
+     "in_seed": true
+    },
+    {
+     "id": "buy",
+     "gloss": "to buy",
+     "greek": "ἀγοράσαι",
+     "rx": "αγορασ",
+     "in_seed": true
+    },
+    {
+     "id": "gold",
+     "gloss": "gold",
+     "greek": "χρυσίον",
+     "rx": "χρυσ",
+     "in_seed": true
+    },
+    {
+     "id": "white",
+     "gloss": "white",
+     "greek": "λευκά",
+     "rx": "λευκ",
+     "in_seed": true
+    },
+    {
+     "id": "salve",
+     "gloss": "eye-salve",
+     "greek": "κολλούριον",
+     "rx": "κολλουρι",
+     "in_seed": true
+    },
+    {
+     "id": "anoint",
+     "gloss": "to anoint",
+     "greek": "ἐγχρῖσαι",
+     "rx": "(εγ|επε)χρισ",
+     "in_seed": true
+    },
+    {
+     "id": "eyes",
+     "gloss": "your eyes",
+     "greek": "τοὺς ὀφθαλμούς",
+     "rx": "οφθαλμ",
+     "in_seed": true
+    },
+    {
+     "id": "see",
+     "gloss": "that you may see",
+     "greek": "ἵνα βλέπῃς",
+     "rx": "βλεπ",
+     "in_seed": true
+    },
+    {
+     "id": "clay",
+     "gloss": "clay",
+     "greek": "πηλόν",
+     "rx": "πηλο",
+     "in_seed": false
+    }
+   ],
+   "unordered": true,
+   "target": "gnt:John 9:1-41",
+   "steps": [
+    {
+     "op": "PARTITION",
+     "keep": [
+      "yousay",
+      "notknow",
+      "blind",
+      "salve",
+      "anoint",
+      "eyes",
+      "see"
+     ]
+    },
+    {
+     "op": "SUBSTITUTE",
+     "old": "salve",
+     "new": "clay"
+    },
+    {
+     "op": "EXPAND",
+     "repeat": {
+      "blind": 5,
+      "eyes": 5,
+      "see": 3,
+      "notknow": 3
+     }
+    }
+   ],
+   "controls": [
+    {
+     "loc": "lxx:Τωβιτ 11:7-13",
+     "label": "Septuagint, Tob 11: the gall rubbed on the eyes"
+    },
+    {
+     "loc": "gnt:Mark 8:22-26",
+     "label": "Mark 8: the blind one at Bethsaida"
+    },
+    {
+     "loc": "gnt:Mark 10:46-52",
+     "label": "Mark 10: Bartimaeus"
+    },
+    {
+     "loc": "gnt:Matt 23:16-26",
+     "label": "Matt 23: blind guides"
+    },
+    {
+     "loc": "gnt:John 5:1-15",
+     "label": "John 5: the pool"
+    },
+    {
+     "loc": "lxx:Ησαιας 42:16-20",
+     "label": "Septuagint, Isa 42: the blind"
+    }
+   ],
+   "note": "2Z.3. The sixth letter and the sixth sign."
   }
  ]
 }
