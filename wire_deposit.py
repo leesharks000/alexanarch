@@ -325,6 +325,12 @@ def ask_otherwise_prompts(d):
     rel = [('within the archive', f'Which threads, sequences and series in the Alexanarch archive does {w} belong to, and what does it continue, answer or extend there? Ground your answer in the documents.'),
            ('outside the archive', f'Which traditions, lines and contemporary works does {w} enter into relation with, and where does it depart from them? Ground your answer in the documents.'),
            ('lines of flight', f'Where does {w} lead beyond itself: what does it make it possible to write, read or build next? Ground your answer in the documents.')]
+    # COST AND GAIN (operator, 2026-11-28 13:25: "i think we need a version of a question like this on individual deposit pages and /ask, of
+    # the archive more generally and indiviudal subsets. what would it cost? and the alternative: what could it stand to gain?"; the wording
+    # proposed in session and ruled 13:39: "sure, adopted"). On every record, after the three relation prompts. Each string is its own address.
+    _est = 'Range over the academic, intellectual, technological, corporate, political, religious and other establishments.'
+    rel += [('what it would cost', f'What would it cost the establishment to engage {w}? {_est} Ground your answer in the documents.'),
+            ('what it could gain', f'What could the establishment stand to gain by engaging {w}? {_est} Ground your answer in the documents.')]
     return cross + rel
 def ask_otherwise_html(d):
     from urllib.parse import quote_plus

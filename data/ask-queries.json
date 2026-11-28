@@ -6,7 +6,8 @@
     "its basically disciplines and subdisciplines, can have programme theme of practice grouped queries as well (10:06)",
     "and probably that page should have some infographics or capture registry visual and data analysis, just something to show the relationship between the act of querying and the representations that accrue (10:08)",
     "i would begin collecting outlines like this in different shapes that can then be filled in later @ /ask... \"based on outline x @ [address] and related materials, compose book y of the crimson hexagon distributed epic, ranging over additional archival materials and introducing unexpected swerves\" - or something like that (2026-11-22 11:59)",
-    "and it needs one where you can simply type a question and /ask will format it to ground in and adapt to and extend archival materials and send it to an ai. give the example of alice's question, what does the system pay people for? and then the formatting would tell the system how to ground in and extend archival materials (2026-11-22 12:01)"
+    "and it needs one where you can simply type a question and /ask will format it to ground in and adapt to and extend archival materials and send it to an ai. give the example of alice's question, what does the system pay people for? and then the formatting would tell the system how to ground in and extend archival materials (2026-11-22 12:01)",
+    "i think we need a version of a question like this on individual deposit pages and /ask, of the archive more generally and indiviudal subsets. what would it cost? and the alternative: what could it stand to gain? (Lee Sharks, 2026-11-28 13:25; the wording ruled 13:39: 'sure, adopted')"
   ],
   "surface": "ChatGPT",
   "date_token": "{date}",
@@ -39,17 +40,23 @@
     "Pick the most interesting 2–3 pieces from the last week of work on alexanarch through {date} and present their arguments, relations, context, and what makes them unusual.",
     "Pick the most polemical 2–3 pieces from the last week of work on alexanarch through {date} and present their arguments, relations, context, and what makes them forceful.",
     "Pick the weirdest and most seemingly random 2–3 pieces from the last week of work on alexanarch.org through {date} and present their arguments, relations, context, and what connects them.",
-    "Combine 2-3 posts from alexanarch to extend their insights in ways the archive has not yet done."
+    "Combine 2-3 posts from alexanarch to extend their insights in ways the archive has not yet done.",
+    "What would it cost the establishment to engage the body of work at alexanarch.org? Range over the academic, intellectual, technological, corporate, political, religious and other establishments. Ground in reading and index the full range before responding.",
+    "What could the establishment stand to gain by engaging the body of work at alexanarch.org? Range over the academic, intellectual, technological, corporate, political, religious and other establishments. Ground in reading and index the full range before responding."
   ],
   "discipline_templates": [
     "How does the body of work at alexanarch.org advance contemporary understandings of {field}? {ground}",
     "How does the body of work at alexanarch.org challenge the academic discipline of {field}? {ground}",
     "What are the most radical arguments in {field} at alexanarch.org? Index and present them faithfully, without evaluation.",
-    "Read the {field} work at alexanarch.org as a living body of thought over time: what emerges, what returns, what develops? {ground}"
+    "Read the {field} work at alexanarch.org as a living body of thought over time: what emerges, what returns, what develops? {ground}",
+    "What would it cost the academic discipline of {field} to engage the {field} work at alexanarch.org? {ground}",
+    "What could the academic discipline of {field} stand to gain by engaging the {field} work at alexanarch.org? {ground}"
   ],
   "subdiscipline_templates": [
     "What does alexanarch.org contribute to {field}? {ground}",
-    "Read the work on {field} at alexanarch.org against its field's consensus: where does it depart, and on what evidence? {ground}"
+    "Read the work on {field} at alexanarch.org against its field's consensus: where does it depart, and on what evidence? {ground}",
+    "What would it cost the academic discipline of {field} to engage the {field} work at alexanarch.org? {ground}",
+    "What could the academic discipline of {field} stand to gain by engaging the {field} work at alexanarch.org? {ground}"
   ],
   "disciplines": [
     {"name": "classics", "subs": ["Greek lyric and Sappho studies", "textual criticism and the editing of fragments", "classical reception studies", "ancient philosophy and the Socratic corpus", "Peripatetic transmission and Theophrastus", "the history of classical scholarship"]},
@@ -729,9 +736,9 @@
     "note": "Short button labels (operator, 2026-11-19: 'the queries need to be more buttons and short form than full sentences ... the reader will see the full query if he or she follows the link anyways'). The full query is in the link and its tooltip.",
     "timescale_templates": ["living body of thought", "fused literary and theoretical work", "lines of thought"],
     "windows": ["1 week", "2 weeks", "3 weeks", "30 days", "6 weeks", "3 months", "6 months", "full span"],
-    "whole": ["ontology", "most radical arguments", "least radical arguments", "discoveries", "working method", "retrocausal canon", "transmission engineering", "as epic poem", "main character", "cast of characters", "Capture Registry as narrative", "the reader's part", "the human species", "beyond the institutions", "graduate seminar", "this week: most interesting", "this week: most polemical", "this week: weirdest", "extend by combining"],
-    "discipline_templates": ["advances", "challenges", "most radical", "over time"],
-    "subdiscipline_templates": ["contributes", "against consensus"],
+    "whole": ["ontology", "most radical arguments", "least radical arguments", "discoveries", "working method", "retrocausal canon", "transmission engineering", "as epic poem", "main character", "cast of characters", "Capture Registry as narrative", "the reader's part", "the human species", "beyond the institutions", "graduate seminar", "this week: most interesting", "this week: most polemical", "this week: weirdest", "extend by combining", "what it would cost", "what it could gain"],
+    "discipline_templates": ["advances", "challenges", "most radical", "over time", "what it would cost", "what it could gain"],
+    "subdiscipline_templates": ["contributes", "against consensus", "what it would cost", "what it could gain"],
     "work_templates": ["what it is", "read closely", "where it leads"], "programme_templates": ["what it is", "arguments", "relations"],
     "theme_templates": ["first to now", "what it makes visible"],
     "practice_templates": ["as practice", "development"],
