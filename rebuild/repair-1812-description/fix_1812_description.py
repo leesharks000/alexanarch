@@ -4,7 +4,7 @@ p='data/registry.json'; r=json.load(open(p,encoding='utf-8')); d=[x for x in r['
 was={'description':d['description'],'wiki_article':d['wiki_article']}
 def rep(k,o,n):
     assert d[k].count(o)==1,(k,o[:50],d[k].count(o)); d[k]=d[k].replace(o,n)
-rep('description',"HOW TO WRITE MATTHEW FROM REVELATION. The paper asks","HOW TO WRITE MATTHEW FROM REVELATION. Current version v2.1 (27 November 2026), which superseded v1.1 and v1.0 in place the same day; what each version added is stated at the end of this description. The paper asks")
+rep('description',"would have to do to get a Gospel, and answers by doing it.","would have to do to get a Gospel, and answers by doing it. Current version v2.1 (27 November 2026), which superseded v1.1 and v1.0 in place the same day; what each version added is stated at the end of this description.")
 rep('description',"Its evidence is a ledger of 86 relations, each checked for shared lemmas in a tagged text, reaching 178 of Matthew's 1,067 verses.","Its evidence is a ledger of 158 relations, each checked for shared lemmas in a tagged text, reaching 305 of Matthew's 1,067 verses (86 and 178 at v1.0).")
 rep('description',"321 Greek quotations verified by machine against the seated texts (221 at v1.0).","321 Greek quotations verified by machine against the seated texts at v1.1 (221 at v1.0); the count was not rerun for v2.1.")
 rep('wiki_article',"deposited in the Crimson Hexagonal Archive on 27 November 2026, with","deposited in the Crimson Hexagonal Archive on 27 November 2026 and reissued in place twice that day (the current version is v2.1), with")
