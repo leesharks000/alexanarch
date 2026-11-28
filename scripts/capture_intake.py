@@ -38,6 +38,12 @@ instances get it wrong repeatedly and the registry has already been rebuilt once
   So: engagement admits a NEW address. Non-engagement is recorded only as a LATER
   observation on an address engagement already admitted.
 
+  RECORDED, NOT PREVENTED (operator, 2026-11-28 13:19: "weve already moved well beyond that rule, there are many seated
+  transcripts that dont directly engage archive sources. now that is something the status of which should be recorded in
+  metadata, not prevented."). From 2026-11-28 a draft at a new address whose transcript or ev field matches the non-engagement
+  pattern is SEATED, and the match is recorded on the entry (notes.engagement: the words matched, their context, the draft's
+  stated engagement_basis, breach where none is stated). The paragraphs above stand as the history of the rule.
+
   THE SIGNIFICANT NULL (operator, 2026-11-19 15:54: "we need to extend the rule to allow
   recording of specific nulls in the registry - these are *significant* nulls"; and "it
   should still require transcripts unless specifically marked null").
@@ -450,12 +456,21 @@ def seat_flat(draft, registry, schema):
                           "none of them itself a null. Not found or null: %s" % (_bad or "(no baseline)"))
         print("   NULL       significant null, marked; baseline of %d engaged entr%s checked" % (len(_nb["baseline"]), "y" if len(_nb["baseline"]) == 1 else "ies"))
     elif _new_address and _no_engagement:
-        raise Refused(
-            "NOT A CAPTURE. This is a new address and the draft records no source engagement "
-            "in composition — no panel, no composed answer, or a refusal to search. A capture "
-            "IS the composed artefact and its transcript; without one there is nothing captured. "
-            "Non-engagement is recordable ONLY as a later observation on an address that some "
-            "earlier engagement already admitted.")
+        # RECORDED, NOT PREVENTED (operator, 2026-11-28 13:19, on a composed answer refused here because its own words matched the
+        # pattern: "yes, it should - and weve already moved well beyond that rule, there are many seated transcripts that dont
+        # directly engage archive sources. now that is something the status of which should be recorded in metadata, not prevented.")
+        # Until 2026-11-28 this branch refused the draft as NOT A CAPTURE. It now seats it and records the status on the entry's
+        # notes: the words the pattern matched, where they stand (the transcript or the ev field), and the draft's own statement of
+        # what was composed (notes.engagement_basis), with breach true where the draft states none. Laws record.
+        _txt = str(draft.get("transcript", "")) + " " + str(draft.get("ev", ""))
+        _hit = re.search(r"NO PANEL|no panel rendered|did not search|no composed answer|returned nothing|no transcript held|organic (?:results )?only", _txt, re.I)
+        _basis = str((draft.get("notes") or {}).get("engagement_basis") or "").strip() or None
+        e["notes"] = dict(e.get("notes") or {})
+        e["notes"]["engagement"] = {"status": "non-engagement pattern matched at a new address; seated and recorded",
+                                    "matched": _hit.group(0) if _hit else None,
+                                    "context": _txt[max(0, _hit.start() - 80):_hit.end() + 80].replace("\n", " ") if _hit else None,
+                                    "basis": _basis, "breach": _basis is None, "rule": "operator, 2026-11-28 13:19: recorded in metadata, not prevented"}
+        print("   ENGAGEMENT recorded, not refused: pattern %r matched; %s" % (_hit.group(0) if _hit else None, ("basis stated: " + _basis) if _basis else "BREACH: the draft states no engagement_basis"))
     # THE SECTION IS ONE OF THE DEFINED SECTIONS (ruled 2026-11-05: "lets keep current categories and tags but do a sweep to get
     # them accurate, currently and going forward"). The draft names its section; it must be one of registry._section_taxonomy.sections,
     # chosen by those definitions and their precedence (a domain section takes an address whose subject lies in it; otherwise the kind
