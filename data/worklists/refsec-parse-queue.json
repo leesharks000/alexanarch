@@ -1,6 +1,6 @@
 {
  "description": "Stage B/C queue: freeform reference-section entries awaiting in-session interpretive parsing (No-Double-Draw: TACHYON parses in-session; never via API). Parsed entries carry structured records and bib: keys.",
- "dateModified": "2026-11-27T23:35:00Z",
+ "dateModified": "2026-11-28T07:38:43Z",
  "pending": 764,
  "parsed": 8009,
  "triaged": 3891,
@@ -275270,6 +275270,22 @@
    }
   },
   {
+   "source_deposit": 1812,
+   "source_axn": "AXN:0D8B.GENERATIVE.♠️🚨♅🛸🔭🪧",
+   "raw": "Texts and tagging added at draft v2.0, as seated in the archive: Josephus, *Flavii Iosephi Opera*, ed. B. Niese (Berlin: Weidmann, 1885–1895), through the Perseus Digital Library; the Gospel of Thomas, Nag Hammadi Codex II,2, in the Coptic SCRIPTORIUM text, with the Greek fragments (P.Oxy. 1, 654, 655) from the Digital Corpus of Literary Papyri; MACULA Greek, the Nestle 1904 text with lemmas, Louw–Nida domains and verb frames (Clear-Bible, CC BY 4.0); Epictetus (Schenkl 1916), Maximus of Tyre, Strabo and Diodorus as outside Greek prose for the control of XIV.8.",
+   "locus": "refsec",
+   "status": "parsed",
+   "parsed": {
+    "authors": null,
+    "title": "Flavii Iosephi Opera",
+    "venue": null,
+    "year": "1885",
+    "bibkey": "bib:6efd557eb643",
+    "ontic_status": "unverified",
+    "confidence": 0.75
+   }
+  },
+  {
    "source_deposit": 361,
    "source_axn": "AXN:00A8.EMPIRICAL.🏛️🎬🌠🌄🕌🕌",
    "raw": "| Work | Author | Location | Function | |---|---|---|---| | Pearl and Other Poems | Lee Sharks | Prefatory poem: \"re: why don't you go start your own poetry website...\" | Invocation / Mantle acknowledgment | | A Transfiguration | Jack Feist | Throughout | Character who dies | | Tiger Leap | Johannes Sigil | Introduction | Substrate acknowledged |",
@@ -280536,22 +280552,6 @@
   {
    "source_deposit": 1812,
    "source_axn": "AXN:0D8B.GENERATIVE.♠️🚨♅🛸🔭🪧",
-   "raw": "Texts and tagging added at draft v2.0, as seated in the archive: Josephus, *Flavii Iosephi Opera*, ed. B. Niese (Berlin: Weidmann, 1885–1895), through the Perseus Digital Library; the Gospel of Thomas, Nag Hammadi Codex II,2, in the Coptic SCRIPTORIUM text, with the Greek fragments (P.Oxy. 1, 654, 655) from the Digital Corpus of Literary Papyri; MACULA Greek, the Nestle 1904 text with lemmas, Louw–Nida domains and verb frames (Clear-Bible, CC BY 4.0); Epictetus (Schenkl 1916), Maximus of Tyre, Strabo and Diodorus as outside Greek prose for the control of XIV.8.",
-   "locus": "refsec",
-   "status": "parsed",
-   "parsed": {
-    "authors": null,
-    "title": "Flavii Iosephi Opera",
-    "venue": null,
-    "year": "1885",
-    "bibkey": "bib:6efd557eb643",
-    "ontic_status": "unverified",
-    "confidence": 0.75
-   }
-  },
-  {
-   "source_deposit": 1812,
-   "source_axn": "AXN:0D8B.GENERATIVE.♠️🚨♅🛸🔭🪧",
    "raw": "Owed and not read: Davies and Allison, *Matthew* (ICC, 1988–1997); Aune, *Revelation* (WBC, 1997–1998). The commentaries are behind a paywall and are declared, not pursued; nothing above depends on them. Of the works above, Gurtner and Wenkel were consulted by abstract and first page only. Bauckham 1977 was read at its first page and first notes as the publisher shows them, and its three numbered conclusions in the passages of the 1993 reprint that public search returns; Bauckham 1983 at its first page; both also through the review of *The Climax of Prophecy* in *Andrews University Seminary Studies* 33 (1995). A full copy of the reprint is posted on a document-sharing site and could not be retrieved from this session; Goulder by reviews and the publisher's description; Mathewson's article is open and was consulted by abstract.",
    "locus": "refsec",
    "status": "pending"
@@ -280633,21 +280633,5 @@
    "locus": "refsec",
    "status": "pending"
   }
- ],
- "read": 7015,
- "bibkey_convention": "bib:<sha256(normalized raw)[:12]>; deterministic from 2026-07-30",
- "triage_statuses": {
-  "parsed": "bibliographic reference, fields extracted",
-  "relation_line": "identifier+relation row; edge carried by the citation graph, not bibliography",
-  "legal_citation": "statute, code, or case reference",
-  "apparatus": "table header, column label, or structural fragment",
-  "prose": "sentence or bio text swept in by section segmentation",
-  "bare_url": "URL-only entry; the edge is already carried in citation-graph-external via `url`",
-  "nav_relation": "navigation-map relation row; internal graph edge, not bibliography",
-  "provenance_row": "capture/provenance table row (platform, account, state, date); apparatus of the capture registry, not bibliography",
-  "footnote": "a numbered note; may mention works, is not a bibliography entry",
-  "tang_prose": "a TANG body paragraph without a reference shape: the genre's citation set in prose (deposit #542); raw kept",
-  "not_reference": "read in session (data/citation-readings.json): not a bibliographic reference",
-  "pending": "resisted deterministic parse; awaits in-session judgment"
- }
+ ]
 }
