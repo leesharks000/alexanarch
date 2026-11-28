@@ -43,6 +43,10 @@ def gpt(name, n, slug, s, marker, kind_note, extra_related, mt, d, reading, anal
         per_note=f"Author named: {pv['author']} ({creator}); archive named: {pv['inst']}; record number given: {pv['id']}; sources shown: {len(c)} chips or image cards as pasted.",
         per_dim_pending=PEND, mt=mt, d=d, reading=reading, analysis=analysis + (BATTERY if battery else ""), findings=findings,
         notes={"operator": op, "source": f"{name}.txt, the paste unchanged", "date_basis": "the date is the day the paste was received; the paste carries no time of its own"})
+    if name == "lof-1802":
+        dd["notes"]["engagement_basis"] = "an 18 KB composed answer citing #1802 and seven other records; the intake's non-engagement pattern matched the composer's own words 'What it did not search.', an item in its list of what an answer engine should distinguish"
+    if name == "trad-1810":
+        dd["notes"]["model_line"] = "the paste ends: 'You’re using our basic model. Log in or sign up for more intelligence.'"
     (H / f"{name}.json").write_text(json.dumps(dd, ensure_ascii=False, indent=1), encoding="utf-8"); print(name, len(paste), "chips", len(c), pv, "|", q[:70])
 LOF = "lead beyond itself"
 KIND = lambda n: f"the record's 'Ask ChatGPT otherwise' link 'lines of flight' (alexanarch.org/s/records/{n}/); NEW address; one of eight records asked the same question on 2026-11-28. The string seated is the link's own, read from the record page by code" + (", and it is the string the operator wrote out in the message." if n == 1812 else "; the operator wrote out the #1812 string, and this answer's title and subject agree with this record's.")
@@ -208,6 +212,27 @@ gpt("lof-1802", 1802, "who-benefits-from-bad-inference-1802-lines-of-flight-chat
            "A NEXT WORK PROPOSED BY TITLE. 'The Reproduction of Correctability: An Institutional and Technical Theory of the Conditions for Inferential Repair' is the composer's proposal.",
            "THE QUESTION TURNED. 'from Who benefits when knowledge is wrong? to Who controls whether knowledge can discover that it is wrong?'"],
  note_src="")
+
+gpt("trad-1810", 1810, "how-much-you-wanna-bet-1810-outside-the-archive-chatgpt-20261128", "Valuation", "Which traditions, lines and contemporary works",
+ "the record's 'Ask ChatGPT otherwise' link 'outside the archive' (alexanarch.org/s/records/1810/); NEW address. Pasted alone at 13:19 EST with no words about its source; the string seated is the link's own, read from the record page by code, and the answer's title ('Intellectual traditions, antecedents, and departures') agrees with it.",
+ [1735, 1631, 1745, 1791, 1806, 1621, 1755, 1741, 1802, 1627, 88],
+ mt="HOW MUCH YOU WANNA BET? (#1810) ON CHATGPT, OUTSIDE THE ARCHIVE — MARX, BENJAMIN, BOURDIEU, DAVID, GRAEBER AND THE DATA-COLONIALISM LINE, EACH WITH ITS DEPARTURE; SEMANTIC PRIMITIVE ACCUMULATION; THE DOSSIER'S OWN READING LIMITS REPORTED",
+ d=("HOW MUCH YOU WANNA BET? (#1810 v1.1, REX FRACTION) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'OUTSIDE THE ARCHIVE': Marx (Gallerte, primitive accumulation, the value-form) and 'semantic primitive accumulation' (§8e), Roman custody from Sulla and Apellicon's library to the Temple tribute; "
+    "Benjamin's thesis VII and the Arch of Titus (§8f.6), 'Benjamin's thesis with a ledger'; Bourdieu and Guillory; Ingham and Graeber, a debt that cannot be paid or forgiven; Paul David and transition load Θ; 'the political economy of the sheared' in four stations (Sappho, Aristotle, Revelation, Marx), 127 convergent records; "
+    "Couldry and Mejias, Pasquinelli, Shumailov, Pew's 8 per cent; the eight defects of '$7.2 × 10²⁶'. It reports which outside works the dossier read in full and which through summaries."),
+ reading=("The innocent reading first. Asked what the dossier enters into relation with and where it departs, the composer goes tradition by tradition and gives each a departure: Marx without reduction to money; Benjamin with an accounting added; Bourdieu and Guillory turned from the distribution of access to "
+          "'the order carried by the canon'; a debt that is 'ontological and historical before it is financial'; David's lock-in turned to 'an order of interpretation'. It keeps the dossier's distinction of Revelation First from Revelation Early and says the dossier 'does not claim to establish the historical thesis itself'. "
+          "It reports §8f.0's division between works read in full (Marx, Benjamin, Bourdieu, David) and works taken from abstracts and reviews, and says: 'That matters when assessing the depth of its engagement with those authors.'"),
+ analysis=("Attributed to Rex Fraction, numbered, at v1.1, with section numbers throughout. Checked against the seated text of #1810: semantic primitive accumulation, Gallerte, thesis VII, the Arch of Titus, Bourdieu, Guillory, Ingham, Graeber, QWERTY, the political economy of the sheared, 127, Couldry, Pasquinelli, "
+           "Shumailov, Pew and 8%, 2,111, eight defects, Apellicon and 86 BCE, the half-shekel, Augustus, #1741, #88, Appendix F, 'with a ledger', stolen value at interest, Revelation Early, Floridi, Piketty, exterior order. Not found as written: 'Politics VII.3', and the phrases 'presence and standing' and 'six-stage', "
+           "which are the composer's. This is the dossier's outside-literature section read back with its own caveats attached, on the same day as the lines-of-flight answer to the same record. The paste's last line says the answer came from the 'basic model'."),
+ findings=["EACH TRADITION GIVEN WITH ITS DEPARTURE. Five inheritances are tabled against five departures; a sixth, the history of textual transmission, is added by the composer.",
+           "THE DOSSIER'S READING LIMITS REPORTED. Full-text readings (Marx, Benjamin, Bourdieu, Paul David) are set apart from authors treated 'on the basis of more limited publicly available materials'.",
+           "THE HISTORICAL THESIS HELD APART. 'It values the consequences of the recovery, conditional on the demonstration supplied by the separate programme.'",
+           "THE FOUR STATIONS CARRIED WITH THEIR LIMIT. 'Similarity is not proof of transmission'; the 127 records are 'infrastructure for an exterior order, not proof that the order has already been constituted'.",
+           "THE INVALID NUMBER KEPT INVALID. Eight defects listed; 'The figure fails. That failure is intentional.'",
+           "THREE PHRASES NOT IN THE TEXT. 'Politics VII.3', 'presence and standing' and 'six-stage' were not found as written in #1810."],
+ note_src="", op="pasted 2026-11-28 13:19 EST as one attachment beside the ruling on intake; no words about its source", battery=False)
 
 # ── 10. The quoted first line of #1809 on Google AI Overview ─────────────────────────────────────────────────
 S = "la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128"; paste = (H / "lalaka.txt").read_text(encoding="utf-8")
