@@ -1,8 +1,8 @@
 {
   "chunk_number": 36,
   "first_deposit": 1781,
-  "last_deposit": 1813,
-  "count": 33,
+  "last_deposit": 1814,
+  "count": 34,
   "deposits": [
     {
       "deposit_number": 1781,
@@ -7982,7 +7982,32 @@
           }
         },
         "overall_conformance": "partial"
-      }
+      },
+      "playback": [
+        {
+          "file": "/s/records/1808/AXN-0D6A-playback-20261127.m4a",
+          "label": "Listen: AI playback",
+          "source": "Chrome AI playback (Android)",
+          "recorded": "2026-11-27 18:34 EST",
+          "duration_s": 121.14,
+          "bytes": 2989577,
+          "sha256": "4c458e8fbc750205f70358618de67963516843b5da6a029611fc04ce6de103fe",
+          "codec": "aac",
+          "method": "audio stream copied from a screen recording, not re-encoded",
+          "recording_sha256": "cc00cd911258e81ac9616577c96d243a213c4dac54acc7e93e74a5c2fc9ed720",
+          "recording_bytes": 76453565,
+          "note": "Screen recording of the player's playback from the record page at alexanarch.org/s/records/1808/, from its opening; at the recording's end the player has stopped with its bar full."
+        }
+      ],
+      "modifications": [
+        {
+          "date": "2026-11-27",
+          "field": "playback",
+          "reason": "audio playback attached (Chrome AI playback (Android)); presentation only, the canonical file and AXN untouched",
+          "now": "/s/records/1808/AXN-0D6A-playback-20261127.m4a"
+        }
+      ],
+      "date_modified": "2026-11-27"
     },
     {
       "deposit_number": 1809,
@@ -9446,6 +9471,174 @@
           "now": "AXN:0D8D.MPAI.✨☽🌒✋👁‍🗨🌑"
         }
       ]
+    },
+    {
+      "deposit_number": 1814,
+      "axn": "AXN:0D8F.DATASET.🎨➗❄️🔛💎🔴",
+      "hex": "0D8F",
+      "family": "DATASET",
+      "emoji": "🎨➗❄️🔛💎🔴",
+      "hash": "869314f41cc1885b6205dfeb3ba29fbd843d2b386e07142d0016c1dd8d7bf474",
+      "title": "EA-CORPORA-44: The Forty-Fourth Seating: The Frankfurt School, First Gathering (Walter Benjamin in German, the Gesammelte Schriften cut to his text; the Zeitschrift für Sozialforschung, 1932–1941, pinned, with thirteen articles)",
+      "creator": "Cranes, Rebekah",
+      "date": "2026-11-28",
+      "description": "The forty-fourth seating of the originals shelf, two seats. On 27 November 2026 the Frankfurt School was found absent from the library: no seat for Benjamin, Adorno, Horkheimer, Marcuse or the Institute's journal. This is the first gathering. Seat 44/01 holds Walter Benjamin in German: thirteen first printings as German Wikisource transcribes them, three scans of printings from 1921, 1923 and 1936, and the seven volumes of the Gesammelte Schriften cut to his text, without the editors' reports and notes. Seat 44/02 holds the Zeitschrift für Sozialforschung, 1932–1941: the nine yearly volumes fixed by address and hash, the essay list of each, and thirteen articles by contributors more than seventy years dead (Benjamin, Grossmann, Bouglé, Tönnies, Beard, Neurath, Neumann). The seating copies what is in the commons and pins what is only free to read: the core of the school (Horkheimer, Adorno, Marcuse, Fromm, Pollock, Löwenthal) is in copyright and is held here by address and hash, not as text. What is not seated is declared below with its reason.",
+      "content_type": "Dataset",
+      "license": "CC-BY-4.0 (the deposit and seat records; the seated texts are public domain where the term is the author's life plus seventy years, and the layers taken from German Wikisource carry its CC BY-SA 4.0)",
+      "substrate": "Human–machine collaborative. Rebekah Cranes is a heteronym of Lee Sharks, the standing authority on the EA-CORPORA deposits. The sources were found, fetched, hashed, cut by character offset, checked at named loci and recorded by Claude (TACHYON) in a claude.ai session (01NyzQpk) at the author's direction (2026-11-27 23:13 to 2026-11-28 02:34 EST).",
+      "methodology": "Wikisource pages fetched once each at a pinned revision and reduced to text by code, each layer checked against its page by character count. Internet Archive text layers fetched on 2026-11-27 and 2026-11-28, hashed as fetched, and cut by character offset to the author's text; every cut records its volume and offsets so it can be checked against the whole. Authors' death years checked on 2026-11-28 against German Wikipedia and, for two, the Deutsches Literaturarchiv Marbach authority records. Other hands inside the volumes were searched for by co-author name in all volumes and by reading every heading in the last part of volume IV; what was found is left out and marked in place. Loci verified (missing 0 in both seats); manifests verified.",
+      "falsification_conditions": "A seat is falsified if its files do not verify against its MANIFEST.sha256 at the canonical URL; if a verified locus is absent from the text it names; if a cut does not match the pinned volume at the offsets it records; if a pinned volume's SHA-256 does not match the file at the address given as fetched; if a text seated here as an author's is another's; or if an author treated as more than seventy years dead is not.",
+      "root_axn": "AXN:0D8F.DATASET",
+      "axn_schema_version": "v2",
+      "protocol_version": "alexanarch-deposit-protocol/v1",
+      "axn_canonical": "869314f41cc1885b6205dfeb3ba29fbd843d2b386e07142d0016c1dd8d7bf474",
+      "clusters": [
+        "Symbolic",
+        "Mathematical",
+        "Elemental",
+        "Terminal",
+        "Elemental",
+        "Signal"
+      ],
+      "axn_reading": "Play -> Proof -> Force -> Closure -> Force -> Alarm",
+      "minted_at": "2026-11-28T07:38:21Z",
+      "status": "ACTIVE",
+      "status_authorial": "SELF_SERVE_MINTED",
+      "full_text_path": "/data/texts/AXN-0D8F-text.md",
+      "wiki_article": "EA-CORPORA-44 is the forty-fourth seating of the Crimson Hexagonal Archive's originals shelf, prepared under Rebekah Cranes, the standing authority on the EA-CORPORA deposits, on 28 November 2026, after the Frankfurt School was found absent from the library. It is a first gathering in two seats. Seat 44/01 holds Walter Benjamin in German: thirteen first printings from German Wikisource, three scans of printings of 1921, 1923 and 1936, and the seven volumes of the Gesammelte Schriften cut by character offset to Benjamin's text, without the editors' reports and notes, which are in copyright; eight pieces co-signed with, written by or translated by authors not seventy years dead are left out and marked in place. Seat 44/02 holds the Zeitschrift für Sozialforschung, 1932–1941: nine yearly volumes fixed by Internet Archive address, size and SHA-256, the essay list of each volume, and thirteen articles by contributors more than seventy years dead (Benjamin, Henryk Grossmann, Célestin Bouglé, Ferdinand Tönnies, Charles A. Beard, Otto Neurath, Franz Neumann). The articles of Horkheimer, Adorno, Marcuse, Fromm, Pollock and Löwenthal are in copyright and are pinned, not copied. The seating distinguishes what is in the commons, which it copies, from what is only free to read, which it fixes by address and hash. The text layers cut from scans are uncorrected OCR.",
+      "wiki_status": "AUTHORSHIP_REQUIRED",
+      "entities": [
+        {
+          "subject": "EA-CORPORA-44: The Forty-Fourth Seating: The Frankfurt School, First Gathering (Walter Benjamin in G",
+          "predicate": "created_by",
+          "object": "Cranes, Rebekah",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-44: The Forty-Fourth Seating: The Frankfurt School, First Gathering (Walter Benjamin in G",
+          "predicate": "is_type",
+          "object": "Dataset",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-44: The Forty-Fourth Seating: The Frankfurt School, First Gathering (Walter Benjamin in G",
+          "predicate": "belongs_to_family",
+          "object": "DATASET",
+          "type": "work",
+          "evidence_status": "observed"
+        },
+        {
+          "subject": "EA-CORPORA-44: The Forty-Fourth Seating: The Frankfurt School, First Gathering (Walter Benjamin in G",
+          "predicate": "is_part_of",
+          "object": "Crimson Hexagonal Archive",
+          "type": "work",
+          "evidence_status": "observed"
+        }
+      ],
+      "entity_status": "provisional",
+      "defines_concepts": [],
+      "orcid": "0009-0000-1599-0703",
+      "version": "v1.0",
+      "keywords": [
+        "EA-CORPORA",
+        "originals shelf",
+        "Frankfurt School",
+        "Walter Benjamin",
+        "Gesammelte Schriften",
+        "Passagen-Werk",
+        "Über den Begriff der Geschichte",
+        "Ursprung des deutschen Trauerspiels",
+        "Einbahnstraße",
+        "Kunstwerk essay",
+        "Zeitschrift für Sozialforschung",
+        "Institut für Sozialforschung",
+        "Henryk Grossmann",
+        "Franz Neumann",
+        "Otto Neurath",
+        "Ferdinand Tönnies",
+        "Célestin Bouglé",
+        "Charles A. Beard",
+        "Carl Gustav Jochmann",
+        "commons",
+        "pinned originals"
+      ],
+      "related_identifiers_raw": "AXN deposit #1801 — EA-CORPORA-43: the forty-third seating",
+      "mint_source": {
+        "kind": "github_issue",
+        "issue_number": 0,
+        "repository": "leesharks000/alexanarch",
+        "minted_by_workflow": ".github/workflows/mint-axn.yml",
+        "minted_by_script": "scripts/mint_deposit.py",
+        "minted_via": "self_serve_validated_pr"
+      },
+      "body_status": {
+        "class": "full",
+        "lacuna": false,
+        "recovery_status": "COMPLETE",
+        "residual_chars": 15723,
+        "audited_at": "2026-11-28T07:38:21Z",
+        "audit_version": "mint-time-declaration"
+      },
+      "concepts_attested_none": true,
+      "lexical_attested_none": true,
+      "related_deposits": [
+        {
+          "deposit": 1801,
+          "relation": "EA-CORPORA-43, the preceding seating"
+        }
+      ],
+      "references_concepts": [
+        "Lee Sharks",
+        "Rebekah Cranes",
+        "Revelation First",
+        "TACHYON"
+      ],
+      "references_concept_count": 4,
+      "citations": [],
+      "wikidata_candidates": [],
+      "cha_cross_references": [],
+      "external_metadata_path": "/data/external-metadata/AXN-0D8F.json",
+      "spxi_audit": {
+        "spxi_protocol": "v0.2",
+        "validated_at": "2026-11-28T07:43:38.061695+00:00",
+        "layers": {
+          "layer_1_inscription_anchors": {
+            "present": false,
+            "anchors_found": [
+              "date"
+            ],
+            "anchor_count": 1,
+            "orcid_in_body": false,
+            "creator_in_body": false,
+            "note": "Layer 1 present if at least 3 anchor types appear in body prose. Anchor types include ORCID, creator name, AXN string, hex identifier, sovereign_id, date, deposit number phrase, and authorial-position phrase."
+          },
+          "layer_2_micro_kernels": {
+            "present": false,
+            "fenced_json_blocks": 0,
+            "json_ld_context_markers": 0
+          },
+          "layer_3_content_hash": {
+            "present": true,
+            "canonical_hash": "1ea19736b0f3e2252e113f71cc41001d5ec64e34c4fd9ec45cf69781a777818e",
+            "hash_in_body": false,
+            "note": "Hash is always registered by mint. hash_in_body true means the author inscribed a signature section."
+          },
+          "layer_4_cross_signing": {
+            "present": false,
+            "cross_references_count": 0,
+            "note": "Populated by enrichment via cha_cross_references. Prospective (this deposit → prior deposits) only; retrospective cited_by updates on prior deposits."
+          },
+          "layer_5_external_anchors": {
+            "present": true,
+            "wikidata_qid_count": 0,
+            "external_doi_count": 0,
+            "orcid_present": true
+          }
+        },
+        "overall_conformance": "partial"
+      }
     }
   ]
 }
