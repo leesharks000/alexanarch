@@ -6,7 +6,8 @@ Operator, 2026-11-28 13:39: "there is no reason atoms cant be created for works 
 and score at least one capture for every new deposit"; 13:41: "that could just be standard deposit intake, so that dimensional scoring can
 be standard capture intake".
 
-The set is the 'work' template of rebuild/capture-registry/per-atoms/templates.json under PER-dim rubric v1.1, eleven atoms. Every token,
+The set is the 'work' template of rebuild/capture-registry/per-atoms/templates.json under PER-dim rubric v1.1 (EA-PER-RECALC-01, #1694, §3.4 and §3.9): twelve atoms,
+PER-M author 3, title 3, date 1, claim boundary 2; PER-C framework 2, tradition 2, corpus 2; PER-D purpose 3, commitments 2, lineage 2, identifier 1, deposit chain 1. Every token,
 reference and record quote is taken from the deposit's registry entry; every quote is checked at its locus by per_backlog.quote_ok before
 anything is written (Measurement Sovereignty, #1530 §2.3). Where the record does not state an atom, the atom is 'unknown': not scored,
 listed as the record's gap, never charged to a composition (templates.json, applicability).
@@ -16,6 +17,7 @@ listed as the record's gap, never charged to a composition (templates.json, appl
   date           the record's date, ISO and written                                            quote: the date
   claim boundary the Falsification Conditions the deposit states                               quote: their first sentence     else unknown
   framework      the line and journal the record is placed in                                  quote: those fields             else unknown
+  tradition      the genre the record names, its content type                                  quote: the content type         else unknown
   corpus         the archive's name as the record gives it                                     quote: that name                else unknown
   purpose        the opening of the description                                                quote: its first sentence
   commitments    the licence and the substrate disclosure                                      quote: both
@@ -38,6 +40,7 @@ PS = ROOT / "data/per-atom-sets.json"; CAP = ROOT / "data/EA-WG-CAPTURES-01.json
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 ARCHIVE_NAMES = ["Crimson Hexagonal Archive", "Alexanarch", "alexanarch.org"]
 W = {"author": ("M", 3, "role"), "title": ("M", 3, "token"), "date": ("M", 1, "token"), "claim boundary": ("M", 2, "reading"), "framework": ("C", 2, "token"),
+     "tradition": ("C", 2, "reading"),
      "corpus": ("C", 2, "token"), "purpose": ("D", 3, "reading"), "commitments": ("D", 2, "reading"), "lineage": ("D", 2, "role"), "identifier": ("D", 1, "role"),
      "deposit chain": ("D", 1, "role")}
 
@@ -82,7 +85,12 @@ def build(d, reg):
     fc = d.get("falsification_conditions")
     add("claim boundary", [], re.sub(r"\s+", " ", str(fc)).strip()[:600] if fc else None, [first_sentence(fc)] if fc else [])
     fw = [str(d.get(k)) for k in ("line", "journal") if d.get(k) and isinstance(d.get(k), str)]
+    # Where line and journal are empty the framework is UNKNOWN. A journal named inside the content type was tried as the framework on
+    # 2026-11-28 and set aside the same day: the readers' sets give frameworks as programmes and series (Semantic Economy, Machine-Mediated
+    # Reception Studies), and a journal no composition names would be charged as an erasure on the builder's guess.
     add("framework", fw, None, fw)
+    ct = str(d.get("content_type") or "").strip()   # the genre the record names (EA-PER-RECALC-01 §3.4; the existing work sets quote content_type for it)
+    add("tradition", [], ct or None, [ct] if ct else [])
     blob = PB.N(" ‖ ".join(PB.strings(d)))
     add("corpus", ARCHIVE_NAMES, None, [a for a in ARCHIVE_NAMES if PB.N(a) in blob][:1])
     desc = re.sub(r"\s+", " ", str(d.get("description") or "")).strip()
@@ -129,6 +137,16 @@ def main(argv):
     reg = json.loads((ROOT / "data/registry.json").read_text(encoding="utf-8"))["deposits"]; by = {d["deposit_number"]: d for d in reg}
     sets = json.loads(PS.read_text(encoding="utf-8")); got = have(sets)
     nums = backlog_targets() if "--backlog" in argv else [int(a) for a in argv if a.isdigit()]
+    if "--refresh" in argv:   # rebuild, in place, the sets this script built itself (a change to the builder); sets made by readers are never touched
+        mine = [e for e in sets["entities"] if str(e.get("state", "")).startswith("deposit intake (automatic")]; k = 0
+        for e in mine:
+            n = e["records"][0]["deposit"]; s, gaps = build(by[n], reg)
+            if s["atoms"] != e["atoms"]:
+                e["atoms"] = s["atoms"]; e["required"] = [a["atom"] for a in s["atoms"] if a["applicability"] == "required"]; e["notes"] = s["notes"]; k += 1
+        print(f"refreshed {k} of {len(mine)} automatic sets")
+        if "--merge" in argv:
+            PS.write_text(json.dumps(sets, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        return 0
     today = datetime.date.today().isoformat(); made = []; skipped = []; missing = []
     for n in nums:
         if n not in by: missing.append(n); continue

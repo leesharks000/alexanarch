@@ -1,6 +1,6 @@
 """Dimensional PER for the thirteen captures of 2026-11-28, scored from the intake reader's spans against the atom sets built automatically
 for their works the same day (scripts/build_work_atom_set.py), by scripts/per_intake_score.py. A span is the reader's evidence that an atom
-is present; None is read and absent. Title, date and corpus are found by token. --check verifies and prints, writing nothing."""
+is present; None is read and absent. Title, date and corpus are found by token. Rescored the same day after the sets and the readings were checked against EA-PER-RECALC-01 (#1694). --check verifies and prints, writing nothing."""
 import json, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[3]; sys.path.insert(0, str(ROOT / "scripts"))
 import per_intake_score as PIS
@@ -44,7 +44,7 @@ R = {
  "rejected-1806-lines-of-flight-chatgpt-20261128": (1806, "Lee Sharks's From the Position of the Rejected", dict(
    author="Lee Sharks's From the Position of the Rejected", **{"claim boundary": "The essay does not establish Aristotle's subjective feelings or intentions."},
    purpose="It makes it possible to read institutions, texts and intellectual traditions not from the position of the people they recognize as their authors, citizens or legitimate inheritors",
-   commitments=None, lineage="Extends the future-reader sequence through Plato.", identifier="Lee Sharks, #1806 — From the Position of the Rejected (v1.1)",
+   commitments=None, lineage="Sappho 31 and the Inscription of the Future Reader — the future-reader framework.", identifier="Lee Sharks, #1806 — From the Position of the Rejected (v1.1)",
    **{"deposit chain": "Version 1.1 makes a particularly important move from political theory to material history."})),
  "inferential-provenance-riemann-1804-lines-of-flight-chatgpt-20261128": (1804, "Sen Kuro's The Inferential Provenance of the Riemann Result", dict(
    author="Sen Kuro's The Inferential Provenance of the Riemann Result", **{"claim boundary": "It is not proof that Claude independently authored the declaration"},
@@ -66,10 +66,28 @@ R = {
    author="sound poem by Lee Sharks", purpose="an untitled ten-line sound poem by Lee Sharks", commitments=None, lineage=None,
    identifier="cataloged in the Alexanarch archive under deposit #1809", **{"deposit chain": None, "claim boundary": None})),
 }
+TRAD = {
+ "matthew-from-revelation-1812-lines-of-flight": "the first substantial Gospel-level demonstration of a proposed generative philology",
+ "matthew-from-revelation-1812-arguments": "A philological argument",
+ "how-much-you-wanna-bet-1810-lines-of-flight": "Brings these strands together into the valuation dossier.",
+ "how-much-you-wanna-bet-1810-outside-the-archive": "an experimental work in critical political economy of knowledge, with biblical textual history as its test case",
+ "how-much-you-wanna-bet-1810-cost-to-the-establishment": "A paper operating under a Valuation Protocol",
+ "revelation-first-not-the-first-revelation-1811": "The packet leads from protecting the identity of a thesis",
+ "through-anothers-mouth-1807": "The dialogue establishes five distinct speaking positions:",
+ "rejected-1806": "The essay's central proposition is that political order can turn a condition produced by circumstance into an apparent fact of nature.",
+ "inferential-provenance-riemann-1804": "The Riemann case supplies the demonstration.",
+ "what-the-filters-kept-1803": "#1803 is the technical notebook: the evidence, code, frozen plans, result files, methodological qualifications and revision history.",
+ "who-benefits-from-bad-inference-1802": "The paper's most consequential theoretical move is its demand-formation corollary (§16).",
+ "la-la-ka-ka-la": "sound poem"
+}
+SS = {"rejected-1806-lines-of-flight-chatgpt-20261128": [{"proxy": "scholarly consensus", "span": "belongs to the wider archive's reconstruction, not to an established scholarly consensus",
+       "displaced": "argument", "internal": False}]}   # EA-PER-RECALC-01 §3.9.3: a proxy outside the entity is recorded and the atoms are scored as found
 reg = json.loads(P.read_text(encoding="utf-8")); E = {e["slug"]: e for e in reg["entries"]}; out = {}; bad = []
 for slug, (dep, reached, atoms) in R.items():
     e = E[slug]; S = PIS.resolve(dep); req = set(S["required"])
+    atoms = dict(atoms, tradition=next(v for k, v in TRAD.items() if slug.startswith(k)))
     reading = {"target": dep, "reached": {"kind": "same", "span": reached, "basis": "the work named and read"}, "atoms": {k: v for k, v in atoms.items() if k in req}, "src": True,
+               "standing_substitutions": SS.get(slug) or [],
                "notes": "Scored 2026-11-28 against the set built automatically from the record (%s). Not required, because the record does not state them: %s." % (S["id"], ", ".join(a["atom"] for a in S["atoms"] if a["applicability"] != "required") or "none")}
     pd, why = PIS.score(slug, e["transcript"], e["q"], e["date"], e["surface"], reading, brief="rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py")
     if pd: out[slug] = pd; print(f"{pd['scores']['PER']:.2f}  M {pd['scores']['M']} C {pd['scores']['C']} D {pd['scores']['D']}  {slug[:58]}  absent: {[a['atom'] for a in pd['atoms'] if not a['present']]}")
@@ -77,10 +95,10 @@ for slug, (dep, reached, atoms) in R.items():
 print(len(out), "scored;", len(bad), "not scored")
 if "--check" in sys.argv or bad: sys.exit(1 if bad else 0)
 for slug, pd in out.items():
-    e = E[slug]; e["per_dim"] = pd; e["per_dim_pending"] = None
+    e = E[slug]; _was = (e.get("per_dim") or {}).get("scores"); e["per_dim"] = pd; e["per_dim_pending"] = None
     for o in e.get("observations") or []:
-        if not o.get("per_dim"): o["per_dim"] = pd; o["per_dim_pending"] = None
-    reg["correction_log"].append({"date": "2026-11-28", "slug": slug, "fields": ["per_dim", "per_dim_pending"], "was": {"per_dim": None, "per_dim_pending": "no atom set yet"},
-        "now": {"per_dim": pd["scores"], "target": pd["target"]["ent"]}, "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)", "by": "the session (2026-11-28)"})
+        o["per_dim"] = pd; o["per_dim_pending"] = None
+    reg["correction_log"].append({"date": "2026-11-28", "slug": slug, "fields": ["per_dim", "per_dim_pending"], "was": {"per_dim": _was},
+        "now": {"per_dim": pd["scores"], "target": pd["target"]["ent"]}, "reason": "rescored against EA-PER-RECALC-01 (#1694): the tradition atom added to the automatic sets (§3.4), lineage named by word (§3.10), one standing substitution recorded (§3.9.3)", "by": "the session (2026-11-28)"})
 m = re.fullmatch(r"(\d+)\.(\d+)", reg["version"]); reg["version"] = f"{m.group(1)}.{int(m.group(2)) + 1}"
 P.write_text(json.dumps(reg, ensure_ascii=False, indent=1), encoding="utf-8"); print("written; registry", reg["version"])
