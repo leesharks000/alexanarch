@@ -133,7 +133,7 @@ STAGE_ORDER = [
     # api/counts.json sat at 1,539 while the registry reached 1,647. Every fleet
     # page that binds data-count reads this file. commit's `git add -A` carries it.
     "counts",
-    "wiki", "sitemap", "oai", "interlink", "enrich", "symbolon", "identity",
+    "wiki", "sitemap", "oai", "interlink", "enrich", "atoms", "symbolon", "identity",
     # record renders AFTER interlink/enrich (2026-08-09): the page carries
     # Cross-References from the citation graph, so the graph must exist first.
     # #1443/#1444 rendered empty traversal sections under the old order.
@@ -523,6 +523,13 @@ def stage_enrich(args):
         "--wikidata", "--openalex", "--datacite", "--spxi"], check=False)
 
 
+def stage_atoms(args):
+    # PER atom set at deposit (operator, 2026-11-28 13:40: "the atoms could be created at time of a work's deposit, in anticipation of its
+    # search and scoring"; 13:41: "that could just be standard deposit intake"). Built from the registry entry, every quote checked at its
+    # locus; a deposit that already has a set, or is a dataset, is left alone. Never blocks the pipeline.
+    sh([sys.executable, SCRIPTS / "build_work_atom_set.py", str(args.deposit_number), "--merge"], check=False)
+
+
 def stage_symbolon(args):
     """Re-verify stored sealed cores against their kernels; refresh the mirror
     manifest. Runs on every mint so "verified" carries a date rather than a
@@ -738,7 +745,7 @@ STAGES = {
     "pdf": stage_pdf, "body-index": stage_body_index,
     "counts": stage_counts, "wiki": stage_wiki,
     "sitemap": stage_sitemap, "interlink": stage_interlink,
-    "enrich": stage_enrich, "symbolon": stage_symbolon,
+    "enrich": stage_enrich, "atoms": stage_atoms, "symbolon": stage_symbolon,
     "identity": stage_identity,
     "commit": stage_commit, "verify": stage_verify,
     "oai": stage_oai,

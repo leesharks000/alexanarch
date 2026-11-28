@@ -294,6 +294,18 @@ def seat_flat(draft, registry, schema):
     # refused: a capture seated without per_dim carries per_dim_pending on its record — since, reason (a draft may state one
     # in per_dim_pending.reason, e.g. "no atom set for the target yet") and breach (no reason given) — and
     # check_capture_registry.py counts every unscored observation and every one that carries no pending record.
+    # SCORED AT INTAKE FROM THE READER'S SPANS (operator, 2026-11-28 13:41: atom sets at deposit intake "so that dimensional scoring can be
+    # standard capture intake"). A draft that carries per_reading (the target, what was reached, a verbatim span or null per atom) and no
+    # per_dim is scored here by scripts/per_intake_score.py against the target's atom set. Where it cannot be scored (no set, an atom
+    # unread, a span not in the transcript) the reason is recorded as the pending reason; nothing is refused.
+    if not draft.get("per_dim") and draft.get("per_reading"):
+        sys.path.insert(0, str(ROOT / "scripts")); import per_intake_score as _pis
+        _pd, _why = _pis.score(draft.get("slug") or "draft", draft.get("transcript") or "", draft.get("q"), draft.get("date"), draft.get("surface"), draft["per_reading"])
+        if _pd:
+            draft["per_dim"] = _pd; print("   PER-DIM    scored at intake: %s" % _pd["scores"])
+        else:
+            draft["per_dim_pending"] = dict(draft.get("per_dim_pending") or {}, reason="per_reading supplied and not scored: " + _why)
+            print("   PER-DIM    per_reading supplied and not scored: " + _why)
     if not draft.get("per_dim"):
         import datetime as _dt0
         _pend = dict(draft.get("per_dim_pending") or {})
