@@ -134,12 +134,119 @@
  },
  "per_note": "Author named: True (Fraction, Rex); archive named: True; record number given: True; sources shown: 10 chips or image cards as pasted.",
  "availability": null,
- "per_dim": null,
- "per_dim_pending": {
-  "since": "2026-11-28",
-  "reason": "no atom set yet for this work as a target",
-  "breach": false
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f",
+   "name": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Fraction maps these onto the dossier's argument"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It does not claim to establish the historical thesis itself."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Crimson Hexagonal Archive"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It is an attempt to make a contested historical and canonical recovery legible as a problem in political economy"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The work's own revision and falsification provisions acknowledge these problems rather than concealing them."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "A Single Sparrow (#1791), which establishes the Sappho–Plato relationship."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "How Much You Wanna Bet? — Alexanarch deposit #1810, v1.1"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Section 8e.5 corrects an earlier mathematical treatment"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.0,
+   "PER": 0.05
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol (SEVP-VAL-003, Alexanarch deposit #1810, AXN:0D7C); the work named and read",
+  "read": {
+   "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+   "on": "2026-11-28",
+   "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+   "external": false,
+   "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f). Not required, because the record does not state them: framework."
+  }
  },
+ "per_dim_pending": null,
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -238,7 +345,7 @@
  },
  "notice": null,
  "axn_root": "AXN:0D99.CAPTURE",
- "axn": "AXN:0D99.CAPTURE.🌇⏏️☽■💫🕐",
+ "axn": "AXN:0D99.CAPTURE.🧡🏺👋♄🌳🎵",
  "scope": "archive",
  "scope_basis": "originator archive; archive sources cited",
  "null_basis": null,

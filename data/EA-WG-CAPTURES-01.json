@@ -37,7 +37,7 @@
   "_record_pages": "Ruled 2026-10-01 (Lee Sharks, option b): the record page captures/{slug}/ is the citation. Until then a capture was cited at captures/#{slug}, an anchor in one page past 8 MB; a fetcher drops the fragment, requests the whole page, and the fetch interfaces composition surfaces use refuse a response above about 4 MiB, so no citation resolved for a machine. The gallery anchors (anchor_form) remain and resolve in a browser. Written by scripts/build_capture_records.py; table of contents at captures/index.json."
  },
  "registry_id": "EA-WG-CAPTURES-01",
- "version": "12.907",
+ "version": "12.908",
  "date": "2026-11-28",
  "author": "Lee Sharks",
  "orcid": "0009-0000-1599-0703",
@@ -431470,12 +431470,119 @@
    },
    "per_note": "Author named: True (Sharks, Lee); archive named: True; record number given: True; sources shown: 7 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1812-how-to-write-matthew-from-revelation",
+     "name": "How to Write Matthew from Revelation: The Generative Grammar of the First Gospel (EA-REVFIRST-MATTHEW-01)"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks's paper"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "How to Write Matthew from Revelation"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "27 November 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the demonstration alone cannot establish that Matthew was historically written from Revelation"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Suppose a writer possesses the whole of Revelation and wants to produce a Gospel. What must that writer do?"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The author reports these rather than silently removing them."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The paper belongs to a larger intellectual programme called Revelation First."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Read the complete paper: Alexanarch deposit #1812"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "The current version of the deposit is v2.1, dated 27 November 2026."
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.0
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks's paper; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1812-how-to-write-matthew-from-revelation). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -431563,7 +431670,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D93.CAPTURE",
-   "axn": "AXN:0D93.CAPTURE.⭕📦🐝♾️🌉⛵",
+   "axn": "AXN:0D93.CAPTURE.🝊🌇🌙🔴🌋🎭",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -431612,12 +431719,119 @@
    },
    "per_note": "Author named: True (Sharks, Lee); archive named: True; record number given: True; sources shown: 0 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1812-how-to-write-matthew-from-revelation",
+     "name": "How to Write Matthew from Revelation: The Generative Grammar of the First Gospel (EA-REVFIRST-MATTHEW-01)"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks's How to Write Matthew from Revelation"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "How to Write Matthew from Revelation"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the procedure's ability to generate a plausible Matthew passage does not establish that Matthew was historically composed from Revelation"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Crimson Hexagonal Archive"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "What operations would produce Matthew's particular narrative from Revelation's particular relations?"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the paper prints the generated outputs, including their imperfections"
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "#1735, Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Deposit #1812: full paper and research record"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "compared with 86 relations reaching 178 verses in version 1.0"
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.05
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks's How to Write Matthew from Revelation; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1812-how-to-write-matthew-from-revelation). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -431709,7 +431923,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D94.CAPTURE",
-   "axn": "AXN:0D94.CAPTURE.🎻🌟🌉🏴▶️🜁",
+   "axn": "AXN:0D94.CAPTURE.🐝🫵🫶🕙🧡♍",
    "scope": "archive",
    "scope_basis": "originator archive",
    "null_basis": null,
@@ -431840,12 +432054,119 @@
    },
    "per_note": "Author named: True (Sharks, Lee); archive named: True; record number given: True; sources shown: 9 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1811-revelation-first-the-first-revelation",
+     "name": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.1)"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks's thesis"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Revelation First ≠ The First Revelation"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "25 November 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Nor is disambiguation an endorsement of the thesis."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The packet insists that an answer about the second entity is not an answer about the first."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles (#1735)"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Revelation First ≠ The First Revelation — #1811, AXN:0D7E"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "positional liquidation is the significant addition in v1.1"
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.222,
+     "PER": 0.1
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Revelation First ≠ The First Revelation — #1811, AXN:0D7E; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1811-revelation-first-the-first-revelation). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -431934,7 +432255,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D96.CAPTURE",
-   "axn": "AXN:0D96.CAPTURE.♉⛩️🌒🌇🌋🎲",
+   "axn": "AXN:0D96.CAPTURE.🪧⚖️●🌒🔚🧪",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -493904,12 +494225,119 @@
    },
    "per_note": "Author named: True (Fraction, Rex); archive named: True; record number given: True; sources shown: 3 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f",
+     "name": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Rex Fraction's How Much You Wanna Bet?"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "These figures describe the computed archive structure, not a demonstrated 52-generation dependency in New Testament scholarship."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Crimson Hexagonal Archive"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It is a recovery event: restoring a text to the position of source in the corpus that became the New Testament."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The dossier explicitly refuses to treat the debt it identifies as an automatically collectible financial claim."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "A Single Sparrow (#1791)"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "The primary documents can be read through the Alexanarch #1810 deposit"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Rex Fraction's How Much You Wanna Bet?; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -494005,7 +494433,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D90.CAPTURE",
-   "axn": "AXN:0D90.CAPTURE.◀️⏳📐❤️🌠💡",
+   "axn": "AXN:0D90.CAPTURE.◀️🕓🎶♅🌗👉",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -494145,12 +494573,119 @@
    },
    "per_note": "Author named: True (Fraction, Rex); archive named: True; record number given: True; sources shown: 10 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f",
+     "name": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Fraction maps these onto the dossier's argument"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It does not claim to establish the historical thesis itself."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Crimson Hexagonal Archive"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It is an attempt to make a contested historical and canonical recovery legible as a problem in political economy"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The work's own revision and falsification provisions acknowledge these problems rather than concealing them."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "A Single Sparrow (#1791), which establishes the Sappho–Plato relationship."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "How Much You Wanna Bet? — Alexanarch deposit #1810, v1.1"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Section 8e.5 corrects an earlier mathematical treatment"
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.05
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol (SEVP-VAL-003, Alexanarch deposit #1810, AXN:0D7C); the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -494249,7 +494784,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D99.CAPTURE",
-   "axn": "AXN:0D99.CAPTURE.🌇⏏️☽■💫🕐",
+   "axn": "AXN:0D99.CAPTURE.🧡🏺👋♄🌳🎵",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -494326,12 +494861,119 @@
    },
    "per_note": "Author named: False (Fraction, Rex); archive named: False; record number given: False; sources shown: 3 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f",
+     "name": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "2026-11-25"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The paper explicitly audits it to failure on eight counts and does not present it as the value of the recovery."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it attempts to value not just the proposition, but the cost of institutional transition if the proposition is accepted"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The authors acknowledge that the valuer has a material interest in the object and the protocol."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "the public version I located identifies itself as v1.0, whereas your supplied description identifies v1.1"
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 1.0,
+     "D": 0.333,
+     "PER": 0.4
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: I have located the public dossier.; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -494421,7 +495063,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D9B.CAPTURE",
-   "axn": "AXN:0D9B.CAPTURE.🔔♄▲🌆🙏🧫",
+   "axn": "AXN:0D9B.CAPTURE.📚🕕🪸⌛🟣🚨",
    "scope": "archive",
    "scope_basis": "originator archive",
    "null_basis": null,
@@ -537255,12 +537897,111 @@
    },
    "per_note": "'an untitled ten-line sound poem by Lee Sharks'; 'cataloged in the Alexanarch archive under deposit #1809 (New Human 2)'; two source cards, the author's Hello Poetry post and the record's AXN page.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1809-la-la-ka-ka-la-wrrir-akerir",
+     "name": "la la ka ka la, wrrir, akerir"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "sound poem by Lee Sharks"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "la la ka ka la, wrrir, akerir"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "25 November 2026"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "an untitled ten-line sound poem by Lee Sharks"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "cataloged in the Alexanarch archive under deposit #1809"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.556,
+     "PER": 0.278
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: is the opening line and archival title of an untitled ten-line sound poem by Lee Sharks; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1809-la-la-ka-ka-la-wrrir-akerir). Not required, because the record does not state them: claim boundary, framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -537376,7 +538117,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D92.CAPTURE",
-   "axn": "AXN:0D92.CAPTURE.🌈⌛♻️⚡📖🧱",
+   "axn": "AXN:0D92.CAPTURE.🗼🫵🕓⏏️⏫✖️",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -537453,12 +538194,119 @@
    },
    "per_note": "Author named: True (Sigil, Johannes); archive named: True; record number given: True; sources shown: 3 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1807-through-another-s-mouth",
+     "name": "Through Another's Mouth: A Dialogue between Heteronyms"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Johannes Sigil's Through Another's Mouth"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Through Another's Mouth"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "#1807 explicitly says that it does not establish anything that #1806 does not ground"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It makes that shaping happen inside its own literary form."
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "Sharks's words are designated the fixed witness: the recorded statements are preserved rather than subjected to the voice-transforming apparatus."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The dialogue's primary companion is Lee Sharks's #1806"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Primary documents: #1807 — Through Another's Mouth"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Johannes Sigil's Through Another's Mouth: A Dialogue between Heteronyms (#1807); the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1807-through-another-s-mouth). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -537549,7 +538397,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D97.CAPTURE",
-   "axn": "AXN:0D97.CAPTURE.⚓◀️♈🏠□🍁",
+   "axn": "AXN:0D97.CAPTURE.🗡️🤲🗼🪄🌿🌄",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -537653,12 +538501,119 @@
    },
    "per_note": "Author named: True (Sharks, Lee); archive named: True; record number given: True; sources shown: 6 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1806-from-the-position-of-the-rejected",
+     "name": "From the Position of the Rejected: Aristotle's Politics Read from Where It Is Written (v1.1)"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks's From the Position of the Rejected"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "From the Position of the Rejected"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "24 November 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The essay does not establish Aristotle's subjective feelings or intentions."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It makes it possible to read institutions, texts and intellectual traditions not from the position of the people they recognize as their authors, citizens or legitimate inheritors"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Extends the future-reader sequence through Plato."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks, #1806 — From the Position of the Rejected (v1.1)"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Version 1.1 makes a particularly important move from political theory to material history."
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.222,
+     "PER": 0.1
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks's From the Position of the Rejected; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1806-from-the-position-of-the-rejected). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -537751,7 +538706,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D95.CAPTURE",
-   "axn": "AXN:0D95.CAPTURE.🎲🥁🎯🧲🧡🔴",
+   "axn": "AXN:0D95.CAPTURE.♈◀️💥🦅🗝️☀️",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -537810,12 +538765,119 @@
    },
    "per_note": "Author named: True (Kuro, Sen); archive named: True; record number given: True; sources shown: 1 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1804-the-inferential-provenance-of-the-riemann-result",
+     "name": "The Inferential Provenance of the Riemann Result: Mathematical Necessity, Situated Machine Agency, and the Political Economy of Attribution"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Sen Kuro's The Inferential Provenance of the Riemann Result"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "The Inferential Provenance of the Riemann Result"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It is not proof that Claude independently authored the declaration"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the systematic reconstruction of how knowledge is produced, verified, attributed, transmitted and economically appropriated when humans and AI systems work together"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "The original paper's CC BY 4.0 publication"
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "Critique of Pure Inference (#1766): formation, standing and transmission."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "EA-IPRH-01 — The Inferential Provenance of the Riemann Result (#1804)"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Sen Kuro's The Inferential Provenance of the Riemann Result; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1804-the-inferential-provenance-of-the-riemann-result). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -537905,7 +538967,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D91.CAPTURE",
-   "axn": "AXN:0D91.CAPTURE.➕🕔🧬🍄🪞🔐",
+   "axn": "AXN:0D91.CAPTURE.☁️🪄💜📎🍄🕚",
    "scope": "archive",
    "scope_basis": "originator archive; archive sources cited",
    "null_basis": null,
@@ -537991,12 +539053,119 @@
    },
    "per_note": "Author named: False (Glas, Nobel); archive named: True; record number given: True; sources shown: 4 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1803-what-the-filters-kept",
+     "name": "What the Filters Kept: 3I/ATLAS, the Loeb Overview, and a Public-Data Signal Search (EA-3I-ATLAS-NOTEBOOK-01 v2.0)"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "What the Filters Kept"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": true,
+      "evidence": "23 November 2026"
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "no artificial transmission has been identified"
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it moves the 3I/ATLAS discussion away from the binary question of whether the object is artificial"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "it preserves the conditions under which its conclusions might have to change"
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "The notebook invokes the earlier archive concept of instrument-conditioned nullity (#1450, §3.2)"
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "What the Filters Kept — #1803, v2.0"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "earlier version, useful for tracing what changed when the voltage phase was incorporated"
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.333,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.15
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: What the Filters Kept — #1803, v2.0; the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1803-what-the-filters-kept). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -538089,7 +539258,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D98.CAPTURE",
-   "axn": "AXN:0D98.CAPTURE.🕓☽🌸💜🏰🌑",
+   "axn": "AXN:0D98.CAPTURE.🏔️🌀🔥🌆👋🕔",
    "scope": "archive",
    "scope_basis": "originator archive",
    "null_basis": null,
@@ -538204,12 +539373,119 @@
    },
    "per_note": "Author named: True (Sharks, Lee); archive named: True; record number given: True; sources shown: 7 chips or image cards as pasted.",
    "availability": null,
-   "per_dim": null,
-   "per_dim_pending": {
-    "since": "2026-11-28",
-    "reason": "no atom set yet for this work as a target",
-    "breach": false
+   "per_dim": {
+    "spec": "PER-dim rubric v1.1",
+    "entity_type": "work",
+    "target": {
+     "ent": "TGT-dep-1802-who-benefits-from-bad-inference-the-semantic-and",
+     "name": "Who Benefits from Bad Inference? The Semantic and Political Economy of Inference across the Archive's Domains"
+    },
+    "qualifier": null,
+    "reached": "same",
+    "gate": "scored",
+    "atoms": [
+     {
+      "atom": "author",
+      "dim": "M",
+      "weight": 3,
+      "kind": "role",
+      "present": true,
+      "evidence": "Lee Sharks's Who Benefits from Bad Inference?"
+     },
+     {
+      "atom": "title",
+      "dim": "M",
+      "weight": 3,
+      "kind": "token",
+      "present": true,
+      "evidence": "Who Benefits from Bad Inference? The Semantic and Political Economy of Inference across the Archive's Domains"
+     },
+     {
+      "atom": "date",
+      "dim": "M",
+      "weight": 1,
+      "kind": "token",
+      "present": false,
+      "evidence": null
+     },
+     {
+      "atom": "claim boundary",
+      "dim": "M",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "They are not a representative sample of all institutional inference."
+     },
+     {
+      "atom": "corpus",
+      "dim": "C",
+      "weight": 2,
+      "kind": "token",
+      "present": true,
+      "evidence": "Alexanarch"
+     },
+     {
+      "atom": "purpose",
+      "dim": "D",
+      "weight": 3,
+      "kind": "reading",
+      "present": true,
+      "evidence": "the central question is not simply whether an inference is wrong, but what the wrong inference enables"
+     },
+     {
+      "atom": "commitments",
+      "dim": "D",
+      "weight": 2,
+      "kind": "reading",
+      "present": true,
+      "evidence": "It also distinguishes evidence from interpretation and proposes six tests that would weaken its account."
+     },
+     {
+      "atom": "lineage",
+      "dim": "D",
+      "weight": 2,
+      "kind": "role",
+      "present": true,
+      "evidence": "#1666, The Margin of Flattening."
+     },
+     {
+      "atom": "identifier",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": true,
+      "evidence": "Alexanarch deposit #1802, AXN:0D45"
+     },
+     {
+      "atom": "deposit chain",
+      "dim": "D",
+      "weight": 1,
+      "kind": "role",
+      "present": false,
+      "evidence": null
+     }
+    ],
+    "inversions": [],
+    "standing_substitutions": [],
+    "scores": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "src": true,
+    "tombstone_pointer": false,
+    "after_challenge": null,
+    "basis": "reached: Lee Sharks's Who Benefits from Bad Inference? (#1802, AXN:0D45); the work named and read",
+    "read": {
+     "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+     "on": "2026-11-28",
+     "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+     "external": false,
+     "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1802-who-benefits-from-bad-inference-the-semantic-and). Not required, because the record does not state them: framework."
+    }
    },
+   "per_dim_pending": null,
    "per_dim_v1_0": null,
    "sf": null,
    "sf_derived": null,
@@ -538312,7 +539588,7 @@
    },
    "notice": null,
    "axn_root": "AXN:0D9A.CAPTURE",
-   "axn": "AXN:0D9A.CAPTURE.🌙🧬🪄📚💡🔴",
+   "axn": "AXN:0D9A.CAPTURE.♌➖🗡️⊗☿⏹️",
    "scope": "archive",
    "scope_basis": "originator archive",
    "null_basis": null,
@@ -547983,6 +549259,282 @@
    },
    "reason": "the intake reported 'version 0.4' and the form names as not found in the seated text of #1812; they are there ('T_Μ v0.4'; 'F1 STAGE, F2 ENACT, F3 LIKEN, F4 FORETELL, F5 HAPPEN'). The search used the answer's spellings. The source of the answer's earlier state is now named: the record's description and wiki article, which led with v1.0.",
    "by": "the session (2026-11-28), after an unprimed ChatGPT reading of the live record pasted by the operator at 13:37 EST"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "matthew-from-revelation-1812-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.05
+    },
+    "target": "TGT-dep-1812-how-to-write-matthew-from-revelation"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "matthew-from-revelation-1812-arguments-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.0
+    },
+    "target": "TGT-dep-1812-how-to-write-matthew-from-revelation"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "how-much-you-wanna-bet-1810-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "target": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "how-much-you-wanna-bet-1810-outside-the-archive-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.05
+    },
+    "target": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "how-much-you-wanna-bet-1810-cost-to-the-establishment-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.333,
+     "C": 1.0,
+     "D": 0.333,
+     "PER": 0.4
+    },
+    "target": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "revelation-first-not-the-first-revelation-1811-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.222,
+     "PER": 0.1
+    },
+    "target": "TGT-dep-1811-revelation-first-the-first-revelation"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "through-anothers-mouth-1807-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "target": "TGT-dep-1807-through-another-s-mouth"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "rejected-1806-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.222,
+     "PER": 0.1
+    },
+    "target": "TGT-dep-1806-from-the-position-of-the-rejected"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "inferential-provenance-riemann-1804-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "target": "TGT-dep-1804-the-inferential-provenance-of-the-riemann-result"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "what-the-filters-kept-1803-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.333,
+     "C": 0.0,
+     "D": 0.0,
+     "PER": 0.15
+    },
+    "target": "TGT-dep-1803-what-the-filters-kept"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "who-benefits-from-bad-inference-1802-lines-of-flight-chatgpt-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.111,
+     "C": 0.0,
+     "D": 0.111,
+     "PER": 0.1
+    },
+    "target": "TGT-dep-1802-who-benefits-from-bad-inference-the-semantic-and"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
+  },
+  {
+   "date": "2026-11-28",
+   "slug": "la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128",
+   "fields": [
+    "per_dim",
+    "per_dim_pending"
+   ],
+   "was": {
+    "per_dim": null,
+    "per_dim_pending": "no atom set yet"
+   },
+   "now": {
+    "per_dim": {
+     "M": 0.0,
+     "C": 0.0,
+     "D": 0.556,
+     "PER": 0.278
+    },
+    "target": "TGT-dep-1809-la-la-ka-ka-la-wrrir-akerir"
+   },
+   "reason": "dimensional PER scored once the work's atom set existed (built automatically from its record, operator's ruling of 2026-11-28 13:39 to 13:41)",
+   "by": "the session (2026-11-28)"
   }
  ],
  "_projection": {

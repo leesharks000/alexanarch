@@ -71,12 +71,119 @@
  },
  "per_note": "Author named: False (Fraction, Rex); archive named: False; record number given: False; sources shown: 3 chips or image cards as pasted.",
  "availability": null,
- "per_dim": null,
- "per_dim_pending": {
-  "since": "2026-11-28",
-  "reason": "no atom set yet for this work as a target",
-  "breach": false
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f",
+   "name": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "How Much You Wanna Bet? The Value of a Recovery, from Both Ends"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "2026-11-25"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The paper explicitly audits it to failure on eight counts and does not present it as the value of the recovery."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "it attempts to value not just the proposition, but the cost of institutional transition if the proposition is accepted"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The authors acknowledge that the valuer has a material interest in the object and the protocol."
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "the public version I located identifies itself as v1.0, whereas your supplied description identifies v1.1"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.333,
+   "C": 1.0,
+   "D": 0.333,
+   "PER": 0.4
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: I have located the public dossier.; the work named and read",
+  "read": {
+   "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+   "on": "2026-11-28",
+   "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+   "external": false,
+   "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1810-how-much-you-wanna-bet-the-value-of-a-recovery-f). Not required, because the record does not state them: framework."
+  }
  },
+ "per_dim_pending": null,
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -166,7 +273,7 @@
  },
  "notice": null,
  "axn_root": "AXN:0D9B.CAPTURE",
- "axn": "AXN:0D9B.CAPTURE.🔔♄▲🌆🙏🧫",
+ "axn": "AXN:0D9B.CAPTURE.📚🕕🪸⌛🟣🚨",
  "scope": "archive",
  "scope_basis": "originator archive",
  "null_basis": null,

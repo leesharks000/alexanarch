@@ -64,12 +64,111 @@
  },
  "per_note": "'an untitled ten-line sound poem by Lee Sharks'; 'cataloged in the Alexanarch archive under deposit #1809 (New Human 2)'; two source cards, the author's Hello Poetry post and the record's AXN page.",
  "availability": null,
- "per_dim": null,
- "per_dim_pending": {
-  "since": "2026-11-28",
-  "reason": "no atom set yet for this work as a target",
-  "breach": false
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-dep-1809-la-la-ka-ka-la-wrrir-akerir",
+   "name": "la la ka ka la, wrrir, akerir"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "sound poem by Lee Sharks"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "la la ka ka la, wrrir, akerir"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "25 November 2026"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "an untitled ten-line sound poem by Lee Sharks"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "cataloged in the Alexanarch archive under deposit #1809"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.556,
+   "PER": 0.278
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: is the opening line and archival title of an untitled ten-line sound poem by Lee Sharks; the work named and read",
+  "read": {
+   "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+   "on": "2026-11-28",
+   "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+   "external": false,
+   "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1809-la-la-ka-ka-la-wrrir-akerir). Not required, because the record does not state them: claim boundary, framework."
+  }
  },
+ "per_dim_pending": null,
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -185,7 +284,7 @@
  },
  "notice": null,
  "axn_root": "AXN:0D92.CAPTURE",
- "axn": "AXN:0D92.CAPTURE.🌈⌛♻️⚡📖🧱",
+ "axn": "AXN:0D92.CAPTURE.🗼🫵🕓⏏️⏫✖️",
  "scope": "archive",
  "scope_basis": "originator archive; archive sources cited",
  "null_basis": null,

@@ -53,12 +53,119 @@
  },
  "per_note": "Author named: True (Kuro, Sen); archive named: True; record number given: True; sources shown: 1 chips or image cards as pasted.",
  "availability": null,
- "per_dim": null,
- "per_dim_pending": {
-  "since": "2026-11-28",
-  "reason": "no atom set yet for this work as a target",
-  "breach": false
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-dep-1804-the-inferential-provenance-of-the-riemann-result",
+   "name": "The Inferential Provenance of the Riemann Result: Mathematical Necessity, Situated Machine Agency, and the Political Economy of Attribution"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Sen Kuro's The Inferential Provenance of the Riemann Result"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "The Inferential Provenance of the Riemann Result"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "It is not proof that Claude independently authored the declaration"
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "the systematic reconstruction of how knowledge is produced, verified, attributed, transmitted and economically appropriated when humans and AI systems work together"
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The original paper's CC BY 4.0 publication"
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Critique of Pure Inference (#1766): formation, standing and transmission."
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "EA-IPRH-01 — The Inferential Provenance of the Riemann Result (#1804)"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": false,
+    "evidence": null
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.111,
+   "C": 0.0,
+   "D": 0.111,
+   "PER": 0.1
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Sen Kuro's The Inferential Provenance of the Riemann Result; the work named and read",
+  "read": {
+   "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+   "on": "2026-11-28",
+   "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+   "external": false,
+   "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1804-the-inferential-provenance-of-the-riemann-result). Not required, because the record does not state them: framework."
+  }
  },
+ "per_dim_pending": null,
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -148,7 +255,7 @@
  },
  "notice": null,
  "axn_root": "AXN:0D91.CAPTURE",
- "axn": "AXN:0D91.CAPTURE.➕🕔🧬🍄🪞🔐",
+ "axn": "AXN:0D91.CAPTURE.☁️🪄💜📎🍄🕚",
  "scope": "archive",
  "scope_basis": "originator archive; archive sources cited",
  "null_basis": null,

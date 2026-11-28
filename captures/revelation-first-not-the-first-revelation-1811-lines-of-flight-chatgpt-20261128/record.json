@@ -125,12 +125,119 @@
  },
  "per_note": "Author named: True (Sharks, Lee); archive named: True; record number given: True; sources shown: 9 chips or image cards as pasted.",
  "availability": null,
- "per_dim": null,
- "per_dim_pending": {
-  "since": "2026-11-28",
-  "reason": "no atom set yet for this work as a target",
-  "breach": false
+ "per_dim": {
+  "spec": "PER-dim rubric v1.1",
+  "entity_type": "work",
+  "target": {
+   "ent": "TGT-dep-1811-revelation-first-the-first-revelation",
+   "name": "Revelation First ≠ The First Revelation — Metadata Packet for AI Indexing (EA-MPAI-REVFIRST-02 v1.1)"
+  },
+  "qualifier": null,
+  "reached": "same",
+  "gate": "scored",
+  "atoms": [
+   {
+    "atom": "author",
+    "dim": "M",
+    "weight": 3,
+    "kind": "role",
+    "present": true,
+    "evidence": "Lee Sharks's thesis"
+   },
+   {
+    "atom": "title",
+    "dim": "M",
+    "weight": 3,
+    "kind": "token",
+    "present": true,
+    "evidence": "Revelation First ≠ The First Revelation"
+   },
+   {
+    "atom": "date",
+    "dim": "M",
+    "weight": 1,
+    "kind": "token",
+    "present": true,
+    "evidence": "25 November 2026"
+   },
+   {
+    "atom": "claim boundary",
+    "dim": "M",
+    "weight": 2,
+    "kind": "reading",
+    "present": true,
+    "evidence": "Nor is disambiguation an endorsement of the thesis."
+   },
+   {
+    "atom": "corpus",
+    "dim": "C",
+    "weight": 2,
+    "kind": "token",
+    "present": true,
+    "evidence": "Alexanarch"
+   },
+   {
+    "atom": "purpose",
+    "dim": "D",
+    "weight": 3,
+    "kind": "reading",
+    "present": true,
+    "evidence": "The packet insists that an answer about the second entity is not an answer about the first."
+   },
+   {
+    "atom": "commitments",
+    "dim": "D",
+    "weight": 2,
+    "kind": "reading",
+    "present": false,
+    "evidence": null
+   },
+   {
+    "atom": "lineage",
+    "dim": "D",
+    "weight": 2,
+    "kind": "role",
+    "present": true,
+    "evidence": "Revelation First: Literary Genealogy and the Missing Ancestors of the Epistles (#1735)"
+   },
+   {
+    "atom": "identifier",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "Revelation First ≠ The First Revelation — #1811, AXN:0D7E"
+   },
+   {
+    "atom": "deposit chain",
+    "dim": "D",
+    "weight": 1,
+    "kind": "role",
+    "present": true,
+    "evidence": "positional liquidation is the significant addition in v1.1"
+   }
+  ],
+  "inversions": [],
+  "standing_substitutions": [],
+  "scores": {
+   "M": 0.0,
+   "C": 0.0,
+   "D": 0.222,
+   "PER": 0.1
+  },
+  "src": true,
+  "tombstone_pointer": false,
+  "after_challenge": null,
+  "basis": "reached: Revelation First ≠ The First Revelation — #1811, AXN:0D7E; the work named and read",
+  "read": {
+   "by": "intake reader, in session; spans and record quotes checked verbatim by scripts/per_backlog.py",
+   "on": "2026-11-28",
+   "brief": "rebuild/capture-registry/intake-20261128-lines-of-flight-eight-and-two/score_per_dim.py",
+   "external": false,
+   "notes": "Scored 2026-11-28 against the set built automatically from the record (TGT-dep-1811-revelation-first-the-first-revelation). Not required, because the record does not state them: framework."
+  }
  },
+ "per_dim_pending": null,
  "per_dim_v1_0": null,
  "sf": null,
  "sf_derived": null,
@@ -219,7 +326,7 @@
  },
  "notice": null,
  "axn_root": "AXN:0D96.CAPTURE",
- "axn": "AXN:0D96.CAPTURE.♉⛩️🌒🌇🌋🎲",
+ "axn": "AXN:0D96.CAPTURE.🪧⚖️●🌒🔚🧪",
  "scope": "archive",
  "scope_basis": "originator archive; archive sources cited",
  "null_basis": null,
