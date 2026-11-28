@@ -1,0 +1,98 @@
+import json,re,hashlib,pathlib,shutil,datetime
+from bs4 import BeautifulSoup, NavigableString, Comment
+S=pathlib.Path('/tmp/benj/seat'); 
+for d in ('original/wikisource','original/archive-org','text'): (S/d).mkdir(parents=True,exist_ok=True)
+revs=json.load(open('/tmp/benj/ws/revs.json'))
+META={ # title -> slug, work description, class
+ "Einbahnstraße":("einbahnstrasse-1928","Walter Benjamin, Einbahnstraße (Berlin: Ernst Rowohlt, 1928), the first edition; German Wikisource transcription from the scan, proofread ('fertig')"),
+ "Das Dornröschen":("dornroeschen-1911","'Das Dornröschen', Der Anfang. Vereinigte Zeitschriften der Jugend, Heft 3 (1911), pp. 51–54; German Wikisource transcription"),
+ "Das Leben der Studenten":("leben-der-studenten-1915","'Das Leben der Studenten', Der Neue Merkur 2 (1915), pp. 727–737; German Wikisource transcription"),
+ "Die Kaktushecke":("kaktushecke-1933","'Die Kaktushecke', Das Unterhaltungsblatt der Vossischen Zeitung, Nr. 8, 8 January 1933, pp. 1–2; German Wikisource transcription"),
+ "Kierkegaard (Benjamin)":("kierkegaard-1933","'Kierkegaard. Das Ende des philosophischen Idealismus', Literarische Umschau, Nr. 14, Beilage der Vossischen Zeitung, 2 April 1933, p. 1 (review of Adorno's Kierkegaard book); German Wikisource transcription"),
+ "Ein Weihnachtsengel":("bk-weihnachtsengel-1932","Berliner Kindheit um neunzehnhundert: 'Ein Weihnachtsengel', Vossische Zeitung, Nr. 357, 24 December 1932; German Wikisource transcription"),
+ "Das Fieber":("bk-fieber-1933","Berliner Kindheit um neunzehnhundert: 'Das Fieber', Vossische Zeitung, Nr. 76, 17 March 1933; German Wikisource transcription"),
+ "Die Mummerehlen":("bk-mummerehlen-1933","Berliner Kindheit um neunzehnhundert: 'Die Mummerehlen' (as Detlef Holz), Vossische Zeitung, Nr. 123, 5 May 1933; German Wikisource transcription"),
+ "Zwei Rätselbilder":("bk-raetselbilder-1933","Berliner Kindheit um neunzehnhundert: 'Zwei Rätselbilder' (as Detlef Holz), Vossische Zeitung, Nr. 164, 16 June 1933; German Wikisource transcription"),
+ "Loggien":("bk-loggien-1933","Berliner Kindheit um neunzehnhundert: 'Loggien' (as Detlef Holz), Vossische Zeitung, Nr. 210, 1 August 1933; German Wikisource transcription"),
+ "Der Mond (Benjamin)":("bk-mond-1933","Berliner Kindheit um neunzehnhundert: 'Der Mond' (as Detlef Holz), Vossische Zeitung, Nr. 248, 8 September 1933; German Wikisource transcription"),
+ "Schmöker":("bk-schmoeker-1933","Berliner Kindheit um neunzehnhundert: 'Schmöker' (as Detlef Holz), Vossische Zeitung, Nr. 257, 17 September 1933; German Wikisource transcription"),
+ "Das Kunstwerk im Zeitalter seiner technischen Reproduzierbarkeit (Dritte Fassung)":("kunstwerk-dritte-fassung","Das Kunstwerk im Zeitalter seiner technischen Reproduzierbarkeit, third version (written 1935–1939), as printed in Gesammelte Schriften I.2, ed. Rolf Tiedemann and Hermann Schweppenhäuser (Frankfurt am Main: Suhrkamp, 1980), pp. 471–508; German Wikisource transcription, proofread ('fertig')"),
+}
+def html2text(b):
+    s=BeautifulSoup(b,'lxml'); c=s.select_one('div.mw-parser-output')
+    for sel in ('div.ws-noexport','div.noprint','style','script','table.hiddenStructure','span.mw-editsection','figure','span.mw-cite-backlink','div.mw-references-wrap > h2','link','meta'):
+        for e in c.select(sel): e.decompose()
+    for e in c.select('span.PageNumber, span.pagenum, span.seitennummer'):
+        t=re.sub(r'\s+',' ',e.get_text()).strip().strip('[]'); e.replace_with(NavigableString(f' [S. {t}] ' if t else ' '))
+    for e in c.select('sup.reference'):
+        t=re.sub(r'[\[\]\s]','',e.get_text()); e.replace_with(NavigableString(f'[{t}]'))
+    for br in c.find_all('br'): br.replace_with(NavigableString('\n'))
+    out=[]; BL={'p','h1','h2','h3','h4','li','dd','dt','div','blockquote','td','th','center','section','ol','ul','dl','table','tr','tbody'}
+    def flush(buf,head=False):
+        t=''.join(buf); t='\n'.join(re.sub(r'[ \t\u00a0]+',' ',x).strip() for x in t.split('\n')); t=re.sub(r'\n{2,}','\n',t).strip()
+        if t: out.append('# '+t if head else t)
+        buf.clear()
+    def walk(node):
+        buf=[]
+        for ch in node.children:
+            if isinstance(ch,Comment): continue
+            if isinstance(ch,NavigableString): buf.append(str(ch))
+            elif ch.name in BL: flush(buf); walk(ch)
+            elif ch.find(list(BL)): flush(buf); walk(ch)
+            else: buf.append(ch.get_text())
+        flush(buf, node.name in ('h1','h2','h3','h4'))
+    walk(c)
+    return '\n\n'.join(out)+'\n'
+works=[]; items=[]
+for title,(slug,desc) in META.items():
+    o=revs[title]; n=o['n']; rev=o['revid']
+    hb=open(f'/tmp/benj/ws/{n:02d}.html','rb').read(); wb=open(f'/tmp/benj/ws/{n:02d}.wiki','rb').read()
+    assert b'Wikimedia Error' not in hb[:300] and b'Wikimedia Error' not in wb[:300], title
+    (S/f'original/wikisource/{slug}.rev{rev}.html').write_bytes(hb); (S/f'original/wikisource/{slug}.rev{rev}.wiki').write_bytes(wb)
+    t=html2text(hb); (S/f'text/{slug}.txt').write_text(t,encoding='utf-8')
+    url='https://de.wikisource.org/w/index.php?title='+title.replace(' ','_')+f'&oldid={rev}'
+    items.append({"source":"German Wikisource (de.wikisource.org)","url":url,"revision":int(rev)})
+    works.append({"slug":slug,"work":desc,"text":f"text/{slug}.txt","originals":[f"original/wikisource/{slug}.rev{rev}.html",f"original/wikisource/{slug}.rev{rev}.wiki"],"class":"Prose","lines":t.count('\n'),"chars":len(t)})
+# the Werkverzeichnis, as a finding aid only
+o=revs["Walter Benjamin/Werkverzeichnis"]; (S/f"original/wikisource/werkverzeichnis.rev{o['revid']}.wiki").write_bytes(open(f"/tmp/benj/ws/{o['n']:02d}.wiki",'rb').read())
+# Internet Archive OCR
+IA=[("deutsche-menschen-1936","BenjaminDeutscheMenschen_djvu.txt","DeutscheMenschen-EineFolgeVonBriefen","Deutsche Menschen. Eine Folge von Briefen. Auswahl und Einleitungen von Detlef Holz [Walter Benjamin] (Luzern: Vita Nova Verlag, 1936), the first edition; Internet Archive scan, its OCR text layer, uncorrected"),
+    ("tableaux-parisiens-1923","BenjaminTableauxParisien_djvu.txt","CharlesBaudelaireTableauxParisiens","Charles Baudelaire, Tableaux Parisiens. Deutsche Übertragung mit einem Vorwort über die Aufgabe des Übersetzers von Walter Benjamin (Heidelberg: Richard Weißbach, 1923), French and German, with 'Die Aufgabe des Übersetzers'; Internet Archive scan, its OCR text layer, uncorrected")]
+for slug,f,ident,desc in IA:
+    b=open(f'/tmp/benj/ia/{f}','rb').read(); (S/f'original/archive-org/{f}').write_bytes(b); t=b.decode('utf-8',errors='replace'); t=re.sub(r'[ \t]+',' ',t); t=re.sub(r'\n{3,}','\n\n',t).strip()+'\n'
+    (S/f'text/{slug}-ocr.txt').write_text(t,encoding='utf-8')
+    items.append({"source":"Internet Archive","url":f"https://archive.org/details/{ident}","file":f"https://archive.org/download/{ident}/{f}","rights_as_marked":"Public Domain Mark 1.0"})
+    works.append({"slug":slug+"-ocr","work":desc,"text":f"text/{slug}-ocr.txt","originals":[f"original/archive-org/{f}"],"class":"Prose","lines":t.count('\n'),"chars":len(t),"layer":"uncorrected OCR"})
+# Zur Kritik der Gewalt from the journal volume
+f="Archiv_fuer_Sozialwissenschaft_und_Sozialpolitik_47.1920-21_djvu.txt"; b=open(f'/tmp/benj/ia/{f}','rb').read(); (S/f'original/archive-org/{f}').write_bytes(b); a=b.decode('utf-8',errors='replace')
+i=a.index('809 \n\n\nZur Kritik der Gewalt.'); 
+json.dump({'start':i},open('/tmp/benj/kg.json','w'))
+open('/tmp/benj/kg_tail.txt','w',encoding='utf-8').write(a[i+95000:i+125000])
+print(len(works),'works so far;',sum(w['chars'] for w in works),'chars'); 
+for w in works: print(f"  {w['slug']:34} {w['chars']:7}")
+json.dump({'works':works,'items':items},open('/tmp/benj/partial.json','w'),ensure_ascii=False,indent=1)
+j=a.index('mag die waltende heißen.',i)+len('mag die waltende heißen.')
+kg=a[i:j]; kg=re.sub(r'[ \t]+',' ',kg); kg=re.sub(r'\n{3,}','\n\n',kg).strip()+'\n'
+(S/'text/zur-kritik-der-gewalt-1921-ocr.txt').write_text(kg,encoding='utf-8')
+items.append({"source":"Internet Archive","url":"https://archive.org/details/archiv-fur-sozialwissenschaft-und-sozialpolitik-47","file":"https://archive.org/download/archiv-fur-sozialwissenschaft-und-sozialpolitik-47/Archiv%20f%C3%BCr%20Sozialwissenschaft%20und%20Sozialpolitik%2047.1920-21_djvu.txt","rights_as_marked":"none marked on the item; the volume was printed in 1920/1921"})
+works.append({"slug":"zur-kritik-der-gewalt-1921-ocr","work":"'Zur Kritik der Gewalt', Archiv für Sozialwissenschaft und Sozialpolitik 47 (Tübingen: J. C. B. Mohr (Paul Siebeck), 1920/1921), pp. 809–832, the first printing; Internet Archive scan of the volume, its OCR text layer, uncorrected, the essay cut out by character offset","text":"text/zur-kritik-der-gewalt-1921-ocr.txt","originals":[f"original/archive-org/{f}"],"class":"Prose","lines":kg.count('\n'),"chars":len(kg),"layer":"uncorrected OCR","offsets_in_original_text":[i,j]})
+src={"corpus":"benjamin","seat":"unassigned: staged for the next EA-CORPORA seating; the deposit assigns the number",
+ "title":"Walter Benjamin in German, 1911–1939: Einbahnstraße, Zur Kritik der Gewalt, Die Aufgabe des Übersetzers with the Tableaux Parisiens, Deutsche Menschen, Das Kunstwerk im Zeitalter seiner technischen Reproduzierbarkeit (third version), Das Leben der Studenten, and ten pieces from periodicals, seven of them from Berliner Kindheit um neunzehnhundert",
+ "edition":"; ".join(w["work"] for w in works),
+ "language":"deu (the Tableaux Parisiens volume also carries Baudelaire's French)",
+ "license":{"payload":"Walter Benjamin died on 26 September 1940; his writings are in the public domain where the term is the author's life plus seventy years. Fourteen of the sixteen items were first printed between 1911 and 1936. The third version of the Kunstwerk essay was first printed after his death; it is held here as German Wikisource transcribes it from Gesammelte Schriften I.2 (Suhrkamp, 1980), text only, with the editors' additions marked there in square brackets. German Wikisource transcriptions are offered under CC BY-SA 4.0. The Internet Archive items for Deutsche Menschen and the Tableaux Parisiens carry the Public Domain Mark 1.0; the Archiv volume carries no mark and was printed in 1920/1921. Each original is held as fetched.",
+            "record":"CC-BY-4.0 applies to this seat record only. Text layers derived from German Wikisource pages carry that source's CC BY-SA 4.0."},
+ "fetched":"2026-11-27",
+ "origin":{"items":items,"fetched":"2026-11-27","transport":"in-session fetch (Transport D); No-Double-Draw. Wikisource pages fetched once each through the ordinary page route at a pinned revision, three seconds apart; the API was rate-limited and was not used."},
+ "works":{"count":len(works),"units":"one text layer per item, beside the page or scan text it was made from","list":works},
+ "notes":["Text layers from Wikisource are the rendered page with the header box, images and edit links removed; page breaks of the printed source are kept as [S. n] and footnote calls as [n], with the notes at the end. Each layer was checked against its page by character count.",
+          "The three Internet Archive layers are uncorrected OCR and are marked so. They are seated so the words can be found; they are not reading texts.",
+          "Not seated here, with the reason: 'Die Waffen von morgen' (Vossische Zeitung, 29 June 1925), which the Wikisource author page lists and whose own page attributes to Dora Sophie Benjamin (died 1964). 'Über den Begriff der Geschichte', Ursprung des deutschen Trauerspiels, the Baudelaire studies and the Passagen material: no clean public text was found on this pass; the Internet Archive holds Suhrkamp's Gesammelte Schriften volumes as open uploads, which carry the editors' apparatus, and they await a ruling and a second pass.",
+          "original/wikisource/werkverzeichnis.rev%s.wiki is German Wikisource's list of Benjamin's works after the Gesammelte Schriften, kept as a finding aid." % revs["Walter Benjamin/Werkverzeichnis"]["revid"],
+          "Seated during the Revelation First and Critique of Pure Inference work of November 2026, on finding the Frankfurt School absent from the originals library (Lee Sharks, 2026-11-27 23:10: 'i think we legitimate havent seated the frankfurt school - if so thats a large whoops'; 23:13: 'agreed. lets seat')."]}
+(S/'source.json').write_text(json.dumps(src,ensure_ascii=False,indent=1)+'\n',encoding='utf-8')
+man=[]
+for p in sorted(S.rglob('*')):
+    if p.is_file() and p.name!='MANIFEST.sha256': man.append(f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.relative_to(S).as_posix()}")
+(S/'MANIFEST.sha256').write_text('\n'.join(man)+'\n')
+print(len(works),'works;',sum(w['chars'] for w in works),'chars;',len(man),'files')
