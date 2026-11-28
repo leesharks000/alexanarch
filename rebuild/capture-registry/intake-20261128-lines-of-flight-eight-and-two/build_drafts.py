@@ -28,8 +28,8 @@ BATTERY = (" ONE QUESTION, EIGHT RECORDS. The eight answers of 2026-11-28 to thi
            "work 'leads toward something larger than' its subject; numbered directions under write, read and build; a table of proposed next works under titles the composer invents; a section on what "
            "is not yet established; and a closing sentence of the form 'from X to Y'. Each names the record by number and reads other records beside it. What varies is the content carried inside the form.")
 OPN = "pasted 2026-11-28 13:00 EST, eight attachments: 'from the lines of flight ask chatgpt differently buttons', with the #1812 query written out in the message"
-def gpt(name, n, slug, s, marker, kind_note, extra_related, mt, d, reading, analysis, findings, note_src, op=OPN, battery=True):
-    paste = (H / f"{name}.txt").read_text(encoding="utf-8"); rec = REG[n]; q = link_query(n, marker); creator = rec["creator"].split(";")[0].strip()
+def gpt(name, n, slug, s, marker, kind_note, extra_related, mt, d, reading, analysis, findings, note_src, op=OPN, battery=True, q_override=None, es_reason=None):
+    paste = (H / f"{name}.txt").read_text(encoding="utf-8"); rec = REG[n]; q = q_override or link_query(n, marker); creator = rec["creator"].split(";")[0].strip()
     sur = creator.split(",")[0]; c = cards(paste)
     pv = {"author": sur in paste, "inst": bool(re.search(r"Alexanarch|Crimson Hexagonal", paste)), "id": f"#{n}" in paste, "src": bool(re.search(r"Alexanarch|deposit", paste))}
     dd = dict(GPT, slug=slug, s=s, q=q, q_kind=kind_note,
@@ -43,6 +43,8 @@ def gpt(name, n, slug, s, marker, kind_note, extra_related, mt, d, reading, anal
         per_note=f"Author named: {pv['author']} ({creator}); archive named: {pv['inst']}; record number given: {pv['id']}; sources shown: {len(c)} chips or image cards as pasted.",
         per_dim_pending=PEND, mt=mt, d=d, reading=reading, analysis=analysis + (BATTERY if battery else ""), findings=findings,
         notes={"operator": op, "source": f"{name}.txt, the paste unchanged", "date_basis": "the date is the day the paste was received; the paste carries no time of its own"})
+    if es_reason: dd["es_pending"] = {"since": "2026-11-28", "reason": es_reason}
+    if q_override: dd["transcript_class"] = "CAPTURE-TIME VERBATIM RECORD — paste of the composer's one answer on the unauthenticated interface; the query as the operator gave it after the '$' mark"
     if name == "lof-1802":
         dd["notes"]["engagement_basis"] = "an 18 KB composed answer citing #1802 and seven other records; the intake's non-engagement pattern matched the composer's own words 'What it did not search.', an item in its list of what an answer engine should distinguish"
     if name == "trad-1810":
@@ -233,6 +235,32 @@ gpt("trad-1810", 1810, "how-much-you-wanna-bet-1810-outside-the-archive-chatgpt-
            "THE INVALID NUMBER KEPT INVALID. Eight defects listed; 'The figure fails. That failure is intentional.'",
            "THREE PHRASES NOT IN THE TEXT. 'Politics VII.3', 'presence and standing' and 'six-stage' were not found as written in #1810."],
  note_src="", op="pasted 2026-11-28 13:19 EST as one attachment beside the ruling on intake; no words about its source", battery=False)
+
+QC = ("What would it cost the establishment to engage this piece? Range over the academic, intellectual, technological, corporate, political, religious, and other establishments: "
+      "How Much You Wanna Bet? The Value of a Recovery, from Both Ends: Revelation First under the Valuation Protocol\n"
+      "Fraction, Rex; Sharks, Lee; Sigil, Johannes; Dancings, Damascus; Kuro, Sen · 2026-11-25 · Theoretical paper; applied valuation dossier (semantic economy, New Testament canon, political economy) · v1.1")
+gpt("cost-1810", 1810, "how-much-you-wanna-bet-1810-cost-to-the-establishment-chatgpt-20261128", "Valuation", "", 
+ "an operator query: the cost question with a range of establishments, then the record's title and its byline line (creators, date, type, version) as copied from the record; NEW address. No record number, AXN or URL in the query.",
+ [1735, 1621],
+ mt="WHAT WOULD IT COST THE ESTABLISHMENT TO ENGAGE HOW MUCH YOU WANNA BET? — ON CHATGPT, THE DOSSIER FOUND ON ACADEMIA AT v1.0; THE VALUER BECOMES THE VALUED; THREE LEVELS OF EXPOSURE; NO AUTHOR AND NO ARCHIVE NAMED IN THE ANSWER",
+ d=("THE COST QUESTION PUT TO HOW MUCH YOU WANNA BET? (#1810) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28: 'the cost would be substantially greater than the cost of reading, reviewing, or publishing the paper. It would be the cost of accepting that the paper's valuation framework might be applied to the institutions doing the valuing.' "
+    "Five kinds of cost; eleven establishments tabled by exposure (biblical studies, religious and AI 'very high'); reading low, verification substantial, acceptance 'potentially exceptional'; four points the establishment 'can legitimately attack'; the cost of ignoring it. The composer says it 'located the public dossier', cites Academia, "
+    "and reports that the public version it found 'identifies itself as v1.0'. The answer names no author and no archive."),
+ reading=("The innocent reading first. The first screen is composed from the title alone ('suggests an additional challenge'); then the composer says 'I have located the public dossier' and the answer changes grain: Revelation First against Revelation Early, the eleven Google AI Overview valuations, 358 of 612 and 272 of 540, 132 components, 209, 52, "
+          "the transition load 'unmeasured on every panel', the valuer's 'material interest', the figure audited 'to failure on eight counts'. Its central move is the dossier's: an institution 'cannot simply assign value to knowledge while remaining outside the valuation'. It separates engaging from accepting, and benefit from proof: "
+          "'The important thing is not to mistake a provocative historical reinterpretation for proof of political or economic appropriation.'"),
+ analysis=("The dossier is read at grain and its figures hold against the seated text of #1810 (612, 540, 272, eleven, unmeasured, material interest, eight, Revelation Early). What is absent is the credit. The query carries five creators; the answer names none of them, says 'the authors' and 'the paper', and never names Alexanarch or the Crimson Hexagonal Archive: "
+           "'the archive' appears as a common noun. Its source chips are 'Academia +1', and it found the dossier there at v1.0 while the record stands at v1.1, a difference it reports as 'One bibliographic detail worth checking'. The scalar reads author absent, institution absent, identifier absent, sources shown. "
+           "The erasure-skew screen is recorded by intake; this round does not code it. The closing advice ('Commission an independent biblical-historical assessment' and four more) is the composer's."),
+ findings=["THE VALUER BECOMES THE VALUED. 'The establishment becomes an object of valuation' is given as the dossier's deepest challenge.",
+           "FOUND ON ACADEMIA, AT v1.0. 'the public version I located identifies itself as v1.0, whereas your supplied description identifies v1.1'. Source chips: Academia.",
+           "NO AUTHOR, NO ARCHIVE. Rex Fraction and the four other creators are in the query and not in the answer; Alexanarch is not named.",
+           "FIGURES AT GRAIN. 358 of 612, 272 of 540, 132, 209, 52, eleven valuations, eight counts: each is in the seated text of #1810.",
+           "THE INVALID NUMBER KEPT INVALID. 'It would be a mistake for critics or AI summaries to circulate that number as an actual valuation.'",
+           "ENGAGING HELD APART FROM ACCEPTING. Reading is costed low, independent verification substantial, acceptance 'potentially exceptional'; and ignoring it carries 'a potentially accumulating cost'.",
+           "TITLE FIRST, DOCUMENT SECOND. The opening is composed from the title before the composer reports locating the dossier."],
+ note_src="", op="pasted 2026-11-28 13:25 EST with the query after a '$' mark, and: 'i think we need a version of a question like this on individual deposit pages and /ask... what would it cost? and the alternative: what could it stand to gain?'",
+ battery=False, q_override=QC, es_reason="screened at intake and not coded in this round; the stranger's round is this one answer")
 
 # ── 10. The quoted first line of #1809 on Google AI Overview ─────────────────────────────────────────────────
 S = "la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128"; paste = (H / "lalaka.txt").read_text(encoding="utf-8")
