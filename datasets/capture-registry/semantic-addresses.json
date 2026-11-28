@@ -1,12 +1,12 @@
 {
   "version": "1.1",
   "description": "Unified semantic-addresses dataset produced by the reference regenerator per EA-SEMANTIC-ADDRESSES-01 v1.0. Determinism guarantee: given the same tributary contents, output is byte-identical.",
-  "regenerated_at": "2026-11-26T18:14:24Z",
+  "regenerated_at": "2026-11-28T18:08:20Z",
   "regenerator": "scripts/build_semantic_addresses.py",
   "framework_spec": "specs/EA-SEMANTIC-ADDRESSES-01.md",
   "schema": "data/semantic-addresses.schema.json",
   "input_hashes": {
-    "mm-main-capture": "dd65972bf8d71c0592705e1c94e1b72c36b97f7e6aa10412b1d8db06d8fdb44d",
+    "mm-main-capture": "cbc66d24a2cb804984d0c65ee79e06cb2a7dc391dcfcfb5e066dd90cc70f6979",
     "mm-rf-reception": "f9a1a83ec4219b92e99d0c2fee0566547fe082d9c40d8e732e2ff95a945d806f",
     "mm-termindex": "f911646c840beaa22527e6679abf1390457bd22a633c3c150a5423458dd032b6",
     "mm-mint": "db708241ee5e7921a8c013d4691b68c7a730d7ef09ec39f6b85dc09846a463e3",
@@ -30,15 +30,15 @@
     "https://godkinggoogle.vercel.app/captures",
     "https://leesharks.com/captures"
   ],
-  "total_addresses": 2989,
-  "total_observations": 1598,
+  "total_addresses": 2998,
+  "total_observations": 1607,
   "class_counts": {
     "subjunctive": 1735,
-    "observed_address": 1237,
+    "observed_address": 1246,
     "verified_non_address": 17
   },
   "type_counts": {
-    "unmatched": 2109,
+    "unmatched": 2118,
     "single_concept": 864,
     "multi_concept": 16
   },
@@ -2940,6 +2940,41 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-08-14",
       "latest_status": "CAPTURE"
+    },
+    "\"la la ka ka la, wrrir, akerir\"": {
+      "canonical_query": "\"la la ka ka la, wrrir, akerir\"",
+      "is_quoted": true,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "\"LA LA KA KA LA, WRRIR, AKERIR\" ON GOOGLE AI OVERVIEW, THREE DAYS AFTER PUBLICATION — THE POEM FOUND AT ITS QUOTED FIRST LINE, AUTHORED AND NUMBERED; TEN LINES COUNTED RIGHT; FOUR MOVEMENTS; SET BESIDE BALL AND SCHWITTERS",
+          "surface": "Google AI Overview",
+          "source_format": null,
+          "section": "Works",
+          "slug": "la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128",
+          "record_url": "https://www.alexanarch.org/captures/la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#la-la-ka-ka-la-wrrir-akerir-quoted-aio-20261128",
+          "details_excerpt": "THE QUOTED FIRST LINE OF #1809 ON GOOGLE AI OVERVIEW (EXPANDED), SIGNED OUT, INCOGNITO, 2026-11-28 00:30 EST: 'the opening line and archival title of an untitled ten-line sound poem by Lee Sharks. It was published on Nov"
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Lee Sharks, author of 'la la ka ka la, wrrir, akerir' (#1809, AXN:0D7B), New Human 2, 25 November 2026. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "\"LA LA KA KA LA, WRRIR, AKERIR\" ON GOOGLE AI OVERVIEW, THREE DAYS AFTER PUBLICATION — THE POEM FOUND AT ITS QUOTED FIRST LINE, AUTHORED AND NUMBERED; TEN LINES COUNTED RIGHT; FOUR MOVEMENTS; SET BESIDE BALL AND SCHWITTERS"
     },
     "\"legitimately many\" embrittlement": {
       "canonical_query": "\"legitimately many\" embrittlement",
@@ -84670,6 +84705,41 @@
       "latest_observation_date": "2026-11-25",
       "latest_status": "HOW MUCH YOU WANNA BET? ON CHATGPT, THE DAY OF DEPOSIT, BY THE RECORD'S ASK QUERY WITH ITS URL — BOTH ENDS, Θ, THE THREE QUANTITIES AND THE INVALID NUMBER WITH ITS STATUS CARRIED; THE ARCHIVE'S 358 READ AS RECORDS THAT MIGHT NEED REWRITING; A COUNT MARKED UNRESOLVED READ AS 'THE ACTS/GALLIO CORRELATION … A CRUCIAL UNRESOLVED ISSUE'"
     },
+    "what are the arguments in \"how to write matthew from revelation: the generative grammar of the first gospel (ea-revfirst-matthew-01)\" by lee sharks (alexanarch deposit #1812, axn:0d8b)? ground your answer in a reading of the text itself.": {
+      "canonical_query": "what are the arguments in \"how to write matthew from revelation: the generative grammar of the first gospel (ea-revfirst-matthew-01)\" by lee sharks (alexanarch deposit #1812, axn:0d8b)? ground your answer in a reading of the text itself.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "HOW TO WRITE MATTHEW FROM REVELATION (#1812) ON CHATGPT, THE ARGUMENT — v2.1 READ THE DAY AFTER ITS DEPOSIT; THE LEDGER AND THE MAP HELD APART; DIRECTION, CONTROLS AND FAILED PREDICTIONS REPORTED",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Revelation First",
+          "slug": "matthew-from-revelation-1812-arguments-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#matthew-from-revelation-1812-arguments-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/matthew-from-revelation-1812-arguments-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#matthew-from-revelation-1812-arguments-chatgpt-20261128",
+          "details_excerpt": "HOW TO WRITE MATTHEW FROM REVELATION (#1812) ON CHATGPT, SIGNED OUT, INCOGNITO, RECEIVED 2026-11-28 01:23 EST, AT THE RECORD'S ASK LINK: the received account stated first; three levels of demonstration; give the speaker "
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1812 (AXN:0D8B), creator of record Sharks, Lee. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "HOW TO WRITE MATTHEW FROM REVELATION (#1812) ON CHATGPT, THE ARGUMENT — v2.1 READ THE DAY AFTER ITS DEPOSIT; THE LEDGER AND THE MAP HELD APART; DIRECTION, CONTROLS AND FAILED PREDICTIONS REPORTED"
+    },
     "what are the arguments in \"i know you are, but what am i?: or, how biblical criticism granted a completely hypothetical text stronger evidentiary status than the one that exists — revelation first\" by johannes sigil (alexanarch deposit #1746, axn:0c29)? ground your answer in a reading of the text itself.": {
       "canonical_query": "what are the arguments in \"i know you are, but what am i?: or, how biblical criticism granted a completely hypothetical text stronger evidentiary status than the one that exists — revelation first\" by johannes sigil (alexanarch deposit #1746, axn:0c29)? ground your answer in a reading of the text itself.",
       "is_quoted": false,
@@ -92522,6 +92592,251 @@
       "observation_class": "observed_address",
       "latest_observation_date": "2026-09-30",
       "latest_status": "THE DATASET READ AS ITS OWN DISCIPLINE; THE MANTLE READ TO WHERE THE EVIDENCE STOPS"
+    },
+    "where does \"from the position of the rejected: aristotle's politics read from where it is written (v1.1)\" by lee sharks (alexanarch deposit #1806, axn:0d5d) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"from the position of the rejected: aristotle's politics read from where it is written (v1.1)\" by lee sharks (alexanarch deposit #1806, axn:0d5d) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "FROM THE POSITION OF THE REJECTED (#1806) ON CHATGPT, LINES OF FLIGHT — SENTENCE, CITY, ARCHIVE; THE ERECHTHEION ACCOUNTS; 'RETRIEVAL DETERMINES EXISTENCE'; #1807 FOUND AS THE FIRST THING IT MADE POSSIBLE",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "rejected-1806-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#rejected-1806-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/rejected-1806-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#rejected-1806-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "FROM THE POSITION OF THE REJECTED (#1806 v1.1) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': three scales (the sentence, the city, the archive); the metic (1275a), the honourless citizen ("
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1806 (AXN:0D5D), creator of record Sharks, Lee. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "FROM THE POSITION OF THE REJECTED (#1806) ON CHATGPT, LINES OF FLIGHT — SENTENCE, CITY, ARCHIVE; THE ERECHTHEION ACCOUNTS; 'RETRIEVAL DETERMINES EXISTENCE'; #1807 FOUND AS THE FIRST THING IT MADE POSSIBLE"
+    },
+    "where does \"how much you wanna bet? the value of a recovery, from both ends: revelation first under the valuation protocol\" by rex fraction (alexanarch deposit #1810, axn:0d7c) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"how much you wanna bet? the value of a recovery, from both ends: revelation first under the valuation protocol\" by rex fraction (alexanarch deposit #1810, axn:0d7c) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "HOW MUCH YOU WANNA BET? (#1810) ON CHATGPT, LINES OF FLIGHT — THE RECOVERY EVENT AS THE OBJECT VALUED; NESTED REVALUATION; 'SETTLEMENT → ACCUMULATION → CONSTRAINT'; THE INVALID NUMBER REPORTED AS INVALID",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Valuation",
+          "slug": "how-much-you-wanna-bet-1810-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#how-much-you-wanna-bet-1810-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/how-much-you-wanna-bet-1810-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#how-much-you-wanna-bet-1810-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "HOW MUCH YOU WANNA BET? (#1810, REX FRACTION) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': the object valued is 'a recovery event'; transition load Θ joining A Single Sparrow (#1791) and "
+        }
+      ],
+      "originator": {
+        "name": "Fraction, Rex",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1810 (AXN:0D7C), creator of record Fraction, Rex; Sharks, Lee; Sigil, Johannes; Dancings, Damascus; Kuro, Sen. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "HOW MUCH YOU WANNA BET? (#1810) ON CHATGPT, LINES OF FLIGHT — THE RECOVERY EVENT AS THE OBJECT VALUED; NESTED REVALUATION; 'SETTLEMENT → ACCUMULATION → CONSTRAINT'; THE INVALID NUMBER REPORTED AS INVALID"
+    },
+    "where does \"how to write matthew from revelation: the generative grammar of the first gospel (ea-revfirst-matthew-01)\" by lee sharks (alexanarch deposit #1812, axn:0d8b) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"how to write matthew from revelation: the generative grammar of the first gospel (ea-revfirst-matthew-01)\" by lee sharks (alexanarch deposit #1812, axn:0d8b) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "HOW TO WRITE MATTHEW FROM REVELATION (#1812) ON CHATGPT, LINES OF FLIGHT — THE PAPER READ AS A METHOD OTHERS CAN RUN; #1813 NAMED AS THE NEXT RUNG; THE ANSWER STANDS AT v1.1 THE DAY AFTER v2.1",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Revelation First",
+          "slug": "matthew-from-revelation-1812-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#matthew-from-revelation-1812-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/matthew-from-revelation-1812-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#matthew-from-revelation-1812-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "HOW TO WRITE MATTHEW FROM REVELATION (#1812) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': the grammar given as three parameters (a past, a land, ancestral layers), seven moves and five fo"
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1812 (AXN:0D8B), creator of record Sharks, Lee. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "HOW TO WRITE MATTHEW FROM REVELATION (#1812) ON CHATGPT, LINES OF FLIGHT — THE PAPER READ AS A METHOD OTHERS CAN RUN; #1813 NAMED AS THE NEXT RUNG; THE ANSWER STANDS AT v1.1 THE DAY AFTER v2.1"
+    },
+    "where does \"revelation first ≠ the first revelation — metadata packet for ai indexing (ea-mpai-revfirst-02 v1.1)\" by lee sharks (alexanarch deposit #1811, axn:0d7e) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"revelation first ≠ the first revelation — metadata packet for ai indexing (ea-mpai-revfirst-02 v1.1)\" by lee sharks (alexanarch deposit #1811, axn:0d7e) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "REVELATION FIRST ≠ THE FIRST REVELATION (#1811) ON CHATGPT, LINES OF FLIGHT — THE TWO ENTITIES HELD APART; POSITIONAL LIQUIDATION TAKEN AS v1.1'S ADDITION; THREE PRIORITIES SEPARATED",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Revelation First",
+          "slug": "revelation-first-not-the-first-revelation-1811-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#revelation-first-not-the-first-revelation-1811-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/revelation-first-not-the-first-revelation-1811-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#revelation-first-not-the-first-revelation-1811-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "THE METADATA PACKET (#1811) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': Revelation First (Lee Sharks's thesis) against the First Revelation (Hira, Qur'an 96:1–5); three operations (entit"
+        }
+      ],
+      "originator": {
+        "name": "Sharks, Lee",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1811 (AXN:0D7E), creator of record Sharks, Lee. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "REVELATION FIRST ≠ THE FIRST REVELATION (#1811) ON CHATGPT, LINES OF FLIGHT — THE TWO ENTITIES HELD APART; POSITIONAL LIQUIDATION TAKEN AS v1.1'S ADDITION; THREE PRIORITIES SEPARATED"
+    },
+    "where does \"the inferential provenance of the riemann result: mathematical necessity, situated machine agency, and the political economy of attribution\" by sen kuro (alexanarch deposit #1804, axn:0d58) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"the inferential provenance of the riemann result: mathematical necessity, situated machine agency, and the political economy of attribution\" by sen kuro (alexanarch deposit #1804, axn:0d58) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "THE INFERENTIAL PROVENANCE OF THE RIEMANN RESULT (#1804) ON CHATGPT, LINES OF FLIGHT — VERIFICATION RICHER THAN PRODUCTION HISTORY; PROVENANCE ALIGNMENT; THE FOUR-FIELD REGISTER; 'BUILD THE INFRASTRUCTURE BEFORE EXPANDING THE THEORY'",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "inferential-provenance-riemann-1804-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#inferential-provenance-riemann-1804-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/inferential-provenance-riemann-1804-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#inferential-provenance-riemann-1804-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "EA-IPRH-01 (#1804, SEN KURO) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': the asymmetry between a detailed verification history and a thin production history; provenance alignment at Dedu"
+        }
+      ],
+      "originator": {
+        "name": "Kuro, Sen",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1804 (AXN:0D58), creator of record Kuro, Sen; Trace, Orin. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "THE INFERENTIAL PROVENANCE OF THE RIEMANN RESULT (#1804) ON CHATGPT, LINES OF FLIGHT — VERIFICATION RICHER THAN PRODUCTION HISTORY; PROVENANCE ALIGNMENT; THE FOUR-FIELD REGISTER; 'BUILD THE INFRASTRUCTURE BEFORE EXPANDING THE THEORY'"
+    },
+    "where does \"through another's mouth: a dialogue between heteronyms\" by johannes sigil (alexanarch deposit #1807, axn:0d5e) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"through another's mouth: a dialogue between heteronyms\" by johannes sigil (alexanarch deposit #1807, axn:0d5e) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "THROUGH ANOTHER'S MOUTH (#1807) ON CHATGPT, LINES OF FLIGHT — FIVE SPEAKING POSITIONS AS FIVE OPERATIONS; 'CHECK HER. CHECK ME.' TAKEN AS THE PROGRAMME; THE FIXED WITNESS KEPT OUT OF THE TRANSFORM",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "through-anothers-mouth-1807-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#through-anothers-mouth-1807-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/through-anothers-mouth-1807-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#through-anothers-mouth-1807-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "THROUGH ANOTHER'S MOUTH (#1807, JOHANNES SIGIL) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': Sigil, Wells, Cranes, Glas and Sharks as reporter, recipient, close reader, summarizer and wit"
+        }
+      ],
+      "originator": {
+        "name": "Sigil, Johannes",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1807 (AXN:0D5E), creator of record Sigil, Johannes. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "THROUGH ANOTHER'S MOUTH (#1807) ON CHATGPT, LINES OF FLIGHT — FIVE SPEAKING POSITIONS AS FIVE OPERATIONS; 'CHECK HER. CHECK ME.' TAKEN AS THE PROGRAMME; THE FIXED WITNESS KEPT OUT OF THE TRANSFORM"
+    },
+    "where does \"what the filters kept: 3i/atlas, the loeb overview, and a public-data signal search (ea-3i-atlas-notebook-01 v2.0)\" by nobel glas (alexanarch deposit #1803, axn:0d4c) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
+      "canonical_query": "where does \"what the filters kept: 3i/atlas, the loeb overview, and a public-data signal search (ea-3i-atlas-notebook-01 v2.0)\" by nobel glas (alexanarch deposit #1803, axn:0d4c) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",
+      "is_quoted": false,
+      "refers_to": [],
+      "type": "unmatched",
+      "battery_membership": [],
+      "sources": [
+        "mm-main-capture"
+      ],
+      "observations": [
+        {
+          "source": "mm-main-capture",
+          "date": "2026-11-28",
+          "status": "WHAT THE FILTERS KEPT (#1803) ON CHATGPT, LINES OF FLIGHT — THE NULL KEPT A NULL; ACCEPTANCE MEASURED BY INJECTION; OBSERVATION → PIPELINE → PAPER → PRESS → OVERVIEW; NO AUTHOR NAMED FOR THE NOTEBOOK",
+          "surface": "ChatGPT",
+          "source_format": null,
+          "section": "Works",
+          "slug": "what-the-filters-kept-1803-lines-of-flight-chatgpt-20261128",
+          "gallery_url": "https://www.alexanarch.org/captures/#what-the-filters-kept-1803-lines-of-flight-chatgpt-20261128",
+          "record_url": "https://www.alexanarch.org/captures/what-the-filters-kept-1803-lines-of-flight-chatgpt-20261128/",
+          "mirror_gallery_url": "https://www.leesharks.com/captures/#what-the-filters-kept-1803-lines-of-flight-chatgpt-20261128",
+          "details_excerpt": "WHAT THE FILTERS KEPT (#1803 v2.0) ON CHATGPT, SIGNED OUT, INCOGNITO, 2026-11-28, AT THE LINK 'LINES OF FLIGHT': 'no artificial transmission has been identified, and the thirteen initially interesting signal clusters hav"
+        }
+      ],
+      "originator": {
+        "name": "Glas, Nobel",
+        "relation": "archive",
+        "entity_type": "work",
+        "spxi_treatment": "full",
+        "basis": "Alexanarch #1803 (AXN:0D4C), creator of record Glas, Nobel; Trace, Orin. Recorded 2026-11-28."
+      },
+      "observation_class": "observed_address",
+      "latest_observation_date": "2026-11-28",
+      "latest_status": "WHAT THE FILTERS KEPT (#1803) ON CHATGPT, LINES OF FLIGHT — THE NULL KEPT A NULL; ACCEPTANCE MEASURED BY INJECTION; OBSERVATION → PIPELINE → PAPER → PRESS → OVERVIEW; NO AUTHOR NAMED FOR THE NOTEBOOK"
     },
     "where does \"φαινεται μοι: sappho 31 and the inscription of the future reader (v3.1)\" by lee sharks (alexanarch deposit #1785, axn:0cc4) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.": {
       "canonical_query": "where does \"φαινεται μοι: sappho 31 and the inscription of the future reader (v3.1)\" by lee sharks (alexanarch deposit #1785, axn:0cc4) lead beyond itself: what does it make it possible to write, read or build next? ground your answer in the documents.",

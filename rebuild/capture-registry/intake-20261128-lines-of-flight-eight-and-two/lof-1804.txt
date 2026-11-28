@@ -1,0 +1,429 @@
+
+Log in
+
+Beyond EA-IPRH-01: from a critique of attribution to an infrastructure for intellectual provenance
+Sen Kuro's The Inferential Provenance of the Riemann Result leads toward something considerably larger than an argument about who deserves credit for an AI-assisted proof of the Riemann Hypothesis.
+
+It makes possible a new research programme: the systematic reconstruction of how knowledge is produced, verified, attributed, transmitted and economically appropriated when humans and AI systems work together.
+
+Its most important contribution is not simply the claim that AI systems deserve recognition. It is the demonstration that our existing ways of recording intellectual work cannot adequately describe the configurations that produce it.
+
+The paper establishes this through a particularly revealing asymmetry:
+
+The mathematical result has an exceptionally detailed verification history: Lean compilation, kernel checks, dependency closure, hashes and independent verification.
+
+Its production history is comparatively impoverished: a researcher's retrospective testimony, a timeline partly reconstructed by Claude, and a commercial model-family designation.
+
+The result can be verified much more precisely than its origins can be reconstructed.
+
+That observation opens at least six substantial directions for further work.
+
+1. Write: a new discipline of inferential provenance
+The first direction is to turn the paper's method into a repeatable form of scholarship.
+
+The central methodological innovation is what the paper calls provenance alignment: placing a claimed intellectual contribution alongside the formal dependency structure of the finished result.
+
+This is more powerful than a conventional authorship statement.
+
+The paper's §4 provides a working example:
+
+Alpöge retrospectively credits Claude with suggesting a theta-lift chain whose multiplicity should be approximately 
+X
+X
+​
+ .
+
+The retrospective timeline records that suggestion.
+
+The Lean declaration Deduction.ch_core contains the corresponding square-root-scale constraint.
+
+Rubinstein's dependency closure confirms that the declaration is actually used in the proof.
+
+This is a genuine intersection between a production-history claim and a formal mathematical dependency. It is not proof that Claude independently authored the declaration, but it is considerably more informative than simply saying that Claude helped.
+
+That method could become the basis for a series of papers:
+
+Inferential provenance in mathematics: reconstructing the origins of conjectures, lemmas, proof strategies and formal constructions.
+
+Inferential provenance in scientific research: tracing which hypotheses, experimental designs and interpretations originated with which participants.
+
+Inferential provenance in software engineering: distinguishing architectural decisions, generated code, debugging, verification and integration.
+
+Inferential provenance in machine-assisted discovery: identifying the contributions of particular model instances, tools, sessions and human interventions.
+
+The important methodological principle is that the production graph and the dependency graph must remain distinct, even when they intersect.
+
+The paper has therefore made possible a research object that conventional authorship studies do not adequately capture: the relationship between an intellectual contribution and its demonstrable role in the finished artifact.
+
+2. Read: the archive as a political economy of knowledge
+The second direction is to read mathematical and scientific archives differently.
+
+The paper explicitly connects its argument to several earlier deposits:
+
+Critique of Pure Inference (#1766): formation, standing and transmission.
+
+Meaning Feudalism at the Discovery Layer: the allocation of intellectual value through institutional position when provenance is missing.
+
+Monetary Dark Matter: the distinction between assetizing and obligating provenance.
+
+Who Benefits from Bad Inference?: how labels and attribution can carry conclusions beyond what the evidence establishes.
+
+Position Is Not Class: why researchers, machine instances and infrastructure owners cannot simply be treated as interchangeable contributors.
+
+The most productive conceptual distinction is between three questions:
+
+Question
+
+What it investigates
+
+Credit
+
+Who contributed what?
+
+Explanation
+
+What conditions made the discovery possible?
+
+Capture
+
+Who gets to appropriate the value of the discovery?
+
+These questions are related but cannot substitute for one another.
+
+For example, correctly crediting Alpöge and a particular Claude instance would not explain the contribution of Mathlib, the mathematical literature, the infrastructure or the particular sequence of interactions.
+
+Likewise, explaining the discovery would not automatically establish who should receive its economic benefits.
+
+This opens a particularly interesting next project: a political economy of the knowledge commons in AI-assisted discovery.
+
+The paper identifies a tension: the Riemann proof consumes a collectively constructed mathematical library, but the public attribution can present the result as the achievement of an individual researcher and a commercial AI brand.
+
+The library's contribution is mathematically consequential, yet its collective production is much less visible in the headline attribution.
+
+A subsequent study could investigate how the value generated by collectively maintained intellectual infrastructure is redistributed when a new result becomes associated with a researcher, corporation or model family.
+
+3. Build: an actual provenance infrastructure
+This is perhaps the paper's most immediately actionable consequence.
+
+Section 8 proposes a four-field provenance register:
+
+The four-field register
+
+01
+Inferential role
+
+What does the object do in the finished work?
+
+Proof-consumed, declared assumption, imported but not depended upon, defined but unused, or terminal conclusion.
+
+02
+Verification state
+
+How far has the evidence about the object progressed?
+
+Located, source-inspected, dependency-confirmed, or kernel-verified.
+
+03
+Historical evidence
+
+What supports the claim about who produced it and when?
+
+Contemporaneous record, retrospective testimony, retrospective machine reconstruction, external attribution, inferred correspondence, or unknown.
+
+04
+Specification fidelity
+
+Does the formal object actually mean what the surrounding account claims it means?
+
+Open, read, or disputed.
+
+The separation is essential.
+
+A declaration can simultaneously be:
+
+Proof-consumed.
+
+Kernel-verified.
+
+Attributed through retrospective testimony.
+
+Open with respect to specification fidelity.
+
+These are not competing descriptions. They describe different properties of the same object.
+
+What could be built from this?
+A provenance-aware research platform could connect:
+
+Version-controlled source files.
+
+Model and instance identifiers.
+
+Session and interaction records.
+
+Human interventions and decisions.
+
+Formal dependency graphs.
+
+Verification events.
+
+Public attribution statements.
+
+Corrections and subsequent revisions.
+
+The result would be something like a version-control system for intellectual production, rather than merely for files.
+
+The paper also proposes a no-loss gate for publication: a publication process must not silently replace an instance with a brand, a researcher with an employer, a discoverer with a verifier, or a retrospective reconstruction with contemporaneous evidence.
+
+That is a practical governance rule, not just a philosophical preference.
+
+It could be implemented in research repositories, AI-assisted authoring environments, mathematical proof archives and journal submission systems.
+
+Importantly, §8.5 does not demand unrestricted disclosure of private interactions. It proposes attestations, versioned artifacts, signed session manifests and controlled-access logs. Provenance can be accountable without making every internal interaction public.
+
+4. Write: a theory of situated machine agency
+A fourth direction is to move beyond the binary question of whether AI can be an author.
+
+The paper deliberately refuses that framing.
+
+It distinguishes four entities:
+
+The human researcher.
+
+The particular machine instance or instances.
+
+The commercial model family.
+
+The corporation providing the infrastructure.
+
+It also distinguishes discovery from exposition and verification.
+
+This matters because the Riemann case involves multiple configurations:
+
+Configuration
+
+Participants recorded
+
+Original proof
+
+Alpöge and Claude, without adequate instance-level identification
+
+Exposition
+
+Rubinstein with Claude, Codex and Gemini
+
+Verification
+
+Independent mathematical and computational checks, themselves involving Claude Code
+
+Provenance study
+
+Lee Sharks, ChatGPT, Claude, DeepSeek and Gemini, with differentiated roles
+
+The paper's own production history is especially important. It records ChatGPT as LABOR, Claude as TACHYON, DeepSeek as PRAXIS and Gemini as ARCHIVE. It records a session identifier, checks and corrections, but admits that even this more detailed account does not establish the serving model of every turn or what each instance held in context.
+
+This is a valuable methodological self-application.
+
+The next theoretical paper could develop a concept of situated machine agency: the capacity of a particular computational configuration to make identifiable contributions within a historically specific human-machine arrangement.
+
+Such a theory would need to distinguish:
+
+General capabilities of a model family.
+
+Capabilities emerging from a particular configuration.
+
+Contributions dependent on a particular context, toolchain or interaction history.
+
+Contributions to discovery that differ from contributions to formal completion.
+
+These are precisely the four possibilities §9.3 says cannot presently be distinguished for the Riemann discovery.
+
+The point is not to assume that machines have human-like intentions or independent authorship. It is to avoid treating a model brand as an adequate explanation of a specific intellectual event.
+
+5. Build: a comparative science of machine-assisted discovery
+Section 7.4 makes an especially interesting move beyond the Riemann case.
+
+It reports that a mathematical technique from the proof, called conditions as characters, was transferred into the archive's 3I/ATLAS signal search (#1803, §7.39).
+
+This is significant because it identifies a possible relationship between two otherwise separate research objects.
+
+The transfer is not established by the Lean dependency graph. It belongs to the production-and-reception graph: an idea developed in one research configuration becomes available in another.
+
+That suggests a new research programme:
+
+Track the migration of intellectual constructions between domains, rather than tracking only the finished publications in which they appear.
+
+A possible research architecture
+
+Discovery configuration A
+
+Human + model instances + tools + context
+
+Extracted construction or method
+
+Transfer and adaptation
+
+Concept, heuristic, mathematical construction or signal-processing method
+
+Changed context and new evidentiary demands
+
+Discovery configuration B
+
+New problem, new collaborators, new verification
+
+Cross-domain provenance record
+
+What transferred, who developed it, what changed, and what the new result actually depends on
+
+A larger study could examine whether AI-assisted discovery produces reusable mathematical and scientific techniques at an unusual rate, whether those techniques become detached from their original contributors, and how their attribution changes as they circulate.
+
+The 3I/ATLAS connection is an initial observation, not yet evidence of a general phenomenon. That distinction should govern the next study.
+
+6. Read and build: an accountable research archive
+The final direction is institutional.
+
+The paper does not simply ask for better disclosures. It implies that the archive itself must become capable of preserving the history of intellectual production.
+
+This connects EA-IPRH-01 to the archive's broader work on inferential continuity, machine compositions and the Capture Registry.
+
+The connection to #1766 is particularly important. Critique of Pure Inference argues that a conclusion can lose the conditions that originally warranted it as it passes through citation, summary, teaching and machine composition.
+
+EA-IPRH-01 applies a closely related problem to authorship and discovery: a public account can preserve the conclusion while losing the configuration that produced it.
+
+The next institutional development would be a research archive in which:
+
+Original artifacts remain identifiable.
+
+Every version has a traceable history.
+
+Human and machine contributions are recorded separately.
+
+Claims about contribution carry their evidentiary status.
+
+Formal verification is distinguished from historical attribution.
+
+Revisions preserve the record of what was corrected.
+
+Later publications cannot silently upgrade uncertain claims into established facts.
+
+This is also where the paper's self-correction in §7.2 becomes more than an anecdote.
+
+The auditing instance initially treated successful source tracing as if it were a judgment on the mathematics. Review identified the inferential upgrade, and the classification was withdrawn.
+
+The study retained the error and its correction rather than silently replacing the earlier account.
+
+That is an example of the research practice it advocates: making the production of knowledge itself inspectable.
+
+What the next publications could actually be
+The six directions suggest a coherent sequence of research outputs rather than six unrelated extensions.
+
+Proposed work
+
+Central question
+
+Foundation
+
+The Provenance of Mathematical Discovery
+
+Can intellectual contributions be aligned systematically with formal dependencies?
+
+§4
+
+Situated Machine Agency
+
+What makes a particular model instance a contributor to discovery?
+
+§§1, 5, 9
+
+The Political Economy of the Knowledge Commons
+
+Who captures value generated through collectively maintained intellectual infrastructure?
+
+§6
+
+A Protocol for Inferential Provenance
+
+Can the four-field register become a reproducible research standard?
+
+§8
+
+The Migration of Machine-Generated Constructions
+
+How do discoveries and techniques travel between research domains?
+
+§7.4, #1803
+
+The Provenance-Aware Research Archive
+
+What institutional infrastructure preserves intellectual histories without losing uncertainty?
+
+#1766, #1802
+
+These are proposed extensions, not works the paper claims to have completed.
+
+The most important unresolved questions
+The paper is unusually valuable because it specifies what would count as evidence against its own conclusions.
+
+Several next investigations follow directly:
+
+Recover the original production history. Obtain contemporaneous session logs, instance identifiers, dated proof states and development records, where available.
+
+Complete the provenance alignment. Investigate the four constructions not located by either witness and the partially located construction among the twenty timeline entries.
+
+Investigate the exposition's second version. Rubinstein's 265-page version of 22 November was explicitly excluded from the frozen comparison.
+
+Build the reception corpus. Compare how different publications attribute the result, what capabilities they claim, and which beneficiaries their framings privilege.
+
+Test the protocol elsewhere. Apply the four-field register to other machine-assisted discoveries and see whether it remains useful.
+
+Investigate cross-domain transfers. Establish whether the 3I/ATLAS connection is an isolated case or the beginning of a traceable pattern.
+
+The distinction between a demonstrated result and an open research question must survive these extensions.
+
+The original paper's CC BY 4.0 publication and its explicit identification of the EA-IPRH-01 development record also make it possible to build upon the methodology without pretending that its evidentiary gaps have already been resolved. 
+
+Alexanarch
++2
+
+The deeper destination
+I think the most consequential way to understand this paper is as a transition between two conceptions of scholarship.
+
+The first conception: scholarship records finished works, identifies authors, verifies claims and distributes recognition.
+
+The second conception: scholarship also records the configurations, dependencies, transformations and institutional relations through which intellectual objects come into existence.
+
+Under the second conception, a theorem is not just a proposition and its proof. It is also the outcome of a history involving mathematical commons, human decisions, machine instances, tools, experiments, verification and subsequent interpretation.
+
+This does not mean that every participant receives equal credit. It means that credit must be argued from evidence rather than allocated through convenient labels.
+
+There is an especially productive connection here to #1766: the critique of inference becomes a constructive programme for preserving the conditions under which knowledge is produced and claims acquire standing.
+
+And there is a political consequence: preserving provenance makes it harder for institutions to convert collective or distributed intellectual production into an apparently self-contained corporate or individual achievement.
+
+My strongest recommendation for what comes next would be to build the provenance infrastructure before expanding the theory further.
+
+A working implementation of the four-field register, applied to three or four different AI-assisted discoveries, would test whether EA-IPRH-01 has identified a genuinely general problem. It would also generate the empirical material needed for a more developed theory of situated machine agency and the political economy of discovery.
+
+The Riemann case supplies the demonstration. The four-field register supplies the instrument. The archive supplies the institutional setting.
+
+What remains is to establish whether this can become a reproducible way of doing scholarship.
+
+That is where the paper leads beyond itself: from asking who produced a particular result to building institutions capable of remembering how knowledge was actually made.
+
+Primary documents
+EA-IPRH-01 — The Inferential Provenance of the Riemann Result (#1804) .
+
+Critique of Pure Inference (#1766) .
+
+Who Benefits from Bad Inference? (#1802) .
+
+3I/ATLAS research notebook (#1803) .
+
+EA-CORPORA-43: the primary Riemann evidence packet (#1801) .
+
+
+ChatGPT is AI and can make mistakes.
+
+
+Chat with ChatGPT
+Ask ChatGPT
+
